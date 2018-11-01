@@ -22,12 +22,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c2710fae53cd860b6d67cc9f9d8c7ce61afa2b03
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6fac14df471b0dfcda1d0bf4763158280211bc33
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929857"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672462"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>Office 응용 프로그램 및 프로젝트 형식으로 사용할 수 있는 기능
   Visual Studio에는 다음과 같은 형식을 비롯하여 Microsoft Office 응용 프로그램에 대한 다양한 비즈니스 시나리오를 지원하는 몇 가지 프로젝트 템플릿 형식이 있습니다.  
@@ -62,9 +62,9 @@ ms.locfileid: "49929857"
 |VSTO 추가 기능에서 다른 Microsoft Office 솔루션에 개체를 노출 합니다.|VSTO 추가 기능 프로젝트|[다른 Office 솔루션에서 VSTO 추가 기능의 코드 호출](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)|  
 |다음 호스트 컨트롤:<br /><br /> -차트<br />-ListObject<br />-NamedRange<br />-콘텐츠 컨트롤<br />-책갈피|문서 수준 프로젝트<br /><br /> Word 및 Excel의 VSTO 추가 기능 프로젝트|[호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)|  
 |다음 호스트 컨트롤:<br /><br /> -XMLMappedRange<br />-XMLNode<br />-XMLNodes|문서 수준 프로젝트|[호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)|  
-|다중 프로젝트 배포|문서 수준 프로젝트<br /><br /> VSTO 추가 기능 프로젝트|[연습: 단일 ClickOnce 설치 관리자로 여러 Office 솔루션 배포](http://msdn.microsoft.com/051223c0-4082-4799-b78b-a4763a9def55)|  
+|다중 프로젝트 배포|문서 수준 프로젝트<br /><br /> VSTO 추가 기능 프로젝트|[연습: 단일 ClickOnce 설치 관리자로 여러 Office 솔루션 배포](https://msdn.microsoft.com/051223c0-4082-4799-b78b-a4763a9def55)|  
 |Outlook 양식 영역|Outlook의 VSTO 추가 기능 프로젝트|[Outlook 양식 영역 만들기](../vsto/creating-outlook-form-regions.md)|  
-|배포 후 작업|문서 수준 프로젝트<br /><br /> VSTO 추가 기능 프로젝트|[연습: ClickOnce 설치 후 최종 사용자 컴퓨터로 문서 복사](http://msdn.microsoft.com/100090f7-bc63-4152-b3e1-19b48bc27466)|  
+|배포 후 작업|문서 수준 프로젝트<br /><br /> VSTO 추가 기능 프로젝트|[연습: ClickOnce 설치 후 최종 사용자 컴퓨터로 문서 복사](https://msdn.microsoft.com/100090f7-bc63-4152-b3e1-19b48bc27466)|  
 |리본 사용자 지정|문서 수준 프로젝트<br /><br /> 다음 응용 프로그램의 VSTO 추가 기능 프로젝트:<br /><br /> -Excel<br />-InfoPath (InfoPath 2013 및 InfoPath 2010만 해당)<br />-Outlook<br />-PowerPoint<br />-프로젝트<br />Visio<br />단어|[리본 개요](../vsto/ribbon-overview.md)|  
 |시각적 문서 디자이너|문서 수준 프로젝트|[Visual Studio 환경의 office 프로젝트](../vsto/office-projects-in-the-visual-studio-environment.md)|  
   

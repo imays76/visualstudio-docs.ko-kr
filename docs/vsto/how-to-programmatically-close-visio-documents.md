@@ -16,23 +16,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e27b0a19005b7076629f2848f95c8cb5749c096f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d800fbe0a6dda6fc7c5160d607d393afcb920cd9
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675215"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671575"
 ---
 # <a name="how-to-programmatically-close-visio-documents"></a>방법: 프로그래밍 방식으로 Visio 문서 닫기
-  사용 하 여 활성 Microsoft Office Visio 문서를 닫을 수 있습니다는 `Microsoft.Office.Interop.Visio.Document.Close` 메서드.  
+  `Microsoft.Office.Interop.Visio.Document.Close` 메서드를 사용하여 활성 Microsoft Office Visio 문서를 닫을 수 있습니다.  
   
- 이 메서드에 대한 자세한 내용은 VBA 참조 설명서에서 [Microsoft.Office.Interop.Visio.Document.Close](http://msdn.microsoft.com/library/office/ff767415.aspx) 메서드를 참조하세요.  
+ 이 메서드에 대한 자세한 내용은 VBA 참조 설명서에서 [Microsoft.Office.Interop.Visio.Document.Close](/office/vba/api/Visio.Document.Close) 메서드를 참조하세요.  
   
 ## <a name="close-the-active-document"></a>활성 문서 닫기  
   
 ### <a name="to-close-the-active-document"></a>활성 문서를 닫으려면  
   
--   호출 된 `Microsoft.Office.Interop.Visio.Document.Close` 메서드 활성 문서를 닫습니다.  
+-   `Microsoft.Office.Interop.Visio.Document.Close` 메서드를 호출하여 활성 문서를 닫습니다.  
   
      다음 코드 예제를 사용 하려면 실행을 `ThisAddIn` Visio 용 VSTO 추가 기능에 프로젝트의 클래스입니다.  
   

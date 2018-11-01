@@ -16,23 +16,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a3a7d2a9855abef0415661798c8a213eb748e22f
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 28f882510e2370c0fb31645da5023e865afd667e
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257854"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672680"
 ---
 # <a name="how-to-programmatically-open-visio-documents"></a>방법: 프로그래밍 방식으로 Visio 문서 열기
   기존 Microsoft Office Visio 문서를 여는 방법은 두 가지가 있습니다: 열고 OpenEx 합니다. OpenEx 메서드는 인수는 호출자에 게 문서가 열리는 방식을 지정할 수 있다는 점을 제외 하 고 Open 메서드가 동일 합니다.  
   
- 개체 모델에 대한 자세한 내용은 VBA 참조 설명서에서 [Microsoft.Office.Interop.Visio.Documents.Open](https://msdn.microsoft.com/library/office/ff765240.aspx) 메서드 및 [Microsoft.Office.Interop.Visio.Documents.OpenEx](https://msdn.microsoft.com/library/office/ff767229.aspx) 메서드를 참조하세요.  
+ 개체 모델에 대한 자세한 내용은 VBA 참조 설명서에서 [Microsoft.Office.Interop.Visio.Documents.Open](/office/vba/api/Visio.Documents.Open) 메서드 및 [Microsoft.Office.Interop.Visio.Documents.OpenEx](/office/vba/api/Visio.Documents.OpenEx) 메서드를 참조하세요.  
   
 ## <a name="open-a-visio-document"></a>Visio 문서 열기  
   
 ### <a name="to-open-a-visio-document"></a>Visio 문서를 열려면  
   
--   호출 된 `Microsoft.Office.Interop.Visio.Documents.Open` 메서드와 Visio 문서의 정규화 된 경로 제공 합니다.  
+-   `Microsoft.Office.Interop.Visio.Documents.Open` 메서드를 호출하고 Visio 문서의 정규화된 경로를 제공합니다.  
   
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#5](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#5)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#5](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#5)]  
@@ -41,7 +41,7 @@ ms.locfileid: "35257854"
   
 ### <a name="to-open-a-visio-document-as-read-only-and-docked"></a>Visio 문서를 읽기 전용 및 도킹하여 열려면  
   
--   호출을 `Microsoft.Office.Interop.Visio.Documents.OpenEx` 메서드를 Visio 문서의 정규화 된 경로 입력 하 고 사용 하려는 인수를 포함-이 경우, 도킹 및 읽기 전용입니다.  
+-   `Microsoft.Office.Interop.Visio.Documents.OpenEx` 메서드를 호출하여 Visio 문서의 정규화된 경로를 제공하고 사용하려는 인수(이 경우, 도킹됨 및 읽기 전용)를 포함합니다.  
   
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#6](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#6)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#6](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#6)]  

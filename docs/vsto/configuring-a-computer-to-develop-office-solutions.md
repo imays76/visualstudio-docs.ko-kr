@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2e25ac55a1198cf15b497b7b88522be44dfddb73
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 19c7e012775ff1a761b5c267f05b8f7ff250d5c6
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673979"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672228"
 ---
 # <a name="configure-a-computer-to-develop-office-solutions"></a>Office 솔루션을 개발 하도록 컴퓨터를 구성 합니다.
 
@@ -44,7 +44,7 @@ Microsoft Office용 VSTO 추가 기능 및 사용자 지정을 만들려면 지�
 
      이러한 도구가 설치 되어 있는지, Visual Studio 설치 프로그램을 시작 하 고 선택 합니다 **수정** 단추입니다. **Microsoft Office 개발자 도구** 확인란을 선택하고 **업데이트** 단추를 선택합니다.
 
-- 간편 실행 방식으로 제공 되는 office 버전을 실행 하지는 확인 합니다. 참조 [방법: Outlook이 컴퓨터에 응용 프로그램을 실행 하려면 클릭 여부를 확인](http://msdn.microsoft.com/library/office/ff864733(v=office.14).aspx)합니다.
+- 간편 실행 방식으로 제공 되는 office 버전을 실행 하지는 확인 합니다. 참조 [방법: Outlook이 컴퓨터에 응용 프로그램을 실행 하려면 클릭 여부를 확인](/previous-versions/office/developer/office-2010/ff864733(v=office.14))합니다.
 
 - Microsoft Office의 버전을 하나만 실행 중인지 확인 합니다.
 

@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a89f77dc7a4adc7f1aafa1a59b425eefc5b4074e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ab047953c1a19d444b4315b7dc605a1a990667df
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675497"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670875"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Visual Studio를 사용하여 Office용 VSTO 추가 기능 만들기
   Visual Studio의 Microsoft Office 개발자 도구를 사용하여 Office를 확장하는 .NET Framework 응용 프로그램을 만들 수 있습니다. 이러한 응용 프로그램을 *Office 솔루션*이라고도 합니다.  
@@ -108,10 +108,10 @@ ms.locfileid: "35675497"
  [MSDN 라이브러리의 Microsoft Office 개발 섹션](http://go.microsoft.com/fwlink/?LinkId=149870)  
  문서를 검색 하 고 여러 버전의 Office (Visual Studio를 사용한 Office 개발에 국한 되지 않고)에 대 한 솔루션을 개발 하는 방법에 대 한 설명서를 참조할 수 있는 MSDN 라이브러리의 영역입니다.  
   
- [Visual Studio에서 응용 프로그램 개발](http://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68)  
+ [Visual Studio에서 응용 프로그램 개발](https://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68)  
  Visual Studio를 사용 하 여 디자인, 개발, 디버깅을 웹 응용 프로그램, XML 웹 서비스 및 기존의 클라이언트 응용 프로그램을 배포 하는 방법을 설명 하는 항목에 대 한 링크가 포함 되어 있습니다.  
   
- [Visual Studio에서.NET framework 프로그래밍](http://msdn.microsoft.com/f3f63195-82c6-48e8-a4a0-612810e7d093)  
+ [Visual Studio에서.NET framework 프로그래밍](/previous-versions/visualstudio/visual-studio-2010/k1s94fta(v=vs.100))  
  Visual Basic 및 Visual C#에서 .NET Framework를 사용하여 응용 프로그램을 개발하는 방법을 설명합니다.  
   
   

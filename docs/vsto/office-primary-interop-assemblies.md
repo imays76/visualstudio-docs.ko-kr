@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c309dcfd78ae0181905f691e1c36f407e763fc93
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: b44352996c1f6cf343f8100abb4f75814765c22a
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542483"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672992"
 ---
 # <a name="office-primary-interop-assemblies"></a>Office 주 Interop 어셈블리
 
@@ -38,7 +38,7 @@ Office 프로젝트에서 Microsoft Office 응용 프로그램의 기능을 사�
   
 - [Microsoft Office 응용 프로그램용 주 interop 어셈블리의 전체 목록](#pialist)  
   
-주 interop 어셈블리에 대 한 자세한 내용은 참조 하세요. [주 interop 어셈블리](http://msdn.microsoft.com/b977a8be-59a0-40a0-a806-b11ffba5c080)합니다.  
+주 interop 어셈블리에 대 한 자세한 내용은 참조 하세요. [주 interop 어셈블리](/previous-versions/dotnet/netframework-4.0/aax7sdch(v=vs.100))합니다.  
 
 <a name="separateassemblies"></a> 
 

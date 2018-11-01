@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ceb85bbad90074a7cfb6db053398698a0a333c1a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 14d35e8d6aa6209f628e38be65c9be5fbc614561
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881783"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673018"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>VSTO 추가 기능에 대 한 레지스트리 항목
   Visual Studio를 사용하여 만든 VSTO 추가 기능을 배포할 때에는 특정 레지스트리 항목 집합을 만들어야 합니다. 이러한 레지스트리 항목은 Microsoft Office 응용 프로그램에서 VSTO 추가 기능을 찾아 로드할 수 있는 정보를 제공합니다.  
@@ -88,7 +88,7 @@ ms.locfileid: "49881783"
   
  모든 VSTO 추가 기능에서 다른 레지스트리 항목을 공유하는 것처럼, 프로젝트를 빌드할 때 Visual Studio는 개발 컴퓨터에 양식 영역 레지스트리 항목을 만듭니다. ClickOnce를 사용 하 여 VSTO 추가 기능에 배포 하는 경우 최종 사용자 컴퓨터의 레지스트리 항목을 자동으로 만들어집니다. Windows Installer를 사용 하 여 VSTO 추가 기능에 배포 하는 경우 최종 사용자 컴퓨터의 레지스트리 항목을 만들 InstallShield Limited Edition 프로젝트를 구성 해야 합니다.  
   
- 양식 영역 레지스트리 항목에 대 한 자세한 내용은 참조 하세요. [사용자 지정 양식에서 양식 영역의 위치를 지정](http://msdn.microsoft.com/library/office/ff868998.aspx)합니다. Outlook 양식 영역에 대 한 자세한 내용은 참조 하세요. [만들 Outlook 양식 영역](../vsto/creating-outlook-form-regions.md)합니다.  
+ 양식 영역 레지스트리 항목에 대 한 자세한 내용은 참조 하세요. [사용자 지정 양식에서 양식 영역의 위치를 지정](/office/vba/outlook/Concepts/Creating-Form-Regions/specify-the-location-of-a-form-region-in-a-custom-form)합니다. Outlook 양식 영역에 대 한 자세한 내용은 참조 하세요. [만들 Outlook 양식 영역](../vsto/creating-outlook-form-regions.md)합니다.  
   
 ##  <a name="LoadBehavior"></a> LoadBehavior 값  
  합니다 **LoadBehavior** 아래에 있는 항목을 *루트*\Software\Microsoft\Office\\*응용 프로그램 이름*\Addins\\*추가 ID* 키에는 VSTO 추가 기능의 런타임 동작을 지정 하는 값의 비트 조합입니다. 가장 낮은 순서 비트(값 0과 1)는 VSTO 추가 기능이 현재 로드되었는지 여부를 나타냅니다. 다른 비트는 응용 프로그램에서 VSTO 추가 기능을 로드하는 시기를 나타냅니다.  

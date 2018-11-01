@@ -36,12 +36,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c3466a5a448baf378cf18a00c0e987f3cbcc0cb5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e9773c06293f189e572ef84e9b10f45a1ca5d5d8
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674350"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670990"
 ---
 # <a name="write-code-in-office-solutions"></a>Office 솔루션에서 코드를 작성 합니다.
   Visual Studio의 Office 프로젝트에는 기타 유형의 프로젝트와 다른 코드 작성의 몇 가지 측면이 있습니다. 이러한 차이점 중 상당수는 Office 개체 모델이 관리 코드에 노출되는 방식과 관련되어 있으며, 다른 차이점은 Office 프로젝트의 디자인과 관련되어 있습니다.  
@@ -62,7 +62,7 @@ ms.locfileid: "35674350"
  최종 사용자 컴퓨터에서는 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 이상을 대상으로 하는 Office 솔루션을 실행하는 데 Office PIA가 필요하지 않습니다. 자세한 내용은 [디자인 Office 솔루션을 만들고](../vsto/designing-and-creating-office-solutions.md)합니다.  
   
 ### <a name="use-types-in-primary-interop-assemblies"></a>주 interop 어셈블리에서 형식 사용  
- Office PIA에는 Office 응용 프로그램의 개체 모델을 노출하는 형식과 코드에서 직접 사용되지 않을 추가 인프라 형식의 조합이 포함되어 있습니다. Office Pia의 유형에 대 한 개요를 참조 하세요 [Office 주 interop 어셈블리의 클래스 및 인터페이스 개요](http://msdn.microsoft.com/da92dc3c-8209-44de-8095-a843659368d5)합니다.  
+ Office PIA에는 Office 응용 프로그램의 개체 모델을 노출하는 형식과 코드에서 직접 사용되지 않을 추가 인프라 형식의 조합이 포함되어 있습니다. Office Pia의 유형에 대 한 개요를 참조 하세요 [Office 주 interop 어셈블리의 클래스 및 인터페이스 개요](/previous-versions/office/office-12/ms247299\(v\=office.12\))합니다.  
   
  Office PIA의 형식이 COM 기반 개체 모델의 형식에 해당하기 때문에 이러한 형식을 사용하는 방식은 다른 관리되는 형식과 다른 경우가 많습니다. 예를 들어 Office 주 interop 어셈블리에서 선택적 매개 변수가 있는 메서드를 호출하는 방식은 프로젝트에서 사용하고 있는 프로그래밍 언어에 따라 달라집니다. 자세한 내용은 다음 항목을 참조하세요.  
   

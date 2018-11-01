@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a92a0e9cc8c82345e1d8a57449317f8e6937dad6
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 085ed1a4f430be957d96991798458e411bc22992
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673985"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672810"
 ---
 # <a name="common-tasks-in-office-programming"></a>Office 프로그래밍의 일반적인 작업
   이 항목은 Visual Studio를 사용하여 Office 솔루션을 프로그래밍하는 방법에 대한 다음 범주의 일반적인 질문에 대해 답변을 찾을 수 있도록 설계되었습니다.  
@@ -47,7 +47,7 @@ ms.locfileid: "35673985"
   
 -   [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
   
--   [방법: 업그레이드 Office 솔루션](http://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)합니다.  
+-   [방법: 업그레이드 Office 솔루션](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)합니다.  
   
 -   [방법: 설치 Office 주 interop 어셈블리](../vsto/how-to-install-office-primary-interop-assemblies.md)합니다.  
   
@@ -219,19 +219,19 @@ ms.locfileid: "35673985"
   
 ##  <a name="deployment"></a> 배포 작업  
   
--   [방법: ClickOnce를 사용 하 여 Office 솔루션 게시](http://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)합니다.  
+-   [방법: ClickOnce를 사용 하 여 Office 솔루션 게시](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)합니다.  
   
--   [방법: ClickOnce를 사용 하 여 SharePoint 서버에 문서 수준 Office 솔루션 게시](http://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)합니다.  
+-   [방법: ClickOnce를 사용 하 여 SharePoint 서버에 문서 수준 Office 솔루션 게시](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)합니다.  
   
--   [방법: ClickOnce Office 솔루션 설치](http://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)합니다.  
+-   [방법: ClickOnce Office 솔루션 설치](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)합니다.  
   
--   [방법: Office 솔루션을 실행 하려면 최종 사용자 컴퓨터에 필수 구성 요소 설치](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)합니다.  
+-   [방법: Office 솔루션을 실행 하려면 최종 사용자 컴퓨터에 필수 구성 요소 설치](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)합니다.  
   
--   [방법: Office 솔루션 배포를 위해 IIS 준비](http://msdn.microsoft.com/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4)합니다.  
+-   [방법: Office 솔루션 배포를 위해 IIS 준비](https://msdn.microsoft.com/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4)합니다.  
   
--   [방법: 업데이트에는 Office 솔루션 배포](http://msdn.microsoft.com/be96db53-b6ea-46ab-b8d9-b76b098b3b13)합니다.  
+-   [방법: 업데이트에는 Office 솔루션 배포](https://msdn.microsoft.com/be96db53-b6ea-46ab-b8d9-b76b098b3b13)합니다.  
   
--   [방법: Office 솔루션의 설치 경로 변경](http://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)합니다.  
+-   [방법: Office 솔루션의 설치 경로 변경](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)합니다.  
   
 ## <a name="see-also"></a>참고자료  
  [시작 &#40;Visual Studio에서 Office 개발&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   

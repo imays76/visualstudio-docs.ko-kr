@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ad60aa15b3924bd562ed95c30ed9aaf4adef0133
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c858cfbd2fb48aa850e395d74d7f03386ec8bc2f
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862192"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671861"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>연습: 작업창에서 문서로 텍스트 삽입
   이 연습에는 Microsoft Office Word 문서에서 작업창을 만드는 방법을 보여 줍니다. 작업 창에는 두 개의 입력을 수집 하 고 다음 문서에 텍스트를 보낼 포함 되어 있습니다.  
@@ -178,14 +178,14 @@ ms.locfileid: "49862192"
 ## <a name="next-steps"></a>다음 단계  
  다음으로 수행할 수 있는 몇 가지 작업은 다음과 같습니다.  
   
--   Excel에서 작업창을 만듭니다. 자세한 내용은 [방법: Excel 통합 문서에 작업창 추가](http://msdn.microsoft.com/62abfce6-e44f-419d-85d8-26bf59f33872)합니다.  
+-   Excel에서 작업창을 만듭니다. 자세한 내용은 [방법: Excel 통합 문서에 작업창 추가](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100))합니다.  
   
 -   작업 창의 컨트롤에 데이터를 바인딩하십시오. 자세한 내용은 [연습: Word 작업 창의 컨트롤에 데이터 바인딩할](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)합니다.  
   
 ## <a name="see-also"></a>참고자료  
  [작업 창 개요](../vsto/actions-pane-overview.md)   
  [방법: Word 문서에 작업창을 추가 하거나 Excel 통합 문서](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
- [방법: Excel 통합 문서에 작업 창 추가](http://msdn.microsoft.com/62abfce6-e44f-419d-85d8-26bf59f33872)   
+ [방법: Excel 통합 문서에 작업 창 추가](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100))   
  [방법: 작업 창에서 컨트롤 레이아웃 관리](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
  [Bookmark 컨트롤](../vsto/bookmark-control.md)  
   

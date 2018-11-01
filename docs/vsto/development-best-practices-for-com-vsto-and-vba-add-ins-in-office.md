@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bf00afb612e12ce6712206808897a3b851d68b3a
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3f821b9769b9353fbee6379ddc1b3826f87ac2de
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673912"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671095"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Office의 COM, VSTO 및 VBA 추가 기능에 대 한 개발 모범 사례
   Office 용 COM, VSTO, VBA 추가 기능을 개발 하는 경우이 문서에 설명 된 개발 모범 사례를 따르세요.   확인 하는 데 도움이 됩니다.
@@ -39,12 +39,12 @@ ms.locfileid: "35673912"
 솔루션을 이전 버전의.NET에서는.NET 4.0 이상을 사용 하 여 솔루션을 업데이트 하는 것이 좋습니다. .NET 4.0 이상을 사용 하 여 최신 버전의 Windows 런타임 필수 구성 요소를 줄입니다.
   
 ## <a name="avoid-depending-on-specific-office-versions"></a>특정 Office 버전에 따라 방지  
-솔루션 에서만 최신 버전의 Office에서 사용할 수 있는 기능을 사용 합니다 (예: 예외 처리 또는 버전을 확인 하 여 사용 하 여) 런타임에 기능 (가능한 경우 기능 수준)에서 있는지을 확인 합니다. 개체 모델을 같은 지원 되는 Api를 사용 하 여 특정 버전에 보다는 최소 버전의 유효성을 검사 합니다 [Application.Version 속성](https://msdn.microsoft.com/library/office/microsoft.office.interop.excel._application.version.aspx)합니다. 이러한 설치, 환경 및 버전 간에 변경 될 수 있으므로 Office 이진 메타 데이터, 설치 경로 또는 레지스트리 키에 의존 하는 권장 되지 않습니다.
+솔루션 에서만 최신 버전의 Office에서 사용할 수 있는 기능을 사용 합니다 (예: 예외 처리 또는 버전을 확인 하 여 사용 하 여) 런타임에 기능 (가능한 경우 기능 수준)에서 있는지을 확인 합니다. 개체 모델을 같은 지원 되는 Api를 사용 하 여 특정 버전에 보다는 최소 버전의 유효성을 검사 합니다 [Application.Version 속성](<xref:Microsoft.Office.Interop.Excel._Application.Version%2A>)합니다. 이러한 설치, 환경 및 버전 간에 변경 될 수 있으므로 Office 이진 메타 데이터, 설치 경로 또는 레지스트리 키에 의존 하는 권장 되지 않습니다.
 
 ## <a name="enable-both-32-bit-and-64-bit-office-usage"></a>32 비트 및 64 비트 Office 사용   
 기본 빌드 대상 솔루션 특정 비트에만 사용할 수 있는 라이브러리에 의존 하지 않는 한 32 비트 (x86)와 64 비트 (x64)를 지원 해야 합니다. 64 비트 버전 Office의 특히 빅 데이터 환경에서에서 채택에서 증가 합니다. 32 비트 및 64 비트 지원 쉽게 32 비트 및 64 비트 버전의 Office 전환 하면 사용자가 있습니다.
 
-VBA 코드를 작성할 때 사용 하 여 64 비트 safe는 declare 문 및 변수를 적절 한 변수로 변환. 또한 각 비트에 대 한 코드를 제공 하 여 32 비트 또는 64 비트 버전의 Office 실행 하는 사용자 간에 문서를 공유할 수 있는지 확인 합니다. 자세한 내용은 [응용 프로그램 개요에 대 한 64 비트 Visual Basic](https://msdn.microsoft.com/library/office/gg264421.aspx)합니다.
+VBA 코드를 작성할 때 사용 하 여 64 비트 safe는 declare 문 및 변수를 적절 한 변수로 변환. 또한 각 비트에 대 한 코드를 제공 하 여 32 비트 또는 64 비트 버전의 Office 실행 하는 사용자 간에 문서를 공유할 수 있는지 확인 합니다. 자세한 내용은 [응용 프로그램 개요에 대 한 64 비트 Visual Basic](/office/vba/Language/Concepts/Getting-Started/64-bit-visual-basic-for-applications-overview)합니다.
 
 ## <a name="support-restricted-environments"></a>제한 된 환경 지원   
 솔루션에는 사용자 계정 권한 상승 또는 관리자 권한이 필요 하지 않습니다. 또한 솔루션 종속 되어서는 안 설정 하거나 변경 합니다.

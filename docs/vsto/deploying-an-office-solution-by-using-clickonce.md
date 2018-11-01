@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f469cf6e3dba13f1a4c7ad6ec847cf8c8190447c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e46a0bdc23ee16c4821d3da751d5a90aa62a14c3
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49859371"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673070"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>ClickOnce를 사용 하 여 Office 솔루션 배포
   ClickOnce를 사용하면 Office 솔루션을 더 적은 단계로 배포할 수 있습니다. 업데이트를 게시하는 경우 솔루션에서 자동으로 이를 감지하여 설치합니다. 그러나 ClickOnce에서는 컴퓨터의 각 사용자에 대해 별도로 솔루션을 설치하도록 합니다. Windows Installer를 사용 하 여 고려해 야 하므로 (*.msi*) 둘 이상의 사용자를 동일한 컴퓨터에 솔루션을 실행 합니다.  
@@ -86,7 +86,7 @@ ms.locfileid: "49859371"
 9. 솔루션이.NET Framework 4.5를 대상으로 하는 경우 선택 합니다 **Visual Studio 2010 Tools for Office Runtime** 확인란 합니다.  
 
     > [!NOTE]  
-    >  이 확인란은 기본적으로 표시 되지 않습니다. 이 확인란을 표시하려면 부트스트래퍼 패키지를 만들어야 합니다. 참조 [부트스트래퍼 패키지는 Office 2013 VSTO 추가 기능에 대 한 Visual Studio 2012를 사용 하 여 만들기](http://blogs.msdn.com/b/vsto/archive/2012/12/21/creating-a-bootstrapper-package-for-an-office-2013-vsto-add-in-with-visual-studio-2012.aspx)합니다.  
+    >  이 확인란은 기본적으로 표시 되지 않습니다. 이 확인란을 표시하려면 부트스트래퍼 패키지를 만들어야 합니다. 참조 [부트스트래퍼 패키지는 Office 2013 VSTO 추가 기능에 대 한 Visual Studio 2012를 사용 하 여 만들기](create-vsto-add-ins-for-office-by-using-visual-studio.md)합니다.  
 
 10. 아래 **필수 구성 요소에 대 한 설치 위치를 지정**, 표시 및 선택한 옵션 중 하나를 선택 합니다 **확인** 단추입니다.  
 
@@ -362,7 +362,7 @@ ms.locfileid: "49859371"
 |오류 코드|정의|  
 |----------------|----------------|  
 |0|솔루션이 성공적으로 설치되었거나 제거되었습니다. 또는 VSTOInstaller 도움말이 표시되었습니다.|  
-|-100|하나 이상의 명령줄 옵션이 잘못되었거나 두 번 이상 설정되었습니다. 입력에 대 한 자세한 내용은 "vstoinstaller /?" 참조 또는 [ClickOnce Office 솔루션에 대 한 사용자 지정 설치 관리자 만들기](http://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e)합니다.|  
+|-100|하나 이상의 명령줄 옵션이 잘못되었거나 두 번 이상 설정되었습니다. 입력에 대 한 자세한 내용은 "vstoinstaller /?" 참조 또는 [ClickOnce Office 솔루션에 대 한 사용자 지정 설치 관리자 만들기](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e)합니다.|  
 |-101|하나 이상의 명령줄 옵션이 잘못 되었습니다. 자세한 내용을 보려면 "vstoinstaller /?"를 입력하세요.|  
 |-200|배포 매니페스트 URI는 유효 하지 않습니다. 자세한 내용을 보려면 "vstoinstaller /?"를 입력하세요.|  
 |-201|배포 매니페스트가 잘못 되었으므로 솔루션을 설치할 수 없습니다. 참조 [Deployment manifests for Office 솔루션](../vsto/deployment-manifests-for-office-solutions.md)합니다.|  
@@ -463,9 +463,9 @@ ms.locfileid: "49859371"
 ## <a name="see-also"></a>참고자료  
  [Office 솔루션 배포](../vsto/deploying-an-office-solution.md)   
  [Office 솔루션 게시](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
- [방법: ClickOnce를 사용 하 여 Office 솔루션 게시](http://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)   
- [방법: ClickOnce Office 솔루션 설치](http://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)   
- [방법: ClickOnce를 사용 하 여 SharePoint 서버에 문서 수준 Office 솔루션 게시](http://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)   
- [ClickOnce office 솔루션에 대 한 사용자 지정 설치 관리자 만들기](http://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e)  
+ [방법: ClickOnce를 사용 하 여 Office 솔루션 게시](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)   
+ [방법: ClickOnce Office 솔루션 설치](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)   
+ [방법: ClickOnce를 사용 하 여 SharePoint 서버에 문서 수준 Office 솔루션 게시](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)   
+ [ClickOnce office 솔루션에 대 한 사용자 지정 설치 관리자 만들기](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e)  
 
 

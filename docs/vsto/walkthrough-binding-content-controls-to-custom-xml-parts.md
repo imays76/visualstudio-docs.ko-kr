@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 05d7c3cc2c391eee6ceeba492cd083efd3c00015
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1bc8aee0a1294aeda4c57a3416de4a0cc98129f3
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916753"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673044"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>연습: 사용자 지정 XML 부분에 콘텐츠 컨트롤 바인딩
   이 연습에서는 문서에 저장된 XML 데이터에 Word에 대한 문서 수준 사용자 지정의 콘텐츠 컨트롤을 바인딩하는 방법을 보여 줍니다.  
@@ -296,7 +296,7 @@ ms.locfileid: "49916753"
   
 9. 파일 이름을 **EmployeeControls.docx.zip**합니다.  
   
-     합니다 **EmployeeControls.docx** 문서가 Open XML 형식으로 저장 됩니다. 이 문서의 바꾸어 합니다 *.zip* 파일 이름 확장명을 문서의 내용을 검사할 수 있습니다. Open XML에 대 한 자세한 내용은 기술 문서를 참조 하세요 [소개 Office (2007) Open XML 파일 형식](http://msdn.microsoft.com/96018532-f62c-4da7-bbff-16b96a483fbf)합니다.  
+     합니다 **EmployeeControls.docx** 문서가 Open XML 형식으로 저장 됩니다. 이 문서의 바꾸어 합니다 *.zip* 파일 이름 확장명을 문서의 내용을 검사할 수 있습니다. Open XML에 대 한 자세한 내용은 기술 문서를 참조 하세요 [소개 Office (2007) Open XML 파일 형식](/previous-versions/office/developer/office-2007/aa338205(v=office.12))합니다.  
   
 10. 엽니다는 **EmployeeControls.docx.zip** 파일입니다.  
   

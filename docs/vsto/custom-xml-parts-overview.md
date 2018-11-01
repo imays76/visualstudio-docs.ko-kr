@@ -26,12 +26,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b31ce44c458f7f376d98fac83670595b8a163d65
-ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
+ms.openlocfilehash: 71720ef96ee7d17bd52ea118a8c44a8f4b117cad
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49325005"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671731"
 ---
 # <a name="custom-xml-parts-overview"></a>사용자 지정 XML 부분 개요
   일부 Microsoft Office 응용 프로그램에 대한 문서에 XML 데이터를 포함할 수 있습니다. 데이터 라는 문서에서 XML 데이터를 포함 하는 경우는 *사용자 지정 XML 부분*합니다.  
@@ -50,13 +50,13 @@ ms.locfileid: "49325005"
   
  Open XML 및 사용자 지정 XML 부분의 구조에 대한 자세한 내용은 다음 문서를 참조하세요.  
   
--   [Office (2007) Open XML 파일 형식 소개](http://msdn.microsoft.com/96018532-f62c-4da7-bbff-16b96a483fbf)  
+-   [Office (2007) Open XML 파일 형식 소개](/previous-versions/office/developer/office-2007/aa338205(v=office.12))  
   
--   [방법: Open XML 형식 문서 조작](http://msdn.microsoft.com/c989d4e2-053d-4e1f-83be-257c608b343f)  
+-   [방법: Open XML 형식 문서 조작](/previous-versions/office/developer/office-2007/aa982683(v=office.12))  
   
--   [연습: Word 2007 XML 형식](http://msdn.microsoft.com/fc1afcb2-27fb-4608-9f29-11b7bd23ea4a)  
+-   [연습: Word 2007 XML 형식](/previous-versions/office/developer/office-2007/bb266220(v=office.12))  
   
--   [Open XML 형식을 사용 하 여 Word 2007 문서 작성](http://msdn.microsoft.com/59a46f4e-5a5a-4dac-86e5-7dfd43330766)  
+-   [Open XML 형식을 사용 하 여 Word 2007 문서 작성](/previous-versions/office/developer/office-2007/bb264572(v=office.12))  
   
 > [!NOTE]  
 >  Excel, Word 및 PowerPoint를 통해 이진 파일 형식으로 저장된 문서에서 사용자 지정 XML 부분을 사용할 수 있습니다. 그러나 문서가 이진 형식으로 저장된 경우 Microsoft Office 응용 프로그램을 시작하지 않고 사용자 지정 XML 부분을 추가하거나 수정할 수 없습니다.  
@@ -76,7 +76,7 @@ ms.locfileid: "49325005"
 ### <a name="modify-xml-parts-without-starting-the-office-application"></a>Office 응용 프로그램을 시작 하지 않고 XML 부분 수정  
  Excel, PowerPoint 또는 Word를 시작하지 않고 사용자 지정 XML 부분을 추가하거나 수정할 수 있습니다. 서버와 같이 Microsoft Office 응용 프로그램이 설치되어 있지 않은 컴퓨터에서 문서의 XML 데이터로 작업하려는 경우에 유용합니다.  
   
- Microsoft Office를 시작하지 않고 사용자 지정 XML 부분을 추가하려면 Open XML SDK의 클래스를 사용합니다. 이러한 클래스는 Office 문서와 관련된 Open XML 콘텐츠에 대한 액세스를 제공하도록 설계되었습니다. 예를 들어, 사용자 지정 XML 부분에 있는 Excel 통합 문서를 추가 하려면 사용 합니다 [AddNewPart\<T >](https://msdn.microsoft.com/library/office/cc562657.aspx) 메서드를 [WorkbookPart](https://msdn.microsoft.com/library/office/documentformat.openxml.packaging.workbookpart.aspx) 개체입니다. 자세한 내용은 [Open XML SDK](/office/open-xml/open-xml-sdk)합니다.  
+ Microsoft Office를 시작하지 않고 사용자 지정 XML 부분을 추가하려면 Open XML SDK의 클래스를 사용합니다. 이러한 클래스는 Office 문서와 관련된 Open XML 콘텐츠에 대한 액세스를 제공하도록 설계되었습니다. 예를 들어, 사용자 지정 XML 부분에 있는 Excel 통합 문서를 추가 하려면 사용 합니다 <xref:DocumentFormat.OpenXml.Packaging.OpenXmlPartContainer.AddNewPart%2A> 메서드는 <xref:DocumentFormat.OpenXml.Packaging.WorkbookPart> 개체입니다. 자세한 내용은 [Open XML SDK](/office/open-xml/open-xml-sdk)합니다.  
   
 ## <a name="bind-custom-xml-parts-to-word-content-controls"></a>Word 콘텐츠 컨트롤에 사용자 지정 XML 부분 바인딩  
  사용자 지정 XML 부분의 요소에 Word 솔루션의 콘텐츠 컨트롤을 바인딩할 수 있습니다. 콘텐츠 컨트롤이 사용자 지정 XML 부분에 바인딩된 경우 사용자 지정 XML 부분의 데이터가 콘텐츠 컨트롤의 UI(사용자 인터페이스)에 표시됩니다. 사용자가 컨트롤의 텍스트를 편집하는 경우 해당 XML 요소가 자동으로 업데이트됩니다. 마찬가지로, 사용자 지정 XML 부분의 요소 값이 변경되는 경우 XML 요소에 바인딩된 콘텐츠 컨트롤에 새 데이터가 표시됩니다. 자세한 내용은 [콘텐츠 컨트롤](../vsto/content-controls.md)합니다.  
@@ -87,5 +87,3 @@ ms.locfileid: "49325005"
  [방법: VSTO 추가 기능을 사용 하 여 문서에 사용자 지정 XML 부분 추가](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)   
  [콘텐츠 컨트롤](../vsto/content-controls.md)   
  [연습: 사용자 지정 XML 부분에 콘텐츠 컨트롤 바인딩](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)  
-  
-  
