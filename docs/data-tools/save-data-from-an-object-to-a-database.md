@@ -17,22 +17,23 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 210d7ade5e54f9f76e40eaf577e7818db85176e5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c1203b3b129b42ca65b94cd7a4b9cebf108740f4
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897891"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750951"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>개체에서 데이터베이스로 데이터 저장
+
 TableAdapter의 DBDirect 메서드 중 하나에 개체에서 값을 전달 하 여 데이터베이스 개체에서 데이터를 저장할 수 있습니다 (예를 들어 `TableAdapter.Insert`). 자세한 내용은 [TableAdapter](../data-tools/create-and-configure-tableadapters.md)합니다.
 
- 개체의 컬렉션에서 데이터를 저장 하려면 (예를 들어, 다음에 대 한 루프의 경우) 개체의 컬렉션을 반복 하 고 TableAdapter의 중 하나를 사용 하 여 데이터베이스에 각 개체에 대 한 값을 보내는 `DBDirect` 메서드.
+개체의 컬렉션에서 데이터를 저장 하려면 (예를 들어, 다음에 대 한 루프의 경우) 개체의 컬렉션을 반복 하 고 TableAdapter의 중 하나를 사용 하 여 데이터베이스에 각 개체에 대 한 값을 보내는 `DBDirect` 메서드.
 
- 기본적으로 `DBDirect` 메서드는 데이터베이스에 대해 직접 실행할 수 있는 TableAdapter에 만들어집니다. 이러한 메서드는 직접 호출할 수 있습니다 하 고 필요 하지 않습니다 <xref:System.Data.DataSet> 또는 <xref:System.Data.DataTable> 내용을 데이터베이스에 업데이트를 전송 하기 위해 조정 하는 개체입니다.
+기본적으로 `DBDirect` 메서드는 데이터베이스에 대해 직접 실행할 수 있는 TableAdapter에 만들어집니다. 이러한 메서드는 직접 호출할 수 있습니다 하 고 필요 하지 않습니다 <xref:System.Data.DataSet> 또는 <xref:System.Data.DataTable> 내용을 데이터베이스에 업데이트를 전송 하기 위해 조정 하는 개체입니다.
 
 > [!NOTE]
->  TableAdapter를 구성 하는 경우 주 쿼리의 충분 한 정보를 제공 해야 합니다는 `DBDirect` 메서드를 만들 수 있습니다. 예를 들어 TableAdapter를 정의 하는 기본 키 열이 없는 테이블에서 데이터를 쿼리 하 구성 된 경우를 생성 하지 않습니다 `DBDirect` 메서드.
+> TableAdapter를 구성 하는 경우 주 쿼리의 충분 한 정보를 제공 해야 합니다는 `DBDirect` 메서드를 만들 수 있습니다. 예를 들어 TableAdapter를 정의 하는 기본 키 열이 없는 테이블에서 데이터를 쿼리 하 구성 된 경우를 생성 하지 않습니다 `DBDirect` 메서드.
 
 |TableAdapter DBDirect 메서드|설명|
 | - |-----------------|
@@ -40,7 +41,7 @@ TableAdapter의 DBDirect 메서드 중 하나에 개체에서 값을 전달 하 
 |`TableAdapter.Update`|기존 데이터베이스에서 레코드를 업데이트 합니다. `Update` 메서드는 원래 및 새 열 값을 메서드 매개 변수로 사용 합니다. 원래 값을 원래 레코드를 찾는 데 사용 되 고 새 값은 해당 레코드를 업데이트 하는 데 사용 됩니다.<br /><br /> 합니다 `TableAdapter.Update` 메서드는 또한 수행 하 여 데이터 집합의 변경 내용을 데이터베이스로 다시 조정 하는 데 사용 됩니다는 <xref:System.Data.DataSet>를 <xref:System.Data.DataTable>, <xref:System.Data.DataRow>, 또는 배열을 <xref:System.Data.DataRow>메서드 매개 변수로 합니다.|
 |`TableAdapter.Delete`|메서드 매개 변수로 전달 되는 원래 열 값에 따라 데이터베이스에서 기존 레코드를 삭제 합니다.|
 
-### <a name="to-save-new-records-from-an-object-to-a-database"></a>데이터베이스 개체에서 새 레코드를 저장 하려면
+## <a name="to-save-new-records-from-an-object-to-a-database"></a>데이터베이스 개체에서 새 레코드를 저장 하려면
 
 -   값을 전달 하 여 레코드를 만들어야 합니다 `TableAdapter.Insert` 메서드.
 
@@ -49,24 +50,24 @@ TableAdapter의 DBDirect 메서드 중 하나에 개체에서 값을 전달 하 
      [!code-csharp[VbRaddataSaving#23](../data-tools/codesnippet/CSharp/save-data-from-an-object-to-a-database_1.cs)]
      [!code-vb[VbRaddataSaving#23](../data-tools/codesnippet/VisualBasic/save-data-from-an-object-to-a-database_1.vb)]
 
-### <a name="to-update-existing-records-from-an-object-to-a-database"></a>데이터베이스 개체에서 기존 레코드를 업데이트 하려면
+## <a name="to-update-existing-records-from-an-object-to-a-database"></a>데이터베이스 개체에서 기존 레코드를 업데이트 하려면
 
 -   호출 하 여 레코드를 수정 합니다 `TableAdapter.Update` 메서드, 레코드를 업데이트 하려면 새 값을 전달 하 고 레코드를 찾고 원래 값을 전달 합니다.
 
     > [!NOTE]
-    >  개체를 전달할 수 있도록 원래 값을 유지 해야 하는 경우는 `Update` 메서드. 사용 하 여 속성을 사용 하 여이 예제는 `orig` 원래 값을 저장 하는 접두사입니다.
+    > 개체를 전달할 수 있도록 원래 값을 유지 해야 하는 경우는 `Update` 메서드. 사용 하 여 속성을 사용 하 여이 예제는 `orig` 원래 값을 저장 하는 접두사입니다.
 
      기존 레코드를 업데이트 하는 다음 예제는 `Customers` 테이블에서 새 및 원래 값을 전달 하 여는 `Customer` 개체는 `TableAdapter.Update` 메서드.
 
      [!code-csharp[VbRaddataSaving#24](../data-tools/codesnippet/CSharp/save-data-from-an-object-to-a-database_2.cs)]
      [!code-vb[VbRaddataSaving#24](../data-tools/codesnippet/VisualBasic/save-data-from-an-object-to-a-database_2.vb)]
 
-### <a name="to-delete-existing-records-from-a-database"></a>데이터베이스에서 기존 레코드를 삭제 하려면
+## <a name="to-delete-existing-records-from-a-database"></a>데이터베이스에서 기존 레코드를 삭제 하려면
 
 -   호출 하 여 레코드를 삭제 하는 `TableAdapter.Delete` 메서드와 레코드를 찾고 원래 값을 전달 합니다.
 
     > [!NOTE]
-    >  개체를 전달할 수 있도록 원래 값을 유지 해야 하는 경우는 `Delete` 메서드. 사용 하 여 속성을 사용 하 여이 예제는 `orig` 원래 값을 저장 하는 접두사입니다.
+    > 개체를 전달할 수 있도록 원래 값을 유지 해야 하는 경우는 `Delete` 메서드. 사용 하 여 속성을 사용 하 여이 예제는 `orig` 원래 값을 저장 하는 접두사입니다.
 
      레코드를 삭제 하는 다음 예제는 `Customers` 테이블의 원래 값을 전달 하 여는 `Customer` 개체를 `TableAdapter.Delete` 메서드.
 
@@ -74,7 +75,8 @@ TableAdapter의 DBDirect 메서드 중 하나에 개체에서 값을 전달 하 
      [!code-vb[VbRaddataSaving#25](../data-tools/codesnippet/VisualBasic/save-data-from-an-object-to-a-database_3.vb)]
 
 ## <a name="net-framework-security"></a>.NET Framework 보안
- 선택한 수행할 수 있는 권한이 있어야 합니다. `INSERT`, `UPDATE`, 또는 `DELETE` 데이터베이스의 테이블에 있습니다.
+
+선택한 수행할 수 있는 권한이 있어야 합니다. `INSERT`, `UPDATE`, 또는 `DELETE` 데이터베이스의 테이블에 있습니다.
 
 ## <a name="see-also"></a>참고자료
 

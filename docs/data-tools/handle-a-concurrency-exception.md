@@ -20,12 +20,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6aca4815672d700fbea9d489f6316b8b0337f8df
-ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
+ms.openlocfilehash: e23a023b3e37b9c4f3869bfa699ffee1f44caffa
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582335"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750814"
 ---
 # <a name="handle-a-concurrency-exception"></a>동시성 예외 처리
 
@@ -162,13 +162,13 @@ ms.locfileid: "39582335"
 
 1. 아래 다음 코드를 추가 합니다 `Form1_Load` 메서드:
 
-     [!code-csharp[VbRaddataConcurrency#1](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_1.cs)]
-     [!code-vb[VbRaddataConcurrency#1](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_1.vb)]
+   [!code-csharp[VbRaddataConcurrency#1](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_1.cs)]
+   [!code-vb[VbRaddataConcurrency#1](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_1.vb)]
 
 2. 대체는 `CustomersBindingNavigatorSaveItem_Click` 메서드를 호출 하는 `UpdateDatabase` 메서드를 다음과 같이 표시 됩니다:
 
-     [!code-csharp[VbRaddataConcurrency#2](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_2.cs)]
-     [!code-vb[VbRaddataConcurrency#2](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_2.vb)]
+   [!code-csharp[VbRaddataConcurrency#2](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_2.cs)]
+   [!code-vb[VbRaddataConcurrency#2](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_2.vb)]
 
 ### <a name="display-choices-to-the-user"></a>사용자에 게 표시 선택
 
@@ -176,8 +176,8 @@ ms.locfileid: "39582335"
 
 다음 코드를 추가 하 여 메시지를 만들 합니다 **코드 편집기**합니다. 아래이 코드를 입력 합니다 `UpdateDatabase` 메서드:
 
-     [!code-csharp[VbRaddataConcurrency#4](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_3.cs)]
-     [!code-vb[VbRaddataConcurrency#4](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_3.vb)]
+[!code-csharp[VbRaddataConcurrency#4](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_3.cs)]
+[!code-vb[VbRaddataConcurrency#4](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_3.vb)]
 
 ### <a name="process-the-users-response"></a>사용자의 응답 처리
 
@@ -185,8 +185,8 @@ ms.locfileid: "39582335"
 
 이전 섹션에서 추가한 코드 아래에 다음 코드를 추가 합니다.
 
-     [!code-csharp[VbRaddataConcurrency#3](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_4.cs)]
-     [!code-vb[VbRaddataConcurrency#3](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_4.vb)]
+[!code-csharp[VbRaddataConcurrency#3](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_4.cs)]
+[!code-vb[VbRaddataConcurrency#3](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_4.vb)]
 
 ## <a name="test-the-form"></a>형식 테스트
 

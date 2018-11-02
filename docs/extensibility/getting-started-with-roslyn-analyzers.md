@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41db830fbf7dcbe97f44d64ffa9b9701ec658c1e
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: d89cd2f7ff1be28ac9d96578ba5ce57f653cc65e
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370590"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750912"
 ---
 # <a name="get-started-with-roslyn-analyzers"></a>Roslyn 분석기 시작
 
@@ -30,12 +30,12 @@ Visual Studio에서 프로젝트 기반 라이브 코드 분석기를 사용 하
 
 [실제 Roslyn 분석기](../extensibility/roslyn-analyzers-and-code-aware-library-for-immutablearrays.md) 로 볼 수 있는 한 [통신](https://channel9.msdn.com/events/Build/2015/3-725)
 
-[세 가지 유형의 분석기를 그룹화 하는 github에서 몇 가지 예제](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
+[세 가지 유형의 분석기를 그룹화 하는 GitHub에서 몇 가지 예제](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
 
 [소개과 몇 가지 분석기 둘러보기](https://channel9.msdn.com/Events/dotnetConf/2015/NET-Compiler-Platform-Roslyn-Analyzers-and-the-Rise-of-Code-Aware-Libraries)
 
 ## <a name="see-also"></a>참고자료
 
 - [Roslyn 분석기 개요](../code-quality/roslyn-analyzers-overview.md)
-- [OSS github 사이트에서 더 많은 문서](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)
+- [GitHub OSS 사이트에서 더 많은 문서](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)
 - [GitHub의 Roslyn 분석기를 사용 하 여 구현 하는 FxCop 규칙](https://github.com/dotnet/roslyn/tree/master/src/Diagnostics/FxCop)

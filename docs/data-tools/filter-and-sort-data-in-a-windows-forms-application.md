@@ -21,20 +21,21 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 21ebae03dd2ba58a751a839f5e3151654faa39e0
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 1868d670458e204f6e503b132aaceab17f3da742
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757597"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750925"
 ---
 # <a name="filter-and-sort-data-in-a-windows-forms-application"></a>Windows Forms 응용 프로그램에서 데이터 필터링 및 정렬
+
 설정 하 여 데이터를 필터링 합니다 <xref:System.Windows.Forms.BindingSource.Filter%2A> 속성을 원하는 레코드를 반환 하는 문자열 식입니다.
 
- 설정 하 여 데이터를 정렬 합니다 <xref:System.Windows.Forms.BindingSource.Sort%2A> 속성을 정렬 하려면; 추가 하는 열 이름 `DESC` 를 내림차순으로 정렬 하거나 추가 `ASC` 오름차순 정렬 합니다.
+설정 하 여 데이터를 정렬 합니다 <xref:System.Windows.Forms.BindingSource.Sort%2A> 속성을 정렬 하려면; 추가 하는 열 이름 `DESC` 를 내림차순으로 정렬 하거나 추가 `ASC` 오름차순 정렬 합니다.
 
 > [!NOTE]
->  응용 프로그램을 사용 하지 않는 경우 <xref:System.Windows.Forms.BindingSource> 구성 요소를 필터링 할 수 있습니다 사용 하 여 데이터를 정렬 및 <xref:System.Data.DataView> 개체입니다. 자세한 내용은 [Dataview](/dotnet/framework/data/adonet/dataset-datatable-dataview/dataviews)합니다.
+> 응용 프로그램을 사용 하지 않는 경우 <xref:System.Windows.Forms.BindingSource> 구성 요소를 필터링 할 수 있습니다 사용 하 여 데이터를 정렬 및 <xref:System.Data.DataView> 개체입니다. 자세한 내용은 [Dataview](/dotnet/framework/data/adonet/dataset-datatable-dataview/dataviews)합니다.
 
 ## <a name="to-filter-data-by-using-a-bindingsource-component"></a>BindingSource 구성 요소를 사용 하 여 데이터를 필터링 하려면
 
