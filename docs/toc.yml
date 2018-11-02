@@ -789,18 +789,28 @@ items:
           href: ide/reference/options-text-editor-c-cpp-advanced.md
         - name: 텍스트 편집기 - C/C++, 실험적
           href: ide/reference/options-text-editor-c-cpp-experimental.md
+        - name: 텍스트 편집기 - C/C++, 보기
+          href: ide/reference/options-text-editor-c-cpp-view.md
         - name: 텍스트 편집기 - C#, 코드 스타일, 서식
           href: ide/reference/options-text-editor-csharp-formatting.md
         - name: 텍스트 편집기 - C#, 고급
           href: ide/reference/options-text-editor-csharp-advanced.md
         - name: 텍스트 편집기 - C#, IntelliSense
           href: ide/reference/options-text-editor-csharp-intellisense.md
+        - name: 텍스트 편집기 - JavaScript, 코드 유효성 검사
+          href: ide/reference/options-text-editor-javascript-code-validation.md
         - name: 텍스트 편집기 - JavaScript, 서식
           href: ide/reference/options-text-editor-javascript-formatting.md
         - name: 텍스트 편집기 - JavaScript, IntelliSense
           href: ide/reference/options-text-editor-javascript-intellisense.md
         - name: 텍스트 편집기 - XAML, 서식
           href: ide/reference/options-text-editor-xaml-formatting.md
+        - name: 텍스트 편집기 - XAML, 기타
+          href: ide/reference/options-text-editor-xaml-miscellaneous.md
+        - name: 텍스트 편집기 - XML, 서식
+          href: ide/reference/options-text-editor-xml-formatting.md
+        - name: 텍스트 편집기 - XML, 기타
+          href: ide/reference/options-text-editor-xml-miscellaneous.md
       - name: 프로젝트 및 솔루션, 옵션 대화 상자
         href: ide/reference/projects-and-solutions-options-dialog-box.md
         items:
@@ -1087,9 +1097,9 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: 의견 보내기
     href: ide/talk-to-us.md
-ms.openlocfilehash: 32ae829c7ddde6da31cd3ef869020255da078c59
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: f1fd877d75f4a771826c44b6992ecde6165b3f41
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220354"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671913"
