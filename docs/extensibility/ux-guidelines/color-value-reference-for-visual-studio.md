@@ -1,27 +1,25 @@
 ---
-title: Visual Studio에 대 한 값 참조를 색 | Microsoft 문서
+title: 색 값 참조
 description: '새 Visual Studio 색 토큰을 만들기 위한 참조: 16 진수 코드'
 keywords: 색, 16 진수 코드, 색상, 테마 UI, 테마 설정
 author: brickgeorge
-ms.author: v-brickg
+ms.author: gregvanl
 ms.date: 08/04/2017
 ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
-ms.custom: ''
 ms.reviewer: Jamie.Young
 ms.technology:
 - vs-ide-sdk
 manager: douge
-ms.workload:
-- v-brickg
-ms.openlocfilehash: d0055ae3d0031d1cb1ffa7896a4594eadf69d42d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5216be58983b8b354a8136f9d7941a460915dc44
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49902608"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50751091"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Visual Studio에 대 한 색 값 참조
+
 이 항목은 새 색 토큰을 만들기에 대 한 참조입니다. 새 UI를 만들 때 각 기본 테마에 대 한 색 및 고대비 테마의 해당 요소에 대 한 시스템 색 이름을 선택 하려면 기존 UI에서 비슷한 색을 사용할 수 있습니다. 
 
 새 색 토큰을 만드는 방법에 대 한 구현 정보를 참조 하세요 [색 테마 도구](../../extensibility/internals/color-theming-tools.md)합니다.

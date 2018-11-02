@@ -19,20 +19,21 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c8d400f8fa46fa10876d1827205671b6d90a3e33
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: 580ca6a9a384fff373a72e5449af2790a8c1e5b8
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089440"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750763"
 ---
 # <a name="pass-data-between-forms"></a>폼 간에 데이터 전달
+
 이 연습에서는 폼 간에 데이터를 전달하기 위한 단계별 지침을 제공합니다. customers 및 orders 테이블에서 Northwind 사용 하 여 고객을 선택 하면 폼 및 두 번째 폼을 선택한 고객의 주문이 표시 됩니다. 이 연습에는 첫 번째 형태에서 데이터를 수신 하는 두 번째 형태에서 메서드를 만드는 방법을 보여 줍니다.
 
 > [!NOTE]
->  이 연습에서는 폼 간에 데이터를 전달하는 방식 중 하나만을 보여줍니다. 만드는 데이터를 받는 두 번째 생성자를 포함 하 여 폼에 데이터를 전달 하기 위한 다른 옵션은 하거나는 공용 속성을 만들 설정 데이터를 사용 하 여 첫 번째 형태에서.
+> 이 연습에서는 폼 간에 데이터를 전달하는 방식 중 하나만을 보여줍니다. 만드는 데이터를 받는 두 번째 생성자를 포함 하 여 폼에 데이터를 전달 하기 위한 다른 옵션은 하거나는 공용 속성을 만들 설정 데이터를 사용 하 여 첫 번째 형태에서.
 
- 이 연습에서 설명하는 작업은 다음과 같습니다.
+이 연습에서 설명하는 작업은 다음과 같습니다.
 
 -   새로 만들 **Windows Forms 응용 프로그램** 프로젝트입니다.
 
@@ -49,6 +50,7 @@ ms.locfileid: "37089440"
 -   폼 간에 데이터를 전달합니다.
 
 ## <a name="prerequisites"></a>전제 조건
+
 이 연습에서는 Northwind 샘플 데이터베이스 및 SQL Server Express LocalDB를 사용 합니다.
 
 1.  SQL Server Express LocalDB가 없는 경우 설치에서 [SQL Server Express 다운로드 페이지](https://www.microsoft.com/sql-server/sql-server-editions-express), 또는 합니다 **Visual Studio 설치 관리자**합니다. Visual Studio 설치 관리자를 SQL Server Express LocalDB의 일부로 설치할 수 있습니다 합니다 **데이터 저장소 및 처리** 워크 로드 또는 개별 구성 요소입니다.
@@ -65,9 +67,7 @@ ms.locfileid: "37089440"
 
        짧은 시간 후 쿼리 실행이 완료 하 고 Northwind 데이터베이스 생성 됩니다.
 
-## <a name="create-the-windows-forms-application"></a>Windows Forms 응용 프로그램 만들기
-
-### <a name="to-create-the-new-windows-project"></a>새 Windows 프로젝트를 만들려면
+## <a name="create-the-windows-forms-app-project"></a>Windows Forms 앱 프로젝트 만들기
 
 1. Visual Studio에서에 **파일** 메뉴에서 **새로 만들기** > **프로젝트**합니다.
 
@@ -80,8 +80,6 @@ ms.locfileid: "37089440"
      합니다 **PassingDataBetweenForms** 프로젝트에 추가한 만들어지면 **솔루션 탐색기**합니다.
 
 ## <a name="create-the-data-source"></a>데이터 원본 만들기
-
-### <a name="to-create-the-data-source"></a>데이터 소스를 만들려면
 
 1.  **데이터** 메뉴에서 **데이터 소스 표시**를 클릭합니다.
 
@@ -108,7 +106,8 @@ ms.locfileid: "37089440"
      합니다 **NorthwindDataSet** 프로젝트에 추가 됩니다 및 **고객** 및 **주문** 테이블에 표시 합니다 **데이터 원본** 창.
 
 ## <a name="create-the-first-form-form1"></a>첫 번째 형태 (Form1) 만들기
- 데이터 바인딩된 표를 만들 수 있습니다 (을 <xref:System.Windows.Forms.DataGridView> 컨트롤), 끌어서를 **고객** 에서 노드를 **데이터 원본** 창에서 폼입니다.
+
+데이터 바인딩된 표를 만들 수 있습니다 (을 <xref:System.Windows.Forms.DataGridView> 컨트롤), 끌어서를 **고객** 에서 노드를 **데이터 원본** 창에서 폼입니다.
 
 ### <a name="to-create-a-data-bound-grid-on-the-form"></a>폼에서 데이터 바인딩된 표를 만들려면
 
@@ -116,9 +115,9 @@ ms.locfileid: "37089440"
 
      A <xref:System.Windows.Forms.DataGridView> 및 도구 모음 (<xref:System.Windows.Forms.BindingNavigator>)에 표시할 레코드 탐색을 위한 **Form1**합니다. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter를 <xref:System.Windows.Forms.BindingSource>, 및 <xref:System.Windows.Forms.BindingNavigator> 구성 요소 트레이에 나타납니다.
 
-## <a name="create-the-second-form-form2"></a>두 번째 형태 (Form2) 만들기
+## <a name="create-the-second-form"></a>두 번째 폼을 만들려면
 
-### <a name="to-create-a-second-form-to-pass-the-data-to"></a>데이터를 전달할 두 번째 폼을 만들려면
+데이터를 전달 하는 두 번째 폼을 만듭니다.
 
 1.  **프로젝트** 메뉴에서 **Windows Form 추가**를 선택합니다.
 
@@ -132,9 +131,9 @@ ms.locfileid: "37089440"
 
      합니다 **OrdersBindingNavigator** 에서 사라집니다 **Form2**합니다.
 
-## <a name="add-a-tableadapter-query-to-form2-to-load-orders-for-the-selected-customer-on-form1"></a>Form1에서 선택한 고객의 주문을 로드 하도록 Form2에 TableAdapter 쿼리 추가
+## <a name="add-a-tableadapter-query"></a>TableAdapter 쿼리 추가
 
-### <a name="to-create-a-tableadapter-query"></a>TableAdapter 쿼리를 만들려면
+Form1에서 선택한 고객의 주문을 로드 하도록 Form2에 TableAdapter 쿼리를 추가 합니다.
 
 1.  두 번 클릭 합니다 **NorthwindDataSet.xsd** 파일 **솔루션 탐색기**합니다.
 
@@ -153,7 +152,7 @@ ms.locfileid: "37089440"
     ```
 
     > [!NOTE]
-    >  데이터베이스에 대한 올바른 매개 변수 구문을 확인합니다. 예를 들어 Microsoft Access에서 WHERE 절은 다음과 같습니다. `WHERE CustomerID = ?`.
+    > 데이터베이스에 대한 올바른 매개 변수 구문을 확인합니다. 예를 들어 Microsoft Access에서 WHERE 절은 다음과 같습니다. `WHERE CustomerID = ?`.
 
 6.  **다음**을 클릭합니다.
 
@@ -165,8 +164,6 @@ ms.locfileid: "37089440"
 
 ## <a name="create-a-method-on-form2-to-pass-data-to"></a>Form2에 데이터를 전달할 메서드 만들기
 
-### <a name="to-create-a-method-to-pass-data-to"></a>데이터를 전달할 메서드를 만들려면
-
 1.  마우스 오른쪽 단추로 클릭 **Form2**, 선택한 **코드 보기** 열려는 **Form2** 에 **코드 편집기**합니다.
 
 2.  다음 코드를 추가 **Form2** 후는 `Form2_Load` 메서드:
@@ -175,8 +172,6 @@ ms.locfileid: "37089440"
      [!code-csharp[VbRaddataDisplaying#1](../data-tools/codesnippet/CSharp/pass-data-between-forms_1.cs)]
 
 ## <a name="create-a-method-on-form1-to-pass-data-and-display-form2"></a>데이터를 전달 하 고 Form2를 표시 하는 Form1에서 메서드를 만듭니다.
-
-### <a name="to-create-a-method-to-pass-data-to-form2"></a>Form2로 데이터를 전달할 메서드를 만들려면
 
 1.  **Form1**Customer 데이터 표를 마우스 오른쪽 단추로 클릭 한 다음 클릭 **속성**합니다.
 
@@ -191,9 +186,7 @@ ms.locfileid: "37089440"
      [!code-csharp[VbRaddataDisplaying#2](../data-tools/codesnippet/CSharp/pass-data-between-forms_2.cs)]
      [!code-vb[VbRaddataDisplaying#2](../data-tools/codesnippet/VisualBasic/pass-data-between-forms_2.vb)]
 
-## <a name="run-the-application"></a>응용 프로그램 실행
-
-### <a name="to-run-the-application"></a>응용 프로그램을 실행하려면
+## <a name="run-the-app"></a>앱 실행
 
 -   **F5** 키를 눌러 응용 프로그램을 실행합니다.
 

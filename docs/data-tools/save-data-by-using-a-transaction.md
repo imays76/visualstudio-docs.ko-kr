@@ -18,14 +18,15 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1c5d8d9f961db7c6560f1dd7a73f2ea62a974bac
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 28beeec474af9b05153e787c6cbe22034d09b350
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174220"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750990"
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>방법: 트랜잭션을 사용 하 여 데이터 저장
+
 사용 하 여 트랜잭션에서 데이터를 저장 합니다 <xref:System.Transactions> 네임 스페이스입니다. 사용 된 <xref:System.Transactions.TransactionScope> 개체를 자동으로 관리 되는 트랜잭션에 참여할 수 있습니다.
 
 프로젝트에 대 한 참조를 사용 하 여 만들어지지 합니다 *System.Transactions* 어셈블리를 수동으로 트랜잭션을 사용 하는 프로젝트에 대 한 참조를 추가 해야 합니다.
