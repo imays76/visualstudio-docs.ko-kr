@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: e316caa9ededbb7db40490fcbcc10ec4f760497d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6f9abc191bdecce244581e7427116b05427de215
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903753"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966741"
 ---
 # <a name="properties-of-swimlanes"></a>스윔 레인의 속성
 다이어그램에 스윔 레인을 추가할 수 있습니다. 스윔 레인은 다이어그램을 세로 또는 가로 영역 나눕니다. 스윔 레인 내에서 표시할 다른 셰이프를 정의할 수 있습니다. 자세한 내용은 [도메인별 언어 정의 방법](../modeling/how-to-define-a-domain-specific-language.md)합니다. 이러한 속성을 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [사용자 지정 및 도메인 특정 언어 확장](../modeling/customizing-and-extending-a-domain-specific-language.md)합니다.
@@ -54,4 +54,4 @@ ms.locfileid: "49903753"
 
 ## <a name="see-also"></a>참고 항목
 
-- [도메인 특정 언어 도구 용어집](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

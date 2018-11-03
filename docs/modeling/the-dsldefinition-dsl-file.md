@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4ced1cb0fda46a77bb9303a8f69e9f413b2e4751
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5988876bc1cdc7d186efb60d7d3875f9946bfc7d
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898553"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967521"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>DslDefinition.dsl 파일
 
@@ -298,7 +298,7 @@ OutPort 클래스 멤버를 InPort 클래스 멤버에 연결하는 Connection �
 를 작성할 때 C#이 모델에 대 한 각각의 관련 된 클래스의 관계를 생성 하는 속성을 사용 하 여 한 단계로 링크를 이동할 수 있습니다.
 
 ```
-     InPort port; ...  Component c = port.Component;
+     InPort port; ...  Component c = port.Component;
 ```
 
 그러나 경로 구문에서 두 홉을 모두 명시적으로 지정해야 합니다. 이 요구 사항으로 인해 중간 링크에 보다 쉽게 액세스할 수 있습니다. 다음 코드는 링크에서 Component로의 홉을 완료합니다.
@@ -581,6 +581,6 @@ Decorator 맵은 매핑된 클래스의 속성을 모양의 Decorator와 연결�
 
 ## <a name="see-also"></a>참고자료
 
-- [도메인 특정 언어 도구 용어집](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
 - [도메인별 언어 정의 방법](../modeling/how-to-define-a-domain-specific-language.md)
 - [모델, 클래스 및 관계 이해](../modeling/understanding-models-classes-and-relationships.md)

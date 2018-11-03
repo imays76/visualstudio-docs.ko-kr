@@ -9,19 +9,19 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 276ec679525682486db5a579ac34f52cec5081f8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 89723d09fdd6362cdc301f1fa551b7c062639df0
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885665"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967326"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>도메인 특정 언어 시작
 
 이 항목에서는 정의 하 고 Visual Studio 용 모델링 SDK를 사용 하 여 만든 도메인 특정 언어 (DSL)를 사용 하 여 기본적인 개념을 설명 합니다.
 
 > [!NOTE]
-> Visual Studio의 특정 기능을 설치한 경우에 Visual Studio 2017에서 텍스트 템플릿 변환 SDK 및 Visual Studio 모델링 SDK에 자동으로 설치 됩니다. 자세한 내용은 참조 하세요. [이 블로그 게시물](https://blogs.msdn.microsoft.com/visualstudioalm/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)합니다.
+> Visual Studio의 특정 기능을 설치한 경우에 Visual Studio 2017에서 텍스트 템플릿 변환 SDK 및 Visual Studio 모델링 SDK에 자동으로 설치 됩니다. 자세한 내용은 참조 하세요. [이 블로그 게시물](https://blogs.msdn.microsoft.com/devops/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)합니다.
 
 Dsl을 처음 접하는 경우 진행 하는 것이 좋습니다 합니다 **DSL 도구 랩**,이 사이트에서 찾을 수 있는: [Visualizaton and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
 
@@ -112,7 +112,7 @@ DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
 1.  클릭 **모든 템플릿 변형** 에 **솔루션 탐색기** 도구 모음입니다. 이 대부분의 DslDefinition.dsl에서 소스 코드를 다시 생성합니다.
 
     > [!NOTE]
-    > 변경 될 때마다 *DslDefinition.dsl*를 클릭 해야 **모든 템플릿 변환** 솔루션을 다시 작성 하기 전에 합니다. 이 단계는 자동화할 수 있습니다. 자세한 내용은 [모든 템플릿 변환 자동화 방법](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)합니다.
+    > 변경 될 때마다 *DslDefinition.dsl*를 클릭 해야 **모든 템플릿 변환** 솔루션을 다시 작성 하기 전에 합니다. 이 단계는 자동화할 수 있습니다. 자세한 내용은 [모든 템플릿 변환 자동화 방법](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\))합니다.
 
 2.  **F5**키를 누르거나, **디버그** 메뉴에서 **디버깅 시작**을 클릭합니다.
 

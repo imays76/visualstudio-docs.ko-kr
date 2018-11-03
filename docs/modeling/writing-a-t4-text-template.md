@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: afee98dfd4d3192bb964c09ba4813c4469af95ed
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0d697f1fed2a7b17862ff4c6f72488674859f754
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839910"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967300"
 ---
 # <a name="writing-a-t4-text-template"></a>T4 텍스트 템플릿 쓰기
 텍스트 템플릿은 해당 템플릿에서 생성될 텍스트를 포함합니다. 예를 들어, 웹 페이지를 만드는 템플릿으로 사용 될 "\<html >..." 및 HTML 페이지의 기타 모든 표준 부분입니다. 템플릿에 삽입 됩니다 *제어 블록*는 프로그램 코드 조각입니다. 제어 블록은 경우에 따라 다른 값을 제공하여 텍스트 부분을 조건부로/반복 적용할 수 있도록 합니다.
@@ -257,7 +257,7 @@ Content of MyFile.txt is:
 <#= myFile #>
 ```
 
-호스트가 제공하는 다른 서비스도 가져올 수 있습니다. 자세한 내용은 [Visual Studio에 액세스 또는 다른 호스트 템플릿에서](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4)합니다.
+호스트가 제공하는 다른 서비스도 가져올 수 있습니다. 자세한 내용은 [Visual Studio에 액세스 또는 다른 호스트 템플릿에서](/previous-versions/visualstudio/visual-studio-2010/gg604090\(v\=vs.100\))합니다.
 
 ### <a name="design-time-text-templates-run-in-a-separate-appdomain"></a>별도의 AppDomain에서 실행되는 디자인 타임 텍스트 템플릿
 

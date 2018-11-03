@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4b584495ee4848a3c01ebe63ee30b5bc52b0ff34
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2181e9f89fc8d859bfda9a29de6af8726ae5aef3
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895641"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967430"
 ---
 # <a name="customizing-element-creation-and-movement"></a>요소 만들기 및 이동 사용자 지정
 
@@ -322,4 +322,4 @@ Emd는 추가 포함 관계를 정의할 때 자동으로 생성 됩니다. 사�
 
 - [프로그램 코드에서 모델 탐색 및 업데이트](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [도구 및 도구 상자 사용자 지정](../modeling/customizing-tools-and-the-toolbox.md)
-- [회로 다이어그램 샘플 DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+- [회로 다이어그램 샘플 DSL](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

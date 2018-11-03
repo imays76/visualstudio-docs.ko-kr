@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f9e1febd80c060d97ec9b533a3ec1b67d0427eab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2159a7954059eedb0d5100cb41a33b47f7577e93
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942181"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967261"
 ---
 # <a name="properties-of-geometry-shapes"></a>기하 도형의 속성
 도메인 특정 언어의 도메인 클래스의 인스턴스가 표시 되는 방식을 지정 하려면 기 하 도형에 사용할 수 있습니다. 자세한 내용은 [도메인별 언어 정의 방법](../modeling/how-to-define-a-domain-specific-language.md)합니다. 이러한 속성을 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [사용자 지정 및 도메인 특정 언어 확장](../modeling/customizing-and-extending-a-domain-specific-language.md)합니다.
@@ -55,4 +55,4 @@ ms.locfileid: "49942181"
 
 ## <a name="see-also"></a>참고 항목
 
-- [도메인 특정 언어 도구 용어집](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

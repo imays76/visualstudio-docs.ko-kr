@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 16a00dd5c0769cb49f5281570ba11433afa56dfe
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 3dce04e4460222bcd0fcf2cebd747d9dd95f14d4
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858862"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966754"
 ---
 # <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>시각화에 대 한 지원 되는 Visual Studio 버전 &amp; 모델링 SDK
 다음은 지원 되는 Visual Studio 버전 목록을 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 제작 및 배포 환경입니다. 이러한 버전에 대 한 자세한 내용은 참조는 Microsoft Visual Studio [개발자 센터](http://go.microsoft.com/fwlink/?LinkId=75628)합니다.
@@ -48,4 +48,4 @@ ms.locfileid: "47858862"
 
 ## <a name="see-also"></a>참고 항목
 
-- [도메인 특정 언어 도구 용어집](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

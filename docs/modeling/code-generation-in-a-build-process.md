@@ -12,16 +12,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: e42d37e6cb31917a7da8666a5bd0b4dd54f0a837
-ms.sourcegitcommit: ed524fd809b17ad1d06bf9cd4c3374c71a44d7bf
+ms.openlocfilehash: d908467ca131546d3d224e4c51f38bb5eaa850d9
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39409806"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967118"
 ---
 # <a name="code-generation-in-a-build-process"></a>빌드 프로세스에서 코드 생성
 
-[텍스트 변형](../modeling/code-generation-and-t4-text-templates.md) 의 일부로 호출할 수는 [빌드 프로세스](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692) Visual Studio 솔루션. 이는 텍스트 변형에 대해 특수화된 빌드 작업입니다. T4 빌드 작업은 디자인 타임 텍스트 템플릿을 실행하고 전처리된 런타임 텍스트 템플릿을 컴파일합니다.
+[텍스트 변형](../modeling/code-generation-and-t4-text-templates.md) 의 일부로 호출할 수는 [빌드 프로세스](/azure/devops/pipelines/index) Visual Studio 솔루션. 이는 텍스트 변형에 대해 특수화된 빌드 작업입니다. T4 빌드 작업은 디자인 타임 텍스트 템플릿을 실행하고 전처리된 런타임 텍스트 템플릿을 컴파일합니다.
 
 사용하는 빌드 엔진에 따라 빌드 작업에서 수행할 수 있는 몇 가지 작업이 다를 수 있습니다. 경우 텍스트 템플릿에서 Visual Studio API (EnvDTE)에 액세스할 수 있는지 Visual Studio에서 솔루션을 빌드할 때 합니다 [hostspecific = "true"](../modeling/t4-template-directive.md) 특성이 설정 되어 있습니다. 이것이 true 명령줄에서 솔루션을 빌드할 때 또는 Visual Studio를 통해 서버 빌드를 시작 합니다. 이러한 경우에는 MSBuild에서 빌드가 수행되고 다른 T4 호스트가 사용됩니다.
 
@@ -33,7 +33,7 @@ ms.locfileid: "39409806"
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-하는 경우 [빌드 서버](http://msdn.microsoft.com/Library/788443c3-0547-452e-959c-4805573813a9) 는 Visual Studio 설치 되지 않은 컴퓨터에서 실행 개발 컴퓨터에서 빌드 컴퓨터로 다음 파일을 복사 합니다. 대체에 대 한 가장 최근 버전 번호 ' *'.
+하는 경우 [빌드 서버](/azure/devops/pipelines/agents/agents) 는 Visual Studio 설치 되지 않은 컴퓨터에서 실행 개발 컴퓨터에서 빌드 컴퓨터로 다음 파일을 복사 합니다. 대체에 대 한 가장 최근 버전 번호 ' *'.
 
 - $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
 
@@ -236,7 +236,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 The project folder is: <#= ProjectFolder #>
 ```
 
-지시문 프로세서에서 호출할 수 있습니다 [ITextTemplatingEngineHost.ResolveParameterValue](https://msdn.microsoft.com/library/microsoft.visualstudio.texttemplating.itexttemplatingenginehost.resolveparametervalue.aspx):
+지시문 프로세서에서 호출할 수 있습니다 [ITextTemplatingEngineHost.ResolveParameterValue](/previous-versions/visualstudio/visual-studio-2012/bb126369\(v\=vs.110\)):
 
 ```csharp
 string value = Host.ResolveParameterValue("-", "-", "parameterName");

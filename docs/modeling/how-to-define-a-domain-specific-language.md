@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3e80e90928bd5ff81e7364e23a1d5035d2bfbe3a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ed1259ef04f59d37752d89f922623b963bcbbc22
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860645"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967534"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>도메인별 언어 정의 방법
 도메인 특정 언어 (DSL)를 정의 하려면 템플릿에서 Visual Studio 솔루션을 만듭니다. 이 솔루션의 중요한 요소는 DslDefinition.dsl에 저장되는 DSL 정의 다이어그램입니다. DSL 정의는 DSL의 클래스와 모양을 정의합니다. 이러한 요소를 수정하고 필요한 내용을 추가한 후에 프로그램 코드를 추가하여 DSL을 보다 자세하게 사용자 지정할 수 있습니다.
@@ -213,7 +213,7 @@ Dsl을 처음 접하는 경우 진행 하는 것이 좋습니다 합니다 **DSL
 
 ##### <a name="to-test-the-new-domain-classes"></a>새 도메인 클래스를 테스트하려면
 
-1.  **모든 템플릿 변환을 클릭** DSL 디자이너 코드를 생성 하려면 솔루션 탐색기의 도구 모음에서입니다. 이 단계는 자동화할 수 있습니다. 자세한 내용은 [모든 템플릿 변환 자동화 방법](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)합니다.
+1.  **모든 템플릿 변환을 클릭** DSL 디자이너 코드를 생성 하려면 솔루션 탐색기의 도구 모음에서입니다. 이 단계는 자동화할 수 있습니다. 자세한 내용은 [모든 템플릿 변환 자동화 방법](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\))합니다.
 
 2.  **빌드하고 DSL을 실행 합니다.** Visual Studio의 새 인스턴스를 실험적 모드에서 실행 하려면 F5 키나 ctrl+f5를 누릅니다. Visual Studio의 실험적 인스턴스에서 열거나 DSL의 파일 이름 확장명을 가진 파일을 만듭니다.
 

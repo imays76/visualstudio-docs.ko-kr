@@ -12,16 +12,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f6fd04b715e573698719e7a2dc512d0882d10b8e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4791566d3c37517c3c93e62e371bf4cbc9fc6604
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894354"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966559"
 ---
 # <a name="model-user-requirements"></a>사용자 요구 사항 모델링
 
-Visual Studio는 사용자 동작 및 목표 달성을 위해 시스템이 수행하는 작업에 대한 다이어그램을 그려 사용자 요구 사항을 이해, 논의 및 전달할 수 있도록 도와줍니다. 요구 사항 모델은 각각 사용자 요구의 다른 측면에 중점을 두는 다이어그램 집합입니다. 비디오 데모는 [비즈니스 도메인 모델링](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/)을 참조하세요.
+Visual Studio는 사용자 동작 및 목표 달성을 위해 시스템이 수행하는 작업에 대한 다이어그램을 그려 사용자 요구 사항을 이해, 논의 및 전달할 수 있도록 도와줍니다. 요구 사항 모델은 각각 사용자 요구의 다른 측면에 중점을 두는 다이어그램 집합입니다. 비디오 데모는 [비즈니스 도메인 모델링](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)을 참조하세요.
 
 각 모델 형식을 지원하는 Visual Studio 버전을 확인하려면 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)를 참조하세요.
 

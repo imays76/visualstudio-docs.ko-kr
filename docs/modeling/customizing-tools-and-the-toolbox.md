@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: c840ed268e8e5aaa70dcc83eb9a0eeff3a2eb33f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3b0acab24dbb7ff1313e62e91b17bf87190dbb99
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815575"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967443"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>도구 및 도구 상자 사용자 지정
 
@@ -240,4 +240,4 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 - [복사 동작 사용자 지정](../modeling/customizing-copy-behavior.md)
 - [방법: 끌어서 놓기 처리기 추가](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [프로그램 코드에서 모델 탐색 및 업데이트](../modeling/navigating-and-updating-a-model-in-program-code.md)
-- [회로 다이어그램 샘플 DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+- [회로 다이어그램 샘플 DSL](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
