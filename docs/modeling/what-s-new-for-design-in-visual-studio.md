@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26ea23c6091910a83ddec41194aa43ae93c9b9eb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ee3c602dfc89aeafbfb82ae50771abc7ce66937e
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820776"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966940"
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>Visual Studio의 디자인에 대한 새로운 기능
 
@@ -40,7 +40,7 @@ ms.locfileid: "49820776"
 
 이제 표시 솔루션에서 현재 코드에 대 한 분석 결과에 즉시 변경 내용의 영향 다이어그램을 저장할 때마다 됩니다. "종속성 유효성 검사" 명령이 완료 될 때 더 이상까지 필요가 없습니다.
 
-자세한 내용은 참조 하세요. [이 블로그 게시물](https://blogs.msdn.microsoft.com/visualstudioalm/2016/10/07/live-architecture-dependency-validation-in-visual-studio-15-preview-5/)합니다.
+자세한 내용은 참조 하세요. [이 블로그 게시물](https://blogs.msdn.microsoft.com/devops/2016/10/07/live-architecture-dependency-validation-in-visual-studio-15-preview-5/)합니다.
 
 ## <a name="uml-designers-have-been-removed"></a>UML 디자이너 제거 되었습니다.
 
@@ -61,7 +61,7 @@ UML 디자이너가이 버전의 Visual Studio Enterprise에서 제거 되었습
 
 UML 디자이너의 중요 한 사용자 라면 UML 요구 사항에 맞게 대체 하는 도구를 결정 하는 동안 Visual Studio 2015 또는 이전 버전을 사용 하 여 계속 수 있습니다.
 
-자세한 내용은 참조 하세요. [이 블로그 게시물](https://blogs.msdn.microsoft.com/visualstudioalm/2016/10/14/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/)합니다.
+자세한 내용은 참조 하세요. [이 블로그 게시물](https://blogs.msdn.microsoft.com/devops/2016/10/14/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/)합니다.
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

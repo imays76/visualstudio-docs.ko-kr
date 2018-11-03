@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 990b55f4ba78f32acba40c325ade596f5628c54f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1fd001f5371e346a07f82c9c48a3acb699cefd52
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893938"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966767"
 ---
 # <a name="properties-of-a-dsl-definition"></a>DSL 정의의 속성
 DslDefinition 속성 정의 *도메인별 언어* 버전 번호와 같은 정의 속성입니다. DslDefinition 속성에 표시 합니다 **속성** 창에서 다이어그램의 빈 영역을 클릭할 때 합니다 *도메인별 언어 디자이너*.
@@ -46,4 +46,4 @@ DslDefinition 속성 정의 *도메인별 언어* 버전 번호와 같은 정의
 
 ## <a name="see-also"></a>참고 항목
 
-- [도메인 특정 언어 도구 용어집](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

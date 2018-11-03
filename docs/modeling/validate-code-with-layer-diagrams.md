@@ -21,12 +21,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 17b0cfb4ecc1809098670b0b9d3e831b5bc75a62
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 71eebd95db1a616d4f86866ef60fb32251634cc0
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835711"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967287"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>종속성 다이어그램을 사용하여 코드 유효성 검사
 
@@ -173,7 +173,7 @@ Visual Studio에서 열기 종속성 다이어그램을에서 수동으로 또�
 
 ## <a name="validate-code-automatically"></a>자동으로 코드 유효성 검사
 
-로컬 빌드를 실행할 때마다 레이어 유효성 검사를 수행할 수 있습니다. Azure DevOps를 사용 하는 경우에 제어 된 체크 인을 사용자 지정 MSBuild 작업을 만들고 사용 하 여 빌드 보고서 유효성 검사 오류를 수집 하 여 지정할 수 있는 레이어 유효성 검사를 수행할 수 있습니다. 제어 된 체크 인 빌드를 만들려면 참조 [제어 된 체크 인 빌드 프로세스를 사용 하 여 변경 사항을 확인 하려면](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)합니다.
+로컬 빌드를 실행할 때마다 레이어 유효성 검사를 수행할 수 있습니다. Azure DevOps를 사용 하는 경우에 제어 된 체크 인을 사용자 지정 MSBuild 작업을 만들고 사용 하 여 빌드 보고서 유효성 검사 오류를 수집 하 여 지정할 수 있는 레이어 유효성 검사를 수행할 수 있습니다. 제어 된 체크 인 빌드를 만들려면 참조 [TFVC 제어 된 체크 인](/azure/devops/pipelines/build/triggers#gated)합니다.
 
 ### <a name="to-validate-code-automatically-during-a-local-build"></a>로컬 빌드 중 자동으로 코드의 유효성을 검사하려면
 
@@ -237,6 +237,6 @@ Visual Studio에서 열기 종속성 다이어그램을에서 수동으로 또�
 
 ## <a name="see-also"></a>참고자료
 
-- [Visual Studio 2017의 라이브 종속성 유효성 검사](https://blogs.msdn.microsoft.com/visualstudioalm/2016/11/30/live-dependency-validation-in-visual-studio-2017/)
+- [Visual Studio 2017의 라이브 종속성 유효성 검사](https://blogs.msdn.microsoft.com/devops/2016/11/30/live-dependency-validation-in-visual-studio-2017/)
 - [개발하는 동안 시스템 유효성 검사](../modeling/validate-your-system-during-development.md)
 - [비디오: 실시간에서 아키텍처 종속성 유효성 검사](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)

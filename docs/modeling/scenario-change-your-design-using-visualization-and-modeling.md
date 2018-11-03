@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 933c18a43cb8ebacd32914cb487fb0216b538b25
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bc8066148b2c8612b3a07922e15422022b8c9c4d
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942480"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967508"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>시나리오: 시각화 및 모델링을 사용하여 디자인 변경
 
@@ -186,11 +186,11 @@ Dinner Now는 새 요구 사항을 충족하기 위한 비용을 예측해야 �
 
 참조
 
-- [빌드 프로세스 정의](http://msdn.microsoft.com/Library/61593e10-d24b-492f-b19a-af4d85abea6b)
+- [비주얼 디자이너를 사용](/azure/devops/pipelines/get-started-designer)
 
-- [제어된 체크 인 빌드 프로세스를 사용하여 변경 내용 유효성 검사](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)
+- [TFVC 제어 된 체크 인](/azure/devops/pipelines/build/triggers#gated)
 
-- [빌드 프로세스 템플릿 사용자 지정](http://msdn.microsoft.com/Library/b94c58f2-ae6f-4245-bedb-82cd114f6039)
+- [빌드 및 릴리스 작업](/azure/devops/pipelines/tasks/index)
 
 ### <a name="general-tips-for-creating-and-using-models"></a>모델 만들기 및 사용에 대한 일반적인 팁
 
@@ -220,7 +220,7 @@ Visual Studio 모델링 다이어그램은 Team Foundation Server와 통합되�
 
 - [차트, 대시보드 및 위젯 (Azure DevOps 서비스)](/azure/devops/report/dashboards/overview?view=vsts)
 
-- [Project를 사용하여 백로그 및 작업 만들기](http://msdn.microsoft.com/Library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)
+- [Project를 사용하여 백로그 및 작업 만들기](/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project)
 
 ### <a name="TestValidateCheckInCode"></a> 테스트, 유효성 검사 및 코드에서 확인
 
@@ -486,5 +486,5 @@ Lucerne 결제 시스템에 대한 다음 맵을 생성하여 클래스, 메서�
 
 - [코드 시각화](../modeling/visualize-code.md)
 - [개발 프로세스에서 모델 사용](../modeling/use-models-in-your-development-process.md)
-- [Agile 개발에서 모델 사용](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
+- [Agile 개발에서 모델 사용](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
 - [개발하는 동안 시스템 유효성 검사](../modeling/validate-your-system-during-development.md)

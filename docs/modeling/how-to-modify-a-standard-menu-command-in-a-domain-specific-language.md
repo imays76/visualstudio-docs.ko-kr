@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f174e4dde2c96383e9f8bdf61ff63558bb1d7bb3
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 6aa827781cb8ea78aa5df79f8cb839a6f3548e11
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566783"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967053"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>방법: 도메인별 언어에서 표준 메뉴 명령 수정
 
@@ -152,5 +152,4 @@ protected override void ProcessOnMenuDeleteCommand()
 - [VSPackage에서 사용자 인터페이스 요소를 추가하는 방법](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Visual Studio 명령 테이블(.Vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [VSCT XML 스키마 참조](../extensibility/vsct-xml-schema-reference.md)
-- [-VMSDK 회로 다이어그램 샘플입니다. 광범위 한 DSL 사용자 지정](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
-- [샘플 코드: 회로 다이어그램](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+- [-VMSDK 회로 다이어그램 샘플입니다. 광범위 한 DSL 사용자 지정](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
