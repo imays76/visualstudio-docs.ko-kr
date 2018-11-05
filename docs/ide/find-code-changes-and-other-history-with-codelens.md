@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab45a6867fd94294746c03560dc49eeda9e68af0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e11b7458c5d26d56252b228522c53b00ebadb35b
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853521"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220302"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>CodeLens에서 코드 변경 내용 및 기타 기록 찾기
 
@@ -297,7 +297,7 @@ CodeLens는 다른 버전의 Lync 또는 Skype가 설치되는 것을 지원하�
 
 4. **Tab**을 눌러 **설정 표시** 목록으로 이동한 다음, **아래쪽 화살표** 를 눌러 **CodeLens**를 선택합니다.
 
-### <a name="q-can-i-move-the-codelens-heads-up-display"></a>Q: CodeLens `head`s-up 표시를 이동할 수 있습니까?
+### <a name="q-can-i-move-the-codelens-heads-up-display"></a>Q: CodeLens 헤드업 표시를 이동할 수 있습니까?
 
 **A:** 예, ![도킹 아이콘](../ide/media/codelensdockwindow.png)을 선택하여 CodeLens를 창으로 도킹합니다.
 

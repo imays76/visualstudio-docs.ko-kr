@@ -12,12 +12,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: b1b41fe707c751b5cd32706d1c27f707f964dff8
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 9f1eb52e87cf9a411cf453c90f35ebc192616e8c
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49100928"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050224"
 ---
 # <a name="azure-sdk-for-python"></a>Python용 Azure SDK
 
@@ -39,7 +39,7 @@ pip install azure
 
 [Python용 Azure SDK 개발자 센터](https://docs.microsoft.com/python/azure/?view=azure-python)에는 다음과 같은 여러 가지 자습서를 포함하여 유용한 리소스도 많이 있습니다.
 
-- Linux의 Azure App Service에서 웹앱 만들기(/azure/app-service/containers/quickstart-python)
+- [Linux의 Azuyre App Service에서 웹앱을 만드는 중](/azure/app-service/containers/quickstart-python)입니다.
 - [Blob 저장소](/azure/storage/blobs/storage-quickstart-blobs-python)
 - [테이블 저장소](/azure/cosmos-db/table-storage-how-to-use-python)
 - [큐 저장소](/azure/storage/storage-python-how-to-use-queue-storage)

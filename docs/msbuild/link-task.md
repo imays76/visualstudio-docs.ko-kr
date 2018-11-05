@@ -32,12 +32,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c06e9a92eb6b6df82e4f45790b877286e6c52725
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 5cd79db9b5bfc2e68dea2ff711b2da6ce55c9bc0
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081711"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220123"
 ---
 # <a name="link-task"></a>링크 작업
 Visual C++ 링커 도구인 *link.exe*를 래핑합니다. 링커 도구는 COFF(Common Object File Format) 개체 파일과 라이브러리를 연결하여 실행 파일(*.exe*) 또는 DLL(동적 연결 라이브러리)을 만듭니다. 자세한 내용은 [링커 옵션](/cpp/build/reference/linker-options)을 참조하세요.  
@@ -67,7 +67,7 @@ Visual C++ 링커 도구인 *link.exe*를 래핑합니다. 링커 도구는 COFF
   
      매니페스트 파일의 `dependency` 섹션에 배치될 특성을 지정합니다.  
   
-     자세한 내용은 [/MANIFESTDEPENDENCY(매니페스트 종속성 지정)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies)를 참조하세요. [게시자 구성 파일](https://docs.microsoft.com/en-us/windows/desktop/SbsCs/publisher-configuration-files)도 참조하세요.  
+     자세한 내용은 [/MANIFESTDEPENDENCY(매니페스트 종속성 지정)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies)를 참조하세요. [게시자 구성 파일](https://docs.microsoft.com/windows/desktop/SbsCs/publisher-configuration-files)도 참조하세요.  
   
 -   **AdditionalOptions**  
   
@@ -187,7 +187,7 @@ Visual C++ 링커 도구인 *link.exe*를 래핑합니다. 링커 도구는 COFF
   
      관리 코드에서 네이티브 DLL로 호출하는 링커 생성 P/Invoke에 링커가 **SuppressUnmanagedCodeSecurityAttribute**를 적용할지 여부를 지정합니다.  
   
-    자세한 내용은 [/CLRUNMANAGEDCODECHECK(SupressUnmanagedCodeSecurityAttribute 추가)](/cpp/build/reference/clrunmanagedcodecheck-add-supressunmanagedcodesecurityattribute)를 참조하세요.  
+    자세한 내용은 [/CLRUNMANAGEDCODECHECK(SuppressUnmanagedCodeSecurityAttribute 추가)](/cpp/build/reference/clrunmanagedcodecheck-add-suppressunmanagedcodesecurityattribute)를 참조하세요.  
   
 -   **CreateHotPatchableImage**  
   

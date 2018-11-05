@@ -1,7 +1,7 @@
 ---
 title: requirements.txt 파일을 사용하여 패키지 요구 사항 관리
-description: requirements.txt 파일을 사용하여 프로젝트의 종속성을 관리할 수 있습니다. requirements.txt 파일이 포함된 프로젝트를 수신하는 경우 해당 종속성을 한 단계로 쉽게 설치할 수 있습니다.
-ms.date: 06/27/2018
+description: requirements.txt 파일은 프로젝트의 종속성을 설명합니다. requirements.txt 파일이 포함된 프로젝트를 수신하는 경우 해당 종속성을 한 단계로 쉽게 설치할 수 있습니다.
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: efefda9fb5eb863550684511a5c0834f5d43f7fd
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 49f87ff5836188d6fefb80feac94b27902de7968
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49100915"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50218444"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>requirements.txt를 사용하여 필수 패키지 관리
 
-빌드 시스템을 사용하여 다른 사람과 프로젝트를 공유하거나 환경을 복원해야 하는 다른 위치에 배포하려는 경우 프로젝트에 필요한 외부 패키지를 지정해야 합니다. 권장되는 방법은 필요한 종속 패키지 버전을 설치하는 pip 명령 목록이 들어 있는 [requirements.txt 파일](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files)(readthedocs.org)을 사용하는 것입니다.
+빌드 시스템을 사용하여 다른 사람과 프로젝트를 공유하거나 환경을 복원해야 하는 다른 위치에 프로젝트를 복사하려는 경우 프로젝트에 필요한 외부 패키지를 지정해야 합니다. 권장되는 방법은 필요한 종속 패키지 버전을 설치하는 pip 명령 목록이 들어 있는 [requirements.txt 파일](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files)(readthedocs.org)을 사용하는 것입니다. 가장 일반적인 명령은 `pip freeze > requirements.txt`이며, 이 명령은 환경의 현재 패키지 목록을 *requirements.txt*에 기록합니다.
 
 기술적으로, 파일 이름을 사용하여 요구 사항을 추적할 수 있으나(패키지 설치 시 `-r <full path to file>` 사용) Visual Studio에서 *requirements.txt*에 대한 구체적인 지원을 제공합니다.
 
@@ -65,7 +65,7 @@ Cleaning up...
     Removing temporary dir C:\Project\env\build...
 ```
 
-### <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio에서 Python 환경 관리](managing-python-environments-in-visual-studio.md)
 - [프로젝트의 인터프리터 선택](selecting-a-python-environment-for-a-project.md)

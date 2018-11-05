@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 039d88fb3aac6c1f7f0880be8b0f08dcf71bff5a
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 711d7b65eb329e844fedb0148006cacb1c7a0ebf
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44126645"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219097"
 ---
 # <a name="packagejson-configuration"></a>package.json configuration
 
@@ -28,7 +28,7 @@ npm 패키지 버전 관리 시스템에는 엄격한 규칙이 있습니다. �
 
     [major].[minor].[patch]
 
-5.2.1 버전의 앱에 패키지가 있다고 가정해 보겠습니다. 5는 주 버전, 2는 부 버전이고 1은 패치입니다.
+5.2.1 버전의 앱에 패키지가 있다고 가정해 보겠습니다. 주 버전은 5, 부 버전은 2, 패치는 1입니다.
 
 * 주 버전 업데이트에서 패키지에는 이전 버전과 호환되지 않는 새로운 기능 즉, 호환성이 손상되는 변경이 포함됩니다.
 * 부 버전 업데이트에서는 새 기능이 패키지에 추가되었으며 이전 패키지 버전과 호환됩니다.

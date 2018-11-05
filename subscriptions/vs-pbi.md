@@ -9,12 +9,12 @@ description: 선택한 Visual Studio 구독에 포함된 Power BI Pro 구독에 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 739598d8783a6ba0eb7930b5efff6c018eed942a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 50c9b39772e65ba00f859254df4a993870f08023
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894562"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219538"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Power BI Pro
 
@@ -92,9 +92,24 @@ A: 혜택은 무료이지만 유료 주문 처리에 사용되는 것과 동일�
 - 신용 카드.  신용 카드 번호를 입력하면 카드에 요금이 청구되지 않습니다. 
 - 청구서.  지불 유형으로 "청구서"를 선택하면 신용 카드 번호를 입력할 필요가 없습니다.  간격을 “연간”으로 설정할 수도 있습니다.  이렇게 하면 청구서가 준비되었다는 이메일을 하나만 받게 됩니다.  청구 금액은 $0.00일 수 있습니다.  
 
-### <a name="q--can-the-power-bi-pro-benefit-included-in-my-subscription-be-used-in-a-production-environment"></a>Q: 구독에 포함된 Power BI Pro 혜택을 프로덕션 환경에서 사용할 수 있습니까?
+### <a name="q--is-the-power-bi-pro-benefit-included-in-my-subscription-licenses-for-use-in-a-production-environment"></a>Q: 프로덕션 환경에서 사용하기 위해 구독 라이선스에 Power BI Pro 혜택이 포함되어 있습니까?
 답변: 예.  
 
+### <a name="q--when-i-try-to-activate-power-bi-pro-i-get-a-message-you-already-have-an-account-through-work--can-i-still-use-the-benefit"></a>Q: Power BI Pro를 활성화하려고 하면 "이미 작업을 통해 계정이 있습니다."라는 메시지가 나타납니다.  혜택을 계속 사용할 수 있나요?
+답변: 예.  메시지는 관리자가 아닌 활성 Office 365 테넌트가 이미 있는 도메인에 로그온했음을 나타냅니다.  테넌트에 Power BI Pro를 추가하려면 해당 테넌트의 관리자여야 합니다.  이 문제를 해결하려면 다음 단계에 따라 고유한 테넌트를 만듭니다.
+1.  작업을 통해 이미 계정이 있다는 메시지가 표시되면 **새 계정 만들기**를 클릭합니다.
+
+2.  다음 화면에서 연락처 정보를 제공하고 **다음**을 클릭합니다.
+
+3.  사용자 ID와 암호를 만듭니다.  무료 제공을 이용하려면 **.onmicrosoft.com**을 도메인으로 선택합니다. **내 계정 만들기**를 클릭합니다.
+    > [!div class="mx-imgBorder"]
+    > ![Power BI Pro 혜택 개인 테넌트 userID 만들기](_img/vs-pbi/vs-pbi-work-userid.png)
+    
+4.  프로세스의 나머지 단계는 6단계로 시작하는 문서의 본문에 나열된 단계와 동일합니다.
+
+
+### <a name="q--im-on-a-government-domain--can-i-use-the-benefit"></a>Q: 저는 정부 도메인에 있습니다.  혜택을 사용할 수 있나요? 
+A: 아니요.  Power BI Pro 혜택은 정부 도메인의 테넌트에 추가할 수 없습니다. 
 
 ## <a name="support-resources"></a>지원 리소스
 -  Power BI Pro와 관련하여 도움이 필요하세요?
@@ -103,3 +118,6 @@ A: 혜택은 무료이지만 유료 주문 처리에 사용되는 것과 동일�
     - 주요 문제를 살펴보거나, 커뮤니티에서 도움을 받거나 [지원 페이지](https://powerbi.microsoft.com/support/)에서 지원 티켓을 제출하세요.
 -  Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 Visual Studio [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)에 문의하세요.
 -  Visual Studio IDE, Azure DevOps Services 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
+
+## <a name="next-steps"></a>다음 단계
+Power BI Pro 혜택을 활성화 하려면 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)를 방문하세요.
