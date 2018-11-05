@@ -2,7 +2,7 @@
 title: Visual Studio에서 C# 및 ASP.NET Core 시작
 description: C#을 사용하여 단계별로 Visual Studio에서 ASP.NET Core 웹앱을 만드는 방법을 알아봅니다.
 ms.custom: ''
-ms.date: 09/17/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: tutorial
@@ -15,18 +15,30 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 25ddfd7c0d45666c4dbbafe98c88dc8f66aac447
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d684ecb9e29dd4c6f140ad7d6f52e301e0d0da13
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284052"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244491"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>자습서: Visual Studio에서 C# 및 ASP.NET Core 시작
 
 Visual Studio를 사용하여 ASP.NET Core로 C#을 개발하기 위한 이 자습서에서는 C# ASP.NET Core 웹앱을 만들고, 해당 앱을 변경하며, IDE의 일부 기능을 살펴본 후, 앱을 실행합니다.
 
+## <a name="before-you-begin"></a>시작하기 전에
+
+### <a name="install-visual-studio"></a>Visual Studio 설치
+
 아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 페이지로 이동하여 체험용으로 설치합니다.
+
+### <a name="update-visual-studio"></a>Visual Studio 업데이트
+
+Visual Studio를 이미 설치한 경우 최신 릴리스를 실행하고 있는지 확인합니다. 설치를 업데이트하는 방법에 대한 자세한 내용은 [Visual Studio 2017을 최신 릴리스로 업데이트](../install/update-visual-studio.md) 페이지를 참조하세요.
+
+### <a name="choose-your-theme-optional"></a>테마 선택(선택 사항)
+
+이 자습서에는 어두운 테마를 사용하는 스크린샷이 포함되어 있습니다. 어두운 테마를 사용하지 않지만 원하는 경우 [Visual Studio IDE 및 편집기 개인 설정](quickstart-personalize-the-ide.md) 페이지에서 참조하여 방법을 알아봅니다.
 
 ## <a name="create-a-project"></a>프로젝트 만들기
 
@@ -46,7 +58,7 @@ Visual Studio를 사용하여 ASP.NET Core로 C#을 개발하기 위한 이 자�
 
 #### <a name="option-1-use-the-new-project-dialog-box"></a>옵션 1: 새 프로젝트 대화 상자 사용
 
-1. **새 프로젝트** 대화 상자에서 **Visual Studio 설치 관리자 열기** 링크를 선택합니다.
+1. **새 프로젝트** 대화 상자에서 **Visual Studio 설치 관리자 열기** 링크를 선택합니다. (표시 설정에 따라 스크롤해야 볼 수 있습니다.)
 
    ![새 프로젝트 대화 상자에서 Visual Studio 설치 관리자 열기 링크 선택](../ide/media/open-visual-studio-installer-mycoreapp.png)
 
@@ -71,6 +83,9 @@ Visual Studio를 사용하여 ASP.NET Core로 C#을 개발하기 위한 이 자�
 1. 위쪽 드롭다운 메뉴에 **ASP.NET Core 2.1**이 표시되는지 확인합니다. 그런 다음, **확인**을 선택합니다.
 
    ![새 ASP.NET Core 웹 응용 프로그램 대화 상자](../ide/media/new-project-csharp-aspnet-razor-web-app.png)
+
+   > [!NOTE]
+   > 맨 위 드롭다운 메뉴에서 **ASP.NET Core 2.0** 이상을 볼 수 없는 경우 Visual Studio의 최신 릴리스를 실행하고 있는지 확인합니다. 설치를 업데이트하는 방법에 대한 자세한 내용은 [Visual Studio 2017을 최신 릴리스로 업데이트](../install/update-visual-studio.md) 페이지를 참조하세요.
 
 ### <a name="about-your-solution"></a>솔루션 정보
 

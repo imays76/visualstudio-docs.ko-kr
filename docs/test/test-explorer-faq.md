@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: douge
-ms.openlocfilehash: 069150d7f441b754b21c0a3a487f5238ef94e039
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c9321c90132b026a71733dbbadc19a82db20d981
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775106"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244387"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio 테스트 탐색기 FAQ
 
@@ -84,6 +84,10 @@ ms.locfileid: "43775106"
 **테스트 탐색기 검색 상자에 “파일 경로” 필터가 더 이상 존재하지 않습니다.**
 
 **테스트 탐색기** 검색 상자의 파일 경로 필터는 Visual Studio 2017 버전 15.7 미리 보기 3에서 제거되었습니다. 이 기능은 사용량이 낮으므로, 테스트 탐색기는 이 기능을 제외하여 테스트 메서드를 빠르게 검색할 수 있습니다. 이 변경이 개발 흐름을 방해하는 경우 [개발자 커뮤니티](https://developercommunity.visualstudio.com/)에 피드백을 제출하여 알려주세요.
+
+## <a name="remove-undocumented-interfaces"></a>문서화되지 않은 인터페이스 제거
+**몇 가지 테스트 관련 API는 더 이상 Visual Studio 2019에 없습니다. 변경된 내용은 무엇인가요?**
+Visual Studio 2019에서는 이전에 공개로 표시되었지만 공식적으로 문서화되지 않은 일부 테스트 창 API는 제거됩니다. 확장 유지 관리자에게 조기 경고를 주기 위해 Visual Studio 2017에서는 "사용 중단"으로 표시되었습니다. 우리가 아는 한, 이러한 API를 발견한 확장은 거의 없었고 Visual Studio에 의존적이었습니다. 여기에는 `IGroupByProvider`, `IGroupByProvider<T>`, `KeyComparer`, `ISearchFilter`, `ISearchFilterToken`, `ISearchToken` 및 `SearchFilterTokenType`이 포함됩니다. 이 변경이 확장에 영향을 주는 경우 [개발자 커뮤니티](https://developercommunity.visualstudio.com)에 버그를 제출하여 알려주세요.
 
 ## <a name="test-adapter-nuget-reference"></a>테스트 어댑터 NuGet 참조
 **Visual Studio 2017 버전 15.8에서 테스트가 검색되지만 실행되지 않습니다.**

@@ -1,6 +1,6 @@
 ---
 title: 테스트 에이전트 및 테스트 컨트롤러 설치
-ms.date: 07/06/2018
+ms.date: 10/24/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bcdc556366a84deffa37d7e0234b1c543882022c
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 8055e1c11f38ab83ae9c3a0570064ca49158b886
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370967"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219031"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>테스트 에이전트 및 테스트 컨트롤러 설치
 
@@ -44,9 +44,9 @@ Lab Management 대신 [Build 또는 Release Management](use-build-or-rm-instead-
 
 ## <a name="compatible-versions-of-tfs-microsoft-test-manager-the-test-controller-and-test-agent"></a>TFS, Microsoft Test Manager, 테스트 컨트롤러 및 테스트 에이전트의 호환되는 버전
 
-다음 표에 따라 서로 다른 버전의 TFS, MTM(Microsoft Test Manager), 테스트 컨트롤러 및 테스트 에이전트를 함께 사용할 수 있습니다.
+다음 표에 따라 서로 다른 버전의 TFS, Microsoft Test Manager, 테스트 컨트롤러 및 테스트 에이전트를 혼합할 수 있습니다.
 
-| TFS | MTM(랩 센터 포함) | 컨트롤러 | 에이전트 |
+| TFS | Microsoft Test Manager 및 랩 센터 | 컨트롤러 | 에이전트 |
 | --- | -------------------------------------- | ---------- | ----- |
 | 2017: 2015 이상 설치에서 업그레이드 | 2017 | 2017 | 2017 |
 | 2017: 2015 이상 설치에서 업그레이드 | 2017 | 2013 업데이트 5 | 2013 업데이트 5 |
@@ -55,6 +55,9 @@ Lab Management 대신 [Build 또는 Release Management](use-build-or-rm-instead-
 | 2015: 새로 설치 | 2013 | 2013 | 2013 |
 | 2015: 2013 이상 설치에서 업그레이드 | 2015 | 2013 | 2013 |
 | 2013 | 2015 | 2013 | 2013 |
+
+> [!NOTE]
+> TFS 2018 및 Azure DevOps Services의 랩 관리 시나리오는 더 이상 사용되지 않습니다. 자세한 내용은 [TFS 2018 릴리스 정보](/visualstudio/releasenotes/tfs2018-relnotes#--removing-support-for-lab-center-and-automated-testing-flows-in-microsoft-test-manager)를 참조하세요.
 
 ## <a name="upgrade-from-visual-studio-2013-test-agents"></a>Visual Studio 2013 테스트 에이전트에서 업그레이드
 

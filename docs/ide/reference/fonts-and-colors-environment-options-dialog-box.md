@@ -5,7 +5,6 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
-- VS.ToolsOptionsPag.Environment.Fonts_And_Colors
 - VS.ToolsOptionsPages.FontsAndColors
 - VS.ToolsOptionsPages.Environment.Fonts_And_Colors
 - VS.Environment.Fonts And Colors
@@ -28,12 +27,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d25ff0f0439d778d871cb2762db83e9261deaf94
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 751ae59a5a41d22728dd31f71491ec0d9a93ea19
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31954231"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220263"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>옵션 대화 상자, 환경, 글꼴 및 색
 **옵션** 대화 상자의 **글꼴 및 색** 페이지를 사용하면 IDE(통합 개발 환경)에서 여러 사용자 인터페이스 요소의 사용자 지정 글꼴 및 색 구성표를 설정할 수 있습니다. **도구/옵션**을 클릭한 다음 **환경/글꼴 및 색**을 선택하여 이 대화 상자에 액세스할 수 있습니다. 이 페이지가 목록에 나타나지 않으면 **옵션** 대화 상자에서 **모든 설정 표시**를 선택합니다.
@@ -143,7 +142,7 @@ ms.locfileid: "31954231"
 |**키워드**|지정된 예약어에 대한 키워드입니다. 예를 들면 클래스와 네임스페이스입니다.|
 |**메모리 주소**|**메모리** 창에 주소 열을 표시하는 데 사용되는 텍스트 색입니다.|
 |**메모리 변경**|**메모리** 창에 변경된 데이터를 표시하는 데 사용되는 텍스트 색입니다.|
-|**메모리 데이터**|**메모리** 창에 데이터를 표시하는 데 사용되는 텍스트 색입니다.|
+|**메모리 데이터**|**메모리** 창 내에 데이터를 표시하는 데 사용되는 텍스트의 색입니다.|
 |**읽을 수 없는 메모리**|**메모리** 창에 읽을 수 없는 메모리 영역을 표시하는 데 사용되는 텍스트 색입니다.|
 |**숫자**|실제 숫자 값을 나타내는 코드 내 숫자입니다.|
 |**Operator**|+, - 및 !=와 같은 연산자입니다.|

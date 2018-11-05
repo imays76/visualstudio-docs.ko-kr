@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb9186726a54099b0c75a468a99d760abd22b7f3
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: bef854fd04ce8ac2ddf6fe834b3bede0f371eefe
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945548"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050302"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Visual Studio에서 정규식 사용
 
@@ -49,7 +49,8 @@ Visual Studio에서는 [.NET Framework 정규식](/dotnet/standard/base-types/re
 |이전 식에서 일치 항목 0개 이상을 찾습니다(가능한 한 적은 문자를 찾음).|*?|`e.*?e`는 "feeder"의 "ee"와 일치하지만 "eede"와 일치하지 않습니다.|
 |이전 식에서 일치 항목 1개 이상을 찾습니다(가능한 한 적은 문자를 찾음).|+?|`e.+?e`는 "enterprise"의 "ente" 및 "erprise"와 일치하지만 전체 단어 "enterprise"와 일치하지 않습니다.|
 |일치 문자열을 줄 또는 문자열의 시작에 고정합니다.|^|`^car`는 줄의 시작 부분에 나타날 때만 단어 "car"와 일치합니다.|
-|일치 문자열을 줄의 끝에 고정합니다.|\r?$|`End\r?$`는 줄의 끝 부분에 나타날 때만 단어 "end"와 일치합니다.|
+|일치 문자열을 줄의 끝에 고정합니다.|\r?$|`end\r?$`는 줄의 끝 부분에 나타날 때만 단어 "end"와 일치합니다.|
+|일치 문자열을 파일 끝에 고정|$|`end$`는 파일의 끝에 나타날 때만 "end"와 일치합니다.|
 |집합에 있는 단일 문자를 찾습니다.|[abc]|`b[abc]`는 "ba", "bb", "bc"와 일치합니다.|
 |문자 범위에서 임의 문자를 찾습니다.|[a-f]|`be[n-t]`는 "between"의 "bet", "beneath"의 "ben", "beside"의 "bes"와 일치하지만 "below"와 일치하지 않습니다.|
 |괄호 안에 포함된 식을 캡처하고 명시적으로 번호를 지정합니다.|()|`([a-z])X\1`은 "aXa" 및 "bXb"와 일치하지만 "aXb"와 일치하지 않습니다. " “\1”은 첫 번째 식 그룹 “[a-z]”를 나타냅니다.|
@@ -58,8 +59,8 @@ Visual Studio에서는 [.NET Framework 정규식](/dotnet/standard/base-types/re
 |기호 앞 또는 기호 뒤에 있는 식을 찾습니다.|&#124;|`(sponge\|mud) bath`는 "sponge bath" 및 "mud bath"와 일치합니다.|
 |백슬래시 뒤의 문자를 이스케이프합니다.| \\ |`\^`은 문자 ^과 일치합니다.|
 |이전 문자 또는 그룹의 일치 항목 수를 지정합니다.|{x}. 여기서 x는 일치 항목 수입니다.|`x(ab){2}x`는 "xababx"와 일치하고, `x(ab){2,3}x`는 "xababx" 및 "xabababx"와 일치하지만 "xababababx"와 일치하지 않습니다.|
-|유니코드 문자 클래스에서 텍스트를 찾습니다. 여기서 “X”는 유니코드 번호입니다. 유니코드 문자 클래스에 대한 자세한 내용은<br /><br /> [Unicode Standard 5.2 Character Properties](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf)(유니코드 표준 5.2 문자 속성)를 참조하세요.|\p{X}|`\p{Lu}`는 "Thomas Doe"의 "T" 및 "D"와 일치합니다.|
-|단어 경계를 찾습니다.|`\b`(\b는 문자 클래스 외부에서 단어 경계를 지정하고 문자 클래스 내부에서 백스페이스를 지정함).|`\bin`은 "inside"의 "in"과 일치하지만 "pinto"와 일치하지 않습니다.|
+|유니코드 문자 클래스의 텍스트를 일치시킵니다. 유니코드 문자 클래스에 대한 자세한 내용은<br /><br /> [Unicode Standard 5.2 Character Properties](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf)(유니코드 표준 5.2 문자 속성)를 참조하세요.|\p{X}, 여기서 "X"는 유니코드 번호입니다.|`\p{Lu}`는 "Thomas Doe"의 "T" 및 "D"와 일치합니다.|
+|단어 경계를 찾습니다.|\b(문자 클래스 `\b` 외부는 단어 경계를 지정하고 문자 클래스 `\b` 내부는 백스페이스를 지정합니다.)|`\bin`은 "inside"의 "in"과 일치하지만 "pinto"와 일치하지 않습니다.|
 |줄 바꿈을 찾습니다(즉, 캐리지 리턴 뒤에 줄 바꿈).|\r?\n|`End\r?\nBegin`은 "End"가 줄의 마지막 문자열이고 "Begin"이 다음 줄의 첫 번째 문자열일 때만 "End" 및 "Begin"과 일치합니다.|
 |영숫자 문자를 찾습니다.|\w|`a\wd`는 "add" 및 "a1d"와 일치하지만 "a d"와 일치하지 않습니다.|
 |공백 문자를 찾습니다.|(?([^\r\n])\s)|`Public\sInterface`는 구 "Public Interface"와 일치합니다.|

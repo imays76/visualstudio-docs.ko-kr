@@ -2,7 +2,7 @@
 title: Visual Studio에서 C# 콘솔 앱 시작
 description: Visual Studio에서 C# 콘솔 앱을 만드는 방법을 단계별로 알아봅니다.
 ms.custom: ''
-ms.date: 09/28/2018
+ms.date: 10/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: ad1ee95cb9cc754261502e7377cde6c91e5befce
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 3450572e4cf4959530599c5eea9efb3168485b58
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859512"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244374"
 ---
 # <a name="tutorial-get-started-with-a-c-console-app-in-visual-studio"></a>자습서: Visual Studio에서 C# 콘솔 앱 시작
 
@@ -61,11 +61,7 @@ C#에 대한 이 자습서에서는 Visual Studio를 사용해서 콘솔 앱을 
 
 ## <a name="create-a-c-console-calculator-app"></a>“C# 콘솔 계산기” 앱 만들기
 
-1. Visual Studio 2017을 열고 상단 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.
-
-1. **새 프로젝트** 대화 상자의 왼쪽 창에서 **C#** 을 확장한 후 **.NET Core**를 선택합니다. 가운데 창에서 **콘솔 앱(.NET Core)** 을 선택합니다. 그런 다음, 파일 이름을 *Calculator*로 지정합니다.
-
-1. 코드 편집기에 다음 코드를 입력하거나 붙여넣습니다.
+1. **C# 콘솔 응용 프로그램**을 만든 후 코드 편집기에 다음 코드를 입력하거나 붙여 넣습니다.
 
     ```csharp
     using System;

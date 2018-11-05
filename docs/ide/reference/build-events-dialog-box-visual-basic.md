@@ -18,29 +18,34 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 38ef3b173643c7bff0e1417ffc9ecfb431b06685
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7e81a9308439af6a0dd688440dc6aa193a66eabf
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944137"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219356"
 ---
 # <a name="build-events-dialog-box-visual-basic"></a>빌드 이벤트 대화 상자(Visual Basic)
+
 **빌드 이벤트** 대화 상자를 사용하여 빌드 구성 지침을 지정합니다. 또한 빌드 전후 이벤트를 실행할 조건을 지정할 수 있습니다. 자세한 내용은 [방법: 빌드 이벤트 지정(Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)을 참조하세요.
 
- **빌드 전 이벤트 명령줄** 빌드를 시작하기 전에 실행할 명령을 지정합니다. 긴 명령을 입력하려면 **빌드 전 편집**을 클릭하여 [빌드 전 이벤트/빌드 후 이벤트 명령줄](../../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) 대화 상자를 표시합니다.
+**빌드 전 이벤트 명령줄**
+
+빌드를 시작하기 전에 실행할 명령을 지정합니다. 긴 명령을 입력하려면 **빌드 전 편집**을 클릭하여 [빌드 전 이벤트/빌드 후 이벤트 명령줄](../../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) 대화 상자를 표시합니다.
 
 > [!NOTE]
 > 프로젝트가 최신 상태이고 빌드가 트리거되지 않으면 빌드 전 이벤트가 실행되지 않습니다.
 
+**빌드 후 이벤트 명령줄**
 
- **빌드 후 이벤트 명령줄** 빌드가 종료된 후에 실행할 명령을 지정합니다. 긴 명령을 입력하려면 **빌드 후 편집**을 클릭하여 **빌드 전 이벤트/빌드 후 이벤트 명령줄** 대화 상자를 표시합니다.
+빌드가 끝난 후 실행할 명령을 지정합니다. 긴 명령을 입력하려면 **빌드 후 편집**을 클릭하여 **빌드 전 이벤트/빌드 후 이벤트 명령줄** 대화 상자를 표시합니다.
 
 > [!NOTE]
 > .bat 파일을 실행하는 모든 빌드 후 이벤트 명령 앞에 `call` 문을 추가합니다. 예를 들어 `call C:\MyFile.bat` 또는 `call C:\MyFile.bat call C:\MyFile2.bat`로 이름을 지정할 수 있습니다.
 
+**빌드 후 이벤트 실행**
 
- **빌드 후 이벤트 실행** 다음 표에 나와 있는 것처럼 실행할 빌드 후 이벤트에 대한 조건을 지정합니다.
+다음 표에 나와 있는 것처럼 실행할 빌드 후 이벤트에 대한 조건을 지정합니다.
 
 |옵션|결과|
 |------------|------------|

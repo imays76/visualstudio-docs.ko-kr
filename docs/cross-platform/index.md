@@ -1,20 +1,21 @@
 ---
 layout: LandingPage
+title: C++를 사용한 모바일 개발
+description: Visual Studio에서 iOS, Android 및 Windows 장치용 네이티브 C++ 앱을 만듭니다.
+ms.date: 10/31/2018
 author: jasongroce
-ms.author: apexprodleads
+ms.author: jasgro
 ms.topic: landing-page
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-mobile
-title: C++를 사용한 모바일 개발 설명서 | Microsoft Docs
-description: Visual Studio에서 iOS, Android 및 Windows 장치용 네이티브 C++ 앱을 만듭니다.
 ms.workload:
 - apexprodleads
-ms.openlocfilehash: d10f0409b30198d7976f08a78b1d45d0099ac093
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 59d244e4224e408c43fbcee44d103313fcfa1d1e
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232022"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50751039"
 ---
 # <a name="mobile-development-with-c-documentation"></a>C++을 사용한 모바일 개발 설명서
 

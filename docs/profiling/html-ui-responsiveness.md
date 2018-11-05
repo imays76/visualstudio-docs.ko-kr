@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: c89a437938a042ead343ee5c1386ea11d637663d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 87a70451799c7fc3a15eb14a9efbb0233ea2b154
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834535"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220149"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>유니버설 Windows 앱의 HTML UI 응답성 분석
 이 항목에서는 유니버설 Windows 앱에 사용할 수 있는 성능 도구인 UI 응답성 프로파일러를 사용하여 앱에서 성능 문제를 격리하는 방법에 대해 설명합니다.  
@@ -42,7 +42,7 @@ ms.locfileid: "49834535"
   
 2.  **디버그** 메뉴에서 **성능 프로파일러**를 선택합니다.  
   
-     프로파일러의 분석 대상을 변경하려면**대상 변경**을 선택합니다.  
+     프로파일러의 분석 대상을 변경하려면 **대상 변경**을 선택합니다.  
   
      ![분석 대상 변경](../profiling/media/js_tools_target.png "JS_Tools_Target")  
   
