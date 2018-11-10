@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c79184af7afa11e2008ff32ce2ffb2dedd19559
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4fb3f0c5d44ed8043266640cfeb30838f7d37894
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827737"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220777"
 ---
 # <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>Visual Studio 디버거 없이 메모리 사용 분석
 디버그하지 않고 **메모리 사용량** 도구를 사용하여 다음을 수행할 수 있습니다.  
@@ -204,5 +204,5 @@ ms.locfileid: "49827737"
  [JavaScript 메모리](../profiling/javascript-memory.md)  
  [Visual Studio의 프로파일링](../profiling/index.md)  
  [프로파일링 도구 살펴보기](../profiling/profiling-feature-tour.md)  
- [C++, C# 및 Visual Basic을 사용하는 UWP 앱의 성능 모범 사례](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
+ [C++, C# 및 Visual Basic을 사용하는 UWP 앱의 성능 모범 사례](/previous-versions/windows/apps/hh750313\(v\=win.10\))   
  [Diagnosing memory issues with the new Memory Usage Tool in Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=394706)(Visual Studio에서 새 메모리 사용량 도구로 메모리 문제 진단)

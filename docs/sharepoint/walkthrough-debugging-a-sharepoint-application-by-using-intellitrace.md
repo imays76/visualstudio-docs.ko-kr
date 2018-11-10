@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0c617bb84a3d7aad10769ef5dbceec657e49aa21
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 59f801c79c8bb19a63064bdac2fe717ee3e3a845
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927348"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295587"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>연습: IntelliTrace를 사용 하 여 SharePoint 응용 프로그램 디버그
 
@@ -336,4 +336,4 @@ SharePoint를 실행 하는 시스템에서 Microsoft Monitoring Agent를 설치
 
 [확인 하 고 SharePoint 코드 디버그](../sharepoint/verifying-and-debugging-sharepoint-code.md)  
 [IntelliTrace](/visualstudio/debugger/intellitrace)  
-[연습: 단위 테스트를 사용 하 여 SharePoint 코드 확인](https://msdn.microsoft.com/library/gg599006(v=vs.100).aspx)
+[연습: 단위 테스트를 사용 하 여 SharePoint 코드 확인](/previous-versions/visualstudio/visual-studio-2010/gg599006\(v\=vs.100\))

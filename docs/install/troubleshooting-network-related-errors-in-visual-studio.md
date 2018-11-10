@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 210a39d5392ef6ba93f4988c86850db58644ed10
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 28c92fdc09320effcb8603c42edcfca152f71248
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865785"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672316"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Visual Studio 설치 또는 사용 시의 네트워크 관련 오류 문제 해결
 
@@ -69,7 +69,7 @@ ms.locfileid: "49865785"
 
      또는
 
-- 또한 [How to connect through an authenticated Web Proxy](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx)(인증된 웹 프록시를 통해 연결하는 방법) 블로그 게시물의 지침에 따라 프록시 사용을 허용하는 코드를 추가할 수도 있습니다.
+- 또한 [How to connect through an authenticated Web Proxy](https://blogs.msdn.microsoft.com/rido/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy/)(인증된 웹 프록시를 통해 연결하는 방법) 블로그 게시물의 지침에 따라 프록시 사용을 허용하는 코드를 추가할 수도 있습니다.
 
 ## <a name="error-the-underlying-connection-was-closed"></a>오류: “기본 연결이 닫혔습니다.”
 

@@ -17,17 +17,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3f2c306876451ef13977fb9237d96da66bd069bf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a8078ff645227e07d7facbaf773c310546afdf2a
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635286"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295217"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>시작 (SharePoint 개발에 Visual Studio)
   이 섹션은 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 를 사용하여 [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] 및 [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]을 활용하는 SharePoint 솔루션 개발을 시작하는 데 도움이 됩니다.
 
- SharePoint 2013 및 SharePoint 추가 기능에 대한 자세한 내용은 [SharePoint 2013](http://msdn.microsoft.com/library/jj162979.aspx) 및 [SharePoint 추가 기능 빌드](http://msdn.microsoft.com/library/office/apps/jj163230%28v=office.15%29.aspx)를 참조하세요.
+ SharePoint 2013 및 SharePoint 추가 기능에 대한 자세한 내용은 [SharePoint 2013](https://msdn.microsoft.com/library/jj162979.aspx) 및 [SharePoint 추가 기능 빌드](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)를 참조하세요.
 
  SharePoint는 웹 기반 공동 작업 플랫폼을 제공합니다. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 에서는 목록 정의, 워크플로, 비즈니스 데이터 연결 모델 및 사이트 정의를 비롯하여 SharePoint 사이트 및 콘텐츠를 만들기 위한 다양한 프로젝트 템플릿을 제공합니다. 또한 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]에서 SharePoint 프로젝트 및 도구의 확장을 만들 수 있습니다.
 

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 261eef97d6b76d5cc793ecb34d2697abc717e0ca
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 70a06548dd25ade1bf64bad6a99261e043f6ac65
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920900"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670835"
 ---
 # <a name="options-page-debugging-node-properties"></a>옵션 페이지, 디버깅 노드 속성
 다음 표에서는 **옵션** 대화 상자의 **디버깅** 범주, `DTE.Properties("Debugging", <Property Page>)`와 연관된 일부 페이지(또는 속성 컬렉션)에 대해 설명합니다.
@@ -81,10 +81,10 @@ ms.locfileid: "49920900"
 
 ## <a name="see-also"></a>참고 항목
 
-- [옵션 설정 제어](http://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
-- [옵션 페이지에서 속성 항목의 이름 확인](http://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
+- [옵션 설정 제어](https://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
+- [옵션 페이지에서 속성 항목의 이름 확인](https://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
 - [옵션 페이지, 글꼴 및 색 노드 속성](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
 - [옵션 페이지, 텍스트 편집기 노드 속성](../../ide/reference/options-page-text-editor-node-properties.md)
 - [옵션 대화 상자, 디버깅, 일반](../../debugger/general-debugging-options-dialog-box.md)
-- [옵션 대화 상자, 디버깅, 편집하며 계속하기](http://msdn.microsoft.com/Library/009d225f-ef65-463f-a146-e4c518f86103)
+- [옵션 대화 상자, 디버깅, 편집하며 계속하기](/visualstudio/debugger/edit-and-continue?view=vs-2015)
 - [옵션 대화 상자, 디버깅, Just-In-Time](../../debugger/just-in-time-debugging-options-dialog-box.md)

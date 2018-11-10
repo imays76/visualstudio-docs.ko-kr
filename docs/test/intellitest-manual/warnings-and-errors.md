@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 75cda2b45137d982038587ee1dcb73661b77f0df
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: efb82a7419ba58c27ccab864d2360538075a1089
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815797"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000616"
 ---
 # <a name="warnings-and-errors"></a>경고 및 오류
 
@@ -81,9 +81,9 @@ public void MyTest(...) {
 테스트 코드에서 [PexSymbolicValue](static-helper-classes.md#pexsymbolicvalue)를 사용하여 루프 조건에서 생성된 제약 조건을 무시할 수 있습니다.
 
 ```csharp
-for (int i=0; 
+for (int i=0;
     PexSymbolicValue.Ignore(i<100); // IntelliTest will 'forget' about this path condition
-    i++) 
+    i++)
 { }
 ```
 
@@ -111,7 +111,7 @@ void ParameterizedTest(int n) {
     { ... }
 
     // irrelevant for MaxConditions, since conditions do not depend on input
-    for (int i=0; i<100; i++) 
+    for (int i=0; i<100; i++)
     { ... }
 }
 ```
@@ -135,7 +135,7 @@ void ParameterizedTest(int n) {
     int nshadow = PexSymbolicValue.Ignore(n); // IntelliTest looses track of 'n'
 
     // irrevelant for MaxConditions, since nshadow is not related to input
-    for (int i=0; i<nshadow; i++)  
+    for (int i=0; i<nshadow; i++)
     {...}
 }
 ```
@@ -220,16 +220,18 @@ public void MyTest(...) {
 <a name="help-construct"></a>
 ## <a name="need-help-to-construct-object"></a>개체를 생성하는 데 도움이 필요
 
-IntelliTest는 [테스트 입력을 생성](input-generation.md)하고 일부 입력은 필드가 포함된 개체일 수 있습니다. 여기서 IntelliTest는 private 필드가 포함된 클래스의 인스턴스를 생성하려고 하고 이 private 필드에 특정 값이 포함될 경우 흥미로운 프로그램 동작이 발생할 것이라고 가정합니다. 
+IntelliTest는 [테스트 입력을 생성](input-generation.md)하고 일부 입력은 필드가 포함된 개체일 수 있습니다.
+여기서 IntelliTest는 private 필드가 포함된 클래스의 인스턴스를 생성하려고 하고 이 private 필드에 특정 값이 포함될 경우 흥미로운 프로그램 동작이 발생할 것이라고 가정합니다.
 
-그러나 리플렉션을 사용할 수 있지만 IntelliTest는 임의 필드 값을 사용하여 개체를 생성하지 않습니다. 대신에 이러한 경우 IntelliTest는 사용자가 클래스의 public 메서드를 사용하여 개체를 만들고 개체를 private 필드에 원하는 값이 포함된 상태로 전환하는 방법에 대한 힌트를 제공하도록 합니다.
+그러나 리플렉션을 사용할 수 있지만 IntelliTest는 임의 필드 값을 사용하여 개체를 생성하지 않습니다.
+대신에 이러한 경우 IntelliTest는 사용자가 클래스의 public 메서드를 사용하여 개체를 만들고 개체를 private 필드에 원하는 값이 포함된 상태로 전환하는 방법에 대한 힌트를 제공하도록 합니다.
 
-IntelliTest에서 흥미로운 개체를 생성하는 데 도움이 되는 방법을 알아보려면 [기존 클래스 인스턴스화](input-generation.md#existing-classes)를 참조하세요. 
+IntelliTest에서 흥미로운 개체를 생성하는 데 도움이 되는 방법을 알아보려면 [기존 클래스 인스턴스화](input-generation.md#existing-classes)를 참조하세요.
 
 <a name="help-types"></a>
 ## <a name="need-help-to-find-types"></a>형식을 찾는 데 도움이 필요
 
-IntelliTest는 모든 .NET 형식에 대한 [테스트 입력을 생성](input-generation.md)합니다. 여기서 IntelliTest는 추상 클래스에서 파생되거나 추상 인터페이스를 구현하는 인스턴스를 만들려고 하지만 제약 조건을 충족하는 형식을 인식하지 못합니다. 
+IntelliTest는 모든 .NET 형식에 대한 [테스트 입력을 생성](input-generation.md)합니다. 여기서 IntelliTest는 추상 클래스에서 파생되거나 추상 인터페이스를 구현하는 인스턴스를 만들려고 하지만 제약 조건을 충족하는 형식을 인식하지 못합니다.
 
 제약 조건과 일치하는 하나 이상의 형식을 가리키면 IntelliTest에 도움이 될 수 있습니다. 일반적으로 다음 특성 중 하나가 도움이 됩니다.
 
@@ -252,7 +254,7 @@ IntelliTest는 모든 .NET 형식에 대한 [테스트 입력을 생성](input-g
 <a name="usable-type-guessed"></a>
 ## <a name="usable-type-guessed"></a>사용 가능한 형식 추측
 
-IntelliTest는 모든 .NET 형식에 대한 [테스트 입력을 생성](input-generation.md)합니다. 형식이 추상 또는 인터페이스인 경우 IntelliTest는 해당 형식의 특정 구현을 선택해야 합니다. 해당 항목을 선택하려면 어떤 형식이 있는지 알아야 합니다. 
+IntelliTest는 모든 .NET 형식에 대한 [테스트 입력을 생성](input-generation.md)합니다. 형식이 추상 또는 인터페이스인 경우 IntelliTest는 해당 형식의 특정 구현을 선택해야 합니다. 해당 항목을 선택하려면 어떤 형식이 있는지 알아야 합니다.
 
 이 경고가 표시되면 IntelliTest가 일부 참조된 어셈블리를 확인하고 구현 형식을 찾았지만 해당 형식을 사용해야 하는지 또는 다른 곳에 사용 가능한 더 적절한 형식이 있는지 확신할 수 없음을 나타냅니다. IntelliTest는 단순히 적절해 보이는 형식을 선택했습니다.
 
@@ -275,12 +277,14 @@ IntelliTest는 모든 .NET 형식에 대한 [테스트 입력을 생성](input-g
 
 IntelliTest는 프로그램 실행을 모니터링하여 [테스트 입력을 생성](input-generation.md)합니다. IntelliTest가 동작을 모니터링할 수 있도록 관련 코드를 제대로 계측해야 합니다.
 
-이 경고는 계측된 코드가 다른 계측되지 않은 어셈블리에서 메서드를 호출할 경우 나타납니다. IntelliTest가 두 항목의 상호 작용을 탐색하도록 하려면 다른 어셈블리(또는 어셈블리의 일부)도 계측해야 합니다.
+이 경고는 계측된 코드가 다른 계측되지 않은 어셈블리에서 메서드를 호출할 경우 나타납니다.
+IntelliTest가 두 항목의 상호 작용을 탐색하도록 하려면 다른 어셈블리(또는 어셈블리의 일부)도 계측해야 합니다.
 
 <a name="external-method-called"></a>
 ## <a name="external-method-called"></a>외부 메서드 호출
 
-IntelliTest는 .NET 응용 프로그램의 실행을 모니터링하여 [테스트 입력을 생성](input-generation.md)합니다. IntelliTest는 .NET 언어로 작성되지 않은 코드에 대한 의미 있는 테스트 입력을 생성할 수 없습니다.
+IntelliTest는 .NET 응용 프로그램의 실행을 모니터링하여 [테스트 입력을 생성](input-generation.md)합니다.
+IntelliTest는 .NET 언어로 작성되지 않은 코드에 대한 의미 있는 테스트 입력을 생성할 수 없습니다.
 
 이 경고는 계측된 코드가 IntelliTest에서 분석할 수 없는 비관리 네이티브 메서드를 호출할 경우 표시됩니다. IntelliTest가 두 항목의 상호 작용을 탐색하도록 하려면 관리되지 않는 메서드를 모방해야 합니다.
 
@@ -289,7 +293,7 @@ IntelliTest는 .NET 응용 프로그램의 실행을 모니터링하여 [테스�
 
 IntelliTest는 .NET 응용 프로그램의 실행을 모니터링하여 [테스트 입력을 생성](input-generation.md)합니다. 그러나 기술적인 이유로 IntelliTest가 모니터링할 수 없는 몇 가지 메서드가 있습니다. 예를 들어 IntelliTest는 정적 생성자를 모니터링할 수 없습니다.
 
-이 경고는 계측된 코드가 IntelliTest에서 모니터링할 수 없는 메서드를 호출할 경우 표시됩니다. 
+이 경고는 계측된 코드가 IntelliTest에서 모니터링할 수 없는 메서드를 호출할 경우 표시됩니다.
 
 <a name="testability-issue"></a>
 ## <a name="testability-issue"></a>테스트 가능성 문제
@@ -309,7 +313,7 @@ IntelliTest는 [제약 조건 해결기](input-generation.md#constraint-solver)�
 * 부동 소수점 숫자와 정수 간 변환
 * **System.Decimal** 형식에 대한 모든 작업
 
-이 경고는 실행된 코드가 작업을 수행하거나 IntelliTest에서 해석할 수 없는 메서드를 호출할 경우 표시됩니다. 
+이 경고는 실행된 코드가 작업을 수행하거나 IntelliTest에서 해석할 수 없는 메서드를 호출할 경우 표시됩니다.
 
 <a name="observed-call-mismatch"></a>
 ## <a name="observed-call-mismatch"></a>관찰된 호출 불일치
@@ -321,7 +325,7 @@ IntelliTest는 코드를 모니터링할 때 해당 코드에 관련된 테스�
 
 * IntelliTest가 계측되지 않은 메서드 호출을 시작한 일부 코드를 모니터링한 경우
 * 계측되지 않은 메서드가 계측된 메서드를 호출한 경우
-* IntelliTest가 호출된 계측된 메서드를 모니터링할 경우 
+* IntelliTest가 호출된 계측된 메서드를 모니터링할 경우
 
 IntelliTest는 계측되지 않은 중간 메서드가 수행한 작업을 알 수 없으므로 중첩된 계측된 호출에 관련된 테스트 입력을 생성할 수 없습니다.
 
@@ -342,4 +346,4 @@ IntelliTest는 단위 테스트가 결정적일 경우에만 [관련 테스트 �
 
 ## <a name="got-feedback"></a>피드백이 있으신가요?
 
-아이디어와 기능 요청을 **[UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest)** 에 게시하세요.
+아이디어와 기능 요청을 [개발자 커뮤니티](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)에 게시하세요.

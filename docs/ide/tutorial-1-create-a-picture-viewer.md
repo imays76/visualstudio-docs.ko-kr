@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d2c8c23be02f13646c8577d2672bc60b63a1d0a
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 966634ee9a71854334bdd5342326c1663b9ad16c
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008683"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672160"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>자습서 1: 사진 뷰어 만들기
 
@@ -42,7 +42,7 @@ ms.locfileid: "40008683"
 
 ## <a name="tutorial-links"></a>자습서 링크
 
-샘플의 전체 버전을 다운로드하려면 [Complete picture viewer tutorial sample](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8)(전체 사진 뷰어 자습서 샘플)을 참조하세요.
+샘플의 전체 버전을 다운로드하려면 [Complete picture viewer tutorial sample](https://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8)(전체 사진 뷰어 자습서 샘플)을 참조하세요.
 
 ![비디오 링크](../data-tools/media/playvideo.gif)이 항목의 비디오 버전을 보려면 [How do I: Create a picture viewer in Visual Basic?](http://go.microsoft.com/fwlink/?LinkId=205207)(어떻게 할까요?: Visual Basic에서 사진 뷰어 만들기) 또는 [How do I: Create a picture viewer in C#?](http://go.microsoft.com/fwlink/?LinkId=205198)(어떻게 할까요?: C#에서 사진 뷰어 만들기)를 참조하세요.
 

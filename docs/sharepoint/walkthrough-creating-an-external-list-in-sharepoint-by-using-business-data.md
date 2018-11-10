@@ -24,12 +24,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bf13870d54de312be3e97009c07076b49785516b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 18848f0ebd6ffa289ea09553de82f5b9eb893181
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913971"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295841"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>연습: 비즈니스 데이터를 사용 하 여 SharePoint에서 외부 목록 만들기
 
@@ -85,7 +85,7 @@ ms.locfileid: "49913971"
 
 2. SQL Server AdventureWorks 샘플 데이터베이스에 대 한 연결을 추가 합니다.
 
-     자세한 내용은 [연결 추가/수정 (Microsoft SQL Server)](http://msdn.microsoft.com/fa400910-26c3-4df7-b9d1-115e688b4ea3)합니다.
+     자세한 내용은 [연결 추가/수정 (Microsoft SQL Server)](https://msdn.microsoft.com/fa400910-26c3-4df7-b9d1-115e688b4ea3)합니다.
 
 3. **솔루션 탐색기**에서 프로젝트 노드를 선택합니다.
 

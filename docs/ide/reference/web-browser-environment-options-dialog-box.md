@@ -24,12 +24,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4eb5b3a73d2b06123e7878ac90ceb5bdf21869c
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: b7f492c1a192f8c12418c679f498bf282859cbf3
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143166"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671887"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>옵션 대화 상자, 환경, 웹 브라우저
 내부 웹 브라우저 및 Internet Explorer에 대한 옵션을 설정합니다. 이 대화 상자에 액세스하려면 **도구** 메뉴에서 **옵션**을 클릭하고, **환경** 폴더를 확장하고, **웹 브라우저**를 선택합니다.
@@ -53,7 +53,7 @@ ms.locfileid: "50143166"
 
 -   **소스 편집기** [편집기](../../ide/writing-code-in-the-code-and-text-editor.md)에서 소스를 보려면 선택합니다.
 
--   **HTML 편집기** [HTML 디자이너](http://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)에서 소스를 보려면 선택합니다. 디자인 뷰 또는 표준 텍스트 기반 소스 뷰 중 하나에서 웹 페이지를 편집하려면 이 선택을 사용합니다.
+-   **HTML 편집기** [HTML 디자이너](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)에서 소스를 보려면 선택합니다. 디자인 뷰 또는 표준 텍스트 기반 소스 뷰 중 하나에서 웹 페이지를 편집하려면 이 선택을 사용합니다.
 
 -   **외부 편집기** 다른 편집기에서 소스를 보려면 선택합니다. Notepad.exe 등 선택한 편집기의 경로를 지정합니다.
 
@@ -68,4 +68,4 @@ ms.locfileid: "50143166"
 
 - [옵션 대화 상자, 환경](../../ide/reference/environment-options-dialog-box.md)
 - [옵션 대화 상자, 환경, 일반](../../ide/reference/general-environment-options-dialog-box.md)
-- [HTML 디자이너](http://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)
+- [HTML 디자이너](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)

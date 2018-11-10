@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f8f0b90ae76717ce8365bad2ef780efb51b509d1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d2c76a6eb760e55659c7da4df2a1a341426f0c6e
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874672"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671809"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>8단계: 사진 표시 단추 이벤트 처리기를 위한 코드 작성
 
@@ -28,7 +28,7 @@ ms.locfileid: "49874672"
 
 IDE에는 코드 작성에 유용한 IntelliSense라는 강력한 도구가 있습니다. 코드 입력을 시작하면 입력한 부분 단어에 대한 완성 단어를 제시하는 상자가 IDE에서 열립니다. IntelliSense는 사용자가 다음에 할 일을 판단하며 목록에서 사용자가 마지막으로 선택한 항목으로 자동으로 이동합니다. 위쪽 또는 아래쪽 화살표를 사용하여 목록에서 이동하거나 문자를 계속 입력하여 선택 범위를 좁힐 수 있습니다. 원하는 선택 항목이 있으면 **Tab** 키를 선택해서 항목을 선택합니다. 원하는 항목이 없는 경우 제시되는 항목을 무시할 수도 있습니다.
 
-![비디오 링크](../data-tools/media/playvideo.gif) 이 항목의 비디오 버전의 경우, [Tutorial 1: Create a picture viewer in Visual Basic - Video 4](https://msdn.microsoft.com/en-us/vstudio/gg315355.aspx)(자습서 1: Visual Basic에서 사진 뷰어 만들기 - 비디오 4)를 참조하세요. 이 비디오에서는 이전 버전의 Visual Studio를 사용하므로 일부 메뉴 명령과 기타 사용자 인터페이스 요소가 약간 다를 수 있습니다. 그러나 개념 및 절차는 Visual Studio의 현재 버전에서 비슷하게 작동합니다.
+![비디오 링크](../data-tools/media/playvideo.gif) 이 항목의 비디오 버전의 경우, [Tutorial 1: Create a picture viewer in Visual Basic - Video 4](https://msdn.microsoft.com/vstudio/gg315355.aspx)(자습서 1: Visual Basic에서 사진 뷰어 만들기 - 비디오 4)를 참조하세요. 이 비디오에서는 이전 버전의 Visual Studio를 사용하므로 일부 메뉴 명령과 기타 사용자 인터페이스 요소가 약간 다를 수 있습니다. 그러나 개념 및 절차는 Visual Studio의 현재 버전에서 비슷하게 작동합니다.
 
 ## <a name="to-write-code-for-the-show-a-picture-button-event-handler"></a>사진 표시 단추 이벤트 처리기를 위한 코드를 작성하려면
 
@@ -48,7 +48,7 @@ IDE에는 코드 작성에 유용한 IntelliSense라는 강력한 도구가 있�
 
     2.  **IntelliSense** 창이 열리고 **openFileDialog1**이 표시됩니다. 선택하려면 **Tab** 키를 선택합니다. Visual Basic에서는 첫 문자가 대문자이므로 **OpenFileDialog1**이 표시됩니다. **OpenFileDialog1**이 선택되었는지 확인합니다.
 
-         `OpenFileDialog`에 대한 자세한 내용은 [OpenFileDialog](http://msdn.microsoft.com/library/system.windows.forms.openfiledialog.aspx)를 참조하세요.
+         `OpenFileDialog`에 대한 자세한 내용은 [OpenFileDialog](<xref:System.Windows.Forms.OpenFileDialog>)를 참조하세요.
 
     3.  마침표(`.`)를 입력합니다. 프로그래머들은 마침표를 점으로 지칭하는 경우가 많습니다. **openFileDialog1** 바로 다음에 점을 입력했으므로 모든 **OpenFileDialog** 구성 요소의 속성과 메서드가 포함된 **IntelliSense** 창이 열립니다. 이 속성은 **Windows Forms 디자이너**에서 선택할 경우 **속성** 창에 표시되는 것과 같습니다. 또한 구성 요소에 대화 상자 열기와 같은 작업을 지시할 수 있는 메서드를 선택할 수도 있습니다.
 
@@ -63,7 +63,7 @@ IDE에는 코드 작성에 유용한 IntelliSense라는 강력한 도구가 있�
 
     4.  `ShowDialog` 입력을 시작합니다(IntelliSense에서 대문자 표시는 중요하지 않음). `ShowDialog()` 메서드에서 **파일 열기** 대화 상자를 표시합니다. 창에서 **ShowDialog**가 강조 표시된 후 **Tab** 키를 선택합니다. “ShowDialog”를 강조 표시하고 **F1** 키를 선택하여 도움말을 표시할 수도 있습니다.
 
-         `ShowDialog()` 메서드에 대한 자세한 내용은 [ShowDialog Method](http://msdn.microsoft.com/library/c7ykbedk.aspx)(ShowDialog 메서드)를 참조하세요.
+         `ShowDialog()` 메서드에 대한 자세한 내용은 [ShowDialog Method](<xref:System.Windows.Forms.Form.ShowDialog%2A>)(ShowDialog 메서드)를 참조하세요.
 
     5.  컨트롤 또는 구성 요소에서 메서드를 사용할 경우(*메서드 호출*이라고 함) 괄호를 추가해야 합니다. 따라서 `ShowDialog`: `()`에서 “g” 바로 다음에 열기와 닫기 괄호를 입력합니다. 이제 “openFileDialog1.ShowDialog()”처럼 보여야 합니다.
 
@@ -79,7 +79,7 @@ IDE에는 코드 작성에 유용한 IntelliSense라는 강력한 도구가 있�
 
     8.  점을 입력하여 DialogResult 값 **IntelliSense** 창을 엽니다. 문자 `O`를 입력하고 **Tab** 키를 선택하여 **OK**를 삽입합니다.
 
-         DialogResult에 대한 자세한 내용은 [DialogResult](http://msdn.microsoft.com/library/system.windows.forms.dialogresult.aspx)를 참조하세요.
+         DialogResult에 대한 자세한 내용은 [DialogResult](<xref:System.Windows.Forms.DialogResult>)를 참조하세요.
 
         > [!NOTE]
         >  그러면 첫 번째 코드 줄이 완성됩니다. Visual C#의 경우 다음과 같이 됩니다.

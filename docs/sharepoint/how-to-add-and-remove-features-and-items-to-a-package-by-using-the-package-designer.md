@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d58fbaf598e4844d4b76898e17dac5331a8b2e54
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 60a1de6a499b033f99844280c3d2aa73b6ed8ba6
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935070"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294970"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>방법: 추가 및 패키지 디자이너를 사용 하 여 패키지에 기능과 항목 제거
   SharePoint 솔루션을 만들 때 Visual Studio 솔루션의 패키지에 기본 SharePoint 기능을 추가 합니다. 최종 배포 하기 전에 추가할 수 있으며 SharePoint 프로젝트 항목 및 SharePoint 패키지를 수정 하는 기능을 제거할 수 있습니다.  
@@ -64,5 +64,5 @@ ms.locfileid: "49935070"
 ## <a name="see-also"></a>참고자료
  [SharePoint 솔루션 패키지 만들기](../sharepoint/creating-sharepoint-solution-packages.md)   
  [방법: SharePoint 솔루션 패키지 사용자 지정](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)  
- [방법: 패키지 만들기](http://msdn.microsoft.com/en-us/b24be45c-e91d-49bb-afb0-7b265404214b)  
+ [방법: 패키지 만들기](https://msdn.microsoft.com/b24be45c-e91d-49bb-afb0-7b265404214b)  
   

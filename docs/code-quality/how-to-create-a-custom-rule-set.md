@@ -1,24 +1,24 @@
 ---
-title: Visual Studio에서 설정 하는 사용자 지정 코드 분석 규칙 만들기
-ms.date: 04/04/2018
+title: 사용자 지정 코드 분석 규칙 집합 만들기
+ms.date: 11/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.addremoverulesets
 helpviewer_keywords:
-- Development Edition, rule sets
+- rule sets
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dce43c02f4976b51bab61a48f615fb0307102fc7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 061ceec7a513a0d4c92f06fad5ef730100dbfb8e
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884188"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000218"
 ---
 # <a name="customize-a-rule-set"></a>규칙 집합을 사용자 지정
 
@@ -69,6 +69,44 @@ ms.locfileid: "49884188"
    새 규칙 집합을 선택 합니다 **이 규칙 집합 실행** 목록입니다.
 
 6. 선택 **엽니다** 를 규칙 집합 편집기에서 설정 하 고 새 규칙을 엽니다.
+
+### <a name="rule-precedence"></a>규칙 우선 순위
+
+- 동일한 규칙을 나열 된 두 경우 또는 번 더 다양 한 심각도 사용 하 여 설정 하는 규칙에서 컴파일러 오류가 발생 합니다. 예를 들어:
+
+   ```xml
+   <RuleSet Name="Rules for ClassLibrary21" Description="Code analysis rules for ClassLibrary21.csproj." ToolsVersion="15.0">
+     <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
+       <Rule Id="CA1021" Action="Warning" />
+       <Rule Id="CA1021" Action="Error" />
+     </Rules>
+   </RuleSet>
+   ```
+
+- 동일한 규칙을 나열 된 두 이거나 번 더 사용 하 여 설정 규칙에는 *동일한* 심각도에 다음 경고가 표시 될 수 있습니다 합니다 **오류 목록**:
+
+   **CA0063: 규칙 집합 파일을 로드 하지 못했습니다 '\[에].ruleset ' 또는 해당 종속 규칙 중 하나가 파일을 설정 합니다. 파일 규칙 집합 스키마에 맞지 않습니다.**
+
+- 규칙 집합을 사용 하 여 설정 하는 자식 규칙을 포함 하는 경우는 **Include** 태그 및 자식 및 부모 규칙 집합에는 모두 동일한 규칙을 나열 하지만 서로 다른 심각도 사용 하 여 다음에서 부모 규칙 집합 심각도 우선 적용 됩니다. 예를 들어:
+
+   ```xml
+   <!-- Parent rule set -->
+   <?xml version="1.0" encoding="utf-8"?>
+   <RuleSet Name="Rules for ClassLibrary21" Description="Code analysis rules for ClassLibrary21.csproj." ToolsVersion="15.0">
+     <Include Path="classlibrary_child.ruleset" Action="Default" />
+     <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
+       <Rule Id="CA1021" Action="Warning" /> <!-- Overrides CA1021 severity from child rule set -->
+     </Rules>
+   </RuleSet>
+
+   <!-- Child rule set -->
+   <?xml version="1.0" encoding="utf-8"?>
+   <RuleSet Name="Rules from child" Description="Code analysis rules from child." ToolsVersion="15.0">
+     <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
+       <Rule Id="CA1021" Action="Error" />
+     </Rules>
+   </RuleSet>
+   ```
 
 ## <a name="name-and-description"></a>이름 및 설명
 

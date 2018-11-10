@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 87a70451799c7fc3a15eb14a9efbb0233ea2b154
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: ec3f3be069e92d52071a6b40857f7fac46e8d3e5
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220149"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51221050"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>유니버설 Windows 앱의 HTML UI 응답성 분석
 이 항목에서는 유니버설 Windows 앱에 사용할 수 있는 성능 도구인 UI 응답성 프로파일러를 사용하여 앱에서 성능 문제를 격리하는 방법에 대해 설명합니다.  
@@ -351,11 +351,11 @@ if (performance.mark && performance.measure) {
   
 ## <a name="additional-information"></a>추가 정보  
   
--   UI 응답성 프로파일러에 대한 Build 2013 컨퍼런스에서 [이 비디오](http://channel9.msdn.com/Events/Build/2013/3-316) 를 시청하십시오.  
+-   UI 응답성 프로파일러에 대한 Build 2013 컨퍼런스에서 [이 비디오](https://channel9.msdn.com/Events/Build/2013/3-316) 를 시청하십시오.  
   
--   JavaScript를 사용하여 Windows용으로 작성된 UWP 앱에 대한 성능 팁을 참조하세요. 자세한 내용은 [JavaScript를 사용하는 UWP 앱의 성능 모범 사례](http://msdn.microsoft.com/library/windows/apps/hh465194.aspx)를 참조하세요.  
+-   JavaScript를 사용하여 Windows용으로 작성된 UWP 앱에 대한 성능 팁을 참조하세요. 자세한 내용은 [JavaScript를 사용하는 UWP 앱의 성능 모범 사례](/previous-versions/windows/apps/hh465194\(v\=win.10\))를 참조하세요.  
   
--   단일 스레드 코드 실행 모델 및 성능에 대한 자세한 내용은 [코드 실행 중](http://msdn.microsoft.com/library/windows/apps/hh781217.aspx)을 참조하십시오.  
+-   단일 스레드 코드 실행 모델 및 성능에 대한 자세한 내용은 [코드 실행 중](/previous-versions/windows/apps/hh781217\(v\=win.10\))을 참조하십시오.  
   
 ## <a name="see-also"></a>참고 항목  
  [프로파일링 도구 살펴보기](../profiling/profiling-feature-tour.md)
