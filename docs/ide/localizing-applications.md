@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b84223f9758302064622313cd5406b10c872f170
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 16b8c3a35a7d4a489a199b4de9f7fbe34bca9361
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179907"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671016"
 ---
 # <a name="localizing-applications"></a>응용 프로그램 지역화
 
@@ -42,6 +42,6 @@ ms.locfileid: "39179907"
 
  [Windows Forms 전역화](/dotnet/framework/winforms/advanced/globalizing-windows-forms) 여러 문화권을 지원하는 Windows 응용 프로그램을 만드는 방법에 대한 페이지의 링크를 제공합니다.
 
- [세계화 및 지역화](http://msdn.microsoft.com/Library/8ef3838e-9d05-4236-9dd0-ceecff9df80d) 여러 문화권을 지원하는 웹 응용 프로그램을 만드는 방법에 대한 페이지의 링크를 제공합니다.
+ [세계화 및 지역화](https://msdn.microsoft.com/Library/8ef3838e-9d05-4236-9dd0-ceecff9df80d) 여러 문화권을 지원하는 웹 응용 프로그램을 만드는 방법에 대한 페이지의 링크를 제공합니다.
 
- [지역화 대비 응용 프로그램 개발을 위한 최선의 구현 방법](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c) 디자인 문제 및 용어와 같이 전 세계 대상을 위한 프로그래밍에 필요한 정보를 제공합니다.
+ [지역화 대비 응용 프로그램 개발을 위한 최선의 구현 방법](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps) 디자인 문제 및 용어와 같이 전 세계 대상을 위한 프로그래밍에 필요한 정보를 제공합니다.

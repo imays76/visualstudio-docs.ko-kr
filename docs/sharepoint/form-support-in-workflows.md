@@ -16,15 +16,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b2ccffd384bd508998f2d82098a99835f59ad641
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 27e8ab6651c6838de92b8a3d83311ebd47fabcbb
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908784"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296192"
 ---
 # <a name="form-support-in-workflows"></a>워크플로의 폼 지원
-  네 가지 유형의 폼 워크플로에서 사용할 수 있습니다: 연결, 시작, 태스크 및 수정 합니다. 이러한 폼 형식 ASPX 양식은 또는 InfoPath 양식에 기반 할 수 있습니다. 수준의 지원 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 다음 표에 설명 된 여러 가지 요인에 따라 다릅니다. 특정 폼을 제공 합니다. 워크플로 양식 유형에 대 한 자세한 내용은 참조 하세요. [워크플로 양식 개요](http://go.microsoft.com/fwlink/?LinkId=185228) MSDN 웹 사이트입니다.  
+  네 가지 유형의 폼 워크플로에서 사용할 수 있습니다: 연결, 시작, 태스크 및 수정 합니다. 이러한 폼 형식 ASPX 양식은 또는 InfoPath 양식에 기반 할 수 있습니다. 수준의 지원 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 다음 표에 설명 된 여러 가지 요인에 따라 다릅니다. 특정 폼을 제공 합니다. 워크플로 양식 유형에 대 한 자세한 내용은 참조 하세요. [워크플로 양식 개요](http://go.microsoft.com/fwlink/?LinkId=185228)합니다.  
   
 ## <a name="xml-refactoring"></a>XML 리팩터링
  ASPX 연결 또는 시작 폼을 추가 하는 경우는 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 워크플로 프로젝트 항목 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 워크플로의 XML을 자동으로 리팩터링하여 *Elements.xml* 연결에 대 한 참조는 특성을 유지 하는 파일 또는 동기화 형식 이름 또는 배포 경로가 업데이트 될 때마다 초기화 폼 또는 폼 삭제 됩니다. 그러나 사용 하는 경우 다른 폼 형식 예: 태스크 또는 수정 양식, 워크플로에서 합니다 *Elements.xml* 파일 리팩터링 되지 않습니다.  

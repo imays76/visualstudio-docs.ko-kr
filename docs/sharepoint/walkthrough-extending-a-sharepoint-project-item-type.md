@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 683d0e75ca5e925ccd7bf56ceffb0e28da844cc5
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 756486daa709efd6ce1ff697d6d190bb7f4a2e34
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220328"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295724"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>연습: SharePoint 프로젝트 항목 형식 확장
   사용할 수는 **비즈니스 데이터 연결 모델** SharePoint에서 비즈니스 데이터 연결 (BDC) 서비스에 대 한 모델을 만드는 프로젝트 항목입니다. 기본적으로이 프로젝트 항목을 사용 하 여 모델을 만들 때 모델의 데이터 표시 되지 않습니다 사용자. 사용자가 데이터를 볼 수 있도록 SharePoint에 외부 목록도 만들어야 합니다.  
@@ -164,7 +164,7 @@ ms.locfileid: "50220328"
   
 1.  **솔루션 탐색기**선택한을 GenerateExternalDataLists 프로젝트에서 source.extension.vsixmanifest 파일에 대 한 바로 가기 메뉴를 열고 **엽니다**합니다.  
   
-     Visual Studio 매니페스트 편집기에서 파일을 엽니다. Source.extension.vsixmanifest 파일 모든 VSIX 패키지에 필요한 extension.vsixmanifest 파일에 대 한 기준입니다. 이 파일에 대 한 자세한 내용은 참조 하세요. [VSIX 확장 스키마 1.0 참조](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)합니다.  
+     Visual Studio 매니페스트 편집기에서 파일을 엽니다. Source.extension.vsixmanifest 파일 모든 VSIX 패키지에 필요한 extension.vsixmanifest 파일에 대 한 기준입니다. 이 파일에 대 한 자세한 내용은 참조 하세요. [VSIX 확장 스키마 1.0 참조](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)합니다.  
   
 2.  에 **Product Name** 상자에 입력 합니다 **외부 데이터 목록 생성기**합니다.  
   
@@ -179,7 +179,7 @@ ms.locfileid: "50220328"
 6.  에 **형식** 목록에서 선택 **Microsoft.VisualStudio.MefComponent**합니다.  
   
     > [!NOTE]  
-    >  이 값에 해당 하는 `MefComponent` extension.vsixmanifest 파일의 요소입니다. 이 요소는 VSIX 패키지 확장 어셈블리의 이름을 지정합니다. 자세한 내용은 [MEFComponent 요소 (VSX 스키마)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551)합니다.  
+    >  이 값에 해당 하는 `MefComponent` extension.vsixmanifest 파일의 요소입니다. 이 요소는 VSIX 패키지 확장 어셈블리의 이름을 지정합니다. 자세한 내용은 [MEFComponent 요소 (VSX 스키마)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))합니다.  
   
 7.  에 **소스** 목록에서 선택 **현재 솔루션의 프로젝트**합니다.  
   

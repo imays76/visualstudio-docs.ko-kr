@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ad5cc6dc41fb3c9b481eef717ccc3ad07b5e2e9
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 404a8a3f40d5d84d60fe4822fb692e4f48a57503
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43780713"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220809"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 및 Windows Server 2012 응용 프로그램의 성능 도구
 
@@ -43,9 +43,9 @@ UWP 앱을 프로파일링하는 방법에 대한 자세한 내용은 다음 문
 - [원격 컴퓨터에서 UWP 앱 실행](../debugger/run-windows-store-apps-on-a-remote-machine.md)
 - [프로파일링 도구 살펴보기](profiling-feature-tour.md)
 - [JavaScript 메모리](../profiling/javascript-memory.md)
-- [로컬 컴퓨터의 UWP 앱에서 Visual C++, Visual C# 및 Visual Basic 코드 프로파일링](http://msdn.microsoft.com/en-us/2d0c939e-0bac-48c5-b727-46f6c6113060)
-- [원격 장치의 UWP 앱에서 Visual C++, Visual C# 및 Visual Basic 코드 프로파일링](http://msdn.microsoft.com/en-us/b932a2be-11b0-40fd-b996-75c6b6a79d22)
-- [UWP 앱에서 Visual C++, Visual C# 및 Visual Basic 코드에 대한 성능 데이터 분석](http://msdn.microsoft.com/en-us/5de4a413-d924-425f-afc4-e1ecfb0fca18)
+- [로컬 컴퓨터의 UWP 앱에서 Visual C++, Visual C# 및 Visual Basic 코드 프로파일링](https://msdn.microsoft.com/2d0c939e-0bac-48c5-b727-46f6c6113060)
+- [원격 장치의 UWP 앱에서 Visual C++, Visual C# 및 Visual Basic 코드 프로파일링](https://msdn.microsoft.com/b932a2be-11b0-40fd-b996-75c6b6a79d22)
+- [UWP 앱에서 Visual C++, Visual C# 및 Visual Basic 코드에 대한 성능 데이터 분석](https://msdn.microsoft.com/5de4a413-d924-425f-afc4-e1ecfb0fca18)
 
 ## <a name="collect-data-on-apps-running-on-the-windows-8-desktop-or-on-windows-server-2012-from-the-visual-studio-ide"></a>Visual Studio IDE에서 Windows 8 데스크톱 또는 Windows Server 2012에서 실행되는 앱에 대한 데이터 수집
 

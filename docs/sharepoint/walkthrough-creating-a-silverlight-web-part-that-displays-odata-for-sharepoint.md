@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 58f03bc18c2e851bb7732b54ff334e6e3332f74e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 67742078cefcd0608d1cff9a5bab609053544392
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878188"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296114"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>연습: SharePoint 용 OData를 표시 하는 Silverlight 웹 파트 만들기
   SharePoint 2010 OData를 사용 하 여 해당 목록 데이터를 노출합니다. SharePoint에서 OData 서비스는 RESTful 서비스 ListData.svc에 의해 구현 됩니다. 이 연습에서는 Silverlight 응용 프로그램을 호스트 하는 SharePoint 웹 파트를 만드는 방법을 보여 줍니다. Silverlight 응용 프로그램 ListData.svc를 사용 하 여 SharePoint 알림 목록 정보를 표시 합니다. 자세한 내용은 [SharePoint Foundation REST 인터페이스](http://go.microsoft.com/fwlink/?LinkId=225999) 하 고 [개방형 데이터 프로토콜](http://go.microsoft.com/fwlink/?LinkId=226000)합니다.  
@@ -71,7 +71,7 @@ ms.locfileid: "49878188"
   
 #### <a name="to-customize-the-silverlight-application"></a>Silverlight 응용 프로그램을 사용자 지정 하려면
   
-1.  Silverlight 응용 프로그램에서 System.Windows.Data에 어셈블리 참조를 추가 합니다. 자세한 내용은 [방법: 참조 추가 또는 제거 참조 추가 대화 상자를 사용 하 여](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)입니다.  
+1.  Silverlight 응용 프로그램에서 System.Windows.Data에 어셈블리 참조를 추가 합니다. 자세한 내용은 [방법: 참조 추가 또는 제거 참조 추가 대화 상자를 사용 하 여](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)입니다.  
   
 2.  **솔루션 탐색기**에 대 한 바로 가기 메뉴를 열고 **참조**를 선택한 후 **서비스 참조 추가**합니다.  
   

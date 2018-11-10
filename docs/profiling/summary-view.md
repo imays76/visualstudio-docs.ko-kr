@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c85ce933f7ec1c19304a2c0d0fc4c1001df91823
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 65da91ea1182a5c14d6c4b27057b6561221077e8
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929805"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220837"
 ---
 # <a name="summary-view"></a>요약 뷰
 요약 뷰에는 프로파일링 실행에서 성능상 가장 많은 비용이 소요된 함수 또는 개체에 대한 정보가 표시됩니다. 이 뷰는 타임라인 그래프 및 프로파일링 방법의 성능 메트릭을 기반으로 가장 많은 비용이 소요된 함수 또는 개체의 두 개 이상의 목록을 제공합니다. 이 뷰의 데이터는 사용된 프로파일링 방법(샘플링, 계측 또는 동시성) 및 .NET 메모리 할당이 수집되었는지 여부에 따라 달라집니다.  
@@ -52,8 +52,8 @@ ms.locfileid: "49929805"
 | **트리밍된 호출 트리 표시** | 호출 트리 보기에서 가장 많은 비용이 소요된 실행 경로를 표시합니다. 자세한 내용은 [호출 트리 뷰](../profiling/call-tree-view.md)를 참조하세요. |
 | **실행 부하 과다 라인 표시** | 계측 방법을 사용하여 수집된 프로파일링 데이터에 사용할 수 없습니다. 줄 뷰에서 가장 많은 비용이 소요된 소스 코드 줄을 표시합니다. 자세한 내용은 [줄 뷰](../profiling/lines-view.md)를 참조하세요. |
 | **보고서 비교** | 현재 파일과 비교하도록 다른 프로파일링 데이터 파일을 지정할 수 있는 **비교할 분석 파일 선택** 대화 상자를 표시합니다. 자세한 내용은 [성능 데이터 파일 비교](../profiling/comparing-performance-data-files.md)를 참조하세요. |
-| **보고서 데이터 내보내기** | 쉼표로 구분된 값(.csv) 또는 .xml 파일로 저장하도록 하나 이상의 보고서 뷰를 지정할 수 있는 **보고서 내보내기** 대화 상자를 표시합니다. 자세한 내용은 [방법: 프로파일링 도구 보고서 내보내기](http://msdn.microsoft.com/en-us/174b5bd3-df9b-4fd4-88d4-76032ab90451)를 참조하세요. |
-| **분석된 보고서 저장** | 현재 프로파일링 데이터 파일을 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에 대한 인터페이스에서 보다 신속하게 여는 .vsps 파일로 저장합니다. 자세한 내용은 [방법: 분석된 프로파일링 데이터 파일 저장](http://msdn.microsoft.com/en-us/0340ddde-caf4-48ac-8af3-d15dcdade556)을 참조하세요. |
+| **보고서 데이터 내보내기** | 쉼표로 구분된 값(.csv) 또는 .xml 파일로 저장하도록 하나 이상의 보고서 뷰를 지정할 수 있는 **보고서 내보내기** 대화 상자를 표시합니다. 자세한 내용은 [방법: 프로파일링 도구 보고서 내보내기](/previous-versions/visualstudio/visual-studio-2010/ms182394\(v\=vs.100\))를 참조하세요. |
+| **분석된 보고서 저장** | 현재 프로파일링 데이터 파일을 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에 대한 인터페이스에서 보다 신속하게 여는 .vsps 파일로 저장합니다. 자세한 내용은 [방법: 분석된 프로파일링 데이터 파일 저장](/previous-versions/visualstudio/visual-studio-2010/bb763106\(v\=vs.100\))을 참조하세요. |
 | **보고서 데이터 필터링** | 보고서 뷰에서 데이터를 제한하도록 조건을 지정할 수 있는 프로파일링 보고서 필터 창을 표시합니다. 자세한 내용은 [성능 보고서 뷰 필터](../profiling/performance-report-view-filter.md)를 참조하세요. |
 | **전체 화면 설정/해제** | 보고서 뷰에 대한 전체 화면 모드를 설정/해제합니다. |
 

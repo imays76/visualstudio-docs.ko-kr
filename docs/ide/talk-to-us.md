@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d301d2a43e820f59979692071edbfb25ba1d7386
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 4c38a74a48dbac190b5f557641e10f54a0413703
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073743"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671991"
 ---
 # <a name="visual-studio-product-feedback"></a>Visual Studio 제품 피드백
 
@@ -54,7 +54,7 @@ Microsoft 지원 서비스는 현재 가격, 약관 및 조건에 따라 다를 
 
 ## <a name="i-want-to-get-involved-in-the-developer-community"></a>개발자 커뮤니티 참여
 
-다른 개발자와 질문과 대답을 공유하려는 경우 [Visual Studio 개발자 커뮤니티](https://developercommunity.visualstudio.com) 사이트, [MSDN 포럼](http://social.msdn.microsoft.com/Forums/home) 또는 [StackOverflow](http://stackoverflow.com/)를 사용합니다. [개발자 코드 샘플](http://code.msdn.microsoft.com/) 사이트에서 다른 개발자의 코드를 보고 직접 작성한 예제를 공유할 수도 있습니다.
+다른 개발자와 질문과 대답을 공유하려는 경우 [Visual Studio 개발자 커뮤니티](https://developercommunity.visualstudio.com) 사이트, [MSDN 포럼](https://social.msdn.microsoft.com/Forums/home) 또는 [StackOverflow](http://stackoverflow.com/)를 사용합니다. [개발자 코드 샘플](https://code.msdn.microsoft.com/) 사이트에서 다른 개발자의 코드를 보고 직접 작성한 예제를 공유할 수도 있습니다.
 
 ## <a name="i-want-to-help-improve-the-visual-studio-documentation"></a>Visual Studio 설명서를 개선하려는 경우
 

@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c2f096415ccfbadfe66f18a373642cf6a5de86b
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: 09d020e2d83e7e631fefcb1503eb8f1938894986
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32065249"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672121"
 ---
 # <a name="step-8-customize-the-quiz"></a>8단계: 퀴즈 사용자 지정
 자습서의 마지막 부분에서는 퀴즈를 사용자 지정하고 이미 배운 내용을 확장하는 몇 가지 방법을 살펴보겠습니다. 예를 들어 프로그램에서 답이 분수가 아닌 난수 나누기 문제를 만드는 방법을 생각해 보세요. 자세히 알아보려면 `timeLabel` 컨트롤을 다른 색으로 바꾸고 퀴즈를 푸는 사람에게 힌트를 제공합니다.  
@@ -29,7 +29,7 @@ ms.locfileid: "32065249"
   
 ## <a name="to-continue-or-review"></a>계속하거나 검토하려면  
   
--   퀴즈의 전체 버전을 다운로드하려면 [Complete math quiz tutorial sample](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c)(전체 수학 퀴즈 자습서 샘플)을 참조하세요.  
+-   퀴즈의 전체 버전을 다운로드하려면 [Complete math quiz tutorial sample](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c)(전체 수학 퀴즈 자습서 샘플)을 참조하세요.  
   
 -   다음 자습서로 이동하려면 [자습서 3: 일치 게임 만들기](../ide/tutorial-3-create-a-matching-game.md)를 참조하세요.  
   

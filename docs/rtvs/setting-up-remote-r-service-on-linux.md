@@ -11,12 +11,12 @@ ms.reviewer: karthiknadig
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: fa985b88e5857d12324f25a5bd1581ca3f9e211e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 81a0a5c26e91056e757bc6e6f68cd217e98c7e06
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35667927"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220816"
 ---
 # <a name="remote-r-service-for-linux"></a>Linux용 원격 R 서비스
 
@@ -108,7 +108,7 @@ Linux용 원격 R 서비스는 현재 rtvs-daemon으로 패키지됩니다. Ubun
 
 ### <a name="windows-subsystem-for-linux-wsl"></a>WSL(Linux용 Windows 하위 시스템)
 
-1. [Windows 10](https://msdn.microsoft.com/commandline/wsl/install-win10) 또는 [Windows Server](https://msdn.microsoft.com/en-us/commandline/wsl/install-on-server)에 대한 WSL 설치 지침을 따릅니다.
+1. [Windows 10](/windows/wsl/install-win10#install-the-windows-subsystem-for-linux) 또는 [Windows Server](/windows/wsl/install-on-server#enable-the-windows-subsystem-for-linux-wsl)에 대한 WSL 설치 지침을 따릅니다.
 1. Windows에서 bash를 시작하고, 한 가지를 제외하고 [물리적 Ubuntu 컴퓨터](#physical-ubuntu-computer)의 이전 지침을 따릅니다. 3단계의 경우 WSL이 systemd/systemctl 인터페이스를 현재 지원하지 않기 때문에 대신 `rtvsd` 명령을 사용하여 서비스를 시작합니다.
 
 ### <a name="local-or-remote-docker-container-clean-build"></a>로컬 또는 원격 Docker 컨테이너(빌드 정리)

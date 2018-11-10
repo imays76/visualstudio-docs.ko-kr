@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e3f96f9ba893da2368ef7d982079cdbd834055ba
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a634a4f694c6d93a42440bfa80169d5942a3cdbe
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881831"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000647"
 ---
 # <a name="test-generation"></a>테스트 생성
 
@@ -244,4 +244,4 @@ namespace MyTests
 
 ## <a name="got-feedback"></a>피드백이 있으신가요?
 
-아이디어와 기능 요청을 [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest)에 게시하세요.
+아이디어와 기능 요청을 [개발자 커뮤니티](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)에 게시하세요.

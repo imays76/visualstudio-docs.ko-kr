@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ef8b0abf2ed09a11dfacb80c5560413419dac2cb
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: f7e86f07d0806f6ce5873cd91b68b4b32d58f4e6
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180089"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220699"
 ---
 # <a name="updatemanifestforbrowserapplication-task"></a>UpdateManifestForBrowserApplication 작업
 <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> 작업은 [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)] 프로젝트를 빌드할 때 응용 프로그램 매니페스트(*\<projectname>.exe.manifest*)에 **\<hostInBrowser />** 요소를 추가하기 위해 실행합니다.  
@@ -38,7 +38,7 @@ ms.locfileid: "39180089"
 |`HostInBrowser`|필수 **Boolean** 매개 변수입니다.<br /><br /> **\<hostInBrowser />** 요소를 포함하도록 응용 프로그램 매니페스트를 수정할지 여부를 지정합니다. **true**이면 새 **\<hostInBrowser />** 요소가 **\<entryPoint />** 요소에 포함됩니다. 포함된 요소는 누적됩니다. 즉, 기존 **\<hostInBrowser />** 요소를 제거하거나 덮어쓰지 않습니다. 대신 추가 **\<hostInBrowser />** 요소가 만들어집니다. **false**이면 응용 프로그램 매니페스트가 수정되지 않습니다.|  
   
 ## <a name="remarks"></a>설명  
- [!INCLUDE[TLA2#tla_xbap#plural](../msbuild/includes/tla2sharptla_xbapsharpplural_md.md)]는 [!INCLUDE[TLA#tla_clickonce](../msbuild/includes/tlasharptla_clickonce_md.md)] 배포를 통해 실행되므로 지원되는 배포 및 응용 프로그램 매니페스트를 사용하여 게시되어야 합니다. [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)]는 [GenerateApplicationManifest](http://msdn2.microsoft.com/library/6wc2ccdc.aspx) 작업을 사용하여 응용 프로그램 매니페스트를 생성합니다.  
+ [!INCLUDE[TLA2#tla_xbap#plural](../msbuild/includes/tla2sharptla_xbapsharpplural_md.md)]는 [!INCLUDE[TLA#tla_clickonce](../msbuild/includes/tlasharptla_clickonce_md.md)] 배포를 통해 실행되므로 지원되는 배포 및 응용 프로그램 매니페스트를 사용하여 게시되어야 합니다. [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)]는 [GenerateApplicationManifest](generateapplicationmanifest-task.md) 작업을 사용하여 응용 프로그램 매니페스트를 생성합니다.  
   
  그러고 나서 다음 예제에서와 같이 브라우저에서 호스트되도록 응용 프로그램을 구성하기 위해 추가적인 **\<hostInBrowser />** 요소를 응용 프로그램 매니페스트에 추가해야 합니다.  
   

@@ -13,12 +13,12 @@ ms.assetid: a03c2e83-a41f-4854-bcf2-fcaa277a819d
 caps.latest.revision: 18
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c77243f69cedbd340ee91354ef49651e31605e04
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a2c5806af5712a396659d484d09d3fd7374111a1
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845370"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220933"
 ---
 # <a name="isolating-code-under-test-with-microsoft-fakes"></a>Microsoft Fakes를 사용하여 테스트 중인 코드 격리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -146,7 +146,7 @@ Microsoft Fakes는 *스텁* 또는 *shim*을 사용하는 응용 프로그램의
   
     ```  
   
-     여기에서 특별한 부분은 `StubIStockFeed` 클래스입니다. Microsoft Fakes는 참조된 어셈블리의 모든 인터페이스에 대해 스텁 클래스를 생성합니다. 스텁 클래스의 이름은 인터페이스의 이름에서 파생되며 "`Fakes.Stub`"가 접두사가 되고 매개 변수 형식 이름이 추가됩니다.  
+     여기에서 특별한 부분은 `StubIStockFeed` 클래스입니다. Microsoft Fakes는 참조된 어셈블리의 모든 인터페이스에 대해 스텁 클래스를 생성합니다. 스텁 클래스의 이름을 사용 하 여 인터페이스의 이름에서 파생 됩니다 "`Fakes.Stub`" 접두사와 매개 변수 형식 이름이 추가 됩니다.  
   
      스텁은 속성, 이벤트 및 제네릭 메서드의 getter와 setter에 대해서도 생성됩니다. 자세한 내용은 [스텁을 사용하여 유닛 테스트를 위한 응용 프로그램의 여러 부분을 서로 격리](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)를 참조하세요.  
   

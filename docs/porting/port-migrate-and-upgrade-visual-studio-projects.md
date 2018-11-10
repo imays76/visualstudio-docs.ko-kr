@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 84c023342bb3c54e1d967f869962a204fbf1289d
-ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
+ms.openlocfilehash: c1ceaf0fc805ce9fb2b284de203bfde6f418a4a1
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49325031"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220838"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>프로젝트 마이그레이션 및 Visual Studio 2017에 대한 업그레이드 참조
 
@@ -68,7 +68,7 @@ ms.locfileid: "49325031"
 | Visual Studio 확장성/VSIX | MinimumVersion 14.0 이하의 프로젝트는 업데이트를 통해 MinimumVersion 15.0으로 선언됩니다. 그러면 이전 버전의 Visual Studio에서 프로젝트를 열 수 없습니다. 이전 버전에서 프로젝트를 열 수 있도록 허용하려면 MinimumVersion을 `$(VisualStudioVersion)`(으)로 설정합니다. [방법: Visual Studio 2017로 확장성 프로젝트 마이그레이션](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)을 참조하세요. |
 | Visual Studio Lab Management | Microsoft Test Manager 또는 Visual Studio 2010 SP1 이상을 사용하여 이러한 버전에서 만든 환경을 열 수 있습니다. 그러나 Visual Studio 2010 SP1의 경우 환경을 만들기 전에 Microsoft Test Manager 버전이 Team Foundation Server 버전과 일치해야 합니다. |
 | Apache Cordova용 Visual Studio Tools | Visual Studio 2017에서 프로젝트를 열 수는 있지만 이전 버전과 호환되지 않습니다. Visual Studio 2015에서 프로젝트를 열면 프로젝트를 수정하도록 허용할지 여부를 묻는 메시지가 표시됩니다. 이 수정은 프로젝트에서 `taco.json` 파일 대신 도구 집합을 사용하여 Cordova 라이브러리의 버전, 플랫폼 및 플러그인, 노드/npm 종속성을 관리하도록 업그레이드합니다. 자세한 내용은 [마이그레이션 가이드](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/first-steps/migrate-from-visual-studio-2015)를 참조하세요. |
-| 웹 배포(wdproj) | 게시 프로필 지원이 추가되면서 Visual Studio 2012에서 웹 배포 프로젝트 지원이 제거되었습니다. Visual Studio 2017에 동등한 기능이 없으므로 이러한 프로젝트에 대한 자동 마이그레이션 경로는 없습니다. 대신, [StackOverflow](https://stackoverflow.com/a/12061065/1203388)에 설명된 대로 텍스트 편집기에서 wdproj 파일을 열고 사용자 지정을 복사하여 pubxml(게시 프로필) 파일에 붙여넣습니다. 또한 [Plans regarding website and web deployment projects](https://blogs.msdn.microsoft.com/webdev/2012/08/06/plans-regarding-website-projects-and-web-deployment-projects)(웹 사이트 및 웹 배포 프로젝트에 관한 계획)(MSDN 블로그)를 참조하세요. |
+| 웹 배포(wdproj) | 게시 프로필 지원이 추가되면서 Visual Studio 2012에서 웹 배포 프로젝트 지원이 제거되었습니다. Visual Studio 2017에 동등한 기능이 없으므로 이러한 프로젝트에 대한 자동 마이그레이션 경로는 없습니다. 대신, [StackOverflow](https://stackoverflow.com/a/12061065/1203388)에 설명된 대로 텍스트 편집기에서 wdproj 파일을 열고 사용자 지정을 복사하여 pubxml(게시 프로필) 파일에 붙여넣습니다. 또한 [Plans regarding website and web deployment projects](https://blogs.msdn.microsoft.com/webdev/2012/08/06/plans-regarding-website-projects-and-web-deployment-projects/)(웹 사이트 및 웹 배포 프로젝트에 관한 계획)(MSDN 블로그)를 참조하세요. |
 | Windows Communication Foundation, Windows Workflow Foundation | Visual Studio 2017, Visual Studio 2015, Visual Studio 2013 및 Visual Studio 2012에서 이 프로젝트를 열 수 있습니다. |
 | Windows Presentation Foundation | Visual Studio 2013, Visual Studio 2012 및 Visual Studio 2010 SP1에서 이 프로젝트를 열 수 있습니다. |
 | Windows 스토어/전화 앱 | Visual Studio 2017에서는 Windows 스토어 8.1 및 8.0, Windows Phone 8.1 및 8.0용 프로젝트가 지원되지 않습니다. 이러한 앱을 유지하려면 Visual Studio 2015를 계속 사용합니다. Windows Phone 7.x 프로젝트를 유지하려면 Visual Studio 2012를 사용합니다. |

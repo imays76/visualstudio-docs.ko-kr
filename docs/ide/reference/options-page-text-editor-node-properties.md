@@ -13,17 +13,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: add008f6e5728d8c53f0f4ad3c9f590ecd7dc919
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e16bdece503babe9a50bc83d64da582d390843b6
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929207"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670821"
 ---
 # <a name="options-page-text-editor-node-properties"></a>옵션 페이지, 텍스트 편집기 노드 속성
 이 문서에서는 **옵션** 대화 상자의 **텍스트 편집기** 범주, `DTE.Properties("TextEditor", <Property Page>)`와 연관된 일부 페이지(또는 속성 컬렉션)에 대해 설명합니다. 각 하위 단원의 제목은 `Properties` 컬렉션에 액세스하는 데 사용되는 호출이며, 각 하위 단원의 표에는 컬렉션의 속성이 나열되어 있습니다.
 
- [옵션 설정 제어](http://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)의 Visual Basic 매크로는 **옵션** 대화 상자의 각 페이지에 대해 현재 옵션과 해당 값을 표시하는 방법을 보여 줍니다.
+ [옵션 설정 제어](https://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)의 Visual Basic 매크로는 **옵션** 대화 상자의 각 페이지에 대해 현재 옵션과 해당 값을 표시하는 방법을 보여 줍니다.
 
 ## <a name="general"></a>일반
  `DTE.Properties("TextEditor", "General")`
@@ -66,7 +66,7 @@ ms.locfileid: "49929207"
 
 ## <a name="see-also"></a>참고 항목
 
-- [옵션 설정 제어](http://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
-- [옵션 페이지에서 속성 항목의 이름 확인](http://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
+- [옵션 설정 제어](https://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
+- [옵션 페이지에서 속성 항목의 이름 확인](https://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
 - [옵션 페이지, 환경, 노드 속성](../../ide/reference/options-page-environment-node-properties.md)
 - [옵션 페이지, 글꼴 및 색 노드 속성](../../ide/reference/options-page-fonts-and-colors-node-properties.md)

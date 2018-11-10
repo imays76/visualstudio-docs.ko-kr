@@ -4,12 +4,12 @@ hide_bc: true
 title: Visual Studio 설명서 | Microsoft Docs
 description: Visual Studio 2017을 사용하여 플랫폼 및 장치에 대해 선택한 언어로 응용 프로그램, 서비스 및 도구를 개발하는 방법에 대해 알아봅니다.
 ms.topic: hub-page
-ms.openlocfilehash: d458683758916e78d3773b2700fb9ab2ae3acd39
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: 961d9f46d78b23fa976b3a8cdc774d219445c8b1
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750718"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000285"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -259,7 +259,7 @@ ASP.NET Core를 사용한 웹앱</a>
                         <a href="#features1"> </a>
                         <ul id="features1" class="cardsC">
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=856608">
+                                <a href="ide/index-writing-code.md">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -278,7 +278,7 @@ ASP.NET Core를 사용한 웹앱</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833077">
+                                <a href="ide/compiling-and-building-in-visual-studio.md">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -297,7 +297,7 @@ ASP.NET Core를 사용한 웹앱</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833078">
+                                <a href="/visualstudio/debugger/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -316,7 +316,7 @@ ASP.NET Core를 사용한 웹앱</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833079">
+                                <a href="test/improve-code-quality.md">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -335,7 +335,7 @@ ASP.NET Core를 사용한 웹앱</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=834349">
+                                <a href="/visualstudio/deployment/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -392,7 +392,7 @@ ASP.NET Core를 사용한 웹앱</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=834348">
+                                <a href="/visualstudio/profiling/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -412,7 +412,7 @@ ASP.NET Core를 사용한 웹앱</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833081">
+                                <a href="/visualstudio/extensibility/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -431,7 +431,7 @@ ASP.NET Core를 사용한 웹앱</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=856607">
+                                <a href="data-tools/accessing-data-in-visual-studio.md">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -450,7 +450,7 @@ ASP.NET Core를 사용한 웹앱</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=872032">
+                                <a href="/visualstudio/liveshare/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -507,7 +507,7 @@ ASP.NET Core를 사용한 웹앱</a>
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="https://go.microsoft.com/fwlink/?linkid=833062">
+                                                <a href="/dotnet/csharp/">
                                                     <h3>C#</h3>
                                                     <p>.NET 플랫폼에서 모든 응용 프로그램을 빌드하기 위한 함수 프로그래밍 기능이 있는 최신 개체 지향 프로그래밍 언어입니다.</p>
                                                 </a>
@@ -526,7 +526,7 @@ ASP.NET Core를 사용한 웹앱</a>
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="https://go.microsoft.com/fwlink/?linkid=833060">
+                                                <a href="/dotnet/visual-basic/">
                                                     <h3>Visual Basic</h3>
                                                     <p>.NET 플랫폼용으로 쉽게 배울 수 있는 최신 개체 지향 프로그래밍 언어로, 쉽게 Windows 응용 프로그램을 만드는 데 중점을 둡니다.</p>
                                                 </a>
@@ -545,7 +545,7 @@ ASP.NET Core를 사용한 웹앱</a>
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="https://go.microsoft.com/fwlink/?linkid=833063">
+                                                <a href="/cpp/">
                                                     <h3>C++</h3>
                                                     <p>Windows, Linux, iOS 및 Android용 응용 프로그램을 만들기 위한 강력하고 유연한 프로그래밍 언어 및 개발 환경입니다.</p>
                                                 </a>
@@ -564,7 +564,7 @@ ASP.NET Core를 사용한 웹앱</a>
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="https://go.microsoft.com/fwlink/?linkid=833067">
+                                                <a href="/dotnet/fsharp/">
                                                     <h3>F#</h3>
                                                     <p>.NET 플랫폼에 대한 개체 지향 기능이 있는 최신 함수 프로그래밍 언어로, 모든 작업에서 함수 프로그래밍을 더 쉽게 만드는 데 중점을 둡니다.</p>
                                                 </a>
@@ -583,7 +583,7 @@ ASP.NET Core를 사용한 웹앱</a>
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="https://go.microsoft.com/fwlink/?linkid=833064">
+                                                <a href="/scripting/">
                                                     <h3>JavaScript</h3>
                                                     <p>웹 페이지를 좀 더 대화형으로 만드는 데 자주 사용되는 간단한 플랫폼 간 스크립트 언어입니다.</p>
                                                 </a>
@@ -602,7 +602,7 @@ ASP.NET Core를 사용한 웹앱</a>
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="https://go.microsoft.com/fwlink/?linkid=833066">
+                                                <a href="http://www.typescriptlang.org/docs/tutorial.html">
                                                     <h3>TypeScript</h3>
                                                     <p>일반 JavaScript로 컴파일되는 JavaScript의 상위 집합이며 코드의 확장성을 높이는 데 사용됩니다.</p>
                                                 </a>
@@ -621,7 +621,7 @@ ASP.NET Core를 사용한 웹앱</a>
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="https://go.microsoft.com/fwlink/?linkid=833068">
+                                                <a href="/visualstudio/python/">
                                                     <h3>Python</h3>
                                                     <p>신속한 응용 프로그램 개발에 자주 사용되는 동적 개체 지향 상위 수준 프로그래밍 언어입니다.</p>
                                                 </a>
@@ -640,7 +640,7 @@ ASP.NET Core를 사용한 웹앱</a>
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="https://go.microsoft.com/fwlink/?linkid=833070">
+                                                <a href="/visualstudio/rtvs/">
                                                     <h3>R</h3>
                                                     <p>통계 계산 및 그래픽에 일반적으로 사용되는 확장 가능한 프로그래밍 언어입니다.</p>
                                                 </a>
@@ -666,7 +666,7 @@ ASP.NET Core를 사용한 웹앱</a>
                                 </div>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833085">
+                                <a href="/aspnet/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -704,7 +704,7 @@ ASP.NET Core를 사용한 웹앱</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833068">
+                                <a href="/visualstudio/python/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -723,7 +723,7 @@ ASP.NET Core를 사용한 웹앱</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=834351">
+                                <a href="javascript/quickstart-vuejs-with-nodejs.md">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -742,7 +742,7 @@ ASP.NET Core를 사용한 웹앱</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833095">
+                                <a href="/visualstudio/data-tools/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -761,7 +761,7 @@ ASP.NET Core를 사용한 웹앱</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=834748">
+                                <a href="rtvs/data-science-and-analytical-applications-workload.md">
                                   <div class="cardSize">
                                     <div class="cardPadding">
                                       <div class="card">
@@ -780,7 +780,7 @@ ASP.NET Core를 사용한 웹앱</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833075">
+                                <a href="https://developer.microsoft.com/office/docs">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -809,7 +809,7 @@ ASP.NET Core를 사용한 웹앱</a>
                                 </div>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833082">
+                                <a href="cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -828,7 +828,7 @@ ASP.NET Core를 사용한 웹앱</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833083">
+                                <a href="/dotnet/framework/develop-client-apps">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -847,7 +847,7 @@ ASP.NET Core를 사용한 웹앱</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833084">
+                                <a href="/cpp/windows/desktop-applications-visual-cpp">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -876,7 +876,7 @@ ASP.NET Core를 사용한 웹앱</a>
                                 </div>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833088">
+                                <a href="/xamarin/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -895,7 +895,7 @@ ASP.NET Core를 사용한 웹앱</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833091">
+                                <a href="cross-platform/visual-studio-tools-for-unity.md">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -914,7 +914,7 @@ ASP.NET Core를 사용한 웹앱</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833089">
+                                <a href="/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -933,7 +933,7 @@ ASP.NET Core를 사용한 웹앱</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833090">
+                                <a href="/visualstudio/cross-platform/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -952,7 +952,7 @@ ASP.NET Core를 사용한 웹앱</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=834749">
+                                <a href="/windows/uwp/gaming/e2e">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -976,7 +976,7 @@ ASP.NET Core를 사용한 웹앱</a>
                         <a href="#other">기타 도구 집합</a>
                         <ul id="other" class="cardsC">
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=834750">
+                                <a href="/visualstudio/extensibility/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -995,7 +995,7 @@ ASP.NET Core를 사용한 웹앱</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833099">
+                                <a href="/cpp/linux/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -1014,7 +1014,7 @@ ASP.NET Core를 사용한 웹앱</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=856606">
+                                <a href="/dotnet/core/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -1044,19 +1044,19 @@ ASP.NET Core를 사용한 웹앱</a>
         <h2>연락 방법</h2>
         <ul class="links">
            <li>
-                <a href="https://go.microsoft.com/fwlink/?linkid=833100"> 블로그 </a>
+                <a href="https://blogs.msdn.microsoft.com/visualstudio/"> 블로그 </a>
             </li>
             <li>
-                <a href="https://go.microsoft.com/fwlink/?linkid=833101"> Twitter </a>
+                <a href="https://twitter.com/VisualStudio"> Twitter </a>
             </li>
             <li>
-                <a href="https://go.microsoft.com/fwlink/?linkid=833103"> Stack Overflow </a>
+                <a href="https://stackoverflow.com/questions/tagged/visual-studio"> Stack Overflow </a>
             </li>
             <li>
-                <a href="https://go.microsoft.com/fwlink/?linkid=874480"> 문제 보고 </a>
+                <a href="ide/talk-to-us.md"> 문제 보고 </a>
             </li>
             <li>
-                <a href="https://go.microsoft.com/fwlink/?linkid=833105"> 사용자 의견 </a>
+                <a href="https://developercommunity.visualstudio.com/spaces/8/index.html"> 개발자 커뮤니티 </a>
             </li>
         </ul>
     </div>

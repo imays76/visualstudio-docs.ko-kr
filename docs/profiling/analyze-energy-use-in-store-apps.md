@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 5e74ec5e1e4efe4cbdf98125aa17cb3646fbc136
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 08723f30957ece57af0f666a5464907a686ad604
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930910"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220738"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>UWP 앱의 에너지 사용 분석
 Visual Studio **에너지 소비** 프로파일러를 사용하면 자체 배터리로 전부 또는 일부의 시간 동안 실행하는 저전력 태블릿 장치에서 UWP 앱의 전력 및 에너지 소비를 분석할 수 있습니다. 배터리로 구동하는 장치에서 앱이 너무 많은 에너지를 사용할 경우 고객 불만족을 일으킬 수 있고, 결과적으로 고객이 설치를 제거할 수도 있습니다. 에너지 사용을 최적화하면 고객이 앱을 채택하고 사용하는 사례가 증가할 수 있습니다.  
@@ -54,7 +54,7 @@ Visual Studio **에너지 소비** 프로파일러를 사용하면 자체 배터
   
  **C#, Visual Basic, C++ 코드에 표시 추가**  
   
- C#, Visual Basic, C++ 코드에 사용자 표시를 추가하려면 먼저 [Windows.Foundation.Diagnostics LoggingChannel](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.aspx) 개체를 만듭니다. 그런 다음 [LoggingChannel.LogMessage](http://msdn.microsoft.com/library/windows/apps/dn264210.aspx) 메서드의 표시할 코드의 지점에 호출을 삽입합니다. 호출에 [LoggingLevel.Information](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.logginglevel.aspx) 을 사용합니다.  
+ C#, Visual Basic, C++ 코드에 사용자 표시를 추가하려면 먼저 [Windows.Foundation.Diagnostics LoggingChannel](xref:Windows.Foundation.Diagnostics.LoggingChannel) 개체를 만듭니다. 그런 다음 [LoggingChannel.LogMessage](xref:Windows.Foundation.Diagnostics.LoggingChannel.LogMessage%2A) 메서드의 표시할 코드의 지점에 호출을 삽입합니다. 호출에 [LoggingLevel.Information](xref:Windows.Foundation.Diagnostics.LoggingLevel) 을 사용합니다.  
   
  메서드가 실행되면 프로파일링 데이터에 사용자 표시와 메시지가 추가됩니다.  
   
@@ -62,7 +62,7 @@ Visual Studio **에너지 소비** 프로파일러를 사용하면 자체 배터
 > - Windows.Foundation.Diagnostics LoggingChannel은 [Windows.Foundation.IClosable](/uwp/api/windows.foundation.iclosable) 인터페이스를 구현합니다(C# 및 VB에서 [System.IDisposable](/dotnet/api/system.idisposable) 로 프로젝션됨). 운영 체제 리소스 누수를 방지하려면 로깅 채널이 완료될 때 [LoggingChannel.Close](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel)(C# 및 VB에서는 [Windows.Foundation.Diagnostics.LoggingChannel.Dispose](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel))를 호출합니다.  
 >   -   열린 각 로깅 채널의 이름은 고유해야 합니다. 동일한 이름의 새 로깅 채널을 삭제되지 않은 채널로 만들려고 하면 예외가 발생합니다.  
   
- 예제는 Windows SDK 샘플 [LoggingSession 샘플](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336)을 참조하세요.  
+ 예제는 Windows SDK 샘플 [LoggingSession 샘플](https://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336)을 참조하세요.  
   
  **JavaScript 코드에 표시 추가**  
   
@@ -147,7 +147,7 @@ if (performance && performance.mark) {
   
 ## <a name="other-resources"></a>기타 리소스  
   
--   Windows 개발자 센터에 나와 있는 **C#/VB/C++ 및 XAML** 및 [JavaScript 및 HTML](http://msdn.microsoft.com/en-us/0ee0b706-8432-4d49-9801-306ed90764e1) 의 [연결 상태 및 원가 관리](http://msdn.microsoft.com/en-us/372afa6a-1c7c-4657-967d-03a77cd8e933) 섹션에서는 앱이 네트워크 트래픽 비용을 최소화하는 데 사용할 수 있는 네트워크 연결 정보를 제공하는 Windows API에 대해 설명합니다.  
+-   Windows 개발자 센터에 나와 있는 **C#/VB/C++ 및 XAML** 및 [JavaScript 및 HTML](/previous-versions/windows/apps/hh452985\(v\=win.10\)) 의 [연결 상태 및 원가 관리](https://msdn.microsoft.com/372afa6a-1c7c-4657-967d-03a77cd8e933) 섹션에서는 앱이 네트워크 트래픽 비용을 최소화하는 데 사용할 수 있는 네트워크 연결 정보를 제공하는 Windows API에 대해 설명합니다.  
   
      UWP 앱에 대한 Visual Studio 시뮬레이터를 사용하여 네트워크 정보 API의 데이터 연결 속성을 시뮬레이션할 수 있습니다. [시뮬레이터에서 UWP 앱 실행](../debugger/run-windows-store-apps-in-the-simulator.md)을 참조하세요.  
   

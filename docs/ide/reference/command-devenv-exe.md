@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c21402c3b2b71372aaf170c68c65777eba4e95bf
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 1d6d2c5355fbce44bbb97a33e21ad623997ddceb
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33703748"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670808"
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE(통합 개발 환경)를 시작한 후 지정된 명령을 실행합니다.
@@ -35,7 +35,7 @@ devenv /command CommandName
 ## <a name="remarks"></a>설명
  시작이 완료된 후 IDE는 명명된 명령을 실행합니다. 이 스위치를 사용하면 IDE는 시작 시 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 시작 페이지를 표시하지 않습니다.
 
- 추가 기능이 명령을 표시할 경우에는 이 스위치를 사용하여 명령줄에서 추가 기능을 시작할 수 있습니다. 자세한 내용은 [방법: 추가 기능 관리자를 사용하여 추가 기능 제어](http://msdn.microsoft.com/Library/4f60444a-cb48-4cdb-8df4-941f6419aeeb)를 참조하세요.
+ 추가 기능이 명령을 표시할 경우에는 이 스위치를 사용하여 명령줄에서 추가 기능을 시작할 수 있습니다. 자세한 내용은 [방법: 추가 기능 관리자를 사용하여 추가 기능 제어](https://msdn.microsoft.com/Library/4f60444a-cb48-4cdb-8df4-941f6419aeeb)를 참조하세요.
 
 ## <a name="example"></a>예
  이 예제에서는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]를 시작하고 Open Favorite Files(즐겨찾기 파일 열기) 매크로를 자동으로 실행합니다.
@@ -47,4 +47,4 @@ devenv /command "Macros.MyMacros.Module1.OpenFavoriteFiles"
 ## <a name="see-also"></a>참고 항목
 
 - [Devenv 명령줄 스위치](../../ide/reference/devenv-command-line-switches.md)
-- [Visual Studio 명령 별칭](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

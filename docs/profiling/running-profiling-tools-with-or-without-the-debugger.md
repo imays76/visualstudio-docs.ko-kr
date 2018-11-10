@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92744b9fdbfa0e383ba061cfe51c80c9b8cd9976
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: adb0180d892f34374ce58db3a4830fb7e5c21f10
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929428"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220985"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행
 Visual Studio에서는 이제 성능 도구를 선택할 수 있습니다. 그 중 일부(예: **CPU 사용** 및 **메모리 사용**)는 디버거를 사용하거나 사용하지 않고 실행될 수 있습니다. 디버거가 없는 성능 도구는 릴리스 구성에서 실행될 수 있으며, 디버거 통합 도구는 디버그 구성에서 실행될 수 있습니다.  
@@ -68,7 +68,7 @@ Windows 7 이상에서 디버거 없이 프로파일링 도구를 사용할 수 
   
    ![DiagnosticEventFilter](../profiling/media/diagnosticeventfilter.png "DiagnosticEventFilter")  
   
-   자세한 내용은 [진단 도구 창의 이벤트 탭 검색 및 필터링](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx)을 참조하세요.  
+   자세한 내용은 [진단 도구 창의 이벤트 탭 검색 및 필터링](https://blogs.msdn.microsoft.com/devops/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/)을 참조하세요.  
   
 ## <a name="collect-profiling-data-without-debugging"></a>디버깅을 사용하지 않고 프로파일링 데이터 수집  
  일부 프로파일링 도구를 실행하려면 관리자 권한이 필요합니다. 관리자 권한으로 Visual Studio를 시작할 수도 있고, 진단 세션을 시작할 때 관리자 권한으로 도구를 실행하도록 선택할 수 있습니다.  
@@ -126,18 +126,18 @@ Windows 7 이상에서 디버거 없이 프로파일링 도구를 사용할 수 
  원격 PC 또는 태블릿에서 진단 세션을 실행하려면 원격 대상에 Visual Studio 원격 도구가 설치되어 있고 실행 중이어야 합니다. 데스크톱 앱의 경우 [원격 디버깅](../debugger/remote-debugging.md)을 참조하세요.  UWP 앱의 경우 [원격 컴퓨터에서 UWP 앱 실행](../debugger/run-windows-store-apps-on-a-remote-machine.md)을 참조하세요.  
   
 ## <a name="blog-posts-and-msdn-articles-from-the-diagnostics-development-team"></a>진단 개발팀의 블로그 게시물 및 MSDN 문서  
- [MSDN Magazine: Visual Studio 2015에서 디버그하는 동안 성능 분석](https://msdn.microsoft.com/en-us/magazine/dn973013.aspx)  
+ [MSDN Magazine: Visual Studio 2015에서 디버그하는 동안 성능 분석](https://msdn.microsoft.com/magazine/dn973013.aspx)
   
- [MSDN Magazine: IntelliTrace를 사용하여 문제를 더 빠르게 진단](https://msdn.microsoft.com/en-us/magazine/dn973014.aspx)  
+ [MSDN Magazine: IntelliTrace를 사용하여 문제를 더 빠르게 진단](https://msdn.microsoft.com/magazine/dn973014.aspx)
   
- [블로그 게시물: Visual Studio 2015의 메모리 사용량 도구로 이벤트 처리기 누수 진단](http://blogs.msdn.com/b/visualstudioalm/archive/2015/04/29/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015.aspx)  
+ [블로그 게시물: Visual Studio 2015의 메모리 사용량 도구로 이벤트 처리기 누수 진단](https://blogs.msdn.microsoft.com/devops/2015/04/29/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015/)
   
- [비디오: Microsoft Visual Studio Ultimate 2015의 IntelliTrace를 사용하여 기록 디버그](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)  
+ [비디오: Microsoft Visual Studio Ultimate 2015의 IntelliTrace를 사용하여 기록 디버그](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)
   
- [비디오: Visual Studio 2015를 사용하여 성능 문제 디버그](https://channel9.msdn.com/Events/Build/2015/3-731)  
+ [비디오: Visual Studio 2015를 사용하여 성능 문제 디버그](https://channel9.msdn.com/Events/Build/2015/3-731)
   
- [성능 팁: Visual Studio를 사용하여 디버그하는 동안 성능 정보 요약](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)  
+ [성능 팁: Visual Studio를 사용하여 디버그하는 동안 성능 정보 요약](https://blogs.msdn.microsoft.com/devops/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/)
   
- [Visual Studio 2015의 진단 도구 디버거 창](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  
+ [Visual Studio 2015의 진단 도구 디버거 창](https://blogs.msdn.microsoft.com/devops/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015/)
   
- [Visual Studio Enterprise 2015의 IntelliTrace](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/intellitrace-in-visual-studio-ultimate-2015.aspx)
+ [Visual Studio Enterprise 2015의 IntelliTrace](https://blogs.msdn.microsoft.com/devops/2015/01/16/intellitrace-in-visual-studio-ultimate-2015/)

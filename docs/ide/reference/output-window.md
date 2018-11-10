@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e9af45262649473f9676bff80b4a238fdd642ac
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 51fcd9ece62afca8c5369c813d5ca8e5314dafe6
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844214"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670886"
 ---
 # <a name="output-window"></a>출력 창
 
@@ -78,7 +78,7 @@ C++에서 경고 및 오류가 **출력** 창에서 표시되고 계산되는 �
 ## <a name="see-also"></a>참고 항목
 
 - [출력 창의 진단 메시지](../../debugger/diagnostic-messages-in-the-output-window.md)
-- [방법: 출력 창 제어](http://msdn.microsoft.com/Library/91aebd15-8854-4a7a-9f7d-57376fb4e858)
+- [방법: 출력 창 제어](https://msdn.microsoft.com/Library/91aebd15-8854-4a7a-9f7d-57376fb4e858)
 - [컴파일 및 빌드](../../ide/compiling-and-building-in-visual-studio.md)
 - [빌드 구성 이해](../../ide/understanding-build-configurations.md)
 - [클래스 라이브러리 개요](/dotnet/standard/class-library-overview)

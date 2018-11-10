@@ -19,15 +19,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b363e64cbd23bcaa05eeca9aae9c26a6d4e376b3
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: f68f6e50be569df6130f7e6c6f3aa4bc7c107214
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219785"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296049"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>SharePoint 솔루션 문제 해결
-  다음 문제 또는 경고를 사용 하 여 SharePoint 솔루션을 디버깅할 때 발생할 수 있습니다는 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 디버거. 자세한 내용은 [SharePoint 2007 워크플로 솔루션 디버깅](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247)합니다.
+  다음 문제 또는 경고를 사용 하 여 SharePoint 솔루션을 디버깅할 때 발생할 수 있습니다는 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 디버거. 자세한 내용은 [SharePoint 2007 워크플로 솔루션 디버깅](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247)합니다.
   
 ## <a name="token-restrictions-in-sandboxed-visual-web-parts"></a>샌드박스 비주얼 웹 파트의 토큰 제한 사항
  샌드박스 솔루션의 비주얼 웹 파트는 SharePoint 런타임이 지원하는 $SPUrl과 같은 표준 토큰을 처리할 수 없습니다. 이에 따라 URL은 확인되지 않으며, 다음 예제와 같이 스크립트 요소에서 URL을 직접 참조하는 경우 비주얼 웹 파트 디자이너의 디자인 뷰에서 내용을 미리 볼 수 없습니다.  
@@ -105,7 +105,7 @@ ms.locfileid: "50219785"
  없음  
   
 ### <a name="resolution"></a>해결  
- 에 잘못 된 값으로 인해이 문제가 발생 합니다 **경로** webtemp 사이트 정의 구성에 대 한 속성 파일을 같은 *webtemp_SiteDefinitionProject1.xml*합니다. 에 **경로** 아래에 있는 webtemp 파일의 속성을 **배포 위치**, 1033 적절 한 로캘을 변경 [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]. 예를 들어, 사용 하려면 일본어 로캘을 변경 값 1041 하 합니다. 자세한 내용은 [Microsoft에서 할당 한 로캘 Id](http://go.microsoft.com/fwlink/?LinkID=165561) MSDN 웹 사이트입니다.  
+ 에 잘못 된 값으로 인해이 문제가 발생 합니다 **경로** webtemp 사이트 정의 구성에 대 한 속성 파일을 같은 *webtemp_SiteDefinitionProject1.xml*합니다. 에 **경로** 아래에 있는 webtemp 파일의 속성을 **배포 위치**, 1033 적절 한 로캘을 변경 [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]. 예를 들어, 사용 하려면 일본어 로캘을 변경 값 1041 하 합니다. 자세한 내용은 [Microsoft에서 할당 한 로캘 Id](http://go.microsoft.com/fwlink/?LinkID=165561)합니다.  
   
 ## <a name="error-appears-when-a-workflow-project-is-deployed-on-a-clean-system"></a>클린 시스템에는 워크플로 프로젝트를 배포할 때 오류가 표시 됩니다.
  이 문제는 클린 시스템의 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]에서 워크플로 프로젝트를 배포하는 경우 발생합니다. 클린 시스템은 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 및 SharePoint를 새로 설치했지만 워크플로 프로젝트를 배포하지 않은 컴퓨터입니다.  

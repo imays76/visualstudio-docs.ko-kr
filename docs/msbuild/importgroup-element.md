@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2410314cf6f32024b711e1d2b6eeeab8d920efae
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c40fd9e5f21940be77af7dfbddf496594502641e
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885632"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50751026"
 ---
 # <a name="importgroup-element"></a>ImportGroup 요소
 선택적인 조건으로 그룹화된 `Import` 요소의 컬렉션을 포함합니다. 자세한 내용은 [Import 요소(MSBuild)](../msbuild/import-element-msbuild.md)를 참조하세요.  
@@ -67,8 +67,8 @@ ms.locfileid: "49885632"
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
     <ImportGroup>  
-        <Import Project="$(Targets1.targets) />  
-        <Import Project="$(Targets2.targets) />  
+        <Import Project="$(Targets1.targets)" />  
+        <Import Project="$(Targets2.targets)" />  
     </ImportGroup>  
 ...  
 </Project>  

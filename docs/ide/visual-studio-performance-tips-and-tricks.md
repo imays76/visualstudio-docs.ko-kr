@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5215770d362e2f1ebd21f9131b82073376c28bf6
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: e1c4e55fe6275d750d3bc3b03fb8f0ac5eec2751
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627075"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672927"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio 성능 팁과 요령
 
@@ -27,7 +27,7 @@ Visual Studio 성능 권장 사항은 드물게 발생할 수 있는 메모리 �
 
 Windows 32비트 버전에서 64비트 버전으로 시스템을 업그레이드하면 Visual Studio에서 사용 가능한 가상 메모리가 2GB에서 4GB로 확장됩니다. Visual Studio는 32비트 프로세스이지만, 이렇게 하면 훨씬 더 큰 작업 부하에 대응할 수 ​​있습니다.
 
-자세한 내용은 [메모리 한도](https://msdn.microsoft.com/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits) 및 [64비트 Windows에서 /LARGEADDRESSAWARE 사용](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/)을 참조하세요.
+자세한 내용은 [메모리 한도](/windows/desktop/Memory/memory-limits-for-windows-releases#memory_limits) 및 [64비트 Windows에서 /LARGEADDRESSAWARE 사용](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/)을 참조하세요.
 
 ## <a name="disable-automatic-file-restore"></a>자동 파일 복원 사용 안 함
 

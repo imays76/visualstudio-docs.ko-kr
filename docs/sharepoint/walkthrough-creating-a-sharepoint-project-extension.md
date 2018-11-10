@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 44bafccdb3c99032678a808ba3f82f9f14558b3e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8d68347f2b6b9f538555e05c91b15dcb045b46d6
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893431"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295984"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>연습: SharePoint 프로젝트 확장명 만들기
   이 연습에는 SharePoint 프로젝트 확장을 만드는 방법을 보여 줍니다. 프로젝트를 추가, 삭제 또는 이름이 같은 프로젝트 수준 이벤트에 응답 하는 프로젝트 확장명을 사용할 수 있습니다. 사용자 지정 속성을 추가 하거나 속성 값이 변경 될 때 응답할 수도 있습니다. 프로젝트 항목 확장 달리 프로젝트 확장명을 특정 SharePoint 프로젝트 형식과 사용 하 여 연결할 수 없습니다. 확장 로드에서 모든 종류의 SharePoint 프로젝트를 열면 프로젝트 확장을 만들면 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]합니다.  
@@ -131,7 +131,7 @@ ms.locfileid: "49893431"
   
 1.  **솔루션 탐색기**를 source.extension.vsixmanifest 파일에 대 한 바로 가기 메뉴를 열고 선택한 합니다 **엽니다** 단추입니다.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 매니페스트 디자이너에서 파일을 엽니다. 에 표시 되는 정보는 **메타 데이터** 탭에도 표시 됩니다는 **확장 및 업데이트**합니다. 모든 VSIX 패키지 extension.vsixmanifest 파일을 필요합니다. 이 파일에 대 한 자세한 내용은 참조 하세요. [VSIX 확장 스키마 1.0 참조](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)합니다.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 매니페스트 디자이너에서 파일을 엽니다. 에 표시 되는 정보는 **메타 데이터** 탭에도 표시 됩니다는 **확장 및 업데이트**합니다. 모든 VSIX 패키지 extension.vsixmanifest 파일을 필요합니다. 이 파일에 대 한 자세한 내용은 참조 하세요. [VSIX 확장 스키마 1.0 참조](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)합니다.  
   
 2.  에 **Product Name** 상자에 입력 합니다 **사용자 지정 프로젝트 속성**합니다.  
   
@@ -146,7 +146,7 @@ ms.locfileid: "49893431"
 6.  에 **형식** 목록에서 선택 **Microsoft.VisualStudio.MefComponent**합니다.  
   
     > [!NOTE]  
-    >  이 값에 해당 하는 `MEFComponent` extension.vsixmanifest 파일의 요소입니다. 이 요소는 VSIX 패키지 확장 어셈블리의 이름을 지정합니다. 자세한 내용은 [MEFComponent 요소 (VSX 스키마)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551)합니다.  
+    >  이 값에 해당 하는 `MEFComponent` extension.vsixmanifest 파일의 요소입니다. 이 요소는 VSIX 패키지 확장 어셈블리의 이름을 지정합니다. 자세한 내용은 [MEFComponent 요소 (VSX 스키마)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))합니다.  
   
 7.  에 **원본** 목록에서 선택 합니다 **현재 솔루션의 프로젝트** 옵션 단추입니다.  
   

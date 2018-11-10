@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 19792a9804072e7c6ade836b408951e2cfadd070
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2c37ab6f42be8e363dcba8a3e2aa6ef78816bff0
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910968"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296244"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>연습: 항목 템플릿, 2 부를 사용 하 여 사용자 지정 작업 프로젝트 항목 만들기
   사용자 지정 형식의 SharePoint 프로젝트 항목을 정의 하 고 Visual Studio에서 항목 템플릿을 사용 하 여 연결 후 템플릿에 대 한 마법사를 제공 하려면 수도 있습니다. 서식 파일 프로젝트에 프로젝트 항목의 새 인스턴스를 추가 하는 데 사용할 사용자 로부터 정보를 수집 하는 마법사를 사용할 수 있습니다. 정보를 수집 하는 프로젝트 항목을 초기화에 사용할 수 있습니다.  
@@ -306,7 +306,7 @@ ms.locfileid: "49910968"
   
 13. 에 **설명을** 상자에 입력 합니다 **SharePoint 개발자 센터 웹 사이트를 엽니다**합니다.  
   
-14. 에 **URL** 상자에 입력 합니다 **http://msdn.microsoft.com/sharepoint/default.aspx**를 선택한 후는 **마침** 단추.  
+14. 에 **URL** 상자에 입력 합니다 **https://docs.microsoft.com/sharepoint/dev/** 를 선택한 후는 **마침** 단추.  
   
      이라고 하는 항목을 추가 하는 visual Studio **CustomAction1** 열립니다 프로젝트에는 *Elements.xml* 파일을 편집기에서. 확인 *Elements.xml* 마법사에서 지정한 값을 포함 합니다.  
   
@@ -327,7 +327,7 @@ ms.locfileid: "49910968"
   
      합니다 **목록 설정** 페이지가 나타납니다.  
   
-4.  아래는 **통신** 선택 페이지의 위쪽 머리글를 **SharePoint 개발자 센터** 링크를 브라우저는 웹 사이트 열리는지 확인 http://msdn.microsoft.com/sharepoint/default.aspx, 한 다음 브라우저를 닫습니다.  
+4.  아래는 **통신** 선택 페이지의 위쪽 머리글를 **SharePoint 개발자 센터** 링크를 브라우저는 웹 사이트 열리는지 확인 https://docs.microsoft.com/sharepoint/dev/, 한 다음 브라우저를 닫습니다.  
   
 ## <a name="cleaning-up-the-development-computer"></a>개발 컴퓨터 정리
  프로젝트 항목의 테스트를 마친 후에 Visual Studio의 실험적 인스턴스에서 프로젝트 항목 템플릿을 제거 합니다.  

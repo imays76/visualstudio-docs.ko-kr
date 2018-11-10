@@ -18,17 +18,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b9eb1de3f18c487a2e6d3cdf3d0ce7ef95e578b3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 25a7402a8d0464152e9b1bdd9d2edcdc66824914
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49889999"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295906"
 ---
 # <a name="develop-sharepoint-solutions"></a>SharePoint 솔루션 개발
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 에서 여러 가지 SharePoint 프로젝트 형식 템플릿을 사용하여 SharePoint 사이트와 사이트 요소를 만들 수 있습니다. 사용 가능한 프로젝트 형식 목록을 참조 하세요 [SharePoint 프로젝트 및 프로젝트 항목 템플릿](../sharepoint/sharepoint-project-and-project-item-templates.md)합니다. SharePoint 프로젝트의 요소와 속성에 대한 설명은 다음과 같습니다.  
   
- SharePoint 2013 및 SharePoint 추가 기능에 대한 자세한 내용은 [SharePoint 2013](http://msdn.microsoft.com/library/jj162979.aspx) 및 [SharePoint 추가 기능 빌드](http://msdn.microsoft.com/library/office/apps/jj163230%28v=office.15%29.aspx)를 참조하세요.  
+ SharePoint 2013 및 SharePoint 추가 기능에 대한 자세한 내용은 [SharePoint 2013](https://msdn.microsoft.com/library/jj162979.aspx) 및 [SharePoint 추가 기능 빌드](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)를 참조하세요.  
   
 ## <a name="elements-of-a-sharepoint-project"></a>SharePoint 프로젝트의 요소
  SharePoint 프로젝트 아래에 있는 노드를 *SharePoint 항목*이라고 합니다. SharePoint 항목에는 *SharePoint 항목 파일*이라는 하위 파일이 하나 이상 포함될 수 있습니다(예: [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 구성 파일, .aspx 양식 등).  
@@ -97,10 +97,10 @@ ms.locfileid: "49889999"
   
 |속성 이름|설명|  
 |-------------------|-----------------|  
-|빌드 작업|파일이 빌드 및 배포 프로세스와 연결되는 방법을 지정합니다. 자세한 내용은 [파일 속성](http://msdn.microsoft.com/library/0c6xyb66(v=vs.100).aspx)을 참조하세요.|  
-|출력 디렉터리에 복사|소스 파일을 출력 디렉터리로 복사할 것인지를 지정합니다. 다음 값 중 하나입니다.<br /><br /> -   *복사 안 함*<br />-   *항상 복사*<br />-   *변경 된 내용만 복사*<br /><br /> 자세한 내용은 [파일 속성](http://msdn.microsoft.com/library/0c6xyb66(v=vs.100).aspx)을 참조하세요.|  
-|사용자 지정 도구|디자인 타임에 파일을 변환하고 변환 출력을 다른 파일에 저장하는 도구의 이름을 지정합니다. 예를 들어 데이터 집합(.[!INCLUDE[TLA2#tla_xsd](../sharepoint/includes/tla2sharptla-xsd-md.md)]) 파일에는 기본 사용자 지정 도구가 있습니다. 자세한 내용은 [파일 속성](http://msdn.microsoft.com/library/0c6xyb66(v=vs.100).aspx)을 참조하세요.|  
-|사용자 지정 도구 네임스페이스|사용자 지정 도구의 출력이 복사될 네임스페이스입니다. 자세한 내용은 [파일 속성](http://msdn.microsoft.com/library/0c6xyb66(v=vs.100).aspx)을 참조하세요.|  
+|빌드 작업|파일이 빌드 및 배포 프로세스와 연결되는 방법을 지정합니다. 자세한 내용은 [파일 속성](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\))을 참조하세요.|  
+|출력 디렉터리에 복사|소스 파일을 출력 디렉터리로 복사할 것인지를 지정합니다. 다음 값 중 하나입니다.<br /><br /> -   *복사 안 함*<br />-   *항상 복사*<br />-   *변경 된 내용만 복사*<br /><br /> 자세한 내용은 [파일 속성](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\))을 참조하세요.|  
+|사용자 지정 도구|디자인 타임에 파일을 변환하고 변환 출력을 다른 파일에 저장하는 도구의 이름을 지정합니다. 예를 들어 데이터 집합(.[!INCLUDE[TLA2#tla_xsd](../sharepoint/includes/tla2sharptla-xsd-md.md)]) 파일에는 기본 사용자 지정 도구가 있습니다. 자세한 내용은 [파일 속성](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\))을 참조하세요.|  
+|사용자 지정 도구 네임스페이스|사용자 지정 도구의 출력이 복사될 네임스페이스입니다. 자세한 내용은 [파일 속성](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\))을 참조하세요.|  
 |배포 위치|SharePoint 서버에서 파일의 정규화된 경로입니다. 이 경로는 배포 루트 및 배포 경로 하위 속성으로 구성됩니다.|  
 |배포 경로|Workflow1 같은 SharePoint 서버 파일을 파일의 상대 경로\\합니다. 파일에 대한 정규화된 경로는 *Deployment Path* 값을 *Deployment Root* 값의 끝에 연결해서 만듭니다.<br /><br /> 값을 선택 하 *RootFile* 에 대 한 합니다 *배포 유형을* 속성 변경 내용을 합니다 *Deployment Root* 속성을 \<SharePointRoot >\\의 정규화 된 경로에 결과 \<SharePointRoot > \Workflow1\\합니다. 자세한 내용은 [패키징 및 SharePoint 솔루션 배포](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)합니다.|  
 |Deployment Root|문자열. SharePoint 서버에서 파일이 배포되는 루트 폴더입니다. 예를 들어 \<SharePointRoot > \Template\Features\\\<FeatureName >\\합니다.<br /><br /> *Deployment Root* 속성 값은 *Deployment Type* 설정에 따라 결정됩니다.|  

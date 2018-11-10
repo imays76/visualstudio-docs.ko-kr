@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b28afd645351577073eb7525cf4bed321afb09c0
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 38a0cef2600234be17b80fc53ac40a828ad6e2f7
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008397"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672641"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>자습서 2: 시간이 지정된 수학 퀴즈 만들기
 
@@ -36,7 +36,7 @@ ms.locfileid: "40008397"
 
 ## <a name="tutorial-links"></a>자습서 링크
 
-퀴즈의 전체 버전을 다운로드하려면 [Complete math quiz tutorial sample](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c)(전체 수학 퀴즈 자습서 샘플)을 참조하세요.
+퀴즈의 전체 버전을 다운로드하려면 [Complete math quiz tutorial sample](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c)(전체 수학 퀴즈 자습서 샘플)을 참조하세요.
 
 > [!NOTE]
 > 이 자습서에서는 Visual C#과 Visual Basic 모두에 대해 다루고 있으므로 사용 중인 프로그래밍 언어와 관련된 정보를 참조하십시오.

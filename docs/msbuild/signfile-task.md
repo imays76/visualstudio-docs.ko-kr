@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d063528b67712dd16136bfd3edec29643868517
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 765e5b154e7787af7afae8ca1f52338cc061a598
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154848"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220751"
 ---
 # <a name="signfile-task"></a>SignFile 작업
 
@@ -73,7 +73,7 @@ ms.locfileid: "39154848"
 ```
 
 > [!NOTE]
-> 인증서 지문은 인증서의 SHA-1 해시입니다. 자세한 내용은 [신뢰할 수 있는 루트 CA 인증서의 SHA-1 해시 얻기](http://msdn.microsoft.com/en-us/dd641990-9a88-4228-a245-017797131a87)를 참조하세요.
+> 인증서 지문은 인증서의 SHA-1 해시입니다. 자세한 내용은 [신뢰할 수 있는 루트 CA 인증서의 SHA-1 해시 얻기](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc733076\(v\=ws.10\))를 참조하세요.
   
 ## <a name="see-also"></a>참고 항목  
  [작업 참조](../msbuild/msbuild-task-reference.md)   

@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 202a9ac88310656c59fa507cbb8fe271b6f1d040
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 56f50a3c50156cbd932fc7a7247fd96c4c6c2834
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813216"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296257"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>연습: 프로젝트 템플릿 1 부를 사용 하 여 사이트 열 프로젝트 항목 만들기
   SharePoint 프로젝트는 하나 이상의 SharePoint 프로젝트 항목에 대 한 컨테이너입니다. SharePoint 프로젝트 항목 형식을 사용자를 만들고 프로젝트 템플릿을 사용 하 여 연결 하 여 Visual Studio에서 SharePoint 프로젝트 시스템을 확장할 수 있습니다. 이 연습에서는 사이트 열을 만들기 위한 프로젝트 항목 형식을 정의 하 고 사이트 열 프로젝트 항목을 포함 하는 새 프로젝트를 만드는 데 사용할 수 있는 프로젝트 템플릿을 만듭니다.  
@@ -642,7 +642,7 @@ ms.locfileid: "49813216"
   
 1.  **솔루션 탐색기**를 **SiteColumnProjectItem** 프로젝트에서 매니페스트 편집기에서 source.extension.vsixmanifest 파일을 엽니다.  
   
-     Source.extension.vsixmanifest 파일에는 모든 VSIX 패키지 해야 하는 extension.vsixmanifest 파일에 대 한 기반이 됩니다. 이 파일에 대 한 자세한 내용은 참조 하세요. [VSIX 확장 스키마 1.0 참조](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)합니다.  
+     Source.extension.vsixmanifest 파일에는 모든 VSIX 패키지 해야 하는 extension.vsixmanifest 파일에 대 한 기반이 됩니다. 이 파일에 대 한 자세한 내용은 참조 하세요. [VSIX 확장 스키마 1.0 참조](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)합니다.  
   
 2.  에 **Product Name** 상자에 입력 합니다 **사이트 열**합니다.  
   
@@ -657,7 +657,7 @@ ms.locfileid: "49813216"
 6.  에 **형식** 목록에서 선택 **Microsoft.VisualStudio.ProjectTemplate**합니다.  
   
     > [!NOTE]  
-    >  이 값에 해당 하는 `ProjectTemplate` extension.vsixmanifest 파일의 요소입니다. 이 요소는 프로젝트 템플릿이 포함 된 VSIX 패키지의 하위 폴더를 식별 합니다. 자세한 내용은 [ProjectTemplate 요소 (VSX 스키마)](http://msdn.microsoft.com/en-us/87add64c-9dcd-495f-8815-209dab182cb1)합니다.  
+    >  이 값에 해당 하는 `ProjectTemplate` extension.vsixmanifest 파일의 요소입니다. 이 요소는 프로젝트 템플릿이 포함 된 VSIX 패키지의 하위 폴더를 식별 합니다. 자세한 내용은 [ProjectTemplate 요소 (VSX 스키마)](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\))합니다.  
   
 7.  에 **소스** 목록에서 선택 **현재 솔루션의 프로젝트**합니다.  
   
@@ -670,7 +670,7 @@ ms.locfileid: "49813216"
 10. 에 **형식** 목록에서 선택 **Microsoft.VisualStudio.MefComponent**합니다.  
   
     > [!NOTE]  
-    >  이 값에 해당 하는 `MefComponent` extension.vsixmanifest 파일의 요소입니다. 이 요소는 VSIX 패키지 확장 어셈블리의 이름을 지정합니다. 자세한 내용은 [MEFComponent 요소 (VSX 스키마)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551)합니다.  
+    >  이 값에 해당 하는 `MefComponent` extension.vsixmanifest 파일의 요소입니다. 이 요소는 VSIX 패키지 확장 어셈블리의 이름을 지정합니다. 자세한 내용은 [MEFComponent 요소 (VSX 스키마)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))합니다.  
   
 11. 에 **소스** 목록에서 선택 **현재 솔루션의 프로젝트**합니다.  
   

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28e103e278ab044ee9dcef8226a65afc78da9829
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 2933f29cb3668e12731e79151ba17480dda96ea5
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669348"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220557"
 ---
 # <a name="perftips"></a>PerfTips
 Visual Studio 디버거 *PerfTips* 및 디버거 통합 **진단 도구** 는 디버그하는 동안 앱의 성능을 모니터링 및 분석하는 데 도움이 됩니다.  
@@ -23,7 +23,7 @@ Visual Studio 디버거 *PerfTips* 및 디버거 통합 **진단 도구** 는 �
  디버거 통합 진단 도구는 개발하는 동안 성능 문제를 인식할 수 있는 효율적인 방법이지만 디버거가 앱 성능에 상당한 영향을 미칠 수도 있습니다. 보다 정확한 성능 데이터를 수집하려면 성능 조사의 추가 부분으로 디버거 도구 외부에서 실행되는 Visual Studio 진단 도구를 사용하는 것이 좋습니다. [디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행](../profiling/running-profiling-tools-with-or-without-the-debugger.md)을 참조하세요.  
   
 ## <a name="perftips"></a>PerfTips  
- 디버거가 중단점 또는 단계별 실행 작업에서 실행을 중지하는 경우 중단점과 이전 중단점 사이의 경과 시간이 편집기 창에 팁으로 표시됩니다. 자세한 내용은 [성능 팁: Visual Studio를 사용하여 디버그하는 동안 성능 정보 요약](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)을 참조하세요.  
+ 디버거가 중단점 또는 단계별 실행 작업에서 실행을 중지하는 경우 중단점과 이전 중단점 사이의 경과 시간이 편집기 창에 팁으로 표시됩니다. 자세한 내용은 [성능 팁: Visual Studio를 사용하여 디버그하는 동안 성능 정보 요약](https://blogs.msdn.microsoft.com/devops/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/)을 참조하세요.  
   
  ![PerfTip](../profiling/media/dbgdiag_perf_perftip.png "DBGDIAG_PERF_PerfTip")  
   

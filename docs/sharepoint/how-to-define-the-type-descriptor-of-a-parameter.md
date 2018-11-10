@@ -20,15 +20,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 586d7181c1a8eb3c94a8ad236d4ff40602378199
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ec2b0173838446c770f3323aacefebabc195c48b
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49869264"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294983"
 ---
 # <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>방법: 매개 변수의 형식 설명자 정의
-  형식 설명자는 매개 변수의 데이터 형식을 설명하는 속성을 포함합니다. 형식 설명자는 필드, 엔터티 또는 엔터티 컬렉션을 정의할 수 있습니다. 자세한 내용은 [TypeDescriptor](http://msdn.microsoft.com/library/ms543392%28v=office.12%29.aspx)합니다.  
+  형식 설명자는 매개 변수의 데이터 형식을 설명하는 속성을 포함합니다. 형식 설명자는 필드, 엔터티 또는 엔터티 컬렉션을 정의할 수 있습니다. 자세한 내용은 [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\))합니다.  
   
 ### <a name="to-define-the-type-descriptor-of-a-parameter"></a>매개 변수의 형식 설명자를 정의하려면  
   
@@ -46,7 +46,7 @@ ms.locfileid: "49869264"
   
 2.  옆의 목록에는 **TypeName** 속성을 적절 한 데이터 형식을 선택 (예를 들어 **Int32**).  
   
-     다른 선택적 매개 변수에 대 한 자세한 내용은 [TypeDescriptor](http://msdn.microsoft.com/library/ms543392%28v=office.12%29.aspx)합니다.  
+     다른 선택적 매개 변수에 대 한 자세한 내용은 [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\))합니다.  
   
 ### <a name="to-define-an-entity"></a>엔터티를 정의하려면  
   

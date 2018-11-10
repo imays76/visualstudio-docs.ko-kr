@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2762843141d1383c1fb4f7d4925b1fbe37a9298
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 5bf6de28ff98bf7a05098cabefb86b8cd5169d27
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029110"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673034"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Visual Studio 2017의 새로운 기능
 
@@ -212,7 +212,7 @@ Visual Studio에서 C++ 핵심 지침을 배포하고, C++11 및 C++ 기능에 �
 
 ![Visual Studio의 새 예외 도우미 대화 상자](../ide/media/vs2017ide-ExceptionHelper.png)
 
-자세한 내용은 [Using the New Exception Helper in Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/)(Visual Studio에서 새 예외 도우미 사용) 블로그 게시물을 참조하세요.
+자세한 내용은 [Using the New Exception Helper in Visual Studio](https://blogs.msdn.microsoft.com/devops/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/)(Visual Studio에서 새 예외 도우미 사용) 블로그 게시물을 참조하세요.
 
 #### <a name="snapshots-and-intellitrace-step-back"></a>스냅숏 및 IntelliTrace 뒤로 이동
 
@@ -264,7 +264,7 @@ UWP(Universal Windows Platform)는 Windows 10용 앱 플랫폼입니다. API 집
 
 &mdash;C#, Visual Basic, C++ 또는 JavaScript&mdash; 중에서 원하는 개발 언어를 선택하여 Windows 10 장치용 유니버설 Windows 플랫폼 앱을 만듭니다. Visual Studio 2017은 모든 장치에 대해 단일 프로젝트를 만들 수 있도록 각 언어에 UWP 앱 템플릿을 제공합니다. 작업을 마치면 Visual Studio 내에서 앱 패키지를 생성하고 Microsoft Store에 제출하여 Windows 10 장치를 사용하는 고객에게 앱을 제공할 수 있습니다.
 
-**15.5의 새로운 기능**: Visual Studio 2017 버전 15.5는 Windows 10 Fall Creators Update SDK(10.0.16299.0)를 가장 잘 지원합니다. Windows 10 Fall Creators Update는 UWP 개발자를 위해 많은 사항이 개선되었습니다. 다음은 큰 변화 중 일부입니다. 
+**15.5의 새로운 기능**: Visual Studio 2017 버전 15.5는 Windows 10 Fall Creators Update SDK(10.0.16299.0)를 가장 잘 지원합니다. Windows 10 Fall Creators Update는 UWP 개발자를 위해 많은 사항이 개선되었습니다. 다음은 큰 변화 중 일부입니다. 
 
 * **.NET Standard 2.0에 대한 지원**<br/>간소화된 앱 배포 외에, Windows 10 Fall Creators Update는 .NET Standard 2.0 지원을 제공하는 첫 번째 Windows 10 릴리스입니다. 사실상, [.NET Standard](https://blogs.msdn.microsoft.com/dotnet/2016/09/26/introducing-net-standard/)는 모든 .NET 플랫폼에서 구현할 수 있는 기본 클래스 라이브러리의 참조 구현입니다. .NET Standard의 목표는 .NET 개발자가 작업하는 모든 .NET 플랫폼 전반에서 코드를 최대한 쉽게 공유할 수 있도록 하는 것입니다.
 * **UWP와 Win32의 장점**<br/>Windows 10 플랫폼은 [데스크톱 브리지](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root)를 통해 개발자가 중점을 두는 것이 UWP, WPF, Windows Forms 또는 Xamarin 중 무엇이든 모든 .NET 개발자가 Windows 10을 더 잘 활용할 수 있도록 향상되었습니다. Visual Studio 2017 버전 15.5의 새로운 앱 패키징 프로젝트 형식을 사용하면 UWP 프로젝트에서 하듯이 WPF 또는 Windows Forms 프로젝트용 Windows 앱 패키지를 만들 수 있습니다. 앱을 패키지하면 Windows 10 앱 배포의 모든 이점과 Microsoft Store(소비자 앱) 또는 비즈니스 및 교육용 Microsoft Store를 통해 배포할 수 있는 옵션이 제공됩니다. 패키지된 앱은 데스크톱의 전체 UWP API 표면과 Win32 API 모두에 액세스할 수 있기 때문에 UWP API 및 Windows 10 기능을 사용하여 WPF 및 Windows Forms 응용 프로그램을 점진적으로 현대화할 수 있습니다. 또한 모든 Win32 기능을 갖춘 데스크톱에서 실행되는 UWP 응용 프로그램에 Win32 구성 요소를 포함할 수 있습니다.

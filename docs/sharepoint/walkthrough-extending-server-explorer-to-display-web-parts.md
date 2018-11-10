@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dc6b015058445ddf35e5d247847a40d01e691047
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6d32f76965c0dbef359e54bda114221e460a9bfd
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915817"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296387"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>연습: 웹 파트를 표시 하려면 서버 탐색기를 확장 합니다.
   Visual Studio에서 사용할 수 있습니다 합니다 **SharePoint 연결** 노드의 **서버 탐색기** SharePoint 사이트에서 구성 요소를 볼 수 있습니다. 그러나 **서버 탐색기** 기본적으로 일부 구성 요소를 표시 하지 않습니다. 이 연습에서는 확장할 예정 **서버 탐색기** SharePoint 사이트를 연결 된 각 웹 파트 갤러리에 표시 되도록 합니다.  
@@ -278,7 +278,7 @@ ms.locfileid: "49915817"
   
 1.  **솔루션 탐색기**, WebPartNode 프로젝트에서 열을 **source.extension.vsixmanifest** 매니페스트 편집기에서 파일.  
   
-     Source.extension.vsixmanifest 파일에는 모든 VSIX 패키지 해야 하는 extension.vsixmanifest 파일에 대 한 기반이 됩니다. 이 파일에 대 한 자세한 내용은 참조 하세요. [VSIX 확장 스키마 1.0 참조](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)합니다.  
+     Source.extension.vsixmanifest 파일에는 모든 VSIX 패키지 해야 하는 extension.vsixmanifest 파일에 대 한 기반이 됩니다. 이 파일에 대 한 자세한 내용은 참조 하세요. [VSIX 확장 스키마 1.0 참조](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)합니다.  
   
 2.  에 **Product Name** 상자에 입력 합니다 **서버 탐색기에 대 한 웹 파트 갤러리 노드**합니다.  
   
@@ -293,7 +293,7 @@ ms.locfileid: "49915817"
 6.  에 **형식** 목록에서 선택 **Microsoft.VisualStudio.MefComponent**합니다.  
   
     > [!NOTE]  
-    >  이 값에 해당 하는 `MefComponent` extension.vsixmanifest 파일의 요소입니다. 이 요소는 VSIX 패키지 확장 어셈블리의 이름을 지정합니다. 자세한 내용은 [MEFComponent 요소 (VSX 스키마)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551)합니다.  
+    >  이 값에 해당 하는 `MefComponent` extension.vsixmanifest 파일의 요소입니다. 이 요소는 VSIX 패키지 확장 어셈블리의 이름을 지정합니다. 자세한 내용은 [MEFComponent 요소 (VSX 스키마)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))합니다.  
   
 7.  에 **소스** 목록에서 선택 **현재 솔루션의 프로젝트**합니다.  
   
@@ -306,7 +306,7 @@ ms.locfileid: "49915817"
 10. 에 **형식** 상자에 입력 합니다 **SharePoint.Commands.v4**합니다.  
   
     > [!NOTE]  
-    >  이 요소는 Visual Studio 확장에 포함 하려는 사용자 지정 확장을 지정 합니다. 자세한 내용은 [자산 요소 (VSX 스키마)](http://msdn.microsoft.com/en-us/9fcfc098-edc7-484b-9d4c-acd17829d737)합니다.  
+    >  이 요소는 Visual Studio 확장에 포함 하려는 사용자 지정 확장을 지정 합니다. 자세한 내용은 [자산 요소 (VSX 스키마)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737)합니다.  
   
 11. 에 **원본** 목록에서 선택 합니다 **현재 솔루션의 프로젝트** 목록 항목입니다.  
   
