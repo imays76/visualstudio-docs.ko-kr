@@ -1,5 +1,5 @@
 ---
-title: Hello World | Microsoft Docs
+title: Hello World 확장 자습서 | Microsoft Docs
 ms.custom: ''
 ms.date: 07/10/2017
 ms.topic: conceptual
@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91d9c809d16a3763bed75d5de4c03bd7112c6e8a
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: e2122a98778372690990a75269be2f3087653678
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356758"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349467"
 ---
 # <a name="create-your-first-extension-hello-world"></a>첫 번째 확장 만들기: Hello World
 
@@ -30,6 +30,9 @@ ms.locfileid: "49356758"
 예를 들어 사용할지 Visual C# 사용자 지정 메뉴 단추를 "Hello World 예를 들어!" 라는 추가 하려면 다음과 같습니다.
 
 ![Hello World 명령](media/hello-world-say-hello-world.png)
+
+> [!NOTE]
+> 이 문서에서는 Windows에서 Visual Studio에 적용 됩니다. Mac 용 Visual Studio에 대 한 참조 [Mac 용 Visual Studio 확장 연습](/visualstudio/mac/extending-visual-studio-mac-walkthrough)합니다.
 
 ## <a name="prerequisites"></a>전제 조건
 
@@ -133,6 +136,6 @@ ms.locfileid: "49356758"
 
 Visual Studio 확장성을 사용 하는 기본 사항을 배웠으므로 다음과 같습니다. 여기서 자세히 알아볼 수 있습니다
 
-* [Visual Studio 확장 개발을 시작할](starting-to-develop-visual-studio-extensions.md) -샘플, 자습서입니다. 및 확장 프로그램을 게시 합니다.
+* [Visual Studio 확장 개발을 시작할](starting-to-develop-visual-studio-extensions.md) -샘플, 자습서입니다. 확장 프로그램을 게시 하 고
 * [Visual Studio 2017 SDK의 새로운 기능](what-s-new-in-the-visual-studio-2017-sdk.md) -Visual Studio 2017의 새로운 확장성 기능
 * [Visual Studio SDK 내에서](internals/inside-the-visual-studio-sdk.md) -Visual Studio 확장성의 세부 정보에 알아봅니다.

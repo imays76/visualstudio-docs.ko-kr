@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d448b9e8da383959665469983567ad94ef628192
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dea4acc347094657bdb916a7d5be386dcd54f8ad
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858838"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349558"
 ---
 # <a name="create-a-software-development-kit"></a>소프트웨어 개발 키트 만들기
 소프트웨어 개발 키트 (SDK)은 Visual Studio에서 단일 항목으로 참조할 수 있는 Api 컬렉션입니다. 합니다 **참조 관리자** 대화 상자는 프로젝트에 관련 된 모든 Sdk를 나열 합니다. 프로젝트에 SDK를 추가 하면 Api는 Visual Studio에서 사용할 수 있습니다.  
@@ -150,7 +150,7 @@ SupportedArchitectures = "x86;x64;ARM"
 SupportsMultipleVersions = "Error"  
 CopyRedistToSubDirectory = "."  
 DependsOn = "SDKB, version=2.0"  
-MoreInfo = "http://msdn.microsoft.com/MySDK">  
+MoreInfo = "https://msdn.microsoft.com/MySDK">  
 <File Reference = "MySDK.Sprint.winmd" Implementation = "XNASprintImpl.dll">  
 <Registration Type = "Flipper" Implementation = "XNASprintFlipperImpl.dll" />  
 <Registration Type = "Flexer" Implementation = "XNASprintFlexerImpl.dll" />  

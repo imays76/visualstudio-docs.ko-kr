@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fff2c2e16b86e32e561348c4f1cdc870f452858b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 579d535348a8f5f2b7c728aa4d8ad5fbb434bdda
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176189"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349350"
 ---
 # <a name="working-with-xml-data"></a>XML 데이터 사용
 
@@ -50,11 +50,11 @@ Visual Studio에서 XSLT 스타일시트를 디버깅할 수 있습니다. 디�
 
 [XSLT 디버깅](../xml-tools/debugging-xslt.md) Visual Studio 디버거를 사용 하 여 스타일 시트를 디버깅 하는 방법에 설명 합니다.
 
-[XML 표준 참조](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) XML, 문서 형식 정의 (DTD), XML 스키마 정의 언어 (XSD) 및 XSLT를 포함 하 여 XML 기술에 대 한 정보를 제공 합니다.
+[XML 표준 참조](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) XML, 문서 형식 정의 (DTD), XML 스키마 정의 언어 (XSD) 및 XSLT를 포함 하 여 XML 기술에 대 한 정보를 제공 합니다.
 
 [만들기 및 Visual Studio에서 데이터 집합을 구성](../data-tools/create-and-configure-datasets-in-visual-studio.md) 데이터 집합 만들기에 대 한 디자인 타임 도구 설명을 제공 합니다.
 
-[관리 코드에서 XML 웹 서비스](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196) 만들기 및 XML 웹 서비스를 배포 하는 방법 및 XML 웹 서비스에 액세스 하는 방법에 설명 합니다.
+[관리 코드에서 XML 웹 서비스](/previous-versions/visualstudio/visual-studio-2008/xy59yt45\(v\=vs.90\)) 만들기 및 XML 웹 서비스를 배포 하는 방법 및 XML 웹 서비스에 액세스 하는 방법에 설명 합니다.
 
 ## <a name="see-also"></a>참고자료
 

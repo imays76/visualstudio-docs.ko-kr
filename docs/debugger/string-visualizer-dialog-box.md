@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 689889e98a5a9b69a49e73ccea73f30fc3c25249
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e2204f10711db96033976cf7b4f7bd3639daf422
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274315"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349090"
 ---
 # <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>Visual Studio에서 문자열 시각화 도우미에서 문자열 보기
 
@@ -43,9 +43,9 @@ Visual Studio에서 디버깅 하는 동안에 기본 제공 문자열 시각화
 
 ## <a name="view-string-visualizer-data"></a>문자열 시각화 도우미 데이터 보기
 
-문자열 시각화 도우미 창에서 합니다 **식** 변수나 식을 마우스로 가리키면 하는 필드 표시 및 **값** 필드는 문자열 값을 보여 줍니다. 
+문자열 시각화 도우미 창에서 합니다 **식** 변수나 식을 마우스로 가리키면 하는 필드 표시 및 **값** 필드는 문자열 값을 보여 줍니다.
 
-Blank **값** 선택한 시각화 도우미는 문자열을 인식할 수 없습니다 것을 의미 합니다. 예를 들어 합니다 **XML 시각화 도우미** 는 빈 값을 보여 줍니다 **값** 없는 XML 태그를 사용 하 여 텍스트 문자열 또는 JSON 문자열에 대 한 합니다. 
+Blank **값** 선택한 시각화 도우미는 문자열을 인식할 수 없습니다 것을 의미 합니다. 예를 들어 합니다 **XML 시각화 도우미** 는 빈 값을 보여 줍니다 **값** 없는 XML 태그를 사용 하 여 텍스트 문자열 또는 JSON 문자열에 대 한 합니다.
 
 인식할 수 없습니다. 선택한 시각화 도우미는 문자열을 보려면 선택 합니다 **텍스트 시각화 도우미**합니다. 합니다 **텍스트 시각화 도우미** 일반 텍스트를 보여 줍니다.
 
@@ -67,5 +67,7 @@ Blank **값** 선택한 시각화 도우미는 문자열을 인식할 수 없습
 
 ![HTML 문자열 시각화 도우미](../debugger/media/dbg-string-visualizers-html.png "HTML 문자열 시각화 도우미")
 
-## <a name="see-also"></a>참고자료  
- [사용자 지정 시각화 도우미 (C#, Visual Basic) 만들기](../debugger/create-custom-visualizers-of-data.md)
+## <a name="see-also"></a>참고자료
+
+- [사용자 지정 시각화 도우미 (C#, Visual Basic) 만들기](../debugger/create-custom-visualizers-of-data.md)
+- [Mac 용 Visual Studio에서 데이터 시각화](/visualstudio/mac/data-visualizations)

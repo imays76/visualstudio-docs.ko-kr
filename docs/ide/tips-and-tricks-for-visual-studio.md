@@ -1,6 +1,6 @@
 ---
 title: Visual Studio 바로 가기 키
-ms.date: 06/21/2017
+ms.date: 11/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cc99820eded646d745d54e50fb58917a2c15b094
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: cde519515782f453a8a60894a8bcc6dc6c714cc1
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321283"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220855"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Visual Studio의 바로 가기 키
 
@@ -73,6 +73,11 @@ ms.locfileid: "44321283"
 
 |명령|바로 가기|버전 가용성|
 |-|-|-|
+|전체로 이동|**Ctrl**+**T**|
+|최근에 사용한 파일로 이동|**Ctrl**+**T**,**R**|
+|다중 캐럿 다중 삽입 지점|**Ctrl**+**Alt**+**클릭**|
+|다중 캐럿 추가 일치 선택 영역|**Shift**+**Alt**+**Ins**|
+|문서 서식|**Ctrl**+**K**,**D**|Visual Studio 2017 버전 15.8|
 |IntelliSense 제안 모드|**Ctrl**+**Alt**+**스페이스**(토글)||
 |IntelliSense 강제 표시|**Ctrl**+**J**||
 |빠른 작업|**Ctrl**+**.**||
@@ -95,6 +100,9 @@ ms.locfileid: "44321283"
 |여러 정의 피킹(Peeking) 창 간에 이동|**Ctrl**+**Alt**+**-** 및 **Ctrl**+**Alt**+**=**||
 |여러 결과 피킹 간에 이동|**F8** 및 **Shift**+**F8**||
 |코드 편집기 창 및 정의 피킹(Peeking) 창 간에 전환|**Shift**+**Esc**||
+|포함 블록으로 이동|**Ctrl**+**Alt**+**위쪽 화살표**|
+|다음/이전 문제로 이동|**Alt**+**PgUp**/**PgDn**|
+|바로 가기 탐색 메뉴|**Alt**+**`**|
 
 ## <a name="toolbars"></a>도구 모음
 
@@ -128,4 +136,4 @@ ms.locfileid: "44321283"
 
 - [접근성 팁과 요령](../ide/reference/accessibility-tips-and-tricks.md)
 - [바로 가기 키(Azure DevOps Services 및 TFS)](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts)
-- [Visual Studio 팁과 요령 블로그](http://blogs.msdn.com/b/zainnab)
+- [Visual Studio 팁과 요령 블로그](https://blogs.msdn.com/b/zainnab)
