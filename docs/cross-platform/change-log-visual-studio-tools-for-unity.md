@@ -10,19 +10,19 @@ ms.author: tglee
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: cd23bbf09e79ac4f7763a563e361954d9cfde072
-ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
+ms.openlocfilehash: da2e91e15572a9904115926447523d8dba23a36a
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48120681"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000728"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>변경 로그(Visual Studio Tools for Unity, Windows)
 Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 ## <a name="3807"></a>3.8.0.7
  릴리스 날짜: 2018년 9월 20일
- 
+
 ### <a name="bug-fixes"></a>버그 수정
 
 -   **디버거:**
@@ -31,7 +31,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 ## <a name="3806"></a>3.8.0.6
  릴리스 날짜: 2018년 8월 27일
- 
+
 ### <a name="bug-fixes"></a>버그 수정
 
 -   **통합:**
@@ -40,7 +40,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 ## <a name="3805"></a>3.8.0.5
  릴리스 날짜: 2018년 8월 20일
- 
+
 ### <a name="bug-fixes"></a>버그 수정
 
 -   **통합:**
@@ -49,13 +49,13 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 ## <a name="3804"></a>3.8.0.4
  릴리스 날짜: 2018년 8월 14일
- 
+
 ### <a name="new-features"></a>새 기능
 
 -   **평가:**
 
     -   포인터 값에 대한 지원이 추가되었습니다.
-    
+
     -   제네릭 메서드에 대한 지원이 추가되었습니다.
 
 ### <a name="bug-fixes"></a>버그 수정
@@ -66,7 +66,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 ## <a name="3803"></a>3.8.0.3
  릴리스 날짜: 2018년 7월 24일
- 
+
 ### <a name="bug-fixes"></a>버그 수정
 
 -   **Project Generation:**
@@ -75,24 +75,24 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 ## <a name="3802"></a>3.8.0.2
  릴리스 날짜: 2018년 7월 7일
- 
+
 ### <a name="bug-fixes"></a>버그 수정
 
 -   **Project Generation:**
 
     -   Unity 성능 버그에 대한 일시적인 해결 방법: 프로젝트를 생성할 때 MonoIslands를 캐시합니다.
-    
+
 ## <a name="3801"></a>3.8.0.1
  릴리스 날짜: 2018년 6월 26일
- 
+
 ### <a name="new-features"></a>새 기능
 
 -   **디버깅:**
 
     -   UserLog 및 UserBreak 명령에 대한 지원이 추가되었습니다.
-    
+
     -   지연 형식 로드가 추가되었습니다(네트워크 부하 및 디버거 응답 대기 시간 최적화).
-       
+
 ### <a name="bug-fixes"></a>버그 수정
 
 -   **평가:**
@@ -101,19 +101,19 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 ## <a name="3800"></a>3.8.0.0
  릴리스 날짜: 2018년 5월 30일
- 
+
 ### <a name="new-features"></a>새 기능
 
 -   **디버깅:**
 
     -   비동기 구문에서 변수를 표시하기 위한 지원이 추가되었습니다.
-    
+
     -   컴파일러 구문에서 경고를 방지하기 위해 중단점을 설정하는 경우 중첩된 형식을 처리하기 위한 지원이 추가되었습니다.
-    
+
 -   **통합:**
 
     -   셰이더에 대한 TextMate 문법에 대한 지원이 추가되었습니다(C++ 워크로드는 셰이더 코드 색 지정에 더 이상 필요하지 않음).
-    
+
 ### <a name="bug-fixes"></a>버그 수정
 
 -   **Project Generation:**
@@ -137,15 +137,15 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 -   **디버깅:**
 
     -   오케스트레이션된 디버깅(동일한 Visual Studio 세션으로 여러 플레이어/편집기 디버깅)에 대한 지원이 추가되었습니다.
-    
+
     -   Android USB 플레이어 디버깅에 대한 지원이 추가되었습니다.
-    
+
     -   UWP/IL2CPP 플레이어 디버깅에 대한 지원이 추가되었습니다.
 
 -   **평가:**
 
     -   16진수 지정자에 대한 지원이 추가되었습니다.
-    
+
     -   조사식 창 평가 환경이 개선되었습니다.
 
 ### <a name="bug-fixes"></a>버그 수정
@@ -841,9 +841,9 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 ### <a name="bug-fixes"></a>버그 수정
 
--   Visual Studio 테마 처리 문제를 수정합니다. 이전에는 검은색 테마의 대화 상자가 비어 있는 것처럼 표시될 수 있었습니다(연결 문제 [#932637](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/932637/) 및 [#936439](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/936439/)).
+-   Visual Studio 테마 처리 문제를 수정합니다. 이전에는 검은색 테마의 대화 상자가 비어 있는 것처럼 표시될 수 있었습니다.
 
--   Unity를 다시 컴파일하는 동안 디버거를 연결할 때 Unity 중지를 수정합니다(연결 문제 [#947119](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/947119/) 및 [#969211](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/969211/)).
+-   Unity를 다시 컴파일하는 동안 디버거를 연결하는 경우 Unity 중지를 수정합니다.
 
 -   다른 시스템에서 컴파일된 원격 편집기 또는 플레이어를 디버그하는 경우의 중단점 문제를 수정합니다.
 
@@ -853,7 +853,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 -   범위 밖에 표시되는 라이브 변수를 방지하기 위해 디버거에서의 변수 범위 처리를 수정합니다.
 
--   디버거의 식 계산에서 정적 멤버 조회 문제를 수정합니다(연결 문제 [#953379](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/953379/)).
+-   디버거의 식 계산에서 정적 멤버 조회 문제를 수정합니다.
 
 -   정적 필드 및 속성을 표시하기 위해 디버거의 식 계산에서 유형 표시를 수정합니다.
 

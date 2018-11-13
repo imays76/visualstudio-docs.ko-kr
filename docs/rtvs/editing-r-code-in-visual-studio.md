@@ -1,7 +1,7 @@
 ---
 title: R 코드 편집
 description: Visual Studio는 모든 기능과 확장 사용 기능을 유지하면서 R에 맞게 조정된 편집 환경을 제공합니다.
-ms.date: 01/24/2018
+ms.date: 11/05/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-rtvs
 ms.topic: conceptual
@@ -10,16 +10,16 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 9eef75c505cb3ed41e24f99e08468512e424884a
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: c1d44e6d316db2ddce799784169a11a06578fe7f
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235464"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220881"
 ---
 # <a name="edit-r-code-in-visual-studio"></a>Visual Studio에서 R 코드 편집
 
-RTVS(Visual Studio용 R 도구)에서는 모든 기능과 확장 사용 기능을 유지하면서 특히 R에 맞게 Visual Studio 편집 환경을 조정합니다. 예를 들어 VIM 키 바인딩을 원하는 경우 Visual Studio 갤러리에서 무료 [VsVim 확장](https://visualstudiogallery.msdn.microsoft.com/59ca71b3-a4a3-46ca-8fe1-0e90e3f79329)을 설치할 수 있습니다.
+RTVS(Visual Studio용 R 도구)에서는 모든 기능과 확장 사용 기능을 유지하면서 특히 R에 맞게 Visual Studio 편집 환경을 조정합니다. 예를 들어 VIM 키 바인딩을 원하는 경우 Visual Studio Marketplace에서 체험용 [VsVim 확장](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)을 설치할 수 있습니다.
 
 이 문서의 기능 외에도 [IntelliSense](r-intellisense.md), [Lin](linting-r-code.md), [코드 조각](code-snippets-for-r.md) 및 [R Markdown](rmarkdown-with-r-in-visual-studio.md)을 참조하세요.
 

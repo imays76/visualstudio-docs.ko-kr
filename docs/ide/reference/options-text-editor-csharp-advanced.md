@@ -1,6 +1,6 @@
 ---
 title: 옵션, 텍스트 편집기, C#, 고급
-ms.date: 11/04/2016
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 16c92111fc29071447d4af5e736b881fa7c7a769
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: 7cfbc6d57e5bfd3c6a8f317967448039a9b3f5e4
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356745"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670717"
 ---
 # <a name="options-text-editor-c-advanced"></a>옵션, 텍스트 편집기, C#, 고급
 
@@ -36,7 +36,7 @@ ms.locfileid: "49356745"
 
 - using 정렬 시 ‘System’ 지시문 먼저 배치
 
-   선택한 경우, 마우스 오른쪽 단추 클릭 메뉴의 **using 제거 및 정렬** 명령은 `using` 지시문을 정렬하고 ‘시스템’ 네임스페이스를 목록의 맨 위에 배치합니다.
+   선택한 경우, 마우스 오른쪽 단추 클릭 메뉴의 **using 제거 및 정렬** 명령은 `using` 지시문을 정렬하고 '시스템' 네임스페이스를 목록의 맨 위에 배치합니다.
 
    정렬 이전:
 
@@ -89,9 +89,10 @@ ms.locfileid: "49356745"
    using System.Linq;
    ```
    
-- 참조 어셈블리 및 NuGet 패키지의 형식에 대한 using 추가 
+- 참조 어셈블리의 형식에 대한 using 제안 
+- NuGet 패키지의 형식에 대한 using 제안 
 
-   선택한 경우, [빠른 작업](../quick-actions.md)을 사용하여 NuGet 패키지를 설치하고 참조되지 않은 형식에 대한 `using` 지시문을 추가할 수 있습니다.
+   이러한 옵션을 선택한 경우 [빠른 작업](../quick-actions.md)을 사용하여 NuGet 패키지를 설치하고 참조되지 않은 형식에 대한 `using` 지시문을 추가할 수 있습니다.
 
    ![Visual Studio의 NuGet 패키지 설치 빠른 작업](media/nuget-lightbulb.png)
   
@@ -106,6 +107,16 @@ ms.locfileid: "49356745"
 - 개요 모드로 파일 열기
 
    이 옵션을 선택하면 축소 가능한 코드 블록을 만드는 코드 파일이 자동으로 요약됩니다. 파일이 처음 열리면 #regions 블록 및 비활성 코드 블록이 축소됩니다.
+
+- 프로시저 줄 구분선 표시
+
+   텍스트 편집기가 프로시저의 시각적 범위를 표시합니다. 다음 표에 나열된 위치에서 프로젝트의 *.vb* 소스 파일에 줄이 그려집니다.
+
+   |.vb 소스 파일 내 위치|선 위치의 예|
+   |---------------------------------|------------------------------|
+   |블록 선언 구문의 닫기 뒤|-   클래스, 구조체, 모듈, 인터페이스 또는 열거형의 끝<br />-   속성, 함수 또는 하위 뒤<br />-   속성에서 get 및 set 절 사이 아님|
+   |일련의 한 줄 구문 뒤|-   가져오기 문 뒤, 클래스 파일에서 형식 정의 앞<br />-   클래스에서 선언된 모든 프로시저 뒤, 프로시저 앞|
+   |한 줄 선언 뒤(블록 수준 선언 외)|-   가져오기 문, 상속 문, 변수 선언, 이벤트 선언, 대리자 선언 및 DLL 선언 문에 이어서|
 
 ## <a name="editor-help"></a>편집기 도움말
 

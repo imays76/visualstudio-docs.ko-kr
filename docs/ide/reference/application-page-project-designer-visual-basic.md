@@ -1,6 +1,6 @@
 ---
-title: Application Page, Project Designer (Visual Basic)
-ms.date: 11/04/2016
+title: VB 프로젝트 속성의 응용 프로그램 페이지
+ms.date: 10/30/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62cbae6115b8268adbb1e2f9d6c27df8bf94a28b
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 4ceb1612ee678a005cba0be0cfb44337c126cb71
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38800735"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670964"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 
 프로젝트 디자이너의 **응용 프로그램** 페이지를 사용하여 프로젝트의 응용 프로그램 설정과 속성을 지정할 수 있습니다.
 
-**응용 프로그램** 페이지에 액세스하려면 **솔루션 탐색기**에서 프로젝트 노드(**솔루션** 노드 아님)를 선택합니다. 그런 다음, 메뉴 모음에서 **프로젝트** > **속성**을 선택합니다. 프로젝트 디자이너가 나타나면 **응용 프로그램** 탭을 선택합니다.
+**응용 프로그램** 페이지에 액세스하려면 **솔루션 탐색기**에서 프로젝트 노드(**솔루션** 노드 아님)를 선택합니다. 그런 다음, 메뉴 모음에서 **프로젝트** > **속성**을 선택합니다. **프로젝트 디자이너**가 나타나면 **응용 프로그램** 탭을 선택합니다.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -36,7 +36,11 @@ ms.locfileid: "38800735"
 
 ### <a name="assembly-name"></a>어셈블리 이름
 
-어셈블리 매니페스트가 포함될 출력 파일의 이름을 지정합니다. 이 속성을 변경하면 **출력 이름** 속성도 변경됩니다. [/out(Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/out) 컴파일러 스위치를 사용하여 명령 프롬프트에서 출력 파일의 이름을 지정할 수도 있습니다. 프로그래밍 방식으로 이 속성에 액세스하는 방법에 대한 자세한 내용은 <xref:VSLangProj.ProjectProperties.AssemblyName%2A>을 참조하세요.
+어셈블리 매니페스트가 포함될 출력 파일의 이름을 지정합니다. 이 속성을 변경하면 **출력 이름** 속성도 변경됩니다.
+
+[/out(Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/out) 컴파일러 스위치를 사용하여 명령 프롬프트에서 출력 파일의 이름을 지정할 수도 있습니다.
+
+프로그래밍 방식으로 이 속성에 액세스하는 방법에 대한 자세한 내용은 <xref:VSLangProj.ProjectProperties.AssemblyName%2A>을 참조하세요.
 
 ### <a name="root-namespace"></a>루트 네임스페이스
 
@@ -45,7 +49,7 @@ ms.locfileid: "38800735"
 **루트 네임스페이스**의 선택을 취소하는 경우 코드에서 프로젝트의 네임스페이스 구조를 지정할 수 있습니다.
 
 > [!NOTE]
-> [Namespace 문](/dotnet/visual-basic/language-reference/statements/namespace-statement)에 Global 키워드를 사용하는 경우 프로젝트의 루트 네임스페이스 외부에서 네임스페이스를 정의할 수 있습니다. **루트 네임스페이스**의 선택을 취소하면 `Global`이 최상위 네임스페이스가 되므로 `Namespace` 문에 `Global` 키워드가 필요하지 않습니다. 자세한 내용은 [Visual Basic의 네임스페이스](/dotnet/visual-basic/programming-guide/program-structure/namespaces)에서 "Namespace 문의 Global 키워드"를 참조하세요.
+> [네임스페이스 명령문](/dotnet/visual-basic/language-reference/statements/namespace-statement)에서 `Global` 키워드를 사용하는 경우 프로젝트의 루트 네임스페이스 외부에서 네임스페이스를 정의할 수 있습니다. **루트 네임스페이스**의 선택을 취소하면 `Global`이 최상위 네임스페이스가 되므로 `Namespace` 문에 `Global` 키워드가 필요하지 않습니다. 자세한 내용은 [Visual Basic의 네임스페이스](/dotnet/visual-basic/programming-guide/program-structure/namespaces)에서 "Namespace 문의 Global 키워드"를 참조하세요.
 
 코드에서 네임스페이스를 만드는 방법에 대한 자세한 내용은 [Namespace 문](/dotnet/visual-basic/language-reference/statements/namespace-statement)을 참조하세요.
 
@@ -66,20 +70,17 @@ ms.locfileid: "38800735"
 
 ### <a name="application-type"></a>응용 프로그램 유형
 
-빌드할 응용 프로그램 종류를 지정합니다. Windows 8.x 앱의 경우 **Windows Store 앱**, **클래스 라이브러리** 또는 **WinMD 파일**을 지정할 수 있습니다. 다른 응용 프로그램 종류의 경우 대부분 **Windows 응용 프로그램**, **콘솔 응용 프로그램**, **클래스 라이브러리**, **Windows 서비스** 또는 **웹 컨트롤 라이브러리**를 지정할 수 있습니다.
+빌드할 응용 프로그램 종류를 지정합니다. 값은 프로젝트 형식에 따라 달라집니다. 예를 들어 **Windows Forms 앱**의 경우 대부분 **Windows Forms 응용 프로그램**, **클래스 라이브러리**, **콘솔 응용 프로그램**, **Windows 서비스** 또는 **웹 컨트롤 라이브러리**를 지정할 수 있습니다.
 
 웹 응용 프로그램 프로젝트의 경우 **클래스 라이브러리**를 지정해야 합니다.
 
-**WinMD 파일** 옵션을 지정하는 경우 유형을 Windows 런타임 프로그래밍 언어로 프로젝션할 수 있습니다. 프로젝트의 출력을 WinMD 파일로 패키징하면 여러 언어로 응용 프로그램을 코딩한 후 모두 동일한 언어로 작성한 것처럼 코드가 상호 운용되도록 할 수 있습니다. [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] 앱을 포함하여 Windows 런타임 라이브러리를 대상으로 하는 솔루션에 대해 **WinMD 파일** 옵션을 사용할 수 있습니다. 자세한 내용은[C# 및 Visual Basic으로 Windows 런타임 구성 요소 만들기](/windows/uwp/winrt-components/creating-windows-runtime-components-in-csharp-and-visual-basic)를 참조하세요.
-
-> [!NOTE]
-> Windows 런타임은 어떤 언어에서 사용하든 네이티브 개체로 나타나도록 유형을 프로젝션할 수 있습니다. 예를 들어 Windows 런타임과 상호 작용하는 JavaScript 응용 프로그램에서는 JavaScript 개체 집합으로 사용되고, C# 응용 프로그램에서는 라이브러리가 .NET 개체 컬렉션으로 사용됩니다. 프로젝트의 출력을 WinMD 파일로 패키징하면 Windows 런타임에서 사용되는 것과 동일한 기술을 이용할 수 있습니다.
-
 **응용 프로그램 종류** 속성에 대한 자세한 내용은 [/target(Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/target)을 참조하세요. 프로그래밍 방식으로 해당 속성에 액세스하는 방법에 대한 자세한 내용은 <xref:VSLangProj.ProjectProperties.OutputType%2A>을 참조하세요.
 
-### <a name="icon"></a>아이콘
+### <a name="auto-generate-binding-redirects"></a>바인딩 리디렉션 자동 생성
 
-프로그램 아이콘으로 사용할 .ico 파일을 설정합니다. **\<찾아보기...>** 를 선택하여 기존 그래픽을 찾습니다. 자세한 내용은 [/win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon)(또는 [/win32icon(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option))을 참조하세요. 프로그래밍 방식으로 이 속성에 액세스하려면 <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>을 참조하세요.
+앱 또는 해당 구성 요소가 동일한 어셈블리의 버전을 두 개 이상 참조하는 경우 프로젝트에 바인딩 리디렉션이 추가됩니다. 프로젝트 파일에서 바인딩 리디렉션을 수동으로 정의하려는 경우 **바인딩 리디렉션 자동 생성**의 선택을 취소합니다. 이 확인란은 Visual Studio 2017 버전 15.7에서 도입되었습니다.
+
+리디렉션에 대한 자세한 내용은 [어셈블리 버전 리디렉션](/dotnet/framework/configure-apps/redirect-assembly-versions)을 참조하세요.
 
 ### <a name="startup-form--startup-object--startup-uri"></a>시작 폼/시작 개체/시작 URI
 
@@ -92,6 +93,10 @@ ms.locfileid: "38800735"
 **응용 프로그램 프레임워크 사용**의 선택이 취소된 경우 이 목록은 **시작 개체**가 되고 `Sub Main`을 포함하는 폼과 클래스 또는 모듈을 둘 다 표시합니다.
 
 **시작 개체**는 응용 프로그램 로드 시 호출할 진입점을 정의합니다. 일반적으로 응용 프로그램의 기본 폼이나 응용 프로그램 시작 시 실행되어야 하는 `Sub Main` 프로시저로 설정됩니다. 클래스 라이브러리에 진입점이 없기 때문에 이 속성의 유일한 옵션은 **(없음)** 입니다. 자세한 내용은 [/main](/dotnet/visual-basic/reference/command-line-compiler/main)을 참조하세요. 프로그래밍 방식으로 이 속성에 액세스하려면 <xref:VSLangProj.ProjectProperties.StartupObject%2A>을 참조하세요.
+
+### <a name="icon"></a>아이콘
+
+프로그램 아이콘으로 사용할 .ico 파일을 설정합니다. **\<찾아보기...>** 를 선택하여 기존 그래픽을 찾습니다. 자세한 내용은 [/win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon)(또는 [/win32icon(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option))을 참조하세요. 프로그래밍 방식으로 이 속성에 액세스하려면 <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>을 참조하세요.
 
 ### <a name="assembly-information"></a>어셈블리 정보
 
@@ -107,7 +112,7 @@ ms.locfileid: "38800735"
 
 ### <a name="view-windows-settings"></a>Windows 설정 보기
 
-이 단추를 클릭하면 app.manifest 파일이 생성되고 열립니다. Visual Studio는 이 파일을 사용하여 응용 프로그램에 대한 매니페스트 데이터를 생성합니다. 그런 다음 app.manifest의 `<requestedExecutionLevel>` 태그를 다음과 같이 수정하여 UAC 요청된 실행 수준을 설정합니다.
+이 단추를 클릭하면 *app.manifest* 파일이 생성되고 열립니다. Visual Studio는 이 파일을 사용하여 응용 프로그램에 대한 매니페스트 데이터를 생성합니다. 그런 다음, *app.manifest*의 `<requestedExecutionLevel>` 태그를 다음과 같이 수정하여 UAC 요청된 실행 수준을 설정합니다.
 
 `<requestedExecutionLevel level="asInvoker" />`
 
@@ -115,9 +120,12 @@ ClickOnce는 `asInvoker` 수준이나 가상화된 모드(매니페스트 생성
 
 매니페스트 생성에 대한 자세한 내용은 [Windows Vista의 ClickOnce 배포](../../deployment/clickonce-deployment-on-windows-vista.md)를 참조하세요.
 
-## <a name="windows-application-framework-properties"></a>Windows 응용 프로그램 프레임워크 속성
+## <a name="windows-application-framework-properties"></a>Windows 애플리케이션 프레임워크 속성
 
-다음 설정은 **Windows 응용 프로그램 프레임워크 속성** 섹션에서 사용할 수 있습니다. 이러한 옵션은 **응용 프로그램 프레임워크 사용** 확인란이 선택된 경우에만 사용할 수 있습니다. 다음 섹션에서는 WPF(Windows Presentation Foundation) 응용 프로그램에 대한 **Windows 응용 프로그램 프레임워크 속성** 설정을 설명합니다.
+다음 설정은 **Windows 응용 프로그램 프레임워크 속성** 섹션에서 사용할 수 있습니다. 이러한 옵션은 **응용 프로그램 프레임워크 사용** 확인란이 선택된 경우에만 사용할 수 있습니다.
+
+> [!TIP]
+> 다음 섹션에서는 WPF(Windows Presentation Foundation) 앱에 특정된 **Windows 애플리케이션 프레임워크 속성** 설정을 설명합니다.
 
 ### <a name="enable-xp-visual-styles"></a>XP 비주얼 스타일 사용
 
@@ -153,13 +161,13 @@ Windows 인증을 사용하여 현재 로그온한 사용자를 식별하도록 
 
 응용 프로그램 프레임워크 이벤트 `Startup`, `Shutdown`, `UnhandledException`, `StartupNextInstance` 및 `NetworkAvailabilityChanged`에 대한 이벤트를 작성할 수 있는 이벤트 코드 파일을 표시하려면 이 단추를 클릭합니다. 특정 응용 프로그램 프레임워크 메서드를 재정의할 수도 있습니다. 예를 들어 `OnInitialize`를 재정의하여 시작 화면의 표시 동작을 변경할 수 있습니다.
 
-## <a name="windows-application-framework-properties-for-windows-presentation-foundation-wpf-applications"></a>WPF(Windows Presentation Foundation) 응용 프로그램에 대한 Windows 응용 프로그램 프레임워크 속성
+## <a name="windows-application-framework-properties-for-windows-presentation-foundation-wpf-apps"></a>WPF(Windows Presentation Foundation) 앱에 대한 Windows 애플리케이션 프레임워크 속성
 
-프로젝트가 Windows Presentation Foundation 응용 프로그램인 경우 **Windows 응용 프로그램 프레임워크 속성** 섹션에서 다음 설정을 사용할 수 있습니다. 이러한 옵션은 **응용 프로그램 프레임워크 사용** 확인란이 선택된 경우에만 사용할 수 있습니다. 이 표에 나열된 옵션은 WPF 응용 프로그램 또는 WPF 브라우저 응용 프로그램에만 사용할 수 있습니다. WPF 사용자 정의 컨트롤 또는 사용자 지정 컨트롤 라이브러리에는 사용할 수 없습니다.
+프로젝트가 WPF(Windows Presentation Foundation) 앱인 경우 **Windows 애플리케이션 프레임워크 속성** 섹션에서 다음 설정을 사용할 수 있습니다. 이러한 옵션은 **응용 프로그램 프레임워크 사용** 확인란이 선택된 경우에만 사용할 수 있습니다. 이 표에 나열된 옵션은 WPF 또는 WPF 브라우저 응용 프로그램에만 사용할 수 있습니다. WPF 사용자 정의 컨트롤 또는 사용자 지정 컨트롤 라이브러리에는 사용할 수 없습니다.
 
 ### <a name="shutdown-mode"></a>종료 모드
 
-이 속성은 Windows Presentation Foundation 응용 프로그램에만 적용됩니다.
+이 속성은 WPF(Windows Presentation Foundation) 응용 프로그램에만 적용됩니다.
 
 <xref:System.Windows.Application.Shutdown%2A>을 명시적으로 호출할 때 응용 프로그램이 종료되도록 지정하려면 **명시적으로 종료할 때**를 선택합니다.
 
@@ -171,10 +179,10 @@ Windows 인증을 사용하여 현재 로그온한 사용자를 식별하도록 
 
 ### <a name="edit-xaml"></a>XAML 편집
 
-XAML 편집기에서 응용 프로그램 정의 파일(Application.xaml)을 열고 수정하려면 이 단추를 클릭합니다. 이 단추를 클릭하면 응용 프로그램 정의 노드에서 Application.xaml이 열립니다. 리소스 정의 등의 특정 작업을 수행하려면 이 파일을 편집해야 할 수도 있습니다. 응용 프로그램 정의 파일이 없는 경우 프로젝트 디자이너에서 새로 만듭니다.
+이 단추를 클릭하면 XAML 편집기에서 응용 프로그램 정의 파일(Application.xaml)을 엽니다. 이 단추를 클릭하면 응용 프로그램 정의 노드에서 *Application.xaml*이 열립니다. 리소스 정의 등의 특정 작업을 수행하려면 이 파일을 편집해야 할 수도 있습니다. 응용 프로그램 정의 파일이 없는 경우 프로젝트 디자이너에서 새로 만듭니다.
 
 ### <a name="view-application-events"></a>응용 프로그램 이벤트 보기
 
-코드 편집기에서 `Application` partial 클래스 파일(Application.xaml.vb)을 표시하려면 이 단추를 클릭합니다. 파일이 없는 경우 프로젝트 디자이너에서 적절한 클래스 이름과 네임스페이스를 사용하여 새로 만듭니다.
+이 단추를 클릭하면 코드 편집기에서 `Application` 클래스 파일(*Application.xaml.vb*)을 엽니다. 파일이 없는 경우 프로젝트 디자이너에서 적절한 클래스 이름과 네임스페이스를 사용하여 새로 만듭니다.
 
 <xref:System.Windows.Application> 개체는 특정 응용 프로그램 상태가 변경될 때(예: 응용 프로그램 시작 또는 종료 시) 이벤트를 발생시킵니다. 이 클래스가 노출하는 이벤트의 전체 목록은 <xref:System.Windows.Application>을 참조하세요. 이러한 이벤트는 `Application` partial 클래스의 사용자 코드 섹션에서 처리됩니다.

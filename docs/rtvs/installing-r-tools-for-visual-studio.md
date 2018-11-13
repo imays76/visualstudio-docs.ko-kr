@@ -10,12 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 1b5cc415d95377cdca0d44c31ed2c3b84cd11c5c
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 4fdf7cb791339350ff9644d0f727e3adc299add6
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36297618"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220907"
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>Visual Studio용 R 도구를 설치하는 방법
 
@@ -76,10 +76,11 @@ Visual Studio 2015용 RTVS는 `%ProgramFiles(x86)%\Microsoft Visual Studio 14\Co
 
 오프라인 설치는 인터넷에 연결되지 않은 컴퓨터에 적합합니다.
 
-1. 지침에 따라 사용 중인 Visual Studio 버전용 오프라인 설치 관리자를 만듭니다.
+1. [Visual Studio 2017의 오프라인 설치 만들기](../install/create-an-offline-installation-of-visual-studio.md)로 이동합니다.
 
-    - [Visual Studio 2017](../install/create-an-offline-installation-of-visual-studio.md)
-    - [Visual Studio 2015](https://msdn.microsoft.com/library/mt706497.aspx)
+1. Visual Studio 2015를 사용하는 경우 목차 위의 선택기에서 **2015**를 선택합니다.
+
+1. 웹 페이지에서 오프라인 설치를 만들기 위한 지침을 수행하세요.
 
 1. Visual Studio 2015의 경우 [https://aka.ms/rtvs-current-zip](https://aka.ms/rtvs-current-zip) 및 [https://aka.ms/rtvs-remote-zip](https://aka.ms/rtvs-remote-zip)에서 오프라인 RTVS 설치 관리자를 다운로드합니다.
 

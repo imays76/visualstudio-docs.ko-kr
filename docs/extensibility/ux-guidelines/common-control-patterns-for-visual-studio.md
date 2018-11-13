@@ -73,9 +73,9 @@ ms.locfileid: "39512319"
   
 -   입력된 필드 표시 된 창의 너비에 맞게 하지도 임의로 경로 같은 긴 필드의 길이 일치 하는 내용에 맞게 크기를 조정 해야 합니다. 길이 제한 횟수 문자는 필드에 허용 하는 것에 대 한 사용자에 게 표시를 수 있습니다.  
   
-     ![잘못 된 입력된 필드 길이: 이름을 long이 될 것입니다. ] (../../extensibility/ux-guidelines/media/0707-01_incorrectinputfieldcontrol.png "0707 01_IncorrectInputFieldControl")<br />잘못 된 입력된 필드 길이: 이름을 long이 될 것입니다.
+     ![잘못 된 입력된 필드 길이: 이름을 long이 될 것입니다. ](../../extensibility/ux-guidelines/media/0707-01_incorrectinputfieldcontrol.png "0707 01_IncorrectInputFieldControl")<br />잘못 된 입력된 필드 길이: 이름을 long이 될 것입니다.
   
-     ![입력된 필드 길이 수정 합니다: 입력된 필드는 예상된 콘텐츠에 대 한 적절 한 너비입니다. ] (../../extensibility/ux-guidelines/media/0707-02_correctinputfieldcontrol.png "0707 02_CorrectInputFieldControl")<br />입력된 필드 길이 수정 합니다: 입력된 필드는 예상된 콘텐츠에 대 한 적절 한 너비입니다.
+     ![입력된 필드 길이 수정 합니다: 입력된 필드는 예상된 콘텐츠에 대 한 적절 한 너비입니다. ](../../extensibility/ux-guidelines/media/0707-02_correctinputfieldcontrol.png "0707 02_CorrectInputFieldControl")<br />입력된 필드 길이 수정 합니다: 입력된 필드는 예상된 콘텐츠에 대 한 적절 한 너비입니다.
   
 ###  <a name="BKMK_ComboBoxesAndDropDowns"></a> 콤보 상자 및 드롭다운 목록  
 일반적인 상호 작용이 동작을 수행 합니다 [드롭 다운 목록 및 콤보 상자에 대 한 Windows 데스크톱 지침](/windows/desktop/uxguide/ctrl-drop)합니다.  
@@ -89,9 +89,9 @@ ms.locfileid: "39512319"
 #### <a name="layout"></a>레이아웃  
 콤보 상자 및 드롭다운 표시 된 창의 너비에 맞게 하지도 임의로 경로 같은 긴 필드의 길이 일치 하는 내용에 맞게 조정 합니다.  
   
-![잘못 된: 드롭 다운 너비 너무 깁니다 표시 되는 콘텐츠에 대 한 합니다. ] (../../extensibility/ux-guidelines/media/0707-03_incorrectdropdownlayout.png "0707 03_IncorrectDropDownLayout")<br />잘못 된: 드롭 다운 너비 너무 깁니다 표시 되는 콘텐츠에 대 한 합니다.
+![잘못 된: 드롭 다운 너비 너무 깁니다 표시 되는 콘텐츠에 대 한 합니다. ](../../extensibility/ux-guidelines/media/0707-03_incorrectdropdownlayout.png "0707 03_IncorrectDropDownLayout")<br />잘못 된: 드롭 다운 너비 너무 깁니다 표시 되는 콘텐츠에 대 한 합니다.
   
-![올바른: 드롭다운 번역 성장을 허용 하지 불필요 하 게 긴로 조정 됩니다. ] (../../extensibility/ux-guidelines/media/0707-04_correctdropdownlayout.png "0707 04_CorrectDropDownLayout")<br />올바른: 드롭다운 번역 성장을 허용 하지 불필요 하 게 긴로 조정 됩니다. 
+![올바른: 드롭다운 번역 성장을 허용 하지 불필요 하 게 긴로 조정 됩니다. ](../../extensibility/ux-guidelines/media/0707-04_correctdropdownlayout.png "0707 04_CorrectDropDownLayout")<br />올바른: 드롭다운 번역 성장을 허용 하지 불필요 하 게 긴로 조정 됩니다. 
   
 ###  <a name="BKMK_CheckBoxes"></a> 확인란  
 일반적인 상호 작용이 동작을 수행 합니다 [확인란에 대 한 Windows 데스크톱 지침](/windows/desktop/uxguide/ctrl-check-boxes)합니다.  
@@ -108,9 +108,9 @@ ms.locfileid: "39512319"
   
 -   확인란 텍스트의 첫 줄 기준선을 맞춥니다.  
   
-     ![잘못 된: 확인란 가운데에 표시 됩니다는 텍스트입니다. ] (../../extensibility/ux-guidelines/media/0707-05_incorrectcheckboxalign.png "0707 05_IncorrectCheckBoxAlign")<br />잘못 된: 확인란 가운데에 표시 됩니다는 텍스트입니다.
+     ![잘못 된: 확인란 가운데에 표시 됩니다는 텍스트입니다. ](../../extensibility/ux-guidelines/media/0707-05_incorrectcheckboxalign.png "0707 05_IncorrectCheckBoxAlign")<br />잘못 된: 확인란 가운데에 표시 됩니다는 텍스트입니다.
   
-     ![올바른: 확인란 텍스트의 첫 번째 줄을 사용 하 여 정렬 됩니다. ] (../../extensibility/ux-guidelines/media/0707-06_correctcheckboxalign.png "0707 06_CorrectCheckBoxAlign")<br />올바른: 확인란 텍스트의 첫 번째 줄을 사용 하 여 정렬 됩니다.
+     ![올바른: 확인란 텍스트의 첫 번째 줄을 사용 하 여 정렬 됩니다. ](../../extensibility/ux-guidelines/media/0707-06_correctcheckboxalign.png "0707 06_CorrectCheckBoxAlign")<br />올바른: 확인란 텍스트의 첫 번째 줄을 사용 하 여 정렬 됩니다.
   
 ###  <a name="BKMK_RadioButtons"></a> 라디오 단추  
 일반적인 상호 작용이 동작을 수행 합니다 [라디오 단추에 대 한 Windows 데스크톱 지침](/windows/desktop/uxguide/ctrl-radio-buttons)합니다.  
@@ -346,9 +346,9 @@ Visual Studio에서 대부분의 단추 유틸리티 대화 상자에 나타나�
 #### <a name="selection"></a>선택  
 트리 보기에서 노드를 선택 하면 강조 표시를 트리 뷰 컨트롤의 전체 너비를 확장 해야 합니다. 이렇게 하면 사용자가 항목을 선택 했는지를 명확 하 게 식별 합니다. 선택 영역 색 현재 Visual Studio 테마를 반영 해야 합니다.  
   
-![올바른: 선택한 노드의 강조 표시 트리 뷰 컨트롤의 전체 너비에 맞춥니다. ] (../../extensibility/ux-guidelines/media/070705-1_treeviewcorrect.png "070705 1_TreeViewCorrect")<br />올바른: 선택한 노드의 강조 표시 트리 뷰 컨트롤의 전체 너비에 맞춥니다.
+![올바른: 선택한 노드의 강조 표시 트리 뷰 컨트롤의 전체 너비에 맞춥니다. ](../../extensibility/ux-guidelines/media/070705-1_treeviewcorrect.png "070705 1_TreeViewCorrect")<br />올바른: 선택한 노드의 강조 표시 트리 뷰 컨트롤의 전체 너비에 맞춥니다.
   
-![잘못 되었습니다: 선택한 노드의 강조 표시에는 트리 뷰 컨트롤의 전체 너비를 맞지 않습니다. ] (../../extensibility/ux-guidelines/media/070705-3_treeviewincorrect2.png "070705 3_TreeViewIncorrect2")<br />잘못 되었습니다: 선택한 노드의 강조 표시에는 트리 뷰 컨트롤의 전체 너비를 맞지 않습니다.
+![잘못 되었습니다: 선택한 노드의 강조 표시에는 트리 뷰 컨트롤의 전체 너비를 맞지 않습니다. ](../../extensibility/ux-guidelines/media/070705-3_treeviewincorrect2.png "070705 3_TreeViewIncorrect2")<br />잘못 되었습니다: 선택한 노드의 강조 표시에는 트리 뷰 컨트롤의 전체 너비를 맞지 않습니다.
   
 #### <a name="icons"></a>아이콘  
 항목 간의 차이 시각적으로 식별 하는 데 도움이 하는 경우에 아이콘 트리 뷰 컨트롤에서 사용 해야 합니다. 일반적으로 아이콘 아이콘 요소 형식을 구분 하기 위한 정보를 수행할 수 있는 유형이 다른 목록 에서만에서 사용할 수 해야 합니다. 유형이 같은 목록에서 아이콘을 사용 하 여 소음으로 자주 볼 수 있습니다 피해 야 합니다. 이 경우 그룹 아이콘 (부모) 내 항목의 형식을 전달할 수 있습니다. 이 규칙의 예외 아이콘 동적 되며 상태를 나타내는 데 사용 되는 것입니다.  
@@ -356,14 +356,14 @@ Visual Studio에서 대부분의 단추 유틸리티 대화 상자에 나타나�
 #### <a name="scroll-bars"></a>스크롤 막대  
 스크롤 막대를 콘텐츠 트리 뷰 컨트롤에 맞으면에 항상 숨깁니다. 스크롤 막대에 대 한 허용 되는 스크롤 가능한 창에서 숨겨진 또는 반투명 하 게 될 및 트리 뷰를 포함 하는 창에 포커스가 있으면 나타나거나 트리의 가리키기 시 자체를 보려면  
   
-![내용이 있는 트리 뷰 컨트롤의 한계를 초과 하는 세로 및 가로 스크롤 막대가 모두 표시 됩니다. ] (../../extensibility/ux-guidelines/media/070705-4_scrollbars.png "070705 4_Scrollbars")<br />내용이 있는 트리 뷰 컨트롤의 한계를 초과 하는 세로 및 가로 스크롤 막대가 모두 표시 됩니다.
+![내용이 있는 트리 뷰 컨트롤의 한계를 초과 하는 세로 및 가로 스크롤 막대가 모두 표시 됩니다. ](../../extensibility/ux-guidelines/media/070705-4_scrollbars.png "070705 4_Scrollbars")<br />내용이 있는 트리 뷰 컨트롤의 한계를 초과 하는 세로 및 가로 스크롤 막대가 모두 표시 됩니다.
   
 ###  <a name="BKMK_TreeViewInteractions"></a> 트리 뷰 상호 작용  
   
 #### <a name="context-menus"></a>상황에 맞는 메뉴  
 트리 뷰 노드에 상황에 맞는 메뉴에서 하위 메뉴 옵션을 표시할 수 있습니다. 일반적으로이 사용자가 항목을 마우스 오른쪽 단추로 클릭 하거나 선택한 항목에 사용 하는 Windows 키보드에서 메뉴 키를 누를 때 발생 합니다. 것이 중요 노드에 포커스를 획득 하 고 선택 합니다. 이렇게 하면 사용자에 속하는 하위 메뉴 항목을 식별 합니다.  
   
-![사용자에 게 상황에 맞는 메뉴 향상 포커스 항목 생성에 항목 선택 되었습니다. ] (../../extensibility/ux-guidelines/media/070705-5_contextmenu.png "070705 5_ContextMenu")<br />사용자에 게 상황에 맞는 메뉴 향상 포커스 항목 생성에 항목 선택 되었습니다.
+![사용자에 게 상황에 맞는 메뉴 향상 포커스 항목 생성에 항목 선택 되었습니다. ](../../extensibility/ux-guidelines/media/070705-5_contextmenu.png "070705 5_ContextMenu")<br />사용자에 게 상황에 맞는 메뉴 향상 포커스 항목 생성에 항목 선택 되었습니다.
   
 #### <a name="keyboard"></a>키보드  
 트리 뷰 항목을 선택 하 고 키보드를 사용 하 여 노드 확장/축소 하는 기능을 제공 해야 합니다. 이렇게 하면 탐색의 접근성 요구 사항을 충족 합니다.  

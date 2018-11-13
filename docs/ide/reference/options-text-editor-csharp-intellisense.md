@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d8f6928dd09b971e2c5924d34058a1a0d5e28394
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3ab871d07a8519fa6850ad3d1743a7cd1d0fa110
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947393"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672487"
 ---
 # <a name="options-text-editor-c-intellisense"></a>옵션, 텍스트 편집기, C#, IntelliSense
 
@@ -46,9 +46,7 @@ ms.locfileid: "31947393"
 
 - 완성 항목 필터 표시
 
-- 이름 제안 표시
-
-### <a name="snippets-behavior"></a>코드 조각 동작
+## <a name="snippets-behavior"></a>코드 조각 동작
 
 - 코드 조각 포함 안 함
 
@@ -62,7 +60,7 @@ ms.locfileid: "31947393"
 
    이 옵션을 선택하면 IntelliSense에서는 식별자 뒤에 **?**+**Tab**을 누르면 C# 코드 조각의 별칭을 완성 목록에 추가합니다.
 
-### <a name="enter-key-behavior"></a>키 입력 동작
+## <a name="enter-key-behavior"></a>키 입력 동작
 
 - Enter 키를 누를 때 새 줄 추가 안 함
 
@@ -85,6 +83,10 @@ ms.locfileid: "31947393"
 - Enter 키를 누를 때 항상 새 줄 추가
 
    완성 목록에 입력할 *모든* 문자를 입력하고 나서 **Enter** 키를 누르면 새 줄이 자동으로 추가되고 커서가 새 줄로 이동하도록 지정합니다.
+
+## <a name="show-name-suggestions"></a>이름 제안 표시
+
+   최근에 선택한 멤버에 대해 자동 개체 이름 완성을 수행합니다. 
 
 ## <a name="see-also"></a>참고 항목
 
