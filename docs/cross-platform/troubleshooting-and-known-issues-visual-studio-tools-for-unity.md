@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 86f547ae686176ab6361f44f4f0ba432c6466da9
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 077754b31b80575c4fbee78d0a2f19f87f82e481
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251577"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220894"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>문제 해결 및 알려진 문제(Visual Studio Tools for Unity)
 
@@ -90,7 +90,7 @@ Visual Studio에서 특정 중단점에 대한 원본 위치를 찾을 수 없�
 
 ## <a name="breakpoints-not-hit"></a>적중되지 않는 중단점
 
-사용하는 스크립트가 현재 Unity 장면에 제대로 로드/사용되었는지 확인합니다. Visual Studio와 Unity를 모두 종료한 다음 생성된 모든 파일(*.csproj, *.sln)과 전체 라이브러리 폴더를 삭제합니다.
+사용하는 스크립트가 현재 Unity 장면에 제대로 로드/사용되었는지 확인합니다. Visual Studio와 Unity를 모두 종료한 다음, 생성된 모든 파일(\*.csproj, \*.sln)과 전체 라이브러리 폴더를 삭제합니다.
 
 ## <a name="unable-to-debug-android-players"></a>Android 플레이어를 디버그할 수 없음
 

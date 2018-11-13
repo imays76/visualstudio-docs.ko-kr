@@ -1,6 +1,6 @@
 ---
-title: Visual Studio에서 XAML 디자이너를 사용하여 UI 만들기
-ms.date: 07/17/2017
+title: XAML 디자이너를 사용하여 UI 만들기
+ms.date: 11/05/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
@@ -15,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: da5b6d3659371eb7e6d04a782c37cbab73a59fd5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b991b50ab2ee329adaaff7a31c2dbb4f2d5bb806
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903259"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220998"
 ---
-# <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Visual Studio에서 XAML 디자이너를 사용하여 UI 만들기
+# <a name="create-a-ui-by-using-xaml-designer-in-visual-studio"></a>Visual Studio에서 XAML 디자이너를 사용하여 UI 만들기
 
 Visual Studio의 XAML 디자이너는 XAML 기반 Windows 앱과 웹앱을 디자인하는 데 도움이 되는 그래픽 인터페이스를 제공합니다. **도구 상자** 에서 컨트롤을 끌고 **속성** 창에서 속성을 설정하여 앱에 대한 사용자 인터페이스를 만들 수 있습니다. XAML 뷰에서 직접 XAML을 편집할 수도 있습니다.
 
@@ -108,6 +108,9 @@ XAML 편집기가 아래쪽 창에 있을 때 분할 뷰 구분선이 XAML 뷰�
 
 ## <a name="device-window"></a>장치 창
 
+> [!NOTE]
+> UWP 응용 프로그램의 대상 플랫폼 버전(`TargetPlatformVersion`)이 10.0.16299.0 이상인 경우 **장치** 창이 지원되지 않습니다.
+
 XAML 디자이너의 **장치** 창을 사용하면 디자인 타임에 프로젝트의 다양한 뷰, 표시 및 표시 옵션을 시뮬레이션할 수 있습니다. **장치** 창은 XAML 디자이너에서 작업할 때 **디자인** 메뉴에서 사용할 수 있습니다. 다음과 같이 나타납니다.
 
 ![장치 창](../designers/media/xaml_editor_device_panel.png)
@@ -190,7 +193,7 @@ XAML 디자이너의 문서 개요 창은 이러한 작업을 수행하는 데 �
 
 ![속성 창](../designers/media/xaml_editor_prop_window.png)
 
-**속성** 창의 위쪽에는 다양한 옵션이 있습니다. **이름** 상자를 사용하여 현재 선택된 요소의 이름을 변경할 수 있습니다. 왼쪽 위 모서리에 현재 선택한 요소를 나타내는 아이콘이 있습니다. 속성을 범주별로 또는 사전순으로 정렬하려면 **정렬 기준**목록에서 **범주**, **이름** 또는 **소스** 를 클릭합니다. 컨트롤에 대한 이벤트의 목록을 보려면 번개 기호를 표시하는 **이벤트** 단추를 클릭합니다. 속성을 검색하려면 먼저 **검색 속성** 상자에서 속성의 이름을 입력합니다. **속성** 창에 입력할 때 검색 조건과 일치하는 속성이 표시됩니다. 일부 속성에서는 아래쪽 화살표 단추를 선택하여 고급 속성을 설정할 수 있습니다. 속성 사용 및 이벤트 처리에 대한 자세한 내용은 [빠른 시작: 컨트롤 추가 및 이벤트 처리](http://go.microsoft.com/fwlink/?LinkID=247983)를 참조하세요.
+**속성** 창의 위쪽에는 다양한 옵션이 있습니다. **이름** 상자를 사용하여 현재 선택된 요소의 이름을 변경할 수 있습니다. 왼쪽 위 모서리에 현재 선택한 요소를 나타내는 아이콘이 있습니다. 속성을 범주별로 또는 사전순으로 정렬하려면 **정렬 기준**목록에서 **범주**, **이름** 또는 **소스** 를 클릭합니다. 컨트롤에 대한 이벤트의 목록을 보려면 번개 기호를 표시하는 **이벤트** 단추를 클릭합니다. 속성을 검색하려면 먼저 **검색 속성** 상자에서 속성의 이름을 입력합니다. **속성** 창에 입력할 때 검색 조건과 일치하는 속성이 표시됩니다. 일부 속성에서는 아래쪽 화살표 단추를 선택하여 고급 속성을 설정할 수 있습니다. 속성 사용 및 이벤트 처리에 대한 자세한 내용은 [컨트롤 및 패턴 소개](/windows/uwp/design/controls-and-patterns/controls-and-events-intro)를 참조하세요.
 
 각 속성 값의 오른쪽에 상자 기호로 나타나는 *속성 표식* 이 있습니다. 속성 표식의 모양은 속성에 적용되는 리소스 또는 데이터 바인딩이 있는지 여부를 나타냅니다. 예를 들어 흰색 상자 기호는 기본값을 나타내고, 검은색 상자 기호는 일반적으로 로컬 리소스가 적용되었음을 나타내고, 주황색 상자는 일반적으로 데이터 바인딩이 적용되었음을 나타냅니다. 속성 표식을 클릭하면 스타일의 정의로 이동하거나, 데이터 바인딩 작성기를 열거나, 리소스 선택기를 엽니다.
 

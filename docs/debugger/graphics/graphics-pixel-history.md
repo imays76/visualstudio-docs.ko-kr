@@ -24,7 +24,7 @@ Visual Studio Graphics Analyzer의 그래픽 픽셀 기록 창을 사용하면 �
   
  다음은 픽셀 기록 창입니다.  
   
- ![기록에 세 가지 Direct3D 이벤트가 있는 픽셀입니다. ] (media/gfx_diag_demo_pixel_history_orientation.png "gfx_diag_demo_pixel_history_orientation")  
+ ![기록에 세 가지 Direct3D 이벤트가 있는 픽셀입니다. ](media/gfx_diag_demo_pixel_history_orientation.png "gfx_diag_demo_pixel_history_orientation")  
   
 ## <a name="understanding-the-pixel-history-window"></a>픽셀 기록 창 이해  
  픽셀 기록을 사용하면 프레임 중 Direct3D 이벤트가 렌더링 대상의 특정 픽셀에 어떻게 영향을 주는지를 분석할 수 있습니다. 후속 이벤트 또는 동일 이벤트의 후속 기본 형식이 픽셀의 최종 색 값을 계속해서 변경하더라도 특정 Direct3D 이벤트에 대한 렌더링 문제를 확인할 수 있습니다. 예를 들어 픽셀이 잘못 렌더링되어 다른 반투명 픽셀로 가려져서 해당 색이 프레임 버퍼에서 섞이는 현상이 발생할 수 있습니다. 렌더링 대상의 최종 내용만으로는 이러한 종류의 문제를 진단하기가 어렵습니다.  
@@ -42,9 +42,9 @@ Visual Studio Graphics Analyzer의 그래픽 픽셀 기록 창을 사용하면 �
   
 |아이콘|제외 이유|  
 |----------|--------------------------|  
-|![깊이 테스트 실패 아이콘. ] (media/vsg_hist_icon_failed_depth.png "vsg_hist_icon_failed_depth")|픽셀이 깊이 테스트를 통과하지 못해 제외되었습니다.|  
-|![가 위 테스트 실패 아이콘입니다. ] (media/vsg_hist_icon_failed_scissor.png "vsg_hist_icon_failed_scissor")|픽셀이 가위 테스트를 통과하지 못해 제외되었습니다.|  
-|![스텐실 테스트 실패 아이콘입니다. ] (media/vsg_hist_icon_failed_stencil.png "vsg_hist_icon_failed_stencil")|픽셀이 스텐실 테스트를 통과하지 못해 제외되었습니다.|  
+|![깊이 테스트 실패 아이콘. ](media/vsg_hist_icon_failed_depth.png "vsg_hist_icon_failed_depth")|픽셀이 깊이 테스트를 통과하지 못해 제외되었습니다.|  
+|![가 위 테스트 실패 아이콘입니다. ](media/vsg_hist_icon_failed_scissor.png "vsg_hist_icon_failed_scissor")|픽셀이 가위 테스트를 통과하지 못해 제외되었습니다.|  
+|![스텐실 테스트 실패 아이콘입니다. ](media/vsg_hist_icon_failed_stencil.png "vsg_hist_icon_failed_stencil")|픽셀이 스텐실 테스트를 통과하지 못해 제외되었습니다.|  
   
 ### <a name="draw-call-exclusion"></a>그리기 호출 제외  
  그리기 호출의 모든 기본 형식이 테스트에 실패하여 영향을 미치는 렌더링 대상에서 제외되는 경우 그리기 호출을 확장할 수 없고 제외 이유에 해당하는 아이콘을 옆에 표시할 수 없습니다. 그리기 호출 예외가 발생하는 이유는 기본 형식 제외 원인과 유사하며 해당 아이콘도 마찬가지입니다.  

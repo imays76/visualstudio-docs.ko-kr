@@ -18,11 +18,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c40d5b088dbf41e56fff1ad41b6ce4381f6602b3
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 92485f93bb4c2d1782f907acdb1e5252f611cdbe
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
+ms.lasthandoff: 11/12/2018
 ms.locfileid: "39179481"
 ---
 # <a name="debugging-managed-code"></a>관리 코드 디버깅
@@ -46,7 +46,7 @@ Windows Form 만들기 및 Windows Form 디버깅을 위한 단계별 지침을 
 [OnStart 메서드 디버깅](../debugger/how-to-debug-the-onstart-method.md)  
 관리되는 Windows 서비스의 `OnStart` 메서드를 디버깅할 수 있는 코드 예제를 제공합니다. Windows 서비스의 `OnStart` 메서드를 디버깅하려면 몇 줄의 코드를 추가하여 서비스를 시뮬레이션해야 합니다.
 
-[혼합 모드 디버깅](../debugger/debugging-mixed-mode-applications.md)  
+[Mixed-Mode Debugging](../debugger/debugging-mixed-mode-applications.md)  
 혼합 모드 응용 프로그램을 디버깅하는 방법에 대해 설명합니다. 혼합 모드 응용 프로그램은 네이티브 코드와 관리 코드가 결합된 응용 프로그램입니다.
 
 [오류: 시스템에 커널 디버거가 사용 중이므로 디버깅을 할 수 없습니다.](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
