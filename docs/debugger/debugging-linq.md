@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ca92fe5142957faf85ead5f9c9068b062d25a8d
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 8511c3ac9efd79b712680bfe3f9d5611f3c5aa9c
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056697"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349428"
 ---
 # <a name="debugging-linq"></a>LINQ 디버깅
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]는 몇 가지 제한 사항이 있긴 하지만 LINQ(Language-Integrated Query) 코드의 디버깅을 지원합니다. 단계별 실행, 중단점 설정 및 디버거 창에서 결과 보기와 같은 대부분의 디버깅 기능이 LINQ 문에서 작동합니다. 이 항목에서는 LINQ 디버깅의 주요 제한 사항을 설명합니다.  
@@ -109,8 +109,9 @@ End Function
 ##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a> 편집 하며 계속 하기가 LINQ에 대 한 지원 되지 않습니다  
  편집 하며 계속 하기 지원 제한 사항과 함께 LINQ 쿼리를 변경 합니다. 자세한 내용은 참조 하세요 [EnC 지원 되는 변경](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))
   
-## <a name="see-also"></a>참고 항목  
- [SQL 디버깅](http://msdn.microsoft.com/en-us/f27c17e6-1d90-49f2-9fc0-d02e6a27f109)    
- [디버거를 사용한 예외 관리](../debugger/managing-exceptions-with-the-debugger.md)   
- [LINQ 쿼리 소개(C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)   
- [Visual Basic의 LINQ 소개](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)
+## <a name="see-also"></a>참고 항목
+
+- [SQL 디버깅](/previous-versions/visualstudio/visual-studio-2010/zefbf0t6\(v\=vs.100\))
+- [디버거를 사용한 예외 관리](../debugger/managing-exceptions-with-the-debugger.md)
+- [LINQ 쿼리 소개(C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)
+- [Visual Basic의 LINQ 소개](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)

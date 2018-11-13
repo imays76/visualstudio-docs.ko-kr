@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92ca071c7e46325901425048417b0fd1a07607fd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ad5ab8a337d790af8cd6d800c7bf36ea6ff01286
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826535"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348684"
 ---
 # <a name="troubleshooting-vspackages"></a>VSPackage 문제 해결
 다음은 일반적인 문제는 문제를 해결 하기 위한 팁 및 VSPackage를 사용 하 여 있을 수 있습니다.  
@@ -44,7 +44,7 @@ ms.locfileid: "49826535"
   
 3. VSPackage 레지스트리 항목을 확인 합니다.  
   
-    자세한 내용은 [Vspackage 등록](http://msdn.microsoft.com/en-us/31e6050f-1457-4849-944a-a3c36b76f3dd) 하 고 [관리 Vspackage](../extensibility/managing-vspackages.md)합니다.  
+    자세한 내용은 [Vspackage 등록](registering-and-unregistering-vspackages.md) 하 고 [관리 Vspackage](../extensibility/managing-vspackages.md)합니다.  
   
 4. 열기는 **출력** 인스턴스의 창 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSPackage를 로드 하는 실패 합니다. VSPackage 로드에 실패 한 이유에 대 한 정보는 해당 창에 표시 될 수 있습니다.  
   

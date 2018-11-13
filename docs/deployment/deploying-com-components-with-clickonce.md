@@ -20,19 +20,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28b233f360e4a5fb066ae41b288dc0cdb2d610f9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e81462b2ccb5d29a0090623d72cf78183abd6917
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820464"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348749"
 ---
 # <a name="deploy-com-components-with-clickonce"></a>ClickOnce 사용 하 여 COM 구성 요소 배포
 일반적으로 기존 COM 구성 요소의 배포는 어려운 작업 이었습니다. 구성 요소는 전역으로 등록 해야 하 고 따라서 겹치는 응용 프로그램 간에 원치 않는 부작용을 일으킬 수 있습니다. 이 이런 아니므로 일반적으로.NET Framework 응용 프로그램에서 문제가 구성 요소는 응용 프로그램에 완전히 격리 또는 side-by-side-호환 됩니다. Visual Studio를 사용 하면 Windows XP 또는 더 높은 운영 체제에서 격리 된 COM 구성 요소를 배포할 수 있습니다.  
   
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .NET 응용 프로그램을 배포 하는 쉽고 안전한 메커니즘을 제공 합니다. 그러나 레거시 COM 구성 요소를 사용 하는 응용 프로그램을 배포 하는 것에 대 한 추가 단계를 수행 해야 합니다. 이 항목에서는 격리 된 COM 구성 요소를 배포 하 고 (예를 들어, Visual Basic 6.0 또는 Visual c + +)에서 네이티브 구성 요소를 참조 하는 방법을 설명 합니다.  
   
- 격리 된 COM 구성 요소를 배포 하는 방법에 대 한 자세한 내용은 참조 하세요. "를 사용한 앱 배포 단순화 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 및 등록이 필요 없는 COM" 언제 [ http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx ](http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx)합니다.  
+ 격리 된 COM 구성 요소를 배포 하는 방법에 대 한 자세한 내용은 참조 하세요. [Simplify App Deployment with ClickOnce 및 등록이 필요 없는 COM](https://web.archive.org/web/20050326005413/msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx)합니다.
   
 ## <a name="registration-free-com"></a>등록이 필요 없는 COM  
  등록이 필요 없는 COM 배포 및 격리 된 COM 구성 요소를 활성화를 위한 새로운 기술 됩니다. 일반적으로 매니페스트 라는 XML 파일로 시스템 레지스트리에 설치 되어 있는 등록 정보와 모든 구성 요소의 형식 라이브러리에 넣어 작동 하는지는 응용 프로그램과 동일한 폴더에 저장 합니다.  

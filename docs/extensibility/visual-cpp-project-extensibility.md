@@ -11,12 +11,12 @@ ms.author: corob
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b9f8bfcaf9e6f584d4f0038ebef17daad3aa74a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 913ad2e785fcdb2067f89d0d4de2b250db40468b
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850817"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349678"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio c + + 프로젝트 시스템 확장 및 도구 집합 통합
 
@@ -434,7 +434,7 @@ Visual c + + 프로젝트 시스템은 기반으로 합니다 [VS 프로젝트 �
 
 ### <a name="project-property-pages"></a>프로젝트 속성 페이지
 
-일반적인 디자인 정보를 참조 하세요 [플랫폼 확장성-1 부](http://blogs.msdn.com/b/vsproject/archive/2009/06/10/platform-extensibility-part-1.aspx) 하 고 [플랫폼 확장성-2 부](http://blogs.msdn.com/b/vsproject/archive/2009/06/18/platform-extensibility-part-2.aspx)합니다.
+일반적인 디자인 정보를 참조 하세요 [플랫폼 확장성-1 부](https://blogs.msdn.microsoft.com/vsproject/2009/06/09/platform-extensibility-part-1/) 하 고 [플랫폼 확장성-2 부](https://blogs.msdn.microsoft.com/vsproject/2009/06/18/platform-extensibility-part-2/)합니다.
 
 간단히 말해에서 속성 페이지에 표시 된 **프로젝트 속성** c + + 프로젝트에 대 한 대화가 정의한 *규칙* 파일입니다. 규칙 파일 속성 페이지에 표시 하 고 프로젝트에 저장 되는 방법과 파일 속성의 집합을 지정 합니다. 규칙 파일은 Xaml 형식을 사용 하는.xml 파일입니다. 직렬화에 사용 된 형식에 설명 되어 있습니다 [Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes)합니다. 프로젝트에서 규칙 파일의 사용에 대 한 자세한 내용은 참조 [속성 페이지 XML 규칙 파일](/cpp/ide/property-page-xml-files)합니다.
 

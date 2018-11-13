@@ -12,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a059e25546abf0d1624d3c8bc08a531d3fc4b382
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: f0d53ece6add1c781cb18569139fea5ffbbeca76
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "36755926"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000231"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Visual Studio 2017의 문제를 보고하는 방법
 
@@ -125,7 +125,7 @@ Visual Studio 2017 버전 15.5 부터는 사용자가 문제 보고에 대한 �
 
 문제를 보고하기 위해 Visual Studio를 사용할 수 없거나 원하지 않는 경우 [Visual Studio 개발자 커뮤니티](https://developercommunity.visualstudio.com/) 페이지에 문제가 이미 보고되고 솔루션이 게시됐을 수 있습니다.
 
-보고할 문제가 없지만 제품 피드백 또는 제안을 제공하려는 경우 따로 위치가 정해져 있습니다. 자세한 내용은 [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-ide) 페이지를 참조하세요.
+보고할 문제가 없지만 기능을 제안하려는 경우 따로 위치가 정해져 있습니다. 자세한 내용은 [기능 제안](https://developercommunity.visualstudio.com/content/idea/post.html?space=8) 페이지를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 

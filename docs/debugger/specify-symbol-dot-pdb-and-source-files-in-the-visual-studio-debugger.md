@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23286c6b042b7064c5ebfdf758a6b82e1b97f961
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2eb7d535b99aa6af8b977711fbc60f7b4d9856dd
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850245"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349493"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Visual Studio 디버거에서 기호 파일(.pdb) 및 원본 파일 지정
 
@@ -73,7 +73,7 @@ Visual Studio IDE에서 프로젝트를 디버깅할 때 디버거는 자동으�
    
    - 모든 로컬 기호 캐시 폴더입니다.  
   
-   - 선택한 경우 네트워크, 인터넷 또는 로컬 기호 서버 및 Microsoft 기호 서버 등의 위치를 지정 합니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 구현 하는 기호 서버에서 디버깅 기호 파일을 다운로드할 수는 `symsrv` 프로토콜입니다. [Visual Studio Team Foundation Server](http://msdn.microsoft.com/Library/bd6977ca-e30a-491a-a153-671d81222ce6) 하며 [도구에 대 한 Windows 디버깅](http://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) 기호 서버를 사용할 수 있는 도구가 두 가지 있습니다. 
+   - 선택한 경우 네트워크, 인터넷 또는 로컬 기호 서버 및 Microsoft 기호 서버 등의 위치를 지정 합니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 구현 하는 기호 서버에서 디버깅 기호 파일을 다운로드할 수는 `symsrv` 프로토콜입니다. [Visual Studio Team Foundation Server](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols) 하며 [도구에 대 한 Windows 디버깅](/windows-hardware/drivers/debugger/index) 기호 서버를 사용할 수 있는 도구가 두 가지 있습니다.
       
      기호 서버를 사용할 수는 다음과 같습니다.  
       
@@ -162,7 +162,7 @@ Visual Studio IDE에서 프로젝트를 디버깅할 때 디버거는 자동으�
   
   이 항목 및 자식 항목을 선택 합니다. **부분 신뢰 어셈블리 (관리 전용)에 대해 소스 서버 허용** 하 고 **항상 묻지 않고 신뢰할 수 없는 소스 서버 명령 실행** 보안 위험을 증가 시킬 수 있습니다.  
   
-  ![소스 서버 옵션 사용](../debugger/media/dbg_options_general_enablesrcsrvr_checkbox.png "DBG_Options_General_EnableSrcSrvr_checkbox")  
+  ![원본 서버 옵션을 사용 하도록 설정](../debugger/media/dbg_options_general_enablesrcsrvr_checkbox.png "DBG_Options_General_EnableSrcSrvr_checkbox")  
 
 ## <a name="compiler-symbol-options"></a>컴파일러 기호 옵션  
 
@@ -232,7 +232,7 @@ Visual Studio IDE에서 프로젝트를 디버깅할 때 디버거는 자동으�
    
 이 문제가 발생 하면 디버거 표시 합니다 **로드 된 기호 없음** 또는 **로드 된 소스 없음** 찾기 및 필요한 기호 또는 소스를 로드 하는 데는 페이지입니다.  
   
- ![기호가 로드 페이지 없음](../debugger/media/dbg-nosymbolsloaded.png "DBG_NoSymbolsLoaded")  
+ ![로드 된 기호 없음 페이지](../debugger/media/dbg-nosymbolsloaded.png "DBG_NoSymbolsLoaded")  
   
 **에 누락 된 기호 찾기 및 로드 하는 데 로드 된 기호 없음 문서 페이지를 사용 합니다.**  
   

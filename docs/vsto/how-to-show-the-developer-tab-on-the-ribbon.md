@@ -16,18 +16,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fea1b0fa804726cb43bdc5b6d866ceedc186924c
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: edcbcb969e45403d9ca138b259073e3cf4d73be0
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43780436"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349626"
 ---
 # <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>방법: 리본에 개발 도구 탭 표시
   액세스 하는 **개발자** 탭 Office 응용 프로그램의 리본에서 기본적으로 표시 되지 않으므로 해당 탭을 표시 하도록 구성 해야 있습니다. 예를 표시 Word의 문서 수준 사용자 지정에 <xref:Microsoft.Office.Tools.Word.GroupContentControl>을 추가하려면 해당 탭을 표시해야 합니다.  
   
 > [!NOTE]  
->  이 지침은 Office 2010 또는 이상의 응용 프로그램에만 적용됩니다. 2007 Microsoft Office System에이 탭을 표시 하려는 경우에이 항목의 다음 버전을 참조 하세요 [방법: 리본에 개발 도구 탭 표시](http://msdn.microsoft.com/library/bb608625(v=vs.90).aspx)합니다.  
+>  이 지침은 Office 2010 또는 이상의 응용 프로그램에만 적용됩니다. 2007 Microsoft Office System에이 탭을 표시 하려는 경우에이 항목의 다음 버전을 참조 하세요 [방법: 리본에 개발 도구 탭 표시](https://web.archive.org/web/20140303033431/msdn.microsoft.com/library/bb608625(v=vs.90).aspx
+)합니다.  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
