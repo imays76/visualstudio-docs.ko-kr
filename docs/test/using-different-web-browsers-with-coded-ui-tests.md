@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a1c780f74e75e4c3f9f53ee186f5ef791be44ecb
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 088ae3f16e20234760194be3ed3d6ddb4beb98f3
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380719"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295620"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>코딩된 UI 테스트에 다른 웹 브라우저 사용
 
@@ -24,13 +24,13 @@ ms.locfileid: "39380719"
 
 ## <a name="whats-supported-across-all-web-browsers"></a>모든 웹 브라우저에 어떤 기능이 지원됩니까?
 
--   속성, 검색, 재생 대기자 등 [기능 제어를 위한 사용자 지정 코드를 추가](http://blogs.msdn.com/b/visualstudioalm/archive/2012/12/10/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer.aspx)합니다.
+-   속성, 검색, 재생 대기자 등 [기능 제어를 위한 사용자 지정 코드를 추가](https://blogs.msdn.microsoft.com/devops/2012/12/09/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/)합니다.
 
 -   팝업 및 대화 상자
 
--   [반환 형식이 없는 기본 JavaScript 실행](http://blogs.msdn.com/b/visualstudioalm/archive/2013/01/18/introducing-jscript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test.aspx)
+-   [반환 형식이 없는 기본 JavaScript 실행](https://blogs.msdn.microsoft.com/devops/2013/01/18/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
 
--   검색 복원력(스마트 매치 사용) 및 [성능 향상](http://blogs.msdn.com/b/visualstudioalm/archive/2012/02/01/guidelines-on-improving-performance-of-coded-ui-test-playback.aspx)
+-   검색 복원력(스마트 매치 사용) 및 [성능 향상](https://blogs.msdn.microsoft.com/devops/2012/01/31/guidelines-on-improving-performance-of-coded-ui-test-playback/)
 
 ## <a name="why-should-i-use-coded-ui-tests-across-multiple-web-browser-types"></a>여러 웹 브라우저 형식에 코딩된 UI 테스트를 사용해야 하는 이유는 무엇입니까?
 

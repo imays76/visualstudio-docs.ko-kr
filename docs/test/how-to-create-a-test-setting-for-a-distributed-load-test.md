@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b7d7592d1bdbce0a5a80b304a89c7eaa28875502
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8b38366a97351fae52ae82a4291ed13da996bf41
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816057"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296088"
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>방법: 분산 부하 테스트에 대한 테스트 설정 만들기
 
@@ -128,7 +128,7 @@ Visual Studio를 통해 실행할 부하 테스트의 솔루션에서 테스트 
     |**IntelliTrace 및 테스트 영향용 ASP.NET 클라이언트 프록시:** 이 프록시를 사용하면 IntelliTrace 및 테스트 영향 진단 데이터 어댑터와 관련하여 클라이언트에서 웹 서버로의 HTTP 호출에 대한 정보를 수집할 수 있습니다.|![정보 아이콘](../test/media/vc364f4.gif)<br /><br /> 특별히 테스트 에이전트 컴퓨터에 대한 시스템 정보를 수집할 필요가 없으면 이 어댑터를 포함하지 마십시오. **주의:** 부하 테스트에서 수집되는 데이터의 양이 많아 문제가 발생할 수 있으므로 IntelliTrace 어댑터를 사용하지 않는 것이 좋습니다. <br /><br /> 테스트 영향 데이터는 부하 테스트를 사용하여 수집할 수 없습니다.||
     |**IntelliTrace:** 로그 파일에 저장되는 특정 진단 추적 정보를 구성할 수 있습니다. 로그 파일의 확장명은 *.tdlog*입니다. 테스트를 실행했을 때 테스트 단계가 실패하는 경우 버그를 만들 수 있습니다. 진단 추적을 포함하는 로그 파일이 이 버그에 자동으로 연결됩니다. 로그 파일에 수집된 데이터를 활용하면 코드의 오류를 재현하고 진단하는 데 필요한 시간을 줄여 디버깅 생산성을 향상시키는 데 도움이 됩니다. 이 로그 파일을 사용하여 다른 컴퓨터에서 로컬 세션을 재현할 수 있습니다. 그러면 버그가 재현되지 않을 가능성을 줄일 수 있습니다.<br /><br /> 자세한 내용은 [IntelliTrace 데이터 수집](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)을 참조하세요.|![중요 아이콘](../test/media/vc364f3.gif)<br /><br /> 부하 테스트에서는 수집 및 기록되는 데이터의 양이 많아 문제가 발생할 수 있으므로 IntelliTrace 어댑터를 사용하지 않는 것이 좋습니다. 실행 시간이 길지 않고 테스트 에이전트를 많이 사용하지 않는 부하 테스트의 경우에만 IntelliTrace 어댑터를 사용해야 합니다.|[방법: 어려운 문제 디버그에 도움이 되는 IntelliTrace 데이터 수집](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)|
     |**ASP.NET 프로파일러:** ASP.NET 웹 응용 프로그램의 성능 데이터를 수집하는 ASP.NET 프로파일링을 포함하는 테스트 설정을 만들 수 있습니다.|ASP.NET 프로파일러 진단 데이터 어댑터에서는 IIS(인터넷 정보 서비스) 프로세스를 프로파일링하므로 개발 웹 서버에서는 이 진단 데이터 어댑터가 작동하지 않습니다. 부하 테스트에서 웹 사이트를 프로파일링하려면 IIS가 실행 중인 컴퓨터에 테스트 에이전트를 설치해야 합니다. 이 테스트 에이전트는 부하를 생성하지 않으며, 컬렉션 전용 에이전트가 됩니다. 자세한 내용은 [테스트 에이전트 설치 및 구성](../test/lab-management/install-configure-test-agents.md)을 참조하세요.|[방법: 테스트 설정을 사용하여 부하 테스트에 대한 ASP.NET 프로파일러 구성](../test/how-to-configure-aspnet-profiler-for-load-tests-using-test-settings.md)|
-    |**이벤트 로그:** 테스트 결과에 포함될 이벤트 로그 수집을 포함하도록 테스트 설정을 구성할 수 있습니다.||[방법: 테스트 설정을 사용하여 이벤트 로그 수집 구성](http://msdn.microsoft.com/en-us/48d67891-6018-4549-83e3-213d5d824a02)|
+    |**이벤트 로그:** 테스트 결과에 포함될 이벤트 로그 수집을 포함하도록 테스트 설정을 구성할 수 있습니다.||[방법: 테스트 설정을 사용하여 이벤트 로그 수집 구성](https://msdn.microsoft.com/48d67891-6018-4549-83e3-213d5d824a02)|
     |**네트워크 에뮬레이션:** 테스트 설정을 사용하여 테스트에 인위적인 네트워크 부하를 주도록 지정할 수 있습니다. 네트워크 에뮬레이션은 전화 접속과 같이 특정 네트워크 연결 속도를 에뮬레이트하여 컴퓨터의 통신에 영향을 줍니다. **참고:** 네트워크 에뮬레이션을 사용하여 더 빠른 네트워크 연결 속도를 구현할 수는 없습니다.|부하 테스트에서는 네트워크 에뮬레이션 어댑터가 무시됩니다. 대신 부하 테스트에는 부하 테스트 시나리오의 네트워크 조합에 지정된 설정이 사용됩니다.<br /><br /> 자세한 내용은 [가상 네트워크 형식 지정](../test/specify-virtual-network-types-in-a-load-test-scenario.md)을 참조하세요.||
     |**시스템 정보:** 시스템 정보 진단 및 데이터 수집기가 실행되는 컴퓨터에 대한 시스템 정보를 포함하도록 테스트 설정을 지정할 수 있습니다. 테스트 설정을 사용하여 테스트 결과에 시스템 정보가 지정됩니다.|![정보 아이콘](../test/media/vc364f4.gif)<br /><br /> 부하 에이전트와 테스트 대상 시스템 모두에서 시스템 정보를 수집할 수 있습니다.|이 정보를 수집하는 데 필요한 구성이 없습니다.|
     |**테스트 영향:** 테스트 사례가 실행될 때 사용된 응용 프로그램 코드의 메서드에 대한 정보를 수집할 수 있습니다. 이 정보를 개발자가 변경한 응용 프로그램 코드와 함께 사용하여 개발 과정에서 변경된 내용이 테스트의 어떤 부분에 영향을 줬는지 확인할 수 있습니다.|테스트 영향 데이터는 부하 테스트를 사용하여 수집할 수 없습니다.||

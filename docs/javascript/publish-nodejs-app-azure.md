@@ -31,7 +31,7 @@ Linux App Service는 Linux Docker 컨테이너를 배포하여 Node.js 응용 �
 
 이 자습서에서는 Visual Studio용 Node.js 도구를 사용하여 설치한 템플릿에서 시작하는 Node.js 응용 프로그램을 만들고, 코드를 GitHub의 리포지토리로 푸시한 다음, GitHub 리포지토리에서 배포할 수 있도록 Azure 웹 포털을 통해 Azure App Service를 프로비전하는 방법을 설명합니다. 명령줄을 사용하여 Azure App Service를 프로비전하고 로컬 Git 리포지토리에서 코드를 푸시하려면 [Node.js 앱 만들기](/azure/app-service/containers/quickstart-nodejs)를 참조하세요.
 
-이 자습서에서는 다음 방법을 학습합니다.
+이 자습서에서는 다음과 같은 작업을 수행하는 방법을 살펴봅니다.
 > [!div class="checklist"]
 > * Node.js 프로젝트 만들기
 > * 코드에 대한 GitHub 리포지토리 만들기

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a937e06eadc1af0734ff34f043c97833e1be1c96
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 19d2a50eba8850b3950e951da58800aed77931ad
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382212"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295802"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>연습: 가상 사용자 작업 차트를 사용하여 문제 격리
 
@@ -42,9 +42,9 @@ ms.locfileid: "39382212"
 
 -   다음의 절차를 완료합니다.
 
-    -   [웹 성능 테스트 기록 및 실행](http://msdn.microsoft.com/en-us/bd0a82fd-cec0-4861-bc09-e1b0b2d258ef)
+    -   [웹 성능 테스트 기록 및 실행](/azure/devops/test/load-test/run-performance-tests-app-before-release#recordtests)
 
-    -   [부하 테스트 만들기 및 실행](http://msdn.microsoft.com/en-us/7041cbcf-9ab1-4579-98ff-8f296aeaded4)
+    -   [부하 테스트 만들기 및 실행](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-load-test)
 
 ## <a name="open-the-colorwebapp-solution-created-in-the-previous-walkthroughs"></a>이전 연습에서 만든 ColorWebApp 솔루션 열기
 

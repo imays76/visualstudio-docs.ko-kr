@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7791eec2408f14a442a8dd50c1a881ffc0802697
-ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
+ms.openlocfilehash: 3a81d81160bd6ad097e848f4af964d6ed00b17a5
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49324979"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348710"
 ---
 # <a name="install-python-interpreters"></a>Python 인터프리터 설치
 
@@ -30,7 +30,7 @@ Visual Studio(모든 버전)는 레지스트리를 확인하여 각 설치된 Py
 
 Visual Studio가 설치된 환경을 검색하지 않으면 [기존 환경 수동 식별](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)을 참조하세요.
 
-Visual Studio는 [**Python 환경**](managing-python-environments-in-visual-studio.md) 창에서 알려진 모든 환경을 표시하고 기존 인터프리터의 업데이트를 자동으로 검색합니다.
+Visual Studio는 [**Python 환경**](managing-python-environments-in-visual-studio.md#the-python-environments-window) 창에서 알려진 모든 환경을 표시하고 기존 인터프리터의 업데이트를 자동으로 검색합니다.
 
 | 인터프리터 | 설명 |
 | --- | --- |

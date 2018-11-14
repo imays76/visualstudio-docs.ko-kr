@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 5fc3d03e42edbfa6ad4e625a1d4c77df2aadab27
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 6fa58bea73bcbc10f0392bb0e8b135e39fc605b2
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382398"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296361"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>연습: 코딩된 UI 테스트 만들기, 편집 및 유지 관리
 
@@ -361,7 +361,7 @@ ms.locfileid: "39382398"
 
 ## <a name="faq"></a>FAQ
 
-[코딩된 UI 테스트 FAQ](https://social.msdn.microsoft.com/Forums/en-US/3a74dd2c-cef8-4923-abbf-7a91f489e6c4/faqs?forum=vsautotest)
+[코딩된 UI 테스트 FAQ](https://social.msdn.microsoft.com/Forums/vsautotest/3a74dd2c-cef8-4923-abbf-7a91f489e6c4/faqs)
 
 ## <a name="see-also"></a>참고 항목
 

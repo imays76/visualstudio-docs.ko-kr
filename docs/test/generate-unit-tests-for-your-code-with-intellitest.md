@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 5cac2a21e15223d720089768db2f92892ec5cd43
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: f0ea1fa864e108117d45c1a6edd4cc03f3e3024f
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178536"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294164"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>IntelliTest를 사용하여 코드에 대한 단위 테스트 생성
 IntelliTest는 .NET 코드를 탐색하여 테스트 데이터 및 단위 테스트 도구 모음을 생성합니다. 코드의 모든 문에 대해 해당 문을 실행할 테스트 입력이 생성됩니다. 코드의 모든 조건부 분기에 대해 사례 분석이 수행됩니다. 예를 들어 `if` 문, 어설션 및 예외를 throw할 수 있는 모든 작업이 분석됩니다. 이 분석은 각 메서드에 대해 매개 변수가 있는 단위 테스트용 테스트 데이터를 생성하는 데 사용됩니다(높은 코드 검사가 포함된 단위 테스트 생성).
@@ -157,4 +157,4 @@ Visual Studio를 다시 시작하고 솔루션을 다시 연 후 클래스 또�
 
 ### <a name="q-can-i-learn-more-about-how-the-tests-are-generated"></a>Q: 테스트가 생성되는 방식에 대해 자세히 알아볼 수 있나요?
 
-**A:** 예, 개괄적인 개요를 확인하려면 이 [블로그 게시물](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/05/intellitest-one-test-to-rule-them-all.aspx)을 참조하세요.
+**A:** 예, 개괄적인 개요를 확인하려면 이 [블로그 게시물](https://blogs.msdn.microsoft.com/devops/2015/07/05/intellitest-one-test-to-rule-them-all/)을 참조하세요.

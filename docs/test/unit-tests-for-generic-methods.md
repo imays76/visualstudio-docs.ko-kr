@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 724ca3c49083853a7c66e61b238ab2d862be6582
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bb93e9b2d99c33c30b1478466f0cd8fa39388371
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880548"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295594"
 ---
 # <a name="unit-tests-for-generic-methods"></a>제네릭 메서드의 단위 테스트
 
@@ -111,13 +111,13 @@ public void SizeOfLinkedListTestHelper<T>()
 [TestMethod()]
 public void SizeOfLinkedListTest()
 {
-    SizeOfLinkedListTestHelper<int>();  // step 6
+    SizeOfLinkedListTestHelper<int>();  // step 6
     SizeOfLinkedListTestHelper<char>(); // step 7
 }
 ```
 
 > [!NOTE]
-> SizeOfLinkedListTest 테스트를 실행할 때마다 해당 TestHelper 메서드가 두 번 호출됩니다. 테스트에 성공하려면 assert 문이 항상 true로 평가되어야 합니다. 테스트에 실패할 경우 실패 원인이 `<int>`를 지정한 호출 때문인지 또는 `<char>`를 지정한 호출 때문인지 명확하지 않을 수 있습니다. 대답을 찾기 위해 호출 스택을 검사하거나, 테스트 메서드에 중단점을 설정한 후 테스트를 실행하는 동안 디버그할 수 있습니다. 자세한 내용은 [방법: ASP.NET 솔루션에서 테스트를 실행하는 동안 디버그](http://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b)를 참조하세요.
+> SizeOfLinkedListTest 테스트를 실행할 때마다 해당 TestHelper 메서드가 두 번 호출됩니다. 테스트에 성공하려면 assert 문이 항상 true로 평가되어야 합니다. 테스트에 실패할 경우 실패 원인이 `<int>`를 지정한 호출 때문인지 또는 `<char>`를 지정한 호출 때문인지 명확하지 않을 수 있습니다. 대답을 찾기 위해 호출 스택을 검사하거나, 테스트 메서드에 중단점을 설정한 후 테스트를 실행하는 동안 디버그할 수 있습니다. 자세한 내용은 [방법: ASP.NET 솔루션에서 테스트를 실행하는 동안 디버그](https://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b)를 참조하세요.
 
 
 ###  <a name="TypeConstraintNotSatisfied"></a> 예제 2: 형식 제약 조건 사용
