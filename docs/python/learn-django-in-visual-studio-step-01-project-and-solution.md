@@ -22,7 +22,7 @@ ms.locfileid: "49942763"
 
 [Django](https://www.djangoproject.com/)는 신속하고 안전하며 확장성 있는 웹 개발을 위해 고안된 상위 수준 Python 프레임워크입니다. 이 자습서에서는 Django 기반 웹앱 만들기를 간소화하기 위해 Visual Studio에서 제공하는 프로젝트 템플릿의 컨텍스트에서 Django 프레임워크를 살펴봅니다.
 
-이 자습서에서는 다음 방법을 학습합니다.
+이 자습서에서는 다음과 같은 작업을 수행하는 방법을 살펴봅니다.
 
 > [!div class="checklist"]
 > - “빈 Django 웹 프로젝트” 템플릿을 사용하여 Git 리포지토리에 기본 Django 프로젝트 만들기(1단계)

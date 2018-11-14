@@ -28,7 +28,7 @@ Visual Studio에서는 앱의 유형에 따라 다른 성능 문제를 진단할
 
 ![진단 도구 창](../profiling/media/prof-tour-diagnostic-tools.png "진단 도구")
 
-디버그하는 동안 **진단 도구** 창을 사용하여 CPU 및 메모리 사용을 분석하고 성능 관련 정보를 보여 주는 이벤트를 확인할 수 있습니다.
+디버그하는 동안 **진단 도구** 창을 사용하여 CPU 및 메모리 사용을 분석하고 성능 관련 정보를 보여주는 이벤트를 확인할 수 있습니다.
 
 ![진단 도구 요약 뷰](../profiling/media/prof-tour-cpu-and-memory-graph.gif "진단 도구 요약")
 

@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6100f6b0a793b138712250ac5451454784bc877a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9b9d61b4a57e0255577fdb0621dafd4263fc127c
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876752"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607772"
 ---
 # <a name="create-an-options-page"></a>옵션 페이지 만들기
 이 연습을 검토 하 고 속성을 설정 하려면 속성 표를 사용 하는 간단한 도구/옵션 페이지를 만듭니다.  
@@ -110,7 +110,7 @@ ms.locfileid: "49876752"
   
 2.  다음 추가 문을 사용 하 여 합니다.  
   
-    ```vb  
+    ```csharp  
     using System.Windows.Forms;  
     ```  
   
@@ -231,7 +231,7 @@ ms.locfileid: "49876752"
   
 1.  패키지 코드 파일에서 이라는 공용 속성을 추가 **OptionInteger** 에 **MyToolsOptionsPackage** 클래스입니다.  
   
-    ```  
+    ```csharp  
     public int OptionInteger  
     {  
         get  

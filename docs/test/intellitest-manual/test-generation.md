@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a634a4f694c6d93a42440bfa80169d5942a3cdbe
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 20bacca2343cb2689ed52096c1a9b0d9c3d74703
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000647"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295867"
 ---
 # <a name="test-generation"></a>테스트 생성
 
@@ -239,8 +239,8 @@ namespace MyTests
 <a name="further-reading"></a>
 ## <a name="further-reading"></a>추가 정보
 
-* [Test to code binding](https://blogs.msdn.microsoft.com/visualstudioalm/2015/04/18/smart-unit-tests-test-to-code-binding-test-case-management/)(테스트-코드 바인딩)
-* [One test to rule them all](https://blogs.msdn.microsoft.com/visualstudioalm/2015/07/05/intellitest-one-test-to-rule-them-all/)(한 번 테스트로 모두 제어)
+* [Test to code binding](https://blogs.msdn.microsoft.com/devops/2015/04/18/smart-unit-tests-test-to-code-binding-test-case-management/)(테스트-코드 바인딩)
+* [One test to rule them all](https://blogs.msdn.microsoft.com/devops/2015/07/05/intellitest-one-test-to-rule-them-all/)(한 번 테스트로 모두 제어)
 
 ## <a name="got-feedback"></a>피드백이 있으신가요?
 
