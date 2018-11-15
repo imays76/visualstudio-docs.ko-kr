@@ -80,7 +80,7 @@ UI 작업 속성 편집
   
  UI 작업에 대한 속성을 수정하려면 **UI 작업** 창에서 속성을 편집하려는 UI 작업이 포함된 테스트 메서드를 확장하고, 해당 UI 작업을 선택한 다음, 속성 창을 사용해 속성을 수정합니다.  
   
- 예를 들어 서버를 사용할 수 없는 상황이며 웹 브라우저에 나오는 **웹 페이지 '<http://Contoso1/default.aspx’>'로 이동**과 관련된 UI 작업이 있는 경우 이 URL을 `‘ http://Contoso2/default.aspx’`로 변경할 수 있습니다.  
+ 예를 들어 서버를 사용할 수 없는 상황이며 웹 브라우저에 나오는 **웹 페이지 '<http://Contoso1/default.aspx’>'로 이동**과 관련된 UI 작업이 있는 경우 이 URL을 `‘http://Contoso2/default.aspx’`로 변경할 수 있습니다.  
   
  ![컨트롤 속성](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")  
 컨트롤 속성 편집  
