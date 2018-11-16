@@ -15,12 +15,12 @@ ms.assetid: ce9f4266-bb64-4c09-be88-4bd6413f60d0
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e4272c6a89864f72d4f823b53283d9d18fafaae0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7215079dbfc8a8c9934f16700c0a7f466f9bc9a6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263811"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51786082"
 ---
 # <a name="web-site-support"></a>웹 사이트 지원
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49263811"
  웹 페이지를 컴파일하는 데 사용 되는 언어 컴파일러를 사용 하 여 등록 해야 [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)]합니다. 사용할 수는 [ \<컴파일러 > 요소](http://msdn.microsoft.com/library/7a151659-b803-4c27-b5ce-1c4aa0d5a823) 다음 예제와 같이 컴파일러에 등록 하는 Web.config 파일에서:  
   
 ```  
-<system.codedom>  <compilers>    <compiler language="py;IronPython" extension=".py"       type="IronPython.CodeDom.PythonProvider, IronPython,       Version=1.0.2391.18146, Culture=neutral,       PublicKeyToken=b03f5f7f11d50a3a" />  </compilers></system.codedom>  
+<system.codedom>  <compilers>    <compiler language="py;IronPython" extension=".py"       type="IronPython.CodeDom.PythonProvider, IronPython,       Version=1.0.2391.18146, Culture=neutral,       PublicKeyToken=b03f5f7f11d50a3a" />  </compilers></system.codedom>  
 ```  
   
 ## <a name="in-this-section"></a>섹션 내용  

@@ -15,12 +15,12 @@ ms.assetid: 08526848-a442-4cd4-afa1-b2eac2005adb
 caps.latest.revision: 47
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ea320b18dc9164c0cbf87cbccf1c33ea7fab2230
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e64d50dcd56f1421e4ffe1ab33b5396c436eeeda
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185590"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51773043"
 ---
 # <a name="walkthrough-using-a-shell-command-with-an-editor-extension"></a>연습: 편집기 확장에서 셸 명령 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -115,7 +115,7 @@ VSPackage에서 편집기 메뉴 명령과 같은 기능을 추가할 수 있습
 4.  파일에 클래스가 있어야 `CommentAdornment`합니다.  
   
     ```  
-    internal class CommentAdornment  
+    internal class CommentAdornment  
     ```  
   
 5.  세 필드를 추가 합니다 `CommentAdornment` 클래스는 <xref:Microsoft.VisualStudio.Text.ITrackingSpan>, 작성자 및 설명 합니다.  
@@ -168,9 +168,9 @@ VSPackage에서 편집기 메뉴 명령과 같은 기능을 추가할 수 있습
     ```csharp  
     private Geometry textGeometry;  
     private Grid commentGrid;  
-    private static Brush brush;  
-    private static Pen solidPen;  
-    private static Pen dashPen;  
+    private static Brush brush;  
+    private static Pen solidPen;  
+    private static Pen dashPen;  
     ```  
   
 5.  주석 adornment를 정의 하 고 관련 텍스트를 추가 하는 생성자를 추가 합니다.  
@@ -245,7 +245,7 @@ VSPackage에서 편집기 메뉴 명령과 같은 기능을 추가할 수 있습
 6.  또한 구현는 <xref:System.Windows.Controls.Panel.OnRender%2A> 장식을 그릴 수 있는 이벤트 처리기입니다.  
   
     ```csharp  
-    protected override void OnRender(DrawingContext dc)  
+    protected override void OnRender(DrawingContext dc)  
     {  
         base.OnRender(dc);  
         if (this.textGeometry != null)  
@@ -282,7 +282,7 @@ VSPackage에서 편집기 메뉴 명령과 같은 기능을 추가할 수 있습
 4.  구현 된 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> 정적 호출 하도록 메서드 `Create()` 의 이벤트를 `CommentAdornmentManager`합니다.  
   
     ```csharp  
-    public void TextViewCreated(IWpfTextView textView)  
+    public void TextViewCreated(IWpfTextView textView)  
     {  
         CommentAdornmentManager.Create(textView);  
     }  
@@ -291,16 +291,16 @@ VSPackage에서 편집기 메뉴 명령과 같은 기능을 추가할 수 있습
 5.  명령을 실행 하는 데 사용할 수 있는 메서드를 추가 합니다.  
   
     ```csharp  
-    static public void Execute(IWpfTextViewHost host)  
+    static public void Execute(IWpfTextViewHost host)  
     {  
         IWpfTextView view = host.TextView;  
-        //Add a comment on the selected text.   
+        //Add a comment on the selected text.   
         if (!view.Selection.IsEmpty)  
         {  
             //Get the provider for the comment adornments in the property bag of the view.  
             CommentAdornmentProvider provider = view.Properties.GetProperty<CommentAdornmentProvider>(typeof(CommentAdornmentProvider));  
   
-            //Add some arbitrary author and comment text.   
+            //Add some arbitrary author and comment text.   
             string author = System.Security.Principal.WindowsIdentity.GetCurrent().Name;  
             string comment = "Four score....";  
   
@@ -362,7 +362,7 @@ VSPackage에서 편집기 메뉴 명령과 같은 기능을 추가할 수 있습
     private CommentAdornmentProvider(ITextBuffer buffer)  
     {  
         this.buffer = buffer;  
-        //listen to the Changed event so we can react to deletions.   
+        //listen to the Changed event so we can react to deletions.   
         this.buffer.Changed += OnBufferChanged;  
     }  
   
@@ -371,9 +371,9 @@ VSPackage에서 편집기 메뉴 명령과 같은 기능을 추가할 수 있습
 6.  `Create()` 메서드를 추가합니다.  
   
     ```csharp  
-    public static CommentAdornmentProvider Create(IWpfTextView view)  
+    public static CommentAdornmentProvider Create(IWpfTextView view)  
     {  
-        return view.Properties.GetOrCreateSingletonProperty<CommentAdornmentProvider>(delegate { return new CommentAdornmentProvider(view.TextBuffer); });  
+        return view.Properties.GetOrCreateSingletonProperty<CommentAdornmentProvider>(delegate { return new CommentAdornmentProvider(view.TextBuffer); });  
     }  
   
     ```  
@@ -381,11 +381,11 @@ VSPackage에서 편집기 메뉴 명령과 같은 기능을 추가할 수 있습
 7.  `Detach()` 메서드를 추가합니다.  
   
     ```csharp  
-    public void Detach()  
+    public void Detach()  
     {  
         if (this.buffer != null)  
         {  
-            //remove the Changed listener   
+            //remove the Changed listener   
             this.buffer.Changed -= OnBufferChanged;  
             this.buffer = null;  
         }  
@@ -395,15 +395,15 @@ VSPackage에서 편집기 메뉴 명령과 같은 기능을 추가할 수 있습
 8.  추가 된 `OnBufferChanged` 이벤트 처리기입니다.  
   
     ```csharp  
-    private void OnBufferChanged(object sender, TextContentChangedEventArgs e)  
+    private void OnBufferChanged(object sender, TextContentChangedEventArgs e)  
     {  
         //Make a list of all comments that have a span of at least one character after applying the change. There is no need to raise a changed event for the deleted adornments. The adornments are deleted only if a text change would cause the view to reformat the line and discard the adornments.  
         IList<CommentAdornment> keptComments = new List<CommentAdornment>(this.comments.Count);  
   
-        foreach (CommentAdornment comment in this.comments)  
+        foreach (CommentAdornment comment in this.comments)  
         {  
             Span span = comment.Span.GetSpan(e.After);  
-            //if a comment does not span at least one character, its text was deleted.   
+            //if a comment does not span at least one character, its text was deleted.   
             if (span.Length != 0)  
             {  
                 keptComments.Add(comment);  
@@ -421,25 +421,25 @@ VSPackage에서 편집기 메뉴 명령과 같은 기능을 추가할 수 있습
 9. 에 대 한 선언을 추가 `CommentsChanged` 이벤트입니다.  
   
     ```csharp  
-    public event EventHandler<CommentsChangedEventArgs> CommentsChanged;  
+    public event EventHandler<CommentsChangedEventArgs> CommentsChanged;  
     ```  
   
 10. 만들기는 `Add()` 메서드를 장식을 추가 합니다.  
   
     ```csharp  
-    public void Add(SnapshotSpan span, string author, string text)  
+    public void Add(SnapshotSpan span, string author, string text)  
     {  
         if (span.Length == 0)  
-            throw new ArgumentOutOfRangeException("span");  
+            throw new ArgumentOutOfRangeException("span");  
         if (author == null)  
-            throw new ArgumentNullException("author");  
+            throw new ArgumentNullException("author");  
         if (text == null)  
-            throw new ArgumentNullException("text");  
+            throw new ArgumentNullException("text");  
   
         //Create a comment adornment given the span, author and text.  
         CommentAdornment comment = new CommentAdornment(span, author, text);  
   
-        //Add it to the list of comments.   
+        //Add it to the list of comments.   
         this.comments.Add(comment);  
   
         //Raise the changed event.  
@@ -453,19 +453,19 @@ VSPackage에서 편집기 메뉴 명령과 같은 기능을 추가할 수 있습
 11. 추가 된 `RemoveComments()` 메서드.  
   
     ```csharp  
-    public void RemoveComments(SnapshotSpan span)  
+    public void RemoveComments(SnapshotSpan span)  
     {  
         EventHandler<CommentsChangedEventArgs> commentsChanged = this.CommentsChanged;  
   
         //Get a list of all the comments that are being kept   
         IList<CommentAdornment> keptComments = new List<CommentAdornment>(this.comments.Count);  
   
-        foreach (CommentAdornment comment in this.comments)  
+        foreach (CommentAdornment comment in this.comments)  
         {  
-            //find out if the given span overlaps with the comment text span. If two spans are adjacent, they do not overlap. To consider adjacent spans, use IntersectsWith.   
+            //find out if the given span overlaps with the comment text span. If two spans are adjacent, they do not overlap. To consider adjacent spans, use IntersectsWith.   
             if (comment.Span.GetSpan(span.Snapshot).OverlapsWith(span))  
             {  
-                //Raise the change event to delete this comment.   
+                //Raise the change event to delete this comment.   
                 if (commentsChanged != null)  
                     commentsChanged(this, new CommentsChangedEventArgs(null, comment));  
             }  
@@ -483,24 +483,24 @@ VSPackage에서 편집기 메뉴 명령과 같은 기능을 추가할 수 있습
     public Collection<CommentAdornment> GetComments(SnapshotSpan span)  
     {  
         IList<CommentAdornment> overlappingComments = new List<CommentAdornment>();  
-        foreach (CommentAdornment comment in this.comments)  
+        foreach (CommentAdornment comment in this.comments)  
         {  
             if (comment.Span.GetSpan(span.Snapshot).OverlapsWith(span))  
                 overlappingComments.Add(comment);  
         }  
   
-        return new Collection<CommentAdornment>(overlappingComments);  
+        return new Collection<CommentAdornment>(overlappingComments);  
     }  
     ```  
   
 13. 라는 클래스를 추가 `CommentsChangedEventArgs`다음과 같이 합니다.  
   
     ```csharp  
-    internal class CommentsChangedEventArgs : EventArgs  
+    internal class CommentsChangedEventArgs : EventArgs  
     {  
-        public readonly CommentAdornment CommentAdded;  
+        public readonly CommentAdornment CommentAdded;  
   
-        public readonly CommentAdornment CommentRemoved;  
+        public readonly CommentAdornment CommentRemoved;  
   
         public CommentsChangedEventArgs(CommentAdornment added, CommentAdornment removed)  
         {  
@@ -537,9 +537,9 @@ VSPackage에서 편집기 메뉴 명령과 같은 기능을 추가할 수 있습
 4.  일부 개인 필드를 추가 합니다.  
   
     ```csharp  
-    private readonly IWpfTextView view;  
-    private readonly IAdornmentLayer layer;  
-    private readonly CommentAdornmentProvider provider;  
+    private readonly IWpfTextView view;  
+    private readonly IAdornmentLayer layer;  
+    private readonly CommentAdornmentProvider provider;  
     ```  
   
 5.  관리자를 구독 하는 생성자를 추가 합니다 <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> 및 <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> 이벤트도는 `CommentsChanged` 이벤트입니다. 관리자는 정적 인스턴스화될 때문에 생성자가 private `Create()` 메서드.  
@@ -561,22 +561,22 @@ VSPackage에서 편집기 메뉴 명령과 같은 기능을 추가할 수 있습
 6.  추가 된 `Create()` 메서드는 공급자를 가져오거나 필요한 경우 하나 만듭니다.  
   
     ```csharp  
-    public static CommentAdornmentManager Create(IWpfTextView view)  
+    public static CommentAdornmentManager Create(IWpfTextView view)  
     {  
-        return view.Properties.GetOrCreateSingletonProperty<CommentAdornmentManager>(delegate { return new CommentAdornmentManager(view); });  
+        return view.Properties.GetOrCreateSingletonProperty<CommentAdornmentManager>(delegate { return new CommentAdornmentManager(view); });  
     }  
     ```  
   
 7.  추가 된 `CommentsChanged` 처리기입니다.  
   
     ```csharp  
-    private void OnCommentsChanged(object sender, CommentsChangedEventArgs e)  
+    private void OnCommentsChanged(object sender, CommentsChangedEventArgs e)  
     {  
-        //Remove the comment (when the adornment was added, the comment adornment was used as the tag).   
+        //Remove the comment (when the adornment was added, the comment adornment was used as the tag).   
         if (e.CommentRemoved != null)  
             this.layer.RemoveAdornmentsByTag(e.CommentRemoved);  
   
-        //Draw the newly added comment (this will appear immediately: the view does not need to do a layout).   
+        //Draw the newly added comment (this will appear immediately: the view does not need to do a layout).   
         if (e.CommentAdded != null)  
             this.DrawComment(e.CommentAdded);  
     }  
@@ -585,7 +585,7 @@ VSPackage에서 편집기 메뉴 명령과 같은 기능을 추가할 수 있습
 8.  추가 된 <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> 처리기입니다.  
   
     ```csharp  
-    private void OnClosed(object sender, EventArgs e)  
+    private void OnClosed(object sender, EventArgs e)  
     {  
         this.provider.Detach();  
         this.view.LayoutChanged -= OnLayoutChanged;  
@@ -596,19 +596,19 @@ VSPackage에서 편집기 메뉴 명령과 같은 기능을 추가할 수 있습
 9. 추가 된 <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> 처리기입니다.  
   
     ```csharp  
-    private void OnLayoutChanged(object sender, TextViewLayoutChangedEventArgs e)  
+    private void OnLayoutChanged(object sender, TextViewLayoutChangedEventArgs e)  
     {  
         //Get all of the comments that intersect any of the new or reformatted lines of text.  
         List<CommentAdornment> newComments = new List<CommentAdornment>();  
   
-        //The event args contain a list of modified lines and a NormalizedSpanCollection of the spans of the modified lines.    
-        //Use the latter to find the comments that intersect the new or reformatted lines of text.   
+        //The event args contain a list of modified lines and a NormalizedSpanCollection of the spans of the modified lines.    
+        //Use the latter to find the comments that intersect the new or reformatted lines of text.   
         foreach (Span span in e.NewOrReformattedSpans)  
         {  
             newComments.AddRange(this.provider.GetComments(new SnapshotSpan(this.view.TextSnapshot, span)));  
         }  
   
-        //It is possible to get duplicates in this list if a comment spanned 3 lines, and the first and last lines were modified but the middle line was not.   
+        //It is possible to get duplicates in this list if a comment spanned 3 lines, and the first and last lines were modified but the middle line was not.   
         //Sort the list and skip duplicates.  
         newComments.Sort(delegate(CommentAdornment a, CommentAdornment b) { return a.GetHashCode().CompareTo(b.GetHashCode()); });  
   

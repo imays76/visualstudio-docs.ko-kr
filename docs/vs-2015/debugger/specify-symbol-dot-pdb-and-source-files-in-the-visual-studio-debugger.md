@@ -29,15 +29,15 @@ helpviewer_keywords:
 - debugger
 ms.assetid: 1105e169-5272-4e7c-b3e7-cda1b7798a6b
 caps.latest.revision: 36
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 21cc710be92b00e8faba56582a733a6372f01130
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: adc5dc9be50055417ecb5136f3d3640144c5d69a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878754"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51733552"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Visual Studio 디버거에서 기호 파일(.pdb) 및 원본 파일 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ ms.locfileid: "49878754"
   
     ![도구 &#45; 옵션 &#45; 디버깅 &#45; 기호 페이지](../debugger/media/dbg-tools-options-symbols.png "DBG_Tools_Options_Symbols")  
   
-2. 폴더를 선택 합니다 ![도구&#47; 옵션&#47; 디버깅&#47;기호 폴더 아이콘](../debugger/media/dbg-tools-options-foldersicon.png "DBG_Tools_Options_FoldersIcon") 아이콘. 편집 가능한 텍스트가 **기호 파일(.pdb) 위치** 상자에 나타납니다.  
+2. 폴더 선택 ![도구&#47; 옵션&#47; 디버깅&#47;기호 폴더 아이콘](../debugger/media/dbg-tools-options-foldersicon.png "DBG_Tools_Options_FoldersIcon") 아이콘입니다. 편집 가능한 텍스트가 **기호 파일(.pdb) 위치** 상자에 나타납니다.  
   
 3. 기호 서버 또는 기호 위치에 대한 URL 또는 디렉터리 경로를 입력합니다. 문 완성 기능으로 올바른 형식을 찾을 수 있습니다.  
   
@@ -140,7 +140,7 @@ ms.locfileid: "49878754"
   
    이러한 이벤트 중 하나가 발생하면 디버거는 **로드된 기호 없음** 페이지를 표시하여 필요한 기호를 찾고 로드할 수 있게 해 줍니다.  
   
-   ![기호가 로드 페이지 없음](../debugger/media/dbg-nosymbolsloaded.png "DBG_NoSymbolsLoaded")  
+   ![로드 된 기호 없음 페이지](../debugger/media/dbg-nosymbolsloaded.png "DBG_NoSymbolsLoaded")  
   
 - 검색 경로를 변경하려면 선택되지 않은 경로를 선택하거나 **새로 만들기** 를 선택하고 새 경로를 입력합니다. 경로를 다시 검색하고 발견되는 기호 파일을 로드하려면 **로드** 를 선택합니다.  
   
@@ -219,7 +219,7 @@ ms.locfileid: "49878754"
   
 2. **공용 속성** 노드에서 **소스 파일 디버그**를 선택합니다.  
   
-3. 폴더 ![도구&#47; 옵션&#47; 디버깅&#47;기호 폴더 아이콘](../debugger/media/dbg-tools-options-foldersicon.png "DBG_Tools_Options_FoldersIcon") 아이콘. 편집 가능한 텍스트가 **소스 코드가 포함되어 있는 디렉터리** 목록에 나타납니다.  
+3. 폴더를 클릭 ![도구&#47; 옵션&#47; 디버깅&#47;기호 폴더 아이콘](../debugger/media/dbg-tools-options-foldersicon.png "DBG_Tools_Options_FoldersIcon") 아이콘입니다. 편집 가능한 텍스트가 **소스 코드가 포함되어 있는 디렉터리** 목록에 나타납니다.  
   
 4. 검색할 경로를 추가합니다.  
   
@@ -243,7 +243,7 @@ ms.locfileid: "49878754"
   
 4.  **소스 서버 지원 사용** 확인란을 선택합니다.  
   
-     ![소스 서버 옵션 사용](../debugger/media/dbg-options-general-enablesrcsrvr-checkbox.png "DBG_Options_General_EnableSrcSrvr_checkbox")  
+     ![원본 서버 옵션을 사용 하도록 설정](../debugger/media/dbg-options-general-enablesrcsrvr-checkbox.png "DBG_Options_General_EnableSrcSrvr_checkbox")  
   
 5.  (선택 사항) 원하는 자식 옵션을 선택합니다.  
   

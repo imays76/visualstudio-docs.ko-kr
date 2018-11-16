@@ -26,14 +26,14 @@ helpviewer_keywords:
 - visualizers, about visualizers
 ms.assetid: d2611385-0134-4387-8c5a-979fe625a462
 caps.latest.revision: 37
-ms.author: susanno
+ms.author: mikejo
 manager: douge
-ms.openlocfilehash: cdf4c9b3a2ea8dc1322a10799f7f7051b71e035c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f50dba2f236127bd2e155ea13cb8646f18de0e92
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306516"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51721915"
 ---
 # <a name="how-to-use-a-visualizer"></a>방법: 시각화 도우미 사용
 시각화 도우미를 사용하여 변수 또는 개체의 내용을 데이터 형식에 대해 의미 있는 방식으로 표시할 수 있습니다. 시각화 도우미를 사용할 수 있습니다 **DataTips**, **조사식** 창에는 **자동** 창 또는 **지역** 창.  

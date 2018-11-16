@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f81bde5c-3394-4b79-a315-c2f6491689b3
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0d340a858c152b371c296883c19309c79f77aba1
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 3d8f745a775f8cad3932f20525b09fe55fb857ee
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50218748"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51791841"
 ---
 # <a name="launch"></a>Launch
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
  **Start:** `Method`  
  명령줄 프로파일러 세션을 초기화하고 지정된 프로파일링 방법을 설정합니다.  
   
- **GlobalOn** 고 **GlobalOff**  
+ **GlobalOn** 및 **GlobalOff**  
  프로파일링을 다시 시작(**GlobalOn**)하거나 일시 중지(**GlobalOff**)하지만 프로파일링 세션을 종료하지 않습니다.  
   
  **ProcessOn:** `PID` 및 **ProcessOff**:`PID`  

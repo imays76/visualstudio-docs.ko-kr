@@ -1,5 +1,5 @@
 ---
-title: 'F # 디버깅 | Microsoft Docs'
+title: 디버깅 F# | Microsoft Docs
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -19,22 +19,22 @@ helpviewer_keywords:
 - F#, debugging
 ms.assetid: 20bcd51c-2d06-4281-9a1e-ef2b91d1a779
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd722e40a0579181e3c361706f0775aaf350c341
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4cfe65671e0f3d9b3e4702c9f08740c6694286ce
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49209575"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51734804"
 ---
 # <a name="debugging-f"></a>F# 디버깅 #
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 F# 디버깅은 다음과 같은 몇 가지 예외를 제외하고는 관리되는 언어 디버깅과 비슷합니다.  
   
--   합니다 **자동** 창 F # 변수가 표시 되지 않습니다.  
+-   합니다 **자동** 창에 표시 되지 않습니다 F# 변수입니다.  
   
 -   F#의 경우에는 편집하며 계속하기가 지원되지 않습니다. 디버깅 세션 중에 F# 코드를 편집할 수는 있지만 편집해서는 안 됩니다. 디버깅 세션 중에는 코드 변경 내용이 적용되지 않으므로 디버깅 중에 F# 코드를 편집하면 소스 코드와 디버깅되는 코드가 일치하지 않습니다.  
   
