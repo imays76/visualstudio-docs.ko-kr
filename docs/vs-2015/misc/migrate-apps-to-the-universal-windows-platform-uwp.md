@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5279ab9b-71d9-4be5-81f6-a1f24b06f5fb
 caps.latest.revision: 19
-author: stevehoag
-ms.author: shoag
+author: gewarren
+ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d59ccac2ef8f91fae9bede5951ff42ec5a43be0e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8d4bc5d8e8a24483c30ac813d3253626e58dd353
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848555"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51791750"
 ---
 # <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>UWP(유니버설 Windows 플랫폼)로 앱 마이그레이션
 필요한 경우 Windows 스토어 8.1 앱, Windows Phone 8.1 앱 또는 Visual Studio 2015 RC로 만든 유니버설 Windows 앱에 대한 기존 프로젝트 파일을 수동으로 변경하면 Visual Studio 2015 RTM과 함께 사용할 수 있습니다. Windows 앱 프로젝트 및 Windows Phone 프로젝트를 둘 다 포함하는 Windows 8.1 유니버설 앱이 있는 경우 각 프로젝트를 마이그레이션하는 단계를 따라야 합니다.  
@@ -503,7 +503,7 @@ ms.locfileid: "49848555"
      <PackageDependency  
           Name="Microsoft.VCLibs.120.00"  
           Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"  
-          MinVersion="12.0.30113.0" />  
+          MinVersion="12.0.30113.0" />  
     </Dependencies>  
   
     ```  

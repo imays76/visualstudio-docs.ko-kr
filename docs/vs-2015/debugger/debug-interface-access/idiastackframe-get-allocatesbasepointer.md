@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaStackFrame::get_allocatesBasePointer
 ms.assetid: a91e9c8e-c5e3-4887-a60b-f03b5a98f30c
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e781ca0c96372e79c3cbdfed45f42274f32f7c2a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1247c129debfc9138f118155cec5391e84683940
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890610"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51789150"
 ---
 # <a name="idiastackframegetallocatesbasepointer"></a>IDiaStackFrame::get_allocatesBasePointer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49890610"
 ## <a name="syntax"></a>구문  
   
 ```cpp#  
-HRESULT get_allocatesBasePointer (   
+HRESULT get_allocatesBasePointer (   
    BOOL* pRetVal  
 );  
 ```  

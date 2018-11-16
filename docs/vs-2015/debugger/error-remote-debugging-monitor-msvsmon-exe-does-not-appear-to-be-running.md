@@ -18,15 +18,15 @@ dev_langs:
 - C++
 ms.assetid: 86db9931-50e3-4095-b161-802ed8ef39c9
 caps.latest.revision: 24
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4a706ec1f0a9fb82a02e052e81d282aef4a5a6ba
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 252ed59b5e2ace61e3529743d2d01afb4a4fb360
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252592"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51746333"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>오류: Microsoft Visual Studio 원격 디버깅 모니터(MSVSMON.EXE)가 원격 컴퓨터에서 실행 중인 것 같지 않습니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

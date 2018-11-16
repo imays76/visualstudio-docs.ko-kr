@@ -13,14 +13,14 @@ helpviewer_keywords:
 - FxCopCmd errors
 ms.assetid: bb614ed0-1b7c-4b56-99ae-da50ef6cfef9
 caps.latest.revision: 12
-ms.author: susanno
+ms.author: mikejo
 manager: douge
-ms.openlocfilehash: eae6b19d9901eb2a2d047b4c262b02a825c0f83b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 828805e0746fb985ea310b755cdaaa252e215a07
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303214"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51751727"
 ---
 # <a name="fxcopcmd-errors"></a>FxCopCmd 오류
 FxCopCmd 심각한 되도록 모든 오류를 고려 하지 않습니다. FxCopCmd 부분 분석을 수행 하는 데 충분 한 정보가 있으면 발생 하는 분석 및 보고서 오류 수행 합니다. 32 비트 정수 오류 코드, 오류에 해당 하는 숫자 값의 비트 조합을 포함 합니다.  

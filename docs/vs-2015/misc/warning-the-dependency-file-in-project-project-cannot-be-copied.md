@@ -13,15 +13,15 @@ f1_keywords:
 - vs.tasklisterror.copy_version_warning
 ms.assetid: 116819f3-a4d4-48b5-9e71-7c54660d38ef
 caps.latest.revision: 11
-author: mikeblome
-ms.author: mblome
+author: gewarren
+ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 95b566c719c7d6adc27039a691315e93eb43eb05
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3dad547664768247f7837b9d65797ffba15bbdf8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185603"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51794818"
 ---
 # <a name="warning-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-overwrite-the-reference-39file39"></a>경고: 종속성 &#39;파일&#39; 프로젝트에서 &#39;프로젝트&#39; 대 한 참조를 덮어쓰므로 실행된 디렉터리에 복사할 수 없습니다 &#39;파일입니다.&#39;
 참조 간에 충돌이 존재합니다. 즉, 실행할 응용 프로그램의 bin 디렉터리에 파일 이름이 같은 둘 이상의 고유 어셈블리 파일을 복사하려고 했습니다. 종속성 중 하나가 기본 참조이므로 실행 디렉터리에서 충돌을 해결할 수 없습니다.  

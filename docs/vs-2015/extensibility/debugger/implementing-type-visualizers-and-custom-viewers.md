@@ -16,12 +16,12 @@ ms.assetid: abef18c0-8272-4451-b82a-b4624edaba7d
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 15860e6716d30b19d2223faa8b6bb13aa0eaa466
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 11d047904e932646eedc974a50590dbe0a9ea99e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49838740"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51791282"
 ---
 # <a name="implementing-type-visualizers-and-custom-viewers"></a>형식 시각화 도우미 및 사용자 지정 뷰어 구현
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
