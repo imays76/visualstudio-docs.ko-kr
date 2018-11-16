@@ -18,12 +18,12 @@ ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: af377c3f0ff5e49e43d00395d8f08bf4498e6636
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 00ed8231641718b6d0dce8d535b0c43e40b83dd8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883973"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51783040"
 ---
 # <a name="making-commands-available"></a>명령을 사용 가능하게 지정
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Visual Studio에 여러 Vspackage를 추가 하는 경우 사용자 인터페이
 ## <a name="delayed-loading"></a>지연 로드  
  사용 하도록 설정 하는 일반적인 방법은 해당 명령이 UI에 표시 됩니다 있지만 패키지 자체에 사용자가 명령 중 하나를 클릭할 때까지 로드 되지 않습니다 있도록 VSPackage를 디자인 하는 지연 로드. .Vsct 파일에서이 위해 명령 플래그가 없으므로 명령을 만듭니다.  
   
- 다음 예제에서는.vsct 파일에서 메뉴 명령 정의 보여 줍니다. Visual Studio 패키지 템플릿에서 생성 되는 명령입니다 때 합니다 **메뉴 명령을** 템플릿에서 옵션을 선택 합니다.  
+ 다음 예제에서는.vsct 파일에서 메뉴 명령 정의 보여 줍니다. Visual Studio 패키지 템플릿에 의해 생성 되는 명령입니다 때 합니다 **메뉴 명령을** 템플릿에서 옵션을 선택 합니다.  
   
 ```xml  
 <Button guid="guidTopLevelMenuCmdSet" id="cmdidTestCommand" priority="0x0100" type="Button">  
