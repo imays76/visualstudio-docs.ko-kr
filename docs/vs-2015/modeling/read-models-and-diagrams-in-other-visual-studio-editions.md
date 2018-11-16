@@ -11,15 +11,15 @@ helpviewer_keywords:
 - models, versions of Visual Studio
 ms.assetid: 46eee279-a9e4-4742-a024-5bd2cf032b86
 caps.latest.revision: 22
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c80404320f399139a18d863d71147d33a11ce86d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6d104d8d92345ba56d390fdd7ad9b856432b4c92
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885202"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51757364"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>다른 Visual Studio 버전에서 모델 및 다이어그램 읽기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

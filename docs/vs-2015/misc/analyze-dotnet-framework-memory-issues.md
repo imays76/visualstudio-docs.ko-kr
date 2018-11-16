@@ -13,14 +13,14 @@ f1_keywords:
 - vs.diagnostics.managedmemoryanalysis
 ms.assetid: 43341928-9930-48cf-a57f-ddcc3984b787
 caps.latest.revision: 9
-ms.author: susanno
+ms.author: mikejo
 manager: douge
-ms.openlocfilehash: f33b9e82ee1248988c949a9edea9f09de0d368df
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5b5b79e351f828f443e133f40c322ffba3f1a8b6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812571"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51810483"
 ---
 # <a name="analyze-net-framework-memory-issues"></a>.NET Framework 메모리 문제 분석
 관리되는 Visual Studio 메모리 분석기를 사용하여 .NET Framework 코드에서 메모리 누수 및 비효율적인 메모리 사용을 찾습니다. 대상 코드의 최소 .NET Framework 버전은 .NET Framework 4.5입니다.  

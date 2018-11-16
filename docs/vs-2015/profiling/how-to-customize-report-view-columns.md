@@ -16,15 +16,15 @@ helpviewer_keywords:
 - performance reports, customizing
 ms.assetid: cb6f6d30-52a5-4d92-ab07-1d5ddb67884c
 caps.latest.revision: 23
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b5bc7b18e4df3baac4f6acb65d39c9ab66bcafa5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bfa51d15145606b7f17dc21d91e240ec006826bc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202815"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51738799"
 ---
 # <a name="how-to-customize-report-view-columns"></a>방법: 보고서 뷰 열 사용자 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -16,15 +16,15 @@ helpviewer_keywords:
 - UML diagrams, generating code
 ms.assetid: 2790e64d-7728-4c2e-a4dd-4131e795f730
 caps.latest.revision: 53
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0b5c75fda7ddd386e0b651c0f3ae008e7fb3d1c8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a8108a552f21504714fea84bcb29194db4d947cf
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827989"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51764784"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>UML 클래스 다이어그램에서 코드 생성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -172,7 +172,7 @@ Visual Studio에서 UML 클래스 다이어그램에서 Visual C#.NET 코드를 
    |--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |        이름        |                                                                                                                                                                                                                                                  이 바인딩의 이름입니다. 포함하는 패키지 또는 모델에서 상속한 바인딩을 재정의하려면 재정의할 바인딩과 동일한 이름을 사용합니다.                                                                                                                                                                                                                                                  |
    |     덮어쓰기      |                                                                                                                                                                                                                                                                                                      true이면 모든 기존 코드를 덮어씁니다.                                                                                                                                                                                                                                                                                                       |
-   |    대상 이름     | 생성된 파일의 이름입니다.<br /><br /> 식을이 문자열에 같은 삽입할 `{Name}` 또는 `{Owner.Name}`합니다. 예를 들어, 작성할 수 있습니다: `{Owner.Name}_{Name}`합니다. 식은 모델 요소에 대해 평가됩니다. 식에서는 요소의 속성을 사용할 수 있지만 메서드의 속성은 사용할 수 없습니다. 속성을 사용할 수를 찾으려면 형식의 속성을 보고 **Microsoft.VisualStudio.Uml.\\ ***. \*\*중요:* \* `{Name}` 하거나 `{Owner.Name}` 에서만 사용할 수는 **대상 이름** 속성입니다.   생성된 클래스의 이름을 변경하려면 템플릿을 수정해야 합니다. 자세한 내용은 [텍스트 템플릿 작성](#writing)합니다. |
+   |    대상 이름     | 생성된 파일의 이름입니다.<br /><br /> 식을이 문자열에 같은 삽입할 `{Name}` 또는 `{Owner.Name}`합니다. 예를 들어, 작성할 수 있습니다: `{Owner.Name}_{Name}`합니다. 식은 모델 요소에 대해 평가됩니다. 식에서는 요소의 속성을 사용할 수 있지만 메서드의 속성은 사용할 수 없습니다. 속성을 사용할 수를 찾으려면 형식의 속성을 보고 **Microsoft.VisualStudio.Uml.\\ ***. \*\*중요:* \* `{Name}` 하거나 `{Owner.Name}` 에서만 사용할 수는 **대상 이름** 속성입니다. 생성된 클래스의 이름을 변경하려면 템플릿을 수정해야 합니다. 자세한 내용은 [텍스트 템플릿 작성](#writing)합니다. |
    |    프로젝트 경로    |                                                                      변환의 출력 파일을 포함할 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로젝트의 경로를 지정합니다. 새 프로젝트를 만들려면 형식화된 값을 사용하고, 줄임표 단추를 선택 (**[...]** ) 기존 프로젝트를 선택 합니다.<br /><br /> 새 프로젝트가 없는 경우 만들어지며, C# 클래스 라이브러리 프로젝트가 됩니다.<br /><br /> 이렇게 하려면 프로젝트를 직접 입력해야 합니다. %ProgramFiles% 또는 %LocalAppData%와 같은 환경 변수 매크로를 포함할 수 있습니다.                                                                       |
    |  대상 디렉터리  |                                                                                          대상 파일이 생성된 폴더입니다. 경로는 프로젝트 폴더에 상대적입니다.<br /><br /> `{PackageStructure}` 식을 사용하여, 포함하는 패키지의 이름에 해당하는 경로를 삽입할 수 있습니다. 기본값은 `\GeneratedCode\{PackageStructure}`입니다. %TEMP% 또는 %HomePath%와 같은 환경 변수도 포함할 수 있습니다. **중요:** `{PackageStructure}` 에서만 사용할 수는 **대상 디렉터리** 속성입니다.                                                                                          |
    | 템플릿 파일 경로 |                                                                                                                                                           변환을 수행할 템플릿입니다.<br /><br /> 제공된 템플릿을 사용하거나 사용자 고유의 템플릿을 만들 수 있습니다. 다음 위치에서 제공된 템플릿을 찾을 수 있습니다.<br /><br /> …\Program Files\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\Microsoft\Architecture Tools\Extensibility\Templates\Text\                                                                                                                                                           |
