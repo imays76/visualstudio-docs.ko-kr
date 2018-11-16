@@ -24,15 +24,15 @@ helpviewer_keywords:
 - IntelliTrace, debugging after a crash
 ms.assetid: 486bfec2-39bd-4d78-892a-42352128ee52
 caps.latest.revision: 142
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6f96b0df5028974317be46fed7c727b3141e8b64
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a1cd1cc041970588cf7c90c2c6275100687e1bcb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912983"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51737210"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ IntelliTrace를 사용하여 코드의 실행 내역을 기록하고 추적하�
 |||  
 |-|-|  
 |**지원됨**|-Visual Basic 및 Visual C# 응용 프로그램을.NET Framework 2.0 이상 버전을 사용 합니다.<br />     ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 및 64비트 앱을 포함한 대부분의 응용 프로그램을 디버깅할 수 있습니다.<br />     IntelliTrace 사용 하 여 SharePoint 응용 프로그램을 디버깅 하려면 참조 [연습: IntelliTrace를 사용 하 여 SharePoint 응용 프로그램을 디버깅](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)합니다.<br />     IntelliTrace 사용 하 여 Microsoft Azure 앱 디버그를 참조 하세요 [IntelliTrace 및 Visual Studio를 사용 하 여 게시 된 클라우드 서비스 디버깅](http://go.microsoft.com/fwlink/?LinkID=262248)합니다.|  
-|**제한적된 지원**|-F #를 실험적으로 응용 프로그램<br />-Windows 스토어 앱만 이벤트에 대 한 지원|  
+|**제한적된 지원**|- F# 실험적으로 앱<br />-Windows 스토어 앱만 이벤트에 대 한 지원|  
 |**지원 되지 않음**|-C + +, 다른 언어 및 스크립트<br />-Windows 서비스, Silverlight, Xbox 또는 [!INCLUDE[winmobile](../includes/winmobile-md.md)] 앱|  
   
 > [!NOTE]
