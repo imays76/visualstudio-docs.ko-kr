@@ -13,17 +13,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ceb739cc8ad2dc65b1aca6c38d6c4f49ec792215
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 33e34a78fc06bc2b7f40129e33b6d2d78ff561c5
+ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39635871"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51645213"
 ---
 # <a name="extend-the-output-window"></a>출력 창 확장
 합니다 **출력** 창 집합이 읽기/쓰기 텍스트 창이 있습니다. Visual Studio에는 이러한 기본 제공 창이: **빌드**에 프로젝트에서 빌드에 대 한 메시지를 통신 및 **일반**는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE에 대 한 메시지를 통신 합니다. 프로젝트에 대 한 참조를 가져올는 **빌드** 창을 통해 자동으로 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> 인터페이스 메서드 및 Visual Studio에 대 한 직접 액세스를 제공 합니다 **일반** 통해 창을 <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> 서비스입니다. 기본 제공 창 외에도 있습니다 만들고 관리할 수 있습니다 사용자 고유의 사용자 지정 창입니다.  
   
- 제어할 수 있습니다.는 **출력** 창을 통해 직접 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> 및 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> 인터페이스입니다. <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> 에서 제공 하는 인터페이스를 <xref:Microsoft.VisualStudio.Shell.Interop.SVsOutputWindow> 서비스를 만들기, 검색 및 제거에 대 한 메서드를 정의 **출력** 창입니다. <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> 인터페이스 창이 표시, 숨기기 창 및 해당 텍스트를 조작 하기 위한 메서드를 정의 합니다. 제어 하는 또 다른 방법은 합니다 **출력** 창을 사용 하는 것을 <xref:EnvDTE.OutputWindow> 및 <xref:EnvDTE.OutputWindowPane> Visual Studio 자동화 개체 모델에서 개체입니다. 거의 모든 기능을 캡슐화 하는 이러한 개체는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> 고 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> 인터페이스입니다. 또한 합니다 <xref:EnvDTE.OutputWindow> 및 <xref:EnvDTE.OutputWindowPane> 열거를 쉽게 수행할 수 있도록 일부 높은 수준의 기능을 추가 하는 개체를 **출력** 창 창에서 텍스트를 검색 하 합니다.  
+ 제어할 수 있습니다.는 **출력** 창을 통해 직접 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> 및 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> 인터페이스입니다. <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> 에서 제공 하는 인터페이스를 <xref:Microsoft.VisualStudio.Shell.Interop.SVsOutputWindow> 서비스를 만들기, 검색 및 제거에 대 한 메서드를 정의 **출력** 창입니다. <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> 인터페이스 창이 표시, 숨기기 창 및 해당 텍스트를 조작 하기 위한 메서드를 정의 합니다. 제어 하는 또 다른 방법은 합니다 **출력** 창을 사용 하는 것을 <xref:EnvDTE.OutputWindow> 및 <xref:EnvDTE.OutputWindowPane> Visual Studio 자동화 개체 모델에서 개체입니다. 거의 모든 기능을 캡슐화 하는 이러한 개체는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> 고 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> 인터페이스입니다. 또한 합니다 <xref:EnvDTE.OutputWindow> 및 <xref:EnvDTE.OutputWindowPane> 열거를 쉽게 수행할 수 있도록 일부 높은 수준의 기능을 추가 하는 개체를 **출력** 창 창에서 텍스트를 검색 하 합니다.  
   
 ## <a name="create-an-extension-that-uses-the-output-pane"></a>출력 창에서 사용 하는 확장명 만들기  
  출력 창의 다양 한 측면을 실행 하는 확장을 만들 수 있습니다.  
