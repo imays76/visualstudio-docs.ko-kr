@@ -16,15 +16,15 @@ dev_langs:
 - C++
 ms.assetid: 0f0df097-bbaf-46ad-9ad1-ef5f40435079
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 19e57f9cebf6e9a8086f736735527fb647544228
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3b016c8565b3c501c5cc41802512f02b1c10d615
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833761"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51798653"
 ---
 # <a name="just-my-code"></a>내 코드만
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -165,7 +165,7 @@ ms.locfileid: "49833761"
   
 |특성|설명|  
 |---------------|-----------------|  
-|`Name`|필수. 모듈의 전체 경로입니다. Windows 와일드 카드 문자 `?`(0개 또는 한 개의 문자) 및 `*`(0개 이상의 문자)를 사용할 수 있습니다. 예를 들어 개체에 적용된<br /><br /> `<Module Name=”?:\3rdParty\UtilLibs\*” />`<br /><br /> 는 드라이브의 `\3rdParty\UtilLibs`에 있는 모든 모듈을 외부 코드로 처리하도록 디버거에 지시합니다.|  
+|`Name`|필수. 모듈의 전체 경로입니다. Windows 와일드 카드 문자 `?`(0개 또는 한 개의 문자) 및 `*`(0개 이상의 문자)를 사용할 수 있습니다. 예를 들면 다음과 같습니다.<br /><br /> `<Module Name=”?:\3rdParty\UtilLibs\*” />`<br /><br /> 는 드라이브의 `\3rdParty\UtilLibs`에 있는 모든 모듈을 외부 코드로 처리하도록 디버거에 지시합니다.|  
 |`Company`|선택 사항입니다. 실행 파일에 포함된 모듈을 게시하는 회사의 이름입니다. 이 특성을 사용하여 모듈을 구분할 수 있습니다.|  
   
  **파일 요소 특성**  
