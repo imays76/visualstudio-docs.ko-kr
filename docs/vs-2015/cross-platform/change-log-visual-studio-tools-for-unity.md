@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
 caps.latest.revision: 14
-author: TerryGLee
-ms.author: tglee
+author: conceptdev
+ms.author: crdun
 manager: ghogen
-ms.openlocfilehash: 98d0aa1be1ac30de74a226735ca90743474043b7
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: f21a5491d1b0e23bff90ce0105b81eb6291ac7e5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000844"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51807195"
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>변경 로그(Visual Studio Tools for Unity)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -333,9 +333,9 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 ### <a name="bug-fixes"></a>버그 수정
 
--   Visual Studio 테마 처리 문제를 수정합니다. 이전에 검은색 테마의 대화 상자가 빈 나타날 수 있습니다.
+-   Visual Studio 테마 처리 문제를 수정합니다. 이전에는 검은색 테마의 대화 상자가 비어 있는 것처럼 표시될 수 있었습니다.
 
--   Unity를 다시 컴파일하는 동안 디버거를 연결할 때 Unity 중지를 수정 합니다.
+-   Unity를 다시 컴파일하는 동안 디버거를 연결하는 경우 Unity 중지를 수정합니다.
 
 -   다른 시스템에서 컴파일된 원격 편집기 또는 플레이어를 디버그하는 경우의 중단점 문제를 수정합니다.
 
@@ -345,7 +345,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 -   범위 밖에 표시되는 라이브 변수를 방지하기 위해 디버거에서의 변수 범위 처리를 수정합니다.
 
--   디버거의 식 계산에서 정적 멤버 조회 문제를 수정 합니다.
+-   디버거의 식 계산에서 정적 멤버 조회 문제를 수정합니다.
 
 -   정적 필드 및 속성을 표시하기 위해 디버거의 식 계산에서 유형 표시를 수정합니다.
 
