@@ -14,15 +14,15 @@ helpviewer_keywords:
 - profilng tools,sampling method
 ms.assetid: be2dbdd0-fc88-45f9-a1d5-bcb4f64e17ad
 caps.latest.revision: 24
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e93a7042917daaabdd789c6990c5530b25e66fcd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9841911dbb1fc9bb97eb995534af3eaec73d10e9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305840"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51756967"
 ---
 # <a name="collecting-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line"></a>프로파일러 명령줄을 사용하여 독립 실행형 응용 프로그램에 대한 응용 프로그램 통계 수집
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
