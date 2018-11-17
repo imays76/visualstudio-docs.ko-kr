@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
 manager: douge
-ms.openlocfilehash: e7b7f30378f863e119c121b1805aa5f805fa60ed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f498ce1a0176bc0ebb1b705a13333a63e89776a6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260184"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51802124"
 ---
 # <a name="build-cross-platform-mobile-apps-with-visual-c"></a>Visual c + +를 사용 하 여 플랫폼 간 모바일 앱 빌드
 플랫폼 간 모바일 개발용 Visual C++를 사용하여 Android, iOS 및 Windows 장치용 플랫폼 간 코드를 빌드할 수 있습니다. 이는 Visual Studio 2015에서 사용할 수 있는 선택적 기능으로, Visual C++를 사용하여 iOS, Android 및 Windows용 플랫폼 간 코드를 개발할 수 있게 해줍니다.  

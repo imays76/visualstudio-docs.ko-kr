@@ -16,12 +16,12 @@ author: dgriffen
 manager: douge
 ms.workload:
 - dagriffe
-ms.openlocfilehash: 94d785ce55b57e35b0880537e099cbc3e03d20ab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3c1dfa0e3de06bcd6c61472a085ea3c4cdeeac27
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855818"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51780791"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>VSIX 언어 팩 스키마 2.0 참조
 
@@ -31,7 +31,7 @@ VSIX 언어 팩 스키마 VSIX 패키지에 대 한 지역화 된 설치 정보�
 
 언어 팩 파일의 루트 요소는 `<PackageLanguagePackManifest>`의 특성을 사용 하 여 `Version`, 언어 팩 형식의 버전입니다. 설정 하 여 매니페스트에 지정 된 언어 팩 형식의 버전 2.0에 설명 합니다 `Version` 특성 값을 `Version="2.0.0"`입니다. 루트 요소에는 정확히 하나의 자식 포함 `<Metadata>` 요소입니다.
 
-### <a name="packagelangaugepackmanifest-element"></a>PackageLangaugePackManifest 요소
+### <a name="packagelanguagepackmanifest-element"></a>PackageLanguagePackManifest 요소
 
 내는 `<PackageLanguagePackManifest>` 요소는 다음과 같은 요소가 있어야 합니다.
 
