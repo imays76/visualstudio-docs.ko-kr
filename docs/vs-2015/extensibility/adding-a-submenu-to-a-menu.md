@@ -18,12 +18,12 @@ ms.assetid: 692600cb-d052-40e2-bdae-4354ae7c6c84
 caps.latest.revision: 44
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8e822cf57b8fee46b1bfb7e9f6801c89ef66daf3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 14ad9d2daf603dd2ca80a784251f19503fee1cba
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199123"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51738323"
 ---
 # <a name="adding-a-submenu-to-a-menu"></a>메뉴에 하위 메뉴 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,7 +93,7 @@ ms.locfileid: "49199123"
 1.  TestCommand.cs를 열고 기존 명령 id입니다. 후 다음 명령 ID를 추가 합니다.  
   
     ```csharp  
-    public const int cmdidTestSubCmd = 0x105;  
+    public const int cmdidTestSubCmd = 0x105;  
     ```  
   
 2.  하위 명령을 추가 합니다. 명령 생성자를 찾습니다. 에 대 한 호출 바로 뒤에 다음 줄을 추가 합니다 `AddCommand` 메서드.  

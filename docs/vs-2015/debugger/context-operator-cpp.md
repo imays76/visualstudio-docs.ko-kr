@@ -25,15 +25,15 @@ helpviewer_keywords:
 - native expression evaluator
 ms.assetid: 73cc9afe-f4a4-474e-bb89-5a33fb5e570c
 caps.latest.revision: 29
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8e3bb3994792eef69fec52fe580904c0285f827e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5807b8e3c6a85c25511374e756b02fabfa5abba5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874725"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51731680"
 ---
 # <a name="context-operator-c"></a>컨텍스트 연산자(C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ C++에서 컨텍스트 연산자를 사용하여 중단점 위치, 변수 이름
   
 - *모듈* 은 모듈의 이름입니다. 이름이 같은 여러 모듈을 구분하기 위해 전체 경로를 사용할 수 있습니다.  
   
-   *모듈* 경로에 쉼표, 공백 또는 중괄호가 포함되어 있으면 컨텍스트 파서가 문자열을 적절하게 인식할 수 있도록 경로에 큰따옴표를 사용해야 합니다. 작은따옴표는 Windows 파일 이름의 일부로 간주되므로 큰따옴표를 사용해야 합니다. 예를 들어 개체에 적용된  
+   *모듈* 경로에 쉼표, 공백 또는 중괄호가 포함되어 있으면 컨텍스트 파서가 문자열을 적절하게 인식할 수 있도록 경로에 큰따옴표를 사용해야 합니다. 작은따옴표는 Windows 파일 이름의 일부로 간주되므로 큰따옴표를 사용해야 합니다. 예를 들면 다음과 같습니다.  
   
   ```cpp  
   {,,"a long, long, library name.dll"} g_Var  

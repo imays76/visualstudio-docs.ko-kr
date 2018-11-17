@@ -20,15 +20,15 @@ helpviewer_keywords:
 - debugger, Web application errors
 ms.assetid: 6060e94e-71dc-49f2-bb59-2584216eadbf
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1a90a684a9de45e1fba67460d0ba0f01554d248f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b6215648cba97e17ab143538afb4936a480adae4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207196"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51769030"
 ---
 # <a name="error-a-security-check-failed-because-the-iis-admin-service-did-not-respond"></a>오류: IIS 관리자 서비스에서 응답이 없기 때문에 보안 검사에 실패했습니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
