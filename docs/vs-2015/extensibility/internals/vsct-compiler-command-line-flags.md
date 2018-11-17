@@ -16,12 +16,12 @@ ms.assetid: 9dc6c33f-e6cf-4cf2-9b05-e8f7bfac1cfb
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fe76797d64bf2fac4f077fd5c2e5f582cfb0448f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 628c9ef34fc23776672a4252886c091a38f63b4b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260717"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51734958"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>VSCT 컴파일러 명령줄 플래그
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,15 +44,15 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 [-I<include-path>]* [-L<language>] [-E[C|H|N]:<name>]  
   
   -D    Specify any additional preprocessor defines  
-  -I    Indcate what additional include paths to send to the preprocessor  
-  -L    Specify the langauge to use when selecting strings  
+  -I    Indicate what additional include paths to send to the preprocessor  
+  -L    Specify the language to use when selecting strings  
   -E    Emit C# objects in the specified namespace for command items,  
-        folowed by [L|F|H|N]:<value>  
+        followed by [L|F|H|N]:<value>  
         F = Name of the file to emit (used if -EL is provided)  
         L = Name of a language providing a CodeDOM provider  
         N = namespace (required if -EL is provided)  
         H = C++ header  
-  -c    Clean build skipping dependancy checks  
+  -c    Clean build skipping dependency checks  
   -v    Verbose output  
 ```  
   
@@ -66,7 +66,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 |-D|모든 추가 정의 된 기호를 지정 합니다.|  
 |-I|추가 포함 파일 참조를 확인할 때 사용 해야 하는 경로 나타냅니다.|  
 |-L|지정 된 <xref:System.Globalization.CultureInfo> 예를 들어 "EN-US" 문화권 이름입니다.|  
-|-E|C# 항목 명령 뒤에 지정된 된 네임 스페이스에서 개체를 내보내지는 [C&#124;H&#124;N]:*filename*여기서 C = C#, H c + + 헤더, N = = 네임 스페이스. 네임 스페이스는 C#에 대 한 필요 합니다.|  
+|-E|내보내기 C# 뒤에 명령 항목에 대 한 지정된 된 네임 스페이스에는 개체 [C&#124;H&#124;N]:*filename*여기서 C = C#, H c + + 헤더, N = 네임 스페이스 =. 네임 스페이스는 C#에 대 한 필요 합니다.|  
 |-v|자세한 정보를 출력 합니다.|  
   
  -L 스위치에 해당 하는 이진.cto 파일을 생성 하는 문자열의 그룹을 선택 하려면 컴파일러에 지시 합니다 지정 <xref:System.Globalization.CultureInfo> 문화권 이름입니다. 지정 된 문화권 이름에는 하나 이상의 언어 특성과 일치 해야 [Strings 요소](../../extensibility/strings-element.md) .vsct 파일에서 합니다. 포함 하는에서 상속 된 문자열 요소를 언어 특성이 없는 경우 [CommandTable 요소](../../extensibility/commandtable-element.md)합니다.  

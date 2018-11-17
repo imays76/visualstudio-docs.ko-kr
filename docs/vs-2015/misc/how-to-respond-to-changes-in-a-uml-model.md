@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f0300371-9cac-4def-a3f5-7d7b62dcd6f3
 caps.latest.revision: 3
-author: alancameronwills
-ms.author: awills
+author: gewarren
+ms.author: gewarren
 manager: kamrani
-ms.openlocfilehash: 2352a6ba3c03df7c89b8888102fd5860a2c48810
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3dfb863828c20df36b59a66d7198613b1a21eb29
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294361"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51725203"
 ---
 # <a name="how-to-respond-to-changes-in-a-uml-model"></a>방법: UML 모델의 변경 내용에 응답
 Visual Studio의 UML 모델에서 변경이 발생할 때마다 실행되는 코드를 작성할 수 있습니다. 사용자 및 다른 Visual Studio 확장에 의해 직접 수행된 변경에 대해 똑같이 반응합니다. UML 모델을 지원하는 Visual Studio 버전을 확인하려면 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.  

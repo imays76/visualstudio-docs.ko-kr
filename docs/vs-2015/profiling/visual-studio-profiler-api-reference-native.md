@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Profiler, API
 ms.assetid: a0c3be92-c263-4678-9fb9-bafead3bd5f5
 caps.latest.revision: 20
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 780556a3c36880bdf24db03a626ba06c95fb4cba
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b3c2322b3d49b88ccd7c09cc8011548d5e29a340
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185941"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51772445"
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Visual Studio 프로파일러 API 참조(네이티브)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

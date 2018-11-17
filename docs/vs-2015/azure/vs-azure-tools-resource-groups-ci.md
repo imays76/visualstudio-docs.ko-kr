@@ -9,12 +9,12 @@ ms.topic: article
 ms.workload: azure-vs
 ms.date: 08/01/2016
 ms.author: mlearned
-ms.openlocfilehash: f6404b15e8a7cd3f95ac63bbae6076ef62fcff06
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: b20a43181ad4d36377e61434b880b491543a6c47
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51003008"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51791607"
 ---
 # <a name="continuous-integration-in-azure-devops-services-using-azure-resource-group-deployment-projects"></a>Azure 리소스 그룹 배포 프로젝트를 사용 하 여 Azure DevOps 서비스에서 연속 통합
 Azure 템플릿을 배포 하려면 다양 한 단계에서 작업을 수행 합니다: Azure에 빌드, 테스트, 복사 ("스테이징" 라고도 함) 및 템플릿 배포 합니다. Azure DevOps 서비스에 템플릿을 배포 하려면 두 가지가 있습니다. 두 방법 모두 동일한 결과 제공, 따라서 워크플로 가장 잘 맞는 하나를 선택 합니다.

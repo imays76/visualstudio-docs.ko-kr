@@ -13,12 +13,12 @@ ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cece4eb8b2d18f7d3b4297ab06fc01f4e54f8d47
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4460adc56b139cf89cbd0192efd9f453da9070b5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926646"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51734426"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Visual Studio의 복합 패턴
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -401,7 +401,7 @@ ms.locfileid: "49926646"
  선택 핸들은 사각형 패턴 개체의 경계 상자 주위 그릴 사각형입니다. 아래 차트 그래픽 개체 핸들, 크기 조정 및 내부 편집 모양을 가질 수 있는 다양 한 상태의 예를 보여 줍니다. 핸들의 크기를 창 테두리 가장자리 메트릭을 사용 하 여 연계 해야 합니다 **GetSystemMetrics** API.  
 
 
-|          시스템 상태          |  모양   |                                                                  시각적 세부 정보                                                                  |
+|          상태          |  모양   |                                                                  시각적 세부 정보                                                                  |
 |-------------------------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
 |     **선택 되지 않음**      |    기본    |                 ![기본 단추 상태](../../extensibility/ux-guidelines/media/0713-10-defaultstate.png "0713 10_DefaultState")                 |
 |  **기본 선택**  |   크기를 조정할 수   |       ![크기 조정 핸들을 사용한 기본 선택](../../extensibility/ux-guidelines/media/0713-11-primaryresize.png "0713 11_PrimaryResize")        |
