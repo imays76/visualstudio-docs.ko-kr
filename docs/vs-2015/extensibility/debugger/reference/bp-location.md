@@ -17,12 +17,12 @@ ms.assetid: ed1e874c-f289-4c31-8b6c-04dde03ad0f5
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9525c31475f12040ca50c4aa0d24b126f94f80be
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6e154fe6b1121855e50c32b342c3c11566cbcd03
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878572"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51749103"
 ---
 # <a name="bplocation"></a>BP_LOCATION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -83,21 +83,21 @@ public struct BP_LOCATION {
  [C + + 전용] 포함 된 [BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md) 하는 경우 구조체 `bpLocationType`  =  `BPLT_RESOLUTION`합니다.  
   
  `unionmember1`  
- [C#만 해당] 해석 하는 방법에 대 한 설명을 참조 하세요.  
+ [C# 만] 해석 하는 방법에 대 한 설명을 참조 하세요.  
   
  `unionmember2`  
- [C#만 해당] 해석 하는 방법에 대 한 설명을 참조 하세요.  
+ [C# 만] 해석 하는 방법에 대 한 설명을 참조 하세요.  
   
  `unionmember3`  
- [C#만 해당] 해석 하는 방법에 대 한 설명을 참조 하세요.  
+ [C# 만] 해석 하는 방법에 대 한 설명을 참조 하세요.  
   
  `unionmember4`  
- [C#만 해당] 해석 하는 방법에 대 한 설명을 참조 하세요.  
+ [C# 만] 해석 하는 방법에 대 한 설명을 참조 하세요.  
   
 ## <a name="remarks"></a>설명  
  이 구조체의 멤버인 합니다 [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) 하 고 [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) 구조입니다.  
   
- [C#만 해당] `unionmemberX` 멤버는 다음 표에 따라 해석 됩니다. 왼쪽된 열을 살펴보면 합니다 `bpLocationType` 무엇 인지를 확인 하려면 다른 열에서 다음 값 `unionmemberX` 마샬링 및 멤버 나타냅니다는 `unionmemberX` 적절 하 게 합니다. C#에서이 구조의 일부를 해석 하는 방법에 대 한 예제를 참조 하세요.  
+ [C# 만] `unionmemberX` 멤버는 다음 표에 따라 해석 됩니다. 왼쪽된 열을 살펴보면 합니다 `bpLocationType` 무엇 인지를 확인 하려면 다른 열에서 다음 값 `unionmemberX` 마샬링 및 멤버 나타냅니다는 `unionmemberX` 적절 하 게 합니다. C#에서이 구조의 일부를 해석 하는 방법에 대 한 예제를 참조 하세요.  
   
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|  
 |----------------------|--------------------|--------------------|--------------------|--------------------|  
