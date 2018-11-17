@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e45c7903-f945-495d-b43b-11cdd09052aa
 caps.latest.revision: 20
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f7bc1719b0cac40aa35c0aad3841a0ca49c9da44
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d3efdd43762e3ce9afdfebf29a9a7529b97ca995
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226475"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51754447"
 ---
 # <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>방법: 내 코드만 표시하도록 프로파일링 도구 보고서 뷰 필터링
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
