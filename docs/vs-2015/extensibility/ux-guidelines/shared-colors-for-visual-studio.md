@@ -13,12 +13,12 @@ ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 72aaaa4a3eb75043f4a2cf3bdd20352bdd2af93b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7c0cccf5787d635db9ab04c70df1be97fc0c82d8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856693"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51723686"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Visual Studio에 대 한 공유 색
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -3584,7 +3584,7 @@ ms.locfileid: "49856693"
 #### <a name="column-headers"></a>열 머리글  
  열 머리글은 배경, 테두리, 제목 텍스트 및 그리드가 해당 열을 기준으로 정렬된 경우 일반적으로 사용되는 선택적 문자 모양으로 구성됩니다.  
   
- 시스템 상태  
+ 상태  
   
  요소  
   
@@ -3647,7 +3647,7 @@ ms.locfileid: "49856693"
 #### <a name="list-view-items"></a>목록 뷰 항목  
  목록 뷰 항목은 배경과 콘텐츠로 구성됩니다. 콘텐츠는 텍스트, 아이콘 또는 둘 다일 수 있습니다.  
   
- 시스템 상태  
+ 상태  
   
  요소  
   
@@ -3710,7 +3710,7 @@ ms.locfileid: "49856693"
   
 - 매니페스트 디자이너처럼 구조화되지 않은 모든 UI  
   
-  시스템 상태  
+  상태  
   
   구성 요소  
   
