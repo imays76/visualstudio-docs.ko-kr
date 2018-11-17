@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 275aacba-b2af-4d34-8931-ee30d777a256
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0a783c30c575bbf2f55b4c31840392e7e213940e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: afa82e7fab97e4f10ac1080d4ffd8ae77d2e5b71
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250980"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51788877"
 ---
 # <a name="collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line"></a>프로파일러 명령줄을 사용하여 서비스에 대한 동시성 데이터 수집
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
