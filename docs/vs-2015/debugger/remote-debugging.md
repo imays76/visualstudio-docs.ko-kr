@@ -21,15 +21,15 @@ helpviewer_keywords:
 - remote debugging, setup
 ms.assetid: 5a94ad64-100d-43ca-9779-16cb5af86f97
 caps.latest.revision: 81
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 61b1bc7f81ca4d6c3f313c543be23b746d56d37e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0ac1bbe2cc1832d0b34706f88b4df583d117149c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812896"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51799277"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -166,7 +166,7 @@ ms.locfileid: "49812896"
   
 4. 사용자 계정 및 암호의 이름을 추가합니다.  
   
-    이 계정에 **서비스로 로그온** 사용자 권한을 추가해야 할 수도 있습니다. **시작** 페이지 또는 창에서 **로컬 보안 정책** (secpol.msc)을 찾습니다(또는 명령 프롬프트에서 **secpol** 입력). 창이 나타나면 **사용자 권한 할당**을 두 번 클릭한 다음 오른쪽 창에서 **서비스로 로그온** 을 찾습니다. 폴더를 두 번 클릭합니다. 사용자 계정을 추가 합니다 **속성** 창과 클릭 **확인**.) 클릭 **다음**합니다.  
+    이 계정에 **서비스로 로그온** 사용자 권한을 추가해야 할 수도 있습니다. **시작** 페이지 또는 창에서 **로컬 보안 정책** (secpol.msc)을 찾습니다(또는 명령 프롬프트에서 **secpol** 입력). 창이 나타나면 **사용자 권한 할당**을 두 번 클릭한 다음 오른쪽 창에서 **서비스로 로그온** 을 찾습니다. 폴더를 두 번 클릭합니다. 사용자 계정을 추가 합니다 **속성** 창과 클릭 **확인**.) **다음**을 클릭합니다.  
   
 5. 원격 도구가 통신하는 데 사용할 네트워크 유형을 선택합니다. 하나 이상의 네트워크 형식을 선택해야 합니다. 컴퓨터가 도메인을 통해 연결된 경우 첫 번째 항목을 선택해야 합니다. 컴퓨터가 작업 그룹 또는 홈 그룹을 통해 연결된 경우 두 번째 또는 세 번째 항목을 선택해야 합니다. **다음**을 클릭합니다.  
   
