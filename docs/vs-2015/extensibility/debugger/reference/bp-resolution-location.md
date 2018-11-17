@@ -17,12 +17,12 @@ ms.assetid: 21dc5246-69c1-43e3-855c-9cd4e596c0e6
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a04b6b171cf2a0cf6a8759d56264c4d4201f681d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dc70710ea0a811b75e6bad3098fbbc46dae0bd3b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812415"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51760757"
 ---
 # <a name="bpresolutionlocation"></a>BP_RESOLUTION_LOCATION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -66,21 +66,21 @@ public struct BP_RESOLUTION_LOCATION {
  [C + + 전용] 자리 표시자입니다.  
   
  `unionmember1`  
- [C#만 해당] 해석 하는 방법에 대 한 설명을 참조 하세요.  
+ [C# 만] 해석 하는 방법에 대 한 설명을 참조 하세요.  
   
  `unionmember2`  
- [C#만 해당] 해석 하는 방법에 대 한 설명을 참조 하세요.  
+ [C# 만] 해석 하는 방법에 대 한 설명을 참조 하세요.  
   
  `unionmember3`  
- [C#만 해당] 해석 하는 방법에 대 한 설명을 참조 하세요.  
+ [C# 만] 해석 하는 방법에 대 한 설명을 참조 하세요.  
   
  `unionmember4`  
- [C#만 해당] 해석 하는 방법에 대 한 설명을 참조 하세요.  
+ [C# 만] 해석 하는 방법에 대 한 설명을 참조 하세요.  
   
 ## <a name="remarks"></a>설명  
  이 구조체의 멤버인 합니다 [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) 하 고 [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) 구조입니다.  
   
- [C#만 해당] `unionmemberX` 멤버는 다음 표에 따라 해석 됩니다. 왼쪽된 열을 살펴보면를 `bpType` 한 다음 각 기능 확인에 걸쳐 값 `unionmemberX` 마샬링 및 멤버 나타냅니다는 `unionmemberX` 적절 하 게 합니다. C#에서이 구조를 해석 하는 방법에 대 한 예제를 참조 하세요.  
+ [C# 만] `unionmemberX` 멤버는 다음 표에 따라 해석 됩니다. 왼쪽된 열을 살펴보면를 `bpType` 한 다음 각 기능 확인에 걸쳐 값 `unionmemberX` 마샬링 및 멤버 나타냅니다는 `unionmemberX` 적절 하 게 합니다. C#에서이 구조를 해석 하는 방법에 대 한 예제를 참조 하세요.  
   
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|  
 |----------------------|--------------------|--------------------|--------------------|--------------------|  

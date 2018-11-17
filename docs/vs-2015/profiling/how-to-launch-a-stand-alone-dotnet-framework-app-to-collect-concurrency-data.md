@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 17a48848-bd3e-44ef-9971-e39836ff1df2
 caps.latest.revision: 33
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1b4d0f052a47e2e87c35a4dafb35c90f9df68f03
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: caed852f51b6e3442274452564f1ef6807d1adec
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816564"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51803138"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>방법: 명령줄을 통해 프로파일러와 함께 독립 실행형 .NET Framework 응용 프로그램을 시작하여 동시성 데이터 수집
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
