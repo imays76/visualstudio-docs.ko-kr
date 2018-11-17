@@ -21,12 +21,12 @@ caps.latest.revision: 6
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 5ee4eb0490e68f2ea4f83c728ed684b1e939467b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5d750364ba5fd953a5a4aa18252961bbbf968ba5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893751"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51768920"
 ---
 # <a name="port-migrate-and-upgrade-visual-studio-projects-in-visual-studio-quot15quot-rc"></a>포팅, 마이그레이션 및 Visual Studio에서 Visual Studio 프로젝트를 업그레이드 &quot;15&quot; RC
 모든 솔루션, 프로젝트, 파일 및 기타 자산에서 만든 수정 해야 하는 경우 알아야 해야 Visual Studio의 최신 버전으로 이동 하면 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)], [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], 또는 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 에서 실행 하기 전에 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] 또는[!INCLUDE[vs_dev15_md](../includes/vs-dev15-md.md)]. 이 페이지는 유용 합니다. 

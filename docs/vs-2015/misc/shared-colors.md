@@ -12,12 +12,12 @@ ms.topic: article
 ms.assetid: 9d3186f3-07d2-441f-b33e-435e95d8a0b8
 caps.latest.revision: 11
 ms.author: v-brickg
-ms.openlocfilehash: acc359d7dec2c008bec49a86357faa7227d53ff6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fa4d2235660ecd7cc61998aa0e4ba568f0f28593
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875075"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51805517"
 ---
 # <a name="shared-colors"></a>공유 색
 여기에 소개하는 내용을 삽입합니다.  
@@ -1390,7 +1390,7 @@ ms.locfileid: "49875075"
 ##### <a name="column-headers"></a>열 머리글  
  열 머리글은 배경, 테두리, 제목 텍스트 및 그리드가 해당 열을 기준으로 정렬된 경우 일반적으로 사용되는 선택적 문자 모양으로 구성됩니다.  
   
-|시스템 상태|요소|토큰 이름: Category.color|  
+|상태|요소|토큰 이름: Category.color|  
 |-----------|-------------|--------------------------------|  
 |기본|배경|`Header.Default`|  
 |기본|전경(텍스트)|`Environment.CommandBarTextActive`|  
@@ -1408,7 +1408,7 @@ ms.locfileid: "49875075"
 ##### <a name="list-view-items"></a>목록 뷰 항목  
  목록 뷰 항목은 배경과 콘텐츠로 구성됩니다. 콘텐츠는 텍스트, 아이콘 또는 둘 다일 수 있습니다.  
   
-|시스템 상태|요소|토큰 이름: Category.color|  
+|상태|요소|토큰 이름: Category.color|  
 |-----------|-------------|--------------------------------|  
 |기본|배경|투명|  
 |기본|전경(텍스트)|`Environment.CommandBarTextActive`|  
@@ -1435,7 +1435,7 @@ ms.locfileid: "49875075"
   
 - 매니페스트 디자이너처럼 구조화되지 않은 모든 UI  
   
-|시스템 상태|구성 요소|요소|토큰 이름: Category.color|  
+|상태|구성 요소|요소|토큰 이름: Category.color|  
 |-----------|---------------|-------------|--------------------------------|  
 |기본값(선택됨)|탭|배경|`ManifestDesigner.TabActive`|  
 |기본값(선택됨)|탭|테두리|없음|  
