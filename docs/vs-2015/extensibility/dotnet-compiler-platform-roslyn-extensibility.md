@@ -13,14 +13,14 @@ ms.assetid: 564201b3-1e18-4b88-b615-42c2f57f3fe8
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 67429d7d5703aceeaf135f49451ec1895b78d397
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: de01ec4f857042c6eaaaa70632b28cfc830886cb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49209965"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817089"
 ---
-# <a name="net-compiler-platform-quotroslynquot-extensibility"></a>.NET 컴파일러 플랫폼 (&quot;Roslyn&quot;) 확장성
+# <a name="net-compiler-platform-quotroslynquot-extensibility"></a>.NET 컴파일러 플랫폼(&quot;Roslyn&quot;) 확장성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 .NET 컴파일러 플랫폼 ("Roslyn")의 핵심 임무는 C# 및 Visual Basic 컴파일러를 열고 도구를 허용 하 고 프로그램에 대 한 풍부한 정보 컴파일러에서 공유 하는 개발자가 있습니다. 코드 분석 도구는 코드 품질 향상 및 생성기 응용 프로그램을 만드는 데 코드입니다. 도구가 더 스마트에 점점 더 많은 컴파일러만 처리 하는 전체 코드 기술 자료의 액세스 해야 있습니다. 불투명 변환기 (소스 코드 및 개체 코드) 대신, Roslyn 컴파일러 도구 및 응용 프로그램에서 코드 관련 작업에 사용할 수 있는 Api를 제공 합니다.  

@@ -17,12 +17,12 @@ ms.assetid: e3d11aab-de0d-4109-b5dc-11e07e64382d
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5a7bc7edf46533c377857a3aae85e8dc97da8012
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0bff5235224b0bc93ebe63b7b77b812bb54e0845
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827528"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51754850"
 ---
 # <a name="debugaddressunion"></a>DEBUG_ADDRESS_UNION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -94,12 +94,12 @@ public struct DEBUG_ADDRESS_UNION {
  [C + + 전용] 공용 구조체의 이름입니다.  
   
  unionmember  
- [C#만 해당] 이 값을 기반으로 적절 한 구조 형식으로 마샬링할 수 해야 `dwKind`합니다. 간의 연결에 대 한 주의 참조 하세요. `dwKind` 및 공용 구조체의 해석 합니다.  
+ [C# 만] 이 값을 기반으로 적절 한 구조 형식으로 마샬링할 수 해야 `dwKind`합니다. 간의 연결에 대 한 주의 참조 하세요. `dwKind` 및 공용 구조체의 해석 합니다.  
   
 ## <a name="remarks"></a>설명  
  이 구조체의 일부인를 [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) 구조체이 고 다양 한 다른 유형의 주소 중 하나를 나타냅니다 (합니다 `DEBUG_ADDRESS` 구조에 대 한 호출에 의해 채워진 합니다 [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) 메서드).  
   
- [C#만 해당] 다음 표에서 해석 하는 방법을 보여 줍니다는 `unionmember` 주소의 각 종류에 대 한 멤버입니다. 한 가지 주소에 대 한이 작업을 수행 하는 방법을 보여 줍니다.  
+ [C# 만] 다음 표에서 해석 하는 방법을 보여 줍니다는 `unionmember` 주소의 각 종류에 대 한 멤버입니다. 한 가지 주소에 대 한이 작업을 수행 하는 방법을 보여 줍니다.  
   
 |`dwKind`|`unionmember` 로 해석|  
 |--------------|----------------------------------|  

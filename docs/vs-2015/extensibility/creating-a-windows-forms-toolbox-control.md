@@ -17,12 +17,12 @@ ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7b7f1c5f9f052253e2b18ac2f7c669b7442ac391
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 371fd4269cee5918bd0d0b623eb49e1f709a311d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294218"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51781714"
 ---
 # <a name="creating-a-windows-forms-toolbox-control"></a>Windows Forms 도구 상자 컨트롤 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,16 +81,16 @@ Visual Studio 확장성 도구 (VS SDK)에 포함 된 Windows Forms 도구 상�
 3.  다음 공용 속성 선언을 만듭니다.  
   
     ```csharp  
-    public int Value {  
+    public int Value {  
         get { return currentValue; }   
     }  
   
-    public string Message {  
+    public string Message {  
         get { return displayText; }  
         set { displayText = value; }  
     }  
   
-    public bool ShowReset {  
+    public bool ShowReset {  
         get { return btnReset.Visible; }  
         set { btnReset.Visible = value; }  
     }  
@@ -102,7 +102,7 @@ Visual Studio 확장성 도구 (VS SDK)에 포함 된 Windows Forms 도구 상�
 4.  다음 코드를 배치 합니다 `Load` 컨트롤에 대 한 이벤트입니다.  
   
     ```csharp  
-    private void Counter_Load(object sender, EventArgs e)  
+    private void Counter_Load(object sender, EventArgs e)  
     {  
         currentValue = 0;  
         label1.Text = Message + Value;  
@@ -115,7 +115,7 @@ Visual Studio 확장성 도구 (VS SDK)에 포함 된 Windows Forms 도구 상�
 5.  카운터를 증가 시키는 다음 공용 메서드를 만듭니다.  
   
     ```csharp  
-    public void Increment()  
+    public void Increment()  
     {  
         currentValue++;  
         label1.Text = displayText + Value;  
@@ -127,7 +127,7 @@ Visual Studio 확장성 도구 (VS SDK)에 포함 된 Windows Forms 도구 상�
 6.  에 대 한 선언을 추가 합니다 `Incremented` 컨트롤 클래스에는 이벤트입니다.  
   
     ```csharp  
-    public event EventHandler Incremented;  
+    public event EventHandler Incremented;  
     ```  
   
      호출자는 카운터의 값이 변경에 응답 하기 위해이 이벤트 처리기를 추가할 수 있습니다.  
@@ -135,7 +135,7 @@ Visual Studio 확장성 도구 (VS SDK)에 포함 된 Windows Forms 도구 상�
 7.  디자인 뷰를 두 번 클릭을 반환 합니다 `Reset` 생성 하는 단추를 `btnReset_Click` 이벤트 처리기에 다음 예제에서와 같이 입력 합니다.  
   
     ```csharp  
-    private void btnReset_Click(object sender, EventArgs e)  
+    private void btnReset_Click(object sender, EventArgs e)  
     {  
         currentValue = 0;  
         label1.Text = displayText + Value;  
@@ -149,7 +149,7 @@ Visual Studio 확장성 도구 (VS SDK)에 포함 된 Windows Forms 도구 상�
   
     ```csharp  
     [ProvideToolboxControl("General", false)]  
-    public partial class Counter : UserControl  
+    public partial class Counter : UserControl  
     ```  
   
 ### <a name="testing-the-control"></a>컨트롤 테스트  
