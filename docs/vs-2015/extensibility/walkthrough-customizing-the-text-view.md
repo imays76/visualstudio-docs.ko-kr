@@ -15,12 +15,12 @@ ms.assetid: 32d32ac8-22ff-4de7-af69-bd46ec4ad9bf
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e8474190b6b140883a43555f5dc35091daecebe7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 38cbd0117f5f49666ee5da42d0f60dadf451ffda
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923201"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51781818"
 ---
 # <a name="walkthrough-customizing-the-text-view"></a>연습: 텍스트 뷰 사용자 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

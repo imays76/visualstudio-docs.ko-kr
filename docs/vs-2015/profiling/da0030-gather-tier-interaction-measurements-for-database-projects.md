@@ -15,15 +15,15 @@ f1_keywords:
 - vs.performance.30
 ms.assetid: 42b2f69d-0cfa-4854-82c4-589c3d8b4557
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 25f759253ea22e40416a41a6e7dc97ead10249fd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 16d6275074b3cae6b186fe9bb113e32c33e284af
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223875"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51796755"
 ---
 # <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030: 데이터베이스 프로젝트에 대한 계층 상호 작용 측정값 수집
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
