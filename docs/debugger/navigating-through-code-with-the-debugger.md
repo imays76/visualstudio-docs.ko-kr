@@ -16,16 +16,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 865fbca5092378af044d6121862119ecba8625a2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+ms.openlocfilehash: df2f0c94fa5d3bfc275a09b065555f32f260ba91
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748674"
+ms.locfileid: "51826757"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Visual Studio 디버거로 코드 탐색
 
-Visual Studio 디버거는 앱의 상태를 검사 하 고 해당 실행 흐름을 표시 하는 코드를 탐색할 수 있습니다. 검사 하려는 코드에 신속 하 게 바로 가기 키, 디버그 명령, 중단점 및 기타 기능을 사용할 수 있습니다. 디버거 탐색 명령 및 바로 가기를 사용 경험을 사용 하 여 빠르고 쉽게 찾아서 앱 문제를 해결할 수 있도록 합니다.  
+Visual Studio 디버거는 앱의 상태를 검사 하 고 해당 실행 흐름을 표시 하는 코드를 탐색할 수 있습니다. 검사 하려는 코드에 신속 하 게 바로 가기 키, 디버그 명령, 중단점 및 기타 기능을 사용할 수 있습니다. 디버거 탐색 명령 및 바로 가기를 사용 경험을 사용 하 여 빠르고 쉽게 찾아서 앱 문제를 해결할 수 있도록 합니다.  읽을 하려는 처음 코드를 디버그 하려는 경우 [보다 효과적으로 작성할 C# Visual Studio를 사용 하 여 코드](../debugger/write-better-code-with-visual-studio.md) 하 고 [초보자를 위한 디버깅](../debugger/debugging-absolute-beginners.md) 이 문서를 진행 하기 전에 합니다.
   
 ## <a name="basic-debugging"></a>기본적인 디버깅  
 
@@ -183,4 +183,9 @@ Microsoft 기호를 로드 하려면 참조 [기호 위치를 구성 하 고 로
 1. 에 **모듈** 창에서 확인할 수 있습니다는 기호가 로드 된 모듈을 합니다 **기호 상태** 열입니다. 선택한 기호를 로드 하려는 모듈을 마우스 오른쪽 단추로 클릭 **기호 로드**합니다.  
   
 ##  <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> 한 단계씩 관리 코드의 속성 및 연산자 실행  
- 기본적으로 디버거에서 한 단계씩 실행의 속성 및 연산자를 통해 관리 코드를 사용 합니다. 속성 및 연산자를 일반적으로 단위로 더 나은 디버깅 환경을 제공 합니다. 속성 및 연산자를 한 단계씩 실행할 수 있도록 **도구가** (또는 **디버그**) > **옵션** > **디버깅**  >  **일반적인**의 선택을 취소 합니다 **속성 및 연산자 건너뛰기 (관리 전용) 단계** 확인란 합니다.
+ 기본적으로 디버거는 관리 코드의 속성과 연산자를 건너뜁니다. 대부분의 경우 이렇게 하면 더 나은 디버깅 환경이 제공됩니다. 속성 또는 연산자를 한 단계씩 실행을 사용 하도록 설정 하려면 **디버깅할** > **옵션**합니다. 에 **디버깅** > **일반** 페이지의 선택을 취소 합니다 **속성 및 연산자 건너뛰기 (관리 전용) 단계** 확인란 합니다.
+
+## <a name="see-also"></a>참고자료
+ [새로운를 디버그 하시 나요?](../debugger/what-is-debugging.md)  
+ [보다 효과적으로 작성할 C# Visual Studio를 사용 하는 코드](../debugger/write-better-code-with-visual-studio.md)  
+ [디버깅 소개](../debugger/debugger-feature-tour.md) 

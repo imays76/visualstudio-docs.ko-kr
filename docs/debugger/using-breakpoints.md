@@ -36,15 +36,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37e34d01d2488ad5345ff65237cd708c06764661
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bd522a5f5ff39814df3526843ae7d03578f92e86
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816686"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826845"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Visual Studio 디버거에서 중단점을 사용 합니다.
-중단점은 개발자의 도구 상자에서 가장 중요 한 디버깅 기술 중 하나입니다. 디버거가 실행을 일시 중지 하려는 위치에 중단점을 설정 합니다. 예를 들어, 다음 코드 변수의 상태를 보거나 특정 중단점에서 호출 스택을 확인 하는 것이 좋습니다.  
+중단점은 개발자의 도구 상자에서 가장 중요 한 디버깅 기술 중 하나입니다. 디버거가 실행을 일시 중지 하려는 위치에 중단점을 설정 합니다. 예를 들어, 다음 코드 변수의 상태를 보거나 특정 중단점에서 호출 스택을 확인 하는 것이 좋습니다. 코드를 처음으로 디버그하려고 하는 경우 이 문서를 계속 진행하기 전에 먼저 [완전 초보자를 위한 디버깅](../debugger/debugging-absolute-beginners.md)을 참조하는 것이 좋습니다.
   
 ##  <a name="BKMK_Overview"></a> 소스 코드에 중단점 설정  
  실행 코드의 임의의 줄에서 중단점을 설정할 수 있습니다. 예를 들어 다음 C# 코드에서 수 중단점을 설정한 변수 선언에는 `for` 루프 또는 내의 모든 코드는 `for` 루프입니다. 메서드 시그니처 또는 네임 스페이스 또는 클래스 선언에서 중단점을 설정할 수 없습니다.  
@@ -235,8 +235,8 @@ ms.locfileid: "49816686"
  >- 디버거는 네이티브 코드에 대 한 첫 번째 계산에서 중단점이 적중 되지 않습니다 있도록을 변경 하는 조건의 첫 번째 계산 간주 하지. 
  >- 디버거가 관리 코드에 대해 후 첫 번째 계산에서 중단점을 적중 **변경 될 때** 을 선택 합니다.  
   
-### <a name="using-object-ids-in-conditional-expressions-c-and-f-only"></a>조건부 식 (C# 및 F #에 해당)에서 개체 Id 사용  
- 특정 개체의 동작을 관찰 하려는 경우가 있습니다. 예를 들어, 다음 이유 개체에 삽입 된 컬렉션을 두 번 이상 확인 하는 것이 좋습니다. C# 및 F #에서의 특정 인스턴스에 대 한 개체 Id를 만들 수 있습니다 [형식을 참조](/dotnet/csharp/language-reference/keywords/reference-types), 중단점 조건에서 사용 합니다. 개체 ID는 CLR(공용 언어 런타임) 디버깅 서비스에 의해 생성되고 개체와 연결됩니다.  
+### <a name="using-object-ids-in-conditional-expressions-c-and-f-only"></a>조건식에서 개체 Id를 사용 하 여 (C# 및 F# 만)  
+ 특정 개체의 동작을 관찰 하려는 경우가 있습니다. 예를 들어, 다음 이유 개체에 삽입 된 컬렉션을 두 번 이상 확인 하는 것이 좋습니다. C# 및 F#의 특정 인스턴스에 대 한 개체 Id를 만들 수 있습니다 [형식을 참조할](/dotnet/csharp/language-reference/keywords/reference-types), 및 중단점 조건에서 사용 합니다. 개체 ID는 CLR(공용 언어 런타임) 디버깅 서비스에 의해 생성되고 개체와 연결됩니다.  
 
 **개체 ID를 만들려면:** 
   
@@ -305,5 +305,7 @@ ms.locfileid: "49816686"
 추적점이 들어 있는 소스 코드의 왼쪽된 여백에 빨간색 다이아몬드도 표시 하 고 **중단점** windows. 
   
 ## <a name="see-also"></a>참고자료  
-[Visual Studio 디버거에서 중단점 문제 해결](../debugger/troubleshooting-breakpoints.md)  
-[디버거로 코드 탐색](../debugger/navigating-through-code-with-the-debugger.md)
+ [새로운를 디버그 하시 나요?](../debugger/what-is-debugging.md)  
+ [보다 효과적으로 작성할 C# Visual Studio를 사용 하는 코드](../debugger/write-better-code-with-visual-studio.md)  
+ [디버깅 소개](../debugger/debugger-feature-tour.md)  
+ [Visual Studio 디버거에서 중단점 문제 해결](../debugger/troubleshooting-breakpoints.md)  

@@ -16,20 +16,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 35fa37831ad79a55effe849f8605ae6b5d299d3a
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 1d72a9cd4ad29785884417881324e6d348e03d83
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349652"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826716"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>자동 및 지역 창에서 변수 검사
 
-합니다 **자동** 하 고 **지역** windows 디버깅 하는 동안 변수 값을 표시 합니다. Windows는 디버깅 세션 중만 사용할 수 있습니다.
-
-합니다 **자동** 창에 현재 중단점 사용 된 변수가 표시 됩니다. 합니다 **지역** 창 현재 함수나 메서드는 일반적으로 로컬 범위에 정의 된 변수를 표시 합니다.
-
-열려는 합니다 **자동** 창에서 디버그 하는 동안 **디버그** > **Windows** > **자동**를 누르거나 **Ctrl**+**Alt**+**V** > **A**합니다.
+합니다 **자동** 하 고 **지역** windows 디버깅 하는 동안 변수 값을 표시 합니다. Windows는 디버깅 세션 중만 사용할 수 있습니다. 합니다 **자동** 창에 현재 중단점 사용 된 변수가 표시 됩니다. 합니다 **지역** 창 현재 함수나 메서드는 일반적으로 로컬 범위에 정의 된 변수를 표시 합니다. 읽을 하려는 처음 코드를 디버그 하려는 경우 [보다 효과적으로 작성할 C# Visual Studio를 사용 하 여 코드](../debugger/write-better-code-with-visual-studio.md) 하 고 [초보자를 위한 디버깅](../debugger/debugging-absolute-beginners.md) 이 문서를 진행 하기 전에 합니다.
+  
+열려는 합니다 **자동** 창에서 디버그 하는 동안 **디버그** > **Windows** > **자동**를 누르거나 **Ctrl**+**Alt**+**V** > **A**합니다.  
 
 열려는 합니다 **지역** 창에서 디버그 하는 동안 **디버그** > **Windows** > **지역**를 누르거나 **Alt**+**4**합니다.
 
@@ -147,13 +145,13 @@ private static int subtractVars(int i, int j)
 
 반환 값을 확인할 수는 `sumVars()` 및 `subtractVars()` 자동 창의 메서드를 호출 합니다.
 
-1. `int x = sumVars(a, b) + subtractVars(c, d);` 줄에 중단점을 설정합니다.
-
-1. 디버깅을 시작 하 고 실행이 중단점에서 일시 중지 하는 경우 선택 **단계씩** 누르거나 **F10**합니다. 다음 반환 값이 표시 되어야 합니다 **자동** 창:
-
-  ![값을 반환 하는 자동 C# ](../debugger/media/autosreturnvaluecsharp2.png "자동 값 반환C#")
-
-## <a name="see-also"></a>참고자료
-
-- [디버거 창](../debugger/debugger-windows.md)
-- [Mac 용 Visual Studio에서 데이터 시각화](/visualstudio/mac/data-visualizations)
+1. `int x = sumVars(a, b) + subtractVars(c, d);` 줄에 중단점을 설정합니다.  
+   
+1. 디버깅을 시작 하 고 실행이 중단점에서 일시 중지 하는 경우 선택 **단계씩** 누르거나 **F10**합니다. 다음 반환 값이 표시 되어야 합니다 **자동** 창:  
+   
+  ![값을 반환 하는 자동 C# ](../debugger/media/autosreturnvaluecsharp2.png "자동 값 반환C#")  
+  
+## <a name="see-also"></a>참고자료  
+ [새로운를 디버그 하시 나요?](../debugger/what-is-debugging.md)  
+ [보다 효과적으로 작성할 C# Visual Studio를 사용 하는 코드](../debugger/write-better-code-with-visual-studio.md)  
+ [디버깅 소개](../debugger/debugger-feature-tour.md) [디버거 창](../debugger/debugger-windows.md)

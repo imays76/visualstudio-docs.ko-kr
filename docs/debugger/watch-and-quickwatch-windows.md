@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a4db887a3e27d995229da6d954c4b3f66173e9e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: aa469b109e0e22e426d76f75be50309196c6a264
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897357"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826793"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>조사식 창 및 간략 한 조사식을 사용 하 여 변수를 시청 하세요. 
 
@@ -278,5 +278,6 @@ static void Main(string[] args)
 1. 디버깅을 계속합니다. 변수를 확인할 수 있습니다 합니다 **조사식** 창입니다.
 
 ## <a name="see-also"></a>참고자료
-
-[디버거 창](../debugger/debugger-windows.md)
+ [새로운를 디버그 하시 나요?](../debugger/what-is-debugging.md)  
+ [보다 효과적으로 작성할 C# Visual Studio를 사용 하는 코드](../debugger/write-better-code-with-visual-studio.md)  
+ [디버깅 소개](../debugger/debugger-feature-tour.md) [디버거 창](../debugger/debugger-windows.md)
