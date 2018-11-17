@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f783817f-77a0-4eb8-985b-ec3b77eadc42
 caps.latest.revision: 30
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 217262316f1ec4d3bfe1afa4f97f9f318f13c34b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3677f252fc4c7b415173bf7e1c39c459b7c00b9c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939184"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51740936"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line"></a>방법: 명령줄을 통해 네이티브 서비스에 프로파일러를 연결하여 응용 프로그램 통계 수집
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
