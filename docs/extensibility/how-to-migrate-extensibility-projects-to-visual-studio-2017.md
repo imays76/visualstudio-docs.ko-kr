@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 669f3625827d923a0951caa1bb0137d38c0daacc
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 195d63e5ddb8b8536c1d0c1c4197270f5b3aa508
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637499"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826819"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>방법: Visual Studio 2017로 확장성 프로젝트 마이그레이션
 
@@ -63,7 +63,7 @@ Visual Studio의 설치를 사용자의 확장을 실행 하는 데 필요한 �
 * 확인 `InstallationTarget` 15.0을 포함 합니다.
 * 아래 예에서 같이 필요한 설치 필수 구성 요소를 추가 합니다.
   * 설치 필수 구성 요소에 대 한 구성 요소 Id를 지정 하는 것이 좋습니다.
-  * 이 문서의 끝에 있는 섹션을 참조 하세요 [구성 요소 Id를 식별 하는 방법은](#finding-component-ids)합니다.
+  * 이 문서의 끝에 있는 섹션을 참조 하세요 [구성 요소 Id를 식별 하는 방법은](#find-component-ids)합니다.
 
 예제:
 
