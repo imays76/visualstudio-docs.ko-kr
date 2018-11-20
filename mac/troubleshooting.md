@@ -1,17 +1,17 @@
 ---
-title: Mac용 Visual Studio 문제 해결
+title: 문제 해결
 description: Mac용 Visual Studio 사용자를 위한 일반적인 문제 및 해결
 ms.topic: troubleshooting
 author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: CE860D79-E29E-4B93-B094-BE74B35FC1C2
-ms.openlocfilehash: 6d8edc7942b460c4c11e20bc9a0c5cae204328cf
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 3a5ea59e6f98891cd113ccad9a74038ca52cccf8
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224233"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294645"
 ---
 # <a name="troubleshooting"></a>문제 해결
 
@@ -27,7 +27,7 @@ ms.locfileid: "43224233"
 
 ![예외 자세히 보기](media/troubleshooting-image2.png)
 
-그러면 예외에 대한 정보를 자세히 보여주는 **세부 정보 표시** 대화 상자가 표시됩니다.
+그러면 예외에 대한 정보를 자세히 보여주는 **세부 정보 표시** 대화 상자가 나타납니다.
 
 ![세부 정보 대화 상자 표시](media/troubleshooting-image3.png)
 
@@ -45,4 +45,8 @@ ms.locfileid: "43224233"
 10. 기본적으로 디버거 설정의 **프로젝트 코드만 디버깅합니다.** 옵션과 동일하게 설정됩니다. 이 확인란을 선택하면 사용자 코드가 아닌 모든 코드가 스택 추적에서 한 줄로 축소됩니다.
 11. `exception.ToString()` 출력을 클립보드로 복사하는 복사 단추입니다.
 
-위 섹션 중 일부는 예외에 내부 예외가 있는 경우에만 표시됩니다.
+이러한 섹션 중 일부는 예외에 내부 예외가 포함되는 경우에만 표시됩니다.
+
+## <a name="see-also"></a>참고 항목
+
+- [IDE 오류 문제 해결을 위한 리소스(Windows의 Visual Studio)](/visualstudio/ide/reference/resources-for-troubleshooting-integrated-development-environment-errors)

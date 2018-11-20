@@ -9,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3de51b0c984522810b174bdb1784420620ba037f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a895124effa8155ab2edb4652962b605926234d5
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858480"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349480"
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>NuGet을 사용한 참조 추가와 확장 SDK를 사용한 참조 추가
 
-Visual Studio에 대한 NuGet 확장 또는 SDK(소프트웨어 개발 키트)를 사용하여 Visual Studio 프로젝트 내에서 사용할 패키지를 제공할 수 있습니다. 이 항목에서 설명하는 두 메커니즘 간의 유사점과 차이점을 참조하여 작업에 가장 적합한 메커니즘을 선택할 수 있습니다.
+NuGet 또는 SDK(소프트웨어 개발 키트) 중 하나를 사용하여 Visual Studio 프로젝트 내에서 사용할 패키지를 제공할 수 있습니다. 이 문서에서는 두 메커니즘 간의 유사점과 차이점 설명을 통해 작업에 가장 적합한 메커니즘을 선택할 수 있게 합니다.
 
 - NuGet은 프로젝트 솔루션에 라이브러리를 통합하는 과정을 간소화하는 오픈 소스 패키지 관리 시스템입니다. 자세한 내용은 [NuGet 설명서](/nuget)를 참조하세요.
 
@@ -27,7 +27,6 @@ Visual Studio에 대한 NuGet 확장 또는 SDK(소프트웨어 개발 키트)�
 ## <a name="which-mechanism-should-i-use"></a>어떤 메커니즘을 사용해야 하나요?
 
 다음 표에서는 SDK의 참조 기능과 NuGet의 참조 기능을 비교합니다.
-
 
 | 기능 | SDK 지원 | SDK 참고 사항 | NuGet 지원 | NuGet 참고 사항 |
 | - | - | - |---------------| - |
@@ -70,4 +69,5 @@ Visual Studio에 대한 NuGet 확장 또는 SDK(소프트웨어 개발 키트)�
 
 ## <a name="see-also"></a>참고 항목
 
-- [프로젝트의 참조 관리](../ide/managing-references-in-a-project.md)
+- [프로젝트에서 참조 관리](../ide/managing-references-in-a-project.md)
+- [프로젝트에서 참조 관리(Mac용 Visual Studio)](/visualstudio/mac/managing-references-in-a-project)

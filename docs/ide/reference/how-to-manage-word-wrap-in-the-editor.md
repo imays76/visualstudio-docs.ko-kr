@@ -1,6 +1,6 @@
 ---
-title: '방법: 편집기에서 줄 바꿈 관리'
-ms.date: 11/04/2016
+title: 단어 줄 바꿈
+ms.date: 11/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -14,16 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a1419a473bc0edc9fbc68ab978feb776ed63636
-ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
+ms.openlocfilehash: 6fc38d1ee5a8e5543675700c35cc0cb298aefad9
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42626984"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349116"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>방법: 편집기에서 자동 줄 바꿈 관리
 
 **자동 줄 바꿈** 옵션을 설정 및 선택 취소할 수 있습니다. 이 옵션을 설정하면 코드 편집기 창의 현재 너비를 벗어나는 긴 줄의 해당 부분이 다음 줄에 표시됩니다. 예를 들어 줄 번호 매기기를 쉽게 사용하기 위해 이 옵션의 선택을 취소한 경우에는 오른쪽으로 스크롤하여 긴 줄의 끝을 확인할 수 있습니다.
+
+> [!NOTE]
+> 이 토픽은 Windows에서 Visual Studio에만 적용됩니다. Mac용 Visual Studio는 현재 자동 줄 바꿈을 지원하지 않습니다.
 
 ## <a name="to-set-word-wrap-preferences"></a>자동 줄 바꿈 기본 설정을 설정하려면
 

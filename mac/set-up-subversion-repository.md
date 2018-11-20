@@ -5,14 +5,14 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 0D58FB37-530E-495B-BED6-FD499477A9B6
-ms.openlocfilehash: 8e8e17f7787486e5f14fd94927278bb957439e81
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 3995db4ef4609f68512dede454855da1f770141f
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224387"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295555"
 ---
-# <a name="setting-up-a-subversion-repository"></a>Subversion 리포지토리 설정
+# <a name="set-up-a-subversion-repository"></a>Subversion 리포지토리 설정
 
 Subversion은 중앙 집중화된 _버전 제어 시스템_이므로, 모든 파일과 수정 버전을 포함하는 단일 서버가 있으며 사용자는 여기에서 임의의 파일 버전을 체크 아웃할 수 있습니다. 원격 Subversion 리포지토리에서 파일을 체크 아웃하면 사용자는 해당 시점을 기준으로 리포지토리의 스냅숏을 가져옵니다.
 
@@ -32,19 +32,19 @@ xcode-select --install
 
 Subversion이 컴퓨터에 설치되면 SVN에서 다음 단계를 사용하여 프로젝트를 게시합니다.
 
-1. 온라인으로 무료 SVN 리포지토리를 만듭니다. 이 예제에서는 [Assembla](https://app.assembla.com/)를 사용했습니다. 리포지토리가 만들어지면 연결에 사용되는 URL이 제공됩니다. 
+1. 온라인으로 무료 SVN 리포지토리를 만듭니다. 이 예제에서는 [Assembla](https://app.assembla.com/)를 사용했습니다. 리포지토리가 만들어지면 연결에 사용되는 URL이 제공됩니다.
 
     ![SVN URL 복사](media/version-control-subversion1-sml.png)
 
 2. Mac용 Visual Studio 프로젝트를 열거나 만듭니다.
 
-3. 프로젝트를 마우스 오른쪽 단추로 클릭하고 **버전 제어 > 버전 제어에서 게시...** 를 선택합니다. 
+3. 프로젝트를 마우스 오른쪽 단추로 클릭하고 **버전 제어 > 버전 제어에서 게시...** 를 선택합니다.
 
     ![프로젝트 게시 시작](media/version-control-subversion2.png)
 
 4. **리포지토리에 연결** 탭의 상단 드롭다운에서 **Subversion**을 선택합니다.
 
-5. 1단계에서 제공된 URL을 입력합니다. URL이 입력되면 다른 필드는 기본적으로 채워집니다. 
+5. 1단계에서 제공된 URL을 입력합니다. URL이 입력되면 다른 필드는 기본적으로 채워집니다.
 
     ![리포지토리 선택 및 세부 정보 입력 대화 상자](media/version-control-subversion3.png)
 
@@ -56,3 +56,6 @@ Subversion이 컴퓨터에 설치되면 SVN에서 다음 단계를 사용하여 
 
 8.  이제 사용할 수 있는 모든 버전 제어 명령이 버전 제어 메뉴에 표시됩니다.
 
+## <a name="see-also"></a>참고 항목
+
+- [Subversion 작업](working-with-subversion.md)

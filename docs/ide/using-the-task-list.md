@@ -16,16 +16,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47468c7ff7ead04ad2c6261725089ca454faffc2
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: 7766a7fd935cc1e1131c4780a5a88ef6fa54e838
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612703"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349402"
 ---
 # <a name="use-the-task-list"></a>작업 목록 사용
 
 **작업 목록**을 사용하여 `TODO` 및 `HACK` 같은 토큰 또는 사용자 지정 토큰을 사용하는 코드 주석을 추적하고 코드에서 미리 정의된 위치로 직접 연결되는 바로 가기를 관리합니다. 목록의 항목을 클릭하면 소스 코드의 해당 위치로 이동합니다.
+
+> [!NOTE]
+> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [작업 주석(Mac용 Visual Studio)](/visualstudio/mac/task-comments)을 참조하세요.
 
 ## <a name="the-task-list-window"></a>작업 목록 창
 
@@ -104,3 +107,4 @@ C++ TODO 주석을 끄려면 **도구** 메뉴에서 **옵션** > **텍스트 �
 ## <a name="see-also"></a>참고 항목
 
 - [작업 목록, 환경, 옵션 대화 상자](../ide/reference/task-list-environment-options-dialog-box.md)
+- [작업 주석(Mac용 Visual Studio)](/visualstudio/mac/task-comments)

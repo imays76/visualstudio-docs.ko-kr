@@ -5,12 +5,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: 7D00512B-9688-4D8D-87A7-F04F207E3D02
-ms.openlocfilehash: c7ae7fb3a2b96efc7ad4009f584baba6b80f66da
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cbf0d99bd87b31484b6c74e9a6d67ac88dc5ba99
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894679"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294307"
 ---
 # <a name="extending-visual-studio-for-mac-walkthrough"></a>Mac용 Visual Studio 확장 연습
 
@@ -135,3 +135,7 @@ ms.locfileid: "49894679"
 15. 마지막으로, 확장 패키지를 실행하여 테스트하겠습니다. Mac용 Visual Studio의 새 인스턴스에서 **편집 > 날짜 삽입**을 선택합니다. 아래 스크린샷과 같이 현재 날짜와 시간이 캐럿에 삽입됩니다.
 
     ![날짜 삽입 스크린샷](media/extending-visual-studio-mac-addin12.png)
+
+## <a name="see-also"></a>참고 항목
+
+- [첫 번째 확장 만들기(Windows의 Visual Studio)](/visualstudio/extensibility/extensibility-hello-world)

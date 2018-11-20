@@ -13,38 +13,38 @@ ms.workload:
 - dotnet
 ms.openlocfilehash: e05dd0e01254bf1222a8a7de497b11ec2a808bfb
 ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/19/2018
 ms.locfileid: "46136369"
 ---
-# <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>FxCop 및 FxCop에 대 한 질문과 대답 분석기
+# <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>FxCop 및 FxCop 분석기에 대한 질문과 대답
 
-레거시 FxCop 및 FxCop 간의 차이점을 이해 하려면 약간 어려울 수 있습니다 분석기입니다. 이 문서는 질문이 있는 경우 중 일부를 해결 하려고 합니다.
+레거시 FxCop와 FxCop 분석기 간의 차이점을 이해이해하는 것은 다소 혼동을 일으킬 수 있습니다. 이 문서에서는 사용자가 가질 수 있는 일부 질문을 해결하려고 합니다.
 
-## <a name="whats-the-difference-between-legacy-fxcop-and-fxcop-analyzers"></a>레거시 FxCop 및 FxCop 차이점은 무엇 분석기?
+## <a name="whats-the-difference-between-legacy-fxcop-and-fxcop-analyzers"></a>레거시 FxCop와 FxCop 분석기 간의 차이점은?
 
-레거시 FxCop 컴파일된 어셈블리에서 빌드 후 분석을 실행 합니다. 라는 별도 실행 파일로 실행 **FxCopCmd.exe**합니다. FxCopCmd.exe 컴파일된 어셈블리를 로드 합니다. 코드 분석을 실행 하 고 다음 결과 보고 (또는 *진단*).
+레거시 FxCop는 컴파일된 어셈블리에서 빌드 후 분석을 실행합니다. **FxCopCmd.exe**라는 별도 실행 파일로 실행됩니다. FxCopCmd.exe는 컴파일된 어셈블리를 로드하고, 코드 분석을 실행한 다음, 결과(또는 *진단*)를 보고합니다.
 
-FxCop 분석기는.NET 컴파일러 플랫폼 ("Roslyn")를 기반으로 합니다. 있습니다 [NuGet 패키지로 설치](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package) 프로젝트 또는 솔루션에서 참조 되는 합니다. 소스 코드를 실행 하는 FxCop 분석기 기반 컴파일러 실행 하는 동안 분석 합니다. 하거나 컴파일러 프로세스 내에서 호스팅되는 FxCop 분석기 **csc.exe** 또는 **vbc.exe**, 프로젝트를 빌드할 때 분석을 실행 합니다. 분석기 결과 컴파일러 결과 함께 보고 됩니다.
+FxCop 분석기는 .NET Compiler Platform("Roslyn")을 기반으로 합니다. 프로젝트 또는 솔루션에서 참조되는 [NuGet 패키지로 설치](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package)합니다. 컴파일러 실행 동안 FxCop 분석기는 소스 코드 기반 분석을 실행합니다. FxCop 분석기는 **csc.exe** 또는 **vbc.exe**의 컴파일러 프로세스 내에서 호스팅되며, 프로젝트가 빌드될 때 분석을 실행합니다. 분석기 결과는 컴파일러 결과와 함께 보고됩니다.
 
 > [!NOTE]
-> 할 수도 있습니다 [FxCop 분석기는 Visual Studio 확장 설치](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-vsix)합니다. 이 경우 분석기 실행 코드 편집기에 입력 하지만 빌드 시간에 실행 하지 않습니다. CI (지속적인 통합)의 일부로 FxCop 분석기를 실행 하려는 경우 설치 NuGet 패키지로 대신 합니다.
+> [Visual Studio 확장으로 FxCop 분석기를 설치](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-vsix)할 수도 있습니다. 이 경우 분석기는 코드 편집기에 입력한 대로 실행하지만 빌드 시 실행하지 않습니다. CI(지속적인 통합)의 일부로 FxCop 분석기를 실행하려는 경우 NuGet 패키지로 대신 설치합니다.
 
-## <a name="does-the-run-code-analysis-command-run-fxcop-analyzers"></a>코드 분석 실행 명령을 FxCop 분석기를 실행 하나요?
+## <a name="does-the-run-code-analysis-command-run-fxcop-analyzers"></a>코드 분석 실행 명령은 FxCop 분석기를 실행하나요?
 
-아니요. 선택 하면 **분석** > **코드 분석 실행** Visual Studio 2017에서이 정적 코드 분석 또는 레거시 FxCop을 실행 합니다. **코드 분석 실행** FxCop Roslyn 기반 분석기를 포함 하는 Roslyn 기반 분석기를 적용 되지 않습니다.
+아니요. Visual Studio 2017에서 **분석** > **코드 분석 실행**을 선택하면 정적 코드 분석 또는 레거시 FxCop를 실행합니다. **코드 분석 실행**은 Roslyn 기반 FxCop 분석기를 포함하여 Roslyn 기반 분석기에 적용되지 않습니다.
 
-## <a name="does-the-runcodeanalysis-msbuild-project-property-run-analyzers"></a>RunCodeAnalysis msbuild 프로젝트 속성 분석기를 실행 하나요?
+## <a name="does-the-runcodeanalysis-msbuild-project-property-run-analyzers"></a>RunCodeAnalysis msbuild 프로젝트 속성은 분석기를 실행하나요?
 
-아니요. 합니다 **RunCodeAnalysis** 프로젝트 파일에서 속성 (예를 들어 *.csproj*) 레거시 FxCop 실행에 사용 됩니다. 호출 하는 빌드 후 msbuild 작업을 실행 **FxCopCmd.exe**합니다. 선택 같습니다 **분석** > **코드 분석 실행** Visual Studio에서.
+아니요. 프로젝트 파일에서 **RunCodeAnalysis** 속성(예: *.csproj*)은 레거시 FxCop 실행에만 사용됩니다. **FxCopCmd.exe**를 호출하는 빌드 후 msbuild 작업을 실행합니다. 이는 Visual Studio에서 **분석** > **코드 분석 실행**을 선택하는 것과 같습니다.
 
-## <a name="so-how-do-i-run-fxcop-analyzers-then"></a>어떻게 실행 합니까 FxCop 분석기 다음?
+## <a name="so-how-do-i-run-fxcop-analyzers-then"></a>그러면 FxCop 분석기를 어떻게 실행하나요?
 
-FxCop 분석기를 처음 실행할 [NuGet 패키지를 설치](install-fxcop-analyzers.md) 에 있습니다. 그런 다음 Visual Studio 또는 msbuild를 사용 하 여 프로젝트 또는 솔루션을 빌드하십시오. 경고 및 FxCop 분석기를 생성 하는 오류에 표시 됩니다는 **오류 목록** 나 명령 창.
+FxCop 분석기를 실행하려면 먼저 [NuGet 패키지를 설치합니다](install-fxcop-analyzers.md). 그런 다음, Visual Studio에서 또는 msbuild를 사용하여 프로젝트 또는 솔루션을 빌드합니다. FxCop 분석기가 생성하는 경고 및 오류는 **오류 목록** 또는 명령 창에 표시됩니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-- [.NET 컴파일러 플랫폼 분석기 개요](roslyn-analyzers-overview.md)
-- [분석기를 사용 하 여 시작](fxcop-analyzers.yml)
-- [FxCop 분석기를 설치 합니다.](install-fxcop-analyzers.md)
+- [.NET Compiler Platform 분석기 개요](roslyn-analyzers-overview.md)
+- [분석기 시작](fxcop-analyzers.yml)
+- [FxCop 분석기 설치](install-fxcop-analyzers.md)

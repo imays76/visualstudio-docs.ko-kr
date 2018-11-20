@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 Equals 및 GetHashCode 메서드 재정의 생성
+title: C# Equals 및 GetHashCode 메서드 재정의 생성
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9af687eb4b39afdbe9fd34df1aa03f18ce243ef8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5ec552e320b0c19c5c05e145fd9c5a4588f31b4c
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903116"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295711"
 ---
 # <a name="generate-equals-and-gethashcode-method-overrides-in-visual-studio"></a>Visual Studio에서 Equals 및 GetHashCode 메서드 재정의 생성
 
@@ -36,17 +36,20 @@ ms.locfileid: "49903116"
 
 ## <a name="how-to"></a>방법
 
-1. 형식 선언에 커서를 놓습니다.
+1. 형식 선언 줄 위에 커서를 놓습니다.
 
    ![강조 표시된 코드](media/overrides-highlight-cs.png)
 
+   > [!TIP]
+   > 형식 이름을 선택하려면 두 번 클릭하지 마세요. 그렇지 않으면 메뉴 옵션을 사용할 수 없습니다. 줄 위에 커서를 놓습니다.
+
 1. 다음 작업 중 하나를 수행합니다.
 
-   - **키보드**
-      - 줄의 임의 위치에서 **Ctrl**+**.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
-   - **마우스**
-      - 마우스 오른쪽 단추로 클릭하고 **빠른 작업 및 리팩터링** 메뉴를 선택합니다.
-      - 텍스트 커서가 이미 구부러진 빨간 곡선이 있는 줄 위에 있으면 왼쪽 여백에 나타나는 ![전구](media/bulb-cs.png) 아이콘을 클릭합니다.
+   - 줄의 임의 위치에서 **Ctrl**+**.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
+
+   - 마우스 오른쪽 단추로 클릭하고 **빠른 작업 및 리팩터링** 메뉴를 선택합니다.
+
+   - 텍스트 커서가 이미 구부러진 빨간 곡선이 있는 줄 위에 있으면 왼쪽 여백에 나타나는 ![스크루드라이버](../media/screwdriver-icon.png) 아이콘을 클릭합니다.
 
    ![재정의 생성 미리 보기](media/overrides-preview-cs.png)
 
@@ -57,9 +60,9 @@ ms.locfileid: "49903116"
     ![재정의 생성 대화 상자](media/overrides-dialog-cs.png)
 
     > [!TIP]
-    > 멤버 목록 바로 아래 있는 확인란을 사용하여 이 대화 상자에서 연산자를 생성하도록 선택할 수도 있습니다.
+    > 대화 상자 맨 아래 부근에 있는 확인란을 사용하여 이 대화 상자에서 연산자를 생성하도록 선택할 수도 있습니다.
 
-   Equals 및 GetHashCode 재정의는 기본 구현을 사용하여 생성됩니다.
+   기본 구현을 사용하여 `Equals` 및 `GetHashCode` 메서드를 생성합니다.
 
    ![메서드 생성 결과](media/overrides-result-cs.png)
 

@@ -12,12 +12,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: c008462ded2b84b5978b65fc41344477c36bee76
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: df3fbccff1bd76954b153c4c3159e1d65527e90b
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627074"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349298"
 ---
 # <a name="code-style-preferences"></a>코드 스타일 기본 설정
 
@@ -26,6 +26,9 @@ ms.locfileid: "42627074"
 목록의 각 항목에는 선택한 기본 설정의 미리 보기가 표시됩니다.
 
 ![코드 스타일 옵션](media/code-style-quick-actions-dialog.png)
+
+> [!NOTE]
+> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio의 편집기 동작](/visualstudio/mac/editor-behavior)을 참조하세요.
 
 ## <a name="preference-and-severity"></a>기본 설정 및 심각도
 
@@ -50,3 +53,4 @@ Visual Studio 2017에서 처음으로 **문서 서식** 명령을 트리거하�
 
 - [빠른 작업](../ide/quick-actions.md)
 - [EditorConfig에 대한 .NET 코딩 규칙 설정](../ide/editorconfig-code-style-settings-reference.md)
+- [편집기 동작(Mac용 Visual Studio)](/visualstudio/mac/editor-behavior)

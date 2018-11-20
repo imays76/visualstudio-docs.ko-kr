@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 57898fbcfba72c67b199ea584d494cb96dfbf491
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 473f46e87ded78e134ab021b68c57248f8ac1a33
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811843"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349207"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Visual Studio의 내게 필요한 옵션 팁과 요령
 
@@ -26,6 +26,9 @@ ms.locfileid: "49811843"
 > 접근성에 대한 최신 업데이트에 대한 자세한 내용은 [Accessibility improvements in Visual Studio 2017 version 15.3(Visual Studio 2017 버전 15.3의 접근성 향상)](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) 블로그 게시물을 참조하세요.
 
 Visual Studio에는 화면 판독기 및 기타 보조 기술과 호환되는 내게 필요한 옵션 기능이 있습니다. 이 항목에서는 키보드만 사용하여 작업을 수행하는 데 사용할 수 있는 일반적인 바로 가기 키 조합을 나열하고, 표시 여부를 개선하기 위해 고대비 테마를 사용하는 방법에 대한 정보를 포함합니다. 또한 주석을 사용하여 사용자 코드에 대한 유용한 정보를 노출하는 방법 및 빌드 및 중단점 이벤트에 대한 소리 큐를 설정하는 방법을 보여줍니다.
+
+> [!NOTE]
+> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio의 접근성](/visualstudio/mac/accessibility)을 참조하세요.
 
 ## <a name="save-your-ide-settings"></a>IDE 설정 저장
 
@@ -104,3 +107,4 @@ Windows에서 소리 애플릿을 사용하여 Visual Studio 프로그램 이벤
 * [방법: Visual Studio에서 메뉴 및 도구 모음 사용자 지정](../../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
 * [Visual Studio IDE 개인 설정](../../ide/personalizing-the-visual-studio-ide.md)
 * [Microsoft Accessibility](https://www.microsoft.com/Accessibility)
+* [접근성(Mac용 Visual Studio)](/visualstudio/mac/accessibility)

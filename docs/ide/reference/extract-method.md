@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 049b3caebc884ea22bd2928e9e4ff10e9921fd1d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6978457fdc976f87a8334b181ab69dfd78ef240c
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930598"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294542"
 ---
 # <a name="extract-a-method-refactoring"></a>메서드 추출 리팩터링
 
@@ -60,7 +60,7 @@ ms.locfileid: "49930598"
    메서드가 즉시 만들어집니다. 이제 여기에서 새 이름을 입력하여 간단히 메서드 이름을 바꿀 수 있습니다.
 
    > [!TIP]
-   > 또한 이 새 이름을 사용하도록 주석과 기타 문자열을 업데이트하고, IDE의 오른쪽 위에 표시되는 **이름 바꾸기** 상자의 확인란을 사용하여 저장하기 전에 [변경 내용을 미리 볼](../../ide/preview-changes.md) 수 있습니다.
+   > 또한 이 새 이름을 사용하도록 주석과 기타 문자열을 업데이트할 뿐 아니라, IDE의 오른쪽 위에 표시되는 **이름 바꾸기** 상자의 확인란을 사용하여 저장하기 전에 [변경 내용을 미리 볼](../../ide/preview-changes.md) 수 있습니다.
 
    - C#: 
 

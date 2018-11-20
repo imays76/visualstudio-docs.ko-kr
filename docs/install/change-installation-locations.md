@@ -1,56 +1,65 @@
 ---
-title: Visual Studio 2017에서의 설치 위치 변경
-description: 다운로드 캐시, 공유 구성 요소, 일부 SDK 및 도구의 위치를 변경하여 시스템 드라이브의 설치 공간을 줄이는 방법을 알아봅니다.
-ms.date: 05/07/2018
+title: Visual Studio 2017에서 설치 위치 선택
+description: 다운로드 캐시, 공유 구성 요소, 일부 SDK 및 도구의 위치를 다른 드라이브로 변경하여 시스템 드라이브의 설치 공간을 줄이는 방법을 알아봅니다.
+ms.date: 11/07/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - change installation locations for Visual Studio
+- select an installation location for Visual Studio files
 - move installation files to different drives
+- use the D drive
 author: TerryGLee
 ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 887ebca8645ab30d6d284433baf58451ab10b80c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ed3b54674c24e3becf62e7568be127344104de0f
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49869381"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295035"
 ---
-# <a name="change-the-installation-locations-in-visual-studio-2017"></a>Visual Studio 2017에서의 설치 위치 변경
+# <a name="select-the-installation-locations-in-visual-studio-2017"></a>Visual Studio 2017에서 설치 위치 선택
 
-**15.7의 새로운 기능**: 다운로드 캐시, 공유 구성 요소, SDK 및 도구를 다른 드라이브로 이동하여 시스템 드라이브의 설치 공간을 줄였습니다.
-
-방법은 다음과 같습니다.
-
-1. Visual Studio를 설치할 때 **설치 옵션** 탭을 선택합니다.
-
-   ![Visual Studio 2017 - 설치 위치 변경](media/installation-options-by-location.png "설치 위치 변경")
-
-   > [!IMPORTANT]
-   > 설치를 일시 중지하고 나중에 계속하는 경우 Visual Studio는 중단했던 위치를 선택하게 됩니다. 즉 다운로드하고 설치해야 할 잔여 항목에 진행률이 적용되고, 이전 개수에서 시작되지 않습니다.
-
-2. **Visual Studio IDE** 섹션에서 기본값을 적용합니다. 이 설치에서는 핵심 제품을 설치하고 이 Visual Studio 버전에 특정한 파일을 포함합니다.
-
-   > [!IMPORTANT]
-   > 시스템 드라이브가 SSD(반도체 드라이브)라면 Visual Studio를 통한 개발에서 많은 파일 읽기 및 쓰기가 있어 디스크 I/O 작업이 늘어나므로 시스템 드라이브의 기본 위치를 적용하는 것이 좋습니다.  로드를 처리하기 위해 가장 빠른 드라이브를 선택하는 것이 좋습니다.
-
-3. **다운로드 캐시** 섹션에서 다운로드 캐시를 유지할지 여부를 결정한 다음, **다운로드 캐시 유지**를 그에 따라 선택하거나 선택 취소합니다. <br><br>다운로드 캐시를 유지하지 않도록 설정하면 위치를 일시적으로만 사용합니다. 또 이전 설치에서의 파일에는 영향이 없고 해당 파일을 삭제하지도 않습니다. 모든 설치 패키지를 정리하려면 이전 설치를 별도로 수정해야 합니다.
-
-4. **다운로드 캐시** 섹션에서 설치 파일과 매니페스트를 저장하려는 드라이브를 지정합니다. <br><br>예를 들어, "C++을 통한 데스크톱 개발"을 선택할 경우 일시적으로 필요한 크기는 시스템 드라이브에서 1.58GB이며 설치가 완료된 즉시 비워집니다.
+**15.7의 새로운 기능**: 해당 파일의 일부의 위치를 변경하여 시스템 드라이브에서 Visual Studio의 설치 공간을 줄일 수 있습니다. 특히 다운로드 캐시, 공유 구성 요소, SDK 및 도구 파일에 대해 다른 위치를 사용할 수 있습니다.
 
    > [!NOTE]
-   > 파일은 먼저 시스템의 임시 드라이브에 다운로드된 다음, Visual Studio가 해당 파일을 확인하고 다운로드 캐시 폴더로 옮기고 나면 삭제됩니다. 다운로드 캐시를 다른 드라이브에 유지하도록 선택한 경우에도 Visual Studio는 시스템 드라이브에서 다운로드 캐시 크기에 상응하는 디스크 공간을 필요로 합니다. 
-   > [!IMPORTANT]
-   > 위치는 처음 설치에서 설정되며 이후에는 설치 관리자 UI에서 변경할 수 없습니다. 대신, [명령줄 매개 변수를 사용하여](use-command-line-parameters-to-install-visual-studio.md) 다운로드 캐시를 이동합니다.
+   > 일부 도구와 SDK를 설치할 수 있는 위치에 다른 규칙이 적용되는 도구와 SDK가 있습니다. 이러한 도구 및 SDK는 다른 위치를 선택했다 하더라도 시스템 드라이브에 설치됩니다.
 
-5. **공유 구성 요소, 도구 및 SDK** 섹션에서 함께 설치한 Visual Studio에서 공유하는 파일을 저장하려는 드라이브를 지정합니다. Visual Studio 설치 관리자가 설치 위치를 변경하도록 하는 SDK 및 도구도 이 디렉터리에 저장됩니다.
+시작할 준비가 되셨나요? 방법은 다음과 같습니다.
 
-   > [!NOTE]
-   > 일부 도구와 SDK에는 설치 가능한 위치에 대해 다른 규칙이 적용됩니다. 이러한 도구 및 SDK도 다른 위치를 선택했다 하더라도 시스템 드라이브에 설치해야 합니다.
+1. Visual Studio를 설치할 때 **설치 위치** 탭을 선택합니다.
+
+   ![Visual Studio 2017 - 설치 위치 선택](media/vs-installation-locations.png "설치 위치를 선택합니다.")
+
+1. **Visual Studio IDE** 섹션에서 기본값을 적용합니다. Visual Studio에서는 핵심 제품을 설치하고 이 Visual Studio 버전에 특정한 파일을 포함합니다.
+
+   ![설치 위치 탭의 Visual Studio IDE 섹션](media/vs-installation-locations-ide.png "설치 위치 탭의 Visual Studio IDE 섹션에 대한 기본값을 적용합니다.")
+
+   > [!TIP]
+   > 시스템 드라이브가 SSD(solid-state drive)인 경우 기본 위치를 시스템 드라이브에 적용하는 것이 좋습니다. 이유는? Visual Studio를 사용하여 개발하는 경우 디스크 I/O 작업을 증가시키는 많은 파일을 읽고 쓰고합니다. 로드를 처리하기 위해 가장 빠른 드라이브를 선택하는 것이 좋습니다.
+
+1. **다운로드 캐시** 섹션에서 다운로드 캐시를 유지할지 여부를 결정한 다음, 해당 파일을 저장하려는 위치를 결정합니다.
+
+     ![설치 위치 탭의 캐시 섹션 다운로드](media/vs-installation-locations-cache.png "설치 후 다운로드 캐시를 유지할지 여부를 선택한 다음, 파일을 저장하려는 드라이브를 지정합니다.")
+
+    1. **설치 후 다운로드 캐시 유지**를 선택하거나 선택을 취소합니다.
+
+       다운로드 캐시를 유지하지 않도록 설정하면 위치를 일시적으로만 사용합니다. 이 작업은 이전 설치에서 파일에 영향을 주지도 파일을 삭제하지도 않습니다.
+
+    1. 다운로드 캐시에서 설치 파일과 매니페스트를 저장하려는 드라이브를 지정합니다.
+
+        예를 들어, "C++을 통한 데스크톱 개발"을 선택할 경우 일시적으로 필요한 크기는 시스템 드라이브에서 1.58GB이며 설치가 완료된 즉시 비워집니다.
+
+       > [!IMPORTANT]
+       > 이 위치는 처음 설치에서 설정되며 이후 설치 관리자 UI에서는 변경할 수 없습니다. 대신, [명령줄 매개 변수를 사용하여](use-command-line-parameters-to-install-visual-studio.md) 다운로드 캐시를 이동해야 합니다.
+
+1. **공유 구성 요소, 도구 및 SDK** 섹션에서 함께 설치한 Visual Studio에서 공유하는 파일을 저장하려는 드라이브를 지정합니다. SDK 및 도구는 이 디렉터리에도 저장됩니다.
+
+   ![설치 위치 탭의 공유 구성 요소, 도구 및 SDK 섹션](media/vs-installation-locations-shared.png "공유 구성 요소, 도구 및 SDK를 저장하려는 위치를 지정합니다.")
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

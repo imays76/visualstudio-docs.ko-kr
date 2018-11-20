@@ -12,16 +12,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0d53ece6add1c781cb18569139fea5ffbbeca76
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 539e6c95dd16e091b7f0ff2cf792a9f8b2fa416b
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000231"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348343"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Visual Studio 2017의 문제를 보고하는 방법
 
 Visual Studio에 문제가 발생하는 경우와 관련하여 자세히 알려고 합니다. 진단하고 해결할 수 있도록 [개발자 커뮤니티](https://developercommunity.visualstudio.com/)에 대한 문제를 보고하는 방법은 다음과 같습니다.
+
+> [!NOTE]
+> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio에서 문제를 보고하는 방법](/visualstudio/mac/report-a-problem)을 참조하세요.
 
 ## <a name="report-a-problem-by-using-visual-studio"></a>Visual Studio를 사용하여 문제 보고
 

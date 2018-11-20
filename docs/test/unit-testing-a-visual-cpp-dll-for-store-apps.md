@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 2e389bec552212da36fba5f35da89cc85efe9a52
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 99d9d4571b2e2842124c9b5d5413e5b59905fa2a
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923045"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295779"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Visual C++ DLL 테스트 방법
 
@@ -46,7 +46,7 @@ ms.locfileid: "49923045"
 
     -   테스트 메서드는 `TEST_CLASS(YourClassName){...}`를 사용해서 클래스로 그룹화됩니다.
 
-         테스트를 실행하면 각 테스트 클래스의 인스턴스가 생성됩니다. 테스트 메서드는 지정되지 않은 순서로 호출됩니다. 각 모듈, 클래스 또는 메서드의 전/후에 호출되는 특별한 메서드를 정의할 수 있습니다. 자세한 내용은 MSDN 라이브러리의 [Microsoft.VisualStudio.TestTools.CppUnitTestFramework 사용](how-to-use-microsoft-test-framework-for-cpp.md)을 참조하세요.
+         테스트를 실행하면 각 테스트 클래스의 인스턴스가 생성됩니다. 테스트 메서드는 지정되지 않은 순서로 호출됩니다. 각 모듈, 클래스 또는 메서드의 전/후에 호출되는 특별한 메서드를 정의할 수 있습니다. 자세한 내용은 [Microsoft.VisualStudio.TestTools.CppUnitTestFramework 사용](how-to-use-microsoft-test-framework-for-cpp.md)을 참조하세요.
 
 ##  <a name="Verify_that_the_tests_run_in_Test_Explorer"></a> 테스트 탐색기에서 테스트가 실행되는지 확인
 

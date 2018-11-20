@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 0E1EF257-9DE4-4653-9DF4-805CE007A1A1
-ms.openlocfilehash: db90e2d4a1c6d80e579c125668b48c057595cc18
-ms.sourcegitcommit: 97204b85caadbcf14baeb6738710e287a196673e
+ms.openlocfilehash: 5a7519a9b1ff9716c60f0ad0db3969880a269049
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49991538"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295074"
 ---
 # <a name="install-a-preview-release"></a>미리 보기 릴리스 설치
 
@@ -24,7 +24,7 @@ Mac용 Visual Studio에 대한 미리 보기 릴리스는 별도 다운로드가
 
 Mac용 Visual Studio의 미리 보기를 설치하려면 다음 단계를 사용합니다.
 
-1. **Visual Studio > 업데이트 확인...** 으로 이동합니다.
+1. **Visual Studio > 업데이트 확인**으로 이동합니다.
 2. 업데이트 채널 콤보 상자에서 **베타**를 선택합니다.
 3. **채널 전환** 단추를 선택하여 선택한 채널로 전환하고 새 업데이트 다운로드를 시작합니다.
 4. **업데이트 다시 시작 및 설치** 단추를 선택하여 업데이트 설치를 시작합니다.

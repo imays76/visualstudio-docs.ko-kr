@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2995e3b71ffb46b726d17ffc2f1f7fe68f6663ff
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: dffc0344c0cd7c226ae6651679c4a8f491d8aaa3
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42626817"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607805"
 ---
 # <a name="learn-about-projects-and-solutions"></a>프로젝트 및 솔루션에 대한 자세한 정보
 
@@ -100,7 +100,7 @@ ms.locfileid: "42626817"
    }
    ```
 
-   코드의 기능을 이해할 필요는 없지만 원하는 경우 프로그램을 실행하고 콘솔(또는 표준 출력) 창에 오늘 날짜가 표시된 것을 확인할 수 있습니다.
+   코드의 기능을 이해할 필요는 없지만 원하는 경우 **Ctrl**+**F5**를 눌러 프로그램을 실행하여 콘솔(또는 표준 출력) 창에 오늘 날짜가 표시되는지 확인할 수 있습니다.
 
 ## <a name="add-a-second-project"></a>두 번째 프로젝트 추가
 
@@ -148,7 +148,7 @@ ms.locfileid: "42626817"
 
    일부 코드에서 빨간색 "물결선"이 표시됩니다. 테스트 프로젝트를 [friend 어셈블리](/dotnet/csharp/programming-guide/concepts/assemblies-gac/friend-assemblies)에서 **QuickDate** 프로젝트로 만들어서 이 오류를 수정합니다.
 
-1. **QuickDate** 프로젝트로 돌아와서 *Calendar.cs* 파일이 아직 열려 있지 않으면 열어서, 다음 [using 문](/dotnet/csharp/language-reference/keywords/using-statement) 및 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 특성을 추가하여 테스트 프로젝트에서 오류를 해결합니다.
+1. **QuickDate** 프로젝트로 돌아와서 *Calendar.cs* 파일이 아직 열려 있지 않으면 열고, 다음 [using 문](/dotnet/csharp/language-reference/keywords/using-statement) 및 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 특성을 해당 파일의 위에 추가하여 테스트 프로젝트에서 오류를 해결합니다.
 
    ```csharp
    using System.Runtime.CompilerServices;
@@ -162,11 +162,11 @@ ms.locfileid: "42626817"
 
 ## <a name="project-properties"></a>프로젝트 속성
 
-<xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 특성이 포함된 C# 코드 파일의 줄은 **QuickTest** 프로젝트의 어셈블리 이름(파일 이름)을 참조합니다. 어셈블리 이름은 프로젝트 이름과 동일하지 않을 수 있습니다. 프로젝트의 어셈블리 이름을 찾으려면 프로젝트 속성을 엽니다.
+<xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 특성이 포함된 *Calendar.cs* 파일의 줄은 **QuickTest** 프로젝트의 어셈블리 이름(파일 이름)을 참조합니다. 어셈블리 이름은 프로젝트 이름과 동일하지 않을 수 있습니다. 프로젝트의 어셈블리 이름을 찾으려면 프로젝트 속성을 엽니다.
 
 1. **솔루션 탐색기**에서 **QuickTest** 프로젝트를 선택합니다. 마우스 오른쪽 단추로 클릭하거나 상황에 맞는 메뉴에서 **속성**을 선택하거나 **Alt**+**Enter** 키를 누릅니다.
 
-   프로젝트의 *속성 페이지*가 **응용 프로그램** 탭에서 열립니다. 속성 페이지에는 프로젝트에 대한 다양한 설정이 포함됩니다. **QuickTest** 프로젝트의 어셈블리의 이름은 실제로 "QuickTest"입니다. 변경하려는 경우 여기에서 변경할 수 있습니다. 그런 다음 테스트 프로젝트를 빌드할 때 결과 실행 파일의 이름이 *QuickTest.exe*에서 선택한 이름으로 변경됩니다.
+   프로젝트의 *속성 페이지*가 **응용 프로그램** 탭에서 열립니다. 속성 페이지에는 프로젝트에 대한 다양한 설정이 포함됩니다. **QuickTest** 프로젝트의 어셈블리의 이름은 실제로 "QuickTest"입니다. 변경하려는 경우 여기에서 변경할 수 있습니다. 그런 다음, 테스트 프로젝트를 빌드할 때 결과 이진 파일의 이름이 *QuickTest.dll*에서 선택한 이름으로 변경됩니다.
 
    ![프로젝트 속성](media/quickstart-projects-properties.png)
 
@@ -175,6 +175,11 @@ ms.locfileid: "42626817"
 ## <a name="next-steps"></a>다음 단계
 
 단위 테스트가 작동하는지 확인하려면 메뉴 모음에서 **테스트** > **실행** > **모든 테스트**를 선택합니다. **테스트 탐색기**라는 창이 열리면 **TestGetCurrentDate** 테스트에 통과했다고 표시됩니다.
+
+![테스트 통과를 보여주는 Visual Studio의 텍스트 탐색기](media/quickstart-projects-test-explorer.png)
+
+> [!TIP]
+> **테스트 탐색기**가 자동으로 열리지 않는 경우 메뉴 모음에서 **테스트** > **Windows** > **테스트탐색기**를 선택하여 테스트 탐색기를 엽니다.
 
 ## <a name="see-also"></a>참고 항목
 

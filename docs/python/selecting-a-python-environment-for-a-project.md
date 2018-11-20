@@ -1,7 +1,7 @@
 ---
 title: 프로젝트에 대한 Python 인터프리터 및 환경 선택
-description: Visual Studio 프로젝트와 가상 환경 만들기에 대한 지침에 사용하도록 Python 환경을 할당하는 방법입니다.
-ms.date: 06/27/2018
+description: Anaconda 및 가상 환경을 포함하여 Visual Studio 프로젝트에 사용할 Python 환경 또는 인터프리터를 선택하는 방법.
+ms.date: 11/08/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e738eb52ce8cb7cef4090dd9812f6c421a7d11fd
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 0bff5e81fbfda45908315091063833b31abbdd8c
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101136"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349454"
 ---
-# <a name="how-to-assign-which-python-environment-is-used-for-a-project"></a>프로젝트에 사용되는 Python 환경을 할당하는 방법
+# <a name="how-to-select-a-python-environment-for-a-project"></a>프로젝트에 대한 Python 인터프리터 선택하는 방법
 
-Python 프로젝트의 모든 코드는 특정 환경의 컨텍스트 내에서 실행됩니다. Visual Studio는 디버깅, 가져오기 및 멤버 완성, 구문 검사 및 환경이 필요한 기타 모든 작업에도 해당 환경을 사용합니다.
+Python 프로젝트의 모든 코드는 글로벌 Python 환경, Anaconda 환경, 가상 환경, conda 환경과 같은 특정 환경의 컨텍스트 내에서 실행됩니다. Visual Studio는 디버깅, 가져오기 및 멤버 완성, 구문 검사, Python 버전 및 설치된 패키지 모음에 특정된 언어 서비스가 필요한 기타 모든 작업에도 해당 환경을 사용합니다.
 
 Visual Studio의 모든 새로운 Python 프로젝트는 초기에 **솔루션 탐색기**의 **Python 환경** 노드에 표시되는 기본 전역 환경을 사용하도록 구성됩니다.
 
@@ -42,7 +42,7 @@ Visual Studio의 모든 새로운 Python 프로젝트는 초기에 **솔루션 �
 | --- | --- |
 | **가상 환경 추가** | 프로젝트에 새 가상 환경을 만드는 프로세스를 시작합니다. [가상 환경 만들기](#create-a-virtual-environment)를 참조하세요. |
 | **기존 가상 환경 추가** | 가상 환경을 포함하는 폴더를 선택하고 **Python 환경** 아래에 있는 목록에 추가하라는 메시지가 표시되지만 활성화하지는 않습니다. [기존 가상 환경 활성화](#activate-an-existing-virtual-environment)를 참조하세요. |
-| **Conda 환경 만들기** | 환경에 대한 이름을 입력하고 해당 기본 인터프리터를 지정하는 **Python 환경** *창*으로 전환합니다. |
+| **Conda 환경 만들기** | 환경에 대한 이름을 입력하고 해당 기본 인터프리터를 지정하는 **Python 환경** *창*으로 전환합니다. [Conda 환경](managing-python-environments-in-visual-studio.md#conda-environments)을 참조하세요. |
 
 ## <a name="use-virtual-environments"></a>가상 환경 사용
 

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 96581fbaff9c2ddc85fbb92d73096f2a369d4c7b
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 77ac77ca999ef627c0f3c9e763b7e5799b97d679
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746314"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349246"
 ---
 # <a name="manage-project-and-solution-properties"></a>프로젝트 및 솔루션 속성 관리
 
@@ -25,6 +25,9 @@ ms.locfileid: "34746314"
 .NET 프로젝트는 프로젝트 트리 자체에도 속성 노드가 있을 수 있습니다.
 
 ![솔루션 탐색기 트리의 속성 노드](../ide/media/vs2015_props_se.png)
+
+> [!NOTE]
+> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [솔루션 및 프로젝트 속성 관리(Mac용 Visual Studio)](/visualstudio/mac/managing-solutions-and-project-properties)를 참조하세요.
 
 ## <a name="project-properties"></a>프로젝트 속성
 
@@ -56,3 +59,4 @@ C++ 프로젝트 속성에 대한 자세한 내용은 [프로젝트 속성 작�
 ## <a name="see-also"></a>참고 항목
 
 - [Visual Studio의 솔루션 및 프로젝트](../ide/solutions-and-projects-in-visual-studio.md)
+- [솔루션 및 프로젝트 속성 관리(Mac용 Visual Studio)](/visualstudio/mac/managing-solutions-and-project-properties)

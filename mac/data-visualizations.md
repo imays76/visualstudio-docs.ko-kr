@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.openlocfilehash: f2d9e05a9325073e2844b0cdce97f2cfb480b880
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 896fa055c536f9f3ee693773ad4f4ae0edd7e7fe
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224257"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349441"
 ---
 # <a name="data-visualizations"></a>데이터 시각화
 
@@ -19,50 +19,46 @@ Mac용 Visual Studio에는 디버거에 대한 UI 지원이 포함되어 있으�
 
 디버그 **로컬** 패드의 시각화 도우미는 사용자가 행을 마우스로 가리킬 때 값 오른쪽에 표시되는 미리 보기 아이콘을 클릭하면 표시할 수 있습니다.
 
- ![로컬 패드](media/data-visualizations-image9.png)
+![로컬 패드](media/data-visualizations-image9.png)
 
 아래 목록에는 Mac용 Visual Studio에서 디버그할 때 제공되는 여러 가지 새로운 시각화가 나와 있습니다.
 
 ## <a name="point"></a>요소
 iOS 및 Mac의 CGPoint 또는 Point/PointF는 디버그 패드에 X 및 Y 값을 표시하는 튜플로 렌더링됩니다.
 
- ![포인트 시각화](media/data-visualizations-image10.png)
+![포인트 시각화](media/data-visualizations-image10.png)
 
 ## <a name="size"></a>크기
-iOS 및 Mac의 CGSize 또는 Size/SizeF는 사각형으로 렌더링됩니다. 크기가 250px 이상까지 확장되도록 그려지고, 250px가 되면 최대 크기가 250px인 사각형으로 유지됩니다.
+iOS 및 Mac의 CGSize 또는 Size/SizeF는 사각형으로 렌더링됩니다. 크기가 250px 이상으로 확장될 때까지 크기가 조정되고, 250px 이상이 되면 최대 크기가 250px인 사각형으로 크기가 조정됩니다.
 
-![크기 시각화](media/data-visualizations-image11.png)
-
+[크기 시각화](media/data-visualizations-image11.png)
 
 ## <a name="rectangle"></a>사각형
-iOS 및 Mac의 Rectangle/RectangleF 또는 CGRect는 크기와 원점을 표시합니다. Size와 마찬가지로, 크기가 250px 이상까지 확장되도록 그려집니다.
+iOS 및 Mac의 Rectangle/RectangleF 또는 CGRect는 크기와 원점을 표시합니다. Size와 마찬가지로, 크기가 250px 이상으로 확장될 때까지 크기가 조정됩니다.
 
- ![사각형 시각화](media/data-visualizations-image12.png)
+![사각형 시각화](media/data-visualizations-image12.png)
 
 ## <a name="coordinate"></a>좌표
 좌표는 위치를 중심에 고정하여 지도에 그려집니다.
 
-![좌표 시각화](media/data-visualizations-image13.png)
+[좌표 시각화](media/data-visualizations-image13.png)
 
 ## <a name="color"></a>색
 UIColor, CGColor, Color 속성을 표시하고 색 미리 보기, RGBA 구성 요소, 색상-채도-명도 값, 색의 16진수 값을 설명합니다.
 
 ![색 시각화](media/data-visualizations-image14.png)
 
-
 ## <a name="images"></a>이미지
 
 미디어는 최대 250px 크기까지 확장되도록 렌더링되며, 이미지가 250px를 초과하면 크기가 적절하게 조정됩니다.
 
- ![이미지 시각화](media/data-visualizations-image15.png)
-
+![이미지 시각화](media/data-visualizations-image15.png)
 
 ## <a name="bezier-curves"></a>베지어 곡선
 
 이 시각화 도우미는 `NSBezierPath`를 표시합니다.
 
 ![베지어 곡선 시각화](media/data-visualizations-image16.png)
-
 
 ## <a name="string"></a>문자열
 
@@ -78,7 +74,7 @@ UIColor, CGColor, Color 속성을 표시하고 색 미리 보기, RGBA 구성 �
 
 ### <a name="editor"></a>편집기:
 
- ![편집기 시각화](media/data-visualizations-image21.png)
+![편집기 시각화](media/data-visualizations-image21.png)
 
 ## <a name="ienumerable"></a>IEnumerable
 
@@ -90,7 +86,7 @@ IEnumerable은 모든 값을 열거합니다. **값 표시** 단추를 클릭하
 
 자체 인라인 시각화 도우미도 있는 다른 몇 가지 형식은 다음과 같습니다.
 
- ![기타 시각화](media/data-visualizations-image23.png)
+![기타 시각화](media/data-visualizations-image23.png)
 
 *   **Primitives**
     *   기본 형식의 원시 값을 표시됩니다.
@@ -104,3 +100,8 @@ IEnumerable은 모든 값을 열거합니다. **값 표시** 단추를 클릭하
     *   클릭 가능한 하이퍼링크를 표시합니다.
 *   **IntPtr**
     *   IntPtr의 16진수 표현을 표시합니다.
+
+## <a name="see-also"></a>참고 항목
+
+- [자동 및 지역 창에서 변수 검사(Windows의 Visual Studio)](/visualstudio/debugger/autos-and-locals-windows)
+- [시각화 도우미에서 문자열 보기(Windows의 Visual Studio)](/visualstudio/debugger/string-visualizer-dialog-box)

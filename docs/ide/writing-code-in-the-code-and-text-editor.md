@@ -12,16 +12,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 397ed4ea94aa54c8f8d31fc6ff0d08da16a93479
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 8be5d3692459c2c65d4243c831ef4de002828bb0
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627050"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349077"
 ---
 # <a name="features-of-the-code-editor"></a>코드 편집기의 기능
 
 Visual Studio 편집기에서는 코드 및 텍스트를 더 쉽게 작성 및 관리할 수 있는 다양한 기능을 제공합니다. 개요를 사용하여 여러 코드 블록을 확장 및 축소할 수 있습니다. IntelliSense, **개체 브라우저**및 호출 계층 구조를 사용하여 코드에 대해 자세히 알아볼 수 있습니다. **이동**, **정의로 이동**, 및 **모든 참조 찾기** 등의 기능을 사용하여 코드를 찾을 수 있습니다. 코드 조각이 있는 코드 블록을 삽입할 수 있고 **사용법에서 생성**과 같은 기능을 사용하여 코드를 생성할 수 있습니다. 이전에 Visual Studio 편집기를 사용한 적이 없을 경우 빠른 개요를 보려면 [코드 편집](https://visualstudio.microsoft.com/vs/features/ide/)을 참조하세요.
+
+> [!NOTE]
+> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [원본 편집기(Mac용 Visual Studio)](/visualstudio/mac/source-editor)를 참조하세요.
 
 다양한 방법으로 코드를 볼 수 있습니다. 기본적으로 **솔루션 탐색기**는 파일별로 구성된 코드를 보여 줍니다. 창 아래쪽의 **클래스 뷰** 탭을 클릭하여 클래스별로 구성된 코드를 볼 수 있습니다.
 
@@ -87,6 +90,7 @@ Visual Studio 편집기에서는 코드 및 텍스트를 더 쉽게 작성 및 �
 
 ## <a name="see-also"></a>참고 항목
 
+- [원본 편집기(Mac용 Visual Studio)](/visualstudio/mac/source-editor)
 - [Visual Studio IDE](../ide/visual-studio-ide.md)
 - [Visual Studio에서 C++ 시작](../ide/getting-started-with-cpp-in-visual-studio.md)
 - [Visual Studio에서 C# 및 ASP.NET 시작](../ide/tutorial-csharp-aspnet-core.md)

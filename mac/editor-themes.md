@@ -5,17 +5,18 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 4C1B7952-CD45-4132-AD6B-01CF993D83F8
-ms.openlocfilehash: fec4574153ec96ad48f550ee9f7a45c88fb70ef8
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 55ef6a5de9ed0876228d7cca2344b639342e4b91
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224416"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294113"
 ---
 # <a name="editor-themes"></a>편집기 테마
-**Visual Studio > 기본 설정... > 텍스트 편집기 > 색 테마** 메뉴 옵션을 통해 편집기 테마를 Mac용 Visual Studio에서 기본적으로 제공되는 색 구성표 10개 중 하나로 변경할 수 있습니다.
 
- ![색 테마 선택](media/source-editor-image17.png)
+**Visual Studio > 기본 설정 > 텍스트 편집기 > 색 테마** 메뉴 옵션을 통해 Mac용 Visual Studio에서 기본적으로 제공되는 색 구성표 10개 중 하나로 편집기 테마를 변경할 수 있습니다.
+
+![색 테마 선택](media/source-editor-image17.png)
 
 ## <a name="adding-new-themes"></a>새 테마 추가
 
@@ -27,8 +28,7 @@ ms.locfileid: "43224416"
 
 새 테마를 찾았거나 만든 후 로컬 컴퓨터로 다운로드했으면, 다음 단계를 수행하여 추가합니다.
 
-1. 색 테마 옵션 대화 상자에서 **추가** 단추를 선택합니다.   
-    ![색 테마 추가](media/source-editor-image20.png)
+1. 색 테마 옵션 대화 상자 ![색 테마 추가](media/source-editor-image20.png)에서 **추가** 단추를 선택합니다.
 2. 로컬 컴퓨터에서 테마를 찾은 다음 **열기**를 누릅니다.
 3. 사전 설치된 테마 목록의 맨 아래에 테마가 추가됩니다. 테마를 미리 보려면 해당 테마를 선택합니다. ![색 테마 미리 보기](media/source-editor-image21.png)
-4. 테마를 적용하려면 **확인** 단추를 누릅니다. 
+4. 테마를 적용하려면 **확인** 단추를 누릅니다.

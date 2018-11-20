@@ -5,21 +5,21 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: DDC39599-8C5D-4CB9-8DA5-229E085384CA
-ms.openlocfilehash: 7f076d10b0c884f39fa887547e883ec4215fd74c
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 2d3134d4016c6eb86f37832ba9998010bddd3f13
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224012"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295409"
 ---
 # <a name="visual-studio-for-mac-workloads"></a>Mac용 Visual Studio 워크로드
 
-Mac용 Visual Studio에는 다음과 같은 워크로드가 미리 설치되어 있습니다.
+Mac용 Visual Studio에는 다음과 같은 유형의 앱을 개발하기 위한 워크로드가 미리 설치되어 있습니다.
 
 * 플랫폼 간 .NET 모바일 앱: Android, iOS, tvOS, watchOS
 * Mac 데스크톱 앱
-* .NET Core 응용 프로그램
-* ASP.NET Core 웹 응용 프로그램
+* .NET Core 앱
+* ASP.NET Core 웹앱
 * 플랫폼 간 Unity 게임
 
 ## <a name="xamarin"></a>Xamarin
@@ -30,7 +30,7 @@ Mac용 Visual Studio에서 Xamarin을 사용하는 방법에 대한 자세한 �
 
 ## <a name="net-core-applications"></a>.NET Core 응용 프로그램
 
-.NET Core 사용에 대한 자세한 내용은 [설명서](https://docs.microsoft.com/dotnet/core/)를 참조하세요.
+.NET Core 사용에 대한 자세한 내용은 [설명서](/dotnet/core/)를 참조하세요.
 
 ## <a name="aspnet-core-web-applications"></a>ASP.NET Core 웹 응용 프로그램
 
