@@ -11,16 +11,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 67207d653d7300ecc5d0a7ae7a85ddea1bc0d7e9
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: e947ec99ff0d63f413e00f5602035a7baa0bd708
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542496"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348341"
 ---
 # <a name="sign-in-to-visual-studio"></a>Visual Studio에 로그인
 
 IDE에 로그인하여 개인 설정 계정을 설정하면 Visual Studio의 개발 환경을 자신에게 맞게 설정하고 최적화할 수 있습니다.
+
+> [!NOTE]
+> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio에 로그인](/visualstudio/mac/signing-in)을 참조하세요.
 
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>Visual Studio에 로그인해야 하는 이유는 무엇인가요?
 
@@ -68,3 +71,5 @@ Visual Studio를 처음 시작할 때 로그인할지 묻는 메시지가 나타
 
 * [Visual Studio 잠금을 해제하는 방법](../ide/how-to-unlock-visual-studio.md)
 * [Visual Studio IDE 개요](../ide/visual-studio-ide.md)
+* [로그인(Mac용 Visual Studio)](/visualstudio/mac/signing-in)
+* [활성화(Mac용 Visual Studio)](/visualstudio/mac/activation)
