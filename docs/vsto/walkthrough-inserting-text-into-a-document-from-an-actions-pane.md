@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c858cfbd2fb48aa850e395d74d7f03386ec8bc2f
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: b3b9683c5f41b81d529ad6f3347b54131f32f011
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671861"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948727"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>연습: 작업창에서 문서로 텍스트 삽입
   이 연습에는 Microsoft Office Word 문서에서 작업창을 만드는 방법을 보여 줍니다. 작업 창에는 두 개의 입력을 수집 하 고 다음 문서에 텍스트를 보낼 포함 되어 있습니다.  
@@ -145,7 +145,7 @@ ms.locfileid: "50671861"
      [!code-csharp[Trin_VstcoreActionsPaneWord#8](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/InsertTextControl.cs#8)]
      [!code-vb[Trin_VstcoreActionsPaneWord#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/InsertTextControl.vb#8)]  
   
-2.  C#에서는 단추 클릭에 대 한 이벤트 처리기를 추가 해야 합니다. 이 코드를 배치할 수 있습니다 합니다 `InsertTextControl` 생성자를 호출한 후 `IntializeComponent`합니다. 이벤트 처리기를 만드는 방법에 대 한 자세한 내용은 [방법: Office 프로젝트에서 이벤트 처리기 만들기](../vsto/how-to-create-event-handlers-in-office-projects.md)합니다.  
+2.  C#에서는 단추 클릭에 대 한 이벤트 처리기를 추가 해야 합니다. 이 코드를 배치할 수 있습니다 합니다 `InsertTextControl` 생성자를 호출한 후 `InitializeComponent`합니다. 이벤트 처리기를 만드는 방법에 대 한 자세한 내용은 [방법: Office 프로젝트에서 이벤트 처리기 만들기](../vsto/how-to-create-event-handlers-in-office-projects.md)합니다.  
   
      [!code-csharp[Trin_VstcoreActionsPaneWord#9](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/InsertTextControl.cs#9)]  
   
