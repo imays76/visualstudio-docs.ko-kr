@@ -6,23 +6,22 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
-ms.openlocfilehash: 66f7b33c944ced6ab662cf8e89341be6d7a2fb8b
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: e17a423e9db6826c8cc693e1c75c75bb067a19e8
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224070"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295295"
 ---
 # <a name="debugging-with-xamarin"></a>Xamarin을 사용한 디버깅
 
-
 Mac용 Visual Studio에 포함된 네이티브 디버거는 Xamarin.iOS, Xamarin.Mac, Xamarin.Android 응용 프로그램에 대한 디버깅을 지원합니다.
+
 Mac용 Visual Studio에서는 [*Mono 소프트 디버거*](http://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger/)를 사용합니다. 이 디버거는 Mono 런타임에 구현되어, Mac용 Visual Studio에서 모든 플랫폼의 관리 코드를 디버그할 수 있게 해줍니다.
 
 ## <a name="the-debugger"></a>디버거
 
 Mac용 Visual Studio에서는 Mono 소프트 디버거를 사용하여 모든 Xamarin 응용 프로그램의 관리(C# 또는 F#) 코드를 디버그합니다. Mono 소프트 디버거는 Mono 런타임에 기본 제공되는 협조적인 디버거란 점에서 기본 디버거와 다릅니다. 생성된 코드와 Mono 런타임이 IDE와 함께 작동하여 디버깅 경험을 제공합니다. Mono 런타임은 유선 프로토콜을 통해 디버깅 기능을 공개합니다. 자세한 내용은 [Mono 설명서](http://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger-wire-format/)를 참조하세요.
-
 
 [LLDB]( http://lldb.llvm.org/index.html) 또는 [GDB]( https://www.gnu.org/software/gdb/)와 같은 하드 디버거는 디버그된 프로그램의 정보나 협조 없이 프로그램을 제어하지만, 네이티브 iOS 또는 Android 코드를 디버그해야 하는 경우 Xamarin 응용 프로그램을 디버그할 때 유용할 수 있습니다.
 
@@ -38,11 +37,9 @@ IDE에서 중단점을 설정하려면 편집기의 여백 영역에서 중단�
 
 ![여백에 중단점 설정](media/debugging-image0.png)
 
-
 **중단점 패드**로 이동하면 코드에 설정된 모든 중단점을 볼 수 있습니다.
 
 ![중단점 목록](media/debugging-image0a.png)
-
 
 ## <a name="start-debugging"></a>디버깅 시작
 
@@ -62,17 +59,13 @@ IDE에서 중단점을 설정하려면 편집기의 여백 영역에서 중단�
 
 중단점이 발생해야 하는 상황을 지정하는 규칙을 설정할 수도 있습니다. 이를 *조건부 중단점* 추가라고 합니다. 조건부 중단점을 설정하려면 **중단점 속성 창**에 액세스합니다. 다음 두 가지 방법으로 액세스할 수 있습니다.
 
-
 * 새 조건부 중단점을 추가하려면 편집기 여백에서 중단점을 설정하려는 코드의 줄 번호 왼쪽을 마우스 오른쪽 단추로 클릭하고 새 중단점을 선택합니다.
-
 
  ![중단점 상황에 맞는 메뉴](media/debugging-image4.png)
 
 * 기존 중단점에 조건을 추가하려면 중단점을 마우스 오른쪽 단추로 클릭하고 **중단점 속성**을 선택하거나 **중단점 패드**에서 아래 그림에 표시된 중단점 편집 단추를 선택합니다.
 
-
  ![중단점 패드에서 기존 중단점 편집](media/debugging-image5.png)
-
 
 그런 다음 중단점이 발생할 조건을 입력할 수 있습니다.
 
@@ -91,12 +84,16 @@ IDE에서 중단점을 설정하려면 편집기의 여백 영역에서 중단�
 *   **한 단계씩 코드 실행** - 다음 코드 줄을 실행합니다. 다음 줄이 함수 호출인 경우 한 단계씩 코드 실행은 함수의 첫 번째 줄에서 중지되며, 함수 디버깅을 줄 단위로 계속할 수 있도록 합니다. 다음 줄이 함수가 아닌 경우 프로시저 단위 실행과 동일하게 동작합니다.
 *   **프로시저 나가기** - 현재 함수가 호출된 줄로 돌아갑니다.
 
-
 ## <a name="debugging-monos-class-libraries"></a>Mono의 클래스 라이브러리 디버깅
+
 Xamarin 제품은 Mono 클래스 라이브러리에 대한 소스 코드와 함께 제공되며, 이 소스 코드를 사용하여 디버거에서 한 단계씩 실행하면서 코드가 어떻게 동작하는지 검사할 수 있습니다.
 
 이 기능은 디버그 중에 추가 메모리를 사용하므로 기본적으로 꺼져 있습니다.
 
 이 기능을 사용하려면 **Mac용 Visual Studio > 기본 설정 > 디버거**로 이동한 다음, 아래 그림과 같이 “**프로젝트 코드만 디버깅합니다. 프레임워크 코드는 한 단계씩 실행하지 마세요.**” 옵션이 **선택 취소**되어 있어야 합니다.
 
- ![프레임워크 코드는 한 단계씩 실행하지 마세요 옵션](media/debugging-image8.png)
+![프레임워크 코드는 한 단계씩 실행하지 마세요 옵션](media/debugging-image8.png)
+
+## <a name="see-also"></a>참고 항목
+
+- [Visual Studio의 디버깅(Windows에서)](/visualstudio/debugger/)

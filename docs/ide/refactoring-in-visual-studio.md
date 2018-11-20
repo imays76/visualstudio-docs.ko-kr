@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 75945e1a3e66951021866370d043a645c8918541
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: dd99aba0855a3136d8992739ae00e242a5f54658
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447689"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348958"
 ---
 # <a name="refactor-code"></a>코드 리팩터링
 
@@ -32,3 +32,4 @@ Visual Studio에서 다양한 프로그래밍 언어에 다양한 리팩터링 �
 - [Visual Studio IDE](../ide/visual-studio-ide.md)
 - [코드 편집기의 기능](../ide/writing-code-in-the-code-and-text-editor.md)
 - [변경 내용 미리 보기](../ide/preview-changes.md)
+- [리팩터링(Mac용 Visual Studio)](/visualstudio/mac/refactoring)

@@ -13,20 +13,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ce6a85ff80d8da081b0d69763ed477174de7ed4
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 9d2ad9e3e6644f3f0ffc2d4fbf163968f16065f3
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863623"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349135"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Visual Studio에서 컴파일 및 빌드
 
-개발 주기의 특정 시점에 빌드를 실행하여 소스 코드에서 어셈블리 및 실행 가능한 응용 프로그램을 만들 수 있습니다. 일반적으로 빌드 프로세스는 Windows, ASP.NET, 모바일 앱 등 여러 다양한 프로젝트 형식에서 매우 유사합니다. 빌드 프로세스는 C#, Visual Basic, C++ 및 F# 같은 프로그래밍 언어에서도 매우 유사합니다.
+소스 코드를 빌드할 때 빌드 엔진에서 어셈블리 및 실행 가능한 애플리케이션을 만듭니다. 일반적으로 빌드 프로세스는 Windows, ASP.NET, 모바일 앱 등 여러 다양한 프로젝트 형식에서 매우 유사합니다. 빌드 프로세스는 C#, Visual Basic, C++ 및 F# 같은 프로그래밍 언어에서도 유사합니다.
 
-코드를 자주 빌드하면 잘못된 구문, 맞춤법 오류가 있는 키워드 및 형식 불일치와 같은 컴파일 시간 오류를 빠르게 식별할 수 있습니다. 디버그 버전의 코드를 자주 빌드하고 실행하면 논리 오류 및 의미 오류와 같은 런타임 오류도 빠르게 찾아 해결할 수 있습니다.
+코드를 자주 빌드하면 잘못된 구문, 맞춤법 오류가 있는 키워드 및 형식 불일치와 같은 컴파일 시간 오류를 빠르게 식별할 수 있습니다. 디버그 버전의 코드를 빌드하고 실행하면 논리 오류 및 의미 오류와 같은 런타임 오류도 찾아 해결할 수 있습니다.
 
-기본적으로 성공적인 빌드를 위해서는 응용 프로그램의 소스 코드에 적절한 구문이 포함되어 있어야 하고 라이브러리, 어셈블리 및 기타 구성 요소에 대한 모든 정적 참조가 확인되어야 합니다. 이를 통해 응용 프로그램 실행 파일이 생성되면 [디버깅 환경](../debugger/index.md)과 다양한 수동/자동 테스트 환경 모두에서 해당 파일이 제대로 작동하는지 테스트하여 [코드 품질의 유효성을 검사](../test/improve-code-quality.md)할 수 있습니다. 응용 프로그램이 완전히 테스트되면 고객에게 배포할 릴리스 버전을 컴파일할 수 있습니다. 이 프로세스에 대한 개요는 [연습: 응용 프로그램 빌드](../ide/walkthrough-building-an-application.md)를 참조하세요.
+성공적인 빌드를 위해서는 애플리케이션의 소스 코드에 올바른 구문이 포함돼 있어야 하고 라이브러리, 어셈블리 및 기타 구성 요소에 대한 모든 정적 참조를 확인해야 합니다. 애플리케이션 실행 파일이 생성되면 [디버깅 환경](../debugger/index.md)과 다양한 수동/자동 테스트 환경 모두에서 해당 파일이 제대로 작동하는지 테스트하여 [코드 품질의 유효성을 검사](../test/improve-code-quality.md)할 수 있습니다. 애플리케이션이 완전히 테스트되면 고객에게 배포할 릴리스 버전을 컴파일할 수 있습니다. 이 프로세스에 대한 개요는 [연습: 응용 프로그램 빌드](../ide/walkthrough-building-an-application.md)를 참조하세요.
 
 Visual Studio IDE, MSBuild 명령줄 도구 및 Azure Pipelines와 같은 방법 중 하나를 사용하여 응용 프로그램을 빌드할 수 있습니다.
 
@@ -37,6 +37,9 @@ Visual Studio IDE, MSBuild 명령줄 도구 및 Azure Pipelines와 같은 방법
 | Azure Pipelines | - 지속적인 통합/지속적인 업데이트 파이프라인의 일부로 빌드 프로세스를 자동화할 수 있습니다.<br />- 모든 빌드에서 자동화된 테스트를 적용할 수 있습니다.<br />- 빌드 프로세스에 사실상 제한 없는 클라우드 기반 리소스를 사용할 수 있습니다.<br />- 빌드 워크플로를 수정하고 빌드 작업을 만들어 사용자 지정 수준이 높은 작업을 수행할 수 있습니다.|
 
 이 섹션의 문서에는 IDE 기반 빌드 프로세스에 대한 자세한 내용이 나와 있습니다. 다른 방법에 대한 자세한 내용은 [MSBuild](../msbuild/msbuild.md) 및 [Azure Pipelines](/azure/devops/pipelines/index?view=vsts)를 각각 참조하세요.
+
+> [!NOTE]
+> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio에서 컴파일 및 빌드](/visualstudio/mac/compiling-and-building)를 참조하세요.
 
 ## <a name="overview-of-building-from-the-ide"></a>IDE에서 빌드하는 방법에 대한 개요
 
@@ -57,3 +60,4 @@ IDE에서 빌드하는 방법에 대한 가장 기본적인 개요는 [연습: �
 ## <a name="see-also"></a>참고 항목
 
 - [웹 사이트 프로젝트 빌드(컴파일)](https://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)
+- [컴파일 및 빌드(Mac용 Visual Studio)](/visualstudio/mac/compiling-and-building)

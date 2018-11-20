@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
-ms.openlocfilehash: 738e2bf3596ea517808be829b6f893c101b957d5
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 7ead923920275c0d0eb048cb961679da4ce2fc94
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43223897"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294658"
 ---
 # <a name="enable-subscription"></a>구독 사용
 
@@ -43,3 +43,7 @@ Mac용 Visual Studio는 선택할 수 있는 세 가지 구독 수준을 제공�
 > Mac용 Visual Studio 2017 Professional 또는 Enterprise 구독을 활성화하려면 로그인할 때 인터넷에 연결되어 있어야 합니다.
 
 인터넷 연결이 없는 컴퓨터를 위해 Mac용 Visual Studio Enterprise 2017을 구입했다면 정품 인증 없이 Mac용 Visual Studio를 계속 사용할 수 있지만 Xamarin Inspector, Xamarin Profiler 및 포함된 어셈블리 기능은 사용할 수 없습니다.
+
+## <a name="see-also"></a>참고 항목
+
+- [Windows의 Visual Studio에 로그인](/visualstudio/ide/signing-in-to-visual-studio)

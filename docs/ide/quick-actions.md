@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d413d5b440c39c3603e1e909fb0c4645719f188b
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 7089a9a654d1c346fefcca119f74a87d89f323b8
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34064852"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349376"
 ---
 # <a name="quick-actions"></a>빠른 작업
 
@@ -29,6 +29,9 @@ ms.locfileid: "34064852"
 - 코드 분석기 규칙 위반 [표시 안 함](../code-quality/use-roslyn-analyzers.md)
 - 리팩터링 적용(예: [임시 변수 인라인](../ide/reference/inline-temporary-variable.md))
 - 코드 생성(예: [지역 변수 도입](../ide/reference/introduce-local-variable.md))
+
+> [!NOTE]
+> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [리팩터링(Mac용 Visual Studio)](/visualstudio/mac/refactoring)을 참조하세요.
 
 전구![전구 아이콘](media/light-bulb-icon.png) 또는 스크루드라이버![스크루드라이버 아이콘](media/screwdriver-icon.png) 아이콘을 사용하거나 **Ctrl**+**을 눌러 빠른 작업을 적용 할 수 있습니다.** 동작을 사용할 수 있는 코드 줄에 커서가 있는 경우입니다. 오류를 나타내는 빨간 물결 무늬가 있는 경우 오류 전구![오류 전구 아이콘](media/error-light-bulb-icon.png)가 표시되고 Visual Studio에는 해당 오류에 사용할 수 있는 해결 방법이 있습니다.
 
@@ -60,3 +63,4 @@ ms.locfileid: "34064852"
 - [일반적인 빠른 작업](../ide/common-quick-actions.md)
 - [코드 스타일 및 빠른 작업](../ide/code-styles-and-quick-actions.md)
 - [코드(C++) 쓰기 및 리팩터링](/cpp/ide/writing-and-refactoring-code-cpp)
+- [리팩터링(Mac용 Visual Studio)](/visualstudio/mac/refactoring)

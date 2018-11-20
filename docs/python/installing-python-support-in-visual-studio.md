@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e4f4e79941be143f4eb6252dac735015f6145881
-ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
+ms.openlocfilehash: 5e7479a8d121eeb518d5ba39c9eb1444af64a788
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49324992"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349023"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Windows의 Visual Studio에서 Python 지원 설치 방법
 
@@ -59,7 +59,7 @@ Visual Studio용 Python 지원(Visual Studio용 Python 도구 또는 PTVS라고�
 
     | 옵션 | 설명 |
     | --- | --- |
-    | Python 배포 | 작업하려는 Python 2, Python 3, Anaconda2 및 Anaconda3의 32비트 및 64비트 변형의 조합을 선택합니다. 각각은 배포의 인터프리터, 런타임 및 라이브러리를 포함합니다. 특히 Anaconda는 다양한 미리 설치된 패키지를 포함하는 개방형 데이터 과학 플랫폼입니다. (배포를 추가하거나 제거하기 위해 언제든지 Visual Studio 설치 관리자로 돌아갈 수 있습니다.)  **참고**: Visual Studio 설치 관리자 외부에서 배포를 설치한 경우 여기서 해당 옵션을 선택할 필요가 없습니다. Visual Studio에서 기존 Python 설치를 자동으로 검색합니다. [Python 환경](managing-python-environments-in-visual-studio.md)을 참조하세요. 또한 설치 관리자에 표시된 버전보다 최신 버전의 Python을 사용할 수 있는 경우 해당 버전을 별도로 설치할 수 있으며, Visual Studio에서 이를 검색합니다. |
+    | Python 배포 | 작업하려는 Python 2, Python 3, Anaconda2 및 Anaconda3의 32비트 및 64비트 변형의 조합을 선택합니다. 각각은 배포의 인터프리터, 런타임 및 라이브러리를 포함합니다. 특히 Anaconda는 다양한 미리 설치된 패키지를 포함하는 개방형 데이터 과학 플랫폼입니다. (배포를 추가하거나 제거하기 위해 언제든지 Visual Studio 설치 관리자로 돌아갈 수 있습니다.)  **참고**: Visual Studio 설치 관리자 외부에서 배포를 설치한 경우 여기서 해당 옵션을 선택할 필요가 없습니다. Visual Studio에서 기존 Python 설치를 자동으로 검색합니다. [Python 환경 창](managing-python-environments-in-visual-studio.md#the-python-environments-window)을 참조하세요. 또한 설치 관리자에 표시된 버전보다 최신 버전의 Python을 사용할 수 있는 경우 해당 버전을 별도로 설치할 수 있으며, Visual Studio에서 이를 검색합니다. |
     | **Cookiecutter 템플릿 지원** | Cookiecutter 그래픽 UI를 설치하여 템플릿을 검색하고, 템플릿 옵션을 입력하고, 프로젝트 및 파일을 만듭니다. [Cookiecutter 확장 사용](using-python-cookiecutter-templates.md)을 참조하세요. |
     | **Python 웹 지원** | Bottle, Flask 및 Django 프레임워크를 사용하는 프로젝트에 대한 템플릿과 함께 HTML, CSS 및 JavaScript 편집 지원을 포함하는 웹 개발용 도구를 설치합니다. [Python 웹 프로젝트 템플릿](python-web-application-project-templates.md)을 참조하세요. |
     | **Python IoT 지원** | Python을 사용하여 Windows IoT Core 개발을 지원합니다. |

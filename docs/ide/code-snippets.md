@@ -19,16 +19,19 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d41a5a3995c9c93f17f090e5befc10a0bd544c3
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 8ed3f2f8e588aa908827516fee44c1a38ad6a008
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117214"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348489"
 ---
 # <a name="code-snippets"></a>코드 조각
 
 코드 조각은 상황에 맞는 메뉴 명령이나 바로 가기 키 조합을 사용하여 코드 파일에 삽입할 수 있는 다시 사용 가능한 작은 블록입니다. 일반적으로 `try-finally` 또는 `if-else` 블록과 같이 자주 사용되는 코드 블록을 포함하지만 전체 클래스나 메서드를 삽입하는 데 사용할 수 있습니다.
+
+> [!NOTE]
+> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [코드 조각(Mac용 Visual Studio)](/visualstudio/mac/snippets)을 참조하세요.
 
 코드 조각은 C#, C++, Visual Basic, XML, T-SQL 등을 비롯하여 많은 언어에 대해 사용할 수 있습니다. 언어에 대해 사용할 수있는 모든 설치된 코드 조각을 보려면 Visual Studio의 **도구** 메뉴에서 **코드 조각 관리자**를 열고 맨 위에 있는 드롭다운 메뉴에서 언어를 선택합니다.
 
@@ -103,3 +106,4 @@ End Property
 - [C# 코드 조각](../ide/visual-csharp-code-snippets.md)
 - [Visual C++ 코드 조각](../ide/visual-cpp-code-snippets.md)
 - [코드 조각 스키마 참조](../ide/code-snippets-schema-reference.md)
+- [코드 조각(Mac용 Visual Studio)](/visualstudio/mac/snippets)

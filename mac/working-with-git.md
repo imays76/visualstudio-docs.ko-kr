@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
-ms.openlocfilehash: bb5a91929238452041a67942cff99973637d51af
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 10d5b34ece7d093a42bafc1f0e410b670dd342f1
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224456"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296452"
 ---
 # <a name="working-with-git"></a>Git 작업
 
@@ -24,7 +24,7 @@ Git은 모든 팀원이 동일한 문서를 동시에 작업할 수 있는 분�
 
 ![버전 제어 메뉴 항목](media/version-control-gitVersionControlMenu.png)
 
-## <a name="push-and-pull"></a>푸시 및 풀 
+## <a name="push-and-pull"></a>푸시 및 풀
 
 푸시 및 풀은 Git에서 가장 일반적으로 사용하는 두 가지 작업입니다. 다른 사용자가 원격 리포지토리에 적용한 변경 내용을 동기화하려면 원격 리포지토리에서 **풀**해야 합니다. Mac용 Visual Studio에서 이 작업을 수행하려면 **버전 제어 > 솔루션 업데이트**를 선택합니다.
 
@@ -54,11 +54,11 @@ Git은 모든 팀원이 동일한 문서를 동시에 작업할 수 있는 분�
 
     ![로그 탭](media/version-control-gitLog.png)
 
-* **병합** - 작업을 커밋할 때 병합 충돌이 발생한 경우에 사용할 수 있습니다. 두 코드 섹션을 깔끔하게 결합할 수 있도록 자신의 변경 내용과 다른 개발자의 변경 내용을 시각적으로 표현합니다. 
+* **병합** - 작업을 커밋할 때 병합 충돌이 발생한 경우에 사용할 수 있습니다. 두 코드 섹션을 깔끔하게 결합할 수 있도록 자신의 변경 내용과 다른 개발자의 변경 내용을 시각적으로 표현합니다.
 
-## <a name="switching-branches"></a>분기 전환 
+## <a name="switching-branches"></a>분기 전환
 
-기본적으로 리포지토리에서 가장 먼저 생성된 분기를 **마스터** 분기라고 합니다. 마스터 분기와 다른 분기 간에 기술적인 차이점은 없지만, 마스터 분기는 개발 팀에서 '라이브' 또는 '프로덕션' 분기로 간주되는 경우가 대부분입니다.
+기본적으로 리포지토리에서 가장 먼저 생성된 분기를  **마스터**  분기라고 합니다. 마스터 분기와 다른 분기 간에 기술적인 차이점은 없지만, 마스터 분기는 개발 팀에서 '라이브' 또는 '프로덕션' 분기로 간주되는 경우가 대부분입니다.
 
 마스터 또는 기타 분기를 분기하여 독립적인 개발 라인을 만들 수 있습니다. 이렇게 하면 특정 시점을 기준으로 마스터 분기의 새 버전을 제공하여 '라이브' 분기와 독립적으로 개발할 수 있습니다. 소프트웨어 개발에서 형상을 관리할 때 이러한 방법으로 분기를 사용하는 경우가 많습니다.
 
@@ -80,7 +80,7 @@ Mac용 Visual Studio에서 분기를 조회하려면 **버전 제어 > 분기 �
 
  ![솔루션 패드에 표시된 현재 분기](media/version-control-gitBranchName.png)
 
-## <a name="reviewing-and-committing"></a>검토 및 커밋 
+## <a name="reviewing-and-committing"></a>검토 및 커밋
 
 파일의 변경 내용을 검토하려면 이 항목의 앞에서 설명한 것처럼 각 문서의 [변경 내용], [책임], [로그] 및 [병합] 탭을 사용합니다.
 
@@ -90,8 +90,12 @@ Mac용 Visual Studio에서 분기를 조회하려면 **버전 제어 > 분기 �
 
 이렇게 하면 프로젝트의 각 파일에 포함된 변경 내용을 모두 확인하면서 [되돌리기], [패치 만들기] 또는 [커밋] 옵션을 사용할 수 있습니다.
 
-원격 리포지토리에 파일을 커밋하려면 **커밋...** 을 누르고 커밋 메시지를 입력한 다음 커밋 단추를 클릭하여 확인합니다.
+원격 리포지토리에 파일을 커밋하려면 **커밋**을 누르고 커밋 메시지를 입력한 다음, 커밋 단추를 클릭하여 확인합니다.
 
 ![파일 커밋](media/version-control-gitCommit.png)
 
 변경 내용을 커밋했으면 다른 사용자가 확인할 수 있도록 원격 리포지토리에 푸시합니다.
+
+## <a name="see-also"></a>참고 항목
+
+* [Visual Studio 2017 및 Azure Repos Git와 코드 공유](/azure/devops/repos/git/share-your-code-in-git-vs-2017)

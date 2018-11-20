@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: 78f1c071469026b9e0e7d503483b7ddacc6d3cf1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 244312646de83e935dfa84cde4a9b793eb01a76f
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835906"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349717"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>EditorConfig를 사용하여 휴대용, 사용자 지정 편집기 설정 만들기
 
@@ -23,6 +23,9 @@ Visual Studio 2017에서는 프로젝트 또는 코드베이스에 [EditorConfig
 Visual Studio를 포함하여 다양한 코드 편집기와 IDE에서 EditorConfig 설정이 지원됩니다. 코드를 이용하여 휴대할 수 있는 구성 요소이며 Visual Studio 외부에서도 코딩 스타일을 적용할 수 있습니다.
 
 Visual Studio에서 프로젝트에 EditorConfig 파일을 추가할 때 문서의 서식을 지정(기본 프로필의 **편집** > **고급** > **문서 서식** 또는 **Ctrl**+**K**, **Ctrl**+**D**)하지 않으면 기존 코드의 서식이 변경되지 않습니다. 하지만 새로운 코드 줄은 EditorConfig 설정에 따라 서식이 지정됩니다. **문서 서식**을 [**서식 지정** 옵션 페이지](reference/options-text-editor-csharp-formatting.md#format-document-settings)에 적용하려는 EditorConfig 설정을 정의할 수 있습니다.
+
+> [!NOTE]
+> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio의 EditorConfig](/visualstudio/mac/editorconfig)를 참조하세요.
 
 ## <a name="coding-consistency"></a>코딩 일관성
 
@@ -124,7 +127,7 @@ EditorConfig 파일을 편집한 후 새 설정을 적용하려면 코드 파일
 
 ## <a name="example"></a>예
 
-다음 예제에서는 *.editorconfig* 파일을 프로젝트에 추가하기 전과 후의 C# 코드 조각 들여쓰기 상태를 보여 줍니다. Visual Studio 텍스트 편집기에 대한 **옵션** 대화 상자의 **탭** 설정은 **Tab** 키를 누를 때 공백 문자를 생성하도록 설정되어 있습니다.
+다음 예제에서는 *.editorconfig* 파일을 프로젝트에 추가하기 전과 후의 C# 코드 조각 들여쓰기 상태를 보여줍니다. Visual Studio 텍스트 편집기에 대한 **옵션** 대화 상자의 **탭** 설정은 **Tab** 키를 누를 때 공백 문자를 생성하도록 설정되어 있습니다.
 
 ![텍스트 편집기 탭 설정](../ide/media/vside_editorconfig_tabsetting.png)
 
@@ -172,3 +175,4 @@ dir .editorconfig /s
 - [언어 서비스를 위한 EditorConfig 지원](../extensibility/supporting-editorconfig.md)
 - [EditorConfig.org](http://editorconfig.org/)
 - [코드 편집기의 기능](writing-code-in-the-code-and-text-editor.md)
+- [EditorConfig(Mac용 Visual Studio)](/visualstudio/mac/editorconfig)

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cde519515782f453a8a60894a8bcc6dc6c714cc1
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 039d0caac98bdb574f2e42303ccb001e9600a740
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220855"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348945"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Visual Studio의 바로 가기 키
 
@@ -22,6 +22,9 @@ ms.locfileid: "51220855"
 
 > [!TIP]
 > 여기에 나열된 바로 가기 키는 사용 가능한 바로 가기 키의 하위 집합일 뿐입니다. 자세한 목록은 [기본 바로 가기 키](../ide/default-keyboard-shortcuts-in-visual-studio.md)를 참조하세요.
+
+> [!NOTE]
+> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio의 일반적인 바로 가기 키](/visualstudio/mac/keyboard-shortcuts)를 참조하세요.
 
 ## <a name="window-management"></a>창 관리
 
@@ -136,4 +139,5 @@ ms.locfileid: "51220855"
 
 - [접근성 팁과 요령](../ide/reference/accessibility-tips-and-tricks.md)
 - [바로 가기 키(Azure DevOps Services 및 TFS)](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts)
-- [Visual Studio 팁과 요령 블로그](https://blogs.msdn.com/b/zainnab)
+- [Visual Studio 팁과 요령 블로그](https://blogs.msdn.microsoft.com/zainnab/)
+- [Mac용 Visual Studio의 일반적인 바로 가기 키](/visualstudio/mac/keyboard-shortcuts)

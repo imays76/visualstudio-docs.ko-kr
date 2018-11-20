@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: b85814be6df104a0d5859fbb339ce0dc665c09c4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4cde6fb353db2fc018104a031dd17b943b2b2247
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908754"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295958"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>코드 기호 이름 바꾸기 래픽터링
 
@@ -66,7 +66,7 @@ ms.locfileid: "49908754"
       ![이름 바꾸기 - VB](media/rename-rename-vb.png)
 
    > [!TIP]
-   > 또한 이 새 이름을 사용하도록 주석과 기타 문자열을 업데이트하고, 편집기의 오른쪽 위에 표시되는 **이름 바꾸기** 상자의 확인란을 사용하여 저장하기 전에 [변경 내용을 미리 볼](../../ide/preview-changes.md) 수 있습니다.
+   > 또한 이 새 이름을 사용하도록 주석과 기타 문자열을 업데이트할 뿐만 아니라, 편집기의 오른쪽 위에 표시되는 **이름 바꾸기** 상자의 확인란을 사용하여 저장하기 전에 [변경 내용을 미리 볼](../../ide/preview-changes.md) 수도 있습니다.
 
 4. 변경 내용에 만족할 경우 **적용** 단추를 선택하거나 **Enter** 키를 누르면 변경 내용이 커밋됩니다.
 

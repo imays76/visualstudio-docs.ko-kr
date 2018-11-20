@@ -2,7 +2,7 @@
 title: Visual Studio 2017의 새로운 기능
 description: Visual Studio 2017의 새로운 기능을 알아보세요.
 ms.custom: ''
-ms.date: 09/04/2018
+ms.date: 11/13/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: conceptual
@@ -17,16 +17,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bf6de28ff98bf7a05098cabefb86b8cd5169d27
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 51a87e5df597c398c89f59b53fa9d92585d8d4fb
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673034"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607876"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Visual Studio 2017의 새로운 기능
 
-**[15.8 릴리스](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)용으로 업데이트됨**
+**15.9 릴리스[용으로 업데이트됨](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)**
 
 Visual Studio의 이전 버전에서 업그레이드하려고 하십니까? Visual Studio 2017에서 제공하는 기능 소개: 모든 개발, 앱 및 플랫폼에서 탁월한 생산성 Visual Studio 2017를 사용하여 Android, iOS, Windows, Linux, 웹 및 클라우드용 앱을 개발합니다. 빠르게 코딩하고, 간단하게 디버그 및 진단하고, 자주 테스트하며, 안심하고 릴리스하세요. 개발자 고유의 확장을 빌드하여 Visual Studio를 확장하고 사용자 지정할 수도 있습니다. 이 릴리스로 버전 제어를 사용하고, 민첩하게 대처하고, 효율적으로 공동 작업하세요.
 

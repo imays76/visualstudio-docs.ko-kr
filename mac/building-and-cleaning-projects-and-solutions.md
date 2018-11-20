@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: E4B6CB42-9FE2-43B9-93B7-BD4BD50518B1
-ms.openlocfilehash: d1907b4905e0acfc5b9c287f385499fabe8333f4
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 74a78c5cb4e9583db1eb99bb6eeb5691cb4adcfd
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224228"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294242"
 ---
 # <a name="building-and-cleaning-projects-and-solutions"></a>프로젝트와 솔루션 빌드 및 정리
 
@@ -32,17 +32,18 @@ ms.locfileid: "43224228"
     * **모두 다시 빌드** - 솔루션을 정리한 다음 빌드합니다.
     * **모든 정리** - 솔루션에서 모든 빌드 결과물을 제거합니다.
 
-
-
 ## <a name="to-build-or-rebuild-a-single-project"></a>단일 프로젝트를 빌드 또는 다시 빌드하려면
 
 1. Solution Pad에서 프로젝트를 선택합니다.
 
 2. 메뉴 모음에서 빌드를 선택한 다음, 빌드[ProjectName], 다시 빌드[ProjectName] 또는 정리[ProjectName] 중 하나를 선택합니다.
 
-
 ## <a name="to-stop-a-build"></a>빌드를 중지하려면
 
 빌드를 중지하려면 상태 영역에서 빨간색 사각형을 누릅니다.
 
- ![빨간색 사각형을 눌러 빌드 중지](media/compiling-and-building-image3.png)
+![빨간색 사각형을 눌러 빌드 중지](media/compiling-and-building-image3.png)
+
+## <a name="see-also"></a>참고 항목
+
+- [프로젝트와 솔루션 빌드 및 정리(Windows의 Visual Studio)](/visualstudio/ide/building-and-cleaning-projects-and-solutions-in-visual-studio)

@@ -19,16 +19,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6eba5c5dc2ec357d9aaf6a5e8f9cdef18102b8da
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7c3ba26f014b09624b1a8fec88bed8a5aefa632b
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856173"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349692"
 ---
 # <a name="install-visual-studio-2017"></a>Visual Studio 2017 설치
 
 Visual Studio를 설치하는 새로운 방법이 있습니다. 최신 버전에서는 필요한 기능만 보다 쉽게 선택하여 설치할 수 있도록 만들었습니다. 시스템에 미치는 영향을 이전보다 최소화하여 Visual Studio가 더 빨리 설치되도록 최소 사용 공간도 줄였습니다.
+
+> [!NOTE]
+> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio 설치](/visualstudio/mac/installation)를 참조하세요.
 
 이 버전의 다른 새로운 기능에 대해 자세히 알고 싶으세요? [릴리스 정보](/visualstudio/releasenotes/vs2017-relnotes)를 참조하세요.
 
@@ -149,4 +152,4 @@ Visual Studio 2017과 함께 이전 버전의 Visual Studio를 나란히 실행�
 * [Visual Studio 2017 제거](uninstall-visual-studio.md)
 * [Visual Studio 2017의 오프라인 설치 만들기](create-an-offline-installation-of-visual-studio.md)
 * [명령줄 매개 변수를 사용하여 Visual Studio 2017 설치](use-command-line-parameters-to-install-visual-studio.md)
-* [Mac용 Visual Studio 설정 및 설치](/visualstudio/mac/installation)
+* [Mac용 Visual Studio 설치](/visualstudio/mac/installation)

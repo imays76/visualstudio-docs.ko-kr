@@ -5,14 +5,14 @@ author: dantogno
 ms.author: v-davian
 ms.date: 05/25/2018
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: 3409bca77605bd55d0de15b38eb4812743af813e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 56fb99f1748d799732f2ba44dde4980687687eef
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836348"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294905"
 ---
-# <a name="setup-visual-studio-for-mac-tools-for-unity"></a>Mac용 Visual Studio Tools for Unity 설정
+# <a name="set-up-visual-studio-for-mac-tools-for-unity"></a>Mac용 Visual Studio Tools for Unity 설정
 
 이 섹션에서는 Mac용 Visual Studio Tools for Unity의 사용을 시작하는 방법을 설명합니다.
 
@@ -20,7 +20,7 @@ ms.locfileid: "49836348"
 
 ### <a name="unity-bundled-installation"></a>Unity Bundled 설치
 
-Unity 2018.1부터 Mac용 Visual Studio는 기본 Unity용 C# IDE이며, Unity 다운로드 도우미와 Unity Hub 설치 도구에 포함되어 있습니다. [store.unity.com](https://store.unity.com/)에서 Unity를 다운로드하세요.
+Unity 2018.1부터 Mac용 Visual Studio는 기본 Unity용 C# IDE(integrated development environment)이며, Unity 다운로드 도우미와 Unity Hub 설치 도구에 포함되어 있습니다. [store.unity.com](https://store.unity.com/)에서 Unity를 다운로드하세요.
 
 설치하는 동안 Unity와 함께 설치할 구성 요소 목록에서 Mac용 Visual Studio를 선택했는지 확인합니다.
 

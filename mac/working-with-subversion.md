@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 2400ED9C-6236-4C0A-A3AB-9D7CBE1F0CF4
-ms.openlocfilehash: 81c33d426989f9bab3216802aa4e815228e1e82a
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 7dcbd619fe0c1a0ab84a8667f5a781d006f80999
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224063"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295204"
 ---
 # <a name="working-with-subversion"></a>Subversion 작업
 
@@ -50,7 +50,10 @@ Mac용 Visual Studio에서 **체크 아웃** 기능을 사용하는 방법을 �
 
 원격 리포지토리에 파일을 커밋하려면 [커밋...]을 누르고 커밋 메시지를 입력한 다음 커밋 단추를 클릭하여 확인합니다.
 
-
 ![파일 커밋](media/version-control-svnCommit.png)
 
 이렇게 하면 변경 내용이 리포지토리에 전송되고 모든 수정 사항이 포함된 새 수정 버전이 생성됩니다.
+
+## <a name="see-also"></a>참고 항목
+
+- [Subversion 리포지토리 설정](set-up-subversion-repository.md)

@@ -27,16 +27,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bb8395d0e0a3b7d4295577cd86568cf15f0db3d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a3e361b407d013f27f3cf76d1ff0da98aa36c3c8
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49901192"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349051"
 ---
 # <a name="understand-build-configurations"></a>빌드 구성 이해
 
 다양한 종류의 빌드에서 사용할 솔루션 및 프로젝트 속성에 대한 여러 구성을 저장할 수 있습니다. 구성을 만들거나, 선택하거나, 수정하거나, 삭제하려면 **구성 관리자**를 사용합니다. 구성 관리자를 열려면 메뉴 모음에서 **빌드** > **구성 관리자**를 선택하거나 **빠른 실행** 상자에 **구성**을 입력합니다. **표준** 도구 모음에서 **솔루션 구성** 목록을 사용하여 구성을 선택하거나 **구성 관리자**를 열 수도 있습니다.
+
+> [!NOTE]
+> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio에서 구성 빌드](/visualstudio/mac/configurations)를 참조하세요.
 
 > [!NOTE]
 > 도구 모음에서 솔루션 구성 설정을 찾을 수 없고 **구성 관리자**에 액세스할 수 없으면 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 개발 설정을 적용할 수 있습니다. 자세한 내용은 [방법: Visual Basic 개발자 설정을 적용하여 구성 관리](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md)를 참조하세요.
@@ -51,7 +54,7 @@ ms.locfileid: "49901192"
 
 > [!NOTE]
 > 새 솔루션 구성을 정의하고 **새 프로젝트 구성 만들기** 확인란을 선택하면 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서 모든 프로젝트에 새 구성이 자동으로 할당됩니다. 마찬가지로, 새 솔루션 플랫폼을 정의하고 **새 프로젝트 플랫폼 만들기** 확인란을 선택하면 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 에서 모든 프로젝트에 새 플랫폼이 자동으로 할당됩니다. 또한 새 플랫폼을 대상으로 하는 프로젝트를 추가하면 Visual Studio에서 해당 플랫폼이 솔루션 플랫폼 목록에 추가되고 모든 프로젝트에 할당됩니다.
-> 
+>
 > 각 프로젝트에 대한 설정은 여전히 수정할 수 있습니다.
 
 활성 솔루션 구성도 IDE에 컨텍스트를 제공합니다. 예를 들어 프로젝트 작업을 진행 중인데 이 프로젝트가 모바일 장치용으로 빌드될 것이라고 구성에 지정되어 있으면, 모바일 장치 프로젝트에 사용할 수 있는 항목만 **도구 상자**에 표시됩니다.
@@ -92,3 +95,4 @@ ms.locfileid: "49901192"
 - [솔루션 및 프로젝트](../ide/solutions-and-projects-in-visual-studio.md)
 - [C/C++ 빌드 참조](/cpp/build/reference/c-cpp-building-reference)
 - [Devenv 명령줄 스위치](../ide/reference/devenv-command-line-switches.md)
+- [빌드 구성(Mac용 Visual Studio)](/visualstudio/mac/configurations)

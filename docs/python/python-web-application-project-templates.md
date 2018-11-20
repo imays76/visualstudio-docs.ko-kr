@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cbdf9b6890613cc4ad41af77e27f7f41c6f5c9da
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 3245cd647f5da391bb0e36afc65d867137618808
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219850"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349338"
 ---
 # <a name="python-web-application-project-templates"></a>Python 웹 응용 프로그램 프로젝트 템플릿
 
 Visual Studio의 Python은 다양한 프레임워크를 처리하도록 구성할 수 있는 디버그 시작 관리자 및 프로젝트 템플릿을 통해 Bottle, Flask 및 Django 프레임워크에서 웹 프로젝트 개발을 지원합니다. 이러한 템플릿에는 필요한 종속성을 선언하는 *requirements.txt* 파일이 포함됩니다. 이러한 템플릿 중 하나에서 프로젝트를 만들 때 Visual Studio에서 해당 패키지를 설치하라는 메시지가 표시됩니다. 이 아티클의 뒷부분에 나오는 [프로젝트 요구 사항 설치](#install-project-requirements)를 참조하세요.
 
-Pyramid와 같은 다른 프레임워크에 대한 일반 **웹 프로젝트** 템플릿을 사용할 수도 있습니다. 이 경우, 프레임워크가 템플릿과 함께 설치되지 않습니다. 대신 프로젝트에 사용 중인 환경에 필요한 패키지를 설치합니다. [Python 환경 관리](managing-python-environments-in-visual-studio.md)를 참조하세요.
+Pyramid와 같은 다른 프레임워크에 대한 일반 **웹 프로젝트** 템플릿을 사용할 수도 있습니다. 이 경우, 프레임워크가 템플릿과 함께 설치되지 않습니다. 대신 프로젝트에 사용 중인 환경에 필요한 패키지를 설치합니다([Python 환경 창 - 패키지 탭](python-environments-window-tab-reference.md#packages-tab)을 참조하세요).
 
 Python 웹앱을 Azure에 배포하는 방법에 대한 정보는 [Azure App Service에 게시](publishing-python-web-applications-to-azure-from-visual-studio.md)를 참조하세요.
 

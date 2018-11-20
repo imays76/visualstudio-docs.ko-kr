@@ -5,12 +5,12 @@ ms.assetid: 41CB62FF-0F39-4CE8-8917-6A77F058719F
 author: conceptdev
 ms.author: crdun
 ms.date: 04/04/2018
-ms.openlocfilehash: bcc09fab45bf9580349675a65150319c34236f97
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 463b002ed2a511c47b518dba756f3ca4c6a5ca35
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43223913"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295178"
 ---
 # <a name="connected-services-walkthrough"></a>연결된 서비스 연습
 
@@ -18,8 +18,7 @@ ms.locfileid: "43223913"
 
 이 연습에서는 클라우드 데이터 저장소, 인증 및 푸시 알림을 플랫폼 간 Xamarin.Forms PCL(이식 가능한 클래스 라이브러리) 응용 프로그램으로 가져오는 Azure 백 엔드 서비스를 추가하는 방법을 보여줍니다.
 
-
-1.  솔루션에서 **연결된 서비스** 노드를 두 번 클릭하여 시작하면 **서비스 갤러리**가 표시됩니다.
+1. 솔루션에서 **연결된 서비스** 노드를 두 번 클릭하여 시작하면 **서비스 갤러리**가 표시됩니다.
   응용 프로그램 유형에 대한 모든 사용 가능한 서비스 목록입니다. 서비스(예: **Azure App Service를 사용한 모바일 백 엔드**)를 클릭하여 선택합니다.
 
     [![Mac용 Visual Studio에서 연결된 서비스 노드](media/connected-services-image001-sml.png "Mac용 Visual Studio에서 연결된 서비스 노드")](media/connected-services-image001.png#lightbox)
@@ -71,4 +70,8 @@ ms.locfileid: "43223913"
 -   **리소스 그룹** – 프로젝트에 대한 모든 Azure 리소스를 구성하는 방법입니다. 기존 서비스를 사용하거나 새 서비스를 만드는 옵션입니다. 첫 Azure 서비스인 경우 새 서비스를 만듭니다.
 -   **서비스 계획** – 위치 및 이를 사용하는 모든 리소스 비용을 결정합니다. 기존 서비스를 사용하거나 새 서비스를 만드는 옵션입니다. 첫 Azure 서비스인 경우 기본 서비스를 사용하거나 무료 계층(F1)에서 새 서비스를 만듭니다.
 
-자세한 내용은 [Azure App Service 설명서](https://azure.microsoft.com/documentation/learning-paths/appservice-mobileapps/)를 참조합니다.
+자세한 내용은 [모바일 앱 설명서](/azure/app-service-mobile/)를 참조하세요.
+
+## <a name="see-also"></a>참고 항목
+
+- [연결된 서비스(Windows의 Visual Studio)](/visualstudio/azure/vs-azure-tools-connected-services-storage)

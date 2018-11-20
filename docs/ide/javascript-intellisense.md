@@ -26,12 +26,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 02e34d891fe972bc5d8722598e4b8b1af6066384
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 666ce7d65269992af486e59c6b5ce11e94da736b
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671029"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348130"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 
@@ -143,3 +143,4 @@ TypeScript 환경에서 가장 인기 있는 JavaScript 라이브러리에는 *.
 ## <a name="see-also"></a>참고 항목
 
 - [IntelliSense 사용](../ide/using-intellisense.md)
+- [JavaScript 지원(Mac용 Visual Studio)](/visualstudio/mac/javascript)

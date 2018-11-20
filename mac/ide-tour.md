@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
-ms.openlocfilehash: a6ea00e468e178f96bf0a08b5520d2f7e3d64b85
-ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
+ms.openlocfilehash: 37c4f6c50cc5deaee1decf6fcfae5eda211018b2
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47228866"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295685"
 ---
 # <a name="visual-studio-for-mac-tour"></a>Mac용 Visual Studio 둘러보기
 
@@ -39,7 +39,7 @@ Mac용 Visual Studio를 시작하면 ‘시작 화면’이 표시됩니다.
 
 ## <a name="solutions-and-projects"></a>솔루션 및 프로젝트
 
-다음 이미지는 응용 프로그램이 로드된 Mac용 Visual Studio를 보여 줍니다.
+다음 이미지는 응용 프로그램이 로드된 Mac용 Visual Studio를 보여줍니다.
 
 ![응용 프로그램이 로드된 Mac용 Visual Studio](media/ide-tour-image17.png)
 
@@ -56,13 +56,13 @@ Solution Pad는 솔루션의 프로젝트를 구성합니다.
 Mac용 Visual Studio에서 프로젝트와 솔루션을 사용하는 방법에 대한 자세한 내용은 [프로젝트 및 솔루션](projects-and-solutions.md) 문서를 참조하세요.
 
 ## <a name="assembly-references"></a>어셈블리 참조
- 
+
 각 프로젝트에 대한 어셈블리 참조는 참조 폴더 아래에서 확인할 수 있습니다.
 
 ![Solution Pad의 참조 폴더](media/ide-tour-image19.png)
 
 **참조 편집** 대화 상자를 사용하여 참조를 더 추가합니다. 이 대화 상자는 참조 폴더를 두 번 클릭하거나 상황에 맞는 메뉴 작업에서 **참조 편집**을 선택하면 표시됩니다.
- 
+
 ![참조 편집 대화 상자](media/ide-tour-image20.png)
 
 Mac용 Visual Studio에서 참조를 사용하는 방법에 대한 자세한 내용은 [프로젝트의 참조 관리](managing-references-in-a-project.md) 문서를 참조하세요.
@@ -93,7 +93,7 @@ Mac용 Visual Studio에 포함된 네이티브 디버거는 Xamarin.iOS, Xamarin
 
 ## <a name="version-control"></a>버전 제어
 
-Mac용 Visual Studio는 Git 및 Subversion 소스 제어 시스템과 통합됩니다. 소스 제어가 적용되는 프로젝트는 솔루션 이름 옆에 분기가 표시됩니다. 
+Mac용 Visual Studio는 Git 및 Subversion 소스 제어 시스템과 통합됩니다. 소스 제어가 적용되는 프로젝트는 솔루션 이름 옆에 분기가 표시됩니다.
 
 ![소스 제어가 적용되는 프로젝트를 나타내는 분기 이름](media/ide-tour-image22.png)
 
@@ -102,3 +102,7 @@ Mac용 Visual Studio는 Git 및 Subversion 소스 제어 시스템과 통합됩�
 ![Solution Pad의 커밋되지 않은 파일](media/ide-tour-image23.png)
 
 Visual Studio에서 버전 제어를 사용하는 방법에 대한 자세한 내용은 [버전 제어](version-control.md) 문서를 참조하세요.
+
+## <a name="see-also"></a>참고 항목
+
+- [Windows의 Visual Studio IDE](/visualstudio/ide/visual-studio-ide)

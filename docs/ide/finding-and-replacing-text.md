@@ -33,12 +33,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f6359585f13a4086a332d8a4dbcc3c435aeaa26
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: 6120d1ece56e24712fd1217090159ec627f88d61
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384242"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349103"
 ---
 # <a name="find-and-replace-text"></a>텍스트 찾기 및 바꾸기
 
@@ -93,6 +93,9 @@ ms.locfileid: "44384242"
 
 ## <a name="multi-caret-selection"></a>다중 캐럿 선택 영역
 
+> [!NOTE]
+> 이 섹션은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [블록 선택](/visualstudio/mac/block-selection)을 참조하세요.
+
 **Visual Studio 2017 버전 15.8의 새로운 기능**
 
 *다중 캐럿 선택 영역*을 사용하여 동시에 둘 이상의 위치에서 동일하게 편집합니다. 예를 들어 동시에 동일한 텍스트를 삽입하거나 여러 위치에서 기존 텍스트를 수정할 수 있습니다.
@@ -130,3 +133,4 @@ ms.locfileid: "44384242"
 
 - [Visual Studio에서 정규식 사용](../ide/using-regular-expressions-in-visual-studio.md)
 - [Visual Studio에서 코드 리팩터링](../ide/refactoring-in-visual-studio.md)
+- [블록 선택(Mac용 Visual Studio)](/visualstudio/mac/block-selection)

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 프로젝트 및 솔루션 빌드 및 정리
+title: 프로젝트와 솔루션 빌드 및 정리
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
@@ -24,15 +24,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4b0ef6eab346215631559e8c9cfb16ecac0a4bf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c96a3b6699428b156a23ad643eb7958cb438b994
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918532"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349272"
 ---
-# <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Visual Studio에서 프로젝트 및 솔루션 빌드 및 정리
+# <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>Visual Studio에서 프로젝트와 솔루션 빌드 및 정리
+
 이 항목의 절차에 따라 솔루션에 포함된 프로젝트 또는 프로젝트 항목의 전체 또는 일부를 빌드, 다시 빌드 또는 정리할 수 있습니다. 단계별 자습서는 [연습: 응용 프로그램 빌드](../ide/walkthrough-building-an-application.md)를 참조하세요.
+
+> [!NOTE]
+> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio에서 프로젝트와 솔루션 빌드 및 정리](/visualstudio/mac/building-and-cleaning-projects-and-solutions)를 참조하세요.
 
 > [!NOTE]
 > 사용 중인 Visual Studio 버전의 UI는 활성 설정에 따라 이 항목의 설명과 다를 수 있습니다. 설정을 **일반** 또는 **Visual C++** 설정 등으로 변경하려면 **도구** > **설정 가져오기 및 내보내기**를 선택한 다음, **모두 다시 설정**을 선택합니다.
@@ -46,7 +50,7 @@ ms.locfileid: "31918532"
     -   가장 최근 빌드 이후 변경된 프로젝트 파일 및 구성 요소만 컴파일하려면 **빌드** 또는 **솔루션 빌드**를 선택합니다.
 
         > [!NOTE]
-        >  솔루션에 둘 이상의 프로젝트가 포함된 경우에는 **빌드** 명령이 **솔루션 빌드**로 표시됩니다.
+        > 솔루션에 둘 이상의 프로젝트가 포함된 경우에는 **빌드** 명령이 **솔루션 빌드**로 표시됩니다.
 
     -   솔루션을 "정리"한 다음 모든 프로젝트 파일과 구성 요소를 빌드하려면 **솔루션 다시 빌드**를 선택합니다.
 
@@ -118,3 +122,4 @@ ms.locfileid: "31918532"
 - [C/C++ 빌드 참조](/cpp/build/reference/c-cpp-building-reference)
 - [Devenv 명령줄 스위치](../ide/reference/devenv-command-line-switches.md)
 - [솔루션 및 프로젝트](../ide/solutions-and-projects-in-visual-studio.md)
+- [프로젝트와 솔루션 빌드 및 정리(Mac용 Visual Studio)](/visualstudio/mac/building-and-cleaning-projects-and-solutions)

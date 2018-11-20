@@ -6,12 +6,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 10/11/2018
 ms.assetid: 1C7AC52E-754E-473F-A5B5-00C3A40DAACD
-ms.openlocfilehash: 410444e584307c468b61eb4a478fed0d8df09b2e
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: f02bd648f7e52a7ff82a2ab546f19e979eccf9e6
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101123"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51293616"
 ---
 # <a name="how-to-report-a-problem-in-visual-studio-for-mac"></a>Mac용 Visual Studio에서 문제를 보고하는 방법
 
@@ -29,7 +29,7 @@ Mac용 Visual Studio와 관련된 문제를 보고하려면 메뉴 모음에서 
 
 ![문제 보고 웹 페이지](media/report-problem-image2.png)
 
-웹 페이지에서 **문제 보고** 단추를 선택하세요. 
+웹 페이지에서 **문제 보고** 단추를 선택하세요.
 
 개발자 커뮤니티 응용 프로그램에 로그인하지 않은 경우 다음 페이지에 로그인하라는 메시지가 표시됩니다. Microsoft 계정에 대해 개발자 커뮤니티 응용 프로그램을 승인하려면 **수락** 단추를 선택하세요.
 
@@ -41,4 +41,9 @@ Mac용 Visual Studio와 관련된 문제를 보고하려면 메뉴 모음에서 
 
 ## <a name="provide-a-suggestion"></a>제안하기
 
-[Mac용 Visual Studio UserVoice 페이지](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac)로 이동하려면 홈페이지의 **제안하기** 링크를 사용하세요. 여기에서 새 요청을 추가하거나 기존 요청에 투표할 수 있습니다.
+[Mac용 Visual Studio의 기능 제안 페이지](https://developercommunity.visualstudio.com/content/idea/post.html?space=41)로 이동하려면 홈페이지의 **제안하기** 링크를 사용하세요. 여기에서 새 요청을 추가하거나 기존 요청에 투표할 수 있습니다.
+
+## <a name="see-also"></a>참고 항목
+
+- [Visual Studio의 문제 보고(Windows에서)](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)
+- [Visual Studio에 대한 기능 제안](/visualstudio/ide/suggest-a-feature)

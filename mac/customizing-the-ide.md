@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
-ms.openlocfilehash: 9f33892dc4caef726763c6ab7513ac1e44e7e47e
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 58ad6f41528fd11510d55c4062cdd9a6ae678989
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224238"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349613"
 ---
 # <a name="customizing-the-ide"></a>IDE 사용자 지정
 
@@ -20,9 +20,9 @@ Mac용 Visual Studio를 다양한 방식으로 사용자 지정하여 사용자�
 
 ![어두운 테마 보기](media/customizing-the-ide-image7a.png)
 
-다음 이미지와 같이 **Visual Studio > 기본 설정... > 환경 > 비주얼 스타일**로 이동한 다음, **사용자 인터페이스 테마** 드롭다운에서 원하는 테마를 선택하면 Mac용 Visual Studio에서 테마를 전환할 수 있습니다.
+다음 이미지에 설명된 대로 **Visual Studio > 기본 설정 > 환경 > 비주얼 스타일**로 이동한 다음, **사용자 인터페이스 테마** 드롭다운에서 원하는 테마를 선택하면 Mac용 Visual Studio에서 테마를 전환할 수 있습니다.
 
- ![어두운 테마 선택](media/customizing-the-ide-image7b.png)
+![어두운 테마 선택](media/customizing-the-ide-image7b.png)
 
 ## <a name="localization"></a>지역화
 
@@ -43,8 +43,7 @@ Mac용 Visual Studio는 더 많은 개발자가 액세스할 수 있도록 다�
 * 스페인어
 * 터키어
 
-Mac용 Visual Studio에 표시되는 언어를 변경하려면 다음 이미지와 같이 **Visual Studio > 기본 설정... > 환경 > 비주얼 스타일**로 이동한 다음, **사용자 인터페이스 언어** 드롭다운에서 원하는 언어를 선택합니다.
-
+Mac용 Visual Studio에서 표시되는 언어를 변경하려면 다음 이미지에 설명된 대로 **Visual Studio > 기본 설정 > 환경 > 비주얼 스타일**로 이동한 다음, **사용자 인터페이스 언어** 드롭다운에서 원하는 언어를 선택합니다.
 
 ![언어 선택](media/customizing-the-ide-image11a.png)
 
@@ -52,22 +51,21 @@ Mac용 Visual Studio에 표시되는 언어를 변경하려면 다음 이미지�
 
 작성자 정보 패널에서는 이름, 전자 메일 주소, 작업의 저작권 소유자, 회사, 상표 등 자신과 관련된 정보를 추가할 수 있습니다.
 
- ![작성자 정보 섹션 편집](media/customizing-the-ide-image9a.png)
+![작성자 정보 섹션 편집](media/customizing-the-ide-image9a.png)
 
 이 정보는 새 파일에 추가할 수 있는 라이선스 등의 표준 파일 헤더를 채우는 데 사용됩니다.
 
- ![표준 헤더 옵션](media/customizing-the-ide-image8a.png)
-
+![표준 헤더 옵션](media/customizing-the-ide-image8a.png)
 
 채워진 **이름** 및 **전자 메일** 필드는 Mac용 Visual Studio에서 버전 제어를 통해 수행된 모든 커밋에 사용됩니다. 이러한 필드를 채우지 않은 경우 버전 제어를 사용하려고 할 때 Mac용 Visual Studio에서 필드를 채우라는 메시지를 표시합니다.
 
 ## <a name="key-bindings"></a>키 바인딩
 
-키 바인딩을 사용하면 Mac용 Visual Studio 전반에 걸쳐 보다 효율적으로 이동할 수 있도록 개발 환경을 조정할 수 있습니다. Mac용 Visual Studio에서는 Visual Studio(Windows), ReSharper, Visual Studio Code, Xcode 등 널리 사용되는 IDE에 대한 친숙한 키 바인딩을 제공합니다.
+키 바인딩을 사용하면 Mac용 Visual Studio 전반에 걸쳐 보다 효율적으로 이동할 수 있도록 개발 환경을 조정할 수 있습니다. Mac용 Visual Studio에서는 Visual Studio(Windows에서), ReSharper, Visual Studio Code, Xcode 등 널리 사용되는 IDE에 익숙한 키 바인딩을 제공합니다.
 
-다음 이미지와 같이 **Visual Studio > 기본 설정... > 환경 > 키 바인딩**으로 이동하면 키 바인딩을 설정할 수 있습니다.
+다음 이미지에 설명된 대로 **Visual Studio > 기본 설정 > 환경 > 키 바인딩**으로 이동하면 키 바인딩을 설정할 수 있습니다.
 
- ![키 바인딩 설정](media/customizing-the-ide-image10a.png)
+![키 바인딩 설정](media/customizing-the-ide-image10a.png)
 
 여기에서 키 바인딩 조합을 검색하고, 충돌하는 바인딩을 보고, 새 바인딩을 추가하고, 기존 바인딩을 편집할 수 있습니다.
 
@@ -85,7 +83,7 @@ Mac용 Visual Studio에서 새 솔루션이나 파일을 열면 Solution Pad, �
 
 Mac용 Visual Studio에서는 추가 정보, 도구, 탐색 보조 기능 등이 포함된 패드를 제공합니다. **보기 > 패드** 메뉴 항목으로 이동한 다음 패드를 선택해서 추가하면 모두 액세스할 수 있습니다.
 
- ![새 패드 선택](media/customizing-the-ide-image3a.png)
+![새 패드 선택](media/customizing-the-ide-image3a.png)
 
 검색 결과를 포함하는 분리된 패드를 여는 **파일에서 찾기**(Shift+Cmd+F) 명령 등 다양한 명령을 통해 패드를 자동으로 열 수도 있습니다.
 
@@ -97,8 +95,7 @@ Mac용 Visual Studio에서는 추가 정보, 도구, 탐색 보조 기능 등이
 
 ![패드 숨기기 및 닫기](media/customizing-the-ide-image5a.png)
 
-자동으로 숨겨진 패드는 작업 영역의 측면에 도킹되므로 필요할 때 쉽게 액세스할 수 있습니다. 패드를 마우스로 가리키면 다시 표시되고, 마우스 및 키보드 포커스를 잃으면 숨겨집니다.
-
+자동 숨김 패드는 작업 영역의 측면에 도킹되므로 필요할 때 쉽게 액세스할 수 있습니다. 패드 위로 마우스를 가져가면 패드가 다시 표시되고, 마우스 및 키보드 포커스가 패드에서 사라지면 숨습니다.
 
 ### <a name="organizing-layouts"></a>레이아웃 구성
 
@@ -110,23 +107,26 @@ Mac용 Visual Studio에서는 추가 정보, 도구, 탐색 보조 기능 등이
 
 항상 하나의 활성 레이아웃이 있으며 패드 추가, 패드 위치 변경 등 레이아웃에서 변경을 수행하면 활성 레이아웃만 변경됩니다. Mac용 Visual Studio를 닫으면 변경 내용이 저장되지 않습니다.
 
-
-그러나 **보기 > 현재 레이아웃 저장...** 메뉴 항목을 사용하여 새 레이아웃을 만들 수 있습니다. 그러면 언제든지 선택할 수 있도록 현재 레이아웃이 메뉴에 추가됩니다.
+그러나 **보기 > 현재 레이아웃 저장** 메뉴 항목을 사용하여 새 레이아웃을 만들 수 있습니다. 그러면 언제든지 선택할 수 있도록 현재 레이아웃이 메뉴에 추가됩니다.
 
 ![현재 레이아웃 저장](media/customizing-the-ide-image6a.png)
 
 ### <a name="side-by-side-editing-support"></a>Side-by-Side 편집 지원
 
-Mac용 Visual Studio에서는 텍스트 편집기를 Side-by-Side로 열거나 편집기를 분리된 부동 창으로 표시할 수 있습니다.
+Mac용 Visual Studio에서는 텍스트 편집기를 Side-by-Side로 열거나 편집기를 분리된 부동 창으로 열 수 있습니다.
 
 편집기 영역의 가장자리 중 하나로 편집기 탭을 끌거나 **보기 > 편집기 열 > 2열**을 선택하면 보기 메뉴 항목을 통해 2열 모드를 사용하도록 설정할 수 있습니다.
 
- ![2열 Side-by-Side 모드](media/customizing-the-ide-sbs.png)
+![2열 Side-by-Side 모드](media/customizing-the-ide-sbs.png)
 
 편집기 탭을 문서 영역 밖으로 끌어 부동 편집기 창을 만들 수 있습니다. 이 부동 창은 Side-by-Side 편집기도 지원하며 여러 개의 편집기 탭을 포함할 수 있습니다.
 
- ![새 창 만들기](media/customizing-the-ide-sbs1.png)
+![새 창 만들기](media/customizing-the-ide-sbs1.png)
 
- ![추가 탭이 있는 2열 Side-by-Side](media/customizing-the-ide-sbs2.png)
+![추가 탭이 있는 2열 Side-by-Side](media/customizing-the-ide-sbs2.png)
 
 하나의 열린 편집기로 되돌리려면 **보기 > 편집기 열 > 1열**을 선택합니다.
+
+## <a name="see-also"></a>참고 항목
+
+- [Visual Studio IDE 개인 설정(Windows에서)](/visualstudio/ide/personalizing-the-visual-studio-ide)

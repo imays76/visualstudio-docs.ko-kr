@@ -6,14 +6,14 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: f6ec6a446b68c848885e2c08804bc49a0cf1941b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5ad3154390494c3d949ceba1cc84ded87d33a3fd
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934615"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294996"
 ---
-# <a name="setup-and-install-visual-studio-for-mac"></a>Mac용 Visual Studio 설정 및 설치
+# <a name="set-up-and-install-visual-studio-for-mac"></a>Mac용 Visual Studio 설정 및 설치
 
 ## <a name="setup"></a>설정
 
@@ -86,7 +86,6 @@ Visual Studio에서 iOS를 사용하는 경우 다음 사항이 필요합니다.
 > [!NOTE]
 > 원래 설치 중 #6단계에서 선택 취소하여 플랫폼 또는 도구를 설치하지 않도록 선택한 경우 나중에 구성 요소를 추가하려면 [설치 관리자](https://visualstudio.microsoft.com/vs/)를 다시 실행해야 합니다.
 
-
 ## <a name="install-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>방화벽 또는 프록시 서버 뒤에 Mac용 Visual Studio 설치
 
 방화벽 뒤에 있는 Mac용 Visual Studio를 설치하려면 소프트웨어에 필요한 도구 및 업데이트의 다운로드를 허용하기 위해 일부 엔드포인트에 액세스가 가능해야 합니다.
@@ -104,7 +103,6 @@ Mac용 Visual Studio를 설치하면 앱 코드 작성을 시작할 수 있습�
 1. [Hello, iOS](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS/)
 2. [장치 프로비저닝](https://developer.xamarin.com/guides/ios/getting_started/installation/device_provisioning)(장치에서 응용 프로그램을 실행하려면).
 
-
 ### <a name="android"></a>Android
 
 1. [Xamarin Android SDK Manager 사용](https://developer.xamarin.com/guides/android/getting_started/installation/android-sdk/?ide=xs)
@@ -114,3 +112,7 @@ Mac용 Visual Studio를 설치하면 앱 코드 작성을 시작할 수 있습�
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>.NET Core 앱, ASP.NET Core 웹앱, Unity 게임 개발
 
 다른 워크로드의 경우 [워크로드](workloads.md) 페이지를 참조하세요.
+
+## <a name="see-also"></a>참고 항목
+
+- [Visual Studio 2017 설치(Windows에서)](/visualstudio/install/install-visual-studio)
