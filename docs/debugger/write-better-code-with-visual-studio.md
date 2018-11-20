@@ -1,6 +1,6 @@
 ---
 title: Visual Studio 도움말을 작성 하도록 C# 작은 버그를 사용 하 여 코드
-description: 디버거를 사용 하 여 앱을 디버그 하는 경우 이해
+description: 작은 버그를 사용 하 여 더 나은 코드를 작성 하는 방법 이해
 ms.custom: debug-experiments
 ms.date: 10/30/2018
 ms.technology: vs-ide-debug
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b020dcf27ee9b248b460465a9b0c75cdb3b0ab6
-ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
+ms.openlocfilehash: 914b4332a715c86aab7e1fad7d901231cbfd40c5
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51561832"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948961"
 ---
 # <a name="write-better-c-code-using-visual-studio"></a>보다 효과적으로 작성할 C# Visual Studio를 사용 하는 코드
 
@@ -33,7 +33,7 @@ ms.locfileid: "51561832"
 
 * 디버거를 사용 하는 경우
 
-이러한 작업을 보여 주기 위해 오류 및 앱을 디버깅 하려고 할 때 발생 하는 버그의 가장 일반적인 종류 중 일부를 살펴보겠습니다. 샘플 코드는 있지만 C#개념 정보는 일반적으로 c + +, Visual Basic의 경우 JavaScript에 적용 되 고 (언급 한 위치 제외) Visual Studio에서 다른 언어를 지원 합니다. 스크린샷은 C#의 경우
+이러한 작업을 보여 주기 위해 오류 및 앱을 디버깅 하려고 할 때 발생 하는 버그의 가장 일반적인 종류 중 일부를 살펴보겠습니다. 샘플 코드는 있지만 C#개념 정보는 일반적으로 c + +, Visual Basic의 경우 JavaScript에 적용 되 고 (언급 한 위치 제외) Visual Studio에서 다른 언어를 지원 합니다. 스크린샷은 C#에 있습니다.
 
 ## <a name="follow-along-using-the-sample-app"></a>샘플 앱을 사용 하 여 따라
 
@@ -42,7 +42,7 @@ ms.locfileid: "51561832"
 앱을 만들려면 Visual Studio를 열고 선택 **파일 > 새 프로젝트**합니다. 아래 **Visual C#** , 선택 **Windows Desktop** 또는 **.NET Core**를 선택한 다음 가운데 창에서을 **콘솔 앱**. 같은 이름을 입력 **Console_Parse_JSON** 누릅니다 **확인**합니다. Visual Studio가 프로젝트를 만듭니다. 붙여넣기 합니다 [샘플 코드](#sample-code) 프로젝트의 *Program.cs* 파일입니다.
 
 > [!NOTE]
-> 표시 되지 않는 경우는 **콘솔 응용 프로그램** 템플릿 프로젝트를 클릭 합니다 **Visual Studio 설치 관리자 열기** 링크의 왼쪽된 창에서를 **새 프로젝트** 대화 상자. Visual Studio 설치 관리자가 시작됩니다. 선택 된 **.NET 데스크톱 개발** 또는 **.NET Core 플랫폼 간 개발** 워크 로드를 선택한 **수정**합니다.
+> **콘솔 애플리케이션** 프로젝트 템플릿이 표시되지 않으면 **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual Studio 설치 관리자 열기** 링크를 클릭합니다. Visual Studio 설치 관리자가 시작됩니다. 선택 된 **.NET 데스크톱 개발** 또는 **.NET Core 플랫폼 간 개발** 워크 로드를 선택한 **수정**합니다.
 
 ## <a name="find-the-red-and-green-squiggles"></a>빨간색 및 녹색 오류 표시선을 찾습니다.
 
@@ -166,13 +166,13 @@ catch (SerializationException)
     }
     ```
 
-* 앱에서 사용 하는 알 수 없는 메서드에 대 한 예외에 대해 메서드를 throw 할 설명서를 확인 합니다. 이 응용 프로그램을 디버깅 및 적절 한 오류 처리에 대 한 중요 한 정보를 수 있습니다.
+* 알 수 없는 포함할 수 있는 함수 앱에서는 특별히 해당 외부 데이터 (예: 웹 요청)와 상호 작용, 예외에 대해 함수는 throw 가능성이 확인 하려면 설명서를 참조 합니다. 이 응용 프로그램을 디버깅 및 적절 한 오류 처리에 대 한 중요 한 정보를 수 있습니다.
 
 샘플 앱에 대 한 해결 합니다 `SerializationException` 에 `GetJsonData` 메서드를 변경 하 여 `4o` 에 `40`.
 
 ## <a name="clarify-your-code-intent-by-using-assert"></a>Assert를 사용 하 여 사용자 코드 의도 명확히 합니다.
 
-클릭 합니다 **다시 시작** ![앱 다시 시작](../debugger/media/dbg-tour-restart.png "RestartApp") 디버그 도구 모음에서 단추 (**Ctrl** + **Shift**   +  **F5**). 이 앱을 더 적은 단계로 다시 시작 합니다. 콘솔 창에 다음 출력이 표시 됩니다.
+디버그 도구 모음에서 **다시 시작** ![앱 다시 시작](../debugger/media/dbg-tour-restart.png "RestartApp") 단추를 클릭합니다(**Ctrl** + **Shift** + **F5**). 이 앱을 더 적은 단계로 다시 시작 합니다. 콘솔 창에 다음 출력이 표시 됩니다.
 
 ![출력에 null 값](../debugger/media/write-better-code-using-assert-null-output.png)
 
@@ -208,7 +208,7 @@ if (existingUser == false)
 
 의도 이러한 방식으로 지정 하 여 요구 사항을 적용할 수 있습니다. 이 개발 하는 동안 화면 버그에 사용할 수 있는 간단 하 고 편리한 메서드입니다. (`assert` 문은 단위 테스트의 주요 요소로 사용 됩니다.)
 
-클릭 합니다 **다시 시작** ![앱 다시 시작](../debugger/media/dbg-tour-restart.png "RestartApp") 디버그 도구 모음에서 단추 (**Ctrl** + **Shift**   +  **F5**).
+디버그 도구 모음에서 **다시 시작** ![앱 다시 시작](../debugger/media/dbg-tour-restart.png "RestartApp") 단추를 클릭합니다(**Ctrl** + **Shift** + **F5**).
 
 > [!NOTE]
 > `assert` 코드가 디버그 빌드에만 활성화 되어 있습니다.
@@ -217,7 +217,10 @@ if (existingUser == false)
 
 ![False로 확인 되 면 어설션](../debugger/media/write-better-code-using-assert.png)
 
-`assert` 오류 알려 조사 해야 하는 문제가 있는 것입니다. `assert` 예외를 반드시 표시 되지 않으면 대부분의 시나리오를 처리할 수 있습니다. 이 예제에서는 사용자에는 예외가 표시 되지 않습니다 (다른 시나리오에는 `NullReferenceException` 발생할 수 있습니다), 및 `null` 값으로 추가 됩니다 `firstname` 데이터베이스에서. 이 문제가 있을 수 있습니다 나중에 (예: 콘솔 출력에 표시) 및 디버깅에 매우 어려울 수 있습니다.
+`assert` 오류 알려 조사 해야 하는 문제가 있는 것입니다. `assert` 예외를 반드시 표시 되지 않으면 대부분의 시나리오를 처리할 수 있습니다. 이 예제에서는 사용자에는 예외가 표시 되지 않습니다 및 `null` 값으로 추가 `firstname` 레코드 목록에 있습니다. 이 문제가 있을 수 있습니다 나중에 (예: 콘솔 출력에 표시) 및 디버깅에 매우 어려울 수 있습니다.
+
+> [!NOTE]
+> 시나리오에서 메서드를 호출 하는 위치에 `null` 값을 `NullReferenceException` 결과입니다. 일반적으로 사용 하지 않도록 하려는 `try/catch` 즉, 특정 라이브러리 함수에 연결 되지 않은 예외는 일반 예외에 대 한 차단 합니다. 모든 개체를 throw 할 수는 `NullReferenceException`합니다. 확실 하지 않은 경우에 라이브러리 함수에 대 한 설명서를 확인 합니다.
 
 디버깅 프로세스 중 것이 좋지만 특정 `assert` 문을 수정 하는 실제 코드를 사용 하 여 교체 해야 알 때까지 합니다. 사용자가 앱의 릴리스 빌드에 예외를 발생할 수 하려는 경우를 가정해 봅니다. 이 경우 앱 심각한 예외를 throw 하지 않습니다 또는 일부 다른 오류로 인해 않은지 확인 하는 코드를 리팩터링 해야 합니다. 따라서이 코드를 수정 하려면 다음 코드를 바꿉니다.
 
@@ -276,7 +279,7 @@ Debug.Assert(users[0].points > 0);
 
 ## <a name="sample-code"></a> 샘플 코드
 
-다음 코드에 몇 가지 버그를 Visual Studio IDE를 사용 하 여 해결할 수 있습니다. 여기에 앱은 데이터 개체를 역직렬화 하 고 새 데이터를 사용 하 여 간단한 메모리 내 데이터베이스를 업데이트 하는 중에 일부 작업에서 JSON 데이터를 가져오는 시뮬레이션 하는 간단한 앱.
+다음 코드에 몇 가지 버그를 Visual Studio IDE를 사용 하 여 해결할 수 있습니다. 여기에 앱은 가져오는 JSON 데이터로 작업을 데이터 개체를 역직렬화 하 고 새 데이터를 사용 하 여 간단한 목록을 업데이트를 시뮬레이션 하는 간단한 앱.
 
 ```csharp
 using System;

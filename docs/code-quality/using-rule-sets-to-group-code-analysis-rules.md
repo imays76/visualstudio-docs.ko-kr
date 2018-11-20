@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa287570213e6238d0a8dffc9f6e70367b133591
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: ced442c0fafc47b5cdae1568dbbfb6df7c2f2f50
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204429"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948396"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>코드 분석 규칙 그룹화를 사용 하 여 규칙 집합
 
@@ -58,10 +58,15 @@ Visual Studio에서 코드 분석을 구성할 때 기본 제공 목록에서 �
 > [!TIP]
 > 쉽습니다 [규칙 집합 편집](../code-quality/working-in-the-code-analysis-rule-set-editor.md) 에서 그래픽 **규칙 집합 편집기** 손으로 보다 합니다.
 
+## <a name="specify-a-rule-set-for-a-project"></a>프로젝트에 대해 설정 하는 규칙 지정
+
 규칙 집합으로 지정 된 프로젝트에 대 한 합니다 **CodeAnalysisRuleSet** Visual Studio 프로젝트 파일의 속성입니다. 예를 들어:
 
 ```xml
-<CodeAnalysisRuleSet>HelloWorld.ruleset</CodeAnalysisRuleSet>
+<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  ...
+  <CodeAnalysisRuleSet>HelloWorld.ruleset</CodeAnalysisRuleSet>
+</PropertyGroup>
 ```
 
 ## <a name="see-also"></a>참고자료

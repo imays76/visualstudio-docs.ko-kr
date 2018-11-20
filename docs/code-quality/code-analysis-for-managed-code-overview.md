@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 관리 되는 코드에 대 한 코드 분석
+title: 관리 코드에 대 한 정적 코드 분석
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -14,16 +14,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: ad1b093c224e37ce53dc77472518d03f2dc8093b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 1e77955de9bb650ac262d8f9b7513c90acbd19ac
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320817"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948428"
 ---
-# <a name="overview-of-code-analysis-for-managed-code"></a>관리 코드에 대 한 코드 분석 개요
+# <a name="overview-of-static-code-analysis-for-managed-code-in-visual-studio"></a>Visual Studio에서 관리 되는 코드에 대 한 정적 코드 분석 개요
 
-Visual Studio 2017에는 두 가지 방법으로 관리 되는 코드 분석: legacy *FxCop* .NET 컴파일러 플랫폼을 사용 하 여 관리 되는 어셈블리의 정적 분석 *분석기*합니다. 이 항목에서는 FxCop 정적 코드 분석을 설명 합니다. .NET 컴파일러 플랫폼 분석기를 사용 하 여 코드를 분석 하는 방법에 대 한 자세한 내용은 참조 하세요 [개요의 Roslyn 분석기](../code-quality/roslyn-analyzers-overview.md)합니다.
+Visual Studio 2017 두 가지 방법으로 관리 되는 코드의 코드 분석을 수행할 수 있습니다: 사용 하 여 *FxCop* 자세한 최신와 관리 되는 어셈블리의 정적 분석 *Roslyn 분석기*합니다. 이 항목에서는 FxCop 정적 코드 분석을 설명 합니다. 코드 분석기를 사용 하 여 코드를 분석 하는 방법에 대 한 자세한 내용은 참조 하세요 [개요의 Roslyn 분석기](../code-quality/roslyn-analyzers-overview.md)합니다.
 
 관리 코드에 대한 코드 분석에서는 관리되는 어셈블리를 분석하고, Microsoft .NET Framework 디자인 지침에 설정된 프로그래밍 및 디자인 규칙의 위반과 같은 어셈블리 관련 정보를 보고합니다.
 
@@ -75,7 +75,7 @@ Public class MyClass
 
 ## <a name="team-build-integration"></a>팀 빌드 통합
 
-빌드 시스템의 통합된 기능을 사용하여 빌드 프로세스의 일부로 분석 도구를 실행할 수 있습니다. 자세한 내용은 [Azure 파이프라인](/azure/devops/pipelines/index?view=vsts)합니다.
+빌드 시스템의 통합된 기능을 사용하여 빌드 프로세스의 일부로 분석 도구를 실행할 수 있습니다. 자세한 내용은 [Azure Pipelines](/azure/devops/pipelines/index?view=vsts)를 참조하세요.
 
 ## <a name="see-also"></a>참고자료
 
