@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1235e6360ccc5f6c0677f7ec9acb1dd85cad226
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 452b4045357db12c4b4cff1a5b6e27035cf85d82
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180180"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257201"
 ---
-# <a name="debug-at-design-time-in-visual-studio"></a>Visual Studio에서 디자인 타임에 디버그
+# <a name="debug-at-design-time-in-visual-studio-c-c-visual-basic-f"></a>Visual Studio에서 디자인 타임에 디버그 (C#, c + +, Visual Basic의 경우 F#)
 
 일부 시나리오에서는 디자인에서 코드를 디버그 하려는 응용 프로그램이 실행 되는 동안 대신 시간입니다. 사용 하 여 수행할 수 있습니다 합니다 **직접 실행** 창입니다. 데이터 바인딩 코드 등의 다른 코드를 사용 하 여 상호 작용 하는 XAML 코드를 디버그 하려는 경우 사용할 수 있습니다 **디버깅할** > **프로세스에 연결** 작업을 수행 하 합니다.
   
@@ -32,7 +32,7 @@ ms.locfileid: "39180180"
 
 Visual Studio를 사용할 수 있습니다 **직접 실행** 응용 프로그램이 실행 되지 않는 상태 함수나 서브루틴을 실행 하는 창입니다. 함수 또는 서브루틴에 중단점이 포함 된, Visual Studio는 해당 시점에서 실행을 중단 합니다. 그런 다음 디버거 창을 사용하여 프로그램 상태를 조사할 수 있습니다. 이 기능은 디자인 타임에 디버깅 호출 됩니다.  
 
-다음 예제에서는 Visual Basic의 경우에 있지만 **직접 실행** C# 및 c + + 응용 프로그램 창 에서도 지원 됩니다.
+다음 예제에서는 Visual Basic의 경우 사용 합니다 **직접 실행** 디자인 타임에 창 에서도 지원 됩니다 C#, c + +, 및 F# 응용 프로그램입니다.
   
 1.  Visual Basic 콘솔 응용 프로그램에 다음 코드를 붙여 넣습니다.  
   

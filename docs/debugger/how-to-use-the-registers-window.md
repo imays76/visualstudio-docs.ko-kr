@@ -25,14 +25,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ceadd2f131a75e01cec67c21dca0d7837b02738a
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 5f236bf43d3667cd4263d205c4588593a973824d
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551849"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257171"
 ---
-# <a name="view-register-values-and-use-the-registers-window-in-the-visual-studio-debugger"></a>등록 값을 확인 하 고 Visual Studio 디버거에서 레지스터 창 사용
+# <a name="view-register-values-and-use-the-registers-window-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>등록 값을 확인 하 고 Visual Studio 디버거에서 레지스터 창 사용 (C#, c + +, Visual Basic의 경우 F#)
 레지스터 창에서 주소 수준 디버깅을 설정한 경우에 가능 합니다 **옵션** 대화 상자에서 **디버깅** 노드를 **일반** 범주.  
   
  합니다 **등록** 레지스터 내용이 창이 표시 됩니다. 유지 하는 경우는 **등록** 보시 창이 열려 프로그램 한 단계씩 코드 실행에 따라 레지스터 값이 변경 합니다. 최근에 변경된 값은 빨간색으로 표시됩니다. 레지스터 값은 편집할 수 있습니다. 자세한 내용은 [방법: 레지스터 값 편집](../debugger/how-to-edit-a-register-value.md)합니다.  

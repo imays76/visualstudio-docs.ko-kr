@@ -24,14 +24,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 263e4bf4505995a4c8eccbe7c33f59115412dda5
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: f45b2a64e7602d038a12f436019a8f99e352aa26
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219512"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257074"
 ---
-# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>방법: 편집하며 계속하기를 사용하여 중단 모드에서 편집 적용
+# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>방법: 편집을 사용 하 여 중단 모드에서 편집을 적용 하 고 계속 하기 (Visual Basic)
 편집하며 계속하기를 사용하면 실행을 중지한 후에 다시 시작하지 않고도 중단 모드에서 코드를 편집한 다음 계속 진행할 수 있습니다.  
   
 편집 하며 계속 하기를 사용 하 여 디버깅 하는 동안 자세한 내용은 [지원 되는 코드 변경 (C# 및 Visual Basic](../debugger/supported-code-changes-csharp.md)]

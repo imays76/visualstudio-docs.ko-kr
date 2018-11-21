@@ -16,16 +16,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d72a9cd4ad29785884417881324e6d348e03d83
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: b196d993e7091fd9d4b09fe3c228346e7421911e
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826716"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257214"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>자동 및 지역 창에서 변수 검사
 
 합니다 **자동** 하 고 **지역** windows 디버깅 하는 동안 변수 값을 표시 합니다. Windows는 디버깅 세션 중만 사용할 수 있습니다. 합니다 **자동** 창에 현재 중단점 사용 된 변수가 표시 됩니다. 합니다 **지역** 창 현재 함수나 메서드는 일반적으로 로컬 범위에 정의 된 변수를 표시 합니다. 읽을 하려는 처음 코드를 디버그 하려는 경우 [보다 효과적으로 작성할 C# Visual Studio를 사용 하 여 코드](../debugger/write-better-code-with-visual-studio.md) 하 고 [초보자를 위한 디버깅](../debugger/debugging-absolute-beginners.md) 이 문서를 진행 하기 전에 합니다.
+
+ 합니다 **자동** 창은 사용할 수 있습니다 C#, Visual Basic, c + + 및 Python 코드를 JavaScript에 대 한 또는 F#합니다.
   
 열려는 합니다 **자동** 창에서 디버그 하는 동안 **디버그** > **Windows** > **자동**를 누르거나 **Ctrl**+**Alt**+**V** > **A**합니다.  
 
@@ -34,7 +36,7 @@ ms.locfileid: "51826716"
 기본 디버깅에 대 한 자세한 내용은 참조 하세요 [디버거를 사용 하 여 시작](../debugger/getting-started-with-the-debugger.md)합니다.
 
 > [!NOTE]
-> 이 항목에서는 Windows에서 Visual Studio에 적용 됩니다. Mac 용 Visual Studio에 대 한 참조 [Mac 용 Visual Studio에서 데이터 시각화](/visualstudio/mac/data-visualizations)합니다.
+> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac 용 Visual Studio에 대 한 참조 [Mac 용 Visual Studio에서 데이터 시각화](/visualstudio/mac/data-visualizations)합니다.
 
 ## <a name="use-the-autos-and-locals-windows"></a>자동 및 지역 창 사용
 
@@ -71,9 +73,7 @@ ms.locfileid: "51826716"
 
 ![디버그 위치 도구 모음](../debugger/media/debuglocationtoolbar.png "디버그 위치 도구 모음")
 
-## <a name="bkmk_whatvariables"></a> 자동 창에서 변수
-
- **자동** 창은 사용할 수 있습니다 C#, Visual Basic 및 c + + 코드를 제외한 javascript 또는 F#합니다.
+## <a name="bkmk_whatvariables"></a> 자동 창에서 변수 (C#, Visual Basic, c + +, Python)
 
  다른 코드 언어에 다른 변수를 표시 합니다 **자동** 창입니다.
 

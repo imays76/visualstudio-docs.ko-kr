@@ -19,14 +19,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 14f43e8708573a2fdd11a1c667a69bc1767ecda3
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 0219418b754c93b8e5e50997ede73e0611ed496a
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44278831"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257058"
 ---
-# <a name="about-the-registers-window-in-visual-studio"></a>Visual Studio에서 레지스터 창 정보
+# <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>Visual Studio에서 레지스터 창 정보 (C#, c + +, Visual Basic의 경우 F#)
+
 합니다 **등록** 기간은 주소 수준 디버깅을 활성화 하는 경우에 사용할 수 있습니다 합니다 **옵션** 대화 상자에서 **디버깅** 노드.  
   
  레지스터는 프로세서(CPU) 내의 특정 위치로, 여기에는 프로세서에서 현재 사용 중인 작은 데이터가 저장됩니다. 소스 코드를 컴파일하거나 해석하면 데이터가 메모리에서 레지스터로 이동하고, 필요할 때 다시 레지스터에서 메모리로 이동하는 명령이 생성됩니다. 레지스터의 데이터에 액세스하는 것이 메모리의 데이터에 액세스하는 것보다 훨씬 빠릅니다. 그러므로 프로세서가 레지스터를 반복하여 로드하고 언로드하도록 하는 코드에 비해 프로세서에서 데이터를 레지스터에 보관하여 반복해서 데이터에 액세스하도록 하는 코드의 실행 속도가 훨씬 빠릅니다. 컴파일러가 쉽게 데이터를 레지스터에 보관하고 다른 최적화를 수행하도록 하려면 전역 변수의 사용을 피하고 가능한 한 지역 변수를 사용하는 것이 좋습니다. 이러한 방식으로 작성된 코드는 참조 집약성이 좋습니다. C/C++와 같은 일부 언어에서 프로그래머는 언제나 변수를 레지스터에 보관하라고 컴파일러에 알리는 레지스터 변수를 선언할 수 있습니다. 자세한 내용은 [Register Keyword](https://msdn.microsoft.com/library/5b66905a-2f7f-4918-bb55-5e66d4bc50f9)합니다.  
