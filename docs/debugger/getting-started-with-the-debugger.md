@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d832753b798cc9e476b675f8791c1ab245b3adee
-ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
+ms.openlocfilehash: ba3da2325750fca655e0de28e13bb13da208963d
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51561675"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826780"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>자습서: Visual Studio를 통한 디버깅 학습
 
@@ -297,7 +297,7 @@ ms.locfileid: "51561675"
 
     중단점은 신뢰할 수 있는 디버깅의 가장 기본적이 고 필수적인 기능입니다. 중단점은 변수의 값, 메모리의 동작 또는 코드 분기의 실행 여부를 확인할 수 있도록 Visual Studio에서 실행 중인 코드를 일시 중단해야 하는 위치를 나타냅니다. 
 
-6. **F5** 키 또는 **디버깅 시작** 단추를 누릅니다. 그러면 애플리케이션이 시작되고, 중단점이 설정된 코드 줄에서 디버거가 실행됩니다.
+2. **F5** 키 또는 **디버깅 시작** 단추를 누릅니다. 그러면 애플리케이션이 시작되고, 중단점이 설정된 코드 줄에서 디버거가 실행됩니다.
 
     ![중단점 설정 및 적중](../debugger/media/get-started-set-breakpoint.gif)
 
@@ -325,14 +325,14 @@ ms.locfileid: "51561675"
 
 ## <a name="navigate-code-using-run-to-click"></a>실행하려면 클릭을 사용하여 코드 탐색
 
-5. 코드 편집기에서 **실행하려면 클릭** 녹색 단추 ![실행하려면 클릭](../debugger/media/dbg-tour-run-to-click.png "RunToClick")이 왼쪽에 나타날 때까지 `Triangle` 클래스의 `Console.WriteLine` 메서드(C++의 경우 `std::cout`)를 아래로 스크롤하여 마우스로 가리킵니다.
+1. 코드 편집기에서 **실행하려면 클릭** 녹색 단추 ![실행하려면 클릭](../debugger/media/dbg-tour-run-to-click.png "RunToClick")이 왼쪽에 나타날 때까지 `Triangle` 클래스의 `Console.WriteLine` 메서드(C++의 경우 `std::cout`)를 아래로 스크롤하여 마우스로 가리킵니다.
 
      ![실행하려면 클릭 기능 사용](../debugger/media/get-started-run-to-click.png "실행하려면 클릭")
 
    > [!NOTE]
    > **실행하려면 클릭** 단추는 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]의 새로운 기능입니다. 녹색 화살표 단추가 표시되지 않으면 이 예에서 **F11** 키를 대신 사용하여 디버거를 올바른 위치로 이동시킵니다.
 
-6. **실행하려면 클릭** 단추 ![실행하려면 클릭](../debugger/media/dbg-tour-run-to-click.png "RunToClick")을 클릭합니다.
+2. **실행하려면 클릭** 단추 ![실행하려면 클릭](../debugger/media/dbg-tour-run-to-click.png "RunToClick")을 클릭합니다.
 
     이 단추를 사용하는 것은 임시 중단점을 설정하는 것과 비슷합니다. **실행하려면 클릭**은 애플리케이션 코드의 표시 영역 내에서 빠르게 이동할 수 있습니다(열려 있는 파일은 모두 클릭할 수 있음).
 
@@ -447,4 +447,4 @@ ms.locfileid: "51561675"
 이 자습서에서는 디버거를 시작하고, 코드를 단계별로 실행하며, 변수를 검사하는 방법을 알아보았습니다. 더 많은 정보에 대한 링크와 함께 디버거 기능에 대해 개략적으로 살펴보는 것이 좋습니다.
 
 > [!div class="nextstepaction"]
-> [디버거 팁과 요령](../debugger/debugger-tips-and-tricks.md)
+> [디버거 소개](../debugger/debugger-feature-tour.md)

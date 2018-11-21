@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e33726d600cd4988fa3ad4a07aea9df10db70ea7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fd6d9059f43b209e6430c806fe26286e046f8f0e
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942580"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948207"
 ---
 # <a name="-devenvexe"></a>/? (devenv.exe)
 간단한 설명과 함께 `devenv` 스위치를 모두 나열하는 메시지 상자를 표시합니다.
