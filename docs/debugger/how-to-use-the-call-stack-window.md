@@ -30,23 +30,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92d138e954ce01af04405b72ce50ab72a76d8cf3
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 264aeeeaac47e30eb08b4320443da15ea48a8601
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348893"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257240"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>호출 스택 보기 및 디버거에서 호출 스택 창 사용
 
-사용 하 여 합니다 **호출 스택** 창에서 현재 스택에 있는 함수 또는 프로시저 호출을 볼 수 있습니다. 합니다 **호출 스택** 창 있는 메서드 및 함수는 호출 되는 순서를 보여 줍니다. 호출 스택은 좋은 점검 하 여 앱의 실행 흐름을 이해 합니다.
+사용 하 여 합니다 **호출 스택** 창에서 현재 스택에 있는 함수 또는 프로시저 호출을 볼 수 있습니다. **호출 스택** 창에는 메서드와 함수가 호출되는 순서가 표시됩니다. 호출 스택은 앱의 실행 흐름을 검사하고 파악할 수 있는 좋은 방법입니다.
   
 때 [디버깅 기호](#bkmk_symbols) 호출 스택의 일부에 대해 사용할 수 없는 합니다 **호출 스택** 창을 대신 표시 하는 호출 스택의 해당 부분에 대 한 올바른 정보를 표시 하는 일을 할 수 있습니다.  
   
 `[Frames below may be incorrect and/or missing, no symbols loaded for name.dll]`
 
 > [!NOTE]
-> 합니다 **호출 스택** Eclipse와 같은 일부 Ide 창에 디버그 관점 비슷합니다. 
+> **호출 스택** 창은 Eclipse와 같은 일부 IDE의 디버그 관점과 비슷합니다. 
 > 
 > [!NOTE]
 >  표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 여기서 설명하는 것과 다를 수 있습니다. 설정을 변경 하려면 선택 **설정 가져오기 및 내보내기** 에 **도구** 메뉴.  참조 [IDE 개인 설정](../ide/personalizing-the-visual-studio-ide.md)합니다.
@@ -103,7 +103,7 @@ Visual Studio enterprise (전용)에서 디버깅 하는 동안 호출 스택의
 
 ![코드 맵에 호출 스택 표시](../debugger/media/dbg_basics_show_call_stack_on_code_map.gif "ShowCallStackOnCodeMap")
   
-## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack"></a>호출 스택에 있는 함수의 디스어셈블리 코드 보기  
+## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack-c-c-visual-basic-f"></a>호출 스택에 있는 함수의 디스어셈블리 코드 보기 (C#, c + +, Visual Basic의 경우 F#) 
   
 -   에 **호출 스택** 창에서 디스어셈블리 코드를 보려는 함수를 보고 선택 하려면 마우스 오른쪽 단추로 클릭 **디스어셈블리로 이동**합니다.    
 
@@ -111,7 +111,8 @@ Visual Studio enterprise (전용)에서 디버깅 하는 동안 호출 스택의
   
 -   마우스 오른쪽 단추로 클릭 합니다 **호출 스택** 창 및 설정 하거나 해제 **표시 \<**  _정보를_ **>**.  
   
-## <a name="bkmk_symbols"></a> 모듈의 기호를 로드 합니다.
+## <a name="bkmk_symbols"></a> 모듈에 대 한 기호 로드 (C#, c + +, Visual Basic의 경우 F#)
+
 에 **호출 스택** 창 디버깅 기호가 로드 현재 없는 코드에 대 한 기호를 로드할 수 있습니다. 이러한 기호는.NET Framework는 Microsoft 공용 기호 서버에서 다운로드 하는 시스템 기호 또는 기호를 기호 경로 디버깅 중인 컴퓨터의 수 있습니다.  
   
 참조 [기호 (.pdb) 및 원본 파일 지정](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)합니다.

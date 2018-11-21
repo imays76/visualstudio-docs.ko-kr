@@ -23,14 +23,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51510d09a1840035bb96817d30aebdcd6bf3ebd7
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 9733569c3fa53d2c5a5905b5b893d16b4eeaf10b
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671146"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257045"
 ---
-# <a name="view-disassembly-code-in-the-visual-studio-debugger"></a>Visual Studio 디버거의 디스어셈블리 코드 보기
+# <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Visual Studio 디버거의 디스어셈블리 코드 보기 (C#, c + +, Visual Basic의 경우 F#)
 
 합니다 **디스어셈블리** 창 컴파일러에서 만든 명령에 해당 하는 어셈블리 코드가 표시 됩니다. 관리 되는 코드를 디버깅 하는 경우 이러한 어셈블리 명령은 없습니다 Microsoft intermediate language (MSIL) Visual Studio 컴파일러에서 생성 시간 하기만 하면 됩니다 (JIT) 컴파일러에서 생성 하는 네이티브 코드에 해당 합니다.  
   
@@ -41,7 +41,7 @@ ms.locfileid: "50671146"
 
 어셈블리 지침 뿐 아니라 합니다 **디스어셈블리** 창에는 다음과 같은 선택적 정보도 표시할 수 있습니다.  
   
-- 각 명령이 있는 메모리 주소, 네이티브 응용 프로그램에 대 한 실제 메모리 주소입니다. Visual basic의 경우 C#, 또는 관리 코드를 함수 시작 부분 으로부터의 오프셋입니다.  
+- 각 명령이 있는 메모리 주소, 네이티브 응용 프로그램에 대 한 실제 메모리 주소입니다. Visual basic 또는 C#를 함수 시작 부분 으로부터의 오프셋입니다.  
   
 - 어셈블리 코드가 파생된 소스 코드  
   

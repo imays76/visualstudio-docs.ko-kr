@@ -21,17 +21,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4df9ae5c8b525ff75985ff7aff071d2b2e86e1cb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 035d66590c6b6087c56887a4eaa2b0538406f87b
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926191"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257254"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Visual Studio 디버거의 식
 Visual Studio 디버거에는 **간략한 조사식** 대화 상자, **조사식** 창 또는 **직접 실행** 창에 식을 입력할 때 사용되는 식 계산기가 포함되어 있습니다. 식 계산기는 **중단점** 창과 디버거의 여러 가지 다른 부분에서도 사용됩니다.
   
- 다음 섹션에서는 다양한 언어의 식에 대한 세부 정보를 제공합니다.  
+ 다음 섹션에서는 Visual Studio에서 지 원하는 언어에 대 한 식 계산의 제한 사항을 설명 합니다.
   
 ## <a name="f-expressions-are-not-supported"></a>F# 식은 지원되지 않습니다.  
  F# 식은 인식할 수 없습니다. F# 코드를 디버그하는 경우 디버거 창 또는 대화 상자에 식을 입력하기 전에 식을 C# 구문으로 변환해야 합니다. F#에서 C#으로 식을 변환하는 경우 C#은 `==` 연산자를 사용하여 같은지 테스트하는 반면 F#은 단일 `=`를 사용한다는 것에 유의하세요.  

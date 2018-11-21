@@ -33,12 +33,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 18689a82fe2ae7c66eb8e8d6ef9bd115e2950cac
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 9a65a3331c210bdfb4143ff890180fdc7d663229
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073995"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257227"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>디버그 및 릴리스 구성에 Visual Studio 설정
 
@@ -64,7 +64,7 @@ Visual Studio 프로젝트에는 사용하는 프로그램에 대한 별도의 �
 
   ![도구 모음 빌드 구성](../debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")
 
-## <a name="BKMK_symbols_release"></a>빌드에 대 한 기호 (.pdb) 파일 생성
+## <a name="BKMK_symbols_release"></a>빌드에 대 한 기호 (.pdb) 파일 생성 (C#, c + +, Visual Basic의 경우 F#)
 
 및 기호 (.pdb) 파일을 생성 하도록 선택할 수 있습니다 디버그 정보를 포함 합니다. 대부분의 프로젝트 형식에 대 한 컴파일러 기본적으로 디버그 기호 파일을 생성 하 고 프로젝트 형식 및 Visual Studio 버전 별로 다른 기본 설정을 다 있지만 릴리스 빌드.
 

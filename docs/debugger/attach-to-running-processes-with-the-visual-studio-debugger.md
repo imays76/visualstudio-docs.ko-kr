@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdd83cb8b2d20d3e3abcacbb69d50e1a68831ca4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: af44fcfe553cd720461de3a4e16986d573785c2f
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843264"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257344"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Visual Studio 디버거에서 실행 중인 프로세스에 연결
 로컬 또는 원격 컴퓨터에서 실행 중인 프로세스에 Visual Studio 디버거를 연결할 수 있습니다. 프로세스를 실행 한 후 선택 **디버깅할** > **프로세스에 연결** 누르거나 **Ctrl**+**Alt** + **P** 사용 하 여 Visual Studio에는 **프로세스에 연결** 프로세스에 디버거를 연결 하는 대화 상자.
@@ -153,7 +153,7 @@ IIS에 배포 된 ASP.NET 응용 프로그램 디버깅에 대 한 자세한 내
 
 디버거에서 C++로 작성된 코드에 연결하려면 코드에 `DebuggableAttribute`가 있어야 합니다. 이 특성은 [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute) 링커 옵션으로 링크하여 자동으로 코드에 추가할 수 있습니다.
 
-클라이언트 쪽 스크립트 디버깅에 대 한 스크립트 디버깅 활성화 되어야 합니다는 브라우저에서. Chrome에서 클라이언트 쪽 스크립트 디버깅을 위해 선택할 **Webkit** 코드 유형으로 및 앱의 유형에 따라 디버깅 모드에서 브라우저를 시작 하도록 해야 할 수 있습니다 (형식 `chrome.exe --remote-debugging-port=9222` 명령줄에서).
+클라이언트 쪽 스크립트 디버깅에 대 한 스크립트 디버깅 활성화 되어야 합니다는 브라우저에서. Chrome에서 클라이언트 쪽 스크립트 디버깅을 위해 선택할 **Webkit** 코드 유형으로 및 앱의 유형에 따라 하려면 모든 Chrome 인스턴스를 닫고 디버깅 모드에서 브라우저를 시작 해야 할 수 있습니다 (형식 `chrome.exe --remote-debugging-port=9222` 명령줄에서).
 
 신속 하 게 연결할, Visual Studio에서 실행 중인 프로세스를 선택 하려면 입력 합니다. **Ctrl**+**Alt**+**P**, 한 다음의 첫 글자를 입력 합니다 프로세스 이름입니다.
 

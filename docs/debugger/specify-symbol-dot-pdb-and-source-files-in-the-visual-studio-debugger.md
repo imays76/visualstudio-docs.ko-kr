@@ -29,14 +29,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2eb7d535b99aa6af8b977711fbc60f7b4d9856dd
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: c289da63a8fbc8469734e905c29edca1149e04c4
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349493"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257383"
 ---
-# <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Visual Studio 디버거에서 기호 파일(.pdb) 및 원본 파일 지정
+# <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Visual Studio 디버거에서 기호 (.pdb) 및 원본 파일 지정 (C#, c + +, Visual Basic의 경우 F#)
 
 프로그램 데이터베이스 (*.pdb*) 기호 파일이 라고도 하는 파일을이 식별자에 매핑하고 해당 식별자에 프로젝트의 소스 코드에서 문 및 지침에 컴파일된 앱. 
 

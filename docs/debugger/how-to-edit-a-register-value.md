@@ -21,19 +21,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de743aa67b3875654dee1b13b27a74e208bb6d53
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0d0337f7c77d1ed601c7a6c13c702f4758cbfdbd
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475005"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257084"
 ---
-# <a name="how-to-edit-a-register-value"></a>방법: 레지스터 값 편집
-레지스터 창은 되 주소 수준 디버깅을 활성화 한 경우에 사용할 수는 **옵션** 대화 상자, **디버깅** 노드.  
+# <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>방법: 레지스터 값 편집 (C#, c + +, Visual Basic의 경우 F#)
+
+레지스터 창에서 주소 수준 디버깅을 설정한 경우에 가능 합니다 **옵션** 대화 상자에서 **디버깅** 노드.  
   
 ### <a name="to-change-the-value-of-a-register"></a>레지스터 값을 변경하려면  
   
-1.  에 **등록** 창, 사용 하 여 TAB 키 또는 마우스를 움직여 삽입 지점을 변경 하려는 값입니다. 입력하기 시작할 때 덮어 쓰려는 값 앞에 커서가 있어야 합니다.  
+1.  에 **등록** 창에서 사용 하 여 TAB 키 또는 마우스를 움직여 삽입 변경 하려는 값을 가리킵니다. 입력하기 시작할 때 덮어 쓰려는 값 앞에 커서가 있어야 합니다.  
   
 2.  새 값을 입력합니다.  
   
