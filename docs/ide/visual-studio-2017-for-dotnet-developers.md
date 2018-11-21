@@ -12,12 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 31800a7ec4e5a008234f7ee72b6c43bba559fbf9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5a2158663defe02dc51e91e888d47f325db7226a
+ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928349"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51645148"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Visual Studio 2017 C# 생산성 가이드
 
@@ -46,7 +46,7 @@ ms.locfileid: "49928349"
 | **Ctrl**+**.** (또는 C# 프로필에서 **Alt**+**Enter**) | 빠른 작업 및 리팩터링 | 커서 위치 또는 코드 선택에서 사용 가능한 코드 해결, 코드 생성 작업, 리팩터링, 또는 기타 빠른 작업 확인 |
 | **Ctrl**+**D** | 중복된 줄 | 커서가 있는 코드 줄 복제(**Visual Studio 2017 버전 15.6** 이상에서 사용 가능) |
 | **Shift**+**Alt**+**+**/**-** | 선택 영역을 확대/축소 | 편집기(**Visual Studio 2017 버전 15.5** 이상에서 사용 가능)에서 현재 선택 영역을 확장하거나 축소 |
-| **Ctrl** + **Alt** + **.** | 일치하는 다음 캐럿 삽입 | 현재 선택 영역과 일치하는 다음 위치에서 선택 영역 및 캐럿 추가(**Visual Studio 2017 버전 15.8** 이상에서 사용할 수 있음) |
+| **Shift** + **Alt** + **.** | 일치하는 다음 캐럿 삽입 | 현재 선택 영역과 일치하는 다음 위치에서 선택 영역 및 캐럿 추가(**Visual Studio 2017 버전 15.8** 이상에서 사용할 수 있음) |
 | **Ctrl**+**Q** | 빠른 실행 | 모든 Visual Studio 설정 검색 |
 | **F5** | 디버깅 시작 | 응용 프로그램 디버깅 시작 |
 | **Ctrl**+**F5** | 디버깅하지 않고 실행 | 디버깅하지 않고 응용 프로그램을 로컬에서 실행 |

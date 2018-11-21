@@ -9,12 +9,12 @@ description: Visual Studio 구독에 포함된 Office 365 개발자 혜택을 �
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d75c64c3d8902432adde846badabe18a820a16b0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ae195f8e132ab7d92c48a1bbc6ce04f684abe616
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858344"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51758387"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Office 365 개발자 구독 혜택
 
@@ -28,19 +28,19 @@ ms.locfileid: "49858344"
 
 3. 로그인 프로세스가 완료되면 구독 혜택 페이지가 나타납니다.  둘 이상의 구독을 보유하는 경우 오른쪽 위 모서리에 있는 검은색 리본 아래에 드롭다운 화살표를 클릭하면 구독 간 전환이 가능합니다.  Office 365 개발자 구독 혜택 타일은 도구 범주 안에 있습니다.  타일의 행 오른쪽에 있는 화살표를 사용하여 Office 타일이 표시될 때까지 스크롤합니다.
 
-4. 혜택 타일의 아래쪽에 있는 **활성화** 링크를 클릭합니다.   
+4. 혜택 타일의 아래쪽에 있는 **활성화** 링크를 클릭합니다.
    > [!div class="mx-imgBorder"]
    > ![Office 365 개발자 혜택 타일](_img/vs-office-dev/vs-office-dev-tile.png)
 
-5. 다음 단계에서는 계정을 만듭니다.  사용자 이름 및 로그인 이메일 주소가 표시됩니다.  
+5. 다음 단계에서는 계정을 만듭니다.  사용자 이름 및 로그인 이메일 주소가 표시됩니다.
 6. 국가를 선택합니다.
-7. 회사 이름을 입력합니다. 
-8. 첫 번째 확인란을 클릭하여 사용 약관을 수락합니다. 
+7. 회사 이름을 입력합니다.
+8. 첫 번째 확인란을 클릭하여 사용 약관을 수락합니다.
 9. **다음**을 클릭합니다.
    > [!div class="mx-imgBorder"]
    > ![Office 365 개발자 등록](_img/vs-office-dev/vs-office-dev-signup.png)
 
-10. 사용자 기본 설정 및 관심 영역을 지정하고 **구독 활성화**를 클릭합니다.   
+10. 사용자 기본 설정 및 관심 영역을 지정하고 **구독 활성화**를 클릭합니다.
     > [!div class="mx-imgBorder"]
     > ![Office 365 개발자 기본 설정](_img/vs-office-dev/vs-office-dev-preferences.png)
 
@@ -48,7 +48,7 @@ ms.locfileid: "49858344"
     > [!div class="mx-imgBorder"]
     > ![Office 365 개발자 사용자 이름 및 도메인](_img/vs-office-dev/vs-office-dev-domain.png)
 
-12. 전화 번호를 입력하고 **코드 전송**을 클릭합니다.  이 과정을 통해 실제 사람에 의해 계정이 생성됨을 확인할 수 있습니다. 
+12. 전화 번호를 입력하고 **코드 전송**을 클릭합니다.  이 과정을 통해 실제 사람에 의해 계정이 생성됨을 확인할 수 있습니다.
     > [!div class="mx-imgBorder"]
     > ![Office 365 개발자 전화 확인](_img/vs-office-dev/vs-office-dev-send-code.png)
 
@@ -56,13 +56,13 @@ ms.locfileid: "49858344"
     > [!div class="mx-imgBorder"]
     > ![Office 365 개발자 코드 유효성 검사](_img/vs-office-dev/vs-office-dev-setup.png)
 
-정말 간단하죠.  기본 설정에 맞는 정보를 표시하는 페이지가 나타납니다.  
+정말 간단하죠.  기본 설정에 맞는 정보를 표시하는 페이지가 나타납니다.
 
 ## <a name="next-steps"></a>다음 단계
+
 개발자 구독에 액세스하려면 [office.com](https://www.office.com)으로 이동하여 방금 만든 사용자 ID와 암호를 사용하여 로그인합니다.
 
-Office 365 개발자 구독에 대해 자세히 알아보려면 [Office 365 개발자 프로그램 FAQ](https://docs.microsoft.com/office/developer-program/office-365-developer-program-faq)를 확인하세요. 
-
+Office 365 개발자 구독에 대해 자세히 알아보려면 [Office 365 개발자 프로그램 FAQ](/office/developer-program/office-365-developer-program-faq)를 확인하세요.
 
 ## <a name="eligibility"></a>자격
 
@@ -75,13 +75,12 @@ Office 365 개발자 구독에 대해 자세히 알아보려면 [Office 365 개�
 | Visual Studio Dev Essentials | 해당 없음  | 사용할 수 없음 |해당 없음 |
 | Visual Studio Enterprise, Visual Studio Professional(월간 클라우드) | Azure                                       | 사용할 수 없음                                                           |해당 없음|
 
-<sup>1</sup> 포함: NFR(전매 금지), VSIP(Visual Studio 업계 파트너), FTE, BizSpark, MCT 소프트웨어 및 서비스 개발자, MCT Software & Services.  제외: MPN(Microsoft 파트너 네트워크), Imagine, MVP(Microsoft Valued Professional), RD(Region Director).
+<sup>1</sup> *포함: NFR(전매 금지), VSIP(Visual Studio 업계 파트너), FTE, BizSpark, MCT 소프트웨어 및 서비스 개발자, MCT Software & Services.  제외: MPN(Microsoft 파트너 네트워크), Imagine, MVP(Microsoft Valued Professional), RD(Region Director).*
 
 어떤 구독을 사용하고 있는지 확실하지 않나요?  자신의 이메일 주소에 할당된 모든 구독을 보려면 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)에 연결합니다. 일부 구독이 표시되지 않으면 하나 이상이 다른 전자 메일 주소에 할당되어 있을 수 있습니다.  해당 구독을 보려면 해당 전자 메일 주소로 로그인해야 합니다.
 
-
-
 ## <a name="support-resources"></a>지원 리소스
+
 -  Office 개발자 구독과 관련하여 도움이 필요하세요? [Office 개발자 센터](https://developer.microsoft.com/office)에서 [지원](https://developer.microsoft.com/office/support) 리소스를 확인하세요.
 -  Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 Visual Studio [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)에 문의하세요.
 -  Visual Studio IDE, Azure DevOps Services 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.

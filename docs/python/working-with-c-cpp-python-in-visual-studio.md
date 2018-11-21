@@ -1,7 +1,7 @@
 ---
 title: C++ 및 Python 작업
 description: 혼합 모드 디버깅을 비롯하여 Visual Studio, CPython 및 PyBind11을 사용하여 Python에 대한 C++ 확장을 만드는 연습 과정입니다.
-ms.date: 09/04/2018
+ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 62c7b202f9cbdbd8610c2a94c1dccbef59b85481
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: 237d3dcbe3f6413d2a68f25af3ac6eb6357e3bf8
+ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443651"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "52001310"
 ---
 # <a name="create-a-c-extension-for-python"></a>Python용 C++ 확장 만들기
 

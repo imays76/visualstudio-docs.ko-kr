@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ac74f5275288cdba35d3a70f4a7813c800e4327d
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: a97874ae1267677c5055e84650a839068479fc10
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704722"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948597"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 IDE(통합 개발 환경) 내의 텍스트, 통화 및 다른 값에 사용된 기본 언어를 설정합니다.
