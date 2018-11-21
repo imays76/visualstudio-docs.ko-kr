@@ -121,7 +121,7 @@ Visual Studio 2017 년부터 Visual Studio은 Visual Studio의 이전 버전을 
   
 ```  
   
- 제공한 정보는 [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) 요소 동일 하 게 유지 합니다. **\<VSTemplateContainer >** 요소 관련된 서식 파일에 대 한.vstemplate 파일을 가리킵니다.  
+ 제공한 정보는 [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) 요소 동일 하 게 유지 합니다.  **\<VSTemplateContainer >** 요소 관련된 서식 파일에 대 한.vstemplate 파일을 가리킵니다.  
   
  다음은 Visual Studio 2015에서 만든 기본 항목.vstemplate 파일입니다.  
   
@@ -174,7 +174,7 @@ Visual Studio 2017 년부터 Visual Studio은 Visual Studio의 이전 버전을 
   
 ```  
   
- 제공한 정보는  **\<TemplateData >** 요소 동일 하 게 유지 합니다. **\<VSTemplateContainer >** 관련된 서식 파일에 대 한.vstemplate 파일을 가리키면 요소  
+ 제공한 정보는  **\<TemplateData >** 요소 동일 하 게 유지 합니다.  **\<VSTemplateContainer >** 관련된 서식 파일에 대 한.vstemplate 파일을 가리키면 요소  
   
  .Vstman 파일의 다양 한 요소에 대 한 자세한 내용은 참조 [Visual Studio 템플릿 매니페스트 스키마 참조](../extensibility/visual-studio-template-manifest-schema-reference.md)합니다.  
   
