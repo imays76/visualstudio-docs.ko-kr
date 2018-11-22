@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: d908467ca131546d3d224e4c51f38bb5eaa850d9
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: ef7c49c514c9104ee4659db983b04c27036df889
+ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967118"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52281825"
 ---
 # <a name="code-generation-in-a-build-process"></a>빌드 프로세스에서 코드 생성
 
@@ -136,7 +136,7 @@ MSBuild의 기능 중 일부를 구성 하려면 프로젝트 파일을 편집 �
 
 읽기 전용 파일을 덮어쓰도록 지정하려면 다음 속성을 삽입합니다.
 
-`<OverwriteReadOnlyOutputFiles>true</OverwriteReadOnlyOuputFiles>`
+`<OverwriteReadOnlyOutputFiles>true</OverwriteReadOnlyOutputFiles>`
 
 후처리 단계를 사용자 지정하지 않는 한 파일을 덮어쓸 때 경고가 오류 목록에 기록됩니다.
 

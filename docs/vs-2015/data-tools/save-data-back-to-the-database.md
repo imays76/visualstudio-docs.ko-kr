@@ -29,12 +29,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: baddf87e24efc48ea597e44c52abcee5e5bdcfad
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6b6fd99b2b1a41d6baa3a110b2a595afb1dd7e3f
+ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829646"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52281851"
 ---
 # <a name="save-data-back-to-the-database"></a>데이터를 다시 데이터베이스에 저장
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ ms.locfileid: "49829646"
 ## <a name="two-stage-updates"></a>2 단계 업데이트  
  데이터 소스를 업데이트 하는 것은 2 단계 프로세스입니다. 첫 번째 단계는 삭제 된 레코드 또는 변경 된 레코드를 사용 하는, 새 레코드를 사용 하 여 데이터 집합을 업데이트 하는 것입니다. 응용 프로그램 되지을 보내는 경우 해당 변경 내용을 다시 데이터 소스에 다음 완료 했으면 업데이트 합니다.  
   
- 변경 내용을 데이터베이스로 다시 보내는, 경우 두 번째 단계는 필요 합니다. 데이터 바인딩된 컨트롤을 사용 하지 않는 경우 수동으로 데이터 집합을 채우는 데 사용 하는 같은 TableAdapter (또는 데이터 어댑터)의 Update 메서드를 호출 해야 합니다. 그러나 하나의 데이터 원본에서 데이터 이동 하거나 여러 데이터 원본을 업데이트 하려면 예를 들어, 다양 한 어댑터를 사용할 수도 있습니다. 데이터 바인딩을 사용 하지 않는 하 고 관련된 테이블의 변경 내용을 저장 하는 경우 수동으로 TableAdapterManager 자동으로 생성 된 클래스의 변수를 인스턴스화하고 해당 UdpateAll 메서드를 호출 해야 합니다.  
+ 변경 내용을 데이터베이스로 다시 보내는, 경우 두 번째 단계는 필요 합니다. 데이터 바인딩된 컨트롤을 사용 하지 않는 경우 수동으로 데이터 집합을 채우는 데 사용 하는 같은 TableAdapter (또는 데이터 어댑터)의 Update 메서드를 호출 해야 합니다. 그러나 하나의 데이터 원본에서 데이터 이동 하거나 여러 데이터 원본을 업데이트 하려면 예를 들어, 다양 한 어댑터를 사용할 수도 있습니다. 데이터 바인딩을 사용 하지 않는 하 고 관련된 테이블의 변경 내용을 저장 하는 경우 수동으로 TableAdapterManager 자동으로 생성 된 클래스의 변수를 인스턴스화하고 해당 UpdateAll 메서드를 호출 해야 합니다.  
   
  ![Visual Basic 데이터 집합 업데이트](../data-tools/media/vbdatasetupdates.gif "vbDatasetUpdates")  
 2 단계 업데이트 프로세스와 성공적인 업데이트에서 DataRowVersion의 역할  

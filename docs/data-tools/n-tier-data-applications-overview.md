@@ -15,12 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4e386c052b43ee62ddde0516fa203298fe1babe5
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: 3f9cf8c6a75e5f2a517931bf0fd858ea8f8f860c
+ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089032"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52281747"
 ---
 # <a name="n-tier-data-applications-overview"></a>N 계층 데이터 응용 프로그램 개요
 *N 계층* 데이터 응용 프로그램은 여러 구분 되는 데이터 응용 프로그램 *계층*합니다. "분산된 응용 프로그램" 및 "다중 계층 응용 프로그램" 라고도 함, n 계층 응용 프로그램 클라이언트와 서버 간에 배포 된 개별 계층으로 처리를 구분 합니다. 데이터에 액세스 하는 응용 프로그램을 개발 하는 경우에 응용 프로그램을 구성 하는 다양 한 계층을 명확히 구분을 해야 합니다.
@@ -64,7 +64,7 @@ Visual Studio는 개발자가 n 계층 응용 프로그램을 만들 수 있도�
 일반적으로 중간 계층 데이터 연결을 사용 하 여 데이터 계층에 연결 합니다. 이 데이터 연결의 데이터 액세스 구성 요소가 일반적으로 저장 됩니다.
 
 ## <a name="data-tier"></a>데이터 계층
-합니다 *데이터 계층* 는 기본적으로 응용 프로그램 데이터를 저장 하는 서버 (예를 들어, 실행 하는 서버 [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)]).
+합니다 *데이터 계층* 는 기본적으로 응용 프로그램 데이터 (예를 들어, SQL Server를 실행 하는 서버)를 저장 하는 서버입니다.
 
 다음 그림에서는 Visual Studio에서 사용할 수 있는 및 수 적합 한 위치 n 계층 응용 프로그램의 데이터 계층에 있는 기술과 기능을 보여 줍니다.
 
