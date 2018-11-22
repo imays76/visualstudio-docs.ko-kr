@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e2a9acf315541dcf231d774fdb37e4c82649a4c
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: 072cfcf253bb01687df20a6a0f2d41b71468b90c
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612729"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257357"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>For the Debugger in Visual Studio 생산성 팁과 트릭 배우기
 
@@ -60,10 +60,10 @@ Visual Studio에서 지 원하는 대부분의 언어에서 디버깅 세션 중
 
 ![실행 포인터를 이동](../debugger/media/dbg-tour-move-the-execution-pointer.gif "실행 포인터를 이동 합니다.")
 
-실행 흐름을 변경 하면 다른 코드 실행 경로 테스트 하거나 디버거를 다시 시작 하지 않고 코드를 다시 실행 하는 등 작업을 수행할 수 있습니다.
+실행 흐름을 변경하면 디버거를 다시 시작하지 않고도 다른 코드 실행 경로를 테스트하거나 코드를 다시 실행하는 등의 작업을 수행할 수 있습니다.
 
 > [!WARNING]
-> 이 기능을 사용 하 여 주의 해야 하는 경우가 많습니다 및 도구 설명에 경고를 표시 합니다. 다른 경고를 너무 표시 될 수 있습니다. 포인터를 이동 하면 앱을 이전 응용 프로그램 상태를 되돌릴 수 없습니다.
+> 이 기능을 주의 깊게 사용해야 하는 경우가 많으며 도구 설명에 경고가 표시됩니다. 다른 경고도 표시될 수 있습니다. 포인터를 이동 하면 앱을 이전 응용 프로그램 상태를 되돌릴 수 없습니다.
 
 ## <a name="track-an-out-of-scope-object-c-visual-basic"></a>추적 범위를 벗어나는 개체 (C#, Visual Basic)
 
@@ -145,7 +145,7 @@ UWP 앱에서 사용 하 여 수행 된 네트워크 작업을 분석할 수 있
 
 자세한 내용은 [네트워크 사용량](../profiling/network-usage.md)을 참조하세요.
 
-## <a name="modules_window"></a> 디버거가 앱에 연결 하는 방법에 대해 get
+## <a name="modules_window"></a> 디버거가 앱에 연결 하는 방법에 대해 get (C#, c + +, Visual Basic의 경우 F#)
 
 를 실행 중인 앱에 연결 하려면 디버거에서 디버그 하려는 앱의 정확히 동일한 빌드에 대해 생성 되는 기호 (.pdb) 파일을 로드 합니다. 일부 시나리오에서는 기호 파일의 간단한 기술 유용할 수 있습니다. Visual Studio를 사용 하 여 기호 파일을 로드 하는 방법을 검사할 수 있습니다 합니다 **모듈** 창입니다.
 
