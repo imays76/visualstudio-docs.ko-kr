@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 678a37eec7643976e689cc027922ff481a0e005f
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 071f64c4239441d3c3fd2c111d1b912175e23316
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219382"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51766555"
 ---
 # <a name="unit-testing-in-nodejs"></a>Node.js의 단위 테스트
 
@@ -33,7 +33,7 @@ Visual Studio용 Node.js 도구를 사용하면 명령 프롬프트로 전환하
 > [!WARNING]
 > Tape의 문제는 현재 Tape 테스트 실행을 차단합니다. [PR #361](https://github.com/substack/tape/pull/361)이 병합된 경우 문제를 해결해야 합니다.
 
-원하는 프레임워크가 지원되지 않는 경우 [단위 테스트 프레임워크에 대한 지원 추가](#addingFramework)에서 지원 추가에 대한 정보를 참조하세요. 
+원하는 프레임워크가 지원되지 않는 경우 [단위 테스트 프레임워크에 대한 지원 추가](#addingFramework)에서 지원 추가에 대한 정보를 참조하세요.
 
 ## <a name="write-unit-tests"></a>단위 테스트 작성
 
@@ -129,7 +129,7 @@ Test execution time: 1.5731 Seconds
 ```
 
 > [!NOTE]
-> *vstest.console.exe*를 찾을 수 없음을 나타내는 오류가 발생하는 경우 일반적인 명령 프롬프트가 아니라 개발자 명령 프롬프트를 열었는지 확인합니다. 
+> *vstest.console.exe*를 찾을 수 없음을 나타내는 오류가 발생하는 경우 일반적인 명령 프롬프트가 아니라 개발자 명령 프롬프트를 열었는지 확인합니다.
 
 ## <a name="addingFramework"></a>단위 테스트 프레임워크에 대한 지원 추가
 
@@ -149,7 +149,7 @@ JavaScript를 사용하여 검색 및 실행 논리를 구현하여 추가 테�
 사용 가능한 테스트 프레임워크의 검색이 Visual Studio 시작 시 발생합니다. Visual Studio가 실행되는 동안 프레임워크가 추가되는 경우 프레임워크를 검색하도록 Visual Studio를 다시 시작합니다. 단, 구현을 변경하는 경우에는 다시 시작할 필요가 없습니다.
 
 ## <a name="unit-tests-in-other-project-types"></a>다른 프로젝트 형식의 단위 테스트
-단위 테스트는 Node.js 프로젝트에만 작성하도록 제한되지 않습니다. TestFramework 및 TestRoot 속성을 C# 또는 VB 프로젝트에 추가하면 해당 테스트가 열거되므로 테스트 탐색기 창을 사용하여 실행할 수 있습니다.
+단위 테스트는 Node.js 프로젝트에만 작성하도록 제한되지 않습니다. TestFramework 및 TestRoot 속성을 C# 또는 Visual Basic 프로젝트에 추가하면 해당 테스트가 열거되고 테스트 탐색기 창을 사용하여 실행할 수 있습니다.
 
 이렇게 하려면 솔루션 탐색기에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **프로젝트 언로드**를 선택한 후 **프로젝트 편집**을 선택합니다. 그런 다음, 프로젝트 파일에서 다음 두 요소를 속성 그룹에 추가합니다.
 

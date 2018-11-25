@@ -13,38 +13,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc5961e2565c8618ad0f34a8c58d149e4a82c935
-ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
+ms.openlocfilehash: de90947f175905ec89955298dc2b4b52af8ffbd4
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50244452"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826806"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Visual Studio IDE 시작
 
 Visual Studio *통합 개발 환경*은 코드를 편집, 디버그 및 빌드한 다음, 앱을 게시하는 데 사용할 수 있는 창의적인 실행 패드입니다. IDE(통합 개발 환경)는 소프트웨어 개발의 다양한 측면에서 사용할 수 있는 다양한 기능을 갖춘 프로그램입니다. Visual Studio에서는 대부분의 IDE가 제공하는 표준 편집기 및 디버거를 능가하여 컴파일러, 코드 완성 도구, 그래픽 디자이너 및 소프트웨어 개발 프로세스를 간편하게 하는 많은 기능을 포함합니다.
 
-Visual Studio는 Windows 및 Mac에서 사용할 수 있습니다. [Mac용 Visual Studio](/visualstudio/mac/)에는 Visual Studio 2017과 동일한 기능이 많이 있으며 플랫폼 간 및 모바일 앱 개발을 위한 최적화되어 있습니다. 이 문서에서는 Windows 버전의 Visual Studio 2017에 중점을 둡니다.
-
-Visual Studio 2017에는 Community, Professional 및 Enterprise의 세 가지 버전이 있습니다. 각 버전에서 지원되는 기능에 대해 알아보려면 [Visual Studio 2017 IDE 비교](https://visualstudio.microsoft.com/vs/compare/)를 참조하세요.
-
-이 개요 문서에서는 IDE의 기본 기능을 소개합니다. 간단한 프로젝트 만들기, 코딩 도구로 [IntelliSense](using-intellisense.md) 사용, 앱을 디버깅하여 프로그램 실행 중 변수 값을 확인하는 방법 등 Visual Studio로 수행할 수 있는 몇 가지 작업을 살펴보겠습니다. 또한 다양한 도구 창을 살펴보겠습니다.
-
-## <a name="install-the-visual-studio-ide"></a>Visual Studio IDE 설치
-
-시작하려면 [Visual Studio 2017을 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)하여 시스템에 설치합니다.
-
-모듈식 설치 관리자를 사용하면 선호하는 프로그래밍 언어 또는 플랫폼에 필요한 기능 그룹인 *워크로드*를 선택하여 설치할 수 있습니다. [프로그램 생성](#create-a-program) 단계를 수행하려면 설치 중에 **.NET Core 플랫폼 간 개발** 워크로드를 선택해야 합니다.
-
-![Visual Studio 설치 관리자에서 .NET Core 플랫폼 간 개발 워크로드](../ide/media/dotnet-core-cross-platform-workload.png)
-
-Visual Studio를 처음 시작하면 필요에 따라 Microsoft 계정이나 회사 또는 학교 계정으로 [로그인](signing-in-to-visual-studio.md)할 수 있습니다.
-
-## <a name="tour-of-the-ide"></a>IDE 둘러보기
-
-다음 이미지에서는 Visual Studio에 대한 높은 수준의 시각적 개요를 제공하기 위해 열려 있는 프로젝트가 있는 Visual Studio와 많이 사용하는 몇 가지 주요 도구 창을 보여 줍니다.
-
 ![Visual Studio IDE](../ide/media/visualstudioide.png)
+
+이 이미지는 열려 있는 프로젝트와 사용할 가능성이 있는 몇 가지 주요 도구 창과 함께 Visual Studio를 보여줍니다.
 
 - [**솔루션 탐색기**](../ide/solutions-and-projects-in-visual-studio.md)(오른쪽 위) - 코드 파일을 보고, 탐색하고, 관리할 수 있습니다. **솔루션 탐색기**에서 파일을 [솔루션 및 프로젝트](quickstart-projects-solutions.md)로 그룹화하여 코드를 구성할 수 있습니다.
 
@@ -54,7 +36,13 @@ Visual Studio를 처음 시작하면 필요에 따라 Microsoft 계정이나 회
 
 - [팀 탐색기](/azure/devops/user-guide/work-team-explorer?view=vsts)(오른쪽 아래) - [Git](https://git-scm.com/), [TFVC(Team Foundation 버전 제어)](/azure/devops/repos/tfvc/overview?view=vsts) 등의 버전 제어 기술을 통해 작업 항목을 추적하고 다른 사용자와 코드를 공유할 수 있습니다.
 
-### <a name="popular-productivity-features"></a>주요 생산성 향상 기능
+## <a name="editions"></a>버전
+
+Visual Studio는 Windows 및 Mac에서 사용할 수 있습니다. [Mac용 Visual Studio](/visualstudio/mac/)에는 Visual Studio 2017과 동일한 기능이 많이 있으며 플랫폼 간 및 모바일 앱 개발을 위한 최적화되어 있습니다. 이 문서에서는 Windows 버전의 Visual Studio 2017에 중점을 둡니다.
+
+Visual Studio 2017에는 Community, Professional 및 Enterprise의 세 가지 버전이 있습니다. 각 버전에서 지원되는 기능에 대해 알아보려면 [Visual Studio 2017 IDE 비교](https://visualstudio.microsoft.com/vs/compare/)를 참조하세요.
+
+## <a name="popular-productivity-features"></a>주요 생산성 향상 기능
 
 소프트웨어를 개발할 때 생산성을 높이는 데 도움이 되는 Visual Studio에서 인기 있는 기능 몇 가지는 다음과 같습니다.
 
@@ -106,9 +94,19 @@ Visual Studio를 처음 시작하면 필요에 따라 Microsoft 계정이나 회
 
    ![정의 보기](../ide/media/peek-definition.png)
 
+## <a name="install-the-visual-studio-ide"></a>Visual Studio IDE 설치
+
+이 개요 문서에서는 간단한 프로젝트를 만들고 색 테마 변경, 코딩 도구로 [IntelliSense](using-intellisense.md) 사용 및 앱을 디버깅하여 프로그램 실행 중 변수 값 확인과 같은 Visual Studio로 수행할 수 있는 몇 가지 작업을 살펴보겠습니다. 시작하려면 [Visual Studio 2017을 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)하여 시스템에 설치합니다.
+
+모듈식 설치 관리자를 사용하면 선호하는 프로그래밍 언어 또는 플랫폼에 필요한 기능 그룹인 *워크로드*를 선택하여 설치할 수 있습니다. [프로그램 생성](#create-a-program) 단계를 수행하려면 설치 중에 **.NET Core 플랫폼 간 개발** 워크로드를 선택해야 합니다.
+
+![Visual Studio 설치 관리자에서 .NET Core 플랫폼 간 개발 워크로드](../ide/media/dotnet-core-cross-platform-workload.png)
+
+Visual Studio를 처음 시작하면 필요에 따라 Microsoft 계정이나 회사 또는 학교 계정으로 [로그인](signing-in-to-visual-studio.md)할 수 있습니다.
+
 ## <a name="create-a-program"></a>프로그램 만들기
 
-이제 새롭고 간단한 프로그램을 만들어 보겠습니다.
+이제 본격적으로 간단한 프로그램을 만들어 보겠습니다.
 
 1. Visual Studio를 엽니다. 메뉴에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.
 

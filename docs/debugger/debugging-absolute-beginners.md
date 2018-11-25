@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c10032bf12060c8c5e42f93f6596fe576adfccf
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: fa998896ad4c67bcd9e10ee50b4939bdbf915330
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612677"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257370"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>완전 초보자를 위한 디버깅하는 방법
 
@@ -80,7 +80,7 @@ Visual Studio에서 코드 줄 옆의 왼쪽 여백을 클릭하여 중단점을
 
 1. Visual Studio가 설치되어 있어야 하며 만들려는 앱 형식에 따라 .**NET 데스크톱 개발** 워크로드 또는 . **.NET Core 플랫폼 간 개발** 워크로드가 설치되어 있어야 합니다.
 
-    아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 페이지로 이동하여 체험용으로 설치합니다.
+    아직 Visual Studio를 설치하지 않은 경우  [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  페이지로 이동하여 체험용으로 설치합니다.
 
     워크로드를 설치해야 하지만 이미 Visual Studio가 있는 경우 **도구** > **도구 및 기능 가져오기**를 클릭합니다. Visual Studio 설치 관리자가 시작됩니다. .**NET 데스크톱 개발**(또는 **.NET Core 플랫폼 간 개발**) 워크로드를 선택한 다음, **수정**을 선택합니다.
 
@@ -325,11 +325,11 @@ Visual Studio에서 코드 줄 옆의 왼쪽 여백을 클릭하여 중단점을
 * 애플리케이션에서 예상하는 코드를 실행하고 있는지 여부를 확인합니다. (예를 들어 애플리케이션 예제에서 switch 문의 코드가 불규칙의 은하계 유형으로 설정될 것이라고 예상했지만 앱은 오타로 인해 코드를 건너뛰었습니다.)
 
 > [!TIP]
-> 디버거를 사용하면 버그를 찾는 데 도움이 됩니다. 디버깅 도구에서 코드의 의도를 아는 경우에만 *사용자를 위해* 버그를 찾을 수 있습니다. 도구는 개발자가 해당 의도를 표시하는 경우에만 코드의 의도를 알 수 있습니다. [단위 테스트](../test/improve-code-quality.md)를 작성하는 것이 해당 작업을 수행하는 방법입니다.
+> 디버거를 사용하면 버그를 찾는 데 도움이 됩니다. 디버깅 도구에서 코드의 의도를 아는 경우에만 *사용자를 위해* 버그를 찾을 수 있습니다. 도구는 개발자가 해당 의도를 표시하는 경우에만 코드의 의도를 알 수 있습니다. [단위 테스트](../test/improve-code-quality.md)를 작성하는 것이 해당 작업을 수행하는 방법입니다. 
 
 ## <a name="next-steps"></a>다음 단계
 
-이 문서에서는 몇 가지 일반적인 디버깅 개념을 알아보았습니다. 다음으로 Visual Studio를 사용하여 디버그하는 방법 학습을 시작할 수 있습니다.
+이 문서에서는 몇 가지 일반적인 디버깅 개념을 알아보았습니다. 그런 다음, 디버거에 대해 자세히 알아볼 수 있습니다.
 
 > [!div class="nextstepaction"]
 > [Visual Studio를 사용하여 디버깅하는 자세한 내용](../debugger/getting-started-with-the-debugger.md)
