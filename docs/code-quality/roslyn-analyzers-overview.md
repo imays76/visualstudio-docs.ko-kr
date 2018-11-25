@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 Roslyn 분석기
+title: Roslyn 분석기를 사용한 코드 분석
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -13,16 +13,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3d5836c0522ef97a634f44799934aab2750b3a45
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 620f2905e2511ed403f0d25f32fa1bfc9b1eca68
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511424"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948844"
 ---
 # <a name="overview-of-net-compiler-platform-analyzers"></a>.NET Compiler Platform 분석기 개요
 
-Visual Studio 2017에는 입력한 C# 또는 Visual Basic 코드를 분석하는 기본 제공 .NET Compiler Platform 분석기 집합이 포함되어 있습니다. Visual Studio 확장이나 NuGet 패키지로 프로젝트별로 추가 분석기를 설치할 수 있습니다. 분석기는 코드 스타일, 코드 품질 및 유지 관리, 코드 디자인 및 기타 문제를 살펴봅니다.
+Visual Studio 2017에는 입력한 C# 또는 Visual Basic 코드를 분석하는 기본 제공 .NET Compiler Platform 분석기 집합이 포함되어 있습니다. 분석기는 코드 스타일, 코드 품질 및 유지 관리, 코드 디자인 및 기타 문제를 살펴봅니다. Visual Studio 확장이나 NuGet 패키지로 프로젝트별로 추가 분석기를 설치할 수 있습니다.
 
 분석기에서 규칙 위반이 발생하면 코드 편집기에서 문제의 코드 아래에 *물결선*이 표시되며 **오류 목록**에도 보고됩니다.
 

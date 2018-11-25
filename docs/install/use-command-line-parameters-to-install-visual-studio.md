@@ -2,7 +2,7 @@
 title: 명령줄 매개 변수를 사용하여 Visual Studio 설치
 description: 명령줄 매개 변수를 사용하여 Visual Studio 설치를 제어하거나 사용자 지정하는 방법을 알아봅니다.
 ms.custom: ''
-ms.date: 05/07/2018
+ms.date: 11/14/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 051935a2c7022af3c6811e90a89697a08f52fa9a
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: e52d61c1226e131c9d989a70f7c8e6432d8f3733
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050367"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51768522"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>명령줄 매개 변수를 사용하여 Visual Studio 2017 설치
 
@@ -55,6 +55,7 @@ ms.locfileid: "50050367"
 | `update` | 설치된 제품을 업데이트합니다. |
 | `repair` | 설치된 제품을 복구합니다. |
 | `uninstall` | 설치된 제품을 제거합니다. |
+| `export` | **15.9의 새 기능**: 설치 선택 항목을 설치 구성 파일로 내보냅니다. |
 
 | **설치 옵션** | **설명** |
 | ----------------------- | --------------- |
@@ -74,6 +75,7 @@ ms.locfileid: "50050367"
 | `--nickname <name>` | **선택 사항**: 설치된 제품에 할당할 애칭을 정의합니다. 애칭은 10자를 초과할 수 없습니다.  |
 | `--productKey` | **선택 사항**: 설치된 제품에 사용할 제품 키를 정의합니다. 제품 키는 `xxxxx-xxxxx-xxxxx-xxxxx-xxxxx` 또는 `xxxxxxxxxxxxxxxxxxxxxxxxx` 형식의 영숫자 25자로 구성됩니다. |
 | `--help, --?, -h, -?` | 이 페이지의 오프라인 버전을 표시합니다. |
+| `--config <path>` | **선택 사항** 및 **15.9의 새 기능**: 설치 또는 수정 작업 중에 이전에 저장한 설치 구성 파일을 기반으로 추가할 워크로드 및 구성 요소를 결정합니다. 이 작업은 추가 작업이며 파일에 없는 워크로드나 구성 요소를 제거하지 않습니다. 또한 제품에 적용되지 않는 항목은 추가되지 않습니다. 내보내기 작업 중에 설치 구성 파일을 저장할 위치가 결정됩니다. |
 
 > 참고: 여러 워크로드와 구성 요소를 지정할 경우 각 항목에 대해 `--add` 또는 `--remove` 명령줄 스위치를 반복해야 합니다.
 

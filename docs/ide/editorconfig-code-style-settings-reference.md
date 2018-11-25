@@ -8,7 +8,7 @@ dev_langs:
 helpviewer_keywords:
 - coding conventions [EditorConfig]
 - EditorConfig coding conventions
-- language conventions [EditorConfig]
+- language code style rules [EditorConfig]
 - formatting conventions [EditorConfig]
 author: kuhlenh
 ms.author: gewarren
@@ -18,12 +18,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 237651c67cd2578b2b2a2e4ffade3f4c6d180d78
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: a54a3d6b967e7652c25e24922d7bd3b49141cc17
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967547"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51769748"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig에 대한 .NET 코딩 규칙 설정
 
@@ -35,7 +35,7 @@ Visual Studio 2017에서는 [EditorConfig](../ide/create-portable-custom-editor-
 
 지원되는 .NET 코딩 규칙 범주에는 세 가지가 있습니다.
 
-- [언어 규칙](#language-conventions)
+- [언어 코드 스타일](#language-code-styles)
 
    C# 또는 Visual Basic 언어에 관련된 규칙입니다. 예를 들어 변수를 정의하거나 식 본문 멤버를 사용하는 것이 좋은 경우 `var` 또는 명시적 형식을 사용하여 규칙을 지정할 수 있습니다.
 
@@ -47,13 +47,13 @@ Visual Studio 2017에서는 [EditorConfig](../ide/create-portable-custom-editor-
 
    코드 요소의 명명과 관련된 규칙입니다. 예를 들어 `async` 메서드가 "Async"로 끝나야 하는지를 지정할 수 있습니다.
 
-## <a name="language-conventions"></a>언어 규칙
+## <a name="language-code-styles"></a>언어 코드 스타일
 
-언어 규칙의 규칙에는 다음과 같은 형식이 있습니다.
+언어 코드 스타일의 규칙은 다음과 같은 형식이 있습니다.
 
 `options_name = false|true : none|silent|suggestion|warning|error`
 
-각 언어 규칙 규칙의 경우 **true**(이 스타일 선호) 또는 **false**(이 스타일 선호하지 않음) 및 **심각도**를 지정해야 합니다. 심각도는 해당 스타일에 적용하는 수준을 지정합니다.
+각 언어 코드 스타일 규칙의 경우 **true**(이 스타일 선호) 또는 **false**(이 스타일 선호하지 않음) 및 **심각도**를 지정해야 합니다. 심각도는 해당 스타일에 적용하는 수준을 지정합니다.
 
 다음 표에서는 가능한 심각도 값 및 해당 효과를 나열합니다.
 
@@ -65,7 +65,7 @@ Visual Studio 2017에서는 [EditorConfig](../ide/create-portable-custom-editor-
 `warning` | 이 스타일 규칙을 위반하는 경우 컴파일러 경고가 표시됩니다.
 `error` | 이 스타일 규칙을 위반하는 경우 컴파일러 오류가 표시됩니다.
 
-다음 목록에서는 허용되는 언어 규칙을 보여줍니다.
+다음 목록에서는 허용되는 언어 코드 스타일 설정을 보여줍니다.
 
 - .NET 코드 스타일 설정
     - ["This." 및 "Me." 한정자](#this_and_me)
@@ -2244,7 +2244,7 @@ dotnet_naming_symbols.constant_fields.applicable_accessibilities  = *
 dotnet_naming_symbols.constant_fields.required_modifiers          = const
 
 ###############################
-# C# Coding Conventions       #
+# C# Code Style Rules         #
 ###############################
 
 [*.cs]
@@ -2261,7 +2261,7 @@ csharp_style_expression_bodied_properties = true:none
 csharp_style_expression_bodied_indexers = true:none
 csharp_style_expression_bodied_accessors = true:none
 
-# Pattern matching preferences
+# Pattern-matching preferences
 csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
 csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
 
@@ -2314,9 +2314,9 @@ csharp_space_between_method_call_empty_parameter_list_parentheses = false
 csharp_preserve_single_line_statements = true
 csharp_preserve_single_line_blocks = true
 
-###############################
-# VB Coding Conventions       #
-###############################
+##################################
+# Visual Basic Code Style Rules  #
+##################################
 
 [*.vb]
 # Modifier preferences
