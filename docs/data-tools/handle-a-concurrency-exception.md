@@ -20,12 +20,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e23a023b3e37b9c4f3869bfa699ffee1f44caffa
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
-ms.translationtype: MT
+ms.openlocfilehash: fef30f836ab27cd7a67d85a04254be0018d5b33e
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750814"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388740"
 ---
 # <a name="handle-a-concurrency-exception"></a>동시성 예외 처리
 
@@ -65,16 +65,13 @@ ms.locfileid: "50750814"
 
        짧은 시간 후 쿼리 실행이 완료 하 고 Northwind 데이터베이스 생성 됩니다.
 
-> [!NOTE]
-> 대화 상자와 메뉴 명령은 활성 설정 또는 사용 중인 버전에 따라 도움말에서 설명 하는 것에서 다 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio IDE 개인 설정](../ide/personalizing-the-visual-studio-ide.md)을 참조하세요.
-
 ## <a name="create-a-new-project"></a>새 프로젝트 만들기
 
 새 Windows Forms 응용 프로그램을 만들어 시작 합니다.
 
 1. Visual Studio에서에 **파일** 메뉴에서 **새로 만들기** > **프로젝트**합니다.
 
-2. 확장 **Visual C#** 하거나 **Visual Basic** 왼쪽 창에서 선택한 **Windows Desktop**합니다.
+2. 확장 **시각적 C#**  하거나 **Visual Basic** 왼쪽 창에서 선택한 **Windows Desktop**.
 
 3. 가운데 창에서 선택 합니다 **Windows Forms 앱** 형식 프로젝션 합니다.
 
@@ -109,7 +106,7 @@ ms.locfileid: "50750814"
 
 만든이 섹션에서는 <xref:System.Windows.Forms.DataGridView?displayProperty=nameWithType> 끌어서를 **고객** 에서 항목을 **데이터 원본** 창에서 Windows 폼으로 합니다.
 
-1. 에 **데이터** 메뉴에서 선택 **데이터 소스 표시** 열려는 합니다 **데이터 소스 창**합니다.
+1. 열려는 **데이터 원본** 창에는 **데이터** 메뉴에서 선택 **데이터 소스 표시**.
 
 2. 에 **데이터 원본** 창 확장 합니다 **NorthwindDataSet** 노드를 선택한 후는 **고객** 테이블.
 
@@ -217,6 +214,6 @@ ms.locfileid: "50750814"
 
    선택 **No** 업데이트를 취소 하 고 현재 데이터베이스에 있는 값을 사용 하 여 데이터 집합을 업데이트 합니다. 선택 **예** 제안 된 값이 데이터베이스에 기록 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [데이터를 다시 데이터베이스에 저장](../data-tools/save-data-back-to-the-database.md)
