@@ -25,25 +25,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: da15793027eb643078771d33464258fea73fec9d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: af8856a4356a829b37a4a624b86f7b29dd965f9c
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283394"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389460"
 ---
 # <a name="how-to-get-back-to-the-function-that-called-mfc-if-halted"></a>방법: 중지된 경우 MFC를 호출한 함수로 돌아가기
+
 > [!NOTE]
->  표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 도구 메뉴에서 설정 가져오기 및 내보내기를 선택합니다. 자세한 내용은 [Visual Studio IDE 개인 설정](../ide/personalizing-the-visual-studio-ide.md)을 참조하세요.  
-  
- 사용 하는 경우는 **중단** 명령을 합니다 **디버그** 프로그램을 중지 하려면 메뉴, MFC에서 중지 되었고 코드에서 문제 인지 호출 스택 창을 사용 하 여 함수를 다시 탐색 하 합니다. 자세한 내용은 [방법: 호출 스택 창을 사용 하 여](../debugger/how-to-use-the-call-stack-window.md)입니다.  
-  
- 때로는 코드가 메시지 펌프에서 손상될 수도 있습니다. 그럴 경우 호출 스택에는 사용자 코드가 들어 있지 않습니다. 이 문제를 방지 하려면 중단점 (사용 하 여 조건 및 적중된 횟수) 대신 사용할 수 있습니다 합니다 **중단** 명령입니다. 자세한 내용은 [중단점 및 추적점](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583)합니다.  
-  
-### <a name="to-navigate-to-the-function-from-which-mfc-was-called"></a>MFC를 호출한 함수를 탐색하려면  
-  
--   사용 된 **호출 스택** 창입니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [네이티브 코드 디버그 Faq](../debugger/debugging-native-code-faqs.md)   
- [네이티브 코드 디버그](../debugger/debugging-native-code.md)
+> 표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [설정 재설정](../ide/environment-settings.md#reset-settings)합니다.
+
+디버그 **메뉴의 중단** 명령을 사용하여 프로그램을 중단했을 때 MFC에서 중지되었고 코드에 문제가 있다고 판단되면 호출 스택 창을 사용하여 함수로 되돌아갈 수 있습니다. 자세한 내용은 [방법: 호출 스택 창을 사용 하 여](../debugger/how-to-use-the-call-stack-window.md)입니다.
+
+때로는 코드가 메시지 펌프에서 손상될 수도 있습니다. 그럴 경우 호출 스택에는 사용자 코드가 들어 있지 않습니다. 이 문제가 발생하지 않도록 하려면 중단** 명령 대신 중단점을 사용합니다. 이 경우 조건 및 적중 횟수도 함께 사용할 수 있습니다. 자세한 내용은 [Breakpoints and Tracepoints](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583)을 참조하세요.
+
+## <a name="navigate-to-the-function-from-which-mfc-was-called"></a>MFC를 호출한 함수로 이동 합니다.
+
+-   호출 스택** 창을 사용합니다.
+
+## <a name="see-also"></a>참고 항목
+
+- [네이티브 코드 디버그 FAQ](../debugger/debugging-native-code-faqs.md)
+- [네이티브 코드 디버그](../debugger/debugging-native-code.md)

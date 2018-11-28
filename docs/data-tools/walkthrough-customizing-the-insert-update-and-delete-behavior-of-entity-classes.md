@@ -1,5 +1,5 @@
 ---
-title: '연습: 사용자 지정 삽입, 업데이트 하 고 엔터티 클래스의 동작을 삭제'
+title: '연습: 엔터티 클래스의 삽입, 업데이트 및 삭제 동작을 사용자 지정'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,21 +13,21 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: fb01ef51c0a44047e2caf2f23634ebe741cd2dcb
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: f665d860597bc99d7c9e496c115a82a60d596e09
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174980"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305535"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>연습: 삽입, 업데이트 및 엔터티 클래스의 삭제 동작 사용자 지정
 
-합니다 [Visual Studio에서 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md) 만들고 LINQ to SQL 클래스 (엔터티 클래스)는 데이터베이스의 개체를 기반으로 하는 편집 하기 위한 시각적 디자인 화면을 제공 합니다. 사용 하 여 [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index), SQL 데이터베이스에 액세스 하려면 LINQ 기술을 사용할 수 있습니다. 자세한 내용은 [LINQ (Language-integrated query)](/dotnet/csharp/linq/)합니다.
+합니다 [Visual Studio에서 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md) 만들고 LINQ to SQL 클래스 (엔터티 클래스)는 데이터베이스의 개체를 기반으로 하는 편집 하기 위한 시각적 디자인 화면을 제공 합니다. 사용 하 여 [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index), SQL 데이터베이스에 액세스 하려면 LINQ 기술을 사용할 수 있습니다. 자세한 내용은 [LINQ(Language-Integrated Query)](/dotnet/csharp/linq/)를 참조하세요.
 
-기본적으로 업데이트를 수행 하는 논리는 LINQ to SQL 런타임에서 제공 됩니다. 런타임이 기본 만듭니다 `Insert`, `Update`, 및 `Delete` (열 정 및 기본 키 정보) 테이블의 스키마를 기반으로 한 문입니다. 기본 동작을 사용 하지 않으려면 업데이트 동작을 구성할 수 있으며 필요한 삽입, 업데이트 및 데이터베이스의 데이터로 작업 하는 데 필요한 삭제를 수행 하기 위한 특정 저장된 프로시저를 지정할 수 있습니다. 엔터티 클래스가 뷰에 매핑되는 때와 같이 기본 동작이 생성되지 않은 경우에도 이렇게 할 수 있습니다. 또한 저장 프로시저를 통해 데이터베이스의 테이블에 액세스해야 하는 경우에 기본 업데이트 동작을 재정의할 수 있습니다. 자세한 내용은 [저장된 프로시저를 사용 하 여 작업을 사용자 지정](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures)합니다.
+기본적으로 업데이트를 수행 하는 논리는 LINQ to SQL 런타임에서 제공 됩니다. 런타임이 기본 만듭니다 `Insert`, `Update`, 및 `Delete` (열 정 및 기본 키 정보) 테이블의 스키마를 기반으로 한 문입니다. 기본 동작을 사용하지 않으려면 업데이트 동작을 구성하고 데이터베이스의 데이터 작업에 필요한 삽입, 업데이트 및 삭제를 수행하기 위한 특정 저장 프로시저를 지정할 수 있습니다. 엔터티 클래스가 뷰에 매핑되는 때와 같이 기본 동작이 생성되지 않은 경우에도 이렇게 할 수 있습니다. 또한 저장 프로시저를 통해 데이터베이스의 테이블에 액세스해야 하는 경우에 기본 업데이트 동작을 재정의할 수 있습니다. 자세한 내용은 [저장된 프로시저를 사용 하 여 작업을 사용자 지정](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures)합니다.
 
 > [!NOTE]
-> 이 연습에서는 가용성을 필요 합니다 **InsertCustomer**, **UpdateCustomer**, 및 **DeleteCustomer** Northwind 데이터베이스에 대해 저장 프로시저입니다.
+> 이 연습을 수행하려면 Northwind 데이터베이스의 InsertCustomer **, UpdateCustomer** 및 DeleteCustomer** 저장 프로시저를 사용할 수 있어야 합니다.
 
 이 연습에서는 저장 프로시저를 사용하여 데이터를 데이터베이스에 다시 저장하기 위한 기본 LINQ to SQL 런타임 동작을 재정의하는 단계에 대해 설명합니다.
 
@@ -75,17 +75,17 @@ LINQ to SQL 클래스 작업 하 고 Windows Form에 데이터를 표시 하는 
 
 1. Visual Studio에서에 **파일** 메뉴에서 **새로 만들기** > **프로젝트**합니다.
 
-2. 확장 **Visual C#** 하거나 **Visual Basic** 왼쪽 창에서 선택한 **Windows Desktop**합니다.
+2. 확장 **시각적 C#**  하거나 **Visual Basic** 왼쪽 창에서 선택한 **Windows Desktop**.
 
 3. 가운데 창에서 선택 합니다 **Windows Forms 앱** 형식 프로젝션 합니다.
 
 4. 프로젝트 이름을 **UpdatingWithSProcsWalkthrough**를 선택한 후 **확인**합니다.
 
-     합니다 **UpdatingWithSProcsWalkthrough** 프로젝트에 추가한 만들어지면 **솔루션 탐색기**합니다.
+     UpdatingwithSProcsWalkthrough 프로젝트가 만들어져 솔루션 탐색기**에 추가됩니다.
 
 4.  **프로젝트** 메뉴에서 **새 항목 추가**를 클릭합니다.
 
-5.  클릭 합니다 **LINQ to SQL 클래스** 템플릿과 형식 **Northwind.dbml** 에 **이름** 상자.
+5.  LINQ to SQL 클래스 **템플릿을 클릭하고 이름** 상자에 Northwind.dbml**을 입력합니다.
 
 6.  **추가**를 클릭합니다.
 
@@ -101,24 +101,24 @@ LINQ to SQL 클래스 테이블을 끌어 데이터베이스 테이블에 매핑
 
 2.  끌어서 합니다 **고객** 노드에서 **서버 탐색기** 또는 **데이터베이스 탐색기** 에 **O/R 디자이너* 화면.
 
-     라는 엔터티 클래스가 **고객** 만들어집니다. 이 클래스에는 Customers 테이블의 열에 해당하는 속성이 있습니다. 엔터티 클래스의 이름은 **고객** (없습니다 **고객**) Customers 테이블에서 단일 고객을 나타내므로 합니다.
+     Customer**라는 엔터티 클래스가 만들어집니다. 이 클래스에는 Customers 테이블의 열에 해당하는 속성이 있습니다. 이 엔터티 클래스는 Customers 테이블의 단일 고객을 나타내므로 이름이 Customers**가 아닌 Customer**로 지정됩니다.
 
     > [!NOTE]
-    > 이러한 이름 바꾸기 동작 이라고 *복수화*합니다. 설정할 수 있습니다 또는 해제는 [옵션 대화 상자](../ide/reference/options-dialog-box-visual-studio.md)합니다. 자세한 내용은 [방법: 복수형 설정 및 해제 (O/R 디자이너)](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md)합니다.
+    > 이러한 이름 바꾸기 동작을 복수 적용*이라고 합니다. 설정할 수 있습니다 또는 해제는 [옵션 대화 상자](../ide/reference/options-dialog-box-visual-studio.md)합니다. 자세한 내용은 [방법: 복수형 설정 및 해제 (O/R 디자이너)](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md)합니다.
 
-3.  에 **빌드** 메뉴에서 클릭 **UpdatingwithSProcsWalkthrough 빌드** 프로젝트를 빌드합니다.
+3.  빌드 **메뉴에서 UpdatingwithSProcsWalkthrough 빌드**를 클릭하여 프로젝트를 빌드합니다.
 
-4.  **데이터** 메뉴에서 **데이터 소스 표시**를 클릭합니다.
+4.  열려는 **데이터 원본** 창에는 **데이터** 메뉴에서 클릭 **데이터 소스 표시**.
 
 5.  **데이터 소스** 창에서 **새 데이터 소스 추가**를 클릭합니다.
 
-6.  클릭 **개체** 에 **데이터 소스 형식 선택** 페이지를 클릭 한 다음 **다음**합니다.
+6.  데이터 소스 형식 선택 **페이지에서 개체**를 클릭하고 다음**을 클릭합니다.
 
-7.  확장 된 **UpdatingwithSProcsWalkthrough** 노드 찾아 선택 합니다 **고객** 클래스.
+7.  UpdatingwithSProcsWalkthrough **노드를 확장하고 Customer** 클래스를 찾아 선택합니다.
 
     > [!NOTE]
-    > 경우는 **고객** 클래스를 사용할 수 없는 경우, 마법사를 취소, 프로젝트를 빌드 및 마법사를 다시 실행 합니다.
-8.  클릭 **완료** 데이터 소스를 만들고 추가 하는 **고객** 엔터티 클래스를 **데이터 원본** 창입니다.
+    > Customer** 클래스를 사용할 수 없는 경우에는 마법사를 취소하고 프로젝트를 빌드한 다음 마법사를 다시 실행합니다.
+8.  마침**을 클릭하여 데이터 소스를 만들고 데이터 소스** 창에 Customer** 엔터티 클래스를 추가합니다.
 
 ## <a name="create-a-datagridview-to-display-the-customer-data-on-a-windows-form"></a>Windows Form에 고객 데이터를 표시 하기 위해 DataGridView 만들기
 
@@ -126,14 +126,14 @@ LINQ에서 SQL 데이터 원본 항목을 끌어 엔터티 클래스에 바인�
 
 ### <a name="to-add-controls-that-are-bound-to-the-entity-classes"></a>엔터티 클래스에 바인딩된 컨트롤을 추가하려면
 
-1.  오픈 **Form1** 디자인 뷰에서 합니다.
+1.  디자인 뷰에서 Form1**을 엽니다.
 
-2.  **데이터 원본** 창으로 끕니다 합니다 **고객** 노드 **Form1**합니다.
+2.  데이터 소스 **창에서 Customer** 노드를 Form1로 끌어 옵니다.
 
     > [!NOTE]
-    > 표시할 합니다 **데이터 원본** 창에서 클릭 **데이터 소스 표시** 에 **데이터** 메뉴.
+    > 데이터 소스 **창을 표시하려면 데이터** 메뉴에서 데이터 소스 표시**를 클릭합니다.
 
-3.  오픈 **Form1** 코드 편집기에서.
+3.  코드 편집기에서 Form1을 엽니다.
 
 4.  하지만 내 특정 메서드의 외부 폼에 전역 폼에 다음 코드를 추가 합니다 `Form1` 클래스:
 
@@ -163,11 +163,11 @@ LINQ에서 SQL 데이터 원본 항목을 끌어 엔터티 클래스에 바인�
 
 ### <a name="to-implement-save-functionality"></a>저장 기능을 구현하려면
 
-1.  오픈 **Form1** 디자인 뷰에서 합니다.
+1.  디자인 뷰에서 Form1**을 엽니다.
 
-2.  저장 선택 단추를 **CustomerBindingNavigator** (플로피 디스크 아이콘이 있는 단추).
+2.  CustomerBindingNavigator**에서 저장 단추(플로피 디스크 아이콘이 있는 단추)를 선택합니다.
 
-3.  에 **속성** 창에서 설정 합니다 **사용** 속성을 **True**합니다.
+3.  속성**창에서 Enabled** 속성을 True**로 설정합니다.
 
 4.  저장 단추를 두 번 클릭하여 이벤트 처리기를 만들고 코드 편집기로 전환합니다.
 
@@ -185,9 +185,9 @@ LINQ에서 SQL 데이터 원본 항목을 끌어 엔터티 클래스에 바인�
 
 ### <a name="to-override-the-default-update-behavior"></a>기본 업데이트 동작을 재정의하려면
 
-1.  LINQ to SQL 파일에서 엽니다는 **O/R 디자이너**합니다. (두 번 클릭 합니다 **Northwind.dbml** 파일 **솔루션 탐색기**.)
+1.  LINQ to SQL 파일에서 엽니다는 **O/R 디자이너**합니다. 솔루션 탐색기**에서 Northwind.dbml** 파일을 두 번 클릭합니다.
 
-2.  **서버 탐색기** 또는 **데이터베이스 탐색기**, Northwind 데이터베이스를 확장 **Stored Procedures** 노드를 찾습니다는 **InsertCustomers**하십시오 **UpdateCustomers**, 및 **DeleteCustomers** 저장 프로시저입니다.
+2.  서버 탐색기 **/데이터베이스 탐색기**에서 Northwind 데이터베이스 저장 프로시저 **노드를 확장하고 InsertCustomers**, UpdateCustomers **및 DeleteCustomers** 저장 프로시저를 찾습니다.
 
 3.  모든 3 개의 저장된 프로시저를 끌어 합니다 **O/R 디자이너**합니다.
 
@@ -195,41 +195,41 @@ LINQ에서 SQL 데이터 원본 항목을 끌어 엔터티 클래스에 바인�
 
 4.  선택 된 **고객** 의 엔터티 클래스는 **O/R 디자이너**합니다.
 
-5.  에 **속성** 창에서 합니다 **삽입** 속성입니다.
+5.  속성 **창에서 Insert** 속성을 선택합니다.
 
-6.  줄임표 (**...** ) 옆에 **사용 하 여 런타임** 열려는 합니다 **동작 구성** 대화 상자.
+6.  런타임 사용 **옆의 줄임표(...) 를 클릭하여 동작 구성** 대화 상자를 엽니다.
 
-7.  선택 **사용자 지정**합니다.
+7.  사용자 지정**을 선택합니다
 
-8.  선택 된 **InsertCustomers** 에서 메서드는 **사용자 지정** 목록입니다.
+8.  사용자 지정 **목록에서 InsertCustomers** 메서드를 선택합니다.
 
-9. 클릭 **적용** 선택한 클래스 및 동작에 대 한 구성을 저장 합니다.
-
-    > [!NOTE]
-    > 계속을 클릭 하면으로 각 클래스/동작 조합에 대 한 동작을 구성할 수 있습니다 **적용** 각 변경 합니다. 클릭 하기 전에 클래스 또는 동작을 변경 하는 경우 **적용**, 경고 대화 상자가 표시 하는 모든 변경 내용을 적용할 수 있는 기회를 제공 합니다.
-
-10. 선택 **업데이트** 에 **동작** 목록입니다.
-
-11. 선택 **사용자 지정**합니다.
-
-12. 선택 된 **UpdateCustomers** 에서 메서드는 **사용자 지정** 목록입니다.
-
-     목록을 살펴보고 **메서드 인수** 하 고 **클래스 속성** 를 두 개의 **메서드 인수** 두 개의 **클래스 속성**테이블의 일부 열에 대 한 합니다. 이를 사용하면 손쉽게 변경 내용을 추적하고 동시성 위반을 확인하는 문을 만들 수 있습니다.
-
-13. 지도 **Original_CustomerID** 메서드 인수를 합니다 **CustomerID (Original)** 클래스 속성입니다.
+9. 적용**을 클릭하여 선택한 클래스 및 동작에 대한 구성을 저장합니다.
 
     > [!NOTE]
-    > 기본적으로 메서드 인수는 이름이 일치하는 경우 클래스 속성에 매핑됩니다. 속성 이름이 변경 되거나 더 이상 테이블과 엔터티 클래스 간에 일치를 것이 있으면 경우 매핑할 해당 클래스 속성을 선택 합니다 **O/R 디자이너** 에서 올바른 매핑을 결정할 수 없습니다. 또한 메서드 인수를 매핑할 올바른 클래스 속성이 없는 경우 설정할 수 있습니다 합니다 **클래스 속성** 값을 **(없음)** 합니다.
+    > 계속해서 클래스/동작 조합을 변경한 후 적용**을 클릭하여 해당하는 각 조합에 대한 동작을 구성할 수 있습니다. 클릭 하기 전에 클래스 또는 동작을 변경 하는 경우 **적용**, 경고 대화 상자가 표시 하는 모든 변경 내용을 적용할 수 있는 기회를 제공 합니다.
 
-14. 클릭 **적용** 선택한 클래스 및 동작에 대 한 구성을 저장 합니다.
+10. 동작 **목록에서 업데이트**를 선택합니다.
 
-15. 선택 **삭제할** 에 **동작** 목록입니다.
+11. 사용자 지정**을 선택합니다
 
-16. 선택 **사용자 지정**합니다.
+12. 사용자 지정 **목록에서 UpdateCustomers** 메서드를 선택합니다.
 
-17. 선택 된 **DeleteCustomers** 에서 메서드는 **사용자 지정** 목록입니다.
+     메서드 인수 **및 클래스 속성** 목록을 살펴보면 테이블의 일부 열에 두 개의 메서드 인수**와 두 개의 클래스 속성**이 있습니다. 이를 사용하면 손쉽게 변경 내용을 추적하고 동시성 위반을 확인하는 문을 만들 수 있습니다.
 
-18. 지도 **Original_CustomerID** 메서드 인수를 합니다 **CustomerID (Original)** 클래스 속성입니다.
+13. Original_CustomerID **메서드 인수를 CustomerID (Original)** 클래스 속성에 매핑합니다.
+
+    > [!NOTE]
+    > 기본적으로 메서드 인수는 이름이 일치하는 경우 클래스 속성에 매핑됩니다. 속성 이름이 변경되거나 더 이상 테이블 및 엔터티 클래스 간에 일치하지 않아 O/R 디자이너에서 올바른 매핑을 결정할 수 없는 경우에는 매핑할 해당하는 클래스 속성을 선택해야 합니다. 또한 메서드 인수를 매핑할 올바른 클래스 속성이 없는 경우 클래스 속성 **값을 (없음)** 으로 설정할 수 있습니다.
+
+14. 적용**을 클릭하여 선택한 클래스 및 동작에 대한 구성을 저장합니다.
+
+15. 동작 **목록에서 삭제**를 선택합니다.
+
+16. 사용자 지정**을 선택합니다
+
+17. 사용자 지정 **목록에서 DeleteCustomers** 메서드를 선택합니다.
+
+18. Original_CustomerID **메서드 인수를 CustomerID (Original)** 클래스 속성에 매핑합니다.
 
 19. **확인**을 클릭합니다.
 
@@ -238,30 +238,30 @@ LINQ에서 SQL 데이터 원본 항목을 끌어 엔터티 클래스에 바인�
 
 ## <a name="test-the-application"></a>응용 프로그램 테스트
 
-다시 확인 하려면 응용 프로그램을 실행 합니다 **UpdateCustomers** 저장된 프로시저가 데이터베이스에서 고객 레코드를 올바르게 업데이트 합니다.
+응용 프로그램을 다시 실행하여 UpdateCustomers** 저장 프로시저가 데이터베이스에서 고객 레코드를 올바로 업데이트하는지 확인합니다.
 
 1.  **F5**키를 누릅니다.
 
-2.  업데이트 동작을 테스트 하려면 그리드에서 레코드를 수정 합니다.
+2.  표에서 레코드를 수정하여 업데이트 동작을 테스트합니다.
 
-3.  Insert 동작을 테스트 하려면 새 레코드를 추가 합니다.
+3.  새 레코드를 추가하여 삽입 동작을 테스트합니다.
 
 4.  저장 단추를 클릭하여 변경 내용을 데이터베이스에 다시 저장합니다.
 
 5.  폼을 닫아 디버깅을
 
-6.  키를 눌러 **F5** 하 고 업데이트 된 레코드와 새로 삽입된 된 레코드 유지 함을 확인 합니다.
+6.  F5 키를 눌러 업데이트된 레코드와 새로 삽입한 레코드가 있는지 확인합니다.
 
-7.  만든 새 레코드를 삭제는 delete 동작을 테스트 하려면 3 단계.
+7.  3단계에서 만든 새 레코드를 삭제하여 삭제 동작을 테스트합니다.
 
-8.  저장을 클릭 합니다. 변경 내용을 전송 하 고 데이터베이스에서 삭제 된 레코드를 제거 하는 단추입니다.
+8.  저장 단추를 클릭하여 변경 내용을 전송하고 데이터베이스에서 삭제한 레코드를 제거합니다.
 
 9. 폼을 닫아 디버깅을
 
-10. 키를 눌러 **F5** 데이터베이스에서 삭제 된 레코드가 제거 되었는지 확인 합니다.
+10. F5 키를 눌러 삭제한 레코드가 데이터베이스에서 제거되었는지 확인합니다.
 
     > [!NOTE]
-    > 응용 프로그램에서 값에 따라 SQL Server Express Edition을 사용 하는 경우는 **출력 디렉터리로 복사** 데이터베이스 파일의 속성 변경 내용을 나타나지 않을 수 있습니다를 누르면 **F5** 10 단계에서 합니다.
+    > 응용 프로그램에서 SQL Server Express Edition을 사용하는 경우 데이터베이스 파일의 출력 디렉터리로 복사** 속성 값에 따라 10단계에서 F5 키를 누를 때 변경 내용이 표시되지 않을 수 있습니다.
 
 ## <a name="next-steps"></a>다음 단계
 
@@ -269,11 +269,11 @@ LINQ에서 SQL 데이터 원본 항목을 끌어 엔터티 클래스에 바인�
 
 - 업데이트 동안 동시성 검사를 구현합니다. 정보를 참조 하세요 [낙관적 동시성: 개요](/dotnet/framework/data/adonet/sql/linq/optimistic-concurrency-overview)합니다.
 
-- LINQ 쿼리를 추가하여 데이터를 필터링합니다. 정보를 참조 하세요 [LINQ 쿼리 (C#) 소개](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)합니다.
+- LINQ 쿼리를 추가하여 데이터를 필터링합니다. 정보를 참조 하세요 [LINQ 쿼리 소개 (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-- [Visual Studio에서 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)(Visual Studio의 LINQ to SQL 도구)
 - [DataContext 메서드](../data-tools/datacontext-methods-o-r-designer.md)
 - [방법: 업데이트, 삽입 및 삭제 하는 데 저장된 프로시저를 할당 합니다.](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)

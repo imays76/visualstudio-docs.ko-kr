@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 데이터 바인딩된 컨트롤에 대한 캡션을 만드는 방식 사용자 지정
+title: 데이터 바인딩된 컨트롤에 대 한 캡션 사용자 지정
 ms.date: 11/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,16 +15,16 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 69e97efe6db8b06f476b7dc004e3b52a77701cb0
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
-ms.translationtype: MT
+ms.openlocfilehash: 11f7249f30b1866ca7c4aea4bbefa850a5353c0f
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758422"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305587"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Visual Studio에서 데이터 바인딩된 컨트롤에 대한 캡션을 만드는 방식 사용자 지정
 
-항목을 끌면 합니다 [데이터 소스 창](add-new-data-sources.md) 을 디자이너에 특별 한 고려 사항 고려해 야 합니다: 캡션 레이블이 열 이름은 두 개의 좀 더 읽기 쉬운 문자열로 변경 하거나 더 많은 단어 것으로 발견 된 서로 연결 됩니다. 이러한 레이블을 생성 하는, 설정 하 여 방식을 사용자 지정할 수 있습니다 합니다 **SmartCaptionExpression**를 **SmartCaptionReplacement**, 및 **SmartCaptionSuffix** 값 합니다 **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data 디자이너** 레지스트리 키입니다.
+항목을 끌면 합니다 [데이터 소스 창](add-new-data-sources.md#data-sources-window) 을 디자이너에 특별 한 고려 사항 고려해 야 합니다: 캡션 레이블이 열 이름은 두 개의 좀 더 읽기 쉬운 문자열로 변경 하거나 더 많은 단어 것으로 발견 된 서로 연결 됩니다. 이러한 레이블을 생성 하는, 설정 하 여 방식을 사용자 지정할 수 있습니다 합니다 **SmartCaptionExpression**를 **SmartCaptionReplacement**, 및 **SmartCaptionSuffix** 값 합니다 **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data 디자이너** 레지스트리 키입니다.
 
 > [!NOTE]
 > 이 레지스트리 키는 만들 때까지 존재 하지 않습니다.
@@ -44,7 +44,7 @@ ms.locfileid: "36758422"
 |레지스트리 항목|기본값|설명|
 |-------------------|-------------------|-----------------|
 |**SmartCaptionExpression**|**(\\\p{Ll}) (\\\p{Lu})&#124;_ +**|대문자 또는 밑줄 뒤에 소문자 문자를 찾습니다.|
-|**SmartCaptionReplacement**|**$1 달러 2**|**$1** 식의 첫 번째 괄호로 일치 하는 문자를 나타내는 하며 **$2** 두 번째 괄호로 일치 하는 문자를 나타냅니다. 첫 번째 일치 하는, 공백 하나 및 두 번째 일치 항목이 바뀝니다.|
+|**SmartCaptionReplacement**|"$103"|**$1** 식의 첫 번째 괄호로 일치 하는 문자를 나타내는 하며 **$2** 두 번째 괄호로 일치 하는 문자를 나타냅니다. 첫 번째 일치 하는, 공백 하나 및 두 번째 일치 항목이 바뀝니다.|
 |**SmartCaptionSuffix**|**:**|반환된 된 문자열에 추가 되는 문자를 나타냅니다. 예를 들어, 캡션이 `Company Name`, 접미사를 사용 하면 `Company Name:`|
 
 > [!CAUTION]
@@ -60,25 +60,25 @@ ms.locfileid: "36758422"
 
 3.  확장 된 **HKEY_CURRENT_USER** > **소프트웨어** > **Microsoft** > **VisualStudio**노드.
 
-7.  마우스 오른쪽 단추로 클릭 합니다 **15.0** 노드를 새로 만들고 **키** 라는 `Data Designers`합니다.
+4.  마우스 오른쪽 단추로 클릭 합니다 **15.0** 노드를 새로 만들고 **키** 라는 `Data Designers`합니다.
 
-8.  마우스 오른쪽 단추로 클릭 합니다 **데이터 디자이너** 노드를 만들고 세 개의 새 문자열 값:
+5.  마우스 오른쪽 단추로 클릭 합니다 **데이터 디자이너** 노드를 만들고 세 개의 새 문자열 값:
 
     - `SmartCaptionExpression`
     - `SmartCaptionReplacement`
     - `SmartCaptionSuffix`
 
-11. 마우스 오른쪽 단추로 클릭 합니다 **SmartCaptionExpression** 값을 선택 **수정**합니다.
+6. 마우스 오른쪽 단추로 클릭 합니다 **SmartCaptionExpression** 값을 선택 **수정**합니다.
 
-12. 원하는 정규식을 입력 합니다 **데이터 원본** 기간을 합니다.
+7. 원하는 정규식을 입력 합니다 **데이터 원본** 기간을 합니다.
 
-13. 마우스 오른쪽 단추로 클릭 합니다 **SmartCaptionReplacement** 값을 선택 **수정**합니다.
+8. 마우스 오른쪽 단추로 클릭 합니다 **SmartCaptionReplacement** 값을 선택 **수정**합니다.
 
-14. 대체 입력 정규식에서 일치 하는 패턴을 원하는 방식으로 형식이 지정 된 문자열입니다.
+9. 대체 입력 정규식에서 일치 하는 패턴을 원하는 방식으로 형식이 지정 된 문자열입니다.
 
-15. 마우스 오른쪽 단추로 클릭 합니다 **SmartCaptionSuffix** 값을 선택 **수정**합니다.
+10. 마우스 오른쪽 단추로 클릭 합니다 **SmartCaptionSuffix** 값을 선택 **수정**합니다.
 
-16. 캡션의 끝에 표시할 모든 문자를 입력 합니다.
+11. 캡션의 끝에 표시할 모든 문자를 입력 합니다.
 
     항목을 끌면 다음에 **데이터 원본** 창 캡션 레이블이 만들어집니다 제공 되는 새 레지스트리 값을 사용 합니다.
 
@@ -90,24 +90,24 @@ ms.locfileid: "36758422"
 
 3.  확장 된 **HKEY_CURRENT_USER** > **소프트웨어** > **Microsoft** > **VisualStudio**노드.
 
-7.  마우스 오른쪽 단추로 클릭 합니다 **15.0** 노드를 새로 만들고 **키** 라는 `Data Designers`합니다.
+4.  마우스 오른쪽 단추로 클릭 합니다 **15.0** 노드를 새로 만들고 **키** 라는 `Data Designers`합니다.
 
-8.  마우스 오른쪽 단추로 클릭 합니다 **데이터 디자이너** 노드를 만들고 세 개의 새 문자열 값:
+5.  마우스 오른쪽 단추로 클릭 합니다 **데이터 디자이너** 노드를 만들고 세 개의 새 문자열 값:
 
     - `SmartCaptionExpression`
     - `SmartCaptionReplacement`
     - `SmartCaptionSuffix`
 
-11. 마우스 오른쪽 단추로 클릭 합니다 **SmartCaptionExpression** 선택한 항목을 **수정**합니다.
+6. 마우스 오른쪽 단추로 클릭 합니다 **SmartCaptionExpression** 선택한 항목을 **수정**합니다.
 
-12. 입력 `(.*)` 값입니다. 이 전체 문자열을 일치 합니다.
+7. 입력 `(.*)` 값입니다. 이 전체 문자열을 일치 합니다.
 
-13. 마우스 오른쪽 단추로 클릭 합니다 **SmartCaptionReplacement** 선택한 항목을 **수정**합니다.
+8. 마우스 오른쪽 단추로 클릭 합니다 **SmartCaptionReplacement** 선택한 항목을 **수정**합니다.
 
-14. 입력 `$1` 값입니다. 이 문자열을 변경 되지 않은 상태로 남아 있도록 전체 문자열 일치 하는 값을 바꿉니다.
+9. 입력 `$1` 값입니다. 이 문자열을 변경 되지 않은 상태로 남아 있도록 전체 문자열 일치 하는 값을 바꿉니다.
 
     항목을 끌면 다음에 **데이터 원본** 창 캡션 레이블이 수정 되지 않은 캡션을 사용 하 여 만들어집니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio에서 데이터에 컨트롤 바인딩](../data-tools/bind-controls-to-data-in-visual-studio.md)

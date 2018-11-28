@@ -1,7 +1,7 @@
 ---
 title: 문자열 시각화 도우미에서 문자열을 보기 | Microsoft Docs
 ms.custom: ''
-ms.date: 07/11/2018
+ms.date: 10/10/2018
 ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e2204f10711db96033976cf7b4f7bd3639daf422
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
-ms.translationtype: MT
+ms.openlocfilehash: eb447a29ea669dbea3a68312884760f8984cc2de
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349090"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388558"
 ---
 # <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>Visual Studio에서 문자열 시각화 도우미에서 문자열 보기
 
@@ -67,7 +67,7 @@ Blank **값** 선택한 시각화 도우미는 문자열을 인식할 수 없습
 
 ![HTML 문자열 시각화 도우미](../debugger/media/dbg-string-visualizers-html.png "HTML 문자열 시각화 도우미")
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-- [사용자 지정 시각화 도우미 (C#, Visual Basic) 만들기](../debugger/create-custom-visualizers-of-data.md)
+- [사용자 지정 시각화 도우미 만들기 (C#, Visual Basic)](../debugger/create-custom-visualizers-of-data.md)
 - [Mac 용 Visual Studio에서 데이터 시각화](/visualstudio/mac/data-visualizations)

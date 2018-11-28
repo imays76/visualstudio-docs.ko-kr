@@ -22,27 +22,24 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 160d008425cc1c82fb8be26e7a6be9b3be82e999
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 1e43d118a5fcfe00a8eb6eaa7f34a17ff1f6a4be
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908433"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389217"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>XML 데이터를 Dataset에 읽어오기
 
 ADO.NET에는 XML 데이터로 작업 하기 위한 간단한 방법을 제공 합니다. 이 연습에서는 데이터 집합에 XML 데이터를 로드 하는 Windows 응용 프로그램을 만들 수 있습니다. 데이터 집합에 표시 됩니다는 <xref:System.Windows.Forms.DataGridView> 제어 합니다. 마지막으로, XML 파일의 내용을 기반으로 XML 스키마는 텍스트 상자에 표시 됩니다.
 
-> [!NOTE]
-> 대화 상자와 메뉴 명령은 활성 설정 또는 버전에 따라 도움말에서 설명 된 것과 다를 수 표시를 사용 합니다. 설정을 변경 하는 **도구** 메뉴에서 **설정 가져오기 및 내보내기**합니다. 자세한 내용은 [Visual Studio IDE 개인 설정](../ide/personalizing-the-visual-studio-ide.md)을 참조하세요.
-
 ## <a name="create-a-new-project"></a>새 프로젝트 만들기
 
-이 단계에서는 Visual Basic 또는 Visual C# 프로젝트를 만들 수 있습니다.
+Visual Basic 또는 시각적 개체를 만들이 단계에서는 C# 프로젝트입니다.
 
 1. Visual Studio에서에 **파일** 메뉴에서 **새로 만들기** > **프로젝트**합니다.
 
-2. 확장 **Visual C#** 하거나 **Visual Basic** 왼쪽 창에서 선택한 **Windows Desktop**합니다.
+2. 확장 **시각적 C#**  하거나 **Visual Basic** 왼쪽 창에서 선택한 **Windows Desktop**.
 
 3. 가운데 창에서 선택 합니다 **Windows Forms 앱** 형식 프로젝션 합니다.
 
@@ -54,7 +51,7 @@ ADO.NET에는 XML 데이터로 작업 하기 위한 간단한 방법을 제공 �
 
 이 연습에서는 데이터 집합에 XML 데이터 읽기에 집중, 하므로 XML 파일의 내용은 제공 됩니다.
 
-1. 에 **프로젝트** 메뉴에서 **새 항목 추가**합니다.
+1. 프로젝트 **메뉴에서 새 항목 추가**를 선택합니다.
 
 2. 선택 **XML 파일**, 파일 이름을 **authors.xml**를 선택한 후 **추가**합니다.
 
@@ -155,7 +152,7 @@ ADO.NET에는 XML 데이터로 작업 하기 위한 간단한 방법을 제공 �
     |Control|속성|설정|
     |-------------|--------------|-------------|
     |`TextBox1`|**Multiline**|`true`|
-    ||**스크롤 막대**|**세로**|
+    ||ScrollBars|**세로**|
     |`Button1`|**이름**|`ReadXmlButton`|
     ||**텍스트**|`Read XML`|
     |`Button2`|**이름**|`ShowSchemaButton`|
@@ -202,7 +199,7 @@ ADO.NET에는 XML 데이터로 작업 하기 위한 간단한 방법을 제공 �
 
      합니다 **코드 편집기** 열립니다는 `ShowSchemaButton_Click` 이벤트 처리기입니다.
 
-3.  다음 코드를 붙여를 `ShowSchemaButton_Click` 이벤트 처리기입니다.
+3.  `ShowSchemaButton_Click` 이벤트 처리기에 다음 코드를 붙여넣습니다.
 
      [!code-csharp[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/CSharp/read-xml-data-into-a-dataset_2.cs)]
      [!code-vb[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/VisualBasic/read-xml-data-into-a-dataset_2.vb)]
@@ -229,7 +226,7 @@ ADO.NET에는 XML 데이터로 작업 하기 위한 간단한 방법을 제공 �
 
 -   데이터 집합에서 데이터를 편집 하 고 데이터베이스에 작성 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio에서 데이터 액세스](../data-tools/accessing-data-in-visual-studio.md)
 - [Visual Studio의 XML 도구](../xml-tools/xml-tools-in-visual-studio.md)
