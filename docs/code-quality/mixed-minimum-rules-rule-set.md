@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 59ece2ea879b8c79ebe002265d5d1eb6fd8ec82e
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: ff0446e81257cfc782fd1c7d34cde2b274ddde5e
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945990"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388938"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>혼합 최소 규칙 규칙 집합
 Microsoft 혼합 최소 규칙은 잠재적 보안 허점 및 응용 프로그램 작동 중단을 포함 하 여 공용 언어 런타임을 지 원하는 c + + 프로젝트에서 가장 중요 한 문제에 집중 합니다. 공용 언어 런타임을 지 원하는 c + + 프로젝트에 대해 만든 모든 사용자 지정 규칙 집합에 설정 합니다.이 규칙을 포함 해야 합니다.
@@ -37,7 +37,7 @@ Microsoft 혼합 최소 규칙은 잠재적 보안 허점 및 응용 프로그�
 |[C6270](../code-quality/c6270.md)|Format 함수에 부동 인수 없음|
 |[C6271](../code-quality/c6271.md)|Format 함수의 추가 인수|
 |[C6272](../code-quality/c6272.md)|Format 함수의 비부동 인수|
-|[C6273](../code-quality/c6273.md)|Format 함수의 비정수 인수|
+|[C6273](../code-quality/c6273.md)|Format 함수에 정수가 아닌 인수|
 |[C6274](../code-quality/c6274.md)|Format 함수의 비문자 인수|
 |[C6276](../code-quality/c6276.md)|잘못된 문자열 캐스팅|
 |[C6277](../code-quality/c6277.md)|잘못된 CreateProcess 호출|
@@ -96,7 +96,7 @@ Microsoft 혼합 최소 규칙은 잠재적 보안 허점 및 응용 프로그�
 |[C28215](../code-quality/c28215.md)|typefix는 이미 typefix가 있는 매개 변수에 적용할 수 없습니다.|
 |[C28216](../code-quality/c28216.md)|checkReturn 주석은 특정 함수 매개 변수에 대한 사전 조건에만 적용됩니다.|
 |[C28217](../code-quality/c28217.md)|함수의 경우 주석에 대한 매개 변수 개수가 파일에 있는 개수와 일치하지 않습니다.|
-|[C28218](../code-quality/c28218.md)|함수 매개 변수의 경우 주석의 매개 변수가 파일에 있는 매개 변수와 일치하지 않습니다.|
+|[C28218](../code-quality/c28218.md)|함수 매개 변수의 경우 주석의 매개 변수 일치 하지 않는 파일|
 |[C28219](../code-quality/c28219.md)|주석에 있는 매개 변수 주석에 열거의 멤버가 필요합니다.|
 |[C28220](../code-quality/c28220.md)|주석에 있는 매개 변수에 정수 식이 필요합니다.|
 |[C28221](../code-quality/c28221.md)|주석에 있는 매개 변수에 문자열 식이 필요합니다.|
