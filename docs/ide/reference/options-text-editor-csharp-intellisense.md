@@ -18,19 +18,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3ab871d07a8519fa6850ad3d1743a7cd1d0fa110
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 041b3c5d0a67d590bc409c21dd53d5d162b0a0b9
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672487"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389259"
 ---
 # <a name="options-text-editor-c-intellisense"></a>옵션, 텍스트 편집기, C#, IntelliSense
 
 **IntelliSense** 옵션 페이지를 사용하여 C#용 IntelliSense의 동작에 영향을 주는 설정을 수정합니다. 이 옵션 페이지에 액세스하려면 **도구** > **옵션**을 선택한 다음, **텍스트 편집기** > **C#** > **IntelliSense**를 선택합니다.
-
-> [!NOTE]
-> 표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio IDE 개인 설정](../../ide/personalizing-the-visual-studio-ide.md)을 참조하세요.
 
 **IntelliSense** 옵션 페이지에는 다음과 같은 옵션이 포함되어 있습니다.
 
@@ -86,7 +83,7 @@ ms.locfileid: "50672487"
 
 ## <a name="show-name-suggestions"></a>이름 제안 표시
 
-   최근에 선택한 멤버에 대해 자동 개체 이름 완성을 수행합니다. 
+최근에 선택한 멤버에 대해 자동 개체 이름 완성을 수행합니다.
 
 ## <a name="see-also"></a>참고 항목
 

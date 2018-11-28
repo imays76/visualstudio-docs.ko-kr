@@ -13,21 +13,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9cf1cde04a45df47627b8b8bf9a0fad7b9bef0c4
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: c4ffef0b1b76f453048ff20e3cbada0b8a591c65
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673271"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388834"
 ---
 # <a name="options-text-editor-cc-view"></a>옵션, 텍스트 편집기, C/C++, 보기
 
 이러한 속성 페이지를 사용하여 C 또는 C++로 프로그래밍할 때 코드 편집기의 기본 동작을 변경할 수 있습니다.
 
 이 속성 페이지에 액세스하려면 **도구** > **옵션**을 선택하고, **텍스트 편집기** 및 **C/C++** 를 확장한 다음, **보기**를 선택합니다.
-
-> [!NOTE]
-> 일부 Visual Studio 사용자 인터페이스 요소의 경우 다음 지침에 설명된 것과 다른 이름 또는 위치가 시스템에 표시될 수 있습니다. 이러한 요소는 사용하는 Visual Studio 버전 및 설정에 따라 결정됩니다. [Visual Studio IDE 개인 설정](../../ide/personalizing-the-visual-studio-ide.md)을 참조하세요.
 
 ## <a name="code-squiggles"></a>코드 오류 표시선
 
@@ -49,7 +46,7 @@ ms.locfileid: "50673271"
 
 - **주석 작업 열거** - VS 토큰의 오픈 소스 파일을 검색하고 작업 목록 창에서 보고합니다.
 
-- **일치 토큰 강조 표시** - 커서의 위치와 일치하는 묶여 있는 중괄호 또는 구문을 강조 표시합니다. 
+- **일치 토큰 강조 표시** - 커서의 위치와 일치하는 묶여 있는 중괄호 또는 구문을 강조 표시합니다.
 
 ## <a name="outlining"></a>개요
 

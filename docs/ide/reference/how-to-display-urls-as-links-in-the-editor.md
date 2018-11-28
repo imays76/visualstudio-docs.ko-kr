@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f3009a3730a858707490d1f043d039b9f82ecb1
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 4d0ebbac34795255a48e1ec1c8ff72db829b30c3
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177713"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388532"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>방법: 편집기에서 URL을 링크로 표시
 
@@ -31,12 +31,7 @@ ms.locfileid: "39177713"
 
 -   링크를 **Ctrl**+**클릭**(Ctrl 키를 누른 채 클릭)할 때 표시되는 웹 사이트를 열어 보세요. 기본적으로 웹 사이트는 내부 웹 브라우저에 표시됩니다.
 
-> [!NOTE]
-> 표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio IDE 개인 설정](../../ide/personalizing-the-visual-studio-ide.md)을 참조하세요.
-
-## <a name="procedure"></a>프로시저
-
-### <a name="to-display-urls-as-links"></a>URL을 링크로 표시하려면
+## <a name="display-urls-as-links"></a>URL을 링크로 표시
 
 1.  **도구** 메뉴에서 **옵션**을 클릭합니다.
 
