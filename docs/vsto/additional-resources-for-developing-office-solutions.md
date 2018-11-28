@@ -10,17 +10,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Office development in Visual Studio, additional resources
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ae89d13a5fe61d6d7a47cb037104c50f4c696298
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 8e46a9bfcecdff222182e1c5a0145eca3ba44c92
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845342"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305068"
 ---
 # <a name="additional-resources-to-develop-office-solutions"></a>Office 솔루션을 개발 하는 추가 리소스
   Visual Studio의 Microsoft Office 개발자 도구는 Office 응용 프로그램을 확장하는 많은 방법 중 하나일 뿐입니다. Office 응용 프로그램에는 또한 Open XML 형식과 같이 Visual Studio의 Office 개발자 도구 또는 이 설명서에서 다루지 않는 몇 가지 기본 제공 기능도 있습니다.  

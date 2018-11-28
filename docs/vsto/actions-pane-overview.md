@@ -13,17 +13,17 @@ helpviewer_keywords:
 - actions panes [Office development in Visual Studio]
 - smart documents [Office development in Visual Studio]
 - user controls [Office development in Visual Studio], actions panes
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e62f13d0c947ef8f1a9cfdd014f5c03b194ea71d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e8c7136c1f97f531600799f3aede30170813cf0a
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908355"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305678"
 ---
 # <a name="actions-pane-overview"></a>작업 창 개요
   작업창은 사용자 지정 가능한 **문서 동작** 특정 Microsoft Office Word 문서 또는 Microsoft Office Excel 통합 문서에 연결 된 작업창 합니다. 작업창과 같은 다른 기본 제공 작업창과 함께 Office 작업창 내에서 호스트 되는 **XML 원본은** Excel에서 작업 창 또는 **스타일 및 서식** word에서 작업창입니다. Windows Forms 컨트롤 또는 WPF 컨트롤을 사용하여 작업 창 사용자 인터페이스를 디자인할 수 있습니다.
