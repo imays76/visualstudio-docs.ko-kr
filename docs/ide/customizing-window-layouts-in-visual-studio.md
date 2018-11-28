@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 창 레이아웃 사용자 지정
+title: 창 레이아웃 사용자 지정
 ms.date: 01/23/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62fa251eac1546b0d5588dfc4dc43bead725bf81
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 849f94d178453d3b90140f59dc9ed5a84cd98466
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746847"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389645"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Visual Studio에서 창 레이아웃 사용자 지정
 
@@ -81,9 +81,6 @@ IDE에는 두 가지 기본적인 창 유형인 *도구 창* 과 *문서 창*이
 -   기본 레이아웃 또는 저장된 사용자 지정 레이아웃으로 창 배치를 다시 설정합니다.
 
 도구 및 문서 창은 끌거나, **창** 메뉴에서 명령을 사용하거나, 정렬할 창의 제목 표시줄을 마우스 오른쪽 단추로 클릭하여 정렬할 수 있습니다.
-
-> [!NOTE]
-> 일부 Visual Studio 사용자 인터페이스 요소의 경우 다음 지침에 설명된 것과 다른 이름 또는 위치가 시스템에 표시될 수 있습니다. 이러한 요소는 사용하는 Visual Studio 버전 및 설정에 따라 결정됩니다. 자세한 내용은 [Visual Studio IDE 개인 설정](../ide/personalizing-the-visual-studio-ide.md)을 참조하세요.
 
 ### <a name="dock-windows"></a>창 도킹
 

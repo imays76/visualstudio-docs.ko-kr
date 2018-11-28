@@ -30,22 +30,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 4174191f9927679eb698e2e918a7bfa50f915a3e
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 30986c0f18a2cc272cb917be9ce24b2a335c0b4b
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673250"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388636"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>옵션, 텍스트 편집기, XAML, 기타
+
 **기타** 속성 페이지를 사용하여 XAML 문서에서 요소와 특성의 서식 지정 방법을 지정할 수 있습니다. **옵션** 대화 상자를 열려면 **도구** 메뉴를 클릭한 후 **옵션**을 클릭합니다. **기타** 속성 페이지에 액세스하려면 **텍스트 편집기** > **XAML** > **기타** 노드를 확장합니다.
 
-> [!NOTE]
-> 표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio IDE 개인 설정](../../ide/personalizing-the-visual-studio-ide.md)을 참조하세요.
-
-
 ## <a name="auto-insert"></a>자동 삽입
- 이 설정을 사용하여 태그 및 따옴표가 자동으로 생성되는 경우를 제어합니다.
+
+이 설정을 사용하여 태그 및 따옴표가 자동으로 생성되는 경우를 제어합니다.
 
 |||
 |-|-|
@@ -55,7 +53,8 @@ ms.locfileid: "50673250"
 |**MarkupExtension 매개 변수를 구분하는 쉼표**|태그 확장에 둘 이상의 매개 변수를 입력할 때 쉼표를 생성할지 지정합니다.|
 
 ## <a name="errors-and-warnings"></a>오류 및 경고
- 이 설정을 사용하여 오류 및 경고가 자동으로 생성되는 경우를 제어합니다. 자세한 내용은 [XAML 오류 및 경고](../../designers/xaml-errors-warnings.md)를 참조하세요.
+
+이 설정을 사용하여 오류 및 경고가 자동으로 생성되는 경우를 제어합니다. 자세한 내용은 [XAML 오류 및 경고](../../designers/xaml-errors-warnings.md)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
