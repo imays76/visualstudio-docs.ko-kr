@@ -11,19 +11,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 16d0ed610843826f0eac77fc2ce95bcfca3df6e2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 52691c0b49c74bd39fa97ec8d297ffb823ba705c
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31952289"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388363"
 ---
 # <a name="xaml-designer-options-page"></a>XAML 디자이너 옵션 페이지
 
 **XAML 디자이너** 옵션 페이지를 사용하여 XAML 문서에서 요소와 특성의 서식을 설정하는 방법을 지정합니다. 이 페이지를 열려면 **도구** 메뉴를 선택한 다음 **옵션**을 선택합니다. **XAML 디자이너** 속성 페이지에 액세스하려면 **XAML 디자이너** 노드를 선택합니다. XAML 디자이너에 대한 설정은 문서를 열 때 적용됩니다. 따라서 설정을 변경하는 경우 변경 내용을 보려면 Visual Studio를 닫았다가 다시 열어야 합니다.
 
 > [!NOTE]
-> 표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio IDE 개인 설정](../../ide/personalizing-the-visual-studio-ide.md)을 참조하세요.
+> 표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [재설정 설정](../environment-settings.md#reset-settings)을 참조하세요.
 
 ## <a name="enable-xaml-designer"></a>XAML 디자이너 사용
 

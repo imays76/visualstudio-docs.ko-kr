@@ -24,32 +24,34 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b7f492c1a192f8c12418c679f498bf282859cbf3
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 56bd77bb833e0fcc7e4e6e35304387d23b7c3f52
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671887"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389447"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>옵션 대화 상자, 환경, 웹 브라우저
+
 내부 웹 브라우저 및 Internet Explorer에 대한 옵션을 설정합니다. 이 대화 상자에 액세스하려면 **도구** 메뉴에서 **옵션**을 클릭하고, **환경** 폴더를 확장하고, **웹 브라우저**를 선택합니다.
 
 > [!NOTE]
-> 표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 도구 메뉴에서 설정 가져오기 및 내보내기를 선택합니다. 자세한 내용은 [Visual Studio IDE 개인 설정](../../ide/personalizing-the-visual-studio-ide.md)을 참조하세요.
-
+> 표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [재설정 설정](../environment-settings.md#reset-settings)을 참조하세요.
 
 > [!IMPORTANT]
 > 웹에서 특정 파일이나 구성 요소를 열면 코드가 컴퓨터에서 실행될 수 있습니다.
 
-
 ## <a name="home-page"></a>홈 페이지
- IDE 웹 브라우저를 열 때 표시되는 페이지를 설정합니다.
+
+IDE 웹 브라우저를 열 때 표시되는 페이지를 설정합니다.
 
 ## <a name="search-page"></a>검색 페이지
- 내부 웹 브라우저에 대한 검색 페이지를 지정할 수 있습니다. 이 위치는 IDE(통합 개발 환경) 외부에서 시작된 Internet Explorer 인스턴스에서 사용하는 검색 페이지와 다를 수 있습니다.
+
+내부 웹 브라우저에 대한 검색 페이지를 지정할 수 있습니다. 이 위치는 IDE(통합 개발 환경) 외부에서 시작된 Internet Explorer 인스턴스에서 사용하는 검색 페이지와 다를 수 있습니다.
 
 ## <a name="view-source-in"></a>다음에서 소스 보기
- 내부 웹 브라우저를 통해 페이지에서 **소스 보기**를 선택할 때 웹 페이지를 여는 데 사용되는 편집기를 설정합니다.
+
+내부 웹 브라우저를 통해 페이지에서 **소스 보기**를 선택할 때 웹 페이지를 여는 데 사용되는 편집기를 설정합니다.
 
 -   **소스 편집기** [편집기](../../ide/writing-code-in-the-code-and-text-editor.md)에서 소스를 보려면 선택합니다.
 
@@ -58,11 +60,11 @@ ms.locfileid: "50671887"
 -   **외부 편집기** 다른 편집기에서 소스를 보려면 선택합니다. Notepad.exe 등 선택한 편집기의 경로를 지정합니다.
 
 ## <a name="internet-explorer-options"></a>Internet Explorer 옵션
+
 **인터넷 속성** 대화 상자에서 Internet Explorer에 대한 옵션을 변경하려면 클릭합니다. 이 대화 상자에서 변경한 내용은 내부 웹 브라우저 및 Visual Studio IDE 외부에서(예: [시작] 메뉴에서) 시작된 Internet Explorer 인스턴스에 둘 다 영향을 미칩니다.
 
 > [!NOTE]
 > **브라우저 선택** 대화 상자를 사용하여 Visual Studio 내부 웹 브라우저를 선택한 브라우저로 바꿉니다. 프로젝트의 HTML 파일 등을 마우스 오른쪽 단추로 클릭하거나 상황에 맞는 메뉴에서 브라우저 선택 대화 상자에 액세스할 수 있습니다.
-
 
 ## <a name="see-also"></a>참고 항목
 

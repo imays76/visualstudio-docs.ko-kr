@@ -1,16 +1,13 @@
 ---
-title: '방법: Visual Basic 개발자 설정을 적용하여 빌드 구성 관리'
-ms.date: 11/04/2016
+title: Visual Basic 개발자 설정으로 빌드 구성 관리
+ms.date: 11/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
-- Visual Studio, building with Visual Basic settings
-- MSBuild, debug build
 - advanced build configurations
-- building with Visual Basic developer settings
+- building with Visual Basic developer settings (Visual Studio)
 - debug builds
-- MSBuild, release build
 - release builds
 ms.assetid: eaea6e0b-6c61-4869-8d63-d372c745a23c
 author: gewarren
@@ -18,20 +15,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 987419e62d54b44a21a70f625e2a240bd7aecc21
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 90e00c544db2064f55d78de5dad00cc27105451e
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946262"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388688"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>방법: Visual Basic 개발자 설정을 적용하여 빌드 구성 관리
 
-Visual Basic 개발자 설정이 적용되면 기본적으로 모든 고급 빌드 구성 옵션이 숨겨집니다. 이 항목에서는 이러한 설정을 수동으로 사용하도록 설정하는 방법을 설명합니다.
+기본적으로 Visual Basic 개발자 설정이 적용되면 모든 고급 빌드 구성 옵션이 숨겨집니다. 이 문서에서는 이러한 빌드 설정을 수동으로 사용하도록 설정하는 방법을 설명합니다.
 
 ## <a name="enable-advanced-build-configurations"></a>고급 빌드 구성 활성화
 
-기본적으로 Visual Basic 개발자 설정은 [프로젝트 디자이너](..//ide/reference/application-page-project-designer-visual-basic.md)의 **구성** 및 **플랫폼** 목록과 **구성 관리자** 대화 상자를 여는 옵션을 숨깁니다.
+기본적으로 Visual Basic 개발자 설정은 [프로젝트 디자이너](../ide/reference/application-page-project-designer-visual-basic.md)의 **구성** 및 **플랫폼** 목록과 **구성 관리자** 대화 상자를 여는 옵션을 숨깁니다.
 
 1.  **도구** 메뉴에서 **옵션**을 클릭합니다.
 
@@ -44,9 +41,10 @@ Visual Basic 개발자 설정이 적용되면 기본적으로 모든 고급 빌�
 
 4.  **확인**을 클릭합니다.
 
-     **빌드** 메뉴에서 현재 **구성 관리자**를 사용할 수 있고 **구성** 및 **플랫폼** 목록이 **프로젝트 디자이너**에 표시됩니다.
+     이제 **빌드** 메뉴에서 **구성 관리자**를 사용할 수 있고 **구성** 및 **플랫폼** 목록이 **프로젝트 디자이너**에 표시됩니다.
 
 ## <a name="see-also"></a>참고 항목
 
 - [빌드 구성 이해](../ide/understanding-build-configurations.md)
 - [컴파일 및 빌드](../ide/compiling-and-building-in-visual-studio.md)
+- [환경 설정](../ide/environment-settings.md)

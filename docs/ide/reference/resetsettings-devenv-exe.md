@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 568a829ff10cbee535729361b7c95dd7db6814f5
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: c8f826db0c619e1dfb5811aaf9d0c5ef40093c97
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948071"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388671"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings(devenv.exe)
 
@@ -28,7 +28,7 @@ Visual Studio 기본 설정을 복원하고 자동으로 Visual Studio IDE를 �
 기본 설정은 Visual Studio가 처음 시작될 때 선택된 프로필에 따라 결정됩니다.
 
 > [!TIP]
-> IDE(통합된 개발 환경)를 사용하여 설정을 다시 설정하는 방법을 알아보려면 [설정 다시 설정](../synchronized-settings-in-visual-studio.md#reset-settings)을 참조하세요.
+> IDE(통합된 개발 환경)를 사용하여 설정을 다시 설정하는 방법을 알아보려면 [설정 다시 설정](../environment-settings.md#reset-settings)을 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -58,6 +58,6 @@ Devenv.exe /ResetSettings "C:\My Files\MySettings.vssettings"
 
 ## <a name="see-also"></a>참고 항목
 
-- [설정 다시 설정](../synchronized-settings-in-visual-studio.md#reset-settings)
+- [환경 설정](../environment-settings.md)
 - [Visual Studio IDE 개인 설정](../../ide/personalizing-the-visual-studio-ide.md)
 - [Devenv 명령줄 스위치](../../ide/reference/devenv-command-line-switches.md)

@@ -9,12 +9,12 @@ description: 선택한 Visual Studio 구독에 포함된 Pluralsight 교육 구�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a384769b5d2f643a215a1a0c136fc44fd7d45e42
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: c39b7e052f3e978530dbc093767fabde4172d8e2
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826743"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389113"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Pluralsight 교육 혜택
 
@@ -26,7 +26,7 @@ ms.locfileid: "51826743"
 
 
 ## <a name="activation-steps"></a>활성화 단계
-1. 구독을 활성화하려면 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)에 연결하고 전문적인 개발 섹션에 있는 Pluralsight 혜택 타일에서 **코드 얻기** 링크를 클릭합니다.
+1. 구독을 활성화하려면 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)에 연결하고 전문적인 개발 섹션에 있는 Pluralsight 혜택 타일에서 **코드 가져오기** 링크를 클릭합니다.
    > [!div class="mx-imgBorder"]
    > ![Pluralsight 혜택 타일](_img/vs-pluralsight/vs-pluralsight-3month-tile.png)
    > 
@@ -39,11 +39,7 @@ ms.locfileid: "51826743"
    > [!div class="mx-imgBorder"]
    > ![Pluralsight 혜택 활성화](_img/vs-pluralsight/vs-pluralsight-activate.png)
 
-3. Visual Studio 구독에 포함된 혜택의 Pluralsight 페이지로 리디렉션됩니다.  이 예에서는 Visual Studio Dev Essentials 멤버 자격으로 제공된 혜택을 활성화합니다. **Activate your benefit**(혜택 활성화)을 클릭합니다.
-   > [!div class="mx-imgBorder"]
-   > ![Pluralsight VSDE 방문 페이지](_img/vs-pluralsight/vs-pluralsight-vsde-landing.png)
-
-4. 활성화 페이지에서
+3. Visual Studio 구독에 포함된 혜택의 Pluralsight 페이지로 리디렉션됩니다.  
    - 양식에 요청받은 연락처 정보를 제공합니다.
    - 확인란을 클릭하여 사용 약관 및 개인정보처리방침에 동의합니다.
    - **혜택 활성화에 동의함**을 클릭합니다.
@@ -85,7 +81,7 @@ ms.locfileid: "51826743"
 
 <sup>1</sup> 포함: NFR(전매금지), VSIP(Visual Studio Industry Partner), BizSpark, MCT Software & Services Developer, MCT Software & Services, MVP(Microsoft Valued Professional), RD(Region Director), MPN(Microsoft 파트너 네트워크), FTE, Imagine.
 
-<sup>2</sup> *Pluralsight 혜택은 개인에 한해 일회용이라는 점입니다.  구독자가 이 혜택을 사용하면 다시 설정되지 않습니다. 
+<sup>2</sup>  *Pluralsight 혜택은 개인에 한해 일회용이라는 점입니다.  구독자가 이 혜택을 사용하면 다시 설정되지 않습니다.*
 
 어떤 구독을 사용하고 있는지 확실하지 않나요?  자신의 이메일 주소에 할당된 모든 구독을 보려면 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)에 연결합니다. 일부 구독이 표시되지 않으면 하나 이상이 다른 전자 메일 주소에 할당되어 있을 수 있습니다.  해당 구독을 보려면 해당 전자 메일 주소로 로그인해야 합니다.
 

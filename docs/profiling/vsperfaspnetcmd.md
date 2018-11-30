@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d6afa4cfdf3891089461eec97e1af764329362e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a9b175cb5dd0c555aeaaafb30b7927c3fc81bff4
+ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669081"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52281760"
 ---
 # <a name="vsperfaspnetcmd"></a>VSPerfASPNetCmd
 **VSPerfASPNetCmd.exe** 명령줄 도구를 사용하면 환경 변수를 설정하거나 컴퓨터를 다시 시작하지 않아도 ASP.Net 웹 사이트를 프로파일링할 수 있습니다. ASP.NET 웹 사이트를 프로파일링하며 **VSPerfCmd**에서 제공하는 추가 기능이 필요하지 않으면 [VSPerfCmd](../profiling/vsperfcmd.md) 대신 **VSPerfASPNetCmd.exe**를 사용합니다. **VSPerfASPNetCmd**에 대한 자세한 내용은 [VSPerfASPNETCmd를 사용한 빠른 웹 사이트 프로파일링](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)을 참조하세요. **VSPerfASPNetCmd**는 ASP.NET 웹 사이트를 프로파일링하기 위해 독립 실행형 프로파일러를 사용할 때 사용할 수 있는 기본 명령줄 도구입니다.  
