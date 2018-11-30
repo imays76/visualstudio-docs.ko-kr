@@ -9,19 +9,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d2e42c31d7cbdb52e602eee4e424eb78ee89d77
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: d8f52061acff03a1339a9c7b7f3f8ff4901ec6a5
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348698"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388727"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Visual Studio IDE 개인 설정
 
-사용자 고유의 개발 스타일 및 요구 사항을 가장 효과적으로 지원하기 위해 다양한 방식으로 Visual Studio를 개인 설정할 수 있습니다. 많은 설정이 Visual Studio 인스턴스에서 사용자와 함께 로밍됩니다.&mdash; [동기화 설정](../ide/synchronized-settings-in-visual-studio.md)을 참조하세요. 이 항목에서는 다양한 개인 설정과 추가 정보를 확인할 수 있는 위치를 간략하게 설명합니다.
+사용자 고유의 개발 스타일 및 요구 사항을 가장 효과적으로 지원하기 위해 다양한 방식으로 Visual Studio를 개인 설정할 수 있습니다. 많은 설정이 Visual Studio 인스턴스에서 사용자와 함께 로밍됩니다.&mdash; [동기화 설정](../ide/synchronized-settings-in-visual-studio.md)을 참조하세요. 이 문서에서는 다양한 개인 설정과 추가 정보를 확인할 수 있는 위치를 간략하게 설명합니다.
 
 > [!NOTE]
 > 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio IDE 사용자 지정](/visualstudio/mac/customizing-the-ide)을 참조하세요.
+
+## <a name="default-settings"></a>기본 설정
+
+개발 유형에 맞게 Visual Studio를 최적화하는 기본 설정 컬렉션을 선택할 수 있습니다. 자세한 내용은 [환경 설정](environment-settings.md)을 참조하세요.
 
 ## <a name="general-environment-options"></a>일반 환경 옵션
 
@@ -62,6 +66,7 @@ ms.locfileid: "51348698"
 
 ## <a name="see-also"></a>참고 항목
 
+- [환경 설정](environment-settings.md)
 - [Visual Studio IDE 개요](../ide/visual-studio-ide.md)
 - [빠른 시작: 먼저 Visual Studio IDE 살펴보기](../ide/quickstart-ide-orientation.md)
 - [Mac용 Visual Studio IDE 사용자 지정](/visualstudio/mac/customizing-the-ide)
