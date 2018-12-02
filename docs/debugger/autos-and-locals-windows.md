@@ -1,7 +1,7 @@
 ---
-title: 자동 및 지역 창에서 변수 검사 | Microsoft 문서
+title: 자동 및 지역 창에서 변수 검사 | Microsoft Docs
 ms.custom: H1Hack27Feb2017
-ms.date: 04/17/2018
+ms.date: 10/18/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b196d993e7091fd9d4b09fe3c228346e7421911e
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: 37843e6f84bf16efee4d149ed08a7ecb525d7574
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257214"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388519"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>자동 및 지역 창에서 변수 검사
 
@@ -33,7 +33,7 @@ ms.locfileid: "52257214"
 
 열려는 합니다 **지역** 창에서 디버그 하는 동안 **디버그** > **Windows** > **지역**를 누르거나 **Alt**+**4**합니다.
 
-기본 디버깅에 대 한 자세한 내용은 참조 하세요 [디버거를 사용 하 여 시작](../debugger/getting-started-with-the-debugger.md)합니다.
+기본 디버깅에 대한 자세한 내용은 [디버거 시작](../debugger/getting-started-with-the-debugger.md)을 참조하세요.
 
 > [!NOTE]
 > 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac 용 Visual Studio에 대 한 참조 [Mac 용 Visual Studio에서 데이터 시각화](/visualstudio/mac/data-visualizations)합니다.
@@ -54,7 +54,7 @@ ms.locfileid: "52257214"
 
 값에 대해 식을 입력할 수 있습니다(예: `a + b`). 디버거는 유효한 언어 식을 대부분 받아들입니다.
 
-네이티브 C++ 코드에서 변수 이름의 컨텍스트를 한정해야 할 수 있습니다. 자세한 내용은 [컨텍스트 연산자 (c + +)](../debugger/context-operator-cpp.md)합니다.
+네이티브 C++ 코드에서 변수 이름의 컨텍스트를 한정해야 할 수 있습니다. 자세한 내용은 [컨텍스트 연산자(C++)](../debugger/context-operator-cpp.md)를 참조하세요.
 
 >[!CAUTION]
 >값 및 식 변경 하기 전에 결과 이해 해야 합니다. 가능한 몇 가지 문제는:
@@ -77,7 +77,7 @@ ms.locfileid: "52257214"
 
  다른 코드 언어에 다른 변수를 표시 합니다 **자동** 창입니다.
 
- - C# 및 Visual Basic의 **자동** 창에는 현재 줄 이나 이전 줄에 사용 된 모든 변수가 표시 됩니다. 예를 들어, C# 또는 Visual Basic 코드를 다음 4 개의 변수를 선언 합니다.
+ - C# 및 Visual Basic에서 **자동** 창에는 현재 또는 이전 줄에 사용된 모든 변수가 표시됩니다. 예를 들어, C# 또는 Visual Basic 코드를 다음 4 개의 변수를 선언 합니다.
 
    ```csharp
        public static void Main()
@@ -151,7 +151,7 @@ private static int subtractVars(int i, int j)
    
   ![값을 반환 하는 자동 C# ](../debugger/media/autosreturnvaluecsharp2.png "자동 값 반환C#")  
   
-## <a name="see-also"></a>참고자료  
- [새로운를 디버그 하시 나요?](../debugger/what-is-debugging.md)  
+## <a name="see-also"></a>참고 항목  
+ [디버깅이란?](../debugger/what-is-debugging.md)  
  [보다 효과적으로 작성할 C# Visual Studio를 사용 하는 코드](../debugger/write-better-code-with-visual-studio.md)  
  [디버깅 소개](../debugger/debugger-feature-tour.md) [디버거 창](../debugger/debugger-windows.md)

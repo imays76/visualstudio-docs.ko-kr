@@ -16,12 +16,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e140f2e1066f6e2025491517106d27f6955d871b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 1df08b7b6a44df14ab50a06194f677be5006cce3
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863791"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389100"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Visual Studio 정적 코드 분석을 사용하여 스토어 앱의 C++ 코드 품질 분석
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -114,7 +114,7 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
 |                       [C6270](../code-quality/c6270.md)                        |                                   Format 함수에 부동 인수 없음                                   |
 |                       [C6271](../code-quality/c6271.md)                        |                                       Format 함수의 추가 인수                                       |
 |                       [C6272](../code-quality/c6272.md)                        |                                     Format 함수의 비부동 인수                                     |
-|                       [C6273](../code-quality/c6273.md)                        |                                    Format 함수의 비정수 인수                                     |
+|                       [C6273](../code-quality/c6273.md)                        |                                    Format 함수에 비정수 인수                                     |
 |                       [C6274](../code-quality/c6274.md)                        |                                   Format 함수의 비문자 인수                                   |
 |                       [C6276](../code-quality/c6276.md)                        |                                              잘못된 문자열 캐스팅                                              |
 |                       [C6277](../code-quality/c6277.md)                        |                                          잘못된 CreateProcess 호출                                           |
@@ -167,18 +167,18 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
 |                      [C28182](../code-quality/c28182.md)                       |         NULL 포인터를 역참조하고 있습니다. 포인터에 다른 포인터와 동일한 NULL 값이 포함되어 있습니다.          |
 |                      [C28202](../code-quality/c28202.md)                       |                                    비정적 멤버에 대한 잘못된 참조입니다.                                     |
 |                      [C28203](../code-quality/c28203.md)                       |                                     클래스 멤버에 대한 모호한 참조입니다.                                      |
-|                      [C28205](../code-quality/c28205.md)                       |                           \_성공\_ 나 \_On_failure\_ 불법적인 컨텍스트에 사용                            |
+|                      [C28205](../code-quality/c28205.md)                       |                           \_Success\_ 또는 \_On_failure\_가 잘못된 컨텍스트에서 사용되었습니다.                            |
 |                      [C28206](../code-quality/c28206.md)                       |                                   왼쪽 피연산자가 구조체를 가리킵니다. '->'를 사용하세요.                                   |
 |                      [C28207](../code-quality/c28207.md)                       |                                       왼쪽 피연산자가 구조체입니다. '.'를 사용하세요.                                       |
 |                      [C28210](../code-quality/c28210.md)                       |                 __on_failure 컨텍스트에 대한 주석이 명시적 사전 컨텍스트에 없어야 합니다.                  |
 |                      [C28211](../code-quality/c28211.md)                       |                                 SAL_context에 대해 정적 컨텍스트 이름이 필요합니다.                                  |
 |                      [C28212](../code-quality/c28212.md)                       |                                  주석에 대한 포인터 식이 있어야 합니다.                                   |
-|                      [C28213](../code-quality/c28213.md)                       | 합니다 \_Use_decl_annotations\_ 이전 선언을 수정 하지 않고 참조 하려면 주석을 사용 해야 합니다. |
+|                      [C28213](../code-quality/c28213.md)                       | 이전 선언을 수정하지 않고 참조하려면 \_Use_decl_annotations\_ 주석을 사용해야 합니다. |
 |                      [C28214](../code-quality/c28214.md)                       |                                   특성 매개 변수 이름은 p1...p9여야 합니다.                                   |
 |                      [C28215](../code-quality/c28215.md)                       |                    typefix는 이미 typefix가 있는 매개 변수에 적용할 수 없습니다.                    |
 |                      [C28216](../code-quality/c28216.md)                       |        checkReturn 주석은 특정 함수 매개 변수에 대한 사전 조건에만 적용됩니다.         |
 |                      [C28217](../code-quality/c28217.md)                       |            함수의 경우 주석에 대한 매개 변수 개수가 파일에 있는 개수와 일치하지 않습니다.             |
-|                      [C28218](../code-quality/c28218.md)                       |             함수 매개 변수의 경우 주석의 매개 변수가 파일에 있는 매개 변수와 일치하지 않습니다.              |
+|                      [C28218](../code-quality/c28218.md)                       |             함수 매개 변수의 경우 주석의 매개 변수 일치 하지 않는 파일              |
 |                      [C28219](../code-quality/c28219.md)                       |                 주석에 있는 매개 변수 주석에 열거의 멤버가 필요합니다.                 |
 |                      [C28220](../code-quality/c28220.md)                       |                  주석에 있는 매개 변수에 정수 식이 필요합니다.                   |
 |                      [C28221](../code-quality/c28221.md)                       |                        주석에 있는 매개 변수에 문자열 식이 필요합니다.                         |
@@ -216,22 +216,22 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
 |                      [C28267](../code-quality/c28267.md)                       |                    함수 주석에서 주석 구문 오류가 발견되었습니다.                    |
 |                      [C28272](../code-quality/c28272.md)                       |      함수, 매개 변수에 대한 주석이 검사 시 함수 선언과 일치하지 않습니다.      |
 |                      [C28273](../code-quality/c28273.md)                       |                    함수의 경우 단서가 함수 선언과 일치하지 않습니다.                     |
-|                      [C28275](../code-quality/c28275.md)                       |                                   매개 변수의 \_Macro_value\_ isnull                                    |
+|                      [C28275](../code-quality/c28275.md)                       |                                   \_Macro_value\_에 대한 매개 변수가 null입니다.                                    |
 |                      [C28279](../code-quality/c28279.md)                       |                           기호의 경우 일치하는 'end'가 없는 'begin'이 있습니다.                            |
 |                      [C28280](../code-quality/c28280.md)                       |                           기호의 경우 일치하는 'begin'이 없는 'end'가 있습니다.                           |
 |                      [C28282](../code-quality/c28282.md)                       |                                    형식 문자열이 사전 조건에 있어야 합니다.                                    |
 |                      [C28285](../code-quality/c28285.md)                       |                                    함수의 경우 매개 변수에 구문 오류가 있습니다.                                    |
 |                      [C28286](../code-quality/c28286.md)                       |                                    함수의 경우 끝 부분 근처에 구문 오류가 있습니다.                                    |
-|                      [C28287](../code-quality/c28287.md)                       |                함수의 경우 주석에 구문 오류가에 \_에서\_() 주석에 (인식할 수 없는 매개 변수 이름)                |
-|                      [C28288](../code-quality/c28288.md)                       |                  함수의 경우 주석에 구문 오류가에 \_에서\_() 주석에 (잘못 된 매개 변수 이름)                   |
+|                      [C28287](../code-quality/c28287.md)                       |                함수의 경우 \_At\_() 주석에 구문 오류(인식할 수 없는 매개 변수 이름)                |
+|                      [C28288](../code-quality/c28288.md)                       |                  함수의 경우 \_At\_() 주석에 구문 오류(잘못된 매개 변수 이름)                   |
 |                      [C28289](../code-quality/c28289.md)                       |                함수의 경우 ReadableTo 또는 WritableTo에 limit-spec가 매개 변수로 포함되지 않았습니다.                |
 |                      [C28290](../code-quality/c28290.md)                       |           함수의 주석에 실제 매개 변수 개수보다 많은 외부 참조가 있습니다.            |
 |                      [C28291](../code-quality/c28291.md)                       |                        함수의 경우 역참조 수준 0에서 post null/notnull이 의미가 없습니다.                        |
 |                      [C28300](../code-quality/c28300.md)                       |                            연산자에 호환되지 않는 형식의 식 피연산자입니다.                             |
 |                      [C28301](../code-quality/c28301.md)                       |                               함수의 첫 번째 선언에 대한 주석이 없습니다.                               |
-|                      [C28302](../code-quality/c28302.md)                       |                             추가 \_Deref\_ 연산자에서 발견 되었습니다.                              |
-|                      [C28303](../code-quality/c28303.md)                       |                           모호한 \_Deref\_ 연산자에서 발견 되었습니다.                            |
-|                      [C28304](../code-quality/c28304.md)                       |                     부적절 하 게 배치 \_Notref\_ 토큰에 적용할 연산자를 찾을 수 있습니다.                      |
+|                      [C28302](../code-quality/c28302.md)                       |                             주석에 추가 \_Deref\_ 연산자가 있습니다.                              |
+|                      [C28303](../code-quality/c28303.md)                       |                           주석에 모호한 \_Deref\_ 연산자가 있습니다.                            |
+|                      [C28304](../code-quality/c28304.md)                       |                     토큰에 부적절하게 배치된 \_Notref\_ 연산자가 적용되었습니다.                      |
 |                      [C28305](../code-quality/c28305.md)                       |                                토큰을 구문 분석하는 동안 오류가 발생했습니다.                                 |
 |                      [C28350](../code-quality/c28350.md)                       |                  주석이 조건부로 적용할 수 없는 상황을 설명합니다.                   |
 |                      [C28351](../code-quality/c28351.md)                       |         주석이 동적 값(변수)을 조건에 사용할 수 없는 경우를 설명합니다.          |

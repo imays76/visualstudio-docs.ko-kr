@@ -2,7 +2,7 @@
 title: Visual Studio 도움말을 작성 하도록 C# 작은 버그를 사용 하 여 코드
 description: 작은 버그를 사용 하 여 더 나은 코드를 작성 하는 방법 이해
 ms.custom: debug-experiments
-ms.date: 10/30/2018
+ms.date: 11/20/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 914b4332a715c86aab7e1fad7d901231cbfd40c5
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
-ms.translationtype: MT
+ms.openlocfilehash: 2c16cfdc8d554ce9bf556ea707f977989e1dab72
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948961"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389379"
 ---
-# <a name="write-better-c-code-using-visual-studio"></a>보다 효과적으로 작성할 C# Visual Studio를 사용 하는 코드
+# <a name="fix-bugs-by-writing-better-c-code-using-visual-studio"></a>잘 작성 하 여 버그 수정 C# Visual Studio를 사용 하는 코드
 
 코드를 디버깅 걸리는-수 있으며 때로는 이유도 바로-작업. 효과적으로 디버깅 하는 방법을 알아보려면 시간이 걸립니다. Visual Studio와 같은 강력한 IDE를 훨씬 더 쉽게 작업을 수행할 수 있습니다. IDE는 코드를 보다 신속 하 게 디버깅할 수 뿐 아니라 하 고, 하지만 더 적은 버그를 사용 하 여 더 나은 코드를 작성할 수 있습니다 수 있습니다. 이 문서의 목적은 코드 분석기를 사용 하는 경우 이해 하 게 되므로, 디버거를 사용 하 고 다른 도구를 사용 하는 경우에 디버깅 프로세스의 전체적인 보기를 제공 하는 것입니다.
 
@@ -42,7 +42,7 @@ ms.locfileid: "51948961"
 앱을 만들려면 Visual Studio를 열고 선택 **파일 > 새 프로젝트**합니다. 아래 **Visual C#** , 선택 **Windows Desktop** 또는 **.NET Core**를 선택한 다음 가운데 창에서을 **콘솔 앱**. 같은 이름을 입력 **Console_Parse_JSON** 누릅니다 **확인**합니다. Visual Studio가 프로젝트를 만듭니다. 붙여넣기 합니다 [샘플 코드](#sample-code) 프로젝트의 *Program.cs* 파일입니다.
 
 > [!NOTE]
-> **콘솔 애플리케이션** 프로젝트 템플릿이 표시되지 않으면 **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual Studio 설치 관리자 열기** 링크를 클릭합니다. Visual Studio 설치 관리자가 시작됩니다. 선택 된 **.NET 데스크톱 개발** 또는 **.NET Core 플랫폼 간 개발** 워크 로드를 선택한 **수정**합니다.
+> **콘솔 애플리케이션** 프로젝트 템플릿이 표시되지 않으면 **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual Studio 설치 관리자 열기** 링크를 클릭합니다. Visual Studio 설치 관리자가 시작됩니다. .**NET 데스크톱 개발** 또는 **.NET Core 플랫폼 간 개발** 워크로드를 선택한 다음, **수정**을 선택합니다.
 
 ## <a name="find-the-red-and-green-squiggles"></a>빨간색 및 녹색 오류 표시선을 찾습니다.
 
@@ -81,7 +81,7 @@ ms.locfileid: "51948961"
 internal string points;
 ```
 
-다음과 같이 변경
+아래와 같이 변환합니다.
 
 ```csharp
 [DataMember]
@@ -113,7 +113,7 @@ item.totalpoints += users[i].points;
 
 빨간색 물결선 모든 고정 및-해결 하거나 최소 조사-때 녹색 물결선 모든 준비가 디버거를 시작 하 고 앱을 실행 합니다.
 
-키를 눌러 **F5** (**디버그 > 디버깅 시작**) 또는 **디버깅 시작** 단추 ![디버깅 시작](../debugger/media/dbg-tour-start-debugging.png "디버깅 시작 ") 디버그 도구 모음에서 합니다.
+디버그 도구 모음에서 **F5**(**디버그 > 디버깅 시작**) 또는 **디버깅 시작** 단추 ![디버깅 시작](../debugger/media/dbg-tour-start-debugging.png "디버깅 시작")를 누릅니다.
 
 이 시점에서 샘플 앱 throw를 `SerializationException` 예외 (런타임 오류). 즉, 앱 데이터를 직렬화 하는 것에 대해 제한 합니다. 디버그 모드 (디버거 연결)에서 앱을 시작 했기 때문에 디버거의 예외 도우미 예외가 발생 한 및 유용한 오류 메시지를 제공 하는 코드에 바로 이동 합니다.
 
@@ -123,7 +123,7 @@ item.totalpoints += users[i].points;
 
 예외에 도달 하면 몇 가지 질문을 요청 (및 답변) 해야 합니다.
 
-* 이 예외는 버그를 해결할 수 있습니다만 인지 확인 합니다. 또는
+* 이 예외는 버그를 해결할 수 있습니다만 인지 확인 합니다. 또는,
 
 * 사용자에 게 발생할 수 있는 것이 예외는?
 
@@ -407,4 +407,4 @@ namespace Console_Parse_JSON_DotNetCore
 이 문서에서는 디버거를 사용 하는 경우 및 방지 하 고 코드에서 일반적인 많은 버그를 수정 하는 방법을 알아보았습니다. Visual Studio 디버거를 사용 하 여 버그를 수정 하는 방법에 대 한 자세한 내용은 다음을 알아봅니다.
 
 > [!div class="nextstepaction"]
-> [초보자를 위한 디버깅](../debugger/debugging-absolute-beginners.md)
+> [완전 초보자를 위한 디버깅](../debugger/debugging-absolute-beginners.md)
