@@ -1,6 +1,6 @@
 ---
-title: 새 데이터 소스 추가
-ms.date: 11/04/2016
+title: 새 데이터 원본 추가
+ms.date: 11/21/2018
 ms.topic: conceptual
 f1_keywords:
 - vs.datasource.datasourcefieldspicker
@@ -15,16 +15,16 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1bbe808f1c43e0f4083f5ed1d04db347560a2630
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
-ms.translationtype: MT
+ms.openlocfilehash: fe32424632d06ed637b41dcd3d4b614afde369bd
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35666633"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304612"
 ---
-# <a name="add-new-data-sources"></a>새 데이터 소스 추가
+# <a name="add-new-data-sources"></a>새 데이터 원본 추가
 
-Visual Studio의.NET data tools의 컨텍스트에서 용어 *데이터 원본* 데이터 저장소에 연결 하 고.NET 응용 프로그램에 데이터를 노출 하는.NET 개체를 가리킵니다. Visual Studio 디자이너에서 데이터베이스 개체를 끌어서 폼에 데이터를 바인딩하는 상용구 코드를 생성 하는 데이터 원본의 출력을 사용할 수는 **데이터 원본** 창입니다. 이 유형의 데이터 원본 수 있습니다.
+Visual Studio의.NET data tools의 컨텍스트에서 용어 *데이터 원본* 데이터 저장소에 연결 하는 데이터는.NET 응용 프로그램에 사용할 수 있도록.NET 개체를 가리킵니다. Visual Studio 디자이너에서 데이터베이스 개체를 끌어서 폼에 데이터를 바인딩하는 상용구 코드를 생성 하는 데이터 원본의 출력을 사용할 수는 **데이터 원본** 창입니다. 이 유형의 데이터 원본 수 있습니다.
 
 - 일부 종류의 데이터베이스와 연결 된 Entity Framework 모델의 클래스입니다.
 
@@ -43,7 +43,16 @@ Visual Studio의.NET data tools의 컨텍스트에서 용어 *데이터 원본* 
 
 ![데이터 소스 구성 마법사](../data-tools/media/data-source-configuration-wizard.png)
 
-데이터 원본을 만든 후에 저장 되는 **데이터 원본** 도구 창 (**Shift**+**Alt**+**D**나 **뷰** > **다른 Windows** > **데이터 원본**). 데이터 원본으로 끌 수 있습니다 합니다 **데이터 원본** 양식 디자인 화면 또는 컨트롤을 창입니다. 이렇게 하면 데이터 저장소에서 데이터를 표시 하는 상용구 코드를 생성 합니다. 다음 그림에서는 Windows form으로 삭제 된 데이터 집합을 보여 줍니다. 선택 하는 경우 **F5** 응용 프로그램을 기본 데이터베이스의에서 데이터를 폼의 컨트롤에 나타납니다.
+## <a name="data-sources-window"></a>데이터 소스 창
+
+데이터 원본을 만든 후에 저장 되는 **데이터 원본** 도구 창입니다.
+
+> [!TIP]
+> 열려는 합니다 **데이터 원본** 창 프로젝트가 열려 있는지 확인 하 고 다음 키를 누릅니다 **Shift**+**Alt**+**D**선택할지 **뷰** > **기타 Windows** > **데이터 원본**합니다.
+
+데이터 원본으로 끌 수 있습니다 합니다 **데이터 원본** 양식 디자인 화면 또는 컨트롤을 창입니다. 이렇게 하면 데이터 저장소에서 데이터를 표시 하는 상용구 코드를 생성 합니다.
+
+다음 그림에서는 Windows form으로 삭제 된 데이터 집합을 보여 줍니다. 선택 하는 경우 **F5** 응용 프로그램을 기본 데이터베이스의에서 데이터를 폼의 컨트롤에 나타납니다.
 
 ![데이터 원본 끌기 작업](../data-tools/media/raddata-data-source-drag-operation.png)
 
@@ -86,7 +95,7 @@ Visual Studio의.NET data tools의 컨텍스트에서 용어 *데이터 원본* 
 - 웹 서비스
 
     > [!NOTE]
-    > 에 표시 되는 항목의 **데이터 원본** 창 서비스를 반환 하는 데이터에 따라 달라 집니다. 일부 서비스에 대 한 충분 한 정보를 제공 하지 않을 수 있습니다 합니다 **데이터 소스 구성 마법사** 바인딩할 수 있는 개체를 만들 수 있습니다. 예를 들어 서비스가 형식화 되지 않은 데이터 집합을 반환 하는 경우에 아무런 항목도 표시 합니다 **데이터 원본** 창 마법사를 완료 합니다. 형식화 되지 않은 데이터 집합 스키마를 제공 하지 않으며 마법사가 데이터 원본을 만들려면 충분 한 정보를 갖고 있지 않으므로 때문입니다.
+    > 에 표시 되는 항목의 **데이터 원본** 창 서비스를 반환 하는 데이터에 따라 달라 집니다. **데이터 원본 구성 마법사**에서 바인딩 가능한 개체를 만들기에 충분한 정보를 제공하지 않는 서비스도 있습니다. 예를 들어 서비스가 형식화 되지 않은 데이터 집합을 반환 하는 경우에 아무런 항목도 표시 합니다 **데이터 원본** 창 마법사를 완료 합니다. 형식화 되지 않은 데이터 집합 스키마를 제공 하지 않으며 마법사가 데이터 원본을 만들려면 충분 한 정보를 갖고 있지 않으므로 때문입니다.
 
 ## <a name="data-source-for-an-object"></a>개체에 대 한 데이터 원본
 
@@ -106,6 +115,6 @@ Visual Studio의.NET data tools의 컨텍스트에서 용어 *데이터 원본* 
 
 실행 하 여 SharePoint 목록의 데이터 소스를 만들 수는 **데이터 소스 구성 마법사** 선택 하 고는 **SharePoint** 데이터 소스 형식입니다. SharePoint은 서비스에서 데이터 원본을 만드는 것과 같습니다는 SharePoint 데이터 원본 만들기 WCF Data Services를 통해 데이터를 노출 합니다. 선택 하는 **SharePoint** 항목에 **데이터 소스 구성 마법사** 열립니다는 **서비스 참조 추가** 대화 상자에서 SharePoint 데이터 서비스에 연결 SharePoint 서버를 가리키면 됩니다. SharePoint SDK 필요합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [.NET용 Visual Studio 데이터 도구](../data-tools/visual-studio-data-tools-for-dotnet.md)

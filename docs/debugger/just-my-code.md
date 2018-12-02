@@ -1,7 +1,7 @@
 ---
 title: 내 코드만 사용 하 여 사용자 코드를 디버그 | Microsoft Docs
 ms.custom: ''
-ms.date: 05/18/2018
+ms.date: 10/22/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 0f0df097-bbaf-46ad-9ad1-ef5f40435079
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 854ce90f18b5df7d3e25b4b0949d76202e4f4a04
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
-ms.translationtype: MT
+ms.openlocfilehash: 01e36c528b71bb49b29265890ca6c48863f01be9
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050341"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389029"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>내 코드만 사용 하 여 사용자 코드만 디버깅 
 
@@ -23,7 +23,7 @@ ms.locfileid: "50050341"
 
 내 코드만.NET Framework, c + + 및 JavaScript 프로젝트에서 다르게 작동합니다.
 
-##  <a name="BKMK_Enable_or_disable_Just_My_Code"></a> 내 코드만 사용할지 설정 합니다.  
+##  <a name="BKMK_Enable_or_disable_Just_My_Code"></a> 내 코드만 사용 또는 사용 안 함  
 
 대부분의 프로그래밍 언어에 대 한 내 코드만 옵션은 기본적으로 사용 됩니다. 
 
@@ -81,7 +81,7 @@ ms.locfileid: "50050341"
   
 첫 번째 예외는 예외에 대 한 사용 하는 경우 호출 사용자 코드 줄에는 소스 코드에서 녹색으로 강조 표시 됩니다. 합니다 **호출 스택** 레이블이 지정 된 주석이 추가 된 프레임 창에 표시 됩니다 **[External Code]** 합니다.  
 
-##  <a name="BKMK_C___Just_My_Code"></a> C + + 내 코드만  
+##  <a name="BKMK_C___Just_My_Code"></a> C++ 내 코드만  
   
 C + +에서 내 코드만 사용 하도록 설정 하면 같습니다를 사용 하는 [(내 코드만 디버깅) /JMC](/cpp/build/reference/jmc) 컴파일러 스위치입니다.
 
@@ -140,7 +140,7 @@ A *.natstepfilter* 파일은이 구문 사용 하 여 XML 파일:
 |요소|설명|  
 |-------------|-----------------|  
 |`Function`|필수. 하나 이상의 함수를 사용자가 작성하지 않은 함수로 지정합니다.|  
-|`Name`|필수. 일치시킬 전체 함수 이름을 지정하는 ECMA 262 형식의 정규식입니다. 예를 들어:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> `MyNS::MyClass`의 모든 메서드를 사용자가 작성하지 않은 코드로 간주하도록 디버거에 지시합니다. 일치 항목 찾기에서는 대/소문자를 구분합니다.|  
+|`Name`|필수. 일치시킬 전체 함수 이름을 지정하는 ECMA 262 형식의 정규식입니다. 예:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> `MyNS::MyClass`의 모든 메서드를 사용자가 작성하지 않은 코드로 간주하도록 디버거에 지시합니다. 일치 항목 찾기에서는 대/소문자를 구분합니다.|  
 |`Module`|선택 사항입니다. 함수를 포함하는 모듈의 전체 경로를 지정하는 ECMA 262 형식의 정규식입니다. 일치 항목 찾기에서는 대/소문자를 구분하지 않습니다.|  
 |`Action`|필수. 대/소문자를 구분하는 다음 값 중 하나입니다.<br /><br /> `NoStepInto`  -함수를 디버거에 지시 합니다.<br /> `StepInto`  -다른 재정의 함수를 한 단계씩 실행 하도록 디버거에 지시 `NoStepInto` 일치 하는 함수에 대 한 합니다.|  
   
@@ -196,7 +196,7 @@ A *.natjmc* 파일은이 구문 사용 하 여 XML 파일:
   
 ##  <a name="BKMK_JavaScript_Just_My_Code"></a> JavaScript 내 코드만  
 
-<a name="BKMK_JS_User_and_non_user_code"></a> JavaScript 내 코드만 다음이 분류 중 하나에서 코드를 분류 하 여 단계별 실행 및 호출 스택 표시를 제어 합니다.  
+<a name="BKMK_JS_User_and_non_user_code"></a> JavaScript 내 코드만 옵션은 다음 분류 중 하나로 코드를 분류하여 단계별 실행 및 호출 스택 표시를 제어합니다.  
 
 |||  
 |-|-|  
@@ -218,7 +218,7 @@ JavaScript 디버거는 사용자 또는 사용자가 아닌이 순서 대로 �
   
 각 분류 단계는 이전 단계를 재정의합니다. 
 
-다른 모든 코드는 기밀로 **MyCode**합니다.  
+기타 모든 코드는 **MyCode**로 분류됩니다.  
 
 기본 분류를 수정 하 고 사용자 또는 사용자가 아닌 코드로 추가 하 여 특정 파일 및 Url을 분류할 수를 *.json* 파일인 *mycode.json* JavaScript 프로젝트의 루트 폴더에 있습니다. 참조 [JavaScript 내 코드만 사용자 지정](#BKMK_JS_Customize_Just_My_Code)합니다. 
 
@@ -226,7 +226,7 @@ JavaScript 디버거는 사용자 또는 사용자가 아닌이 순서 대로 �
 
 - 함수를 비 사용자 코드 이면 **디버그** > **단계씩** (또는 **F11**)와 동일 **디버그**  >  **건너뛰기** (또는 **F10**).  
 - 비 사용자의 단계를 시작 하는 경우 (**LibraryCode** 하거나 **UnrelatedCode**) 코드 단계별 실행을 일시적으로 처럼 내 코드만 사용 되지 않습니다. 내 코드만 사용자 코드를 다시 실행 하면 단계별 실행이 다시 사용 됩니다.  
-- 때 현재 실행 컨텍스트를 벗어나지에서 사용자 코드 단계 결과 다음 실행된 사용자 코드 줄에서 디버거가 중지 됩니다. 예를 들어 콜백이 실행 되 면 **LibraryCode** 사용자 코드의 다음 줄이 실행 될 때까지 코드 디버거를 계속 합니다.
+- 때 현재 실행 컨텍스트를 벗어나지에서 사용자 코드 단계 결과 다음 실행된 사용자 코드 줄에서 디버거가 중지 됩니다. 예를 들어 콜백이 **LibraryCode** 코드에서 실행되는 경우 사용자 코드의 다음 줄이 실행될 때까지 디버거가 계속됩니다.
 - **프로시저 나가기** (또는 **Shift**+**F11**) 사용자 코드의 다음 줄에서 중지 합니다. 
 
 더 이상 사용자 코드가 있으면 종료 또는 다른 중단점을 적중, 오류를 throw 될 때까지 계속 디버깅 합니다. 
@@ -242,7 +242,7 @@ JavaScript 디버거는 사용자 또는 사용자가 아닌이 순서 대로 �
   
 예외에 대해 첫째 예외가 설정 되 고에서 예외가 발생 하는 경우 **LibraryCode** 하거나 **UnrelatedCode**:  
   
--   예외를 처리 하는 경우 디버거가 중단 되지 않습니다.  
+-   예외가 처리되었으면 디버거가 중단되지 않습니다.  
 -   예외가 처리되지 않았으면 디버거가 중단됩니다.  
   
 ###  <a name="BKMK_JS_Customize_Just_My_Code"></a> JavaScript 내 코드만 사용자 지정  
@@ -279,28 +279,28 @@ JavaScript 디버거는 사용자 또는 사용자가 아닌이 순서 대로 �
   
  **Eval, Function 및 ScriptBlock**  
   
- **Eval**, **함수**, 및 **ScriptBlock** 키/값 쌍 결정 하는 방법을 동적으로 생성 된 코드 분류 됩니다:  
+ **Eval**, **Function** 및 **ScriptBlock** 키 값 쌍은 동적으로 생성된 코드의 분류 방법을 결정합니다.  
   
 |||  
 |-|-|  
-|**Eval**|호스트에서 제공하는 `eval` 함수에 문자열을 전달하여 실행되는 스크립트입니다. 기본적으로 Eval 스크립트로 분류 됩니다 **MyCode**합니다.|  
-|**Function**|`Function` 생성자에 문자열을 전달하여 실행되는 스크립트입니다. 기본적으로 Function 스크립트로 분류 됩니다 **LibraryCode**합니다.|  
-|**ScriptBlock**|`setTimeout`, `setImmediate` 또는 `setInterval` 함수에 문자열을 전달하여 실행되는 스크립트입니다. 기본적으로 ScriptBlock 스크립트로 분류 됩니다 **UnrelatedCode**합니다.|  
+|**Eval**|호스트에서 제공하는 `eval` 함수에 문자열을 전달하여 실행되는 스크립트입니다. 기본적으로 Eval 스크립트는 **MyCode**로 분류됩니다.|  
+|**Function**|`Function` 생성자에 문자열을 전달하여 실행되는 스크립트입니다. 기본적으로 Function 스크립트는 **LibraryCode**로 분류됩니다.|  
+|**ScriptBlock**|`setTimeout`, `setImmediate` 또는 `setInterval` 함수에 문자열을 전달하여 실행되는 스크립트입니다. 기본적으로 ScriptBlock 스크립트는 **UnrelatedCode**로 분류됩니다.|  
   
  다음 키워드 중 하나로 값을 변경할 수 있습니다.  
   
--   `MyCode`  스크립트를 분류 **MyCode**합니다.  
--   `Library`  스크립트를 분류 **LibraryCode**합니다.  
--   `Unrelated`  스크립트를 분류 **UnrelatedCode**합니다.  
+-   `MyCode`는 스크립트를 **MyCode**로 분류합니다.  
+-   `Library`는 스크립트를 **LibraryCode**로 분류합니다.  
+-   `Unrelated`는 스크립트를 **UnrelatedCode**로 분류합니다.  
   
   **MyCode, Libraries 및 Unrelated**  
   
- 합니다 **MyCode**를 **라이브러리**, 및 **Unrelated** Url 또는 파일 분류에 포함 하려는 키/값 쌍 지정:  
+ **MyCode**, **Libraries** 및 **Unrelated** 키 값 쌍은 분류에 포함할 URL 또는 파일을 지정합니다.  
   
 |||  
 |-|-|  
-|**MyCode**|Url 또는으로 분류 되는 파일의 배열을 **MyCode**합니다.|  
-|**라이브러리**|Url 또는으로 분류 되는 파일의 배열을 **LibraryCode**합니다.|  
-|**관련 없는**|Url 또는으로 분류 되는 파일의 배열을 **UnrelatedCode**합니다.|  
+|**MyCode**|**MyCode**로 분류된 URL 또는 파일의 배열입니다.|  
+|**라이브러리**|**LibraryCode**로 분류된 URL 또는 파일의 배열입니다.|  
+|**Unrelated**|**UnrelatedCode**로 분류된 URL 또는 파일의 배열입니다.|  
   
  URL 또는 파일 문자열을 하나 이상 포함할 수도 있습니다 `*` 문자 0 개 이상의 문자를 찾습니다. `*` 정규식 동일 `.*`합니다.

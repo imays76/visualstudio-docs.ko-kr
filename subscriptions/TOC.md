@@ -58,7 +58,7 @@
 ###### [기본 연락처 찾기](find-primary-contact.md)
 #### [MPSA의 경우](mpsa.md)
 #### [클라우드 구독의 경우](cloud-admin.md)
-#### [온보딩 비디오](https://channel9.msdn.com/Series/Visual-Studio-Subscriptions-Administration/Onboarding-your-organization-to-the-new-Visual-Studio-Subscription-Administration-Portal-and-setting)
+#### [온보딩 비디오](https://youtu.be/plSu6fpi7UI)
 ### [관리 포털 사용](using-admin-portal.md)
 #### [구독 할당](assign-license.md)
 #### [할당 전자 메일 다시 보내기](resend-assignment-email.md)

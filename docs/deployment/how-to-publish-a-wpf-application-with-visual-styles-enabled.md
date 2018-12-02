@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af0a07abe1cbb380acde91067e3e6252d0cd8596
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 4dc45c624d44ed550fb491fc57638ba033090346
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830056"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388110"
 ---
-# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>방법: WPF 응용 프로그램을 사용 하도록 설정 하는 비주얼 스타일을 사용 하 여 게시
+# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>방법: 시각적 개체 스타일을 사용하여 WPF 애플리케이션 게시
 비주얼 스타일을 사용자가 선택한 테마에 따라 변경 되는 공용 컨트롤의 모양을 사용 하도록 설정 합니다. 기본적으로 비주얼 스타일을 수동으로 활성화 해야 하므로 Windows Presentation Foundation (WPF) 응용 프로그램에 대 한 사용 되지 않습니다. 그러나 WPF 응용 프로그램에 대 한 비주얼 스타일을 사용 하도록 설정 하 고 다음 솔루션을 게시 하면 오류가 발생 합니다. 이 항목에서는이 오류 및 사용 하도록 설정 하는 비주얼 스타일을 사용 하 여 WPF 응용 프로그램을 게시 하기 위한 프로세스를 해결 하는 방법을 설명 합니다. 비주얼 스타일에 대 한 자세한 내용은 참조 하세요. [비주얼 스타일이 개요](/windows/desktop/Controls/visual-styles-overview)합니다. 오류 메시지에 대 한 자세한 내용은 참조 하세요. [ClickOnce 배포 관련 오류 문제 해결](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)합니다.  
   
  오류를 해결 하 고 솔루션을 게시 하려면 다음 작업을 수행 해야 합니다.  
@@ -39,7 +39,11 @@ ms.locfileid: "49830056"
      기본적으로 시각적 스타일 사용 되지 않습니다.  
   
     ```xml  
-    <dependency>    <dependentAssembly>      <assemblyIdentity          type="win32"          name="Microsoft.Windows.Common-Controls"          version="6.0.0.0"          processorArchitecture="*"          publicKeyToken="6595b64144ccf1df"          language="*"        />    </dependentAssembly>  </dependency>  
+    <dependency>
+        <dependentAssembly>
+            <assemblyIdentity type="win32" name="Microsoft.Windows.Common-Controls" version="6.0.0.0" processorArchitecture="*" publicKeyToken="6595b64144ccf1df" language="*" />
+        </dependentAssembly>
+    </dependency>
     ```  
   
      다음 절차에는 프로젝트와 연결 된 매니페스트 파일을 열려고 하는 방법을 보여 줍니다.  
@@ -54,7 +58,7 @@ ms.locfileid: "49830056"
   
          app.manifest 파일이 열립니다는 **코드 편집기**합니다.  
   
-    ###### <a name="to-open-the-manifest-file-in-a-c-project"></a>C# 프로젝트에서 매니페스트 파일을 열려면  
+    ###### <a name="to-open-the-manifest-file-in-a-c-project"></a>에 매니페스트 파일을 여는 C# 프로젝트  
   
     1.  메뉴 모음에서 **프로젝트**하십시오 *ProjectName* **속성**여기서 *ProjectName* WPF 프로젝트의 이름입니다.  
   
@@ -65,7 +69,7 @@ ms.locfileid: "49830056"
         > [!NOTE]
         >  하는 경우 **기본 설정 사용 하 여 매니페스트 포함** 또는 **매니페스트 없이 응용 프로그램 만들기** 비주얼 스타일을 사용 하지 매니페스트 필드에 표시 합니다. 매니페스트 파일의 이름에에서 나타나는 경우 매니페스트 필드,이 절차에서는 다음 단계를 진행 합니다.  
   
-    3.  **솔루션 탐색기**, 선택 **모든 파일 표시**합니다.  
+    3.  **솔루션 탐색기**에서 **모든 파일 표시**를 선택합니다.  
   
          이 단추 등 제외 되는 일반적으로 숨겨져 있는 모든 프로젝트 항목을 보여 줍니다. 매니페스트 파일을 프로젝트 항목으로 표시 됩니다.  
   
@@ -78,7 +82,18 @@ ms.locfileid: "49830056"
      이 XML 비주얼 스타일을 지 원하는 컨트롤을 포함 하는 어셈블리를 설명 합니다.  
   
     ```xml  
-    <?xml version="1.0" encoding="utf-8"?><asmv1:assembly manifestVersion="1.0"                xmlns="urn:schemas-microsoft-com:asm.v1"                xmlns:asmv1="urn:schemas-microsoft-com:asm.v1"                xmlns:asmv2="urn:schemas-microsoft-com:asm.v2"                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">  <dependency>    <dependentAssembly>      <assemblyIdentity        type="win32"        name="Microsoft.Windows.Common-Controls"        version="6.0.0.0"        processorArchitecture="*"        publicKeyToken="6595b64144ccf1df"        language="*"        />    </dependentAssembly>  </dependency></asmv1:assembly>  
+    <?xml version="1.0" encoding="utf-8"?>
+    <asmv1:assembly manifestVersion="1.0" 
+        xmlns="urn:schemas-microsoft-com:asm.v1" 
+        xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" 
+        xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <dependency>
+            <dependentAssembly>
+                <assemblyIdentity type="win32" name="Microsoft.Windows.Common-Controls" version="6.0.0.0" processorArchitecture="*" publicKeyToken="6595b64144ccf1df" language="*" />
+            </dependentAssembly>
+        </dependency>
+    </asmv1:assembly>
     ```  
   
 2.  메모장에서 클릭 **파일**를 클릭 하 고 **다른 이름으로 저장**합니다.  
@@ -161,9 +176,9 @@ ms.locfileid: "49830056"
   
    다음이 단계를 수행한 후에 최종 사용자가 응용 프로그램을 설치 하려는 위치에 게시 된 파일을 이동할 수 있습니다. 솔루션을 종종 업데이트 하려는 경우 이러한 명령을 스크립트에 이동할 수 있으며 새 버전을 게시할 때마다 스크립트를 실행 수 있습니다.  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 -[ClickOnce 배포 관련 오류 문제 해결](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
 - [비주얼 스타일 개요](/windows/desktop/Controls/visual-styles-overview)
-- [비주얼 스타일 사용](/windows/desktop/Controls/cookbook-overview)
+- [시각적 개체 스타일 사용](/windows/desktop/Controls/cookbook-overview)
 - [명령 프롬프트](/dotnet/framework/tools/developer-command-prompt-for-vs)

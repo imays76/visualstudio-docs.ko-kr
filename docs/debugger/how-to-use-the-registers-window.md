@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 디버거에서 레지스터 값 보기 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -25,35 +25,36 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f236bf43d3667cd4263d205c4588593a973824d
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: ab40e0b63b2a679b4c36a4625d517a03b6c123ad
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257171"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389327"
 ---
-# <a name="view-register-values-and-use-the-registers-window-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>등록 값을 확인 하 고 Visual Studio 디버거에서 레지스터 창 사용 (C#, c + +, Visual Basic의 경우 F#)
-레지스터 창에서 주소 수준 디버깅을 설정한 경우에 가능 합니다 **옵션** 대화 상자에서 **디버깅** 노드를 **일반** 범주.  
-  
- 합니다 **등록** 레지스터 내용이 창이 표시 됩니다. 유지 하는 경우는 **등록** 보시 창이 열려 프로그램 한 단계씩 코드 실행에 따라 레지스터 값이 변경 합니다. 최근에 변경된 값은 빨간색으로 표시됩니다. 레지스터 값은 편집할 수 있습니다. 자세한 내용은 [방법: 레지스터 값 편집](../debugger/how-to-edit-a-register-value.md)합니다.  
-  
- 간단 하 게 표시 합니다 **등록** 플랫폼 및 프로세서에 따라 달라 지는 그룹으로 레지스터를 구성 하는 창 유형입니다. 레지스터 그룹은 사용자에게 맞게 표시하거나 숨길 수 있습니다. 자세한 내용은 [방법: 레지스터 그룹 숨기기 및 표시](../debugger/how-to-display-and-hide-register-groups.md)합니다.  
-  
- 레지스터 및 레지스터 창의 개념에 대 한 높은 수준의 소개를 참조 하세요 [디버깅 기본 사항: 레지스터 창](../debugger/debugging-basics-registers-window.md)합니다.  
-  
+# <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>레지스터 창에서 레지스터 값 보기 (C#, c + +, Visual Basic의 경우 F#)
+
+합니다 **등록** 레지스터 내용이 Visual Studio에서 디버깅 하는 동안 창이 표시 됩니다. 간략 한 소개 레지스터 개념에 대 한 하며 **등록** 창 참조 [디버깅 기본 사항: 레지스터 창](../debugger/debugging-basics-registers-window.md)합니다.
+
 > [!NOTE]
->  표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio IDE 개인 설정](../ide/personalizing-the-visual-studio-ide.md)을 참조하세요.  
-  
-### <a name="to-display-the-registers-window"></a>레지스터 창을 표시하려면  
-  
--   에 **디버그** 메뉴 선택 **Windows**를 선택한 후 **등록** (선택 하거나 **Ctrl** + **Alt**   +  **G**).  
-  
-     디버거는 실행 중이거나 중단 모드에 있어야 합니다.  
-  
-    > [!NOTE]
-    >  스크립트나 SQL 응용 프로그램의 경우에는 레지스터 정보를 사용할 수 없습니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [디버깅 기본 사항: 레지스터 창](../debugger/debugging-basics-registers-window.md)   
- [디버거에서 데이터 보기](../debugger/viewing-data-in-the-debugger.md)   
- [디버깅 기본 사항: 레지스터 창](../debugger/debugging-basics-registers-window.md)
+> 등록 정보 스크립트나 SQL 응용 프로그램에 사용할 수 없는 경우
+
+디버그 하는 동안 앱에서 코드 실행 값을 등록 합니다. 변경 된 값은 최근에에서 빨간색으로 표시 합니다 **등록** 창입니다.
+
+**레지스터** 창에서는 레지스터를 플랫폼 및 프로세서 유형에 따라 각각 다른 그룹으로 구성하여 간단하게 표시합니다. 표시 하거나 레지스터 그룹을 숨길 수 있습니다. 자세한 내용은 [방법: 레지스터 그룹 표시 및 숨기기](../debugger/how-to-display-and-hide-register-groups.md)를 참조하세요.
+
+레지스터 값은 편집할 수 있습니다. 자세한 내용은 [방법: 레지스터 값 편집](../debugger/how-to-edit-a-register-value.md)합니다.
+
+**레지스터 창을 열려면**
+
+1. 선택 하 여 주소 수준 디버깅 사용 **주소 수준 디버깅을 활성화** 에 **도구** (또는 **디버그**) > **옵션**  >  **디버깅**합니다.
+
+1. 실행 중이거나 중단점은 디버깅, 선택 **디버그** > **Windows** > **등록**를 누르거나 **Alt** + **5**합니다.
+
+>[!NOTE]
+>대화 상자와 메뉴 명령은 설정 또는 Visual Studio 버전에 따라 달라질 수 있습니다. 설정을 변경 하려면 선택 **설정 가져오기 및 내보내기** Visual studio **도구** 메뉴. 자세한 내용은 [재설정 설정](../ide/environment-settings.md#reset-settings)을 참조하세요.
+
+### <a name="see-also"></a>참고 항목
+
+- [디버깅 기본 사항: 레지스터 창](../debugger/debugging-basics-registers-window.md)
+- [디버거에서 데이터 보기](../debugger/viewing-data-in-the-debugger.md)

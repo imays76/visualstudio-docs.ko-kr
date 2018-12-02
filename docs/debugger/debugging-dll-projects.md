@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 96dc4277bfdc783d969a2e98fb93fcc5975e9ad7
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
-ms.translationtype: MT
+ms.openlocfilehash: c00740b31e5b9d7cc5678bfc248e673a57e59ccf
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607629"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305314"
 ---
-# <a name="debug-dlls-in-visual-studio"></a>Visual Studio에서 Dll 디버깅
+# <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>Visual Studio에서 Dll 디버깅 (C#, c + +, Visual Basic의 경우 F#)
 
 DLL (동적 연결 라이브러리)에 둘 이상의 앱에서 사용할 수 있는 코드 및 데이터를 포함 하는 라이브러리입니다. 만들기, 빌드, 구성에 Visual Studio를 사용 하 고 Dll을 디버그할 수 있습니다. 
 
@@ -35,11 +35,11 @@ DLL (동적 연결 라이브러리)에 둘 이상의 앱에서 사용할 수 있
 
 다음 Visual Studio 프로젝트 템플릿은 Dll을 만들 수 있습니다.
 
-- C#또는 Visual Basic 클래스 라이브러리 
+- C#Visual Basic의 경우 또는 F# 클래스 라이브러리 
 - C#Visual Basic Windows Forms 컨트롤 (WCF) 라이브러리 또는 
 - C + + 동적 연결 라이브러리 (DLL)
 
-자세한 내용은 [MFC 디버깅 기술](../debugger/mfc-debugging-techniques.md)합니다.
+자세한 내용은 [MFC 디버깅 기술](../debugger/mfc-debugging-techniques.md)을 참조하세요.
 
 WCF 라이브러리를 디버깅 하는 것을 클래스 라이브러리를 디버깅 하는 것과 비슷합니다. 자세한 내용은 참조 하세요 [Windows Forms 컨트롤](/dotnet/framework/winforms/controls/index)합니다.  
 
@@ -50,9 +50,9 @@ WCF 라이브러리를 디버깅 하는 것을 클래스 라이브러리를 디�
 Visual Studio 프로젝트 템플릿을 사용 하 여 앱을 만드는 경우 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 디버그 및 릴리스 빌드 구성에 대 한 필요한 설정을 자동으로 만듭니다. 필요한 경우 이러한 설정을 변경할 수 있습니다. 자세한 내용은 다음 항목을 참조하세요.
 
 - [C++ 디버그 구성에 대한 프로젝트 설정](../debugger/project-settings-for-a-cpp-debug-configuration.md)
-- [프로젝트 설정에 대 한 C# 디버그 구성](../debugger/project-settings-for-csharp-debug-configurations.md)
+- [C# 디버그 구성을 위한 프로젝트 설정](../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Visual Basic 디버그 구성에 대한 프로젝트 설정](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
-- [방법: 집합 디버그 및 릴리스 구성](../debugger/how-to-set-debug-and-release-configurations.md)  
+- [방법: 디버그 및 릴리스 구성 설정](../debugger/how-to-set-debug-and-release-configurations.md)  
   
 ### <a name="set-c-debuggableattribute"></a>C + + DebuggableAttribute 설정
 
@@ -110,28 +110,27 @@ DLL을 호출 하는 앱이 될 수 있습니다.
   
 - 앱을 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 동일 하거나 DLL에서 다른 솔루션에 프로젝트입니다.  
 - 이미 배포 된 기존 앱 및 테스트 컴퓨터나 프로덕션 컴퓨터에서 실행 되지 않도록 합니다.  
-- 웹에 있고 URL을 통해 액세스 합니다.  
+- 웹에 위치하며 URL을 통해 액세스합니다.  
 - DLL을 포함 하는 웹 페이지를 사용 하 여 웹 앱입니다.  
   
-
 호출 앱에서 DLL을 디버깅 하려면 다음을 수행할 수 있습니다.  
   
 - 호출 앱에 대 한 프로젝트를 열고 선택 하 여 디버깅을 시작할 **디버깅할** > **디버깅 시작** 키를 누르거나 **F5**합니다.  
 
   또는  
 
-- 이미 배포 되어 테스트 컴퓨터나 프로덕션 컴퓨터에서 실행 되는 앱에 연결 합니다. 웹 사이트 또는 웹 앱의 Dll에 대 한이 메서드를 사용 합니다. 자세한 내용은 [방법: 실행 중인 프로세스에 연결](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)합니다.  
+- 이미 배포 되어 테스트 컴퓨터나 프로덕션 컴퓨터에서 실행 되는 앱에 연결 합니다. 웹 사이트 또는 웹 앱의 Dll에 대 한이 메서드를 사용 합니다. 자세한 내용은 [방법: 실행 중인 프로세스에 연결](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)을 참조하세요.  
   
 호출 응용 프로그램 디버깅을 시작 하기 전에 DLL에서 중단점을 설정 합니다. 참조 [중단점을 사용 하 여](../debugger/using-breakpoints.md)입니다. DLL 중단점이 적중 될 때 실행할 수 있습니다 코드를 통해 각 줄의 작업을 관찰 합니다. 자세한 내용은 [디버거에서 코드를 탐색](../debugger/navigating-through-code-with-the-debugger.md)합니다.
   
-디버그 하는 동안 사용할 수 있습니다 합니다 **모듈** Dll을 확인 하려면 창 및 *.exe* 앱이 로드 파일입니다. 열려는 합니다 **모듈** 창에서 디버그 하는 동안 **디버그** > **Windows** > **모듈**합니다. 자세한 내용은 [방법: 모듈 창 사용](../debugger/how-to-use-the-modules-window.md)합니다. 
+디버그 하는 동안 사용할 수 있습니다 합니다 **모듈** Dll을 확인 하려면 창 및 *.exe* 앱이 로드 파일입니다. 열려는 합니다 **모듈** 창에서 디버그 하는 동안 **디버그** > **Windows** > **모듈**합니다. 자세한 내용은 [방법: 모듈 창](../debugger/how-to-use-the-modules-window.md)을 참조하세요. 
 
 ###  <a name="vxtskdebuggingdllprojectstheimmediatewindow"></a> 직접 실행 창 사용  
 
 사용할 수는 **직접 실행** 창 디자인 타임에 DLL 함수 또는 메서드를 평가 합니다. 합니다 **직접 실행** 창 호출 응용 프로그램의 역할을 수행 합니다. 
 
 >[!NOTE]
->사용할 수는 **직접 실행** 대부분의 프로젝트 형식에 디자인 타임에는 창입니다. 현재.NET Core, SQL 또는 웹 프로젝트에 대 한 지원 됩니다.
+>사용할 수는 **직접 실행** 대부분의 프로젝트 형식에 디자인 타임에는 창입니다. SQL, 웹 프로젝트 또는 스크립트에 대해서는 지원 되지 않습니다.
 
 예를 들어 라는 메서드를 테스트할 `Test` 클래스에서 `Class1`:
 
@@ -153,21 +152,21 @@ DLL을 호출 하는 앱이 될 수 있습니다.
    
    결과 인쇄 합니다 **직접 실행** 창입니다.  
    
-1. 계속 디버깅할 수 있습니다 `Test` , 내에 중단점을 추가 하 고 다음 함수를 다시 실행 합니다.  
+1. 중단점을 배치한 다음, 함수를 다시 실행하여 `Test`를 계속 디버깅할 수 있습니다.  
    
-   중단점 도달 하면 단계별로 실행할 수 있습니다 및 `Test`합니다. 실행을 마치면 `Test`, 디버거가 디자인 모드로 다시 됩니다.
+   중단점 도달 하면 단계별로 실행할 수 있습니다 및 `Test`합니다. 실행이 `Test`를 벗어나면 디버거가 디자인 모드로 되돌아갑니다.
 
 ##  <a name="vxtskdebuggingdllprojectsmixedmodedebugging"></a> 혼합 모드 디버깅  
 
-관리 되는 또는 네이티브 코드에서 DLL에 대 한 호출 앱을 작성할 수 있습니다. 관리 되는 DLL을 호출 하는 네이티브 앱을 모두 디버그 하려는 경우에 프로젝트 속성에서 관리 및 네이티브 디버거를 사용할 수 있습니다. 정확한 프로세스는 DLL 프로젝트 또는 호출 응용 프로그램 프로젝트에서 디버깅을 시작할 것인지에 따라 달라 집니다. 자세한 내용은 [방법: 혼합된 모드에서 디버깅](../debugger/how-to-debug-in-mixed-mode.md)합니다. 
+관리 되는 또는 네이티브 코드에서 DLL에 대 한 호출 앱을 작성할 수 있습니다. 관리 되는 DLL을 호출 하는 네이티브 앱을 모두 디버그 하려는 경우에 프로젝트 속성에서 관리 및 네이티브 디버거를 사용할 수 있습니다. 정확한 프로세스는 DLL 프로젝트 또는 호출 응용 프로그램 프로젝트에서 디버깅을 시작할 것인지에 따라 달라 집니다. 자세한 내용은 [방법: 혼합 모드에서 디버깅](../debugger/how-to-debug-in-mixed-mode.md)을 참조하세요. 
 
 또한 관리 되는 호출 프로젝트에서 네이티브 DLL을 디버깅할 수 있습니다. 자세한 내용은 [관리 및 네이티브 코드를 디버그 하는 방법을](how-to-debug-managed-and-native-code.md)합니다. 
 
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [관리 코드 디버그](../debugger/debugging-managed-code.md)   
- [Visual c + + 프로젝트 형식](../debugger/debugging-preparation-visual-cpp-project-types.md)   
- [C#F#, 및 Visual Basic 프로젝트 형식](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
- [C + + 디버그 구성에 대 한 프로젝트 설정](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
- [프로젝트 설정에 대 한 C# 디버그 구성](../debugger/project-settings-for-csharp-debug-configurations.md)   
- [Visual Basic 디버그 구성에 대 한 프로젝트 설정](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
+ [Visual C++ 프로젝트 형식](../debugger/debugging-preparation-visual-cpp-project-types.md)   
+ [C#, F# 및 Visual Basic 프로젝트 형식](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
+ [C++ 디버그 구성을 위한 프로젝트 설정](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
+ [C# 디버그 구성을 위한 프로젝트 설정](../debugger/project-settings-for-csharp-debug-configurations.md)   
+ [Visual Basic 디버그 구성을 위한 프로젝트 설정](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [디버거 보안](../debugger/debugger-security.md)

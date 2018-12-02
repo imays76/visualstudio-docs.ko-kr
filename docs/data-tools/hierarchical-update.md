@@ -23,18 +23,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 56b85f96815fca34330f57f6b653c497f21a835b
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
-ms.translationtype: MT
+ms.openlocfilehash: 52225ba4801fcee92b3f68fd6ec1cf7cc6c63086
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750801"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305717"
 ---
 # <a name="hierarchical-update"></a>계층적 업데이트
 
 *계층적 업데이트* 무결성 규칙을 유지 하면서 데이터베이스에 다시 (둘 이상의 관련된 테이블을 사용 하 여 데이터 집합)에서 업데이트 된 데이터를 저장 하는 프로세스를 가리킵니다. *참조 무결성* 삽입, 업데이트 및 삭제 관련된 레코드의 동작을 제어 하는 데이터베이스에서 제약 조건에 의해 제공 되는 일관성 규칙을 가리킵니다. 예를 들어 참조 무결성 적용 해당 고객에 대 한 주문을 만들 수 있도록 허용 하기 전에 고객 레코드를 생성 하는 것입니다.  데이터 집합의 관계에 대 한 자세한 내용은 참조 하세요. [데이터 집합의 관계](../data-tools/relationships-in-datasets.md)합니다.
 
-계층적 업데이트 기능을 사용 하는 `TableAdapterManager` 관리 하는 `TableAdapter`형식화 된 데이터 집합의 합니다. `TableAdapterManager` 되지 않도록 구성 요소는 Visual Studio에서 생성 된 클래스의 일부는 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]합니다. Windows Form 또는 WPF 페이지에 데이터 소스 창에서 테이블을 끌어 Visual Studio의 폼 이나 페이지에서 TableAdapterManager 형식의 변수를 추가 하 고 구성 요소 트레이에 디자이너에 표시 합니다. 에 대 한 자세한 내용은 합니다 `TableAdapterManager` 클래스의 TableAdapterManager 참조 섹션을 참조 하십시오 [Tableadapter](../data-tools/create-and-configure-tableadapters.md)합니다.
+계층적 업데이트 기능을 사용 하는 `TableAdapterManager` 관리 하는 `TableAdapter`형식화 된 데이터 집합의 합니다. `TableAdapterManager` 되지 않도록 구성 요소는 Visual Studio에서 생성 된 클래스의 일부는 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]합니다. 테이블을 끌면 합니다 **데이터 원본** 폼 이나 페이지에서 TableAdapterManager 형식의 변수를 추가 하는 Windows Form 또는 WPF 페이지에서 Visual Studio 창 및 구성 요소 트레이에 디자이너에 표시 합니다. 에 대 한 자세한 내용은 합니다 `TableAdapterManager` 클래스의 TableAdapterManager 참조 섹션을 참조 하십시오 [Tableadapter](../data-tools/create-and-configure-tableadapters.md)합니다.
 
 기본적으로 데이터 집합 취급 관련된 테이블 "관계에만 해당" 즉, foreign key 제약 조건을 강제 적용 하지 않습니다. 사용 하 여 디자인 타임에 해당 설정을 수정할 수 있습니다 합니다 **데이터 집합 디자이너**합니다. 표시 하기 위해 두 테이블 간의 관계 선을 선택 합니다 **관계** 대화 상자. 여기에서 수행한 변경 내용을 결정 하는 방법을 `TableAdapterManager` 때 동작 변경 내용이 관련된 테이블의 데이터베이스에 다시 보내는 것입니다.
 
@@ -65,7 +65,7 @@ ms.locfileid: "50750801"
 > [!NOTE]
 > 업데이트 순서는 모두 포괄 이해 하는 것이 반드시 합니다. 즉, 업데이트가 수행 된 삽입 및 삭제 데이터 집합의 모든 테이블에 대해 수행 됩니다.
 
-설정 하는 `UpdateOrder` 에서 항목을 위로 끌어 놓은 후 속성을를 [데이터 소스 창](add-new-data-sources.md) 폼으로 선택는 `TableAdapterManager` 구성 요소 트레이를 설정을 `UpdateOrder` 속성에는 **속성** 창입니다.
+설정 하는 `UpdateOrder` 에서 항목을 위로 끌어 놓은 후 속성을를 [데이터 소스 창](add-new-data-sources.md#data-sources-window) 폼으로 선택는 `TableAdapterManager` 구성 요소 트레이를 설정을 `UpdateOrder` 속성에는 **속성** 창입니다.
 
 ## <a name="create-a-backup-copy-of-a-dataset-before-performing-a-hierarchical-update"></a>계층적 업데이트를 수행 하기 전에 백업 복사본을 데이터 집합 만들기
 
@@ -80,18 +80,18 @@ ms.locfileid: "50750801"
 
 `TableAdapterManager.UpdateAll` 메서드를 호출한 다음 관련 테이블이 포함된 데이터 집합의 이름을 전달하여 데이터 집합의 관련 데이터 테이블에서 데이터베이스로 변경 내용을 저장합니다. 예를 들어 NorthwindDataset에 포함된 모든 테이블의 업데이트를 백 엔드 데이터베이스로 보내려면 `TableAdapterManager.UpdateAll(NorthwindDataset)` 메서드를 실행합니다.
 
-항목을 삭제 한 후를 **데이터 원본** 창에서 코드를 자동으로 추가 됩니다는 `Form_Load` 이벤트를 각 테이블을 채웁니다 (합니다 `TableAdapter.Fill` 메서드). 코드에도 추가 됩니다는 **저장** 단추 클릭 이벤트에는 <xref:System.Windows.Forms.BindingNavigator> 다시 데이터베이스에 데이터 집합에서 데이터를 저장 하려면 (의 `TableAdapterManager.UpdateAll` 메서드).
+**데이터 원본** 창에서 항목을 놓으면 코드가 `Form_Load` 이벤트에 자동으로 추가되어 각 테이블을 채웁니다(`TableAdapter.Fill` 메서드). 또한 데이터 세트의 데이터를 데이터베이스에 다시 저장할 수 있도록 <xref:System.Windows.Forms.BindingNavigator>의 **저장** 단추 클릭 이벤트에도 코드가 추가됩니다(`TableAdapterManager.UpdateAll` 메서드).
 
-생성된 저장 코드에는 `CustomersBindingSource.EndEdit` 메서드를 호출하는 코드 줄도 포함됩니다. 호출 보다 구체적으로 <xref:System.Windows.Forms.BindingSource.EndEdit%2A> 메서드의 첫 번째 <xref:System.Windows.Forms.BindingSource>폼에 추가 된 합니다. 즉,이 코드는만에서 끌어 첫 번째 테이블에 대 한 생성 된 **데이터 원본** 창에서 폼입니다. <xref:System.Windows.Forms.BindingSource.EndEdit%2A> 호출에서는 현재 편집 중인 데이터 바인딩된 컨트롤의 프로세스에 포함된 모든 변경 내용을 커밋합니다. 따라서 데이터 바인딩된 컨트롤에 있는 경우 여전히 포커스 클릭 하면 합니다 **저장** 단추를 보류 중인 모든 편집 컨트롤 실제 저장 전에 커밋된에 (의 `TableAdapterManager.UpdateAll` 메서드).
+생성된 저장 코드에는 `CustomersBindingSource.EndEdit` 메서드를 호출하는 코드 줄도 포함됩니다. 호출 보다 구체적으로 <xref:System.Windows.Forms.BindingSource.EndEdit%2A> 메서드의 첫 번째 <xref:System.Windows.Forms.BindingSource>폼에 추가 된 합니다. 즉,이 코드는만에서 끌어 첫 번째 테이블에 대 한 생성 된 **데이터 원본** 창에서 폼입니다. <xref:System.Windows.Forms.BindingSource.EndEdit%2A> 호출에서는 현재 편집 중인 데이터 바인딩된 컨트롤의 프로세스에 포함된 모든 변경 내용을 커밋합니다. 따라서 데이터 바인딩된 컨트롤에 계속 포커스가 있는 상태에서 **저장** 단추를 클릭하면 실제 저장 전에 해당 컨트롤에서 보류 중인 모든 편집 내용이 커밋됩니다(`TableAdapterManager.UpdateAll` 메서드).
 
 > [!NOTE]
 > **데이터 집합 디자이너** 만 추가 된 `BindingSource.EndEdit` 폼에 놓은 첫 번째 테이블에 대 한 코드입니다. 그러므로 폼의 각 관련 테이블에 대해 `BindingSource.EndEdit` 메서드를 호출하는 코드 줄을 추가해야 합니다. 이 연습에서는 `OrdersBindingSource.EndEdit` 메서드 호출을 추가해야 합니다.
 
 ### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>저장 전에 관련 테이블로 변경 내용을 커밋하도록 코드를 업데이트하려면
 
-1.  두 번 클릭 합니다 **저장** 단추를 <xref:System.Windows.Forms.BindingNavigator> 열려는 **Form1** 코드 편집기에서.
+1.  <xref:System.Windows.Forms.BindingNavigator>에서 **저장** 단추를 두 번 클릭하여 코드 편집기에서 **Form1**을 엽니다.
 
-2.  `OrdersBindingSource.EndEdit` 메서드를 호출하는 줄 뒤에 `CustomersBindingSource.EndEdit` 메서드를 호출하는 코드 줄을 추가합니다. 코드를 **저장** 단추 클릭 이벤트는 다음과 같습니다.
+2.  `OrdersBindingSource.EndEdit` 메서드를 호출하는 줄 뒤에 `CustomersBindingSource.EndEdit` 메서드를 호출하는 코드 줄을 추가합니다. **저장** 단추 클릭 이벤트 내의 코드는 다음과 같습니다.
 
      [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/VisualBasic/hierarchical-update_1.vb)]
      [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/CSharp/hierarchical-update_1.cs)]
@@ -127,6 +127,6 @@ ms.locfileid: "50750801"
 |*tableName* `TableAdapter` 속성|나타냅니다는 `TableAdapter`합니다. 생성 된 `TableAdapterManager` 각각에 대 한 속성을 포함 `TableAdapter` 관리 합니다. 예를 들어, Customers 및 Orders 테이블이 포함 된 데이터 집합 사용 하 여 생성 됩니다는 `TableAdapterManager` 포함 된 `CustomersTableAdapter` 및 `OrdersTableAdapter` 속성입니다.|
 |`UpdateOrder` 속성|개별 insert, update 및 delete 명령 순서를 제어합니다. 이 설정의 값 중 하나에 `TableAdapterManager.UpdateOrderOption` 열거형입니다.<br /><br /> 기본적으로 `UpdateOrder` 로 설정 된 **InsertUpdateDelete**합니다. 이 즉, 삽입, 업데이트 하 고 삭제 한 다음 데이터 집합의 모든 테이블에 대해 수행 됩니다.|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [데이터를 다시 데이터베이스에 저장](../data-tools/save-data-back-to-the-database.md)
