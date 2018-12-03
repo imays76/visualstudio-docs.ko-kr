@@ -1,7 +1,7 @@
 ---
 title: Visual Studio의 디버거를 사용 하 여 실행 중인 프로세스에 연결 | Microsoft Docs
 ms.custom: H1Hack27Feb2017
-ms.date: 06/20/2018
+ms.date: 09/27/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -29,17 +29,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af44fcfe553cd720461de3a4e16986d573785c2f
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: fd1ceb341ac613eef3e26f3599ee137161545a85
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257344"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389191"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Visual Studio 디버거에서 실행 중인 프로세스에 연결
 로컬 또는 원격 컴퓨터에서 실행 중인 프로세스에 Visual Studio 디버거를 연결할 수 있습니다. 프로세스를 실행 한 후 선택 **디버깅할** > **프로세스에 연결** 누르거나 **Ctrl**+**Alt** + **P** 사용 하 여 Visual Studio에는 **프로세스에 연결** 프로세스에 디버거를 연결 하는 대화 상자.
 
-사용할 수 있습니다 **프로세스에 연결** 로컬 또는 원격 컴퓨터에서 실행 중인 앱을 디버깅 하려면 동시에 여러 프로세스 디버깅, Visual Studio에서 생성 되지 않은 앱을 디버그 또는 사용 하 여 Visual Studio에서 시작 되지 않은 모든 앱을 디버그 합니다 디버거를 연결 합니다. 예를 들어, 디버거 없이 앱을 실행 하는 예외가 발생 하는 경우 다음 앱을 실행 하는 프로세스에 디버거를 연결 하 디버깅을 시작 합니다.
+사용할 수 있습니다 **프로세스에 연결** 로컬 또는 원격 컴퓨터에서 실행 중인 앱을 디버깅 하려면 동시에 여러 프로세스 디버깅, Visual Studio에서 작성 하지 않은 앱을 디버그 또는 사용 하 여 Visual Studio에서 시작 하지 않은 모든 앱을 디버그 합니다 디버거를 연결 합니다. 예를 들어, 디버거 없이 앱을 실행 하 고 예외가 발생 하는 경우 다음 앱을 실행 하는 프로세스에 디버거를 연결 하 디버깅을 시작 합니다.
 
 Visual Studio에서 기본 디버깅에 대 한 자세한 내용은 [디버거를 사용 하 여 시작](../debugger/getting-started-with-the-debugger.md)합니다.
 
@@ -82,7 +82,7 @@ Visual Studio에서 기본 디버깅에 대 한 자세한 내용은 [디버거�
 >[!NOTE]
 >디버깅을 위해 여러 앱에 연결할 수 있지만 한 번에 하나의 앱만 디버거에서 활성화 됩니다. Visual Studio에서 활성 앱을 설정할 수 있습니다 **디버그 위치** 도구 모음 또는 **프로세스** 창입니다.  
 
-##  <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a> 원격 컴퓨터에서 프로세스에 연결  
+##  <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a> 원격 컴퓨터의 프로세스에 연결  
 
 원격 컴퓨터를 선택할 수도 있습니다는 **프로세스에 연결** 대화 상자에서 해당 컴퓨터에서 실행 되는 사용 가능한 프로세스 목록 보기 및 하나 이상의 디버깅에 대 한 프로세스에 연결 합니다. 원격 디버거 (*msvsmon.exe*) 원격 컴퓨터에서 실행 되어야 합니다. 자세한 내용은 [원격 디버깅](../debugger/remote-debugging.md)합니다. 
 
@@ -134,13 +134,13 @@ IIS에 배포 된 ASP.NET 응용 프로그램 디버깅에 대 한 자세한 내
 >[!NOTE]
 >디버깅을 위해 여러 앱에 연결할 수 있지만 한 번에 하나의 앱만 디버거에서 활성화 됩니다. Visual Studio에서 활성 앱을 설정할 수 있습니다 **디버그 위치** 도구 모음 또는 **프로세스** 창입니다.  
 
-일부 경우에는 원격 데스크톱 (터미널 서비스) 세션에서 디버그할 때는 합니다 **사용 가능한 프로세스** 목록 모든 사용 가능한 프로세스를 표시 되지 것입니다. Visual Studio에는 제한 된 사용자 계정이 있는 사용자로 실행 하는 경우는 **사용 가능한 프로세스** 목록 를포함하여다른서버프로세스에서비스에사용되는세션0에서에서실행중인프로세스에표시되지것입니다*w3wp.exe*합니다. 관리자 계정으로 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 를 실행하거나 터미널 서비스 세션 대신 서버 콘솔에서 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 를 실행하여 이 문제를 해결할 수 있습니다. 
+일부 경우에는 원격 데스크톱 (터미널 서비스) 세션에서 디버그할 때는 합니다 **사용 가능한 프로세스** 모든 사용 가능한 프로세스 목록에 표시 되지 않습니다. Visual Studio에는 제한 된 사용자 계정이 있는 사용자로 실행 하는 경우는 **사용 가능한 프로세스** 목록에는 세션 0에서에서 실행 중인 프로세스에 표시 되지 않습니다. 서비스 및 포함 하 여 다른 서버 프로세스에 대 한 세션 0 되 *w3wp.exe*합니다. 관리자 계정으로 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 를 실행하거나 터미널 서비스 세션 대신 서버 콘솔에서 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 를 실행하여 이 문제를 해결할 수 있습니다. 
 
-세 번째 방법은 실행 하 여 프로세스에 연결할 수 있으면 이러한 해결 방법을 둘 다 `vsjitdebugger.exe -p <ProcessId>` Windows 명령줄에서. 사용 하 여 프로세스 id를 확인할 수 있습니다 *tlist.exe*합니다. 가져오려고 *tlist.exe*다운로드 및 설치 디버깅 도구에 대 한 Windows에서 사용할 수 있습니다 [WDK 및 WinDbg 다운로드](/windows-hardware/drivers/download-the-wdk)합니다.
+이러한 해결 방법을 둘 다 사용할 수 없는 경우 세 번째 방법으로 Windows 명령줄에서 `vsjitdebugger.exe -p <ProcessId>`를 실행하여 프로세스에 연결합니다. 프로세스 ID는 *tlist.exe*를 사용하여 확인할 수 있습니다. *tlist.exe*를 얻으려면 [WDK 및 WinDbg 다운로드](/windows-hardware/drivers/download-the-wdk)에서 Debugging Tools for Windows를 다운로드하여 설치합니다.
 
 ## <a name="BKMK_reattach"></a> 프로세스에 다시 연결
 
-선택 하 여에 이전에 연결 된 프로세스를 신속 하 게 연결할 수 있습니다 **디버깅할** > **프로세스에 다시 연결** (**Shift** + **Alt**+**P**). 이 명령은 선택 하면 디버거는 즉시 연결 하려고 마지막 이전 프로세스 ID와 일치 하도록 첫 번째 시도 하 여에 연결 된 프로세스가 그리고 경우 실패 하는 이전 프로세스 이름으로 비교 하 여 합니다. 일치 하는 경우 또는 이름이 같은 프로세스가 여러 가지 경우는 **프로세스에 연결** 대화 상자를 열어 올바른 프로세스를 선택할 수 있습니다.
+선택 하 여에 이전에 연결 된 프로세스를 신속 하 게 연결할 수 있습니다 **디버깅할** > **프로세스에 다시 연결** (**Shift** + **Alt**+**P**). 이 명령은 선택 하면 디버거는 이전 프로세스 ID와 일치 하도록 첫 번째 시도 하 여에 연결 된 프로세스가 마지막으로 연결 하려고 즉시 경우 실패 하는 이전에 비교 하 여 프로세스 및 이름. 일치 하는 경우 또는 여러 프로세스 이름이 같은 경우는 **프로세스에 연결** 대화 상자를 열어 올바른 프로세스를 선택할 수 있습니다.
 
 > [!NOTE]
 > 합니다 **프로세스에 다시 연결** 명령은 Visual Studio 2017의 새로운 기능입니다.
@@ -161,23 +161,23 @@ IIS에 배포 된 ASP.NET 응용 프로그램 디버깅에 대 한 자세한 내
 |-|-|-|-|
 |원격 디버그 ASP.NET 4 또는 4.5에서 IIS 서버|원격 도구를 사용 하 고 **프로세스에 연결**|*w3wp.exe*|참조 [원격 원격 IIS 컴퓨터에서 ASP.NET 디버깅](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |IIS 서버에서 원격 디버그 ASP.NET Core|원격 도구를 사용 하 고 **프로세스에 연결**|*dotnet.exe*|앱 배포에 대해서 [Publish to IIS](https://docs.asp.net/en/latest/publishing/iis.html)합니다. 디버깅을 참조 하세요. [원격 IIS 컴퓨터에서 원격 디버깅 Asp.net](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
-|로컬 IIS 서버 (지원 되는 앱 형식에만 해당)에서 클라이언트 쪽 스크립트 디버깅|사용 하 여 **프로세스에 연결**|*chrome.exe*하십시오 *MicrosoftEdgeCP.exe*, 또는 *iexplore.exe*|스크립트 디버깅을 사용할 수 있어야 합니다. Chrome에 대 한 실행 해야 Chrome에서 디버그 모드를 선택 **Webkit 코드** 에 **연결할** 필드입니다.|
-|로컬 컴퓨터의 C#, Visual Basic 또는 c + + 앱을 디버그|사용 하 여 [표준 디버깅](../debugger/getting-started-with-the-debugger.md) 또는 **프로세스에 연결**|*\<응용 프로그램 이름 >.exe*|대부분의 시나리오에서 사용 하 여 표준 디버깅 및 not **프로세스에 연결**합니다.|
-|Windows 데스크톱 앱을 원격 디버그|원격 도구|N/A| 참조 [C# 또는 Visual Basic 앱을 디버깅 하는 원격](../debugger/remote-debugging-csharp.md) 또는 [원격 c + + 앱을 디버그](../debugger/remote-debugging-cpp.md)|
+|지원 되는 앱 형식에 대 한 로컬 IIS 서버에서 클라이언트 쪽 스크립트 디버깅 |사용 하 여 **프로세스에 연결**|*chrome.exe*하십시오 *MicrosoftEdgeCP.exe*, 또는 *iexplore.exe*|스크립트 디버깅을 사용할 수 있어야 합니다. Chrome에 대 한 실행 해야 Chrome에서 디버그 모드를 선택 **Webkit 코드** 에 **연결할** 필드입니다.|
+|디버그는 C#, Visual Basic 또는 c + + 로컬 컴퓨터에서 앱을|사용 하 여 [표준 디버깅](../debugger/getting-started-with-the-debugger.md) 또는 **프로세스에 연결**|*\<응용 프로그램 이름 >.exe*|대부분의 시나리오에서 사용 하 여 표준 디버깅 및 not **프로세스에 연결**합니다.|
+|Windows 데스크톱 앱을 원격 디버그|원격 도구|N/A| 참조 [원격 디버그를 C# 또는 Visual Basic 앱](../debugger/remote-debugging-csharp.md) 하거나 [원격 c + + 앱을 디버그](../debugger/remote-debugging-cpp.md)|
 |디버거 없이 앱을 시작한 후 로컬 컴퓨터에 ASP.NET 앱 디버그|사용 하 여 **프로세스에 연결**|*iiexpress.exe*|로드 앱을 확인 하면 도움이 될이 빠르고 같은 (예) 프로 파일링 하는 경우. |
-|서버 프로세스에서 다른 유형의 지원 되는 앱 디버그|(원격 서버 경우) 원격 도구를 사용 하 고 **프로세스에 연결**|*chrome.exe*하십시오 *iexplore.exe*, 또는 기타 프로세스|필요한 경우 리소스 모니터 프로세스를 식별 하는 데 사용 합니다. 참조 [원격 디버깅](../debugger/remote-debugging.md)합니다.|
-|원격은 Windows 앱 (UWP (유니버설), OneCore, HoloLens, IoT 앱 디버깅|설치 된 앱 패키지 디버그|N/A|참조 [설치 된 앱 패키지 디버그](debug-installed-app-package.md) 사용 하는 대신 **프로세스에 연결**|
-|Visual Studio에서 시작 하지 않은 유니버설 Windows (UWP 앱), OneCore, HoloLens, IoT 앱을 디버그|설치 된 앱 패키지 디버그|N/A|참조 [설치 된 앱 패키지 디버그](debug-installed-app-package.md) 사용 하는 대신 **프로세스에 연결**|  
+|서버 프로세스에서 다른 유형의 지원 되는 앱 디버그|서버가 원격 인 경우 원격 도구를 사용 하 고 **프로세스에 연결**|*chrome.exe*하십시오 *iexplore.exe*, 또는 기타 프로세스|필요한 경우 리소스 모니터 프로세스를 식별 하는 데 사용 합니다. [원격 디버깅](../debugger/remote-debugging.md)을 참조하세요.|
+|원격은 Windows 앱 (UWP (유니버설), OneCore, HoloLens, IoT 앱 디버깅|설치된 앱 패키지 디버그|N/A|참조 [설치 된 앱 패키지 디버그](debug-installed-app-package.md) 사용 하는 대신 **프로세스에 연결**|
+|Visual Studio에서 시작 하지 않은 유니버설 Windows (UWP 앱), OneCore, HoloLens, IoT 앱을 디버그|설치된 앱 패키지 디버그|N/A|참조 [설치 된 앱 패키지 디버그](debug-installed-app-package.md) 사용 하는 대신 **프로세스에 연결**|  
   
 ## <a name="use-debugger-features"></a>디버거 기능을 사용 하 여
 
-(예: 중단점을 적중) Visual Studio 디버거의 전체 기능을 사용 하려면 로컬 소스 및 기호 앱 정확히 일치 해야 하는 프로세스에 연결 하는 경우 (즉, 디버거를 올바른 로드 수 있어야 [기호 (.pbd) 파일이](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)). 기본적으로 디버그 빌드에서 필요합니다.
+(예: 중단점을 적중) Visual Studio 디버거의 전체 기능을 사용 하려면 로컬 소스 및 기호 앱 정확히 일치 해야 하는 프로세스에 연결 하는 경우. 즉, 디버거를 올바른 로드 수 있어야 [기호 (.pdb) 파일](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)합니다. 기본적으로 디버그 빌드에서 필요합니다.
 
 원격 디버깅 시나리오에 대 한 Visual Studio에서 열려 있는 소스 코드 (또는 소스 코드의 복사본) 해야 합니다. 원격 컴퓨터에서 컴파일된 응용 프로그램 이진 파일은 로컬 컴퓨터에서와 동일한 빌드에서 가져와야 합니다.
 
-일부 로컬 디버깅 시나리오에서 디버깅할 수 Visual Studio에서 원본에 액세스할 수 없는 앱을 사용 하 여 올바른 기호 파일이 있는 경우 (기본적으로이 필요 디버그 빌드). 자세한 내용은 참조 하세요. [기호 및 소스 파일 지정](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)합니다.
+일부 로컬 디버깅 시나리오에서 디버깅할 수 있습니다 Visual Studio에서 원본에 액세스할 수 없는 앱을 사용 하 여 올바른 기호 파일이 있는 경우. 기본적으로 디버그 빌드에서 필요합니다. 자세한 내용은 [기호 및 소스 파일 지정](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)합니다.
   
-##  <a name="BKMK_Troubleshoot_attach_errors"></a> 문제 해결 연결 오류  
+##  <a name="BKMK_Troubleshoot_attach_errors"></a> 연결 오류 문제 해결  
  실행 중인 프로세스에 디버거를 연결할 때 이 프로세스에는 한 가지 이상의 코드 형식이 포함될 수 있습니다. 디버거가 연결될 수 있는 코드 형식이 **코드 형식 선택** 대화 상자에서 표시되고 선택됩니다.  
   
  때로는 디버거가 한 코드 형식에는 연결되고 다른 코드 형식에는 연결되지 않을 수도 있습니다. 이러한 문제는 원격 컴퓨터에서 실행 중인 프로세스에 연결하려 할 때 발생할 수 있습니다. 원격 컴퓨터에 설치된 원격 디버깅 구성 요소가 일부 코드 형식만 지원하고 다른 코드 형식은 지원하지 않을 수도 있습니다. 데이터베이스를 직접 디버깅하기 위해 두 개 이상의 프로세스에 연결하려는 경우에도 이 문제가 발생할 수 있습니다. SQL 디버깅은 단일 프로세스에 대한 연결만 지원합니다.  
@@ -186,15 +186,15 @@ IIS에 배포 된 ASP.NET 응용 프로그램 디버깅에 대 한 자세한 내
   
  적어도 하나의 코드 형식에 디버거가 성공적으로 연결되면 프로세스 디버깅을 진행할 수 있습니다. 이 경우 성공적으로 연결된 코드 형식만 디버깅할 수 있습니다. 프로세스에 연결 되지 않은 코드는 계속 실행 되지만 중단점을 설정, 데이터를 보거나, 해당 코드에 다른 디버깅 작업을 수행할 수 없습니다.  
   
- 디버거가 연결되지 않는 특정 코드 형식에만 다시 연결을 시도하면 해당 코드 형식에 디버거가 연결되지 않는 이유를 더 구체적으로 확인할 수 있습니다.  
+ 디버거 코드 형식에 연결 하지 못했습니다 이유에 대 한 자세한 정보를 하려는 경우 해당 코드 형식에만 다시 연결을 시도 합니다.  
   
- **이유 코드 형식 연결 실패에 대 한 특정 정보를 가져오려면:**  
+ **코드 형식에 연결하지 못한 이유에 대한 자세한 정보를 얻으려면:**  
   
 1.  프로세스에서 분리합니다. 에 **디버그** 메뉴에서 **모두 분리**합니다.  
   
 1.  연결에 실패 한 코드 형식만 선택 프로세스에 다시 연결 합니다.  
   
-    1.  에 **프로세스에 연결** 대화 상자에서 프로세스를 선택 합니다 **사용 가능한 프로세스** 목록.  
+    1.  **프로세스에 연결** 대화 상자의 **사용 가능한 프로세스** 목록에서 프로세스를 선택합니다.  
   
     2.  선택 **선택**합니다.  
   
@@ -206,8 +206,8 @@ IIS에 배포 된 ASP.NET 응용 프로그램 디버깅에 대 한 자세한 내
   
     이렇게 하면 연결이 완전히 실패하고 자세한 오류 메시지가 나타납니다.  
   
-## <a name="see-also"></a>참고자료  
- [여러 프로세스 디버깅](../debugger/debug-multiple-processes.md)   
- [Just-in-time 디버깅](../debugger/just-in-time-debugging-in-visual-studio.md)   
+## <a name="see-also"></a>참고 항목  
+ [여러 프로세스 디버그](../debugger/debug-multiple-processes.md)   
+ [Just-In-Time 디버깅](../debugger/just-in-time-debugging-in-visual-studio.md)   
  [원격 디버깅](../debugger/remote-debugging.md)
  
