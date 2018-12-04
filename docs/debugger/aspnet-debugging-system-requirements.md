@@ -20,7 +20,7 @@ ms.workload:
 - aspnet
 ms.openlocfilehash: 71b6cbc3f523b8f21b21b0e69b1d6e45e23acb0c
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49915349"
@@ -44,7 +44,7 @@ ms.locfileid: "49915349"
  > [!IMPORTANT]
  > Windows Server 2008 R2부터 좋습니다 사용 합니다 [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) 각 응용 프로그램 풀의 id로 합니다.
   
- [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 작업자 프로세스의 이름은 디버깅 시나리오와 IIS 버전에 따라 다릅니다. 자세한 내용은 [How to: Find the Name of the ASP.NET Process](../debugger/how-to-find-the-name-of-the-aspnet-process.md)을 참조하세요.  
+ [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 작업자 프로세스의 이름은 디버깅 시나리오와 IIS 버전에 따라 다릅니다. 자세한 내용은 [방법: ASP.NET 프로세스의 이름 찾기](../debugger/how-to-find-the-name-of-the-aspnet-process.md)를 참조하세요.  
   
  IIS를 실행 중인 서버의 machine.config 파일을 편집하여 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 작업자 프로세스를 실행하는 사용자 계정을 변경할 수 있습니다. **IIS(인터넷 정보 서비스) 관리자**를 사용하여 이 작업을 수행하는 것이 가장 좋습니다. 자세한 내용은 [방법:는 작업자 프로세스 사용자 계정으로 실행](../debugger/how-to-run-the-worker-process-under-a-user-account.md)합니다.  
   
