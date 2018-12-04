@@ -100,6 +100,6 @@ ms.locfileid: "49942870"
 어떤 구독을 사용하고 있는지 확실하지 않나요?  자신의 이메일 주소에 할당된 모든 구독을 보려면 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)에 연결합니다. 일부 구독이 표시되지 않으면 하나 이상이 다른 전자 메일 주소에 할당되어 있을 수 있습니다.  해당 구독을 보려면 해당 전자 메일 주소로 로그인해야 합니다.
 
 ## <a name="support-resources"></a>지원 리소스
--  ModernRequirements 제품과 관련하여 도움이 필요하세요?  https://www.modernrequirements.com/support-2/을 방문해 보세요.
+-  ModernRequirements 제품과 관련하여 도움이 필요하세요?  [https://www.modernrequirements.com/support-2/](https://www.modernrequirements.com/support-2/)을 방문해 보세요.
 -  Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 Visual Studio [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)에 문의하세요.
 -  Visual Studio IDE, Azure DevOps Services 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.

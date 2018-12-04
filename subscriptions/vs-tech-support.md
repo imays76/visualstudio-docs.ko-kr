@@ -84,7 +84,7 @@ ms.locfileid: "49950072"
 
 Azure와 관련된 문제에 대해 Visual Studio 구독 기술 지원 혜택을 사용하려면 Azure 구독에 계약 ID 및 액세스 ID를 연결해야 합니다.
 
-1.  https://portal.azure.com을 방문해 로그인
+1.  [https://portal.azure.com](https://portal.azure.com)을 방문해 로그인
 2.  왼쪽 탐색에서 “도움말 + 지원”을 클릭합니다.
 3.  “지원”에서 “지원 계약 연결”을 클릭합니다.
 4.  위의 1번에서 제공된 “액세스 ID” 및 “계약 ID”를 입력합니다.
