@@ -5,12 +5,12 @@ title: Visual Studio 설명서 | Microsoft Docs
 description: Visual Studio 2017을 사용하여 플랫폼 및 장치에 대해 선택한 언어로 응용 프로그램, 서비스 및 도구를 개발하는 방법에 대해 알아봅니다.
 ms.topic: landing-page
 searchScope: []
-ms.openlocfilehash: 9313da2778eb55028a3966f728fc04b37e4cf9c3
-ms.sourcegitcommit: 3e301a124483cc12edf95551e7c3a9070a759985
+ms.openlocfilehash: d4419aadd8be604918b6793685079053e03d4289
+ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52712882"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52821359"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -160,6 +160,6 @@ ms.locfileid: "52712882"
                 </ul>
             </li>
         </ul>
-        <p>Visual Studio Team Services는 Azure DevOps Services로, TFS(Team Foundation Server)는 Azure DevOps Server로 이름이 바뀌었습니다. <a href="/azure/devops/user-guide/what-happened-vsts?view=vsts">What happened to Visual Studio Team Services?</a>(Visual Studio Team Services의 변경 내용) 및 <a href="/tfs/server/tfs-is-now-azure-devops-server">Team Foundation Server is now Azure DevOps Server</a>(Team Foundation Server에서 Azure DevOps Server로 변경)를 참조하세요.</p>
+        <p>Visual Studio Team Services는 Azure DevOps Services로 대체되고, TFS(Team Foundation Server)는 Azure DevOps Server로 이름이 바뀌었습니다. <a href="/azure/devops/user-guide/what-happened-vsts?view=vsts">What happened to Visual Studio Team Services?</a>(Visual Studio Team Services의 변경 내용) 및 <a href="/tfs/server/tfs-is-now-azure-devops-server">Team Foundation Server is now Azure DevOps Server</a>(Team Foundation Server에서 Azure DevOps Server로 변경)를 참조하세요.</p>
     </div>
 </div>

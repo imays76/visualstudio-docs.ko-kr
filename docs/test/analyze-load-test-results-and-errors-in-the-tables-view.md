@@ -23,16 +23,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c2a0ccc4ee9f002a6c0f335aed590d3b8bb79a7c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cab92c4daac6da81541771b534f4f1a6f9be159e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928674"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896629"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>부하 테스트 분석기의 테이블 뷰에서 부하 테스트 결과 및 오류 분석
 
 부하 테스트 실행의 결과를 볼 때 데이터를 다양한 방법으로 분석하는 여러 창을 표시할 수 있습니다. 데이터를 그래프로 표시하여 시간에 따른 변화를 확인할 수도 있고, 데이터를 세부 테이블로 표시할 수도 있습니다.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 테이블 뷰로 전환하려면 **부하 테스트** 도구 모음에서 **테이블**을 선택합니다. 여러 테이블 간에 전환하려면 테이블 눈금 위의 도구 모음에 있는 **테이블** 드롭다운 목록을 사용합니다. 테이블 뷰에는 테이블이 한 번에 네 개까지 표시될 수 있습니다. 자세한 내용은 이 토픽의 [부하 테스트 테이블 바둑판식 배열](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#tile-load-test-tables)을 참조하세요.
 
@@ -41,14 +43,14 @@ ms.locfileid: "49928674"
 > [!NOTE]
 > **마지막**이라는 열은 부하 테스트를 실행하는 동안에만 사용할 수 있습니다. 부하 테스트가 완료된 후에는 이러한 열을 사용할 수 없습니다.
 
- 정렬 기준으로 사용할 열의 제목을 선택하면 대부분의 테이블을 정렬할 수 있습니다. 기본적으로 일부 테이블에는 사용 가능한 열 중 일부가 표시되지 않습니다. 열을 사용할 수 있는 경우 테이블에 열을 추가할 수 있습니다. 열을 추가하려면 테이블을 마우스 오른쪽 단추로 클릭한 다음, **열 추가/제거**를 선택합니다.
+정렬 기준으로 사용할 열의 제목을 선택하면 대부분의 테이블을 정렬할 수 있습니다. 기본적으로 일부 테이블에는 사용 가능한 열 중 일부가 표시되지 않습니다. 열을 사용할 수 있는 경우 테이블에 열을 추가할 수 있습니다. 열을 추가하려면 테이블을 마우스 오른쪽 단추로 클릭한 다음, **열 추가/제거**를 선택합니다.
 
 > [!NOTE]
 > 추가 분석을 위해 테이블의 데이터를 Excel 등의 다른 응용 프로그램으로 복사할 수 있습니다.
 
 ## <a name="the-load-test-tables"></a>부하 테스트 테이블
 
- 다음 표에서는 부하 테스트 실행을 분석하는 데 사용할 수 있는 테이블을 보여 줍니다.
+다음 표에서는 부하 테스트 실행을 분석하는 데 사용할 수 있는 테이블을 보여 줍니다.
 
 |테이블 이름|설명|
 |-|-|

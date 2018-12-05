@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f29e43c66844f915d9d79de3819166905b083df2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ceb3ecde3941a12b7113ede04b5f7dda841c7816
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813988"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894731"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>부하 테스트에 대한 테스트 컨트롤러 및 테스트 에이전트 요구 사항
 
 단위, 웹 성능, 부하 및 수동 테스트를 포함한 여러 테스트 형식이 Visual Studio에 통합되었습니다. Visual Studio를 사용하면 Visual Studio 응용 프로그램 수명 주기 관리 사용자가 테스트 컨트롤러와 하나 이상의 에이전트를 사용하여 원격 컴퓨터에서 테스트를 실행할 수 있습니다. [테스트 에이전트 설치 및 구성](../test/lab-management/install-configure-test-agents.md)을 참조하세요.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="hardware-and-software-requirements"></a>하드웨어 및 소프트웨어 요구 사항
 

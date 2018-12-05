@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa998896ad4c67bcd9e10ee50b4939bdbf915330
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 7f6b0855b18f12bd80ad17c5b544a95e5ee57de9
+ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257370"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52821372"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>완전 초보자를 위한 디버깅하는 방법
 
@@ -244,7 +244,7 @@ Visual Studio에서 코드 줄 옆의 왼쪽 여백을 클릭하여 중단점을
 
     ![구문 오류](../debugger/media/beginners-no-definition.png)
 
-    `GType` 유형의 개체로 각 은하계를 설정하더라도(`MGType` 속성이 있음) 디버거는 `theGalaxy` 개체를 `GType` 유형의 개체로 인식하지 않습니다. 왜 그럴까요? 은하계 유형을 설정하는 코드를 확인해야 합니다. 이렇게 하면 `GType` 클래스에 `MyGType`의 속성이 분명히 있지만 잘못된 항목이 있습니다. `object`에 대한 오류 메시지는 언어 인터프리터에 대한 단서로 확인되었습니다. 유형은 `GType` 유형의 개체 대신 `object` 유형의 개체로 보입니다.
+    `GType` 유형의 개체로 각 은하계를 설정하더라도(`MyGType` 속성이 있음) 디버거는 `theGalaxy` 개체를 `GType` 유형의 개체로 인식하지 않습니다. 왜 그럴까요? 은하계 유형을 설정하는 코드를 확인해야 합니다. 이렇게 하면 `GType` 클래스에 `MyGType`의 속성이 분명히 있지만 잘못된 항목이 있습니다. `object`에 대한 오류 메시지는 언어 인터프리터에 대한 단서로 확인되었습니다. 유형은 `GType` 유형의 개체 대신 `object` 유형의 개체로 보입니다.
 
 1. 은하계 유형 설정과 관련된 코드를 확인하여 `Galaxy` 클래스의 `GalaxyType` 속성이 `GType` 대신 `object`로 지정된 것을 확인합니다.
 

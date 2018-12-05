@@ -11,26 +11,28 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: bda1c548b4db5d7f94a1dd85befdff5645460b83
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 13d0f405b59b95df0edbcfc5e6f051c1f3140035
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295100"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896109"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>웹 성능 테스트에 데이터 소스 추가
 
 데이터를 바인딩하여 다른 값을 같은 테스트에 제공합니다. 예를 들어, 다른 값을 폼 게시 매개 변수에 제공합니다.
 
- ![웹 성능 테스트에 데이터 바인딩](../test/media/web_test_databinding_conceptual.png)
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- 여기에서는 샘플 ASP.NET 응용 프로그램을 사용합니다. 세 개의 *.aspx* 페이지(기본 페이지, 빨강 페이지, 파랑 페이지)가 있습니다. 기본 페이지는 빨강 또는 파랑 및 전송 단추를 선택할 수 있는 라디오 컨트롤이 포함됩니다. 다른 두 *.aspx* 페이지는 매우 간단합니다. 한 페이지의 레이블이 빨강이면, 다른 한 페이지의 레이블은 파랑입니다. 기본 페이지에서 제출을 선택하면 다른 페이지 중 하나가 표시됩니다. [ColorWebApp](https://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) 샘플을 다운로드하거나, 사용자 고유의 웹앱과 함께 따를 수 있습니다.
+![웹 성능 테스트에 데이터 바인딩](../test/media/web_test_databinding_conceptual.png)
 
- ![테스트할 웹 응용 프로그램 실행](../test/media/web_test_databinding_runwebapp.png)
+여기에서는 샘플 ASP.NET 응용 프로그램을 사용합니다. 세 개의 *.aspx* 페이지(기본 페이지, 빨강 페이지, 파랑 페이지)가 있습니다. 기본 페이지는 빨강 또는 파랑 및 전송 단추를 선택할 수 있는 라디오 컨트롤이 포함됩니다. 다른 두 *.aspx* 페이지는 매우 간단합니다. 한 페이지의 레이블이 빨강이면, 다른 한 페이지의 레이블은 파랑입니다. 기본 페이지에서 제출을 선택하면 다른 페이지 중 하나가 표시됩니다. [ColorWebApp](https://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) 샘플을 다운로드하거나, 사용자 고유의 웹앱과 함께 따를 수 있습니다.
 
- 또한 솔루션에는 웹 응용 프로그램의 페이지를 탐색하는 웹 성능 테스트를 포함해야 합니다.
+![테스트할 웹 응용 프로그램 실행](../test/media/web_test_databinding_runwebapp.png)
 
- ![웹 성능 테스트가 포함된 솔루션](../test/media/web_test_databinding_solution.png)
+또한 솔루션에는 웹 응용 프로그램의 페이지를 탐색하는 웹 성능 테스트를 포함해야 합니다.
+
+![웹 성능 테스트가 포함된 솔루션](../test/media/web_test_databinding_solution.png)
 
 ## <a name="create-a-sql-database"></a>SQL 데이터베이스 만들기
 

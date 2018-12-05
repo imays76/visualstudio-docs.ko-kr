@@ -15,20 +15,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9f41e372f6c75e10ebf4d66fcd68eb4652b02f0f
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: c5b740329a1d0cdf9810401a1056ba901056a3af
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36297598"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894536"
 ---
 # <a name="configure-ports-for-test-controllers-and-test-agents"></a>테스트 컨트롤러 및 테스트 에이전트 포트 구성
 
 테스트 컨트롤러, 테스트 에이전트 및 클라이언트에 기본적으로 사용되는 들어오는 포트를 변경할 수 있습니다. 테스트 컨트롤러, 테스트 에이전트 또는 클라이언트를 포트 설정이 충돌하는 다른 소프트웨어와 함께 사용하려는 경우 포트를 변경해야 할 수 있습니다. 테스트 컨트롤러와 클라이언트 간의 방화벽 제한으로 인해 포트를 변경해야 할 수도 있습니다. 이 경우 테스트 컨트롤러에서 클라이언트로 결과를 보낼 수 있게 하기 위해 방화벽에 대해 해당 포트를 허용하도록 수동으로 구성할 수 있습니다.
 
- 다음 그림에서는 테스트 컨트롤러, 테스트 에이전트 및 클라이언트 간의 연결 지점을 보여 줍니다. 이 그림에서는 들어오는 연결과 나가는 연결에 사용되는 포트와 이러한 포트에 사용되는 보안 제한 사항을 간략하게 보여 줍니다.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- ![테스트 컨트롤러와 테스트 에이전트의 포트 및 보안](../test/media/test-controller-agent-firewall.png)
+다음 그림에서는 테스트 컨트롤러, 테스트 에이전트 및 클라이언트 간의 연결 지점을 보여 줍니다. 이 그림에서는 들어오는 연결과 나가는 연결에 사용되는 포트와 이러한 포트에 사용되는 보안 제한 사항을 간략하게 보여 줍니다.
+
+![테스트 컨트롤러와 테스트 에이전트의 포트 및 보안](../test/media/test-controller-agent-firewall.png)
 
 ## <a name="incoming-connections"></a>들어오는 연결
 

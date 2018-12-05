@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 20fa17054c3334566114c5baf9bc98a71025c225
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 19634186e13574c322c2e9bcc636dda3a823b158
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204078"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896196"
 ---
 # <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>방법: 사용자 속도 테스트 조합 모델의 속도 지연에 분포 적용
 
 **부하 테스트 새로 만들기 마법사**를 사용하여 부하 테스트를 만든 후에 부하 테스트 편집기를 사용하여 시나리오의 속성을 테스트 요구 사항 및 목표에 맞게 변경할 수 있습니다.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 **속도 지연에 분포 적용** 속성은 **속성** 창을 사용하여 설정할 수 있습니다. 부하 테스트 시나리오 속성은 부하 테스트 편집기를 사용하여 수정할 수 있습니다.
 

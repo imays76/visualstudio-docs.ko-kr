@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 코딩된 UI 테스트 분석
+title: 코딩된 UI 테스트 분석
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d86dfcd84ba203891deb52b8a4b646f610a3567
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d5c1a8bcc8ee43aa36b8a39cd53f4be4f6882f06
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925218"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896590"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>코딩된 UI 테스트 분석
 
 코딩된 UI 테스트 프로젝트에서 코딩된 UI 테스트를 만들 때는 일부 파일이 솔루션에 추가됩니다. 이 아티클에서는 파일에 대한 정보를 제공 합니다.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## <a name="contents-of-a-coded-ui-test"></a>코딩된 UI 테스트 내용
 

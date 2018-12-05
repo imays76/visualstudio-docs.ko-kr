@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 09faa6473ee3f9570e57655e065a4bb9bd622e9c
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: ffc5d54b9eac28e975b6ee538e6193e52f98282f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948272"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895147"
 ---
 # <a name="code-a-custom-validation-rule-for-a-web-performance-test"></a>웹 성능 테스트에 대한 사용자 지정 유효성 검사 규칙 코딩
 
@@ -30,6 +30,8 @@ ms.locfileid: "51948272"
 
 > [!NOTE]
 > 사용자 지정 추출 규칙을 만들 수도 있습니다. 자세한 내용은 [부하 테스트에 대한 사용자 지정 코드 및 플러그 인 만들기](../test/create-custom-code-and-plug-ins-for-load-tests.md)를 참조합니다.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-create-custom-validation-rules"></a>사용자 지정 유효성 검사 규칙을 만들려면
 

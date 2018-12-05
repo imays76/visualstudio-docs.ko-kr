@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b8eba85de98dd46a8ff6ad44154249598a489f5a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f657babf33c315be2760cf59f3ec57525643f70e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862101"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894575"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>방법: 데스크톱과 상호 작용하는 테스트를 실행하도록 테스트 에이전트 설정
 
 데스크톱과 상호 작용하는 자동화된 테스트를 실행하려면 서비스 대신 프로세스로 실행되도록 에이전트를 설정해야 합니다. 예를 들어 테스트 컨트롤러와 테스트 에이전트를 사용하여 코딩된 UI 테스트를 원격으로 실행하려는 경우나 테스트를 실행하고 테스트 실행 과정을 비디오로 기록하려는 경우 프로세스로 실행할 에이전트를 설정해야 합니다. Visual Studio를 사용하여 테스트 설정의 역할에 에이전트를 할당하거나 Microsoft Test Manager를 사용하여 환경의 역할에 에이전트를 할당할 때 데스크톱과 상호 작용해야 하는 역할에 할당된 모든 에이전트의 설정을 변경해야 합니다.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!WARNING]
 > Microsoft Test Manager를 사용하여 랩 환경을 설정하는 경우 테스트 에이전트가 설치됩니다. **환경 만들기 마법사**에서 역할 중 하나가 코딩된 UI 테스트를 실행하도록 구성할 수 있습니다.
