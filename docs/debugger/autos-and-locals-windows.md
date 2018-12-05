@@ -16,24 +16,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37843e6f84bf16efee4d149ed08a7ecb525d7574
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
-ms.translationtype: HT
+ms.openlocfilehash: 7e94c520ca01a92b65ba05a4ff91aaa4c01e7b8d
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388519"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621473"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>자동 및 지역 창에서 변수 검사
 
-합니다 **자동** 하 고 **지역** windows 디버깅 하는 동안 변수 값을 표시 합니다. Windows는 디버깅 세션 중만 사용할 수 있습니다. 합니다 **자동** 창에 현재 중단점 사용 된 변수가 표시 됩니다. 합니다 **지역** 창 현재 함수나 메서드는 일반적으로 로컬 범위에 정의 된 변수를 표시 합니다. 읽을 하려는 처음 코드를 디버그 하려는 경우 [보다 효과적으로 작성할 C# Visual Studio를 사용 하 여 코드](../debugger/write-better-code-with-visual-studio.md) 하 고 [초보자를 위한 디버깅](../debugger/debugging-absolute-beginners.md) 이 문서를 진행 하기 전에 합니다.
+합니다 **자동** 하 고 **지역** windows 디버깅 하는 동안 변수 값을 표시 합니다. Windows는 디버깅 세션 중만 사용할 수 있습니다. 합니다 **자동** 창에 현재 중단점 사용 된 변수가 표시 됩니다. 합니다 **지역** 창 현재 함수나 메서드는 일반적으로 로컬 범위에 정의 된 변수를 표시 합니다. 읽을 하려는 처음 코드를 디버그 하려는 경우 [잘 작성 하 여 버그를 수정 합니다. C# 코드](../debugger/write-better-code-with-visual-studio.md) 하 고 [초보자를 위한 디버깅](../debugger/debugging-absolute-beginners.md) 이 문서를 진행 하기 전에 합니다.
 
  합니다 **자동** 창은 사용할 수 있습니다 C#, Visual Basic, c + + 및 Python 코드를 JavaScript에 대 한 또는 F#합니다.
   
 열려는 합니다 **자동** 창에서 디버그 하는 동안 **디버그** > **Windows** > **자동**를 누르거나 **Ctrl**+**Alt**+**V** > **A**합니다.  
 
 열려는 합니다 **지역** 창에서 디버그 하는 동안 **디버그** > **Windows** > **지역**를 누르거나 **Alt**+**4**합니다.
-
-기본 디버깅에 대한 자세한 내용은 [디버거 시작](../debugger/getting-started-with-the-debugger.md)을 참조하세요.
 
 > [!NOTE]
 > 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac 용 Visual Studio에 대 한 참조 [Mac 용 Visual Studio에서 데이터 시각화](/visualstudio/mac/data-visualizations)합니다.
@@ -153,5 +151,5 @@ private static int subtractVars(int i, int j)
   
 ## <a name="see-also"></a>참고 항목  
  [디버깅이란?](../debugger/what-is-debugging.md)  
- [보다 효과적으로 작성할 C# Visual Studio를 사용 하는 코드](../debugger/write-better-code-with-visual-studio.md)  
+ [더 나은 C# 코드 작성으로 버그 수정](../debugger/write-better-code-with-visual-studio.md)  
  [디버깅 소개](../debugger/debugger-feature-tour.md) [디버거 창](../debugger/debugger-windows.md)

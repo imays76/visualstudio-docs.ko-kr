@@ -14,12 +14,12 @@ manager: douge
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: a2dfc759fbd42dd435133e223c72760ae5c274c3
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: b9162b1e0cc6b1e4e0a5292825dbdebfeff1ae5f
+ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154465"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52821424"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>스냅숏 디버거를 사용 하 여 라이브 ASP.NET Azure 앱 디버그
 
@@ -36,7 +36,7 @@ Snappoint 및 logpoint 중단점, 유사 하지만 중단점과 달리 snappoint
 
 ## <a name="prerequisites"></a>전제 조건
 
-* 스냅숏 디버거는 Visual Studio 2017 Enterprise 버전 15.5 이상을 사용할 수는 **ASP.NET 및 웹 개발 워크 로드**합니다. ASP.NET Core에 대 한 작업도 수행 해야 합니다. **.NET Core 개발** 워크 로드가 설치 되어 있습니다.
+* 스냅숏 디버거는 Visual Studio 2017 Enterprise 버전 15.5 이상을 사용할 수는 **ASP.NET 및 웹 개발 워크 로드**합니다. ASP.NET Core에 대 한 작업도 수행 해야 합니다 **.NET Core 개발** 워크 로드가 설치 되어 있습니다.
 
     설치 되어 있지 않은 경우 설치할 [Visual Studio 2017 Enterprise 버전 15.5](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 이상. 이전 Visual Studio 2017 설치에서를 업데이트 하는 경우 Visual Studio 설치 관리자를 실행 하 고 스냅숏 디버거 구성 요소를 확인 합니다 **ASP.NET 및 웹 개발 워크 로드**합니다.
 
@@ -84,7 +84,7 @@ Snappoint 및 logpoint 중단점, 유사 하지만 중단점과 달리 snappoint
     > [!TIP]
     > 스냅숏을 볼 때 실행할 수 없습니다 하지만 서로 다른 코드 줄에서 실행을 수행 하려면 코드에서 여러 snappoint를 배치할 수 있습니다. 코드에서 snappoint 여러 개 있는 경우 스냅숏 디버거 하면 해당 스냅숏을 같은 최종 사용자 세션의 지 합니다. 스냅숏 디버거는 여러 사용자가 앱에 도달 하는 경우에 합니다.
 
-## <a name="take-a-snapshot"></a>스냅숏 만들기
+## <a name="take-a-snapshot"></a>스냅숏 가져오기
 
 Snappoint를 켤 때에 snappoint를 배치할 코드 줄이 실행 될 때마다 스냅숏을 캡처하려면 됩니다. 이 실행은 서버의 실제 요청에 의해 발생할 수 있습니다. 방문, 보기로 이동 하 여 브라우저에 웹 사이트의 모든 작업을 수행 하 여 snappoint를 강제로 적중 될 프로그램 snappoint를 발생 시키는 데 필요 합니다.
 
@@ -104,7 +104,7 @@ Snappoint를 켤 때에 snappoint를 배치할 코드 줄이 실행 될 때마�
 
 또한 자세한 snappoint를 앱에 추가 하 고 사용 하 여 켜도록 수는 **컬렉션 업데이트** 단추입니다.
 
-**도움이 필요 하세요?** 참조 된 [문제 해결 및 알려진된 문제](../debugger/debug-live-azure-apps-troubleshooting.md) 하 고 [스냅숏 디버깅 FAQ](../debugger/debug-live-azure-apps-faq.md) 페이지.
+**도움이 필요하세요?** 참조 된 [문제 해결 및 알려진된 문제](../debugger/debug-live-azure-apps-troubleshooting.md) 하 고 [스냅숏 디버깅 FAQ](../debugger/debug-live-azure-apps-faq.md) 페이지.
 
 ## <a name="set-a-conditional-snappoint"></a>조건부 snappoint를 설정 합니다.
 

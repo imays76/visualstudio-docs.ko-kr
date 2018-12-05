@@ -16,16 +16,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df2f0c94fa5d3bfc275a09b065555f32f260ba91
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
-ms.translationtype: MT
+ms.openlocfilehash: 404204696a61c1073b2fa04eeb803e75b50ba38c
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826757"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621528"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Visual Studio 디버거로 코드 탐색
 
-Visual Studio 디버거는 앱의 상태를 검사 하 고 해당 실행 흐름을 표시 하는 코드를 탐색할 수 있습니다. 검사 하려는 코드에 신속 하 게 바로 가기 키, 디버그 명령, 중단점 및 기타 기능을 사용할 수 있습니다. 디버거 탐색 명령 및 바로 가기를 사용 경험을 사용 하 여 빠르고 쉽게 찾아서 앱 문제를 해결할 수 있도록 합니다.  읽을 하려는 처음 코드를 디버그 하려는 경우 [보다 효과적으로 작성할 C# Visual Studio를 사용 하 여 코드](../debugger/write-better-code-with-visual-studio.md) 하 고 [초보자를 위한 디버깅](../debugger/debugging-absolute-beginners.md) 이 문서를 진행 하기 전에 합니다.
+Visual Studio 디버거는 앱의 상태를 검사 하 고 해당 실행 흐름을 표시 하는 코드를 탐색할 수 있습니다. 검사 하려는 코드에 신속 하 게 바로 가기 키, 디버그 명령, 중단점 및 기타 기능을 사용할 수 있습니다. 디버거 탐색 명령 및 바로 가기를 사용 경험을 사용 하 여 빠르고 쉽게 찾아서 앱 문제를 해결할 수 있도록 합니다.  읽을 하려는 처음 코드를 디버그 하려는 경우 [잘 작성 하 여 버그를 수정 합니다. C# 코드](../debugger/write-better-code-with-visual-studio.md) 하 고 [초보자를 위한 디버깅](../debugger/debugging-absolute-beginners.md) 이 문서를 진행 하기 전에 합니다.
   
 ## <a name="basic-debugging"></a>기본적인 디버깅  
 
@@ -41,7 +41,7 @@ Visual Studio 디버거는 앱의 상태를 검사 하 고 해당 실행 흐름�
 
 중단 모드에서 함수, 변수, 하는 동안 앱 실행이 일시 중단 하 고 개체가 메모리에 남아 있습니다. 요소의 위치와 상태 위반이 나 버그를 확인할 수 있습니다. 일부 프로젝트 유형의 경우에 중단 모드에서 응용 프로그램을 조정할을 만들 수 있습니다. 이러한 기능을 보여 주는 비디오를 참조 하세요 [디버거를 사용 하 여 시작](https://www.youtube.com/watch?v=FtGCi5j30YU&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=6)합니다.
 
-소스 또는 기호 없는 코드에서 중단 하는 경우 (*.pdb*) 파일이 로드 디버거 표시를 **원본 파일이 없습니다** 하거나 **기호를 찾을 수 없습니다** 도움이 될 수 있는 페이지 파일 찾기 및 로드 합니다. 참조 [기호 (.pdb) 및 원본 파일 지정](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)합니다. 기호 또는 소스 파일을 로드할 수 없습니다, 하는 경우의 어셈블리 지침 계속 디버깅할 수 있습니다 합니다 **디스어셈블리** 창입니다. 
+소스 또는 기호 없는 코드에서 중단 하는 경우 (*.pdb*) 파일이 로드 디버거 표시를 **원본 파일이 없습니다** 하거나 **기호를 찾을 수 없습니다** 도움이 될 수 있는 페이지 파일 찾기 및 로드 합니다. [기호 파일(.pdb) 및 원본 파일 지정](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)을 참조하세요. 기호 또는 소스 파일을 로드할 수 없습니다, 하는 경우의 어셈블리 지침 계속 디버깅할 수 있습니다 합니다 **디스어셈블리** 창입니다. 
 
 항상 시작 부분에 앱을 시작 하 여 디버깅을 시작할 필요가 없습니다. 누를 수도 있습니다 **F11** 에 [코드로 단계](#BKMK_Step_into__over__or_out_of_the_code), 키를 누릅니다 **F10** 에 [코드 건너뛰기](#BKMK_Step_over_Step_out), 또는 [특정 위치까지 실행 또는 함수](#BKMK_Break_into_code_by_using_breakpoints_or_Break_All)합니다.    
 
@@ -55,7 +55,7 @@ Visual Studio 디버거는 앱의 상태를 검사 하 고 해당 실행 흐름�
 
 디버깅 하는 동안 문이나 코드의 각 줄에서 중지 하려면 사용 **디버그** > **단계씩**, 누르거나 **F11**.  
 
-디버거는 코드 문 하지 실제 줄 안내 합니다. 예를 들어는 `if` 절을 한 줄에 작성할 수 있습니다.  
+디버거는 코드 문 하지 실제 줄 안내 합니다. 예를 들어 한 줄에 `if` 절을 작성할 수 있습니다.  
   
   ```csharp  
   int x = 42;  
@@ -93,13 +93,13 @@ Visual Studio 디버거는 앱의 상태를 검사 하 고 해당 실행 흐름�
   
 코드에 간단한 중단점을 설정 하려면 실행을 일시 중단 시킬 코드 줄 옆에 있는 맨 왼쪽된 여백을 클릭 합니다. 누릅니다 줄을 선택할 수도 있습니다 **F9**를 선택 **디버그** > **중단점 설정/해제**를 마우스 오른쪽 단추로 클릭 하 고 선택 또는 **중단점**  >  **중단점 삽입**합니다. 중단점이 코드 줄 옆에 있는 왼쪽된 여백에 빨간 점이 표시 됩니다. 줄은 실행 직전 디버거가 실행을 일시 중단 합니다.
   
-![중단점을 설정](../debugger/media/dbg_basics_setbreakpoint.png "중단점 설정")  
+![중단점 설정](../debugger/media/dbg_basics_setbreakpoint.png "중단점 설정")  
   
 Visual Studio에서 중단점은 조건부 중단점 및 추적점과 같은 다양한 추가 기능을 제공합니다. 자세한 내용은 참조 하세요 [중단점을 사용 하 여](../debugger/using-breakpoints.md)입니다.  
   
 ### <a name="run-to-a-function-breakpoint"></a>함수 중단점까지 실행  
 
-지정된 된 함수에 도달할 때까지 실행 하도록 디버거에 지시할 수 있습니다. 함수 이름으로 지정할 수 있습니다 하거나 호출 스택에서 선택할 수 있습니다.  
+지정된 된 함수에 도달할 때까지 실행 하도록 디버거에 지시할 수 있습니다. 함수 이름을 지정하거나 호출 스택에서 함수를 선택할 수 있습니다.  
   
 **함수 중단점 이름으로 지정 하려면**
 
@@ -131,7 +131,7 @@ Visual Studio에서 중단점은 조건부 중단점 및 추적점과 같은 다
 
 디버거에서 일시 중지 하는 동안에 소스 코드에서 문 마우스로 수 있습니다 또는 **디스어셈블리** 창과 선택 합니다 **여기까지 실행** 녹색 화살표 아이콘입니다. 사용 하 여 **실행 하려면 클릭** 임시 중단점을 설정할 필요가 없습니다.
 
-![실행 하려면 클릭](../debugger/media/dbg-run-to-click.png "실행 하려면 클릭") 
+![실행하려면 클릭](../debugger/media/dbg-run-to-click.png "실행하려면 클릭") 
 
 > [!NOTE]
 > **실행 하려면 클릭** 의 새로운 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]합니다.
@@ -183,9 +183,9 @@ Microsoft 기호를 로드 하려면 참조 [기호 위치를 구성 하 고 로
 1. 에 **모듈** 창에서 확인할 수 있습니다는 기호가 로드 된 모듈을 합니다 **기호 상태** 열입니다. 선택한 기호를 로드 하려는 모듈을 마우스 오른쪽 단추로 클릭 **기호 로드**합니다.  
   
 ##  <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> 한 단계씩 관리 코드의 속성 및 연산자 실행  
- 기본적으로 디버거는 관리 코드의 속성과 연산자를 건너뜁니다. 대부분의 경우 이렇게 하면 더 나은 디버깅 환경이 제공됩니다. 속성 또는 연산자를 한 단계씩 실행을 사용 하도록 설정 하려면 **디버깅할** > **옵션**합니다. 에 **디버깅** > **일반** 페이지의 선택을 취소 합니다 **속성 및 연산자 건너뛰기 (관리 전용) 단계** 확인란 합니다.
+ 기본적으로 디버거는 관리 코드의 속성과 연산자를 건너뜁니다. 대부분의 경우 이렇게 하면 더 나은 디버깅 환경이 제공됩니다. 속성 또는 연산자를 한 단계씩 실행을 사용 하도록 설정 하려면 **디버깅할** > **옵션**합니다. **디버깅** > **일반** 페이지에서 **속성 및 연산자 건너뛰기(관리 전용)** 확인란의 선택을 취소합니다.
 
-## <a name="see-also"></a>참고자료
- [새로운를 디버그 하시 나요?](../debugger/what-is-debugging.md)  
- [보다 효과적으로 작성할 C# Visual Studio를 사용 하는 코드](../debugger/write-better-code-with-visual-studio.md)  
+## <a name="see-also"></a>참고 항목
+ [디버깅이란?](../debugger/what-is-debugging.md)  
+ [더 나은 C# 코드 작성으로 버그 수정](../debugger/write-better-code-with-visual-studio.md)  
  [디버깅 소개](../debugger/debugger-feature-tour.md) 

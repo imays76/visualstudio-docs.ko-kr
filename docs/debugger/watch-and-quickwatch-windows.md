@@ -18,18 +18,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa469b109e0e22e426d76f75be50309196c6a264
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
-ms.translationtype: MT
+ms.openlocfilehash: 944347f6afc371775afca1b58bae77271b60359c
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826793"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621645"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>조사식 창 및 간략 한 조사식을 사용 하 여 변수를 시청 하세요. 
 
 디버그 하는 동안 사용할 수 있습니다 **Watch** windows 및 **간략 한 조사식** 변수 및 식을 조사 하려면. Windows는 디버깅 세션 중만 사용할 수 있습니다.
 
 **조사식** windows 디버깅 하는 동안 한 번에 여러 변수를 표시할 수 있습니다. 합니다 **간략 한 조사식** 대화 한 번에 하나의 변수가 표시 및 디버그를 계속 하기 전에 닫아야 합니다.
+
+읽을 하려는 처음 코드를 디버그 하려는 경우 [잘 작성 하 여 버그를 수정 합니다. C# 코드](../debugger/write-better-code-with-visual-studio.md) 하 고 [초보자를 위한 디버깅](../debugger/debugging-absolute-beginners.md) 이 문서를 진행 하기 전에 합니다.
 
 ## <a name="observe-variables-with-a-watch-window"></a>조사식 창 변수 관찰
 
@@ -142,11 +144,11 @@ var1 = var2
 
 의도 지정 하지 않으려면 하나 방법은 자동 함수 계산을 끄는 것입니다. **도구** > **옵션** > **디버깅** > **일반**합니다 선택취소**속성 확인 및 기타 암시적 함수 호출**합니다.
 
-에 대 한 C# 만 암시적 함수 호출이 나 속성의 계산을 해제 하는 경우 식을 강제로 계산할 수를 추가 하 여는 **ac** 변수에 형식 한정자 **이름** 에 **시청**  창입니다. 참조 [형식 지정자에서 C#](../debugger/format-specifiers-in-csharp.md)합니다.
+에 대 한 C# 만 암시적 함수 호출이 나 속성의 계산을 해제 하는 경우 식을 강제로 계산할 수를 추가 하 여는 **ac** 변수에 형식 한정자 **이름** 에 **시청**  창입니다. [C#의 형식 지정자](../debugger/format-specifiers-in-csharp.md)를 참조하세요.
 
 ## <a name="bkmk_objectIds"></a> 조사식 창에서 개체 Id를 사용 하 여 (C# 및 Visual Basic)
 
-특정 개체의 동작을 관찰 하려는 경우가 있습니다. 예를 들어, 다음 해당 변수 범위를 벗어난 후 지역 변수에 의해 참조 된 개체를 추적 하는 것이 좋습니다. C# Visual Basic을 수 있습니다 참조 형식의 특정 인스턴스에 대 한 개체 Id를 만들고 사용 하는 **조사식** 창 및 중단점 조건에서 합니다. 개체 ID는 공용 언어 런타임 (CLR) 디버깅 서비스에서 생성 되 고 개체와 연결 합니다.
+특정 개체의 동작을 관찰 하려는 경우가 있습니다. 예를 들어, 다음 해당 변수 범위를 벗어난 후 지역 변수에 의해 참조 된 개체를 추적 하는 것이 좋습니다. C# 및 Visual Basic에서 참조 형식의 특정 인스턴스에 대한 개체 ID를 만들고 **조사식** 창 및 중단점 조건에서 사용할 수 있습니다. 개체 ID는 CLR(공용 언어 런타임) 디버깅 서비스에 의해 생성되고 개체와 연결됩니다.
 
 > [!NOTE]
 > 개체 Id는 가비지 수집 되지 않도록에서 개체를 방해 하지는 약한 참조를 만듭니다. 현재 디버깅 세션에 대해서만 유효합니다.
@@ -223,7 +225,7 @@ public class Program
 >[!NOTE]
 >- C# 디버거에서 값을 자동으로 다시 평가 하지 합니다 **동적 뷰** 코드의 다음 줄으로 진행 하는 경우. 
 >- Visual Basic 디버거 식을 통해 추가 자동으로 새로 고치는 **동적 뷰**합니다.
->- 멤버 평가 **동적 뷰** 가질 수 있습니다 [부작용](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\))합니다. 
+>- **동적 뷰**의 멤버를 평가하면 [부작용](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\))이 발생할 수 있습니다. 
 
 **새 조사식을 삽입할 변수는 개체를 동적 개체:**
   
@@ -277,7 +279,7 @@ static void Main(string[] args)
    
 1. 디버깅을 계속합니다. 변수를 확인할 수 있습니다 합니다 **조사식** 창입니다.
 
-## <a name="see-also"></a>참고자료
- [새로운를 디버그 하시 나요?](../debugger/what-is-debugging.md)  
- [보다 효과적으로 작성할 C# Visual Studio를 사용 하는 코드](../debugger/write-better-code-with-visual-studio.md)  
+## <a name="see-also"></a>참고 항목
+ [디버깅이란?](../debugger/what-is-debugging.md)  
+ [더 나은 C# 코드 작성으로 버그 수정](../debugger/write-better-code-with-visual-studio.md)  
  [디버깅 소개](../debugger/debugger-feature-tour.md) [디버거 창](../debugger/debugger-windows.md)
