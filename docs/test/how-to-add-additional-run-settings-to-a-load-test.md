@@ -11,18 +11,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 88c1170f2740423ba59f43a16ea6990f279c1203
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e894bb0b53240795ad2bf7505ba081dbf479989d
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176777"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896616"
 ---
 # <a name="how-to-add-additional-run-settings-to-a-load-test"></a>방법: 부하 테스트에 실행 설정 추가
 
 부하 테스트의 실행 설정을 통해 다양한 설정을 지정할 수 있습니다. 실행 설정에는 테스트 기간, 결과 수집 세부 수준 및 테스트 실행 시 수집되는 카운터 집합이 포함됩니다. 부하 테스트마다 여러 실행 설정을 만들어 저장한 다음 테스트를 실행할 때 특정 설정을 하나 선택하여 사용할 수 있습니다. **부하 테스트 새로 만들기 마법사**를 사용하여 부하 테스트를 만들 때 초기 실행 설정이 부하 테스트에 추가됩니다.
 
- 여러 가지 조건에서 부하 테스트를 실행할 수 있도록 속성을 다르게 설정하여 더 많은 실행 설정을 부하 테스트에 추가할 수 있습니다. 예를 들어 새 테스트 설정을 추가하면서 샘플링 주기를 다르게 지정하거나, 실행 기간을 더 길게 지정할 수 있습니다. 실행 설정은 한 번에 하나만 사용할 수 있으며, 사용할 실행 설정을 활성 상태로 표시하여 지정해야 합니다.
+여러 가지 조건에서 부하 테스트를 실행할 수 있도록 속성을 다르게 설정하여 더 많은 실행 설정을 부하 테스트에 추가할 수 있습니다. 예를 들어 새 테스트 설정을 추가하면서 샘플링 주기를 다르게 지정하거나, 실행 기간을 더 길게 지정할 수 있습니다. 실행 설정은 한 번에 하나만 사용할 수 있으며, 사용할 실행 설정을 활성 상태로 표시하여 지정해야 합니다.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-add-another-run-setting"></a>다른 실행 설정을 추가하려면
 

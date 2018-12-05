@@ -16,18 +16,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fd184f292a063823b6513e7b6a1817e2477db303
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: ae70422ce3c88a3de6842f3f0946666b86ae559e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380566"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895017"
 ---
 # <a name="load-test-results-summary-overview"></a>부하 테스트 결과 요약 개요
 
 부하 테스트 실행이 끝나면 부하 테스트 요약을 통해 결과를 바로 확인할 수 있습니다. 부하 테스트 요약에는 핵심 결과가 간단하고 읽기 쉬운 형식으로 제공됩니다. 부하 테스트 요약은 인쇄가 가능하므로 이해 관계자에게 결과를 편리하게 전달할 수 있습니다. 또한 부하 테스트 요약은 이전에 실행한 부하 테스트의 부하 테스트 결과를 열 때 기본적으로 표시되는 뷰입니다. 자세한 내용은 [방법: 분석을 위한 부하 테스트 결과 액세스](../test/how-to-access-load-test-results-for-analysis.md)를 참조하세요.
 
- ![요약 뷰](../test/media/ltest_summaryview.png)
+![요약 뷰](../test/media/ltest_summaryview.png)
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="the-load-test-summary"></a>부하 테스트 요약
 
@@ -127,7 +129,7 @@ ms.locfileid: "39380566"
 
 ## <a name="errors"></a>오류
 
-오류 섹션에는 부하 테스트 시 발생한 모든 오류의 목록이 포함됩니다. 또한 오류의 형식 및 하위 형식, 카운트, 마지막 메시지가 표시됩니다. 오류를 선택하면 **오류** 테이블이 열려 해당 오류를 좀 더 자세히 검토할 수 있습니다. 자세한 내용은 [테이블 보기에서 부하 테스트 결과 및 오류 분석](../test/analyze-load-test-results-and-errors-in-the-tables-view.md) 및 [방법: 카운터 패널을 사용하여 오류 분석](../test/how-to-analyze-errors-using-the-counters-panel.md)을 참조하세요.
+오류 섹션에는 부하 테스트 시 발생한 모든 오류의 목록이 포함됩니다. 또한 오류의 형식 및 하위 형식, 카운트, 마지막 메시지가 표시됩니다. 오류를 선택하면 **오류** 테이블이 열려 해당 오류를 좀 더 자세히 검토할 수 있습니다. 자세한 내용은 [테이블 뷰에서 부하 테스트 결과 및 오류 분석](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)을 참조하세요.
 
 > [!NOTE]
 > 단원 제목의 왼쪽에 표시되는 화살표를 선택하면 이 단원을 축소하거나 확장할 수 있습니다.

@@ -17,16 +17,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 57c73a0da427141e4a8f94a51fa57ef7aa871019
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9c635d3a2c21d1ab84feca285c8cea8eb2aac68f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870057"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895082"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>부하 테스트 분석기의 그래프 뷰에서 부하 테스트 결과 분석
 
 부하 테스트의 결과는 서로 다른 몇 개의 창에 데이터로 표시됩니다.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 테스트 결과를 그래프로 표시하려면 **부하 테스트** 도구 모음에서 **그래프**를 선택합니다. 각 개별 그래프는 드롭다운 목록의 맨 위에 그래프 이름이 표시된 상태로 표시됩니다. 패널에 다른 그래프를 표시하려면 목록에서 다른 그래프 이름을 선택합니다.
 
@@ -82,7 +84,6 @@ ms.locfileid: "49870057"
 |**그래프에 카운터 표시:** 부하 테스트 결과 그래프에 카운터를 배치하여 해당 그래프에 다른 종류의 데이터를 추가할 수 있습니다.|-   [방법: 그래프에서 카운터 추가 및 삭제](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
 |**그래프 확대:** 부하 테스트가 완료되면 확대/축소 막대를 사용하여 그래프의 영역으로 확대 및 스크롤할 수 있습니다. 확대하면 부하 테스트 실행 동안 생성된 데이터를 보다 자세히 검사할 수 있습니다.|-   [방법: 그래프의 영역으로 확대](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)|
 |**그래프 바둑판식 배열:** 부하 테스트 결과 그래프는 몇 가지 패턴으로 배열할 수 있습니다. 최대 네 개의 그래프를 바둑판식으로 배열할 수 있습니다.||
-|**그래프의 성능 카운터 출력 모양 수정:** 그래프의 성능 카운터에 대한 그리기 선 옵션을 변경할 수 있습니다. 이 옵션에는 색 및 선 스타일이 포함됩니다. 또한 성능 카운터를 표시하는 데 사용할 범위를 자동으로 지정할지 수동으로 지정할지 선택할 수 있습니다.|-   [방법: 그래프 카운터에 대한 출력 옵션 지정](../test/how-to-specify-plot-options-for-graphing-counters.md)|
 |**사용자 지정 그래프 만들기:** 부하 테스트 결과에 대한 특정 정보를 표시하는 그래프를 디자인할 수 있습니다. 그래프에 표시할 부하 테스트 카운터를 지정하여 사용자 지정 그래프를 디자인합니다.|-   [방법: 사용자 지정 그래프 만들기](../test/how-to-create-custom-graphs-in-load-test-results.md)|
 |**그래프의 성능 카운터 데이터 내보내기:** **그래프** 뷰에서 **부하 테스트 분석기** 도구 모음의 **그래프 데이터를 Excel로 내보내기** 단추를 사용하여 그래프 데이터를 Microsoft Excel로 내보낼 수 있습니다.||
 

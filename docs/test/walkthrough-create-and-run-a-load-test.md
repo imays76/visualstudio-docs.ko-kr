@@ -12,16 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cbe16b5e0b711783c9dfd12ab9a652fb4055fc36
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 649fe84b716355f5c7228e371fa88d80937f24af
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381018"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895381"
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>연습: 단위 테스트를 포함하는 부하 테스트 만들기 및 실행
 
 이 연습에서는 단위 테스트를 포함하는 부하 테스트를 만듭니다.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 이 연습에서는 Visual Studio Enterprise를 사용하여 부하 테스트를 만든 다음 실행하는 과정을 단계별로 설명합니다. 부하 테스트는 웹 성능 테스트와 단위 테스트의 컨테이너입니다. **부하 테스트 새로 만들기 마법사**를 사용하여 부하 테스트를 만듭니다.
 

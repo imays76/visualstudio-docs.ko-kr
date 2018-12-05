@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c4bafd4e7e50838adbe8ba458191c370b4d7427d
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 4a5dd85c56a57b6257041c129925703e8e91e050
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380696"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895615"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>방법: Microsoft Word를 사용하여 수동으로 부하 테스트 성능 보고서 만들기
 
 부하 테스트 결과 요약 뷰와 그래프 뷰에서 데이터를 복사하여 붙여넣는 방법으로 Microsoft Word 부하 테스트 보고서를 수동으로 만들 수 있습니다. 요약 뷰와 그래프 뷰에 표시된 데이터는 복사 시 HTML 형식으로 적용됩니다.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!TIP]
 > 테이블 뷰의 일반 텍스트와 세부 정보 뷰의 스크린 샷을 Microsoft Word에 복사할 수도 있지만 이 경우에는 데이터가 HTML 형식으로 적용되지 않으므로 추가로 서식을 지정하고 편집해야 합니다.

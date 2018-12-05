@@ -13,16 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f68ab9b183119c18bed51bb7faaa86993d7f34ce
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: cddc0b9ca470fa43b00ec08b3b6316704df41e91
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179881"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896330"
 ---
 # <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>방법: 부하 테스트 편집기를 사용하여 임계값 규칙 추가
 
 부하 테스트에서 임계값 규칙을 통해 성능 카운터 값을 상수 값이나 다른 성능 카운터 값과 비교할 수 있습니다.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-add-a-threshold-rule"></a>임계값 규칙을 추가하려면
 

@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3851b70f818c9cc601dbbdabce059e16fec747ee
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6525327e85d40b9b942e4e29a7d759a15598c824
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909779"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895839"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>방법: 레코더 플러그 인 만들기
 
 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>을 사용하여 기록된 웹 성능 테스트를 수정할 수 있습니다. 수정 사항은 **웹 성능 테스트 레코더** 도구 모음의 **중지**를 선택한 후에 테스트가 저장되고 웹 성능 테스트 편집기에 표시되기 전에 적용됩니다.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 레코더 플러그 인을 사용하면 동적 매개 변수에서 사용자 지정 상관 관계를 수행할 수 있습니다. 웹 성능 테스트에서는 기본 제공 상관 관계 기능을 사용하여 테스트가 완료될 때 또는 사용자가 **웹 성능 테스트 편집기** 도구 모음의 **동적 매개 변수를 웹 테스트 매개 변수로 수준 올리기**를 사용할 때 웹 기록에서 동적 매개 변수를 검색합니다. 그러나 기본 제공 검색 기능으로 항상 모든 동적 매개 변수를 찾을 수 있는 것은 아닙니다. 예를 들어 대개 5-30분마다 값이 변경되는 세션 ID는 찾지 못합니다. 따라서 상관 관계 프로세스를 사용자가 직접 수행해야 합니다.
 
@@ -118,7 +120,7 @@ ms.locfileid: "49909779"
 
 ## <a name="example"></a>예
 
-이 샘플에서는 사용자 지정된 웹 성능 테스트 레코더 플러그 인을 만들어 사용자 지정 동적 매개 변수 상관 관계 연결을 수행하는 방법을 보여 줍니다.
+이 샘플에서는 사용자 지정된 웹 성능 테스트 레코더 플러그 인을 만들어 사용자 지정 동적 매개 변수 상관 관계 연결을 수행하는 방법을 보여줍니다.
 
 > [!NOTE]
 > 전체 샘플 코드 목록은 이 항목의 맨 아래에 있습니다.

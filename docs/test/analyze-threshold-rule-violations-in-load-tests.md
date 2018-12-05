@@ -17,18 +17,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 41837a9ff3d67f2d712352115bcb6581580b32a3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 17a79e4c684ee60d18288bc30ce1e3fce83dc8a5
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813000"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895433"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>부하 테스트 분석기를 사용하여 부하 테스트에서 임계값 규칙 위반 분석
 
 임계값 규칙은 특정 성능 카운터와 연결되며, 위반이 발생하면 성능 카운터가 설정된 값을 초과하거나 이러한 값 아래로 떨어진 것입니다. 부하 테스트를 실행할 때 이전에 설정한 임계값 규칙에서 발생하는 위반을 분석할 수 있습니다.
 
 위반이 발생한 경우 **부하 테스트 분석기**의 상태 표시줄에 **임계값 위반** 하이퍼링크가 표시되고 발생한 위반 개수가 지정됩니다. 이 하이퍼링크를 선택하면 임계값 위반 테이블이 표시됩니다. **카운터** 창 및 그래프에서도 임계값 위반을 볼 수 있습니다.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="view-threshold-violations-in-the-table"></a>테이블에서 임계값 위반 보기
 
@@ -67,8 +69,6 @@ ms.locfileid: "49813000"
  그래프에 임계값 위반이 표시될 수도 있습니다. 임계값 아이콘은 그래프에서 임계값 위반이 발생한 데이터 요소 옆에 표시됩니다.
 
  카운터 트리에서 임계값 위반 아이콘은 특정 카운터 노드에서 루트 노드까지 거슬러 올라가면서 전파됩니다. 따라서 트리를 확장하지 않아 카운터가 표시되지 않은 경우에도 카운터에서 위반이 발생했음을 확인할 수 있습니다.
-
- 자세한 내용은 [그래프 뷰 및 테이블 뷰의 카운터 패널 사용](../test/counters-panel-in-load-test-analyzer.md)을 참조하세요.
 
 ## <a name="view-threshold-violations-on-the-graph"></a>그래프에서 임계값 위반 보기
 

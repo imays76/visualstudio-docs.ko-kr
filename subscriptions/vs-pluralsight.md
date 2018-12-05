@@ -9,12 +9,12 @@ description: 선택한 Visual Studio 구독에 포함된 Pluralsight 교육 구�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: c39b7e052f3e978530dbc093767fabde4172d8e2
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 18de63935f4d8c85e5b5f8d2c3ca26fa4d09b4fc
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389113"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895355"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Pluralsight 교육 혜택
 
@@ -44,7 +44,7 @@ ms.locfileid: "52389113"
    - 확인란을 클릭하여 사용 약관 및 개인정보처리방침에 동의합니다.
    - **혜택 활성화에 동의함**을 클릭합니다.
      > [!div class="mx-imgBorder"]
-     > ![Pluralsight 혜택 활성화](_img/vs-pluralsight/vs-pluralsight-create-account-no-code.png)
+     > ![Pluralsight 혜택 활성화](_img/vs-pluralsight/vs-pluralsight-create-account-no-code.png)  
      > [!div class="mx-imgBorder"]
      > ![Pluralsight 혜택 조건](_img/vs-pluralsight/vs-pluralsight-terms.png)
 

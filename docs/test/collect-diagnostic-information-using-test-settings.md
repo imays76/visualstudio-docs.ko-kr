@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 테스트 설정을 사용하여 진단 정보 수집
+title: 테스트 설정을 사용하여 진단 정보 수집
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0b2d44d0fa50a4d733f62845d54116cceb2f2016
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 288d1ce5511d33a48006c97030d2b9c2f12ec88c
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865351"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895212"
 ---
 # <a name="collect-diagnostic-information-using-test-settings"></a>테스트 설정을 사용하여 진단 정보 수집
 
@@ -32,6 +32,8 @@ Visual Studio에서 *테스트 설정*을 사용하여 테스트를 실행할 �
 -   IntelliTrace 데이터를 수집하여 재현할 수 없는 버그 격리
 
 진단 데이터 어댑터는 테스트 컴퓨터의 동작을 변경하는 데 사용할 수도 있습니다. 예를 들어, Visual Studio의 테스트 설정을 사용하여 다양한 네트워크 토폴로지 병목을 에뮬레이트하여 팀 응용 프로그램의 성능을 평가할 수 있습니다.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="use-test-settings-with-visual-studio"></a>Visual Studio에서 테스트 설정 사용
 

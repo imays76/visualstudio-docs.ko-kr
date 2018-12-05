@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8b38366a97351fae52ae82a4291ed13da996bf41
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 2f04912423dfdbd2baa7beab431871f814c044b0
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296088"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895472"
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>방법: 분산 부하 테스트에 대한 테스트 설정 만들기
 
 테스트 에이전트와 테스트 컨트롤러를 사용하여 테스트를 여러 컴퓨터에 분산할 수 있도록 부하 테스트의 *테스트 설정*을 구성합니다. Visual Studio에서 부하 테스트를 실행할 때 테스트 컴퓨터에 영향을 주는 방법 또는 수집할 데이터 종류를 지정하는 *진단 데이터 어댑터*를 사용하도록 테스트 설정을 구성할 수도 있습니다.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 예를 들어 ASP.NET 프로파일러 진단 데이터 어댑터를 사용하여 코드의 성능 분석 정보를 수집할 수 있습니다. 또한 진단 데이터 어댑터를 사용하여 테스트 컴퓨터에서 발생할 수 있는 잠재적 병목 현상을 시뮬레이션하거나 사용 가능한 시스템 메모리를 줄일 수 있습니다.
 

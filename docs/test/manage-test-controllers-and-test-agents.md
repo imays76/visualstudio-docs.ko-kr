@@ -9,16 +9,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc225862ee4b9fbc2c4c94aaab4f410719391ee7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 48c377a8a5c48db7e0726ab5d5cc238e6b83c71c
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926594"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895290"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>테스트 컨트롤러 및 테스트 에이전트 관리
 
 Visual Studio를 사용하여 테스트를 원격으로 실행하거나 여러 컴퓨터에 테스트를 배포하거나 부하 테스트를 실행하려면 테스트 컨트롤러, 테스트 에이전트 및 테스트 설정 파일을 설치해야 합니다. 이 항목에서는 Test Controller 및 테스트 에이전트를 처음 설치하고 구성한 후 관리하는 방법에 대해 설명합니다.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Microsoft Test Manager를 사용하여 랩 환경에서 테스트를 실행하는 경우 Microsoft Test Manager용 **랩 센터**의 **테스트 컨트롤러 관리자**를 사용하여 테스트 컨트롤러와 해당 에이전트를 관리합니다. 이 항목은 Visual Studio를 사용하여 테스트를 실행할 경우에만 적용할 수 있습니다.
 

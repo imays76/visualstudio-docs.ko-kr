@@ -147,7 +147,7 @@ Dinner Now는 새 요구 사항을 충족하기 위한 비용을 예측해야 �
 |**맵 또는 다이어그램**|**보여 주는 것**|
 |-|-|
 |*코드 맵*<br /><br /> 참조<br /><br /> - [솔루션 전체의 종속성 매핑](../modeling/map-dependencies-across-your-solutions.md)<br />- [찾아보기 및 코드 맵을 다시 정렬](../modeling/browse-and-rearrange-code-maps.md)<br />- [DGML 파일을 편집 하 여 코드 맵 사용자 지정](../modeling/customize-code-maps-by-editing-the-dgml-files.md)|코드의 종속성 및 기타 관계.<br /><br /> 예를 들어 Dinner Now는 어셈블리 및 해당 종속성을 살펴보기 위해 먼저 어셈블리 코드 맵을 검토할 수 있습니다. 맵을 분석하여 해당 어셈블리의 네임스페이스 및 클래스를 살펴볼 수 있습니다.<br /><br /> Dinner Now에서 맵을 만들어서 코드의 특정 영역 및 다른 관계 종류를 살펴볼 수도 있습니다. 솔루션 탐색기를 사용하여 관심 있는 영역 및 관계를 찾고 선택합니다.|
-|*코드 기반 클래스 다이어그램*<br /><br /> [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)을 참조하세요.|코드의 기존 클래스|
+|*코드 기반 클래스 다이어그램*<br /><br /> [방법: 프로젝트에 클래스 다이어그램 추가(클래스 디자이너)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)를 참조하세요.|코드의 기존 클래스|
 
  예를 들어 개발자는 코드 맵을 만듭니다. 범위를 조정하여 새 시나리오가 영향을 미치는 영역에 초점을 맞춥니다. 맵에서 다음 영역이 선택되고 강조 표시됩니다.
 
@@ -167,7 +167,7 @@ Dinner Now는 새 요구 사항을 충족하기 위한 비용을 예측해야 �
 
 |**다이어그램**|**설명 내용**|
 |-|-|
-|*코드 기반 클래스 다이어그램*<br /><br /> [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)을 참조하세요.|코드의 기존 클래스.|
+|*코드 기반 클래스 다이어그램*<br /><br /> [방법: 프로젝트에 클래스 다이어그램 추가(클래스 디자이너)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)를 참조하세요.|코드의 기존 클래스.|
 
 ### <a name="ValidatingCode"></a> 코드와 디자인의 일관성 유지
  Dinner Now는 업데이트된 코드와 디자인의 일관성이 유지되는지 확인해야 합니다. 시스템의 기능 레이어를 설명 및 연결 솔루션 아티팩트를 레이어에 간에 허용 되는 종속성을 지정 하는 종속성 다이어그램을 만듭니다.
@@ -332,7 +332,7 @@ Lucerne 결제 시스템에 대한 다음 맵을 생성하여 클래스, 메서�
 |**다이어그램**|**설명 내용**|
 |-|-|
 |종속성 다이어그램|시스템의 논리적 아키텍처. 종속성 유효성 검사를 사용 하 여 코드와 디자인의 일관성이 유지 되는지 확인 합니다.<br /><br /> 를 기존 dependencys 또는 의도 한 dependencys 식별할 수 있도록 하려면 코드 맵을 만들고 관련된 항목을 그룹화 합니다. 종속성 다이어그램을 만들려면 다음을 참조 하세요:<br /><br /> - [코드에서 종속성 다이어그램 만들기](../modeling/create-layer-diagrams-from-your-code.md)<br />- [종속성 다이어그램: 지침](../modeling/layer-diagrams-guidelines.md)|
-|클래스 다이어그램(코드 기반)|특정 프로젝트에 대한 코드의 기존 클래스.<br /><br /> 코드에서 기존 클래스를 시각화 및 수정하려면 클래스 디자이너를 사용합니다.<br /><br /> [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)을 참조하세요.|
+|클래스 다이어그램(코드 기반)|특정 프로젝트에 대한 코드의 기존 클래스.<br /><br /> 코드에서 기존 클래스를 시각화 및 수정하려면 클래스 디자이너를 사용합니다.<br /><br /> [방법: 프로젝트에 클래스 다이어그램 추가(클래스 디자이너)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)를 참조하세요.|
 
 ### <a name="DefineClasses"></a> 형식 용어집 정의: 클래스 다이어그램
  클래스 다이어그램에서는 시스템에 참가하는 엔터티, 용어 또는 개념과 서로 간의 관계를 정의합니다. 예를 들어 개발 중에 이들 다이어그램을 사용하여 구현 언어나 스타일과 관계없이 각 클래스에 대한 특성 및 작업을 설명할 수 있습니다.

@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2171912d3542049564f23ea69b06186cd1846943
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9c20a56ce2d78ab5ba3c3fdcde19af573a830fc5
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813864"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895628"
 ---
 # <a name="configure-load-test-run-settings"></a>부하 테스트 실행 설정 구성
 
 *실행 설정*은 부하 테스트가 실행되는 방식에 영향을 미치는 속성 집합입니다. 실행 설정은 **속성** 창에서 범주별로 구성됩니다.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 부하 테스트에서 하나 이상의 실행 설정이 있을 수 있지만 하나의 실행 설정만 각 실행에 대해 활성화될 수 있습니다. 다른 실행 설정은 다음 테스트 실행에 사용할 대체 설정을 빠르게 선택하기 위해 제공됩니다.
 
