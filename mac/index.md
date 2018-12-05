@@ -3,14 +3,14 @@ title: Mac용 Visual Studio 소개
 description: 이 문서에서는 Mac용 Visual Studio의 기능을 소개합니다.
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 11/03/2018
 ms.assetid: 3A130EC1-DD8C-4125-9034-B08D7AF7EA65
-ms.openlocfilehash: b04b670be5c56811be2e6ee1ea9dad28677a35e7
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 10b27c26fcef622687b64f225dd04ae966f43cd5
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42625898"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895680"
 ---
 # <a name="introducing-visual-studio-for-mac"></a>Mac용 Visual Studio 소개
 
@@ -26,9 +26,12 @@ Mac용 Visual Studio는 모바일, 데스크톱 및 웹 응용 프로그램을 �
 
 이 문서에서는 Mac용 Visual Studio의 다양한 섹션을 살펴보면서 플랫폼 간 응용 프로그램을 만드는 강력한 도구가 되는 기능을 소개합니다.
 
+> [!TIP]
+> 이제 Mac용 Visual Studio 2019 미리보기를 테스트할 수 있습니다. 이 [설치 지침](install-preview.md)을 따르고, [IDE 둘러보기](ide-tour.md)를 체크 아웃합니다.
+
 ## <a name="installation"></a>설치
 
-Mac용 Visual Studio를 다운로드 및 설치하려면 [설치](installation.md) 가이드의 단계를 수행하세요.
+Mac용 Visual Studio를 다운로드 및 설치하려면 [설치](install-preview.md) 가이드의 단계를 수행하세요.
 
 ## <a name="language-support"></a>언어 지원
 

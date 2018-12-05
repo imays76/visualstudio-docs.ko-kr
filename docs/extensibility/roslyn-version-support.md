@@ -1,6 +1,7 @@
 ---
 title: 지원 되는 Roslyn 패키지 버전 매핑
 ms.date: 11/02/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-sdk
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a8896818afddddd11012a5db4ee23f7ecb4b442
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 18938ef7cdf0b1b0f7193c2f795a394837f92abb
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967559"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896005"
 ---
 # <a name="net-compiler-platform-package-version-reference"></a>.NET 컴파일러 플랫폼 패키지 버전 참조
 
@@ -39,5 +40,5 @@ ms.locfileid: "50967559"
 
 ## <a name="see-also"></a>참고자료
 
-- [.NET compiler Platform SDK](/dotnet/csharp/roslyn-sdk/)
+- [.NET Compiler Platform SDK](/dotnet/csharp/roslyn-sdk/)
 - [Roslyn 분석기 시작](getting-started-with-roslyn-analyzers.md)
