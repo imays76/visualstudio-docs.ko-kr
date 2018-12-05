@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 749c4be37586401d48e9c4a11d8fc70b8ed44c44
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: cf94de633554cef495b0a9a023426ac49de75c76
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382037"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895277"
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>방법: 요청 수준 플러그 인 만들기
 
 ‘요청’은 웹 성능 테스트를 구성하는 선언문입니다. 웹 성능 테스트 플러그 인을 사용하면 웹 성능 테스트의 주 선언문 외부에서 코드를 분리하여 다시 사용할 수 있습니다. 플러그 인을 만들어 개별 요청과 요청을 포함하는 웹 성능 테스트에 추가할 수 있습니다. 사용자 지정 ‘요청 플러그 인’을 사용하면 웹 성능 테스트에서 특정 요청을 실행하는 코드를 호출할 수 있습니다.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 모든 웹 성능 테스트 요청 플러그 인에는 PreRequest 메서드와 PostRequest 메서드가 있습니다. 특정 HTTP 요청에 요청 플러그 인을 연결하고 나면 요청을 실행하기 전에는 PreRequest 이벤트가 발생하고 응답을 받은 후에는 PostRequest가 발생합니다.
 

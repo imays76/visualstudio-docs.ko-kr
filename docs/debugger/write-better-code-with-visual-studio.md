@@ -12,16 +12,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c16cfdc8d554ce9bf556ea707f977989e1dab72
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
-ms.translationtype: HT
+ms.openlocfilehash: e4cf3c7ae8b45f6d3410925977c2c67784b1ca6d
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389379"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621593"
 ---
 # <a name="fix-bugs-by-writing-better-c-code-using-visual-studio"></a>잘 작성 하 여 버그 수정 C# Visual Studio를 사용 하는 코드
 
-코드를 디버깅 걸리는-수 있으며 때로는 이유도 바로-작업. 효과적으로 디버깅 하는 방법을 알아보려면 시간이 걸립니다. Visual Studio와 같은 강력한 IDE를 훨씬 더 쉽게 작업을 수행할 수 있습니다. IDE는 코드를 보다 신속 하 게 디버깅할 수 뿐 아니라 하 고, 하지만 더 적은 버그를 사용 하 여 더 나은 코드를 작성할 수 있습니다 수 있습니다. 이 문서의 목적은 코드 분석기를 사용 하는 경우 이해 하 게 되므로, 디버거를 사용 하 고 다른 도구를 사용 하는 경우에 디버깅 프로세스의 전체적인 보기를 제공 하는 것입니다.
+코드를 디버깅 걸리는-수 있으며 때로는 이유도 바로-작업. 효과적으로 디버깅 하는 방법을 배울 시간이 걸리지만 Visual Studio와 같은 강력한 IDE를 훨씬 더 쉽게 작업을 수행할 수 있습니다. IDE는 코드를 보다 신속 하 게 디버깅할 수 뿐 아니라 하 고, 하지만 더 적은 버그를 사용 하 여 더 나은 코드를 작성할 수 있습니다 수 있습니다. 이 문서의 목적은 코드 분석기를 사용 하는 경우 이해 하 게 되므로, 디버거를 사용 하 고 다른 도구를 사용 하는 경우에 디버깅 프로세스의 전체적인 보기를 제공 하는 것입니다.  
 
 이 문서에서는 생산성 디버깅 세션을 확인 하기 위해 IDE를 활용 하는 방법에 대 한 이야기입니다. 에서는 터치 여러 작업을 같은:
 

@@ -44,7 +44,7 @@ ms.locfileid: "51295906"
   프로젝트에 대한 기능이나 패키지가 정의되지 않더라도 두 노드는 모두 항상 모든 SharePoint 프로젝트에 표시됩니다.  
   
 #### <a name="features-node"></a>기능 노드
- **기능** 노드에는 SharePoint 프로젝트 기능이 하나 이상 포함됩니다. 기능은 SharePoint용 확장의 컨테이너입니다. 기능이 SharePoint 서버에 배포되고 나면 SharePoint 사이트에서 SharePoint 관리자가 기능을 사이트 정의에 포함하거나 개별적으로 활성화할 수 있습니다. 자세한 내용은 [기능 작업](http://go.microsoft.com/fwlink/?LinkID=147704)을 참조하세요.  
+  **기능** 노드에는 SharePoint 프로젝트 기능이 하나 이상 포함됩니다. 기능은 SharePoint용 확장의 컨테이너입니다. 기능이 SharePoint 서버에 배포되고 나면 SharePoint 사이트에서 SharePoint 관리자가 기능을 사이트 정의에 포함하거나 개별적으로 활성화할 수 있습니다. 자세한 내용은 [기능 작업](http://go.microsoft.com/fwlink/?LinkID=147704)을 참조하세요.  
   
  콘텐츠 형식이나 목록 인스턴스와 같은 항목을 SharePoint 프로젝트에 추가하면 해당 항목은 **기능** 노드의 기능에 추가됩니다. 항목 범위에 따라 새 기능 또는 기존 기능에 추가되는지 결정됩니다. 새 항목의 범위가 기존 기능 범위와 같으면 새 항목은 기존 기능에 추가됩니다. 그러지 않으면 항목이 새 기능에 추가됩니다.  
   
@@ -53,7 +53,7 @@ ms.locfileid: "51295906"
  기능이 SharePoint 프로젝트에 추가되면 **솔루션 탐색기** 에 기본 이름인 Feature*x*.feature를 사용한 노드로 표시됩니다. 여기서 *x* 는 고유 번호입니다. 기능이 SharePoint 서버에 배포되고 나면 SharePoint 관리자가 기능을 활성화하여 SharePoint 사이트 사용자가 사용 가능하도록 설정할 수 있습니다.  
   
 #### <a name="package-node"></a>패키지 노드
- **패키지** 노드에는 SharePoint 프로젝트에 대한 배포 메커니즘으로 사용하는 단일 파일이 포함됩니다. 라고도 하는이 파일을 *솔루션 패키지*, 됩니다. CAB를 기반으로 한 합니다. WSP 확장입니다. 솔루션 패키지는 SharePoint 사이트에 적용되는 기능 집합, 사이트 정의 및 어셈블리가 포함되고 개별적으로 사용하거나 사용하지 않도록 설정할 수 있는 배포 가능하고 재사용 가능한 파일입니다. **패키지** 노드에는 항상 패키지에 대한 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 정의 파일인 Package.wspdef라는 파일이 포함됩니다. 패키지가 SharePoint를 실행하는 서버에 배포되고 나면 SharePoint 관리자가 패키지를 설치하고 해당 기능을 활성화할 수 있습니다.  
+ **패키지** 노드에는 SharePoint 프로젝트에 대한 배포 메커니즘으로 사용하는 단일 파일이 포함됩니다. 라고도 하는이 파일을 *솔루션 패키지*, 됩니다. CAB를 기반으로 한 합니다. WSP 확장입니다. 솔루션 패키지는 SharePoint 사이트에 적용되는 기능 집합, 사이트 정의 및 어셈블리가 포함되고 개별적으로 사용하거나 사용하지 않도록 설정할 수 있는 배포 가능하고 재사용 가능한 파일입니다.  **패키지** 노드에는 항상 패키지에 대한 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 정의 파일인 Package.wspdef라는 파일이 포함됩니다. 패키지가 SharePoint를 실행하는 서버에 배포되고 나면 SharePoint 관리자가 패키지를 설치하고 해당 기능을 활성화할 수 있습니다.  
   
  보거나 패키지 노드를 두 번 클릭 하거나 해당 바로 가기 메뉴를 열고 선택 하 여 패키지 디자이너에서 패키지의 콘텐츠를 변경할 수 있습니다 **열려**합니다. 자세한 내용은 [만들 SharePoint 솔루션 패키지](../sharepoint/creating-sharepoint-solution-packages.md)합니다.  
   
@@ -87,11 +87,11 @@ ms.locfileid: "51295906"
 |속성 이름|설명|  
 |-------------------|-----------------|  
 |배포 충돌 해결|서버에 있는 항목의 속성과 일치하는 속성을 가진 프로젝트 항목을 배포할 때 수행할 작업을 지정합니다. 자세한 내용은 [Troubleshooting SharePoint Packaging and Deployment](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)을 참조하세요.|  
-|기능 속성|SharePoint에 배포될 때 기능과 함께 제공되는 값 집합(키/값 쌍으로 저장됨)을 지정합니다. 기능이 배포되고 나서 코드에서 속성 값에 액세스할 수 있습니다. 자세한 내용은 [Providing Packaging and Deployment Information in Project Items](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)을 참조하세요.|  
-|기능 수신기|프로젝트 항목의 포함 기능에 대한 특정 이벤트가 발생할 때 실행되는 코드를 제공합니다. 자세한 내용은 [Providing Packaging and Deployment Information in Project Items](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)을 참조하세요.|  
+|기능 속성|SharePoint에 배포될 때 기능과 함께 제공되는 값 집합(키/값 쌍으로 저장됨)을 지정합니다. 기능이 배포되고 나서 코드에서 속성 값에 액세스할 수 있습니다. 자세한 내용은 [프로젝트 항목에 패키징 및 배포 정보 제공](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)을 참조하세요.|  
+|기능 수신기|프로젝트 항목의 포함 기능에 대한 특정 이벤트가 발생할 때 실행되는 코드를 제공합니다. 자세한 내용은 [프로젝트 항목에 패키징 및 배포 정보 제공](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)을 참조하세요.|  
 |폴더 이름|SharePoint 프로젝트 항목 폴더의 이름입니다.|  
-|프로젝트 출력 참조|프로젝트 항목이 실행해야 하는 어셈블리 등의 종속성을 지정합니다. 자세한 내용은 [Providing Packaging and Deployment Information in Project Items](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)을 참조하세요.|  
-|안전 컨트롤 항목|신뢰할 수 없는 사용자가 편집할 안전한 컨트롤을 지정합니다. 자세한 내용은 [Providing Packaging and Deployment Information in Project Items](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)을 참조하세요.|  
+|프로젝트 출력 참조|프로젝트 항목이 실행해야 하는 어셈블리 등의 종속성을 지정합니다. 자세한 내용은 [프로젝트 항목에 패키징 및 배포 정보 제공](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)을 참조하세요.|  
+|안전 컨트롤 항목|신뢰할 수 없는 사용자가 편집할 안전한 컨트롤을 지정합니다. 자세한 내용은 [프로젝트 항목에 패키징 및 배포 정보 제공](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)을 참조하세요.|  
   
 ### <a name="project-item-file-properties"></a>프로젝트 항목 파일 속성
   

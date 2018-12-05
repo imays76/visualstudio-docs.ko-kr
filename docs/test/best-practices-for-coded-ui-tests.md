@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 최선의 코딩된 UI 테스트 방법
+title: 최선의 코딩된 UI 테스트 방법
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d158d3d0fade2b44cf819cf40209a901534a18ad
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: ed2ab3ff15e94bf0e014b99b6451840e6f26a04e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283278"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896026"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>코딩된 UI 테스트에 대한 모범 사례
 
 이 항목에서는 코딩된 UI 테스트 개발에 대한 몇 가지 권장 사항을 설명합니다.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## <a name="best-practices"></a>최선의 구현 방법
 

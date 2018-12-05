@@ -16,18 +16,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e2d857ccc22d6e824d32a5ae429295563bba334d
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 91e1b3c3a094e9bb510132d9160432a868fd559c
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175675"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896447"
 ---
 # <a name="how-to-access-load-test-results-for-analysis"></a>방법: 분석을 위한 부하 테스트 결과 액세스
 
 부하 테스트 편집기에서 부하 테스트를 실행할 경우 부하 테스트 결과가 자동으로 열리고 실행 중인 부하 테스트가 **부하 테스트 분석기**에 표시됩니다. 명령줄에서 부하 테스트를 실행할 때 부하 테스트 결과에 직접 액세스 해야 합니다.
 
 완료된 부하 테스트의 결과에는 테스트 대상 컴퓨터에서 주기적으로 수집된 성능 카운터 샘플 및 오류 정보가 포함되어 있습니다. 부하 테스트 실행 과정에서 많은 수의 성능 카운터 샘플이 수집될 수 있습니다. 수집되는 성능 데이터의 양은 테스트 실행의 길이, 샘플링 간격, 테스트 대상 컴퓨터의 수, 수집되는 카운터의 수, 구성된 데이터 수집기 및 로깅 수준에 따라 달라집니다. 대규모 부하 테스트의 경우 수집되는 성능 데이터의 양이 몇 기가바이트가 되기 쉽습니다. 자세한 내용은 [테스트 컨트롤러 및 테스트 에이전트](configure-test-agents-and-controllers-for-load-tests.md)를 참조하세요.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-access-a-load-test-result"></a>부하 테스트 결과에 액세스하려면
 

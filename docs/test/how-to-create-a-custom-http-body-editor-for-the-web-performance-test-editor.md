@@ -10,18 +10,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 338aade9ddef3c4ef571ea2a5bffc67064c81869
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0dc31bef7a7d2e91599cdc25be4f98445beda67f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862465"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896746"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>방법: 웹 성능 테스트 편집기에 대한 사용자 지정 HTTP 본문 편집기 만들기
 
 SOAP, REST, asmx, wcf, RIA 및 기타 웹 서비스 요청 형식과 같은 웹 서비스 요청의 문자열 본문 콘텐츠나 이진 본문 콘텐츠를 편집하는 데 사용할 수 있는 사용자 지정 콘텐츠 편집기를 만들 수 있습니다.
 
- 다음 종류의 편집기를 구현할 수 있습니다.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+다음 종류의 편집기를 구현할 수 있습니다.
 
 -   **문자열 콘텐츠 편집기** 이 편집기는 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> 인터페이스를 사용하여 구현합니다.
 

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2c2a5366a9772060a3e94de14b12f5d2ae62cbdf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dbff48696a7fe10266a2c72fc3a3d9fb0e9ba81d
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949317"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896070"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>방법: 웹 성능 테스트 결과 뷰어에 대한 Visual Studio 추가 기능 만들기
 
@@ -28,7 +28,9 @@ ms.locfileid: "49949317"
 
 또한 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies* 폴더에 있는 LoadTestPackage DLL에 대한 참조를 추가해야 합니다.
 
--   **웹 성능 테스트 결과 뷰어**의 UI를 확장하려면 Visual Studio 추가 기능과 사용자 정의 컨트롤을 만들어야 합니다. 다음 절차에서는 추가 기능 및 사용자 정의 컨트롤을 만드는 방법과 **웹 성능 테스트 결과 뷰어**의 UI를 확장하는 데 필요한 클래스를 구현하는 방법에 대해 설명합니다.
+**웹 성능 테스트 결과 뷰어**의 UI를 확장하려면 Visual Studio 추가 기능과 사용자 정의 컨트롤을 만들어야 합니다. 다음 절차에서는 추가 기능 및 사용자 정의 컨트롤을 만드는 방법과 **웹 성능 테스트 결과 뷰어**의 UI를 확장하는 데 필요한 클래스를 구현하는 방법에 대해 설명합니다.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="create-or-open-a-solution-that-contains-an-aspnet-web-application-and-a-web-performance-and-load-test-project"></a>ASP.NET 웹 응용 프로그램과 웹 성능 및 부하 테스트 프로젝트를 포함하는 솔루션 만들기 또는 열기
 

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 컨트롤의 코딩된 UI 테스트 사용
+title: 컨트롤의 코딩된 UI 테스트 사용
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,18 +9,20 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6f71012cca199cbee90995be654a75c1abb7fa79
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: b9f9256407f854e5e7eefbca0cdd767679b9c88c
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153565"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895953"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>컨트롤의 코딩된 UI 테스트 사용
 
 컨트롤을 보다 쉽게 테스트할 수 있으려면 코딩된 UI 테스트 프레임워크에 대한 지원을 구현합니다. 지원 수준 증가는 점진적으로 추가할 수 있습니다. 기록 및 재생 및 속성 유효성 검사 지원으로 시작합니다. 그런 다음, 그 위에 빌드해 컨트롤의 사용자 지정 속성을 인식하기 위해 코딩된 UI 테스트 빌더를 사용하도록 설정합니다. 생성된 코드에서 이러한 속성에 액세스하려면 사용자 지정 클래스를 제공합니다. 또한 기록 중인 작업의 의도와 가까운 방식으로 코딩된 UI 테스트 빌더가 작업을 캡처하도록 할 수 있습니다.
 
 ![CUIT&#95;Full](../test/media/cuit_full.png)
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## <a name="support-record-and-playback-and-property-validation-by-implementing-accessibility"></a>접근성을 구현하여 기록 및 재생, 속성 유효성 검사를 지원
 

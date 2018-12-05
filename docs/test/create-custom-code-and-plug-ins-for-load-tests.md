@@ -13,16 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 01ae9f07d5ec1c0eb2cddda6c24831f213f4bf86
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ed7b588d597626348b4c148c10dad165649b0468
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826975"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895758"
 ---
 # <a name="create-custom-code-and-plug-ins-for-load-tests"></a>부하 테스트에 대한 사용자 지정 코드 및 플러그 인 만들기
 
 사용자 지정 플러그 인은 사용자가 작성하여 부하 테스트 또는 웹 성능 테스트에 연결하는 코드를 사용합니다. 부하 테스트 API 및 웹 성능 테스트 API를 사용하여 테스트용 사용자 지정 플러그 인을 만들어 기본 제공 기능을 확장할 수 있습니다. 부하 테스트에 여러 플러그 인을 추가할 수 있습니다.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="tasks"></a>작업
 

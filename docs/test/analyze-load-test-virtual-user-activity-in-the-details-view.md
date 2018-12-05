@@ -13,23 +13,25 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 32f613f29bb0627f45f5ce331589629744d61373
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 58ab8859bffa89ae19eed6d37c442b71f98ef224
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49840638"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896096"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>부하 테스트 분석기의 세부 정보 뷰에서 부하 테스트 가상 사용자 동작 분석
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
 **가상 사용자 동작 차트**
 
- ![가상 사용자 동작 차트](../test/media/virtual_actchart.png)
+![가상 사용자 동작 차트](../test/media/virtual_actchart.png)
 
- **세부 정보** 뷰에는 부하 테스트 동안 개별 가상 사용자가 수행한 작업을 시각적으로 분석하는 데 사용되는 **가상 사용자 동작 차트**가 표시됩니다. **가상 사용자 동작 차트**를 사용하면 사용자 동작의 패턴(부하 패턴)을 확인하고, 실패했거나 느린 테스트를 연결하고, 다른 가상 사용자 동작 요청을 확인할 수 있습니다. **가상 사용자 동작 차트**를 사용하면 CPU 사용량 스파이크, 초당 요청 수 감소 그리고 스파이크 및 감소 중에 실행된 테스트 또는 페이지를 확인할 수도 있습니다.
+**세부 정보** 뷰에는 부하 테스트 동안 개별 가상 사용자가 수행한 작업을 시각적으로 분석하는 데 사용되는 **가상 사용자 동작 차트**가 표시됩니다. **가상 사용자 동작 차트**를 사용하면 사용자 동작의 패턴(부하 패턴)을 확인하고, 실패했거나 느린 테스트를 연결하고, 다른 가상 사용자 동작 요청을 확인할 수 있습니다. **가상 사용자 동작 차트**를 사용하면 CPU 사용량 스파이크, 초당 요청 수 감소 그리고 스파이크 및 감소 중에 실행된 테스트 또는 페이지를 확인할 수도 있습니다.
 
 > [!NOTE]
-> **가상 사용자 동작 정보 차트**를 사용할 부하 테스트를 실행하려면 먼저 부하 성능 테스트 편집기를 사용하여 **타이밍 정보 저장소** 속성이 **AllIndividualDetails** 옵션으로 설정되어 있는지 확인해야 합니다. 자세한 내용은 [방법: 가상 사용자 동작 차트를 활성화하도록 전체 정보 수집 구성](../test/how-to-configure-load-tests-to-collect-full-details.md)을 참조하세요.
+> **가상 사용자 동작 정보 차트**를 사용할 부하 테스트를 실행하려면 먼저 부하 성능 테스트 편집기를 사용하여 **타이밍 정보 저장소** 속성이 **AllIndividualDetails** 옵션으로 설정되어 있는지 확인해야 합니다.
 
  **정보 범례 패널**
 
@@ -55,7 +57,6 @@ ms.locfileid: "49840638"
 
 |작업|관련 항목|
 |-|-|
-|**가상 사용자 동작 차트를 사용하도록 부하 테스트 구성:** 가상 사용자 동작 데이터를 확인할 부하 테스트를 실행하기 전에 먼저 부하 테스트 속성 설정을 구성해야 합니다.|-   [방법: 가상 사용자 동작 차트를 활성화하도록 전체 정보 수집 구성](../test/how-to-configure-load-tests-to-collect-full-details.md)|
 |**부하 테스트 실행:** 부하 테스트를 만들고 가상 사용자 동작 데이터를 수집하도록 구성한 후에는 테스트를 실행하고 완료될 때까지 기다려야 **가상 사용자 동작 차트**를 볼 수 있습니다.||
 |**가상 사용자 동작 데이터가 들어 있는 부하 테스트 결과 보기:** 부하 테스트를 만들고, 구성하고, 완료한 후에는 **가상 사용자 동작 차트**를 사용하여 가상 사용자 작동 데이터를 볼 수 있습니다.|-   [부하 테스트 결과 분석](../test/analyze-load-test-results-using-the-load-test-analyzer.md)<br />-   [방법: 부하 테스트 중에 가상 사용자가 수행하는 작업 분석](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)|
 |**부하 테스트에서 성능 문제 격리:** **가상 사용자 동작 차트**를 사용하여 부하 테스트에서 성능 문제를 격리할 수 있습니다.|-   [연습: 가상 사용자 동작 차트를 사용하여 문제 격리](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)|

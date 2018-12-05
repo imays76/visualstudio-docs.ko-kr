@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 부하 테스트 실행 설정
+title: 부하 테스트 실행 설정
 ms.date: 10/19/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,20 +10,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d0a3311c90638b3fd34b9d651b89af2bed07f421
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9b0123ba4e6f9565cc31f63a23bb0be0b5bee344
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817400"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895498"
 ---
 # <a name="load-test-run-settings-properties"></a>부하 테스트 실행 설정 속성
 
 부하 테스트의 실행 설정은 테스트 기간, 결과 컬렉션 세부 수준 및 테스트를 실행할 때 수집되는 카운터 집합을 비롯하여 여러 가지 다른 설정을 결정합니다. 부하 테스트마다 여러 실행 설정을 만들어 저장한 다음 테스트를 실행할 때 특정 설정을 하나 선택하여 사용할 수 있습니다. **부하 테스트 새로 만들기 마법사**를 사용하여 부하 테스트를 만들 때 초기 실행 설정이 부하 테스트에 추가됩니다.
 
- 다음 표에서는 부하 테스트 실행 설정에 대한 다양한 속성에 대해 설명합니다. 이 속성은 특정 부하 테스트 요구 사항에 맞게 수정할 수 있습니다.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- 자세한 내용은 [부하 테스트 실행 설정 구성](../test/configure-load-test-run-settings.md)을 참조하세요.
+다음 표에서는 부하 테스트 실행 설정에 대한 다양한 속성에 대해 설명합니다. 이 속성은 특정 부하 테스트 요구 사항에 맞게 수정할 수 있습니다.
+
+자세한 내용은 [부하 테스트 실행 설정 구성](../test/configure-load-test-run-settings.md)을 참조하세요.
 
 ## <a name="general-properties"></a>일반 속성
 
@@ -42,7 +44,7 @@ ms.locfileid: "49817400"
 |속성|정의|
 |-|----------------|
 |**최대 테스트 로그**|부하 테스트에 대해 저장할 최대 테스트 로그 수를 지정합니다. 최대 테스트 로그 수에 대해 입력한 값에 도달하면 부하 테스트에서 로그 수집을 중지합니다. 따라서 로그는 테스트가 끝나는 시점이 아닌 시작되는 시점에 수집됩니다. 부하 테스트는 완료될 때까지 계속해서 실행됩니다.|
-|**완료된 테스트에 대한 로그 빈도 저장**|테스트 로그가 기록되는 빈도를 지정합니다. 테스트 횟수가 이 숫자에 이를 때마다 테스트 로그에 테스트가 기록됩니다. 예를 들어 10을 값으로 입력하면 10번째, 20번째, 30번째 테스트 등이 테스트 로그에 기록됩니다. 값을 0으로 설정하면 테스트 로그가 저장되지 않도록 지정됩니다.<br /><br /> 자세한 내용은 [방법: 테스트 로그 저장 빈도 지정](../test/how-to-specify-how-frequently-test-logs-are-saved.md)을 참조하세요.|
+|**완료된 테스트에 대한 로그 빈도 저장**|테스트 로그가 기록되는 빈도를 지정합니다. 테스트 횟수가 이 숫자에 이를 때마다 테스트 로그에 테스트가 기록됩니다. 예를 들어 10을 값으로 입력하면 10번째, 20번째, 30번째 테스트 등이 테스트 로그에 기록됩니다. 값을 0으로 설정하면 테스트 로그가 저장되지 않도록 지정됩니다.|
 |**테스트 실패 시 로그 저장**|부하 테스트에서 테스트가 실패하는 경우 테스트 로그를 저장할지 여부를 결정하는 부울 값입니다. 기본값은 `True`입니다.<br /><br /> 자세한 내용은 [방법: 테스트 실패를 테스트 로그에 저장할지 여부 지정](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)을 참조하세요.|
 
  자세한 내용은 [부하 테스트 로깅 설정 수정](../test/modify-load-test-logging-settings.md)을 참조하세요.

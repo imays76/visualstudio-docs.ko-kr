@@ -13,18 +13,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e70c468a70d37d1d8e261844c004af785a68eb54
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9c7e85dcbd62c5f068ce3286145fec2ddddc7947
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827937"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895693"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>방법: 테스트 컨트롤러 및 테스트 에이전트의 시간 제한 기간 지정
 
 테스트 컨트롤러와 테스트 에이전트 모두에는 모두 상호 간에 또는 데이터 소스로부터 응답을 받을 때까지 기다릴 시간을 지정하는 몇 가지 제한 시간 설정이 있으며 이 시간이 지나면 테스트가 실패하고 오류가 발생합니다. 경우에 따라 토폴로지 또는 다른 환경 문제의 요구 사항을 충족하기 위해 이 제한 시간 값을 편집해야 할 수 있습니다. 제한 시간 값을 편집하려면 다음 절차에서 설명하는 대로 테스트 컨트롤러나 테스트 에이전트와 연결된 XML 구성 파일을 편집합니다.
 
- 테스트 컨트롤러 또는 테스트 에이전트의 다양한 제한 시간 설정을 편집하려면 아래 표의 키 이름 및 값을 사용하여 다음 구성 파일을 수정합니다.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+테스트 컨트롤러 또는 테스트 에이전트의 다양한 제한 시간 설정을 편집하려면 아래 표의 키 이름 및 값을 사용하여 다음 구성 파일을 수정합니다.
 
 -   테스트 컨트롤러: *QTController.exe.config*
 

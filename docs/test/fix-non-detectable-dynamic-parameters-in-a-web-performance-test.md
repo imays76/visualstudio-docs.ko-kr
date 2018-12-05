@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 095e986e46332b4bf548cb84188d9f0c35324bc3
-ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
+ms.openlocfilehash: 2a2f75e1aee917a3f4cc9dc7feed15619c23f24e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51645187"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895602"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>웹 성능 테스트에서 검색할 수 없는 동적 매개 변수 수정
 
@@ -30,6 +30,8 @@ ms.locfileid: "51645187"
 -   쿼리 문자열 또는 폼 게시 매개 변수로 설정된 동적 매개 변수 값. 이러한 값은 웹 성능 테스트를 기록한 후 동적 매개 변수 검색을 통해 처리됩니다.
 
 동적 매개 변수 중에는 검색되지 않는 형식도 있습니다. 감지되지 않는 동적 매개 변수를 사용하면 테스트를 실행할 때마다 동적 값이 달라지므로 웹 성능 테스트가 실패합니다. 이러한 매개 변수를 올바르게 처리하기 위해서는 웹 성능 테스트에서 동적 매개 변수에 대한 추출 규칙을 수동으로 추가할 수 있습니다.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="create-and-run-a-web-app-with-dynamic-parameters"></a>동적 매개 변수로 웹 응용 프로그램 만들기 및 실행
 

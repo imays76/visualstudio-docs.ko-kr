@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d6196a940ff1aba0c072c2b81a96371a5ad700d1
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 65e8632a161ac345408a030d2d536086abbe48af
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381455"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895121"
 ---
 # <a name="how-to-specify-if-test-failures-are-saved-to-test-logs-using-the-load-test-editor"></a>방법: 부하 테스트 편집기를 사용하여 테스트 실패를 테스트 로그에 저장할지 여부 지정
 
@@ -25,6 +25,7 @@ ms.locfileid: "39381455"
 > [!NOTE]
 > 실행 설정 속성의 전체 목록과 해당 설명을 보려면 [부하 테스트 실행 설정 속성](../test/load-test-run-settings-properties.md)을 참조하세요.
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-specify-if-the-test-log-is-saved-when-a-test-fails-in-a-scenario"></a>시나리오에서 테스트가 실패할 때 테스트 로그가 저장되는지 여부를 지정하려면
 
@@ -48,5 +49,3 @@ ms.locfileid: "39381455"
 
 - [부하 테스트 시나리오 편집](../test/edit-load-test-scenarios.md)
 - [연습: 부하 테스트 생성 및 실행](../test/walkthrough-create-and-run-a-load-test.md)
-- [방법: 가상 사용자 작업 차트를 활성화하도록 전체 정보 수집 구성](../test/how-to-configure-load-tests-to-collect-full-details.md)
-- [방법: 테스트 로그를 저장할 빈도 지정](../test/how-to-specify-how-frequently-test-logs-are-saved.md)

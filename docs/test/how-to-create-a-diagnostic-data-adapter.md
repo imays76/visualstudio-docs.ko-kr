@@ -10,27 +10,29 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 25b332fb822524f5fcab5e06ab97bfe2d6af8529
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 25adfc867ca208f367f047e4cb94322718e12b52
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851610"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895316"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>방법: 진단 데이터 어댑터 만들기
 
 *진단 데이터 어댑터*를 만들려면 Visual Studio를 사용해서 클래스 라이브러리를 만든 후 Visual Studio Enterprise에서 제공되는 진단 데이터 어댑터 API를 사용자의 클래스 라이브러리에 추가합니다. 테스트 실행 중 발생한 이벤트를 처리할 때 프레임워크에서 제공되는 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink>에 원하는 정보를 스트림 또는 파일 형태로 보냅니다. <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink>로 보낸 스트림이나 파일은 테스트를 마칠 때 테스트 결과에 첨부 파일로 저장됩니다. [!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)]를 사용하거나 이러한 테스트 결과를 기반으로 하여 버그를 만들면 해당 버그에도 이 파일이 연결됩니다.
 
- 테스트를 실행하는 컴퓨터에 적용되거나 테스트 대상 응용 프로그램을 실행하는 데 사용할 환경에 속한 컴퓨터에 적용되는 진단 데이터 어댑터를 만들 수 있습니다. 예를 들어 테스트를 실행하는 테스트 컴퓨터에서 파일을 수집하거나 응용 프로그램의 웹 서버 역할을 하는 컴퓨터에서 파일을 수집할 수 있습니다.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- Microsoft Test Manager 또는 Visual Studio를 사용하여 테스트 설정을 만들 때 표시되는 알기 쉬운 이름을 진단 데이터 어댑터에 지정할 수 있습니다. 테스트 설정을 사용하면 테스트를 실행할 때 해당 환경에서 특정 진단 데이터 어댑터를 실행할 컴퓨터 역할을 정의할 수 있습니다. 테스트 설정을 만들 때 진단 데이터 어댑터를 구성할 수도 있습니다. 예를 들어 웹 서버에서 사용자 지정 로그를 수집하는 진단 데이터 어댑터를 만들 수 있습니다. 테스트 설정을 만들 때 이 웹 서버 역할을 수행하는 컴퓨터에서 이 진단 데이터 어댑터를 실행하도록 선택할 수 있고 작성된 로그 중 마지막 로그 세 개만 수집하도록 테스트 설정의 구성을 수정할 수 있습니다. 테스트 설정에 대한 자세한 내용은 [테스트 설정을 사용하여 진단 정보 수집](../test/collect-diagnostic-information-using-test-settings.md)을 참조하세요.
+테스트를 실행하는 컴퓨터에 적용되거나 테스트 대상 응용 프로그램을 실행하는 데 사용할 환경에 속한 컴퓨터에 적용되는 진단 데이터 어댑터를 만들 수 있습니다. 예를 들어 테스트를 실행하는 테스트 컴퓨터에서 파일을 수집하거나 응용 프로그램의 웹 서버 역할을 하는 컴퓨터에서 파일을 수집할 수 있습니다.
 
- 테스트를 실행하면 진단 데이터 어댑터가 테스트의 해당 지점에서 작업을 수행할 수 있도록 이벤트가 발생합니다.
+Microsoft Test Manager 또는 Visual Studio를 사용하여 테스트 설정을 만들 때 표시되는 알기 쉬운 이름을 진단 데이터 어댑터에 지정할 수 있습니다. 테스트 설정을 사용하면 테스트를 실행할 때 해당 환경에서 특정 진단 데이터 어댑터를 실행할 컴퓨터 역할을 정의할 수 있습니다. 테스트 설정을 만들 때 진단 데이터 어댑터를 구성할 수도 있습니다. 예를 들어 웹 서버에서 사용자 지정 로그를 수집하는 진단 데이터 어댑터를 만들 수 있습니다. 테스트 설정을 만들 때 이 웹 서버 역할을 수행하는 컴퓨터에서 이 진단 데이터 어댑터를 실행하도록 선택할 수 있고 작성된 로그 중 마지막 로그 세 개만 수집하도록 테스트 설정의 구성을 수정할 수 있습니다. 테스트 설정에 대한 자세한 내용은 [테스트 설정을 사용하여 진단 정보 수집](../test/collect-diagnostic-information-using-test-settings.md)을 참조하세요.
+
+테스트를 실행하면 진단 데이터 어댑터가 테스트의 해당 지점에서 작업을 수행할 수 있도록 이벤트가 발생합니다.
 
 > [!IMPORTANT]
 > 이러한 이벤트는 여러 컴퓨터에서 테스트를 실행할 때를 포함하여 여러 스레드에서 발생할 수 있습니다. 따라서 발생할 수 있는 스레드 문제를 알고 사용자 지정 어댑터의 내부 데이터를 실수로 손상시키지 않도록 주의해야 합니다. 진단 데이터 어댑터는 스레드로부터 안전합니다.
 
- 아래 목록에는 진단 데이터 어댑터를 만들 때 사용할 수 있는 몇 가지 주요 이벤트가 나와 있습니다. 진단 데이터 어댑터 이벤트의 전체 목록을 보려면 추상 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents> 클래스를 참조하십시오.
+아래 목록에는 진단 데이터 어댑터를 만들 때 사용할 수 있는 몇 가지 주요 이벤트가 나와 있습니다. 진단 데이터 어댑터 이벤트의 전체 목록을 보려면 추상 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents> 클래스를 참조하십시오.
 
 |이벤트(event)|설명|
 |-|-----------------|
@@ -44,9 +46,9 @@ ms.locfileid: "49851610"
 > [!NOTE]
 > 수동 테스트를 완료하면 어떠한 데이터 수집 이벤트도 더 이상 진단 데이터 어댑터로 전달되지 않습니다. 테스트가 다시 실행되면 새 테스트 사례 식별자가 추가됩니다. 사용자가 테스트 중 테스트를 다시 설정하여 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestCaseReset> 이벤트가 발생하거나 테스트 단계 결과를 변경하면, 데이터 수집 이벤트가 진단 데이터 어댑터로 보내지지 않지만 테스트 사례 식별자는 동일하게 유지됩니다. 테스트 사례가 다시 설정되었는지 여부를 확인하려면 진단 데이터 어댑터의 테스트 사례 식별자를 추적해야 합니다.
 
- 테스트 설정을 만들 때 구성한 정보를 기반으로 데이터 파일을 수집하는 진단 데이터 어댑터를 만들려면 다음 절차를 따릅니다.
+테스트 설정을 만들 때 구성한 정보를 기반으로 데이터 파일을 수집하는 진단 데이터 어댑터를 만들려면 다음 절차를 따릅니다.
 
- 사용자 지정 구성 편집기를 비롯한 전체 예제 진단 데이터 어댑터 프로젝트는 [진단 데이터 어댑터를 만들기 위한 샘플 프로젝트](../test/sample-project-for-creating-a-diagnostic-data-adapter.md)를 참조하세요.
+사용자 지정 구성 편집기를 비롯한 전체 예제 진단 데이터 어댑터 프로젝트는 [진단 데이터 어댑터를 만들기 위한 샘플 프로젝트](../test/sample-project-for-creating-a-diagnostic-data-adapter.md)를 참조하세요.
 
 ##  <a name="create-and-install-a-diagnostic-data-adapter"></a>진단 데이터 어댑터 만들기 및 설치
 

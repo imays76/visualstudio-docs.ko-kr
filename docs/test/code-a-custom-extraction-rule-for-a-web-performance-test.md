@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: edf1f279ef858b70eab82604cace9546fbc3cf5c
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9452df28719dc86e9b43b7f8770787b846c04669
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283212"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895368"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>웹 성능 테스트에 대한 사용자 지정 추출 규칙 코딩
 
@@ -28,6 +28,8 @@ ms.locfileid: "44283212"
 
 > [!NOTE]
 > 사용자 지정 유효성 검사 규칙을 만들 수도 있습니다. 자세한 내용은 [부하 테스트에 대한 사용자 지정 코드 및 플러그 인 만들기](../test/create-custom-code-and-plug-ins-for-load-tests.md)를 참조합니다.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-create-a-custom-extraction-rule"></a>사용자 지정 추출 규칙을 만들려면
 
