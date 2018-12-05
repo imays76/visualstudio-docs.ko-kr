@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 코딩된 UI 테스트에 다른 웹 브라우저 사용
+title: 코딩된 UI 테스트에 다른 웹 브라우저 사용
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,16 +9,18 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 088ae3f16e20234760194be3ed3d6ddb4beb98f3
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: f7301ef674e3ad3b940204be30bfffa878f88e45
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295620"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895108"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>코딩된 UI 테스트에 다른 웹 브라우저 사용
 
 코딩된 UI 테스트는 Internet Explorer로 테스트를 기록하여 웹 응용 프로그램 테스트를 자동화합니다. 그런 다음 이러한 웹 응용 프로그램에 대해 Internet Explorer 또는 기타 브라우저를 사용하여 테스트를 사용자 지정하고 재생할 수 있습니다.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 먼저 [코딩된 UI 다중 브라우저용 Selenium 구성 요소](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting)를 설치합니다.
 

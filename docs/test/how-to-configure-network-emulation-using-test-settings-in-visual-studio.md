@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ce49eb2e6892528d95e40bc1c40e36f355495c65
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d58bf2bc321b3041ffa0958786b976276acf0186
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829289"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896304"
 ---
 # <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>방법: Visual Studio에서 테스트 설정을 사용하여 네트워크 에뮬레이션 구성
 
@@ -24,7 +24,9 @@ Visual Studio에서 다양한 네트워크 환경에 처한 응용 프로그램�
 > [!WARNING]
 > 에뮬레이트한 네트워크보다 속도가 느린 실제 네트워크 환경에서 테스트를 실행하는 경우 더 느린 네트워크 속도에서 테스트가 실행됩니다. 속도가 더 느린 네트워크 환경을 에뮬레이트할 수는 있지만 속도가 더 빠른 네트워크 환경은 에뮬레이트할 수 없습니다.
 
- 다음 절차에서는 구성 편집기를 통해 네트워크 에뮬레이션을 구성하는 방법을 설명합니다. 이러한 단계는 Visual Studio 및 Microsoft Test Manager의 구성 편집기에 모두 적용됩니다.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+다음 절차에서는 구성 편집기를 통해 네트워크 에뮬레이션을 구성하는 방법을 설명합니다. 이러한 단계는 Visual Studio 및 Microsoft Test Manager의 구성 편집기에 모두 적용됩니다.
 
 > [!NOTE]
 > 네트워크 에뮬레이션 진단 데이터 어댑터는 Visual Studio 테스트 설정에만 적용할 수 있습니다. Microsoft Test Manager의 테스트 설정에는 사용되지 않습니다.
@@ -34,9 +36,9 @@ Visual Studio에서 다양한 네트워크 환경에 처한 응용 프로그램�
 > [!NOTE]
 > 테스트 에이전트의 기본 계정인 네트워크 서비스 계정은 Administrators 그룹의 멤버가 아닙니다.
 
- **진정한 네트워크 에뮬레이션**
+**진정한 네트워크 에뮬레이션**
 
- Visual Studio는 모든 테스트 형식에 소프트웨어 기반의 진정한 네트워크 에뮬레이션을 사용합니다. 여기에는 부하 테스트가 포함됩니다. 진정한 네트워크 에뮬레이션은 네트워크 패킷을 직접 조작하여 네트워크 조건을 시뮬레이션합니다. 진정한 네트워크 에뮬레이터는 이더넷과 같은 안정적인 물리적 링크를 사용하여 유선 및 무선 네트워크 모두의 동작을 에뮬레이트할 수 있습니다. 다음과 같은 네트워크 특성이 진정한 네트워크 에뮬레이션에 통합되어 있습니다.
+Visual Studio는 모든 테스트 형식에 소프트웨어 기반의 진정한 네트워크 에뮬레이션을 사용합니다. 여기에는 부하 테스트가 포함됩니다. 진정한 네트워크 에뮬레이션은 네트워크 패킷을 직접 조작하여 네트워크 조건을 시뮬레이션합니다. 진정한 네트워크 에뮬레이터는 이더넷과 같은 안정적인 물리적 링크를 사용하여 유선 및 무선 네트워크 모두의 동작을 에뮬레이트할 수 있습니다. 다음과 같은 네트워크 특성이 진정한 네트워크 에뮬레이션에 통합되어 있습니다.
 
 - 네트워크 왕복 시간(대기 시간)
 
@@ -50,12 +52,13 @@ Visual Studio에서 다양한 네트워크 환경에 처한 응용 프로그램�
 
 - 오류 전파
 
-  진정한 네트워크 에뮬레이션은 IP 주소 또는 프로토콜(예: TCP, UDP, ICMP)을 기준으로 네트워크 패킷을 유연하게 필터링할 수도 있습니다.
+진정한 네트워크 에뮬레이션은 IP 주소 또는 프로토콜(예: TCP, UDP, ICMP)을 기준으로 네트워크 패킷을 유연하게 필터링할 수도 있습니다.
 
-  진정한 네트워크 에뮬레이션은 네트워크 기반 개발자 및 테스터가 원하는 테스트 환경을 에뮬레이트하거나, 성능을 평가하거나, 변경 효과를 예측하거나, 기술 최적화에 대한 결정을 내릴 때 사용할 수 있습니다. 하드웨어 테스트 베드와 비교했을 때 진정한 네트워크 에뮬레이션은 훨씬 비용이 적게 들고 유연한 솔루션입니다.
+진정한 네트워크 에뮬레이션은 네트워크 기반 개발자 및 테스터가 원하는 테스트 환경을 에뮬레이트하거나, 성능을 평가하거나, 변경 효과를 예측하거나, 기술 최적화에 대한 결정을 내릴 때 사용할 수 있습니다. 하드웨어 테스트 베드와 비교했을 때 진정한 네트워크 에뮬레이션은 훨씬 비용이 적게 들고 유연한 솔루션입니다.
 
 ## <a name="configure-network-emulation-for-your-test-settings"></a>테스트 설정을 사용하여 네트워크 에뮬레이션 구성
- 이 절차의 단계를 수행하려면 먼저 Visual Studio에서 테스트 설정을 연 다음, **데이터 및 진단** 페이지를 선택해야 합니다.
+
+이 절차의 단계를 수행하려면 먼저 Visual Studio에서 테스트 설정을 연 다음, **데이터 및 진단** 페이지를 선택해야 합니다.
 
 ### <a name="to-configure-network-emulation-for-your-test-settings"></a>테스트 설정을 사용하여 네트워크 에뮬레이션을 구성하려면
 

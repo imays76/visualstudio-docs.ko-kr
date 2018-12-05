@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3e3710d82ee22975963169940bfae71b21a64279
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 33f44051025310072972ef3c15a1d4a4325c0efe
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820904"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896577"
 ---
 # <a name="emulate-expected-real-world-usage-of-a-website-or-application-in-a-load-test-using-a-test-mix-model"></a>테스트 조합 모델을 사용하여 부하 테스트에서 웹 사이트 또는 응용 프로그램의 예상 실제 사용법 에뮬레이트
 
 부하 모델링 옵션을 사용하여 부하 테스트를 수행하는 웹 사이트 또는 응용 프로그램의 예상 실제 사용법을 보다 정확하게 예측할 수 있습니다. 정확한 부하 모델을 기반으로 하지 않는 부하 테스트에서는 잘못된 결과가 생성될 수 있으므로 부하 모델을 사용하는 것이 중요합니다.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="test-mix-model-enhancements"></a>향상된 테스트 조합 모델
 

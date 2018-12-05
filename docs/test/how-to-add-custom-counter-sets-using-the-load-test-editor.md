@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d9143306b9f3894e7f8f6742420f90aa30008340
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 76ba63b1ca84a09294226ad8c4924df9b1fbb321
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204091"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894692"
 ---
 # <a name="how-to-add-custom-counter-sets-using-the-load-test-editor"></a>방법: 부하 테스트 편집기를 사용하여 사용자 지정 카운터 집합 추가
 
@@ -29,6 +29,8 @@ ms.locfileid: "39204091"
 **부하 테스트 편집기**에서 카운터를 관리합니다. 테스트에 이미 추가된 카운터 집합은 부하 테스트의 **카운터 집합** 노드에 표시됩니다. 부하 테스트를 만든 후 사용자 지정 카운터 집합을 새로 추가할 수 있습니다.
 
 ![사용자 지정 카운터 집합](../test/media/loadtestcustomcounter.png)
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-add-a-custom-counter-set-to-a-load-test"></a>부하 테스트에 사용자 지정 카운터 집합을 추가하려면
 

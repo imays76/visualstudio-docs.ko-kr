@@ -9,18 +9,20 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 97d49c44a2ab7b81a0241366ec9cc6e74401d6f5
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: cbf4d89fc0a32501a2ea275c5168969dd2a0fd19
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180492"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894120"
 ---
 # <a name="extend-coded-ui-tests-and-action-recordings"></a>코딩된 UI 테스트 및 작업 기록 확장
 
 코딩된 UI 테스트 및 작업 기록에 대한 테스트 프레임워크는 가능한 사용자 인터페이스를 일부 지원하지 않습니다. 테스트하려는 특정 UI를 지원하지 않을 수 있습니다. 예를 들어 Microsoft Excel 스프레드시트에 대한 작업 기록 또는 코딩된 UI 테스트는 바로 만들 수 없습니다. 그러나 코딩된 UI 테스트 프레임워크의 확장성을 이용하여 특정 UI를 지원하는 코딩된 UI 테스트 프레임워크에 대한 고유한 확장을 만들 수 있습니다.
 
 ![UI 테스트 아키텍처](../test/media/ui_testarch.png)
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## <a name="sample-extension-to-test-microsoft-excel"></a>Microsoft Excel을 테스트하기 위한 샘플 확장
 

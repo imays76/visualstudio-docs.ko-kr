@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 코딩된 UI 테스트 로그를 사용하여 코딩된 UI 테스트 분석
+title: 코딩된 UI 테스트 로그를 사용하여 코딩된 UI 테스트 분석
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,16 +9,18 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7d743dd11b67c3883bad815b26234717f377ff57
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 9c31dd90981cf39f1de296b2c96d6064afc730b4
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295997"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896681"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>코딩된 UI 테스트 로그를 사용하여 코딩된 UI 테스트 분석
 
 코딩된 UI 테스트 로그는 코딩된 UI 테스트 실행에 대한 중요한 정보를 필터링하고 기록합니다. 로그는 문제를 신속하게 디버깅할 수 있는 형식으로 표시됩니다.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## <a name="step-1-enable-logging"></a>1단계: 로깅 사용
 

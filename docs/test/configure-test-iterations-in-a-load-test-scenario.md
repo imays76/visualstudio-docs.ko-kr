@@ -12,16 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0310ac0ee0e6226f9f5685c590e4dc2e0c49b6b3
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: f5ec275c4b6e7fcf239aa0903ffe68757c5412cc
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176143"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896213"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>부하 테스트 시나리오에서 테스트 반복 구성
 
 테스트 반복 설정을 구성하려면 부하 테스트 편집기 및 **속성** 창을 사용하여 부하 테스트 시나리오를 편집합니다. 기본적으로 부하 테스트 시나리오는 최대 테스트 반복 횟수를 지정하지 않고 설정됩니다. 필요할 경우 시나리오의 최대 반복 횟수와 반복 간 일시 중지 시간을 구성할 수 있습니다.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="specify-the-maximum-test-iterations-for-a-scenario"></a>시나리오에 대한 최대 테스트 반복 횟수 지정
 

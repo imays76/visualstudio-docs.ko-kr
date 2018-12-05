@@ -13,16 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ad1dff59ed942c16f05176f3e26f0042234d4933
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 365b1be6dd3c383c42b08d2c480db7fad104c48f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380168"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894523"
 ---
 # <a name="how-to-create-a-web-performance-test-plug-in"></a>방법: 웹 성능 테스트 플러그 인 만들기
 
 웹 성능 테스트 플러그 인을 사용하면 웹 성능 테스트의 주 선언문 외부에서 코드를 분리하여 다시 사용할 수 있습니다. 사용자 지정 웹 성능 테스트 플러그 인을 사용하면 웹 성능 테스트를 실행하는 일부 코드를 호출할 수 있습니다. 웹 성능 테스트 플러그 인은 테스트가 반복될 때마다 한 번씩 실행됩니다. 또한 테스트 플러그 인에서 PreRequest 또는 PostRequest 메서드를 재정의하면 이러한 요청 플러그 인이 각 요청 전이나 후에 실행됩니다.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 사용자 지정 웹 성능 테스트 플러그 인은 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin> 기본 클래스에서 사용자 클래스를 파생시켜 만들 수 있습니다.
 

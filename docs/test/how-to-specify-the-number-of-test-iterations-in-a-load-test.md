@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a94a5681c0348e6e08f9d777ecebaa3e69886cfe
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: bba6ddfa9162583d687f6638c9b75e178556132b
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379498"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894796"
 ---
 # <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>방법: 부하 테스트 실행 설정에서 테스트 반복 횟수 지정
 
@@ -27,6 +27,7 @@ ms.locfileid: "39379498"
 > [!NOTE]
 > 실행 설정 속성의 전체 목록과 해당 설명을 보려면 [부하 테스트 실행 설정 속성](../test/load-test-run-settings-properties.md)을 참조하세요.
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-specify-the-number-of-test-iterations-in-a-run-setting"></a>실행 설정의 테스트 반복 횟수를 지정하려면
 

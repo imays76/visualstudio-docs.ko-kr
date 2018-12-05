@@ -11,24 +11,25 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cce61d9a56a0f8f79ec943b58fd4d1a1f88e8289
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 1f0fc5bdc5b17c13bfb0d4adf07a4a48347ce38b
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382307"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896460"
 ---
 # <a name="how-to-use-the-web-performance-test-api"></a>방법: 웹 성능 테스트 API 사용
 
 웹 성능 테스트에 대한 코드를 작성할 수 있습니다. 웹 성능 테스트 API를 사용하여 코딩된 웹 성능 테스트, 웹 성능 테스트 플러그 인, 요청 플러그 인, 요청, 추출 규칙 및 유효성 검사 규칙을 만들 수 있습니다. 이러한 형식을 구성하는 클래스는 이 API의 핵심 클래스입니다. 이 API의 다른 형식은 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTest>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequest>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule> 및 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule> 개체 만들기를 지원하는 데 사용됩니다. <xref:Microsoft.VisualStudio.TestTools.WebTesting> 네임스페이스를 사용하여 사용자 지정 웹 성능 테스트를 만듭니다.
 
- 또한 웹 성능 테스트 API를 사용하여 프로그래밍 방식으로 선언적 웹 성능 테스트를 만들고 저장할 수도 있습니다. 이렇게 하려면 <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTest> 및 <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTestSerializer> 클래스를 사용합니다.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+또한 웹 성능 테스트 API를 사용하여 프로그래밍 방식으로 선언적 웹 성능 테스트를 만들고 저장할 수도 있습니다. 이렇게 하려면 <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTest> 및 <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTestSerializer> 클래스를 사용합니다.
 
 > [!TIP]
 > 개체 브라우저를 사용하여 <xref:Microsoft.VisualStudio.TestTools.WebTesting> 네임스페이스를 검사합니다. Visual C# 및 Visual Basic 편집기는 모두 네임스페이스의 클래스를 사용하여 코딩하기 위한 IntelliSense 지원을 제공합니다.
 
-
- 부하 테스트에 대한 플러그 인도 만들 수 있습니다. 자세한 내용은 [방법: 부하 테스트 API 사용](../test/how-to-use-the-load-test-api.md) 및 [방법: 부하 테스트 플러그 인 만들기](../test/how-to-create-a-load-test-plug-in.md)를 참조하세요.
+부하 테스트에 대한 플러그 인도 만들 수 있습니다. 자세한 내용은 [방법: 부하 테스트 API 사용](../test/how-to-use-the-load-test-api.md) 및 [방법: 부하 테스트 플러그 인 만들기](../test/how-to-create-a-load-test-plug-in.md)를 참조하세요.
 
 ## <a name="to-use-the-webtesting-namespace"></a>WebTesting 네임스페이스를 사용하려면
 

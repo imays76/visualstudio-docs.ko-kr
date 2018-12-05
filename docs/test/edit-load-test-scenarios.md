@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 부하 테스트 시나리오 편집
+title: 부하 테스트 시나리오
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,18 +12,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 67398d5a4b2b33ace2d3ba3c74d63693861e586e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 865be7c7c6371f92f85d853a7dde045274fc5efb
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837141"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896538"
 ---
 # <a name="edit-load-test-scenarios"></a>부하 테스트 시나리오 편집
 
 부하 테스트 *시나리오*는 부하 패턴, 테스트 조합, 브라우저 조합 및 네트워크 조합을 지정합니다. 시나리오는 복잡하고 현실적인 워크로드를 시뮬레이션하는 테스트를 구성할 수 있어 중요합니다.
 
 예를 들어, 다양한 연결 속도로 각기 다른 브라우저를 사용하여 동시에 방문하고 있는 수백 명의 고객이 사용하는 인터넷 프런트 엔드가 있는 전자 상거래 사이트를 테스트할 수 있습니다. 내부 직원이 제품을 업데이트하고 통계를 보는 데 사용하는 관리 기능이 같은 사이트에 있을 수 있습니다. 이러한 내부 사용자는 주로 같은 브라우저와 고속 LAN 연결을 사용하여 사이트에 액세스합니다. 서로 다른 두 사용자 그룹의 속성을 다른 시나리오에 캡슐화할 수 있습니다. 각 시나리오는 가상 사용자 형식을 포함할 수 있습니다. 이 경우에는 가상 고객을 나타내는 부하 테스트 시나리오와 웹 사이트의 가상 내부 사용자를 나타내는 또 다른 시나리오를 만들 수 있습니다.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="scenario-components"></a>시나리오 구성 요소
 

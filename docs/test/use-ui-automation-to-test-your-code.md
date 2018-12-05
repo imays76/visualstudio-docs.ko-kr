@@ -1,6 +1,6 @@
 ---
 title: 자동화된 UI 테스트
-ms.date: 11/04/2016
+ms.date: 12/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
@@ -18,16 +18,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cbe8f1b9e0fc1fcc47a8d90e0033e8edb933e1aa
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: ce10c81265ecfd95f43d62c73d69c902eda1a6c6
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296075"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896642"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>UI 자동화를 사용하여 코드 테스트
 
 Visual Studio에서 UI(사용자 인터페이스)를 통해 응용 프로그램을 실행하는 자동화된 테스트를 CUIT(*코딩된 UI 테스트*)라고 합니다. 이러한 테스트는 UI 컨트롤의 기능 테스트를 포함합니다. 이러한 테스트를 통해 사용자 인터페이스를 비롯해 전체 응용 프로그램이 제대로 기능하는지 확인할 수 있습니다. 코딩된 UI 테스트는 특히 사용자 인터페이스(예: 웹 페이지)에 유효성 검사 또는 기타 논리가 있는 경우에 유용합니다. 또한 기존 수동 테스트를 자동화하는 데 자주 사용됩니다.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 다음 그림과 같이 일반적인 개발 경험은 처음에는 간단하게 응용 프로그램을 빌드하고 UI 컨트롤을 클릭해 보면서 제대로 작동하는지 확인하는 것으로 시작할 수 있습니다. 그런 다음, 자동화된 테스트를 만들기로 결정할 수 있습니다. 그러면 응용 프로그램을 계속해서 수동으로 테스트할 필요가 없습니다. 응용 프로그램에서 테스트 중인 특정 기능에 따라 기능 테스트 또는 UI 수준에서 테스트를 포함하거나 포함하지 않을 수 있는 통합 테스트에 대한 코드를 작성할 수 있습니다. 일부 비즈니스 논리에 직접 액세스하려는 경우 단위 테스트를 코딩할 수 있습니다. 그러나 특정 상황에서는 응용 프로그램의 다양한 UI 컨트롤 테스트를 포함하는 것이 유용할 수 있습니다. 코딩된 UI 테스트는 초기 코드 변경(code churn)이 응용 프로그램의 기능에 영향을 미치지 않는지 확인할 수 있습니다.
 

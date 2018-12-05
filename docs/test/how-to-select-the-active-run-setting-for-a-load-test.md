@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f5e7a56ff01e06c0d5046ab477ec78635f01f6c4
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 3bff9be24d5d1f615270bc80790a04e85e7cf25c
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381913"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895329"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>방법: 부하 테스트에 대한 활성 실행 설정 선택
 
 **부하 테스트 새로 만들기 마법사**를 사용하여 부하 테스트를 만든 다음, **부하 테스트 편집기**를 사용하여 시나리오 속성을 테스트 요구 사항 및 목표에 맞게 변경할 수 있습니다.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 부하 테스트에는 부하 테스트가 실행되는 방식에 영향을 미치는 속성 집합인 *실행 설정*이 하나 이상 포함될 수 있습니다. 실행 설정은 **속성** 창에서 범주별로 구성됩니다. 부하 테스트가 실행될 때 현재 활성 상태로 설정되어 있는 실행 설정이 사용됩니다.
 
@@ -31,8 +33,6 @@ ms.locfileid: "39381913"
 **부하 테스트 편집기**에서 활성 실행 설정은 "[Active]" 접미사로 식별됩니다.
 
 ## <a name="select-the-active-run-setting"></a>활성 실행 설정 선택
-
-### <a name="to-select-the-active-run-setting-in-a-load-test"></a>부하 테스트에서 활성 실행 설정을 선택하려면
 
 1.  부하 테스트를 엽니다.
 

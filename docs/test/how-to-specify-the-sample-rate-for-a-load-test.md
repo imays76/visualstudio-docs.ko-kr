@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e73e723c25d4f84b3f98f2e22f876ad82f498158
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a672e5a61006ed9764497bd115ba2bd98f91f6cd
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880119"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896785"
 ---
 # <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>방법: 부하 테스트 실행 설정에 대한 샘플 속도 지정
 
 **부하 테스트 새로 만들기 마법사**를 사용하여 부하 테스트를 만든 다음, **부하 테스트 편집기**를 사용하여 속성을 테스트 요구 사항 및 목표에 맞게 변경할 수 있습니다.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 **부하 테스트 편집기**를 사용하여 **속성** 창에서 실행 설정의 **샘플링 주기** 속성 값을 편집할 수 있습니다. 실행 설정 속성의 전체 목록과 해당 설명을 보려면 [부하 테스트 실행 설정 속성](../test/load-test-run-settings-properties.md)을 참조하세요.
 

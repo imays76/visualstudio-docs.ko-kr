@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ee123e474ad4b52b3debe6ad65bf6424388fe191
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: acb786a4182a79a4133e2d94000ab5f7693bade3
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816018"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894666"
 ---
 # <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>테스트 조합 모델을 편집하여 가상 사용자의 테스트 실행 가능성 지정
 
 *테스트 조합 모델*은 가상 사용자가 부하 테스트 시나리오에서 지정된 테스트를 실행할 확률을 지정합니다. 이렇게 하면 부하를 보다 사실적으로 시뮬레이션할 수 있습니다. 응용 프로그램에서 워크플로를 하나만 사용하는 대신 여러 워크플로를 사용하면 최종 사용자가 응용 프로그램과 상호 작용하는 방식을 보다 가깝게 테스트할 수 있습니다.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="test-mix-model-options"></a>테스트 조합 모델 옵션
 
