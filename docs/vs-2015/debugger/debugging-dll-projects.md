@@ -26,7 +26,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: c5177d7bd43a0bc1ba29778ba99cc891fd9f739b
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51792387"
@@ -109,7 +109,7 @@ DLL을 만드는 템플릿은 다음과 같습니다.
   
 - DLL 프로젝트에서 이를 디버깅할 수 있습니다. 자세한 내용은 [How to: Debug from a DLL Project](../debugger/how-to-debug-from-a-dll-project.md)을 참조하세요.  
   
-- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **직접 실행** 창에서 이를 디버깅할 수 있습니다. 이 경우 **직접 실행** 창은 응용 프로그램 역할을 수행합니다.  
+-  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **직접 실행** 창에서 이를 디버깅할 수 있습니다. 이 경우 **직접 실행** 창은 응용 프로그램 역할을 수행합니다.  
   
   호출 응용 프로그램에 대한 디버깅을 시작하기 전에, 일반적으로 클래스 라이브러리에 중단점을 설정합니다. 자세한 내용은 [Breakpoints and Tracepoints](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583)을 참조하세요. 중단점에 도달하면 각 줄의 작업을 확인하면서 코드를 단계별로 실행하여 문제를 해결할 수 있습니다. 자세한 내용은 [Code Stepping Overview](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9)을 참조하십시오.  
   

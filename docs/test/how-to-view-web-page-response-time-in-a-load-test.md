@@ -12,16 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 945bbe8377d51974bdfb09b762e415da3004346b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9740d26ef99c10bb9ec84afa23b998f6e1467f40
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821840"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895264"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>방법: 부하 테스트 분석기를 사용하여 부하 테스트의 웹 페이지 응답 시간 보기
 
 각 웹 페이지가 로드되는 시간을 ‘응답 시간’이라고 합니다. 웹 성능 테스트를 만들 때 웹 성능 테스트의 각 웹 페이지 요청에 대한 응답 시간 목표를 설정할 수 있습니다.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 부하 테스트의 스트레스 환경에서 웹 성능 테스트를 실행하면 각 페이지에서 다음과 같은 정보를 분석할 수 있습니다.
 
@@ -36,8 +38,6 @@ ms.locfileid: "49821840"
 -   그래프 뷰의 웹 페이지 응답 시간 분석
 
 ## <a name="view-response-time-data-in-a-table"></a>테이블의 응답 시간 데이터 보기
-
-### <a name="to-view-response-time-data-in-a-table"></a>응답 시간 데이터를 표로 보려면
 
 1. **부하 테스트 분석기**에서 도구 모음의 **테이블**을 선택하여 테이블 그리드가 표시되어 있는지 확인합니다.
 
@@ -70,7 +70,7 @@ ms.locfileid: "49821840"
 
 응답 시간 데이터를 그래프로 표시하여 부하 테스트 도중 시간에 따라 값이 변화하는 모양을 확인할 수 있습니다. 이 방법은 단계 부하 패턴을 사용하는 경우와 같이 테스트 실행 도중 부하 패턴이 증가하는 경우에 특히 유용합니다. 자세한 내용은 [부하 패턴을 편집하여 가상 사용자 작업 모델링](../test/edit-load-patterns-to-model-virtual-user-activities.md)을 참조하세요.
 
-### <a name="to-view-response-time-data-in-a-graph"></a>응답 시간 데이터를 그래프로 보려면
+응답 시간 데이터를 그래프로 보려면:
 
 1. **부하 테스트 분석기**의 도구 모음에서 **그래프**를 선택하여 그래프를 표시하도록 합니다.
 

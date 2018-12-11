@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 테스트 컨트롤러 및 테스트 에이전트 문제 해결
+title: 테스트 컨트롤러 및 테스트 에이전트 문제 해결
 ms.date: 10/20/2016
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -13,16 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cbd114e9b5e63301c4f277d6746c04991c97eb9b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 274585d864393877b225fe6231c1f775342620f6
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49888543"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894744"
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>부하 테스트에서 테스트 컨트롤러 및 테스트 에이전트 문제를 해결하기 위한 전략
 
 이 토픽에서는 Visual Studio에서 테스트 컨트롤러 및 테스트 에이전트로 작업할 때 발생할 수 있는 몇 가지 일반적인 문제에 대해 설명합니다.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ##  <a name="unable-to-collect-performance-counters-on-test-agent-computer"></a>테스트 에이전트 컴퓨터에서 성능 카운터를 수집할 수 없음
 

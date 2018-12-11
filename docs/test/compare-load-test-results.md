@@ -11,16 +11,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8829644e34c169f8992959013f70d453a70d41b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fc54324f2c5bc91dba64aa35b125bbdc12ca1a45
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834289"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895030"
 ---
 # <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>테스트 비교 또는 추세 분석을 위한 부하 테스트 결과 보고
 
-둘 이상의 테스트 결과를 기반으로 Microsoft Excel 부하 테스트 보고서를 생성할 수 있습니다. 다음과 같은 두 가지 유형의 부하 테스트 보고서를 사용할 수 있습니다.
+둘 이상의 테스트 결과를 기반으로 Microsoft Excel 부하 테스트 보고서를 생성할 수 있습니다.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+다음과 같은 두 가지 유형의 부하 테스트 보고서를 사용할 수 있습니다.
 
 - 비교 실행&mdash;이 보고서는 테이블 차트와 가로 막대형 차트를 사용하여 side by side 비교 데이터를 표시하는 실제로 두 개의 보고서입니다.
 
@@ -33,7 +37,7 @@ ms.locfileid: "49834289"
 또한 관련자가 데이터베이스에 연결하지 않아도 보고서를 볼 수 있도록 스프레드시트 파일을 관련자와 공유할 수도 있습니다.
 
 > [!NOTE]
-> 부하 테스트에 주석을 추가하면 Excel 보고서에 해당 주석이 표시됩니다. 자세한 내용은 [방법: 완료된 부하 테스트를 분석하는 동안 주석 추가](../test/how-to-add-comments-on-a-completed-load-test.md)를 참조하세요.
+> 부하 테스트에 주석을 추가하면 Excel 보고서에 해당 주석이 표시됩니다.
 
 ## <a name="tasks"></a>작업
 

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 부하 테스트에 대한 가상 사용자 동작 차트 사용
+title: 부하 테스트에 가상 사용자 작업 차트 사용
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,30 +11,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 19d2a50eba8850b3950e951da58800aed77931ad
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 8e4584d386cb61aaf7809c8bb5ab748e49543c7e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295802"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895927"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>연습: 가상 사용자 작업 차트를 사용하여 문제 격리
 
-이 연습을 통해 가상 사용자 동작 차트를 사용하여 부하 테스트를 실행한 개별 가상 사용자에게 발생한 오류를 격리하는 방법을 배웁니다.
+이 연습을 통해 가상 사용자 작업 차트를 사용하여 부하 테스트를 실행한 개별 가상 사용자에게 발생한 오류를 격리하는 방법을 배웁니다.
 
 가상 사용자 동작 차트를 사용하여 부하 테스트와 관련한 가상 사용자 동작을 시각화할 수 있습니다. 차트의 각 행은 개별 가상 사용자를 나타냅니다. 가상 사용자 동작 차트에는 각 가상 사용자가 테스트 중에 실행한 작업이 정확하게 표시됩니다. 이 차트에서는 사용자 동작 패턴을 확인하거나, 패턴을 로드하거나, 실패했거나 느린 테스트를 연결하거나, 다른 가상 사용자 동작 요청을 확인하여 성능 문제를 격리할 수 있습니다. 가상 사용자 동작 차트는 부하 테스트를 완료한 이후에만 사용할 수 있습니다.
 
-이 연습에서는 다음 작업을 완료합니다.
-
--   가상 사용자 동작 차트와 관련된 다음 도구를 사용하는 방법에 대해 알아 봅니다.
-
-    -   **특정 기간 확대** 도구를 사용하여, 분석할 차트에 특정 기간을 지정할 수 있습니다.
-
-    -   **정보 범례** 창과 **필터 결과** 창을 통해 차트에 필터링을 적용하여 문제를 격리할 수 있습니다.
-
--   가상 사용자 동작 차트를 사용하여 특정 가상 사용자에게 발생한 오류를 분석하고 문제가 되는 오류 형식 정보를 확인합니다.
-
-자세한 내용은 [세부 정보 뷰에서 가상 사용자 동작 분석](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)을 참조하세요.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="prerequisites"></a>전제 조건
 
@@ -47,8 +37,6 @@ ms.locfileid: "51295802"
     -   [부하 테스트 만들기 및 실행](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-load-test)
 
 ## <a name="open-the-colorwebapp-solution-created-in-the-previous-walkthroughs"></a>이전 연습에서 만든 ColorWebApp 솔루션 열기
-
-### <a name="open-the-solution"></a>솔루션 열기
 
 1.  Visual Studio를 시작합니다.
 

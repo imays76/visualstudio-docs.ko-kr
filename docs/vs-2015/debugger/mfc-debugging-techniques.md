@@ -34,7 +34,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f1e7a1ea69da1cafa38ae2a7bfa4551d3d40a8d4
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51745117"
@@ -167,7 +167,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
 ###  <a name="BKMK_Taking_memory_snapshots"></a> 메모리 스냅숏 만들기  
   
-1. [CMemoryState](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2) 개체를 만들고 [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a) 멤버 함수를 호출합니다. 그러면 첫 번째 메모리 스냅숏이 만들어집니다.  
+1.  [CMemoryState](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2) 개체를 만들고 [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a) 멤버 함수를 호출합니다. 그러면 첫 번째 메모리 스냅숏이 만들어집니다.  
   
 2. 프로그램이 메모리 할당 작업과 할당 취소 작업을 수행하면 다른 `CMemoryState` 개체를 만들고 해당 개체에 대해 `Checkpoint` 를 호출합니다. 그러면 메모리 사용에 대한 두 번째 스냅숏이 만들어집니다.  
   
@@ -449,7 +449,7 @@ pMyPerson->Dump( afxDump );
   
    4.  **다음에서 설정 복사** 목록에서 **릴리스**를 선택합니다.  
   
-   5.  **확인** 을 클릭하여 **새 프로젝트 구성**대화 상자를 닫습니다.  
+   5.   **확인** 을 클릭하여 **새 프로젝트 구성**대화 상자를 닫습니다.  
   
    6.  **구성 관리자** 대화 상자를 닫습니다.  
   

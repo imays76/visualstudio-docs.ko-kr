@@ -11,16 +11,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 51ccfcc6750be7f24acd88c07fa53537f43cdfab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7eda8336c45d0e0d90441ce918845d111976aaf4
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861919"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896564"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>방법: Microsoft Excel을 사용하여 부하 테스트 성능 보고서 만들기
 
-둘 이상의 테스트 결과를 기반으로 Microsoft Excel 부하 테스트 보고서를 생성할 수 있습니다. 다음과 같은 두 가지 유형의 부하 테스트 보고서를 사용할 수 있습니다.
+둘 이상의 테스트 결과를 기반으로 Microsoft Excel 부하 테스트 보고서를 생성할 수 있습니다.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+다음과 같은 두 가지 유형의 부하 테스트 보고서를 사용할 수 있습니다.
 
 -   **비교 실행** 테이블과 가로 막대형 차트를 사용하여 두 부하 테스트 결과의 데이터를 비교하는 보고서 집합을 만듭니다.
 
@@ -45,7 +49,7 @@ ms.locfileid: "49861919"
 **부하 테스트 분석기**에서 도구 모음의 **Excel 보고서 만들기** 단추를 사용하거나, Excel에서 **Office** 리본 메뉴의 **부하 테스트** 탭에 있는 **부하 테스트 보고서** 옵션을 사용하여 Excel 보고서를 생성할 수 있습니다.
 
 > [!NOTE]
-> 부하 테스트에 주석을 추가하면 Excel 보고서에 해당 주석이 표시됩니다. 자세한 내용은 [방법: 완료된 부하 테스트를 분석하는 동안 주석 추가](../test/how-to-add-comments-on-a-completed-load-test.md)를 참조하세요.
+> 부하 테스트에 주석을 추가하면 Excel 보고서에 해당 주석이 표시됩니다.
 
 ## <a name="to-generate-load-test-comparison-reports-using-excel"></a>Excel을 사용하여 부하 테스트 비교 보고서를 생성하려면
 
