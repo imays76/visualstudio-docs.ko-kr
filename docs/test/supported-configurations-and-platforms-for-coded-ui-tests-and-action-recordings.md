@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 코딩된 UI 테스트 및 작업 기록에 지원되는 구성 및 플랫폼
+title: 코딩된 UI 테스트에 대한 구성 및 플랫폼
 ms.date: 2015-10-04
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b56f83a7a1ec74235e66f18e8134f72bfd14a2ef
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: e4eb09bf1b5477c609dc2b9e3b1502274bc9b931
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295919"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894381"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>코딩된 UI 테스트 및 작업 기록에 지원되는 구성 및 플랫폼
 
@@ -25,8 +25,9 @@ ms.locfileid: "51295919"
 > [!NOTE]
 > 코딩된 UI 테스트 프로세스는 테스트 대상 응용 프로그램으로 동일한 권한이 있어야 합니다.
 
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
- **요구 사항**
+**요구 사항**
 
 -   Visual Studio Enterprise
 

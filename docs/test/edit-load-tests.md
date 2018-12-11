@@ -11,23 +11,26 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f4c29f3b98440c9e8462083a24012944157b848b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: cb39ea39261d5b359437b2c31ec963bab8df01fe
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178415"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895394"
 ---
 # <a name="edit-load-tests"></a>부하 테스트 편집
 
 부하 테스트는 웹 성능 테스트 또는 단위 테스트를 실행하여 많은 사용자가 동시에 서버에 액세스하는 것을 시뮬레이트합니다. 부하 테스트를 사용하여 응용 프로그램 스트레스 및 성능 데이터에 액세스할 수 있습니다. 부하 테스트에서 사용자 부하 및 네트워크 형식과 같은 여러 부하 조건을 에뮬레이트하도록 구성할 수 있습니다.
 
-> [!NOTE]
-> 부하 테스트는 Visual Studio 2017 Enterprise Edition에서만 사용할 수 있습니다.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 부하 테스트는 *시나리오*, *카운터 집합* 및 *실행 설정*으로 정의됩니다. 다음 그림은 [시나리오](../test/edit-load-test-scenarios.md), [카운터 집합](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md) 및 [실행 설정](../test/load-test-run-settings-properties.md)의 차이점을 설명합니다.
 
 ![부하 테스트 아키텍처](../test/media/load_test_editor.png)
+
+## <a name="software-requirements"></a>소프트웨어 요구 사항
+
+웹 성능 및 부하 테스트 프로젝트는 Visual Studio의 Enterprise Edition에서만 사용할 수 있습니다.
 
 ## <a name="edit-load-test-scenario-settings"></a>부하 테스트 시나리오 설정 편집
 

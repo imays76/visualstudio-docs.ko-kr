@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 부하 테스트에 대한 인지 시간
+title: 부하 테스트의 인지 시간
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,22 +12,24 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8f8f90eb341112cd700d45b6b7c7d100cad2a024
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 236b6dffa3885928b48b7d6ea044f2494e7d7b28
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175984"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895914"
 ---
 # <a name="edit-think-times-to-simulate-website-human-interaction-delays-in-load-tests-scenarios"></a>부하 테스트 시나리오에서 인지 시간을 편집하여 웹 사이트 사용자 상호 작용 지연 시뮬레이트
 
 인지 시간을 사용하여 웹 사이트와의 상호 작용 간에 대기하게 되는 사람의 동작을 시뮬레이트할 수 있습니다. 인지 시간은 웹 성능 테스트의 요청 간이나 부하 테스트 시나리오의 테스트 반복 간에 발생합니다. 부하 테스트에서 인지 시간 사용은 보다 정확한 부하 시뮬레이션을 만드는 데 유용합니다. 부하 테스트에서 인지 시간을 사용할 것인지, 아니면 인지 시간을 무시할 것인지 여부를 변경할 수 있습니다. **부하 테스트 편집기**에서 인지 시간을 부하 테스트에 사용할지 여부를 변경합니다.
 
- *인지 시간 프로필*은 부하 테스트의 시나리오에 적용되는 설정입니다. 이 설정은 개별 웹 성능 테스트에 저장된 인지 시간을 부하 테스트 중에 사용할지 여부를 결정합니다. 일부 웹 성능 테스트에서만 인지 시간을 사용하려면 웹 테스트를 서로 다른 시나리오에 넣어야 합니다. 시나리오에 대한 자세한 내용은 [부하 테스트 시나리오 편집](../test/edit-load-test-scenarios.md)을 참조하세요.
+*인지 시간 프로필*은 부하 테스트의 시나리오에 적용되는 설정입니다. 이 설정은 개별 웹 성능 테스트에 저장된 인지 시간을 부하 테스트 중에 사용할지 여부를 결정합니다. 일부 웹 성능 테스트에서만 인지 시간을 사용하려면 웹 테스트를 서로 다른 시나리오에 넣어야 합니다. 시나리오에 대한 자세한 내용은 [부하 테스트 시나리오 편집](../test/edit-load-test-scenarios.md)을 참조하세요.
 
- **부하 테스트 새로 만들기 마법사**를 사용하여 부하 테스트를 만드는 경우 처음에 부하 테스트에 인지 시간을 사용할지 여부를 설정합니다. 자세한 내용은 [부하 테스트 시나리오 편집](../test/edit-load-test-scenarios.md)을 참조하세요.
+**부하 테스트 새로 만들기 마법사**를 사용하여 부하 테스트를 만드는 경우 처음에 부하 테스트에 인지 시간을 사용할지 여부를 설정합니다. 자세한 내용은 [부하 테스트 시나리오 편집](../test/edit-load-test-scenarios.md)을 참조하세요.
 
- 다음 목록에서는 **인지 시간 프로필** 옵션을 보여줍니다.
+다음 목록에서는 **인지 시간 프로필** 옵션을 보여줍니다.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 **Off**
 

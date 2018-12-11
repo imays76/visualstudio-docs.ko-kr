@@ -2,7 +2,7 @@
 title: Visual Studio 2017의 새로운 기능
 description: Visual Studio 2017의 새로운 기능을 알아보세요.
 ms.custom: ''
-ms.date: 11/13/2018
+ms.date: 12/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: conceptual
@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51a87e5df597c398c89f59b53fa9d92585d8d4fb
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: a007d6557fe7ebd533ee34fecc8b8c0315024edf
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607876"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895771"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Visual Studio 2017의 새로운 기능
 
@@ -386,3 +386,4 @@ Visual Studio를 개선하는 방법을 제안하거나 제품 지원 옵션에 
 * [C#의 새로운 기능](/dotnet/csharp/whats-new)
 * [Team Foundation Server의 새로운 기능](/tfs/server/whats-new?view=vsts)
 * [Mac용 Visual Studio의 새로운 기능](https://visualstudio.microsoft.com/vs/visual-studio-mac/)
+* [Visual Studio 2019의 새로운 기능](whats-new-visual-studio-2019.md)

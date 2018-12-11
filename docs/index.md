@@ -2,14 +2,16 @@
 layout: HubPage
 hide_bc: true
 title: Visual Studio 설명서 | Microsoft Docs
+titleSuffix: ''
 description: Visual Studio 2017을 사용하여 플랫폼 및 장치에 대해 선택한 언어로 응용 프로그램, 서비스 및 도구를 개발하는 방법에 대해 알아봅니다.
 ms.topic: hub-page
-ms.openlocfilehash: 961d9f46d78b23fa976b3a8cdc774d219445c8b1
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.custom: seodec18
+ms.openlocfilehash: b509f5d34596f3db46d20157fd3ce1fd2cec3d7c
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000285"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160103"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -89,7 +91,7 @@ ms.locfileid: "51000285"
                                             <div class="cardText">
                                                 <h3>Visual Studio를 사용하는 방법 알아보기</h3>
                                                 <ul class="noBullet">
-                                                    <li><a class="barLink" href="ide/visual-studio-ide.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_overview.svg" alt="Guided tour icon" />둘러보기 시작</a></li>
+                                                    <li><a class="barLink" href="get-started/visual-studio-ide.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_overview.svg" alt="Guided tour icon" />둘러보기 시작</a></li>
                                                     <li><a class="barLink" href="ide/index-writing-code.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_code-edit.svg" alt="Pencil icon" />코드 작성 및 편집</a></li>
                                                     <li><a class="barLink" href="ide/compiling-and-building-in-visual-studio.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_build.svg" alt="Crane icon" />코드 빌드</a></li>
                                                     <li><a class="barLink" href="debugger/getting-started-with-the-debugger.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_debug.svg" alt="Debug icon" />코드 디버그</a></li>

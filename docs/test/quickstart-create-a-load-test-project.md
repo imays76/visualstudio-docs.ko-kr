@@ -9,19 +9,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 515c5d4c1bd09d65ae23d3d1af2f3183607c6b53
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: f2e0f06eddee4acd500e6bf4a8094dde4efc0d14
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320958"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896291"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>빠른 시작: 부하 테스트 프로젝트 만들기
 
 이 10분 분량의 빠른 시작에서는 Visual Studio에서 웹 성능 및 부하 테스트 프로젝트를 만들고 실행하는 방법을 배웁니다. 부하 테스트는 웹 성능 또는 단위 테스트를 실행하여 많은 사용자가 동시에 서버에 액세스하는 것을 시뮬레이트합니다.
 
-> [!IMPORTANT]
-> 웹 성능 및 부하 테스트 프로젝트는 Visual Studio 2017의 Enterprise Edition에서만 사용할 수 있습니다.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+## <a name="software-requirements"></a>소프트웨어 요구 사항
+
+웹 성능 및 부하 테스트 프로젝트는 Visual Studio의 Enterprise Edition에서만 사용할 수 있습니다.
 
 ## <a name="install-the-load-testing-component"></a>부하 테스트 구성 요소 설치
 

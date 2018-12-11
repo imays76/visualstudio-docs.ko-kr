@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 부하 테스트 시나리오에 대한 테스트 조합
+title: 부하 테스트 시나리오에 대한 테스트 조합
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,23 +13,25 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3fd2ab4689128ca06ab463aed1743a244597b9ea
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 3b3bd0ae4df657d7234a77413003b18d5db86138
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179517"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895992"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>테스트 조합을 편집하여 부하 테스트 시나리오에 포함할 웹 성능 테스트, 단위 테스트 및 코딩된 UI 테스트 지정
 
 시나리오의 ‘테스트 조합’은 시나리오에 포함되도록 선택한 웹 성능 및 단위 테스트와 이러한 테스트의 시나리오 내 분포를 조합한 것입니다. 분포는 부하 테스트가 실행되는 동안 가상 사용자가 특정 테스트를 선택할 확률에 대해 지정할 수 있는 설정입니다.
 
- 부하 테스트에 테스트 집합을 추가하면 *테스트 조합*이 다른 조합 옵션과 마찬가지로 작동합니다. 가상 사용자는 조합에 지정된 확률을 기반으로 테스트를 임의로 선택합니다. 예를 들어 조합에 확률이 각각 50%인 두 개의 테스트가 있는 경우 새 가상 사용자는 첫 번째 테스트를 약 절반에 해당하는 시간 동안 실행하도록 선택합니다. 50/50 조합에서 한 테스트는 길고 다른 테스트는 짧은 경우 긴 테스트에서 보다 큰 부하가 발생합니다.
+부하 테스트에 테스트 집합을 추가하면 *테스트 조합*이 다른 조합 옵션과 마찬가지로 작동합니다. 가상 사용자는 조합에 지정된 확률을 기반으로 테스트를 임의로 선택합니다. 예를 들어 조합에 확률이 각각 50%인 두 개의 테스트가 있는 경우 새 가상 사용자는 첫 번째 테스트를 약 절반에 해당하는 시간 동안 실행하도록 선택합니다. 50/50 조합에서 한 테스트는 길고 다른 테스트는 짧은 경우 긴 테스트에서 보다 큰 부하가 발생합니다.
 
- 테스트를 조합에 추가한 후 나중에 제거할 수 있습니다. 또한 목록 컨트롤을 사용하여 테스트 조합의 분포를 변경할 수 있습니다. 목록 컨트롤을 통해 시나리오의 테스트 분포를 쉽게 조정할 수 있습니다.
+테스트를 조합에 추가한 후 나중에 제거할 수 있습니다. 또한 목록 컨트롤을 사용하여 테스트 조합의 분포를 변경할 수 있습니다. 목록 컨트롤을 통해 시나리오의 테스트 분포를 쉽게 조정할 수 있습니다.
 
 > [!NOTE]
 > 분포는 부하 테스트가 실행되는 동안 가상 사용자가 특정 테스트를 선택할 확률에 대한 측정값입니다. 분포는 백분율로 표현됩니다. 따라서 시나리오에 포함된 모든 테스트의 분포 값을 합하면 100이 됩니다. 예를 들어 시나리오에 테스트가 하나만 포함된 경우 해당 테스트의 분포는 100%입니다.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="add-new-tests-to-a-test-mix-in-an-existing-scenario"></a>기존 시나리오의 테스트 조합에 새 테스트 추가
 

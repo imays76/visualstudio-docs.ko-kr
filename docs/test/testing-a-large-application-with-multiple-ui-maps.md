@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 여러 UI 맵이 포함된 대형 응용 프로그램 테스트
+title: 여러 UI 맵이 포함된 대형 애플리케이션 테스트
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -12,26 +12,28 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0072d04ed8f31b492e0ee792717b8975478c8c99
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dfc1cf44cb92ab58b50284f0398178c8f96f2a2e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891026"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895134"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>여러 UI 맵이 포함된 대형 응용 프로그램 테스트
 
 이 항목에서는 여러 UI 맵을 사용하여 대규모 응용 프로그램을 테스트하는 경우 코딩된 UI 테스트를 사용하는 방법에 대해 설명합니다.
 
- **요구 사항**
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
+
+**요구 사항**
 
 - Visual Studio Enterprise
 
-  새로 코딩된 UI 테스트를 만들면 Visual Studio 테스트 프레임워크에서는 기본적으로 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> 클래스에 테스트 코드를 생성합니다. 코딩된 UI 테스트를 기록하는 방법에 대한 자세한 내용은 [코딩된 UI 테스트 만들기](../test/use-ui-automation-to-test-your-code.md) 및 [코딩된 UI 테스트 분석](../test/anatomy-of-a-coded-ui-test.md)을 참조하세요.
+새로 코딩된 UI 테스트를 만들면 Visual Studio 테스트 프레임워크에서는 기본적으로 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> 클래스에 테스트 코드를 생성합니다. 코딩된 UI 테스트를 기록하는 방법에 대한 자세한 내용은 [코딩된 UI 테스트 만들기](../test/use-ui-automation-to-test-your-code.md) 및 [코딩된 UI 테스트 분석](../test/anatomy-of-a-coded-ui-test.md)을 참조하세요.
 
-  UI 맵에 대해 생성된 코드에는 테스트가 상호 작용하는 각 개체에 대한 클래스가 들어 있습니다. 특히 각각 생성된 메서드의 경우 메서드 매개 변수의 도우미 클래스가 특별히 해당 메서드를 위해 생성됩니다. 응용 프로그램에 개체, 페이지, 폼 및 컨트롤이 매우 많으면 UI 맵이 매우 커질 수 있습니다. 또한 테스트 작업을 하는 사람이 여러 명인 경우 하나의 큰 UI 맵 파일로 응용 프로그램을 통제하기 힘들어집니다.
+UI 맵에 대해 생성된 코드에는 테스트가 상호 작용하는 각 개체에 대한 클래스가 들어 있습니다. 특히 각각 생성된 메서드의 경우 메서드 매개 변수의 도우미 클래스가 특별히 해당 메서드를 위해 생성됩니다. 응용 프로그램에 개체, 페이지, 폼 및 컨트롤이 매우 많으면 UI 맵이 매우 커질 수 있습니다. 또한 테스트 작업을 하는 사람이 여러 명인 경우 하나의 큰 UI 맵 파일로 응용 프로그램을 통제하기 힘들어집니다.
 
-  UI 맵 파일을 여러 개 사용하면 다음과 같은 이점을 얻을 수 있습니다.
+UI 맵 파일을 여러 개 사용하면 다음과 같은 이점을 얻을 수 있습니다.
 
 - 각 맵은 응용 프로그램의 논리적 하위 집합과 연결될 수 있습니다. 그러면 변경 내용을 보다 쉽게 관리할 수 있습니다.
 

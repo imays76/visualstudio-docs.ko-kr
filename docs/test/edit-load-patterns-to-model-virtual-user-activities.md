@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 부하 테스트를 위한 부하 패턴
+title: 부하 테스트를 위한 부하 패턴
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fb5e63f8c33267d622271221271ba8e71bb6f205
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a15f771d2afa2b5c8e02eed99b3168a537365a3f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862504"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895303"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>모델 가상 사용자 동작에 대한 부하 패턴 편집
 
@@ -27,6 +27,8 @@ ms.locfileid: "49862504"
 
 > [!NOTE]
 > 모든 부하 패턴 중에서 Visual Studio가 생성하는 부하는 가상 사용자의 시뮬레이션된 부하입니다.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="load-patterns"></a>부하 패턴
 

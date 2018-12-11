@@ -48,7 +48,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d980fd2367545eb5c824bacc507d9ced9aa2d723
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51765954"
@@ -178,7 +178,7 @@ ms.locfileid: "51765954"
   
 2. 디버깅을 시작하고, 실행이 중단점에서 중지되면 **지역** 창에서 중단점을 찾아 마우스 오른쪽 단추로 클릭한 다음 **개체 ID 만들기**를 선택합니다.  
   
-    **$** 창에 **지역** 창에서 중단점을 설정하여 호출 함수가 반환되는 명령이나 줄에서 실행을 중단할 수 있습니다. 이는 개체 ID입니다.  
+     **$** 창에 **지역** 창에서 중단점을 설정하여 호출 함수가 반환되는 명령이나 줄에서 실행을 중단할 수 있습니다. 이는 개체 ID입니다.  
   
 3. 조사하려는 지점(예: 컬렉션에 개체를 추가해야 하는 경우)에 새 조건부 중단점을 추가합니다.  
   

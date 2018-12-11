@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c71161c85c1a532b8c7e188f23cb00e73f78b06c
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: 5d0d51e1c5c3ba94363c2ce0377f3d1a5e22c582
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001219"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895849"
 ---
 # <a id="top"> </a> Azure의 Visual Studio 이미지
 
@@ -32,15 +32,16 @@ Azure를 처음 사용하는 경우 [체험 Azure 계정을 만드세요](https:
 
 Azure Marketplace에서 최신 주 버전(Visual Studio 2017 및 Visual Studio 2015)용 이미지를 찾을 수 있습니다. 주 버전마다 원래 릴리스된 (RTW) 버전과 최신 업데이트 버전이 표시됩니다. 각 버전은 Visual Studio Enterprise 및 Visual Studio Community 버전을 제공합니다. 이러한 이미지는 최신 Visual Studio 및 Windows 업데이트를 포함하도록 매달 한 번 이상 업데이트됩니다. 이미지 이름은 동일하지만 각 이미지의 설명에 설치된 제품 버전과 이미지의 “기준” 날짜가 포함되어 있습니다.
 
-| 릴리스 버전                                              | 버전                     |     제품 버전     |
-|:------------------------------------------------------------:|:----------------------------:|:-----------------------:|
-| Visual Studio 2017: 최신(버전 15.9)                    |    Enterprise, Community     |      버전 15.9.0     |
-|         Visual Studio 2017: RTW                              |    Enterprise, Community     |      버전 15.0.18    |
-|   Visual Studio 2015: 최신(업데이트 3)                      |    Enterprise, Community     |  버전 14.0.25431.01  |
-|         Visual Studio 2015: RTW                              |             없음             | (서비스 만료됨) |
+| 릴리스 버전                                              | 버전                     |     제품 버전      |
+|:------------------------------------------------------------:|:----------------------------:|:------------------------:|
+|   Visual Studio 2019: 미리 보기(미리 보기 1)                   |           엔터프라이즈         | Version 16.0.0 미리 보기 1 |
+| Visual Studio 2017: 최신(버전 15.9)                    |    Enterprise, Community     |      버전 15.9.0      |
+|         Visual Studio 2017: RTW                              |    Enterprise, Community     |      버전 15.0.18     |
+|   Visual Studio 2015: 최신(업데이트 3)                      |    Enterprise, Community     |  버전 14.0.25431.01   |
+|         Visual Studio 2015: RTW                              |             없음             | (서비스 만료됨)  |
 
 > [!NOTE]
-> Microsoft 서비스 정책에 따라 원래 릴리스된(RTW) Visual Studio 2015 버전에 대한 서비스가 만료되었습니다. Visual Studio 2015 업데이트 3이 Visual Studio 2015 제품 라인에 대해 제공되는 유일한 버전입니다.  또한 Visual Studio 2017 버전 15.9가 릴리스된 이후, 버전 15.9의 미리 보기가 포함된 '최신 미리 보기' 이미지의 지원을 중단했습니다.
+> Microsoft 서비스 정책에 따라 원래 릴리스된(RTW) Visual Studio 2015 버전에 대한 서비스가 만료되었습니다. Visual Studio 2015 업데이트 3이 Visual Studio 2015 제품 라인에 대해 제공되는 유일한 버전입니다.
 
 자세한 내용은 [Visual Studio 서비스 정책](/visualstudio/productinfo/vs-servicing-vs)을 참조하세요.
 

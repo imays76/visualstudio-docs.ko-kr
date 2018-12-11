@@ -40,7 +40,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: bdb648e7a29b3ed5d9a444e203ddbdcd6b0e73dc
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51770004"
@@ -96,7 +96,7 @@ ms.locfileid: "51770004"
    }  
    ```  
   
-    **try/catch** 에서 **예외 설정**을 선택한 이 코드를 디버거에서 실행하면 `throw` 줄에서 실행이 중단됩니다. 그런 다음 실행을 계속할 수 있습니다. 콘솔에 다음 두 줄이 모두 표시됩니다.  
+     **try/catch** 에서 **예외 설정**을 선택한 이 코드를 디버거에서 실행하면 `throw` 줄에서 실행이 중단됩니다. 그런 다음 실행을 계속할 수 있습니다. 콘솔에 다음 두 줄이 모두 표시됩니다.  
   
    ```  
    caught exception  
