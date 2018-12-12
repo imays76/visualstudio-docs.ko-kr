@@ -13,17 +13,17 @@ dev_langs:
 helpviewer_keywords:
 - FormRegionMessageClassAttribute
 - form regions [Office development in Visual Studio], message classes
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0e28653749b19c9f53bd8e43e245fd8dcb20aa31
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: b9614a0feab70dd97cfd64861737c8b42dd146b7
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050264"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248035"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Outlook 메시지 클래스를 사용 하 여 양식 영역을 연결 합니다.
   각 항목의 메시지 클래스를 사용 하 여 양식 영역을 연결 하 여 양식 영역을 표시 하는 Microsoft Office Outlook 항목을 지정할 수 있습니다. 예를 들어, 메일 항목의 맨 아래에 양식 영역을 추가 하려는 경우 양식 영역을 연결할 수는 `IPM.Note` message 클래스입니다.  
@@ -48,7 +48,7 @@ ms.locfileid: "50050264"
  또한 사용자 지정 메시지 클래스의 이름을 지정할 수 있습니다. 사용자 지정 메시지 클래스에는 Outlook에서 정의 하는 사용자 지정 양식을 식별 합니다.  
   
 > [!NOTE]  
->  바꾸기 및 모두 바꾸기 양식 영역에 대 한 새 사용자 지정 메시지 클래스 이름을 지정할 수 있습니다. 기존 사용자 지정 폼의 메시지 클래스 이름을 사용할 필요가 없습니다. 사용자 지정 메시지 클래스의 이름은 고유 해야 합니다. 이름이 고유한 지 확인 하는 한 가지 방법은 다음과 같은 명명 규칙을 사용 하는 것: \< *StandardMessageClassName*>.\< *회사*>.\< *MessageClassName*> (예: `IPM.Note.Contoso.MyMessageClass`).  
+>  바꾸기 및 모두 바꾸기 양식 영역에 대 한 새 사용자 지정 메시지 클래스 이름을 지정할 수 있습니다. 기존 사용자 지정 폼의 메시지 클래스 이름을 사용할 필요가 없습니다. 사용자 지정 메시지 클래스의 이름은 고유 해야 합니다. 이름이 고유한 지 확인 하는 한 가지 방법은 다음과 비슷한 명명 규칙을 사용 하는 것입니다. \<*StandardMessageClassName*>.\< *회사*>.\< *MessageClassName*> (예: `IPM.Note.Contoso.MyMessageClass`).  
   
 ## <a name="associate-a-form-region-with-an-outlook-message-class"></a>Outlook 메시지 클래스를 사용 하 여 양식 영역을 연결 합니다.  
  두 가지 방법으로 메시지 클래스를 사용 하 여 양식 영역을 연결할 수 있습니다.  
@@ -72,7 +72,7 @@ ms.locfileid: "50050264"
   
 - "IPM와 같은 표준 Outlook 메시지 클래스를 포함 하지 않습니다. "또는"IPM 합니다. Contact "입니다. "IPM 등의 사용자 지정 메시지 클래스를 포함 합니다. Note.Contoso "로 설정 합니다.  
   
-- 자체적으로 기본 메시지 클래스를 지정 하지 않으면 (예: "IPM").  
+- 자체적으로 기본 메시지 클래스를 지정 하지 않으면 (예: "IPM")입니다.  
   
 - 각 메시지 클래스 이름에 대해 256 자를 초과 하지.  
   
@@ -95,7 +95,7 @@ ms.locfileid: "50050264"
   
 - 사용자 지정 메시지 클래스에 대 한 정규화 된 메시지 클래스 이름을 사용 하 여 (예: "IPM 합니다. Note.Contoso ")입니다.  
   
-- 자체적으로 기본 메시지 클래스를 지정 하지 않으면 (예: "IPM").  
+- 자체적으로 기본 메시지 클래스를 지정 하지 않으면 (예: "IPM")입니다.  
   
 - 각 메시지 클래스 이름에 대해 256 자를 초과 하지.  
   
@@ -106,7 +106,7 @@ ms.locfileid: "50050264"
 > [!NOTE]  
 >  Visual Studio에서 제공 하는 메시지 클래스 이름을 올바름 또는 유효는 확인 하지 않습니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [런타임에 양식 영역 액세스](../vsto/accessing-a-form-region-at-run-time.md)   
  [Outlook 양식 영역 만들기](../vsto/creating-outlook-form-regions.md)   
  [연습: Outlook 양식 영역 디자인](../vsto/walkthrough-designing-an-outlook-form-region.md)   

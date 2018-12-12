@@ -17,17 +17,17 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio]
 - AddInLoader.dll
 - architecture [Office development in Visual Studio], document-level customizations
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a0188a54e500f56c9c3d947ec27d53640173837b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4e07c8ae29c773a1f50fedd68376a062e2203570
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912632"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248272"
 ---
 # <a name="architecture-of-document-level-customizations"></a>문서 수준 사용자 지정 아키텍처
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 에는 Microsoft Office Word 및 Microsoft Office Excel용 문서 수준 사용자 지정을 만드는 프로젝트가 포함되어 있습니다. 이 항목에서는 다음과 같은 문서 수준 사용자 지정의 측면에 대해 설명합니다.  
@@ -81,7 +81,7 @@ ms.locfileid: "49912632"
 |[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]를 사용하여 개발자는 Word 및 Excel에 액세스할 수 있는 코드를 작성합니다.<br /><br /> 비록 개발자가 Word나 Excel을 실행하는 실행 파일을 만드는 것처럼 보이기는 하지만 실제로 프로세스가 작동하는 방식은 그와 반대입니다. 문서는 어셈블리와 연결되어 있고 해당 어셈블리에 대한 포인터를 포함하고 있습니다. 문서가 열리면 Word나 Excel이 어셈블리를 찾고, 처리된 모든 이벤트에 대한 응답으로 코드를 실행합니다.|솔루션을 사용하는 사용자는 단지 다른 Microsoft Office 파일을 여는 것처럼 문서 또는 통합 문서를 열거나 아니면 템플릿에서 새 문서를 만듭니다.<br /><br /> 어셈블리는 문서나 통합 문서에서 사용자 지정(예: 자동으로 현재 데이터를 채우거나 정보를 요청하는 대화 상자 보여 주기)을 제공합니다.|  
   
 ### <a name="supported-document-formats-for-document-level-customizations"></a>문서 수준 사용자 지정에 대 한 지원 되는 문서 형식  
- 사용자 지정 프로젝트를 만들 때 프로젝트에서 사용할 문서 형식을 선택할 수 있습니다. 자세한 내용은 [방법: Visual Studio에서 만드는 Office 프로젝트](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
+ 사용자 지정 프로젝트를 만들 때 프로젝트에서 사용할 문서 형식을 선택할 수 있습니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
   
  다음 표에서는 Excel 및 Word의 문서 수준 사용자 지정에서 사용할 수 있는 문서 형식을 보여 줍니다.  
   
@@ -142,9 +142,9 @@ ms.locfileid: "49912632"
   
 8.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 은 사용자 지정 어셈블리를 응용 프로그램 도메인에 로드합니다.  
   
-9. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 이 사용자 지정 어셈블리에서 **Startup** 이벤트 처리기를 호출합니다. 자세한 내용은 참조 하세요. [Office 프로젝트의 이벤트](../vsto/events-in-office-projects.md)  
+9.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 이 사용자 지정 어셈블리에서 **Startup** 이벤트 처리기를 호출합니다. 자세한 내용은 참조 하세요. [Office 프로젝트의 이벤트](../vsto/events-in-office-projects.md)  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Visual Studio에서 Office 솔루션의 아키텍처](../vsto/architecture-of-office-solutions-in-visual-studio.md)   
  [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [Visual Studio Tools for Office 런타임 개요](../vsto/visual-studio-tools-for-office-runtime-overview.md)   

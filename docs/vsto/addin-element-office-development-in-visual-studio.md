@@ -1,5 +1,6 @@
 ---
 title: '&lt;addin&gt; 요소 (Visual Studio에서 Office 개발)'
+titleSuffix: ''
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -17,12 +18,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bb2161cbc6633163ba8fba3f8eb678cb0ad72333
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 06c3941e73ee1825d1dc0f593bd3aa6563c511df
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304469"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53247983"
 ---
 # <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;addin&gt; 요소 (Visual Studio에서 Office 개발)
   합니다 **추가 기능** 의 요소를 `vstav3` 네임 스페이스는 Microsoft Office VSTO 추가 기능 및 Visual Studio를 사용 하 여 개발 하는 문서 수준 사용자 지정 관련 정보를 포함 합니다.  
@@ -59,16 +60,16 @@ ms.locfileid: "52304469"
  `addin` 요소에는 다음 자식 요소가 있습니다.  
 
 ### <a name="entrypoints"></a>entryPoints  
- 필수. 합니다 **진입점** 요소에 설명 되어 [ &#60;진입점&#62; 요소 &#40;Visual Studio에서 Office 개발&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
+ 필수 요소. 합니다 **진입점** 요소에 설명 되어 [ &#60;진입점&#62; 요소 &#40;Visual Studio에서 Office 개발&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
 
 ### <a name="update"></a>업데이트  
- 필수. 합니다 **업데이트할** 요소에 설명 되어 [ &#60;업데이트&#62; 요소 &#40;Visual Studio에서 Office 개발&#41;](../vsto/update-element-office-development-in-visual-studio.md).  
+ 필수 요소. 합니다 **업데이트할** 요소에 설명 되어 [ &#60;업데이트&#62; 요소 &#40;Visual Studio에서 Office 개발&#41;](../vsto/update-element-office-development-in-visual-studio.md).  
 
 ### <a name="postactions"></a>postActions  
  선택 사항입니다. 합니다 **postActions** 요소에 설명 되어 [ &#60;postActions&#62; 요소 &#40;Visual Studio에서 Office 개발&#41;](../vsto/postactions-element-office-development-in-visual-studio.md).  
 
 ### <a name="application"></a>응용 프로그램  
- 필수. 합니다 **응용 프로그램** 요소에 설명 되어 [ &#60;응용&#62; 요소 &#40;Visual Studio에서 Office 개발&#41;](../vsto/application-element-office-development-in-visual-studio.md).  
+ 필수 요소. 합니다 **응용 프로그램** 요소에 설명 되어 [ &#60;응용&#62; 요소 &#40;Visual Studio에서 Office 개발&#41;](../vsto/application-element-office-development-in-visual-studio.md).  
 
 ## <a name="document-level-customization-example"></a>문서 수준 사용자 지정 예제  
 
@@ -192,7 +193,7 @@ ms.locfileid: "52304469"
 </vstav3:addIn>  
 ```  
 
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Office 솔루션에 대 한 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)   
  [Office 솔루션의 배포 매니페스트](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce 응용 프로그램 매니페스트](/visualstudio/deployment/clickonce-application-manifest)  

@@ -12,17 +12,17 @@ helpviewer_keywords:
 - data caching [Office development in Visual Studio], about caching data
 - data [Office development in Visual Studio], caching
 - data caching [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2d106209accb5c67d6b9ab24a15aa7edd79d11be
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b46fa8b0138eff03757a7bd7828053cee039090f
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846891"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248126"
 ---
 # <a name="cache-data"></a>데이터 캐시
   오프 라인으로 또는 Microsoft Office Word 또는 Microsoft Office Excel을 열지 않고 데이터를 사용할 수 있도록 문서 수준 사용자 지정 데이터 개체를 캐시할 수 있습니다. 개체를 캐시 하려면 개체의 특정 요구 사항을 충족 하는 데이터 형식이 있어야 합니다. .NET Framework의 많은 일반적인 데이터 형식을 포함 하는 이러한 요구 사항을 충족 <xref:System.String>하십시오 <xref:System.Data.DataSet>, 및 <xref:System.Data.DataTable>합니다.  
@@ -33,7 +33,7 @@ ms.locfileid: "49846891"
   
 - 추가할 개체 데이터 캐시에는 솔루션을 빌드할 때 적용 된 <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> 특성을 개체 선언 합니다. 자세한 내용은 [방법: 오프 라인 이나 서버에서 사용 하기 위해 데이터를 캐시](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)합니다.  
   
-- 런타임에 프로그래밍 방식으로 데이터 캐시에 개체 추가 하려면 사용 합니다 `StartCaching` 와 같은 호스트의 메서드 항목을 합니다 `ThisDocument` 또는 `ThisWorkbook` 클래스입니다. 자세한 내용은 [방법: 프로그래밍 방식으로 Office 문서에서 데이터 소스를 캐싱](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)합니다.  
+- 런타임에 프로그래밍 방식으로 데이터 캐시에 개체 추가 하려면 사용 합니다 `StartCaching` 와 같은 호스트의 메서드 항목을 합니다 `ThisDocument` 또는 `ThisWorkbook` 클래스입니다. 자세한 내용은 [방법: Office 문서에서 데이터 원본을 프로그래밍 방식으로 캐시](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)합니다.  
   
   데이터 캐시에 개체를 추가한 후에 액세스 하 고 Word 또는 Excel을 시작 하지 않고 캐시 된 데이터를 수정할 수 있습니다. 자세한 내용은 [서버에서 문서 데이터에에서 액세스](../vsto/accessing-data-in-documents-on-the-server.md)합니다.  
   
@@ -86,10 +86,10 @@ ms.locfileid: "49846891"
   
  사용 하 여 개체를 추가 하는 경우를 **null** 데이터 캐시를 사용 하 여 값을 <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> 특성 디자인 타임에 사용할 수 있습니다는 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 문서를 열기 전에 캐시 된 데이터를 초기화 하기 위해 클래스 개체입니다. Word 또는 Excel을 최종 사용자가 문서를 열기 전에 설치 하지 않고 서버에서 캐시 된 데이터를 초기화 하려는 경우에 유용 합니다. 자세한 내용은 [서버에서 문서 데이터에에서 액세스](../vsto/accessing-data-in-documents-on-the-server.md)합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [방법: 오프 라인 이나 서버에서 사용 하기 위해 데이터 캐시](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
- [방법: 프로그래밍 방식으로 Office 문서에서 데이터 소스를 캐싱](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)   
+ [방법: Office 문서에서 데이터 원본을 프로그래밍 방식으로 캐시](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)   
  [방법: 암호로 보호 된 문서의 데이터 캐시](../vsto/how-to-cache-data-in-a-password-protected-document.md)   
- [연습: 캐시 된 데이터 집합을 사용 하 여 마스터-세부 관계 만들기](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)  
+ [연습: 캐시 된 데이터 집합을 사용 하 여 마스터-세부 관계를 만들려면](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)  
   
   

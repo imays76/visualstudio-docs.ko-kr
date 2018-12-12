@@ -16,17 +16,17 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], cache
 - data [Office development in Visual Studio], document-level solutions
 - document-level customizations [Office development in Visual Studio], data model
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0710f196e6572cf6bc9851d8a765758fcb43326d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c17c24dda11ea210c190a31197b783036357f2de
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675118"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248298"
 ---
 # <a name="cached-data-in-document-level-customizations"></a>문서 수준 사용자 지정의 캐시 된 데이터
   문서 수준 사용자 지정의 주된 목적은 Office 문서에는 보기에서 데이터를 분리 하는 것입니다. 데이터 숫자와 텍스트를 포함 하 여 문서에 저장 된 정보를 가리킵니다. 보기는 사용자 인터페이스와 Microsoft Office Word 및 Microsoft Office Excel의 개체 모델을 가리킵니다.  
@@ -63,7 +63,7 @@ ms.locfileid: "35675118"
 |어떤 유형의 데이터를 저장할 수 있습니다?|특정 요구 사항을 충족 하는 사용자 지정 어셈블리의 모든 공용 개체입니다. 자세한 내용은 [데이터 캐시](../vsto/caching-data.md)합니다.|모든 XML 데이터입니다.|  
 |Microsoft Office 응용 프로그램을 시작 하지 않고 데이터에 액세스할 수 있습니다.|사용 하 여 예는 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 에서 제공 하는 클래스는 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]합니다.|클래스를 사용 하 여 예는 <xref:System.IO.Packaging> 네임 스페이스 또는 Open XML 형식 SDK를 사용 하 여 합니다.|  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Office 솔루션의 데이터](../vsto/data-in-office-solutions.md)   
  [Visual Studio에서 Office 솔루션의 아키텍처](../vsto/architecture-of-office-solutions-in-visual-studio.md)  
   
