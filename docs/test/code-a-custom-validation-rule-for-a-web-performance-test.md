@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 웹 성능 테스트에 대한 사용자 지정 유효성 검사 규칙 코딩
+title: 웹 성능 테스트에 대한 사용자 지정 유효성 검사 규칙 코딩
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ffc5d54b9eac28e975b6ee538e6193e52f98282f
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 407c6e5b8beec118ce8f25edb35e66722990e8ca
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895147"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53047676"
 ---
 # <a name="code-a-custom-validation-rule-for-a-web-performance-test"></a>웹 성능 테스트에 대한 사용자 지정 유효성 검사 규칙 코딩
 
@@ -58,7 +58,7 @@ ms.locfileid: "52895147"
 
 9. 웹 성능 테스트를 실행합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드에서는 사용자 지정 유효성 검사 규칙의 구현을 보여 줍니다. 이 유효성 검사 규칙은 미리 정의된 필요한 태그 유효성 검사 규칙의 동작을 모방합니다. 이 예제를 출발점으로 삼아 사용자 지정 유효성 검사 규칙을 직접 만들 수 있습니다.
 
