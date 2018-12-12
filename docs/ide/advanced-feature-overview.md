@@ -1,5 +1,6 @@
 ---
 title: Visual Studio 2017의 고급 기능
+titleSuffix: ''
 ms.date: 06/01/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 778d52d738af318dd21fa58a115dd053b44fa3a8
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: bd351ef1bf6b1e5eee16451e554d6cae94c60127
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863652"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159401"
 ---
 # <a name="features-of-visual-studio-2017"></a>Visual Studio 2017의 기능
 
-[Visual Studio IDE 개요](../ide/visual-studio-ide.md) 문서에서는 Visual Studio에 대한 기본적인 소개를 제공합니다. 이 문서에서는 숙련된 개발자 또는 이미 Visual Studio에 익숙한 사용자에게 보다 적합한 기능에 대해 설명합니다.
+[Visual Studio IDE 개요](../get-started/visual-studio-ide.md) 문서에서는 Visual Studio에 대한 기본적인 소개를 제공합니다. 이 문서에서는 숙련된 개발자 또는 이미 Visual Studio에 익숙한 사용자에게 보다 적합한 기능에 대해 설명합니다.
 
 ## <a name="modular-installation"></a>모듈식 설치
 
@@ -126,5 +127,5 @@ Visual Studio 확장에 대한 자세한 내용은 [Visual Studio IDE 확장](ht
 
 ## <a name="see-also"></a>참고 항목
 
-- [Visual Studio IDE 개요](../ide/visual-studio-ide.md)
+- [Visual Studio IDE 개요](../get-started/visual-studio-ide.md)
 - [Visual Studio 2017의 새로운 기능](../ide/whats-new-in-visual-studio.md)

@@ -11,12 +11,12 @@ author: gewarren
 ms.author: gewarren
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: c80ee0791c1c073c82681e59e124c5c45b378a07
-ms.sourcegitcommit: e2373d40ca9829cee63519152a97172763471e21
+ms.openlocfilehash: 5c87831c468ce105bccaaad26e826aae6f0b46bc
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "34335709"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160051"
 ---
 # <a name="f1-help"></a>F1 도움말
 
@@ -28,7 +28,7 @@ ms.locfileid: "34335709"
 
 ## <a name="useful-links"></a>유용한 링크
 
-- Visual Studio에 대한 일반적인 내용은 [Visual Studio 개요](../../ide/visual-studio-ide.md)를 참조하세요.
+- Visual Studio에 대한 일반적인 내용은 [Visual Studio 개요](../../get-started/visual-studio-ide.md)를 참조하세요.
 - Visual Studio 텍스트 편집기의 도움말은 [코드 편집기 사용](../../ide/writing-code-in-the-code-and-text-editor.md)을 참조하세요.
 - C# 도움말은 [C# 가이드](/dotnet/csharp/index)를 참조하세요.
 - Visual Basic 도움말은 [Visual Basic 가이드](/dotnet/visual-basic/)를 참조하세요.

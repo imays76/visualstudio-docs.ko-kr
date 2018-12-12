@@ -1,5 +1,5 @@
 ---
-title: Visual Studio용 Microsoft Fakes의 코드 생성, 컴파일 및 명명 규칙
+title: Microsoft Fakes의 코드 생성, 컴파일 및 명명 규칙
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 65b00ab033feb9f057be195afe28b0416f44f95e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7af8fc49896549fd553c8262b04e9d02f76f06e9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926022"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058313"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Microsoft Fakes의 코드 생성, 컴파일 및 명명 규칙
 
@@ -235,7 +235,7 @@ attribute of the Assembly element in the .fakes:
 
   getter 또는 setter 속성과 같은 **특수 메서드 이름**은 다음 표에 설명된 대로 처리됩니다.
 
-|메서드 특성...|예|추가되는 메서드 이름|
+|메서드 특성...|예제|추가되는 메서드 이름|
 |-|-|-|
 |**생성자**|`.ctor`|`Constructor`|
 |정적 **생성자**|`.cctor`|`StaticConstructor`|

@@ -1,10 +1,11 @@
 ---
 title: Visual Studio 2019 Preview의 새로운 기능
+titleSuffix: ''
 description: Visual Studio 2019 미리 보기 릴리스의 새로운 기능을 알아보세요.
-ms.custom: ''
 ms.date: 12/04/2018
 ms.prod: visual-studio-dev16
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
 - VS.StartPage.WhatsNew
@@ -16,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 838065d01e67f230d37ee318231371707117ec07
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 06e3966703d95f897706eec8c46c2cd78fda859f
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52897280"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159752"
 ---
 # <a name="what39s-new-in-visual-studio-2019-preview"></a>Visual Studio 2019 미리 보기의 새로운 기능
 
@@ -86,7 +87,7 @@ Visual Studio 2019 미리 보기를 사용하면 이 서비스가 기본적으�
 
 ### <a name="manage-pull-requests-prs-from-the-ide"></a>IDE에서 끌어오기 요청(PR) 관리
 
-다운로드하여 Visual Studio 2019 미리 보기와 함께 사용할 수 있는 새로운 확장이 곧 도입됩니다. 이 새로운 확장을 사용하면 Visual Studio IDE[(통합 개발 환경)](../ide/visual-studio-ide.md)를 벗어나지 않고도 팀의 끌어오기 요청을 검토, 실행 및 디버그할 수 있습니다. 현재 Azure Repos에서 코드를 지원하고 있지만, GitHub를 지원하고 전반적인 환경을 개선하기 위해 확장할 예정입니다.
+다운로드하여 Visual Studio 2019 미리 보기와 함께 사용할 수 있는 새로운 확장이 곧 도입됩니다. 이 새로운 확장을 사용하면 Visual Studio IDE[(통합 개발 환경)](../get-started/visual-studio-ide.md)를 벗어나지 않고도 팀의 끌어오기 요청을 검토, 실행 및 디버그할 수 있습니다. 현재 Azure Repos에서 코드를 지원하고 있지만, GitHub를 지원하고 전반적인 환경을 개선하기 위해 확장할 예정입니다.
 
 지금 시작하려면 Visual Studio Marketplace에서 [Visual Studio에 대한 끌어오기 요청](https://aka.ms/pr4vs) 확장을 다운로드하세요.
 

@@ -1,23 +1,24 @@
 ---
-title: '개요: Visual Studio에서 문제 보고'
+title: 문제 보고
 description: 문제 보고 도구의 개요를 제공하며 문제 상태 및 정의를 포함합니다.
 ms.date: 11/15/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.topic: conceptual
 author: seaniyer
 ms.author: seiyer
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56047150ce98cb6554248e43b7b8d7ff433cf283
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: b6d7605cffeca2797d47aa90c6f64a1aab0a6cb2
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826676"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159830"
 ---
-# <a name="overview-report-a-problem"></a>개요: 문제 보고
+# <a name="overview-report-a-problem"></a>Overview: ADO.NET Data Services 문제 보고
 
 문제 보고 도구를 사용하면 Visual Studio 개발자 커뮤니티에서 문제를 제출할 수 있습니다. 각 문제 보고서는 핵심 엔지니어링 시스템의 작업 항목이 되며, 중요한 문제를 식별하고 해결하는 데 도움이 되도록 제품 팀과 직접 소통할 수 있는 권한을 부여합니다. 풍부한 진단 정보와 함께 제출된 피드백은 Visual Studio 제품군을 개선하는 데 중요합니다. 시간을 내어 문제를 보고해 주셔서 정말 감사합니다.
 

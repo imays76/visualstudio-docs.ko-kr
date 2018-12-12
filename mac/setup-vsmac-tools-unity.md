@@ -1,16 +1,16 @@
 ---
 title: Mac용 Visual Studio Tools for Unity 설정
 description: Mac용 Visual Studio에서 사용할 Unity 도구 설정 및 설치
-author: dantogno
-ms.author: v-davian
+author: therealjohn
+ms.author: johmil
 ms.date: 05/25/2018
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: 56fb99f1748d799732f2ba44dde4980687687eef
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 9a661e3cae151e4d6199fd2a588ebd62e098de6c
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294905"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027330"
 ---
 # <a name="set-up-visual-studio-for-mac-tools-for-unity"></a>Mac용 Visual Studio Tools for Unity 설정
 
