@@ -4,7 +4,7 @@ items:
 - name: 개요
   items:
   - name: Visual Studio 2017 정보
-    href: ide/visual-studio-ide.md
+    href: get-started/visual-studio-ide.md
   - name: 코드 편집기 정보
     href: get-started/tutorial-editor.md
   - name: 프로젝트 및 솔루션 정보
@@ -138,11 +138,11 @@ items:
     href: ide/quickstart-nodejs.md
   - name: 'F#: 웹 서비스 만들기'
     href: ide/quickstart-fsharp.md
-  - name: 'C#: 웹앱 만들기'
+  - name: 'C#:  웹앱 만들기'
     href: ide/quickstart-aspnet-core.md
-  - name: 'C#: UWP 앱 만들기'
+  - name: 'C#:  UWP 앱 만들기'
     href: ide/quickstart-uwp-csharp.md
-  - name: 'C#: 콘솔 앱 만들기'
+  - name: 'C#:  콘솔 앱 만들기'
     href: ide/quickstart-csharp-console.md
   - name: 'Visual Basic: 콘솔 앱 만들기'
     href: ide/quickstart-visual-basic-console.md
@@ -158,9 +158,9 @@ items:
     href: javascript/tutorial-nodejs.md
   - name: Visual Studio의 C#
     items:
-    - name: 'C#: 웹앱 만들기'
+    - name: 'C#:  웹앱 만들기'
       href: ide/tutorial-csharp-aspnet-core.md
-    - name: 'C#: 콘솔 앱 만들기'
+    - name: 'C#:  콘솔 앱 만들기'
       href: ide/tutorial-csharp-console.md
   - name: Visual Studio의 Visual Basic
     href: ide/tutorial-visual-basic-console.md
@@ -523,7 +523,7 @@ items:
         - name: '자습서 1: 사진 뷰어 만들기(C#)'
           href: ide/tutorial-1-create-a-picture-viewer.md
           items:
-          - name: '1단계: Windows Forms 응용 프로그램 프로젝트 만들기'
+          - name: '1단계: Windows Forms 애플리케이션 프로젝트 만들기'
             href: ide/step-1-create-a-windows-forms-application-project.md
           - name: '2단계: 프로그램 실행'
             href: ide/step-2-run-your-program.md
@@ -537,11 +537,11 @@ items:
             href: ide/step-6-name-your-button-controls.md
           - name: '7단계: 폼에 대화 상자 구성 요소 추가'
             href: ide/step-7-add-dialog-components-to-your-form.md
-          - name: '8단계: 그림 단추 이벤트 처리기 표시를 위한 코드 작성'
+          - name: '8단계: 그림 표시 단추 이벤트 처리기를 위한 코드 작성'
             href: ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md
           - name: '9단계: 코드 검토, 주석 처리 및 테스트'
             href: ide/step-9-review-comment-and-test-your-code.md
-          - name: '10단계: 추가 단추 및 확인란의 코드 작성'
+          - name: '10단계: 추가 단추 및 확인란에 대한 코드 작성'
             href: ide/step-10-write-code-for-additional-buttons-and-a-check-box.md
           - name: '11단계: 프로그램 실행 및 기타 기능 사용'
             href: ide/step-11-run-your-program-and-try-other-features.md
@@ -592,7 +592,7 @@ items:
   - name: 컴파일 및 빌드
     href: ide/compiling-and-building-in-visual-studio.md
     items:
-    - name: '연습: 응용 프로그램 빌드'
+    - name: '연습: 애플리케이션 구축'
       href: ide/walkthrough-building-an-application.md
     - name: 프로젝트 및 솔루션 빌드 및 정리
       href: ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md
@@ -1120,9 +1120,9 @@ items:
       href: ide/developer-community-privacy.md
   - name: Visual Studio에서 문제를 보고하는 방법
     href: ide/how-to-report-a-problem-with-visual-studio-2017.md
-  - name: '개요: 문제 보고'
+  - name: 'Overview: ADO.NET Data Services 문제 보고'
     href: ide/report-a-problem.md
-  - name: '개요: 기능 제안'
+  - name: 'Overview: ADO.NET Data Services 기능 제안'
     href: ide/suggest-a-feature.md
   - name: 사용자 환경 개선 프로그램
     href: ide/visual-studio-experience-improvement-program.md
@@ -1133,9 +1133,9 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: 의견 보내기
     href: ide/talk-to-us.md
-ms.openlocfilehash: 82155ce10d1a70376ed79611b78745e440360097
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: 26d86461928e5494d4c0d8686cdf279847f29342
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027447"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160077"
