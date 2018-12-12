@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Modelbus를 사용하여 모델 통합
+title: Modelbus를 사용 하 여 모델 통합
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -9,22 +9,23 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: aa38b1f0039f65ad7ce1e5476e5f28032c92812e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e72814b34790dd133f09e0fb16c594e12ea8147c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894666"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064599"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Visual Studio Modelbus를 사용하여 모델 통합
+
 Visual Studio ModelBus는 모델에 다른 도구에서 그리고 모델 간에 링크를 만드는 메서드를 제공 합니다. 예를 들어, 도메인 특정 언어 (DSL) 모델과 UML 모델을 연결할 수 있습니다. 통합 DSL 집합을 만들 수 있습니다.
 
- ModelBus에서는 모델 또는 모델 내의 특정 요소에 대한 고유 참조를 만들 수 있습니다. 이 참조는 다른 모델의 요소 등 모델 외부에 저장할 수 있습니다. 나중에 도구에서 요소에 액세스해야 하면 ModelBus 인프라에서 적절한 모델을 로드하고 요소를 반환합니다. 원하는 경우 사용자에게 모델을 표시할 수 있습니다. 이전 위치에서 파일에 액세스할 수 없으면 ModelBus에서 사용자에게 파일을 찾으라는 메시지를 표시합니다. 사용자가 파일을 찾으면 해당 파일에 대한 모든 참조가 수정됩니다.
+ModelBus에서는 모델 또는 모델 내의 특정 요소에 대한 고유 참조를 만들 수 있습니다. 이 참조는 다른 모델의 요소 등 모델 외부에 저장할 수 있습니다. 나중에 도구에서 요소에 액세스해야 하면 ModelBus 인프라에서 적절한 모델을 로드하고 요소를 반환합니다. 원하는 경우 사용자에게 모델을 표시할 수 있습니다. 이전 위치에서 파일에 액세스할 수 없으면 ModelBus에서 사용자에게 파일을 찾으라는 메시지를 표시합니다. 사용자가 파일을 찾으면 해당 파일에 대한 모든 참조가 수정됩니다.
 
 > [!NOTE]
->  ModelBus의 현재 Visual Studio 구현에서 연결된 된 모델에 동일한 Visual Studio 솔루션에서 항목 이어야 합니다.
+> ModelBus의 현재 Visual Studio 구현에서 연결된 된 모델에 동일한 Visual Studio 솔루션에서 항목 이어야 합니다.
 
- 추가 정보와 샘플 코드는 다음 항목을 참조하세요.
+추가 정보와 샘플 코드는 다음 항목을 참조하세요.
 
 -   [방법: 끌어서 놓기 처리기 추가](../modeling/how-to-add-a-drag-and-drop-handler.md)
 
@@ -65,10 +66,11 @@ Visual Studio ModelBus는 모델에 다른 도구에서 그리고 모델 간에 
 
    `ModelBusAdapters\bin\*` 폴더에는 `Dsl` 프로젝트와 `ModelBusAdapters` 프로젝트에서 작성한 어셈블리가 포함됩니다. 다른 DSL에서 이 DSL을 참조하려면 이러한 어셈블리를 가져와야 합니다.
 
-### <a name="making-sure-that-elements-can-be-referenced"></a>요소를 참조할 수 있는지 확인
- Visual Studio ModelBus 어댑터를 기본적으로 식별 요소 guid를 사용 합니다. 따라서 이러한 식별자를 모델 파일에 영구적으로 저장해야 합니다.
+### <a name="ensure-that-elements-can-be-referenced"></a>요소를 참조할 수 있는지 확인 합니다.
 
-##### <a name="to-ensure-that-element-ids-are-persisted"></a>요소 ID가 영구적으로 저장되었는지 확인하려면
+Visual Studio ModelBus 어댑터를 기본적으로 식별 요소 guid를 사용 합니다. 따라서 이러한 식별자를 모델 파일에 영구적으로 저장해야 합니다.
+
+Id 유지 되는 해당 요소를 확인 합니다.
 
 1. DslDefinition.dsl을 엽니다.
 
@@ -85,11 +87,12 @@ Visual Studio ModelBus는 모델에 다른 도구에서 그리고 모델 간에 
 -   ModelBus 참조에서 올바른 요소를 찾도록 `ResolveElementReference`를 재정의합니다.
 
 ## <a name="editRef"></a> 다른 DSL에서 DSL 액세스
- DSL의 도메인 속성에 ModelBus 참조를 저장할 수 있으며 해당 참조를 사용하는 사용자 지정 코드를 작성할 수 있습니다. 사용자가 모델 파일과 파일 내의 요소를 선택하여 ModelBus 참조를 만들도록 할 수도 있습니다.
 
- 다른 DSL에 대 한 참조를 사용 하는 DSL을 사용 하려면 먼저 만들어야 합니다는 *소비자* 모델 버스 참조 합니다.
+DSL의 도메인 속성에 ModelBus 참조를 저장할 수 있으며 해당 참조를 사용하는 사용자 지정 코드를 작성할 수 있습니다. 사용자가 모델 파일과 파일 내의 요소를 선택하여 ModelBus 참조를 만들도록 할 수도 있습니다.
 
-#### <a name="to-enable-a-dsl-to-consume-references-to-an-exposed-dsl"></a>DSL이 표시된 DSL에 대한 참조를 사용하도록 설정하려면
+다른 DSL에 대 한 참조를 사용 하는 DSL을 사용 하려면 먼저 만들어야 합니다는 *소비자* 모델 버스 참조 합니다.
+
+### <a name="to-enable-a-dsl-to-consume-references-to-an-exposed-dsl"></a>DSL이 표시된 DSL에 대한 참조를 사용하도록 설정하려면
 
 1.  DSL 정의 다이어그램에서 다이어그램의 주요 부분을 마우스 오른쪽 단추로 클릭 하 고 클릭 **Modelbus**합니다.
 
@@ -107,7 +110,7 @@ Visual Studio ModelBus는 모델에 다른 도구에서 그리고 모델 간에 
 
     2.  **Microsoft.VisualStudio.Modeling.Sdk.Integration.Shell.11.0.dll**
 
-#### <a name="to-store-a-model-bus-reference-in-a-domain-property"></a>ModelBus 참조를 도메인 속성에 저장하려면
+### <a name="to-store-a-model-bus-reference-in-a-domain-property"></a>ModelBus 참조를 도메인 속성에 저장하려면
 
 1. 참조를 사용하는 DSL의 DSL 정의에서 도메인 클래스에 도메인 속성을 추가하고 해당 이름을 설정합니다.
 
@@ -117,7 +120,7 @@ Visual Studio ModelBus는 모델에 다른 도구에서 그리고 모델 간에 
 
    사용자가 특수한 ModelBus 참조 편집기를 사용하여 속성을 설정하도록 허용할 수 있습니다. 이 편집기의 두 버전이 나 *선택:* 하나를 사용 하면 모델 파일을 선택 하 고 모델 파일과 모델 내의 요소를 선택할 수 있습니다 다른 합니다.
 
-#### <a name="to-allow-the-user-to-set-a-model-bus-reference-in-a-domain-property"></a>사용자가 도메인 속성에서 ModelBus 참조를 설정하도록 허용하려면
+### <a name="to-allow-the-user-to-set-a-model-bus-reference-in-a-domain-property"></a>사용자가 도메인 속성에서 ModelBus 참조를 설정하도록 허용하려면
 
 1.  도메인 속성을 마우스 오른쪽 단추로 누른 **ModelBusReference 관련 속성 편집**합니다. 그러면 이 *모델 버스 선택기*합니다.
 
@@ -134,7 +137,7 @@ Visual Studio ModelBus는 모델에 다른 도구에서 그리고 모델 간에 
 
 6.  Company.FamilyTree.Person과 같은 대상 형식 목록을 지정한 경우에는 Company.FamilyTree.Dsl.dll과 같은 대상 DSL의 DLL을 참조하는 어셈블리 참조를 DSL 프로젝트에 추가해야 합니다.
 
-#### <a name="to-test-a-model-bus-reference"></a>ModelBus 참조를 테스트하려면
+### <a name="to-test-a-model-bus-reference"></a>ModelBus 참조를 테스트하려면
 
 1.  표시되는 SDL과 참조를 사용하는 DSL을 모두 작성합니다.
 
@@ -156,19 +159,21 @@ Visual Studio ModelBus는 모델에 다른 도구에서 그리고 모델 간에 
      요소 관련 ModelBus 참조 종류를 지정한 경우에는 선택을 통해 모델의 항목을 선택할 수도 있습니다.
 
 ## <a name="creating-references-in-program-code"></a>프로그램 코드에서 참조 만들기
- 모델 또는 모델 내 요소에 대한 참조를 저장하려면 `ModelBusReference`를 만듭니다. `ModelBusReference`에는 모델 참조와 요소 참조의 두 가지 종류가 있습니다.
 
- 모델 참조를 만들려고 하는 모델은 인스턴스, 파일 이름 또는 모델의 Visual Studio 프로젝트 항목 DSL의 AdapterManager 해야 합니다.
+모델 또는 모델 내 요소에 대한 참조를 저장하려면 `ModelBusReference`를 만듭니다. `ModelBusReference`에는 모델 참조와 요소 참조의 두 가지 종류가 있습니다.
 
- 요소 참조를 만들려면 모델 파일의 어댑터와 참조할 요소가 필요합니다.
+모델 참조를 만들려고 하는 모델은 인스턴스, 파일 이름 또는 모델의 Visual Studio 프로젝트 항목 DSL의 AdapterManager 해야 합니다.
+
+요소 참조를 만들려면 모델 파일의 어댑터와 참조할 요소가 필요합니다.
 
 > [!NOTE]
->  Visual Studio ModelBus를 사용 하 여 동일한 Visual Studio 솔루션에서 항목에만 참조를 만들 수 있습니다.
+> Visual Studio ModelBus를 사용 하 여 동일한 Visual Studio 솔루션에서 항목에만 참조를 만들 수 있습니다.
 
 ### <a name="import-the-exposed-dsl-assemblies"></a>표시되는 DSL 어셈블리 가져오기
- 참조를 사용하는 프로젝트에서 DSL에 대한 프로젝트 참조 및 표시되는 DSL의 ModelBusAdapter 어셈블리를 추가합니다.
 
- MusicLibrary DSL의 요소에 ModelBus 참조를 저장하려는 경우를 예로 들어 보겠습니다. 여기서 ModelBus 참조는 FamilyTree DSL의 요소를 참조합니다. 이 경우 MusicLibrary 솔루션 `Dsl` 프로젝트의 참조 노드에 다음 어셈블리에 대한 참조를 추가합니다.
+참조를 사용하는 프로젝트에서 DSL에 대한 프로젝트 참조 및 표시되는 DSL의 ModelBusAdapter 어셈블리를 추가합니다.
+
+MusicLibrary DSL의 요소에 ModelBus 참조를 저장하려는 경우를 예로 들어 보겠습니다. 여기서 ModelBus 참조는 FamilyTree DSL의 요소를 참조합니다. 이 경우 MusicLibrary 솔루션 `Dsl` 프로젝트의 참조 노드에 다음 어셈블리에 대한 참조를 추가합니다.
 
 - Fabrikam.FamilyTree.Dsl.dll - 표시되는 DSL입니다.
 
@@ -192,12 +197,13 @@ using System.Linq;
 ```
 
 ### <a name="to-create-a-reference-to-a-model"></a>모델에 대한 참조를 만들려면
- 모델 참조를 만들려면 표시되는 DSL의 AdapterManager에 액세스한 다음 AdapterManager를 사용하여 모델에 대한 참조를 만듭니다. 파일 경로나 `EnvDTE.ProjectItem`을 지정할 수 있습니다.
 
- AdapterManager에서는 모델의 개별 요소에 대한 액세스 권한을 제공하는 어댑터를 가져올 수 있습니다.
+모델 참조를 만들려면 표시되는 DSL의 AdapterManager에 액세스한 다음 AdapterManager를 사용하여 모델에 대한 참조를 만듭니다. 파일 경로나 `EnvDTE.ProjectItem`을 지정할 수 있습니다.
+
+AdapterManager에서는 모델의 개별 요소에 대한 액세스 권한을 제공하는 어댑터를 가져올 수 있습니다.
 
 > [!NOTE]
->  어댑터는 사용한 후 삭제해야 합니다. 어댑터를 삭제하는 가장 편리한 방법은 `using` 문을 사용하는 것입니다. 다음은 이에 대한 예입니다.
+> 어댑터는 사용한 후 삭제해야 합니다. 어댑터를 삭제하는 가장 편리한 방법은 `using` 문을 사용하는 것입니다. 다음은 이에 대한 예입니다.
 
 ```csharp
 // The file path of a model instance of the FamilyTree DSL:
@@ -232,7 +238,7 @@ using (FamilyTreeAdapter adapter =
 } // Dispose adapter
 ```
 
- 나중에 `modelReference`를 사용하려는 경우 외부 형식이 `ModelBusReference`인 도메인 속성에 저장하면 됩니다.
+나중에 `modelReference`를 사용하려는 경우 외부 형식이 `ModelBusReference`인 도메인 속성에 저장하면 됩니다.
 
 ```csharp
 using Transaction t = this.Store.TransactionManager
@@ -243,10 +249,11 @@ using Transaction t = this.Store.TransactionManager
 }
 ```
 
- 사용자가 이 도메인 속성을 편집하도록 허용하려면 편집기 특성의 매개 변수로 `ModelReferenceEditor`를 사용합니다. 자세한 내용은 [사용자가 참조를 편집 하도록 허용](#editRef)합니다.
+사용자가 이 도메인 속성을 편집하도록 허용하려면 편집기 특성의 매개 변수로 `ModelReferenceEditor`를 사용합니다. 자세한 내용은 [사용자가 참조를 편집 하도록 허용](#editRef)합니다.
 
 ### <a name="to-create-a-reference-to-an-element"></a>요소에 대한 참조를 만들려면
- 모델용으로 만든 어댑터를 사용하여 참조를 만들고 확인할 수 있습니다.
+
+모델용으로 만든 어댑터를 사용하여 참조를 만들고 확인할 수 있습니다.
 
 ```csharp
 // person is an element in the FamilyTree model:
@@ -254,12 +261,13 @@ ModelBusReference personReference =
   adapter.GetElementReference(person);
 ```
 
- 나중에 `elementReference`를 사용하려는 경우 외부 형식이 `ModelBusReference`인 도메인 속성에 저장하면 됩니다. 사용자가 해당 참조를 편집하도록 허용하려면 편집기 특성의 매개 변수로 `ModelElementReferenceEditor`를 사용합니다. 자세한 내용은 [사용자가 참조를 편집 하도록 허용](#editRef)합니다.
+나중에 `elementReference`를 사용하려는 경우 외부 형식이 `ModelBusReference`인 도메인 속성에 저장하면 됩니다. 사용자가 해당 참조를 편집하도록 허용하려면 편집기 특성의 매개 변수로 `ModelElementReferenceEditor`를 사용합니다. 자세한 내용은 [사용자가 참조를 편집 하도록 허용](#editRef)합니다.
 
 ### <a name="resolving-references"></a>참조 확인
- MBR(`ModelBusReference`)이 있는 경우 MBR이 참조하는 모델이나 모델 요소를 가져올 수 있습니다. 요소가 다이어그램이나 다른 뷰에 표시되어 있으면 해당 뷰를 열고 요소를 선택할 수 있습니다.
 
- MBR에서 어댑터를 만들 수 있으며 해당 어댑터에서 모델의 루트를 가져올 수 있습니다. 또한 모델 내의 특정 요소를 참조하는 MBR을 확인할 수도 있습니다.
+MBR(`ModelBusReference`)이 있는 경우 MBR이 참조하는 모델이나 모델 요소를 가져올 수 있습니다. 요소가 다이어그램이나 다른 뷰에 표시되어 있으면 해당 뷰를 열고 요소를 선택할 수 있습니다.
+
+MBR에서 어댑터를 만들 수 있으며 해당 어댑터에서 모델의 루트를 가져올 수 있습니다. 또한 모델 내의 특정 요소를 참조하는 MBR을 확인할 수도 있습니다.
 
 ```csharp
 using Microsoft.VisualStudio.Modeling.Integration; ...
@@ -295,7 +303,7 @@ using (FamilyTreeAdapter adapter =
 } // Dispose the adapter.
 ```
 
-##### <a name="to-resolve-modelbus-references-in-a-text-template"></a>텍스트 템플릿에서 ModelBus 참조를 확인하려면
+#### <a name="to-resolve-modelbus-references-in-a-text-template"></a>텍스트 템플릿에서 ModelBus 참조를 확인하려면
 
 1. 액세스하려는 DSL에는 텍스트 템플릿이 액세스하도록 구성된 ModelBus 어댑터가 있어야 합니다. 자세한 내용은 [DSL에 대 한 액세스 제공](#provide)합니다.
 
@@ -338,7 +346,8 @@ using (FamilyTreeAdapter adapter =
    자세한 내용과 연습은 참조 [텍스트 템플릿에서 Visual Studio ModelBus를 사용 하 여](../modeling/using-visual-studio-modelbus-in-a-text-template.md)
 
 ## <a name="serializing-a-modelbusreference"></a>ModelBusReference serialize
- 문자열 형식으로 MBR(`ModelBusReference`)을 저장하려는 경우 MBR을 serialize하면 됩니다.
+
+문자열 형식으로 MBR(`ModelBusReference`)을 저장하려는 경우 MBR을 serialize하면 됩니다.
 
 ```csharp
 string serialized = modelBus.SerializeReference(elementReference);
@@ -347,12 +356,13 @@ ModelBusReference elementReferenceRestored =
     modelBus.DeserializeReference(serialized, null);
 ```
 
- 이러한 방식으로 serialize한 MBR은 컨텍스트의 영향을 받지 않습니다. 단순 파일 기반 ModelBus 어댑터를 사용하는 경우 MBR에는 절대 파일 경로가 포함됩니다. 인스턴스 모델 파일을 이동하지 않으려는 경우에는 이 경로만 사용해도 충분합니다. 그러나 모델 파일을 Visual Studio 프로젝트에서 항목 같아야 합니다. 사용자는 전체 프로젝트를 파일 시스템의 다른 부분으로 이동할 수 있어야 합니다. 또한 프로젝트의 소스를 제어하고 다른 컴퓨터에서 프로젝트를 열 수 있어야 합니다. 그러므로 파일이 포함된 프로젝트의 위치를 기준으로 하여 경로 이름을 serialize해야 합니다.
+이러한 방식으로 serialize한 MBR은 컨텍스트의 영향을 받지 않습니다. 단순 파일 기반 ModelBus 어댑터를 사용하는 경우 MBR에는 절대 파일 경로가 포함됩니다. 인스턴스 모델 파일을 이동하지 않으려는 경우에는 이 경로만 사용해도 충분합니다. 그러나 모델 파일을 Visual Studio 프로젝트에서 항목 같아야 합니다. 사용자는 전체 프로젝트를 파일 시스템의 다른 부분으로 이동할 수 있어야 합니다. 또한 프로젝트의 소스를 제어하고 다른 컴퓨터에서 프로젝트를 열 수 있어야 합니다. 그러므로 파일이 포함된 프로젝트의 위치를 기준으로 하여 경로 이름을 serialize해야 합니다.
 
 ### <a name="serializing-relative-to-a-specified-file-path"></a>지정된 파일 경로를 기준으로 serialize
- `ModelBusReference`는 참조를 serialize할 기준이 되는 파일 경로 등의 정보를 저장할 수 있는 사전인 `ReferenceContext`를 포함합니다.
 
- 특정 경로를 기준으로 serialize하려면 다음 코드를 사용합니다.
+`ModelBusReference`는 참조를 serialize할 기준이 되는 파일 경로 등의 정보를 저장할 수 있는 사전인 `ReferenceContext`를 포함합니다.
+
+특정 경로를 기준으로 serialize하려면 다음 코드를 사용합니다.
 
 ```csharp
 elementReference.ReferenceContext.Add(
@@ -361,7 +371,7 @@ elementReference.ReferenceContext.Add(
 string serialized = modelBus.SerializeReference(elementReference);
 ```
 
- 문자열에서 참조를 검색하려면 다음 코드를 사용합니다.
+문자열에서 참조를 검색하려면 다음 코드를 사용합니다.
 
 ```csharp
 ReferenceContext context = new ReferenceContext();
@@ -469,11 +479,12 @@ private const string INVALID_REF_FORMAT =
 ```
 
 ## <a name="actions-performed-by-the-modelbus-extension"></a>ModelBus 확장이 수행하는 작업
- 아래 정보는 반드시 확인해야 하는 것은 아니지만 ModelBus를 광범위하게 사용하는 경우 유용할 수 있습니다.
 
- ModelBus 확장을 사용하면 DSL 솔루션에서 다음과 같은 변경을 수행할 수 있습니다.
+아래 정보는 반드시 확인해야 하는 것은 아니지만 ModelBus를 광범위하게 사용하는 경우 유용할 수 있습니다.
 
- DSL 정의 다이어그램을 마우스 오른쪽 단추로 클릭 **Modelbus**를 선택한 후 **ModelBus를 사용 하려면이 DSL을 사용 하도록 설정**:
+ModelBus 확장을 사용하면 DSL 솔루션에서 다음과 같은 변경을 수행할 수 있습니다.
+
+DSL 정의 다이어그램을 마우스 오른쪽 단추로 클릭 **Modelbus**를 선택한 후 **ModelBus를 사용 하려면이 DSL을 사용 하도록 설정**:
 
 - DSL 프로젝트에 대 한 참조에 추가 됩니다 **Microsoft.VisualStudio.Modeling.Sdk.Integration.11.0.dll**
 
@@ -483,7 +494,7 @@ private const string INVALID_REF_FORMAT =
 
 - 새 템플릿 파일이 추가 될 **Dsl\GeneratedCode\ModelBusReferencesSerialization.tt**합니다.
 
-  경우 있습니다 도메인 속성 형식을 ModelBusReference를로 속성을 마우스 오른쪽 단추로 클릭 하 고 클릭 **ModelBusReference 관련 속성**:
+경우 있습니다 도메인 속성 형식을 ModelBusReference를로 속성을 마우스 오른쪽 단추로 클릭 하 고 클릭 **ModelBusReference 관련 속성**:
 
 - 여러 CLR 특성이 도메인 속성에 추가됩니다. 속성 창의 사용자 지정 특성 필드에서 해당 특성을 확인할 수 있습니다. **Dsl\GeneratedCode\DomainClasses.cs**, 속성 선언에서 특성을 볼 수 있습니다.
 
@@ -499,7 +510,7 @@ private const string INVALID_REF_FORMAT =
     ("Choose a model file", "Target model|*.target")]
   ```
 
-  DSL 정의 다이어그램을 클릭 하 고 마우스 오른쪽 단추로 클릭 **ModelBus**, 선택한 **이 Dsl을 ModelBus**:
+DSL 정의 다이어그램을 클릭 하 고 마우스 오른쪽 단추로 클릭 **ModelBus**, 선택한 **이 Dsl을 ModelBus**:
 
 - 새 프로젝트(`ModelBusAdapter`)가 솔루션에 추가됩니다.
 

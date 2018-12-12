@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 디버깅하는 동안 호출 스택의 맵 메서드
+title: 디버깅하는 동안 호출 스택의 맵 메서드
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
@@ -30,15 +30,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e1d0139463f468ed6d909658bb143412dc122020
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c4597f1352e02033c55fcdced126e184f854b463
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856186"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067400"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Visual Studio에서 디버깅하는 동안 호출 스택의 맵 메서드
-디버그 하는 동안 호출 스택을 시각적으로 추적 하려면 코드 맵을 만듭니다. 맵을 기록해 두면 코드에서 어떤 작업을 하고 있는지 추적하여 버그를 찾는 데 집중할 수 있습니다.
+디버깅하는 동안 호출 스택을 시각적으로 추적할 코드 맵을 만듭니다. 맵을 기록해 두면 코드에서 어떤 작업을 하고 있는지 추적하여 버그를 찾는 데 집중할 수 있습니다.
 
  ![코드 맵의 호출 스택으로 디버그](../debugger/media/debuggermap_overview.png)
 
@@ -80,7 +80,7 @@ ms.locfileid: "49856186"
 
      디버깅하는 동안 맵이 자동으로 업데이트됩니다. 참조 [다음 호출 스택과 함께 맵 업데이트](#UpdateMap)합니다.
 
-## <a name="MakeNotes"></a> 코드에 대해 메모 하기
+## <a name="MakeNotes"></a> 코드에 대해 메모하기
  코드에서 발생 하는 추적 하기 위한 주석을 추가 합니다. 주석에 새 줄을 추가 하려면 다음을 누릅니다 **Shift + Return**합니다.
 
  ![코드 맵의 호출 스택에 설명 추가](../debugger/media/debuggermap_addcomment.png)
@@ -90,7 +90,7 @@ ms.locfileid: "49856186"
 
  ![다음 호출 스택으로 코드 맵 업데이트](../debugger/media/debuggermap_addclearcallstack.png)
 
-## <a name="AddRelatedCode"></a> 맵에 관련된 코드 추가
+## <a name="AddRelatedCode"></a> 맵에 관련 코드 추가
  이제 맵-새로운 다음? C# 또는 Visual Basic을 사용 하 여 작업할 경우 등, 필드, 속성 및 추적 코드에서 발생 하는 다른 메서드를 추가 합니다.
 
  메서드를 두 번 클릭하여 코드 정의를 보거나 메서드에 대한 바로 가기 메뉴를 사용합니다. (키보드: 맵 및 키를 눌러 메서드를 선택 **F12**)
@@ -114,14 +114,14 @@ ms.locfileid: "49856186"
 
  ![호출 스택 코드 맵에서 필드를 사용하는 메서드](../debugger/media/debuggermap_foundallreferences.png)
 
-## <a name="FindBugs"></a> 지도 사용 하 여 버그 찾기
+## <a name="FindBugs"></a> 맵을 사용하여 버그 찾기
  코드를 시각화하면 버그를 더 빠르게 찾을 수 있습니다. 예를 들어 드로잉 프로그램에서 버그를 조사 한다고 가정 합니다. 선을 그렸다가 취소하려는 경우 다른 선을 그릴 때까지 아무 것도 발생하지 않습니다.
 
  따라서 `clear`, `undo` 및 `Repaint` 메서드에서 중단점을 설정하고, 디버깅을 시작하고, 다음과 같은 맵을 빌드합니다.
 
  ![코드 맵에 다른 호출 스택 추가](../debugger/media/debuggermap_addpaintobjectcallstack.png)
 
- `Repaint`를 제외하고 맵 호출 `undo`에 대한 모든 사용자 제스처를 확인할 수 있습니다. 이유를 설명할 수 있습니다이 `undo` 즉시 작동 하지 않습니다.
+ `Repaint`를 제외하고 맵 호출 `undo`에 대한 모든 사용자 제스처를 확인할 수 있습니다. `undo`가 즉시 작동하지 않는 이유를 이해할 수 있을 것입니다.
 
  버그를 수정하고 프로그램 실행을 계속한 후에 맵은 `undo`의 새 호출을 `Repaint`에 추가합니다.
 

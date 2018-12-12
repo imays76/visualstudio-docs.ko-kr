@@ -12,5 +12,3 @@
 ## [방법: Visual Studio Trial Edition에서 업그레이드](how-to-upgrade-from-a-trial-edition-of-visual-studio.md)
 ## [방법: Visual Studio 제품 키 찾기](how-to-locate-the-visual-studio-product-key.md)
 ## [Visual Studio 수명 주기 정책 예외](visual-studio-lifecycle-policy-exceptions.md)
-# [Visual Studio 2017 설치](install-visual-studio-15-preview-5.md)
-## [Visual Studio 2017 수정](modify-visual-studio-15-preview-5.md)

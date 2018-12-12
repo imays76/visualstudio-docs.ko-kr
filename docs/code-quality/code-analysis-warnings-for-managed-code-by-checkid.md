@@ -1,5 +1,5 @@
 ---
-title: CheckId 별 관리 코드에 대 한 visual Studio 코드 분석 경고
+title: 관리되는 코드에 대한 CheckId별 코드 분석 경고
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -260,12 +260,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5dc92c12d0a60040cc216d0b9b3bee542c2bd8d8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 87fc6bdda65bf06b344a0971fb255555914e3102
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878923"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53053038"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>관리 코드 CheckId 별 코드 분석 경고
 
