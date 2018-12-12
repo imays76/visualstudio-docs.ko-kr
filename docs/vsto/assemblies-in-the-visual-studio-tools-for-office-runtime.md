@@ -1,5 +1,6 @@
 ---
 title: Visual Studio Tools for Office 런타임 어셈블리
+titleSuffix: ''
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -10,17 +11,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Visual Studio Tools for Office runtime, assemblies
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 550963966b45ed2d8024b36735f17ff24b6701fc
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: 66ee95d4f102ac4206a9ed55a1fc97fc251c4f9c
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050211"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248119"
 ---
 # <a name="assemblies-in-the-visual-studio-tools-for-office-runtime"></a>Visual Studio Tools for Office 런타임 어셈블리
   Office 프로젝트를 만들면 Visual Studio에서 프로젝트 형식 및 프로젝트의 대상 .NET Framework에 사용되는 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 어셈블리에 자동으로 참조를 추가합니다. .NET Framework 3.5, [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]및 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]용 Office 확장에는 각각 다른 어셈블리가 있습니다. Office 확장에 대 한 자세한 내용은 참조 하세요. [Visual Studio Tools for Office 런타임 개요](../vsto/visual-studio-tools-for-office-runtime-overview.md)합니다.  
@@ -30,7 +31,7 @@ ms.locfileid: "50050211"
   
 |어셈블리 이름|설명|  
 |-------------------|-----------------|  
-|Microsoft.Office.Tools.Common.dll|다음과 같은 형식을 제공합니다.<br /><br /> -리본 메뉴 사용자 지정 및 스마트 태그를 만들기 위한 형식입니다. **참고:** 스마트 태그에서 사용 되지 않는 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] 고 [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]입니다.<br />-사용자 지정 작업창 VSTO 추가 기능에서 및 문서 수준 사용자 지정 작업창을 만들기 위한 형식입니다.|  
+|Microsoft.Office.Tools.Common.dll|다음과 같은 형식을 제공합니다.<br /><br /> -리본 메뉴 사용자 지정 및 스마트 태그를 만들기 위한 형식입니다. **참고:**      [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] 및 [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]에서는 스마트 태그가 사용되지 않습니다.<br />-사용자 지정 작업창 VSTO 추가 기능에서 및 문서 수준 사용자 지정 작업창을 만들기 위한 형식입니다.|  
 |Microsoft.Office.Tools.Excel.dll|Excel 프로젝트에 대한 호스트 항목 및 호스트 컨트롤을 나타내는 인터페이스 및 지원 형식을 제공합니다. 자세한 내용은 [확장 된 개체를 사용 하 여 Excel 자동화](../vsto/automating-excel-by-using-extended-objects.md)합니다.|  
 |Microsoft.Office.Tools.Outlook.dll|Outlook VSTO 추가 기능에서 사용자 지정 양식 영역을 만드는 데 사용할 수 있는 형식을 제공합니다.|  
 |Microsoft.Office.Tools.Word.dll|Word 프로젝트에 대한 호스트 항목 및 호스트 컨트롤을 나타내는 인터페이스 및 지원 형식을 제공합니다. 자세한 내용은 [확장 된 개체를 사용 하 여 Word 자동화](../vsto/automating-word-by-using-extended-objects.md)합니다.|  
@@ -53,7 +54,7 @@ ms.locfileid: "50050211"
   
 |어셈블리 이름|설명|  
 |-------------------|-----------------|  
-|Microsoft.Office.Tools.Common.v9.0.dll|다음과 같은 형식을 제공합니다.<br /><br /> -Microsoft.Office.Tools.AddIn 기본 클래스에 대 한 VSTO 추가 기능입니다.<br />-리본 메뉴 사용자 지정 및 스마트 태그를 만들기 위한 클래스입니다. **참고:** 스마트 태그에서 사용 되지 않는 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] 고 [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]입니다.<br />-VSTO 추가 기능에서 사용자 지정 작업창 및 문서 수준 사용자 지정 작업창을 만들기 위한 클래스입니다.|  
+|Microsoft.Office.Tools.Common.v9.0.dll|다음과 같은 형식을 제공합니다.<br /><br /> -Microsoft.Office.Tools.AddIn 기본 클래스에 대 한 VSTO 추가 기능입니다.<br />-리본 메뉴 사용자 지정 및 스마트 태그를 만들기 위한 클래스입니다. **참고:**      [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] 및 [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]에서는 스마트 태그가 사용되지 않습니다.<br />-VSTO 추가 기능에서 사용자 지정 작업창 및 문서 수준 사용자 지정 작업창을 만들기 위한 클래스입니다.|  
 |Microsoft.Office.Tools.Excel.v9.0.dll|Excel 솔루션에 대한 호스트 항목 및 호스트 컨트롤을 제공합니다. 자세한 내용은 [확장 된 개체를 사용 하 여 Excel 자동화](../vsto/automating-excel-by-using-extended-objects.md)합니다.|  
 |Microsoft.Office.Tools.Outlook.v9.0.dll|Outlook VSTO 추가 기능에서 사용자 지정 양식 영역을 만드는 데 사용할 수 있는 클래스를 제공합니다.|  
 |Microsoft.Office.Tools.Word.v9.0.dll|Word 솔루션에 대한 호스트 항목 및 호스트 컨트롤을 제공합니다. 자세한 내용은 [확장 된 개체를 사용 하 여 Word 자동화](../vsto/automating-word-by-using-extended-objects.md)합니다.|  
@@ -63,7 +64,7 @@ ms.locfileid: "50050211"
 |Microsoft.VisualStudio.Tools.Applications.ServerDocument.v10.0.dll|다음과 같은 형식을 제공합니다.<br /><br /> - <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 클래스를 프로그래밍 방식으로 문서에 사용자 지정 어셈블리를 연결 하는 문서에서 캐시 된 데이터 액세스를 사용할 수 있습니다. 자세한 내용은 [ServerDocument 클래스를 사용 하 여 서버의 문서 관리](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)합니다.<br />-여러 클래스의 계층 구조를 나타내는 문서 수준 사용자 지정에서 데이터를 캐시 합니다. 자세한 내용은 [서버에서 문서 데이터에에서 액세스](../vsto/accessing-data-in-documents-on-the-server.md)합니다.|  
 |Microsoft.VisualStudio.Tools.Office.Runtime.v10.0.dll|다음과 같은 형식을 제공합니다.<br /><br /> 만들 사용자 포함 목록 항목을 Office에 신뢰를 부여 하는 데 사용할 수 있는-Microsoft.VisualStudio.Tools.Office.Runtime.Security.AddInSecurityEntry 및 Microsoft.VisualStudio.Tools.Office.Runtime.Security.UserInclusionList 클래스 .NET Framework 3.5를 대상으로 하는 솔루션입니다.<br />-Visual Studio Tools for Office 런타임 인프라의 일부 이며 코드에서 직접 사용할 필요가 있는 다른 형식입니다.|  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Visual Studio Tools for Office 런타임 개요](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
  [Visual Studio Tools for Office 런타임 설치 시나리오](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)  
   

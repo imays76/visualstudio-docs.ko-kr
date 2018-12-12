@@ -1,5 +1,6 @@
 ---
 title: '&lt;appAddin&gt; 요소 (Visual Studio에서 Office 개발)'
+titleSuffix: ''
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 572de1a3fccf9b66000d82e14f7895ab5cf0029f
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 3160f153bb6775cf5b2541abf4f75069c818f82b
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304874"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248074"
 ---
 # <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;appAddin&gt; 요소 (Visual Studio에서 Office 개발)
   합니다 **appAddin** 의 요소를 `vstov4` 네임 스페이스는 VSTO 추가 기능에 대 한 사용자 지정 관련 정보를 저장 합니다.  
@@ -45,9 +46,9 @@ ms.locfileid: "52304874"
   
 |특성|설명|  
 |---------------|-----------------|  
-|**응용 프로그램**|필수. Microsoft Office 응용 프로그램을 식별합니다. 값은 Excel, InfoPath, Outlook, PowerPoint, Project, Visio 또는 Word 중 하나입니다.|  
+|**응용 프로그램**|필수 요소. Microsoft Office 응용 프로그램을 식별합니다. 값은 다음 중 하나일 수 있습니다. Excel, InfoPath, Outlook, PowerPoint, Project, Visio 또는 Word|  
 |**LoadBehavior**|선택 사항입니다. 기본적으로 **loadBehavior** 이 값을 설정 하 여 사용 하도록 설정 됩니다. 디버깅을 위해서는 이 값을 2로 설정하여 VSTO 추가 기능을 사용하지 않도록 설정할 수 있습니다. 자세한 내용은에서 LoadBehavior 값 표를 참조 [VSTO 추가 기능에 대 한 레지스트리 항목](../vsto/registry-entries-for-vsto-add-ins.md)합니다.|  
-|**키 이름**|필수. 이 값은 응용 프로그램에서 VSTO 추가 기능을 로드할 때 사용할 레지스트리 키 이름입니다. 자세한 내용은 [VSTO 추가 기능에 대 한 레지스트리 항목](../vsto/registry-entries-for-vsto-add-ins.md)합니다.|  
+|**키 이름**|필수 요소. 이 값은 응용 프로그램에서 VSTO 추가 기능을 로드할 때 사용할 레지스트리 키 이름입니다. 자세한 내용은 [VSTO 추가 기능에 대 한 레지스트리 항목](../vsto/registry-entries-for-vsto-add-ins.md)합니다.|  
   
  합니다 **appAddin** 요소에는 다음 자식 요소가 있습니다.  
   
@@ -90,7 +91,7 @@ ms.locfileid: "52304874"
 </vstov4:appAddIn>  
 ```  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Office 솔루션에 대 한 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)   
  [Office 솔루션의 배포 매니페스트](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce 응용 프로그램 매니페스트](/visualstudio/deployment/clickonce-application-manifest)  
