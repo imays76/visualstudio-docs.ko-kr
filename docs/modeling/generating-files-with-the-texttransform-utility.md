@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 TextTransform 유틸리티를 사용 하 여 파일을 생성합니다.
+title: TextTransform 유틸리티 사용하여 파일 생성
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6572ef97027466fa97c254664327f2f77b4ea7f2
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 554ed126aa46b15148b902b901d8e9b664e3cdbd
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967083"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062298"
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>TextTransform 유틸리티를 사용 하 여 파일 생성
 
@@ -62,7 +62,7 @@ TextTransform [<options>] <templateName>
 |**-I** \<includedirectory>|지정 된 텍스트 템플릿에 포함 된 텍스트 템플릿을 포함 하는 디렉터리입니다.|
 |**-P** \<referencepath>|또는 사용 하 여 텍스트 템플릿 내에서 지정 된 어셈블리에 대 한 검색할 디렉터리를 **-r** 옵션입니다.<br /><br /> 예를 들어, Visual Studio API를 사용 하는 어셈블리를 포함 하려면 사용<br /><br /> `-P "%VSSHELLFOLDER%\Common7\IDE\PublicAssemblies"`|
 |**-dp** \<processorName>!\<className>!\<assemblyName&#124;codeBase>|이름, 전체 형식 이름 및 텍스트 템플릿 내에서 사용자 지정 지시문을 처리 하는 데 사용할 수 있는 지시문 프로세서의 어셈블리입니다.|
-|**-a** [processorName]![directiveName]!\<parameterName>!\<parameterValue>|지시문 프로세서에 대 한 매개 변수 값을 지정 합니다. 매개 변수 이름 및 값을 지정 하면 매개 변수가 모든 지시문 프로세서에 제공 됩니다. 지시문 프로세서를 지정 하는 매개 변수는 지정 된 프로세서 에서만 사용할 수 있습니다. 지시문 이름을 지정 하는 경우 지정된 된 지시문을 처리 되는 경우에 매개 변수는 사용할 수 있습니다.<br /><br /> 지시문 프로세서 또는 텍스트 템플릿에서 매개 변수 값에 액세스 하려면 사용 하 여 [ITextTemplatingEngineHost.ResolveParameterValue](/previous-versions/visualstudio/visual-studio-2012/bb126369\(v\=vs.110\))합니다. 텍스트 템플릿을 포함 `hostspecific` 템플릿 지시문에서에서 메시지를 호출 하 고 `this.Host`입니다. 예를 들어:<br /><br /> `<#@template language="c#" hostspecific="true"#> [<#= this.Host.ResolveParameterValue("", "", "parameterName") #>]`.<br /><br /> 항상 입력의 '!' 옵션 프로세서와 지시문 이름이 생략 한 경우에 표시 합니다. 예를 들어:<br /><br /> `-a !!param!value`|
+|**-a** [processorName]![directiveName]!\<parameterName>!\<parameterValue>|지시문 프로세서에 대 한 매개 변수 값을 지정 합니다. 매개 변수 이름 및 값을 지정 하면 매개 변수가 모든 지시문 프로세서에 제공 됩니다. 지시문 프로세서를 지정 하는 매개 변수는 지정 된 프로세서 에서만 사용할 수 있습니다. 지시문 이름을 지정 하는 경우 지정된 된 지시문을 처리 되는 경우에 매개 변수는 사용할 수 있습니다.<br /><br /> 지시문 프로세서 또는 텍스트 템플릿에서 매개 변수 값에 액세스 하려면 사용 하 여 [ITextTemplatingEngineHost.ResolveParameterValue](/previous-versions/visualstudio/visual-studio-2012/bb126369\(v\=vs.110\))합니다. 텍스트 템플릿을 포함 `hostspecific` 템플릿 지시문에서에서 메시지를 호출 하 고 `this.Host`입니다. 예를 들어 다음과 같습니다.<br /><br /> `<#@template language="c#" hostspecific="true"#> [<#= this.Host.ResolveParameterValue("", "", "parameterName") #>]`.<br /><br /> 항상 입력의 '!' 옵션 프로세서와 지시문 이름이 생략 한 경우에 표시 합니다. 예를 들어 다음과 같습니다.<br /><br /> `-a !!param!value`|
 |**-h**|도움말을 제공 합니다.|
 
 ## <a name="related-topics"></a>관련 항목
