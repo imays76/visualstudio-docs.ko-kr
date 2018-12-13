@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 이미지 라이브러리 | Microsoft Docs
+title: 이미지 라이브러리 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -22,25 +22,21 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5f5ac1ac63543d05a9320a4a299f2cd0ed723291
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.openlocfilehash: e715dbeff8fe490a95da240ad63f5b8b0404876a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49216725"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063981"
 ---
 # <a name="the-visual-studio-image-library"></a>Visual Studio 이미지 라이브러리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 이미지 라이브러리에는 Microsoft Visual Studio, Microsoft Windows, Office system 및 기타 Microsoft 소프트웨어에 나타나는 응용 프로그램 이미지가 포함되어 있습니다. 1,000개가 넘는 이러한 이미지를 사용하여 Microsoft 소프트웨어와 일관된 모양의 응용 프로그램을 만들 수 있습니다.  
-  
- [Visual Studio 이미지 라이브러리 다운로드](http://go.microsoft.com/fwlink/p/?LinkId=275090)  
-  
- 이미지 라이브러리는 공통 요소, 작업, 주석, 아이콘 및 개체 등 5개 범주로 나뉩니다. 공통 요소 및 아이콘 형식에 대한 PDF 형식의 Readme 파일이 포함되어 있습니다. 여기에는 응용 프로그램에서 이러한 이미지를 적절하게 사용하는 방법에 대한 정보가 포함되어 있습니다.  
-  
-## <a name="see-also"></a>참고 항목  
+Visual Studio 이미지 라이브러리에는 Microsoft Visual Studio, Microsoft Windows, Office system 및 기타 Microsoft 소프트웨어에 나타나는 응용 프로그램 이미지가 포함되어 있습니다. 1,000개가 넘는 이러한 이미지를 사용하여 Microsoft 소프트웨어와 일관된 모양의 응용 프로그램을 만들 수 있습니다.
+
+ [Visual Studio 이미지 라이브러리 다운로드](http://go.microsoft.com/fwlink/p/?LinkId=275090)
+
+ 이미지 라이브러리 다섯 가지 범주로 나뉩니다. 일반적인 요소, 작업, 주석, 아이콘 및 개체입니다. 공통 요소 및 아이콘 형식에 대한 PDF 형식의 Readme 파일이 포함되어 있습니다. 여기에는 응용 프로그램에서 이러한 이미지를 적절하게 사용하는 방법에 대한 정보가 포함되어 있습니다.
+
+## <a name="see-also"></a>참고 항목
  [이미지, 비트맵 및 메타파일](http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71)
-
-
-
-

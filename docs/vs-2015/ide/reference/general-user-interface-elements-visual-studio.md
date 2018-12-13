@@ -1,5 +1,5 @@
 ---
-title: 일반 사용자 인터페이스 요소(Visual Studio) | Microsoft 문서
+title: 일반 사용자 인터페이스 요소 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -14,12 +14,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d197f0272bfad8769477cf1cb8ee21110b816ad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.openlocfilehash: f2559cc618b006213fd5aa1f8fe66ecdce9d9f84
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214646"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53054439"
 ---
 # <a name="general-user-interface-elements-visual-studio"></a>일반 사용자 인터페이스 요소(Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,11 +50,11 @@ ms.locfileid: "49214646"
 
  [옵션, 텍스트 편집기, C/c + +, 고급](../../ide/reference/options-text-editor-c-cpp-advanced.md) C 또는 c + + 파일에 대 한 고급 옵션을 지정할 수 있습니다.
 
- [옵션, 텍스트 편집기, C#, 서식](../../ide/reference/options-text-editor-csharp-formatting.md) C# 파일에 대 한 서식 옵션을 지정할 수 있습니다.
+ [옵션, 텍스트 편집기 C#, 서식 지정](../../ide/reference/options-text-editor-csharp-formatting.md) 에 대 한 서식 옵션을 지정할 수 있습니다 C# 파일입니다.
 
- [옵션, 텍스트 편집기, C#, 고급](../../ide/reference/options-text-editor-csharp-advanced.md) C# 파일에 대 한 고급 옵션을 지정할 수 있습니다.
+ [옵션, 텍스트 편집기 C#고급](../../ide/reference/options-text-editor-csharp-advanced.md) 에 대 한 고급 옵션을 지정할 수 있습니다 C# 파일입니다.
 
- [옵션, 텍스트 편집기, C#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md) C# 파일에 대 한 IntelliSense 옵션을 지정할 수 있습니다.
+ [옵션, 텍스트 편집기 C#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md) 에 대 한 IntelliSense 옵션을 지정할 수 있습니다 C# 파일입니다.
 
  [옵션, 텍스트 편집기, XAML, 서식 지정](../../ide/reference/options-text-editor-xaml-formatting.md) XAML 파일에 대 한 서식 옵션을 지정할 수 있습니다.
 
