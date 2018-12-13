@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: feae82f3909be5816e025de21200acda20933d63
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 98697642135627173c5a6f31e90bf1dd1d0caeaf
+ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874620"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53307754"
 ---
 # <a name="deploy-a-layer-model-extension"></a>레이어 모델 확장명 배포
 
@@ -49,7 +49,7 @@ Team Foundation Server 서버 일반적으로 Visual Studio를 설치 하 고, �
 
 ### <a name="to-install-your-layer-extension-on-a-team-foundation-server-server"></a>Team Foundation Server 서버에 레이어 확장을 설치 하려면
 
-1.  복사 합니다 **.vsix** 개발 컴퓨터에서 파일을 Team Foundation Server (TFS) 컴퓨터에 있습니다.
+1.  복사 합니다. *vsix* 개발 컴퓨터에서 파일을 Team Foundation Server (TFS) 컴퓨터에 있습니다.
 
      VSIX 파일을 다음 위치 중 하나에 배치합니다.
 
