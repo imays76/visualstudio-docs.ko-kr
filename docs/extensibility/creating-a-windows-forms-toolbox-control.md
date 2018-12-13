@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34c263479be170b9f108c4cbc095be737f0b2b22
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a44dfd224324ba641e70e0cfe6ded87f88fe6765
+ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936052"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53307710"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Windows Forms 도구 상자 컨트롤 만들기
 Visual Studio 확장성 도구 (VS SDK)에 포함 된 Windows Forms 도구 상자 컨트롤 항목 템플릿을 사용 하면 자동으로 추가 되는 컨트롤을 만듭니다는 **도구 상자** 확장이 설치 되는 경우. 이 항목에서는 템플릿을 사용 하 여 다른 사용자에 게 배포할 수 있는 간단한 카운터 컨트롤을 만드는 방법을 보여 줍니다.  
@@ -77,16 +77,16 @@ Visual Studio 확장성 도구 (VS SDK)에 포함 된 Windows Forms 도구 상�
 3.  다음 공용 속성 선언을 만듭니다.  
   
     ```csharp  
-    public int Value {  
+    public int Value {  
         get { return currentValue; }   
     }  
   
-    public string Message {  
+    public string Message {  
         get { return displayText; }  
         set { displayText = value; }  
     }  
   
-    public bool ShowReset {  
+    public bool ShowReset {  
         get { return btnReset.Visible; }  
         set { btnReset.Visible = value; }  
     }  
@@ -98,7 +98,7 @@ Visual Studio 확장성 도구 (VS SDK)에 포함 된 Windows Forms 도구 상�
 4.  다음 코드를 배치 합니다 `Load` 컨트롤에 대 한 이벤트입니다.  
   
     ```csharp  
-    private void Counter_Load(object sender, EventArgs e)  
+    private void Counter_Load(object sender, EventArgs e)  
     {  
         currentValue = 0;  
         label1.Text = Message + Value;  
@@ -111,7 +111,7 @@ Visual Studio 확장성 도구 (VS SDK)에 포함 된 Windows Forms 도구 상�
 5.  카운터를 증가 시키는 다음 공용 메서드를 만듭니다.  
   
     ```csharp  
-    public void Increment()  
+    public void Increment()  
     {  
         currentValue++;  
         label1.Text = displayText + Value;  
@@ -123,7 +123,7 @@ Visual Studio 확장성 도구 (VS SDK)에 포함 된 Windows Forms 도구 상�
 6.  에 대 한 선언을 추가 합니다 `Incremented` 컨트롤 클래스에는 이벤트입니다.  
   
     ```csharp  
-    public event EventHandler Incremented;  
+    public event EventHandler Incremented;  
     ```  
   
      호출자는 카운터의 값이 변경에 응답 하기 위해이 이벤트 처리기를 추가할 수 있습니다.  
@@ -131,7 +131,7 @@ Visual Studio 확장성 도구 (VS SDK)에 포함 된 Windows Forms 도구 상�
 7.  반환 디자인 뷰를 두 번 클릭 합니다 **다시 설정** 생성 하는 단추를 `btnReset_Click` 이벤트 처리기에 다음 예제에서와 같이 입력 합니다.  
   
     ```csharp  
-    private void btnReset_Click(object sender, EventArgs e)  
+    private void btnReset_Click(object sender, EventArgs e)  
     {  
         currentValue = 0;  
         label1.Text = displayText + Value;  
@@ -145,7 +145,7 @@ Visual Studio 확장성 도구 (VS SDK)에 포함 된 Windows Forms 도구 상�
   
     ```csharp  
     [ProvideToolboxControl("General", false)]  
-    public partial class Counter : UserControl  
+    public partial class Counter : UserControl  
     ```  
   
 ### <a name="test-the-control"></a>컨트롤 테스트  
@@ -209,9 +209,9 @@ Visual Studio 확장성 도구 (VS SDK)에 포함 된 Windows Forms 도구 상�
      카운터를 다시 설정 **0**합니다.  
   
 ## <a name="next-steps"></a>다음 단계  
- 작성 하는 경우는 **도구 상자** 컨트롤을 Visual Studio는 라는 파일을 만듭니다 *ProjectName.vsix* 에 <em>\bin\debug\* 프로젝트의 폴더입니다. 통해 *.vsix를 업로드 하 여 컨트롤을 배포할 수 있습니다</em> 네트워크 또는 웹 사이트에 파일입니다. 열리는 경우는 *.vsix* 파일인 컨트롤 설치 되며 Visual Studio에 추가할 **도구 상자** 사용자의 컴퓨터. 업로드할 수 있습니다는 *.vsix* 파일을 합니다 [Visual Studio 갤러리](http://go.microsoft.com/fwlink/?LinkID=123847) 웹 사이트 사용자에 이동 하 여 찾을 수 있도록 합니다 **도구**  >  **확장 및 업데이트** 대화 합니다.  
+ 작성 하는 경우는 **도구 상자** 컨트롤을 Visual Studio는 라는 파일을 만듭니다 *ProjectName.vsix* 프로젝트의 \bin\debug\ 폴더에 있습니다. 업로드 하 여 컨트롤을 배포할 수 있습니다 합니다 *.vsix* 네트워크 또는 웹 사이트에 파일입니다. 열리는 경우는 *.vsix* 파일인 컨트롤 설치 되며 Visual Studio에 추가할 **도구 상자** 사용자의 컴퓨터. 업로드할 수 있습니다 합니다 *.vsix* 파일을 [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkID=123847) 사용자에 이동 하 여 찾을 수 있도록 합니다 **도구**  >   **확장 및 업데이트** 대화 합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Visual Studio의 다른 부분 확장](../extensibility/extending-other-parts-of-visual-studio.md)   
  [WPF 도구 상자 컨트롤 만들기](../extensibility/creating-a-wpf-toolbox-control.md)   
  [Visual Studio의 다른 부분 확장](../extensibility/extending-other-parts-of-visual-studio.md)   

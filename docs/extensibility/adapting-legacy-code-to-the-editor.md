@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b7e7052ab2d92e7518a57ad5587c29eabf550f3
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: e04ae5484b6c1fd5bcc56154c6cec23334e7ef8d
+ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078602"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53307793"
 ---
 # <a name="adapt-legacy-code-to-the-editor"></a>레거시 코드 편집기로 적응
 Visual Studio 편집기에 기존 코드 구성 요소에서 액세스할 수 있는 많은 기능이 있습니다. 다음 지침을 예를 들어 VSPackage로 편집기 기능을 사용 하려면-MEF 구성 요소를 조정 하는 방법을 보여 줍니다. 지침에는 서비스를 가져올 편집기의 관리 및 비관리 코드에서 어댑터를 사용 하는 방법을 보여 줍니다.  
@@ -43,11 +43,11 @@ internal IVsEditorAdaptersFactoryService editorFactory;
   
 |메서드|변환|  
 |------------|----------------|  
-|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.GetBufferAdapter%2A>|변환를 <xref:Microsoft.VisualStudio.Text.ITextBuffer> 에 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>합니다.|  
-|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.GetDataBuffer%2A>|변환를 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> 에 <xref:Microsoft.VisualStudio.Text.ITextBuffer>합니다.|  
-|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.GetDocumentBuffer%2A>|변환를 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> 에 <xref:Microsoft.VisualStudio.Text.ITextBuffer>합니다.|  
-|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.GetViewAdapter%2A>|변환를 <xref:Microsoft.VisualStudio.Text.Editor.ITextView> 에 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>합니다.|  
-|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.GetWpfTextView%2A>|변환를 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> 에 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>합니다.|  
+|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.GetBufferAdapter%2A>|<xref:Microsoft.VisualStudio.Text.ITextBuffer>을 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>로 변환합니다.|  
+|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.GetDataBuffer%2A>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>을 <xref:Microsoft.VisualStudio.Text.ITextBuffer>로 변환합니다.|  
+|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.GetDocumentBuffer%2A>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>을 <xref:Microsoft.VisualStudio.Text.ITextBuffer>로 변환합니다.|  
+|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.GetViewAdapter%2A>|<xref:Microsoft.VisualStudio.Text.Editor.ITextView>을 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>로 변환합니다.|  
+|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.GetWpfTextView%2A>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>을 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>로 변환합니다.|  
   
 ## <a name="create-adapters"></a>어댑터 만들기  
  레거시 인터페이스에 대 한 어댑터를 만들려면 다음 메서드를 사용 합니다.  
@@ -58,7 +58,7 @@ internal IVsEditorAdaptersFactoryService editorFactory;
 |<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.CreateVsTextBufferAdapter%2A>|만듭니다는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> 지정 된 <xref:Microsoft.VisualStudio.Utilities.IContentType>합니다.|  
 |<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.CreateVsTextBufferAdapter%2A>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>를 만듭니다.|  
 |<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.CreateVsTextBufferCoordinatorAdapter%2A>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator>를 만듭니다.|  
-|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.CreateVsTextViewAdapter%2A>|만듭니다는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> 에 대 한는 <xref:Microsoft.VisualStudio.Text.Editor.ITextViewRoleSet>합니다.|  
+|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.CreateVsTextViewAdapter%2A>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>에 대해 <xref:Microsoft.VisualStudio.Text.Editor.ITextViewRoleSet>를 만듭니다.|  
 |<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.CreateVsTextViewAdapter%2A>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>를 만듭니다.|  
   
 ## <a name="creating-adapters-in-unmanaged-code"></a>관리 되지 않는 코드에서 어댑터를 만드는 방법  
@@ -97,7 +97,7 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
   
 ### <a name="to-get-an-ivxtextbuffer"></a>IVxTextBuffer를 가져오려면  
   
-1.  IVx * 인터페이스에 대 한 정의는 *VSEditor.h* 파일을 *\..\VisualStudioIntegration\Common\Inc\\* Visual Studio SDK 설치 폴더입니다.  
+1.  IVx에 대 한 정의\* 인터페이스에는 *VSEditor.h* 파일을 *\..\VisualStudioIntegration\Common\Inc\\* Visual Studio의 폴더 SDK 설치 합니다.  
   
 2.  다음 코드를 사용 하 여 텍스트 버퍼를 인스턴스화하는 `IVsUserData->GetData()` 메서드. 다음 코드에서는 `pData` 에 대 한 포인터를 `IVsUserData` 개체입니다.  
   
