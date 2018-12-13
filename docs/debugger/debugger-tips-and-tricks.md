@@ -1,7 +1,7 @@
 ---
-title: 팁과 요령 Visual Studio 디버거에서
+title: 팁과 요령 디버거에서
 description: Visual Studio 디버거를 지 원하는 알려지지 않은 기능 중 일부에 대해 알아봅니다
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 06/15/2017
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 072cfcf253bb01687df20a6a0f2d41b71468b90c
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: 238236df48adab491cd8a1f9282a8f6a440c5321
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257357"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055227"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>For the Debugger in Visual Studio 생산성 팁과 트릭 배우기
 
@@ -65,7 +65,7 @@ Visual Studio에서 지 원하는 대부분의 언어에서 디버깅 세션 중
 > [!WARNING]
 > 이 기능을 주의 깊게 사용해야 하는 경우가 많으며 도구 설명에 경고가 표시됩니다. 다른 경고도 표시될 수 있습니다. 포인터를 이동 하면 앱을 이전 응용 프로그램 상태를 되돌릴 수 없습니다.
 
-## <a name="track-an-out-of-scope-object-c-visual-basic"></a>추적 범위를 벗어나는 개체 (C#, Visual Basic)
+## <a name="track-an-out-of-scope-object-c-visual-basic"></a>범위를 벗어나는 개체를 추적 (C#, Visual Basic)
 
 같은 디버거 창을 사용 하 여 변수를 표시 하는 것이 간단 합니다 **조사식** 창입니다. 그러나 경우 변수 범위를 벗어날에 **조사식** 창 표시 될 수도 있습니다는 회색으로 표시 합니다. 일부 앱 시나리오에서 변수의 값도 변수가 범위를 벗어날 시점과 밀접 하 게 시청 하려는 경우 변경할 수 있습니다 (예를 들어 변수로 발생할 수 가비지 수집). 개체 ID를 만들어 변수를 추적할 수 있습니다 합니다 **조사식** 창입니다.
 

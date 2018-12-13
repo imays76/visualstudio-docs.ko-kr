@@ -1,6 +1,6 @@
 ---
-title: '연습: Web Form 디버그 | Microsoft Docs'
-ms.custom: ''
+title: Web Form 디버그 | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 67eba0d7a439583d8486f8937693a63e65dca0d6
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: d28ebc797715614aefaf7206f170157d4f4485f2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389606"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055156"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>연습: Web Form 디버깅
 이 연습 과정에서는 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 응용 프로그램(Web Form)의 디버깅 방법을 보여 줍니다. 또한 실행을 시작하고 중지하며, 중단점을 설정하고, **조사식** 창에서 변수를 검사하는 방법을 보여 줍니다.
@@ -69,7 +69,7 @@ ms.locfileid: "52389606"
 
 11. 끌어 놓은 단추 컨트롤을 두 번 클릭합니다.
 
-     이렇게 하면 코드 페이지(C#의 경우 Default.aspx.cs, [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]의 경우 Default.aspx.vb)가 표시됩니다. 커서는 `Button1_Click` 함수에 있어야 합니다.
+     이렇게 하면 코드 페이지: Default.aspx.cs에 대 한 C# 의 경우 default.aspx.vb [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]합니다. 커서는 `Button1_Click` 함수에 있어야 합니다.
 
 12. `Button1_Click` 함수에 다음 코드를 추가합니다.
 

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에 대한 팁과 요령 | Microsoft 문서
+title: 팁과 요령 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1e640aa6676cec22bd9b124727be0cbe88c5c6cb
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
-ms.translationtype: MT
+ms.openlocfilehash: b067302576dd83d88853a517f66e1c19186e3a78
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000112"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051158"
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Visual Studio에 대한 유용한 정보
 
@@ -144,7 +144,7 @@ ms.locfileid: "51000112"
 
 ##  <a name="BKMK_ALM"></a> 애플리케이션 수명 주기 관리
 
-[바로 가기 키: Visual Studio Online, TFS 웹 포털 및 팀 탐색기](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts)를 참조하세요.
+참조 [바로 가기 키: Visual Studio Online, TFS 웹 포털 및 팀 탐색기](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts)합니다.
 
 ## <a name="see-also"></a>참고 항목
 

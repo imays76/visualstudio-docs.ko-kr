@@ -1,6 +1,6 @@
 ---
-title: 프로젝트 설정에 대 한 C# 디버그 구성 | Microsoft Docs
-ms.custom: ''
+title: 프로젝트 설정에 대 한는 C# 디버그 구성 | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/21/2018
 ms.technology: vs-ide-debug
 ms.topic: reference
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7152e6ac16c8a15ba6973eb3ac33c373560a0d76
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 6de7bfd547516b227063c0d3143b508bcbd9ddfd
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388973"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059274"
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>C# 디버그 구성을 위한 프로젝트 설정
 

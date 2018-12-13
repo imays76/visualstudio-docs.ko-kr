@@ -1,6 +1,6 @@
 ---
-title: Visual Studio에서 UWP 앱에 대 한 디버깅 세션을 시작 합니다. | Microsoft Docs
-ms.custom: ''
+title: UWP 앱에 대 한 디버깅 세션을 시작 | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/20/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -36,12 +36,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: b1cc89673558fdaa47fa48756902f44738edf734
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 181dec6bfa6ebe96528c39b74d68375b8eb7fcb8
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305301"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062411"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>UWP 앱에 대한 디버깅 세션 시작
   
