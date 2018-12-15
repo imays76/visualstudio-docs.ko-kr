@@ -71,7 +71,7 @@ C:\>cl /analyze Sample.cpp
 - [C/C++ 코드 분석 바로 시작하기](quick-start-code-analysis-for-c-cpp.md)
 - [연습: C/C++ 코드 오류 분석](walkthrough-analyzing-c-cpp-code-for-defects.md)
 - [C/C++용 코드 분석 경고](code-analysis-for-c-cpp-warnings.md)
-- [C++ Core Guidelines을 이용한 코드검사 사용](using-the-cpp-core-guidelines-checkers.md)
+- [C++ Core Guidelines 이용한 코드검사 사용](using-the-cpp-core-guidelines-checkers.md)
 - [C++ Core Guidelines에 대한 정보](code-analysis-for-cpp-corecheck.md)
 - [규칙 집합을 사용하여 실행할 C++ 규칙 지정](using-rule-sets-to-specify-the-cpp-rules-to-run.md)
 - [코드 분석 도구를 사용한 드라이버 품질 분석](/windows-hardware/drivers/develop/analyzing-driver-quality-by-using-code-analysis-tools)
