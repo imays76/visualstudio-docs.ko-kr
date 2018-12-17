@@ -117,4 +117,4 @@ Visual Studio에는 네이티브 코드에 대한 두 가지 표준 규칙 집�
 
 ## <a name="see-also"></a>참고자료
 
-[C/c + + 용 코드 분석](../code-quality/code-analysis-for-c-cpp-overview.md)
+[C/C++ 용 코드 분석](../code-quality/code-analysis-for-c-cpp-overview.md)
