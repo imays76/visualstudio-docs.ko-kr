@@ -1,5 +1,5 @@
 ---
-title: '연습: C/C++ 코드의 오류 분석'
+title: '연습: C/C++ 코드 오류 분석'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -21,9 +21,9 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
 ms.locfileid: "31922035"
 ---
-# <a name="walkthrough-analyzing-cc-code-for-defects"></a>연습: C/C++ 코드의 오류 분석
+# <a name="walkthrough-analyzing-cc-code-for-defects"></a>연습: C/C++ 코드 오류 분석
 
-이 연습에서는 C/c + + 코드에 대 한 코드 분석 도구를 사용 하 여 C/c + + 코드에 잠재적 코드 오류를 분석 하는 방법을 보여 줍니다.
+이 연습에서는 C/C++ 코드에 대 한 코드 분석 도구를 사용 하 여 C/C++ 코드에 잠재적 코드 오류를 분석 하는 방법을 보여 줍니다.
 
 - 네이티브 코드에 코드 분석을 실행 합니다.
 - 코드 오류 경고를 분석 합니다.
@@ -33,7 +33,7 @@ ms.locfileid: "31922035"
 ## <a name="prerequisites"></a>전제 조건
 
 - 복사본은 [데모 샘플](../code-quality/demo-sample.md)합니다.
-- C/c + +의 기본적인 이해 해야 합니다.
+- C/C++의 기본적인 이해 해야 합니다.
 
 ### <a name="to-run-code-defect-analysis-on-native-code"></a>네이티브 코드에서 코드 분석을 실행 하려면
 
@@ -53,7 +53,7 @@ ms.locfileid: "31922035"
 
 5. 클릭 **코드 분석**합니다.
 
-6. 클릭는 **C/c + + 빌드에 코드 분석 사용** 확인란 합니다.
+6. 클릭는 **C/C++ 빌드에 코드 분석 사용** 확인란 합니다.
 
 7. CodeDefects 프로젝트를 다시 작성 합니다.
 
@@ -69,7 +69,7 @@ ms.locfileid: "31922035"
 
      경고 C6230: 의미 체계가 다른 형식 간의 암시적 캐스팅: 부울 컨텍스트에서 HRESULT를 사용 합니다.
 
-     함수에서 경고를 발생 시킨 줄을 표시 하는 코드 편집기 `bool``ProcessDomain()`합니다. 이 경고는 HRESULT가 사용 하 고 있음을 'if' 문을 부울 결과 필요한 것을 나타냅니다.
+     함수에서 경고를 발생 시킨 줄을 표시 하는 코드 편집기 `bool ProcessDomain()`합니다. 이 경고는 HRESULT가 사용 하 고 있음을 'if' 문을 부울 결과 필요한 것을 나타냅니다.
 
 3. SUCCEEDED 매크로 사용 하 여이 경고를 해결 합니다. 코드에는 다음 코드와 유사 해야 합니다.
 
@@ -97,7 +97,7 @@ ms.locfileid: "31922035"
 
 2. CodeDefects 프로젝트를 다시 작성 합니다.
 
-     에 **오류 목록**, c 6001이 초기화를 오류로 표시 합니다.
+     에 **오류 목록**, C6001이 초기화를 오류로 표시 합니다.
 
 3. 나머지 두 C6001 오류는 **오류 목록** 초기화 하 여 `i` 및 `j` 0으로 합니다.
 
@@ -115,13 +115,13 @@ ms.locfileid: "31922035"
 
 3. 클릭 **코드 분석**합니다.
 
-4. 선택 된 **C/c + + 빌드에 코드 분석 사용** 확인란 합니다.
+4. 선택 된 **C/C++ 빌드에 코드 분석 사용** 확인란 합니다.
 
 5. 주석 프로젝트를 다시 작성 합니다.
 
 6. 에 **오류 목록**, 다음과 같은 경고를 두 번 클릭 합니다.
 
-     경고 c 6011: 'newNode' NULL 포인터를 역참조 하 고 있습니다.
+     경고 C6011: 'newNode' NULL 포인터를 역참조 하 고 있습니다.
 
      이 경고는 반환 값을 확인 하려면 호출자가 오류를 나타냅니다. 이 경우 호출에서 **AllocateNode** NULL 값을 반환할 수 있습니다 (AllocateNode에 대 한 함수 선언에 대 한 annotations.h 헤더 파일 참조).
 
@@ -144,7 +144,7 @@ ms.locfileid: "31922035"
 
 ### <a name="to-use-source-code-annotation"></a>소스 코드 주석을 사용 하려면
 
-1. 형식 매개 변수를 주석 달기 및는 함수의 반환 값 `AddTail` 이 예제에 표시 된 대로 Pre 및 Post 조건을 사용 하 여:
+1. 형식 매개 변수를 주석 달기 및는 함수의 반환 값 `AddTail` 이 예제에 표시 된 대로 Pre 및 Post 조건을 사용하여:
 
    ```cpp
    [returnvalue:SA_Post (Null=SA_Maybe)] LinkedList* AddTail
@@ -158,7 +158,7 @@ ms.locfileid: "31922035"
 
 3. 에 **오류 목록**, 다음과 같은 경고를 두 번 클릭 합니다.
 
-     경고 c 6011: NULL 포인터 역참조 'node'.
+     경고 C6011: NULL 포인터 역참조 'node'.
 
      이 경고는 함수에 전달 된 노드가 null 일 수 나타내고 경고가 발생 한 줄 번호를 나타냅니다.
 
@@ -180,5 +180,5 @@ ms.locfileid: "31922035"
 
 ## <a name="see-also"></a>참고자료
 
-[연습: 코드 오류에 대 한 관리 되는 코드를 분석](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
-[C/c + + 코드 분석](../code-quality/code-analysis-for-c-cpp-overview.md)
+[연습: 코드 오류에 대 한 관리되는 코드를 분석](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
+[C/C++ 코드 분석](../code-quality/code-analysis-for-c-cpp-overview.md)
