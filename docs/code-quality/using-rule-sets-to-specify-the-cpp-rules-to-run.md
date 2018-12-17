@@ -16,13 +16,13 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49893600"
 ---
-# <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>규칙 집합을 사용 하 여 실행할 c + + 규칙 지정
+# <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>규칙 집합을 사용 하 여 실행할 C++ 규칙 지정
 
 Visual Studio에서 만들기 및 사용자 지정을 수정할 수 있습니다 *규칙 집합* 코드 분석을 사용 하 여 연결 된 특정 프로젝트 요구를 충족 하도록 합니다. 기본 규칙 집합에 저장 된 `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets`합니다.
 
 **Visual Studio 2017 버전 15.7** 모든 텍스트를 사용 하 여 사용자 지정 규칙 집합 편집기 만들기 및 사용 중인 시스템에 구축할 기능에 관계 없이 명령줄 빌드에 적용할 수 있습니다. 자세한 내용은 [/analyze: ruleset](/cpp/build/reference/analyze-code-analysis)합니다.
 
-C/c + + 프로젝트를 Visual Studio에서 설정 하는 사용자 지정 c + + 규칙을 만들려면 Visual Studio IDE에서 열려 있어야 합니다. 그런 다음 규칙 집합 편집기에서 표준 규칙 집합을 열고, 특정 규칙을 추가 또는 제거하고, 필요에 따라 코드 분석으로 규칙이 위반된 것으로 확인될 때 발생하는 작업을 변경합니다.
+C/C++ 프로젝트를 Visual Studio에서 설정 하는 사용자 지정 C++ 규칙을 만들려면 Visual Studio IDE에서 열려 있어야 합니다. 그런 다음 규칙 집합 편집기에서 표준 규칙 집합을 열고, 특정 규칙을 추가 또는 제거하고, 필요에 따라 코드 분석으로 규칙이 위반된 것으로 확인될 때 발생하는 작업을 변경합니다.
 
 새 사용자 지정 규칙 집합을 만들려면 새 파일 이름을 사용 하 여 저장 합니다. 사용자 지정 규칙 집합을 프로젝트에 자동으로 할당 됩니다.
 
