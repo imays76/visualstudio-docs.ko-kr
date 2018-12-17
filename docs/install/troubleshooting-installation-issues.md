@@ -1,8 +1,9 @@
 ---
-title: Visual Studio 2017 설치 문제 해결
+title: 설치 및 업그레이드 문제 해결
 description: 때로는 무엇인가 잘못될 수도 있습니다. Visual Studio 설치 또는 업그레이드에 실패할 경우 이 페이지가 도움이 될 수 있습니다.
 ms.date: 08/01/2018
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -14,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db85353830e1d86773a870a410797bfb5c60ccd7
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: 39accaa3b8ee6a5ac2979b7e93b02a1ce00716be
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384125"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159936"
 ---
 # <a name="troubleshoot-visual-studio-2017-installation-and-upgrade-issues"></a>Visual Studio 2017 설치 및 업그레이드 문제 해결
 

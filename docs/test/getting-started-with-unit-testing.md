@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 171d329ed852bf6a27f20f12ae0f5421103820ff
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 6e8835edb2b340778c4431d3de5b554d6aeb6c6d
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370809"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53158816"
 ---
 # <a name="get-started-with-unit-testing"></a>유닛 테스트 시작
 
@@ -147,7 +147,7 @@ Boost, Google, NUnit 등의 타사 테스트 프레임워크를 사용하여 Vis
 
 1. 단위 테스트를 코딩합니다.
 
-   ![단위 테스트에 코드 추가](media/create3rdpartyunittest7.png)
+   ![단위 테스트 코드 파일에 코드 추가](media/create3rdpartyunittest7.png)
 
 ## <a name="see-also"></a>참고 항목
 

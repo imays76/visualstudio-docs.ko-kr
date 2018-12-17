@@ -1,6 +1,6 @@
 ---
-title: Visual Studio 디버거에서 호출 스택을 보려면 | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: 디버거에서 호출 스택을 보려면 | Microsoft Docs
+ms.custom: seodec18
 ms.date: 10/29/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -30,16 +30,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7804ed478fc218d1e218af6e26f5ee91071fb29c
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: fe3b266ee44b326749ed555df77dee66b8e82aae
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388027"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062353"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>호출 스택 보기 및 디버거에서 호출 스택 창 사용
 
-호출 스택** 창에서 현재 스택에 있는 함수 또는 프로시저 호출을 볼 수 있습니다. **호출 스택** 창에는 메서드와 함수가 호출되는 순서가 표시됩니다. 호출 스택은 앱의 실행 흐름을 검사하고 파악할 수 있는 좋은 방법입니다.
+**호출 스택** 창에서 현재 스택에 있는 함수 또는 프로시저 호출을 볼 수 있습니다. **호출 스택** 창에는 메서드와 함수가 호출되는 순서가 표시됩니다. 호출 스택은 앱의 실행 흐름을 검사하고 파악할 수 있는 좋은 방법입니다.
 
 때 [디버깅 기호](#bkmk_symbols) 호출 스택의 일부에 대해 사용할 수 없는 합니다 **호출 스택** 창을 대신 표시 하는 호출 스택의 해당 부분에 대 한 올바른 정보를 표시 하는 일을 할 수 있습니다.
 
@@ -49,7 +49,7 @@ ms.locfileid: "52388027"
 > **호출 스택** 창은 Eclipse와 같은 일부 IDE의 디버그 관점과 비슷합니다.
 
 > [!NOTE]
-> 표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 여기서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 도구 **메뉴에서 설정 가져오기 및 내보내기**를 선택합니다.  참조 [설정 재설정](../ide/environment-settings.md#reset-settings)합니다.
+> 표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 여기서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기**를 선택합니다.  참조 [설정 재설정](../ide/environment-settings.md#reset-settings)합니다.
 
 ## <a name="view-the-call-stack-while-in-the-debugger"></a>디버거 내에서 호출 스택을 보려면
 
@@ -61,7 +61,7 @@ ms.locfileid: "52388027"
 
 ## <a name="display-non-user-code-in-the-call-stack-window"></a>사용자 코드가 아닌 호출 스택 창에 표시
 
--   호출 스택 **창에서 마우스 오른쪽 단추를 클릭하고 외부 코드 표시**를 선택합니다.
+-   **호출 스택** 창에서 마우스 오른쪽 단추를 클릭하고 **외부 코드 표시**를 선택합니다.
 
 사용자 이외의 경우 표시 되지 않는 모든 코드가 됩니다 [Just My Code](../debugger/just-my-code.md) 사용 가능 합니다. 관리 코드에서 사용자 코드가 아닌 프레임 기본적으로 숨겨집니다. 사용자 코드가 아닌 프레임 대신 다음과 같이 출력 표시 됩니다.
 
@@ -73,13 +73,13 @@ ms.locfileid: "52388027"
 
     또는 프레임을 두 번 클릭 수를 **호출 스택** 창 프레임으로 전환 합니다.
 
-2.  프레임으로 전환**을 선택합니다.
+2.  **프레임으로 전환**을 선택합니다.
 
-     선택한 스택 프레임 옆에 끝이 굽은 녹색 화살표가 표시 됩니다. 실행 포인터는 여전히 노란색 화살표로 표시되어 있는 원래 프레임에 그대로 있습니다. 디버그 **메뉴에서 한 단계씩 코드 실행** 또는 계속**을 선택하면 선택한 프레임이 아닌 원래 프레임에서 실행이 계속됩니다.
+     선택한 스택 프레임 옆에 끝이 굽은 녹색 화살표가 표시 됩니다. 실행 포인터는 여전히 노란색 화살표로 표시되어 있는 원래 프레임에 그대로 있습니다. **디버그** 메뉴에서 **한 단계 실행** 또는 **계속**을 선택하면 선택한 프레임이 아닌 원래 프레임에서 실행이 계속됩니다.
 
 ## <a name="view-the-source-code-for-a-function-on-the-call-stack"></a>호출 스택에 있는 함수의 소스 코드 보기
 
--   호출 스택 **창에서 소스 코드를 보려는 함수를 마우스 오른쪽 단추로 클릭하고 소스 코드로 이동**을 선택합니다.
+-   **호출 스택** 창에서 소스 코드를 보려는 함수를 마우스 오른쪽 단추로 클릭하고 **소스 코드로 이동**을 선택합니다.
 
 ## <a name="run-to-a-specific-function-from-the-call-stack-window"></a>호출 스택 창에서 특정 함수까지 실행
 
@@ -91,13 +91,13 @@ ms.locfileid: "52388027"
 
 ## <a name="display-calls-to-or-from-another-thread"></a>나 다른 스레드로 호출 표시
 
--   호출 스택 **창을 마우스 오른쪽 단추로 클릭하고 다른 스레드로 호출/다른 스레드에서 호출 포함**을 선택합니다.
+-   **호출 스택** 창을 마우스 오른쪽 단추로 클릭하고 **다른 스레드로 호출/다른 스레드에서 호출 포함**을 선택합니다.
 
 ## <a name="visually-trace-the-call-stack"></a>호출 스택을 시각적으로 추적
 
 Visual Studio enterprise (전용)에서 디버깅 하는 동안 호출 스택의 코드 맵을 볼 수 있습니다.
 
-- 호출 스택** 창에서 바로 가기 메뉴를 엽니다. 선택할 **호출 스택 코드 맵에 표시** (**Ctrl** + **Shift** + **`**).
+- **호출 스택** 창에서 바로 가기 메뉴를 엽니다. 선택할 **호출 스택 코드 맵에 표시** (**Ctrl** + **Shift** + **`**).
 
     자세한 내용은 [디버깅 하는 동안 호출 스택의 메서드 매핑](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)합니다.
 
@@ -105,7 +105,7 @@ Visual Studio enterprise (전용)에서 디버깅 하는 동안 호출 스택의
 
 ## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack-c-c-visual-basic-f"></a>호출 스택에 있는 함수의 디스어셈블리 코드 보기 (C#, c + +, Visual Basic의 경우 F#)
 
--   호출 스택 **창에서 디스어셈블리 코드를 보려는 함수를 마우스 오른쪽 단추로 클릭하고 디스어셈블리로 이동**을 선택합니다.
+-   **호출 스택** 창에서 디스어셈블리 코드를 보려는 함수를 마우스 오른쪽 단추로 클릭하고 **디스어셈블리로 이동**을 선택합니다.
 
 ## <a name="change-the-optional-information-displayed"></a>표시 되는 선택적 정보를 변경 합니다.
 
@@ -113,7 +113,7 @@ Visual Studio enterprise (전용)에서 디버깅 하는 동안 호출 스택의
 
 ## <a name="bkmk_symbols"></a> 모듈에 대 한 기호 로드 (C#, c + +, Visual Basic의 경우 F#)
 
-호출 스택** 창에서 현재 기호가 로드되어 있지 않은 코드에 대한 디버깅 기호를 로드할 수 있습니다. 이러한 기호는 Microsoft 공용 기호 서버에서 다운로드한 .NET Framework 또는 시스템 기호일 수도 있고 디버깅 중인 컴퓨터의 기호 경로에 있는 기호일 수도 있습니다.
+**호출 스택** 창에서 현재 기호가 로드되어 있지 않은 코드에 대한 디버깅 기호를 로드할 수 있습니다. 이러한 기호는 Microsoft 공용 기호 서버에서 다운로드한 .NET Framework 또는 시스템 기호일 수도 있고 디버깅 중인 컴퓨터의 기호 경로에 있는 기호일 수도 있습니다.
 
 [기호 파일(.pdb) 및 원본 파일 지정](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)을 참조하세요.
 
@@ -125,15 +125,15 @@ Visual Studio enterprise (전용)에서 디버깅 하는 동안 호출 스택의
 
 ### <a name="to-set-the-symbol-path"></a>기호 경로를 설정하려면
 
-1.  호출 스택 **창의 바로 가기 메뉴에서 기호 설정**을 선택합니다.
+1.  **호출 스택** 창의 바로 가기 메뉴에서 **기호 설정**을 선택합니다.
 
-     옵션 **대화 상자가 열리고 기호** 페이지가 표시됩니다.
+     **옵션** 대화 상자가 열리고 **기호** 페이지가 표시됩니다.
 
 2.  선택 **기호 설정**합니다.
 
-3.  옵션** 대화 상자에서 폴더 아이콘을 클릭합니다.
+3.  **옵션** 대화 상자에서 폴더 아이콘을 클릭합니다.
 
-     기호 파일(.pdb) 위치** 상자에 커서가 표시됩니다.
+     **기호 파일(.pdb) 위치** 상자에 커서가 표시됩니다.
 
 4.  디버깅 중인 컴퓨터의 기호 위치에 디렉터리 경로 입력 합니다. 로컬 및 원격 디버깅을 위해 로컬 컴퓨터의 경로입니다.
 

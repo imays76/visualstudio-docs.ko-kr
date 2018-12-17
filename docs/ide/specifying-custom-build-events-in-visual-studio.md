@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 사용자 지정 빌드 이벤트 지정
+title: 사용자 지정 빌드 이벤트 지정
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 29273ff1580d7fcb757a979309d38f599a9ff499
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e6c5bde6b6dce7655043f3dc766a5faa81fa944e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908744"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055130"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Visual Studio에서 사용자 지정 빌드 이벤트 지정
 
@@ -61,4 +61,4 @@ ms.locfileid: "49908744"
 - [컴파일 및 빌드](../ide/compiling-and-building-in-visual-studio.md)
 - [빌드 전 이벤트/빌드 후 이벤트 명령줄 대화 상자](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
 - [MSBuild 특수 문자](../msbuild/msbuild-special-characters.md)
-- [연습: 응용 프로그램 빌드](../ide/walkthrough-building-an-application.md)
+- [연습: 애플리케이션 빌드](../ide/walkthrough-building-an-application.md)

@@ -1,5 +1,5 @@
 ---
-title: '방법: Visual Studio에서 리포지토리의 부하 테스트 결과 가져오기'
+title: '방법: 리포지토리로 부하 테스트 결과 가져오기'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 80bb7f0998dd8ee1bc46105892e0e6f4e23b74c1
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 4f4b62f13a78ae716fd7bfe4e1a158450590a864
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895069"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065988"
 ---
 # <a name="how-to-import-load-test-results-into-a-repository"></a>방법: 리포지토리로 부하 테스트 결과 가져오기
 

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 추상 클래스 구현
+title: 추상 클래스 구현
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4da74a60741ac33143efd7aecf0a4275185b6d3b
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: dfa2c6692ddcef9e41454bf902580f354c32f861
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294698"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53047605"
 ---
 # <a name="implement-an-abstract-class-in-visual-studio"></a>Visual Studio에서 추상 클래스 구현
 
@@ -24,7 +24,7 @@ ms.locfileid: "51294698"
 
 - Visual Basic
 
-**대상:** 추상 클래스를 구현하는 데 필요한 코드를 즉시 생성할 수 있습니다.
+**내용:** 추상 클래스를 구현하는 데 필요한 코드를 즉시 생성할 수 있습니다.
 
 **시기:** 추상 클래스에서 상속하려고 합니다.
 

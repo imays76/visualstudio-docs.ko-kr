@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 정규식 사용
+title: 정규식 사용
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bef854fd04ce8ac2ddf6fe834b3bede0f371eefe
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: 40983e4180db9530983217d581b898806dd85d27
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050302"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063800"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Visual Studio에서 정규식 사용
 
@@ -31,7 +31,7 @@ Visual Studio에서는 [.NET Framework 정규식](/dotnet/standard/base-types/re
 
 ## <a name="replacement-patterns"></a>대체 패턴
 
-번호가 매겨진 캡처 그룹을 사용하려면 정규식 패턴에서 괄호를 사용하여 그룹을 묶습니다. `number`가 바꾸기 패턴에서 특정한 번호가 매겨진 그룹을 지정하기 위해 1에서 시작하는 정수인 경우 `$number`을 사용합니다. 예를 들어 그룹화된 정규식 `(\d)([a-z])`은 다음 두 그룹을 정의합니다. 첫 번째 그룹은 단일 10진수를 포함하고 두 번째 그룹은 **a**와 **z** 사이의 단일 문자를 포함합니다. 식은 문자열 **1a 2b 3c 4d**에서 일치 항목 4개를 찾습니다. 대체 문자열 `z$1`은 첫 번째 그룹만 참조하고 문자열을 **z1 z2 z3 z4**로 변환합니다.
+번호가 매겨진 캡처 그룹을 사용하려면 정규식 패턴에서 괄호를 사용하여 그룹을 묶습니다. `number`가 바꾸기 패턴에서 특정한 번호가 매겨진 그룹을 지정하기 위해 1에서 시작하는 정수인 경우 `$number`을 사용합니다. 예를 들어 그룹화된 정규식 `(\d)([a-z])`은 다음 두 그룹을 정의합니다. 첫 번째 그룹은 단일 10진수를 포함하고 두 번째 그룹은 **a**와 **z** 사이의 단일 문자를 포함합니다. 이 식은 다음 문자열에서 일치 항목 4개를 찾습니다. **1a 2b 3c 4d**. 대체 문자열 `z$1`은 첫 번째 그룹만 참조하고 문자열을 **z1 z2 z3 z4**로 변환합니다.
 
 바꾸기 패턴에서 사용되는 정규식에 대한 자세한 내용은 [정규식의 대체(.NET 가이드)](/dotnet/standard/base-types/substitutions-in-regular-expressions)를 참조하세요.
 
@@ -39,7 +39,7 @@ Visual Studio에서는 [.NET Framework 정규식](/dotnet/standard/base-types/re
 
 다음은 몇 가지 예입니다.
 
-|용도|식|예|
+|용도|식|예제|
 |-------------|----------------|-------------|
 |줄 바꿈 이외의 모든 단일 문자를 찾습니다.|.|`a.o`는 "around"의 "aro" 및 "about"의 "abo"와 일치하지만 "across"의 "acro"와 일치하지 않습니다.|
 |이전 식에서 일치 항목 0개 이상을 찾습니다(가능한 한 많은 문자를 찾음).|*|`a*r`는 "rack"의 "r", "ark"의 "ar", "aardvark"의 "aar"과 일치합니다.|

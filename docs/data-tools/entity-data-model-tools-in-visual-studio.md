@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 entity Framework 도구
+title: Entity Framework 도구
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 1b06b573-84aa-4458-b3f5-e238df47bf45
@@ -10,21 +10,22 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: bbffe18b108beb230a77da38df99a7100e542a27
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 14a0e5b6b746356e38dfc71c26f53ced5a470e34
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819097"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066805"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Visual Studio에서 entity Framework 도구
+
 Entity Framework는.NET 개발자가 도메인별 개체를 사용 하 여 관계형 데이터로 작업할 수 있도록 하는 개체-관계형 매핑 기술 합니다. 개발자들이 보통 작성해야 하는 데이터 액세스 코드가 대부분 필요하지 않게 됩니다. Entity Framework는 모델링 기술을 새로운.NET 응용 프로그램에 대 한 권장 되는 개체-관계형 매핑을 (ORM).
 
-Entity Framework 도구는 EF (Entity Framework) 응용 프로그램을 빌드할 수 있도록 설계 되었습니다. Entity Framework에 대 한 전체 설명서는 여기: [EF Core 및 EF 6](/ef/)합니다.
+Entity Framework 도구는 EF (Entity Framework) 응용 프로그램을 빌드할 수 있도록 설계 되었습니다. Entity Framework에 대 한 전체 설명서는 다음 있습니다. [EF Core 및 EF 6](/ef/)합니다.
 
 Entity Framework Tools를 사용 하 여 만들 수 있습니다는 *개념적 모델* 기존 데이터베이스 다음 그래픽으로 시각화 하 고 개념적 모델을 편집 합니다. 또는 먼저 개념적 모델을 그래픽으로 만든 후 모델을 지원하는 데이터베이스를 생성할 수 있습니다. 이 두 경우 모두 기본 데이터베이스가 변경될 때 모델을 자동으로 업데이트하고 응용 프로그램에 대한 개체 계층 코드를 자동으로 생성할 수 있습니다. 데이터베이스 생성 및 개체 계층 코드 생성 작업은 사용자 지정할 수 있습니다.
 
-Entity Framework tools의 일부로 설치 되는 **데이터 저장소 및 처리** Visual Studio 설치 관리자에서 워크 로드. 아래 indvidual 구성 요소로 설치할 수도 있습니다는 **Sdk, 라이브러리 및 프레임 워크** 범주입니다.
+Entity Framework tools의 일부로 설치 되는 **데이터 저장소 및 처리** Visual Studio 설치 관리자에서 워크 로드. 아래에서 개별 구성 요소로 설치할 수도 있습니다는 **Sdk, 라이브러리 및 프레임 워크** 범주입니다.
 
 다음은 Visual Studio에서 Entity Framework 도구를 구성 하는 특정 도구입니다.
 
@@ -37,7 +38,7 @@ Entity Framework tools의 일부로 설치 되는 **데이터 저장소 및 처�
 - 사용할 수는 **모델 업데이트 마법사** 기본 데이터베이스가 변경 된 경우에 개념적 모델, 저장소 모델 및 매핑을 업데이트 합니다.
 
   > [!NOTE]
-  >  Visual Studio 2010부터 Entity Framework 도구 지원 하지 않는 [!INCLUDE[ss2k](../data-tools/includes/ss2k_md.md)]합니다.
+  > Visual Studio 2010부터 Entity Framework 도구 지원 하지 않는 [!INCLUDE[ss2k](../data-tools/includes/ss2k_md.md)]합니다.
 
 도구 생성 또는 수정 된 *.edmx* 파일입니다. 이렇게 *.edmx* 파일 개념적 모델, 저장소 모델 간의 매핑을 설명 하는 정보를 포함 합니다. 자세한 내용은 [EDMX](https://docs.microsoft.com/ef/ef6/)합니다.
 
@@ -52,6 +53,6 @@ Entity Framework tools의 일부로 설치 되는 **데이터 저장소 및 처�
 | [Entity Framework (EF) 설명서)](https://docs.microsoft.com/ef/ef6/get-started) | 비디오, 자습서 및 Entity Framework를 최대한을 내릴 수 있도록 고급 설명서의 인덱스를 제공 합니다. |
 | [ASP.NET 5 응용 프로그램을 새 데이터베이스](https://docs.efproject.net/en/latest/platforms/aspnetcore/new-db.html) | Entity Framework 7을 사용 하 여 새 ASP.NET 5 응용 프로그램을 만드는 방법을 설명 합니다. |
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [.NET용 Visual Studio 데이터 도구](../data-tools/visual-studio-data-tools-for-dotnet.md)

@@ -1,8 +1,10 @@
 ---
-title: Visual Studio 디버거를 사용하여 C# 코드를 디버그하는 방법 알아보기
-ms.description: Learn how to start the Visual Studio debugger, step through code, and inspect data.
-ms.custom: debug-experiment
-ms.date: 11/27/2018
+title: 디버깅하는 방법 배우기
+description: Visual Studio 디버거를 시작하고, 코드를 단계별로 실행하고, 데이터를 검사하는 방법을 알아봅니다.
+ms.custom:
+- debug-experiment
+- seodec18
+ms.date: 08/01/2018
 ms.technology: vs-ide-debug
 ms.topic: tutorial
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 549f38839495385c983cc68f14fc94629ac988c3
-ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.openlocfilehash: b80747a41fdb3cb278d25f80db71c9ec0381d653
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821307"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068502"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>자습서: Visual Studio를 사용하여 C# 코드를 디버그하는 방법 알아보기
 

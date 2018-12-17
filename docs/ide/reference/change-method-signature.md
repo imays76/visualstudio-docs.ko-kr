@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 메서드 시그니처 리팩터링
+title: 메서드 시그니처 리팩터링
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 944340a8f6901934c3afc2f54323f73bc5639f8b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 81f907ae1f7def1ce401990dc505f423aac5a4c1
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842289"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062338"
 ---
 # <a name="change-a-method-signature-refactoring"></a>메서드 시그니처 변경 리팩터링
 
@@ -30,11 +30,11 @@ ms.locfileid: "49842289"
 
 - Visual Basic
 
-**대상:** 메서드 매개 변수의 순서를 제거하거나 변경할 수 있습니다.
+**내용:** 메서드 매개 변수의 순서를 제거하거나 변경할 수 있습니다.
 
 **시기:** 다양한 위치에서 현재 사용 중인 메서드 매개 변수를 이동하거나 제거하려고 합니다.
 
-**이유:** 매개 변수를 수동으로 제거하고 다시 정렬한 후 해당 메서드에 대한 모든 호출을 찾아 하나씩 변경할 수 있지만 오류가 발생할 수 있습니다.  이 리팩터링 도구는 작업을 자동으로 수행합니다.
+**이유:** 매개 변수를 수동으로 제거하고 다시 정렬한 다음, 해당 메서드에 대한 모든 호출을 찾아 하나씩 변경할 수 있지만 오류가 발생할 수 있습니다.  이 리팩터링 도구는 작업을 자동으로 수행합니다.
 
 ## <a name="how-to"></a>방법
 

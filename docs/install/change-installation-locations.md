@@ -1,8 +1,9 @@
 ---
-title: Visual Studio 2017에서 설치 위치 선택
-description: 다운로드 캐시, 공유 구성 요소, 일부 SDK 및 도구의 위치를 다른 드라이브로 변경하여 시스템 드라이브의 설치 공간을 줄이는 방법을 알아봅니다.
+title: 설치 위치 선택
+description: 다운로드 캐시, 공유 구성 요소, SDK 및 도구의 위치를 다른 드라이브로 변경하여 시스템 드라이브에서 Visual Studio의 설치 공간을 줄이는 방법을 알아봅니다.
 ms.date: 11/07/2018
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed3b54674c24e3becf62e7568be127344104de0f
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 2acefee22976e061b3feff83b00891037a0f2bbd
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295035"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159843"
 ---
 # <a name="select-the-installation-locations-in-visual-studio-2017"></a>Visual Studio 2017에서 설치 위치 선택
 

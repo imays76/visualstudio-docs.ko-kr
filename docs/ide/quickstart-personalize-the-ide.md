@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 색 테마 및 글꼴 설정
+title: 색 테마 및 글꼴 설정
 ms.date: 11/20/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d68bdf8ae879506e89aace7f3e176a862289a8bd
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 511c9d44e9aac49c0150be5a13651e5368e10eaf
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42627261"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159414"
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>빠른 시작: Visual Studio IDE 및 편집기 개인 설정
 
@@ -100,4 +100,4 @@ Visual Studio에서 색을 사용자 지정하는 몇 가지 방법을 살펴보
 ## <a name="see-also"></a>참고 항목
 
 - [편집기 사용자 지정](../ide/customizing-the-editor.md)
-- [Visual Studio IDE 개요](../ide/visual-studio-ide.md)
+- [Visual Studio IDE 개요](../get-started/visual-studio-ide.md)

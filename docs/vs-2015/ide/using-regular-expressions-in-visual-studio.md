@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 정규식 사용 | Microsoft 문서
+title: 정규식 사용
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -24,16 +24,16 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0cf59b1061b6312a1c2881ff4dccdf03e5c502b4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 90639e9f3f24a7985255e0a7ea42e303b9917739
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906717"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059433"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Visual Studio에서 정규식 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-Visual Studio 텍스트 찾기 및 바꾸기에.NET Framework 정규식을 사용 합니다. .NET 정규식에 대한 자세한 내용은 [.NET Framework 정규식](http://msdn.microsoft.com/library/521b3f6d-f869-42e1-93e5-158c54a6895d)을 참조하세요.
+Visual Studio에서는 .NET Framework 정규식을 사용하여 텍스트를 찾고 바꿉니다. .NET 정규식에 대한 자세한 내용은 [.NET Framework 정규식](http://msdn.microsoft.com/library/521b3f6d-f869-42e1-93e5-158c54a6895d)을 참조하세요.
 
 Visual Studio 2012 이전의 Visual Studio에서는 찾기 및 바꾸기 창에서 사용자 지정 정규식 구문을 사용했습니다. 더 일반적으로 사용되는 일부 사용자 지정 정규식 기호를 .NET 버전으로 변환하는 방법에 대한 자세한 내용은 [Visual Studio Regular Expression Conversions](https://msdn.microsoft.com/library/2k3te2cs\(v=vs.110\).aspx)(Visual Studio 정규식 변환)를 참조하세요.
 
@@ -41,18 +41,18 @@ Visual Studio 2012 이전의 Visual Studio에서는 찾기 및 바꾸기 창에�
 > Windows 운영 체제에서 대부분 줄은 “\r\n”(캐리지 리턴 뒤에 줄 바꿈)으로 끝납니다. 이들 문자는 표시되지 않지만 편집기에 있고 .NET 정규식 서비스에 전달됩니다.
 
 > [!TIP]
-> 바꾸기 패턴에서 사용되는 정규식에 대한 자세한 내용은 [정규식의 대체](http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e)를 참조하세요. 번호가 있는 캡처 그룹을 사용하려는 경우 번호가 있는 그룹을 지정하려면 `$1` 구문을 사용하고 특정 그룹을 지정하려면 `(x)` 구문을 사용합니다. 예를 들어 그룹화된 정규식 `(\d)([a-z])`는 문자열 **1a 2b 3c 4d**에서 일치 항목 4개를 찾습니다. 바꾸기 문자열 `z$1`은 해당 문자열을 **z1 z2 z3 z4**로 변환합니다.
+> 바꾸기 패턴에서 사용되는 정규식에 대한 자세한 내용은 [정규식의 대체](http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e)를 참조하세요. 번호가 있는 캡처 그룹을 사용하려는 경우 번호가 있는 그룹을 지정하려면 `$1` 구문을 사용하고 특정 그룹을 지정하려면 `(x)` 구문을 사용합니다. 그룹화 된 정규식 예를 들어 `(\d)([a-z])` 다음 문자열에서 일치 항목 4 개를 찾습니다. **1a 2b 3c 4d**합니다. 바꾸기 문자열 `z$1`은 해당 문자열을 **z1 z2 z3 z4**로 변환합니다.
 
 ## <a name="regular-expression-examples"></a>정규식 예제
 
 다음은 몇 가지 예입니다.
 
 
-|                                                                                                                       용도                                                                                                                       |                                                     식                                                     |                                                                          예제                                                                          |
+|                                                                                                                       용도                                                                                                                       |                                                     식                                                     |                                                                          예                                                                          |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                                                                                                  줄 바꿈 이외의 모든 단일 문자를 찾습니다.                                                                                                   |                                                         .                                                          |                                     `a.o`는 "around"의 "aro" 및 "about"의 "abo"와 일치하지만 "across"의 "acro"와 일치하지 않습니다.                                      |
 |                                                                          이전 식에서 일치 항목 0개 이상을 찾습니다(가능한 한 많은 문자를 찾음).                                                                          |                                                         \*                                                         |                                            `a*r`는 "rack"의 "r", "ark"의 "ar", "aardvark"의 "aar"과 일치합니다.                                            |
-|                                                                                                임의의 문자 0 회 이상 (와일드 카드 \*)                                                                                                 |                                                        .\*                                                         |                                        3.\*"racket"의 "cke", "comment"의 "comme", "code"의 "code"와 일치 하는 e                                        |
+|                                                                                                임의의 문자를 0회 이상 찾습니다(와일드카드 \*).                                                                                                 |                                                        .\*                                                         |                                        c.\*e는 “racket”의 “cke”, “comment”의 “comme”, “code”의 “code”와 일치합니다.                                        |
 |                                                                          이전 식에서 일치 항목 1개 이상을 찾습니다(가능한 한 많은 문자를 찾음).                                                                           |                                                         +                                                          |                                                      `e.+e`는 "feeder"의 "eede"와 일치하지만 "ee"와 일치하지 않습니다.                                                      |
 |                                                                                                 임의의 문자를 1회 이상 찾습니다(와일드카드 ?).                                                                                                  |                                                         .+                                                         |                                                       e.+e는 "feeder"의 "eede"와 일치하지만 "ee"와 일치하지 않습니다.                                                       |
 |                                                                          이전 식에서 일치 항목 0개 이상을 찾습니다(가능한 한 적은 문자를 찾음).                                                                           |                                                        \*?                                                         |                                                     `e.*?e`는 "feeder"의 "ee"와 일치하지만 "eede"와 일치하지 않습니다.                                                      |
@@ -65,7 +65,7 @@ Visual Studio 2012 이전의 Visual Studio에서는 찾기 및 바꾸기 창에�
 |                                                                                                                 일치를 무효화합니다.                                                                                                                  |                                                      (?!abc)                                                       | `real (?!ity)`는 "realty" 및 "really"의 "real"과 일치하지만 "reality"와 일치하지 않습니다. "realityreal"에서 두 번째 "real"도 찾지만 첫 번째 "real"은 찾지 않습니다. |
 |                                                                                            지정된 문자 집합에 없는 모든 문자를 찾습니다.                                                                                             |                                                       [^abc]                                                       |                             `be[^n-t]`는 "before"의 "bef", "behind"의 "beh", "below"의 "bel"과 일치하지만 "beneath"와 일치하지 않습니다.                             |
 |                                                                                           기호 앞 또는 기호 뒤에 있는 식을 찾습니다.                                                                                           |                                                       &#124;                                                       |                                              `(sponge&#124;mud) bath`는 "sponge bath" 및 "mud bath"와 일치합니다.                                               |
-|                                                                                                    백슬래시 뒤의 문자를 이스케이프합니다.                                                                                                     |                                          \|`\^` 문자와 일치 ^ 합니다.                                           |                                                                                                                                                           |
+|                                                                                                    백슬래시 뒤의 문자를 이스케이프합니다.                                                                                                     |                                          \|`\^`는 ^ 문자와 일치합니다.                                           |                                                                                                                                                           |
 |                                                                                        이전 문자 또는 그룹의 일치 항목 수를 지정합니다.                                                                                        |                                     {x}. 여기서 x는 일치 항목 수입니다.                                      |                           `x(ab){2}x`는 "xababx"와 일치하고, `x(ab){2,3}x`는 "xababx" 및 "xabababx"와 일치하지만 "xababababx"와 일치하지 않습니다.                           |
 | 유니코드 문자 클래스에서 텍스트를 찾습니다. 여기서 “X”는 유니코드 번호입니다. 유니코드 문자 클래스에 대한 자세한 내용은<br /><br /> [Unicode Standard 5.2 Character Properties](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf)(유니코드 표준 5.2 문자 속성)를 참조하세요. |                                                       \p{X}                                                        |                                                       `\p{Lu}`는 "Thomas Doe"의 "T" 및 "D"와 일치합니다.                                                       |
 |                                                                                                                단어 경계를 찾습니다.                                                                                                                | `\b`(\b는 문자 클래스 외부에서 단어 경계를 지정하고 문자 클래스 내부에서 백스페이스를 지정함). |                                                     `\bin`은 "inside"의 "in"과 일치하지만 "pinto"와 일치하지 않습니다.                                                      |
@@ -78,4 +78,3 @@ Visual Studio 2012 이전의 Visual Studio에서는 찾기 및 바꾸기 창에�
 |                                                                                                            따옴표 안의 문자열을 찾습니다.                                                                                                             |                                             ((\\".+?\\")&#124;('.+?'))                                             |                                                    작은따옴표 또는 큰따옴표 안의 문자열을 찾습니다.                                                     |
 |                                                                                                             16진수를 찾습니다.                                                                                                              |                                              \b0[xX]([0-9a-fA-F]\)\b                                               |                                                          "0xc67f"와 일치하지만 "0xc67fc67f"와 일치하지 않습니다.                                                           |
 |                                                                                                             정수 및 소수를 찾습니다.                                                                                                             |                                               \b[0-9]\*\\.\* [0-9] + \b                                               |                                                                     "1.333"과 일치합니다.                                                                      |
-

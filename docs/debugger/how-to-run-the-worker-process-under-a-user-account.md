@@ -1,6 +1,6 @@
 ---
-title: '방법: 사용자 계정으로 작업자 프로세스 실행 | Microsoft Docs'
-ms.custom: ''
+title: 사용자 계정으로 작업자 프로세스를 실행 합니다. | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e0caba3cce487f8a706aee7e0944a75255d1df6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 47aefcb73fd20dcc82b19ed6200fec5fd57dd486
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939116"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067818"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>방법: 사용자 계정으로 작업자 프로세스 실행
 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 작업자 프로세스(aspnet_wp.exe 또는 w3wp.exe)를 사용자 계정으로 실행할 수 있도록 컴퓨터를 설정하려면 다음 단계를 따르세요.  
@@ -40,7 +40,7 @@ ms.locfileid: "49939116"
   
 1. 컴퓨터에서 런타임을 설치한 경로에 있는 CONFIG 폴더의 machine.config 파일을 엽니다.  
   
-2. 찾을 합니다 &lt;processModel&gt; 섹션 하 고 사용자 이름 및 암호 특성 이름 및 원하는 aspnet_wp.exe를 실행할 사용자 계정의 암호를 변경 합니다.  
+2. &lt;processModel&gt; 섹션을 찾아 사용자 및 암호 특성을 aspnet_wp.exe를 실행할 사용자 계정의 이름과 암호로 변경합니다.  
   
 3. machine.config 파일을 저장합니다.  
   
@@ -78,7 +78,7 @@ ms.locfileid: "49939116"
   
     **사용자, 컴퓨터 또는 그룹 선택** 대화 상자가 나타납니다.  
   
-10. **선택할 개체 이름 입력** 상자에 사용자 이름을 입력하고 **확인**을 클릭합니다. 사용자 이름은 DomainName\UserName 형식이어야 합니다.  
+10. **선택할 개체 이름 입력** 상자에 사용자 이름을 입력하고 **확인**을 클릭합니다. 사용자 이름에는 다음이 형식을 따라야 합니다. DomainName\UserName 합니다.  
   
 11. **Temporary ASP.NET Files 권한 항목** 대화 상자에서 사용자에게 **모든 권한**을 부여한 다음 **확인** 을 클릭하여 **Temporary ASP.NET Files 권한 항목** 대화 상자를 닫습니다.  
   
@@ -87,6 +87,6 @@ ms.locfileid: "49939116"
 13. **확인** 을 클릭하여 **Temporary ASP.NET Files 속성** 대화 상자를 닫습니다.  
   
 ## <a name="see-also"></a>참고 항목  
-[ASP.NET 응용 프로그램 디버그](../debugger/how-to-enable-debugging-for-aspnet-applications.md)   
+[ASP.NET 애플리케이션 디버그](../debugger/how-to-enable-debugging-for-aspnet-applications.md)   
 [ASP.NET 디버깅: 시스템 요구 사항](../debugger/aspnet-debugging-system-requirements.md)  
   

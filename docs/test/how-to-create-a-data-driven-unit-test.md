@@ -1,5 +1,5 @@
 ---
-title: '방법: Visual Studio에서 데이터 기반 단위 테스트 만들기'
+title: '방법: 데이터 기반 단위 테스트 만들기'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -16,12 +16,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a05729efcc475fa99026d99abc24d09c2511a2b7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4806003d7a533e2f3e9523f877f6e002e8d15b5b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939256"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067452"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>방법: 데이터 기반 단위 테스트 만들기
 

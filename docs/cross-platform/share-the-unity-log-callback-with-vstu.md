@@ -5,17 +5,17 @@ ms.date: 07/26/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 5d71f906-6e50-4399-b59b-d38c6dfef7ee
-author: conceptdev
-ms.author: crdun
+author: therealjohn
+ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 3bf25ed2764078f2d3e0424ab34f4e4a8e470ff5
-ms.sourcegitcommit: e6ef03cc415ca67f75fd1f26e0e7b8846857166d
+ms.openlocfilehash: aa8a4a229102a6a9439ffb36582cd03e322a086b
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39310022"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027200"
 ---
 # <a name="share-the-unity-log-callback-with-vstu"></a>Unity 로그 콜백을 VSTU와 공유
 Visual Studio Tools for Unity는 콘솔을 Visual Studio에 스트림할 수 있도록 로그 콜백을 Unity로 등록합니다. 편집기 스크립트가 로그 콜백을 Unity로 등록하는 경우에도 VSTU 콜백이 사용자의 콜백과 충돌할 수 있습니다. 이러한 가능성을 방지하려면 `VisualStudioIntegration.LogCallback` 이벤트를 사용하여 VSTU와 상호 운용해야 합니다.

@@ -1,6 +1,6 @@
 ---
 title: Python에 대한 혼합 모드 디버깅
-description: 환경 간의 단계별 실행, 값 보기 및 식 계산을 포함하여 Visual Studio에서 C++ 및 Python을 동시에 디버그하는 방법입니다.
+description: 환경 간의 단계별 실행, 값 보기 및 식 계산을 포함하여 Visual Studio에서 C++ 및 Python을 동시에 디버그합니다.
 ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2038f681578c3410b8b4dc1fe67552064e0e2d93
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 42d413ab8d96ccd5533afe99cffb2c05c8ac7d6f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607837"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052237"
 ---
 # <a name="debug-python-and-c-together"></a>Python과 C++ 함께 디버그
 
@@ -35,11 +36,11 @@ Visual Studio에서는 Python 및 네이티브 C/C++에 대한 통합된 동시 
 - 네이티브 프레임에서 개체의 Python 표현과 Python 프레임에서 개체의 네이티브 표현 보기
 - Python 프로젝트 또는 C++ 프로젝트의 컨텍스트 내에서 디버깅
 
-![혼합 모드 디버깅](media/mixed-mode-debugging.png)
+![Visual Studio에서 Python에 대한 혼합 모드 디버깅](media/mixed-mode-debugging.png)
 
 |   |   |
 |---|---|
-| ![비디오에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 보기") | Visual Studio로 네이티브 C 모듈을 빌드, 테스트 및 디버그하는 방법에 대한 소개는 [자세히 알아보기: 네이티브 모듈 만들기](https://youtu.be/D9RlT06a1EI)(youtube.com, 9분 09초)를 시청하세요. 이 동영상은 Visual Studio 2015 및 2017 모두에 적용됩니다. |
+| ![비디오에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 보기") | Visual Studio로 네이티브 C 모듈을 빌드, 테스트 및 디버그하는 방법에 대한 소개는 [심층 분석: 네이티브 모듈 만들기](https://youtu.be/D9RlT06a1EI) (youtube.com, 9분 09초)를 시청하세요. 이 동영상은 Visual Studio 2015 및 2017 모두에 적용됩니다. |
 
 ## <a name="enable-mixed-mode-debugging-in-a-python-project"></a>Python 프로젝트에서 혼합 모드 디버깅 사용
 
@@ -96,7 +97,7 @@ Visual Studio 2017(15.5 이상 버전)은 C/C++ 프로젝트에서 혼합 모드
 
 **호출 스택** 창에는 네이티브 프레임과 Python 스택 프레임 사이에 표시된 전환으로 두 프레임이 모두 인터리브되어 있습니다.
 
-![결합된 호출 스택](media/mixed-mode-debugging-call-stack.png)
+![혼합 모드 디버깅과 결합된 호출 스택](media/mixed-mode-debugging-call-stack.png)
 
 **도구** > **옵션** > **디버깅** > **일반** > **내 코드만 사용** 옵션이 설정된 경우 전환은 전환 방향을 지정하지 않고 **[외부 코드]** 로 표시됩니다.
 
@@ -110,11 +111,11 @@ Visual Studio 2017(15.5 이상 버전)은 C/C++ 프로젝트에서 혼합 모드
 
 네이티브(C 또는 C++) 프레임이 활성 상태이면 디버거 **로컬** 창에 지역 변수가 표시됩니다. 네이티브 Python 확장 모듈에서 이러한 변수 중 다수는 `PyObject` 형식(`_object`에 대한 형식 정의임)이거나 몇 가지 다른 기본 Python 형식(아래 목록 참조)입니다. 혼합 모드 디버깅에서 이러한 값은 **[Python 보기]** 라는 레이블이 지정된 추가 자식 노드를 나타냅니다. 이 노드가 확장되면 동일한 개체를 참조하는 지역 변수가 Python 프레임워크에 있었던 경우에 표시한 것과 동일한 변수의 Python 표현을 보여 줍니다. 이 노드의 자식 항목은 편집할 수 있습니다.
 
-![Python 보기](media/mixed-mode-debugging-python-view.png)
+![지역 창에서 Python 보기](media/mixed-mode-debugging-python-view.png)
 
 이 기능을 사용하지 않도록 설정하려면 **로컬** 창에서 아무 곳이나 마우스 오른쪽 단추를 클릭하고 **Python** > **Python 보기 노드 표시** 메뉴 옵션을 설정/해제합니다.
 
-![Python 보기를 사용하도록 설정](media/mixed-mode-debugging-enable-python-view.png)
+![지역 창에서 Python 보기 활성화](media/mixed-mode-debugging-enable-python-view.png)
 
 **[Python 보기]** 노드를 보여주는 C 형식(사용 가능한 경우):
 
@@ -143,11 +144,11 @@ Visual Studio 2017(15.5 이상 버전)은 C/C++ 프로젝트에서 혼합 모드
 
 이전 섹션과 마찬가지로 Python 프레임이 활성 상태로 있을 때 **로컬** 창에서 네이티브 값에 대해 **[C++ 보기]** 를 사용하도록 설정할 수 있습니다. 이 기능은 기본적으로 사용되지 않으므로 **로컬** 창을 마우스 오른쪽 단추로 클릭하고 **Python** > **C++ 보기 노드 표시** 메뉴 옵션을 설정/해제하여 설정합니다.
 
-![C++ 보기를 사용하도록 설정](media/mixed-mode-debugging-enable-cpp-view.png)
+![지역 창에서 C++ 보기 활성화](media/mixed-mode-debugging-enable-cpp-view.png)
 
 **[C++ 보기]** 노드는 네이티브 프레임에서 표시하는 것과 동일한 값에 대한 기본 C/C++ 구조의 표현을 제공합니다. 예를 들어 이 노드는 Python 정수(Long)에 대해 `_longobject`(형식 정의가 `PyLongObject`임)의 인스턴스를 보여 주며, 사용자가 직접 작성한 네이티브 클래스의 형식을 추론하려고 합니다. 이 노드의 자식 항목은 편집할 수 있습니다.
 
-![C++ 보기](media/mixed-mode-debugging-cpp-view.png)
+![지역 창에서 C++ 보기](media/mixed-mode-debugging-cpp-view.png)
 
 개체의 자식 필드가 `PyObject` 형식이거나 지원되는 다른 형식 중 하나인 경우 **[Python 보기]** 표현 노드(이러한 표현이 사용 가능한 경우)를 사용하므로 링크가 Python에 직접 제공되지 않는 개체 그래프를 탐색할 수 있습니다.
 
@@ -169,7 +170,7 @@ static int FobObject_init(FobObject* self, PyObject* args, PyObject* kwds) {
 
 - 지원되지 않는 기능: 조건부 중단점, **대화형 디버그** 창 및 플랫폼 간 원격 디버깅
 - **직접 실행** 창: 사용 가능하지만 여기서 나열하는 모든 제한을 포함하여 기능의 하위 집합이 제한됩니다.
-- 지원되는 Python 버전: CPython 2.7 및 3.3만
+- 지원되는 Python 버전: CPython 2.7 및 3.3+만 해당.
 - Visual Studio Shell: Visual Studio Shell에서 Python을 사용하는 경우(예: 통합 설치 관리자를 사용하여 설치한 경우) Visual Studio에서 C++ 프로젝트를 열 수 없으며 C++ 파일에 대한 편집 환경은 기본 텍스트 편집기의 환경입니다. 그러나 C/C++ 디버깅 및 혼합 모드 디버깅은 셸에서 원본 코드, 네이티브 코드 단계별 실행 및 디버거 창의 C++ 식 계산을 통해 완벽하게 지원됩니다.
 - 개체 보기 및 확장: **로컬** 및 **조사식** 디버거 도구 창에서 Python 개체를 볼 때 혼합 모드 디버거는 개체의 구조만 표시합니다. 속성을 자동으로 평가하거나 계산된 특성을 표시하지 않습니다. 컬렉션의 경우 기본 제공 컬렉션 형식(`tuple`, `list`, `dict`, `set`)에 대한 요소만 표시합니다. 일부 기본 제공 컬렉션 형식에서 상속되지 않는 한 사용자 지정 컬렉션 형식은 컬렉션으로 시각화되지 않습니다.
 - 식 계산: 아래 참조

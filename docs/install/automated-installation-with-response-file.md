@@ -1,8 +1,9 @@
 ---
-title: 지시 파일을 사용하여 Visual Studio 설치 자동화
+title: 지시 파일을 사용하여 설치 자동화
 description: Visual Studio 설치를 자동화하는 데 도움이 되는 JSON 지시 파일을 만드는 방법을 알아봅니다.
 ms.date: 08/14/2017
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d9dbcb5c033469db3e92bd4cde931257ece9ab1
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 30e7af50259a2087a0a380b1fe2d0c96c0d83f9a
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138451"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53158777"
 ---
 # <a name="how-to-define-settings-in-a-response-file"></a>지시 파일에서 설정을 정의하는 방법
 

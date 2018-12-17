@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 테스트 탐색기를 사용한 테스트 기반 개발
+title: 테스트 탐색기를 사용한 테스트 기반 개발
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 8dcdd51a53c27ffe5a1bde3170c683d8b1a753b5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3303f45006fd0f85d2e11434043091d3f72b469e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837089"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062912"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>빠른 시작: 테스트 탐색기를 사용한 테스트 기반 개발
 
@@ -53,13 +53,13 @@ ms.locfileid: "49837089"
 
     테스트 탐색기가 열리고 결과 요약이 표시됩니다.
 
-   **전체 테스트 목록을 보려면** 아무 범주에서나 **모두 표시** 를 선택합니다.
+   **전체 테스트 목록을 보려면:** 모든 범주에서 **모두 표시**를 선택합니다.
 
-   **테스트 결과의 세부 정보를 보려면** 세부 정보 창에서 예외 메시지와 같은 세부 정보를 표시할 테스트를 테스트 탐색기에서 선택합니다.
+   **테스트 결과의 세부 정보를 보려면:** 세부 정보 창에서 예외 메시지와 같은 세부 정보를 표시할 테스트를 테스트 탐색기에서 선택합니다.
 
-   **테스트 코드로 이동하려면** 테스트 탐색기에서 테스트를 두 번 클릭하거나 바로 가기 메뉴에서 **테스트 열기** 를 선택합니다.
+   **테스트 코드로 이동하려면:** 테스트 탐색기에서 테스트를 두 번 클릭하거나 바로 가기 메뉴에서 **테스트 열기**를 선택합니다.
 
-   **테스트를 디버깅하려면** 하나 이상의 테스트에 대한 바로 가기를 열고 나서 **선택한 테스트 디버그**를 선택합니다.
+   **테스트를 디버그하려면:** 하나 이상의 테스트에 대한 바로 가기 메뉴를 연 다음, **선택한 테스트 디버그**를 선택합니다.
 
 > [!IMPORTANT]
 > 표시되는 결과는 최근 실행에 대한 결과입니다. 결과 색상 막대에는 실행된 테스트에 대한 결과만 표시됩니다. 예를 들어, 여러 테스트를 실행했지만 그 중 일부가 실패하고 성공한 테스트만 실행할 경우 결과 모음에 모두 녹색으로 표시됩니다.

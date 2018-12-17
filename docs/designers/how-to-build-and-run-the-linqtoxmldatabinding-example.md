@@ -9,18 +9,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1164312d74259ad4f3a56750a487fb2578595cf0
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 67d8bc9ece20867e96f0ae0ee6d6ceb9ad2e3952
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924163"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159778"
 ---
 # <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>방법: LinqToXmlDataBinding 예제 빌드 및 실행
 
 이 항목에서는 LinqToXmlDataBinding Visual Studio 프로젝트를 만들고 실행하는 방법과 생성되는 LinqToXmlDataBinding WPF(Windows Presentation Foundation) 예제 프로그램을 실행하는 방법을 보여 줍니다.
 
-Visual Studio에 대한 자세한 내용은 [Visual Studio IDE 개요](../ide/visual-studio-ide.md)를 참조하세요.
+Visual Studio에 대한 자세한 내용은 [Visual Studio IDE 개요](../get-started/visual-studio-ide.md)를 참조하세요.
 
 ## <a name="create-and-populate-the-project"></a>프로젝트 만들기 및 채우기
 
@@ -82,4 +82,4 @@ LinqToXmlDataBinding 프로그램을 사용하여 포함된 XML 요소로 저장
 
 - [LINQ to XML 예제를 사용한 WPF 데이터 바인딩](../designers/wpf-data-binding-using-linq-to-xml-example.md)
 - [연습: LinqToXmlDataBinding 예제](../designers/walkthrough-linqtoxmldatabinding-example.md)
-- [Visual Studio IDE 개요](../ide/visual-studio-ide.md)
+- [Visual Studio IDE 개요](../get-started/visual-studio-ide.md)

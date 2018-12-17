@@ -1,22 +1,23 @@
 ---
-title: 원격 Linux 컴퓨터에서 Python 코드 디버깅
-description: 필요한 구성 단계, 보안 및 문제 해결을 포함해서 Visual Studio를 사용하여 원격 Linux 컴퓨터에서 실행 중인 Python 코드를 디버그하는 방법입니다.
-ms.date: 10/15/2018
+title: 원격 Linux 컴퓨터에서 Python 코드 디버그
+description: 필요한 구성 단계, 보안 및 문제 해결을 포함해서 Visual Studio를 사용하여 원격 Linux 컴퓨터에서 실행 중인 Python 코드를 디버그합니다.
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 654ac9cfd466cfdd6486ea5aa9e658495d5704fe
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: 4c14fb14a8941895fab473952908e6aefa2e2f14
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356771"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067948"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>Linux에서 Python 코드 원격 디버그
 
@@ -26,7 +27,7 @@ ptvsd를 사용하는 경우 디버그되는 Python 코드는 Visual Studio에�
 
 |   |   |
 |---|---|
-| ![비디오에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 보기") | 원격 디버깅에 대한 소개는 Visual Studio 2015 및 2017 둘 다에 적용되는 [자세히 알아보기: 플랫폼 간 원격 디버깅](https://youtu.be/y1Qq7BrV6Cc)(youtube.com, 6분 22초)을 참조하세요. |
+| ![비디오에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 보기") | 원격 디버깅에 대한 소개는 [심층 분석: (Visual Studio 2015 및 2017에 모두 적용되는) 플랫폼 간 원격 디버깅](https://youtu.be/y1Qq7BrV6Cc)(youtube.com, 6분 22초)을 참조하세요. |
 
 ## <a name="set-up-a-linux-computer"></a>Linux 컴퓨터 설정
 
@@ -68,7 +69,7 @@ Azure VM에 대한 방화벽 규칙을 만드는 방법에 대한 자세한 내�
 
 1. `pip3 install ptvsd`를 사용하여 사용자 환경에 `ptvsd` 패키지를 설치합니다. 
    >[!NOTE]
-   >문제 해결에 필요한 경우를 대비하여 ptvsd 버전을 기록해 두는 것이 좋습니다. [ptvsd 목록](https://pypi.python.org/pypi/ptvsd)은 사용 가능한 버전도 보여 줍니다.
+   >문제 해결에 필요한 경우를 대비하여 ptvsd 버전을 기록해 두는 것이 좋습니다. [ptvsd 목록](https://pypi.python.org/pypi/ptvsd)은 사용 가능한 버전도 보여줍니다.
 
 1. *guessing-game.py*에서 가능한 가장 빠른 지점에 다른 코드보다 먼저 해당 코드를 추가하여 원격 디버깅을 사용하도록 설정합니다. (엄격한 요구 사항은 아니지만, `enable_attach` 함수를 호출하기 전에 생성된 모든 백그라운드 스레드를 디버그할 수는 없습니다.)
 
@@ -106,7 +107,7 @@ Azure VM에 대한 방화벽 규칙을 만드는 방법에 대한 자세한 내�
 
 1. 그러면 스크립트가 원격 컴퓨터에서 계속 실행되는 동안 Visual Studio에서 디버깅 모드로 전환하여 모든 일반적인 [디버깅](debugging-python-in-visual-studio.md) 기능을 제공합니다. 예를 들어 `if guess < number:` 줄에 중단점을 설정한 다음 원격 컴퓨터로 전환하고 다른 guess를 입력합니다. 이렇게 하고 나면 로컬 컴퓨터의 Visual Studio가 해당 중단점에서 중지하고 로컬 변수 등을 보여 줍니다.
 
-    ![적중된 중단점](media/remote-debugging-breakpoint-hit.png)
+    ![Visual Studio에서 중단점이 적중될 때 디버깅 일시 중지](media/remote-debugging-breakpoint-hit.png)
 
 1. 디버깅을 중지하면 Visual Studio는 원격 컴퓨터에서 계속 실행되는 프로그램에서 분리됩니다. 또한 ptvsd는 계속 디버거 연결을 수신 대기하므로 언제든지 프로세스에 다시 연결할 수 있습니다.
 

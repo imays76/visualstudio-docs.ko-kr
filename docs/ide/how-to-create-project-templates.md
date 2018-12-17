@@ -1,5 +1,5 @@
 ---
-title: Visual Studio용 프로젝트 템플릿 만들기
+title: 프로젝트 템플릿 만들기
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -11,12 +11,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 05ba1dcd5328b80d8fa5526336cf027995abf7dc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5cb90ea6f1e404d65ac3c375f49e77dd02c6711c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903727"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066917"
 ---
 # <a name="how-to-create-project-templates"></a>방법: 프로젝트 템플릿 만들기
 

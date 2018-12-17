@@ -1,5 +1,6 @@
 ---
 title: Visual Studio Build Tools 2017 워크로드 및 구성 요소 ID
+titleSuffix: ''
 description: Visual Studio 작업 및 구성 요소 ID를 사용하여 기존 Windows 기반 응용 프로그램을 빌드합니다.
 keywords: ''
 author: TerryGLee
@@ -17,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: b99298df-0280-47fc-af73-44cd7a8ac553
 ms.workload:
 - multiple
-ms.openlocfilehash: 958e4e842468e871cd9aa65f0a20b87a84aeb4ca
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 2e47eca638e81cf1b99a451e3017614be45d2c59
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607863"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063048"
 ---
 # <a name="visual-studio-build-tools-2017-component-directory"></a>Visual Studio Build Tools 2017 구성 요소 디렉터리
 
@@ -43,7 +44,7 @@ VSIX 매니페스트에 종속성을 설정하는 경우 구성 요소 ID만 지
 
 **ID:** Microsoft.VisualStudio.Workload.AzureBuildTools
 
-**설명:** Azure 응용 프로그램을 빌드하기 위한 MSBuild 작업 및 대상입니다.
+**설명:** Azure 애플리케이션을 빌드하기 위한 MSBuild 작업 및 대상입니다.
 
 ### <a name="components-included-by-this-workload"></a>이 작업에 포함되는 구성 요소
 
@@ -108,7 +109,7 @@ Microsoft.VisualStudio.Component.Static.Analysis.Tools | 정적 분석 도구 | 
 
 **ID:** Microsoft.VisualStudio.Workload.ManagedDesktopBuildTools
 
-**설명:** C#, Visual Basic 및 F#을 사용하여 WPF, Windows Forms 및 콘솔 응용 프로그램을 빌드하기 위한 도구입니다.
+**설명:** C#, Visual Basic 및 F#을 사용하여 WPF, Windows Forms 및 콘솔 애플리케이션을 빌드하기 위한 도구입니다.
 
 ### <a name="components-included-by-this-workload"></a>이 작업에 포함되는 구성 요소
 
@@ -150,7 +151,7 @@ Microsoft.VisualStudio.Component.FSharp.MSBuild | F# 컴파일러 | 15.8.27825.0
 
 **ID:** Microsoft.VisualStudio.Workload.MSBuildTools
 
-**설명:** MSBuild 기반 응용 프로그램을 빌드하는 데 필요한 도구를 제공합니다.
+**설명:** MSBuild 기반 애플리케이션을 빌드하는 데 필요한 도구를 제공합니다.
 
 ### <a name="components-included-by-this-workload"></a>이 작업에 포함되는 구성 요소
 
@@ -164,7 +165,7 @@ Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 및 Visual Basic Roslyn �
 
 **ID:** Microsoft.VisualStudio.Workload.NetCoreBuildTools
 
-**설명:** .NET Core, ASP.NET 코어, HTML/JavaScript 및 컨테이너를 사용하여 응용 프로그램을 빌드하기 위한 도구입니다.
+**설명:** .NET Core, ASP.NET 코어, HTML/JavaScript 및 컨테이너를 사용하여 애플리케이션을 빌드하기 위한 도구입니다.
 
 ### <a name="components-included-by-this-workload"></a>이 작업에 포함되는 구성 요소
 
@@ -180,7 +181,7 @@ Microsoft.Net.Core.Component.SDK.1x | .NET Core 1.0 - 1.1 개발 도구 | 15.6.2
 
 **ID:** Microsoft.VisualStudio.Workload.NodeBuildTools
 
-**설명:** 비동기 이벤트 구동 JavaScript 런타임인 Node.js를 사용하여 확장성 있는 네트워크 응용 프로그램을 빌드하기 위한 MSBuild 작업 및 대상입니다.
+**설명:** 비동기 이벤트 구동 JavaScript 런타임인 Node.js를 사용하여 확장성 있는 네트워크 애플리케이션을 빌드하기 위한 MSBuild 작업 및 대상입니다.
 
 ### <a name="components-included-by-this-workload"></a>이 작업에 포함되는 구성 요소
 
@@ -233,7 +234,7 @@ Microsoft.Net.ComponentGroup.4.7.DeveloperTools | .NET Framework 4.7 개발 도�
 
 **ID:** Microsoft.VisualStudio.Workload.UniversalBuildTools
 
-**설명:** 유니버설 Windows 플랫폼 응용 프로그램을 빌드하는 데 필요한 도구를 제공합니다.
+**설명:** 유니버설 Windows 플랫폼 애플리케이션을 빌드하는 데 필요한 도구를 제공합니다.
 
 ### <a name="components-included-by-this-workload"></a>이 작업에 포함되는 구성 요소
 
@@ -267,7 +268,7 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK(10.0.1
 
 **ID:** Microsoft.VisualStudio.Workload.VCTools
 
-**설명:** Microsoft C++ 도구 집합, ATL 또는 MFC를 사용하여 Windows 데스크톱 응용 프로그램을 빌드합니다.
+**설명:** Microsoft C++ 도구 세트, ATL 또는 MFC를 사용하여 Windows 데스크톱 애플리케이션을 빌드합니다.
 
 ### <a name="components-included-by-this-workload"></a>이 작업에 포함되는 구성 요소
 
@@ -338,7 +339,7 @@ Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC++ 2017 버전 15.9 v14.16
 
 **ID:** Microsoft.VisualStudio.Workload.WebBuildTools
 
-**설명:** 웹 응용 프로그램을 빌드하기 위한 MSBuild 작업 및 대상입니다.
+**설명:** 웹 애플리케이션을 빌드하기 위한 MSBuild 작업 및 대상입니다.
 
 ### <a name="components-included-by-this-workload"></a>이 작업에 포함되는 구성 요소
 
@@ -383,7 +384,7 @@ Microsoft.Net.Core.Component.SDK.1x | .NET Core 1.0 - 1.1 개발 도구 | 15.6.2
 
 **ID:** Microsoft.VisualStudio.Workload.XamarinBuildTools
 
-**설명:** C# 및 F#을 사용하여 iOS, Android 및 Windows용 플랫폼 간 응용 프로그램을 빌드하기 위한 도구입니다.
+**설명:** C# 및 F#을 사용하여 iOS, Android 및 Windows용 플랫폼 간 애플리케이션을 빌드하기 위한 도구입니다.
 
 ### <a name="components-included-by-this-workload"></a>이 작업에 포함되는 구성 요소
 

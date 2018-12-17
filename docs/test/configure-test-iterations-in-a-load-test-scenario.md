@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 부하 테스트를 위한 테스트 반복 구성
+title: 부하 테스트에 대한 테스트 반복 구성
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f5ec275c4b6e7fcf239aa0903ffe68757c5412cc
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 28bc6d6cb35397d49868c0603f7beb17f9138c2d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896213"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055689"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>부하 테스트 시나리오에서 테스트 반복 구성
 

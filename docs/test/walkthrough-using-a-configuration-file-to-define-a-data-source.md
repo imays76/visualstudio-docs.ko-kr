@@ -1,5 +1,5 @@
 ---
-title: '연습: Visual Studio에서 구성 파일을 통한 데이터 소스 정의'
+title: '연습: 구성 파일을 사용하여 데이터 원본 정의'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64d01fd3551ee94cef178cb840742721db58a360
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d329e1aedb5b81c2be2d52614e4c540ecb8ef8aa
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821619"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066995"
 ---
-# <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>연습: 구성 파일을 통한 데이터 원본 정의
+# <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>연습: 구성 파일을 사용하여 데이터 원본 정의
 
 이 연습에서는 *app.config* 파일에 정의된 데이터 원본을 유닛 테스트에 사용하는 방법을 설명합니다. <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> 클래스에 사용될 수 있는 데이터 원본을 정의하는 *app.config* 파일을 만드는 방법을 알아봅니다. 이 연습에서 수행할 작업은 다음과 같습니다.
 
@@ -198,7 +198,7 @@ ms.locfileid: "49821619"
 
 3. `Number` 데이터 형식을 사용하여 이름이 `Arg1` 및 `Arg2`인 두 개의 필드를 `MyDataTable`에 만듭니다.
 
-4. `Arg1`과 `Arg2`에 다음과 같은 값을 사용한 5개의 엔터티를 `MyDataTable`에 추가합니다. (10,50), (3,2), (6,0), (0,8), (12312,1000)
+4. `Arg1` 및 `Arg2`에 각각 다음과 같은 값을 사용한 5개의 엔터티를 `MyDataTable`에 추가합니다. (10,50), (3,2), (6,0), (0,8) 및 (12312,1000).
 
 5. 데이터베이스를 저장한 후 닫습니다.
 
@@ -212,7 +212,7 @@ ms.locfileid: "49821619"
 
 3. `Sheet1`에 두 개의 열 머리글을 만들고 `Val1` 및 `Val2`로 이름을 지정합니다.
 
-4. `Val1`과 `Val2`에 다음과 같은 값을 사용한 5개의 엔터티를 `Sheet1`에 추가합니다. (1,1), (2,2), (3,3), (4,4), (5,0)
+4. `Val1` 및 `Val2`에 각각 다음과 같은 값을 사용한 5개의 엔터티를 `Sheet1`에 추가합니다. (1,1), (2,2), (3,3), (4,4) 및 (5,0).
 
 5. 스프레드시트를 저장한 후 닫습니다.
 

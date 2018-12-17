@@ -1,8 +1,10 @@
 ---
 title: Azure Virtual Machine에서 Visual Studio 사용
+titleSuffix: ''
 description: Azure 가상 머신에서 Visual Studio를 사용하는 방법에 대한 자세한 정보
 ms.date: 09/12/2018
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d0d51e1c5c3ba94363c2ce0377f3d1a5e22c582
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: fc3ceb0caa8e5b8e135c2fad3bbab28c51773ae6
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895849"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159973"
 ---
 # <a id="top"> </a> Azure의 Visual Studio 이미지
 
@@ -99,7 +101,7 @@ Visual Studio는 Azure의 “사용자 라이선스 필요” 모델을 따릅�
 
 개발 환경의 스펙트럼은 매우 크며, 더 복잡한 환경을 빌드할 경우 연관된 실제 비용이 있습니다. 환경의 구성과 관계없이 나중에 사용하거나 팀의 다른 구성원이 사용할 수 있도록 구성된 VM을 “기본 이미지”로 저장하거나 캡처할 수 있습니다. 그런 다음, 새 VM을 부팅할 때 Azure Marketplace 이미지 대신 기본 이미지에서 프로비전합니다.
 
-빠른 요약: 시스템 준비 도구(Sysprep)를 사용하고 실행 중인 VM을 종료한 다음, Azure Portal의 UI를 통해 VM을 이미지로 캡처(그림 1)합니다. Azure는 이미지가 포함된 `.vhd` 파일을 선택한 저장소 계정에 저장합니다. 그러면 새 이미지가 구독의 리소스 목록에 이미지 리소스로 표시됩니다.
+빠른 요약: 시스템 준비 도구(Sysprep)를 사용하고 실행 중인 VM을 종료한 다음, Azure Portal의 UI를 통해 VM을 이미지로 캡처 *(그림 1)* 합니다. Azure는 이미지가 포함된 `.vhd` 파일을 선택한 저장소 계정에 저장합니다. 그러면 새 이미지가 구독의 리소스 목록에 이미지 리소스로 표시됩니다.
 
 <img src="media/capture-vm.png" alt="Capture an image through the Azure portal’s UI" style="border:3px solid Silver; display: block; margin: auto;"><center>*(그림 1) Azure Portal의 UI를 통해 이미지 캡처*</center>
 

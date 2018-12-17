@@ -1,6 +1,6 @@
 ---
 title: Python 코드 서식 지정
-description: 간격, 문, 래핑 및 주석을 포함하여 Visual Studio에서 Python 코드의 서식을 자동으로 다시 지정하는 방법입니다.
+description: Visual Studio는 간격, 명령문, 래핑 및 주석을 포함하여 Python 코드를 자동으로 다시 포맷할 수 있습니다.
 ms.date: 10/28/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b0ce6b5db57b4f6140fb164391ebf5c07e623baf
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 452dc1104147e5b29dd38790cbfa726ad0de7b1f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219551"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052195"
 ---
 # <a name="format-python-code"></a>Python 코드 서식 지정
 
@@ -29,7 +30,7 @@ Visual Studio에서는 미리 구성된 서식 옵션과 일치하도록 빠르�
 
 ![Visual Studio의 Python 서식 옵션](media/options-editor-formatting.png)
 
-기본적으로 서식 옵션은 [PEP 8 스타일 가이드](http://www.python.org/dev/peps/pep-0008/)의 상위 집합과 일치하도록 설정됩니다. **일반** 탭은 서식을 적용할 시기를 결정하며, 다른 세 개의 탭에 대한 설정은 이 문서에서 설명합니다.
+기본적으로 서식 옵션은 [PEP 8 스타일 가이드](https://www.python.org/dev/peps/pep-0008/)의 상위 집합과 일치하도록 설정됩니다. **일반** 탭은 서식을 적용할 시기를 결정하며, 다른 세 개의 탭에 대한 설정은 이 문서에서 설명합니다.
 
 [Visual Studio의 Python 지원](installing-python-support-in-visual-studio.md)은 이후 섹션에 설명된 대로 **편집** > **고급** 메뉴에 유용한 [**주석 단락 채우기**](#fill-comment-paragraph-command) 명령도 추가합니다.
 

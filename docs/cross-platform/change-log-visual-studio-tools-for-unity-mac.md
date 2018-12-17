@@ -1,24 +1,45 @@
 ---
 title: 변경 로그(Visual Studio Tools for Unity, Mac) | Microsoft Docs
 ms.custom: ''
-ms.date: 08/06/2018
+ms.date: 11/13/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 33a6ac54-d997-4308-b5a0-af7387460849
-author: conceptdev
-ms.author: crdun
+author: therealjohn
+ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 197701258a47b3edc49f4e9477c6634d17b22920
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0b641c9dd1fe797fc036a6ece893ad61fc52ff87
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775189"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027239"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>변경 로그(Visual Studio Tools for Unity, Mac)
 Visual Studio Tools for Unity에 대한 변경 로그입니다.
+
+## <a name="1700"></a>1.7.0.0
+ 릴리스 날짜: 2018년 11월 13일
+
+### <a name="new-features"></a>새 기능
+
+-   **디버거:**
+
+    -   연결 대화 상자에(IP, 머신 이름) 클라이언트 추가 정보가 추가되었습니다.
+
+### <a name="bug-fixes"></a>버그 수정
+
+-   **디버거:**
+
+     -   특히 ‘Unity에 연결’을 누르거나 게임을 다시 시작할 때, Unity의 디버거 엔진과 통신하는 데 사용되는 라이브러리에서 교착 상태가 발생하여 Visual Studio 또는 Unity를 동결시키는 문제가 해결되었습니다.
+     
+-   **통합:**
+
+     -   다른 기본 편집기가 선택되었을 때 고정 Unity 플러그 인 활성화.
+     
+     -   고정 Unity 파일 템플릿 생성.
 
 ## <a name="1602"></a>1.6.0.2
  릴리스 날짜: 2018년 7월 24일

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 메서드 생성
+title: 메서드 생성
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7d6d7d17810e53de80bfecff697e960613dc06a6
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 1e5cf156c6c17e8a9bf1fb9f40f75c1e72b7be94
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295854"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057180"
 ---
 # <a name="generate-a-method-in-visual-studio"></a>Visual Studio에서 메서드 생성
 
@@ -24,7 +24,7 @@ ms.locfileid: "51295854"
 
 - Visual Basic
 
-**대상:** 클래스에 메서드를 즉시 추가할 수 있습니다.
+**내용:** 클래스에 메서드를 즉시 추가할 수 있습니다.
 
 **시기:** 새 메서드를 소개하고 자동으로 메서드를 제대로 선언하려고 합니다.
 

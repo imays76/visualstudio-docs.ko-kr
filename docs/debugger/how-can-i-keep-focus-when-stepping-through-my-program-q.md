@@ -1,6 +1,6 @@
 ---
-title: 프로그램에서 단계별로 실행하는 경우 어떻게 포커스를 유지할 수 있습니까? | Microsoft 문서
-ms.custom: ''
+title: 내 앱을 통해 단계별로 실행 하는 경우 포커스를 유지할 | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -22,21 +22,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 509e169c7ede0d96882fa2c97eaf7b2c6eb78afb
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: d140617aed2e6d5310587ec9388b107404398a95
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280911"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064513"
 ---
-# <a name="how-can-i-keep-focus-when-stepping-through-my-program"></a>프로그램에서 단계별로 실행하는 경우 어떻게 포커스를 유지할 수 있습니까?
+# <a name="how-can-i-keep-focus-when-stepping-through-my-app"></a>내 앱을 통해 단계별로 실행할 때 포커스를 유지할 수는 방법
 ## <a name="description"></a>설명  
  프로그램에 창 활성화에 대한 문제가 생겼습니다. 프로그램에서 단계별로 디버거를 실행하면 프로그램이 계속해서 포커스를 잃어 버리기 때문에 문제 재현 기능이 방해를 받습니다. 어떻게 해결할 수 있습니까?  
   
 ## <a name="solution"></a>솔루션  
- 다른 컴퓨터가 있을 경우 원격 디버깅을 사용합니다. 호스트에서 디버거를 실행하는 동안 원격 컴퓨터에서 프로그램을 작동시킬 수 있습니다. 자세한 내용은 [방법: 원격 컴퓨터를 선택](/previous-versions/visualstudio/visual-studio-2010/w8wtw2f3(v=vs.100))합니다.  
+ 다른 컴퓨터가 있을 경우 원격 디버깅을 사용합니다. 호스트에서 디버거를 실행하는 동안 원격 컴퓨터에서 프로그램을 작동시킬 수 있습니다. 자세한 내용은 [방법: 원격 컴퓨터 선택](/previous-versions/visualstudio/visual-studio-2010/w8wtw2f3(v=vs.100))을 참조하세요.  
   
 ## <a name="see-also"></a>참고 항목  
- [네이티브 코드 디버그 Faq](../debugger/debugging-native-code-faqs.md)   
+ [네이티브 코드 디버깅 FAQ](../debugger/debugging-native-code-faqs.md)   
  [실행 중인 프로세스에 연결](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [네이티브 코드 디버그](../debugger/debugging-native-code.md)

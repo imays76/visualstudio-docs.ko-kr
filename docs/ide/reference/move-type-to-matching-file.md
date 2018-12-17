@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 형식을 일치하는 파일 리팩터링으로 이동
+title: 형식을 일치하는 파일 리팩터링으로 이동
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 73e1d9d67d905fed5eb37e29c1be1ba7677da3e8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 997cf31d14acd65abd003bcb00cce4a9797b394a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884151"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059641"
 ---
 # <a name="move-a-type-to-a-matching-file-refactoring"></a>형식을 일치하는 파일 리팩터링으로 이동
 
@@ -27,7 +27,7 @@ ms.locfileid: "49884151"
 
 - Visual Basic
 
-**대상:** 선택한 형식을 같은 이름을 가진 별도의 파일로 이동할 수 있습니다.
+**내용:** 선택한 형식을 같은 이름을 가진 별도의 파일로 이동할 수 있습니다.
 
 **시기:** 동일한 파일에 구분하려는 여러 클래스, 구조체, 인터페이스 등이 있습니다.
 

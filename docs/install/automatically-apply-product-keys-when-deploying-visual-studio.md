@@ -1,8 +1,9 @@
 ---
-title: Visual Studio를 배포할 때 제품 키를 자동으로 적용
+title: 제품 키를 자동으로 적용
 description: Visual Studio를 배포할 때 제품 키를 프로그래밍 방식으로 적용하는 방법을 알아봅니다.
 ms.date: 08/14/2017
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: d79260be-6234-4fd3-89b5-a9756b4a93c1
@@ -11,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fea2ffa8fd81a5012c89289df36d7f698fb60c4e
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 7f47a2dd890da58c2e666b507d8366ca1915e4f2
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138718"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159596"
 ---
 # <a name="automatically-apply-product-keys-when-deploying-visual-studio"></a>Visual Studio를 배포할 때 제품 키를 자동으로 적용
 

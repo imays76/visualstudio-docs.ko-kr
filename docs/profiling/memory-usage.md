@@ -1,7 +1,7 @@
 ---
 title: 앱에서 메모리 사용량 측정
 description: 디버거 통합 진단 도구를 사용하여 디버그하는 동안 메모리 누수 및 비효율적인 메모리를 찾습니다.
-ms.custom: mvc
+ms.custom: seodec18
 ms.date: 04/25/2017
 ms.technology: vs-ide-debug
 ms.topic: tutorial
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eeacfb15b02c19ea4a166fbc8511aab644d41ea5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 622f35ccbe29130dea3b35b96373da0c8b39e0b7
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861412"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052079"
 ---
-# <a name="profile-memory-usage-in-visual-studio"></a>Visual Studio에서 프로필 메모리 사용량
+# <a name="measure-memory-usage-in-visual-studio"></a>Visual Studio에서 메모리 사용량 측정
 디버거 통합 **메모리 사용량** 진단 도구를 사용하여 디버그하는 동안 메모리 누수 및 비효율적인 메모리를 찾습니다. 메모리 사용량 도구를 통해 관리되는 메모리 및 네이티브 메모리 힙의 *스냅숏*을 하나 이상 만들어 개체 유형이 메모리 사용에 미치는 영향을 이해할 수 있습니다. .NET, 네이티브 또는 혼합 모드(.NET 및 네이티브) 앱의 스냅숏을 수집할 수 있습니다.  
   
  다음 그림에서는 Visual Studio 2015 업데이트 1 이상 버전에서 사용할 수 있는 **진단 도구** 창을 보여 줍니다.  
@@ -63,11 +63,11 @@ ms.locfileid: "49861412"
      ![진단 도구 요약 탭](../profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
 
      > [!NOTE]
-     >  메모리 데이터를 수집할 경우 네이티브 또는 혼합 모드 앱의 디버깅 성능에 영향을 줄 수 있으므로 메모리 스냅숏은 기본적으로 사용되지 않습니다. 네이티브 또는 혼합 모드 앱에서 스냅숏을 사용하도록 설정하려면 디버깅 세션을 시작합니다(바로 가기 키: **F5** 키). **진단 도구** 창이 나타나면 **메모리 사용량** 탭을 선택한 다음, **힙 프로파일링**을 선택합니다.  
+     >  메모리 데이터를 수집할 경우 네이티브 또는 혼합 모드 앱의 디버깅 성능에 영향을 줄 수 있으므로 메모리 스냅숏은 기본적으로 사용되지 않습니다. 네이티브 또는 혼합 모드 앱에서 스냅숏을 사용하도록 설정하려면 디버깅 세션을 시작합니다(바로 가기 키: **F5**). **진단 도구** 창이 나타나면 **메모리 사용량** 탭을 선택한 다음, **힙 프로파일링**을 선택합니다.  
      >   
      >  ![스냅숏 사용](../profiling/media/dbgdiag_mem_mixedtoolbar_enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")  
      >   
-     >  디버깅을 중지(바로 가기 키: **Shift**+**F5**)하고 다시 시작합니다.  
+     >  중지(바로 가기 키: **Shift**+**F5**) 및 디버깅을 다시 시작합니다.  
 
 6.  디버깅 세션의 시작 부분에 스냅숏을 만들려면 **메모리 사용량** 요약 도구 모음에서 **스냅숏 만들기**를 선택합니다. (이는 여기에 중단점을 설정하는 데도 도움이 될 수 있습니다.)
 

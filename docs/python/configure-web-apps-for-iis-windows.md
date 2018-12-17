@@ -1,23 +1,24 @@
 ---
 title: IIS용 Python 웹앱 구성
 description: Windows 가상 머신에서 인터넷 정보 서비스를 사용하여 실행할 Python 웹앱을 구성하는 방법입니다.
-ms.date: 10/10/2018
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 4452eca221a772c2f0fd519df533e35468f3ecd8
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
+ms.openlocfilehash: 8de69c64cac5c841867f5d993395e5ab380625eb
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459567"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062906"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>IIS용 Python 웹앱 구성
 
@@ -113,7 +114,7 @@ FastCGI는 요청 수준에서 작동하는 인터페이스입니다. IIS는 들
         <add key="WSGI_HANDLER" value="app.wsgi_app()"/>
         ```
 
-    - **Flask**: `<project_name>`이 프로젝트의 이름과 일치하는 `<project_name>.app`으로 `WSGI_HANDLER` 값을 변경합니다. *runserver.py*의 `from <project_name> import app` 문을 살펴보면 정확한 식별자를 찾을 수 있습니다. 예를 들어 프로젝트 이름이 “FlaskAzurePublishExample”인 경우 항목은 다음과 같이 표시됩니다.
+    - **Flask**: `WSGI_HANDLER` 값을 `<project_name>.app`으로 변경합니다. 여기서 `<project_name>`은 프로젝트 이름과 일치합니다. *runserver.py*의 `from <project_name> import app` 문을 살펴보면 정확한 식별자를 찾을 수 있습니다. 예를 들어 프로젝트 이름이 “FlaskAzurePublishExample”인 경우 항목은 다음과 같이 표시됩니다.
 
         ```xml
         <!-- Flask apps only: change the project name to match your app -->

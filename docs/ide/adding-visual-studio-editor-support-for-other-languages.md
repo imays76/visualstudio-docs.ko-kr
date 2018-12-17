@@ -1,5 +1,5 @@
 ---
-title: 다른 언어에 대한 Visual Studio 편집기 지원 추가
+title: 다른 언어에 대한 편집기 지원 추가
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 57991a7cac2d45cf618642ccd19ead1d94ce5978
-ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
+ms.openlocfilehash: f0ac463161d42e0d9ddf6b845b752916675ba4fe
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50244478"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062097"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>다른 언어에 대한 Visual Studio 편집기 지원 추가
 
@@ -84,7 +84,7 @@ Visual Studio에 대한 새 TextMate 문법을 다음 폴더에 추가합니다.
 
 Windows에서 *%userprofile%* 은 *c:\Users\\\<user name>* 경로로 확인됩니다. 시스템에 extensions 폴더가 없는 경우 새로 만들어야 합니다. 폴더가 이미 있는 경우 숨겨집니다.
 
-TextMate 문법을 만드는 방법에 대한 자세한 내용은 [TextMate – Introduction to Language Grammars: How to add source code syntax highlighting embedded in HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/)(TextMate – 언어 문법 소개: HTML에 포함된 소스 코드 구문 강조 표시를 추가하는 방법) 및 [Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle)(Textmate 번들의 언어 문법 및 사용자 지정 테마를 만드는 방법에 대한 참고 사항)을 참조하세요.
+TextMate 문법을 만드는 방법에 대한 자세한 내용은 [TextMate - 언어 문법 소개: HTML에 포함된 소스 코드 구문 강조 표시를 추가하는 방법](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) 및 [Textmate 번들에 대한 언어 문법 및 사용자 지정 테마를 만드는 방법에 대한 참고 사항](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 

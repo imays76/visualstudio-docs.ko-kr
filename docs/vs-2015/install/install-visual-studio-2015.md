@@ -1,6 +1,6 @@
 ---
-title: Visual Studio 2015를 설치 합니다. | Microsoft Docs
-ms.custom: ''
+title: Visual Studio 2015 설치 | Microsoft Docs
+titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
@@ -23,18 +23,18 @@ caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 2552af00acdcb490c5f54f642fdfcdc3588d22e0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: 761264d80c04f0e2ce13a365071f56739d6961a2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789995"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055169"
 ---
-# <a name="install-visual-studio-2015"></a>Visual Studio 2015를 설치 합니다.
+# <a name="install-visual-studio-2015"></a>Visual Studio 2015 설치
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 페이지에는 자세한 정보를 설치 하는 데 도움이 **Visual Studio 2015**, 개발자 용 생산성 도구가 통합된 제품군입니다. [기능](https://www.visualstudio.com/news/vs2015-vs.aspx), [버전](http://go.microsoft.com/fwlink/?LinkID=242142), [시스템 요구 사항](https://www.visualstudio.com/products/visual-studio-2015-compatibility-vs), [다운로드](http://go.microsoft.com/fwlink/?LinkId=517106)등에 대한 정보에 빠르게 액세스할 수 있는 링크도 포함되어 있습니다.
+이 페이지에는 개발자를 위한 통합 생산성 도구 제품군인 **Visual Studio 2015** 설치를 돕기 위한 자세한 정보가 포함되어 있습니다. [기능](https://www.visualstudio.com/news/vs2015-vs.aspx), [버전](http://go.microsoft.com/fwlink/?LinkID=242142), [시스템 요구 사항](https://www.visualstudio.com/products/visual-studio-2015-compatibility-vs), [다운로드](http://go.microsoft.com/fwlink/?LinkId=517106)등에 대한 정보에 빠르게 액세스할 수 있는 링크도 포함되어 있습니다.
 
 ## <a name="quick-links"></a>빠른 링크
 
@@ -42,14 +42,14 @@ ms.locfileid: "51789995"
 
 |||
 |------------------|----------------|
-|![Visual Studio 다운로드](../install/media/downloads.png "다운로드") |**다운로드**: Visual Studio 2015를 설치 하려면에서 제품 실행 파일을 다운로드할 수 있습니다 합니다 [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015) (구독 필수), 페이지 또는 boxed 제품의 설치 미디어를 사용 합니다. [현재 또는 이전 버전의 Visual Studio를 다운로드 하는 방법에 자세히 알아보려면](https://www.visualstudio.com/vs/older-downloads/)합니다.|
-|![기능에 자세히 알아보려면](../install/media/features.png "기능") |**기능**: Visual Studio 2015의 기능에 대 한 자세한 내용은 릴리스 정보를 참조 하세요. [RTM](https://www.visualstudio.com/news/vs2015-vs), [업데이트 1](https://www.visualstudio.com/news/vs2015-update1-vs)하십시오 [업데이트 2](https://www.visualstudio.com/news/vs2015-update2-vs), 및 [ 업데이트 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs)합니다.|
-|![각 SKU에 포함 된 내용 알아보십시오](../install/media/sku.png "Sku") |**Sku**: Visual Studio 2015의 각 버전에서 사용할 수 있는 항목을 참조 하세요 [Visual Studio 제품 비교](http://go.microsoft.com/fwlink/?LinkID=242142) 페이지입니다.|
-|![시스템 요구 사항을 보려면](../install/media/system-requirements.png "시스템 요구 사항") |**시스템 요구 사항**: Visual Studio 2015의 각 버전에 대 한 시스템 요구 사항을 보려면을 참조 합니다 [Visual Studio 2015 호환성](https://www.visualstudio.com/products/visual-studio-2015-compatibility-vs) 페이지.|
-|![제품 키를 찾습니다](../install/media/product-keys.png "제품 키") |**제품 키**: 제품 키를 찾으려면 다음을 참조 합니다 [방법: Visual Studio 제품 키 찾기](../install/how-to-locate-the-visual-studio-product-key.md) 항목입니다.|
-|![라이선스에 대해 알아봅니다](../install/media/licensing.png "라이선스") |**라이선스**: 개인 또는 기업 고객 모두에 대 한 옵션을 라이선싱 하는 방법에 대 한 알아보려면 참조 합니다 [Visual Studio and MSDN Licensing](https://www.microsoft.com/download/details.aspx?id=13350) 백서입니다.|
+|![Visual Studio 다운로드](../install/media/downloads.png "다운로드") |**다운로드** Visual Studio 2015를 설치 하려면에서 제품 실행 파일을 다운로드할 수 있습니다 합니다 [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015) (구독 필수), 페이지 또는 boxed 제품의 설치 미디어를 사용 합니다. [현재 또는 이전 버전의 Visual Studio를 다운로드 하는 방법에 자세히 알아보려면](https://www.visualstudio.com/vs/older-downloads/)합니다.|
+|![기능에 자세히 알아보려면](../install/media/features.png "기능") |기능 Visual Studio 2015의 기능에 대 한 자세한 내용은 릴리스 정보 참조 [RTM](https://www.visualstudio.com/news/vs2015-vs)를 [업데이트 1](https://www.visualstudio.com/news/vs2015-update1-vs)를 [업데이트 2](https://www.visualstudio.com/news/vs2015-update2-vs), 및 [업데이트 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs)합니다.|
+|![각 SKU에 포함 된 내용 알아보십시오](../install/media/sku.png "Sku") |**SKU**: Visual Studio 2015의 각 버전에서 사용할 수 있는 항목을 확인하려면 [Visual Studio 제품 비교](http://go.microsoft.com/fwlink/?LinkID=242142) 페이지를 참조하세요.|
+|![시스템 요구 사항을 보려면](../install/media/system-requirements.png "시스템 요구 사항") |**시스템 요구 사항**: Visual Studio 2015의 각 버전에 대한 시스템 요구 사항을 보려면 [Visual Studio 2015 호환성](https://www.visualstudio.com/products/visual-studio-2015-compatibility-vs) 페이지를 참조하세요.|
+|![제품 키를 찾습니다](../install/media/product-keys.png "제품 키") |**제품 키** 제품 키를 찾으려면 참조는 [방법: Visual Studio 제품 키 찾기](../install/how-to-locate-the-visual-studio-product-key.md) 항목입니다.|
+|![라이선스에 대해 알아봅니다](../install/media/licensing.png "라이선스") |**라이선싱**: 개인 고객과 기업 고객 모두에 대한 라이선싱 옵션을 확인하려면 [Visual Studio 및 MSDN 라이선싱](https://www.microsoft.com/download/details.aspx?id=13350) 백서를 참조하세요.|
 
-##  <a name="custom"></a> 기본 vs입니다. 사용자 지정 설치
+##  <a name="custom"></a> 기본 설치 및 사용자 지정 설치
  Visual Studio 2015를 설치할 때 매일 사용하는 구성 요소를 포함하거나 제외할 수 있습니다. 즉, 기본 설치가 사용자 지정 설치보다 더 작고 더 빠르게 설치되는 경우가 많습니다. 이전 버전에서는 기본적으로 설치된 많은 구성 요소가 이제는 이 버전에서 명시적으로 선택해야 하는 사용자 지정 구성 요소로 간주된다는 의미이기도 합니다.
 
  ![Visual Studio 2015 설치 대화 상자](../ide/media/vs2015-setup-screen.png "VS2015_Setup_screen")
@@ -74,7 +74,7 @@ ms.locfileid: "51789995"
  설치 미디어 (Dvd)를 사용 하 여 Visual Studio에서 Visual Studio 구독 서비스를 사용 하 여 설치할 수는 [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015) 에서 웹 설치 관리자를 다운로드 하 여 웹 사이트는 [Visual Studio 다운로드](http://go.microsoft.com/fwlink/?LinkId=517106) 웹 사이트 또는 오프 라인 설치 레이아웃을 만들어 (참조를 [오프 라인 설치의 Visual Studio 만들기](../install/create-an-offline-installation-of-visual-studio.md) 페이지에 대 한 자세한).
 
 > [!IMPORTANT]
->  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]를 설치하려면 관리자 자격 증명이 필요합니다. 그러나 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]를 설치한 후에는 자격 증명이 없어도 사용에 지장이 없습니다.
+>  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]를 설치하려면 관리자 자격 증명이 필요합니다. 그러나 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 를 설치한 후에는 자격 증명이 없어도 사용에 지장이 없습니다.
 
  Visual Studio의 모든 요소를 설치하려면 로컬 관리자 계정이 다음 권한을 사용할 수 있어야 합니다.
 
@@ -108,13 +108,13 @@ ms.locfileid: "51789995"
  배포 하는 방법에 대 한 자세한 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 네트워크를 통해 참조를 [Visual Studio 관리자 가이드](../install/visual-studio-administrator-guide.md)합니다.
 
 ###  <a name="BKMK_Virtualized"></a> 가상화 된 환경에서 Visual Studio 설치
- **Hyper-v 비디오 문제**
+ **Hyper-V 비디오 문제**
 
  Hyper-V를 사용하도록 설정된 Windows Server 2008 R2와 가속 그래픽 어댑터를 실행하는 경우 시스템 성능이 떨어질 수 있습니다.
 
- 자세한 내용은 Microsoft 웹 사이트에서 [Windows Server 2008 또는 Windows Server 2008 R2 기반 컴퓨터에 Hyper-V 역할이 활성화되어 있고 가속화 디스플레이 어댑터가 설치된 경우 비디오 성능이 저하될 수 있음](http://go.microsoft.com/fwlink/?LinkID=231084)페이지를 참조하세요.
+ 자세한 내용은 Microsoft 웹 사이트의 다음 페이지를 참조 합니다. [Windows Server 2008 경우 비디오 성능이 저하 될 수 또는 Windows Server 2008 R2 기반 컴퓨터에는 Hyper-v 역할이 활성화 되어 있고 가속화 디스플레이 어댑터가 설치](http://go.microsoft.com/fwlink/?LinkID=231084)합니다.
 
- **Hyper-v를 사용한 장치 에뮬레이션**
+ **Hyper-V를 사용한 디바이스 에뮬레이션**
 
  가상화 없이 실제 하드웨어에서 Visual Studio 2015를 설치하는 경우 Hyper-V를 사용하여 Windows 및 Android 장치를 에뮬레이트할 수 있게 해주는 기능을 선택할 수 있습니다. Hyper-V에 설치하는 경우에는 Windows 또는 Android 장치를 에뮬레이트할 수 없습니다. 이는 에뮬레이터 자체가 가상 컴퓨터이기 때문이므로 현재 VM을 다른 VM 내부에 호스트할 수는 없습니다. 해결 방법은 직접 응용 프로그램을 배포 및 디버그할 수 있는 실제 Windows 또는 Android 장치를 보유하는 것입니다.
 
@@ -129,7 +129,7 @@ ms.locfileid: "51789995"
 
 3.  **다음**을 선택하고 나머지 지시를 따릅니다.
 
-##  <a name="helpContent"></a> 오프 라인 도움말 콘텐츠를 설치합니다.
+##  <a name="helpContent"></a> 오프라인 도움말 콘텐츠 설치
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]를 설치하고 나서 추가 도움말 콘텐츠를 다운로드하여 오프라인으로 사용할 수 있습니다.
 
 #### <a name="to-install-or-uninstall-help-content"></a>도움말 콘텐츠를 설치 또는 제거하려면
@@ -138,7 +138,7 @@ ms.locfileid: "51789995"
 
 2. **Microsoft 도움말 뷰어** 의 **콘텐츠 관리**탭에서 도움말 콘텐츠의 설치 소스를 선택합니다.
 
-3. 특정 도움말 컬렉션을 찾고자 하는 경우 이름 또는 키워드를 입력 합니다 **검색** 텍스트 상자 및 누릅니다 **Enter**합니다.
+3. 특정 도움말 컬렉션을 찾고자 하는 경우에는 **검색** 텍스트 상자에 이름 또는 키워드를 입력한 다음, **Enter** 키를 누릅니다.
 
 4. 원하는 도움말 컬렉션의 이름 옆에 있는 **추가** 또는 **제거** 링크를 선택합니다.
 
@@ -147,7 +147,7 @@ ms.locfileid: "51789995"
    설치 또는 오프 라인 도움말을 배포 하는 방법에 대 한 자세한 내용은 참조는 [도움말 뷰어 관리자 가이드](../ide/help-viewer-administrator-guide.md)합니다.
 
 ##  <a name="serviceReleases"></a> 서비스 릴리스 및 제품 업데이트 확인
- 모든 확장이 호환 되므로, 이전 버전에서 업그레이드할 때 Visual Studio 확장을 업그레이드 자동으로 하지 않습니다. 확장을 다시 설치 해야 합니다 [Visual Studio 갤러리](http://go.microsoft.com/fwlink/?LinkId=178891) 또는 소프트웨어 게시자에서입니다.
+ 모든 확장이 호환되는 것은 아니므로 이전 버전에서 업그레이드할 때 Visual Studio에서는 확장을 자동으로 업그레이드하지 않습니다. 확장을 다시 설치 해야 합니다 [Visual Studio 갤러리](http://go.microsoft.com/fwlink/?LinkId=178891) 또는 소프트웨어 게시자에서입니다.
 
 #### <a name="to-automatically-check-for-service-releases"></a>서비스 릴리스를 자동으로 확인하려면
 
@@ -186,7 +186,7 @@ ms.locfileid: "51789995"
 
 -   [Microsoft Visual Studio 지원](http://go.microsoft.com/fwlink/?LinkID=251019) 웹 사이트 KB(기술 자료) 문서를 읽고 Visual Studio 설치 관련 문제에 대한 정보를 얻기 위해 Microsoft 지원에 문의하는 방법을 알아봅니다.
 
-##  <a name="relatedTopics"></a> 관련된 항목
+##  <a name="relatedTopics"></a>관련 항목
 
 |제목|설명|
 |-----------|-----------------|

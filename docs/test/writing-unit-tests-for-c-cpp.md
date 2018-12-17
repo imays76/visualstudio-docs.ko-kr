@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 C/C++에 대한 단위 테스트 작성
+title: C/C++에 대한 단위 테스트 작성
 ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ manager: wpickett
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: e79b65628193c7b90a03b2e1141dfc45b6b0829f
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: e19eb3bb421a69c902d9a10f0cdb3c5ac2244a04
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879228"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53053746"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Visual Studio에서 C/C++에 대한 단위 테스트 작성
 
@@ -73,7 +73,7 @@ Google Test 어댑터와 Boost.Test 어댑터 확장은 Visual Studio Marketplac
 ### <a name="write-test-methods"></a>테스트 메서드 작성
 
 > [!NOTE]
-> 이 섹션에서는 C/C++용 Microsoft 단위 테스트 프레임워크에 대한 구문을 보여 줍니다. 이 내용은 [Microsoft.VisualStudio.TestTools.CppUnitTestFramework API 참조](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)에서 설명합니다. Google Test 설명서는 [Google Test 입문](https://github.com/google/googletest/blob/master/googletest/docs/primer.md)을 참조하세요. Boost.Test는 [Boost Test 라이브러리: 단위 테스트 프레임워크](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html)를 참조하세요.
+> 이 섹션에서는 C/C++용 Microsoft 단위 테스트 프레임워크에 대한 구문을 보여 줍니다. 문서화된 내용은 다음과 같습니다. [Microsoft.VisualStudio.TestTools.CppUnitTestFramework API 참조](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Google Test 설명서는 [Google Test 입문](https://github.com/google/googletest/blob/master/googletest/docs/primer.md)을 참조하세요. Boost.Test는 [Boost Test 라이브러리: 단위 테스트 프레임워크](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html)를 참조하세요.
 
 테스트 프로젝트의 *.cpp* 파일에는 테스트 코드 작성 방법의 예제로 정의된 스텁 클래스와 메서드가 있습니다. 서명은 메소드를 **테스트 탐색기** 창에서 검색 가능하게 하는 TEST_CLASS 및 TEST_METHOD 매크로를 사용합니다.
 
@@ -119,7 +119,7 @@ TEST_METHOD(TestClassInit)
 
 ## <a name="use-codelens"></a>CodeLens 사용
 
-**Visual Studio 2017 버전 15.7 Professional 및 Enterprise Edition에만 해당**: [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)를 사용하면 코드 편집기에서 나가지 않고도 단위 테스트의 상태를 빠르게 확인할 수 있습니다. 다음 방법 중 하나로 C++ 단위 테스트 프로젝트에 대한 CodeLens를 초기화할 수 있습니다.
+**Visual Studio 2017 버전 15.7 Professional 및 Enterprise Editions만 해당**: [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)를 사용하면 코드 편집기를 종료하지 않고도 단위 테스트 상태를 신속하게 확인할 수 있습니다. 다음 방법 중 하나로 C++ 단위 테스트 프로젝트에 대한 CodeLens를 초기화할 수 있습니다.
 
 - 테스트 프로젝트 또는 솔루션을 편집하고 빌드합니다.
 - 프로젝트 또는 솔루션을 다시 빌드합니다.

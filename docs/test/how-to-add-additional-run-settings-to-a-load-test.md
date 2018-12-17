@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 부하 테스트 실행 설정 추가
+title: 부하 테스트에 실행 설정 추가
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e894bb0b53240795ad2bf7505ba081dbf479989d
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 439120b80350081e1770ccce619d51b92673feef
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896616"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048056"
 ---
-# <a name="how-to-add-additional-run-settings-to-a-load-test"></a>방법: 부하 테스트에 실행 설정 추가
+# <a name="how-to-add-additional-run-settings-to-a-load-test"></a>방법: 부하 테스트에 추가 실행 설정 추가
 
 부하 테스트의 실행 설정을 통해 다양한 설정을 지정할 수 있습니다. 실행 설정에는 테스트 기간, 결과 수집 세부 수준 및 테스트 실행 시 수집되는 카운터 집합이 포함됩니다. 부하 테스트마다 여러 실행 설정을 만들어 저장한 다음 테스트를 실행할 때 특정 설정을 하나 선택하여 사용할 수 있습니다. **부하 테스트 새로 만들기 마법사**를 사용하여 부하 테스트를 만들 때 초기 실행 설정이 부하 테스트에 추가됩니다.
 
@@ -40,7 +40,7 @@ ms.locfileid: "52896616"
 
      **속성** 창이 선택한 실행 설정의 속성과 함께 표시됩니다.
 
-5.  **속성** 창에서 **이름** 속성의 텍스트 상자를 사용하여 **실행 설정: 5분 실행**과 같이 실행 설정의 의도를 설명하는 이름을 새 실행 설정에 지정합니다.
+5.  **속성** 창에서 **이름** 속성의 텍스트 상자를 사용하여 실행 설정의 의도를 설명하는 이름(예: **실행 설정: 5분 실행**)을 지정합니다.
 
 6.  **속성** 창을 사용하여 실행 설정을 변경합니다. 예를 들어 실행 지속 시간을 **00:05:00**으로 변경하여 테스트를 5분간 실행합니다.
 

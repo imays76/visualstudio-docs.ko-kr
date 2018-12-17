@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 shim을 사용하여 유닛 테스트를 위한 다른 어셈블리에서 응용 프로그램 격리
+title: shim을 사용하여 단위 테스트를 위한 애플리케이션 격리
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c1a6a15a5c5ba0eccfdab89461292fba484b5af3
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: b94852b15891566bdfc38dd3fd8de9e706f38737
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389071"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065612"
 ---
 # <a name="use-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>shim을 사용하여 단위 테스트를 위한 다른 어셈블리에서 응용 프로그램 격리
 
@@ -32,7 +32,7 @@ shim을 사용하여 솔루션의 일부가 아닌 코드를 어셈블리에서 
 > [!NOTE]
 > .NET Standard 프로젝트는 지원되지 않습니다.
 
-## <a name="example-the-y2k-bug"></a>예: Y2K 버그
+## <a name="example-the-y2k-bug"></a>예제: Y2K 버그
 
 2000년 1월 1일에 예외를 throw하는 메서드를 살펴보겠습니다.
 
@@ -511,5 +511,5 @@ ShimFile.WriteAllTextStringString = shim;
 ## <a name="see-also"></a>참고 항목
 
 - [Microsoft Fakes를 사용하여 테스트 대상 코드 격리](../test/isolating-code-under-test-with-microsoft-fakes.md)
-- [Peter Provost의 블로그: Visual Studio 2012 Shim](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)
-- [비디오(1h16): Visual Studio 2012에서 Fakes를 사용하여 테스트되지 않은 코드 테스트](http://go.microsoft.com/fwlink/?LinkId=261837)
+- [Peter Provost의 블로그: Visual Studio 2012 shims](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)
+- [비디오(1h16): Visual Studio 2012에서 fakes를 사용하여 테스트되지 않은 코드 테스트](http://go.microsoft.com/fwlink/?LinkId=261837)

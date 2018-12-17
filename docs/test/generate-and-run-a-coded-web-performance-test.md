@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 코딩된 웹 성능 테스트
+title: 코딩된 웹 성능 테스트
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 76b2e7eebf66bb4a9c2564ca30a72a7b17dbdcfc
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 8a4e1ea45b8fe3ae0e33064973fcf1bc3517598e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895511"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067844"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>코딩된 웹 성능 테스트 생성 및 실행
 
@@ -90,11 +90,11 @@ ms.locfileid: "52895511"
  **A:** 예, **솔루션 탐색기**에서 상황에 맞는 메뉴를 사용합니다.
 
 ### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>Q: 코딩된 테스트를 생성하기 전이나 후에 데이터 소스를 추가해야 합니까?
- **A:** 코드는 자동으로 생성되므로 코딩된 테스트를 생성하기 전에 [데이터 소스](../test/add-a-data-source-to-a-web-performance-test.md)로 쉽게 추가할 수 있습니다.
+ **A:** 코드는 자동으로 생성되므로 코딩된 테스트를 생성하기 전에 [데이터 원본](../test/add-a-data-source-to-a-web-performance-test.md)으로 쉽게 추가할 수 있습니다.
 
  데이터 소스로 코딩된 테스트를 실행하면 다음과 같은 오류 메시지가 표시될 수 있습니다.
 
- **\<컴퓨터 이름> 에이전트에서 \<테스트 이름> 테스트를 실행할 수 없음: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.**
+ **테스트를 실행할 수 없음 \<테스트 이름> 에이전트에서 \<컴퓨터 이름>: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.**
 
  이 오류는 해당하는 DataBindingAttribute 없이 테스트 클래스에 DataSourceAttribute를 정의한 경우에 발생할 수 있습니다. 이 오류를 해결하려면 적절한 DataBindingAttribute를 추가하고, 이를 삭제하거나 코드에서 주석 처리합니다.
 

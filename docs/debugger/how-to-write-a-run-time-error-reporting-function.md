@@ -1,6 +1,6 @@
 ---
-title: '방법: 런타임 오류 보고 함수 작성 | Microsoft Docs'
-ms.custom: ''
+title: 런타임 오류 보고 함수 작성 | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -19,19 +19,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 381ba20b233f143cb63128368a710debb25a0abb
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
-ms.translationtype: MT
+ms.openlocfilehash: 22c508a7fa8faedc66f9122de60921878a931fae
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057875"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051505"
 ---
 # <a name="how-to-write-a-run-time-error-reporting-function"></a>방법: 런타임 오류 보고 함수 작성
 사용자 지정 런타임 오류 보고 함수는 `_CrtDbgReportW`와 동일하게 선언해야 합니다. 이 함수는 디버거에 1을 값으로 반환해야 합니다.  
   
  다음 예제에서는 사용자 지정 보고 함수를 정의하는 방법을 보여 줍니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
   
 ```cpp
 #include <stdio.h>  
@@ -62,7 +62,7 @@ int MyErrorFunc(int errorType, const wchar_t *filename,
 }  
 ```  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제는 좀 더 복잡한 사용자 지정 보고 함수를 보여 줍니다. 이 예제에서 switch 문은 `reportType`의 `_CrtDbgReportW` 매개 변수에서 정의한 여러 가지 오류 형식을 처리합니다. `_CrtDbgReportW`를 바꾸는 것이므로 `_CrtSetReportMode`는 사용할 수 없습니다. 사용자 지정 함수에서 출력을 처리해야 합니다. 이 함수의 첫째 가변 인수는 런타임 오류 번호를 사용합니다. 자세한 내용은 [_RTC_SetErrorType](/cpp/c-runtime-library/reference/rtc-seterrortype)합니다.  
   
 ```cpp
@@ -107,8 +107,8 @@ int Catch_RTC_Failure(int errType, const wchar_t *file, int line,
 #pragma runtime_checks("", restore)  
 ```  
   
-## <a name="example"></a>예  
- `_RTC_SetErrorFuncW`를 사용하여 `_CrtDbgReportW` 대신 사용자 지정 함수를 설치합니다. 자세한 내용은 [_RTC_SetErrorFuncW](/cpp/c-runtime-library/reference/rtc-seterrorfuncw)합니다. `_RTC_SetErrorFuncW`의 반환 값은 이전 보고 함수이며 필요한 경우 이를 저장하고 복원할 수 있습니다.  
+## <a name="example"></a>예제  
+ `_RTC_SetErrorFuncW`를 사용하여 `_CrtDbgReportW` 대신 사용자 지정 함수를 설치합니다. 자세한 내용은 [_RTC_SetErrorFuncW](/cpp/c-runtime-library/reference/rtc-seterrorfuncw)를 참조하세요. `_RTC_SetErrorFuncW`의 반환 값은 이전 보고 함수이며 필요한 경우 이를 저장하고 복원할 수 있습니다.  
   
 ```cpp
 #include <rtcapi.h>  

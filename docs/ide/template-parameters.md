@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 프로젝트 및 항목 템플릿 매개 변수
+title: 프로젝트 및 항목 템플릿 매개 변수
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,12 +12,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4c76eaf68f63b4f3b8a5713d0b206b395ee7c9f1
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: bd566988d7546bed72f6ae3ea2c5c6f3159054f4
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178636"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067676"
 ---
 # <a name="template-parameters"></a>템플릿 매개 변수
 
@@ -74,7 +74,7 @@ ms.locfileid: "39178636"
 
 매개 변수를 대체하는 동안 사용되는 예약된 기본 템플릿 매개 변수 외에 템플릿 매개 변수와 값을 직접 지정할 수 있습니다. 자세한 내용은 [CustomParameters 요소(Visual Studio 템플릿)](../extensibility/customparameters-element-visual-studio-templates.md)를 참조하세요.
 
-## <a name="example-use-the-project-name-for-a-file-name"></a>예: 파일 이름에 프로젝트 이름 사용
+## <a name="example-use-the-project-name-for-a-file-name"></a>예제: 파일 이름에 프로젝트 이름 사용
 
 `TargetFileName` 특성에 매개 변수를 사용하여 프로젝트 항목에 대한 변수 파일 이름을 지정할 수 있습니다.
 
@@ -91,7 +91,7 @@ ms.locfileid: "39178636"
 </TemplateContent>
 ```
 
-## <a name="example-use-the-safe-project-name-for-the-namespace-name"></a>예: 네임스페이스 이름에 안전한 프로젝트 이름 사용
+## <a name="example-use-the-safe-project-name-for-the-namespace-name"></a>예제: 네임스페이스 이름에 안전한 프로젝트 이름 사용
 
 C# 클래스 파일에서 네임스페이스에 프로젝트 이름을 사용하려면 다음 구문을 사용합니다.
 

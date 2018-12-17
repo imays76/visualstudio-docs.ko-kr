@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 부하 테스트 결과 관리
+title: 부하 테스트 결과 관리
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fc0dff5f9e2c647d153cf1c38bb33802b47151d6
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 0b2d030f375f67608fc6cf34ae108fed2ba54f5d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895459"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067118"
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>부하 테스트 결과 리포지토리에서 부하 테스트 결과 관리
 
@@ -47,10 +47,10 @@ Visual Studio Enterprise에서는 기술을 기반으로 일반적인 성능 카
 
 |작업|관련 항목|
 |-|-----------------------|
-|**부하 테스트 결과 리포지토리 설정:** SQL 데이터베이스에 부하 테스트 결과 리포지토리를 설정할 수 있습니다. **참고:** 테스트 컨트롤러를 설치할 때 부하 테스트 리포지토리를 만들 수도 있습니다. 자세한 내용은 [테스트 에이전트 설치 및 구성](../test/lab-management/install-configure-test-agents.md)을 참조하세요.||
+|**부하 테스트 결과 리포지토리 설정:** SQL 데이터베이스에 부하 테스트 결과 리포지토리를 설정할 수 있습니다. **참고:**  테스트 컨트롤러를 설치할 때 부하 테스트 리포지토리를 만들 수도 있습니다. 자세한 내용은 [테스트 에이전트 설치 및 구성](../test/lab-management/install-configure-test-agents.md)을 참조하세요.||
 |**결과 리포지토리 선택 및 보기:** 특정 결과 리포지토리를 선택할 수 있습니다. 로컬 결과 저장소로 제한되지는 않습니다. 부하 테스트는 주로 에이전트 컴퓨터의 원격 집합에서 실행됩니다. 에이전트나 로컬 컴퓨터의 테스트 결과는 부하 테스트 결과 저장소가 만들어진 모든 SQL 서버에 저장할 수 있습니다. 에이전트나 로컬 컴퓨터 모두 **테스트 컨트롤러 관리** 창을 사용하여 부하 테스트 결과를 저장할 위치를 식별해야 합니다.|-   [방법: 부하 테스트 결과 리포지토리 선택](../test/how-to-select-a-load-test-results-repository.md)<br />-   [방법: 분석을 위한 부하 테스트 결과 액세스](../test/how-to-access-load-test-results-for-analysis.md)|
-|**리포지토리에서 부하 테스트 결과 삭제:** **부하 테스트 결과 열기 및 관리** 대화 상자를 사용하여 **부하 테스트 편집기**에서 부하 테스트 결과를 제거할 수 있습니다.|-   [방법: 리포지토리에서 부하 테스트 결과 삭제](../test/how-to-delete-load-test-results-from-a-repository.md)|
-|**리포지토리에서 결과 가져오기 및 내보내기:** **부하 테스트 편집기**에서 부하 테스트 결과를 가져오고 내보낼 수 있습니다.|-   [방법: 리포지토리로 부하 테스트 결과 가져오기](../test/how-to-import-load-test-results-into-a-repository.md)<br />-   [방법: 리포지토리에서 부하 테스트 결과 내보내기](../test/how-to-export-load-test-results-from-a-repository.md)|
+|**리포지토리에서 부하 테스트 결과 삭제:** **부하 테스트 결과 열기 및 관리** 대화 상자를 사용하면 **부하 테스트 편집기**에서 부하 테스트 결과를 제거할 수 있습니다.|-   [방법: 리포지토리에서 부하 테스트 결과 삭제](../test/how-to-delete-load-test-results-from-a-repository.md)|
+|**리포지토리로 결과 가져오기 및 내보내기:** **부하 테스트 편집기**에서 부하 테스트 결과를 가져오고 내보낼 수 있습니다.|-   [방법: 리포지토리로 부하 테스트 결과 가져오기](../test/how-to-import-load-test-results-into-a-repository.md)<br />-   [방법: 리포지토리에서 부하 테스트 결과 내보내기](../test/how-to-export-load-test-results-from-a-repository.md)|
 
 ## <a name="related-tasks"></a>관련 작업
 

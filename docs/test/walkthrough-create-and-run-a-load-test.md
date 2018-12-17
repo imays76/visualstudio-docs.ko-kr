@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 부하 테스트 만들기 및 실행
+title: 부하 테스트 만들기 및 실행
 ms.date: 10/01/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 649fe84b716355f5c7228e371fa88d80937f24af
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: a5782985406d9b2daa53c1fd6ecefb3f31cc0104
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895381"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055772"
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>연습: 단위 테스트를 포함하는 부하 테스트 만들기 및 실행
 
@@ -37,13 +37,13 @@ ms.locfileid: "52895381"
 
 -   부하 테스트를 실행합니다.
 
--   [연습: 관리 코드에 대한 단위 테스트 만들기 및 실행](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)의 단계를 수행하여 일부 단위 테스트가 있는 웹 성능 및 부하 테스트 프로젝트를 포함하는 간단한 C# 클래스 라이브러리를 만듭니다.
+-   다음의 단계 수행 [연습: 관리 코드에 대한 단위 테스트 만들기 및 실행](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) 일부 단위 테스트가 있는 웹 성능 및 부하 테스트 프로젝트를 포함하는 간단한 C# 클래스 라이브러리를 만듭니다.
 
 ## <a name="create-a-load-test-containing-unit-tests-using-the-new-load-test-wizard"></a>부하 테스트 새로 만들기 마법사를 사용하여 단위 테스트를 포함하는 부하 테스트 만들기
 
 ### <a name="to-start-the-new-load-test-wizard"></a>부하 테스트 새로 만들기 마법사를 시작하려면
 
-1.  [연습: 관리 코드에 대한 단위 테스트 만들기 및 실행](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)에서 만든 Bank 솔루션을 엽니다.
+1.  다음 [에서 만든 Bank 솔루션을 엽니다. 연습: 관리 코드에 대한 단위 테스트 만들기 및 실행](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
 2.  **솔루션 탐색기**에서 은행 솔루션 노드의 바로 가기 메뉴를 열고 **추가**를 선택한 다음, **새 프로젝트**를 선택합니다.
 

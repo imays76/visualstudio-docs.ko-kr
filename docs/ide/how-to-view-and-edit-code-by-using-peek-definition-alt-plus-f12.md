@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 정의 피킹(Peeking) 사용
+title: 정의 피킹(Peeking) 사용
 ms.date: 01/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c64f271f041c28dc621ed85a8cd9d79c36caa3dd
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 518256c550f56832c6711ab6d2ca2dae4eb0aa2c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746717"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059654"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>방법: 정의 피킹(Peeking)을 사용하여 코드 보기 및 편집(Alt+F12)
 

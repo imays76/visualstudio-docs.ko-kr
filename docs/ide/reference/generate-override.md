@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 메서드 재정의 생성
+title: 메서드 재정의 생성
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5d51139d2e5197607de2255b267c24bf2a9db2b3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bb4a35c1f7c9e2752148e54f934a3fcbfb974136
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919067"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063644"
 ---
 # <a name="generate-an-override-in-visual-studio"></a>Visual Studio에서 재정의 생성
 
@@ -24,7 +24,7 @@ ms.locfileid: "49919067"
 
 - Visual Basic
 
-**대상:** 기본 클래스에서 재정의할 수 있는 메서드에 대한 코드를 즉시 생성할 수 있습니다.
+**내용:** 기본 클래스에서 재정의할 수 있는 메서드에 대한 코드를 즉시 생성할 수 있습니다.
 
 **시기:** 기본 클래스 메서드를 재정의하고 시그니처를 자동으로 생성하려고 합니다.
 

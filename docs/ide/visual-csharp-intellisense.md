@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 882e9471646d83434c18f18811f9f6f693d2e551
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 41a4dfa2a904f3fdc09671fd5e9afa0f29c2e9f3
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513402"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160142"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -68,7 +68,7 @@ IntelliSense는 필터를 사용하여 완성 목록에서 불필요한 멤버�
 
 - **개체 이니셜라이저**: 초기화할 수 있는 멤버만 완성 목록에 표시됩니다.
 
-- **new 키워드**: `new`를 입력한 후 **스페이스**를 누르면 완성 목록이 표시됩니다. 코드의 컨텍스트에 따라 항목이 목록에서 자동으로 선택됩니다. 예를 들어 메서드의 선언 문과 반환 문에 대한 항목이 완성 목록에서 자동으로 선택됩니다.
+- **new 키워드**: `new`를 입력한 다음, **스페이스**를 누르면 완성 목록이 표시됩니다. 코드의 컨텍스트에 따라 항목이 목록에서 자동으로 선택됩니다. 예를 들어 메서드의 선언 문과 반환 문에 대한 항목이 완성 목록에서 자동으로 선택됩니다.
 
 - **enum 키워드**: 열거형 할당의 등호 이후에 **스페이스**를 누르면 완성 목록이 표시됩니다. 코드의 컨텍스트에 따라 항목이 목록에서 자동으로 선택됩니다. 예를 들어 return 키워드를 입력한 후 그리고 선언을 만들 때 항목이 완성 목록에서 자동으로 선택됩니다.
 
@@ -165,4 +165,4 @@ IntelliSense는 코드 편집기에서 작업하는 동안 자동으로 추상 �
 ## <a name="see-also"></a>참고 항목
 
 - [IntelliSense 사용](../ide/using-intellisense.md)
-- [Visual Studio IDE](../ide/visual-studio-ide.md)
+- [Visual Studio IDE](../get-started/visual-studio-ide.md)

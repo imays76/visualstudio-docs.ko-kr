@@ -1,23 +1,24 @@
 ---
 title: Azure App Service에 Python 앱 게시
-description: Azure App Service에 Python 앱 게시 옵션
-ms.date: 10/10/2018
+description: Linux용 Git 배포 및 컨테이너를 비롯하여 Azure App Service에 Python 앱을 게시하고 IIS에 배포하기 위한 옵션입니다.
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 050b98f663a1db6bde6d32342b094fe454046283
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
+ms.openlocfilehash: 1c8c48eaa777da973f0a4b21d826bbab384b4536
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459662"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066693"
 ---
 # <a name="publish-to-azure-app-service"></a>Azure App Service에 게시
 

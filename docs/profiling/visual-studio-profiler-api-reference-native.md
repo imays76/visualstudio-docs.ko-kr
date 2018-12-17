@@ -1,6 +1,7 @@
 ---
-title: Visual Studio 프로파일러 API 참조(네이티브) | Microsoft Docs
-ms.custom: ''
+title: Visual Studio 프로파일러 API 참조(네이티브)
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -13,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ba2590c17a41d200f0a8dd3c38c7c9ae8c8a85cc
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: acb85c9994436b2e35a6d4161a579180ad5e0ac5
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572100"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063006"
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Visual Studio 프로파일러 API 참조(네이티브)
 Visual Studio 프로파일러 API를 사용하여 수집된 데이터의 양을 프로그래밍 방식으로 제어하고 프로파일링하는 동안 타임스탬프 및 프로필 표시를 삽입할 수 있습니다. 네이티브 API를 사용하려면 프로젝트에 *VSPerf.h* 헤더 파일을 포함하고 *VSPerf.lib*를 추가합니다.  

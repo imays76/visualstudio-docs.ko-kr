@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 인터페이스 구현
+title: 인터페이스 구현
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9abc1d5fde69127f796dcfcd4c7c09cf8743c915
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 7abe20831c920a0d4fd74f60a75e6112c480ab39
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295425"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068476"
 ---
 # <a name="implement-an-interface-in-visual-studio"></a>Visual Studio에서 인터페이스 구현
 
@@ -24,7 +24,7 @@ ms.locfileid: "51295425"
 
 - Visual Basic
 
-**대상:** 인터페이스를 구현하는 데 필요한 코드를 즉시 생성할 수 있습니다.
+**내용:** 인터페이스를 구현하는 데 필요한 코드를 즉시 생성할 수 있습니다.
 
 **시기:** 인터페이스에서 상속하려고 합니다.
 

@@ -1,7 +1,7 @@
 ---
-title: 방화벽 또는 프록시 서버 배후에서 Visual Studio와 Azure 서비스 설치 및 사용 | Microsoft Docs
+title: 방화벽 또는 프록시 서버 뒤에 설치 및 사용
 description: 조직에서 방화벽 또는 프록시 서버를 사용하는 경우 허용 목록에 추가하거나 열려는 도메인 URL, 포트 및 프로토콜을 검토합니다.
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 07/10/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2636bed20da5af32e011b39cf262349d42ddda55
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 91074815c0723f24bbb89bcb45eafc0fae5866d6
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349571"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160168"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>방화벽 또는 프록시 서버 배후에서 Visual Studio와 Azure 서비스 설치 및 사용
 
@@ -55,7 +55,7 @@ Visual Studio 설치 관리자는 다양한 도메인과 다운로드 서버에�
 | visualstudio.microsoft.com | 문서 위치 |
 | docs.microsoft.com | 문서 위치 |
 | msdn.microsoft.com | 문서 위치 |
-| www.microsoft.com | 문서 위치 |
+| www\.microsoft.com | 문서 위치 |
 | \*.windows.net | 로그인 위치 |
 | \*.microsoftonline.com | 로그인 위치 |
 | \*.live.com | 로그인 위치 |
@@ -72,9 +72,9 @@ Visual Studio 설치 관리자는 다양한 도메인과 다운로드 서버에�
 | download.unity3d.com | Unity를 사용한 게임 개발(Unity) |
 | netstorage.unity3d.com | Unity를 사용한 게임 개발(Unity) |
 | dl.google.com | JavaScript를 사용한 모바일 개발(Android SDK 및 NDK, 에뮬레이터) <br /><br />.NET을 사용한 모바일 개발(Android SDK 및 NDK, 에뮬레이터) |
-| www.incredibuild.com | C++를 사용한 게임 개발(IncrediBuild) |
+| www\.incredibuild.com | C++를 사용한 게임 개발(IncrediBuild) |
 | incredibuildvs2017i.azureedge.net | C++를 사용한 게임 개발(IncrediBuild) |
-| www.python.org | Python 개발(Python) <br /><br />데이터 과학 및 분석 응용 프로그램(Python) |
+| www\.python.org | Python 개발(Python) <br /><br />데이터 과학 및 분석 응용 프로그램(Python) |
 | | |
 
 ## <a name="use-visual-studio-and-azure-services"></a>Visual Studio 및 Azure 서비스 사용

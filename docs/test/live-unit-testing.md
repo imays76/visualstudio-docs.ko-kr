@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 Live Unit Testing
+title: Live Unit Testing
 ms.date: 2017-03-07
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6e0bd322b200fba3bf41f99c4119cbe287ce2967
-ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
+ms.openlocfilehash: 7be078044454ebf5d6b3a6d99a60fff66ab1f69b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42626688"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066212"
 ---
 # <a name="live-unit-testing-with-visual-studio-2017"></a>Visual Studio 2017을 사용한 Live Unit Testing
 
@@ -81,7 +81,7 @@ Live Unit Testing은 다음 테이블에 나열된 세 가지 인기 있는 단�
 - 영구 데이터를 저장할 디렉터리입니다.
 
 - 모든 영구 데이터를 삭제하는 기능입니다. Live Unit Testing이 예측할 수 없거나 예기치 않은 방식으로 동작할 때 유용하며 영구 데이터가 손상되었음을 나타냅니다.
-   
+
 - 테스트 사례의 시간이 초과되는 간격은 기본값 30초입니다.
 
 - Live Unit Testing에서 만든 최대 테스트 프로세스의 수입니다.
@@ -202,5 +202,4 @@ Live Unit Testing이 테스트 결과를 자동으로 실행하고 업데이트�
 - [코드 테스트 도구](https://visualstudio.microsoft.com/vs/testing-tools/)
 - [Live Unit Testing 블로그](https://go.microsoft.com/fwlink/?linkid=842514)
 - [Live Unit Testing FAQ](live-unit-testing-faq.md)
-- [채널 9 비디오: Visual Studio 2017의 Live Unit Testing](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)
-
+- [Channel 9 비디오: Visual Studio 2017의 Live Unit Testing](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)

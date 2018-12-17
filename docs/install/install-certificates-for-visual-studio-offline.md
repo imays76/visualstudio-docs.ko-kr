@@ -1,8 +1,9 @@
 ---
-title: Visual Studio 오프라인 설치에 필요한 인증서 설치 | Microsoft Docs
+title: 오프라인 설치에 필요한 인증서 설치
 description: Visual Studio 오프라인 설치에 대한 인증서를 설치하는 방법을 알아봅니다.
 ms.date: 08/30/2017
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 78e37097aa4181bec86ca901ab29dffa52b4d010
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b2d171082e43e822faa1a9fdf9a88ff4de0b7bff
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886294"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53158894"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Visual Studio 오프라인 설치에 필요한 인증서 설치
 
@@ -79,20 +80,20 @@ Visual Studio 설치 엔진은 신뢰할 수 있는 콘텐츠만 설치합니다
 이 폴더에 있는 세 개의 .P12 파일 각각에는 중간 인증서와 루트 인증서가 포함되어 있습니다. Windows 업데이트로 최신 상태가 유지되는 시스템은 대부분 이러한 인증서가 이미 설치되어 있습니다.
 
 * **ManifestSignCertificates.p12**는 다음을 포함합니다.
-    * 중간 인증서: **Microsoft Code Signing PCA 2011**
+    * 중간 인증서: **Microsoft 코드 서명 PCA 2011**
         * 필요하지 않음. 일부 시나리오(있는 경우)에서 성능을 향상합니다.
-    * 루트 인증서: **Microsoft Root Certificate Authority 2011**
+    * 루트 인증서: **Microsoft 루트 인증 기관 2011**
         * 최신 Windows 업데이트가 설치되지 않은 Windows 7 서비스 팩 1 시스템에 필요합니다.
 * **ManifestCounterSignCertificates.p12**는 다음을 포함합니다.
     * 중간 인증서: **Microsoft Time-Stamp PCA 2010**
         * 필요하지 않음. 일부 시나리오(있는 경우)에서 성능을 향상합니다.
-    * 루트 인증서: **Microsoft Root Certificate Authority 2010**
+    * 루트 인증서: **Microsoft 루트 인증 기관 2010**
         * 최신 Windows 업데이트가 설치되지 않은 Windows 7 서비스 팩 1 시스템에 필요합니다.
 * **Vs_installer_opc.SignCertificates.p12**는 다음을 포함합니다.
-    * 중간 인증서: **Microsoft Code Signing PCA**
+    * 중간 인증서: **Microsoft 코드 서명 PCA**
         * 모든 시스템에 필요합니다. Windows 업데이트의 모든 업데이트가 적용된 시스템에는 이 인증서가 없을 수 있습니다.
-    * 루트 인증서: **Microsoft Root Certificate Authority**
-        * 필수. 이 인증서는 Windows 7 이상을 실행하는 시스템과 함께 제공됩니다.
+    * 루트 인증서: **Microsoft 루트 인증 기관**
+        * 필수 요소. 이 인증서는 Windows 7 이상을 실행하는 시스템과 함께 제공됩니다.
 
 **업데이트**: Visual Studio 2017 버전 15.8 미리 보기 2 이상의 경우, Visual Studio 설치 관리자에서는 시스템에 루트 인증서만 설치해야 합니다.
 

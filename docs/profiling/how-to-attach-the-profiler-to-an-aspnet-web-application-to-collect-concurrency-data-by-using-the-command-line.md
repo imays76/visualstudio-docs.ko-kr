@@ -1,6 +1,6 @@
 ---
-title: '방법: 명령줄을 통해 ASP.NET 웹 응용 프로그램에 프로파일러를 연결하여 동시성 데이터 수집 | Microsoft 문서'
-ms.custom: ''
+title: ASP.NET 앱에 프로파일러를 연결하여 동시성 데이터 수집
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 9c18b96f794f8317dacc890345ae544765bcb204
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c806150acf8fb37ab7e3fd36a879a6c1273b015a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831707"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063359"
 ---
-# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>방법: 명령줄을 통해 ASP.NET 웹 응용 프로그램에 프로파일러를 연결하여 동시성 데이터 수집
+# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>방법: 명령줄을 통해 ASP.NET 웹 애플리케이션에 프로파일러를 연결하여 동시성 데이터 수집
 이 문서에서는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구 명령줄 도구를 사용하여 프로파일러를 ASP.NET 응용 프로그램에 연결하고 프로세스 및 스레드 동시성 데이터를 수집하는 방법을 설명합니다.  
 
  프로파일링 도구의 명령줄 도구는 Visual Studio 설치 디렉터리의 *\Team Tools\Performance Tools* 하위 디렉터리에 있습니다. 64비트 컴퓨터에서는 도구의 64비트 및 32비트 버전을 둘 다 사용할 수 있습니다. 명령 프롬프트에서 프로파일러를 사용하려면 도구 경로를 **명령 프롬프트** 창의 PATH 환경 변수에 추가하거나 명령 자체에 추가해야 합니다. 자세한 내용은 [명령줄 도구의 경로 지정](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)을 참조하세요.  

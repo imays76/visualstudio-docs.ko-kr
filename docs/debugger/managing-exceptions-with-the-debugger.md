@@ -1,6 +1,6 @@
 ---
-title: Visual Studio 디버거를 사용한 예외 관리 | Microsoft Docs
-ms.custom: ''
+title: 디버거를 사용한 예외 관리 | Microsoft Docs
+ms.custom: seodec18
 ms.date: 10/09/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f19bbbfbde9a111c6edea112b7250fca934ac7f7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: HT
+ms.openlocfilehash: 02c7fbfca9a63ac736972ebea01a854e24f90188
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881692"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057920"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Visual Studio에서 디버거를 사용한 예외 관리
 
@@ -47,7 +47,7 @@ ms.locfileid: "49881692"
 
 가장 중요 한 예외에 응답 하는 처리기를 제공 합니다. 또한 항상 몇 가지 예외에 대 한 실행을 중단 하도록 디버거를 구성 하는 방법에 알아봅니다.
 
-예외가 발생 하면 디버거의 예외 메시지가 합니다 **출력** 창입니다. 다음에서 실행을 중단할 수 있으므로 경우 사례:
+예외가 발생하면 디버거가 **출력** 창에 예외 메시지를 씁니다. 다음에서 실행을 중단할 수 있으므로 경우 사례:
 
 - 예외가 처리 되지 않은 throw 됩니다.
 - 디버거는 처리기가 호출 되기 전에 실행을 중단 하도록 구성 됩니다.
@@ -59,7 +59,7 @@ ms.locfileid: "49881692"
 <!-- Two consecutive notes are intentional here...-->
 
 > [!NOTE]
-> Visual Basic 응용 프로그램에서 디버거 On Error 방식 오류 처리기를 사용 하는 경우에 모든 오류를 예외로 관리 합니다.
+> Visual Basic 애플리케이션에서 디버거는 모든 오류를 예외로 관리합니다. 이는 On Error 스타일의 오류 처리기를 사용하는 경우에도 마찬가지입니다.
 
 ## <a name="tell-the-debugger-to-break-when-an-exception-is-thrown"></a>예외가 throw 되 면 중단 하도록 디버거에 지시합니다
 
@@ -74,7 +74,7 @@ ms.locfileid: "49881692"
 
 예외를 선택 합니다 **예외 설정** 창 처리 되는 여부에 상관 없이 예외가 throw 됩니다 때마다 디버거 실행이 중단 됩니다. 이제 예외는 첫 번째 예외가 호출 됩니다. 예를 들어 다음은 몇 가지 시나리오입니다.
 
-- 다음 C# 콘솔 응용 프로그램에서 Main 메서드에 throw를 **AccessViolationException** 안에 `try/catch` 블록입니다.
+- 다음 C# 콘솔 애플리케이션에서 Main 메서드는 `try/catch` 블록 내부에서 **AccessViolationException**을 발생시킵니다.
 
   ```csharp
   static void Main(string[] args)
@@ -125,7 +125,7 @@ ms.locfileid: "49881692"
   }
   ```
 
-  콘솔 응용 프로그램의 main () 메서드는 다음과 같습니다.
+  콘솔 애플리케이션의 Main() 메서드는 다음과 같습니다.
 
   ```csharp
   static void Main(string[] args)
@@ -160,7 +160,7 @@ ASP.NET 웹 응용 프로그램을 HTTP 500 상태 코드를 변환 하 여 예�
 
 ![사용자에서 중단&#45;처리 되지 않은 예외가](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")
 
-## <a name="add-and-delete-exceptions"></a>추가한 예외 삭제
+## <a name="add-and-delete-exceptions"></a>예외 추가 및 삭제
 
 예외를 추가하거나 삭제할 수 있습니다. 예외 형식 범주에서를 삭제 하려면 예외를 선택 하 고 선택 합니다 **목록에서 선택한 예외를 삭제** 단추 (빼기 기호)를 **예외 설정** 도구 모음입니다. 예외를 마우스 오른쪽 단추로 클릭 하 고 선택할 수 있습니다 **삭제** 바로 가기 메뉴에서. 예외를 삭제 하는 것과 동일한 효과가 있는 옵션을 선택 취소 하는 예외 throw 되는 디버거가 중단 되지 않습니다는.
 
@@ -181,9 +181,9 @@ ASP.NET 웹 응용 프로그램을 HTTP 500 상태 코드를 변환 하 여 예�
 GPU 메모리 액세스 예외, JavaScript 런타임 예외 또는 Win32 예외 범주에 예외를 추가 하려면 설명 및 오류 코드를 포함 합니다.
 
 > [!TIP]
-> 맞춤법 검사를 수행합니다. 합니다 **예외 설정** 창 추가 된 예외가 있는지 검사 하지 않습니다. 입력 하는 경우에 따라서 **Sytem.UriTemplateMatchException**, 해당 예외에 대 한 진입점을 받게 됩니다 (아니라 **System.UriTemplateMatchException**).
+> 맞춤법 검사를 수행합니다. **예외 설정** 창에서는 추가된 예외가 있는지 검사하지 않습니다. 따라서 **Sytem.UriTemplateMatchException**을 입력하면 해당 예외에 대한 항목( **System.UriTemplateMatchException**에 대한 항목이 아님)을 얻게 됩니다.
 
-특정 솔루션에 적용 되므로 예외 설정 솔루션의.suo 파일에 유지 됩니다. 솔루션에서 특정 예외 설정을 재사용할 수 없습니다. 이제 추가 된 예외만 유지 됩니다. 삭제 된 예외가 없습니다. 예외를 추가 하 고 솔루션을 다시 열 수 있습니다 및 예외 수 있습니다. 그러나 예외를 삭제한 후 솔루션을 닫았다가 다시 열면 예외가 다시 나타나지 않습니다.
+예외 설정은 솔루션의 .suo파일에 유지되므로 특정 솔루션에 적용됩니다. 특정 예외 설정을 여러 솔루션에서 다시 사용할 수 없습니다. 이제 추가 된 예외만 유지 됩니다. 삭제 된 예외가 없습니다. 예외를 추가 하 고 솔루션을 다시 열 수 있습니다 및 예외 수 있습니다. 그러나 예외를 삭제한 후 솔루션을 닫았다가 다시 열면 예외가 다시 나타나지 않습니다.
 
 **예외 설정** 창은 C#의 일반적인 예외 형식을 지원하지만 Visual Basic의 일반 예외 형식은 지원하지 않습니다. `MyNamespace.GenericException<T>`와 같은 예외에서 실행을 중단하려면 **MyNamespace.GenericException`1**과 같은 예외를 추가해야 합니다. 즉,이 코드 처럼 예외를 만든 경우:
 
@@ -221,10 +221,10 @@ public class GenericException<T> : Exception
 
 4. 조건을 삭제 해야 할 경우 선택 합니다 **X** 조건 줄의 끝입니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [예외 후 실행 계속](../debugger/continuing-execution-after-an-exception.md)<br/>
 [방법: 예외 발생 후 시스템 코드 검사](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
-[방법: 네이티브 런타임 검사 기능 사용](../debugger/how-to-use-native-run-time-checks.md)<br/>
+[방법: 네이티브 런타임 검사 사용](../debugger/how-to-use-native-run-time-checks.md)<br/>
 [C 런타임 라이브러리 없이 런타임 검사 사용](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
-[자습서: Visual Studio를 사용 하 여 디버그 하는 방법을 알아봅니다](../debugger/getting-started-with-the-debugger.md)
+[자습서: Visual Studio를 사용하여 디버깅하는 자세한 내용](../debugger/getting-started-with-the-debugger.md)

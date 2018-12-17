@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 XAML 디자인
+title: XAML 사용
 ms.date: 07/17/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: c23a73302e5d4771b3372b8f4534b42806156da0
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 40b2d37e5b416047aa8a6fecf8c2c9cca0c681ca
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389619"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063000"
 ---
 # <a name="design-xaml-in-visual-studio"></a>Visual Studio에서 XAML 디자인
 
@@ -36,15 +36,15 @@ Visual Studio와 Blend for Visual Studio 간에 전환할 수 있으며, 둘 다
 
 기본적인 작업의 경우 대부분 Visual Studio 및 Blend for Visual Studio용 IDE에서 약간의 차이점은 있지만 동일한 창과 기능 집합을 공유합니다. 중요 사항은 다음과 같습니다.
 
-- **일관된 사용자 인터페이스:** 익숙한 Visual Studio 사용자 인터페이스 컨텍스트 내에서 응용 프로그램을 디자인하여 IDE 간 전환을 더 즐겁고 생산적인 경험으로 만들 수 있습니다. Blend for Visual Studio는 콘텐츠와 사용자 인터페이스 간의 대비를 향상시켜 디자인하는 콘텐츠에 집중할 수 있게 해주는 Visual Studio 어두운 테마를 사용합니다. [XAML 디자이너를 사용하여 UI 만들기](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)를 참조하세요.
+- **일관된 사용자 인터페이스:** 익숙한 Visual Studio 사용자 인터페이스 컨텍스트 내에서 애플리케이션을 디자인하여 IDE 간 전환을 더 즐겁고 생산적인 경험으로 만들 수 있습니다. Blend for Visual Studio는 콘텐츠와 사용자 인터페이스 간의 대비를 향상시켜 디자인하는 콘텐츠에 집중할 수 있게 해주는 Visual Studio 어두운 테마를 사용합니다. [XAML 디자이너를 사용하여 UI 만들기](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)를 참조하세요.
 
      ![Blend for Visual Studio IDE](../designers/media/blendide.png)
 
-- **XAML IntelliSense:** 두 IDE는 모두 문 완성, 코드 주석 처리 및 형식 지정과 같은 일반적인 편집기 작업 지원, 리소스, 바인딩 및 코드 탐색을 포함하여 IntelliSense에서 기대하는 모든 일반적인 기능을 지원합니다.
+- **XAML IntelliSense:** 두 IDE는 모두 명령문 완성, 코드 주석 처리 및 형식 지정과 같은 일반적인 편집기 작업 지원, 리소스, 바인딩 및 코드 탐색을 포함하여 IntelliSense에서 기대하는 모든 일반적인 기능을 지원합니다.
 
 - **기본 디버깅 기능:** 이제 코드에서 중단점을 설정하여 실행 중인 앱 디버그를 포함하여 Blend에서 디버그할 수 있습니다. Visual Studio와 일관된 디버깅 환경을 유지하기 위해 Blend for Visual Studio에는 Visual Studio의 디버깅 창과 도구 모음이 대부분 포함되어 있습니다. 진단 및 코드 분석과 같은 고급 디버깅 기능은 Visual Studio에서만 사용할 수 있습니다. [Visual Studio에서 디버그](../debugger/debugging-in-visual-studio.md)를 참조하세요.
 
-- **파일 다시 로드 환경:** Blend for Visual Studio 또는 Visual Studio 중 하나에서 XAML 파일을 편집한 후 다른 프로그램으로 전환할 때 편집된 파일이 자동으로 다시 로드되도록 할 수 있습니다. 워크플로 중단을 최소화하기 위해 이제 파일 다시 로드 대화 상자에서 파일 다시 로드 기본 설정을 지정할 수 있습니다.
+- **파일 재로드 환경:** Blend for Visual Studio 또는 Visual Studio 중 하나에서 XAML 파일을 편집한 후 다른 프로그램으로 전환할 때 편집된 파일이 자동으로 다시 로드되도록 할 수 있습니다. 워크플로 중단을 최소화하기 위해 이제 파일 다시 로드 대화 상자에서 파일 다시 로드 기본 설정을 지정할 수 있습니다.
 
      ![파일 재로드 경험](../designers/media/blendfilereload.png)
 

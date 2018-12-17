@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 데이터베이스 호환성
+title: 데이터베이스 호환성
 ms.date: 09/06/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,14 +14,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6cb532ee53e61842eb9f36ae0ecd437ef8fe0e0f
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
-ms.translationtype: MT
+ms.openlocfilehash: ddb950fd916df6ff514e13435765b118e1e579dd
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089197"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049562"
 ---
-# <a name="compatible-database-systems-for-visual-studio"></a>Visual Studio에 대 한 호환 되는 데이터베이스 시스템
+# <a name="compatible-database-systems-for-visual-studio"></a>Visual Studio용 호환 데이터베이스 시스템
 
 Visual Studio에서 데이터에 연결 된 응용 프로그램을 개발 하려면 일반적으로 로컬 개발 컴퓨터에 데이터베이스 시스템을 설치 하 고 배포 응용 프로그램 및 데이터베이스를 프로덕션 환경으로 준비 되 면 합니다. Visual Studio의 일부로 컴퓨터에 SQL Server Express LocalDB를 설치 합니다 **데이터 저장소 및 처리** 워크 로드. 이 LocalDB 인스턴스는 쉽고 빠르게 데이터에 연결 된 응용 프로그램을 개발에 유용 합니다.
 
@@ -55,7 +55,7 @@ SQLite는 응용 프로그램의 고유한 프로세스에서 실행 되는 포�
 
 Firebird는 오픈 소스 SQL 데이터베이스 시스템입니다. 다운로드할 수 있습니다 합니다 [Firebird 다운로드 페이지](http://firebirdsql.org/en/downloads/)합니다. ADO.NET 데이터 공급자는 NuGet 패키지 관리자를 통해 사용할 수 있습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio에서 데이터 액세스](../data-tools/accessing-data-in-visual-studio.md)
-- [버전 및 에디션의 SQL Server 및 해당 구성 요소를 확인 하는 방법](http://support.microsoft.com/kb/321185)
+- [SQL Server 및 관련 구성 요소의 버전을 확인하는 방법](http://support.microsoft.com/kb/321185)

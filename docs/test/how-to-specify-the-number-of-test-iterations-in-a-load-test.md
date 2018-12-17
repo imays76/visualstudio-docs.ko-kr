@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 부하 테스트 실행 설정에서 테스트 반복 횟수 지정
+title: 부하 테스트 실행 설정에서 테스트 반복 횟수 지정
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: bba6ddfa9162583d687f6638c9b75e178556132b
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: e250096a99cfc272cd23b58bf0f7b70eeb3a7c9d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894796"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059842"
 ---
 # <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>방법: 부하 테스트 실행 설정에서 테스트 반복 횟수 지정
 

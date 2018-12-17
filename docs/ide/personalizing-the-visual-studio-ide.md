@@ -1,5 +1,5 @@
 ---
-title: Visual Studio IDE 사용자 지정
+title: IDE 사용자 지정
 ms.date: 11/20/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8f52061acff03a1339a9c7b7f3f8ff4901ec6a5
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: cfd3ed3461b40f85e66d62f01e68aff4ce740031
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388727"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159505"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Visual Studio IDE 개인 설정
 
@@ -67,6 +67,6 @@ ms.locfileid: "52388727"
 ## <a name="see-also"></a>참고 항목
 
 - [환경 설정](environment-settings.md)
-- [Visual Studio IDE 개요](../ide/visual-studio-ide.md)
+- [Visual Studio IDE 개요](../get-started/visual-studio-ide.md)
 - [빠른 시작: 먼저 Visual Studio IDE 살펴보기](../ide/quickstart-ide-orientation.md)
 - [Mac용 Visual Studio IDE 사용자 지정](/visualstudio/mac/customizing-the-ide)

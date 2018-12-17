@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f6b0855b18f12bd80ad17c5b544a95e5ee57de9
-ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.openlocfilehash: 31b6812ec41aedd4e33eb0d043476365d3938767
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821372"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160025"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>완전 초보자를 위한 디버깅하는 방법
 
@@ -66,7 +66,7 @@ ms.locfileid: "52821372"
 
 *디버깅 모드*라고도 하는 디버거 내의 앱 실행은 디버거가 프로그램이 실행될 때 발생하는 모든 것을 적극적으로 모니터링하는 것을 의미합니다. 또한 해당 상태를 검사하기 위해 언제든지 앱을 일시 중지한 다음, 코드를 줄 단위로 단계별로 실행하여 발생하는 모든 세부 사항을 살펴볼 수 있습니다.
 
-Visual Studio에서 디버그 도구 모음의 **F5**(또는 **디버그** > **디버깅 시작** 메뉴 명령 또는 **디버깅 시작**  단추 ![디버깅 시작](../debugger/media/dbg-tour-start-debugging.png "디버깅 시작"))를 사용하여 디버깅 모드로 전환합니다. 예외가 발생하는 경우 Visual Studio의 예외 도우미는 예외가 발생한 정확한 지점으로 안내하고 기타 유용한 정보를 제공합니다.
+Visual Studio에서 디버그 도구 모음의 **F5**(또는 **디버그** > **디버깅 시작** 메뉴 명령 또는 **디버깅 시작**  단추 ![디버깅 시작](../debugger/media/dbg-tour-start-debugging.png "디버깅 시작")를 사용하여 디버깅 모드로 전환합니다). 예외가 발생하는 경우 Visual Studio의 예외 도우미는 예외가 발생한 정확한 지점으로 안내하고 기타 유용한 정보를 제공합니다.
 
 예외가 발생하지 않은 경우 코드에서 문제를 찾을 수 있는 위치를 알고 있을 것입니다. 이는 코드를 더 신중하게 검사하는 기회를 제공하도록 디버거와 함께 *중단점*을 사용하는 위치입니다. 중단점은 신뢰할 수 있는 디버깅의 가장 기본적이 고 필수적인 기능입니다. 중단점은 변수의 값, 메모리의 동작 또는 코드가 실행되는 시퀀스를 확인할 수 있도록 Visual Studio에서 실행 중인 코드를 일시 중단해야 하는 위치를 나타냅니다.
 
@@ -78,11 +78,11 @@ Visual Studio에서 코드 줄 옆의 왼쪽 여백을 클릭하여 중단점을
 
 다음으로 몇 가지 버그가 있는 애플리케이션을 만듭니다.
 
-1. Visual Studio가 설치되어 있어야 하며 만들려는 앱 형식에 따라 .**NET 데스크톱 개발** 워크로드 또는 . **.NET Core 플랫폼 간 개발** 워크로드가 설치되어 있어야 합니다.
+1. Visual Studio가 설치되어 있어야 하며 만들려는 앱 형식에 따라 **.NET 데스크톱 개발** 워크로드 또는 **.NET Core 플랫폼 간 개발** 워크로드가 설치되어 있어야 합니다.
 
     아직 Visual Studio를 설치하지 않은 경우  [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  페이지로 이동하여 체험용으로 설치합니다.
 
-    워크로드를 설치해야 하지만 이미 Visual Studio가 있는 경우 **도구** > **도구 및 기능 가져오기**를 클릭합니다. Visual Studio 설치 관리자가 시작됩니다. .**NET 데스크톱 개발**(또는 **.NET Core 플랫폼 간 개발**) 워크로드를 선택한 다음, **수정**을 선택합니다.
+    워크로드를 설치해야 하지만 이미 Visual Studio가 있는 경우 **도구** > **도구 및 기능 가져오기**를 클릭합니다. Visual Studio 설치 관리자가 시작됩니다. **.NET 데스크톱 개발**(또는 **.NET Core 플랫폼 간 개발**) 워크로드를 선택한 다음, **수정**을 선택합니다.
 
 1. Visual Studio를 연 다음, **파일** > **새로 만들기** > **프로젝트**를 선택합니다.
 

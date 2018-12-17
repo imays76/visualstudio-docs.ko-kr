@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 부하 테스트에 대한 가상 사용자 동작 분석
+title: 부하 테스트에 대한 가상 사용자 작업 분석
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6737a5b12b9205e5d6ed3ddde6de89e820d92fce
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 0cac452a7fa4799c986df0f182643ed1b94afbe6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895238"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059524"
 ---
-# <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>방법: 가상 사용자 동작 차트를 사용하여 부하 테스트 중에 가상 사용자가 수행하는 작업 분석
+# <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>방법: 가상 사용자 작업 차트를 사용하여 부하 테스트 중에 가상 사용자가 수행하는 작업 분석
 
 **가상 사용자 동작 차트**를 사용하여 부하 테스트와 관련된 가상 사용자 동작을 확인합니다. 차트의 각 행은 개별 가상 사용자를 나타냅니다. **가상 사용자 동작 차트**에는 각 가상 사용자가 테스트 중에 실행한 작업이 정확하게 표시됩니다. 사용자 동작의 패턴(부하 패턴)을 확인하고, 실패했거나 느린 테스트를 연결하고, 다른 가상 사용자 동작 요청을 확인할 수 있습니다. **가상 사용자 동작 차트**는 부하 테스트 실행을 완료한 이후에만 사용할 수 있습니다.
 
@@ -108,4 +108,4 @@ ms.locfileid: "52895238"
 ## <a name="see-also"></a>참고 항목
 
 - [세부 정보 뷰에서 가상 사용자 동작 분석](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
-- [연습: 가상 사용자 동작 차트를 사용하여 문제 격리](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)
+- [연습: 가상 사용자 작업 차트를 사용하여 문제 격리](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)

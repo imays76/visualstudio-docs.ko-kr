@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 부하 테스트에 대한 사용자 지정 코드 및 플러그 인 만들기
+title: 부하 테스트에 대한 사용자 지정 코드 및 플러그 인 만들기
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ed7b588d597626348b4c148c10dad165649b0468
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: e138445989477fe4ead6fde0dc000430626c2638
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895758"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062747"
 ---
 # <a name="create-custom-code-and-plug-ins-for-load-tests"></a>부하 테스트에 대한 사용자 지정 코드 및 플러그 인 만들기
 
@@ -33,7 +33,7 @@ ms.locfileid: "52895758"
 |**부하 테스트에 대한 사용자 지정 플러그 인 만들기**: 부하 테스트 API를 사용하여 사용자 지정 플러그 인을 만들어 부하 테스트에 더 많은 기능을 추가할 수 있습니다.|-   [방법: 부하 테스트 API 사용](../test/how-to-use-the-load-test-api.md)<br />-   [방법: 부하 테스트 플러그 인 만들기](../test/how-to-create-a-load-test-plug-in.md)|
 |**웹 성능 테스트에 대한 사용자 지정 플러그 인 만들기:** 웹 성능 테스트 API를 사용하여 사용자 지정 플러그 인을 만들어 웹 성능 테스트에 요청 수준을 비롯한 더 많은 기능을 추가할 수 있습니다. 웹 서비스 테스트를 만들 수도 있습니다.<br /><br /> 또한 웹 성능 테스트가 기록된 후 웹 성능 테스트 결과 뷰어에 나타나기 전에 이 웹 성능 테스트를 수정할 수 있는 웹 레코더 플러그 인을 만들 수 있습니다.|-   [방법: 웹 성능 테스트 API 사용](../test/how-to-use-the-web-performance-test-api.md)<br />-   [방법: 웹 성능 테스트 플러그 인 만들기](../test/how-to-create-a-web-performance-test-plug-in.md)<br />-   [방법: 요청 수준 플러그 인 만들기](../test/how-to-create-a-request-level-plug-in.md)<br />-   [방법: 웹 서비스 테스트 만들기](../test/how-to-create-a-web-service-test.md)<br />-   [방법: 레코더 플러그 인 만들기](../test/how-to-create-a-recorder-plug-in.md)|
 |**웹 성능 테스트 결과 뷰어에 UI 기능 추가:** Visual Studio 추가 기능을 사용하여 웹 성능 테스트 결과 뷰어에 더 많은 UI 기능을 추가할 수 있습니다.|-   [방법: 웹 성능 테스트 결과 뷰어에 대한 Visual Studio 추가 기능 만들기](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)|
-|**사용자 지정 HTTP 본문 편집기 만들기:** 사용자 지정 편집기를 만들어 웹 서비스의 이진 또는 문자열 HTTP XML 응답을 편집할 수 있습니다.|-   [방법: 웹 성능 테스트 편집기에 대한 사용자 지정 HTTP 본문 편집기 만들기](../test/how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor.md)|
+|**사용자 지정 HTTP 본문 편집기 만들기:** 사용자 지정 편집기를 만들어 웹 서비스의 이진 또는 문자열 http XML 응답을 편집할 수 있습니다.|-   [방법: 웹 성능 테스트 편집기에 대한 사용자 지정 HTTP 본문 편집기 만들기](../test/how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor.md)|
 
 ## <a name="reference"></a>참조
 

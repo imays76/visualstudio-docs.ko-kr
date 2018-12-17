@@ -1,7 +1,7 @@
 ---
-title: Visual Studio의 오프라인 설치 만들기
+title: 오프라인 설치 만들기
 description: 불안정한 인터넷 연결 또는 낮은 대역폭이 있는 경우 Visual Studio를 오프라인으로 설치하는 방법에 알아봅니다.
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 08/28/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
@@ -16,18 +16,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f29c364bdd5fc0ea5d08a9862a71d7697197b438
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: 37d218893ab16a8d0907e608ebeb3b02ab944385
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826758"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159986"
 ---
 # <a name="create-an-offline-installation-of-visual-studio-2017"></a>Visual Studio 2017의 오프라인 설치 만들기
 
 Visual Studio 2017은 다양한 네트워크 및 컴퓨터 구성에서 제대로 작동하도록 설계되었습니다. 가능한 한 [Visual Studio 웹 설치 관리자](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)를 사용하는 것이 좋습니다. &mdash;이 파일은 작은 파일이며 최신 수정 사항 및 기능을 최신 상태로 유지할 수 있습니다&mdash;.
 
-예를 들어, 불안정한 인터넷 연결이나 대역폭이 낮을 수 있습니다. 이 경우 새로운 "모두 다운로드한 후 설치" 기능을 사용하여 설치하기 전에 파일을 다운로드하거나 명령줄을 사용하여 파일의 로컬 캐시를 만드는 몇 가지 옵션이 있습니다.
+예를 들어, 불안정한 인터넷 연결이나 대역폭이 낮을 수 있습니다. 이 경우 몇 가지 옵션이 있습니다. 새로운 "모두 다운로드한 후 설치" 기능을 사용하여 설치하기 전에 파일을 다운로드하거나 명령줄을 사용하여 파일의 로컬 캐시를 만들 수 있습니다.
 
 > [!NOTE]
 > 인터넷에서 방화벽이 사용되는 클라이언트 워크스테이션의 네트워크에 대해 Visual Studio 2017의 배포를 수행하려고 하는 엔터프라이즈 관리자인 경우 [Visual Studio 2017의 네트워크 설치 만들기](../install/create-a-network-installation-of-visual-studio.md) 및 [Visual Studio 오프라인 설치에 필요한 인증서 설치](../install/install-certificates-for-visual-studio-offline.md) 페이지를 참조하세요.
@@ -35,7 +35,7 @@ Visual Studio 2017은 다양한 네트워크 및 컴퓨터 구성에서 제대�
 ## <a name="use-the-download-all-then-install-feature"></a>"모두 다운로드한 후 설치" 기능 사용
 
 [**15.8의 새로운 기능**](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017#install
-): 웹 설치 관리자를 다운로드한 후 Visual Studio에서 새로운 **모두 다운로드한 후 설치** 옵션을 선택합니다. 그런 다음, 설치를 계속합니다.
+): 웹 설치 관리자를 다운로드한 후 Visual Studio에서 새로운 **모두 다운로드한 다음, 설치** 옵션을 선택합니다. 그런 다음, 설치를 계속합니다.
 
    !["모두 다운로드한 후 설치" 옵션](media/download-all-then-install.png)
 

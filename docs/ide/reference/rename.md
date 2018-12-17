@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 이름 바꾸기 리팩터링
+title: 리팩터링 이름 바꾸기
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4cde6fb353db2fc018104a031dd17b943b2b2247
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 02b08f3218ab6f1380884d2385899d6dd486bb81
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295958"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063155"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>코드 기호 이름 바꾸기 래픽터링
 
@@ -29,7 +29,7 @@ ms.locfileid: "51295958"
 
 - Visual Basic
 
-**대상:** 필드, 지역 변수, 메서드, 네임스페이스, 속성 및 형식과 같은 코드 기호의 식별자 이름을 바꿀 수 있습니다.
+**내용:** 필드, 지역 변수, 메서드, 네임스페이스, 속성 및 형식과 같은 코드 기호의 식별자 이름을 바꿀 수 있습니다.
 
 **시기:** 모든 인스턴스를 찾지 않고도 안전하게 이름을 바꾸고 새 이름을 복사하여 붙여넣으려고 합니다.
 

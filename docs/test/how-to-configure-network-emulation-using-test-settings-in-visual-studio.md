@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 테스트 설정을 사용하여 네트워크 에뮬레이션 구성
+title: 테스트 설정을 사용하여 네트워크 에뮬레이션 구성
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d58bf2bc321b3041ffa0958786b976276acf0186
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 032eff41f0e6b6366e5eb56dad591a02ebde4984
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896304"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065897"
 ---
 # <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>방법: Visual Studio에서 테스트 설정을 사용하여 네트워크 에뮬레이션 구성
 
@@ -78,12 +78,12 @@ Visual Studio는 모든 테스트 형식에 소프트웨어 기반의 진정한 
 
 4.  테스트 설정에 네트워크 에뮬레이션 진단 데이터 어댑터를 포함하고 있는 경우 이 어댑터를 로컬 컴퓨터에서 사용하려면 네트워크 에뮬레이션 드라이버를 해당 컴퓨터의 네트워크 어댑터 중 하나에 바인딩해야 합니다. 네트워크 에뮬레이션 드라이버는 네트워크 에뮬레이션 진단 데이터 어댑터를 사용하는 데 필요합니다. 다음 두 가지 방법으로 네트워크 에뮬레이션 드라이버를 설치하고 어댑터에 바인딩합니다.
 
-    -   **Microsoft Visual Studio Test Agent과 함께 설치된 네트워크 에뮬레이션 드라이버:** 원격 컴퓨터와 로컬 컴퓨터에서 Microsoft Visual Studio Test Agent를 사용할 수 있습니다. Visual Studio Test Agent를 설치하는 경우 네트워크 에뮬레이션 드라이버를 네트워크 카드에 바인딩하는 구성 단계가 설치 프로세스에 포함됩니다. 자세한 내용은 [테스트 에이전트 설치 및 구성](../test/lab-management/install-configure-test-agents.md)을 참조하세요.
+    -   **Microsoft Visual Studio 테스트 에이전트와 함께 설치된 네트워크 에뮬레이션 드라이버:** Microsoft Visual Studio 테스트 에이전트는 원격 머신과 로컬 머신 모두에서 사용할 수 있습니다. Visual Studio Test Agent를 설치하는 경우 네트워크 에뮬레이션 드라이버를 네트워크 카드에 바인딩하는 구성 단계가 설치 프로세스에 포함됩니다. 자세한 내용은 [테스트 에이전트 설치 및 구성](../test/lab-management/install-configure-test-agents.md)을 참조하세요.
 
     -   **Microsoft Visual Studio Test Professional과 함께 설치된 네트워크 에뮬레이션 드라이버:** 네트워크 에뮬레이션을 처음 사용하는 경우 네트워크 에뮬레이션 드라이버를 네트워크 카드에 바인딩하라는 메시지가 표시됩니다.
 
     > [!TIP]
-    > **VSTestConfig NETWORKEMULATION /install** 명령을 사용하여 Visual Studio 테스트 에이전트를 설치하지 않고 로컬 컴퓨터의 명령줄에서 네트워크 에뮬레이션 드라이버를 설치할 수도 있습니다.
+    > 다음 명령을 사용하여 Visual Studio 테스트 에이전트를 설치하지 않고 로컬 머신의 명령줄에서 네트워크 에뮬레이션 드라이버를 설치할 수도 있습니다. **VSTestConfig NETWORKEMULATION /install**
 
 ## <a name="see-also"></a>참고 항목
 

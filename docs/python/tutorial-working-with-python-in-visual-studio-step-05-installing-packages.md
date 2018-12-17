@@ -1,5 +1,6 @@
 ---
-title: Python 작업 자습서, 5단계, 패키지 설치
+title: Visual Studio 자습서 5단계에서 Python 패키지 설치
+titleSuffix: ''
 description: Visual Studio의 Python 기능에 대한 핵심 연습의 5단계로, Python 환경에서 패키지를 관리하는 Visual Studio의 기능을 보여줍니다.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +9,16 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 82cb54eb64d0864ba3b1d326d68f7303d3f2d882
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 81dccdb276596e96e1a7064f796afa43de79f032
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220510"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067290"
 ---
 # <a name="step-5-install-packages-in-your-python-environment"></a>5단계: Python 환경에서 패키지 설치
 

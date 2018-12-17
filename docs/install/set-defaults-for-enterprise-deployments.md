@@ -1,8 +1,9 @@
 ---
-title: Visual Studio의 엔터프라이즈 배포에 대한 기본값 설정
+title: 엔터프라이즈 배포에 대한 기본값 설정
 description: Visual Studio의 엔터프라이즈 배포에 대한 도메인 정책 및 기타 구성 작업에 대해 알아봅니다.
 ms.date: 05/05/2017
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
@@ -17,14 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5689a273ac5f80b3468b9020825b980b88966e3b
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: a173a378ba2165963b8ea9b44e7391807584886b
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43139218"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159557"
 ---
-# <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>Visual Studio의 엔터프라이즈 배포에 대한 기본값 설정
+# <a name="set-defaults-for-enterprise-deployments-of-visual-studio-2017"></a>Visual Studio 2017의 엔터프라이즈 배포에 대한 기본값 설정
 
 Visual Studio의 배포에 영향을 주는 레지스트리 정책을 설정할 수 있습니다. 이러한 정책은 새 설치 관리자에 전체적으로 적용되고 다음에 영향을 줍니다.
 

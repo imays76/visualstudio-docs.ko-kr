@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 부하 테스트에 웹 캐시 데이터를 사용하는 가상 사용자 비율 지정
+title: 부하 테스트에 웹 캐시 데이터를 사용하는 가상 사용자 비율 지정
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1178cd08bf8d12b4fba61e858ca5631d103292c2
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 2195b99658d05e9e73a86cf723fcb8e9d4f36bd4
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895576"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060241"
 ---
 # <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>방법: 웹 캐시 데이터를 사용하는 가상 사용자 비율 지정
 
@@ -51,7 +51,7 @@ ms.locfileid: "52895576"
 ## <a name="see-also"></a>참고 항목
 
 - [부하 테스트 시나리오 편집](../test/edit-load-test-scenarios.md)
-- [연습: 부하 테스트 생성 및 실행](../test/walkthrough-create-and-run-a-load-test.md)
+- [연습: 부하 테스트 만들기 및 실행](../test/walkthrough-create-and-run-a-load-test.md)
 - [테스트 컨트롤러 및 테스트 에이전트](configure-test-agents-and-controllers-for-load-tests.md)
 - [부하 테스트 시나리오 속성](../test/load-test-scenario-properties.md)
 - [모델 가상 사용자 동작에 대한 부하 패턴 편집](../test/edit-load-patterns-to-model-virtual-user-activities.md)

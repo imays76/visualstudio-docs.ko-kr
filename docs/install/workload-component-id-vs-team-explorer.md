@@ -1,5 +1,6 @@
 ---
 title: Visual Studio Team Explorer 2017 워크로드 및 구성 요소 ID
+titleSuffix: ''
 description: Visual Studio 작업 및 구성 요소 ID를 사용하여 테스터를 위한 통합된 테스트 도구를 제공합니다.
 keywords: ''
 author: TerryGLee
@@ -17,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: c6ef9a3b-d13d-49b4-9faa-51fa06b21e1f
 ms.workload:
 - multiple
-ms.openlocfilehash: 57d34c8ea2c79c9d9444e553d37da353e4e3ece3
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 7b54e0f73f4f0d504df3757ffc881b2282fc9471
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607447"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066108"
 ---
 # <a name="visual-studio-team-explorer-2017-component-directory"></a>Visual Studio Team Explorer 2017 구성 요소 디렉터리
 
@@ -43,7 +44,7 @@ VSIX 매니페스트에 종속성을 설정하는 경우 구성 요소 ID만 지
 
 **ID:** Microsoft.VisualStudio.Workload.CoreEditor
 
-**설명:** 구문 인식 코드 편집, 원본 코드 제어 및 작업 항목 관리를 포함하는 Visual Studio 핵심 셸 환경입니다.
+**설명:** 구문 인식 코드 편집, 소스 코드 제어, 작업 항목 관리 등을 포함하는 Visual Studio 코어 셸 환경입니다.
 
 ### <a name="components-included-by-this-workload"></a>이 작업에 포함되는 구성 요소
 

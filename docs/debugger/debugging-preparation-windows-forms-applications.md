@@ -1,6 +1,6 @@
 ---
-title: '디버깅 준비: Windows Forms 응용 프로그램 | Microsoft Docs'
-ms.custom: ''
+title: Windows Forms 앱을 디버깅 하려면 준비 | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -21,17 +21,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c4dc7cb560e6ae652474d16e003eafb352643ea
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: HT
+ms.openlocfilehash: d441da0fd7a9342ef7b64f47374dc2ca61706db7
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951069"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066420"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>디버깅 준비: Windows Forms 응용 프로그램
 Windows Forms 프로젝트 템플릿은 Windows Forms 응용 프로그램을 만듭니다. 이러한 형식의 응용 프로그램은 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서 쉽게 디버깅할 수 있습니다. 자세한 내용은 [Windows 응용 프로그램 프로젝트를 만드는](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))합니다.  
   
- 프로젝트 템플릿을 사용하여 Windows Forms 프로젝트를 만들면 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서는 디버그 및 릴리스 구성에 필요한 설정을 자동으로 만듭니다. 필요하면 이 설정을 변경할 수 있습니다. 이러한 설정을 변경할 수 있습니다 합니다  **\<프로젝트 이름 > 속성 페이지** 대화 상자 (**My Project** Visual basic에서).  
+ 프로젝트 템플릿을 사용하여 Windows Forms 프로젝트를 만들면 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서는 디버그 및 릴리스 구성에 필요한 설정을 자동으로 만듭니다. 필요하면 이 설정을 변경할 수 있습니다. 이러한 설정은 **\<프로젝트 이름> 속성 페이지** 대화 상자(Visual Basic의 **내 프로젝트**)에서 변경할 수 있습니다.  
   
  자세한 내용은 [권장 속성 설정](../debugger/managed-debugging-recommended-property-settings.md)합니다.  
   
@@ -41,7 +41,7 @@ Windows Forms 프로젝트 템플릿은 Windows Forms 응용 프로그램을 만
   
 |**속성 이름**|**설정**|  
 |-----------------------|-----------------|  
-|**시작 작업**|-로 설정 합니다. **시작 프로젝트** 대부분의 시간입니다. 로 **시작 외부 프로그램** 다른 실행을 시작 하려는 경우 시작할 때 디버깅 (일반적으로 Dll 디버깅) 합니다.|  
+|**시작 작업**|-   대부분의 경우 **시작 프로젝트**로 설정합니다. 디버깅(일반적으로 DLL 디버깅)을 시작할 때 다른 실행 파일을 시작하려면 **시작 외부 프로그램**으로 설정합니다.|  
   
  Windows Forms 응용 프로그램을 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 내에서 디버깅하거나 이미 실행 중인 응용 프로그램에 연결하여 디버깅할 수 있습니다. 연결에 대 한 자세한 내용은 참조 하세요. [실행 중인 프로세스에 연결](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)합니다.  
   
@@ -61,7 +61,7 @@ Windows Forms 프로젝트 템플릿은 Windows Forms 응용 프로그램을 만
   
       자세한 내용은 [Windows Forms에서 이벤트 처리기 만들기](/dotnet/framework/winforms/creating-event-handlers-in-windows-forms)를 참조하세요.  
   
-3. 에 **디버그** 메뉴에서 클릭 **시작**합니다.  
+3. **디버그** 메뉴에서 **시작**을 클릭합니다.  
   
 4. 에 설명 된 기술을 사용 하 여 디버깅할 [디버거 기본 사항](../debugger/getting-started-with-the-debugger.md)합니다.  
   

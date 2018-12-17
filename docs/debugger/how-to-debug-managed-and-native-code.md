@@ -1,7 +1,7 @@
 ---
-title: '자습서: 관리 및 네이티브 코드 디버그(혼합 모드)'
+title: '자습서: C# 및 C++ 코드 디버그(혼합 모드)'
 description: 혼합 모드 디버깅을 사용하여 .NET Core 또는 .NET Framework 앱에서 네이티브 DLL을 디버그하는 방법 알아보기
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 11/02/2018
 ms.technology: vs-ide-debug
 ms.topic: tutorial
@@ -16,12 +16,12 @@ manager: douge
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: dc115cc833bbf50e8f6ae1f1e3207d3acfd6b2d1
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 690d607bb62b322cf7fa07e5c45aa59924d29c71
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257279"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051455"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>자습서: 동일한 디버깅 세션에서 C# 및 C++ 디버그
 

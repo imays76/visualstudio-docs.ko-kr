@@ -1,5 +1,6 @@
 ---
 title: Visual Studio Test Controller 2017 워크로드 및 구성 요소 ID
+titleSuffix: ''
 description: Visual Studio 작업 및 구성 요소 ID를 사용하여 자동화된 테스트를 여러 컴퓨터에 배포합니다.
 keywords: ''
 author: TerryGLee
@@ -17,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: fbbda9c8-d2c6-474d-b52d-a95227d52fe7
 ms.workload:
 - multiple
-ms.openlocfilehash: de9dae76799080baf773600cea7155162c9fe618
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 48d95724c64d1335067139a8e036febdef137d52
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607532"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048449"
 ---
 # <a name="visual-studio-test-controller-2017-component-directory"></a>Visual Studio Test Controller 2017 구성 요소 디렉터리
 
@@ -43,7 +44,7 @@ VSIX 매니페스트에 종속성을 설정하는 경우 구성 요소 ID만 지
 
 **ID:** Microsoft.VisualStudio.Workload.TestController
 
-**설명:** 자동화된 테스트를 여러 컴퓨터에 배포합니다.
+**설명:** 자동화된 테스트를 여러 컴퓨터에 배포
 
 ### <a name="components-included-by-this-workload"></a>이 작업에 포함되는 구성 요소
 

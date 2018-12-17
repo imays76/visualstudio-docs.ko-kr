@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 부하 테스트의 페이지 응답 시간
+title: 부하 테스트의 페이지 응답 시간
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9740d26ef99c10bb9ec84afa23b998f6e1467f40
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 73ba296be1c001415746145c7bcf4d13c8b25053
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895264"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068097"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>방법: 부하 테스트 분석기를 사용하여 부하 테스트의 웹 페이지 응답 시간 보기
 
@@ -61,7 +61,7 @@ ms.locfileid: "52895264"
    |**Max**|페이지의 최대 응답 시간입니다.<br /><br /> 기본적으로 이 데이터는 수집되지 않습니다. 이 데이터를 수집하려면 **부하 테스트 편집기**의 **실행 설정** 노드 아래에서 변경할 실행 설정 노드를 선택합니다. **속성** 창에서 **타이밍 정보 저장소** 속성으로 **AllIndividualDetails**를 선택합니다.|
    |**표준 편차**|기본적으로 표준 편차 데이터는 수집되지 않습니다. 이 데이터를 수집하려면 **부하 테스트 편집기**의 **실행 설정** 노드 아래에서 변경할 실행 설정 노드를 선택합니다. **속성** 창에서 **타이밍 정보 저장소** 속성으로 **AllIndividualDetails**를 선택합니다.|
    |**페이지 시간**|웹 페이지에 대한 모든 요청의 평균 응답 시간입니다.|
-   |**목표**|페이지 시간 목표입니다. 이는 페이지의 상수 값입니다. **참고:** 페이지 시간 목표는 웹 성능 테스트에서 요청에 목표가 정의된 경우에만 표시됩니다.|
+   |**목표**|페이지 시간 목표입니다. 이는 페이지의 상수 값입니다. **참고:**  페이지 시간 목표는 웹 성능 테스트에서 요청에 목표가 정의된 경우에만 표시됩니다.|
    |**목표 만족 %**|웹 페이지에 대한 요청 중 응답 시간 목표를 충족한 백분율입니다.|
 
    자세한 내용은 [테이블 뷰에서 부하 테스트 결과 및 오류 분석](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)을 참조하세요.

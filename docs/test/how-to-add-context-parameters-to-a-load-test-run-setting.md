@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 부하 테스트 실행 설정에 컨텍스트 매개 변수 추가
+title: 부하 테스트 실행 설정에 컨텍스트 매개 변수 추가
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c351079f0a29176ded3172d6e0e26893a1163354
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: cefa93a6f65b4b84b4ece5a4eb428d909dd0596d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894107"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048496"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>방법: 부하 테스트 실행 설정에 컨텍스트 매개 변수 추가
 
@@ -38,9 +38,9 @@ ms.locfileid: "52894107"
 
 또한 다음과 같이 다른 부하 테스트 실행 설정에서 동일한 이름을 사용하는 컨텍스트 매개 변수에 다른 값을 할당하면 부하 테스트를 다른 환경에서 실행할 수 있습니다.
 
-- 회사 스테이징 웹 서버 실행 설정: `WebServer1=http://CorporateStagingWebServer`라는 컨텍스트 매개 변수
+- 기업 스테이징 웹 서버 실행 설정: `WebServer1=http://CorporateStagingWebServer`라는 컨텍스트 매개 변수
 
-- 회사 프로덕션 웹 서버 실행 설정: `WebServer1=http://CorporateProductionWebServer`라는 컨텍스트 매개 변수
+- 기업 프로덕션 웹 서버 실행 설정: `WebServer1=http://CorporateProductionWebServer`라는 컨텍스트 매개 변수
 
   **명령줄에서 실행 설정 변경**
 

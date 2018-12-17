@@ -1,5 +1,6 @@
 ---
-title: 자습서 - Visual Studio의 Django 알아보기, 2단계
+title: Visual Studio 2단계, 보기 및 페이지 템플릿에서 Django 자습서 알아보기
+titleSuffix: ''
 description: Visual Studio 프로젝트 컨텍스트에서 Django 기본 사항을 검토하는 연습 과정으로, 앱을 만들고 보기 및 템플릿을 사용하는 단계를 구체적으로 설명합니다.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +9,16 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 404df36ab28e422e081df7d7cdf4831f8c2f64a0
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: dade4ee20aec654a32fac6904cca121c2ea726e6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001284"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058547"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>2단계: 보기 및 페이지 템플릿을 사용하여 Django 앱 만들기
 
@@ -247,7 +249,7 @@ Django 페이지 템플릿은 `{{ content }}`에서처럼 `{{` 및 `}}`로 표�
 
     ![템플릿을 사용하여 앱 실행](media/django/step02-result.png)
 
-1. <a name="template-namespacing"></a>Visual Studio 2017 버전 15.7 이전: 마지막 단계로 앱과 동일한 이름의 하위 폴더로 템플릿을 이동하여 네임스페이스를 만들고 프로젝트에 추가할 수 있는 다른 앱과의 잠재적인 충돌을 방지합니다. (VS 2017 15.8+의 템플릿은 이 작업을 자동으로 수행합니다.) 즉, *HelloDjangoApp*이라는 *templates*의 하위 폴더를 만들고, *index.html*을 해당 하위 폴더로 이동하고, 템플릿의 새 경로인 *HelloDjangoApp/index.html*을 참조하도록 `index` 보기 함수를 수정합니다. 그런 다음, 프로젝트를 실행하고 페이지가 올바르게 렌더링되는지 확인한 후 서버를 중지합니다.
+1. <a name="template-namespacing"></a>Visual Studio 2017 버전 15.7 이하: 마지막 단계로 앱과 동일한 이름의 하위 폴더로 템플릿을 이동하여 네임스페이스를 만들고 프로젝트에 추가할 수 있는 다른 앱과의 잠재적인 충돌을 방지합니다. (VS 2017 15.8+의 템플릿은 이 작업을 자동으로 수행합니다.) 즉, *HelloDjangoApp*이라는 *templates*의 하위 폴더를 만들고, *index.html*을 해당 하위 폴더로 이동하고, 템플릿의 새 경로인 *HelloDjangoApp/index.html*을 참조하도록 `index` 보기 함수를 수정합니다. 그런 다음, 프로젝트를 실행하고 페이지가 올바르게 렌더링되는지 확인한 후 서버를 중지합니다.
 
 1. 원하는 경우 [2-2단계](#commit-to-source-control)에 설명된 대로 변경 내용을 소스 제어에 커밋하고 원격 리포지토리를 업데이트합니다.
 

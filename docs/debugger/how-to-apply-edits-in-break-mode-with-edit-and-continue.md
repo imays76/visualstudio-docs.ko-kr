@@ -1,6 +1,6 @@
 ---
-title: '방법: 편집을 사용 하 여 중단 모드에서 편집을 적용 하 고 계속 | Microsoft Docs'
-ms.custom: ''
+title: 편집 하며 계속 하기를 사용 하 여 중단 모드에서 편집 적용 | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f45b2a64e7602d038a12f436019a8f99e352aa26
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: 51a69414a8b61368cbb492494187567554f98e4c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257074"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063728"
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>방법: 편집을 사용 하 여 중단 모드에서 편집을 적용 하 고 계속 하기 (Visual Basic)
 편집하며 계속하기를 사용하면 실행을 중지한 후에 다시 시작하지 않고도 중단 모드에서 코드를 편집한 다음 계속 진행할 수 있습니다.  
@@ -40,11 +40,11 @@ ms.locfileid: "52257074"
   
 1.  다음 중 한 가지 방법으로 중단 모드를 시작합니다.  
   
-    -   선택한 코드에서 중단점을 설정 **디버깅 시작** 에서 합니다 **디버그** 메뉴와 응용 프로그램이 중단점에 도달할 때까지 기다립니다.  
+    -   코드에 중단점을 설정한 다음, **디버그** 메뉴에서 **디버깅 시작**을 선택하고 애플리케이션이 중단점에 도달할 때까지 기다립니다.  
   
          또는  
   
-    -   디버깅을 시작 하 고 선택한 **모두 중단** 에서 합니다 **디버그** 메뉴.  
+    -   디버깅을 시작한 다음, **디버그** 메뉴에서 **모두 중단**을 선택합니다.  
   
          또는  
   
@@ -57,7 +57,7 @@ ms.locfileid: "52257074"
     > [!NOTE]
     >  편집하며 계속하기에서 허용되지 않는 코드 변경 작업을 수행하면 자주색 물결선이 편집 내용 아래에 밑줄로 표시되고 해당 작업이 작업 목록에 나타납니다. 잘못된 코드 변경 내용을 취소하지 않으면 코드 실행을 계속 진행할 수 없습니다.  
   
-3.  에 **디버그** 메뉴에서 클릭 **계속** 실행을 다시 시작 합니다.  
+3.  **디버그** 메뉴에서 **계속**을 클릭하여 실행을 다시 시작합니다.  
   
      적용한 편집 내용이 프로젝트에 통합된 상태로 코드가 실행됩니다.  
   

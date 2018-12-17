@@ -1,5 +1,5 @@
 ---
-title: '방법: Visual Studio에서 부하 테스트 결과의 사용자 지정 그래프에서 만들기'
+title: '방법: 부하 테스트 결과에서 사용자 지정 그래프 만들기'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7973fbf5ac81da2ba603aacb201b7592e602969e
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: c65b9ad5c6a9d554f2c71cc5d17c63ce9368df2c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895823"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055402"
 ---
 # <a name="how-to-create-custom-graphs-in-load-test-results"></a>방법: 부하 테스트 결과에서 사용자 지정 그래프 만들기
 

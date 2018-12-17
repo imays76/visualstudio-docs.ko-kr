@@ -1,5 +1,5 @@
 ---
-title: Visual Studio의 부하 테스트 결과 그래프 확대
+title: 부하 테스트 결과 그래프 확대
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: aa5f6b3c5f4069a0b62fa6433c8ecef527558a0d
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 558d6429c5d92f833e81074fe928436ab6e7f30e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895888"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064895"
 ---
 # <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>방법: 부하 테스트 결과에서 그래프의 지역으로 확대
 

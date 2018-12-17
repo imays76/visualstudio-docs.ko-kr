@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 부하 테스트에 대한 테스트 에이전트 및 테스트 컨트롤러 구성
+title: 부하 테스트에 대한 데스트 에이전트 및 테스트 컨트롤러 구성
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 363aac5bc07b49670cb35f5f1080f7835e7c4701
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 1f33859522ff42fc85c31261527f17ea0f765199
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895641"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068019"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>부하 테스트 실행에 대한 테스트 에이전트 및 테스트 컨트롤러 구성
 
@@ -43,17 +43,17 @@ Visual Studio 는 실제 또는 가상 머신을 사용하여 앱에 대해 시�
 
    **로컬 구성:**
 
-  - 컴퓨터1: Visual Studio, 컨트롤러, 에이전트
+  - 머신1: Visual Studio, 컨트롤러, 에이전트.
 
     ![컨트롤러 및 에이전트를 사용하는 로컬 컴퓨터](./media/load-test-configa.png)
 
     **일반 원격 구성:**
 
-  - 컴퓨터1 및 컴퓨터2: Visual Studio(여러 테스터가 같은 컨트롤러를 사용할 수 있음)
+  - 머신1 및 2: Visual Studio(여러 테스터가 동일한 컨트롤러를 사용할 수 있음).
 
-  - 컴퓨터3: 컨트롤러(여기에도 에이전트가 설치되어 있을 수 있음)
+  - 머신3: 컨트롤러(여기에도 에이전트가 설치되어 있을 수 있음).
 
-  - 컴퓨터4-n: 컴퓨터3의 컨트롤러와 모두 연결된 에이전트
+  - 머신4-n: 머신3의 컨트롤러와 모두 연결된 에이전트.
 
     ![컨트롤러 및 에이전트를 사용하는 원격 컴퓨터](./media/load-test-configb.png)
 

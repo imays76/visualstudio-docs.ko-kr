@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 컴파일 및 빌드
+title: 컴파일 빌드
 ms.date: 07/14/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d2ad9e3e6644f3f0ffc2d4fbf163968f16065f3
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 7681ad9cd109dbc8da266721d9d8382d3552eda6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349135"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062595"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Visual Studio에서 컴파일 및 빌드
 
@@ -26,7 +26,7 @@ ms.locfileid: "51349135"
 
 코드를 자주 빌드하면 잘못된 구문, 맞춤법 오류가 있는 키워드 및 형식 불일치와 같은 컴파일 시간 오류를 빠르게 식별할 수 있습니다. 디버그 버전의 코드를 빌드하고 실행하면 논리 오류 및 의미 오류와 같은 런타임 오류도 찾아 해결할 수 있습니다.
 
-성공적인 빌드를 위해서는 애플리케이션의 소스 코드에 올바른 구문이 포함돼 있어야 하고 라이브러리, 어셈블리 및 기타 구성 요소에 대한 모든 정적 참조를 확인해야 합니다. 애플리케이션 실행 파일이 생성되면 [디버깅 환경](../debugger/index.md)과 다양한 수동/자동 테스트 환경 모두에서 해당 파일이 제대로 작동하는지 테스트하여 [코드 품질의 유효성을 검사](../test/improve-code-quality.md)할 수 있습니다. 애플리케이션이 완전히 테스트되면 고객에게 배포할 릴리스 버전을 컴파일할 수 있습니다. 이 프로세스에 대한 개요는 [연습: 응용 프로그램 빌드](../ide/walkthrough-building-an-application.md)를 참조하세요.
+성공적인 빌드를 위해서는 애플리케이션의 소스 코드에 올바른 구문이 포함돼 있어야 하고 라이브러리, 어셈블리 및 기타 구성 요소에 대한 모든 정적 참조를 확인해야 합니다. 애플리케이션 실행 파일이 생성되면 [디버깅 환경](../debugger/index.md)과 다양한 수동/자동 테스트 환경 모두에서 해당 파일이 제대로 작동하는지 테스트하여 [코드 품질의 유효성을 검사](../test/improve-code-quality.md)할 수 있습니다. 애플리케이션이 완전히 테스트되면 고객에게 배포할 릴리스 버전을 컴파일할 수 있습니다. 이 프로세스에 대한 개요는 [연습: 애플리케이션 빌드](../ide/walkthrough-building-an-application.md)를 참조하세요.
 
 Visual Studio IDE, MSBuild 명령줄 도구 및 Azure Pipelines와 같은 방법 중 하나를 사용하여 응용 프로그램을 빌드할 수 있습니다.
 
@@ -45,7 +45,7 @@ Visual Studio IDE, MSBuild 명령줄 도구 및 Azure Pipelines와 같은 방법
 
 사용자가 프로젝트를 만드는 경우 Visual Studio에서 해당 프로젝트와 프로젝트가 포함된 솔루션에 대해 기본 빌드 구성을 만듭니다.  이러한 구성은 솔루션 및 프로젝트를 빌드하고 배포하는 방법을 정의합니다. 특히 프로젝트 구성은 대상 플랫폼(예: Windows 또는 Linux) 및 빌드 형식(예: 디버그 또는 릴리스)에 대해 고유합니다. 사용자는 원하는 방식으로 이러한 구성을 편집할 수도 있고, 필요에 따라 고유한 구성을 만들 수도 있습니다.
 
-IDE에서 빌드하는 방법에 대한 가장 기본적인 개요는 [연습: 응용 프로그램 빌드](walkthrough-building-an-application.md)를 참조하세요.
+IDE 내에서 빌드하는 방법에 대한 가장 기본적인 개요는 [연습: 애플리케이션 빌드](walkthrough-building-an-application.md)를 참조하세요.
 
 그런 다음 [Visual Studio에서 프로젝트 및 솔루션 빌드 및 정리](building-and-cleaning-projects-and-solutions-in-visual-studio.md)를 참조하여 프로세스에 대해 수행할 수 있는 다양한 측면의 사용자 지정 작업에 대해 알아보세요. 사용자 지정 작업으로는 [출력 디렉터리 변경](how-to-change-the-build-output-directory.md), [사용자 지정 빌드 이벤트 지정](specifying-custom-build-events-in-visual-studio.md), [프로젝트 종속성 관리](how-to-create-and-remove-project-dependencies.md), [빌드 로그 파일 관리](how-to-view-save-and-configure-build-log-files.md) 및 [컴파일러 경고 표시 안 함](how-to-suppress-compiler-warnings.md)이 있습니다.
 

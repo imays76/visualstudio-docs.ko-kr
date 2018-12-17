@@ -8,16 +8,17 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: cae15da8b6a59587037171ae982ee77d2cce2861
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
+ms.openlocfilehash: 083deb7b836bfae0b0c1352430ffb6ed4080c3dc
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459965"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248207"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>Windows의 Azure App Service에 게시
 
@@ -80,7 +81,7 @@ Azure에 게시하려면 대상 App Service가 필요합니다. 이 목적의 �
 
 Visual Studio 2017에서 Azure App Service에 게시하려면 프로젝트의 복사본 파일만 서버에 복사합니다. 따라서 서버 환경을 구성하는 데 필요한 파일을 만들어야 합니다.
 
-1. Visual Studio **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가 > 새 항목...* 을 선택합니다. 나타나는 대화 상자에서 “Azure web.config(빠른 CGI)” 템플릿을 선택하고 확인을 선택합니다. 그러면 프로젝트 루트에 `web.config` 파일이 만들어집니다.
+1. Visual Studio **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가 > 새 항목...** 을 선택합니다. 나타나는 대화 상자에서 “Azure web.config(빠른 CGI)” 템플릿을 선택하고 확인을 선택합니다. 그러면 프로젝트 루트에 `web.config` 파일이 만들어집니다.
 
 1. 경로가 서버의 Python 설치와 일치하도록 `web.config`에서 `PythonHandler` 항목을 수정합니다. 정확한 정보는 [IIS 구성 참조](https://www.iis.net/configreference)(iis.net)를 참조하세요. 예를 들어 Python 3.6.1 x64의 경우 항목은 다음과 같아야 합니다.
 
@@ -103,7 +104,7 @@ Visual Studio 2017에서 Azure App Service에 게시하려면 프로젝트의 �
         <add key="WSGI_HANDLER" value="app.wsgi_app()"/>
         ```
 
-    - **Flask**: `<project_name>`이 프로젝트의 이름과 일치하는 `<project_name>.app`으로 `WSGI_HANDLER` 값을 변경합니다. `runserver.py`의 `from <project_name> import app` 문을 살펴보면 정확한 식별자를 찾을 수 있습니다. 예를 들어 프로젝트 이름이 “FlaskAzurePublishExample”인 경우 항목은 다음과 같이 표시됩니다.
+    - **Flask**: `WSGI_HANDLER` 값을 `<project_name>.app`으로 변경합니다. 여기서 `<project_name>`은 프로젝트 이름과 일치합니다. `runserver.py`의 `from <project_name> import app` 문을 살펴보면 정확한 식별자를 찾을 수 있습니다. 예를 들어 프로젝트 이름이 “FlaskAzurePublishExample”인 경우 항목은 다음과 같이 표시됩니다.
 
         ```xml
         <!-- Flask apps only: change the project name to match your app -->
@@ -184,7 +185,7 @@ Visual Studio 2017에서 Azure App Service에 게시하려면 프로젝트의 �
 ## <a name="publishing-to-app-service---visual-studio-2015"></a>App Service에 게시 - Visual Studio 2015
 
 > [!Note]
-> 이 프로세스의 짧은 동영상은 [Visual Studio Python 자습서: 웹 사이트 빌드](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6)(youtube.com, 3분 10초)에서 찾을 수 있습니다.
+> 이 프로세스에 대한 짧은 비디오는 [Visual Studio Python 자습서: 웹 사이트 빌드](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6)(youtube.com, 3분 10초)에서 볼 수 있습니다.
 
 1. **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **게시**를 선택합니다.
 

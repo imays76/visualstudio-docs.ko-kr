@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 전체 화면 및 가상 공간 모드
+title: 전체 화면 및 가상 공간 모드
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -26,12 +26,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94bc99bf70340ef76639d0ae0f05e1f7737173a2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e5250176bee4993f9d01bffcaed71579c17e55c9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943350"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53056310"
 ---
 # <a name="how-to-manage-editor-modes"></a>방법: 편집기 모드 관리
 

@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b5429ccc963923a049d54ad3fbaa409586c0f772
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 84e93d06e294ef11cc345eb4c443845421a8f834
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219252"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067805"
 ---
 # <a name="use-ipython-in-the-interactive-window"></a>대화형 창에서 IPython 사용
 
@@ -79,9 +80,9 @@ IPython 모드의 Visual Studio **대화형** 창은 사용자에게 친숙한 �
 
 8. **대화형** 창 외부에서 그래프를 보려면 **디버그** > **디버깅하지 않고 시작** 명령을 사용하는 대신 코드를 실행합니다.
 
-IPython에는 시스템 셸로 이스케이프, 변수 대체, 캡처 출력과 같은 다른 여러 유용한 기능이 있습니다. 자세한 내용은 [IPython 설명서](http://ipython.org/documentation.html)를 참조하세요.
+IPython에는 시스템 셸로 이스케이프, 변수 대체, 캡처 출력과 같은 다른 여러 유용한 기능이 있습니다. 자세한 내용은 [IPython 설명서](https://ipython.org/documentation.html)를 참조하세요.
 
-### <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고 항목
 
 - 설치하지 않고 쉽게 Jupyter를 사용하려면 노트북을 유지하고 다른 사용자와 공유할 수 있도록 해주는 무료 [Azure Notebook 호스티드 서비스](https://notebooks.azure.com/)를 시도해보세요.
 

@@ -1,6 +1,6 @@
 ---
 title: Python 검색 경로를 적용하는 방법
-description: Visual Studio가 환경 및 프로젝트 모두에서 Python 검색 경로를 사용하는 방법 개요.
+description: Visual Studio는 시스템 전체 변수 사용을 피하기 위해 환경 및 프로젝트에 대한 검색 경로를 지정하는 보다 구체적인 방법을 제공합니다.
 ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ab55c7cf1daa02416e6192a02a01ee3f9a35f6f0
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: e3e6bd1ce14e1803e48a476246e3cfb8858286bb
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607903"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051531"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Visual Studio에서 Python 검색 경로를 사용하는 방법
 
@@ -26,7 +27,7 @@ ms.locfileid: "51607903"
 1. 실행 중인 Python 코드를 포함하는 폴더입니다.
 1. 적용 가능한 환경 변수에 정의된 “모듈 검색 경로” 입니다. (코어 Python 설명서의 [모듈 검색 경로](https://docs.python.org/2/tutorial/modules.html#the-module-search-path) 및 [환경 변수](https://docs.python.org/2/using/cmdline.html#envvar-PYTHONPATH) 참조)
 
-그러나 Visual Studio에서는 변수가 전체 시스템에 대해 설정된 경우에도 검색 경로 환경 변수를 무시합니다. 실제로 이렇게 무시되는 이유는 엄밀히 말해 전체 시스템에 대해 설정되었고, 따라서 자동으로 해결할 수 없는 다음과 같은 특정 질문이 제기되기 *때문입니다*. 참조된 모듈이 Python 2.7 또는 Python 3.6용인가요? 이 모듈이 표준 라이브러리 모듈을 재정의하게 되는가? 개발자가 이 동작을 알고 있는가 아니면 악의적인 하이재킹 시도인가?
+그러나 Visual Studio에서는 변수가 전체 시스템에 대해 설정된 경우에도 검색 경로 환경 변수를 무시합니다. 실제로, 엄밀히 말해 전체 시스템에 대해 설정되었고, 자동으로 응답할 수 없는 특정 질문이 제기되기 *때문에* 무시됩니다. 참조된 모듈은 Python 2.7 또는 Python 3.6+용임을 의미하나요? 이 모듈이 표준 라이브러리 모듈을 재정의하게 되는가? 개발자가 이 동작을 알고 있는가 아니면 악의적인 하이재킹 시도인가?
 
 따라서 Visual Studio에서는 환경 및 프로젝트 모두에서 검색 경로를 직접 지정하는 방법을 제공합니다. Visual Studio에서 실행하거나 디버그하는 코드는 `PYTHONPATH` 값으로 검색 경로(및 기타 동등한 변수)를 받습니다. Visual Studio는 검색 경로를 추가하여 해당 위치의 라이브러리를 검사하고 필요한 경우(Visual Studio 2017 버전 15.5 및 이전 버전) 라이브러리에 대한 IntelliSense 데이터베이스를 빌드합니다(라이브러리 수에 따라 데이터베이스를 구성하는 데 다소 시간이 걸릴 수 있음).
 
