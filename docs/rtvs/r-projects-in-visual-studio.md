@@ -10,12 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 154243351f3ff3e7babc502c2cf96dea6bcf5bf0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f91d105d1c7b5b60d74dae2f9669a18f8ec064c8
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813848"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248285"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Visual Studio에서 R 프로젝트 만들기
 
@@ -63,7 +63,7 @@ R 프로젝트(*.rxproj* 파일)는 프로젝트와 관련된 모든 소스 및 
 
 ## <a name="project-properties"></a>프로젝트 속성
 
-프로젝트 속성 페이지를 열려면 **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택하거나, **프로젝트 > (프로젝트 이름) 속성* 메뉴 항목을 선택합니다. 창이 열리면 프로젝트 속성이 표시됩니다.
+프로젝트 속성 페이지를 열려면 **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택하거나, **프로젝트 > (프로젝트 이름) 속성** 메뉴 항목을 선택합니다. 창이 열리면 프로젝트 속성이 표시됩니다.
 
 
 | 탭 | 속성 | 설명 | 

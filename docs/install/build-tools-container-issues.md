@@ -1,9 +1,9 @@
 ---
 title: 컨테이너에 대한 알려진 문제
 description: Windows 컨테이너에 Visual Studio Build Tools 2017을 설치할 경우 발생할 수 있는 알려진 문제에 대해 자세히 알아봅니다.
-ms.custom: ''
 ms.date: 04/18/2018
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 140083f1-05bc-4014-949e-fb5802397c7a
@@ -12,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c94c6756e1272b08136f624e9cde63523d630b35
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 529d967f34a5c99c8416058acad317cdc47d1053
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43139147"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53158621"
 ---
 # <a name="known-issues-for-containers"></a>컨테이너에 대한 알려진 문제
 

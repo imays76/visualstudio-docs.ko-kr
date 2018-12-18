@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 부하 테스트 실행 설정에 대한 타이밍 정보 저장소 속성
+title: 부하 테스트 실행 설정에 대한 타이밍 정보 스토리지 속성
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e184db43fcaca96008f85daffdb9abdbc41df07b
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 6c82d0898f53bbe9c02126f7379d2d3a0a96fdbf
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895225"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53054586"
 ---
-# <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>방법: 부하 테스트 실행 설정에 대한 타이밍 정보 저장소 속성 지정
+# <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>방법: 부하 테스트 실행 설정에 대한 타이밍 정보 스토리지 속성 지정
 
 **부하 테스트 새로 만들기 마법사**를 사용하여 부하 테스트를 만든 다음, **부하 테스트 편집기**를 사용하여 테스트 요구 사항 및 목표에 맞게 설정을 변경할 수 있습니다.
 
@@ -33,7 +33,7 @@ ms.locfileid: "52895225"
 
 - **없음:** 개별 타이밍 정보를 수집하지 않습니다. 그러나 이 경우에도 평균값은 사용할 수 있습니다.
 
-- **통계만:** 개별 타이밍 데이터를 백분위수 데이터로만 저장합니다. 따라서 공간 리소스가 절약됩니다.
+- **통계에만 해당:** 개별 타이밍 데이터를 백분위수 데이터로만 저장합니다. 따라서 공간 리소스가 절약됩니다.
 
   **타이밍 정보 저장소 속성에 대한 고려 사항**
 

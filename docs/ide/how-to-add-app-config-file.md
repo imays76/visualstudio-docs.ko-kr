@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 프로젝트에 app.config 파일을 추가하는 방법
+title: 프로젝트에 app.config 파일을 추가하는 방법
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: b2182b0175d57d7283e63bdf408249fa7566da00
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5c1a35622ba23558d33966ba918aa457c0f49d24
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31941976"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065166"
 ---
-# <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>방법: C# 프로젝트에 응용 프로그램 구성 파일 추가
+# <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>방법: C# 프로젝트에 애플리케이션 구성 파일 추가
 
 C# 프로젝트에 응용 프로그램 구성 파일(*app.config* 파일)을 추가하면 공용 언어 런타임에서 어셈블리 파일을 찾고 로드하는 방법을 사용자 지정할 수 있습니다. 응용 프로그램 구성 파일에 대한 자세한 내용은 [런타임에서 어셈블리를 찾는 방법(.NET Framework)](/dotnet/framework/deployment/how-the-runtime-locates-assemblies)을 참조하세요.
 

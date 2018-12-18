@@ -1,6 +1,6 @@
 ---
-title: Python 코드 디버깅
-description: 중단점 설정, 단계별 실행, 값 검사, 예외 확인, 대화형 창에서 디버깅을 포함하여 특히 Python 코드에 대한 Visual Studio의 디버깅 기능 연습입니다.
+title: Python 코드 디버그
+description: Visual Studio는 중단점 설정, 단계별 실행, 값 검사, 예외 확인, 대화형 창에서 디버깅을 포함하여 Python 코드에 대한 풍부한 디버깅 기능을 제공합니다.
 ms.date: 10/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 52869de661d9818252b68271c089f6b04a0b9f00
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 0e4cc2ff43b59fff0aac70d9cc13a0a00662e209
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101162"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068437"
 ---
 # <a name="debug-your-python-code"></a>Python 코드 디버그
 
@@ -54,7 +55,7 @@ Visual Studio에서는 실행 중인 프로세스에 연결하고, **조사식**
 
 중단점은 프로그램 상태를 검사할 수 있도록 표시된 지점에서 코드 실행을 중지합니다. 코드 편집기의 왼쪽 여백을 클릭하거나 코드 줄을 마우스 오른쪽 단추로 클릭하고 **중단점** > **중단점 삽입**을 선택하여 중단점을 설정합니다. 각 행에 중단점과 함께 빨간색 점이 표시됩니다.
 
-![Visual Studio의 중단점](media/debugging-breakpoints.png)
+![Visual Studio에 표시되는 중단점](media/debugging-breakpoints.png)
 
 빨간색 점을 클릭하거나 코드 줄을 마우스 오른쪽 단추로 클릭하고 **중단점** > **중단점 삭제**를 선택하면 중단점이 제거됩니다. 제거하는 대신, **중단점** > **중단점 사용 안 함** 명령을 통해 사용하지 않도록 설정할 수도 있습니다.
 
@@ -87,27 +88,27 @@ Visual Studio에서는 실행 중인 프로세스에 연결하고, **조사식**
 
 **DataTips**를 사용하여 값을 보려면 편집기에서 변수 위로 마우스를 이동하면 됩니다. 값을 클릭하여 변경할 수 있습니다.
 
-![디버거의 DataTips](media/debugging-quick-tips.png)
+![Visual Studio 디버거에 표시되는 데이터 팁](media/debugging-quick-tips.png)
 
 **자동** 창(**디버그** > **창** > **자동**)에는 현재 명령문에 가까운 변수와 식이 포함되어 있습니다. 값 열을 두 번 클릭하거나 선택하고 **F2** 키를 눌러 값을 편집할 수 있습니다.
 
-![디버거의 자동 창](media/debugging-autos-window.png)
+![Visual Studio 디버거의 자동 창](media/debugging-autos-window.png)
 
 **로컬** 창(**디버그** > **창** > **로컬**)에는 현재 범위에 있는 모든 변수가 표시되며 다시 편집될 수 있습니다.
 
-![디버거의 지역 창](media/debugging-locals-window.png)
+![Visual Studio 디버거의 로컬 창](media/debugging-locals-window.png)
 
 **자동** 및 **로컬**을 사용하는 방법에 대한 자세한 내용은 [자동 및 로컬 창에서 변수 검사](../debugger/autos-and-locals-windows.md)를 참조하세요.
 
 **조사식** 창(**디버그** > **창** > **조사식** > **조사식 1-4**)을 사용하면 임의의 Python 식을 입력하고 결과를 볼 수 있습니다. 식은 각 단계마다 다시 계산됩니다.
 
-![디버거의 조사식 창](media/debugging-watch-window.png)
+![Visual Studio 디버거의 조사식 창](media/debugging-watch-window.png)
 
 **조사식**을 사용하는 방법에 대한 자세한 내용은 [조사식 및 간략한 조사식 창을 사용하여 변수에 대한 조사식 설정](../debugger/watch-and-quickwatch-windows.md)을 참조하세요.
 
 문자열 값(`str`, `unicode`, `bytes` 및 `bytearray`는 모두 이 목적을 위한 문자열로 간주됨)을 검사하면 값의 오른쪽에 돋보기 모양 아이콘이 나타납니다. 아이콘을 클릭하면 팝업 대화 상자에서 따옴표가 없는 문자열 값이 줄 바꿈 및 스크롤과 함께 표시되며, 긴 문자열에 유용합니다. 또한 아이콘의 드롭다운 화살표를 선택하면 일반 텍스트, HTML, XML 및 JSON 시각화를 선택할 수 있습니다.
 
-![문자열 시각화 도우미](media/debugging-string-visualizers.png)
+![Visual Studio 디버거의 문자열 시각화 도우미](media/debugging-string-visualizers.png)
 
 HTML, XML 및 JSON 시각화는 구문 강조 표시 및 트리 보기가 있는 별도의 팝업 창에 표시됩니다.
 
@@ -115,13 +116,13 @@ HTML, XML 및 JSON 시각화는 구문 강조 표시 및 트리 보기가 있는
 
 디버그하는 동안 프로그램에서 오류가 발생하지만 이 오류에 대한 예외 처리기가 없으면 디버거가 예외 지점에서 중단됩니다.
 
-![예외 팝업](media/debugging-exception-popup.png)
+![Visual Studio 디버거에서 예외 팝업](media/debugging-exception-popup.png)
 
 이 지점에서 호출 스택을 포함하여 프로그램 상태를 검사할 수 있습니다. 그러나 코드를 단계별로 실행하려고 하면 예외를 처리하거나 프로그램을 종료할 때까지 예외가 계속 throw됩니다.
 
 **디버그** > **창** > **예외 설정** 메뉴 명령은 **Python 예외**를 확장할 수 있는 창을 엽니다.
 
-![예외 창](media/debugging-exception-settings.png)
+![Visual Studio 디버거의 예외 창](media/debugging-exception-settings.png)
 
 각 예외의 확인란은 예외가 발생했을 때 디버거가 *항상* 중단되는지 여부를 제어합니다. 특정 예외에 대해 더 자주 중단하려는 경우 이 상자를 선택합니다.
 
@@ -133,7 +134,7 @@ HTML, XML 및 JSON 시각화는 구문 강조 표시 및 트리 보기가 있는
 
 기본적으로 디버거는 표준 Python 시작 관리자를 통해 명령줄 인수와 다른 특수 경로나 조건이 없는 프로그램을 시작합니다. 시작 옵션은 **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고, **속성**을 선택하고, **디버그** 탭을 선택하여 액세스한 프로젝트의 디버그 속성을 통해 변경됩니다.
 
-![프로젝트 디버그 속성](media/debugging-project-properties.png)
+![Visual Studio 디버거의 프로젝트 디버그 속성](media/debugging-project-properties.png)
 
 ### <a name="launch-mode-options"></a>실행 모드 옵션
 

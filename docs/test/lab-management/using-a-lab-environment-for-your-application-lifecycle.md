@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 Devops에 랩 환경 사용
+title: devops에 랩 환경 사용
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: dc7351c9449993b624569cc13ac5ced7d169b129
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 45be33245e559cb5027124b4678984ece076e1cf
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837115"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061156"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Devops에 랩 환경 사용
 
@@ -79,7 +79,7 @@ Visual Studio Lab Management를 사용하여 만들 수 있는 랩 환경에는 
 
 - **환경 스냅숏:** 환경 스냅숏에는 랩 환경의 상태가 포함되어 있으므로 새로운 환경을 신속하게 복원하거나 수정된 환경의 상태를 저장할 수 있습니다. 또한 빌드-배포-테스트 워크플로를 사용하여 환경 스냅숏에 대한 저장 및 복원 프로세스를 자동화할 수 있습니다.
 
-- **저장 환경:** SCVMM 환경의 복사본을 저장한 다음 해당 환경의 복사본 여러 개를 배포할 수 있습니다.
+- **저장 환경:** SCVMM 환경의 복사본을 저장한 다음, 해당 환경의 복사본 여러 개를 배포할 수 있습니다.
 
 - **네트워크 격리:** 네트워크 격리를 사용하면 SCVMM 환경에 대한 동일한 복사본 여러 개를 컴퓨터 이름 충돌 없이 동시에 실행할 수 있습니다.
 

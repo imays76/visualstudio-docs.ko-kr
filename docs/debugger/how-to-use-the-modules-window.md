@@ -1,6 +1,7 @@
 ---
-title: 모듈 창에서 Dll 및 실행 파일 보기 | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: Dll 및 실행 파일을 보려면
+titleSuffix: Visual Studio Modules window
+ms.custom: seodec18
 ms.date: 11/04/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -25,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 33a09fe01157e0e3f5493568437c1499f2831bdb
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: 2702eb38e895f5fa9021fae754ae1e4a9325cf18
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257292"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066784"
 ---
 # <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>모듈 창에서 Dll 및 실행 파일 보기 (C#, c + +, Visual Basic의 경우 F#)
  
@@ -43,13 +44,13 @@ Visual Studio 디버그 하는 동안 합니다 **모듈** 창을 나열 하 고
 
 디버깅할 때 모듈 창에서 열려는 선택 **디버깅할** > **Windows** > **모듈**합니다. 
   
-기본적으로 **모듈** 창에서는 모듈이 로드 순서 대로 정렬 합니다. 창 열별로 정렬 하려면 열 맨 위에 있는 헤더를 선택 합니다.  
+기본적으로 **모듈** 창에서는 모듈이 로드 순서대로 정렬됩니다. 창 열별로 정렬 하려면 열 맨 위에 있는 헤더를 선택 합니다.  
   
 ## <a name="load-symbols"></a>기호 로드  
 
 합니다 **기호 상태** 열에는 **모듈** 창 디버깅 기호가 로드 된 모듈을 보여 줍니다. 상태가 **기호 로드를 건너뛰었습니다**를 **찾거나 PDB 파일을 열 수 없습니다**, 또는 **포함/제외 설정으로 로드가 비활성화 되었습니다**, 기호를 수동으로 로드할 수 있습니다. 로드 및 기호를 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [기호 (.pdb) 및 원본 파일 지정](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)합니다.
 
-**수동으로 기호를 로드 합니다.**  
+**기호를 수동으로 로드하려면**  
 
 1. 에 **모듈** 창, 기호에 대 한 모듈이 로드 되지 않은 마우스 오른쪽 단추로 클릭 합니다. 
    
@@ -63,7 +64,7 @@ Visual Studio 디버그 하는 동안 합니다 **모듈** 창을 나열 하 고
 
 **기호 로드 동작 설정을 변경 합니다.**  
 
-1. 에 **모듈** 창에서 모든 모듈을 마우스 오른쪽 단추로 클릭 합니다.  
+1. **모듈** 창에서 모듈을 마우스 오른쪽 단추로 클릭합니다.  
    
 1. 선택 **기호 설정**합니다.  
   
@@ -73,11 +74,11 @@ Visual Studio 디버그 하는 동안 합니다 **모듈** 창을 나열 하 고
   
 **기호 로드를 특정 모듈에 대 한 동작 변경:**  
 
-1.  에 **모듈** 창 모듈을 마우스 오른쪽 단추로 클릭 합니다.  
+1.  **모듈** 창에서 모듈을 마우스 오른쪽 단추로 클릭합니다.  
 
 1.  오른쪽 클릭 메뉴에서 선택 하거나 선택 취소 **항상 자동 부하**합니다. 변경 내용은 다음 디버깅 세션에 적용 합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [실행 중단](/previous-versions/visualstudio/visual-studio-2010/7z9se2d8(v=vs.100))   
  [디버거에서 데이터 보기](../debugger/viewing-data-in-the-debugger.md)   
- [기호 (.pdb) 및 원본 파일 지정](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+ [기호 파일(.pdb) 및 원본 파일 지정](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

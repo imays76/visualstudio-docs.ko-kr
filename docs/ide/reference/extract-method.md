@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 메서드 추출
+title: 메서드 추출
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6978457fdc976f87a8334b181ab69dfd78ef240c
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: b80b5053022b9e42bb6cfd30e3c76a72bef70746
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294542"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064616"
 ---
 # <a name="extract-a-method-refactoring"></a>메서드 추출 리팩터링
 
@@ -29,7 +29,7 @@ ms.locfileid: "51294542"
 
 - Visual Basic
 
-**대상:** 코드 조각을 고유한 메서드로 변환할 수 있습니다.
+**내용:** 코드 조각을 고유한 메서드로 변환할 수 있습니다.
 
 **시기:** 다른 메서드에서 호출해야 하는 일부 메서드에 기존 코드 조각이 있습니다.
 

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 C++ DLL에 대한 단위 테스트 작성
+title: C++ DLL의 단위 테스트 작성
 ms.date: 11/04/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,26 +9,26 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 829882cf3504583a4e9dbc3532c900df26a921f2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 045f33c2afcb4f37f5ab81beb21e778edbdd1a61
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862530"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53056177"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Visual Studio에서 C++ DLL에 대한 단위 테스트 작성
 
  테스트할 함수를 내보낼지 여부에 따라 DLL 코드를 테스트하는 방법에는 여러 가지가 있습니다. 다음 방법 중 하나를 선택합니다.
 
- **단위 테스트가 DLL에서 내보낸 함수만 호출:** [C/C++용 단위 테스트 작성](writing-unit-tests-for-c-cpp.md)에 설명된 대로 별도 테스트 프로젝트를 추가합니다. 테스트 프로젝트에서 DLL 프로젝트에 대한 참조를 추가합니다.
+ **단위 테스트가 DLL에서 내보낸 함수만 호출:** [C/C++에 대한 단위 테스트 작성](writing-unit-tests-for-c-cpp.md)에서 설명한 대로 별도의 테스트 프로젝트를 추가합니다. 테스트 프로젝트에서 DLL 프로젝트에 대한 참조를 추가합니다.
 
  [DLL 프로젝트에서 내보낸 함수를 참조하려면](#projectRef) 절차로 이동합니다.
 
- **DLL이 .exe 파일로 빌드:** 별도 테스트 프로젝트를 추가합니다. 출력 개체 파일에 연결합니다.
+ **DLL이 .exe 파일로 빌드:** 개별 테스트 프로젝트를 추가합니다. 출력 개체 파일에 연결합니다.
 
  [개체 또는 라이브러리 파일에 테스트를 연결하려면](#objectRef) 절차로 이동합니다.
 
- **단위 테스트가 DLL에서 내보내지 않은 비 멤버 함수를 호출하며 DLL를 정적 라이브러리 형태로 빌드할 수 있음:** *.lib* 파일로 컴파일될 수 있도록 DLL 프로젝트를 변경합니다. 테스트 중인 프로젝트를 참조하는 개별 테스트 프로젝트를 추가합니다.
+ **단위 테스트가 DLL에서 내보내지 않은 비 멤버 함수를 호출하며 DLL를 정적 라이브러리 형태로 빌드할 수 있음:** *.lib* 파일로 컴파일되도록 DLL 프로젝트를 변경합니다. 테스트 중인 프로젝트를 참조하는 개별 테스트 프로젝트를 추가합니다.
 
  이 접근 방법은 테스트에서 내보내지 않은 멤버를 사용할 수 있다는 이점이 있지만, 테스트를 여전히 별도 프로젝트로 유지해야 합니다.
 

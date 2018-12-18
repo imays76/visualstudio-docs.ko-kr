@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에 대한 항목 템플릿 만들기
+title: 항목 템플릿 만들기
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 342b7ebd17280c47296fae43c6541a5e969ad5f3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b871c5c502c026a8a374af232888c09f18798a0c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31954664"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062459"
 ---
 # <a name="how-to-create-item-templates"></a>방법: 항목 템플릿 만들기
 
@@ -87,7 +87,7 @@ Windows, Office, 대시보드 또는 웹과 같은 특정 프로젝트 하위 �
 
 예: `<ProjectSubType>Database</ProjectSubType>`
 
-다음 예제에서는 **Office** 프로젝트용 항목 템플릿을 보여줍니다.
+다음 예제에서는 **Office** 프로젝트용 항목 템플릿을 보여 줍니다.
 
 ```xml
 <VSTemplate Version="2.0.0" Type="Item" Version="2.0.0">
@@ -113,7 +113,7 @@ Windows, Office, 대시보드 또는 웹과 같은 특정 프로젝트 하위 �
 
 1. 템플릿으로 저장할 준비가 될 때까지 프로젝트 항목을 수정합니다.
 
-1. 해당되는 경우 매개 변수를 대체해야 하는 위치를 나타내도록 코드 파일을 수정합니다. 매개 변수 대체에 대한 자세한 내용은 [방법: 템플릿에서 매개 변수 대체](../ide/how-to-substitute-parameters-in-a-template.md)를 참조하세요.
+1. 해당되는 경우 매개 변수를 대체해야 하는 위치를 나타내도록 코드 파일을 수정합니다. 매개 변수 대체에 대한 자세한 내용은 [방법: 템플릿 매개 변수 대체](../ide/how-to-substitute-parameters-in-a-template.md)를 참조하세요.
 
 1. XML 파일을 만들고 *.vstemplate* 파일 확장명을 사용하여 프로젝트 항목 파일과 같은 디렉터리에 저장합니다.
 

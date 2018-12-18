@@ -1,6 +1,6 @@
 ---
-title: Visual Studio에서 다중 스레드 응용 프로그램 디버그 | Microsoft Docs
-ms.custom: ''
+title: 다중 스레드 응용 프로그램 디버그 | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/06/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -23,14 +23,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 599880f3c8e04b742ab943304ac910f8c0bcbe78
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
-ms.translationtype: MT
+ms.openlocfilehash: 7ea1af90ae775ed24f5cceabeca04cdc901f545f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349532"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059680"
 ---
-# <a name="debug-multithreaded-applications-in-visual-studio"></a>Visual Studio에서 다중 스레드 응용 프로그램 디버그
+# <a name="debug-multithreaded-applications-in-visual-studio"></a>Visual Studio에서 다중 스레드 애플리케이션 디버그
 스레드는 운영 체제가 프로세서 시간 권한을 부여 하는 명령 시퀀스입니다. 운영 체제에서 실행되는 모든 프로세스는 최소한 하나의 스레드로 구성됩니다. 프로세스에 스레드가 둘 이상인 경우를 다중 스레드라고 합니다.  
   
 다중 프로세서, 다중 코어 프로세서 또는 하이퍼스레드 프로세스를 사용 하 여 컴퓨터에는 여러 동시 스레드가 실행할 수 있습니다. 병렬 처리를 여러 스레드를 사용 하 여 프로그램 성능을 크게 향상할 수 있지만 될 수 있습니다도 디버깅 더 어려워질 스레드 수를 추적 하 고 있으므로.  
@@ -43,9 +43,9 @@ Visual Studio는 다중 스레드 응용된 프로그램 디버깅에 사용할 
 
 - 스레드를 스레드 디버깅을 위한 기본 도구는 합니다 **스레드** 창, 소스 창의 스레드 마커를 **병렬 스택** 창 합니다 **병렬 조사식** 창 및 **디버그 위치** 도구 모음입니다. 에 대해 자세히 알아보려면 합니다 **스레드** 창 및 **디버그 위치** 도구 모음에서 참조 [연습: 스레드 창을 사용 하 여 디버그](../debugger/how-to-use-the-threads-window.md)합니다. 사용 하는 방법을 알아보려면 합니다 **병렬 스택** 및 **병렬 조사식** windows 참조 [다중 스레드 응용 프로그램 디버깅 시작](../debugger/get-started-debugging-multithreaded-apps.md)합니다. 두 항목에는 스레드 마커를 사용 하는 방법을 보여 줍니다.
   
-- 사용 하는 코드에 대 한 합니다 [TPL 작업 병렬 라이브러리 ()](/dotnet/standard/parallel-programming/task-parallel-library-tpl) 또는 [동시성 런타임](/cpp/parallel/concrt/concurrency-runtime/), 디버깅을 위한 기본 도구를 **병렬 스택** 창, 합니다 **병렬 조사식** 창 및 **태스크** 창도 JavaScript를 지원 합니다. 시작 하려면 다음을 참조 [연습: 병렬 응용 프로그램 디버깅](../debugger/walkthrough-debugging-a-parallel-application.md) 하 고 [연습: c + + AMP 응용 프로그램을 디버깅](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)합니다. 
+- 사용 하는 코드에 대 한 합니다 [TPL 작업 병렬 라이브러리 ()](/dotnet/standard/parallel-programming/task-parallel-library-tpl) 또는 [동시성 런타임](/cpp/parallel/concrt/concurrency-runtime/), 디버깅을 위한 기본 도구를 **병렬 스택** 창, 합니다 **병렬 조사식** 창 및 **태스크** 창도 JavaScript를 지원 합니다. 시작 하려면 참조 [연습: 병렬 응용 프로그램 디버깅](../debugger/walkthrough-debugging-a-parallel-application.md) 고 [연습: C + + AMP 응용 프로그램을 디버깅](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)합니다. 
 
-- GPU 스레드 디버깅을 위한 기본 도구는 합니다 **GPU 스레드** 창입니다. 참조 [방법: GPU 스레드 창 사용](../debugger/how-to-use-the-gpu-threads-window.md)합니다.  
+- GPU 스레드 디버깅을 위한 기본 도구는 합니다 **GPU 스레드** 창입니다. [방법: GPU 스레드 창 사용](../debugger/how-to-use-the-gpu-threads-window.md)을 참조하세요.  
 
 - 기본 도구는 프로세스에 대 한 합니다 **프로세스에 연결** 대화 상자를 **프로세스** 창 및 **디버그 위치** 도구 모음입니다.  
   
@@ -76,23 +76,23 @@ Visual Studio에서 제공 하는 강력한 중단점 및 추적점 다중 스�
  [방법: 스레드에 플래그 지정 및 스레드의 플래그 해제](../debugger/how-to-flag-and-unflag-threads.md)  
  디버깅 도중 특별히 주의하려는 스레드를 표시하거나 플래그를 지정합니다.    
   
- [방법: 고성능 클러스터에서 디버깅](../debugger/how-to-debug-on-a-high-performance-cluster.md)  
+ [방법: 고성능 클러스터에서 디버그](../debugger/how-to-debug-on-a-high-performance-cluster.md)  
  고성능 클러스터에서 실행되는 응용 프로그램을 디버깅하는 방법을 보여 줍니다.  
 
  [네이티브 코드의 스레드 디버깅 팁](../debugger/tips-for-debugging-threads-in-native-code.md)  
  네이티브 스레드를 디버깅하는 단순하지만 유용한 방법을 보여 줍니다. 
 
  [방법: 네이티브 코드에 스레드 이름 설정](../debugger/how-to-set-a-thread-name-in-native-code.md)  
- 스레드에에서 볼 수 있는 이름을 지정 합니다 **스레드** 창입니다.  
+ **스레드** 창에 표시되는 스레드에 이름을 지정합니다.  
   
  [방법: 관리 코드에 스레드 이름 설정](../debugger/how-to-set-a-thread-name-in-managed-code.md)  
- 스레드에에서 볼 수 있는 이름을 지정 합니다 **스레드** 창입니다. 
+ **스레드** 창에 표시되는 스레드에 이름을 지정합니다. 
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
 
 [중단점 사용](../debugger/using-breakpoints.md)  
 [스레딩](/dotnet/standard/threading/index)  
 [구성 요소에서 다중 스레딩](https://msdn.microsoft.com/Library/2fc31e68-fb71-4544-b654-0ce720478779)  
-[이전 코드 (Visual c + +)를 위한 다중 스레드 지원](/cpp/parallel/multithreading-support-for-older-code-visual-cpp)  
- [스레드 및 프로세스 디버깅](../debugger/debug-threads-and-processes.md)   
+[이전 코드를 위한 다중 스레드 지원(Visual C++)](/cpp/parallel/multithreading-support-for-older-code-visual-cpp)  
+ [스레드 및 프로세스 디버그](../debugger/debug-threads-and-processes.md)   
  [원격 디버깅](../debugger/remote-debugging.md)

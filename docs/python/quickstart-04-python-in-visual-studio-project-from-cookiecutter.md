@@ -1,24 +1,25 @@
 ---
 title: 빠른 시작 - Cookiecutter를 사용하여 Python 프로젝트 만들기
 description: 이 빠른 시작에서 Cookiecutter 템플릿을 사용하여 Python용 Visual Studio 프로젝트를 만듭니다.
-ms.date: 09/04/2018
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8e4f2fcf8422c0fa11e1f43723d4337804720050
-ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
+ms.openlocfilehash: b8ad6d53a337e6a2a0d879ff9637156fb3d6d791
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43995893"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062705"
 ---
-# <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>빠른 시작: Cookiecutter 템플릿에서 프로젝트 만들기
+# <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>빠른 시작: Cookiecutter 템플릿으로 프로젝트 만들기
 
 [Visual Studio 2017에 Python 지원을 설치](installing-python-support-in-visual-studio.md)하면 GitHub에 게시되는 여러 개를 포함하여 Cookiecutter 템플릿에서 새 프로젝트를 쉽게 만들 수 있습니다. [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/)는 템플릿을 검색하고, 템플릿 옵션을 입력하며, 프로젝트와 파일을 만들 수 있는 그래픽 사용자 인터페이스를 제공합니다. Visual Studio 2017에 포함되어 있으며, 이전 버전의 Visual Studio에서는 개별적으로 설치할 수 있습니다.
 

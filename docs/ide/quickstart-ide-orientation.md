@@ -1,5 +1,6 @@
 ---
 title: Visual Studio IDE 둘러보기
+titleSuffix: ''
 ms.date: 07/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbf969e6e9a37179621cad52243418a2d0536f1a
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 7864a85e676e76dda593580d58036c4429fa43c7
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42626818"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159570"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>빠른 시작: 먼저 Visual Studio IDE 살펴보기
 
@@ -105,13 +106,13 @@ Visual Studio를 사용하는 동안 문제가 발생하거나 제품을 개선�
 사용자 인터페이스에 익숙해지도록 Visual Studio의 몇 가지 기능에 대해 살펴보았습니다. 더 살펴보려면:
 
 > [!div class="nextstepaction"]
-> [코드 편집기에 대한 자세한 정보](../ide/quickstart-editor.md)
+> [코드 편집기에 대한 자세한 정보](../get-started/tutorial-editor.md)
 
 > [!div class="nextstepaction"]
-> [프로젝트 및 솔루션에 대한 자세한 정보](../ide/quickstart-projects-solutions.md)
+> [프로젝트 및 솔루션에 대한 자세한 정보](../get-started/tutorial-projects-solutions.md)
 
 ## <a name="see-also"></a>참고 항목
 
-- [Visual Studio IDE 개요](../ide/visual-studio-ide.md)
+- [Visual Studio IDE 개요](../get-started/visual-studio-ide.md)
 - [Visual Studio 2017의 추가 기능](../ide/advanced-feature-overview.md)
 - [테마 및 글꼴 색 변경](../ide/quickstart-personalize-the-ide.md)

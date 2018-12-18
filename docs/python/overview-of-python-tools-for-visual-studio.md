@@ -1,5 +1,6 @@
 ---
-title: Windows의 Visual Studio에서 Python 지원 개요
+title: Windows의 Visual Studio에서 Python 지원
+titleSuffix: ''
 description: Windows에서 최상의 Python IDE(PTVS(Visual Studio용 Python 도구)로도 알려짐)로 만드는 Visual Studio의 Python 기능에 대한 요약입니다.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +9,16 @@ ms.topic: overview
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fba2c426db3269a1f9bef3a0759bd6ffaa7f447e
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: cec872f5df927bae3caf20f35d4bcd8f8e7460b3
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001336"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068541"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Windows의 Visual Studio에서 Python 작업
 
@@ -44,8 +46,8 @@ Visual Studio의 컨텍스트 내에서 Python을 대화형으로 실행하려�
 추가 정보
 
 - 비디오(2분 35초): [Python 환경 관리](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567)
-- Docs: [Python 환경 관리](managing-python-environments-in-visual-studio.md)
-- Docs: [Python 환경 참조](python-environments-window-tab-reference.md)
+- 문서: [Python 환경 관리](managing-python-environments-in-visual-studio.md)
+- 문서: [Python 환경 참조](python-environments-window-tab-reference.md)
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>다양한 편집 기능, IntelliSense 및 코드 이해
 
@@ -56,10 +58,10 @@ Visual Studio에서는 구문 색 지정, 모든 코드 및 라이브러리에 �
 추가 정보
 
 - 비디오(2분 30초): [Python 코드 편집](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567)
-- Docs: [Python 코드 편집](editing-python-code-in-visual-studio.md)
-- Docs: [코드 형식](formatting-python-code.md)
-- Docs: [코드 리팩터링](refactoring-python-code.md)
-- Docs: [Linter 사용](linting-python-code.md)
+- 문서: [Python 코드 편집](editing-python-code-in-visual-studio.md)
+- 문서: [코드 형식](formatting-python-code.md)
+- 문서: [코드 리팩터링](refactoring-python-code.md)
+- 문서: [Linter 사용](linting-python-code.md)
 - 일반 Visual Studio 기능 문서: [코드 편집기의 기능](../ide/writing-code-in-the-code-and-text-editor.md)
 
 ## <a name="interactive-window"></a>대화형 창
@@ -74,9 +76,9 @@ Visual Studio에 알려진 모든 Python 환경의 경우 별도 명령 프롬�
 
 추가 정보
 
-- 비디오(2분 22초): [Python 대화형 창](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567)
-- Docs: [대화형 창](python-interactive-repl-in-visual-studio.md)
-- Docs: [Visual Studio의 IPython](interactive-repl-ipython.md)
+- 비디오(2분 22초: [Python 대화형 창](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567)
+- 문서: [대화형 창](python-interactive-repl-in-visual-studio.md)
+- 문서: [Visual Studio의 IPython](interactive-repl-ipython.md)
 
 ## <a name="project-system-and-project-and-item-templates"></a>프로젝트 시스템, 프로젝트 및 항목 템플릿
 
@@ -90,11 +92,11 @@ Visual Studio에서는 시간이 지남에 따라 커지는 프로젝트의 복�
 
 추가 정보
 
-- Docs: [Python 프로젝트 관리](managing-python-projects-in-visual-studio.md)
-- Docs: [항목 템플릿 참조](python-item-templates.md)
-- Docs: [Python 프로젝트 템플릿](managing-python-projects-in-visual-studio.md#project-templates)
-- Docs: [C++ 및 Python 작업](working-with-c-cpp-python-in-visual-studio.md)
-- 일반 Visual Studio 기능 docs: [프로젝트 및 항목 템플릿](../ide/creating-project-and-item-templates.md#visual-studio-templates)
+- 문서: [Python 프로젝트 관리](managing-python-projects-in-visual-studio.md)
+- 문서: [항목 템플릿 참조](python-item-templates.md)
+- 문서: [Python 프로젝트 템플릿](managing-python-projects-in-visual-studio.md#project-templates)
+- 문서: [C++ 및 Python 작업](working-with-c-cpp-python-in-visual-studio.md)
+- 일반 Visual Studio 기능 문서: [프로젝트 및 항목 템플릿](../ide/creating-project-and-item-templates.md#visual-studio-templates)
 - 일반 Visual Studio 기능 문서: [Visual Studio의 솔루션 및 프로젝트](../ide/solutions-and-projects-in-visual-studio.md)
 
 ## <a name="full-featured-debugging"></a>완전한 기능의 디버깅
@@ -106,10 +108,10 @@ Visual Studio의 장점 중 하나는 강력한 디버거입니다. 특히 Pytho
 추가 정보
 
 - 비디오: [Python 디버깅 3분 32초](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=Ep5dp5LWE_3805918567)
-- Docs: [Python 디버그](debugging-python-in-visual-studio.md)
-- Docs: [Python/C++ 혼합 모드 디버깅](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
-- Docs: [Linux에서 원격 디버깅](debugging-python-code-on-remote-linux-machines.md)
-- 일반 Visual Studio 기능 문서: [Visual Studio 디버거의 기능 둘러보기](../debugger/debugger-feature-tour.md)
+- 문서: [Python 디버그](debugging-python-in-visual-studio.md)
+- 문서: [Python/C++ 혼합 모드 디버깅](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
+- 문서: [Linux에서 원격 디버깅](debugging-python-code-on-remote-linux-machines.md)
+- 일반 Visual Studio 기능 문서: [Visual Studio 디버거 기능 둘러보기](../debugger/debugger-feature-tour.md)
 
 ## <a name="profiling-tools-with-comprehensive-reporting"></a>포괄적인 보고를 제공하는 프로파일링 도구
 
@@ -120,8 +122,8 @@ Visual Studio의 장점 중 하나는 강력한 디버거입니다. 특히 Pytho
 추가 정보
 
 - 비디오: [Python 프로파일링 3분 00초](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=s6FoC6LWE_1005918567)
-- Docs: [Python 프로파일링 도구](profiling-python-code-in-visual-studio.md)
-- 일반 Visual Studio 기능 docs: [프로파일링 기능 둘러보기](../profiling/profiling-feature-tour.md). (Python에 대해 일부 Visual Studio 프로파일링 기능만 사용할 수 있습니다).
+- 문서: [Python 프로파일링 도구](profiling-python-code-in-visual-studio.md)
+- 일반 Visual Studio 기능 문서: [프로파일링 기능 둘러보기](../profiling/profiling-feature-tour.md). (Python에 대해 일부 Visual Studio 프로파일링 기능만 사용할 수 있습니다).
 
 ## <a name="unit-testing-tools"></a>위 테스트 도구
 
@@ -132,8 +134,8 @@ Visual Studio **테스트 탐색기**에서 테스트를 검색, 실행 및 관�
 추가 정보
 
 - 비디오: [Python 테스트 2분 31초](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=hb46k6LWE_405918567)
-- Docs: [Python용 단위 테스트 도구](unit-testing-python-in-visual-studio.md)
-- 일반 Visual Studio 기능 docs: [코드 단위 테스트](../test/unit-test-your-code.md).
+- 문서: [Python용 단위 테스트 도구](unit-testing-python-in-visual-studio.md)
+- 일반 Visual Studio 기능 문서: [코드 단위 테스트](../test/unit-test-your-code.md).
 
 ## <a name="azure-sdk-for-python"></a>Python용 Azure SDK
 

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 지역 변수 소개
+title: 지역 변수 소개
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 173173e090f285fcaf6fc9d7c94ba85b692d68e2
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 108477845bb79d5ed13cb3ebdf3121e4960455a6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948350"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068084"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Visual Studio에서 지역 변수 소개
 
@@ -24,11 +24,11 @@ ms.locfileid: "51948350"
 
 - Visual Basic
 
-**대상:** 기존 식을 대체할 지역 변수를 즉시 생성할 수 있습니다.
+**내용:** 기존 식을 대체할 지역 변수를 즉시 생성할 수 있습니다.
 
 **시기:** 지역 변수에 있는 경우 나중에 쉽게 다시 사용할 수 있는 코드가 있습니다.
 
-**이유:** 코드를 여러 번 복사하여 붙여넣으면 다양한 위치에서 사용할 수 있지만, 작업을 한 번 수행하고 지역 변수에 결과를 저장한 다음, 전체적으로 지역 변수를 사용하는 것이 좋습니다.
+**이유:** 코드를 여러 번 복사하여 붙여넣으면 다양한 위치에서 사용할 수 있지만, 작업을 한 번 수행하고, 지역 변수에 결과를 저장하고, 전체적으로 지역 변수를 사용하는 것이 좋습니다.
 
 ## <a name="how-to"></a>방법
 

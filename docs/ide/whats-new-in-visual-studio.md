@@ -1,10 +1,11 @@
 ---
 title: Visual Studio 2017의 새로운 기능
+titleSuffix: ''
 description: Visual Studio 2017의 새로운 기능을 알아보세요.
-ms.custom: ''
 ms.date: 12/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
 - VS.StartPage.WhatsNew
@@ -17,18 +18,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a007d6557fe7ebd533ee34fecc8b8c0315024edf
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: c490d15f27801dff6bb09f6356ad7c665b09c558
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895771"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160194"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Visual Studio 2017의 새로운 기능
 
 **15.9 릴리스[용으로 업데이트됨](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)**
 
-Visual Studio의 이전 버전에서 업그레이드하려고 하십니까? Visual Studio 2017에서 제공하는 기능 소개: 모든 개발, 앱 및 플랫폼에서 탁월한 생산성 Visual Studio 2017를 사용하여 Android, iOS, Windows, Linux, 웹 및 클라우드용 앱을 개발합니다. 빠르게 코딩하고, 간단하게 디버그 및 진단하고, 자주 테스트하며, 안심하고 릴리스하세요. 개발자 고유의 확장을 빌드하여 Visual Studio를 확장하고 사용자 지정할 수도 있습니다. 이 릴리스로 버전 제어를 사용하고, 민첩하게 대처하고, 효율적으로 공동 작업하세요.
+Visual Studio의 이전 버전에서 업그레이드하려고 하십니까? Visual Studio 2017에서 제공할 수 있는 기능은 다음과 같습니다. 모든 개발, 앱 및 플랫폼에서 뛰어난 생산성을 제공합니다. Visual Studio 2017를 사용하여 Android, iOS, Windows, Linux, 웹 및 클라우드용 앱을 개발합니다. 빠르게 코딩하고, 간단하게 디버그 및 진단하고, 자주 테스트하며, 안심하고 릴리스하세요. 개발자 고유의 확장을 빌드하여 Visual Studio를 확장하고 사용자 지정할 수도 있습니다. 이 릴리스로 버전 제어를 사용하고, 민첩하게 대처하고, 효율적으로 공동 작업하세요.
 
 이전 버전 Visual Studio 2015부터 적용해 온 변경을 높은 수준에서 요약한 사항입니다.
 
@@ -106,11 +107,11 @@ Visual Studio의 확장 목록을 보려면 **도구** > **확장 및 업데이�
 
 로밍 중인 확장 관리자를 사용하는 경우 3개의 아이콘 형식이 목록에 표시됩니다.
 
-* ![로밍 아이콘](../ide/media/vs2017ide-roamedicon.png)**_로밍_**: 이 로밍 목록에 포함되어 있지만, 머신에 설치되지 않은 확장입니다.
+* ![로밍 아이콘](../ide/media/vs2017ide-roamedicon.png) **_로밍_**: 이 로밍 목록에 포함되어 있지만, 머신에 설치되지 않은 확장입니다.
   **다운로드** 단추를 사용하여 이러한 확장을 설치할 수 있습니다.
-* ![로밍 및 설치 아이콘](../ide/media/vs2017ide-roamedinstalledicon.png)**_로밍 및 설치_**: 이 로밍 목록에 포함되어 있고, 개발 환경에 설치된 모든 확장입니다.
+* ![로밍 및 설치 아이콘](../ide/media/vs2017ide-roamedinstalledicon.png) **_로밍 및 설치_**: 로밍 목록에 포함되어 있고 개발 환경에 설치된 모든 확장입니다.
   로밍하지 않도록 결정하는 경우 **로밍 중지** 단추를 사용하여 이러한 확장을 제거할 수 있습니다.
-* ![설치 아이콘](../ide/media/vs2017ide-installedicon.png)**_설치됨_**: 이 환경에 설치되어 있지만 로밍 목록에 포함되지 않은 모든 확장입니다.
+* ![설치 아이콘](../ide/media/vs2017ide-installedicon.png) **_설치됨_**: 이 환경에 설치되어 있지만 로밍 목록에 포함되지 않은 모든 확장입니다.
   **로밍 시작** 단추를 사용하여 로밍 목록에 확장을 추가할 수 있습니다.
 
 로그인되어 있는 동안 다운로드한 모든 확장은 목록에 **로밍 및 설치**로 추가됩니다. 그런 다음, 확장이 로밍 목록에 포함되고, 모든 컴퓨터에서 액세스할 수 있습니다.
@@ -131,19 +132,19 @@ Visual Studio Enterprise 2017에서 라이브 단위 테스트는 코딩하는 �
 
 자동화된 테스트에 대한 자세한 내용은 [CI/CD pipeline for automated tests in DevOps(DevOps에서 자동화된 테스트에 대한 CI/CD 파이프라인)](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/20/set-up-a-cicd-pipeline-to-run-automated-tests-efficiently/) 블로그 게시물을 참조하세요.
 
-또한 [Continuous Delivery Tools for Visual Studio(Visual Studio의 지속적인 업데이트 도구)](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) DevLabs 확장의 새로운 기능에 대한 자세한 내용은 [Committing with Confidence: Commit Time Code Quality(정확하게 커밋: 커밋 타임 코드 품질)](https://blogs.msdn.microsoft.com/visualstudio/2017/08/21/committing-with-confidence-commit-time-code-quality-information-updated/) 블로그 게시물을 참조하세요.
+또한 [Visual Studio의 지속적인 업데이트 도구](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) DevLabs 확장의 새로운 기능에 대한 자세한 내용은 [정확하게 커밋: 커밋 타임 코드 품질](https://blogs.msdn.microsoft.com/visualstudio/2017/08/21/committing-with-confidence-commit-time-code-quality-information-updated/) 블로그 게시물을 참조하세요.
 
 ### <a name="visual-studio-ide-enhancements"></a>Visual Studio IDE 향상
 
 #### <a name="multi-caret-editing"></a>다중 캐럿 편집
 
-**15.8**의 새로운 기능: 이제 동시에 파일의 여러 위치를 쉽게 편집할 수 있습니다. 파일의 여러 위치에서 삽입 지점 및 선택 영역을 만들어 시작합니다. 그런 다음, 다중 캐럿 편집 기능을 사용하여 동시에 둘 이상의 위치에서 동일하게 편집합니다.
+**15.8의 새로운 기능**: 이제 동시에 파일의 여러 위치를 쉽게 편집할 수 있습니다. 파일의 여러 위치에서 삽입 지점 및 선택 영역을 만들어 시작합니다. 그런 다음, 다중 캐럿 편집 기능을 사용하여 동시에 둘 이상의 위치에서 동일하게 편집합니다.
 
 자세한 내용은 [텍스트 찾기 및 바꾸기](finding-and-replacing-text.md) 페이지의 [다중 캐럿 선택 영역](finding-and-replacing-text.md#multi-caret-selection) 섹션을 참조하세요.
 
 #### <a name="keep-keybinding-profiles-consistent"></a>키 바인딩 프로필을 일관되게 유지
 
-**15.8의 새로운 기능**: 새로운 두 키보드 프로필 :Visual Studio Code 및 ReSharper(Visual Studio)을 포함한 도구에서 키 바인딩을 일관적으로 유지할 수 있습니다. 이러한 스키마는 **도구** > **옵션** > **일반** > **키보드** 및 위쪽 드롭다운 메뉴에서 찾을 수 있습니다.
+**15.8의 새로운 기능**: 이제 새로운 두 키보드 프로필을 포함한 도구에서 키 바인딩을 일관적으로 유지할 수 있습니다. Visual Studio Code 및 ReSharper(Visual Studio). 이러한 스키마는 **도구** > **옵션** > **일반** > **키보드** 및 위쪽 드롭다운 메뉴에서 찾을 수 있습니다.
 
   ![Visual Studio Code 및 ReSharper에 대한 새 키 바인딩 프로필](../ide/media/vs-keyboard-mappings-code-resharper.png)
 
@@ -172,7 +173,7 @@ Visual Studio에서 프로젝트를 작업할 때 코드를 설정하고 빠르�
 
 A에서 B로 이동하는 데 도움이 되는 탐색 환경을 새로 고쳐 자신감 있게 더욱 집중할 수 있게 했습니다.
 
-* **15.4의 새로운 기능**: **정의로 이동**(**Ctrl**+**클릭** 또는 **F12**)&ndash;마우스 사용자는 **Ctrl** 키를 누르고 해당 멤버를 클릭하여 멤버 정의로 이동할 수 있는 더 쉬운 방법이 있습니다. **Ctrl** 키를 누르고 코드 기호에 마우스를 올려 놓으면 밑줄이 쳐지고 링크로 바뀝니다. 자세한 내용은 [정의로 이동 및 정의 피킹(Peeking)](../ide/go-to-and-peek-definition.md)을 참조하세요.
+* **15.4의 새로운 기능**: **정의로 이동**(**Ctrl**+**클릭** 또는 **F12**)&ndash; 마우스 사용자는 **Ctrl**를 누른 다음, 해당 멤버를 클릭하여 멤버 정의로 이동할 수 있는 더 쉬운 방법이 있습니다. **Ctrl** 키를 누르고 코드 기호에 마우스를 올려 놓으면 밑줄이 쳐지고 링크로 바뀝니다. 자세한 내용은 [정의로 이동 및 정의 피킹(Peeking)](../ide/go-to-and-peek-definition.md)을 참조하세요.
 
 * **구현으로 이동** (**Ctrl**+**F12**)&ndash; 모든 베이스 형식 또는 멤버에서 다양한 구현으로 이동합니다.
 
@@ -216,7 +217,7 @@ Visual Studio에서 C++ 핵심 지침을 배포하고, C++11 및 C++ 기능에 �
 
 #### <a name="snapshots-and-intellitrace-step-back"></a>스냅숏 및 IntelliTrace 뒤로 이동
 
-**15.5의 새로운 기능**: IntelliTrace 뒤로 이동은 모든 중단점 및 디버거 단계 이벤트에서 응용 프로그램의 스냅숏을 자동으로 생성합니다. 기록된 스냅숏을 통해 이전 중단점 또는 단계로 돌아가서 응용 프로그램의 과거 상태를 볼 수 있습니다. IntelliTrace 뒤로 이동을 사용하면 이전 응용 프로그램 상태를 보고 싶지만 디버깅을 다시 시작하거나 원하는 앱 상태를 다시 만들지 않으려는 경우에 시간을 절약할 수 있습니다.
+**15.5의 새로운 기능**: IntelliTrace 뒤로 이동은 모든 중단점 및 디버거 단계 이벤트에서 애플리케이션의 스냅숏을 자동으로 생성합니다. 기록된 스냅숏을 통해 이전 중단점 또는 단계로 돌아가서 응용 프로그램의 과거 상태를 볼 수 있습니다. IntelliTrace 뒤로 이동을 사용하면 이전 응용 프로그램 상태를 보고 싶지만 디버깅을 다시 시작하거나 원하는 앱 상태를 다시 만들지 않으려는 경우에 시간을 절약할 수 있습니다.
 
 **디버그** 도구 모음의 **뒤로 가기**와 **앞으로 가기** 단추를 사용하여 이동하고 스냅숏을 볼 수 있습니다. 이 단추를 사용하여 **진단 도구** 창의 **이벤트** 탭에 나타나는 이벤트를 탐색할 수 있습니다. 이벤트의 앞이나 뒤로 이동하면 선택한 이벤트에 대한 기록 디버깅이 자동으로 활성화됩니다.
 
@@ -287,7 +288,7 @@ UWP에 대한 자세한 내용은 [UWP(유니버설 Windows 플랫폼)용 앱 �
 
 ### <a name="visual-studio-tools-for-xamarin"></a>Visual Studio Tools for Xamarin
 
-**15.4의 새로운 기능**: Xamarin Live를 사용하면 개발자가 iOS 및 Android 장치에서 직접 자신의 앱을 계속해서 배포, 테스트 및 디버그할 수 있습니다. &mdash;앱 스토어 또는 Google Play에서 사용할 수 있는&mdash; Xamarin Live Player를 다운로드한 후 장치를 Visual Studio와 연결하고 모바일 앱을 빌드하는 방법을 혁신적으로 개선할 수 있습니다. 이 기능은 이제 Visual Studio에 포함되었으며 **도구** > **옵션** > **Xamarin** > **기타** > **Xamarin Live Player 사용**으로 이동하여 사용하도록 설정할 수 있습니다.
+**15.4의 새로운 기능**: Xamarin Live를 사용하여 개발자는 iOS 및 Android 장치에서 직접 자신의 앱을 계속해서 배포, 테스트 및 디버그할 수 있습니다. &mdash;앱 스토어 또는 Google Play에서 사용할 수 있는&mdash; Xamarin Live Player를 다운로드한 후 장치를 Visual Studio와 연결하고 모바일 앱을 빌드하는 방법을 혁신적으로 개선할 수 있습니다. 이 기능은 이제 Visual Studio에 포함되었으며 **도구** > **옵션** > **Xamarin** > **기타** > **Xamarin Live Player 사용**으로 이동하여 사용하도록 설정할 수 있습니다.
 
 ![Xamarin Live Player 쌍, 배포 및 라이브 편집 모드의 애니메이션](../ide/media/xamarinliveplayer.gif)
 
@@ -299,7 +300,7 @@ UWP에 대한 자세한 내용은 [UWP(유니버설 Windows 플랫폼)용 앱 �
 
 #### <a name="xamarinandroid-designer-split-view-editor"></a>Xamarin.Android Designer 분할 보기 편집기
 
-**15.8의 새로기운 능**: Xamarin.Android의 디자이너 환경이 대폭 개선되었습니다. 핵심은 동시에 레이아웃을 만들고, 편집하고, 미리 볼 수 있는 분할 보기 편집기입니다.
+또한 **15.8의 새로운 기능**: Xamarin.Android의 디자이너 환경이 대폭 개선되었습니다. 핵심은 동시에 레이아웃을 만들고, 편집하고, 미리 볼 수 있는 분할 보기 편집기입니다.
 
 ![Xamarin.Android Designer 분할 보기 편집기](../ide/media/android-designer-split-view.png)
 
@@ -307,11 +308,11 @@ UWP에 대한 자세한 내용은 [UWP(유니버설 Windows 플랫폼)용 앱 �
 
 ### <a name="visual-studio-app-center"></a>Visual Studio 앱 센터
 
-**15.5의 새로운 기능**: Visual Studio App Center&mdash;Android, iOS, macOS 및 Windows 앱용으로 일반 공급됨&mdash;에는 자동화된 빌드, 클라우드의 실제 장치에서 테스트, 베타 테스터 및 앱 스토어 배포, 충돌 및 분석 데이터를 통한 실제 사용 모니터링을 비롯하여 앱의 수명 주기를 관리하는 데 필요한 모든 것이 있습니다. Objective-C, Swift, Java, C#, Xamarin, React Native로 작성된 앱이 모든 기능에서 지원됩니다.
+**15.5의 새로운 기능**: Visual Studio App Center&mdash;이제 Android, iOS, macOS 및 Windows 앱용으로 일반 공급됨&mdash;에는 자동화된 빌드, 클라우드의 실제 디바이스에서 테스트, 베타 테스터 및 앱 스토어 배포, 충돌 및 분석 데이터를 통한 실제 사용 모니터링을 비롯하여 앱의 수명 주기를 관리하는 데 필요한 모든 것이 있습니다. Objective-C, Swift, Java, C#, Xamarin, React Native로 작성된 앱이 모든 기능에서 지원됩니다.
 
   ![Visual Studio App Center 테스트 환경](../ide/media/app-center-test-env.png)
 
-자세한내 내용은 [App Center 소개: 클라우드에서 앱 빌드, 테스트, 배포 및 모니터링](https://blogs.msdn.microsoft.com/vsappcenter/introducing-visual-studio-app-center/)(영문) 블로그 게시물을 참조하세요.
+자세한 내용은 [App Center 소개: 클라우드에서 앱 빌드, 테스트, 배포 및 모니터링](https://blogs.msdn.microsoft.com/vsappcenter/introducing-visual-studio-app-center/) 블로그 게시물을 참조하세요.
 
 ## <a name="cross-platform-development"></a>플랫폼 간 개발
 
@@ -334,7 +335,7 @@ Visual Studio 2017의 모든 버전에는 다음이 포함되어 있습니다.
 
 .NET Core는 .NET Standard의 일반적인 용도를 위한 모듈식 플랫폼 간 오픈 소스 구현이며 .NET Framework와 동일한 API를 다수 포함합니다.
 
-.NET Core 플랫폼은 관리되는 컴파일러, 런타임, 기본 클래스 라이브러리 및 ASP.NET Core와 같은 다양한 응용 프로그램 모델을 포함하는 여러 요소로 구성됩니다. .NET Core는 Windows, Linux 및 macOS의 세 개 주요 운영 체제를 지원합니다. 장치, 클라우드 및 포함/IoT 시나리오에 .NET Core를 사용할 수 있습니다.
+.NET Core 플랫폼은 관리되는 컴파일러, 런타임, 기본 클래스 라이브러리 및 ASP.NET Core와 같은 다양한 응용 프로그램 모델을 포함하는 여러 요소로 구성됩니다. .NET Core는 세 개의 주요 운영 체제를 지원합니다. Windows, Linux 및 macOS. 장치, 클라우드 및 포함/IoT 시나리오에 .NET Core를 사용할 수 있습니다.
 
 그리고 이제 Docker 지원도 포함합니다.
 
@@ -354,7 +355,7 @@ Visual Studio 2017의 모든 버전에는 다음이 포함되어 있습니다.
 
 ### <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools for AI
 
-**15.5의 새로운 기능**:Visual Studio의 생산성 기능을 사용하여 현재의 AI 혁신을 가속화하세요. 구문 강조 표시, IntelliSense 및 텍스트 자동 서식 지정과 같이 기본 제공되는 코드 편집기 기능을 사용하세요. 지역 변수 및 모델에 대한 단계별 디버깅을 사용하여 로컬 환경에서 딥 러닝 응용 프로그램을 대화형으로 테스트할 수 있습니다.
+**15.5의 새로운 기능**: Visual Studio의 생산성 기능을 사용하여 현재의 AI 혁신을 가속화합니다. 구문 강조 표시, IntelliSense 및 텍스트 자동 서식 지정과 같이 기본 제공되는 코드 편집기 기능을 사용하세요. 지역 변수 및 모델에 대한 단계별 디버깅을 사용하여 로컬 환경에서 딥 러닝 응용 프로그램을 대화형으로 테스트할 수 있습니다.
 
   ![딥 러닝 IDE](../ai/media/about/ide.png)
 

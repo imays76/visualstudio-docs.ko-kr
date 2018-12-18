@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 접근할 수 없는 코드 리팩터링 제거
+title: 접근할 수 없는 리팩터링 제거
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 65dc8a9318c679743030a86c94ad39b3681dc0ad
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 34bd11fe681199cecd0acd2e79cbc2f5d11fc494
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896343"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059313"
 ---
 # <a name="remove-unreachable-code-refactoring"></a>접근할 수 없는 리팩터링 제거
 
@@ -24,9 +24,9 @@ ms.locfileid: "52896343"
 
 - C#
 
-**대상:** 실행되지 않는 코드를 제거합니다.
+**내용:** 실행되지 않는 코드를 제거합니다.
 
-**시기:** 프로그램에 코드 조각 경로가 없어 코드 조각이 불필요합니다.
+**시기:** 프로그램에 코드 조각에 대한 경로가 없으므로 코드 조각이 불필요합니다.
 
 **이유:** 불필요하고 실행되지 않을 코드를 제거하여 가독성 및 유지 관리 편의성을 개선합니다.
 

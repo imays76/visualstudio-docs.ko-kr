@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 인터페이스 추출 리팩터링
+title: 인터페이스 추출 리팩터링
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: b126d3753c0b4d92a3ef7bc2579c6208e61e308b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 62d79251d0ec93c92ec13450e9110e08143d7966
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849885"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061658"
 ---
 # <a name="extract-an-interface-refactoring"></a>인터페이스 추출 리팩터링
 
@@ -29,7 +29,7 @@ ms.locfileid: "49849885"
 
 - Visual Basic
 
-**대상:** 클래스, 구조체 또는 인터페이스에서 기존 멤버를 사용하여 인터페이스를 만들 수 있습니다.
+**내용:** 클래스, 구조체 또는 인터페이스에서 기존 멤버를 사용하여 인터페이스를 만들 수 있습니다.
 
 **시기:** 다른 클래스, 구조체 또는 인터페이스에서 공통적으로 사용할 수 있는 메서드가 포함된 여러 클래스, 구조체 또는 인터페이스가 있습니다.
 

@@ -1,6 +1,6 @@
 ---
-title: Visual Studio 디버거에서 덤프 파일 사용 | Microsoft Docs
-ms.custom: H1HackMay2017
+title: 디버거에서 덤프 파일 사용 | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/05/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 74935071dcba3ab145f17f594fd22491271e39c6
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
-ms.translationtype: MT
+ms.openlocfilehash: 3e30f9d29ba3c922d70c8acdf7d4db5d8a1670fd
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296140"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066956"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Visual Studio 디버거에서 덤프 파일
 
@@ -50,9 +50,9 @@ Visual Studio 디버거는 관리 코드 또는 네이티브 코드에 대한 �
 
 -   Visual Studio는 이전에 저장 된 덤프 파일을 디버깅할 수 없습니다 [전체 사용자 모드 덤프](/windows/desktop/wer/collecting-user-mode-dumps) 형식입니다. 전체 사용자 모드 덤프는 힙 사용 하 여 덤프와 동일 합니다.
 
--   최적화된 코드의 덤프 파일 디버깅은 혼란을 줄 수 있습니다. 예를 들어 함수의 컴파일러 인라인 처리는 예기치 않은 호출 스택이 발생할 수 있습니다 하 고 다른 최적화 변수 수명을 변경 될 수 있습니다.
+-   최적화된 코드의 덤프 파일 디버깅은 혼란을 줄 수 있습니다. 예를 들어 함수의 컴파일러 인라인 처리로 예기치 않은 호출 스택이 발생할 수 있으며 다른 최적화로 변수의 수명이 변경될 수 있습니다.
 
-##  <a name="BKMK_Dump_files__with_or_without_heaps"></a> 상관 없이 힙 덤프 파일
+##  <a name="BKMK_Dump_files__with_or_without_heaps"></a> 힙을 포함하거나 포함하지 않는 덤프 파일
 
 덤프 파일 수 또는 힙 정보가 없을 수 있습니다.
 
@@ -66,7 +66,7 @@ Visual Studio에서 프로세스를 디버깅 하는 동안 디버거가 예외 
 
 사용 하 여 [Just-In-Time 디버깅](../debugger/just-in-time-debugging-in-visual-studio.md) 사용 하도록 설정 Visual Studio 외부에서 충돌된 한 프로세스에 Visual Studio 디버거를 디버거에서 덤프 파일을 저장 합니다. 참조 [실행 중인 프로세스에 연결](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)합니다.
 
-**덤프 파일을 저장 합니다.**
+**덤프 파일을 저장하려면**
 
 1. 디버깅 하는 동안 오류 또는 중단점에서 중지 된 동안 선택 **디버깅할** > **이름으로 덤프 저장**합니다. 
 
@@ -75,13 +75,13 @@ Visual Studio에서 프로세스를 디버깅 하는 동안 디버거가 예외 
 1. 경로 이동 하 고 덤프 파일에 대 한 이름을 선택 하 고 선택한 **저장할**합니다. 
 
 >[!NOTE]
->Windows 미니 덤프 형식을 지 원하는 프로그램으로 덤프 파일을 만들 수 있습니다. 예를 들어 합니다 **Procdump** 명령줄 유틸리티 [Windows Sysinternals](http://technet.microsoft.com/sysinternals/default) 요청 시 또는 트리거를 기반으로 프로세스 크래시 덤프 파일을 만들 수 있습니다. 참조 [요구 사항 및 제한 사항](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) 다른 도구를 사용 하 여 덤프 파일을 만들도록 하는 방법에 대 한 정보에 대 한 합니다.
+>Windows 미니 덤프 형식을 지 원하는 프로그램으로 덤프 파일을 만들 수 있습니다. 예를 들어 [Windows Sysinternals](http://technet.microsoft.com/sysinternals/default)에 있는 **Procdump** 명령줄 유틸리티는 트리거에 따라서나 요청 시에 프로세스 크래시 덤프 파일을 만들 수 있습니다. 참조 [요구 사항 및 제한 사항](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) 다른 도구를 사용 하 여 덤프 파일을 만들도록 하는 방법에 대 한 정보에 대 한 합니다.
 
 ##  <a name="BKMK_Open_a_dump_file"></a> 덤프 파일 열기
 
 1. Visual Studio에서 선택 **파일** > **Open** > **파일**합니다.
 
-1. 에 **열려 있는 파일** 대화 상자에서 찾아 덤프 파일을 선택 합니다. 일반적으로 *.dmp* 확장 합니다. **확인**을 선택합니다.
+1. **파일 열기** 대화 상자에서 덤프 파일을 찾아 선택합니다. 덤프 파일의 확장명은 일반적으로 *.dmp*입니다. **확인**을 선택합니다.
 
    합니다 **미니 덤프 파일 요약** 창 표시 요약 및 모듈에 대 한 정보를 덤프 파일 및 작업 수행할 수 있습니다.
 
@@ -96,7 +96,7 @@ Visual Studio에서 프로세스를 디버깅 하는 동안 디버거가 예외 
 사용 하 여 디버깅 기능에 덤프 파일에 전체 Visual Studio 필요 합니다.
 
 - 합니다 *.exe* 덤프를 생성 된 파일과 덤프 프로세스는 다른 바이너리 (Dll 등).
-- 기호 (*.pdb*)에 대 한 파일을 *.exe* 및 기타 이진 파일.
+- *.exe* 및 기타 이진 파일에 대한 기호(*.pdb*) 파일
 - *.exe* 하 고 *.pdb* 파일 버전 및에서 파일의 빌드와 정확히 일치 하는 덤프 생성 합니다.
 - 관련 모듈에 대 한 원본 파일입니다. 소스 파일을 찾을 수 없는 경우 모듈의 디스어셈블리를 사용할 수 있습니다.
 
@@ -112,10 +112,10 @@ Visual Studio에 대 한 이러한 위치를 자동으로 검색 *.exe* 덤프 �
 
 ### <a name="use-the-no-binary-no-symbols-or-no-source-found-pages"></a>아니요 이진, 로드 된 기호 없음, 또는 소스 없음 페이지를 사용 합니다.
 
-Visual Studio 파일을 찾을 수 없는 경우 덤프의 모듈을 디버그 해야 하는 것을 표시는 **이진 파일 없음**를 **기호를 찾을 수 없음**, 또는 **소스 없음** 페이지입니다. 이러한 페이지 해당 문제의 원인에 대 한 자세한 정보를 제공 하 고 파일을 찾을 수 있는 작업 링크를 제공 합니다. 참조 [기호 (.pdb) 및 원본 파일 지정](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)합니다.
+Visual Studio 파일을 찾을 수 없는 경우 덤프의 모듈을 디버그 해야 하는 것을 표시는 **이진 파일 없음**를 **기호를 찾을 수 없음**, 또는 **소스 없음** 페이지입니다. 이러한 페이지 해당 문제의 원인에 대 한 자세한 정보를 제공 하 고 파일을 찾을 수 있는 작업 링크를 제공 합니다. [기호 파일(.pdb) 및 원본 파일 지정](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)을 참조하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-- [Just-in-time 디버깅](../debugger/just-in-time-debugging-in-visual-studio.md)
-- [기호 (.pdb) 및 원본 파일 지정](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+- [Just-In-Time 디버깅](../debugger/just-in-time-debugging-in-visual-studio.md)
+- [기호 파일(.pdb) 및 원본 파일 지정](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 - [IntelliTrace](../debugger/intellitrace.md)

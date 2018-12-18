@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 부하 테스트 결과 및 오류 분석
+title: 부하 테스트 결과 및 오류 분석
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cab92c4daac6da81541771b534f4f1a6f9be159e
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: f77653f8a099f66d751880c412e1532d4a23e656
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896629"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068567"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>부하 테스트 분석기의 테이블 뷰에서 부하 테스트 결과 및 오류 분석
 
@@ -118,7 +118,7 @@ ms.locfileid: "52896629"
  다음 테이블에는 **트랜잭션** 테이블의 열이 나와 있습니다.
 
 > [!NOTE]
-> 모든 열을 보려면 활성 실행 설정과 연결된 타이밍 정보 저장소 속성을 사용하도록 설정해야 합니다. 자세한 내용은 [방법: 타이밍 정보 저장소 속성 지정](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)을 참조하세요.
+> 모든 열을 보려면 활성 실행 설정과 연결된 타이밍 정보 저장소 속성을 사용하도록 설정해야 합니다. 자세한 내용은 [방법: 타이밍 정보 스토리지 속성 지정](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)을 참조하세요.
 
 |열|설명|타이밍 정보 없이 표시|
 |-|-|-|
@@ -133,8 +133,8 @@ ms.locfileid: "52896629"
 |**최소 응답 시간**|이 시간에는 인지 시간이 포함되지 않습니다.|아니요|
 |**최대 응답 시간**|이 시간에는 인지 시간이 포함되지 않습니다.|아니요|
 |**중앙 응답 시간**|이 시간에는 인지 시간이 포함되지 않습니다.|아니요|
-|**90% 응답 시간**|트랜잭션 시간의 90번째 백분위수 값입니다. 이 시간에는 인지 시간이 포함되지 않습니다. **참고:** 이는 **90% 트랜잭션 시간** 값을 사용하는 Visual Studio Team System 2008 테스트 로드 에이전트와 다릅니다.|아니요|
-|**95% 응답 시간**|트랜잭션 시간의 95번째 백분위수 값입니다. 이 시간에는 인지 시간이 포함되지 않습니다. **참고:** 이는 **95% 트랜잭션 시간** 값을 사용하는 Visual Studio Team System 2008 테스트 로드 에이전트와 다릅니다.|아니요|
+|**90% 응답 시간**|트랜잭션 시간의 90번째 백분위수 값입니다. 이 시간에는 인지 시간이 포함되지 않습니다. **참고:**  **90% 트랜잭션 시간** 값을 사용한 Visual Studio Team System 2008 테스트 부하 에이전트와 다릅니다.|아니요|
+|**95% 응답 시간**|트랜잭션 시간의 95번째 백분위수 값입니다. 이 시간에는 인지 시간이 포함되지 않습니다. **참고:**  **95% 트랜잭션 시간** 값을 사용한 Visual Studio Team System 2008 테스트 부하 에이전트와 다릅니다.|아니요|
 |**99% 응답 시간**|트랜잭션 시간의 99번째 백분위수 값입니다. 이 시간에는 인지 시간이 포함되지 않습니다.|아니요|
 |**표준 편차 응답 시간**|이 시간에는 인지 시간이 포함되지 않습니다.|아니요|
 

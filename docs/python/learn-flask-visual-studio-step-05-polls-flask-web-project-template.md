@@ -1,5 +1,6 @@
 ---
-title: 자습서 - Visual Studio의 Flask 학습, 5단계
+title: Visual Studio 5단계, 설문 조사 프로젝트 템플릿에서 Flask 자습서 알아보기
+titleSuffix: ''
 description: Visual Studio 프로젝트 컨텍스트에서 Flask 기본 사항을 검토하는 연습 과정으로, 특히 설문 조사 Flask 웹 프로젝트 및 설문 조사 Flask/Jadek 웹 프로젝트 템플릿의 기능을 구체적으로 설명합니다.
 ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
@@ -8,17 +9,18 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bf6c9299f994ba1f5272c68724171fb42e85a679
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: a29e222df2a8443e9d5210c0382125cdc65a814f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143205"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066001"
 ---
-# <a name="step-5-use-the-polls-flask-web-project-template"></a>5단계: 설문조사 Flask 웹 프로젝트 템플릿 사용
+# <a name="step-5-use-the-polls-flask-web-project-template"></a>5단계: 설문 조사 Flask 웹 프로젝트 템플릿 사용
 
 **이전 단계: [전체 Flask 웹 프로젝트 템플릿 사용](learn-flask-visual-studio-step-04-full-flask-project-template.md)**
 
@@ -34,7 +36,7 @@ Visual Studio의 “Flask 웹 프로젝트” 템플릿을 이해했으면 이�
 
 또한 Visual Studio는 동일한 앱을 생성하지만 Jinja 템플레이팅 엔진에 Jade 확장을 사용하는 "설문 조사 Flask/Jade 웹 프로젝트" 템플릿도 제공합니다. 자세한 내용은 [4단계 - Flask/Jade 웹 프로젝트 템플릿](learn-flask-visual-studio-step-04-full-flask-project-template.md#the-flaskjade-web-project-template)을 참조하세요.
 
-## <a name="step-5-1-create-the-project"></a>5-1단계: 프로젝트 만들기
+## <a name="step-5-1-create-the-project"></a>5-1단계: 프로젝트를 만듭니다.
 
 1. Visual Studio에서 **솔루션 탐색기**로 이동하여 이 자습서의 앞부분에서 만든 **LearningFlask** 솔루션을 마우스 오른쪽 단추로 클릭하고 **추가** > **새 프로젝트**를 선택합니다. 새 솔루션을 사용하려는 경우에는 **파일** > **새로 만들기** > **프로젝트**를 대신 선택합니다.
 
@@ -234,7 +236,7 @@ def seed():
 
 ### <a name="question-how-does-one-add-new-polls-to-the-app"></a>질문: 새 설문 조사를 앱에 어떻게 추가하나요?
 
-답변: 프로젝트 템플릿을 통해 제공된 앱에는 설문 조사를 추가하거나 편집할 수 있는 기능이 없습니다. *models\samples.json*을 수정하여 새 초기화 데이터를 만들 수는 있지만 그럴 경우 데이터 저장소를 다시 설정해야 합니다 편집 기능을 구현하려면 필요한 `Choice` 및 `Poll` 인스턴스를 만드는 메서드로 `Repository` 클래스 인터페이스를 확장한 다음, 해당 메서드를 사용하는 추가 페이지에 UI를 구현해야 합니다.
+대답: 프로젝트 템플릿을 통해 제공된 앱에는 설문 조사를 추가하거나 편집할 수 있는 기능이 없습니다. *models\samples.json*을 수정하여 새 초기화 데이터를 만들 수는 있지만 그럴 경우 데이터 저장소를 다시 설정해야 합니다 편집 기능을 구현하려면 필요한 `Choice` 및 `Poll` 인스턴스를 만드는 메서드로 `Repository` 클래스 인터페이스를 확장한 다음, 해당 메서드를 사용하는 추가 페이지에 UI를 구현해야 합니다.
 
 ## <a name="step-5-4-understand-the-poll-detail-and-results-views"></a>5-4단계: 설문 조사 세부 정보 및 결과 보기 이해
 
@@ -346,7 +348,7 @@ def results(key):
 ## <a name="next-steps"></a>다음 단계
 
 > [!Note]
-> 이 자습서를 진행하는 동안 Visual Studio 솔루션을 소스 제어에 커밋했으면 다른 커밋을 수행할 수 있습니다. 솔루션이 GitHub의 자습서 소스 코드([Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask))와 일치해야 합니다.
+> 이 자습서를 진행하는 동안 Visual Studio 솔루션을 소스 제어에 커밋했으면 다른 커밋을 수행할 수 있습니다. 솔루션은 GitHub의 자습서 소스 코드와 일치해야 합니다. [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask).
 
 이제 Visual Studio에서 “빈 Flask 웹 프로젝트”, “Flask[/Jade] 웹 프로젝트” 및 “설문 조사 Flask[/Jade] 웹 프로젝트” 템플릿 전체를 살펴보았습니다. 보기, 템플릿 및 라우팅 사용과 같은 Flask의 모든 기본 사항을 배웠으며, 백업 데이터 저장소를 사용하는 방법을 알아보았습니다. 이제 필요한 모든 보기 및 모델을 사용하여 웹앱을 직접 시작할 수 있습니다.
 

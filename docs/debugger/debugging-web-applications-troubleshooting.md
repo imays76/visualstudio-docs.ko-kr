@@ -1,6 +1,6 @@
 ---
-title: '웹 응용 프로그램 디버깅: 문제 해결 | Microsoft Docs'
-ms.custom: ''
+title: 문제 해결-웹 앱 디버깅 | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3720dccfd6118aaacd122ea254618d0ce226cf8d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: b5f931a9942a89ae56836b5fbe91473b9dc9f568
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470857"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063997"
 ---
-# <a name="debugging-web-applications-troubleshooting"></a>웹 응용 프로그램 디버깅: 문제 해결
+# <a name="debugging-web-applications-troubleshooting"></a>웹 애플리케이션 디버그: 문제 해결
 이 단원에는 오류를 해결하는 데 사용할 수 있는 일반적인 절차가 포함되어 있습니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
@@ -34,7 +34,7 @@ ms.locfileid: "31470857"
  디버깅을 사용할 수 있도록 IIS의 속성을 올바르게 설정하는 방법을 설명합니다.  
   
 ## <a name="related-sections"></a>관련 단원  
- [웹 응용 프로그램 디버그: 오류 및 문제 해결](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
+ [웹 애플리케이션 디버그: 오류 및 문제 해결](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
  오류 및 문제 해결에 대해 설명합니다.  
   
  [웹 응용 프로그램 및 스크립트 디버그](../debugger/debugging-web-applications-and-script.md)  

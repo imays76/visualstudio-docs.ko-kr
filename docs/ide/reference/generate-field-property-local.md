@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 필드, 속성 또는 로컬 변수 생성
+title: 필드, 속성, 로컬 변수 생성
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 60472c83738351ebc46a96e9d53bc4ae3015c514
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: d3cd886e4ed08bbe4dbeea1b177dc4dd22502d99
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296231"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064036"
 ---
 # <a name="generate-a-field-property-or-local-variable-in-visual-studio"></a>Visual Studio에서 필드, 속성 또는 로컬 변수 생성
 
@@ -24,7 +24,7 @@ ms.locfileid: "51296231"
 
 - Visual Basic
 
-**대상:** 이전에 선언되지 않은 필드, 속성 또는 로컬에 대한 코드를 즉시 생성할 수 있습니다.
+**내용:** 이전에 선언되지 않은 필드, 속성 또는 로컬에 대한 코드를 즉시 생성할 수 있습니다.
 
 **시기:** 새 필드, 속성 또는 로컬을 소개하고 자동으로 해당 항목을 제대로 선언하려고 합니다.
 

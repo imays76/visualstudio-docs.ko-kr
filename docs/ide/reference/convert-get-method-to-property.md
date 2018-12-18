@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 Get 메서드를 속성으로 변환 및 속성을 Get 메서드로 변환
+title: Get 메서드를 속성으로 변환 및 속성을 Get 메서드로 변환
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 35836e18e9cf8ffa33056b6bd93959d8debcc43a
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: c5e7cc7be759991647a9bd40415639ab3b08fa1d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896031"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53056349"
 ---
 # <a name="convert-get-method-to-property--convert-property-to-get-method-refactorings"></a>Get 메서드를 속성으로 변환 / 속성을 Get 메서드로 변환 / 리팩터링
 
@@ -29,7 +29,7 @@ ms.locfileid: "52896031"
 
 ## <a name="convert-get-method-to-property"></a>Get 메서드를 속성으로 변환
 
-**대상:** Get 메서드를 속성(및 선택적으로 Set 메서드)으로 변환할 수 있습니다.
+**내용:** Get 메서드를 속성(및 선택적으로 Set 메서드)으로 변환할 수 있습니다.
 
 **시기:** 논리를 포함하지 않는 Get 메서드가 있습니다.
 
@@ -70,7 +70,7 @@ public int MyValue
 
 ## <a name="convert-property-to-get-method"></a>속성을 Get 메서드로 변환
 
-**대상:** 속성을 Get 메서드로 변환할 수 있습니다.
+**내용:** 속성을 Get 메서드로 변환할 수 있습니다.
 
 **시기:** 값을 즉시 설정하고 가져오는 것 이외에 관련된 속성이 있습니다.
 

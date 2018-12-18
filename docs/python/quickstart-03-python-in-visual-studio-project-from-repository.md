@@ -1,22 +1,23 @@
 ---
 title: 빠른 시작 - Python 코드의 리포지토리 복제
 description: 이 빠른 시작에서는 Visual Studio 팀 탐색기를 사용하는 Python koans 리포지토리를 복제하여 Visual Studio에서 Python 프로젝트를 만듭니다.
-ms.date: 09/04/2018
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a4b01cc775c32bc602699aa2753482f184661079
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 871a5f620cc90db5064562461336fdeac38ba757
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281691"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068395"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>빠른 시작: Visual Studio에서 Python 코드의 리포지토리 복제
 
@@ -57,7 +58,7 @@ ms.locfileid: "44281691"
 
 1. **Ctrl**+**F5**를 누르거나 **디버그** > **디버깅하지 않고 시작**을 선택하여 프로그램을 실행합니다. *koans.txt*에 대한 **FileNotFoundError**가 표시되면 이전 단계에서 설명한 작업 디렉터리 설정을 확인합니다.
 
-1. 프로그램이 성공적으로 실행되면 *python3/koans/about_asserts.py*의 줄 17에 어설션 오류를 표시합니다. 이것은 의도적입니다. 프로그램은 모든 의도적인 오류를 수정하여 Python을 가르치도록 설계되었습니다. (자세한 내용은 Python Koans에 영감을 준 [Ruby Koans](http://rubykoans.com/)에 있습니다.)
+1. 프로그램이 성공적으로 실행되면 *python3/koans/about_asserts.py*의 줄 17에 어설션 오류를 표시합니다. 이것은 의도적입니다. 프로그램은 모든 의도적인 오류를 수정하여 Python을 가르치도록 설계되었습니다. (자세한 내용은 Python Koans에 영감을 준 [Ruby Koans](https://rubykoans.com/)에 있습니다.)
 
     ![Python koans 프로그램의 첫 번째 출력](media/koans-output.png)
 

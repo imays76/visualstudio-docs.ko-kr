@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bfe90b47086232650a38581bb2a8af1b534b8063
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a2d9cb832d8797eb4ebf16482f4bef02aa6644a3
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835990"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064299"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>방법: 웹 사이트에 대한 성능 데이터 수집
 
@@ -79,11 +79,11 @@ ms.locfileid: "49835990"
 
 5. 마법사의 세 번째 페이지에서 **웹 응용 프로그램이 실행될 URL 또는 경로** 상자에 응용 프로그램 홈 페이지에 대한 URL을 입력하고 **다음**을 클릭합니다.
 
-   - 서버(IIS) 기반 웹 사이트의 경우 **<http://localhost/MySite/default.aspx>** 와 같은 URL을 입력합니다. 이렇게 하면 MySite의 응용 프로그램 루트에서 로컬 컴퓨터의 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 응용 프로그램이 프로파일링되며, 해당 사이트의 default.aspx 페이지가 Internet Explorer에서 시작되어 세션이 시작됩니다.
+   - 서버(IIS) 기반 웹 사이트의 경우 **<`http://localhost/MySite/default.aspx`>** 와 같은 URL을 입력합니다. 이렇게 하면 MySite의 응용 프로그램 루트에서 로컬 컴퓨터의 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 응용 프로그램이 프로파일링되며, 해당 사이트의 default.aspx 페이지가 Internet Explorer에서 시작되어 세션이 시작됩니다.
 
-   - 파일 기반 웹 사이트에는 file///**c:\WebSites\MySite\default.aspx**같은 경로를 입력합니다. 이렇게 하면 c:\webSites\MySite에 있는 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 응용 프로그램이 프로파일링되고 http://localhost:nnnn/MySite/default.aspx 페이지가 Internet Explorer에서 시작되어 세션이 시작됩니다.
+   - 파일 기반 웹 사이트에는 file///**c:\WebSites\MySite\default.aspx**같은 경로를 입력합니다. 이렇게 하면 c:\webSites\MySite에 있는 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 응용 프로그램이 프로파일링되고 `http://localhost:nnnn/MySite/default.aspx` 페이지가 Internet Explorer에서 시작되어 세션이 시작됩니다.
 
-   - JavaScript 데이터를 수집할 외부 사이트에는 http://www.contoso.com과 같은 URL을 입력합니다.
+   - JavaScript 데이터를 수집할 외부 사이트에는 `http://www.contoso.com`과 같은 URL을 입력합니다.
 
      자세한 내용은 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 대상 이진에 대한 속성 페이지를 참조하세요.
 

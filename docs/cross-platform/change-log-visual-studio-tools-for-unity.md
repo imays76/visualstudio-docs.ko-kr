@@ -1,24 +1,60 @@
 ---
 title: 변경 로그(Visual Studio Tools for Unity, Windows) | Microsoft Docs
 ms.custom: ''
-ms.date: 08/06/2018
+ms.date: 11/28/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
-author: TerryGLee
-ms.author: tglee
+author: therealjohn
+ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: da2e91e15572a9904115926447523d8dba23a36a
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 4db1d1d5340465b2e977a651eea2e6ad592c22e0
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000728"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068382"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>변경 로그(Visual Studio Tools for Unity, Windows)
 Visual Studio Tools for Unity에 대한 변경 로그입니다.
+
+## <a name="3903"></a>3.9.0.3
+ 릴리스 날짜: 2018년 11월 28일
+
+### <a name="bug-fixes"></a>버그 수정
+
+-   **통합:**
+
+    -   첫 번째 프로젝트에 있는 스크립트를 추가하거나 제거할 때 프로젝트 재로딩 및 intellisense 문제가 해결되었습니다.
+
+## <a name="3902"></a>3.9.0.2
+ 릴리스 날짜: 2018년 11월 19일
+
+### <a name="bug-fixes"></a>버그 수정
+
+-   **디버거:**
+
+    -   특히 ‘Unity에 연결’을 누르거나 게임을 다시 시작할 때, Unity의 디버거 엔진과 통신하는 데 사용되는 라이브러리에서 교착 상태가 발생하여 Visual Studio 또는 Unity를 동결시키는 문제가 해결되었습니다.
+
+## <a name="3901"></a>3.9.0.1
+ 릴리스 날짜: 2018년 11월 15일
+
+### <a name="bug-fixes"></a>버그 수정
+
+-   **통합:**
+
+    -   다른 기본 편집기가 선택되었을 때 고정 Unity 플러그 인 활성화.
+
+## <a name="3900"></a>3.9.0.0
+ 릴리스 날짜: 2018년 11월 13일
+
+### <a name="bug-fixes"></a>버그 수정
+
+-   **Project Generation:**
+
+    -   Unity에서 수정된 Unity 성능 버그에 대한 해결 방법이 롤백되었습니다.
 
 ## <a name="3807"></a>3.8.0.7
  릴리스 날짜: 2018년 9월 20일
@@ -27,7 +63,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 -   **디버거:**
 
-    -   특히 ‘Unity에 연결’을 누르거나 게임을 다시 시작할 때, Unity의 디버거 엔진과 통신하는 데 사용되는 라이브러리에서 교착 상태가 발생하여 Visual Studio 또는 Unity를 동결시키는 문제가 해결되었습니다.
+    -   (3.9.0.2에서 백포팅) 특히 ‘Unity에 연결’을 누르거나 게임을 다시 시작할 때, Unity의 디버거 엔진과 통신하는 데 사용되는 라이브러리에서 교착 상태가 발생하여 Visual Studio 또는 Unity를 동결시키는 문제가 해결되었습니다.
 
 ## <a name="3806"></a>3.8.0.6
  릴리스 날짜: 2018년 8월 27일
@@ -71,7 +107,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 -   **Project Generation:**
 
-    -   Unity에서 수정된 Unity 성능 버그에 대한 해결 방법이 롤백되었습니다.
+    -   (3.9.0.0에서 백포팅) Unity에서 수정된 Unity 성능 버그에 대한 해결 방법이 롤백되었습니다.
 
 ## <a name="3802"></a>3.8.0.2
  릴리스 날짜: 2018년 7월 7일
@@ -634,7 +670,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 -   Windows 스토어 앱용 UnityEngine 및 UnityEditor 어셈블리에 대한 참조를 수정했습니다.
 
--   디버거를 단계별로 실행할 때 발생하는 오류(단계별로 실행할 수 없음, 일반 예외)를 수정했습니다.
+-   디버거에서 단계별로 실행할 때 오류를 해결했습니다. 단계별로 실행할 수 없는 일반 예외.
 
 -   Visual Studio 2015의 적중 횟수 중단점을 수정했습니다.
 
@@ -1105,21 +1141,21 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 -   버그 UVS-48 수정: 큰따옴표를 입력하면 오류가 발생하고 모든 기능(코드 완성, 구문 강조 등)이 중단되는 문제.
 
--   버그 UVS-46 수정: Visual Studio의 오류 목록을 클릭할 때 열린 스크립트 파일(UnityScript) 중복 문제
+-   버그 UVS-46 수정: Visual Studio의 오류 목록을 클릭할 때 열린 스크립트 파일(UnityScript) 중복 문제.
 
--   버그 UVS-42 수정: VS 2012에서 상태 표시줄의 Unity 연결 로고가 마우스 이벤트를 처리하지 않는 문제
+-   버그 UVS-42 수정: VS 2012에서 상태 표시줄의 Unity 연결 로고가 마우스 이벤트를 처리하지 않는 문제.
 
--   버그 UVS-44 수정: VS 2012에서 빠른 MonoBehaviour에 대해 CTRL+SHIFT+Q를 사용할 수 없는 문제
+-   버그 UVS-44 수정: VS 2012에서 빠른 MonoBehaviours에 대해 CTRL+SHIFT+Q를 사용할 수 없는 문제.
 
--   버그 UVS-40 수정: 창이 VS2012의 “어두운" 테마에서 비활성화된 경우 Unity 프로젝트 탐색기에서 선택한 항목을 읽지 못하는 문제
+-   버그 UVS-40 수정: 창이 VS2012의 "어두운" 테마에서 비활성화된 경우 Unity 프로젝트 탐색기에서 선택한 항목을 읽지 못하는 문제.
 
--   버그 UVS-39 수정: 이스케이프된 문자열 토큰화 문제
+-   버그 UVS-39 수정: 이스케이프된 문자열 토큰화 문제.
 
--   버그 UVS-35 수정: 변수를 검사할 때 개체에 대한 ToString 호출 문제
+-   버그 UVS-35 수정: 변수를 검사할 때 개체에 대한 ToString 호출 문제.
 
--   버그 UVS-27 수정: VS2012에서 "어두운" 테마와 Goto 기호 창 불일치 문제
+-   버그 UVS-27 수정: VS2012에서 "어두운" 테마와 Goto 기호 창 불일치 문제.
 
--   버그 UVS-11 수정: 코루틴의 로컬 문제
+-   버그 UVS-11 수정: 코루틴의 지역.
 
 ## <a name="1100---beta-release"></a>1.1.0.0 - 베타 릴리스
  릴리스 날짜: 2013년 3월 9일
@@ -1225,9 +1261,9 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 -   식 계산에 대해 로드된 어셈블리에서 형식을 검색하는 방법을 수정했습니다.
 
--   버그 UVS-21 수정: Unity 개체에서의 할당 계산이 영향을 미치지 않는 문제
+-   버그 UVS-21 수정: Unity 개체에서의 할당 계산이 영향을 미치지 않는 문제.
 
--   버그 UVS-21 수정: Unity Math API에 대한 메서드 호출을 계산할 때의 잘못된 포인터 문제
+-   버그 UVS-21 수정: Unity Math API에 대한 메서드 호출을 계산할 때의 잘못된 포인터 문제.
 
 ## <a name="1080"></a>1.0.8.0
  릴리스 날짜: 2012년 9월 26일

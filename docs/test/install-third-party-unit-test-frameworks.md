@@ -9,20 +9,22 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ffd6b8c66f0575ec07e66ea2a138f2761b20cc7a
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 8acdeb17c9c45613d6a987d503deeaf63beecdaa
+ms.sourcegitcommit: 150fa6ec89ea2d086c0af9ababbaf6103a12eff1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379640"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52954086"
 ---
-# <a name="install-third-party-unit-test-frameworks"></a>타사 단위 테스트 프레임워크 설치
+# <a name="install-unit-test-frameworks"></a>단위 테스트 프레임워크 설치
 
 Visual Studio 테스트 탐색기는 탐색기의 어댑터 인터페이스를 개발한 단위 테스트 프레임워크를 실행할 수 있습니다. 프레임워크 설치 프로그램은 이진 파일을 설치하고, 지원하는 언어의 Visual Studio 프로젝트 템플릿을 추가합니다. 템플릿으로 프로젝트를 만들면 프레임워크가 테스트 탐색기에 등록됩니다. Visual Studio 솔루션에는 다양한 프레임워크를 사용하고 다양한 언어로 대상이 지정되는 단위 테스트 프로젝트가 포함될 수 있습니다. 테스트 탐색기는 이들 모두를 실행합니다.
 
-## <a name="acquire-third-party-frameworks"></a>타사 프레임워크 확보
+[MSTest](getting-started-with-unit-testing.md)는 Visual Studio에서 제공하는 테스트 프레임워크이며 기본적으로 Visual Studio와 함께 설치됩니다.
 
-Visual Studio 확장 관리자 또는 Visual Studio Marketplace를 사용하여 많은 타사 단위 테스트 프레임워크를 다운로드하고 설치할 수 있습니다. 프레임워크 웹 사이트와 같은 다른 사이트에서도 프레임워크를 다운로드할 수 있습니다.
+## <a name="acquire-frameworks"></a>프레임워크 취득
+
+Visual Studio 확장 관리자 또는 [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs)를 사용하여 타사 단위 테스트 프레임워크를 다운로드하고 설치할 수 있습니다. 프레임워크 웹 사이트와 같은 다른 사이트에서도 프레임워크를 다운로드할 수 있습니다.
 
 ### <a name="install-from-visual-studio"></a>Visual Studio에서 설치
 
@@ -64,7 +66,7 @@ Visual Studio 확장 관리자 또는 Visual Studio Marketplace를 사용하여 
 
 1. **도구** > **NuGet 패키지 관리자** > **솔루션에 대한 NuGet 패키지 관리**로 이동하여 솔루션에 대한 Nuget 패키지 관리자를 엽니다.
 
-2. **업데이트** 탭을 클릭하고 설치된 NUnit 또는 xUnit 테스트 어댑터를 검색합니다.
+2. **업데이트** 탭을 클릭하고 설치된 MSTest, NUnit 또는 xUnit 테스트 어댑터를 검색합니다.
 
 3. 각 테스트 어댑터를 선택한 다음, 드롭다운 메뉴에서 안정적인 최신 버전을 선택합니다.
 

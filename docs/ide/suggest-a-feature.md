@@ -1,5 +1,5 @@
 ---
-title: '개요: Visual Studio에 대한 기능 제안'
+title: 기능 제안
 description: 개발자 커뮤니티의 제안 사항, 제안하는 방법 및 Microsoft에서 제안 사항을 Visual Studio 로드맵에 사용하는 방법을 설명합니다.
 ms.date: 11/15/2018
 ms.prod: visual-studio-dev15
@@ -10,24 +10,24 @@ ms.author: seiyer
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04d76dcb09db27ed3ac63ba0dd6cc8fc60588f0f
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: 541d8968ea71844d89903b9e4f146e86a15737e2
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826703"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160038"
 ---
-# <a name="overview-suggest-a-feature"></a>개요: 기능 제안
+# <a name="overview-suggest-a-feature"></a>Overview: ADO.NET Data Services 기능 제안
 
 [Visual Studio 개발자 커뮤니티](https://developercommunity.visualstudio.com)에서는 문제를 보고하는 현재 기능과 더불어 기능을 제안하기 위한 새로운 환경이 도입되었습니다. 이는 Visual Studio의 엔지니어링 워크플로에 직접 참여할 수 있는 새로운 방법입니다.
 
-지금까지 Visual Studio 사용자는 사용자 의견 포럼을 사용하여 새로운 기능 아이디어를 제안했습니다. 개발자 커뮤니티의 ‘기능 제안’ 환경을 사용하면 사용자 의견 포럼에서 Visual Studio 제품 팀과 직접 연결하는 모든 피드백을 위한 단일 플랫폼으로 전환할 수 있습니다.  
+지금까지 Visual Studio 사용자는 사용자 의견 포럼을 사용하여 새로운 기능 아이디어를 제안했습니다. 개발자 커뮤니티의 ‘기능 제안’ 환경을 사용하면 사용자 의견 포럼에서 Visual Studio 제품 팀과 직접 연결하는 모든 피드백을 위한 단일 플랫폼으로 전환할 수 있습니다.
 
 사용자 의견 포럼의 초기 아이디어 집합이 개발자 커뮤니티로 마이그레이션되었습니다. 마이그레이션은 피드백의 커뮤니티 영향과 제품 로드맵 우선 순위에 따라 수행되었습니다. 누락되었을 수 있는 제안 사항을 여기에 표시하려면 자유롭게 개발자 커뮤니티에 추가하세요.
 
 ## <a name="votes"></a>투표
 
-사용자 의견의 투표 시스템은 개발자 커뮤니티의 투표와 다르게 운영됩니다. 개발자 커뮤니티 투표 개수의 무결성을 유지하고 투표의 왜곡을 피하기 위해 각 기능 제안 옆에 사용자 의견 투표 개수가 태그로 명확하게 표시됩니다. 향상된 개발자 커뮤니티에서도 제안에 대한 투표가 계속되므로 사용자 의견 투표 개수와 별도로 새 투표 개수가 표시됩니다.  
+사용자 의견의 투표 시스템은 개발자 커뮤니티의 투표와 다르게 운영됩니다. 개발자 커뮤니티 투표 개수의 무결성을 유지하고 투표의 왜곡을 피하기 위해 각 기능 제안 옆에 사용자 의견 투표 개수가 태그로 명확하게 표시됩니다. 향상된 개발자 커뮤니티에서도 제안에 대한 투표가 계속되므로 사용자 의견 투표 개수와 별도로 새 투표 개수가 표시됩니다.
 
 ## <a name="user-voice"></a>사용자 의견
 
@@ -77,7 +77,7 @@ ms.locfileid: "51826703"
 
 - - -
 
-![개발자 커뮤니티의 제안에 대한 닫힘 - 정보 부족 상태](../ide/media/SuggestStates/ClosedNotEnoughInfo.jpg) 
+![개발자 커뮤니티의 제안에 대한 닫힘 - 정보 부족 상태](../ide/media/SuggestStates/ClosedNotEnoughInfo.jpg)
 
 **닫힘 - 정보 부족** 상태는 여러 번 시도했지만 기능 제안을 완전히 이해하기에 충분한 정보를 받지 못했음을 나타냅니다. 이 단계에서는 추가 작업을 수행할 수 없기 때문에 새로운 기능 제안을 종결해야 합니다.
 

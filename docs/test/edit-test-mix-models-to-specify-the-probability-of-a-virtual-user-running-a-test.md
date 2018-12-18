@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 텍스트 조합 모델 편집
+title: 텍스트 조합 모델 편집
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: acb786a4182a79a4133e2d94000ab5f7693bade3
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 6016aaa3273347509d82af5ef4fba70fa3ecc253
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894666"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057115"
 ---
 # <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>테스트 조합 모델을 편집하여 가상 사용자의 테스트 실행 가능성 지정
 
@@ -34,7 +34,7 @@ ms.locfileid: "52894666"
 
 -   **사용자 속도 기반:** 부하 테스트가 진행되는 동안 각 웹 성능 테스트 또는 단위 테스트가 시간당 사용자별로 지정된 횟수만큼 실행됩니다. 가상 사용자가 부하 테스트 전체에서 특정 속도로 테스트를 실행하도록 하려는 경우 이 테스트 조합 모델을 사용합니다.
 
--   **순차적 테스트 순서 기반:** 각 가상 사용자가 시나리오에 정의된 테스트 순서에 따라 웹 성능 또는 단위 테스트를 실행합니다. 가상 사용자는 부하 테스트가 완료될 때까지 이 순서로 테스트를 계속해서 순환합니다.
+-   **정렬된 순서 기반:** 각 가상 사용자가 시나리오에 정의된 테스트 순서에 따라 웹 성능 또는 단위 테스트를 실행합니다. 가상 사용자는 부하 테스트가 완료될 때까지 이 순서로 테스트를 계속해서 순환합니다.
 
 ## <a name="tasks"></a>작업
 

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 단위 테스트 실행
+title: 단위 테스트 기본 사항
 ms.date: 2016-01-07
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 45babce1d9b742bd2af5b047973c4f96b41e52cf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dff6910f74b9a08a8064e4fb88828a21940c8ab9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935317"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53053171"
 ---
 # <a name="unit-test-basics"></a>단위 테스트 기본 사항
 
@@ -219,7 +219,7 @@ public void My_Test ()
 
 ![테스트 탐색기 도구 모음에서 테스트 실행](../test/media/ute_toolbar.png)
 
-사용자는 **모두 실행** 을 선택해서 모든 테스트를 실행하거나 **실행** 을 선택해서 실행할 테스트 하위 집합을 선택할 수 있습니다. 일련의 테스트들을 실행한 다음에는 **테스트 탐색기** 창의 맨 아래에 테스트 실행의 요약이 나타납니다. 테스트를 선택하면 아래쪽 창에 해당 테스트의 세부 정보가 표시됩니다. 바로 가기 메뉴에서 **테스트 열기**를 선택하여(키보드: **F12**) 선택된 테스트에 대한 소스 코드를 표시합니다.
+사용자는 **모두 실행** 을 선택해서 모든 테스트를 실행하거나 **실행** 을 선택해서 실행할 테스트 하위 집합을 선택할 수 있습니다. 일련의 테스트들을 실행한 다음에는 **테스트 탐색기** 창의 맨 아래에 테스트 실행의 요약이 나타납니다. 테스트를 선택하면 아래쪽 창에 해당 테스트의 세부 정보가 표시됩니다. **테스트 열기**를 상황에 맞는 메뉴에서(키보드: **F12**) 선택하여 선택한 테스트에 대한 소스 코드를 표시합니다.
 
 개별 테스트에 종속성이 없어 임의 순서로 실행할 수 있는 경우 도구 모음의 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 토글 단추를 사용하여 병렬 테스트 실행을 켭니다. 이렇게 하면 모든 테스트를 실행하는 데 걸리는 시간을 훨씬 줄일 수 있습니다.
 
@@ -265,7 +265,7 @@ public void My_Test ()
 
 ![메서드 스텁 IntelliSense 메뉴 생성](../test/media/ute_generatemethodstubintellisense.png)
 
-**Q: 테스트를 실행하기 위한 입력으로 여러 데이터 집합을 사용하는 단위 테스트를 만들 수 있나요?**
+**Q: 테스트를 실행하기 위한 입력으로 여러 데이터 세트를 사용하는 단위 테스트를 만들 수 있나요?**
 
 **A:** 예. *데이터 기반 테스트 메서드* 를 사용하면 단일 단위 테스트 메서드에서 값 범위를 확인할 수 있습니다. 테스트하려는 변수 값이 포함된 데이터 소스 및 테이블을 지정하는 테스트 메서드에 대한 `DataSource` 특성을 사용합니다.  메서드 본문에서 `TestContext.DataRow[`*ColumnName*`]` 인덱서를 사용하여 변수에 행 값을 할당합니다.
 
@@ -297,7 +297,7 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
 
 자세한 내용은 [데이터 기반 단위 테스트](../test/how-to-create-a-data-driven-unit-test.md)를 참조하세요.
 
-**Q: 단위 테스트에서 테스트되는 코드의 양을 확인할 수 있나요?**
+**Q: 내 단위 테스트에서 테스트되는 코드의 양을 확인할 수 있나요?**
 
 **A:** 예. Visual Studio 코드 검사 도구를 사용하여 실제로 단위 테스트를 통해 테스트되는 코드의 양을 결정할 수 있습니다. 네이티브 및 관리 언어 그리고 단위 테스트 프레임워크에서 실행할 수 있는 모든 단위 테스트 프레임워크가 지원됩니다.
 

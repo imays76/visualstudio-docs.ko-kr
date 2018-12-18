@@ -1,4 +1,4 @@
----
+﻿---
 title: C++ Core Guidelines를 이용한 코드검사 사용
 ms.date: 08/14/2018
 ms.topic: conceptual

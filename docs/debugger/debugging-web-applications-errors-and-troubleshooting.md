@@ -1,6 +1,6 @@
 ---
-title: '웹 응용 프로그램 디버깅: 오류 및 문제 해결 | Microsoft Docs'
-ms.custom: ''
+title: 웹 앱-오류를 디버깅 및 문제 해결
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -28,14 +28,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81d9ba4a2e37124f8d8b3641a129d09da1728118
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: b089e3d095131e998729dc5d7a270d859673b2c7
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471520"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53053653"
 ---
-# <a name="debugging-web-applications-errors-and-troubleshooting"></a>웹 응용 프로그램 디버깅: 오류 및 문제 해결
+# <a name="debugging-web-applications-errors-and-troubleshooting"></a>웹 애플리케이션 디버그: 오류 및 문제 해결
 웹 응용 프로그램을 디버깅하려고 할 때 다음과 같은 오류가 발생할 수 있습니다.  
   
 -   [문제 해결](../debugger/debugging-web-applications-troubleshooting.md)  
@@ -46,13 +46,13 @@ ms.locfileid: "31471520"
   
 -   [오류: ASP.NET이 설치되어 있지 않습니다.](../debugger/error-aspnet-not-installed.md)  
   
--   [오류: Windows 통합 인증을 사용할 수 없기 때문에 디버깅을 하지 못했습니다.](../debugger/error-debugging-failed-because-integrated-windows-authentication-is-not-enabled.md)  
+-   [오류: Windows 통합 인증을 사용할 수 없기 때문에 디버깅하지 못했습니다.](../debugger/error-debugging-failed-because-integrated-windows-authentication-is-not-enabled.md)  
   
 -   [오류: 웹 서버가 제대로 구성되어 있지 않습니다.](../debugger/error-the-web-server-is-not-configured-correctly.md)  
   
 -   [오류: 웹 서버가 잠겨 있기 때문에 디버깅을 사용하기 위해 필요한 DEBUG 동사를 사용할 수 없습니다.](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)  
   
--   [오류: 웹 서비스를 디버그하는 동안 시간이 초과되었습니다.](../debugger/error-timeout-while-debugging-web-services.md)  
+-   [오류: 웹 서비스를 디버깅하는 동안 시간이 초과되었습니다.](../debugger/error-timeout-while-debugging-web-services.md)  
   
 -   [오류: 웹 서버에서 디버깅을 시작할 수 없습니다.](../debugger/error-unable-to-start-debugging-on-the-web-server.md)  
   

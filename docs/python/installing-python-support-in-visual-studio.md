@@ -1,22 +1,23 @@
 ---
-title: Python 지원 설치
+title: Python 설치 지원
 description: 옵션 및 설치 위치를 포함하여 Visual Studio 2017, 2015, 2013, 2012 및 2010에서 PTVS(Visual Studio용 Python 도구)를 설치하는 방법입니다.
-ms.date: 10/09/2018
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5e7479a8d121eeb518d5ba39c9eb1444af64a788
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: e306bffe8f2cd59332f367822cd90b54b44b7635
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349023"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063757"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Windows의 Visual Studio에서 Python 지원 설치 방법
 
@@ -82,7 +83,7 @@ Visual Studio에서 Python 설치 또는 실행 문제가 발생하는 경우 �
 - Visual Studio 설치 관리자의 [**복구**](../install/repair-visual-studio.md) 옵션을 사용합니다.
 - Windows의 **설정** > **앱 및 기능**을 통해 Python을 복구하거나 다시 설치합니다.
 
-**예제 오류**: 대화형 프로세스를 시작하지 못했습니다. System.ComponentModel.Win32Exception (0x80004005): Microsoft.PythonTools.Repl.PythonInteractiveEvaluator.d__43.MoveNext()에서 알 수 없는 오류(0xc0000135)입니다.
+**오류 예제**: 대화형 프로세스를 시작하지 못했습니다. System.ComponentModel.Win32Exception (0x80004005): Microsoft.PythonTools.Repl.PythonInteractiveEvaluator.d__43.MoveNext()에서 알 수 없는 오류(0xc0000135)입니다.
 
 ## <a name="visual-studio-2015"></a>Visual Studio 2015
 

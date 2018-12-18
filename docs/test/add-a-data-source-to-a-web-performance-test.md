@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 웹 성능 테스트에 데이터 소스 추가
+title: 웹 성능 테스트에 데이터 소스 추가
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 13d0f405b59b95df0edbcfc5e6f051c1f3140035
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 6d2ae95883884909641541e0efe6e4efbc7fe06a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896109"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065209"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>웹 성능 테스트에 데이터 소스 추가
 
@@ -124,7 +124,7 @@ ms.locfileid: "52896109"
 
 ## <a name="q--a"></a>Q&A
 
-### <a name="q-what-databases-can-i-use-as-a-data-source"></a>Q: 데이터 소스로 사용할 수 있는 데이터베이스는 무엇입니까?
+### <a name="q-what-databases-can-i-use-as-a-data-source"></a>Q: 데이터 원본으로 사용할 수 있는 데이터베이스는 무엇입니까?
 
 **A:** 다음을 사용할 수 있습니다.
 
@@ -215,7 +215,7 @@ ms.locfileid: "52896109"
 
      ![테스트에 추가된 데이터 소스](../test/media/web_test_databinding_adddatasourcecolortext7.png)
 
-### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>Q: XML 파일을 데이터 소스로 사용하려면 어떻게 할까요?
+### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>Q: XML 파일을 데이터 원본으로 사용하려면 어떻게 할까요?
 
 **A:** 예.
 
@@ -247,7 +247,7 @@ ms.locfileid: "52896109"
 
      ![이름을 입력하고 XML 파일을 선택](../test/media/web_test_databinding_adddatasourcedialogxml.png)
 
-### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>Q: SOAP을 사용한 웹 서비스 요청에 데이터 바인딩을 추가할 수 있습니까?
+### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>Q: SOAP를 사용한 웹 서비스 요청에 데이터 바인딩을 추가할 수 있습니까?
 
 **A:** 예, SOAP XML을 수동으로 변경해야 합니다.
 

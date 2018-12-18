@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: 2a179b5d02a3c50e6942a660e845edd546037d86
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: e725234cadc301d5e0e369131efd53c1c69d6337
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896486"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53158959"
 ---
 # <a name="set-up-and-install-visual-studio-for-mac"></a>Mac용 Visual Studio 설정 및 설치
 
@@ -32,7 +32,7 @@ Visual Studio에서 iOS를 사용하는 경우 다음 사항이 필요합니다.
 
 1. [https://visualstudio.microsoft.com/](https://visualstudio.microsoft.com/)에서 Mac용 Visual Studio 다운로드
 
-2. 설치 관리자 패키지가 다운로드되면 **VisualStudioInstaller.dmg** 파일을 클릭하여 설치 관리자를 탑재하고 다음 이미지와 같이 로고를 두 번 클릭하여 실행합니다.
+2. 설치 관리자 패키지가 다운로드되면 **VisualStudioForMacInstaller.dmg** 파일을 클릭하여 설치 관리자를 탑재한 후, 다음 이미지와 같이 로고를 두 번 클릭하여 실행합니다.
 
    ![설치 관리자 대화 상자](media/installer-image1.png)
 

@@ -1,6 +1,5 @@
 ---
 title: 원격 디버깅용 Windows 방화벽 구성 | Microsoft Docs
-ms.custom: ''
 ms.date: 10/31/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,18 +9,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d4e4ccc09d8919260b1634fd02790c1bf5b10636
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
-ms.translationtype: HT
+ms.openlocfilehash: da505c6193dd7d05cc10a8e7cec8383f8ee3adfc
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750938"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058599"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>원격 디버깅용 Windows 방화벽을 구성 합니다.
 
 Windows 방화벽에 의해 보호 되는 네트워크, 원격 디버깅을 허용 하도록 방화벽 구성 해야 합니다. Visual Studio 및 원격 디버깅 도구를 설치 또는 시작 하는 동안 올바른 방화벽 포트 열기를 시도 하지만 포트를 열거나 수동으로 앱을 허용 하도록 할 수도 있습니다. 
 
-이 항목에서는 Windows 10, 8/8.1 및 7의 원격 디버깅을 사용 하도록 Windows 방화벽을 구성 하는 방법 설명 및 Windows Server 2012 R2, 2012 및 2008 R2 컴퓨터. Visual Studio와 원격 컴퓨터를 동일한 운영 체제를 실행 하 고 필요가 없습니다. 예를 들어, Visual Studio 컴퓨터는 Windows 10을 실행 하 고 원격 컴퓨터에서 Windows Server 2012 R2를 실행할 수 있습니다.      
+이 항목에서는 Windows 10, 8/8.1 및 7의 원격 디버깅을 사용 하도록 Windows 방화벽을 구성 하는 방법 설명 및 Windows Server 2012 R2, 2012 및 2008 R2 컴퓨터. Visual Studio와 원격 컴퓨터를 동일한 운영 체제를 실행 하 고 필요가 없습니다. 예를 들어 Visual Studio 컴퓨터는 Windows 10을 실행하고 원격 컴퓨터는 Windows Server 2012 R2를 실행할 수 있습니다.      
   
 >[!NOTE]
 >다른 운영 체제에 이전 버전의 Windows에 대 한 Windows 방화벽을 구성 하는 것에 대 한 지침을 약간 다릅니다. word를 사용 하 여 Windows 8/8.1, Windows 10 및 Windows Server 2012 설정을 *앱*반면 단어를 사용 하 여 Windows 7 및 Windows Server 2008 *프로그램*합니다.  
@@ -56,16 +55,16 @@ Visual Studio와 원격 디버거 설치 또는 시작 중 올바른 포트를 �
 
 |**포트**|**들어오는/나가는 포트**|**프로토콜**|**설명**|   
 |-|-|-|-|
-|4022|들어오|TCP|VS 2017. Visual Studio 버전 마다 2 씩 포트 번호가 높으면 합니다. 자세한 내용은 [Visual Studio 원격 디버거 포트 할당](../debugger/remote-debugger-port-assignments.md)합니다.|  
-|4023|들어오|TCP|VS 2017. Visual Studio 버전 마다 2 씩 포트 번호가 높으면 합니다. 이 포트는 원격으로 사용 되는 디버그 원격 디버거의 64 비트 버전에서 32 비트 프로세스입니다. 자세한 내용은 [Visual Studio 원격 디버거 포트 할당](../debugger/remote-debugger-port-assignments.md)합니다.| 
+|4022|들어오는|TCP|VS 2017에 사용됩니다. Visual Studio 버전 마다 2 씩 포트 번호가 높으면 합니다. 자세한 내용은 [Visual Studio 원격 디버거 포트 할당](../debugger/remote-debugger-port-assignments.md)을 참조하세요.|  
+|4023|들어오는|TCP|VS 2017에 사용됩니다. Visual Studio 버전 마다 2 씩 포트 번호가 높으면 합니다. 이 포트는 원격으로 사용 되는 디버그 원격 디버거의 64 비트 버전에서 32 비트 프로세스입니다. 자세한 내용은 [Visual Studio 원격 디버거 포트 할당](../debugger/remote-debugger-port-assignments.md)을 참조하세요.| 
 |3702|나가는 포트|UDP|(선택 사항) 원격 디버거 검색에 필요합니다.|    
   
 선택 하는 경우 **사용 하 여 관리 되는 호환성 모드** 아래에서 **도구** > **옵션** > **디버깅**, 열기 이러한 추가 원격 디버거 포트입니다. 디버거 관리 되는 호환성 모드에는 Visual Studio 2010 버전의 디버거를 레거시 수 있습니다. 
 
 |**포트**|**들어오는/나가는 포트**|**프로토콜**|**설명**|  
 |-|-|-|-|  
-|135, 139, 445|나가는 포트|TCP|필수.|  
-|137, 138|나가는 포트|UDP|필수.|  
+|135, 139, 445|나가는 포트|TCP|필수 요소.|  
+|137, 138|나가는 포트|UDP|필수 요소.|  
 
 도메인 정책에 따라 IPSec을 통해 수행할 네트워크 통신에 필요한 경우 Visual Studio와 원격 컴퓨터에서 추가 포트를 열어야 합니다. 원격 IIS 웹 서버를 디버깅 하려면 원격 컴퓨터에서 포트 80을 엽니다.
 
@@ -109,7 +108,7 @@ Windows 방화벽을 통해 특정 앱을 허용 하려면 참조 [Windows 방�
   - 을 확인 하거나 규칙 설정을 변경 하려면 마우스 오른쪽 단추로 클릭 합니다 **원격 디버거** 앱 목록에 선택 **속성**합니다. 사용 된 **속성** 탭을 사용 하도록 설정 또는 규칙을 사용 하지 않도록 설정 하거나 변경 하려면 포트 번호, 프로토콜 또는 네트워크 형식입니다. 
   - 원격 디버거 앱 규칙 목록에 나타나지 않는 경우 [추가 하 고 올바른 포트를 구성](#configure-ports-for-remote-debugging)합니다. 
 
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
 [원격 디버깅](../debugger/remote-debugging.md)
 
 [Visual Studio 원격 디버거 포트 할당](../debugger/remote-debugger-port-assignments.md)

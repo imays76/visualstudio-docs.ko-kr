@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 클래스 또는 형식 생성
+title: 클래스 및 형식 생성
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: f7b8733e6c2a1464b5ea9c07c9c9109064183a6c
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 4f7d722669ddf51715b21ddaf1f253fb0668dfaa
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296283"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065476"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>Visual Studio에서 클래스 또는 형식 생성
 
@@ -29,7 +29,7 @@ ms.locfileid: "51296283"
 
 - Visual Basic
 
-**대상:** 클래스 또는 형식에 대한 코드를 즉시 생성할 수 있습니다.
+**내용:** 클래스 또는 형식에 대한 코드를 즉시 생성할 수 있습니다.
 
 **시기:** 새 클래스 또는 형식을 소개하고 자동으로 클래스 또는 형식을 제대로 선언하려고 합니다.
 
@@ -75,7 +75,7 @@ ms.locfileid: "51296283"
    선택 | 설명
    --- | ---
    액세스 | *기본*, *내부* 또는 *공용* 액세스 권한을 가지도록 형식을 설정합니다.
-   종류 | *클래스* 또는 *구조체*로 설정할 수 있습니다.
+   Kind | *클래스* 또는 *구조체*로 설정할 수 있습니다.
    name | 이를 변경할 수 없으며 이미 입력한 이름이 사용됩니다.
    프로젝트 | 솔루션에 여러 프로젝트가 있는 경우 클래스/구조체를 활성화할 위치를 선택할 수 있습니다.
    파일 이름 | 새 파일을 만들거나 기존 파일에 형식을 추가할 수 있습니다.

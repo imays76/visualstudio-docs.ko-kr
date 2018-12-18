@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 솔루션 및 프로젝트 만들기
+title: 솔루션 및 프로젝트 만들기
 ms.date: 02/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a912534b9e0212e68a947fa892395a233f263a87
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 7c03709517f1c1d5bd28a2a0847a51895eb49557
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349639"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052154"
 ---
 # <a name="create-solutions-and-projects"></a>솔루션 및 프로젝트 만들기
 
@@ -33,7 +33,7 @@ ms.locfileid: "51349639"
 > [!NOTE]
 > 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio에서 프로젝트 만들기](/visualstudio/mac/create-new-projects)를 참조하세요.
 
-**솔루션 탐색기**라고 하는 도구 창에서 솔루션과 프로젝트를 볼 수 있습니다. 다음 스크린샷은 **솔루션 탐색기**에서 두 개의 프로젝트(**BikeSharing.Clients.Core** 및 **BikeSharing.Clients.Windows**)가 포함된 예제 솔루션(**BikeSharing.Xamarin-UWP**)을 보여줍니다. 각 프로젝트에는 여러 파일, 폴더 및 참조가 포함되어 있습니다. 굵게 표시된 프로젝트 이름은 *시작 프로젝트*, 즉 앱 실행 시 시작하는 프로젝트입니다. 어떤 프로젝트가 시작 프로젝트인지 지정할 수 있습니다.
+**솔루션 탐색기**라고 하는 도구 창에서 솔루션과 프로젝트를 볼 수 있습니다. 다음 스크린샷은 두 개의 포로젝트가 포함된 **솔루션 탐색기**의 예제 솔루션(**BikeSharing.Xamarin-UWP**)을 보여줍니다. **BikeSharing.Clients.Core** 및 **BikeSharing.Clients.Windows**. 각 프로젝트에는 여러 파일, 폴더 및 참조가 포함되어 있습니다. 굵게 표시된 프로젝트 이름은 *시작 프로젝트*, 즉 앱 실행 시 시작하는 프로젝트입니다. 어떤 프로젝트가 시작 프로젝트인지 지정할 수 있습니다.
 
 ![프로젝트와 솔루션 탐색기](./media/vside-solution-explorer-projects.png)
 

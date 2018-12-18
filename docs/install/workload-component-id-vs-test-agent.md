@@ -1,5 +1,6 @@
 ---
 title: Visual Studio Test Agent 2017 워크로드 및 구성 요소 ID
+titleSuffix: ''
 description: Visual Studio 워크로드 및 구성 요소 ID를 사용하여 자동화된 테스트를 실행하고 테스트를 원격으로 로드합니다.
 keywords: ''
 author: TerryGLee
@@ -17,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: 55aea29b-1066-4e5a-aa99-fc87d4efb6d5
 ms.workload:
 - multiple
-ms.openlocfilehash: e148487d060667dad4c0f5f00273d75c062b5b01
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: d75fe8a1dee373dc7d8b48ac1f03c3a2592c705e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607512"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048385"
 ---
 # <a name="visual-studio-test-agent-2017-component-directory"></a>Visual Studio Test Agent 2017 구성 요소 디렉터리
 
@@ -43,7 +44,7 @@ VSIX 매니페스트에 종속성을 설정하는 경우 구성 요소 ID만 지
 
 **ID:** Microsoft.VisualStudio.Workload.TestAgent
 
-**설명:** 자동화된 테스트 실행 및 부하 테스트를 원격으로 실행하도록 지원합니다.
+**설명:** 자동화된 테스트 및 부하 테스트를 원격으로 실행하도록 지원
 
 ### <a name="components-included-by-this-workload"></a>이 작업에 포함되는 구성 요소
 

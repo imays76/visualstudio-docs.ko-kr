@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 바로 가기 키 식별 및 사용자 지정
+title: 바로 가기 키 식별 및 사용자 지정
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ed1806ce5810814c8ea2ce9c08462ecc8f9fd77
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 61ea8d6ee9243f79fe250872820643904bb2367a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747231"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062986"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Visual Studio에서 바로 가기 키 식별 및 사용자 지정
 
@@ -78,7 +78,7 @@ Visual Studio 명령에 대한 바로 가기 키를 확인하고, 해당 바로 
     예를 들어, 모든 컨텍스트에서 바로 가기가 동작하도록 하려면 **전역**을 선택할 수 있습니다. 다른 편집기에 전역으로 매핑되어 있지 않은 모든 바로 가기를 사용할 수 있습니다. 그렇지 않으면 편집기에서 바로 가기를 무시합니다.
 
     > [!NOTE]
-    > Print Screen/Sys Rq 키, Scroll Lock 키, Pause/Break 키, Tab 키, Caps Lock 키, Insert 키, Home 키, End 키, Page Up 키, Page Down 키, Windows 로고 키, 응용 프로그램 키, 모든 화살표 키, Enter 키, 숫자 키패드의 Num Lock 키, Del 키, Clear 키, Ctrl+Alt+Delete 키 조합 등은 **전역** 바로 가기 키의 일부로 할당할 수 없습니다.
+    > **글로벌**에서 바로 가기 키의 일부로 다음 키를 할당할 수 없습니다. Print Screen/Sys Rq, Scroll Lock, Pause/Break, Tab, Caps Lock, Insert, Home, End, Page Up, Page Down, Windows 로고 키, 애플리케이션 키, 모든 화살표 키, Enter, 숫자 키패드의 Num Lock, Delete 또는 Clear, Ctrl+Alt+Delete 키 조합.
 
 6. **바로 가기 키 누르기** 상자에 사용하려는 바로 가기를 입력합니다.
 

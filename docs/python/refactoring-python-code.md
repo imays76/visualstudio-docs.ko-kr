@@ -1,6 +1,6 @@
 ---
 title: Python 코드 리팩터링
-description: 식별자의 이름을 바꾸고, 메서드를 추출하고, 가져오기를 추가하고, 사용하지 않는 가져오기를 제거하여 Visual Studio에서 Python 코드를 쉽게 리팩터링하는 방법입니다.
+description: Visual Studio를 사용하면 식별자의 이름을 바꾸고, 메서드를 추출하고, 가져오기를 추가하고, 사용하지 않는 가져오기를 제거하여 Python 코드를 쉽게 리팩터링할 수 있습니다.
 ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a612e7e6a59087d219d2afc6233b57f02ed99314
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 7293e966f937368df62dc9fa0049ac1d75a19b45
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607746"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063019"
 ---
 # <a name="refactor-python-code"></a>Python 코드 리팩터링
 

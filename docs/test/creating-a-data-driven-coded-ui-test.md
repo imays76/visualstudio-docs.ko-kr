@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 데이터 기반의 코딩된 UI 테스트 만들기
+title: 데이터 기반의 코딩된 UI 테스트 만들기
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c23d8149d6946464eef1a465ea952e6102d65086
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 92bbeb34733332b2bada3955dda2058d63460fec
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896143"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068489"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>데이터 기반의 코딩된 UI 테스트 만들기
 
@@ -232,7 +232,7 @@ ms.locfileid: "52896143"
 
 ### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>Q: UIMap.Designer 파일에서 코드를 수정할 수 없는 이유는 무엇인가요?
 
-**A**: UIMap - 코딩된 UI 테스트 빌더를 사용하여 코드를 생성할 때마다 *UIMapDesigner.cs* 파일에서 수정된 코드 변경 내용을 덮어씁니다. 이 샘플에서 그리고 대부분의 경우에는 테스트가 데이터 소스를 사용하도록 설정하는 데 필요한 코드 변경을 테스트의 소스 코드 파일(즉, *CodedUITest1.cs*)에서 수행할 수 있습니다.
+**A:** UIMap - 코딩된 UI 테스트 빌더를 사용하여 코드를 생성할 때마다 *UIMapDesigner.cs* 파일에서 수정된 코드 변경 내용을 덮어씁니다. 이 샘플에서 그리고 대부분의 경우에는 테스트가 데이터 소스를 사용하도록 설정하는 데 필요한 코드 변경을 테스트의 소스 코드 파일(즉, *CodedUITest1.cs*)에서 수행할 수 있습니다.
 
 기록된 메서드를 수정해야 하는 경우에는 해당 메서드를 *UIMap.cs* 파일에 복사한 후 이름을 바꾸어야 합니다. *UIMap.cs* 파일을 사용하여 *UIMapDesigner.cs* 파일의 메서드와 속성을 재정의할 수 있습니다. 코딩된 *UITest.cs* 파일에서 원래 메서드에 대한 참조를 제거하고 이름을 바꾼 메서드 이름으로 바꾸어야 합니다.
 

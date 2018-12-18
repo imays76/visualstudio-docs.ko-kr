@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 XML 문서 주석 삽입
+title: XML 문서 주석 삽입
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e3c38e46a5c73d1f8018f56f76b971939ba8c316
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 04ee7c992fc67e0025bd2481d392a38806d51ed9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945430"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063476"
 ---
 # <a name="how-to-insert-xml-comments-for-documentation-generation"></a>방법: 문서 생성에 대한 XML 주석 삽입
 
@@ -52,7 +52,7 @@ Visual Studio는 표준 XML 문서 주석 구조를 자동으로 생성하여 �
 
 - [XML 문서 주석(C# 프로그래밍 가이드)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
 - [XML 주석과 함께 코드 문서화(C# 가이드)](/dotnet/csharp/codedoc)
-- [방법: 방법: XML 문서 만들기(Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
+- [방법: XML 문서 만들기(Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
 - [C++ 주석](/cpp/cpp/comments-cpp)
 - [XML 문서(C++)](/cpp/ide/xml-documentation-visual-cpp)
 - [코드 생성](../code-generation-in-visual-studio.md)

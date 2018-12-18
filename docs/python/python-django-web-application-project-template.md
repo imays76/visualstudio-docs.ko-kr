@@ -1,6 +1,6 @@
 ---
 title: Python용 Django 웹 프로젝트 템플릿
-description: Django 프레임워크를 사용하는, Python으로 작성된 웹 응용 프로그램용 Visual Studio 템플릿에 대한 개요입니다.
+description: Visual Studio는 python으로 Django 웹 애플리케이션을 빠르게 생성할 수 있는 포괄적인 템플릿을 제공합니다.
 ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1e00fd7df429b219589e1e49ddbc5ccadca5e032
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: c1aba68ad8cde6aebbc881e61937dc53037b58c5
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607434"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066524"
 ---
 # <a name="django-web-project-template"></a>Django 웹 프로젝트 템플릿
 
@@ -50,19 +51,19 @@ Django 관리 콘솔은 **프로젝트** 메뉴의 다양한 명령을 통해서
 
 - **Django Shell 열기**: 모델을 조작할 수 있는 응용 프로그램 컨텍스트에서 셸을 엽니다.
 
-    ![콘솔](media/template-django-console-shell.png)
+    ![Django Shell 열기 명령의 결과](media/template-django-console-shell.png)
 
 - **Django Sync DB**: **대화형** 창에서 `manage.py syncdb`를 실행합니다.
 
-    ![콘솔](media/template-django-console-sync-db.png)
+    ![Django Sync DB 명령의 결과](media/template-django-console-sync-db.png)
 
 - **정적 수집**: `manage.py collectstatic --noinput`을 실행하여 *settings.py*의 `STATIC_ROOT`에 지정된 경로에 모든 정적 파일을 복사합니다.
 
-    ![콘솔](media/template-django-console-collect-static.png)
+    ![정적 수집 명령의 결과](media/template-django-console-collect-static.png)
 
 - **유효성 검사**: `manage.py validate`를 실행하여 *settings.py*의 `INSTALLED_APPS`에 지정된 설치된 모델에서 모든 유효성 검사 오류를 보고합니다.
 
-    ![콘솔](media/template-django-console-validate.png)
+    ![유효성 검사 명령의 결과](media/template-django-console-validate.png)
 
 ## <a name="see-also"></a>참고 항목
 

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 부하 테스트 가상 사용자 동작 분석
+title: 부하 테스트 가상 사용자 동작 분석
 ms.date: 10/03/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 58ab8859bffa89ae19eed6d37c442b71f98ef224
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: ff4d71af450fa6d3f907bb1e1b5b963044e959ff
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896096"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059910"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>부하 테스트 분석기의 세부 정보 뷰에서 부하 테스트 가상 사용자 동작 분석
 
@@ -57,9 +57,9 @@ ms.locfileid: "52896096"
 
 |작업|관련 항목|
 |-|-|
-|**부하 테스트 실행:** 부하 테스트를 만들고 가상 사용자 동작 데이터를 수집하도록 구성한 후에는 테스트를 실행하고 완료될 때까지 기다려야 **가상 사용자 동작 차트**를 볼 수 있습니다.||
-|**가상 사용자 동작 데이터가 들어 있는 부하 테스트 결과 보기:** 부하 테스트를 만들고, 구성하고, 완료한 후에는 **가상 사용자 동작 차트**를 사용하여 가상 사용자 작동 데이터를 볼 수 있습니다.|-   [부하 테스트 결과 분석](../test/analyze-load-test-results-using-the-load-test-analyzer.md)<br />-   [방법: 부하 테스트 중에 가상 사용자가 수행하는 작업 분석](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)|
-|**부하 테스트에서 성능 문제 격리:** **가상 사용자 동작 차트**를 사용하여 부하 테스트에서 성능 문제를 격리할 수 있습니다.|-   [연습: 가상 사용자 동작 차트를 사용하여 문제 격리](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)|
+|**부하 테스트 실행:** 부하 테스트를 만들고 가상 사용자 동작 데이터를 수집하도록 구성한 후에는 테스트를 실행하고 완료될 때까지 기다려야 **가상 사용자 작업 차트**를 볼 수 있습니다.||
+|**가상 사용자 활동 데이터가 포함된 부하 테스트 결과 보기:** 부하 테스트를 만들고, 구성하고, 완료한 후에는 **가상 사용자 동작 차트**를 사용하여 가상 사용자 작동 데이터를 볼 수 있습니다.|-   [부하 테스트 결과 분석](../test/analyze-load-test-results-using-the-load-test-analyzer.md)<br />-   [방법: 부하 테스트 중에 가상 사용자가 수행하는 작업 분석](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)|
+|**부하 테스트에서 성능 문제 격리:** **가상 사용자 작업 차트**를 사용하여 부하 테스트에서 성능 문제를 격리할 수 있습니다.|-   [연습: 가상 사용자 작업 차트를 사용하여 문제 격리](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)|
 
 ## <a name="see-also"></a>참고 항목
 

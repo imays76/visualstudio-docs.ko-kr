@@ -1,7 +1,7 @@
 ---
 title: Python용 Azure SDK
 description: Python용 Azure SDK를 사용하면 모든 플랫폼에서 실행되는 Python 응용 프로그램을 통해 Microsoft Azure 서비스를 쉽게 이용할 수 있습니다.
-ms.date: 10/10/2018
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -12,14 +12,14 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 9f1eb52e87cf9a411cf453c90f35ebc192616e8c
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: b9c8f5193e55d86ea4ff5e4d68fb7a66a1044d2e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050224"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062886"
 ---
-# <a name="azure-sdk-for-python"></a>Python용 Azure SDK
+# <a name="consume-azure-services-using-the-azure-sdk-for-python"></a>Python용 Azure SDK를 통해 Azure 서비스 사용
 
 Python용 Azure SDK를 사용하면 Windows, MacOS 및 Linux에서 실행되는 응용 프로그램에서 Microsoft Azure 서비스를 쉽게 사용하고 관리할 수 있습니다.
 

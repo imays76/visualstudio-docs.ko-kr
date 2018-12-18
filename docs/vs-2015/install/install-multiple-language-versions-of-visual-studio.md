@@ -1,5 +1,5 @@
 ---
-title: 여러 언어 버전의 Visual Studio 설치 | Microsoft Docs
+title: 여러 언어 버전 설치 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -17,28 +17,27 @@ caps.latest.revision: 14
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 9cb869cac5059592838fe7e0ef371c4b40e1fb4d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: 4dff5f290461ee3863a533adb79f2af0b32202b2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51723834"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052986"
 ---
-# <a name="install-multiple-language-versions-of-visual-studio"></a>여러 언어 버전의 Visual Studio 설치 합니다.
+# <a name="install-multiple-language-versions-of-visual-studio"></a>여러 언어 버전의 Visual Studio 설치
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio 2017에 대 한 최신 설명서를 참조 하세요 [Visual Studio 2017에서 설치 언어 팩](https://docs.microsoft.com/visualstudio/install/install-visual-studio#install-language-packs)합니다.
 
-하나 이상의 언어 패키지를 설치 하면 동일한 컴퓨터에서 다른 언어로 Visual Studio 2015를 실행할 수 있습니다. 설치하려는 각 언어에 대해 별도의 언어 패키지를 다운로드해야 합니다.  
-  
-## <a name="important-considerations"></a>중요 고려 사항  
-  
--   언어 패키지를 설치할 때 설치된 기능의 리소스 파일이 각 언어 버전에 대해 자동으로 설치됩니다.  
-  
--   Visual Studio 서비스 패키지는 Visual Studio의 설치된 모든 언어 버전에 적용됩니다. 이미 설치한 Visual Studio의 각 언어 버전에 대해 서비스 패키지를 더 이상 설치하지 않아도 됩니다.  
-  
--   Visual Studio 설치 프로그램의 유지 관리 모드를 사용하여 언어 패키지를 제거할 수 있습니다. **제어판**을 열고 **프로그램 및 기능**을 연 다음 Visual Studio의 해당 버전 및 **제거/변경**을 차례로 선택합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [Microsoft 언어 인터페이스 팩 (Lip) 및 Visual Studio](../install/microsoft-language-interface-packs-lips-and-visual-studio.md)   
- [Visual Studio 설치](../install/install-visual-studio-2015.md)
+하나 이상의 언어 패키지를 설치 하면 동일한 컴퓨터에서 다른 언어로 Visual Studio 2015를 실행할 수 있습니다. 설치하려는 각 언어에 대해 별도의 언어 패키지를 다운로드해야 합니다.
+
+## <a name="important-considerations"></a>중요 고려 사항
+
+-   언어 패키지를 설치할 때 설치된 기능의 리소스 파일이 각 언어 버전에 대해 자동으로 설치됩니다.
+
+-   Visual Studio 서비스 패키지는 Visual Studio의 설치된 모든 언어 버전에 적용됩니다. 이미 설치한 Visual Studio의 각 언어 버전에 대해 서비스 패키지를 더 이상 설치하지 않아도 됩니다.
+
+-   Visual Studio 설치 프로그램의 유지 관리 모드를 사용하여 언어 패키지를 제거할 수 있습니다. **제어판**을 열고 **프로그램 및 기능**을 연 다음 Visual Studio의 해당 버전 및 **제거/변경**을 차례로 선택합니다.
+
+## <a name="see-also"></a>참고 항목
+ [Microsoft 언어 인터페이스 팩 (Lip) 및 Visual Studio](../install/microsoft-language-interface-packs-lips-and-visual-studio.md) [Visual Studio 설치](../install/install-visual-studio-2015.md)

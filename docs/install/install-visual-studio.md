@@ -1,7 +1,8 @@
 ---
-title: Visual Studio 2017 설치 | Microsoft Docs
+title: Visual Studio 설치
+titleSuffix: ''
 description: Visual Studio를 설치하는 방법을 단계별로 알아봅니다.
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 05/07/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
@@ -19,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c3ba26f014b09624b1a8fec88bed8a5aefa632b
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 9160a5ebca6efe2cca48a2b8832a51fab3c6ca5a
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349692"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159739"
 ---
 # <a name="install-visual-studio-2017"></a>Visual Studio 2017 설치
 

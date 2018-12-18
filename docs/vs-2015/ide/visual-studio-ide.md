@@ -1,6 +1,6 @@
 ---
-title: Visual Studio IDE | Microsoft 문서
-ms.custom: ''
+title: Visual Studio 2015 | Microsoft Docs
+titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
@@ -12,26 +12,26 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 327de2e75b089e7ba836837c3c29c0d92d9ad864
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c6bd4e34e25add01de6e6e54c2439c2ca80ccf33
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852715"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062485"
 ---
 # <a name="visual-studio-ide"></a>Visual Studio IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 Microsoft Visual Studio 2015는 계획 단계에서 UI 디자인, 코딩, 테스트, 디버그, 코드 품질 및 성능 분석, 고객에게 배포 및 사용량에 대한 원격 분석 수집에 이르기까지 소프트웨어를 만들기 위한 도구 제품군입니다. 이러한 도구는 가능한 한 매끄럽게 작동하도록 설계되었으며, 모두 Visual Studio IDE(통합 개발 환경)를 통해 노출됩니다.
 
-Visual Studio를 사용하여 모바일 클라이언트용 단순한 스토어 앱과 게임에서 엔터프라이즈 및 데이터 센터를 지원하는 대규모의 복잡한 시스템에 이르기까지 많은 종류의 응용 프로그램을 만들 수 있습니다. 만들 수 있습니다.
+Visual Studio를 사용하여 모바일 클라이언트용 단순한 스토어 앱과 게임에서 엔터프라이즈 및 데이터 센터를 지원하는 대규모의 복잡한 시스템에 이르기까지 많은 종류의 응용 프로그램을 만들 수 있습니다. 다음과 같은 항목을 만들 수 있습니다.
 
-- 앱 및 Windows에서 뿐만 아니라 실행 되는 게임 뿐만 아니라 Android 및 iOS입니다.
+- Windows뿐 아니라 Android 및 iOS에서도 실행되는 앱과 게임
 
-- ASP.NET, JQuery, AngularJS 및 기타 인기 있는 프레임 워크에 따라 웹 사이트 및 웹 서비스입니다.
+- ASP.NET, JQuery, AngularJS 및 기타 인기 있는 프레임워크를 기반으로 한 웹 사이트와 웹 서비스
 
-- Azure, Office, Sharepoint, Hololens, Kinect, 및 Internet of Things 몇 가지 예제를 이름으로 같은 다양 한 플랫폼 및 장치용 응용 프로그램입니다.
+- 예를 들어 Azure, Office, Sharepoint, Hololens, Kinect, 사물 인터넷 등의 다양한 플랫폼 및 디바이스용 애플리케이션
 
-- 게임 및 Xbox를 포함 하 여, DirectX를 사용 하 여 Windows 장치의 다양 한 그래픽 위주 응용 프로그램.
+- DirectX를 사용하는 다양한 Windows 디바이스(Xbox 포함)용 게임 및 그래픽 집약적 애플리케이션
 
 Visual Studio는 기본적으로 C#, C 및 C++, JavaScript, F# 및 Visual Basic을 지원합니다. Visual Studio는 [Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md) 확장을 통해서는 Unity와 같은 타사 응용 프로그램과, [Visual Studio Tools for Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42)를 통해서는 Apache Cordova와 잘 작동하고 통합됩니다. 특수 작업을 수행하는 사용자 지정 도구를 만들어 Visual Studio를 직접 확장할 수 있습니다.
 
@@ -42,7 +42,7 @@ Visual Studio 2015의 새로운 기능에 자세히 알아보려면 원한다 �
 ## <a name="visual-studio-setup"></a>Visual Studio 설치
  [Visual Studio 버전](http://www.visualstudio.com/products/visual-studio-with-msdn-overview-vs)에서 적합한 Visual Studio 버전을 확인할 수 있습니다.
 
- [Visual Studio 다운로드](http://www.visualstudio.com/downloads/download-visual-studio-vs.aspx)에서 Visual Studio 2015를 다운로드하여 설치할 수 있습니다. 설치 프로세스에 대 한 자세한 정보를 알아야 하는 경우 참조 [Visual Studio 2015 설치](../install/install-visual-studio-2015.md)합니다.
+ [Visual Studio 다운로드](http://www.visualstudio.com/downloads/download-visual-studio-vs.aspx)에서 Visual Studio 2015를 다운로드하여 설치할 수 있습니다. 설치 프로세스에 대한 자세한 내용은 [Visual Studio 2015 설치](../install/install-visual-studio-2015.md)를 참조하세요.
 
 ## <a name="ide-basics"></a>IDE 기본 사항
  다음 이미지는 열린 프로젝트가 있는 Visual Studio IDE, 프로젝트 파일 탐색을 위한 솔루션 탐색기 창, 소스 제어 및 작업 항목 추적 탐색을 위한 팀 탐색기 창을 보여 줍니다. 설명선 안의 제목 표시줄 기능은 아래에서 자세히 설명합니다.
@@ -62,7 +62,7 @@ Visual Studio 2015의 새로운 기능에 자세히 알아보려면 원한다 �
 
  !['새 프로젝트'의 빠른 실행 결과](../ide/media/productivity-quicklaunch.png "Productivity_QuickLaunch")
 
- MSDN은 Microsoft 기술 문서 웹 사이트입니다. 지금 이 페이지도 MSDN에서 읽고 있습니다. Visual Studio에서 **F1** 키를 눌러 활성 창에 대한 MSDN 도움말 페이지로 이동할 수 있습니다. 코드 편집기에서 **F1** 키를 눌러 API 또는 현재 캐럿 위치의 키워드에 대한 MSDN 도움말 페이지로 이동할 수도 있습니다. 예를 들어 C# 파일에서 임의 위치나 끝에 캐럿을 배치를 `System.String` 선언인 누릅니다 **F1** 에 대 한 MSDN 도움말 페이지로 이동할 <xref:System.String>합니다.
+ MSDN은 Microsoft 기술 문서 웹 사이트입니다. 지금 이 페이지도 MSDN에서 읽고 있습니다. Visual Studio에서 **F1** 키를 눌러 활성 창에 대한 MSDN 도움말 페이지로 이동할 수 있습니다. 코드 편집기에서 **F1** 키를 눌러 API 또는 현재 캐럿 위치의 키워드에 대한 MSDN 도움말 페이지로 이동할 수도 있습니다. 예를 들어 C# 파일에서 `System.String` 선언의 임의 위치나 끝에 캐럿을 배치하고 **F1** 키를 눌러 <xref:System.String>에 대한 MSDN 도움말 페이지로 이동합니다.
 
 ### <a name="giving-feedback"></a>피드백 제공
  원할 경우 언제든지 Visual Studio에 대한 피드백을 쉽게 보낼 수 있습니다. **빠른 실행** 옆의 제목 표시줄에 있는 피드백 아이콘을 클릭한 다음 **문제 보고** 또는 **제안하기**를 클릭합니다. Visual Studio의 시험판 버전에는 **이 제품 평가** 옵션도 있습니다. Microsoft는 이러한 의견을 모두 확인하고 제품을 개선하는 데 사용합니다. 자세한 내용은 [Talk to Us](../ide/talk-to-us.md)을 참조하세요.
@@ -114,7 +114,7 @@ Visual Studio 2015의 새로운 기능에 자세히 알아보려면 원한다 �
 
  ![코드 편집기의 GreetingsConsoleApp.cpp](../ide/media/c-ide-editorlinenumberswordwrapon.png "C + + IDE_EditorLineNumbersWordWrapOn")
 
- 텍스트 편집기는 보다 효율적인 코드를 더 빠르게 작성할 수 있도록 도와주는 많은 생산성 기능이 포함된 대화형(원할 경우)입니다. 기능은 언어에 따라 달라지며, 기능을 설정하거나 해제하기 위해 언어를 사용할 필요가 없습니다(빠른 실행에서 "편집기" 입력). 몇 가지 일반적인 생산성 기능은 다음과 같습니다.
+ 텍스트 편집기는 보다 효율적인 코드를 더 빠르게 작성할 수 있도록 도와주는 많은 생산성 기능이 포함된 대화형(원할 경우)입니다. 기능 언어에 따라 다르며 (빠른 실행에서 "편집기"을 입력 하는 경우) 중 하나를 사용 하 여 기능을 켜거나 끌 필요가 없습니다. 몇 가지 일반적인 생산성 기능은 다음과 같습니다.
 
 1. [Refactoring](../ide/refactoring-in-visual-studio.md) 에는 변수의 지능형 이름 바꾸기, 선택한 코드 줄을 별도 함수로 이동, 코드를 다른 위치로 이동, 함수 매개 변수 다시 정렬 등의 작업이 포함됩니다.
 
@@ -146,7 +146,7 @@ Visual Studio 2015의 새로운 기능에 자세히 알아보려면 원한다 �
 
 프로젝트를 빌드하려면 소스 코드를 컴파일하고 실행 파일을 생성하는 데 필요한 단계를 수행해야 합니다. 언어마다 다른 빌드 작업이 있으며 일반적인 웹 사이트는 빌드되지 않습니다. 프로젝트 형식에 관계없이 빌드 메뉴가 이러한 명령의 표준 위치입니다. 단일 키 입력으로 코드를 컴파일하고 실행하려면 F5 키를 누릅니다. 모든 컴파일러는 IDE를 통해 완전히 구성할 수 있습니다. 빌드 도구 모음을 사용하면 디버거에서 중단점 및 한 단계씩 실행을 지원하기 위해 기호 및 추가 오류 검사를 사용할 수 있는 프로그램의 디버그 버전을 빌드할지, 아니면 궁극적으로 고객에게 제공할 릴리스 버전을 빌드할지를 지정할 수 있습니다. 프로젝트 속성 페이지에서 자세한 빌드 설정과 기타 많은 설정을 구성할 수 있습니다. 솔루션 탐색기에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 속성을 선택합니다. 명령줄에서 빌드를 실행할 수도 있습니다.
 
-오류 또는 성공 메시지를 포함 하는 빌드에서 출력에 표시 된 **출력** 창입니다. 합니다 **오류 목록** 빌드 오류에 대 한 자세한 정보를 표시 합니다.
+오류 또는 성공 메시지를 포함하는 빌드 출력이 **출력** 창에 나타납니다. 합니다 **오류 목록** 빌드 오류에 대 한 자세한 정보를 표시 합니다.
 
 ## <a name="debugging-your-code"></a>코드 디버그
  Visual Studio의 최신 디버거를 사용하면 로컬 프로젝트나 원격 장치 또는 Android 또는 Windows Phone용 에뮬레이터와 같은 에뮬레이터에서 실행 중인 코드를 디버그할 수 있습니다. 한 번에 문 하나씩 코드를 단계별로 실행하고 진행에 따라 변수를 검사하고, 다중 스레드 응용 프로그램을 단계별로 실행하고, 지정된 조건이 true일 때만 적중되는 중단점을 설정할 수 있습니다. 코드의 컨텍스트에서 나갈 필요가 없도록 이러한 모든 작업을 코드 편집기 자체에서 구성할 수 있습니다.

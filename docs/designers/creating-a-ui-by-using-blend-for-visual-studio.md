@@ -1,5 +1,6 @@
 ---
-title: Blend for Visual Studio를 사용하여 UI 만들기
+title: UI 만들기 - Blend for Visual Studio
+titleSuffix: ''
 ms.date: 07/17/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
@@ -11,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cd1d8ab718575977e9f65ed55bfc6c3185d1642
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: 76743674ef4e92f2ad52be108c1dafb8d942676c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890145"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059868"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Blend for Visual Studio를 사용하여 UI 만들기
 
@@ -46,7 +47,7 @@ Blend for Visual Studio에서 **도구** 패널을 사용하여 응용 프로그
 |![자산 도구](../designers/media/b1_5.png)|**자산 도구** **자산** 패널에 액세스하고 라이브러리에서 가장 최근에 사용된 자산을 표시하는 데 사용합니다.|![설명선 E](../designers/media/b5_label_e.png)|**텍스트 컨트롤**|
 |||![설명선 F](../designers/media/b5_label_f.png)|**공용 컨트롤**|
 
-**짧은 동영상 보기:** ![설치된 기능 구성](../designers/media/bldadminconsoleinitialconfigicon.png) [도구 모음](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4).
+**짧은 비디오 시청:** ![설치된 기능 구성](../designers/media/bldadminconsoleinitialconfigicon.png) [도구 모음](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4).
 
 ## <a name="tour-of-the-assets-panel"></a>자산 패널 둘러보기
 
@@ -115,7 +116,7 @@ Visual Studio의 **도구 상자**와 비슷한 **자산** 패널에서 모든 �
 |![설명선 16](../designers/media/b5_label_16.png)|**그라데이션 슬라이더** 그라데이션 브러시를 선택한 경우에만 나타납니다.|
 |![고급 속성 표시](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png)|**고급 속성 표시** 자주 사용되지 않는 속성의 범주를 표시합니다.|
 
-**짧은 동영상 보기:** ![설치된 기능 구성](../designers/media/bldadminconsoleinitialconfigicon.png) [속성 패널](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7).
+**짧은 비디오 시청:** ![설치된 기능 구성](../designers/media/bldadminconsoleinitialconfigicon.png) [속성 패널](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7).
 
 ## <a name="see-also"></a>참고 항목
 

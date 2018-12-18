@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 사용자 지정 시작 페이지 설치 또는 시작 항목 변경
+title: 사용자 지정 시작 페이지 설치 또는 시작 항목 변경
 ms.date: 02/01/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b5e32a311bcd60542df80518c791b1fbe413a7b2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e8f09302a459e31406d69596d43b5c39a67c8268
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916609"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064049"
 ---
 # <a name="customize-the-start-page-for-visual-studio"></a>Visual Studio 시작 페이지 사용자 지정
 

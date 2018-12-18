@@ -1,7 +1,7 @@
 ---
 title: Python 환경 및 인터프리터 관리
 description: Python 환경 창을 사용하여 전역, 가상 및 conda 환경을 관리하고 Python 인터프리터 및 패키지를 설치하며 Visual Studio 프로젝트에 환경을 할당합니다.
-ms.date: 11/08/2018
+ms.date: 12/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f69178fde2a0912d39c813028385f21f6ca87d7a
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 887776b3a3f1275b97b2abee26c4613d8aad39fc
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349363"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063218"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Visual Studio에서 Python 환경을 만들고 관리하는 방법
 
@@ -57,7 +57,9 @@ Visual Studio에서 인식하는 환경이 **Python 환경** 창에 표시됩니
 
 Visual Studio는 레지스트리(다음 [PEP 514](https://www.python.org/dev/peps/pep-0514/))와 함께 가상 환경 및 Conda 환경([환경 유형](#types-of-environments) 참조)을 사용하여 설치된 글로벌 환경을 검색합니다. 목록에 원하는 환경이 표시되지 않으면 [기존 환경 수동 식별](#manually-identify-an-existing-environment)을 참조하세요.
 
-목록에서 환경을 선택하는 경우 Visual Studio는 **개요** 탭에 해당 환경에 대한 다양한 속성과 명령을 표시합니다. 예를 들어 위의 이미지에서 인터프리터의 위치가 *C:\Python36-32*임을 알 수 있습니다. 환경 목록 아래의 드롭다운 목록을 사용하여 **패키지** 및 **IntelliSense**와 같은 다른 탭으로 전환합니다. 이러한 탭은 [Python 환경 창 탭 참조](python-environments-window-tab-reference.md)에 설명되어 있습니다.
+목록에서 환경을 선택하는 경우 Visual Studio는 **개요** 탭에 해당 환경에 대한 다양한 속성과 명령을 표시합니다. 예를 들어 위의 이미지에서 인터프리터의 위치가 *C:\Python36-32*임을 알 수 있습니다. **개요** 탭 아래에 있는 네 개의 명령은 각각 인터프리터가 실행 중인 명령 프롬프트를 엽니다. 자세한 내용은 [Python 환경 창 탭 참조 - 개요](python-environments-window-tab-reference.md#overview-tab)를 참조하세요.
+
+환경 목록 아래의 드롭다운 목록을 사용하여 **패키지** 및 **IntelliSense**와 같은 다른 탭으로 전환합니다. 이러한 탭은 [Python 환경 창 탭 참조](python-environments-window-tab-reference.md)에도 설명되어 있습니다.
 
 환경을 선택하면 모든 프로젝트에 대한 해당 관계는 변경되지 않습니다. 목록에서 굵게 표시된 기본 환경은 Visual Studio가 모든 새 프로젝트에 대해 사용하는 환경입니다. 새 프로젝트에서 다른 환경을 사용하려면 **이 환경을 새 프로젝트의 기본 환경으로 설정** 명령을 사용합니다. 프로젝트의 컨텍스트 내에서 항상 특정한 환경을 선택할 수 있습니다. 자세한 내용은 [프로젝트의 환경 선택](selecting-a-python-environment-for-a-project.md)을 참조하세요.
 

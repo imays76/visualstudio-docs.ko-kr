@@ -1,5 +1,6 @@
 ---
 title: Visual Studio Enterprise 2017 워크로드 및 구성 요소 ID
+titleSuffix: ''
 description: 작업 및 구성 요소 ID를 사용하여 명령줄로 Visual Studio를 설치하거나 VSIX 매니페스트에서 종속성으로 지정합니다.
 keywords: ''
 author: TerryGLee
@@ -17,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: be73e3af-d87b-4d14-bd08-2e4bda074fb3
 ms.workload:
 - multiple
-ms.openlocfilehash: 665ee631f7b57fc409c45b0879e2457c52f55a04
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 7d0496b9559e5e3fbd8984de97d98ea2e075db1a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607980"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063168"
 ---
 # <a name="visual-studio-enterprise-2017-component-directory"></a>Visual Studio Enterprise 2017 구성 요소 디렉터리
 
@@ -43,7 +44,7 @@ VSIX 매니페스트에 종속성을 설정하는 경우 구성 요소 ID만 지
 
 **ID:** Microsoft.VisualStudio.Workload.CoreEditor
 
-**설명:** 구문 인식 코드 편집, 원본 코드 제어 및 작업 항목 관리를 포함하는 Visual Studio 핵심 셸 환경입니다.
+**설명:** 구문 인식 코드 편집, 소스 코드 제어, 작업 항목 관리 등을 포함하는 Visual Studio 코어 셸 환경입니다.
 
 ### <a name="components-included-by-this-workload"></a>이 작업에 포함되는 구성 요소
 
@@ -152,7 +153,7 @@ Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation 
 
 **ID:** Microsoft.VisualStudio.Workload.Data
 
-**설명:** SQL Server, Azure Data Lake 또는 Hadoop를 사용하여 데이터 솔루션을 연결, 개발 및 테스트합니다.
+**설명:** SQL Server, Azure Data Lake 또는 Hadoop을 사용하여 데이터 솔루션을 연결, 개발 및 테스트하세요.
 
 ### <a name="components-included-by-this-workload"></a>이 작업에 포함되는 구성 요소
 
@@ -215,7 +216,7 @@ Microsoft.VisualStudio.Component.FSharp.Desktop | F# 데스크톱 언어 지원 
 
 **ID:** Microsoft.VisualStudio.Workload.DataScience
 
-**설명:** Python, R 및 F#을 포함하여 데이터 과학 응용 프로그램을 만들기 위한 언어 및 도구입니다.
+**설명:** 데이터 과학 애플리케이션을 만들기 위한 언어 및 도구입니다(Python, R 및 F# 포함).
 
 ### <a name="components-included-by-this-workload"></a>이 작업에 포함되는 구성 요소
 
@@ -260,7 +261,7 @@ Microsoft.VisualStudio.Component.Windows81SDK | Windows 8.1 SDK | 15.6.27406.0 |
 
 **ID:** Microsoft.VisualStudio.Workload.ManagedDesktop
 
-**설명:** C#, Visual Basic 및 F#을 사용하여 WPF, Windows Forms 및 콘솔 응용 프로그램을 빌드합니다.
+**설명:** C#, Visual Basic 및 F#을 사용하여 WPF, Windows Forms 및 콘솔 애플리케이션을 빌드합니다.
 
 ### <a name="components-included-by-this-workload"></a>이 작업에 포함되는 구성 요소
 
@@ -383,7 +384,7 @@ Component.MDD.Linux.GCC.arm | 포함 및 IoT 개발 | 15.6.27309.0 | Optional
 
 **ID:** Microsoft.VisualStudio.Workload.NativeDesktop
 
-**설명:** Microsoft C++ 도구 집합, ATL 또는 MFC를 사용하여 Windows 데스크톱 응용 프로그램을 빌드합니다.
+**설명:** Microsoft C++ 도구 세트, ATL 또는 MFC를 사용하여 Windows 데스크톱 애플리케이션을 빌드합니다.
 
 ### <a name="components-included-by-this-workload"></a>이 작업에 포함되는 구성 요소
 
@@ -504,7 +505,7 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK(10.0.1
 
 **ID:** Microsoft.VisualStudio.Workload.NativeMobile
 
-**설명:** C++를 사용하여 iOS, Android 또는 Windows용 플랫폼 간 응용 프로그램을 빌드합니다.
+**설명:** C++를 사용하여 iOS, Android 또는 Windows용 플랫폼 간 애플리케이션을 빌드합니다.
 
 ### <a name="components-included-by-this-workload"></a>이 작업에 포함되는 구성 요소
 
@@ -535,7 +536,7 @@ Component.MDD.IOS | C++ iOS 개발 도구 | 15.0.26621.2 | Optional
 
 **ID:** Microsoft.VisualStudio.Workload.NetCoreTools
 
-**설명:** .NET Core, ASP.NET Core, HTML, JavaScript 및 컨테이너 포함 Docker 지원을 사용하여 플랫폼 간 응용 프로그램을 빌드합니다.
+**설명:** Docker 지원이 포함된 .NET Core, ASP.NET Core, HTML/JavaScript 및 컨테이너를 사용하여 플랫폼 간 애플리케이션을 빌드합니다.
 
 ### <a name="components-included-by-this-workload"></a>이 작업에 포함되는 구성 요소
 
@@ -606,7 +607,7 @@ Microsoft.VisualStudio.ComponentGroup.IISDevelopment | 개발 시간 IIS 지원 
 
 **ID:** Microsoft.VisualStudio.Workload.NetCrossPlat
 
-**설명:** Xamarin을 사용하여 iOS, Android 또는 Windows용 플랫폼 간 응용 프로그램을 빌드합니다.
+**설명:** Xamarin을 사용하여 iOS, Android 또는 Windows용 플랫폼 간 애플리케이션을 빌드합니다.
 
 ### <a name="components-included-by-this-workload"></a>이 작업에 포함되는 구성 요소
 
@@ -656,7 +657,7 @@ Microsoft.VisualStudio.ComponentGroup.UWP.Xamarin | Xamarin용 유니버설 Wind
 
 **ID:** Microsoft.VisualStudio.Workload.NetWeb
 
-**설명:** ASP.NET, ASP.NET Core, HTML, JavaScript 및 컨테이너 포함 Docker 지원을 사용하여 웹 응용 프로그램을 빌드합니다.
+**설명:** Docker 지원이 포함된 ASP.NET, ASP.NET Core, HTML/JavaScript 및 컨테이너를 사용하여 웹 애플리케이션을 빌드합니다.
 
 ### <a name="components-included-by-this-workload"></a>이 작업에 포함되는 구성 요소
 
@@ -753,7 +754,7 @@ Microsoft.VisualStudio.Web.Mvc4.ComponentGroup | ASP.NET MVC 4 | 15.6.27406.0 | 
 
 **ID:** Microsoft.VisualStudio.Workload.Node
 
-**설명:** 비동기 이벤트 구동 JavaScript 런타임인 Node.js를 사용하여 확장 가능한 네트워크 응용 프로그램을 빌드합니다. 
+**설명:** 비동기 이벤트 구동 JavaScript 런타임인 Node.js를 사용하여 확장 가능한 네트워크 애플리케이션을 빌드합니다. 
 
 ### <a name="components-included-by-this-workload"></a>이 작업에 포함되는 구성 요소
 
@@ -779,7 +780,7 @@ Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC++ 2017 버전 15.9 v14.16
 
 **ID:** Microsoft.VisualStudio.Workload.Office
 
-**설명:** C#, VB 및 JavaScript를 사용하여 Office 및 SharePoint 추가 기능, SharePoint 솔루션 및 VSTO 추가 기능을 만듭니다.
+**설명:** C#, VB 및 JavaScript를 사용하여 Office와 SharePoint 추가 기능, SharePoint 솔루션 및 VSTO 추가 기능을 만듭니다.
 
 ### <a name="components-included-by-this-workload"></a>이 작업에 포함되는 구성 요소
 
@@ -934,7 +935,7 @@ Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET 및 웹 개발 도구 필수
 
 **ID:** Microsoft.VisualStudio.Workload.Universal
 
-**설명:** C#, VB, JavaScript 또는 선택적으로 C++를 사용하여 유니버설 Windows 플랫폼용 응용 프로그램을 만듭니다.
+**설명:** C#, VB, JavaScript 또는 선택적으로 C++를 사용하여 유니버설 Windows 플랫폼용 애플리케이션을 만듭니다.
 
 ### <a name="components-included-by-this-workload"></a>이 작업에 포함되는 구성 요소
 
@@ -1004,7 +1005,7 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK(10.0.1
 
 **ID:** Microsoft.VisualStudio.Workload.VisualStudioExtension
 
-**설명:** 새로운 명령, 코드 분석기 및 도구 창을 포함하여 Visual Studio용 추가 기능 및 확장 기능을 만듭니다.
+**설명:** Visual Studio용 추가 기능 및 확장(새 명령, 코드 분석기 및 도구 창 포함)을 만듭니다.
 
 ### <a name="components-included-by-this-workload"></a>이 작업에 포함되는 구성 요소
 

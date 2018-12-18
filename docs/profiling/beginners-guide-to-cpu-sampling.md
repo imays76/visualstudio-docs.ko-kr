@@ -1,6 +1,6 @@
 ---
-title: Visual Studio CPU 샘플링 초보자를 위한 지침 | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: CPU 샘플링 초보자를 위한 지침
+ms.custom: seodec18
 ms.date: 02/27/2017
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 42131bc1a596cf14a219f674227dbbadeb26c370
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 29ef34a15591a87b7eeb70e204f58329c8c55838
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669412"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066394"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>CPU 샘플링 초보자를 위한 지침
 Visual Studio 프로파일링 도구를 사용하여 응용 프로그램의 성능 문제를 분석할 수 있습니다. 다음 절차에서는 **샘플링** 데이터 사용 방법을 보여 줍니다.
@@ -33,7 +33,7 @@ Visual Studio 프로파일링 도구를 사용하여 응용 프로그램의 성�
   
  **샘플링** 방법은 응용 프로그램에서 실행되는 함수에 대한 정보를 지정된 간격으로 수집합니다. 프로파일링 실행이 끝나면 프로파일링 데이터의 **요약** 뷰에 **실행 부하 과다 경로**라고 하는 가장 활동적인 함수 호출 트리가 표시됩니다. 여기서 대부분의 응용 프로그램 작업이 수행됩니다. 또한 이 뷰에는 대부분의 개별 작업을 수행하는 함수가  표시되고 샘플링 세션의 특정 세그먼트를 집중적으로 확인할 수 있는 시간 표시 막대 그래프도 표시됩니다.  
   
- **샘플링**으로 필요한 데이터를 얻지 못할 경우 다른 프로파일링 도구 수집 방법으로 유용한 다른 종류의 정보를 얻을 수 있습니다. 이러한 기타 방법에 대한 자세한 내용은 [방법: 컬렉션 메서드 선택](../profiling/how-to-choose-collection-methods.md)을 참조하세요.  
+ **샘플링**으로 필요한 데이터를 얻지 못할 경우 다른 프로파일링 도구 수집 방법으로 유용한 다른 종류의 정보를 얻을 수 있습니다. 이러한 다른 메서드에 대한 자세한 내용은 [방법: 수집 방법 선택](../profiling/how-to-choose-collection-methods.md)을 참조하세요.  
   
 > [!TIP]
 >  Windows 함수를 호출하는 코드를 프로파일링하는 경우 가장 최근의 .*pdb* 파일이 있는지 확인해야 합니다. 이 파일이 없으면 보고서 뷰에 암호화되어 이해하기 어려운 Windows 함수 이름이 표시됩니다. 필요한 파일이 있는지 확인하는 방법에 대한 자세한 내용은 [방법: Windows 기호 정보 참조](../profiling/how-to-reference-windows-symbol-information.md)를 참조하세요.  
@@ -69,7 +69,7 @@ Visual Studio 프로파일링 도구를 사용하여 응용 프로그램의 성�
   
  **실행 부하 과다 경로**를 검사한 다음 가장 많은 작업을 수행하는 함수 목록을 검사하고 마지막으로 **요약 타임라인**을 사용하여 다른 함수를 중점으로 데이터를 분석하는 것이 좋습니다. **오류 목록** 창에서 프로파일링 권장 사항 및 경고를 볼 수도 있습니다.  
   
- 샘플링 방법으로 필요한 정보를 얻지 못할 수도 있습니다. 예를 들어 샘플은 응용 프로그램이 사용자 모드 코드를 실행하는 경우에만 수집됩니다. 따라서 입력 및 출력 작업 등의 일부 기능은 샘플링을 통해 캡처되지 않습니다. 프로파일링 도구는 중요한 데이터에 초점을 맞출 수 있도록 하는 여러 컬렉션 메서드를 제공합니다. 다른 메서드에 대한 자세한 내용은 [방법: 컬렉션 메서드 선택](../profiling/how-to-choose-collection-methods.md)을 참조하세요.  
+ 샘플링 방법으로 필요한 정보를 얻지 못할 수도 있습니다. 예를 들어 샘플은 응용 프로그램이 사용자 모드 코드를 실행하는 경우에만 수집됩니다. 따라서 입력 및 출력 작업 등의 일부 기능은 샘플링을 통해 캡처되지 않습니다. 프로파일링 도구는 중요한 데이터에 초점을 맞출 수 있도록 하는 여러 컬렉션 메서드를 제공합니다. 다른 메서드에 대한 자세한 내용은 [방법: 수집 방법 선택](../profiling/how-to-choose-collection-methods.md)을 참조하세요.  
   
  그림에서 번호가 매겨진 각 영역은 절차의 단계와 관련되어 있습니다.  
   

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 부하 테스트 결과의 그래프에서 카운터 추가 및 삭제
+title: 부하 테스트 결과의 그래프에서 카운터 추가 및 삭제
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 21fa28e9ff149bcf117e3bde5d553a2cf641c04a
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: c4cb68370a743381a13b88c8a5fdc7d61700cb17
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896525"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049952"
 ---
 # <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>방법: 부하 테스트 결과의 그래프에서 카운터 추가 및 삭제
 
@@ -49,7 +49,7 @@ ms.locfileid: "52896525"
 
 특히 부하 테스트 실행 시간이 긴 경우 부하 테스트 결과 리포지토리에서 타이밍 정보 데이터를 저장하는 데 필요한 공간이 매우 클 수 있습니다. 또한, 이 데이터는 부하 테스트 실행이 완료될 때까지 부하 테스트 에이전트에 저장되므로 부하 테스트가 끝날 때 부하 테스트 결과 리포지토리에 이 데이터를 저장하는 시간이 오래 걸립니다. 부하 테스트가 완료되면 데이터가 리포지토리에 저장됩니다. 기본적으로는 **타이밍 정보 저장소** 속성이 사용됩니다. 이것이 문제가 되는 테스트 환경의 경우 **타이밍 정보 저장소**를 **없음**으로 설정할 수도 있습니다.
 
-자세한 내용은 [방법: 타이밍 정보 저장소 속성 지정](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)을 참조하세요.
+자세한 내용은 [방법: 타이밍 정보 스토리지 속성 지정](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)을 참조하세요.
 
 ## <a name="to-display-a-particular-performance-counter-on-a-load-test-graph"></a>부하 테스트 그래프에 특정 성능 카운터를 표시하려면
 

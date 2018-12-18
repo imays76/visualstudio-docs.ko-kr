@@ -1,5 +1,6 @@
 ---
 title: 데이터베이스 파일을 만들고 테이블 디자이너를 사용 합니다.
+description: Visual Studio의 테이블 디자이너를 사용 하 여 데이터베이스 테이블과 외래 키를 추가 하는 방법을 설명 하는 자습서입니다. 또한 그래픽 인터페이스를 통해 데이터를 추가 하는 방법을 보여 줍니다.
 ms.date: 11/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9e2b138a536f22608c357f56b6856d91965ff906
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: c071daeaa1ffe10aa9de995b375e33b76b358da7
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305327"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159869"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>데이터베이스를 만들고 Visual Studio에서 테이블을 추가 합니다.
 
@@ -31,7 +32,7 @@ ms.locfileid: "52305327"
 
 ## <a name="create-a-project-and-a-local-database-file"></a>프로젝트 및 로컬 데이터베이스 파일 만들기
 
-1. SampleDatabaseWalkthrough**로 명명된 Windows Form 프로젝트를 만듭니다.
+1. **SampleDatabaseWalkthrough**로 명명된 Windows Form 프로젝트를 만듭니다.
 
 2. 메뉴 모음에서 선택 **프로젝트** > **새 항목 추가**합니다.
 
@@ -41,13 +42,13 @@ ms.locfileid: "52305327"
 
 4. 데이터베이스 이름을 **SampleDatabase**를 선택한 후 합니다 **추가** 단추입니다.
 
-### <a name="to-add-a-data-source"></a>데이터 소스를 추가하려면
+### <a name="add-a-data-source"></a>데이터 원본 추가
 
 1. 경우는 **데이터 원본** 창이 열려 있지 않으면, 키를 눌러 엽니다 **Shift**+**Alt**+**D** 선택 **뷰** > **기타 Windows** > **데이터 원본을** 메뉴 모음에서.
 
 1. 에 **데이터 원본** 창에서 합니다 **새 데이터 소스 추가** 링크 합니다.
 
-   데이터 소스 구성 마법사**가 열립니다.
+   **데이터 원본 구성** 마법사가 열립니다.
 
 1. 에 **데이터 소스 형식 선택** 페이지에서 **데이터베이스** 를 선택한 후 **다음**합니다.
 
@@ -59,25 +60,25 @@ ms.locfileid: "52305327"
 
 1. 하나는 **데이터베이스 개체 선택** 페이지 표시를 알리는 메시지를 데이터베이스 개체를 포함 하지 않습니다. **마침**을 선택합니다.
 
-### <a name="to-view-properties-of-the-data-connection"></a>데이터 연결의 속성을 보려면
+### <a name="view-properties-of-the-data-connection"></a>데이터 연결의 속성 보기
 
 에 대 한 연결 문자열을 볼 수 있습니다 합니다 *SampleDatabase.mdf* 데이터 연결의 속성 창을 열어 파일:
 
--   Visual Studio에서 선택 **뷰** > **SQL Server 개체 탐색기** 창이 열려 있지 않은 경우. 확장 하 여 속성 창을 엽니다는 **데이터 연결** 에 대 한 바로 가기 메뉴를 열고 노드를 *SampleDatabase.mdf*를 선택한 다음 **속성**.
+- Visual Studio에서 선택 **뷰** > **SQL Server 개체 탐색기** 창이 열려 있지 않은 경우. 확장 하 여 속성 창을 엽니다는 **데이터 연결** 에 대 한 바로 가기 메뉴를 열고 노드를 *SampleDatabase.mdf*를 선택한 다음 **속성**.
 
--   선택할 수 있습니다 **뷰** > **서버 탐색기**창이 아직 열려 있지 않은 경우. 확장 하 여 속성 창을 엽니다는 **데이터 연결** 노드. 바로 가기 메뉴를 열고 *SampleDatabase.mdf*를 선택한 후 **속성**합니다.
+- 선택할 수 있습니다 **뷰** > **서버 탐색기**창이 아직 열려 있지 않은 경우. 확장 하 여 속성 창을 엽니다는 **데이터 연결** 노드. 바로 가기 메뉴를 열고 *SampleDatabase.mdf*를 선택한 후 **속성**합니다.
 
 ## <a name="create-tables-and-keys-by-using-table-designer"></a>테이블 디자이너를 사용 하 여 테이블 및 키 만들기
 
 이 섹션에서는 두 개의 테이블, 각 테이블 및 몇 가지 샘플 데이터 행의 기본 키를 만들어야 합니다. 한 테이블의 레코드가 다른 테이블의 레코드에 해당 하는 방법을 지정 하는 외래 키도 만들어야 합니다.
 
-### <a name="to-create-the-customers-table"></a>Customers 테이블을 만들려면
+### <a name="create-the-customers-table"></a>Customers 테이블을 만들려면
 
 1. **서버 탐색기** 또는 **SQL Server 개체 탐색기**를 확장 합니다 **데이터 연결** 노드를 펼친 다음는 **SampleDatabase.mdf**노드.
 
 2. 바로 가기 메뉴를 열고 **테이블**를 선택한 후 **새 테이블 추가**합니다.
 
-     테이블 디자이너**가 열리고 사용자가 만드는 테이블의 단일 열을 나타내는 한 개의 기본 행이 포함된 표가 표시됩니다. 표에 행을 추가하여 테이블에 열을 추가합니다.
+     **테이블 디자이너**가 열리고 사용자가 만드는 테이블의 단일 열을 나타내는 한 개의 기본 행이 포함된 표가 표시됩니다. 표에 행을 추가하여 테이블에 열을 추가합니다.
 
 3. 표에서 다음 각 항목에 대한 행을 추가합니다.
 
@@ -108,7 +109,7 @@ ms.locfileid: "52305327"
 
     변경 내용이 로컬 데이터베이스 파일에 저장됩니다.
 
-### <a name="to-create-the-orders-table"></a>Orders 테이블을 만들려면
+### <a name="create-the-orders-table"></a>Orders 테이블을 만들려면
 
 1. 다른 테이블을 추가한 다음, 다음 표의 각 항목에 대한 행을 추가합니다.
 
@@ -133,13 +134,13 @@ ms.locfileid: "52305327"
 
     변경 내용이 로컬 데이터베이스 파일에 저장됩니다.
 
-### <a name="to-create-a-foreign-key"></a>외래 키를 만들려면
+### <a name="create-a-foreign-key"></a>외래 키 만들기
 
 1. 그리드의 오른쪽에 컨텍스트 창에서 바로 가기 메뉴를 열고 **외래 키**를 선택한 후 **새 외래 키 추가**다음 그림과 같이 합니다.
 
      ![테이블 디자이너에서 외래 키 추가하기](../data-tools/media/foreignkey.png)
 
-2. 표시되는 텍스트 상자에서 ToTable**을 Customers**로 바꿉니다.
+2. 표시되는 텍스트 상자에서 **ToTable**을 **Customers**로 바꿉니다.
 
 3. T-SQL 창에서 마지막 줄 다음 샘플과 일치 하도록 업데이트 합니다.
 
@@ -170,7 +171,7 @@ ms.locfileid: "52305327"
 6. 일부 주문에 대 한 데이터를 추가 합니다.
 
     > [!IMPORTANT]
-    > 모든 주문 ID와 주문 수량이 정수이고 각 고객 ID가 Customers 테이블의 CustomerID 열에 지정한 값과 일치하는지 확인합니다.
+    > 모든 주문 ID와 주문 수량이 정수이고 각 고객 ID가 Customers 테이블의 **CustomerID** 열에 지정한 값과 일치하는지 확인합니다.
 
 7. 메뉴 모음에서 선택 **파일** > **모두 저장**합니다.
 

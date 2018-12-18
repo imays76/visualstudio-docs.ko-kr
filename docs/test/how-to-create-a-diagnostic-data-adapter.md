@@ -1,5 +1,5 @@
 ---
-title: '방법: Visual Studio에서 진단 데이터 어댑터에 만들기'
+title: '방법: 진단 데이터 어댑터 만들기'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 25adfc867ca208f367f047e4cb94322718e12b52
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 051f5ad7783271c2b0eea26bc3af5c0980f2c1fc
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895316"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068304"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>방법: 진단 데이터 어댑터 만들기
 
@@ -34,7 +34,7 @@ Microsoft Test Manager 또는 Visual Studio를 사용하여 테스트 설정을 
 
 아래 목록에는 진단 데이터 어댑터를 만들 때 사용할 수 있는 몇 가지 주요 이벤트가 나와 있습니다. 진단 데이터 어댑터 이벤트의 전체 목록을 보려면 추상 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents> 클래스를 참조하십시오.
 
-|이벤트(event)|설명|
+|이벤트|설명|
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionStart>|테스트 실행을 시작합니다.|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionEnd>|테스트 실행을 끝냅니다.|
@@ -257,15 +257,15 @@ Microsoft Test Manager 또는 Visual Studio를 사용하여 테스트 설정을 
     > [!NOTE]
     > 기본 구성 요소에는 필요한 모든 데이터가 포함될 수 있습니다. 테스트 설정에서 진단 데이터 어댑터를 구성하지 않은 경우에는 진단 데이터 어댑터가 실행될 때 기본 데이터가 전달됩니다. `<DefaultConfigurations>` 섹션에 추가하는 XML은 선언된 스키마의 일부가 될 수 없으므로 XML 오류가 생성되더라도 무시하면 됩니다.
     >
-    > 설치 디렉터리에 따라 *Program Files\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\DataCollectors* 경로에는 추가 구성 파일 예제가 있습니다.
+    > 설치 디렉터리에 따라 다음 경로에는 추가 구성 파일의 다른 예제가 있습니다. *Program Files\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\DataCollectors*.
 
      테스트를 실행할 때 환경을 사용하도록 테스트 설정을 구성하는 방법에 대한 자세한 내용은 [수동 테스트에서 진단 데이터 수집(Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)을 참조하세요.
 
-     구성 파일을 설치하는 방법에 대한 자세한 내용은 [방법: 사용자 지정 진단 데이터 어댑터 설치](../test/how-to-install-a-custom-diagnostic-data-adapter.md)를 참조하세요.
+     구성 파일 설치에 대한 자세한 내용은 [방법: 사용자 지정 진단 데이터 어댑터 설치](../test/how-to-install-a-custom-diagnostic-data-adapter.md)를 참조하세요.
 
 12. 진단 데이터 어댑터 어셈블리를 만들 솔루션을 빌드합니다.
 
-13. 사용자 지정 편집기를 설치하는 방법에 대한 자세한 내용은 [방법: 사용자 지정 진단 데이터 어댑터 설치](../test/how-to-install-a-custom-diagnostic-data-adapter.md)를 참조하세요.
+13. 사용자 지정 편집기 설치에 대한 자세한 내용은 [방법: 사용자 지정 진단 데이터 어댑터 설치](../test/how-to-install-a-custom-diagnostic-data-adapter.md)를 참조하세요.
 
 14. 테스트를 실행할 때 환경을 사용하도록 테스트 설정을 구성하는 방법에 대한 자세한 내용은 [수동 테스트에서 진단 데이터 수집(Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)을 참조하세요.
 

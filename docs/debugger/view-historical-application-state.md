@@ -1,7 +1,7 @@
 ---
-title: IntelliTrace를 사용하여 이전 애플리케이션 상태 보기
-ms.description: Learn how to take snapshots, and view snapshots with IntelliTrace step-back
-ms.custom: mvc
+title: IntelliTrace를 사용하여 이전 앱 상태 보기
+description: 스냅숏 만들기 및 IntelliTrace 뒤로 이동으로 스냅숏을 보는 방법을 알아봅니다
+ms.custom: seodec18
 ms.date: 09/19/2018
 ms.technology: vs-ide-debug
 ms.topic: tutorial
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d43e1a04570d68ce69f283cde264280fc24865a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ba1ab23fead36cfabc8b2754535e8b10de981987
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846865"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060147"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio"></a>Visual Studio에서 IntelliTrace 뒤로 이동을 사용하여 이전 앱 상태 검사
 
@@ -96,9 +96,9 @@ IntelliTrace 뒤로 이동은 Visual Studio Enterprise 2017 버전 15.5 이상�
 
 이벤트 전용 모드의 IntelliTrace를 통해 디버거 단계 및 중단점에서 기록 디버깅을 활성화할 수 있습니다. 그러나 IntelliTrace는 창이 열려 있는 경우 **로컬** 및 **자동** 창에서만 데이터를 캡처하고, 보기에서 확장된 데이터만 캡처합니다. 이벤트 전용 모드에서 종종 변수 및 복잡한 개체의 전체 보기가 없는 경우가 많습니다. 또한 **조사식** 창에서 식 평가 및 데이터 보기는 지원되지 않습니다. 
 
-이벤트 및 스냅숏 모드에서 IntelliTrace는 복잡한 개체를 포함하여 애플리케이션 프로세스의 전체 스냅숏을 캡처합니다. 코드 줄에서 중단점에서 중지된 것처럼 동일한 정보를 볼 수 있습니다(또한 이전에 정보를 확장했는지 여부는 중요하지 않음). 스냅숏을 볼 때 식 평가도 지원됩니다.  
+이벤트 및 스냅숏 모드에서 IntelliTrace는 복잡한 개체를 포함하여 애플리케이션 프로세스의 전체 스냅숏을 캡처합니다. 코드 줄에서 중단점에서 중지된 것처럼 동일한 정보를 볼 수 있습니다(또한 이전에 정보를 확장했는지 여부는 중요하지 않음). 스냅숏을 볼 때 식 평가도 지원됩니다.  
 
-#### <a name="what-is-the-performance-impact-of-this-feature"></a>이 기능의 성능 영향은 무엇인가요? 
+#### <a name="what-is-the-performance-impact-of-this-feature"></a>이 기능의 성능 영향은 무엇인가요? 
 
 전체 단계별 실행 성능에 미치는 영향은 애플리케이션에 따라 달라집니다. 스냅숏을 만드는 오버헤드는 약 30ms입니다. 스냅숏이 만들어질 때 앱의 프로세스가 포크되고 포크된 복사본이 일시 중단됩니다. 스냅숏을 볼 때 Visual Studio는 프로세스의 포크된 복사본에 연결됩니다. 각 스냅숏의 경우 Visual Studio는 페이지 테이블만 복사하고 페이지를 쓰기 중 복사로 설정합니다. 힙의 개체가 연결된 스냅숏이 있는 디버거 단계 사이로 변경되는 경우 해당 페이지 테이블이 복사되고 최소 메모리 비용이 듭니다. Visual Studio에서 스냅숏을 만들 충분한 메모리가 없는 것을 감지하면 스냅숏을 만들지 않습니다.
  
@@ -112,7 +112,7 @@ IntelliTrace 뒤로 이동은 Visual Studio Enterprise 2017 버전 15.5 이상�
   * 또는: 
     1. Visual Studio 설치 관리자에서 데스크톱(x86, x64) 구성 요소용 VC++ 2015.3 v140 도구 집합을 설치합니다.
     2. 대상 응용 프로그램을 빌드합니다.
-    3. 명령줄에서 editbin 도구를 사용하여 대상 실행 파일에 대한 `Largeaddressaware` 플래그를 설정합니다. 예를 들어 이 명령을 사용할 수 있습니다(경로 업데이트 후). "C:\Program Files (x86)\Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" /Largeaddressaware "C:\Path\To\Application\app.exe"
+    3. 명령줄에서 editbin 도구를 사용하여 대상 실행 파일에 대한 `Largeaddressaware` 플래그를 설정합니다. 예를 들어 경로를 업데이트한 후 다음 명령을 사용할 수 있습니다. "C:\Program Files(x86)\Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" /Largeaddressaware "C:\Path\To\Application\app.exe".
     4. 디버깅을 시작하려면 **F5** 키를 누릅니다. 이제 디버거 단계 및 중단점에서 스냅숏이 만들어집니다.
 
        > [!Note]

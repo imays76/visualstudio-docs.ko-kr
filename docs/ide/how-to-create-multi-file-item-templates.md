@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에 대한 다중 파일 항목 템플릿 만들기
+title: 다중 파일 항목 템플릿 만들기
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -11,12 +11,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0ba36e666daf7940971dff587aa483d62f97b6a9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: dd2cbe6d7a0ff586c0e673a6eb0e3d42aa4dec4e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942158"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065411"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>방법: 다중 파일 항목 템플릿 만들기
 
@@ -67,9 +67,9 @@ ms.locfileid: "31942158"
 
    **새 항목 추가** 대화 상자에 다중 파일 항목 템플릿이 나타납니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
-다음 예제에서는 Windows Forms 템플릿을 보여줍니다. 이 템플릿을 기반으로 항목이 생성되면 생성된 3개 파일의 이름은 **새 항목 추가** 대화 상자에 입력된 이름과 일치합니다.
+다음 예제에서는 Windows Forms 템플릿을 보여 줍니다. 이 템플릿을 기반으로 항목이 생성되면 생성된 3개 파일의 이름은 **새 항목 추가** 대화 상자에 입력된 이름과 일치합니다.
 
 ```xml
 <VSTemplate Version="2.0.0" Type="Item"
@@ -99,4 +99,4 @@ ms.locfileid: "31942158"
 - [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
 - [방법: 항목 템플릿 만들기](../ide/how-to-create-item-templates.md)
 - [템플릿 매개 변수](../ide/template-parameters.md)
-- [방법: 템플릿 매개 변수 대체](../ide/how-to-substitute-parameters-in-a-template.md)
+- [방법: 템플릿의 매개 변수 대체](../ide/how-to-substitute-parameters-in-a-template.md)

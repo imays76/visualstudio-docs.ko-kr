@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 Microsoft Unit Testing Framework for C++ 사용
+title: C++에 대한 Microsoft 단위 테스트 프레임워크 사용
 ms.date: 11/15/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 53243502e0368d3cb988950edf266cc56adbaa22
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 88265c1ac86b5b1c1cd90ef428c9c2c770d9f2a2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812454"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068262"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Visual Studio에서 Microsoft Unit Testing Framework for C++ 사용
 
@@ -100,4 +100,3 @@ TEST_METHOD(Method1)
 ## <a name="see-also"></a>참고 항목
 
 - [빠른 시작: 테스트 탐색기를 사용한 테스트 기반 개발](../test/quick-start-test-driven-development-with-test-explorer.md)
-

@@ -1,10 +1,11 @@
 ---
-title: Visual Studio 2017의 문제를 보고하는 방법
+title: Visual Studio에서 문제를 보고하는 방법
+titleSuffix: ''
 description: Visual Studio 2017의 문제를 진단하고 수정할 수 있도록 Microsoft에 보고하는 방법을 알아봅니다.
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 03/11/2018
-ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: bee01179-cde5-4419-9095-190ee0ba5902
 author: TerryGLee
@@ -12,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 539e6c95dd16e091b7f0ff2cf792a9f8b2fa416b
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 968b86af3620e42d7bca48335a03cca76f5afac3
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348343"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159284"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Visual Studio 2017의 문제를 보고하는 방법
 
