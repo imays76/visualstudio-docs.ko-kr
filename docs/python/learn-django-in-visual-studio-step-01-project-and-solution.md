@@ -1,5 +1,6 @@
 ---
-title: 자습서 - Visual Studio의 Django 알아보기, 1단계
+title: Visual Studio, 1단계, Django 기본 사항에서 Django 자습서 알아보기
+titleSuffix: ''
 description: Visual Studio 프로젝트 컨텍스트에서 Django 기본 사항을 검토하는 연습 과정으로, Django 개발을 위해 Visual Studio에서 제공하는 지원을 설명합니다.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +9,16 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 32779861c3f7b8a0bc8ea9e8a3a42d00a8226e1a
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: 549bd552cee0d9b833d1dee36f29f3a36b3f5f07
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001245"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061082"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>자습서: Visual Studio에서 Django 웹 프레임워크 시작
 
@@ -64,7 +66,7 @@ Visual Studio 프로젝트에는 여러 앱과 함께 Django 프로젝트가 포
     - **위치**: Visual Studio 솔루션 및 프로젝트를 만들 위치를 지정합니다.
     - **솔루션**: 이 컨트롤을 기본 **새 솔루션 만들기** 옵션으로 설정된 상태로 둡니다.
     - **솔루션 이름**: 이 자습서의 여러 프로젝트에 대한 컨테이너로 솔루션에 적합한 **LearningDjango**로 설정합니다.
-    - **솔루션용 디렉터리 만들기**: 설정된 상태(기본값)로 유지합니다.
+    - **솔루션용 디렉터리 만들기**: 설정을 그대로 둡니다(기본값).
     - **새 Git 리포지토리 만들기**: Visual Studio에서 솔루션을 만들 때 로컬 Git 리포지토리를 만들도록 이 옵션(기본적으로 선택 취소되어 있음)을 선택합니다. 이 옵션이 표시되지 않으면 Visual Studio 2017 설치 프로그램을 실행하고 **코드 도구**의 **개별 구성 요소** 탭에 **Windows용 Git** 및 **Visual Studio용 GitHub 확장**을 추가합니다.
 
 1. 잠시 후 Visual Studio에는 **이 프로젝트에는 외부 패키지가 필요합니다.** 라는 대화 상자가 표시됩니다(아래 표시). 이 대화 상자는 템플릿에 최신 Django 1.x 패키지를 참조하는 *requirements.txt* 파일이 포함되어 있기 때문에 나타납니다. 정확한 종속성을 확인하려면 **필수 패키지 표시**를 선택하세요.
@@ -111,7 +113,7 @@ Visual Studio 프로젝트에는 여러 앱과 함께 Django 프로젝트가 포
 
 대답: 무엇보다도 처음부터 소스 제어를 사용하면 특히 원격 리포지토리를 사용하는 경우에도 정기적으로 프로젝트를 오프사이트에 백업할 수 있습니다. 로컬 파일 시스템에서만 프로젝트를 유지 관리하는 것과 달리 소스 제어는 단일 파일이나 전체 프로젝트를 이전 상태로 되돌릴 수 있는 간단한 기능과 전체 변경 기록도 제공합니다. 이 변경 기록은 회귀(테스트 실패)의 원인을 확인하는 데 도움이 됩니다. 또한 소스 제어는 여러 명의 사용자가 한 프로젝트에서 작업하는 경우 덮어쓰기를 관리하고 충돌 해결을 제공하기 때문에 꼭 필요합니다. 마지막으로, 기본적으로 자동화 형태인 소스 제어는 빌드, 테스트 및 릴리스 관리를 자동화하는 데 적합합니다. 실제로 프로젝트에 DevOps를 사용하는 첫 번째 단계이며, 진입 장벽이 매우 낮기 때문에 처음부터 소스 제어를 사용하지 않을 이유가 없습니다.
 
-자동화로서 소스 제어에 대한 자세한 내용은 모바일 앱용으로 작성되고 웹앱에도 적용되는 MSDN Magazine의 [The Source of Truth: The Role of Repositories in DevOps](https://msdn.microsoft.com/magazine/mt763232)(정보의 출처: DevOps에서 리포지토리의 역할) 문서를 참조하세요.
+자동화와 같은 소스 제어에 대한 자세한 내용은 [사실의 소스: DevOps의 리포지토리 역할](https://msdn.microsoft.com/magazine/mt763232), 웹앱에도 적용되는 모바일 앱용으로 작성된 MSDN Magazine의 문서를 참조하세요.
 
 ### <a name="question-can-i-prevent-visual-studio-from-auto-committing-a-new-project"></a>질문: Visual Studio에서 새 프로젝트를 자동 커밋하지 않도록 할 수 있나요?
 
@@ -209,6 +211,6 @@ Visual Studio 프로젝트에는 여러 앱과 함께 Django 프로젝트가 포
 
 ## <a name="go-deeper"></a>자세히 알아보기
 
-- Django 프로젝트 코드: [Writing your first Django app, part 1](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)(첫 번째 Django 앱 작성, 1부)(docs.djangoproject.com)
+- Django 프로젝트 코드: [첫 번째 Django 앱 작성, 1부](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)(docs.djangoproject.com)
 - 관리 유틸리티: [django-admin and manage.py](https://docs.djangoproject.com/en/2.0/ref/django-admin/)(django-admin 및 manage.py)(docs.djangoproject.com)
 - GitHub의 자습서 소스 코드: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)
