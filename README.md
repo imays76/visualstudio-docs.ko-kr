@@ -2,7 +2,7 @@
 
 환영합니다. 이 리포지토리는 개발 중인 Visual Studio 2017 기술 문서의 소스 파일을 포함합니다. 항목은 [Visual Studio 설명서 사이트](https://docs.microsoft.com/visualstudio)에 게시됩니다.
 
-이 리포지토리는 2017년 6월 23일에 https://github.com/Microsoft/vsdocs에서 이동되었습니다. 이전 URL에 대한 트래픽이 여기로 리디렉션됩니다.
+이 리포지토리는 2017년 6월 23일에 https://github.com/Microsoft/vsdocs 에서 이동되었습니다. 이전 URL에 대한 트래픽이 여기로 리디렉션됩니다.
 
 Visual Basic 및 Visual C#에 대한 설명서는 별도의 리포지토리([http://github.com/dotnet/core-docs](http://github.com/dotnet/core-docs))에 있고 Visual C++ 설명서는 [http://github.com/MicrosoftDocs/cpp-docs](http://github.com/MicrosoftDocs/cpp-docs)의 리포지토리에 있습니다.
 

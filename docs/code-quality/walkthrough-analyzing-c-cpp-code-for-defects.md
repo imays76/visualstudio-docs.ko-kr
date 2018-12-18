@@ -1,4 +1,4 @@
----
+﻿---
 title: '연습: C/C++ 코드 오류 분석'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
@@ -69,7 +69,7 @@ ms.locfileid: "31922035"
 
      경고 C6230: 의미 체계가 다른 형식 간의 암시적 캐스팅: 부울 컨텍스트에서 HRESULT를 사용 합니다.
 
-     함수에서 경고를 발생 시킨 줄을 표시 하는 코드 편집기 `bool``ProcessDomain()`합니다. 이 경고는 HRESULT가 사용 하 고 있음을 'if' 문을 부울 결과 필요한 것을 나타냅니다.
+     함수에서 경고를 발생 시킨 줄을 표시 하는 코드 편집기 `bool ProcessDomain()`합니다. 이 경고는 HRESULT가 사용 하 고 있음을 'if' 문을 부울 결과 필요한 것을 나타냅니다.
 
 3. SUCCEEDED 매크로 사용 하 여이 경고를 해결 합니다. 코드에는 다음 코드와 유사 해야 합니다.
 
@@ -180,5 +180,5 @@ ms.locfileid: "31922035"
 
 ## <a name="see-also"></a>참고자료
 
-[연습: 코드 오류에 대 한 관리 되는 코드를 분석](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
-[C/c + + 코드 분석](../code-quality/code-analysis-for-c-cpp-overview.md)
+[연습: 코드 오류에 대 한 관리되는 코드를 분석](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
+[C/C++ 코드 분석](../code-quality/code-analysis-for-c-cpp-overview.md)

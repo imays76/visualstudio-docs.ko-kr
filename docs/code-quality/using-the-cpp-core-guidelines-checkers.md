@@ -1,4 +1,4 @@
----
+﻿---
 title: C++ Core Guidelines를 이용한 코드검사 사용
 ms.date: 08/14/2018
 ms.topic: conceptual
@@ -165,7 +165,7 @@ Microsoft Visual C++ 컴파일러는 특성을 표시 하지 않으려면는 GSL
 
 명령줄 옵션을 사용하여 일시적으로 파일에 대한 모든 코드 분석을 사용 하지 않도록 지정하여 `/analyze-`입니다. 경고가 생성 *D9025 재정의 '/analyze'와 ' /analyze-'*, 나중에 코드 분석을 다시 활성화 하려면 알려줍니다.
 
-## <a name="corecheck_per_file"></a> 특정 프로젝트 파일의 c + + 핵심 지침 검사기 사용
+## <a name="corecheck_per_file"></a> 특정 프로젝트 파일의 C++ 핵심 지침 검사기 사용
 
 경우에 따라 수행 중심 코드 분석을 계속 사용 하 여 Visual Studio IDE 유용할 수 있습니다. 빌드 시간을 저장 하 고 필터 결과를 쉽게 대규모 프로젝트에 대 한 다음 예제 시나리오를 사용할 수 있습니다.
 
@@ -174,8 +174,8 @@ Microsoft Visual C++ 컴파일러는 특성을 표시 하지 않으려면는 GSL
 3. 프로젝트를 로드 하 고 해당 속성을 엽니다.
 4. 코드 분석을 사용 하도록 설정 하 고, 적절 한 규칙 집합을 선택 하지만 코드 분석 확장을 사용 하지 마세요.
 5. C++ 핵심 지침 검사기를 사용 하 여 분석 하 고 해당 속성을 열고 파일이 있는 위치로 이동 합니다.
-6. 선택할 **C / C + + \Command 선 옵션** 추가 `/analyze:plugin EspXEngine.dll`
-7. 미리 컴파일된 헤더 사용 하지 않도록 설정 (**C / C + + 헤더 \Precompiled**). 미리 컴파일된 헤더 (PCH);에서 해당 내부 정보를 읽을 수 확장 엔진 시도할 되므로이 과정이 필요 기본 프로젝트 옵션을 사용 하 여 컴파일 했습니다. PCH를 호환 되지 않습니다.
+6. 선택할 **C/C++ \Command 선 옵션** 추가 `/analyze:plugin EspXEngine.dll`
+7. 미리 컴파일된 헤더 사용 하지 않도록 설정 (**C/C++ 헤더 \Precompiled**). 미리 컴파일된 헤더 (PCH);에서 해당 내부 정보를 읽을 수 확장 엔진 시도할 되므로이 과정이 필요 기본 프로젝트 옵션을 사용 하 여 컴파일 했습니다. PCH를 호환 되지 않습니다.
 8. 프로젝트를 다시 빌드합니다. 모든 파일에 일반 PREFast 검사를 실행 해야 합니다. 기본적으로 C++ 핵심 지침 검사기를 사용할 수 없으므로 사용 하도록 구성 된 파일에만 실행 해야 합니다.
 
 ## <a name="how-to-use-the-c-core-guidelines-checker-outside-of-visual-studio"></a>Visual Studio 외부에서 C++ 핵심 지침 검사기를 사용 하는 방법
@@ -233,7 +233,7 @@ MSBuild에 종속 되지 않는 빌드 시스템을 사용 하는 경우, 검사
 ## <a name="use-the-guideline-support-library"></a>지침 지원 라이브러리를 사용 합니다.
  지침 지원 라이브러리는 핵심 지침을 따를 수 있도록 설계 되었습니다. GSL 오류가 구문 보다 안전한 대체 항목으로 대체할 수 있도록 정의 포함 합니다. 예를 들어 바꿀 수 있습니다는 `T*, length` 쌍을 사용 하 여 매개 변수는 `span<T>` 형식입니다. 제공 되는 GSL [ http://www.nuget.org/packages/Microsoft.Gsl ](http://www.nuget.org/packages/Microsoft.Gsl)합니다. 라이브러리는 오픈 소스는 원본을 보려면, 메모 추가 하거나 기여할 수 있습니다. 프로젝트를 찾을 수 있습니다 [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL)합니다.
 
-## <a name="vs2015_corecheck"></a> Visual Studio 2015 프로젝트에서 c + + Core Check 지침을 사용 합니다.
+## <a name="vs2015_corecheck"></a> Visual Studio 2015 프로젝트에서 C++ Core Check 지침을 사용 합니다.
 
 Visual Studio 2015를 사용 하는 경우 C++ Core Check 코드 분석 규칙 집합 기본적으로 설치 되지 않습니다. Visual Studio 2015의 C++ Core Check 코드 분석 도구를 사용 하려면 먼저 몇 가지 추가 단계를 수행 해야 합니다. Microsoft는 Nuget 패키지를 사용 하 여 Visual Studio 2015 프로젝트에 대 한 지원을 제공 합니다. 패키지의 이름은 Microsoft.CppCoreCheck, 및에서 사용할 수 있습니다 [ http://www.nuget.org/packages/Microsoft.CppCoreCheck ](http://www.nuget.org/packages/Microsoft.CppCoreCheck)합니다. 이 패키지는 최신 Visual Studio 2015 업데이트 1을 사용 하 여 설치 해야 해야 합니다.
 
