@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb4275a8cf88ccedc93695422261624801fdcf33
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 260e745db7036981ab0a3c79074d99a2b7c7fbb5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586754"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828413"
 ---
 # <a name="vstemplate-element-visual-studio-templates"></a>VSTemplate 요소 (Visual Studio 템플릿)
 프로젝트 템플릿, 항목 템플릿 또는 시작 키트에 대 한 모든 메타 데이터를 포함합니다.  
@@ -40,10 +40,10 @@ ms.locfileid: "39586754"
   
 ### <a name="attributes"></a>특성  
   
-|특성|설명|  
-|---------------|-----------------|  
-|`Type`|프로젝트 템플릿 또는 항목 템플릿을으로 템플릿을 식별합니다. 이 특성의 값을 가질 수 `Project` 또는 `Item`합니다.|  
-|`Version`|템플릿에 대 한 버전 번호를 지정합니다. 템플릿 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] 하 고 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 가 `Version` 특성 값 `3.0.0`합니다.|  
+| 특성 | 설명 |
+|-----------| - |
+| `Type` | 프로젝트 템플릿 또는 항목 템플릿을으로 템플릿을 식별합니다. 이 특성의 값을 가질 수 `Project` 또는 `Item`합니다. |
+| `Version` | 템플릿에 대 한 버전 번호를 지정합니다. 템플릿 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] 하 고 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 가 `Version` 특성 값 `3.0.0`합니다. |
   
 ### <a name="child-elements"></a>자식 요소  
   
@@ -60,7 +60,7 @@ ms.locfileid: "39586754"
 ## <a name="remarks"></a>설명  
  합니다 `VSTemplate` 요소는 루트 요소입니다 *.vstemplate* 파일입니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 프로젝트 템플릿에 대 한 메타 데이터는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 응용 프로그램입니다.  
   
 ```xml  

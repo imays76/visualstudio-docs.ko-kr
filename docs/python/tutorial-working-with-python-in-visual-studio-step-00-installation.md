@@ -1,22 +1,24 @@
 ---
-title: Python 작업 자습서, 0단계, 설치
+title: Visual Studio 자습서 0단계에서 Python 설치
+titleSuffix: ''
 description: Visual Studio의 Python 작업에 대한 핵심 연습의 0단계(설치 필수 구성 요소)입니다.
-ms.date: 06/26/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c0b28ab5310f1be97ecf7b7acbcaa3360b29c480
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 5096d0789f8f3c84c041591918af73cc230fe16d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513522"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064445"
 ---
 # <a name="install-python-support-in-visual-studio"></a>Visual Studio에서 Python 지원 설치
 

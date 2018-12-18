@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf32eb5d8771f95ec155a93d1fe1e770e0cc2d52
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e5fc3ab0767a7077860c82acefc9554ba1228cee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108497"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831122"
 ---
 # <a name="idebugcoreserver3enableautoattach"></a>IDebugCoreServer3::EnableAutoAttach
-지정 된 디버그 엔진에 대 한 자동 연결을 설정 합니다.  
+지정 된 디버그 엔진에 대 한 자동 연결을 사용 하도록 설정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -47,22 +47,22 @@ int EnableAutoAttach(
   
 #### <a name="parameters"></a>매개 변수  
  `rgguidSpecificEngines`  
- [in] 으로 자동 연결을 표시 하려면 각 디버그 엔진에 대 한 Guid의 배열입니다.  
+ [in] 자동 연결로 표시할 각 디버그 엔진에 대 한 Guid의 배열입니다.  
   
  `celtSpecificEngines`  
- [in] 엔진에 지정 된 수가 `rgguidSpecificEngines`합니다.  
+ [in] 에 지정 된 엔진 수가 `rgguidSpecificEngines`합니다.  
   
  `pszStartPageUrl`  
- [in] 자동 연결 시 사용할 시작 URL입니다.  
+ [in] 자동 연결 하는 경우 사용할 시작 URL입니다.  
   
  `pbstrSessionID`  
  [out] 자동 연결 된 세션 ID입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`; 그렇지 않으면 오류 코드를 반환 합니다. 한 오류 코드는 `E_AUTO_ATTACH_NOT_REGISTERED`, auto-attach 클래스 팩터리가 등록 되지 않은 나타냅니다.  
+ 성공 하면 반환 `S_OK`; 그렇지 않으면 오류 코드를 반환 합니다. 하나의 오류 코드는 `E_AUTO_ATTACH_NOT_REGISTERED`, auto-attach 클래스 팩터리를 등록 되지 않은 나타냅니다.  
   
 ## <a name="remarks"></a>설명  
- 지정 된 URL과 연결 된 프로그램을 시작 하는 경우 지정 된 디버그 엔진을 자동으로 시작 되어 연결 합니다.  
+ 지정 된 URL에 연결 된 프로그램이 시작 되 면 지정 된 디버그 엔진을 자동으로 시작 및 연결 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

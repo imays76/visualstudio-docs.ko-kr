@@ -10,16 +10,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b1e39743b8e3e6602961dfec693d5dc92c0ee63
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 5cd721dc6682057519821ee155ac8a5d803769dc
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669329"
 ---
 # <a name="status"></a>상태
-VSPerfCmd.exe **Status** 옵션은 프로파일러의 상태에 대한 정보 및 현재 프로파일링되는 모든 프로세스를 표시합니다.  
+*VSPerfCmd.exe* **Status** 옵션은 프로파일러의 상태에 대한 정보 및 현재 프로파일링되는 모든 프로세스를 표시합니다.  
   
- **Status** 옵션은 명령줄에 지정된 유일한 옵션이어야 합니다. 프로파일러는 상태를 표시하려면 VSPerfCmd.exe **Start** 옵션으로 초기화되어야 합니다.  
+ **Status** 옵션은 명령줄에 지정된 유일한 옵션이어야 합니다. 상태를 표시하려면 먼저 프로파일러가 *VSPerfCmd.exe* **Start** 옵션으로 초기화되어야 합니다.  
   
 ## <a name="syntax"></a>구문  
   

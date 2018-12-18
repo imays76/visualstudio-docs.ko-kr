@@ -1,6 +1,6 @@
 ---
 title: 'CA1724: 형식 이름은 네임스페이스와 달라야 합니다.'
-ms.date: 11/04/2016
+ms.date: 09/28/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3944aba1a8b967e8da2bee007a4bbd4bacf4d6b1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bf359ffcc098fa2b5653c28da302e2777216ea5b
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915830"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860266"
 ---
-# <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724: 형식 이름은 네임스페이스와 달라야 합니다.
+# <a name="ca1724-type-names-should-not-match-namespaces"></a>: 형식 이름은 ca1724 네임 스페이스
+
 |||
 |-|-|
 |TypeName|TypeNamesShouldNotMatchNamespaces|
@@ -32,13 +33,17 @@ ms.locfileid: "31915830"
 |변경 수준|주요 변경|
 
 ## <a name="cause"></a>원인
- 형식 이름이 일치는 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 대/소문자 구분 비교에서 네임 스페이스 이름입니다.
+
+형식 이름에는 하나 이상의 외부에서 표시 되는 형식에는 참조 된 네임 스페이스 이름을 일치 합니다. 이름 비교는 대/소문자입니다.
 
 ## <a name="rule-description"></a>규칙 설명
- 형식 이름은 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 클래스 라이브러리에 정의된 네임스페이스의 이름과 같아서는 안 됩니다. 이 규칙을 위반하면 라이브러리의 유용성이 저하될 수 있습니다.
+
+사용자가 만든 형식 이름 형식이 외부에서 볼 수 있는 참조 된 네임 스페이스의 이름을 일치 하지 해야 합니다. 이 규칙을 위반 하면 라이브러리의 유용성을 줄일 수 있습니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이름을 일치 하지 않는 형식 이름을 선택 된 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 클래스 라이브러리 네임 스페이스입니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
- 새로운 개발의 경우 알려져 있지 않습니다에 대 한이 규칙에서 경고를 표시 해야 하는 시나리오가 발생 합니다. 경고를 억제 하기 전에 신중히 어떻게 라이브러리는 사용자가 혼동을 줄 수는 일치 하는 이름으로 고려 합니다. 제공 되는 라이브러리에는이 규칙에서 경고를 표시 해야 할 수 있습니다.
+형식이 외부에 표시 되는 참조 된 네임 스페이스의 이름을 일치 하지는 형식의 이름을 바꾸십시오.
+
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
+
+새로운 개발에 알려져 있지 않습니다 시나리오 발생이 규칙에서 경고를 표시 해야 하는 위치입니다. 경고를 표시 하지 않으려면 전에 신중 하 게 하는 방법 라이브러리의 사용자 혼동을 줄 수는 일치 하는 이름별 고려해. 제공 되는 라이브러리에 대 한이 규칙에서 경고를 표시 해야 합니다.

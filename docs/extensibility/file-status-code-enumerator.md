@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b51e20c18562c1c0e6c23968577dd58eadfe59e
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 884c7ab1b5d4fe1461fd1ae00fbc670f0bc7b6f2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498170"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921017"
 ---
 # <a name="file-status-code-enumerator"></a>파일 상태 코드 열거자
 `SccStatus` 소스 제어 시스템에서 파일의 상태를 지정 하는 명명 된 상수 값을 포함 하는 열거자입니다. 이 열거형은에서 사용 합니다 [SccQueryInfo](../extensibility/sccqueryinfo-function.md) 하며 `POPLISTFUNC` 콜백 함수 (참조 [POPLISTFUNC](../extensibility/poplistfunc.md) 세부 정보에 대 한).  

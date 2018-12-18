@@ -10,21 +10,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d09dc41f3726f21b432f39a504b5ea8b320bf107
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3bfc59eb1cec7e4ed5ef9b7955438fffb03ca5d4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749247"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832903"
 ---
 # <a name="counter"></a>카운터
 **Counter** 옵션은 프로세서(하드웨어) 성능 카운터에서 데이터를 수집합니다.  
   
--   샘플링 프로파일링 방법을 사용하는 경우 **Counter**는 온칩 성능 카운터와 샘플링 간격으로 사용할 카운터 이벤트의 수를 지정합니다. 샘플링을 사용하는 경우 카운터를 하나만 지정할 수 있습니다.  
+- 샘플링 프로파일링 방법을 사용하는 경우 **Counter**는 온칩 성능 카운터와 샘플링 간격으로 사용할 카운터 이벤트의 수를 지정합니다. 샘플링을 사용하는 경우 카운터를 하나만 지정할 수 있습니다.  
   
--   계측 프로파일링 방법을 사용하는 경우 이전 및 현재 컬렉션 이벤트 중간에 발생한 카운터 이벤트의 수가 프로파일러 보고서에 별도의 필드로 나열됩니다. 계측을 사용하는 경우 여러 **Counter** 옵션을 지정할 수 있습니다.  
+- 계측 프로파일링 방법을 사용하는 경우 이전 및 현재 컬렉션 이벤트 중간에 발생한 카운터 이벤트의 수가 프로파일러 보고서에 별도의 필드로 나열됩니다. 계측을 사용하는 경우 여러 **Counter** 옵션을 지정할 수 있습니다.  
   
- 각 프로세서 유형에는 고유한 하드웨어 성능 카운터 집합이 있습니다. 프로파일러는 거의 모든 프로세서에서 공통되는 일반 성능 카운터 집합을 정의합니다. 컴퓨터의 일반 및 프로세서별 카운터를 나열하려면 VSPerfCmd **QueryCounters** 명령을 사용합니다.  
+  각 프로세서 유형에는 고유한 하드웨어 성능 카운터 집합이 있습니다. 프로파일러는 거의 모든 프로세서에서 공통되는 일반 성능 카운터 집합을 정의합니다. 컴퓨터의 일반 및 프로세서별 카운터를 나열하려면 VSPerfCmd **QueryCounters** 명령을 사용합니다.  
   
 ## <a name="syntax"></a>구문  
   

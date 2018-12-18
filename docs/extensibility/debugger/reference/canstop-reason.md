@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 791132d94526126e8fc611b2becbb8b7545bb578
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4129839094b7f5cf9907f6b92fa11fe1847f5806
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109335"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938814"
 ---
 # <a name="canstopreason"></a>CANSTOP_REASON
-프로그램 실행의 특정 지점에 도달한 후 실행을 중지할 수는 경우를 결정 하는 데 사용 합니다.  
+프로그램 실행의 특정 지점에 도달한 후 실행을 중지할 수 있습니다 하는 경우를 결정 하는 데 사용 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -44,13 +44,13 @@ public enum enum_CANSTOP_REASON {
   
 ## <a name="members"></a>멤버  
  CANSTOP_ENTRYPOINT  
- 지정된 된 프로그램의 진입점을 지정합니다.  
+ 지정 된 프로그램의 진입점을 지정합니다.  
   
  CANSTOP_STEPIN  
  함수를 한 단계씩 실행을 지정 합니다.  
   
 ## <a name="remarks"></a>설명  
- 에 대 한 인수로 전달 되는 [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) 함수 또는 메서드를 한 단계씩 실행 후 또는 프로그램의 진입점에 도달한 후 중지를 하는 경우 세션 디버그 관리자 SDM (과)를 확인 하는 메서드.  
+ 인수로 전달 된 [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) 프로그램의 진입점에 도달한 후 또는 함수나 메서드를 한 단계씩 실행 한 후 중지 하 되는 경우 세션 디버그 관리자 SDM (과)를 확인 하는 방법입니다.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  

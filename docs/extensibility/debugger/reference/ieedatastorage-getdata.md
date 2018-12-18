@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ddbc77950396df743b88ce3b6c1a94bbeaf8126
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 88ca53843c342547a0c0641bcb76f8e1166723ab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120857"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860594"
 ---
 # <a name="ieedatastoragegetdata"></a>IEEDataStorage::GetData
 개체에서 지정 된 바이트 수를 검색합니다.  
@@ -45,19 +45,19 @@ int GetData(
   
 #### <a name="parameters"></a>매개 변수  
  `dataSize`  
- [in] 검색할 바이트 수입니다 (의 `data` 배열 적어도이 바이트 수가 보유 해야 합니다).  
+ [in] 검색할 바이트 수 (의 `data` 배열 최소 바이트이 수가이 보유 해야 합니다).  
   
  `sizeGotten`  
- [out] 실제 검색 바이트 수를 반환 합니다.  
+ [out] 실제로 검색 하는 바이트 수를 반환 합니다.  
   
  `data`  
- [out에서] 요청된 된 데이터를 사용 하 여 채울 배열입니다.  
+ [out에서] 요청한 데이터를로 채워질 배열입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 권장 되는 사용이 메서드의 검색 프로세스에서 바이트를 건너뛸 수 없기 때문 로컬 배열에 모든 데이터 바이트를 검색 하는 것입니다. 이 경우, 매개 변수 `dataSize` 값에서 반환 해야는 [GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md) 메서드.  
+ 권장 되는이 방법 사용 검색 프로세스에서 바이트를 건너뛸 수 없기 때문 로컬 배열로 모든 데이터 바이트를 검색 하는 것입니다. 이 예에서 매개 변수 `dataSize` 값에서 반환 해야 합니다 [GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md) 메서드.  
   
 ## <a name="see-also"></a>참고 항목  
  [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)   

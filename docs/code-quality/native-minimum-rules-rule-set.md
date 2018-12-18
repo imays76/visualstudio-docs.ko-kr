@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c4f4417651ca574bc7de3014cc96d7089df23085
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 9149276064b76a08705b70883bb3c2e136e23334
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945808"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389016"
 ---
 # <a name="native-minimum-rules-rule-set"></a>네이티브 최소 규칙 규칙 집합
 Microsoft 네이티브 최소 규칙은 잠재적 보안 허점 및 응용 프로그램 충돌을 비롯 하 여 네이티브 코드의 가장 중요 한 문제에 집중 합니다. 네이티브 프로젝트에 대해 만드는 모든 사용자 지정 규칙 집합에 이 규칙 집합을 포함해야 합니다.
@@ -37,7 +37,7 @@ Microsoft 네이티브 최소 규칙은 잠재적 보안 허점 및 응용 프�
 |[C6270](../code-quality/c6270.md)|Format 함수에 부동 인수 없음|
 |[C6271](../code-quality/c6271.md)|Format 함수의 추가 인수|
 |[C6272](../code-quality/c6272.md)|Format 함수의 비부동 인수|
-|[C6273](../code-quality/c6273.md)|Format 함수의 비정수 인수|
+|[C6273](../code-quality/c6273.md)|Format 함수에 정수가 아닌 인수|
 |[C6274](../code-quality/c6274.md)|Format 함수의 비문자 인수|
 |[C6276](../code-quality/c6276.md)|잘못된 문자열 캐스팅|
 |[C6277](../code-quality/c6277.md)|잘못된 CreateProcess 호출|
@@ -81,6 +81,12 @@ Microsoft 네이티브 최소 규칙은 잠재적 보안 허점 및 응용 프�
 |[C6704](../code-quality/c6704.md)|예기치 않은 주석 식 오류가 발생했습니다.|
 |[C6705](../code-quality/c6705.md)|필요한 주석 인수 개수가 실제 주석 인수 개수와 일치하지 않습니다.|
 |[C6706](../code-quality/c6706.md)|예기치 않은 주석 오류가 발생했습니다.|
+|[C26450](../code-quality/c26450.md)|RESULT_OF_ARITHMETIC_OPERATION_PROVABLY_LOSSY|
+|[C26451](../code-quality/c26451.md)|RESULT_OF_ARITHMETIC_OPERATION_CAST_TO_LARGER_SIZE|
+|[C26452](../code-quality/c26452.md)|SHIFT_COUNT_NEGATIVE_OR_TOO_BIG|
+|[C26453](../code-quality/c26453.md)|LEFTSHIFT_NEGATIVE_SIGNED_NUMBER|
+|[C26454](../code-quality/c26454.md)|RESULT_OF_ARITHMETIC_OPERATION_NEGATIVE_UNSIGNED|
+|[C26495](../code-quality/c26495.md)|MEMBER_UNINIT|
 |[C28021](../code-quality/c28021.md)|주석이 달린 매개 변수는 포인터여야 합니다.|
 |[C28182](../code-quality/c28182.md)|NULL 포인터를 역참조하고 있습니다. 포인터에 다른 포인터와 동일한 NULL 값이 포함되어 있습니다.|
 |[C28202](../code-quality/c28202.md)|비정적 멤버에 대한 잘못된 참조입니다.|
@@ -96,7 +102,7 @@ Microsoft 네이티브 최소 규칙은 잠재적 보안 허점 및 응용 프�
 |[C28215](../code-quality/c28215.md)|typefix는 이미 typefix가 있는 매개 변수에 적용할 수 없습니다.|
 |[C28216](../code-quality/c28216.md)|checkReturn 주석은 특정 함수 매개 변수에 대한 사전 조건에만 적용됩니다.|
 |[C28217](../code-quality/c28217.md)|함수의 경우 주석에 대한 매개 변수 개수가 파일에 있는 개수와 일치하지 않습니다.|
-|[C28218](../code-quality/c28218.md)|함수 매개 변수의 경우 주석의 매개 변수가 파일에 있는 매개 변수와 일치하지 않습니다.|
+|[C28218](../code-quality/c28218.md)|함수 매개 변수의 경우 주석의 매개 변수 일치 하지 않는 파일|
 |[C28219](../code-quality/c28219.md)|주석에 있는 매개 변수 주석에 열거의 멤버가 필요합니다.|
 |[C28220](../code-quality/c28220.md)|주석에 있는 매개 변수에 정수 식이 필요합니다.|
 |[C28221](../code-quality/c28221.md)|주석에 있는 매개 변수에 문자열 식이 필요합니다.|

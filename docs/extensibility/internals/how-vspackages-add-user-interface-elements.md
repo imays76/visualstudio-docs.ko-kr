@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c595018dc588b6b6fbb014e074c737a53ea2013
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 8b498f9df752fd5ac1f1212649aa5b8bb62d27fb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512124"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839117"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Vspackage에서 사용자 인터페이스 요소를 추가 하는 방법
 VSPackage 예제에서는, 메뉴, 도구 모음에 대 한 사용자 인터페이스 (UI) 요소를 추가 하 고 windows를 이용 하 여 Visual Studio 도구를 *.vsct* 파일입니다.  
@@ -90,15 +90,15 @@ VSPackage 예제에서는, 메뉴, 도구 모음에 대 한 사용자 인터페�
 #### <a name="menus"></a>메뉴  
  로 정의 된 각 메뉴는 [메뉴 요소](../../extensibility/menu-element.md) 에 `Menus` 섹션. 메뉴 있어야 `guid`, `id`, 및 `priority` 특성으로 `Parent` 요소 또한 다음 추가 특성 및 자식:  
   
--   `type` 메뉴 도구 모음 또는 메뉴의 일종으로 IDE에 표시될지 여부를 지정 하는 특성입니다.  
+- `type` 메뉴 도구 모음 또는 메뉴의 일종으로 IDE에 표시될지 여부를 지정 하는 특성입니다.  
   
--   [문자열 요소](../../extensibility/strings-element.md) 를 포함 하는 [ButtonText 요소](../../extensibility/buttontext-element.md), IDE의 메뉴의 제목을 지정 하는 및 [CommandName 요소](../../extensibility/commandname-element.md)는 이름을 지정 하는 에 사용 합니다 **명령** 메뉴에 액세스 하는 창입니다.  
+- [문자열 요소](../../extensibility/strings-element.md) 를 포함 하는 [ButtonText 요소](../../extensibility/buttontext-element.md), IDE의 메뉴의 제목을 지정 하는 및 [CommandName 요소](../../extensibility/commandname-element.md)는 이름을 지정 하는 에 사용 합니다 **명령** 메뉴에 액세스 하는 창입니다.  
   
--   선택적 플래그입니다. A [CommandFlag 요소](../../extensibility/command-flag-element.md) 의 모양이 나 IDE에서 동작을 변경 하려면 메뉴 정의에 나타날 수 있습니다.  
+- 선택적 플래그입니다. A [CommandFlag 요소](../../extensibility/command-flag-element.md) 의 모양이 나 IDE에서 동작을 변경 하려면 메뉴 정의에 나타날 수 있습니다.  
   
- 모든 `Menu` 도구 모음 같은 요소를 도킹 가능 하지 않은 요소를 부모로 그룹이 있어야 합니다. 도킹 메뉴는 해당 부모입니다. 메뉴 및 값에 대 한 자세한 내용은 합니다 `type` 특성을 참조 하십시오는 [메뉴 요소](../../extensibility/menu-element.md) 설명서.  
+  모든 `Menu` 도구 모음 같은 요소를 도킹 가능 하지 않은 요소를 부모로 그룹이 있어야 합니다. 도킹 메뉴는 해당 부모입니다. 메뉴 및 값에 대 한 자세한 내용은 합니다 `type` 특성을 참조 하십시오는 [메뉴 요소](../../extensibility/menu-element.md) 설명서.  
   
- 다음 예제에서는 Visual Studio 메뉴 모음에서 옆에 표시 되는 메뉴의 **도구** 메뉴.  
+  다음 예제에서는 Visual Studio 메뉴 모음에서 옆에 표시 되는 메뉴의 **도구** 메뉴.  
   
 ```xml  
 <Menu guid="guidTopLevelMenuCmdSet"  
@@ -159,11 +159,11 @@ priority="0x0100" type="Menu">
 ##### <a name="combos"></a>Combos  
  Combos에 정의 된 `Combos` 섹션입니다. 각 `Combo` 요소 IDE의 드롭다운 목록 상자를 나타냅니다. 목록 상자 수도 값에 따라 사용자가 쓸 수 없습니다는 `type` 콤보의 특성입니다. Combos 동일한 요소가 포함 하 고 단추는 동작이 다음 추가 특성을 수도 있습니다.  
   
--   `defaultWidth` 픽셀 너비를 지정 하는 특성입니다.  
+- `defaultWidth` 픽셀 너비를 지정 하는 특성입니다.  
   
--   `idCommandList` 목록 상자에 표시 되는 항목이 포함 된 목록을 지정 하는 특성입니다. 동일한 명령 목록을 선언 해야 `GuidSymbol` 콤보 들어 있는 노드입니다.  
+- `idCommandList` 목록 상자에 표시 되는 항목이 포함 된 목록을 지정 하는 특성입니다. 동일한 명령 목록을 선언 해야 `GuidSymbol` 콤보 들어 있는 노드입니다.  
   
- 다음 예제에서는 콤보 요소를 정의 합니다.  
+  다음 예제에서는 콤보 요소를 정의 합니다.  
   
 ```xml  
 <Combos>  
@@ -192,7 +192,7 @@ priority="0x0100" type="Menu">
  다음 규칙은 항목 부모로 다른 항목을 호출 하는 방법을 제어 합니다.  
   
 |요소|이 섹션의 명령 테이블 정의|포함 될 수 있습니다 (또는에서 배치를 부모로 가지는 `CommandPlacements` 섹션 중 하나 또는 둘 다)|포함 될 수 있습니다 (부모 라고 함)|  
-|-------------|--------------------------------------------------|---------------------------------------------------------------------------------------------------|---------------------------------------------|  
+|-------------| - | - | - |  
 |그룹화|[Groups 요소](../../extensibility/groups-element.md), IDE, 다른 Vspackage|메뉴, 그룹 자체 항목|메뉴, 그룹 및 명령|  
 |메뉴|[Menus 요소](../../extensibility/menus-element.md), IDE, 다른 Vspackage|1 ~ *n* 그룹|0 *n* 그룹|  
 |Toolbar|[Menus 요소](../../extensibility/menus-element.md), IDE, 다른 Vspackage|항목과|0 *n* 그룹|  
@@ -290,17 +290,17 @@ priority="0x0100" type="Menu">
 ## <a name="interface-element-appearance"></a>인터페이스 요소 모양  
  선택한 명령 요소 위치 지정에 대 한 고려 사항은 아래와 같습니다.  
   
--   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 배치에 따라 다르게 표시 되는 여러 UI 요소를 제공 합니다.  
+- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 배치에 따라 다르게 표시 되는 여러 UI 요소를 제공 합니다.  
   
--   UI 요소를 사용 하 여 정의 된를 `DefaultInvisible` VSPackage 구현에서 표시 하지 않은 플래그 IDE에서 표시 되지 것입니다는 <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> 메서드를 특정 UI 컨텍스트를 사용 하 여 연결 된 또는 `VisibilityConstraints` 섹션.  
+- UI 요소를 사용 하 여 정의 된를 `DefaultInvisible` VSPackage 구현에서 표시 하지 않은 플래그 IDE에서 표시 되지 것입니다는 <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> 메서드를 특정 UI 컨텍스트를 사용 하 여 연결 된 또는 `VisibilityConstraints` 섹션.  
   
--   명령은 성공적으로 배치도 표시 될 수 있습니다. IDE는 자동으로 숨기 거 나는 (또는 되지 않은) VSPackage 인터페이스에 따라 일부 명령을 표시 하기 때문에 구현 됩니다. 예를 들어, 일부 VSPackage 구현 하면 빌드 관련 항목이 자동으로 표시 될 인터페이스를 빌드합니다.  
+- 명령은 성공적으로 배치도 표시 될 수 있습니다. IDE는 자동으로 숨기 거 나는 (또는 되지 않은) VSPackage 인터페이스에 따라 일부 명령을 표시 하기 때문에 구현 됩니다. 예를 들어, 일부 VSPackage 구현 하면 빌드 관련 항목이 자동으로 표시 될 인터페이스를 빌드합니다.  
   
--   적용 된 `CommandWellOnly` UI 요소의 정의 플래그 명령을 사용자 지정 하 여만 추가할 수 있는지를 의미 합니다.  
+- 적용 된 `CommandWellOnly` UI 요소의 정의 플래그 명령을 사용자 지정 하 여만 추가할 수 있는지를 의미 합니다.  
   
--   IDE가 디자인 뷰임을 대화 상자가 표시 될 때에 명령 예를 들어, 특정 UI 컨텍스트 에서만에서 사용할 수 있습니다.  
+- IDE가 디자인 뷰임을 대화 상자가 표시 될 때에 명령 예를 들어, 특정 UI 컨텍스트 에서만에서 사용할 수 있습니다.  
   
--   IDE에 표시할 특정 UI 요소를 하나 이상의 인터페이스를 구현 하거나 코드를 작성 해야 합니다.  
+- IDE에 표시할 특정 UI 요소를 하나 이상의 인터페이스를 구현 하거나 코드를 작성 해야 합니다.  
   
 ## <a name="see-also"></a>참고자료  
  [메뉴 및 명령 확장](../../extensibility/extending-menus-and-commands.md)

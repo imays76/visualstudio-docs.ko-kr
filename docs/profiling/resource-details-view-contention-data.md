@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ac06fa18ee9459d8dc43bd0c536b68f9d027c97d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 024241870bb4a0a2ef696130cbe5ddc94319493a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31584401"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837206"
 ---
 # <a name="resource-details-view---contention-data"></a>리소스 정보 뷰 - 경합 데이터
 리소스 정보 뷰에는 선택한 리소스에 대한 경합으로 인해 발생한 차단 이벤트의 시간 표시 막대 그래프가 표시됩니다. 다른 스레드가 리소스에 대한 액세스를 잠가 스레드가 실행을 일시 중단해야 했던 경우 차단 이벤트가 발생합니다.  
@@ -48,9 +48,9 @@ ms.locfileid: "31584401"
   
 #### <a name="to-view-or-edit-the-source-code-of-a-function-in-the-call-stack"></a>호출 스택의 함수 소스 코드를 보거나 편집하려면  
   
--   **호출 스택** 창에서 함수 이름을 클릭합니다.  
+- **호출 스택** 창에서 함수 이름을 클릭합니다.  
   
- 함수 소스 코드는 현재 프로젝트의 일부여야 합니다.  
+  함수 소스 코드는 현재 프로젝트의 일부여야 합니다.  
   
 #### <a name="to-view-the-call-tree-of-contention-events-for-the-resource"></a>리소스에 대한 경합 이벤트 호출 트리를 보려면  
   

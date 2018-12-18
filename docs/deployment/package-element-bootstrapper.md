@@ -17,18 +17,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a0c1ab7a2e304fcaede2a51a1047691343f34783
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 49867ddc897a9c1a1241a891a3ba3de866d84688
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080788"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899242"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;패키지&gt; 요소 (부트스트래퍼)
 `Package` 요소는 패키지 파일 내에서 최상위 XML 요소입니다.  
-  
+
 ## <a name="syntax"></a>구문  
-  
+
 ```xml  
 <Package  
     Culture  
@@ -75,7 +75,7 @@ ms.locfileid: "39080788"
             SearchDepth  
         />  
     </InstallChecks>  
-  
+
     <Commands  
         Reboot  
     >  
@@ -111,7 +111,7 @@ ms.locfileid: "39080788"
             </ExitCodes>  
         </Command>  
     </Commands>  
-  
+
     <PackageFiles  
         CopyAllComponents  
     >  
@@ -122,14 +122,14 @@ ms.locfileid: "39080788"
             PublicKey  
         />  
     </PackageFiles>  
-  
+
     <Strings>  
         <String  
             Name  
         >  
         </String>  
     </Strings>  
-  
+
     <Schedules>  
         <Schedule  
             Name  
@@ -141,33 +141,34 @@ ms.locfileid: "39080788"
     </Schedules>  
 </Package>  
 ```  
-  
+
 ## <a name="elements-and-attributes"></a>요소 및 특성  
  `Package` 요소는 필수입니다. 다음 특성을 가집니다.  
-  
-|특성|설명|  
-|---------------|-----------------|  
-|`Culture`|필수. 사용할 언어를 결정 하는이 패키지에 대 한 문화권을 정의 합니다. 이 특성은 키로는 `Strings` 요소를 설치 하는 동안 제품 이름 및 오류 메시지에 대 한 문화권 관련 문자열을 나열 합니다.|  
-|`Name`|필수. 와 같은 도구 내에서 개발자에 게 표시 되는 패키지의 이름을 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]입니다. 이 특성은 키로는 `Strings` 있어야 하는 요소를를 `String` 요소를 `Name` 및 `Culture` 속성과 일치 하도록 설정 합니다 `Name` 및 `Culture` 의 속성 `Package`.|  
-|`LicenseAgreement`|선택 사항입니다. 최종 사용자 사용권 계약 (EULA)을 포함 하는 배포 패키지에 파일의 이름을 지정 합니다.  이 파일에 일반 텍스트 수 있습니다 (*.txt*) 또는 서식 있는 텍스트입니다. (*.rtf*)|  
-  
-## <a name="example"></a>예  
+
+
+| 특성 | 설명 |
+|--------------------| - |
+| `Culture` | 필수. 사용할 언어를 결정 하는이 패키지에 대 한 문화권을 정의 합니다. 이 특성은 키로는 `Strings` 요소를 설치 하는 동안 제품 이름 및 오류 메시지에 대 한 문화권 관련 문자열을 나열 합니다. |
+| `Name` | 필수. 와 같은 도구 내에서 개발자에 게 표시 되는 패키지의 이름을 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]입니다. 이 특성은 키로는 `Strings` 있어야 하는 요소를를 `String` 요소를 `Name` 및 `Culture` 속성과 일치 하도록 설정 합니다 `Name` 및 `Culture` 의 속성 `Package`. |
+| `LicenseAgreement` | 선택 사항입니다. 최종 사용자 사용권 계약 (EULA)을 포함 하는 배포 패키지에 파일의 이름을 지정 합니다.  이 파일에 일반 텍스트 수 있습니다 (*.txt*) 또는 서식 있는 텍스트입니다. (*.rtf*) |
+
+## <a name="example"></a>예제  
  다음 코드 예제에는 재배포에 대 한 완전 한 패키지 파일을 보여 줍니다는 [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]합니다.  
-  
+
 ```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
-  
+
 <Package  
   xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"  
   Name="DisplayName"  
   Culture="Culture"  
   LicenseAgreement="eula.rtf"  
 >  
-  
+
     <PackageFiles>  
         <PackageFile Name="eula.rtf"/>  
     </PackageFiles>  
-  
+
     <!-- Defines a localizable string table for error messages-->  
     <Strings>  
         <String Name="DisplayName">.NET Framework 2.0</String>  
@@ -185,9 +186,9 @@ ms.locfileid: "39080788"
         <String Name="InstMsiAExe">http://go.microsoft.com/fwlink/?LinkId=37285</String>  
         <String Name="Msi30Exe">http://go.microsoft.com/fwlink/?LinkId=37287</String>  
     </Strings>  
-  
+
 </Package>  
 ```  
-  
+
 ## <a name="see-also"></a>참고자료  
  [제품 및 패키지 스키마 참조](../deployment/product-and-package-schema-reference.md)

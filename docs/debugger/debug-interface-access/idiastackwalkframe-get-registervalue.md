@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d45f9df66783223c78822d631a2bbfc04316e2b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 98c7ba6fdca3c9d2fd7bf898d864e9aca0670e6d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460884"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843121"
 ---
 # <a name="idiastackwalkframegetregistervalue"></a>IDiaStackWalkFrame::get_registerValue
-레지스터의 값을 검색합니다.  
+레지스터의 값을 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -35,13 +35,13 @@ HRESULT get_registerValue (
   
 #### <a name="parameters"></a>매개 변수  
  `index`  
- [in] 값은 [CV_HREG_e 열거형](../../debugger/debug-interface-access/cv-hreg-e.md) 레지스터에 대 한 값을 지정 하는 열거형입니다.  
+ [in] 값을 [CV_HREG_e 열거형](../../debugger/debug-interface-access/cv-hreg-e.md) 에 대 한 값을 검색할 레지스터를 지정 하는 열거형입니다.  
   
  `pRetVal`  
- [out] 레지스터의 현재 값을 반환 합니다.  
+ [out] 등록의 현재 값을 반환합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)   

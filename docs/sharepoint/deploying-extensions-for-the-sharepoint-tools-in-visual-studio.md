@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 58b430d1331a12e080d238d34a4817afea8585d1
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: c3bf20f945c40dd963820b1bf3f4032a2dd517ca
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326867"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295971"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Visual Studio에서 SharePoint 도구에 대 한 확장 배포
 
@@ -134,7 +134,7 @@ Source.extension.vsixmanifest 파일에 다음 항목에 항목을 추가 해야
 
 6.  **솔루션 탐색기**, 프로젝트 템플릿 또는 항목 템플릿을 프로젝트에 대 한 바로 가기 메뉴를 열고 선택한 후 **프로젝트 언로드**합니다.
 
-7.  프로젝트 노드에 대 한 바로 가기 메뉴를 다시 열고 선택한 **편집할***YourTemplateProjectName***.csproj** 하거나 **편집***YourTemplateProjectName***합니다. vbproj**합니다.
+7.  프로젝트 노드에 대 한 바로 가기 메뉴를 다시 열고 선택한 **편집할**_YourTemplateProjectName_**.csproj** 하거나 **편집**  _YourTemplateProjectName_**.vbproj**합니다.
 
 8.  다음 찾기 `VSTemplate` 프로젝트 파일의 요소입니다.
 
@@ -235,15 +235,15 @@ SharePoint 도구 확장 프로그램에 대해 VSIX 패키지를 수동으로 �
 
 4.  Extension.vsixmanifest 파일을 수정 합니다.
 
-    -   추가 된 `Microsoft.VisualStudio.MefComponent` 요소 아래에 있는 `Assets` 요소 및 VSIX 패키지에서 확장을 구현 하는 어셈블리의 상대 경로를 새 요소의 값을 설정 합니다. 자세한 내용은 [MEFComponent 요소 (VSX 스키마)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551)합니다.
+    -   추가 된 `Microsoft.VisualStudio.MefComponent` 요소 아래에 있는 `Assets` 요소 및 VSIX 패키지에서 확장을 구현 하는 어셈블리의 상대 경로를 새 요소의 값을 설정 합니다. 자세한 내용은 [MEFComponent 요소 (VSX 스키마)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))합니다.
 
-    -   확장에서 SharePoint에 대 한 서버 개체 모델을 호출 하는 SharePoint 명령에 포함 된 경우 추가 된 `Microsoft.VisualStudio.Assembly` 요소 아래에 있는 `Assets` 요소. VSIX 패키지에는 SharePoint 명령을 구현 하는 어셈블리의 상대 경로를 새 요소의 값을 설정 합니다. 자세한 내용은 [자산 요소 (VSX 스키마)](http://msdn.microsoft.com/en-us/9fcfc098-edc7-484b-9d4c-acd17829d737)합니다.
+    -   확장에서 SharePoint에 대 한 서버 개체 모델을 호출 하는 SharePoint 명령에 포함 된 경우 추가 된 `Microsoft.VisualStudio.Assembly` 요소 아래에 있는 `Assets` 요소. VSIX 패키지에는 SharePoint 명령을 구현 하는 어셈블리의 상대 경로를 새 요소의 값을 설정 합니다. 자세한 내용은 [자산 요소 (VSX 스키마)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737)합니다.
 
-    -   확장 프로그램 프로젝트 템플릿 또는 항목 템플릿을 포함 하는 경우 추가 된 `ProjectTemplate` 또는 `ItemTemplate` 요소 아래에 있는 `Assets` 요소. VSIX 패키지에 대 한 템플릿이 포함 된 폴더의 상대 경로를 새 요소의 값을 설정 합니다. 자세한 내용은 [ProjectTemplate 요소 (VSX 스키마)](http://msdn.microsoft.com/en-us/87add64c-9dcd-495f-8815-209dab182cb1) 하 고 [ItemTemplate 요소 (VSX 스키마)](http://msdn.microsoft.com/en-us/1d489e54-c1c5-4f96-a510-6c2640867ff0)합니다.
+    -   확장 프로그램 프로젝트 템플릿 또는 항목 템플릿을 포함 하는 경우 추가 된 `ProjectTemplate` 또는 `ItemTemplate` 요소 아래에 있는 `Assets` 요소. VSIX 패키지에 대 한 템플릿이 포함 된 폴더의 상대 경로를 새 요소의 값을 설정 합니다. 자세한 내용은 [ProjectTemplate 요소 (VSX 스키마)](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\)) 하 고 [ItemTemplate 요소 (VSX 스키마)](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\))합니다.
 
-    -   확장 프로그램 프로젝트 템플릿 또는 항목 템플릿 사용자 지정 마법사가 포함 된 경우 추가 `Assembly` 요소 아래에 있는 `Assets` 요소입니다. VSIX 패키지에 어셈블리의 상대 경로를 새 요소의 값을 설정 하 고 설정한는 `AssemblyName` 특성을 전체 어셈블리 이름 (버전, 문화권 및 공개 키 토큰 포함). 자세한 내용은 [Dependency 요소 (VSX 스키마)](http://msdn.microsoft.com/en-us/1f63f60a-98ad-48ec-8e44-4eba383d3e37)합니다.
+    -   확장 프로그램 프로젝트 템플릿 또는 항목 템플릿 사용자 지정 마법사가 포함 된 경우 추가 `Assembly` 요소 아래에 있는 `Assets` 요소입니다. VSIX 패키지에 어셈블리의 상대 경로를 새 요소의 값을 설정 하 고 설정한는 `AssemblyName` 특성을 전체 어셈블리 이름 (버전, 문화권 및 공개 키 토큰 포함). 자세한 내용은 [Dependency 요소 (VSX 스키마)](https://msdn.microsoft.com/1f63f60a-98ad-48ec-8e44-4eba383d3e37)합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 다음 예제에서는 SharePoint 도구 확장에 대 한 extension.vsixmanifest 파일의 내용을 보여 줍니다. 확장은 Contoso.ProjectExtension.dll 이라고 하는 어셈블리에서 구현 됩니다. 확장 Contoso.ExtensionCommands.dll 및 명명 된 폴더 아래에 있는 항목 템플릿을 이라고 하는 SharePoint 명령을 어셈블리가 포함 **Itemtemplate** VSIX 패키지에 있습니다. 이 예제에서는 동일한 VSIX 패키지에 extension.vsixmanifest 파일 폴더에 두 어셈블리가 모두 가정 합니다.
 

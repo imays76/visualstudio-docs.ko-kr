@@ -13,35 +13,37 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: b6e312f7e1913a8b4533c0127b966dc3ac0d981d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: d89dbc0b752c2b8c538ec53769c166b6edbd802f
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38809281"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50915215"
 ---
-원격 컴퓨터에서 관리 권한이 있어야 합니다.  
+1. 원격 컴퓨터의 찾기 및 시작 합니다 **원격 디버거** 에서 합니다 **시작** 메뉴. 
+   
+   원격 컴퓨터에서 관리 권한이 없으면 마우스 오른쪽 단추로 클릭 합니다 **원격 디버거** 앱을 선택 **관리자 권한으로 실행**합니다. 이 고, 그렇지만 정상적으로 시작 합니다.
+
+   서로 다른 버전의 있을 수 있습니다 *msvsmon.exe* 에 *x64*를 *x32*, 또는 기타 폴더입니다. 앱 디버그에 필요한 버전을 시작 해야 합니다. 
+   
+1. 처음으로 원격 디버거를 시작, 구성 하기 전에 합니다 **원격 디버깅 구성** 대화 상자가 나타납니다.  
   
-1.  원격 디버거 응용 프로그램을 찾습니다. (이 설치 되어 있는, 위치에서 msvsmon.exe를 찾거나 시작 메뉴 및 검색을 엽니다 **원격 디버거**.)
+    ![원격 디버거 구성](../media/remotedebuggerconfwizardpage.png "원격 디버거 구성")  
   
-     원격 서버에서 원격 디버거를 실행 하는 경우 원격 디버거 응용 프로그램을 마우스 오른쪽 단추로 클릭 하 고 선택할 수 있습니다 **관리자 권한으로 실행**합니다. 원격 서버에서 실행 하지 않는 경우만 해당 정상적으로 시작 합니다.
+1. Windows 웹 서비스 API 설치 되지 않은 경우, Windows Server 2008 R2 에서만 발생 함을 선택 합니다 **설치** 단추입니다.  
   
-3.  처음으로 (또는 구성 하기 전에) 원격 도구를 시작 하면, **원격 디버깅 구성** 대화 상자가 나타납니다.  
+1. 원격 도구를 사용 하려면 하나 이상의 네트워크 형식을 선택 합니다. 컴퓨터가 도메인을 통해 연결된 경우 첫 번째 항목을 선택해야 합니다. 컴퓨터가 작업 그룹 또는 홈 그룹을 통해을 연결 하는 경우 적절 하 게 두 번째 또는 세 번째 항목을 선택 합니다.  
   
-     ![RemoteDebuggerConfWizardPage](../media/remotedebuggerconfwizardpage.png "RemoteDebuggerConfWizardPage")  
+1. 선택 **원격 디버깅 구성** 방화벽을 구성 하 고 원격 디버거를 시작 합니다.  
   
-4.  Windows 서비스 API (발생 하는 Windows Server 2008 R2에만) 설치 하지 않은 경우 선택 합니다 **설치** 단추입니다.  
+1. 구성이 완료 되 면 합니다 **원격 디버거** 창이 나타납니다.
   
-5.  원격 도구를 사용하려는 네트워크 종류를 선택합니다. 하나 이상의 네트워크 형식을 선택해야 합니다. 컴퓨터가 도메인을 통해 연결된 경우 첫 번째 항목을 선택해야 합니다. 컴퓨터가 작업 그룹 또는 홈 그룹을 통해 연결된 경우 두 번째 또는 세 번째 항목을 적절하게 선택해야 합니다.  
+    ![원격 디버거 창](../media/remotedebuggerwindow.png "원격 디버거 창")
   
-6.  선택할 **원격 디버깅 구성** 방화벽을 구성 하 고 도구를 시작 합니다.  
+    원격 디버거 연결 대기 중 이제입니다. 서버 이름을 사용 하 고 포트 번호를 Visual Studio에서 원격 연결 구성 설정에 게 표시 합니다.  
   
-7.  구성이 완료되면 원격 디버거 창이 나타납니다.
+원격 디버거를 중지 하려면 선택 **파일** > **종료**합니다. 다시 시작할 수 있습니다 합니다 **시작** 메뉴 또는 명령줄에서:  
   
-     ![RemoteDebuggerWindow](../media/remotedebuggerwindow.png "RemoteDebuggerWindow")
-  
-     원격 디버거 연결 대기 중 이제입니다. 서버 이름의 기록해 두고이 나중에 Visual Studio에서 사용 하는 구성에 일치 해야 하기 때문에 포트 표시 되는 번호입니다.  
-  
- 디버깅 및 원격 디버거를 중지 해야 할 경우 완료 되 면 클릭 **파일 > 종료** 창에서. 다시 시작할 수 있습니다 합니다 **시작** 메뉴 또는 명령줄에서:  
-  
- **\<원격 디버거 설치 디렉터리 >\\< x86, x64, ARM, ARM64, 또는 Appx > \msvsmon.exe**합니다.  
+```cmd
+<Remote debugger installation directory>\msvsmon.exe
+```

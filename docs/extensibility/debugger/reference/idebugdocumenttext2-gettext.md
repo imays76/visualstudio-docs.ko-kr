@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b5adaccf5a74119ee5e697c9dfd7b7ad46d6151
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fe2b5ef3804c4ccfafbf164a8eb144e7822a6fdc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106853"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905508"
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
-문서에 지정된 된 위치에서 텍스트를 검색합니다.  
+문서의 지정된 된 위치에서 텍스트를 검색합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -47,22 +47,22 @@ int GetText(
   
 #### <a name="parameters"></a>매개 변수  
  `pos`  
- [in] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) 구조를 검색할 수 있는 텍스트의 위치를 나타내는입니다.  
+ [in] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) 검색할 텍스트의 위치를 나타내는 구조입니다.  
   
  `cMaxChars`  
- [in] 텍스트를 검색할 문자의 최대 수입니다.  
+ [in] 검색할 텍스트 문자의 최대 수입니다.  
   
  `pText`  
- [out에서] 원하는 텍스트를 채울 수 있는 버퍼에 대 한 포인터입니다. 이 버퍼 이상 포함 될 수 있어야 `cMaxChars` 와이드 문자 수입니다.  
+ [out에서] 원하는 텍스트를 채울 수 있는 버퍼에 대 한 포인터입니다. 이 버퍼는 이상 포함할 수 있어야 합니다. `cMaxChars` 와이드 문자 수입니다.  
   
  `pcNumChars`  
- [out] 실제로 검색 된 문자의 수를 반환 합니다.  
+ [out] 실제로 검색 하는 문자 수를 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="example"></a>예제  
- 이 예제에서는 어떻게 C#에서이 메서드를 호출할 수 있습니다.  
+ 이 예제에서는 C#에서이 메서드를 호출할 수는 방법을 보여 줍니다.  
   
 ```csharp  
 using System.Runtime.Interop.Services;  

@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e5ff6fd7c9e78871d180f08c6148c25fbede3583
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 4178f1ca5a437c52754199d26a6d39023193aaf8
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756290"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219148"
 ---
 # <a name="how-to-add-and-remove-additional-assemblies"></a>방법: 추가 어셈블리 추가 및 제거
   SharePoint 패키지 기능이 나 데이터를 위한 다른 어셈블리에 의존 하는 경우에 솔루션 패키지 (.wsp)에 어셈블리를 추가할 수 있습니다. 이러한 방식으로 SharePoint 서버는 사용자 지정 어셈블리는 패키지를 사용 하 여 설치 해야 합니다.  
@@ -66,7 +66,7 @@ ms.locfileid: "36756290"
   
 #### <a name="to-add-a-safe-control"></a>안전 컨트롤을 추가 하려면  
   
-1.  엽니다는 **기존 어셈블리 편집** 대화 상자. 이를 위해 패키지 디자이너를 열고 선택 합니다 **고급** 탭에서 어셈블리를 선택한 다음는 **편집**단추입니다.  
+1.  엽니다는 **기존 어셈블리 편집** 대화 상자. 이를 위해 패키지 디자이너를 열고 선택 합니다 **고급** 탭에서 어셈블리를 선택한 다음는 **편집** 단추입니다.  
   
 2.  에 **안전 컨트롤** 창 선택 합니다 **새 항목을 추가 하려면 여기를 클릭 하십시오.** 단추입니다.  
   

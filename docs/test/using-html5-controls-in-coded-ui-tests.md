@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 코딩된 UI 테스트에서 HTML5 컨트롤 사용
+title: 코딩된 UI 테스트에서 HTML5 컨트롤 사용
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,16 +9,18 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 63c33b98244268a086e9db63e2b56e507471c4c3
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: a603a662c9007ab3ee0e66df0b23959bfdce83fb
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382760"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896195"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>코딩된 UI 테스트에서 HTML5 컨트롤 사용
 
 코딩된 UI 테스트에는 Internet Explorer 9 및 Internet Explorer 10에 포함된 일부 HTML5 컨트롤에 대한 지원이 포함됩니다.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
  **요구 사항**
 
@@ -27,18 +29,17 @@ ms.locfileid: "39382760"
 > [!WARNING]
 > Internet Explorer 10 이전 버전에서는 Internet Explorer 프로세스의 권한에 비해 더 높은 권한 수준으로 코딩된 UI 테스트를 실행할 수 있었습니다. Internet Explorer 10에서 코딩된 UI 테스트를 실행하는 경우 코딩된 UI 테스트와 Internet Explorer 프로세스가 모두 같은 권한 수준에 있어야 합니다. 이는 Internet Explorer 10의 더 안전한 AppContainer 기능 때문입니다.
 
-
 > [!WARNING]
 > Internet Explorer 10에서 코딩된 UI 테스트를 만드는 경우 Internet Explorer 9 또는 Internet Explorer 8을 사용하여 실행하지 못할 수 있습니다. Internet Explorer 10에는 오디오, 비디오, 진행률 표시줄 및 슬라이더와 같은 HTML5 컨트롤이 포함되기 때문입니다. 이러한 HTML5 컨트롤은 Internet Explorer 9 또는 Internet Explorer 8로 인식되지 않습니다. 마찬가지로, Internet Explorer 9를 사용하여 코딩된 UI 테스트는 Internet Explorer 8에서 인식되지 않는 일부 HTML5 컨트롤을 포함할 수 있습니다.
 
-
 ## <a name="audio-control"></a>오디오 컨트롤
- **오디오 컨트롤:** HTML5 오디오 컨트롤에 대한 작업은 올바르게 기록되고 재생됩니다.
 
- ![HTML5 오디오 컨트롤](../test/media/codedui_html5_audio.png)
+**오디오 컨트롤:** HTML5 오디오 컨트롤에 대한 작업은 올바르게 기록되고 재생됩니다.
+
+![HTML5 오디오 컨트롤](../test/media/codedui_html5_audio.png)
 
 |작업|기록 중|생성된 코드|
-|------------|---------------|--------------------|
+|-|---------------|-|
 |**오디오 재생**<br /><br /> 컨트롤 또는 컨트롤 상황에 맞는 메뉴에서 직접|00:00:00부터 \<name> 오디오 재생|HtmlAudio.Play(TimeSpan)|
 |**오디오의 특정 시간까지 검색**|00:01:48까지 \<name> 오디오 검색|HtmlAudio.Seek(TimeSpan)|
 |**오디오 일시 중지**<br /><br /> 컨트롤 또는 컨트롤 상황에 맞는 메뉴에서 직접|00:01:53에 \<name> 오디오 일시 중지|HtmlAudio.Pause(TimeSpan)|
@@ -62,7 +63,7 @@ ms.locfileid: "39382760"
  ![HTML5 비디오 컨트롤](../test/media/codedui_html5_video.png)
 
 |작업|기록 중|생성된 코드|
-|------------|---------------|--------------------|
+|-|---------------|-|
 |**비디오 재생**<br /><br /> 컨트롤 또는 컨트롤 상황에 맞는 메뉴에서 직접|00:00:00부터 \<name> 비디오 재생|HtmlVideo.Play(TimeSpan)|
 |**비디오의 특정 시간까지 검색**|00:01:48까지 \<name> 비디오 검색|HtmlVideo.Seek(TimeSpan)|
 |**비디오 일시 중지**<br /><br /> 컨트롤 또는 컨트롤 상황에 맞는 메뉴에서 직접|00:01:53에 \<name> 비디오 일시 중지|HtmlVideo.Pause(TimeSpan)|

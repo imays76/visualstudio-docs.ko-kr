@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 76654568825bd0761097a1edd3ec8eb3bbc7060d
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 59f801c79c8bb19a63064bdac2fe717ee3e3a845
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119865"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295587"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>연습: IntelliTrace를 사용 하 여 SharePoint 응용 프로그램 디버그
 
@@ -46,13 +46,13 @@ IntelliTrace를 사용 하 여 SharePoint 솔루션을 보다 쉽게 디버깅�
 
 - [디버깅 하 고 SharePoint 솔루션 수정](#BKMK_DebugSolution)
 
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>전제 조건
 
 이 연습을 완료하려면 다음 구성 요소가 필요합니다.
 
-- Windows 및 SharePoint 버전을 지원 합니다. 참조 [SharePoint 솔루션 개발을 위한 요구 사항](../sharepoint/requirements-for-developing-sharepoint-solutions.md)합니다.
+- Windows 및 SharePoint 버전을 지원 합니다.
 
 - Visual Studio Enterprise.
 
@@ -265,15 +265,15 @@ IntelliTrace를 사용 하 여 SharePoint 솔루션을 보다 쉽게 디버깅�
 
 3. 다음 단계를 수행 하 여 기능을 비활성화 합니다.
 
-    1. 에 **사이트 작업** SharePoint에서 메뉴 **사이트 설정**합니다.
+   1. 에 **사이트 작업** SharePoint에서 메뉴 **사이트 설정**합니다.
 
-    2. 아래 **사이트 작업**를 선택 합니다 **사이트 기능 관리** 링크 합니다.
+   2. 아래 **사이트 작업**를 선택 합니다 **사이트 기능 관리** 링크 합니다.
 
-    3. 옆에 **IntelliTraceTest Feature1**를 선택 합니다 **비활성화** 단추입니다.
+   3. 옆에 **IntelliTraceTest Feature1**를 선택 합니다 **비활성화** 단추입니다.
 
-    4. 경고 페이지에서 선택 합니다 **이 기능을 비활성화** 링크 합니다.
+   4. 경고 페이지에서 선택 합니다 **이 기능을 비활성화** 링크 합니다.
 
-     FeatureDeactivating() 이벤트 처리기에서 오류를 throw 합니다.
+      FeatureDeactivating() 이벤트 처리기에서 오류를 throw 합니다.
 
 ## <a name="collect-intellitrace-data-by-using-microsoft-monitoring-agent"></a>Microsoft Monitoring Agent를 사용 하 여 IntelliTrace 데이터 수집
 
@@ -286,15 +286,15 @@ SharePoint를 실행 하는 시스템에서 Microsoft Monitoring Agent를 설치
 
 2. 기능을 비활성화 합니다.
 
-    1. 에 **사이트 작업** SharePoint에서 메뉴 **사이트 설정**합니다.
+   1. 에 **사이트 작업** SharePoint에서 메뉴 **사이트 설정**합니다.
 
-    2. 아래 **사이트 작업**를 선택 합니다 **사이트 기능 관리** 링크 합니다.
+   2. 아래 **사이트 작업**를 선택 합니다 **사이트 기능 관리** 링크 합니다.
 
-    3. 옆에 **IntelliTraceTest Feature1**를 선택 합니다 **비활성화** 단추입니다.
+   3. 옆에 **IntelliTraceTest Feature1**를 선택 합니다 **비활성화** 단추입니다.
 
-    4. 경고 페이지에서 선택 합니다 **이 기능을 비활성화** 링크 합니다.
+   4. 경고 페이지에서 선택 합니다 **이 기능을 비활성화** 링크 합니다.
 
-     (이 예제의 경우 FeatureDeactivating() 이벤트 처리기에서 throw 되는 오류)으로 인해 오류가 발생 했습니다.
+      (이 예제의 경우 FeatureDeactivating() 이벤트 처리기에서 throw 되는 오류)으로 인해 오류가 발생 했습니다.
 
 3. PowerShell 창에서 실행 합니다 [Stop-webapplicationmonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) .iTrace 파일을 만들고, 모니터링을 중지, SharePoint 솔루션을 다시 시작 하는 명령입니다.
 
@@ -336,4 +336,4 @@ SharePoint를 실행 하는 시스템에서 Microsoft Monitoring Agent를 설치
 
 [확인 하 고 SharePoint 코드 디버그](../sharepoint/verifying-and-debugging-sharepoint-code.md)  
 [IntelliTrace](/visualstudio/debugger/intellitrace)  
-[연습: 단위 테스트를 사용 하 여 SharePoint 코드 확인](https://msdn.microsoft.com/library/gg599006(v=vs.100).aspx)
+[연습: 단위 테스트를 사용 하 여 SharePoint 코드 확인](/previous-versions/visualstudio/visual-studio-2010/gg599006\(v\=vs.100\))

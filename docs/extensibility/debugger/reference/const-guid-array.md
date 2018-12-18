@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c18feedde988559ae4aff1455b7dfb1d8c6eb1e9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b66713fa5929fc1397a5302732399c07c3f5a726
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100701"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885917"
 ---
 # <a name="constguidarray"></a>CONST_GUID_ARRAY
 목록을 포함 하는 구조 `GUID`s입니다.  
@@ -43,15 +43,15 @@ public struct CONST_GUID_ARRAY {
   
 ## <a name="members"></a>멤버  
  dwCount  
- 수가 `GUID`에 s는 `Members` 배열입니다.  
+ 수가 `GUID`의 `Members` 배열입니다.  
   
  멤버  
- 배열 `GUID`s입니다.  
+ 배열을 `GUID`s입니다.  
   
 ## <a name="remarks"></a>설명  
- 이 구조에 전달 되는 [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) 메서드를 되며에서 반환 되는 [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) 및 [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md) 메서드.  
+ 이 구조에 전달 되는 [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) 메서드를에서 반환 되 고는 [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) 하 고 [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md) 메서드.  
   
- 이 구조의 인스턴스 소유자는 할당 된 메모리를 확보 하는 일을 담당 합니다.  
+ 이 구조의 인스턴스 소유자가 할당 된 메모리를 해제 하는 일을 담당 합니다.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  

@@ -54,23 +54,23 @@ helpviewer_keywords:
 - Office development in Visual Studio, troubleshooting
 - troubleshooting [Office development in Visual Studio]
 - Office development in Visual Studio, errors
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bbb9c5676ec3d9f06802f071c842f9e2a396703e
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 4706360581749fbc6e84f3250324bad3663e7a9a
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34267834"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304456"
 ---
 # <a name="additional-support-for-errors-in-office-solutions"></a>Office 솔루션 오류에에서 대 한 추가 지원
-  Visual Studio에서 Office 솔루션을 만들 때 발생 한 문제에 대 한 답을 찾는 데 도움이 되는 다음 리소스를 사용할 수 있습니다.  
+  Visual Studio에서 Office 솔루션을 만들 때 발생 하는 문제에 대 한 답변을 찾을 수 있도록 다음 리소스를 사용할 수 있습니다.  
   
 ## <a name="troubleshoot-specific-errors"></a>특정 오류 문제 해결  
- Office 솔루션의 몇 가지 일반적인 오류에 도움이 필요 하면, 다음 항목을 참조 합니다.  
+ Office 솔루션의 몇 가지 일반적인 오류를 사용 하 여 지원이 필요한 경우 다음 항목을 참조 합니다.  
   
 -   [Office 솔루션의 오류 문제 해결](../vsto/troubleshooting-errors-in-office-solutions.md)  
   
@@ -86,7 +86,7 @@ ms.locfileid: "34267834"
  기술 자료 문서, 다운로드 및 업데이트 자료, 지원 웹캐스트와 기타 서비스에 액세스할 수 있습니다.  
   
  [Office 솔루션 개발을 위한 추가 리소스](../vsto/additional-resources-for-developing-office-solutions.md)  
- Visual Studio에서 Office 개발을 Office 솔루션 개발에 대 한 좀 더에 대 한 추가 리소스에 대 한 링크를 제공 합니다.  
+ Office 솔루션 및 Visual Studio에서 Office 개발을 개발 하는 방법에 대 한 자세한 학습에 대 한 추가 리소스에 대 한 링크를 제공 합니다.  
   
 ## <a name="see-also"></a>참고자료  
  [Office 솔루션의 오류 문제 해결](../vsto/troubleshooting-errors-in-office-solutions.md)   

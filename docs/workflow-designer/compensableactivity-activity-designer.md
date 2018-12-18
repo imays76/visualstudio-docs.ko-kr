@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d723b50fe0267939119239861c5ae951e01cd445
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 7257e7cc31e0503c7e466bbf4f8c9dd02e5fe15a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758295"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836135"
 ---
 # <a name="compensableactivity-activity-designer"></a>CompensableActivity 활동 디자이너
 
@@ -35,7 +35,7 @@ ms.locfileid: "36758295"
  다음 표에서는 <xref:System.Activities.Statements.CompensableActivity> 속성을 보여 주고 디자이너에서 이 속성을 사용하는 방법을 설명합니다. 합니다 <xref:System.Activities.Activity.DisplayName%2A> 고 <xref:System.Activities.Activity%601.Result%2A> 속성 속성 표에서 편집할 수 있지만 다른 속성을 워크플로 디자이너 화면에서 편집 해야 합니다.
 
 |속성 이름|필수|용도|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.CompensableActivity> 활동의 선택적 이름입니다. 기본값은 CompensableActivity입니다.|
 |<xref:System.Activities.Activity%601.Result%2A>|False|<xref:System.Activities.Statements.CompensableActivity>의 반환 값을 지정합니다. 이 속성은 속성 표에서 편집해야 합니다.|
 |<xref:System.Activities.Statements.CompensableActivity.Body%2A>|True|보정, 취소 및 확인 논리를 제공할 활동을 지정합니다. 추가할 합니다 <xref:System.Activities.Statements.CompensableActivity.Body%2A> 활동에서 활동 **도구 상자** 에 **본문** 상자에 **CompensableActivity** 활동 디자이너입니다. 여기에 작업 놓기"힌트 텍스트를 추가 합니다.|
@@ -47,6 +47,6 @@ ms.locfileid: "36758295"
 
 - [트랜잭션](../workflow-designer/transaction-activity-designers.md)
 - [CancellationScope](../workflow-designer/cancellationscope-activity-designer.md)
-- [보정](../workflow-designer/compensate-activity-designer.md)
-- [확인](../workflow-designer/confirm-activity-designer.md)
+- [Compensate](../workflow-designer/compensate-activity-designer.md)
+- [Confirm](../workflow-designer/confirm-activity-designer.md)
 - [TransactionScope](../workflow-designer/transactionscope-activity-designer.md)

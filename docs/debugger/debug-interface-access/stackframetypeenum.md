@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 329661e857859a1f6452506ba2984ac962bf4ff2
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: fcf5e120e769b69c064306432c3026194eb0d851
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470818"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853939"
 ---
 # <a name="stackframetypeenum"></a>StackFrameTypeEnum
 스택 프레임 형식을 지정합니다.  
@@ -39,7 +39,7 @@ enum StackFrameTypeEnum {
   
 ## <a name="elements"></a>요소  
  `FrameTypeFPO`  
- 프레임 포인터 생략 되며 FPO 정보를 사용할 수 있습니다.  
+ 프레임 포인터 생략 합니다. FPO 정보를 사용할 수 있습니다.  
   
  `FrameTypeTrap`  
  커널 트랩 프레임입니다.  
@@ -51,13 +51,13 @@ enum StackFrameTypeEnum {
  표준 EBP 스택 프레임입니다.  
   
  `FrameTypeFrameData`  
- 프레임 포인터 생략 되며 프레임 데이터 정보를 사용할 수 있습니다.  
+ 프레임 포인터 생략 합니다. 프레임 데이터 정보를 사용할 수 있습니다.  
   
  `FrameTypeUnknown`  
  모든 디버그 정보가 없는 프레임입니다.  
   
 ## <a name="remarks"></a>설명  
- 이 열거형의 값에 대 한 호출에서 반환될지는 [idiastackframe:: Get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md) 메서드.  
+ 이 열거형의 값에는 호출에서 반환 되는 [idiastackframe:: Get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md) 메서드.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: cvconst.h  

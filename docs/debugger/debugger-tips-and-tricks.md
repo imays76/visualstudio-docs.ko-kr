@@ -1,7 +1,7 @@
 ---
-title: 팁과 요령 Visual Studio 디버거에서
+title: 팁과 요령 디버거에서
 description: Visual Studio 디버거를 지 원하는 알려지지 않은 기능 중 일부에 대해 알아봅니다
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 06/15/2017
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b67722884a675dd991cad608ca22cf277e2d6777
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
-ms.translationtype: MT
+ms.openlocfilehash: 238236df48adab491cd8a1f9282a8f6a440c5321
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303083"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055227"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>For the Debugger in Visual Studio 생산성 팁과 트릭 배우기
 
@@ -60,12 +60,12 @@ Visual Studio에서 지 원하는 대부분의 언어에서 디버깅 세션 중
 
 ![실행 포인터를 이동](../debugger/media/dbg-tour-move-the-execution-pointer.gif "실행 포인터를 이동 합니다.")
 
-실행 흐름을 변경 하면 다른 코드 실행 경로 테스트 하거나 디버거를 다시 시작 하지 않고 코드를 다시 실행 하는 등 작업을 수행할 수 있습니다.
+실행 흐름을 변경하면 디버거를 다시 시작하지 않고도 다른 코드 실행 경로를 테스트하거나 코드를 다시 실행하는 등의 작업을 수행할 수 있습니다.
 
 > [!WARNING]
-> 이 기능을 사용 하 여 주의 해야 하는 경우가 많습니다 및 도구 설명에 경고를 표시 합니다. 다른 경고를 너무 표시 될 수 있습니다. 포인터를 이동 하면 앱을 이전 응용 프로그램 상태를 되돌릴 수 없습니다.
+> 이 기능을 주의 깊게 사용해야 하는 경우가 많으며 도구 설명에 경고가 표시됩니다. 다른 경고도 표시될 수 있습니다. 포인터를 이동 하면 앱을 이전 응용 프로그램 상태를 되돌릴 수 없습니다.
 
-## <a name="track-an-out-of-scope-object-c-visual-basic"></a>추적 범위를 벗어나는 개체 (C#, Visual Basic)
+## <a name="track-an-out-of-scope-object-c-visual-basic"></a>범위를 벗어나는 개체를 추적 (C#, Visual Basic)
 
 같은 디버거 창을 사용 하 여 변수를 표시 하는 것이 간단 합니다 **조사식** 창입니다. 그러나 경우 변수 범위를 벗어날에 **조사식** 창 표시 될 수도 있습니다는 회색으로 표시 합니다. 일부 앱 시나리오에서 변수의 값도 변수가 범위를 벗어날 시점과 밀접 하 게 시청 하려는 경우 변경할 수 있습니다 (예를 들어 변수로 발생할 수 가비지 수집). 개체 ID를 만들어 변수를 추적할 수 있습니다 합니다 **조사식** 창입니다.
 
@@ -145,7 +145,7 @@ UWP 앱에서 사용 하 여 수행 된 네트워크 작업을 분석할 수 있
 
 자세한 내용은 [네트워크 사용량](../profiling/network-usage.md)을 참조하세요.
 
-## <a name="get-more-familiar-with-how-the-debugger-attaches-to-your-app"></a>디버거가 앱에 연결 하는 방법에 대해 get
+## <a name="modules_window"></a> 디버거가 앱에 연결 하는 방법에 대해 get (C#, c + +, Visual Basic의 경우 F#)
 
 를 실행 중인 앱에 연결 하려면 디버거에서 디버그 하려는 앱의 정확히 동일한 빌드에 대해 생성 되는 기호 (.pdb) 파일을 로드 합니다. 일부 시나리오에서는 기호 파일의 간단한 기술 유용할 수 있습니다. Visual Studio를 사용 하 여 기호 파일을 로드 하는 방법을 검사할 수 있습니다 합니다 **모듈** 창입니다.
 

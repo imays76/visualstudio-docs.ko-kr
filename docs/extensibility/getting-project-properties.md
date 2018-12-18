@@ -7,19 +7,19 @@ ms.technology:
 ms.topic: conceptual
 helpviewer_keywords:
 - project properties, displaying in tool window
-- tool windows, displaying project propeties
+- tool windows, displaying project properties
 ms.assetid: 96ba07ca-0811-4013-8602-12550ac4ba79
 author: gregvanl
 ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58967c87b86eff8ab00e343ee872637e18ee57ed
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: b285c3a41a2d022358378a7e5e16403b83e8172b
+ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497757"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51561610"
 ---
 # <a name="get-project-properties"></a>프로젝트 속성 가져오기
 이 연습에서는 도구 창에서 프로젝트 속성을 표시 하는 방법입니다.  
@@ -29,11 +29,11 @@ ms.locfileid: "39497757"
   
 ### <a name="to-create-a-vsix-project-and-add-a-tool-window"></a>VSIX 프로젝트를 만들고 도구 창 추가  
   
-1.  모든 Visual Studio 확장은 확장 자산을 포함 하는 VSIX 배포 프로젝트를 시작 합니다. 만들기는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 라는 VSIX 프로젝트 `ProjectPropertiesExtension`합니다. VSIX 프로젝트 템플릿을 찾을 수 있습니다 합니다 **새 프로젝트** 대화 상자의 **Visual C#** > **확장성**합니다.  
+1. 모든 Visual Studio 확장은 확장 자산을 포함 하는 VSIX 배포 프로젝트를 시작 합니다. 만들기는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 라는 VSIX 프로젝트 `ProjectPropertiesExtension`합니다. VSIX 프로젝트 템플릿을 찾을 수 있습니다 합니다 **새 프로젝트** 대화 상자의 **Visual C#** > **확장성**합니다.  
   
-2.  명명 된 사용자 지정 도구 창을 항목 템플릿을 추가 하 여 도구 창을 추가 `ProjectPropertiesToolWindow`합니다. 에 **솔루션 탐색기**, 프로젝트 노드를 마우스 오른쪽 단추로 **추가** > **새 항목**합니다. 에 **새 항목 추가 대화 상자**로 이동 하세요 **Visual C# 항목** > **확장성** 선택한 **사용자 지정 도구 창을**합니다. 에 **이름을** 대화 상자의 맨 아래에 있는 필드에 파일 이름을 `ProjectPropertiesToolWindow.cs`입니다. 사용자 지정 도구 창을 만드는 방법에 대 한 자세한 내용은 참조 하세요. [도구 창으로 확장 프로그램을 만들려면](../extensibility/creating-an-extension-with-a-tool-window.md)합니다.  
+2. 명명 된 사용자 지정 도구 창을 항목 템플릿을 추가 하 여 도구 창을 추가 `ProjectPropertiesToolWindow`합니다. 에 **솔루션 탐색기**, 프로젝트 노드를 마우스 오른쪽 단추로 **추가** > **새 항목**합니다. 에 **새 항목 추가 대화 상자**로 이동 하세요 **Visual C# 항목** > **확장성** 선택한 **사용자 지정 도구 창을**합니다. 에 **이름을** 대화 상자의 맨 아래에 있는 필드에 파일 이름을 `ProjectPropertiesToolWindow.cs`입니다. 사용자 지정 도구 창을 만드는 방법에 대 한 자세한 내용은 참조 하세요. [도구 창으로 확장 프로그램을 만들려면](../extensibility/creating-an-extension-with-a-tool-window.md)합니다.  
   
-3.  솔루션을 빌드하고 오류 없이 컴파일되는지 확인합니다.  
+3. 솔루션을 빌드하고 오류 없이 컴파일되는지 확인합니다.  
   
 ### <a name="to-display-project-properties-in-a-tool-window"></a>도구 창에서 프로젝트 속성을 표시 하려면  
   

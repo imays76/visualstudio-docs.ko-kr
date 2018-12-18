@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47ae1c724542d628e7f3c047efd8ed2da1f6f1f8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cd8da39b89311939017698b4095321df450112e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124754"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821372"
 ---
 # <a name="ipropertyproxyeesidegetmanagedviewercreationdata"></a>IPropertyProxyEESide::GetManagedViewerCreationData
-해당 뷰어를 인스턴스화하기 위해이 속성 형식의 뷰어에 대 한 정보를 검색 합니다.  
+해당 뷰어를 인스턴스화하기 위해이 속성 형식에 대 한 뷰어에 대 한 정보를 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -54,22 +54,22 @@ int GetManagedViewerCreationData(
  [out] 이 개체를 보유 하는 어셈블리의 이름을 반환 합니다.  
   
  `assemBytes`  
- [out] 반환 된 [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) (이 null 값을 바이트를 사용할 수 있는 경우)이이 개체의 어셈블리 바이트를 포함 하는 개체입니다.  
+ [out] 반환 된 [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) (이 경우 null 값을 사용할 수 없는 바이트)이이 개체의 어셈블리 바이트를 포함 하는 개체입니다.  
   
  `assemPdb`  
- [out] 반환 된 `IEEDataStorage` 기호를 포함 하는 개체 (이 null 값을 사용할 수 없는 기호 저장소 경우)이이 개체에 대 한 정보를 저장 합니다.  
+ [out] 반환 된 `IEEDataStorage` 기호를 포함 하는 개체 (이 null 값인 경우 기호 저장소가 없으면 사용할 수 있는 경우)이이 개체에 대 한 정보를 저장 합니다.  
   
  `className`  
  [out] 이 개체가 포함 된 클래스 이름을 반환 합니다.  
   
  `alr`  
- [out] 값을 반환 된 [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) 어셈블리의 위치를 나타내는 열거형입니다.  
+ [out] 값을 반환 합니다 [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) 어셈블리의 위치를 나타내는 열거형입니다.  
   
  `replacementOk`  
- [out] 0이 아닌 반환 (`TRUE`)이이 개체의이 값을 변경할 수 있습니다; 경우에 0 (`FALSE`) 개체가 읽기 전용입니다.  
+ [out] 0이 아닌 값을 반환 합니다 (`TRUE`)이이 개체의이 값을 변경할 수 있습니다; 경우에 0 (`FALSE`) 개체가 읽기 전용인 경우.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
  이 메서드는 관리 되는 뷰어를 인스턴스화할 형식 시각화 도우미에서 사용 됩니다.  

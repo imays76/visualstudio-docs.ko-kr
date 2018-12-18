@@ -1,5 +1,5 @@
 ---
-title: 웹 성능 테스트 결과 뷰어에 대한 Visual Studio 추가 기능 만들기
+title: 웹 성능 테스트 결과 뷰어에 대한 추가 기능 만들기
 ms.date: 10/20/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a0ea42942fc06225bc5c64c02eba85a766a94ef1
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 6672bd1e38dee5b27d350b9d2e12626cef122115
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381109"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068343"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>방법: 웹 성능 테스트 결과 뷰어에 대한 Visual Studio 추가 기능 만들기
 
@@ -28,7 +28,9 @@ ms.locfileid: "39381109"
 
 또한 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies* 폴더에 있는 LoadTestPackage DLL에 대한 참조를 추가해야 합니다.
 
--   **웹 성능 테스트 결과 뷰어**의 UI를 확장하려면 Visual Studio 추가 기능과 사용자 정의 컨트롤을 만들어야 합니다. 다음 절차에서는 추가 기능 및 사용자 정의 컨트롤을 만드는 방법과 **웹 성능 테스트 결과 뷰어**의 UI를 확장하는 데 필요한 클래스를 구현하는 방법에 대해 설명합니다.
+**웹 성능 테스트 결과 뷰어**의 UI를 확장하려면 Visual Studio 추가 기능과 사용자 정의 컨트롤을 만들어야 합니다. 다음 절차에서는 추가 기능 및 사용자 정의 컨트롤을 만드는 방법과 **웹 성능 테스트 결과 뷰어**의 UI를 확장하는 데 필요한 클래스를 구현하는 방법에 대해 설명합니다.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="create-or-open-a-solution-that-contains-an-aspnet-web-application-and-a-web-performance-and-load-test-project"></a>ASP.NET 웹 응용 프로그램과 웹 성능 및 부하 테스트 프로젝트를 포함하는 솔루션 만들기 또는 열기
 
@@ -37,7 +39,7 @@ ms.locfileid: "39381109"
 과정을 따라 하는 데 사용할 수 있도록 ASP.NET 웹 응용 프로그램과 이 ASP.NET 웹 응용 프로그램에 대한 웹 성능 테스트가 하나 이상 들어 있는 웹 성능 및 부하 테스트 프로젝트를 포함하는 비프로덕션 솔루션을 만들거나 엽니다.
 
 > [!NOTE]
-> [방법: 웹 서비스 테스트 만들기](../test/how-to-create-a-web-service-test.md) 및 [코딩된 웹 성능 테스트 생성 및 실행](../test/generate-and-run-a-coded-web-performance-test.md)의 절차에 따라 웹 성능 테스트가 포함된 ASP.NET 웹 응용 프로그램과 웹 성능 및 부하 테스트 프로젝트를 만들 수 있습니다.
+> ASP.NET 웹 애플리케이션과 웹 성능 테스트가 포함된 웹 성능 및 부하 테스트 프로젝트를 [방법: 웹 서비스 테스트 만들기](../test/how-to-create-a-web-service-test.md) 및 [코딩된 웹 성능 테스트 생성 및 실행](../test/generate-and-run-a-coded-web-performance-test.md)의 절차에 따라 만들 수 있습니다.
 
 ## <a name="create-a-visual-studio-add-in"></a>Visual Studio 추가 기능 만들기
 
@@ -49,28 +51,28 @@ ms.locfileid: "39381109"
 
 ### <a name="to-create-an-add-in-by-using-the-add-in-wizard"></a>추가 기능 마법사를 사용하여 추가 기능을 만들려면
 
-1.  **솔루션 탐색기**에서 솔루션을 마우스 오른쪽 단추로 클릭하고, **추가**를 선택한 다음, **새 프로젝트**를 선택합니다.
+1. **솔루션 탐색기**에서 솔루션을 마우스 오른쪽 단추로 클릭하고, **추가**를 선택한 다음, **새 프로젝트**를 선택합니다.
 
-     **새 프로젝트** 대화 상자가 표시됩니다.
+    **새 프로젝트** 대화 상자가 표시됩니다.
 
-2.  **설치된 템플릿**에서 **기타 프로젝트 형식**을 확장하고 **확장성**을 선택합니다.
+2. **설치된 템플릿**에서 **기타 프로젝트 형식**을 확장하고 **확장성**을 선택합니다.
 
-3.  템플릿 목록에서 **Visual Studio 추가 기능**을 선택합니다.
+3. 템플릿 목록에서 **Visual Studio 추가 기능**을 선택합니다.
 
-4.  **이름**에 추가 기능의 이름을 입력합니다. 예를 들어 **WebPerfTestResultsViewerAddin**을 입력합니다.
+4. **이름**에 추가 기능의 이름을 입력합니다. 예를 들어 **WebPerfTestResultsViewerAddin**을 입력합니다.
 
-5.  **확인**을 선택합니다.
+5. **확인**을 선택합니다.
 
-     Visual Studio **추가 기능 마법사**가 시작됩니다.
+    Visual Studio **추가 기능 마법사**가 시작됩니다.
 
-6.  **다음**을 선택합니다.
+6. **다음**을 선택합니다.
 
-7.  **프로그래밍 언어 선택** 페이지에서 추가 기능을 작성하는 데 사용할 프로그래밍 언어를 선택합니다.
+7. **프로그래밍 언어 선택** 페이지에서 추가 기능을 작성하는 데 사용할 프로그래밍 언어를 선택합니다.
 
-    > [!NOTE]
-    > 이 항목의 샘플 코드에서는 Visual C#을 사용합니다.
+   > [!NOTE]
+   > 이 항목의 샘플 코드에서는 Visual C#을 사용합니다.
 
-8.  **응용 프로그램 호스트 선택** 페이지에서 **Visual Studio**를 선택하고 **Visual Studio 매크로**의 선택을 취소합니다.
+8. **응용 프로그램 호스트 선택** 페이지에서 **Visual Studio**를 선택하고 **Visual Studio 매크로**의 선택을 취소합니다.
 
 9. **다음**을 선택합니다.
 
@@ -96,18 +98,18 @@ ms.locfileid: "39381109"
 
      다음 절차에서 이 WebPerfTestResultsViewerAddin 프로젝트에서 참조할 사용자 정의 컨트롤을 만든 후에는 이 *Connect.cs* 파일에 코드를 추가합니다.
 
- 추가 기능을 만든 후에는 먼저 Visual Studio에 등록해야 **추가 기능 관리자**에서 활성화할 수 있습니다. 이 작업은 파일 확장명이 *.addin*인 XML 파일을 사용하여 수행합니다.
+    추가 기능을 만든 후에는 먼저 Visual Studio에 등록해야 **추가 기능 관리자**에서 활성화할 수 있습니다. 이 작업은 파일 확장명이 *.addin*인 XML 파일을 사용하여 수행합니다.
 
- *.addin* 파일에서는 Visual Studio가 **추가 기능 관리자**에 추가 기능을 표시하는 데 필요한 정보를 설명합니다. Visual Studio가 시작되면 *.addin* 파일 위치에서 사용할 수 있는 모든 *.addin* 파일을 찾습니다. 이 파일이 발견되면 Visual Studio에서는 XML 파일을 읽고 사용자가 추가 기능을 클릭할 때 이를 시작하는 데 필요한 정보를 **추가 기능 관리자**에 제공합니다.
+    *.addin* 파일에서는 Visual Studio가 **추가 기능 관리자**에 추가 기능을 표시하는 데 필요한 정보를 설명합니다. Visual Studio가 시작되면 *.addin* 파일 위치에서 사용할 수 있는 모든 *.addin* 파일을 찾습니다. 이 파일이 발견되면 Visual Studio에서는 XML 파일을 읽고 사용자가 추가 기능을 클릭할 때 이를 시작하는 데 필요한 정보를 **추가 기능 관리자**에 제공합니다.
 
- **추가 기능 마법사**를 사용하여 추가 기능을 만들 때 *.addin* 파일이 자동으로 만들어집니다.
+    **추가 기능 마법사**를 사용하여 추가 기능을 만들 때 *.addin* 파일이 자동으로 만들어집니다.
 
 ### <a name="add-in-file-locations"></a>추가 기능 파일 위치
 
 다음과 같이 **추가 기능 마법사**를 통해 두 개의 *.addin* 파일 복사본이 자동으로 만들어집니다.
 
 |**.Addin 파일 위치**|**설명**|
-|------------------------------|----------------------------|---------------------|
+|-|----------------------------|-|
 |루트 프로젝트 폴더|추가 기능 프로젝트의 배포에 사용됩니다. 간편한 편집을 위해 프로젝트에 포함되며 XCopy 방식의 배포를 위한 로컬 경로가 있습니다.|
 |추가 기능 폴더|디버깅 환경에서 추가 기능을 실행하는 데 사용됩니다. 항상 현재 빌드 구성의 출력 경로를 가리켜야 합니다.|
 

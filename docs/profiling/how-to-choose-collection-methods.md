@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f15a8d5b00d947dc3d77dca58ce6ff5fa2cf58e0
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 54efd3d68e81908d3843525b588d9c28cc1be3ad
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765391"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921290"
 ---
 # <a name="how-to-choose-collection-methods"></a>방법: 수집 방법 선택
 
@@ -32,12 +32,12 @@ Visual Studio 프로파일링 도구는 성능 데이터를 수집하는 세 가
 
 - 마법사의 첫 번째 페이지에서 다음 옵션 중 하나를 선택합니다.
 
-|옵션|설명|
-|------------|-----------------|
-|**CPU 샘플링**|초기 분석 및 CPU 사용률 문제 분석에 유용한 응용 프로그램 통계를 수집합니다.|
-|**계측**|집중 분석 및 입/출력 성능 문제 분석에 유용한 자세한 타이밍 데이터를 수집합니다.|
-|**.NET 메모리 할당**|샘플링 프로파일링 방법을 사용하여 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 메모리 할당 데이터를 수집합니다.|
-|**동시성**|숫자 리소스 경합 데이터를 수집합니다.|
+| 옵션 | 설명 |
+|----------------------------| - |
+| **CPU 샘플링** | 초기 분석 및 CPU 사용률 문제 분석에 유용한 응용 프로그램 통계를 수집합니다. |
+| **계측** | 집중 분석 및 입/출력 성능 문제 분석에 유용한 자세한 타이밍 데이터를 수집합니다. |
+| **.NET 메모리 할당** | 샘플링 프로파일링 방법을 사용하여 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 메모리 할당 데이터를 수집합니다. |
+| **동시성** | 숫자 리소스 경합 데이터를 수집합니다. |
 
 ## <a name="performance-explorer"></a>성능 탐색기
 

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd397420652d5d70429daa7ecea35210194dd37a
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 31856366712da0a2287f73906c6e3a5f81f63a00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175958"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857590"
 ---
 # <a name="customize-your-build"></a>빌드 사용자 지정
 
@@ -34,6 +34,11 @@ MSBuild 15 이전 버전에서는 솔루션의 프로젝트에 대한 새로운 
 
 그러나 지금은 원본을 포함하는 루트 폴더에서 *Directory.Build.props*라는 단일 파일에 새 속성을 정의하여 한 단계로 모든 프로젝트에 새 속성을 추가할 수 있습니다. MSBuild가 실행되면 *Microsoft.Common.props*는 *Directory.Build.props* 파일에 대한 디렉터리 구조를 검색하고 *Microsoft.Common.targets*는 *Directory.Build.targets*를 검색합니다. 속성을 찾으면 해당 속성을 가져옵니다. *Directory.Build.props*는 디렉터리에 있는 프로젝트에 대한 사용자 지정을 제공하는 사용자 지정 파일입니다.
 
+> [!NOTE]
+> Linux 기반 파일 시스템은 대/소문자를 구분합니다. Directory.Build.props 파일 이름의 대/소문자가 정확히 일치하는지 확인합니다. 일치하지 않으면 빌드 프로세스 중에 파일이 검색되지 않습니다.
+>
+> 자세한 내용은 [이 GitHub 문제](https://github.com/dotnet/core/issues/1991#issue-368441031)를 참조하세요.
+
 ### <a name="directorybuildprops-example"></a>Directory.Build.props 예제
 
 예를 들어 모든 프로젝트가 새 Roslyn **/deterministic** 기능(속성 `$(Deterministic)`에 의해 Roslyn `CoreCompile` 대상에 표시됨)에 액세스하도록 허용하려면 다음을 수행합니다.
@@ -41,13 +46,13 @@ MSBuild 15 이전 버전에서는 솔루션의 프로젝트에 대한 새로운 
 1. *Directory.Build.props*라는 리포지토리의 루트에 새 파일을 만듭니다.
 2. 파일에 다음 XML을 추가합니다.
 
-  ```xml
-  <Project>
+   ```xml
+   <Project>
     <PropertyGroup>
       <Deterministic>true</Deterministic>
     </PropertyGroup>
-  </Project>
-  ```
+   </Project>
+   ```
 3. MSBuild를 실행합니다. 프로젝트의 기존 *Microsoft.Common.props* 및 *Microsoft.Common.targets* 가져오기는 파일을 찾아서 가져옵니다.
 
 ### <a name="search-scope"></a>검색 범위

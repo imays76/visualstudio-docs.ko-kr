@@ -1,6 +1,7 @@
 ---
 title: Microsoft Visual Studio Debugger (예외 Throw) 대화 상자 | Microsoft Docs
-ms.custom: ''
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: reference
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24ccb3de6b22f54b239b5b772490a8d05a990dbd
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 5609f87063d3b2852b6a45f7174cfd3db90a1ccd
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475027"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062734"
 ---
 # <a name="microsoft-visual-studio-debugger-exception-thrown-dialog-box"></a>Microsoft Visual Studio Debugger(예외 throw) 대화 상자
 프로그램에 예외가 발생하면 나타나는 대화 상자입니다. 이 대화 상자는 throw된 예외의 종류를 보고합니다. 코드를 통해 이 예외를 처리해야 합니다. 선택할 수 있는 예외 처리 옵션은 다음과 같습니다.  
@@ -36,10 +37,10 @@ ms.locfileid: "31475027"
  프로그램의 실행을 중단하고 디버거를 시작합니다. 실행을 중단하기 전에는 예외 처리기가 호출되지 않습니다. 중단 위치에서 실행을 계속하면 예외 처리기가 호출됩니다.  
   
  **Continue**  
- 실행을 계속하여 예외 처리기에 예외를 처리할 기회를 줍니다. 특정 유형의 예외에는 이 옵션을 사용할 수 없습니다. **계속** 하면 응용 프로그램을 계속 합니다. 네이티브 응용 프로그램에서는 예외가 다시 throw됩니다. 관리되는 응용 프로그램에서는 프로그램이 종료되거나 호스팅 응용 프로그램에서 예외를 처리합니다.  
+ 실행을 계속하여 예외 처리기에 예외를 처리할 기회를 줍니다. 특정 유형의 예외에는 이 옵션을 사용할 수 없습니다. **계속**을 선택하면 애플리케이션 실행이 계속됩니다. 네이티브 응용 프로그램에서는 예외가 다시 throw됩니다. 관리되는 응용 프로그램에서는 프로그램이 종료되거나 호스팅 응용 프로그램에서 예외를 처리합니다.  
   
 > [!NOTE]
->  관리 코드에서는 처리되지 않은 예외가 발생한 후 실행을 계속할 수 없습니다. 선택 **계속** 후 관리 되는 코드에서 처리 되지 않은 예외 발생 하면 디버깅이 중지 합니다.  
+>  관리 코드에서는 처리되지 않은 예외가 발생한 후 실행을 계속할 수 없습니다. 관리 코드에서 처리되지 않은 예외가 발생한 후 **계속**을 선택하면 디버깅이 중지됩니다.  
   
  **무시**  
  예외 처리기를 호출하지 않고 실행을 계속합니다. 예외 처리기가 호출되지 않으므로 추가적인 예외 및 오류를 비롯한 후속 결과가 발생할 수 있습니다. 특정 유형의 예외에는 이 옵션을 사용할 수 없습니다.  

@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cec66860bb75cb62e71e2924ed728e1bd86ad59f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2ed411d632df544d47b376e59bc59b7331d8aa91
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105053"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901809"
 ---
 # <a name="idebugdefaultport2queryislocal"></a>IDebugDefaultPort2::QueryIsLocal
-이 메서드는이 포트는 로컬 컴퓨터에 있는지 여부를 결정 합니다.  
+이 메서드는 로컬 컴퓨터에서이 포트 인지 여부를 결정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -38,7 +38,7 @@ int QueryIsLocal();
 ```  
   
 ## <a name="return-value"></a>반환 값  
- 반환 `S_OK` 경우이 포트는 로컬 (호출자와 동일한 컴퓨터)에서 또는 `S_FALSE` 포트가 다른 컴퓨터에 있을 경우.  
+ 반환 `S_OK` 이 포트에는 로컬 (호출자와 같은 시스템) 인지 또는 `S_FALSE` 다른 컴퓨터에서 포트의 경우.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)

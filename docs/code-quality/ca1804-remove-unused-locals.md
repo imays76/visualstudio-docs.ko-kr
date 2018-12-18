@@ -14,16 +14,20 @@ ms.assetid: cc332e67-6543-4813-bd8a-6f6fc75bf22a
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a9212d4fd11a13e9905d0327e3c4c91413e2a8d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b1846c1b8d9173db6d1f4b5acd0544fd601da67a
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916773"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45545465"
 ---
 # <a name="ca1804-remove-unused-locals"></a>CA1804: 사용되지 않는 로컬 항목을 제거하십시오.
+
 |||
 |-|-|
 |TypeName|RemoveUnusedLocals|
@@ -32,19 +36,19 @@ ms.locfileid: "31916773"
 |변경 수준|주요 변경 아님|
 
 ## <a name="cause"></a>원인
- 메서드 지역 변수를 선언 하지만 사용 하지 않습니다는 변수를 제외 하 고 가능 대입문의 받는 사람으로 합니다. 이 규칙에 따라 분석에 대 한 테스트 되는 어셈블리 디버깅 정보로 작성 해야 하 고 관련된 프로그램 데이터베이스 (.pdb) 파일을 사용할 수 있어야 합니다.
+ 메서드 지역 변수를 선언 하지만 사용 하지 않습니다 제외 하 고 변수의 가능한 대입문의 받는 사람으로 합니다. 이 규칙에 따라 분석에 대 한 디버깅 정보로 테스트 되는 어셈블리를 빌드해야 하 고 연결된 프로그램 데이터베이스 (.pdb) 파일을 사용할 수 있어야 합니다.
 
 ## <a name="rule-description"></a>규칙 설명
  사용되지 않는 지역 변수와 불필요한 할당으로 어셈블리의 크기가 증가하고 성능이 저하될 수 있습니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이 규칙 위반 문제를 해결 하려면 제거 하거나 지역 변수를 사용 합니다. C# 컴파일러는 포함 되어 있는 [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] 사용 하지 않는 지역 변수 제거 때는 `optimize` 옵션을 사용할 수 있습니다.
+ 이 규칙 위반 문제를 해결 하려면 제거 하거나 지역 변수를 사용 합니다. C# 컴파일러 되는 포함 [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] 사용 되지 않는 로컬 변수를 제거 때는 `optimize` 옵션을 사용 합니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
- 컴파일러는 변수를 내보낸 경우이 규칙에서 경고를 표시 합니다. 또한 성능 및 코드 유지 관리 주요 관심사 없는 경우에 해당 규칙을 사용 하지 않도록 설정 하거나이 규칙에서는 경고를에서 표시 하지 않으려면 안전 합니다.
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
+ 컴파일러는 변수를 내보낸 경우이 규칙에서 경고를 표시 합니다. 또한 성능 및 코드 유지 관리 주요 관심사 없는 경우에이 규칙에서 경고를 표시 하거나 규칙을 사용 하지 않으려면 안전 합니다.
 
 ## <a name="example"></a>예제
- 다음 예제에서는 몇 가지 사용 하지 않는 지역 변수를 보여 줍니다.
+ 다음 예제에서는 몇 가지 사용 되지 않는 로컬 변수를 보여 줍니다.
 
  [!code-vb[FxCop.Performance.UnusedLocals#1](../code-quality/codesnippet/VisualBasic/ca1804-remove-unused-locals_1.vb)]
  [!code-csharp[FxCop.Performance.UnusedLocals#1](../code-quality/codesnippet/CSharp/ca1804-remove-unused-locals_1.cs)]

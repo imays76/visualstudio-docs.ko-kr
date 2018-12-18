@@ -14,16 +14,21 @@ ms.assetid: ef1e983e-9ca7-404b-82d7-65740ba0ce20
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 63386e73cee4d2e0c1c34f31f0042312fef4869f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 44130632cb416bf03819ddff13b797ac3b799354
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31898014"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547178"
 ---
 # <a name="ca1057-string-uri-overloads-call-systemuri-overloads"></a>CA1057: 문자열 URI 오버로드는 System.Uri 오버로드를 호출합니다.
+
 |||
 |-|-|
 |TypeName|StringUriOverloadsCallSystemUriOverloads|
@@ -32,19 +37,20 @@ ms.locfileid: "31898014"
 |변경 수준|주요 변경 아님|
 
 ## <a name="cause"></a>원인
- 형식이 선언 된 문자열 매개 변수로 다른 메서드 오버 로드는 <xref:System.Uri?displayProperty=fullName> 매개 변수 및 문자열 매개 변수를 사용 하는 오버 로드는 오버 로드를 호출 하지 않습니다는 <xref:System.Uri> 매개 변수입니다.
+
+형식이 선언 된 문자열 매개 변수 대체에 의해서만 달라 지는 메서드 오버 로드는 <xref:System.Uri?displayProperty=fullName> 매개 변수 및 문자열 매개 변수를 사용 하는 오버 로드는 오버 로드를 호출 하지 않습니다는 <xref:System.Uri> 매개 변수입니다.
 
 ## <a name="rule-description"></a>규칙 설명
- 오버 로드만 다르므로 문자열 /<xref:System.Uri> 매개 변수를 문자열 uniform resource identifier (URI)를 나타내기 위해 간주 됩니다. URI의 문자열 표현은 구문 분석 및 인코딩 오류를 발생시키기 쉬우며 보안 문제를 일으킬 수 있습니다. <xref:System.Uri> 클래스 안전한 방식으로 이러한 서비스를 제공 합니다. 장점을 이용 하는 <xref:System.Uri> 클래스 문자열 오버 로드를 호출 해야는 <xref:System.Uri> 문자열 인수를 사용 하 여 오버 로드 합니다.
+ 오버 로드만 다르므로 문자열 또는 <xref:System.Uri> 매개 변수를 uniform resource identifier (URI)를 나타내는 문자열을 간주 됩니다. URI의 문자열 표현은 구문 분석 및 인코딩 오류를 발생시키기 쉬우며 보안 문제를 일으킬 수 있습니다. <xref:System.Uri> 클래스는 안전 하 고 안전한 방식으로 이러한 서비스를 제공 합니다. 장점을 이용 하는 <xref:System.Uri> 클래스를 문자열 오버 로드를 호출 해야 합니다 <xref:System.Uri> 문자열 인수를 사용 하 여 오버 로드.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 인스턴스를 만들 수 있도록 URI의 문자열 표현을 사용 하는 메서드를 다시 구현는 <xref:System.Uri> 클래스 문자열 인수를 사용 하 고 다음 전달는 <xref:System.Uri> 개체를 포함 하는 오버 로드는 <xref:System.Uri> 매개 변수입니다.
+ 인스턴스를 만들 수 있도록 URI의 문자열 표현을 사용 하는 메서드를 다시 구현 합니다 <xref:System.Uri> 클래스는 문자열 인수를 사용 하 고 다음 전달를 <xref:System.Uri> 개체에는 오버 로드는 <xref:System.Uri> 매개 변수.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
  문자열 매개 변수는 URI를 나타내지 않는 경우이 규칙에서 경고를 표시 하지 않아도 안전 합니다.
 
 ## <a name="example"></a>예제
- 다음 예제에서는 오버 로드를 올바로 구현 된 문자열을 보여 줍니다.
+ 다음 예제에서는 오버 로드를 올바르게 구현 된 문자열을 보여 줍니다.
 
  [!code-csharp[FxCop.Design.CallUriOverload#1](../code-quality/codesnippet/CSharp/ca1057-string-uri-overloads-call-system-uri-overloads_1.cs)]
  [!code-cpp[FxCop.Design.CallUriOverload#1](../code-quality/codesnippet/CPP/ca1057-string-uri-overloads-call-system-uri-overloads_1.cpp)]

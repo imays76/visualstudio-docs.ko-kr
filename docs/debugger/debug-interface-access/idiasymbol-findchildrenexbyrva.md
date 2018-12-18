@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c80d50d2e1d3fb5a34b5508a8b67569fb0417cb
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d1a77ba8527698271356fdc324ccefac2dc0f650
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465371"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938866"
 ---
 # <a name="idiasymbolfindchildrenexbyrva"></a>IDiaSymbol::findChildrenExByRVA
 지정 된 상대 가상 주소 (RVA)에서 사용할 수 있는 기호 자식을 검색 합니다.  
@@ -38,22 +38,22 @@ HRESULT findChildrenExByRVA (
   
 #### <a name="parameters"></a>매개 변수  
  `symtag`  
- [in] 에 정의 된 대로 자식 노드를 검색할 수 기호 태그 지정의 [SymTagEnum 열거형](../../debugger/debug-interface-access/symtagenum.md)합니다. 로 설정 `SymTagNull` 를 검색할 수 있는 모든 자식에 대 한 합니다.  
+ [in] 에 정의 된 대로 검색 되는 자식의 기호 태그를 지정 합니다 [SymTagEnum 열거형](../../debugger/debug-interface-access/symtagenum.md)합니다. 로 `SymTagNull` 검색할 모든 자식에 대 한 합니다.  
   
  `name`  
- [in] 검색할 하위 항목의 이름을 지정 합니다. 로 설정 `NULL` 를 검색할 수 있는 모든 자식에 대 한 합니다.  
+ [in] 검색할 자식 컨트롤의 이름을 지정 합니다. 로 `NULL` 검색할 모든 자식에 대 한 합니다.  
   
  `compareFlags`  
- [in] 이름 일치에 적용할 비교 옵션을 지정 합니다. 값의 [NameSearchOptions 열거형](../../debugger/debug-interface-access/namesearchoptions.md) 열거형 따로 또는 함께 사용할 수 있습니다.  
+ [in] 이름 일치에 적용할 비교 옵션을 지정 합니다. 값을 [NameSearchOptions 열거형](../../debugger/debug-interface-access/namesearchoptions.md) 열거형 따로 또는 함께 사용할 수 있습니다.  
   
  `address`  
  [in] RVA를 지정합니다.  
   
  `ppResult`  
- [out] 반환 된 [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) 자식 기호 목록이 포함 된 개체를 검색 합니다.  
+ [out] 반환 된 [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) 자식 기호 목록을 포함 하는 개체 검색 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 반환 `S_OK` 기호의 자식이 하나 이상 발견 되었습니다 하거나 반환 하는 경우 `S_FALSE` 자식이 발견 되는 경우; 그러지 않으면 오류 코드가 반환 됩니다.  
+ 반환 `S_OK` 기호의 자식이 하나 이상 찾을 하거나 반환 하는 경우 `S_FALSE` 자식이 없는 경우; 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
  반환 되는 로컬 기호 라이브 범위 정보를 포함 합니다.  

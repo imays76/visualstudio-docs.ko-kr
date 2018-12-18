@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e163daff6466f9cc6e0f83fff20b89006a73dcc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fafba8e09ad4f0dccb40ebd6fb88b75eef70964d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099566"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896798"
 ---
 # <a name="bpresolutioninfo"></a>BP_RESOLUTION_INFO
 데이터 중단점 또는 코드 중단점에 대 한 바인딩된 중단점 정보를 설명합니다.  
@@ -47,19 +47,19 @@ public struct BP_RESOLUTION_INFO {
   
 ## <a name="members"></a>멤버  
  `dwFields`  
- 컬렉션의 플래그는 [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) 채워진 필드를 지정 하는 열거형입니다.  
+ 플래그의 컬렉션을 [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) 채워진 필드를 지정 하는 열거형입니다.  
   
  `bpResLocation`  
- [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) 코드나 데이터에 있는 중단점의 위치를 지정 하는 구조입니다.  
+ 합니다 [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) 코드 또는 데이터에서 중단점의 위치를 지정 하는 구조입니다.  
   
  `pProgram`  
- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 중단점 오류가 발생 한 응용 프로그램을 나타내는 개체입니다.  
+ 합니다 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 중단점 오류가 발생 한 응용 프로그램을 나타내는 개체입니다.  
   
  `pThread`  
- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) 중단점 오류가 포함 된 응용 프로그램이 실행 되 고 있는 스레드를 나타내는 개체입니다.  
+ 합니다 [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) 중단점 오류가 포함 된 응용 프로그램이 실행 되는 스레드를 나타내는 개체입니다.  
   
 ## <a name="remarks"></a>설명  
- 반환이 [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)합니다.  
+ 이 구조는 반환한 [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)합니다.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  

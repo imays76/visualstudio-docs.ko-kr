@@ -10,21 +10,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fcac1e902ccc1fcc5432a231c5f34629422815fd
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 5c841e6930db8f65aaf93c314359656689ecfd1c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34477394"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903545"
 ---
 # <a name="vsperf"></a>VSPerf
 **VsPerf** 명령줄 도구를 사용하면 다음을 수행할 수 있습니다.  
   
-1.  장치에 Visual Studio가 설치되어 있지 않으면 명령줄에서 UWP 앱을 프로파일링합니다.  
+1. 장치에 Visual Studio가 설치되어 있지 않으면 명령줄에서 UWP 앱을 프로파일링합니다.  
   
-2.  샘플링 프로파일링 방법을 사용하여 Windows 8 데스크톱 응용 프로그램 및 Windows Server 2012 응용 프로그램을 프로파일링합니다.  
+2. 샘플링 프로파일링 방법을 사용하여 Windows 8 데스크톱 응용 프로그램 및 Windows Server 2012 응용 프로그램을 프로파일링합니다.  
   
- 프로 파일링 옵션에 대한 자세한 내용은 [Windows 8 및 Windows Server 2012 응용 프로그램의 성능 도구](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)를 참조하세요.  
+   프로 파일링 옵션에 대한 자세한 내용은 [Windows 8 및 Windows Server 2012 응용 프로그램의 성능 도구](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)를 참조하세요.  
   
 ## <a name="uwp-apps-only"></a>UWP 앱만  
  이러한 옵션은 UWP 앱에만 적용됩니다.  

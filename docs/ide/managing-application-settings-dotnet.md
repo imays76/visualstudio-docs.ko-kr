@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3333aa5db6f28d23db901fef811b9291fdf1270e
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e4ea61199159e68f3707b6dac4d3a6c1f5ea7635
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177895"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671789"
 ---
 # <a name="manage-application-settings-net"></a>응용 프로그램 설정 관리(.NET)
 
@@ -100,7 +100,7 @@ Properties.Settings.Default.FirstUserSetting = "abc";
 Properties.Settings.Default.Save();
 ```
 
-`Settings` 클래스를 통해 응용 프로그램 설정에 액세스하는 방법에 대한 일반적인 내용은 [응용 프로그램 설정 개요(.NET Framework)](/dotnet/framework/winforms/advanced/application-settings-overview)를 참조하세요. 설정 반복에 대한 자세한 내용은 이 [포럼 게시물](http://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral)을 참조하세요.
+`Settings` 클래스를 통해 응용 프로그램 설정에 액세스하는 방법에 대한 일반적인 내용은 [응용 프로그램 설정 개요(.NET Framework)](/dotnet/framework/winforms/advanced/application-settings-overview)를 참조하세요. 설정 반복에 대한 자세한 내용은 이 [포럼 게시물](https://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 

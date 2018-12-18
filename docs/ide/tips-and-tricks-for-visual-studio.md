@@ -1,6 +1,6 @@
 ---
-title: Visual Studio 바로 가기 키
-ms.date: 06/21/2017
+title: 바로 가기 키
+ms.date: 11/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a420876ca53f5d3cb407d759ebbc9bb430f7a5ad
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: a2b2c520a98d1bc3fa9d162889794ed1524d7d82
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32065067"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062272"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Visual Studio의 바로 가기 키
 
@@ -22,6 +22,9 @@ ms.locfileid: "32065067"
 
 > [!TIP]
 > 여기에 나열된 바로 가기 키는 사용 가능한 바로 가기 키의 하위 집합일 뿐입니다. 자세한 목록은 [기본 바로 가기 키](../ide/default-keyboard-shortcuts-in-visual-studio.md)를 참조하세요.
+
+> [!NOTE]
+> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio의 일반적인 바로 가기 키](/visualstudio/mac/keyboard-shortcuts)를 참조하세요.
 
 ## <a name="window-management"></a>창 관리
 
@@ -73,6 +76,11 @@ ms.locfileid: "32065067"
 
 |명령|바로 가기|버전 가용성|
 |-|-|-|
+|전체로 이동|**Ctrl**+**T**|
+|최근에 사용한 파일로 이동|**Ctrl**+**T**,**R**|
+|다중 캐럿 다중 삽입 지점|**Ctrl**+**Alt**+**클릭**|
+|다중 캐럿 추가 일치 선택 영역|**Shift**+**Alt**+**Ins**|
+|문서 서식|**Ctrl**+**K**,**D**|Visual Studio 2017 버전 15.8|
 |IntelliSense 제안 모드|**Ctrl**+**Alt**+**스페이스**(토글)||
 |IntelliSense 강제 표시|**Ctrl**+**J**||
 |빠른 작업|**Ctrl**+**.**||
@@ -95,6 +103,9 @@ ms.locfileid: "32065067"
 |여러 정의 피킹(Peeking) 창 간에 이동|**Ctrl**+**Alt**+**-** 및 **Ctrl**+**Alt**+**=**||
 |여러 결과 피킹 간에 이동|**F8** 및 **Shift**+**F8**||
 |코드 편집기 창 및 정의 피킹(Peeking) 창 간에 전환|**Shift**+**Esc**||
+|포함 블록으로 이동|**Ctrl**+**Alt**+**위쪽 화살표**|
+|다음/이전 문제로 이동|**Alt**+**PgUp**/**PgDn**|
+|바로 가기 탐색 메뉴|**Alt**+**`**|
 
 ## <a name="toolbars"></a>도구 모음
 
@@ -127,5 +138,6 @@ ms.locfileid: "32065067"
 ## <a name="see-also"></a>참고 항목
 
 - [접근성 팁과 요령](../ide/reference/accessibility-tips-and-tricks.md)
-- [바로 가기 키(VSTS 및 TFS)](/vsts/collaborate/keyboard-shortcuts)
-- [Visual Studio 팁과 요령 블로그](http://blogs.msdn.com/b/zainnab)
+- [바로 가기 키(Azure DevOps Services 및 TFS)](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts)
+- [Visual Studio 팁과 요령 블로그](https://blogs.msdn.microsoft.com/zainnab/)
+- [Mac용 Visual Studio의 일반적인 바로 가기 키](/visualstudio/mac/keyboard-shortcuts)

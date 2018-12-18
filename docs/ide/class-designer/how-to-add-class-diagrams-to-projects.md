@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94e13d4c1dbda200c2e2660e4b3b44e62ed99496
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 133f15f6c160e9ec48b1db4ab8713023e492cbae
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33998191"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42901300"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>방법: 프로젝트에 클래스 다이어그램 추가
 
@@ -59,11 +59,14 @@ Visual Studio 2017을 실행 중이고 **클래스 디자이너** 구성 요소�
 
 ## <a name="add-a-class-diagram-based-on-existing-types"></a>기존 형식을 기반으로 클래스 다이어그램 추가
 
-**솔루션 탐색기**에서 클래스 파일 상황에 맞는 메뉴를 연 다음, **클래스 다이어그램 보기**를 선택합니다.
+**솔루션 탐색기**에서 클래스 파일의 상황에 맞는 메뉴(마우스 오른쪽 단추로 클릭)를 열고 **클래스 다이어그램 보기**를 선택합니다.
 
 또는
 
 **클래스 뷰**에서 네임스페이스 또는 형식 상황에 맞는 메뉴를 연 다음, **클래스 다이어그램 보기**를 선택합니다.
+
+> [!TIP]
+> **클래스 뷰**가 열려 있지 않으면 **보기** 메뉴에서 **클래스 뷰**를 엽니다.
 
 ## <a name="to-display-the-contents-of-a-complete-project-in-a-class-diagram"></a>클래스 다이어그램에 전체 프로젝트의 내용을 표시하려면
 

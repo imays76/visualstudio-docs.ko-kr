@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d54724655db7147c06687aa88a4fe623bb277a45
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 724c4e3ac911e5fda62304a08565937f38425368
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756945"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948956"
 ---
 # <a name="add-correlationinitializers-dialog-box"></a>상관 관계 이니셜라이저 추가 대화 상자
 
@@ -33,7 +33,7 @@ ms.locfileid: "36756945"
 다음 표에 사용자 인터페이스 (UI) 요소에는 **상관 관계 이니셜라이저 추가** 대화 상자:
 
 |UI 요소|설명|
-|----------------|-----------------|
+|-|-----------------|
 |**이니셜라이저 추가**|클릭 합니다 **추가 초기화** 상자 컬렉션에 추가 이니셜라이저를 추가할 수 있습니다.|
 |**상관 관계 유형**|상관 관계 이니셜라이저의 형식을 지정합니다. 다음 네 가지 형식 중에서 선택할 수 있습니다.<br /><br /> 1. <xref:System.ServiceModel.Activities.CallbackCorrelationInitializer>를 지정하는 콜백 상관 관계 이니셜라이저<br />2. <xref:System.ServiceModel.Activities.CorrelationInitializer>를 지정하는 컨텍스트 상관 관계 이니셜라이저<br />3. <xref:System.ServiceModel.Activities.RequestReplyCorrelationInitializer>를 지정하는 요청-회신 상관 관계 이니셜라이저<br />4. <xref:System.ServiceModel.Activities.QueryCorrelationInitializer>를 지정하는 쿼리 상관 관계 이니셜라이저<br /><br /> 편집 하 여 **CorrelationType**<br /><br /> 1. 특정 행을 탭 합니다 **이니셜라이저 추가** DataGrid.<br />2. 포커스를 설정할 **CorrelationTypeComboBox**를 눌러 **Ctrl**+**탭**합니다.<br />3. 팝업 Alt + 아래쪽 화살표 키를 눌러 합니다 **ComboBox** 하 고 편집 합니다.|
 |**XPath 쿼리**|들어오는 메시지와 나가는 메시지에서 상관 관계 데이터를 추출하는 데 사용되는 쿼리가 포함된 키/값 쌍입니다. 이 목록은 <xref:System.ServiceModel.Activities.QueryCorrelationInitializer> 형식을 사용하는 경우에만 유효합니다.|

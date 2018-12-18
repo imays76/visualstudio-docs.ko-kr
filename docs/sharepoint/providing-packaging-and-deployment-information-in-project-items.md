@@ -29,25 +29,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e216bf3f3a15027b26c93e986df3eb8594d4d589
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e4ce9f864307ffaee4bce51a565e9ad1726d043d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119858"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893301"
 ---
 # <a name="provide-packaging-and-deployment-information-in-project-items"></a>프로젝트 항목에 패키징 및 배포 정보를 제공 합니다.
   모든 SharePoint 프로젝트 항목 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 프로젝트는 SharePoint에 배포 될 때 추가 데이터를 제공 하는 데 사용할 수 있는 속성이 있습니다. 속성은 다음과 같습니다.  
   
--   기능 속성  
+- 기능 속성  
   
--   기능 수신자  
+- 기능 수신자  
   
--   프로젝트 출력 참조  
+- 프로젝트 출력 참조  
   
--   안전 컨트롤 항목  
+- 안전 컨트롤 항목  
   
- 이러한 속성에 표시 된 **속성** 창입니다.  
+  이러한 속성에 표시 된 **속성** 창입니다.  
   
 ## <a name="feature-properties"></a>기능 속성
  사용 된 **기능 속성** 기능을 사용 하는 데이터를 지정 하는 속성입니다. 기능 속성 데이터는 SharePoint에 배포 될 때 기능과 함께 제공 된 값 (키/값 쌍으로 저장 됨)의 집합입니다. 기능이 배포되고 나서 코드에서 속성 값에 액세스할 수 있습니다.  

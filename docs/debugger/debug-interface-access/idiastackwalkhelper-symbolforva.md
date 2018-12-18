@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e70dac639f18f934bb997cc4979bdbe6a7d8c4c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a9af63460d3b5c082f52d3dbd9725fbfeef9c24f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31467539"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863921"
 ---
 # <a name="idiastackwalkhelpersymbolforva"></a>IDiaStackWalkHelper::symbolForVA
 지정된 된 가상 주소를 포함 하는 기호를 검색 합니다.  
@@ -35,13 +35,13 @@ HRESULT symbolForVA(
   
 #### <a name="parameters"></a>매개 변수  
  `va`  
- [in] 요청 된 기호에 포함 되어 있는 가상 주소입니다. 기호 여야 합니다는 `SymTagFunctionType` (의 값은 [SymTagEnum 열거형](../../debugger/debug-interface-access/symtagenum.md) 열거형)입니다.  
+ [in] 요청 된 기호에 포함 된 가상 주소입니다. 기호 여야 합니다는 `SymTagFunctionType` (의 값을 [SymTagEnum 열거형](../../debugger/debug-interface-access/symtagenum.md) 열거형)입니다.  
   
  `ppSymbol`  
  [out] [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 지정된 된 주소에서 기호를 나타내는 개체입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   

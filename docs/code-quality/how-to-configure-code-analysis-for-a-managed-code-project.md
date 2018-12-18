@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 코드 분석 구성
+title: 코드 분석 구성
 ms.date: 04/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 72d9986a01482972154e228923073782a77a93d5
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: c94c1a82acfcabaa8bc6d73eb302b8760c5df2ec
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204234"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062424"
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>방법: 관리 코드 프로젝트에 대한 코드 분석 구성
 
@@ -74,7 +74,7 @@ Visual Studio에서 코드 분석의 목록에서 선택할 수 있습니다 [�
 
 5. 선택 된 **규칙 집합** 규칙의 이름을 적용 하려는 프로젝트의 필드 및 선택 설정 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [코드 분석 규칙 집합 참조](../code-quality/rule-set-reference.md)
 - [방법: ASP.NET 웹 응용 프로그램에 대 한 코드 분석 구성](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)

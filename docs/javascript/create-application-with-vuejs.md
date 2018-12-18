@@ -1,7 +1,7 @@
 ---
-title: Visual Studio용 Node.js 도구를 사용하여 Vue.js 앱 만들기
+title: Node.js를 사용하여 Vue.js 앱 만들기
 description: Vue.js 프레임워크를 사용하여 Visual Studio에서 Node.js 응용 프로그램을 만들 수 있습니다.
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 07/06/2018
 ms.technology: vs-nodejs
 ms.topic: conceptual
@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 67b3a5a1a382b6768d25ce2b0550197fc09643fa
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 03576347dc740f44a04ca38150abde458338ef14
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924783"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066878"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Visual Studio용 Node.js 도구를 사용하여 Vue.js 응용 프로그램 만들기
 
@@ -37,7 +37,7 @@ Visual Studio에서 Vue.js 응용 프로그램을 개발할 때 다음과 같은
     > [!IMPORTANT]
     > 이 문서에서는 Visual Studio 2017 버전 15.8 미리 보기 3부터 사용할 수 있는 기능이 필요합니다.
 
-    아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 페이지로 이동하여 체험용으로 설치합니다.
+    아직 Visual Studio를 설치하지 않은 경우  [Visual Studio 다운로드](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  페이지로 이동하여 체험용으로 설치합니다.
 
     워크로드를 설치해야 하지만 이미 Visual Studio가 있는 경우 **새 프로젝트** 대화 상자의 왼쪽 창에서 **Open Visual Studio 설치 관리자** 링크를 클릭합니다(**파일** > **새로 만들기** > **프로젝트**를 선택합니다). Visual Studio 설치 관리자가 시작됩니다. **Node.js 개발** 워크로드를 선택한 다음 **수정**을 선택합니다.
 
@@ -79,7 +79,7 @@ Vue.js는 빠르게 프로젝트를 스캐폴딩하기 위한 공식 CLI를 제�
 * *./Startup.cs* 파일을 열고, 구성 메서드에 다음 줄을 추가합니다.
 
     ```csharp
-    app.UseDefaultFiles() // Enables default file mapping on the web root.
+    app.UseDefaultFiles(); // Enables default file mapping on the web root.
     app.UseStaticFiles(); // Marks files on the web root as servable.
     ```
 

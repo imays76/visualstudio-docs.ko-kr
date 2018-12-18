@@ -1,5 +1,5 @@
 ---
-title: Visual Studio IDE 64비트 지원
+title: 64비트 지원
 ms.date: 02/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27553fe0fdac8378f8d4b1158902394f0704880c
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: fa48de77bdf5ba283068f3dfcc492a76ae3576c0
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425740"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063343"
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Visual Studio IDE 64비트 지원
 
@@ -30,7 +30,7 @@ Visual Studio를 사용하면 64비트 플랫폼을 비롯하여 다양한 플�
 
 ## <a name="configure-projects-as-64-bit-applications"></a>프로젝트를 64비트 응용 프로그램으로 구성
 
-[방법: 플랫폼을 대상으로 한 프로젝트 구성](../ide/how-to-configure-projects-to-target-platforms.md)에는 64비트 응용 프로그램으로 빌드할 프로그램 구성에 대한 설명이 있습니다.
+[방법: 플랫폼을 대상으로 한 프로젝트 구성](../ide/how-to-configure-projects-to-target-platforms.md)에는 64비트 애플리케이션으로 빌드할 프로젝트 구성에 대한 설명이 있습니다.
 
 ## <a name="debug-a-64-bit-application"></a>64비트 응용 프로그램 디버그
 

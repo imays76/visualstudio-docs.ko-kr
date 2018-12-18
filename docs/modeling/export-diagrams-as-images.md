@@ -13,17 +13,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6d51b660235a793182cd968423522ade35ce1a56
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7c1e7f7f642245fe4170c670fafd7366361e6de0
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946483"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858526"
 ---
 # <a name="export-diagrams-as-images"></a>다이어그램을 이미지로 내보내기
-Visual Studio에서 이해 관계자에 게, 사용자 또는 같은 버전의 Visual Studio를 사용 하지 않는 프로젝트 팀 멤버와 공유할 수 있도록 모델링 읽기 전용 형식에서 다이어그램을 저장할 수 있습니다.
+Visual Studio에서의 모델링 다이어그램 읽기 전용 형식 이해 관계자, 사용자 또는 같은 버전의 Visual Studio를 사용 하지 않는 프로젝트 팀 멤버와 공유할 수 있도록 저장할 수 있습니다.
 
- 이 기능을 지원하는 Visual Studio 버전을 확인하려면 [아키텍처 및 모델링 도구에 대한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.
+ 이 기능을 지 원하는 Visual Studio의 버전을 보려면을 참조 하세요 [아키텍처 및 모델링 도구에 대 한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)합니다.
 
 ### <a name="to-copy-a-diagram-or-part-of-a-diagram-to-another-application"></a>다이어그램 또는 다이어그램의 일부를 다른 응용 프로그램에 복사하려면
 
@@ -35,11 +35,11 @@ Visual Studio에서 이해 관계자에 게, 사용자 또는 같은 버전의 V
 
 ### <a name="to-save-a-modeling-diagram-as-an-xml-paper-specification-xps-file"></a>모델링 다이어그램을 XML Paper Specification(.xps) 파일로 저장하려면
 
-1.  에 **파일** 메뉴를 클릭 **인쇄** 열려는 **인쇄** 대화 상자.
+1.  에 **파일** 메뉴에서 클릭 **인쇄** 열려는 합니다 **인쇄** 대화 상자.
 
-2.  에 **이름** 목록에서 **Microsoft XPS Document Writer**, 클릭 하 고 **확인**합니다.
+2.  에 **이름을** 목록에서 **Microsoft XPS Document Writer**를 클릭 하 고 **확인**합니다.
 
-3.  에 **로 파일을 저장** 로 파일을 저장 대화 상자는 **XPS 문서 (\*.xps)** 파일입니다.
+3.  에 **파일로 저장** 으로 파일 저장 대화 상자를 **XPS 문서 (\*.xps)** 파일.
 
 ## <a name="net-framework-security"></a>.NET Framework 보안
 

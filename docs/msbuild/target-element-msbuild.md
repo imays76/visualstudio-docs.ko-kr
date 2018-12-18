@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1b886346a43e75d38a8ea8b6ed7a8b8d7391293
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 9085861418f11ed63f76a6493a6927c63530759b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152463"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918794"
 ---
 # <a name="target-element-msbuild"></a>Target 요소(MSBuild)
 순차적으로 실행할 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]의 작업 집합을 포함합니다.  
@@ -73,18 +73,18 @@ ms.locfileid: "39152463"
 
 ### <a name="child-elements"></a>자식 요소  
 
-|요소|설명|  
-|-------------|-----------------|  
-|[Task](../msbuild/task-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 작업의 인스턴스를 만들고 실행합니다. 대상에는 작업이 없을 수도 있고 하나 이상 있을 수도 있습니다.|  
-|[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|사용자 정의 `Property` 요소 집합을 포함합니다. .NET Framework 3.5부터는 `Target` 요소가 `PropertyGroup` 요소를 포함할 수 있습니다.|  
-|[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|사용자 정의 `Item` 요소 집합을 포함합니다. .NET Framework 3.5부터는 `Target` 요소가 `ItemGroup` 요소를 포함할 수 있습니다. 자세한 내용은 [항목](../msbuild/msbuild-items.md)을 참조하세요.|  
-|[OnError](../msbuild/onerror-element-msbuild.md)|실패한 작업의 `ContinueOnError` 특성이 ErrorAndStop 또는 `false`인 경우 하나 이상의 대상이 실행되도록 합니다. 대상에는 `OnError` 요소가 없을 수도 있고 하나 이상 있을 수도 있습니다. `OnError` 요소는 있는 경우 `Target` 요소의 마지막 요소여야 합니다.<br /><br /> `ContinueOnError` 특성에 대한 자세한 내용은 [Task 요소(MSBuild)](../msbuild/task-element-msbuild.md)를 참조하세요.|  
+| 요소 | 설명 |
+| - | - |
+| [Task](../msbuild/task-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 작업의 인스턴스를 만들고 실행합니다. 대상에는 작업이 없을 수도 있고 하나 이상 있을 수도 있습니다. |
+| [PropertyGroup](../msbuild/propertygroup-element-msbuild.md) | 사용자 정의 `Property` 요소 집합을 포함합니다. .NET Framework 3.5부터는 `Target` 요소가 `PropertyGroup` 요소를 포함할 수 있습니다. |
+| [ItemGroup](../msbuild/itemgroup-element-msbuild.md) | 사용자 정의 `Item` 요소 집합을 포함합니다. .NET Framework 3.5부터는 `Target` 요소가 `ItemGroup` 요소를 포함할 수 있습니다. 자세한 내용은 [항목](../msbuild/msbuild-items.md)을 참조하세요. |
+| [OnError](../msbuild/onerror-element-msbuild.md) | 실패한 작업의 `ContinueOnError` 특성이 ErrorAndStop 또는 `false`인 경우 하나 이상의 대상이 실행되도록 합니다. 대상에는 `OnError` 요소가 없을 수도 있고 하나 이상 있을 수도 있습니다. `OnError` 요소는 있는 경우 `Target` 요소의 마지막 요소여야 합니다.<br /><br /> `ContinueOnError` 특성에 대한 자세한 내용은 [Task 요소(MSBuild)](../msbuild/task-element-msbuild.md)를 참조하세요. |
 
 ### <a name="parent-elements"></a>부모 요소  
 
-|요소|설명|  
-|-------------|-----------------|  
-|[프로젝트](../msbuild/project-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일의 필수 루트 요소입니다.|  
+| 요소 | 설명 |
+| - | - |
+| [프로젝트](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일의 필수 루트 요소입니다. |
 
 ## <a name="remarks"></a>설명  
  실행할 첫 번째 대상은 런타임에 지정됩니다. 대상은 다른 대상에 대한 종속성을 포함할 수 있습니다. 예를 들어 배포용 대상은 컴파일용 대상에 종속됩니다. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 엔진은 종속성을 `DependsOnTargets` 특성에 나타나는 순서대로 왼쪽에서 오른쪽으로 실행합니다. 자세한 내용은 [대상](../msbuild/msbuild-targets.md)을 참조하세요.  

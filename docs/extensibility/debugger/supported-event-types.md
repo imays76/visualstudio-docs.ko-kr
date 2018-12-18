@@ -13,40 +13,40 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a8d43412ae475a2823ac645954a7f1d823e3429
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: 8f711b3a2e131baf5f7e480982ff34dc7ef89614
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276366"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949359"
 ---
 # <a name="supported-event-types"></a>지원 되는 이벤트 유형
 현재 visual Studio 디버깅 다음 이벤트 유형을 지원합니다.  
   
--   비동기 이벤트  
+- 비동기 이벤트  
   
-     (SDM)의 세션 디버그 관리자에 게 알림 및 디버깅 중인 응용 프로그램의 상태가 변경 되는 IDE입니다. 이러한 이벤트는 SDM 및 IDE 레저에서 처리 됩니다. 이벤트를 처리 한 후 회신이 없으면 디버그 엔진 (DE)에 전송 됩니다. [IDebugOutputStringEvent2](../../extensibility/debugger/reference/idebugoutputstringevent2.md) 하 고 [IDebugMessageEvent2](../../extensibility/debugger/reference/idebugmessageevent2.md) 인터페이스는 비동기 이벤트의 예입니다.  
+   (SDM)의 세션 디버그 관리자에 게 알림 및 디버깅 중인 응용 프로그램의 상태가 변경 되는 IDE입니다. 이러한 이벤트는 SDM 및 IDE 레저에서 처리 됩니다. 이벤트를 처리 한 후 회신이 없으면 디버그 엔진 (DE)에 전송 됩니다. [IDebugOutputStringEvent2](../../extensibility/debugger/reference/idebugoutputstringevent2.md) 하 고 [IDebugMessageEvent2](../../extensibility/debugger/reference/idebugmessageevent2.md) 인터페이스는 비동기 이벤트의 예입니다.  
   
--   동기 이벤트  
+- 동기 이벤트  
   
-     SDM 및 디버깅 중인 응용 프로그램의 상태가 변경 되는 IDE에 게 알립니다. 이러한 이벤트와 비동기 이벤트 간의 유일한 차이점은 회신을 이용 하 여 전송 되지 않는다는 합니다 [ContinueFromSynchronousEvent](../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md) 메서드.  
+   SDM 및 디버깅 중인 응용 프로그램의 상태가 변경 되는 IDE에 게 알립니다. 이러한 이벤트와 비동기 이벤트 간의 유일한 차이점은 회신을 이용 하 여 전송 되지 않는다는 합니다 [ContinueFromSynchronousEvent](../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md) 메서드.  
   
-     동기 이벤트를 전송 하는 것은 사용자 DE IDE 수신 하 고 이벤트를 처리 하는 후 처리를 계속 하려면 필요한 경우에 유용 합니다.  
+   동기 이벤트를 전송 하는 것은 사용자 DE IDE 수신 하 고 이벤트를 처리 하는 후 처리를 계속 하려면 필요한 경우에 유용 합니다.  
   
--   동기 이벤트를 중지 또는 중지 이벤트  
+- 동기 이벤트를 중지 또는 중지 이벤트  
   
-     알림 SDM 및 IDE 디버깅 중인 응용 프로그램 코드를 실행을 중지 했습니다. 메서드를 사용 하 여 중지 이벤트를 보낼 때 [이벤트](../../extensibility/debugger/reference/idebugeventcallback2-event.md)서 [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) 매개 변수는 필수입니다. 중지 이벤트는 다음 방법 중 하나를 호출 하 여 계속 합니다.  
+   알림 SDM 및 IDE 디버깅 중인 응용 프로그램 코드를 실행을 중지 했습니다. 메서드를 사용 하 여 중지 이벤트를 보낼 때 [이벤트](../../extensibility/debugger/reference/idebugeventcallback2-event.md)서 [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) 매개 변수는 필수입니다. 중지 이벤트는 다음 방법 중 하나를 호출 하 여 계속 합니다.  
   
-    -   [실행](../../extensibility/debugger/reference/idebugprogram2-execute.md)  
+  - [Execute](../../extensibility/debugger/reference/idebugprogram2-execute.md)  
   
-    -   [Step](../../extensibility/debugger/reference/idebugprogram2-step.md)  
+  - [Step](../../extensibility/debugger/reference/idebugprogram2-step.md)  
   
-    -   [Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)  
+  - [Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)  
   
-     인터페이스 [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) 하 고 [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) 은 중지 이벤트의 예입니다.  
+    인터페이스 [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) 하 고 [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) 은 중지 이벤트의 예입니다.  
   
-    > [!NOTE]
-    >  비동기 중지 이벤트 지원 되지 않습니다. 만들어질 비동기 중지 이벤트를 전송 하려면 오류가 발생 합니다.  
+  > [!NOTE]
+  >  비동기 중지 이벤트 지원 되지 않습니다. 만들어질 비동기 중지 이벤트를 전송 하려면 오류가 발생 합니다.  
   
 ## <a name="discussion"></a>토론  
  이벤트의 실제 구현에 독일의 디자인에 따라 달라 집니다. 전송 된 각 이벤트의 종류는 DE를 디자인할 때 설정 되는 해당 특성에 의해 결정 됩니다. 예를 들어, 하나의 DE 보낼 수 있습니다는 [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) 중지 이벤트로 보낼 수 있습니다 다른 동안 비동기 이벤트입니다.  

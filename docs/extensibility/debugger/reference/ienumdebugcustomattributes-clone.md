@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8dd2c329b80d8c8eaf697b484274c39dca65ea1f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4dcd2966fe56db2e00d52cd62261935a9d29df32
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120428"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930520"
 ---
 # <a name="ienumdebugcustomattributesclone"></a>IEnumDebugCustomAttributes::Clone
-현재 열거자와 동일한 열거 상태가 포함 하는 열거자를 만듭니다.  
+현재 열거자와 열거 상태가 같은 포함 하는 열거자를 만듭니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -44,10 +44,10 @@ int Clone(
  [out] 이 열거형은 개별 개체로 복사본을 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 열거형의 복사본이 메서드는 한 번에 원본과 동일한 상태를 있습니다. 그러나 원본 및 복사본의 상태 및는 별개임 개별적으로 변경할 수 있습니다.  
+ 열거형의 복사본을이 메서드는 시간에 원본과 동일한 상태를 있습니다. 그러나 복사본의 및는 원래 상태는 각각 별도 이며 개별적으로 변경할 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)

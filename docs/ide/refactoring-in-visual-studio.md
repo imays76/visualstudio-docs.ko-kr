@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 코드 리팩터링
+title: 리팩터링
 ms.date: 01/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 75945e1a3e66951021866370d043a645c8918541
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 3275e03139b9befff0ec0e1f817bc8b54532bb72
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447689"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159434"
 ---
 # <a name="refactor-code"></a>코드 리팩터링
 
@@ -29,6 +29,7 @@ Visual Studio에서 다양한 프로그래밍 언어에 다양한 리팩터링 �
 ## <a name="see-also"></a>참고 항목
 
 - [빠른 작업](../ide/quick-actions.md)
-- [Visual Studio IDE](../ide/visual-studio-ide.md)
+- [Visual Studio IDE](../get-started/visual-studio-ide.md)
 - [코드 편집기의 기능](../ide/writing-code-in-the-code-and-text-editor.md)
 - [변경 내용 미리 보기](../ide/preview-changes.md)
+- [리팩터링(Mac용 Visual Studio)](/visualstudio/mac/refactoring)

@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 32d4174c5b190278367f0147806fe007beaa72c0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9634d16a89670b92e616e4bd6b878f41166aea2b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101461"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833878"
 ---
 # <a name="adprocessid"></a>AD_PROCESS_ID
-프로세스 ID는 시스템 ID 또는 GUID 일 수를 지정 합니다.  
+시스템 ID 또는 GUID 일 수 있는 프로세스 ID를 지정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -49,10 +49,10 @@ public struct AD_PROCESS_ID {
   
 ## <a name="members"></a>멤버  
  `ProcessIdType`  
- 값은 [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md) 해석 하는 방법을 지정 하는 열거형의 `ProcessId` union (또는 구조체의 멤버에 액세스를 관리 코드용)입니다.  
+ 값을 [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md) 해석 하는 방법을 지정 하는 열거형을 `ProcessId` 공용 구조체 (또는 구조체의 멤버에 액세스를 관리 코드용)입니다.  
   
  dwProcessId  
- 시스템에서의 값으로 프로세스 ID입니다.  
+ 시스템에서 값으로 프로세스 ID입니다.  
   
  guidProcessId  
  GUID로 프로세스 ID입니다.  
@@ -61,21 +61,21 @@ public struct AD_PROCESS_ID {
  안쪽 여백입니다.  
   
 ## <a name="remarks"></a>설명  
- 이 구조는 다음 방법에 전달 됩니다.  
+ 이 구조는 다음 메서드에 전달 됩니다.  
   
--   [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)  
+- [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)  
   
--   [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)  
+- [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)  
   
--   [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)  
+- [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)  
   
--   [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)  
+- [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)  
   
- 다음 방법 중에서 반환 됩니다.  
+  다음 방법 중에서 반환 됩니다.  
   
--   [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)  
+- [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)  
   
--   [GetHostId](../../../extensibility/debugger/reference/idebugprogramhost2-gethostid.md)  
+- [GetHostId](../../../extensibility/debugger/reference/idebugprogramhost2-gethostid.md)  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  

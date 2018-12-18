@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 웹 서비스 테스트 만들기
+title: 웹 서비스 테스트 만들기
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,22 +12,24 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 85759cc5f9297ba2bb0706352d788ba619a8021c
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 99d4c413dcb02efd56bf89dae3aa24b7f6905216
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380670"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53053401"
 ---
 # <a name="how-to-create-a-web-service-test"></a>방법: 웹 서비스 테스트 만들기
 
 웹 성능 테스트를 사용하여 웹 서비스를 테스트할 수 있습니다. **요청 삽입** 및 **웹 서비스 요청 삽입** 옵션을 사용하면 **웹 성능 테스트 편집기**에서 개별 요청을 사용자 지정하여 웹 서비스 페이지를 찾을 수 있습니다. 일반적으로 이러한 페이지는 웹 응용 프로그램에 표시되지 않습니다. 따라서 이러한 페이지에 액세스하려면 요청을 사용자 지정해야 합니다.
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
 다음 절차에서는 Commerce 시작 키트 내에 포함된 웹 서비스를 사용합니다. [ASP.NET Commerce 시작 키트](http://go.microsoft.com/fwlink/?LinkId=181469)에서 다운로드할 수 있습니다.
 
- **요구 사항**
+**요구 사항**
 
--   Visual Studio Enterprise
+Visual Studio Enterprise
 
 ## <a name="to-test-a-web-service"></a>웹 서비스를 테스트하려면
 

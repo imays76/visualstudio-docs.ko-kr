@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4079c688358f3e7deedd28b5eb05e556192bfe6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 14db7869717a2edf1ac64be744ab1f6058455c1a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125767"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845318"
 ---
 # <a name="threadproperties"></a>THREADPROPERTIES
-스레드 속성을 설명 합니다.  
+스레드 속성을 설명합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -53,7 +53,7 @@ public struct THREADPROPERTIES {
   
 ## <a name="members"></a>멤버  
  dwFields  
- 플래그의 조합 된 [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) 이 구조체의 필드를 사용할 수를 설명 하는 열거형입니다.  
+ 플래그의 조합을 합니다 [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) 이 구조의 필드는 유효한 설명 하는 열거형입니다.  
   
  dwThreadId  
  스레드 id입니다.  
@@ -62,19 +62,19 @@ public struct THREADPROPERTIES {
  스레드 수를 일시 중단 합니다.  
   
  dwThreadState  
- 값은 [THREADSTATE](../../../extensibility/debugger/reference/threadstate.md) 운영 스레드의 상태를 나타내는 열거형입니다.  
+ 값을 [THREADSTATE](../../../extensibility/debugger/reference/threadstate.md) 운영 스레드의 상태를 나타내는 열거형입니다.  
   
  bstrPriority  
- 스레드 우선 순위;를 지정 하는 문자열 예를 들어 "보통 이상", "Normal" 또는 "시간이 중요 한"입니다.  
+ 스레드 우선 순위;를 지정 하는 문자열 예를 들어, "위에 Normal", "Normal" 또는 "시간이 중요 한"입니다.  
   
  bstName  
  스레드 이름입니다.  
   
  bstrLocation  
- 일반적으로 실행이 중단 현재 메서드의 이름으로 표시 된 스레드 위치 (일반적으로: 최상위 스택 프레임)입니다.  
+ 일반적으로 실행이 중단 현재 메서드의 이름으로 표시 된 스레드 위치 (일반적으로 최상위 스택 프레임)입니다.  
   
 ## <a name="remarks"></a>설명  
- 이 구조에 대 한 호출에 의해 채워진는 [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) 메서드. 따라서 반환 되는 정보는 일반적으로 채우는 사용는 **스레드** 창.  
+ 이 구조에 대 한 호출에 의해 채워진 합니다 [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) 메서드. 따라서 반환 된 정보는 일반적으로 채우는 사용 합니다 **스레드** 창입니다.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  

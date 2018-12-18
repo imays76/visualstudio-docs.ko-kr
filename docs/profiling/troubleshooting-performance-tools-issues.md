@@ -10,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db48b940fecb27dd4f41b5fc56f32ee2cc4f5f02
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 531080945413bbc0959d2cdf91e2096c1e51f61d
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572347"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669332"
 ---
 # <a name="troubleshoot-performance-tools-issues"></a>성능 도구 문제 해결
 프로파일링 도구를 사용할 때는 다음 문제 중 하나가 발생할 수 있습니다.  
   
--   [프로파일링 도구에서 데이터가 수집되지 않음](#NoDataCollected)  
+-   [프로파일링 도구에서 데이터가 수집되지 않음](#no-data-is-collected-by-the-profiling-tools)  
   
--   [성능 뷰 및 보고서에서 함수 이름에 숫자가 표시됨](#NoSymbols)  
+-   [성능 뷰 및 보고서에서 함수 이름에 숫자가 표시됨](#performance-views-and-reports-display-numbers-for-function-names)  
   
 ## <a name="no-data-is-collected-by-the-profiling-tools"></a>프로파일링 도구에서 데이터가 수집되지 않음  
  응용 프로그램을 프로파일링한 후에 프로파일링 데이터(.*vsp*) 파일이 생성되지 않으며 **출력** 창이나 명령 창에 다음 경고가 표시됩니다.  

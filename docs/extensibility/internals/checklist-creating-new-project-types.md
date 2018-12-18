@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 69eaf52f9864b61cfc5045da9dbaf0ca6b4410b9
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 3da952e22515b48f06fdc50b34b2eb49f5709cc2
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511667"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370577"
 ---
 # <a name="checklist-create-new-project-types"></a>검사 목록: 새 프로젝트 형식 만들기
 새 프로젝트 형식을 만들려면 몇 가지 작업을 완료 해야 합니다. 이러한 작업에 대 한 지침을 제공 하는 다음 검사 목록:  
@@ -36,7 +36,7 @@ ms.locfileid: "39511667"
   
     -   새 프로젝트를 만들고 기존 프로젝트를 열고 관리 하려면 프로젝트 팩터리입니다. 자세한 내용은 [프로젝트 팩터리를 사용 하 여 프로젝트 인스턴스를 만들](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)합니다.  
   
-    -   프로젝트 계층 구조 및 명령 처리 합니다. 자세한 내용은 [프로젝트 형식 (c + +)를 구현 하려면 프로젝트 클래스를 사용 하 여 HierUtil7](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346), [프로젝트 모델의 요소](../../extensibility/internals/elements-of-a-project-model.md), [프로젝트 모델 핵심 구성 요소](../../extensibility/internals/project-model-core-components.md), 및 [ Menucommand 및 OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md)합니다.  
+    -   프로젝트 계층 구조 및 명령 처리 합니다. 자세한 내용은 [프로젝트 형식 (c + +)를 구현 하려면 프로젝트 클래스를 사용 하 여 HierUtil7](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346), [프로젝트 모델의 요소](../../extensibility/internals/elements-of-a-project-model.md), [프로젝트 모델 핵심 구성 요소](../../extensibility/internals/project-model-core-components.md), 및 [ Menucommand 및 OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md)합니다.  
   
     -   프로젝트 항목 관리, 프로젝트에 추가 하는 등의 **새 프로젝트** 대화 상자. 자세한 내용은 [프로젝트 및 프로젝트 항목 템플릿 추가](../../extensibility/internals/adding-project-and-project-item-templates.md) 하 고 [프로젝트 및 항목 템플릿을 등록](../../extensibility/internals/registering-project-and-item-templates.md)합니다.  
   

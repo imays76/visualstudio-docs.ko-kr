@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 .NET Framework 대상 지정
+title: .NET Framework 대상 지정
 ms.date: 02/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: cba93b86d6ecebf249e11d18bd6e4b6b86e59fda
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: e0004678b62b9deba97d31815de577721008f77d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425091"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058300"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visual Studio 멀티 타기팅 개요
 
@@ -85,4 +85,4 @@ Visual Studio에서는 프로젝트에서 대상으로 하려는 .NET Framework�
 ## <a name="see-also"></a>참고 항목
 
 - [멀티 타기팅(MSBuild)](../msbuild/msbuild-multitargeting-overview.md)
-- [방법: 대상 프레임워크 및 플랫폼 도구 집합 수정(C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)
+- [방법: 대상 프레임워크 및 플랫폼 도구 세트 수정(C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)

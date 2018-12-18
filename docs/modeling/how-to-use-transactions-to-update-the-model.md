@@ -9,17 +9,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: d826787a028aba4f5397ce5577acf60f67120973
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 97eb050bb99c522f5c5e97ea3355f3146086c29e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567343"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926295"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>방법: 트랜잭션을 사용하여 모델 업데이트
 트랜잭션에 저장소에 대 한 변경 내용을 그룹으로 처리할지 있는지 확인 합니다. 그룹화 된 변경 내용은 커밋 또는 단일 단위로 롤백될 수 있습니다.
 
- 프로그램 코드를 수정, 추가 또는 저장소에 있는 모든 요소를 삭제 될 때마다 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualization and Modeling SDK 트랜잭션 내에서 이렇게 해야 합니다. 활성 인스턴스가 있어야 <xref:Microsoft.VisualStudio.Modeling.Transaction> 변경이 발생할 때 저장소와 연결 합니다. 이 모든 모델 요소, 관계, 모양, 다이어그램 및 해당 속성에 적용 됩니다.
+ 프로그램 코드 수정, 추가, Visual Studio Visualization and Modeling SDK 저장소의 임의 요소가 삭제 될 때마다 해당 트랜잭션 내에서 수행 해야 합니다. 활성 인스턴스가 있어야 <xref:Microsoft.VisualStudio.Modeling.Transaction> 변경이 발생할 때 저장소와 연결 합니다. 이 모든 모델 요소, 관계, 모양, 다이어그램 및 해당 속성에 적용 됩니다.
 
  트랜잭션 메커니즘을 통해 일관 되지 않은 상태를 방지할 수 있습니다. 트랜잭션 중에 오류가 발생 하는 경우 모든 변경 내용이 롤백됩니다. 사용자는 실행 취소 명령의 수행 하는 경우에 단일 단계로 각 최근 트랜잭션 처리 됩니다. 사용자는 개별 트랜잭션에 명시적으로 저장 하지 않는 한 최근의 변경, 부분을 취소할 수 없습니다.
 
@@ -101,5 +101,4 @@ if (!this.Store.InUndoRedoOrRollback) {...}
 
 ```csharp
 if (!this.Store.InSerializationTransaction) {...}
-
 ```

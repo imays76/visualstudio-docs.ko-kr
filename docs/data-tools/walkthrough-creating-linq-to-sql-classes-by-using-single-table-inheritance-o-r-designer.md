@@ -13,31 +13,31 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 20565c798e9c94cb40a39deb4a80f9a83d67e161
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 943b75c9c5f9c0c32ab02b5e73c07282728e0beb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174941"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864733"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>연습: 단일 테이블 상속 (O/R 디자이너)를 사용 하 여 LINQ to SQL 클래스 만들기
 합니다 [Visual Studio에서 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md) 관계형 시스템에서 일반적으로 구현 되므로 단일 테이블 상속을 지원 합니다. 이 연습에서 제공한 일반 단계를 다룹니다를 [방법: O/R 디자이너를 사용 하 여 상속 구성](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) 항목에서 상속 사용을 보여 주기 위해 몇 가지 실제 데이터를 제공 하 고는 [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]합니다.
 
  이 연습에서는 다음 작업을 수행할 수 있습니다.
 
--   데이터베이스 테이블을 만들고 그 안에 데이터를 추가합니다.
+- 데이터베이스 테이블을 만들고 그 안에 데이터를 추가합니다.
 
--   Windows Forms 응용 프로그램을 만듭니다.
+- Windows Forms 응용 프로그램을 만듭니다.
 
--   [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 파일을 프로젝트에 추가합니다.
+- [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 파일을 프로젝트에 추가합니다.
 
--   새 엔터티 클래스를 만듭니다.
+- 새 엔터티 클래스를 만듭니다.
 
--   상속을 사용하도록 엔터티 클래스를 구성합니다.
+- 상속을 사용하도록 엔터티 클래스를 구성합니다.
 
--   상속된 클래스를 쿼리합니다.
+- 상속된 클래스를 쿼리합니다.
 
--   Windows Form에 데이터를 표시합니다.
+- Windows Form에 데이터를 표시합니다.
 
 ## <a name="create-a-table-to-inherit-from"></a>상속 하는 테이블 만들기
  만든 작은 상속의 작동 원리를 보려면 `Person` 테이블, 기본 클래스로 사용을 만든 다음는 `Employee` 에서 상속 된 개체입니다.
@@ -191,6 +191,6 @@ ms.locfileid: "37174941"
 
 - [Visual Studio에서 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [연습:는 LINQ to SQL 클래스 (O-r 디자이너) 만들기](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
-- [방법: 업데이트, 삽입 및 삭제 (O/R 디자이너)를 수행 하는 저장된 프로시저를 할당 합니다.](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
+- [방법: 저장 프로시저를 할당하여 업데이트, 삽입 및 삭제 수행(O/R 디자이너)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [방법: Visual Basic 또는 C#에서 개체 모델 생성](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)

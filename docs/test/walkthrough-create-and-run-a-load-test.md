@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 부하 테스트 만들기 및 실행
+title: 부하 테스트 만들기 및 실행
 ms.date: 10/01/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cbe16b5e0b711783c9dfd12ab9a652fb4055fc36
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: a5782985406d9b2daa53c1fd6ecefb3f31cc0104
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381018"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055772"
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>연습: 단위 테스트를 포함하는 부하 테스트 만들기 및 실행
 
 이 연습에서는 단위 테스트를 포함하는 부하 테스트를 만듭니다.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 이 연습에서는 Visual Studio Enterprise를 사용하여 부하 테스트를 만든 다음 실행하는 과정을 단계별로 설명합니다. 부하 테스트는 웹 성능 테스트와 단위 테스트의 컨테이너입니다. **부하 테스트 새로 만들기 마법사**를 사용하여 부하 테스트를 만듭니다.
 
@@ -35,13 +37,13 @@ ms.locfileid: "39381018"
 
 -   부하 테스트를 실행합니다.
 
--   [연습: 관리 코드에 대한 단위 테스트 만들기 및 실행](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)의 단계를 수행하여 일부 단위 테스트가 있는 웹 성능 및 부하 테스트 프로젝트를 포함하는 간단한 C# 클래스 라이브러리를 만듭니다.
+-   다음의 단계 수행 [연습: 관리 코드에 대한 단위 테스트 만들기 및 실행](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) 일부 단위 테스트가 있는 웹 성능 및 부하 테스트 프로젝트를 포함하는 간단한 C# 클래스 라이브러리를 만듭니다.
 
 ## <a name="create-a-load-test-containing-unit-tests-using-the-new-load-test-wizard"></a>부하 테스트 새로 만들기 마법사를 사용하여 단위 테스트를 포함하는 부하 테스트 만들기
 
 ### <a name="to-start-the-new-load-test-wizard"></a>부하 테스트 새로 만들기 마법사를 시작하려면
 
-1.  [연습: 관리 코드에 대한 단위 테스트 만들기 및 실행](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)에서 만든 Bank 솔루션을 엽니다.
+1.  다음 [에서 만든 Bank 솔루션을 엽니다. 연습: 관리 코드에 대한 단위 테스트 만들기 및 실행](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
 2.  **솔루션 탐색기**에서 은행 솔루션 노드의 바로 가기 메뉴를 열고 **추가**를 선택한 다음, **새 프로젝트**를 선택합니다.
 

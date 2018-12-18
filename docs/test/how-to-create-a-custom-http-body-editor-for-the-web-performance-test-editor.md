@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 웹 성능 테스트 편집기에 대한 사용자 지정 HTTP 본문 편집기 만들기
+title: 웹 성능 테스트 편집기에 대한 사용자 지정 HTTP 본문 편집기 만들기
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,18 +10,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 187822c0217e6aca4f8828c82274520a35e8afe2
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 83ed50b5f242f5a869e1c0a69bf6a0674bdf4d69
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380657"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068411"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>방법: 웹 성능 테스트 편집기에 대한 사용자 지정 HTTP 본문 편집기 만들기
 
 SOAP, REST, asmx, wcf, RIA 및 기타 웹 서비스 요청 형식과 같은 웹 서비스 요청의 문자열 본문 콘텐츠나 이진 본문 콘텐츠를 편집하는 데 사용할 수 있는 사용자 지정 콘텐츠 편집기를 만들 수 있습니다.
 
- 다음 종류의 편집기를 구현할 수 있습니다.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+다음 종류의 편집기를 구현할 수 있습니다.
 
 -   **문자열 콘텐츠 편집기** 이 편집기는 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> 인터페이스를 사용하여 구현합니다.
 
@@ -33,31 +35,31 @@ SOAP, REST, asmx, wcf, RIA 및 기타 웹 서비스 요청 형식과 같은 웹 
 
 ### <a name="create-a-user-control-by-using-a-windows-control-library-project"></a>Windows 컨트롤 라이브러리 프로젝트를 사용하여 사용자 정의 컨트롤 만들기
 
-1.  Visual Studio의 **파일** 메뉴에서 **새로 만들기**를 선택한 다음, **프로젝트**를 선택합니다.
+1. Visual Studio의 **파일** 메뉴에서 **새로 만들기**를 선택한 다음, **프로젝트**를 선택합니다.
 
-     **새 프로젝트** 대화 상자가 표시됩니다.
+    **새 프로젝트** 대화 상자가 표시됩니다.
 
-2.  **설치된 템플릿**에서 원하는 프로그래밍 언어에 따라 **Visual Basic** 또는 **Visual C#** 을 선택한 다음, **Windows**를 선택합니다.
+2. **설치된 템플릿**에서 원하는 프로그래밍 언어에 따라 **Visual Basic** 또는 **Visual C#** 을 선택한 다음, **Windows**를 선택합니다.
 
-    > [!NOTE]
-    > 이 샘플에서는 Visual C#을 사용합니다.
+   > [!NOTE]
+   > 이 샘플에서는 Visual C#을 사용합니다.
 
-3.  템플릿 목록에서 **Windows Forms 컨트롤 라이브러리**를 선택합니다.
+3. 템플릿 목록에서 **Windows Forms 컨트롤 라이브러리**를 선택합니다.
 
-4.  **이름** 텍스트 상자에서 이름(예: `MessageEditors`)을 입력하고 **확인**을 선택합니다.
+4. **이름** 텍스트 상자에서 이름(예: `MessageEditors`)을 입력하고 **확인**을 선택합니다.
 
-    > [!NOTE]
-    > 이 샘플에서는 MessageEditors를 사용합니다.
+   > [!NOTE]
+   > 이 샘플에서는 MessageEditors를 사용합니다.
 
-     프로젝트가 새 솔루션에 추가되고 *UserControl1.cs*라는 <xref:System.Windows.Forms.UserControl>이 디자이너에 표시됩니다.
+    프로젝트가 새 솔루션에 추가되고 *UserControl1.cs*라는 <xref:System.Windows.Forms.UserControl>이 디자이너에 표시됩니다.
 
-5.  **도구 상자**의 **공용 컨트롤** 범주에서 <xref:System.Windows.Forms.RichTextBox>를 UserControl1로 끌어 옵니다.
+5. **도구 상자**의 **공용 컨트롤** 범주에서 <xref:System.Windows.Forms.RichTextBox>를 UserControl1로 끌어 옵니다.
 
-6.  <xref:System.Windows.Forms.RichTextBox> 컨트롤의 오른쪽 위에 있는 작업 태그 문자 모양(![스마트 태그 문자 모양](../test/media/vs_winformsmttagglyph.gif))을 선택한 다음, **부모 컨테이너에서 도킹**을 선택합니다.
+6. <xref:System.Windows.Forms.RichTextBox> 컨트롤의 오른쪽 위에 있는 작업 태그 문자 모양(![스마트 태그 문자 모양](../test/media/vs_winformsmttagglyph.gif))을 선택한 다음, **부모 컨테이너에서 도킹**을 선택합니다.
 
-7.  **솔루션 탐색기**에서 Windows Forms 라이브러리 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다.
+7. **솔루션 탐색기**에서 Windows Forms 라이브러리 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다.
 
-8.  **속성**에서 **응용 프로그램** 탭을 선택합니다.
+8. **속성**에서 **응용 프로그램** 탭을 선택합니다.
 
 9. **대상 프레임워크** 드롭다운 목록에서 **.NET Framework 4**를 선택합니다.
 
@@ -95,9 +97,9 @@ SOAP, REST, asmx, wcf, RIA 및 기타 웹 서비스 요청 형식과 같은 웹 
 
 18. 다음 속성을 추가하여 RichTextBox1의 텍스트를 가져오거나 설정할 수 있도록 합니다. <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> 인터페이스는 EditString을 사용하고 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin>은 EditByteArray를 사용합니다.
 
-   ```csharp
-   public String EditString
-   {
+    ```csharp
+    public String EditString
+    {
        get
        {
            return this.richTextBox1.Text;
@@ -106,10 +108,10 @@ SOAP, REST, asmx, wcf, RIA 및 기타 웹 서비스 요청 형식과 같은 웹 
        {
            this.richTextBox1.Text = value;
        }
-   }
+    }
 
-   public byte[] EditByteArray
-   {
+    public byte[] EditByteArray
+    {
        get
        {
            return System.Convert.FromBase64String(richTextBox1.Text);
@@ -118,8 +120,8 @@ SOAP, REST, asmx, wcf, RIA 및 기타 웹 서비스 요청 형식과 같은 웹 
        {
            richTextBox1.Text = System.Convert.ToBase64String(value, 0, value.Length);
        }
-   }
-   ```
+    }
+    ```
 
 ## <a name="add-a-class-to-the-windows-control-library-project"></a>Windows 컨트롤 라이브러리 프로젝트에 클래스 추가
 

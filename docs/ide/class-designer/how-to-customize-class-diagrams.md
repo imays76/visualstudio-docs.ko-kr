@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ed2a6112d59e5d433201a417d8d85fd6683b36d
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 4546324a5789c408c22ac610d7a878ad990af2a1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33956759"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913217"
 ---
 # <a name="how-to-customize-class-diagrams"></a>방법: 클래스 다이어그램 사용자 지정
 
@@ -108,7 +108,7 @@ ms.locfileid: "33956759"
 
 2. 숨겨진 형식 연결 또는 형식 상속이 있는 형식을 마우스 오른쪽 단추로 클릭합니다.
 
- 형식 연결 선에 대해 **모든 멤버 표시**를 클릭하고 형식 상속 선에 대해 **기본 클래스 표시** 또는 **파생 클래스 표시**를 클릭합니다.
+   형식 연결 선에 대해 **모든 멤버 표시**를 클릭하고 형식 상속 선에 대해 **기본 클래스 표시** 또는 **파생 클래스 표시**를 클릭합니다.
 
 ## <a name="remove-a-shape-from-a-class-diagram"></a>클래스 다이어그램에서 모양 제거
 형식의 내부 코드에 영향을 주지 않으면서도 클래스 다이어그램에서 형식 모양을 제거할 수 있습니다. 클래스 다이어그램에서 형식 모양을 제거하면 해당 다이어그램만 영향을 받습니다. 해당 형식을 정의하는 기본 코드와 해당 형식을 표시하는 다른 다이어그램은 영향을 받지 않습니다.

@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed07afde1db8aa99ce8edea093abd9bf25c069d6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 619c96a2e38302ff4f40a8376116a67c5664743c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102745"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834302"
 ---
 # <a name="idebugcustomattributequery2iscustomattributedefined"></a>IDebugCustomAttributeQuery2::IsCustomAttributeDefined
-사용자 지정 특성 이름으로 있는지 확인 합니다.  
+사용자 지정 특성을 이름별 있는지 여부를 결정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -41,13 +41,13 @@ int IsCustomAttributeDefined(
   
 #### <a name="parameters"></a>매개 변수  
  `pszCustomAttributeName`  
- [in] 찾을 사용자 지정 특성의 이름을 포함 하는 문자열입니다.  
+ [in] 검색할 사용자 지정 특성의 이름을 포함 하는 문자열입니다.  
   
 ## <a name="return-value"></a>반환 값  
- S_ok이 고 사용자 지정 특성은이 필드에 정의 되어 있으면 그렇지 않으면 반환 S_FALSE를 반환 합니다.  
+ S_ok이 고, 사용자 지정 특성은이 필드에 정의 되어 있으면 그렇지 S_FALSE를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 사용자 지정 특성에 연결 된 특성 바이트를 가져오려면 호출는 [GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md) 메서드.  
+ 사용자 지정 특성을 사용 하 여 연결 된 특성 바이트를 가져오려면 호출 합니다 [GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md) 메서드.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)

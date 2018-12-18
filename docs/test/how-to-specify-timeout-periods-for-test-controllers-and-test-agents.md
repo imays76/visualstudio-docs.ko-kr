@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 테스트 컨트롤러 및 테스트 에이전트에 대한 시간 제한 기간
+title: 테스트 컨트롤러 및 테스트 에이전트의 시간 제한 기간
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,36 +13,38 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 888d446d82a2f7b5fb6d8638a1c7472378b014de
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 53127df8837f9f86d49cb5d5fa36ca3b50f401fa
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379262"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064681"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>방법: 테스트 컨트롤러 및 테스트 에이전트의 시간 제한 기간 지정
 
 테스트 컨트롤러와 테스트 에이전트 모두에는 모두 상호 간에 또는 데이터 소스로부터 응답을 받을 때까지 기다릴 시간을 지정하는 몇 가지 제한 시간 설정이 있으며 이 시간이 지나면 테스트가 실패하고 오류가 발생합니다. 경우에 따라 토폴로지 또는 다른 환경 문제의 요구 사항을 충족하기 위해 이 제한 시간 값을 편집해야 할 수 있습니다. 제한 시간 값을 편집하려면 다음 절차에서 설명하는 대로 테스트 컨트롤러나 테스트 에이전트와 연결된 XML 구성 파일을 편집합니다.
 
- 테스트 컨트롤러 또는 테스트 에이전트의 다양한 제한 시간 설정을 편집하려면 아래 표의 키 이름 및 값을 사용하여 다음 구성 파일을 수정합니다.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+테스트 컨트롤러 또는 테스트 에이전트의 다양한 제한 시간 설정을 편집하려면 아래 표의 키 이름 및 값을 사용하여 다음 구성 파일을 수정합니다.
 
 -   테스트 컨트롤러: *QTController.exe.config*
 
     |키 이름|설명|값|
-    |--------------|-----------------|-----------|
+    |-|-----------------|-|
     |AgentConnectionTimeoutInSeconds|에이전트 ping 요청을 기다릴 시간(초)으로, 이후에는 연결이 끊어진 것으로 간주됩니다.|"n"초|
     |AgentSyncTimeoutInSeconds|동기화 테스트 실행을 시작할 때 모든 에이전트가 동기화되기를 기다릴 시간(초)으로, 이후에는 실행이 중단됩니다.|"n"초|
-    |AgentInitializeTimeout|테스트 실행 시작 시 모든 에이전트 및 해당 데이터 수집기가 초기화되기를 기다릴 시간(초)으로, 이후에는 테스트 실행이 중단됩니다. 데이터 수집기를 사용하는 경우 이 값은 충분히 커야 합니다.|"n"초 기본값: "120"(2분)|
-    |AgentCleanupTimeout|모든 에이전트 및 해당 데이터 수집기가 정리되기를 기다릴 시간(초)으로, 이후에는 테스트 실행이 완료됩니다. 데이터 수집기를 사용하는 경우 이 값은 충분히 커야 합니다.|"n"초 기본값: "120"(2분)|
+    |AgentInitializeTimeout|테스트 실행 시작 시 모든 에이전트 및 해당 데이터 수집기가 초기화되기를 기다릴 시간(초)으로, 이후에는 테스트 실행이 중단됩니다. 데이터 수집기를 사용하는 경우 이 값은 충분히 커야 합니다.|"n"초 기본값: "120"(2분).|
+    |AgentCleanupTimeout|모든 에이전트 및 해당 데이터 수집기가 정리되기를 기다릴 시간(초)으로, 이후에는 테스트 실행이 완료됩니다. 데이터 수집기를 사용하는 경우 이 값은 충분히 커야 합니다.|"n"초 기본값: "120"(2분).|
 
 -   테스트 에이전트: *QTAgentService.exe.config*
 
     |키 이름|설명|값|
-    |--------------|-----------------|-----------|
-    |ControllerConnectionPeriodInSeconds|컨트롤러에 연결을 시도할 간격을 나타내는 시간(초)입니다.|"n"초 기본값: "30"(30초)|
-    |RemotingTimeoutSeconds|원격 호출이 지속될 수 있는 최대 시간(초)입니다.|"n"초 기본값: "600"(10분)|
-    |StopTestRunCallTimeoutInSeconds|호출을 통해 테스트 실행이 중지되기를 기다릴 시간(초)입니다.|"n"초 기본값: "120"(2분)|
-    |GetCollectorDataTimeout|데이터 수집기를 기다릴 시간(초)입니다.|"n"초 기본값: "300"(5분)|
+    |-|-----------------|-|
+    |ControllerConnectionPeriodInSeconds|컨트롤러에 연결을 시도할 간격을 나타내는 시간(초)입니다.|"n"초 기본값: "30"(30초).|
+    |RemotingTimeoutSeconds|원격 호출이 지속될 수 있는 최대 시간(초)입니다.|"n"초 기본값: "600"(10).|
+    |StopTestRunCallTimeoutInSeconds|호출을 통해 테스트 실행이 중지되기를 기다릴 시간(초)입니다.|"n"초 기본값: "120"(2분).|
+    |GetCollectorDataTimeout|데이터 수집기를 기다릴 시간(초)입니다.|"n"초 기본값: "300"(5분).|
 
 ## <a name="to-specify-agent-timeout-options-for-a-test-controller"></a>테스트 컨트롤러에 대한 에이전트 제한 시간 옵션을 지정하려면
 

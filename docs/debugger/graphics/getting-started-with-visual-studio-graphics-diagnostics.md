@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 069dd7638296987c195fbae6cc9d858fdd3421ee
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 24cd668165b940955902605ef64c1ffb522b9fe1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058674"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929779"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Visual Studio 그래픽 진단 시작
 이 섹션에서는 처음으로 그래픽 진단 사용을 준비한 다음 Direct3D 앱에서 프레임을 캡처하고 Graphics Analyzer에서 검사합니다.  
@@ -34,17 +34,17 @@ ms.locfileid: "37058674"
   
 #### <a name="to-install-graphics-tools-for-windows-10"></a>Windows 10용 그래픽 도구를 설치하려면  
   
-1.  검색에서 입력 **앱 및 기능** 연 다음 합니다 **앱 및 기능** 설정 합니다.
+1. 검색에서 입력 **앱 및 기능** 연 다음 합니다 **앱 및 기능** 설정 합니다.
   
-3.  오른쪽에는 **앱 및 기능** 대화 상자에서 선택 **선택적 기능 관리** (아래 **앱 및 기능**).
+2. 오른쪽에는 **앱 및 기능** 대화 상자에서 선택 **선택적 기능 관리** (아래 **앱 및 기능**).
 
-    합니다 **선택적 기능 관리** 대화 상자가 나타납니다.
+   합니다 **선택적 기능 관리** 대화 상자가 나타납니다.
   
-4.  에 **선택적 기능 관리** 대화 상자에서 선택 **기능을 추가할**합니다. 설치할 수 있는 선택적 기능 목록이 나타납니다.  
+3. 에 **선택적 기능 관리** 대화 상자에서 선택 **기능을 추가할**합니다. 설치할 수 있는 선택적 기능 목록이 나타납니다.  
   
-5.  선택 **그래픽 도구** 기능의 목록에서 선택한 **설치**합니다.  
+4. 선택 **그래픽 도구** 기능의 목록에서 선택한 **설치**합니다.  
   
- 또한 그래픽 도구 기능은 Windows 10 SDK를 설치할 때 자동으로 설치됩니다.  
+   또한 그래픽 도구 기능은 Windows 10 SDK를 설치할 때 자동으로 설치됩니다.  
   
 > [!TIP]
 >  간단한 캡처 및 재생 기능을 제공 하는 Windows 10의 선택적 그래픽 도구 기능-명령줄 캡처 프로그램 등 **dxcap.exe**-지원, 테스트 및 진단 시나리오에서 사용할 수 있는 여기서 개발자 도구가 설치 되지 않은 컴퓨터입니다. 자세한 내용은 참조는 [명령줄 캡처 도구](command-line-capture-tool.md) 항목입니다.  
@@ -58,7 +58,7 @@ ms.locfileid: "37058674"
 - 합니다 **DirectX 11 앱 (유니버설 Windows)** 하거나 **DirectX 12 앱 (유니버설 Windows)** Windows 10 용 프로젝트 템플릿.
 - [Direct3D 12 UAP 샘플](https://code.msdn.microsoft.com/Direct3D-12-UAP-Sample-ecb1779f) Windows 10에 대 한 합니다.  
   
- 계속 진행하기 전에 앱을 빌드할 수 있는지 확인합니다.  
+  계속 진행하기 전에 앱을 빌드할 수 있는지 확인합니다.  
   
 ### <a name="2---start-a-graphics-diagnostics-session"></a>2 - 그래픽 진단 세션 시작  
  이제 첫 번째 그래픽 진단 세션을 시작할 준비가 되었습니다. Visual Studio 주 메뉴에서 선택 **디버그, 그래픽, 그래픽 디버깅 시작**, 또는 누르기만 **alt+f5**합니다. 그러면 그래픽 진단 모드로 앱이 시작되고 Visual Studio에 진단 세션 창이 표시됩니다.  
@@ -75,11 +75,11 @@ ms.locfileid: "37058674"
   
 #### <a name="to-capture-a-sequence-of-frames"></a>프레임 시퀀스를 캡처하려면  
   
--   Visual Studio의 설정에 진단 세션 창에서 **캡처할 프레임** 순서로 캡처할 프레임 수 캡처한 시퀀스 단일 프레임을 캡처하려면 위에서 설명한 방법 중 하나를 사용 하 여 합니다.  
+- Visual Studio의 설정에 진단 세션 창에서 **캡처할 프레임** 순서로 캡처할 프레임 수 캡처한 시퀀스 단일 프레임을 캡처하려면 위에서 설명한 방법 중 하나를 사용 하 여 합니다.  
   
-     단일 프레임을 다시 캡처하려면 설정할 **캡처할 프레임** 하 *1*합니다.  
+   단일 프레임을 다시 캡처하려면 설정할 **캡처할 프레임** 하 *1*합니다.  
   
- 프레임 캡처를 방금 완료 되 면 앱을 종료 하거나 선택 합니다 **중지** 그래픽 도구 모음 또는 진단 세션 창에서 단추입니다.  
+  프레임 캡처를 방금 완료 되 면 앱을 종료 하거나 선택 합니다 **중지** 그래픽 도구 모음 또는 진단 세션 창에서 단추입니다.  
   
 ### <a name="4---examine-captured-frames-in-the-graphics-analyzer"></a>4-Graphics Analyzer에서 캡처된 프레임을 검사 합니다.  
  이제 방금 캡처한 프레임을 검사할 수 있습니다. 프레임 분석을 시작하려면 진단 세션 창에서 검사하려는 프레임의 프레임 번호를 선택합니다. 프레임 열립니다는 **Graphics Analyzer**, 하거나 수 있는 앱 렌더링 문제를 추적할 Direct3D를 사용 하는 방법을 검사할 그래픽 진단 도구를 사용 하 여 사용 합니다 **프레임 분석** 도구를 성능을 이해 합니다.  

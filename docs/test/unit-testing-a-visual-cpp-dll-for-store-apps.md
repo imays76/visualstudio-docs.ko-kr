@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 UWP 앱용 Visual C++ DLL 테스트 방법
+title: UWP 앱의 Visual C++ DLL 테스트 방법
 ms.date: 02/15/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: cf79b0d478ec68391991fc1fb13bc228a678e2ed
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 4081fae86b41a9bf8b925bf84d403b3be6628294
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380514"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068369"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Visual C++ DLL 테스트 방법
 
@@ -46,7 +46,7 @@ ms.locfileid: "39380514"
 
     -   테스트 메서드는 `TEST_CLASS(YourClassName){...}`를 사용해서 클래스로 그룹화됩니다.
 
-         테스트를 실행하면 각 테스트 클래스의 인스턴스가 생성됩니다. 테스트 메서드는 지정되지 않은 순서로 호출됩니다. 각 모듈, 클래스 또는 메서드의 전/후에 호출되는 특별한 메서드를 정의할 수 있습니다. 자세한 내용은 MSDN 라이브러리의 [Microsoft.VisualStudio.TestTools.CppUnitTestFramework 사용](how-to-use-microsoft-test-framework-for-cpp.md)을 참조하세요.
+         테스트를 실행하면 각 테스트 클래스의 인스턴스가 생성됩니다. 테스트 메서드는 지정되지 않은 순서로 호출됩니다. 각 모듈, 클래스 또는 메서드의 전/후에 호출되는 특별한 메서드를 정의할 수 있습니다. 자세한 내용은 [Microsoft.VisualStudio.TestTools.CppUnitTestFramework 사용](how-to-use-microsoft-test-framework-for-cpp.md)을 참조하세요.
 
 ##  <a name="Verify_that_the_tests_run_in_Test_Explorer"></a> 테스트 탐색기에서 테스트가 실행되는지 확인
 
@@ -129,56 +129,55 @@ ms.locfileid: "39380514"
 
 ##  <a name="make_the_dll_functions_visible_to_the_test_code"></a> dll 함수가 테스트 코드에 표시되도록 설정
 
-1.  RooterLibTests 프로젝트에 RooterLib를 추가합니다.
+1. RooterLibTests 프로젝트에 RooterLib를 추가합니다.
 
-    1.  **솔루션 탐색기**에서 **RooterLibTests** 프로젝트를 선택한 다음, 바로 가기 메뉴에서 **참조**를 선택합니다.
+   1.  **솔루션 탐색기**에서 **RooterLibTests** 프로젝트를 선택한 다음, 바로 가기 메뉴에서 **참조**를 선택합니다.
 
-    2.  **RooterLib 프로젝트 속성** 대화 상자에서 **공용 속성**을 확장하고 **프레임워크 및 참조**를 선택합니다.
+   2.  **RooterLib 프로젝트 속성** 대화 상자에서 **공용 속성**을 확장하고 **프레임워크 및 참조**를 선택합니다.
 
-    3.  **새 참조 추가** 선택
+   3.  **새 참조 추가** 선택
 
-    4.  **참조 추가** 대화 상자에서 **솔루션**을 확장한 다음 **프로젝트**를 선택합니다. 그런 다음 **RouterLib** 항목을 선택합니다.
+   4.  **참조 추가** 대화 상자에서 **솔루션**을 확장한 다음 **프로젝트**를 선택합니다. 그런 다음 **RouterLib** 항목을 선택합니다.
 
-2.  *unittest1.cpp*에 RooterLib 헤더 파일을 포함합니다.
+2. *unittest1.cpp*에 RooterLib 헤더 파일을 포함합니다.
 
-    1.  *unittest1.cpp*를 엽니다.
+   1.  *unittest1.cpp*를 엽니다.
 
-    2.  다음 코드를 `#include "CppUnitTest.h"` 줄 아래에 추가합니다.
+   2.  다음 코드를 `#include "CppUnitTest.h"` 줄 아래에 추가합니다.
 
-        ```cpp
-        #include "..\RooterLib\RooterLib.h"
-        ```
+       ```cpp
+       #include "..\RooterLib\RooterLib.h"
+       ```
 
-3.  가져온 함수를 사용하는 테스트를 추가합니다. *unittest1.cpp*에 다음 코드를 추가합니다.
+3. 가져온 함수를 사용하는 테스트를 추가합니다. *unittest1.cpp*에 다음 코드를 추가합니다.
 
-    ```cpp
-    TEST_METHOD(BasicTest)
-    {
-        CRooterLib rooter;
-        Assert::AreEqual(
-            // Expected value:
-            0.0,
-            // Actual value:
-            rooter.SquareRoot(0.0),
-            // Tolerance:
-            0.01,
-            // Message:
-            L"Basic test failed",
-            // Line number - used if there is no PDB file:
-            LINE_INFO());
-    }
+   ```cpp
+   TEST_METHOD(BasicTest)
+   {
+       CRooterLib rooter;
+       Assert::AreEqual(
+           // Expected value:
+           0.0,
+           // Actual value:
+           rooter.SquareRoot(0.0),
+           // Tolerance:
+           0.01,
+           // Message:
+           L"Basic test failed",
+           // Line number - used if there is no PDB file:
+           LINE_INFO());
+   }
+   ```
 
-    ```
+4. 솔루션을 빌드합니다.
 
-4.  솔루션을 빌드합니다.
+    새 테스트가 **테스트 탐색기**의 **실행하지 않은 테스트** 노드에 표시됩니다.
 
-     새 테스트가 **테스트 탐색기**의 **실행하지 않은 테스트** 노드에 표시됩니다.
+5. **테스트 탐색기**에서 **모두 실행**을 선택합니다.
 
-5.  **테스트 탐색기**에서 **모두 실행**을 선택합니다.
+    ![기본 테스트 통과](../test/media/ute_cpp_testexplorer_basictest.png)
 
-     ![기본 테스트 통과](../test/media/ute_cpp_testexplorer_basictest.png)
-
- 테스트 및 코드 프로젝트를 설정하고 코드 프로젝트에서 함수를 실행하는 테스트를 실행할 수 있는지 확인했습니다. 이제 실제 테스트 및 코드 작성을 시작할 수 있습니다.
+   테스트 및 코드 프로젝트를 설정하고 코드 프로젝트에서 함수를 실행하는 테스트를 실행할 수 있는지 확인했습니다. 이제 실제 테스트 및 코드 작성을 시작할 수 있습니다.
 
 ##  <a name="Iteratively_augment_the_tests_and_make_them_pass"></a> 반복적으로 테스트를 확장하고 통과하도록 만들기
 
@@ -243,73 +242,72 @@ ms.locfileid: "39380514"
 
 ##  <a name="Debug_a_failing_test"></a> 실패한 테스트 디버그
 
-1.  *unittest1.cpp*에 다른 테스트를 추가합니다.
+1. *unittest1.cpp*에 다른 테스트를 추가합니다.
 
-    ```cpp
-    // Verify that negative inputs throw an exception.
-     TEST_METHOD(NegativeRangeTest)
-     {
-       wchar_t message[200];
-       CRooterLib rooter;
-       for (double v = -0.1; v > -3.0; v = v - 0.5)
-       {
-         try
-         {
-           // Should raise an exception:
-           double result = rooter.SquareRoot(v);
-
-           swprintf_s(message, L"No exception for input %g", v);
-           Assert::Fail(message, LINE_INFO());
-         }
-         catch (std::out_of_range ex)
-         {
-           continue; // Correct exception.
-         }
-         catch (...)
-         {
-           swprintf_s(message, L"Incorrect exception for %g", v);
-           Assert::Fail(message, LINE_INFO());
-         }
-       }
-    };
-
-    ```
-
-2.  **테스트 탐색기**에서 **모두 실행**을 선택합니다.
-
-     테스트가 실패합니다. **테스트 탐색기**에서 테스트 이름을 선택합니다. 실패한 어설션이 강조 표시됩니다. 오류 메시지는 **테스트 탐색기**의 세부 정보 창에 표시됩니다.
-
-     ![NegativeRangeTests 실패](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
-
-3.  테스트가 실패한 이유를 확인하려면 함수를 단계별로 실행합니다.
-
-    1.  `SquareRoot` 함수의 시작 부분에 중단점을 설정합니다.
-
-    2.  실패한 테스트의 바로 가기 메뉴에서 **선택한 테스트 디버그**를 선택합니다.
-
-         중단점에서 실행이 중지되면 코드를 단계별로 실행합니다.
-
-    3.  예외를 catch하는 코드를 *RooterLib.cpp*에 추가합니다.
-
-        ```cpp
-        #include <stdexcept>
-        ...
-        double CRooterLib::SquareRoot(double v)
+   ```cpp
+   // Verify that negative inputs throw an exception.
+    TEST_METHOD(NegativeRangeTest)
+    {
+      wchar_t message[200];
+      CRooterLib rooter;
+      for (double v = -0.1; v > -3.0; v = v - 0.5)
+      {
+        try
         {
-            //Validate the input parameter:
-            if (v < 0.0)
-            {
-              throw std::out_of_range("Can't do square roots of negatives");
-            }
-        ...
+          // Should raise an exception:
+          double result = rooter.SquareRoot(v);
 
-        ```
+          swprintf_s(message, L"No exception for input %g", v);
+          Assert::Fail(message, LINE_INFO());
+        }
+        catch (std::out_of_range ex)
+        {
+          continue; // Correct exception.
+        }
+        catch (...)
+        {
+          swprintf_s(message, L"Incorrect exception for %g", v);
+          Assert::Fail(message, LINE_INFO());
+        }
+      }
+   };
+   ```
 
-    1.  **테스트 탐색기**에서 **모두 실행**을 선택하여 수정된 메서드를 테스트하고 재발하지 않는지 확인합니다.
+2. **테스트 탐색기**에서 **모두 실행**을 선택합니다.
 
- 이제 모든 테스트가 통과합니다.
+    테스트가 실패합니다. **테스트 탐색기**에서 테스트 이름을 선택합니다. 실패한 어설션이 강조 표시됩니다. 오류 메시지는 **테스트 탐색기**의 세부 정보 창에 표시됩니다.
 
- ![모든 테스트 통과](../test/media/ute_ult_alltestspass.png)
+    ![NegativeRangeTests 실패](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
+
+3. 테스트가 실패한 이유를 확인하려면 함수를 단계별로 실행합니다.
+
+   1.  `SquareRoot` 함수의 시작 부분에 중단점을 설정합니다.
+
+   2.  실패한 테스트의 바로 가기 메뉴에서 **선택한 테스트 디버그**를 선택합니다.
+
+        중단점에서 실행이 중지되면 코드를 단계별로 실행합니다.
+
+   3.  예외를 catch하는 코드를 *RooterLib.cpp*에 추가합니다.
+
+       ```cpp
+       #include <stdexcept>
+       ...
+       double CRooterLib::SquareRoot(double v)
+       {
+           //Validate the input parameter:
+           if (v < 0.0)
+           {
+             throw std::out_of_range("Can't do square roots of negatives");
+           }
+       ...
+
+       ```
+
+   1.  **테스트 탐색기**에서 **모두 실행**을 선택하여 수정된 메서드를 테스트하고 재발하지 않는지 확인합니다.
+
+   이제 모든 테스트가 통과합니다.
+
+   ![모든 테스트 통과](../test/media/ute_ult_alltestspass.png)
 
 ##  <a name="Refactor_the_code_without_changing_tests"></a> 테스트를 변경하지 않고 코드 리팩터링
 

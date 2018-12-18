@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbbddf7716b34b8367ac014fa65d8ccfc4413e23
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 2bf1d322f65cd41a9f4ddc157337bc93e015c5a3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39230768"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939191"
 ---
 # <a name="commandplacements-element"></a>CommandPlacements 요소
 CommandPlacements 요소 그룹 CommandPlacement 요소 및 기타 CommandPlacements 그룹화 합니다.  
@@ -59,7 +59,7 @@ CommandPlacements 요소 그룹 CommandPlacement 요소 및 기타 CommandPlacem
 |-------------|-----------------|  
 |[CommandTable 요소](../extensibility/commandtable-element.md)|명령을 나타내는 모든 요소를 정의 합니다.|  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
   
 ```xml  
 <CommandPlacements>  

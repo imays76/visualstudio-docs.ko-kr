@@ -21,21 +21,21 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d25489065ceece41108a75c9d3763a95e4adb924
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633143"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949426"
 ---
 # <a name="circular-reference-in-value-argument-not-supported"></a>값 인수에 순환 참조를 사용하는 것은 지원되지 않습니다.
-호출 하려고 `JSON.stringify` 유효 하지 않은 값을 사용 합니다. `value` 인수, 배열 또는 개체를 순환 참조를 포함 합니다.  
+호출 하려고 `JSON.stringify` 유효 하지 않은 값입니다. `value` 인수, 배열 또는 개체 순환 참조가 포함 되어 있습니다.  
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   
 -   인수에서 순환 참조를 제거 합니다.  
   
 ## <a name="example"></a>예제  
- 이 예제의 코드 때문에 런타임 오류를 발생 `john` 에 대 한 참조가 `mary` 및 `mary` 에 대 한 참조가 `john`합니다. 순환 참조를 제거 하려면 제거 하거나 하거나 설정을 해제 속성 `brother` 에서 `mary` 개체 또는 `sister` 에서 속성의 `john` 개체입니다.  
+ 이 예제의 코드에 런타임 오류가 발생 하기 때문에 `john` 에 대 한 참조가 `mary` 하 고 `mary` 를 참조 하는 `john`. 순환 참조를 제거 하려면 제거 하거나 또는 설정 되지 않은 속성 `brother` 에서 합니다 `mary` 개체 또는 `sister` 속성을는 `john` 개체입니다.  
   
 ```JavaScript  
 var john = new Object();  

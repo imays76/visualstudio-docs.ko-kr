@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: d14dd126806e2c7b9a903e415dbc7a8a6f834517
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 32bba243cd38132a4c64a0b8706f9dbdca823ad3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566897"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942376"
 ---
 # <a name="customizing-text-and-image-fields"></a>텍스트 및 이미지 필드 사용자 지정
 셰이프의 텍스트 decorator를 정의한 경우에 텍스트 필드에서 표시 됩니다. TextFields와 다른 ShapeFields 초기화의 예제를 DSL 솔루션에서 Dsl\GeneratedCode\Shapes.cs를 검사 합니다.
@@ -80,7 +80,6 @@ public virtual Font GetFont(ShapeElement shape)
 // To change per shape or dynamically, override this.
 public virtual StyleSetResourceId GetFontId(ShapeElement parentShape)
 { return DefaultFontId; }
-
 ```
 
  다른 쌍의 여러 가지 `Get` 메서드 및 `Default` 속성을 같은 `DefaultMultipleLine/GetMultipleLine()`합니다. 셰이프 필드의 모든 인스턴스에 대 한 값을 변경 하려면 기본 속성 값을 할당할 수 있습니다. 에 다른 셰이프 또는 모델 요소의 상태에 따라 다를 모양 인스턴스에서 값을 설정, 재정의 `Get` 메서드.
@@ -106,7 +105,6 @@ public virtual StyleSetResourceId GetFontId(ShapeElement parentShape)
       TextField commentField = ShapeElement.FindShapeField(shapeFields, "CommentDecorator") as TextField;
       // Use the standard font for comments:
       commentField.DefaultFontId = DiagramFonts.CommentText;
-
 ```
 
 ## <a name="dynamic-customizations"></a>동적 사용자 지정
@@ -169,7 +167,6 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
     }
 
   }
-
 ```
 
 ## <a name="style-sets"></a>스타일 설정
@@ -264,7 +261,6 @@ partial class ExampleShape
     }
   }
 }
-
 ```
 
 ## <a name="see-also"></a>참고 항목

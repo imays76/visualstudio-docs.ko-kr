@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd7ea8d7ed7da47c88b0c2816e0cf03e7833e8f2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1f6c59c6fbca8b18e93e890264fbdf1ae8d050fd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111209"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846423"
 ---
 # <a name="idebuginterceptexceptioncompleteevent2getinterceptcookie"></a>IDebugInterceptExceptionCompleteEvent2::GetInterceptCookie
-가로챈 예외 처리가 완료 될 때 호출 합니다.  
+가로챈 예외 처리가 완료 될 때 호출 됩니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -47,7 +47,7 @@ int GetInterceptCookie(
  성공 하면 반환 `S_OK`; 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 후의 [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) 보내는 가로챈 예외 처리를 완료 하는 메서드는 [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md) 이벤트입니다. 처리기 צ ְ ײ는 `GetInterceptCookie` 예외와 연결 된 고유 값을 검색 하는 메서드입니다 (전달 되는 동일한 값은 `InterceptCurrentException` 메서드).  
+ 후 합니다 [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) 보냅니다 가로챈 예외 처리를 완료 하는 메서드는 [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md) 이벤트입니다. 처리기를 사용할 수는 `GetInterceptCookie` 예외에 연결 된 고유 값을 검색 하는 방법 (전달 되는 동일한 값을 `InterceptCurrentException` 메서드).  
   
 ## <a name="see-also"></a>참고 항목  
  [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)   

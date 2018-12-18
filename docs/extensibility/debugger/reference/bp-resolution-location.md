@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 032228596773d4a5a164f904c1caae161b693f64
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0dda42a65824b8fdb93ec8561f3affb59ee5d166
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106541"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926126"
 ---
 # <a name="bpresolutionlocation"></a>BP_RESOLUTION_LOCATION
-중단점 해상도 위치의 구조를 지정합니다.  
+중단점 해결 위치의 구조를 지정합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -50,38 +50,38 @@ public struct BP_RESOLUTION_LOCATION {
   
 ## <a name="members"></a>멤버  
  `bpType`  
- 값은 [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) 해석 하는 방법을 지정 하는 열거형의 `bpResLocation` union 또는 `unionmemberX` 멤버입니다.  
+ 값을 [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) 해석 하는 방법을 지정 하는 열거형을 `bpResLocation` union 또는 `unionmemberX` 멤버.  
   
  `bpResLocation.bpresCode`  
- [C + + 전용] 포함 된 [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md) 경우 구조체 `bpType`  =  `BPT_CODE`합니다.  
+ [C + + 전용] 포함 된 [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md) 하는 경우 구조체 `bpType`  =  `BPT_CODE`합니다.  
   
  `bpResLocation.bpresData`  
- [C + + 전용] 포함 된 [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) 경우 구조체 `bpType`  =  `BPT_DATA`합니다.  
+ [C + + 전용] 포함 된 [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) 하는 경우 구조체 `bpType`  =  `BPT_DATA`합니다.  
   
  `bpResLocation.unused`  
  [C + + 전용] 자리 표시자입니다.  
   
  `unionmember1`  
- [C#] 해석 하는 방법에 대 한 설명을 참조 하세요.  
+ [C#만 해당] 해석 하는 방법에 대 한 설명을 참조 하세요.  
   
  `unionmember2`  
- [C#] 해석 하는 방법에 대 한 설명을 참조 하세요.  
+ [C#만 해당] 해석 하는 방법에 대 한 설명을 참조 하세요.  
   
  `unionmember3`  
- [C#] 해석 하는 방법에 대 한 설명을 참조 하세요.  
+ [C#만 해당] 해석 하는 방법에 대 한 설명을 참조 하세요.  
   
  `unionmember4`  
- [C#] 해석 하는 방법에 대 한 설명을 참조 하세요.  
+ [C#만 해당] 해석 하는 방법에 대 한 설명을 참조 하세요.  
   
 ## <a name="remarks"></a>설명  
- 이 구조는의 구성원은 [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) 및 [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) 구조입니다.  
+ 이 구조체의 멤버인 합니다 [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) 하 고 [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) 구조입니다.  
   
- [C#] `unionmemberX` 멤버는 다음 표에 따라 해석 됩니다. 왼쪽된 열에 대 한 살펴보면는 `bpType` 다음 무엇 인지 알아보려면 across 값 `unionmemberX` 마샬링 및 멤버 나타냅니다는 `unionmemberX` 적절 하 게 합니다. C#에서이 구조를 해석 하는 방법에 대 한 예제를 참조 하십시오.  
+ [C#만 해당] `unionmemberX` 멤버는 다음 표에 따라 해석 됩니다. 왼쪽된 열을 살펴보면를 `bpType` 한 다음 각 기능 확인에 걸쳐 값 `unionmemberX` 마샬링 및 멤버 나타냅니다는 `unionmemberX` 적절 하 게 합니다. C#에서이 구조를 해석 하는 방법에 대 한 예제를 참조 하세요.  
   
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|  
 |----------------------|--------------------|--------------------|--------------------|--------------------|  
 |`BPT_CODE`|[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)|-|-|-|  
-|`BPT_DATA`|`string` (데이터 식)|`string` 함수 이름|`string` (이미지 이름)|`enum_BP_RES_DATA_FLAGS`|  
+|`BPT_DATA`|`string` (데이터 식)|`string` (함수 이름)|`string` (이미지 이름)|`enum_BP_RES_DATA_FLAGS`|  
   
 ## <a name="example"></a>예제  
  해석 하는 방법을 보여 주는이 예제는 `BP_RESOLUTION_LOCATION` C#의 구조입니다.  

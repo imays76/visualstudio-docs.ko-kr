@@ -5,17 +5,17 @@ ms.date: 07/03/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 6cabc626-5310-4622-a743-210a9abb5535
-author: dantogno
-ms.author: v-davian
+author: therealjohn
+ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: e79e58c1795ef4d19466a5f6bdf127aa302e4be4
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: fa0884f024c51c76c6ed5e5d748c65e767b70d9d
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251129"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027473"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity
 
@@ -50,7 +50,7 @@ Visual Studio Tools for Unity는 Visual Studio만의 강력한 [디버깅](using
 
 ### <a name="visual-studio-for-mac-tools-for-unity"></a>Mac용 Visual Studio Tools for Unity
 
-Mac용 Visual Studio는 Unity 프로젝트도 지원합니다. 자세한 내용은 [Mac용 Visual Studio Tools for Unity 설명서](https://docs.microsoft.com/en-us/visualstudio/mac/unity-tools)를 참조하세요.
+Mac용 Visual Studio는 Unity 프로젝트도 지원합니다. 자세한 내용은 [Mac용 Visual Studio Tools for Unity 설명서](/visualstudio/mac/unity-tools)를 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
 

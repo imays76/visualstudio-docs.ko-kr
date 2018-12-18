@@ -13,16 +13,18 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 50d677eec2a88f2470a7a329c4cf9e2b85f065da
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6c45a8abceacb1d566ca5aba382e7955f1c2601e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177359"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895563"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>코딩된 UI 테스트 편집기를 사용하여 코딩된 UI 테스트 편집
 
 코딩된 UI 테스트 편집기에서는 코딩된 UI 테스트를 쉽게 수정할 수 있습니다. 코딩된 UI 테스트 편집기를 사용하여 테스트 메서드 및 UI 작업의 속성을 찾고 보고 편집할 수 있습니다. 또한 UI 컨트롤 맵을 사용하여 해당 컨트롤을 보고 편집할 수 있습니다.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 **요구 사항**
 
@@ -74,7 +76,7 @@ Visual C# 및 Visual Basic 기반의 코딩된 UI 테스트를 **코딩된 UI �
 
 UI 작업에 대한 속성을 수정하려면 **UI 작업** 창에서 속성을 편집하려는 UI 작업이 포함된 테스트 메서드를 확장하고, 해당 UI 작업을 선택한 다음, 속성 창을 사용해 속성을 수정합니다.
 
-예를 들어 서버를 사용할 수 없는 상황이며 웹 브라우저에 나오는 **웹 페이지 ‘http://Contoso1/default.aspx’로 이동**과 관련된 UI 작업이 있는 경우 이 URL을 `'http://Contoso2/default.aspx'`로 변경할 수 있습니다.
+예를 들어 서버를 사용할 수 없는 상황이며 웹 브라우저에 나오는 **웹 페이지 ‘<http://Contoso1/default.aspx>’로 이동**과 관련된 UI 작업이 있는 경우 이 URL을 `'http://Contoso2/default.aspx'`로 변경할 수 있습니다.
 
 ![컨트롤 속성](../test/media/codeduitestcontrolprop.png)
 

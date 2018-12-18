@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c7430b6fc2afc5af872c9f03174451a223e05b3e
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 09b9299c6428ef63ccf71220fc3cb599e9e3b5a9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119485"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872410"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>연습: SharePoint 용 웹 파트 만들기
 
@@ -49,9 +49,9 @@ ms.locfileid: "37119485"
 
 ## <a name="prerequisites"></a>전제 조건
 
-- 지원되는 Microsoft Windows 및 SharePoint 버전. 자세한 내용은 [SharePoint 솔루션 개발을 위한 요구 사항](../sharepoint/requirements-for-developing-sharepoint-solutions.md)합니다.
+- 지원되는 Microsoft Windows 및 SharePoint 버전.
 
-- Visual Studio 2017 또는 버전의 Visual Studio 응용 프로그램 수명 주기 관리 (ALM).
+- Visual Studio 2017 또는 Azure DevOps 서비스입니다.
 
 ## <a name="create-an-empty-sharepoint-project"></a>빈 SharePoint 프로젝트 만들기
 
@@ -96,13 +96,13 @@ ms.locfileid: "37119485"
 
 3. `WebPart1` 클래스에 다음 코드를 추가합니다. 이 코드는 다음 필드를 선언합니다.
 
-    - 직원 웹 파트에 표시할 데이터 표입니다.
+   - 직원 웹 파트에 표시할 데이터 표입니다.
 
-    - 데이터 표를 필터링 하는 데 사용 되는 컨트롤에 나타나는 텍스트입니다.
+   - 데이터 표를 필터링 하는 데 사용 되는 컨트롤에 나타나는 텍스트입니다.
 
-    - 데이터 표에 데이터를 표시할 수 없는 경우 오류를 표시 하는 레이블.
+   - 데이터 표에 데이터를 표시할 수 없는 경우 오류를 표시 하는 레이블.
 
-    - 직원 데이터 파일의 경로 포함 하는 문자열입니다.
+   - 직원 데이터 파일의 경로 포함 하는 문자열입니다.
 
      [!code-csharp[SP_WebPart#2](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#2)]
      [!code-vb[SP_WebPart#2](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#2)]
@@ -114,18 +114,18 @@ ms.locfileid: "37119485"
 
 5. `CreateChildControls` 메서드를 다음 코드로 바꿉니다. 이 코드는 다음 작업을 수행합니다.
 
-    - 이전 단계에서 선언한 레이블을 확인 하 고 데이터 표를 추가 합니다.
+   - 이전 단계에서 선언한 레이블을 확인 하 고 데이터 표를 추가 합니다.
 
-    - 데이터 표에서 직원 데이터를 포함 하는 XML 파일에 바인딩합니다.
+   - 데이터 표에서 직원 데이터를 포함 하는 XML 파일에 바인딩합니다.
 
      [!code-csharp[SP_WebPart#4](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#4)]
      [!code-vb[SP_WebPart#4](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#4)]
 
 6. 다음 메서드를 `WebPart1` 클래스에 추가합니다. 이 코드는 다음 작업을 수행합니다.
 
-    - 렌더링된 된 웹 파트의 웹 파트 동사 메뉴에 표시 되는 동사를 만듭니다.
+   - 렌더링된 된 웹 파트의 웹 파트 동사 메뉴에 표시 되는 동사를 만듭니다.
 
-    - 사용자가 동사 메뉴에서 동사를 선택할 때 발생하는 이벤트를 처리합니다. 이 코드는 데이터 표에 표시 되는 직원 목록을 필터링 합니다.
+   - 사용자가 동사 메뉴에서 동사를 선택할 때 발생하는 이벤트를 처리합니다. 이 코드는 데이터 표에 표시 되는 직원 목록을 필터링 합니다.
 
      [!code-csharp[SP_WebPart#5](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#5)]
      [!code-vb[SP_WebPart#5](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#5)]

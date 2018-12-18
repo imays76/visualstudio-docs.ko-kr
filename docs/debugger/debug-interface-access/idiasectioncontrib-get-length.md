@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 389204a8eae61bf5cd713ccd0c0d2dc29b88f656
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 59fa6304572f2c951bdd16e30cbace8441dc6b97
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459895"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908381"
 ---
 # <a name="idiasectioncontribgetlength"></a>IDiaSectionContrib::get_length
-섹션의 바이트 수를 검색합니다.  
+섹션에는 바이트 수를 검색합니다.  
   
 ## <a name="syntax"></a>구문  
   

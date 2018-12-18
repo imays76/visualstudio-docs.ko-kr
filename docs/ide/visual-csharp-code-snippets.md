@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: b9d494b1fb6465c1cf246f6becb9b812115e6076
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: feec485f752ac13b43310e4afd97bdfaac93ee51
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425516"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849166"
 ---
 # <a name="c-code-snippets"></a>C# 코드 조각
 
@@ -34,7 +34,7 @@ ms.locfileid: "32425516"
 기본적으로 다음 코드 조각이 C#용 Visual Studio에 포함되어 있습니다.
 
 |이름(또는 바로 가기)|설명|코드 조각을 삽입할 수 있는 유효 위치|
-|--------------------------|-----------------|---------------------------------------|
+| - |-----------------| - |
 |#if|[#if](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-if) 지시문과 [#endif](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endif) 지시문을 만듭니다.|원하는 위치|
 |#region|[#region](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-region) 지시문과 [#endregion](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endregion) 지시문을 만듭니다.|원하는 위치|
 |~|포함하는 클래스에 대한 [finalizer](/dotnet/csharp/programming-guide/classes-and-structs/destructors)(소멸자)를 만듭니다.|클래스 내부|

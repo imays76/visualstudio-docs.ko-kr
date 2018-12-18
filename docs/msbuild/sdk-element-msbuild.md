@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 15084b21c80967a5ebd170e175adf09d9623be5b
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 1069a22e700eebfd9d1e8c387af99cf4241ffbe0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154095"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834179"
 ---
 # <a name="sdk-element-msbuild"></a>Sdk 요소(MSBuild)
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 SDK를 참조합니다.  
@@ -54,9 +54,10 @@ ms.locfileid: "39154095"
  없음
 
 ### <a name="parent-elements"></a>부모 요소  
- |요소|설명|  
-|-------------|-----------------|  
-|[프로젝트](../msbuild/project-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일의 필수 루트 요소입니다.|  
+
+| 요소 | 설명 |
+| - | - |
+| [프로젝트](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일의 필수 루트 요소입니다. |
 
 ## <a name="see-also"></a>참고 항목  
  [방법: MSBuild 프로젝트 SDK 참조](../msbuild/how-to-use-project-sdk.md)   

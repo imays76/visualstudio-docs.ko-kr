@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 72e4648643e60939fb74d69f960342d14b8a5d1b
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 2351c048576d6cf0e93515df8bdce34eef09bfc8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638885"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854665"
 ---
 # <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>방법: 레지스트리 설정을 사용 하 여 개인 갤러리 관리
 관리자 또는 격리 셸 확장의 개발자 인 경우에 컨트롤, 템플릿 및 도구는 Visual Studio 갤러리, 샘플 갤러리 또는 전용 갤러리에 대 한 액세스를 제어할 수 있습니다. 갤러리를 사용 가능 여부 확인을 만들려면을 *.pkgdef* 수정 된 레지스트리 키와 값을 설명 하는 파일입니다.  
@@ -41,17 +41,17 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
  `Repositories` 키가 참조 갤러리를 사용 하거나 사용 하지 않도록 설정 합니다. Visual Studio 갤러리 및 샘플 갤러리는 다음 리포지토리에 Guid를 사용합니다.  
   
--   Visual Studio 갤러리: 0F45E408-7995-4375-9485-86B8DB553DC9  
+- Visual Studio 갤러리: 0F45E408-7995-4375-9485-86B8DB553DC9  
   
--   샘플 갤러리: AEB9CB40-D8E6-4615-B52C-27E307F8506C  
+- 샘플 갤러리: AEB9CB40-D8E6-4615-B52C-27E307F8506C  
   
- `Disabled` 값은 선택 사항입니다. 기본적으로 갤러리 사용 됩니다.  
+  `Disabled` 값은 선택 사항입니다. 기본적으로 갤러리 사용 됩니다.  
   
- 합니다 `Priority` 갤러리에 나열 되는 순서를 결정 하는 값을 **옵션** 대화 상자. Visual Studio 갤러리에 우선 순위 10 있고 샘플 갤러리 20 우선 순위입니다. 전용 갤러리 우선 순위가 100부터 시작합니다. 표시 되는 순서는 지역화 된 값에 의해 결정 됩니다 여러 갤러리 동일한 우선 순위 값이 있으면 `DisplayName` 특성입니다.  
+  합니다 `Priority` 갤러리에 나열 되는 순서를 결정 하는 값을 **옵션** 대화 상자. Visual Studio 갤러리에 우선 순위 10 있고 샘플 갤러리 20 우선 순위입니다. 전용 갤러리 우선 순위가 100부터 시작합니다. 표시 되는 순서는 지역화 된 값에 의해 결정 됩니다 여러 갤러리 동일한 우선 순위 값이 있으면 `DisplayName` 특성입니다.  
   
- `Protocol` Atom 기반 또는 SharePoint를 기반으로 갤러리에 값이 필요 합니다.  
+  `Protocol` Atom 기반 또는 SharePoint를 기반으로 갤러리에 값이 필요 합니다.  
   
- 중 하나 `DisplayName`, 또는 둘 다 `DisplayNameResourceID` 고 `DisplayNamePackageGuid`를 지정 해야 합니다. 모든 지정 된 경우 해당 `DisplayNameResourceID` 및 `DisplayNamePackageGuid` 쌍을 사용 합니다.  
+  중 하나 `DisplayName`, 또는 둘 다 `DisplayNameResourceID` 고 `DisplayNamePackageGuid`를 지정 해야 합니다. 모든 지정 된 경우 해당 `DisplayNameResourceID` 및 `DisplayNamePackageGuid` 쌍을 사용 합니다.  
   
 ## <a name="disable-the-visual-studio-gallery-using-a-pkgdef-file"></a>.Pkgdef 파일을 사용 하 여 Visual Studio 갤러리를 사용 하지 않도록 설정  
  갤러리에서 사용 하지 않도록 설정 된 *.pkgdef* 파일입니다. 다음 항목은 Visual Studio 갤러리를 비활성화합니다.  

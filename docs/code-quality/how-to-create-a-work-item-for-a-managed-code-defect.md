@@ -12,29 +12,29 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: fcbb7716d8ba0496d267f3c8757bb8425884cfb0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b251970bfd57b31842e1573e2e156e11a517c81a
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918963"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279477"
 ---
 # <a name="how-to-create-a-work-item-for-a-managed-code-defect"></a>방법: 관리 코드 오류에 대한 작업 항목 만들기
 
-Visual Studio 내에서 작업 로그 항목을 작업 항목 추적 기능을 사용할 수 있습니다. 이 기능을 사용 하려면 프로젝트의 팀 프로젝트의 일부 여야 합니다 [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)]합니다.
+Visual Studio 내에서 작업 로그 항목을 작업 항목 추적 기능을 사용할 수 있습니다. 이 기능을 사용 하려면 프로젝트의 일부 여야 Azure DevOps 프로젝트를 [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)]입니다.
 
 ## <a name="to-create-a-work-item-for-managed-code-defect"></a>관리 코드 오류에 대 한 작업 항목을 만들려면
 
 1. 에 **코드 분석** 창에서 경고를 선택 합니다.
 
-2. 선택 **동작**를 눌러 **작업 항목 만들기** 만들려는 작업 항목 형식을 선택 합니다.
+2. 선택 **동작**, 선택한 **작업 항목 만들기** 만들려는 작업 항목의 유형을 선택 합니다.
 
-     오류 정보를 지정할 수 있습니다에 대 한 새 작업 항목 생성 됩니다.
+     오류 정보를 지정할 수 있습니다 새 작업 항목이 생성 됩니다.
 
 ## <a name="to-create-a-work-item-for-multiple-managed-code-defects"></a>여러 관리 코드 오류에 대 한 작업 항목을 만들려면
 
-1. 에 **오류 목록**여러 경고를 선택한 다음 경고를 마우스 오른쪽 단추로 클릭 합니다.
+1. 에 **오류 목록**, 여러 경고를 선택 하 고 경고를 마우스 오른쪽 단추로 클릭 합니다.
 
 2. 가리킨 **작업 항목 만들기** 만들려는 작업 항목의 유형을 클릭 합니다.
 
-     오류 정보를 지정할 수 있도록 선택한 모든 경고에 대 한 하나의 작업 항목이 생성 됩니다.
+     버그 정보를 지정할 수 있도록 선택한 모든 경고에 대 한 단일 작업 항목 생성 됩니다.

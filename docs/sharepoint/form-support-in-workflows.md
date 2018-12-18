@@ -16,15 +16,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9b3a07f56819818e55548292f3dbcdc1095d9f00
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 27e8ab6651c6838de92b8a3d83311ebd47fabcbb
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326082"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296192"
 ---
 # <a name="form-support-in-workflows"></a>워크플로의 폼 지원
-  네 가지 유형의 폼 워크플로에서 사용할 수 있습니다: 연결, 시작, 태스크 및 수정 합니다. 이러한 폼 형식 ASPX 양식은 또는 InfoPath 양식에 기반 할 수 있습니다. 수준의 지원 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 다음 표에 설명 된 여러 가지 요인에 따라 다릅니다. 특정 폼을 제공 합니다. 워크플로 양식 유형에 대 한 자세한 내용은 참조 하세요. [워크플로 양식 개요](http://go.microsoft.com/fwlink/?LinkId=185228) MSDN 웹 사이트입니다.  
+  네 가지 유형의 폼 워크플로에서 사용할 수 있습니다: 연결, 시작, 태스크 및 수정 합니다. 이러한 폼 형식 ASPX 양식은 또는 InfoPath 양식에 기반 할 수 있습니다. 수준의 지원 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 다음 표에 설명 된 여러 가지 요인에 따라 다릅니다. 특정 폼을 제공 합니다. 워크플로 양식 유형에 대 한 자세한 내용은 참조 하세요. [워크플로 양식 개요](http://go.microsoft.com/fwlink/?LinkId=185228)합니다.  
   
 ## <a name="xml-refactoring"></a>XML 리팩터링
  ASPX 연결 또는 시작 폼을 추가 하는 경우는 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 워크플로 프로젝트 항목 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 워크플로의 XML을 자동으로 리팩터링하여 *Elements.xml* 연결에 대 한 참조는 특성을 유지 하는 파일 또는 동기화 형식 이름 또는 배포 경로가 업데이트 될 때마다 초기화 폼 또는 폼 삭제 됩니다. 그러나 사용 하는 경우 다른 폼 형식 예: 태스크 또는 수정 양식, 워크플로에서 합니다 *Elements.xml* 파일 리팩터링 되지 않습니다.  
@@ -43,7 +43,7 @@ ms.locfileid: "36326082"
  다음 표에서 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 로 가져올 수 없는 재사용 가능한 워크플로 SharePoint에서 ASPX 또는 InfoPath 폼에 다양 한 폼 형식에 대 한 지원을 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]합니다.  
   
 |양식 유형|SharePoint Designer에서 가져온 ASPX 양식은 있는 재사용 가능한 워크플로|SharePoint Designer에서 가져온 InfoPath 양식 있는 재사용 가능한 워크플로|  
-|---------------|-------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|  
+|---------------|-------------------------------------------------------------------------------| - |  
 |형식 연결|-형식에서 참조 되는 *Elements.xml* 워크플로 파일입니다.<br />- *Elements.xml* 폼 변경 되거나 삭제 되거나 배포 경로가 변경 될 때 워크플로 파일은 리팩터링 합니다.|-폼을 가져온 되었지만 참조 되지 합니다 *Elements.xml* 워크플로.<br />- *Elements.xml* 워크플로 파일이 리팩터링 되지 않습니다.|  
 |시작|-폼에서 워크플로 통해 참조 되는 *Elements.xml* 워크플로 파일입니다.<br />- *Elements.xml* 폼 변경 되거나 삭제 되거나 배포 경로가 변경 될 때 워크플로 파일은 리팩터링 합니다.|-폼을 가져온 되었지만 참조 되지 합니다 *Elements.xml* 워크플로.<br />- *Elements.xml* 워크플로 파일이 리팩터링 되지 않습니다. **참고:** 규칙 및 속성 추가 및이 시나리오가 작동 하려면 변경 수 있어야 합니다.|  
 |작업|-형식에서 참조 되는 *Elements.xml* 워크플로 파일입니다.<br />- *Elements.xml* 워크플로 파일이 리팩터링 되지 않습니다.|-폼을 가져온 되었지만 참조 되지 합니다 *Elements.xml* 워크플로.<br />- *Elements.xml* 워크플로 파일이 리팩터링 되지 않습니다. **참고:** 규칙 및 속성 추가 및이 시나리오가 작동 하려면 변경 수 있어야 합니다.|  

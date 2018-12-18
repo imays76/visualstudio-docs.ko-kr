@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 테스트 도구
+title: 테스트 도구
 ms.date: 03/16/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bd29940bdacdeef4b47432f1b649db4ba61054af
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: a619989543b30ccf07cdb300a5688a985cf27eb7
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180115"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068249"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Visual Studio의 테스트 도구
 
@@ -38,12 +38,11 @@ Visual Studio 테스트 도구를 사용하면 사용자와 팀이 수준 높은
 - [부하 테스트](../test/quickstart-create-a-load-test-project.md)는 단위 테스트 및 웹 성능 테스트를 실행하여 서버 응용 프로그램에서 부하를 시뮬레이트합니다.
 
 > [!NOTE]
-> 단위 테스트는 Visual Studio의 모든 버전에서 사용할 수 있습니다. 라이브 단위 테스트, IntelliTest, Coded UI 테스트 등, 다른 테스트 도구는 Visual Studio Enterprise 버전에서만 사용할 수 있습니다. 버전에 대한 자세한 내용은 [Visual Studio 2017 IDE 비교](https://visualstudio.microsoft.com/vs/compare/)를 참조하세요.
+> 단위 테스트는 Visual Studio의 모든 버전에서 사용할 수 있습니다. 라이브 단위 테스트, IntelliTest, Coded UI 테스트 등의 다른 테스트 도구는 Visual Studio Enterprise 버전에서만 사용할 수 있습니다. 버전에 대한 자세한 내용은 [Visual Studio 2017 IDE 비교](https://visualstudio.microsoft.com/vs/compare/)를 참조하세요.
 
 ## <a name="related-scenarios"></a>관련 시나리오
 
-* [예비 및 수동 테스트(VSTS)](/vsts/manual-test/)
-* [부하 테스트(VSTS)](/vsts/load-test/index)
-* [지속적인 테스트(VSTS)](/vsts/build-release/test/index)
-* [eam Services 및 TFS에 대한 DevOps 개요](/vsts/user-guide/devops-alm-overview)
+* [예비 및 수동 테스트(Azure Test Plans)](/azure/devops/test/index?view=vsts)
+* [부하 테스트(Azure Test Plans)](/azure/devops/test/load-test/index?view=vsts)
+* [지속적인 테스트(Azure Test Plans)](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
 * [코드 분석 도구](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)

@@ -1,16 +1,17 @@
 ---
 title: Mac용 Visual Studio 둘러보기
 description: Mac용 Visual Studio에서는 iOS, Android, Mac, Xamarin.Forms용 Xamarin 프로젝트와 ASP.NET Core 웹 사이트를 비롯하여 macOS에서 .NET 응용 프로그램을 빌드하기 위한 통합 개발 환경을 제공합니다.
-author: asb3993
-ms.author: amburns
-ms.date: 05/06/2018
+zone_pivot_groups: mac-ide-version
+author: conceptdev
+ms.author: crdun
+ms.date: 11/03/2018
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
-ms.openlocfilehash: 024e58c1c217652c489ad9fe9e568cd21f687ae8
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: e1787f6d396121263d91633a4ee6d4dd8ed2c35f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34453991"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895797"
 ---
 # <a name="visual-studio-for-mac-tour"></a>Mac용 Visual Studio 둘러보기
 
@@ -24,7 +25,25 @@ Mac용 Visual Studio의 UX(사용자 환경)는 해당하는 Windows 제품과 �
 
 Mac용 Visual Studio는 응용 프로그램 파일 및 설정 관리, 응용 프로그램 코드 작성, 디버깅을 위한 여러 섹션으로 구성되어 있습니다.
 
-## <a name="welcome-screen"></a>시작 화면
+::: zone pivot="vsmac2019"
+
+## <a name="visual-studio-for-mac-2019-start-window"></a>Mac용 Visual Studio 2019 시작 창
+
+> [!TIP]
+> Mac용 Visual Studio 2019 미리 보기를 [다운로드](install-preview.md)하여 테스트할 수 있습니다.
+
+Mac용 Visual Studio 2019 미리 보기를 시작하면 신규 사용자에게 로그인 창이 표시됩니다. Microsoft 계정으로 로그인하여 유료 라이선스를 활성화하거나(갖고 있는 경우) Azure 구독에 연결합니다. **건너뛰기**를 누르고 나중에 **Visual Studio > 로그인** 메뉴 항목에서 로그인해도 됩니다.
+
+![Microsoft 계정으로 로그인](media/ide-tour-2019-start-signin.png)
+
+로그인한 사용자에게는 최근 프로젝트 목록과 기존 프로젝트를 열거나 새 프로젝트를 만드는 단추를 보여주는 새로운 _시작 창_이 표시됩니다.
+
+![최근에 사용한 프로젝트 중에서 선택하거나 새로 만들기](media/ide-tour-2019-start-projects.png)
+
+::: zone-end
+::: zone pivot="vsmac2017"
+
+## <a name="welcome-screen-in-visual-studio-for-mac-2017"></a>Mac용 Visual Studio 2017의 시작 화면
 
 Mac용 Visual Studio를 시작하면 ‘시작 화면’이 표시됩니다.
 
@@ -36,6 +55,8 @@ Mac용 Visual Studio를 시작하면 ‘시작 화면’이 표시됩니다.
 - **시작** - Mac용 Visual Studio를 시작하는 개발자를 위한 유용한 항목에 빠르게 액세스할 수 있습니다.
 - **최근 솔루션** - 최근에 열어 본 솔루션에 빠르게 액세스할 수 있을 뿐 아니라 프로젝트를 열거나 만들 수 있는 편리한 단추가 제공됩니다.
 - **개발자 뉴스** - 최신 Microsoft 개발자 정보에 대해 알리는 뉴스 피드입니다.
+
+::: zone-end
 
 ## <a name="solutions-and-projects"></a>솔루션 및 프로젝트
 
@@ -56,13 +77,13 @@ Solution Pad는 솔루션의 프로젝트를 구성합니다.
 Mac용 Visual Studio에서 프로젝트와 솔루션을 사용하는 방법에 대한 자세한 내용은 [프로젝트 및 솔루션](projects-and-solutions.md) 문서를 참조하세요.
 
 ## <a name="assembly-references"></a>어셈블리 참조
- 
+
 각 프로젝트에 대한 어셈블리 참조는 참조 폴더 아래에서 확인할 수 있습니다.
 
 ![Solution Pad의 참조 폴더](media/ide-tour-image19.png)
 
 **참조 편집** 대화 상자를 사용하여 참조를 더 추가합니다. 이 대화 상자는 참조 폴더를 두 번 클릭하거나 상황에 맞는 메뉴 작업에서 **참조 편집**을 선택하면 표시됩니다.
- 
+
 ![참조 편집 대화 상자](media/ide-tour-image20.png)
 
 Mac용 Visual Studio에서 참조를 사용하는 방법에 대한 자세한 내용은 [프로젝트의 참조 관리](managing-references-in-a-project.md) 문서를 참조하세요.
@@ -93,7 +114,7 @@ Mac용 Visual Studio에 포함된 네이티브 디버거는 Xamarin.iOS, Xamarin
 
 ## <a name="version-control"></a>버전 제어
 
-Mac용 Visual Studio는 Git 및 Subversion 소스 제어 시스템과 통합됩니다. 소스 제어가 적용되는 프로젝트는 솔루션 이름 옆에 분기가 표시됩니다. 
+Mac용 Visual Studio는 Git 및 Subversion 소스 제어 시스템과 통합됩니다. 소스 제어가 적용되는 프로젝트는 솔루션 이름 옆에 분기가 표시됩니다.
 
 ![소스 제어가 적용되는 프로젝트를 나타내는 분기 이름](media/ide-tour-image22.png)
 
@@ -102,3 +123,7 @@ Mac용 Visual Studio는 Git 및 Subversion 소스 제어 시스템과 통합됩�
 ![Solution Pad의 커밋되지 않은 파일](media/ide-tour-image23.png)
 
 Visual Studio에서 버전 제어를 사용하는 방법에 대한 자세한 내용은 [버전 제어](version-control.md) 문서를 참조하세요.
+
+## <a name="see-also"></a>참고 항목
+
+- [Windows의 Visual Studio IDE](/visualstudio/ide/visual-studio-ide)

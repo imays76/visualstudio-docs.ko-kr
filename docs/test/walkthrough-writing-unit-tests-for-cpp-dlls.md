@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 6cc733d3d926581801391a086c7886db3cec1bcc
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 9458fd6886243102f6479166fb9df21f9e4869fd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382730"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877259"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>방법: C++ DLL에 대한 단위 테스트 작성
 
@@ -117,53 +117,53 @@ ms.locfileid: "39382730"
 
 ##  <a name="make_functions_visible"></a> DLL 프로젝트에 테스트 프로젝트 연결
 
-1.  DLL 프로젝트를 테스트 프로젝트의 프로젝트 참조에 추가합니다.
+1. DLL 프로젝트를 테스트 프로젝트의 프로젝트 참조에 추가합니다.
 
-    1.  테스트 프로젝트의 속성을 열고 **공용 속성** > **프레임워크 및 참조**를 선택합니다.
+   1.  테스트 프로젝트의 속성을 열고 **공용 속성** > **프레임워크 및 참조**를 선택합니다.
 
-         ![C++ 프로젝트 속성 | 프레임워크 및 참조](../test/media/utecpp08.png)
+        ![C++ 프로젝트 속성 | 프레임워크 및 참조](../test/media/utecpp08.png)
 
-    2.  **새 참조 추가**를 선택합니다.
+   2.  **새 참조 추가**를 선택합니다.
 
-         **참조 추가** 대화 상자에서 DLL 프로젝트를 선택하고 **추가**를 선택합니다.
+        **참조 추가** 대화 상자에서 DLL 프로젝트를 선택하고 **추가**를 선택합니다.
 
-         ![C++ 프로젝트 속성 | 새 참조 추가](../test/media/utecpp09.png)
+        ![C++ 프로젝트 속성 | 새 참조 추가](../test/media/utecpp09.png)
 
-2.  주 단위 테스트 *.cpp* 파일에서 DLL 코드의 *.h* 파일을 포함합니다.
+2. 주 단위 테스트 *.cpp* 파일에서 DLL 코드의 *.h* 파일을 포함합니다.
 
-    ```cpp
-    #include "..\RootFinder\RootFinder.h"
-    ```
+   ```cpp
+   #include "..\RootFinder\RootFinder.h"
+   ```
 
-3.  내보낸 함수를 사용하는 기본 테스트를 추가합니다.
+3. 내보낸 함수를 사용하는 기본 테스트를 추가합니다.
 
-    ```cpp
-    TEST_METHOD(BasicTest)
-    {
-       CRootFinder rooter;
-       Assert::AreEqual(
-          // Expected value:
-          0.0,
-          // Actual value:
-          rooter.SquareRoot(0.0),
-          // Tolerance:
-          0.01,
-         // Message:
-         L"Basic test failed",
-         // Line number - used if there is no PDB file:
-         LINE_INFO());
-    }
-    ```
+   ```cpp
+   TEST_METHOD(BasicTest)
+   {
+      CRootFinder rooter;
+      Assert::AreEqual(
+         // Expected value:
+         0.0,
+         // Actual value:
+         rooter.SquareRoot(0.0),
+         // Tolerance:
+         0.01,
+        // Message:
+        L"Basic test failed",
+        // Line number - used if there is no PDB file:
+        LINE_INFO());
+   }
+   ```
 
-4.  솔루션을 빌드합니다.
+4. 솔루션을 빌드합니다.
 
-     새 테스트가 **테스트 탐색기**에 나타납니다.
+    새 테스트가 **테스트 탐색기**에 나타납니다.
 
-5.  **테스트 탐색기**에서 **모두 실행**을 선택합니다.
+5. **테스트 탐색기**에서 **모두 실행**을 선택합니다.
 
-     ![단위 테스트 탐색기 &#45; 기본 테스트 통과](../test/media/utecpp10.png)
+    ![단위 테스트 탐색기 &#45; 기본 테스트 통과](../test/media/utecpp10.png)
 
- 테스트 및 코드 프로젝트를 설정하고 코드 프로젝트에서 함수를 실행하는 테스트를 실행할 수 있는지 확인했습니다. 이제 실제 테스트 및 코드 작성을 시작할 수 있습니다.
+   테스트 및 코드 프로젝트를 설정하고 코드 프로젝트에서 함수를 실행하는 테스트를 실행할 수 있는지 확인했습니다. 이제 실제 테스트 및 코드 작성을 시작할 수 있습니다.
 
 ##  <a name="iterate"></a> 반복적으로 테스트를 확장하고 통과하도록 만들기
 

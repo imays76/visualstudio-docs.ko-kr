@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3714ce733b0388e3ac462a9495360171971a6750
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e2c2996513f3e6464d8f94522c2b427213882f6a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460562"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860788"
 ---
 # <a name="idiasourcefilegetuniqueid"></a>IDiaSourceFile::get_uniqueId
 이 이미지에 대 한 고유한 단순 정수 키 값을 검색 합니다.  
@@ -37,7 +37,7 @@ HRESULT get_uniqueId (
  [out] 이 이미지에 대 한 고유한 단순 정수 키 값을 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
  문자열에는 줄 번호 처리 가속화할 수 대신 키를 비교 합니다.  

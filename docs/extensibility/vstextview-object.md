@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc6691e1b9cd4bd778f70e9b8f4acee3d16601c0
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: d5b0b6e640f4fef6cf9508747cff010ff5b5ad6c
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586849"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495416"
 ---
 # <a name="vstextview-object"></a>VSTextView 개체
 텍스트 보기에는 사용자가 보고 텍스트 버퍼의 유니코드 텍스트를 편집할 수 있는 창입니다. 기본적으로 뷰는 편집기로 대부분의 사용자가 어떤 가리킵니다. 뷰는 버퍼에서 다양 한 텍스트 계층 (줄 바꿈, 개요 텍스트 및 등)로 구분 됩니다, 때문에 뷰 버퍼에 있는 텍스트의 정확한 표시 되도록 보장 되지 않습니다. 텍스트 보기에 대 한 자세한 내용은 참조 하세요. [기존 API를 사용 하 여 텍스트 보기에 액세스](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)  
@@ -30,7 +30,7 @@ ms.locfileid: "39586849"
   
 |인터페이스|설명|  
 |---------------|-----------------|  
-|[IDropSource](http://msdn.microsoft.com/library/windows/desktop/ms690071)|표준 OLE 인터페이스입니다.|  
+|[IDropSource](/windows/desktop/api/oleidl/nn-oleidl-idropsource)|표준 OLE 인터페이스입니다.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IDropTarget>|표준 OLE 인터페이스입니다.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IObjectWithSite>|표준 OLE 인터페이스입니다.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|표준 OLE 인터페이스입니다.|  
@@ -41,6 +41,6 @@ ms.locfileid: "39586849"
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsThreadSafeTextView>|다른 스레드에서 작업을 수행합니다.|  
   
 ## <a name="see-also"></a>참고자료  
- [그림 편집](http://msdn.microsoft.com/en-us/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)   
+ [그림 편집](https://www.microsoft.com/download/details.aspx?id=55984)   
  [VSTextBuffer 개체](../extensibility/vstextbuffer-object.md)   
  [기존 API를 사용 하 여 텍스트 보기에 액세스](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)

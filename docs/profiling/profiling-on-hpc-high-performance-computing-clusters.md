@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80f6d697cecdc63dd013ae91631b350c51fc0e90
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: aefdd145abce513e5311d4572a9da64105226b3b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34267847"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842380"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>HPC(고성능 컴퓨팅) 클러스터에서 프로파일링
 
@@ -40,7 +40,7 @@ HPC 컴퓨터 노드에서 프로파일링하려면 다음을 수행해야 합�
 
 - [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] 및 독립 실행형 버전의 프로파일링 도구를 HPC 컴퓨터 노드에 설치합니다. [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 및 독립 실행형 프로파일러의 설치 프로그램은 모두 Visual Studio 설치 미디어에 포함되어 있습니다. **참고** [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]를 설치한 후 프로파일링 도구를 설치하기 전에 컴퓨터를 다시 시작해야 합니다.
 
- 활성 HPC 컴퓨터 노드에 [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] 및 독립 실행형 프로파일링 도구를 설치하고 클러스터 컴퓨터에 대한 프로파일링을 활성화하려면 다음 단계를 수행합니다.
+  활성 HPC 컴퓨터 노드에 [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] 및 독립 실행형 프로파일링 도구를 설치하고 클러스터 컴퓨터에 대한 프로파일링을 활성화하려면 다음 단계를 수행합니다.
 
 1. HPC 팩과 함께 설치된 명령 프롬프트 창을 엽니다.
 
@@ -52,11 +52,11 @@ HPC 컴퓨터 노드에서 프로파일링하려면 다음을 수행해야 합�
 
     3. `clusrun /all /scheduler:` *%HeadNode% %ProfilerPath%* `/q /norestart`
 
-|||
-|-|-|
-|*%HeadNode%*|클러스터의 헤드 노드 이름입니다.|
-|*%FxPath%*|[!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] 설치 관리자의 경로입니다. Visual Studio 설치 미디어에서 경로는 WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe입니다.|
-|*%ProfilerPath%*|프로파일링 도구 설치 관리자의 독립 실행형 버전 경로입니다. Visual Studio 설치 미디어에서 경로는 Standalone Profiler\x64\vs_profiler.exe입니다.|
+| | |
+|------------------| - |
+| *%HeadNode%* | 클러스터의 헤드 노드 이름입니다. |
+| *%FxPath%* | [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] 설치 관리자의 경로입니다. Visual Studio 설치 미디어에서 경로는 WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe입니다. |
+| *%ProfilerPath%* | 프로파일링 도구 설치 관리자의 독립 실행형 버전 경로입니다. Visual Studio 설치 미디어에서 경로는 Standalone Profiler\x64\vs_profiler.exe입니다. |
 
 ## <a name="profile-on-an-hpc-compute-node"></a>HPC 계산 노드에서 프로파일링
 
@@ -68,9 +68,9 @@ HPC 성능 마법사를 사용하여 HPC 클러스터 및 대상 정보를 지�
 
 3. 마법사의 두 번째 페이지에서 프로파일링할 응용 프로그램을 선택합니다.
 
-    - 현재 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]에 열려 있는 프로젝트를 프로파일링하려면 **하나 이상의 사용 가능한 프로젝트** 옵션을 선택하고 목록에서 프로젝트 이름을 선택합니다.
+   - 현재 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]에 열려 있는 프로젝트를 프로파일링하려면 **하나 이상의 사용 가능한 프로젝트** 옵션을 선택하고 목록에서 프로젝트 이름을 선택합니다.
 
-    - 열린 프로젝트에 없는 이진 파일을 프로파일링하려면 **실행 파일(.EXE 파일)** 옵션을 선택합니다.
+   - 열린 프로젝트에 없는 이진 파일을 프로파일링하려면 **실행 파일(.EXE 파일)** 옵션을 선택합니다.
 
 4. **다음**을 클릭합니다.
 
@@ -137,16 +137,17 @@ HPC 성능 마법사를 사용하여 HPC 클러스터 및 대상 정보를 지�
 
 ### <a name="advanced-properties"></a>고급 속성
 
-|속성|설명|
-|--------------|-----------------|
-|**프로젝트 이름**|현재 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 프로젝트 또는 솔루션의 이름입니다.|
-|**프로파일러가 중지되면 정리**|true로 설정하면 실행 디렉터리에 배포된 이진 파일이 제거됩니다. 사용자 프로그램에서 만든 파일과 디렉터리는 이 단계에서 제거되지 않습니다. 실행 디렉터리와 배포 디렉터리를 IDE에서 만든 경우 IDE는 해당 디렉터리 제거를 시도하지만, IDE를 통해 배포되지 않은 파일이 포함되어 있는 경우에는 제거를 시도하지 않습니다.|
-|**배포할 추가 파일**|컴퓨터 노드에서 배포할 추가 파일의 세미콜론으로 구분된 목록을 지정합니다. 줄임표 단추(**...**)를 클릭하면 대화 상자를 통해 여러 파일을 선택할 수 있습니다.|
-|**Mpiexec 명령**|MPI 응용 프로그램을 시작 하는 응용 프로그램을 지정합니다. 기본값은 **mpiexec.exe**입니다.|
-|**Mpiexec 인수**|Mpiexec.exe 명령에 전달할 인수를 지정합니다.|
-|**클러스터에서 요청된 노드**|응용 프로그램을 실행할 클러스터의 노드 수를 지정합니다.|
-|**CRT 파일 배포**|true로 설정하면 클러스터에서 C/C++ 런타임을 배포합니다.|
-|**프로파일링 전 스크립트**|프로파일링 세션이 시작되기 전에 로컬 개발 컴퓨터에서 실행할 스크립트의 경로와 파일 이름을 지정합니다.|
-|**프로파일링 전 스크립트 인수**|프로파일링 전 스크립트에 전달할 인수를 지정합니다.|
-|**프로파일링 후 스크립트**|프로파일링 세션이 종료된 후에 로컬 개발 컴퓨터에서 실행할 스크립트의 경로와 파일 이름을 지정합니다.|
-|**프로파일링 후 스크립트 인수**|프로파일링 후 스크립트에 전달할 인수를 지정합니다.|
+| 속성 | 설명 |
+|---------------------------------------| - |
+| **프로젝트 이름** | 현재 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 프로젝트 또는 솔루션의 이름입니다. |
+| **프로파일러가 중지되면 정리** | true로 설정하면 실행 디렉터리에 배포된 이진 파일이 제거됩니다. 사용자 프로그램에서 만든 파일과 디렉터리는 이 단계에서 제거되지 않습니다. 실행 디렉터리와 배포 디렉터리를 IDE에서 만든 경우 IDE는 해당 디렉터리 제거를 시도하지만, IDE를 통해 배포되지 않은 파일이 포함되어 있는 경우에는 제거를 시도하지 않습니다. |
+| **배포할 추가 파일** | 컴퓨터 노드에서 배포할 추가 파일의 세미콜론으로 구분된 목록을 지정합니다. 줄임표 단추(**...**)를 클릭하면 대화 상자를 통해 여러 파일을 선택할 수 있습니다. |
+| **Mpiexec 명령** | MPI 응용 프로그램을 시작 하는 응용 프로그램을 지정합니다. 기본값은 **mpiexec.exe**입니다. |
+| **Mpiexec 인수** | Mpiexec.exe 명령에 전달할 인수를 지정합니다. |
+| **클러스터에서 요청된 노드** | 응용 프로그램을 실행할 클러스터의 노드 수를 지정합니다. |
+| **CRT 파일 배포** | true로 설정하면 클러스터에서 C/C++ 런타임을 배포합니다. |
+| **프로파일링 전 스크립트** | 프로파일링 세션이 시작되기 전에 로컬 개발 컴퓨터에서 실행할 스크립트의 경로와 파일 이름을 지정합니다. |
+| **프로파일링 전 스크립트 인수** | 프로파일링 전 스크립트에 전달할 인수를 지정합니다. |
+| **프로파일링 후 스크립트** | 프로파일링 세션이 종료된 후에 로컬 개발 컴퓨터에서 실행할 스크립트의 경로와 파일 이름을 지정합니다. |
+| **프로파일링 후 스크립트 인수** | 프로파일링 후 스크립트에 전달할 인수를 지정합니다. |
+

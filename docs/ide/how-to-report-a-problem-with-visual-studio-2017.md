@@ -1,10 +1,11 @@
 ---
-title: Visual Studio 2017의 문제를 보고하는 방법
+title: Visual Studio에서 문제를 보고하는 방법
+titleSuffix: ''
 description: Visual Studio 2017의 문제를 진단하고 수정할 수 있도록 Microsoft에 보고하는 방법을 알아봅니다.
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 03/11/2018
-ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: bee01179-cde5-4419-9095-190ee0ba5902
 author: TerryGLee
@@ -12,16 +13,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a059e25546abf0d1624d3c8bc08a531d3fc4b382
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 968b86af3620e42d7bca48335a03cca76f5afac3
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "36755926"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159284"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Visual Studio 2017의 문제를 보고하는 방법
 
 Visual Studio에 문제가 발생하는 경우와 관련하여 자세히 알려고 합니다. 진단하고 해결할 수 있도록 [개발자 커뮤니티](https://developercommunity.visualstudio.com/)에 대한 문제를 보고하는 방법은 다음과 같습니다.
+
+> [!NOTE]
+> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio에서 문제를 보고하는 방법](/visualstudio/mac/report-a-problem)을 참조하세요.
 
 ## <a name="report-a-problem-by-using-visual-studio"></a>Visual Studio를 사용하여 문제 보고
 
@@ -125,7 +129,7 @@ Visual Studio 2017 버전 15.5 부터는 사용자가 문제 보고에 대한 �
 
 문제를 보고하기 위해 Visual Studio를 사용할 수 없거나 원하지 않는 경우 [Visual Studio 개발자 커뮤니티](https://developercommunity.visualstudio.com/) 페이지에 문제가 이미 보고되고 솔루션이 게시됐을 수 있습니다.
 
-보고할 문제가 없지만 제품 피드백 또는 제안을 제공하려는 경우 따로 위치가 정해져 있습니다. 자세한 내용은 [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-ide) 페이지를 참조하세요.
+보고할 문제가 없지만 기능을 제안하려는 경우 따로 위치가 정해져 있습니다. 자세한 내용은 [기능 제안](https://developercommunity.visualstudio.com/content/idea/post.html?space=8) 페이지를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 

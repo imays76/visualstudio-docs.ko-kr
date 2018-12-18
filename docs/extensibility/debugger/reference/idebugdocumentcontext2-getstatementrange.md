@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c9f03b449142edaa2efc1da0128d4bb4a5b7c901
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c82954980602d9ab9e2fdd67f12abd2a7439309f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108026"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903597"
 ---
 # <a name="idebugdocumentcontext2getstatementrange"></a>IDebugDocumentContext2::GetStatementRange
-문서 컨텍스트의 파일 문의 범위를 가져옵니다.  
+문서 컨텍스트 파일 문의 범위를 가져옵니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -49,15 +49,15 @@ int GetStatementRange(
  [out에서] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) 구조 끝 위치를 사용 하 여 입력 됩니다. 이 정보가 필요 하지 않은 경우이 인수를 null 값으로 설정 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 문 범위에는이 문서의 컨텍스트에서 참조 하는 코드를 제공 하는 줄의 범위가입니다.  
+ 문 범위에는이 문서의 컨텍스트에서 참조 하는 코드를 발생 시킨 줄 범위가입니다.  
   
- 이 문서 컨텍스트 내에서 소스 코드 (의견 포함)의 범위를 가져오려면, 호출 된 [GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md) 메서드.  
+ 이 문서 컨텍스트 내에서 소스 코드 (주석 포함)의 범위를 가져오려면, 호출 된 [GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md) 메서드.  
   
 ## <a name="example"></a>예제  
- 다음 예제에서는 간단한에이 메서드를 구현 하는 방법을 보여 줍니다 `CDebugContext` 공개 하는 개체는 [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) 인터페이스입니다. 이 예에서는 시작 위치 null 값인 경우에 끝 위치를 채웁니다.  
+ 다음 예제에서는 간단한에 대 한이 메서드를 구현 하는 방법을 보여 줍니다 `CDebugContext` 노출 하는 개체를 [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) 인터페이스입니다. 이 예제에서는 시작 위치 null 값인 경우에 끝 위치를 채웁니다.  
   
 ```cpp  
 HRESULT CDebugContext::GetStatementRange(TEXT_POSITION* pBegPosition,  

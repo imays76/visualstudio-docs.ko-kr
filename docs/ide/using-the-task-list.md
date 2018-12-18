@@ -16,16 +16,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46a156e7f016c0966321240f5ae2362f2bc161e7
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 7766a7fd935cc1e1131c4780a5a88ef6fa54e838
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34336073"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349402"
 ---
 # <a name="use-the-task-list"></a>작업 목록 사용
 
 **작업 목록**을 사용하여 `TODO` 및 `HACK` 같은 토큰 또는 사용자 지정 토큰을 사용하는 코드 주석을 추적하고 코드에서 미리 정의된 위치로 직접 연결되는 바로 가기를 관리합니다. 목록의 항목을 클릭하면 소스 코드의 해당 위치로 이동합니다.
+
+> [!NOTE]
+> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [작업 주석(Mac용 Visual Studio)](/visualstudio/mac/task-comments)을 참조하세요.
 
 ## <a name="the-task-list-window"></a>작업 목록 창
 
@@ -65,9 +68,9 @@ ms.locfileid: "34336073"
 
 ### <a name="custom-tokens"></a>사용자 지정 토큰
 
-기본적으로 Visual Studio에는 `HACK`, `TODO`, `UNDONE` 및 `NOTE` 토큰이 포함됩니다. 대/소문자를 구분하지 않습니다.
+기본적으로 Visual Studio에는 `HACK`, `TODO`, `UNDONE` 및 `UnresolvedMergeConflict` 토큰이 포함됩니다. 대/소문자를 구분하지 않습니다. 또한 사용자가 직접 토큰을 만들 수도 있습니다.
 
-또한 사용자가 직접 토큰을 만들 수도 있습니다. 사용자 지정 토큰을 만들려면:
+사용자 지정 토큰을 만들려면:
 
 1. **도구** 메뉴에서 **옵션**을 선택합니다.
 
@@ -77,9 +80,11 @@ ms.locfileid: "34336073"
 
    ![Visual Studio 작업 목록](../ide/media/vs2015_task_list_options.png)
 
-3. **토큰** 범주에서 **이름** 텍스트 상자에 토큰 이름(예: **BUG**)을 입력합니다.
+3. **이름** 텍스트 상자에 토큰 이름(예: **BUG**)을 입력합니다.
 
-4. **우선 순위** 드롭다운 목록에서 새 토큰의 기본 우선 순위를 선택합니다. **추가** 단추를 선택합니다.
+4. **우선 순위** 드롭다운 목록에서 새 토큰의 기본 우선 순위를 선택합니다.
+
+5. **추가**를 선택합니다.
 
 ### <a name="c-todo-comments"></a>C++ TODO 주석
 
@@ -102,3 +107,4 @@ C++ TODO 주석을 끄려면 **도구** 메뉴에서 **옵션** > **텍스트 �
 ## <a name="see-also"></a>참고 항목
 
 - [작업 목록, 환경, 옵션 대화 상자](../ide/reference/task-list-environment-options-dialog-box.md)
+- [작업 주석(Mac용 Visual Studio)](/visualstudio/mac/task-comments)

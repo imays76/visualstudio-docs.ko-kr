@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cdeaef2bc963eca894403bf90e1c9fb720efd4d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 1e746cf0b93f5a9c0944a80c6cbaabedfbb9cc23
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459703"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895228"
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyrva"></a>IDiaEnumSymbolsByAddr::symbolByRVA
-상대 가상 주소 (RVA) 하 여 조회를 수행 하 여 열거자를 놓습니다.  
+가상 RVA (상대 주소) 하 여 조회를 수행 하 여 열거자를 배치 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -35,7 +35,7 @@ HRESULT symbolByRVA (
   
 #### <a name="parameters"></a>매개 변수  
  relativeVirtualAddress  
- [in] 이미지의 시작 부분에 상대적인 주소입니다.  
+ [in] 시작 이미지의 상대 주소입니다.  
   
  ppsymbol  
  [out] 반환 된 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 기호를 찾을 수를 나타내는 개체입니다.  

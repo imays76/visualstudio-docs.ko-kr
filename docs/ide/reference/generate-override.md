@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 메서드 재정의 생성
+title: 메서드 재정의 생성
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c366ce3d393e639590e5d45fc55ad5523be920b6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bb4a35c1f7c9e2752148e54f934a3fcbfb974136
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943868"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063644"
 ---
 # <a name="generate-an-override-in-visual-studio"></a>Visual Studio에서 재정의 생성
 
@@ -24,7 +24,7 @@ ms.locfileid: "31943868"
 
 - Visual Basic
 
-**대상:** 기본 클래스에서 재정의할 수 있는 메서드에 대한 코드를 즉시 생성할 수 있습니다.
+**내용:** 기본 클래스에서 재정의할 수 있는 메서드에 대한 코드를 즉시 생성할 수 있습니다.
 
 **시기:** 기본 클래스 메서드를 재정의하고 시그니처를 자동으로 생성하려고 합니다.
 
@@ -36,13 +36,13 @@ ms.locfileid: "31943868"
 
    - C#: 
 
-    ![IntelliSense 재정의 C#](media/override-intellisense-cs.png)
+      ![IntelliSense 재정의 C#](media/override-intellisense-cs.png)
 
    - Visual Basic:
 
-    ![IntelliSense 재정의 VB](media/override-intellisense-vb.png)
+      ![IntelliSense 재정의 VB](media/override-intellisense-vb.png)
 
-1. 기본 클래스에서 재정의할 메서드를 선택합니다.
+2. 기본 클래스에서 재정의할 메서드를 선택합니다.
 
    > [!TIP]
    > - 속성 아이콘 사용 ![속성 아이콘](media/override-property-cs.png) 목록에서 속성을 표시하거나 숨깁니다.
@@ -52,11 +52,11 @@ ms.locfileid: "31943868"
 
    - C#: 
 
-      ![재정의 결과 C#](media/override-result-cs.png)
+       ![재정의 결과 C#](media/override-result-cs.png)
 
    - Visual Basic:
 
-      ![재정의 결과 VB](media/override-result-vb.png)
+       ![재정의 결과 VB](media/override-result-vb.png)
 
 ## <a name="see-also"></a>참고 항목
 

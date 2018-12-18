@@ -16,41 +16,41 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9b5b66690d3856a2bf1fc6df417b60ab5e293127
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 4142ebe86ea69fbb0a74f25c2a7053a60c527cdb
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256746"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671562"
 ---
 # <a name="how-to-programmatically-create-new-visio-documents"></a>방법: 프로그래밍 방식으로 새 Visio 문서 만들기
-  새 Microsoft Office Visio 드로잉 문서를 만들 때 추가한 하는 `Microsoft.Office.Interop.Visio.Documents` 열려 있는 Visio 문서의 컬렉션입니다. 결과적으로 `Microsoft.Office.Interop.Visio.Documents.Add` 메서드는 새 Visio 드로잉 문서를 만듭니다. 자세한 내용은 VBA 참조 설명서에서 [Microsoft.Office.Interop.Visio.Documents.Add](http://msdn.microsoft.com/library/office/ff766868.aspx) 메서드를 참조하세요.  
+  새 Microsoft Office Visio 드로잉 문서를 만들려면 열려 있는 Visio 문서의 `Microsoft.Office.Interop.Visio.Documents` 컬렉션에 추가합니다. 결과적으로 `Microsoft.Office.Interop.Visio.Documents.Add` 메서드는 새 Visio 드로잉 문서를 만듭니다. 자세한 내용은 VBA 참조 설명서에서 [Microsoft.Office.Interop.Visio.Documents.Add](/office/vba/api/Visio.Documents.Add) 메서드를 참조하세요.  
   
 ## <a name="create-new-blank-documents"></a>비어 있는 새 문서 만들기  
   
 ### <a name="to-create-a-new-document"></a>새 문서를 만들려면  
   
--   사용 된 `Microsoft.Office.Interop.Visio.Documents.Add` 템플릿을 기반으로 하는 새 문서를 만드는 방법.  
+-   템플릿을 기반으로 하지 않는 빈 문서를 새로 만들려면 `Microsoft.Office.Interop.Visio.Documents.Add` 메서드를 사용합니다.  
   
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#1](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#1)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#1](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#1)]  
   
 ## <a name="create-documents-copied-from-existing-documents"></a>기존 문서에서 복사 하는 문서 만들기  
- `Microsoft.Office.Interop.Visio.Documents.Add` 메서드는 기존 Visio 문서의 복사본 인 새 문서를 만들 수 있습니다. 다이어그램의 파일 이름 및 정규화된 경로를 제공해야 합니다.  
+ `Microsoft.Office.Interop.Visio.Documents.Add` 메서드를 사용하면 기존 Visio 문서의 복사본인 새 문서를 만들 수 있습니다. 다이어그램의 파일 이름 및 정규화된 경로를 제공해야 합니다.  
   
 ### <a name="to-create-a-new-document-that-is-copied-from-an-existing-document"></a>기존 문서에서 복사된 새 문서를 만들려면  
   
--   호출 된 `Microsoft.Office.Interop.Visio.Documents.Add` 메서드 Visio 다이어그램의 경로 지정 합니다.  
+-   `Microsoft.Office.Interop.Visio.Documents.Add` 메서드를 호출하고 Visio 다이어그램의 경로를 지정합니다.  
   
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#2](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#2)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#2](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#2)]  
   
 ## <a name="create-stencils-copied-from-existing-stencils"></a>기존 스텐실에서 복사 된 스텐실 만들기  
- [Microsoft.Office.Interop.Visio.Documents.Add](http://msdn.microsoft.com/library/office/ff766868.aspx) 메서드는 기존 Visio 스텐실의 복사본인 새 스텐실을 만들 수 있습니다. 스텐실의 파일 이름 및 정규화된 경로를 제공해야 합니다.  
+ [Microsoft.Office.Interop.Visio.Documents.Add](/office/vba/api/Visio.Documents.Add) 메서드는 기존 Visio 스텐실의 복사본인 새 스텐실을 만들 수 있습니다. 스텐실의 파일 이름 및 정규화된 경로를 제공해야 합니다.  
   
 ### <a name="to-create-a-new-stencil-that-is-copied-from-an-existing-stencil"></a>기존 스텐실에서 복사된 새 스텐실을 만들려면  
   
--   호출 된 `Microsoft.Office.Interop.Visio.Documents.Add` 메서드 스텐실의 경로 지정 합니다.  
+-   `Microsoft.Office.Interop.Visio.Documents.Add` 메서드를 호출하고 스텐실의 경로를 지정합니다.  
   
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#3](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#3)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#3](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#3)]  
@@ -60,7 +60,7 @@ ms.locfileid: "35256746"
   
 ### <a name="to-create-a-new-document-that-is-based-on-an-existing-template"></a>기존 템플릿을 기반으로 새 문서를 만들려면  
   
--   호출 된 `Microsoft.Office.Interop.Visio.Documents.Add` 메서드 템플릿의 경로 지정 합니다.  
+-   `Microsoft.Office.Interop.Visio.Documents.Add` 메서드를 호출하고 템플릿의 경로를 지정합니다.  
   
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#4](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#4)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#4](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#4)]  

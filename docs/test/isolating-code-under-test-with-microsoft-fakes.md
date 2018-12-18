@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 Microsoft Fakes를 사용하여 테스트 중인 코드 격리
+title: Microsoft Fakes를 사용하여 테스트 중인 코드 격리
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -12,12 +12,12 @@ author: gewarren
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: 685927147d2b2ce45c450b46eea6070cc77c5aad
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 0ca26ca155f14ada97e432aea044166fbe32eee7
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380631"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067157"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Microsoft Fakes를 사용하여 테스트 중인 코드 격리
 
@@ -163,7 +163,6 @@ Fakes는 두 가지 버전이 있습니다.
     {
        return DateTime.Now.Year;
     }
-
 ```
 
 실제 버전은 호출할 때마다 매번 다른 값을 반환하므로 테스트하는 동안에는 `Now` 속성을 shim하려고 합니다.

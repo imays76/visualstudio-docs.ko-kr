@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52fb199af53d0fbbf30c0ae0dc6a2ad7083e4971
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: d4ca98b5e4f991e795af95e479fa57a38ca2b57a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234649"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912048"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>레거시 언어 서비스 파서 및 검사기
 파서가 언어 서비스의 핵심입니다. 관리 패키지 프레임 워크 (MPF) 언어 클래스에 표시 되는 코드에 대 한 정보를 선택 하는 언어 파서가 필요 합니다. 파서를 어휘 토큰으로 텍스트를 구분 하 고 그런 다음 해당 토큰 유형 및 기능을 식별 합니다.  
@@ -59,11 +59,11 @@ namespace MyNamespace
 ## <a name="types-of-parsers"></a>파서 형식  
  언어 서비스 파서 컴파일러의 일부로 사용 하는 파서 같지는 않습니다. 그러나이 유형의 파서 컴파일러 파서 같은 동일한 방식으로 스캐너와 파서를 사용 해야 합니다.  
   
--   스캐너 토큰 유형을 식별 하는 데 사용 됩니다. 이 정보는 구문 강조 표시 한 토큰 형식 예를 들어, 다른 작업을 트리거할 수 있는 중괄호 일치를 신속 하 게 식별 하는 데 사용 됩니다. 이 스캐너는 표현 된 <xref:Microsoft.VisualStudio.Package.IScanner> 인터페이스입니다.  
+- 스캐너 토큰 유형을 식별 하는 데 사용 됩니다. 이 정보는 구문 강조 표시 한 토큰 형식 예를 들어, 다른 작업을 트리거할 수 있는 중괄호 일치를 신속 하 게 식별 하는 데 사용 됩니다. 이 스캐너는 표현 된 <xref:Microsoft.VisualStudio.Package.IScanner> 인터페이스입니다.  
   
--   파서 토큰의 범위와 함수를 설명 하는 데 사용 됩니다. 이 정보는 메서드, 변수, 매개 변수, 선언 등의 언어 요소를 식별 하 고 멤버와 메서드 서명이 컨텍스트를 기반으로 목록을 제공 IntelliSense 작업에 사용 됩니다. 중괄호 및 괄호와 같은 일치 하는 언어 요소 쌍을 찾으려고이 파서도 사용 됩니다. 이 파서를 통해 액세스 합니다 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 의 메서드는 <xref:Microsoft.VisualStudio.Package.LanguageService> 클래스.  
+- 파서 토큰의 범위와 함수를 설명 하는 데 사용 됩니다. 이 정보는 메서드, 변수, 매개 변수, 선언 등의 언어 요소를 식별 하 고 멤버와 메서드 서명이 컨텍스트를 기반으로 목록을 제공 IntelliSense 작업에 사용 됩니다. 중괄호 및 괄호와 같은 일치 하는 언어 요소 쌍을 찾으려고이 파서도 사용 됩니다. 이 파서를 통해 액세스 합니다 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 의 메서드는 <xref:Microsoft.VisualStudio.Package.LanguageService> 클래스.  
   
- 언어 서비스 파서를 스캐너 구현 되는 방법을 달려 있습니다. 몇 가지 리소스가 사용 가능한 파서 작동 방식 및 사용자 고유의 파서를 작성 하는 방법을 설명 하는 합니다. 또한 몇 가지 무료 및 상용 제품은 파서를 만드는 데 도움이 되는 합니다.  
+  언어 서비스 파서를 스캐너 구현 되는 방법을 달려 있습니다. 몇 가지 리소스가 사용 가능한 파서 작동 방식 및 사용자 고유의 파서를 작성 하는 방법을 설명 하는 합니다. 또한 몇 가지 무료 및 상용 제품은 파서를 만드는 데 도움이 되는 합니다.  
   
 ### <a name="the-parsesource-parser"></a>ParseSource 파서  
  (여기서 토큰 변환할 실행 코드 형태의) 컴파일러의 일부로 사용 되는 파서를 달리 하는 언어 서비스 파서 다양 한 이유로 및 많은 다른 컨텍스트에서 호출할 수 있습니다. 이 접근 방식을 구현 하는 방법을 합니다 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 의 메서드는 <xref:Microsoft.VisualStudio.Package.LanguageService> 클래스에 게 달려 있습니다. 유의 해야 하는 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 백그라운드 스레드에서 메서드를 호출할 수 있습니다.  

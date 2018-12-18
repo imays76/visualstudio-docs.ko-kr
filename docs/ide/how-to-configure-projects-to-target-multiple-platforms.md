@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb194836f40ce599ee3509b11fc9849b6a7780ab
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 308858941d03f6341cf3d22af074be45d790e16b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942099"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930221"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>방법: 여러 플랫폼을 대상으로 한 프로젝트 구성
 
@@ -56,11 +56,11 @@ Visual Studio에서는 솔루션에서 다양한 CPU 아키텍처 또는 플랫�
 
 ### <a name="to-build-multiple-solution-configurations-at-once"></a>한 번에 여러 솔루션 구성을 빌드하려면
 
-1.  **Configuration Manager**를 사용하여 솔루션에 대해 두 개 이상의 대상 플랫폼을 추가합니다.
+1. **Configuration Manager**를 사용하여 솔루션에 대해 두 개 이상의 대상 플랫폼을 추가합니다.
 
-2.  **일괄 빌드** 창을 사용하여 한 번에 여러 솔루션 구성을 빌드합니다.
+2. **일괄 빌드** 창을 사용하여 한 번에 여러 솔루션 구성을 빌드합니다.
 
- 예를 들어 솔루션 수준 플랫폼을 [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)](으)로 설정하고 동일한 플랫폼을 대상으로 하는 솔루션 내에 프로젝트가 없도록 할 수 있습니다. 사용자 솔루션에는 각각 다른 플랫폼을 대상으로 하는 여러 프로젝트를 포함할 수 있습니다. 이러한 상황 중 하나가 발생하면 혼동을 피하기 위해 설명적인 이름으로 새 구성을 만드는 것이 좋습니다.
+   예를 들어 솔루션 수준 플랫폼을 [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)](으)로 설정하고 동일한 플랫폼을 대상으로 하는 솔루션 내에 프로젝트가 없도록 할 수 있습니다. 사용자 솔루션에는 각각 다른 플랫폼을 대상으로 하는 여러 프로젝트를 포함할 수 있습니다. 이러한 상황 중 하나가 발생하면 혼동을 피하기 위해 설명적인 이름으로 새 구성을 만드는 것이 좋습니다.
 
 ## <a name="see-also"></a>참고 항목
 

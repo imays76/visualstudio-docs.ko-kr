@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 22e44ace13e0f70bf74b71f17975b3a45cb76471
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: cf20b3f742bfc5ff6de6af080f3651f9d9027234
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808900"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940972"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>연습: Word 용 첫 VSTO 추가 기능에 만들기
   이 소개용 연습에서는 Microsoft Office Word용 VSTO 추가 기능을 만드는 방법을 보여 줍니다. 이러한 종류의 솔루션에서 만드는 기능은 열려 있는 문서에 관계없이 응용 프로그램 자체에서 사용할 수 있습니다.  
@@ -32,15 +32,15 @@ ms.locfileid: "38808900"
   
  이 연습에서는 다음 작업을 수행합니다.  
   
--   Word VSTO 추가 기능 프로젝트 만들기  
+- Word VSTO 추가 기능 프로젝트 만들기  
   
--   Word의 개체 모델을 사용하여 문서가 저장될 때 문서에 텍스트를 추가하는 코드 작성  
+- Word의 개체 모델을 사용하여 문서가 저장될 때 문서에 텍스트를 추가하는 코드 작성  
   
--   테스트를 위해 프로젝트 빌드 및 실행  
+- 테스트를 위해 프로젝트 빌드 및 실행  
   
--   VSTO 추가 기능이 개발 컴퓨터에서 더 이상 자동으로 실행되지 않도록 하기 위해 완료된 프로젝트 정리  
+- VSTO 추가 기능이 개발 컴퓨터에서 더 이상 자동으로 실행되지 않도록 하기 위해 완료된 프로젝트 정리  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>전제 조건  
  이 연습을 완료하려면 다음 구성 요소가 필요합니다.  
@@ -78,25 +78,25 @@ ms.locfileid: "38808900"
   
 ### <a name="to-add-a-paragraph-of-text-to-the-saved-document"></a>저장된 문서에 텍스트 단락을 추가하려면  
   
-1.  ThisAddIn 코드 파일에서 다음 코드를 `ThisAddIn` 클래스에 추가합니다. 새 코드에서는 문서가 저장될 때 발생하는 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> 이벤트의 이벤트 처리기를 정의합니다.  
+1. ThisAddIn 코드 파일에서 다음 코드를 `ThisAddIn` 클래스에 추가합니다. 새 코드에서는 문서가 저장될 때 발생하는 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> 이벤트의 이벤트 처리기를 정의합니다.  
   
-     사용자가 문서를 저장하면 이벤트 처리기에서 문서의 시작 부분에 새 텍스트를 추가합니다.  
+    사용자가 문서를 저장하면 이벤트 처리기에서 문서의 시작 부분에 새 텍스트를 추가합니다.  
   
-     [!code-vb[Trin_WordAddInTutorial#1](../vsto/codesnippet/VisualBasic/FirstWordAddIn/ThisAddIn.vb#1)]
-     [!code-csharp[Trin_WordAddInTutorial#1](../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs#1)]  
+    [!code-vb[Trin_WordAddInTutorial#1](../vsto/codesnippet/VisualBasic/FirstWordAddIn/ThisAddIn.vb#1)]
+    [!code-csharp[Trin_WordAddInTutorial#1](../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs#1)]  
   
-    > [!NOTE]  
-    >  이 코드는 인덱스 값 1을 사용하여 <xref:Microsoft.Office.Interop.Word._Document.Paragraphs%2A> 컬렉션의 첫 번째 단락에 액세스합니다. Visual Basic 및 Visual C#은 0부터 시작하는 배열을 사용하지만 Word 개체 모델에서 대다수 컬렉션의 배열 하한은 1입니다. 자세한 내용은 [Office 솔루션에서 코드를 작성할](../vsto/writing-code-in-office-solutions.md)합니다.  
+   > [!NOTE]  
+   >  이 코드는 인덱스 값 1을 사용하여 <xref:Microsoft.Office.Interop.Word._Document.Paragraphs%2A> 컬렉션의 첫 번째 단락에 액세스합니다. Visual Basic 및 Visual C#은 0부터 시작하는 배열을 사용하지만 Word 개체 모델에서 대다수 컬렉션의 배열 하한은 1입니다. 자세한 내용은 [Office 솔루션에서 코드를 작성할](../vsto/writing-code-in-office-solutions.md)합니다.  
   
-2.  C#을 사용하는 경우 필요한 다음 코드를 `ThisAddIn_Startup` 이벤트 처리기에 추가합니다. 이 코드는 `Application_DocumentBeforeSave` 이벤트 처리기를 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> 이벤트와 연결하는 데 사용됩니다.  
+2. C#을 사용하는 경우 필요한 다음 코드를 `ThisAddIn_Startup` 이벤트 처리기에 추가합니다. 이 코드는 `Application_DocumentBeforeSave` 이벤트 처리기를 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> 이벤트와 연결하는 데 사용됩니다.  
   
-     [!code-csharp[Trin_WordAddInTutorial#2](../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs#2)]  
+    [!code-csharp[Trin_WordAddInTutorial#2](../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs#2)]  
   
- 문서가 저장될 때 문서를 수정하기 위해 앞의 코드 예제에서는 다음 개체를 사용합니다.  
+   문서가 저장될 때 문서를 수정하기 위해 앞의 코드 예제에서는 다음 개체를 사용합니다.  
   
 -   `ThisAddIn` 클래스의 `Application` 필드. `Application` 필드는 Word의 현재 인스턴스를 나타내는 <xref:Microsoft.Office.Interop.Word.Application> 개체를 반환합니다.  
   
--   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> 이벤트에 대한 이벤트 처리기의 `Doc` 매개 변수입니다. `Doc` 매개 변수는 저장된 문서를 나타내는 <xref:Microsoft.Office.Interop.Word.Document> 개체입니다. 자세한 내용은 [Word 개체 모델 개요](../vsto/word-object-model-overview.md)합니다.  
+-   `Doc` 이벤트에 대한 이벤트 처리기의 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> 매개 변수입니다. `Doc` 매개 변수는 저장된 문서를 나타내는 <xref:Microsoft.Office.Interop.Word.Document> 개체입니다. 자세한 내용은 [Word 개체 모델 개요](../vsto/word-object-model-overview.md)합니다.  
   
 ## <a name="test-the-project"></a>프로젝트 테스트  
   

@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca63b23e9f87e807b3eec0e3ad35ea5414ac8dc6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bd2273e7ca2769c5dde43d1c29f08989503659f4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107415"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949125"
 ---
 # <a name="frameinfoflags"></a>FRAMEINFO_FLAGS
-검색할 스택 프레임 개체에 대 한 정보를 지정 합니다.  
+스택 프레임 개체에 대 한 검색 정보를 지정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -135,69 +135,69 @@ public enum enum_FRAMEINFO_FLAGS {
  초기화/사용 된 `m_pModule` 필드입니다.  
   
  FIF_FUNCNAME_FORMAT  
- 함수 이름 형식을 지정합니다. 결과에 반환 됩니다는 `m_bstrFunName` 필드와 다른 필드가 작성 됩니다.  
+ 함수 이름의 표시 형식을 지정 합니다. 결과에 반환 됩니다는 `m_bstrFunName` 필드 및 기타 필드가 채워집니다.  
   
  FIF_FUNCNAME_RETURNTYPE  
  반환 형식이 추가 된 `m_bstrFuncName` 필드입니다.  
   
  FIF_FUNCNAME_ARGS  
- 추가 대 한 인수는 `m_bstrFuncName` 필드입니다.  
+ 에 대 한 인수를 추가 합니다 `m_bstrFuncName` 필드입니다.  
   
  FIF_FUNCNAME_LANGUAGE  
- 언어를 추가 하는 `m_bstrFuncName` 필드입니다.  
+ 추가 언어는 `m_bstrFuncName` 필드입니다.  
   
  FIF_FUNCNAME_MODULE  
- 모듈 이름에 추가 하는 `m_bstrFuncName` 필드입니다.  
+ 모듈 이름을 추가 합니다 `m_bstrFuncName` 필드입니다.  
   
  FIF_FUNCNAME_LINES  
- 추가 하는 줄 수는 `m_bstrFuncName` 필드입니다.  
+ 줄 번호를 추가 합니다 `m_bstrFuncName` 필드입니다.  
   
  FIF_FUNCNAME_OFFSET  
- 에 추가 `m_bstrFuncName` 경우 줄의 시작 부분부터 바이트 오프셋 필드 `FIF_FUNCNAME_LINES` 지정 됩니다. 경우 `FIF_FUNCNAME_LINES` 를 지정 하지 않으면 줄 번호를 사용할 수 없는 경우 추가 하는 오프셋 (바이트)는 함수 시작 부분에서 또는 합니다.  
+ 에 추가 합니다 `m_bstrFuncName` 줄의 시작 부분에서 바이트 오프셋 필드 `FIF_FUNCNAME_LINES` 지정 됩니다. 경우 `FIF_FUNCNAME_LINES` 지정 하지 않으면 줄 번호를 사용할 수 없는 경우 추가 오프셋 (바이트)를 함수 시작 지점에서 또는 합니다.  
   
  FIF_FUNCNAME_ARGS_TYPES  
- 각 함수 인수를 형식에 추가 `m_bstrFuncName` 필드입니다.  
+ 각 함수 인수의 형식을 추가 합니다 `m_bstrFuncName` 필드입니다.  
   
  FIF_FUNCNAME_ARGS_NAMES  
- 각 함수 인수 이름을 추가 하는 `m_bstrFuncName` 필드입니다.  
+ 각 함수 인수의 이름을 추가 합니다 `m_bstrFuncName` 필드입니다.  
   
  FIF_FUNCNAME_ARGS_VALUES  
- 각 함수 인수에 값 추가 `m_bstrFuncName` 필드입니다.  
+ 각 함수 인수의 값을 추가 합니다 `m_bstrFuncName` 필드입니다.  
   
  FIF_FUNCNAME_ARGS_ALL  
- 추가 유형, 이름 및 값에 대 한 모든 인수는 `m_bstrFuncName` 필드입니다.  
+ 형식, 이름 및 값에 대 한 모든 인수를 추가 합니다 `m_bstrFuncName` 필드입니다.  
   
  FIF_ARGS_TYPES  
  인수 형식이 검색 되 고 형식이 지정 됩니다.  
   
  FIF_ARGS_NAMES  
- 인수 이름 검색 및 서식이 지정 됩니다.  
+ 인수 이름이 검색 되 고 형식이 지정 됩니다.  
   
  FIF_ARGS_VALUES  
- 인수 값 검색 및 서식이 지정 됩니다.  
+ 인수 값 검색 되 고 형식이 지정 됩니다.  
   
  FIF_ARGS_ALL  
  검색 및 유형, 이름 및 값의 모든 인수 형식을 지정 합니다.  
   
  FIF_ARGS_NOFORMAT  
- 인수 형식이 수지 않습니다 지정 (예를 들어 수행 하지 열기와 닫기 괄호는 인수 목록을 추가 하거나 수 없는 인수 사이의 구분 기호를 추가).  
+ 인수 형식이지 않습니다 됩니다 지정 합니다 (예를 들어 하지 열기 및 닫기 괄호로 인수 목록에 추가 하지 수 없는 인수 사이의 구분 기호를 추가).  
   
  FIF_ARGS_NO_FUNC_EVAL  
- 함수 (속성) 평가 사용 하지 않도록 인수 값을 검색할 때 지정 합니다.  
+ 함수 (속성)를 실행 해서는 안 인수 값을 검색할 때 지정 합니다.  
   
  FIF_FILTER_NON_USER_CODE  
- 디버그 엔진 포함 되기 때문에 사용자 코드가 아닌 프레임을 필터링 하는 것입니다.  
+ 디버그 엔진이 포함 되지 않으므로 사용자 코드가 아닌 프레임을 필터링 하는 것입니다.  
   
  FIF_ARGS_NO_TOSTRING  
  허용 안 함 `ToString()` 함수 평가 또는 함수 인수를 반환 하는 경우의 형식을 지정 합니다.  
   
  FIF_DESIGN_TIME_EXPR_EVAL  
- 호스팅 프로세스를 사용 하지 않고 호스팅된 응용 프로그램 도메인에서 프레임 정보를 참조 해야 합니다.  
+ 호스팅 프로세스를 사용 하지 않고 호스팅된 응용 프로그램 도메인에서 프레임 정보를 얻을 수 해야 합니다.  
   
 ## <a name="remarks"></a>설명  
- 이러한 플래그에 전달 되는 [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) 및 [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) 를 초기화할 수 있는 필드를 나타내는 방법은 [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) 구조 또는 구조입니다.  
+ 이러한 플래그에 전달 되는 [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) 및 [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) 에 초기화할 필드를 나타내려면 메서드를 [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) 구조체 또는 구조체입니다.  
   
- 이러한 플래그의 필드를 나타내기 위해 사용도 [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) 구조는 사용 되지 않으며 유효한 구조를 반환 하는 경우. 이러한 값에 비트와 함께 사용할 수 있습니다 `OR`합니다.  
+ 이러한 플래그는의 필드를 나타내는 데 또한 합니다 [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) 구조는 유효 하 고 사용 되는 반환 하는 경우. 이러한 값을 비트 결합할 수 있습니다 `OR`합니다.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  

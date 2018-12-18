@@ -17,14 +17,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f6ab40efbba692cfa85f14b750d3c853d1112704
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 5067c9f93a489c09962a9402f4fe7672cbd61108
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765741"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818447"
 ---
 # <a name="da0029-unsupported-clr-version"></a>DA0029: 지원되지 않는 CLR 버전
+
 |||  
 |-|-|  
 |규칙 ID|DA0029|  
@@ -32,12 +33,12 @@ ms.locfileid: "34765741"
 |프로파일링 방법|명령줄에서 프로파일링|  
 |메시지|지원되지 않는 CLR 버전이 수집하는 동안 발견되었습니다. 관리되는 기호가 제대로 확인되지 않을 수 있습니다.|  
 |규칙 유형|정보.|  
-  
+
 ## <a name="cause"></a>원인  
  프로파일링 도구에서 지원되지 않는 [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)]을(를) 사용하는 응용 프로그램 프로파일링하려고 합니다.  
-  
+
 ## <a name="rule-description"></a>규칙 설명  
  이 경고는 프로파일링 도구가 응용 프로그램에서 실행되는 관리되는 코드에 대한 기호를 확인할 수 없기 때문에 발생합니다. 프로파일링 도구는 [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)]을(를) 실행하는 응용 프로그램에 대한 관리되는 코드 기호를 확인할 수 없습니다.  
-  
+
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법  
  없음

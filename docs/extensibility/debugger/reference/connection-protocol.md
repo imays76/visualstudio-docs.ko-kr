@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e1e1dc8cd22b529eafd6183578be7de6ffe69549
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d70aa31e7574e9fcdb0ed4e8d89847e832f3739b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110005"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832772"
 ---
 # <a name="connectionprotocol"></a>CONNECTION_PROTOCOL
-디버그 하는 서버와 디버그 패키지 (DE) 간의 통신에 사용 되는 프로토콜을 나타냅니다.  
+디버그 패키지 (DE) 및 디버그 서버 간의 통신에 사용 되는 프로토콜을 나타냅니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -53,16 +53,16 @@ public enum CONNECTION_PROTOCOL {
   
 #### <a name="parameters"></a>매개 변수  
  CONNECTION_NONE  
- 서버를 연결 하지 했습니다.  
+ 서버에 없는 연결 되었습니다.  
   
  CONNECTION_UNKNOWN  
  연결 된 내용이 있지만 알 수 없는 형식입니다.  
   
  CONNECTION_LOCAL  
- 로컬 서버입니다.  
+ 로컬 서버 연결이입니다.  
   
  CONNECTION_PIPE  
- 명명 된 파이프를 통해 연결이 있습니다.  
+ 명명 된 파이프를 통해 연결이 됩니다.  
   
  CONNECTION_TCPIP  
  연결에서 TCP/IP를 사용 합니다.  

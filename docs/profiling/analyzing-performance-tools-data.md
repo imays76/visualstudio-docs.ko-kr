@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b67db666c61d70c4fdfe4530e3249c5d86c1a6a7
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 628c7149a4f79a208ee9258ab2158cf8808a7fb5
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34690854"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50744835"
 ---
 # <a name="analyze-performance-tools-data"></a>성능 도구 데이터 분석
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구의 성능 보고서를 사용하면 응용 프로그램 성능 문제를 확인하고 분석할 수 있습니다. 이 섹션에서는 성능 데이터를 검사하는 데 사용할 수 있는 성능 보고서 및 뷰에 대한 개요를 제공합니다.  
@@ -44,4 +44,4 @@ ms.locfileid: "34690854"
 ## <a name="see-also"></a>참고 항목  
  [성능 탐색기](../profiling/performance-explorer.md)  
  [Visual Studio의 프로파일링](../profiling/index.md)  
- [프로파일링 기능 둘러보기](../profiling/profiling-feature-tour.md)
+ [프로파일링 도구 살펴보기](../profiling/profiling-feature-tour.md)

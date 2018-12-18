@@ -9,12 +9,12 @@ description: 선택한 Visual Studio 구독에 포함된 Xamarin University Trai
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 0ba8ec977c0a59e5ae5406cb6bb381c24338d333
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: df8bc6abc23c4258872b0983b2443e757ca849db
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281146"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838077"
 ---
 # <a name="xamarin-university-training-benefit-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Xamarin University 교육 혜택
 
@@ -28,12 +28,12 @@ Visual Studio Dev Essentials 멤버는 선택한 무료 교육 과정, 게스트
 ## <a name="activation-steps"></a>활성화 단계
 1.  [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)에 로그인합니다.
 2.  전문적인 개발 섹션에서 Xamarin University 교육 타일을 찾고 혜택 타일의 왼쪽 아래에 있는 **활성화** 링크를 클릭합니다.
-
-    <img alt="Xamarin University Training Benefit Tile" src="_img/vs-xamarin/vs-xamarin-tile.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![Xamarin University 교육 혜택 타일](_img/vs-xamarin/vs-xamarin-tile.png)
 
 3.  “Microsoft Visual Studio용 Xamarin University 모바일 교육”이라는 Xamarin University 웹 페이지로 리디렉션됩니다.  **지금 구독 활성화**를 클릭합니다.
-
-    <img alt="Activate My Subscription Now" src="_img/vs-xamarin/vs-xamarin-activate.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![지금 구독 활성화](_img/vs-xamarin/vs-xamarin-activate.png)
 
     > [!NOTE]
     > 화면 해상도 및 확대/축소 수준에 따라 **지금 구독 활성화** 단추를 보기 위해 아래로 스크롤해야 할 수도 있습니다.
@@ -47,26 +47,27 @@ Visual Studio Dev Essentials 멤버는 선택한 무료 교육 과정, 게스트
     > 5. Xamarin University 교육 혜택을 다시 활성화합니다.
 
 4.  최근에 Xamarin이 Microsoft 인증으로 이동되었다는 알림이 포함된 로그인 페이지가 표시됩니다.  **Microsoft에 의견 보내기**를 클릭합니다.
-
-    <img alt="Connect with Microsoft" src="_img/vs-xamarin/vs-xamarin-connect.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![Microsoft에 의견 보내기](_img/vs-xamarin/vs-xamarin-connect.png)
 
 5. 그런 다음, 로그인하고 전자 메일 주소 및 기본 프로필에 액세스하기 위해 Xamarin University에 대한 권한을 부여할지 묻는 메시지가 표시됩니다.  계속하려면 **예**를 클릭합니다. 필요한 경우 나중에 응용 프로그램 권한을 변경할 수 있습니다.
-
-    <img alt="Approve access" src="_img/vs-xamarin/vs-xamarin-access.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![액세스 승인](_img/vs-xamarin/vs-xamarin-access.png)
 
     > [!NOTE]
     > Xamarin University 혜택을 사용하려면 로그인이 필요하므로 **아니요**를 클릭하면 이전 페이지로 돌아가고 교육을 진행할 수 없습니다.
 
 
 6. 새 계정에 대한 환영 메시지가 표시됩니다.  **학습 시작**을 클릭합니다.
-
-    <img alt="Welcome message" src="_img/vs-xamarin/vs-xamarin-confirm.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![환영 메시지](_img/vs-xamarin/vs-xamarin-confirm.png)
 
 7. 정말 간단하죠.  Xamarin University 포털이 표시되고 학습을 시작할 준비가 되었습니다.
-
-     <img alt="Xamarin University portal" src="_img/vs-xamarin/vs-xamarin-portal.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![Xamarin University 포털](_img/vs-xamarin/vs-xamarin-portal.png)
 
 ## <a name="eligibility"></a>자격
+
 | 구독 수준                                                 |     채널                                            | 이점                                                          | 갱신 가능?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise(표준, 연간 클라우드)   | VL, Azure, 일반 정품, 선택한 NFR<sup>1</sup> | 6개월       |  예 |
@@ -76,7 +77,7 @@ Visual Studio Dev Essentials 멤버는 선택한 무료 교육 과정, 게스트
 | Visual Studio Dev Essentials | 해당 없음  | 체험 플랜                                             |  예        |
 | Visual Studio Enterprise, Visual Studio Professional(월간 클라우드) | Azure                                       | 사용할 수 없음                                                           |해당 없음|
 
-<sup>1</sup> *포함: NFR(전매 금지), VSIP(Visual Studio 업계 파트너).  MPN(Microsoft 파트너 네트워크), FTE, MCT Software & Services Developer, BizSpark, Imagine, MVP(Microsoft Valued Partner), RD(Region Director).   제외: MCT Software & Services.*
+<sup>1</sup> *포함: NFR(전매 금지), VSIP(Visual Studio 업계 파트너).  MPN(Microsoft 파트너 네트워크), FTE, MCT Software & Services Developer, BizSpark, Imagine, MVP(Microsoft Valued Professional), RD(Region Director).   제외: MCT Software & Services.*
 
 
 어떤 구독을 사용하고 있는지 확실하지 않나요?  자신의 이메일 주소에 할당된 모든 구독을 보려면 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)에 연결합니다. 일부 구독이 표시되지 않으면 하나 이상이 다른 전자 메일 주소에 할당되어 있을 수 있습니다.  해당 구독을 보려면 해당 전자 메일 주소로 로그인해야 합니다.
@@ -88,4 +89,4 @@ A: Xamarin University 계정 및 진행 상태는 그대로 유지되지만 구�
 ## <a name="support-resources"></a>지원 리소스
 -  Xamarin University와 관련하여 도움이 필요하세요?  [https://university.xamarin.com/support](https://university.xamarin.com/support)에서 다양한 지원 리소스를 찾을 수 있습니다.
 -  Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 Visual Studio [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)에 문의하세요.
--  Visual Studio IDE, Visual Studio Team Services 또는 기타 Visual Studio 제품 또는 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
+-  Visual Studio IDE, Azure DevOps Services 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.

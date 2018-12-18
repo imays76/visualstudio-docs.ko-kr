@@ -20,18 +20,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3aa3aaa197f392d300e8787d582314846e789f47
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 2d3f6b271eb6b9b663e30953fa597fb7d8cec6ac
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808794"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348528"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>방법: 구성 만들기 및 편집
 
 솔루션에 대한 여러 가지 빌드 구성을 만들 수 있습니다. 예를 들어 테스터가 문제를 찾고 해결하는 데 사용할 수 있는 디버그 빌드를 구성할 수 있고, 다른 고객에게 배포할 수 있는 다양한 종류의 빌드를 구성할 수 있습니다.
 
-[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
+> [!NOTE]
+> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio에서 구성 만들기 및 편집](/visualstudio/mac/create-and-edit-configurations)을 참조하세요.
 
 ## <a name="create-build-configurations"></a>빌드 구성 만들기
 
@@ -127,3 +128,4 @@ ms.locfileid: "38808794"
 - [빌드 구성 이해](../ide/understanding-build-configurations.md)
 - [Visual Studio에서 프로젝트 및 솔루션 빌드 및 정리](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [프로젝트 및 솔루션 속성 관리](managing-project-and-solution-properties.md)
+- [구성 만들기 및 편집(Mac용 Visual Studio)](/visualstudio/mac/create-and-edit-configurations)

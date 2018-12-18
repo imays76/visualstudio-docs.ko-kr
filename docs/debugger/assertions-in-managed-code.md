@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e5b4c66beba2a4c3953a0720a3f770f7f651db79
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 07f422348a10bbe6d5c02a50073c9486a679cfaf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465410"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892066"
 ---
 # <a name="assertions-in-managed-code"></a>관리 코드에 어설션 사용
 어설션 또는 `Assert` 문은 `Assert` 문에 대한 인수로 지정하는 조건을 테스트합니다. 조건이 true로 평가되면 동작이 발생하지 않고, 조건이 false로 평가되면 어설션이 실패합니다. 디버그 빌드로 실행 중인 경우 프로그램 중단 모드가 시작됩니다.  
@@ -52,7 +52,7 @@ ms.locfileid: "31465410"
 ##  <a name="BKMK_Asserts_in_the_System_Diagnostics_Namespace"></a> System.Diagnostics Namespace의 assert  
  Visual Basic 및 Visual C#에서는 `Assert` 네임스페이스에 있는 <xref:System.Diagnostics.Debug> 또는 <xref:System.Diagnostics.Trace>에서 <xref:System.Diagnostics> 메서드를 사용할 수 있습니다. <xref:System.Diagnostics.Debug> 클래스 메서드는 프로그램의 릴리스 버전에 포함되지 않으므로 릴리스 코드의 크기를 증가시키거나 속도를 떨어뜨리지 않습니다.  
   
- C++는 <xref:System.Diagnostics.Debug> 클래스 메서드를 지원하지 않습니다. 사용 하 여 동일한 결과 얻을 수는 <xref:System.Diagnostics.Trace> 와 같은 클래스에 조건부 컴파일을 `#ifdef DEBUG`... `#endif`.  
+ C++는 <xref:System.Diagnostics.Debug> 클래스 메서드를 지원하지 않습니다. 사용 하 여 동일한 효과 얻을 수 있습니다 합니다 <xref:System.Diagnostics.Trace> 와 같은 클래스에 조건부 컴파일을 `#ifdef DEBUG`... `#endif`.  
   
  [항목 내용](#BKMK_In_this_topic)  
   
@@ -144,22 +144,22 @@ Debug.Assert ( temp != 0 );
   
  그 밖의 경우에 <xref:System.Diagnostics.Trace> 메서드가 작동하려면 프로그램의 소스 파일 맨 위에 다음 중 하나가 있어야 합니다.  
   
--   Visual Basic에서는 `#Const TRACE = True`  
+- Visual Basic에서는 `#Const TRACE = True`  
   
--   Visual C# 및 C++에서는 `#define TRACE`  
+- Visual C# 및 C++에서는 `#define TRACE`  
   
- 또는 다음과 같은 TRACE 옵션을 사용하여 프로그램을 빌드해야 합니다.  
+  또는 다음과 같은 TRACE 옵션을 사용하여 프로그램을 빌드해야 합니다.  
   
--   Visual Basic에서는 `/d:TRACE=True`  
+- Visual Basic에서는 `/d:TRACE=True`  
   
--   Visual C# 및 C++에서는 `/d:TRACE`  
+- Visual C# 및 C++에서는 `/d:TRACE`  
   
- C# 또는 Visual Basic 릴리스 빌드에서 Debug 메서드를 사용해야 하는 경우 릴리스 구성에서 디버그 기호를 정의해야 합니다.  
+  C# 또는 Visual Basic 릴리스 빌드에서 Debug 메서드를 사용해야 하는 경우 릴리스 구성에서 디버그 기호를 정의해야 합니다.  
   
- C++는 <xref:System.Diagnostics.Debug> 클래스 메서드를 지원하지 않습니다. 사용 하 여 동일한 결과 얻을 수는 <xref:System.Diagnostics.Trace> 와 같은 클래스에 조건부 컴파일을 `#ifdef DEBUG`... `#endif`. 이러한 기호를 정의할 수는  **\<프로젝트 > 속성 페이지** 대화 상자. 자세한 내용은 참조 [Visual Basic 디버그 구성에 대 한 프로젝트 설정 변경](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) 또는 [C 또는 c + + 디버그 구성에 대 한 프로젝트 설정 변경](../debugger/project-settings-for-a-cpp-debug-configuration.md)합니다.  
+  C++는 <xref:System.Diagnostics.Debug> 클래스 메서드를 지원하지 않습니다. 사용 하 여 동일한 효과 얻을 수 있습니다 합니다 <xref:System.Diagnostics.Trace> 와 같은 클래스에 조건부 컴파일을 `#ifdef DEBUG`... `#endif`. 이러한 기호를 정의할 수 있습니다 합니다  **\<프로젝트 > 속성 페이지** 대화 상자. 자세한 내용은 [Visual Basic 디버그 구성에 대 한 프로젝트 설정 변경](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) 또는 [C 또는 c + + 디버그 구성에 대 한 프로젝트 설정 변경](../debugger/project-settings-for-a-cpp-debug-configuration.md)합니다.  
   
 ##  <a name="BKMK_Assert_arguments"></a> Assert 인수  
- <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> 및 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>에는 세 가지 인수가 사용됩니다. 첫 번째 인수는 확인할 조건으로, 필수 인수입니다. 호출 하는 경우 <xref:System.Diagnostics.Trace.Assert(System.Boolean)?displayProperty=fullName> 또는 <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=fullName> 하나의 인수를 사용는 `Assert` 메서드는 조건을 확인 하 고, 결과가 false 인 경우에 호출 스택의 내용을 출력는 **출력** 창. 다음 예제에서는 <xref:System.Diagnostics.Trace.Assert(System.Boolean)?displayProperty=fullName> 및 <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=fullName>를 보여 줍니다.  
+ <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> 및 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>에는 세 가지 인수가 사용됩니다. 첫 번째 인수는 확인할 조건으로, 필수 인수입니다. 호출 하는 경우 <xref:System.Diagnostics.Trace.Assert(System.Boolean)?displayProperty=fullName> 또는 <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=fullName> 하나의 인수를 사용 합니다 `Assert` 메서드 조건을 확인 하 고, 결과가 false 인 경우에 호출 스택의 내용을 출력 합니다 **출력** 창. 다음 예제에서는 <xref:System.Diagnostics.Trace.Assert(System.Boolean)?displayProperty=fullName> 및 <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=fullName>를 보여 줍니다.  
   
 ```VB  
 Debug.Assert(stacksize > 0)  
@@ -199,15 +199,15 @@ Trace.Assert ( stacksize > 0, "Out of stack space", "Failed in inctemp" );
  [항목 내용](#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_Customizing_Assert_behavior"></a> Assert 동작 사용자 지정  
- 사용자 인터페이스 모드로 응용 프로그램을 실행 하는 경우는 `Assert` 메서드 표시는 **어설션 오류** 조건이 실패 하면 대화 상자. 어설션이 실패할 때 발생 하는 작업에 의해 제어 되는 <xref:System.Diagnostics.Debug.Listeners%2A> 또는 <xref:System.Diagnostics.Trace.Listeners%2A> 속성입니다.  
+ 사용자 인터페이스 모드로 응용 프로그램을 실행 하는 경우는 `Assert` 메서드 표시 합니다 **어설션이 실패 한** 조건이 실패 하면 대화 상자. 어설션이 실패할 때 발생 하는 작업에 의해 제어 되는 <xref:System.Diagnostics.Debug.Listeners%2A> 또는 <xref:System.Diagnostics.Trace.Listeners%2A> 속성입니다.  
   
  <xref:System.Diagnostics.TraceListener> 개체를 `Listeners` 컬렉션에 추가하거나, <xref:System.Diagnostics.TraceListener>를 `Listeners` 컬렉션에서 제거하거나, 기존 <xref:System.Diagnostics.TraceListener.Fail%2A?displayProperty=fullName>의 `TraceListener` 메서드를 다르게 동작하도록 재정의하는 방법으로 출력 동작을 사용자 지정할 수 있습니다.  
   
- 예를 들어, 재정의할 수는 <xref:System.Diagnostics.TraceListener.Fail%2A?displayProperty=fullName> 메서드를 표시 하는 대신 프로그램 이벤트 로그에 쓰기는 **어설션이 실패 한** 대화 상자.  
+ 예를 들어 재정의할 수 있습니다 합니다 <xref:System.Diagnostics.TraceListener.Fail%2A?displayProperty=fullName> 메서드를 표시 하는 대신 이벤트 로그를 씁니다 합니다 **어설션이 실패 한** 대화 상자.  
   
  이러한 방법으로 출력을 사용자 지정하려면 프로그램에 수신기가 있어야 하고 사용자가 <xref:System.Diagnostics.TraceListener>에서 상속하여 <xref:System.Diagnostics.TraceListener.Fail%2A?displayProperty=fullName> 메서드를 재정의해야 합니다.  
   
- 자세한 내용은 참조 [추적 수신기](/dotnet/framework/debug-trace-profile/trace-listeners)합니다.  
+ 자세한 내용은 [추적 수신기](/dotnet/framework/debug-trace-profile/trace-listeners)합니다.  
   
  [항목 내용](#BKMK_In_this_topic)  
   

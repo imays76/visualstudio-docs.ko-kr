@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e3fad26dfd43057f02105e867c5f1f0add57b20d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 706049acf99804038f48125b77a71b879658baac
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463968"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874464"
 ---
 # <a name="idiasessionfindsymbolbyvaex"></a>IDiaSession::findSymbolByVAEx
-포함 된 단어나 가장 가까운 지정 된 가상 주소 VA 및 오프셋을 지정 된 기호 형식을 검색 합니다.  
+포함 된 단어나 가장 가까운 지정 된 가상 주소 (VA) 및 오프셋에 지정 된 기호 형식을 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -37,19 +37,19 @@ HRESULT findSymbolByVAEx (
   
 #### <a name="parameters"></a>매개 변수  
  `va`  
- [in] VA. 지정  
+ [in] 지정 된 VA.  
   
  `symtag`  
- [in] 찾을 기호 형식입니다. 값에서 가져옵니다는 [SymTagEnum 열거형](../../debugger/debug-interface-access/symtagenum.md) 열거 합니다.  
+ [in] 찾을 기호 형식입니다. 값에서 수행 되는 [SymTagEnum 열거형](../../debugger/debug-interface-access/symtagenum.md) 열거형입니다.  
   
  `ppSymbol`  
  [out] 반환 된 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 기호를 나타내는 개체를 검색 합니다.  
   
  `displacement`  
- [out] 제공한 가상 주소 오프셋을 지정 하는 값을 반환 `va`합니다.  
+ [out] 제공한 가상 주소 오프셋을 지정 하는 값을 반환 합니다 `va`합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="example"></a>예제  
   

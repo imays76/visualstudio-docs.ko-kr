@@ -10,12 +10,12 @@ Description: Welcome to Visual Studio Subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 125f1fe960618648a9a04c5bd787523b86d9260f
-ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
+ms.openlocfilehash: 083522aae47abdfdec37d5add756457f18590953
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36946928"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856836"
 ---
 # <a name="visual-studio-subscriptions"></a>Visual Studio 구독
 
@@ -64,7 +64,7 @@ Visual Studio 구독은 Windows, iOS, Android, Linux 등을 비롯한 기본 플
         </a>
     </li>
     <li>
-        <a href="/vsts/">
+        <a href="/azure/devops/">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -74,7 +74,7 @@ Visual Studio 구독은 Windows, iOS, Android, Linux 등을 비롯한 기본 플
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Visual Studio Team Services</h3>
+                        <h3>Azure DevOps Services</h3>
                     </div>
                 </div>
             </div>
@@ -134,7 +134,7 @@ Visual Studio 구독은 Windows, iOS, Android, Linux 등을 비롯한 기본 플
             </div>
         </div>
         </a>
-    </li>   
+    </li>
 </ul>
 
 ---
@@ -158,7 +158,7 @@ Microsoft에서는 사용자가 구독을 훨씬 더 유용하게 사용할 수 
                             <li><a href="/visualstudio/subscriptions/vs-ide-benefit">Visual Studio</a></li>
                             <li>Visual Studio for Mac</li>
                             <li>Team Foundation Server 및 TFS CAL</li>
-                        </ul>                        
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -174,11 +174,11 @@ Microsoft에서는 사용자가 구독을 훨씬 더 유용하게 사용할 수 
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-azure">Azure</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-visual-studio-app-center">Visual Studio App Center</a></li>
-                            <li><a href="/visualstudio/subscriptions/vs-vsts">Visual Studio Team Services</a></li>
+                            <li><a href="/visualstudio/subscriptions/vs-vsts">Azure DevOps Services</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-office-dev">Office 365 개발자 구독</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-pbi">Windows 개발자 계정</a></li>
                             <li>PowerBI Pro</li>
-                        </ul>                        
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -200,7 +200,7 @@ Microsoft에서는 사용자가 구독을 훨씬 더 유용하게 사용할 수 
                             <li><a href="/visualstudio/subscriptions/vs-tech-support">Microsoft 전문가 기술 지원 인시던트</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-azure-advisory-chat">Azure Advisory Chat</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-azure-community">Azure 커뮤니티</a></li>
-                        </ul>                        
+                        </ul>
                     </div>
                 </div>
             </div>

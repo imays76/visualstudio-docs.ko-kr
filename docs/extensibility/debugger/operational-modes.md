@@ -13,23 +13,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56791d944b811ec4ca549ec51affaa74cb421909
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 91f3339fd18db8c006855c634e011b14eecc9206
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232914"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888942"
 ---
 # <a name="operational-modes"></a>운영 모드
 세 가지 모드는 IDE 작동할 수 있습니다, 다음과 같습니다.  
   
--   [디자인 모드](#vsconoperationalmodesanchor1)  
+- [디자인 모드](#vsconoperationalmodesanchor1)  
   
--   [실행된 모드](#vsconoperationalmodesanchor2)  
+- [실행된 모드](#vsconoperationalmodesanchor2)  
   
--   [중단 모드](#vsconoperationalmodesanchor3)  
+- [중단 모드](#vsconoperationalmodesanchor3)  
   
- 전환 메커니즘을 사용 하 여 알고 있어야 하는 구현을 결정 하는 경우 사용자 지정 디버그 엔진 (DE) 이러한 모드를 전환 하는 방법 DE 있고 이러한 모드에 직접 구현 하지 않을 수 있습니다. 이러한 모드는 실제로 디버그 패키지 모드 전환 하는 사용자 작업 또는 이벤트는 DE에서 기반으로 합니다. 예를 들어 중단 모드로 실행된 모드에서 전환은 DE의 중지 이벤트에 의해 간섭 됩니다. 중단 모드 또는 단계 모드 실행에서 전환 단계 또는 Execute 등의 작업을 수행 하는 사용자가 발생 시킨 됩니다. DE 전환에 대 한 자세한 내용은 참조 하세요. [실행 제어](../../extensibility/debugger/control-of-execution.md)입니다.  
+  전환 메커니즘을 사용 하 여 알고 있어야 하는 구현을 결정 하는 경우 사용자 지정 디버그 엔진 (DE) 이러한 모드를 전환 하는 방법 DE 있고 이러한 모드에 직접 구현 하지 않을 수 있습니다. 이러한 모드는 실제로 디버그 패키지 모드 전환 하는 사용자 작업 또는 이벤트는 DE에서 기반으로 합니다. 예를 들어 중단 모드로 실행된 모드에서 전환은 DE의 중지 이벤트에 의해 간섭 됩니다. 중단 모드 또는 단계 모드 실행에서 전환 단계 또는 Execute 등의 작업을 수행 하는 사용자가 발생 시킨 됩니다. DE 전환에 대 한 자세한 내용은 참조 하세요. [실행 제어](../../extensibility/debugger/control-of-execution.md)입니다.  
   
 ##  <a name="vsconoperationalmodesanchor1"></a> 디자인 모드  
  디자인 모드에는 디버깅 응용 프로그램에서 기능을 설정할 수 있습니다이 기간 동안 Visual Studio 디버깅 nonrunning 상태입니다.  
@@ -46,7 +46,7 @@ ms.locfileid: "39232914"
   
  중지 이벤트를 실행 하거나 모드 단계 중단 모드에서 디버거를 전환 하는 다음 방법 중 하나를 호출 하 여 계속 됩니다.  
   
--   [실행](../../extensibility/debugger/reference/idebugprocess3-execute.md)  
+-   [Execute](../../extensibility/debugger/reference/idebugprocess3-execute.md)  
   
 -   [Step](../../extensibility/debugger/reference/idebugprocess3-step.md)  
   

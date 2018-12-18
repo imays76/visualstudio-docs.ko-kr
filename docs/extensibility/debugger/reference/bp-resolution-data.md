@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f76cba8fa2b1ea01a2cbd7670a05b449d476127b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0f7ad3c88f0dd804daba2ee52126c7c6321a2a2b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109927"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876089"
 ---
 # <a name="bpresolutiondata"></a>BP_RESOLUTION_DATA
-데이터 중단점을 바인딩한 결과를 설명 합니다.  
+데이터 중단점을 바인딩한 결과 설명 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -50,16 +50,16 @@ public struct BP_RESOLUTION_DATA {
  바인딩된 데이터 식입니다.  
   
  `bstrFunc`  
- 함수의 이름 데이터 중단점에 바인딩하지 (있는 경우).  
+ 함수의 이름을 데이터 중단점에 바인딩하지 (있는 경우).  
   
  `bstrImage`  
- 데이터 중단점에 바인딩하지 모듈 (예: MyModule.dll)의 이름입니다.  
+ 데이터 중단점에 바인딩된 모듈 (예: MyModule.dll)의 이름입니다.  
   
  `dwFlags`  
- 값은 [BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md) 데이터 중단점을 구현 하는 방법을 설명 하는 열거형입니다.  
+ 값을 [BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md) 데이터 중단점은 구현 하는 방법을 설명 하는 열거형입니다.  
   
 ## <a name="remarks"></a>설명  
- 이 구조체의 멤버는는 [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) 구조체에는 설정의 멤버는 [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) 에서 반환 된 구조는 [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)메서드.  
+ 이 구조체의 멤버인 합니다 [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) 설정에의 멤버는 구조를 [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) 반환한 구조는 [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)메서드.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  

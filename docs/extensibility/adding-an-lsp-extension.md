@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e4d3bcd261e36d54aa84b22b32e91b89922d2f2
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 7f2710693c7dae7c4238f9f31fbe8065d6864a19
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499392"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672966"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>언어 서버 프로토콜 확장 추가
 
@@ -132,10 +132,10 @@ LSP는 언어에 대 한 텍스트 색 지정을 제공 하는 방법에 대 한
 
 4. 만들기는 *.pkgdef* 파일과 비슷한이 줄을 추가 합니다.
 
-  ```xml
-  [$RootKey$\TextMate\Repositories]
-  "MyLang"="$PackageFolder$\Grammars"
-  ```
+   ```xml
+   [$RootKey$\TextMate\Repositories]
+   "MyLang"="$PackageFolder$\Grammars"
+   ```
 
 5. 선택한 파일을 마우스 오른쪽 단추로 클릭 **속성**합니다. 변경 합니다 **빌드** 작업을 **콘텐츠** 하며 **VSIX에 포함** 속성을 true로 합니다.
 
@@ -199,7 +199,7 @@ namespace MockLanguageExtension
 
         public async Task OnLoadedAsync()
         {
-            await StartAsync?.InvokeAsync(this, EventArgs.Empty);
+            await StartAsync.InvokeAsync(this, EventArgs.Empty);
         }
 
         public async Task OnServerInitializeFailedAsync(Exception e)
@@ -230,7 +230,7 @@ namespace MockLanguageExtension
 
 ### <a name="mef"></a>MEF
 
-Visual Studio에서는 [MEF](https://github.com/Microsoft/vs-mef/blob/master/doc/index.md) (Managed Extensibility Framework)는 확장성 지점을 관리 합니다. 합니다 [내보내기](https://msdn.microsoft.com/library/system.componentmodel.composition.exportattribute(v=vs.110).aspx) 이 클래스 확장 지점으로 선택 하 고 적절 한 시간 로드는 Visual Studio에 특성을 나타냅니다.
+Visual Studio에서는 [MEF](https://github.com/Microsoft/vs-mef/blob/master/doc/index.md) (Managed Extensibility Framework)는 확장성 지점을 관리 합니다. 합니다 [내보내기](/dotnet/api/system.componentmodel.composition.exportattribute) 이 클래스 확장 지점으로 선택 하 고 적절 한 시간 로드는 Visual Studio에 특성을 나타냅니다.
 
 MEF를 사용 하려면 또한 VSIX 매니페스트의 자산으로 MEF를 정의 해야 합니다.
 
@@ -295,40 +295,40 @@ LSP 언어 서비스 확장에 설정에 대 한 지원을 추가 하려면 아�
 
 1. JSON 파일을 추가 (예를 들어 *MockLanguageExtensionSettings.json*) 설정 및 기본값을 포함 하는 프로젝트에서. 예를 들어:
 
-  ```json
-  {
+   ```json
+   {
     "foo.maxNumberOfProblems": -1
-  }
-  ```
+   }
+   ```
 2. JSON 파일을 마우스 오른쪽 단추로 클릭 하 고 선택 **속성**합니다. 변경 된 **빌드** "콘텐츠"에 대 한 작업 및 "VSIX에 포함 ' 속성을 true로 합니다.
 
 3. ConfigurationSections를 구현 하 고 JSON 파일에 정의 된 설정에 대 한 접두사의 목록을 반환 합니다 (Visual Studio Code에서이 매핑할 package.json에서 구성 섹션 이름):
 
-  ```csharp
-  public IEnumerable<string> ConfigurationSections
-  {
+   ```csharp
+   public IEnumerable<string> ConfigurationSections
+   {
       get
       {
           yield return "foo";
       }
-  }
-  ```
+   }
+   ```
 4. .Pkgdef 파일을 프로젝트에 추가 (새 텍스트 파일을 추가 하 고.pkgdef 파일 확장명이 변경). Pkgdef 파일에는이 정보를 포함 되어야 합니다.
 
-  ```xml
+   ```xml
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\[settings-name]]
     @="$PackageFolder$\[settings-file-name].json"
-  ```
+   ```
 
 5. .Pkgdef 파일을 마우스 오른쪽 단추로 클릭 하 고 선택 **속성**합니다. 변경 합니다 **빌드** 작업을 **콘텐츠** 하며 **VSIX에 포함** 속성을 true로 합니다.
 
 6. 엽니다는 *source.extension.vsixmanifest* 파일을 자산에 추가 합니다 **자산** 탭:
 
-  ![vspackage 자산 편집](media/lsp-add-vspackage-asset.png)
+   ![vspackage 자산 편집](media/lsp-add-vspackage-asset.png)
 
-  * **Type**: Microsoft.VisualStudio.VsPackage
-  * **원본**: 파일 시스템의 파일
-  * **경로**: [에 대 한 경로 *.pkgdef* 파일]
+   * **Type**: Microsoft.VisualStudio.VsPackage
+   * **원본**: 파일 시스템의 파일
+   * **경로**: [에 대 한 경로 *.pkgdef* 파일]
 
 ### <a name="user-editing-of-settings-for-a-workspace"></a>사용자의 작업 영역 설정 편집
 
@@ -336,16 +336,16 @@ LSP 언어 서비스 확장에 설정에 대 한 지원을 추가 하려면 아�
 2. 사용자의 파일을 추가 합니다 *.vs* 라는 폴더 *VSWorkspaceSettings.json*합니다.
 3. 줄을 추가 하는 사용자를 *VSWorkspaceSettings.json* 파일 서버에서 제공 하는 설정에 대 한 합니다. 예를 들어:
 
-  ```json
-  {
+   ```json
+   {
     "foo.maxNumberOfProblems": 10
-  }
-  ```
-### <a name="enabling-diagnostics-tracing"></a>진단 추적을 사용 하도록 설정
-클라이언트와 서버 문제를 디버깅할 때 유용할 수 있는 모든 메시지를 출력 하도록 진단 추적을 사용할 수 있습니다.  진단 추적을 사용 하려면 다음을 수행 합니다.
+   }
+   ```
+   ### <a name="enabling-diagnostics-tracing"></a>진단 추적을 사용 하도록 설정
+   클라이언트와 서버 문제를 디버깅할 때 유용할 수 있는 모든 메시지를 출력 하도록 진단 추적을 사용할 수 있습니다.  진단 추적을 사용 하려면 다음을 수행 합니다.
 
-1. 작업 영역 설정 파일을 만들거나 엽니다 *VSWorkspaceSettings.json* ("사용자의 작업 영역에 대 한 설정을 편집" 참조).
-2. 설정 json 파일에 다음 줄을 추가 합니다.
+4. 작업 영역 설정 파일을 만들거나 엽니다 *VSWorkspaceSettings.json* ("사용자의 작업 영역에 대 한 설정을 편집" 참조).
+5. 설정 json 파일에 다음 줄을 추가 합니다.
 
 ```json
 {

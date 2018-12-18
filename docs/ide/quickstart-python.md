@@ -1,7 +1,7 @@
 ---
 title: '빠른 시작: Visual Studio를 사용하여 Python 웹앱 만들기'
 description: 이 빠른 시작에서 Visual Studio 및 Flask 프레임워크를 사용하여 Python에서 간단한 웹앱을 빌드합니다.
-ms.date: 06/27/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: quickstart
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d75ce507b34337c6311fe66c95732c6f6cd044ba
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: 025adc3a99e2c5aabe2588852885e537553ddce6
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131988"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219278"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>빠른 시작: Visual Studio를 사용하여 첫 번째 Python 웹앱 만들기
 
@@ -62,7 +62,7 @@ Python의 웹앱은 다수의 사용 가능한 Python 라이브러리 중 하나
 
     ![기본 환경을 보여 주는 솔루션 탐색기](media/quickstart-python-02-default-environment.png)
 
-1. 환경을 마우스 오른쪽 단추로 클릭하고 **Python 패키지 설치**를 선택합니다. 이 명령은 **패키지** 탭에 **Python 환경** 창을 엽니다.
+1. 환경을 마우스 오른쪽 단추로 클릭하고 **Python 패키지 설치**를 선택합니다. 이 명령은 패키지 탭에 **Python 환경** 창을 엽니다.
 
 1. 검색 필드에 "flask"를 입력하고 **pip install flask from PyPI**를 선택합니다. 관리자 권한에 대한 프롬프트가 표시되면 수락하고 Visual Studio의 **출력** 창에서 진행률을 살펴봅니다. 전역 환경에 대한 패키지 폴더가 *C:\Program Files*와 같이 보호되는 영역 내에 있는 경우 권한 상승에 대한 프롬프트가 발생합니다.
 
@@ -124,19 +124,19 @@ Python의 웹앱은 다수의 사용 가능한 Python 라이브러리 중 하나
 
     ![솔루션 탐색기에서 프로젝트에 대한 시작 파일 설정](media/quickstart-python-05-set-as-startup-file.png)
 
-1. **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다. 그런 다음 **디버그** 탭을 선택하고 **포트 번호** 속성을 `4449`으로 설정합니다. 이 단계를 사용하면 Visual Studio가 코드에서 `app.run` 인수와 일치하는 `localhost:4449`으로 브라우저를 시작합니다.
+2. **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다. 그런 다음 **디버그** 탭을 선택하고 **포트 번호** 속성을 `4449`으로 설정합니다. 이 단계를 사용하면 Visual Studio가 코드에서 `app.run` 인수와 일치하는 `localhost:4449`으로 브라우저를 시작합니다.
 
-1. **디버그 > 디버깅하지 않고 시작**(**Ctrl**+**F5**)을 선택하여 변경 내용을 파일에 저장하고 앱을 실행합니다.
+3. **디버그 > 디버깅하지 않고 시작**(**Ctrl**+**F5**)을 선택하여 변경 내용을 파일에 저장하고 앱을 실행합니다.
 
-1. 명령 창에는 "*https://localhost:4449/에서 실행" 메시지가 표시되고, 브라우저 창이 "Hello, Python!"이라는 메시지가 표시되는 `localhost:4449`에 열려야 합니다. 명령 창에 200 상태와 함께 GET 요청도 나타납니다.
+4. 명령 창에는 "*<https://localhost:4449/>에서 실행" 메시지가 표시되고, 브라우저 창이 "Hello, Python!"이라는 메시지가 표시되는 `localhost:4449`에 열려야 합니다. 명령 창에 200 상태와 함께 GET 요청도 나타납니다.
 
     브라우저가 자동으로 열리지 않으면 원하는 브라우저를 시작하고 `localhost:4449`으로 이동합니다.
 
     명령 창에 Python 대화형 셸만 보이거나 창이 화면에서 잠시 깜박이면 위의 1단계에서 *app.py*를 시작 파일로 설정했는지 확인합니다.
 
-1. `localhost:4449/hello`로 이동하여 `/hello` 리소스에 대한 데코레이터도 작동하는지 테스트합니다. 다시 명령 창에 200 상태와 함께 GET 요청이 나타납니다. 다른 URL도 사용하여 명령 창에서 404 상태 코드가 표시되는지 확인합니다.
+5. `localhost:4449/hello`로 이동하여 `/hello` 리소스에 대한 데코레이터도 작동하는지 테스트합니다. 다시 명령 창에 200 상태와 함께 GET 요청이 나타납니다. 다른 URL도 사용하여 명령 창에서 404 상태 코드가 표시되는지 확인합니다.
 
-1. 명령 창을 닫아 앱을 중지한 다음, 브라우저 창을 닫습니다.
+6. 명령 창을 닫아 앱을 중지한 다음, 브라우저 창을 닫습니다.
 
 **질문: 디버깅 없이 시작 명령과 디버깅 시작 간의 차이점은 무엇인가요?**
 

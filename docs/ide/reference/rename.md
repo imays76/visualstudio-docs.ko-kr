@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 이름 바꾸기 리팩터링
+title: 리팩터링 이름 바꾸기
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 696ec34bb0009b9b09b5902a102c71cf1331f320
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 02b08f3218ab6f1380884d2385899d6dd486bb81
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945456"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063155"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>코드 기호 이름 바꾸기 래픽터링
 
@@ -29,7 +29,7 @@ ms.locfileid: "31945456"
 
 - Visual Basic
 
-**대상:** 필드, 지역 변수, 메서드, 네임스페이스, 속성 및 형식과 같은 코드 기호의 식별자 이름을 바꿀 수 있습니다.
+**내용:** 필드, 지역 변수, 메서드, 네임스페이스, 속성 및 형식과 같은 코드 기호의 식별자 이름을 바꿀 수 있습니다.
 
 **시기:** 모든 인스턴스를 찾지 않고도 안전하게 이름을 바꾸고 새 이름을 복사하여 붙여넣으려고 합니다.
 
@@ -41,34 +41,34 @@ ms.locfileid: "31945456"
 
    - C#: 
 
-    ![강조 표시된 코드 - C#](media/rename-highlight-cs.png)
+       ![강조 표시된 코드 - C#](media/rename-highlight-cs.png)
 
    - Visual Basic:
 
-    ![강조 표시된 코드 - Visual Basic](media/rename-highlight-vb.png)
+       ![강조 표시된 코드 - Visual Basic](media/rename-highlight-vb.png)
 
-1. 다음 작업 중 하나를 수행합니다.
+2. 다음 작업 중 하나를 수행합니다.
 
    - **키보드**
-     - **Ctrl+R**을 누른 다음 **Ctrl+R**을 누릅니다. 바로 가기 키는 선택한 프로필에 따라 다를 수 있습니다.
+      - **Ctrl+R**을 누른 다음 **Ctrl+R**을 누릅니다. 바로 가기 키는 선택한 프로필에 따라 다를 수 있습니다.
    - **마우스**
-     - **편집 > 리팩터링 > 이름 바꾸기**를 선택합니다.
-     - 코드를 마우스 오른쪽 단추로 클릭하고 **이름 바꾸기**를 선택합니다.
+      - **편집 > 리팩터링 > 이름 바꾸기**를 선택합니다.
+      - 코드를 마우스 오른쪽 단추로 클릭하고 **이름 바꾸기**를 선택합니다.
 
-1. 항목의 이름을 바꾸려면 새 이름을 입력하면 됩니다.
+3. 항목의 이름을 바꾸려면 새 이름을 입력하면 됩니다.
 
    - C#: 
 
-    ![애니메이션 이름 바꾸기 - C#](media/rename-animated-cs.gif)
+      ![애니메이션 이름 바꾸기 - C#](media/rename-animated-cs.gif)
 
    - Visual Basic:
 
-    ![이름 바꾸기 - VB](media/rename-rename-vb.png)
+      ![이름 바꾸기 - VB](media/rename-rename-vb.png)
 
    > [!TIP]
-   > 또한 이 새 이름을 사용하도록 주석과 기타 문자열을 업데이트하고, 편집기의 오른쪽 위에 표시되는 **이름 바꾸기** 상자의 확인란을 사용하여 저장하기 전에 [변경 내용을 미리 볼](../../ide/preview-changes.md) 수 있습니다.
+   > 또한 이 새 이름을 사용하도록 주석과 기타 문자열을 업데이트할 뿐만 아니라, 편집기의 오른쪽 위에 표시되는 **이름 바꾸기** 상자의 확인란을 사용하여 저장하기 전에 [변경 내용을 미리 볼](../../ide/preview-changes.md) 수도 있습니다.
 
-1. 변경 내용에 만족할 경우 **적용** 단추를 선택하거나 **Enter** 키를 누르면 변경 내용이 커밋됩니다.
+4. 변경 내용에 만족할 경우 **적용** 단추를 선택하거나 **Enter** 키를 누르면 변경 내용이 커밋됩니다.
 
 > [!NOTE]
 > 충돌을 일으키는 기존 이름을 사용할 경우 **이름 바꾸기** 상자에 경고가 표시됩니다.

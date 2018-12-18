@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 01efc1972ea4833900b5e6f002d36ae51fa63a85
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 1b5cfd9afaf0c37dcf267c63641b7917efe4c249
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119448"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831817"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>연습: 디자이너를 사용 하 여 SharePoint 용 웹 파트 만들기
 
@@ -46,7 +46,7 @@ SharePoint 사이트에 대 한 웹 파트를 만드는 경우 사용자가 직�
 
 이 연습을 완료하려면 다음 구성 요소가 필요합니다.
 
-- Windows 및 SharePoint 버전을 지원 합니다. 참조 [SharePoint 솔루션 개발을 위한 요구 사항](../sharepoint/requirements-for-developing-sharepoint-solutions.md)합니다.
+- Windows 및 SharePoint 버전을 지원 합니다.
 
 ## <a name="create-a-web-part-project"></a>웹 파트 프로젝트 만들기
 
@@ -98,9 +98,9 @@ SharePoint 사이트에 대 한 웹 파트를 만드는 경우 사용자가 직�
 
 1. 다음 단계 중 하나를 수행합니다.
 
-    - 디자이너에서 두 번 클릭 합니다 **업데이트** 단추입니다.
+   - 디자이너에서 두 번 클릭 합니다 **업데이트** 단추입니다.
 
-    - 에 **속성** 창에 대 한는 **업데이트** 단추를 선택 합니다 **이벤트** 단추. 에 **클릭** 속성인 입력 **Button1_Click**, Enter 키를 선택 하 고 합니다.
+   - 에 **속성** 창에 대 한는 **업데이트** 단추를 선택 합니다 **이벤트** 단추. 에 **클릭** 속성인 입력 **Button1_Click**, Enter 키를 선택 하 고 합니다.
 
      사용자 컨트롤 코드 파일이 코드 편집기에서 열립니다 및 `Button1_Click` 이벤트 처리기가 나타납니다. 나중에이 이벤트 처리기에 코드를 추가 합니다.
 
@@ -116,11 +116,11 @@ SharePoint 사이트에 대 한 웹 파트를 만드는 경우 사용자가 직�
 
 4. 대체는 `Page_Load` 메서드는 `VisualWebPart1` 클래스를 다음 코드로 합니다. 이 코드는 다음 작업을 수행합니다.
 
-    - 사용자 정의 컨트롤에는 월별 달력 보기를 추가합니다.
+   - 사용자 정의 컨트롤에는 월별 달력 보기를 추가합니다.
 
-    - 사이트의 각 달력 목록에 대 한 확인란을 추가합니다.
+   - 사이트의 각 달력 목록에 대 한 확인란을 추가합니다.
 
-    - 달력 보기에 표시 되는 항목의 각 형식에 대 한 서식 파일을 지정 합니다.
+   - 달력 보기에 표시 되는 항목의 각 형식에 대 한 서식 파일을 지정 합니다.
 
      [!code-vb[SP_VisualWebPart#3](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#3)]
      [!code-csharp[SP_VisualWebPart#3](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#3)]

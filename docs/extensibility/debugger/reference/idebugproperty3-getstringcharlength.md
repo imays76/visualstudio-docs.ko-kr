@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1694a39af0dff4577ea767efb34a048e29bbb07
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8400a9d0e8123d3803403a3e73c90cc1beea84c7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118725"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935057"
 ---
 # <a name="idebugproperty3getstringcharlength"></a>IDebugProperty3::GetStringCharLength
-연결된 된 속성의 문자열에서 문자 수를 반환합니다.  
+연결된 된 속성의 문자열의 문자 수를 반환합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -43,16 +43,16 @@ int GetStringCharLength(
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|`pLen`|[out] 속성의 문자열에서 문자 수를 반환합니다.|  
+|`pLen`|[out] 속성의 문자열의 문자 수를 반환합니다.|  
   
 ## <a name="return-value"></a>반환 값  
  성공 하면 반환 `S_OK`; 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 에 대 한 호출에 대 한 버퍼를 할당에 대해 궁금할이 메서드는 일반적으로 [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) 메서드.  
+ 버퍼에 대 한 호출에 대 한 할당에 대해 궁금할이 메서드는 일반적으로 [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) 메서드.  
   
 ## <a name="example"></a>예제  
- 다음 예제에 대 한이 메서드를 구현 하는 방법을 보여 줍니다는 **CProperty** 공개 하는 개체는 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) 인터페이스입니다.  
+ 다음 예제에서는이 메서드를 구현 하는 방법을 보여 줍니다는 **CProperty** 노출 하는 개체를 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) 인터페이스입니다.  
   
 ```cpp  
 STDMETHODIMP CProperty::GetStringCharLength(ULONG *pLen)  

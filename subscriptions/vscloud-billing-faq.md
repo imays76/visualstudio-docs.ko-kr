@@ -9,12 +9,12 @@ description: 클라우드 구독에 대한 청구 질문입니다.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2df0604cff45f6af63070be6c1ba10f23a84b060
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: c0b66b7a10c344d7d534e5618ca560bdae31f30e
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303324"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283305"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Visual Studio 클라우드 구독 청구 FAQ
 
@@ -26,9 +26,9 @@ ms.locfileid: "36303324"
 답변: 아니요. 모든 Visual Studio 클라우드 구독은 Azure 구독을 사용하여 구매해야 합니다. (이를 Azure 청구 계정으로 생각하십시오.)
 
 ### <a name="q-what-types-of-azure-subscriptions-can-be-used-to-buy-visual-studio-cloud-subscriptions"></a>질문: Visual Studio 클라우드 구독을 구입하려면 어떤 유형의 Azure 구독을 사용할 수 있습니까?
-답변: 거의 모든 Azure 구독을 사용할 수 있습니다 -- 당사는 [EA(기업 계약)](https://azure.microsoft.com/pricing/enterprise-agreement/)에 연결된 Azure 구독, CSP(클라우드 솔루션 공급자)가 설정한 Azure 구독, Microsoft Open License 대리점을 통해 설정된 Azure 구독, 종량제 Azure 구독을 지원하며, Visual Studio 구독자가 구독자 혜택으로 설정하는 Azure 구독을 사용 하여 구입할 수도 있습니다(그러나 더 많은 Visual Studio 구독 비용을 지불하기 위해 월간 크레딧은 사용할 수 없습니다).
+A: 대부분의 Azure 구독을 사용할 수 있습니다. [EA(기업 계약)](https://azure.microsoft.com/pricing/enterprise-agreement/)에 연결된 Azure 구독, CSP(클라우드 솔루션 공급자)에서 설정된 Azure 구독, Microsoft Open License 재판매인을 통해 설정된 Azure 구독 및 종량제 Azure 구독을 지원합니다.
 
-주목할 만한 예외는 [Azure 무료 평가판](https://azure.microsoft.com/pricing/free-trial/)을 사용할 수 없다는 것입니다.
+[Azure 평가판](https://azure.microsoft.com/pricing/free-trial/) 및 Visual Studio 구독에서 구독자 혜택으로 포함된 구독을 비롯한 일부 유형의 Azure 구독을 사용할 수 없습니다.
 
 ### <a name="q-am-i-required-to-buy-other-azure-services"></a>질문: 다른 Azure 서비스를 구입해야 합니까?
 답변: 전혀 그렇지 않습니다. Azure를 통해 Visual Studio 클라우드 구독을 구입하려는 경우 그렇게 할 수 있습니다.
@@ -92,7 +92,7 @@ Azure 구독 이름은 청구 계정 유형("종량제", "기업 계약" 등)을
 
 ### <a name="q-whats-the-difference-between-annual-and-monthly-cloud-subscriptions"></a>질문: 연간 및 월간 클라우드 구독 간의 차이는?
 
-답변: 월별 클라우드 구독에는 Visual Studio 외에 VSTS 및 TFS의 사용이 포함됩니다. 연간 클라우드 구독도 마찬가지지만 또한 개발 및 테스트를 위해 설치하고 실행할 Windows와 기타 Microsoft 소프트웨어의 사용, Azure 서비스를 사용한 실험에 대해 사용할 월간 Azure 크레딧 그리고 클라우드, 교육, 지원 등에서 개발 및 테스트 수행을 포함한 구독자 혜택이 포함됩니다.
+답변: 월별 클라우드 구독에는 Visual Studio 외에 Azure DevOps Services 및 TFS의 사용이 포함됩니다. 연간 클라우드 구독도 마찬가지지만 또한 개발 및 테스트를 위해 설치하고 실행할 Windows와 기타 Microsoft 소프트웨어의 사용, Azure 서비스를 사용한 실험에 대해 사용할 월간 Azure 크레딧 그리고 클라우드, 교육, 지원 등에서 개발 및 테스트 수행을 포함한 구독자 혜택이 포함됩니다.
 [클라우드 구독 혜택 및 가격 비교](https://visualstudio.microsoft.com/vs/pricing/)
 
 ### <a name="q-do-i-get-new-versions-of-visual-studio-if-i-buy-a-visual-studio-cloud-subscription"></a>질문: Visual Studio 클라우드 구독을 구매하는 경우 새 버전의 Visual Studio를 얻을 수 있습니까?

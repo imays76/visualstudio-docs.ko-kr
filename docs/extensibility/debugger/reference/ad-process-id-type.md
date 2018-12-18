@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f8318efdc64adf9792e44ccf2f4ad4aa9f74dd67
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1fa934610778479551d411a4b231a4b190f29bcd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098289"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937410"
 ---
 # <a name="adprocessidtype"></a>AD_PROCESS_ID_TYPE
-프로세스 ID를 해석 하는 방법을 지정 하는 [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) 구조입니다.  
+프로세스 ID를 해석 하는 방법을 지정 합니다 [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) 구조입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -44,13 +44,13 @@ public enum enum_AD_PROCESS_ID {
   
 ## <a name="members"></a>멤버  
  AD_PROCESS_ID_SYSTEM  
- 프로세스 ID는 시스템 식별자입니다. 사용 하 여는 `ProcessId.dwProcessId` 필드는 [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) 구조입니다.  
+ 프로세스 ID 시스템 식별자입니다. 사용 합니다 `ProcessId.dwProcessId` 필드를 [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) 구조입니다.  
   
  AD_PROCESS_ID_GUID  
- 프로세스 ID는 GUID입니다. 사용 하 여는 `ProcessId.guidProcessId` 필드는 `AD_PROCESS_ID` 구조입니다.  
+ 프로세스 ID는 GUID입니다. 사용 합니다 `ProcessId.guidProcessId` 필드는 `AD_PROCESS_ID` 구조입니다.  
   
 ## <a name="remarks"></a>설명  
- 에 사용 되는 `ProcessIdType` 의 멤버는 [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) 구조에 포함 된 연결 ID의 유형을 식별 하는 구조입니다. 해석 하는 방법을 결정는 `ProcessId` 구조에 결합 합니다.  
+ 에 사용 되는 합니다 `ProcessIdType` 의 멤버는 [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) 구조에 포함 된 프로세스 ID의 형식을 식별 하는 구조입니다. 해석 하는 방법을 결정 합니다 `ProcessId` 구조의 공용 구조체입니다.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c6bc4f0736950042a62786caac6179f1edffab8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 97e252f9f7b3d3177b099e98984ee459b85f0c82
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109381"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823062"
 ---
 # <a name="gethostnametype"></a>GETHOSTNAME_TYPE
 호스트 이름의 형식을 지정합니다.  
@@ -50,7 +50,7 @@ public enum enum_GETHOSTNAME_TYPE {
  호스트의 파일 이름을 지정합니다.  
   
 ## <a name="remarks"></a>설명  
- 이러한 값에 대 한 인수로 전달 되는 [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) 다양 한 형식에 호스트 이름을 검색 하는 메서드입니다.  
+ 이러한 값을 인수로 전달 되는 [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) 다양 한 형식에서 호스트 이름을 검색 하는 방법입니다.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  

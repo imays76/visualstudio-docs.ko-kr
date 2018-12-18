@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 865a33e181d761665dbe2e44976f171a2b60d433
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: fca44524c3a7c7f10e855eaf62e8b77dc225ae01
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255891"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818681"
 ---
 # <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>방법: 프로그래밍 방식으로 Word 표에 행 및 열 추가
   Microsoft Office Word 표에서 셀은 행과 열로 구성됩니다. <xref:Microsoft.Office.Interop.Word.Rows> 개체의 <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> 메서드를 사용하여 표에 행을 추가하고, <xref:Microsoft.Office.Interop.Word.Columns> 개체의 <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> 메서드를 사용하여 열을 추가할 수 있습니다.  
@@ -32,15 +32,15 @@ ms.locfileid: "35255891"
 ## <a name="document-level-customization-examples"></a>문서 수준 사용자 지정 예제  
  다음 코드 예제는 문서 수준 사용자 지정에서 사용할 수 있습니다. 이러한 예제를 사용하려면 프로젝트의 `ThisDocument` 클래스에서 실행합니다. 이 예제에서는 사용자 지정과 연결된 문서에 하나 이상의 표가 이미 있다고 가정합니다.  
   
-> [!IMPORTANT]  
+> [!IMPORTANT]
 >  이 코드는 다음 프로젝트 템플릿 중 하나를 사용하여 만든 프로젝트에서만 실행됩니다.  
->   
-> -   Word 2013 문서  
-> -   Word 2013 서식 파일  
-> -   Word 2010 문서  
-> -   Word 2010 서식 파일  
->   
->  다른 형식의 프로젝트에서이 작업을 수행 하려는 경우에 대 한 참조를 추가 해야 합니다 **Microsoft.Office.Interop.Word** 어셈블리와 다음 테이블에 행과 열을 추가 하려면 해당 어셈블리의에서 클래스를 사용 해야 합니다. 자세한 내용은 [방법: 주 interop 어셈블리를 통해 대상 Office 응용 프로그램](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) 하 고 [Word 2010 주 interop 어셈블리 참조](http://go.microsoft.com/fwlink/?LinkId=189588)합니다.  
+> 
+> - Word 2013 문서  
+> - Word 2013 서식 파일  
+> - Word 2010 문서  
+> - Word 2010 서식 파일  
+> 
+>   다른 형식의 프로젝트에서이 작업을 수행 하려는 경우에 대 한 참조를 추가 해야 합니다 **Microsoft.Office.Interop.Word** 어셈블리와 다음 테이블에 행과 열을 추가 하려면 해당 어셈블리의에서 클래스를 사용 해야 합니다. 자세한 내용은 [방법: 주 interop 어셈블리를 통해 대상 Office 응용 프로그램](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) 하 고 [Word 2010 주 interop 어셈블리 참조](http://go.microsoft.com/fwlink/?LinkId=189588)합니다.  
   
 ### <a name="to-add-a-row-to-a-table"></a>표에 행을 추가하려면  
   

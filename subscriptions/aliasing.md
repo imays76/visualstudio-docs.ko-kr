@@ -9,12 +9,12 @@ description: 별칭 또는 대화명을 사용하는 경우 로그인에 실패�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d05ecb8645b9970b08ad15418a43a5c95f8b2c3c
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 3743cc11d5001d12ba4cd030ddc0cfc914db3131
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637684"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817440"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>별칭을 사용하여 Visual Studio 구독에 로그인하지 못할 수 있음
 
@@ -24,7 +24,7 @@ ms.locfileid: "39637684"
 
 “별칭 지정”이라는 용어는 사용자가 Windows(또는 Active Directory)에 로그인하고 전자 메일에 액세스하기 위해 서로 다른 ID를 사용하는 것을 나타냅니다.
 
-회사에 디렉터리 로그인용 Microsoft Online Service가 있지만(예: JohnD@contoso.com) 사용자가 별칭 또는 이름(예: John.Doe@contoso.com)을 사용하여 전자 메일 계정에 액세스할 경우 별칭 지정이 수행됩니다.  VLSC(볼륨 라이선스 서비스 센터)를 통해 구독을 관리하는 많은 고객의 경우 제공된 전자 메일 주소(John.Doe@contoso.com)가 “회사 또는 학교 계정” 옵션을 통해 인증에 성공하는 데 필요한 디렉터리 주소(JohnD@contoso.com)와 일치하지 않을 때 이 별칭 지정으로 인해 로그인에 실패할 수 있습니다.
+회사에 디렉터리 로그인용 Microsoft Online Service가 있지만(예: JohnD@contoso.com) 사용자가 별칭 또는 이름(예: John.Doe@contoso.com)을 사용하여 전자 메일 계정에 액세스할 경우 별칭 지정이 수행됩니다. VLSC(볼륨 라이선스 서비스 센터)를 통해 구독을 관리하는 많은 고객의 경우 제공된 전자 메일 주소(John.Doe@contoso.com)가 “회사 또는 학교 계정” 옵션을 통해 인증에 성공하는 데 필요한 디렉터리 주소(JohnD@contoso.com)와 일치하지 않을 때 이 별칭 지정으로 인해 로그인에 실패할 수 있습니다.
 
 ## <a name="as-an-administrator-what-options-do-i-have"></a>관리자로서 어떤 옵션이 있나요?
 
@@ -33,15 +33,15 @@ ms.locfileid: "39637684"
 - 두 번째 옵션(보안 수준 낮음)은 구독자가 “회사 또는 학교” 전자 메일 주소를 “개인” 계정(즉 Microsoft 계정 또는 MSA)에 연결하도록 허용하는 것입니다. 자세한 내용은 [회사 또는 학교 계정을 개인 계정으로 정의 ](#defining-a-work-or-school-account-as-a-personal-account ) 섹션을 참조하세요.
 
 > [!NOTE]
-> 회사가 새 Visual Studio 구독 [관리 포털](https://manage.visualstudio.com)로 마이그레이션되면 구독자 프로필의 일부로 디렉터리 및 전자 메일 주소를 제공할 수 있는 새 관리 환경을 활용할 수 있습니다.  [마이그레이션](https://support.microsoft.com/help/4013930/visual-studio-subscriptions-administrator-migration-details)에 대해 자세히 알아보세요.
+> 회사가 새 Visual Studio 구독 [관리 포털](https://manage.visualstudio.com)로 마이그레이션되면 구독자 프로필의 일부로 디렉터리 및 전자 메일 주소를 제공할 수 있는 새 관리 환경을 활용할 수 있습니다. [마이그레이션](https://support.microsoft.com/help/4013930/visual-studio-subscriptions-administrator-migration-details)에 대해 자세히 알아보세요.
 
 ## <a name="as-a-subscriber-what-options-do-i-have"></a>구독자로서 어떤 옵션이 있나요?
 
-구독자 관점에서 먼저 관리자와 함께 회사의 ID 구성을 이해하는 것이 중요합니다.  필요한 경우 관리자가 관리 포털에서 계정 설정을 업데이트해야 할 수 있습니다. 또는 사용자가 회사 전자 메일 주소를 사용하여 Microsoft 계정(MSA)을 만들어야 할 수 있습니다.  MSA를 만드는 단계를 수행하기 전에 이 작업 수행과 관련된 정책 또는 문제에 대해 관리자와 이야기를 나눕니다.  자세한 내용은 [회사 또는 학교 계정을 개인 계정으로 정의 ](#defining-a-work-or-school-account-as-a-personal-account ) 섹션을 참조하세요.
+구독자 관점에서 먼저 관리자와 함께 회사의 ID 구성을 이해하는 것이 중요합니다. 필요한 경우 관리자가 관리 포털에서 계정 설정을 업데이트해야 할 수 있습니다. 또는 사용자가 회사 전자 메일 주소를 사용하여 Microsoft 계정(MSA)을 만들어야 할 수 있습니다. MSA를 만드는 단계를 수행하기 전에 이 작업 수행과 관련된 정책 또는 문제에 대해 관리자와 이야기를 나눕니다. 자세한 내용은 이 문서의 [회사 또는 학교 계정을 개인 계정으로 정의](#defining-a-work-or-school-account-as-a-personal-account) 섹션을 참조하세요.
 
 ## <a name="assigning-subscribers-to-a-directory-account"></a>디렉터리 계정에 구독자 할당
 
-모든 경우에 VLSC(볼륨 라이선스 서비스 센터) 내의 구독 관리자는 새 구독자의 디렉터리 주소를 사용하거나 “기존” 구독자의 전자 메일 주소를 업데이트해야 합니다.  디렉터리 주소를 사용하면 모든 새 구독자가 시작 전자 메일을 수신하지 않으므로 관리자가 구독이 할당되었음을 구독자에게 알려야 함을 의미합니다.  아래 단계를 수행한 후에는 부담 없이 전자 메일 [템플릿](#notifying-your-subscribers-with-directory-addresses)을 사용하여 구독자에게 알리고 로그인 프로세스를 통해 구독자를 도울 수 있습니다.
+모든 경우에 VLSC(볼륨 라이선스 서비스 센터) 내의 구독 관리자는 새 구독자의 디렉터리 주소를 사용하거나 “기존” 구독자의 전자 메일 주소를 업데이트해야 합니다. 디렉터리 주소를 사용하면 모든 새 구독자가 시작 전자 메일을 수신하지 않으므로 관리자가 구독이 할당되었음을 구독자에게 알려야 함을 의미합니다. 아래 단계를 수행한 후에는 부담 없이 전자 메일 [템플릿](#notifying-your-subscribers-with-directory-addresses)을 사용하여 구독자에게 알리고 로그인 프로세스를 통해 구독자를 도울 수 있습니다.
 
 ### <a name="adding-new-subscribers"></a>새 구독자 추가
 
@@ -76,8 +76,7 @@ ms.locfileid: "39637684"
 4. 검색 창에서 **아래쪽 화살표**를 클릭합니다.
 5. “전자 메일 주소” 필드를 사용하여 구독자를 검색합니다.
 6. 결과 목록에서 구독자의 **성**을 클릭합니다.
-7. 
-              **편집**을 클릭합니다.
+7. **편집**을 클릭합니다.
 8. [전자 메일 주소] 필드를 원하는 디렉터리 주소로 변경하고 **저장**을 클릭합니다.
 9. 아래 전자 메일 템플릿을 사용하여 구독이 프로비전되었음을 구독자에게 알립니다.
 
@@ -89,7 +88,7 @@ ms.locfileid: "39637684"
 
 안녕하세요 %SUBSCRIBER NAME% 님,
 
-Visual Studio 구독이 할당되었습니다.  https://my.visualstudio.com을 방문하고 %DIRECTORY ADDRESS% 주소로 로그인하여 구독을 활성화하고 액세스하세요.
+Visual Studio 구독이 할당되었습니다. https://my.visualstudio.com을 방문하고 %DIRECTORY ADDRESS% 주소로 로그인하여 구독을 활성화하고 액세스하세요.
 
 문제가 있는 경우 지원 팀(https://visualstudio.microsoft.com/subscriptions/support/))에 문의하세요.
 
@@ -100,8 +99,6 @@ Visual Studio 구독이 할당되었습니다.  https://my.visualstudio.com을 �
    - 원하는 보조 지원 옵션 선택
 
 ----------- 복사 끝 -----------
-
-
 
 ## <a name="defining-a-work-or-school-account-as-a-personal-account"></a>회사 또는 학교 계정을 개인 계정으로 정의
 
@@ -117,10 +114,10 @@ Visual Studio 구독이 할당되었습니다.  https://my.visualstudio.com을 �
 1. https://my.visualstudio.com으로 이동하여 **새 Microsoft 계정 만들기**를 클릭합니다.
 
 2. 필드를 완료합니다.
-    - Someone@example.com 상자에 시작 전자 메일을 받은 전자 메일 주소를 입력합니다.
-    - 암호를 만듭니다.
-    - 프로모션 설정을 선택합니다.
-    - **다음**을 클릭합니다.
+   - Someone@example.com 상자에 시작 전자 메일을 받은 전자 메일 주소를 입력합니다.
+   - 암호를 만듭니다.
+   - 프로모션 설정을 선택합니다.
+   - **다음**을 클릭합니다.
 
 3. 유효성 검사 단계를 완료하고 **다음**을 클릭합니다.
 
@@ -142,10 +139,10 @@ Visual Studio 구독이 할당되었고 시작 이메일을 기반으로 https:/
 2. 오른쪽에서 [새 Microsoft 계정 만들기]를 클릭합니다.
 
 3. 폼을 완료합니다.
-    - someone@example.com 상자에서 회사 전자 메일 주소를 사용합니다.
-    - 암호를 입력합니다.
-    - 프로모션 기본 설정을 선택합니다.
-    - 다음을 클릭합니다.
+   - someone@example.com 상자에서 회사 전자 메일 주소를 사용합니다.
+   - 암호를 입력합니다.
+   - 프로모션 기본 설정을 선택합니다.
+   - 다음을 클릭합니다.
 
 4. 계정 유효성 검사 단계를 완료합니다.
 

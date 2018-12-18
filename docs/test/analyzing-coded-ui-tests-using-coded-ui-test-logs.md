@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 코딩된 UI 테스트 로그를 사용하여 코딩된 UI 테스트 분석
+title: 코딩된 UI 테스트 로그를 사용하여 코딩된 UI 테스트 분석
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,16 +9,18 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e2301e1c0cf2a90f701e74445d22810e67785999
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 9c31dd90981cf39f1de296b2c96d6064afc730b4
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233915"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896681"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>코딩된 UI 테스트 로그를 사용하여 코딩된 UI 테스트 분석
 
 코딩된 UI 테스트 로그는 코딩된 UI 테스트 실행에 대한 중요한 정보를 필터링하고 기록합니다. 로그는 문제를 신속하게 디버깅할 수 있는 형식으로 표시됩니다.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## <a name="step-1-enable-logging"></a>1단계: 로깅 사용
 
@@ -88,4 +90,4 @@ ms.locfileid: "36233915"
 ## <a name="see-also"></a>참고 항목
 
 - [UI 자동화를 사용하여 코드 테스트](../test/use-ui-automation-to-test-your-code.md)
-- [방법: Microsoft Visual Studio에서 테스트 실행](http://msdn.microsoft.com/Library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)
+- [방법: Microsoft Visual Studio에서 테스트 실행](https://msdn.microsoft.com/Library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)

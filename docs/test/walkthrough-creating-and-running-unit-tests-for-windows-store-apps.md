@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 UWP 앱에 대한 단위 테스트 만들기 및 실행
+title: UWP 앱에 대한 단위 테스트 만들기 및 실행
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -14,12 +14,12 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: d8ca3f4b847e00f029b22d32965fb3ca89ff871a
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 66a107fbd738bc26fdf608223ff43f958754e3ae
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380485"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065302"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>연습: UWP 앱의 유닛 테스트 만들기 및 실행
 
@@ -109,4 +109,4 @@ Visual Studio에는 단위 테스트 UWP(유니버설 Windows 플랫폼) 앱에 
 ## <a name="see-also"></a>참고 항목
 
 - [Visual Studio를 사용하여 UWP 앱 테스트](../test/testing-store-apps-with-visual-studio.md)
-- [UWP 앱 빌드 및 테스트](/vsts/build-release/apps/windows/universal?tabs=vsts)
+- [UWP 앱 빌드 및 테스트](/azure/devops/pipelines/apps/windows/universal?tabs=vsts)

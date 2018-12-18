@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41b35475bb56b417729fa70d0e980411ae0f0e3a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8b53b8f2cd7819650abbb4fc88a7ec3f4b6dfe21
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108663"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903194"
 ---
 # <a name="idebugarrayobject2getbaseindices"></a>IDebugArrayObject2::GetBaseIndices
-배열의 차원 수를 지정 된 각 인덱스에 대 한 기본 인덱스 (하위 범위)를 검색 합니다.  
+배열의 차원 수를 지정 하는 각 인덱스에 대 한 기본 인덱스 (하위 범위)를 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -42,16 +42,16 @@ int GetBaseIndices (
   
 #### <a name="parameters"></a>매개 변수  
  `dwRank`  
- [in] 배열의 차수 (rank)의 수입니다.  
+ [in] 배열의 차수 (rank) 수입니다.  
   
  `dwIndices`  
- [out] 배열에 대 한 기본 인덱스 (하한값).  
+ [out] 배열에 대 한 기본 인덱스 (하위 범위).  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 예를 들어,이 함수는 다음 C# 코드에서 만든 배열에 대 한 ' 5'를 반환 합니다.  
+ 예를 들어이 함수는 반환 '5' 다음에 의해 만들어진 배열에 대 한 C# 코드:  
   
 ```  
 int[] lengths = { 12 };  

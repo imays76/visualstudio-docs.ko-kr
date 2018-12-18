@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d69a6951cdae84ba2abc06bcdfde19fffa665c03
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 3120a64db5c493f8e49ddeac42be0b2e89a40c45
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637512"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908862"
 ---
 # <a name="menu-element"></a>Menu 요소
 하나의 메뉴 항목을 정의합니다. 이 6 가지 유형의 메뉴: 상황에 맞는, 메뉴, MenuController, MenuControllerLatched, 도구 모음 및 ToolWindowToolbar 합니다.  
@@ -63,7 +63,7 @@ ms.locfileid: "39637512"
 |-------------|-----------------|  
 |[Menus 요소](../extensibility/menus-element.md)|VSPackage를 구현 하는 모든 메뉴를 정의 합니다.|  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
   
 ```  
 <Menu guid="cmdGuidWidgetCommands" id="menuIDEditWidget"  

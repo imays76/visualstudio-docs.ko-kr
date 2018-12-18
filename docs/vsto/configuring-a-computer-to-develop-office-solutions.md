@@ -1,5 +1,5 @@
 ---
-title: Office 솔루션을 개발 하도록 컴퓨터 구성
+title: Office 솔루션을 개발 하도록 컴퓨터를 구성 합니다.
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,44 +15,45 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 58458b51115834b5b94e858676ee8039d5894c70
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 19c7e012775ff1a761b5c267f05b8f7ff250d5c6
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672228"
 ---
-# <a name="configure-a-computer-to-develop-office-solutions"></a>Office 솔루션을 개발 하도록 컴퓨터 구성
+# <a name="configure-a-computer-to-develop-office-solutions"></a>Office 솔루션을 개발 하도록 컴퓨터를 구성 합니다.
 
 Microsoft Office용 VSTO 추가 기능 및 사용자 지정을 만들려면 지원되는 버전의 Visual Studio, .NET Framework 및 Microsoft Office를 설치합니다.
 
 |소프트웨어|지원되는 버전|
 |--------------|------------------------|
-|Visual Studio 2017| 포함 된 모든 버전의 **Office/SharePoint 개발** 작업 합니다.|
-|.NET Framework|-.NET Framework 4 이상입니다.|
-|Microsoft Office|<ul><li>Office Professional Plus for Office 365를 비롯한 Office의 모든 제품군 버전</li><li>다음의 독립 실행형 응용 프로그램<br /><br /> <ul><li>Excel</li><li>InfoPath(Office 2013 및 Office 2010에만 해당)</li><li>Outlook</li><li>PowerPoint</li><li>프로젝트</li><li>Visio</li><li>Word</li></ul></li></ul><br /> Office의 일부분으로 VBA(Visual Basic for Applications)를 설치해야 합니다. **중요:** 간편 실행 버전의 Office 2010 응용 프로그램 지원 되지 않습니다.|
+|Visual Studio 2017| 사용 하 여 모든 버전의 **Office/SharePoint 개발** 워크 로드.|
+|.NET Framework|-.NET Framework 4 이상|
+|Microsoft Office|<ul><li>Office Professional Plus for Office 365를 비롯한 Office의 모든 제품군 버전</li><li>다음의 독립 실행형 응용 프로그램<br /><br /> <ul><li>Excel</li><li>InfoPath(Office 2013 및 Office 2010에만 해당)</li><li>Outlook</li><li>PowerPoint</li><li>프로젝트</li><li>Visio</li><li>Word</li></ul></li></ul><br /> Office의 일부분으로 VBA(Visual Basic for Applications)를 설치해야 합니다. **중요:** 간편 실행 버전 Office 2010 응용 프로그램의 지원 되지 않습니다.|
 
-자세한 설치 단계에 대 한 참조 [하는 방법: Office 솔루션을 개발 하도록 컴퓨터 구성](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)합니다.
+자세한 설치 단계를 참조 하세요 [방법: Office 솔루션을 개발 하도록 컴퓨터를 구성](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)합니다.
 
 ## <a name="if-project-templates-dont-appear-or-they-dont-work-in-visual-studio"></a>프로젝트 템플릿이 표시 되지 않거나 Visual Studio에서 작동 하지 않는 경우
 
-지원 되는 버전의 Visual Studio,.NET Framework 및 Microsoft Office를 설치 했는데 하거나 Office 프로젝트 템플릿이 Visual Studio에서 표시 되지 **새 프로젝트** 대화 상자 또는 있습니다, 하나를 사용 하려고 할 때 오류가 표시 다음 사항을 확인 합니다.
+지원 되는 버전의 Visual Studio,.NET Framework 및 Microsoft Office 설치 했는데 Office 프로젝트 템플릿 중 하나에 나타나지 Visual Studio **새 프로젝트** 하거나 대화 상자에서 하나를 사용 하려고 할 때 오류가 표시 다음을 확인 합니다.
 
 - 컴퓨터에 Microsoft Office 개발자 도구를 설치했는지 확인합니다.
 
-     Office 개발자 도구는 Visual Studio의 선택적 구성 요소이지만 보통 Visual Studio와 함께 자동으로 설치됩니다. 설치할 기능을 지정하여 Visual Studio 설치를 사용자 지정하는 경우 설치 중에 **Microsoft Office 개발자 도구** 를 선택하여 도구를 설치해야 합니다.
+     Office 개발자 도구, Visual Studio의 선택적 구성 요소는 Visual Studio와 함께 자동으로 설치 됩니다. 설치할 기능을 지정하여 Visual Studio 설치를 사용자 지정하는 경우 설치 중에 **Microsoft Office 개발자 도구** 를 선택하여 도구를 설치해야 합니다.
 
-     이러한 도구가 설치 되어 하려면 Visual Studio 설치 프로그램을 시작 하 고 선택 된 **수정** 단추입니다. **Microsoft Office 개발자 도구** 확인란을 선택하고 **업데이트** 단추를 선택합니다.
+     이러한 도구가 설치 되어 있는지, Visual Studio 설치 프로그램을 시작 하 고 선택 합니다 **수정** 단추입니다. **Microsoft Office 개발자 도구** 확인란을 선택하고 **업데이트** 단추를 선택합니다.
 
-- 간편 실행으로 제공 되는 office 버전을 실행 하지는 확인 하십시오. 참조 [하는 방법: Outlook이 컴퓨터에 있는 간편 실행 응용 프로그램 인지 확인](http://msdn.microsoft.com/library/office/ff864733(v=office.14).aspx)합니다.
+- 간편 실행 방식으로 제공 되는 office 버전을 실행 하지는 확인 합니다. 참조 [방법: Outlook이 컴퓨터에 응용 프로그램을 실행 하려면 클릭 여부를 확인](/previous-versions/office/developer/office-2010/ff864733(v=office.14))합니다.
 
-- Microsoft Office의 버전을 하나만 실행 하 고 있는지 확인 합니다.
+- Microsoft Office의 버전을 하나만 실행 중인지 확인 합니다.
 
-문제가 계속 되 면 참조 [Office 솔루션 오류에에서 대 한 추가 지원은](../vsto/additional-support-for-errors-in-office-solutions.md)합니다.
+참조를 계속 문제가 발생 하는 경우 [Office 솔루션 오류에에서 대 한 추가 지원은](../vsto/additional-support-for-errors-in-office-solutions.md)합니다.
 
 ## <a name="see-also"></a>참고자료
 
-[시작 하려면 &#40;Visual Studio에서 Office 개발&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
-[방법: Office 솔루션을 개발 하도록 컴퓨터 구성](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)  
+[시작 &#40;Visual Studio에서 Office 개발&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
+[방법: Office 솔루션을 개발 하도록 컴퓨터를 구성 합니다.](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)  
 [방법: Visual Studio Tools for Office 런타임 재배포 가능 패키지 설치](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)  
 [방법: 설치 Office 주 interop 어셈블리](../vsto/how-to-install-office-primary-interop-assemblies.md)  
 [Office 응용 프로그램 및 프로젝트 형식으로 사용할 수 있는 기능](../vsto/features-available-by-office-application-and-project-type.md)

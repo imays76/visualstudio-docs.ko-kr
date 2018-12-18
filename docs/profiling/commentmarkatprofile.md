@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0eaaac47470378730c526b01b2ce2b637af5cd6
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 4eb29336b401b020df52d1ccaa743bb7240e1d2b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233700"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854821"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
 `CommentMarkAtProfile` 메서드는 .*vsp* 파일에 타임스탬프 값, 숫자 기호 및 설명 문자열을 삽입합니다. 외부 이벤트를 동기화하는 데 타임스탬프 값을 사용할 수 있습니다. 삽입될 표시 및 주석의 경우 CommentMarkAtProfile 함수가 포함된 스레드에 대한 프로파일링이 ON이어야 합니다.  

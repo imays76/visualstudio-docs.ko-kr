@@ -1,5 +1,6 @@
 ---
-title: '&lt;응용 프로그램&gt; 요소 (Visual Studio에서 Office 개발) | Microsoft Docs'
+title: '&lt;응용 프로그램&gt; 요소 (Visual Studio에서 Office 개발)'
+titleSuffix: ''
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -10,23 +11,24 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <application> element
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 90810bf6e9a3b47148598c3e9c3d217989f115ea
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 7b02a3bb762efd9136da79d3128caa0cf8a19f95
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53247773"
 ---
 # <a name="ltapplicationgt-element-office-development-in-visual-studio"></a>&lt;응용 프로그램&gt; 요소 (Visual Studio에서 Office 개발)
   `application` 네임스페이스의 `vstav3` 요소는 Office 솔루션에 대한 설명을 래핑합니다. 문서 수준 사용자 지정 및 VSTO 추가 기능에 대한 자식 요소가 서로 다릅니다.  
   
-## <a name="syntax-for-document-level-customizations"></a>문서 수준 사용자 지정에 대한 구문  
+## <a name="syntax-for-document-level-customizations"></a>문서 수준 사용자 지정에 대 한 구문  
   
-```  
+```xml 
 <application>  
   <customization  
     id  
@@ -37,9 +39,9 @@ ms.lasthandoff: 04/27/2018
 </application>  
 ```  
   
-## <a name="syntax-for-application-level-add-ins"></a>응용 프로그램 수준 추가 기능에 대한 구문  
+## <a name="syntax-for-application-level-add-ins"></a>응용 프로그램 수준 추가 기능에 대 한 구문  
   
-```  
+```xml
 <application>  
   <customization  
     id  
@@ -62,7 +64,7 @@ ms.lasthandoff: 04/27/2018
  `application` 요소에는 다음 요소가 있습니다.  
   
 ### <a name="customization"></a>사용자 지정  
- 역할은 `customization` 요소에는 `vstov3` 네임 스페이스에 정의 된 [ &#60;사용자 지정&#62; 요소 &#40;Visual Studio에서 Office 개발&#41;](../vsto/customization-element-office-development-in-visual-studio.md)합니다.  
+ 역할을 합니다 `customization` 요소에는 `vstov3` 네임 스페이스에 정의 된 [ &#60;사용자 지정&#62; 요소 &#40;Visual Studio에서 Office 개발&#41;](../vsto/customization-element-office-development-in-visual-studio.md).  
   
 ## <a name="document-level-customization-example"></a>문서 수준 사용자 지정 예제  
   
@@ -71,7 +73,7 @@ ms.lasthandoff: 04/27/2018
   
 ### <a name="code"></a>코드  
   
-```  
+```xml  
 <vstav3:application>  
   <vstov4:customizations   
     xmlns:vstov4="urn:schemas-microsoft-com:vsto.v4">  
@@ -90,7 +92,7 @@ ms.lasthandoff: 04/27/2018
   
 ### <a name="code"></a>코드  
   
-```  
+```xml  
 <vstav3:application>  
   <vstov4:customizations   
     xmlns:vstov4="urn:schemas-microsoft-com:vsto.v4">  
@@ -121,8 +123,8 @@ ms.lasthandoff: 04/27/2018
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
- [Office 솔루션에 대 한 배포 매니페스트](../vsto/deployment-manifests-for-office-solutions.md)   
+ [Office 솔루션에 대 한 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)   
+ [Office 솔루션의 배포 매니페스트](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce 응용 프로그램 매니페스트](/visualstudio/deployment/clickonce-application-manifest)  
   
   

@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4b70c800e9dff7852d2a7aaec3ee1125932dfc1
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: c37da890842711b941e61aadc23ed85d60672f3c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512046"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823764"
 ---
 # <a name="image-service-and-catalog"></a>이미지 서비스 및 카탈로그
 이 cookbook 지침 및 Visual Studio 이미지 서비스 및 Visual Studio 2015에 도입 된 이미지 카탈로그에 대 한 모범 사례를 포함 합니다.  
@@ -32,46 +32,46 @@ ms.locfileid: "39512046"
   
  이미지 서비스를 채택 하는 이유  
   
--   Visual Studio에서 최신 "완벽 한 픽셀" 이미지를 항상 가져오기  
+- Visual Studio에서 최신 "완벽 한 픽셀" 이미지를 항상 가져오기  
   
--   제출 하 고 사용자 고유의 이미지를 사용할 수 있습니다.  
+- 제출 하 고 사용자 고유의 이미지를 사용할 수 있습니다.  
   
--   새 DPI 배율 Windows을 추가 하는 경우 아웃 이미지를 테스트할 필요가 없습니다  
+- 새 DPI 배율 Windows을 추가 하는 경우 아웃 이미지를 테스트할 필요가 없습니다  
   
--   구현에서 이전 아키텍처 문제를 해결 합니다.  
+- 구현에서 이전 아키텍처 문제를 해결 합니다.  
   
- Visual Studio shell 도구 모음에서 이전 및 이후 이미지를 사용 하 여:  
+  Visual Studio shell 도구 모음에서 이전 및 이후 이미지를 사용 하 여:  
   
- ![이미지 서비스 이전 및 이후](../extensibility/media/image-service-before-and-after.png "이전 및 이후 이미지 서비스")  
+  ![이미지 서비스 이전 및 이후](../extensibility/media/image-service-before-and-after.png "이전 및 이후 이미지 서비스")  
   
 ## <a name="how-it-works"></a>작동 방법
  이미지 서비스는 모든 지원 되는 UI 프레임 워크에 대 한 적절 한 비트맵 이미지를 제공할 수 있습니다.  
   
--   WPF: BitmapSource  
+- WPF: BitmapSource  
   
--   WinForms: System.Drawing.Bitmap  
+- WinForms: System.Drawing.Bitmap  
   
--   Win32: HBITMAP  
+- Win32: HBITMAP  
   
- 이미지 서비스 흐름 다이어그램  
+  이미지 서비스 흐름 다이어그램  
   
- ![이미지 서비스 흐름 다이어그램](../extensibility/media/image-service-flow-diagram.png "이미지 서비스 흐름 다이어그램")  
+  ![이미지 서비스 흐름 다이어그램](../extensibility/media/image-service-flow-diagram.png "이미지 서비스 흐름 다이어그램")  
   
- **이미지 모니커**  
+  **이미지 모니커**  
   
- 이미지 모니커 (또는 줄여서 모니커)는 고유 하 게 이미지 자산 또는 이미지 라이브러리에서 이미지 목록 자산을 식별 하는 GUID/i D 쌍입니다.  
+  이미지 모니커 (또는 줄여서 모니커)는 고유 하 게 이미지 자산 또는 이미지 라이브러리에서 이미지 목록 자산을 식별 하는 GUID/i D 쌍입니다.  
   
- **알려진된 모니커**  
+  **알려진된 모니커**  
   
- Visual Studio 이미지 카탈로그 및 공개적으로 사용할 수 있는 모든 Visual Studio 구성 요소 또는 확장에 의해 포함 된 이미지 모니커 집합이 있습니다.  
+  Visual Studio 이미지 카탈로그 및 공개적으로 사용할 수 있는 모든 Visual Studio 구성 요소 또는 확장에 의해 포함 된 이미지 모니커 집합이 있습니다.  
   
- **이미지 매니페스트 파일**  
+  **이미지 매니페스트 파일**  
   
- 이미지 매니페스트 (*.imagemanifest*) 파일은 이미지 자산, 자산 및 실제 이미지 또는 각 자산을 나타내는 이미지를 나타내는 모니커 집합을 정의 하는 XML 파일입니다. 이미지 매니페스트 독립 실행형 이미지를 정의할 수 있습니다 또는 레거시 UI 지원에 대 한 이미지를 나열 합니다. 또한, 시기 및 해당 자산을 표시 하는 방법을 변경 하려면 각각의 자산 뒤 개별 이미지 또는 자산에서 설정할 수 있는 속성이 있습니다.  
+  이미지 매니페스트 (*.imagemanifest*) 파일은 이미지 자산, 자산 및 실제 이미지 또는 각 자산을 나타내는 이미지를 나타내는 모니커 집합을 정의 하는 XML 파일입니다. 이미지 매니페스트 독립 실행형 이미지를 정의할 수 있습니다 또는 레거시 UI 지원에 대 한 이미지를 나열 합니다. 또한, 시기 및 해당 자산을 표시 하는 방법을 변경 하려면 각각의 자산 뒤 개별 이미지 또는 자산에서 설정할 수 있는 속성이 있습니다.  
   
- **이미지 매니페스트 스키마**  
+  **이미지 매니페스트 스키마**  
   
- 이미지 완료 매니페스트는 다음과 같습니다.  
+  이미지 완료 매니페스트는 다음과 같습니다.  
   
 ```xml  
 <ImageManifest>  
@@ -405,52 +405,52 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
   
  이들은 도구 창에서 모니커를 사용 하는 키 위치입니다. 각각에 대 한 지침을 따르세요.  
   
-1.  도구 창 탭 탭 충분히 작게 표시 되 면 (에서도 사용 합니다 **Ctrl**+**탭** 창 전환기).  
+1. 도구 창 탭 탭 충분히 작게 표시 되 면 (에서도 사용 합니다 **Ctrl**+**탭** 창 전환기).  
   
-     파생 된 클래스의 생성자에이 줄을 추가 합니다 **ToolWindowPane** 형식:  
+    파생 된 클래스의 생성자에이 줄을 추가 합니다 **ToolWindowPane** 형식:  
   
-    ```csharp  
-    // Replace this KnownMoniker with your desired ImageMoniker  
-    this.BitmapImageMoniker = KnownMonikers.Blank;  
-    ```  
+   ```csharp  
+   // Replace this KnownMoniker with your desired ImageMoniker  
+   this.BitmapImageMoniker = KnownMonikers.Blank;  
+   ```  
   
-2.  도구 창을 열려면 명령입니다.  
+2. 도구 창을 열려면 명령입니다.  
   
-     에 *.vsct* 패키지에 대 한 파일, 도구 창의 명령 단추를 편집 합니다.  
+    에 *.vsct* 패키지에 대 한 파일, 도구 창의 명령 단추를 편집 합니다.  
   
-    ```xml  
-    <Button guid="guidPackageCmdSet" id="CommandId" priority="0x0100" type="Button">  
-      <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1"/>  
-      <!-- Replace this KnownMoniker with your desired ImageMoniker -->  
-      <Icon guid="ImageCatalogGuid" id="Blank" />  
-      <!-- Add this -->  
-      <CommandFlag>IconIsMoniker</CommandFlag>  
-      <Strings>  
-        <ButtonText>MyToolWindow</ButtonText>  
-      </Strings>  
-    </Button>  
-    ```  
+   ```xml  
+   <Button guid="guidPackageCmdSet" id="CommandId" priority="0x0100" type="Button">  
+     <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1"/>  
+     <!-- Replace this KnownMoniker with your desired ImageMoniker -->  
+     <Icon guid="ImageCatalogGuid" id="Blank" />  
+     <!-- Add this -->  
+     <CommandFlag>IconIsMoniker</CommandFlag>  
+     <Strings>  
+       <ButtonText>MyToolWindow</ButtonText>  
+     </Strings>  
+   </Button>  
+   ```  
   
- **기존 도구 창에서 이미지 모니커를 사용 하는 방법**  
+   **기존 도구 창에서 이미지 모니커를 사용 하는 방법**  
   
- 이미지 모니커를 사용 하는 기존 도구 창을 업데이트 하는 것은 새 도구 창을 만드는 단계와 비슷합니다.  
+   이미지 모니커를 사용 하는 기존 도구 창을 업데이트 하는 것은 새 도구 창을 만드는 단계와 비슷합니다.  
   
- 이들은 도구 창에서 모니커를 사용 하는 키 위치입니다. 각각에 대 한 지침을 따르세요.  
+   이들은 도구 창에서 모니커를 사용 하는 키 위치입니다. 각각에 대 한 지침을 따르세요.  
   
-1.  도구 창 탭 탭 충분히 작게 표시 되 면 (에서도 사용 합니다 **Ctrl**+**탭** 창 전환기).  
+3. 도구 창 탭 탭 충분히 작게 표시 되 면 (에서도 사용 합니다 **Ctrl**+**탭** 창 전환기).  
   
-    1.  파생 된 클래스의 생성자에서 (있는 경우) 다음이 줄을 제거 합니다 **ToolWindowPane** 형식:  
+   1.  파생 된 클래스의 생성자에서 (있는 경우) 다음이 줄을 제거 합니다 **ToolWindowPane** 형식:  
   
-        ```csharp  
-        this.BitmapResourceID = <Value>;  
-        this.BitmapIndex = <Value>;  
-        ```  
+       ```csharp  
+       this.BitmapResourceID = <Value>;  
+       this.BitmapIndex = <Value>;  
+       ```  
   
-    2.  단계 # 1의 참조는 "어떻게 사용 합니까 이미지 모니커 새 도구 창의?" 위의 섹션입니다.  
+   2.  단계 # 1의 참조는 "어떻게 사용 합니까 이미지 모니커 새 도구 창의?" 위의 섹션입니다.  
   
-2.  도구 창을 열려면 명령입니다.  
+4. 도구 창을 열려면 명령입니다.  
   
-    -   2 단계가 표시 된 "사용 하는 방법 이미지 모니커 새 도구 창의?" 위의 섹션입니다.  
+   -   2 단계가 표시 된 "사용 하는 방법 이미지 모니커 새 도구 창의?" 위의 섹션입니다.  
   
 ## <a name="how-do-i-use-image-monikers-in-a-vsct-file"></a>.Vsct 파일에서 이미지 모니커를 사용 하는 방법  
  업데이트 프로그램 *.vsct* 주석 처리 된 줄 아래에 표시 된 대로 파일:  
@@ -516,83 +516,83 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 ## <a name="how-do-i-port-a-project-system"></a>프로젝트 시스템을 포트 수행는 방법  
  **프로젝트에 대해 ImageMonikers를 제공 하는 방법**  
   
-1.  구현 **VSHPROPID_SupportsIconMonikers** 프로젝트의 **IVsHierarchy**, true를 반환 합니다.  
+1. 구현 **VSHPROPID_SupportsIconMonikers** 프로젝트의 **IVsHierarchy**, true를 반환 합니다.  
   
-2.  구현 **VSHPROPID_IconMonikerImageList** (원래 프로젝트를 사용 하는 경우 **VSHPROPID_IconImgList**) 또는 **VSHPROPID_IconMonikerGuid**,  **VSHPROPID_IconMonikerId**하십시오 **VSHPROPID_OpenFolderIconMonikerGuid**합니다 **VSHPROPID_OpenFolderIconMonikerId** (원래 프로젝트를 사용 하는 경우  **VSHPROPID_IconHandle** 하 고 **VSHPROPID_OpenFolderIconHandle**).  
+2. 구현 **VSHPROPID_IconMonikerImageList** (원래 프로젝트를 사용 하는 경우 **VSHPROPID_IconImgList**) 또는 **VSHPROPID_IconMonikerGuid**,  **VSHPROPID_IconMonikerId**하십시오 **VSHPROPID_OpenFolderIconMonikerGuid**합니다 **VSHPROPID_OpenFolderIconMonikerId** (원래 프로젝트를 사용 하는 경우  **VSHPROPID_IconHandle** 하 고 **VSHPROPID_OpenFolderIconHandle**).  
   
-3.  "레거시"의 버전을 만드는 아이콘 확장점 요청 하는 경우 아이콘에 대 한 원래 VSHPROPIDs의 구현을 변경 합니다. **IVsImageService2** 아이콘에 해당 하는 데 필요한 기능을 제공 합니다.  
+3. "레거시"의 버전을 만드는 아이콘 확장점 요청 하는 경우 아이콘에 대 한 원래 VSHPROPIDs의 구현을 변경 합니다. **IVsImageService2** 아이콘에 해당 하는 데 필요한 기능을 제공 합니다.  
   
- **VB에 대 한 추가 요구 사항이 C# 프로젝트 특성 /**  
+   **VB에 대 한 추가 요구 사항이 C# 프로젝트 특성 /**  
   
- 만 구현 **VSHPROPID_SupportsIconMonikers** 프로젝트가 것을 감지 하는 경우를 **바깥쪽 flavor**합니다. 이 고, 그렇지 실제 가장 바깥쪽 버전을 실제로 이미지 모니커를 지원 하지 않을 수 및 기본 버전에 효과적으로 "숨어서 실행" 사용자 지정된 이미지입니다.  
+   만 구현 **VSHPROPID_SupportsIconMonikers** 프로젝트가 것을 감지 하는 경우를 **바깥쪽 flavor**합니다. 이 고, 그렇지 실제 가장 바깥쪽 버전을 실제로 이미지 모니커를 지원 하지 않을 수 및 기본 버전에 효과적으로 "숨어서 실행" 사용자 지정된 이미지입니다.  
   
- **CPS에서 이미지 모니커를 사용 하는 방법**  
+   **CPS에서 이미지 모니커를 사용 하는 방법**  
   
- CPS (공통 프로젝트 시스템)에서 사용자 지정 이미지를 설정 수동으로 또는 프로젝트 시스템 확장 SDK를 사용 하 여 제공 되는 항목 템플릿을 통해 수행할 수 있습니다.  
+   CPS (공통 프로젝트 시스템)에서 사용자 지정 이미지를 설정 수동으로 또는 프로젝트 시스템 확장 SDK를 사용 하 여 제공 되는 항목 템플릿을 통해 수행할 수 있습니다.  
   
- **프로젝트 시스템 확장 SDK를 사용 하 여**  
+   **프로젝트 시스템 확장 SDK를 사용 하 여**  
   
- 지침을 따르세요 [프로젝트 형식/항목 형식에 대 한 사용자 지정 아이콘을 제공](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/scenario/provide_custom_icons_for_the_project_or_item_type.md) CPS 이미지를 사용자 지정할 수 있습니다. 자세한 내용은 CPS에서 찾을 수 있습니다 [Visual Studio 프로젝트 시스템 확장 설명서](https://github.com/Microsoft/VSProjectSystem)  
+   지침을 따르세요 [프로젝트 형식/항목 형식에 대 한 사용자 지정 아이콘을 제공](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/scenario/provide_custom_icons_for_the_project_or_item_type.md) CPS 이미지를 사용자 지정할 수 있습니다. 자세한 내용은 CPS에서 찾을 수 있습니다 [Visual Studio 프로젝트 시스템 확장 설명서](https://github.com/Microsoft/VSProjectSystem)  
   
- **수동으로 ImageMonikers 사용**  
+   **수동으로 ImageMonikers 사용**  
   
-1.  구현 및 내보내기 합니다 **IProjectTreeModifier** 프로젝트 시스템의 인터페이스입니다.  
+4. 구현 및 내보내기 합니다 **IProjectTreeModifier** 프로젝트 시스템의 인터페이스입니다.  
   
-2.  결정 **KnownMoniker** 또는 사용자 지정 이미지 모니커를 사용 하려면.  
+5. 결정 **KnownMoniker** 또는 사용자 지정 이미지 모니커를 사용 하려면.  
   
-3.  에 **ApplyModifications** 메서드를 다음을 수행 비슷하게 새 트리를 반환 하기 전에 메서드 내의 아래 예제:  
+6. 에 **ApplyModifications** 메서드를 다음을 수행 비슷하게 새 트리를 반환 하기 전에 메서드 내의 아래 예제:  
   
-    ```csharp  
-    // Replace this KnownMoniker with your desired ImageMoniker  
-    tree = tree.SetIcon(KnownMonikers.Blank.ToProjectSystemType());  
-    ```  
+   ```csharp  
+   // Replace this KnownMoniker with your desired ImageMoniker  
+   tree = tree.SetIcon(KnownMonikers.Blank.ToProjectSystemType());  
+   ```  
   
-4.  새 트리를 만드는 경우 원하는 모니커 비슷합니다 NewTree 메서드를 전달 하 여 사용자 지정 이미지를 설정할 수 있습니다는 아래 예제:  
+7. 새 트리를 만드는 경우 원하는 모니커 비슷합니다 NewTree 메서드를 전달 하 여 사용자 지정 이미지를 설정할 수 있습니다는 아래 예제:  
   
-    ```csharp  
-    // Replace this KnownMoniker with your desired ImageMoniker  
-    ProjectImageMoniker icon         = KnownMonikers.FolderClosed.ToProjectSystemType();  
-    ProjectImageMoniker expandedIcon = KnownMonikers.FolderOpened.ToProjectSystemType();  
+   ```csharp  
+   // Replace this KnownMoniker with your desired ImageMoniker  
+   ProjectImageMoniker icon         = KnownMonikers.FolderClosed.ToProjectSystemType();  
+   ProjectImageMoniker expandedIcon = KnownMonikers.FolderOpened.ToProjectSystemType();  
   
-    return this.ProjectTreeFactory.Value.NewTree(/*caption*/<value>,  
-                                                 /*filePath*/<value>,  
-                                                 /*browseObjectProperties*/<value>,  
-                                                 icon,  
-                                                 expandedIcon);  
-    ```  
+   return this.ProjectTreeFactory.Value.NewTree(/*caption*/<value>,  
+                                                /*filePath*/<value>,  
+                                                /*browseObjectProperties*/<value>,  
+                                                icon,  
+                                                expandedIcon);  
+   ```  
   
 ## <a name="how-do-i-convert-from-a-real-image-strip-to-a-moniker-based-image-strip"></a>변환 하는 방법 실제 이미지 스트립에서 모니커 기반 이미지 스트립에?  
  **HIMAGELISTs를 지원 해야 하는 경우**  
   
  이미지 서비스를 사용 하 여 업데이트 하려는 하지만 이미지 목록 전달 해야 하는 Api에 의해 제한 되는 코드에 대 한 기존 이미지 스트립의 경우 여전히 이미지 서비스의 이점을 얻을 수 있습니다. 모니커 기반 이미지 스트립을 만들려면 기존 모니커에서 매니페스트를 만들려면 다음 단계를 수행 합니다.  
   
-1.  실행 합니다 **ManifestFromResources** 도구인 이미지 스트립을 전달 합니다. 이 줄에 대 한 매니페스트를 생성 됩니다.  
+1. 실행 합니다 **ManifestFromResources** 도구인 이미지 스트립을 전달 합니다. 이 줄에 대 한 매니페스트를 생성 됩니다.  
   
-    -   권장: 용도 맞게 매니페스트에 대 한 기본이 아닌 이름을 제공 합니다.  
+   -   권장: 용도 맞게 매니페스트에 대 한 기본이 아닌 이름을 제공 합니다.  
   
-2.  만 사용 하는 경우 **KnownMonikers**, 다음을 수행 합니다.  
+2. 만 사용 하는 경우 **KnownMonikers**, 다음을 수행 합니다.  
   
-    -   대체는 \<이미지 > 섹션으로 매니페스트에 \<이미지 / >입니다.  
+   -   대체는 \<이미지 > 섹션으로 매니페스트에 \<이미지 / >입니다.  
   
-    -   모든 subimage Id를 제거 (개 \<imagestrip 이름 > _ # #).  
+   -   모든 subimage Id를 제거 (개 \<imagestrip 이름 > _ # #).  
   
-    -   권장: AssetsGuid 기호 및 용도 맞게 이미지 스트립 기호 이름을 바꿉니다.  
+   -   권장: AssetsGuid 기호 및 용도 맞게 이미지 스트립 기호 이름을 바꿉니다.  
   
-    -   각 대체 **ContainedImage**의 각 $(ImageCatalogGuid)를 사용 하 여 GUID 바꿀 **ContainedImage**의 $를 사용 하 여 ID (\<모니커 >), 각 외부="true"특성추가**ContainedImage**  
+   -   각 대체 **ContainedImage**의 각 $(ImageCatalogGuid)를 사용 하 여 GUID 바꿀 **ContainedImage**의 $를 사용 하 여 ID (\<모니커 >), 각 외부="true"특성추가**ContainedImage**  
   
-        -   \<모니커 > 바꿔야 합니다 **KnownMoniker** 이미지와 일치 하는 같지만 "KnownMonikers" 이름에서 제거 합니다.  
+       -   \<모니커 > 바꿔야 합니다 **KnownMoniker** 이미지와 일치 하는 같지만 "KnownMonikers" 이름에서 제거 합니다.  
   
-    -   추가 < 가져오기 Manifest="$(ManifestFolder)\\< 디렉터리 경로 설치 하는 상대 *\>\Microsoft.VisualStudio.ImageCatalog.imagemanifest" /\*>의 맨 위에 \<기호 > 섹션.  
+   -   추가 < 가져오기 Manifest="$(ManifestFolder)\\< 디렉터리 경로 설치 하는 상대 *\>\Microsoft.VisualStudio.ImageCatalog.imagemanifest" /\*>의 맨 위에 \<기호 > 섹션.  
   
-        -   상대 경로 매니페스트에 대 한 제작 설치에 정의 된 배포 위치에 따라 결정 됩니다.  
+       -   상대 경로 매니페스트에 대 한 제작 설치에 정의 된 배포 위치에 따라 결정 됩니다.  
   
-3.  실행 합니다 **ManifestToCode** 기존 코드에는 모니커 이미지 스트립에 대 한 이미지 서비스를 쿼리 하는 데 사용할 수 있도록 래퍼를 생성 하는 도구입니다.  
+3. 실행 합니다 **ManifestToCode** 기존 코드에는 모니커 이미지 스트립에 대 한 이미지 서비스를 쿼리 하는 데 사용할 수 있도록 래퍼를 생성 하는 도구입니다.  
   
-    -   권장: 래퍼 및 용도 맞게 네임 스페이스에 대 한 기본이 아닌 이름을 제공 합니다.  
+   -   권장: 래퍼 및 용도 맞게 네임 스페이스에 대 한 기본이 아닌 이름을 제공 합니다.  
   
-4.  모든 작업을 수행 합니다 추가 설치 작성/배포 및 다른 코드 변경은 이미지 서비스 및 새 파일을 사용 하 합니다.  
+4. 모든 작업을 수행 합니다 추가 설치 작성/배포 및 다른 코드 변경은 이미지 서비스 및 새 파일을 사용 하 합니다.  
   
- 샘플 매니페스트를 내부 및 외부 이미지 처럼 보여야 합니다 참조를 포함 합니다.  
+   샘플 매니페스트를 내부 및 외부 이미지 처럼 보여야 합니다 참조를 포함 합니다.  
   
 ```xml  
 <?xml version="1.0"?>  
@@ -662,7 +662,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
  확인할 [ http://github.com/Microsoft/VSSDK-Extensibility-Samples ](http://github.com/Microsoft/VSSDK-Extensibility-Samples) 최신 샘플에 대 한 합니다.  
   
 ### <a name="tooling"></a>도구  
- 이미지 서비스와 작동 하는 UI를 작성/업데이트 지원 하기 위해 이미지 서비스에 대 한 지원 도구 집합을 만들었습니다. 각 도구에 대 한 자세한 내용은 도구와 함께 제공 되는 설명서를 확인 합니다. 도구는의 일부분으로 포함 된 [Visual Studio 2015 SDK.](http://msdn.microsoft.com/library/bb166441.aspx)  
+ 이미지 서비스와 작동 하는 UI를 작성/업데이트 지원 하기 위해 이미지 서비스에 대 한 지원 도구 집합을 만들었습니다. 각 도구에 대 한 자세한 내용은 도구와 함께 제공 되는 설명서를 확인 합니다. 도구는의 일부분으로 포함 된 [Visual Studio 2015 SDK](visual-studio-sdk.md)합니다.
   
  **ManifestFromResources**  
   

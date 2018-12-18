@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd9c9f8cfe37cf54181fc9c76b450846c12d5b41
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6247e36ecc34c016cf4b976664f14d6e3fb5bb80
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468655"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836136"
 ---
 # <a name="idiaenumdebugstreamsclone"></a>IDiaEnumDebugStreams::Clone
-현재 열거자와 동일한 열거 상태가 포함 하는 열거자를 만듭니다.  
+현재 열거자와 열거 상태가 같은 포함 하는 열거자를 만듭니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -34,10 +34,10 @@ HRESULT Clone (
   
 #### <a name="parameters"></a>매개 변수  
  `ppenum`  
- [out] 반환 된 [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md) 열거자의 중복을 포함 하는 개체입니다. 스트림을 중복 되지 않습니다는 열거자입니다.  
+ [out] 반환 된 [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md) 열거자의 중복을 포함 하는 개체입니다. 스트림을 중복 되지 열거자만 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)

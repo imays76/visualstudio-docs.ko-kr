@@ -1,5 +1,5 @@
 ---
-title: Visual Studio의 부하 테스트 API
+title: 부하 테스트 API
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7454b75054f06bb35237b344552a268eed3798e1
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: ea28bba2d59515ce8080d577248dd7bddee0c570
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379278"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049907"
 ---
 # <a name="how-to-use-the-load-test-api"></a>방법: 부하 테스트 API 사용
 
 Visual Studio에서는 부하 테스트를 제어하거나 향상시킬 수 있는 부하 테스트 플러그 인을 지원합니다. 부하 테스트 플러그 인은 <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> 네임스페이스에 있는 <xref:Microsoft.VisualStudio.TestTools.LoadTesting> 인터페이스를 구현하는 사용자 정의 클래스입니다. 부하 테스트 플러그 인을 사용하여 카운터 또는 오류 임계값에 도달한 경우 부하 테스트 중단과 같은 사용자 지정의 부하 테스트 작업을 수행할 수 있습니다. <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest> 클래스의 속성을 사용하여 사용자 정의 코드에서 부하 테스트 매개 변수를 가져오거나 설정합니다. <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest> 클래스의 이벤트를 사용하여 부하 테스트가 실행될 때 알림용 대리자를 연결합니다.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!TIP]
 > 개체 브라우저를 사용하여 <xref:Microsoft.VisualStudio.TestTools.LoadTesting> 네임스페이스를 검사합니다. Visual C# 및 Visual Basic 편집기는 모두 네임스페이스의 클래스를 사용하여 코딩하기 위한 IntelliSense 지원을 제공합니다.

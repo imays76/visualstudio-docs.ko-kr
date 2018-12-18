@@ -1,19 +1,20 @@
 ---
 layout: LandingPage
-author: jasongroce
-ms.author: apexprodleads
+title: Visual Studio 확장성
+description: Visual Studio 확장성에 대해 자세히 알아보세요.
+author: gregvanl
+ms.author: gregvanl
+ms.date: 10/31/2018
 ms.technology: vs-ide-sdk
 ms.topic: landing-page
-title: Visual Studio 확장성 설명서 | Microsoft Docs
-description: Visual Studio 확장성에 대해 자세히 알아보세요.
 ms.workload:
 - apexprodleads
-ms.openlocfilehash: 37f5bfbac42c55a332ddf6f1904e2008d50ae40f
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 7a86fb34eb054423127ba2f91b055585a20719b3
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500299"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750747"
 ---
 # <a name="visual-studio-extensibility-documentation"></a>Visual Studio 확장성 설명서
 
@@ -49,7 +50,7 @@ Visual Studio에서는 다양한 확장성 옵션이 제공됩니다. Visual Stu
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>.NET 컴파일러 플랫폼("Roslyn") 확장성</h3>
+                        <h3>.NET 컴파일러 플랫폼(&quot;Roslyn&quot;) 확장성</h3>
                     </div>
                 </div>
             </div>

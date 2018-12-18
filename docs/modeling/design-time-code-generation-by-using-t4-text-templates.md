@@ -17,22 +17,22 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4bc2b55e0e287caea0db0c5fcdabccf454be0154
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: a41b86068f9f7aedbe10635bf859818c0b468789
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567235"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967456"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>T4 텍스트 템플릿을 사용하여 디자인 타임 코드 생성
-디자인 타임 T4 텍스트 템플릿을 사용하면 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로젝트에서 프로그램 코드 및 기타 파일을 생성할 수 있습니다. 데이터에 따라 생성 되는 코드를 달라 지도록 템플릿을 작성 일반적으로 *모델*합니다. 모델은 파일 또는 응용 프로그램의 요구 사항에 대 한 키 정보가 포함 된 데이터베이스.
+디자인 타임 T4 텍스트 템플릿을 Visual Studio 프로젝트에서 프로그램 코드 및 기타 파일을 생성할 수 있습니다. 데이터에 따라 생성 되는 코드를 달라 지도록 템플릿을 작성 일반적으로 *모델*합니다. 모델은 파일 또는 응용 프로그램의 요구 사항에 대 한 키 정보가 포함 된 데이터베이스.
 
  워크플로를 테이블이나 다이어그램으로 정의하는 모델을 예로 들어 보겠습니다. 해당 모델에서 워크플로를 실행하는 소프트웨어를 생성할 수 있습니다. 사용자 요구 사항이 변경 될 때 사용자를 사용 하 여 새 워크플로 설명 하기 쉽습니다. 워크플로에서 코드를 다시 생성하는 것이 코드를 직접 업데이트하는 것보다 안정적입니다.
 
 > [!NOTE]
 >  A *모델* 는 응용 프로그램의 특정 측면을 설명 하는 데이터 원본입니다. 모든 형태와 종류의 파일 또는 데이터베이스일 수 있으며 UML 모델이나 DSL(Domain-Specific Language) 모델 등의 특정 형태가 아니어도 됩니다. 일반적인 모델은 테이블 또는 XML 파일 형식입니다.
 
- 코드를 생성하는 방법에 대해서는 이미 잘 알고 계실 것입니다. 리소스를 정의 하는 경우는 **.resx** 파일에 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 솔루션, 클래스 및 메서드 집합을 자동으로 생성 됩니다. 리소스 파일로 리소스를 편집하는 것이 클래스와 메서드를 편집하는 것보다 훨씬 쉽고 안정적입니다. 텍스트 템플릿을 사용하면 직접 디자인한 소스에서 같은 방식으로 코드를 생성할 수 있습니다.
+ 코드를 생성하는 방법에 대해서는 이미 잘 알고 계실 것입니다. 리소스를 정의 하는 경우는 **.resx** 파일 Visual Studio 솔루션에서 클래스 및 메서드 집합을 자동으로 생성 됩니다. 리소스 파일로 리소스를 편집하는 것이 클래스와 메서드를 편집하는 것보다 훨씬 쉽고 안정적입니다. 텍스트 템플릿을 사용하면 직접 디자인한 소스에서 같은 방식으로 코드를 생성할 수 있습니다.
 
  텍스트 템플릿에는 생성하려는 텍스트와 텍스트의 변수 부분을 생성하는 프로그램 코드가 혼합되어 있습니다. 프로그램 코드를 사용하면 생성된 텍스트의 일부분을 반복하거나 조건부로 생략할 수 있습니다. 생성된 텍스트 자체는 응용 프로그램 부분을 만드는 프로그램 코드일 수 있습니다.
 
@@ -40,103 +40,102 @@ ms.locfileid: "39567235"
 
 #### <a name="to-create-a-design-time-t4-template-in-visual-studio"></a>Visual Studio에서 디자인 타임 T4 텍스트 템플릿을 만들려면
 
-1.  만들기는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로젝트를 만들거나 기존 실험 열기.
+1. Visual Studio 프로젝트를 만들거나 기존 항목을 엽니다.
 
-     예를 들어 합니다 **파일** 메뉴에서 선택 **새로 만들기** > **프로젝트**합니다.
+    예를 들어 합니다 **파일** 메뉴에서 선택 **새로 만들기** > **프로젝트**합니다.
 
-2.  텍스트 템플릿 파일을 프로젝트에 추가 하 고 이름을 확장명을 가진 **.tt**합니다.
+2. 텍스트 템플릿 파일을 프로젝트에 추가 하 고 이름을 확장명을 가진 **.tt**합니다.
 
-     이렇게 하려면 **솔루션 탐색기**에서 프로젝트의 바로 가기 메뉴에서 선택 **추가** > **새 항목**합니다. 에 **새 항목 추가** 대화 상자 선택 **텍스트 템플릿** 가운데 창에서.
+    이렇게 하려면 **솔루션 탐색기**에서 프로젝트의 바로 가기 메뉴에서 선택 **추가** > **새 항목**합니다. 에 **새 항목 추가** 대화 상자 선택 **텍스트 템플릿** 가운데 창에서.
 
-     다음에 유의 합니다 **사용자 지정 도구** 파일의 속성은 **TextTemplatingFileGenerator**합니다.
+    다음에 유의 합니다 **사용자 지정 도구** 파일의 속성은 **TextTemplatingFileGenerator**합니다.
 
-3.  파일을 엽니다. 다음 지시문이 이미 포함되어 있습니다.
+3. 파일을 엽니다. 다음 지시문이 이미 포함되어 있습니다.
 
-    ```
-    <#@ template hostspecific="false" language="C#" #>
-    <#@ output extension=".txt" #>
-    ```
+   ```
+   <#@ template hostspecific="false" language="C#" #>
+   <#@ output extension=".txt" #>
+   ```
 
-     [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 프로젝트에 템플릿을 추가한 경우 언어 특성은 "`VB`"입니다.
+    [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 프로젝트에 템플릿을 추가한 경우 언어 특성은 "`VB`"입니다.
 
-4.  파일 끝에 원하는 텍스트를 추가합니다. 예를 들면 다음과 같습니다.
+4. 파일 끝에 원하는 텍스트를 추가합니다. 예를 들면 다음과 같습니다.
 
-    ```
-    Hello, world!
-    ```
+   ```
+   Hello, world!
+   ```
 
-5.  파일을 저장합니다.
+5. 파일을 저장합니다.
 
-     표시 될 수 있습니다는 **보안 경고** 템플릿을 실행 하려는 것인지 묻는 메시지 상자입니다. **확인**을 클릭합니다.
+    표시 될 수 있습니다는 **보안 경고** 템플릿을 실행 하려는 것인지 묻는 메시지 상자입니다. **확인**을 클릭합니다.
 
-6.  **솔루션 탐색기**, 템플릿 파일 노드를 확장 하 고 확장명을 가진 파일을 보면 **.txt**합니다. 이 파일에 템플릿에서 생성된 텍스트가 포함되어 있습니다.
+6. **솔루션 탐색기**, 템플릿 파일 노드를 확장 하 고 확장명을 가진 파일을 보면 **.txt**합니다. 이 파일에 템플릿에서 생성된 텍스트가 포함되어 있습니다.
 
-    > [!NOTE]
-    >  프로젝트는 Visual Basic 프로젝트를 클릭 해야 **모든 파일 표시** 하려면 출력 파일을 참조 하세요.
+   > [!NOTE]
+   >  프로젝트는 Visual Basic 프로젝트를 클릭 해야 **모든 파일 표시** 하려면 출력 파일을 참조 하세요.
 
 ### <a name="regenerating-the-code"></a>코드 다시 생성
  다음과 같은 경우에는 템플릿이 실행되어 보조 파일이 생성됩니다.
 
--   템플릿을 편집한 다음 다른 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 창으로 포커스를 변경하는 경우
+- 템플릿을 편집 하 고 다른 Visual Studio 창으로 포커스를 변경 합니다.
 
--   템플릿을 저장하는 경우
+- 템플릿을 저장하는 경우
 
--   클릭 **모든 템플릿 변형** 에 **빌드** 메뉴. 이 경우 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 솔루션에서 모든 템플릿이 변환됩니다.
+- 클릭 **모든 템플릿 변형** 에 **빌드** 메뉴. 이 작업에서는 Visual Studio 솔루션에서 모든 템플릿을 변환 합니다.
 
--   **솔루션 탐색기**의 바로 가기 메뉴에서 파일, 선택 **사용자 지정 도구 실행**합니다. 선택한 일부 템플릿을 변형하려면 이 방법을 사용합니다.
+- **솔루션 탐색기**의 바로 가기 메뉴에서 파일, 선택 **사용자 지정 도구 실행**합니다. 선택한 일부 템플릿을 변형하려면 이 방법을 사용합니다.
 
- 템플릿이 읽는 데이터 파일이 변경되면 템플릿이 실행되도록 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로젝트를 설정할 수도 있습니다. 자세한 내용은 [코드를 자동으로 다시 생성](#Regenerating)합니다.
+  템플릿이 읽는 데이터 파일이 변경 된 경우 실행 되도록 Visual Studio 프로젝트를 설정할 수 있습니다. 자세한 내용은 [코드를 자동으로 다시 생성](#Regenerating)합니다.
 
 ## <a name="generating-variable-text"></a>변수 텍스트 생성
  텍스트 템플릿에서는 프로그램 코드를 사용하여 생성된 파일 내용이 바뀌도록 할 수 있습니다.
 
 #### <a name="to-generate-text-by-using-program-code"></a>프로그램 코드를 사용하여 텍스트를 생성하려면
 
-1.  `.tt` 파일의 내용을 다음과 같이 변경합니다.
+1. `.tt` 파일의 내용을 다음과 같이 변경합니다.
 
-    ```csharp
-    <#@ template hostspecific="false" language="C#" #>
-    <#@ output extension=".txt" #>
-    <#int top = 10;
+   ```csharp
+   <#@ template hostspecific="false" language="C#" #>
+   <#@ output extension=".txt" #>
+   <#int top = 10;
 
-    for (int i = 0; i<=top; i++)
-    { #>
+   for (int i = 0; i<=top; i++)
+   { #>
+      The square of <#= i #> is <#= i*i #>
+   <# } #>
+   ```
+
+   ```vb
+   <#@ template hostspecific="false" language="VB" #>
+   <#@ output extension=".txt" #>
+   <#Dim top As Integer = 10
+
+   For i As Integer = 0 To top
+   #>
        The square of <#= i #> is <#= i*i #>
-    <# } #>
-    ```
+   <#
+   Next
+   #>
+   ```
 
-    ```vb
-    <#@ template hostspecific="false" language="VB" #>
-    <#@ output extension=".txt" #>
-    <#Dim top As Integer = 10
+2. .tt 파일을 저장하고 생성된 .txt 파일을 다시 검사합니다. 숫자 0에서 10까지를 각각 제곱한 값이 표시됩니다.
 
-    For i As Integer = 0 To top
-    #>
-        The square of <#= i #> is <#= i*i #>
-    <#
-    Next
-    #>
+   위의 코드에서 문은 `<#...#>` 내에 포함되어 있으며 단일 식은 `<#=...#>` 내에 포함되어 있습니다. 자세한 내용은 [T4 텍스트 템플릿 쓰기](../modeling/writing-a-t4-text-template.md)합니다.
 
-    ```
-
-2.  .tt 파일을 저장하고 생성된 .txt 파일을 다시 검사합니다. 숫자 0에서 10까지를 각각 제곱한 값이 표시됩니다.
-
- 위의 코드에서 문은 `<#...#>` 내에 포함되어 있으며 단일 식은 `<#=...#>` 내에 포함되어 있습니다. 자세한 내용은 [T4 텍스트 템플릿 쓰기](../modeling/writing-a-t4-text-template.md)합니다.
-
- [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]에서 생성 코드를 작성하는 경우 `template` 지시문은 `language="VB"`를 포함해야 합니다. 기본값은 `"C#"`입니다.
+   [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]에서 생성 코드를 작성하는 경우 `template` 지시문은 `language="VB"`를 포함해야 합니다. 기본값은 `"C#"`입니다.
 
 ## <a name="debugging-a-design-time-t4-text-template"></a>디자인 타임 T4 텍스트 템플릿 디버그
  텍스트 템플릿을 디버그하려면
 
--   먼저 `debug="true"`를 `template` 지시문에 삽입합니다. 예를 들면 다음과 같습니다.
+- 먼저 `debug="true"`를 `template` 지시문에 삽입합니다. 예를 들면 다음과 같습니다.
 
-     `<#@ template debug="true" hostspecific="false" language="C#" #>`
+   `<#@ template debug="true" hostspecific="false" language="C#" #>`
 
--   일반 코드에서와 같은 방식으로 템플릿에 중단점을 설정합니다.
+- 일반 코드에서와 같은 방식으로 템플릿에 중단점을 설정합니다.
 
--   선택할 **T4 템플릿 디버그** 솔루션 탐색기에서 텍스트 템플릿 파일의 바로 가기 메뉴에서.
+- 선택할 **T4 템플릿 디버그** 솔루션 탐색기에서 텍스트 템플릿 파일의 바로 가기 메뉴에서.
 
- 템플릿이 실행된 후 중단점에서 중지됩니다. 일반적인 방식으로 변수를 점검하고 코드를 단계별로 실행할 수 있습니다.
+  템플릿이 실행된 후 중단점에서 중지됩니다. 일반적인 방식으로 변수를 점검하고 코드를 단계별로 실행할 수 있습니다.
 
 > [!TIP]
 >  `debug="true"`를 사용하는 경우 생성된 코드에 줄 번호 매기기 지시문이 추가로 삽입되므로 해당 코드가 텍스트 템플릿에 보다 정확하게 매핑됩니다. 이 지시문이 없으면 중단점으로 인해 실행이 잘못된 상태로 중지될 수 있습니다.
@@ -154,7 +153,7 @@ ms.locfileid: "39567235"
 
     ```csharp
 
-              <#@ template debug="false" hostspecific="false" language="C#" #>
+    <#@ template debug="false" hostspecific="false" language="C#" #>
     <#@ output extension=".cs" #>
     <# var properties = new string [] {"P1", "P2", "P3"}; #>
     // This is generated code:
@@ -203,13 +202,13 @@ ms.locfileid: "39567235"
 ### <a name="structuring-text-templates"></a>텍스트 템플릿 구조 지정
  실제 프로그래밍에서는 대개 템플릿 코드를 다음의 두 부분으로 구분합니다.
 
--   변수에서 값은 설정하지만 텍스트 블록은 포함하지 않는 구성(데이터 수집) 부분. 위의 예에서 이 부분은 `properties` 초기화입니다.
+- 변수에서 값은 설정하지만 텍스트 블록은 포함하지 않는 구성(데이터 수집) 부분. 위의 예에서 이 부분은 `properties` 초기화입니다.
 
-     이 부분은 저장소 내 모델을 생성하며 일반적으로 모델 파일을 읽으므로 "모델" 섹션이라고 하는 경우도 있습니다.
+   이 부분은 저장소 내 모델을 생성하며 일반적으로 모델 파일을 읽으므로 "모델" 섹션이라고 하는 경우도 있습니다.
 
--   변수의 값을 사용하는 텍스트 생성 부분. 위의 예에서는 `foreach(...){...}`에 해당합니다.
+- 변수의 값을 사용하는 텍스트 생성 부분. 위의 예에서는 `foreach(...){...}`에 해당합니다.
 
- 코드를 반드시 이와 같이 분리해야 하는 것은 아니지만 이 스타일을 사용하면 텍스트를 포함하는 부분을 보다 단순하게 작성하여 템플릿을 더 쉽게 읽을 수 있습니다.
+  코드를 반드시 이와 같이 분리해야 하는 것은 아니지만 이 스타일을 사용하면 텍스트를 포함하는 부분을 보다 단순하게 작성하여 템플릿을 더 쉽게 읽을 수 있습니다.
 
 ## <a name="reading-files-or-other-sources"></a>파일 또는 기타 소스 읽기
  모델 파일이나 데이터베이스에 액세스하기 위해 템플릿 코드는 System.XML 등의 어셈블리를 사용할 수 있습니다. 이러한 어셈블리에 액세스하려면 다음과 같은 지시문을 삽입해야 합니다.
@@ -220,13 +219,13 @@ ms.locfileid: "39567235"
 <#@ import namespace="System.IO" #>
 ```
 
- `assembly` 지시문은 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로젝트의 참조 섹션과 같은 방식으로 템플릿 코드에서 지정한 어셈블리를 사용할 수 있도록 합니다. System.dll은 자동으로 참조되므로 해당 참조를 포함할 필요는 없습니다. `import` 지시문을 사용하면 일반 프로그램 파일의 `using` 지시문과 같은 방식으로 정규화된 이름을 사용하지 않고도 형식을 사용할 수 있습니다.
+ `assembly` 지시문을 사용 하면 지정된 된 어셈블리를 템플릿 코드를 사용할 수 있는 Visual Studio 프로젝트의 참조 섹션과 같은 방식에서입니다. System.dll은 자동으로 참조되므로 해당 참조를 포함할 필요는 없습니다. `import` 지시문을 사용하면 일반 프로그램 파일의 `using` 지시문과 같은 방식으로 정규화된 이름을 사용하지 않고도 형식을 사용할 수 있습니다.
 
  예를 들어 가져온 후 **System.IO**를 작성할 수 있습니다.
 
 ```csharp
 
-      <# var properties = File.ReadLines("C:\\propertyList.txt");#>
+<# var properties = File.ReadLines("C:\\propertyList.txt");#>
 ...
 <# foreach (string propertyName in properties) { #>
 ...
@@ -236,7 +235,6 @@ ms.locfileid: "39567235"
 <# For Each propertyName As String In
              File.ReadLines("C:\\propertyList.txt")
 #>
-
 ```
 
 ### <a name="opening-a-file-with-a-relative-pathname"></a>상대 경로 이름을 사용하여 파일 열기
@@ -244,7 +242,6 @@ ms.locfileid: "39567235"
 
 ```
 <#@ template debug="false" hostspecific="true" language="C#" #>
-
 ```
 
  그런 후에 다음과 같은 코드를 작성할 수 있습니다.
@@ -256,7 +253,6 @@ ms.locfileid: "39567235"
 ...
 <#  foreach (string propertyName in properties { #>
 ...
-
 ```
 
 ```vb
@@ -267,41 +263,40 @@ ms.locfileid: "39567235"
 <#   For Each propertyName As String In properties
 ...
 #>
-
 ```
 
  현재 템플릿 파일의 이름을 식별하는 `this.Host.TemplateFile`을 사용할 수도 있습니다.
 
  여기서 `this.Host`는 VB에서는 `Me.Host`이며, 해당 형식은 `Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost`와 같습니다.
 
-### <a name="getting-data-from-includevsprvscode-qualityincludesvsprvsmdmd"></a>[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서 데이터 가져오기
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서 제공되는 서비스를 사용하려면 `hostSpecific` 특성을 설정하고 `EnvDTE` 어셈블리를 로드합니다. 그런 다음 IServiceProvider.GetCOMService()를 사용하여 DTE 및 기타 서비스에 액세스할 수 있습니다. 예를 들면 다음과 같습니다.
+### <a name="getting-data-from-visual-studio"></a>Visual Studio에서 데이터 가져오기
+ Visual Studio에서 제공 하는 서비스를 사용 하려면 설정 합니다 `hostSpecific` 특성과 부하는 `EnvDTE` 어셈블리입니다. 가져오기 `Microsoft.VisualStudio.TextTemplating`를 포함 하는 `GetCOMService()` 확장 메서드.  그런 다음 IServiceProvider.GetCOMService()를 사용하여 DTE 및 기타 서비스에 액세스할 수 있습니다. 예를 들면 다음과 같습니다.
 
-```scr
+```src
 <#@ template hostspecific="true" language="C#" #>
 <#@ output extension=".txt" #>
 <#@ assembly name="EnvDTE" #>
+<#@ import namespace="Microsoft.VisualStudio.TextTemplating" #>
 <#
   IServiceProvider serviceProvider = (IServiceProvider)this.Host;
   EnvDTE.DTE dte = (EnvDTE.DTE) serviceProvider.GetCOMService(typeof(EnvDTE.DTE));
 #>
 
 Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
-
 ```
 
 > [!TIP]
 >  텍스트 템플릿은 자체 앱 도메인에서 실행되며 마샬링을 통해 서비스에 액세스합니다. 이 경우에는 GetCOMService()가 GetService()보다 안정적입니다.
 
-##  <a name="Regenerating"></a> 코드를 자동으로 다시 생성
- 일반적으로 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 솔루션의 여러 파일은 입력 모델 하나를 사용하여 생성됩니다. 각 파일은 자체 템플릿에서 생성되지만 모든 템플릿은 같은 모델을 참조합니다.
+## <a name="Regenerating"></a> 코드를 자동으로 다시 생성
+ 일반적으로 여러 Visual Studio 솔루션 파일은 입력된 모델 하나를 사용 하 여 생성 됩니다. 각 파일은 자체 템플릿에서 생성되지만 모든 템플릿은 같은 모델을 참조합니다.
 
  소스 모델이 변경되면 솔루션에서 모든 템플릿을 다시 실행해야 합니다. 이렇게 하려면 수동으로 선택 **모든 템플릿 변형** 에 **빌드** 메뉴.
 
  Visual Studio 모델링 SDK를 설치한 경우에 빌드를 수행할 때마다 자동으로 변환 하는 모든 템플릿이 있습니다. 이렇게 하려면 프로젝트 파일(.csproj 또는 .vbproj)을 텍스트 편집기에서 편집하여 파일 끝부분의 다른 `<import>` 문 뒤에 다음 줄을 추가합니다.
 
 > [!NOTE]
-> Visual Studio의 특정 기능을 설치한 경우에 Visual Studio 2017에서 텍스트 템플릿 변환 SDK 및 Visual Studio 모델링 SDK에 자동으로 설치 됩니다. 자세한 내용은 참조 하세요. [이 블로그 게시물](https://blogs.msdn.microsoft.com/visualstudioalm/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)합니다.
+> Visual Studio의 특정 기능을 설치한 경우에 Visual Studio 2017에서 텍스트 템플릿 변환 SDK 및 Visual Studio 모델링 SDK에 자동으로 설치 됩니다. 자세한 내용은 참조 하세요. [이 블로그 게시물](https://blogs.msdn.microsoft.com/devops/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)합니다.
 
 ```xml
 <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets" />
@@ -314,49 +309,51 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
  자세한 내용은 [빌드 프로세스에서 코드 생성](../modeling/code-generation-in-a-build-process.md)합니다.
 
 ## <a name="error-reporting"></a>오류 보고
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 오류 창에 오류 및 경고 메시지를 표시하려는 경우 다음 메서드를 사용할 수 있습니다.
+ Visual Studio 오류 창에 오류 및 경고 메시지를 배치, 이러한 메서드를 사용할 수 있습니다.
 
 ```
 Error("An error message");
 Warning("A warning message");
 ```
 
-##  <a name="Converting"></a> 기존 파일을 템플릿으로 변환
+## <a name="Converting"></a> 기존 파일을 템플릿으로 변환
  템플릿의 유용한 특징 중 하나는 삽입된 일부 프로그램 코드와 함께, 템플릿에서 생성한 파일과 매우 비슷하다는 점입니다. 이로 인해 템플릿을 만드는 유용한 방법이 제공됩니다. 먼저 일반 파일을 프로토타입으로 같은 만들기는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 파일을 선택한 다음 결과 파일을 변경 하는 생성 코드를 점진적으로 도입 합니다.
 
 #### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>기존 파일을 디자인 타임 템플릿으로 변환하려면
 
-1.  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로젝트 파일에 `.cs`, `.vb`, `.resx` 파일 등 생성하려는 파일 형식을 추가합니다.
+1. Visual Studio 프로젝트에 추가 등 생성 하려는 형식의 파일을 `.cs`, `.vb`, 또는 `.resx` 파일입니다.
 
-2.  새 파일을 테스트하여 작동하는지 확인합니다.
+2. 새 파일을 테스트하여 작동하는지 확인합니다.
 
-3.  솔루션 탐색기에서 파일 이름 확장명을 변경 **.tt**합니다.
+3. 솔루션 탐색기에서 파일 이름 확장명을 변경 **.tt**합니다.
 
-4.  다음 속성을 확인 합니다 **.tt** 파일:
+4. 다음 속성을 확인 합니다 **.tt** 파일:
 
-    |||
-    |-|-|
-    |**사용자 지정 도구 =**|**TextTemplatingFileGenerator**|
-    |**빌드 작업 =**|**없음**|
 
-5.  파일의 시작 부분에 다음 줄을 삽입합니다.
+   | | |
+   |-|-|
+   | **사용자 지정 도구 =** | **TextTemplatingFileGenerator** |
+   | **빌드 작업 =** | **없음** |
 
-    ```
-    <#@ template debug="false" hostspecific="false" language="C#" #>
-    <#@ output extension=".cs" #>
-    ```
 
-     [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]에서 템플릿의 생성 코드를 작성하려면 `language` 특성을 `"VB"` 대신 `"C#"`로 설정합니다.
+5. 파일의 시작 부분에 다음 줄을 삽입합니다.
 
-     `extension` 특성을 `.cs`, `.resx`, `.xml` 등 생성하려는 파일 형식의 파일 이름 확장명으로 설정합니다.
+   ```
+   <#@ template debug="false" hostspecific="false" language="C#" #>
+   <#@ output extension=".cs" #>
+   ```
 
-6.  파일을 저장합니다.
+    [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]에서 템플릿의 생성 코드를 작성하려면 `language` 특성을 `"VB"` 대신 `"C#"`로 설정합니다.
 
-     지정한 확장명으로 보조 파일이 작성됩니다. 이 파일은 해당 파일 형식에 적절한 속성을 포함합니다. 예를 들어 합니다 **빌드 작업** .cs 파일의 속성이 **컴파일**합니다.
+    `extension` 특성을 `.cs`, `.resx`, `.xml` 등 생성하려는 파일 형식의 파일 이름 확장명으로 설정합니다.
 
-     생성된 파일의 내용이 원래 파일과 같은지 확인합니다.
+6. 파일을 저장합니다.
 
-7.  달라지도록 하려는 파일 부분을 확인합니다. 특정 상황에서만 표시되는 부분이나 반복되는 부분, 특정 값이 달라지는 부분을 예로 들 수 있습니다. 생성 코드를 삽입하고 파일을 저장한 다음 보조 파일이 올바르게 생성되는지 확인합니다. 이 단계를 반복합니다.
+    지정한 확장명으로 보조 파일이 작성됩니다. 이 파일은 해당 파일 형식에 적절한 속성을 포함합니다. 예를 들어 합니다 **빌드 작업** .cs 파일의 속성이 **컴파일**합니다.
+
+    생성된 파일의 내용이 원래 파일과 같은지 확인합니다.
+
+7. 달라지도록 하려는 파일 부분을 확인합니다. 특정 상황에서만 표시되는 부분이나 반복되는 부분, 특정 값이 달라지는 부분을 예로 들 수 있습니다. 생성 코드를 삽입하고 파일을 저장한 다음 보조 파일이 올바르게 생성되는지 확인합니다. 이 단계를 반복합니다.
 
 ## <a name="guidelines-for-code-generation"></a>코드 생성 지침
  참조 하세요 [T4 텍스트 템플릿 작성에 대 한 지침](../modeling/guidelines-for-writing-t4-text-templates.md)합니다.
@@ -364,10 +361,10 @@ Warning("A warning message");
 ## <a name="next-steps"></a>다음 단계
 
 |다음 단계|항목|
-|---------------|-----------|
+|-|-|
 |보조 함수, 포함된 파일 및 외부 데이터를 사용하는 코드로 고급 텍스트 템플릿을 작성하고 디버그합니다.|[T4 텍스트 템플릿 쓰기](../modeling/writing-a-t4-text-template.md)|
 |런타임에 템플릿에서 문서를 생성합니다.|[T4 텍스트 템플릿을 사용하여 런타임 텍스트 생성](../modeling/run-time-text-generation-with-t4-text-templates.md)|
-|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 외부에서 텍스트 생성을 실행합니다.|[TextTransform 유틸리티 사용하여 파일 생성](../modeling/generating-files-with-the-texttransform-utility.md)|
+|Visual Studio 외부에서 텍스트 생성을 실행 합니다.|[TextTransform 유틸리티 사용하여 파일 생성](../modeling/generating-files-with-the-texttransform-utility.md)|
 |DSL(Domain-Specific Language) 형식으로 데이터를 변형합니다.|[도메인별 언어에서 코드 생성](../modeling/generating-code-from-a-domain-specific-language.md)|
 |고유한 데이터 소스를 변형하는 지시문 프로세서를 작성합니다.|[T4 텍스트 변환 사용자 지정](../modeling/customizing-t4-text-transformation.md)|
 

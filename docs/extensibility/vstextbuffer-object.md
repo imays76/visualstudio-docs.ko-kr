@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e763b8006dd2c01f8e2ee4beeffa7c78100b15b3
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 587a0193dea0f4a8d16ea0555cf5788cd1ead1d5
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586308"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495351"
 ---
 # <a name="vstextbuffer-object"></a>VSTextBuffer 개체
 텍스트 버퍼 개체는 일반적으로 파일을 사용 하 여 연결 된 유니코드 문자의 스트림을 나타냅니다. <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> 마법사와 같이 핵심 편집기의 컨텍스트 외부에서 개체를 사용할 수 있습니다.  
@@ -30,9 +30,9 @@ ms.locfileid: "39586308"
   
 |메서드|설명|  
 |------------|-----------------|  
-|[IOleCommandTarget](http://msdn.microsoft.com/library/windows/desktop/ms683797)|표준 OLE 인터페이스입니다. 실행 취소/다시 실행 버퍼에 처리에 사용 됩니다.|  
-|[IPersistFile](http://msdn.microsoft.com/library/windows/desktop/ms687223)|표준 OLE 인터페이스입니다.|  
-|[IPersistStream](http://msdn.microsoft.com/library/windows/desktop/ms690091)|표준 OLE 인터페이스입니다.|  
+|[IOleCommandTarget](/windows/desktop/api/docobj/nn-docobj-iolecommandtarget)|표준 OLE 인터페이스입니다. 실행 취소/다시 실행 버퍼에 처리에 사용 됩니다.|  
+|[IPersistFile](/windows/desktop/api/objidl/nn-objidl-ipersistfile)|표준 OLE 인터페이스입니다.|  
+|[IPersistStream](/windows/desktop/api/objidl/nn-objidl-ipersiststream)|표준 OLE 인터페이스입니다.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|합성물 동작 (즉, 실행 취소/다시 실행의 단일 단위로 그룹화 되는 동작)를 만들을 수 있습니다.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData>|텍스트 버퍼에 의해 관리 되는 문서 데이터의 지 속성을 사용 하도록 설정 합니다.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>|기본 서비스를 제공합니다. 여러 클라이언트에서 사용 합니다.|  
@@ -49,4 +49,4 @@ ms.locfileid: "39586308"
 ## <a name="see-also"></a>참고자료  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>   
- [그림 편집](http://msdn.microsoft.com/en-us/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)
+ [그림 편집](https://www.microsoft.com/download/details.aspx?id=55984)

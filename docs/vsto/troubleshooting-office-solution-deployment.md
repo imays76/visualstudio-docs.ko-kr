@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8f125a2b8a62690cd31d53d145ea9d7b1e54a3ce
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: bba978da26a2aa7b7263fa5d2e88fa8acdc272f0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008706"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886005"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Office 솔루션 배포 문제 해결
   이 항목에는 Office 솔루션을 배포할 때 발생할 수 있는 일반적인 문제를 해결하는 방법에 대한 정보가 포함되어 있습니다.  
@@ -35,11 +35,11 @@ ms.locfileid: "40008706"
 ## <a name="change-the-assembly-name-causes-conflicts"></a>어셈블리 이름 변경 시 충돌 발생  
  변경 하는 경우는 **어셈블리 이름** 값을 **응용 프로그램** 페이지를 **프로젝트 디자이너** 게시 도구가 수정 하는 솔루션을 이미 배포한 후는 설치 패키지 하나만 유지할 필요가 *Setup.exe* 파일과 두 개의 배포 매니페스트 합니다. 두 개의 매니페스트 파일을 배포하는 경우 다음 상황이 발생할 수 있습니다.  
   
--   최종 사용자가 두 버전을 모두 설치한 경우 응용 프로그램이 두 VSTO 추가 기능을 모두 로드합니다.  
+- 최종 사용자가 두 버전을 모두 설치한 경우 응용 프로그램이 두 VSTO 추가 기능을 모두 로드합니다.  
   
--   어셈블리 이름이 변경되기 전에 VSTO 추가 기능이 설치된 경우 최종 사용자에게 업데이트가 전달되지 않습니다.  
+- 어셈블리 이름이 변경되기 전에 VSTO 추가 기능이 설치된 경우 최종 사용자에게 업데이트가 전달되지 않습니다.  
   
- 이러한 상황을 방지 하려면 솔루션의 말자 **어셈블리 이름** 솔루션을 배포한 후 값입니다.  
+  이러한 상황을 방지 하려면 솔루션의 말자 **어셈블리 이름** 솔루션을 배포한 후 값입니다.  
   
 ## <a name="check-for-updates-takes-a-long-time"></a>업데이트 시간이 오래 걸리는 확인  
  Visual Studio 2010 Tools for Office runtime에는 관리자가 매니페스트 및 솔루션 다운로드 제한 시간 값을 설정 하는 데 사용할 수 있는 레지스트리 항목을 제공 합니다.  
@@ -63,7 +63,7 @@ ms.locfileid: "40008706"
  Office 솔루션과 함께 배포되는 필수 조건으로 .NET Framework, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]및 Office 주 interop 어셈블리를 설치 패키지에 추가할 수 있습니다. 주 interop 어셈블리를 설치 하는 방법에 대 한 정보를 참조 하세요 [Office 솔루션을 개발 하도록 컴퓨터를 구성](../vsto/configuring-a-computer-to-develop-office-solutions.md) 하 고 [방법: 설치 Office 주 interop 어셈블리](../vsto/how-to-install-office-primary-interop-assemblies.md)합니다.  
   
 ## <a name="publish-using-localhost-can-cause-installation-problems"></a>사용 하 여 게시 'Localhost' 설치 문제가 발생할 수 있습니다  
- 사용 하는 경우 "http://localhost" 문서 수준 솔루션에 대 한 게시 또는 설치 위치로 합니다 **게시 마법사** 실제 컴퓨터 이름으로 문자열을 변환 하지 않습니다. 이 경우 개발 컴퓨터에 솔루션을 설치해야 합니다. 배포된 솔루션에서 개발 컴퓨터의 IIS를 사용하게 하려면 localhost 대신 모든 HTTP/HTTPS/FTP 위치에 대한 정규화된 이름을 사용합니다.  
+ 사용 하는 경우 "<http://localhost>" 문서 수준 솔루션에 대 한 게시 또는 설치 위치로 합니다 **게시 마법사** 실제 컴퓨터 이름으로 문자열을 변환 하지 않습니다. 이 경우 개발 컴퓨터에 솔루션을 설치해야 합니다. 배포된 솔루션에서 개발 컴퓨터의 IIS를 사용하게 하려면 localhost 대신 모든 HTTP/HTTPS/FTP 위치에 대한 정규화된 이름을 사용합니다.  
   
 ## <a name="cached-assemblies-are-loaded-instead-of-updated-assemblies"></a>캐시 된 어셈블리가 업데이트 된 어셈블리 대신 로드 됩니다.  
  .NET Framework 어셈블리 로더인 Fusion은 프로젝트 출력 경로가 네트워크 파일 공유에 있고, 어셈블리가 강력한 이름으로 서명되고, 사용자 지정의 어셈블리 버전이 변경되지 않은 경우 캐시된 어셈블리 복사본을 로드합니다. 이러한 조건을 충족하는 어셈블리를 업데이트할 경우 다음에 프로젝트를 실행할 때 캐시된 복사본이 로드되기 때문에 업데이트가 나타나지 않습니다.  
@@ -72,13 +72,13 @@ ms.locfileid: "40008706"
   
 ### <a name="to-download-assemblies-instead-of-loading-cached-copies"></a>캐시된 복사본을 로드하지 않고 어셈블리를 다운로드하려면  
   
-1.  메뉴 모음에서 선택 **프로젝트**, * ProjectName ***속성**합니다.  
+1. 메뉴 모음에서 **프로젝트**, _ProjectName_**속성**을 참조하세요.  
   
-2.  **응용 프로그램** 페이지에서 **어셈블리 정보**를 선택합니다.  
+2. **응용 프로그램** 페이지에서 **어셈블리 정보**를 선택합니다.  
   
-3.  첫 번째에서 **어셈블리 버전** 상자에 별표를 입력 합니다 (\*)를 선택한 후 합니다 **확인** 단추입니다.  
+3. 첫 번째에서 **어셈블리 버전** 상자에 별표를 입력 합니다 (\*)를 선택한 후 합니다 **확인** 단추입니다.  
   
- 어셈블리 버전을 변경하면 강력한 이름으로 어셈블리에 서명할 수 있고 Fusion에서 최신 버전의 사용자 지정을 로드합니다.  
+   어셈블리 버전을 변경하면 강력한 이름으로 어셈블리에 서명할 수 있고 Fusion에서 최신 버전의 사용자 지정을 로드합니다.  
   
 ## <a name="installation-fails-when-the-uri-has-characters-that-arent-us-ascii"></a>URI에 US-ASCII 아닌 문자를 때 설치가 실패 함  
  HTTP/HTTPS/FTP 위치에 Office 솔루션을 게시할 경우 경로에 US-ASCII가 아닌 유니코드 문자를 사용할 수 없습니다. 이러한 문자를 사용하면 설치 프로그램에서 일관되지 않은 동작이 발생할 수 있습니다. 설치 경로에 US-ASCII 문자를 사용합니다.  
@@ -91,15 +91,15 @@ ms.locfileid: "40008706"
 ## <a name="uncaught-exception-or-method-not-found-error-when-you-install-a-solution"></a>솔루션을 설치할 때 확인할 수 없는 예외 또는 메서드를 찾을 수 없음 오류  
  배포 매니페스트를 열어 Office 솔루션을 설치할 때 (한 *.vsto* 파일), 다음 조건에 대 한 Office 응용 프로그램, 문서 또는 통합 문서에서 오류 메시지가 나타날 수 있습니다.  
   
--   메서드를 찾을 수 없습니다.  
+- 메서드를 찾을 수 없습니다.  
   
--   MissingMethodException.  
+- MissingMethodException.  
   
--   Catch되지 않은 예외  
+- Catch되지 않은 예외  
   
- 이러한 오류 메시지를 방지하려면 설치 프로그램을 실행하여 솔루션을 설치합니다.  
+  이러한 오류 메시지를 방지하려면 설치 프로그램을 실행하여 솔루션을 설치합니다.  
   
- 설치 프로그램을 실행하지 않고 솔루션을 설치할 때는 설치 관리자가 필수 조건을 확인하거나 설치하지 않습니다. 필수 조건의 올바른 버전을 확인하고 필요에 따라 설치하는 것은 설치 프로그램의 역할입니다.  
+  설치 프로그램을 실행하지 않고 솔루션을 설치할 때는 설치 관리자가 필수 조건을 확인하거나 설치하지 않습니다. 필수 조건의 올바른 버전을 확인하고 필요에 따라 설치하는 것은 설치 프로그램의 역할입니다.  
   
 ## <a name="manifest-registry-keys-for-add-ins-change-after-an-installshield-limited-edition-project-is-built"></a>매니페스트는 InstallShield Limited Edition 프로젝트가 빌드된 후 추가 기능 변경에 대 한 레지스트리 키  
  VSTO 추가 기능 설치의 일부인 매니페스트 레지스트리 키 프로그램에서 변경 내용을 *.vsto* 하 *. dll.manifest* InstallShield Limited Edition 프로젝트를 빌드할 때입니다.  

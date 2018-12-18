@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 41600d40091ed2c656ab189a257a0ef2db6e0271
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9aae34f6e999bcf74fdfbae4597b22529863e34f
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31914408"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546917"
 ---
 # <a name="ca1505-avoid-unmaintainable-code"></a>CA1505: 유지 관리할 수 없는 코드는 사용하지 마십시오.
+
 |||
 |-|-|
 |TypeName|AvoidUnmantainableCode|
@@ -35,15 +36,17 @@ ms.locfileid: "31914408"
  형식 또는 메서드에 낮은 유지 관리 인덱스 값이 있습니다.
 
 ## <a name="rule-description"></a>규칙 설명
- 유지 관리 인덱스는 다음 메트릭을 사용 하 여 계산 됩니다: 코드 줄, 프로그램 볼륨 및 순환 복잡성. 프로그램 볼륨에는 형식 또는 연산자와 피연산자의 코드에서의 수를 기반으로 하는 방법에 대 한 이해 하기 어려운 측정값입니다. 순환 복잡성은 구조적 형식 또는 메서드의 복잡성을 측정 합니다. 코드 메트릭에 대해 자세히 알아볼 수 있습니다 [측정 복잡성 및 관리 코드 유지 관리 용이성](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)합니다.
+ 유지 관리 인덱스는 다음 메트릭을 사용 하 여 계산 됩니다: 줄의 코드, 프로그램 볼륨 및 순환 복잡성입니다. 프로그램 볼륨은 형식 또는 코드의 연산자 및 피연산자의 수를 기반으로 하는 방법에 대 한 이해 하기 어려운 이유는 측정값입니다. 순환 복잡성은 구조적 형식 또는 메서드의 복잡성을 측정 합니다. 코드 메트릭에 대 한 자세히 알아볼 수 있습니다 [측정 복잡성과 관리 되는 코드 관리 용이성](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)합니다.
 
- 낮은 유지 관리 인덱스는 형식 또는 메서드가 유지 관리 하기 어렵고 및 적절 한 후 다시 디자인 하는 것을 나타냅니다.
+ 낮은 유지 관리 인덱스를 나타내고 형식 또는 메서드를 유지 관리 하기 어렵고 다시 디자인 좋은 후보가 됩니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이 위반으로이 인해를 해결 하려면 형식 또는 메서드를 다시 디자인 작고 더욱 중점을 둔 형식 또는 메서드의으로 분할 하려고 합니다.
+ 이 위반을 해결 하려면 형식 또는 메서드를 다시 디자인 하 고 작고 더욱 중점을 둔 형식이 나 메서드의로 분할 하려고 합니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
- 형식 또는 메서드의 크더라도 아직 크기가 또는 형식 또는 메서드를 분할할 수 없는 경우이 경고를 제외 합니다.
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
+ 형식 또는 메서드는 여전히 크더라도 큰 크기로 나 형식 또는 메서드를 분할할 수 없는 경우 경우이 경고를 제외 합니다.
 
-## <a name="see-also"></a>참고 항목
- [유지 관리 경고](../code-quality/maintainability-warnings.md) [복잡성 및 관리 코드의 유지 관리 용이성 측정](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+## <a name="see-also"></a>참고자료
+
+- [유지 관리 경고](../code-quality/maintainability-warnings.md)
+- [관리 코드의 복잡성 및 유지 관리 용이성 측정](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

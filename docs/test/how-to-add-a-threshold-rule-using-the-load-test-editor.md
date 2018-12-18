@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 부하 테스트에 대한 임계값 규칙 추가
+title: 부하 테스트에 대한 임계값 규칙 추가
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,16 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f68ab9b183119c18bed51bb7faaa86993d7f34ce
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: ac4b542c7f9b557ad04ead05422f8c89cd4f909c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179881"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063372"
 ---
 # <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>방법: 부하 테스트 편집기를 사용하여 임계값 규칙 추가
 
 부하 테스트에서 임계값 규칙을 통해 성능 카운터 값을 상수 값이나 다른 성능 카운터 값과 비교할 수 있습니다.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-add-a-threshold-rule"></a>임계값 규칙을 추가하려면
 
@@ -36,7 +38,7 @@ ms.locfileid: "39179881"
 
      **임계값 규칙 추가** 대화 상자가 표시됩니다.
 
-5.  **상수 비교**와 **카운터 비교**라는 두 가지 규칙 유형 중에서 선택할 수 있습니다. 적절한 유형을 선택하고 값을 설정합니다.
+5.  두 가지 유형의 규칙에서 선택할 수 있습니다. **상수 비교** 및 **카운터 비교**. 적절한 유형을 선택하고 값을 설정합니다.
 
     > [!NOTE]
     > **초과하면 경고** 속성을 **True**로 설정하면 임계값을 초과할 때 경고가 표시되고 또는 **False**로 설정하면 임계값 밑으로 떨어질 때 경고가 표시됩니다.

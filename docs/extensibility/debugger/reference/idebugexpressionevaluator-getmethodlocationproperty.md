@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f10a26eca06aed24d53b70cd406fe3f24e2fe898
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: af772ebfd844679c7fb8d482b0fd0adf7d84e0e7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111822"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905352"
 ---
 # <a name="idebugexpressionevaluatorgetmethodlocationproperty"></a>IDebugExpressionEvaluator::GetMethodLocationProperty
-이 메서드를 메서드 위치 및 오프셋 메모리 주소를 변환합니다.  
+이 메서드는 메모리 주소에 메서드 위치 및 오프셋을 변환합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -52,24 +52,24 @@ int GetMethodLocationProperty(
  [in] 문자열로 표현 된 메서드 위치와 오프셋을 합니다.  
   
  `pSymbolProvider`  
- [in] 으로 표시 되는 기호 공급자는 [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) 개체입니다.  
+ [in] 기호 공급자로 표현 되는 [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) 개체입니다.  
   
  `pAddress`  
- [in] 으로 표시 되는 메서드에 들어 있는 주소는 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 개체입니다.  
+ [in] 로 표현 된 메서드 내에서 주소를 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 개체입니다.  
   
  `pBinder`  
- [in] 으로 표시 되는 바인더는 [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) 개체입니다.  
+ [in] 바인더로 표현 되는 [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) 개체입니다.  
   
  `ppProperty`  
  [out] 반환 된 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 메모리 주소를 나타내는 인터페이스입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
  예를 들어 중단점을 설정 하는 반환 된 주소를 사용할 수 있습니다.  
   
- 이름에도 불구 하 고 `upstrFullyQualifiedMethodPlusOffset`,이 매개 변수는 부분적으로 정규화 된 메서드 이름이 전달 될 수 있습니다. 이 경우 선택한 방법은 둘러싸는 한 `pAddress`합니다. 이 매개 변수를 해석 하는 방법을 식 계산기 및 지 원하는 언어의 구현에 따라입니다.  
+ 이름이 `upstrFullyQualifiedMethodPlusOffset`,이 매개 변수는 부분적으로 정규화 된 메서드 이름이 전달 될 수 있습니다. 이 경우 선택한 방법은 둘러싸는 것 `pAddress`입니다. 이 매개 변수를 해석 하는 방법을 하는 것은 식 계산기 및 지 원하는 언어의 구현에 달려 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   

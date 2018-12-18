@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 부하 테스트에 대한 ASP.NET 프로파일러 구성
+title: 부하 테스트에 대한 ASP.NET 프로파일러 구성
 ms.date: 10/13/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b12588b4e2c22a638193b7f1b0bc48e5f7dab6b7
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 197a6c4a743f5f30e060950413b7e2214fb91b36
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379808"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068424"
 ---
 # <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>방법: Visual Studio에서 테스트 설정을 사용하여 부하 테스트에 대한 ASP.NET 프로파일러 구성
 
 ASP.NET 프로파일러 진단 데이터 어댑터를 사용하여 ASP.NET 프로파일러 정보를 수집할 수 있습니다. 이 진단 데이터 어댑터는 ASP.NET 응용 프로그램에 대한 성능 데이터를 수집합니다.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
 > Microsoft Test Manager를 사용하여 실행되는 테스트에는 이 진단 데이터 어댑터를 사용할 수 없습니다. ASP.NET 프로파일러 진단 데이터 어댑터는 Visual Studio Enterprise가 필요한 웹 사이트를 사용하는 부하 테스트에만 사용할 수 있습니다.
@@ -31,13 +33,9 @@ ASP.NET 프로파일러 진단 데이터 어댑터를 사용하여 부하 테스
 
 자세한 내용은 [방법: 분산 부하 테스트를 위한 테스트 설정 만들기](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)를 참조하세요.
 
-다음 절차에서는 ASP.NET 프로파일러의 진단 데이터 어댑터를 구성하는 방법을 설명합니다.
-
-## <a name="to-configure-the-aspnet-profiler-for-your-test-settings"></a>테스트 설정에 대한 ASP.NET 프로파일러를 구성하려면
+## <a name="configure-the-aspnet-profiler-for-your-test-settings"></a>테스트 설정에 대한 ASP.NET 프로파일러 구성
 
 이 절차의 단계를 수행하려면 먼저 Visual Studio에서 테스트 설정을 연 다음, **데이터 및 진단** 페이지를 선택해야 합니다.
-
-### <a name="to-configure-the-aspnet-profiler-for-your-test-settings"></a>테스트 설정에 대한 ASP.NET 프로파일러를 구성하려면
 
 1.  ASP.NET 프로파일러 데이터를 수집하는 데 사용할 역할을 선택합니다.
 
@@ -65,5 +63,5 @@ ASP.NET 프로파일러 진단 데이터 어댑터를 사용하여 부하 테스
 ## <a name="see-also"></a>참고 항목
 
 - [테스트 설정을 사용하여 진단 정보 수집](../test/collect-diagnostic-information-using-test-settings.md)
-- [방법: 분산 부하 테스트에 대한 테스트 설정 만들기](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)
+- [방법: 분산 부하 테스트를 위한 테스트 설정 만들기](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)
 - [테스트 컨트롤러 및 테스트 에이전트](configure-test-agents-and-controllers-for-load-tests.md)

@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: abe363ca4b5dff450c8324f49e8408681d64d6c4
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d157e33581054e3aa8f79f60cb1d3609dc16b6ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463665"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841665"
 ---
 # <a name="idiasymbolgetcode"></a>IDiaSymbol::get_code
-기호 참조 하는지 여부는 코드 주소를 지정 하는 플래그를 검색 합니다.  
+기호 코드 주소를 참조 하는지 여부를 지정 하는 플래그를 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -34,13 +34,13 @@ HRESULT get_code (
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out] 반환 `TRUE` 기호 코드 주소를 가리키는 경우는 그렇지 않으면 반환 `FALSE`합니다.  
+ [out] 반환 `TRUE` 기호 코드 주소를 가리키는 경우이 고, 그렇지 반환 `FALSE`합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
+ 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
   
 > [!NOTE]
->  반환 값이 `S_FALSE` 의미는 속성은 해당 기호를 사용할 수 없습니다.  
+>  반환 값이 `S_FALSE` 속성 기호를 사용할 수 없는 것을 의미 합니다.  
   
 ## <a name="requirements"></a>요구 사항  
   

@@ -12,19 +12,19 @@ ms.author: corob
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: fe73510c645eadea99796b8b8aea5b6eec1f01c9
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: cbc9e2b0016fde990e2fbd6d79b083907ced5060
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251813"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881087"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>iOS를 사용하여 빌드할 도구 설치 및 구성
 
 플랫폼 간 모바일 개발용 Visual C++를 사용하여 iOS 코드를 편집 및 디버깅하고 iOS 시뮬레이터 또는 iOS 장치에 배포할 수 있지만 라이선스 제한으로 인해 Mac에서 코드를 빌드하고 원격으로 실행해야 합니다. Visual Studio를 사용하여 iOS 앱을 빌드 및 실행하려면 Mac에서 원격 에이전트 [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)를 설정 및 구성해야 합니다. 원격 에이전트는 Visual Studio의 빌드 요청을 처리하고 Mac에 연결된 iOS 장치 또는 Mac의 iOS 시뮬레이터에서 앱을 실행합니다.
 
 > [!NOTE]
-> Mac이 아닌 클라우드에 호스트된 Mac 서비스를 사용하는 방법에 대한 자세한 내용은 [Configure Visual Studio to connect to your cloud hosted Mac](https://docs.microsoft.com/en-us/visualstudio/cross-platform/tools-for-cordova/tips-workarounds/host-a-mac-in-the-cloud?view=toolsforcordova-2017#configure-visual-studio-to-connect-to-your-cloud-hosted-mac)(클라우드에 호스트된 Mac에 연결하도록 Visual Studio 구성)을 참조하세요. 지침은 Visual Studio Tools for Apache Cordova를 사용한 빌드에 해당합니다. 지침을 사용하여 C++ 사용을 빌드하려면 vcremote를 remotebuild로 대체합니다.
+> Mac이 아닌 클라우드에 호스트된 Mac 서비스를 사용하는 방법에 대한 자세한 내용은 [Configure Visual Studio to connect to your cloud hosted Mac](/visualstudio/cross-platform/tools-for-cordova/tips-workarounds/host-a-mac-in-the-cloud?view=toolsforcordova-2017#configure-visual-studio-to-connect-to-your-cloud-hosted-mac)(클라우드에 호스트된 Mac에 연결하도록 Visual Studio 구성)을 참조하세요. 지침은 Visual Studio Tools for Apache Cordova를 사용한 빌드에 해당합니다. 지침을 사용하여 C++ 사용을 빌드하려면 vcremote를 remotebuild로 대체합니다.
 
 iOS를 사용하여 빌드하는 도구를 설치한 경우 Visual Studio 및 Mac에서 iOS 개발용 원격 에이전트를 신속하게 구성 및 업데이트하는 방법은 이 항목을 참조하세요.
 

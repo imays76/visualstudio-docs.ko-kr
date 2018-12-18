@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7dd3bf8f3f31b914debc6dab4eb5c4f6e7b27086
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 863aef532e90d749f5c9c93a9d16cb2daf7f6c0b
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512225"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495988"
 ---
 # <a name="project-model-core-components"></a>프로젝트 모델 핵심 구성 요소
 다음 표에서 프로젝트 모델을 확장 합니다. 테이블에 인터페이스 및 인터페이스 모델 및 특정 개체와 연결 된 서비스에서 식별 된 서비스의 간략 한 설명을 제공 합니다. 또한 테이블에는 다른 인터페이스 프로젝트 생성 및 유지 관리의 특정 프로젝트 형식 요구 사항에 따라에서는 선택 사항에 자세히 설명 합니다.  
@@ -105,6 +105,6 @@ ms.locfileid: "39512225"
 ## <a name="see-also"></a>참고 항목  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
  [검사 목록: 새 프로젝트 형식 만들기](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [빌드에 없음: HierUtil7 프로젝트 클래스를 사용 하 여 프로젝트 형식 (c + +)를 구현 합니다.](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
+ [빌드에 없음: HierUtil7 프로젝트 클래스를 사용 하 여 프로젝트 형식 (c + +)를 구현 합니다.](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
  [기호 검색 도구를 지원합니다.](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
  [프로젝트 모델의 요소](../../extensibility/internals/elements-of-a-project-model.md)

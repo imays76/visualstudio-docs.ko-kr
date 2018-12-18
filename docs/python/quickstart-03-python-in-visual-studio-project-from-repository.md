@@ -1,22 +1,23 @@
 ---
 title: 빠른 시작 - Python 코드의 리포지토리 복제
 description: 이 빠른 시작에서는 Visual Studio 팀 탐색기를 사용하는 Python koans 리포지토리를 복제하여 Visual Studio에서 Python 프로젝트를 만듭니다.
-ms.date: 06/26/2018
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a058badfecfea84841a6a857200c04ebabf42a58
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 871a5f620cc90db5064562461336fdeac38ba757
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636826"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068395"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>빠른 시작: Visual Studio에서 Python 코드의 리포지토리 복제
 
@@ -30,9 +31,9 @@ ms.locfileid: "39636826"
 
 1. Visual Studio를 실행합니다.
 
-1. **보기** > **팀 탐색기**를 선택하여 GitHub 또는 Visual Studio Team Services에 연결하거나 리포지토리를 복제할 수 있는 **팀 탐색기** 창을 엽니다. (**연결** 페이지가 아래에 표시되지 않으면 해당 페이지로 이동시키는 맨 위의 도구 모음에 있는 플러그 아이콘을 선택합니다.)
+1. **보기** > **팀 탐색기**를 선택하여 GitHub 또는 Azure Repos에 연결하거나 리포지토리를 복제할 수 있는 **팀 탐색기** 창을 엽니다. (**연결** 페이지가 아래에 표시되지 않으면 해당 페이지로 이동시키는 맨 위의 도구 모음에 있는 플러그 아이콘을 선택합니다.)
 
-    ![Visual Studio Team Services, GitHub 및 리포지토리 복제를 보여 주는 팀 탐색기 창](media/team-explorer.png)
+    ![Azure Repos, GitHub를 표시하고 리포지토리를 복제하는 팀 탐색기 창](media/team-explorer.png)
 
 1. **로컬 Git 리포지토리** 아래에서 **복제**를 선택한 다음, URL 필드에 `https://github.com/gregmalcolm/python_koans`를 입력하고, 복제된 파일에 대한 폴더를 입력하고, **복제** 단추를 선택합니다.
 
@@ -57,7 +58,7 @@ ms.locfileid: "39636826"
 
 1. **Ctrl**+**F5**를 누르거나 **디버그** > **디버깅하지 않고 시작**을 선택하여 프로그램을 실행합니다. *koans.txt*에 대한 **FileNotFoundError**가 표시되면 이전 단계에서 설명한 작업 디렉터리 설정을 확인합니다.
 
-1. 프로그램이 성공적으로 실행되면 *python3/koans/about_asserts.py*의 줄 17에 어설션 오류를 표시합니다. 이것은 의도적입니다. 프로그램은 모든 의도적인 오류를 수정하여 Python을 가르치도록 설계되었습니다. (자세한 내용은 Python Koans에 영감을 준 [Ruby Koans](http://rubykoans.com/)에 있습니다.)
+1. 프로그램이 성공적으로 실행되면 *python3/koans/about_asserts.py*의 줄 17에 어설션 오류를 표시합니다. 이것은 의도적입니다. 프로그램은 모든 의도적인 오류를 수정하여 Python을 가르치도록 설계되었습니다. (자세한 내용은 Python Koans에 영감을 준 [Ruby Koans](https://rubykoans.com/)에 있습니다.)
 
     ![Python koans 프로그램의 첫 번째 출력](media/koans-output.png)
 

@@ -1,5 +1,5 @@
 ---
-title: CA5122 P Invoke 선언은 안전 하 게 보호 되지 않아야 중요
+title: 'CA5122: P-Invoke 선언은 안전에 중요한 선언이 아니어야 합니다.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -10,14 +10,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e73af173dd7e82a139c204051c72480a50e38fa
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 30aea58afe014a4b6e19b32c03c780c129ec479d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920759"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896057"
 ---
 # <a name="ca5122-pinvoke-declarations-should-not-be-safe-critical"></a>CA5122 P/Invoke 선언은 안전에 중요한 선언이 아니어야 함
+
 |||
 |-|-|
 |TypeName|PInvokesShouldNotBeSafeCriticalFxCopRule|
@@ -38,7 +39,6 @@ public class C
     [DllImport("kernel32.dll")]
     public static extern bool Beep(int frequency, int duration); // CA5122 - safe critical p/invoke
    }
-
 ```
 
  이 예제에서 `C.Beep(...)`는 보안에 안전한 중요 메서드로 표시되었습니다.
@@ -64,8 +64,7 @@ class C
       return BeepPInvoke(frequency, duration);
    }
 }
-
 ```
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
  이 규칙에서는 경고를 표시해야 합니다.

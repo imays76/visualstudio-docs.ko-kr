@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6cd73955835f8aff0047995a690da03e5ab0305d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 31bde98be596cdfca61434ecab3640655a8c7154
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105829"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877129"
 ---
 # <a name="idebugclassfieldgetenclosingclass"></a>IDebugClassField::GetEnclosingClass
 이 클래스를 포함 하는 클래스를 가져옵니다.  
@@ -41,13 +41,13 @@ int GetEnclosingClass(
   
 #### <a name="parameters"></a>매개 변수  
  `ppClassField`  
- [out] 반환 된 [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) 클래스 묶는 나타내는 개체입니다. 바깥쪽 클래스가 없는 경우 null 값을 반환 합니다.  
+ [out] 반환 된 [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) 바깥쪽을 나타내는 개체 클래스. 바깥쪽 클래스에 없는 경우 null 값을 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 s_ok이 고; 반환 그렇지 않은 경우 오류 코드를 반환합니다.  
+ 성공 하면 S_OK를 반환 합니다. 그렇지 않으면 오류 코드를 반환합니다.  
   
 ## <a name="remarks"></a>설명  
- 이 나타내는 클래스가 경우 [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) 개체는 중첩된 클래스 하면 `ppClassField` 매개 변수를 반환는 `IDebugClassField` 묶는 나타내는 개체 클래스입니다. 예를 들어 다음과 같습니다.이 클래스 정의  
+ 이 표시 되는 클래스 [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) 개체는 중첩된 클래스를 해당 `ppClassField` 매개 변수 반환는 `IDebugClassField` 바깥쪽을 나타내는 개체 클래스. 예를 들어 다음과 같습니다.이 클래스 정의  
   
 ```  
 class RootClass {  
@@ -55,7 +55,7 @@ class RootClass {
 };  
 ```  
   
- 호출는 `GetEnclosingClass` 에서 메서드는 `IDebugClassField` 나타내는 개체는 `NestedClass` 반환 클래스는 `IDebugClassField` 클래스를 나타내는 개체 `RootClass`합니다.  
+ 호출을 `GetEnclosingClass` 메서드를 `IDebugClassField` 나타내는 개체입니다는 `NestedClass` 반환 클래스는 `IDebugClassField` 클래스를 나타내는 개체 `RootClass`.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

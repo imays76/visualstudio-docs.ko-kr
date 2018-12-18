@@ -11,21 +11,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97206a80f1d18f0cc8310740430ca11066b102e8
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 1be1cf15e1f43af5999d4d65a5342d9c7b46da25
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498307"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884071"
 ---
 # <a name="walkthrough-create-an-sdk-using-javascript"></a>연습: JavaScript를 사용 하 여 SDK 만들기
 이 연습에서는 JavaScript는 간단한 수학 SDK는 Visual Studio 확장 (VSIX)로 만들기를 사용 하는 방법을 설명 합니다.  이 연습에서는 이러한 부분으로 구분 됩니다.  
   
--   [SimpleMathVSIX 확장 SDK 프로젝트를 만들려면](../extensibility/walkthrough-creating-an-sdk-using-javascript.md#createSimpleMathVSIX)  
+- [SimpleMathVSIX 확장 SDK 프로젝트를 만들려면](../extensibility/walkthrough-creating-an-sdk-using-javascript.md#createSimpleMathVSIX)  
   
--   [SDK를 사용 하는 샘플 앱을 만들려면](../extensibility/walkthrough-creating-an-sdk-using-javascript.md#createSampleApp)  
+- [SDK를 사용 하는 샘플 앱을 만들려면](../extensibility/walkthrough-creating-an-sdk-using-javascript.md#createSampleApp)  
   
- JavaScript에 대 한 형식이 없습니다 클래스 라이브러리 프로젝트입니다. 이 연습에서는 샘플 *arithmetic.js* VSIX 프로젝트에서 직접 파일이 만들어집니다. 실제로 것이 좋습니다는 먼저 빌드 및 테스트 JavaScript 및 CSS 파일을 Windows 스토어 앱-를 사용 하 여 예를 들어 합니다 **비어 있는 앱** 템플릿-VSIX 프로젝트에 삽입 하기 전에 합니다.  
+  JavaScript에 대 한 형식이 없습니다 클래스 라이브러리 프로젝트입니다. 이 연습에서는 샘플 *arithmetic.js* VSIX 프로젝트에서 직접 파일이 만들어집니다. 실제로 것이 좋습니다는 먼저 빌드 및 테스트 JavaScript 및 CSS 파일을 Windows 스토어 앱-를 사용 하 여 예를 들어 합니다 **비어 있는 앱** 템플릿-VSIX 프로젝트에 삽입 하기 전에 합니다.  
   
 ## <a name="prerequisites"></a>전제 조건  
  이 연습을 수행하려면 Visual Studio SDK를 설치해야 합니다. 자세한 내용은 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)합니다.  
@@ -79,7 +79,7 @@ ms.locfileid: "39498307"
       MinVSVersion="14.0"  
       AppliesTo="JavaScript+WindowsAppContainer"  
       SupportsMultipleVersions="Error"  
-      MoreInfo="http://www.msdn.microsoft.com/">  
+      MoreInfo="https://msdn.microsoft.com/">  
   
       <!-- JS -->  
       <File Content="js\arithmetic.js" />  
@@ -143,57 +143,57 @@ ms.locfileid: "39498307"
   
 ##  <a name="createSampleApp"></a> SDK를 사용 하는 샘플 앱을 만들려면  
   
-1.  메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.  
+1. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.  
   
-2.  템플릿 범주 목록에서 아래 **JavaScript**를 선택 **Windows 스토어**를 선택한 후는 **비어 있는 앱** 템플릿.  
+2. 템플릿 범주 목록에서 아래 **JavaScript**를 선택 **Windows 스토어**를 선택한 후는 **비어 있는 앱** 템플릿.  
   
-3.  에 **이름을** 상자에서 지정 `ArithmeticUI`합니다. **확인** 단추를 선택합니다.  
+3. 에 **이름을** 상자에서 지정 `ArithmeticUI`합니다. **확인** 단추를 선택합니다.  
   
-4.  **솔루션 탐색기**에 대 한 바로 가기 메뉴를 열고 합니다 **ArithmeticUI** 프로젝트를 선택한 후 **추가** > **참조**.  
+4. **솔루션 탐색기**에 대 한 바로 가기 메뉴를 열고 합니다 **ArithmeticUI** 프로젝트를 선택한 후 **추가** > **참조**.  
   
-5.  아래 **Windows**, 선택 **Extensions**, 알 수 있습니다 **간단한 수학** 표시 됩니다.  
+5. 아래 **Windows**, 선택 **Extensions**, 알 수 있습니다 **간단한 수학** 표시 됩니다.  
   
-6.  선택 된 **간단한 수학** 확인란을 선택한 후 합니다 **확인** 단추입니다.  
+6. 선택 된 **간단한 수학** 확인란을 선택한 후 합니다 **확인** 단추입니다.  
   
-7.  **솔루션 탐색기**아래에 있는 **참조**, 있음을 합니다 **간단한 수학** 참조 표시 됩니다. 확장 하는 **\js\**  포함 하는 폴더가 **arithmetic.js**합니다. 열 수 있습니다 **arithmetic.js** 소스 코드에 설치 되어 있는지 확인 합니다.  
+7. **솔루션 탐색기**아래에 있는 **참조**, 있음을 합니다 **간단한 수학** 참조 표시 됩니다. 확장 하는 한 **\js\\**  포함 하는 폴더 **arithmetic.js**합니다. 열 수 있습니다 **arithmetic.js** 소스 코드에 설치 되어 있는지 확인 합니다.  
   
-8.  다음 코드를 사용 하 여의 내용을 바꿉니다 *default.htm*합니다.  
+8. 다음 코드를 사용 하 여의 내용을 바꿉니다 *default.htm*합니다.  
   
-    ```html  
-    <!DOCTYPE html>  
-    <html>  
-    <head>  
-        <meta charset="utf-8" />  
-        <title>ArithmeticUI</title>  
+   ```html  
+   <!DOCTYPE html>  
+   <html>  
+   <head>  
+       <meta charset="utf-8" />  
+       <title>ArithmeticUI</title>  
   
-        <!-- WinJS references -->  
-        <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />  
-        <script src="//Microsoft.WinJS.1.0/js/base.js"></script>  
-        <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>  
+       <!-- WinJS references -->  
+       <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />  
+       <script src="//Microsoft.WinJS.1.0/js/base.js"></script>  
+       <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>  
   
-        <!-- ArithmeticUI references -->  
-        <link href="/css/default.css" rel="stylesheet" />  
-        <script src="/js/default.js"></script>  
-        <script src="/SimpleMath/js/arithmetic.js"></script>  
-    </head>  
-    <body>  
-        <form>  
-        <div id="calculator" class="ms-grid">  
-            <input name="firstNumber" id="firstNumber" type="number" step="any">  
-            <div id="operators">  
-                <button class="operator" type="button">+</button>  
-                <button class="operator" type="button">-</button>  
-                <button class="operator" type="button">*</button>  
-                <button class="operator" type="button">/</button>  
-            </div>  
-            <input id="secondNumber" type="number">  
-            <button class="calculate" type="button">=</button>  
-            <input id="result" type="number" name="result" disabled="" readonly="">  
-        </div>  
-        </form>  
-    </body>  
-    </html>  
-    ```  
+       <!-- ArithmeticUI references -->  
+       <link href="/css/default.css" rel="stylesheet" />  
+       <script src="/js/default.js"></script>  
+       <script src="/SimpleMath/js/arithmetic.js"></script>  
+   </head>  
+   <body>  
+       <form>  
+       <div id="calculator" class="ms-grid">  
+           <input name="firstNumber" id="firstNumber" type="number" step="any">  
+           <div id="operators">  
+               <button class="operator" type="button">+</button>  
+               <button class="operator" type="button">-</button>  
+               <button class="operator" type="button">*</button>  
+               <button class="operator" type="button">/</button>  
+           </div>  
+           <input id="secondNumber" type="number">  
+           <button class="calculate" type="button">=</button>  
+           <input id="result" type="number" name="result" disabled="" readonly="">  
+       </div>  
+       </form>  
+   </body>  
+   </html>  
+   ```  
   
 9. 다음 코드를 사용 하 여의 내용을 바꿉니다 *\js\default.js*합니다.  
   

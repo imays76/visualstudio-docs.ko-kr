@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54a6dee20c35b290b50306d5484dc139e8a7600a
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 447a01f96c9f642bca743247551bc2b3d38e4d23
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235104"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905956"
 ---
 # <a name="command-window"></a>명령 창
 **명령** 창은 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE(통합 개발 환경)에서 직접 명령 또는 별칭을 실행하는 데 사용됩니다. 메뉴 명령 및 메뉴에 나타나지 않는 명령을 둘 다 실행할 수 있습니다. **명령** 창을 표시하려면 **보기** 메뉴에서 **다른 창**을 선택하고 **명령 창**을 선택합니다.
@@ -55,7 +55,7 @@ ms.locfileid: "36235104"
  명령 모드에서는 다음 바로 가기를 사용하여 탐색할 수 있습니다.
 
 |작업|커서 위치|키 바인딩|
-|------------|---------------------|----------------|
+|------------| - |----------------|
 |이전에 입력된 명령의 목록을 순환합니다.|입력 줄|위쪽 화살표 및 아래쪽 화살표|
 |창을 위로 스크롤합니다.|명령 창 콘텐츠|Ctrl+위쪽 화살표|
 |창을 아래로 스크롤합니다.|명령 창 콘텐츠|아래쪽 화살표 또는 CTRL+아래쪽 화살표|
@@ -114,5 +114,5 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 
 ## <a name="see-also"></a>참고 항목
 
-- [Visual Studio 명령 별칭](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 - [Visual Studio 명령](../../ide/reference/visual-studio-commands.md)

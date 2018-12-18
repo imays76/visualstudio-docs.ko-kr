@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8bdf4f290c3312be234f491debe95f532c85802b
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 6c5bf8b782d34cb1375f4357cd33f6e47cc22988
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232509"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908459"
 ---
 # <a name="implement-an-expression-evaluator"></a>식 계산기를 구현 합니다.
 > [!IMPORTANT]
@@ -29,37 +29,37 @@ ms.locfileid: "39232509"
   
  EE는 문자열의 형태로 DE에서 식 사용 및 구문 분석 하거나이 확인 합니다. EE는 독일에서 사용 되는 다음 인터페이스를 실행 합니다.  
   
--   [IDebugExpressionEvaluator](../../extensibility/debugger/reference/idebugexpressionevaluator.md)  
+- [IDebugExpressionEvaluator](../../extensibility/debugger/reference/idebugexpressionevaluator.md)  
   
--   [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)  
+- [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)  
   
- EE 기호 및 개체의 값을 검색할 DE, 제공한 바인더 개체를 호출 합니다. EE는 DE에 의해 구현 되는 다음 인터페이스를 사용 합니다.  
+  EE 기호 및 개체의 값을 검색할 DE, 제공한 바인더 개체를 호출 합니다. EE는 DE에 의해 구현 되는 다음 인터페이스를 사용 합니다.  
   
--   [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)  
+- [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)  
   
--   [IDebugArrayObject](../../extensibility/debugger/reference/idebugarrayobject.md)  
+- [IDebugArrayObject](../../extensibility/debugger/reference/idebugarrayobject.md)  
   
--   [IDebugFunctionObject](../../extensibility/debugger/reference/idebugfunctionobject.md)  
+- [IDebugFunctionObject](../../extensibility/debugger/reference/idebugfunctionobject.md)  
   
--   [IDebugPointerObject](../../extensibility/debugger/reference/idebugpointerobject.md)  
+- [IDebugPointerObject](../../extensibility/debugger/reference/idebugpointerobject.md)  
   
--   [IDebugManagedObject](../../extensibility/debugger/reference/idebugmanagedobject.md)  
+- [IDebugManagedObject](../../extensibility/debugger/reference/idebugmanagedobject.md)  
   
--   [IEnumDebugObjects](../../extensibility/debugger/reference/ienumdebugobjects.md)  
+- [IEnumDebugObjects](../../extensibility/debugger/reference/ienumdebugobjects.md)  
   
--   [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)  
+- [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)  
   
- 실행 되는 EE [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)합니다. `IDebugProperty2` 지역 변수, 기본, 또는 후에 적절 한 정보를 표시 하는 Visual Studio로 개체와 같은 식 평가의 결과 설명 하는 메커니즘을 제공 합니다 **지역**, **시청** , 또는 **Immediate** 창입니다.  
+  실행 되는 EE [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)합니다. `IDebugProperty2` 지역 변수, 기본, 또는 후에 적절 한 정보를 표시 하는 Visual Studio로 개체와 같은 식 평가의 결과 설명 하는 메커니즘을 제공 합니다 **지역**, **시청** , 또는 **Immediate** 창입니다.  
   
- SP 때 지정 되는 EE는 DE 하 여 정보에 대 한 요청입니다. SP 주소 및 다음 인터페이스 및 해당 파생 항목 같은 필드를 설명 하는 인터페이스를 실행 합니다.  
+  SP 때 지정 되는 EE는 DE 하 여 정보에 대 한 요청입니다. SP 주소 및 다음 인터페이스 및 해당 파생 항목 같은 필드를 설명 하는 인터페이스를 실행 합니다.  
   
--   [IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)  
+- [IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)  
   
--   [IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)  
+- [IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)  
   
--   [IDebugField](../../extensibility/debugger/reference/idebugfield.md)  
+- [IDebugField](../../extensibility/debugger/reference/idebugfield.md)  
   
- EE 이러한 인터페이스를 모두 사용합니다.  
+  EE 이러한 인터페이스를 모두 사용합니다.  
   
 ## <a name="in-this-section"></a>단원 내용  
  [식 계산기 구현 전략](../../extensibility/debugger/expression-evaluator-implementation-strategy.md)  

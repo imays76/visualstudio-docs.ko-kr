@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 015725197c2c269a7b6aed2e20f0159e2a9f2fe6
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: c956da1df5507d2efecb3ff72f034d54fb377eb5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758561"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898416"
 ---
 # <a name="how-to-add-a-property-to-sharepoint-projects"></a>방법: SharePoint 프로젝트에 속성 추가
   SharePoint 프로젝트 속성을 추가 하려면 프로젝트 확장을 사용할 수 있습니다. 속성에 표시 된 **속성** 창에서 프로젝트를 선택 하면 **솔루션 탐색기**합니다.  
@@ -37,7 +37,7 @@ ms.locfileid: "36758561"
   
 3.  에 대 한 이벤트 처리기에서 합니다 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> 이벤트에 속성 클래스의 인스턴스를 추가 <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectPropertiesRequestedEventArgs.PropertySources%2A> 이벤트 인수 매개 변수 컬렉션입니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드 예제에는 SharePoint 프로젝트에 두 속성을 추가 하는 방법을 보여 줍니다. 프로젝트 사용자 옵션 파일에 해당 데이터를 유지 하는 하나의 속성 (합니다 *. csproj.user* 파일 또는 *. vbproj.user* 파일). 프로젝트 파일에서 해당 데이터를 유지 하는 다른 속성 (*.csproj* 파일 또는 *.vbproj* 파일).  
   
  [!code-vb[SpExt_SPCustomPrjProperty#1](../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb#1)]
@@ -48,11 +48,11 @@ ms.locfileid: "36758561"
   
  속성 값을 변경 내용을 유지 합니다 **설정** 다음 Api를 사용 하 여 속성에 대 한 접근자:  
   
--   `CustomUserFileProperty` 사용 하 여 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A> 프로젝트 사용자 옵션 파일에 해당 값을 저장 하는 속성입니다.  
+- `CustomUserFileProperty` 사용 하 여 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A> 프로젝트 사용자 옵션 파일에 해당 값을 저장 하는 속성입니다.  
   
--   `CustomProjectFileProperty` 사용 하 여 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> 프로젝트 파일에 해당 값을 저장 하는 방법입니다.  
+- `CustomProjectFileProperty` 사용 하 여 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> 프로젝트 파일에 해당 값을 저장 하는 방법입니다.  
   
- 이러한 파일에 데이터를 유지 하는 방법에 대 한 자세한 내용은 참조 하세요. [SharePoint 프로젝트 시스템의 확장에 데이터를 저장](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)합니다.  
+  이러한 파일에 데이터를 유지 하는 방법에 대 한 자세한 내용은 참조 하세요. [SharePoint 프로젝트 시스템의 확장에 데이터를 저장](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)합니다.  
   
 ### <a name="specify-the-behavior-of-custom-properties"></a>사용자 지정 속성의 동작을 지정  
  사용자 지정 속성을 나타나고 동작을 정의할 수 있습니다 합니다 **속성** 창에서 특성을 적용 하 여는 <xref:System.ComponentModel> 속성 정의에 네임 스페이스입니다. 다음 특성은 여러 시나리오에서 유용 합니다.  

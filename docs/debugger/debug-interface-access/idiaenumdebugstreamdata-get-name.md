@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b6fc431e4df8609b0ce5a544b99d5440c6e17ce6
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 247ad261d25cfd0624a5c1d02c17149c9a6a9c6d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457162"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902921"
 ---
 # <a name="idiaenumdebugstreamdatagetname"></a>IDiaEnumDebugStreamData::get_name
 디버그 데이터 스트림의 이름을 검색합니다.  
@@ -37,7 +37,7 @@ HRESULT get_Name (
  [out] 디버그 데이터 스트림의 이름을 반환합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7556999e1455dcfa0d79b131ee4661a77732990f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 4f68da36fc527e0390789df22ed4550a6165adbb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460943"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885842"
 ---
 # <a name="idiasessiongetenumtables"></a>IDiaSession::getEnumTables
 기호 저장소에 포함 된 모든 테이블에 대 한 열거자를 검색 합니다.  
@@ -37,10 +37,10 @@ HRESULT getEnumTables (
  [out] 반환 된 [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md) 개체입니다. 이 인터페이스를 사용 하 여 기호 저장소의 테이블을 열거 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="example"></a>예제  
- 이 예제에서는 제공 하는 일반 함수를 사용 하는 `getEnumTables` 특정 열거자 개체를 얻는 메서드를 합니다. 함수 캐스팅 될 수 있는 포인터는 원하는 인터페이스를 반환 하는 경우 열거자가 발견 되 면 그렇지 않으면 함수가 반환 `NULL`합니다.  
+ 이 예제를 사용 하는 일반 함수를 제공 합니다 `getEnumTables` 특정 열거자 개체를 가져오려면 메서드. 함수는 원하는 인터페이스를 캐스팅할 수 있는 포인터를 반환 하면 열거자가 있으면 반환이 고, 그렇지 `NULL`합니다.  
   
 ```C++  
 IUnknown *GetTable(IDiaSession *pSession, REFIID iid)  

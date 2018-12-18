@@ -59,7 +59,7 @@ ms.locfileid: "36327205"
  또한 배포 이전 및 이후에 실행할 명령을 추가할 수 있습니다. 자세한 내용은 [방법: SharePoint 설정 배포 명령](../sharepoint/how-to-set-sharepoint-deployment-commands.md).  
   
 ## <a name="publish-packages-to-a-remote-or-local-server"></a>원격 또는 로컬 서버에 패키지를 게시 합니다.
- 메뉴 모음에서 원격 서버에 샌드박스 SharePoint 솔루션을 게시 하려면 **빌드**, **게시**를 차례로 합니다 **게시** 대화 상자에서 선택 합니다 **SharePoint 사이트에 게시** 와 같은 원격 서버의 URL을 제공 하는 옵션 단추를 **https://someremoteserver.sharepoint.microsoftonline.com**합니다.  
+ 메뉴 모음에서 원격 서버에 샌드박스 SharePoint 솔루션을 게시 하려면 **빌드**, **게시**를 차례로 합니다 **게시** 대화 상자에서 선택 합니다 **SharePoint 사이트에 게시** 와 같은 원격 서버의 URL을 제공 하는 옵션 단추를 **https://someremoteserver.sharepoint.microsoftonline.com** 합니다.  
   
  로컬 서버에 SharePoint 솔루션을 게시 하는 **게시** 대화 상자를 선택 합니다 **파일 시스템에 게시** 옵션 단추를 로컬 시스템 경로 제공 하 합니다.  
   

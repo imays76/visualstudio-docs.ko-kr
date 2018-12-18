@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2a63dd4eae31b99646af04ceabe76e4edb946027
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: ce16e3c2aca99acf6de9a7ce74c0c2ff46c0dcbb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38800934"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849036"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>연습: Excel 용 첫 문서 수준 사용자 지정 만들기
   이 소개용 연습에서는 Microsoft Office Excel에 대한 문서 수준 사용자 지정을 만드는 방법을 보여 줍니다. 이러한 종류의 솔루션에서 만드는 기능은 특정 통합 문서가 열려 있는 경우에만 사용할 수 있습니다. 통합 문서가 열려 있을 때 새 리본 탭 표시와 같은 응용 프로그램 수준 변경은 문서 수준 사용자 지정을 사용하여 수행할 수 없습니다.  
@@ -31,17 +31,17 @@ ms.locfileid: "38800934"
   
  이 연습에서는 다음 작업을 수행합니다.  
   
--   Excel 통합 문서 프로젝트 만들기  
+- Excel 통합 문서 프로젝트 만들기  
   
--   Visual Studio 디자이너에 호스트된 워크시트에 텍스트 추가  
+- Visual Studio 디자이너에 호스트된 워크시트에 텍스트 추가  
   
--   Excel의 개체 모델을 사용하여 사용자 지정 워크시트가 열릴 때 워크시트에 텍스트를 추가하는 코드 작성  
+- Excel의 개체 모델을 사용하여 사용자 지정 워크시트가 열릴 때 워크시트에 텍스트를 추가하는 코드 작성  
   
--   테스트를 위해 프로젝트 빌드 및 실행  
+- 테스트를 위해 프로젝트 빌드 및 실행  
   
--   완료된 프로젝트를 정리하여 개발 컴퓨터에서 불필요한 빌드 파일 및 보안 설정 제거  
+- 완료된 프로젝트를 정리하여 개발 컴퓨터에서 불필요한 빌드 파일 및 보안 설정 제거  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>전제 조건  
  이 연습을 완료하려면 다음 구성 요소가 필요합니다.  
@@ -54,35 +54,35 @@ ms.locfileid: "38800934"
   
 ### <a name="to-create-a-new-excel-workbook-project-in-visual-studio"></a>Visual Studio에서 새 Excel 통합 문서 프로젝트를 만들려면  
   
-1.  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]를 시작합니다.  
+1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]를 시작합니다.  
   
-2.  **파일** 메뉴에서 **새로 만들기**를 가리킨 다음 **프로젝트**를 클릭합니다.  
+2. **파일** 메뉴에서 **새로 만들기**를 가리킨 다음 **프로젝트**를 클릭합니다.  
   
-3.  템플릿 창에서 **Visual C#** 또는 **Visual Basic**을 확장한 다음 **Office/SharePoint**를 확장합니다.  
+3. 템플릿 창에서 **Visual C#** 또는 **Visual Basic**을 확장한 다음 **Office/SharePoint**를 확장합니다.  
   
-4.  확장된 **Office/SharePoint** 노드 아래에서 **Office 추가 기능** 노드를 선택합니다.  
+4. 확장된 **Office/SharePoint** 노드 아래에서 **Office 추가 기능** 노드를 선택합니다.  
   
-5.  프로젝트 템플릿 목록에서 Excel VSTO 추가 기능 프로젝트를 선택합니다.  
+5. 프로젝트 템플릿 목록에서 Excel VSTO 추가 기능 프로젝트를 선택합니다.  
   
-6.  에 **이름을** 상자에 입력 **FirstWorkbookCustomization**합니다.  
+6. 에 **이름을** 상자에 입력 **FirstWorkbookCustomization**합니다.  
   
-7.  **확인**을 클릭합니다.  
+7. **확인**을 클릭합니다.  
   
-     **Visual Studio Tools for Office 프로젝트 마법사** 가 열립니다.  
+    **Visual Studio Tools for Office 프로젝트 마법사** 가 열립니다.  
   
-8.  선택 **새 문서를 만듭니다**, 클릭 **확인**합니다.  
+8. 선택 **새 문서를 만듭니다**, 클릭 **확인**합니다.  
   
-    -   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 만듭니다는 **FirstWorkbookCustomization** 프로젝트 및 프로젝트에 다음 파일을 추가 합니다.  
+   - [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 만듭니다는 **FirstWorkbookCustomization** 프로젝트 및 프로젝트에 다음 파일을 추가 합니다.  
   
-    -   *FirstWorkbookCustomization*.xlsx-프로젝트에 Excel 통합 문서를 나타냅니다. 모든 워크시트 및 차트를 포함합니다.  
+   - *FirstWorkbookCustomization*.xlsx-프로젝트에 Excel 통합 문서를 나타냅니다. 모든 워크시트 및 차트를 포함합니다.  
   
-    -   Sheet1 (*.vb* Visual Basic에 대 한 파일 또는 *.cs* Visual C# 파일)-통합 문서의 첫 번째 워크시트에 대 한 디자인 화면 및 코드를 제공 하는 워크시트입니다. 자세한 내용은 [워크시트 호스트 항목](../vsto/worksheet-host-item.md)합니다.  
+   - Sheet1 (*.vb* Visual Basic에 대 한 파일 또는 *.cs* Visual C# 파일)-통합 문서의 첫 번째 워크시트에 대 한 디자인 화면 및 코드를 제공 하는 워크시트입니다. 자세한 내용은 [워크시트 호스트 항목](../vsto/worksheet-host-item.md)합니다.  
   
-    -   Sheet2 (*.vb* Visual Basic에 대 한 파일 또는 *.cs* Visual C# 파일)-통합 문서의 두 번째 워크시트에 대 한 디자인 화면 및 코드를 제공 하는 워크시트입니다.  
+   - Sheet2 (*.vb* Visual Basic에 대 한 파일 또는 *.cs* Visual C# 파일)-통합 문서의 두 번째 워크시트에 대 한 디자인 화면 및 코드를 제공 하는 워크시트입니다.  
   
-    -   Sheet3 (*.vb* Visual Basic에 대 한 파일 또는 *.cs* Visual C# 파일)-통합 문서의 세 번째 워크시트에 대 한 디자인 화면 및 코드를 제공 하는 워크시트입니다.  
+   - Sheet3 (*.vb* Visual Basic에 대 한 파일 또는 *.cs* Visual C# 파일)-통합 문서의 세 번째 워크시트에 대 한 디자인 화면 및 코드를 제공 하는 워크시트입니다.  
   
-    -   ThisWorkbook (*.vb* Visual Basic에 대 한 파일 또는 *.cs* Visual C# 파일)-디자인 화면 및 통합 문서 수준 사용자 지정 코드를 포함 합니다. 자세한 내용은 [통합 문서 호스트 항목](../vsto/workbook-host-item.md)합니다.  
+   - ThisWorkbook (*.vb* Visual Basic에 대 한 파일 또는 *.cs* Visual C# 파일)-디자인 화면 및 통합 문서 수준 사용자 지정 코드를 포함 합니다. 자세한 내용은 [통합 문서 호스트 항목](../vsto/workbook-host-item.md)합니다.  
   
      Sheet1 코드 파일이 디자이너에서 자동으로 열립니다.  
   

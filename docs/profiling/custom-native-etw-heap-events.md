@@ -12,16 +12,16 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1cdff316b5553a8c1425927275e1547294040002
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 98fc473a9459aa6d1a1d7c10be7b6f240a4ab7d0
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749462"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50744992"
 ---
 # <a name="custom-native-etw-heap-events"></a>사용자 지정 네이티브 ETW 힙 이벤트
 
-Visual Studio에는 네이티브 메모리 프로파일러를 비롯한 다양한 [프로파일링 및 진단 도구](../profiling/profiling-tools.md)가 포함되어 있습니다.  이 프로파일러는 힙 공급자에서 [ETW 이벤트](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-)를 후크하고 메모리 할당 및 사용 방법을 분석합니다.  기본적으로 이 도구는 표준 Windows 힙에서 만든 할당만 분석할 수 있으므로 이 네이티브 힙 외부의 할당은 표시되지 않습니다.
+Visual Studio에는 네이티브 메모리 프로파일러를 비롯한 다양한 [프로파일링 및 진단 도구](../profiling/profiling-feature-tour.md)가 포함되어 있습니다.  이 프로파일러는 힙 공급자에서 [ETW 이벤트](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-)를 후크하고 메모리 할당 및 사용 방법을 분석합니다.  기본적으로 이 도구는 표준 Windows 힙에서 만든 할당만 분석할 수 있으므로 이 네이티브 힙 외부의 할당은 표시되지 않습니다.
 
 사용자 지정 힙을 사용하여 표준 힙에서 할당 오버헤드를 방지할 수도 있습니다.  예를 들어 [VirtualAlloc](https://msdn.microsoft.com/library/windows/desktop/aa366887(v=vs.85).aspx)를 사용하여 앱 또는 게임을 시작할 때 대용량 메모리를 할당한 다음 해당 목록에서 자체 블록을 관리할 수 있습니다.  이 시나리오에서 메모리 프로파일러 도구는 초기 할당만 표시하고, 메모리 청크 내부에서 수행되는 사용자 지정 관리는 표시하지 않습니다.  사용자 지정 네이티브 힙 ETW 공급자를 사용하여 표준 힙 외부에서 수행하는 모든 할당을 도구에 알릴 수 있습니다.
 
@@ -155,8 +155,8 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
 표준 Windows 힙과 마찬가지로 이 도구를 사용하여 스냅숏을 비교하고 사용자 지정 힙의 누수 및 손상을 확인할 수도 있습니다. 자세한 내용은 기본 [메모리 사용량](../profiling/memory-usage.md) 설명서를 참조하세요.
 
 > [!TIP]
-> Visual Studio의 **성능 프로파일링** 도구 집합에도 **메모리 사용량** 도구가 포함되어 있습니다. 이 도구 집합은 **디버그**>**성능 프로파일러** 메뉴 옵션 또는 **Alt**+**F2** 키보드 조합을 통해 활성화됩니다.  이 기능은 힙 추적을 포함하지 않으므로 여기서 설명하는 사용자 지정 힙을 표시하지 않습니다.  **진단 도구** 창(**디버그**>**Windows**>**진단 도구 표시** 메뉴 또는 **Ctrl**+**Alt**+**F2** 키보드 조합을 사용하여 설정 가능)에만 이 기능이 포함되어 있습니다.
+> Visual Studio의 **성능 프로파일링** 도구 집합에도 **메모리 사용량** 도구가 포함되어 있습니다. 이 도구 집합은 **디버그** > **성능 프로파일러** 메뉴 옵션 또는 **Alt**+**F2** 키보드 조합을 통해 활성화됩니다.  이 기능은 힙 추적을 포함하지 않으므로 여기서 설명하는 사용자 지정 힙을 표시하지 않습니다.  **진단 도구** 창(**디버그** > **Windows** > **진단 도구 표시** 메뉴 또는 **Ctrl**+**Alt**+**F2** 키보드 조합을 사용하여 설정 가능)에만 이 기능이 포함되어 있습니다.
 
 ## <a name="see-also"></a>참고 항목
-[프로파일링 도구](../profiling/profiling-tools.md)  
+[프로파일링 도구 살펴보기](../profiling/profiling-feature-tour.md)  
 [메모리 사용량](../profiling/memory-usage.md)

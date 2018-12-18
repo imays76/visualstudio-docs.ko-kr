@@ -2,14 +2,16 @@
 layout: HubPage
 hide_bc: true
 title: Visual Studio 설명서 | Microsoft Docs
+titleSuffix: ''
 description: Visual Studio 2017을 사용하여 플랫폼 및 장치에 대해 선택한 언어로 응용 프로그램, 서비스 및 도구를 개발하는 방법에 대해 알아봅니다.
 ms.topic: hub-page
-ms.openlocfilehash: 6e7ff54f516f8b6ab500f6605d6418d6674a48dd
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.custom: seodec18
+ms.openlocfilehash: b509f5d34596f3db46d20157fd3ce1fd2cec3d7c
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34449067"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160103"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -21,7 +23,7 @@ ms.locfileid: "34449067"
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img data-hoverimage="./images/setup-install.svg" src="./images/setup-install.png" alt="" />
+                                        <img data-hoverimage="./images/setup-install.svg" src="./images/setup-install.png" alt="Setup icon with gears" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -40,7 +42,7 @@ ms.locfileid: "34449067"
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img data-hoverimage="./images/getstarted.svg" src="./images/getstarted.png" alt="" />
+                                        <img data-hoverimage="./images/getstarted.svg" src="./images/getstarted.png" alt="Get started icon" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -59,7 +61,7 @@ ms.locfileid: "34449067"
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img data-hoverimage="./images/whatsnew.svg" src="./images/whatsnew.png" alt="" />
+                                        <img data-hoverimage="./images/whatsnew.svg" src="./images/whatsnew.png" alt="What's new icon" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -76,19 +78,196 @@ ms.locfileid: "34449067"
         <h1>Visual Studio 설명서</h1>
         <ul class="pivots">
             <li>
+                <li>
+                <a href="#get-started">시작</a>
+                <ul id="get-started">
+                    <li>
+                        <a href="#get-started1"></a>
+                        <ul id="get-started1" class="cardsL">
+                            <li>
+                               <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>Visual Studio를 사용하는 방법 알아보기</h3>
+                                                <ul class="noBullet">
+                                                    <li><a class="barLink" href="get-started/visual-studio-ide.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_overview.svg" alt="Guided tour icon" />둘러보기 시작</a></li>
+                                                    <li><a class="barLink" href="ide/index-writing-code.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_code-edit.svg" alt="Pencil icon" />코드 작성 및 편집</a></li>
+                                                    <li><a class="barLink" href="ide/compiling-and-building-in-visual-studio.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_build.svg" alt="Crane icon" />코드 빌드</a></li>
+                                                    <li><a class="barLink" href="debugger/getting-started-with-the-debugger.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_debug.svg" alt="Debug icon" />코드 디버그</a></li>
+                                                    <li><a class="barLink" href="test/getting-started-with-unit-testing.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_test.svg" alt="Science flask icon" />코드 테스트</a></li>
+                                                    <li><a class="barLink" href="data-tools/create-a-sql-database-by-using-a-designer.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_generic-database.svg" alt="Database icon" />로컬로 또는 클라우드에서 데이터에 액세스</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>자습서 시작</h3>
+                                                <h4>프로그래밍 언어 선택</h4>
+                                                <table cellpadding="0" cellspacing="0" border="0">
+                                                    <tr>
+                                                        <td style="border-top-color:transparent!important;padding-left:0;">
+                                                            <ul class="noBullet">
+                                                                <li>
+                                                                    <a class="barLink" href="/cpp/build/vscpp-step-0-installation">
+                                                                        <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="C++ icon">
+C++ </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="barLink" href="/visualstudio/ide/tutorial-csharp-aspnet-core">
+                                                                        <img src="https://docs.microsoft.com/media/logos/logo_CSharp.svg" alt="C# icon">
+C# </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="barLink" href="/visualstudio/ide/tutorial-visual-basic-console">
+                                                                        <img src="https://docs.microsoft.com/media/logos/logo_vb.svg" alt="VB icon">
+Visual Basic </a>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                        <td style="border-top-color:transparent!important;padding-left:0;">
+                                                            <ul class="noBullet">
+                                                                <li>
+                                                                    <a class="barLink" href="/visualstudio/python/tutorial-working-with-python-in-visual-studio-step-01-create-project">
+                                                                        <img src="https://docs.microsoft.com/media/logos/logo_python.svg" alt="Python icon">
+Python</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="barLink" href="/visualstudio/javascript/tutorial-nodejs/">
+                                                                        <img src="https://docs.microsoft.com/media/logos/logo_nodejs.svg" alt="Node.js icon">
+Node.js</a>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>5분 빠른 시작을 사용해보세요.</h3>
+                                                <h4>사용자가 선택한 언어로 &quot;Hello, World&quot;를 빌드합니다.</h4>
+                                                <table cellpadding="0" cellspacing="0" border="0">
+                                                    <tr>
+                                                        <td style="border-top-color:transparent!important;padding-left:0;">
+                                                            <ul class="noBullet">
+                                                                <li>
+                                                                    <a class="barLink" href="/visualstudio/ide/quickstart-aspnet-core">
+                                                                        <img src="https://docs.microsoft.com/media/logos/logo_CSharp.svg" alt="C# logo">
+C# </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="barLink" href="/visualstudio/ide/quickstart-fsharp">
+                                                                        <img src="https://docs.microsoft.com/dotnet/images/hub/fsharp.svg" alt="F# logo">
+F# </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="barLink" href="/visualstudio/ide/quickstart-visual-basic-console">
+                                                                        <img src="https://docs.microsoft.com/media/logos/logo_vb.svg" alt="VB logo">
+Visual Basic </a>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                        <td style="border-top-color:transparent!important;padding-left:0;">
+                                                            <ul class="noBullet">
+                                                                <li>
+                                                                    <a class="barLink" href="/visualstudio/ide/getting-started-with-cpp-in-visual-studio">
+                                                                        <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="C++ logo">
+C++ </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="barLink" href="/visualstudio/ide/quickstart-python">
+                                                                        <img src="https://docs.microsoft.com/media/logos/logo_python.svg" alt="Python logo">
+Python </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="barLink" href="/visualstudio/ide/quickstart-nodejs">
+                                                                        <img src="https://docs.microsoft.com/media/logos/logo_nodejs.svg" alt="Node.js logo">
+Node.js </a>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                     <div>
+                        <ul class="cardsL">
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>또는 개발할 항목을 선택합니다.</h3>
+                                                <table cellpadding="0" cellspacing="0" border="0"><tr><td style="border-top-color:transparent!important;padding-left:0;">
+                                                <ul class="noBullet">
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/ide/quickstart-uwp-csharp">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_windows.svg" alt="Windows logo">
+유니버설 Windows 앱</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_windows.svg" alt="Windows logo">
+Windows 데스크톱 앱</a>
+                                                    </li></ul></td><td style="border-top-color:transparent!important;padding-left:0;"><ul class="noBullet">
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/cross-platform/cross-platform-mobile-development-in-visual-studio">
+                                                            <img src="https://docs.microsoft.com/media/common/i_mobile-app-developement.svg" alt="Mobile phone icon">
+모바일 앱</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity
+">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_unity.svg" alt="Unity logo">
+Unity 게임</a>
+                                                    </li></ul></td><td style="border-top-color:transparent!important;padding-left:0;"><ul class="noBullet">
+                                                    <li>
+                                                        <a class="barLink" href="/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-2.1">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_NET.svg" alt=".NET logo">
+ASP.NET Core를 사용한 웹앱</a>
+                                                    </li>
+                                                </ul></td></tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </ul>
+            </li>
+            <li>
                 <a href="#features">작업</a>
                 <ul id="features">
                     <li>
                         <a href="#features1"> </a>
                         <ul id="features1" class="cardsC">
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=856608">
+                                <a href="ide/index-writing-code.md">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img data-scaleimage="./images/vs_features-1.svg" src="./images/vs_features-1.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs_features-1.svg" src="./images/vs_features-1.svg" alt="Software features graphic" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -101,13 +280,13 @@ ms.locfileid: "34449067"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833077">
+                                <a href="ide/compiling-and-building-in-visual-studio.md">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img data-scaleimage="./images/vs_features-2.svg" src="./images/vs_features-2.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs_features-2.svg" src="./images/vs_features-2.svg" alt="Construction graphic" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -120,18 +299,18 @@ ms.locfileid: "34449067"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833078">
+                                <a href="/visualstudio/debugger/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img data-scaleimage="./images/vs_features-3.svg" src="./images/vs_features-3.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs_features-3.svg" src="./images/vs_features-3.svg" alt="Software debugging graphic" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>디버그</h3>
-                                                    <p>코드 관련 문제를 조사하고 해결합니다.</p>
+                                                    <p>코드에서 버그를 조사하고 수정합니다.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -139,13 +318,13 @@ ms.locfileid: "34449067"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833079">
+                                <a href="test/improve-code-quality.md">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img data-scaleimage="./images/vs_features-4.svg" src="./images/vs_features-4.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs_features-4.svg" src="./images/vs_features-4.svg" alt="Testing graphic" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -158,13 +337,13 @@ ms.locfileid: "34449067"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=834349">
+                                <a href="/visualstudio/deployment/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img data-scaleimage="./images/vs_features-5.svg" src="./images/vs_features-5.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs_features-5.svg" src="./images/vs_features-5.svg" alt="Deployment graphic" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -177,13 +356,13 @@ ms.locfileid: "34449067"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=865130">
+                                <a href="/visualstudio/version-control/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img data-scaleimage="./images/vs-hub-docs-features-version-control.svg" src="./images/vs-hub-docs-features-version-control.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs-hub-docs-features-version-control.svg" src="./images/vs-hub-docs-features-version-control.svg" alt="Version control graphic" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -196,18 +375,18 @@ ms.locfileid: "34449067"
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts">
+                                <a href="/azure/devops/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img data-scaleimage="./images/vs-hub-docs-features-devops.svg" src="./images/vs-hub-docs-features-devops.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs-hub-docs-features-devops.svg" src="./images/vs-hub-docs-features-devops.svg" alt="DevOps graphic" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>DevOps</h3>
-                                                    <p>클라우드에서 앱을 지속적으로 빌드 및 릴리스하고 VSTS로 Agile 사례를 구현하세요.</p>
+                                                    <p>클라우드에서 앱을 지속적으로 빌드 및 릴리스하고 Azure DevOps Services로 Agile 사례를 구현하세요.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -215,17 +394,17 @@ ms.locfileid: "34449067"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=834348">
+                                <a href="/visualstudio/profiling/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img data-scaleimage="./images/vs_features-7.svg" src="./images/vs_features-7.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs_features-7.svg" src="./images/vs_features-7.svg" alt="Software performance graphic" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>성능 향상</h3>
+                                                    <h3>성능 측정</h3>
                                                     <p>병목 상태를 식별하고 진단 도구를 사용하여 코드 성능을 최적화합니다.
                                                     </p>
                                                 </div>
@@ -235,13 +414,13 @@ ms.locfileid: "34449067"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833081">
+                                <a href="/visualstudio/extensibility/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img data-scaleimage="./images/vs_features-8.svg" src="./images/vs_features-8.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs_features-8.svg" src="./images/vs_features-8.svg" alt="Software extensions graphic" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -254,13 +433,13 @@ ms.locfileid: "34449067"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=856607">
+                                <a href="data-tools/accessing-data-in-visual-studio.md">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img data-scaleimage="./images/vs_features-9.svg" src="./images/vs_features-9.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs_features-9.svg" src="./images/vs_features-9.svg" alt="Software data graphic" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -273,18 +452,37 @@ ms.locfileid: "34449067"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=872032">
+                                <a href="/visualstudio/liveshare/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img data-scaleimage="./images/live-share.svg" src="./images/live-share.svg" alt="" />
+                                                        <img data-scaleimage="./images/live-share.svg" src="./images/live-share.svg" alt="Collaboration graphic" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>공동 작업</h3>
                                                     <p>실시간 공동 작업 환경에서 코드를 공유, 편집, 디버그합니다. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/visualstudio/containers">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img data-scaleimage="https://docs.microsoft.com/media/illustrations/virtualization-containers-about.svg" src="https://docs.microsoft.com/media/illustrations/virtualization-containers-about.svg" alt="Containers graphic" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>컨테이너를 사용하여 개발</h3>
+                                                    <p>컨테이너를 사용하여 모듈식 구성 요소를 격리하고 확장성을 향상시킵니다.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -307,11 +505,11 @@ ms.locfileid: "34449067"
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage cardScaleImage">
-                                                    <img src="/media/logos/logo_Csharp.svg" alt="" />
+                                                    <img src="/media/logos/logo_Csharp.svg" alt="C# logo" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="https://go.microsoft.com/fwlink/?linkid=833062">
+                                                <a href="/dotnet/csharp/">
                                                     <h3>C#</h3>
                                                     <p>.NET 플랫폼에서 모든 응용 프로그램을 빌드하기 위한 함수 프로그래밍 기능이 있는 최신 개체 지향 프로그래밍 언어입니다.</p>
                                                 </a>
@@ -326,11 +524,11 @@ ms.locfileid: "34449067"
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage cardScaleImage">
-                                                    <img src="/media/logos/logo_vb.svg" alt="" />
+                                                    <img src="/media/logos/logo_vb.svg" alt="VB logo" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="https://go.microsoft.com/fwlink/?linkid=833060">
+                                                <a href="/dotnet/visual-basic/">
                                                     <h3>Visual Basic</h3>
                                                     <p>.NET 플랫폼용으로 쉽게 배울 수 있는 최신 개체 지향 프로그래밍 언어로, 쉽게 Windows 응용 프로그램을 만드는 데 중점을 둡니다.</p>
                                                 </a>
@@ -345,11 +543,11 @@ ms.locfileid: "34449067"
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage cardScaleImage">
-                                                    <img src="/media/logos/logo_Cplusplus.svg" alt="" />
+                                                    <img src="/media/logos/logo_Cplusplus.svg" alt="C++ logo" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="https://go.microsoft.com/fwlink/?linkid=833063">
+                                                <a href="/cpp/">
                                                     <h3>C++</h3>
                                                     <p>Windows, Linux, iOS 및 Android용 응용 프로그램을 만들기 위한 강력하고 유연한 프로그래밍 언어 및 개발 환경입니다.</p>
                                                 </a>
@@ -364,11 +562,11 @@ ms.locfileid: "34449067"
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage cardScaleImage">
-                                                    <img src="/media/logos/logo_Fsharp.svg" alt="" />
+                                                    <img src="/media/logos/logo_Fsharp.svg" alt="F# logo" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="https://go.microsoft.com/fwlink/?linkid=833067">
+                                                <a href="/dotnet/fsharp/">
                                                     <h3>F#</h3>
                                                     <p>.NET 플랫폼에 대한 개체 지향 기능이 있는 최신 함수 프로그래밍 언어로, 모든 작업에서 함수 프로그래밍을 더 쉽게 만드는 데 중점을 둡니다.</p>
                                                 </a>
@@ -383,11 +581,11 @@ ms.locfileid: "34449067"
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage cardScaleImage">
-                                                    <img src="/media/logos/logo_js.svg" alt="" />
+                                                    <img src="/media/logos/logo_js.svg" alt="JavaScript logo" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="https://go.microsoft.com/fwlink/?linkid=833064">
+                                                <a href="/scripting/">
                                                     <h3>JavaScript</h3>
                                                     <p>웹 페이지를 좀 더 대화형으로 만드는 데 자주 사용되는 간단한 플랫폼 간 스크립트 언어입니다.</p>
                                                 </a>
@@ -402,11 +600,11 @@ ms.locfileid: "34449067"
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage cardScaleImage">
-                                                    <img src="/media/logos/logo_TS.svg" alt="" />
+                                                    <img src="/media/logos/logo_TS.svg" alt="TypeScript logo" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="https://go.microsoft.com/fwlink/?linkid=833066">
+                                                <a href="http://www.typescriptlang.org/docs/tutorial.html">
                                                     <h3>TypeScript</h3>
                                                     <p>일반 JavaScript로 컴파일되는 JavaScript의 상위 집합이며 코드의 확장성을 높이는 데 사용됩니다.</p>
                                                 </a>
@@ -421,11 +619,11 @@ ms.locfileid: "34449067"
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage cardScaleImage">
-                                                    <img src="/media/logos/logo_Python.svg" alt="" />
+                                                    <img src="/media/logos/logo_Python.svg" alt="Python logo" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="https://go.microsoft.com/fwlink/?linkid=833068">
+                                                <a href="/visualstudio/python/">
                                                     <h3>Python</h3>
                                                     <p>신속한 응용 프로그램 개발에 자주 사용되는 동적 개체 지향 상위 수준 프로그래밍 언어입니다.</p>
                                                 </a>
@@ -440,11 +638,11 @@ ms.locfileid: "34449067"
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage cardScaleImage">
-                                                    <img src="/media/logos/logo_R.svg" alt="" />
+                                                    <img src="/media/logos/logo_R.svg" alt="R logo" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="https://go.microsoft.com/fwlink/?linkid=833070">
+                                                <a href="/visualstudio/rtvs/">
                                                     <h3>R</h3>
                                                     <p>통계 계산 및 그래픽에 일반적으로 사용되는 확장 가능한 프로그래밍 언어입니다.</p>
                                                 </a>
@@ -470,13 +668,13 @@ ms.locfileid: "34449067"
                                 </div>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833085">
+                                <a href="/aspnet/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_web-1.svg" src="./images/vs_web-1.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs_web-1.svg" src="./images/vs_web-1.svg" alt="Web development graphic" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -489,13 +687,13 @@ ms.locfileid: "34449067"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833086">
+                                <a href="/visualstudio/azure">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_web-2.svg" src="./images/vs_web-2.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs_web-2.svg" src="./images/vs_web-2.svg" alt="Cloud graphic" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -508,13 +706,13 @@ ms.locfileid: "34449067"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833068">
+                                <a href="/visualstudio/python/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_web-3.svg" src="./images/vs_web-3.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs_web-3.svg" src="./images/vs_web-3.svg" alt="Python graphic" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -527,13 +725,13 @@ ms.locfileid: "34449067"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=834351">
+                                <a href="javascript/quickstart-vuejs-with-nodejs.md">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="/media/logos/logo_nodejs.svg" src="/media/logos/logo_nodejs.svg" alt="" />
+                                                        <img data-scaleimage="/media/logos/logo_nodejs.svg" src="/media/logos/logo_nodejs.svg" alt="Node.js logo" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -546,13 +744,13 @@ ms.locfileid: "34449067"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833095">
+                                <a href="/visualstudio/data-tools/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_web-5.svg" src="./images/vs_web-5.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs_web-5.svg" src="./images/vs_web-5.svg" alt="Data storage graphic" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -565,13 +763,13 @@ ms.locfileid: "34449067"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=834748">
+                                <a href="rtvs/data-science-and-analytical-applications-workload.md">
                                   <div class="cardSize">
                                     <div class="cardPadding">
                                       <div class="card">
                                         <div class="cardImageOuter">
                                           <div class="cardImage bgdAccent1 cardScaleImage">
-                                            <img data-scaleimage="./images/vs_web-6.svg" src="./images/vs_web-6.svg" alt="" />
+                                            <img data-scaleimage="./images/vs_web-6.svg" src="./images/vs_web-6.svg" alt="Data science graphic" />
                                         </div>
                                         </div>
                                           <div class="cardText">
@@ -584,13 +782,13 @@ ms.locfileid: "34449067"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833075">
+                                <a href="https://developer.microsoft.com/office/docs">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_web-7.svg" src="./images/vs_web-7.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs_web-7.svg" src="./images/vs_web-7.svg" alt="Microsoft Office logo" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -613,13 +811,13 @@ ms.locfileid: "34449067"
                                 </div>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833082">
+                                <a href="cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-hoverimage="./images/vs_windows-1.svg" src="./images/vs_windows-1.svg" alt="" />
+                                                        <img data-hoverimage="./images/vs_windows-1.svg" src="./images/vs_windows-1.svg" alt="UWP graphic" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -632,13 +830,13 @@ ms.locfileid: "34449067"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833083">
+                                <a href="/dotnet/framework/develop-client-apps">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_windows-2.svg" src="./images/vs_windows-2.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs_windows-2.svg" src="./images/vs_windows-2.svg" alt="Windows computer graphic" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -651,13 +849,13 @@ ms.locfileid: "34449067"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833084">
+                                <a href="/cpp/windows/desktop-applications-visual-cpp">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_windows-3.svg" src="./images/vs_windows-3.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs_windows-3.svg" src="./images/vs_windows-3.svg" alt="Windows computer with C++ logo" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -680,13 +878,13 @@ ms.locfileid: "34449067"
                                 </div>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833088">
+                                <a href="/xamarin/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_gaming-1.svg" src="./images/vs_gaming-1.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs_gaming-1.svg" src="./images/vs_gaming-1.svg" alt="Mobile development graphic with .NET logo" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -699,13 +897,13 @@ ms.locfileid: "34449067"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833091">
+                                <a href="cross-platform/visual-studio-tools-for-unity.md">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_gaming-2.svg" src="./images/vs_gaming-2.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs_gaming-2.svg" src="./images/vs_gaming-2.svg" alt="Game development graphic with Unity logo" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -718,13 +916,13 @@ ms.locfileid: "34449067"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833089">
+                                <a href="/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_gaming-3.svg" src="./images/vs_gaming-3.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs_gaming-3.svg" src="./images/vs_gaming-3.svg" alt="Mobile development graphic with JavaScript logo" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -737,13 +935,13 @@ ms.locfileid: "34449067"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833090">
+                                <a href="/visualstudio/cross-platform/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_gaming-4.svg" src="./images/vs_gaming-4.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs_gaming-4.svg" src="./images/vs_gaming-4.svg" alt="Mobile development graphic with C++ logo" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -756,13 +954,13 @@ ms.locfileid: "34449067"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=834749">
+                                <a href="/windows/uwp/gaming/e2e">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_gaming-5.svg" src="./images/vs_gaming-5.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs_gaming-5.svg" src="./images/vs_gaming-5.svg" alt="Game development graphic with C++ logo" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -780,13 +978,13 @@ ms.locfileid: "34449067"
                         <a href="#other">기타 도구 집합</a>
                         <ul id="other" class="cardsC">
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=834750">
+                                <a href="/visualstudio/extensibility/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_tools-1.svg" src="./images/vs_tools-1.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs_tools-1.svg" src="./images/vs_tools-1.svg" alt="Toolbox and Visual Studio logo" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -799,13 +997,13 @@ ms.locfileid: "34449067"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833099">
+                                <a href="/cpp/linux/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_tools-2.svg" src="./images/vs_tools-2.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs_tools-2.svg" src="./images/vs_tools-2.svg" alt="Linux penguin and C++ logo" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -818,13 +1016,13 @@ ms.locfileid: "34449067"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=856606">
+                                <a href="/dotnet/core/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_tools-3.svg" src="./images/vs_web-1.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs_tools-3.svg" src="./images/vs_web-1.svg" alt="Cross-platform development graphic with  .NET logo" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -840,25 +1038,27 @@ ms.locfileid: "34449067"
                     </li>
                 </ul>
             </li>
+            </li>
+            </li>
         </ul>
     </div>
     <div class="container centered pageFooter">
         <h2>연락 방법</h2>
         <ul class="links">
            <li>
-                <a href="https://go.microsoft.com/fwlink/?linkid=833100"> 블로그 </a>
+                <a href="https://blogs.msdn.microsoft.com/visualstudio/"> 블로그 </a>
             </li>
             <li>
-                <a href="https://go.microsoft.com/fwlink/?linkid=833101"> Twitter </a>
+                <a href="https://twitter.com/VisualStudio"> Twitter </a>
             </li>
             <li>
-                <a href="https://go.microsoft.com/fwlink/?linkid=833103"> Stack Overflow </a>
+                <a href="https://stackoverflow.com/questions/tagged/visual-studio"> Stack Overflow </a>
             </li>
             <li>
-                <a href="https://go.microsoft.com/fwlink/?linkid=874480"> 문제 보고 </a>
+                <a href="ide/talk-to-us.md"> 문제 보고 </a>
             </li>
             <li>
-                <a href="https://go.microsoft.com/fwlink/?linkid=833105"> 사용자 의견 </a>
+                <a href="https://developercommunity.visualstudio.com/spaces/8/index.html"> 개발자 커뮤니티 </a>
             </li>
         </ul>
     </div>

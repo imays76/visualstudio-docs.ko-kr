@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cf89354880059b8fe743e5558b2c406467a38014
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 82733a8d3e908e82ad8f841857aa70374495e556
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326116"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283537"
 ---
 # <a name="build-and-debug-sharepoint-solutions"></a>빌드 및 SharePoint 솔루션 디버깅
   일반적으로 SharePoint 솔루션 빌드 및 디버깅 같습니다 빌드 및 기타 유형의 프로젝트를 디버깅 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]합니다. 이 섹션의 항목에서는 차이점에 대해 설명합니다.  
@@ -44,8 +44,8 @@ ms.locfileid: "36326116"
 ## <a name="debug-and-test-sharepoint-solutions"></a>SharePoint 솔루션을 테스트 및 디버그
  디버깅 하기 전에 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 복사본은 *.wsp* SharePoint 서버에 패키지 사이트 및 웹 범위 기능을 활성화 하 고 경우에 따라 프로젝트를 시작 합니다. 수동으로 프로젝트를 열어야 하는 경우도 있습니다. 자세한 내용은 [문제를 해결 하는 SharePoint 솔루션](../sharepoint/troubleshooting-sharepoint-solutions.md) 하 고 [디버그 SharePoint 솔루션](../sharepoint/debugging-sharepoint-solutions.md)합니다.  
   
-## <a name="debug-and-verify-sharepoint-solutions-by-using-alm-features"></a>디버그 및 ALM 기능을 사용 하 여 SharePoint 솔루션을 확인 하십시오.
- 유닛 테스트 및 IntelliTrace와 같은 Visual Studio ALM 기능을 사용하면 SharePoint 솔루션에서 보다 정확하게 문제를 찾아낼 수 있습니다. 프로파일링을 통해 SharePoint 솔루션에서 성능 문제 영역을 찾고 식별할 수 있습니다. 자세한 내용은 [코드 확인 및 디버깅 SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md) 하 고 [성능의 SharePoint 응용 프로그램을 프로 파일링](../sharepoint/profiling-the-performance-of-sharepoint-applications.md)합니다.  
+## <a name="debug-and-verify-sharepoint-solutions-by-using-azure-devops-services-features"></a>Azure DevOps 서비스 기능을 사용 하 여 SharePoint 솔루션을 확인 및 디버그
+ 단위 테스트 및 IntelliTrace와 같은 azure DevOps 서비스 기능 사용 SharePoint 솔루션에서 문제를 더 정확 하 게 찾아낼 수 있습니다. 프로파일링을 통해 SharePoint 솔루션에서 성능 문제 영역을 찾고 식별할 수 있습니다. 자세한 내용은 [코드 확인 및 디버깅 SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md) 하 고 [성능의 SharePoint 응용 프로그램을 프로 파일링](../sharepoint/profiling-the-performance-of-sharepoint-applications.md)합니다.  
   
 ## <a name="security-during-the-build-process"></a>빌드 프로세스 중 보안
  패키지 또는 SharePoint 솔루션 배포 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 서버 파일을 복사할 수 있는 권한이 있어야 합니다. 실행 해야 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 권한 상승된 된 프로세스와 사용자 계정을 SharePoint 서버에서 사이트 컬렉션 관리자 여야 합니다. 또한 프로젝트를 샌드박스 솔루션 또는 팜 솔루션 인지 지정 해야 합니다. 자세한 내용은 [Differences Between Sandboxed and Farm Solutions](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)합니다.  

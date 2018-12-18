@@ -11,18 +11,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a34a49a3a66cebb81553f3e2786f281758c4dee
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: eb29a985a39344c5bffad59e63a9d540311ec648
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747579"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925125"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>1단계: 프로젝트 만들기 및 폼에 레이블 추가
+
 이 퀴즈를 개발하는 첫 번째 단계는 프로젝트를 만들고 폼에 레이블, 단추 및 기타 컨트롤을 추가하는 것입니다. 추가한 각 컨트롤의 속성도 설정합니다. 프로젝트에 폼, 컨트롤 및 코드(자습서의 뒷부분에서 만듦)가 포함됩니다. 단추로 퀴즈를 시작하고 레이블에 퀴즈 문제를 표시하며 나머지 다른 컨트롤에 퀴즈의 답과 퀴즈 완료까지 남은 시간을 표시합니다.
 
 > [!NOTE]
->  이 항목은 기본 코딩 개념에 대해 설명하는 자습서 시리즈의 일부입니다. 자습서에 대한 개요는 [자습서 2: 시간이 지정된 수학 퀴즈 만들기](../ide/tutorial-2-create-a-timed-math-quiz.md)를 참조하세요.
+> 이 항목은 기본 코딩 개념에 대해 설명하는 자습서 시리즈의 일부입니다. 자습서에 대한 개요는 [자습서 2: 시간이 지정된 수학 퀴즈 만들기](../ide/tutorial-2-create-a-timed-math-quiz.md)를 참조하세요.
 
 ## <a name="to-create-a-project-and-set-properties-for-a-form"></a>프로젝트를 만들고 폼의 속성을 설정하려면
 
@@ -69,7 +70,6 @@ ms.locfileid: "34747579"
      다음 그림과 같이 여러 가지 글꼴 속성을 변경할 수 있습니다.
 
      ![글꼴 크기가 표시된 속성 창](../ide/media/express_setfontsize.png)
-글꼴 크기가 표시된 **속성** 창
 
 8.  **도구 상자**에서 다른 Label 컨트롤을 추가한 후 글꼴 크기를 **15.75**로 설정합니다.
 
@@ -117,7 +117,7 @@ ms.locfileid: "34747579"
 
      다음 그림과 같이 첫 번째 행이 만들어졌습니다.
 
-     ![수학 퀴즈의 첫 번째 행](../ide/media/express_firstrow.png) 수학 퀴즈의 첫 번째 행
+     ![수학 퀴즈의 첫 번째 행](../ide/media/express_firstrow.png)
 
 ## <a name="to-add-controls-for-the-subtraction-multiplication-and-division-problems"></a>빼기, 곱하기 및 나누기 문제의 컨트롤을 추가하려면
 
@@ -144,7 +144,7 @@ ms.locfileid: "34747579"
 9. 네 번째 행의 경우 첫 번째 레이블의 이름을 **dividedLeftLabel**로 지정하고, 두 번째 레이블의 **Text** 속성을 **÷**(나누기 기호)로 변경하고, 세 번째 레이블의 이름을 **dividedRightLabel**로 지정하고, NumericUpDown 컨트롤의 이름을 **quotient**로 지정합니다.
 
     > [!NOTE]
-    >  이 자습서에서 곱하기 기호 ×와 나누기 기호 ÷를 복사하여 폼에 붙여 넣을 수 있습니다.
+    > 이 자습서에서 곱하기 기호 ×와 나누기 기호 ÷를 복사하여 폼에 붙여 넣을 수 있습니다.
 
 ## <a name="to-add-a-start-button-and-set-the-tab-index-order"></a>시작 단추를 추가하고 탭 인덱스 순서를 설정하려면
 
@@ -161,13 +161,13 @@ ms.locfileid: "34747579"
 6.  **startButton** 컨트롤의 **TabIndex** 속성 값을 **1**로 설정합니다.
 
     > [!NOTE]
-    >  **TabIndex** 속성은 퀴즈를 푸는 사람이 **Tab** 키를 선택할 때 컨트롤의 순서를 설정합니다. 작동 방식을 보려면 메뉴 모음에서 **파일** > **열기**를 선택하는 등의 작업을 수행하여 아무 대화 상자나 열고 **Tab** 키를 여러 번 눌러 봅니다. **Tab** 키를 선택할 때마다 커서가 컨트롤 사이에서 어떻게 이동하는지 살펴봅니다. 이러한 순서는 폼이 만들어질 때 프로그래머에 의해 설정됩니다.
+    > **TabIndex** 속성은 퀴즈를 푸는 사람이 **Tab** 키를 선택할 때 컨트롤의 순서를 설정합니다. 작동 방식을 보려면 메뉴 모음에서 **파일** > **열기**를 선택하는 등의 작업을 수행하여 아무 대화 상자나 열고 **Tab** 키를 여러 번 눌러 봅니다. **Tab** 키를 선택할 때마다 커서가 컨트롤 사이에서 어떻게 이동하는지 살펴봅니다. 이러한 순서는 폼이 만들어질 때 프로그래머에 의해 설정됩니다.
 
 7.  NumericUpDown sum 컨트롤의 **TabIndex** 속성 값을 **2**, difference 컨트롤의 경우 **3**, product 컨트롤의 경우 **4**, quotient 컨트롤의 경우 **5**로 설정합니다.
 
      그러면 폼이 다음 그림과 같이 표시됩니다.
 
-     ![초기 수학 퀴즈 폼](../ide/media/express_formlaidout.png) 초기 수학 퀴즈 폼
+     ![초기 수학 퀴즈 폼](../ide/media/express_formlaidout.png)
 
 8.  **TabIndex** 속성이 예상대로 작동하는지 확인하려면 프로그램을 저장한 후 **F5** 키를 선택하거나 메뉴 모음에서 **디버그** > **디버깅 시작**을 선택하여 프로그램을 실행한 다음, **Tab** 키를 여러 번 누릅니다.
 

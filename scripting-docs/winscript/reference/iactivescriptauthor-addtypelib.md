@@ -18,12 +18,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 150628f1822c721f1e349005de457951e226ef1b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e1122b5327da5573071bc534b5eb1a16fa69b873
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645623"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283381"
 ---
 # <a name="iactivescriptauthoraddtypelib"></a>IActiveScriptAuthor::AddTypeLib
 스크립트에 대 한 네임 스페이스에 형식 라이브러리를 추가합니다.  
@@ -41,7 +41,7 @@ HRESULT AddTypeLib(
   
 #### <a name="parameters"></a>매개 변수  
  `rguidTypeLib`  
- [in] CLSID (클래스 식별자) 형식 라이브러리의 추가할 수 있습니다.  
+ [in] CLSID (클래스 식별자) 형식 라이브러리의 추가 합니다.  
   
  `dwMajor`  
  [in] 주 버전 번호입니다.  
@@ -60,9 +60,9 @@ HRESULT AddTypeLib(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 이 메서드를 호출 `LoadTypeLib` 형식 라이브러리를 로드 합니다. 요청이 성공 하면이 메서드를 호출 `IActiveScriptAuthor::AddNamedItem` 형식 정보를 추가 합니다.  
+ 이 메서드를 호출 `LoadTypeLib` 형식 라이브러리를 로드 합니다. 이 메서드를 호출 성공 하면 `IActiveScriptAuthor::AddNamedItem` 형식 정보를 추가 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IActiveScriptAuthor 인터페이스](../../winscript/reference/iactivescriptauthor-interface.md)   
  [IActiveScriptAuthor::AddNamedItem](../../winscript/reference/iactivescriptauthor-addnameditem.md)   
- [LoadTypeLib](http://msdn.microsoft.com/en-us/155b48e5-5438-409e-9342-630a6a500f60)
+ [LoadTypeLib](https://docs.microsoft.com/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelib)

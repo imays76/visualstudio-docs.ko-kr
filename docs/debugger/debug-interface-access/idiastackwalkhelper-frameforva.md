@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1191727d407f8c50f3e7901f3137f54f63770639
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e222e1af1797d095f463015b161bd6379fa0ad73
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468452"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888062"
 ---
 # <a name="idiastackwalkhelperframeforva"></a>IDiaStackWalkHelper::frameForVA
-지정된 된 가상 주소 포함 된 스택 프레임을 검색 합니다.  
+지정된 된 가상 주소를 포함 하는 스택 프레임을 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -41,7 +41,7 @@ HRESULT frameForVA(
  [out] [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) 지정된 된 주소에서 스택 프레임을 나타내는 개체입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   

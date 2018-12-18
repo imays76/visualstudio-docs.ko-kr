@@ -9,41 +9,41 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 838cbbe1b2f053a20113fddce238c84e646cbd62
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 2c4ca03c932b86ad6f9907020b037abb1308a6f7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638667"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918534"
 ---
 # <a name="address-dpi-issues"></a>DPI 문제
 장치 수가 증가 "고해상도" 화면을 사용 하 여 전달 됩니다. 이 화면에는 일반적으로 200 개가 넘는 인치 당 픽셀 수 (가) 있습니다. 이러한 컴퓨터에서 응용 프로그램을 사용 하 여 작업 콘텐츠를 장치에 대 한 일반 보기로 거리에 있는 콘텐츠를 표시 하는 요구를 충족 하도록 확장 해야 합니다. 2014 년을 기준으로 기본 고밀도 디스플레이 대 한 대상이 모바일 컴퓨팅 장치 (태블릿, 랩톱 클램쉘 및 휴대폰)입니다.  
   
  Windows 8.1 이상 컴퓨터 고밀도 둘 다에 연결 된 표준 밀도 동시에 표시 하는 환경 및 표시를 사용 하 여 작동 하도록 이러한 컴퓨터를 사용 하도록 설정 하려면 몇 가지 기능이 포함 되어 있습니다.  
   
--   Windows의 "텍스트 및 기타 항목 크게 또는 작게 만들려면"을 사용 하 여 장치로 콘텐츠 조정 수 설정 (Windows XP부터 사용할 수 있음).  
+- Windows의 "텍스트 및 기타 항목 크게 또는 작게 만들려면"을 사용 하 여 장치로 콘텐츠 조정 수 설정 (Windows XP부터 사용할 수 있음).  
   
--   Windows 8.1 이상 자동으로 서로 다른 픽셀 밀도의 표시를 이동할 때 일관 되도록 대부분의 응용 프로그램에 대 한 콘텐츠 확장 됩니다. 기본 디스플레이 고밀도 (200%까지 크기 조정) 이며 보조 디스플레이 표준 밀도 (100%)을 하는 경우 Windows는 자동으로 축소 응용 프로그램 창 내용 보조 디스플레이에서 (1 픽셀에서 렌더링 되는 모든 4 픽셀에 대해 표시 되는 응용 프로그램)입니다.  
+- Windows 8.1 이상 자동으로 서로 다른 픽셀 밀도의 표시를 이동할 때 일관 되도록 대부분의 응용 프로그램에 대 한 콘텐츠 확장 됩니다. 기본 디스플레이 고밀도 (200%까지 크기 조정) 이며 보조 디스플레이 표준 밀도 (100%)을 하는 경우 Windows는 자동으로 축소 응용 프로그램 창 내용 보조 디스플레이에서 (1 픽셀에서 렌더링 되는 모든 4 픽셀에 대해 표시 되는 응용 프로그램)입니다.  
   
--   Windows 픽셀 밀도 대 한 크기 조정 및 표시 (Windows 7 이상 OEM 구성 가능)에 대 한 거리 보기 오른쪽 기본값으로 설정 됩니다.  
+- Windows 픽셀 밀도 대 한 크기 조정 및 표시 (Windows 7 이상 OEM 구성 가능)에 대 한 거리 보기 오른쪽 기본값으로 설정 됩니다.  
   
--   Windows 수 280 ppi (기준으로 Windows 8.1 S14)를 초과 하는 새 장치 250% 콘텐츠를 자동으로 조정 됩니다.  
+- Windows 수 280 ppi (기준으로 Windows 8.1 S14)를 초과 하는 새 장치 250% 콘텐츠를 자동으로 조정 됩니다.  
   
- Windows는이 ui 확장을 처리 하는 향상 된 픽셀 수를 활용 하 합니다. 응용 프로그램 자체 "시스템 DPI를 인식 합니다."를 선언 하 여이 시스템에 옵트인 이 수행 하는 응용 프로그램 시스템에 의해 조정 됩니다. 이 전체 응용 프로그램은 픽셀을 균일 하 게 확장 하는 위치는 "유사" 사용자 환경에서 발생할 수 있습니다. 예를 들어:  
+  Windows는이 ui 확장을 처리 하는 향상 된 픽셀 수를 활용 하 합니다. 응용 프로그램 자체 "시스템 DPI를 인식 합니다."를 선언 하 여이 시스템에 옵트인 이 수행 하는 응용 프로그램 시스템에 의해 조정 됩니다. 이 전체 응용 프로그램은 픽셀을 균일 하 게 확장 하는 위치는 "유사" 사용자 환경에서 발생할 수 있습니다. 예를 들어:  
   
- ![DPI 문제 퍼지](../extensibility/media/dpi-issues-fuzzy.png "DPI 문제 퍼지")  
+  ![DPI 문제 퍼지](../extensibility/media/dpi-issues-fuzzy.png "DPI 문제 퍼지")  
   
- Visual Studio 확장에서 인식 되는 DPI에 옵트인 및 따라서가 가상화 되지 않음"."  
+  Visual Studio 확장에서 인식 되는 DPI에 옵트인 및 따라서가 가상화 되지 않음"."  
   
- Windows (및 Visual Studio)에 여러 가지 배율 시스템으로 설정 하는 인수를 처리 하는 여러 가지 UI 기술을 활용 합니다. 예를 들어:  
+  Windows (및 Visual Studio)에 여러 가지 배율 시스템으로 설정 하는 인수를 처리 하는 여러 가지 UI 기술을 활용 합니다. 예를 들어:  
   
--   WPF (단위, 픽셀이 아닌) 장치 독립적인 방식으로 컨트롤을 측정합니다. WPF UI 현재 DPI에 대해 자동으로 조정 합니다.  
+- WPF (단위, 픽셀이 아닌) 장치 독립적인 방식으로 컨트롤을 측정합니다. WPF UI 현재 DPI에 대해 자동으로 조정 합니다.  
   
--   UI 프레임 워크에 관계 없이 모든 텍스트 크기는 포인트 단위로 표현 됩니다 및 하므로 시스템에 의해 DPI 독립적으로 처리 됩니다. Win32, WinForms 및 WPF에서 텍스트 이미 확장할 올바르게 디스플레이 장치에 그리는 경우.  
+- UI 프레임 워크에 관계 없이 모든 텍스트 크기는 포인트 단위로 표현 됩니다 및 하므로 시스템에 의해 DPI 독립적으로 처리 됩니다. Win32, WinForms 및 WPF에서 텍스트 이미 확장할 올바르게 디스플레이 장치에 그리는 경우.  
   
--   Win32/WinForms 대화 상자 및 windows 텍스트 (예를 들어를 통해 표, flow 및 테이블 레이아웃 패널)를 사용 하 여 크기를 조정 하는 레이아웃을 사용 하도록 설정 하는 방법에 있습니다. 이 통해 글꼴 크기는 증가 하는 경우 배율이 조정 되지 않으므로 하드 코드 된 픽셀 위치를 방지 합니다.  
+- Win32/WinForms 대화 상자 및 windows 텍스트 (예를 들어를 통해 표, flow 및 테이블 레이아웃 패널)를 사용 하 여 크기를 조정 하는 레이아웃을 사용 하도록 설정 하는 방법에 있습니다. 이 통해 글꼴 크기는 증가 하는 경우 배율이 조정 되지 않으므로 하드 코드 된 픽셀 위치를 방지 합니다.  
   
--   시스템에서 제공 하는 아이콘 또는 시스템 메트릭 (예: SM_CXICON 및 SM_CXSMICON)에 따라 리소스 이미 조정 됩니다.  
+- 시스템에서 제공 하는 아이콘 또는 시스템 메트릭 (예: SM_CXICON 및 SM_CXSMICON)에 따라 리소스 이미 조정 됩니다.  
   
 ## <a name="older-win32-gdi-gdi-and-winforms-based-ui"></a>이전 Win32 (GDI, GDI +) 및 WinForms 기반 UI  
  WPF는 이미 높은 DPI를 인식 하지만 염두에서 DPI 인식으로 원래 작성 되는 Win32/GDI 기반 코드의 대부분 되었습니다 없습니다. Windows는 DPI 조정 Api를 제공 합니다. Win32 문제 수정에는 이러한 제품 전체에서 일관 되 게 사용 해야 합니다. Visual Studio는 도우미를 제공 하는 기능을 복제 및 제품 전체에서 일관성을 유지 하지 않으려면 클래스 라이브러리입니다.  
@@ -85,21 +85,21 @@ ImageList_Create(VsUI::DpiHelper::LogicalToDeviceUnitsX(16),VsUI::DpiHelper::Log
 ## <a name="layout-issues"></a>레이아웃 문제  
  절대 위치 (특히 픽셀 단위)를 사용 하지 않고 크기를 조정 하는 UI에 서로 기준으로 요소를 유지 하 여 주로 일반적인 레이아웃 문제를 방지할 수 있습니다. 예를 들어:  
   
--   레이아웃/텍스트 위치는 확장 된 이미지에 대 한 계정으로 조정 해야 합니다.  
+- 레이아웃/텍스트 위치는 확장 된 이미지에 대 한 계정으로 조정 해야 합니다.  
   
--   표에서 열 너비가 강화 텍스트에 대 한 조정 해야 합니다.  
+- 표에서 열 너비가 강화 텍스트에 대 한 조정 해야 합니다.  
   
--   하드 코드 된 크기나 요소 사이 공백을 강화 해야 합니다. 텍스트 크기에만 기반 하는 크기는 글꼴 자동으로 조정 되므로 일반적으로 세밀 하 게 합니다.  
+- 하드 코드 된 크기나 요소 사이 공백을 강화 해야 합니다. 텍스트 크기에만 기반 하는 크기는 글꼴 자동으로 조정 되므로 일반적으로 세밀 하 게 합니다.  
   
- 도우미 함수에서 사용할 수는 <xref:Microsoft.VisualStudio.PlatformUI.DpiHelper> X 및 Y 축에 확장을 허용 하려면 클래스:  
+  도우미 함수에서 사용할 수는 <xref:Microsoft.VisualStudio.PlatformUI.DpiHelper> X 및 Y 축에 확장을 허용 하려면 클래스:  
   
--   LogicalToDeviceUnitsX/LogicalToDeviceUnitsY (함수 X에서 크기 조정을 허용 / Y 축)  
+- LogicalToDeviceUnitsX/LogicalToDeviceUnitsY (함수 X에서 크기 조정을 허용 / Y 축)  
   
--   int 공간 = DpiHelper.LogicalToDeviceUnitsX (10).  
+- int 공간 = DpiHelper.LogicalToDeviceUnitsX (10).  
   
--   int 높이 VsUI::DpiHelper::LogicalToDeviceUnitsY(5); =  
+- int 높이 VsUI::DpiHelper::LogicalToDeviceUnitsY(5); =  
   
- Rect, 지점 및 크기와 같은 개체 확장을 허용 하려면 LogicalToDeviceUnits 오버 로드가 있습니다.  
+  Rect, 지점 및 크기와 같은 개체 확장을 허용 하려면 LogicalToDeviceUnits 오버 로드가 있습니다.  
   
 ## <a name="using-the-dpihelper-libraryclass-to-scale-images-and-layout"></a>이미지 배율을 조정 및 레이아웃을 DPIHelper 라이브러리/클래스를 사용 하 여  
  Visual Studio DPI 도우미 라이브러리를 네이티브 및 관리 되는 형태로 사용할 수 있으며 다른 응용 프로그램에서 Visual Studio shell을 외부에서 사용할 수 있습니다.  
@@ -144,15 +144,15 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
   
  권장 사항:  
   
--   로고 이미지 및 배너 아트 워크, 기본값에 대 한 <xref:System.Windows.Media.BitmapScalingMode> 크기 모드를 사용할 수 있습니다.  
+- 로고 이미지 및 배너 아트 워크, 기본값에 대 한 <xref:System.Windows.Media.BitmapScalingMode> 크기 모드를 사용할 수 있습니다.  
   
--   메뉴 항목과도 해 이미지에 대 한는 <xref:System.Windows.Media.BitmapScalingMode> 기타 왜곡 아티팩트 허용량 (%200 및 300%)에서 제거를 수행 해도 해당 하는 경우에 사용 해야 합니다.  
+- 메뉴 항목과도 해 이미지에 대 한는 <xref:System.Windows.Media.BitmapScalingMode> 기타 왜곡 아티팩트 허용량 (%200 및 300%)에서 제거를 수행 해도 해당 하는 경우에 사용 해야 합니다.  
   
--   큰 확대/축소 수준을 100% (예를 들어 250% 또는 %350)의 배수로 청구 되지 않습니다,에 대 한 유사 항목 바랜 UI에 결과 이중 큐빅을 사용 하 여의 해 이미지 크기를 조정 합니다. 첫 번째 100% (예: 200% 또는 300%)의 가장 큰 배수로 NearestNeighbor 사용 하 여 이미지 크기 조정 및 여기에서 이중 큐빅을 사용 하 여 크기 조정 하 여 더 나은 결과 얻습니다. 특수 한 사례를 참조 하세요: 자세한 수준 큰 DPI에 대 한 WPF 이미지 prescaling 합니다.  
+- 큰 확대/축소 수준을 100% (예를 들어 250% 또는 %350)의 배수로 청구 되지 않습니다,에 대 한 유사 항목 바랜 UI에 결과 이중 큐빅을 사용 하 여의 해 이미지 크기를 조정 합니다. 첫 번째 100% (예: 200% 또는 300%)의 가장 큰 배수로 NearestNeighbor 사용 하 여 이미지 크기 조정 및 여기에서 이중 큐빅을 사용 하 여 크기 조정 하 여 더 나은 결과 얻습니다. 특수 한 사례를 참조 하세요: 자세한 수준 큰 DPI에 대 한 WPF 이미지 prescaling 합니다.  
   
- Microsoft.VisualStudio.PlatformUI 네임 스페이스의 DpiHelper 클래스 멤버를 제공 <xref:System.Windows.Media.BitmapScalingMode> 바인딩에 사용할 수 있습니다. Visual Studio shell은 비트맵 배율 조정을 제품 전체에서 일관 되 게 DPI 배율에 따라 제어 하는 허용 됩니다.  
+  Microsoft.VisualStudio.PlatformUI 네임 스페이스의 DpiHelper 클래스 멤버를 제공 <xref:System.Windows.Media.BitmapScalingMode> 바인딩에 사용할 수 있습니다. Visual Studio shell은 비트맵 배율 조정을 제품 전체에서 일관 되 게 DPI 배율에 따라 제어 하는 허용 됩니다.  
   
- XAML에서 사용 하려면 다음을 추가 합니다.  
+  XAML에서 사용 하려면 다음을 추가 합니다.  
   
 ```xaml  
 xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.14.0"  
@@ -229,7 +229,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
 ## <a name="enabling-hdpi-support-to-the-weboc"></a>WebOC HDPI 지원을 사용 하도록 설정  
  기본적으로 WebOC 컨트롤 (예: WPF 또는 IWebBrowser2 인터페이스에서 WebBrowser 컨트롤) HDPI 검색 및 지원을 사용 하도록 설정 하지 않습니다. 결과 고해상도 디스플레이에 너무 작으면 콘텐츠 표시를 사용 하 여 포함 된 컨트롤 됩니다. 다음 특정 웹 WebOC 인스턴스에서 높은 DPI 지원을 사용 하도록 설정 하는 방법을 설명 합니다.  
   
- IDocHostUIHandler 인터페이스 구현 (MSDN 문서를 참조 합니다 [IDocHostUIHandler](http://msdn.microsoft.com/library/aa753260.aspx) 인터페이스):  
+ IDocHostUIHandler 인터페이스 구현 (MSDN 문서를 참조 합니다 [IDocHostUIHandler](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753260(v=vs.85)):  
   
 ```idl  
 [ComImport, InterfaceType(ComInterfaceType.InterfaceIsIUnknown),  
@@ -308,7 +308,7 @@ public interface IDocHostUIHandler
     }   
 ```  
   
- 필요에 따라 ICustomDoc 인터페이스를 구현 (MSDN 문서를 참조 합니다 [ICustomDoc](http://msdn.microsoft.com/library/aa753272.aspx) 인터페이스):  
+ 필요에 따라 ICustomDoc 인터페이스를 구현 (MSDN 문서를 참조 합니다 [ICustomDoc](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753272(v=vs.85)):  
   
 ```idl  
 [InterfaceType(ComInterfaceType.InterfaceIsIUnknown),  

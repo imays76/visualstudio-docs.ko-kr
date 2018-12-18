@@ -14,16 +14,20 @@ ms.assetid: b1ccf563-2ec8-42e5-b89c-731a9de1ea1d
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: cbcf3cc6167cc98cb61380aa1ac54af5a291eb09
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 69210ac7957cf66119c059fc34a9eb4e11a4d0cb
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915746"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551895"
 ---
 # <a name="ca1814-prefer-jagged-arrays-over-multidimensional"></a>CA1814: 다차원 배열보다 가변 배열을 사용하십시오.
+
 |||
 |-|-|
 |TypeName|PreferJaggedArraysOverMultidimensional|
@@ -38,13 +42,13 @@ ms.locfileid: "31915746"
  가변 배열의 요소에는 배열이 사용됩니다. 요소를 구성하는 배열의 크기는 서로 다를 수 있습니다. 이 경우 일부 데이터 집합에 대한 공간을 절약할 수 있습니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이 규칙 위반 문제를 해결 하려면 가변된 배열을 다차원 배열을 변경 합니다.
+ 이 규칙 위반 문제를 해결 하려면 가변된 배열에 다차원 배열을 변경 합니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
- 다차원 배열 공간 허비 되지 않도록 하는 경우에이 규칙에서 경고를 표시 합니다.
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
+ 다차원 배열 공간 허비 되지 않도록 하는 경우이 규칙에서 경고를 표시 합니다.
 
 ## <a name="example"></a>예제
- 다음 예제에는 가변 및 다차원 배열에 대 한 선언을 보여 줍니다.
+ 다음 예제에서는 가변 배열과 다차원 배열에 대 한 선언을 보여 줍니다.
 
  [!code-vb[FxCop.Performance.JaggedArrays#1](../code-quality/codesnippet/VisualBasic/ca1814-prefer-jagged-arrays-over-multidimensional_1.vb)]
  [!code-csharp[FxCop.Performance.JaggedArrays#1](../code-quality/codesnippet/CSharp/ca1814-prefer-jagged-arrays-over-multidimensional_1.cs)]

@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3abf59cb55bd64004750be7b24e00e42eb79d9e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b24c052bc3345443e8bcbe474f881906f420a74c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124466"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821710"
 ---
 # <a name="jmccodespec"></a>JMC_CODE_SPEC
-이 구조는 모듈에 대 한 JustMyCode 정보를 설정 하는 데 사용 됩니다.  
+이 구조는 모듈에 대 한 JustMyCode 정보 사용 됩니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -43,7 +43,7 @@ public struct JMC_CODE_SPEC {
   
 ## <a name="members"></a>멤버  
  fIsUserCode  
- 0이 아닌 (`TRUE`) 모듈은 사용자 코드를 고려해 야 하는 경우는 그렇지 않은 경우 0 (`FALSE`) 모듈 외부 코드로 처리 하지 않고는 디버깅 하는 경우.  
+ 0이 아닌 (`TRUE`)이 모듈은 사용자 코드를 고려해 야 하는 경우 0이 고, 그렇지 (`FALSE`) 모듈이 외부 코드로 처리할 수 고를 디버깅할 경우.  
   
  bstrModuleName  
  해당 모듈의 이름입니다.  

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 부하 테스트의 임계값 규칙 위반 분석
+title: 부하 테스트의 임계값 규칙 위반 분석
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 882b2511c547837466f45578031c86e6b0df9d74
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: be0784197c03aa3117d559cd4aa99797027c8170
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234987"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061813"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>부하 테스트 분석기를 사용하여 부하 테스트에서 임계값 규칙 위반 분석
 
@@ -30,14 +30,16 @@ ms.locfileid: "36234987"
 
 위반이 발생한 경우 **부하 테스트 분석기**의 상태 표시줄에 **임계값 위반** 하이퍼링크가 표시되고 발생한 위반 개수가 지정됩니다. 이 하이퍼링크를 선택하면 임계값 위반 테이블이 표시됩니다. **카운터** 창 및 그래프에서도 임계값 위반을 볼 수 있습니다.
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
 ## <a name="view-threshold-violations-in-the-table"></a>테이블에서 임계값 위반 보기
 
  임계값 위반 테이블에는 처음 1,000개의 위반이 표시됩니다. 이 테이블에는 다음과 같은 열이 있습니다.
 
 |열|설명|기본적으로 표시되는지 여부|
-|------------|-----------------|------------------------|
+|-|-|-|
 |시간|부하 테스트 도중 위반이 발생한 시간입니다.|예|
-|컴퓨터|테스트 도중 위반이 발생한 컴퓨터의 이름입니다. **참고:** Rig에서 부하 테스트를 실행하는 경우 이 정보가 중요합니다.|예|
+|컴퓨터|테스트 도중 위반이 발생한 컴퓨터의 이름입니다. **참고:**  Rig에서 부하 테스트를 실행하는 경우 이 정보가 중요합니다.|예|
 |범주|위반이 발생한 성능 카운터 범주입니다.|예|
 |카운터|위반이 발생한 성능 카운터 이름입니다.|예|
 |인스턴스|위반이 발생한 성능 카운터 인스턴스입니다.|예|
@@ -67,8 +69,6 @@ ms.locfileid: "36234987"
  그래프에 임계값 위반이 표시될 수도 있습니다. 임계값 아이콘은 그래프에서 임계값 위반이 발생한 데이터 요소 옆에 표시됩니다.
 
  카운터 트리에서 임계값 위반 아이콘은 특정 카운터 노드에서 루트 노드까지 거슬러 올라가면서 전파됩니다. 따라서 트리를 확장하지 않아 카운터가 표시되지 않은 경우에도 카운터에서 위반이 발생했음을 확인할 수 있습니다.
-
- 자세한 내용은 [그래프 뷰 및 테이블 뷰의 카운터 패널 사용](../test/counters-panel-in-load-test-analyzer.md)을 참조하세요.
 
 ## <a name="view-threshold-violations-on-the-graph"></a>그래프에서 임계값 위반 보기
 

@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6521d2a7ffdf5bb285f571e0d3975626f34d84d1
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 773144f81e51167016df3dca1b6ea7beedb3661c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470038"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951316"
 ---
 # <a name="idiasymbolgettypes"></a>IDiaSymbol::get_types
-이 기호에 대 한 컴파일러 특정 형식의 배열을 검색합니다.  
+이 기호에 대 한 컴파일러 별 형식의 배열을 검색합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -36,19 +36,19 @@ HRESULT get_types (
   
 #### <a name="parameters"></a>매개 변수  
  `cTypes`  
- [in] 데이터를 보유 하는 버퍼의 크기입니다.  
+ [in] 데이터를 저장할 버퍼의 크기입니다.  
   
  `pcTypes`  
- [out] 를 작성 하는 형식의 수를 반환 하거나, 있는 경우는 `types` 매개 변수는 `NULL`, 한 다음 사용할 수 있는 유형의 총 수입니다.  
+ [out] 를 작성 하는 형식의 수를 반환 합니다. 또는 합니다 `types` 매개 변수는 `NULL`를 사용할 수 있는 유형의 총 다음.  
   
  `types[]`  
- [out] 사용 하 여 입력할 수 있는 배열은 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 이 기호에 대 한 모든 형식을 나타내는 개체입니다.  
+ [out] 배열을 사용 하 여 채울 합니다 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 이 기호에 대 한 모든 형식을 나타내는 개체입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
+ 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
   
 > [!NOTE]
->  반환 값이 `S_FALSE` 의미는 속성은 해당 기호를 사용할 수 없습니다.  
+>  반환 값이 `S_FALSE` 속성 기호를 사용할 수 없는 것을 의미 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 대상 .NET Framework 버전 지정
+title: .NET Framework 버전 대상
 ms.date: 02/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,19 +12,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 36599475e743259d8cf09d24172a633b54b09693
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3673d3c57a33d99c3c26dd22cd5c2b7b8959e7d6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752309"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059472"
 ---
-# <a name="how-to-target-a-version-of-the-net-framework"></a>방법: 대상 .NET Framework 버전 지정
+# <a name="how-to-target-a-version-of-the-net-framework"></a>방법: 한 버전의 .NET Framework를 대상으로 지정
 
 이 문서에서는 프로젝트를 만들 때 특정 버전의 .NET Framework를 대상으로 지정하는 방법 및 기존 Visual Basic, C# 또는 Visual F# 프로젝트에서 대상 버전을 변경하는 방법에 대해 설명합니다.
 
 > [!IMPORTANT]
-> C++ 프로젝트의 대상 버전을 변경하는 방법에 대한 자세한 내용은 [방법: 대상 프레임워크 및 플랫폼 도구 집합 수정](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)을 참조하세요.
+> C++ 프로젝트용 대상 버전을 변경하는 방법에 대한 자세한 내용은 [방법: 대상 프레임워크 및 플랫폼 도구 세트 수정](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)을 참조하세요.
 
 ## <a name="to-target-a-version-when-you-create-a-project"></a>프로젝트를 만들 때 버전을 대상으로 지정하려면
 
@@ -46,7 +46,7 @@ ms.locfileid: "34752309"
 
 이 절차를 수행하여 Visual Basic, C# 또는 Visual F# 프로젝트에서 .NET Framework의 대상 버전을 변경할 수 있습니다.
 
-C++ 프로젝트의 대상 버전을 변경하는 방법에 대한 자세한 내용은 [방법: 대상 프레임워크 및 플랫폼 도구 집합 수정](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)을 참조하세요.
+C++ 프로젝트용 대상 버전을 변경하는 방법에 대한 자세한 내용은 [방법: 대상 프레임워크 및 플랫폼 도구 세트 수정](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)을 참조하세요.
 
 1. **솔루션 탐색기**에서 변경하려는 프로젝트의 바로 가기 메뉴를 연 후 **속성**을 선택합니다.
 
@@ -74,4 +74,4 @@ C++ 프로젝트의 대상 버전을 변경하는 방법에 대한 자세한 내
 - [.NET Framework 대상 지정 오류 문제 해결](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)
 - [응용 프로그램 페이지, 프로젝트 디자이너(C#)](../ide/reference/application-page-project-designer-csharp.md)
 - [응용 프로그램 페이지, 프로젝트 디자이너(Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)
-- [방법: 대상 프레임워크 및 플랫폼 도구 집합 수정(C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)
+- [방법: 대상 프레임워크 및 플랫폼 도구 세트 수정(C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)

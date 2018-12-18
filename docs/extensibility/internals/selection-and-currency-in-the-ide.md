@@ -1,5 +1,5 @@
 ---
-title: 선택 및 IDE에서 통화 | Microsoft Docs
+title: IDE의 선택 및 통화 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,55 +16,55 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf8c58cb08f82b10970424600843b0fedcf477fc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f71a176d469a5cd71aa377c800516e743eb1cc15
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31131274"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840573"
 ---
-# <a name="selection-and-currency-in-the-ide"></a>선택 및 IDE에서 통화
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 통합된 개발 환경 (IDE) 선택을 사용 하 여 현재 선택한 개체에 대 한 사용자의 정보를 유지 관리 *컨텍스트*합니다. 선택 항목 컨텍스트 Vspackage 두 가지 방법으로 추적 하는 통화의 일부를 사용할 수 있습니다.  
+# <a name="selection-and-currency-in-the-ide"></a>IDE의 선택 및 통화
+합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 통합된 개발 환경 (IDE) 선택을 사용 하 여 현재 선택한 개체 사용자에 대 한 정보를 유지 관리 *상황에 맞는*합니다. 선택 항목 컨텍스트를 사용 하 여 Vspackage 두 가지 방법으로 추적 하는 통화로 포함이 될 수 있습니다.  
   
--   IDE에 Vspackage에 대 한 통화 정보를 전파 하 여 합니다.  
+-   IDE에 Vspackage에 대 한 통화 정보를 전파 합니다.  
   
--   IDE 내에서 사용자의 현재 선택 항목을 모니터링 합니다.  
+-   IDE 내에서 사용자의 현재 선택을 모니터링 합니다.  
   
 ## <a name="selection-context"></a>선택 항목 컨텍스트  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE 전체적으로 추적 IDE 통화에는 자체 전역 선택 컨텍스트 개체입니다. 다음 표에서 선택 항목 컨텍스트를 구성 하는 요소를 보여 줍니다.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE 전역으로 추적 IDE 통화의 고유한 전역 선택 컨텍스트 개체입니다. 다음 표에서 선택 항목 컨텍스트를 구성 하는 요소를 보여 줍니다.  
   
 |요소|설명|  
 |-------------|-----------------|  
-|현재 계층 구조|일반적으로 현재 프로젝트입니다. NULL 현재 계층 구조 전체 솔루션 현재 임을 나타냅니다.|  
-|현재 ItemID|현재 계층 구조 내에서 선택한 항목 프로젝트 창에서 여러 개의 항목을 현재 항목을 여러 개 있을 수 있습니다.|  
+|현재 계층|일반적으로 현재 프로젝트 NULL 현재 계층 솔루션 전체를 대상으로 현재 임을 나타냅니다.|  
+|현재 ItemID|현재 계층; 내에서 선택한 항목 프로젝트 창에서 여러 항목을 선택할 경우 현재 항목이 여러 개 있을 수 있습니다.|  
 |현재 `SelectionContainer`|속성 창의 속성을 표시 하는 하나 이상의 개체를 보유 합니다.|  
   
  또한 환경에는 두 가지 전역 목록을 유지 관리합니다.  
   
--   활성 UI 명령 식별자 목록  
+-   활성 UI 명령 식별자의 목록  
   
--   현재 사용 중인 요소 형식의 목록입니다.  
+-   현재 요소 형식의 목록입니다.  
   
 ### <a name="window-types-and-selection"></a>창 유형 및 선택  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE은 두 가지 일반 유형으로 windows를 구성 합니다.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE는 두 가지 일반 유형으로 windows를 구성 합니다.  
   
--   계층 유형 창은  
+- 계층 유형을 windows  
   
--   도구 창과 문서 창 등의 프레임 창  
+- 도구 및 문서 창 등의 프레임 창  
   
- IDE 이러한 창 유형 각각 다르게 통화를 추적합니다.  
+  IDE는 다른 방식으로 이러한 각 유형의 창에 대 한 통화를 추적합니다.  
   
- 가장 일반적인 프로젝트 형식 IDE를 제어 하는 솔루션 탐색기입니다. 현재 계층을 결정 하는 사용자가 선택한 의존 하는 창 및 프로젝트 형식 창 글로벌 계층 및 ItemID의 전역 선택 항목 컨텍스트를 추적 합니다. 환경을 프로젝트 형식 창에 대 한 글로벌 서비스를 제공 <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>을 통해 어떤 Vspackage 열려 요소에 대 한 현재 값을 모니터링할 수 있습니다. 환경에서 검색 속성이 글로벌 서비스에 의해 이루어집니다.  
+  가장 일반적인 프로젝트 형식 IDE 제어 하는 솔루션 탐색기입니다. 현재 계층 구조를 확인 하려면 사용자의 선택 창 사용 및 프로젝트 형식 창 글로벌 계층 및 ItemID 전역 선택 컨텍스트를 추적 합니다. 환경을 프로젝트 형식 창에 대 한 글로벌 서비스를 제공 <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>을 통해 어떤 Vspackage 열기 요소에 대 한 현재 값을 모니터링할 수 있습니다. 환경에서 검색 속성은이 글로벌 서비스에 의해 좌우 됩니다.  
   
- 반면에를 눌러 선택 영역 컨텍스트 값 (계층 구조/ItemID/SelectionContainer 세) 프레임 창 프레임 창 내에서 DocObject를 사용 합니다. 이어야 합니다. 서비스를 사용 하 여 프레임 창 <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> 이 목적을 위해 합니다. DocObject 푸시할 수 있는 선택 컨테이너에 대 한 값만 계층 구조에 대 한 값은 로컬 및 MDI 자식 문서에 대 한 일반적인 경우 처럼에 ItemID 변경 되지 않습니다.  
+  반면, 프레임 창 선택 영역 컨텍스트 값 (계층/ItemID/SelectionContainer 다음과)에 적용할 DocObject 프레임 창 내에서 사용 합니다. . 서비스를 사용 하는 프레임 창 <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> 이 목적입니다. ItemID 변경, MDI 자식 문서에 대 한 일반적인 그대로 및 DocObject 푸시할 수 선택 컨테이너에 대 한 값만 계층 구조에 대 한 로컬 값을 유지 합니다.  
   
 ### <a name="events-and-currency"></a>이벤트 및 통화  
  두 가지 유형의 이벤트는 통화의 환경의 개념에 영향을 주는 발생할 수 있습니다.  
   
--   전역 수준에 전파 되 고 창 프레임 선택 항목 컨텍스트를 변경 하는 이벤트입니다. 이러한 종류의 이벤트의 예로 열린 되 고 전역 도구 창 또는 프로젝트 형식 도구 창을 열고 열려는 MDI 자식 창이 있습니다.  
+-   전역 수준에 전파 되 고 창 프레임 선택 컨텍스트를 변경 하는 이벤트입니다. 이 유형의 이벤트의 예로 열려 있는 전역 도구 창 또는 열려 있는 프로젝트 형식 도구 창이 열려 있는 MDI 자식 창이 있습니다.  
   
--   창 프레임 선택 항목 컨텍스트 내에서 추적 하는 요소를 변경 하는 이벤트입니다. 프로젝트 형식 창에서 선택한 항목을 변경 하거나는 DocObject 내에서 선택 영역을 예로 들 수 있습니다.  
+-   창 프레임 선택 컨텍스트 내에서 추적 요소를 변경 하는 이벤트입니다. DocObject 내에서 선택을 변경 하거나 프로젝트 형식 창에서 선택을 변경을 예로 들 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [컨텍스트 개체 선택](../../extensibility/internals/selection-context-objects.md)   
+ [선택 컨텍스트 개체](../../extensibility/internals/selection-context-objects.md)   
  [사용자에 대한 피드백](../../extensibility/internals/feedback-to-the-user.md)

@@ -1,0 +1,38 @@
+---
+title: Visual Studio 워크플로 Windows (레거시) | Microsoft Docs
+ms.custom: ''
+ms.date: 11/15/2016
+ms.prod: .net-framework-4.6
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
+ms.topic: reference
+helpviewer_keywords:
+- workflows, designer windows
+ms.assetid: 78526446-d165-4367-982c-b2cf269fa22b
+caps.latest.revision: 5
+author: gewarren
+ms.author: gewarren
+manager: erikre
+ms.openlocfilehash: 32e8b4cf8fcfbaddfa891ab881f25f89ca0285d7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273171"
+---
+# <a name="visual-studio-workflow-windows-legacy"></a>Visual Studio 워크플로 창(레거시)
+[!INCLUDE[wfd2](../includes/wfd2-md.md)] 또는 [!INCLUDE[vs2010](../includes/vs2010-md.md)]를 대상으로 하려는 경우 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)]에서 제공하는 레거시 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]를 사용할 수 있습니다. 레거시 디자이너는 워크플로를 만드는 데 사용할 수 있는 시각적 디자이너입니다. 활동을 끌어 놓을 수 있습니다 합니다 **도구 상자** 디자인 화면 및 다음 구성할 합니다. 디자인 화면은 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 편집기 창이므로 다른 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 편집기 창에서 사용하는 주 창 영역에 표시됩니다. 워크플로 이름은 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 창의 제목 표시줄에 표시됩니다.  
+  
+ 숙련된 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 사용자에게는 대부분의 레거시 디자이너 창이 친숙할 것입니다. 다음 표에서는 기본 창에 대해 설명합니다.  
+  
+|창|설명|  
+|------------|-----------------|  
+|레거시 워크플로 디자인 화면|[!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 또는 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]를 대상으로 하는 워크플로를 만드는 데 사용되는 시각적 디자이너 화면입니다. 활동을 끌어 활동 디자이너에서 시각적으로 작성 하는 기능을 제공 하는 **도구 상자** 디자인 화면입니다.|  
+|도구 상자|활동을 그래픽으로 표현할 수 있으며, 이 그래픽을 디자인 화면으로 끌어 놓을 수 있습니다.|  
+|속성|워크플로 활동 속성을 구성할 때 사용합니다.|  
+|솔루션 탐색기|워크플로 프로젝트를 계층적 트리 뷰에 표시하며, 여기서 프로젝트 관리 기능에 액세스할 수 있습니다.|  
+|디버그 창|표준 Visual Studio와 같은 windows 디버깅 합니다 **스레드**, **호출 스택**를 **중단점**를 **지역 도구**, 및 **조사식 도구** windows.|  
+  
+## <a name="see-also"></a>참고 항목  
+ [레거시 워크플로 디버깅](../workflow-designer/debugging-legacy-workflows.md)

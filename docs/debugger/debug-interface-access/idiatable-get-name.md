@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dedf326d718c9d015aa488c1dc2fdf9210c4fc9e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 87527cd4a025973294ffc6219a452eb1b23bc897
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471085"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880704"
 ---
 # <a name="idiatablegetname"></a>IDiaTable::get_name
 테이블의 이름을 검색합니다.  
@@ -37,7 +37,7 @@ HRESULT get_name (
  [out] 테이블의 이름을 반환합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaTable](../../debugger/debug-interface-access/idiatable.md)

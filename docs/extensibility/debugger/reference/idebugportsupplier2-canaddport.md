@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00b1c1303be8ccc326a58a20d132ad38db3b426d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f7f4494aa41613f93396389176436dcf0c40be53
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113964"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902310"
 ---
 # <a name="idebugportsupplier2canaddport"></a>IDebugPortSupplier2::CanAddPort
-포트 공급자 새 포트를 추가할 수 있는지 확인 합니다.  
+포트 공급자가 새 포트를 추가할 수 있는지 확인 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -38,11 +38,11 @@ int CanAddPort();
 ```  
   
 ## <a name="return-value"></a>반환 값  
- 포트를 추가할 수 있으면 반환 `S_OK`, 그렇지 않으면 반환 `S_FALSE` 를 나타내는 포트 없음이 포트 공급 업체에 추가할 수 있습니다.  
+ 포트를 추가할 수 있습니다 하는 경우 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 나타내는 포트 없음이 포트 공급자에 추가할 수 있습니다.  
   
 ## <a name="remarks"></a>설명  
- 호출 하기 전에이 메서드를 호출 하는 [포트 추가](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md) 포트도 추가 작업 시간이 많이 소요 될 수 있는 두 번째 방법을 만들어지므로 메서드.  
+ 호출 하기 전에이 메서드를 호출 합니다 [포트 추가](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md) 메서드 하므로 두 번째 방법을 추가 하는 시간이 많이 걸리는 작업 수 뿐만 아니라 포트를 만듭니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)   
- [포트 추가](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)
+ [AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)

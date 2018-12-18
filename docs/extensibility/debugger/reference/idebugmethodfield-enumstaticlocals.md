@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 761e696cd774e0414b58c9d2a9f1482d298489f6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 35474156ec43fb9e1e44117e44430b27a6e1b383
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112079"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905092"
 ---
 # <a name="idebugmethodfieldenumstaticlocals"></a>IDebugMethodField::EnumStaticLocals
 메서드는 정적 지역 변수에 대 한 열거자를 만듭니다.  
@@ -41,13 +41,13 @@ int EnumStaticLocals(
   
 #### <a name="parameters"></a>매개 변수  
  `ppLocals`  
- [out] 반환 된 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) 정적 지역 변수의 목록을 나타내는 개체입니다. 정적 지역 변수 없는 경우 null 값을 반환 합니다.  
+ [out] 반환 된 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) 정적 지역 변수의 목록을 나타내는 개체입니다. 정적 지역에 없는 경우 null 값을 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 S_OK를 반환 하거나 정적 로컬 항목 없음 없으면 S_FALSE를 반환 합니다. 그러지 않으면 오류 코드가 반환됩니다.  
+ 성공 하면 S_OK를 반환 합니다. 또는 정적 지역에 없는 경우 S_FALSE를 반환 합니다. 그러지 않으면 오류 코드가 반환됩니다.  
   
 ## <a name="remarks"></a>설명  
- 각 요소는 한 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 다양 한 유형의 정적 지역 변수를 나타내는 개체입니다. 호출 된 [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) 정확히 어떤 유형의 정적 로컬 개체 나타내는지 확인 하기 위해 각 개체에 대해 메서드.  
+ 각 요소는 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 정적 지역 변수의 형식을 나타내는 개체입니다. 호출 된 [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) 정확히 어떤 유형의 정적 로컬 개체가 나타내는 확인 하려면 각 개체의 메서드.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   

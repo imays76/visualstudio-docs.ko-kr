@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47c1482d5ad2e748bb2664b796e272ce8e9c03d5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7746f85eeec41b708bd4c1537ee725d2096c41ef
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126951"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920627"
 ---
 # <a name="programdestroyflags"></a>PROGRAM_DESTROY_FLAGS
-열거는 유효한 값은 프로그램의 플래그를 삭제 합니다.  
+유효한 열거 값을 프로그램의 플래그를 삭제 합니다.  
   
 ## <a name="syntax"></a>구문  
   

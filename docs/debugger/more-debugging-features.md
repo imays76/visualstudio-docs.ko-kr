@@ -1,5 +1,5 @@
 ---
-title: 더 디버깅 기능 | Microsoft Docs
+title: 다른 디버깅 기능 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -15,17 +15,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a46c62c05b762bee3233062a5b84e3ffca20e15a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 38783f5ec228965010dbe8054373803185fe2e7c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31482128"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282705"
 ---
 # <a name="more-debugging-features"></a>추가 디버그 기능
 이 섹션에는 Visual Studio 디버거와 함께 사용할 수 있는 추가 기능이 포함되어 있습니다.  
   
- 디버그를 더 빠르고 쉽게 해주는 팁과 요령 목록이 필요하면 [디버그 팁과 요령](http://blogs.msdn.com/b/visualstudio/archive/2015/05/22/debugging-tips-and-tricks.aspx)을 참조하세요.  
+ 팁과 요령을 빠르고 쉽게 디버깅의 목록을 참조 하세요 [디버그 팁과 요령](https://blogs.msdn.microsoft.com/visualstudio/2015/05/22/debugging-tips-and-tricks/)합니다.  
   
 ## <a name="additional-features"></a>추가 기능  
  [디버그하는 동안 XAML 속성 검사](../debugger/inspect-xaml-properties-while-debugging.md)  

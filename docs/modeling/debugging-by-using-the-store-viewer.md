@@ -12,18 +12,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: fd0930445ef409f27f87658a249f9c89aac22e91
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: d26c66b6bcbab2eafe2ae8b01597ef09985dcfa8
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567066"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858654"
 ---
 # <a name="debugging-by-using-the-store-viewer"></a>저장소 뷰어를 사용하여 디버깅
 저장소 뷰어를 사용 하 여 상태를 검사할 수 있습니다는 *저장할* 에서 사용 하는 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]합니다. 저장소 뷰어를 모든 요소 속성 및 요소 간의 링크와 함께 특정 저장소에는 도메인 모델 요소를 표시 합니다.
 
 ## <a name="opening-store-viewer"></a>저장소를 열지 뷰어
- 있는 경우는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 실험적 빌드, 인스턴스 저장소의 모델 정보를 포함 하는 위치에 중단점에서 코드를 중지 합니다. 그런 다음에 다음 명령을 입력 하 여 저장소 뷰어를 엽니다는 **직접 실행** 창:
+ Visual Studio 실험적 빌드에 있을 때, 인스턴스 저장소의 모델 정보를 포함 하는 위치에 중단점에서 코드를 중지 합니다. 그런 다음에 다음 명령을 입력 하 여 저장소 뷰어를 엽니다는 **직접 실행** 창:
 
 ```csharp
 Microsoft.VisualStudio.Modeling.Diagnostics.StoreViewer.Show(mystore);

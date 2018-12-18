@@ -19,35 +19,38 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 00608bae35a9f3272e46e53d7e0205b48c0ea7d9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
-ms.translationtype: MT
+ms.openlocfilehash: d93ca95a67bc3816d8d65a799282dc6c7969e093
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920472"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304919"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>데이터베이스의 그림에 컨트롤 바인딩
 
-사용할 수는 **데이터 소스** 창 응용 프로그램에서 컨트롤을 데이터베이스에 이미지를 바인딩할 수 있습니다. 예를 들어 이미지를 바인딩할 수 있습니다는 <xref:System.Windows.Controls.Image> WPF 응용 프로그램에서 또는 제어는 <xref:System.Windows.Forms.PictureBox> Windows Forms 응용 프로그램에서 제어 합니다.
+사용할 수는 **데이터 원본** 창 응용 프로그램에서 컨트롤을 데이터베이스에 이미지를 바인딩할 수 있습니다. 예를 들어 이미지를 바인딩할 수 있습니다는 <xref:System.Windows.Controls.Image> WPF 응용 프로그램에서 또는 컨트롤을 <xref:System.Windows.Forms.PictureBox> Windows Forms 응용 프로그램에서 제어 합니다.
 
-일반적으로 데이터베이스의 그림 바이트 배열로 저장 됩니다. 항목에 **데이터 원본** 로 설정 된 바이트 배열을 입력 제어로 저장 되어 있는 창 **None** 기본적으로 바이트 배열은 단순한 실행 파일에는 바이트의 배열에서 아무 것도 포함 될 수 있으므로 큰 응용 프로그램입니다. 바이트 배열 항목에 대 한 데이터 바인딩된 컨트롤을 만들려면는 **데이터 소스** 이미지를 나타내는 창을 만들 컨트롤을 선택 해야 합니다.
+데이터베이스의 그림은 일반적으로 바이트 배열로 저장 됩니다. 항목의 **데이터 원본** 바이트 배열이 있으면 입력 제어 저장 되는 창으로 설정 **None** 기본적으로 바이트 배열을 간단한 실행 파일에는 바이트 배열에서 아무 것도 포함 될 수 있으므로 대규모 응용 프로그램입니다. 바이트 배열 항목에 대 한 데이터 바인딩된 컨트롤을 만드는 합니다 **데이터 원본** 이미지를 나타내는 창을 만드는 컨트롤을 선택 해야 합니다.
 
-다음 절차를 가정 하는 **데이터 소스** 창 이미지에 바인딩되는 항목으로 채워집니다.
+다음 절차에 있다고 가정 합니다 **데이터 원본** 창 이미지에 바인딩되는 항목으로 채워집니다.
 
-## <a name="to-bind-a-picture-in-a-database-to-a-control"></a>컨트롤에 데이터베이스에 그림을 바인딩하려면
+## <a name="to-bind-a-picture-in-a-database-to-a-control"></a>데이터베이스의 그림 컨트롤에 바인딩할
 
-1.  디자인 화면에 컨트롤을 추가 하려면이 WPF 디자이너 또는 Windows Forms 디자이너에서 열려 있는지 확인 합니다.
+1.  디자인 화면에 컨트롤을 추가 하려면 WPF 디자이너 또는 Windows Forms 디자이너에서 열려 있는지 확인 합니다.
 
-2.  에 **데이터 소스** 창 원하는 테이블을 확장 하거나 개체의 열 이나 속성을 표시 합니다.
+2.  에 **데이터 원본** 창에서 원하는 테이블을 확장 하거나 해당 열 또는 속성을 표시할 개체입니다.
 
-3.  열 이나 이미지 데이터를 포함 하는 속성을 선택 하 고 해당 드롭다운 컨트롤 목록에서 다음 컨트롤 중 하나를 선택 합니다.
+   > [!TIP]
+   > 경우는 **데이터 원본** 창이 열려 있지 않으면, 선택 하 여 엽니다 **뷰** > **기타 Windows** > **데이터 원본을**.
 
-    -   WPF 디자이너를 연 경우 선택 **이미지**합니다.
+3.  열 이나 이미지 데이터를 포함 하는 속성을 선택 하 고 해당 드롭다운 목록 컨트롤 목록에서 다음 컨트롤 중 하나를 선택 합니다.
 
-    -   Windows Forms 디자이너를 연 경우 선택 **PictureBox**합니다.
+    - WPF designer가 열려 있으면 선택 **이미지**합니다.
 
-    -   또는 데이터 바인딩을 지원 하 고 이미지를 표시할 수 있는 다른 컨트롤을 선택할 수 있습니다. 컨트롤을 사용 하려면 사용 가능한 컨트롤 목록에 없는 경우 목록에 추가 하 고 선택 수 있습니다. 자세한 내용은 참조 [데이터 소스 창에 사용자 지정 컨트롤을 추가할](../data-tools/add-custom-controls-to-the-data-sources-window.md)합니다.
+    - Windows Forms 디자이너를 연 경우 선택할 **PictureBox**합니다.
 
-## <a name="see-also"></a>참고자료
+    - 또는 데이터 바인딩을 지원 하 고 이미지를 표시할 수 있는 다른 컨트롤을 선택할 수 있습니다. 사용 하려는 컨트롤의 사용 가능한 컨트롤 목록에 없는 경우 목록에 추가 하 고 선택 수 있습니다. 자세한 내용은 [데이터 소스 창에 사용자 지정 컨트롤을 추가할](../data-tools/add-custom-controls-to-the-data-sources-window.md)합니다.
+
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio에서 데이터에 WPF 컨트롤 바인딩](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)

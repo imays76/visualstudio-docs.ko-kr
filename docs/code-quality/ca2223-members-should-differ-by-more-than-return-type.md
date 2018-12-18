@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5aaa7671f1aa110edd42897111e746e62eab8048
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 93822dd3db325e3463c4a8f175c8ca289cac9e5d
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922472"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549828"
 ---
 # <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223: 멤버는 반환 형식 이외의 것도 달라야 합니다.
+
 |||
 |-|-|
 |TypeName|MembersShouldDifferByMoreThanReturnType|
@@ -32,22 +33,21 @@ ms.locfileid: "31922472"
 |변경 수준|주요 변경|
 
 ## <a name="cause"></a>원인
- 두 public 또는 protected 멤버에 반환 형식을 제외 하면 동일한 서명이 있습니다.
+ 두 명의 public 또는 protected 멤버에 반환 형식을 제외 하 고 동일 시그니처가 있습니다.
 
 ## <a name="rule-description"></a>규칙 설명
- 공용 언어 런타임 면에서는 동일한 멤버를 구분할 수는 반환 형식 사용 하 고 허용 하지만이 기능은 공용 언어 사양에 없는 아닙니다.NET 프로그래밍 언어의 공통 기능이 아닙니다. 멤버는 반환 형식만 다를 때 개발자와 개발 도구가 수 제대로 구분 하지 해당 합니다.
+ 있지만 동일한 멤버를 구별 하는 반환 형식 사용을 허용 하는 공용 언어 런타임 경우이 기능은 되지 공용 언어 사양에 않으며.NET 프로그래밍 언어의 공통 기능이 아닙니다. 멤버는 반환 형식만 다를 때 개발자와 개발 도구가 될 수 있습니다 하지 올바르게 구별할 합니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이 규칙 위반 문제를 해결 하려면는 고유 이름, 매개 변수 형식이 기반 하거나 멤버를 노출 하지 않는 멤버의 디자인을 변경 합니다.
+ 이 규칙 위반 문제를 해결 하는 고유 이름 및 매개 변수 형식에만 기반 하거나 멤버를 노출 하지 않습니다 있도록 멤버의 디자인을 변경 합니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
  이 규칙에서는 경고를 표시해야 합니다.
 
 ## <a name="example"></a>예제
- 다음 예제를 Microsoft intermediate language (MSIL)에서이 규칙을 위반 하는 형식을 보여줍니다. 공지는 C# 또는 Visual Basic을 사용 하 여이 규칙을 위반 될 수 없습니다.
+ 다음 예제에서는 MSIL (Microsoft intermediate language),이 규칙을 위반 하는 형식을 표시 합니다. C# 또는 Visual Basic을 사용 하 여이 규칙을 위반 될 수 없습니다. 알 수 있습니다.
 
 ```
-
 .namespace UsageLibrary
 {
   .class public auto ansi beforefieldinit ReturnTypeTest
@@ -94,5 +94,4 @@ ms.locfileid: "31922472"
   } // end of class ReturnTypeTest
 
 } // end of namespace UsageLibrary
-
 ```

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d70460671bcea19f0a4e56de6ebdd3c7affdb670
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 4e2fba3d5a80de2be973d7a1efad7290731e5a7c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179192"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828881"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>연습: 처음부터 새로 MSBuild 프로젝트 파일 만들기
 .NET Framework를 대상으로 하는 프로그래밍 언어는 MSBuild 프로젝트 파일을 사용하여 응용 프로그램 빌드 프로세스를 설명하고 제어합니다. Visual Studio를 사용하여 MSBuild 프로젝트 파일을 만들 때 적절한 XML이 파일에 자동으로 추가됩니다. 그러나 XML이 구성되는 방식과 이러한 방식을 변경하여 빌드를 제어할 수 있는 방법을 이해하는 것이 좋습니다.  
@@ -172,7 +172,7 @@ Build 대상의 작업은 순차적으로 실행됩니다. 이 경우 Visual C# 
   
 #### <a name="to-build-the-application"></a>응용 프로그램을 빌드하려면  
   
-1.  명령 프롬프트에 **msbuild helloworld.csproj /t:Build**를 입력합니다.  
+1.  명령 프롬프트에 **msbuild helloworld.csproj -t:Build**를 입력합니다.  
   
      그러면 Helloworld 응용 프로그램을 만들기 위해 Visual C# 컴파일러를 호출하여 Helloworld 프로젝트 파일의 Build 대상이 빌드됩니다.  
   
@@ -183,7 +183,7 @@ Build 대상의 작업은 순차적으로 실행됩니다. 이 경우 Visual C# 
 > [!NOTE]
 >  자세한 정도를 높여 빌드에 대한 자세한 정보를 볼 수 있습니다. 세부 정보 표시 수준을 “자세히”로 설정하려면 명령 프롬프트에서 다음 명령 중 하나를 입력합니다.  
 >   
->  **msbuild helloworld.csproj /t:Build /verbosity:detailed**  
+>  **msbuild helloworld.csproj -t:Build -verbosity:detailed**  
   
 ## <a name="add-build-properties"></a>빌드 속성 추가  
  프로젝트 파일에 빌드 속성을 추가하여 빌드에 대한 제어를 강화할 수 있습니다. 이제 다음 속성을 추가합니다.  
@@ -259,7 +259,7 @@ Build 대상의 작업은 순차적으로 실행됩니다. 이 경우 Visual C# 
   
 #### <a name="to-test-the-build-properties"></a>빌드 속성을 테스트하려면  
   
-1.  명령 프롬프트에 **msbuild helloworld.csproj /t:Build**를 입력합니다.  
+1.  명령 프롬프트에 **msbuild helloworld.csproj -t:Build**를 입력합니다.  
   
      그러면 *\Bin\\* 폴더가 만들어진 다음, Visual C# 컴파일러가 호출되어 *MSBuildSample* 응용 프로그램이 만들어져 *\Bin\\* 폴더에 배치됩니다.  
   
@@ -334,9 +334,9 @@ Build 대상의 작업은 순차적으로 실행됩니다. 이 경우 Visual C# 
   
 #### <a name="to-test-the-build-targets"></a>빌드 대상을 테스트하려면  
   
-1.  명령 프롬프트에 **msbuild helloworld.csproj /p:AssemblyName=Greetings**를 입력합니다.  
+1.  명령 프롬프트에 **msbuild helloworld.csproj -p:AssemblyName=Greetings**를 입력합니다.  
   
-     **/t** 스위치를 사용하여 대상을 명시적으로 설정하지 않았으므로 MSBuild가 기본 Build 대상을 실행합니다. **/p** 스위치는 `AssemblyName` 속성을 재정의하고 이 속성에 새 값 `Greetings`를 제공합니다. 따라서 새 응용 프로그램 *Greetings.exe*가 *\Bin\\* 폴더에 만들어집니다.  
+     **-t** 스위치를 사용하여 대상을 명시적으로 설정하지 않았으므로 MSBuild가 기본 Build 대상을 실행합니다. **-p** 스위치는 `AssemblyName` 속성을 재정의하고 이 속성에 새 값 `Greetings`를 제공합니다. 따라서 새 응용 프로그램 *Greetings.exe*가 *\Bin\\* 폴더에 만들어집니다.  
   
 2.  *\Bin\\* 폴더에 *MSBuildSample* 응용 프로그램과 새 *Greetings* 응용 프로그램이 둘 다 포함되어 있는지 확인하려면 **dir Bin**을 입력합니다.  
   
@@ -344,11 +344,11 @@ Build 대상의 작업은 순차적으로 실행됩니다. 이 경우 Visual C# 
   
      **Hello, world!** 메시지가 표시됩니다.  
   
-4.  **msbuild helloworld.csproj /t:clean**을 입력하여 MSBuildSample 응용 프로그램을 삭제합니다.  
+4.  **msbuild helloworld.csproj -t:clean**을 입력하여 MSBuildSample 응용 프로그램을 삭제합니다.  
   
      그러면 Clean 작업이 실행되어 기본 `AssemblyName` 속성값 `MSBuildSample`이 포함되어 있는 응용 프로그램이 제거됩니다.  
   
-5.  **msbuild helloworld.csproj /t:clean /p:AssemblyName=Greetings**를 입력하여 Greetings 응용 프로그램을 삭제합니다.  
+5.  **msbuild helloworld.csproj -t:clean -p:AssemblyName=Greetings**를 입력하여 Greetings 응용 프로그램을 삭제합니다.  
   
      그러면 Clean 작업이 실행되어 지정된 **AssemblyName** 속성값 `Greetings`가 포함되어 있는 응용 프로그램이 제거됩니다.  
   
@@ -382,11 +382,11 @@ Build 대상의 작업은 순차적으로 실행됩니다. 이 경우 Visual C# 
     </Target>  
     ```  
   
-2.  명령 프롬프트에서 **msbuild /v:d**를 입력하여 Build 대상을 테스트합니다.  
+2.  명령 프롬프트에서 **msbuild -v:d**를 입력하여 Build 대상을 테스트합니다.  
   
      *helloworld.csproj*는 기본 프로젝트 파일이고, 해당 Build는 기본 대상이라는 사실을 기억하세요.  
   
-     **/v:d** 스위치는 빌드 프로세스에 대한 자세한 설명을 지정합니다.  
+     **-v:d** 스위치는 빌드 프로세스에 대한 자세한 설명을 지정합니다.  
   
      다음과 같은 줄이 표시됩니다.  
   

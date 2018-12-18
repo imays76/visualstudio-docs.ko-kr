@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e95a8a76e7315f8963ea415f88bd9615f3b123a4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8672dcdf92ce7341c7ae540c4836a1775671da7c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112811"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832396"
 ---
 # <a name="idebugexpressioncontext2parsetext"></a>IDebugExpressionContext2::ParseText
-이후 평가 대 한 텍스트 형식의 식을 구문 분석합니다.  
+이후 평가 대 한 텍스트 형태로 식을 구문 분석합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -57,27 +57,27 @@ int ParseText(
  [in] 플래그의 조합 된 [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) 구문 분석을 제어 하는 열거형입니다.  
   
  `nRadix`  
- [in] 모든 숫자 정보를 구문 분석 하는 데 사용할 기 수 `pszCode`합니다.  
+ [in] 숫자 정보를 구문 분석 하는 데 사용할 기 수 `pszCode`입니다.  
   
  `ppExpr`  
- [out] 반환 된 [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) 바인딩 및 평가 되지 않은 구문 분석 된 식을 나타내는 개체입니다.  
+ [out] 반환 된 [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) 바인딩 및 평가 되지 않은 구문 분석된 된 식을 나타내는 개체입니다.  
   
  `pbstrError`  
  [out] 식에 오류가 포함 된 오류 메시지를 반환 합니다.  
   
  `pichError`  
- [out] 오류 메시지의 문자 인덱스를 반환 `pszCode` 식에 오류가 있습니다.  
+ [out] 오류 메시지의 문자 인덱스를 반환 `pszCode` 식에 오류가 포함 되어 있습니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 이 메서드가 호출 되 면 디버그 엔진 (DE) 식을 구문 분석 하 고 올바른지 확인 해야 합니다. `pbstrError` 및 `pichError` 식이 유효 하지 않을 경우 매개 변수를 채울 수 있습니다.  
+ 이 메서드를 호출 하는 경우 디버그 엔진 (DE) 식을 구문 분석 하 고 올바른지 유효성을 검사 해야 합니다. 합니다 `pbstrError` 고 `pichError` 식이 유효 하지 않은 경우 매개 변수를 채울 수 있습니다.  
   
- Note 구문 분석만 식이 계산 됩니다. 한 이후의 호출에서 [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) 또는 [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) 메서드 구문 분석 된 식을 계산 합니다.  
+ Note 구문 분석만 식이 계산 됩니다. 이후의 호출을 [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) 하거나 [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) 메서드 구문 분석 된 식을 계산 합니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제에서는 간단한에이 메서드를 구현 하는 방법을 보여 줍니다 `CEnvBlock` 공개 하는 개체는 [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) 인터페이스입니다. 환경 변수 이름으로 구문 분석할 수 식으로 간주 하 고 해당 변수의 값을 검색 하는이 예제.  
+ 다음 예제에서는 간단한에 대 한이 메서드를 구현 하는 방법을 보여 줍니다 `CEnvBlock` 노출 하는 개체를 [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) 인터페이스입니다. 이 예제에서는 환경 변수의 이름으로 구문 분석할 식으로 간주 하 고 해당 변수에서 값을 검색 합니다.  
   
 ```cpp  
 HRESULT CEnvBlock::ParseText(  

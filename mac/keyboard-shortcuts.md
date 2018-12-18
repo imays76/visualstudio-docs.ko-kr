@@ -1,16 +1,16 @@
 ---
 title: 소스 편집기 일반 바로 가기 키
 description: 이 문서에서는 Mac용 Visual Studio의 몇 가지 일반적인 바로 가기 키에 대해 설명합니다.
-author: asb3993
-ms.author: amburns
-ms.date: 05/06/2018
+author: conceptdev
+ms.author: crdun
+ms.date: 11/06/2018
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: 39cbe0eb3ba8d99c81119256773cc76f4699b7bd
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 2ac2a98223e86a564ff6ce733e11767a918bc55b
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34453818"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948792"
 ---
 # <a name="common-keyboard-shortcuts-in-visual-studio-for-mac"></a>Mac용 Visual Studio의 일반적인 바로 가기 키
 
@@ -18,17 +18,17 @@ ms.locfileid: "34453818"
 
 이 명령은 컨텍스트에 따라 코드를 생성합니다.
 
- `⌘ + 1`
+`⌘ + 1`
 
 ![선택한 기호와 관련된 코드를 생성하는 옵션이 포함된 패널 표시](media/keyboard-shortcuts-image8.png)
 
 ## <a name="search-files-symbols-and-commands"></a>파일, 기호 및 명령 검색
 
-`control + .` 
+`control + .`
 
-## <a name="autocomplete"></a>자동 완성 
+## <a name="autocomplete"></a>자동 완성
 
-`control + /` 
+`control + /`
 
 ## <a name="quick-fixes-and-actions"></a>빠른 수정 및 작업
 
@@ -50,7 +50,7 @@ ms.locfileid: "34453818"
 
 ## <a name="move-lines-around-in-editor"></a>편집기에서 줄 이동
 
-`alt + up/down` 
+`alt + up/down`
 
 현재 줄 또는 현재 선택한 줄을 위로 이동하려면 **alt+위쪽 화살표** 단축키를, 아래로 이동하려면 **alt+아래쪽 화살표** 단축키를 사용합니다. 언어 추가 기능에서 지원하는 경우, 줄이 범위에 들어오거나 범위에서 벗어날 경우 컨텍스트에 맞춰 다시 들여쓰기됩니다.
 
@@ -71,3 +71,7 @@ ms.locfileid: "34453818"
 이 명령은 단어, 하위 식, 문 및 줄 멤버 선택 영역을 논리적 방식으로 확장합니다.
 
 선택하려면 `alt + shift + up`을, 선택 취소하려면 `alt + shift + down`을 사용합니다.
+
+## <a name="see-also"></a>참고 항목
+
+- [Visual Studio의 바로 가기 키(Windows에서)](/visualstudio/ide/tips-and-tricks-for-visual-studio)

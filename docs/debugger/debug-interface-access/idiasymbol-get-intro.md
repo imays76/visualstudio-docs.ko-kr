@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c9f43aeb33ce7727133a7ed2a4e4eba0cac53cda
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 2b025ebf2a3d800743c625fab97dc271f8320e75
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31467578"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813377"
 ---
 # <a name="idiasymbolgetintro"></a>IDiaSymbol::get_intro
-함수는 소개 가상 함수 인지 여부를 지정 하는 플래그를 검색 합니다.  
+함수를 소개 하는 가상 함수 인지 여부를 지정 하는 플래그를 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -34,13 +34,13 @@ HRESULT get_intro (
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out] 반환 `TRUE` 그렇지 않으면 반환 함수가 소개 가상; 경우 `FALSE`합니다.  
+ [out] 반환 `TRUE` 함수는 가상이 소개 하는 경우이 고, 그렇지 반환 `FALSE`합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
+ 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
   
 > [!NOTE]
->  반환 값이 `S_FALSE` 의미는 속성은 해당 기호를 사용할 수 없습니다.  
+>  반환 값이 `S_FALSE` 속성 기호를 사용할 수 없는 것을 의미 합니다.  
   
 ## <a name="example"></a>예제  
   
@@ -53,7 +53,7 @@ class B : public A {
 }  
 ```  
   
- 둘 다 `A::f1` 및 `B::f1` 가상 함수가 있지만 `A::f1` 소개 가상입니다.  
+ 둘 다 `A::f1` 하 고 `B::f1` 가상 함수가 있지만 `A::f1` 소개 가상이 아닙니다.  
   
 ## <a name="requirements"></a>요구 사항  
   

@@ -21,34 +21,34 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 614a2e04cd1a7cba054ca209784619021b128e5e
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 2adb6dd8788027d89a743518adee4425e424ce60
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119493"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894172"
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>연습: 사용자 지정 사이트 워크플로 작업 만들기
   이 연습에 사용 하 여 사이트 수준 워크플로에 사용자 지정 활동을 만드는 방법을 보여 줍니다 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]합니다. (사이트 수준 워크플로 사이트에서 목록 뿐 아니라 전체 사이트에 적용 합니다.) 사용자 지정 활동 알림 목록을 백업을 만들고 알림 목록의 내용을 그 안에 복사 합니다.  
   
  이 연습에서는 다음 작업을 수행합니다.  
   
--   사이트 수준 워크플로 만드는 중입니다.  
+- 사이트 수준 워크플로 만드는 중입니다.  
   
--   사용자 지정 워크플로 활동을 만드는 중입니다.  
+- 사용자 지정 워크플로 활동을 만드는 중입니다.  
   
--   만들고 SharePoint 목록을 삭제 합니다.  
+- 만들고 SharePoint 목록을 삭제 합니다.  
   
--   다른 하나의 목록에서 항목을 복사 합니다.  
+- 다른 하나의 목록에서 항목을 복사 합니다.  
   
--   빠른 실행 모음에서 목록을 표시 합니다.  
+- 빠른 실행 모음에서 목록을 표시 합니다.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>전제 조건  
  이 연습을 완료하려면 다음 구성 요소가 필요합니다.  
   
--   지원 되는 버전 [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] 및 SharePoint입니다. 자세한 내용은 [SharePoint 솔루션 개발을 위한 요구 사항](../sharepoint/requirements-for-developing-sharepoint-solutions.md)합니다.  
+-   지원 되는 버전 [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] 및 SharePoint입니다.
   
 -   Visual Studio.  
   

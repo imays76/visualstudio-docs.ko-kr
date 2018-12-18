@@ -1,27 +1,163 @@
 ---
 title: 변경 로그(Visual Studio Tools for Unity, Windows) | Microsoft Docs
 ms.custom: ''
-ms.date: 05/07/2018
+ms.date: 11/28/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
-author: TerryGLee
-ms.author: tglee
+author: therealjohn
+ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 65d78b5b37396572e73928a51f2f215b72dfa311
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 4db1d1d5340465b2e977a651eea2e6ad592c22e0
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381057"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068382"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>변경 로그(Visual Studio Tools for Unity, Windows)
 Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
+## <a name="3903"></a>3.9.0.3
+ 릴리스 날짜: 2018년 11월 28일
+
+### <a name="bug-fixes"></a>버그 수정
+
+-   **통합:**
+
+    -   첫 번째 프로젝트에 있는 스크립트를 추가하거나 제거할 때 프로젝트 재로딩 및 intellisense 문제가 해결되었습니다.
+
+## <a name="3902"></a>3.9.0.2
+ 릴리스 날짜: 2018년 11월 19일
+
+### <a name="bug-fixes"></a>버그 수정
+
+-   **디버거:**
+
+    -   특히 ‘Unity에 연결’을 누르거나 게임을 다시 시작할 때, Unity의 디버거 엔진과 통신하는 데 사용되는 라이브러리에서 교착 상태가 발생하여 Visual Studio 또는 Unity를 동결시키는 문제가 해결되었습니다.
+
+## <a name="3901"></a>3.9.0.1
+ 릴리스 날짜: 2018년 11월 15일
+
+### <a name="bug-fixes"></a>버그 수정
+
+-   **통합:**
+
+    -   다른 기본 편집기가 선택되었을 때 고정 Unity 플러그 인 활성화.
+
+## <a name="3900"></a>3.9.0.0
+ 릴리스 날짜: 2018년 11월 13일
+
+### <a name="bug-fixes"></a>버그 수정
+
+-   **Project Generation:**
+
+    -   Unity에서 수정된 Unity 성능 버그에 대한 해결 방법이 롤백되었습니다.
+
+## <a name="3807"></a>3.8.0.7
+ 릴리스 날짜: 2018년 9월 20일
+
+### <a name="bug-fixes"></a>버그 수정
+
+-   **디버거:**
+
+    -   (3.9.0.2에서 백포팅) 특히 ‘Unity에 연결’을 누르거나 게임을 다시 시작할 때, Unity의 디버거 엔진과 통신하는 데 사용되는 라이브러리에서 교착 상태가 발생하여 Visual Studio 또는 Unity를 동결시키는 문제가 해결되었습니다.
+
+## <a name="3806"></a>3.8.0.6
+ 릴리스 날짜: 2018년 8월 27일
+
+### <a name="bug-fixes"></a>버그 수정
+
+-   **통합:**
+
+    -   프로젝트 및 솔루션의 다시 로드 기능이 수정되었습니다.
+
+## <a name="3805"></a>3.8.0.5
+ 릴리스 날짜: 2018년 8월 20일
+
+### <a name="bug-fixes"></a>버그 수정
+
+-   **통합:**
+
+    -   구독 처리를 모니터링하는 프로젝트가 수정되었습니다.
+
+## <a name="3804"></a>3.8.0.4
+ 릴리스 날짜: 2018년 8월 14일
+
+### <a name="new-features"></a>새 기능
+
+-   **평가:**
+
+    -   포인터 값에 대한 지원이 추가되었습니다.
+
+    -   제네릭 메서드에 대한 지원이 추가되었습니다.
+
+### <a name="bug-fixes"></a>버그 수정
+
+-   **통합:**
+
+    -   여러 프로젝트를 변경하여 다시 스마트 로드합니다.
+
+## <a name="3803"></a>3.8.0.3
+ 릴리스 날짜: 2018년 7월 24일
+
+### <a name="bug-fixes"></a>버그 수정
+
+-   **Project Generation:**
+
+    -   (3.9.0.0에서 백포팅) Unity에서 수정된 Unity 성능 버그에 대한 해결 방법이 롤백되었습니다.
+
+## <a name="3802"></a>3.8.0.2
+ 릴리스 날짜: 2018년 7월 7일
+
+### <a name="bug-fixes"></a>버그 수정
+
+-   **Project Generation:**
+
+    -   Unity 성능 버그에 대한 일시적인 해결 방법: 프로젝트를 생성할 때 MonoIslands를 캐시합니다.
+
+## <a name="3801"></a>3.8.0.1
+ 릴리스 날짜: 2018년 6월 26일
+
+### <a name="new-features"></a>새 기능
+
+-   **디버깅:**
+
+    -   UserLog 및 UserBreak 명령에 대한 지원이 추가되었습니다.
+
+    -   지연 형식 로드가 추가되었습니다(네트워크 부하 및 디버거 응답 대기 시간 최적화).
+
+### <a name="bug-fixes"></a>버그 수정
+
+-   **평가:**
+
+    -   이진 연산자 식 평가 및 메서드 검색이 개선되었습니다.
+
+## <a name="3800"></a>3.8.0.0
+ 릴리스 날짜: 2018년 5월 30일
+
+### <a name="new-features"></a>새 기능
+
+-   **디버깅:**
+
+    -   비동기 구문에서 변수를 표시하기 위한 지원이 추가되었습니다.
+
+    -   컴파일러 구문에서 경고를 방지하기 위해 중단점을 설정하는 경우 중첩된 형식을 처리하기 위한 지원이 추가되었습니다.
+
+-   **통합:**
+
+    -   셰이더에 대한 TextMate 문법에 대한 지원이 추가되었습니다(C++ 워크로드는 셰이더 코드 색 지정에 더 이상 필요하지 않음).
+
+### <a name="bug-fixes"></a>버그 수정
+
+-   **Project Generation:**
+
+    -   새 Unity 런타임에서 사용하는 경우 더 이상 이식 가능한 pdb를 mdb로 변환하지 않습니다.
+
 ## <a name="3701"></a>3.7.0.1
- 릴리스됨 2018-05-07
+ 릴리스 날짜: 2018년 5월 7일
 
 ### <a name="bug-fixes"></a>버그 수정
 
@@ -30,22 +166,22 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
     -   실험용 빌드를 사용할 경우 종속성 문제가 해결되었습니다.
 
 ## <a name="3700"></a>3.7.0.0
- 릴리스됨 2018-05-07
+ 릴리스 날짜: 2018년 5월 7일
 
 ### <a name="new-features"></a>새 기능
 
 -   **디버깅:**
 
     -   오케스트레이션된 디버깅(동일한 Visual Studio 세션으로 여러 플레이어/편집기 디버깅)에 대한 지원이 추가되었습니다.
-    
+
     -   Android USB 플레이어 디버깅에 대한 지원이 추가되었습니다.
-    
+
     -   UWP/IL2CPP 플레이어 디버깅에 대한 지원이 추가되었습니다.
 
 -   **평가:**
 
     -   16진수 지정자에 대한 지원이 추가되었습니다.
-    
+
     -   조사식 창 평가 환경이 개선되었습니다.
 
 ### <a name="bug-fixes"></a>버그 수정
@@ -59,7 +195,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
     -   패키지 관리자 컴파일 단위를 생성에서 제외합니다.
 
 ## <a name="3605"></a>3.6.0.5
- 릴리스됨 2018-03-13
+ 릴리스 날짜: 2018년 3월 13일
 
 ### <a name="new-features"></a>새 기능
 
@@ -78,7 +214,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
     -   다음 명령문 설정을 수정했습니다.
 
 ## <a name="3604"></a>3.6.0.4
- 릴리스됨 2018-03-05
+ 릴리스 날짜: 2018년 3월 5일
 
 ### <a name="bug-fixes"></a>버그 수정
 
@@ -91,7 +227,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
     -   2018.1 및 플러그 인 활성화의 타이밍 문제가 수정되었습니다.
 
 ## <a name="3603"></a>3.6.0.3
- 릴리스됨 2018-02-23
+ 릴리스 날짜: 2018년 2월 23일
 
 ### <a name="new-features"></a>새 기능
 
@@ -110,7 +246,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
     -   사용자 코드 외부에서 throw된 예외로 인한 중단이 수정되었습니다.
 
 ## <a name="3602"></a>3.6.0.2
- 릴리스됨 2018-02-07
+ 릴리스 날짜: 2018년 2월 7일
 
 ### <a name="new-features"></a>새 기능
 
@@ -125,7 +261,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
     -   외부 변경 시에만 프로젝트를 다시 로드합니다(제한 있음).
 
 ## <a name="3601"></a>3.6.0.1
- 릴리스됨 2018-01-24
+ 릴리스 날짜: 2018년 1월 24일
 
 ### <a name="bug-fixes"></a>버그 수정
 
@@ -136,7 +272,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
     -   배열 크기를 변경하는 동안 검사기에 영향을 주는 EditorPrefs.GetBool에 대한 간접 호출이 수정되었습니다.
 
 ## <a name="3600"></a>3.6.0.0
- 릴리스됨 2018-01-10
+ 릴리스 날짜: 2018년 1월 10일
 
 ### <a name="new-features"></a>새 기능
 
@@ -171,7 +307,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
     -   메서드를 삽입하기 전에 roslyn 컨텍스트를 새로 고칩니다.
 
 ## <a name="3503"></a>3.5.0.3
- 릴리스됨 2018-01-09
+ 릴리스 날짜: 2018년 1월 9일
 
 ### <a name="bug-fixes"></a>버그 수정
 
@@ -180,7 +316,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
     -   자동 pdb에서 mdb로의 디버그 기호 변환을 수정했습니다.
 
 ## <a name="3502"></a>3.5.0.2
- 릴리스됨 2017-12-04
+ 릴리스 날짜: 2017년 12월 4일
 
 ### <a name="new-features"></a>새 기능
 
@@ -213,7 +349,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
     -   이제 기본값이 'true'이므로 AllowAttachedDebuggingOfEditor Unity 플래그를 강제하지 않습니다.
 
 ## <a name="3402"></a>3.4.0.2
- 릴리스됨 2017-09-19
+ 릴리스 날짜: 2017년 9월 19일
 
 ### <a name="new-features"></a>새 기능
 
@@ -244,7 +380,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
     -   4.6 API 수준의 Microsoft.CSharp에 대한 참조가 수정되었습니다.
 
 ## <a name="3302"></a>3.3.0.2
- 릴리스됨 2017-08-15
+ 릴리스 날짜: 2017년 8월 15일
 
 ### <a name="bug-fixes"></a>버그 수정
 
@@ -253,7 +389,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
     -   Unity 5.5 및 이전 버전에서 Visual Studio 솔루션 생성을 수정합니다.
 
 ## <a name="3300"></a>3.3.0.0
- 릴리스됨 2017-08-14
+ 릴리스 날짜: 2017년 8월 14일
 
 ### <a name="new-features"></a>새 기능
 
@@ -282,7 +418,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
     -   API 수준을 사용한 정의를 수정했습니다.
 
 ## <a name="3200"></a>3.2.0.0
- 릴리스됨 2017-05-10
+ 릴리스 날짜: 2017년 5월 10일
 
 ### <a name="new-features"></a>새 기능
 
@@ -299,7 +435,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
     -   Unify 메시지로 깜박임을 수정했습니다.
 
 ## <a name="3100"></a>3.1.0.0
- 릴리스됨 2017-04-07
+ 릴리스 날짜: 2017년 4월 7일
 
 ### <a name="new-features"></a>새 기능
 
@@ -328,12 +464,12 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
     -   어셈블리 버전 후 처리가 제거되었습니다.
 
 ## <a name="3001"></a>3.0.0.1
- 릴리스됨 2017-03-07
+ 릴리스 날짜: 2017년 3월 7일
 
 ### <a name="this-version-includes-all-new-features-and-bug-fixes-introduced-with-28x-series"></a>이 버전에는 2.8.x 시리즈에서 도입된 새로운 모든 기능 및 버그 수정이 포함되었습니다.
 
 ## <a name="2820---30-preview-3"></a>2.8.2.0 - 3.0 Preview 3
- 릴리스됨 2017-01-25
+ 릴리스 날짜: 2017년 1월 25일
 
 ### <a name="bug-fixes"></a>버그 수정
 
@@ -342,7 +478,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
     -   먼저 이진 DLL로, 그다음에는 프로젝트 참조로 두 번 참조되는 플러그 인 프로젝트의 경우 회귀가 수정되었습니다.
 
 ## <a name="2810---30-preview-2"></a>2.8.1.0 - 3.0 Preview 2
- 릴리스됨 2017-01-23
+ 릴리스 날짜: 2017년 1월 23일
 
 ### <a name="bug-fixes"></a>버그 수정
 
@@ -369,7 +505,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
     -   원격 Unity 설명서를 대상으로 하는 https로 전환되었습니다.
 
 ## <a name="2800---30-preview"></a>2.8.0.0 - 3.0 Preview
- 릴리스됨 2016-11-17
+ 릴리스 날짜: 2016년 11월 17일
 
 ### <a name="new-features"></a>새 기능
 
@@ -436,7 +572,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
     -   웹에서 인코드된 파일 이름으로 스크립트를 컴파일할 때 컴파일을 막는 버그가 수정되었습니다.
 
 ## <a name="2300"></a>2.3.0.0
- 릴리스됨 2016-07-14
+ 릴리스 날짜: 2016년 7월 14일
 
 ### <a name="new-features"></a>새 기능
 
@@ -471,7 +607,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
     -   여러 식 계산 문제가 수정되었습니다.
 
 ## <a name="2200"></a>2.2.0.0
- 릴리스됨 2016-02-04
+ 릴리스 날짜: 2016년 2월 4일
 
 ### <a name="new-features"></a>새 기능
 
@@ -518,7 +654,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
     -   동일한 버전의 VSTU가 여러 다른 버전의 Visual Studio에 대해 설치될 때 나타나는 VSTU 제거 문제가 해결되었습니다. 예를 들어, VSTU **2015** 2.1.0.0 및 VSTU **2013** 2.1.0.0이 모두 설치된 경우가 여기에 해당합니다.
 
 ## <a name="2100"></a>2.1.0.0
- 릴리스됨 2015-09-08
+ 릴리스 날짜: 2015년 9월 8일
 
 ### <a name="new-features"></a>새 기능
 
@@ -534,12 +670,12 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 -   Windows 스토어 앱용 UnityEngine 및 UnityEditor 어셈블리에 대한 참조를 수정했습니다.
 
--   디버거를 단계별로 실행할 때 발생하는 오류(단계별로 실행할 수 없음, 일반 예외)를 수정했습니다.
+-   디버거에서 단계별로 실행할 때 오류를 해결했습니다. 단계별로 실행할 수 없는 일반 예외.
 
 -   Visual Studio 2015의 적중 횟수 중단점을 수정했습니다.
 
 ## <a name="2000"></a>2.0.0.0
- 릴리스됨 2015-07-20
+ 릴리스 날짜: 2015년 7월 20일
 
 ### <a name="bug-fixes"></a>버그 수정
 
@@ -574,7 +710,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
     -   빈 배열 검사를 수정했습니다.
 
 ## <a name="1990---20-preview-2"></a>1.9.9.0 - 2.0 Preview 2
- 릴리스됨 2015-04-02
+ 릴리스 날짜: 2015년 4월 2일
 
 ### <a name="new-features"></a>새 기능
 
@@ -663,7 +799,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 -   **UI:** 상황에 맞는 메뉴 및 아이콘에 대한 Visual Studio 테마를 지원합니다.
 
 ## <a name="1980---20-preview"></a>1.9.8.0 - 2.0 Preview
- 릴리스됨 2014-11-12
+ 릴리스 날짜: 2014년 11월 12일
 
 ### <a name="new-features"></a>새 기능
 
@@ -702,7 +838,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 -   필요 없는 경우 로그 콜백을 등록하지 않습니다.
 
 ## <a name="1920"></a>1.9.2.0
- 릴리스됨 2014-10-09
+ 릴리스 날짜: 2014년 10월 9일
 
 ### <a name="new-features"></a>새 기능
 
@@ -725,7 +861,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 -   확장 필터가 비어 있을 때 프로젝트 파일에 모든 자산이 포함되는 버그를 수정합니다.
 
 ## <a name="1910"></a>1.9.1.0
- 릴리스됨 2014-09-22
+ 릴리스 날짜: 2014년 9월 22일
 
 ### <a name="new-features"></a>새 기능
 
@@ -741,9 +877,9 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 ### <a name="bug-fixes"></a>버그 수정
 
--   Visual Studio 테마 처리 문제를 수정합니다. 이전에는 검은색 테마의 대화 상자가 비어 있는 것처럼 표시될 수 있었습니다(연결 문제 [#932637](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/932637/) 및 [#936439](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/936439/)).
+-   Visual Studio 테마 처리 문제를 수정합니다. 이전에는 검은색 테마의 대화 상자가 비어 있는 것처럼 표시될 수 있었습니다.
 
--   Unity를 다시 컴파일하는 동안 디버거를 연결할 때 Unity 중지를 수정합니다(연결 문제 [#947119](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/947119/) 및 [#969211](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/969211/)).
+-   Unity를 다시 컴파일하는 동안 디버거를 연결하는 경우 Unity 중지를 수정합니다.
 
 -   다른 시스템에서 컴파일된 원격 편집기 또는 플레이어를 디버그하는 경우의 중단점 문제를 수정합니다.
 
@@ -753,7 +889,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 -   범위 밖에 표시되는 라이브 변수를 방지하기 위해 디버거에서의 변수 범위 처리를 수정합니다.
 
--   디버거의 식 계산에서 정적 멤버 조회 문제를 수정합니다(연결 문제 [#953379](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/953379/)).
+-   디버거의 식 계산에서 정적 멤버 조회 문제를 수정합니다.
 
 -   정적 필드 및 속성을 표시하기 위해 디버거의 식 계산에서 유형 표시를 수정합니다.
 
@@ -770,7 +906,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 -   Unity의 64비트 버전에서 VSTU로 개방 스크립트 문제를 수정합니다.
 
 ## <a name="1900"></a>1.9.0.0
- 릴리스됨 2014-07-29
+ 릴리스 날짜: 2014년 7월 29일
 
 ### <a name="new-features"></a>새 기능
 
@@ -818,7 +954,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 >  Unity 에코시스템에서 널리 사용되는 C# 언어 - 새로운 샘플 자산은 C#으로 되어 있으며 Unity 설명서는 C#이 기본값으로 설정됩니다. C# 환경에 초점을 맞추기 위해 UnityScript 및 Boo에 대한 기본 지원을 제거했습니다. 결과적으로 VSTU 솔루션은 이제 C# 전용이며 훨씬 빠르게 로드됩니다.
 
 ## <a name="1820"></a>1.8.2.0
- 릴리스됨 2014-01-07
+ 릴리스 날짜: 2014년 1월 7일
 
 ### <a name="new-features"></a>새 기능
 
@@ -845,7 +981,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 -   동기화되지 않은 경우 버전 특정 어셈블리를 생성할 때 Unity의 충돌을 방지합니다.
 
 ## <a name="1810"></a>1.8.1.0
- 릴리스됨 2013-11-21
+ 릴리스 날짜: 2013년 11월 21일
 
 ### <a name="new-features"></a>새 기능
 
@@ -878,7 +1014,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 -   Unity에서 스크립트를 열 때 Unity 4.2 이상의 ALT+TAB 순서를 혼동하지 않도록 수정했습니다.
 
 ## <a name="1800"></a>1.8.0.0
- 릴리스됨 2013-09-24
+ 릴리스 날짜: 2013년 9월 24일
 
 ### <a name="new-features"></a>새 기능
 
@@ -919,7 +1055,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 -   로컬 뷰에서 변동되는 부울 값 문제를 수정했습니다.
 
 ## <a name="1220"></a>1.2.2.0
- 릴리스됨 2013-07-09
+ 릴리스 날짜: 2013년 7월 9일
 
 ### <a name="bug-fixes"></a>버그 수정
 
@@ -942,7 +1078,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 -   Unity 4.2 베타 어셈블리의 처리 문제를 수정했습니다.
 
 ## <a name="1210"></a>1.2.1.0
- 릴리스됨 2013-04-09
+ 릴리스 날짜: 2013년 4월 9일
 
 ### <a name="bug-fixes"></a>버그 수정
 
@@ -955,7 +1091,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 -   일부 외부 DLL에서 중단점의 바인딩 문제를 수정했습니다.
 
 ## <a name="1200"></a>1.2.0.0
- 릴리스됨 2013-03-25
+ 릴리스 날짜: 2013년 3월 25일
 
 ### <a name="new-features"></a>새 기능
 
@@ -1005,27 +1141,27 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 -   버그 UVS-48 수정: 큰따옴표를 입력하면 오류가 발생하고 모든 기능(코드 완성, 구문 강조 등)이 중단되는 문제.
 
--   버그 UVS-46 수정: Visual Studio의 오류 목록을 클릭할 때 열린 스크립트 파일(UnityScript) 중복 문제
+-   버그 UVS-46 수정: Visual Studio의 오류 목록을 클릭할 때 열린 스크립트 파일(UnityScript) 중복 문제.
 
--   버그 UVS-42 수정: VS 2012에서 상태 표시줄의 Unity 연결 로고가 마우스 이벤트를 처리하지 않는 문제
+-   버그 UVS-42 수정: VS 2012에서 상태 표시줄의 Unity 연결 로고가 마우스 이벤트를 처리하지 않는 문제.
 
--   버그 UVS-44 수정: VS 2012에서 빠른 MonoBehaviour에 대해 CTRL+SHIFT+Q를 사용할 수 없는 문제
+-   버그 UVS-44 수정: VS 2012에서 빠른 MonoBehaviours에 대해 CTRL+SHIFT+Q를 사용할 수 없는 문제.
 
--   버그 UVS-40 수정: 창이 VS2012의 “어두운" 테마에서 비활성화된 경우 Unity 프로젝트 탐색기에서 선택한 항목을 읽지 못하는 문제
+-   버그 UVS-40 수정: 창이 VS2012의 "어두운" 테마에서 비활성화된 경우 Unity 프로젝트 탐색기에서 선택한 항목을 읽지 못하는 문제.
 
--   버그 UVS-39 수정: 이스케이프된 문자열 토큰화 문제
+-   버그 UVS-39 수정: 이스케이프된 문자열 토큰화 문제.
 
--   버그 UVS-35 수정: 변수를 검사할 때 개체에 대한 ToString 호출 문제
+-   버그 UVS-35 수정: 변수를 검사할 때 개체에 대한 ToString 호출 문제.
 
--   버그 UVS-27 수정: VS2012에서 "어두운" 테마와 Goto 기호 창 불일치 문제
+-   버그 UVS-27 수정: VS2012에서 "어두운" 테마와 Goto 기호 창 불일치 문제.
 
--   버그 UVS-11 수정: 코루틴의 로컬 문제
+-   버그 UVS-11 수정: 코루틴의 지역.
 
 ## <a name="1100---beta-release"></a>1.1.0.0 - 베타 릴리스
- 릴리스됨 2014-10-09
+ 릴리스 날짜: 2013년 3월 9일
 
 ## <a name="10130"></a>1.0.13.0
- 릴리스됨 2013-01-21
+ 릴리스 날짜: 2013년 1월 21일
 
 ### <a name="bug-fixes"></a>버그 수정
 
@@ -1048,7 +1184,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 -   Unity에서 UnityVS로 전송한 긴 메시지의 처리 문제를 수정했습니다. 이전에 긴 메시지는 UnityVS의 메시징 부분과 충돌할 수 있었습니다. 결과적으로 UnityVS가 Unity에서 파일을 열지 않는 경우가 있었습니다.
 
 ## <a name="10120"></a>1.0.12.0
- 릴리스됨 2013-01-03
+ 릴리스 날짜: 2013년 1월 3일
 
 ### <a name="bug-fixes"></a>버그 수정
 
@@ -1067,7 +1203,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 -   사용자 코드가 로그 콜백 처리기에 관여할 수 없는 API 결함을 수정했습니다.
 
 ## <a name="10110"></a>1.0.11.0
- 릴리스됨 2012-11-28
+ 릴리스 날짜: 2012년 11월 28일
 
 ### <a name="new-features"></a>새 기능
 
@@ -1098,7 +1234,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 -   Visual Studio의 상태 표시줄에서 아이콘을 넣을 수 없는 경우의 충돌 문제를 수정했습니다.
 
 ## <a name="10100"></a>1.0.10.0
- 릴리스됨 2012-10-09
+ 릴리스 날짜: 2012년 10월 9일
 
 ### <a name="bug-fixes"></a>버그 수정
 
@@ -1111,7 +1247,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 -   파일 잠금이나 Unity 빌드 프로세스 혼동이 발생하지 않도록 Unity에서 어셈블리를 검색하는 방법을 수정했습니다.
 
 ## <a name="1090"></a>1.0.9.0
- 릴리스됨 2012-10-03
+ 릴리스 날짜: 2012년 10월 3일
 
 ### <a name="bug-fixes"></a>버그 수정
 
@@ -1125,12 +1261,12 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 -   식 계산에 대해 로드된 어셈블리에서 형식을 검색하는 방법을 수정했습니다.
 
--   버그 UVS-21 수정: Unity 개체에서의 할당 계산이 영향을 미치지 않는 문제
+-   버그 UVS-21 수정: Unity 개체에서의 할당 계산이 영향을 미치지 않는 문제.
 
--   버그 UVS-21 수정: Unity Math API에 대한 메서드 호출을 계산할 때의 잘못된 포인터 문제
+-   버그 UVS-21 수정: Unity Math API에 대한 메서드 호출을 계산할 때의 잘못된 포인터 문제.
 
 ## <a name="1080"></a>1.0.8.0
- 릴리스됨 2012-09-26
+ 릴리스 날짜: 2012년 9월 26일
 
 ### <a name="bug-fixes"></a>버그 수정
 
@@ -1141,7 +1277,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 -   UnityVS를 Visual Studio 2010에 등록하는 방법을 수정했습니다.
 
 ## <a name="1070"></a>1.0.7.0
- 릴리스됨 2012-09-14
+ 릴리스 날짜: 2012년 9월 14일
 
 ### <a name="new-features"></a>새 기능
 
@@ -1157,10 +1293,10 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 >  Visual Studio 2012 지원으로 인해 일부 파일의 이름을 바꾸고 다른 위치로 이동했습니다. Unity를 가져오기 위한 UnityVS 패키지는 이제 Visual Studio 2010 및 Visual Studio 2012에 대해 각각 UnityVS 2010 또는 UnityVS 2012로 명명되었습니다. 이 버전에서는 UnityVS 프로젝트 파일을 다시 생성해야 합니다.
 
 ## <a name="1060---internal-build"></a>1.0.6.0 - 내부 빌드
- 릴리스됨 2012-09-12
+ 릴리스 날짜: 2012년 9월 12일
 
 ## <a name="1050"></a>1.0.5.0
- 릴리스됨 2012-09-10
+ 릴리스 날짜: 2012년 9월 10일
 
 ### <a name="bug-fixes"></a>버그 수정
 
@@ -1169,7 +1305,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 -   Unity를 자산 서버에 연결했을 때 Unity 인스턴스 검색 문제를 수정했습니다. 이 버그로 인해 Unity에서 파일을 열지 못하고 Visual Studio 디버거에 자동으로 연결하지 못했습니다.
 
 ## <a name="1040"></a>1.0.4.0
- 릴리스됨 2012-09-05
+ 릴리스 날짜: 2012년 9월 5일
 
 ### <a name="new-features"></a>새 기능
 
@@ -1182,7 +1318,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 -   Unity 내에서 메서드 또는 속성이 발생시킨 예외로 인한 디버그 도중 UnityVS가 충돌하는 문제를 수정했습니다.
 
 ## <a name="1030"></a>1.0.3.0
- 릴리스됨 2012-09-04
+ 릴리스 날짜: 2012년 9월 4일
 
 ### <a name="new-features"></a>새 기능
 
@@ -1197,7 +1333,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 -   사용자 지정 상태 표시줄로 인한 임의 VS 충돌 문제를 수정했습니다.
 
 ## <a name="1020"></a>1.0.2.0
- 릴리스됨 2012-08-30
+ 릴리스 날짜: 2012년 8월 30일
 
 ### <a name="bug-fixes"></a>버그 수정
 
@@ -1208,7 +1344,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 -   Unity 4 b7이 포함된 Unity에서 스크립팅 어셈블리를 검색하는 방법에 대한 버그를 수정했습니다.
 
 ## <a name="1010"></a>1.0.1.0
- 릴리스됨 2012-08-28
+ 릴리스 날짜: 2012년 8월 28일
 
 ### <a name="new-features"></a>새 기능
 
@@ -1225,4 +1361,4 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 -   UnityScript 및 Boo의 자산 폴더 내부 dll에 대한 완료를 수정했습니다.
 
 ## <a name="1000---initial-release"></a>1.0.0.0 - 초기 릴리스
- 릴리스됨 2012-08-22
+ 릴리스 날짜: 2012년 8월 22일

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 부하 테스트 실행 설정에 컨텍스트 매개 변수 추가
+title: 부하 테스트 실행 설정에 컨텍스트 매개 변수 추가
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d6152d75d28e5c6468ccc0a484e2eae3a25214d9
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: cefa93a6f65b4b84b4ece5a4eb428d909dd0596d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203756"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048496"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>방법: 부하 테스트 실행 설정에 컨텍스트 매개 변수 추가
 
 **부하 테스트 새로 만들기 마법사**를 사용하여 부하 테스트를 만든 다음, **부하 테스트 편집기**를 사용하여 시나리오 속성을 테스트 요구 사항 및 목표에 맞게 변경할 수 있습니다.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
 > 실행 설정 속성의 전체 목록과 해당 설명을 보려면 [부하 테스트 실행 설정 속성](../test/load-test-run-settings-properties.md)을 참조하세요.
@@ -36,19 +38,19 @@ ms.locfileid: "39203756"
 
 또한 다음과 같이 다른 부하 테스트 실행 설정에서 동일한 이름을 사용하는 컨텍스트 매개 변수에 다른 값을 할당하면 부하 테스트를 다른 환경에서 실행할 수 있습니다.
 
--   회사 스테이징 웹 서버 실행 설정: `WebServer1=http://CorporateStagingWebServer`라는 컨텍스트 매개 변수
+- 기업 스테이징 웹 서버 실행 설정: `WebServer1=http://CorporateStagingWebServer`라는 컨텍스트 매개 변수
 
--   회사 프로덕션 웹 서버 실행 설정: `WebServer1=http://CorporateProductionWebServer`라는 컨텍스트 매개 변수
+- 기업 프로덕션 웹 서버 실행 설정: `WebServer1=http://CorporateProductionWebServer`라는 컨텍스트 매개 변수
 
- **명령줄에서 실행 설정 변경**
+  **명령줄에서 실행 설정 변경**
 
- 명령줄에서 다른 실행 설정을 사용하여 컨텍스트 매개 변수 전략을 활용하려면 다음 명령을 사용합니다.
+  명령줄에서 다른 실행 설정을 사용하여 컨텍스트 매개 변수 전략을 활용하려면 다음 명령을 사용합니다.
 
- **Set Test.UseRunSetting= CorporateStagingWebServer**
+  **Set Test.UseRunSetting= CorporateStagingWebServer**
 
- 및
+  및
 
- **mstest /testcontainer:loadtest1.loadtest**
+  **mstest /testcontainer:loadtest1.loadtest**
 
 ## <a name="to-add-a-context-parameter-to-a-run-setting"></a>컨텍스트 매개 변수를 실행 설정에 추가하려면
 

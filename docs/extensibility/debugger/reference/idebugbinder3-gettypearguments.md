@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f5e06b51cfea731d94cd0eb53d91b4dbdf6b471
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6ed4e1863313dae173d6737970765ca3d5f0b0b3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101718"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879456"
 ---
 # <a name="idebugbinder3gettypearguments"></a>IDebugBinder3::GetTypeArguments
 이 메서드는이 개체와 연결 된 인수 형식 목록을 검색 합니다.  
@@ -50,7 +50,7 @@ int GetTypeArguments(
  [in] 인수 형식 가져오기 전에 건너뛸 필드 수입니다.  
   
  `count`  
- [in] 인수 필드 반환할 수 (도의 크기를 지정 된 `ppFields` 배열)입니다.  
+ [in] 반환할 인수 필드 수 (도의 크기를 지정 된 `ppFields` 배열)입니다.  
   
  `ppFields`  
  [out에서] 이 메서드는 반환 시 채울 수 있는 필드의 배열입니다.  
@@ -59,10 +59,10 @@ int GetTypeArguments(
  [out] \(선택 사항) 인수 개수는 실제로 반환 된 필드를 입력 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 통해 된 수의 인수 형식 미리 얻을 수 [GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md)합니다.  
+ 된 수의 인수 형식 미리 얻을 수 있습니다 [GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md)합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)   

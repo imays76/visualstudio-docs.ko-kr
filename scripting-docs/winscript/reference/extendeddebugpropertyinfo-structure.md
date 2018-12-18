@@ -18,15 +18,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ee06b0ace93f068e0530a3aa62b8c28d11069f44
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 62b9f3b5877f7919a57e9747355276e438240796
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641333"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888907"
 ---
 # <a name="extendeddebugpropertyinfo-structure"></a>ExtendedDebugPropertyInfo 구조체
-확장 된 `DebugPropertyInfo` 확장된 속성의 특징을 나타내는 추가 멤버가 포함 된 구조입니다.  
+확장 된 `DebugPropertyInfo` 확장된 속성을 특성화 하기 위한 추가 멤버를 사용 하 여 구조입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -67,22 +67,22 @@ typedef struct ExtendedDebugPropertyInfo{
  디버그 속성 특성에 대 한 플래그를 지정 하는 열거형입니다.  
   
  `pDebugProp`  
- `IDebugProperty`여기에 해당 하는 개체 `ExtendedDebugPropertyInfo`합니다.  
+ `IDebugProperty` 여기에 해당 하는 개체 `ExtendedDebugPropertyInfo`합니다.  
   
  `nDISPID`  
  디스패치 id입니다.  
   
  `nType`  
- 확장 된 속성 형식입니다.  
+ 확장된 속성 형식입니다.  
   
  `varValue`  
- 확장된 속성 값 변형에 들어갈 수 있는 경우입니다.  
+ 확장된 속성 값 변형에 맞출 수 있습니다.  
   
  `plbValue`  
  속성 값의 실제 데이터 바이트입니다.  
   
  `pDebugExtProp`  
- `IDebugExtendedProperty`여기에 해당 하는 개체 `ExtendedDebugPropertyInfo`합니다.  
+ `IDebugExtendedProperty` 여기에 해당 하는 개체 `ExtendedDebugPropertyInfo`합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [DebugPropertyInfo 구조체](../../winscript/reference/debugpropertyinfo-structure.md)   

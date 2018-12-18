@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c3de9ef6128c3cd5ca6eae80a257b3dc2982cd0f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 8f2b46e420db8addf19ef8694112058bdb8b2f91
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458192"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867626"
 ---
 # <a name="datakind"></a>DataKind
 데이터 값의 특정 범위를 나타냅니다.  
@@ -52,10 +52,10 @@ enum DataKind {
  데이터 항목에는 정적 지역 변수입니다.  
   
  DataIsParam  
- 데이터 항목은 형식 매개 변수입니다.  
+ 데이터 항목에는 정식 매개 변수입니다.  
   
  DataIsObjectPtr  
- 데이터 항목에는 개체 포인터입니다 (`this`).  
+ 데이터 항목 개체 포인터는 (`this`).  
   
  DataIsFileStatic  
  데이터 항목에는 파일 범위 변수입니다.  
@@ -64,16 +64,16 @@ enum DataKind {
  데이터 항목에는 전역 변수입니다.  
   
  DataIsMember  
- 데이터 항목은 개체 멤버 변수입니다.  
+ 데이터 항목 개체 멤버 변수입니다.  
   
  DataIsStaticMember  
- 데이터 항목에 클래스 정적 변수입니다.  
+ 데이터 항목에는 정적 클래스 변수입니다.  
   
  DataIsConstant  
- 데이터 항목은 상수 값입니다.  
+ 데이터 항목에는 상수 값입니다.  
   
 ## <a name="remarks"></a>설명  
- 이 열거형의 값을 반환 된 [idiasymbol:: Get_datakind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) 메서드.  
+ 이 열거형의 값에서 반환 되는 [idiasymbol:: Get_datakind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) 메서드.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: cvconst.h  

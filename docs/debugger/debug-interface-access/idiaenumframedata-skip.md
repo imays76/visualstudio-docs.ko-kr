@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26f75ca23d1df6b81a23277fc94e60f9c0a2920f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 4987279f336b549389bd7d338bb12e842a3d87f0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31456782"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818297"
 ---
 # <a name="idiaenumframedataskip"></a>IDiaEnumFrameData::Skip
-지정 된 개수의 열거 순서에서 프레임 데이터 요소를 건너뜁니다.  
+열거형 시퀀스에 포함 된 프레임 데이터 요소의 지정 된 수를 건너뜁니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -34,10 +34,10 @@ HRESULT Skip (
   
 #### <a name="parameters"></a>매개 변수  
  celt  
- [in] 열거형 시퀀스를 건너뛰려면에 포함 된 프레임 데이터 요소의 수입니다.  
+ [in] 건너뛸 열거형 시퀀스에서 프레임 데이터 요소의 수입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그렇지 않으면 반환 `S_FALSE` 건너뛸 레코드가 더 이상 없는 경우.  
+ 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 건너뛸 레코드가 더 이상 없으면입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)

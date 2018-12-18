@@ -23,12 +23,12 @@ ms.assetid: f2146651-e24a-4e24-ade8-8ddee8ff4e43
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 13027c5d4fe4fc799f6514eb93bfc4ed93141613
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: d513588a7d00e874b38306150f896157906e2733
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283222"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880366"
 ---
 # <a name="install-dotfuscator-community-edition-ce"></a>Dotfuscator CE(Community Edition) 설치
 
@@ -46,9 +46,9 @@ Visual Studio IDE에서 Dotfuscator CE를 설치할 수 있습니다.
 
 1. **빠른 실행**(Ctrl+Q) 검색 창에서 `dotfuscator`를 입력합니다. <br/> <br/> ![빠른 실행](media/install_from_vs_12.png) <br/> <br/>
 2. 표시된 빠른 실행 결과 중 *설치* 제목 아래에서 **PreEmptive Protection - Dotfuscator(개별 구성 요소)** 를 선택합니다.
-  * *메뉴* 제목 아래에서 **도구 - PreEmptive Protection - Dotfuscator**를 확인하면 Dotfuscator CE가 이미 설치되어 있습니다. 사용법에 대한 자세한 내용은 [전체 Dotfuscator CE 사용자 가이드의 시작 페이지][get-started]를 참조하세요.
+   * *메뉴* 제목 아래에서 **도구 - PreEmptive Protection - Dotfuscator**를 확인하면 Dotfuscator CE가 이미 설치되어 있습니다. 사용법에 대한 자세한 내용은 [전체 Dotfuscator CE 사용자 가이드의 시작 페이지][get-started]를 참조하세요.
 3. [Visual Studio 설치 관리자] 창이 시작되고 Dotfuscator CE를 설치하도록 미리 구성되어 있습니다.
-  * 계속하려면 관리자 자격 증명을 제공해야 할 수 있습니다.
+   * 계속하려면 관리자 자격 증명을 제공해야 할 수 있습니다.
 4. Visual Studio IDE의 모든 인스턴스를 닫습니다. <br/> <br/> ![[설치] 클릭](media/install_from_vs_345.png) <br/> <br/>
 5. [Visual Studio 설치 관리자] 창에서 *설치*를 클릭합니다.
 

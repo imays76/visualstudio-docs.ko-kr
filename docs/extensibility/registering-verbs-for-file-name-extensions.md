@@ -13,32 +13,32 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a47f45889744db51d68c0f8aeb51b11863823965
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: dd42bc89eb853a5d65f8e15eab3fdf2cd054f278
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639734"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927803"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>파일 이름 확장명에 대 한 동사 등록
 응용 프로그램의 파일 이름 확장명을 연결에는 일반적으로 사용자가 파일을 두 번 클릭할 때 발생 하는 기본 작업이 있습니다. 이 작업 동사 예를 들어 열기 작업에 해당 하는 연결 된 것이 좋습니다.  
   
- 에 있는 셸 키를 사용 하 여 확장 된 ProgID (프로그래밍 식별자)와 연결 된 동사를 등록할 수 있습니다 **HKEY_CLASSES_ROOT\{progid} \shell**합니다. 자세한 내용은 [파일 형식](http://msdn.microsoft.com/library/windows/desktop/cc144148\(v=vs.85\).aspx)합니다.  
+ 에 있는 셸 키를 사용 하 여 확장 된 ProgID (프로그래밍 식별자)와 연결 된 동사를 등록할 수 있습니다 **HKEY_CLASSES_ROOT\{progid} \shell**합니다. 자세한 내용은 [파일 형식](/windows/desktop/shell/fa-file-types)합니다.  
   
 ## <a name="register-standard-verbs"></a>표준 동사 등록  
  운영 체제는 다음 표준 동사를 인식합니다.  
   
--   열기  
+- 열기  
   
--   편집  
+- 편집  
   
--   재생  
+- 재생  
   
--   용  
+- 용  
   
--   미리 보기  
+- 미리 보기  
   
- 가능 하면 표준 동사를 등록 합니다. 가장 일반적인 선택은 Open 동사입니다. 지우기 차이가 파일을 열고 파일을 편집 하는 경우에 편집 동사를 사용 합니다. 예를 들어 여는 *.htm* 파일 브라우저에 표시 된, 편집 하는 반면는 *.htm* HTML 편집기를 시작 하는 파일. 표준 동사는 운영 체제 로캘을 사용 하 여 지역화 되어 있습니다.  
+  가능 하면 표준 동사를 등록 합니다. 가장 일반적인 선택은 Open 동사입니다. 지우기 차이가 파일을 열고 파일을 편집 하는 경우에 편집 동사를 사용 합니다. 예를 들어 여는 *.htm* 파일 브라우저에 표시 된, 편집 하는 반면는 *.htm* HTML 편집기를 시작 하는 파일. 표준 동사는 운영 체제 로캘을 사용 하 여 지역화 되어 있습니다.  
   
 > [!NOTE]
 >  표준 동사를 등록할 때 열린 키에 대 한 기본값을 설정 하지 마십시오. 메뉴의 표시 문자열을 포함 하는 기본값입니다. 운영 체제 표준 동사에 대 한이 문자열을 제공합니다.  

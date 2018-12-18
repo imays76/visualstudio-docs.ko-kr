@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 단위 테스트 프로젝트 만들기
+title: 단위 테스트 프로젝트 만들기
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d49748be3067ac2bbb6df9016883cb7be0f48f89
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: c217b2956f5bff2f8aa5f44b88033f7f74580d3c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586862"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059050"
 ---
 # <a name="create-a-unit-test-project"></a>단위 테스트 프로젝트 만들기
 

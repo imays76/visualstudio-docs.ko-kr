@@ -1,5 +1,6 @@
 ---
-title: 시각화에 대 한 지원 되는 Visual Studio 버전 &amp; SDK 모델링
+title: 시각화 및 모델링 SDK에 대 한 지원 되는 Visual Studio 버전
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,41 +12,44 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 004a6b75bb66ebf3c1797abac9c1cc6f7faa6eb9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 65014d8c697adbf5fb8e13d28708090360bb9c17
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948196"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049958"
 ---
-# <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>시각화에 대 한 지원 되는 Visual Studio 버전 &amp; SDK 모델링
-다음은 지원 되는 Visual Studio 버전의 목록을 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 제작 및 배포 환경입니다. 이러한 버전에 대 한 자세한 내용은 Microsoft을 참조 하십시오. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] [개발자 센터](http://go.microsoft.com/fwlink/?LinkId=75628)합니다.
+# <a name="supported-visual-studio-editions-for-visualization--modeling-sdk"></a>시각화 및 모델링 SDK에서 지원되는 Visual Studio 버전
+
+다음은 지원 되는 Visual Studio 버전 목록을 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 제작 및 배포 환경입니다. 이러한 버전에 대 한 자세한 내용은 참조는 Microsoft Visual Studio [개발자 센터](http://go.microsoft.com/fwlink/?LinkId=75628)합니다.
 
 ## <a name="authoring-edition"></a>작성 버전
- DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
+
+DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
+|Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
 |Visual Studio SDK|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|
 |Visual Studio Visualization and Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=186128](http://go.microsoft.com/fwlink/?LinkID=186128)|
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
 ## <a name="deployment-editions"></a>배포 버전
- [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]에서는 작성하는 DSL(Domain-Specific Language)을 배포하기 위한 다음 구성을 지원합니다.
+
+[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]에서는 작성하는 DSL(Domain-Specific Language)을 배포하기 위한 다음 구성을 지원합니다.
 
 -   Visual Studio Enterprise
 
 -   Visual Studio Professional
 
--   Visual Studio Shell (통합된 모드) 재배포 가능 패키지 재배포 가능 패키지
+-   Visual Studio Shell (통합된 모드) 재배포 가능 패키지
 
 -   Visual Studio Shell(격리 모드) 재배포 가능 패키지
 
 > [!NOTE]
->  DSL 셸 제품에서 실행할 수 있도록 설정 해야 합니다는 **VS 버전 지원** 확장 매니페스트에 필드입니다. 자세한 내용은 참조 [도메인별 언어 솔루션 배포](../modeling/deploying-domain-specific-language-solutions.md)합니다.
+> DSL Shell 제품에서 실행할 수 있도록 설정 해야 합니다 **VS 버전 지원** 확장 매니페스트에서 필드입니다. 자세한 내용은 [도메인별 언어 솔루션 배포](../modeling/deploying-domain-specific-language-solutions.md)합니다.
 
 ## <a name="see-also"></a>참고 항목
 
-- [도메인 특정 언어 도구 용어집](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d93861fc6238949d8666072b0bf5a5cc7efdb87b
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 7062f44fe119858e579a53325deca0ea04b46475
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498943"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873021"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>연습: 사용자 지정 편집기에 기능 추가
 사용자 지정 편집기를 만든 후에 더 많은 기능을 추가할 수 있습니다.  
@@ -122,38 +122,38 @@ ms.locfileid: "39498943"
   
 13. 편집기에서 자동화 개체 모델을 구현 하 여 노출 된 `IDispatch` 인터페이스입니다.  
   
-     자세한 내용은 [자동화 모델에 영향을 주는](../extensibility/internals/contributing-to-the-automation-model.md)합니다.  
+     자세한 내용은 [Contributing to the Automation Model](../extensibility/internals/contributing-to-the-automation-model.md)을 참조하세요.  
   
 ## <a name="robust-programming"></a>강력한 프로그래밍  
   
--   IDE를 호출 하는 경우 편집기 인스턴스가 만들어질는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> 메서드. 편집기에는 여러 뷰를 지 원하는 경우 `CreateEditorInstance` 문서 데이터와 문서 뷰 개체를 만듭니다. 문서 데이터 개체가 이미 있으면 열에 null이 아닌 `punkDocDataExisting` 값이 전달 `IVsEditorFactory::CreateEditorInstance`합니다. 편집기 팩터리 구현에 적절 한 인터페이스에 대 한 쿼리를 통해 기존 문서 데이터 개체를 호환 되는지 여부를 결정 해야 합니다. 자세한 내용은 [Supporting Multiple Document Views](../extensibility/supporting-multiple-document-views.md)합니다.  
+- IDE를 호출 하는 경우 편집기 인스턴스가 만들어질는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> 메서드. 편집기에는 여러 뷰를 지 원하는 경우 `CreateEditorInstance` 문서 데이터와 문서 뷰 개체를 만듭니다. 문서 데이터 개체가 이미 있으면 열에 null이 아닌 `punkDocDataExisting` 값이 전달 `IVsEditorFactory::CreateEditorInstance`합니다. 편집기 팩터리 구현에 적절 한 인터페이스에 대 한 쿼리를 통해 기존 문서 데이터 개체를 호환 되는지 여부를 결정 해야 합니다. 자세한 내용은 [Supporting Multiple Document Views](../extensibility/supporting-multiple-document-views.md)합니다.  
   
--   간단한 포함 방법을 사용할 경우 구현 된 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> 인터페이스입니다.  
+- 간단한 포함 방법을 사용할 경우 구현 된 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> 인터페이스입니다.  
   
--   내부 활성화를 사용 하려는 경우에 다음 인터페이스를 구현 합니다.  
+- 내부 활성화를 사용 하려는 경우에 다음 인터페이스를 구현 합니다.  
   
-     <xref:Microsoft.VisualStudio.OLE.Interop.IOleObject>  
+   <xref:Microsoft.VisualStudio.OLE.Interop.IOleObject>  
   
-     <xref:Microsoft.VisualStudio.OLE.Interop.IOleInPlaceActiveObject>  
+   <xref:Microsoft.VisualStudio.OLE.Interop.IOleInPlaceActiveObject>  
   
-     <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>  
+   <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>  
   
-    > [!NOTE]
-    >  `IOleInPlaceComponent` 인터페이스 OLE 2 메뉴 병합 방지를 사용 합니다.  
+  > [!NOTE]
+  >  `IOleInPlaceComponent` 인터페이스 OLE 2 메뉴 병합 방지를 사용 합니다.  
   
-     프로그램 `IOleCommandTarget` 구현을 처리 명령 등 **잘라내기**를 **복사**, 및 **붙여넣기**합니다. 구현 하는 경우 `IOleCommandTarget`, 필요한 지 여부를 편집기 자체 결정 *.vsct* 자체 명령 메뉴 구조를 정의 하는 파일 정의한 표준 명령을 구현할 수 있습니다 하는 경우 또는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]합니다. 일반적으로 편집기 및 IDE의 메뉴를 확장 하며 사용 자신의 도구 모음을 정의 합니다. 그러나 편집기에서 IDE의 표준 명령 집합을 사용 하는 것 외에도 고유한 특정 명령을 정의 하는 데 필요한 경우가 있습니다. 편집기를 사용 하는 일반적인 명령을 선언 하 고 새로운 명령, 상황에 맞는 메뉴, 최상위 메뉴 및 도구 모음에서 정의 된 *.vsct* 파일입니다. 내부 활성화 편집기를 만드는 경우 구현 <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> 메뉴 및 도구 모음에서 편집기에 대 한 정의 *.vsct* OLE 2 메뉴 병합을 사용 하는 대신 파일입니다.  
+   프로그램 `IOleCommandTarget` 구현을 처리 명령 등 **잘라내기**를 **복사**, 및 **붙여넣기**합니다. 구현 하는 경우 `IOleCommandTarget`, 필요한 지 여부를 편집기 자체 결정 *.vsct* 자체 명령 메뉴 구조를 정의 하는 파일 정의한 표준 명령을 구현할 수 있습니다 하는 경우 또는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]합니다. 일반적으로 편집기 및 IDE의 메뉴를 확장 하며 사용 자신의 도구 모음을 정의 합니다. 그러나 편집기에서 IDE의 표준 명령 집합을 사용 하는 것 외에도 고유한 특정 명령을 정의 하는 데 필요한 경우가 있습니다. 편집기를 사용 하는 일반적인 명령을 선언 하 고 새로운 명령, 상황에 맞는 메뉴, 최상위 메뉴 및 도구 모음에서 정의 된 *.vsct* 파일입니다. 내부 활성화 편집기를 만드는 경우 구현 <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> 메뉴 및 도구 모음에서 편집기에 대 한 정의 *.vsct* OLE 2 메뉴 병합을 사용 하는 대신 파일입니다.  
   
--   메뉴 명령 UI에서가 중 시키는 방지 하려면 새 명령을 고안 하기 전에 IDE에서 기존 명령을 사용 해야 있습니다. 공유 명령에 정의 된 *SharedCmdDef.vsct* 하 고 *ShellCmdDef.vsct*합니다. 이러한 파일의 VisualStudioIntegration\Common\Inc 하위 디렉터리에 기본적으로 설치 된 프로그램 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] 설치 합니다.  
+- 메뉴 명령 UI에서가 중 시키는 방지 하려면 새 명령을 고안 하기 전에 IDE에서 기존 명령을 사용 해야 있습니다. 공유 명령에 정의 된 *SharedCmdDef.vsct* 하 고 *ShellCmdDef.vsct*합니다. 이러한 파일의 VisualStudioIntegration\Common\Inc 하위 디렉터리에 기본적으로 설치 된 프로그램 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] 설치 합니다.  
   
--   `ISelectionContainer` 단일 및 다중 선택 항목을 표현할 수 있습니다. 선택한 각 개체도 구현 되는 `IDispatch` 개체입니다.  
+- `ISelectionContainer` 단일 및 다중 선택 항목을 표현할 수 있습니다. 선택한 각 개체도 구현 되는 `IDispatch` 개체입니다.  
   
--   IDE 구현 `IOleUndoManager` 에서 액세스할 수 있는 서비스로 <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> 또는 통해 인스턴스화할 수 있는 개체로 <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A>합니다. 편집기 구현 하는 `IOleUndoUnit` 각각에 대 한 인터페이스 `Undo` 작업 합니다.  
+- IDE 구현 `IOleUndoManager` 에서 액세스할 수 있는 서비스로 <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> 또는 통해 인스턴스화할 수 있는 개체로 <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A>합니다. 편집기 구현 하는 `IOleUndoUnit` 각각에 대 한 인터페이스 `Undo` 작업 합니다.  
   
--   두 위치는 사용자 지정 편집기 자동화 개체를 노출할 수 있습니다.  
+- 두 위치는 사용자 지정 편집기 자동화 개체를 노출할 수 있습니다.  
   
-    -   `Document.Object`  
+  -   `Document.Object`  
   
-    -   `Window.Object`  
+  -   `Window.Object`  
   
 ## <a name="see-also"></a>참고자료  
  [자동화 모델에 참여](../extensibility/internals/contributing-to-the-automation-model.md)   

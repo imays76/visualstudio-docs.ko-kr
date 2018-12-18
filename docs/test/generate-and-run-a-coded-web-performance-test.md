@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 코딩된 웹 성능 테스트
+title: 코딩된 웹 성능 테스트
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,20 +16,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b1920037b84871b388a1cc746b634b73577efd89
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 8a4e1ea45b8fe3ae0e33064973fcf1bc3517598e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179578"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067844"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>코딩된 웹 성능 테스트 생성 및 실행
 
 웹 성능 테스트는 사용자의 웹 응용 프로그램을 탐색하여 기록됩니다. 테스트는 부하 테스트에 포함되어 여러 사용자의 스트레스 환경에서 웹 응용 프로그램의 성능을 측정합니다. 웹 성능 테스트는 코드 기반 스크립트로 변환한 후에 다른 소스 코드처럼 편집하고 사용자 정의할 수 있습니다. 예를 들어, 루프 및 분기 구문을 추가할 수 있습니다.
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
 ## <a name="generate-a-coded-web-performance-test"></a>코딩된 웹 성능 테스트 생성
 
-1.  웹 성능 테스트를 만들지 않은 경우 [웹 성능 테스트 기록](/vsts/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project)을 참조하세요.
+1.  웹 성능 테스트를 만들지 않은 경우 [웹 성능 테스트 기록](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project?view=vsts)을 참조하세요.
 
 2.  코딩된 테스트를 생성합니다.
 
@@ -57,7 +59,7 @@ ms.locfileid: "39179578"
     }
     else
     {
-        WebTestRequest customRequest = new WebTestRequest("http://msdn.microsoft.com/");
+        WebTestRequest customRequest = new WebTestRequest("https://msdn.microsoft.com/");
         yield return customRequest;
     }
     ```
@@ -67,7 +69,7 @@ ms.locfileid: "39179578"
         Dim customRequest As WebTestRequest = New WebTestRequest("http://weather.msn.com/")
         MyBase.Send(customRequest)
     Else
-        Dim customRequest As WebTestRequest = New WebTestRequest("http://msdn.microsoft.com/")
+        Dim customRequest As WebTestRequest = New WebTestRequest("https://msdn.microsoft.com/")
         MyBase.Send(customRequest)
     End If
     ```
@@ -88,11 +90,11 @@ ms.locfileid: "39179578"
  **A:** 예, **솔루션 탐색기**에서 상황에 맞는 메뉴를 사용합니다.
 
 ### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>Q: 코딩된 테스트를 생성하기 전이나 후에 데이터 소스를 추가해야 합니까?
- **A:** 코드는 자동으로 생성되므로 코딩된 테스트를 생성하기 전에 [데이터 소스](../test/add-a-data-source-to-a-web-performance-test.md)로 쉽게 추가할 수 있습니다.
+ **A:** 코드는 자동으로 생성되므로 코딩된 테스트를 생성하기 전에 [데이터 원본](../test/add-a-data-source-to-a-web-performance-test.md)으로 쉽게 추가할 수 있습니다.
 
  데이터 소스로 코딩된 테스트를 실행하면 다음과 같은 오류 메시지가 표시될 수 있습니다.
 
- **\<컴퓨터 이름> 에이전트에서 \<테스트 이름> 테스트를 실행할 수 없음: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.**
+ **테스트를 실행할 수 없음 \<테스트 이름> 에이전트에서 \<컴퓨터 이름>: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.**
 
  이 오류는 해당하는 DataBindingAttribute 없이 테스트 클래스에 DataSourceAttribute를 정의한 경우에 발생할 수 있습니다. 이 오류를 해결하려면 적절한 DataBindingAttribute를 추가하고, 이를 삭제하거나 코드에서 주석 처리합니다.
 

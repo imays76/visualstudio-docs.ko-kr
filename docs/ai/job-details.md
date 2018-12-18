@@ -1,20 +1,21 @@
 ---
 ms.technology: vs-ai-tools
-ms.openlocfilehash: f11a66fd06a2b0b3b23d35c3153c5dd26fab282e
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: ebf412dbeb4e0ecc391c52d7da5ea49d12e6231f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/28/2018
-ms.locfileid: "29709833"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930364"
 ---
 # <a name="view-recent-job-performance-and-details"></a>최근 작업 성능 및 세부 정보 보기
+
 작업을 제출하면 작업 목록을 보고 해당 상태, 기간 등을 확인할 수 있습니다.
 
 1. **서버 탐색기**에서 특정 계산 컨텍스트를 확장합니다.
-1. **작업**을 두 번 클릭합니다.
-1. 해당 계산 컨텍스트에 제출된 작업 목록을 확인합니다.
-1. 목록에서 특정 **작업**을 선택하여 세부 정보를 봅니다.
+2. **작업**을 두 번 클릭합니다.
+3. 해당 계산 컨텍스트에 제출된 작업 목록을 확인합니다.
+4. 목록에서 특정 **작업**을 선택하여 세부 정보를 봅니다.
 
-![monitor jobs](media\job-details\monitor-jobs.png)
+![monitor jobs](media/job-details/monitor-jobs.png)
 
 > Linux VM으로 제출된 작업 기록은 /tmp 디렉터리의 VM에 저장됩니다. 그러므로 다시 부팅될 때마다 작업 기록이 정리됩니다. 작업 기록의 영구 레코드의 경우 Azure Machine Learning에서 VM을 계산 컨텍스트로 구성하고 VM을 계산 컨텍스트로 선택하여 작업을 Azure Machine Learning으로 제출합니다.

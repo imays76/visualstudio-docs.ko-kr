@@ -1,7 +1,8 @@
 ---
-title: Visual Studio 2017 수정 | Microsoft Docs
+title: Visual Studio 수정
+titleSuffix: ''
 description: Visual Studio를 수정하는 방법을 단계별로 알아봅니다.
-ms.custom: H1Hack27Feb2017
+ms.custom: H1Hack27Feb2017,seodec18
 ms.date: 06/12/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
@@ -17,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e63a21a6090f4d3c7b1a371fc667325eed9ba65
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: efb52ebc55126fa167144803afc373317d735aae
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36297768"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160064"
 ---
 # <a name="modify-visual-studio-2017-by-adding-or-removing-workloads-and-components"></a>작업과 구성 요소를 추가하거나 제거하여 Visual Studio 2017 수정
 
@@ -66,16 +67,7 @@ ms.locfileid: "36297768"
 
 Visual Studio 설치를 사용자 지정하기 위해 편리한 작업 기능을 사용하지 않으려는 경우 Visual Studio 설치 관리자에서 **개별 구성 요소** 옵션을 선택하고 원하는 구성 요소를 선택한 다음, 표시되는 메시지를 따릅니다.
 
-## <a name="get-support"></a>지원 받기
-
-때로는 무엇인가 잘못될 수도 있습니다. Visual Studio 설치에 실패하는 경우에는 [Visual Studio 2017 설치 및 업그레이드 문제 해결](troubleshooting-installation-issues.md) 페이지를 참조하여 도움을 받으세요. [실시간 채팅](https://visualstudio.microsoft.com/vs/support/#talktous)(영어 전용)을 통해 설치 도움말에 대한 문의할 수 있습니다. 자세한 내용은 [Visual Studio “사용자 의견”](https://visualstudio.microsoft.com/vs/support/#talktous)을 참조하세요.
-
-몇 가지 추가 지원 옵션은 다음과 같습니다.
-
-* Visual Studio 설치 관리자와 Visual Studio IDE에 모두 표시되는 [문제 보고](../ide/how-to-report-a-problem-with-visual-studio-2017.md) 도구를 통해 Microsoft에 제품 문제를 보고할 수 있습니다.
-* [UserVoice](https://visualstudio.uservoice.com/forums/121579)에서 Microsoft와 제품 제안을 공유할 수 있습니다.
-* [Visual Studio 개발자 커뮤니티](https://developercommunity.visualstudio.com/)에서 제품 문제를 추적하고, 답변을 찾을 수 있습니다.
-* [Gitter 커뮤니티의 Visual Studio 관련 대화](https://gitter.im/Microsoft/VisualStudio)를 통해 Microsoft 및 다른 Visual Studio 개발자와 소통할 수도 있습니다. (이 옵션을 사용하려면 [GitHub](https://github.com/) 계정이 필요합니다.)
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>참고 항목
 

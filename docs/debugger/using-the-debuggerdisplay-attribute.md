@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8da672193dcbe12581122a48559c9027f01e77c9
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: d3adb481ba06c086db3a272c026543464018b542
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057588"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926204"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>DebuggerDisplay 특성 사용
-합니다 [DebuggerDisplayAttribute 클래스](/dotnet/api/system.diagnostics.debuggerdisplayattribute) 개체, 속성 또는 필드가 디버거 변수 창에 표시 되는 방법을 제어 합니다. 이 특성은 형식, 대리자, 속성, 필드 및 어셈블리에 적용할 수 있습니다.  
+<xref:System.Diagnostics.DebuggerDisplayAttribute>는 개체, 속성 또는 필드가 디버거 변수 창에 표시되는 방식을 제어합니다. 이 특성은 형식, 대리자, 속성, 필드 및 어셈블리에 적용할 수 있습니다.  
   
  `DebuggerDisplay` 특성에는 형식 인스턴스에 대한 값 열에 표시되는 문자열인 단일 인수가 있습니다. 이 문자열에는 중괄호(`{` 및 `}`)가 포함될 수 있습니다. 중괄호 쌍 안의 텍스트는 필드, 속성 또는 메서드로 확인됩니다.  
   
@@ -36,7 +36,7 @@ ms.locfileid: "37057588"
  다음 표에서는 `DebuggerDisplay` 특성의 사용 예와 예제 출력을 보여 줍니다.  
   
 |특성|값 열에 표시 되는 출력|  
-|---------------|------------------------------------------------|  
+|---------------| - |  
 |`[DebuggerDisplay("x = {x} y = {y}")]`<br /><br /> `x` 및 `y`필드가 있는 형식에서 사용됩니다.|`x = 5 y = 18`|  
 |`[DebuggerDisplay("String value is {getString()}")]`매개 변수 구문은 언어에 따라 다를 수 있으므로 주의하여 사용하십시오.|`String value is [5, 6, 6]`|  
   
@@ -61,17 +61,17 @@ csc /t:library autoexp.cs
 ## <a name="using-expressions-in-debuggerdisplay"></a>DebuggerDisplay에서 식 사용  
  DebuggerDisplay 특성에서는 중괄호 사이에 일반 식을 사용할 수 있지만 이런 방식은 사용하지 않는 것이 좋습니다.  
   
- DebuggerDisplay의 일반 식에서는 대상 형식의 현재 인스턴스에 한해 `this` 포인터에 암시적으로 액세스할 수 있습니다. 식에서 별칭, 지역 변수 또는 포인터에는 액세스할 수 없습니다. 식에서 속성을 참조하는 경우 해당 속성의 특성은 처리되지 않습니다. 예를 들어 C# 코드 `[DebuggerDisplay("Object {count - 2}")]` 표시 됩니다 `Object 6` 하는 경우 필드 `count` 8 인 합니다.  
+ DebuggerDisplay의 일반 식에서는 대상 형식의 현재 인스턴스에 한해 `this` 포인터에 암시적으로 액세스할 수 있습니다. 식에서 별칭, 지역 변수 또는 포인터에는 액세스할 수 없습니다. 식에서 속성을 참조하는 경우 해당 속성의 특성은 처리되지 않습니다. 예를 들어 C# 코드 `[DebuggerDisplay("Object {count - 2}")]`  는 `Object 6` 필드가 8인 경우 `count` 을 표시합니다.  
   
  DebuggerDisplay에서 식을 사용하면 다음과 같은 문제가 발생할 수 있습니다.  
   
--   식 계산은 디버거에서 가장 비용이 많이 드는 작업이며 식은 표시될 때마다 계산됩니다. 이는 코드를 단계별로 수행하는 동안 성능 문제를 야기할 수 있습니다. 예를 들어 컬렉션 또는 목록의 값을 표시하는 데 사용되는 복합 식은 요소 수가 많으면 매우 느려질 수 있습니다.  
+- 식 계산은 디버거에서 가장 비용이 많이 드는 작업이며 식은 표시될 때마다 계산됩니다. 이는 코드를 단계별로 수행하는 동안 성능 문제를 야기할 수 있습니다. 예를 들어 컬렉션 또는 목록의 값을 표시하는 데 사용되는 복합 식은 요소 수가 많으면 매우 느려질 수 있습니다.  
   
--   식은 식을 작성한 언어의 식 계산기가 아닌 현재 스택 프레임 언어의 식 계산기에 의해 계산됩니다. 언어가 서로 다를 경우 이로 인해 예기치 않은 결과가 발생할 수 있습니다.  
+- 식은 식을 작성한 언어의 식 계산기가 아닌 현재 스택 프레임 언어의 식 계산기에 의해 계산됩니다. 언어가 서로 다를 경우 이로 인해 예기치 않은 결과가 발생할 수 있습니다.  
   
--   식을 계산하면 응용 프로그램의 상태가 변경될 수 있습니다. 예를 들어 속성의 값을 설정하는 식은 실행 코드에서 속성 값을 변경합니다.  
+- 식을 계산하면 응용 프로그램의 상태가 변경될 수 있습니다. 예를 들어 속성의 값을 설정하는 식은 실행 코드에서 속성 값을 변경합니다.  
   
- 식 계산의 가능한 문제를 줄이는 한 가지 방법은 작업을 수행하고 문자열을 반환하는 private 속성을 만드는 것입니다. 이렇게 하면 DebuggerDisplay 특성이 private 속성 값을 표시할 수 있습니다. 다음 예제에서는 이 패턴을 구현합니다.  
+  식 계산의 가능한 문제를 줄이는 한 가지 방법은 작업을 수행하고 문자열을 반환하는 private 속성을 만드는 것입니다. 이렇게 하면 DebuggerDisplay 특성이 private 속성 값을 표시할 수 있습니다. 다음 예제에서는 이 패턴을 구현합니다.  
   
 ```csharp  
 [DebuggerDisplay("{DebuggerDisplay,nq}")]  
@@ -90,7 +90,7 @@ public sealed class MyClass
 ```  
 ", nq" 접미사 지시 최종 값을 표시 하는 경우 따옴표를 제거 하는 식 계산기 (nq = 따옴표 없음). 
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드 예제에서는 `DebuggerDisplay`와 `DebuggerBrowseable` 및 `DebuggerTypeProxy`를 함께 사용하는 방법을 보여 줍니다. **조사식** 창과 같은 디버거 변수 창에 이 코드가 표시될 때는 다음과 같은 확장이 생성됩니다.  
   
 |**이름**|**값**|**Type**|  

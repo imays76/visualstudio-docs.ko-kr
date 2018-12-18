@@ -1,7 +1,7 @@
 ---
-title: 자동 저장 Office 솔루션에 미치는 영향
+title: 자동 저장이 Office 솔루션에 미치는 영향을
 ms.custom: ''
-ms.date: 07/20/2017
+ms.date: 10/26/2018
 ms.technology:
 - office-development
 ms.topic: conceptual
@@ -15,18 +15,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 21c49599ddc992bf35e6c1464b664a23fb33a691
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 60c83b8d83967d93f079033c4853904068ad29d5
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548852"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672433"
 ---
-# <a name="how-autosave-impacts-office-solutions"></a>자동 저장 Office 솔루션에 미치는 영향
+# <a name="how-autosave-impacts-office-solutions"></a>자동 저장이 Office 솔루션에 미치는 영향을
 
-자동 저장은 Excel, PowerPoint에 대 한 기능 및 설정 하는 경우 단어를, on, 사용자의 편집 내용을 자동으로 고 지속적으로 저장할 수 있도록 합니다. 자동 저장이 해제 되어 있으면 다음 저장 해야 수동으로 트리거할 수 유지 될 사용자의 변경 내용에 대 한 합니다. 이 기능을 추가 하 여 작동 하는지 원활 하 게 켜져 있습니다. 자동 저장 하는 동안에 보장 하기 위해 Office 솔루션을 조정 해야 합니다. 자세한 내용은 참조 [자동 저장 방법을 추가 기능 및 매크로 영향을 줍니다](https://msdn.microsoft.com/vba/office-shared-vba/articles/how-autosave-impacts-addins-and-macros)합니다. 자동 저장 하는 방법에 대 한 자세한 내용은 참조 일반적으로 [자동 저장 이란?](https://support.office.com/en-US/article/What-is-AutoSave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5)합니다.
+자동 저장에는 Excel, PowerPoint 및 Word 자동으로 고 지속적으로 편집 내용을 저장 하는 기능입니다. 기능이 꺼져 있으면 변경 내용을 유지 하려면 수동으로 파일을 저장 해야 합니다. 자동 저장에 있는 동안에 원활 하 게 작동할 수 있도록 Office 솔루션을 조정 해야 합니다. 자세한 내용은 참조 하세요 [추가 기능 및 매크로 자동 저장 하는 방법에 영향을 줍니다](/office/vba/library-reference/concepts/how-autosave-impacts-addins-and-macros)합니다. 일반적으로 참조 자동 저장에 대 한 자세한 내용은 [자동 저장 이란?](https://support.office.com/en-US/article/What-is-AutoSave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5)합니다.
 
-참고: Windows 데스크톱의 Word, Excel 및 PowerPoint에 대 한 자동 저장 2017에서 도입 되었으며 현재 office 365 구독자에 대해 사용할 수 있습니다. 사용자가 Office 2016 또는 이전 정품 라이선스를 구입한 현재 없는 공동 기능에 액세스할 수 있습니다. (Excel Online Excel for Android, ios의 경우 Excel 및 Excel Mobile Windows 저장소에도 지원 자동 저장) 합니다. 
+> [!NOTE]
+> Windows 데스크톱 Word에 대 한 자동 저장, Excel 및 PowerPoint 2017에서 도입 되었으며 office 365 구독자에서 현재 사용할 수 있습니다. Office 2016 또는 이전 영구 라이선스를 구입한 현재 없는 경우 이러한 기능에 액세스할 수 있습니다. (Excel Online에서 Excel for Android, ios, Excel 및 Excel Mobile Windows 스토어에서 수행이 기능을 지원 하지만.)
 
 ## <a name="see-also"></a>참고자료
+
 [Office 솔루션 개발](./developing-office-solutions.md)

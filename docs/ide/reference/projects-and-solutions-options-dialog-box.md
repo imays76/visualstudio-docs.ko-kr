@@ -16,21 +16,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbd3fe20377cd2aa4954e904fec50702cc9b7120
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 09881462b0723dc1e601c908efeabc317ed70b69
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843993"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388951"
 ---
 # <a name="projects-and-solutions-page-options-dialog-box"></a>프로젝트 및 솔루션 페이지, 옵션 대화 상자
 
 프로젝트 및 솔루션과 관련된 Visual Studio 동작을 설정합니다. 이러한 옵션에 액세스하려면 **도구** > **옵션**을 선택하고 **프로젝트 및 솔루션**을 확장한 후 **일반**을 클릭합니다.
 
 프로젝트 및 템플릿 폴더에 대한 기본 경로는 같은 대화 상자의 **위치** 탭을 통해 설정됩니다.
-
-> [!NOTE]
-> UI에서 사용할 수 있는 옵션은 활성 설정이나 버전에 따라 여기에 설명된 것과 다를 수 있습니다. 이 문서는 **일반 개발 설정**을 염두에 두고 작성되었습니다. 설정을 보거나 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기**를 선택합니다. 자세한 내용은 [Visual Studio IDE 개인 설정](../../ide/personalizing-the-visual-studio-ide.md)을 참조하세요.
 
 ## <a name="general-page"></a>일반 페이지
 

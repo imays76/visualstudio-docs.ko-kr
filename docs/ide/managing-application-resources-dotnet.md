@@ -19,16 +19,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0e854cc2d271048a7d7205017710264efac0395
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: b9a80a84276648f8a0f0d5a94992b5f58cbcfefa
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381649"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348136"
 ---
 # <a name="manage-application-resources-net"></a>응용 프로그램 리소스 관리(.NET)
 
 리소스 파일은 응용 프로그램의 일부이지만 컴파일되지 않는 파일입니다(예: 아이콘 파일 또는 오디오 파일). 이러한 파일은 컴파일 프로세스에 포함되지 않으므로 이진 파일을 다시 컴파일할 필요 없이 변경할 수 있습니다. 응용 프로그램을 지역화할 계획인 경우 모든 문자열 및 응용 프로그램을 지역화할 때 변경해야 하는 다른 리소스에 대해 리소스 파일을 사용해야 합니다.
+
+> [!NOTE]
+> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [앱 리소스 관리(Mac용 Visual Studio)](/visualstudio/mac/managing-app-resources)를 참조하세요.
 
 .NET 데스크톱 앱의 리소스에 대한 자세한 내용은 [데스크톱 앱의 리소스](/dotnet/framework/resources/index)를 참조하세요.
 
@@ -52,3 +55,4 @@ ms.locfileid: "39381649"
 ## <a name="see-also"></a>참고 항목
 
 - [데스크톱 앱의 리소스(.NET Framework)](/dotnet/framework/resources/index)
+- [앱 리소스 관리(Mac용 Visual Studio)](/visualstudio/mac/managing-app-resources)

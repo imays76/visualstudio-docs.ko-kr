@@ -14,18 +14,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa6e567f811f163f8b79b277f5e0c8d2e4fc775b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 091b91cb896d0e2d5753f9c3b55cac58deee8cd5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465683"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848607"
 ---
 # <a name="cvhrege"></a>CV_HREG_e
-대상 레지스터를 지정 합니다.  
+대상 레지스터를 지정합니다.  
   
 > [!NOTE]
->  때문에 `CV_HREG_e` 열거형 여기 전체에서 복제 하려면 너무 크면 축약된 버전 참조로 제공 됩니다. 누락 된 항목 기울임꼴로 표시 됩니다. 전체 열거형은 cvconst.h 헤더 파일에 사용할 수 있습니다.  
+>  때문에 `CV_HREG_e` 열거형 여기 전체적으로 복제 하려면 너무 크면 축약된 된 버전 참조로 제공 됩니다. 누락 된 항목 기울임꼴로 표시 됩니다. 전체 열거형 cvconst.h 헤더 파일에서 제공 됩니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -412,22 +412,22 @@ enum CV_HREG_e {
   
 ## <a name="elements"></a>요소  
  CV_REG_ *  
- 레지스터 Intel 80x86 및 ix86 프로세서와 p 코드에서 사용 합니다.  
+ Intel 80x86 ix86 프로세서 및 p-코드를 사용한 등록 합니다.  
   
  CV_R68_ *  
- 레지스터 68 K 프로세서에서 사용 합니다.  
+ 등록은 68 K 프로세서에 사용 합니다.  
   
  CV_M4_ *  
- MIP 4000 시리즈 프로세서에서 사용 하는 등록 합니다.  
+ MIPS 4000 시리즈 프로세서에서 사용 하는 등록 합니다.  
   
  CV_ALPHA_ *  
- 디지털 장비 Corporation Alpha AXP 시리즈 프로세서에서 사용 하는 등록 합니다.  
+ Digital Equipment Corporation Alpha AXP 시리즈 프로세서에서 사용 하는 등록 합니다.  
   
  CV_PPC_ *  
- 레지스터/IBM Motorola PowerPC 프로세서에서 사용 합니다.  
+ Motorola/IBM PowerPC 프로세서에서 사용 하는 등록 합니다.  
   
  CV_SH3_ * 및 CV_SH_\*  
- 레지스터 Hitachi SH3 및 Hitachi SH 시리즈 프로세서에서 사용 합니다.  
+ Hitachi SH3 및 Hitachi SH 시리즈 프로세서에서 사용 하는 등록 합니다.  
   
  CV_ARM_ *  
  Advanced RISC Machine (ARM) 프로세서에서 사용 하는 등록 합니다.  
@@ -436,18 +436,18 @@ enum CV_HREG_e {
  Intel IA64 시리즈 프로세서에서 사용 하는 등록 합니다.  
   
  CV_TRI_ *  
- 레지스터 Infineon 기술 TriCore 프로세서에서 사용 합니다.  
+ Infineon 기술 TriCore 프로세서에서 사용 하는 등록 합니다.  
   
  CV_AM33_ *  
- 레지스터는 Matsushita/Panasonic AM33 사용 하 고 관련 프로세서.  
+ 레지스터는 Matsushita/Panasonic AM33 사용과 프로세서.  
   
  CV_M32R_ *  
- 레지스터 Mitsubishi M32R 프로세서에서 사용 합니다.  
+ Mitsubishi M32R 프로세서에서 사용 하는 등록 합니다.  
   
 ## <a name="remarks"></a>설명  
- 각 프로세서 종류는 자체 고유한 레지스터 집합을 사용합니다.  
+ 각 프로세서 유형에 고유한 레지스터 집합 자체를 사용합니다.  
   
- 이 열거형의 값은 다음 방법에 전달 됩니다.  
+ 이 열거형의 값은 다음 메서드에 전달 됩니다.  
   
 -   [IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)  
   

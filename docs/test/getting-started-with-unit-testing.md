@@ -1,22 +1,22 @@
 ---
-title: Visual Studio에서 유닛 테스트 시작
+title: 유닛 테스트 시작
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit test plans
+author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 6fb81ce1891a1e37670c81d1e7d0bf4b13fa2796
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 6e8835edb2b340778c4431d3de5b554d6aeb6c6d
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39469069"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53158816"
 ---
 # <a name="get-started-with-unit-testing"></a>유닛 테스트 시작
 
@@ -103,9 +103,7 @@ IntelliTest를 실행하면 오류가 발생하는 테스트를 쉽게 확인하
 
 ## <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>코드 검사를 사용하여 테스트할 코드 범위 결정
 
-프로젝트의 코드 중 유닛 테스트와 같은 코딩된 테스트를 사용하여 실제로 테스트할 부분을 결정하려면 Visual Studio의 코드 검사 기능을 사용합니다. 버그로부터 효과적으로 보호하려면 코드의 상당한 부분을 실행 또는 '검사'해야 합니다. 방법을 알아보려면 [코드 검사를 사용하여 테스트할 코드 범위 결정](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)을 참조하세요.
-
-![코드 검사를 사용하여 테스트할 코드 범위 결정](media/codecoverage.png)
+프로젝트의 코드 중 유닛 테스트와 같은 코딩된 테스트를 사용하여 실제로 테스트할 부분을 결정하려면 Visual Studio의 코드 검사 기능을 사용합니다. 버그로부터 효과적으로 보호하려면 코드의 상당한 부분을 실행해야 합니다. 방법을 알아보려면 [코드 검사를 사용하여 테스트할 코드 범위 결정](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)을 참조하세요.
 
 ## <a name="use-a-different-unit-test-framework"></a>다른 단위 테스트 프레임워크 사용
 
@@ -149,7 +147,7 @@ Boost, Google, NUnit 등의 타사 테스트 프레임워크를 사용하여 Vis
 
 1. 단위 테스트를 코딩합니다.
 
-   ![단위 테스트에 코드 추가](media/create3rdpartyunittest7.png)
+   ![단위 테스트 코드 파일에 코드 추가](media/create3rdpartyunittest7.png)
 
 ## <a name="see-also"></a>참고 항목
 

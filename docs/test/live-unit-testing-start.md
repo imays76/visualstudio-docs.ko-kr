@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 2017에서 Live Unit Test로 코드를 테스트하는 방법 알아보기
+title: Live Unit Test 2017로 코드를 테스트하는 방법 알아보기
 ms.date: 08/31/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 83507060295c294747f279dd32f96fe8b0a358fa
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 8908b592283f81d8c60a2adb93c12af3f5e61ba7
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008423"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53056787"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Visual Studio에서 Live Unit Testing 시작
 

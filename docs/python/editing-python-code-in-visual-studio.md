@@ -1,7 +1,7 @@
 ---
 title: Python 코드 편집
 description: Visual Studio에서 Python을 편집하는 경우 서식, Lint, 리팩터링과 함께 IntelliSense, 코드 조각 및 탐색 기능이 제공됩니다.
-ms.date: 05/07/2018
+ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8a6b95e375fa509c18c44c9c5ba462e1b6b27fb0
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: b8d92f16f869de400d0d66ff44c1848abffde67f
+ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500123"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "52001271"
 ---
 # <a name="edit-python-code"></a>Python 코드 편집
 
-개발자는 코드 편집기에서 많은 시간을 보내므로 [Visual Studio의 Python 지원](installing-python-support-in-visual-studio.md)에서 생산성 향상에 도움이 되는 기능을 제공합니다. 이러한 기능에는 IntelliSense 구문 강조 표시, 자동 완성, 시그니처 도움말, 메서드 재정의/검색 및 탐색이 포함됩니다.
+사용자는 코드 편집기에서 많은 개발 시간을 보내므로 [Visual Studio의 Python 지원](installing-python-support-in-visual-studio.md)에서 생산성 향상에 도움이 되는 기능을 제공합니다. 이러한 기능에는 IntelliSense 구문 강조 표시, 자동 완성, 시그니처 도움말, 메서드 재정의/검색 및 탐색이 포함됩니다.
 
 또한 편집기는 Visual Studio의 **대화형** 창과 통합되므로 편집기와 창 간에 코드를 쉽게 교환할 수 있습니다. 자세한 내용은 [자습서 3단계: 대화형 REPL 창 사용](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) 및 [대화형 창 사용 - 대화형 명령에 보내기](python-interactive-repl-in-visual-studio.md#send-to-interactive-command)를 참조하세요.
 
@@ -34,7 +34,7 @@ Visual Studio **개체 브라우저**(**보기** > **다른 창** > **개체 브
 
 ## <a name="intellisense"></a>IntelliSense
 
-IntelliSense는 [완성](#completions), [서명 도움말](#signature-help), [요약 정보](#quick-info) 및 [코드 색 지정](#code-coloring)을 제공합니다. Visual Studio 2017 버전 15.7 이상도 [형식 힌트](#type-hints)를 지원합니다.
+IntelliSense는 [완성](#completions), [서명 도움말](#signature-help), [요약 정보](#quick-info) 및 [코드 색 지정](#code-coloring)을 제공합니다. Visual Studio 2017 버전 15.7 이상은 [형식 힌트](#type-hints)도 지원합니다.
 
 **Visual Studio 2017 버전 15.5** 및 이전 버전의 IntelliSense는 프로젝트의 각 Python 환경에 대해 생성된 완성 데이터베이스를 통해 성능을 향상합니다. 패키지를 추가, 제거 또는 업데이트할 경우 데이터베이스를 새로 고쳐야 할 수 있습니다. 데이터베이스 상태는 **Python 환경** 창(**솔루션 탐색기**의 형제)의 **IntelliSense** 탭에 표시됩니다([환경 창 참조](python-environments-window-tab-reference.md#intellisense-tab) 확인).
 

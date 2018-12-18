@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0c6f931af213ff7ce97ec77c2b742d6767cf733
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: da23fa30b3266d9ce8eaae1356a92a583d7b940f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079254"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876921"
 ---
 # <a name="publish-clickonce-applications"></a>ClickOnce 응용 프로그램 게시
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램을 처음으로 게시할 때는 게시 마법사를 사용하여 게시 속성을 설정할 수 있습니다. 마법사에서는 일부 속성만 사용 가능하며 기타 모든 설정은 기본값으로 설정됩니다.  
@@ -37,15 +37,15 @@ ms.locfileid: "39079254"
 ## <a name="publish-wizard"></a>게시 마법사  
  게시 마법사를 사용하여 응용 프로그램 게시를 위한 기본 설정을 지정할 수 있습니다. 여기에는 다음과 같은 게시 속성이 포함됩니다.  
   
--   게시 폴더 위치 - Visual Studio에서 파일을 복사하는 위치(로컬 컴퓨터, 네트워크 파일 공유, FTP 서버 또는 웹 사이트)  
+- 게시 폴더 위치 - Visual Studio에서 파일을 복사하는 위치(로컬 컴퓨터, 네트워크 파일 공유, FTP 서버 또는 웹 사이트)  
   
--   설치 폴더 위치 - 최종 사용자가 설치하는 위치(네트워크 파일 공유, FTP 서버, 웹 사이트, CD/DVD)  
+- 설치 폴더 위치 - 최종 사용자가 설치하는 위치(네트워크 파일 공유, FTP 서버, 웹 사이트, CD/DVD)  
   
--   온라인 또는 오프라인 사용 가능 여부 - 최종 사용자가 네트워크에 연결하지 않고 응용 프로그램에 액세스할 수 있는지 여부  
+- 온라인 또는 오프라인 사용 가능 여부 - 최종 사용자가 네트워크에 연결하지 않고 응용 프로그램에 액세스할 수 있는지 여부  
   
--   업데이트 빈도 - 응용 프로그램에서 새 업데이트를 확인하는 빈도  
+- 업데이트 빈도 - 응용 프로그램에서 새 업데이트를 확인하는 빈도  
   
- 자세한 내용은 [방법: ClickOnce 응용 프로그램 게시 마법사를 사용 하 여 게시](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)합니다.  
+  자세한 내용은 [방법: ClickOnce 응용 프로그램 게시 마법사를 사용 하 여 게시](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)합니다.  
   
 ## <a name="publish-page"></a>게시 페이지  
  **프로젝트 디자이너** 의 **게시** 페이지를 통해 ClickOnce 배포를 위한 속성을 구성합니다. 다음 표에서 항목을 나열합니다.  
@@ -98,7 +98,7 @@ ms.locfileid: "39079254"
 |[연습: ClickOnce 응용 프로그램을 수동으로 배포](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)|.NET Framework 유틸리티를 사용하여 ClickOnce 응용 프로그램을 배포하는 방법을 설명합니다.|  
 |[연습: 다시 서명할 필요가 없습니다 없고 브랜드 정보가 유지 되는 ClickOnce 응용 프로그램을 수동으로 배포](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)|.NET Framework 유틸리티를 사용하여 매니페스트를 다시 서명하지 않고 ClickOnce 응용 프로그램을 배포하는 방법을 설명합니다.|  
 |[방법: 플랫폼을 대상으로 한 프로젝트 구성](../ide/how-to-configure-projects-to-target-platforms.md)|64 비트 프로세서용으로 변경 하 여 게시 하는 방법에 설명 합니다 **대상 CPU** 또는 **플랫폼 대상** 프로젝트 속성을 합니다.|  
-|[연습: 여러.NET Framework 버전에서 실행할 ClickOnce 응용 프로그램을 사용 하도록 설정](http://msdn.microsoft.com/en-us/7f4383af-ed87-4853-b4d4-02a3967a5fd9)|ClickOnce 응용 프로그램을 여러 .NET Framework 버전에 설치하고 실행할 수 있도록 설정하는 방법을 설명합니다.|  
+|[연습: 여러.NET Framework 버전에서 실행할 ClickOnce 응용 프로그램을 사용 하도록 설정](https://msdn.microsoft.com/library/7f4383af-ed87-4853-b4d4-02a3967a5fd9)|ClickOnce 응용 프로그램을 여러 .NET Framework 버전에 설치하고 실행할 수 있도록 설정하는 방법을 설명합니다.|  
 |[연습: ClickOnce 응용 프로그램에 대 한 사용자 지정 설치 관리자 만들기](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)|ClickOnce 응용 프로그램을 설치하는 사용자 지정 설치 관리자를 만드는 방법을 설명합니다.|  
 |[방법: WPF 응용 프로그램을 사용 하도록 설정 하는 비주얼 스타일을 사용 하 여 게시](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)|비주얼 스타일을 사용하는 WPF 응용 프로그램을 게시할 때 발생하는 오류를 해결하기 위한 단계별 지침을 제공합니다.|  
   

@@ -17,86 +17,86 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37af6a289b59b6066a71836e4d44e380b584ec70
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8df70ef5fcaffb7fe2e06df5b6d47e526ff5162f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31145960"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828262"
 ---
-# <a name="test-guide-for-source-control-plug-ins"></a>테스트 소스 제어 플러그 인에 대 한 가이드
-이 섹션에서는 소스 제어 플러그 인을 테스트 하기 위한 지침을 제공 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]합니다. 가장 일반적인 테스트 영역은으로 더 복잡 한 영역 문제가 발생할 수 있는 광범위 한 개요를 제공 됩니다. 이 개요는 테스트 사례의 완전 한 목록을으로 다루지는지 않습니다.  
+# <a name="test-guide-for-source-control-plug-ins"></a>소스 제어 플러그 인에 대한 테스트 가이드
+이 섹션에서는 소스 제어 플러그 인을 테스트 하는 것에 대 한 지침을 제공 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]합니다. 광범위 한 개요는 가장 일반적인 테스트 영역 뿐만 아니라 더 복잡 한 문제가 될 수 있는 영역의 일부 제공 됩니다. 이 개요 테스트 사례의 목록은 아닙니다.  
   
 > [!NOTE]
->  일부 버그 수정 및 향상 된 최신 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE에 기존 소스 제어 플러그 인는 이전에 페이지가 없습니다. 이전 버전의를 사용 하는 동안 문제가 밝혀 낼 수 있습니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]합니다. 이 섹션에 열거 된 영역에 대 한 플러그 인 기존 소스 제어 변경 이후 적용 된 플러그 인에 이전 버전의 경우에 테스트 하는 것이 좋습니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]합니다.  
+>  몇 가지 버그 수정 및 향상 된 최신 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE에서 기존 원본 제어 플러그 인의 이전 버전을 사용 하는 동안 이전에 발생 하지 않았습니다 하는 문제를 발견할 수 있습니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]합니다. 이전 버전의 이후 플러그 인에 변경한 없는 경우에 기존 소스 제어에이 섹션에서는 열거 된 영역에 대 한 플러그 인을 테스트 하는 것이 좋습니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]합니다.  
   
 ## <a name="common-preparation"></a>일반적인 준비  
- 사용 하는 컴퓨터가 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 되며 대상 소스 제어 플러그 인 설치 필요 합니다. 유사 하 게 구성 하는 두 번째 컴퓨터는 테스트 소스 제어에서에서 열기 중 일부에 대해 사용할 수 있습니다.  
+ 컴퓨터 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 이며 대상 소스 제어 플러그 인 설치를 반드시 지정 해야 합니다. 테스트 소스 제어에서에서 열기 중 일부에 대해 구성 된 마찬가지로 두 번째 컴퓨터를 사용할 수 있습니다.  
   
 ## <a name="definition-of-terms"></a>용어 정의  
- 이 테스트 예제에서는 다음과 같은 용어 정의 사용 합니다.  
+ 이 테스트 가이드에서는 다음 용어 정의 사용 합니다.  
   
  클라이언트 프로젝트  
- 모든 프로젝트에서 사용할 수 있는 형식을 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 소스 제어 통합을 지 원하는 (예를 들어 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], 또는 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]).  
+ 모든 프로젝트에서 사용 가능한 형식과 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 소스 제어 통합을 지 (예를 들어 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], 또는 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]).  
   
  웹 프로젝트  
- 웹 프로젝트의 네 가지가: 파일 시스템, 로컬 IIS, 원격 사이트 및 FTP 합니다.  
+ 웹 프로젝트의 네 가지가: 파일 시스템, 로컬 IIS, 원격 사이트 및 FTP.  
   
--   로컬 경로에 파일 시스템 프로젝트를 만들 수 있지만 인터넷 정보 서비스 (IIS)를 설치 하 여 UNC 경로 통해 내부적으로 액세스 하 고 클라이언트 프로젝트 매우 유사 하 게 IDE 내에서 소스 제어 아래에 있을 수 필요가 없습니다.  
+- 파일 시스템 프로젝트는 로컬 경로에서 만들어지지만 정보 서비스 (IIS (인터넷) UNC 경로 통해 내부적으로 액세스 하 고 클라이언트 프로젝트와 마찬가지로 IDE 내에서 소스 제어에 배치할 수 설치할 필요가 없습니다.  
   
--   로컬 IIS 프로젝트 로컬 컴퓨터를 가리키는 URL과 동일한 컴퓨터에 설치 되 고 액세스 되는 IIS를 사용 합니다.  
+- 로컬 IIS 프로젝트는 로컬 컴퓨터를 가리키는 URL 사용 하 여 동일한 컴퓨터에 설치 되 고 액세스 하는 IIS를 사용 하 여 작동 합니다.  
   
--   IIS 서비스, 원격 사이트 프로젝트를 만들 수도 있지만 소스 제어에서가 아니라 IIS 서버 컴퓨터에 아래에 배치 된 내부는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.  
+- IIS 서비스에서 원격 사이트 프로젝트를 만들 수도 있지만 소스 제어 아닌 IIS 서버 컴퓨터에 배치 됩니다 내는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.  
   
--   원격 FTP 서버를 통해 FTP 프로젝트 액세스 하지만 소스 제어에서 사용할 수 없습니다.  
+- FTP 프로젝트 원격 FTP 서버를 통해 액세스할 수 있지만 소스 제어에서 배치할 수 없습니다.  
   
- 인 리스트 먼 트  
- 솔루션 또는 프로젝트를 소스 제어에 대 한 다른 용어입니다.  
+  인 리스트 먼 트  
+  소스 제어에서 프로젝트를 솔루션에 대 한 다른 용어입니다.  
   
- 버전 저장소  
- 소스 제어 플러그 인 API를 통해 액세스 되는 소스 제어 데이터베이스.  
+  버전 저장소  
+  원본 제어 플러그 인 API를 통해 액세스 되는 소스 제어 데이터베이스입니다.  
   
-## <a name="test-areas-covered-in-this-section"></a>이 섹션에서 다루는 테스트 영역  
+## <a name="test-areas-covered-in-this-section"></a>이 섹션에서 다루는 영역 테스트  
   
--   [소스 제어에서 열기 /를 추가 하는 테스트 영역 1:](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
+-   [테스트 영역 1: 소스 제어에 추가/소스 제어에서 열기](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
   
-    -   1a 대/소문자: 소스 제어에 솔루션 추가  
+    -   1a 사례: 소스 제어에 솔루션 추가  
   
-    -   1b 대/소문자: 소스 제어에서 솔루션 열기  
+    -   1b 사례: 소스 제어에서 솔루션 열기  
   
-    -   사례 1 c: 소스 제어에서 솔루션 추가  
+    -   사례 1 c: 소스 제어에서 솔루션을 추가 합니다.  
   
 -   [테스트 영역 2: 소스 제어에서 가져오기](../../extensibility/internals/test-area-2-get-from-source-control.md)  
   
--   [테스트 영역 3: 체크 아웃/체크 아웃 취소](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
+-   [테스트 영역 3: 체크 아웃/체크 아웃 실행 취소](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
   
     -   사례 3: 체크 아웃/체크 아웃 취소  
   
-    -   3a 대/소문자: 체크 아웃  
+    -   3a 사례: 체크 아웃  
   
-    -   사례 3b: 체크 아웃 연결 끊김  
+    -   3b 사례: 체크 아웃 연결 끊김  
   
     -   3c 사례: 쿼리 편집/쿼리 저장 (QEQS)  
   
-    -   자동 체크 아웃 3d 대/소문자:  
+    -   자동 체크 아웃 3d 경우:  
   
     -   사례 3e: 체크 아웃 취소  
   
 -   [테스트 영역 4: 체크 인](../../extensibility/internals/test-area-4-check-in.md)  
   
-    -   4a 대/소문자: 수정 항목  
+    -   4a 사례: 항목 수정  
   
-    -   4b 대/소문자: 파일 추가  
+    -   4b 경우: 파일 추가  
   
-    -   4c 대/소문자: 프로젝트 추가  
+    -   4c 사례: 프로젝트를 추가 합니다.  
   
 -   [테스트 영역 5: 소스 제어 변경](../../extensibility/internals/test-area-5-change-source-control.md)  
   
-    -   5a 대/소문자: 바인딩  
+    -   5a 사례: 바인딩  
   
-    -   5b 대/소문자: 바인딩 해제  
+    -   5b 사례: 바인딩 해제  
   
-    -   5c 대/소문자: 다시 바인딩  
+    -   5c 사례: 다시 바인딩  
   
 -   [테스트 영역 6: 삭제](../../extensibility/internals/test-area-6-delete.md)  
   
@@ -104,9 +104,9 @@ ms.locfileid: "31145960"
   
 -   [테스트 영역 8: 플러그 인 전환](../../extensibility/internals/test-area-8-plug-in-switching.md)  
   
-    -   8a 대/소문자: 자동 변경  
+    -   8a 사례: 자동 변경  
   
-    -   8b 대/소문자: 솔루션을 기반으로 변경  
+    -   8b 사례: 솔루션 기반 변경  
   
 ## <a name="see-also"></a>참고 항목  
  [소스 제어 플러그 인](../../extensibility/source-control-plug-ins.md)

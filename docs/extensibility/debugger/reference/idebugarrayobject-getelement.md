@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2e10eced58835044220da0650712dacb131ada3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cff3d3894ae23e7751ac7e7ccd7e62a7cb4d5374
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109940"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866105"
 ---
 # <a name="idebugarrayobjectgetelement"></a>IDebugArrayObject::GetElement
 배열의 요소를 가져옵니다.  
@@ -49,10 +49,10 @@ int GetElement(
  [out] 반환 된 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 요소를 나타내는 인터페이스입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 s_ok이 고; 반환 그렇지 않은 경우 오류 코드를 반환합니다.  
+ 성공 하면 S_OK를 반환 합니다. 그렇지 않으면 오류 코드를 반환합니다.  
   
 ## <a name="remarks"></a>설명  
- 이 메서드는 배열 개체는 다차원 배열 하는 경우에 배열 개체의 요소를 모두 1 차원 배열에으로 간주 합니다. 예를 들어 배열의 지정 된 `myarray[3][2][6]` 및 `dwIndex` 20 매개 변수를이 메서드는 반환 요소 `myarray[1][1][2]`, 및 `dwIndex` 21의 매개 변수에서 요소를 반환 합니다 `myarray[1][1][3]`합니다. 사용 하 여는 [GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md) 메서드는 배열에 있는 요소의 총 수를 결정 합니다.  
+ 이 메서드는 배열 개체는 다차원 배열 하는 경우에 모든 배열 개체 요소의 1 차원 배열에으로 간주 합니다. 예를 들어, 배열의 지정 된 `myarray[3][2][6]` 및 `dwIndex` 20의 매개 변수를이 메서드는 반환 요소 `myarray[1][1][2]`, 및 `dwIndex` 21의 매개 변수에서 요소 반환 `myarray[1][1][3]`합니다. 사용 된 [GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md) 배열에 있는 요소의 총 수를 확인 하는 방법입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

@@ -9,22 +9,27 @@ description: 고객에 대한 Visual Studio 클라우드 구독 구입 및 관�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: bdf956b02c4bfc5125b452b6eece0cb39e454bc3
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 50f4cfeaa6d0f530a70729155f0e81065359281d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283379"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899463"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>고객에 대한 Visual Studio 클라우드 구독 구입 및 관리
 
-[CSP(클라우드 솔루션 공급자)](https://partner.microsoft.com/en-US/cloud-solution-provider) 프로그램의 파트너는 고객에 대한 Visual Studio Enterprise 및 Visual Studio Professional 클라우드 구독을 구매할 수 있습니다.
+[CSP(클라우드 솔루션 공급자)](https://partner.microsoft.com/cloud-solution-provider) 프로그램의 파트너는 고객에 대한 Visual Studio Enterprise 및 Visual Studio Professional 클라우드 구독을 구매할 수 있습니다.
 
 [클라우드 구독 옵션 비교](https://visualstudio.microsoft.com/vs/pricing)
 
 ## <a name="prerequisites"></a>전제 조건
+
 먼저 파트너 센터에서 고객 테넌트를 설정하고 이 테넌트에 대한 Azure 구독을 만들어야 합니다.
-[자세히](https://docs.microsoft.com/vsts/billing/csp/set-up-csp-customer)
+
+[자세히](/azure/devops/organizations/billing/csp/set-up-csp-customer)
+
+## <a name="who-can-buy-visual-studio-subscriptions"></a>누가 Visual Studio 구독을 구매할 수 있나요?
+Azure 구독에 대한 [소유자 또는 참가자 액세스 권한](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fvsts%2Forganizations%2Fbilling%2Fadd-backup-billing-managers%3Fview%3Dvsts%2520%2520sa&data=02%7C01%7C%7Cb9e717e8abff47b0cd7e08d618edd860%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636723807145220358&sdata=aIaamEXHhx94KCYVY%2FFibqFzNBEqKPntpql867xAMgU%3D&reserved=0)이 있는 누구나 Visual Studio 구독을 구매할 수 있습니다. 
 
 ## <a name="how-to-buy"></a>구매 방법
 
@@ -70,6 +75,7 @@ Visual Studio 구독을 다른 사용자에게 다시 할당하려면 현재 구
 CSP 파트너에 대한 Visual Studio 가격 책정을 보려면 [파트너 센터](https://partnercenter.microsoft.com)에 로그인합니다.  왼쪽 탐색 창에서 **가격 책정 및 제품**을 선택합니다.  오른쪽 상단의 **사용량 기반 서비스**에서 현재 달 가격 책정 파일을 선택합니다. Excel 스프레드시트를 다운로드한 후 **Azure 가격 목록** 시트로 이동하여 **미터 범주** 열을 **Visual Studio**로 필터링합니다.
 
 이 스프레드시트에 나타나는 것을 해석하는 방법은 다음과 같습니다.
+
 | 미터 범주    |   name                 |  단위                                |           뭐냐 하면                          |
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
 | Visual Studio     | 엔터프라이즈             |  구독                         | Visual Studio Enterprise 월간 구독   |
@@ -79,18 +85,21 @@ CSP 파트너에 대한 Visual Studio 가격 책정을 보려면 [파트너 센�
 
 매월 각 Visual Studio 구독을 구입하는(지정된 고객에 대해) 6번째 단위에 5% 할인을 제공합니다. 이러한 이유로 각 구독 옵션에 대해 두 개의 행이 표시됩니다. 한 행은 단위 1-5까지 기본 가격으로 해석해야 하는 “최소 값” 0을 표시합니다. 두 번째 행은 단위 6 이상에 적용되는 5% 할인 가격인 "최소 값" 5를 표시합니다.
 
-
 ## <a name="frequently-asked-questions"></a>질문과 대답
+
 ### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>질문: **월간** 클라우드 구독 요금은 어떻게 처리됩니까?
+
 답변: 첫 번째 구매에 현재 달의 남은 날짜를 포함하기 위해 비례 배분된 수량을 청구합니다. 예를 들어, 10개 Visual Studio Professional 월간 클라우드 구독을 4월 15일에 구매했다면 한 달 30일 중 15일, 즉 50%가 남았으므로 단위 5를 청구하게 되며 청구 단위는 50%로 비례 배분합니다.
 5월 1일에 그리고 그 이후 취소할 때까지 매월 전체 10단위 요금이 청구됩니다.
 
 나중에 유료 수량이 증가할 경우 현재 달의 남은 날짜를 포함하려면 증가된 단위를 비례 배분합니다. 따라서 1 초과 Visual Studio Professional 월간 클라우드 구독을 5월 10일에 구입했다면 대략 0.677단위(한 달 31일 중 남은 21일)를 청구하게 됩니다.
 
 ### <a name="q-how-are-annual-cloud-subscription-charges-processed"></a>질문: **연간** 클라우드 구독 요금은 어떻게 처리됩니까?
+
 답변: 각 구매 시 즉시 구매한 전체 수량 요금을 청구합니다. 요금은 일년에 걸쳐 분배하지 않으며 비례 배분은 없습니다. 현재 연도의 다른 시기에 연간 클라우드 구독을 구입하는 경우 다른 달 내에 구독을 갱신하게 됩니다. 일반적으로 Microsoft 볼륨 라이선스 계약 구매에서 그런 것처럼 고객의 연간 클라우드 구독 모두를 동일하게 취급하지 않습니다.
 
-### <a name="q-how-do-cancelations-work"></a>질문: 취소는 어떻게 합니까?
+### <a name="q-how-do-cancellations-work"></a>질문: 취소는 어떻게 합니까?
+
 답변: Visual Studio 클라우드 구독을 취소할 경우 자동 갱신을 취소합니다. 구독은 기본 갱신일까지 단순히 계속되다가 만료됩니다.
 만료 시 Visual Studio 구독자는 Visual Studio나 구독으로 인한 기타 모든 혜택을 더 이상 사용할 수 없습니다.
 

@@ -1,13 +1,15 @@
 ---
 title: Azure Virtual Machine에서 Visual Studio 사용
+titleSuffix: ''
 description: Azure 가상 머신에서 Visual Studio를 사용하는 방법에 대한 자세한 정보
-ms.date: 07/10/2018
+ms.date: 09/12/2018
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - azure services
-- virtual machine; VM
+- virtual machine
 - installation
 - visual studio
 author: PhilLee-MSFT
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f00291fded1f289d07aafd6124a96f38d3d99b78
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: fc3ceb0caa8e5b8e135c2fad3bbab28c51773ae6
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276808"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159973"
 ---
 # <a id="top"> </a> Azure의 Visual Studio 이미지
 
@@ -32,13 +34,13 @@ Azure를 처음 사용하는 경우 [체험 Azure 계정을 만드세요](https:
 
 Azure Marketplace에서 최신 주 버전(Visual Studio 2017 및 Visual Studio 2015)용 이미지를 찾을 수 있습니다. 주 버전마다 원래 릴리스된 (RTW) 버전과 최신 업데이트 버전이 표시됩니다. 각 버전은 Visual Studio Enterprise 및 Visual Studio Community 버전을 제공합니다. 이러한 이미지는 최신 Visual Studio 및 Windows 업데이트를 포함하도록 매달 한 번 이상 업데이트됩니다. 이미지 이름은 동일하지만 각 이미지의 설명에 설치된 제품 버전과 이미지의 “기준” 날짜가 포함되어 있습니다.
 
-| 릴리스 버전                                              | 버전                     |     제품 버전     |
-|:------------------------------------------------------------:|:----------------------------:|:-----------------------:|
-| Visual Studio 2017: 최신(버전 15.7)                    |    Enterprise, Community     |      버전 15.7.5     |
-| Visual Studio 2017: 최신 미리 보기(버전 15.8, 미리 보기 5) |    Enterprise, Community     |      버전 15.8.5     |
-|         Visual Studio 2017: RTW                              |    Enterprise, Community     |      버전 15.0.15    |
-|   Visual Studio 2015: 최신(업데이트 3)                      |    Enterprise, Community     |  버전 14.0.25431.01  |
-|         Visual Studio 2015: RTW                              |             없음             | (서비스 만료됨) |
+| 릴리스 버전                                              | 버전                     |     제품 버전      |
+|:------------------------------------------------------------:|:----------------------------:|:------------------------:|
+|   Visual Studio 2019: 미리 보기(미리 보기 1)                   |           엔터프라이즈         | Version 16.0.0 미리 보기 1 |
+| Visual Studio 2017: 최신(버전 15.9)                    |    Enterprise, Community     |      버전 15.9.0      |
+|         Visual Studio 2017: RTW                              |    Enterprise, Community     |      버전 15.0.18     |
+|   Visual Studio 2015: 최신(업데이트 3)                      |    Enterprise, Community     |  버전 14.0.25431.01   |
+|         Visual Studio 2015: RTW                              |             없음             | (서비스 만료됨)  |
 
 > [!NOTE]
 > Microsoft 서비스 정책에 따라 원래 릴리스된(RTW) Visual Studio 2015 버전에 대한 서비스가 만료되었습니다. Visual Studio 2015 업데이트 3이 Visual Studio 2015 제품 라인에 대해 제공되는 유일한 버전입니다.
@@ -99,7 +101,7 @@ Visual Studio는 Azure의 “사용자 라이선스 필요” 모델을 따릅�
 
 개발 환경의 스펙트럼은 매우 크며, 더 복잡한 환경을 빌드할 경우 연관된 실제 비용이 있습니다. 환경의 구성과 관계없이 나중에 사용하거나 팀의 다른 구성원이 사용할 수 있도록 구성된 VM을 “기본 이미지”로 저장하거나 캡처할 수 있습니다. 그런 다음, 새 VM을 부팅할 때 Azure Marketplace 이미지 대신 기본 이미지에서 프로비전합니다.
 
-빠른 요약: 시스템 준비 도구(Sysprep)를 사용하고 실행 중인 VM을 종료한 다음, Azure Portal의 UI를 통해 VM을 이미지로 캡처(그림 1)합니다. Azure는 이미지가 포함된 `.vhd` 파일을 선택한 저장소 계정에 저장합니다. 그러면 새 이미지가 구독의 리소스 목록에 이미지 리소스로 표시됩니다.
+빠른 요약: 시스템 준비 도구(Sysprep)를 사용하고 실행 중인 VM을 종료한 다음, Azure Portal의 UI를 통해 VM을 이미지로 캡처 *(그림 1)* 합니다. Azure는 이미지가 포함된 `.vhd` 파일을 선택한 저장소 계정에 저장합니다. 그러면 새 이미지가 구독의 리소스 목록에 이미지 리소스로 표시됩니다.
 
 <img src="media/capture-vm.png" alt="Capture an image through the Azure portal’s UI" style="border:3px solid Silver; display: block; margin: auto;"><center>*(그림 1) Azure Portal의 UI를 통해 이미지 캡처*</center>
 

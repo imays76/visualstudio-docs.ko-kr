@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 부하 테스트에 웹 캐시 데이터를 사용하는 가상 사용자 비율 지정
+title: 부하 테스트에 웹 캐시 데이터를 사용하는 가상 사용자 비율 지정
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 406c1c0c853563dc45b76e0bbcfefb3e21df0aff
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 2195b99658d05e9e73a86cf723fcb8e9d4f36bd4
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379373"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060241"
 ---
 # <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>방법: 웹 캐시 데이터를 사용하는 가상 사용자 비율 지정
 
 **부하 테스트 새로 만들기 마법사**를 사용하여 부하 테스트를 만든 다음, **부하 테스트 편집기**를 사용하여 시나리오 속성을 테스트 요구 사항 및 목표에 맞게 변경할 수 있습니다. 부하 테스트 시나리오 속성과 해당 설명의 전체 목록을 보려면 [부하 테스트 시나리오 속성](../test/load-test-scenario-properties.md)을 참조하세요.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 **속성** 창에서 **새 사용자의 백분율** 속성을 설정하고 **부하 테스트 편집기**에서는 부하 테스트 시나리오 속성을 편집합니다.
 
@@ -49,7 +51,7 @@ ms.locfileid: "39379373"
 ## <a name="see-also"></a>참고 항목
 
 - [부하 테스트 시나리오 편집](../test/edit-load-test-scenarios.md)
-- [연습: 부하 테스트 생성 및 실행](../test/walkthrough-create-and-run-a-load-test.md)
+- [연습: 부하 테스트 만들기 및 실행](../test/walkthrough-create-and-run-a-load-test.md)
 - [테스트 컨트롤러 및 테스트 에이전트](configure-test-agents-and-controllers-for-load-tests.md)
 - [부하 테스트 시나리오 속성](../test/load-test-scenario-properties.md)
 - [모델 가상 사용자 동작에 대한 부하 패턴 편집](../test/edit-load-patterns-to-model-virtual-user-activities.md)

@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d3fbe44347e1d0c453c2db9de1f5deac84ab771
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ef3630e692118bad20441cecceedcb7866a10f2f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31914808"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948684"
 ---
 # <a name="ca1815-override-equals-and-operator-equals-on-value-types"></a>CA1815: 값 형식에서 Equals 또는 같음 연산자를 재정의하십시오.
+
 |||
 |-|-|
 |TypeName|OverrideEqualsAndOperatorEqualsOnValueTypes|
@@ -32,21 +33,21 @@ ms.locfileid: "31914808"
 |변경 수준|주요 변경 아님|
 
 ## <a name="cause"></a>원인
- 공용 값 형식을 재정의 하지 않는 <xref:System.Object.Equals%2A?displayProperty=fullName>, 또는 같음 연산자 (= =)를 구현 하지 않습니다. 이 규칙에서 열거형을 확인 하지 않습니다.
+ 공개 값 형식의 재정의 하지 않는 <xref:System.Object.Equals%2A?displayProperty=fullName>, 또는 같음 연산자 (= =) 구현 하지 않습니다. 이 규칙에서 열거형을 확인 하지 않습니다.
 
 ## <a name="rule-description"></a>규칙 설명
- 값 형식의 경우의 상속 된 구현 <xref:System.Object.Equals%2A> Reflection 라이브러리를 사용 하 고 모든 필드의 내용을 비교 합니다. Reflection에는 많은 계산이 요구되며 모든 필드의 일치 여부를 비교하는 것이 불필요할 수 있습니다. 비교 또는 정렬할 경우 사용자가 자격 증명 또는 해시 테이블 키로 사용할 경우에 값 형식을 구현 해야 <xref:System.Object.Equals%2A>합니다. 프로그래밍 언어가 연산자 오버로드를 지원하는 경우 같음 및 같지 않음 연산자의 구현도 제공해야 합니다.
+ 값 형식, 상속 된 구현에 대 한 <xref:System.Object.Equals%2A> 리플렉션 라이브러리를 사용 하 고 모든 필드의 내용을 비교 합니다. Reflection에는 많은 계산이 요구되며 모든 필드의 일치 여부를 비교하는 것이 불필요할 수 있습니다. 비교 또는 정렬 인스턴스 수를 예상 하거나 해시 테이블 키로 사용 하는 경우에 값 형식 구현 해야 <xref:System.Object.Equals%2A>합니다. 프로그래밍 언어가 연산자 오버로드를 지원하는 경우 같음 및 같지 않음 연산자의 구현도 제공해야 합니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이 규칙 위반 문제를 해결 하려면의 구현을 제공 <xref:System.Object.Equals%2A>합니다. 가능 하면 같음 연산자를 구현 합니다.
+ 이 규칙 위반 문제를 해결 하는 구현을 제공할 <xref:System.Object.Equals%2A>합니다. 가능한 경우 같음 연산자를 구현 합니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
- 값 형식의 인스턴스를 서로 비교 되지 않는 경우이 규칙에서 경고를 표시 하지 않아도 안전 합니다.
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
+ 값 형식의 인스턴스를 서로 비교 하지 않을 경우이 규칙에서 경고를 표시 하지 않아도 안전 합니다.
 
-## <a name="example-of-a-violation"></a>위반의 예로
+## <a name="example-of-a-violation"></a>위반의 예
 
 ### <a name="description"></a>설명
- 다음 예제에서는이 규칙을 위반 하는 구조 (값 형식)를 보여 줍니다.
+ 다음 예제에서는이 규칙을 위반 하는 구조체 (값 형식)를 보여 줍니다.
 
 ### <a name="code"></a>코드
  [!code-csharp[FxCop.Performance.OverrideEqualsViolation#1](../code-quality/codesnippet/CSharp/ca1815-override-equals-and-operator-equals-on-value-types_1.cs)]
@@ -54,7 +55,7 @@ ms.locfileid: "31914808"
 ## <a name="example-of-how-to-fix"></a>수정 하는 방법의 예
 
 ### <a name="description"></a>설명
- 다음 예제에서는 재정의 하 여 위반을 해결 <xref:System.ValueType.Equals%2A?displayProperty=fullName> 같음 연산자를 구현 하 고 (= =,! =) 합니다.
+ 다음 예제에서는 재정의 하 여 위반을 해결 <xref:System.ValueType.Equals%2A?displayProperty=fullName> 및 같음 연산자를 구현 합니다. (= =,! =) 합니다.
 
 ### <a name="code"></a>코드
  [!code-csharp[FxCop.Performance.OverrideEqualsFixed#1](../code-quality/codesnippet/CSharp/ca1815-override-equals-and-operator-equals-on-value-types_2.cs)]
@@ -66,5 +67,5 @@ ms.locfileid: "31914808"
 
  [CA2226: 연산자에는 대칭 오버로드가 있어야 합니다.](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
  <xref:System.Object.Equals%2A?displayProperty=fullName>

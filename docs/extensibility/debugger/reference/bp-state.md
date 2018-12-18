@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8908b61323c80891f93158046b9c7e821287d2e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0527cefeaed58e990d8474c25a522788e4dba6fa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110044"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924254"
 ---
 # <a name="bpstate"></a>BP_STATE
 바인딩된 중단점의 존재 여부를 지정 하 고 또한 사용 되는지 여부를 지정 합니다.  
@@ -48,19 +48,19 @@ public enum enum_BP_STATE {
   
 ## <a name="members"></a>멤버  
  BPS_NONE  
- 중단점이 있음을 지정 합니다.  
+ 중단점이 있는지를 지정 합니다.  
   
  BPS_DELETED  
- 중단점 삭제 했을 지정 합니다.  
+ 중단점 삭제 된 것을 지정 합니다.  
   
  BPS_DISABLED  
- 중단점을 사용할 수 없다는 것을 지정 합니다.  
+ 중단점은 사용 되지 않음을 지정 합니다.  
   
  BPS_ENABLED  
  중단점이 설정 되었음을 지정 합니다.  
   
 ## <a name="remarks"></a>설명  
- 반환 되는 [우편 번호](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md) 메서드.  
+ 반환 된 [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md) 메서드.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  
@@ -71,4 +71,4 @@ public enum enum_BP_STATE {
   
 ## <a name="see-also"></a>참고 항목  
  [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [우편 번호](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)
+ [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 055c057120753d156b19bbb359c4cc1ded3f58b5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e193ae70de88606d68861ccb9eb20d6926d18241
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118663"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905794"
 ---
 # <a name="idebugpropertyfieldgetpropertysetter"></a>IDebugPropertyField::GetPropertySetter
 속성을 설정 하는 메서드를 가져옵니다.  
@@ -44,10 +44,10 @@ int GetPropertySetter(
  [out] 반환 된 [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) 속성을 설정 하는 메서드를 나타내는 개체입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 s_ok이 고; 반환 그렇지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 S_OK를 반환 합니다. 그렇지 않으면 오류 코드를 반환합니다.  
   
 ## <a name="remarks"></a>설명  
- 속성을 가져오는 메서드를 얻기 위해 호출 된 [GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md) 메서드.  
+ Get 속성을 가져오는 메서드를 호출 합니다 [GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md) 메서드.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md)   

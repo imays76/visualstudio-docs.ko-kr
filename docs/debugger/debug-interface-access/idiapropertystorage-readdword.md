@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7353ef9f1aca7348adf681bfe627441e409906e6
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 109d5c7c63674ac0b1b72f0b2e538e2993552e7c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458735"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842692"
 ---
 # <a name="idiapropertystoragereaddword"></a>IDiaPropertyStorage::ReadDWORD
-읽고 `DWORD` 속성 집합에 있는 값입니다.  
+읽고 `DWORD` 속성 집합의 값입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -35,16 +35,16 @@ HRESULT ReadDWORD (
   
 #### <a name="parameters"></a>매개 변수  
  `id`  
- [in] 읽을 속성의 식별자 (`PROPID` 으로 WTypes.h에 정의 되어 있는 한 `ULONG`).  
+ [in] 읽을 속성의 식별자 (`PROPID` 으로 WTypes.h에 정의 된 `ULONG`).  
   
  `pValue`  
  [out] 속성 값을 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`; 그렇지 않으면 오류 코드가 반환 됩니다. 반환 `E_INVALIDARG` 형식의 속성이 없으면 `DWORD`합니다.  
+ 성공 하면 반환 `S_OK`; 그렇지 않으면 오류 코드를 반환 합니다. 반환 `E_INVALIDARG` 형식의 속성이 없는 경우 `DWORD`합니다.  
   
 ## <a name="remarks"></a>설명  
- A `DWORD` 32 비트 부호 없는 정수로 Windows에 의해 정의 됩니다.  
+ `DWORD` Windows 32 비트 부호 없는 정수로 정의 됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

@@ -1,5 +1,5 @@
 ---
-title: Microsoft.NET Framework 2.0 또는 3.0을 사용 하는 경우에 혼합된 모드 디버깅만 지원 | Microsoft Docs
+title: Microsoft.NET Framework 2.0 또는 3.0을 사용 하는 경우에 지원 됩니다 혼합된 모드 디버깅 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5492c79fa15582c5aeaf9b7794958a37bd569313
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 9d51a0ca72840b20e23eaaa9db3a82382a3fa012
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474962"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44284070"
 ---
 # <a name="mixed-mode-debugging-is-only-supported-when-using-microsoft-net-framework-20-or-30"></a>혼합 모드 디버깅은 Microsoft .NET Framework 2.0 또는 3.0을 사용할 때만 지원됩니다.
 2.0 이전 버전의 Microsoft .NET Framework에서는 64비트 프로세스의 혼합 모드 디버깅이 지원되지 않습니다. 즉, 디버깅하는 동안 네이티브 코드에서 관리 코드로 또는 그 반대로 이동할 수 없습니다.  
@@ -37,23 +37,23 @@ ms.locfileid: "31474962"
   
 ### <a name="to-change-the-operating-system-to-32-bit-visual-basic-or-c"></a>운영 체제를 32비트로 변경하려면(Visual Basic 또는 C#)  
   
-1.  **솔루션 탐색기**프로젝트를 마우스 오른쪽 단추로 클릭 한 다음 클릭 **속성** 의 바로 가기 메뉴.  
+1.  **솔루션 탐색기**프로젝트를 마우스 오른쪽 단추로 클릭 한 다음 클릭 **속성** 바로 가기 메뉴에 있습니다.  
   
-2.  속성 페이지에서 클릭 된 **컴파일** 또는 **디버그** 탭 합니다.  
+2.  속성 페이지를 클릭 합니다 **컴파일합니다** 또는 **디버그** 탭 합니다.  
   
-3.  클릭 **플랫폼**를 선택한 후 **x86** 플랫폼 목록에서 합니다.  
+3.  클릭 **플랫폼**를 선택한 후 **x86** 플랫폼 목록에서.  
   
-     기본적으로 Visual Basic 및 C# 컴파일러에서는 모든 CPU에서 실행할 수 있는 코드가 생성됩니다. 이러한 이진 코드는 64비트 컴퓨터에서 64비트 프로세스로 실행됩니다. 선택 해야 하는 32 비트 프로세스를 실행 하려면 **Win32**이 아니라 **AnyCPU**합니다.  
+     기본적으로 Visual Basic 및 C# 컴파일러에서는 모든 CPU에서 실행할 수 있는 코드가 생성됩니다. 이러한 이진 코드는 64비트 컴퓨터에서 64비트 프로세스로 실행됩니다. 32 비트 프로세스에서 실행 하려면 선택 해야 합니다 **Win32**가 아닌 **AnyCPU**합니다.  
   
 ### <a name="to-change-the-operating-system-to-32-bit-cc"></a>운영 체제를 32비트로 변경하려면(C/C++)  
   
-1.  **솔루션 탐색기**프로젝트를 마우스 오른쪽 단추로 클릭 한 다음 클릭 **속성** 의 바로 가기 메뉴.  
+1.  **솔루션 탐색기**프로젝트를 마우스 오른쪽 단추로 클릭 한 다음 클릭 **속성** 바로 가기 메뉴에 있습니다.  
   
-     속성 페이지에서 클릭 **플랫폼**를 선택한 후 **Win32** 플랫폼 목록에서 합니다.  
+     속성 페이지에서 클릭 **플랫폼**를 선택한 후 **Win32** 플랫폼 목록에서.  
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   
--   참조 [SQL 디버깅 설정](http://msdn.microsoft.com/en-us/3db09e68-edcc-42de-9c22-4e97cfd55ab3)합니다.  
+-   참조 [SQL 디버깅 설정](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [64비트 응용 프로그램 디버그](../debugger/debug-64-bit-applications.md)

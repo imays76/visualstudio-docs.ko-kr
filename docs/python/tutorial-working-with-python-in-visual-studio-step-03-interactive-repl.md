@@ -1,22 +1,24 @@
 ---
-title: Python 작업 자습서, 3단계, 대화형 REPL
+title: Visual Studio 자습서 3단계, 대화형 REPL의 Python
+titleSuffix: ''
 description: Visual Studio의 Python 기능에 대한 핵심 연습의 3단계로, Python 대화형 REPL 창을 설명합니다.
-ms.date: 06/26/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 00a66cb56fb3ada8f48018c644a37189b494cc98
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 7f237dde510ad9fd65416ae7521ebeed705781c2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511758"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066121"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>3단계: 대화형 REPL 창 사용
 

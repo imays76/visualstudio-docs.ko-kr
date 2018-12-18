@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb634f59a3a7eb3b37e70dd87f48b22a07251d0e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b9ed1b803905f403e68053c157b40ec30dc03fbd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100434"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840066"
 ---
 # <a name="contextinfo"></a>CONTEXT_INFO
-이 구조는 메모리 내 컨텍스트에 또는 코드 컨텍스트를 설명합니다.  
+이 구조는 메모리 컨텍스트 또는 코드 컨텍스트를 설명합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -53,7 +53,7 @@ public struct CONTEXT_INFO {
   
 ## <a name="members"></a>멤버  
  dwFields  
- 그의 플래그의 조합을 [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) 채워진 필드를 지정 하는 열거형**합니다.**  
+ 그의 플래그의 조합을 [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) 채워진 필드를 지정 하는 열거형<strong>합니다.</strong>  
   
  bstrModuleUrl  
  컨텍스트가 있는 모듈의 이름입니다.  
@@ -71,12 +71,12 @@ public struct CONTEXT_INFO {
  지정된 된 컨텍스트 위치한 코드에서 주소의 오프셋입니다.  
   
  bstrAddressAbsolute  
- 지정된 된 컨텍스트 위치한 메모리에 절대 주소입니다.  
+ 지정 된 컨텍스트가 있는 메모리의 절대 주소입니다.  
   
 ## <a name="remarks"></a>설명  
  이 구조에 대 한 호출에서 반환 되는 [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) 메서드.  
   
- 이 구조에 대 한 일반적인 사용을 지 원하는는 **메모리** 디버그 창.  
+ 이 구조에 대 한 일반적인 용도 지 원하는 것을 **메모리** 디버그 창입니다.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  

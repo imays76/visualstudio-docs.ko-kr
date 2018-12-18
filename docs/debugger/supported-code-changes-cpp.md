@@ -1,5 +1,5 @@
 ---
-title: 지원 되는 코드 변경 (c + +) | Microsoft Docs
+title: 코드 변경 (c + +)를 지원 합니다. | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bb97c08b8673854e0fe0d0bbd64efbe038227c43
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c1d4333014f63bec73c13b3a7b1d5f9c7d59697f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477039"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854119"
 ---
 # <a name="supported-code-changes-c"></a>지원되는 코드 변경(C++)
 Visual C++용 편집하며 계속하기에서는 대부분의 코드 변경 유형을 처리합니다. 그러나 일부 변경 내용은 프로그램을 실행하는 동안 적용할 수 없습니다. 이러한 변경 내용을 적용하려면 실행을 중지하고 새로운 버전의 코드를 빌드해야 합니다.  
@@ -40,38 +40,38 @@ Visual C++용 편집하며 계속하기에서는 대부분의 코드 변경 유�
 ##  <a name="BKMK_Unsupported_changes"></a> 지원되지 않는 변경 사항  
  디버깅 세션 중에 적용할 수 없는 C/C++ 변경 내용은 다음과 같습니다.  
   
--   대부분의 전역 또는 정적 데이터 변경  
+- 대부분의 전역 또는 정적 데이터 변경  
   
--   다른 컴퓨터에서 복사하여 로컬로 빌드하지 않은 실행 파일의 변경  
+- 다른 컴퓨터에서 복사하여 로컬로 빌드하지 않은 실행 파일의 변경  
   
--   개체(예: 클래스의 데이터 멤버)의 레이아웃에 영향을 주는 데이터 형식의 변경  
+- 개체(예: 클래스의 데이터 멤버)의 레이아웃에 영향을 주는 데이터 형식의 변경  
   
--   64KB를 초과하는 새 코드나 데이터 추가  
+- 64KB를 초과하는 새 코드나 데이터 추가  
   
--   명령 포인터 앞의 위치에 생성자가 필요한 변수 추가  
+- 명령 포인터 앞의 위치에 생성자가 필요한 변수 추가  
   
--   런타임 초기화가 필요한 코드에 영향을 주는 변경  
+- 런타임 초기화가 필요한 코드에 영향을 주는 변경  
   
--   특정한 경우에 예외 처리기 추가  
+- 특정한 경우에 예외 처리기 추가  
   
--   리소스 파일의 변경  
+- 리소스 파일의 변경  
   
--   읽기 전용 파일의 코드 변경  
+- 읽기 전용 파일의 코드 변경  
   
--   해당하는 PDB 파일이 없는 코드의 변경  
+- 해당하는 PDB 파일이 없는 코드의 변경  
   
--   개체 파일이 없는 코드의 변경  
+- 개체 파일이 없는 코드의 변경  
   
- 이러한 변경 중 하나를 수행하고 코드 변경 내용을 적용하려고 하면 **출력** 창에 오류 또는 경고 메시지가 나타납니다.  
+  이러한 변경 중 하나를 수행하고 코드 변경 내용을 적용하려고 하면 **출력** 창에 오류 또는 경고 메시지가 나타납니다.  
   
--   편집하며 계속하기는 정적 라이브러리를 업데이트하지 않습니다. 정적 라이브러리에서 변경하면 이전 버전을 사용하여 실행이 계속되고 경고가 발생하지 않습니다.  
+- 편집하며 계속하기는 정적 라이브러리를 업데이트하지 않습니다. 정적 라이브러리에서 변경하면 이전 버전을 사용하여 실행이 계속되고 경고가 발생하지 않습니다.  
   
 ##  <a name="BKMK_Unsupported_scenarios"></a> 지원되지 않는 시나리오  
  다음과 같은 디버깅 시나리오에서는 C/C++의 편집하며 계속하기를 사용할 수 없습니다.  
   
 -   [/Zo(최적화된 디버깅 향상)](/cpp/build/reference/zo-enhance-optimized-debugging)로 컴파일한 네이티브 앱 디버그  
   
--   Visual Studio 2015 업데이트 1을 UWP 앱 또는 구성 요소 디버깅 이전의 Visual Studio의 버전입니다. Visual Studio 2015 업데이트 1 부터는 있습니다 צ ְ ײ 편집 하며 계속 하기 c + + UWP 앱 및 DirectX 앱에서 지원 하기 때문에 `/ZI` 컴파일러 스위치와는 `/bigobj` 전환 합니다. `/FASTLINK` 컴파일러 스위치를 지원하기 때문에 Windows 스토어 C++ 앱 및 DirectX 앱에서 편집하며 계속하기를 사용할 수 있습니다.  
+-   Visual Studio 2015 업데이트 1에서 UWP 앱 또는 구성 요소 디버깅 이전의 Visual Studio의 버전입니다. Visual Studio 2015 업데이트 1부터 사용할 수 편집 하며 계속 하기가 c + + UWP 앱 및 DirectX 앱에서 이제 지원 하기 때문에 `/ZI` 컴파일러 스위치는 `/bigobj` 전환 합니다. `/FASTLINK` 컴파일러 스위치를 지원하기 때문에 Windows 스토어 C++ 앱 및 DirectX 앱에서 편집하며 계속하기를 사용할 수 있습니다.  
   
 -   Windows 98에서 디버깅  
   

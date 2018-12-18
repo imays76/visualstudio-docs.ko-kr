@@ -1,6 +1,6 @@
 ---
-title: '방법: 실행 중인 프로세스에 성능 도구 연결 및 분리 | Microsoft 문서'
-ms.custom: ''
+title: 실행 중인 프로세스에 성능 도구 연결
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ea9b35192eb2584f92856e5ab9c50eac22da85f7
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: cb245b6930d1a633d5d5befa3266c3c7540c0915
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237229"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048530"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>방법: 실행 중인 프로세스에 성능 도구 연결 및 분리
 프로파일러를 사용하여 실행 프로세스에 연결하거나 실행 프로세스에서 분리하여 더 쉽게 성능 데이터를 샘플링하고 수집할 수 있습니다. 이 방법을 사용하면 응용 프로그램 로드 시간에 대한 데이터를 수집하지 않거나 특정 상태에 도달한 후 프로세스의 성능을 모니터링하려고 할 때 프로세스를 프로파일링할 수 있습니다.  
@@ -33,13 +33,13 @@ ms.locfileid: "35237229"
   
  프로파일링할 수 있는 프로세스는 컴퓨터의 관리자가 설정한 사용자 액세스 권한에 따라 결정됩니다. 예를 들어 사용자 계정에 다음에 대한 사용 권한이 있을 수 있습니다.  
   
--   관리자가 드라이버 및 서비스를 시작하도록 설정한 경우 고급 프로파일링 기능.  
+- 관리자가 드라이버 및 서비스를 시작하도록 설정한 경우 고급 프로파일링 기능.  
   
--   샘플 프로파일링만(도메인 사용자).  
+- 샘플 프로파일링만(도메인 사용자).  
   
--   모든 사용자에게 프로파일링 액세스 거부.  
+- 모든 사용자에게 프로파일링 액세스 거부.  
   
- 자세한 내용은 [프로파일링 및 Windows Vista 보안](../profiling/profiling-and-windows-vista-security.md) 및 [VSPerfCmd](../profiling/vsperfcmd.md)의 ADMIN 옵션을 참조하세요.  
+  자세한 내용은 [프로파일링 및 Windows Vista 보안](../profiling/profiling-and-windows-vista-security.md) 및 [VSPerfCmd](../profiling/vsperfcmd.md)의 ADMIN 옵션을 참조하세요.  
   
 ### <a name="to-attach-to-a-running-process"></a>실행 중인 프로세스에 연결하려면  
   

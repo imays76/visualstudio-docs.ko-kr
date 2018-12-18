@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c527d79c68f4ff95e002ab53b40b0fec9dd68f7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5c8bd3ba878f0ab66cb6919ab84cd7eb8426219e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113782"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925346"
 ---
 # <a name="idebugportsupplierdescription2getdescription"></a>IDebugPortSupplierDescription2::GetDescription
 포트 공급자에 대 한 설명 및 설명 메타 데이터를 검색합니다.  
@@ -41,13 +41,13 @@ public int GetDescription(
   
 #### <a name="parameters"></a>매개 변수  
  `pdwFlags`  
- [out] 메타 데이터 설명에 대 한 플래그입니다.  
+ [out] 메타 데이터 플래그에 대 한 설명입니다.  
   
  `pbstrText`  
- [out] 포트 공급 업체의 설명입니다.  
+ [out] 포트 공급자의 설명입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugPortSupplierDescription2](../../../extensibility/debugger/reference/idebugportsupplierdescription2.md)

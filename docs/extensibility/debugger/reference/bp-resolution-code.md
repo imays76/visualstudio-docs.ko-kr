@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: debb6d9e8f37ed34c67c8df659160949cfcf6158
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dbd9e3d683336d2009e8ff9f02665f7610f988f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100964"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915193"
 ---
 # <a name="bpresolutioncode"></a>BP_RESOLUTION_CODE
-코드 중단점의 위치를 설명합니다.  
+코드 중단점의 위치를 설명 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -41,10 +41,10 @@ public struct BP_RESOLUTION_CODE {
   
 ## <a name="members"></a>멤버  
  `pCodeContext`  
- [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) 코드의 중단점의 위치를 식별 하는 개체입니다.  
+ 합니다 [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) 코드에서 중단점의 위치를 식별 하는 개체입니다.  
   
 ## <a name="remarks"></a>설명  
- 이 구조체의 멤버는는 [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) 구조체에는 설정의 멤버는 [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) 에서 반환 된 구조는 [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)메서드.  
+ 이 구조체의 멤버인 합니다 [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) 설정에의 멤버는 구조를 [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) 반환한 구조는 [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)메서드.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3cc30f572f48622776bb1014c2a5e3c17bf8f27b
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 638cfc29ed2aa05a8576a2244b81f0625453076d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512378"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816699"
 ---
 # <a name="layout-for-visual-studio"></a>Visual Studio에 대 한 레이아웃
 대부분의 Visual Studio 대화 상자 [유틸리티 대화 상자 레이아웃](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), 다음 표준에 대화 상자는 unthemed 되 [Windows Desktop 대화 상자 레이아웃 원칙](/windows/desktop/uxguide/win-dialog-box)합니다. Visual Studio UI를 새로 고치려면 이동, 띄 대화 상자의 일부 환경으로 제품 정의 설정 하는 새 디자인을가지고 있습니다. 이러한 [테마가 지정 된 대화 상자 레이아웃](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) 모양이 테마를 지정 합니다.  
@@ -56,19 +56,19 @@ ms.locfileid: "39512378"
   
 #### <a name="command-buttons"></a>명령 단추  
   
--   명령 단추 콘텐츠에 없는 대화 프레임에서 작동합니다. 맨 오른쪽 하며 명확 하 게 구분 단추를 설정 하려면 위의 변수 충분 한 공간이 있어야 합니다.  
+- 명령 단추 콘텐츠에 없는 대화 프레임에서 작동합니다. 맨 오른쪽 하며 명확 하 게 구분 단추를 설정 하려면 위의 변수 충분 한 공간이 있어야 합니다.  
   
--   가로 단추 대화 상자 내에서 작동 하는 경우 대체 명령 단추 구성은 오른쪽 위에 세로로 쌓입니다. 참조 [내부 명령 단추](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_InteriorCommandButtons) 아래.  
+- 가로 단추 대화 상자 내에서 작동 하는 경우 대체 명령 단추 구성은 오른쪽 위에 세로로 쌓입니다. 참조 [내부 명령 단추](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_InteriorCommandButtons) 아래.  
   
--   명령 단추 (왼쪽/의 아래쪽 가운데 대화 상자)의 왼쪽에 공간에는 작업 대화 상자 컨트롤의 "밴드"의 일부로 간주 됩니다. 해당 공간에 방해가 해야 하는 유일한은 전체 작업 또는 대화 상자와 관련 된 도움말 링크입니다.  
+- 명령 단추 (왼쪽/의 아래쪽 가운데 대화 상자)의 왼쪽에 공간에는 작업 대화 상자 컨트롤의 "밴드"의 일부로 간주 됩니다. 해당 공간에 방해가 해야 하는 유일한은 전체 작업 또는 대화 상자와 관련 된 도움말 링크입니다.  
   
--   명령 단추 75 x 23 픽셀 이어야 합니다.  
+- 명령 단추 75 x 23 픽셀 이어야 합니다.  
   
--   명령 단추 떨어져 6 픽셀 이어야 합니다.  
+- 명령 단추 떨어져 6 픽셀 이어야 합니다.  
   
- ![기본 단추 맞춤](../../extensibility/ux-guidelines/media/0801-c_buttonalign.png "0801 c_ButtonAlign")  
+  ![기본 단추 맞춤](../../extensibility/ux-guidelines/media/0801-c_buttonalign.png "0801 c_ButtonAlign")  
   
- **그림 08.01-c: 기본 단추 맞춤**  
+  **그림 08.01-c: 기본 단추 맞춤**  
   
 #### <a name="labels"></a>레이블  
   
@@ -106,19 +106,19 @@ ms.locfileid: "39512378"
 ####  <a name="BKMK_InteriorCommandButtons"></a> 내부 명령 단추  
  더 복잡 한 대화 상자에서 내부 컨트롤에는 대화의 커밋 단추 있는 영향을 줄 수 있는 관련된 단추 자체 있을 수 있습니다.  
   
--   사용 하 여 내부의 세로 맞춤 (열) 단추로 **확인**/**취소** 오른쪽 아래 모퉁이의 가로 방향으로 합니다.  
+- 사용 하 여 내부의 세로 맞춤 (열) 단추로 **확인**/**취소** 오른쪽 아래 모퉁이의 가로 방향으로 합니다.  
   
--   사용 하 여 내부의 가로 맞춤 (행) 단추로 **확인**/**취소** 오른쪽 위 모퉁이에서 세로 방향으로 합니다. 이 상황은 일반적이 지 않습니다.  
+- 사용 하 여 내부의 가로 맞춤 (행) 단추로 **확인**/**취소** 오른쪽 위 모퉁이에서 세로 방향으로 합니다. 이 상황은 일반적이 지 않습니다.  
   
--   내부 단추 크기 75 x 23 픽셀의 크기와 일치 하는 표준 단추 크기를 대상으로 해야 **확인**/**취소** 가능 하면 단추입니다. 단추 레이블 표준 단추 크기를 초과 하는 단추를 만드는 경우 해당 집합의 다른 단추는 광범위 한 크기를 사용 하 여 일치 해야 합니다.  
+- 내부 단추 크기 75 x 23 픽셀의 크기와 일치 하는 표준 단추 크기를 대상으로 해야 **확인**/**취소** 가능 하면 단추입니다. 단추 레이블 표준 단추 크기를 초과 하는 단추를 만드는 경우 해당 집합의 다른 단추는 광범위 한 크기를 사용 하 여 일치 해야 합니다.  
   
- ![가로 확인 및 취소 단추가](../../extensibility/ux-guidelines/media/0801-f_horizokcan.png "0801 f_HorizOKCan")  
+  ![가로 확인 및 취소 단추가](../../extensibility/ux-guidelines/media/0801-f_horizokcan.png "0801 f_HorizOKCan")  
   
- **가로 확인/취소를 사용 하 여 그림 08.01-f: 세로 내부 단추**  
+  **가로 확인/취소를 사용 하 여 그림 08.01-f: 세로 내부 단추**  
   
- ![세로 확인 및 취소 단추가](../../extensibility/ux-guidelines/media/0801-g_vertokcan.png "0801 g_VertOKCan")  
+  ![세로 확인 및 취소 단추가](../../extensibility/ux-guidelines/media/0801-g_vertokcan.png "0801 g_VertOKCan")  
   
- **세로 확인/취소를 사용 하 여 그림 08.01-g: 가로 내부 단추**  
+  **세로 확인/취소를 사용 하 여 그림 08.01-g: 가로 내부 단추**  
   
 #### <a name="browse-button"></a>[찾아보기...] 단추  
  **[찾아보기...]**  텍스트 상자에 다음 단추 해야 줄임표를 포함 하 여 전체에서 "찾아보기..." 쓰십시오. 공간이 긴밀 하 게 또는 여러 개 있을 경우 **[찾아보기...]**  방금 줄임표 단추 화면에서 단추를 줄일 수 있습니다.  
@@ -159,5 +159,5 @@ ms.locfileid: "39512378"
   
 ## <a name="see-also"></a>참고 항목  
  [Visual Studio 용 응용 프로그램 패턴](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md)   
- [컨트롤 (Windows)](https://msdn.microsoft.com/library/windows/desktop/dn742399.aspx)   
- [대화 상자 (Windows)](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742499\(v=vs.85\).aspx)
+ [컨트롤 (Windows)](/windows/desktop/uxguide/controls)   
+ [대화 상자 (Windows)](/windows/desktop/uxguide/win-dialog-box)

@@ -1,31 +1,31 @@
 ---
-title: Azure App Service에서 Python 구성
+title: Azure App Service에서 Python 구성(Windows)
 description: Azure App Service에 Python 인터프리터 및 라이브러리를 설치하고 해당 인터프리터를 제대로 참조하도록 웹 응용 프로그램을 구성하는 방법입니다.
-ms.date: 07/26/2018
+ms.date: 10/18/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 76d413e37ec7ebeabd8c76655b4c47758ffafc48
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: e21be06c26ec6a15b46ef72c0fe33a35b314c989
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468717"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051295"
 ---
-# <a name="how-to-set-up-a-python-environment-on-azure-app-service"></a>Azure App Service에서 Python 환경을 설정하는 방법
+# <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>Azure App Service에서 Python 환경을 설정하는 방법(Windows)
 
 > [!Important]
-> Microsoft는 Linux의 App Service에 직접 배포하기 위해 이 아티클에 설명된 대로 App Service에 대한 Python 확장의 사용을 중단할 예정입니다. 그 동안 확장은 계속 작동합니다. Linux에서 App Service를 배포하려면 [Web App for Containers에서 Python 웹앱 배포](/azure/app-service/containers/quickstart-python)를 참조하세요.
+> Microsoft는 [Linux의 App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)에 직접 배포하기 위해 이 문서에 설명된 Windows의 App Service에 대한 Python 확장의 사용을 중단했습니다.
 
-
-  [Azure App Service](https://azure.microsoft.com/services/app-service/)는 브라우저를 통해 액세스한 사이트, 고유한 클라이언트에서 사용된 REST API, 이벤트 트리거된 처리 등 웹앱용 Platform-as-a-Service 제품입니다. App Service는 Python을 사용한 앱 구현을 완벽하게 지원합니다.
+[Azure App Service](https://azure.microsoft.com/services/app-service/)는 브라우저를 통해 액세스한 사이트, 고유한 클라이언트에서 사용된 REST API, 이벤트 트리거된 처리 등 웹앱용 Platform-as-a-Service 제품입니다. App Service는 Python을 사용한 앱 구현을 완벽하게 지원합니다.
 
 사용자 지정이 가능한 Azure App Service의 Python 지원은 각각 특정 버전의 Python 런타임이 포함된 App Service *사이트 확장* 집합으로 제공됩니다. 이 문서에 설명된 대로 원하는 모든 패키지를 해당 환경에 직접 설치할 수 있습니다. App Service 자체에서 환경을 사용자 지정하면 웹 앱 프로젝트에서 패키지를 유지 관리하거나 앱 코드로 업로드할 필요가 없습니다.
 

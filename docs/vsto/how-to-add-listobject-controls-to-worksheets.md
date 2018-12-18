@@ -16,11 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5af88022529263446c82fc27aee9d781d7da945f
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 402e7f80ea208d714b31bd61e25b352494310487
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949255"
 ---
 # <a name="how-to-add-listobject-controls-to-worksheets"></a>방법: 워크시트에 ListObject 컨트롤 추가
   추가할 수 있습니다 <xref:Microsoft.Office.Tools.Excel.ListObject> 디자인 타임 및 런타임에 문서 수준 프로젝트에서 Microsoft Office Excel 워크시트에 컨트롤입니다.  
@@ -31,13 +32,13 @@ ms.lasthandoff: 05/25/2018
   
  이 항목에서는 다음 작업에 대해 설명합니다.  
   
--   [디자인 타임에 ListObject 컨트롤 추가](#designtime)  
+- [디자인 타임에 ListObject 컨트롤 추가](#designtime)  
   
--   [런타임에 문서 수준 프로젝트에서 ListObject 컨트롤 추가](#runtimedoclevel)  
+- [런타임에 문서 수준 프로젝트에서 ListObject 컨트롤 추가](#runtimedoclevel)  
   
--   [런타임에 VSTO 추가 기능 프로젝트에서 ListObject 컨트롤 추가](#runtimeaddin)  
+- [런타임에 VSTO 추가 기능 프로젝트에서 ListObject 컨트롤 추가](#runtimeaddin)  
   
- 에 대 한 자세한 내용은 <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤 참조 [ListObject 컨트롤](../vsto/listobject-control.md)합니다.  
+  에 대 한 자세한 내용은 <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤을 참조 하세요 [ListObject 컨트롤](../vsto/listobject-control.md)합니다.  
   
 ##  <a name="designtime"></a> 디자인 타임에 ListObject 컨트롤 추가  
  디자인 타임에 문서 수준 프로젝트에서 워크시트에 <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤을 추가하기 위한 여러 가지 방법이 있습니다. 즉, Excel, Visual Studio **도구 상자**및 **데이터 원본** 창에서 추가할 수 있습니다.  
@@ -62,14 +63,14 @@ ms.lasthandoff: 05/25/2018
   
 #### <a name="to-use-the-data-sources-window"></a>데이터 원본 창을 사용하려면  
   
-1.  **데이터 원본** 창을 열고 데이터베이스에서 데이터 원본을 만듭니다. 자세한 내용은 참조 [새 연결 추가](../data-tools/add-new-connections.md)합니다.  
+1.  **데이터 원본** 창을 열고 데이터베이스에서 데이터 원본을 만듭니다. 자세한 내용은 [새 연결 추가](../data-tools/add-new-connections.md)합니다.  
   
 2.  **데이터 원본** 창에서 테이블을 워크시트로 끌어 옵니다.  
   
-     데이터 바인딩된 <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤이 워크시트에 추가됩니다. 자세한 내용은 참조 [데이터 바인딩 및 Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms)합니다.  
+     데이터 바인딩된 <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤이 워크시트에 추가됩니다. 자세한 내용은 [데이터 바인딩 및 Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms)합니다.  
   
 ##  <a name="runtimedoclevel"></a> 런타임에 문서 수준 프로젝트에서 ListObject 컨트롤 추가  
- 추가할 수는 <xref:Microsoft.Office.Tools.Excel.ListObject> 런타임에 동적으로 제어 합니다. 이를 통해 이벤트에 대한 응답으로 호스트 컨트롤을 만들 수 있습니다. 동적으로 생성된 리스트 개체는 워크시트를 닫을 때 워크시트에서 호스트 컨트롤로 유지되지 않습니다. 자세한 내용은 참조 [런타임에 Office 문서에 컨트롤 추가](../vsto/adding-controls-to-office-documents-at-run-time.md)합니다.  
+ 추가할 수는 <xref:Microsoft.Office.Tools.Excel.ListObject> 런타임에 동적으로 제어 합니다. 이를 통해 이벤트에 대한 응답으로 호스트 컨트롤을 만들 수 있습니다. 동적으로 생성된 리스트 개체는 워크시트를 닫을 때 워크시트에서 호스트 컨트롤로 유지되지 않습니다. 자세한 내용은 [런타임에 Office 문서에 컨트롤 추가](../vsto/adding-controls-to-office-documents-at-run-time.md)합니다.  
   
 #### <a name="to-add-a-listobject-control-to-a-worksheet-programmatically"></a>프로그래밍 방식으로 워크시트에 ListObject 컨트롤을 추가하려면  
   
@@ -79,7 +80,7 @@ ms.lasthandoff: 05/25/2018
      [!code-vb[Trin_VstcoreHostControlsExcel#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#2)]  
   
 ##  <a name="runtimeaddin"></a> 런타임에 VSTO 추가 기능 프로젝트에서 ListObject 컨트롤 추가  
- VSTO 추가 기능 프로젝트에서 열려 있는 워크시트에 프로그래밍 방식으로 <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤을 추가할 수 있습니다. 동적으로 생성된 리스트 개체는 워크시트를 저장한 다음 닫을 때 워크시트에서 호스트 컨트롤로 유지되지 않습니다. 자세한 내용은 참조 [확장 Word 문서 및 Excel VSTO 추가 기능에서 런타임에 통합](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)합니다.  
+ VSTO 추가 기능 프로젝트에서 열려 있는 워크시트에 프로그래밍 방식으로 <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤을 추가할 수 있습니다. 동적으로 생성된 리스트 개체는 워크시트를 저장한 다음 닫을 때 워크시트에서 호스트 컨트롤로 유지되지 않습니다. 자세한 내용은 [확장 Word 문서 및 Excel 통합 런타임에 VSTO 추가 기능에서](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)합니다.  
   
 #### <a name="to-add-a-listobject-control-to-a-worksheet-programmatically"></a>프로그래밍 방식으로 워크시트에 ListObject 컨트롤을 추가하려면  
   

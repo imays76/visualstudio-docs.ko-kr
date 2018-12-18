@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 부하 테스트에 대한 테스트 컨트롤러 및 테스트 에이전트 요구 사항
+title: 부하 테스트에 대한 테스트 컨트롤러 및 테스트 에이전트 요구 사항
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 84cf5649eac1d3183eb0c50f4a7010f202363a78
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 8a5cc1f58e0cbdb59458311a1b9a4390bf69bbff
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380807"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051456"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>부하 테스트에 대한 테스트 컨트롤러 및 테스트 에이전트 요구 사항
 
 단위, 웹 성능, 부하 및 수동 테스트를 포함한 여러 테스트 형식이 Visual Studio에 통합되었습니다. Visual Studio를 사용하면 Visual Studio 응용 프로그램 수명 주기 관리 사용자가 테스트 컨트롤러와 하나 이상의 에이전트를 사용하여 원격 컴퓨터에서 테스트를 실행할 수 있습니다. [테스트 에이전트 설치 및 구성](../test/lab-management/install-configure-test-agents.md)을 참조하세요.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="hardware-and-software-requirements"></a>하드웨어 및 소프트웨어 요구 사항
 
@@ -31,7 +33,7 @@ ms.locfileid: "39380807"
 다음 표에서는 테스트 컨트롤러와 테스트 에이전트를 배포하기 위한 권장 하드웨어 요구 사항을 보여 줍니다.
 
 |**구성**|**구성 요소**|**CPU**|**HD**|**메모리**|
-|-----------------------|-------------------|-------------|------------|----------------|
+|-|-------------------|-|------------|-|
 |가상 사용자 수 500명 미만|테스트 에이전트|2.6GHz|10GB|2GB|
 |가상 사용자 수 1000명 미만|테스트 에이전트|이중 프로세서 2.6GHz|10 GB|2 GB|
 |N x 가상 사용자 수 1000명|테스트 에이전트|각각 2.6Ghz의 이중 프로세서가 있는 N개의 에이전트로 확장|10GB|2GB|

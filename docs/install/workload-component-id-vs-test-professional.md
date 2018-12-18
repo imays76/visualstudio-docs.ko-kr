@@ -1,11 +1,12 @@
 ---
 title: Visual Studio Test Professional 2017 워크로드 및 구성 요소 ID
+titleSuffix: ''
 description: Visual Studio 작업 및 구성 요소 ID를 사용하여 테스터를 위한 통합된 테스트 도구를 제공합니다.
 keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 05/07/2018
+ms.date: 11/13/2018
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -17,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: 70c03438-8434-4921-ada0-c172519af431
 ms.workload:
 - multiple
-ms.openlocfilehash: 03bea9dd8fc772102edde2a508a49307a8f17543
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: fa09c844d4ea0fa1b6d4c255f10af6bda4f3128c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280366"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049285"
 ---
 # <a name="visual-studio-test-professional-2017-component-directory"></a>Visual Studio Test Professional 2017 구성 요소 디렉터리
 
@@ -43,7 +44,7 @@ VSIX 매니페스트에 종속성을 설정하는 경우 구성 요소 ID만 지
 
 **ID:** Microsoft.VisualStudio.Workload.TestProfessional
 
-**설명:** Test Professional은 테스터를 위한 통합된 테스트 도구를 제공하여 테스트 수명 주기 전반에 걸쳐 테스트 요구 사항에 맞게 작동합니다.
+**설명:** Test Professional은 다양한 작업을 수행하는 테스터를 대상으로 하는 통합 테스트 도구를 제공하여, 전체 수명 주기 테스트 전반에 걸쳐 테스트 요구 사항을 충족할 수 있도록 도와줍니다.
 
 ### <a name="components-included-by-this-workload"></a>이 작업에 포함되는 구성 요소
 
@@ -60,16 +61,7 @@ Microsoft.VisualStudio.Component.TestTools.MicrosoftTestManager | Microsoft Test
 --- | --- | ---
 N/A | N/A | N/A
 
-## <a name="get-support"></a>지원 받기
-
-때로는 무엇인가 잘못될 수도 있습니다. Visual Studio 설치에 실패하는 경우에는 [Visual Studio 2017 설치 및 업그레이드 문제 해결](troubleshooting-installation-issues.md) 페이지를 참조하세요. 문제 해결 단계가 도움이 되지 않는 경우 라이브 채팅을 통해 Microsoft에 설치 지원을 문의할 수 있습니다(영어만 가능). 자세한 내용은 [Visual Studio 지원 페이지](https://visualstudio.microsoft.com/vs/support/#talktous)를 참조하세요.
-
-몇 가지 추가 지원 옵션은 다음과 같습니다.
-
-* Visual Studio 설치 관리자와 Visual Studio IDE에 모두 표시되는 [문제 보고](../ide/how-to-report-a-problem-with-visual-studio-2017.md) 도구를 통해 Microsoft에 제품 문제를 보고할 수 있습니다.
-* [UserVoice](https://visualstudio.uservoice.com/forums/121579)에서 Microsoft와 제품 제안을 공유할 수 있습니다.
-* [Visual Studio 개발자 커뮤니티](https://developercommunity.visualstudio.com/)에서 제품 문제를 추적하고, 답변을 찾을 수 있습니다.
-* [Gitter 커뮤니티의 Visual Studio 관련 대화](https://gitter.im/Microsoft/VisualStudio)를 통해 Microsoft 및 다른 Visual Studio 개발자와 소통할 수도 있습니다. (이 옵션을 사용하려면 [GitHub](https://github.com/) 계정이 필요합니다.)
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>참고 항목
 

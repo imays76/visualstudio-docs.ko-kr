@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c3089477e49ad1793bbe5b6aa403bf7a8fef149
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 24864562d11267cfc96bd3b3622864275eaecea2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468823"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950110"
 ---
 # <a name="idiasymbolgetnoinline"></a>IDiaSymbol::get_noInline
-함수가 인라인 불가능 한 것으로 표시 되었는지 여부를 지정 하는 플래그를 검색 (사용 하는 [noinline](/cpp/cpp/noinline) 특성).  
+함수를 인라인 되지 않은 것으로 표시 되었는지 여부를 지정 하는 플래그를 검색 (사용 하는 [noinline](/cpp/cpp/noinline) 특성).  
   
 ## <a name="syntax"></a>구문  
   
@@ -34,20 +34,20 @@ HRESULT get_noInline(
   
 #### <a name="parameters"></a>매개 변수  
  `pFlag`  
- [out] 반환 `TRUE` 함수에 있는 경우는 `noinline` 특성; 그렇지 않으면 반환 `FALSE`합니다.  
+ [out] 반환 `TRUE` 함수에 있으면 합니다 `noinline` 반환이 고, 그렇지 않으면 특성 `FALSE`합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
+ 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
   
 > [!NOTE]
->  반환 값이 `S_FALSE` 의미는 속성은 해당 기호를 사용할 수 없습니다.  
+>  반환 값이 `S_FALSE` 속성 기호를 사용할 수 없는 것을 의미 합니다.  
   
 ## <a name="requirements"></a>요구 사항  
   
 |요구 사항|설명|  
 |-----------------|-----------------|  
 |헤더:|dia2.h|  
-|버전:|DIA SDK v 8.0|  
+|버전:|DIA SDK v8.0|  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

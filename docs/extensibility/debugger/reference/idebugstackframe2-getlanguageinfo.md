@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73a044d9279cb7efccb0e4ee61c988c6d4e7d7a5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8ebb64c7c33391288037b56ce795e834dbbc02b4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117604"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908809"
 ---
 # <a name="idebugstackframe2getlanguageinfo"></a>IDebugStackFrame2::GetLanguageInfo
 이 스택 프레임과 연결 된 언어를 가져옵니다.  
@@ -46,7 +46,7 @@ int GetLanguageInfo (
  [out] 이 스택 프레임과 연결 된 메서드를 구현 하는 언어의 이름을 반환 합니다.  
   
  `pguidLanguage`  
- [out] 반환 된 `GUID` 언어입니다. 에 대 한는 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 언어, 예를 들어 다음 돌아오게 됩니다.  
+ [out] 반환 된 `GUID` 언어입니다. 에 대 한는 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 언어, 예를 들어, 다음 돌아오게 됩니다.  
   
 -   `guidVBScriptLang`  
   
@@ -61,7 +61,7 @@ int GetLanguageInfo (
 -   `guidScriptLang`  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

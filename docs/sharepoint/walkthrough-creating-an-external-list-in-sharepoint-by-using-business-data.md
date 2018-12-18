@@ -24,12 +24,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d8a557ae7f08afceee49e9e797f18562b548a67c
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 18848f0ebd6ffa289ea09553de82f5b9eb893181
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119477"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295841"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>연습: 비즈니스 데이터를 사용 하 여 SharePoint에서 외부 목록 만들기
 
@@ -49,7 +49,7 @@ ms.locfileid: "37119477"
 
 이 연습을 완료하려면 다음 구성 요소가 필요합니다.
 
-- Windows 및 SharePoint 버전을 지원 합니다. 자세한 내용은 [SharePoint 솔루션 개발을 위한 요구 사항](../sharepoint/requirements-for-developing-sharepoint-solutions.md)합니다.
+- Windows 및 SharePoint 버전을 지원 합니다.
 
 - AdventureWorks 예제 데이터베이스에 액세스 합니다. AdventureWorks 데이터베이스를 설치 하는 방법에 대 한 자세한 내용은 참조 하세요. [SQL Server 예제 데이터베이스](http://go.microsoft.com/fwlink/?LinkID=117483)합니다.
 
@@ -85,7 +85,7 @@ ms.locfileid: "37119477"
 
 2. SQL Server AdventureWorks 샘플 데이터베이스에 대 한 연결을 추가 합니다.
 
-     자세한 내용은 [연결 추가/수정 (Microsoft SQL Server)](http://msdn.microsoft.com/fa400910-26c3-4df7-b9d1-115e688b4ea3)합니다.
+     자세한 내용은 [연결 추가/수정 (Microsoft SQL Server)](https://msdn.microsoft.com/fa400910-26c3-4df7-b9d1-115e688b4ea3)합니다.
 
 3. **솔루션 탐색기**에서 프로젝트 노드를 선택합니다.
 
@@ -187,7 +187,7 @@ Specificfinder 메서드를 사용 하 여 연락처 엔터티를 추가 합니�
 
 10. 다음 필드의 각 형식 설명자를 만들려면 6 단계를 반복 합니다.
 
-    |name|형식 이름|
+    |이름|형식 이름|
     |----------|---------------|
     |FirstName|System.String|
     |LastName|System.String|
@@ -232,12 +232,12 @@ Specificfinder 메서드를 사용 하 여 연락처 엔터티를 추가 합니�
 
 5. 에 `ContactService` 클래스를 대체 합니다 `ReadList` 메서드를 다음 코드로 합니다. 이 코드는 다음 작업을 수행합니다.
 
-    - AdventureWorks 데이터베이스의 Contacts 테이블에서 데이터를 검색합니다.
+   - AdventureWorks 데이터베이스의 Contacts 테이블에서 데이터를 검색합니다.
 
-    - BDC 서비스에 연락처 엔터티 목록을 반환합니다.
+   - BDC 서비스에 연락처 엔터티 목록을 반환합니다.
 
-    > [!NOTE]
-    > 값을 `ServerName` 필드 서버의 이름입니다.
+     > [!NOTE]
+     > 값을 `ServerName` 필드 서버의 이름입니다.
 
      [!code-csharp[SP_BDC#2](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#2)]
      [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]

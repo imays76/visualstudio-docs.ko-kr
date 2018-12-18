@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 자주 사용되는 명령의 기본 바로 가기 키
+title: 자주 사용되는 명령의 기본 바로 가기 키
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2f53ae425f4942a9a14289e84798756c9fec969
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: c8a2b269f64bff048f1407db289a9ac4252b8f31
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512550"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53056479"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Visual Studio에서 자주 사용되는 명령의 기본 바로 가기 키
 
@@ -26,7 +26,7 @@ ms.locfileid: "39512550"
 ## <a name="build"></a>빌드
 
 |명령|바로 가기 키[컨텍스트]|
-|--------------|-------------------------------------|
+|--------------| - |
 |빌드.솔루션빌드|**Ctrl+Shift+B**[전역]|
 |빌드.취소|**Ctrl+Break**[전역]|
 |빌드.컴파일|**Ctrl+F7**[전역]|
@@ -35,7 +35,7 @@ ms.locfileid: "39512550"
 ## <a name="debug"></a>디버그
 
 |명령|바로 가기 키[컨텍스트]|
-|--------------|-------------------------------------|
+|--------------| - |
 |디버그.함수에서중단|**Ctrl+B**[전역]|
 |디버그.모두중단|**Ctrl+Alt+Break**[전역]|
 |디버그.모든중단점삭제|**Ctrl+Shift+F9** [전역]|
@@ -55,7 +55,7 @@ ms.locfileid: "39512550"
 ## <a name="edit"></a>편집
 
 |명령|바로 가기 키[컨텍스트]|
-|--------------|-------------------------------------|
+|--------------| - |
 |편집.구분선|**Enter**[텍스트 편집기, 보고서 디자이너, Windows Forms 디자이너]<br /><br /> 또는 **Shift+Enter**[텍스트 편집기]|
 |편집.정의부분만보이기|**Ctrl+M**, **Ctrl+O**[텍스트 편집기]|
 |편집.선택영역을주석으로처리|**Ctrl+K**, **Ctrl+C**[텍스트 편집기]|
@@ -106,7 +106,7 @@ ms.locfileid: "39512550"
 ## <a name="file"></a>파일
 
 |명령|바로 가기 키[컨텍스트]|
-|--------------|-------------------------------------|
+|--------------| - |
 |File.Exit|**Alt+F4**[전역]|
 |파일.새파일|**Ctrl+N**[전역]|
 |파일.새프로젝트|**Ctrl+Shift+N**[전역]|
@@ -122,26 +122,26 @@ ms.locfileid: "39512550"
 ## <a name="project"></a>프로젝트
 
 |명령|바로 가기 키[컨텍스트]|
-|--------------|-------------------------------------|
+|--------------| - |
 |프로젝트.기존항목추가|**Shift+Alt+A**[전역]|
 |프로젝트.새항목추가|**Ctrl+Shift+A**[전역]|
 
 ## <a name="refactor"></a>리팩터링
 
 |명령|바로 가기 키[컨텍스트]|
-|-------------|-----------------------------------|
+|-------------| - |
 |리팩터링.메서드추출|**Ctrl+R, Ctrl+M**[전역]|
 
 ## <a name="tools"></a>도구
 
 |명령|바로 가기 키[컨텍스트]|
-|-------------|-----------------------------------|
+|-------------| - |
 |Tools.AttachtoProcess|**Ctrl+Alt+P**[전역]|
 
 ## <a name="view"></a>보기
 
 |명령|바로 가기 키[컨텍스트]|
-|--------------|-------------------------------------|
+|--------------| - |
 |보기.클래스뷰|**Ctrl+Shift+C**[전역]|
 |보기.레이블편집|**F2**[전역]|
 |보기.오류목록|**Ctrl+\\, Ctrl+E**[전역]<br /><br /> 또는 **Ctrl+\\, E**[전역]|
@@ -150,7 +150,7 @@ ms.locfileid: "39512550"
 |보기.개체브라우저|**Ctrl+Alt+J**[전역]|
 |보기.출력|**Ctrl+Alt+O**[전역]|
 |보기.속성창|**F4**|
-|View.Refresh|**F5**[팀 탐색기, Team Foundation Build 정보 편집기]|
+|View.Refresh|**F5**[팀 탐색기]|
 |보기.서버탐색기|**Ctrl+Alt+S**[전역]|
 |보기.스마트태그표시|**Ctrl+.** [Global]<br /><br /> 또는 **Shift+Alt+F10**[전역, HTML 편집기 디자인 뷰]|
 |보기.솔루션탐색기|**Ctrl+Alt+L**[전역]|
@@ -162,7 +162,7 @@ ms.locfileid: "39512550"
 ## <a name="window"></a>창
 
 |명령|바로 가기 키[컨텍스트]|
-|--------------|-------------------------------------|
+|--------------| - |
 |창.문서창활성화|**Esc**[전역]|
 |창.문서창닫기|**Ctrl+F4**[전역]|
 |창.다음문서창|**Ctrl+F6**[전역]|

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 부하 테스트 플러그 인 만들기
+title: 부하 테스트 플러그 인 만들기
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,19 +14,21 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ef21d270154025a52c603186ba959fad080e5bba
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: c106eeda8ad3fd1f9293d6f7c3c7df1a8b48767b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380540"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064720"
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>방법: 부하 테스트 플러그 인 만들기
 
 부하 테스트 플러그 인을 만들어 부하 테스트가 실행되는 동안 코드를 여러 시점에서 실행할 수 있습니다. 플러그 인을 만들어 부하 테스트의 기본 제공 기능을 확장하거나 수정합니다. 예를 들어 부하 테스트 플러그 인을 코딩하여 부하 테스트가 실행되는 동안 부하 테스트 패턴을 설정하거나 수정할 수 있습니다. 그러기 위해서는 <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> 인터페이스를 상속하는 클래스를 만들어야 합니다. 이 클래스는 이 인터페이스의 <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin.Initialize*> 메서드를 구현해야 합니다. 자세한 내용은 <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>을 참조하세요.
 
 > [!NOTE]
-> 웹 성능 테스트 플러그 인도 만들 수 있습니다. 자세한 내용은 [방법: 웹 성능 테스트 플러그 인 만들기](../test/how-to-create-a-web-performance-test-plug-in.md)를 참조하세요.
+> 웹 성능 테스트 플러그 인도 만들 수 있습니다. 자세한 내용은 [방법: 웹 성능 테스트 플러그 인 만들기](../test/how-to-create-a-web-performance-test-plug-in.md)
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-create-a-load-test-plug-in-by-using-visual-c"></a>Visual C#을 사용하여 부하 테스트 플러그 인을 만들려면
 
@@ -92,14 +94,14 @@ ms.locfileid: "39380540"
     > [!WARNING]
     > 이 플러그 인을 사용하는 부하 테스트 또는 웹 성능 테스트를 실행할 때 다음과 유사한 오류가 발생할 수 있습니다.
     >
-    > **요청 실패: \<플러그 인> 이벤트: 파일 또는 어셈블리 '\<"플러그 인 이름".dll 파일>, 버전=\<n.n.n.n >, Culture = neutral, PublicKeyToken = null' 또는 해당 종속성 중 하나를 로드할 수 없습니다. 지정한 파일을 찾을 수 없습니다.**
+    > **요청 실패: \<플러그 인> 이벤트의 예외: 파일 또는 어셈블리 '\<"플러그 인 이름".dll 파일>, 버전=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' 또는 해당 종속성 중 하나를 로드할 수 없습니다. 지정한 파일을 찾을 수 없습니다.**
     >
     > 이 오류는 플러그 인의 코드를 변경하고 새 DLL 버전 **(버전=0.0.0.0)** 을 만들었지만 해당 플러그 인이 계속해서 원래 플러그 인 버전을 참조하는 경우에 발생합니다. 이 문제를 해결하려면 다음 단계를 수행합니다.
     >
     > 1.  웹 성능 및 부하 테스트 프로젝트에서는 참조에 경고가 표시됩니다. 참조를 제거했다가 플러그 인 DLL에 다시 추가합니다.
     > 2.  테스트 또는 적절한 위치에서 플러그 인을 제거했다가 다시 추가합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드에서는 LoadTestFinished 이벤트가 발생한 후 사용자 지정 코드를 실행하는 부하 테스트 플러그 인을 보여 줍니다. 이 코드가 원격 컴퓨터의 테스트 에이전트에서 실행되는 경우 테스트 에이전트에 localhost SMTP 서비스가 없으면 메시지 상자가 열려 있으므로 부하 테스트가 "진행 중" 상태로 유지됩니다.
 

@@ -13,16 +13,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2009e4c186682157eab6803ad3055fd5818fd02d
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 8a21067eab6e55f3fb031e57fa2257b0d40a7eb6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511813"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886463"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>파일 저장소 및 XML Serialization 사용자 지정
 
-사용자 인스턴스를 저장 하는 경우 또는 *모델*, 도메인 특정 언어 (DSL)의 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], XML 파일로 만들어지거나 업데이트 됨. 파일은 저장소에 모델을 다시 다시 로드 될 수 있습니다.
+사용자 인스턴스를 저장 하는 경우 또는 *모델*, Visual Studio에서 도메인 특정 언어 (DSL)를 XML 파일로 만들어지거나 업데이트 됨. 파일은 저장소에 모델을 다시 다시 로드 될 수 있습니다.
 
 아래에서 설정을 조정 하 여 serialization 체계를 사용자 지정할 수 있습니다 **Xml 직렬화 동작** DSL 탐색기에서. 아래에 있는 노드가 **Xml 직렬화 동작** 모든 도메인 클래스, 속성 및 관계에 대 한 합니다. 관계의 원본 클래스 아래에 있습니다. 셰이프, 커넥터 및 다이어그램 클래스에 해당 하는 노드가 있습니다.
 
@@ -301,7 +301,7 @@ Xml 속성 노드 클래스 노드에 있습니다.
 데이터 노드 역할은 원본 클래스 노드에 있습니다.
 
 |속성|설명|
-|--------------|-----------------|
+|-|-|
 |사용자 지정 모니커는|사용자 고유의 코드를 생성 하 고이 관계를 트래버스하는 모니커 확인을 제공 하려는 경우 true로 설정 합니다.<br /><br /> 자세한 내용은 솔루션을 빌드하고 오류 메시지를 두 번 클릭 합니다.|
 |도메인 관계|이러한 옵션은 적용 하려는 관계를 지정 합니다. 읽기 전용입니다.|
 |요소를 생략 합니다.|True 이면 소스 역할에 해당 하는 XML 노드의 스키마에서 생략 됩니다.<br /><br /> 원본 및 대상 클래스 간에 둘 이상의 관계가 없으면이 역할 노드 두 관계에 속해 있는 링크를 구분 합니다. 따라서는 설정 하지 않으면이 옵션이 경우에 것이 좋습니다.|

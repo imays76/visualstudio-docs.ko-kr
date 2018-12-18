@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 002ad16d94467c135e08ef0040fd7ffd51462719
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3f0484fce6f5355361c0c5156cd3c7ad827775c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463139"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919431"
 ---
 # <a name="idiasourcefilegetchecksum"></a>IDiaSourceFile::get_checksum
 체크섬 바이트 수를 검색 합니다.  
@@ -36,23 +36,23 @@ HRESULT get_checksum (
   
 #### <a name="parameters"></a>매개 변수  
  `cbData`  
- [in] 데이터 버퍼의 바이트의 크기입니다.  
+ [in] 바이트의 데이터 버퍼의 크기입니다.  
   
  `pcbData`  
- [out] 체크섬 바이트 수를 반환합니다. 이 매개 변수 여야 `NULL`합니다.  
+ [out] 체크섬 바이트 수를 반환합니다. 이 매개 변수 수 없습니다 `NULL`합니다.  
   
  `data`  
- [out에서] 체크섬 바이트도 채워진 버퍼입니다. 이 매개 변수가 `NULL`, 다음 `pcbData` 필요한 바이트 수를 반환 합니다.  
+ [out에서] 채워진 체크섬 바이트 버퍼입니다. 이 매개 변수가 `NULL`, 다음 `pcbData` 필요한 바이트 수를 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 를 체크섬 바이트를 생성 하는 데 사용 된 체크섬 알고리즘의 형식을 확인 하려면 호출는 [idiasourcefile:: Get_checksumtype](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md) 메서드.  
+ 유형의 체크섬 바이트를 생성 하는 데 사용 된 체크섬 알고리즘을 확인 하려면 호출을 [idiasourcefile:: Get_checksumtype](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md) 메서드.  
   
- 체크섬 변경 소스 파일 체크섬 바이트에서 변경 사항을 반영 하므로 일반적으로 소스 파일의 이미지에서 만들어집니다. 체크섬 바이트 일치 하지 않으면 파일 것으로 간주 해야 파일의 로드 된 이미지에서 생성 된 체크섬 손상 되었거나 임의로 변경 합니다.  
+ 체크섬은 체크섬 바이트에 대 한 변경 내용에서 소스 파일의 변경 내용이 반영 하므로 일반적으로 소스 파일의 이미지에서 생성 됩니다. 체크섬 바이트 일치 하지 않는 경우 파일을 고려해 야 하는 다음 파일의 로드 된 이미지에서 생성 된 체크섬을 손상 또는 변조입니다.  
   
- 일반적인 체크섬 크기가 32 바이트 이상 아니지만 체크섬의 최대 크기를 가정 하지 않습니다. 설정의 `data` 매개 변수를 `NULL` 체크섬을 검색 하는 데 필요한 바이트 수를 얻을 수 있습니다. 그런 다음 적절 한 크기의 버퍼를 할당 하 고 새 버퍼와 한 번 더이 메서드를 호출 합니다.  
+ 일반적인 체크섬 크기가 32 바이트 보다 되지 있지만 체크섬의 최대 크기를 가정 하지 마세요. 설정 된 `data` 매개 변수를 `NULL` 체크섬을 검색 하는 데 필요한 바이트 수를 가져오려고 합니다. 그런 다음 적절 한 크기의 버퍼를 할당 하 고 새 버퍼를 사용 하 여 한 번 더이 메서드를 호출 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c320400ee7337ec3f4ac3b6a77f1863b732c99c5
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 6311526df299da860c829520a2087ecc8d786600
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499967"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930647"
 ---
 # <a name="walkthrough-create-an-sdk-using-c"></a>연습: c + +를 사용 하 여 SDK 만들기
 이 연습에서는 네이티브 c + + 수학 라이브러리 SDK 패키지는 SDK로는 VSIX Visual Studio Extension ()를 만들고 앱을 만드는 데 사용 하는 방법을 보여 줍니다. 이 연습에서는 이러한 단계로 구분 됩니다.  
@@ -142,25 +142,25 @@ ms.locfileid: "39499967"
   
 ##  <a name="createSample"></a> 클래스 라이브러리를 사용 하는 샘플 앱을 만들려면  
   
-1.  메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.  
+1. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.  
   
-2.  템플릿 목록에서 확장 **Visual c + +** > **Windows 범용** 선택한 후 **비어 있는 앱**합니다. 에 **이름** 상자에서 지정 **NativeMathSDKSample**를 선택한 후는 **확인** 단추입니다.  
+2. 템플릿 목록에서 확장 **Visual c + +** > **Windows 범용** 선택한 후 **비어 있는 앱**합니다. 에 **이름** 상자에서 지정 **NativeMathSDKSample**를 선택한 후는 **확인** 단추입니다.  
   
-3.  **솔루션 탐색기**에 대 한 바로 가기 메뉴를 열고 합니다 **NativeMathSDKSample** 프로젝트를 선택한 후 **추가** > **참조**.  
+3. **솔루션 탐색기**에 대 한 바로 가기 메뉴를 열고 합니다 **NativeMathSDKSample** 프로젝트를 선택한 후 **추가** > **참조**.  
   
-4.  에 **참조 추가** 대화 상자에서 참조 형식의 목록 **유니버설 Windows**를 선택한 후 **확장**합니다. 마지막으로 선택 합니다 **네이티브 수학 SDK** 확인란을 선택한 후 합니다 **확인** 단추입니다.
+4. 에 **참조 추가** 대화 상자에서 참조 형식의 목록 **유니버설 Windows**를 선택한 후 **확장**합니다. 마지막으로 선택 합니다 **네이티브 수학 SDK** 확인란을 선택한 후 합니다 **확인** 단추입니다.
   
-5.  NativeMathSDKSample에 대 한 프로젝트 속성을 표시 합니다.  
+5. NativeMathSDKSample에 대 한 프로젝트 속성을 표시 합니다.  
   
-     에 정의 된 속성 *NativeMathSDK.props* 참조를 추가 했을 때 적용 됩니다. 속성을 검사 하 여 적용 된 것을 확인할 수 있습니다 합니다 **VC + + 디렉터리** 프로젝트의 속성 **구성 속성**합니다.  
+    에 정의 된 속성 *NativeMathSDK.props* 참조를 추가 했을 때 적용 됩니다. 속성을 검사 하 여 적용 된 것을 확인할 수 있습니다 합니다 **VC + + 디렉터리** 프로젝트의 속성 **구성 속성**합니다.  
   
-6.  **솔루션 탐색기**오픈 **MainPage.xaml**, 다음 다음 XAML을 사용 하 여 해당 콘텐츠를 바꾸려면:  
+6. **솔루션 탐색기**오픈 **MainPage.xaml**, 다음 다음 XAML을 사용 하 여 해당 콘텐츠를 바꾸려면:  
   
-     [!code-xml[CreatingAnSDKUsingCppDemoApp#1](../extensibility/codesnippet/Xaml/walkthrough-creating-an-sdk-using-cpp_8.xaml)]  
+    [!code-xml[CreatingAnSDKUsingCppDemoApp#1](../extensibility/codesnippet/Xaml/walkthrough-creating-an-sdk-using-cpp_8.xaml)]  
   
-7.  업데이트 *Mainpage.xaml.h* 이 코드와 일치 하도록 합니다.  
+7. 업데이트 *Mainpage.xaml.h* 이 코드와 일치 하도록 합니다.  
   
-     [!code-cpp[CreatingAnSDKUsingCppDemoApp#2](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_9.h)]  
+    [!code-cpp[CreatingAnSDKUsingCppDemoApp#2](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_9.h)]  
   
 8. 업데이트 *MainPage.xaml.cpp* 이 코드와 일치 하도록 합니다.  
   
@@ -172,7 +172,7 @@ ms.locfileid: "39499967"
   
      올바른 결과 표시 합니다.  
   
- 이 연습에서는 만들고를 호출 하는 확장 SDK를 사용 하는 방법을 보여 주었습니다.는 [!INCLUDE[wrt](../extensibility/includes/wrt_md.md)] 라이브러리 및 비-[!INCLUDE[wrt](../extensibility/includes/wrt_md.md)] 라이브러리입니다.  
+    이 연습에서는 만들고를 호출 하는 확장 SDK를 사용 하는 방법을 보여 주었습니다.는 [!INCLUDE[wrt](../extensibility/includes/wrt_md.md)] 라이브러리 및 비-[!INCLUDE[wrt](../extensibility/includes/wrt_md.md)] 라이브러리입니다.  
   
 ## <a name="next-steps"></a>다음 단계  
   

@@ -1,7 +1,8 @@
 ---
-title: Visual Studio 2017 제거
+title: Visual Studio 제거
+titleSuffix: ''
 description: Visual Studio를 제거하는 방법을 단계별로 알아봅니다.
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 08/16/2017
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
@@ -15,25 +16,28 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 452a30b6af12045d2812b9cd84a4f03664fbe45f
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 89f517c51fdd1d9e9bd9e47d928b9854421cbbdb
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282026"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159960"
 ---
-# <a name="uninstall-visual-studio"></a>Visual Studio 제거
+# <a name="uninstall-visual-studio-2017"></a>Visual Studio 2017 제거
 
 이 페이지에서는 개발자를 위한 통합 생산성 도구 제품군인 Visual Studio를 제거하는 과정을 안내합니다.
 
+> [!NOTE]
+> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio 제거](/visualstudio/mac/uninstall)를 참조하세요.
+
 1. 컴퓨터에서 Visual Studio 설치 관리자를 찾습니다.
 
-     예를 들어, Windows 10 1주년 업데이트를 실행하는 컴퓨터에서 **시작**을 선택하고 **V** 문자로 스크롤하면 여기에서 **Visual Studio 설치 관리자**로 나열됩니다.
+     예를 들어 Windows 10 1주년 업데이트 이상을 실행하는 컴퓨터에서 **시작**을 선택하고 **V** 문자로 스크롤하면 **Visual Studio 설치 관리자**로 나열됩니다.
 
      ![Visual Studio 설치 관리자](media/vs2017-locate-the-visual-studio-installer.PNG "Microsoft Visual Studio 설치 관리자 찾기")
 
-     >[!NOTE]
-     일부 컴퓨터에서는 Visual Studio 설치 관리자가 **Microsoft Visual Studio 설치 관리자**로 문자 **“M”** 아래에 나열될 수 있습니다.<br/><br/> 또는 다음 위치에서 Visual Studio 설치 관리자를 찾을 수 있습니다.`C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
+   > [!NOTE]
+   > 일부 컴퓨터에서는 Visual Studio 설치 관리자가 **Microsoft Visual Studio 설치 관리자**로 문자 **“M”** 아래에 나열될 수 있습니다.<br/><br/> 또는 다음 위치에서 Visual Studio 설치 관리자를 찾을 수 있습니다.`C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
 2. 설치 관리자를 클릭하여 시작하고 ![세부 정보 아이콘](media/vs2017uninstall-UninstallIcon.png "옵션 선택 아이콘") 아이콘을 클릭한 다음 **제거**를 클릭합니다.
 
@@ -53,20 +57,10 @@ ms.locfileid: "36282026"
 2. **Microsoft Visual Studio 2017**을 찾습니다.
 3. **제거**를 클릭합니다.
 
-## <a name="get-support"></a>지원 받기
-
-때로는 무엇인가 잘못될 수도 있습니다. Visual Studio 설치에 실패하는 경우에는 [Visual Studio 2017 설치 및 업그레이드 문제 해결](troubleshooting-installation-issues.md) 페이지를 참조하세요. 문제 해결 단계가 도움이 되지 않는 경우 라이브 채팅을 통해 Microsoft에 설치 지원을 문의할 수 있습니다(영어만 가능). 자세한 내용은 [Visual Studio 지원 페이지](https://visualstudio.microsoft.com/vs/support/#talktous)를 참조하세요.
-
-몇 가지 추가 지원 옵션은 다음과 같습니다.
-
-* Visual Studio 설치 관리자와 Visual Studio IDE에 모두 표시되는 [문제 보고](../ide/how-to-report-a-problem-with-visual-studio-2017.md) 도구를 통해 Microsoft에 제품 문제를 보고할 수 있습니다.
-* [UserVoice](https://visualstudio.uservoice.com/forums/121579)에서 Microsoft와 제품 제안을 공유할 수 있습니다.
-* [Visual Studio 개발자 커뮤니티](https://developercommunity.visualstudio.com/)에서 제품 문제를 추적하고, 답변을 찾을 수 있습니다.
-* [Gitter 커뮤니티의 Visual Studio 관련 대화](https://gitter.im/Microsoft/VisualStudio)를 통해 Microsoft 및 다른 Visual Studio 개발자와 소통할 수도 있습니다. (이 옵션을 사용하려면 [GitHub](https://github.com/) 계정이 필요합니다.)
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>참고 항목
 
-* [Visual Studio 설치](install-visual-studio.md)
 * [Visual Studio 2017 수정](modify-visual-studio.md)
 * [Visual Studio 업데이트](update-visual-studio.md)
-* [Visual Studio 제거](remove-visual-studio.md)
+* [Mac용 Visual Studio 제거](/visualstudio/mac/uninstall)

@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 63bf182e4e8b17133fbefd4f4a19c4b8b4a458e9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b276b2bff8e8ab5af0f007fbc5bd5dd6074c4d9d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110317"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896047"
 ---
 # <a name="idebugfieldgetextendedinfo"></a>IDebugField::GetExtendedInfo
-이 메서드는 필드에 대 한 정보를 확장을 가져옵니다.  
+이 메서드 확장 필드에 대 한 정보를 가져옵니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -49,20 +49,20 @@ int GetExtendedInfo(
   
 |값|설명|  
 |-----------|-----------------|  
-|`guidConstantValue`|바이트의 시퀀스 값입니다.|  
-|`guidConstantType`|형식 서명에 형식입니다.|  
+|`guidConstantValue`|바이트의 시퀀스로 값입니다.|  
+|`guidConstantType`|형식 시그니처는 형식입니다.|  
   
  `prgBuffer`  
- [out] 확장 된 정보를 반환합니다.  
+ [out] 확장된 정보를 반환합니다.  
   
  `pdwLen`  
- [out에서] 확장 정보의 크기 바이트 단위로 반환합니다.  
+ [out에서] 확장 정보의 크기 (바이트)에서 반환합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 현재,이 메서드는 형식 또는 상수 값을 반환합니다. 호출자에 반환 되는 버퍼를 해제 해야 `prgBuffer` COM의 호출 `CoTaskMemFree` 함수 (c + +) 또는 <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A> (C#).  
+ 현재이 메서드는 형식 또는 상수 값을 반환합니다. 호출자에 반환 되는 버퍼를 해제 해야 합니다 `prgBuffer` COM의 호출 `CoTaskMemFree` 함수 (c + +) 또는 <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A> (C#).  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

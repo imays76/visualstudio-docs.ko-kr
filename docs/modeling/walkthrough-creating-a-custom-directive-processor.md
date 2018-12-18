@@ -15,12 +15,12 @@ ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 0623616848c6e996a49baffa19f412a22f28e846
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: c430dad62686e49d9ce07fdff9a3665b0ea519a4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234426"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930325"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>연습: 사용자 지정 지시문 프로세서 만들기
 
@@ -44,7 +44,7 @@ ms.locfileid: "36234426"
 
 `<#@ CoolDirective Processor="CustomDirectiveProcessor" FileName="<Your Path>DocFile.xml" #>`
 
-사용자 지정 지시문 프로세서는 생성된 변형 클래스에 변수와 속성을 추가합니다. 작성하는 지시문은 <xref:System.CodeDom> 클래스를 사용하여 엔진이 생성된 변환 클래스에 추가하는 코드를 만듭니다. 합니다 <xref:System.CodeDom> 클래스에 지정 된 언어에 따라 Visual C# 또는 Visual Basic에서 코드를 만들기는 `language` 의 매개 변수는 `template` 지시문입니다. 지시문 프로세서의 언어와 지시문 프로세서에 액세스하는 텍스트 템플릿의 언어는 일치하지 않아도 됩니다.
+사용자 지정 지시문 프로세서는 생성된 변형 클래스에 변수와 속성을 추가합니다. 작성하는 지시문은 <xref:System.CodeDom> 클래스를 사용하여 엔진이 생성된 변형 클래스에 추가하는 코드를 만듭니다. 합니다 <xref:System.CodeDom> 클래스에 지정 된 언어에 따라 Visual C# 또는 Visual Basic에서 코드를 만들기는 `language` 의 매개 변수는 `template` 지시문입니다. 지시문 프로세서의 언어와 지시문 프로세서에 액세스하는 텍스트 템플릿의 언어는 일치하지 않아도 됩니다.
 
 지시문이 만드는 코드는 다음과 같습니다.
 
@@ -656,19 +656,22 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
      레지스트리 키의 값은 다음과 같습니다.
 
-    |name|형식|데이터|
-    |----------|----------|----------|
-    |(기본값)|REG_SZ|(값 설정 안 됨)|
-    |클래스|REG_SZ|CustomDP.CustomDirectiveProcessor|
-    |CodeBase|REG_SZ|**\<솔루션에 대 한 경로 >** CustomDP\bin\Debug\CustomDP.dll|
+
+   | 이름 | 형식 | 데이터 |
+   |-|-|-|
+   | (기본값) | REG_SZ | (값 설정 안 됨) |
+   | 클래스 | REG_SZ | CustomDP.CustomDirectiveProcessor |
+   | CodeBase | REG_SZ | <strong>\<솔루션에 대 한 경로 ></strong>CustomDP\bin\Debug\CustomDP.dll |
 
      GAC에 어셈블리를 배치한 경우 값은 다음과 같습니다.
 
-    |name|형식|데이터|
-    |----------|----------|----------|
-    |(기본값)|REG_SZ|(값 설정 안 됨)|
-    |클래스|REG_SZ|CustomDP.CustomDirectiveProcessor|
-    |Assembly|REG_SZ|CustomDP.dll|
+
+   | 이름 | 형식 | 데이터 |
+   |-|-|-|
+   | (기본값) | REG_SZ | (값 설정 안 됨) |
+   | 클래스 | REG_SZ | CustomDP.CustomDirectiveProcessor |
+   | Assembly | REG_SZ | CustomDP.dll |
+
 
 6. Visual Studio를 다시 시작합니다.
 

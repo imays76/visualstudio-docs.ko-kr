@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81fb04db3342bb8ce7d5e314c9a912b873ffb627
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b1abd2e5c3681a63d918763b99ebc09a43fe5988
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116401"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864532"
 ---
 # <a name="idebugprogram2causebreak"></a>IDebugProgram2::CauseBreak
 프로그램이 다음 실행을 중지 하는 요청 시간 자신의 스레드 실행 시도 중 하나입니다.  
@@ -38,12 +38,12 @@ int CauseBreak();
 ```  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
  [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) 프로그램은 다음이 메서드가 호출 된 후 코드를 실행 하려고 할 때 이벤트를 보냅니다.  
   
- 이 메서드는 메서드는 반드시 프로그램을 중지 될 때까지 기다리지 않고 즉시 반환 한다는 점에서 비동기입니다.  
+ 이 메서드는 비동기 메서드는 반드시 프로그램을 중지 될 때까지 기다리지 않고 즉시 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   

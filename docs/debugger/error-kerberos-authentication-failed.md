@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 085b120974ee23d0d7e3712cdbb0a8f7f7021e83
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 0cf34885ee715a5685e4c2ced8b5a116e5c33e8d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056859"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857668"
 ---
 # <a name="error-kerberos-authentication-failed"></a>오류: Kerberos 인증에 실패했습니다.
 원격 디버깅을 시작할 때 다음 오류 메시지가 나타날 수 있습니다.  
@@ -34,15 +34,15 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
   
  다음과 같은 경우에는 Kerberos 인증을 사용할 수 없습니다.  
   
--   대상 컴퓨터 또는 디버거 호스트 컴퓨터가 도메인이 아닌 작업 그룹에 있는 경우  
+- 대상 컴퓨터 또는 디버거 호스트 컴퓨터가 도메인이 아닌 작업 그룹에 있는 경우  
   
-     \- 또는 -  
+   \- 또는 -  
   
--   도메인 컨트롤러에서 Kerberos가 해제된 경우  
+- 도메인 컨트롤러에서 Kerberos가 해제된 경우  
   
- Kerberos 인증을 사용할 수 없는 경우 Visual Studio 원격 디버깅 모니터를 실행하는 데 사용되는 계정을 변경해야 합니다. 프로시저를 참조 하세요 [오류: 대상 컴퓨터의 Visual Studio 원격 디버거 서비스가이 컴퓨터에 다시 연결할 수 없습니다.](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md)합니다.  
+  Kerberos 인증을 사용할 수 없는 경우 Visual Studio 원격 디버깅 모니터를 실행하는 데 사용되는 계정을 변경해야 합니다. 프로시저를 참조 하세요 [오류: 대상 컴퓨터의 Visual Studio 원격 디버거 서비스가이 컴퓨터에 다시 연결할 수 없습니다.](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md)합니다.  
   
- 두 컴퓨터가 모두 같은 도메인에 연결되어 있는 경우에도 이 메시지가 나타나면 해당 컴퓨터의 DNS에서 디버거 호스트 컴퓨터의 이름을 제대로 확인하고 있는지 검사합니다. 다음 절차를 참조하십시오.  
+  두 컴퓨터가 모두 같은 도메인에 연결되어 있는 경우에도 이 메시지가 나타나면 해당 컴퓨터의 DNS에서 디버거 호스트 컴퓨터의 이름을 제대로 확인하고 있는지 검사합니다. 다음 절차를 참조하십시오.  
   
 ### <a name="to-verify-that-dns-on-the-target-computer-is-correctly-resolving-the-debugger-host-computer-name"></a>대상 컴퓨터의 DNS에서 디버거 호스트 컴퓨터 이름을 제대로 확인하고 있는지 검사하려면  
   
@@ -62,4 +62,4 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
   
 ## <a name="see-also"></a>참고 항목  
  [원격 디버깅 오류 및 문제 해결](../debugger/remote-debugging-errors-and-troubleshooting.md)   
- [원격 디버깅](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)

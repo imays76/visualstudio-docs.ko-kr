@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76d347a40993b722b13545dd278138ce753344f3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0c7a824a3ffe319d0134b59db95afe8296ef7575
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106596"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926906"
 ---
 # <a name="idebugcoreserver2getmachineinfo"></a>IDebugCoreServer2::GetMachineInfo
 핵심 서버에서 실행 중인 컴퓨터에 대 한 설명을 검색 합니다.  
@@ -28,14 +28,14 @@ ms.locfileid: "31106596"
 ## <a name="syntax"></a>구문  
   
 ```cpp  
-HRESULT GetInfo(   
+HRESULT GetMachineInfo(   
    MACHINE_INFO_FIELDS Fields,  
    MACHINE_INFO*       pMachineInfo  
 );  
 ```  
   
 ```csharp  
-int GetInfo(   
+int GetMachineInfo(   
    enum_ MACHINE_INFO_FIELDS  Fields,  
    MACHINE_INFO[]             pMachineInfo  
 );  
@@ -43,13 +43,13 @@ int GetInfo(
   
 #### <a name="parameters"></a>매개 변수  
  `Fields`  
- [in] 플래그의 조합 된 [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md) 의 필드를 지정 하는 열거형 `pMachineInfo` 작성 됩니다.  
+ [in] 플래그의 조합을 [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md) 의 필드를 지정 하는 열거형 `pMachineInfo` 작성 됩니다.  
   
  `pMachineInfo`  
- [out에서] A [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) 는 컴퓨터에 대 한 설명을 포함 하는 구조입니다.  
+ [out에서] A [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) 구조는이 컴퓨터에 대 한 설명을 채워집니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)   

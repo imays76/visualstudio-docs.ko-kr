@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 6d1d57dc8c0eb07b90da79de3fee5d42678e7a22
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 206c856eb87243fd6021c4ff8bb9f6890b8eaf25
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36279988"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384216"
 ---
 # <a name="application-property-page-uwp-projects"></a>응용 프로그램 속성 페이지(UWP 프로젝트)
 
@@ -46,7 +46,7 @@ ms.locfileid: "36279988"
 
 이 섹션의 드롭다운 목록을 사용하여 앱에 대한 대상 버전과 최소 Windows 10 버전을 설정할 수 있습니다. 최신 버전의 Windows 10을 대상으로 지정하는 것이 좋고 엔터프라이즈 앱을 개발하는 경우 이전 최소 버전을 지원하는 것이 좋습니다. 선택할 Windows 10 버전에 대한 자세한 내용은 [UWP 버전 선택](/windows/uwp/updates-and-versions/choose-a-uwp-version)을 참조하세요.
 
-Visual Studio 2017의 플랫폼 대상 지정에 대한 자세한 내용은 [플랫폼 대상 지정](/visualstudio/productinfo/vs2017-compatibility-vs#a-iddevelopwindows-avisual-studio-2017-support-for-windows-development)을 참조하세요.
+Visual Studio 2017의 플랫폼 대상 지정에 대한 자세한 내용은 [플랫폼 대상 지정](/visualstudio/productinfo/vs2017-compatibility-vs#platform-targeting)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 

@@ -1,8 +1,10 @@
 ---
 title: Visual Studio 인스턴스 검색 및 관리 도구
+titleSuffix: ''
 description: 클라이언트 컴퓨터에서 Visual Studio 설치를 검색 및 관리하는 데 사용할 수 있는 도구에 대해 알아봅니다.
 ms.date: 08/14/2017
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7052908751058b08be8afc3f1c40123ca8ddba48
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 909ea85a68652467e3288e1e3f8f8e2d4e0df5b7
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280577"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53158569"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Visual Studio 인스턴스 검색 및 관리 도구
 
@@ -31,9 +33,9 @@ ms.locfileid: "36280577"
 
 * [VSWhere](https://github.com/microsoft/vswhere): 실행 파일은 Visual Studio에 기본 설정되거나 별도 배포에 사용할 수 있습니다. 그러면 특정 컴퓨터에서 모든 Visual Studio 인스턴스의 위치를 확인할 수 있습니다.
 * [VSSetup.PowerShell](https://github.com/microsoft/vssetup.powershell): 설치 구성 API를 사용하여 Visual Studio의 설치된 인스턴스를 식별하는 PowerShell 스크립트입니다.
-* [VS-Setup-Samples](https://github.com/microsoft/vs-setup-samples): 설치 구성 API를 사용하여 기존 설치를 쿼리하는 방법을 보여 주는 C# 및 C++ 샘플입니다.
+* [VS-Setup-Samples](https://github.com/microsoft/vs-setup-samples): 설치 구성 API를 사용하여 기존 설치를 쿼리하는 방법을 보여주는 C# 및 C++ 샘플입니다.
 
-뿐만 아니라 [설치 구성 API](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.setup.configuration.aspx)는 Visual Studio 인스턴스를 조회하기 위해 자신의 유틸리티를 빌드하려는 개발자를 위한 인터페이스를 제공합니다.
+뿐만 아니라 [설치 구성 API](<xref:Microsoft.VisualStudio.Setup.Configuration>)는 Visual Studio 인스턴스를 조회하기 위해 자신의 유틸리티를 빌드하려는 개발자를 위한 인터페이스를 제공합니다.
 
 ## <a name="using-vswhereexe"></a>vswhere.exe 사용
 
@@ -45,7 +47,6 @@ C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -p
 
 >[!TIP]
 >Visual Studio 2017 설치에 대한 자세한 내용은 [Heath Stewart의 블로그 기사](https://blogs.msdn.microsoft.com/heaths/tag/vs2017/)를 참조하세요.
-
 
 ## <a name="editing-the-registry-for-a-visual-studio-instance"></a>Visual Studio 인스턴스의 레지스트리 편집
 
@@ -61,24 +62,15 @@ Visual Studio 2017에서 레지스트리 설정은 전용 위치에 저장되므
    %localappdata%\Microsoft\VisualStudio\<config>\privateregistry.bin
    ```
 
-  > [!NOTE]
-  > `<config>`는 찾아볼 Visual Studio의 인스턴스에 해당합니다.
+   > [!NOTE]
+   > `<config>`는 찾아볼 Visual Studio의 인스턴스에 해당합니다.
 
 하이브 이름을 입력하라는 메시지가 표시됩니다. 이 이름은 격리된 하이브의 이름이 됩니다. 이 작업을 한 후에는 직접 만든 격리된 하이브에서 레지스트리를 찾을 수 있습니다.
 
 > [!IMPORTANT]
 > Visual Studio를 다시 시작하기 전에 직접 만든 격리된 하이브를 언로드해야 합니다. 이 작업을 하려면 Regedit 주 메뉴에서 [파일] -> [하이브 언로드]를 선택합니다. 이렇게 하지 않으면 파일이 계속 잠겨 있고 Visual Studio가 시작되지 않습니다.
 
-## <a name="get-support"></a>지원 받기
-
-때로는 무엇인가 잘못될 수도 있습니다. Visual Studio 설치에 실패하는 경우에는 [Visual Studio 2017 설치 및 업그레이드 문제 해결](troubleshooting-installation-issues.md) 페이지를 참조하세요. 문제 해결 단계가 도움이 되지 않는 경우 라이브 채팅을 통해 Microsoft에 설치 지원을 문의할 수 있습니다(영어만 가능). 자세한 내용은 [Visual Studio 지원 페이지](https://visualstudio.microsoft.com/vs/support/#talktous)를 참조하세요.
-
-몇 가지 추가 지원 옵션은 다음과 같습니다.
-
-* Visual Studio 설치 관리자와 Visual Studio IDE에 모두 표시되는 [문제 보고](../ide/how-to-report-a-problem-with-visual-studio-2017.md) 도구를 통해 Microsoft에 제품 문제를 보고할 수 있습니다.
-* [UserVoice](https://visualstudio.uservoice.com/forums/121579)에서 Microsoft와 제품 제안을 공유할 수 있습니다.
-* [Visual Studio 개발자 커뮤니티](https://developercommunity.visualstudio.com/)에서 제품 문제를 추적하고, 답변을 찾을 수 있습니다.
-* [Gitter 커뮤니티의 Visual Studio 관련 대화](https://gitter.im/Microsoft/VisualStudio)를 통해 Microsoft 및 다른 Visual Studio 개발자와 소통할 수도 있습니다. (이 옵션을 사용하려면 [GitHub](https://github.com/) 계정이 필요합니다.)
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>참고 항목
 

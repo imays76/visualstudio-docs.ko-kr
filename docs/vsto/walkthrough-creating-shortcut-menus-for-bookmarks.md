@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8153f0120259eec8ad284b0717e58be750e3b99d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: ff261fd6032f3c666dfa3d745508586ffede6504
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38783844"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884084"
 ---
 # <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>연습: 책갈피에 대 한 바로 가기 메뉴 만들기
   이 연습에 대 한 바로 가기 메뉴를 만드는 방법을 보여 줍니다 <xref:Microsoft.Office.Tools.Word.Bookmark> Word 용 문서 수준 사용자 지정에서 컨트롤입니다. 책갈피의 텍스트를 누를 때 바로 가기 메뉴 표시 되 고 텍스트 서식 지정에 대 한 사용자 옵션을 제공 합니다.  
@@ -32,15 +32,15 @@ ms.locfileid: "38783844"
   
  이 연습에서는 다음 작업을 수행합니다.  
   
--   [프로젝트를 만들려면](#BKMK_CreateProject)합니다.  
+- [프로젝트를 만들려면](#BKMK_CreateProject)합니다.  
   
--   [문서에 텍스트 및 책갈피를 추가](#BKMK_addtextandbookmarks)합니다.  
+- [문서에 텍스트 및 책갈피를 추가](#BKMK_addtextandbookmarks)합니다.  
   
--   [바로 가기 메뉴에 명령을 추가](#BKMK_AddCmndsShortMenu)합니다.  
+- [바로 가기 메뉴에 명령을 추가](#BKMK_AddCmndsShortMenu)합니다.  
   
--   [책갈피에 텍스트의 서식을 지정](#BKMK_formattextbkmk)합니다.  
+- [책갈피에 텍스트의 서식을 지정](#BKMK_formattextbkmk)합니다.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>전제 조건  
  이 연습을 완료하려면 다음 구성 요소가 필요합니다.  
@@ -69,22 +69,22 @@ ms.locfileid: "38783844"
   
 ### <a name="to-add-a-bookmark-control-to-your-document"></a>문서에 책갈피 컨트롤을 추가 하려면  
   
-1.  에 **도구 상자**에서 **Word 컨트롤** 탭을 끌어를 <xref:Microsoft.Office.Tools.Word.Bookmark> 컨트롤을 문서로 합니다.  
+1. 에 **도구 상자**에서 **Word 컨트롤** 탭을 끌어를 <xref:Microsoft.Office.Tools.Word.Bookmark> 컨트롤을 문서로 합니다.  
   
-     합니다 **책갈피 컨트롤 추가** 대화 상자가 나타납니다.  
+    합니다 **책갈피 컨트롤 추가** 대화 상자가 나타납니다.  
   
-2.  "텍스트를 마우스 오른쪽 단추로 클릭할 때 바로 가기 메뉴 만들기" 선택, 클릭 하 고 **확인**합니다.  
+2. "텍스트를 마우스 오른쪽 단추로 클릭할 때 바로 가기 메뉴 만들기" 선택, 클릭 하 고 **확인**합니다.  
   
-     `bookmark1` 문서에 추가 됩니다.  
+    `bookmark1` 문서에 추가 됩니다.  
   
-3.  다른 추가 <xref:Microsoft.Office.Tools.Word.Bookmark> "책갈피의 텍스트를 마우스 오른쪽 단추로 클릭" 단어를 제어 합니다.  
+3. 다른 추가 <xref:Microsoft.Office.Tools.Word.Bookmark> "책갈피의 텍스트를 마우스 오른쪽 단추로 클릭" 단어를 제어 합니다.  
   
-     `bookmark2` 문서에 추가 됩니다.  
+    `bookmark2` 문서에 추가 됩니다.  
   
-    > [!NOTE]  
-    >  둘 다 있는 "텍스트를 마우스 오른쪽 단추로 클릭" 라는 단어가 `bookmark1` 고 `bookmark2`입니다.  
+   > [!NOTE]  
+   >  둘 다 있는 "텍스트를 마우스 오른쪽 단추로 클릭" 라는 단어가 `bookmark1` 고 `bookmark2`입니다.  
   
- 디자인 타임에 문서에 책갈피를 추가 하는 경우는 <xref:Microsoft.Office.Tools.Word.Bookmark> 컨트롤이 만들어집니다. 책갈피의 여러 이벤트에 대해 프로그래밍할 수 있습니다. 코드를 작성할 수 있습니다는 <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick> 이벤트 책갈피의 책갈피에 텍스트를 클릭할 때 있도록 바로 가기 메뉴가 나타납니다.  
+   디자인 타임에 문서에 책갈피를 추가 하는 경우는 <xref:Microsoft.Office.Tools.Word.Bookmark> 컨트롤이 만들어집니다. 책갈피의 여러 이벤트에 대해 프로그래밍할 수 있습니다. 코드를 작성할 수 있습니다는 <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick> 이벤트 책갈피의 책갈피에 텍스트를 클릭할 때 있도록 바로 가기 메뉴가 나타납니다.  
   
 ##  <a name="BKMK_AddCmndsShortMenu"></a> 바로 가기 메뉴에 명령 추가  
  문서를 마우스 오른쪽 단추로 클릭할 때 표시 되는 바로 가기 메뉴에 단추를 추가 합니다.  

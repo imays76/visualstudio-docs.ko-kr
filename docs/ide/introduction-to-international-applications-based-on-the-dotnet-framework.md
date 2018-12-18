@@ -27,16 +27,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2ddb993e83cee79afca89d3cd06d55ca9e6fbc19
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: cd2a749bc96271e4ed16872f1d5c4a485c55900e
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179920"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863959"
 ---
 # <a name="introduction-to-international-applications-based-on-the-net-framework"></a>.NET Framework 기반의 국가별 응용 프로그램 소개
 
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에는 지역화 대비 응용 프로그램을 만드는 두 개의 부분으로, 다양한 문화권에 맞게 조정할 수 있는 응용 프로그램을 디자인하는 프로세스인 전역화 및 특정 문화권에 맞게 리소스를 변환하는 프로세스인 지역화가 있습니다. 전 세계 대상을 위한 응용 프로그램을 디자인하는 방법에 대한 일반 정보는 [지역화 대비 응용 프로그램 개발을 위한 최선의 구현 방법](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)을 참조하세요.
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에는 지역화 대비 응용 프로그램을 만드는 두 개의 부분으로, 다양한 문화권에 맞게 조정할 수 있는 응용 프로그램을 디자인하는 프로세스인 전역화 및 특정 문화권에 맞게 리소스를 변환하는 프로세스인 지역화가 있습니다. 전 세계 대상을 위한 응용 프로그램을 디자인하는 방법에 대한 일반 정보는 [지역화 대비 응용 프로그램 개발을 위한 최선의 구현 방법](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps)을 참조하세요.
 
  [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 지역화 모델은 응용 프로그램 코드 및 대체(fallback) 리소스가 둘 다 포함된 주 어셈블리와 응용 프로그램이 개발된 원래 언어에 대한 기타 개체로 구성됩니다. 각 지역화된 응용 프로그램에는 위성 어셈블리 또는 지역화된 리소스만 들어 있는 어셈블리가 포함됩니다. 주 어셈블리에는 항상 대체 리소스가 포함되므로 지역화된 위성 어셈블리에서 리소스를 찾을 수 없으면 <xref:System.Resources.ResourceManager>는 계층 구조 방식으로 리소스를 로드하려고 시도하고 결국 주 어셈블리의 리소스를 대체합니다. 리소스 대체(fallback) 시스템은 [지역화를 위한 리소스의 계층적 구성](../ide/hierarchical-organization-of-resources-for-localization.md)에서 자세히 설명합니다.
 

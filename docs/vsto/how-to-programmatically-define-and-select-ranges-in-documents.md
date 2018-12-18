@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 947232d593543276de281d89e3d05d6648f29ec1
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 8770871bfdc361e29d7ac7c2fc984477b1ec0ea1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257298"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833137"
 ---
 # <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>방법: 프로그래밍 방식으로 정의 하 고 문서에서 범위를 선택 합니다.
   <xref:Microsoft.Office.Interop.Word.Range> 개체를 사용하여 Microsoft Office Word 문서의 범위를 정의할 수 있습니다. 사용 하 여 예를 들어, 다양 한 방법으로 전체 문서를 선택할 수 있습니다는 <xref:Microsoft.Office.Interop.Word.Range.Select%2A> 메서드를 <xref:Microsoft.Office.Interop.Word.Range> 개체 또는의 콘텐츠 속성을 사용 하 여는 <xref:Microsoft.Office.Tools.Word.Document> 클래스 (문서 수준 사용자 지정) 또는 <xref:Microsoft.Office.Interop.Word.Document> 클래스 (에 VSTO 추가 기능에).  
@@ -60,21 +60,21 @@ ms.locfileid: "35257298"
   
 ### <a name="to-select-the-entire-document-as-a-range-by-using-the-content-property"></a>콘텐츠 속성을 사용하여 전체 문서를 범위로 선택하려면  
   
-1.  <xref:Microsoft.Office.Tools.Word.Document.Content%2A> 속성을 사용하여 전체 문서를 포함하는 범위를 정의합니다.  
+1. <xref:Microsoft.Office.Tools.Word.Document.Content%2A> 속성을 사용하여 전체 문서를 포함하는 범위를 정의합니다.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#20)]
-     [!code-csharp[Trin_VstcoreWordAutomation#20](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#20)]  
+    [!code-vb[Trin_VstcoreWordAutomation#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#20)]
+    [!code-csharp[Trin_VstcoreWordAutomation#20](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#20)]  
   
- 다른 개체의 메서드와 속성을 사용하여 범위를 정의할 수도 있습니다.  
+   다른 개체의 메서드와 속성을 사용하여 범위를 정의할 수도 있습니다.  
   
 ### <a name="to-select-a-sentence-in-the-active-document"></a>활성 문서에서 문장을 선택하려면  
   
-1.  <xref:Microsoft.Office.Interop.Word.Sentences> 컬렉션을 사용하여 범위를 설정합니다. 선택하려는 문장의 인덱스를 사용합니다.  
+1. <xref:Microsoft.Office.Interop.Word.Sentences> 컬렉션을 사용하여 범위를 설정합니다. 선택하려는 문장의 인덱스를 사용합니다.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#21)]
-     [!code-csharp[Trin_VstcoreWordAutomation#21](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#21)]  
+    [!code-vb[Trin_VstcoreWordAutomation#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#21)]
+    [!code-csharp[Trin_VstcoreWordAutomation#21](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#21)]  
   
- 문장을 선택하는 다른 방법은 범위의 시작 및 끝 값을 수동으로 설정하는 것입니다.  
+   문장을 선택하는 다른 방법은 범위의 시작 및 끝 값을 수동으로 설정하는 것입니다.  
   
 ### <a name="to-select-a-sentence-by-manually-setting-the-start-and-end-values"></a>시작 및 끝 값을 수동으로 설정하여 문장을 선택하려면  
   
@@ -100,21 +100,21 @@ ms.locfileid: "35257298"
   
 ### <a name="to-select-the-entire-document-as-a-range-by-using-the-content-property"></a>콘텐츠 속성을 사용하여 전체 문서를 범위로 선택하려면  
   
-1.  <xref:Microsoft.Office.Interop.Word._Document.Content%2A> 속성을 사용하여 전체 문서를 포함하는 범위를 정의합니다.  
+1. <xref:Microsoft.Office.Interop.Word._Document.Content%2A> 속성을 사용하여 전체 문서를 포함하는 범위를 정의합니다.  
   
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#20)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#20](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#20)]  
+    [!code-vb[Trin_VstcoreWordAutomationAddIn#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#20)]
+    [!code-csharp[Trin_VstcoreWordAutomationAddIn#20](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#20)]  
   
- 다른 개체의 메서드와 속성을 사용하여 범위를 정의할 수도 있습니다.  
+   다른 개체의 메서드와 속성을 사용하여 범위를 정의할 수도 있습니다.  
   
 ### <a name="to-select-a-sentence-in-the-active-document"></a>활성 문서에서 문장을 선택하려면  
   
-1.  <xref:Microsoft.Office.Interop.Word.Sentences> 컬렉션을 사용하여 범위를 설정합니다. 선택하려는 문장의 인덱스를 사용합니다.  
+1. <xref:Microsoft.Office.Interop.Word.Sentences> 컬렉션을 사용하여 범위를 설정합니다. 선택하려는 문장의 인덱스를 사용합니다.  
   
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#21)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#21](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#21)]  
+    [!code-vb[Trin_VstcoreWordAutomationAddIn#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#21)]
+    [!code-csharp[Trin_VstcoreWordAutomationAddIn#21](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#21)]  
   
- 문장을 선택하는 다른 방법은 범위의 시작 및 끝 값을 수동으로 설정하는 것입니다.  
+   문장을 선택하는 다른 방법은 범위의 시작 및 끝 값을 수동으로 설정하는 것입니다.  
   
 ### <a name="to-select-a-sentence-by-manually-setting-the-start-and-end-values"></a>시작 및 끝 값을 수동으로 설정하여 문장을 선택하려면  
   

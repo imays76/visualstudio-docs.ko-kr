@@ -1,5 +1,5 @@
 ---
-title: 파일에서 Visual Studio 찾기 및 바꾸기
+title: 파일에서 찾기 및 바꾸기
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b6d1a59e3e07120e01fa7757b53b71833a7bc09c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 625cb98391199bad78fb4492e635b2b1767debe7
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951923"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057881"
 ---
 # <a name="replace-in-files"></a>파일에서 바꾸기
 
@@ -36,11 +36,11 @@ ms.locfileid: "31951923"
 
 1. **편집** 메뉴에서 **찾기 및 바꾸기**를 확장합니다.
 
-1. **파일에서 바꾸기**를 선택합니다.
+2. **파일에서 바꾸기**를 선택합니다.
 
    — 또는 —
 
-  **찾기 및 바꾸기** 창이 열려 있으면 도구 모음에서 **파일에서 바꾸기**를 선택합니다.
+   **찾기 및 바꾸기** 창이 열려 있으면 도구 모음에서 **파일에서 바꾸기**를 선택합니다.
 
 ## <a name="find-what"></a>찾을 내용
 

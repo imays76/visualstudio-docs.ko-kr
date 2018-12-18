@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6ecd69f6527348e39c4eadeef6f17b396852bf39
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: d4512dc15d394cdf2442d8bfcf440ccb31623a29
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119557"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942077"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>연습: 2 부 프로젝트 템플릿을 사용 하 여 사이트 열 프로젝트 항목 만들기
   사용자 지정 형식의 SharePoint 프로젝트 항목을 정의 하 고 Visual Studio에서 프로젝트 템플릿을 사용 하 여 연결 후 템플릿에 대 한 마법사를 제공 하려면 수도 있습니다. 프로젝트 항목을 포함 하는 새 프로젝트를 만드는 템플릿을 사용할 때 사용자 로부터 정보를 수집 하는 마법사를 사용할 수 있습니다. 정보를 수집 하는 프로젝트 항목을 초기화에 사용할 수 있습니다.  
@@ -48,15 +48,15 @@ ms.locfileid: "37119557"
   
  또한이 연습을 완료 하려면 개발 컴퓨터의 다음 구성 요소가 필요 합니다.  
   
--   Windows, SharePoint 및 Visual Studio의 버전을 지원 합니다. 자세한 내용은 [Developing SharePoint Solutions에 대 한 요구 사항](../sharepoint/requirements-for-developing-sharepoint-solutions.md)합니다.  
+- Windows, SharePoint 및 Visual Studio의 버전을 지원 합니다.
   
--   Visual Studio SDK입니다. 이 연습에서는 합니다 **VSIX 프로젝트** 템플릿 프로젝트 항목을 배포 하려면 VSIX 패키지를 만들려면 sdk에서. 자세한 내용은 [Visual Studio에서 SharePoint 도구 확장](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)합니다.  
+- Visual Studio SDK입니다. 이 연습에서는 합니다 **VSIX 프로젝트** 템플릿 프로젝트 항목을 배포 하려면 VSIX 패키지를 만들려면 sdk에서. 자세한 내용은 [Visual Studio에서 SharePoint 도구 확장](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)합니다.  
   
- 다음 개념을 이해에 도움이 필요 하지는 않지만, 연습을 완료 하는:  
+  다음 개념을 이해에 도움이 필요 하지는 않지만, 연습을 완료 하는:  
   
--   Visual Studio에서 프로젝트 및 항목 템플릿에 대 한 마법사를 제공 합니다. 자세한 내용은 [방법: 프로젝트 템플릿에 마법사 사용](../extensibility/how-to-use-wizards-with-project-templates.md) 및 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 인터페이스입니다.  
+- Visual Studio에서 프로젝트 및 항목 템플릿에 대 한 마법사를 제공 합니다. 자세한 내용은 [방법: 프로젝트 템플릿에 마법사 사용](../extensibility/how-to-use-wizards-with-project-templates.md) 및 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 인터페이스입니다.  
   
--   SharePoint에서 사이트 열입니다. 자세한 내용은 [열](http://go.microsoft.com/fwlink/?LinkId=183547)합니다.  
+- SharePoint에서 사이트 열입니다. 자세한 내용은 [열](http://go.microsoft.com/fwlink/?LinkId=183547)합니다.  
   
 ## <a name="understand-the-wizard-components"></a>마법사 구성 요소 이해
  이 연습에 설명 된 마법사는 여러 구성 요소를 포함 합니다. 다음 표에서 이러한 구성 요소를 설명 합니다.  
@@ -72,11 +72,11 @@ ms.locfileid: "37119557"
 ## <a name="create-the-projects"></a>프로젝트 만들기
  이 연습을 완료 하려면 여러 프로젝트에서 만든 SiteColumnProjectItem 솔루션에 추가 해야 [연습: 프로젝트 템플릿 1 부를 사용 하 여 사이트 열 프로젝트 항목 만들기](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md):  
   
--   WPF 프로젝트입니다. 구현 합니다 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 인터페이스 및이 프로젝트에서 마법사 UI를 정의 합니다.  
+- WPF 프로젝트입니다. 구현 합니다 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 인터페이스 및이 프로젝트에서 마법사 UI를 정의 합니다.  
   
--   SharePoint 명령을 정의 하는 클래스 라이브러리 프로젝트. 이 프로젝트는 the.NET Framework 3.5를 대상 해야 합니다.  
+- SharePoint 명령을 정의 하는 클래스 라이브러리 프로젝트. 이 프로젝트는 the.NET Framework 3.5를 대상 해야 합니다.  
   
- 프로젝트를 만들어 연습을 시작 합니다.  
+  프로젝트를 만들어 연습을 시작 합니다.  
   
 #### <a name="to-create-the-wpf-project"></a>WPF 프로젝트를 만들려면
   
@@ -192,13 +192,13 @@ ms.locfileid: "37119557"
 ## <a name="create-the-wizard-model-signing-manager-and-sharepoint-command-ids"></a>마법사 모델, 서명 관리자 및 SharePoint 명령 Id 만들기
  샘플의 다음 구성 요소를 구현 하려면 ProjectTemplateWizard 프로젝트에 코드를 추가 합니다.  
   
--   SharePoint 명령 Id입니다. 이러한 문자열에는 마법사를 사용 하는 SharePoint 명령을 식별 합니다. 이 연습의 뒷부분에서 SharePointCommands 프로젝트 명령을 구현에 코드를 추가할 수 있습니다.  
+- SharePoint 명령 Id입니다. 이러한 문자열에는 마법사를 사용 하는 SharePoint 명령을 식별 합니다. 이 연습의 뒷부분에서 SharePointCommands 프로젝트 명령을 구현에 코드를 추가할 수 있습니다.  
   
--   마법사 데이터 모델입니다.  
+- 마법사 데이터 모델입니다.  
   
--   서명 된 프로젝트 관리자입니다.  
+- 서명 된 프로젝트 관리자입니다.  
   
- 이러한 구성 요소에 대 한 자세한 내용은 참조 하세요. [마법사 구성 요소 이해](#wizardcomponents)합니다.  
+  이러한 구성 요소에 대 한 자세한 내용은 참조 하세요. [마법사 구성 요소 이해](#wizardcomponents)합니다.  
   
 #### <a name="to-define-the-sharepoint-command-ids"></a>SharePoint 명령 Id를 정의 하려면
   
@@ -485,29 +485,29 @@ ms.locfileid: "37119557"
   
 #### <a name="to-test-the-wizard-in-visual-studio"></a>Visual Studio에서 마법사를 테스트 하려면  
   
-1.  메뉴 모음에서 Visual Studio의 실험적 인스턴스에서 선택 **파일** > **새로 만들기** > **프로젝트**합니다.  
+1. 메뉴 모음에서 Visual Studio의 실험적 인스턴스에서 선택 **파일** > **새로 만들기** > **프로젝트**합니다.  
   
-2.  확장을 **Visual C#** 노드 또는 **Visual Basic** (언어 프로젝트 템플릿을 지)에 따라 노드를 확장 합니다 **SharePoint** 노드를 선택한 후는 **2010** 노드.  
+2. 확장을 **Visual C#** 노드 또는 **Visual Basic** (언어 프로젝트 템플릿을 지)에 따라 노드를 확장 합니다 **SharePoint** 노드를 선택한 후는 **2010** 노드.  
   
-3.  프로젝트 템플릿 목록에서 선택 **사이트 열**, 프로젝트 이름을 **SiteColumnWizardTest**를 선택한 후는 **확인** 단추입니다.  
+3. 프로젝트 템플릿 목록에서 선택 **사이트 열**, 프로젝트 이름을 **SiteColumnWizardTest**를 선택한 후는 **확인** 단추입니다.  
   
-4.  Visual Studio의 다른 인스턴스에 코드에서 이전에 설정한 중단점에서 중지 확인을 `RunStarted` 메서드.  
+4. Visual Studio의 다른 인스턴스에 코드에서 이전에 설정한 중단점에서 중지 확인을 `RunStarted` 메서드.  
   
-5.  프로젝트를 선택 하 여 디버깅을 계속 합니다 **F5** 키 또는 메뉴 모음에서 **디버그** > **계속**합니다.  
+5. 프로젝트를 선택 하 여 디버깅을 계속 합니다 **F5** 키 또는 메뉴 모음에서 **디버그** > **계속**합니다.  
   
-6.  에 **SharePoint 사용자 지정 마법사**, 디버깅을 위해 사용 하려는 사이트의 URL을 입력 하 고 선택한 합니다 **다음** 단추입니다.  
+6. 에 **SharePoint 사용자 지정 마법사**, 디버깅을 위해 사용 하려는 사이트의 URL을 입력 하 고 선택한 합니다 **다음** 단추입니다.  
   
-7.  두 번째 페이지에는 **SharePoint 사용자 지정 마법사**, 다음과 같이 선택 합니다.  
+7. 두 번째 페이지에는 **SharePoint 사용자 지정 마법사**, 다음과 같이 선택 합니다.  
   
-    -   에 **형식** 목록에서 선택 **부울**합니다.  
+   - 에 **형식** 목록에서 선택 **부울**합니다.  
   
-    -   에 **그룹** 목록에서 선택 **사용자 지정 예/아니요 열**합니다.  
+   - 에 **그룹** 목록에서 선택 **사용자 지정 예/아니요 열**합니다.  
   
-    -   에 **이름** 상자에 입력 합니다 **내 예/아니요 열**를 선택한 후는 **마침** 단추.  
+   - 에 **이름** 상자에 입력 합니다 **내 예/아니요 열**를 선택한 후는 **마침** 단추.  
   
      **솔루션 탐색기**, 새 프로젝트를 표시 되 고 명명 된 프로젝트 항목을 포함 **Field1**, Visual Studio 프로젝트를 열어서 *Elements.xml* 파일을 편집기에서.  
   
-8.  확인 *Elements.xml* 마법사에서 지정한 값을 포함 합니다.  
+8. 확인 *Elements.xml* 마법사에서 지정한 값을 포함 합니다.  
   
 #### <a name="to-test-the-site-column-in-sharepoint"></a>SharePoint에서 사이트 열을 테스트 하려면  
   

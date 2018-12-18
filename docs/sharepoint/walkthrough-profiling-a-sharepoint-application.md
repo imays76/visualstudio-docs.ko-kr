@@ -18,32 +18,32 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2c52fdfd2a4598c63073476ae6b0ce3ee96bd94a
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 5db5e9408a64df80311667267561ee69234fd7d5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119845"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852754"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>연습: SharePoint 응용 프로그램을 프로 파일링
   이 연습에서는 Visual Studio에서 프로파일링 도구를 사용하여 SharePoint 응용 프로그램의 성능을 최적화하는 방법을 보여 줍니다. 예제 응용 프로그램은 기능 이벤트 수신기의 성능을 저하시키는 유휴 루프가 포함된 SharePoint 기능 이벤트 수신기입니다. Visual Studio 프로파일러를 사용 하면 찾을 라고도 프로젝트의 가장 비용이 많이 드는 (성능이 가장 낮은) 부분을 제거 하는 *실행 부하 과다 경로*합니다.  
   
  이 연습에서는 다음 작업을 수행합니다.  
   
--   [기능 및 기능 이벤트 수신기 추가](#BKMK_AddFtrandFtrEvntReceiver)합니다.  
+- [기능 및 기능 이벤트 수신기 추가](#BKMK_AddFtrandFtrEvntReceiver)합니다.  
   
--   [구성 및 SharePoint 응용 프로그램 배포](#BKMK_ConfigSharePointApp)합니다.  
+- [구성 및 SharePoint 응용 프로그램 배포](#BKMK_ConfigSharePointApp)합니다.  
   
--   [SharePoint 응용 프로그램을 실행](#BKMK_RunSPApp)합니다.  
+- [SharePoint 응용 프로그램을 실행](#BKMK_RunSPApp)합니다.  
   
--   [보기 및 프로 파일링 결과 해석](#BKMK_ViewResults)합니다.  
+- [보기 및 프로 파일링 결과 해석](#BKMK_ViewResults)합니다.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>전제 조건  
  이 연습을 완료하려면 다음 구성 요소가 필요합니다.  
   
--   지원되는 Microsoft Windows 및 SharePoint 버전. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [SharePoint 솔루션 개발을 위한 요구 사항](../sharepoint/requirements-for-developing-sharepoint-solutions.md)합니다.  
+-   지원되는 Microsoft Windows 및 SharePoint 버전.
   
 -   [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].  
   
@@ -52,23 +52,23 @@ ms.locfileid: "37119845"
   
 #### <a name="to-create-a-sharepoint-project"></a>SharePoint 프로젝트를 만들려면  
   
-1.  메뉴 모음에서 선택 **파일** > **새로 만들기** > **프로젝트** 표시 하는 **새 프로젝트** 대화 상자.  
+1. 메뉴 모음에서 선택 **파일** > **새로 만들기** > **프로젝트** 표시 하는 **새 프로젝트** 대화 상자.  
   
-2.  확장 합니다 **SharePoint** 노드 아래 **Visual C#** 또는 **Visual Basic**를 선택한 후는 **2010** 노드.  
+2. 확장 합니다 **SharePoint** 노드 아래 **Visual C#** 또는 **Visual Basic**를 선택한 후는 **2010** 노드.  
   
-3.  템플릿 창에서 선택 합니다 **SharePoint 2010 프로젝트** 템플릿.  
+3. 템플릿 창에서 선택 합니다 **SharePoint 2010 프로젝트** 템플릿.  
   
-4.  에 **이름** 상자에 입력 합니다 **ProfileTest**를 선택한 후는 **확인** 단추입니다.  
+4. 에 **이름** 상자에 입력 합니다 **ProfileTest**를 선택한 후는 **확인** 단추입니다.  
   
-     합니다 **SharePoint 사용자 지정 마법사** 나타납니다.  
+    합니다 **SharePoint 사용자 지정 마법사** 나타납니다.  
   
-5.  에 **디버깅에 대 한 사이트 및 보안 수준을 지정할** 페이지에서 사이트 정의 디버그 하려는 SharePoint 서버 사이트의 URL을 입력 하거나 기본 위치를 사용 하 여 (http://*시스템 이름*/) .  
+5. 에 **디버깅에 대 한 사이트 및 보안 수준을 지정할** 페이지에서 사이트 정의 디버그 하려는 SharePoint 서버 사이트의 URL을 입력 하거나 기본 위치를 사용 하 여 (http://<em>시스템 이름</em>/) .  
   
-6.  에 **이 SharePoint 솔루션의 신뢰 수준을?** 섹션을 선택 합니다 **팜 솔루션으로 배포** 옵션 단추입니다.  
+6. 에 **이 SharePoint 솔루션의 신뢰 수준을?** 섹션을 선택 합니다 **팜 솔루션으로 배포** 옵션 단추입니다.  
   
-     현재 팜 솔루션만 프로파일링할 수 있습니다. 샌드박스 솔루션과 팜 솔루션 비교에 대 한 자세한 내용은 참조 하세요. [샌드박스 솔루션 고려 사항](../sharepoint/sandboxed-solution-considerations.md)합니다.  
+    현재 팜 솔루션만 프로파일링할 수 있습니다. 샌드박스 솔루션과 팜 솔루션 비교에 대 한 자세한 내용은 참조 하세요. [샌드박스 솔루션 고려 사항](../sharepoint/sandboxed-solution-considerations.md)합니다.  
   
-7.  선택 된 **완료** 단추입니다. 프로젝트에 나타납니다 **솔루션 탐색기**합니다.  
+7. 선택 된 **완료** 단추입니다. 프로젝트에 나타납니다 **솔루션 탐색기**합니다.  
   
 ## <a name="add-a-feature-and-feature-event-receiver"></a>기능 및 기능 이벤트 수신기 추가
  다음 작업으로, 기능의 이벤트 수신기와 함께 프로젝트에 기능을 추가합니다. 이 이벤트 수신기에는 프로파일링할 코드가 포함됩니다.  

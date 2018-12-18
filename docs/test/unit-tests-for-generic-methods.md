@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 제네릭 메서드의 단위 테스트
+title: 제네릭 메서드의 단위 테스트
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: fd45465d8eb20d802a20c1b04765afbe029a9993
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: ced33798841a732773310a902c0d51568bc36fe7
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380123"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067562"
 ---
 # <a name="unit-tests-for-generic-methods"></a>제네릭 메서드의 단위 테스트
 
@@ -111,13 +111,13 @@ public void SizeOfLinkedListTestHelper<T>()
 [TestMethod()]
 public void SizeOfLinkedListTest()
 {
-    SizeOfLinkedListTestHelper<int>();  // step 6
+    SizeOfLinkedListTestHelper<int>();  // step 6
     SizeOfLinkedListTestHelper<char>(); // step 7
 }
 ```
 
 > [!NOTE]
-> SizeOfLinkedListTest 테스트를 실행할 때마다 해당 TestHelper 메서드가 두 번 호출됩니다. 테스트에 성공하려면 assert 문이 항상 true로 평가되어야 합니다. 테스트에 실패할 경우 실패 원인이 `<int>`를 지정한 호출 때문인지 또는 `<char>`를 지정한 호출 때문인지 명확하지 않을 수 있습니다. 대답을 찾기 위해 호출 스택을 검사하거나, 테스트 메서드에 중단점을 설정한 후 테스트를 실행하는 동안 디버그할 수 있습니다. 자세한 내용은 [방법: ASP.NET 솔루션에서 테스트를 실행하는 동안 디버그](http://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b)를 참조하세요.
+> SizeOfLinkedListTest 테스트를 실행할 때마다 해당 TestHelper 메서드가 두 번 호출됩니다. 테스트에 성공하려면 assert 문이 항상 true로 평가되어야 합니다. 테스트에 실패할 경우 실패 원인이 `<int>`를 지정한 호출 때문인지 또는 `<char>`를 지정한 호출 때문인지 명확하지 않을 수 있습니다. 대답을 찾기 위해 호출 스택을 검사하거나, 테스트 메서드에 중단점을 설정한 후 테스트를 실행하는 동안 디버그할 수 있습니다. 자세한 내용은 [방법: ASP.NET 솔루션에서 테스트를 실행하는 동안 디버그](https://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b)를 참조하세요.
 
 
 ###  <a name="TypeConstraintNotSatisfied"></a> 예제 2: 형식 제약 조건 사용

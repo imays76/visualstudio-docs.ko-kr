@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 웹 성능 테스트용 레코더 플러그 인 만들기
+title: 웹 성능 테스트용 레코더 플러그 인 만들기
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 639e6dc4fb2d62258f94ca09d9f9155396748379
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 822c5cc1b657e6b5ada886ef7f10219a42df723a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382067"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064629"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>방법: 레코더 플러그 인 만들기
 
 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>을 사용하여 기록된 웹 성능 테스트를 수정할 수 있습니다. 수정 사항은 **웹 성능 테스트 레코더** 도구 모음의 **중지**를 선택한 후에 테스트가 저장되고 웹 성능 테스트 편집기에 표시되기 전에 적용됩니다.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 레코더 플러그 인을 사용하면 동적 매개 변수에서 사용자 지정 상관 관계를 수행할 수 있습니다. 웹 성능 테스트에서는 기본 제공 상관 관계 기능을 사용하여 테스트가 완료될 때 또는 사용자가 **웹 성능 테스트 편집기** 도구 모음의 **동적 매개 변수를 웹 테스트 매개 변수로 수준 올리기**를 사용할 때 웹 기록에서 동적 매개 변수를 검색합니다. 그러나 기본 제공 검색 기능으로 항상 모든 동적 매개 변수를 찾을 수 있는 것은 아닙니다. 예를 들어 대개 5-30분마다 값이 변경되는 세션 ID는 찾지 못합니다. 따라서 상관 관계 프로세스를 사용자가 직접 수행해야 합니다.
 
@@ -87,11 +89,11 @@ ms.locfileid: "39382067"
 
 ### <a name="deploy-the-recorder-plug-in"></a>레코더 플러그 인 배포
 
-레코더 플러그 인을 컴파일한 후 결과 DLL을 다음 두 위치 중 하나에 배치해야 합니다.
+레코더 플러그 인을 컴파일한 후 결과 DLL을 다음 두 위치 중 하나에 배치합니다.
 
--   *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\WebTestPlugins*
+- *%ProgramFiles(x86)%\Microsoft Visual Studio\\[version]\\[edition]\Common7\IDE\PrivateAssemblies\WebTestPlugins*
 
--   *%USERPROFILE%\My Documents\Visual Studio \<* version *>\WebTestPlugins*
+- *%USERPROFILE%\Documents\Visual Studio [version]\WebTestPlugins*
 
 > [!WARNING]
 > 레코더 플러그 인을 두 위치 중 하나에 복사한 후 Visual Studio를 다시 시작해야 레코더 플러그 인이 등록됩니다.
@@ -109,21 +111,21 @@ ms.locfileid: "39382067"
     > [!WARNING]
     > 이 플러그 인을 사용하는 부하 테스트 또는 웹 성능 테스트를 실행할 때 다음과 유사한 오류가 발생할 수 있습니다.
     >
-    > **요청 실패: \<플러그 인> 이벤트: 파일 또는 어셈블리 '\<"플러그 인 이름".dll 파일>, 버전=\<n.n.n.n >, Culture = neutral, PublicKeyToken = null' 또는 해당 종속성 중 하나를 로드할 수 없습니다. 지정한 파일을 찾을 수 없습니다.**
+    > **요청 실패: \<플러그 인> 이벤트의 예외: 파일 또는 어셈블리 '\<"플러그 인 이름".dll 파일>, 버전=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' 또는 해당 종속성 중 하나를 로드할 수 없습니다. 지정한 파일을 찾을 수 없습니다.**
     >
     > 이 오류는 플러그 인의 코드를 변경하고 새 DLL 버전 **(버전=0.0.0.0)** 을 만들었지만 해당 플러그 인이 계속해서 원래 플러그 인 버전을 참조하는 경우에 발생합니다. 이 문제를 해결하려면 다음 단계를 수행합니다.
     >
-    > 1.  웹 성능 및 부하 테스트 프로젝트에서는 참조에 경고가 표시됩니다. 참조를 제거했다가 플러그 인 DLL에 다시 추가합니다.
-    > 2.  테스트 또는 적절한 위치에서 플러그 인을 제거했다가 다시 추가합니다.
+    > 1. 웹 성능 및 부하 테스트 프로젝트에서는 참조에 경고가 표시됩니다. 참조를 제거했다가 플러그 인 DLL에 다시 추가합니다.
+    > 2. 테스트 또는 적절한 위치에서 플러그 인을 제거했다가 다시 추가합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 이 샘플에서는 사용자 지정된 웹 성능 테스트 레코더 플러그 인을 만들어 사용자 지정 동적 매개 변수 상관 관계 연결을 수행하는 방법을 보여줍니다.
 
 > [!NOTE]
 > 전체 샘플 코드 목록은 이 항목의 맨 아래에 있습니다.
 
- **샘플 코드 검토**
+**샘플 코드 검토**
 
 ## <a name="iterate-through-the-result-to-find-first-page-with-reportsession"></a>결과를 반복하여 ReportSession이 있는 첫 번째 페이지 찾기
 

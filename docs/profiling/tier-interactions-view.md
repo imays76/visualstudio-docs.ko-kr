@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4636a391e2472dbff427956077719e75f34a81de
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d92144a6b9bd94e23397a033fbbee45bd5aeed4a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31584973"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917773"
 ---
 # <a name="tier-interactions-view"></a>계층 상호 작용 뷰
 
@@ -34,7 +34,7 @@ ms.locfileid: "31584973"
 
 - 마스터 창에서 데이터베이스 호출 노드를 클릭하면 데이터베이스 호출 인스턴스에 대한 데이터가 세부 정보 창에 표시됩니다.
 
- 시간은 밀리초 단위의 숫자 또는 CPU 클록 틱의 횟수로 표시됩니다. 표시되는 시간 단위를 변경하려면**도구** 메뉴를 클릭하고 **옵션**을 클릭한 후에 **시간 값 표시 단위** 옵션 중 하나를 선택합니다.
+  시간은 밀리초 단위의 숫자 또는 CPU 클록 틱의 횟수로 표시됩니다. 표시되는 시간 단위를 변경하려면**도구** 메뉴를 클릭하고 **옵션**을 클릭한 후에 **시간 값 표시 단위** 옵션 중 하나를 선택합니다.
 
 ## <a name="master-pane"></a>마스터 창
 

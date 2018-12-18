@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 205408cc4241bb0c10b4a2e413449f7b70452187
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 0127bac6ca74be626f9ce22fb60ad5258ae6c3c9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567079"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822127"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>MEF를 사용하여 DSL 확장
 
@@ -125,43 +125,43 @@ DSL은 MEF 사용 되었습니다. 메뉴 명령, 제스처 처리기 및 유효
 
 #### <a name="to-create-a-dsl-extension-vsix"></a>DSL 확장을 VSIX를 만들려면
 
-1.  새 클래스 라이브러리 프로젝트를 만듭니다. 이 수행 하는 **새 프로젝트** 대화 상자에서 **Visual Basic** 하거나 **Visual C#** 선택한 후 **클래스 라이브러리**.
+1. 새 클래스 라이브러리 프로젝트를 만듭니다. 이 수행 하는 **새 프로젝트** 대화 상자에서 **Visual Basic** 하거나 **Visual C#** 선택한 후 **클래스 라이브러리**.
 
-2.  새 클래스 라이브러리 프로젝트에서 DSL의 어셈블리에 대 한 참조를 추가 합니다.
+2. 새 클래스 라이브러리 프로젝트에서 DSL의 어셈블리에 대 한 참조를 추가 합니다.
 
-    -   이 어셈블리는 일반적으로 끝나는 이름에 ". Dsl.dll "로 설정 합니다.
+   - 이 어셈블리는 일반적으로 끝나는 이름에 ". Dsl.dll "로 설정 합니다.
 
-    -   DSL 프로젝트에 대 한 액세스를 해야 하는 경우에 디렉터리 아래에 있는 어셈블리 파일을 찾을 수 있습니다 **Dsl\bin\\\***
+   - DSL 프로젝트에 대 한 액세스를 해야 하는 경우에 디렉터리 아래에 있는 어셈블리 파일을 찾을 수 있습니다 **Dsl\bin\\\\***
 
-    -   DSL VSIX 파일에 액세스할 수 있으면 ".zip" VSIX 파일의 파일 이름 확장명을 변경 하 여 어셈블리를 찾을 수 있습니다. .Zip 파일을 압축 합니다.
+   - DSL VSIX 파일에 액세스할 수 있으면 ".zip" VSIX 파일의 파일 이름 확장명을 변경 하 여 어셈블리를 찾을 수 있습니다. .Zip 파일을 압축 합니다.
 
-3.  다음.NET 어셈블리에 대 한 참조를 추가 합니다.
+3. 다음.NET 어셈블리에 대 한 참조를 추가 합니다.
 
-    -   Microsoft.VisualStudio.Modeling.Sdk.11.0.dll
+   -   Microsoft.VisualStudio.Modeling.Sdk.11.0.dll
 
-    -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll
+   -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll
 
-    -   Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll
+   -   Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll
 
-    -   System.ComponentModel.Composition.dll
+   -   System.ComponentModel.Composition.dll
 
-    -   System.Windows.Forms.dll
+   -   System.Windows.Forms.dll
 
-4.  동일한 솔루션에서 VSIX 프로젝트를 만듭니다. 이 수행 하는 **새 프로젝트** 대화 상자에서 **Visual Basic** 하거나 **Visual C#**, 클릭 **확장성**를 선택한 다음  **VSIX 프로젝트**합니다.
+4. 동일한 솔루션에서 VSIX 프로젝트를 만듭니다. 이 수행 하는 **새 프로젝트** 대화 상자에서 **Visual Basic** 하거나 **Visual C#**, 클릭 **확장성**를 선택한 다음  **VSIX 프로젝트**합니다.
 
-5.  솔루션 탐색기에서 VSIX 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 클릭 **시작 프로젝트로 설정**합니다.
+5. 솔루션 탐색기에서 VSIX 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 클릭 **시작 프로젝트로 설정**합니다.
 
-6.  새 프로젝트에서 엽니다 **source.extension.vsixmanifest**합니다.
+6. 새 프로젝트에서 엽니다 **source.extension.vsixmanifest**합니다.
 
-7.  클릭 **콘텐츠 추가**합니다. 대화 상자에서 설정할 **Content-type** 하 **MEF 구성 요소**, 및 **소스 프로젝트** 클래스 라이브러리 프로젝트에.
+7. 클릭 **콘텐츠 추가**합니다. 대화 상자에서 설정할 **Content-type** 하 **MEF 구성 요소**, 및 **소스 프로젝트** 클래스 라이브러리 프로젝트에.
 
-8.  DSL VSIX 참조를 추가 합니다.
+8. DSL VSIX 참조를 추가 합니다.
 
-    1.  **source.extension.vsixmanifest**, 클릭 **참조 추가**
+   1. **source.extension.vsixmanifest**, 클릭 **참조 추가**
 
-    2.  대화 상자에서 클릭 **추가 페이로드** DSL의 VSIX 파일을 찾을. VSIX 파일에서 DSL 솔루션에 작성 됩니다 **DslPackage\bin\\\*** 합니다.
+   2. 대화 상자에서 클릭 **추가 페이로드** DSL의 VSIX 파일을 찾을. VSIX 파일을에서 DSL 솔루션에서 빌드는 * * DslPackage\bin\\\\* * * 합니다.
 
-         그러면 사용자는 DSL과 확장 동시에 설치 됩니다. 사용자가 DSL 설치 이미 확장만 설치 됩니다.
+       그러면 사용자는 DSL과 확장 동시에 설치 됩니다. 사용자가 DSL 설치 이미 확장만 설치 됩니다.
 
 9. 검토 하 고 다른 필드를 업데이트할 **source.extension.vsixmanifest**합니다. 클릭 **버전 선택** 올바른 Visual Studio 버전 설정 되어 있는지 확인 합니다.
 

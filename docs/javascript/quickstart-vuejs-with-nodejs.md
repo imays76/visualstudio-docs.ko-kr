@@ -1,7 +1,8 @@
 ---
-title: '빠른 시작: Visual Studio를 사용하여 첫 번째 Vue.js 앱 만들기'
+title: '빠른 시작: 첫 번째 Vue.js 앱 만들기'
 description: 이 빠른 시작에서는 Visual Studio용 Node.js 도구를 사용하여 Visual Studio에서 Vue.js 앱을 만듭니다.
-ms.date: 11/15/2017
+ms.custom: seodec18
+ms.date: 09/24/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-nodejs
 ms.topic: quickstart
@@ -14,19 +15,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: cced69988b6f863380ac88ee27a8a963229f966a
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: a48de4bc48f24cc55914ccdb5fdeed0b4ad1d9a8
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131910"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058953"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>빠른 시작: Visual Studio를 사용하여 첫 번째 Vue.js 앱 만들기
 
 Visual Studio IDE(통합 개발 환경)에 대한 이 5~10분 분량의 소개에서는 간단한 Vue.js 웹 응용 프로그램을 만들고 실행할 것입니다. 아직 Visual Studio 2017을 설치하지 않은 경우 [Visual Studio 다운로드](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) 페이지로 이동하여 체험용으로 설치합니다.
 
 > [!IMPORTANT]
-> 이 문서에서는 Visual Studio 2017 버전 15.8 Preview 3부터 사용할 수 있는 Vue.js 템플릿이 필요합니다.
+> 이 문서에서는 Visual Studio 2017 버전 15.8부터 사용할 수 있는 Vue.js 템플릿이 필요합니다.
 
 ## <a name="create-a-project"></a>프로젝트 만들기
 
@@ -64,13 +65,13 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 5~10분 분량의 소개�
 
      ![Vue.js 솔루션](../javascript/media/vuejs-solution.png)
 
-  - 굵게 강조 표시된 것은 **새 프로젝트** 대화 상자에서 지정한 이름을 사용하는 프로젝트입니다. 디스크에서 이 프로젝트는 프로젝트 폴더의 .*njsproj* 파일로 표시됩니다.
+   - 굵게 강조 표시된 것은 **새 프로젝트** 대화 상자에서 지정한 이름을 사용하는 프로젝트입니다. 디스크에서 이 프로젝트는 프로젝트 폴더의 .*njsproj* 파일로 표시됩니다.
 
-  - 최상위 수준은 기본적으로 프로젝트와 이름이 동일한 솔루션입니다. 디스크에서 .*sln* 파일로 표시되는 솔루션은 하나 이상의 관련된 프로젝트에 대한 컨테이너입니다.
+   - 최상위 수준은 기본적으로 프로젝트와 이름이 동일한 솔루션입니다. 디스크에서 .*sln* 파일로 표시되는 솔루션은 하나 이상의 관련된 프로젝트에 대한 컨테이너입니다.
 
-  - **npm** 노드에는 설치된 모든 npm 패키지가 표시됩니다. npm 노드를 마우스 오른쪽 버튼으로 클릭하고 대화 상자를 사용하여 npm 패키지를 검색하고 설치할 수 있습니다.
+   - **npm** 노드에는 설치된 모든 npm 패키지가 표시됩니다. npm 노드를 마우스 오른쪽 버튼으로 클릭하고 대화 상자를 사용하여 npm 패키지를 검색하고 설치할 수 있습니다.
 
-1. npm 패키지를 설치하거나 명령 프롬프트에서 Node.js 명령을 실행하려면 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **여기서 명령 프롬프트 열기**를 선택합니다.
+2. npm 패키지를 설치하거나 명령 프롬프트에서 Node.js 명령을 실행하려면 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **여기서 명령 프롬프트 열기**를 선택합니다.
 
 ## <a name="add-a-vue-file-to-the-project"></a>프로젝트에 .vue 파일 추가
 

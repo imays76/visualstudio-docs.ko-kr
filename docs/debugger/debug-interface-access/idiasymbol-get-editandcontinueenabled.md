@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d82b1ab1e02395dff213aef9ce7e7fe566b77a2
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 14ae4932652d7ee8cdf33a5928fa5e725cdebbf7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463483"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844694"
 ---
 # <a name="idiasymbolgeteditandcontinueenabled"></a>IDiaSymbol::get_editAndContinueEnabled
-검색 모듈을 사용 하 여 컴파일한 있는지 여부를 나타내는 플래그는 [/Z7, /Zi, /ZI (디버깅 정보 형식)](/cpp/build/reference/z7-zi-zi-debug-information-format) 컴파일러 스위치입니다.  
+모듈을 사용 하 여 컴파일된 여부를 나타내는 플래그를 검색 합니다 [/z7, /Zi, /ZI (디버그 정보 형식)](/cpp/build/reference/z7-zi-zi-debug-information-format) 컴파일러 스위치입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -34,13 +34,13 @@ HRESULT get_editAndContinueEnabled (
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out] 반환 `TRUE` 컴파일;에서 편집 하며 계속 하기를 설정할 경우는 그렇지 않으면 반환 `FALSE`합니다.  
+ [out] 반환 `TRUE` 컴파일을에서 편집 하며 계속 하기 사용 하는 경우이 고, 그렇지 반환 `FALSE`합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
+ 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
   
 > [!NOTE]
->  반환 값이 `S_FALSE` 속성이 해당 기호를 사용할 수 있음을 의미 합니다.  
+>  반환 값이 `S_FALSE` 속성 기호에 사용할 수 없다는 것을 의미 합니다.  
   
 ## <a name="requirements"></a>요구 사항  
   

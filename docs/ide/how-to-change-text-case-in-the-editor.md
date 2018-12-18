@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 편집기에서 텍스트를 대문자 또는 소문자로 변환
+title: 텍스트를 대문자 또는 소문자로 변환
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de9c9c790be2624c8faa3fad706929baadeddc01
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 7165ea27c18e78fc7f9ee2ac790ff6d4d9e52c13
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34446064"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059287"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>방법: 편집기에서 텍스트의 대/소문자 변경
 

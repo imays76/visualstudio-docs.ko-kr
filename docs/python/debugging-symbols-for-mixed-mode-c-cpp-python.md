@@ -1,7 +1,7 @@
 ---
 title: 혼합 모드 Python/C++ 디버깅에 대한 기호
 description: Visual Studio에서 완벽한 혼합 모드 C++ 및 Python 디버깅을 위해 기호 로드 기능을 제공하는 방법입니다.
-ms.date: 06/26/2018
+ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c626bbe213ee81b8a79b55213d02bd69cc55470f
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 62e3727b36e6ba3231ee12388e1be5bde40d080a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341714"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062692"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>Python 인터프리터에 대한 디버깅 기호 설치
 
@@ -51,7 +51,7 @@ Visual Studio는 기호가 필요한 경우(일반적으로 혼합 모드 디버
 기호를 별도로 다운로드한 경우 아래 단계에 따라 Visual Studio가 이 사실을 인지하도록 합니다. Python 3.5 또는 이후 설치 관리자를 통해 기호를 설치한 경우 Visual Studio에서 자동으로 해당 기호를 찾습니다.
 
 1. **도구** > **옵션** 메뉴를 선택하고 **디버깅** > **기호**로 이동합니다.
-    
+
 1. 도구 모음에서 **추가** 단추를 선택하고(아래에 설명되어 있음) 다운로드한 기호를 확장한 폴더(*python.pdb*가 있는 위치, 예: 아래에 표시된 *c:\python34\Symbols*)를 입력하고 **확인**을 선택합니다. 
 
     ![혼합 모드 디버거 기호 옵션](media/mixed-mode-debugging-symbols.png)
@@ -71,24 +71,27 @@ Visual Studio는 기호가 필요한 경우(일반적으로 혼합 모드 디버
 | 3.4.2 | [32비트](https://www.python.org/ftp/python/3.4.2/python-3.4.2-pdb.zip) - [64비트](https://www.python.org/ftp/python/3.4.2/python-3.4.2.amd64-pdb.zip) |
 | 3.4.1 | [32비트](https://www.python.org/ftp/python/3.4.1/python-3.4.1-pdb.zip) - [64비트](https://www.python.org/ftp/python/3.4.1/python-3.4.1.amd64-pdb.zip) |
 | 3.4.0 | [32비트](https://www.python.org/ftp/python/3.4.0/python-3.4.0-pdb.zip) - [64비트](https://www.python.org/ftp/python/3.4.0/python-3.4.0.amd64-pdb.zip) |
-| 3.3.5 | [32비트](http://www.python.org/ftp/python/3.3.5/python-3.3.5-pdb.zip) - [64비트](http://www.python.org/ftp/python/3.3.5/python-3.3.5.amd64-pdb.zip) |
-| 3.3.4 | [32비트](http://python.org/ftp/python/3.3.4/python-3.3.4-pdb.zip) - [64비트](http://python.org/ftp/python/3.3.4/python-3.3.4.amd64-pdb.zip) |
-| 3.3.3 | [32비트](http://python.org/ftp/python/3.3.3/python-3.3.3-pdb.zip) - [64비트](http://python.org/ftp/python/3.3.3/python-3.3.3.amd64-pdb.zip) |
-| 3.3.2 | [32비트](http://python.org/ftp/python/3.3.2/python-3.3.2-pdb.zip) - [64비트](http://python.org/ftp/python/3.3.2/python-3.3.2.amd64-pdb.zip) |
-| 3.3.1 | [32비트](http://python.org/ftp/python/3.3.1/python-3.3.1-pdb.zip) - [64비트](http://python.org/ftp/python/3.3.1/python-3.3.1.amd64-pdb.zip) |
-| 3.3.0 | [32비트](http://python.org/ftp/python/3.3.0/python-3.3.0-pdb.zip) - [64비트](http://python.org/ftp/python/3.3.0/python-3.3.0.amd64-pdb.zip) |
+| 3.3.5 | [32비트](https://www.python.org/ftp/python/3.3.5/python-3.3.5-pdb.zip) - [64비트](https://www.python.org/ftp/python/3.3.5/python-3.3.5.amd64-pdb.zip) |
+| 3.3.4 | [32비트](https://www.python.org/ftp/python/3.3.4/python-3.3.4-pdb.zip) - [64비트](https://www.python.org/ftp/python/3.3.4/python-3.3.4.amd64-pdb.zip) |
+| 3.3.3 | [32비트](https://www.python.org/ftp/python/3.3.3/python-3.3.3-pdb.zip) - [64비트](https://www.python.org/ftp/python/3.3.3/python-3.3.3.amd64-pdb.zip) |
+| 3.3.2 | [32비트](https://www.python.org/ftp/python/3.3.2/python-3.3.2-pdb.zip) - [64비트](https://www.python.org/ftp/python/3.3.2/python-3.3.2.amd64-pdb.zip) |
+| 3.3.1 | [32비트](https://www.python.org/ftp/python/3.3.1/python-3.3.1-pdb.zip) - [64비트](https://www.python.org/ftp/python/3.3.1/python-3.3.1.amd64-pdb.zip) |
+| 3.3.0 | [32비트](https://www.python.org/ftp/python/3.3.0/python-3.3.0-pdb.zip) - [64비트](https://www.python.org/ftp/python/3.3.0/python-3.3.0.amd64-pdb.zip) |
+| 2.7.15 | [32비트](https://www.python.org/ftp/python/2.7.15/python-2.7.15-pdb.zip) - [64비트](https://www.python.org/ftp/python/2.7.15/python-2.7.15.amd64-pdb.zip) |
+| 2.7.14 | [32비트](https://www.python.org/ftp/python/2.7.14/python-2.7.14-pdb.zip) - [64비트](https://www.python.org/ftp/python/2.7.14/python-2.7.14.amd64-pdb.zip) |
+| 2.7.13 | [32비트](https://www.python.org/ftp/python/2.7.13/python-2.7.13-pdb.zip) - [64비트](https://www.python.org/ftp/python/2.7.13/python-2.7.13.amd64-pdb.zip) |
+| 2.7.12 | [32비트](https://www.python.org/ftp/python/2.7.12/python-2.7.12-pdb.zip) - [64비트](https://www.python.org/ftp/python/2.7.12/python-2.7.12.amd64-pdb.zip) |
 | 2.7.11 | [32비트](https://www.python.org/ftp/python/2.7.11/python-2.7.11-pdb.zip) - [64비트](https://www.python.org/ftp/python/2.7.11/python-2.7.11.amd64-pdb.zip) |
 | 2.7.10 | [32비트](https://www.python.org/ftp/python/2.7.10/python-2.7.10-pdb.zip) - [64비트](https://www.python.org/ftp/python/2.7.10/python-2.7.10.amd64-pdb.zip) |
 | 2.7.9 | [32비트](https://www.python.org/ftp/python/2.7.9/python-2.7.9-pdb.zip) - [64비트](https://www.python.org/ftp/python/2.7.9/python-2.7.9.amd64-pdb.zip) |
 | 2.7.8 | [32비트](https://www.python.org/ftp/python/2.7.8/python-2.7.8-pdb.zip) - [64비트](https://www.python.org/ftp/python/2.7.8/python-2.7.8.amd64-pdb.zip) |
 | 2.7.7 | [32비트](https://www.python.org/ftp/python/2.7.7/python-2.7.7-pdb.zip) - [64비트](https://www.python.org/ftp/python/2.7.7/python-2.7.7.amd64-pdb.zip) |
-| 2.7.6 | [32비트](http://python.org/ftp/python/2.7.6/python-2.7.6-pdb.zip) - [64비트](http://python.org/ftp/python/2.7.6/python-2.7.6.amd64-pdb.zip) |
-| 2.7.5 | [32비트](http://python.org/ftp/python/2.7.5/python-2.7.5-pdb.zip) - [64비트](http://python.org/ftp/python/2.7.5/python-2.7.5.amd64-pdb.zip) |
-| 2.7.4 | [32비트](http://python.org/ftp/python/2.7.4/python-2.7.4-pdb.zip) - [64비트](http://python.org/ftp/python/2.7.4/python-2.7.4.amd64-pdb.zip) |
-| 2.7.3 | [32비트](http://python.org/ftp/python/2.7.3/python-2.7.3-pdb.zip) - [64비트](http://python.org/ftp/python/2.7.3/python-2.7.3.amd64-pdb.zip) |
-| 2.7.2 | [32비트](http://python.org/ftp/python/2.7.2/python-2.7.2-pdb.zip) - [64비트](http://python.org/ftp/python/2.7.2/python-2.7.2.amd64-pdb.zip) |
-| 2.7.1 | [32비트](http://python.org/ftp/python/2.7.1/python-2.7.1-pdb.zip) - [64비트](http://python.org/ftp/python/2.7.1/python-2.7.1.amd64-pdb.zip) |
-
+| 2.7.6 | [32비트](https://www.python.org/ftp/python/2.7.6/python-2.7.6-pdb.zip) - [64비트](https://www.python.org/ftp/python/2.7.6/python-2.7.6.amd64-pdb.zip) |
+| 2.7.5 | [32비트](https://www.python.org/ftp/python/2.7.5/python-2.7.5-pdb.zip) - [64비트](https://www.python.org/ftp/python/2.7.5/python-2.7.5.amd64-pdb.zip) |
+| 2.7.4 | [32비트](https://www.python.org/ftp/python/2.7.4/python-2.7.4-pdb.zip) - [64비트](https://www.python.org/ftp/python/2.7.4/python-2.7.4.amd64-pdb.zip) |
+| 2.7.3 | [32비트](https://www.python.org/ftp/python/2.7.3/python-2.7.3-pdb.zip) - [64비트](https://www.python.org/ftp/python/2.7.3/python-2.7.3.amd64-pdb.zip) |
+| 2.7.2 | [32비트](https://www.python.org/ftp/python/2.7.2/python-2.7.2-pdb.zip) - [64비트](https://www.python.org/ftp/python/2.7.2/python-2.7.2.amd64-pdb.zip) |
+| 2.7.1 | [32비트](https://www.python.org/ftp/python/2.7.1/python-2.7.1-pdb.zip) - [64비트](https://www.python.org/ftp/python/2.7.1/python-2.7.1.amd64-pdb.zip) |
 
 ## <a name="enthought-canopy"></a>Enthought Canopy
 

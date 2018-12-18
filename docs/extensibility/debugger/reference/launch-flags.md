@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44d7396388d0bac1539a597fa5b72e0bedaba8c7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 74ec5b3cc02efa75e84d52910c02ea693a7ab8a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125058"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903492"
 ---
 # <a name="launchflags"></a>LAUNCH_FLAGS
 디버그 시작 플래그를 지정합니다.  
@@ -48,21 +48,21 @@ public enum enum_LAUNCH_FLAGS {
   
 ## <a name="members"></a>멤버  
  LAUNCH_DEBUG  
- 디버깅을 위한 프로세스를 시작합니다.  
+ 디버깅에 대 한 프로세스를 시작 합니다.  
   
  LAUNCH_NODEBUG  
- 디버깅 하지 않고 프로세스를 시작 합니다.  
+ 디버그 하지 않고 프로세스를 시작 합니다.  
   
  LAUNCH_ENABLE_ENC  
- 더 이상 사용 하지 마십시오.  
+ 사용 되지 않으며, 사용 하지 마십시오.  
   
  LAUNCH_MERGE_ENV  
- 프로세스를 시작 하 고 시작 하는 호스트와 환경을 병합 합니다.  
+ 프로세스를 시작 하 고 시작 하는 호스트를 사용 하 여 환경을 병합 합니다.  
   
 ## <a name="remarks"></a>설명  
- 이러한 값에 대 한 인수로 전달 되는 [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) 메서드.  
+ 이러한 값을 인수로 전달 되는 [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) 메서드.  
   
- 이러한 플래그 비트와 함께 `OR`합니다.  
+ 이러한 플래그는 비트과 결합 될 수 `OR`입니다.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  

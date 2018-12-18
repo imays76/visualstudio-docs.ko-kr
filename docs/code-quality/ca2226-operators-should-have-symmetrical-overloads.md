@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 67cdfd3799b0ba3e1af53cb9e95bb426fec02ddf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8c872df976379a9bd20f28ceb9f4bf3eb376c8e8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920630"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900464"
 ---
 # <a name="ca2226-operators-should-have-symmetrical-overloads"></a>CA2226: 연산자에는 대칭 오버로드가 있어야 합니다.
+
 |||
 |-|-|
 |TypeName|OperatorsShouldHaveSymmetricalOverloads|
@@ -35,15 +36,15 @@ ms.locfileid: "31920630"
  형식이 같음 연산자 또는 같지 않음 연산자를 구현하면서 그 반대 연산자를 구현하지 않습니다.
 
 ## <a name="rule-description"></a>규칙 설명
- 되지 않으며 여기서 같음 또는 같지 않음은 형식 인스턴스에 적용 하 고 하면서 그 반대 연산자 정의 되지 않습니다. 일반적으로 형식은 같음 연산자의 부정된 값을 반환 하 여 같지 않음 연산자를 구현 합니다.
+ 같음 또는 같지 않음은 형식의 인스턴스에 적용 하면서 그 반대 연산자를 정의 되지 않았고 없는 경우가 있습니다. 일반적으로 형식은 같음 연산자의 부정된 값을 반환 하 여 같지 않음 연산자를 구현 합니다.
 
- C# 컴파일러는이 규칙이 위반에 대 한 오류를 발생합니다.
+ C# 컴파일러에이 규칙의 위반에 대 한 오류가 발생 합니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이 규칙 위반 문제를 해결 하려면 같음 및 같지 않음 연산자를 구현 하거나 있는지를 제거 합니다.
+ 이 규칙 위반 문제를 해결 하려면 같음 및 같지 않음 연산자를 구현 하거나 존재 하는 것을 제거 합니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
- 이 규칙에서는 경고를 표시해야 합니다. 형식이 일치 하는 방식으로 작동 하지 것입니다는 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]합니다.
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
+ 이 규칙에서는 경고를 표시해야 합니다. 형식이는.NET Framework를 사용 하 여 일치 하는 방식으로 작동 하지 않습니다.
 
 ## <a name="related-rules"></a>관련된 규칙
  [CA1046: 참조 형식에 같음 연산자를 오버로드하지 마십시오.](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33296937ec969deb204d98363afd8ec8af9f1e08
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5d6931efe0025d1437e91a0194807e8ea7c9783b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115296"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854353"
 ---
 # <a name="idebugprogramnode2gethostpid"></a>IDebugProgramNode2::GetHostPid
 프로그램을 호스트 하는 프로세스에 대 한 시스템 프로세스 식별자를 가져옵니다.  
@@ -44,10 +44,10 @@ int GetHostPid (
  [out] 호스팅 프로세스에 대 한 시스템 프로세스 식별자를 반환합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제에서는 간단한에이 메서드를 구현 하는 방법을 보여 줍니다 `CProgram` 구현 하는 개체는 [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) 인터페이스입니다.  
+ 다음 예제에서는 간단한에 대 한이 메서드를 구현 하는 방법을 보여 줍니다 `CProgram` 를 구현 하는 개체를 [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) 인터페이스입니다.  
   
 ```cpp  
 HRESULT CProgram::GetHostPid(DWORD* pdwHostPid) {    

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dfa0f5b35ec5f5f3e68955d3768da9530000319
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: bbb950947b3f97a4f6d6e9c1461dd2023595058c
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34548663"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775035"
 ---
 # <a name="add-tier-interaction-data-from-the-command-line"></a>명령줄에서 계층 상호 작용 데이터 추가
 
@@ -33,7 +33,7 @@ Windows 8 데스크톱 앱 및 Windows Server 2012 앱에서 계층 상호 작�
 
 **원격 컴퓨터에서 TIP 데이터 수집**
 
-원격 컴퓨터에서 계층 상호 작용 데이터를 수집하려면 **vs_profiler_***\<Platform>***_***\<Language>***.exe** 파일을 Visual Studio 컴퓨터의 *%VSInstallDir%***\Team Tools\Performance Tools\Setups** 폴더에서 원격 컴퓨터로 복사하여 설치해야 합니다. [원격 디버깅](../debugger/remote-debugging.md) 다운로드 패키지의 프로파일링 도구는 사용할 수 없습니다.
+원격 머신에서 계층 상호 작용 데이터를 수집하려면 **vs_profiler\_**_\<Platform>_**\_**_\<Language>_**.exe** 파일을 Visual Studio 컴퓨터의 _%VSInstallDir%_**\Team Tools\Performance Tools\Setups** 폴더에서 원격 컴퓨터로 복사하여 설치해야 합니다. [원격 디버깅](../debugger/remote-debugging.md) 다운로드 패키지의 프로파일링 도구는 사용할 수 없습니다.
 
 **TIP 보고서**
 

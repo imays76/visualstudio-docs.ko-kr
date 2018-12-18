@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c7eb35e556e8edd6e840f2fbd6701e182895706
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f4f666ba0cf620249e9308179d715ca38bf0f18b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920151"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822867"
 ---
 # <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202: 개체를 여러 번 삭제하지 마십시오.
+
 |||
 |-|-|
 |TypeName|DoNotDisposeObjectsMultipleTimes|
@@ -32,26 +33,32 @@ ms.locfileid: "31920151"
 |변경 수준|주요 변경 아님|
 
 ## <a name="cause"></a>원인
- 여러 번 호출 될 수 있는 코드 경로가 메서드 구현 포함 되어 <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> 또는 Dispose와 동일한 동일한 개체에 대 한 일부 형식에 대 한 close () 메서드와 같은 합니다.
+
+메서드 구현에 대 한 여러 호출을 일으킬 수 있는 코드 경로 포함 <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> 또는 Dispose와 같은 이와 동등한 동일한 개체에서 일부 형식의 close () 메서드.
 
 ## <a name="rule-description"></a>규칙 설명
- 정확 하 게 구현 A <xref:System.IDisposable.Dispose%2A> 메서드는 예외를 throw 하지 않고 여러 번 호출할 수 있습니다. 그러나이 확실 하지 및 발생을 방지 하려면 한 <xref:System.ObjectDisposedException?displayProperty=fullName> 호출 하지 않아야 <xref:System.IDisposable.Dispose%2A> 개체에 대 한 번 이상.
+
+잘못 구현 <xref:System.IDisposable.Dispose%2A> 메서드 예외를 throw 하지 않고 여러 번 호출할 수 있습니다. 그러나이 보장 되지 않습니다 및 생성 되지 않도록 하는 <xref:System.ObjectDisposedException?displayProperty=fullName> 호출 하지 않아야 <xref:System.IDisposable.Dispose%2A> 개체에 대 한 번 이상.
 
 ## <a name="related-rules"></a>관련된 규칙
- [CA2000: 범위를 벗어나기 전에 개체를 삭제하십시오.](../code-quality/ca2000-dispose-objects-before-losing-scope.md)
+
+- [CA2000: 범위를 벗어나기 전에 개체를 삭제하십시오.](../code-quality/ca2000-dispose-objects-before-losing-scope.md)
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이 규칙 위반 문제를 해결 하려면 코드 경로가 있으므로 관계 없이 구현을 변경 <xref:System.IDisposable.Dispose%2A> 개체에 대해 한 번만 호출 됩니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
- 이 규칙에서는 경고를 표시해야 합니다. 경우에 <xref:System.IDisposable.Dispose%2A> 개체가 여러 번 안전 하 게 호출 가능한 것으로 알려져에 대 한 구현 나중에 변경 될 수 있습니다.
+이 규칙 위반 문제를 해결 하려면 코드 경로 관계 없이 구현을 변경 <xref:System.IDisposable.Dispose%2A> 개체에 대 한 번만 호출 됩니다.
+
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
+
+이 규칙에서는 경고를 표시해야 합니다. 경우에 <xref:System.IDisposable.Dispose%2A> 개체를 여러 번 안전 하 게 호출할 수 알려져 구현은 나중에 변경 될 수 있습니다.
 
 ## <a name="example"></a>예제
- 중첩 된 `using` 문 (`Using` Visual basic에서) CA2202 경고 위반이 발생할 수 있습니다. 경우 중첩 내부 IDisposable 리소스 `using` 외부의 리소스를 포함 하는 문을 `using` 문에서 `Dispose` 중첩된 리소스의 메서드는 포함 된 리소스를 해제 합니다. 이러한 상황이 발생 하는 경우는 `Dispose` 메서드 외부의 `using` 문에서 리소스를 두 번째로를 삭제 하려고 합니다.
 
- 다음 예제에서는 <xref:System.IO.Stream> 외부에서 생성 된 개체의 Dispose 메서드가에서 문을 사용 하는 내부 끝날 때 해제가 문을 사용 하는 <xref:System.IO.StreamWriter> 포함 된 개체는 `stream` 개체입니다. 외부의 끝에 `using` 문에서 `stream` 개체를 두 번 해제 합니다. 두 번째 릴리스 CA2202에 위반 됩니다.
+중첩 `using` 문 (`Using` Visual basic에서) 위반 CA2202 경고를 발생할 수 있습니다. 경우 중첩 내부 IDisposable 리소스 `using` 문 외부의 리소스를 포함 `using` 문에서 `Dispose` 중첩 된 리소스의 메서드가 포함 된 리소스를 해제 합니다. 이러한 상황이 발생 하는 경우는 `Dispose` 외부 메서드의 `using` 문을 두 번째로 해당 리소스를 삭제 하려고 합니다.
 
-```
+다음 예에서 <xref:System.IO.Stream> 외부에서 만든 개체의 Dispose 메서드에서 문을 사용 하 여 내부 끝날 때 해제 됩니다 문을 사용 하는 <xref:System.IO.StreamWriter> 포함 된 개체는 `stream` 개체. 외부의 끝 `using` 문에서 `stream` 개체가 해제 되는 두 번째 시간입니다. 두 번째 릴리스 CA2202에 위반 됩니다.
+
+```csharp
 using (Stream stream = new FileStream("file.txt", FileMode.OpenOrCreate))
 {
     using (StreamWriter writer = new StreamWriter(stream))
@@ -59,13 +66,13 @@ using (Stream stream = new FileStream("file.txt", FileMode.OpenOrCreate))
         // Use the writer object...
     }
 }
-
 ```
 
 ## <a name="example"></a>예제
- 이 문제를 해결 하려면 사용을 `try` / `finally` 외부 대신 블록 `using` 문. 에 `finally` 차단 되어 있는지 확인 합니다는 `stream` 리소스가 null이 됩니다.
 
-```
+이 문제를 해결 하려면 사용을 `try` / `finally` 외부 대신 블록 `using` 문입니다. 에 `finally` 차단 되어 있는지 확인 합니다는 `stream` 리소스 null이 아닙니다.
+
+```csharp
 Stream stream = null;
 try
 {
@@ -81,8 +88,9 @@ finally
     if(stream != null)
         stream.Dispose();
 }
-
 ```
 
-## <a name="see-also"></a>참고 항목
- <xref:System.IDisposable?displayProperty=fullName> [삭제 패턴](/dotnet/standard/design-guidelines/dispose-pattern)
+## <a name="see-also"></a>참고자료
+
+- <xref:System.IDisposable?displayProperty=fullName>
+- [삭제 패턴](/dotnet/standard/design-guidelines/dispose-pattern)

@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dd4edf59a5c45177030ae19f9a52340c6088fbc
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0911d342f7db341165bdbae426ab784e40b73347
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468725"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935732"
 ---
 # <a name="idiasegmentgetframe"></a>IDiaSegment::get_frame
-세그먼트 수를 검색 합니다.  
+세그먼트 수를 검색합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -34,7 +34,7 @@ HRESULT get_frame (
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out] 세그먼트를 반환합니다.  
+ [out] 세그먼트 수를 반환합니다.  
   
 ## <a name="return-value"></a>반환 값  
  성공 하면 반환 `S_OK`합니다. 반환 `S_FALSE` 경우이 속성이 지원 되지 않습니다. 그러지 않으면 오류 코드가 반환됩니다.  

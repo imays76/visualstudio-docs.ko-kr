@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: afa5932ebfaea1e0a7f61997c26e95226ed51b1d
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 40e5e735fb80e6071ad9e9423eecb0284a9823cd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758018"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878195"
 ---
 # <a name="switcht-activity-designer"></a>스위치\<T > 활동 디자이너
 
@@ -39,7 +39,7 @@ ms.locfileid: "36758018"
 다음 표에서는 가장 유용한 <xref:System.Activities.Statements.Switch%601> 속성을 보여 주고 디자이너에서 이 속성을 사용하는 방법을 설명합니다.
 
 |속성 이름|필수|용도|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.Switch%601> 활동 디자이너의 이름을 지정합니다. 기본값은 스위치 < Int32\>합니다. 값을 편집할 수 있습니다 합니다 **속성** 창 하거나 디자이너 머리글에서 직접.<br /><br /> <xref:System.Activities.Activity.DisplayName%2A>은 꼭 필요하지 않더라도 사용하는 것이 좋습니다.|
 |<xref:System.Activities.Statements.Switch%601.Expression%2A>|True|실행할 case를 결정하기 위해 case 컬렉션의 키와 비교하는 데 사용할 식을 지정합니다.|
 |<xref:System.Activities.Statements.Switch%601.Default%2A>||일치하는 항목이 없는 경우에 실행할 활동을 지정합니다. 클릭 합니다 **작업 추가** 열려는 디자이너에서 단추를 **기본** 상자 활동을 삭제할 수 있습니다.|

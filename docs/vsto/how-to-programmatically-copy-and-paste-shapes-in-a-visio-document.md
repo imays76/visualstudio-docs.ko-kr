@@ -16,18 +16,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 29dada62bb1e51c9cafb41d4eae08ce10e9a930c
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: e0028b11899e05adde1dd1b5483b71d2c48101db
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257087"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671497"
 ---
 # <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>방법: 프로그래밍 방식으로 복사 하 고 Visio 문서에서 셰이프를 붙여 넣습니다.
   문서 한 페이지의 셰이프를 프로그래밍 방식으로 복사하고 동일한 문서의 새 페이지에 붙여넣을 수 있습니다. 기본 위치(활성 창의 가운데)에 붙여넣을 수도 있고 아니면 원래 페이지의 동일한 좌표 위치에 붙여넣을 수도 있습니다.  
   
 ## <a name="copy-and-paste-shapes"></a>셰이프 복사 및 붙여넣기  
- 개체 모델에 대한 세부 정보는 VBA 참조 설명서에서 [Microsoft.Office.Interop.Visio.Shape.DrawRectangle](https://msdn.microsoft.com/library/office/ff765757.aspx), [Microsoft.Office.Interop.Visio.Shape.DrawOval](https://msdn.microsoft.com/library/office/ff767121.aspx), [Microsoft.Office.Interop.Visio.Shape.Copy](https://msdn.microsoft.com/library/office/ff765638.aspx), [Microsoft.Office.Interop.Visio.Shape.Paste](https://msdn.microsoft.com/library/office/ff768361.aspx) 메서드 및 [Microsoft.Office.Interop.Visio.VisCutCopyPasteCodes.visCopyPasteNormal](https://msdn.microsoft.com/library/office/ff765187.aspx) 플래그를 참조하세요.  
+ 개체 모델에 대한 세부 정보는 VBA 참조 설명서에서 [Microsoft.Office.Interop.Visio.Shape.DrawRectangle](/office/vba/api/Visio.Shape.DrawRectangle), [Microsoft.Office.Interop.Visio.Shape.DrawOval](/office/vba/api/Visio.Shape.DrawOval), [Microsoft.Office.Interop.Visio.Shape.Copy](/office/vba/api/Visio.Shape.Copy), [Microsoft.Office.Interop.Visio.Shape.Paste](/office/vba/api/Visio.Shape.Paste) 메서드 및 [Microsoft.Office.Interop.Visio.VisCutCopyPasteCodes.visCopyPasteNormal](/office/vba/api/Visio.viscutcopypastecodes) 플래그를 참조하세요.  
   
 ### <a name="to-copy-shapes-to-the-center-of-another-page"></a>셰이프를 다른 페이지의 가운데에 복사하려면  
   
@@ -37,7 +37,7 @@ ms.locfileid: "35257087"
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#14](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#14)]  
   
 ## <a name="copy-and-paste-shapes-with-the-same-positions"></a>동일한 위치를 사용 하 여 셰이프 복사 및 붙여넣기  
- 개체 모델에 대한 세부 정보는 VBA 참조 설명서에서 [Microsoft.Office.Interop.Visio.Shape.DrawRectangle](https://msdn.microsoft.com/library/office/ff765757.aspx), [Microsoft.Office.Interop.Visio.Shape.DrawOval](https://msdn.microsoft.com/library/office/ff767121.aspx), [Microsoft.Office.Interop.Visio.Shape.Copy](https://msdn.microsoft.com/library/office/ff765638.aspx), [Microsoft.Office.Interop.Visio.Shape.Paste](https://msdn.microsoft.com/library/office/ff768361.aspx) 메서드 및 [Microsoft.Office.Interop.Visio.VisCutCopyPasteCodes.visCopyPasteNoTranslate](https://msdn.microsoft.com/library/office/ff765187.aspx) 플래그를 참조하세요.  
+ 개체 모델에 대한 세부 정보는 VBA 참조 설명서에서 [Microsoft.Office.Interop.Visio.Shape.DrawRectangle](/office/vba/api/Visio.Shape.DrawRectangle), [Microsoft.Office.Interop.Visio.Shape.DrawOval](/office/vba/api/Visio.Shape.DrawOval), [Microsoft.Office.Interop.Visio.Shape.Copy](/office/vba/api/Visio.Shape.Copy), [Microsoft.Office.Interop.Visio.Shape.Paste](/office/vba/api/Visio.Shape.Paste) 메서드 및 [Microsoft.Office.Interop.Visio.VisCutCopyPasteCodes.visCopyPasteNoTranslate](/office/vba/api/Visio.viscutcopypastecodes) 플래그를 참조하세요.  
   
  붙여넣은 정보의 형식을 제어 하 고 (선택 사항) 원본 파일 (예: Microsoft Office Word 문서)에 대 한 링크를 설정 해야 할 경우 PasteSpecial 메서드를 사용 합니다.  
   

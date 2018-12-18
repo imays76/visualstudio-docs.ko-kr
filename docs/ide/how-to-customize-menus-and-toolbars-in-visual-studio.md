@@ -1,5 +1,5 @@
 ---
-title: '방법: Visual Studio에서 메뉴 및 도구 모음 사용자 지정'
+title: 메뉴 및 도구 모음 사용자 지정
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e9cab18be65d29b6cdd22b8948d2e89f75c4fe9
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: bb58d0a20e8764e7cefe013458476ddcd41ac416
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745951"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049694"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>방법: Visual Studio에서 메뉴 및 도구 모음 사용자 지정
 

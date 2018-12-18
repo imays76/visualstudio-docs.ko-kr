@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95c896c90334504d7a141e3adda6d29d7d037191
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6f2a23ef8874ff6deaae55b7f3a6bce1982a5d90
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111336"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818720"
 ---
 # <a name="idebugfunctionposition2getfunctionname"></a>IDebugFunctionPosition2::GetFunctionName
 이 위치 가리키는 함수의 이름을 가져옵니다.  
@@ -44,7 +44,7 @@ int GetFunctionName(
  [out] 함수의 이름을 반환합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)

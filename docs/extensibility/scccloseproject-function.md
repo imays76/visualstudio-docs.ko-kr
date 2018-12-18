@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49d3196fbe2eb6c3bafa1ec234e27072e50a4b7d
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: abb0cd825b6b09b5fdb7ad37f8066151ee42d3fc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636027"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938099"
 ---
 # <a name="scccloseproject-function"></a>SccCloseProject 함수
 이 함수는 특정 세션의 끝을 표시 하는 프로젝트를 닫습니다.  

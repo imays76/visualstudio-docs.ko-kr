@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bed49c87828463c16912da4d31073ba2ac32fdc
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 1a758c1e44f9f78f7dc2a225e641d91f97db72cc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511994"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942831"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>글꼴 및 Visual Studio에 대 한 서식 지정
 ##  <a name="BKMK_TheEnvironmentFont"></a> 환경 글꼴
@@ -83,7 +83,7 @@ window.ShowModal()
   
  `ShowModal` 부울 값을 반환? (null 허용 부울 값) 사용 하 여는 `DialogResult`, 필요한 경우 사용할 수 있습니다. 반환 값은 대화 상자를 사용 하 여 닫힌 경우 true **확인**합니다.  
   
- 자체에서 작업을 하 고 호스트 되는 일부 WPF UI를 표시 하는 경우 `HwndSource`, 팝업 창 등 Win32/WinForms 부모 창 창의 자식 창에 WPF 설정 해야 합니다 `FontFamily` 및 `FontSize` WPF e의 루트 요소에 대해 lement 합니다. (주 창에 속성을 설정 하는 셸에서 있지만 지난 상속 되지 것입니다는 `HWND`). 셸에 속성을 바인딩할 수, 다음과 같은 리소스를 제공 합니다.  
+ 자체에서 작업을 하 고 호스트 되는 일부 WPF UI를 표시 하는 경우 `HwndSource`, 팝업 창 등 Win32/WinForms 부모 창의 자식 창에 WPF 설정 해야 합니다 `FontFamily` 및 `FontSize` WPF 요소의 루트 요소에 합니다. (주 창에 속성을 설정 하는 셸에서 있지만 지난 상속 되지 것입니다는 `HWND`). 셸에 속성을 바인딩할 수, 다음과 같은 리소스를 제공 합니다.  
   
 ```xaml
 <Setter Property="FontFamily" Value="{DynamicResource VsFont.EnvironmentFontFamily}" />  
@@ -325,13 +325,13 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="title-case"></a>첫 글자를 대문자로  
  첫 글자를 대문자로 대부분 또는 모든 구 내에서 단어의 첫 글자를 대문자로 작성 하는 스타일입니다. Visual Studio에서 첫 글자를 대문자로 비롯 한 여러 항목에 대 한 사용 됩니다.  
   
--   **Tooltips.** 예: "선택한 항목 미리 보기"  
+- **Tooltips.** 예: "선택한 항목 미리 보기"  
   
--   **열 헤더입니다.** 예: "시스템 응답"  
+- **열 헤더입니다.** 예: "시스템 응답"  
   
--   **메뉴 항목입니다.** 예: "모두 저장"  
+- **메뉴 항목입니다.** 예: "모두 저장"  
   
- 첫 글자를 대문자로 사용 하는 경우 이러한은 단어를 활용 하는 경우 및 소문자 상태로 유지 하는 경우에 대 한 지침입니다.  
+  첫 글자를 대문자로 사용 하는 경우 이러한은 단어를 활용 하는 경우 및 소문자 상태로 유지 하는 경우에 대 한 지침입니다.  
   
 |대문자|설명 및 예제|  
 |---------------|---------------------------|  
@@ -466,5 +466,5 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 -   환경 글꼴 텍스트 굵게 표시 된 기본 줄 높이 간격 및 안쪽 여백 따라야 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [MSDN: 글꼴 (Windows)](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742483\(v=vs.85\).aspx)   
- [MSDN: 사용자 인터페이스 텍스트 (Windows)](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742478\(v=vs.85\).aspx)
+ [MSDN: 글꼴 (Windows)](/windows/desktop/uxguide/vis-fonts)   
+ [MSDN: 사용자 인터페이스 텍스트 (Windows)](/windows/desktop/uxguide/text-ui)

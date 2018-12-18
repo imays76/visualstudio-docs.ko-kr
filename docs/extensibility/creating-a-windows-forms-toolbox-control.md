@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4f23cae01c9356da26c42ca299a6ac6bb7c190f
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: a44dfd224324ba641e70e0cfe6ded87f88fe6765
+ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498713"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53307710"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Windows Forms 도구 상자 컨트롤 만들기
 Visual Studio 확장성 도구 (VS SDK)에 포함 된 Windows Forms 도구 상자 컨트롤 항목 템플릿을 사용 하면 자동으로 추가 되는 컨트롤을 만듭니다는 **도구 상자** 확장이 설치 되는 경우. 이 항목에서는 템플릿을 사용 하 여 다른 사용자에 게 배포할 수 있는 간단한 카운터 컨트롤을 만드는 방법을 보여 줍니다.  
@@ -61,7 +61,7 @@ Visual Studio 확장성 도구 (VS SDK)에 포함 된 Windows Forms 도구 상�
     |`Button1`|**텍스트**|다시 설정|  
   
 ### <a name="code-the-user-control"></a>사용자 정의 컨트롤 코드  
- 합니다 `Counter` 컨트롤이 이벤트 카운터는 증가 될 때마다 발생 하는 카운터를 증가 하는 메서드를 노출 시킬를 **재설정** 단추 및 현재 카운트, 표시 텍스트, 및를 표시할지 여부를 저장 하는 세 가지 속성 또는 숨기기 합니다 **재설정** 단추입니다. `ProvideToolboxControl` 특성의 위치를 결정 합니다 **도구 상자** 는 `Counter` 컨트롤이 나타납니다.  
+ 합니다 `Counter` 컨트롤이 이벤트 카운터는 증가 될 때마다 발생 하는 카운터를 증가 하는 메서드를 노출 시킬를 **재설정** 단추 및 현재 카운트, 표시 텍스트, 및를 표시할지 여부를 저장 하는 세 가지 속성 또는 숨기기 합니다 **재설정** 단추입니다. `ProvideToolboxControl` 특성은 **도구 상자** 에서 `Counter` 컨트롤이 나타나는 위치를 결정합니다.  
   
 #### <a name="to-code-the-user-control"></a>사용자 정의 컨트롤 코딩  
   
@@ -77,16 +77,16 @@ Visual Studio 확장성 도구 (VS SDK)에 포함 된 Windows Forms 도구 상�
 3.  다음 공용 속성 선언을 만듭니다.  
   
     ```csharp  
-    public int Value {  
+    public int Value {  
         get { return currentValue; }   
     }  
   
-    public string Message {  
+    public string Message {  
         get { return displayText; }  
         set { displayText = value; }  
     }  
   
-    public bool ShowReset {  
+    public bool ShowReset {  
         get { return btnReset.Visible; }  
         set { btnReset.Visible = value; }  
     }  
@@ -98,7 +98,7 @@ Visual Studio 확장성 도구 (VS SDK)에 포함 된 Windows Forms 도구 상�
 4.  다음 코드를 배치 합니다 `Load` 컨트롤에 대 한 이벤트입니다.  
   
     ```csharp  
-    private void Counter_Load(object sender, EventArgs e)  
+    private void Counter_Load(object sender, EventArgs e)  
     {  
         currentValue = 0;  
         label1.Text = Message + Value;  
@@ -111,7 +111,7 @@ Visual Studio 확장성 도구 (VS SDK)에 포함 된 Windows Forms 도구 상�
 5.  카운터를 증가 시키는 다음 공용 메서드를 만듭니다.  
   
     ```csharp  
-    public void Increment()  
+    public void Increment()  
     {  
         currentValue++;  
         label1.Text = displayText + Value;  
@@ -123,7 +123,7 @@ Visual Studio 확장성 도구 (VS SDK)에 포함 된 Windows Forms 도구 상�
 6.  에 대 한 선언을 추가 합니다 `Incremented` 컨트롤 클래스에는 이벤트입니다.  
   
     ```csharp  
-    public event EventHandler Incremented;  
+    public event EventHandler Incremented;  
     ```  
   
      호출자는 카운터의 값이 변경에 응답 하기 위해이 이벤트 처리기를 추가할 수 있습니다.  
@@ -131,7 +131,7 @@ Visual Studio 확장성 도구 (VS SDK)에 포함 된 Windows Forms 도구 상�
 7.  반환 디자인 뷰를 두 번 클릭 합니다 **다시 설정** 생성 하는 단추를 `btnReset_Click` 이벤트 처리기에 다음 예제에서와 같이 입력 합니다.  
   
     ```csharp  
-    private void btnReset_Click(object sender, EventArgs e)  
+    private void btnReset_Click(object sender, EventArgs e)  
     {  
         currentValue = 0;  
         label1.Text = displayText + Value;  
@@ -139,13 +139,13 @@ Visual Studio 확장성 도구 (VS SDK)에 포함 된 Windows Forms 도구 상�
   
     ```  
   
-8.  클래스 정의 바로 위의는 `ProvideToolboxControl` 특성 선언에서 첫 번째 매개 변수의 값을 변경 합니다 `"MyWinFormsControl.Counter"` 에 `"General"`입니다. **도구 상자**에서 컨트롤을 호스트할 항목 그룹의 이름이 설정됩니다.  
+8.  클래스 정의 바로 위의 `ProvideToolboxControl` 특성 선언에서 첫 번째 매개 변수 값을 `"MyWinFormsControl.Counter"` 에서 `"General"`로 변경합니다. **도구 상자**에서 컨트롤을 호스트할 항목 그룹의 이름이 설정됩니다.  
   
      다음 예제에서는 `ProvideToolboxControl` 특성 및 조정된 클래스 정의를 보여 줍니다.  
   
     ```csharp  
     [ProvideToolboxControl("General", false)]  
-    public partial class Counter : UserControl  
+    public partial class Counter : UserControl  
     ```  
   
 ### <a name="test-the-control"></a>컨트롤 테스트  
@@ -209,9 +209,9 @@ Visual Studio 확장성 도구 (VS SDK)에 포함 된 Windows Forms 도구 상�
      카운터를 다시 설정 **0**합니다.  
   
 ## <a name="next-steps"></a>다음 단계  
- 작성 하는 경우는 **도구 상자** 컨트롤을 Visual Studio는 라는 파일을 만듭니다 *ProjectName.vsix* 에 * \bin\debug\* 프로젝트의 폴더입니다. 업로드 하 여 컨트롤을 배포할 수 있습니다 합니다 *.vsix* 네트워크 또는 웹 사이트에 파일입니다. 열리는 경우는 *.vsix* 파일인 컨트롤 설치 되며 Visual Studio에 추가할 **도구 상자** 사용자의 컴퓨터. 업로드할 수 있습니다는 *.vsix* 파일을 합니다 [Visual Studio 갤러리](http://go.microsoft.com/fwlink/?LinkID=123847) 웹 사이트 사용자에 이동 하 여 찾을 수 있도록 합니다 **도구**  >  **확장 및 업데이트** 대화 합니다.  
+ 작성 하는 경우는 **도구 상자** 컨트롤을 Visual Studio는 라는 파일을 만듭니다 *ProjectName.vsix* 프로젝트의 \bin\debug\ 폴더에 있습니다. 업로드 하 여 컨트롤을 배포할 수 있습니다 합니다 *.vsix* 네트워크 또는 웹 사이트에 파일입니다. 열리는 경우는 *.vsix* 파일인 컨트롤 설치 되며 Visual Studio에 추가할 **도구 상자** 사용자의 컴퓨터. 업로드할 수 있습니다 합니다 *.vsix* 파일을 [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkID=123847) 사용자에 이동 하 여 찾을 수 있도록 합니다 **도구**  >   **확장 및 업데이트** 대화 합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Visual Studio의 다른 부분 확장](../extensibility/extending-other-parts-of-visual-studio.md)   
  [WPF 도구 상자 컨트롤 만들기](../extensibility/creating-a-wpf-toolbox-control.md)   
  [Visual Studio의 다른 부분 확장](../extensibility/extending-other-parts-of-visual-studio.md)   

@@ -1,5 +1,5 @@
 ---
-title: '방법: Visual Studio에서 부하 테스트 결과의 사용자 지정 그래프에서 만들기'
+title: '방법: 부하 테스트 결과에서 사용자 지정 그래프 만들기'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +11,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7de5d684b0a4299c2f3d90e4a00338c55d2d6870
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: c65b9ad5c6a9d554f2c71cc5d17c63ce9368df2c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382001"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055402"
 ---
 # <a name="how-to-create-custom-graphs-in-load-test-results"></a>방법: 부하 테스트 결과에서 사용자 지정 그래프 만들기
 
 부하 테스트 결과에 대한 특정 정보를 표시하는 그래프를 디자인할 수 있습니다. 그래프에 표시할 부하 테스트 카운터를 지정하여 사용자 지정 그래프를 디자인합니다.
 
- 부하 테스트가 실행되는 동안 또는 부하 테스트의 실행이 완료된 후 다음 절차를 수행할 수 있습니다.
+부하 테스트가 실행되는 동안 또는 부하 테스트의 실행이 완료된 후 다음 절차를 수행할 수 있습니다.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-create-a-custom-load-test-results-graph"></a>사용자 지정 부하 테스트 결과 그래프를 만들려면
 

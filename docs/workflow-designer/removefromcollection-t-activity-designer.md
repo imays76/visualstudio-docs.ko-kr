@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 53fc58e231e5ef1cbbc6106e279b4925d145dd9f
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 415d03ffda6bbd2e839354b4f7cb143337ab08c8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755939"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891364"
 ---
 # <a name="removefromcollectiont-activity-designer"></a>RemoveFromCollection\<T > 활동 디자이너
 
@@ -29,17 +29,18 @@ ms.locfileid: "36755939"
 
 ### <a name="using-the-removefromcollectiont-activity-designer"></a>Removefromcollection\<T > 활동 디자이너
 
-액세스는 **RemoveFromCollection\<T >** 활동 디자이너에는 **컬렉션** 범주의 **도구 상자**합니다. 합니다 **RemoveFromCollection\<T >** 활동 디자이너에서 끌 수 있습니다 합니다 **도구 상자** 활동 일반적으로 배치 하는 등 어디서 나 워크플로 디자이너 화면에 끌어 놓 및 내부는 <xref:System.Activities.Statements.Sequence>합니다. 이렇게 한 <xref:System.Activities.Statements.RemoveFromCollection%601> 기본값을 사용 하 여 활동 <xref:System.Activities.Activity.DisplayName%2A> RemoveFromCollection의 < Int32\>합니다. <xref:System.Activities.Activity.DisplayName%2A> 헤더의 값을 편집할 수 있습니다 합니다 **RemoveFromCollection < T\>**  활동 디자이너 또는 합니다 **DisplayName** 속성 그리드의 상자. 다른 속성은 속성 표에서 편집해야 합니다.
+액세스는 **RemoveFromCollection\<T >** 활동 디자이너에는 **컬렉션** 범주의 **도구 상자**합니다.
+합니다 **RemoveFromCollection\<T >** 활동 디자이너에서 끌 수 있습니다 합니다 **도구 상자** 활동 일반적으로 배치 하는 등 어디서 나 워크플로 디자이너 화면에 끌어 놓 및 내부는 <xref:System.Activities.Statements.Sequence>합니다. 이렇게 한 <xref:System.Activities.Statements.RemoveFromCollection%601> 기본값을 사용 하 여 활동 <xref:System.Activities.Activity.DisplayName%2A> RemoveFromCollection의 < Int32\>합니다. <xref:System.Activities.Activity.DisplayName%2A> 헤더의 값을 편집할 수 있습니다 합니다 **RemoveFromCollection < T\>**  활동 디자이너 또는 합니다 **DisplayName** 속성 그리드의 상자. 다른 속성은 속성 표에서 편집해야 합니다.
 
 ### <a name="the-removefromcollectiont-properties"></a>RemoveFromCollection < T\> 속성
 
-다음 표에서는 <xref:System.Activities.Statements.RemoveFromCollection%601> 속성을 보여 주고 디자이너에서 이 속성을 사용하는 방법을 설명합니다.
+다음 표는 <xref:System.Activities.Statements.RemoveFromCollection%601> 속성 디자이너에서 사용 되는 방법을 설명 합니다.
 
 |속성 이름|필수|용도|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.RemoveFromCollection%601> 활동의 선택적 이름입니다. 기본값은 RemoveFromCollection < Int32\>합니다.<br /><br /> <xref:System.Activities.Activity.DisplayName%2A>은 꼭 필요하지 않더라도 사용하는 것이 좋습니다.|
-|<xref:System.Activities.Statements.RemoveFromCollection%601.Item%2A>|True|에 추가할 항목의 **컬렉션\<T >** 합니다. 이 항목은 형식의 *T*, 형식인 *TypeArgument*합니다. 이 항목을 지정하려면 속성 표에 Visual Basic 식을 입력합니다.|
-|<xref:System.Activities.Statements.RemoveFromCollection%601.Collection%2A>|True|항목이 추가될 컬렉션입니다. 이 컬렉션은 형식 **ICollection < TypeArgument\>합니다.** 컬렉션을 지정 하려면 속성 표에 Visual Basic 식을 입력 합니다.|
+|<xref:System.Activities.Statements.RemoveFromCollection%601.Item%2A>|True|제거할 항목의 **컬렉션\<T >** 합니다. 이 항목은 형식의 *T*, 형식인 *TypeArgument*합니다. 이 항목을 지정하려면 속성 표에 Visual Basic 식을 입력합니다.|
+|<xref:System.Activities.Statements.RemoveFromCollection%601.Collection%2A>|True|항목을 제거 해야 하는 컬렉션입니다. 이 컬렉션은 형식 **ICollection < TypeArgument\>합니다.** 컬렉션을 지정 하려면 속성 표에 Visual Basic 식을 입력 합니다.|
 |*TypeArgument*|True|<xref:System.Collections.Generic.ICollection%601>에 포함된 항목의 형식 T입니다. 기본적으로이 *TypeArgument* 유형이 설정 되어 **Int32**합니다. 유형을 변경 하려면 값을 변경 합니다 *TypeArgument* 속성 표의 콤보 상자에서.|
 |<xref:System.Activities.Activity%601.Result%2A>|False|지정된 항목이 컬렉션에서 제거되었는지 여부를 나타내는 값입니다. 결과에 바인딩할 변수를 지정하려면 속성 표에 변수를 입력합니다.|
 

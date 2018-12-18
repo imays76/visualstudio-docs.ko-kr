@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 부하 테스트 결과 내보내기
+title: 부하 테스트 결과 내보내기
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,18 +13,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9e9f3513cb5d7bb03f51be68d1b44b8df161a088
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: d50a97854aafda3baf1eedbc9d821c0e530e6bf6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381506"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057167"
 ---
 # <a name="how-to-export-load-test-results-from-a-repository"></a>방법: 리포지토리에서 부하 테스트 결과 내보내기
 
 부하 테스트를 실행하면 실행하는 동안 수집된 정보가 부하 테스트 결과 리포지토리에 저장됩니다. 부하 테스트 결과 리포지토리에는 성능 카운터 데이터와 발생한 모든 오류에 대한 정보가 들어 있습니다. 자세한 내용은 [부하 테스트 결과 리포지토리에서 부하 테스트 결과 관리](../test/manage-load-test-results-in-the-load-test-results-repository.md)를 참조하세요.
 
 **부하 테스트 결과 열기 및 관리** 대화 상자를 사용하면 부하 테스트 편집기에서 부하 테스트 결과를 관리할 수 있습니다. 또한 부하 테스트 결과를 열고, 가져오고, 내보내고, 제거할 수 있습니다.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-export-results-from-a-repository"></a>리포지토리에서 결과를 내보내려면
 

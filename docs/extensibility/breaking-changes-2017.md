@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb117a10a7f736e36b30806adfc5e07fe0b8aecf
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 1a7ed5322c131bd9f3b758b31169676865880fd7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512255"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826494"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Visual Studio 2017 확장성의 변경 내용
 
@@ -59,13 +59,14 @@ Visual Studio 프로세스 내에서 실행 되는 코드는 Visual Studio Setti
 > [INSTALLDIR] 아래 Visual Studio의 설치 루트 디렉터리를 가리킵니다. *VSIXInstaller.exe* 는 자동으로이 채우는 하지만 사용자 지정 배포 코드를 작성 하려면 읽어보세요 [Visual Studio 찾기](locating-visual-studio.md)합니다.
 
 * GAC에만 설치 된 어셈블리:
-  * 이러한 어셈블리는 이제 설치 * [INSTALLDIR] \Common7\IDE\*, *[INSTALLDIR] \Common7\IDE\PublicAssemblies* 하거나 *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*합니다. 이러한 폴더를 사용 하면 Visual Studio 프로세스의 검색 경로에 속합니다.
+  * 이러한 어셈블리는 이제 설치 <em>[INSTALLDIR] \Common7\IDE\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> 하거나 *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*합니다. 이러한 폴더를 사용 하면 Visual Studio 프로세스의 검색 경로에 속합니다.
+
 * 비 검색 경로 GAC에 설치 된 어셈블리:
   * GAC의 복사본은 설치 프로그램에서 제거 되었습니다.
   * A *.pkgdef* 파일 어셈블리에 대 한 코드 베이스 엔트리를 지정 하려면 추가 되었습니다.
 
     예를 들어:
-    
+
     ```xml
     [$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{UniqueGUID}]
     "name"="AssemblyName" "codeBase"="$PackageFolder$\AssemblyName.dll"
@@ -73,7 +74,7 @@ Visual Studio 프로세스 내에서 실행 되는 코드는 Visual Studio Setti
     "culture"="neutral"
     "version"=15.0.0.0
     ```
-    Visual Studio pkgdef 하위 시스템 런타임 시 이러한 항목을 Visual Studio 프로세스의 런타임 구성 파일에 병합 됩니다 (아래 *[VSAPPDATA]\devenv.exe.config*)으로 [ `<codeBase>` ](https://msdn.microsoft.com/en-us/library/efs781xb(v=vs.110).aspx) 요소입니다. 이것이 경로 검색을 통해 검색을 방지 하기 때문에 Visual Studio 프로세스에 어셈블리를 찾을 수 있도록 권장 되는 방법입니다.
+    Visual Studio pkgdef 하위 시스템 런타임 시 이러한 항목을 Visual Studio 프로세스의 런타임 구성 파일에 병합 됩니다 (아래 *[VSAPPDATA]\devenv.exe.config*)으로 [ `<codeBase>` ](/dotnet/framework/configure-apps/file-schema/runtime/codebase-element) 요소입니다. 이것이 경로 검색을 통해 검색을 방지 하기 때문에 Visual Studio 프로세스에 어셈블리를 찾을 수 있도록 권장 되는 방법입니다.
 
 ### <a name="reacting-to-this-breaking-change"></a>이 주요 변경에 대응
 
@@ -81,13 +82,13 @@ Visual Studio 프로세스 내에서 실행 되는 코드는 Visual Studio Setti
   * 코드는 Visual Studio 핵심 어셈블리를 찾을 수 됩니다.
   * 사용 하는 것이 좋습니다는 *.pkgdef* 필요한 경우 어셈블리에 대 한 경로 지정 하는 파일입니다.
 * 확장은 Visual Studio 프로세스 외부에서 실행 되 하는 경우:
-  * 아래에서 Visual Studio 핵심 어셈블리에 대 한 확인 하는 것이 좋습니다. * [INSTALLDIR] \Common7\IDE\*하십시오 *[INSTALLDIR] \Common7\IDE\PublicAssemblies* 또는 *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*구성 파일 또는 어셈블리 확인자를 사용 하 여 합니다.
+  * 아래에서 Visual Studio 핵심 어셈블리에 대 한 확인 하는 것이 좋습니다 <em>[INSTALLDIR] \Common7\IDE\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> 또는 *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*구성 파일 또는 어셈블리 확인자를 사용 하 여 합니다.
 
 ## <a name="change-reduce-registry-impact"></a>변경: 레지스트리 영향 줄이기
 
 ### <a name="global-com-registration"></a>전역 COM 등록
 
-* 이전에 Visual Studio는 네이티브 COM 등록을 지원 하기 위해 HKEY_CLASSES_ROOT 및 HKEY_LOCAL_MACHINE 하이브에 여러 레지스트리 키를 설치 합니다. 이 영향을 제거 하려면 Visual Studio는 이제 사용 [COM 구성 요소에 대 한 등록이 필요 없는 활성화](https://msdn.microsoft.com/en-us/library/ms973913.aspx)합니다.
+* 이전에 Visual Studio는 네이티브 COM 등록을 지원 하기 위해 HKEY_CLASSES_ROOT 및 HKEY_LOCAL_MACHINE 하이브에 여러 레지스트리 키를 설치 합니다. 이 영향을 제거 하려면 Visual Studio는 이제 사용 [COM 구성 요소에 대 한 등록이 필요 없는 활성화](https://msdn.microsoft.com/library/ms973913.aspx)합니다.
 * 결과적으로 대부분의 TLB / OLB %ProgramFiles (x86) %\Common Files\Microsoft Shared\MSEnv DLL 파일은 더 이상 Visual Studio에서 기본적으로 설치 됩니다. 이러한 파일은 이제 Visual Studio 호스트 프로세스에서 사용 하는 해당 등록이 필요 없는 COM 매니페스트를 사용 하 여 [INSTALLDIR] 아래에서 설치 됩니다.
 * 결과적으로, Visual Studio COM 인터페이스에 대 한 전역 COM 등록을 사용 하는 외부 코드는 이러한 등록을 찾을 더 이상 됩니다. Visual Studio 프로세스 내에서 실행 되는 코드에는 차이가 표시 되지 않습니다.
 
@@ -106,5 +107,5 @@ Visual Studio 프로세스 내에서 실행 되는 코드는 Visual Studio Setti
 
 * 외부 코드도 COM 구성 요소에 대 한 등록이 필요 없는 활성화를 사용 하도록 변환 됩니다.
 * 외부 구성 요소는 Visual Studio 위치를 찾을 수 있습니다 [지침에 따라](https://blogs.msdn.microsoft.com/heaths/2016/09/15/changes-to-visual-studio-15-setup)합니다.
-* 외부 구성 요소를 사용 하는 것이 좋습니다 합니다 [외부 Settings Manager](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.settings.externalsettingsmanager.aspx) Visual Studio 레지스트리 키에 직접 읽고 쓰는 대신 합니다.
+* 외부 구성 요소를 사용 하는 것이 좋습니다 합니다 [외부 Settings Manager](/dotnet/api/microsoft.visualstudio.settings.externalsettingsmanager) Visual Studio 레지스트리 키에 직접 읽고 쓰는 대신 합니다.
 * 여부를 구성 요소 확장을 사용 하는 수 구현한 또 다른 방법은 등록에 대 한 확인 합니다. 예를 들어, 디버거 확장 새 활용 하는 일을 할 수 있습니다 [msvsmon JSON 파일 COM 등록](migrate-debugger-COM-registration.md)합니다.

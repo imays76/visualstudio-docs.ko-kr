@@ -1,22 +1,24 @@
 ---
-title: 자습서 - Visual Studio의 Flask 학습, 3단계
+title: Visual Studio 3단계, 정적 파일 및 페이지에서 Flask 자습서 알아보기
+titleSuffix: ''
 description: Visual Studio 프로젝트 컨텍스트에서 Flask 기본 사항을 검토하는 연습 과정으로, 정적 파일을 제공하고 앱에 페이지를 추가하고 템플릿 상속을 사용하는 방법을 구체적으로 설명합니다.
-ms.date: 06/04/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 38050d9ecb5956c4e782ec61b5ae2dc6801ad224
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 906c44ca3b1d0771202e78910870d38f9d4fb995
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637645"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065027"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>3단계: 정적 파일 제공, 페이지 추가 및 템플릿 상속 사용
 
@@ -119,7 +121,7 @@ Flask는 코드에서 호출하여 프로젝트의 *static* 폴더 내의 모든
 
 ### <a name="question-how-do-i-handle-url-variables-and-query-parameters-in-an-api"></a>질문: API에서 URL 변수와 쿼리 매개 변수를 처리하려면 어떻게 할까요?
 
-답변: [질문: Flask는 다양한 URL 경로와 쿼리 매개 변수에서 어떻게 작동하나요?](learn-flask-visual-studio-step-01-project-solution.md#qa-url-variables)에 대한 1-4단계의 답변을 참조하세요.
+대답: 1-4단계의 답변을 [질문: Flask는 다양한 URL 경로와 쿼리 매개 변수에서 어떻게 작동하나요?](learn-flask-visual-studio-step-01-project-solution.md#qa-url-variables)에 대해 참조하세요.
 
 ## <a name="step-3-3-add-a-page-to-the-app"></a>3-3단계: 앱에 페이지 추가
 
@@ -174,7 +176,7 @@ Flask는 코드에서 호출하여 프로젝트의 *static* 폴더 내의 모든
 
 ### <a name="question-does-the-name-of-a-page-function-matter-to-flask"></a>질문: 페이지 함수의 이름이 Flask에 중요합니까?
 
-답변: 아니요. Flask가 응답을 생성하기 위해 함수를 호출할 URL을 결정하는 것은 `@app.route` 데코레이터이기 때문입니다. 개발자는 일반적으로 함수 이름을 경로와 일치시키지만, 이러한 일치는 필요하지 않습니다.
+대답: 아니요, Flask가 응답을 생성하기 위해 함수를 호출할 URL을 결정하는 것은 `@app.route` 데코레이터이기 때문입니다. 개발자는 일반적으로 함수 이름을 경로와 일치시키지만, 이러한 일치는 필요하지 않습니다.
 
 ## <a name="step-3-4-use-template-inheritance-to-create-a-header-and-nav-bar"></a>3-4단계: 템플릿 상속을 사용하여 헤더 및 탐색 모음 만들기
 

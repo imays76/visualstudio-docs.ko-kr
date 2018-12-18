@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 테스트에 대한 진단 데이터 어댑터 만들기
+title: 테스트용 진단 데이터 어댑터 만들기
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a514459e834e5652e544991eb061f0c96767dd32
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 67eb1a1128a811868db97dfc682c7b4eec7b2c61
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36302642"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068071"
 ---
 # <a name="create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine"></a>진단 데이터 어댑터를 만들어 사용자 지정 데이터를 수집하거나 테스트 머신에 영향 주기
 
@@ -26,18 +26,17 @@ ms.locfileid: "36302642"
 
 Visual Studio에서 테스트를 실행하는 경우 이러한 테스트 설정을 활성으로 설정해야 합니다. 테스트 설정에 대한 자세한 내용은 [테스트 설정을 사용하여 진단 정보 수집](../test/collect-diagnostic-information-using-test-settings.md)을 참조하세요.
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
 ## <a name="tasks"></a>작업
 
- 진단 데이터 어댑터를 만드는 데 도움이 되는 항목은 다음과 같습니다.
+진단 데이터 어댑터를 만드는 데 도움이 되는 항목은 다음과 같습니다.
 
 |작업|관련 항목|
-|-----------|-----------------------|
+|-|-----------------------|
 |**진단 데이터 어댑터 만들기:** 클래스 라이브러리를 만들어 진단 데이터 어댑터를 만든 다음, 진단 데이터 어댑터 API를 사용하여 원하는 정보를 수집하거나 테스트를 실행하는 데 사용하는 테스트 시스템에 영향을 줄 수 있습니다.|-   [방법: 진단 데이터 어댑터 만들기](../test/how-to-create-a-diagnostic-data-adapter.md)|
-|**사용자 지정 진단 데이터 어댑터 설치:** 진단 데이터 어댑터 또는 다른 사용자가 제공하는 어댑터를 올바른 디렉터리에 복사하여 설치할 수 있습니다.|-   [방법: 사용자 지정 진단 데이터 어댑터 설치](../test/how-to-install-a-custom-diagnostic-data-adapter.md)|
-|**테스트를 실행할 때 사용할 사용자 지정 진단 데이터 어댑터 선택:** 테스트를 실행할 때 어댑터를 사용할 수 있도록 테스트 설정에 사용할 진단 데이터 어댑터를 선택할 수 있습니다.|-   [테스트하는 동안 진단 데이터 수집(VSTS)](/vsts/manual-test/collect-diagnostic-data)<br />-   [수동 테스트에서 진단 데이터 수집(VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)|
-|**진단 데이터 어댑터가 수행할 작업 구성:** 특정 테스트 설정에서 진단 데이터 어댑터 작업을 제어하는 설정을 구성할 수 있습니다.|-   [방법: 진단 데이터 어댑터 데이터용 사용자 지정 편집기 만들기](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)|
+|**테스트 실행 시 사용할 사용자 지정 진단 데이터 어댑터 선택:** 테스트를 실행할 때 어댑터를 사용할 수 있도록 테스트 설정에 사용할 진단 데이터 어댑터를 선택할 수 있습니다.|-   [테스트하는 동안 진단 데이터 수집(Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)<br />-   [수동 테스트에서 진단 데이터 수집(Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
 
 ## <a name="see-also"></a>참고 항목
 
-- [진단 데이터 어댑터를 만들기 위한 샘플 프로젝트](../test/sample-project-for-creating-a-diagnostic-data-adapter.md)
 - [테스트 설정을 사용하여 진단 정보 수집](../test/collect-diagnostic-information-using-test-settings.md)

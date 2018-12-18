@@ -31,19 +31,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b5e60da7ea3058f192ad59dcc57a493115a751b
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 0b93fa4720a6f0de9e2d7a64eb2c820811610297
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957699"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938801"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>클래스 디자이너에서 형식 멤버 만들기 및 구성
 
 이러한 멤버를 클래스 다이어그램의 형식에 추가하고 **클래스 세부 내용** 창에서 해당 멤버를 구성할 수 있습니다.
 
 |**Type**|**포함할 수 있는 멤버**|
-|--------------|--------------------------------|
+|--------------| - |
 |클래스|메서드, 속성(C# 및 Visual Basic의 경우), 필드, 이벤트(C# 및 Visual Basic의 경우), 생성자(메서드), 소멸자(메서드), 상수|
 |Enum|멤버|
 |인터페이스|메서드, 속성, 이벤트(C# 및 Visual Basic의 경우)|
@@ -58,7 +58,7 @@ ms.locfileid: "33957699"
 ## <a name="common-tasks"></a>일반 작업
 
 |작업|지원 내용|
-|----------|------------------------|
+|----------| - |
 |**시작:** 형식 멤버를 만들고 구성하기 전에 **클래스 세부 내용** 창을 열어야 합니다.|- [클래스 세부 내용 창 열기](creating-and-configuring-type-members.md#open-the-class-details-window)<br />- [클래스 세부 내용 사용 정보](creating-and-configuring-type-members.md#class-details-usage-notes)<br />- [읽기 전용 정보 표시](creating-and-configuring-type-members.md#display-of-read-only-information)<br />- [클래스 다이어그램 및 클래스 세부 내용 창의 키보드 및 마우스 바로 가기](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
 |**만들기 및 형식 멤버 수정:** **클래스 세부 내용** 창을 사용하여 새 멤버를 만들고, 멤버를 수정하고, 메서드에 매개 변수를 추가할 수 있습니다.|- [멤버 만들기](creating-and-configuring-type-members.md#create-members)<br />- [형식 멤버 수정](creating-and-configuring-type-members.md#modify-type-members)<br />- [메서드에 매개 변수 추가](creating-and-configuring-type-members.md#add-parameters-to-methods)|
 

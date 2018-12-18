@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 C++ 시작
+title: C++ 시작
 description: ''
 ms.custom: mvc
 ms.date: 12/04/2017
@@ -7,18 +7,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: tutorial
 author: corob-msft
-ms.author: tglee
+ms.author: corob
 manager: douge
 dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b49f83813bc5acd64de74a27a025bc78503902c5
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 406b3c24cf3c46b694afc8ab24c0ddca11b434ee
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747354"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159999"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Visual Studio에서 C++ 시작
 
@@ -151,10 +151,10 @@ HelloApp을 디버그하여 단어 "Hello"가 콘솔 창에 표시되는지 여�
 
 이 빌드가 완료되면 명령 프롬프트 창에서 복사하고 실행할 수 있는 앱이 만들어집니다. 많은 작업을 수행하지 않지만 더 많은 작업에 대한 게이트웨이입니다.
 
-이 빠른 시작을 완료한 것을 축하 드립니다! 더 많은 예제를 탐색하려는 경우 [Visual Studio 샘플](../ide/visual-studio-samples.md)을 참조하세요.
+이 빠른 시작을 완료한 것을 축하 드립니다!
 
 ## <a name="see-also"></a>참고 항목
 
 - [C++ 데스크톱 개발에 Visual Studio IDE 사용](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)
-- [연습: C# 또는 Visual Basic으로 간단한 응용 프로그램 만들기](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
+- [연습: C# 또는 Visual Basic으로 간단한 애플리케이션 만들기](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
 - [Visual Studio 생산성 팁](../ide/productivity-tips-for-visual-studio.md)

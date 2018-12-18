@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 형식 정의 보기
+title: 형식 정의 보기
 ms.date: 01/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 529486e39db57228feb703817eea44fab9399c85
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: e7b159eb48e995fa0bca6ea86299d09c1a10cf27
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745765"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062084"
 ---
 # <a name="view-type-and-member-definitions"></a>형식 및 멤버 정의 보기
 

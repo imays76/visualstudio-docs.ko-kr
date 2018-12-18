@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a62c7dc2d8f0e0e80b3cfd8ba74b968ebd2e116
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 606ba5ebe7c485adb33fbcfa6884ad5e625d821e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669300"
 ---
 # <a name="summary-view---instrumentation-data"></a>요약 뷰 - 계측 데이터
 요약 뷰에는 프로파일링 실행에서 성능상 가장 많은 비용이 소요된 함수에 대한 정보가 표시됩니다. 알림 링크 및 보고서 목록에 대한 설명을 비롯한 자세한 내용은 [요약 뷰](../profiling/summary-view.md)를 참조하세요.  
@@ -46,5 +47,5 @@ ms.lasthandoff: 04/19/2018
 |**전용 시간 비율(%)**|함수가 함수 본문의 코드를 실행하는 데 소요된 프로파일링 데이터 내 모든 시간의 백분율입니다. 해당 함수가 호출한 함수에서 소요된 시간은 포함되지 않습니다.|  
   
 ## <a name="see-also"></a>참고 항목  
- [요약 뷰](../profiling/summary-view-sampling-data.md)   
- [요약 뷰](../profiling/summary-view-dotnet-memory-data.md)
+ [요약 뷰 - 샘플링 데이터](../profiling/summary-view-sampling-data.md)   
+ [요약 뷰 - .NET 메모리 데이터](../profiling/summary-view-dotnet-memory-data.md)

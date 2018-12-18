@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 정규식 사용
+title: 정규식 사용
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb9186726a54099b0c75a468a99d760abd22b7f3
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 40983e4180db9530983217d581b898806dd85d27
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945548"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063800"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Visual Studio에서 정규식 사용
 
@@ -31,7 +31,7 @@ Visual Studio에서는 [.NET Framework 정규식](/dotnet/standard/base-types/re
 
 ## <a name="replacement-patterns"></a>대체 패턴
 
-번호가 매겨진 캡처 그룹을 사용하려면 정규식 패턴에서 괄호를 사용하여 그룹을 묶습니다. `number`가 바꾸기 패턴에서 특정한 번호가 매겨진 그룹을 지정하기 위해 1에서 시작하는 정수인 경우 `$number`을 사용합니다. 예를 들어 그룹화된 정규식 `(\d)([a-z])`은 다음 두 그룹을 정의합니다. 첫 번째 그룹은 단일 10진수를 포함하고 두 번째 그룹은 **a**와 **z** 사이의 단일 문자를 포함합니다. 식은 문자열 **1a 2b 3c 4d**에서 일치 항목 4개를 찾습니다. 대체 문자열 `z$1`은 첫 번째 그룹만 참조하고 문자열을 **z1 z2 z3 z4**로 변환합니다.
+번호가 매겨진 캡처 그룹을 사용하려면 정규식 패턴에서 괄호를 사용하여 그룹을 묶습니다. `number`가 바꾸기 패턴에서 특정한 번호가 매겨진 그룹을 지정하기 위해 1에서 시작하는 정수인 경우 `$number`을 사용합니다. 예를 들어 그룹화된 정규식 `(\d)([a-z])`은 다음 두 그룹을 정의합니다. 첫 번째 그룹은 단일 10진수를 포함하고 두 번째 그룹은 **a**와 **z** 사이의 단일 문자를 포함합니다. 이 식은 다음 문자열에서 일치 항목 4개를 찾습니다. **1a 2b 3c 4d**. 대체 문자열 `z$1`은 첫 번째 그룹만 참조하고 문자열을 **z1 z2 z3 z4**로 변환합니다.
 
 바꾸기 패턴에서 사용되는 정규식에 대한 자세한 내용은 [정규식의 대체(.NET 가이드)](/dotnet/standard/base-types/substitutions-in-regular-expressions)를 참조하세요.
 
@@ -39,7 +39,7 @@ Visual Studio에서는 [.NET Framework 정규식](/dotnet/standard/base-types/re
 
 다음은 몇 가지 예입니다.
 
-|용도|식|예|
+|용도|식|예제|
 |-------------|----------------|-------------|
 |줄 바꿈 이외의 모든 단일 문자를 찾습니다.|.|`a.o`는 "around"의 "aro" 및 "about"의 "abo"와 일치하지만 "across"의 "acro"와 일치하지 않습니다.|
 |이전 식에서 일치 항목 0개 이상을 찾습니다(가능한 한 많은 문자를 찾음).|*|`a*r`는 "rack"의 "r", "ark"의 "ar", "aardvark"의 "aar"과 일치합니다.|
@@ -49,7 +49,8 @@ Visual Studio에서는 [.NET Framework 정규식](/dotnet/standard/base-types/re
 |이전 식에서 일치 항목 0개 이상을 찾습니다(가능한 한 적은 문자를 찾음).|*?|`e.*?e`는 "feeder"의 "ee"와 일치하지만 "eede"와 일치하지 않습니다.|
 |이전 식에서 일치 항목 1개 이상을 찾습니다(가능한 한 적은 문자를 찾음).|+?|`e.+?e`는 "enterprise"의 "ente" 및 "erprise"와 일치하지만 전체 단어 "enterprise"와 일치하지 않습니다.|
 |일치 문자열을 줄 또는 문자열의 시작에 고정합니다.|^|`^car`는 줄의 시작 부분에 나타날 때만 단어 "car"와 일치합니다.|
-|일치 문자열을 줄의 끝에 고정합니다.|\r?$|`End\r?$`는 줄의 끝 부분에 나타날 때만 단어 "end"와 일치합니다.|
+|일치 문자열을 줄의 끝에 고정합니다.|\r?$|`end\r?$`는 줄의 끝 부분에 나타날 때만 단어 "end"와 일치합니다.|
+|일치 문자열을 파일 끝에 고정|$|`end$`는 파일의 끝에 나타날 때만 "end"와 일치합니다.|
 |집합에 있는 단일 문자를 찾습니다.|[abc]|`b[abc]`는 "ba", "bb", "bc"와 일치합니다.|
 |문자 범위에서 임의 문자를 찾습니다.|[a-f]|`be[n-t]`는 "between"의 "bet", "beneath"의 "ben", "beside"의 "bes"와 일치하지만 "below"와 일치하지 않습니다.|
 |괄호 안에 포함된 식을 캡처하고 명시적으로 번호를 지정합니다.|()|`([a-z])X\1`은 "aXa" 및 "bXb"와 일치하지만 "aXb"와 일치하지 않습니다. " “\1”은 첫 번째 식 그룹 “[a-z]”를 나타냅니다.|
@@ -58,8 +59,8 @@ Visual Studio에서는 [.NET Framework 정규식](/dotnet/standard/base-types/re
 |기호 앞 또는 기호 뒤에 있는 식을 찾습니다.|&#124;|`(sponge\|mud) bath`는 "sponge bath" 및 "mud bath"와 일치합니다.|
 |백슬래시 뒤의 문자를 이스케이프합니다.| \\ |`\^`은 문자 ^과 일치합니다.|
 |이전 문자 또는 그룹의 일치 항목 수를 지정합니다.|{x}. 여기서 x는 일치 항목 수입니다.|`x(ab){2}x`는 "xababx"와 일치하고, `x(ab){2,3}x`는 "xababx" 및 "xabababx"와 일치하지만 "xababababx"와 일치하지 않습니다.|
-|유니코드 문자 클래스에서 텍스트를 찾습니다. 여기서 “X”는 유니코드 번호입니다. 유니코드 문자 클래스에 대한 자세한 내용은<br /><br /> [Unicode Standard 5.2 Character Properties](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf)(유니코드 표준 5.2 문자 속성)를 참조하세요.|\p{X}|`\p{Lu}`는 "Thomas Doe"의 "T" 및 "D"와 일치합니다.|
-|단어 경계를 찾습니다.|`\b`(\b는 문자 클래스 외부에서 단어 경계를 지정하고 문자 클래스 내부에서 백스페이스를 지정함).|`\bin`은 "inside"의 "in"과 일치하지만 "pinto"와 일치하지 않습니다.|
+|유니코드 문자 클래스의 텍스트를 일치시킵니다. 유니코드 문자 클래스에 대한 자세한 내용은<br /><br /> [Unicode Standard 5.2 Character Properties](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf)(유니코드 표준 5.2 문자 속성)를 참조하세요.|\p{X}, 여기서 "X"는 유니코드 번호입니다.|`\p{Lu}`는 "Thomas Doe"의 "T" 및 "D"와 일치합니다.|
+|단어 경계를 찾습니다.|\b(문자 클래스 `\b` 외부는 단어 경계를 지정하고 문자 클래스 `\b` 내부는 백스페이스를 지정합니다.)|`\bin`은 "inside"의 "in"과 일치하지만 "pinto"와 일치하지 않습니다.|
 |줄 바꿈을 찾습니다(즉, 캐리지 리턴 뒤에 줄 바꿈).|\r?\n|`End\r?\nBegin`은 "End"가 줄의 마지막 문자열이고 "Begin"이 다음 줄의 첫 번째 문자열일 때만 "End" 및 "Begin"과 일치합니다.|
 |영숫자 문자를 찾습니다.|\w|`a\wd`는 "add" 및 "a1d"와 일치하지만 "a d"와 일치하지 않습니다.|
 |공백 문자를 찾습니다.|(?([^\r\n])\s)|`Public\sInterface`는 구 "Public Interface"와 일치합니다.|

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fddf53101cf356772745462542bf4435a4ca4f4d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9890b68b05f4cedbb1a95299b87f505daea902f9
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945898"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389418"
 ---
 # <a name="setting-language-specific-editor-options"></a>언어별 편집기 옵션 설정
 
@@ -58,4 +58,4 @@ Visual Studio에서는 특정 프로그래밍 언어에 적용되는 다양한 �
 
 - [편집기 사용자 지정](../../ide/customizing-the-editor.md)
 - [EditorConfig를 사용하여 휴대용, 사용자 지정 편집기 설정 만들기](../../ide/create-portable-custom-editor-options.md)
-- [Visual Studio IDE 개인 설정](../../ide/personalizing-the-visual-studio-ide.md)&mdash; IDE(통합 개발 환경)의 설정, 키 바인딩 및 다른 기능을 사용자 지정하는 방법을 설명하는 항목에 대한 링크를 제공합니다.
+- [Visual Studio IDE 개인 설정](../../ide/personalizing-the-visual-studio-ide.md)

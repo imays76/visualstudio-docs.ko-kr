@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 534398e57c1a8111f2b1f83a61322a581539c962
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 9d877eae119c922939ea61007a845e5bd7049076
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808267"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933159"
 ---
 # <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>연습: 캐시 된 데이터 집합을 사용 하 여 마스터-세부 관계 만들기
   이 연습에서는 워크시트에서 마스터/세부 관계를 만들고 솔루션을 오프 라인으로 사용할 수 있도록 데이터를 캐시 하는 방법을 보여 줍니다.  
@@ -57,34 +57,34 @@ ms.locfileid: "38808267"
   
 ### <a name="to-create-a-new-project"></a>새 프로젝트를 만들려면  
   
-1.  이름으로 Excel 통합 문서 프로젝트를 만듭니다 **내 마스터-세부**, Visual Basic 또는 C#을 사용 하 여 합니다. 했는지 **새 문서 만들기** 을 선택 합니다. 자세한 내용은 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)을 참조하세요.  
+1. 이름으로 Excel 통합 문서 프로젝트를 만듭니다 **내 마스터-세부**, Visual Basic 또는 C#을 사용 하 여 합니다. 했는지 **새 문서 만들기** 을 선택 합니다. 자세한 내용은 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)을 참조하세요.  
   
- Visual Studio 디자이너에서 새 Excel 통합 문서를 열고 사이트를 추가 합니다 **내 마스터-세부** 프로젝트가 **솔루션 탐색기**합니다.  
+   Visual Studio 디자이너에서 새 Excel 통합 문서를 열고 사이트를 추가 합니다 **내 마스터-세부** 프로젝트가 **솔루션 탐색기**합니다.  
   
 ## <a name="create-the-data-source"></a>데이터 원본 만들기  
  **데이터 원본** 창을 사용하여 형식화된 데이터 집합을 프로젝트에 추가합니다.  
   
 ### <a name="to-create-the-data-source"></a>데이터 소스를 만들려면  
   
-1.  경우는 **데이터 원본** 창이 표시 되지 않으면, 메뉴 모음에 의해 표시 **뷰** > **기타 Windows**  >   **데이터 원본**합니다.  
+1. 경우는 **데이터 원본** 창이 표시 되지 않으면, 메뉴 모음에 의해 표시 **뷰** > **기타 Windows**  >   **데이터 원본**합니다.  
   
-2.  **새 데이터 소스 추가** 를 선택하여 **데이터 소스 구성 마법사**를 시작합니다.  
+2. **새 데이터 소스 추가** 를 선택하여 **데이터 소스 구성 마법사**를 시작합니다.  
   
-3.  선택 **데이터베이스** 을 클릭 한 다음 **다음**합니다.  
+3. 선택 **데이터베이스** 을 클릭 한 다음 **다음**합니다.  
   
-4.  Northwind 샘플 SQL Server 데이터베이스에 데이터 연결을 선택 하거나 새 연결을 사용 하 여 추가 합니다 **새 연결** 단추입니다.  
+4. Northwind 샘플 SQL Server 데이터베이스에 데이터 연결을 선택 하거나 새 연결을 사용 하 여 추가 합니다 **새 연결** 단추입니다.  
   
-5.  을 선택 하거나 연결을 만든 후 클릭 **다음**합니다.  
+5. 을 선택 하거나 연결을 만든 후 클릭 **다음**합니다.  
   
-6.  선택 되어 있으면 연결을 저장 하는 옵션을 지우고 클릭 **다음**합니다.  
+6. 선택 되어 있으면 연결을 저장 하는 옵션을 지우고 클릭 **다음**합니다.  
   
-7.  확장 된 **테이블** 에서 노드를 **데이터베이스 개체** 창입니다.  
+7. 확장 된 **테이블** 에서 노드를 **데이터베이스 개체** 창입니다.  
   
-8.  선택 된 **주문을** 테이블 및 **Order Details** 테이블.  
+8. 선택 된 **주문을** 테이블 및 **Order Details** 테이블.  
   
 9. **마침**을 클릭합니다.  
   
- 마법사에서 두 테이블을 추가 합니다 **데이터 원본** 창입니다. 또한 형식화 된 데이터 집합에 표시 되는 프로젝트를 추가 **솔루션 탐색기**합니다.  
+   마법사에서 두 테이블을 추가 합니다 **데이터 원본** 창입니다. 또한 형식화 된 데이터 집합에 표시 되는 프로젝트를 추가 **솔루션 탐색기**합니다.  
   
 ## <a name="add-controls-to-the-worksheet"></a>워크시트에 컨트롤 추가  
  이 단계에서는 첫 번째 워크시트에 명명된 된 범위, 목록 개체, 및 두 개의 단추를 추가 합니다. 먼저 명명된 된 범위와 목록 개체를 추가 합니다 **데이터 원본** 창은 자동으로 데이터 소스를 바인딩할 수 있도록 합니다. 다음으로에서 단추를 추가 합니다 **도구 상자**합니다.  
@@ -109,30 +109,30 @@ ms.locfileid: "38808267"
   
 ### <a name="to-add-two-buttons"></a>두 개의 단추를 추가 하려면  
   
-1.  **공용 컨트롤** 탭의 **도구 상자**, 추가 <xref:System.Windows.Forms.Button> 컨트롤을 셀 **A3** 워크시트의 합니다.  
+1. **공용 컨트롤** 탭의 **도구 상자**, 추가 <xref:System.Windows.Forms.Button> 컨트롤을 셀 **A3** 워크시트의 합니다.  
   
-     이 단추 이름이 `Button1`합니다.  
+    이 단추 이름이 `Button1`합니다.  
   
-2.  다른 항목 추가 <xref:System.Windows.Forms.Button> 컨트롤을 셀 **B3** 워크시트입니다.  
+2. 다른 항목 추가 <xref:System.Windows.Forms.Button> 컨트롤을 셀 **B3** 워크시트입니다.  
   
-     이 단추 이름이 `Button2`합니다.  
+    이 단추 이름이 `Button2`합니다.  
   
- 다음으로 문서에서 캐시할 데이터 집합을 표시 합니다.  
+   다음으로 문서에서 캐시할 데이터 집합을 표시 합니다.  
   
 ## <a name="cache-the-dataset"></a>데이터 집합 캐시  
  공용 및 설정 데이터 집합을 만들어 문서에서 캐시할 데이터 집합을 표시 합니다 **CacheInDocument** 속성입니다.  
   
 ### <a name="to-cache-the-dataset"></a>데이터 집합 캐시  
   
-1.  선택 **NorthwindDataSet** 구성 요소 트레이에 합니다.  
+1. 선택 **NorthwindDataSet** 구성 요소 트레이에 합니다.  
   
-2.  에 **속성** 창에서 변경 합니다 **한정자** 속성을 **공용**합니다.  
+2. 에 **속성** 창에서 변경 합니다 **한정자** 속성을 **공용**합니다.  
   
-     데이터 집합 캐싱을 활성화 하려면 public 이어야 합니다.  
+    데이터 집합 캐싱을 활성화 하려면 public 이어야 합니다.  
   
-3.  변경 된 **CacheInDocument** 속성을 **True**합니다.  
+3. 변경 된 **CacheInDocument** 속성을 **True**합니다.  
   
- 다음 단계 단추에 텍스트를 추가 하 고 C#에서 이벤트 처리기를 연결 하는 코드를 추가 하는 것입니다.  
+   다음 단계 단추에 텍스트를 추가 하 고 C#에서 이벤트 처리기를 연결 하는 코드를 추가 하는 것입니다.  
   
 ## <a name="initialize-the-controls"></a>컨트롤 초기화  
  단추 텍스트를 설정 하 고 하는 동안 이벤트 처리기를 추가 합니다 <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> 이벤트입니다.  

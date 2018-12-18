@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 89ba7338645ab6cc421716832a3d6f424bb57dfc
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 2df7031baffcdcfcac07f4b2054ff2aeb9ab81ab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844393"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885761"
 ---
 # <a name="user-permissions-and-visual-studio"></a>사용자 권한 및 Visual Studio
 
@@ -31,10 +31,9 @@ ms.locfileid: "34844393"
 Visual Studio IDE에서 일반 사용자로 거의 모든 작업을 수행할 수 있습니다. 다음 작업을 완료하려면 관리자 권한이 필요합니다.
 
 |영역|작업|추가 정보|
-|----------|----------|--------------------------|
+|----------|----------| - |
 |설치|Visual Studio를 설치합니다.|[Visual Studio 설치](../install/install-visual-studio.md)|
 ||로컬 도움말 콘텐츠를 설치, 업데이트 또는 제거합니다.|[로컬 도움말 콘텐츠 설치 및 관리](../ide/install-and-manage-local-content.md)|
-|응용 프로그램 종류|SharePoint용 솔루션을 개발합니다.|[SharePoint 솔루션 개발 요구 사항](../sharepoint/requirements-for-developing-sharepoint-solutions.md)|
 |도구 상자|**도구 상자**에 클래식 COM 컨트롤을 추가합니다.|[도구 상자](../ide/reference/toolbox.md)|
 |빌드|구성 요소를 등록하는 빌드 후 이벤트를 사용합니다.|[사용자 지정 빌드 단계 및 빌드 이벤트 이해](/cpp/ide/understanding-custom-build-steps-and-build-events)|
 ||C++ 프로젝트를 빌드할 때 등록 단계를 포함합니다.||

@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f64de3b95d21fdae87dd6b14754956381d60e9a3
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: d77bfad86024cf95ce1649498ddda5d1450a1c33
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008244"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672017"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>자습서 3: 일치 게임 만들기
 
@@ -38,12 +38,12 @@ ms.locfileid: "40008244"
 
 ## <a name="tutorial-links"></a>자습서 링크
 
-샘플의 전체 버전을 다운로드하려면 [Complete matching game tutorial sample](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba)(전체 일치 게임 자습서 샘플)을 참조하세요.
+샘플의 전체 버전을 다운로드하려면 [Complete matching game tutorial sample](https://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba)(전체 일치 게임 자습서 샘플)을 참조하세요.
 
 > [!NOTE]
 > 이 자습서에는 Visual C#과 Visual Basic이 둘 다 설명되어 있으므로 사용 중인 프로그래밍 언어와 관련된 정보를 참조하십시오.
 
-어려운 점이 있거나 프로그래밍 관련 질문이 있는 경우 MSDN 포럼에 질문을 게시해 보십시오. [Visual Basic 포럼](http://social.msdn.microsoft.com/Forums/home?forum=vbgeneral) 및 [Visual C# 포럼](http://social.msdn.microsoft.com/Forums/home?forum=csharpgeneral)을 참조하세요. 또한 훌륭한 비디오 학습 자료가 무료로 제공됩니다. Visual Basic의 프로그래밍에 대한 자세한 내용은 [Visual Basic fundamentals: Development for absolute beginners](http://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners)(Visual Basic 기초: 완전 초보자를 위한 개발)를 참조하세요. Visual C#의 프로그래밍에 대한 자세한 내용은 [C# fundamentals: Development for absolute beginners](http://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners)(C# 기초: 완전 초보자를 위한 개발)를 참조하세요.
+어려운 점이 있거나 프로그래밍 관련 질문이 있는 경우 MSDN 포럼에 질문을 게시해 보십시오. [Visual Basic 포럼](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vbgeneral) 및 [Visual C# 포럼](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=csharpgeneral)을 참조하세요. 또한 훌륭한 비디오 학습 자료가 무료로 제공됩니다. Visual Basic의 프로그래밍에 대한 자세한 내용은 [Visual Basic fundamentals: Development for absolute beginners](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners)(Visual Basic 기초: 완전 초보자를 위한 개발)를 참조하세요. Visual C#의 프로그래밍에 대한 자세한 내용은 [C# fundamentals: Development for absolute beginners](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners)(C# 기초: 완전 초보자를 위한 개발)를 참조하세요.
 
 ## <a name="related-topics"></a>관련 항목
 

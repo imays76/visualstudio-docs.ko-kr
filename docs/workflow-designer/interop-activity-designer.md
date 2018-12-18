@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1abd1dff1cb63f2e80e3c4b242699fbede2c3201
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 7f3b5fd2674d63fad6398eeaee082862c4cf6476
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379340"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51809131"
 ---
 # <a name="interop-activity-designer"></a>Interop 활동 디자이너
 
@@ -35,7 +35,7 @@ ms.locfileid: "39379340"
 
 C# 프로젝트 대상을 조정할 수 있습니다에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 여 전체.NET Framework 4를 사용 하도록 프로젝트 **솔루션 탐색기** 를 선택 하 고 **속성**합니다. 에 **응용 프로그램** 탭을 선택 합니다 **.NET Framework 4** 옵션을 **대상 프레임 워크**. 선택 **예** 이 변경 내용을 확인 합니다.
 
-VB 프로젝트 대상을 조정할 수 있습니다에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 여 전체.NET Framework 4를 사용 하도록 프로젝트 **솔루션 탐색기** 를 선택 하 고 **속성**합니다. 에 **컴파일할** 탭을 클릭 합니다 **고급 컴파일 옵션** 단추입니다. 선택 **.NET Framework 4** 에서 합니다 **대상 프레임 워크 목록**를 클릭 하 고 **확인**합니다. 선택 **예** 이 변경 내용을 확인 합니다.
+Visual Basic 프로젝트 대상을 조정할 수 있습니다에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 여 전체.NET Framework 4를 사용 하도록 프로젝트 **솔루션 탐색기** 를 선택 하 고 **속성**합니다. 에 **컴파일할** 탭을 클릭 합니다 **고급 컴파일 옵션** 단추입니다. 선택 **.NET Framework 4** 에서 합니다 **대상 프레임 워크 목록**를 클릭 하 고 **확인**합니다. 선택 **예** 이 변경 내용을 확인 합니다.
 
 합니다 **Interop** 활동 디자이너에서 끌 수 있습니다 **도구 상자** 작업은 일반적으로, 등 배치 때마다 워크플로 디자이너 화면에 놓여진 및는 <xref:System.Activities.Statements.Sequence>합니다. 삭제 된 **Interop** 활동 디자이너를 만듭니다를 <xref:System.Activities.Statements.Interop> 기본값을 사용 하 여 활동 **DisplayName** Interop의 합니다. 편집할 수 있습니다는 <xref:System.Activities.Activity.DisplayName%2A> 의 헤더에는 **Interop** 활동 디자이너 또는 합니다 **DisplayName** 속성 그리드의 상자입니다.
 
@@ -46,7 +46,7 @@ VB 프로젝트 대상을 조정할 수 있습니다에서 프로젝트를 마�
 다음 표는 <xref:System.Activities.Statements.Interop> 속성을 디자이너에서 사용 되는 방법을 설명 합니다. 속성 표에서 또는 워크플로 디자이너 화면에서 이러한 속성을 편집할 수 있습니다.
 
 |속성 이름|필수|용도|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.Interop> 활동의 이름입니다. 기본값은 **Interop**합니다. 표시 이름에 필요 하지는 않지만 것이 좋습니다 하나를 제공 합니다.|
 |<xref:System.Activities.Statements.Interop.ActivityType%2A>|True|<xref:System.Activities.Statements.Interop> 활동에 포함된 활동의 형식을 지정합니다. 지정된 이 형식은 <xref:System.Workflow.ComponentModel.Activity>에서 파생된 것이어야 합니다.|
 

@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a72a5cb07f39f8d2acaec59e5da5a66a30293453
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 5e82c50c83a8824b4570779034b0480aa0615a30
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258222"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904676"
 ---
 # <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>연습: 라디오 단추를 사용 하 여 문서에서 차트를 업데이트 합니다.
   이 연습에서는 Microsoft Office Word의 문서 수준 사용자 지정에서 라디오 단추를 사용하여 문서에서 차트 스타일 선택 옵션을 사용자에게 제공하는 방법을 보여줍니다.  
@@ -30,15 +30,15 @@ ms.locfileid: "35258222"
   
  이 연습에서는 다음 작업을 수행합니다.  
   
--   디자인 타임에 문서 수준 프로젝트에서 문서에 차트를 추가합니다.  
+- 디자인 타임에 문서 수준 프로젝트에서 문서에 차트를 추가합니다.  
   
--   라디오 단추를 사용자 컨트롤에 추가하여 그룹화합니다.  
+- 라디오 단추를 사용자 컨트롤에 추가하여 그룹화합니다.  
   
--   옵션을 선택할 때 차트 스타일을 변경합니다.  
+- 옵션을 선택할 때 차트 스타일을 변경합니다.  
   
- 결과 전체 샘플을 보려면 Word 컨트롤 샘플을 참조 하세요 [Office 개발 샘플 및 연습](../vsto/office-development-samples-and-walkthroughs.md)합니다.  
+  결과 전체 샘플을 보려면 Word 컨트롤 샘플을 참조 하세요 [Office 개발 샘플 및 연습](../vsto/office-development-samples-and-walkthroughs.md)합니다.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>전제 조건  
  이 연습을 완료하려면 다음 구성 요소가 필요합니다.  

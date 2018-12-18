@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c977578a01c6d0af62f328e44a617ff2e00fe128
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: e0057d51256f9cddff7c30056d4c669e9f2f2dd7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39150858"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895459"
 ---
 # <a name="projectextensions-element-msbuild"></a>ProjectExtensions 요소(MSBuild)
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일이 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 이외의 정보를 포함하도록 허용합니다. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에서는 `ProjectExtensions` 요소 내의 모든 항목을 무시합니다.  
@@ -52,9 +52,9 @@ ms.locfileid: "39150858"
 
 ### <a name="parent-elements"></a>부모 요소  
 
-|요소|설명|  
-|-------------|-----------------|  
-|[프로젝트](../msbuild/project-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일의 필수 루트 요소입니다.|  
+| 요소 | 설명 |
+| - | - |
+| [프로젝트](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일의 필수 루트 요소입니다. |
 
 ## <a name="remarks"></a>설명  
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트에서는 `ProjectExtensions` 요소를 하나만 사용할 수 있습니다.  

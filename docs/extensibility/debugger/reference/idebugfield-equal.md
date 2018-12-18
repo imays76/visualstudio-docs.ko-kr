@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2d195c28123cc786c9a5a97add98b7f67d499b7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1ae30cd36d2a3f51b697afa3cb5f4615a5f322da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121878"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830784"
 ---
 # <a name="idebugfieldequal"></a>IDebugField::Equal
-이 메서드는이 필드는 지정 된 필드의 일치 여부를 비교합니다.  
+이 메서드는 같음에 대 한 지정된 된 필드를 사용 하 여이 필드를 비교합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -44,7 +44,7 @@ int Equal(
  [in] 이 이와 비교할 필드입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 필드 같으면 반환 `S_OK`합니다. 다른 필드의 경우 반환 `S_FALSE.` 그렇지 않은 경우 오류 코드를 반환 합니다.  
+ 필드 같으면 반환 `S_OK`합니다. 필드를 다른 경우 반환 `S_FALSE.` 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

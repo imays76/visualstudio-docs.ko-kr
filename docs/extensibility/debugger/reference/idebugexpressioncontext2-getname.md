@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84ac767c8e2cd53045dec9921f6d90300f1a87e0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5664710d69b8c6d7af315de600fd1fcd27a2b36d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111195"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873528"
 ---
 # <a name="idebugexpressioncontext2getname"></a>IDebugExpressionContext2::GetName
-평가 컨텍스트에 이름을 검색합니다.  
+평가 컨텍스트에의 이름을 검색합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -41,13 +41,13 @@ int GetName(
   
 #### <a name="parameters"></a>매개 변수  
  `pbstrName`  
- [out] 평가 컨텍스트에 이름을 반환합니다.  
+ [out] 계산 컨텍스트의 이름을 반환합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 이름은이 평가 컨텍스트에 설명입니다. 일반적으로 문제입니다이 정확 하 게 평가 컨텍스트를 참조 하는 식 계산기의 구문 분석 될 수 있습니다. 예를 들어 c + +에서 이름을 다음과 같습니다.  
+ 이름에는이 평가 컨텍스트에의 설명입니다. 일반적으로 있는 것이 정확한 평가 컨텍스트를 참조 하는 식 계산기에서 구문 분석할 수 있습니다. 예를 들어, c + +에서 이름이 같습니다.  
   
 ```  
 "{ function-name, source-file-name, module-file-name }"  

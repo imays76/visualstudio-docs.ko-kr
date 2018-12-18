@@ -13,31 +13,31 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4857e41888962a92dced87d63fa2b63161ecac55
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5424ca9a1a51088a020d04faa55754ad487d5723
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137120"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910539"
 ---
 # <a name="troubleshooting-regpkg-package-registration"></a>RegPkg 패키지 등록 문제 해결
 > [!NOTE]
->  .Pkgdef 파일을 사용 하 여를 Visual Studio에서 패키지를 등록 하는 것이 좋습니다. 따라서 확장 배포에 대 한 시스템 레지스트리에 액세스 하지 않고 있습니다. 사용 하 여 Pkgdef 파일을 만듭니다는 [CreatePkgDef 유틸리티](../../extensibility/internals/createpkgdef-utility.md)합니다.  
+>  Visual Studio에서 패키지를 등록 하려면.pkgdef 파일을 사용 하 여는 것이 좋습니다. 따라서 시스템 레지스트리에 액세스 하지 않고도 확장 배포 합니다. Pkgdef 파일을 사용 하 여 만들어진 합니다 [CreatePkgDef 유틸리티](../../extensibility/internals/createpkgdef-utility.md)합니다.  
   
- RegPkg에서 사용 하 여 패키지를 등록 하려면 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], 패키지에 적합 한 RegPkg 버전을 사용 해야 합니다.  
+ RegPkg에서 사용 하 여 패키지를 등록할 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], RegPkg 패키지에 적절 한 버전을 사용 해야 합니다.  
   
-## <a name="regpkg-versions-related-to-package-versions"></a>RegPkg 버전이 패키지 버전과 관련 된  
- RegPkg의 두 가지 버전이 있습니다. 에 포함 된 하나의 버전 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]합니다. 이 버전을 사용 하 여 다음 어셈블리 중 하나를 사용 하 여 구축 된 패키지를 등록 하려면:  
+## <a name="regpkg-versions-related-to-package-versions"></a>패키지 버전와 관련 된 RegPkg 버전  
+ RegPkg의 두 가지 버전이 있습니다. 에 포함 된 하나의 버전 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]합니다. 다음 어셈블리 중 하나를 사용 하 여 만든 패키지를 등록 하려면이 버전을 사용 합니다.  
   
-1.  Microsoft.VisualStudioShell.9.0.dll  
+1. Microsoft.VisualStudioShell.9.0.dll  
   
-2.  Microsoft.VisualStudioShell.10.0.dll  
+2. Microsoft.VisualStudioShell.10.0.dll  
   
-3.  Microsoft.VisualStudioShell.11.0.dll  
+3. Microsoft.VisualStudioShell.11.0.dll  
   
- 이전 Microsoft.VisualStudio.Shell.dll 어셈블리를 사용 하 여 구축 된 패키지를 등록할 수 없습니다.  
+   이 이전 Microsoft.VisualStudio.Shell.dll 어셈블리를 사용 하 여 만든 패키지를 등록할 수 없습니다.  
   
- 이전 버전의 RegPkg Microsoft.VisualStudio.Shell.dll 어셈블리를 사용 하 여 구축 된 패키지를 등록할 수 있습니다. 그러나 해당 어셈블리의 이후 버전을 사용 하 여 작성 된 패키지를 등록할 수 없습니다.  
+   이전 버전의 RegPkg Microsoft.VisualStudio.Shell.dll 어셈블리를 사용 하 여 만든 패키지를 등록할 수 있습니다. 그러나 해당 어셈블리의 이후 버전을 사용 하 여 빌드된 패키지를 등록할 수 없습니다 것입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [VSPackage](../../extensibility/internals/vspackages.md)

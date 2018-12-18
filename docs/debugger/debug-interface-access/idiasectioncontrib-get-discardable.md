@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a34741f995431fa04a3e6d75ad7988b306d1358
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 13e72f71fd382b8b94f7acfae9f6e23a1001d50c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461144"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879872"
 ---
 # <a name="idiasectioncontribgetdiscardable"></a>IDiaSectionContrib::get_discardable
 섹션을 무시할 수 있는지 여부를 나타내는 플래그를 검색 합니다.  
@@ -34,7 +34,7 @@ HRESULT get_discardable (
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out] 반환 `TRUE` 섹션에서에서 삭제할 수 메모리 사용할 수 있습니다 그렇지 않으면 반환 `FALSE`합니다.  
+ [out] 반환 `TRUE` 필요에 따라, 메모리에서 섹션을 삭제할 수 있습니다 하는 경우이 고, 그렇지 반환 `FALSE`합니다.  
   
 ## <a name="return-value"></a>반환 값  
  성공 하면 반환 `S_OK`합니다. 반환 `S_FALSE` 경우이 속성이 지원 되지 않습니다. 그러지 않으면 오류 코드가 반환됩니다.  

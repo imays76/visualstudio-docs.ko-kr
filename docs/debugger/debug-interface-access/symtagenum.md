@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36dc9b3d9fc15b06c92db27b38d94805c1ce8a25
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 9a9b3f28858bdeb6783175301de40de0d492739a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480864"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875219"
 ---
 # <a name="symtagenum"></a>SymTagEnum
 기호 유형을 지정합니다.  
@@ -70,16 +70,16 @@ enum SymTagEnum {
   
 ## <a name="elements"></a>요소  
  `SymTagNull`  
- 기호 형식이 없는 있음을 나타냅니다.  
+ 기호 형식에 있음을 나타냅니다.  
   
  `SymTagExe`  
- 기호는.exe 파일 임을 나타냅니다. 하나만 `SymTagExe` 기호 저장소 당 기호입니다. 전역 범위로 사용 하 고 어휘 부모 릴리스 레코드가 되지 않습니다.  
+ 기호는.exe 파일을 나타냅니다. 하나만 `SymTagExe` 기호 저장소 당 기호입니다. 전역 범위 역할도 하 고 어휘 부모가 없습니다.  
   
  `SymTagCompiland`  
- 기호 저장소의 각 컴파일 대상 구성 요소에 대 한 컴파일 대상 기호를 나타냅니다. 네이티브 응용 프로그램에 대 한 `SymTagCompiland` 기호 이미지에 연결 된 개체 파일에 해당 합니다. 일부 종류의 Microsoft MSIL (Intermediate Language) 이미지에 대 한 클래스 마다 하나의 compiland가 있습니다.  
+ 기호 저장소의 각 컴파일 대상 구성 요소에 대 한 컴파일 대상 기호를 나타냅니다. 네이티브 응용 프로그램에 대 한 `SymTagCompiland` 기호 이미지에 연결 된 개체 파일에 해당 합니다. 일부 종류의 언어 MSIL (Microsoft Intermediate) 이미지에 대 한 클래스당 하나의 compiland가 있습니다.  
   
  `SymTagCompilandDetails`  
- 확장 된 특성의 컴파일 대상 기호에 포함 되어 있음을 나타냅니다. 이러한 속성을 검색 하는 컴파일 대상 기호 로드 필요할 수 있습니다.  
+ 기호는 compiland의 확장된 특성에 있음을 나타냅니다. 이러한 속성을 검색 컴파일 대상 기호를 로드 해야 할 수 있습니다.  
   
  `SymTagCompilandEnv`  
  기호는 컴파일 대상에 대해 정의 된 환경 문자열 임을 나타냅니다.  
@@ -88,104 +88,104 @@ enum SymTagEnum {
  기호는 함수 임을 나타냅니다.  
   
  `SymTagBlock`  
- 중첩된 된 블록 기호 임을 나타냅니다.  
+ 기호는 중첩된 된 블록을 나타냅니다.  
   
  `SymTagData`  
  기호 데이터 임을 나타냅니다.  
   
  `SymTagAnnotation`  
- 코드 주석 기호 임을 나타냅니다. 이 기호의 자식 항목은 상수 데이터 문자열 (`SymTagData`, `LocIsConstant`, `DataIsConstant`). 대부분의 클라이언트는이 기호를 무시합니다.  
+ 코드 주석에 대 한 기호를 나타냅니다. 이 기호의 자식은 상수 데이터 문자열 (`SymTagData`하십시오 `LocIsConstant`, `DataIsConstant`). 대부분의 클라이언트는이 기호를 무시합니다.  
   
  `SymTagLabel`  
- 기호가 레이블이 임을 나타냅니다.  
+ 기호는 레이블을 나타냅니다.  
   
  `SymTagPublicSymbol`  
- 기호 공용 기호 임을 나타냅니다. 네이티브 응용 프로그램에 대 한이 기호는 이미지를 연결 하는 동안 발생 하는 COFF 외부 기호입니다.  
+ 기호는 공용 기호를 나타냅니다. 네이티브 응용 프로그램의 경우이 기호는 이미지를 연결 하는 동안 발생 하는 COFF 외부 기호입니다.  
   
  `SymTagUDT`  
- 기호 사용자 정의 형식 (구조체, 클래스 또는 공용 구조체) 임을 나타냅니다.  
+ 기호는 사용자 정의 형식 (구조체, 클래스 또는 공용 구조체) 임을 나타냅니다.  
   
  `SymTagEnum`  
- 열거형 기호 임을 나타냅니다.  
+ 기호는 열거형을 나타냅니다.  
   
  `SymTagFunctionType`  
- 함수 서명 형식 기호 임을 나타냅니다.  
+ 함수 서명 형식 기호 인지를 나타냅니다.  
   
  `SymTagPointerType`  
- 기호는 포인터 형식이 임을 나타냅니다.  
+ 기호는 포인터 형식을 나타냅니다.  
   
  `SymTagArrayType`  
- 기호는 배열 형식이 임을 나타냅니다.  
+ 기호는 배열 형식을 나타냅니다.  
   
  `SymTagBaseType`  
  기호는 기본 형식을 나타냅니다.  
   
  `SymTagTypedef`  
- 기호 임을 나타냅니다는 `typedef`, 즉, 다른 형식에 대 한 별칭입니다.  
+ 기호는 나타냅니다는 `typedef`, 즉, 다른 형식에 대 한 별칭입니다.  
   
  `SymTagBaseClass`  
- 기호는 사용자 정의 형식의 기본 클래스 임을 나타냅니다.  
+ 기호는 사용자 정의 형식의 기본 클래스를 나타냅니다.  
   
  `SymTagFriend`  
- 기호는 사용자 정의 형식의 친구 임을 나타냅니다.  
+ 기호는 사용자 정의 형식의 friend 임을 나타냅니다.  
   
  `SymTagFunctionArgType`  
  기호는 함수 인수 임을 나타냅니다.  
   
  `SymTagFuncDebugStart`  
- 기호는 함수 프롤로그 코드의 끝 위치 임을 나타냅니다.  
+ 기호는 함수 프롤로그 코드의 끝 위치를 나타냅니다.  
   
  `SymTagFuncDebugEnd`  
- 기호는 함수의 에필로그 코드의 시작 위치 임을 나타냅니다.  
+ 기호는 함수 에필로그 코드의 시작 위치를 나타냅니다.  
   
  `SymTagUsingNamespace`  
- 기호가 현재 범위에서 활성 네임 스페이스 이름 임을 나타냅니다.  
+ 기호는 현재 범위에서 활성 네임 스페이스 이름을 나타냅니다.  
   
  `SymTagVTableShape`  
- 가상 테이블 설명에는 기호가 임을 나타냅니다.  
+ 기호는 가상 테이블 설명을 나타냅니다.  
   
  `SymTagVTable`  
  기호에 대 한 가상 테이블 포인터 임을 나타냅니다.  
   
  `SymTagCustom`  
- 기호는 사용자 지정 기호 이므로 DIA.에서 해석 되지 않습니다 나타냅니다.  
+ 기호는 사용자 지정 기호 이며 동안에서 해석 되지 않습니다 나타냅니다.  
   
  `SymTagThunk`  
- 기호 썽크 16와 32 비트 코드 간에 데이터를 공유 하는 데 사용 되는 임을 나타냅니다.  
+ 기호 썽크 16 및 32 비트 코드 간에 데이터를 공유 하는 데 임을 나타냅니다.  
   
  `SymTagCustomType`  
- 사용자 지정 컴파일러 기호 기호 임을 나타냅니다.  
+ 기호는 사용자 지정 컴파일러 기호를 나타냅니다.  
   
  `SymTagManagedType`  
- 메타 데이터에 기호 임을 나타냅니다.  
+ 메타 데이터에서 기호를 나타냅니다.  
   
  `SymTagDimension`  
- 기호 포트란 다차원 배열 임을 나타냅니다.  
+ 기호는 FORTRAN 다차원 배열 임을 나타냅니다.  
   
  `SymTagCallSite`  
  기호 호출 사이트를 나타냅니다.  
   
  `SymTagInlineSite`  
- 기호 인라인 사이트를 나타냅니다.  
+ 기호는 인라인 사이트를 나타냅니다.  
   
  `SymTagBaseInterface`  
- 기본 인터페이스 기호 임을 나타냅니다.  
+ 기호는 기본 인터페이스를 나타냅니다.  
   
  `SymTagVectorType`  
- 벡터 형식 기호 임을 나타냅니다.  
+ 기호 벡터 형식 인지를 나타냅니다.  
   
  `SymTagMatrixType`  
- 기호 행렬 형식임을 나타냅니다.  
+ 기호는 매트릭스 형식을 나타냅니다.  
   
  `SymTagHLSLType`  
- 기호 높은 수준 셰이더 언어 형식임을 나타냅니다.  
+ 기호 High Level Shader Language 형식임을 나타냅니다.  
   
 ## <a name="remarks"></a>설명  
- 디버그 파일 내에서 모든 기호에는 기호 형식을 지정 하는 한 식별 태그는 있습니다.  
+ 디버그 파일 내에서 모든 기호 식별 태그 기호 형식을 지정 하는 경우  
   
- 이 열거형의 값에 대 한 호출에서 반환될지는 [idiasymbol:: Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) 메서드.  
+ 이 열거형의 값에는 호출에서 반환 되는 [idiasymbol:: Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) 메서드.  
   
- 이 열거형의 값은 특정 기호 형식 검색의 범위를 제한 하려면 다음 방법에 전달 됩니다.  
+ 이 열거형의 값은 특정 기호 형식에 대 한 검색 범위를 제한 하려면 다음 방법에 전달 됩니다.  
   
 -   [IDiaSession::findSymbolByAddr](../../debugger/debug-interface-access/idiasession-findsymbolbyaddr.md)  
   

@@ -12,12 +12,12 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 7006802f38076283221b9351ba9660448e64a696
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 8c84fbb3001bffb93d6c06f383551c073461419b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/03/2018
-ms.locfileid: "30306723"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911345"
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>클라우드에서 TensorFlow 모델 학습
 
@@ -51,20 +51,20 @@ TensorFlow, CNTK, Theano 등에서 심층 학습을 시작하는 샘플이 포�
 
 - 다운로드한 샘플 리포지토리에서 **Tensorflow Examples** 폴더를 선택하고 **TensorflowExamples.sln** 파일을 엽니다.
 
-![프로젝트 열기](media\tensorflow-local\open-project.png)
+   ![프로젝트 열기](media/tensorflow-local/open-project.png)
 
-![솔루션 열기](media\tensorflow-local\open-solution.png)
+   ![솔루션 열기](media/tensorflow-local/open-solution.png)
 
 ## <a name="add-azure-remote-vm"></a>Azure 원격 VM 추가
 
 [서버 탐색기]의 AI 도구 노드 아래에서 **원격 컴퓨터** 노드를 마우스 오른쪽 단추로 클릭하고 "추가..."를 선택합니다. 원격 컴퓨터 표시 이름, IP 호스트, SSH 포트, 사용자 이름 및 암호/키 파일을 입력합니다.
 
-![새 원격 컴퓨터 추가](media\tensorflow-vm\add-remote-vm.png)
+![새 원격 컴퓨터 추가](media/tensorflow-vm/add-remote-vm.png)
 
 ## <a name="submit-job-to-azure-vm"></a>Azure VM에 작업 제출
 **솔루션 탐색기**에서 MNIST 프로젝트를 마우스 오른쪽 단추로 클릭하고 **작업 제출**을 선택합니다.
 
-![원격 컴퓨터에 작업 제출](media\tensorflow-vm\job-submission.png)
+![원격 컴퓨터에 작업 제출](media/tensorflow-vm/job-submission.png)
 
 제출 창에서 다음을 수행합니다.
 
@@ -77,7 +77,7 @@ TensorFlow, CNTK, Theano 등에서 심층 학습을 시작하는 샘플이 포�
 ## <a name="check-status-of-job"></a>작업 상태 확인
 작업의 상태 및 세부 정보를 보려면 **서버 탐색기**에서 작업을 제출한 가상 머신을 펼칩니다. **작업**을 두 번 클릭합니다.
 
-![작업 브라우저](media\tensorflow-vm\job-browser.png)
+![작업 브라우저](media/tensorflow-vm/job-browser.png)
 
 ## <a name="clean-up-resources"></a>리소스 정리
 

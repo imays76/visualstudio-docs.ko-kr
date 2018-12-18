@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65fa4c4c6d1d32bceb1bdd9dc0ca63edeab637ff
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 11f6738d1f280869d5390b8109e61a6efb9c64b9
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179806"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45545543"
 ---
 # <a name="ca2133-delegates-must-bind-to-methods-with-consistent-transparency"></a>CA2133: 대리인은 투명도가 일관된 메서드에 바인딩해야 합니다.
 
@@ -43,7 +43,7 @@ ms.locfileid: "39179806"
 
 이 경고에 대 한 위반이 해결 하려면 두 투명도 해당 하는 것에 바인딩하는 메서드 또는 대리자의 투명도 변경 합니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
 
 이 규칙에서는 경고를 표시해야 합니다.
 

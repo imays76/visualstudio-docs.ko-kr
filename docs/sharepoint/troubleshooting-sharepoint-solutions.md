@@ -19,15 +19,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b7c17306bd437c627ca2232bfd3f35d3ac05d70e
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: f68f6e50be569df6130f7e6c6f3aa4bc7c107214
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119472"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296049"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>SharePoint 솔루션 문제 해결
-  다음 문제 또는 경고를 사용 하 여 SharePoint 솔루션을 디버깅할 때 발생할 수 있습니다는 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 디버거. 자세한 내용은 [SharePoint 2007 워크플로 솔루션 디버깅](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247)합니다.
+  다음 문제 또는 경고를 사용 하 여 SharePoint 솔루션을 디버깅할 때 발생할 수 있습니다는 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 디버거. 자세한 내용은 [SharePoint 2007 워크플로 솔루션 디버깅](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247)합니다.
   
 ## <a name="token-restrictions-in-sandboxed-visual-web-parts"></a>샌드박스 비주얼 웹 파트의 토큰 제한 사항
  샌드박스 솔루션의 비주얼 웹 파트는 SharePoint 런타임이 지원하는 $SPUrl과 같은 표준 토큰을 처리할 수 없습니다. 이에 따라 URL은 확인되지 않으며, 다음 예제와 같이 스크립트 요소에서 URL을 직접 참조하는 경우 비주얼 웹 파트 디자이너의 디자인 뷰에서 내용을 미리 볼 수 없습니다.  
@@ -53,21 +53,21 @@ ms.locfileid: "37119472"
 ### <a name="resolution"></a>해결  
  SharePoint 프로젝트 및 프로젝트 항목 이름의 경우 다음 문자만 사용합니다.  
   
--   영숫자 ASCII 문자  
+- 영숫자 ASCII 문자  
   
--   공백  
+- 공백  
   
--   마침표 (입니다.)  
+- 마침표 (입니다.)  
   
--   쉼표 ()  
+- 쉼표 ()  
   
--   밑줄 (_)  
+- 밑줄 (_)  
   
--   대시 (-)  
+- 대시 (-)  
   
--   백슬래시(\\)  
+- 백슬래시(\\)  
   
- 프로젝트가 패키지될 때 유효성 검사 규칙은 배포 중인 각 파일의 배포 경로 속성에 이러한 유효한 문자만 포함되어 있는지 확인합니다.  
+  프로젝트가 패키지될 때 유효성 검사 규칙은 배포 중인 각 파일의 배포 경로 속성에 이러한 유효한 문자만 포함되어 있는지 확인합니다.  
   
 ## <a name="errors-when-creating-custom-fields"></a>사용자 지정 필드를 만들 때 오류 발생
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]에서 사용자 지정 필드는 XML로 정의됩니다. 필드가 정의되어 있지 않거나 특정 형식을 사용하여 참조되는 경우 오류가 발생할 수 있습니다.  
@@ -105,7 +105,7 @@ ms.locfileid: "37119472"
  없음  
   
 ### <a name="resolution"></a>해결  
- 에 잘못 된 값으로 인해이 문제가 발생 합니다 **경로** webtemp 사이트 정의 구성에 대 한 속성 파일을 같은 *webtemp_SiteDefinitionProject1.xml*합니다. 에 **경로** 아래에 있는 webtemp 파일의 속성을 **배포 위치**, 1033 적절 한 로캘을 변경 [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]. 예를 들어, 사용 하려면 일본어 로캘을 변경 값 1041 하 합니다. 자세한 내용은 [Microsoft에서 할당 한 로캘 Id](http://go.microsoft.com/fwlink/?LinkID=165561) MSDN 웹 사이트입니다.  
+ 에 잘못 된 값으로 인해이 문제가 발생 합니다 **경로** webtemp 사이트 정의 구성에 대 한 속성 파일을 같은 *webtemp_SiteDefinitionProject1.xml*합니다. 에 **경로** 아래에 있는 webtemp 파일의 속성을 **배포 위치**, 1033 적절 한 로캘을 변경 [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]. 예를 들어, 사용 하려면 일본어 로캘을 변경 값 1041 하 합니다. 자세한 내용은 [Microsoft에서 할당 한 로캘 Id](http://go.microsoft.com/fwlink/?LinkID=165561)합니다.  
   
 ## <a name="error-appears-when-a-workflow-project-is-deployed-on-a-clean-system"></a>클린 시스템에는 워크플로 프로젝트를 배포할 때 오류가 표시 됩니다.
  이 문제는 클린 시스템의 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]에서 워크플로 프로젝트를 배포하는 경우 발생합니다. 클린 시스템은 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 및 SharePoint를 새로 설치했지만 워크플로 프로젝트를 배포하지 않은 컴퓨터입니다.  
@@ -136,7 +136,7 @@ ms.locfileid: "37119472"
   
 -   [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)]을 설치합니다.  
   
--   SharePoint 웹 사이트에 관리자 액세스할 수 있는지 확인 합니다. 자세한 내용은 참조는 [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] 온라인 문서 [할당 하거나 SharePoint Server의 서비스 응용 프로그램의 관리자가 제거](https://docs.microsoft.com/en-us/sharepoint/administration/assign-or-remove-administrators-of-service-applications)합니다.  
+-   SharePoint 웹 사이트에 관리자 액세스할 수 있는지 확인 합니다. 자세한 내용은 참조는 [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] 온라인 문서 [할당 하거나 SharePoint Server의 서비스 응용 프로그램의 관리자가 제거](https://docs.microsoft.com/sharepoint/administration/assign-or-remove-administrators-of-service-applications)합니다.  
   
 ## <a name="site-deletion-web-event-does-not-occur-in-event-receiver-project"></a>이벤트 수신기가 프로젝트의 사이트 삭제 웹 이벤트가 발생 하지 않습니다.
  이벤트 수신기 프로젝트를 만들고 "사이트 삭제 되 고"와 같은 특정 웹 이벤트를 선택 하면 이벤트가 발생 하지 않습니다.  
@@ -147,15 +147,15 @@ ms.locfileid: "37119472"
 ### <a name="resolution"></a>해결  
  이 문제는 기능 범위가 사이트 수준 이벤트를 처리 하는 "사이트" 해야 합니다. 하지만 이벤트 수신기가 프로젝트에 대 한 기본 기능 범위는 "Web" 때문에 발생 합니다. 영향을 받는 웹 이벤트 다음과 같습니다.  
   
--   사이트를 삭제 (WebDeleting)  
+- 사이트를 삭제 (WebDeleting)  
   
--   사이트 삭제 됨 (WebDeleted)  
+- 사이트 삭제 됨 (WebDeleted)  
   
--   사이트를 이동 (WebMoving)  
+- 사이트를 이동 (WebMoving)  
   
--   사이트 이동 됨 (WebMoved)  
+- 사이트 이동 됨 (WebMoved)  
   
- 이 문제를 해결 하려면 이벤트 수신기의 기능 범위를 다음과 같이 변경 합니다.  
+  이 문제를 해결 하려면 이벤트 수신기의 기능 범위를 다음과 같이 변경 합니다.  
   
 ##### <a name="to-change-the-feature-scope-of-the-event-receiver"></a>이벤트 수신기의 기능 범위를 변경 하려면  
   
@@ -215,7 +215,7 @@ ms.locfileid: "37119472"
  가져온된 목록 인스턴스에 이름을 바꾼 후에서 실행 하는 경우이 문제가 발생 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]합니다.  
   
 ### <a name="error-message"></a>오류 메시지
- 빌드 오류: 기능 활성화 ' 배포 단계에서 오류가 발생 했습니다: 파일 Template\Features\\[*프로젝트를 가져와서**기능**이름*] \Files\Lists\\[*이전 * * 목록 이름*] \Schema.xml 존재 하지 않습니다.  
+ 빌드 오류: 기능 활성화 ' 배포 단계에서 오류가 발생 했습니다: 파일 Template\Features\\[*프로젝트를 가져와서*<em>기능</em>*이름*] \Files\Lists \\[*이전*<em>목록 이름</em>] \Schema.xml 존재 하지 않습니다.  
   
 ### <a name="resolution"></a>해결  
  목록 인스턴스를 가져올 때 CustomSchema 이라는 특성 목록 인스턴스의 Elements.xml 파일에 추가 됩니다. Elements.xml 목록 인스턴스에 대 한 사용자 지정 schema.xml의 경로 포함 합니다. 목록 인스턴스 이름을 바꾸면 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], 사용자 지정 schema.xml에 대 한 배포 경로 변경 하지만 CustomSchema 특성의 경로 값이 업데이트 되지 않습니다. 결과적으로 목록 인스턴스를 찾을 수 없습니다는 *schema.xml* 기능이 활성화 되 면 CustomSchema 특성으로 지정 된 이전 경로에 파일입니다.  

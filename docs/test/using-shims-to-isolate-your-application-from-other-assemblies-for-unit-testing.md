@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 shim을 사용하여 유닛 테스트를 위한 다른 어셈블리에서 응용 프로그램 격리
+title: shim을 사용하여 단위 테스트를 위한 애플리케이션 격리
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: da8ff01bed6446cc497c41ad21894c70df090efb
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: b94852b15891566bdfc38dd3fd8de9e706f38737
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380833"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065612"
 ---
 # <a name="use-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>shim을 사용하여 단위 테스트를 위한 다른 어셈블리에서 응용 프로그램 격리
 
@@ -32,7 +32,7 @@ shim을 사용하여 솔루션의 일부가 아닌 코드를 어셈블리에서 
 > [!NOTE]
 > .NET Standard 프로젝트는 지원되지 않습니다.
 
-## <a name="example-the-y2k-bug"></a>예: Y2K 버그
+## <a name="example-the-y2k-bug"></a>예제: Y2K 버그
 
 2000년 1월 1일에 예외를 throw하는 메서드를 살펴보겠습니다.
 
@@ -55,7 +55,7 @@ public static class Y2KChecker {
 ```csharp
 //unit test code
 // create a ShimsContext cleans up shims
-using (ShimsContext.Create()
+using (ShimsContext.Create()) {
     // hook delegate to the shim method to redirect DateTime.Now
     // to return January 1st of 2000
     ShimDateTime.NowGet = () => new DateTime(2000, 1, 1);
@@ -435,7 +435,6 @@ public class ShimMyClass : ShimBase<MyClass> {
 var shim = new ShimMyClass();
 //return default(T) or do nothing
 shim.InstanceBehavior = ShimsBehaviors.DefaultValue;
-
 ```
 
 정적 `ShimsBehaviors.Current` 속성을 설정하여 `InstanceBehavior` 속성이 명시적으로 설정되지 않은 shim된 모든 인스턴스에 대해 전역적으로 동작을 변경할 수도 있습니다.
@@ -512,5 +511,5 @@ ShimFile.WriteAllTextStringString = shim;
 ## <a name="see-also"></a>참고 항목
 
 - [Microsoft Fakes를 사용하여 테스트 대상 코드 격리](../test/isolating-code-under-test-with-microsoft-fakes.md)
-- [Peter Provost의 블로그: Visual Studio 2012 Shim](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)
-- [비디오(1h16): Visual Studio 2012에서 Fakes를 사용하여 테스트되지 않은 코드 테스트](http://go.microsoft.com/fwlink/?LinkId=261837)
+- [Peter Provost의 블로그: Visual Studio 2012 shims](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)
+- [비디오(1h16): Visual Studio 2012에서 fakes를 사용하여 테스트되지 않은 코드 테스트](http://go.microsoft.com/fwlink/?LinkId=261837)

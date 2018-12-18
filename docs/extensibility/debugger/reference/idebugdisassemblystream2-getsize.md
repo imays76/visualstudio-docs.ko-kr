@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f43a0fe3d7d2ad7c54ee9203037595dade7c6486
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 434a53803dcc08a5d4b07b531b56e913d5311d1a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106679"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934797"
 ---
 # <a name="idebugdisassemblystream2getsize"></a>IDebugDisassemblyStream2::GetSize
-이 디스어셈블리 스트림의 지침에 설명 된 크기를 가져옵니다.  
+이 디스어셈블리 스트림의 지침에서 크기를 가져옵니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -41,15 +41,15 @@ int GetSize(
   
 #### <a name="parameters"></a>매개 변수  
  `pnSize`  
- [out] 지침에 설명 된 크기를 반환 합니다.  
+ [out] 지침에는 크기를 반환합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 이 메서드에서 반환 된 값의 배열을 할당 데 사용할 수 [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) 에 전달 되는 구조는 [읽기](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) 메서드.  
+ 이 메서드에서 반환 된 값의 배열에 할당할 수 [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) 에 전달 되는 구조를 [읽기](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) 메서드.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)   
  [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)   
- [읽기](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)
+ [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)

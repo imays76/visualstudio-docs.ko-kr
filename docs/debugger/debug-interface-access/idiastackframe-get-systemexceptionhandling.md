@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 033122a925313117d007c20bb7a6d4f5f513b76c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 196bc890458d820b4280144e6f6a76655e7d8c93
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463467"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923877"
 ---
 # <a name="idiastackframegetsystemexceptionhandling"></a>IDiaStackFrame::get_systemExceptionHandling
-시스템 예외 처리 적용 되어 있는지 여부를 나타내는 플래그를 검색 합니다.  
+시스템 예외 처리에 적용 되는지 여부를 나타내는 플래그를 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -34,15 +34,15 @@ HRESULT get_systemExceptionHandling (
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out] 반환 `TRUE` 시스템 예외 처리가이 프레임;에 대해 적용 되는 경우는 그렇지 않으면 반환 `FALSE`합니다.  
+ [out] 반환 `TRUE` 이 프레임에 적용 되는 시스템 예외 처리 하는 경우는 그렇지 않으면 반환 `FALSE`합니다.  
   
 ## <a name="return-value"></a>반환 값  
  성공 하면 반환 `S_OK`합니다. 반환 `S_FALSE` 속성이 지원 되지 않는 경우. 그러지 않으면 오류 코드가 반환됩니다.  
   
 ## <a name="remarks"></a>설명  
- 시스템 예외 처리는 구조적된 예외 처리 라고 합니다. C + + 예외 처리와 같은 작업 아닙니다.  
+ 시스템 예외 처리는 구조적된 예외 처리 라고도 합니다. 이것이 c + + 예외 처리와 동일 합니다.  
   
- C + + 예외 처리 적용 되는 경우를 확인 하려면 호출는 [idiastackframe:: Get_cplusplusexceptionhandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md) 메서드.  
+ C + + 예외 처리에 적용 되는 경우를 확인 하려면 호출을 [idiastackframe:: Get_cplusplusexceptionhandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md) 메서드.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)   

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d3191f14cb3ad10b6fb95f2da6a3a4281c839de
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: bd4a22dc63f0304cc8afa98e35c5f7afd6cac011
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566599"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921995"
 ---
 # <a name="walkthrough-implement-code-snippets"></a>연습: 구현 코드 조각
 코드 조각을 작성 하 고 확장의 사용자가 자신의 코드에 추가할 수 있도록 편집기 확장에 포함할 수 있습니다.  
@@ -27,13 +27,13 @@ ms.locfileid: "39566599"
   
  이 연습에서는 이러한 작업을 수행 하는 방법에 설명 합니다.  
   
-1.  만들어 특정 언어에 대 한 코드 조각 등록 합니다.  
+1. 만들어 특정 언어에 대 한 코드 조각 등록 합니다.  
   
-2.  추가 된 **코드 조각 삽입** 바로 가기 메뉴에 명령 합니다.  
+2. 추가 된 **코드 조각 삽입** 바로 가기 메뉴에 명령 합니다.  
   
-3.  코드 조각 확장을 구현 합니다.  
+3. 코드 조각 확장을 구현 합니다.  
   
- 이 연습에 더해서 [연습: 문 완성 표시](../extensibility/walkthrough-displaying-statement-completion.md)합니다.  
+   이 연습에 더해서 [연습: 문 완성 표시](../extensibility/walkthrough-displaying-statement-completion.md)합니다.  
   
 ## <a name="prerequisites"></a>전제 조건  
  Visual Studio 2015부터 있습니다 다운로드 센터에서 Visual Studio SDK를 설치 하지 마세요. Visual Studio 설치에서 선택적 기능으로 포함 되어 있습니다. 또한 VS SDK를 나중에 설치할 수 있습니다. 자세한 내용은 [Visual Studio SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)합니다.  
@@ -43,72 +43,72 @@ ms.locfileid: "39566599"
   
  다음 단계에는 코드 조각을 만드는 특정 GUID를 사용 하 여 연결 하는 방법을 보여 줍니다.  
   
-1.  다음 디렉터리 구조를 만듭니다.  
+1. 다음 디렉터리 구조를 만듭니다.  
   
-     **%InstallDir%\TestSnippets\Snippets\1033\\**  
+    **%InstallDir%\TestSnippets\Snippets\1033\\**  
   
-     여기서 *% InstallDir %* Visual Studio 설치 폴더입니다. (하지만이 경로 일반적으로 코드 조각을 설치할 데를 지정할 수 있습니다 모든 경로.)  
+    여기서 *% InstallDir %* Visual Studio 설치 폴더입니다. (하지만이 경로 일반적으로 코드 조각을 설치할 데를 지정할 수 있습니다 모든 경로.)  
   
-2.  \1033\ 폴더를 만듭니다는 *.xml* 파일을 이름을 **TestSnippets.xml**합니다. (이 이름이 조각 인덱스 파일에 대 한 일반적으로 사용 되지만 붙어 있다면 이름을 지정할 수 있습니다는 *.xml* 파일 이름 확장명.) 다음 텍스트를 추가 합니다. 다음 자리 표시자 GUID는 삭제 하 고 직접 추가 합니다.  
+2. \1033\ 폴더를 만듭니다는 *.xml* 파일을 이름을 **TestSnippets.xml**합니다. (이 이름이 조각 인덱스 파일에 대 한 일반적으로 사용 되지만 붙어 있다면 이름을 지정할 수 있습니다는 *.xml* 파일 이름 확장명.) 다음 텍스트를 추가 합니다. 다음 자리 표시자 GUID는 삭제 하 고 직접 추가 합니다.  
   
-    ```xml  
-    <?xml version="1.0" encoding="utf-8" ?>  
-    <SnippetCollection>  
-        <Language Lang="TestSnippets" Guid="{00000000-0000-0000-0000-000000000000}">  
-            <SnippetDir>  
-                <OnOff>On</OnOff>  
-                <Installed>true</Installed>  
-                <Locale>1033</Locale>  
-                <DirPath>%InstallRoot%\TestSnippets\Snippets\%LCID%\</DirPath>  
-                <LocalizedName>Snippets</LocalizedName>  
-            </SnippetDir>  
-        </Language>  
-    </SnippetCollection>  
-    ```  
+   ```xml  
+   <?xml version="1.0" encoding="utf-8" ?>  
+   <SnippetCollection>  
+       <Language Lang="TestSnippets" Guid="{00000000-0000-0000-0000-000000000000}">  
+           <SnippetDir>  
+               <OnOff>On</OnOff>  
+               <Installed>true</Installed>  
+               <Locale>1033</Locale>  
+               <DirPath>%InstallRoot%\TestSnippets\Snippets\%LCID%\</DirPath>  
+               <LocalizedName>Snippets</LocalizedName>  
+           </SnippetDir>  
+       </Language>  
+   </SnippetCollection>  
+   ```  
   
-3.  코드 조각 폴더에 파일을 만듭니다, 이름을 **테스트**`.snippet`, 후 다음 텍스트를 추가 합니다.  
+3. 코드 조각 폴더에 파일을 만듭니다, 이름을 **테스트**`.snippet`, 후 다음 텍스트를 추가 합니다.  
   
-    ```xml  
-    <?xml version="1.0" encoding="utf-8" ?>  
-    <CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
-        <CodeSnippet Format="1.0.0">  
-            <Header>  
-                <Title>Test replacement fields</Title>  
-                <Shortcut>test</Shortcut>  
-                <Description>Code snippet for testing replacement fields</Description>  
-                <Author>MSIT</Author>  
-                <SnippetTypes>  
-                    <SnippetType>Expansion</SnippetType>  
-                </SnippetTypes>  
-            </Header>  
-            <Snippet>  
-                <Declarations>  
-                    <Literal>  
-                      <ID>param1</ID>  
-                        <ToolTip>First field</ToolTip>  
-                        <Default>first</Default>  
-                    </Literal>  
-                    <Literal>  
-                        <ID>param2</ID>  
-                        <ToolTip>Second field</ToolTip>  
-                        <Default>second</Default>  
-                    </Literal>  
-                </Declarations>  
-                <References>  
-                   <Reference>  
-                       <Assembly>System.Windows.Forms.dll</Assembly>  
-                   </Reference>  
-                </References>  
-                <Code Language="TestSnippets">  
-                    <![CDATA[MessageBox.Show("$param1$");  
-         MessageBox.Show("$param2$");]]>  
-                </Code>    
-            </Snippet>  
-        </CodeSnippet>  
-    </CodeSnippets>  
-    ```  
+   ```xml  
+   <?xml version="1.0" encoding="utf-8" ?>  
+   <CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
+       <CodeSnippet Format="1.0.0">  
+           <Header>  
+               <Title>Test replacement fields</Title>  
+               <Shortcut>test</Shortcut>  
+               <Description>Code snippet for testing replacement fields</Description>  
+               <Author>MSIT</Author>  
+               <SnippetTypes>  
+                   <SnippetType>Expansion</SnippetType>  
+               </SnippetTypes>  
+           </Header>  
+           <Snippet>  
+               <Declarations>  
+                   <Literal>  
+                     <ID>param1</ID>  
+                       <ToolTip>First field</ToolTip>  
+                       <Default>first</Default>  
+                   </Literal>  
+                   <Literal>  
+                       <ID>param2</ID>  
+                       <ToolTip>Second field</ToolTip>  
+                       <Default>second</Default>  
+                   </Literal>  
+               </Declarations>  
+               <References>  
+                  <Reference>  
+                      <Assembly>System.Windows.Forms.dll</Assembly>  
+                  </Reference>  
+               </References>  
+               <Code Language="TestSnippets">  
+                   <![CDATA[MessageBox.Show("$param1$");  
+        MessageBox.Show("$param2$");]]>  
+               </Code>    
+           </Snippet>  
+       </CodeSnippet>  
+   </CodeSnippets>  
+   ```  
   
- 다음 단계에는 코드 조각은 등록 하는 방법을 보여 줍니다.  
+   다음 단계에는 코드 조각은 등록 하는 방법을 보여 줍니다.  
   
 ### <a name="to-register-code-snippets-for-a-specific-guid"></a>특정 GUID에 대 한 코드 조각 등록  
   

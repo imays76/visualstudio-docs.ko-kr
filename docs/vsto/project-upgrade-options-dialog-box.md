@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e279e6db1acf4cb277c8734fa24f965a8236e7ec
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: c53db1dffad5c755cba699986d64786471075776
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692761"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671939"
 ---
 # <a name="project-upgrade-options-dialog-box"></a>프로젝트 업그레이드, 옵션 대화 상자
   **프로젝트 업그레이드** 페이지에서 Visual Studio가 개발 컴퓨터에 설치되는 Office 버전을 대상으로 VSTO 추가 기능 프로젝트를 자동으로 변경하는지 여부를 지정합니다.  
@@ -33,10 +33,10 @@ ms.locfileid: "34692761"
   
 ## <a name="uielement-list"></a>UI 요소 목록  
  **설치된 Office 버전으로 항상 업그레이드**  
- [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 의 Office 프로젝트는 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 또는 Microsoft [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] 응용 프로그램만 대상으로 할 수 있으므로 이 옵션은 [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 에 대해서는 사용할 수 없습니다. 자세한 내용은 참조 [업그레이드 및 Office 솔루션 마이그레이션](../vsto/upgrading-and-migrating-office-solutions.md)합니다.  
+ [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 의 Office 프로젝트는 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 또는 Microsoft [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] 응용 프로그램만 대상으로 할 수 있으므로 이 옵션은 [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 에 대해서는 사용할 수 없습니다. 자세한 내용은 [업그레이드 및 Office 솔루션 마이그레이션](../vsto/upgrading-and-migrating-office-solutions.md)합니다.  
   
 ## <a name="see-also"></a>참고자료  
  [업그레이드 및 Office 솔루션 마이그레이션](../vsto/upgrading-and-migrating-office-solutions.md)   
- [방법: 업그레이드 Office 솔루션](http://msdn.microsoft.com/en-us/a269e539-b717-4680-a568-2152b070347e)  
+ [방법: 업그레이드 Office 솔루션](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)  
   
   

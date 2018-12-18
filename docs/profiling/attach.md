@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d227fd84cd14db165ad0253cb7ceefd4f50eb580
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 80b4000a8fc8657c1b82490b1ddb6dec0dbdd3ce
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34690629"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907237"
 ---
 # <a name="attach"></a>연결
 *VSPerfCmd.exe* **Attach** 옵션은 PID(프로세스 ID)로 지정된 실행 중인 프로세스의 샘플 프로파일링을 시작합니다.  
@@ -56,7 +56,7 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
 ## <a name="interval-options"></a>간격 옵션  
  다음 샘플링 간격 옵션 중 하나를 Attach 명령줄에 지정할 수 있습니다. 기본 샘플링 간격은 10,000,000 프로세서 클록 주기입니다.  
   
- **Timer**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[**:** Events]**Counter**[**:**`Name`,`Reload`,`FriendlyName`]  
+ **Timer**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[<strong>:</strong>Events]**Counter**[**:**`Name`,`Reload`,`FriendlyName`]  
  샘플링 간격의 종류와 수를 지정합니다.  
   
 -   **Timer** - 모든 `Cycles` 프로세서 클록 주기를 샘플링합니다. `Cycles`를 지정하지 않은 경우 10,000,000 주기가 사용됩니다.  

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1bf6b73c0df37d232c1ebd12ae00bbb4803ac13
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f3694c23f52a1c34cd99d8391b14cc92ac939813
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481946"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903675"
 ---
 # <a name="how-to-stop-code-changes"></a>방법: 코드 변경 중지
 편집하며 계속하기에서 코드 변경 내용을 적용하는 동안 작업을 중지할 수 있습니다.  
@@ -34,12 +34,12 @@ ms.locfileid: "31481946"
   
 ### <a name="to-stop-applying-code-changes"></a>코드 변경 내용의 적용을 중지하려면  
   
--   선택 **코드 변경 내용 적용 중지** 에서 **디버그** 메뉴.  
+- 선택할 **코드 변경 내용 적용 중지** 에서 합니다 **디버그** 메뉴.  
   
- 이 메뉴 항목은 코드 변경 내용을 적용하는 동안에만 표시됩니다.  
+  이 메뉴 항목은 코드 변경 내용을 적용하는 동안에만 표시됩니다.  
   
- 이 옵션을 선택하면 코드 변경 내용이 커밋되지 않습니다.  
+  이 옵션을 선택하면 코드 변경 내용이 커밋되지 않습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [편집 하며 계속 하기](../debugger/edit-and-continue.md)   
- [편집 하며 계속 하기, 옵션 대화 상자, 디버깅](http://msdn.microsoft.com/Library/009d225f-ef65-463f-a146-e4c518f86103)
+ [옵션 대화 상자, 디버깅, 편집하며 계속하기](https://msdn.microsoft.com/library/bcew296c.aspx)

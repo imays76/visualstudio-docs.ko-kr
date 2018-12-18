@@ -1,6 +1,6 @@
 ---
-title: '방법: 명령줄을 통해 .NET 서비스에 프로파일러를 연결하여 동시성 데이터 수집 | Microsoft 문서'
-ms.custom: ''
+title: .NET 서비스에 프로파일러를 연결하여 동시성 데이터 수집
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 60f300f58c0cc9c06d8af64a4054b95306899f3a
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: a12ce0b60a2ef47e1901b0c2e20f730faa225681
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815745"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052169"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-concurrency-data-by-using-the-command-line"></a>방법: 명령줄을 통해 .NET 서비스에 프로파일러를 연결하여 동시성 데이터 수집
 이 문서에서는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구 명령줄 도구를 사용하여 프로파일러를 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 서비스에 연결하고 샘플링 방법으로 프로세스 및 스레드 동시성 데이터를 수집하는 방법을 설명합니다.  

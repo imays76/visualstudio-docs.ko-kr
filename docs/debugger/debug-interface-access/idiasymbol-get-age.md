@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a81c41902b5e6a8421f15b69ebc77fe5ae6eebf
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0ba915762a5eacffc32122a1dac4b7b046691e63
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464783"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868471"
 ---
 # <a name="idiasymbolgetage"></a>IDiaSymbol::get_age
-.Pdb 파일의 보존 기간 값을 검색 합니다.  
+.Pdb 파일의 보존 기간 값을 검색합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -34,16 +34,16 @@ HRESULT get_age (
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out] .Pdb 파일의 보존 기간 값을 반환 합니다.  
+ [out] .Pdb 파일의 보존 기간 값을 반환합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
+ 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
   
 > [!NOTE]
->  반환 값이 `S_FALSE` 의미는 속성은 해당 기호를 사용할 수 없습니다.  
+>  반환 값이 `S_FALSE` 속성 기호를 사용할 수 없는 것을 의미 합니다.  
   
 ## <a name="remarks"></a>설명  
- 알려진된 시간 값이 있으면; 나이 반드시 일치 하지 않습니다. .pdb 파일은.exe 파일을 해당와 동기화 하는 경우를 확인 하려면 일반적으로 사용 됩니다.  
+ 모든 알려진된 시간 값; 기간 반드시 일치 하지 않습니다. 일반적으로.pdb 파일의 해당.exe 파일을 사용 하 여 동기화 된 경우를 결정 하는 것이 됩니다.  
   
 ## <a name="requirements"></a>요구 사항  
   

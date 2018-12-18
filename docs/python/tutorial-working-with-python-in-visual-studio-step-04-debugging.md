@@ -1,22 +1,24 @@
 ---
-title: Python 작업 자습서, 4단계, 디버깅
+title: Visual Studio 자습서 4단계의 Python 디버깅
+titleSuffix: ''
 description: Visual Studio의 Python 기능에 대한 핵심 연습의 4단계로, 디버거에서 Python 코드를 실행하는 방법을 설명합니다.
-ms.date: 06/26/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6b163a7e421e3713cb160f4d0274f736d5d977d7
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 5facce6eff378586ece01b5774089e76058615f9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513337"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060422"
 ---
 # <a name="step-4-run-code-in-the-debugger"></a>4단계: 디버거에서 코드 실행
 

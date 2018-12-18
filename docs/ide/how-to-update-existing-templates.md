@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 기존 프로젝트 및 항목 템플릿 업데이트
+title: 기존 프로젝트 항목 템플릿 업데이트
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,12 +12,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ddc360e6146678730d1844e4762ac3f6112a97d3
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 52f24f76ff217b694a1e5d2b510d16b0911d2fda
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572568"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061470"
 ---
 # <a name="how-to-update-existing-templates"></a>방법: 기존 템플릿 업데이트
 

@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 612b72a7fe0251b43d277629e274193b115eae24
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a19ba4c4524d576b50260ef15f1f5889c29f05fe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113405"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876102"
 ---
 # <a name="idebugportsupplier2getportsuppliername"></a>IDebugPortSupplier2::GetPortSupplierName
-포트 공급 업체 이름을 가져옵니다.  
+포트 공급자 이름을 가져옵니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -41,10 +41,10 @@ int GetPortSupplierName(
   
 #### <a name="parameters"></a>매개 변수  
  `pbstrName`  
- [out] 포트 공급 업체의 이름을 반환합니다.  
+ [out] 포트 공급자의 이름을 반환합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)

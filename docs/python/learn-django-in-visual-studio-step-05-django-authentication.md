@@ -1,22 +1,24 @@
 ---
-title: 자습서 - Visual Studio의 Django 알아보기, 5단계
+title: Visual Studio, 5단계, 인증에서 Django 자습서 알아보기
+titleSuffix: ''
 description: Visual Studio 프로젝트 컨텍스트에서 Django 기본 사항을 검토하는 연습 과정으로, Django 웹 프로젝트 템플릿에서 제공하는 인증 기능을 구체적으로 설명합니다.
-ms.date: 04/25/2018
+ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e9c30e2cdf0f55db5b09225768b073bb030c841b
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 77cc7816a1a05e3b6a883416225717679dd5661b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388373"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064075"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>5단계: Django에서 사용자 인증
 
@@ -152,24 +154,30 @@ ms.locfileid: "39388373"
 
 1. 인증된 사용자에게 특정 리소스에 액세스할 수 있는 권한이 있는지 확인하려면 데이터베이스에서 사용자별 사용 권한을 검색해야 합니다. 자세한 내용은 [Django 인증 시스템 사용](https://docs.djangoproject.com/en/2.0/topics/auth/default/#permissions-and-authorization)(Django 문서)을 참조하세요.
 
-1. 특히 슈퍼 사용자 또는 관리자는 상대 URL “/admin/” 및 “/admin/doc/”를 사용하여 기본 제공 Django 관리자 인터페이스에 액세스할 수 있습니다. 이러한 인터페이스를 사용하려면 Django 프로젝트의 *urls.py*를 열고 다음 항목에서 주석을 제거하세요.
+1. 특히 슈퍼 사용자 또는 관리자는 상대 URL “/admin/” 및 “/admin/doc/”를 사용하여 기본 제공 Django 관리자 인터페이스에 액세스할 수 있습니다. 이러한 인터페이스를 사용하도록 설정하려면 다음을 수행합니다.
 
-    ```python
-    from django.conf.urls import include
-    from django.contrib import admin
-    admin.autodiscover()
+    1. 사용자 환경에 docutils Python 패키지를 설치합니다. 이 작업을 수행하는 적합한 방법은 "docutils"를 *requirements.txt* 파일에 추가한 다음, **솔루션 탐색기**에서 프로젝트 및 **Python 환경** 노드를 차례로 확장한 다음, 사용하는 환경을 마우스 오른쪽 단추로 클릭하여 **requirements.txt에서 설치**를 선택합니다.
 
-    # ...
-    urlpatterns = [
+    1. Django 프로젝트의 *urls.py*를 열고, 다음 항목에서 기본 주석을 제거합니다.
+
+        ```python
+        from django.conf.urls import include
+        from django.contrib import admin
+        admin.autodiscover()
+
         # ...
-        url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
-        url(r'^admin/', include(admin.site.urls)),
-    ]
-    ```
+        urlpatterns = [
+            # ...
+            url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
+            url(r'^admin/', include(admin.site.urls)),
+        ]
+        ```
 
-    앱을 다시 시작하면 “/admin/” 및 “/admin/doc/”로 이동하여 추가 사용자 계정 만들기와 같은 작업을 수행할 수 있습니다.
+    1. Django 프로젝트의 *settings.py* 파일의 `INSTALLED_APPS` 컬렉션으로 이동하여 `'django.contrib.admindocs'`를 추가합니다.
 
-    ![Django 관리자 인터페이스](media/django/step05-administrator-interface.png)
+    1. 앱을 다시 시작하면 “/admin/” 및 “/admin/doc/”로 이동하여 추가 사용자 계정 만들기와 같은 작업을 수행할 수 있습니다.
+
+        ![Django 관리자 인터페이스](media/django/step05-administrator-interface.png)
 
 1. 인증 흐름의 마지막 부분은 로그오프입니다. *loginpartial.html*에서처럼 **로그오프** 링크는 상대 URL "/login"에 대해 POST를 수행하며, 기본 제공 보기 `django.contrib.auth.views.logout`에 의해 처리됩니다. 이 보기는 UI를 표시하지 않으며 “^logout$” 패턴에 대해 *urls.py*에 표시된 대로 홈페이지로 이동하기만 합니다. 로그오프 페이지를 표시하려면 먼저 URL 패턴을 다음과 같이 변경하여 “template_name” 속성을 추가하고 “next_page” 속성을 제거합니다.
 
@@ -198,9 +206,9 @@ ms.locfileid: "39388373"
 
 1. 모든 작업이 완료되면 서버를 중지하고 다시 한번 변경 내용을 소스 제어에 커밋합니다.
 
-### <a name="question-what-is-the-purpose-of-the--crsftoken--tag-that-appears-in-the-form-elements"></a>질문: \<form\> 요소에 나타나는 {% crsf_token %} 태그의 용도는 무엇인가요?
+### <a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a>질문: \<form\> 요소에 나타나는 {% csrf_token %} 태그의 용도는 무엇인가요?
 
-대답: `{% crsf_token %}` 태그에는 Django의 기본 제공 [CSRF(교차 사이트 요청 위조) 보호](https://docs.djangoproject.com/en/2.0/ref/csrf/)(Django 문서)가 포함됩니다. 일반적으로 양식과 같이 POST, PUT 또는 DELETE 요청 메서드를 포함하는 요소에 이 태그를 추가합니다. 그런 다음, 템플릿 렌더링 함수(`render`)에서 필요한 보호를 삽입합니다.
+대답: `{% csrf_token %}` 태그에는 Django의 기본 제공 [CSRF(교차 사이트 요청 위조) 보호](https://docs.djangoproject.com/en/2.0/ref/csrf/)(Django 문서)가 포함됩니다. 일반적으로 양식과 같이 POST, PUT 또는 DELETE 요청 메서드를 포함하는 요소에 이 태그를 추가합니다. 그런 다음, 템플릿 렌더링 함수(`render`)에서 필요한 보호를 삽입합니다.
 
 ## <a name="next-steps"></a>다음 단계
 

@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e87ece3deb5d55f1e184974135eeddcec1ebbfc
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: bc8066148b2c8612b3a07922e15422022b8c9c4d
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177333"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967508"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>시나리오: 시각화 및 모델링을 사용하여 디자인 변경
 
@@ -82,7 +82,7 @@ Team Foundation Server에 대한 자세한 내용은 다음을 참조하세요.
 다음 표에서는 소프트웨어 개발 수명 주기의 여러 다양한 단계에서 이들 도구가 수행할 수 있는 역할에 대해 설명합니다.
 
 ||**사용자 요구 사항 모델링**|**비즈니스 프로세스 모델링**|**시스템 아키텍처 및 디자인**|**코드 시각화 및 탐색**|**확인**|
-|------|------------------------------------|-----------------------------------|--------------------------------------|------------------------------------------|----------------------|
+|------|-|-|-|-|-|
 |DSL(도메인별 언어) 다이어그램|예|예|예|||
 |종속성 다이어그램, 레이어 유효성 검사|||예|예|예|
 |코드 맵|||예|예|예|
@@ -112,7 +112,7 @@ Team Foundation Server에 대한 자세한 내용은 다음을 참조하세요.
 - [종속성 다이어그램을 사용하여 코드 유효성 검사](../modeling/validate-code-with-layer-diagrams.md)
 
 > [!NOTE]
-> 일부 버전의 Visual Studio 시각화 및 모델링에 대 한 종속성 유효성 검사 및 코드 맵 읽기 전용 버전을 지원합니다. 이 기능을 지원하는 Visual Studio 버전을 확인하려면 [아키텍처 및 모델링 도구에 대한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.
+> 일부 버전의 Visual Studio 시각화 및 모델링에 대 한 종속성 유효성 검사 및 코드 맵 읽기 전용 버전을 지원합니다. 이 기능을 지 원하는 Visual Studio의 버전을 보려면을 참조 하세요 [아키텍처 및 모델링 도구에 대 한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)합니다.
 
 ## <a name="understand-and-communicate-information-about-the-system"></a>시스템에 대 한 정보를 주고 이해
 
@@ -145,9 +145,9 @@ Lucerne은 다이어그램을 사용하여 다음 작업을 수행합니다.
 Dinner Now는 새 요구 사항을 충족하기 위한 비용을 예측해야 합니다. 비용은 부분적으로 이 변경이 시스템의 다른 부분에 얼마나 영향을 미치는지에 따라 달라집니다. 이 흐름을 이해하는 데 도움이 되도록 Dinner Now 개발자 한 명이 기존 코드에서 다음 맵 및 다이어그램을 만듭니다.
 
 |**맵 또는 다이어그램**|**보여 주는 것**|
-|------------------------|---------------|
+|-|-|
 |*코드 맵*<br /><br /> 참조<br /><br /> - [솔루션 전체의 종속성 매핑](../modeling/map-dependencies-across-your-solutions.md)<br />- [찾아보기 및 코드 맵을 다시 정렬](../modeling/browse-and-rearrange-code-maps.md)<br />- [DGML 파일을 편집 하 여 코드 맵 사용자 지정](../modeling/customize-code-maps-by-editing-the-dgml-files.md)|코드의 종속성 및 기타 관계.<br /><br /> 예를 들어 Dinner Now는 어셈블리 및 해당 종속성을 살펴보기 위해 먼저 어셈블리 코드 맵을 검토할 수 있습니다. 맵을 분석하여 해당 어셈블리의 네임스페이스 및 클래스를 살펴볼 수 있습니다.<br /><br /> Dinner Now에서 맵을 만들어서 코드의 특정 영역 및 다른 관계 종류를 살펴볼 수도 있습니다. 솔루션 탐색기를 사용하여 관심 있는 영역 및 관계를 찾고 선택합니다.|
-|*코드 기반 클래스 다이어그램*<br /><br /> [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)을 참조하세요.|코드의 기존 클래스|
+|*코드 기반 클래스 다이어그램*<br /><br /> [방법: 프로젝트에 클래스 다이어그램 추가(클래스 디자이너)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)를 참조하세요.|코드의 기존 클래스|
 
  예를 들어 개발자는 코드 맵을 만듭니다. 범위를 조정하여 새 시나리오가 영향을 미치는 영역에 초점을 맞춥니다. 맵에서 다음 영역이 선택되고 강조 표시됩니다.
 
@@ -166,15 +166,15 @@ Dinner Now는 새 요구 사항을 충족하기 위한 비용을 예측해야 �
  구성 요소 또는 상호 작용과 같은 시스템의 다른 부분에 대한 변경 내용을 설명하기 위해 팀에서는 화이트보드에 이들 요소를 그릴 수 있습니다. 두 팀 모두가 세부 정보를 캡처, 관리 및 이해할 수 있도록 Visual Studio에서 다음 다이어그램을 그릴 수도 있습니다.
 
 |**다이어그램**|**설명 내용**|
-|------------------|-------------------|
-|*코드 기반 클래스 다이어그램*<br /><br /> [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)을 참조하세요.|코드의 기존 클래스.|
+|-|-|
+|*코드 기반 클래스 다이어그램*<br /><br /> [방법: 프로젝트에 클래스 다이어그램 추가(클래스 디자이너)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)를 참조하세요.|코드의 기존 클래스.|
 
-###  <a name="ValidatingCode"></a> 코드와 디자인의 일관성 유지
+### <a name="ValidatingCode"></a> 코드와 디자인의 일관성 유지
  Dinner Now는 업데이트된 코드와 디자인의 일관성이 유지되는지 확인해야 합니다. 시스템의 기능 레이어를 설명 및 연결 솔루션 아티팩트를 레이어에 간에 허용 되는 종속성을 지정 하는 종속성 다이어그램을 만듭니다.
 
 |**다이어그램**|**설명 내용**|
-|-----------------|-------------------|
-|*종속성 다이어그램*<br /><br /> 참조<br /><br /> - [코드에서 종속성 다이어그램 만들기](../modeling/create-layer-diagrams-from-your-code.md)<br />- [종속성 다이어그램: 참조](../modeling/layer-diagrams-reference.md)<br />- [종속성 다이어그램: 지침](../modeling/layer-diagrams-guidelines.md)<br />- [종속성 다이어그램을 사용 하 여 코드 유효성 검사](../modeling/validate-code-with-layer-diagrams.md)|코드의 논리적 아키텍처.<br /><br /> 종속성 다이어그램을 구성 하 고 아티팩트를 매핑하는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 라는 추상 그룹에는 솔루션 *레이어*합니다. 이들 레이어는 아티팩트가 시스템에서 수행하는 역할, 작업 또는 기능을 식별합니다.<br /><br /> 레이어 다이어그램은 의도한 시스템 디자인을 설명하고 해당 디자인에 대해 발전하는 코드의 유효성을 검사하는 데 유용합니다.<br /><br /> 레이어를 만들려면 솔루션 탐색기, 코드 맵, 클래스 뷰 및 개체 브라우저에서 항목을 끌어옵니다. 새 레이어를 그리려면 도구 상자를 사용하거나 다이어그램 곡면을 마우스 오른쪽 단추로 클릭합니다.<br /><br /> 기존 종속성을 보려면 레이어 다이어그램 곡면을 마우스 오른쪽 단추로 클릭하고 **종속성 생성**을 클릭합니다. 의도한 종속성을 지정하려면 새 종속성을 그립니다.|
+|-|-|
+|*종속성 다이어그램*<br /><br /> 참조<br /><br /> - [코드에서 종속성 다이어그램 만들기](../modeling/create-layer-diagrams-from-your-code.md)<br />- [종속성 다이어그램: 참조](../modeling/layer-diagrams-reference.md)<br />- [종속성 다이어그램: 지침](../modeling/layer-diagrams-guidelines.md)<br />- [종속성 다이어그램을 사용 하 여 코드 유효성 검사](../modeling/validate-code-with-layer-diagrams.md)|코드의 논리적 아키텍처.<br /><br /> 종속성 다이어그램을 구성 하 고 라는 추상 그룹에는 Visual Studio 솔루션의 아티팩트를 매핑합니다 *레이어*합니다. 이들 레이어는 아티팩트가 시스템에서 수행하는 역할, 작업 또는 기능을 식별합니다.<br /><br /> 레이어 다이어그램은 의도한 시스템 디자인을 설명하고 해당 디자인에 대해 발전하는 코드의 유효성을 검사하는 데 유용합니다.<br /><br /> 레이어를 만들려면 솔루션 탐색기, 코드 맵, 클래스 뷰 및 개체 브라우저에서 항목을 끌어옵니다. 새 레이어를 그리려면 도구 상자를 사용하거나 다이어그램 곡면을 마우스 오른쪽 단추로 클릭합니다.<br /><br /> 기존 종속성을 보려면 레이어 다이어그램 곡면을 마우스 오른쪽 단추로 클릭하고 **종속성 생성**을 클릭합니다. 의도한 종속성을 지정하려면 새 종속성을 그립니다.|
 
  예를 들어 다음 종속성 다이어그램에서는 레이어 간 종속성 및 각 레이어와 연결 된 아티팩트의 수를 설명 합니다:
 
@@ -182,15 +182,15 @@ Dinner Now는 새 요구 사항을 충족하기 위한 비용을 예측해야 �
 
  **종속성 다이어그램**
 
-되도록 코드 개발 하는 동안 디자인 충돌이 발생 하지 않습니다에서 종속성 유효성 검사 빌드를 사용 하 여 팀은 Team Foundation Build에서 실행 됩니다. 체크 인 작업에서 종속성 유효성 검사를 요구 하도록 사용자 지정 MSBuild 작업을 만들 수도 있습니다. 빌드 보고서를 사용하여 유효성 검사 오류를 수집합니다.
+되도록 코드 개발 하는 동안 디자인 충돌이 발생 하지 않습니다에서 종속성 유효성 검사 빌드를 사용 하 여 팀은 Azure DevOps에서 실행 됩니다. 체크 인 작업에서 종속성 유효성 검사를 요구 하도록 사용자 지정 MSBuild 작업을 만들 수도 있습니다. 빌드 보고서를 사용하여 유효성 검사 오류를 수집합니다.
 
 참조
 
-- [빌드 프로세스 정의](http://msdn.microsoft.com/Library/61593e10-d24b-492f-b19a-af4d85abea6b)
+- [비주얼 디자이너를 사용](/azure/devops/pipelines/get-started-designer)
 
-- [제어된 체크 인 빌드 프로세스를 사용하여 변경 내용 유효성 검사](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)
+- [TFVC 제어 된 체크 인](/azure/devops/pipelines/build/triggers#gated)
 
-- [빌드 프로세스 템플릿 사용자 지정](http://msdn.microsoft.com/Library/b94c58f2-ae6f-4245-bedb-82cd114f6039)
+- [빌드 및 릴리스 작업](/azure/devops/pipelines/tasks/index)
 
 ### <a name="general-tips-for-creating-and-using-models"></a>모델 만들기 및 사용에 대한 일반적인 팁
 
@@ -216,15 +216,15 @@ Visual Studio 모델링 다이어그램은 Team Foundation Server와 통합되�
 
 참조
 
-- [Visual Studio Team Services 또는 Team Foundation Server를 사용하여 작업 추적](http://msdn.microsoft.com/Library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)
+- [Agile 도구 및 Agile 프로젝트 관리 하는 방법에 대 한](/azure/devops/boards/backlogs/overview?view=vsts)
 
-- [Visual Studio ALM용 차트, 대시보드 및 보고서](http://msdn.microsoft.com/Library/1f28ba6c-c5e5-46d3-9209-ede24ae78e48)
+- [차트, 대시보드 및 위젯 (Azure DevOps 서비스)](/azure/devops/report/dashboards/overview?view=vsts)
 
-- [Project를 사용하여 백로그 및 작업 만들기](http://msdn.microsoft.com/Library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)
+- [Project를 사용하여 백로그 및 작업 만들기](/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project)
 
 ### <a name="TestValidateCheckInCode"></a> 테스트, 유효성 검사 및 코드에서 확인
 
-팀에서 각 작업을 완료하면 코드를 Team Foundation 버전 제어에 체크 인하고 잊지 않도록 Team Foundation Server에서 미리 알림을 수신합니다. Team Foundation Server 체크 인을 승인 하기 전에 팀에서는 단위 테스트와 해당 테스트 사례 및 디자인에 대해 코드를 확인 하려면 종속성 유효성 검사를 실행 합니다. Team Foundation Server를 사용 하 여 빌드를 실행 하는 자동화 된 단위 테스트 및 종속성 유효성 검사를 정기적으로 합니다. 이렇게 하면 코드가 다음 기준을 충족하는지 확인할 수 있습니다.
+팀에서 각 작업을 완료 하면 코드를 소스 제어로 체크 하며 인하고 잊지 않도록 Team Foundation Server에서 미리 알림을 수신 합니다. Team Foundation Server 체크 인을 승인 하기 전에 팀에서는 단위 테스트와 해당 테스트 사례 및 디자인에 대해 코드를 확인 하려면 종속성 유효성 검사를 실행 합니다. Team Foundation Server를 사용 하 여 빌드를 실행 하는 자동화 된 단위 테스트 및 종속성 유효성 검사를 정기적으로 합니다. 이렇게 하면 코드가 다음 기준을 충족하는지 확인할 수 있습니다.
 
 - 예상대로 작동합니다.
 
@@ -234,17 +234,17 @@ Visual Studio 모델링 다이어그램은 Team Foundation Server와 통합되�
 
 Dinner Now의 자동화된 대규모 테스트 컬렉션은 지금도 거의 모두 적용되고 있기 때문에 Lucerne이 다시 사용할 수 있습니다. Lucerne은 이들 테스트를 기반으로 빌드하고 새 기능을 다루는 새 테스트를 추가할 수 있습니다. 두 팀에서는 모두 Visual Studio를 사용한 수동 테스트도 실행합니다.
 
-코드 디자인을 따르는지 확인 되도록 팀 종속성 유효성 검사를 포함 하도록 Team Foundation Build에서 해당 빌드를 구성 합니다. 충돌이 발생하면 세부 정보가 포함된 보고서가 생성됩니다.
+코드 디자인을 준수 하는지 확인 하려면 팀에서 종속성 유효성 검사를 포함 하도록 Azure DevOps 해당 빌드를 구성 합니다. 충돌이 발생하면 세부 정보가 포함된 보고서가 생성됩니다.
 
 참조
 
-- [응용 프로그램 테스트](/vsts/test/overview?view=vsts)
+- [응용 프로그램 테스트](/azure/devops/test/overview?view=vsts)
 
 - [개발하는 동안 시스템 유효성 검사](../modeling/validate-your-system-during-development.md)
 
 - [버전 제어 사용](http://go.microsoft.com/fwlink/?LinkID=525605)
 
-- [빌드 및 릴리스](/vsts/build-release/index)
+- [Azure 파이프라인](/azure/devops/pipelines/index?view=vsts)
 
 ## <a name="update-the-system-using-visualization-and-modeling"></a>시스템 사용 하 여 시각화 및 모델링 업데이트
 
@@ -312,7 +312,7 @@ Lucerne 결제 시스템에 대한 다음 맵을 생성하여 클래스, 메서�
 
      컴파일된 코드의 간략한 개요를 확인하려면 빈 코드 맵을 만들고 어셈블리 파일이나 이진 파일을 맵 표면으로 끌어옵니다.
 
-- 특정 코드 또는 솔루션 항목을 살펴보려면 솔루션 탐색기를 사용하여 시각화할 항목 및 관계를 선택합니다. 그다음에 새 맵을 생성하거나 선택된 항목을 기존 맵에 추가할 수 있습니다. 참조 [솔루션 전체의 종속성 매핑](../modeling/map-dependencies-across-your-solutions.md)합니다.
+- 특정 코드 또는 솔루션 항목을 살펴보려면 솔루션 탐색기를 사용하여 시각화할 항목 및 관계를 선택합니다. 그다음에 새 맵을 생성하거나 선택된 항목을 기존 맵에 추가할 수 있습니다. [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md)을 참조하세요.
 
 - 맵을 살펴보는 데 도움이 되도록 수행할 작업 종류에 맞게 레이아웃을 다시 정렬합니다.
 
@@ -330,9 +330,9 @@ Lucerne 결제 시스템에 대한 다음 맵을 생성하여 클래스, 메서�
 #### <a name="relationship-to-other-diagrams"></a>다른 다이어그램과의 관계
 
 |**다이어그램**|**설명 내용**|
-|-----------------|-------------------|
+|-|-|
 |종속성 다이어그램|시스템의 논리적 아키텍처. 종속성 유효성 검사를 사용 하 여 코드와 디자인의 일관성이 유지 되는지 확인 합니다.<br /><br /> 를 기존 dependencys 또는 의도 한 dependencys 식별할 수 있도록 하려면 코드 맵을 만들고 관련된 항목을 그룹화 합니다. 종속성 다이어그램을 만들려면 다음을 참조 하세요:<br /><br /> - [코드에서 종속성 다이어그램 만들기](../modeling/create-layer-diagrams-from-your-code.md)<br />- [종속성 다이어그램: 지침](../modeling/layer-diagrams-guidelines.md)|
-|클래스 다이어그램(코드 기반)|특정 프로젝트에 대한 코드의 기존 클래스.<br /><br /> 코드에서 기존 클래스를 시각화 및 수정하려면 클래스 디자이너를 사용합니다.<br /><br /> [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)을 참조하세요.|
+|클래스 다이어그램(코드 기반)|특정 프로젝트에 대한 코드의 기존 클래스.<br /><br /> 코드에서 기존 클래스를 시각화 및 수정하려면 클래스 디자이너를 사용합니다.<br /><br /> [방법: 프로젝트에 클래스 다이어그램 추가(클래스 디자이너)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)를 참조하세요.|
 
 ### <a name="DefineClasses"></a> 형식 용어집 정의: 클래스 다이어그램
  클래스 다이어그램에서는 시스템에 참가하는 엔터티, 용어 또는 개념과 서로 간의 관계를 정의합니다. 예를 들어 개발 중에 이들 다이어그램을 사용하여 구현 언어나 스타일과 관계없이 각 클래스에 대한 특성 및 작업을 설명할 수 있습니다.
@@ -369,16 +369,15 @@ Lucerne 결제 시스템에 대한 다음 맵을 생성하여 클래스, 메서�
 
 - *연결* 은 두 분류자 간의 몇 가지 관계를 나타냅니다.
 
-    - *집합체* 는 분류자 간에 공유되는 소유권을 나타내는 연결입니다.
+  - *집합체* 는 분류자 간에 공유되는 소유권을 나타내는 연결입니다.
 
-    - *컴퍼지션* 은 분류자 간에 전체-부분 관계를 나타내는 연결입니다.
+  - *컴퍼지션* 은 분류자 간에 전체-부분 관계를 나타내는 연결입니다.
 
-     집합체 또는 컴퍼지션을 표시하려면 연결에서 **집합체** 속성을 설정합니다. **공유** 는 집합체를 표시하고 **복합** 은 컴퍼지션을 표시합니다.
+    집합체 또는 컴퍼지션을 표시하려면 연결에서 **집합체** 속성을 설정합니다. **공유** 는 집합체를 표시하고 **복합** 은 컴퍼지션을 표시합니다.
 
 - *종속성* 은 한 분류자의 정의를 변경하면 다른 분류자의 정의가 변경될 수 있음을 나타냅니다.
 
-- *일반화* 는 특정 분류자가 일반 분류자에서 정의 파트를 상속함을 나타냅니다. 
-  *인식*은 클래스가 인터페이스에서 제공된 작업 및 특성을 구현함을 나타냅니다.
+- *일반화* 는 특정 분류자가 일반 분류자에서 정의 파트를 상속함을 나타냅니다. *인식*은 클래스가 인터페이스에서 제공된 작업 및 특성을 구현함을 나타냅니다.
 
      이들 관계를 만들려면 **상속** 도구를 사용합니다. 인식이 *롤리팝*으로 표시될 수도 있습니다.
 
@@ -400,7 +399,7 @@ Lucerne 결제 시스템에 대한 다음 맵을 생성하여 클래스, 메서�
 #### <a name="relationship-to-other-diagrams"></a>다른 다이어그램과의 관계
 
 |**다이어그램**|**설명**|
-|-----------------|---------------------|
+|-|-|
 |종속성 다이어그램|시스템의 논리적 아키텍처를 클래스에 대한 관계로 설명합니다.<br /><br /> 종속성 유효성 검사를 사용 하 여 코드와 디자인의 일관성이 유지 되는지 확인 합니다.<br /><br /> 참조<br /><br /> - [코드에서 종속성 다이어그램 만들기](../modeling/create-layer-diagrams-from-your-code.md)<br />- [종속성 다이어그램: 참조](../modeling/layer-diagrams-reference.md)<br />- [종속성 다이어그램: 지침](../modeling/layer-diagrams-guidelines.md)<br />- [종속성 다이어그램을 사용 하 여 코드 유효성 검사](../modeling/validate-code-with-layer-diagrams.md)|
 |코드 맵|기존 코드에서 구성 및 관계를 시각화합니다.<br /><br /> 클래스, 해당 관계 및 해당 메서드를 식별하려면 해당 요소를 표시하는 코드 맵을 만듭니다.<br /><br /> 참조<br /><br /> - [솔루션 전체의 종속성 매핑](../modeling/map-dependencies-across-your-solutions.md)|
 
@@ -441,13 +440,13 @@ Lucerne 결제 시스템에 대한 다음 맵을 생성하여 클래스, 메서�
 
      레이어의 숫자는 해당 레이어에 연결된 아티팩트의 수를 나타냅니다. 이들 아티팩트는 네임스페이스, 프로젝트, 클래스, 메서드 등에 해당할 수 있습니다. 레이어의 아티팩트 수를 해석할 때 다음을 고려하세요.
 
-    - 레이어가 직접 연결되지 않은 다른 아티팩트를 포함하는 아티팩트에 연결된 경우 연결된 아티팩트만 숫자에 포함됩니다. 그러나 레이어 유효성 검사 중에는 직접 연결되지 않은 다른 아티팩트도 분석을 위해 포함됩니다.
+  - 레이어가 직접 연결되지 않은 다른 아티팩트를 포함하는 아티팩트에 연결된 경우 연결된 아티팩트만 숫자에 포함됩니다. 그러나 레이어 유효성 검사 중에는 직접 연결되지 않은 다른 아티팩트도 분석을 위해 포함됩니다.
 
-         예를 들어 레이어가 단일 네임스페이스에 연결된 경우 해당 네임스페이스에 클래스가 들어 있더라도 연결된 아티팩트의 수는 1입니다. 레이어가 네임스페이스의 각 클래스에도 연결되어 있으면 연결된 클래스가 숫자에 포함됩니다.
+       예를 들어 레이어가 단일 네임스페이스에 연결된 경우 해당 네임스페이스에 클래스가 들어 있더라도 연결된 아티팩트의 수는 1입니다. 레이어가 네임스페이스의 각 클래스에도 연결되어 있으면 연결된 클래스가 숫자에 포함됩니다.
 
-    - 레이어가 아티팩트에 연결된 다른 레이어를 포함하면 컨테이너 레이어가 이 아티팩트에도 연결됩니다. 단, 컨테이너 레이어의 숫자에는 이러한 아티팩트가 포함되지 않습니다.
+  - 레이어가 아티팩트에 연결된 다른 레이어를 포함하면 컨테이너 레이어가 이 아티팩트에도 연결됩니다. 단, 컨테이너 레이어의 숫자에는 이러한 아티팩트가 포함되지 않습니다.
 
-     계층에 연결 된 아티팩트를 확인 하려면 종속성을 마우스 오른쪽 단추로 클릭 하 고 클릭 **보기 링크** 열려는 **레이어 탐색기**합니다.
+    계층에 연결 된 아티팩트를 확인 하려면 종속성을 마우스 오른쪽 단추로 클릭 하 고 클릭 **보기 링크** 열려는 **레이어 탐색기**합니다.
 
 - *종속성* 은 한 레이어에서 다른 레이어의 기능을 사용할 수 있지만 반대의 경우는 불가능함을 나타냅니다. *양방향 종속성* 은 한 레이어에서 다른 레이어의 기능을 사용할 수 있고 반대 방향으로도 가능함을 나타냅니다.
 
@@ -474,18 +473,18 @@ Lucerne 결제 시스템에 대한 다음 맵을 생성하여 클래스, 메서�
 #### <a name="relationship-to-other-diagrams"></a>다른 다이어그램과의 관계
 
 |**다이어그램**|**설명**|
-|-----------------|---------------------|
+|-|-|
 |코드 맵|기존 코드에서 구성 및 관계를 시각화합니다.<br /><br /> 레이어를 만들려면 코드 맵을 생성하고 맵에서 항목을 잠재적인 레이어로 그룹화합니다. 맵에서 종속성 다이어그램에는 그룹을 끌어 옵니다.<br /><br /> 참조<br /><br /> - [솔루션 전체의 종속성 매핑](../modeling/map-dependencies-across-your-solutions.md)<br />- [찾아보기 및 코드 맵을 다시 정렬](../modeling/browse-and-rearrange-code-maps.md)|
 
 ## <a name="external-resources"></a>외부 리소스
 
 |**범주**|**Links**|
-|------------------|---------------|
-|**포럼**|- [Visual Studio 시각화 및 모델링 도구](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Visual Studio 시각화 및 모델링 SDK (DSL 도구)](http://go.microsoft.com/fwlink/?LinkId=184721)|
+|-|-|
+|**포럼**|- [Visual Studio 시각화 및 모델링 도구](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Visual Studio 시각화 및 모델링 SDK(DSL 도구)](http://go.microsoft.com/fwlink/?LinkId=184721)|
 
 ## <a name="see-also"></a>참고자료
 
 - [코드 시각화](../modeling/visualize-code.md)
 - [개발 프로세스에서 모델 사용](../modeling/use-models-in-your-development-process.md)
-- [Agile 개발에서 모델 사용](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
+- [Agile 개발에서 모델 사용](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
 - [개발하는 동안 시스템 유효성 검사](../modeling/validate-your-system-during-development.md)

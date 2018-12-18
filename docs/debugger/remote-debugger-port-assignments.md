@@ -10,25 +10,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 988731be4376e1d1e402b3722bed157cc9b655d2
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 1570468a56a4eaba80965d8feea669a0d3f3cb1c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151004"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905066"
 ---
 # <a name="remote-debugger-port-assignments"></a>원격 디버거 포트 할당
 Visual Studio 원격 디버거는 응용 프로그램 또는 백그라운드 서비스로 실행할 수 있습니다. 응용 프로그램으로 실행되는 경우 다음과 같이 기본적으로 할당되는 포트를 사용합니다.  
 
--   Visual Studio 2017: 4022
+- Visual Studio 2017: 4022
 
--   Visual Studio 2015: 4020  
+- Visual Studio 2015: 4020  
   
--   Visual Studio 2013: 4018  
+- Visual Studio 2013: 4018  
   
--   Visual Studio 2012: 4016  
+- Visual Studio 2012: 4016  
   
- 즉, 원격 디버거에 할당되는 포트 번호가 각 릴리스마다 2씩 증가합니다. 원하는 대로 다른 포트 번호를 설정할 수 있습니다. 이후 섹션에서 포트 번호를 설정하는 방법을 설명합니다.  
+  즉, 원격 디버거에 할당되는 포트 번호가 각 릴리스마다 2씩 증가합니다. 원하는 대로 다른 포트 번호를 설정할 수 있습니다. 이후 섹션에서 포트 번호를 설정하는 방법을 설명합니다.  
   
 ## <a name="the-remote-debugger-port-on-32-bit-operating-systems"></a>32비트 운영 체제의 원격 디버거 포트  
  TCP 4022를 사용 (Visual Studio 2017)에서 기본 포트 이며 모든 시나리오에 필요 합니다. 명령줄 또는 원격 디버거 창에서 구성할 수 있습니다.  
@@ -59,4 +59,4 @@ Visual Studio 원격 디버거는 응용 프로그램 또는 백그라운드 서
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.FileUpload|32400|32398|  
   
 ## <a name="see-also"></a>참고 항목  
- [원격 디버깅](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)

@@ -1,22 +1,23 @@
 ---
-title: Python 지원 설치
+title: Python 설치 지원
 description: 옵션 및 설치 위치를 포함하여 Visual Studio 2017, 2015, 2013, 2012 및 2010에서 PTVS(Visual Studio용 Python 도구)를 설치하는 방법입니다.
-ms.date: 06/26/2018
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9dbc56994f741f48dd97c9eba365c7228585c2a3
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: e306bffe8f2cd59332f367822cd90b54b44b7635
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499905"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063757"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Windows의 Visual Studio에서 Python 지원 설치 방법
 
@@ -25,8 +26,6 @@ Visual Studio용 Python 지원(Visual Studio용 Python 도구 또는 PTVS라고�
 - [Visual Studio 2017](#visual-studio-2017)
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 및 이전 버전](#visual-studio-2013-and-earlier)
-
-Visual Studio 2015 이전 버전의 경우 별도로 원하는 [Python 인터프리터도 설치](installing-python-interpreters.md)해야 합니다(Python 3.5 이전 버전, 3.6은 지원되지 않으며 **지원되지 않는 Python 버전 3.6**이라는 메시지가 표시됨). 같은 페이지는 Visual Studio 2017에 기존 Python 인터프리터 추가를 위한 지침도 포함합니다.
 
 설치 단계를 따른 후 Python 지원을 신속하게 테스트하려면 **Alt**+**I**를 누르고 `2+2`를 입력하여 **Python 대화형** 창을 엽니다. `4`의 출력이 표시되지 않으면 수행한 단계를 다시 확인합니다.
 
@@ -61,7 +60,7 @@ Visual Studio 2015 이전 버전의 경우 별도로 원하는 [Python 인터프
 
     | 옵션 | 설명 |
     | --- | --- |
-    | Python 배포 | 작업하려는 Python 2, Python 3, Anaconda2 및 Anaconda3의 32비트 및 64비트 변형의 조합을 선택합니다. 각각은 배포의 인터프리터, 런타임 및 라이브러리를 포함합니다. 특히 Anaconda는 다양한 미리 설치된 패키지를 포함하는 개방형 데이터 과학 플랫폼입니다. (배포를 추가하거나 제거하기 위해 언제든지 Visual Studio 설치 관리자로 돌아갈 수 있습니다.)  **참고**: Visual Studio 설치 관리자 외부에서 배포를 설치한 경우 여기서 해당 옵션을 선택할 필요가 없습니다. Visual Studio에서 기존 Python 설치를 자동으로 검색합니다. [Python 환경](managing-python-environments-in-visual-studio.md)을 참조하세요. |
+    | Python 배포 | 작업하려는 Python 2, Python 3, Anaconda2 및 Anaconda3의 32비트 및 64비트 변형의 조합을 선택합니다. 각각은 배포의 인터프리터, 런타임 및 라이브러리를 포함합니다. 특히 Anaconda는 다양한 미리 설치된 패키지를 포함하는 개방형 데이터 과학 플랫폼입니다. (배포를 추가하거나 제거하기 위해 언제든지 Visual Studio 설치 관리자로 돌아갈 수 있습니다.)  **참고**: Visual Studio 설치 관리자 외부에서 배포를 설치한 경우 여기서 해당 옵션을 선택할 필요가 없습니다. Visual Studio에서 기존 Python 설치를 자동으로 검색합니다. [Python 환경 창](managing-python-environments-in-visual-studio.md#the-python-environments-window)을 참조하세요. 또한 설치 관리자에 표시된 버전보다 최신 버전의 Python을 사용할 수 있는 경우 해당 버전을 별도로 설치할 수 있으며, Visual Studio에서 이를 검색합니다. |
     | **Cookiecutter 템플릿 지원** | Cookiecutter 그래픽 UI를 설치하여 템플릿을 검색하고, 템플릿 옵션을 입력하고, 프로젝트 및 파일을 만듭니다. [Cookiecutter 확장 사용](using-python-cookiecutter-templates.md)을 참조하세요. |
     | **Python 웹 지원** | Bottle, Flask 및 Django 프레임워크를 사용하는 프로젝트에 대한 템플릿과 함께 HTML, CSS 및 JavaScript 편집 지원을 포함하는 웹 개발용 도구를 설치합니다. [Python 웹 프로젝트 템플릿](python-web-application-project-templates.md)을 참조하세요. |
     | **Python IoT 지원** | Python을 사용하여 Windows IoT Core 개발을 지원합니다. |
@@ -84,7 +83,7 @@ Visual Studio에서 Python 설치 또는 실행 문제가 발생하는 경우 �
 - Visual Studio 설치 관리자의 [**복구**](../install/repair-visual-studio.md) 옵션을 사용합니다.
 - Windows의 **설정** > **앱 및 기능**을 통해 Python을 복구하거나 다시 설치합니다.
 
-**예제 오류**: 대화형 프로세스를 시작하지 못했습니다. System.ComponentModel.Win32Exception (0x80004005): Microsoft.PythonTools.Repl.PythonInteractiveEvaluator.d__43.MoveNext()에서 알 수 없는 오류(0xc0000135)입니다.
+**오류 예제**: 대화형 프로세스를 시작하지 못했습니다. System.ComponentModel.Win32Exception (0x80004005): Microsoft.PythonTools.Repl.PythonInteractiveEvaluator.d__43.MoveNext()에서 알 수 없는 오류(0xc0000135)입니다.
 
 ## <a name="visual-studio-2015"></a>Visual Studio 2015
 
@@ -96,7 +95,7 @@ Visual Studio에서 Python 설치 또는 실행 문제가 발생하는 경우 �
 
     ![Visual Studio 2015 설치 관리자의 PTVS 옵션](media/installation-vs2015.png)
 
-1. Visual Studio 설치가 완료되면 [원하는 Python 인터프리터를 설치](installing-python-interpreters.md)합니다. 이미 인터프리터가 설치되어 있고 Visual Studio에서 이를 자동으로 검색하지 않는 경우 [기존 환경 수동 식별](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)을 참조하세요.
+1. Visual Studio 설치가 완료되면 [원하는 Python 인터프리터를 설치](installing-python-interpreters.md)합니다. Visual Studio 2015는 Python 3.5 이하만 지원합니다. 이후 버전에서는 **지원되지 않는 Python 버전 3.6**과 같은 메시지를 생성합니다. 이미 인터프리터가 설치되어 있고 Visual Studio에서 이를 자동으로 검색하지 않는 경우 [기존 환경 수동 식별](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)을 참조하세요.
 
 ## <a name="visual-studio-2013-and-earlier"></a>Visual Studio 2013 및 이전 버전
 

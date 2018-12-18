@@ -9,16 +9,18 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: b0204a8e86d110fe30240b11b6323c31e79fb841
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 1cc8986c3101bb2048e0cd4ace739974031344ed
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382740"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894783"
 ---
 # <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>테스트를 위해 UWP 컨트롤에 대한 고유 자동화 속성 설정
 
 XAML 기반 UWP 응용 프로그램에 대한 코딩된 UI 테스트를 실행하려는 경우, 각 컨트롤을 고유한 자동화 속성으로 식별해야 합니다. 응용 프로그램에서 XAML 컨트롤의 형식에 따라 고유한 자동화 속성을 할당할 수 있습니다.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## <a name="static-xaml-definition"></a>정적 XAML 정의
 
@@ -43,7 +45,7 @@ XAML에서 **컨트롤**에 대한 콘텐츠 속성을 사용하여 **Automation
 XAML에서 컨트롤에 대해 명시적으로 **AutomationProperties.AutomationId**를 **ButtonX**로 설정합니다.
 
 ```xaml
-<Button AutomationProperties.AutomationId="ButtonX" Height="31" HorizontalAlignment="Left" Margin="23,26,0,0"  VerticalAlignment="Top" Width="140" Click="ButtonX_Click" />
+<Button AutomationProperties.AutomationId="ButtonX" Height="31" HorizontalAlignment="Left" Margin="23,26,0,0"  VerticalAlignment="Top" Width="140" Click="ButtonX_Click" />
 ```
 
 XAML에서 컨트롤에 대해 명시적으로 **AutomationProperties.Name**을 **ButtonY**로 설정합니다.

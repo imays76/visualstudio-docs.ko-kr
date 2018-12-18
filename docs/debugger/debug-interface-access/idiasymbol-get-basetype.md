@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 080c8872682f9c255eda77449cb24dd703cd9583
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f7cb7b8a003f3aea5d821d5ffb9f312d069edb99
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461768"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901790"
 ---
 # <a name="idiasymbolgetbasetype"></a>IDiaSymbol::get_baseType
-이 기호에 대 한 기본 형식을 검색*합니다.*  
+이 기호에 대 한 기본 형식을 검색<em>합니다.</em>  
   
 ## <a name="syntax"></a>구문  
   
@@ -34,16 +34,16 @@ HRESULT get_baseType (
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out] 값을 반환 된 [BasicType 열거형](../../debugger/debug-interface-access/basictype.md) 기호의 기본 유형을 지정 하는 열거형입니다.  
+ [out] 값을 반환 합니다 [BasicType 열거형](../../debugger/debug-interface-access/basictype.md) 기호의 기본 형식을 지정 하는 열거형입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
+ 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
   
 > [!NOTE]
->  반환 값이 `S_FALSE` 속성이 해당 기호를 사용할 수 있음을 의미 합니다.  
+>  반환 값이 `S_FALSE` 속성 기호에 사용할 수 없다는 것을 의미 합니다.  
   
 ## <a name="remarks"></a>설명  
- 기호 형식을 있으며 기본 형식에 대 한 형식을 반환 하 심문의 차이 먼저 기호에 대 한 기본 유형이 확인할 수 있습니다. 참고 일부 기호는 기본 형식을 사용할 수 없습니다-예: 구조 이름입니다.  
+ 기호에 대 한 기본 형식은 먼저 기호의 형식을 가져오고 다음 기본 형식에 대 한 형식을 반환 하는 조회 하 여 확인할 수 있습니다. 참고 일부 기호는 기본 형식에 없을 수 있습니다-예를 들어 구조 이름입니다.  
   
 ## <a name="example"></a>예제  
   

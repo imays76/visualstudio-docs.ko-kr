@@ -12,14 +12,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b0357d6fc0c0cbfdd59c7718d58181e4d58b3a3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a908b197e05b1795534dd00edc2c1ff9597f2d90
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917763"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876206"
 ---
 # <a name="ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays"></a>CA2144: 투명 코드는 바이트 배열에서 어셈블리를 로드해서는 안 됩니다.
+
 |||
 |-|-|
 |TypeName|TransparentMethodsShouldNotLoadAssembliesFromByteArrays|
@@ -28,24 +29,24 @@ ms.locfileid: "31917763"
 |변경 수준|주요 변경|
 
 ## <a name="cause"></a>원인
- 투명 메서드는 다음 방법 중 하나를 사용 하는 바이트 배열에서 어셈블리를 로드:
+ 다음 방법 중 하나를 사용 하는 바이트 배열에서 어셈블리를 로드 하는 투명 한 메서드:
 
--   <xref:System.Reflection.Assembly.Load%2A>
+- <xref:System.Reflection.Assembly.Load%2A>
 
--   <xref:System.Reflection.Assembly.Load%2A>
+- <xref:System.Reflection.Assembly.Load%2A>
 
--   <xref:System.Reflection.Assembly.Load%2A>
+- <xref:System.Reflection.Assembly.Load%2A>
 
 ## <a name="rule-description"></a>규칙 설명
- 투명 코드는 보안에 중요한 동작을 수행할 수 없기 때문에 투명 코드의 보안 검토는 중요 코드에 대한 보안 검토만큼 완벽하지 않습니다. 바이트 배열에서 로드된 어셈블리는 투명 코드에서 발견되지 않을 수 있으며 해당 바이트 배열은 감사할 필요가 없는 중요하거나 특히 안전에 중요한 코드를 포함할 수 있습니다. 따라서 투명 코드는 바이트 배열에서 어셈블리를 로드 해야 합니다.
+ 투명 코드는 보안에 중요한 동작을 수행할 수 없기 때문에 투명 코드의 보안 검토는 중요 코드에 대한 보안 검토만큼 완벽하지 않습니다. 바이트 배열에서 로드된 어셈블리는 투명 코드에서 발견되지 않을 수 있으며 해당 바이트 배열은 감사할 필요가 없는 중요하거나 특히 안전에 중요한 코드를 포함할 수 있습니다. 따라서 투명 코드는 바이트 배열에서 어셈블리를 로드 하지 않습니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이 규칙 위반 문제를 해결 하려면 사용 하 여 어셈블리를 로드 하는 메서드를 표시는 <xref:System.Security.SecurityCriticalAttribute> 또는 <xref:System.Security.SecuritySafeCriticalAttribute> 특성입니다.
+ 이 규칙 위반 문제를 해결 하려면 사용 하 여 어셈블리를 로드 하 고 있는 메서드를 표시 합니다 <xref:System.Security.SecurityCriticalAttribute> 또는 <xref:System.Security.SecuritySafeCriticalAttribute> 특성입니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
  이 규칙에서는 경고를 표시해야 합니다.
 
 ## <a name="example"></a>예제
- 투명 메서드는 바이트 배열에서 어셈블리를 로드 하기 때문에 다음 코드는 규칙은 됩니다.
+ 규칙은 투명 메서드는 바이트 배열에서 어셈블리를 로드 하기 때문에 다음 코드에서 발생 합니다.
 
  [!code-csharp[FxCop.Security.CA2144.TransparentMethodsShouldNotLoadAssembliesFromByteArrays#1](../code-quality/codesnippet/CSharp/ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays_1.cs)]

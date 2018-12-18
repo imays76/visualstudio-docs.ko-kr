@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 4a08c957e03dd2df80d9b3b770e569ba1e64104f
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
-ms.translationtype: MT
+ms.openlocfilehash: 1a13488f632e3cf1f244449b2a7a4dbfd7869428
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38780990"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826510"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>원격 IIS 컴퓨터의 원격 디버그 ASP.NET
 IIS에 배포 된 ASP.NET 응용 프로그램을 디버깅 하려면 설치 하 고 앱을 배포할 컴퓨터에서 원격 도구를 실행 한 다음 Visual Studio에서 실행 중인 앱에 연결 합니다.
@@ -47,7 +47,7 @@ IIS에 배포 된 ASP.NET 응용 프로그램을 디버깅 하려면 설치 하 
 
 ## <a name="create-the-aspnet-452-application-on-the-visual-studio-computer"></a>ASP.NET 4.5.2를 만들려면 Visual Studio 컴퓨터에서 응용 프로그램
   
-1. 새 MVC ASP.NET 응용 프로그램을 만듭니다. (**파일 > 새로 만들기 > 프로젝트**을 선택한 후 * * Visual C# > 웹 > ASP.NET 웹 응용 프로그램입니다. **ASP.NET 4.5.2** 템플릿 섹션에서 **MVC**를 선택합니다. 했는지 **Docker 지원 활성화** 선택 하지 않으면 하 고 **인증** 로 설정 되어 **인증 안 함**합니다. 프로젝트 이름을 **MyASPApp**.)
+1. 새 MVC ASP.NET 응용 프로그램을 만듭니다. (**파일 > 새로 만들기 > 프로젝트**을 선택한 후 <strong>시각적 C# > 웹 > ASP.NET 웹 응용 프로그램입니다. * * ASP.NET 4.5.2</strong> 템플릿 섹션 **MVC**합니다. 했는지 **Docker 지원 활성화** 선택 하지 않으면 하 고 **인증** 로 설정 되어 **인증 안 함**합니다. 프로젝트 이름을 **MyASPApp**.)
 
 2. HomeController.cs 파일을 열고 `About()` 메서드에 중단점을 설정합니다.
 
@@ -166,12 +166,7 @@ RoboCopy, Powershell을 사용 하 여 IIS에 응용 프로그램을 복사 하�
 
 이 자습서에서는 Visual Studio 2017을 사용 하는 것입니다.
 
-원격 디버거 다운로드 페이지를 여는 데 문제가 있으면 확인할 [파일 다운로드를 차단 해제](../debugger/remote-debugging.md#unblock_msvsmon) 도움말에 대 한 합니다.
-
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
-
-> [!TIP]
-> 일부 시나리오에서는 파일 공유에서 원격 디버거를 실행 하는 것이 가장 효율적일 수 있습니다. 자세한 내용은 [파일 공유에서 원격 디버거 실행](../debugger/remote-debugging.md#fileshare_msvsmon)합니다.
   
 ## <a name="BKMK_setup"></a> Windows Server에서 원격 디버거 설정
 

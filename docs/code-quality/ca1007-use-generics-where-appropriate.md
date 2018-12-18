@@ -14,16 +14,20 @@ ms.assetid: eab780ea-3b1f-4d32-b15a-5d48da2df46b
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 6379a811da7c62be59a322ee68ad9f030d9693d9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d3e03c1028dc310748aff7c8263ce75ace9985be
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31899719"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551739"
 ---
 # <a name="ca1007-use-generics-where-appropriate"></a>CA1007: 적합한 제네릭을 사용하십시오.
+
 |||
 |-|-|
 |TypeName|UseGenericsWhereAppropriate|
@@ -32,19 +36,19 @@ ms.locfileid: "31899719"
 |변경 수준|주요 변경|
 
 ## <a name="cause"></a>원인
- 형식의 참조 매개 변수를 포함 하는 외부에서 볼 수 메서드 <xref:System.Object?displayProperty=fullName>, 포함 된 어셈블리 대상을 [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]합니다.
+ 형식의 참조 매개 변수를 포함 하는 외부에 표시 되는 메서드 <xref:System.Object?displayProperty=fullName>, 및 포함 된 어셈블리 대상을 [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]합니다.
 
 ## <a name="rule-description"></a>규칙 설명
- 참조 매개 변수는 매개 변수를 사용 하 여 한정 되는 `ref` (`ByRef` 에 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) 키워드입니다. 참조 매개 변수에 대해 제공 되는 인수 형식을 참조 매개 변수 형식과 일치 해야 합니다. 참조 매개 변수 형식에서 파생 된 형식을 사용 하려면 먼저 유형 캐스팅 하 고 참조 매개 변수 형식의 변수에 할당 해야 합니다. 제약 조건 형식을 참조 매개 변수 형식으로 먼저 캐스팅 하지 않고 메서드에 전달할 수에 따라 모든 형식을 허용 하는 제네릭 메서드를 사용 합니다.
+ 참조 매개 변수는 사용 하 여 수정 된 매개 변수를 `ref` (`ByRef` 에서 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) 키워드입니다. 참조 매개 변수에 제공 되는 인수 형식을 참조 매개 변수 형식과 정확히 일치 해야 합니다. 참조 매개 변수 형식에서 파생 된 형식을 사용 하려면 먼저 형식 캐스팅 하 고 참조 매개 변수 형식의 변수에 할당 해야 합니다. 제약 조건 참조 매개 변수 형식 형식으로 먼저 캐스트 하지 않고 메서드에 전달할 수에 따라 모든 형식을 허용 하는 제네릭 메서드를 사용 합니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이 규칙 위반 문제를 해결 하려면 메서드 제네릭으로 찾아 바꿉니다는 <xref:System.Object> 형식 매개 변수를 사용 하 여 매개 변수입니다.
+ 이 규칙 위반 문제를 해결 하려면 제네릭 메서드를 확인 하 고 대체 된 <xref:System.Object> 형식 매개 변수를 사용 하 여 매개 변수입니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
  이 규칙에서는 경고를 표시해야 합니다.
 
 ## <a name="example"></a>예제
- 다음 예제에서는 특수 및 제네릭 메서드로 구현 되는 범용 스왑 루틴을 보여 줍니다. Note 제네릭이 아닌 메서드에 비해 제네릭 메서드를 사용 하 여 문자열 얼마나 효율적으로 바뀝니다.
+ 다음 예제에서는 제네릭 및 제네릭이 아닌 메서드로 구현 되는 범용 교환 루틴을 보여 줍니다. 제네릭이 아닌 메서드를 비교 하는 제네릭 메서드를 사용 하 여 문자열을 바꿀 수 있음을 얼마나 효율적으로 note 합니다.
 
  [!code-vb[FxCop.Design.UseGenerics#1](../code-quality/codesnippet/VisualBasic/ca1007-use-generics-where-appropriate_1.vb)]
  [!code-csharp[FxCop.Design.UseGenerics#1](../code-quality/codesnippet/CSharp/ca1007-use-generics-where-appropriate_1.cs)]
@@ -64,5 +68,5 @@ ms.locfileid: "31899719"
 
  [CA1003: 제네릭 이벤트 처리기 인스턴스를 사용하십시오.](../code-quality/ca1003-use-generic-event-handler-instances.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
  [제네릭](/dotnet/csharp/programming-guide/generics/index)

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fbed7c0ed53bed792baf4eefa9d1337127df88f3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 214bf72d6310206b5fe85de40ef65b4e2442c46b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115693"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935726"
 ---
 # <a name="idebugprocess2getinfo"></a>IDebugProcess2::GetInfo
 프로세스에 대 한 설명을 가져옵니다.  
@@ -43,13 +43,13 @@ int GetInfo(
   
 #### <a name="parameters"></a>매개 변수  
  `Fields`  
- [in] 값의 조합은 [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) 의 필드를 지정 하는 열거형은 `pProcessInfo` 을 입력 매개 변수는 합니다.  
+ [in] 값의 조합 합니다 [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) 의 필드를 지정 하는 열거형을 `pProcessInfo` 입력할 매개 변수는 합니다.  
   
  `pProcessInfo`  
- [out] A [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) 는 프로세스에 대 한 설명을 포함 하는 구조입니다.  
+ [out] A [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) 구조는이 프로세스에 대 한 설명을 채워집니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   

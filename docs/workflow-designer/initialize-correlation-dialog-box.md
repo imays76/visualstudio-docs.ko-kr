@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c3525eb8964ed603e40ba74f0c06b17b494390c7
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: edfdef1c1f946e2c5f677d0ff1578a40ea7bcd8f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755842"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906236"
 ---
 # <a name="initialize-correlation-dialog-box"></a>상관 관계 초기화 대화 상자
 
@@ -26,7 +26,7 @@ ms.locfileid: "36755842"
 다음 표에 사용자 인터페이스 (UI) 요소에는 **상관 관계 초기화** 대화 상자:
 
 |UI 요소|설명|
-|----------------|-----------------|
+|-|-----------------|
 |**상관 관계**|초기화할 상관 관계의 <xref:System.ServiceModel.Activities.CorrelationHandle>입니다.|
 |**초기화**|초기화할 데이터가 포함된 키/값 쌍입니다. 이 값에 해당 하는 <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> 속성입니다. 유효한 키/값 쌍의 예로 "OrderID" orderid 변수의 쌍을 이룹니다 라는 키입니다.|
 

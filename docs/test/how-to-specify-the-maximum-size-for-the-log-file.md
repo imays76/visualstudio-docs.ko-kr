@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 부하 테스트의 로그 파일 크기
+title: 부하 테스트의 로그 파일 크기
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 29329cb1403745b80d68670f5316ce570582d72c
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: eb77c9c037a46ad1195482abfddd102f50bcd1ae
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379399"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067277"
 ---
 # <a name="how-to-specify-the-maximum-size-for-the-log-file-for-load-tests"></a>방법: 부하 테스트의 로그 파일에 대한 최대 크기 지정
 
 기본적으로 부하 테스트에 사용되는 로그 파일의 최대 크기는 20MB로 설정되어 있습니다. 컨트롤러 서비스와 연결된 구성 파일을 편집하여 이 값을 변경할 수 있습니다.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="specify-the-maximum-log-file-size-for-load-test"></a>부하 테스트의 최대 로그 파일 크기 지정
 

@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 407936d68310a675aebe1c7ea712f46aea45e807
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 8d68347f2b6b9f538555e05c91b15dcb045b46d6
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119948"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295984"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>연습: SharePoint 프로젝트 확장명 만들기
   이 연습에는 SharePoint 프로젝트 확장을 만드는 방법을 보여 줍니다. 프로젝트를 추가, 삭제 또는 이름이 같은 프로젝트 수준 이벤트에 응답 하는 프로젝트 확장명을 사용할 수 있습니다. 사용자 지정 속성을 추가 하거나 속성 값이 변경 될 때 응답할 수도 있습니다. 프로젝트 항목 확장 달리 프로젝트 확장명을 특정 SharePoint 프로젝트 형식과 사용 하 여 연결할 수 없습니다. 확장 로드에서 모든 종류의 SharePoint 프로젝트를 열면 프로젝트 확장을 만들면 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]합니다.  
@@ -46,18 +46,18 @@ ms.locfileid: "37119948"
 ## <a name="prerequisites"></a>전제 조건  
  이 연습을 완료 하려면 개발 컴퓨터의 다음 구성 요소가 필요 합니다.  
   
--   지원 되는 버전 [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)], SharePoint 및 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]합니다. 자세한 내용은 [SharePoint 솔루션 개발을 위한 요구 사항](../sharepoint/requirements-for-developing-sharepoint-solutions.md)합니다.  
+-   지원 되는 버전 [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)], SharePoint 및 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]합니다.  
   
 -   [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)] 이 연습에서는 합니다 **VSIX 프로젝트** 에서 템플릿을 [!INCLUDE[TLA2#tla_sdk](../sharepoint/includes/tla2sharptla-sdk-md.md)] 프로젝트 속성 확장 프로그램을 배포 하려면 VSIX 패키지를 만듭니다. 자세한 내용은 [Visual Studio에서 SharePoint 도구 확장](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)합니다.  
   
 ## <a name="create-the-projects"></a>프로젝트 만들기
  이 연습을 완료 하려면 두 개의 프로젝트를 만들어야 합니다.  
   
--   프로젝트 확장을 배포 하려면 VSIX 패키지를 만들려면 VSIX 프로젝트입니다.  
+- 프로젝트 확장을 배포 하려면 VSIX 패키지를 만들려면 VSIX 프로젝트입니다.  
   
--   프로젝트 확장을 구현 하는 클래스 라이브러리 프로젝트.  
+- 프로젝트 확장을 구현 하는 클래스 라이브러리 프로젝트.  
   
- 프로젝트를 만들어 연습을 시작 합니다.  
+  프로젝트를 만들어 연습을 시작 합니다.  
   
 #### <a name="to-create-the-vsix-project"></a>VSIX 프로젝트를 만들려면  
   
@@ -131,7 +131,7 @@ ms.locfileid: "37119948"
   
 1.  **솔루션 탐색기**를 source.extension.vsixmanifest 파일에 대 한 바로 가기 메뉴를 열고 선택한 합니다 **엽니다** 단추입니다.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 매니페스트 디자이너에서 파일을 엽니다. 에 표시 되는 정보는 **메타 데이터** 탭에도 표시 됩니다는 **확장 및 업데이트**합니다. 모든 VSIX 패키지 extension.vsixmanifest 파일을 필요합니다. 이 파일에 대 한 자세한 내용은 참조 하세요. [VSIX 확장 스키마 1.0 참조](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)합니다.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 매니페스트 디자이너에서 파일을 엽니다. 에 표시 되는 정보는 **메타 데이터** 탭에도 표시 됩니다는 **확장 및 업데이트**합니다. 모든 VSIX 패키지 extension.vsixmanifest 파일을 필요합니다. 이 파일에 대 한 자세한 내용은 참조 하세요. [VSIX 확장 스키마 1.0 참조](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)합니다.  
   
 2.  에 **Product Name** 상자에 입력 합니다 **사용자 지정 프로젝트 속성**합니다.  
   
@@ -146,7 +146,7 @@ ms.locfileid: "37119948"
 6.  에 **형식** 목록에서 선택 **Microsoft.VisualStudio.MefComponent**합니다.  
   
     > [!NOTE]  
-    >  이 값에 해당 하는 `MEFComponent` extension.vsixmanifest 파일의 요소입니다. 이 요소는 VSIX 패키지 확장 어셈블리의 이름을 지정합니다. 자세한 내용은 [MEFComponent 요소 (VSX 스키마)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551)합니다.  
+    >  이 값에 해당 하는 `MEFComponent` extension.vsixmanifest 파일의 요소입니다. 이 요소는 VSIX 패키지 확장 어셈블리의 이름을 지정합니다. 자세한 내용은 [MEFComponent 요소 (VSX 스키마)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))합니다.  
   
 7.  에 **원본** 목록에서 선택 합니다 **현재 솔루션의 프로젝트** 옵션 단추입니다.  
   

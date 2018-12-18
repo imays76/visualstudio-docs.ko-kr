@@ -1,26 +1,27 @@
 ---
 title: 프로젝트에 대한 Python 인터프리터 및 환경 선택
-description: Visual Studio 프로젝트와 가상 환경 만들기에 대한 지침에 사용하도록 Python 환경을 할당하는 방법입니다.
-ms.date: 06/27/2018
+description: 특정 프로젝트에 적용할 Python 환경(Anaconda 및 가상 환경 포함)을 구체적으로 선택할 수 있습니다.
+ms.date: 11/08/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 63fa8e83fd94be5307541ca7e070d47c8fa04488
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: c7ed10b25c17958fffbe0abab09973515fb43958
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586380"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062537"
 ---
-# <a name="how-to-assign-which-python-environment-is-used-for-a-project"></a>프로젝트에 사용되는 Python 환경을 할당하는 방법
+# <a name="how-to-select-a-python-environment-for-a-project"></a>프로젝트에 대한 Python 인터프리터 선택하는 방법
 
-Python 프로젝트의 모든 코드는 특정 환경의 컨텍스트 내에서 실행됩니다. Visual Studio는 디버깅, 가져오기 및 멤버 완성, 구문 검사 및 환경이 필요한 기타 모든 작업에도 해당 환경을 사용합니다.
+Python 프로젝트의 모든 코드는 글로벌 Python 환경, Anaconda 환경, 가상 환경, conda 환경과 같은 특정 환경의 컨텍스트 내에서 실행됩니다. Visual Studio는 디버깅, 가져오기 및 멤버 완성, 구문 검사, Python 버전 및 설치된 패키지 모음에 특정된 언어 서비스가 필요한 기타 모든 작업에도 해당 환경을 사용합니다.
 
 Visual Studio의 모든 새로운 Python 프로젝트는 초기에 **솔루션 탐색기**의 **Python 환경** 노드에 표시되는 기본 전역 환경을 사용하도록 구성됩니다.
 
@@ -42,7 +43,7 @@ Visual Studio의 모든 새로운 Python 프로젝트는 초기에 **솔루션 �
 | --- | --- |
 | **가상 환경 추가** | 프로젝트에 새 가상 환경을 만드는 프로세스를 시작합니다. [가상 환경 만들기](#create-a-virtual-environment)를 참조하세요. |
 | **기존 가상 환경 추가** | 가상 환경을 포함하는 폴더를 선택하고 **Python 환경** 아래에 있는 목록에 추가하라는 메시지가 표시되지만 활성화하지는 않습니다. [기존 가상 환경 활성화](#activate-an-existing-virtual-environment)를 참조하세요. |
-| **Conda 환경 만들기** | 환경에 대한 이름을 입력하고 해당 기본 인터프리터를 지정하는 **Python 환경** *창*으로 전환합니다. |
+| **Conda 환경 만들기** | 환경에 대한 이름을 입력하고 해당 기본 인터프리터를 지정하는 **Python 환경** *창*으로 전환합니다. [Conda 환경](managing-python-environments-in-visual-studio.md#conda-environments)을 참조하세요. |
 
 ## <a name="use-virtual-environments"></a>가상 환경 사용
 
@@ -50,7 +51,7 @@ Visual Studio의 모든 새로운 Python 프로젝트는 초기에 **솔루션 �
 
 가상 환경을 사용하는 이점은 시간이 지남에 따라 프로젝트를 개발하는 경우 가상 환경이 프로젝트의 정확한 종속성을 항상 반영한다는 점입니다. 반면에 공유 전역 환경에는 프로젝트에서 사용하는지 여부에 관계없이 여러 개의 라이브러리가 포함됩니다. 가상 환경에서 쉽게 *requirements.txt* 파일을 만들 수 있습니다. 그런 다음, 다른 개발 또는 프로덕션 컴퓨터에서 해당 종속성을 다시 설치하는 데 사용합니다. 자세한 내용은 [requirements.txt를 사용하여 필수 패키지 관리](managing-required-packages-with-requirements-txt.md)를 참조하세요.
 
-Visual Studio에서 *requirements.txt* 파일이 포함된 프로젝트를 여는 경우 가상 환경을 다시 만드는 옵션이 자동으로 제공됩니다. Azure App Service와 같이 Visual Studio가 설치되지 않은 컴퓨터에서 `pip install -r requirements.txt`를 사용하여 패키지를 복원할 수 있습니다(이 프로세스는 [Azure App Service에서 Python 관리](managing-python-on-azure-app-service.md)에 설명됨).
+Visual Studio에서 *requirements.txt* 파일이 포함된 프로젝트를 여는 경우 가상 환경을 다시 만드는 옵션이 자동으로 제공됩니다. Visual Studio가 설치되지 않은 컴퓨터에서 `pip install -r requirements.txt`를 사용하여 패키지를 복원할 수 있습니다.
 
 가상 환경에 하드 코드된 기본 인터프리터 경로가 포함되어 있고, *requirements.txt*를 사용하여 환경을 다시 만들 수 있기 때문에 일반적으로 소스 제어에서 전체 가상 환경 폴더를 생략합니다.
 
@@ -114,7 +115,7 @@ Visual Studio 내에서 패키지(및 종속성)는 [PyPI(Python 패키지 인�
 또한 Visual Studio에서는 현재 conda 환경에 패키지를 설치하기 위한 `conda` 사용을 지원하지 않음에 유의하세요. 대신 명령줄에서 `conda`를 사용합니다.
 
 > [!Tip]
-> pip에서 패키지 설치에 실패하는 일반적인 상황은 패키지가 *\*.pyd* 파일에 기본 구성 요소에 대한 소스 코드를 포함하는 경우입니다. 필요한 Visual Studio 버전이 설치되어 있지 않으면 pip에서 해당 구성 요소를 컴파일할 수 없습니다. 이 경우 표시되는 오류 메시지는 **오류: vcvarsall.bat를 찾을 수 없음**입니다. 대체로 `easy_install`은 미리 컴파일된 이진 파일을 다운로드할 수 있으며, [http://aka.ms/VCPython27](http://aka.ms/VCPython27)에서 이전 버전의 Python에 적합한 컴파일러를 다운로드할 수 있습니다. 자세한 내용은 Python 도구 팀 블로그에서 ["vcvarsallbat을 찾을 수 없는" 어려움을 해결하는 방법](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/11/unable-to-find-vcvarsall-bat/)(영문)을 참조하세요.
+> pip에서 패키지 설치에 실패하는 일반적인 상황은 패키지가 *\*.pyd* 파일에 기본 구성 요소에 대한 소스 코드를 포함하는 경우입니다. 필요한 Visual Studio 버전이 설치되어 있지 않으면 pip에서 해당 구성 요소를 컴파일할 수 없습니다. 이 경우 표시되는 오류 메시지는 **오류: vcvarsall.bat를 찾을 수 없음**입니다. 대체로 `easy_install`은 미리 컴파일된 이진 파일을 다운로드할 수 있으며, [https://aka.ms/VCPython27](https://aka.ms/VCPython27)에서 이전 버전의 Python에 적합한 컴파일러를 다운로드할 수 있습니다. 자세한 내용은 Python 도구 팀 블로그에서 ["vcvarsallbat을 찾을 수 없는" 어려움을 해결하는 방법](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/11/unable-to-find-vcvarsall-bat/)(영문)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 

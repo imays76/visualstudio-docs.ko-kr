@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ad01352b9b5376d1a55946a7c5da9029b52fd064
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 935c1ebfb2efd888de5b336eafab4059fa6cd443
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978413"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903558"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>*.runsettings* 파일을 사용하여 단위 테스트 구성
 
@@ -24,7 +24,7 @@ ms.locfileid: "38978413"
 
 ## <a name="specify-a-run-settings-file"></a>실행 설정 파일 지정
 
-실행 설정 파일은 VSTS(Visual Studio Team Services) 또는 TFS(Team Foundation Server)를 사용하여 [워크플로 빌드](/vsts/pipelines/test/getting-started-with-continuous-testing?view=vsts) 또는 IDE의 [명령줄](vstest-console-options.md)에서 실행되는 테스트를 구성하는 데 사용할 수 있습니다.
+실행 설정 파일은 Azure Test Plans 또는 TFS(Team Foundation Server)를 사용하여 [워크플로 빌드](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts) 또는 IDE의 [명령줄](vstest-console-options.md)에서 실행되는 테스트를 구성하는 데 사용할 수 있습니다.
 
 ### <a name="specify-a-run-settings-file-in-the-ide"></a>IDE에서 실행 설정 파일 지정
 
@@ -114,8 +114,8 @@ ms.locfileid: "38978413"
         </Configuration>
       </DataCollector>
 
-      <!--Video data collector is only available with Visual Studio 2017 version 15.5 and higher -->
       <DataCollector uri="datacollector://microsoft/VideoRecorder/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder.VideoRecorderDataCollector, Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Screen and Voice Recorder">
+        <!--Video data collector is only available with Visual Studio 2017 version 15.5 and higher -->
       </DataCollector>
 
     </DataCollectors>
@@ -137,7 +137,7 @@ ms.locfileid: "38978413"
     <DeleteDeploymentDirectoryAfterTestRunIsComplete>False</DeleteDeploymentDirectoryAfterTestRunIsComplete>
     <DeploymentEnabled>False</DeploymentEnabled>
     <AssemblyResolution>
-      <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/>
+      <Directory path="D:\myfolder\bin\" includeSubDirectories="false"/>
     </AssemblyResolution>
   </MSTest>
 
@@ -164,7 +164,7 @@ ms.locfileid: "38978413"
 **RunConfiguration** 요소는 다음과 같은 요소를 포함할 수 있습니다.
 
 |노드|기본|값|
-|----------|-------------|------------|
+|-|-|-|
 |**ResultsDirectory**||테스트 결과가 배치될 디렉터리입니다.|
 |**TargetFrameworkVersion**|Framework40|Framework35, Framework40, Framework45<br /><br />이 설정은 테스트를 검색하고 실행하는 데 사용할 단위 테스트 프레임워크의 버전을 지정합니다. 이 버전은 단위 테스트 프로젝트의 빌드 속성에 지정하는 .NET 플랫폼의 버전과 다를 수 있습니다.|
 |**TargetPlatform**|x86|x86, x64|
@@ -219,6 +219,7 @@ TestRunParameters는 런타임에 테스트에서 사용할 수 있는 변수 �
 public void HomePageTest()
 {
     string appURL = TestContext.Properties["webAppUrl"];
+}
 ```
 
 TestRunParameters를 사용하려면 개인 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> 필드 및 공용 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> 속성을 테스트 클래스에 추가합니다.
@@ -234,13 +235,13 @@ TestRunParameters를 사용하려면 개인 <xref:Microsoft.VisualStudio.TestToo
     <AssemblyResolution>
       <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/>
     </AssemblyResolution>
-</MSTest
+</MSTest>
 ```
 
 이러한 설정은 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> 특성을 가진 테스트 메서드를 실행하는 테스트 어댑터에 따라 달라집니다.
 
 |구성|기본|값|
-|-------------------|-------------|------------|
+|-|-|-|
 |**ForcedLegacyMode**|False|Visual Studio 2012에서 MSTest 어댑터는 더욱 빠르고 확장성 가능하도록 최적화되었습니다. 테스트가 실행되는 순서와 같은 일부 동작은 이전 버전 Visual Studio처럼 정확하지 않을 수 있습니다. 이전 테스트 어댑터를 사용하려면 이 값을 **true**로 설정합니다.<br /><br />예를 들어, 단위 테스트에 대해 *app.config* 파일을 지정한 경우 이 설정을 사용할 수 있습니다.<br /><br />새 어댑터를 사용할 수 있도록 테스트를 리팩터링하는 것이 좋습니다.|
 |**IgnoreTestImpact**|False|테스트 영향 기능은 MSTest 또는 Microsoft Test Manager에서 실행할 때 최근 변경 내용의 영향을 받는 테스트의 우선 순위를 지정합니다. 이 설정에서는 이 기능이 비활성화됩니다. 자세한 내용은 [이전 빌드 이후 실행해야 할 테스트](https://msdn.microsoft.com/library/dd286589)를 참조하세요.|
 |**SettingsFile**||여기에서 MSTest 어댑터와 함께 사용할 테스트 설정 파일을 지정할 수 있습니다. **테스트** > **테스트 설정** > **테스트 설정 파일 선택**을 선택하여 테스트 설정 파일을 지정할 수도 있습니다.<br /><br />이 값을 지정하면 **ForcedlegacyMode** 도 **true**로 설정해야 합니다.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
@@ -255,4 +256,4 @@ TestRunParameters를 사용하려면 개인 <xref:Microsoft.VisualStudio.TestToo
 ## <a name="see-also"></a>참고 항목
 
 - [코드 검사 분석 사용자 지정](../test/customizing-code-coverage-analysis.md)
-- [Visual Studio 테스트 작업(VSTS)](/vsts/pipelines/tasks/test/vstest?view=vsts)
+- [Visual Studio 테스트 작업(Azure Test Plans)](/azure/devops/pipelines/tasks/test/vstest?view=vsts)

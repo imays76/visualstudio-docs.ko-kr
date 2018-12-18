@@ -9,92 +9,93 @@ manager: douge
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: 973147bd497f9202227ab36a1beb948c51c7c698
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: b2225ec5db308b290e932cb9d29d1c50e32d4608
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381988"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820267"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Microsoft.VisualStudio.TestTools.CppUnitTestFramework API 참조
 
 이 항목에서는 `Microsoft::VisualStudio::CppUnitTestFramework` 네임스페이스의 public 구성원 목록을 제공합니다. 이 API를 사용하여 Microsoft Native Unit Test Framework를 기반으로 C++ 단위 테스트를 작성합니다. 이 항목의 마지막에는 [사용 예제](#example)가 있습니다.
 
- 헤더 파일은 *VisualStudio2012[x86]InstallFolder***\VC\UnitTest\include** 폴더에 있습니다.
+ 헤더 파일은 _VisualStudio2012[x86]InstallFolder_**\VC\UnitTest\include** 폴더에 있습니다.
 
- lib 파일은 *VisualStudio2012[x86]InstallFolder***\VC\UnitTest\lib** 폴더에 있습니다.
+ lib 파일은 _VisualStudio2012[x86]InstallFolder_**\VC\UnitTest\lib** 폴더에 있습니다.
 
 헤더 및 라이브러리 경로는 기본 테스트 프로젝트에서 자동으로 구성됩니다.
 
 ##  <a name="In_this_topic"></a> 항목 내용
  [CppUnitTest.h](#cppUnitTest_h)
 
--   [테스트 클래스와 메서드 만들기](#create_test_classes_and_methods)
+- [테스트 클래스와 메서드 만들기](#create_test_classes_and_methods)
 
--   [초기화 및 정리](#Initialize_and_cleanup)
+- [초기화 및 정리](#Initialize_and_cleanup)
 
-    -   [테스트 메서드](#test_methods)
+  -   [테스트 메서드](#test_methods)
 
-    -   [테스트 클래스](#test_classes)
+  -   [테스트 클래스](#test_classes)
 
-    -   [테스트 모듈](#test_modules)
+  -   [테스트 모듈](#test_modules)
 
--   [테스트 특성 만들기](#create_test_attributes)
+- [테스트 특성 만들기](#create_test_attributes)
 
-    -   [테스트 메서드 특성](#test_method_attributes)
+  - [테스트 메서드 특성](#test_method_attributes)
 
-    -   [테스트 클래스 특성](#test_class_attributes)
+  - [테스트 클래스 특성](#test_class_attributes)
 
-    -   [테스트 모듈 특성](#test_module_attributes)
+  - [테스트 모듈 특성](#test_module_attributes)
 
-    -   [미리 정의된 특성](#pre_defined_attributes)
+  - [미리 정의된 특성](#pre_defined_attributes)
 
-     [CppUnitTestAssert.h](#cppUnitTestAssert_h)
+    [CppUnitTestAssert.h](#cppUnitTestAssert_h)
 
-    -   [일반 어설션](#general_asserts)
+  - [일반 어설션](#general_asserts)
 
-        -   [AreEqual](#general_are_equal)
+    -   [AreEqual](#general_are_equal)
 
-        -   [AreNotEqual](#general_are_not_equal)
+    -   [AreNotEqual](#general_are_not_equal)
 
-        -   [AreSame](#general_are_same)
+    -   [AreSame](#general_are_same)
 
-        -   [AreNotSame](#general_are_not_same)
+    -   [AreNotSame](#general_are_not_same)
 
-        -   [IsNull](#general_is_null)
+    -   [IsNull](#general_is_null)
 
-        -   [IsNotNull](#general_is_not_null)
+    -   [IsNotNull](#general_is_not_null)
 
-        -   [IsTrue](#general_is_True)
+    -   [IsTrue](#general_is_True)
 
-        -   [IsFalse](#general_is_false)
+    -   [IsFalse](#general_is_false)
 
-        -   [Fail](#general_Fail)
+    -   [Fail](#general_Fail)
 
-    -   [Windows 런타임 어설션](#winrt_asserts)
+  - [Windows 런타임 어설션](#winrt_asserts)
 
-        -   [AreEqual](#winrt_are_equal)
+    -   [AreEqual](#winrt_are_equal)
 
-        -   [AreSame](#winrt_are_same)
+    -   [AreSame](#winrt_are_same)
 
-        -   [AreNotEqual](#winrt_are_not_equal)
+    -   [AreNotEqual](#winrt_are_not_equal)
 
-        -   [AreNotSame](#winrt_are_not_same)
+    -   [AreNotSame](#winrt_are_not_same)
 
-        -   [IsNull](#winrt_is_null)
+    -   [IsNull](#winrt_is_null)
 
-        -   [IsNotNull](#winrt_is_not_null)
+    -   [IsNotNull](#winrt_is_not_null)
 
-    -   [예외 어설션](#exception_asserts)
+  - [예외 어설션](#exception_asserts)
 
-        -   [EXPECTEXCEPTION](#expect_exception)
+    - [EXPECTEXCEPTION](#expect_exception)
 
-         [CppUnitTestLogger.h](#cppunittestlogger_h)
+      [CppUnitTestLogger.h](#cppunittestlogger_h)
 
-        -   [Logger](#logger)
+    - [Logger](#logger)
 
-        -   [메시지 작성](#write_message)
-    -    [사용 예제](#example)
+    - [메시지 작성](#write_message)
+
+  - [사용 예제](#example)
 
 ##  <a name="cppUnitTest_h"></a> CppUnitTest.h
 
@@ -111,7 +112,6 @@ TEST_METHOD(methodName)
 {
     // test method body
 }
-
 ```
 
  *methodName*을 테스트 메서드로 정의합니다. 메서드의 클래스 범위에서 `TEST_METHOD`를 선언해야 합니다.
@@ -125,7 +125,6 @@ TEST_METHOD_INITIALIZE(methodName)
 {
     // method initialization code
 }
-
 ```
 
  각 테스트 메서드를 실행하기 전에 실행되는 메서드로 *methodName*을 정의합니다. `TEST_METHOD_INITIALIZE`는 테스트 클래스에서 한 번만 정의할 수 있으며 테스트 클래스에서 정의해야 합니다.
@@ -135,7 +134,6 @@ TEST_METHOD_CLEANUP(methodName)
 {
     // test method cleanup  code
 }
-
 ```
 
  각 테스트 메서드를 실행한 후에 실행되는 메서드로 *methodName*을 정의합니다. `TEST_METHOD_CLEANUP`는 테스트 클래스에서 한 번만 정의할 수 있으며 테스트 클래스의 범위에서 정의해야 합니다.

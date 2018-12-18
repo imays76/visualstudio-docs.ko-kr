@@ -1,22 +1,24 @@
 ---
-title: 자습서 - Visual Studio의 Flask 학습, 2단계
+title: Visual Studio 2단계, 보기 및 템플릿에서 Flask 자습서 알아보기
+titleSuffix: ''
 description: Visual Studio 프로젝트 컨텍스트에서 Flask 기본 사항을 검토하는 연습 과정으로, 앱을 만들고 보기 및 템플릿을 사용하는 단계를 구체적으로 설명합니다.
-ms.date: 06/04/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b9900fd69cf51ca97d9cb9c6be8bbbe6bba22971
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: cbdf9232bdff56fa2d244f8baeed2d070dcb37a9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388334"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052947"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>2단계: 보기 및 페이지 템플릿을 사용하여 Flask 앱 만들기
 
@@ -36,7 +38,7 @@ ms.locfileid: "39388334"
 
 1. 프로젝트 폴더에서 `HelloFlask`라는 앱 폴더를 만듭니다(**솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가** > **새 폴더**를 선택함).
 
-1. *HelloFlask* 폴더에서 다음 콘텐츠가 포함된 *\_\_init\_\_.py*라는 파일을 만듭니다. 이 파일은 `Flask` 인스턴스를 만들고 앱의 보기를 로드합니다(다음 단계에서 생성).
+2. *HelloFlask* 폴더에서 다음 콘텐츠가 포함된 *\_\_init\_\_.py*라는 파일을 만듭니다. 이 파일은 `Flask` 인스턴스를 만들고 앱의 보기를 로드합니다(다음 단계에서 생성).
 
     ```python
     from flask import Flask
@@ -45,7 +47,7 @@ ms.locfileid: "39388334"
     import HelloFlask.views
     ```
 
-1. *HelloFlask* 폴더에서 다음 콘텐츠가 포함된 *views.py*라는 파일을 만듭니다. *\_\_init\_\_.py* 내에서 `import HelloFlask.views`를 사용했기 때문에 *views.py*이라는 이름은 중요합니다. 이름이 일치하지 않으면 런타임에 오류가 표시됩니다.
+3. *HelloFlask* 폴더에서 다음 콘텐츠가 포함된 *views.py*라는 파일을 만듭니다. *\_\_init\_\_.py* 내에서 `import HelloFlask.views`를 사용했기 때문에 *views.py*이라는 이름은 중요합니다. 이름이 일치하지 않으면 런타임에 오류가 표시됩니다.
 
     ```python
     from flask import Flask
@@ -59,9 +61,9 @@ ms.locfileid: "39388334"
 
     이 코드는 함수의 이름과 경로를 `home`으로 변경하는 것 외에도 *app.py*의 페이지 렌더링 코드를 포함하고 *\_\_init\_\_.py*에 선언된 `app` 개체를 가져옵니다.
 
-1. *HelloFlask*에 *templates*라는 하위 폴더를 만듭니다. 이 폴더는 현재 비어 있습니다.
+4. *HelloFlask*에 *templates*라는 하위 폴더를 만듭니다. 이 폴더는 현재 비어 있습니다.
 
-1. 프로젝트의 루트 폴더에서 *app.py*의 이름을 *runserver.py*로 바꾸고, 콘텐츠를 다음 코드와 일치시킵니다.
+5. 프로젝트의 루트 폴더에서 *app.py*의 이름을 *runserver.py*로 바꾸고, 콘텐츠를 다음 코드와 일치시킵니다.
 
     ```python
     import os
@@ -77,17 +79,17 @@ ms.locfileid: "39388334"
 
         app.run(HOST, PORT)
     ```
-1. 전체 프로젝트 구조는 다음 이미지와 같아야 합니다.
+6. 전체 프로젝트 구조는 다음 이미지와 같아야 합니다.
 
     ![코드 리팩터링 후 프로젝트 구조](media/flask/step02-project-structure.png)
 
-1. **디버그** > **디버깅 시작**(**F5**)을 선택하거나 도구 모음의 **웹 서버** 단추를 사용(표시되는 브라우저가 다를 수 있음)하여 앱을 시작하고 브라우저를 엽니다. / 및 /home URL 경로를 둘 다 시도해 봅니다.
+7. **디버그** > **디버깅 시작**(**F5**)을 선택하거나 도구 모음의 **웹 서버** 단추를 사용(표시되는 브라우저가 다를 수 있음)하여 앱을 시작하고 브라우저를 엽니다. / 및 /home URL 경로를 둘 다 시도해 봅니다.
 
-1. 또한 코드의 여러 부분에서 중단점을 설정하고 앱을 다시 시작하여 시작 시퀀스를 따를 수 있습니다. 예를 들어 *runserver.py* 및 *HelloFlask\__init__.py*의 첫 번째 줄 및 *views.py*의 `return "Hello Flask!"` 줄에 중단점을 설정합니다. 그런 다음, 앱을 다시 시작(**디버그** > **다시 시작**, **Ctrl**+**F5** 또는 아래 표시된 도구 모음 단추)하고 코드를 단계별로 실행(**F10**)하거나 **F5** 키를 사용하여 각 중단점에서 실행합니다.
+8. 또한 코드의 여러 부분에서 중단점을 설정하고 앱을 다시 시작하여 시작 시퀀스를 따를 수 있습니다. 예를 들어 *runserver.py* 및 *HelloFlask\_* init *_.py*의 첫 번째 줄 및 *views.py*의 `return "Hello Flask!"` 줄에 중단점을 설정합니다. 그런 다음, 앱을 다시 시작(**디버그** > **다시 시작**, **Ctrl**+**F5** 또는 아래 표시된 도구 모음 단추)하고 코드를 단계별로 실행(**F10**)하거나 **F5** 키를 사용하여 각 중단점에서 실행합니다.
 
     ![Visual Studio 디버깅 도구 모음의 다시 시작 단추](media/debugging-restart-toolbar-button.png)
 
-1. 완료되면 앱을 중지합니다.
+9. 완료되면 앱을 중지합니다.
 
 ### <a name="commit-to-source-control"></a>소스 제어에 커밋
 
@@ -103,7 +105,7 @@ ms.locfileid: "39388334"
 
 ### <a name="question-how-frequently-should-one-commit-to-source-control"></a>질문: 소스 제어에 얼마나 자주 커밋해야 하나요?
 
-답변: 소스 제어에 변경 내용을 커밋하면 변경 로그에 레코드가 생성되고 필요한 경우 리포지토리를 되돌릴 수 있는 지점이 생성됩니다. 각 커밋에서 특정 변경 내용을 검사할 수도 있습니다. Git 커밋은 비용이 많이 들지 않기 때문에, 한 번의 커밋에 많은 수의 변경 내용을 누적하는 것보다 커밋을 자주 수행하는 것이 좋습니다. 따라서 사소한 변경 내용을 매번 개별 파일에 커밋할 필요가 없습니다. 일반적으로 기능을 추가하거나, 이 단계에서 수행한 것과 같은 구조 변경을 수행하거나, 코드 리팩터링을 수행했을 때 커밋을 실행합니다. 또한 모두에게 가장 적합한 커밋 빈도를 다른 팀원과 함께 확인합니다.
+대답: 소스 제어에 변경 내용을 커밋하면 변경 로그에 레코드가 생성되고 필요한 경우 리포지토리를 되돌릴 수 있는 지점이 생성됩니다. 각 커밋에서 특정 변경 내용을 검사할 수도 있습니다. Git 커밋은 비용이 많이 들지 않기 때문에, 한 번의 커밋에 많은 수의 변경 내용을 누적하는 것보다 커밋을 자주 수행하는 것이 좋습니다. 따라서 사소한 변경 내용을 매번 개별 파일에 커밋할 필요가 없습니다. 일반적으로 기능을 추가하거나, 이 단계에서 수행한 것과 같은 구조 변경을 수행하거나, 코드 리팩터링을 수행했을 때 커밋을 실행합니다. 또한 모두에게 가장 적합한 커밋 빈도를 다른 팀원과 함께 확인합니다.
 
 커밋 빈도와 원격 리포지토리에 커밋을 푸시하는 빈도는 다른 문제입니다. 원격 리포지토리에 커밋을 푸시하기 전에 로컬 리포지토리에 여러 커밋을 누적할 수 있습니다. 다시 말하지만, 커밋 빈도는 팀에서 원하는 리포지토리 관리 방법에 따라 달라집니다.
 
@@ -200,7 +202,7 @@ ms.locfileid: "39388334"
 
 ### <a name="question-must-templates-use-the-html-file-extension"></a>질문: 템플릿은 .html 파일 확장명을 사용해야 하나요?
 
-답변: 항상 `render_template` 함수에 대한 첫 번째 인수에서 파일의 정확한 상대 경로를 식별하므로 페이지 템플릿 파일의 *.html* 확장명은 전적으로 선택 사항입니다. 그러나 Visual Studio(및 기타 편집기)는 일반적으로 *.html* 파일을 사용하여 코드 완성 및 구문 색 지정과 같은 기능을 제공하므로 페이지 템플릿이 엄격하게 HTML이 아니라는 사실보다 중요합니다.
+대답: 항상 `render_template` 함수에 대한 첫 번째 인수에서 파일의 정확한 상대 경로를 식별하므로 페이지 템플릿 파일의 *.html* 확장명은 전적으로 선택 사항입니다. 그러나 Visual Studio(및 기타 편집기)는 일반적으로 *.html* 파일을 사용하여 코드 완성 및 구문 색 지정과 같은 기능을 제공하므로 페이지 템플릿이 엄격하게 HTML이 아니라는 사실보다 중요합니다.
 
 실제로 Flask 프로젝트로 작업할 때 Visual Studio는 편집 중인 HTML 파일이 실제로 Flask 템플릿인 경우를 자동으로 감지하고 특정 자동 완성 기능을 제공합니다. 예를 들어 Flask 페이지 템플릿 주석 `{#`을 입력하기 시작하면 Visual Studio에서 닫는 `#}` 문자를 자동으로 제공합니다. **선택 영역을 주석으로 처리** 및 **선택 영역의 주석 처리 제거** 명령(**편집** >  **고급** 메뉴 및 도구 모음)에서도 HTML 주석 대신 템플릿 주석을 사용합니다.
 
@@ -210,7 +212,7 @@ ms.locfileid: "39388334"
 
 ### <a name="question-can-templates-be-organized-into-further-subfolders"></a>질문: 템플릿을 추가 하위 폴더로 구성할 수 있나요?
 
-답변: 예, 하위 폴더를 사용한 다음, `render_template`에 대한 호출에서 *templates* 아래의 상대 경로를 참조할 수 있습니다. 이는 템플릿의 네임스페이스를 효과적으로 만들 수 있는 좋은 방법입니다.
+대답: 예, 하위 폴더를 사용한 다음, `render_template`에 대한 호출에서 *템플릿* 아래의 상대 경로를 참조할 수 있습니다. 이는 템플릿의 네임스페이스를 효과적으로 만들 수 있는 좋은 방법입니다.
 
 ## <a name="next-steps"></a>다음 단계
 

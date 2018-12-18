@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ed27b239595034b55b66dfe71c261bb9f721371
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 2e74c6f465676b916954141679406b00b9787347
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464705"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941492"
 ---
 # <a name="idiasymbolgetisaggregated"></a>IDiaSymbol::get_isAggregated
-데이터 기호는 집계 또는 컬렉션 기호의;의 일부 인지 여부를 지정 하는 플래그를 검색 합니다. 컴파일러는 별도 엔터티로 집계 된 기호를 처리 하지만 단일 큰 기호의 일부는 실제로 합니다.  
+데이터 기호는 집계 또는 기호의; 컬렉션의 일부 인지 여부를 지정 하는 플래그를 검색 합니다. 컴파일러에서 집계 된 기호를 별도 엔터티로 처리 되지만 실제로 더 큰 단일 기호 부분입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -34,23 +34,23 @@ HRESULT get_isAggregated(
   
 #### <a name="parameters"></a>매개 변수  
  `pFlag`  
- [out] 반환 `TRUE` 그렇지 않은 경우 반환 데이터 기호 부모 기호;에서 분할의 집계의 일부인 경우 `FALSE`합니다.  
+ [out] 반환 `TRUE` 그렇지 않으면 반환 데이터 부모 기호에서 분할 하는 기호의 집계의 일부인 경우 `FALSE`합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
+ 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
   
 > [!NOTE]
->  반환 값이 `S_FALSE` 의미는 속성은 해당 기호를 사용할 수 없습니다.  
+>  반환 값이 `S_FALSE` 속성 기호를 사용할 수 없는 것을 의미 합니다.  
   
 ## <a name="remarks"></a>설명  
- [idiasymbol:: Get_issplitted](../../debugger/debug-interface-access/idiasymbol-get-issplitted.md) 방법은 `TRUE` 집계 된 기호의 부모 기호에 대 한 합니다.  
+ 합니다 [idiasymbol:: Get_issplitted](../../debugger/debug-interface-access/idiasymbol-get-issplitted.md) 메서드는 `TRUE` 집계 된 기호의 부모인 기호에 대 한 합니다.  
   
 ## <a name="requirements"></a>요구 사항  
   
 |요구 사항|설명|  
 |-----------------|-----------------|  
 |헤더:|dia2.h|  
-|버전:|DIA SDK v 8.0|  
+|버전:|DIA SDK v8.0|  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

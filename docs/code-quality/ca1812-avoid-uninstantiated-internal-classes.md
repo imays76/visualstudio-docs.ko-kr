@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2b59e9b0947c6d2b1cbb37cdc850a144976d495
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 45ff6e07abb77623fe1007ef5e13556e26852224
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915599"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827467"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: 인스턴스화되지 않은 내부 클래스를 사용하지 마십시오.
+
 |||
 |-|-|
 |TypeName|AvoidUninstantiatedInternalClasses|
@@ -32,44 +33,48 @@ ms.locfileid: "31915599"
 |변경 수준|주요 변경 아님|
 
 ## <a name="cause"></a>원인
- 어셈블리 수준 형식의 인스턴스가 어셈블리에서 코드에 의해 만들어지지 않습니다.
+
+어셈블리 수준 형식의 인스턴스가 어셈블리에서 코드에 의해 만들어지지 않습니다.
 
 ## <a name="rule-description"></a>규칙 설명
- 이 규칙 형식의 생성자 중 하나에 대 한 호출을 찾으려고 시도 하 고 호출 찾을 수 없으면 위반을 보고 합니다.
 
- 이 규칙에서 다음 형식 검사 하지 않습니다.
+이 규칙 형식 생성자 중 하나에 대 한 호출을 찾으려고 하 고 호출이 있으면 위반을 보고 합니다.
 
--   값 형식
+이 규칙에서 다음 형식은 검사 하지 않습니다.
 
--   추상 형식
+- 값 형식
 
--   열거형
+- 추상 형식
 
--   대리자
+- 열거형
 
--   컴파일러에서 내보낸 배열 형식
+- 대리자
 
--   인스턴스화할 수 없습니다 및 정의 하는 형식 `static` (`Shared` Visual basic에서) 메서드에만 합니다.
+- 컴파일러에서 내보낸 배열 형식
 
- 적용 하는 경우 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> 분석 되는 어셈블리에이 규칙으로 표시 된 생성자에서 발생 하지 것입니다 `internal` 필드 다른 사용 중인지 여부를 알 수 없습니다 때문에 `friend` 어셈블리입니다.
+- 인스턴스화할 수 없습니다 및 정의 하는 형식을 `static` (`Shared` Visual Basic의) 메서드만 있습니다.
 
- 이 제한을 해결할 수 있지만 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 코드 분석, 외부 독립 실행형 FxCop 경우 내부 생성자에 모든 `friend` 어셈블리는 분석에 포함 합니다.
+적용 하는 경우 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> 분석 되는 어셈블리에이 규칙으로 표시 되는 생성자에서 발생 하지 것입니다 `internal` 다른 필드가 사용 되 고 있는지 여부를 알 수 없습니다 때문에 `friend` 어셈블리입니다.
+
+외부 독립 실행형 FxCop 모든 경우에 발생 내부 생성자에 Visual Studio 코드 분석에서이 제한을 해결할 수, 하는 경우에 `friend` 어셈블리는 분석에 포함 합니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이 규칙 위반 문제를 해결 하려면 유형을 제거 하거나 사용 하는 코드를 추가 합니다. 유형이 정적 메서드만 포함 하는 경우 컴파일러는 기본 public 인스턴스 생성자를 생성 하지 않도록 하려면 형식에는 다음 중 하나를 추가 합니다.
 
--   Private 생성자 형식을 대상으로 하는 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 버전 1.0 및 1.1입니다.
+이 규칙 위반 문제를 해결 하 고, 형식을 제거 또는 사용 하는 코드를 추가 합니다. 형식을 정적 메서드만 있으면 컴파일러가 기본 public 인스턴스 생성자를 내보내는 하지 않도록 하려면 형식에 다음 중 하나를 추가 합니다.
 
--   `static` (`Shared` Visual basic에서) 한정자에 대 한 대상으로 하는 형식 [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]합니다.
+- .NET Framework 버전 1.0 및 1.1을 대상으로 하는 형식에 대 한 개인 생성자입니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
- 이 규칙에서 경고를 표시 하지 않아도 안전 합니다. 다음과 같은 상황에서이 경고를 표시 하는 것이 좋습니다.
+- 합니다 `static` (`Shared` Visual basic에서) 한정자를 대상으로 하는 형식 [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]합니다.
 
--   클래스는 런타임에 바인딩된 리플렉션 메서드를 통해와 같은 만들 <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>합니다.
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
 
--   클래스는 런타임 또는 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]에 의해 자동으로 만들어집니다. 이러한 예로 <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> 또는 <xref:System.Web.IHttpHandler?displayProperty=fullName>를 구현하는 클래스를 들 수 있습니다.
+이 규칙에서 경고를 표시 하지 않아도 안전 합니다. 다음과 같은 상황에서이 경고를 표시 하는 것이 좋습니다.
 
--   클래스는 새 제약 조건이 있는 제네릭 형식 매개 변수로 전달 됩니다. 예를 들어 다음 예제에서는이 규칙을 발생 합니다.
+- 클래스가 만들어질 바인딩된 리플렉션 메서드를 통해 같은 <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>합니다.
+
+- 클래스는 런타임 또는 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]에 의해 자동으로 만들어집니다. 이러한 예로 <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> 또는 <xref:System.Web.IHttpHandler?displayProperty=fullName>를 구현하는 클래스를 들 수 있습니다.
+
+- 클래스는 새 제약 조건이 있는 제네릭 형식 매개 변수로 전달 됩니다. 예를 들어, 다음 예제에서는이 규칙을 발생 합니다.
 
     ```csharp
     internal class MyClass
@@ -90,11 +95,12 @@ ms.locfileid: "31915599"
     mc.Create();
     ```
 
- 이러한 상황에서이 경고를 표시 하는 것이 좋습니다.
+  이러한 상황에서이 경고를 표시 하는 것이 좋습니다.
 
 ## <a name="related-rules"></a>관련된 규칙
- [CA1811: 호출되지 않는 전용 코드를 사용하지 마십시오.](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
- [CA1801: 사용되지 않은 매개 변수를 검토하십시오.](../code-quality/ca1801-review-unused-parameters.md)
+[CA1811: 호출되지 않는 전용 코드를 사용하지 마십시오.](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
- [CA1804: 사용되지 않는 로컬 항목을 제거하십시오.](../code-quality/ca1804-remove-unused-locals.md)
+[CA1801: 사용되지 않은 매개 변수를 검토하십시오.](../code-quality/ca1801-review-unused-parameters.md)
+
+[CA1804: 사용되지 않는 로컬 항목을 제거하십시오.](../code-quality/ca1804-remove-unused-locals.md)

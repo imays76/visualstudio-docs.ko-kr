@@ -1,5 +1,5 @@
 ---
-title: 테스트 설정을 사용하여 테스트를 수행하는 중에 화면 및 음성의 녹화/녹음 포함
+title: 테스트 중에 화면 및 음성 기록
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6fcf55ed90d2fe73c37ebc6d88e9d88bbc3f11f3
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 1470ab88cb21a7a80fa46f57f944ec5df21d544f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381972"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894415"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>방법: 테스트 설정을 사용하여 테스트를 수행하는 중에 화면 및 음성의 녹화/녹음 포함
 
@@ -26,9 +26,11 @@ Visual Studio의 구성 편집기에서 화면 및 테스트를 실행하는 사
 
 화면 및 음성 레코더는 수동 또는 자동 테스트에서 사용할 수 있습니다. 예를 들어 코딩된 UI 테스트를 원격으로 실행하는 경우 컴퓨터 화면을 녹화하여 코딩된 UI 테스트가 실행되는 과정을 확인할 수 있습니다. 원격으로 화면 및 음성 기록을 캡처하는 방법에 대한 자세한 내용은 [방법: 데스크톱과 상호 작용하는 테스트를 실행하기 위해 테스트 에이전트 설정](../test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop.md)을 참조하세요.
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
 ## <a name="to-configure-screen-and-voice-recording-for-your-test-settings"></a>테스트 설정에 대한 화면 및 음성 기록을 구성하려면
 
-1.  화면 및 음성을 기록하기 위해 구성할 테스트 설정을 엽니다. 자세한 내용은 [테스트(VSTS) 중 진단 데이터 수집](/vsts/manual-test/collect-diagnostic-data) 또는 [테스트 설정을 사용하여 진단 정보 수집](../test/collect-diagnostic-information-using-test-settings.md)을 참조하세요.
+1.  화면 및 음성을 기록하기 위해 구성할 테스트 설정을 엽니다. 자세한 내용은 [테스트하는 동안 진단 데이터 수집(Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts) 또는 [테스트 설정을 사용하여 진단 정보 수집](../test/collect-diagnostic-information-using-test-settings.md)을 참조하세요.
 
 2.  테스트 설정에서 화면 및 음성을 기록하는 데 사용할 **역할**을 선택합니다.
 
@@ -63,7 +65,7 @@ Visual Studio의 구성 편집기에서 화면 및 테스트를 실행하는 사
 
 ## <a name="see-also"></a>참고 항목
 
-- [테스트하는 동안 진단 데이터 수집(VSTS)](/vsts/manual-test/collect-diagnostic-data)
-- [수동 테스트에서 진단 데이터 수집(VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)
+- [테스트하는 동안 진단 데이터 수집(Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)
+- [수동 테스트에서 진단 데이터 수집(Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
 - [테스트 설정을 사용하여 진단 정보 수집](../test/collect-diagnostic-information-using-test-settings.md)
-- [수동 테스트 실행(VSTS)](/vsts/manual-test/getting-started/run-manual-tests)
+- [수동 테스트 실행(Azure Test Plans)](/azure/devops/test/run-manual-tests?view=vsts)

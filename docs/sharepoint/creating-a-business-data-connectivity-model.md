@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b8d76c6f7d28b990d133780c25577cab4e8c3cad
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 68940d6e48f1f3a3e51017e1cc838976735de104
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326036"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930208"
 ---
 # <a name="create-a-business-data-connectivity-model"></a>비즈니스 데이터 연결 모델 만들기
   비즈니스 데이터 연결 (BDC) 모델을 만들 수도 있고 Visual Studio를 사용 하 여 기존 BDC 모델을 사용자 지정할 수 있습니다. 각 SharePoint 프로젝트 모델 하나만 포함할 수 있습니다. 자세한 내용은 [SharePoint 비즈니스 데이터 통합](../sharepoint/integrating-business-data-into-sharepoint.md)합니다.  
@@ -57,13 +57,13 @@ ms.locfileid: "36326036"
 ## <a name="add-an-existing-model"></a>기존 모델 추가
  SharePoint Designer와 같은 다른 도구를 사용 하 여 만든 모델을 가져올 수 있습니다. 다음과 같은 상황에서 프로젝트에 기존 모델을 가져올 수 있습니다.  
   
--   SharePoint 서버 팜에 이미 배포 된 모델을 사용자 지정 합니다.  
+- SharePoint 서버 팜에 이미 배포 된 모델을 사용자 지정 합니다.  
   
--   패키지 및 여러 SharePoint 서버 팜에 기존 모델을 배포 합니다.  
+- 패키지 및 여러 SharePoint 서버 팜에 기존 모델을 배포 합니다.  
   
- 두 경우 모두 가져와야 하는 모델에 정의 된 LOB 시스템을 받지 않습니다 및 계속 예상 대로 작동 합니다. Visual Studio를 사용 하 여 기존 모델을 SharePoint 프로젝트에 추가할 **기존 항목 추가** 대화 상자. 자세한 내용은 [방법: SharePoint 프로젝트에 기존 BDC 모델 파일 추가](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)합니다.  
+  두 경우 모두 가져와야 하는 모델에 정의 된 LOB 시스템을 받지 않습니다 및 계속 예상 대로 작동 합니다. Visual Studio를 사용 하 여 기존 모델을 SharePoint 프로젝트에 추가할 **기존 항목 추가** 대화 상자. 자세한 내용은 [방법: SharePoint 프로젝트에 기존 BDC 모델 파일 추가](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)합니다.  
   
- 옵션을 선택 하 여 가져온된 모델 형식.NET Framework 어셈블리의 LOB 시스템을 추가할 수 있습니다 합니다 **추가.NET 어셈블리 LobSystem**합니다. 이 옵션을 사용 하면 사용자 지정 코드를 작성 하 고 디자이너를 사용 하 여 가져온된 모델에 대 한 메타 데이터를 정의할 수 있습니다.  
+  옵션을 선택 하 여 가져온된 모델 형식.NET Framework 어셈블리의 LOB 시스템을 추가할 수 있습니다 합니다 **추가.NET 어셈블리 LobSystem**합니다. 이 옵션을 사용 하면 사용자 지정 코드를 작성 하 고 디자이너를 사용 하 여 가져온된 모델에 대 한 메타 데이터를 정의할 수 있습니다.  
   
 ## <a name="related-topics"></a>관련 항목
   

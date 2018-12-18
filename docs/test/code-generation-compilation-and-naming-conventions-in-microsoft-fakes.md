@@ -1,5 +1,5 @@
 ---
-title: Visual Studio용 Microsoft Fakes의 코드 생성, 컴파일 및 명명 규칙
+title: Microsoft Fakes의 코드 생성, 컴파일 및 명명 규칙
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 93aec7e83ba5af9bab8da351624df861b46e475c
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 7af8fc49896549fd553c8262b04e9d02f76f06e9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282108"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058313"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Microsoft Fakes의 코드 생성, 컴파일 및 명명 규칙
 
@@ -201,42 +201,42 @@ attribute of the Assembly element in the .fakes:
 
  **네임스페이스**
 
--   네임스페이스에 .Fakes 접미사를 추가합니다.
+- 네임스페이스에 .Fakes 접미사를 추가합니다.
 
-     예를 들어 `System.Fakes` 네임스페이스에는 System 네임스페이스의 shim 형식이 포함됩니다.
+   예를 들어 `System.Fakes` 네임스페이스에는 System 네임스페이스의 shim 형식이 포함됩니다.
 
--   Global.Fakes에는 빈 네임스페이스의 shim 형식이 포함됩니다.
+- Global.Fakes에는 빈 네임스페이스의 shim 형식이 포함됩니다.
 
- **형식 이름**
+  **형식 이름**
 
--   Shim 접두사를 형식 이름에 추가하여 shim 형식 이름을 작성합니다.
+- Shim 접두사를 형식 이름에 추가하여 shim 형식 이름을 작성합니다.
 
-     예를 들어 ShimExample은 Example 형식의 shim 형식입니다.
+   예를 들어 ShimExample은 Example 형식의 shim 형식입니다.
 
--   스텁 접두사를 형식 이름에 추가하여 스텁 형식 이름을 작성합니다.
+- 스텁 접두사를 형식 이름에 추가하여 스텁 형식 이름을 작성합니다.
 
-     예를 들어 StubIExample은 IExample 형식의 스텁 형식입니다.
+   예를 들어 StubIExample은 IExample 형식의 스텁 형식입니다.
 
- **형식 인수 및 중첩된 형식 구조**
+  **형식 인수 및 중첩된 형식 구조**
 
--   제네릭 형식 인수가 복사됩니다.
+- 제네릭 형식 인수가 복사됩니다.
 
--   중첩된 형식 구조는 shim 형식에 대해 복사됩니다.
+- 중첩된 형식 구조는 shim 형식에 대해 복사됩니다.
 
 ### <a name="shim-delegate-property-or-stub-delegate-field-naming-conventions"></a>shim 대리자 속성 또는 스텁 대리자 필드 명명 규칙
 
 필드 명명에 대한 **기본 규칙**이며, 빈 이름에서 시작합니다.
 
--   메서드 이름을 추가합니다.
+- 메서드 이름을 추가합니다.
 
--   메서드 이름이 명시적 인터페이스 구현인 경우 점이 제거됩니다.
+- 메서드 이름이 명시적 인터페이스 구현인 경우 점이 제거됩니다.
 
--   메서드가 제네릭인 경우 `Of`*n*이 추가됩니다. 여기서 *n*은 제네릭 메서드 인수 수입니다.
+- 메서드가 제네릭인 경우 `Of`*n*이 추가됩니다. 여기서 *n*은 제네릭 메서드 인수 수입니다.
 
- getter 또는 setter 속성과 같은 **특수 메서드 이름**은 다음 표에 설명된 대로 처리됩니다.
+  getter 또는 setter 속성과 같은 **특수 메서드 이름**은 다음 표에 설명된 대로 처리됩니다.
 
-|메서드 특성...|예|추가되는 메서드 이름|
-|-------------------|-------------|--------------------------|
+|메서드 특성...|예제|추가되는 메서드 이름|
+|-|-|-|
 |**생성자**|`.ctor`|`Constructor`|
 |정적 **생성자**|`.cctor`|`StaticConstructor`|
 |메서드 이름이 "_"로 구분되는 두 부분으로 구성된 **접근자**(예: 속성 getter)|*kind_name*(일반적인 경우이지만 ECMA에 의해 강제되지 않음)|*NameKind*, 여기서 두 부분이 대문자로 처리되고 교환됨|
@@ -256,7 +256,7 @@ attribute of the Assembly element in the .fakes:
 ### <a name="parameter-type-naming-conventions"></a>매개 변수 형식 명명 규칙
 
 |조건|추가되는 문자열...|
-|-----------|-------------------------|
+|-|-|
 |**형식**`T`|T<br /><br /> 네임스페이스, 중첩 구조 및 제네릭 tics가 삭제됩니다.|
 |**out 매개 변수**`out T`|`TOut`|
 |**ref 매개 변수** `ref T`|`TRef`|

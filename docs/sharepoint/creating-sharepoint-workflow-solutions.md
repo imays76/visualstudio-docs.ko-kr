@@ -23,17 +23,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4dc27993125c41de91e069cd4c87025f3a26ec07
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: c4e808d93d2ae3039d4c5d79d1c14c65360bba32
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327322"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892313"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>SharePoint 워크플로 솔루션 만들기
-  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 문서 및 SharePoint 웹 사이트에서 목록 항목의 수명 주기를 관리 하는 사용자 지정 워크플로 만들 수 있도록 도구를 제공 합니다. 제공되는 항목에는 디자이너, 작업 컨트롤 집합 및 필수 어셈블리 참조가 있습니다. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 또한 합니다 **SharePoint 사용자 지정 마법사**, 만들기 및 워크플로 구성 하는 데 합니다.
 
- SharePoint 프로젝트를 만들기 위한 필수 조건 목록은 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]를 참조 하세요 [SharePoint 솔루션 개발을 위한 요구 사항](../sharepoint/requirements-for-developing-sharepoint-solutions.md)합니다. SharePoint에 대 한 자세한 내용은 참조 하세요. [Microsoft SharePoint 제품 및 기술](http://go.microsoft.com/fwlink/?LinkId=178470)합니다.
+[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 문서 및 SharePoint 웹 사이트에서 목록 항목의 수명 주기를 관리 하는 사용자 지정 워크플로 만들 수 있도록 도구를 제공 합니다. 제공되는 항목에는 디자이너, 작업 컨트롤 집합 및 필수 어셈블리 참조가 있습니다. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 또한 합니다 **SharePoint 사용자 지정 마법사**, 만들기 및 워크플로 구성 하는 데 합니다.
+
+SharePoint에 대 한 자세한 내용은 참조 하세요. [Microsoft SharePoint 제품 및 기술](http://go.microsoft.com/fwlink/?LinkId=178470)합니다.
 
 ## <a name="workflows-in-sharepoint"></a>SharePoint에서 워크플로
  워크플로 SharePoint 라이브러리 또는 목록에 추가 하면 라이브러리 또는 목록에 있는 모든 항목에서 비즈니스 프로세스를 적용 합니다. 워크플로는 시스템 또는 사용자를 편집 하 고 검토 한 다음 항목을 보내는 등의 각 항목에 대해 수행 해야 하는 작업을 설명 합니다. 라고 하는 이러한 작업을 *활동*은 워크플로의 구성 요소입니다.
@@ -69,25 +70,25 @@ ms.locfileid: "36327322"
 
  활동의는 다음과 같은 두 종류가 있습니다.
 
--   *간단한 작업* "1 일에 대 한 지연" 또는 "웹 서비스를 시작 합니다."와 같은 작업의 단일 단위를 수행 합니다.
+- *간단한 작업* "1 일에 대 한 지연" 또는 "웹 서비스를 시작 합니다."와 같은 작업의 단일 단위를 수행 합니다.
 
--   *복합 활동* 다른 활동을 포함할; 예를 들어 조건부 작업을 두 개의 분기가 포함 합니다.
+- *복합 활동* 다른 활동을 포함할; 예를 들어 조건부 작업을 두 개의 분기가 포함 합니다.
 
- 두 종류의 작업에 사용할 수는 **도구 상자**합니다.
+  두 종류의 작업에 사용할 수는 **도구 상자**합니다.
 
- 작업 속성, 메서드 및 이벤트에 있을 수 있습니다. 사용 된 **속성** 활동의 속성을 설정 하는 창입니다.
+  작업 속성, 메서드 및 이벤트에 있을 수 있습니다. 사용 된 **속성** 활동의 속성을 설정 하는 창입니다.
 
- 또한 사용자 지정 활동을 만들 수 있습니다. 자세한 내용은 [연습: 사용자 지정 사이트 워크플로 활동을 만드는](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md)합니다.
+  또한 사용자 지정 활동을 만들 수 있습니다. 자세한 내용은 [연습: 사용자 지정 사이트 워크플로 활동을 만드는](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md)합니다.
 
- 작업에서 다음 탭에서 구성 합니다 **도구 상자**:
+  작업에서 다음 탭에서 구성 합니다 **도구 상자**:
 
--   **SharePoint 워크플로**
+- **SharePoint 워크플로**
 
--   **Windows Workflow v3.0**
+- **Windows Workflow v3.0**
 
--   **Windows Workflow v3.5**
+- **Windows Workflow v3.5**
 
- 모든 핵심 워크플로 작업은 SharePoint에서 지원 됩니다. 자세한 내용은 [워크플로 활동에 대 한 Windows SharePoint Services 개요](http://go.microsoft.com/fwlink/?LinkID=156094)합니다.
+  모든 핵심 워크플로 작업은 SharePoint에서 지원 됩니다. 자세한 내용은 [워크플로 활동에 대 한 Windows SharePoint Services 개요](http://go.microsoft.com/fwlink/?LinkID=156094)합니다.
 
 #### <a name="sharepoint-workflow-activities"></a>SharePoint 워크플로 활동이
  합니다 **SharePoint 워크플로** 탭에서 사용 하기 위해 특수 한 활동을 포함할 [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]합니다. 이러한 작업은 간단 하 고 문서 수명 주기 워크플로 개발을 간소화 합니다. 에 표시 되는 작업에 대 한 자세한 내용은 합니다 **SharePoint 워크플로** 탭을 참조 하십시오 [워크플로 활동에 대 한 Windows SharePoint Services 개요](http://go.microsoft.com/fwlink/?LinkID=156094)합니다.
@@ -110,15 +111,15 @@ ms.locfileid: "36327322"
 
  워크플로에서 사용할 수 있는 폼의는 방법은 네 가지가 있습니다.
 
--   연결
+- 연결
 
--   시작
+- 시작
 
--   수정
+- 수정
 
--   작업
+- 작업
 
- 이러한 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 연결 및 초기화 폼에 대 한 항목 템플릿이 포함 되어 있습니다. 예는 *연결 양식* 지출 비용 워크플로의 등 워크플로에 관련 된 매개 변수를 워크플로 설치 관리자가 있는 입력 됩니다. 예는 *양식을* 은 입력을 소비 하는 워크플로에 비용 워크플로의 사용자 수입니다. 이러한 양식 유형에 대 한 자세한 내용은 참조 하세요. [SharePoint 프로젝트 및 프로젝트 항목 템플릿](../sharepoint/sharepoint-project-and-project-item-templates.md)합니다.
+  이러한 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 연결 및 초기화 폼에 대 한 항목 템플릿이 포함 되어 있습니다. 예는 *연결 양식* 지출 비용 워크플로의 등 워크플로에 관련 된 매개 변수를 워크플로 설치 관리자가 있는 입력 됩니다. 예는 *양식을* 은 입력을 소비 하는 워크플로에 비용 워크플로의 사용자 수입니다. 이러한 양식 유형에 대 한 자세한 내용은 참조 하세요. [SharePoint 프로젝트 및 프로젝트 항목 템플릿](../sharepoint/sharepoint-project-and-project-item-templates.md)합니다.
 
 ### <a name="item-properties"></a>항목 속성
  SharePoint 라이브러리 또는 목록 항목의 속성을 사용 하 여 사용자 로부터 정보를 수집할 수 있습니다. Workflow1.cs 또는 Workflow1.vb 주 코드 파일 이름의 Microsoft.SharePoint.Workflow.SPWorkflowActivationProperties.WorkflowProperties 클래스의 인스턴스를 선언 `workflowProperties`합니다. 사용 된 `workflowProperties` 라이브러리의 코드 목록 속성에 액세스 하는 개체입니다. 예제를 보려면 [연습: SharePoint 워크플로 솔루션을 만들고](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md)합니다.
@@ -147,5 +148,5 @@ ms.locfileid: "36327322"
 ## <a name="see-also"></a>참고자료
 
 - [SharePoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)
-- [빌드 및 SharePoint 솔루션 디버깅](../sharepoint/building-and-debugging-sharepoint-solutions.md)
+- [SharePoint 솔루션 빌드 및 디버그](../sharepoint/building-and-debugging-sharepoint-solutions.md)
 - [SharePoint 용 응용 프로그램 페이지 만들기](../sharepoint/creating-application-pages-for-sharepoint.md)

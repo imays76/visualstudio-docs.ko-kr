@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2919559a748769c3b30e09023ad4f10965d62ce6
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 3b5f9c7b297d98836ca3e5c017d2a0d440a30470
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639492"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495481"
 ---
 # <a name="ngen-support-in-vsix-v3"></a>VSIX v3의 Ngen 지원
 
@@ -26,7 +26,7 @@ ms.locfileid: "39639492"
 
 >네이티브 이미지 생성기 (*Ngen.exe*)는 관리 되는 응용 프로그램의 성능을 향상 시키는 도구입니다. *Ngen.exe* 컴파일된 프로세서별 컴퓨터 코드가 포함 된 파일이 로컬 컴퓨터의 네이티브 이미지 캐시에 설치 되며 네이티브 이미지를 만듭니다. 런타임은 JIT(Just-In-Time) 컴파일러를 사용하지 않고 캐시의 네이티브 이미지를 사용하여 원본 어셈블리를 컴파일할 수 있습니다.
 >
->[Ngen.exe (네이티브 이미지 생성기)](https://msdn.microsoft.com/en-us/library/6t9t5wcf(v=vs.110).aspx)
+>[Ngen.exe (네이티브 이미지 생성기)](/dotnet/framework/tools/ngen-exe-native-image-generator)
 
 어셈블리 "ngen" 순서로 VSIX "인스턴스별 컴퓨터별" 설치 되어야 합니다. "모든 사용자" 확인란을 선택 하 여 사용 하도록 설정할 수 있습니다이 `extension.vsixmanifest` 디자이너:
 
@@ -41,7 +41,7 @@ ms.locfileid: "39639492"
 1. **Ngen** (부울)-Visual Studio 설치 관리자를 true 인 경우 "ngen" 어셈블리를 됩니다.
 2. **Ngen 응용 프로그램** Ngen는 응용 프로그램을 사용 하는 기회를 제공 (string)- *app.config* 어셈블리 종속성을 해결 하기 위해 파일입니다. 이 값에 설정할 응용 프로그램입니다 *app.config* (기준으로 Visual Studio 설치 디렉터리)를 사용 하려고 합니다.
 3. **Ngen 아키텍처** (enum)-아키텍처를 기본적으로 어셈블리를 컴파일합니다. 옵션은:를 합니다. NotSpecified b입니다. X86 c입니다. X64 d입니다. 모두
-4. **Ngen 우선 순위** (1과 3 사이의 정수)-The Ngen 우선 순위 수준에 설명 되어 있습니다 [Ngen.exe 우선 순위 수준을](https://msdn.microsoft.com/en-us/library/6t9t5wcf(v=vs.110).aspx#Anchor_3)합니다.
+4. **Ngen 우선 순위** (1과 3 사이의 정수)-The Ngen 우선 순위 수준에 설명 되어 있습니다 [Ngen.exe 우선 순위 수준을](/dotnet/framework/tools/ngen-exe-native-image-generator#priority-levels)합니다.
 
 살펴보겠습니다 합니다 **속성** 작업에서 창:
 

@@ -1,22 +1,24 @@
 ---
-title: 자습서 - Visual Studio의 Django 알아보기, 6단계
+title: Visual Studio 6단계, 설문 조사 프로젝트 템플릿에서 Django 자습서 알아보기
+titleSuffix: ''
 description: Visual Studio 프로젝트 컨텍스트에서 Django 기본 사항을 검토하는 연습 과정으로, 관리 사용자 지정과 같은 설문 조사 Django 웹 프로젝트 템플릿의 기능을 구체적으로 설명합니다.
-ms.date: 04/25/2018
+ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7844b777b1a0baf841b1ae80ddcdd67363615c29
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: ecc0637495b484ae06cb0f18e45ba329c7fa3407
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388217"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062498"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>6단계: 설문 조사 Django 웹 프로젝트 템플릿 사용
 
@@ -118,7 +120,7 @@ Choice는 `poll` 필드를 통해 Poll과 관련되며, `text`에 설명을 포�
 
 전체 필드 형식 목록은 `CharField`(제한된 텍스트) `TextField`(무제한 텍스트), `EmailField`, `URLField`, `DateTimeField`, `IntegerField`, `DecimalField`, `BooleanField`, `ForeignKey` 및 `ManyToMany`입니다. 각 필드는 `max_length`와 같은 몇 가지 특성을 사용합니다. `blank=True` 특성은 필드가 선택 사항임을 의미하고, `null=true`는 값이 선택 사항임을 의미합니다. 값을 데이터 값/표시 값 튜플 배열의 값으로 제한하는 `choices` 특성도 있습니다. Django 설명서의 [Model field reference](https://docs.djangoproject.com/en/2.0/ref/models/fields/)(모델 필드 참조)를 참조하세요.
 
-프로젝트에서 [SQLite 브라우저](http://sqlitebrowser.org/)와 같은 도구를 사용하여 *db.sqlite3* 파일을 검사하면 데이터베이스에 저장된 내용을 정확하게 확인할 수 있습니다. 데이터베이스에서 Choice 모델의 `poll` 같은 외래 키 필드가 `poll_id`로 저장되어 있음을 확인할 수 있으며, Django는 자동으로 매핑을 처리합니다.
+프로젝트에서 [SQLite 브라우저](https://sqlitebrowser.org/)와 같은 도구를 사용하여 *db.sqlite3* 파일을 검사하면 데이터베이스에 저장된 내용을 정확하게 확인할 수 있습니다. 데이터베이스에서 Choice 모델의 `poll` 같은 외래 키 필드가 `poll_id`로 저장되어 있음을 확인할 수 있으며, Django는 자동으로 매핑을 처리합니다.
 
 일반적으로 Django에서 데이터베이스 작업은 Django가 사용자 대신 기본 데이터베이스를 관리할 수 있도록 모델을 통해서만 작업한다는 의미입니다.
 
@@ -154,7 +156,7 @@ def seed(request):
     return HttpResponseRedirect(reverse('app:home'))
 ```
 
-결과를 확인하려면 먼저 앱을 실행하여 설문 조사가 아직 없음을 확인합니다. 그런 다음, “/seed” URL을 방문하고 앱이 홈페이지로 돌아가면 설문 조사를 사용할 수 있게 된 것을 확인할 수 있습니다. 다시 [SQLite 브라우저](http://sqlitebrowser.org/) 같은 도구를 사용하여 원시 *db.sqlite3* 파일을 원하는 대로 검사하세요.
+결과를 확인하려면 먼저 앱을 실행하여 설문 조사가 아직 없음을 확인합니다. 그런 다음, “/seed” URL을 방문하고 앱이 홈페이지로 돌아가면 설문 조사를 사용할 수 있게 된 것을 확인할 수 있습니다. 다시 [SQLite 브라우저](https://sqlitebrowser.org/) 같은 도구를 사용하여 원시 *db.sqlite3* 파일을 원하는 대로 검사하세요.
 
 ![시드된 데이터베이스가 있는 설문 조사 Django 웹 프로젝트 앱](media/django/step06-app-with-seeded-database.png)
 
@@ -362,13 +364,13 @@ admin.site.register(Poll, PollAdmin)
 ## <a name="next-steps"></a>다음 단계
 
 > [!Note]
-> 이 자습서를 진행하는 동안 Visual Studio 솔루션을 소스 제어에 커밋했으면 다른 커밋을 수행할 수 있습니다. 솔루션이 GitHub의 자습서 소스 코드([Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django))와 일치해야 합니다.
+> 이 자습서를 진행하는 동안 Visual Studio 솔루션을 소스 제어에 커밋했으면 다른 커밋을 수행할 수 있습니다. 솔루션은 GitHub의 자습서 소스 코드와 일치해야 합니다. [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django).
 
 이제 Visual Studio에서 “빈 Django 웹 프로젝트”, “Django 웹 프로젝트” 및 “설문 조사 Django 웹 프로젝트” 템플릿 전체를 살펴보았습니다. 보기 및 템플릿 사용과 같은 Django의 모든 기본 사항을 학습했으며 라우팅, 인증 및 데이터베이스 모델 사용을 검토했습니다. 이제 필요한 모든 보기 및 모델을 사용하여 웹앱을 직접 작성할 수 있어야 합니다.
 
 개발 컴퓨터에서 웹앱을 실행하는 것은 고객에게 앱을 제공하기 위한 과정의 한 단계일 뿐입니다. 다음 단계에는 다음과 같은 작업이 포함될 수 있습니다.
 
-- Azure App Service와 같은 프로덕션 서버에 웹앱을 배포합니다. Django 앱에 필요한 특정 변경 내용이 포함된 [Azure App Service에 게시](publishing-python-web-applications-to-azure-from-visual-studio.md)를 참조하세요.
+- Azure App Service와 같은 프로덕션 서버에 웹앱을 배포합니다. [Azure App Service에 게시](publishing-python-web-applications-to-azure-from-visual-studio.md)를 참조하세요.
 
 - *templates/404.html*이라는 템플릿을 만들어 404페이지를 사용자 지정합니다. 이미 있는 경우 Django는 기본 템플릿 대신 이 템플릿을 사용합니다. 자세한 내용은 Django 설명서의 [Error views](https://docs.djangoproject.com/en/2.0/ref/views/#error-views)(오류 보기)를 참조하세요.
 
@@ -376,8 +378,4 @@ admin.site.register(Poll, PollAdmin)
 
 - 앱을 SQLite에서 PostgreSQL, MySQL 및 SQL Server와 같은 프로덕션 수준 데이터 저장소(모두 Azure에서 호스트할 수 있음)로 변경합니다. [When to use SQLite](https://www.sqlite.org/whentouse.html)(SQLite를 사용하는 경우)(sqlite.org)에 설명된 대로 SQLite는 일별 방문 횟수가 100K보다 적은, 트래픽이 낮거나 중간 정도인 사이트에서 제대로 작동하지만 더 큰 볼륨에는 권장되지 않습니다. 또한 단일 컴퓨터로 제한되므로 부하 분산 및 지역에서 복제와 같은 모든 다중 서버 시나리오에서는 사용할 수 없습니다. Django의 다른 데이터베이스 지원에 대한 자세한 내용은 [데이터베이스 설치](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup)를 참조하세요. 또한 [Python용 Azure SDK](azure-sdk-for-python.md)를 사용하여 테이블 및 Blob과 같은 Azure Storage 서비스 작업을 수행할 수도 있습니다.
 
-- VSTS(Visual Studio Team Services)와 같은 서비스에서 지속적인 통합/지속적인 배포 파이프라인을 설정합니다. VSTS, GitHub 등에서의 소스 제어 작업 외에 VSTS에서 릴리스의 필수 구성 요소로 단위 테스트를 자동으로 실행하도록 하고, 프로덕션에 배포하기 전에 추가 테스트를 위해 준비 서버에 배포하도록 파이프라인을 구성할 수 있습니다. 또한 VSTS는 App Insights와 같은 모니터링 솔루션과 통합되며 Agile 계획 도구를 사용하여 전체 주기를 닫습니다. 자세한 내용은 다음을 참조하세요.
-
-  - [Create a CI/CD pipeline for Python with the Azure DevOps project](/azure/devops-project/azure-devops-project-python?view=vsts)(Azure DevOps 프로젝트로 Python용 CI/CD 파이프라인 만들기)
-  - [Python development in Azure with Visual Studio Team Services (video, 11m 21s)](https://azure.microsoft.com/resources/videos/connect-2017-python-development-in-azure-with-visual-studio-team-services/)(Visual Studio Team Services를 사용하여 Azure에서 Python 개발(비디오, 11분 21초)).
-
+- Azure DevOps와 같은 서비스에서 지속적인 통합/지속적인 배포 파이프라인을 설정합니다. Azure Repos, GitHub 등을 통한 소스 제어 작업 외에도 Azure DevOps Project를 구성하여 릴리스의 사전 필수 구성 요소로 단위 테스트를 자동으로 실행하고, 프로덕션 환경에 배포하기 전에 추가 테스트를 위해 준비 서버에 배포하도록 파이프라인을 구성할 수 있습니다. 또한 Azure DevOps는 App Insights와 같은 모니터링 솔루션과 통합되며 agile 계획 도구를 사용하여 전체 주기를 닫습니다. 자세한 내용은 [Azure DevOps 프로젝트로 Python용 CI/CD 파이프라인 만들기](/azure/devops-project/azure-devops-project-python?view=vsts) 및 일반적인 [Azure DevOps 설명서](/azure/devops/?view=vsts)도 참조하세요.

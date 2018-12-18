@@ -22,12 +22,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 426377d82385cd42de5dd265b0e727a94c0b24d1
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e33fa9b6047cbe470702cebdbb27f74d074e460e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177346"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916909"
 ---
 # <a name="save-data-back-to-the-database"></a>데이터를 다시 데이터베이스에 저장
 
@@ -73,21 +73,21 @@ Tableadapter에 익숙한 경우에 다음이 항목 중 하나에 직접 이동
 데이터 집합을 병합 하는 경우 부울 인수를 전달할 수 있습니다 (`preserveChanges`)을 설명 하는 <xref:System.Data.DataSet.Merge%2A> 메서드 기존 수정 대상 데이터 집합에 유지할지 여부를 합니다. 레코드의 여러 버전을 유지 하는 데이터 집합 이므로 레코드의 버전이 둘 이상 병합 되는 점을 염두 해야 합니다. 다음 표에서 두 개의 데이터 집합에서 레코드를 병합 하는 방법을 보여 줍니다.
 
 |DataRowVersion|대상 데이터 집합|원본 데이터 집합|
-|--------------------|--------------------|--------------------|
+| - | - | - |
 |원래 색|James Wilson|James C. Wilson|
 |현재|Jim Wilson|James C. Wilson|
 
 호출 된 <xref:System.Data.DataSet.Merge%2A> 메서드를 사용 하 여 이전 테이블 `preserveChanges=false targetDataset.Merge(sourceDataset)` 다음 데이터에서 결과:
 
 |DataRowVersion|대상 데이터 집합|원본 데이터 집합|
-|--------------------|--------------------|--------------------|
+| - | - | - |
 |원래 색|James C. Wilson|James C. Wilson|
 |현재|James C. Wilson|James C. Wilson|
 
 호출 된 <xref:System.Data.DataSet.Merge%2A> 메서드를 사용 하 여 `preserveChanges = true targetDataset.Merge(sourceDataset, true)` 다음 데이터에서 결과:
 
 |DataRowVersion|대상 데이터 집합|원본 데이터 집합|
-|--------------------|--------------------|--------------------|
+| - | - | - |
 |원래 색|James C. Wilson|James C. Wilson|
 |현재|Jim Wilson|James C. Wilson|
 
@@ -128,7 +128,7 @@ Tableadapter에 익숙한 경우에 다음이 항목 중 하나에 직접 이동
 다음 표에서 설명의 가능한 값은 <xref:System.Data.DataRowState> 열거형:
 
 |DataRowState 값|설명|
-|------------------------|-----------------|
+| - |-----------------|
 |<xref:System.Data.DataRowState.Added>|에 항목으로 행이 추가 <xref:System.Data.DataRowCollection>합니다. (이 상태에서 행을 해당 하는 원래 버전에 존재 하지 않기 때문 때 마지막 <xref:System.Data.DataRow.AcceptChanges%2A> 메서드를 호출한).|
 |<xref:System.Data.DataRowState.Deleted>|사용 하 여 행이 삭제 합니다 <xref:System.Data.DataRow.Delete%2A> 의 <xref:System.Data.DataRow> 개체입니다.|
 |<xref:System.Data.DataRowState.Detached>|행 생성 되었지만의 일부가 아닌 <xref:System.Data.DataRowCollection>합니다. <xref:System.Data.DataRow> 즉시이 만들어진 후 전에 추가한 컬렉션 및 컬렉션에서 제거 된 후이 상태 개체입니다.|
@@ -142,7 +142,7 @@ Tableadapter에 익숙한 경우에 다음이 항목 중 하나에 직접 이동
 다음 표에서 설명의 가능한 값은 <xref:System.Data.DataRowVersion> 열거형:
 
 |DataRowVersion 값|설명|
-|--------------------------|-----------------|
+| - |-----------------|
 |<xref:System.Data.DataRowVersion.Current>|레코드의 현재 버전이 포함 된 마지막 시간 이후 레코드에서 수행 된 모든 수정 <xref:System.Data.DataRow.AcceptChanges%2A> 호출 되었습니다. 행이 삭제 된 경우 현재 버전이 없습니다.|
 |<xref:System.Data.DataRowVersion.Default>|데이터 집합 스키마 또는 데이터 원본에 의해 정의 된 레코드의 기본 값입니다.|
 |<xref:System.Data.DataRowVersion.Original>|레코드의 원래 버전 레코드의 복사본은 데이터 집합의 변경 내용이 마지막으로 커밋된 것입니다. 실질적으로 이것이 일반적으로 레코드의 버전으로 읽기 데이터 원본에서입니다.|

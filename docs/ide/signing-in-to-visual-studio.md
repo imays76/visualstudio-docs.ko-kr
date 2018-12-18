@@ -11,16 +11,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ff5d9646d6715b546179058074f2279810b9ca48
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: c7568583ac9239e168760000f0712ca7dcc4c33f
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282233"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159856"
 ---
 # <a name="sign-in-to-visual-studio"></a>Visual Studio에 로그인
 
 IDE에 로그인하여 개인 설정 계정을 설정하면 Visual Studio의 개발 환경을 자신에게 맞게 설정하고 최적화할 수 있습니다.
+
+> [!NOTE]
+> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio에 로그인](/visualstudio/mac/signing-in)을 참조하세요.
 
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>Visual Studio에 로그인해야 하는 이유는 무엇인가요?
 
@@ -28,8 +31,7 @@ IDE에 로그인하여 개인 설정 계정을 설정하면 Visual Studio의 개
 
 다음은 로그인 후 예상할 수 있고 수행할 수 있는 작업의 전체 목록입니다.
 
-- 
-  **Visual Studio Dev Essentials 프로그램에 액세스** - 이 프로그램은 무료 소프트웨어 제품, 교육, 지원 등을 포함합니다. 자세한 내용은 [Visual Studio Dev Essentials](http://aka.ms/vsdevhelp) 를 참조하세요.
+- **Visual Studio Dev Essentials 프로그램에 액세스** - 이 프로그램은 무료 소프트웨어 제품, 교육, 지원 등을 포함합니다. 자세한 내용은 [Visual Studio Dev Essentials](http://aka.ms/vsdevhelp) 를 참조하세요.
 
 - **Visual Studio 설정 동기화** – 아무 장치에서나 Visual Studio에 로그인하면 키 바인딩, 창 레이아웃 및 색 테마 등의 사용자 지정 설정이 즉시 적용됩니다. [Visual Studio의 동기화된 설정](../ide/synchronized-settings-in-visual-studio.md)을 참조하세요.
 
@@ -37,9 +39,9 @@ IDE에 로그인하여 개인 설정 계정을 설정하면 Visual Studio의 개
 
 - **Visual Studio 평가 기간 연장** – 평가 기간을 30일로 제한하지 않고 추가로 90일 동안 Visual Studio Professional 또는 Visual Studio Enterprise를 사용할 수 있습니다.
 
-- **MSDN 또는 Visual Studio Team Services 구독과 연결된 계정을 사용하는 경우 Visual Studio를 잠금 해제합니다**. [Visual Studio 잠금을 해제하는 방법](../ide/how-to-unlock-visual-studio.md)을 참조하세요.
+- **Visual Studio 구독 또는 Azure DevOps 조직과 연결된 계정을 사용하는 경우 Visual Studio를 잠금 해제합니다**. [Visual Studio 잠금을 해제하는 방법](../ide/how-to-unlock-visual-studio.md)을 참조하세요.
 
-- IDE에서 동일한 계정의 자격 증명을 묻는 메시지를 다시 표시하지 않고**Azure 및 Visual Studio Team Services 등의 서비스에 자동으로 연결** 합니다.
+- IDE에서 동일한 계정의 자격 증명을 묻는 메시지를 다시 표시하지 않고 **Azure 및 Azure DevOps Services 등의 서비스에 자동으로 연결**합니다.
 
 ## <a name="how-to-sign-in-to-visual-studio"></a>Visual Studio에 로그인하는 방법
 
@@ -68,4 +70,6 @@ Visual Studio를 처음 시작할 때 로그인할지 묻는 메시지가 나타
 ## <a name="see-also"></a>참고 항목
 
 * [Visual Studio 잠금을 해제하는 방법](../ide/how-to-unlock-visual-studio.md)
-* [Visual Studio IDE 개요](../ide/visual-studio-ide.md)
+* [Visual Studio IDE 개요](../get-started/visual-studio-ide.md)
+* [로그인(Mac용 Visual Studio)](/visualstudio/mac/signing-in)
+* [활성화(Mac용 Visual Studio)](/visualstudio/mac/activation)

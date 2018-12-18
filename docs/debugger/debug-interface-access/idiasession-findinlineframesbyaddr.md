@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7696b73e9a6d84eff3aae7b3f0cbf393c1b935bd
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 237fdb31b223db1434ec4a2c936ed956e8e339d7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469011"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899177"
 ---
 # <a name="idiasessionfindinlineframesbyaddr"></a>IDiaSession::findInlineFramesByAddr
-클라이언트가 지정된 된 주소에 있는 인라인 프레임의 모든 반복 하는 데 사용 하는 열거형을 검색 합니다.  
+주어진된 주소에 있는 인라인 프레임의 모든 반복에 대 한 클라이언트를 허용 하는 열거자를 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -37,16 +37,16 @@ HRESULT findInlineFramesByAddr (
  [in] `IDiaSymbol` 부모를 나타내는 개체입니다.  
   
  `isect`  
- [in] 섹션 구성 요소 주소를 지정 합니다.  
+ [in] 주소 섹션 구성 요소를 지정합니다.  
   
  `offset`  
- [in] 주소 오프셋된 구성 요소를 지정합니다.  
+ [in] 주소의 오프셋된 구성 요소를 지정합니다.  
   
  `ppResult`  
- [out] 보유 한 `IDiaEnumSymbols` 검색 된 프레임의 목록을 포함 하는 개체입니다.  
+ [out] 보유 한 `IDiaEnumSymbols` 검색 되는 프레임의 목록을 포함 하는 개체입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

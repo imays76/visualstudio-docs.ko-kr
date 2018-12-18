@@ -14,16 +14,16 @@ manager: douge
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: c14cce73da0c83fefc3461d61d16a062af365db7
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: f10439e63b95fc2e78980ceb585e32dbbabd44d9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154374"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823751"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Visual Studio에서 JavaScript 콘솔 명령
   
- 명령을 사용하여 Visual Studio의 JavaScript 콘솔 창에서 메시지를 보내고 다른 작업을 수행할 수 있습니다. 해당 창을 사용 하는 방법을 보여 주는 예제를 보려면 [퀵 스타트: JavaScript 디버그](../debugger/quickstart-debug-javascript-using-the-console.md)합니다. 이 항목의 정보는 UWP 앱 및 Apache Cordova 대 한 Visual Studio Tools를 사용 하 여 만든 앱에 적용 됩니다. Cordova 앱에서 지원 되는 콘솔 명령에 대 한 정보를 참조 하세요 [앱을 디버그 하기](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/)합니다. Internet Explorer F12 도구에서 콘솔을 사용하는 방법에 대한 자세한 내용은 [이 항목](http://msdn.microsoft.com/library/ie/dn255006.aspx)을 참조하세요.  
+ 명령을 사용하여 Visual Studio의 JavaScript 콘솔 창에서 메시지를 보내고 다른 작업을 수행할 수 있습니다. 해당 창을 사용 하는 방법을 보여 주는 예제를 보려면 [퀵 스타트: JavaScript 디버그](../debugger/quickstart-debug-javascript-using-the-console.md)합니다. 이 항목의 정보는 UWP 앱 및 Apache Cordova 대 한 Visual Studio Tools를 사용 하 여 만든 앱에 적용 됩니다. Cordova 앱에서 지원되는 콘솔 명령에 대한 자세한 내용은 [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/)를 참조하세요. Internet Explorer F12 도구에서 콘솔을 사용하는 방법에 대한 자세한 내용은 [이 항목](/previous-versions/windows/internet-explorer/ie-developer/samples/dn255006(v=vs.85))을 참조하세요.  
   
  JavaScript 콘솔 창이 닫혀 있는 경우 열 수 있습니다 선택 하 여 Visual Studio에서 디버그 하는 동안 **디버깅할** > **Windows** > **JavaScript 콘솔**합니다.  
   
@@ -38,12 +38,12 @@ ms.locfileid: "39154374"
 > [!TIP]
 >  이전 버전의 Visual Studio는 전체 명령 집합을 지원하지 않습니다. 지원되는 명령에 대한 정보를 신속하게 얻으려면 콘솔 개체에서 IntelliSense를 사용하세요.  
   
-|명령|설명|예|  
+|명령|설명|예제|  
 |-------------|-----------------|-------------|  
 |`assert(expression, message)`|`expression` 이 **false**가 되면 메시지를 보냅니다.|`console.assert((x == 1), "assert message: x != 1");`|  
 |`clear()`|콘솔 창에서 스크립트 오류 메시지를 비롯한 메시지를 지우고 콘솔 창에 나타나는 스크립트도 지웁니다. 콘솔 입력 프롬프트에 입력한 스크립트는 지우지 않습니다.|`console.clear();`|  
 |`count(title)`|count 명령이 콘솔 창에 호출된 횟수를 보냅니다. 계산되는 각 호출은 `title`(선택 사항)으로 고유하게 식별됩니다.<br /><br /> 콘솔 창의 기존 항목은 `title` 매개 변수(있는 경우)로 식별되고 count 명령으로 업데이트됩니다. 새 항목이 만들어지지 않습니다.|`console.count();`<br /><br /> `console.count("inner loop");`|  
-|`debug(message)`|콘솔 창에 `message` 를 보냅니다.<br /><br /> 이 명령은 console.log와 동일합니다.<br /><br /> 명령을 사용하여 전달된 개체는 문자열 값으로 전환됩니다.|`console.debug("logging message");`|  
+|`debug(message)`|콘솔 창에 `message`를 보냅니다.<br /><br /> 이 명령은 console.log와 동일합니다.<br /><br /> 명령을 사용하여 전달된 개체는 문자열 값으로 전환됩니다.|`console.debug("logging message");`|  
 |`dir(object)`|지정한 개체를 콘솔 창에 보내고 개체 시각화 도우미에 표시합니다. 시각화 도우미를 사용하여 콘솔 창에서 속성을 검사할 수 있습니다.|`console.dir(obj);`|  
 |`dirxml(object)`|지정한 XML 노드 `object` 를 콘솔 창에 보내고 XML 노드 트리로 표시합니다.|`console.dirxaml(xmlNode);`|  
 |`error(message)`|콘솔 창에 `message` 를 보냅니다. 메시지 텍스트는 빨간색이며 이 텍스트 앞에 오류 기호가 옵니다.<br /><br /> 명령을 사용하여 전달된 개체는 문자열 값으로 전환됩니다.|`console.error("error message");`|  
@@ -55,7 +55,7 @@ ms.locfileid: "39154374"
 |`msIsIndependentlyComposed(element)`|웹 앱에서 사용됩니다. JavaScript를 사용 하 여 UWP 앱에서 지원 되지 않습니다.|지원되지 않습니다.|  
 |`profile(reportName)`|웹 앱에서 사용됩니다. JavaScript를 사용 하 여 UWP 앱에서 지원 되지 않습니다.|지원되지 않습니다.|  
 |`profileEnd()`|웹 앱에서 사용됩니다. JavaScript를 사용 하 여 UWP 앱에서 지원 되지 않습니다.|지원되지 않습니다.|  
-|`select(element)`|지정한 HTML 선택 `element` 에 [DOM 탐색기](../debugger/quickstart-debug-html-and-css.md)합니다.|console.select(요소);|  
+|`select(element)`|`element` DOM 탐색기 [에서 지정한 HTML](../debugger/quickstart-debug-html-and-css.md)를 선택합니다.|console.select(요소);|  
 |`time (name)`|선택적 `name` 매개 변수에서 식별하는 타이머를 시작합니다. `console.timeEnd`와 함께 사용할 경우 `time` 과 `timeEnd`사이에 경과된 시간을 계산하고 `name` 문자열을 접두사로 사용하여 결과(단위: ms)를 콘솔에 보냅니다. 성능을 측정하기 위한 앱 코드 계측을 활성화하는 데 사용됩니다.|`console.time("app start");  app.start();  console.timeEnd("app start");`|  
 |`timeEnd(name)`|선택적 `name` 매개 변수에서 식별하는 타이머를 중지합니다. `time` 콘솔 명령을 참조하세요.|`console.time("app start"); app.start(); console.timeEnd("app start");`|  
 |`trace()`|스택 추적을 콘솔 창에 보냅니다. 추적에는 파일 이름, 줄 번호 및 열 번호 등의 정보와 완전한 호출 스택이 포함됩니다.|`console.trace();`|  
@@ -64,13 +64,13 @@ ms.locfileid: "39154374"
 ## <a name="miscellaneous-commands"></a>기타 명령  
  다음 명령은 JavaScript 콘솔 창에서도 사용할 수 있습니다(코드에서는 사용할 수 없음).  
   
-|명령|설명|예|  
+|명령|설명|예제|  
 |-------------|-----------------|-------------|  
 |`$0`, `$1`, `$2`, `$3`, `$4`|콘솔 창에 지정된 요소를 반환합니다. `$0`은 DOM 탐색기에서 현재 선택한 요소를 반환하고 `$1`은 DOM 탐색기에서 이전에 선택한 요소를 반환하며 이전에 선택한 네 번째 요소까지 이런 식으로 반환됩니다.|$3|  
 |`$(id)`|ID별로 요소를 반환합니다. `document.getElementById(id)`에 대한 바로 가기 명령입니다. 여기서 `id` 는 요소 ID를 나타내는 문자열입니다.|`$("contenthost")`|  
 |`$$(selector)`|CSS 선택기 구문을 사용하여 지정된 선택기와 일치하는 요소의 배열을 반환합니다. `document.querySelectorAll()`에 대한 바로 가기 명령입니다.|`$$(".itemlist")`|  
 |`cd()`<br /><br /> `cd(window)`|식 계산 컨텍스트를 페이지의 기본 최상위 창에서 지정된 프레임의 창으로 변경할 수 있습니다. 매개 변수 없이 `cd()` 를 호출하면 컨텍스트가 최상위 창에 반환됩니다.|`cd();`<br /><br /> `cd(myframe);`|  
-|`select(element)`|지정 된 요소를 선택 [DOM 탐색기](../debugger/quickstart-debug-html-and-css.md)합니다.|`select(document.getElementById("element"));`<br /><br /> `select($("element"));`<br /><br /> `select($1);`|  
+|`select(element)`|[DOM 탐색기](../debugger/quickstart-debug-html-and-css.md)에서 지정된 요소를 선택합니다.|`select(document.getElementById("element"));`<br /><br /> `select($("element"));`<br /><br /> `select($1);`|  
 |`dir(object)`|지정된 개체에 대한 시각화 도우미를 반환합니다. 시각화 도우미를 사용하여 콘솔 창에서 속성을 검사할 수 있습니다.|`dir(obj);`|  
   
 ## <a name="checking-whether-a-console-command-exists"></a>콘솔 명령이 있는지 여부 확인  
@@ -104,16 +104,16 @@ console.log(user.first, user.last);
   
  다음과 같은 대체 패턴이 지원됩니다.  
   
--   %s - 문자열  
-     %i - 정수  
-     %d - 정수  
-     %f - float  
-     %o - 개체  
-     %b - 이진  
-     %x - 16진수  
-     %e - 지수  
+- %s - 문자열  
+   %i - 정수  
+   %d - 정수  
+   %f - float  
+   %o - 개체  
+   %b - 이진  
+   %x - 16진수  
+   %e - 지수  
   
- 다음은 `console.log`에 대체 패턴을 사용하는 몇 가지 예제입니다.  
+  다음은 `console.log`에 대체 패턴을 사용하는 몇 가지 예제입니다.  
   
 ```javascript  
 var user = new Object();  

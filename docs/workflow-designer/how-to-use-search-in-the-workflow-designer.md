@@ -10,12 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 3e8e44586f6b0f2f8aea5ab13eb27886d7b3a6e8
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: ecf4839cec08e9ffb0419aebcff9da145214b117
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757970"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49943065"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>방법: 워크플로 디자이너에서 검색 사용
 
@@ -35,11 +35,11 @@ ms.locfileid: "36757970"
 
 ### <a name="use-quick-find"></a>빠른 찾기 사용
 
-1.  워크플로 디자이너를 연을 누릅니다 **Ctrl + F**를 선택 하거나 **편집** > **찾기 및 바꾸기** > **빠른 찾기**.
+1. 워크플로 디자이너를 연을 누릅니다 **Ctrl + F**를 선택 하거나 **편집** > **찾기 및 바꾸기** > **빠른 찾기**.
 
-2.  에 검색어를 입력 합니다 **찾을 내용** 텍스트 상자 클릭 **다음 찾기**합니다.
+2. 에 검색어를 입력 합니다 **찾을 내용** 텍스트 상자 클릭 **다음 찾기**합니다.
 
-3.  검색어는 현재 워크플로에 있습니다. 다음 이미지에는 디자이너에 있는 중인 활동 표시 이름을 보여 줍니다.
+3. 검색어는 현재 워크플로에 있습니다. 다음 이미지에는 디자이너에 있는 중인 활동 표시 이름을 보여 줍니다.
 
    ![워크플로 디자이너의 검색 결과](../workflow-designer/media/designersearch.png)
 

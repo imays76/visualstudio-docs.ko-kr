@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5864b3503b19e8a473f45e4167aad835181da50
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9957b0aaf81048c5040e3f7ff54f3fa9be742dc1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108377"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858565"
 ---
 # <a name="debugrefinfoflags"></a>DEBUGREF_INFO_FLAGS
-검색할 디버그 참조 개체에 대 한 정보를 지정 합니다.  
+디버그 참조 개체에 대 한 검색 정보를 지정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -76,20 +76,20 @@ public enum enum_DEBUGREF_INFO_FLAGS {
  초기화/사용 된 `pReference` 구조의 필드입니다.  
   
  DEBUGREF_INFO_VALUE_AUTOEXPAND  
- 이 유형의 개체에 대 한 사용 가능한 경우 값 필드 자동 확장 값이 포함 되어야 합니다.  
+ 값 필드는이 형식의 개체에 대 한 사용 가능한 경우 자동 확장 값을 포함 해야 합니다.  
   
  DEBUGREF_INFO_NONE  
  플래그가 설정 되어 있는지를 나타냅니다.  
   
  DEBUGREF_INFO_ALL  
- 플래그의 마스크를 나타냅니다.  
+ 플래그 마스크를 나타냅니다.  
   
 ## <a name="remarks"></a>설명  
- 이러한 플래그에 전달 되는 [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) 및 [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) 의 필드를 나타내는 방법은 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 구조를 초기화할 수는 있습니다.  
+ 이러한 플래그에 전달 되는 [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) 및 [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) 의 필드를 나타내는 방법을 합니다 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 구조는 초기화할 합니다.  
   
- 에 사용 되는 `dwFields` 의 멤버는 `DEBUG_REFERENCE_INFO` 구조에는 필드는 사용 되지 않으며 유효한 구조를 반환 하는 경우.  
+ 에 사용 되는 합니다 `dwFields` 의 멤버는 `DEBUG_REFERENCE_INFO` 구조 반환 되 면 유효 하 고 사용 되는 필드는 구조체.  
   
- 이러한 값에 비트와 함께 사용할 수 있습니다 `OR`합니다.  
+ 이러한 값을 비트 결합할 수 있습니다 `OR`합니다.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  

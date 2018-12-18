@@ -5,12 +5,12 @@ title: Visual Studio 설명서 | Microsoft Docs
 description: Visual Studio 2017을 사용하여 플랫폼 및 장치에 대해 선택한 언어로 응용 프로그램, 서비스 및 도구를 개발하는 방법에 대해 알아봅니다.
 ms.topic: landing-page
 searchScope: []
-ms.openlocfilehash: 728091071a7e9409ac523ee078800915cba84814
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: d4419aadd8be604918b6793685079053e03d4289
+ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34690600"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52821359"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -42,37 +42,18 @@ ms.locfileid: "34690600"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/vsts" title="Visual Studio Team Services">
+                                <a href="/visualstudio/mac" title="Mac용 Visual Studio">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-team-services.svg" src="./images/vs-team-services.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs-mac.svg" src="./images/vs-mac.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Visual Studio Team Services</h3>
-                                                    <p>Agile 프로젝트 도구 및 보고서를 사용하여 팀 생산성을 높일 수 있습니다. 최신 CI/CD 도구를 사용하여 소스 제어에서 프로젝트를 빌드, 테스트 및 배포합니다.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://docs.microsoft.com/tfs" title="Team Foundation Server">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-team-services.svg" src="./images/vs-team-services.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Team Foundation Server</h3>
-                                                    <p>온-프레미스 배포를 설치, 업그레이드, 관리합니다.</p>
+                                                    <h3>Visual Studio for Mac</h3>
+                                                    <p>Mac을 사용하여 클라우드, iOS, Android, macOS 및 착용식 장치용 앱과 게임을 빌드하세요.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -99,26 +80,7 @@ ms.locfileid: "34690600"
                                 </a>
                             </li>
                             <li>
-                                <a href="/visualstudio/mac" title="Mac용 Visual Studio">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-mac.svg" src="./images/vs-mac.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Visual Studio for Mac</h3>
-                                                    <p>Mac을 사용하여 클라우드, iOS, Android, macOS 및 착용식 장치용 앱과 게임을 빌드하세요.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://docs.microsoft.com/appcenter" title="Visual Studio 앱 센터">
+                                <a href="/appcenter/" title="Visual Studio 앱 센터">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -137,7 +99,7 @@ ms.locfileid: "34690600"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://aka.ms/vs-subscriptions" title="Visual Studio 앱 센터">
+                                <a href="/visualstudio/subscriptions/" title="Visual Studio Subscription">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -155,10 +117,49 @@ ms.locfileid: "34690600"
                                     </div>
                                 </a>
                             </li>
+                            <li>
+                                <a href="/azure/devops/" title="Azure DevOps Services">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img data-scaleimage="./images/vs-team-services.svg" src="./images/vs-team-services.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Azure DevOps Services</h3>
+                                                    <p>Agile 프로젝트 도구 및 보고서를 사용하여 팀 생산성을 높일 수 있습니다. 최신 CI/CD 도구를 사용하여 소스 제어에서 프로젝트를 빌드, 테스트 및 배포합니다.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/tfs/" title="Azure DevOps Server">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img data-scaleimage="./images/vs-team-services.svg" src="./images/vs-team-services.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Azure DevOps Server</h3>
+                                                    <p>온-프레미스 배포를 설치, 업그레이드, 관리합니다.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
                         </ul>
                     </li>
                 </ul>
             </li>
         </ul>
+        <p>Visual Studio Team Services는 Azure DevOps Services로 대체되고, TFS(Team Foundation Server)는 Azure DevOps Server로 이름이 바뀌었습니다. <a href="/azure/devops/user-guide/what-happened-vsts?view=vsts">What happened to Visual Studio Team Services?</a>(Visual Studio Team Services의 변경 내용) 및 <a href="/tfs/server/tfs-is-now-azure-devops-server">Team Foundation Server is now Azure DevOps Server</a>(Team Foundation Server에서 Azure DevOps Server로 변경)를 참조하세요.</p>
     </div>
 </div>

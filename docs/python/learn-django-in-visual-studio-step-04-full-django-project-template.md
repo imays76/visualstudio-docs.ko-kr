@@ -1,22 +1,24 @@
 ---
-title: 자습서 - Visual Studio의 Django 알아보기, 4단계
+title: Visual Studio 4단계, 웹 프로젝트 템플릿에서 Django 자습서 알아보기
+titleSuffix: ''
 description: Visual Studio 프로젝트 컨텍스트에서 Django 기본 사항을 검토하는 연습 과정으로, Django 웹 프로젝트 템플릿에서 제공하는 기능을 구체적으로 설명합니다.
-ms.date: 04/25/2018
+ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f7b62914a1a0d895aaf3e1322c4ef7a68a555e0c
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 865a0368933fa0a66728afaead6677cbeca84834
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388178"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065463"
 ---
 # <a name="step-4-use-the-full-django-web-project-template"></a>4단계: 전체 Django 웹 프로젝트 템플릿 사용
 
@@ -87,7 +89,7 @@ Visual Studio에서 “빈 Django 웹 프로젝트” 템플릿을 기반으로 
 
 ## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>4-2단계: 프로젝트 템플릿으로 만든 보기 및 페이지 템플릿 이해
 
-프로젝트를 실행하면 앱에 홈, 정보, 연락처의 세 가지 보기가 포함되어 있음을 알 수 있습니다. 이러한 보기에 대한 코드는 *app/views* 폴더에 있습니다. 각 보기 함수는 템플릿의 경로 및 간단한 사전 개체로 `django.shortcuts.render`를 호출합니다. 예를 들어 정보 페이지는 `about` 함수에 의해 처리됩니다.
+프로젝트를 실행하면 앱에 세 가지 보기가 포함되어 있음을 알 수 있습니다. 홈, 정보 및 연락처. 이러한 보기에 대한 코드는 *app/views* 폴더에 있습니다. 각 보기 함수는 템플릿의 경로 및 간단한 사전 개체로 `django.shortcuts.render`를 호출합니다. 예를 들어 정보 페이지는 `about` 함수에 의해 처리됩니다.
 
 ```python
 def about(request):

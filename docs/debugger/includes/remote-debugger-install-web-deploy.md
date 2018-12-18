@@ -14,11 +14,11 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: c22ba73b464f91bf3036541304cdf94e8660970d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.sourcegitcommit: 1c675dae7c348defb32d9f7ccf7079a1062a1c4b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38811923"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48244115"
 ---
 1. Visual Studio에서 웹 배포에서 응용 프로그램을 배포 하려는 경우 서버에서 최신 버전의 웹 배포를 설치 합니다.
 

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 부하 테스트에 대한 테스트 에이전트 및 테스트 컨트롤러 구성
+title: 부하 테스트에 대한 데스트 에이전트 및 테스트 컨트롤러 구성
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,19 +9,21 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a64558f442b6d3ad77a34bb8ae4acb2860273c05
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 1f33859522ff42fc85c31261527f17ea0f765199
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176471"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068019"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>부하 테스트 실행에 대한 테스트 에이전트 및 테스트 컨트롤러 구성
 
 Visual Studio 는 실제 또는 가상 머신을 사용하여 앱에 대해 시뮬레이션된 부하를 생성할 수 있습니다. 이러한 컴퓨터는 단일 테스트 컨트롤러와 하나 이상의 테스트 에이전트로 설정되어야 합니다. 테스트 컨트롤러 및 테스트 에이전트를 사용하여 단일 컴퓨터에서 생성하는 것보다 많은 부하를 생성할 수 있습니다.
 
 > [!NOTE]
-> 또한 클라우드 기반 부하 테스트를 사용하여 동시에 웹 사이트에 액세스하는 여러 사용자의 부하를 생성하는 가상 머신을 제공할 수 있습니다. [VSTS를 사용하여 부하 테스트 실행](/vsts/load-test/get-started-simple-cloud-load-test)에서 클라우드 기반 부하 테스트에 대해 자세히 알아보세요.
+> 또한 클라우드 기반 부하 테스트를 사용하여 동시에 웹 사이트에 액세스하는 여러 사용자의 부하를 생성하는 가상 머신을 제공할 수 있습니다. [Azure Test Plans를 사용하여 부하 테스트 실행](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts)에서 클라우드 기반 부하 테스트에 대해 자세히 알아보세요.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="load-simulation-architecture"></a>부하 시뮬레이션 아키텍처
 
@@ -35,25 +37,25 @@ Visual Studio 는 실제 또는 가상 머신을 사용하여 앱에 대해 시�
 
 이 아키텍처는 다음과 같은 이점을 제공합니다.
 
--   테스트 컨트롤러에 테스트 에이전트를 더 추가하여 부하 생성 확장
+- 테스트 컨트롤러에 테스트 에이전트를 더 추가하여 부하 생성 확장
 
--   동일한 컴퓨터나 다른 컴퓨터에서 클라이언트, 테스트 컨트롤러 및 테스트 에이전트 소프트웨어를 설치할 수 있는 유연성 예:
+- 동일한 컴퓨터나 다른 컴퓨터에서 클라이언트, 테스트 컨트롤러 및 테스트 에이전트 소프트웨어를 설치할 수 있는 유연성 예:
 
-     **로컬 구성:**
+   **로컬 구성:**
 
-    -   컴퓨터1: Visual Studio, 컨트롤러, 에이전트
+  - 머신1: Visual Studio, 컨트롤러, 에이전트.
 
-     ![컨트롤러 및 에이전트를 사용하는 로컬 컴퓨터](./media/load-test-configa.png)
+    ![컨트롤러 및 에이전트를 사용하는 로컬 컴퓨터](./media/load-test-configa.png)
 
-     **일반 원격 구성:**
+    **일반 원격 구성:**
 
-    -   컴퓨터1 및 컴퓨터2: Visual Studio(여러 테스터가 같은 컨트롤러를 사용할 수 있음)
+  - 머신1 및 2: Visual Studio(여러 테스터가 동일한 컨트롤러를 사용할 수 있음).
 
-    -   컴퓨터3: 컨트롤러(여기에도 에이전트가 설치되어 있을 수 있음)
+  - 머신3: 컨트롤러(여기에도 에이전트가 설치되어 있을 수 있음).
 
-    -   컴퓨터4-n: 컴퓨터3의 컨트롤러와 모두 연결된 에이전트
+  - 머신4-n: 머신3의 컨트롤러와 모두 연결된 에이전트.
 
-     ![컨트롤러 및 에이전트를 사용하는 원격 컴퓨터](./media/load-test-configb.png)
+    ![컨트롤러 및 에이전트를 사용하는 원격 컴퓨터](./media/load-test-configb.png)
 
 테스트 컨트롤러는 일반적으로 여러 테스트 에이전트를 관리하지만 하나의 에이전트는 단일 컨트롤러와만 연결될 수 있습니다. 개발자 팀에서 각 테스트 에이전트를 공유할 수 있습니다. 이 아키텍처를 사용하면 테스트 에이전트의 수를 쉽게 늘릴 수 있으므로 더 큰 부하를 생성할 수 있습니다.
 

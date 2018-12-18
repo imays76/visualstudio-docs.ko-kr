@@ -1,22 +1,22 @@
 ---
-title: Visual Studio에서 접근할 수 없는 코드 리팩터링 제거
+title: 접근할 수 없는 리팩터링 제거
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
-author: kuhlenh
-ms.author: kaseyu
+author: gewarren
+ms.author: gewarren
 manager: douge
 dev_langs:
-- csharp
+- CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 73b04dafc094e05c57c626333a1d614de3ba76a1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 34bd11fe681199cecd0acd2e79cbc2f5d11fc494
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945677"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059313"
 ---
 # <a name="remove-unreachable-code-refactoring"></a>접근할 수 없는 리팩터링 제거
 
@@ -24,9 +24,9 @@ ms.locfileid: "31945677"
 
 - C#
 
-**대상:** 실행되지 않는 코드를 제거합니다.
+**내용:** 실행되지 않는 코드를 제거합니다.
 
-**시기:** 프로그램에 코드 조각 경로가 없어 코드 조각이 불필요합니다.
+**시기:** 프로그램에 코드 조각에 대한 경로가 없으므로 코드 조각이 불필요합니다.
 
 **이유:** 불필요하고 실행되지 않을 코드를 제거하여 가독성 및 유지 관리 편의성을 개선합니다.
 
@@ -39,9 +39,9 @@ ms.locfileid: "31945677"
 1. 다음 작업 중 하나를 수행합니다.
 
    - **키보드**
-     - 줄의 임의 위치에서 **Ctrl**+**.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거하고 [미리 보기] 창 팝업에서 **접근할 수 없는 코드 제거**를 선택합니다.
+      - 줄의 임의 위치에서 **Ctrl**+**.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거하고 [미리 보기] 창 팝업에서 **접근할 수 없는 코드 제거**를 선택합니다.
    - **마우스**
-     - 코드를 마우스 오른쪽 단추로 클릭하고, **빠른 작업 및 리팩터링** 메뉴를 선택하고, [미리 보기] 창 팝업에서 **접근할 수 없는 코드 제거**를 선택합니다.
+      - 코드를 마우스 오른쪽 단추로 클릭하고, **빠른 작업 및 리팩터링** 메뉴를 선택하고, [미리 보기] 창 팝업에서 **접근할 수 없는 코드 제거**를 선택합니다.
 
 1. 변경 내용에 만족할 경우 **Enter** 키를 누르거나 메뉴에서 수정을 클릭하면 변경 내용이 커밋됩니다.
 

@@ -1,22 +1,24 @@
 ---
-title: 자습서 - Visual Studio의 Django 알아보기, 3단계
+title: Visual Studio 3단계, 정적 파일 및 페이지에서 Django 자습서 알아보기
+titleSuffix: ''
 description: Visual Studio 프로젝트 컨텍스트에서 Django 기본 사항을 검토하는 연습 과정으로, 정적 파일을 제공하고 앱에 페이지를 추가하고 템플릿 상속을 사용하는 방법을 구체적으로 설명합니다.
-ms.date: 06/27/2018
+ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e6d4f4d9ae7be2fc196b7dada79ba89b527dd209
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: cfde21f356e35366cfb80b029f918eed0364a7b5
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388347"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066082"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>3단계: 정적 파일 제공, 페이지 추가 및 템플릿 상속 사용
 
@@ -27,7 +29,7 @@ ms.locfileid: "39388347"
 이 단계에서는 다음 방법을 학습합니다.
 
 > [!div class="checklist"]
-> - Visual Studio 항목 템플릿을 사용하여 편리한 상용구 코드로 신속하게 다양한 유형의 새 파일 만들기(3-1단계)
+> - Visual Studio 항목 템플릿을 사용하여 편리한 상용구 코드로 신속하게 다양한 형식의 새 파일 추가(3-1단계)
 > - 정적 파일을 제공하도록 Django 프로젝트 구성(3-2단계)
 > - 앱에 페이지 추가(3-3단계)
 > - 템플릿 상속을 사용하여 전체 페이지에서 사용되는 헤더 및 탐색 모음 만들기(3-4단계)
@@ -78,7 +80,7 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
     }
     ```
 
-1. 앱의 *templates/HelloDjangoApp/index.html* 파일 내용을 다음 코드로 바꿉니다. 이 코드는 2단계에서 사용된 `<strong>` 요소를 `message` 스타일 클래스를 참조하는 `<span>`으로 바꿉니다. 이런 식으로 스타일 클래스를 사용하면 훨씬 더 유연하게 요소의 스타일을 지정할 수 있습니다. *index.html*을 *templates*의 하위 폴더로 이동한 경우 2단계의 [템플릿 네임스페이스 지정](learn-django-in-visual-studio-step-02-create-an-app.md#template-namespacing)을 참조하세요.
+1. 앱의 *templates/HelloDjangoApp/index.html* 파일 내용을 다음 코드로 바꿉니다. 이 코드는 2단계에서 사용된 `<strong>` 요소를 `message` 스타일 클래스를 참조하는 `<span>`으로 바꿉니다. 이런 식으로 스타일 클래스를 사용하면 훨씬 더 유연하게 요소의 스타일을 지정할 수 있습니다. VS 2017 15.7 이전을 사용할 때 *index.html*을 *templates*의 하위 폴더로 이동하지 않은 경우 2-4단계의 [템플릿 네임스페이스 지정](learn-django-in-visual-studio-step-02-create-an-app.md#template-namespacing)을 참조하세요.
 
     ```html
     <html>
@@ -186,7 +188,7 @@ Django의 템플릿 시스템은 여러 템플릿에서 특정 요소를 다시 
 
 다음 단계에서는 상속을 보여줍니다.
 
-1. 앱의 *templates/HelloDjangoApp* 폴더에서 `layout.html`이라는 새 HTML 파일을 만들고(**추가** > **새 항목** 바로 가기 메뉴 또는 **추가** > **HTML 페이지** 사용) 콘텐츠를 아래의 태그로 대체합니다. 참조 페이지에서 바꿔야 하는 “content”라는 블록이 이 템플릿에 포함되어 있음을 알 수 있습니다.
+1. 앱의 *templates/HelloDjangoApp* 폴더에서 *layout.html*이라는 새 HTML 파일을 만들고(**추가** > **새 항목** 바로 가기 메뉴 또는 **추가** > **HTML 페이지** 사용) 콘텐츠를 아래의 태그로 대체합니다. 참조 페이지에서 바꿔야 하는 “content”라는 블록이 이 템플릿에 포함되어 있음을 알 수 있습니다.
 
     ```html
     <!DOCTYPE html>

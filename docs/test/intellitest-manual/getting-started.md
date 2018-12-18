@@ -1,5 +1,5 @@
 ---
-title: 단위 테스트 만들기 명령을 사용하여 단위 테스트 메서드 스텁 만들기
+title: IntelliTest 소개
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 72bba467bae5528333b520bdb40f5f4593982df2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3e33bab90c32ca1b7cd92714218e5694daa22aed
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31966502"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000741"
 ---
 # <a name="get-started-with-microsoft-intellitest"></a>Microsoft IntelliTest 시작
 
@@ -76,4 +76,4 @@ void StaticHelpers(Foo target) {
 
 ## <a name="got-feedback"></a>피드백이 있으신가요?
 
-아이디어와 기능 요청을 [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest)에 게시하세요.
+아이디어와 기능 요청을 [개발자 커뮤니티](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)에 게시하세요.

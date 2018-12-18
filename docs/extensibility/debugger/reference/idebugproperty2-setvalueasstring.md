@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5fb55fb6f9a90cf39120be408428524f64463d3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d8f165ade12f6a4d8661ca4b0070efb1452ec09a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116954"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903038"
 ---
 # <a name="idebugproperty2setvalueasstring"></a>IDebugProperty2::SetValueAsString
-지정 된 문자열에서 속성의 값을 설정합니다.  
+지정된 된 문자열에서 속성의 값을 설정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -45,13 +45,13 @@ int SetValueAsString (
   
 #### <a name="parameters"></a>매개 변수  
  `pszValue`  
- [in] 설정할 값을 포함 하는 문자열입니다.  
+ [in] 설정할 값이 들어 있는 string입니다.  
   
  `nRadix`  
- [in] 모든 숫자 정보를 해석 하는 데 사용할 기 수입니다. 이 경우 0을 기 수를 자동으로 확인 하도록 수 있습니다.  
+ [in] 모든 숫자 정보를 해석 하는 데 사용할 기 수입니다. 이 0을 기 수를 자동으로 확인 하도록 수 있습니다.  
   
  `dwTimeout`  
- [in] 이 메서드로부터 반환 하기 전에 대기할 밀리초 단위로 최대 시간을 지정 합니다. 사용 하 여 `INFINITE` 무기한 대기를 나타냅니다.  
+ [in] 이 메서드에서 반환 되기 전에 대기할 밀리초 단위로 최대 시간을 지정 합니다. 사용 하 여 `INFINITE` 무기한 대기 합니다.  
   
 ## <a name="return-value"></a>반환 값  
  성공 하면 반환 `S_OK`; 그렇지 않으면 오류 코드를 반환 합니다. 다음 표에서 가능한 다른 값을 보여 줍니다.  

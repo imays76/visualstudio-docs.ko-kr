@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ea79a27b933380bcfc9e21add841b3a5fc6beeb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 514e34830fde908b9cea0e4f213ae200d31ec678
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103060"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926893"
 ---
 # <a name="idebugbreakpointboundevent2enumboundbreakpoints"></a>IDebugBreakpointBoundEvent2::EnumBoundBreakpoints
 이 이벤트에 바인딩된 중단점의 열거자를 만듭니다.  
@@ -44,13 +44,13 @@ int EnumBoundBreakpoints(
  [out] 반환 된 [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) 이 이벤트에서 바인딩된 모든 중단점을 열거 하는 개체입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`합니다. 반환 `S_FALSE` 경우 바인딩된 중단점이 없고; 그렇지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`합니다. 반환 `S_FALSE` 경우 바인딩된 중단점; 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 이 이벤트에 바인딩된 것 바인딩된 중단점 목록이 되며 주로 보류 중단점에서 바인딩된 중단점의 전체 목록이 되지 않을 수 있습니다. 보류 중인 중단점에 바인딩된 모든 중단점의 목록을 가져오려면, 호출는 [GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md) 가져올 연결 된 메서드를 [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) 개체와 호출 후의 [ EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) 가져올 메서드를 한 [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) 보류 중인 중단점에 대 한 바인딩된 모든 중단점을 포함 하는 개체입니다.  
+ 이 이벤트에 바인딩된 것 바인딩된 중단점 목록이 되며 보류 중인 중단점에서 바인딩된 중단점의 전체 목록이 되지 않을 수 있습니다. 보류 중인 중단점에 바인딩된 모든 중단점의 목록을 가져오려면를 호출 합니다 [GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md) 를 연결 하는 방법 [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) 개체를 호출는 [ EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) 가져오려는 메서드는 [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) 보류 중인 중단점에 대 한 모든 바인딩된 중단점을 포함 하는 개체입니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제에 대 한이 메서드를 구현 하는 방법을 보여 줍니다는 **CBreakpointSetDebugEventBase** 공개 하는 개체는 [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) 인터페이스입니다.  
+ 다음 예제에서는이 메서드를 구현 하는 방법을 보여 줍니다는 **CBreakpointSetDebugEventBase** 노출 하는 개체를 [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) 인터페이스입니다.  
   
 ```cpp  
 STDMETHODIMP CBreakpointSetDebugEventBase::EnumBoundBreakpoints(  

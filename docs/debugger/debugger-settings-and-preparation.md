@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48cc5bfdf53f6a3d6e214b73b46c0fa46267787e
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: f32b5e68dec6696f6947fe78883c64b4c3caa322
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468301"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257032"
 ---
 # <a name="debugger-settings-and-preparation"></a>디버거 설정 및 준비
 이 단원에서는 디버거 관련 속성 설정에 대해 설명하고 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 디버거를 사용하여 프로그램을 디버깅하는 데 필요한 준비 사항에 대해 설명합니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 에서 프로젝트 템플릿을 사용하여 프로그램을 만들면 디버그 구성에서 이 설정이 올바르게 활성화됩니다.  
@@ -44,9 +44,6 @@ ms.locfileid: "39468301"
   
  [방법: Visual Studio 솔루션의 일부가 아닌 실행 파일 디버그](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)  
  Visual Studio 프로젝트의 일부로 작성되지 않은 실행 파일을 디버깅하는 방법에 대해 설명합니다.  
-  
- [방법: Code Center Premium 소스로 디버그](../debugger/how-to-debug-with-code-center-premium-source.md)  
- Visual Studio 프로젝트에서 Microsoft Code Center Premium의 소스를 디버깅하는 방법에 대해 설명합니다.  
   
  [64비트 응용 프로그램 디버그](../debugger/debug-64-bit-applications.md)  
  64비트 응용 프로그램을 디버그하는 방법을 설명합니다.  

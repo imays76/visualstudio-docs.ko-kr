@@ -18,21 +18,21 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0affe931e5b85d32acdc95fecaa50f3b7f2fe8f4
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
-ms.translationtype: MT
+ms.openlocfilehash: f8f7371418df19ec8452334641c7c9414328e557
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175701"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305015"
 ---
-# <a name="how-to-connect-to-data-in-a-service"></a>방법: 데이터 서비스에 연결
+# <a name="how-to-connect-to-data-in-a-service"></a>방법: 서비스의 데이터에 연결
 
 응용 프로그램을 실행 하 여 서비스에서 반환 되는 데이터 연결 합니다 [데이터 소스 구성 마법사](../data-tools/media/data-source-configuration-wizard.png) 를 선택 하 고 **서비스** 에 **데이터소스형식선택**페이지.
 
-마법사를 완료 하면 서비스 참조를 프로젝트에 추가 되 고에서 즉시 사용할 수는 [데이터 소스 창](add-new-data-sources.md)합니다.
+마법사를 완료 하면 서비스 참조를 프로젝트에 추가 되 고에서 즉시 사용할 수는 [데이터 소스 창](add-new-data-sources.md#data-sources-window)합니다.
 
 > [!NOTE]
-> 에 표시 되는 항목의 **데이터 원본** 창 서비스에서 반환 된 정보에 따라 달라 집니다. 일부 서비스에 대 한 충분 한 정보를 제공 하지 않을 수 있습니다 합니다 **데이터 소스 구성 마법사** 바인딩할 수 있는 개체를 만들 수 있습니다. 예를 들어 서비스가 형식화 되지 않은 데이터 집합을 반환 하는 경우에 아무런 항목도 표시 합니다 **데이터 소스 창** 마법사가 완료 될 때입니다. 형식화 되지 않은 데이터 집합 스키마를 제공 하지 마법사가 데이터 소스를 만드는 데 충분 한 정보를 갖고 있지 않아 때문입니다.
+> **데이터 원본** 창에 표시되는 항목은 서비스에서 반환하는 정보에 따라 달라집니다. **데이터 원본 구성 마법사**에서 바인딩 가능한 개체를 만들기에 충분한 정보를 제공하지 않는 서비스도 있습니다. 예를 들어 서비스가 형식화 되지 않은 데이터 집합을 반환 하는 경우에 아무런 항목도 표시 합니다 **데이터 원본** 마법사가 완료 될 때 창입니다. 형식화 되지 않은 데이터 집합 스키마를 제공 하지 마법사가 데이터 소스를 만드는 데 충분 한 정보를 갖고 있지 않아 때문입니다.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -53,13 +53,13 @@ ms.locfileid: "39175701"
 
 6.  **마침**을 클릭합니다.
 
-     데이터 원본에 추가 되는 **데이터 원본** 창입니다.
+     데이터 원본이 **데이터 원본** 창에 추가됩니다.
 
 ## <a name="next-steps"></a>다음 단계
 
 응용 프로그램에 기능을 추가 하려면에서 항목을 선택 합니다 **데이터 원본** 창 바인딩된 컨트롤을 만드는 폼으로 끌어 옵니다. 자세한 내용은 [Visual Studio에서 데이터에 컨트롤 바인딩](../data-tools/bind-controls-to-data-in-visual-studio.md)합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [WCF 데이터 서비스에 WPF 컨트롤 바인딩](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)
-- [Visual Studio의 Windows Communication Foundation 서비스 및 WCF data services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Windows Communication Foundation 서비스 및 Visual Studio의 WCF 데이터 서비스](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

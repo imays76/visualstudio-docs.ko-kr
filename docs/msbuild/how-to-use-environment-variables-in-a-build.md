@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c2f5afe7f58e85b1ddfc5671b635d4df7fad3bd3
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: d57709b2e1ff4f3721644f2f61e030ea8ccccf82
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078243"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828369"
 ---
 # <a name="how-to-use-environment-variables-in-a-build"></a>방법: 빌드 시 환경 변수 사용
 프로젝트를 빌드할 때 프로젝트 파일이나 프로젝트를 구성하는 파일에 없는 정보를 사용하여 빌드 옵션을 설치해야 하는 경우가 많습니다. 이 정보는 대개 환경 변수에 저장되어 있습니다.  
@@ -32,11 +32,11 @@ ms.locfileid: "39078243"
   
 #### <a name="to-use-an-environment-variable-in-an-msbuild-project"></a>MSBuild 프로젝트에서 환경 변수를 사용하려면  
   
--   프로젝트 파일에서 선언된 변수를 참조하는 것과 같은 방식으로 환경 변수를 참조합니다. 예를 들어 다음 코드는 BIN_PATH 환경 변수를 참조합니다.  
+- 프로젝트 파일에서 선언된 변수를 참조하는 것과 같은 방식으로 환경 변수를 참조합니다. 예를 들어 다음 코드는 BIN_PATH 환경 변수를 참조합니다.  
   
-     `<FinalOutput>$(BIN_PATH)\MyAssembly.dll</FinalOutput>`  
+   `<FinalOutput>$(BIN_PATH)\MyAssembly.dll</FinalOutput>`  
   
- 환경 변수가 설정되지 않은 경우 `Condition` 특성을 사용하여 속성의 기본값을 제공할 수 있습니다.  
+  환경 변수가 설정되지 않은 경우 `Condition` 특성을 사용하여 속성의 기본값을 제공할 수 있습니다.  
   
 #### <a name="to-provide-a-default-value-for-a-property"></a>속성의 기본값을 제공하려면  
   

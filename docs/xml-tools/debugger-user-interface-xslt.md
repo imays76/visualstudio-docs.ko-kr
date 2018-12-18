@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df50443a4a86e1524f20fa61275364b7c6603fdf
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6c2cedf1a07307b8494e6a6b810e9590f347c9f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176026"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847385"
 ---
 # <a name="debugger-user-interface-xslt"></a>디버거 사용자 인터페이스 (XSLT)
 
@@ -41,7 +41,7 @@ ms.locfileid: "39176026"
  지역 창에는 XSLT 변형 컨텍스트를 추적하는 미리 정의된 컨텍스트 변수도 표시됩니다. 다음 표에서는 XSLT 디버거에서 사용하는 미리 정의된 컨텍스트 변수를 설명합니다.
 
 |이름|설명|
-|----------|-----------------|
+|-|-----------------|
 |`last()`|컨텍스트 크기입니다.|
 |`position()`|컨텍스트 크기에 상대적인 컨텍스트 노드의 위치 또는 인덱스 번호입니다.|
 |`self::node()`|컨텍스트 노드의 값입니다.|

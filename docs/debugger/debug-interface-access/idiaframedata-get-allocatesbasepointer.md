@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: efbadae145fff951effc7413e432ab2570549c95
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e981a29352c5adf192a0eb3cdccd59a088e29db6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462004"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875244"
 ---
 # <a name="idiaframedatagetallocatesbasepointer"></a>IDiaFrameData::get_allocatesBasePointer
-이 주소 범위에는 코드에 대 한 기본 포인터 할당 되었는지 여부를 나타내는 플래그를 검색 합니다. 이 메서드는 사용 되지 않습니다.  
+이 주소 범위에서 코드에 대 한 기본 포인터 할당 되었는지 여부를 나타내는 플래그를 검색 합니다. 이 메서드는 사용 되지 않습니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -34,13 +34,13 @@ HRESULT get_allocatesBasePointer (
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out] 반환 `TRUE` 기본 포인터를 할당 하 고; 그렇지 않으면 반환 `FALSE`합니다.  
+ [out] 반환 `TRUE` 기본 포인터 할당 되어 있습니다; 그렇지 않으면 반환 `FALSE`합니다.  
   
 ## <a name="return-value"></a>반환 값  
  성공 하면 반환 `S_OK`합니다. 반환 `S_FALSE` 경우이 속성이 지원 되지 않습니다. 그러지 않으면 오류 코드가 반환됩니다.  
   
 ## <a name="remarks"></a>설명  
- 이 속성에서 반환 되는 프로그램 문자열 또는 FPO_DATA, 이전 액세스 하는 코드를 통해서만 사용할 수 해야는 [idiaframedata:: Get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) 방법은 `NULL`합니다. 그렇지 않은 경우 프로그램 문자열 이전 레지스터 값을 계산 하는 데 필요한 모든 정보를 포함 합니다.  
+ FPO_DATA, 이전의 액세스는 또는 프로그램 문자열을 반환 하는 경우 코드 에서만이 속성을 사용 해야 합니다 [idiaframedata:: Get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) 메서드는 `NULL`합니다. 그렇지 않은 경우 프로그램 문자열이 이전 레지스터 값을 계산 하는 데 필요한 모든 정보를 포함 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   

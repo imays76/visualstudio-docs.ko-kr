@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 97a4871f3f9f7726f8e0f62008c22aef5e22234e
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: a42c1cc9dac8e71bfe71f684232fdbf67fadb710
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755146"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929545"
 ---
 # <a name="transactedreceivescope-activity-designer"></a>TransactedReceiveScope 활동 디자이너
 
@@ -38,7 +38,7 @@ ms.locfileid: "36755146"
 다음 표에서는 <xref:System.ServiceModel.Activities.TransactedReceiveScope> 속성을 보여 주고 디자이너에서 이 속성을 사용하는 방법을 설명합니다. 이러한 <xref:System.Activities.Activity.DisplayName%2A> 워크플로 디자이너 화면 또는 속성 표의 속성을 편집할 수 있습니다 하지만 다른 디자인 화면에서 편집 해야 합니다.
 
 |속성 이름|필수|용도|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.ServiceModel.Activities.TransactedReceiveScope> 활동의 선택적 이름입니다. 기본값은 TransactedReceiveScope입니다.<br /><br /> <xref:System.Activities.Activity.DisplayName%2A> 이름이 꼭 필요하지 않더라도 표시 이름을 사용하는 것이 좋습니다.|
 |<xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A>|True|삭제를 <xref:System.ServiceModel.Activities.Receive> 활동을 **요청** activity designer 화면에는 블록입니다.|
 |<xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A>|False|삭제를 <xref:System.Activities.Activity> 에 **본문** activity designer 화면에서 차단 합니다.|
@@ -47,7 +47,7 @@ ms.locfileid: "36755146"
 
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)
-- [수신](../workflow-designer/receive-activity-designer.md)
+- [Receive](../workflow-designer/receive-activity-designer.md)
 - [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)
-- [보내기](../workflow-designer/send-activity-designer.md)
+- [Send](../workflow-designer/send-activity-designer.md)
 - [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)

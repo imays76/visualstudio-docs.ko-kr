@@ -14,10 +14,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: c0b1edc23c540cc2ba5f195f8bc0e6d8422e8fa8
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
-ms.translationtype: HT
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
+ms.lasthandoff: 11/12/2018
 ms.locfileid: "38810217"
 ---
 Windows 7

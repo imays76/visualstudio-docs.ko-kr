@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 부하 테스트 결과 관리
+title: 부하 테스트 결과 관리
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,20 +13,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8f5f13915d248ff59e7a3ca1bde8ad4ee92c201e
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 0b2d030f375f67608fc6cf34ae108fed2ba54f5d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380360"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067118"
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>부하 테스트 결과 리포지토리에서 부하 테스트 결과 관리
 
 부하 테스트를 실행할 때 부하 테스트 실행 도중 수집된 정보는 *부하 테스트 결과 리포지토리*라는 SQL 데이터베이스에 저장될 수 있습니다. 부하 테스트 결과 리포지토리에는 성능 카운터 데이터와 기록된 오류에 대한 정보가 들어 있습니다. 결과 리포지토리 데이터베이스는 컨트롤러용 설치 프로그램에서 만들어지거나 부하 테스트를 처음으로 로컬에서 실행할 때 자동으로 만들어집니다. 부하 테스트를 로컬로 실행할 때 부하 테스트 스키마가 없으면 데이터베이스가 자동으로 만들어집니다.
 
- 다른 서버를 사용하도록 컨트롤러의 결과 리포지토리 연결 문자열을 수정하는 경우 새 서버에서 *loadtestresultsrepository.sql* 스크립트를 실행하여 스키마를 만들어야 합니다.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- Visual Studio Enterprise에서는 기술을 기반으로 일반적인 성능 카운터를 수집하는 명명된 카운터 집합을 제공합니다. 이러한 집합은 IIS 서버, ASP.NET 서버 또는 SQL 서버를 분석할 때 유용합니다. 카운터 집합으로 수집된 모든 데이터는 부하 테스트 결과 리포지토리에 저장됩니다.
+다른 서버를 사용하도록 컨트롤러의 결과 리포지토리 연결 문자열을 수정하는 경우 새 서버에서 *loadtestresultsrepository.sql* 스크립트를 실행하여 스키마를 만들어야 합니다.
+
+Visual Studio Enterprise에서는 기술을 기반으로 일반적인 성능 카운터를 수집하는 명명된 카운터 집합을 제공합니다. 이러한 집합은 IIS 서버, ASP.NET 서버 또는 SQL 서버를 분석할 때 유용합니다. 카운터 집합으로 수집된 모든 데이터는 부하 테스트 결과 리포지토리에 저장됩니다.
 
 > [!IMPORTANT]
 > 카운터 집합과 성능 카운터 데이터에는 차이가 있습니다. 카운터 집합은 메타데이터이며 IIS 또는 SQL Server와 같은 특정 역할을 수행 중인 컴퓨터에서 수집되어야 하는 성능 카운터 그룹을 정의합니다. 카운터 집합은 부하 테스트 정의의 일부입니다. 반면 성능 카운터 데이터는 카운터 집합, 특정 컴퓨터에 대한 카운터 집합 매핑, 샘플링 주기를 기반으로 수집됩니다.
@@ -44,11 +46,11 @@ ms.locfileid: "39380360"
 ## <a name="load-test-analyzer-tasks"></a>부하 테스트 분석기 작업
 
 |작업|관련 항목|
-|-----------|-----------------------|
-|**부하 테스트 결과 리포지토리 설정:** SQL 데이터베이스에 부하 테스트 결과 리포지토리를 설정할 수 있습니다. **참고:** 테스트 컨트롤러를 설치할 때 부하 테스트 리포지토리를 만들 수도 있습니다. 자세한 내용은 [테스트 에이전트 설치 및 구성](../test/lab-management/install-configure-test-agents.md)을 참조하세요.||
+|-|-----------------------|
+|**부하 테스트 결과 리포지토리 설정:** SQL 데이터베이스에 부하 테스트 결과 리포지토리를 설정할 수 있습니다. **참고:**  테스트 컨트롤러를 설치할 때 부하 테스트 리포지토리를 만들 수도 있습니다. 자세한 내용은 [테스트 에이전트 설치 및 구성](../test/lab-management/install-configure-test-agents.md)을 참조하세요.||
 |**결과 리포지토리 선택 및 보기:** 특정 결과 리포지토리를 선택할 수 있습니다. 로컬 결과 저장소로 제한되지는 않습니다. 부하 테스트는 주로 에이전트 컴퓨터의 원격 집합에서 실행됩니다. 에이전트나 로컬 컴퓨터의 테스트 결과는 부하 테스트 결과 저장소가 만들어진 모든 SQL 서버에 저장할 수 있습니다. 에이전트나 로컬 컴퓨터 모두 **테스트 컨트롤러 관리** 창을 사용하여 부하 테스트 결과를 저장할 위치를 식별해야 합니다.|-   [방법: 부하 테스트 결과 리포지토리 선택](../test/how-to-select-a-load-test-results-repository.md)<br />-   [방법: 분석을 위한 부하 테스트 결과 액세스](../test/how-to-access-load-test-results-for-analysis.md)|
-|**리포지토리에서 부하 테스트 결과 삭제:** **부하 테스트 결과 열기 및 관리** 대화 상자를 사용하여 **부하 테스트 편집기**에서 부하 테스트 결과를 제거할 수 있습니다.|-   [방법: 리포지토리에서 부하 테스트 결과 삭제](../test/how-to-delete-load-test-results-from-a-repository.md)|
-|**리포지토리에서 결과 가져오기 및 내보내기:** **부하 테스트 편집기**에서 부하 테스트 결과를 가져오고 내보낼 수 있습니다.|-   [방법: 리포지토리로 부하 테스트 결과 가져오기](../test/how-to-import-load-test-results-into-a-repository.md)<br />-   [방법: 리포지토리에서 부하 테스트 결과 내보내기](../test/how-to-export-load-test-results-from-a-repository.md)|
+|**리포지토리에서 부하 테스트 결과 삭제:** **부하 테스트 결과 열기 및 관리** 대화 상자를 사용하면 **부하 테스트 편집기**에서 부하 테스트 결과를 제거할 수 있습니다.|-   [방법: 리포지토리에서 부하 테스트 결과 삭제](../test/how-to-delete-load-test-results-from-a-repository.md)|
+|**리포지토리로 결과 가져오기 및 내보내기:** **부하 테스트 편집기**에서 부하 테스트 결과를 가져오고 내보낼 수 있습니다.|-   [방법: 리포지토리로 부하 테스트 결과 가져오기](../test/how-to-import-load-test-results-into-a-repository.md)<br />-   [방법: 리포지토리에서 부하 테스트 결과 내보내기](../test/how-to-export-load-test-results-from-a-repository.md)|
 
 ## <a name="related-tasks"></a>관련 작업
 

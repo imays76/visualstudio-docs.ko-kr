@@ -19,19 +19,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c2b8e9051a127a7338bc5d1ae6bd82b2e65ba3f4
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e1556897fe3efb2e8b1a4060ff8de20ca159a68d
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473139"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279143"
 ---
 # <a name="edit-and-continue-dialog-box"></a>편집하며 계속하기 대화 상자
-(네이티브 전용) 디버깅 하는 동안 코드를 편집 하는 경우이 대화 상자가 나타납니다 및 **편집 하며 계속 하기** 코드 변경 내용을 적용할 수 있다고 인식 합니다. 자세한 내용은 참조 [편집 하며 계속 하기](../debugger/edit-and-continue.md)합니다.  
+(네이티브 전용) 디버깅 하는 동안 코드를 편집 해야 하는 경우이 대화 상자 표시 하 고 **편집 하며 계속 하기** 코드 변경 내용을 적용할 수 있다고 인식 합니다. 자세한 내용은 [편집 하며 계속 하기](../debugger/edit-and-continue.md)합니다.  
   
- **다시 표시 안 함 내게이 대화 상자**  
- 이 확인란을 선택 하는 경우 **편집 하며 계속 하기** 나중에 권한을 요청 하지 않고 코드 변경 내용을 적용 합니다. 다시 설정할 수 있습니다이 경고으로 이동 하 여는 **옵션** 열리는 대화 상자는 **디버깅** 폴더를 클릭 하는 **편집 하며 계속 하기** 페이지 및 선택**디버그 명령으로 호출** 및 **먼저 확인**합니다.  
+ **다시 표시 안 함 me이 대화 상자**  
+ 이 확인란을 선택 하는 경우 **편집 하며 계속 하기** 앞으로 권한을 요청 하지 않고 코드 변경 내용을 적용 합니다. 다시 설정할 수 있습니다이 경고로 이동 하 여는 **옵션** 대화 상자를 열기를 **디버깅** 폴더를 클릭 하는 **편집 하며 계속 하기** 페이지 및 선택 **디버그 명령으로 호출** 하 고 **먼저 확인**합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [디버거 보안](../debugger/debugger-security.md)   
- [편집 하며 계속 하기, 옵션 대화 상자, 디버깅](http://msdn.microsoft.com/Library/009d225f-ef65-463f-a146-e4c518f86103)
+ [옵션 대화 상자, 디버깅, 편집하며 계속하기](https://msdn.microsoft.com/library/bcew296c.aspx)

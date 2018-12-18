@@ -1,5 +1,6 @@
 ---
-title: 스냅숏 디버깅 문제 해결 및 알려진 문제 | Microsoft Docs
+title: 스냅숏 디버깅 문제 해결 | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/07/2017
 ms.technology: vs-ide-debug
 ms.topic: troubleshooting
@@ -11,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b564c208892ac169fd88b13101945bbf7223d20
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: 82d8a310b86d5dc3c776243293a91f176025f897
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152018"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059829"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Visual Studio에서 스냅숏 디버깅 문제 해결 및 알려진 문제
 
@@ -32,7 +33,7 @@ ms.locfileid: "39152018"
 
 1. 빌드 및 배포에 app.isua1 하는 데 사용 된 소스 코드의 같은 버전이 있는지 확인 합니다. 배포에 대 한 올바른 기호를 로드 하는 있는지 확인 합니다. 이렇게 하려면 보기를 **모듈** 창 스냅숏 디버깅 하는 동안 및 기호 파일 열에는 표시.pdb 파일을 디버깅 하는 모듈에 대 한 로드를 확인 합니다. 스냅숏 디버거는 자동으로 다운로드 하 고 배포에 대 한 기호를 사용 하려고 합니다.
 
-## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>문제: 스냅숏을 열면 기호 로드 하지 않습니다.
+## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>문제: 스냅숏을 열면 기호를 로드 하지 않습니다.
 
 다음 창 표시 되 면 기호가 로드 되지 않았습니다.
 
@@ -42,13 +43,13 @@ ms.locfileid: "39152018"
 
 - 클릭 된 **기호 설정을 변경 하는 중...** 이 페이지에 연결 합니다. 에 **디버깅 > 기호** 설정, 기호 캐시 디렉터리를 추가 합니다. 스냅숏 디버깅 기호 경로 설정한 후 다시 시작 합니다.
 
-   기호 또는.pdb 파일을 프로젝트에서 사용할 수 있는 App Service 배포를 일치 해야 합니다. 대부분의 배포 (Visual Studio, VSTS 또는 Kudu를 사용한 CI/CD를 통해 배포 등) App Service에 따라 기호 파일을 게시 합니다. 이러한 기호를 사용 하려면 Visual Studio를 사용 하면 기호 캐시 디렉터리를 설정 합니다.
+   기호 또는.pdb 파일을 프로젝트에서 사용할 수 있는 App Service 배포를 일치 해야 합니다. 대부분의 배포 (Visual Studio, Azure 파이프라인 또는 Kudu를 사용한 CI/CD를 통해 배포 등) App Service에 따라 기호 파일을 게시 합니다. 이러한 기호를 사용 하려면 Visual Studio를 사용 하면 기호 캐시 디렉터리를 설정 합니다.
 
    ![기호 설정](../debugger/media/snapshot-troubleshooting-symbol-settings.png "기호 설정")
 
 - 또는 조직 기호 서버를 사용 하 여 또는 다른 경로에서 기호를 삭제 하는 경우 배포에 대 한 올바른 기호를 로드 하려면 기호 설정을 사용 합니다.
 
-## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>클라우드 탐색기에서 "스냅숏 디버거 연결" 옵션을 볼 수 없는 문제:
+## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>문제: 클라우드 탐색기에서 "스냅숏 디버거 연결" 옵션을 볼 수 없는
 
 다음이 단계를 수행 합니다.
 
@@ -82,7 +83,7 @@ ms.locfileid: "39152018"
 - 슬롯 사이트를 시작 합니다. 다시 준비 사이트를 방문 하는 것이 좋습니다.
 - 프로덕션 슬롯을 교환 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [Visual Studio의 디버깅](../debugger/index.md)  
 [스냅숏 디버거를 사용 하 여 라이브 ASP.NET 앱 디버그](../debugger/debug-live-azure-applications.md)  

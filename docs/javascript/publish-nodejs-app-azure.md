@@ -2,7 +2,7 @@
 title: Linux App Service에 Node.js 앱 게시
 description: Azure에서 Linux App Service에 Visual Studio에서 생성한 Node.js 응용 프로그램을 게시할 수 있습니다.
 ms.custom: ''
-ms.date: 06/10/2018
+ms.date: 11/1/2018
 ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: cf96610abcd0cc18bdaab6177980ca04e0232642
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 8af99919fe80f1f5e2776e381d24aa8d37bad36d
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924773"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750769"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Azure에 Node.js 응용 프로그램 게시(Linux App Service)
 
@@ -31,7 +31,7 @@ Linux App Service는 Linux Docker 컨테이너를 배포하여 Node.js 응용 �
 
 이 자습서에서는 Visual Studio용 Node.js 도구를 사용하여 설치한 템플릿에서 시작하는 Node.js 응용 프로그램을 만들고, 코드를 GitHub의 리포지토리로 푸시한 다음, GitHub 리포지토리에서 배포할 수 있도록 Azure 웹 포털을 통해 Azure App Service를 프로비전하는 방법을 설명합니다. 명령줄을 사용하여 Azure App Service를 프로비전하고 로컬 Git 리포지토리에서 코드를 푸시하려면 [Node.js 앱 만들기](/azure/app-service/containers/quickstart-nodejs)를 참조하세요.
 
-이 자습서에서는 다음 방법을 학습합니다.
+이 자습서에서는 다음과 같은 작업을 수행하는 방법을 살펴봅니다.
 > [!div class="checklist"]
 > * Node.js 프로젝트 만들기
 > * 코드에 대한 GitHub 리포지토리 만들기
@@ -42,15 +42,19 @@ Linux App Service는 Linux Docker 컨테이너를 배포하여 Node.js 응용 �
 
 1. **파일** > **새 프로젝트** 대화 상자를 사용하여 새로운 TypeScript Express 앱을 만듭니다.
 
+1. **TypeScript** 노드 아래에서 **기본 Node.js Express 4 응용 프로그램**을 선택합니다.
+
     ![새로운 TypeScript Express 앱 만들기](../javascript/media/azure-ts-express-app.png)
 
-2. **F5** 키를 눌러 앱을 빌드 및 실행하고, 예상한 대로 잘 실행되는지 확인합니다.
+1. **확인**을 클릭하여 Visual Studio에서 프로젝트를 만듭니다.
 
-3. **파일** > **소스 제어에 추가**를 선택하여 프로젝트에 대한 로컬 Git 리포지토리를 만듭니다.
+1. **F5** 키를 눌러 앱을 빌드 및 실행하고, 예상한 대로 잘 실행되는지 확인합니다.
+
+1. **파일** > **소스 제어에 추가**를 선택하여 프로젝트에 대한 로컬 Git 리포지토리를 만듭니다.
 
     이 시점에서 Express 프레임워크를 사용하고 TypeScript에서 작성된 Node.js 앱이 작동하고 로컬 소스 제어에 체크 인됩니다.
 
-4. 다음 단계를 진행하기 전에 원하는 대로 프로젝트를 편집합니다.
+1. 다음 단계를 진행하기 전에 원하는 대로 프로젝트를 편집합니다.
 
 ## <a name="push-code-from-visual-studio-to-github"></a>코드를 Visual Studio에서 GitHub로 푸시
 

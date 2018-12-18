@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 코드 검사 분석 사용자 지정
+title: 코드 검사 분석 사용자 지정
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7b48fc77dd88cf327050c0bf8ba893f8d4a626fa
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 09af57ca64524dafa506d57d486e9385a4c35a93
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303005"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53054945"
 ---
 # <a name="customize-code-coverage-analysis"></a>코드 검사 분석 사용자 지정
 
@@ -91,7 +91,7 @@ ms.locfileid: "36303005"
 
 Include 및 exclude 노드는 정규식을 사용합니다. 자세한 내용은 [Visual Studio에서 정규식 사용](../ide/using-regular-expressions-in-visual-studio.md)을 참조하세요. 정규식은 와일드카드와 다릅니다. 특히 다음과 같습니다.
 
-- **.\*** 은(는) 모든 문자의 문자열과 일치합니다.
+- **.\\***는 모든 문자의 문자열과 일치합니다.
 
 - **\\.** 점 “.”과 일치합니다.
 
@@ -190,7 +190,7 @@ Note that searching for symbols increases code coverage runtime. So keep this sm
 <!--
 About include/exclude lists:
 Empty "Include" clauses imply all; empty "Exclude" clauses imply none.
-Each element in the list is a regular expression (ECMAScript syntax). See http://msdn.microsoft.com/library/2k3te2cs.aspx.
+Each element in the list is a regular expression (ECMAScript syntax). See https://docs.microsoft.com/visualstudio/ide/using-regular-expressions-in-visual-studio.
 An item must first match at least one entry in the include list to be included.
 Included items must then not match any entries in the exclude list to remain included.
 -->

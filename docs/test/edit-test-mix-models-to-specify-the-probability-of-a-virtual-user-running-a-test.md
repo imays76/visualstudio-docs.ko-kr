@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 텍스트 조합 모델 편집
+title: 텍스트 조합 모델 편집
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 32fc3ef0684c89c422fac76550ba1fa123eb2f6b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6016aaa3273347509d82af5ef4fba70fa3ecc253
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180443"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057115"
 ---
 # <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>테스트 조합 모델을 편집하여 가상 사용자의 테스트 실행 가능성 지정
 
 *테스트 조합 모델*은 가상 사용자가 부하 테스트 시나리오에서 지정된 테스트를 실행할 확률을 지정합니다. 이렇게 하면 부하를 보다 사실적으로 시뮬레이션할 수 있습니다. 응용 프로그램에서 워크플로를 하나만 사용하는 대신 여러 워크플로를 사용하면 최종 사용자가 응용 프로그램과 상호 작용하는 방식을 보다 가깝게 테스트할 수 있습니다.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="test-mix-model-options"></a>테스트 조합 모델 옵션
 
@@ -32,12 +34,12 @@ ms.locfileid: "39180443"
 
 -   **사용자 속도 기반:** 부하 테스트가 진행되는 동안 각 웹 성능 테스트 또는 단위 테스트가 시간당 사용자별로 지정된 횟수만큼 실행됩니다. 가상 사용자가 부하 테스트 전체에서 특정 속도로 테스트를 실행하도록 하려는 경우 이 테스트 조합 모델을 사용합니다.
 
--   **순차적 테스트 순서 기반:** 각 가상 사용자가 시나리오에 정의된 테스트 순서에 따라 웹 성능 또는 단위 테스트를 실행합니다. 가상 사용자는 부하 테스트가 완료될 때까지 이 순서로 테스트를 계속해서 순환합니다.
+-   **정렬된 순서 기반:** 각 가상 사용자가 시나리오에 정의된 테스트 순서에 따라 웹 성능 또는 단위 테스트를 실행합니다. 가상 사용자는 부하 테스트가 완료될 때까지 이 순서로 테스트를 계속해서 순환합니다.
 
 ## <a name="tasks"></a>작업
 
 |작업|관련 항목|
-|-----------|-----------------------|
+|-|-----------------------|
 |**부하 테스트의 테스트 조합 지정:** 부하 테스트를 만들 때 **부하 테스트 새로 만들기 마법사**에서 부하 테스트에 대한 설정을 지정합니다. **부하 테스트 새로 만들기 마법사**에서 초기 시나리오에 추가할 기존 웹 및 단위 테스트를 선택합니다. 시나리오에 테스트를 추가한 후 시나리오의 테스트 조합을 지정합니다.<br /><br /> 부하 모델링 옵션을 사용하여 부하 테스트를 수행하는 웹 사이트 또는 응용 프로그램의 예상 실제 사용법을 보다 정확하게 예측할 수 있습니다. 정확한 부하 모델을 기반으로 하지 않는 부하 테스트에서는 잘못된 결과가 생성될 수 있으므로 부하 모델을 사용하는 것이 중요합니다.|-   [웹 사이트 또는 응용 프로그램의 예상 실제 사용법 에뮬레이트](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md)|
 |**테스트 조합 모델 편집:** **부하 테스트 편집기**를 사용하여 테스트 조합 모델 중 하나를 사용하도록 부하 테스트 시나리오를 변경할 수 있습니다.||
 |**사용자 속도 테스트 조합 모델에 대한 속도 지연 구성:** 부하 테스트 시나리오가 **사용자 속도 기반 테스트 조합 모델**을 사용하도록 구성되어 있는 경우 배포 속도 지연의 구성 방식을 지정할 수 있습니다.|-   [방법: 사용자 속도 테스트 조합 모델을 사용할 때 속도 지연에 분포 적용](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)|

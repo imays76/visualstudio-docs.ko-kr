@@ -13,16 +13,16 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6ddb535a61b654297c8b7d93ac13e1161725d769
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 3f5ddf5a42199c8097e982c6ddd8e559185787fb
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234636"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672342"
 ---
 # <a name="options-text-editor-cc-experimental"></a>옵션, 텍스트 편집기, C/C++, 실험적
 
-이러한 옵션을 변경하면 C 또는 C++에서 프로그래밍할 때 IntelliSense 및 검색 데이터베이스 관련 동작을 변경할 수 있습니다. 이러한 기능은 실험적이며 향후 릴리스의 Visual Studio에서 수정되거나 제거될 수 있습니다. 이 항목에서는 Visual Studio 2017의 옵션을 설명합니다. Visual Studio 2015의 경우 [옵션, 텍스트 편집기, C/C++, 실험적](https://msdn.microsoft.com/library/mt591979.aspx)을 참조하세요.
+이러한 옵션을 변경하면 C 또는 C++에서 프로그래밍할 때 IntelliSense 및 검색 데이터베이스 관련 동작을 변경할 수 있습니다. 이러한 기능은 실험적이며 향후 릴리스의 Visual Studio에서 수정되거나 제거될 수 있습니다. 이 항목에서는 Visual Studio 2017의 옵션을 설명합니다. Visual Studio 2015의 경우 목차 위의 선택기에서 **2015**를 선택합니다.
 
 이 속성 페이지에 액세스하려면 **Ctrl+Q**를 눌러 `Quick Launch`를 활성화한 다음 "실험적"을 입력합니다. 빠른 실행에서 처음 몇 글자 페이지 다음의 페이지를 찾습니다. **도구 | 옵션**을 선택하고 **텍스트 편집기**, **C/C++** 를 차례로 확장한 다음 **실험적**을 선택하여 액세스할 수도 있습니다.
 
@@ -57,4 +57,4 @@ ms.locfileid: "36234636"
 ## <a name="see-also"></a>참고 항목
 
 - [언어별 편집기 옵션 설정](../../ide/reference/setting-language-specific-editor-options.md)
-- [C++에서의 리팩터링(VC 블로그)](http://blogs.msdn.com/b/vcblog/archive/2014/11/14/all-about-c-refactoring-in-visual-studio-2015-preview.aspx)
+- [C++에서의 리팩터링(VC 블로그)](https://blogs.msdn.microsoft.com/vcblog/2014/11/14/all-about-c-refactoring-in-visual-studio-2015-preview/)

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 64e02cae39497a14cc087791a60b4f61c9bcd8fd
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 0a83a7bd2fc40862411bbfd85f72b804318983c5
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815914"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294216"
 ---
 # <a name="attribute-glossary"></a>특성 용어집
 
@@ -144,7 +144,7 @@ public partial class MyTests {
 <a name="pexexplorationattributebase"></a>
 ## <a name="pexexplorationattributebase"></a>PexExplorationAttributeBase
 
-[추가 정보](https://msdn.microsoft.com/library/microsoft.pex.framework.pexexplorationattributebase.aspx)
+[추가 정보](xref:Microsoft.Pex.Framework.PexExplorationAttributeBase)
 
 <a name="pexassemblysettings"></a>
 ## <a name="pexassemblysettings"></a>PexAssemblySettings
@@ -235,18 +235,18 @@ class CtorTest(int capacity) {
 <a name="pexallowedexceptionfromassembly"></a>
 ## <a name="pexallowedexceptionfromassembly"></a>PexAllowedExceptionFromAssembly
 
-[추가 정보](https://msdn.microsoft.com/library/microsoft.pex.framework.validation.pexallowedexceptionfromassemblyattribute.aspx)
+[추가 정보](xref:Microsoft.Pex.Framework.Validation.PexAllowedExceptionFromAssemblyAttribute)
 
 <a name="pexallowedexceptionfromtype"></a>
 ## <a name="pexallowedexceptionfromtype"></a>PexAllowedExceptionFromType
 
-[추가 정보](https://msdn.microsoft.com/library/microsoft.pex.framework.validation.pexallowedexceptionfromtypeattribute.aspx)
+[추가 정보](xref:Microsoft.Pex.Framework.Validation.PexAllowedExceptionFromTypeAttribute)
 
 <a name="pexallowedexceptionfromtypeundertest"></a>
 ## <a name="pexallowedexceptionfromtypeundertest"></a>PexAllowedExceptionFromTypeUnderTest
 
-[추가 정보](https://msdn.microsoft.com/library/microsoft.pex.framework.validation.pexallowedexceptionfromtypeundertestattribute.aspx)
+[추가 정보](xref:Microsoft.Pex.Framework.Validation.PexAllowedExceptionFromTypeUnderTestAttribute)
 
 ## <a name="got-feedback"></a>피드백이 있으신가요?
 
-아이디어와 기능 요청을 **[UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest)** 에 게시하세요.
+아이디어와 기능 요청을 [개발자 커뮤니티](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)에 게시하세요.

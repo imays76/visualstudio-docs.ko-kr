@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d6305d7000456eb81cf01c9e85e6c2a421ed800
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 515775a064d1e260d9eb028c6e1b6020b7d642cd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121819"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935304"
 ---
 # <a name="idebugevent2getattributes"></a>IDebugEvent2::GetAttributes
 이 디버그 이벤트에 대 한 특성을 가져옵니다.  
@@ -41,13 +41,13 @@ int GetAttribute(
   
 #### <a name="parameters"></a>매개 변수  
  `pdwAttrib`  
- [out] 플래그의 조합 된 [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md) 열거 합니다.  
+ [out] 플래그의 조합 된 [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md) 열거형입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) 인터페이스는 모든 이벤트에 공통적으로 적용 합니다. 이 메서드 이벤트의 형식을 설명합니다 예를 들어 이벤트 동기 또는 비동기 이며는 stopping 이벤트입니다.  
+ 합니다 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) 인터페이스는 모든 이벤트에 공통적으로 적용 합니다. 이 메서드가 이벤트 유형을 설명합니다. 예를 들어, 이벤트 동기 또는 비동기 이며이 stopping 이벤트.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   

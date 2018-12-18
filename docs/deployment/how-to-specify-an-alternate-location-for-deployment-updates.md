@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6c38eb732a6e431804070505ecbd01e869c34ca
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 76be049c670fb91911be70132b459cad5e5183bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079874"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902466"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>방법: 배포 업데이트를 위한 대체 위치를 지정 합니다.
 설치할 수 있습니다 프로그램 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] CD 또는 파일 공유에서 처음에 응용 프로그램 이지만 응용 프로그램 웹에 대 한 주기적인 업데이트를 확인 해야 합니다. 응용 프로그램을 처음 설치한 후 웹에서 자동으로 업데이트할 수 있도록 배포 매니페스트에 업데이트에 대 한 대체 위치를 지정할 수 있습니다.  
@@ -46,16 +46,16 @@ ms.locfileid: "39079874"
   
 ### <a name="specify-an-alternate-location-for-updates-by-using-mageexe"></a>Mage.exe를 사용 하 여 업데이트에 대 한 대체 위치를 지정 합니다.  
   
-1.  .NET Framework 명령 프롬프트를 엽니다.  
+1. .NET Framework 명령 프롬프트를 엽니다.  
   
-2.  다음 명령을 사용 하 여 업데이트 위치를 설정 합니다. 이 예제에서는 *HelloWorld.exe.application* 경로인 프로그램 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 항상.application 확장명에는 응용 프로그램 매니페스트 및 *http://adatum.com/Update/Path* 해당URL은[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램 업데이트를 확인 합니다.  
+2. 다음 명령을 사용 하 여 업데이트 위치를 설정 합니다. 이 예제에서는 *HelloWorld.exe.application* 경로인 프로그램 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 항상.application 확장명에는 응용 프로그램 매니페스트 및 *<http://adatum.com/Update/Path>* 해당URL은[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램 업데이트를 확인 합니다.  
   
-     **Mage-ProviderUrl HelloWorld.exe.application 업데이트 http://adatum.com/Update/Path**  
+    **Mage-ProviderUrl HelloWorld.exe.application 업데이트 http://adatum.com/Update/Path**  
   
-3.  파일을 저장합니다.  
+3. 파일을 저장합니다.  
   
-    > [!NOTE]
-    >  사용 하 여 파일에 다시 서명 해야 *Mage.exe*합니다. 자세한 내용은 [연습: ClickOnce 응용 프로그램을 수동으로 배포](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)합니다.  
+   > [!NOTE]
+   >  사용 하 여 파일에 다시 서명 해야 *Mage.exe*합니다. 자세한 내용은 [연습: ClickOnce 응용 프로그램을 수동으로 배포](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)합니다.  
   
 ## <a name="net-framework-security"></a>.NET Framework 보안  
  CD와 같은 오프 라인 미디어의 응용 프로그램을 설치 하 고 컴퓨터를 온라인으로 하는 경우 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 먼저 확인 하 여 지정 된 URL을 `<deploymentProvider>` 업데이트 위치의 최신 버전이 있는지 확인 하려면 배포 매니페스트에서 태그를 응용 프로그램입니다. 그렇지 않으면 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 초기 설치 디렉터리에서 대신 여기에서 직접 응용 프로그램의 설치는 CLR (공용 언어 런타임) 응용 프로그램의 신뢰를 확인 하 고 사용 하 여 수준 `<deploymentProvider>`. 컴퓨터를 오프 라인 상태인 경우 또는 `<deploymentProvider>` 에 연결할 수 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 설치 CD에서 CLR 설치 지점을 기준으로 신뢰를 부여 즉 CD 설치의 경우 응용 프로그램에 완전 신뢰가 부여 합니다. 이후의 모든 업데이트에는 해당 신뢰 수준을 상속 합니다.  

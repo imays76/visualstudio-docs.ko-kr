@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28f4c2e2929fecb29da6ddeecdd6cede6b8fa4d7
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 505827d25a7e6016403567c172ad094d072f1ef3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497965"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885826"
 ---
 # <a name="how-to-suppress-file-change-notifications"></a>방법: 파일 변경 알림 표시 안 함
 메시지와 함께 대화 상자가 표시 텍스트 버퍼를 나타내는 물리적 파일이 변경 된 경우 **다음 항목의 변경 내용을 저장 하 시겠습니까?** 이 파일 변경 알림 이라고 합니다. 하지만 많은 변경 하는 경우 파일을이 대화 상자를 반복적으로 표시 될 수 있습니다 신속 하 게 성가신.  
@@ -43,7 +43,7 @@ ms.locfileid: "39497965"
   
      예를 들어 파일을 다시 작성 하 고 다음 타임 스탬프를 변경 하면 다시 작성 및 타임 스탬프 작업 별도 파일 변경 이벤트로 계산 되므로 파일 변경 알림이 일시 중단 해야 합니다. 전역 파일 변경 알림을 활성화를 대신 호출 해야 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx.IgnoreFile%2A> 메서드.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드 예제에서는 파일 변경 알림 표시 안 함 하는 방법에 설명 합니다.  
   
 ```cpp  

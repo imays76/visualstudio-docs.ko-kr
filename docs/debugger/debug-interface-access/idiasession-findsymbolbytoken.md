@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f7152a3953475ac2622033101ca739b0b8ee300
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 4758aeb569e0218d219ddca06042f4b32e61e467
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461326"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935980"
 ---
 # <a name="idiasessionfindsymbolbytoken"></a>IDiaSession::findSymbolByToken
 지정 된 메타 데이터 토큰을 포함 하는 기호를 검색 합니다.  
@@ -36,16 +36,16 @@ HRESULT findSymbolByToken (
   
 #### <a name="parameters"></a>매개 변수  
  `token`  
- [in] 토큰을 지정 합니다.  
+ [in] 토큰을 지정합니다.  
   
  `symtag`  
- [in] 찾을 기호 형식입니다. 값에서 가져옵니다는 [SymTagEnum 열거형](../../debugger/debug-interface-access/symtagenum.md) 열거 합니다.  
+ [in] 찾을 기호 형식입니다. 값에서 수행 되는 [SymTagEnum 열거형](../../debugger/debug-interface-access/symtagenum.md) 열거형입니다.  
   
  `ppSymbol`  
  [out] 반환 된 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 기호를 나타내는 개체를 검색 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="example"></a>예제  
   

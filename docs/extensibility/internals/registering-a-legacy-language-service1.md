@@ -13,33 +13,33 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e12e62e24d6a0a34884c245251a9bf2930f6b0b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 03e851f8da251268a44e62f9b8071648bc27a870
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135716"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821307"
 ---
-# <a name="registering-a-legacy-language-service"></a>레거시 언어 서비스를 등록 하는 중
-VSPackage에서 제공 되는 언어 서비스에서 관리 되는 패키지 프레임 워크에 MPF (), (참조 [Vspackage](../../extensibility/internals/vspackages.md))에 등록 된 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 레지스트리 키 및 항목을 추가 하 여 합니다. 이 등록 프로세스는 부분적으로 설치 하는 동안와 부분적으로 런타임에 수행 됩니다.  
+# <a name="registering-a-legacy-language-service"></a>레거시 언어 서비스 등록
+VSPackage에서 제공 되는 언어 서비스에서 관리 되는 패키지 프레임 워크에 MPF (), (참조 [Vspackage](../../extensibility/internals/vspackages.md))으로 등록 됩니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 레지스트리 키 및 항목을 추가 하 여 합니다. 이 등록 프로세스는 부분적으로 설치 하는 동안 및 런타임 시 일부에서 수행 됩니다.  
   
-## <a name="register-the-language-service-by-using-attributes"></a>특성을 사용 하 여이 언어 서비스 등록  
- 언어 서비스를 등록 하는 다음 특성이 사용 됩니다.  
+## <a name="register-the-language-service-by-using-attributes"></a>특성을 사용 하 여 언어 서비스 등록  
+ 언어 서비스를 등록 하는 다음과 같은 특성이 사용 됩니다.  
   
--   <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>  
+- <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>  
   
--   <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>  
+- <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>  
   
--   <xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute>  
+- <xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute>  
   
--   <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute>  
+- <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute>  
   
--   <xref:Microsoft.VisualStudio.Shell.ProvideLanguageEditorOptionPageAttribute>  
+- <xref:Microsoft.VisualStudio.Shell.ProvideLanguageEditorOptionPageAttribute>  
   
- 이러한 특성은 아래 설명  
+  이러한 특성은 아래에서 설명  
   
 ### <a name="provideserviceattribute"></a>ProvideServiceAttribute  
- 이 특성 서비스로 언어 서비스를 등록합니다.  
+ 이 특성을 서비스로 언어 서비스를 등록합니다.  
   
 ### <a name="example"></a>예제  
   
@@ -58,7 +58,7 @@ namespace TestLanguagePackage
 ```  
   
 ### <a name="providelanguageserviceattribute"></a>ProvideLanguageServiceAttribute  
- 이 특성을 언어 서비스로 특히 언어 서비스를 등록합니다. 언어 서비스에서 제공 하는 기능을 지정 하는 옵션을 설정할 수 있습니다. 이 예제에서는 언어 서비스가 제공할 수 있는 옵션 중 일부를 보여 줍니다. 언어 서비스 옵션의 전체 집합을 참조 하십시오. <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>합니다.  
+ 이 특성을 언어 서비스로 특히 언어 서비스를 등록합니다. 언어 서비스를 제공 하는 기능을 지정 하는 옵션을 설정할 수 있습니다. 이 예제에서는 언어 서비스가 제공할 수 있는 옵션의 하위 집합을 보여 줍니다. 언어 서비스 옵션의 전체 집합을 참조 하세요. <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>합니다.  
   
 ### <a name="example"></a>예제  
   
@@ -83,7 +83,7 @@ namespace TestLanguagePackage
 ```  
   
 ### <a name="providelanguageextensionattribute"></a>ProvideLanguageExtensionAttribute  
- 이 특성 파일 확장명이 언어 서비스를 연결합니다. 모든 프로젝트에서 해당 확장명을 가진 파일이 로드 될 때마다 언어 서비스를 시작 하며 파일의 내용을 표시 하는 데 사용 됩니다.  
+ 이 특성 파일 확장명이 언어 서비스를 연결합니다. 모든 프로젝트에서 해당 확장을 사용 하 여 파일을 로드 될 때마다 언어 서비스가 시작 되 고 파일의 내용을 표시 하는 데 사용 합니다.  
   
 ### <a name="example"></a>예제  
   
@@ -102,7 +102,7 @@ namespace TestLanguagePackage
 ```  
   
 ### <a name="providelanguagecodeexpansionattribute"></a>ProvideLanguageCodeExpansionAttribute  
- 이 특성에 있는 코드 확장 작업이 나 조각 서식 파일을 가져온 위치를 등록 합니다. 이 정보를 사용 하 여는 **코드 조각 브라우저** 및 소스 파일에 코드 조각을 삽입 되는 편집기에서.  
+ 이 특성 확장 또는 코드 조각 템플릿 코드에서 가져온 위치에 등록 합니다. 이 정보를 사용 합니다 **코드 조각을 브라우저** 및 소스 파일에 코드 조각을 삽입할 때 편집기에서.  
   
 ### <a name="example"></a>예제  
   
@@ -128,10 +128,10 @@ namespace TestLanguagePackage
 ```  
   
 ### <a name="providelanguageeditoroptionpageattribute"></a>ProvideLanguageEditorOptionPageAttribute  
- 이 특성에 표시 되는 속성 페이지를 등록는 **옵션** 대화 상자는 **텍스트 편집기** 범주입니다. 언어 서비스에 대해 표시 될 각 페이지에 대 한 이러한 특성 중 하나를 사용 합니다. 트리 구조에서 페이지 구성 해야 할 경우 트리의 각 노드를 정의 하려면 추가 특성을 사용 합니다.  
+ 이 특성에 표시 되는 속성 페이지를 등록 합니다 **옵션** 대화 상자의 합니다 **텍스트 편집기** 범주입니다. 각 페이지에 대 한 이러한 특성 중 하나를 사용 하 여 언어 서비스에 대해 표시할 수 있습니다. 트리 구조에서 페이지를 구성 해야 할 경우 트리의 각 노드를 정의 하려면 추가 특성을 사용 합니다.  
   
 ### <a name="example"></a>예제  
- 이 예제에서는 두 개의 속성 페이지를 보여 줍니다. **옵션** 및 **Indenting**, 및 두 번째 속성 페이지를 포함 하는 하나의 노드가 있습니다.  
+ 이 예제에서는 두 개의 속성 페이지를 보여 줍니다 **옵션** 하 고 **Indenting**, 및 두 번째 속성 페이지를 포함 하는 하나의 노드.  
   
 ```csharp  
 using Microsoft.VisualStudio.Shell;  
@@ -162,11 +162,11 @@ namespace TestLanguagePackage
 }  
 ```  
   
-## <a name="proffer-the-language-service-at-runtime"></a>런타임 시 언어 서비스 proffer  
- 알려야 언어 패키지를 로드할 때 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 언어 서비스가 준비 되었음을 확인 합니다. 서비스 proffering 하 여이 작업을 수행 합니다. 이 작업은 <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> 메서드. 또한 백그라운드 구문 분석도 수행할 수 있도록 유휴 기간 동안 언어 서비스를 호출 하는 타이머를 시작 해야 합니다. 유휴 타이머가이 통해 하나 구현한 경우 문서 속성을 업데이트 하는 또한는 <xref:Microsoft.VisualStudio.Package.DocumentProperties> 클래스입니다. 타이머를 지원 하려면 패키지를 구현 해야 합니다는 <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponent> 인터페이스 (만 <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponent.FDoIdle%2A> 메서드를 완벽 하 게 구현 해야; 나머지 메서드는 기본 값을 반환할 수 있습니다).  
+## <a name="proffer-the-language-service-at-runtime"></a>런타임 시 언어 서비스를 제공 합니다.  
+ 알려야 언어 패키지 로드 되 면 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 언어 서비스를 준비 합니다. 서비스 proffering 하 여이 작업을 수행 합니다. 이 수행 된 <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> 메서드. 또한 백그라운드 구문 분석을 수행할 수 있습니다 있도록 유휴 기간 동안 언어 서비스를 호출 하는 타이머를 시작 해야 합니다. 이 유휴 타이머가 또한 문서 속성을 통해 모든 구현한 경우 업데이트 된 <xref:Microsoft.VisualStudio.Package.DocumentProperties> 클래스입니다. 타이머를 지원 하기 위해 패키지를 구현 해야 합니다는 <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponent> 인터페이스 (만 <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponent.FDoIdle%2A> 완벽 하 게 구현 해야 하는 메서드, 나머지 메서드는 기본 값을 반환할 수 있습니다).  
   
 ### <a name="example"></a>예제  
- 이 예제에서는 서비스 proffering 고 유휴 타이머를 제공 하는 일반적인 접근 방법을 보여 줍니다.  
+ 이 예제에서는 서비스 proffering 유휴 타이머가 제공 하는 일반적인 방법을 보여 줍니다.  
   
 ```csharp  
   
@@ -215,7 +215,7 @@ namespace TestLanguagePackage
                 crinfo[0].cbSize            = (uint)Marshal.SizeOf(typeof(OLECRINFO));  
                 crinfo[0].grfcrf            = (uint)_OLECRF.olecrfNeedIdleTime |  
                                               (uint)_OLECRF.olecrfNeedPeriodicIdleTime;  
-                crinfo[0].grfcadvf          = (uint)_OLECADVF.olecadvfModal     |  
+                crinfo[0].grfcadvf          = (uint)_OLECADVF.olecadvfModal |  
                                               (uint)_OLECADVF.olecadvfRedrawOff |  
                                               (uint)_OLECADVF.olecadvfWarningsOff;  
                 crinfo[0].uIdleTimeInterval = 1000;  

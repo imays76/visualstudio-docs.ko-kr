@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d00838fc3f76221293241656743bbf5a2a7f4d26
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5dba9f8b40bd3246dd07ec2fae76ad6aa8b9c604
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466359"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917812"
 ---
 # <a name="idiasymbolgetaddressoffset"></a>IDiaSymbol::get_addressOffset
-주소 위치 오프셋된 부분을 검색합니다. 사용 하는 경우는 [LocationType 열거형](../../debugger/debug-interface-access/locationtype.md) 로 설정 된 `LocIsStatic`합니다.  
+주소 위치 오프셋된 부분을 검색합니다. 사용 시기를 [LocationType 열거형](../../debugger/debug-interface-access/locationtype.md) 로 설정 된 `LocIsStatic`합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -37,15 +37,15 @@ HRESULT get_addressOffset (
  [out] 주소 위치 오프셋된 부분을 반환합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
+ 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
   
 > [!NOTE]
->  반환 값이 `S_FALSE` 속성이 해당 기호를 사용할 수 있음을 의미 합니다.  
+>  반환 값이 `S_FALSE` 속성 기호에 사용할 수 없다는 것을 의미 합니다.  
   
 ## <a name="remarks"></a>설명  
- 정적 멤버를 외부 DLL에에서 있으며,이 메서드는 원래 멤버의 가상 주소 처럼이 메서드에 의해 반환 되는 오프셋 0 있을 수 있습니다. 가상 주소는 유효한 경우에만 [idiasession:: Put_loadaddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) 에서 메서드는 [IDiaSession](../../debugger/debug-interface-access/idiasession.md) DLL의 부하 주소를 지정 하는 0이 아닌 매개 변수와 함께 호출 된 인터페이스입니다.  
+ 외부 DLL에 정적 멤버에 대 한 멤버의 가상 주소를 얻는 방법에이 메서드를 사용이 메서드에서 반환 되는 오프셋 0 일 수 있습니다. 가상 주소는 유효 경우에만 합니다 [idiasession:: Put_loadaddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) 에서 메서드를 [IDiaSession](../../debugger/debug-interface-access/idiasession.md) 인터페이스가 DLL의 로드 주소를 지정 하는 0이 아닌 매개 변수를 사용 하 여 호출 되었습니다.  
   
- 주소의 섹션 부분을 가져오려면 호출는 [idiasymbol:: Get_addresssection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md) 메서드.  
+ 주소의 구역을 부분을 가져오려면 호출 합니다 [idiasymbol:: Get_addresssection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md) 메서드.  
   
 ## <a name="requirements"></a>요구 사항  
   

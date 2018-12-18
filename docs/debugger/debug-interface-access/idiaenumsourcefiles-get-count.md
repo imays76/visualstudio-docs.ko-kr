@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 533e4fa6593fa5dd5ad381ecc69a9026ef186b50
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 89ed0e7f8f6d1ce2f19e6060a2646339642a6716
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459138"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850856"
 ---
 # <a name="idiaenumsourcefilesgetcount"></a>IDiaEnumSourceFiles::get_Count
-소스 파일의 수를 검색합니다.  
+소스 파일을 검색합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -37,7 +37,7 @@ HRESULT get_Count (
  [out] 소스 파일의 수를 반환합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)   

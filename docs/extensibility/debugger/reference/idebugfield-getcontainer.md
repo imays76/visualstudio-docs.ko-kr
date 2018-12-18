@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 826274b42aad8e695772abab75d4a2d5f2611336
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7b9078fdc7849912436c0b8dc3d72338f746b36c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116673"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942038"
 ---
 # <a name="idebugfieldgetcontainer"></a>IDebugField::GetContainer
 이 메서드는 필드의 컨테이너를 가져옵니다.  
@@ -41,13 +41,13 @@ int GetContainer(
   
 #### <a name="parameters"></a>매개 변수  
  `ppContainerField`  
- [out] 에 표시 된 대로 컨테이너를 반환 합니다.는 [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) 인터페이스입니다.  
+ [out] 에 표시 된 대로 컨테이너를 반환 합니다 [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) 인터페이스입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 이 필드에 반환 되는 컨테이너 수 없는 경우 `ppContainerField` null 값이 됩니다.  
+ 이 필드에 반환된 된 컨테이너에 없으면 `ppContainerField` null 값이 됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07312208967aeccfbd81f44587f84a43dfebf4c0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1d5851fd9fe7224d060b1454a7123b98f77216b4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101448"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813481"
 ---
 # <a name="debugaddress"></a>DEBUG_ADDRESS
 이 구조는 주소를 나타냅니다.  
@@ -53,20 +53,20 @@ public struct DEBUG_ADDRESS {
  이 주소를 포함 하는 모듈의 GUID입니다.  
   
  tokClass  
- 클래스 또는이 주소의 형식을 확인 하는 토큰입니다.  
+ 클래스 또는이 주소의 형식 식별 토큰입니다.  
   
 > [!NOTE]
->  이 값은 기호 공급자 이며 따라서 클래스 형식에 대 한 식별자로 이외의 일반 의미가 없습니다.  
+>  이 값은 기호 공급자에 국한 되며 따라서 의미가 없는 일반 이외의 다른 클래스 형식에 대 한 식별자로.  
   
  Addr  
- A [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) 개별 주소 형식을 설명 하는 구조체의 통합을 포함 하는 구조에 있습니다. 값 `addr`합니다.`dwKind` 제공 되는 [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) 합집합을 해석 하는 방법을 설명 하는 열거형입니다.  
+ A [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) 개별 주소 형식을 설명 하는 구조체의 공용 구조체를 포함 하는 구조입니다. 값 `addr`합니다.`dwKind` 제공 되는 [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) 열거형, 공용 구조체를 해석 하는 방법에 설명 합니다.  
   
 ## <a name="remarks"></a>설명  
- 이 구조에 전달 되는 [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) 메서드를 입력 합니다.  
+ 이 구조에 전달 되는 [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) 메서드를 채울 수 있습니다.  
   
  **경고 [c + + 전용]**  
   
- 경우 `addr.dwKind` 은 `ADDRESS_KIND_METADATA_LOCAL` 쓰고 `addr.addr.addrLocal.pLocal` 값이 아닌 null을 호출 해야 합니다 `Release` 토큰 포인터에:  
+ 경우 `addr.dwKind` 됩니다 `ADDRESS_KIND_METADATA_LOCAL` 경우에 `addr.addr.addrLocal.pLocal` 호출 해야 합니다는 null 값이 아닙니다 `Release` 토큰 포인터:  
   
 ```  
 if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL &&  addr.addr.addrLocal.pLocal != NULL)  

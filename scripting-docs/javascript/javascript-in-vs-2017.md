@@ -18,12 +18,12 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: wilkelly
 manager: ghogen
-ms.openlocfilehash: ffe531cf9dab315a43a37688c2b4e9eddf89b470
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 75c234b2a3b16d3bcbe05da9f0818c73be0412db
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008410"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880797"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Visual Studio 2017의 JavaScript
 
@@ -64,7 +64,7 @@ tsconfig 파일에 대한 필수 설정은 다음과 같습니다.
  출력 위치 및 `node_modules` 또는 `temp`와 같은 프로젝트 이외 폴더를 이 설정에 추가해야 합니다.
  - `enableAutoDiscovery`: 이 설정을 통해 이전에 설명한 대로 정의 파일을 자동으로 검색 및 다운로드할 수 있습니다.
  - `compileOnSave`: 이 설정은 언제든 소스 파일이 Visual Studio에서 저장되면 다시 컴파일해야 하는 경우 컴파일러에 알립니다.
- - `typeAcquisition`: 이 설정값 집합을 통해 자동 형식 인식의 동작([이 섹션](https://docs.microsoft.com/en-us/visualstudio/ide/javascript-intellisense#Auto)에서 자세히 설명)을 제어합니다.
+ - `typeAcquisition`: 이 설정값 집합을 통해 자동 형식 인식의 동작([이 섹션](/visualstudio/ide/javascript-intellisense#Auto)에서 자세히 설명)을 제어합니다.
 
 JavaScript 파일을 CommonJS 모듈로 변환하고 `./out` 폴더에 두려면 다음 `tsconfig.json` 파일을 사용할 수 있습니다.
 
@@ -255,7 +255,7 @@ VSDoc는 이제 더 쉽게 작성할 수 있고 JavaScript의 표준으로 승�
 
 ### <a name="intellisensejs-extensions"></a>`.intellisense.js` 확장
 
-이전에는 타사 라이브러리용으로 사용자 지정 완료 결과를 추가할 수 있는 [IntelliSense 확장](https://msdn.microsoft.com/en-us/library/hh874692.aspx)을 작성할 수 있었습니다.
+이전에는 타사 라이브러리용으로 사용자 지정 완료 결과를 추가할 수 있는 [IntelliSense 확장](https://msdn.microsoft.com/library/hh874692.aspx)을 작성할 수 있었습니다.
 이러한 확장은 작성하기가 매우 어렵고 설치하여 참조하는 작업음 번거로우므로, 새 언어 서비스에서는 앞으로 이러한 파일을 지원하지 않습니다.
 쉬운 대안으로서 TypeScript 정의 파일을 작성하여 이전 `.intellisense.js` 확장과 동일한 IntelliSense 이점을 제공할 수 있습니다.
 선언(`.d.ts`) 파일 작성에 대한 자세한 내용은 [여기](http://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html)에서 알아볼 수 있습니다.

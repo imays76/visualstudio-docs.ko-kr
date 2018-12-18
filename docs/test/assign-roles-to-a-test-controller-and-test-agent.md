@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 자동화된 테스트를 위해 테스트 컨트롤러 및 테스트 에이전트에 역할 할당
+title: 자동화된 테스트를 위해 테스트 컨트롤러 및 테스트 에이전트에 역할 할당
 ms.date: 10/20/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,24 +14,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f939947c4b96584439d85c33c234dc769531888d
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 021693266278bd705678c22d2c3f07e534901e5a
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280613"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895342"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>역할을 테스트 컨트롤러와 테스트 에이전트에 할당
 
 이 연습에서는 Visual Studio를 사용하는 여러 컴퓨터 사이에 테스트 컨트롤러와 테스트 에이전트를 사용하여 테스트를 분산하는 테스트 설정을 만들고 구성하는 방법에 대해 설명합니다. 또한 이 연습에서는 테스트 설정에 진단 데이터 어댑터를 추가하는 방법도 보여 줍니다.
 
-이 연습에서는 다음 작업을 수행합니다.
-
--   테스트 설정을 만듭니다.
-
--   역할을 테스트 컨트롤러와 테스트 에이전트에 할당합니다.
-
--   진단 및 데이터 어댑터를 테스트 설정에 할당합니다.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="prerequisites"></a>전제 조건
 

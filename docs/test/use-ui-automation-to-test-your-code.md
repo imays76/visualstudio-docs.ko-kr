@@ -1,6 +1,6 @@
 ---
 title: 자동화된 UI 테스트
-ms.date: 11/04/2016
+ms.date: 12/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
@@ -18,16 +18,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 396fde582c10640bae95261a696c0d752543fc8d
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: ce10c81265ecfd95f43d62c73d69c902eda1a6c6
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381161"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896642"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>UI 자동화를 사용하여 코드 테스트
 
 Visual Studio에서 UI(사용자 인터페이스)를 통해 응용 프로그램을 실행하는 자동화된 테스트를 CUIT(*코딩된 UI 테스트*)라고 합니다. 이러한 테스트는 UI 컨트롤의 기능 테스트를 포함합니다. 이러한 테스트를 통해 사용자 인터페이스를 비롯해 전체 응용 프로그램이 제대로 기능하는지 확인할 수 있습니다. 코딩된 UI 테스트는 특히 사용자 인터페이스(예: 웹 페이지)에 유효성 검사 또는 기타 논리가 있는 경우에 유용합니다. 또한 기존 수동 테스트를 자동화하는 데 자주 사용됩니다.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 다음 그림과 같이 일반적인 개발 경험은 처음에는 간단하게 응용 프로그램을 빌드하고 UI 컨트롤을 클릭해 보면서 제대로 작동하는지 확인하는 것으로 시작할 수 있습니다. 그런 다음, 자동화된 테스트를 만들기로 결정할 수 있습니다. 그러면 응용 프로그램을 계속해서 수동으로 테스트할 필요가 없습니다. 응용 프로그램에서 테스트 중인 특정 기능에 따라 기능 테스트 또는 UI 수준에서 테스트를 포함하거나 포함하지 않을 수 있는 통합 테스트에 대한 코드를 작성할 수 있습니다. 일부 비즈니스 논리에 직접 액세스하려는 경우 단위 테스트를 코딩할 수 있습니다. 그러나 특정 상황에서는 응용 프로그램의 다양한 UI 컨트롤 테스트를 포함하는 것이 유용할 수 있습니다. 코딩된 UI 테스트는 초기 코드 변경(code churn)이 응용 프로그램의 기능에 영향을 미치지 않는지 확인할 수 있습니다.
 
@@ -35,7 +37,7 @@ Visual Studio에서 UI(사용자 인터페이스)를 통해 응용 프로그램�
 
 코딩된 UI 테스트는 만들기 쉽습니다. **코딩된 UI 테스트 빌더**가 백그라운드에서 실행되는 동안 테스트를 수동으로 간단하게 수행할 수 있습니다. 또한 특정 필드에 나타나야 하는 값을 지정할 수도 있습니다. **코딩된 UI 테스트 빌더**는 사용자의 작업을 기록하고 이러한 작업으로부터 코드를 생성합니다. 테스트를 만든 후 작업 시퀀스를 수정할 수 있는 특수 편집기에서 테스트를 편집할 수 있습니다.
 
-또는 Microsoft Test Manager에 기록된 테스트 사례가 있는 경우에서 해당 사례에서 코드를 생성할 수 있습니다. 자세한 내용은 [수동 테스트 기록 및 재생](/vsts/test/mtm/record-play-back-manual-tests)을 참조하세요.
+또는 Microsoft Test Manager에 기록된 테스트 사례가 있는 경우에서 해당 사례에서 코드를 생성할 수 있습니다. 자세한 내용은 [수동 테스트 기록 및 재생](/azure/devops/test/mtm/record-play-back-manual-tests?view=vsts)을 참조하세요.
 
 특수 **코딩된 UI 테스트 빌더** 및 편집기를 사용하면 사용자의 주요 기술이 코딩이 아니라 테스트하는 것이더라도 코딩된 UI 테스트를 쉽게 만들고 편집할 수 있습니다. 그러나 개발자가 보다 수준 높은 방식으로 테스트를 확장하려는 경우 쉽게 복사하고 변경할 수 있도록 코드가 구조화되어 있습니다. 예를 들어 웹 사이트에서 무언가를 구매하는 테스트를 기록한 다음 생성된 코드를 편집하여 여러 품목을 구매하는 루프를 추가할 수 있습니다.
 
@@ -402,7 +404,7 @@ UI 컨트롤 관련 속성 값을 얻고 설정하기 위해 컨트롤의 속성
 
 ### <a name="to-get-or-set-properties-from-ui-test-controls-directly"></a>UI 테스트 컨트롤에서 속성을 직접 얻거나 설정하려면
 
-[HtmlList](https://msdn.microsoft.com/library/microsoft.visualstudio.testtools.uitesting.htmlcontrols.htmllist.aspx) 또는 [WinComboBox](https://msdn.microsoft.com/library/microsoft.visualstudio.testtools.uitesting.wincontrols.wincombobox.aspx)처럼 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>에서 파생되는 컨트롤을 사용하여 속성 값을 직접 가져오거나 설정할 수 있습니다. 다음 코드에서는 몇 가지 예제를 보여줍니다.
+[HtmlList](xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls.HtmlList) 또는 [WinComboBox](xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinComboBox)처럼 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>에서 파생되는 컨트롤을 사용하여 속성 값을 직접 가져오거나 설정할 수 있습니다. 다음 코드에서는 몇 가지 예제를 보여줍니다.
 
  ```csharp
  int i = myHtmlList.ItemCount;
@@ -437,13 +439,13 @@ UI 컨트롤 관련 속성 값을 얻고 설정하기 위해 컨트롤의 속성
 
 ## <a name="whats-next"></a>새로운 기능
 
-**코딩된 UI 테스트 실행을 위한 추가 옵션:** 이 항목의 앞에서 설명한 것처럼 Visual Studio에서 직접 코딩된 UI 테스트를 실행할 수 있습니다. 또한 Microsoft Test Manager 또는 Team Foundation Build에서 자동화된 UI 테스트를 실행할 수 있습니다. 코딩된 UI 테스트가 자동화된 경우 다른 자동화된 테스트와 달리 코딩된 UI 테스트를 실행할 때는 테스트와 데스크톱 사이에 상호 작용이 필요합니다.
+**코딩된 UI 테스트 실행을 위한 추가 옵션:** 이 항목의 앞에서 설명한 것처럼 Visual Studio에서 직접 코딩된 UI 테스트를 실행할 수 있습니다. 또한 Microsoft Test Manager 또는 Azure Pipelines에서 자동화된 UI 테스트를 실행할 수 있습니다. 코딩된 UI 테스트가 자동화된 경우 다른 자동화된 테스트와 달리 코딩된 UI 테스트를 실행할 때는 테스트와 데스크톱 사이에 상호 작용이 필요합니다.
 
 - [테스트 탐색기를 사용하여 단위 테스트 실행](../test/run-unit-tests-with-test-explorer.md)
 
-- [빌드 프로세스에서 테스트 실행](/vsts/build-release/test/getting-started-with-continuous-testing)
+- [빌드 프로세스에서 테스트 실행](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
 
-- [방법: 데스크톱과 상호 작용하는 테스트를 실행하도록 테스트 에이전트 설정](http://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
+- [방법: 데스크톱과 상호 작용하는 테스트를 실행하도록 테스트 에이전트 설정](https://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
 
 **사용자 지정 컨트롤에 대한 지원 추가:** 코딩된 UI 테스트 프레임워크에서는 가능한 모든 UI를 지원하지는 않으므로 테스트하려는 UI가 지원되지 않을 수도 있습니다. 예를 들어 Microsoft Excel의 UI에 대한 코딩된 UI 테스트는 바로 만들 수 없습니다. 그러나 코딩된 UI 테스트 프레임워크에 대한 확장을 만들어 사용자 지정 컨트롤을 지원할 수 있습니다.
 
@@ -451,7 +453,7 @@ UI 컨트롤 관련 속성 값을 얻고 설정하기 위해 컨트롤의 속성
 
 - [코딩된 UI 테스트 및 작업 기록 확장](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
-코딩된 UI 테스트는 일반적으로 수동 테스트를 자동화하는 데 사용됩니다. 수동 테스트에 대한 자세한 내용은 [Microsoft Test Manager를 사용하여 수동 테스트 실행](/vsts/test/mtm/run-manual-tests-with-microsoft-test-manager)을 참조하세요. 자동화된 테스트에 대한 자세한 내용은 [Visual Studio에서 도구 테스트](../test/improve-code-quality.md)를 참조하세요.
+코딩된 UI 테스트는 일반적으로 수동 테스트를 자동화하는 데 사용됩니다. 수동 테스트에 대한 자세한 내용은 [Microsoft Test Manager를 사용하여 수동 테스트 실행](/azure/devops/test/mtm/run-manual-tests-with-microsoft-test-manager?view=vsts)을 참조하세요. 자동화된 테스트에 대한 자세한 내용은 [Visual Studio에서 도구 테스트](../test/improve-code-quality.md)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 

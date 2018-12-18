@@ -26,19 +26,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16e0efd8393d6324321a505247a3dad171a81a57
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 666ce7d65269992af486e59c6b5ce11e94da736b
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33103478"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348130"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 
 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]에서는 즉시 사용 가능한 강력한 JavaScript 편집 환경을 제공합니다. TypeScript 기반 언어 서비스로 제공되는 Visual Studio는 더 다양한 IntelliSense, 최신 JavaScript 기능 지원 및 정의로 이동, 리팩터링 등의 향상된 생산성 기능을 제공합니다.
 
 > [!NOTE]
-> [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]의 JavaScript Language Service에는 새로운 언어 서비스용 엔진("Salsa"라고 함)이 사용됩니다. 자세한 내용은 이 항목에 포함되어 있고 이 [블로그 게시물](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/more-productive-javascript-in-visual-studio-2017-rc)을 참조할 수도 있습니다. 새 편집 환경은 일반적으로 Visual Studio Code에도 적용됩니다. 자세한 내용은 [VS 코드 문서](https://code.visualstudio.com/docs/languages/javascript)를 참조하세요.
+> [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]의 JavaScript Language Service에는 새로운 언어 서비스용 엔진("Salsa"라고 함)이 사용됩니다. 자세한 내용은 이 항목에 포함되어 있고 이 [블로그 게시물](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/more-productive-javascript-in-visual-studio-2017-rc/)을 참조할 수도 있습니다. 새 편집 환경은 일반적으로 Visual Studio Code에도 적용됩니다. 자세한 내용은 [VS 코드 문서](https://code.visualstudio.com/docs/languages/javascript)를 참조하세요.
 
 Visual Studio의 일반 IntelliSense 기능에 대한 자세한 내용은 [IntelliSense 사용](../ide/using-intellisense.md)을 참조하세요.
 
@@ -143,3 +143,4 @@ TypeScript 환경에서 가장 인기 있는 JavaScript 라이브러리에는 *.
 ## <a name="see-also"></a>참고 항목
 
 - [IntelliSense 사용](../ide/using-intellisense.md)
+- [JavaScript 지원(Mac용 Visual Studio)](/visualstudio/mac/javascript)

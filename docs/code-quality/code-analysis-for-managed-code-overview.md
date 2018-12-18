@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 관리 되는 코드에 대 한 코드 분석
+title: 관리 코드에 대 한 정적 코드 분석
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -14,16 +14,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1ad1edbd9d093fc5f1c7f746b7b5f2a2b9d2bd31
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: 96f00e6080cb10778a92aaa860422da8366be54d
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131884"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389314"
 ---
-# <a name="overview-of-code-analysis-for-managed-code"></a>관리 코드에 대 한 코드 분석 개요
+# <a name="overview-of-static-code-analysis-for-managed-code-in-visual-studio"></a>Visual Studio에서 관리 되는 코드에 대 한 정적 코드 분석 개요
 
-Visual Studio 2017에는 두 가지 방법으로 관리 되는 코드 분석: legacy *FxCop* .NET 컴파일러 플랫폼을 사용 하 여 관리 되는 어셈블리의 정적 분석 *분석기*합니다. 이 항목에서는 FxCop 정적 코드 분석을 설명 합니다. .NET 컴파일러 플랫폼 분석기를 사용 하 여 코드를 분석 하는 방법에 대 한 자세한 내용은 참조 하세요 [개요의 Roslyn 분석기](../code-quality/roslyn-analyzers-overview.md)합니다.
+Visual Studio 2017 두 가지 방법으로 관리 되는 코드의 코드 분석을 수행할 수 있습니다: 사용 하 여 *FxCop* 자세한 최신와 관리 되는 어셈블리의 정적 분석 *Roslyn 분석기*합니다. 이 항목에서는 FxCop 정적 코드 분석을 설명 합니다. 코드 분석기를 사용 하 여 코드를 분석 하는 방법에 대 한 자세한 내용은 참조 하세요 [개요의 Roslyn 분석기](../code-quality/roslyn-analyzers-overview.md)합니다.
 
 관리 코드에 대한 코드 분석에서는 관리되는 어셈블리를 분석하고, Microsoft .NET Framework 디자인 지침에 설정된 프로그래밍 및 디자인 규칙의 위반과 같은 어셈블리 관련 정보를 보고합니다.
 
@@ -51,7 +51,7 @@ Visual Studio 2017에는 두 가지 방법으로 관리 되는 코드 분석: le
 경고 표시 안 함 소스 사용자 지정 특성을 통해 구현 됩니다. 경고를 표시하지 않으려면 다음 예제와 같이 소스 코드에 `SuppressMessage` 특성을 추가합니다.
 
 ```csharp
-[System.Diagnosis.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]
+[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]
 Public class MyClass
 {
    // code
@@ -71,14 +71,14 @@ Public class MyClass
 
 - 최신 빌드의 일부로 코드 분석을 실행 합니다.
 
-체크 인 정책을 지정하여 위 사항을 확인할 수 있습니다. 자세한 내용은 [팀 프로젝트 체크 인 정책 사용 하 여 코드 품질 향상](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md)합니다.
+체크 인 정책을 지정하여 위 사항을 확인할 수 있습니다. 자세한 내용은 [프로젝트 체크 인 정책 사용 하 여 코드 품질 향상](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md)합니다.
 
 ## <a name="team-build-integration"></a>팀 빌드 통합
 
-빌드 시스템의 통합된 기능을 사용하여 빌드 프로세스의 일부로 분석 도구를 실행할 수 있습니다. 자세한 내용은 [빌드 및 릴리스 (VSTS)](/vsts/build-release/index)합니다.
+빌드 시스템의 통합된 기능을 사용하여 빌드 프로세스의 일부로 분석 도구를 실행할 수 있습니다. 자세한 내용은 [Azure Pipelines](/azure/devops/pipelines/index?view=vsts)를 참조하세요.
 
 ## <a name="see-also"></a>참고자료
 
 - [Roslyn 분석기 개요](../code-quality/roslyn-analyzers-overview.md)
 - [규칙 집합을 사용하여 코드 분석 규칙 그룹화](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
-- [방법: 자동 코드 분석 활성화 및 비활성화](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)
+- [방법: 자동 코드 분석 사용 설정 및 해제](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

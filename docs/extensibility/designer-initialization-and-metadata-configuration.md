@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 06f362987a8a52692aa0b38bf921b6763dbc8a2c
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 58f103ae1dcf445c5bdfe322eeea7a88a7b25683
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637057"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843277"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>디자이너 초기화 및 메타 데이터 구성
 응용 프로그램을 다른 처리 하는 도구 특정 디자이너에서 사용 되는 정의 대 한 메커니즘을 제공 하는 디자이너 또는 디자이너 구성 요소에 연결 된 필터 특성과 메타 데이터의 조작 <xref:System.Type> 개체 (예: 데이터 구조 클래스 또는 그래픽 엔터티) 경우 디자이너를 사용할 수 있고 디자이너를 지원 하도록 Visual Studio IDE를 구성 하는 방법 (인스턴스는 **도구 상자** 범주 또는 탭).  
@@ -32,39 +32,39 @@ ms.locfileid: "39637057"
 ### <a name="customize-initialization"></a>초기화를 사용자 지정  
  디자이너, 구성 요소 또는 디자이너 화면에 사용자 지정 하는 작업에 포함 됩니다.  
   
-1.  디자이너 메타 데이터를 수정 하 고 효과적으로 특정 방법 변경 <xref:System.Type> 액세스 되거나 변환 됩니다.  
+1. 디자이너 메타 데이터를 수정 하 고 효과적으로 특정 방법 변경 <xref:System.Type> 액세스 되거나 변환 됩니다.  
   
-     일반적으로 이렇게 합니다 <xref:System.Drawing.Design.UITypeEditor> 또는 <xref:System.ComponentModel.TypeConverter> 메커니즘입니다.  
+    일반적으로 이렇게 합니다 <xref:System.Drawing.Design.UITypeEditor> 또는 <xref:System.ComponentModel.TypeConverter> 메커니즘입니다.  
   
-     예를 들어 때 <xref:System.Windows.Forms>-기반된 디자이너는 초기화 되는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 환경 수정 합니다 <xref:System.Drawing.Design.UITypeEditor> 에 대 한 <xref:System.Web.UI.WebControls.Image> 디자이너를 사용 하 여 리소스 관리자를 사용 하 여 파일 시스템 보다는 비트맵을 가져오려고 하는 데 사용할 개체입니다.  
+    예를 들어 때 <xref:System.Windows.Forms>-기반된 디자이너는 초기화 되는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 환경 수정 합니다 <xref:System.Drawing.Design.UITypeEditor> 에 대 한 <xref:System.Web.UI.WebControls.Image> 디자이너를 사용 하 여 리소스 관리자를 사용 하 여 파일 시스템 보다는 비트맵을 가져오려고 하는 데 사용할 개체입니다.  
   
-2.  이벤트 구독 또는 프로젝트 구성 정보를 가져오는 예를 들어, 환경에 통합 합니다. 프로젝트 구성 정보를 가져오고을 확보 하 여 이벤트를 구독할 수는 <xref:System.ComponentModel.Design.ITypeResolutionService> 인터페이스입니다.  
+2. 이벤트 구독 또는 프로젝트 구성 정보를 가져오는 예를 들어, 환경에 통합 합니다. 프로젝트 구성 정보를 가져오고을 확보 하 여 이벤트를 구독할 수는 <xref:System.ComponentModel.Design.ITypeResolutionService> 인터페이스입니다.  
   
-3.  적절 한를 활성화 하 여 사용자 환경의 수정 **도구 상자** 범주 또는 인스턴스에 적용 하 여 디자이너의 적용 가능성을 제한 하 여는 <xref:System.ComponentModel.ToolboxItemFilterAttribute> 디자이너 클래스입니다.  
+3. 적절 한를 활성화 하 여 사용자 환경의 수정 **도구 상자** 범주 또는 인스턴스에 적용 하 여 디자이너의 적용 가능성을 제한 하 여는 <xref:System.ComponentModel.ToolboxItemFilterAttribute> 디자이너 클래스입니다.  
   
 ### <a name="designer-initialization-by-a-vspackage"></a>Vspackage 디자이너 초기화  
  VSPackage 디자이너 초기화를 처리 해야 합니다.  
   
-1.  구현 하는 개체 만들기는 <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> 클래스입니다.  
+1. 구현 하는 개체 만들기는 <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> 클래스입니다.  
   
-    > [!NOTE]
-    >  합니다 <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> 클래스와 같은 개체에 구현 되지 해야는 <xref:Microsoft.VisualStudio.Shell.Package> 클래스입니다.  
+   > [!NOTE]
+   >  합니다 <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> 클래스와 같은 개체에 구현 되지 해야는 <xref:Microsoft.VisualStudio.Shell.Package> 클래스입니다.  
   
-2.  구현 하는 클래스를 등록 <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> 의 인스턴스를 적용 하 여 VSPackage의 디자이너 확장에 대 한 지원을 제공 하는 것 <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>를 <xref:Microsoft.VisualStudio.Shell.ProvideObjectAttribute> 하 고 <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> VSPackage의 구현을 제공 하는 클래스에 <xref:Microsoft.VisualStudio.Shell.Package> .  
+2. 구현 하는 클래스를 등록 <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> 의 인스턴스를 적용 하 여 VSPackage의 디자이너 확장에 대 한 지원을 제공 하는 것 <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>를 <xref:Microsoft.VisualStudio.Shell.ProvideObjectAttribute> 하 고 <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> VSPackage의 구현을 제공 하는 클래스에 <xref:Microsoft.VisualStudio.Shell.Package> .  
   
- 모든 디자이너 또는 디자이너 구성 요소를 만들 때마다는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 환경:  
+   모든 디자이너 또는 디자이너 구성 요소를 만들 때마다는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 환경:  
   
-1.  각 등록 된 디자인 화면 확장 공급자에 액세스합니다.  
+3. 각 등록 된 디자인 화면 확장 공급자에 액세스합니다.  
   
-2.  각 디자인 화면 확장 공급자의 인스턴스를 초기화를 인스턴스화하고 <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> 개체  
+4. 각 디자인 화면 확장 공급자의 인스턴스를 초기화를 인스턴스화하고 <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> 개체  
   
-3.  각 디자인 화면 확장 공급자를 호출 <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension.OnDesignerCreated%2A> 메서드 또는 <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension.OnComponentCreated%2A> 메서드 적절 하 게 합니다.  
+5. 각 디자인 화면 확장 공급자를 호출 <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension.OnDesignerCreated%2A> 메서드 또는 <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension.OnComponentCreated%2A> 메서드 적절 하 게 합니다.  
   
- 구현 하는 경우는 <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> 것을 알고 있어야 하는 VSPackage의 멤버인 개체:  
+   구현 하는 경우는 <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> 것을 알고 있어야 하는 VSPackage의 멤버인 개체:  
   
-1.  합니다 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 환경 메타 데이터에 대 한 제어를 제공 하지 않습니다 또는 기타 구성 설정을 특정 `DesignSurfaceExtension` 공급자의 수정 합니다. 두 개 이상의 수 `DesignSurfaceExtension` 명확한 되 고 최종 수정 충돌 하는 방법으로 같은 디자이너 기능을 수정 하는 공급자입니다. 아닙니다 확정적이 지는 수정 마지막으로 적용 됩니다.  
+6. 합니다 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 환경 메타 데이터에 대 한 제어를 제공 하지 않습니다 또는 기타 구성 설정을 특정 `DesignSurfaceExtension` 공급자의 수정 합니다. 두 개 이상의 수 `DesignSurfaceExtension` 명확한 되 고 최종 수정 충돌 하는 방법으로 같은 디자이너 기능을 수정 하는 공급자입니다. 아닙니다 확정적이 지는 수정 마지막으로 적용 됩니다.  
   
-2.  구현의 명시적으로 제한 하는 것이 불가능 합니다 <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> 개체의 인스턴스를 적용 하 여 특정 디자이너를 <xref:System.ComponentModel.ToolboxItemFilterAttribute> 해당 구현에 합니다. 에 대 한 자세한 **도구 상자** 필터링 항목을 참조 합니다 <xref:System.ComponentModel.ToolboxItemFilterAttribute> 및 <xref:System.ComponentModel.ToolboxItemFilterType>합니다.  
+7. 구현의 명시적으로 제한 하는 것이 불가능 합니다 <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> 개체의 인스턴스를 적용 하 여 특정 디자이너를 <xref:System.ComponentModel.ToolboxItemFilterAttribute> 해당 구현에 합니다. 에 대 한 자세한 **도구 상자** 필터링 항목을 참조 합니다 <xref:System.ComponentModel.ToolboxItemFilterAttribute> 및 <xref:System.ComponentModel.ToolboxItemFilterType>합니다.  
   
 ## <a name="additional-metadata-provisioning"></a>추가 메타 데이터를 프로 비전  
  VSPackage는 디자인 타임에 디자이너 또는 다른 디자이너 구성 요소 구성을 변경할 수 있습니다.  
@@ -75,23 +75,23 @@ ms.locfileid: "39637057"
   
  인스턴스에 제공 된 수정 <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> VSPackage의 구현에 적용할 <xref:Microsoft.VisualStudio.Shell.Package> 두 범위 중 하나일 수 있습니다.  
   
--   지정 된 구성 요소의 모든 새 인스턴스에 대 한 전역-  
+- 지정 된 구성 요소의 모든 새 인스턴스에 대 한 전역-  
   
--   로컬 인스턴스의 현재 VSPackage가 제공 하는 디자인 화면에서 만든 구성 요소에만 관련 됩니다.  
+- 로컬 인스턴스의 현재 VSPackage가 제공 하는 디자인 화면에서 만든 구성 요소에만 관련 됩니다.  
   
- `IsGlobal` 의 속성을 <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> VSPackage의 구현에 적용 되는 인스턴스 <xref:Microsoft.VisualStudio.Shell.Package> 이 범위를 결정 합니다.  
+  `IsGlobal` 의 속성을 <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> VSPackage의 구현에 적용 되는 인스턴스 <xref:Microsoft.VisualStudio.Shell.Package> 이 범위를 결정 합니다.  
   
- 구현에 특성을 적용 <xref:Microsoft.VisualStudio.Shell.Package> 사용 하 여는 <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute.IsGlobal%2A> 의 속성을 <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> 개체가 설정 `true`, 전체 브라우저를 아래와 같이 변경 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 환경:  
+  구현에 특성을 적용 <xref:Microsoft.VisualStudio.Shell.Package> 사용 하 여는 <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute.IsGlobal%2A> 의 속성을 <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> 개체가 설정 `true`, 전체 브라우저를 아래와 같이 변경 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 환경:  
   
- `[ProvideDesignerMetadata(typeof(Color), typeof(CustomBrowser),`   `IsGlobal=true`  `)]`  
+  `[ProvideDesignerMetadata(typeof(Color), typeof(CustomBrowser),`   `IsGlobal=true`  `)]`  
   
- `internal class MyPackage : Package {}`  
+  `internal class MyPackage : Package {}`  
   
- 전역 플래그 설정한 경우 `false`, 현재 VSPackage에서 지 원하는 현재 디자이너에 로컬 메타 데이터 변경 됩니다.  
+  전역 플래그 설정한 경우 `false`, 현재 VSPackage에서 지 원하는 현재 디자이너에 로컬 메타 데이터 변경 됩니다.  
   
- `[ProvideDesignerMetadata(typeof(Color), typeof(CustomBrowser),`   `IsGlobal=false`  `)]`  
+  `[ProvideDesignerMetadata(typeof(Color), typeof(CustomBrowser),`   `IsGlobal=false`  `)]`  
   
- `internal class MyPackage : Package {}`  
+  `internal class MyPackage : Package {}`  
   
 > [!NOTE]
 >  현 시점 디자인 화면을 만드는 구성 요소를 지원 하 고 따라서 구성 요소만 로컬 메타 데이터를 가질 수 합니다. 위의 예제에서와 같은 속성을 수정 하 려 했던 것을 `Color` 개체의 속성입니다. 하는 경우 `false` 전역 플래그에 대 한 전달 된 `CustomBrowser` 디자이너의 인스턴스를 실제로 만들어지기 때문에 표시 되지 않습니다 `Color`합니다. 전역 플래그 설정을 `false` 컨트롤, 타이머 및 대화 상자와 같은 구성 요소에 대해 유용 합니다.  
@@ -100,4 +100,4 @@ ms.locfileid: "39637057"
  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>   
  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>   
  <xref:System.ComponentModel.ToolboxItemFilterType>   
- [DDesign 타임 지원 확장](http://msdn.microsoft.com/Library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)
+ [디자인 타임 지원 확장](https://msdn.microsoft.com/Library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)

@@ -1,18 +1,18 @@
 ---
 title: '자습서: Azure Functions'
 description: Mac용 Visual Studio에서 Azure Functions 사용
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: 53684537d20b483f74cbc270e988b130df3ba8c8
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: d6a0683405340d479fb3289540ffde2c5e7a4f78
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232291"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296439"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>자습서: Azure Functions 시작
 
@@ -34,22 +34,20 @@ ms.locfileid: "39232291"
 
 1. **Mac용 Visual Studio**를 시작합니다.
 
-1. **파일 > 새 솔루션**을 선택합니다.
+2. **파일 > 새 솔루션**을 선택합니다.
 
-1. **클라우드 > 일반** 범주에서 **Azure Functions** 템플릿을 선택합니다. C#을 사용하여 Azure Functions를 호스트하는 .NET 클래스 라이브러리를 만듭니다. **다음**을 클릭합니다.
+3. **클라우드 > 일반** 범주에서 **Azure Functions** 템플릿을 선택합니다. C#을 사용하여 Azure Functions를 호스트하는 .NET 클래스 라이브러리를 만듭니다. **다음**을 클릭합니다.
 
     ![Azure Functions 템플릿 선택](media/azure-functions-lab-image1.png)
 
-1. **프로젝트 이름**을 **"AzureFunctionsLab"** 을 설정하고 **만들기**를 클릭합니다.
+4. **프로젝트 이름**을 **"AzureFunctionsLab"** 을 설정하고 **만들기**를 클릭합니다.
 
     ![Azure 함수 프로젝트 이름 지정 및 만들기](media/azure-functions-lab-image2.png)
 
-1. **솔루션 패드**의 노드를 확장합니다. 기본 프로젝트 템플릿에는 Newtonsoft.Json 패키지뿐 아니라 여러 Azure WebJobs 패키지에 대한 NuGet 참조가 포함됩니다. 
+5. **솔루션 패드**의 노드를 확장합니다. 기본 프로젝트 템플릿에는 Newtonsoft.Json 패키지뿐 아니라 여러 Azure WebJobs 패키지에 대한 NuGet 참조가 포함됩니다.
 
-     다음과 같은 세 개의 파일도 있습니다.  
-        - **host.json** – 호스트에 대한 전역 구성 옵션을 설명합니다.  
-        - **local.settings.json** - 서비스 설정을 구성합니다.  
-        - 프로젝트 템플릿은 기본 HttpTrigger도 만듭니다. 이 연습을 위해 프로젝트에서 **HttpTrigger.cs** 파일을 삭제해야 합니다.  
+     또한 호스트에 대한 전역 구성 옵션을 설명하는 **host.json**과, 서비스 설정 구성을 위한 **local.settings.json** 등 3개 파일이 포함됩니다.
+        - 프로젝트 템플릿은 기본 HttpTrigger도 만듭니다. 이 연습을 위해 프로젝트에서 **HttpTrigger.cs** 파일을 삭제해야 합니다.
 
     **local.settings.json**을 엽니다. 기본적으로 두 개의 빈 연결 문자열 설정을 갖습니다.
 
@@ -58,7 +56,7 @@ ms.locfileid: "39232291"
 ## <a name="exercise-2-creating-an-azure-storage-account"></a>연습 2: Azure 저장소 계정 만들기
 
 1. [https://portal.azure.com](https://portal.azure.com)에서 Azure 계정에 로그온합니다.
- 
+
 1. **즐겨찾기** 섹션에서 화면 왼쪽에 있는 **저장소 계정**을 선택합니다.
 
     ![저장소 계정 항목을 나타내는 Azure Portal의 즐겨찾기 섹션](media/azure-functions-lab-image4.png)
@@ -91,7 +89,7 @@ ms.locfileid: "39232291"
 
 ## <a name="example-3-creating-and-debugging-an-azure-function"></a>예제 3: Azure Function 만들기 및 디버깅
 
-1. 이제 일부 코드를 추가할 준비가 되었습니다. .NET 클래스 라이브러리를 사용할 때 Azure Functions는 고정 메서드로 추가됩니다. **Solution Pad**에서 **AzureFunctions** 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **추가 > 함수 추가...** 를 선택합니다.
+1. 이제 일부 코드를 추가할 준비가 되었습니다. .NET 클래스 라이브러리를 사용할 때 Azure Functions는 고정 메서드로 추가됩니다. **Solution Pad**에서 **AzureFunctions** 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **추가 > 함수 추가**를 선택합니다.
 
     ![함수 추가 옵션](media/azure-functions-lab-image11.png)
 
@@ -121,8 +119,8 @@ ms.locfileid: "39232291"
         return x + y;
     }
     ```
-1. 메서드 정의를 하나씩 살펴보겠습니다. 
-    
+1. 메서드 정의를 하나씩 살펴보겠습니다.
+
     가장 먼저 표시되는 것은 이 메서드를 Azure 함수라 표시하는 **FunctionName** 특성입니다. 이 특성은 함수의 공개 이름을 지정합니다. 특성 이름이 반드시 실제 메서드 이름과 일치할 필요는 없습니다.
 
     ![FunctionName이 강조 표시된 새 실행 메서드](media/azure-functions-lab-image13.png)
@@ -157,7 +155,7 @@ ms.locfileid: "39232291"
 
     ![Azure 함수 API URL](media/azure-functions-lab-image20.png)
 
-1. 중단점은 즉시 트리거됩니다. 웹 요청은 함수에 전달되었으며 이제 디버그할 수 있습니다. **x** 변수 위에 마우스를 놓아 값을 확인합니다. 
+1. 중단점은 즉시 트리거됩니다. 웹 요청은 함수에 전달되었으며 이제 디버그할 수 있습니다. **x** 변수 위에 마우스를 놓아 값을 확인합니다.
 
     ![중단점 트리거됨](media/azure-functions-lab-image21.png)
 
@@ -306,7 +304,7 @@ ms.locfileid: "39232291"
 
 ## <a name="exercise-5-working-with-azure-storage-tables"></a>연습 5: Azure 저장소 테이블 작업
 
-빌드하는 서비스가 지금까지 연습한 빌드보다는 훨씬 복잡하여 실행을 위해 상당한 시간 및/또는 인프라가 소요되는 경우가 많습니다. 이 경우 리소스가 사용 가능하게 될 때 처리 대기 중인 요청을 수락하도록 하는 것이 효과적일 수 있으며 Azure Functions에서 이를 지원합니다. 다른 경우 데이터를 중앙 집중식으로 저장하려 할 수 있습니다. Azure Storage 테이블에서는 이를 신속하게 수행할 수 있습니다. 
+빌드하는 서비스가 지금까지 연습한 빌드보다는 훨씬 복잡하여 실행을 위해 상당한 시간 및/또는 인프라가 소요되는 경우가 많습니다. 이 경우 리소스가 사용 가능하게 될 때 처리 대기 중인 요청을 수락하도록 하는 것이 효과적일 수 있으며 Azure Functions에서 이를 지원합니다. 다른 경우 데이터를 중앙 집중식으로 저장하려 할 수 있습니다. Azure Storage 테이블에서는 이를 신속하게 수행할 수 있습니다.
 
 1. 아래 클래스를 **Add.cs**에 추가합니다. 네임스페이스 내부이면서 기존 클래스의 외부에 있어야 합니다.
 
@@ -332,7 +330,7 @@ ms.locfileid: "39232291"
         TraceWriter log)
     {
         log.Info($"Processing {x} + {y}");
-    
+
         return new TableRow()
         {
             PartitionKey = "sums",
@@ -353,7 +351,7 @@ ms.locfileid: "39232291"
 
 1. 브라우저로 돌아와 같은 URL에 대한 요청을 새로 고칩니다. 이제 **Process** 메서드 다음에 오류가 표시됩니다. 이 코드가 이미 존재하는 파티션과 행 키 조합을 사용하는 Azure Table Storage 테이블에 행을 추가하려 시도하기 때문입니다.
 
-    ``` 
+    ```
     System.Private.CoreLib: Exception while executing function: Process. Microsoft.Azure.WebJobs.Host: Error while handling parameter $return after function returned:. Microsoft.Azure.WebJobs.Host: The specified entity already exists.
     ```
 
@@ -387,7 +385,7 @@ ms.locfileid: "39232291"
 1. **Mac용 Visual Studio**로 돌아와 디버깅 세션을 종료합니다.
 
 <!--
-1. Finally, let's take a look at what it's like to work with multiple input records. Rather than specify a specific **TableRow**, you can request an **IQueryable<TableRow>** using the same attributes, and the runtime will fill it with the appropriate resource you need. Add the code below to create a **List** function that lists all items that currently exist in the Azure table we've been working with. Also note that we're specifying that the MIME type of the response is **application/json**, so the runtime will automatically render as JSON. 
+1. Finally, let's take a look at what it's like to work with multiple input records. Rather than specify a specific **TableRow**, you can request an **IQueryable<TableRow>** using the same attributes, and the runtime will fill it with the appropriate resource you need. Add the code below to create a **List** function that lists all items that currently exist in the Azure table we've been working with. Also note that we're specifying that the MIME type of the response is **application/json**, so the runtime will automatically render as JSON.
 
     ```csharp
     [FunctionName("List")]

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c30bb562784d9de0d9b44a2c3169b595bb4bd39
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bcbf8792cf2972c4b419b6309ba2f561b8308812
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127144"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906899"
 ---
 # <a name="referencetype"></a>REFERENCE_TYPE
 참조 형식을 지정합니다.  
@@ -44,15 +44,15 @@ public enum enum_REFERENCE_TYPE {
   
 ## <a name="members"></a>멤버  
  REF_TYPE_WEAK  
- 약한 참조를 지정합니다. 함께 사용할 수 없는 `REF_TYPE_STRONG`합니다.  
+ 약한 참조를 지정합니다. 함께 사용할 수 없습니다 `REF_TYPE_STRONG`합니다.  
   
  REF_TYPE_STRONG  
- 강한 참조를 지정합니다. 함께 사용할 수 없는 `REF_TYPE_WEAK`합니다.  
+ 강력한 참조를 지정합니다. 함께 사용할 수 없습니다 `REF_TYPE_WEAK`합니다.  
   
 ## <a name="remarks"></a>설명  
- 로 사용 된 `dwRefType` 의 멤버는 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 구조입니다.  
+ 로 사용 합니다 `dwRefType` 의 멤버는 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 구조입니다.  
   
- 에 대 한 매개 변수로 전달 되는 [SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md) 메서드.  
+ 매개 변수로 전달 된 [SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md) 메서드.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  

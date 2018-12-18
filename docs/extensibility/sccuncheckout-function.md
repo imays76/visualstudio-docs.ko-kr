@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c363da795e588963c234af05a856f3352a7b2815
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 79afce90f462f97d7a33a64875c4784a030f845e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137342"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905924"
 ---
 # <a name="sccuncheckout-function"></a>SccUncheckout 함수
-이 함수에는 선택한 파일 또는 파일의 내용을 체크 아웃 이전 상태로 복원 하는 이전 체크 아웃 작업을 실행 취소 합니다. 파일 체크 아웃 이후에 발생 한 모든 변경 내용이 손실 됩니다.  
+이 함수에는 선택한 하나 이상의 파일의 콘텐츠를 체크 아웃 하기 전의 상태로 복원 이전 체크 아웃 작업을 실행 취소 합니다. 체크 아웃 이후에 파일에 대 한 모든 변경 내용이 손실 됩니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -40,39 +40,39 @@ SCCRTN SccUncheckout (
   
 #### <a name="parameters"></a>매개 변수  
  pvContext  
- [in] 소스 제어 플러그 인 컨텍스트 구조입니다.  
+ [in] 원본 제어 플러그 인 상황에 맞는 구조입니다.  
   
  hWnd  
- [in] 소스 제어 플러그 인을 제공 하는 모든 대화 상자에를 부모로 사용할 수 있는 IDE 창 핸들입니다.  
+ [in] 소스 제어 플러그 인을 제공 하는 모든 대화 상자에 대 한 부모로 사용할 수 있는 IDE 창 핸들입니다.  
   
  nFiles  
- [in] 에 지정 된 파일의 수는 `lpFileNames` 배열입니다.  
+ [in] 에 지정 된 파일 수는 `lpFileNames` 배열입니다.  
   
  lpFileNames  
  [in] 체크 아웃을 취소 하려는 파일의 정규화 된 로컬 경로 이름 배열입니다.  
   
- fOptions  
+ 옵션이  
  [in] 명령 플래그 (사용 되지 않음)입니다.  
   
  pvOptions  
- [in] 소스 제어 플러그 인에 대 한 옵션입니다.  
+ [in] 원본 제어 플러그 인에 대 한 옵션입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 소스 제어 플러그 인이 함수의 구현은 다음 값 중 하나를 반환:  
+ 원본 제어 플러그 인이 함수의 구현은 다음 값 중 하나를 반환 하:  
   
 |값|설명|  
 |-----------|-----------------|  
 |SCC_OK|체크 아웃을 취소 했습니다.|  
-|SCC_E_FILENOTCONTROLLED|선택한 파일은 소스 코드 제어 하지 않습니다.|  
-|SCC_E_ACCESSFAILURE|소스 제어 시스템에 네트워크 또는 경합 문제 때문에 액세스 하는 문제가 발생 했습니다. 다시 시도 하 여 것이 좋습니다.|  
+|SCC_E_FILENOTCONTROLLED|선택한 파일이 소스 코드 제어 없습니다.|  
+|SCC_E_ACCESSFAILURE|소스 제어 시스템에 경합 또는 네트워크 문제로 인해 액세스 문제가 있습니다. 재시도 사용 하는 것이 좋습니다.|  
 |SCC_E_NONSPECIFICERROR|알 수 없는 오류가 발생 했습니다. 실행 취소 체크 아웃 하지 못했습니다.|  
-|SCC_E_NOTCHECKEDOUT|사용자는 파일을 체크 아웃가 없습니다.|  
-|SCC_E_NOTAUTHORIZED|사용자가이 작업을 수행할 수 없습니다.|  
+|SCC_E_NOTCHECKEDOUT|사용자 파일을 체크 아웃 없습니다.|  
+|SCC_E_NOTAUTHORIZED|사용자는이 작업을 수행할 수 없습니다.|  
 |SCC_E_PROJNOTOPEN|프로젝트 소스 제어에서 열리지 않았습니다.|  
 |SCC_I_OPERATIONCANCELED|작업이 완료 되기 전에 취소 되었습니다.|  
   
 ## <a name="remarks"></a>설명  
- 이 작업이 끝나면는 `SCC_STATUS_CHECKEDOUT` 및 `SCC_STATUS_MODIFIED` 플래그는 모두 지워집니다 체크 아웃을 취소 수행 된 파일에 대 한 합니다.  
+ 이 작업이 끝나면 합니다 `SCC_STATUS_CHECKEDOUT` 및 `SCC_STATUS_MODIFIED` 플래그는 모두 지워집니다 체크 아웃을 취소를 수행 하는 파일에 대 한 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)

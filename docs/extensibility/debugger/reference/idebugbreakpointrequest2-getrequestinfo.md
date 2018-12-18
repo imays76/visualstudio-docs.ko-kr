@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c9cfbf39ad6ff0dc889f18276a0aad2e4510434c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 80bba52a25d6931a83724ffb17e9e34d2bbf923b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105816"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864311"
 ---
 # <a name="idebugbreakpointrequest2getrequestinfo"></a>IDebugBreakpointRequest2::GetRequestInfo
 이 중단점 요청을 설명 하는 중단점 요청 정보를 가져옵니다.  
@@ -43,16 +43,16 @@ int GetRequestInfo(
   
 #### <a name="parameters"></a>매개 변수  
  `dwFields`  
- [in] 플래그의 조합을 [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) 의 필드를 결정 하는 `pBPRequestInfo` 매개 변수는 데이터를 입력할 수 있습니다.  
+ [in] 플래그의 조합을 [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) 에서 필드를 결정 하는 열거형을 `pBPRequestInfo` 작성 해야 할 매개 변수는.  
   
  `pBPRequestInfo`  
- [out] 지정 된 [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) 구조 중단점 요청에 대 한 설명을 채울 수 있습니다.  
+ [out] 지정 된 [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) 중단점 요청에 대 한 설명을로 채워질 구조입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제에서는 간단한에이 메서드를 구현 하는 방법을 보여 줍니다 `CDebugBreakpointRequest` 공개 하는 개체는 [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) 인터페이스입니다.  
+ 다음 예제에서는 간단한에 대 한이 메서드를 구현 하는 방법을 보여 줍니다 `CDebugBreakpointRequest` 노출 하는 개체를 [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) 인터페이스입니다.  
   
 ```  
 HRESULT CDebugBreakpointRequest::GetRequestInfo(  

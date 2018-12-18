@@ -13,31 +13,32 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7b154b970d2a738e80efa5cbf669d29bd7bae589
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
-ms.translationtype: MT
+ms.openlocfilehash: c52e5f157dcbc6dcfeacf72df465bd3d8d9d172e
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756768"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304938"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Windows Forms 응용 프로그램에서 조회 테이블 만들기
+
 용어 *조회 테이블* 두 관련된 데이터 테이블에 바인딩되는 컨트롤에 설명 합니다. 이러한 조회 컨트롤에는 두 번째 테이블에서 선택한 값을 기준으로 첫 번째 테이블의 데이터를에서 표시 합니다.
 
- 부모 테이블의 기본 노드 드래그 하 여 조회 테이블을 만들 수 있습니다 (에서 합니다 [데이터 소스 창](add-new-data-sources.md)) 관련된 자식 테이블의 열에 이미 바인딩되어 있는 폼의 컨트롤입니다.
+부모 테이블의 기본 노드 드래그 하 여 조회 테이블을 만들 수 있습니다 (에서 합니다 [데이터 소스 창](add-new-data-sources.md#data-sources-window)) 관련된 자식 테이블의 열에 이미 바인딩되어 있는 폼의 컨트롤입니다.
 
- 예를 들어 테이블을 `Orders` 판매 데이터베이스에서. 각 레코드는 `Orders` 테이블에는 `CustomerID`, 고객 주문을 나타내는입니다. 합니다 `CustomerID` 에서 고객 레코드를 가리키는 외래 키를 `Customers` 테이블입니다. 이 시나리오를 확장 하는 `Orders` 테이블에 **데이터 원본** 창 주 노드를 설정 하 고 **세부 정보**합니다. 그런 다음 설정 합니다 `CustomerID` 사용할 열을를 <xref:System.Windows.Forms.ComboBox> (또는 조회 바인딩을 지 원하는 다른 컨트롤) 끌어서를 `Orders` 노드를 폼으로 합니다. 마지막으로 끌어를 `Customers` 관련된 열에 바인딩되는 컨트롤 노드-이 경우는 <xref:System.Windows.Forms.ComboBox> 바인딩할를 `CustomerID` 열입니다.
+예를 들어 테이블을 `Orders` 판매 데이터베이스에서. 각 레코드는 `Orders` 테이블에는 `CustomerID`, 고객 주문을 나타내는입니다. 합니다 `CustomerID` 에서 고객 레코드를 가리키는 외래 키를 `Customers` 테이블입니다. 이 시나리오를 확장 하는 `Orders` 테이블에 **데이터 원본** 창 주 노드를 설정 하 고 **세부 정보**합니다. 그런 다음 설정 합니다 `CustomerID` 사용할 열을를 <xref:System.Windows.Forms.ComboBox> (또는 조회 바인딩을 지 원하는 다른 컨트롤) 끌어서를 `Orders` 노드를 폼으로 합니다. 마지막으로 끌어를 `Customers` 관련된 열에 바인딩되는 컨트롤 노드-이 경우는 <xref:System.Windows.Forms.ComboBox> 바인딩할를 `CustomerID` 열입니다.
 
 ## <a name="to-databind-a-lookup-control"></a>데이터 바인딩에 조회 컨트롤
 
-1.  엽니다는 **데이터 원본** 창입니다.
+1.  열린 프로젝트를 사용 하 여 열을 **데이터 원본** 선택 하 여 창 **보기** > **다른 Windows** > **데이터 원본을**.
 
     > [!NOTE]
-    >  조회 테이블 두 관련된 테이블 또는 개체에서 사용할 수 있어야 합니다 **데이터 원본** 창입니다. 자세한 내용은 [데이터 집합의 관계](relationships-in-datasets.md)합니다.
+    > 조회 테이블 두 관련된 테이블 또는 개체에서 사용할 수 있어야 합니다 **데이터 원본** 창입니다. 자세한 내용은 [데이터 집합의 관계](relationships-in-datasets.md)합니다.
 
 2.  노드를 확장 합니다 **데이터 원본** 부모 테이블 및 모든 해당 열 및 관련된 자식 테이블의 모든 열 표시 될 때까지 창입니다.
 
     > [!NOTE]
-    >  자식 테이블 노드는 부모 테이블의 확장 가능한 자식 노드로 표시 되는 노드입니다.
+    > 자식 테이블 노드는 부모 테이블의 확장 가능한 자식 노드로 표시 되는 노드입니다.
 
 3.  자식 테이블의 놓기 형식을 변경 **세부 정보** 를 선택 하 여 **세부 정보** 자식 테이블의 노드의 컨트롤 목록에서. 자세한 내용은 [데이터 소스 창에서 끌어올 때 만들 컨트롤 설정](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)합니다.
 
@@ -52,12 +53,12 @@ ms.locfileid: "36756768"
      이제 조회 바인딩은 설정 됩니다. 컨트롤에 설정 된 특정 속성에 대해 다음 표를 참조 하세요.
 
     |속성|설정 설명|
-    |--------------|----------------------------|
-    |**DataSource**|Visual Studio는이 속성을 설정 합니다 <xref:System.Windows.Forms.BindingSource>는 컨트롤로 끄는 테이블에 대해 생성 (아닌 사이트별로 <xref:System.Windows.Forms.BindingSource>, 컨트롤을 만들 때 생성).<br /><br /> 조정 해야 할 경우 설정 된 <xref:System.Windows.Forms.BindingSource> 표시 하려는 열이 있는 테이블의 합니다.|
-    |**DisplayMember**|Visual Studio는 컨트롤로 끄는 테이블에 대해 문자열 데이터 형식을 포함하는 기본 키 다음의 첫 번째 열로 이 속성을 설정합니다.<br /><br /> 조정 해야 하는 경우 표시 하려는 열 이름으로 설정 합니다.|
-    |**ValueMember**|Visual Studio는 이 속성을 기본 키에 포함되는 첫 번째 열로 설정하거나 키가 정의되어 있지 않으면 테이블의 첫 번째 열로 설정합니다.<br /><br /> 조정 해야 하는 경우 표시 하려는 열이 있는 테이블의 기본 키로 설정 합니다.|
-    |**SelectedValue**|Visual Studio에서 삭제할 원래 열으로이 속성을 설정 합니다 **데이터 원본** 창입니다.<br /><br /> 조정 해야 하는 경우 관련된 테이블의 외래 키 열으로 설정 합니다.|
+    |--------------| - |
+    |DataSource|Visual Studio는 사용자가 컨트롤로 끌어 온 테이블에 대해 작성된 <xref:System.Windows.Forms.BindingSource>로 이 속성을 설정합니다. 컨트롤을 만들 때 작성된 <xref:System.Windows.Forms.BindingSource>가 아닙니다.<br /><br /> 조정 해야 할 경우 설정 된 <xref:System.Windows.Forms.BindingSource> 표시 하려는 열이 있는 테이블의 합니다.|
+    |DisplayMember|Visual Studio는 컨트롤로 끄는 테이블에 대해 문자열 데이터 형식을 포함하는 기본 키 다음의 첫 번째 열로 이 속성을 설정합니다.<br /><br /> 조정 해야 하는 경우 표시 하려는 열 이름으로 설정 합니다.|
+    |ValueMember|Visual Studio는 이 속성을 기본 키에 포함되는 첫 번째 열로 설정하거나 키가 정의되어 있지 않으면 테이블의 첫 번째 열로 설정합니다.<br /><br /> 조정 해야 하는 경우 표시 하려는 열이 있는 테이블의 기본 키로 설정 합니다.|
+    |SelectedValue|Visual Studio에서 삭제할 원래 열으로이 속성을 설정 합니다 **데이터 원본** 창입니다.<br /><br /> 조정 해야 하는 경우 관련된 테이블의 외래 키 열으로 설정 합니다.|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio에서 데이터에 Windows Forms 컨트롤 바인딩](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

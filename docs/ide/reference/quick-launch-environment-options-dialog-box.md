@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad37856e8692d5182ddba4f80ec1c07aa095f674
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4149a6cc7974f1c38c146620c0f3a6e95f760ad3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946782"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936656"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>옵션 대화 상자, 환경, 빠른 실행
 **빠른 실행**을 사용하면 옵션, 템플릿, 메뉴 등의 IDE 자산에 대해 신속하게 검색하고 동작을 실행할 수 있습니다. 코드 및 기호를 검색하는 데는 **빠른 실행**을 사용할 수 없습니다. **빠른 실행** 검색 상자는 메뉴 모음의 오른쪽 위 모서리에 있으며 Ctrl+Q 키를 선택하여 액세스할 수 있습니다. 간단히 상자에 검색 문자열을 입력합니다. @ 이 포함된 문자열을 검색하려면 ”@@” 을 사용합니다. 
@@ -34,7 +34,7 @@ ms.locfileid: "31946782"
  다음 바로 가기 키를 사용하여 검색을 특정 범주로 제한할 수 있습니다.
 
 |범주|바로 가기|바로 가기 설명|
-|--------------|--------------|--------------------------|
+|--------------|--------------| - |
 |가장 최근에 사용됨|@mru<br /><br /> 예를 들면 `@mru font`과 같습니다.|**가장 최근에 사용됨** 범주의 항목을 최대 5개까지 표시합니다.|
 |메뉴|@menu<br /><br /> 예를 들면 `@menu font`과 같습니다.|검색을 메뉴 항목으로 제한합니다.|
 |옵션|@opt<br /><br /> 예를 들면 `@opt font`과 같습니다.|검색을 **옵션** 대화 상자의 설정으로 제한합니다.|

@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 68fdee03e7e75b40cd5b80f3fc2e8c3f9e055af4
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 422025e61987a80b365b8db69dde11ee61e38472
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31467341"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875335"
 ---
 # <a name="idiasymbolgetcountliveranges"></a>IDiaSymbol::get_countLiveRanges
-로컬 기호와 관련 된 올바른 주소 범위 수를 검색 합니다.  
+로컬 기호를 사용 하 여 연결 하는 유효한 주소 범위 수를 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -37,7 +37,7 @@ HRESULT get_countLiveRanges (
  [out] 주소 범위 수를 반환합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: Dia2.h  

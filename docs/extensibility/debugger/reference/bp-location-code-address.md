@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6d0972b4e326cabd00341db685a0b73c8c104c7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cd694d88348a13aefa1dfd7851c6897523009919
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099124"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930039"
 ---
 # <a name="bplocationcodeaddress"></a>BP_LOCATION_CODE_ADDRESS
-코드의 주소에 중단점의 위치에 설명 합니다.  
+코드에서 주소 중단점의 위치를 설명 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -38,19 +38,19 @@ typedef struct _BP_LOCATION_CODE_ADDRESS {
   
 ## <a name="members"></a>멤버  
  `bstrContext`  
- 중단점의 컨텍스트, 일반적으로 호출 스택에 보듯이 메서드 또는 함수 이름입니다.  
+ 중단점의 컨텍스트에서, 일반적으로 호출 스택에 표시 된 메서드 또는 함수의 이름입니다.  
   
  `bstrModuleUrl`  
- 중단점을 포함 하는 모듈의 URL입니다.  
+ 중단점이 포함 된 모듈의 URL입니다.  
   
  `bstrFunction`  
- 중단점을 포함 하는 함수의 이름입니다.  
+ 중단점이 포함 된 함수의 이름입니다.  
   
  `bstrAddress`  
- 에 바인딩하는 식 계산기에서 구문을 분석 하 고 중단점의 주소는 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 개체입니다.  
+ 주소에 바인딩하는 식 계산기에서 구문을 분석 하는 중단점을를 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 개체입니다.  
   
 ## <a name="remarks"></a>설명  
- 이 구조는의 구성원은 [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) 공용 구조체의 일부로 구조입니다.  
+ 이 구조체의 멤버인 합니다 [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) 공용 구조체의 일부로 구조입니다.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  

@@ -14,18 +14,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a52c65823bb5e4f6ee93522648b235feba691d0
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f5dc2c5f053d14a42bac59f56f58d4aa6227980c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457513"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925724"
 ---
 # <a name="cvcputypee"></a>CV_CPU_TYPE_e
 대상 프로세서를 지정합니다.  
   
 > [!NOTE]
->  프로세서 후 열거형 요소에서 식별 되는 `CV_CFL_*` 접두사입니다.  
+>  프로세서를 앞의 열거형 요소에서 식별 된 `CV_CFL_*` 접두사입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -97,7 +97,7 @@ typedef enum CV_CPU_TYPE_e {
 ```  
   
 ## <a name="remarks"></a>설명  
- 이 열거형의 값에 대 한 호출에서 반환될지는 [idiasymbol:: Get_platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md) 메서드.  
+ 이 열거형의 값에는 호출에서 반환 되는 [idiasymbol:: Get_platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md) 메서드.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: cvconst.h  

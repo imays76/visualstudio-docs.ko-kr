@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 02d3a9dfa6496b30e7438e53754f6d3d1720e6df
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 47f6a975488adacbeffbdf0f04771131cd9a0ff9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078929"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926945"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Working with elements in XAML Designer
 코드의 XAML에 또는 XAML 디자이너를 사용하여 컨트롤, 레이아웃 및 모양과 같은 요소를 추가할 수 있습니다. 이 항목에서는 Visual Studio 또는 Blend for Visual Studio의 XAML 디자이너에서 요소에 대해 작업하는 방법을 설명합니다.
 
 ## <a name="adding-an-element-to-a-layout"></a>레이아웃에 요소 추가
- *레이아웃*은 UI에서 요소의 크기를 조정하고 배치하는 프로세스입니다. 시각적 요소를 배치하려면 [패널](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.panel.aspx) 레이아웃에 가져다 놓아야 합니다. `Panel`에는 [FrameworkElement](http://msdn.microsoft.com/library/windows/apps/br208706.aspx) 형식의 컬렉션인 자식 속성이 있습니다. [Canvas](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.canvas.aspx), [StackPanel](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.stackpanel.aspx) 및 [Grid](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx)와 같은 다양한 `Panel` 자식 요소를 사용하여 레이아웃 컨테이너 역할을 하고, 페이지에서 요소를 배치 및 정렬할 수 있습니다.
+ *레이아웃*은 UI에서 요소의 크기를 조정하고 배치하는 프로세스입니다. 시각적 요소를 배치하려면 [패널](/uwp/api/Windows.UI.Xaml.Controls.Panel) 레이아웃에 가져다 놓아야 합니다. `Panel`에는 [FrameworkElement](/uwp/api/Windows.UI.Xaml.FrameworkElement) 형식의 컬렉션인 자식 속성이 있습니다. [Canvas](/uwp/api/Windows.UI.Xaml.Controls.Canvas), [StackPanel](/uwp/api/Windows.UI.Xaml.Controls.StackPanel) 및 [Grid](/uwp/api/Windows.UI.Xaml.Controls.Grid)와 같은 다양한 `Panel` 자식 요소를 사용하여 레이아웃 컨테이너 역할을 하고, 페이지에서 요소를 배치 및 정렬할 수 있습니다.
 
  기본적으로는 `Grid` 패널은 페이지 또는 폼 내에서 최상위 레이아웃 컨테이너로 사용됩니다. 최상위 페이지 레이아웃에서 패널, 컨트롤 또는 기타 요소를 추가할 수 있습니다.
 
@@ -33,28 +33,28 @@ ms.locfileid: "39078929"
 
     -   요소를 **도구 상자**에서 아트보드로 끌어 놓습니다.
 
-    -   **도구 상자**에서 그리기 도구(예: [타원](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) 또는 [사각형](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx)) 중 하나를 선택한 다음 활성 패널에서 요소를 그립니다.
+    -   **도구 상자**에서 그리기 도구(예: [타원](/uwp/api/Windows.UI.Xaml.Shapes.Ellipse) 또는 [사각형](/uwp/api/Windows.UI.Xaml.Shapes.Rectangle)) 중 하나를 선택한 다음 활성 패널에서 요소를 그립니다.
 
 ## <a name="changing-the-layering-order-of-elements"></a>요소의 쌓기 순서 변경
  XAML 디자이너의 아트보드에 두 요소가 있는 경우 한 요소가 쌓기 순서대로 다른 요소 앞에 표시됩니다. 문서 개요 창의 요소 목록 아래쪽에는 맨 앞의 요소가 있습니다(요소에 대해 **ZIndex** 속성이 설정된 경우 제외). 페이지, 폼 또는 레이아웃 컨테이너에 요소를 삽입할 때 요소가 활성 컨테이너 요소의 다른 요소 앞에 자동으로 배치됩니다. 요소의 순서를 변경하려면 **Order** 명령을 사용하거나 [문서 개요] 창의 개체 트리에서 요소를 끌면 됩니다.
 
 #### <a name="to-change-the-layering-order"></a>쌓기 순서를 변경하려면
 
--   다음 작업 중 하나를 수행합니다.
+- 다음 작업 중 하나를 수행합니다.
 
-    -   **문서 개요** 창에서 요소를 위쪽이나 아래쪽으로 끌어 원하는 쌓기 순서를 만듭니다.
+  - **문서 개요** 창에서 요소를 위쪽이나 아래쪽으로 끌어 원하는 쌓기 순서를 만듭니다.
 
-    -   [문서 개요] 창 또는 쌓기 순서를 변경하려는 아트보드에서 요소를 마우스 오른쪽 단추로 클릭하고, **Order**를 가리키고, 다음 중 하나를 클릭합니다.
+  - [문서 개요] 창 또는 쌓기 순서를 변경하려는 아트보드에서 요소를 마우스 오른쪽 단추로 클릭하고, **Order**를 가리키고, 다음 중 하나를 클릭합니다.
 
-        -   **맨 앞으로 가져오기** - 요소를 순서의 맨 앞으로 가져옵니다.
+    -   **맨 앞으로 가져오기** - 요소를 순서의 맨 앞으로 가져옵니다.
 
-        -   **앞으로 가져오기** - 요소를 순서대로 한 수준 앞으로 가져옵니다.
+    -   **앞으로 가져오기** - 요소를 순서대로 한 수준 앞으로 가져옵니다.
 
-        -   **뒤로 보내기** - 요소를 순서대로 한 수준 뒤로 보냅니다.
+    -   **뒤로 보내기** - 요소를 순서대로 한 수준 뒤로 보냅니다.
 
-        -   **맨 뒤로 보내기** - 요소를 순서의 맨 뒤로 보냅니다.
+    -   **맨 뒤로 보내기** - 요소를 순서의 맨 뒤로 보냅니다.
 
-     [속성] 창의 **레이아웃** 섹션에서 **ZIndex** 속성을 변경합니다. 겹치는 요소의 경우 **ZIndex** 속성이 [문서 개요] 창에 표시되는 요소의 순서보다 우선합니다. 요소가 겹치는 경우 **Z 인덱스** 값이 더 큰 요소가 앞에 표시됩니다.
+    [속성] 창의 **레이아웃** 섹션에서 **ZIndex** 속성을 변경합니다. 겹치는 요소의 경우 **ZIndex** 속성이 [문서 개요] 창에 표시되는 요소의 순서보다 우선합니다. 요소가 겹치는 경우 **Z 인덱스** 값이 더 큰 요소가 앞에 표시됩니다.
 
 ## <a name="changing-the-alignment-of-an-element"></a>요소의 맞춤 변경
  메뉴 명령을 사용하거나 맞춤선에 요소를 끌어 아트 보드에서 요소를 맞출 수 있습니다.
@@ -109,9 +109,9 @@ ms.locfileid: "39078929"
 
 #### <a name="to-ungroup-elements-and-delete-the-layout"></a>요소를 그룹 해제하고 레이아웃을 삭제하려면
 
--   그룹 해제하려는 그룹을 마우스 오른쪽 단추로 클릭하고 **그룹 해제**를 클릭합니다.
+- 그룹 해제하려는 그룹을 마우스 오른쪽 단추로 클릭하고 **그룹 해제**를 클릭합니다.
 
- [문서 개요] 창에서 선택한 항목을 마우스 오른쪽 단추로 클릭하고 **그룹으로 묶기** 또는 **그룹 해제**를 클릭하여 요소를 그룹화하거나 그룹 해제할 수도 있습니다.
+  [문서 개요] 창에서 선택한 항목을 마우스 오른쪽 단추로 클릭하고 **그룹으로 묶기** 또는 **그룹 해제**를 클릭하여 요소를 그룹화하거나 그룹 해제할 수도 있습니다.
 
 ## <a name="resetting-the-element-layout"></a>요소 레이아웃 재설정
  레이아웃 다시 설정 명령을 사용하여 요소의 특정 레이아웃 속성에 대한 기본값을 복원할 수 있습니다. 이 명령을 사용하여 개별적으로 또는 전체적으로 요소의 여백, 맞춤, 너비, 높이 및 있는 크기를 재설정할 수 있습니다.

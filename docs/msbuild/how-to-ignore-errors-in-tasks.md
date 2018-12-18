@@ -11,12 +11,12 @@ ms.assetid: e2f1ca4f-787b-44bd-bc64-81a036025e96
 author: mikejo5000
 ms.author: mikejo
 manager: douge
-ms.openlocfilehash: 619f2c17d3653895c8c969e89d7a342e73f8c8d9
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 3df3a3b40dd67f12bac19f4e69f5293c85bb85f3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081477"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940036"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>방법: 작업의 오류 무시
 경우에 따라 빌드에서 특정 작업의 폴트 발생을 허용하고자 합니다. 중요하지 않은 작업이 실패할 경우 필요한 출력이 계속 생성될 수 있으므로 빌드를 계속 진행하고자 합니다. 예를 들어 각 구성 요소가 빌드된 후 프로젝트에서 `SendMail` 작업을 사용하여 전자 메일 메시지를 보낸다면 메일 서버를 사용할 수 없고 상태 메시지를 보낼 수 없는 경우에도 완료될 때까지 빌드를 진행하도록 허용할 수 있습니다. 또는 예를 들어 일반적으로 빌드 중에 중간 파일이 삭제된다면 해당 파일을 삭제할 수 없는 경우에도 완료될 때까지 빌드를 진행하도록 허용할 수 있습니다.  
@@ -26,15 +26,15 @@ ms.locfileid: "39081477"
   
  `ContinueOnError` 특성은 다음 값 중 하나를 포함할 수 있습니다.  
   
--   **WarnAndContinue** 또는 **true**. 작업이 실패할 경우 [Target](../msbuild/target-element-msbuild.md) 요소의 후속 작업과 빌드가 계속 실행되고 작업에서 발생한 모든 오류가 경고로 처리됩니다.  
+- **WarnAndContinue** 또는 **true**. 작업이 실패할 경우 [Target](../msbuild/target-element-msbuild.md) 요소의 후속 작업과 빌드가 계속 실행되고 작업에서 발생한 모든 오류가 경고로 처리됩니다.  
   
--   **ErrorAndContinue**. 작업이 실패할 경우 `Target` 요소의 후속 작업과 빌드가 계속 실행되고 작업에서 발생한 모든 오류가 오류로 처리됩니다.  
+- **ErrorAndContinue**. 작업이 실패할 경우 `Target` 요소의 후속 작업과 빌드가 계속 실행되고 작업에서 발생한 모든 오류가 오류로 처리됩니다.  
   
--   **ErrorAndStop** 또는 **false**(기본값). 작업이 실패할 경우 `Target` 요소의 나머지 작업이 실행되지 않고 전체 `Target` 요소와 빌드가 실패한 것으로 간주됩니다.  
+- **ErrorAndStop** 또는 **false**(기본값). 작업이 실패할 경우 `Target` 요소의 나머지 작업이 실행되지 않고 전체 `Target` 요소와 빌드가 실패한 것으로 간주됩니다.  
   
- .NET Framework 4.5 이전 버전은 `true` 및 `false` 값만 지원합니다.  
+  .NET Framework 4.5 이전 버전은 `true` 및 `false` 값만 지원합니다.  
   
- `ContinueOnError`의 기본값은 `ErrorAndStop`입니다. 특성을 `ErrorAndStop`으로 설정하면 프로젝트 파일을 읽는 모든 사용자에게 동작이 명시적으로 제시됩니다.  
+  `ContinueOnError`의 기본값은 `ErrorAndStop`입니다. 특성을 `ErrorAndStop`으로 설정하면 프로젝트 파일을 읽는 모든 사용자에게 동작이 명시적으로 제시됩니다.  
   
 #### <a name="to-ignore-an-error-in-a-task"></a>작업의 오류를 무시하려면  
   

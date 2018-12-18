@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af31d6bce4f1c44fbe759423ddaeec9537054688
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 455c05ae0d8645040d3f9eac68d20f57138df5cb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255995"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830771"
 ---
 # <a name="performance-report-overview"></a>성능 보고서 개요
 Visual Studio Team System Development Edition IDE(통합 개발 환경)의 **성능 보고서** 창에서 성능 세션의 프로파일링 데이터를 볼 수 있습니다. 프로파일링 데이터는 .vsps 및 .vsp 파일에 저장됩니다. 보고서 뷰 창에서는 응용 프로그램 성능 문제를 확인하고 분석할 수 있습니다.  
@@ -42,13 +42,13 @@ Visual Studio Team System Development Edition IDE(통합 개발 환경)의 **성
 ### <a name="callercallee-view"></a>호출자/호출 수신자 뷰  
  호출자/호출 수신자 뷰에는 개별 함수의 호출 트리가 표시됩니다. 이 뷰는 세 부분으로 구분됩니다.  
   
--   대상 함수는 뷰의 가운데에 표시됩니다.  
+- 대상 함수는 뷰의 가운데에 표시됩니다.  
   
--   함수를 호출한 함수(호출자)는 대상 함수 위에 표시됩니다.  
+- 함수를 호출한 함수(호출자)는 대상 함수 위에 표시됩니다.  
   
--   대상 함수에 의해 호출된 함수(호출 수신자)는 대상 아래에 표시됩니다.  
+- 대상 함수에 의해 호출된 함수(호출 수신자)는 대상 아래에 표시됩니다.  
   
- 호출한 목록 또는 호출 수신자 목록에서 함수를 두 번 클릭하여 다른 함수를 선택할 수 있습니다. 자세한 내용은 [호출자/호출 수신자 뷰](../profiling/caller-callee-view.md)를 참조하세요.  
+  호출한 목록 또는 호출 수신자 목록에서 함수를 두 번 클릭하여 다른 함수를 선택할 수 있습니다. 자세한 내용은 [호출자/호출 수신자 뷰](../profiling/caller-callee-view.md)를 참조하세요.  
   
 ### <a name="call-tree-view"></a>호출 트리 뷰  
  호출 트리 뷰에는 프로파일링 된 응용 프로그램에서 이동한 함수 실행 경로가 표시됩니다. 트리의 루트는 응용 프로그램이나 구성 요소에 대한 진입점입니다. 각 함수 노드에는 호출한 모든 함수 및 이러한 함수 호출에 대한 성능 데이터가 나열됩니다.  

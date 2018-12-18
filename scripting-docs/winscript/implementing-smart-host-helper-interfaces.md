@@ -14,29 +14,29 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ba571f6ad66855c44902e06467889e2cae5b4555
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 016e2a0641772992c9c3e6f423e105c42ae20ff1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24571523"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909824"
 ---
 # <a name="implementing-smart-host-helper-interfaces"></a>스마트 호스트 도우미 인터페이스 구현
 [IDebugDocumentHelper 인터페이스](../winscript/reference/idebugdocumenthelper-interface.md)는 스마트 호스팅에 필요한 많은 인터페이스에 대한 구현을 제공하기 때문에 활성 디버깅을 위한 스마트 호스트를 만드는 작업을 크게 간소화합니다.  
   
  `IDebugDocumentHelper`를 사용하는 스마트 호스트가 되려면 호스트 응용 프로그램에서 다음 세 가지 작업만 수행해야 합니다.  
   
-1.  프로세스 디버그 관리자를 공동으로 만들고(`CoCreate`) [IProcessDebugManager 인터페이스](../winscript/reference/iprocessdebugmanager-interface.md)를 사용하여 디버깅 가능한 응용 프로그램 목록에 응용 프로그램을 추가합니다.  
+1. 프로세스 디버그 관리자를 공동으로 만들고(`CoCreate`) [IProcessDebugManager 인터페이스](../winscript/reference/iprocessdebugmanager-interface.md)를 사용하여 디버깅 가능한 응용 프로그램 목록에 응용 프로그램을 추가합니다.  
   
-2.  [IProcessDebugManager::CreateDebugDocumentHelper](../winscript/reference/iprocessdebugmanager-createdebugdocumenthelper.md) 메서드를 사용하여 각 스크립트 개체에 대한 디버그 문서 도우미를 만듭니다. 문서 이름, 부모 문서, 텍스트 및 스크립트 블록이 정의되어 있는지 확인합니다.  
+2. [IProcessDebugManager::CreateDebugDocumentHelper](../winscript/reference/iprocessdebugmanager-createdebugdocumenthelper.md) 메서드를 사용하여 각 스크립트 개체에 대한 디버그 문서 도우미를 만듭니다. 문서 이름, 부모 문서, 텍스트 및 스크립트 블록이 정의되어 있는지 확인합니다.  
   
-3.  [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) 인터페이스(액티브 스크립팅에 필요함)를 구현하는 개체에 [IActiveScriptSiteDebug 인터페이스](../winscript/reference/iactivescriptsitedebug-interface.md)를 구현합니다. `IActiveScriptSiteDebug` 인터페이스에서 유일한 특수 메서드는 간단히 도우미에 위임합니다.  
+3. [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) 인터페이스(액티브 스크립팅에 필요함)를 구현하는 개체에 [IActiveScriptSiteDebug 인터페이스](../winscript/reference/iactivescriptsitedebug-interface.md)를 구현합니다. `IActiveScriptSiteDebug` 인터페이스에서 유일한 특수 메서드는 간단히 도우미에 위임합니다.  
   
- 필요에 따라 호스트는 구문 색, 문서 컨텍스트 만들기 및 기타 확장 기능에 대한 추가 제어가 필요한 경우 [IDebugDocumentHost 인터페이스](../winscript/reference/idebugdocumenthost-interface.md)를 구현할 수 있습니다.  
+   필요에 따라 호스트는 구문 색, 문서 컨텍스트 만들기 및 기타 확장 기능에 대한 추가 제어가 필요한 경우 [IDebugDocumentHost 인터페이스](../winscript/reference/idebugdocumenthost-interface.md)를 구현할 수 있습니다.  
   
- 스마트 호스트 도우미에 대한 주요 제한 사항은 문서가 확장될 수 있지만 추가된 후에 내용이 변경되거나 축소된 문서만 처리할 수 있다는 것입니다. 그러나 많은 스마트 호스트의 경우 제공되는 기능은 반드시 필요한 기능입니다.  
+   스마트 호스트 도우미에 대한 주요 제한 사항은 문서가 확장될 수 있지만 추가된 후에 내용이 변경되거나 축소된 문서만 처리할 수 있다는 것입니다. 그러나 많은 스마트 호스트의 경우 제공되는 기능은 반드시 필요한 기능입니다.  
   
- 다음 섹션에서는 각 단계에 대해 자세히 설명합니다.  
+   다음 섹션에서는 각 단계에 대해 자세히 설명합니다.  
   
 ## <a name="create-an-application-object"></a>응용 프로그램 개체 만들기  
  스마트 호스트 도우미를 사용하려면 먼저 디버거에서 응용 프로그램을 나타내는 [IDebugApplication 인터페이스](../winscript/reference/idebugapplication-interface.md) 개체를 만들어야 합니다.  

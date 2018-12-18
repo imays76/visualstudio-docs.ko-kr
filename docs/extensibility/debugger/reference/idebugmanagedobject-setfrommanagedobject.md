@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d240c931db24cc353d7bb461645771eb4520921
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: afe3431e282a8cd48ea33851cef00fba116e389a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110896"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833943"
 ---
 # <a name="idebugmanagedobjectsetfrommanagedobject"></a>IDebugManagedObject::SetFromManagedObject
 매개 변수로 제공 하는 값 클래스의 인스턴스에서 값 클래스 개체의 인스턴스 값을 설정 합니다.  
@@ -41,13 +41,13 @@ int SetFromManagedObject(
   
 #### <a name="parameters"></a>매개 변수  
  `pManagedObject`  
- [in] 새 값을 포함 하는 관리 되는 개체를 나타내는 인터페이스입니다.  
+ [in] 새 값이 포함 된 관리 되는 개체를 나타내는 인터페이스입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 s_ok이 고; 반환 그렇지 않은 경우 오류 코드를 반환합니다.  
+ 성공 하면 S_OK를 반환 합니다. 그렇지 않으면 오류 코드를 반환합니다.  
   
 ## <a name="remarks"></a>설명  
- 로 표현 되는 관리 되는 개체를 변경 하려면이 메서드는는 [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md) 개체입니다.  
+ 에 표시 된 대로 관리 되는 개체를 변경 하려면이 메서드는 사용 된 [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md) 개체입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)

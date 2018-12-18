@@ -17,14 +17,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 36741e5e3bcd39dbb6e4ea0746e1877acc581e70
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: b978ef47db6b8803b7730aef14173c3eb19b16e8
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35674008"
 ---
 # <a name="ltformregionsgt-element-office-development-in-visual-studio"></a>&lt;formRegions&gt; 요소 (Visual Studio에서 Office 개발)
-  `formRegions` 네임스페이스의 `vstov4` 요소에는 VSTO 추가 기능과 관련된 영역의 Microsoft Office Outlook 양식이 포함됩니다.  
+  합니다 `formRegions` 의 요소를 `vstov4` 네임 스페이스는에서 VSTO 추가 기능을 사용 하 여 연결 된 Microsoft Office Outlook 양식 영역을 포함 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -45,12 +46,12 @@ ms.lasthandoff: 05/22/2018
  `formRegions` 요소에는 다음 요소가 있습니다.  
   
 ### <a name="formregion"></a>formRegion  
- 양식 영역을 포함하는 Outlook VSTO 추가 기능에 필요합니다. `formRegion` 요소에 정의 된 [ &#60;formRegion&#62; 요소 &#40;Visual Studio에서 Office 개발&#41;](../vsto/formregion-element-office-development-in-visual-studio.md)합니다.  
+ 양식 영역을 포함하는 Outlook VSTO 추가 기능에 필요합니다. 합니다 `formRegion` 요소에 정의 된 [ &#60;formRegion&#62; 요소 &#40;Visual Studio에서 Office 개발&#41;](../vsto/formregion-element-office-development-in-visual-studio.md).  
   
 ## <a name="vsto-add-in-example"></a>VSTO 추가 기능 예제  
   
 ### <a name="description"></a>설명  
- 다음 코드 예제에서는 `formRegions` 을 사용하여 배포된 응용 프로그램 수준의 Office 솔루션에 대한 응용 프로그램 매니페스트의 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]요소를 보여 줍니다. 이 코드 예제는에 제공 된 큰 예제의 일부 [Office 솔루션에 대 한 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)합니다.  
+ 다음 코드 예제에서는 `formRegions` 을 사용하여 배포된 응용 프로그램 수준의 Office 솔루션에 대한 응용 프로그램 매니페스트의 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]요소를 보여 줍니다. 이 코드 예제는에서 제공 하는 더 큰 예제의 일부입니다 [Office 솔루션에 대 한 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)합니다.  
   
 ### <a name="code"></a>코드  
   

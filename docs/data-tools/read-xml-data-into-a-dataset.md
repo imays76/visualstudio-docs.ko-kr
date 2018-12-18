@@ -22,27 +22,24 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: dec4ca4ccd4b318cc337b10086fbf6b31a0e962c
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: 1e43d118a5fcfe00a8eb6eaa7f34a17ff1f6a4be
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174777"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389217"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>XML 데이터를 Dataset에 읽어오기
 
 ADO.NET에는 XML 데이터로 작업 하기 위한 간단한 방법을 제공 합니다. 이 연습에서는 데이터 집합에 XML 데이터를 로드 하는 Windows 응용 프로그램을 만들 수 있습니다. 데이터 집합에 표시 됩니다는 <xref:System.Windows.Forms.DataGridView> 제어 합니다. 마지막으로, XML 파일의 내용을 기반으로 XML 스키마는 텍스트 상자에 표시 됩니다.
 
-> [!NOTE]
-> 대화 상자와 메뉴 명령은 활성 설정 또는 버전에 따라 도움말에서 설명 된 것과 다를 수 표시를 사용 합니다. 설정을 변경 하는 **도구** 메뉴에서 **설정 가져오기 및 내보내기**합니다. 자세한 내용은 [Visual Studio IDE 개인 설정](../ide/personalizing-the-visual-studio-ide.md)을 참조하세요.
-
 ## <a name="create-a-new-project"></a>새 프로젝트 만들기
 
-이 단계에서는 Visual Basic 또는 Visual C# 프로젝트를 만들 수 있습니다.
+Visual Basic 또는 시각적 개체를 만들이 단계에서는 C# 프로젝트입니다.
 
 1. Visual Studio에서에 **파일** 메뉴에서 **새로 만들기** > **프로젝트**합니다.
 
-2. 확장 **Visual C#** 하거나 **Visual Basic** 왼쪽 창에서 선택한 **Windows Desktop**합니다.
+2. 확장 **시각적 C#**  하거나 **Visual Basic** 왼쪽 창에서 선택한 **Windows Desktop**.
 
 3. 가운데 창에서 선택 합니다 **Windows Forms 앱** 형식 프로젝션 합니다.
 
@@ -54,75 +51,75 @@ ADO.NET에는 XML 데이터로 작업 하기 위한 간단한 방법을 제공 �
 
 이 연습에서는 데이터 집합에 XML 데이터 읽기에 집중, 하므로 XML 파일의 내용은 제공 됩니다.
 
-1.  에 **프로젝트** 메뉴에서 **새 항목 추가**합니다.
+1. 프로젝트 **메뉴에서 새 항목 추가**를 선택합니다.
 
-2.  선택 **XML 파일**, 파일 이름을 **authors.xml**를 선택한 후 **추가**합니다.
+2. 선택 **XML 파일**, 파일 이름을 **authors.xml**를 선택한 후 **추가**합니다.
 
    XML 파일을 디자이너에 로드 하 고 편집 하기 위해 준비가 됩니다.
 
-3.  XML 선언 아래 편집기에 다음 XML 데이터를 붙여 넣습니다.
+3. XML 선언 아래 편집기에 다음 XML 데이터를 붙여 넣습니다.
 
-    ```xml
-    <Authors_Table>
-      <authors>
-        <au_id>172-32-1176</au_id>
-        <au_lname>White</au_lname>
-        <au_fname>Johnson</au_fname>
-        <phone>408 496-7223</phone>
-        <address>10932 Bigge Rd.</address>
-        <city>Menlo Park</city>
-        <state>CA</state>
-        <zip>94025</zip>
-        <contract>true</contract>
-      </authors>
-      <authors>
-        <au_id>213-46-8915</au_id>
-        <au_lname>Green</au_lname>
-        <au_fname>Margie</au_fname>
-        <phone>415 986-7020</phone>
-        <address>309 63rd St. #411</address>
-        <city>Oakland</city>
-        <state>CA</state>
-        <zip>94618</zip>
-        <contract>true</contract>
-      </authors>
-      <authors>
-        <au_id>238-95-7766</au_id>
-        <au_lname>Carson</au_lname>
-        <au_fname>Cheryl</au_fname>
-        <phone>415 548-7723</phone>
-        <address>589 Darwin Ln.</address>
-        <city>Berkeley</city>
-        <state>CA</state>
-        <zip>94705</zip>
-        <contract>true</contract>
-      </authors>
-      <authors>
-        <au_id>267-41-2394</au_id>
-        <au_lname>Hunter</au_lname>
-        <au_fname>Anne</au_fname>
-        <phone>408 286-2428</phone>
-        <address>22 Cleveland Av. #14</address>
-        <city>San Jose</city>
-        <state>CA</state>
-        <zip>95128</zip>
-        <contract>true</contract>
-      </authors>
-      <authors>
-        <au_id>274-80-9391</au_id>
-        <au_lname>Straight</au_lname>
-        <au_fname>Dean</au_fname>
-        <phone>415 834-2919</phone>
-        <address>5420 College Av.</address>
-        <city>Oakland</city>
-        <state>CA</state>
-        <zip>94609</zip>
-        <contract>true</contract>
-      </authors>
-    </Authors_Table>
-    ```
+   ```xml
+   <Authors_Table>
+     <authors>
+       <au_id>172-32-1176</au_id>
+       <au_lname>White</au_lname>
+       <au_fname>Johnson</au_fname>
+       <phone>408 496-7223</phone>
+       <address>10932 Bigge Rd.</address>
+       <city>Menlo Park</city>
+       <state>CA</state>
+       <zip>94025</zip>
+       <contract>true</contract>
+     </authors>
+     <authors>
+       <au_id>213-46-8915</au_id>
+       <au_lname>Green</au_lname>
+       <au_fname>Margie</au_fname>
+       <phone>415 986-7020</phone>
+       <address>309 63rd St. #411</address>
+       <city>Oakland</city>
+       <state>CA</state>
+       <zip>94618</zip>
+       <contract>true</contract>
+     </authors>
+     <authors>
+       <au_id>238-95-7766</au_id>
+       <au_lname>Carson</au_lname>
+       <au_fname>Cheryl</au_fname>
+       <phone>415 548-7723</phone>
+       <address>589 Darwin Ln.</address>
+       <city>Berkeley</city>
+       <state>CA</state>
+       <zip>94705</zip>
+       <contract>true</contract>
+     </authors>
+     <authors>
+       <au_id>267-41-2394</au_id>
+       <au_lname>Hunter</au_lname>
+       <au_fname>Anne</au_fname>
+       <phone>408 286-2428</phone>
+       <address>22 Cleveland Av. #14</address>
+       <city>San Jose</city>
+       <state>CA</state>
+       <zip>95128</zip>
+       <contract>true</contract>
+     </authors>
+     <authors>
+       <au_id>274-80-9391</au_id>
+       <au_lname>Straight</au_lname>
+       <au_fname>Dean</au_fname>
+       <phone>415 834-2919</phone>
+       <address>5420 College Av.</address>
+       <city>Oakland</city>
+       <state>CA</state>
+       <zip>94609</zip>
+       <contract>true</contract>
+     </authors>
+   </Authors_Table>
+   ```
 
-4.  에 **파일** 메뉴에서 **authors.xml 저장**합니다.
+4. 에 **파일** 메뉴에서 **authors.xml 저장**합니다.
 
 ## <a name="create-the-user-interface"></a>사용자 인터페이스 만들기
 
@@ -155,7 +152,7 @@ ADO.NET에는 XML 데이터로 작업 하기 위한 간단한 방법을 제공 �
     |Control|속성|설정|
     |-------------|--------------|-------------|
     |`TextBox1`|**Multiline**|`true`|
-    ||**스크롤 막대**|**세로**|
+    ||ScrollBars|**세로**|
     |`Button1`|**이름**|`ReadXmlButton`|
     ||**텍스트**|`Read XML`|
     |`Button2`|**이름**|`ShowSchemaButton`|
@@ -202,7 +199,7 @@ ADO.NET에는 XML 데이터로 작업 하기 위한 간단한 방법을 제공 �
 
      합니다 **코드 편집기** 열립니다는 `ShowSchemaButton_Click` 이벤트 처리기입니다.
 
-3.  다음 코드를 붙여를 `ShowSchemaButton_Click` 이벤트 처리기입니다.
+3.  `ShowSchemaButton_Click` 이벤트 처리기에 다음 코드를 붙여넣습니다.
 
      [!code-csharp[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/CSharp/read-xml-data-into-a-dataset_2.cs)]
      [!code-vb[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/VisualBasic/read-xml-data-into-a-dataset_2.vb)]
@@ -229,7 +226,7 @@ ADO.NET에는 XML 데이터로 작업 하기 위한 간단한 방법을 제공 �
 
 -   데이터 집합에서 데이터를 편집 하 고 데이터베이스에 작성 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio에서 데이터 액세스](../data-tools/accessing-data-in-visual-studio.md)
 - [Visual Studio의 XML 도구](../xml-tools/xml-tools-in-visual-studio.md)

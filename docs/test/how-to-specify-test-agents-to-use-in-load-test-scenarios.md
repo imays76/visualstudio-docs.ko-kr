@@ -1,5 +1,5 @@
 ---
-title: Visual Studio의 부하 테스트 시나리오에서 사용할 테스트 에이전트 지정
+title: 부하 테스트 시나리오에서 사용할 테스트 에이전트 지정
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,16 +14,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a8f822e0023f42b2fb329c8d563a298f3a51c66e
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: db7c901dd081155fe7341433f700f60de415a153
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381471"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061019"
 ---
 # <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>방법: 부하 테스트 시나리오에서 사용할 테스트 에이전트 지정
 
 **부하 테스트 새로 만들기 마법사**를 사용하여 부하 테스트를 만든 다음, **부하 테스트 편집기**를 사용하여 시나리오 속성을 테스트 요구 사항 및 목표에 맞게 변경할 수 있습니다.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
 > 부하 테스트 시나리오 속성과 해당 설명의 전체 목록을 보려면 [부하 테스트 시나리오 속성](../test/load-test-scenario-properties.md)을 참조하세요.
@@ -67,6 +69,6 @@ ms.locfileid: "39381471"
 ## <a name="see-also"></a>참고 항목
 
 - [부하 테스트 시나리오 편집](../test/edit-load-test-scenarios.md)
-- [연습: 부하 테스트 생성 및 실행](../test/walkthrough-create-and-run-a-load-test.md)
+- [연습: 부하 테스트 만들기 및 실행](../test/walkthrough-create-and-run-a-load-test.md)
 - [테스트 컨트롤러 및 테스트 에이전트](configure-test-agents-and-controllers-for-load-tests.md)
 - [부하 테스트 시나리오 속성](../test/load-test-scenario-properties.md)

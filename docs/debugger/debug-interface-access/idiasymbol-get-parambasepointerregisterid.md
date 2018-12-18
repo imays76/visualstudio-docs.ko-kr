@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80f707c94cc0fb22aa3f1a9aa1b9e91fc14a43a8
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0b74250c453f42b4591bb87ef0a281d74de3b489
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469814"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852884"
 ---
 # <a name="idiasymbolgetparambasepointerregisterid"></a>IDiaSymbol::get_paramBasePointerRegisterId
-기본 포인터 매개 변수를 보유 하는 레지스터의 ID를 검색 합니다. 사용 하는 경우는 [SymTagEnum 열거형](../../debugger/debug-interface-access/symtagenum.md) 로 설정 된 `SymTagFunction`합니다.  
+매개 변수에 기본 포인터를 보유 하는 레지스터의 ID를 검색 합니다. 사용 시기를 [SymTagEnum 열거형](../../debugger/debug-interface-access/symtagenum.md) 로 설정 된 `SymTagFunction`합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -34,13 +34,13 @@ HRESULT get_paramBasePointerRegisterId (
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out] 기본 포인터 매개 변수를 보유 하는 레지스터의 ID를 반환 합니다.  
+ [out] 매개 변수에 기본 포인터를 보유 하는 레지스터의 ID를 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
+ 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
   
 > [!NOTE]
->  반환 값이 `S_FALSE` 의미는 속성은 해당 기호를 사용할 수 없습니다.  
+>  반환 값이 `S_FALSE` 속성 기호를 사용할 수 없는 것을 의미 합니다.  
   
 ## <a name="remarks"></a>설명  
   

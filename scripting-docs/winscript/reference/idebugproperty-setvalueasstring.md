@@ -18,15 +18,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 88a7cba4ec83c5428dd4da4a23ce554702177e76
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 18d04a085542aeec82b81dac64a6f9c97d0837c8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726753"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916227"
 ---
 # <a name="idebugpropertysetvalueasstring"></a>IDebugProperty::SetValueAsString
-지정 된 문자열에서 속성의 값을 설정합니다.  
+지정된 된 문자열에서 속성의 값을 설정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -39,13 +39,13 @@ HRESULT SetValueAsString (
   
 #### <a name="parameters"></a>매개 변수  
  `pszValue`  
- [in] 값을 설정할 수 있습니다.  
+ [in] 설정할 값입니다.  
   
  `nRadix`  
  [in] 모든 숫자 정보를 해석 하는 데 사용할 기 수입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 유효한 반환 `HRESULT`, 일반적으로 `S_OK`합니다.  
+ 유효한 반환 `HRESULT`, 일반적으로 `S_OK`.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugProperty 인터페이스](../../winscript/reference/idebugproperty-interface.md)

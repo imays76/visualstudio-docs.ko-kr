@@ -1,28 +1,29 @@
 ---
 title: Python용 웹 응용 프로그램 템플릿
-description: 디버깅 구성 및 Azure App Service에 게시를 포함하여 Bottle, Flask 및 Django 프레임워크를 사용하는, Python으로 작성된 웹 응용 프로그램용 Visual Studio 템플릿에 대한 개요입니다.
-ms.date: 07/03/2018
+description: Visual Studio는 Bottle, Flask 및 Django 프레임워크를 사용하는 Python 웹 애플리케이션용 템플릿을 제공합니다. 지원에는 디버깅 구성 및 Azure App Service에 게시하는 것이 포함됩니다.
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 75f7a7d5a30fd3fb84bfd038c55b0731ae017ef1
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 06513030b34f7ab3217210a931722d72a6368ab3
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638715"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068330"
 ---
 # <a name="python-web-application-project-templates"></a>Python 웹 응용 프로그램 프로젝트 템플릿
 
 Visual Studio의 Python은 다양한 프레임워크를 처리하도록 구성할 수 있는 디버그 시작 관리자 및 프로젝트 템플릿을 통해 Bottle, Flask 및 Django 프레임워크에서 웹 프로젝트 개발을 지원합니다. 이러한 템플릿에는 필요한 종속성을 선언하는 *requirements.txt* 파일이 포함됩니다. 이러한 템플릿 중 하나에서 프로젝트를 만들 때 Visual Studio에서 해당 패키지를 설치하라는 메시지가 표시됩니다. 이 아티클의 뒷부분에 나오는 [프로젝트 요구 사항 설치](#install-project-requirements)를 참조하세요.
 
-Pyramid와 같은 다른 프레임워크에 대한 일반 **웹 프로젝트** 템플릿을 사용할 수도 있습니다. 이 경우, 프레임워크가 템플릿과 함께 설치되지 않습니다. 대신 프로젝트에 사용 중인 환경에 필요한 패키지를 설치합니다. [Python 환경 관리](managing-python-environments-in-visual-studio.md)를 참조하세요.
+Pyramid와 같은 다른 프레임워크에 대한 일반 **웹 프로젝트** 템플릿을 사용할 수도 있습니다. 이 경우, 프레임워크가 템플릿과 함께 설치되지 않습니다. 대신 프로젝트에 사용 중인 환경에 필요한 패키지를 설치합니다([Python 환경 창 - 패키지 탭](python-environments-window-tab-reference.md#packages-tab)을 참조하세요).
 
 Python 웹앱을 Azure에 배포하는 방법에 대한 정보는 [Azure App Service에 게시](publishing-python-web-applications-to-azure-from-visual-studio.md)를 참조하세요.
 
@@ -34,7 +35,7 @@ Python 웹앱을 Azure에 배포하는 방법에 대한 정보는 [Azure App Ser
 
 앞에서 설명한 일반 **웹 프로젝트** 템플릿은 코드가 없고 Python 프로젝트라는 사실 외에 다른 가정이 없는 빈 Visual Studio 프로젝트만 제공합니다. **Azure Cloud Service** 템플릿에 대한 자세한 내용은 [Python용 Azure Cloud Service 프로젝트](python-azure-cloud-service-project-template.md)를 참조하세요.
 
-다른 모든 템플릿은 Bottle, Flask 또는 Django 웹 프레임워크를 기반으로 하며, 다음 섹션에 설명된 대로 세 개의 일반 그룹으로 나뉩니다. 이러한 템플릿으로 만든 앱에는 충분한 코드가 포함되어 로컬에서 앱을 실행하고 디버그할 수 있습니다. 또한 각 항목은 [Azure App Service에 배포](publishing-python-web-applications-to-azure-from-visual-studio.md)하는 데 필요한.[WSGI 앱 개체](http://www.python.org/dev/peps/pep-3333/)(python.org)를 제공합니다.
+다른 모든 템플릿은 Bottle, Flask 또는 Django 웹 프레임워크를 기반으로 하며, 다음 섹션에 설명된 대로 세 개의 일반 그룹으로 나뉩니다. 이러한 템플릿으로 만든 앱에는 충분한 코드가 포함되어 로컬에서 앱을 실행하고 디버그할 수 있습니다. 또한 각 항목은 프로덕션 웹 서버에서 사용하는 데 필요한 [WSGI 앱 개체](https://www.python.org/dev/peps/pep-3333/)(python.org)를 제공합니다.
 
 ### <a name="blank-group"></a>빈 그룹
 
@@ -44,7 +45,7 @@ Python 웹앱을 Azure에 배포하는 방법에 대한 정보는 [Azure App Ser
 | --- | --- |
 | **빈 Bottle 웹 프로젝트** | 매우 짧은 인라인 페이지 템플릿을 사용하여 `<name>`을 에코하는 `/` 및 `/hello/<name>` 페이지의 홈페이지를 사용하여 *app.py*에 최소 앱을 생성합니다. |
 | **빈 Django 웹 프로젝트** | 코어 Django 사이트 구조를 사용하지만 Django 앱은 포함되지 않은 Django 프로젝트를 생성합니다. 자세한 내용은 [Django 템플릿](python-django-web-application-project-template.md) 및 [Django 알아보기 1단계](learn-django-in-visual-studio-step-01-project-and-solution.md)를 참조하세요. |
-| **빈 Flask 웹 프로젝트** | 최소 앱을 `/`에 대한 단일 “Hello World!” 페이지로 생성합니다. 이 앱은 [빠른 시작: Visual Studio를 사용하여 첫 번째 Python 웹앱 만들기](../ide/quickstart-python.md?context=visualstudio/python/default)의 자세한 단계를 수행한 결과와 유사합니다. [Flask 알아보기 1단계](learn-flask-visual-studio-step-01-project-solution.md)도 참조하세요.
+| **빈 Flask 웹 프로젝트** | 최소 앱을 `/`에 대한 단일 “Hello World!” 페이지로 생성합니다. 이 앱은 세부 단계를 수행한 결과가 [빠른 시작: Visual Studio를 사용하여 첫 번째 Python 웹앱 만들기](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)와 유사합니다. [Flask 알아보기 1단계](learn-flask-visual-studio-step-01-project-solution.md)도 참조하세요.
 
 ### <a name="web-group"></a>웹 그룹
 

@@ -1,8 +1,9 @@
 ---
-title: Visual Studio 배포에 대한 업데이트 제어
+title: 배포에 대한 업데이트 제어
 description: 네트워크에서 설치할 때 Visual Studio에서 업데이트를 찾는 위치를 변경하는 방법을 알아봅니다.
 ms.date: 08/14/2017
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 614e32f3bcc9c05976875010800938a66c84edd3
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: c6f5170b0838e51fb03e17c2f627665c7e64dfd7
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283353"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159765"
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>네트워크 기반 Visual Studio 배포에 대한 업데이트 제어
 
@@ -31,40 +32,40 @@ ms.locfileid: "36283353"
 
 Visual Studio가 업데이트를 검색하는 위치를 직접 제어하려면 Visual Studio가 검색하는 위치를 수정할 수 있습니다. 사용자가 업데이트되는 버전도 제어할 수 있습니다. 이렇게 하려면 다음이 단계를 수행하세요.
 
- 1. 오프라인 레이아웃을 만듭니다.
-    ```cmd
-    vs_enterprise.exe --layout C:\vs2017offline --lang en-US
-    ```
- 2. 레이아웃을 호스트할 파일 공유로 복사합니다.
-    ```cmd
-    xcopy /e C:\vs2017offline \\server\share\VS2017
-    ```
- 3. 레이아웃에서 response.json 파일을 수정하고 `channelUri` 값을 변경하여 관리자가 제어하는 channelManifest.json 복사본을 가리킵니다.
+1. 오프라인 레이아웃을 만듭니다.
+   ```cmd
+   vs_enterprise.exe --layout C:\vs2017offline --lang en-US
+   ```
+2. 레이아웃을 호스트할 파일 공유로 복사합니다.
+   ```cmd
+   xcopy /e C:\vs2017offline \\server\share\VS2017
+   ```
+3. 레이아웃에서 response.json 파일을 수정하고 `channelUri` 값을 변경하여 관리자가 제어하는 channelManifest.json 복사본을 가리킵니다.
 
-  다음 예제와 같이 값에서 백슬래시를 이스케이프해야 합니다.
+   다음 예제와 같이 값에서 백슬래시를 이스케이프해야 합니다.
 
-  ```json
-    "channelUri":"\\\\server\\share\\VS2017\\ChannelManifest.json"
-  ```
+   ```json
+   "channelUri":"\\\\server\\share\\VS2017\\ChannelManifest.json"
+   ```
 
- 이제 최종 사용자는 이 공유에서 설치 프로그램을 실행하여 Visual Studio를 설치할 수 있습니다.
-    ```cmd
-    \\server\share\VS2017\vs_enterprise.exe
-    ```
+   이제 최종 사용자는 이 공유에서 설치 프로그램을 실행하여 Visual Studio를 설치할 수 있습니다.
+   ```cmd
+   \\server\share\VS2017\vs_enterprise.exe
+   ```
 
 엔터프라이즈 관리자가 사용자가 최신 버전의 Visual Studio로 업데이트할 시점을 결정할 경우 다음과 같이 [레이아웃 위치를 업데이트](update-a-network-installation-of-visual-studio.md)하여 업데이트된 파일을 통합할 수 있습니다.
 
- 1. 다음 명령과 비슷한 명령을 사용합니다.
-    ```cmd
-    vs_enterprise.exe --layout \\server\share\VS2017 --lang en-US
-    ```
- 2. 업데이트된 레이아웃의 response.json 파일에 사용자 지정, 특히 다음과 같은 channelUri 수정이 포함되어 있는지 확인합니다.
-    ```json
-    "channelUri":"\\\\server\\share\\VS2017\\ChannelManifest.json"
-    ```
- 이 레이아웃의 기존 Visual Studio 설치는 `\\server\share\VS2017\ChannelManifest.json`에서 업데이트를 검색합니다. 이 channelManifest.json이 사용자가 설치한 것보다 최신 버전인 경우 Visual Studio에서는 사용자에게 사용 가능한 업데이트가 있음을 알립니다.
+1. 다음 명령과 비슷한 명령을 사용합니다.
+   ```cmd
+   vs_enterprise.exe --layout \\server\share\VS2017 --lang en-US
+   ```
+2. 업데이트된 레이아웃의 response.json 파일에 사용자 지정, 특히 다음과 같은 channelUri 수정이 포함되어 있는지 확인합니다.
+   ```json
+   "channelUri":"\\\\server\\share\\VS2017\\ChannelManifest.json"
+   ```
+   이 레이아웃의 기존 Visual Studio 설치는 `\\server\share\VS2017\ChannelManifest.json`에서 업데이트를 검색합니다. 이 channelManifest.json이 사용자가 설치한 것보다 최신 버전인 경우 Visual Studio에서는 사용자에게 사용 가능한 업데이트가 있음을 알립니다.
 
- 새로운 설치를 통해 레이아웃에서 직접 Visual Studio의 업데이트된 버전이 자동으로 설치됩니다.
+   새로운 설치를 통해 레이아웃에서 직접 Visual Studio의 업데이트된 버전이 자동으로 설치됩니다.
 
 ## <a name="controlling-notifications-in-the-visual-studio-ide"></a>Visual Studio IDE에서 알림 제어
 
@@ -85,16 +86,7 @@ vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterpris
 > [!TIP]
 > [vswhere.exe](tools-for-managing-visual-studio-instances.md#detecting-existing-visual-studio-instances)를 사용하여 클라이언트 워크스테이션에서 Visual Studio의 특정 인스턴스를 찾습니다.
 
-## <a name="get-support"></a>지원 받기
-
-때로는 무엇인가 잘못될 수도 있습니다. Visual Studio 설치에 실패하는 경우에는 [Visual Studio 2017 설치 및 업그레이드 문제 해결](troubleshooting-installation-issues.md) 페이지를 참조하세요. 문제 해결 단계가 도움이 되지 않는 경우 라이브 채팅을 통해 Microsoft에 설치 지원을 문의할 수 있습니다(영어만 가능). 자세한 내용은 [Visual Studio 지원 페이지](https://visualstudio.microsoft.com/vs/support/#talktous)를 참조하세요.
-
-몇 가지 추가 지원 옵션은 다음과 같습니다.
-
-* Visual Studio 설치 관리자와 Visual Studio IDE에 모두 표시되는 [문제 보고](../ide/how-to-report-a-problem-with-visual-studio-2017.md) 도구를 통해 Microsoft에 제품 문제를 보고할 수 있습니다.
-* [UserVoice](https://visualstudio.uservoice.com/forums/121579)에서 Microsoft와 제품 제안을 공유할 수 있습니다.
-* [Visual Studio 개발자 커뮤니티](https://developercommunity.visualstudio.com/)에서 제품 문제를 추적하고, 답변을 찾을 수 있습니다.
-* [Gitter 커뮤니티의 Visual Studio 관련 대화](https://gitter.im/Microsoft/VisualStudio)를 통해 Microsoft 및 다른 Visual Studio 개발자와 소통할 수도 있습니다. (이 옵션을 사용하려면 [GitHub](https://github.com/) 계정이 필요합니다.)
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>참고 항목
 

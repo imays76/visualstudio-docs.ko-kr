@@ -95,16 +95,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bcb994c0ee79cb36e1c2e2db792346842194c73
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 5dcdcffbcf947efa7da8471a970d07a23fe90ba4
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176543"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349291"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>통합 개발 환경 오류를 해결하기 위한 리소스
 
 일부 오류 메시지에만 특정 관련된 도움말 항목이 포함됩니다. 오류 메시지의 정보가 문제를 해결하는 데 도움이 되지 않는 경우 기술 자료 문서, 포럼 또는 제품 지원과 같은 다른 리소스를 참조할 수 있습니다.
+
+> [!NOTE]
+> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio 문제 해결](/visualstudio/mac/troubleshooting)을 참조하세요.
 
 ## <a name="knowledge-base-articles"></a>기술 자료 문서
 
@@ -123,3 +126,4 @@ KB(기술 자료)에서 온라인으로 제품 문제에 대한 문서를 검색
 ## <a name="see-also"></a>참고 항목
 
 * [네트워크 관련 또는 프록시 오류 문제 해결](../../install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md#troubleshoot-network-related-errors)
+* [문제 해결(Mac용 Visual Studio)](/visualstudio/mac/troubleshooting)

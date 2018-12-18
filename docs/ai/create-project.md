@@ -1,11 +1,11 @@
 ---
 ms.technology: vs-ai-tools
-ms.openlocfilehash: 999e57f9b9b873f44f5a1ef0edac94c7e2b53ac4
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 5e4623715133f6203e4e967eb29eca20cb2f181e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/28/2018
-ms.locfileid: "29709364"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821359"
 ---
 # <a name="create-an-ai-project-from-a-template-in-visual-studio"></a>Visual Studio의 템플릿에서 AI 프로젝트 만들기
 
@@ -13,24 +13,24 @@ ms.locfileid: "29709364"
 
 1. Visual Studio를 실행합니다.
 
-1. **파일 > 새로 만들기 > 프로젝트**(Ctrl+Shift+N)를 선택합니다. **새 프로젝트** 대화 상자에서 "**AI 도구**"를 검색하고, 원하는 템플릿을 선택합니다. 템플릿을 선택하면 템플릿이 제공하는 것의 간단한 설명이 표시됩니다.
+2. **파일 > 새로 만들기 > 프로젝트**(Ctrl+Shift+N)를 선택합니다. **새 프로젝트** 대화 상자에서 "**AI 도구**"를 검색하고, 원하는 템플릿을 선택합니다. 템플릿을 선택하면 템플릿이 제공하는 것의 간단한 설명이 표시됩니다.
 
-    ![Python 템플릿이 있는 VS2017 새 프로젝트 대화 상자](media\create-project\new-ai-project.png)
+    ![Python 템플릿이 있는 VS2017 새 프로젝트 대화 상자](media/create-project/new-ai-project.png)
 
-1. 이 빠른 시작의 경우 "**TensorFlow 응용 프로그램**" 템플릿을 선택하고, 프로젝트에 이름(예: "MNIST") 및 위치를 지정하고, **확인**을 선택합니다.
+3. 이 빠른 시작의 경우 "**TensorFlow 응용 프로그램**" 템플릿을 선택하고, 프로젝트에 이름(예: "MNIST") 및 위치를 지정하고, **확인**을 선택합니다.
 
-1. Visual Studio는 템플릿에 설명된 대로 다른 파일과 함께 프로젝트 파일(디스크의 `.pyproj` 파일)을 만듭니다. "TensorFlow 응용 프로그램" 템플릿을 사용하여 프로젝트는 프로젝트와 같은 이름이 지정된 하나의 파일만을 포함합니다. 파일은 기본적으로 Visual Studio 편집기에서 열립니다.
+4. Visual Studio는 템플릿에 설명된 대로 다른 파일과 함께 프로젝트 파일(디스크의 `.pyproj` 파일)을 만듭니다. "TensorFlow 응용 프로그램" 템플릿을 사용하여 프로젝트는 프로젝트와 같은 이름이 지정된 하나의 파일만을 포함합니다. 파일은 기본적으로 Visual Studio 편집기에서 열립니다.
 
-    ![Python 응용 프로그램 템플릿을 사용하는 경우의 결과 프로젝트](media\create-project\new-tensorflowapp.png)
+    ![Python 응용 프로그램 템플릿을 사용하는 경우의 결과 프로젝트](media/create-project/new-tensorflowapp.png)
 
-1. 코드가 이미 TensorFlow, numpy, sys 등을 비롯한 여러 라이브러리를 가져옵니다. 또한 입력 학습 데이터, 출력 모델 및 로그 파일의 위치를 쉽게 전환할 수 있기 위해 몇 가지 입력 인수를 갖는 응용 프로그램을 준비하기 시작합니다. 이러한 매개 변수는 여러 계산 컨텍스트에 작업을 제출하는 경우에 유용합니다(예: Azure 파일 공유가 아닌 로컬 개발 상자의 다른 디렉터리).
+5. 코드가 이미 TensorFlow, numpy, sys 등을 비롯한 여러 라이브러리를 가져옵니다. 또한 입력 학습 데이터, 출력 모델 및 로그 파일의 위치를 쉽게 전환할 수 있기 위해 몇 가지 입력 인수를 갖는 응용 프로그램을 준비하기 시작합니다. 이러한 매개 변수는 여러 계산 컨텍스트에 작업을 제출하는 경우에 유용합니다(예: Azure 파일 공유가 아닌 로컬 개발 상자의 다른 디렉터리).
 
-1. 프로젝트에는 이러한 입력 매개 변수에 명령줄 인수를 자동으로 전달하여 앱을 디버그하기 쉽도록 하기 위해 만든 몇 가지 속성이 있습니다. 프로젝트를 **마우스 오른쪽 단추로 클릭**하고 **속성**을 선택합니다.
+6. 프로젝트에는 이러한 입력 매개 변수에 명령줄 인수를 자동으로 전달하여 앱을 디버그하기 쉽도록 하기 위해 만든 몇 가지 속성이 있습니다. 프로젝트를 **마우스 오른쪽 단추로 클릭**하고 **속성**을 선택합니다.
 
-    ![속성](media\create-project\project-properties.png)
+    ![속성](media/create-project/project-properties.png)
 
-1. **디버그** 탭을 클릭하여 스크립트 인수가 자동으로 추가되었는지 확인합니다. 필요에 따라 입력 데이터의 위치 및 출력을 저장할 위치로 변경할 수 있습니다.
+7. **디버그** 탭을 클릭하여 스크립트 인수가 자동으로 추가되었는지 확인합니다. 필요에 따라 입력 데이터의 위치 및 출력을 저장할 위치로 변경할 수 있습니다.
 
-    ![속성](media\create-project\/project-properties_1.png)
+    ![속성](media/create-project//project-properties_1.png)
 
-1. Ctrl+F5 키를 누르거나 메뉴에서 **디버그 > 디버깅하지 않고 시작**을 선택하여 프로그램을 실행합니다. 결과는 콘솔 창에 표시됩니다.
+8. Ctrl+F5 키를 누르거나 메뉴에서 **디버그 > 디버깅하지 않고 시작**을 선택하여 프로그램을 실행합니다. 결과는 콘솔 창에 표시됩니다.

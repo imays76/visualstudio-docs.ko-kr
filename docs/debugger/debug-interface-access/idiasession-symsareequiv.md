@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cc92a38305e7cc8c74b4ada0d560b314ed92da8f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: bdaa1ab070b6d95af0f28f5bdaa005b9ac808766
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460045"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850986"
 ---
 # <a name="idiasessionsymsareequiv"></a>IDiaSession::symsAreEquiv
-두 개의 기호 동등한 인지를 확인 합니다.  
+두 기호에 해당 하는 경우를 확인 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -41,7 +41,7 @@ HRESULT symsAreEquiv (
  [in] 두 번째 `IDiaSymbol` 비교에 사용 되는 개체입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 기호 동등한 인 반환 `S_OK`, 그렇지 않으면 반환 `S_FALSE`, 기호는 서로 다릅니다. 그렇지 않은 경우 오류 코드를 반환 합니다.  
+ 기호에 해당 하는 경우 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE`, 기호 같지 않습니다. 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

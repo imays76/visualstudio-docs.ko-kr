@@ -1,5 +1,5 @@
 ---
-title: FxCop 분석기를 설치 합니다.
+title: FxCop 분석기 설치
 ms.date: 08/03/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2c03387c20601b8d0af79067d7ff8dc1ce7bc599
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 7690d1c67797c3a13dc22364d93d8af686e4f90c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513612"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892053"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Visual Studio에서 FxCop 분석기 설치
 
@@ -26,9 +26,9 @@ NuGet 패키지 또는 Visual Studio는 VSIX 확장으로 이러한 FxCop 분석
 
 ## <a name="to-install-fxcop-analyzers-as-a-nuget-package"></a>NuGet 패키지로 FxCop 분석기를 설치 하려면
 
-1. [분석기 패키지 버전을 결정](#analyzer-package-versions) 를 설치 하려면 Visual Studio의 버전에 따라 합니다.
+1. [분석기 패키지 버전을 결정](#fxcopanalyzers-package-versions) 를 설치 하려면 Visual Studio의 버전에 따라 합니다.
 
-1. 사용 하 여 Visual Studio에서 패키지를 설치 합니다 [패키지 관리자 콘솔](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) 또는 [패키지 관리자 UI](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)합니다.
+2. 사용 하 여 Visual Studio에서 패키지를 설치 합니다 [패키지 관리자 콘솔](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) 또는 [패키지 관리자 UI](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)합니다.
 
    > [!NOTE]
    > 각 분석기 패키지는 nuget.org 페이지 붙여 명령을 보여 줍니다.는 **패키지 관리자 콘솔**합니다. 클립보드에 텍스트를 복사 하는 유용한 단추는 짝수입니다.
@@ -43,14 +43,14 @@ NuGet 패키지 또는 Visual Studio는 VSIX 확장으로 이러한 FxCop 분석
 
 Visual Studio의 버전에 대 한 설치 FxCop 분석기 패키지의 버전을 확인 하려면 다음 지침을 따르십시오.
 
-|Visual Studio 버전|FxCop 분석기 패키지 버전|
-|-|-|
-|Visual Studio 2017 버전 15.5 이상|예를 들어 2.6.1 https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.1|
-|Visual Studio 2017 버전 15.3을 15.4|예를 들어 2.3.0-beta1 https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.3.0-beta1|
-|Visual Studio 2017 버전 15.0을 15.2|예를 들어 2.0.0-beta2 https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.0.0-beta2|
-|Visual Studio 2015 업데이트 2와 3|예를 들어 버전 1.2.0-beta2 https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.2.0-beta2|
-|Visual Studio 2015 업데이트 1|예를 들어 1.1.0 버전 https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.1합니다.|
-|Visual Studio 2015 RTW|예를 들어 버전 1.0.1, https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.0.1|
+| Visual Studio 버전 | FxCop 분석기 패키지 버전 |
+| - | - |
+| Visual Studio 2017 버전 15.5 이상 | 예를 들어 2.6.2 https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.2 |
+| Visual Studio 2017 버전 15.3을 15.4 | 예를 들어 2.3.0-beta1 https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.3.0-beta1 |
+| Visual Studio 2017 버전 15.0을 15.2 | 예를 들어 2.0.0-beta2 https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.0.0-beta2 |
+| Visual Studio 2015 업데이트 2와 3 | 예를 들어 버전 1.2.0-beta2 https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.2.0-beta2 |
+| Visual Studio 2015 업데이트 1 | 예를 들어 1.1.0 버전 https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.1합니다. |
+| Visual Studio 2015 RTW | 예를 들어 버전 1.0.1, https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.0.1 |
 
 ## <a name="to-install-fxcop-analyzers-as-a-vsix"></a>VSIX로 FxCop 분석기를 설치 하려면
 

@@ -49,19 +49,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a3296ec07194f1815b819f69cf97224be50368f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 75051013e38d4acf5339193cf9f80e6da6758284
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747817"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388798"
 ---
 # <a name="options-text-editor-general"></a>일반, 텍스트 편집기, 옵션
 
 이 대화 상자에서는 Visual Studio 코드 및 텍스트 편집기에 대한 전역 설정을 변경할 수 있습니다. 이 대화 상자를 표시하려면 **도구** 메뉴에서 **옵션**을 선택하고, **텍스트 편집기** 폴더를 확장하고, **일반**을 선택합니다.
-
-> [!NOTE]
-> 표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio IDE 개인 설정](../../ide/personalizing-the-visual-studio-ide.md)을 참조하세요.
 
 ## <a name="settings"></a>설정
 
@@ -88,20 +85,12 @@ ms.locfileid: "34747817"
 이 옵션을 선택하면 편집기 텍스트 영역의 왼쪽 가장자리를 따라 세로 여백이 표시됩니다. 이 여백을 클릭하여 전체 텍스트 줄을 선택하거나 클릭하고 끌어서 연속 텍스트 줄을 선택할 수 있습니다.
 
 |선택 영역 여백 켜기|선택 영역 여백 끄기|
-|-------------------------|--------------------------|
+| - | - |
 |![HTMLpageSelectionMarginOn 스크린 샷](../../ide/reference/media/vxselmaron.gif)|![HTMLpageSelectionMarginOff 스크린 샷](../../ide/reference/media/vxselmaroff.gif)|
 
 ### <a name="indicator-margin"></a>표시기 여백
 
 이 옵션을 선택하면 편집기 텍스트 영역의 왼쪽 가장자리 외부에 세로 여백이 표시됩니다. 이 여백을 클릭하면 텍스트에 관련된 아이콘 및 도구 설명이 나타납니다. 예를 들어 중단점 또는 작업 목록 바로 가기가 표시기 여백에 나타납니다. 표시기 여백 정보는 인쇄되지 않습니다.
-
-### <a name="vertical-scroll-bar"></a>세로 스크롤 막대
-
-이 옵션을 선택하면 위아래로 스크롤하여 편집기의 보기 영역을 벗어나는 요소를 볼 수 있도록 세로 스크롤 막대가 표시됩니다. 세로 스크롤 막대를 사용할 수 없는 경우 Page Up, Page Down 및 커서 키를 사용하여 스크롤할 수 있습니다.
-
-### <a name="horizontal-scroll-bar"></a>가로 스크롤 막대
-
-이 옵션을 선택하면 좌우로 스크롤하여 편집기의 보기 영역을 벗어나는 요소를 볼 수 있도록 가로 스크롤 막대가 표시됩니다. 가로 스크롤 막대를 사용할 수 없는 경우 커서 키를 사용하여 스크롤할 수 있습니다.
 
 ### <a name="highlight-current-line"></a>현재 줄 강조 표시
 

@@ -1,22 +1,23 @@
 ---
-title: Python 응용 프로그램 프로젝트 관리
-description: Visual Studio의 프로젝트 용도, Python 코드용 프로젝트를 만들고 관리하는 방법 및 Python에 사용할 수 있는 다양한 프로젝트 템플릿에 대해 설명합니다.
-ms.date: 06/27/2018
+title: Python 애플리케이션 프로젝트 관리
+description: Visual Studio의 프로젝트는 파일 간의 종속성과 애플리케이션의 관계 복잡성을 관리합니다.
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6f404b10c2b0a8c237684d72f89baa58bd87a7c3
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 6b0d31905cd0dfb835275d6fd0bbe8f153253b56
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499021"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068288"
 ---
 # <a name="python-projects-in-visual-studio"></a>Visual Studio의 Python 프로젝트
 
@@ -38,7 +39,7 @@ Visual Studio는 기존 폴더 트리에서 프로젝트를 만드는 템플릿�
 |   |   |
 |---|---|
 | ![비디오에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 보기") | Python 프로젝트 소개 [비디오(Microsoft Virtual Academy)를 시청](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567)하세요(2분 17초). |
-| ![비디오에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 보기") | [자세히 알아보기: Python 프로젝트에서 소스 제어 사용](https://youtu.be/Aq8eqApnugM)(youtube.com, 8분 55초)도 시청하세요. |
+| ![비디오에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 보기") | 또한 [심층 분석: Python 프로젝트에서 소스 제어 사용](https://youtu.be/Aq8eqApnugM)(youtube.com, 8분 55초)도 시청하세요. |
 
 ## <a name="add-files-assign-a-startup-file-and-set-environments"></a>파일 추가. 시작 파일 할당. 환경 설정
 
@@ -92,7 +93,7 @@ Visual Studio는 처음부터 작성하거나 기존 코드에서 작성하는 �
 
 ## <a name="linked-files"></a>연결된 파일
 
-연결된 파일은 프로젝트로 가져온 파일이지만 일반적으로 응용 프로그램의 프로젝트 폴더 외부에 상주합니다. **솔루션 탐색기**에서 오버레이드된 바로 가기 아이콘이 있는 일반 파일로 나타납니다. ![연결된 파일 아이콘](media/projects-linked-file-icon.png)
+연결된 파일은 프로젝트로 가져온 파일이지만 일반적으로 응용 프로그램의 프로젝트 폴더 외부에 상주합니다. **솔루션 탐색기**에 오버레이드된 바로 가기 아이콘이 있는 일반 파일로 나타납니다. ![연결된 파일 아이콘](media/projects-linked-file-icon.png)
 
 연결된 파일은 `<Compile Include="...">` 요소를 사용하여 *.pyproj* 파일에 지정됩니다. 연결된 파일은 디렉터리 구조 외부에 상대 경로를 사용하는 경우 암시적이고, **솔루션 탐색기** 내에서 경로를 사용하는 경우 명시적입니다.
 

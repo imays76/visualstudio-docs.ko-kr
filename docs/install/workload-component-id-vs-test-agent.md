@@ -1,11 +1,12 @@
 ---
 title: Visual Studio Test Agent 2017 워크로드 및 구성 요소 ID
+titleSuffix: ''
 description: Visual Studio 워크로드 및 구성 요소 ID를 사용하여 자동화된 테스트를 실행하고 테스트를 원격으로 로드합니다.
 keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 05/07/2018
+ms.date: 11/13/2018
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -17,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: 55aea29b-1066-4e5a-aa99-fc87d4efb6d5
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e8ea855ff165e60138d9caeef75489a2f62955f
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: d75fe8a1dee373dc7d8b48ac1f03c3a2592c705e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280457"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048385"
 ---
 # <a name="visual-studio-test-agent-2017-component-directory"></a>Visual Studio Test Agent 2017 구성 요소 디렉터리
 
@@ -43,7 +44,7 @@ VSIX 매니페스트에 종속성을 설정하는 경우 구성 요소 ID만 지
 
 **ID:** Microsoft.VisualStudio.Workload.TestAgent
 
-**설명:** 자동화된 테스트 실행 및 부하 테스트를 원격으로 실행하도록 지원합니다.
+**설명:** 자동화된 테스트 및 부하 테스트를 원격으로 실행하도록 지원
 
 ### <a name="components-included-by-this-workload"></a>이 작업에 포함되는 구성 요소
 
@@ -59,16 +60,7 @@ Microsoft.VisualStudio.ComponentGroup.TestTools.TestAgent | Test Agent 핵심 �
 --- | --- | ---
 N/A | N/A | N/A
 
-## <a name="get-support"></a>지원 받기
-
-때로는 무엇인가 잘못될 수도 있습니다. Visual Studio 설치에 실패하는 경우에는 [Visual Studio 2017 설치 및 업그레이드 문제 해결](troubleshooting-installation-issues.md) 페이지를 참조하세요. 문제 해결 단계가 도움이 되지 않는 경우 라이브 채팅을 통해 Microsoft에 설치 지원을 문의할 수 있습니다(영어만 가능). 자세한 내용은 [Visual Studio 지원 페이지](https://visualstudio.microsoft.com/vs/support/#talktous)를 참조하세요.
-
-몇 가지 추가 지원 옵션은 다음과 같습니다.
-
-* Visual Studio 설치 관리자와 Visual Studio IDE에 모두 표시되는 [문제 보고](../ide/how-to-report-a-problem-with-visual-studio-2017.md) 도구를 통해 Microsoft에 제품 문제를 보고할 수 있습니다.
-* [UserVoice](https://visualstudio.uservoice.com/forums/121579)에서 Microsoft와 제품 제안을 공유할 수 있습니다.
-* [Visual Studio 개발자 커뮤니티](https://developercommunity.visualstudio.com/)에서 제품 문제를 추적하고, 답변을 찾을 수 있습니다.
-* [Gitter 커뮤니티의 Visual Studio 관련 대화](https://gitter.im/Microsoft/VisualStudio)를 통해 Microsoft 및 다른 Visual Studio 개발자와 소통할 수도 있습니다. (이 옵션을 사용하려면 [GitHub](https://github.com/) 계정이 필요합니다.)
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>참고 항목
 

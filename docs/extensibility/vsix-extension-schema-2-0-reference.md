@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3830f33879101a720a72276ff0c4b7425f46a83f
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: e295bc8c09f41c4c1c77b216a9d91d0644d2d24e
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586354"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388545"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX 확장 스키마 2.0 참조
 VSIX 배포 매니페스트 파일에는 VSIX 패키지의 내용을 설명합니다. 스키마 파일 형식이 적용 됩니다. 이 스키마의 버전 2.0 추가 하는 사용자 지정 형식 및 특성을 지원 합니다.  매니페스트의 스키마가 확장 가능 합니다. 매니페스트 로더는 XML 요소 및 인식 하지 못하는 특성을 무시 합니다.  
@@ -130,7 +130,11 @@ VSIX 배포 매니페스트 파일에는 VSIX 패키지의 내용을 설명합�
         -   단일 버전 #-지정된 된 버전입니다.  
   
         > [!IMPORTANT]
-        >  VSIX 스키마의 버전 2.0은 Visual Studio 2012에서 도입 되었습니다. 이 스키마를 사용 하도록 Visual Studio 2012 있어야 합니다. 사용자나 나중에 컴퓨터에 설치 및 해당 제품의 일부인 VSIXInstaller.exe 사용. 이전 버전의 Visual Studio는 Visual Studio 2012 또는 이후 VSIXInstaller 있지만 나중 버전의 설치 관리자를 사용해 서만 대상으로 지정할 수 있습니다.  
+        >  VSIX 스키마의 버전 2.0은 Visual Studio 2012에서 도입 되었습니다. 이 스키마를 사용 하도록 Visual Studio 2012 있어야 합니다. 사용자나 나중에 컴퓨터에 설치 및 해당 제품의 일부인 VSIXInstaller.exe 사용. 이전 버전의 Visual Studio는 Visual Studio 2012 또는 이후 VSIXInstaller 있지만 나중 버전의 설치 관리자를 사용해 서만 대상으로 지정할 수 있습니다. 
+        
+        visual Studio 2017 버전 번호를 찾을 수 있습니다 [Visual Studio 빌드 번호 및 릴리스 날짜](../install/visual-studio-build-numbers-and-release-dates.md)합니다.
+        
+        Visual Studio 2017 릴리스에 대 한 버전을 표시 하는 경우 부 버전 항상 여야 **0**합니다. Visual Studio 2017 버전 15.3.26730.0 [15.0.26730.0,16.0)로 표현 해야 하는 예를 들어. 만 Visual Studio 2017 버전 번호에 대 한 필요 합니다.
   
     -   `AnyAttribute*` - `<InstallationTarget>` 요소 이름-값 쌍 사전으로 런타임에 노출 되는 특성의 개방형 집합을 허용 합니다.  
   
@@ -162,33 +166,33 @@ VSIX 배포 매니페스트 파일에는 VSIX 패키지의 내용을 설명합�
 ### <a name="assets-element"></a>자산 요소  
  이 요소 목록을 포함 `<Asset>` 이 패키지에서 각 확장 또는 콘텐츠 요소에 대 한 태그를 표시 합니다.  
   
--   `<Asset>` -이 요소는 다음과 같은 특성 및 요소가 포함 되어 있습니다.  
+- `<Asset>` -이 요소는 다음과 같은 특성 및 요소가 포함 되어 있습니다.  
   
-    -   `Type` 확장 또는이 요소가 나타내는 콘텐츠 형식입니다. 각 `<Asset>` 요소는 단일 있어야 합니다. `Type`를 여러 개 있지만 `<Asset>` 동일한 요소가 있을 수 있습니다 `Type`. 네임 스페이스 규칙에 따라 정규화 된 이름으로이 특성을 나타내야 합니다. 알려진 형식은 다음과 같습니다.  
+  - `Type` 확장 또는이 요소가 나타내는 콘텐츠 형식입니다. 각 `<Asset>` 요소는 단일 있어야 합니다. `Type`를 여러 개 있지만 `<Asset>` 동일한 요소가 있을 수 있습니다 `Type`. 네임 스페이스 규칙에 따라 정규화 된 이름으로이 특성을 나타내야 합니다. 알려진 형식은 다음과 같습니다.  
   
-        1.  Microsoft.VisualStudio.VsPackage  
+    1. Microsoft.VisualStudio.VsPackage  
   
-        2.  Microsoft.VisualStudio.MefComponent  
+    2. Microsoft.VisualStudio.MefComponent  
   
-        3.  Microsoft.VisualStudio.ToolboxControl  
+    3. Microsoft.VisualStudio.ToolboxControl  
   
-        4.  Microsoft.VisualStudio.Samples  
+    4. Microsoft.VisualStudio.Samples  
   
-        5.  Microsoft.VisualStudio.ProjectTemplate  
+    5. Microsoft.VisualStudio.ProjectTemplate  
   
-        6.  Microsoft.VisualStudio.ItemTemplate  
+    6. Microsoft.VisualStudio.ItemTemplate  
   
-        7.  Microsoft.VisualStudio.Assembly  
+    7. Microsoft.VisualStudio.Assembly  
   
-         고유한 형식을 만들고 고유한 이름을 부여할 수 있습니다. Visual Studio 내에서 실행 시 코드를 열거 하 고 확장 관리자 API를 통해 이러한 사용자 지정 형식에 액세스할 수 있습니다.  
+       고유한 형식을 만들고 고유한 이름을 부여할 수 있습니다. Visual Studio 내에서 실행 시 코드를 열거 하 고 확장 관리자 API를 통해 이러한 사용자 지정 형식에 액세스할 수 있습니다.  
   
-    -   `Path` -파일 또는 자산을 포함 하는 패키지 내의 폴더에 상대 경로입니다.  
+  - `Path` -파일 또는 자산을 포함 하는 패키지 내의 폴더에 상대 경로입니다.  
     
-    -   `TargetVersion` -지정 된 자산 적용 되는 버전 범위입니다. 여러 버전의 자산을 다른 버전의 Visual Studio를 배송 하는 데 있습니다. 적용 하려면 Visual Studio 2017.3 이상이 필요 합니다.
+  - `TargetVersion` -지정 된 자산 적용 되는 버전 범위입니다. 여러 버전의 자산을 다른 버전의 Visual Studio를 배송 하는 데 있습니다. 적용 하려면 Visual Studio 2017.3 이상이 필요 합니다.
   
-    -   `AnyAttribute*` -의 개방형 집합을 특성 이름-값 쌍 사전으로 런타임에 노출 되는 합니다.  
+  - `AnyAttribute*` -의 개방형 집합을 특성 이름-값 쌍 사전으로 런타임에 노출 되는 합니다.  
   
-         `<AnyElement>*` -구조화 된 콘텐츠 간 허용 되는 `<Asset>` 시작 및 끝 태그입니다. 모든 요소는 XmlElement 개체의 목록으로 노출 됩니다. VSIX 확장 매니페스트 파일에서 구조화 된 형식별 메타 데이터를 정의 하 고 런타임 시이 열거할 수 있습니다.  
+     `<AnyElement>*` -구조화 된 콘텐츠 간 허용 되는 `<Asset>` 시작 및 끝 태그입니다. 모든 요소는 XmlElement 개체의 목록으로 노출 됩니다. VSIX 확장 매니페스트 파일에서 구조화 된 형식별 메타 데이터를 정의 하 고 런타임 시이 열거할 수 있습니다.  
   
 ### <a name="sample-manifest"></a>샘플 매니페스트  
   

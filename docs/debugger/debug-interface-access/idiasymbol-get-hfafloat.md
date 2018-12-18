@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ede9f02aa7fa4498e12382f22c43f4421342b669
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ae61d8c4c82eb8e0493574fc8469355f07f6a796
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462536"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900243"
 ---
 # <a name="idiasymbolgethfafloat"></a>IDiaSymbol::get_hfaFloat
-사용자 정의 형식 (UDT) 부동 소수점 부동 소수점 형식의 집계 동종 (HFA) 데이터를 포함 하는지 여부를 지정 하는 플래그를 검색 합니다.  
+사용자 정의 형식 (UDT) 부동 소수점 부동 소수점 형식의 집계 유형이 같은 (HFA) 데이터에 포함 되는지 여부를 지정 하는 플래그를 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -34,13 +34,13 @@ HRESULT get_hfaFloat(
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out] 반환 `TRUE` UDT 부동 소수점 형식의; HFA 데이터를 포함 하는 경우는 그렇지 않으면 반환 `FALSE`합니다.  
+ [out] 반환 `TRUE` UDT는 부동 소수점 형식의; HFA 데이터를 포함 하는 경우이 고, 그렇지 반환 `FALSE`합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
+ 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
   
 > [!NOTE]
->  반환 값이 `S_FALSE` 의미는 속성은 해당 기호를 사용할 수 없습니다.  
+>  반환 값이 `S_FALSE` 속성 기호를 사용할 수 없는 것을 의미 합니다.  
   
 ## <a name="remarks"></a>설명  
   

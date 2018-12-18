@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d5a79cfd817be1a665f0008a39420e7cb39cc50b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 00f493c0c64dc8bc6bef6adff59fff4ce1bcb8c3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115488"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854574"
 ---
 # <a name="idebugengine3setsymbolpath"></a>IDebugEngine3::SetSymbolPath
-경로 또는 디버깅 기호 검색 경로 설정 합니다.  
+디버깅 기호가 검색 하는 경로 경로 설정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -52,18 +52,18 @@ int SetSymbolPath(
 |`Flags`|[in] 사용 되지 않습니다. 항상 0으로 설정 합니다.|  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 s_ok이 고; 반환 그렇지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 S_OK를 반환 합니다. 그렇지 않으면 오류 코드를 반환합니다.  
   
 ## <a name="remarks"></a>설명  
- 문자열 `szSymbolSearchPath` 의 기호를 검색 하려면 세미콜론 구분 하 여 하나 이상의 경로 목록입니다. 이러한 경로 로컬 경로, UNC 스타일 경로 또는 URL 될 수 있습니다. 이러한 경로 다양 한 종류의 혼합 될 수도 있습니다. 경로가 UNC 경로인 경우 (예를 들어 \\\Symserver\Symbols), 경로 기호 서버에 이며 캐시에서 지정 된 경로에서 해당 서버에서 기호를 로드 해야 하는 경우 디버그 엔진 결정 해야 하는 다음 `szSymbolCachePath`합니다.  
+ 문자열 `szSymbolSearchPath` 은 하나 이상의 경로, 기호를 검색할 세미콜론으로 구분 된 목록입니다. 이러한 경로 로컬 경로, 스타일 UNC 경로 또는 URL 수 있습니다. 이러한 경로 서로 다른 유형의 혼합 될 수도 있습니다. 경로가 UNC 경로인 경우 (예를 들어 \\\Symserver\Symbols), 경로 기호 서버에 이며 지정 된 경로에서 캐시 하는 서버에서 기호를 로드할 수 있어야 하는 경우 디버그 엔진을 결정 하는 다음 `szSymbolCachePath`합니다.  
   
- 기호 경로는 캐시 위치를 하나 이상 포함할 수도 있습니다. 캐시는 먼저 가장 높은 우선 순위 캐시와 우선 순위 순서로 나열 하 고 구분 하 여 * 기호. 예를 들어:  
+ 기호 경로는 캐시 위치를 하나 이상 포함할 수도 있습니다. 캐시를 먼저 가장 높은 우선 순위 캐시를 사용 하 여 우선 순위 순서로 나열 되 고 구분 하 여 * 기호. 예를 들어:  
   
 ```  
 \\symbols\symbols;\\someotherserver\symbols;c:\symbols\httpsymbols*http://msdl.microsoft.com  
 ```  
   
- [LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md) 메서드는 기호의 실제 부하를 수행 합니다.  
+ 합니다 [LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md) 메서드 기호의 실제 로드를 수행 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md)   

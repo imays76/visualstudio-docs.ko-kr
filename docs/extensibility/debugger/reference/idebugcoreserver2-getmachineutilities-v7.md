@@ -15,18 +15,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96f374d83af705d8e9376d8767c822af82ed4d4a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 265c5b414c53fb6dfe43f63c1016204b8ff02c81
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103681"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908667"
 ---
 # <a name="idebugcoreserver2getmachineutilitiesv7"></a>IDebugCoreServer2::GetMachineUtilities_V7
 이 메서드는 서버에 대 한 시스템 유틸리티를 가져옵니다.  
   
 > [!NOTE]
->  이 메서드는 사용 되지 않습니다:를 사용 하지 마십시오 ([!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 항상 반환 `E_NOTIMPL` 이 메서드를 호출 하는 경우). 이유 때문에 보존 됩니다.  
+>  이 메서드는 사용 되지 않는: 사용 하지 마세요 ([!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 항상 반환 `E_NOTIMPL` 이 메서드를 호출 하는 경우). 기록을 위해 보존 됩니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -44,10 +44,10 @@ int GetMachineUtilities_V7(
   
 #### <a name="parameters"></a>매개 변수  
  `ppUtil`  
- [out] 반환 된 `IDebugMDMUtil2_V7` 컴퓨터 유틸리티 정보를 나타내는 인터페이스입니다.  
+ [out] 반환 된 `IDebugMDMUtil2_V7` 머신 유틸리티 정보를 나타내는 인터페이스입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 항상 반환 `E_NOTIMPL`, 나타내는 메서드가 구현 되지 않았습니다.  
+ 항상 반환 `E_NOTIMPL`, 메서드가 구현 되지 않았음을 나타내는입니다.  
   
 ## <a name="remarks"></a>설명  
  [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 항상 반환 `E_NOTIMPL` 이 메서드를 호출 합니다.  

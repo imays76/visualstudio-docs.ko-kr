@@ -1,5 +1,5 @@
 ---
-title: '방법: 프로그래밍 방식으로 통합 문서에서 범위에 스타일을 적용할 | Microsoft Docs'
+title: '방법: 프로그래밍 방식으로 통합 문서에서 범위에 스타일 적용'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,20 +17,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 14fd6ddc049214439a69fa3fabf0140256755da3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d19c886a7b3ae1a1976ab2a47fe139ba830a4ea5
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35674464"
 ---
-# <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>방법: 프로그래밍 방식으로 통합 문서에서 일정 범위에 스타일 적용
+# <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>방법: 프로그래밍 방식으로 통합 문서에서 범위에 스타일 적용
   통합 문서의 영역에 명명된 스타일을 적용할 수 있습니다. Excel에서는 미리 정의된 다양한 스타일을 제공합니다.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
  **셀 서식** 대화 상자에는 셀의 서식을 지정하는 데 사용할 수 있는 모든 옵션이 표시되며, 코드에서 이러한 각 옵션을 사용할 수 있습니다. Excel에서 이 대화 상자를 표시하려면 **형식** 메뉴에서 **셀** 을 클릭합니다.  
   
-### <a name="to-apply-a-style-to-a-named-range-in-a-document-level-customization"></a>문서 수준 사용자 지정에서 명명된 범위에 스타일을 적용하려면  
+## <a name="to-apply-a-style-to-a-named-range-in-a-document-level-customization"></a>문서 수준 사용자 지정에서 명명된 범위에 스타일을 적용하려면  
   
 1.  새 스타일을 만들고 해당 특성을 설정합니다.  
   
@@ -42,14 +43,14 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreExcelAutomation#54](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#54)]
      [!code-vb[Trin_VstcoreExcelAutomation#54](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#54)]  
   
-### <a name="to-clear-a-style-from-a-named-range-in-a-document-level-customization"></a>문서 수준 사용자 지정에서 명명된 범위에서 스타일을 지우려면  
+## <a name="to-clear-a-style-from-a-named-range-in-a-document-level-customization"></a>문서 수준 사용자 지정에서 명명된 범위에서 스타일을 지우려면  
   
 1.  범위에 표준 스타일을 적용합니다. 이 코드는 `ThisWorkbook` 클래스가 아니라 시트 클래스에 배치해야 합니다.  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#55](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#55)]
      [!code-vb[Trin_VstcoreExcelAutomation#55](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#55)]  
   
-### <a name="to-apply-a-style-to-a-named-range-in-a-vsto-add-in"></a>VSTO 추가 기능에서 명명된 범위에 스타일을 적용하려면  
+## <a name="to-apply-a-style-to-a-named-range-in-a-vsto-add-in"></a>VSTO 추가 기능에서 명명된 범위에 스타일을 적용하려면  
   
 1.  새 스타일을 만들고 해당 특성을 설정합니다.  
   
@@ -61,17 +62,17 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#29](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#29)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#29](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#29)]  
   
-### <a name="to-clear-a-style-from-a-named-range-in-an-vsto-add-in"></a>VSTO 추가 기능에서 명명된 범위의 스타일을 지우려면  
+## <a name="to-clear-a-style-from-a-named-range-in-a-vsto-add-in"></a>VSTO 추가 기능에서 명명 된 범위의 스타일을 지우려면  
   
 1.  범위에 표준 스타일을 적용합니다.  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#56](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#56)]
      [!code-vb[Trin_VstcoreExcelAutomation#56](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#56)]  
   
-## <a name="see-also"></a>참고 항목  
- [범위 작업](../vsto/working-with-ranges.md)   
+## <a name="see-also"></a>참고자료  
+ [범위를 사용 하 여 작동 합니다.](../vsto/working-with-ranges.md)   
  [NamedRange 컨트롤](../vsto/namedrange-control.md)   
- [Office 프로젝트의 개체에 전역 액세스](../vsto/global-access-to-objects-in-office-projects.md)   
+ [Office 프로젝트의 개체에 대 한 전역 액세스](../vsto/global-access-to-objects-in-office-projects.md)   
  [Office 솔루션의 선택적 매개 변수](../vsto/optional-parameters-in-office-solutions.md)  
   
   

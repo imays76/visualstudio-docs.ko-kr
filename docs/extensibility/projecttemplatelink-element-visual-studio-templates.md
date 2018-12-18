@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c3e539824c815d62d8cf3350b4d823314996677
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: f0f2d810f2e6dff135230af71b10a823d22330e8
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636414"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495975"
 ---
 # <a name="projecttemplatelink-element-visual-studio-templates"></a>ProjectTemplateLink 요소 (Visual Studio 템플릿)
 경로를 지정 합니다 *.vstemplate* 다중 프로젝트 템플릿에 있는 하나의 프로젝트의 파일입니다.  
@@ -53,7 +53,7 @@ ms.locfileid: "39636414"
 |특성|설명|  
 |---------------|-----------------|  
 |`ProjectName`|선택적 특성입니다.<br /><br /> 다중 프로젝트 템플릿에 있는 개별 프로젝트 각각의 이름을 지정합니다. 합니다 **새 프로젝트** 대화 상자는 개별 프로젝트에 이름을 할당할 수 없습니다.|  
-|`CopyParameters`|각 연결된 템플릿에 복사할 기본 그룹 템플릿에서 모든 변수를 활성화할수 있습니다.<br /><br /> 연결된 템플릿의 매개 변수에는 `"$ext_*$"` 접두사가 있습니다. 예를 들어, 부모 그룹 템플릿의 매개 변수에서 작업 하는 경우 `$projectname$` 값이 **ExampleProject1**연결 된 템플릿이 실행 될 차례가 가져오면, 매개 변수 획득 `$ext_projectname$`, 합니다 의복사본인`$projectname$`부모 그룹 템플릿에서 매개 변수입니다.<br /><br /> 그에 따라 연결된 템플릿을 통해 부모 그룹 템플릿에서만 편리하게 만들 수 있는 일부 공통 매개 변수를 공유할 수 있습니다.<br /><br /> 이 특성은 선택적이며 포함되지 않은 경우 기본값이 `false`로 자동 설정됩니다.<br /><br /> 이 특성은 Visual Studio 2013 업데이트 2에서 도입되었습니다. 올바른 제품 버전을 참조 하려면 참조 [Visual Studio 2013 SDK 업데이트 2에서 제공 하는 어셈블리를 참조할](http://msdn.microsoft.com/en-us/42b65c3e-e42b-4c39-98c8-bea285f25ffb)합니다.|  
+|`CopyParameters`|각 연결된 템플릿에 복사할 기본 그룹 템플릿에서 모든 변수를 활성화할수 있습니다.<br /><br /> 연결된 템플릿의 매개 변수에는 `"$ext_*$"` 접두사가 있습니다. 예를 들어, 부모 그룹 템플릿의 매개 변수에서 작업 하는 경우 `$projectname$` 값이 **ExampleProject1**연결 된 템플릿이 실행 될 차례가 가져오면, 매개 변수 획득 `$ext_projectname$`, 합니다 의복사본인`$projectname$`부모 그룹 템플릿에서 매개 변수입니다.<br /><br /> 그에 따라 연결된 템플릿을 통해 부모 그룹 템플릿에서만 편리하게 만들 수 있는 일부 공통 매개 변수를 공유할 수 있습니다.<br /><br /> 이 특성은 선택적이며 포함되지 않은 경우 기본값이 `false`로 자동 설정됩니다.<br /><br /> 이 특성은 Visual Studio 2013 업데이트 2에서 도입되었습니다. 올바른 제품 버전을 참조 하려면 참조 [Visual Studio 2013 SDK 업데이트 2에서 제공 하는 어셈블리를 참조할](https://msdn.microsoft.com/library/42b65c3e-e42b-4c39-98c8-bea285f25ffb)합니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
  없음  
@@ -73,7 +73,7 @@ ms.locfileid: "39636414"
 ## <a name="remarks"></a>설명  
  다중 프로젝트 템플릿은 두 개 이상의 프로젝트에 대한 컨테이너로 사용됩니다. 합니다 `ProjectTemplateLink` 요소는의 위치를 지정 하는 데 사용 되는 *.vstemplate* 템플릿에서 프로젝트 중 하나에 대 한 파일입니다. 합니다 *.vstemplate* 다중 프로젝트 템플릿의 파일 하나가 포함 되어 있습니다 `ProjectTemplateLink` 템플릿의 각 프로젝트에 대 한 요소입니다. 다중 프로젝트 템플릿에 대 한 자세한 내용은 참조 하세요. [방법: 다중 프로젝트 템플릿 만들기](../ide/how-to-create-multi-project-templates.md)합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  이 예제에서는 단순한 다중 프로젝트 루트를 보여 줍니다 *.vstemplate* 파일입니다. 이 예제에서 템플릿에는 `My Windows Application` 프로젝트와 `My Class Library` 프로젝트가 들어 있습니다. `ProjectName` 요소의 `ProjectTemplateLink` 특성은 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]가 이 프로젝트에 할당할 이름을 설정합니다. 경우는 `ProjectName` 의 이름 특성이 없는 합니다 *.vstemplate* 파일은 프로젝트 이름으로 사용 됩니다.  
   
 ```  

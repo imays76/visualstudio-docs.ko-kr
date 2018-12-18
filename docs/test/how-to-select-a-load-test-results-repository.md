@@ -1,5 +1,5 @@
 ---
-title: '방법: Visual Studio에서 부하 테스트 결과 리포지토리 선택'
+title: '방법: 부하 테스트 결과 리포지토리 선택'
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ae5d4dc14cd97a81a386d3879831fce1a030673a
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 169020d61cee1ae109a302eede0a9beb133fe82f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379581"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059975"
 ---
 # <a name="how-to-select-a-load-test-results-repository"></a>방법: 부하 테스트 결과 리포지토리 선택
 
@@ -30,7 +30,7 @@ ms.locfileid: "39379581"
 
 에이전트나 로컬 컴퓨터의 테스트 결과는 부하 테스트 결과 저장소가 만들어진 모든 SQL 서버에 저장할 수 있습니다. 에이전트나 로컬 컴퓨터 모두 **테스트 컨트롤러 관리** 창을 사용하여 부하 테스트 결과를 저장할 위치를 식별해야 합니다.
 
-에이전트에 대한 자세한 내용은 [테스트 컨트롤러 및 테스트 에이전트](configure-test-agents-and-controllers-for-load-tests.md)를 참조하세요.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="identify-a-results-store-for-load-test-data"></a>부하 테스트 데이터에 사용될 결과 저장소 식별
 

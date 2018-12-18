@@ -22,12 +22,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: aa210047a65870806877e1d22e08fc1f2b9bc010
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e685c3003fa77814217716fc886589e4a2633429
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119413"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294671"
 ---
 # <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>방법: BDC 기능에 사용자 지정 어셈블리 포함
   프로젝트가 동일한 솔루션의 다른 프로젝트에서 어셈블리를 참조할 수 있습니다. 그러나 사용 하 여 프로젝트의 기능 파일에 이러한 어셈블리를 추가 해야 합니다는 합니다 **할당 참조 어셈블리를 Lobsystem** 대화 상자.  
@@ -45,7 +45,7 @@ ms.locfileid: "37119413"
 4.  에 **어셈블리를 선택할** 목록에서 사용자 지정 어셈블리를 선택 합니다.  
   
     > [!NOTE]  
-    >  어셈블리에만 표시 합니다 **할당 참조 어셈블리를 Lobsystem** 어셈블리를 포함 하는 프로젝트에 대 한 참조를 추가한 경우 대화 상자. 자세한 내용은 [방법: 참조 추가 또는 제거 참조 추가 대화 상자를 사용 하 여](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)입니다.  
+    >  어셈블리에만 표시 합니다 **할당 참조 어셈블리를 Lobsystem** 어셈블리를 포함 하는 프로젝트에 대 한 참조를 추가한 경우 대화 상자. 자세한 내용은 [방법: 참조 추가 또는 제거 참조 추가 대화 상자를 사용 하 여](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)입니다.  
   
 5.  에 **참조 속성** 그룹에서 대해 표시 되는 목록을 연를 **LobSystem 범위** 속성을 사용자 지정 어셈블리를 사용 하 고 다음을 선택 하는 메서드의 LOB 시스템는 **확인**  단추입니다.  
   

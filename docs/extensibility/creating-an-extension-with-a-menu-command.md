@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc2f4464915a1f251c08f3de5741a82ed9d7efbd
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 539ab866056b97f7054dda1843870dcfdd4379d9
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498612"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248140"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>메뉴 명령을 사용 하 여 확장 만들기
 이 연습에는 메모장을 실행 하는 메뉴 명령을 사용 하 여 확장을 만드는 방법을 보여 줍니다.  
@@ -55,23 +55,15 @@ ms.locfileid: "39498612"
 2.  개인 FirstCommand 생성자를 찾습니다. 명령에 명령 후크 되어와 명령 처리기는 지정 된 위치입니다. 명령 처리기의 이름을 StartNotepad에 다음과 같이 변경 합니다.  
   
     ```csharp  
-    private FirstCommand(Package package)  
+    private FirstCommand(AsyncPackage package, OleMenuCommandService commandService)  
     {  
-        if (package == null)  
-        {  
-            throw new ArgumentNullException(nameof(package));  
-        }  
-  
-        this.package = package;  
-  
-         OleMenuCommandService commandService = this.ServiceProvider.GetService(typeof(IMenuCommandService)) as OleMenuCommandService;  
-        if (commandService != null)  
-        {  
-            CommandID menuCommandID = new CommandID(CommandSet, CommandId);  
-            // Change to StartNotepad handler.  
-            MenuCommand menuItem = new MenuCommand(this.StartNotepad, menuCommandID);  
-            commandService.AddCommand(menuItem);  
-        }  
+        this.package = package ?? throw new ArgumentNullException(nameof(package));
+        commandService = commandService ?? throw new ArgumentNullException(nameof(commandService));
+
+        CommandID menuCommandID = new CommandID(CommandSet, CommandId);
+        // Change to StartNotepad handler.
+        MenuCommand menuItem = new MenuCommand(this.StartNotepad, menuCommandID);
+        commandService.AddCommand(menuItem);
     }  
     ```  
   
@@ -118,20 +110,20 @@ ms.locfileid: "39498612"
 ## <a name="next-steps"></a>다음 단계  
  이 연습에서는 Visual Studio 확장을 사용 하 여 수행할 수 있는 작업의 일부만을 살펴보았습니다. Visual Studio 확장을 사용 하 여 수행할 수 있는 다른 (손쉽게) 작업의 짧은 목록을 다음과 같습니다.  
   
-1.  간단한 메뉴 명령 사용 하 여 더 많은 작업을 수행할 수 있습니다.  
+1. 간단한 메뉴 명령 사용 하 여 더 많은 작업을 수행할 수 있습니다.  
   
-    1.  사용자 고유의 아이콘 추가: [메뉴 명령에 아이콘 추가](../extensibility/adding-icons-to-menu-commands.md)  
+   1.  사용자 고유의 아이콘을 추가 합니다. [메뉴 명령에 아이콘 추가](../extensibility/adding-icons-to-menu-commands.md)  
   
-    2.  메뉴 명령의 텍스트를 변경 합니다. [메뉴 명령의 텍스트를 변경 합니다.](../extensibility/changing-the-text-of-a-menu-command.md)  
+   2.  메뉴 명령의 텍스트를 변경 합니다. [메뉴 명령의 텍스트를 변경 합니다.](../extensibility/changing-the-text-of-a-menu-command.md)  
   
-    3.  메뉴 바로 가기 명령에 추가: [메뉴 항목에 바로 가기 키 바인딩](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
+   3.  메뉴 바로 가기 명령에 추가 합니다. [메뉴 항목에 바로 가기 키 바인딩](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
   
-2.  다른 종류의 명령, 메뉴 및 도구 모음 추가: [메뉴 및 명령 확장](../extensibility/extending-menus-and-commands.md)  
+2. 다른 종류의 명령, 메뉴 및 도구 모음을 추가 합니다. [메뉴 및 명령 확장](../extensibility/extending-menus-and-commands.md)  
   
-3.  도구 창을 추가 하 고 기본 제공 Visual Studio 도구 창 확장: [확장 및 도구 창 사용자 지정](../extensibility/extending-and-customizing-tool-windows.md)  
+3. 도구 창을 추가 하 고 기본 제공 Visual Studio 도구 창 확장: [확장 및 도구 창 사용자 지정](../extensibility/extending-and-customizing-tool-windows.md)  
   
-4.  IntelliSense, 코드 제안을 추가 및 기타 기능을 기존 코드 편집기: [편집기 및 언어 서비스 확장](../extensibility/extending-the-editor-and-language-services.md)  
+4. 기존 코드 편집기에 IntelliSense, 코드 제안 및 기타 기능을 추가 합니다. [편집기 및 언어 서비스 확장](../extensibility/extending-the-editor-and-language-services.md)  
   
-5.  옵션 및 속성 페이지 및 사용자 설정 확장 프로그램을 추가 합니다. [확장 속성 및 속성 창](../extensibility/extending-properties-and-the-property-window.md) 및 [사용자 설정 및 Ooptions 확장](../extensibility/extending-user-settings-and-options.md)  
+5. 옵션 및 속성 페이지 및 사용자 설정 확장 프로그램을 추가 합니다. [확장 속성 및 속성 창](../extensibility/extending-properties-and-the-property-window.md) 고 [사용자 설정 및 Ooptions 확장](../extensibility/extending-user-settings-and-options.md)  
   
- 다른 종류의 확장 프로젝트의 새 형식 만들기와 같은 좀 더 많은 작업이 필요 ([프로젝트를 확장할](../extensibility/extending-projects.md)), 편집기의 새 형식 만들기 ([만들기 사용자 지정 편집기 및 디자이너](../extensibility/creating-custom-editors-and-designers.md)), 구현 또는 사용자 격리 셸 확장: [Visual Studio 격리 셸](../extensibility/visual-studio-isolated-shell.md)
+   다른 종류의 확장 프로젝트의 새 형식 만들기와 같은 좀 더 많은 작업이 필요 ([프로젝트를 확장할](../extensibility/extending-projects.md)), 편집기의 새 형식 만들기 ([만들기 사용자 지정 편집기 및 디자이너](../extensibility/creating-custom-editors-and-designers.md)), 구현 또는 사용자 격리 된 셸에서 확장: [Visual Studio 격리 셸](../extensibility/visual-studio-isolated-shell.md)

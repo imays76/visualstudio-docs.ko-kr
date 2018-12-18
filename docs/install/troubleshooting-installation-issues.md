@@ -1,8 +1,9 @@
 ---
-title: Visual Studio 2017 설치 문제 해결
+title: 설치 및 업그레이드 문제 해결
 description: 때로는 무엇인가 잘못될 수도 있습니다. Visual Studio 설치 또는 업그레이드에 실패할 경우 이 페이지가 도움이 될 수 있습니다.
 ms.date: 08/01/2018
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -14,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b6a7ae2bff6d35c77dc54ce07207af375b76ee77
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 39accaa3b8ee6a5ac2979b7e93b02a1ce00716be
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511693"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159936"
 ---
 # <a name="troubleshoot-visual-studio-2017-installation-and-upgrade-issues"></a>Visual Studio 2017 설치 및 업그레이드 문제 해결
 
@@ -56,7 +57,7 @@ Visual Studio 설치 관리자 부트스트래퍼는 나머지 Visual Studio 설
 
 경우에 따라 손상된 파일에 관련된 문제인 경우 문제를 사례별로 확인해야 할 수 있습니다. 도움을 받으려면 다음을 수행하세요.
 
-1. 설치 로그를 수집합니다. 자세한 내용은 [Visual Studio 설치 로그를 가져오는 방법](#how-to-get-the-visual-studio-installation-logs)을 참조하세요.
+1. 설치 로그를 수집합니다. 자세한 내용은 [Visual Studio 설치 로그를 가져오는 방법](#how-to-get-visual-studio-installation-logs)을 참조하세요.
 2. Visual Studio 설치 관리자를 열고 **문제 보고**를 클릭하여 Visual Studio 피드백 도구를 엽니다.
 ![[피드백 제공] 단추를 탭하여 피드백 도구를 열 수 있음](media/report-a-problem.png)
 3. 문제 보고서의 제목을 지정하고 관련 세부 정보를 제공합니다. **다음**을 클릭하여 **첨부 파일** 섹션으로 이동하고 생성된 로그 파일을 첨부합니다. 일반적으로 파일은 `%TEMP%\vslogs.zip`에 있습니다.

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 웹 성능 테스트 플러그 인 만들기
+title: 웹 성능 테스트 플러그 인 만들기
 ms.date: 10/03/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,16 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ad1dff59ed942c16f05176f3e26f0042234d4933
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: f4848fbaed6df9817cd9f0ddf16f388d855f5cd9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380168"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067656"
 ---
 # <a name="how-to-create-a-web-performance-test-plug-in"></a>방법: 웹 성능 테스트 플러그 인 만들기
 
 웹 성능 테스트 플러그 인을 사용하면 웹 성능 테스트의 주 선언문 외부에서 코드를 분리하여 다시 사용할 수 있습니다. 사용자 지정 웹 성능 테스트 플러그 인을 사용하면 웹 성능 테스트를 실행하는 일부 코드를 호출할 수 있습니다. 웹 성능 테스트 플러그 인은 테스트가 반복될 때마다 한 번씩 실행됩니다. 또한 테스트 플러그 인에서 PreRequest 또는 PostRequest 메서드를 재정의하면 이러한 요청 플러그 인이 각 요청 전이나 후에 실행됩니다.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 사용자 지정 웹 성능 테스트 플러그 인은 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin> 기본 클래스에서 사용자 클래스를 파생시켜 만들 수 있습니다.
 
@@ -109,14 +111,14 @@ ms.locfileid: "39380168"
     > [!WARNING]
     > 이 플러그 인을 사용하는 부하 테스트 또는 웹 성능 테스트를 실행할 때 다음과 유사한 오류가 발생할 수 있습니다.
     >
-    > **요청 실패: \<플러그 인> 이벤트: 파일 또는 어셈블리 '\<"플러그 인 이름".dll 파일>, 버전=\<n.n.n.n >, Culture = neutral, PublicKeyToken = null' 또는 해당 종속성 중 하나를 로드할 수 없습니다. 지정한 파일을 찾을 수 없습니다.**
+    > **요청 실패: \<플러그 인> 이벤트의 예외: 파일 또는 어셈블리 '\<"플러그 인 이름".dll 파일>, 버전=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' 또는 해당 종속성 중 하나를 로드할 수 없습니다. 지정한 파일을 찾을 수 없습니다.**
     >
     > 이 오류는 플러그 인의 코드를 변경하고 새 DLL 버전 **(버전=0.0.0.0)** 을 만들었지만 해당 플러그 인이 계속해서 원래 플러그 인 버전을 참조하는 경우에 발생합니다. 이 문제를 해결하려면 다음 단계를 수행합니다.
     >
     > 1.  웹 성능 및 부하 테스트 프로젝트에서는 참조에 경고가 표시됩니다. 참조를 제거했다가 플러그 인 DLL에 다시 추가합니다.
     > 2.  테스트 또는 적절한 위치에서 플러그 인을 제거했다가 다시 추가합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드에서는 테스트 반복을 나타내는 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestContext>에 항목을 추가하는 사용자 지정 웹 성능 테스트 플러그 인이 만들어집니다.
 

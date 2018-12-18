@@ -1,6 +1,6 @@
 ---
-title: '방법: Visual Studio 빌드 프로세스 확장 | Microsoft Docs'
-ms.custom: ''
+title: 빌드 프로세스 확장
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: msbuild
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 777c2c4ecb5ea8561a43a12f1897c2260d6638d0
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 380933a07636cddd2bc32fb45f14f9b2a65830df
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081555"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058274"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>방법: Visual Studio 빌드 프로세스 확장
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 빌드 프로세스는 프로젝트 파일로 가져온 일련의 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] *.targets* 파일로 정의됩니다. 이러한 가져온 파일 중 하나인 *Microsoft.Common.targets*는 빌드 프로세스의 여러 지점에서 사용자 지정 작업을 실행할 수 있도록 확장될 수 있습니다. 이 아티클에서는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 빌드 프로세스를 확장하는 데 사용할 수 있는 두 가지 방법을 설명합니다.  
@@ -57,7 +57,7 @@ ms.locfileid: "39081555"
 |대상 이름|설명|  
 |-----------------|-----------------|  
 |`BeforeCompile`, `AfterCompile`|이러한 대상 중 하나에 삽입된 작업은 핵심 컴파일이 완료되기 전이나 후에 실행됩니다. 대부분의 사용자 지정은 이러한 두 개의 대상 중 하나에서 수행됩니다.|  
-|`BeforeBuild`, `AfterBuild`|이러한 대상 중 하나에 삽입된 작업은 빌드의 모든 작업 전이나 후에 실행됩니다. **참고:** `BeforeBuild` 및 `AfterBuild` 대상은 프로젝트 파일 대부분의 끝에 삽입된 주석에서 이미 정의되어 있습니다. 따라서 프로젝트 파일에 빌드 전후 이벤트를 쉽게 추가할 수 있습니다.|  
+|`BeforeBuild`, `AfterBuild`|이러한 대상 중 하나에 삽입된 작업은 빌드의 모든 작업 전이나 후에 실행됩니다. **참고:**  `BeforeBuild` 및 `AfterBuild` 대상은 프로젝트 파일 대부분의 끝에 삽입된 주석에서 이미 정의되어 있습니다. 따라서 프로젝트 파일에 빌드 전후 이벤트를 쉽게 추가할 수 있습니다.|  
 |`BeforeRebuild`, `AfterRebuild`|이러한 대상 중 하나에 삽입된 작업은 핵심 다시 빌드 기능이 호출되기 전 또는 후에 실행됩니다. *Microsoft.Common.targets*에서 대상 실행 순서는 차례로 `BeforeRebuild`, `Clean`, `Build` 및 `AfterRebuild`입니다.|  
 |`BeforeClean`, `AfterClean`|이러한 대상 중 하나에 삽입된 작업은 핵심 정리 기능이 호출되기 전 또는 후에 실행됩니다.|  
 |`BeforePublish`, `AfterPublish`|이러한 대상 중 하나에 삽입된 작업은 핵심 게시 기능이 호출되기 전 또는 후에 실행됩니다.|  

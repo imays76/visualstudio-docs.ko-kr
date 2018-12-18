@@ -1,6 +1,6 @@
 ---
-title: C + + 액세스 위반을 어떻게 디버깅할 수 있습니까? | Microsoft 문서
-ms.custom: ''
+title: C + + 액세스 위반 디버깅 | Microsoft Docs
+ms.custom: seodec18
 ms.date: 05/23/2017
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b131ba4acf761a11aa9f39807d1db3202b021c9d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 6f463f4e14e5be90422f73b299cb927a54fcfcef
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475352"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067264"
 ---
 # <a name="how-can-i-debug-a-c-access-violation"></a>C + + 액세스 위반을 어떻게 디버깅할 수 있습니까?
 ## <a name="problem-description"></a>문제 설명  
@@ -69,7 +69,7 @@ int main() {
   
  ![AccessViolationCPlus](../debugger/media/accessviolationcplus.png "AccessViolationCPlus")  
   
- 포인터가 액세스 위반을 유발한 이유를 확인할 수 없는 경우 전체 코드를 추적하여 문제를 유발한 포인터가 올바르게 할당되었는지 확인합니다.  매개 변수로 전달 되는 경우 올바르게 전달 되 고 실수로 작성 되지 있는지 확인 한 [복사 shallow](http://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy)합니다. 다음 값도 변경 되지 않는다는 되 고 의도 하지 않게 어딘가에 프로그램에 프로그램에서 다른 곳에서 수정 되 고 있지 않습니다 되도록 문제의 포인터에 대 한 데이터 중단점을 만들어 확인 합니다. 데이터 중단점에 대한 자세한 내용은 [Using Breakpoints](../debugger/using-breakpoints.md)에서 데이터 중단점 섹션을 참조하세요.  
+ 포인터가 액세스 위반을 유발한 이유를 확인할 수 없는 경우 전체 코드를 추적하여 문제를 유발한 포인터가 올바르게 할당되었는지 확인합니다.  포인터가 매개 변수로 전달된 경우 제대로 전달되었는지, 실수로 [단순 복사](http://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy)를 만들지 않았는지 확인합니다. 그런 다음, 프로그램의 다른 곳에서 수정되지 않도록 문제가 되는 포인터에 대한 데이터 중단점을 만들어 프로그램의 어딘가에서 값이 실수로 변경되지 않는지 확인합니다. 데이터 중단점에 대한 자세한 내용은 [Using Breakpoints](../debugger/using-breakpoints.md)에서 데이터 중단점 섹션을 참조하세요.  
   
 ## <a name="see-also"></a>참고 항목  
  [네이티브 코드 디버그 FAQ](../debugger/debugging-native-code-faqs.md)

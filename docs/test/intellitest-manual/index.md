@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f9534668ef5cf07388d6eefec9ef37a28593daaa
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 982d54bec30e164a1b2017c7aa8a221ee56e19d0
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977450"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000600"
 ---
 # <a name="intellitest-reference-manual"></a>IntelliTest 참조 설명서
 
@@ -127,4 +127,4 @@ ms.locfileid: "31977450"
 
 ## <a name="got-feedback"></a>피드백이 있으신가요?
 
-아이디어와 기능 요청을 **[UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest)** 에 게시하세요.
+아이디어와 기능 요청을 [개발자 커뮤니티](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)에 게시하세요.

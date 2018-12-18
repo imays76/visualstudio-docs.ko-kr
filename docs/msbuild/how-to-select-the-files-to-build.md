@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64e9d438547ee27588c08fb522a027cd85432094
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 8ef956b94ca263dac5ce57c7b122576060bb7a05
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079701"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820670"
 ---
 # <a name="how-to-select-the-files-to-build"></a>방법: 빌드할 파일 선택
 여러 파일이 포함된 프로젝트를 빌드할 경우 각 파일을 프로젝트 파일에 개별적으로 나열하거나, 와일드카드를 사용하여 모든 파일을 하나의 디렉터리 또는 중첩된 디렉터리 집합에 포함할 수 있습니다.  
@@ -100,7 +100,7 @@ ms.locfileid: "39079701"
   
 > [!NOTE]
 >  항목과 함께 와일드카드를 사용해서 빌드의 입력을 지정해야 합니다. 입력을 지정하는 데 [Csc](../msbuild/csc-task.md) 또는 [Vbc](../msbuild/vbc-task.md)와 같은 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 작업의 `Sources` 특성을 사용할 수는 없습니다. 다음 예제는 프로젝트 파일에서 유효하지 않습니다.  
->   
+> 
 >  `<CSC Sources="*.cs">...</CSC>`  
   
 ## <a name="example"></a>예  

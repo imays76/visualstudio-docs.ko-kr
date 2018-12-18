@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 87d6a2176dcd3c4cf748549f94d071b181d0d14f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7df726716e464ccc4bf8382b38fbb0b8d277df86
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103931"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893828"
 ---
 # <a name="eventattributes"></a>EVENTATTRIBUTES
 이벤트 특성을 지정합니다.  
@@ -54,30 +54,30 @@ public enum enum_EVENTATTRIBUTES {
   
 ## <a name="members"></a>멤버  
  EVENT_ASYNCHRONOUS  
- 이벤트는 비동기적 이며 필요한 이벤트에 응답을 나타냅니다.  
+ 이 이벤트는 비동기 이벤트에 응답 하지 필요 함을 나타냅니다.  
   
  EVENT_SYNCHRONOUS  
- 이 이벤트는 동기적입니다; 나타냅니다. 방법으로 회신 [ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)합니다.  
+ 이벤트 동기; 임을 나타냅니다. 이용 하 여 회신 [ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)합니다.  
   
  EVENT_STOPPING  
- Stopping 이벤트 임을 나타냅니다. 사용 하 여 결합 해야 `EVENT_ASYNCHRONOUS` 또는 `EVENT_SYNCHRONOUS`합니다.  
+ 이 stopping 이벤트를 나타냅니다. 사용 하 여 결합 해야 `EVENT_ASYNCHRONOUS` 또는 `EVENT_SYNCHRONOUS`합니다.  
   
  EVENT_ASYNC_STOP  
- 비동기 중지 이벤트를 나타냅니다. 이런 이벤트가 현재입니다. 이 플래그는 유일한 기능입니다.  
+ 비동기 중지 이벤트를 나타냅니다. 이런 이벤트가 현재입니다. 이 플래그는 자리 표시자만 합니다.  
   
  EVENT_SYNC_STOP  
- 동기 stopping 이벤트를 나타냅니다 (의 조합을 `EVENT_SYNCHRONOUS` 및 `EVENT_STOPPING`). 중지 이벤트를 보낼 때이 값은 디버그 엔진 (DE)에 의해 사용 됩니다. 회신을 호출 하 여 이루어집니다 [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md), [단계](../../../extensibility/debugger/reference/idebugprogram2-step.md), 또는 [계속](../../../extensibility/debugger/reference/idebugprogram2-continue.md)합니다.  
+ 동기 중지 이벤트를 나타냅니다 (조합을 `EVENT_SYNCHRONOUS` 고 `EVENT_STOPPING`). 이 값은 중지 이벤트를 보낼 때 디버그 엔진 (DE)에 의해 사용 됩니다. 회신을 호출 하 여 이루어집니다 [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md)를 [단계](../../../extensibility/debugger/reference/idebugprogram2-step.md), 또는 [계속](../../../extensibility/debugger/reference/idebugprogram2-continue.md)합니다.  
   
  EVENT_IMMEDIATE  
- IDE에 즉시, 동기적으로 전송 되는 이벤트를 나타냅니다. 이 플래그와 같은 다른 플래그와 함께 결합 `EVENT_ASYNCHRONOUS`, `EVENT_SYNCHRONOUS`, 또는 `EVENT_SYNC_STOP` 이벤트 (있는 경우)는 회신 메커니즘 알려져 팩트의 유형을 나타내는입니다.  
+ IDE에 즉시 하 고 동기적으로 전송 되는 이벤트를 나타냅니다. 이 플래그와 같은 다른 플래그와 함께 결합 `EVENT_ASYNCHRONOUS`, `EVENT_SYNCHRONOUS`, 또는 `EVENT_SYNC_STOP` 이벤트 및 응답 메커니즘 (있는 경우) 라고 팩트 유형을 지정 하는 합니다.  
   
  EVENT_EXPRESSION_EVALUATION  
  이벤트 식 평가의 결과입니다.  
   
 ## <a name="remarks"></a>설명  
- 이러한 값이 전달 되는 `dwAttrib` 의 매개 변수는 [이벤트](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) 메서드.  
+ 이러한 값에 전달 되는 `dwAttrib` 의 매개 변수를 [이벤트](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) 메서드.  
   
- 이러한 값에 비트와 함께 사용할 수 있습니다 `OR`합니다.  
+ 이러한 값을 비트 결합할 수 있습니다 `OR`합니다.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  

@@ -1,7 +1,7 @@
 ---
 title: 앱에서 CPU 사용량 측정
 description: 디버거 통합 진단 도구를 사용하여 응용 프로그램에서 CPU 성능 문제를 분석합니다.
-ms.custom: mvc
+ms.custom: seodec18
 ms.date: 02/27/2017
 ms.technology: vs-ide-debug
 ms.topic: tutorial
@@ -18,25 +18,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa2751b901323adb6aa17ab553aa2f464d883ebd
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 46837bb68854f0f5dbb5c799d405c37431f6c379
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39206853"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065764"
 ---
-# <a name="profile-application-performance-in-visual-studio"></a>Visual Studio에서 응용 프로그램 성능 프로파일링
+# <a name="measure-application-performance-by-analyzing-cpu-usage"></a>CPU 사용량을 분석하여 애플리케이션 성능 측정
 Visual Studio 프로파일링 도구를 사용하여 응용 프로그램의 성능 문제를 분석할 수 있습니다. 이 절차에서는 진단 도구의 **CPU 사용량** 탭을 사용하여 앱의 성능 데이터를 가져오는 방법을 보여 줍니다. 진단 도구는 ASP.NET을 포함한 Visual Studio의 .NET 개발 및 네이티브/C++ 개발에 사용할 수 있습니다.
   
 디버거가 일시 중지되면 **CPU 사용량** 도구는 응용 프로그램에서 실행되는 함수에 대한 정보를 지정된 간격으로 수집합니다. 또한 이 도구에는 작업을 수행하는 함수가 표시되고 샘플링 세션의 특정 세그먼트를 집중적으로 확인할 수 있는 타임라인 그래프도 표시됩니다.
 
 진단 허브에서는 진단 세션을 실행하고 관리할 수 있는 여러 가지 다른 옵션을 제공합니다. **CPU 사용량**으로 필요한 데이터를 얻지 못할 경우 [다른 프로파일링 도구](../profiling/profiling-feature-tour.md)로 유용한 다른 종류의 정보를 얻을 수 있습니다. 많은 경우 메모리, UI 렌더링 또는 네트워크 요청 시간 등 CPU가 아닌 곳에서 응용 프로그램의 성능 병목 현상이 발생할 수 있습니다. 진단 허브는 이러한 종류의 데이터를 기록 및 분석하기 위한 다른 여러 옵션을 제공합니다.
 
-|         |         |
+| | |
 |---------|---------|
-|  ![비디오에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 보기")  |    CPU 사용량 분석 방법 및 메모리 사용량 분석 방법을 보여 주는 [진단 도구 사용에 대한 비디오를 시청](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171)합니다. |
+| ![비디오에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 보기") | CPU 사용량 분석 방법 및 메모리 사용량 분석 방법을 보여 주는 [진단 도구 사용에 대한 비디오를 시청](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171)합니다. |
 
 이 문서에서는 일반적인 디버깅 워크플로에서의 CPU 사용량 분석에 대해 설명합니다. 디버거를 연결하지 않고 또는 실행 중인 앱을 대상으로 지정하여 CPU 사용량을 분석할 수도 있습니다. 자세한 내용은 [디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행](../profiling/running-profiling-tools-with-or-without-the-debugger.md)의 [디버깅을 사용하지 않고 프로파일링 데이터 수집](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging)을 참조하세요.
+
+Windows 7 이상에서 디버거 없이 프로파일링 도구를 사용할 수 있습니다. Windows 8 이상에서는 디버거(**진단 도구** 창)를 포함한 프로파일링 도구를 실행해야 합니다.
 
 이 자습서에서 다음을 수행합니다.
 
@@ -67,7 +69,7 @@ Visual Studio 프로파일링 도구를 사용하여 응용 프로그램의 성�
 
      ![진단 도구 요약 탭](../profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
 
-     이벤트에 대한 자세한 내용은 [진단 도구 창의 이벤트 탭 검색 및 필터링](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx)을 참조하세요.
+     이벤트에 대한 자세한 내용은 [진단 도구 창의 이벤트 탭 검색 및 필터링](https://blogs.msdn.microsoft.com/devops/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/)을 참조하세요.
 
 6.  첫 번째 중단점이 발생할 시나리오를 실행합니다.
 

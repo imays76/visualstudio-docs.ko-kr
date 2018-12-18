@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a2131ef8cb0b8f0ba540d7403d7c5f8dbb8b89df
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 24646a2ac02f4ec8974c1806ca761b2e7a5af5a0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31901098"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923961"
 ---
 # <a name="ca1002-do-not-expose-generic-lists"></a>CA1002: 제네릭 목록을 노출하지 마십시오.
+
 |||
 |-|-|
 |TypeName|DoNotExposeGenericLists|
@@ -32,22 +33,22 @@ ms.locfileid: "31901098"
 |변경 수준|주요 변경|
 
 ## <a name="cause"></a>원인
- 형식에 포함 되는 외부에서 볼 수 있는 멤버는 <xref:System.Collections.Generic.List%601?displayProperty=fullName> 형식, 반환은 <xref:System.Collections.Generic.List%601?displayProperty=fullName> 형식 또는 서명이 포함 되어는 <xref:System.Collections.Generic.List%601?displayProperty=fullName> 매개 변수입니다.
+ 형식을 포함 하는 외부에 표시 되는 멤버를 <xref:System.Collections.Generic.List%601?displayProperty=fullName> 형식으로 반환을 <xref:System.Collections.Generic.List%601?displayProperty=fullName> 형식 또는 시그니처를 가진 포함를 <xref:System.Collections.Generic.List%601?displayProperty=fullName> 매개 변수입니다.
 
 ## <a name="rule-description"></a>규칙 설명
- <xref:System.Collections.Generic.List%601?displayProperty=fullName> 상속이 아니라 성능을 위해 설계 되는 제네릭 컬렉션입니다. <xref:System.Collections.Generic.List%601?displayProperty=fullName> 보다 쉽게 상속된 된 클래스의 동작을 변경할 수 있도록 가상 멤버를 포함 되지 않습니다. 다음과 같은 제네릭 컬렉션 상속을 위해 디자인 하 고 대신 노출 되어야 합니다 <xref:System.Collections.Generic.List%601?displayProperty=fullName>합니다.
+ <xref:System.Collections.Generic.List%601?displayProperty=fullName> 성능 및 상속이 아니라 하도록 디자인 된 제네릭 컬렉션이입니다. <xref:System.Collections.Generic.List%601?displayProperty=fullName> 쉽게 상속된 된 클래스의 동작을 변경 하는 가상 멤버를 포함 하지 않습니다. 다음 제네릭 컬렉션을 상속 하도록 설계 되었으며 대신 노출 되어야 합니다 <xref:System.Collections.Generic.List%601?displayProperty=fullName>합니다.
 
--   <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>
+- <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>
 
--   <xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>
+- <xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>
 
--   <xref:System.Collections.ObjectModel.KeyedCollection%602?displayProperty=fullName>
+- <xref:System.Collections.ObjectModel.KeyedCollection%602?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  이 규칙 위반 문제를 해결 하려면 변경 된 <xref:System.Collections.Generic.List%601?displayProperty=fullName> 형식 상속을 위해 디자인 된 제네릭 컬렉션 중 하나입니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
- 이 경고를 발생 시킨 어셈블리 재사용 가능한 라이브러리를 다루지는지 않습니다 하지 않는 한이 규칙에서는 경고를에서 표시 하지 마십시오. 예를 들어 것 성능 조정 된 응용 프로그램에서이 경고를 표시 하지 않아도 안전 하 게 제네릭 목록 사용 하는 성능상의 이점을 얻은 위치.
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
+ 이 경고를 발생 시킨 어셈블리는 재사용 가능한 라이브러리 하려고 하지 않는 한이 규칙에서 경고를 표시 하지 마십시오. 예를 들어 것 성능 조정 된 응용 프로그램에서이 경고를 표시 하지 않아도 안전 제네릭 목록 사용 하 여에서 성능상의 이점을 얻은 위치.
 
 ## <a name="related-rules"></a>관련된 규칙
  [CA1005: 제네릭 형식에 매개 변수를 너무 많이 사용하지 마십시오.](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
@@ -64,5 +65,5 @@ ms.locfileid: "31901098"
 
  [CA1007: 적합한 제네릭을 사용하십시오.](../code-quality/ca1007-use-generics-where-appropriate.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
  [제네릭](/dotnet/csharp/programming-guide/generics/index)

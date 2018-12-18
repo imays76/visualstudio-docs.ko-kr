@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1faa847d907af938bb5f91206a5f438bcba886a3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f1032be313c6be8c71799ea493e82c03fd9e96ad
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104906"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818252"
 ---
 # <a name="exceptionstate"></a>EXCEPTION_STATE
 예외 상태를 지정합니다.  
@@ -81,53 +81,53 @@ public enum enum_EXCEPTION_STATE {
  예외에서 중지 하지 마십시오.  
   
  EXCEPTION_STOP_FIRST_CHANCE  
- 예외 추적 첫 번째 실행에서 중지 합니다. 예외 이벤트를 설명 하는 경우이 플래그는 예외 이벤트는 첫 번째 예외 이벤트를 나타냅니다.  
+ 예외의 첫 번째 실행에서 중지 합니다. 예외 이벤트를 설명 하는 경우이 플래그는 예외 이벤트는 첫 번째 예외 이벤트를 나타냅니다.  
   
  EXCEPTION_STOP_SECOND_CHANCE  
- 예외 추적 두 번째 실행에서 중지 합니다. 예외 이벤트를 설명 하는 경우에 예외 이벤트는 두 번째 예외 이벤트를 나타냅니다.  
+ 두 번째 예외 발생 시 중지 합니다. 예외 이벤트를 설명 하는 경우 예외 이벤트는 두 번째 예외 이벤트를 나타냅니다.  
   
  EXCEPTION_STOP_USER_FIRST_CHANCE  
- 사용자 모드 예외 추적 첫 번째 실행에서 중지 합니다. 예외 이벤트를 설명 하는 경우에 예외 이벤트는 첫째 사용자 예외 이벤트를 나타냅니다.  
+ 첫 번째 사용자 모드 예외를 발생 시 중지 합니다. 예외 이벤트를 설명 하는 경우에 예외 이벤트는 첫째 사용자 예외 이벤트를 나타냅니다.  
   
  EXCEPTION_STOP_USER_UNCAUGHT  
- 사용자 모드 예외는 잡히지를 중지 합니다. 예외 이벤트를 설명 하는 경우에 예외 이벤트는 확인할 수 없는 사용자 모드 예외 이벤트를 나타냅니다.  
+ 사용자 모드 예외 잡히지 않는 중지 합니다. 예외 이벤트를 설명 하는 경우에 예외 이벤트를 확인할 수 없는 사용자 모드 예외 이벤트 인지를 나타냅니다.  
   
  EXCEPTION_STOP_ALL  
- 예외에서 중지 합니다. 예외 이벤트를 설명할 때 사용 되지 않습니다.  
+ 예외에서 중지 합니다. 예외 이벤트를 설명 하는 경우 사용 되지 않습니다.  
   
  EXCEPTION_CANNOT_BE_CONTINUED  
- 예외 이벤트를 설명 하는 경우 나타냅니다에서 예외를 계속할 수 없습니다.  
+ 예외 이벤트를 설명 하는 경우에서 예외를 계속할 수 없습니다 나타냅니다.  
   
  EXCEPTION_CODE_SUPPORTED  
- 예외 것을 지 원하는 코드에 있음을 나타냅니다. 예외가 표시에 사용  
+ 이 예외는이 지 원하는 코드를 나타냅니다. 예외가 표시 사용  
   
  EXCEPTION_CODE_DISPLAY_IN_HEX  
- 16 진수에서 예외 코드를 표시 해야 함을 나타냅니다. 예외를 표시 하는 데 사용 합니다.  
+ 예외 코드를 16 진수에서 표시 되어야 함을 나타냅니다. 사용 하는 예외를 표시 합니다.  
   
  EXCEPTION_JUST_MY_CODE_SUPPORTED  
- 예외 코드 JustMyCode 지원함을 나타냅니다. 예외를 표시 하는 데 사용 합니다.  
+ 예외 코드 JustMyCode 지원함을 나타냅니다. 사용 하는 예외를 표시 합니다.  
   
  EXCEPTION_MANAGED_DEBUG_ASSISTANT  
- 관리 코드 디버거가 예외를 처리 해야 나타냅니다. 그렇지 않은 경우는 예외를 처리 하는 기본 디버거인 집합. 이 데이터에 전달 되는 [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) 메서드에서 사용 되지는 [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) 구조입니다.  
+ 관리 되는 code 디버거 예외를 처리 해야 나타냅니다. 그렇지 않은 경우는 예외를 처리 하는 기본 디버거에서 집합. 이 전달 되는 [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) 메서드에서는 사용 되지 합니다 [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) 구조입니다.  
   
  EXCEPTION_STOP_FIRST_CHANCE_USE_PARENT  
- 사용 되지 않는, 사용 하지 마십시오.  
+ 사용 되지 않는, 사용 하지 마세요.  
   
  EXCEPTION_STOP_SECOND_CHANCE_USE_PARENT  
- 사용 되지 않는, 사용 하지 마십시오.  
+ 사용 되지 않는, 사용 하지 마세요.  
   
  EXCEPTION_STOP_USER_FIRST_CHANCE_USE_PARENT  
- 사용 되지 않는, 사용 하지 마십시오.  
+ 사용 되지 않는, 사용 하지 마세요.  
   
  EXCEPTION_STOP_USER_SECOND_CHANCE_USE_PARENT  
- 사용 되지 않는, 사용 하지 마십시오.  
+ 사용 되지 않는, 사용 하지 마세요.  
   
 ## <a name="remarks"></a>설명  
- 로 사용는 `dwState` 의 멤버는 [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) 구조는 예외와 항목에 대 한 수행할 수 있는 작업의 상태를 표시 합니다.  
+ 로 사용 합니다 `dwState` 의 멤버는 [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) 예외 및에 대 한 수행할 수 있는 작업의 상태를 나타내는 구조입니다.  
   
- 이러한 값은 또한에 전달 되는 [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) 메서드는 모든 예외 상태를 설정 합니다.  
+ 이러한 값은 또한 전달 된 [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) 모든 예외 상태를 설정 하는 방법.  
   
- 이러한 플래그 비트 OR 연산자와 함께 사용할 수 있습니다.  
+ 이러한 플래그는 비트 OR 연산자를 사용 하 여 결합할 수 있습니다.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  

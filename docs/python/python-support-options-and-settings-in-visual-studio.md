@@ -1,7 +1,7 @@
 ---
 title: Python에서 옵션 및 설정
 description: Python 코드 및 프로젝트와 관련된 Visual Studio의 다양한 설정에 대한 참조입니다.
-ms.date: 06/27/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: reference
@@ -19,12 +19,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1de4f6a71394c38ef72224cfeacd23663b0bac7b
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: f5b8c6b3860641dafccac28b24a4be141d90eae5
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468659"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220058"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Visual Studio의 Python 옵션
 
@@ -46,7 +46,7 @@ Python 옵션을 보려면 **도구** > **옵션** 메뉴 명령을 사용하고
 | **가상 환경을 만들 때 출력 창 표시**| 켜기 | **출력** 창이 표시되지 않도록 하려면 선택 취소합니다. |
 | **패키지를 설치하거나 제거할 때 출력 창 표시** | 켜기 | **출력** 창이 표시되지 않도록 하려면 선택 취소합니다. |
 | **항상 관리자로 pip 실행** | 끄기 | 항상 모든 환경에 대해 `pip install` 작업 권한을 상승합니다. 패키지를 설치할 때 환경이 *c:\Program Files*와 같은 파일 시스템의 보호된 영역에 있을 경우 Visual Studio에서 관리자 권한을 확인하는 메시지를 표시합니다. 해당 메시지에서 하나의 환경에 대해서만 항상 `pip install` 권한을 상승하도록 선택할 수 있습니다. [패키지 탭](python-environments-window-tab-reference.md#packages-tab)을 참조하세요. |
-| **처음 사용할 때 완성 DB 자동 생성** | 켜기 | Visual Studio 2017 버전 15.5 및 이전 버전과 IntelliSense 데이터베이스를 사용하는 경우 이후 버전에 적용됩니다. 데이터베이스를 사용하는 코드를 작성할 때 라이브러리에 대한 데이터베이스 완성에 우선 순위를 지정합니다. 자세한 내용은 [환경 창 참조 - Intellisense 탭](python-environments-window-tab-reference.md)을 참조하세요. |
+| **처음 사용할 때 완성 DB 자동 생성** | 켜기 | Visual Studio 2017 버전 15.5 및 이전 버전과 IntelliSense 데이터베이스를 사용하는 경우 이후 버전에 적용됩니다. 데이터베이스를 사용하는 코드를 작성할 때 라이브러리에 대한 데이터베이스 완성에 우선 순위를 지정합니다. 자세한 내용은 [IntelliSense 탭](python-environments-window-tab-reference.md#intellisense-tab)을 참조하세요. |
 | **시스템 전체 PYTHONPATH 변수 무시** | 켜기 | Visual Studio에서 환경 및 프로젝트에 검색 경로를 지정하는 보다 직접적인 수단을 제공하기 때문에 PYTHONPATH는 기본적으로 무시됩니다. 자세한 내용은 [검색 경로](search-paths.md)를 참조하세요. |
 | **연결된 파일을 추가할 때 검색 경로 업데이트** | 켜기 | 설정된 경우 [연결된 파일](managing-python-projects-in-visual-studio.md#linked-files)을 프로젝트에 추가하면 IntelliSense가 연결된 파일의 폴더 내용을 완성 데이터베이스에 포함할 수 있도록 [검색 경로](search-paths.md)가 업데이트됩니다. 이러한 내용을 완성 데이터베이스에서 제외하려면 이 옵션의 선택을 취소합니다. |
 | **가져온 모듈을 찾을 수 없으면 경고 표시** | 켜기 | 가져온 모듈을 현재 사용할 수 없지만 달리 코드 작업에 영향을 주지 않음을 알고 있는 경우 경고를 무시하려면 이 옵션의 선택을 취소합니다. |
@@ -111,7 +111,7 @@ Python 옵션을 보려면 **도구** > **옵션** 메뉴 명령을 사용하고
 
 | 옵션 | 기본 | 설명 |
 | --- | --- | --- |
-| **다음 문자를 입력하면 커밋됨** | **{}[]().,:;+-*/%&&#124;^~=<>#@\\** | 일반적으로 이러한 문자는 완성 목록에서 선택할 수 있는 식별자 다음에 오므로 문자를 입력해서 완료를 커밋하는 것이 편리합니다. 필요에 따라 목록에 특정 문자를 추가하거나 제거할 수 있습니다.  |
+| **다음 문자를 입력하면 커밋됨** | **{}\[\]().,:;+-*/%&&#124;^~=<>#@\\** | 일반적으로 이러한 문자는 완성 목록에서 선택할 수 있는 식별자 다음에 오므로 문자를 입력해서 완료를 커밋하는 것이 편리합니다. 필요에 따라 목록에 특정 문자를 추가하거나 제거할 수 있습니다.  |
 | **Enter 키를 눌러 현재 완료 커밋** | 켜기 | 설정하면 **Enter** 키를 누를 때 위의 문자와 마찬가지로 현재 선택한 완료가 선택 및 적용됩니다. 물론, **Enter** 키에 대한 문자는 없으므로 해당 목록에 직접 포함할 수는 없습니다. |
 | **단어를 모두 입력한 후 Enter 키를 누르면 새 줄 추가** | 끄기 | 기본적으로 완성 팝업에 표시되는 전체 단어를 입력하고 **Enter** 키를 누르면 해당 완료가 커밋됩니다. 이 옵션을 설정하면 식별자 입력을 마칠 때 실제로 완료가 커밋되고 **Enter** 키를 누를 때 새 줄이 삽입되도록 합니다. |
 

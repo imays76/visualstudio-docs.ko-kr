@@ -6,18 +6,18 @@ ms.reviewer: crdun
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 7921D4C7-5526-42F5-8E03-82D3E33A893F
-author: dantogno
-ms.author: v-davian
+author: therealjohn
+ms.author: johmil
 manager: crdun
 ms.workload:
 - azure
 - unity
-ms.openlocfilehash: dd34352453752bd56106597fccf6ab7c495e55c2
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 454cb3617bb918b67784ebd2a3388ac6ee9f3826
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251181"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027265"
 ---
 # <a name="program-with-unity-and-azure"></a>Unity 및 Azure로 프로그램
 

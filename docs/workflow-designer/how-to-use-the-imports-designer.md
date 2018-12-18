@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d50267ca8899343d2b704aa28beabc07ed432936
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: e26dafe6d8d7e455d1977f82f96f776185a5fdb3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755864"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845267"
 ---
 # <a name="how-to-use-the-imports-designer"></a>방법: 가져오기 디자이너 사용
 
@@ -25,13 +25,13 @@ ms.locfileid: "36755864"
 
 가져오기 디자이너에는 UI의 변경 내용과 워크플로 저장 시 변경 내용이 모두 적용됩니다. 워크플로가 저장되면 가져오기 디자이너에 네임스페이스를 자동으로 추가할 수 있습니다. 이러한 요구 사항은 다음과 같습니다.
 
--   변수 및 인수 선언에 사용된 형식의 네임스페이스
+- 변수 및 인수 선언에 사용된 형식의 네임스페이스
 
--   식에 사용된 형식의 네임스페이스
+- 식에 사용된 형식의 네임스페이스
 
--   워크플로 serialize에 필요한 그 밖의 네임스페이스(예: 워크플로에 배치된 사용자 지정 활동에서 사용되는 네임스페이스)
+- 워크플로 serialize에 필요한 그 밖의 네임스페이스(예: 워크플로에 배치된 사용자 지정 활동에서 사용되는 네임스페이스)
 
- 앞의 목록에서 설명한 논리로 인해 워크플로를 저장할 때 수동으로 삭제한 일부 네임스페이스가 가져오기 디자이너에 자동으로 다시 추가될 수 있습니다.
+  앞의 목록에서 설명한 논리로 인해 워크플로를 저장할 때 수동으로 삭제한 일부 네임스페이스가 가져오기 디자이너에 자동으로 다시 추가될 수 있습니다.
 
 ## <a name="to-add-a-namespace-to-the-list-of-imported-namespaces"></a>가져온 네임스페이스 목록에 네임스페이스를 추가하려면
 

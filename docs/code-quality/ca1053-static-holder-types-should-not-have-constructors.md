@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7f99804abeac1c9f536c94c542f6e031bf16ec6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 43d8af3d592d687064c50fc046c6a7f61d64335f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31896594"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854802"
 ---
 # <a name="ca1053-static-holder-types-should-not-have-constructors"></a>CA1053: 정적 소유자 형식에는 생성자를 사용하면 안 됩니다.
+
 |||
 |-|-|
 |TypeName|StaticHolderTypesShouldNotHaveConstructors|
@@ -35,18 +36,18 @@ ms.locfileid: "31896594"
  public 또는 중첩된 public 형식에서 정적 멤버만 선언하며 public 또는 protected 기본 생성자를 사용합니다.
 
 ## <a name="rule-description"></a>규칙 설명
- 호출하는 정적 멤버에 형식의 인스턴스가 필요하지 않기 때문에 생성자가 필요 없습니다. 또한 형식 비정적 멤버가 없기 때문에 인스턴스를 만드는 액세스할 수 없습니다 형식의 멤버에 있습니다.
+ 호출하는 정적 멤버에 형식의 인스턴스가 필요하지 않기 때문에 생성자가 필요 없습니다. 또한 형식 비정적 멤버가 없으므로 인스턴스를 만들고 액세스할 수 없습니다 형식의 멤버에 합니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  이 규칙 위반 문제를 해결 하려면 기본 생성자를 제거 하거나 비공개로 설정 합니다.
 
 > [!NOTE]
->  일부 컴파일러는 형식 생성자를 정의 하지 않는 공용 기본 생성자를 자동으로 만듭니다. 경우와 같이 형식 이면 위반을 제거 하기 위해 개인 기본 생성자를 추가 합니다.
+>  형식 생성자를 정의 하지 않으면 일부 컴파일러에서는 공용 기본 생성자를 자동으로 만듭니다. 형식 사용 하는 경우 인 경우 위반을 제거 하기 위해 전용 기본 생성자를 추가 합니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
- 이 규칙에서는 경고를 표시해야 합니다. 생성자가 있다는 유형이 정적 형식 인지를 제안 합니다.
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
+ 이 규칙에서는 경고를 표시해야 합니다. 생성자의 존재는 형식이 정적 형식이 아닌 것을 제안 합니다.
 
 ## <a name="example"></a>예제
- 다음 예제에서는이 규칙을 위반 하는 형식을 보여 줍니다. 소스 코드에서 기본 생성자가 없습니다 것을 볼 수 있습니다. 이 코드를 어셈블리로 컴파일하면 C# 컴파일러는이 규칙에 위반 되는 기본 생성자를 삽입 합니다. 이 문제를 해결 하려면 private 생성자를 선언 합니다.
+ 다음 예제에서는이 규칙을 위반 하는 형식을 보여 줍니다. 소스 코드에서 기본 생성자가 없는 인지 확인 합니다. 이 코드를 어셈블리로 컴파일할 때 C# 컴파일러는이 규칙에 위반 되는 기본 생성자를 삽입 합니다. 이 문제를 해결 하려면 private 생성자를 선언 합니다.
 
  [!code-csharp[FxCop.Design.StaticTypes#1](../code-quality/codesnippet/CSharp/ca1053-static-holder-types-should-not-have-constructors_1.cs)]

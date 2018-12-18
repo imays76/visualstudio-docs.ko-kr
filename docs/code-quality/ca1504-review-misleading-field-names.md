@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1457390b523af45b5e3b23a3420cba830f45cee5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: dae321a15de10063352a00980879f35e10cfb9bb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915084"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887323"
 ---
 # <a name="ca1504-review-misleading-field-names"></a>CA1504: 잘못된 필드 이름을 검토하십시오.
+
 |||
 |-|-|
 |TypeName|ReviewMisleadingFieldNames|
@@ -32,13 +33,13 @@ ms.locfileid: "31915084"
 |변경 수준|주요 변경 아님|
 
 ## <a name="cause"></a>원인
- 인스턴스 필드의 이름이의 이름 또는 "s_"로 시작는 `static` (`Shared` 에 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) 필드의 "m_"로 시작 합니다.
+ 인스턴스 필드의 이름이 "s_" 또는 이름으로 시작 된 `static` (`Shared` 에서 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) 필드 "m_"로 시작 합니다.
 
 ## <a name="rule-description"></a>규칙 설명
- 필드 이름은 "s_"로 시작 하는 많은 사용자가 정적 데이터와 연결 됩니다. 마찬가지로, "m_"로 시작 하는 필드 이름은 (멤버) 인스턴스 데이터와 연결 됩니다. 보다 쉽게 관리 코드의 경우 이름은 일반적으로 사용 되는 규칙을 따라야 합니다.
+ 필드 이름은 "s_"로 시작 하는 많은 사용자가 정적 데이터를 사용 하 여 연결 됩니다. 마찬가지로, "m_"로 시작 하는 필드 이름은 (멤버) 인스턴스 데이터와 연결 됩니다. 쉽고 유지 관리 코드에 대 한 이름을 일반적으로 사용 되는 규칙을 따라야 합니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이 규칙 위반 문제를 해결 하려면 적절 한 접두사를 사용 하 여 필드를 이름을 바꿉니다. 추가 또는 제거 하 여 현재 접미사와 함께 필드를 확인 또는 `static` 한정자입니다.
+ 이 규칙 위반 문제를 해결 하려면 적절 한 접두사를 사용 하 여 필드를 이름을 바꿉니다. 또는 추가 하거나 제거 하 여 현재 접미사를 사용 하 여 필드를 확인 합니다 `static` 한정자입니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
  이 규칙에서는 경고를 표시해야 합니다.

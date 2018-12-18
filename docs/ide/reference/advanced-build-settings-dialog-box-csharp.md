@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c39e68c05f438b787bb7a0930f2ad0ba6a324ee1
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: cf4fd5b48dc3bfcfbfe1809eebe656a5b8f2079d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057543"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928284"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>고급 빌드 설정 대화 상자(C#)
 
@@ -27,59 +27,73 @@ ms.locfileid: "37057543"
 
 ## <a name="general"></a>일반
 
- 다음 옵션을 사용하여 일반 고급 설정을 설정할 수 있습니다.
+다음 옵션을 사용하여 일반 고급 설정을 설정할 수 있습니다.
 
- **언어 버전** 사용할 언어의 버전을 지정합니다. 기능 집합은 버전에 따라 다르므로 이 옵션을 사용하여 컴파일러에서 구현된 기능의 하위 집합만 허용하도록 하거나 기존 표준과 호환되는 기능만 사용하도록 설정할 수 있습니다. 이 설정에는 다음과 같은 옵션이 있습니다.
+**언어 버전**
 
- - **default**
+사용할 언어의 버전을 지정합니다. 기능 집합은 버전에 따라 다르므로 이 옵션을 사용하여 컴파일러에서 구현된 기능의 하위 집합만 허용하도록 하거나 기존 표준과 호환되는 기능만 사용하도록 설정할 수 있습니다. 이 설정에는 다음과 같은 옵션이 있습니다.
+
+- **default**
 
    현재 버전을 대상으로 지정합니다.
 
 - **ISO-1** 및 **ISO-2**
 
-  ISO-1 및 ISO-2 표준 기능을 각각 대상으로 지정합니다.
+   ISO-1 및 ISO-2 표준 기능을 각각 대상으로 지정합니다.
 
 - **C# [버전 번호]**
 
- 특정 버전의 C#을 대상으로 지정합니다. 자세한 내용은 [/langversion(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/langversion-compiler-option)을 참조하세요.
+   특정 버전의 C#을 대상으로 지정합니다. 자세한 내용은 [/langversion(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/langversion-compiler-option)을 참조하세요.
 
+**내부 컴파일러 오류 보고**
 
- **내부 컴파일러 오류 보고** Microsoft에 컴파일러 오류를 보고할지 여부를 지정합니다. **prompt**(기본값)로 설정되면 내부 컴파일러 오류가 발생할 경우 오류 보고서를 전자 방식으로 Microsoft에 보내는 옵션을 제공하는 프롬프트가 표시됩니다. **send**로 설정되면 오류 보고서가 자동으로 전송됩니다. **queue**로 설정되면 오류 보고서가 대기합니다. **none**으로 설정되면 오류가 컴파일러의 텍스트 출력으로만 보고됩니다. 자세한 내용은 [/errorreport(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/errorreport-compiler-option)를 참조하세요.
+Microsoft에 컴파일러 오류를 보고할지 여부를 지정합니다. **prompt**(기본값)로 설정되면 내부 컴파일러 오류가 발생할 경우 오류 보고서를 전자 방식으로 Microsoft에 보내는 옵션을 제공하는 프롬프트가 표시됩니다. **send**로 설정되면 오류 보고서가 자동으로 전송됩니다. **queue**로 설정되면 오류 보고서가 대기합니다. **none**으로 설정되면 오류가 컴파일러의 텍스트 출력으로만 보고됩니다. 자세한 내용은 [/errorreport(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/errorreport-compiler-option)를 참조하세요.
 
- **산술 연산 오버플로/언더플로 확인** 정수 산술 문이 [checked](/dotnet/csharp/language-reference/keywords/checked) 또는 [unchecked](/dotnet/csharp/language-reference/keywords/unchecked) 키워드의 범위에 포함되지 않고 데이터 형식 범위를 벗어난 값을 생성할 경우 런타임 예외를 발생시킬지 여부를 지정합니다. 자세한 내용은 [/checked(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/checked-compiler-option)를 참조하세요.
+**산술 연산 오버플로/언더플로 확인**
 
- **mscorlib.dll을 참조하지 않음** mscorlib.dll을 프로그램으로 가져와 전체 <xref:System> 네임스페이스를 정의할지 여부를 지정합니다. 고유한 <xref:System> 네임스페이스 및 개체를 정의하거나 만들려면 이 상자를 선택합니다. 자세한 내용은 [/nostdlib(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option)를 참조하세요.
+정수 산술 문이 [checked](/dotnet/csharp/language-reference/keywords/checked) 또는 [unchecked](/dotnet/csharp/language-reference/keywords/unchecked) 키워드의 범위에 포함되지 않고 데이터 형식 범위를 벗어난 값을 생성할 경우 런타임 예외가 발생할지 여부를 지정합니다. 자세한 내용은 [/checked(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/checked-compiler-option)를 참조하세요.
+
+**mscorlib.dll을 참조하지 않음**
+
+mscorlib.dll을 프로그램으로 가져와 전체 <xref:System> 네임스페이스를 정의할지 여부를 지정합니다. 고유한 <xref:System> 네임스페이스 및 개체를 정의하거나 만들려면 이 상자를 선택합니다. 자세한 내용은 [/nostdlib(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option)를 참조하세요.
 
 ## <a name="output"></a>출력
 
- 다음 옵션을 사용하여 고급 출력 옵션을 지정할 수 있습니다.
+다음 옵션을 사용하여 고급 출력 옵션을 지정할 수 있습니다.
 
- **디버그 정보** 컴파일러에서 생성되는 디버깅 정보 형식을 지정합니다. 응용 프로그램의 디버그 성능을 구성하는 방법에 대한 자세한 내용은 [쉽게 디버깅할 수 있도록 이미지 만들기](/dotnet/framework/debug-trace-profile/making-an-image-easier-to-debug)를 참조하세요. 이 설정에는 다음과 같은 옵션이 있습니다.
+**디버그 정보**
+
+컴파일러에서 생성되는 디버깅 정보 형식을 지정합니다. 응용 프로그램의 디버그 성능을 구성하는 방법에 대한 자세한 내용은 [쉽게 디버깅할 수 있도록 이미지 만들기](/dotnet/framework/debug-trace-profile/making-an-image-easier-to-debug)를 참조하세요. 이 설정에는 다음과 같은 옵션이 있습니다.
 
 - **none**
 
-  디버깅 정보가 생성되지 않도록 지정합니다.
+   디버깅 정보가 생성되지 않도록 지정합니다.
 
 - **full**
 
-  디버거를 실행 중인 프로그램에 연결할 수 있습니다.
+   디버거를 실행 중인 프로그램에 연결할 수 있습니다.
 
 - **pdbonly**
 
-  디버거에서 프로그램이 시작되는 경우 소스 코드 디버깅이 가능하지만, 실행 중인 프로그램이 디버거에 연결되는 경우 어셈블러만 표시됩니다.
-- **portable**
+   디버거에서 프로그램이 시작되는 경우 소스 코드 디버깅이 가능하지만, 실행 중인 프로그램이 디버거에 연결되는 경우 어셈블러만 표시됩니다.
 
-  플랫폼과 관련되지 않은 이식 가능한 기호 파일인 .PDB 파일을 생성합니다. 이 파일은 기본 실행 파일의 콘텐츠 및 해당 콘텐츠 생성 방식에 대한 정보를 특히 디버거와 같은 다른 도구에 제공합니다. 자세한 내용은 [Portable PDB](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md)(이식 가능한 PDB)를 참조하세요.
+-  **portable**
+
+   플랫폼과 관련되지 않은 이식 가능한 기호 파일인 .PDB 파일을 생성합니다. 이 파일은 기본 실행 파일의 콘텐츠 및 해당 콘텐츠 생성 방식에 대한 정보를 특히 디버거와 같은 다른 도구에 제공합니다. 자세한 내용은 [Portable PDB](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md)(이식 가능한 PDB)를 참조하세요.
 
 - **embedded**
 
-  이식 가능한 기호 정보를 어셈블리에 포함합니다. 외부 .PDB 파일은 생성되지 않습니다.
+   이식 가능한 기호 정보를 어셈블리에 포함합니다. 외부 .PDB 파일은 생성되지 않습니다.
 
 자세한 내용은 [/debug(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option)를 참조하세요.
 
-**파일 맞춤** 출력 파일의 섹션 크기를 지정합니다. 유효한 값은 **512**, **1024**, **2048**, **4096** 및 **8192**입니다. 이러한 값은 바이트 단위로 측정됩니다. 각 섹션은 이 값의 배수인 경계에 맞춰지고 출력 파일 크기에 영향을 미칩니다. 자세한 내용은 [/filealign(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/filealign-compiler-option)을 참조하세요.
+**파일 맞춤**
 
-**라이브러리 기준 주소** DLL을 로드할 기본 설정 기준 주소를 지정합니다. DLL에 대한 기본 기준 주소는 [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] 공용 언어 런타임에 의해 설정됩니다. 자세한 내용은 [/baseaddress(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option)를 참조하세요.
+출력 파일에 있는 섹션의 크기를 지정합니다. 유효한 값은 **512**, **1024**, **2048**, **4096** 및 **8192**입니다. 이러한 값은 바이트 단위로 측정됩니다. 각 섹션은 이 값의 배수인 경계에 맞춰지고 출력 파일 크기에 영향을 미칩니다. 자세한 내용은 [/filealign(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/filealign-compiler-option)을 참조하세요.
+
+**라이브러리 기준 주소**
+
+DLL을 로드할 기본 설정 기준 주소를 지정합니다. DLL에 대한 기본 기준 주소는 [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] 공용 언어 런타임에 의해 설정됩니다. 자세한 내용은 [/baseaddress(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 

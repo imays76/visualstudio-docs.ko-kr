@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 519281487e85ec7dffc0e7bb470d044dc2bae885
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 61f82cdeda76cd8660fff47e30edf37c81d154f5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099287"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867795"
 ---
 # <a name="idebugbinder3getexceptionobjectandtype"></a>IDebugBinder3::GetExceptionObjectAndType
 있는 경우이 메서드는 개체와 연결 된 예외를 검색 합니다.  
@@ -46,13 +46,13 @@ int GetExceptionObjectAndType(
  [out] 예외를 나타내는 개체를 반환 합니다.  
   
  `ppField`  
- [out] (Null 값 수 있음)는 예외를 일으킬 수 있는 특정 필드를 나타내는 개체를 반환 합니다.  
+ [out] (Null 값일 수 있습니다) 예외를 일으킬 수 있는 특정 필드를 나타내는 개체를 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 > [!NOTE]
->  예외가 있는지 여부를 확인 하려면에서 반환한 값 확인 `ppException`: 되는 null 값을 경우이 개체와 연결 된 예외가 없습니다.  
+>  예외가 있는지 여부를 확인 하려면 반환 하는 값을 확인 `ppException`: 예외가 없으면이 개체와 연결 된 경우 null 값입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37dfbb9fda19363aefa1600fe9b0186862963cc1
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 27a9da182a2e4db76db0b5221178dfa6dc371723
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177700"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49943000"
 ---
 # <a name="immediate-window"></a>직접 실행 창
 **직접 실행** 창은 식을 디버깅 및 계산하고 문을 실행하며 가변 값을 인쇄하는 등에 사용됩니다. 디버깅 중에 개발 언어에 따라 실행되거나 계산되는 식을 입력할 수 있습니다. **직접 실행** 창을 표시하려면 편집할 프로젝트를 연 다음, **디버그** 메뉴에서 **창**을 선택하고 **즉시 실행**을 선택하거나 CTRL+ALT+I를 누릅니다.
@@ -54,27 +54,27 @@ ms.locfileid: "39177700"
 
 #### <a name="to-execute-a-function-at-design-time"></a>디자인 타임에 함수를 실행하려면
 
-1.  다음 코드를 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 콘솔 응용 프로그램에 복사합니다.
+1. 다음 코드를 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 콘솔 응용 프로그램에 복사합니다.
 
-    ```vb
-    Module Module1
+   ```vb
+   Module Module1
 
-        Sub Main()
-            MyFunction(5)
-        End Sub
+       Sub Main()
+           MyFunction(5)
+       End Sub
 
-        Function MyFunction(ByVal input as Integer) As Integer
-            Return input * 2
-        End Function
+       Function MyFunction(ByVal input as Integer) As Integer
+           Return input * 2
+       End Function
 
-    End Module
-    ```
+   End Module
+   ```
 
-2.  **디버그** 메뉴에서 **창**을 클릭한 다음 **즉시 실행**을 클릭합니다.
+2. **디버그** 메뉴에서 **창**을 클릭한 다음 **즉시 실행**을 클릭합니다.
 
-3.  **직접 실행 창**에 `?MyFunction(2)`을 입력하고 Enter 키를 누릅니다.
+3. **직접 실행 창**에 `?MyFunction(2)`을 입력하고 Enter 키를 누릅니다.
 
-     **직접 실행** 창이 `MyFunction`을 실행하고 `4`를 표시합니다.
+    **직접 실행** 창이 `MyFunction`을 실행하고 `4`를 표시합니다.
 
 함수 또는 서브루틴에 중단점이 포함된 경우 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]는 적절한 지점에서 실행을 중단합니다. 그런 다음 디버거 창을 사용하여 프로그램 상태를 조사할 수 있습니다. 자세한 내용은 [연습: 디자인 타임에 디버깅](../../debugger/walkthrough-debugging-at-design-time.md)을 참조하십시오.
 
@@ -131,5 +131,5 @@ ms.locfileid: "39177700"
 - [Visual Studio의 디버깅](../../debugger/debugging-in-visual-studio.md)
 - [디버거 기본 사항](../../debugger/getting-started-with-the-debugger.md)
 - [연습: 디자인 타임에 디버그](../../debugger/walkthrough-debugging-at-design-time.md)
-- [Visual Studio 명령 별칭](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 - [Visual Studio에서 정규식 사용](../../ide/using-regular-expressions-in-visual-studio.md)

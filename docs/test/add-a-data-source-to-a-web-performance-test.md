@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 웹 성능 테스트에 데이터 소스 추가
+title: 웹 성능 테스트에 데이터 소스 추가
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,26 +11,28 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9539e8dec80afd1f334ca89e84a5130d8d47877e
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 6d2ae95883884909641541e0efe6e4efbc7fe06a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283291"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065209"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>웹 성능 테스트에 데이터 소스 추가
 
 데이터를 바인딩하여 다른 값을 같은 테스트에 제공합니다. 예를 들어, 다른 값을 폼 게시 매개 변수에 제공합니다.
 
- ![웹 성능 테스트에 데이터 바인딩](../test/media/web_test_databinding_conceptual.png)
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- 여기에서는 샘플 ASP.NET 응용 프로그램을 사용합니다. 세 개의 *.aspx* 페이지(기본 페이지, 빨강 페이지, 파랑 페이지)가 있습니다. 기본 페이지는 빨강 또는 파랑 및 전송 단추를 선택할 수 있는 라디오 컨트롤이 포함됩니다. 다른 두 *.aspx* 페이지는 매우 간단합니다. 한 페이지의 레이블이 빨강이면, 다른 한 페이지의 레이블은 파랑입니다. 기본 페이지에서 제출을 선택하면 다른 페이지 중 하나가 표시됩니다. [ColorWebApp](http://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) 샘플을 다운로드하거나, 사용자 고유의 웹앱과 함께 따를 수 있습니다.
+![웹 성능 테스트에 데이터 바인딩](../test/media/web_test_databinding_conceptual.png)
 
- ![테스트할 웹 응용 프로그램 실행](../test/media/web_test_databinding_runwebapp.png)
+여기에서는 샘플 ASP.NET 응용 프로그램을 사용합니다. 세 개의 *.aspx* 페이지(기본 페이지, 빨강 페이지, 파랑 페이지)가 있습니다. 기본 페이지는 빨강 또는 파랑 및 전송 단추를 선택할 수 있는 라디오 컨트롤이 포함됩니다. 다른 두 *.aspx* 페이지는 매우 간단합니다. 한 페이지의 레이블이 빨강이면, 다른 한 페이지의 레이블은 파랑입니다. 기본 페이지에서 제출을 선택하면 다른 페이지 중 하나가 표시됩니다. [ColorWebApp](https://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) 샘플을 다운로드하거나, 사용자 고유의 웹앱과 함께 따를 수 있습니다.
 
- 또한 솔루션에는 웹 응용 프로그램의 페이지를 탐색하는 웹 성능 테스트를 포함해야 합니다.
+![테스트할 웹 응용 프로그램 실행](../test/media/web_test_databinding_runwebapp.png)
 
- ![웹 성능 테스트가 포함된 솔루션](../test/media/web_test_databinding_solution.png)
+또한 솔루션에는 웹 응용 프로그램의 페이지를 탐색하는 웹 성능 테스트를 포함해야 합니다.
+
+![웹 성능 테스트가 포함된 솔루션](../test/media/web_test_databinding_solution.png)
 
 ## <a name="create-a-sql-database"></a>SQL 데이터베이스 만들기
 
@@ -122,7 +124,7 @@ ms.locfileid: "36283291"
 
 ## <a name="q--a"></a>Q&A
 
-### <a name="q-what-databases-can-i-use-as-a-data-source"></a>Q: 데이터 소스로 사용할 수 있는 데이터베이스는 무엇입니까?
+### <a name="q-what-databases-can-i-use-as-a-data-source"></a>Q: 데이터 원본으로 사용할 수 있는 데이터베이스는 무엇입니까?
 
 **A:** 다음을 사용할 수 있습니다.
 
@@ -213,7 +215,7 @@ ms.locfileid: "36283291"
 
      ![테스트에 추가된 데이터 소스](../test/media/web_test_databinding_adddatasourcecolortext7.png)
 
-### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>Q: XML 파일을 데이터 소스로 사용하려면 어떻게 할까요?
+### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>Q: XML 파일을 데이터 원본으로 사용하려면 어떻게 할까요?
 
 **A:** 예.
 
@@ -245,7 +247,7 @@ ms.locfileid: "36283291"
 
      ![이름을 입력하고 XML 파일을 선택](../test/media/web_test_databinding_adddatasourcedialogxml.png)
 
-### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>Q: SOAP을 사용한 웹 서비스 요청에 데이터 바인딩을 추가할 수 있습니까?
+### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>Q: SOAP를 사용한 웹 서비스 요청에 데이터 바인딩을 추가할 수 있습니까?
 
 **A:** 예, SOAP XML을 수동으로 변경해야 합니다.
 

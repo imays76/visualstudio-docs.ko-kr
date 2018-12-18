@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1db0cfea540458e0c8b288430027df03fa4cf2e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 60b664680c806f5553e45854a6e678befac952fb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113626"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822236"
 ---
 # <a name="idebugprocess3getdebugreason"></a>IDebugProcess3::GetDebugReason
-이 메서드는 디버깅 하는 프로세스를 시작한 이유를 반환 합니다.  
+이 메서드는 디버깅용 프로세스가 시작 된는 이유를 반환 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -41,10 +41,10 @@ int GetDebugReason(
   
 #### <a name="parameters"></a>매개 변수  
  `pReason`  
- [out] 값을 반환 된 [DEBUG_REASON](../../../extensibility/debugger/reference/debug-reason.md) 열거 합니다.  
+ [out] 값을 반환 합니다 [DEBUG_REASON](../../../extensibility/debugger/reference/debug-reason.md) 열거형입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드를 반환 합니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   

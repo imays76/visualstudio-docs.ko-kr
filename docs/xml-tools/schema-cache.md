@@ -10,40 +10,41 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cf3c41c16f904077f884bc6cffcdf0ba97233a1a
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 6bba01c55e6e71a55895b7ebd16bb3063ed5c1f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572789"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904886"
 ---
 # <a name="schema-cache"></a>스키마 캐시
 
-XML 편집기에 있는 스키마 캐시 제공에서 *%InstallRoot%\Xml\Schemas* 디렉터리입니다. 스키마 캐시는 컴퓨터의 모든 사용자에 전체적으로 적용되며 IntelliSense 및 XML 문서 유효성 검사에 사용되는 표준 XML 스키마를 포함합니다.
+XML 편집기에 있는 스키마 캐시를 제공 합니다 *%InstallRoot%\Xml\Schemas* 디렉터리입니다. 스키마 캐시는 컴퓨터의 모든 사용자에 전체적으로 적용되며 IntelliSense 및 XML 문서 유효성 검사에 사용되는 표준 XML 스키마를 포함합니다.
 
-XML 편집기에서는 솔루션에 있는 스키마를 찾을 수도,에 지정 된 스키마는 **스키마** 문서의 필드 **속성** 창과 스키마로 식별 되는 `xsi:schemaLocation` 및 `xsi:noNamespaceSchemaLocation`특성입니다.
+XML 편집기는 솔루션에 있는 스키마를 찾을 수도 있습니다에 지정 된 스키마를 **스키마** 문서의 필드 **속성** 창과로 식별 되는 스키마는 `xsi:schemaLocation` 및 `xsi:noNamespaceSchemaLocation`특성입니다.
 
 다음 표에서는 XML 편집기로 설치된 스키마에 대해 설명합니다.
 
-|파일 이름|설명|
-|--------------|-----------------|
-|*catalog.xsd*|XML 편집기 스키마 카탈로그 파일에 대한 스키마입니다. 스키마 카탈로그에 대한 자세한 내용은 아래를 참조하세요.|
-|*DotNetConfig.xsd*|Web.Config 파일에 대 한 스키마 "http://schemas.microsoft.com/.NETConfiguration/v2.0"입니다.|
-|*msbuild.xsd*|MSBuild 작성 파일에 대 한 스키마 "http://schemas.microsoft.com/developer/msbuild/2003"입니다.|
-|*msdata.xsd*|<xref:System.Data.DataSet> 클래스 "urn:schemas-microsoft-com:xml-msdata"에 의해 추가된 XSD 주석의 스키마입니다.|
-|*msxsl.xsd*|Microsoft XSLT 스크립트 블록 확장명 urn:schemas-microsoft-com:xslt에 대한 스키마입니다.|
-|*SnippetFormat.xsd*|코드 조각 XML 파일에 대한 스키마입니다. 예제를 보려면 *%InstallDir%\VC#\Expansions*합니다.|
-|*Soap1.1.xsd*|Simple Object Access Protocol (SOAP) 1.1에 대 한 스키마 http://schemas.xmlsoap.org/soap/envelope/합니다.|
-|*Soap1.2.xsd*|SOAP(Simple Object Access Protocol) 1.2에 대한 스키마입니다.|
-|*SiteMapSchema.xsd*|ASP.NET 사이트 맵 XML 파일에 대 한 스키마 "http://schemas.microsoft.com/AspNet/SiteMap-File-1.0"입니다.|
-|*wsdl.xsd*|웹 서비스 기술 언어에 대 한 스키마 http://schemas.xmlsoap.org/wsdl/합니다.|
-|*xenc.xsd*|XML 암호화에 대 한 스키마 http://www.w3.org/2000/09/xmldsig#합니다.|
-|*xhtml.xsd*|XHTML에 대 한 스키마 http://www.w3.org/1999/xhtml합니다.|
-|*xlink.xsd*|XLink1.0에 대 한 스키마 http://www.w3.org/1999/xlink합니다.|
-|*xml.xsd*|Xml: space 및 xml: lang 특성을 설명 하는 스키마 http://www.w3.org/XML/1998/namespace합니다.|
-|*xmlsig.xsd*|XML 디지털 서명에 대 한 스키마 http://www.w3.org/2000/09/xmldsig#합니다.|
-|*xsdschema.xsd*|XSD 자체를 설명 하는 스키마 http://www.w3.org/2001/XMLSchema합니다.|
-|*xslt.xsd*|XML에 대 한 스키마를 변형 http://www.w3.org/1999/XSL/Transform합니다.|
+
+| 파일 이름 | 설명 |
+|-| - |
+| *catalog.xsd* | XML 편집기 스키마 카탈로그 파일에 대한 스키마입니다. 스키마 카탈로그에 대한 자세한 내용은 아래를 참조하세요. |
+| *DotNetConfig.xsd* | Web.Config 파일에 대 한 스키마 "<http://schemas.microsoft.com/.NETConfiguration/v2.0>"입니다. |
+| *msbuild.xsd* | MSBuild 확인 파일에 대 한 스키마 "<http://schemas.microsoft.com/developer/msbuild/2003>"입니다. |
+| *msdata.xsd* | <xref:System.Data.DataSet> 클래스 "urn:schemas-microsoft-com:xml-msdata"에 의해 추가된 XSD 주석의 스키마입니다. |
+| *msxsl.xsd* | Microsoft XSLT 스크립트 블록 확장명 urn:schemas-microsoft-com:xslt에 대한 스키마입니다. |
+| *SnippetFormat.xsd* | 코드 조각 XML 파일에 대한 스키마입니다. 예제를 보려면 *%InstallDir%\VC#\Expansions*합니다. |
+| *Soap1.1.xsd* | Simple Object Access Protocol (SOAP) 1.1에 대 한 스키마 http://schemas.xmlsoap.org/soap/envelope/합니다. |
+| *Soap1.2.xsd* | SOAP(Simple Object Access Protocol) 1.2에 대한 스키마입니다. |
+| *SiteMapSchema.xsd* | ASP.NET 사이트 맵 XML 파일에 대 한 스키마 "<http://schemas.microsoft.com/AspNet/SiteMap-File-1.0>"입니다. |
+| *wsdl.xsd* | 웹 서비스 기술 언어에 대 한 스키마 http://schemas.xmlsoap.org/wsdl/합니다. |
+| *xenc.xsd* | XML 암호화에 대 한 스키마 http://www.w3.org/2000/09/xmldsig#합니다. |
+| *xhtml.xsd* | XHTML에 대 한 스키마 http://www.w3.org/1999/xhtml합니다. |
+| *xlink.xsd* | XLink1.0에 대 한 스키마 http://www.w3.org/1999/xlink합니다. |
+| *xml.xsd* | Xml: space 및 xml: lang 특성을 설명 하는 스키마 http://www.w3.org/XML/1998/namespace합니다. |
+| *xmlsig.xsd* | XML 디지털 서명 위한 스키마 http://www.w3.org/2000/09/xmldsig#합니다. |
+| *xsdschema.xsd* | XSD 자체를 설명 하는 스키마 http://www.w3.org/2001/XMLSchema합니다. |
+| *xslt.xsd* | XML에 대 한 스키마 변환 http://www.w3.org/1999/XSL/Transform합니다. |
 
 ## <a name="update-schemas-in-the-cache"></a>캐시에서 스키마를 업데이트 합니다.
  XML 편집기 패키지가 로드될 때 편집기에서 스키마 캐시 디렉터리를 로드하며 실행하는 동안 변경 내용을 조사합니다. 스키마가 추가되면 알려진 스키마의 메모리 내 인덱스에 자동으로 로드됩니다. 스키마가 제거되면 메모리 내 인덱스에서 자동으로 제거됩니다. 스키마가 업데이트되면 이 스키마의 메모리 내 캐시가 자동으로 무효화됩니다.
@@ -52,7 +53,7 @@ XML 편집기에서는 솔루션에 있는 스키마를 찾을 수도,에 지정
 > 스키마 캐시 디렉터리는 컴퓨터 전체에 적용되므로 여기서는 컴퓨터에서 만들 수 있는 모든 Visual Studio 프로젝트에 유용한 표준 스키마만 추가해야 합니다.
 
 
- 또한 XML 편집기에서는 스키마 캐시 디렉터리의 스키마 카탈로그 파일 수를 제한하지 않습니다. 스키마 카탈로그는 편집기에서 항상 알아야 할 스키마에 대해 다른 위치를 가리킬 수 있습니다. *catalog.xsd* 파일은 카탈로그 파일에 대 한 형식을 정의 하 고 스키마 캐시 디렉터리에 포함 됩니다. *catalog.xml* 파일은 기본 카탈로그 이며에 있는 다른 스키마에 대 한 링크를 포함 된 *% InstallDir %* 합니다. 다음은 몇 가지는 *catalog.xml* 파일:
+ 또한 XML 편집기에서는 스키마 캐시 디렉터리의 스키마 카탈로그 파일 수를 제한하지 않습니다. 스키마 카탈로그는 편집기에서 항상 알아야 할 스키마에 대해 다른 위치를 가리킬 수 있습니다. 합니다 *catalog.xsd* 파일 카탈로그 파일에 대 한 형식을 정의 하 고 스키마 캐시 디렉터리에 포함 됩니다. 합니다 *catalog.xml* 파일은 기본 카탈로그 이며의 다른 스키마에 대 한 링크 포함 된 *% InstallDir %* 합니다. 다음은 몇 가지는 *catalog.xml* 파일:
 
 ```xml
 <SchemaCatalog xmlns="http://schemas.microsoft.com/xsd/catalog">
@@ -93,7 +94,7 @@ XML 편집기에서는 솔루션에 있는 스키마를 찾을 수도,에 지정
 ```
 
 ## <a name="localized-schemas"></a>지역화 된 스키마
- 대부분의 경우에서는 *catalog.xml* 파일에 지역화 된 스키마에 대 한 항목이 포함 되지 않습니다. 에 항목을 추가할 수는 *catalog.xml* 지역화 된 스키마 디렉터리를 가리키는 파일입니다.
+ 대부분의 경우에는 *catalog.xml* 파일에 지역화 된 스키마에 대 한 항목이 없습니다. 추가 항목을 추가할 수 있습니다 합니다 *catalog.xml* 지역화 된 스키마 디렉터리를 가리키는 파일입니다.
 
  다음 예제에서는 %LCID% 변수를 사용하여 지역화된 스키마를 가리키는 새로운 `Schema` 요소가 만들어졌습니다.
 
@@ -111,17 +112,17 @@ XML 편집기에서는 솔루션에 있는 스키마를 찾을 수도,에 지정
 
 ### <a name="to-change-the-schema-cache-location"></a>스키마 캐시 위치를 변경하려면
 
-1.  **도구** 메뉴 선택 **옵션**합니다.
+1.  **도구** 메뉴에서 **옵션**합니다.
 
-2.  확장 **텍스트 편집기**를 확장 하 고 **XML**, 클릭 하 고 **기타**합니다.
+2.  확장 **텍스트 편집기**를 확장 하 고 **XML**를 클릭 하 고 **기타**합니다.
 
-3.  클릭는 **찾아보기** 단추는 **스키마** 필드입니다.
+3.  클릭 합니다 **찾아보기** 단추를 **스키마** 필드입니다.
 
-4.  스키마 캐시 폴더를 선택 하 고 클릭 **확인**합니다.
+4.  스키마 캐시에 대 한 폴더를 선택 하 고 클릭 **확인**합니다.
 
 ### <a name="to-add-another-directory-of-common-schemas"></a>공통 스키마 디렉터리를 추가하려면
 
-1.  편집 된 *catalog.xml* XML 편집기 스키마 캐시 디렉터리의 파일입니다.
+1.  편집 된 *catalog.xml* XML 편집기 스키마 캐시 디렉터리에 있는 파일입니다.
 
 2.  추가 스키마 디렉터리를 가리키는 새 `<Catalog href="..."/>` 요소를 추가합니다.
 

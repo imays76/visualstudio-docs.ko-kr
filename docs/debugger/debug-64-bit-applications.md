@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 17577684c7adffe46326d2151710e88745c60e1f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 28a7625729989252a29ab1d0f65feec010e9e65f
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461440"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44284083"
 ---
 # <a name="debug-64-bit-applications"></a>64비트 응용 프로그램 디버그
 로컬 컴퓨터나 원격 컴퓨터에서 실행되는 64비트 응용 프로그램을 디버깅할 수 있습니다.  
@@ -55,8 +55,8 @@ ms.locfileid: "31461440"
 -   Visual Studio에서 중단 또는 성능 문제가 발생합니다. 문제가 주기적으로 발생하는 경우 Visual Studio(devenv.exe) 및 작업자 프로세스(msvsmon.exe)의 덤프를 수집하여 Microsoft로 보낼 수 있습니다. 문제를 신고하는 방법에 대한 자세한 내용은 [How to Report a Problem with Visual Studio](../ide/How-to-Report-a-Problem-with-Visual-Studio-2017.md)항목을 참조하세요.
   
 ## <a name="see-also"></a>참고 항목  
- [64비트 응용 프로그램](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
+ [64비트 응용 프로그램](https://docs.microsoft.com/dotnet/framework/64-bit-apps)   
  [64 비트용 프로그램 구성](/cpp/build/configuring-programs-for-64-bit-visual-cpp)   
  [Visual Studio IDE 64 비트 지원](../ide/visual-studio-ide-64-bit-support.md)   
- [덤프 파일을 사용 하 여](../debugger/using-dump-files.md)   
+ [덤프 파일 사용](../debugger/using-dump-files.md)   
  [원격 디버깅](../debugger/remote-debugging.md)

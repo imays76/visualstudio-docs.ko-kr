@@ -10,27 +10,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f9ef0bfc6c2030fc12d5743e91cb7b660cbe241f
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 2aa23601ff1f85aa4e2d28be5664c4bccb8d2eff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34476679"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828396"
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn 및 ThreadOff
-VSPerfCmd.exe **ThreadOff** 및 **ThreadOn** 하위 명령은 계측 방법을 사용하는 명령줄 프로파일링 세션에서만 사용할 수 있습니다. **ThreadOff** 및 **ThreadOn**은 지정된 스레드에 대한 프로파일링을 일시 중지하고 다시 시작합니다. **ThreadOff**는 스레드 프로파일링을 중지하고 **ThreadOn**은 스레드 프로파일링을 시작합니다.  
+*VSPerfCmd.exe* **ThreadOff** 및 **ThreadOn** 하위 명령은 계측 방법을 사용하는 명령줄 프로파일링 세션에서만 사용할 수 있습니다. **ThreadOff** 및 **ThreadOn**은 지정된 스레드에 대한 프로파일링을 일시 중지하고 다시 시작합니다. **ThreadOff**는 스레드 프로파일링을 중지하고 **ThreadOn**은 스레드 프로파일링을 시작합니다.  
   
- 대부분의 경우에서 **ThreadOn** 또는 **ThreadOff**를 VSPerfCmd.exe 명령줄의 유일한 옵션으로 지정하지만 **GlobalOn**, **GlobalOff**, **ProcessOn** 및 **ProcessOff** 하위 명령과 함께 결합될 수도 있습니다.  
+ 대부분의 경우에서 **ThreadOn** 또는 **ThreadOff**를 *VSPerfCmd.exe* 명령줄의 유일한 옵션으로 지정하지만 **GlobalOn**, **GlobalOff**, **ProcessOn** 및 **ProcessOff** 하위 명령과 함께 결합될 수도 있습니다.  
   
  **ThreadOn** 및 **ThreadOff** 하위 명령은 명령줄 프로파일링 세션에서 모든 프로세스에 대한 데이터 컬렉션을 제어하는 **GlobalOn** 및 **GlobalOff** 하위 명령 및 지정된 프로세스에 대한 데이터 수집을 제어하는 **ProcessOn** 및 **ProcessOff** 하위 명령과 상호 작용합니다.  
   
  **ThreadOff** 및 **ThreadOn** 하위 명령은 프로파일러 API 함수에 의해 조작되는 스레드 시작/중지에도 영향을 줍니다.  
   
--   **ThreadOff**는 스레드 Start/Stop 카운트를 즉시 0으로 설정하므로 프로파일링이 일시 중지됩니다.  
+- **ThreadOff**는 스레드 Start/Stop 카운트를 즉시 0으로 설정하므로 프로파일링이 일시 중지됩니다.  
   
--   **ThreadOn**은 스레드 Start/Stop 카운트를 즉시 1로 설정하므로 프로파일링을 다시 시작합니다.  
+- **ThreadOn**은 스레드 Start/Stop 카운트를 즉시 1로 설정하므로 프로파일링을 다시 시작합니다.  
   
- 자세한 내용은 [프로필 도구 API](../profiling/profiling-tools-apis.md)를 참조하세요.  
+  자세한 내용은 [프로파일링 도구 API](../profiling/profiling-tools-apis.md)를 참조하세요.  
   
 ## <a name="syntax"></a>구문  
   

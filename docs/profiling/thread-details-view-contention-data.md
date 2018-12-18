@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 712fcfa369c4a324554bda38df671dab1a95a1f5
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: e832088c49366cee3cb2a4f45df7a1250171e7df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34477355"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849530"
 ---
 # <a name="thread-details-view---contention-data"></a>스레드 정보 뷰 - 경합 데이터
 스레드 정보 뷰에는 리소스 간의 경합으로 인해 프로파일링 실행의 선택한 스레드에서 발생한 차단 이벤트의 시간 표시 막대 그래프가 표시됩니다. 다른 스레드가 리소스에 대한 액세스를 잠가 스레드가 실행을 일시 중단해야 했던 경우 차단 이벤트가 발생합니다.  
@@ -46,9 +46,9 @@ ms.locfileid: "34477355"
   
 #### <a name="to-view-or-edit-the-source-code-of-a-function-in-the-call-stack"></a>호출 스택의 함수 소스 코드를 보거나 편집하려면  
   
--   **호출 스택** 창에서 함수 이름을 클릭합니다.  
+- **호출 스택** 창에서 함수 이름을 클릭합니다.  
   
- 함수 소스 코드는 현재 프로젝트의 일부여야 합니다.  
+  함수 소스 코드는 현재 프로젝트의 일부여야 합니다.  
   
 #### <a name="to-view-the-contention-events-of-a-resource-in-all-threads-in-the-profiling-run"></a>프로파일링 실행에서 모든 스레드에 포함된 리소스의 경합 이벤트를 확인하려면  
   

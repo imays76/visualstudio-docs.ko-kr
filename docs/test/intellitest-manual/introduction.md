@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 50baf803cb6669640c9ffe2c0e94ea43b56f5341
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: c2a8e6df93d3af64bd114e0e9994aadce58e7f8d
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815485"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296023"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Microsoft IntelliTest 개요
 
@@ -153,5 +153,5 @@ IntelliTest는 각 계측된 메서드에서 예외를 catch하고 “rethrow”
 
 ## <a name="further-reading"></a>추가 정보
 
-* MSDN의 [소개 블로그 게시물](https://blogs.msdn.microsoft.com/visualstudioalm/2014/11/19/introducing-smart-unit-tests/).
+* [소개 블로그 게시물](https://blogs.msdn.microsoft.com/devops/2014/11/19/introducing-smart-unit-tests/).
 * [IntelliTest를 사용하여 코드에 대한 단위 테스트 생성](../../test/generate-unit-tests-for-your-code-with-intellitest.md)

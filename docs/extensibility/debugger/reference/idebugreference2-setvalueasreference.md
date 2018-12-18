@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ce62358df758b7f4cf3ef0883cf0ac457aaf1f5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 96245b7089ddef7d465d01203ca8b540c618b05f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122589"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820254"
 ---
 # <a name="idebugreference2setvalueasreference"></a>IDebugReference2::SetValueAsReference
 다른 참조에서 참조의 값을 설정 합니다. 나중에 사용하기 위해 예약되어 있습니다.  
@@ -53,10 +53,10 @@ int SetValueAsReference (
  [in] 배열에 대 한 참조의 수입니다.  
   
  `pValue`  
- [in] [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) 개체입니다. 속성 값을 설정 합니다.  
+ [in] [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) 속성 값을 설정 하는 개체입니다.  
   
  `dwTimeout`  
- [in] 이 메서드로부터 반환 하기 전에 대기할 밀리초에서는 최대 시간입니다. 사용 하 여 `INFINITE` 무기한 대기를 나타냅니다.  
+ [in] 이 메서드에서 반환 되기 전에 대기할 밀리초에서는 최대 시간입니다. 사용 하 여 `INFINITE` 무기한 대기 합니다.  
   
 ## <a name="return-value"></a>반환 값  
  항상 `E_NOTIMPL`를 반환합니다.  

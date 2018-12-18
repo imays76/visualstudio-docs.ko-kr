@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6fd2cb4ef249e2ff31507058d7572bf6db10e20a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8fa0699363ee0e4c1b0b2d42bfd1a938e28db4af
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121068"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888075"
 ---
 # <a name="idebugthreaddestroyevent2getexitcode"></a>IDebugThreadDestroyEvent2::GetExitCode
 스레드 종료 코드를 가져옵니다.  
@@ -41,10 +41,10 @@ int GetExitCode (
   
 #### <a name="parameters"></a>매개 변수  
  `pdwExit`  
- [out] 스레드 종료 코드를 반환합니다.  
+ [out] 스레드의 종료 코드를 반환합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugThreadDestroyEvent2](../../../extensibility/debugger/reference/idebugthreaddestroyevent2.md)

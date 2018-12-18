@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5b65ec3e0cc4a5b52aa909dea9f3dafa735050c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b7765255583b7160c1cdd19b11889f5de1b35594
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31133571"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926659"
 ---
 # <a name="referencecompare"></a>REFERENCE_COMPARE
-참조에 대 한 비교 유형을 지정합니다.  
+참조에 대 한 비교의 형식을 지정합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -55,7 +55,7 @@ public enum enum_REFERENCE_COMPARE {
  큼 지정-보다 비교 합니다.  
   
 ## <a name="remarks"></a>설명  
- 에 대 한 인수로 전달 되는 [비교](../../../extensibility/debugger/reference/idebugreference2-compare.md) 메서드.  
+ 인수로 전달 된 [비교](../../../extensibility/debugger/reference/idebugreference2-compare.md) 메서드.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  

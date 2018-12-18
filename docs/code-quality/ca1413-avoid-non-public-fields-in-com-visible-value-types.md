@@ -14,16 +14,20 @@ ms.assetid: 1352e7eb-fefc-4239-8847-25edc7804a54
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 11f2badbf6af73367dcdfe90344012704b8de8b4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 060d8ebd26b08ef02a9986846bdab2a25a85072f
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917083"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547908"
 ---
 # <a name="ca1413-avoid-non-public-fields-in-com-visible-value-types"></a>CA1413: ComVisible 값 형식에 public이 아닌 필드를 사용하지 마십시오.
+
 |||
 |-|-|
 |TypeName|AvoidNonpublicFieldsInComVisibleValueTypes|
@@ -32,18 +36,18 @@ ms.locfileid: "31917083"
 |변경 수준|주요 변경|
 
 ## <a name="cause"></a>원인
- 특히 표시 유형 구성 요소 개체 모델 (COM)에 표시 된 값 형식에 public이 아닌 인스턴스 필드를 선언 합니다.
+ 표시 구성 요소 개체 모델 (COM)에 표시 되는 값 형식에 public이 아닌 인스턴스 필드를 선언 합니다.
 
 ## <a name="rule-description"></a>규칙 설명
- public이 아니며 값 형식이 COM에 노출되는 인스턴스 필드는 COM 클라이언트에서 볼 수 있습니다. 노출 되지 않아야, 또는 의도 하지 않은 디자인 또는 보안 영향을 줄 수 있는 정보에 대 한 필드의 내용을 검토 합니다.
+ public이 아니며 값 형식이 COM에 노출되는 인스턴스 필드는 COM 클라이언트에서 볼 수 있습니다. 노출 되지 않아야 합니다 또는 의도 하지 않은 디자인 또는 보안 영향을 줄 수 있는 정보에 대 한 필드의 내용을 검토 합니다.
 
- 모든 공용 값 형식은 기본적으로 COM에 표시 됩니다. 그러나 거짓 긍정을 줄이기 위해이 규칙에서는 명시적으로 지정 되어야 하는 유형의 COM 가시성을 요구 합니다. 포함 하는 어셈블리 표시 되어야 합니다는 <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> 로 설정 `false` 형식으로 표시 해야 하 고는 <xref:System.Runtime.InteropServices.ComVisibleAttribute> 로 설정 `true`합니다.
+ 기본적으로 모든 공용 값 형식은 COM에 표시 됩니다. 그러나 가양성을 줄이기 위해이 규칙에 명시적으로 지정할 형식의 COM 표시를 해야 합니다. 포함 하는 어셈블리 표시 되어야 합니다는 <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> 로 설정 `false` 형식으로 표시 되어야 합니다 및는 <xref:System.Runtime.InteropServices.ComVisibleAttribute> 로 설정 `true`.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이 규칙 위반 문제를 해결 하 고 숨겨진 필드를 유지 하려면 참조 형식에 값 형식을 변경 하거나 제거는 <xref:System.Runtime.InteropServices.ComVisibleAttribute> 유형에 서 특성입니다.
+ 이 규칙 위반 문제를 해결 하 고 숨겨진 필드를 유지 하려면 참조 형식으로 값 형식을 변경 하거나 제거 합니다 <xref:System.Runtime.InteropServices.ComVisibleAttribute> 형식 특성입니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
- 필드의 노출 허용 되는 경우이 규칙에서는 경고를에서 표시 하지 않으려면 안전 합니다.
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
+ 노출 된 필드의 허용 되는 경우이 규칙에서 경고를 표시 하지 않아도 안전 합니다.
 
 ## <a name="example"></a>예제
  다음 예제에서는 규칙을 위반 하는 형식을 보여 줍니다.
@@ -56,5 +60,7 @@ ms.locfileid: "31917083"
 
  [CA1017: 어셈블리를 ComVisibleAttribute로 표시하십시오.](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
-## <a name="see-also"></a>참고 항목
- [비관리 코드와의 상호 운용](/dotnet/framework/interop/index) [상호 운용할.NET 형식의 정규화](/dotnet/framework/interop/qualifying-net-types-for-interoperation)
+## <a name="see-also"></a>참고자료
+
+- [비관리 코드와의 상호 운용](/dotnet/framework/interop/index)
+- [상호 운용할 .NET 형식의 정규화](/dotnet/framework/interop/qualifying-net-types-for-interoperation)

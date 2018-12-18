@@ -1,19 +1,20 @@
 ---
 layout: LandingPage
-title: Visual Studio에서 앱 배포 | Microsoft Docs
+title: 앱 배포 | Microsoft Docs
 description: Visual Studio 2017을 사용하여 응용 프로그램, 서비스 및 구성 요소를 배포하는 방법을 알아봅니다.
+ms.custom: seodec18
 ms.topic: landing-page
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-deployment
 ms.author: mikejo
 author: mikejo5000
 manager: douge
-ms.openlocfilehash: d16a7ced93364ea9143c326c93f448fec577e034
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 04e773afd6fc44e79f01dc4204c851cc4a67c947
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341764"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53053943"
 ---
 # <a name="deployment-in-visual-studio"></a>Visual Studio에서 배포
 
@@ -118,6 +119,42 @@ Visual Studio는 앱을 배포할 수 있는 다양한 도구를 제공합니다
 
 <ul class="panelContent cardsFTitle">
     <li>
+        <a href="/aspnet/core/tutorials/publish-to-azure-webapp-using-vs">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="Deploy ASP.NET to Azure">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Azure에 ASP.NET 배포</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="tutorial-import-publish-settings-iis.md">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="Import publish settings and deploy to IIS">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>게시 설정 가져오기 및 IIS에 ASP.NET 배포</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
         <a href="/dotnet/core/deploying/deploy-with-vs">
         <div class="cardSize">
             <div class="cardPadding">
@@ -154,17 +191,17 @@ Visual Studio는 앱을 배포할 수 있는 다양한 도구를 제공합니다
         </a>
     </li>
     <li>
-        <a href="/aspnet/core/tutorials/publish-to-azure-webapp-using-vs">
+        <a href="tutorial-import-publish-settings-azure.md">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="Deploy ASP.NET to Azure">
+                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="Import publish settings and deploy to Azure App Service">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Azure에 ASP.NET 배포</h3>
+                        <h3>게시 설정 가져오기 및 Azure App Service에 배포</h3>
                     </div>
                 </div>
             </div>
@@ -201,42 +238,6 @@ Visual Studio는 앱을 배포할 수 있는 다양한 도구를 제공합니다
                     </div>
                     <div class="cardText">
                         <h3>Python을 Azure에 배포</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="tutorial-import-publish-settings-azure.md">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="Import publish settings and deploy to Azure App Service">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>게시 설정 가져오기 및 Azure App Service에 배포</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="tutorial-import-publish-settings-iis.md">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="Import publish settings and deploy to IIS">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>게시 설정 가져오기 및 IIS에 배포</h3>
                     </div>
                 </div>
             </div>

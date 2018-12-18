@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7697e241252c1a7d5170fb74c9164556757d3974
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7d4bf445a194a199bf67652d497738aa16c7c680
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458858"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926139"
 ---
 # <a name="idiaframedatagetvirtualaddress"></a>IDiaFrameData::get_virtualAddress
 프레임에 대 한 코드의 가상 주소 (VA)를 검색합니다.  

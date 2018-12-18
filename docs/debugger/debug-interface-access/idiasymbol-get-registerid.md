@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f6a4583206666f90adb90cbebebf9417e66fc78
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0acc6d79e1e5da810e2f2da699df5d4def424df9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480851"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861470"
 ---
 # <a name="idiasymbolgetregisterid"></a>IDiaSymbol::get_registerId
-검색 위치 레지스터 지정자 때는 [LocationType 열거형](../../debugger/debug-interface-access/locationtype.md) 로 설정 된 `LocIsEnregistered`합니다.  
+위치의 등록 지정자 검색 때 합니다 [LocationType 열거형](../../debugger/debug-interface-access/locationtype.md) 로 설정 되어 `LocIsEnregistered`입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -34,16 +34,16 @@ HRESULT get_registerId (
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out] 레지스터 지정자의 위치를 반환합니다.  
+ [out] 위치의 등록 지정자를 반환합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
+ 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
   
 > [!NOTE]
->  반환 값이 `S_FALSE` 속성이 해당 기호를 사용할 수 있음을 의미 합니다.  
+>  반환 값이 `S_FALSE` 속성 기호에 사용할 수 없다는 것을 의미 합니다.  
   
 ## <a name="remarks"></a>설명  
- 기호 이면 레지스터를 기준으로, 즉 경우 기호 [LocationType 열거형](../../debugger/debug-interface-access/locationtype.md) 로 설정 된 `LocIsRegRel`를 사용 하 여는 `get_registerId` 메서드를 호출 하 여 뒤에 [idiasymbol:: Get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md) 오프셋을 가져오는 기호 위치한 등록기 메서드.  
+ 즉, 기호가 레지스터를 기준으로 하는 경우 경우 기호 [LocationType 열거형](../../debugger/debug-interface-access/locationtype.md) 로 설정 된 `LocIsRegRel`를 사용 하 여를 `get_registerId` 메서드를 호출 하 여 여러 번를 [idiasymbol:: Get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md) 기호 위치한 레지스터에서 오프셋을 가져올 메서드.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

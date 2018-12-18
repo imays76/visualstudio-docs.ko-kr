@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09792f951b0cc77d2087904b1dcebc1c9b3b6a06
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 5bd810d0c2f33d4a8ddbffd876357ead7e0e5e7a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513061"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816510"
 ---
 # <a name="command-design"></a>명령 디자인
 VSPackage에 명령을 추가할 때 표시할 경우, 사용 가능한 경우 및 처리 하는 방법 지정 해야 합니다.  
@@ -44,15 +44,15 @@ VSPackage에 명령을 추가할 때 표시할 경우, 사용 가능한 경우 �
 ### <a name="command-organization"></a>명령 조직  
  환경에는 그룹, 우선 순위 및 메뉴 명령을 배치합니다.  
   
--   예를 들어 그룹은의 관련된 명령 논리적 컬렉션의 **잘라내기**를 **복사**, 및 **붙여넣기** 명령 그룹입니다. 그룹은 메뉴에 표시 되는 명령입니다.  
+- 예를 들어 그룹은의 관련된 명령 논리적 컬렉션의 **잘라내기**를 **복사**, 및 **붙여넣기** 명령 그룹입니다. 그룹은 메뉴에 표시 되는 명령입니다.  
   
--   우선 순위 그룹의 개별 명령을 메뉴에 표시 된 순서를 결정 합니다.  
+- 우선 순위 그룹의 개별 명령을 메뉴에 표시 된 순서를 결정 합니다.  
   
--   메뉴 그룹에 대 한 컨테이너로 사용 합니다.  
+- 메뉴 그룹에 대 한 컨테이너로 사용 합니다.  
   
- 환경에서는 일부 명령, 그룹 및 메뉴에 미리 정의 합니다. 자세한 내용은 [기본 명령, 그룹 및 도구 모음 배치](../../extensibility/internals/default-command-group-and-toolbar-placement.md)합니다.  
+  환경에서는 일부 명령, 그룹 및 메뉴에 미리 정의 합니다. 자세한 내용은 [기본 명령, 그룹 및 도구 모음 배치](../../extensibility/internals/default-command-group-and-toolbar-placement.md)합니다.  
   
- 명령 기본 그룹에 할당할 수 있습니다. 기본 그룹 및 주 메뉴 구조의 명령의 위치를 제어 합니다 **사용자 지정** 대화 상자. 명령을 여러 그룹에 나타날 수 있습니다. 예를 들어 주 메뉴, 바로 가기 메뉴 및 도구 모음 명령 수 있습니다. 자세한 내용은 [사용자 인터페이스 요소를 추가 하는 방법: Vspackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)합니다.  
+  명령 기본 그룹에 할당할 수 있습니다. 기본 그룹 및 주 메뉴 구조의 명령의 위치를 제어 합니다 **사용자 지정** 대화 상자. 명령을 여러 그룹에 나타날 수 있습니다. 예를 들어 주 메뉴, 바로 가기 메뉴 및 도구 모음 명령 수 있습니다. 자세한 내용은 [사용자 인터페이스 요소를 추가 하는 방법: Vspackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)합니다.  
   
 ### <a name="command-routing"></a>명령 라우팅  
  호출 하 고 vspackage의 명령 라우팅 프로세스 개체 인스턴스에서 메서드를 호출 하는 프로세스에서 서로 다릅니다.  

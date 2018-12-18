@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 30a19e786894a9722e6843a5c1c69cdf1f038e58
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: e3c090fbcbc1a322574a5b0eca06ce917594348b
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36297818"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896551"
 ---
 # <a name="configure-scenario-start-delays-in-load-tests"></a>부하 테스트에서 시나리오 시작 시간 지연 구성
 
@@ -24,6 +24,8 @@ ms.locfileid: "36297818"
 예를 들어 다른 시나리오에서 사용하는 항목을 만들기 시작할 시나리오가 필요한 경우 **지연 시작 시간** 속성을 사용할 수 있습니다. 항목을 사용하는 시나리오를 지연하여 항목을 만드는 시나리오에 일부 데이터를 만들 시간을 부여할 수 있습니다.
 
 또 다른 예로는 특정 시각에만 실행될 시나리오가 있는 경우를 들 수 있습니다. 시나리오 시작을 지연하여 특정 시간에 시작되도록 만들 수 있습니다.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="specify-the-delay-start-time-of-a-scenario"></a>시나리오의 지연 시작 시간 지정
 

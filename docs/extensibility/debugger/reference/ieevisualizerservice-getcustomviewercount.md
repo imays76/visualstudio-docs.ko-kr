@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2c2b116a27ced7caf41b264017f5ce7766d827d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a53bfccceab5771c0a0f6ac8c609089098625597
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119791"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829991"
 ---
 # <a name="ieevisualizerservicegetcustomviewercount"></a>IEEVisualizerService::GetCustomViewerCount
 이 메서드는이 서비스에서 사용할 수 있는 형식 시각화 도우미의 수를 가져옵니다.  
@@ -41,13 +41,13 @@ int GetCustomViewerCount(
   
 #### <a name="parameters"></a>매개 변수  
  `pcelt`  
- [out] 사용할 수 있는 형식 시각화 도우미의 수를 반환합니다.  
+ [out] 사용 가능한 형식 시각화 도우미를 반환합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) 형식 시각화 도우미에 대 한 지원에서이 메서드를 요청을 전달 합니다.  
+ [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) 형식 시각화 도우미에 대 한이 메서드는 지원에서에 요청을 전달 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)   

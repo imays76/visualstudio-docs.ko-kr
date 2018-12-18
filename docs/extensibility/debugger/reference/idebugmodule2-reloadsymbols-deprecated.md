@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcd383130c1af1765014adfa438482543c336ede
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 09f2e81699683ec49155faceb375da3d636ed4c4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118862"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934043"
 ---
 # <a name="idebugmodule2reloadsymbolsdeprecated"></a>IDebugModule2::ReloadSymbols_Deprecated
-사용되지 않습니다. 사용 하지 마십시오. 이 모듈에 대 한 기호를 다시 로드합니다.  
+사용되지 않습니다. 사용 하지 마세요. 이 모듈의 기호를 다시 로드합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -46,13 +46,13 @@ int ReloadSymbols(
  [in] 기호 저장소에 대 한 경로입니다.  
   
  `pbstrDebugMessage`  
- [out] 예: 모듈 창에서 모듈 이름 오른쪽에 표시 되는 상태 또는 오류 메시지, 정보 메시지를 반환 합니다.  
+ [out] 모듈 창에서 모듈 이름 오른쪽에 표시 되는 상태 또는 오류 메시지와 같은 정보 메시지를 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다. 디버그 엔진 항상 반환 `E_FAIL`합니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다. 디버그 엔진을 항상 반환 `E_FAIL`합니다.  
   
 ## <a name="remarks"></a>설명  
- 이 메서드는 더 이상 지원 됩니다. 구현 된 [LoadSymbols](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md) 메서드 대신 합니다.  
+ 이 메서드는 더 이상 지원 합니다. 구현 된 [LoadSymbols](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md) 메서드 대신 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)   

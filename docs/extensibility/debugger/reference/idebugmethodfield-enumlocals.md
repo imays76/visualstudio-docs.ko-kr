@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8379407a275fa4b89b4107037b2a39691d062dd9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a7983943aaa6680539557f68376d19e1e19580cd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118173"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888244"
 ---
 # <a name="idebugmethodfieldenumlocals"></a>IDebugMethodField::EnumLocals
-메서드의 선택한 지역 변수에 대 한 열거자를 만듭니다.  
+메서드는 선택한 지역 변수에 대 한 열거자를 만듭니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -43,18 +43,18 @@ int EnumLocals(
   
 #### <a name="parameters"></a>매개 변수  
  `pAddress`  
- [in] [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 컨텍스트 또는 지역 변수를 얻을 수 있는 범위를 선택 하는 디버그 주소를 나타내는 개체입니다.  
+ [in] [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 는 컨텍스트 또는 범위의 지역 변수를 선택 하는 디버그 주소를 나타내는 개체입니다.  
   
  `ppLocals`  
- [out] 반환 된 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) 지역 변수 목록을 나타내는 개체입니다; 그렇지 않으면 로컬 항목 없음 없는 경우 null 값을 반환 합니다.  
+ [out] 반환 합니다는 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) 지역 목록을 나타내는 개체;이 고, 그렇지 지역 없는 경우 null 값을 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
  성공 하면 S_OK를 반환 하거나 로컬 항목 없음 없으면 S_FALSE를 반환 합니다. 그러지 않으면 오류 코드가 반환됩니다.  
   
 ## <a name="remarks"></a>설명  
- 지정 된 디버그 주소를 포함 하는 블록 내에 정의 된 변수만 열거 됩니다. 모든 컴파일러에서 생성 된 지역 변수를 포함 하 여 모든 지역, 필요한 경우 호출 된 [EnumAllLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumalllocals.md) 메서드.  
+ 지정 된 디버그 주소를 포함 하는 블록 내에 정의 된 변수만 열거 됩니다. 모든 컴파일러에서 생성 된 지역 변수를 포함 하 여 모든 지역에서 필요한 경우 호출 된 [EnumAllLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumalllocals.md) 메서드.  
   
- 메서드는 컨텍스트 또는 블록에 대 한 여러 범위 지정 포함 될 수 있습니다. 예를 들어 다음 인위적인된 메서드는 세 가지 범위, 두 개의 내부 블록 및 메서드 본문을 포함합니다.  
+ 메서드는 컨텍스트 또는 블록에 대 한 여러 범위를 포함할 수 있습니다. 예를 들어, 다음 가상된 메서드는 세 가지 범위, 두 개의 내부 블록 및 자체 메서드 본문을 포함합니다.  
   
 ```csharp  
 public void func(int index)  
@@ -74,7 +74,7 @@ public void func(int index)
 }  
 ```  
   
- [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) 개체가 나타내는 `func` 메서드 자체입니다. 호출는 `EnumLocals` 사용 하 여 메서드는 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 로 설정는 `Inner Scope 1` 반환 되 고, 포함 하는 열거형은 `temp1` 예를 들어 변수 합니다.  
+ 합니다 [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) 개체가 나타내는 `func` 메서드 자체입니다. 호출를 `EnumLocals` 메서드는 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 로 설정 합니다 `Inner Scope 1` 주소 포함 하는 열거형을 반환 합니다.는 `temp1` 예를 들어 변수.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   

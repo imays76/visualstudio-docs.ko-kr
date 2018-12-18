@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d0cfcda8a48278abd8420e2c23954f5f7a22203
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 44a30929e3d6fbef3fb276fc8b468df4e8e5621c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464627"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878871"
 ---
 # <a name="idiasessionfindlinesbylinenum"></a>IDiaSession::findLinesByLinenum
-컴파일 내에서 위 또는 주변 소스 파일에서 지정 된 줄 수 있는 대상의 줄 번호를 결정 합니다.  
+컴파일 대상에 있는 소스 파일에서 지정 된 줄 번호 또는 근처의 줄 번호를 확인 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -38,28 +38,28 @@ HRESULT findLinesByLinenum (
   
 #### <a name="parameters"></a>매개 변수  
  `compiland`  
- [in] [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 줄 번호에 대 한 검색 하려는 compiland를 나타내는 개체입니다. 이 매개 변수 여야 `NULL`합니다.  
+ [in] [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 컴파일 대상 줄 번호에 대 한 검색을 나타내는 개체입니다. 이 매개 변수 수 없습니다 `NULL`합니다.  
   
  `file`  
- [in] [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) 소스 파일에서 검색을 나타내는 개체입니다. 이 매개 변수 여야 `NULL`합니다.  
+ [in] [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) 소스 파일에서 검색을 나타내는 개체입니다. 이 매개 변수 수 없습니다 `NULL`합니다.  
   
  `linenum`  
  [in] 1부터 시작 줄 번호를 지정합니다.  
   
 > [!NOTE]
->  모든 선을 지정 하려면 0을 사용할 수 없습니다 (사용 하 여는 [idiasession:: Findlines](../../debugger/debug-interface-access/idiasession-findlines.md) 을 모든 줄을 찾는 방법).  
+>  모든 선을 지정 하려면 0을 사용할 수 없습니다 (사용 된 [idiasession:: Findlines](../../debugger/debug-interface-access/idiasession-findlines.md) 모든 줄 찾기 방법).  
   
  `column`  
  [in] 열 번호를 지정합니다. 모든 열을 지정 하려면 0을 사용 합니다. 열이 줄에 대 한 바이트 오프셋입니다.  
   
  `ppResult`  
- [out] 반환 된 [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objta 줄 번호 목록이 포함 된 검색 합니다.  
+ [out] 반환 된 [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objta 줄 번호의 목록을 포함 하는 검색 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제를 소스 파일을 열고이 파일에서 제공한 컴파일 대상 열거, 각 컴파일 대상 하기 시작 하는 소스 파일의 줄 번호를 찾습니다는 방법을 보여 줍니다.  
+ 다음 예제에서는 소스 파일을 열고이 파일에 제공한 컴파일 대상 열거, 각 컴파일 대상 시작 되는 소스 파일의 줄 번호를 찾으려면 하는 방법을 보여 줍니다.  
   
 ```C++  
 void ShowLinesInCompilands(IDiaSession *pSession, LPCOLESTR filename)  

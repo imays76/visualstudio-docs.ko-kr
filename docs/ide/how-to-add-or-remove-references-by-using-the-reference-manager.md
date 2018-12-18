@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 33b9b29cef4ad215e76af57e66c73eb2e8a134db
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3668b5e4275071513deb31e2e479adcd91d11589
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31953838"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839273"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>방법: 참조 관리자를 사용하여 참조 추가 또는 제거
 
@@ -100,7 +100,7 @@ EnvDTE 네임스페이스(<xref:EnvDTE>, <xref:EnvDTE80>, <xref:EnvDTE90>, <xref
 
     새 응용 프로그램을 만들면 기본적으로 일부 프로젝트가 [!INCLUDE[net_v45](../ide/includes/net_v45_md.md)]을 대상으로 합니다.
 
-- 동일한 솔루션에 있는 다른 프로젝트의 출력에 대한 파일 참조를 추가하면 컴파일 오류가 발생할 수 있으므로 이 방법은 사용하지 않는 것이 좋습니다. 대신 **참조 추가** 대화 상자의 **프로젝트** 탭을 사용하여 프로젝트 간 참조를 만듭니다. 이렇게 하면 프로젝트에서 만드는 클래스 라이브러리를 보다 효율적으로 관리할 수 있으므로 개발 팀이 작업하기가 간편해집니다. 자세한 내용은 [끊어진 참조 문제 해결](../ide/troubleshooting-broken-references.md)을 참조하세요.
+동일한 솔루션에 있는 다른 프로젝트의 출력에 대한 파일 참조를 추가하면 컴파일 오류가 발생할 수 있으므로 이 방법은 사용하지 않는 것이 좋습니다. 대신 **참조 추가** 대화 상자의 **프로젝트** 탭을 사용하여 프로젝트 간 참조를 만듭니다. 이렇게 하면 프로젝트에서 만드는 클래스 라이브러리를 보다 효율적으로 관리할 수 있으므로 개발 팀이 작업하기가 간편해집니다. 자세한 내용은 [끊어진 참조 문제 해결](../ide/troubleshooting-broken-references.md)을 참조하세요.
 
 > [!NOTE]
 > Visual Studio 2015 이상에서는 한 프로젝트의 대상 .NET Framework 버전이 버전 4.5 이상이고 다른 프로젝트의 대상 버전이 버전 2, 3, 3.5 또는 4.0인 경우 프로젝트 참조 대신 파일 참조가 만들어집니다.
@@ -109,9 +109,9 @@ EnvDTE 네임스페이스(<xref:EnvDTE>, <xref:EnvDTE80>, <xref:EnvDTE90>, <xref
 
 - 다음 위치 중 하나로 어셈블리를 이동하거나 복사합니다.
 
-    - 현재 프로젝트 디렉터리. 이 어셈블리는 **찾아보기** 탭을 통해 찾을 수 있습니다.
+   - 현재 프로젝트 디렉터리. 이 어셈블리는 **찾아보기** 탭을 통해 찾을 수 있습니다.
 
-    - 같은 솔루션에 있는 다른 프로젝트 디렉터리. 이 어셈블리는 **프로젝트** 탭을 통해 찾을 수 있습니다.
+   - 같은 솔루션에 있는 다른 프로젝트 디렉터리. 이 어셈블리는 **프로젝트** 탭을 통해 찾을 수 있습니다.
 
     \- 또는 -
 
@@ -175,7 +175,7 @@ Windows 8.x Store 앱 프로젝트에는 프로젝트 생성 시 기본적으로
 </PropertyGroup>
 ```
 
-이 하위 그룹의 **Windows** 확인란이 선택되어 있는지 확인합니다. 이 경우 Windows 런타임 요소를 사용할 수 있어야 합니다. 그러나, Windows 런타임 라이브러리에서 사용되는 <xref:System.Collections.IEnumerable>과 같은 일부 표준 클래스 및 인터페이스를 Windows 런타임에서 정의하는 경우, <xref:System.Runtime>도 추가하려 할 수 있습니다. <xref:System.Runtime>을 추가하는 방법은 [관리되는 데스크톱 앱 및 Windows 런타임](http://msdn.microsoft.com/library/windows/apps/jj856306.aspx#consuming_standard_windows_runtime_types)을 참조하세요.
+이 하위 그룹의 **Windows** 확인란이 선택되어 있는지 확인합니다. 이 경우 Windows 런타임 요소를 사용할 수 있어야 합니다. 그러나, Windows 런타임 라이브러리에서 사용되는 <xref:System.Collections.IEnumerable>과 같은 일부 표준 클래스 및 인터페이스를 Windows 런타임에서 정의하는 경우, <xref:System.Runtime>도 추가하려 할 수 있습니다. <xref:System.Runtime>을 추가하는 방법은 [관리되는 데스크톱 앱 및 Windows 런타임](/previous-versions/windows/apps/jj856306(v=win.10)#consuming-standard-windows-runtime-types)을 참조하세요.
 
 ### <a name="extensions-subgroup"></a>확장 하위 그룹
 

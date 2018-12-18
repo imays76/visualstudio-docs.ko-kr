@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b8b0a2a8a1655f18ac7b061575918bcccb3d4931
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 50e7566694b293bf33db88c31085ef9e54f9a802
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458130"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818915"
 ---
 # <a name="idiaenumsegmentsgetcount"></a>IDiaEnumSegments::get_Count
 세그먼트의 수를 검색합니다.  
@@ -37,7 +37,7 @@ HRESULT get_Count (
  [out, retval] 세그먼트의 수를 반환합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)   

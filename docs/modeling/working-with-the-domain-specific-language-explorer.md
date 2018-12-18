@@ -11,15 +11,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 94839efcf8899c288c07de15a362b2c09d9ad13d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7b486cec0808f6d0b98770cf354e27054f27ebdd
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31965163"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966624"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>도메인별 언어 탐색기 작업
-**DSL 탐색기** 트리 보기에서 여러 종류의 정보를 표시 합니다. 대부분의 경우 DSL 탐색기에서 항목에 대 한 자세한 내용은 참조 [도메인 특정 언어를 정의 하는 방법을](../modeling/how-to-define-a-domain-specific-language.md)합니다.
+합니다 **DSL 탐색기** 트리 보기에서 여러 종류의 정보를 표시 합니다. 대부분의 DSL 탐색기에서 항목에 대 한 자세한 내용은 참조 하세요. [도메인별 언어 정의 방법](../modeling/how-to-define-a-domain-specific-language.md)합니다.
 
  DSL 탐색기에는 다음과 같은 노드가 있습니다.
 
@@ -33,16 +33,16 @@ ms.locfileid: "31965163"
 
 -   **도메인 관계**합니다. 모델의 도메인 관계 목록입니다.
 
--   **도메인 유형**합니다. 모델에서 사용되는 기본 제공 형식 및 외부 형식의 목록입니다.
+-   **도메인 형식**합니다. 모델에서 사용되는 기본 제공 형식 및 외부 형식의 목록입니다.
 
--   **편집기**합니다. 목록이 **도구 상자** 탭 및 포함 된 항목 및 모델에 대 한 유효성 검사 설정 합니다. 유효성 검사에 대 한 자세한 내용은 참조 [도메인 특정 언어의 유효성 검사](../modeling/validation-in-a-domain-specific-language.md)합니다.
+-   **편집기**합니다. 목록을 **도구 상자** 탭에 포함 된 항목 및 모델의 유효성 검사 설정 합니다. 유효성 검사에 대 한 자세한 내용은 참조 하세요. [도메인별 언어에서 유효성 검사](../modeling/validation-in-a-domain-specific-language.md)합니다.
 
--   **탐색기 동작**합니다. 생성된 디자이너에서 탐색기의 동작을 지정하는 설정입니다. 탐색기에서 사용자 지정 하는 방법에 대 한 자세한 내용은 참조 [모델 탐색기 사용자 지정](../modeling/customizing-the-model-explorer.md)합니다.
+-   **탐색기 동작**합니다. 생성된 디자이너에서 탐색기의 동작을 지정하는 설정입니다. 탐색기를 사용자 지정 하는 방법에 대 한 자세한 내용은 참조 하세요. [모델 탐색기 사용자 지정](../modeling/customizing-the-model-explorer.md)합니다.
 
 -   **셰이프**합니다. 모델의 모양 다이어그램 요소 목록입니다.
 
--   **Xml Serialization 동작**합니다. 모델의 serialization 설정입니다. Serialization에 대 한 자세한 내용은 참조 [사용자 지정 파일 저장소 및 XML Serialization](../modeling/customizing-file-storage-and-xml-serialization.md)합니다.
+-   **Xml 직렬화 동작**합니다. 모델의 serialization 설정입니다. Serialization에 대 한 자세한 내용은 참조 하세요. [사용자 지정 파일 저장소 및 XML Serialization](../modeling/customizing-file-storage-and-xml-serialization.md)합니다.
 
 ## <a name="see-also"></a>참고 항목
 
-- [도메인 특정 언어 도구 용어집](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

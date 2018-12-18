@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cc61bf41beb2d4bbef62a8a168fd6f7bcacd740a
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: f4510aa820e0f82c2fcd73ccb83ed0f8120a1399
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119525"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296036"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>연습: 서버 탐색기 확장의 SharePoint 클라이언트 개체 모델 호출
   이 연습에 대 한 확장에서 SharePoint 클라이언트 개체 모델을 호출 하는 방법에 설명 합니다 **SharePoint 연결** 노드에서 **서버 탐색기**합니다. SharePoint 클라이언트 개체 모델을 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [SharePoint 개체 모델 호출](../sharepoint/calling-into-the-sharepoint-object-models.md)합니다.  
@@ -44,7 +44,7 @@ ms.locfileid: "37119525"
 ## <a name="prerequisites"></a>전제 조건  
  이 연습을 완료 하려면 개발 컴퓨터의 다음 구성 요소가 필요 합니다.  
   
--   Windows, SharePoint 및 Visual Studio의 버전을 지원 합니다. 자세한 내용은 [SharePoint 솔루션 개발을 위한 요구 사항](../sharepoint/requirements-for-developing-sharepoint-solutions.md)합니다.  
+-   Windows, SharePoint 및 Visual Studio의 버전을 지원 합니다.
   
 -   Visual Studio SDK입니다. 이 연습에서는 합니다 **VSIX 프로젝트** sdk 확장을 배포 하려면 VSIX 패키지를 만드는 템플릿. 자세한 내용은 [Visual Studio에서 SharePoint 도구 확장](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)합니다.  
   
@@ -57,11 +57,11 @@ ms.locfileid: "37119525"
 ## <a name="create-the-projects"></a>프로젝트 만들기
  이 연습을 완료 하려면 두 개의 프로젝트를 만들어야 합니다.  
   
--   VSIX 패키지 배포를 만들려면 VSIX 프로젝트를 **서버 탐색기** 확장 합니다.  
+- VSIX 패키지 배포를 만들려면 VSIX 프로젝트를 **서버 탐색기** 확장 합니다.  
   
--   구현 하는 클래스 라이브러리 프로젝트를 **서버 탐색기** 확장 합니다.  
+- 구현 하는 클래스 라이브러리 프로젝트를 **서버 탐색기** 확장 합니다.  
   
- 프로젝트를 만들어 연습을 시작 합니다.  
+  프로젝트를 만들어 연습을 시작 합니다.  
   
 #### <a name="to-create-the-vsix-project"></a>VSIX 프로젝트를 만들려면  
   
@@ -195,7 +195,7 @@ ms.locfileid: "37119525"
   
 1.  **솔루션 탐색기**를 **WebPartNode** 프로젝트를 열고 **source.extension.vsixmanifest** 매니페스트 편집기에서 파일입니다.  
   
-     Source.extension.vsixmanifest 파일에는 모든 VSIX 패키지 해야 하는 extension.vsixmanifest 파일에 대 한 기반이 됩니다. 이 파일에 대 한 자세한 내용은 참조 하세요. [VSIX 확장 스키마 1.0 참조](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)합니다.  
+     Source.extension.vsixmanifest 파일에는 모든 VSIX 패키지 해야 하는 extension.vsixmanifest 파일에 대 한 기반이 됩니다. 이 파일에 대 한 자세한 내용은 참조 하세요. [VSIX 확장 스키마 1.0 참조](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)합니다.  
   
 2.  에 **Product Name** 상자에 입력 합니다 **서버 탐색기에 대 한 웹 파트 갤러리 노드**합니다.  
   
@@ -208,7 +208,7 @@ ms.locfileid: "37119525"
 6.  에 **새 자산 추가** 대화 상자의 합니다 **형식** 목록에서 선택 **Microsoft.VisualStudio.MefComponent**합니다.  
   
     > [!NOTE]  
-    >  이 값에 해당 하는 `MefComponent` extension.vsixmanifest 파일의 요소입니다. 이 요소는 VSIX 패키지 확장 어셈블리의 이름을 지정합니다. 자세한 내용은 [MEFComponent 요소 (VSX 스키마)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551)합니다.  
+    >  이 값에 해당 하는 `MefComponent` extension.vsixmanifest 파일의 요소입니다. 이 요소는 VSIX 패키지 확장 어셈블리의 이름을 지정합니다. 자세한 내용은 [MEFComponent 요소 (VSX 스키마)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))합니다.  
   
 7.  에 **소스** 목록에서 선택 **현재 솔루션의 프로젝트**합니다.  
   
@@ -287,5 +287,4 @@ ms.locfileid: "37119525"
  [서버 탐색기에서 SharePoint 연결 노드 확장](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [연습: 웹 파트를 표시 하려면 서버 탐색기를 확장 합니다.](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
  [아이콘에 대한 이미지 편집기](/cpp/windows/image-editor-for-icons)   
- [아이콘 또는 다른 이미지 만들기 &#40;아이콘에 대 한 이미지 편집기&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
-  
+ [아이콘 또는 다른 이미지 만들기 &#40;아이콘에 대 한 이미지 편집기&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)

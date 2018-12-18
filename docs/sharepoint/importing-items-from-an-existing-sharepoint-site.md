@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 21ca61f29138aee5a4c22cbf872d6698d4180d50
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 7435d6c7ad210554031994f4a366812f9799ffb2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119488"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832110"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>기존 SharePoint 사이트에서 항목 가져오기
   SharePoint 솔루션 패키지 가져오기 프로젝트 템플릿을 사용하면 기존 SharePoint 사이트에 있는 콘텐츠 형식 및 필드 등의 요소를 새 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 솔루션에서 다시 사용할 수 있습니다. 수정 없이도 가져온 솔루션을 대부분 실행할 수 있지만 몇 가지 제한 및 문제를 고려해야 합니다. 항목을 가져온 후 수정한 경우에는 특히 주의해야 합니다.  
@@ -41,40 +41,40 @@ ms.locfileid: "37119488"
   
  다음 응용 프로그램에서 만들어진 솔루션은[!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] 에서 가져올 수 없습니다.  
   
--   [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)]  
+- [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)]  
   
--   [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)]  
+- [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)]  
   
--   [!INCLUDE[vs_orcas_long](../sharepoint/includes/vs-orcas-long-md.md)]  
+- [!INCLUDE[vs_orcas_long](../sharepoint/includes/vs-orcas-long-md.md)]  
   
--   Microsoft SharePoint Designer 2007  
+- Microsoft SharePoint Designer 2007  
   
--   [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]  
+- [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]  
   
- 이러한 응용 프로그램에서 만든 솔루션을 가져올 수 있는 경우도 있지만 기능이 테스트되지 않아 지원되지 않습니다.  
+  이러한 응용 프로그램에서 만든 솔루션을 가져올 수 있는 경우도 있지만 기능이 테스트되지 않아 지원되지 않습니다.  
   
 ## <a name="item-import-restrictions"></a>항목 가져오기 제한
  기존 대부분의 SharePoint 항목을 가져올 수 있지만 *.wsp* 파일인 다음 항목이 지원 되지 않으며 제대로 작동 하려면 수정 해야 할 수 있습니다.  
   
--   BDC 엔터티  
+- BDC 엔터티  
   
--   코드 워크플로 연결 요소  
+- 코드 워크플로 연결 요소  
   
--   코드 워크플로  
+- 코드 워크플로  
   
--   비주얼 웹 파트(.ascx)  
+- 비주얼 웹 파트(.ascx)  
   
--   웹 서비스 (*.asmx*)  
+- 웹 서비스 (*.asmx*)  
   
--   콘텐츠 형식 바인딩  
+- 콘텐츠 형식 바인딩  
   
--   이벤트 수신자  
+- 이벤트 수신자  
   
--   목록 정의(템플릿)  
+- 목록 정의(템플릿)  
   
--   사이트 정의  
+- 사이트 정의  
   
- 솔루션을 내보내면 [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] 또는 [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)]에서 이러한 항목은 자동으로 제외 합니다 *.wsp* 파일입니다. 그러나 다른 *.wsp* 지원 되지 않는 도구에서 생성 된 파일에는 이러한 항목이 포함 될 수 있습니다. 자세한 내용은 이 항목의 앞부분에 나오는 "지원되는 SharePoint 솔루션"을 참조하세요.  
+  솔루션을 내보내면 [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] 또는 [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)]에서 이러한 항목은 자동으로 제외 합니다 *.wsp* 파일입니다. 그러나 다른 *.wsp* 지원 되지 않는 도구에서 생성 된 파일에는 이러한 항목이 포함 될 수 있습니다. 자세한 내용은 이 항목의 앞부분에 나오는 "지원되는 SharePoint 솔루션"을 참조하세요.  
   
 ## <a name="what-happens-when-you-import-a-solution"></a>솔루션을 가져올 경우
  SharePoint 솔루션 패키지 가져오기 템플릿 사용 하 여 솔루션을 가져올 때 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 모두의 내용을 복사 합니다 *.wsp* 파일 및 조정 하 고 만큼 연결과 간의 참조를 유지 하려고 가져옵니다 요소와 최대한 파일입니다.  
@@ -112,7 +112,7 @@ ms.locfileid: "37119488"
  솔루션을 가져올 때 가져온 기능 매니페스트에서 일부 선택적 기능 특성이 누락됩니다. 새 기능 파일에서 이러한 특성을 복원 하려는 경우 원래 기능 파일과 새 기능 매니페스트를 비교 하 여 누락 된 특성을 식별 하 고 항목의 지침에 따라 [방법: SharePoint 기능사용자지정](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
   
 ## <a name="deployment-conflict-detection-is-not-performed-on-built-in-list-instances"></a>기본 제공 목록 인스턴스에서 배포 충돌 검색이 수행 되지 않습니다.
- [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] (즉, 기본 목록 인스턴스 SharePoint와 함께 제공 되는) 기본 제공 목록 인스턴스에서 배포 충돌 검색을 수행 하지 않습니다. 충돌 검색을 수행하지 않는 이유는 SharePoint의 기본 제공 목록 인스턴스를 덮어쓰지 않기 위해서입니다. 기본 제공 목록 인스턴스는 계속 배포되거나 업데이트되지만 결코 삭제되거나 덮어 쓰이지는 않습니다. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [SharePoint 패키징 및 배포 문제 해결](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)합니다.  
+ [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 는 기본 제공 목록 인스턴스(SharePoint에서 제공하는 기본 목록 인스턴스)에서 배포 충돌 검색을 수행하지 않습니다. 충돌 검색을 수행하지 않는 이유는 SharePoint의 기본 제공 목록 인스턴스를 덮어쓰지 않기 위해서입니다. 기본 제공 목록 인스턴스는 계속 배포되거나 업데이트되지만 결코 삭제되거나 덮어 쓰이지는 않습니다. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [SharePoint 패키징 및 배포 문제 해결](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)합니다.  
   
 ## <a name="import-sharepoint-server-2010-workflows"></a>SharePoint Server 2010 워크플로 가져오기
  [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)]에서 만든 워크플로를 가져오면 배포 후 올바르게 실행되지 않습니다. 그 이유는 특정 어셈블리가 누락되고  [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] 워크플로 솔루션에서 현재 지원되지 않는 InfoPath 양식이 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 워크플로에 포함되었기 때문입니다. 그러나 [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] 어셈블리에 참조를 추가하고 InfoPath 양식에 다시 연결하는 등 일부 항목을 수정하여 가져온 [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] 워크플로가 올바르게 작동하도록 만들 수 있습니다. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [SharePoint Server 2010 워크플로 가져오기](http://go.microsoft.com/fwlink/?LinkId=182226).  

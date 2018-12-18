@@ -1,30 +1,30 @@
 ---
-title: '방법: Visual Studio 용 왕복 확장 | Microsoft Docs'
-ms.custom: ''
+title: 왕복 확장 하는 방법
 ms.date: 06/25/2017
 ms.technology:
 - vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 2d6cf53c-011e-4c9e-9935-417edca8c486
 author: willbrown
-ms.author: willbrown
+ms.author: gregvanl
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: cdbd8703f3aad9a32b2a86efa01ce5922ed64144
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 826089f1018bc6156cd49bab3afb19e7bb34a47d
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498687"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750734"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>방법: 확장을 Visual Studio 2017 및 Visual Studio 2015와 호환 되도록
 
-이 문서에서는 확장성 프로젝트를 Visual Studio 2015와 Visual Studio 2017 간의 왕복 하는 방법을 설명 합니다. 이 업그레이드를 완료 한 후 프로젝트를 열고, 빌드, 설치를 Visual Studio 2015 및 Visual Studio 2017 둘 다에서 실행 됩니다.  참조로 Visual Studio 2015와 Visual Studio 2017 간의 왕복 수 있는 몇 가지 확장을 찾을 수 있습니다 [여기](https://github.com/Microsoft/VSSDK-Extensibility-Samples) Microsoft의 확장성 예제입니다.
+이 문서에서는 확장성 프로젝트를 Visual Studio 2015와 Visual Studio 2017 간의 왕복 하는 방법을 설명 합니다. 이 업그레이드를 완료 한 후 프로젝트를 열고, 빌드, 설치를 Visual Studio 2015 및 Visual Studio 2017 둘 다에서 실행 됩니다. 참조로 Visual Studio 2015와 Visual Studio 2017 간의 왕복 수 있는 일부 확장 프로그램에서 확인할 수 있습니다 합니다 [VS SDK 확장성 샘플](https://github.com/Microsoft/VSSDK-Extensibility-Samples)합니다.
 
 만 Visual Studio 2017에서 빌드 하지만 Visual Studio 2015 및 Visual Studio 2017 둘 다에서 실행 하려면 VSIX 출력 하려는 경우 다음을 참조 합니다 [확장 마이그레이션 문서](how-to-migrate-extensibility-projects-to-visual-studio-2017.md)합니다.
 
->**참고:** Visual Studio의 버전 간에 변경으로 인해 버전에서 작동 되는 몇 가지 사항 작동 하지 것입니다 다른 합니다. 액세스 하려는 기능은 버전 모두에서 사용할 수 있습니다 하거나 확장 해야 예기치 않은 결과입니다.
+> [!NOTE]
+> Visual Studio의 버전 간에 변경으로 인해 다른 버전에서 작동 되는 몇 가지 사항 작동 하지 않습니다. 액세스 하려는 기능은 버전 모두에서 사용할 수 있습니다 하거나 확장 해야 예기치 않은 결과입니다.
 
 라운드트립 VSIX에이 문서의 완료 단계의 개요는 다음과 같습니다.
 
@@ -57,13 +57,13 @@ ms.locfileid: "39498687"
 프로젝트에 포함 된 경우는 *project.json* 파일:
 
 * 에 대 한 참조를 기록해 *project.json*합니다.
-* **솔루션 탐색기**를 삭제 합니다 *project.json* 프로젝트의 파일.
-    * 이 작업을 삭제 합니다는 *project.json* 파일과 프로젝트에서 제거 합니다.
+* **솔루션 탐색기**를 삭제 합니다 *project.json* 프로젝트의 파일. 이 삭제 합니다 *project.json* 파일과 프로젝트에서 제거 합니다.
 * NuGet 참조를 프로젝트에 다시 추가 합니다.
     * 마우스 오른쪽 단추로 클릭 합니다 **솔루션** 선택한 **솔루션용 NuGet 패키지 관리**합니다.
-    * Visual Studio에서 자동으로 만듭니다는 *packages.config* 파일 수
+    * Visual Studio에서 자동으로 만듭니다는 *packages.config* 파일입니다.
 
->**참고:** 프로젝트에서 EnvDTE 패키지에 포함 하는 경우 마우스 오른쪽 단추로 클릭 하 여 추가할 야 할 **참조** 선택 **참조를 추가** 적절 한 참조를 추가 합니다.  NuGet 패키지를 사용 하 여 프로젝트를 빌드하는 동안 오류를 만들 수 있습니다.
+> [!NOTE]
+> 마우스 오른쪽 단추로 클릭 하 여 추가 해야 할 수 프로젝트가 EnvDTE 패키지에 포함 하는 경우 **참조** 선택 **참조 추가** 적절 한 참조를 추가 합니다.  NuGet 패키지를 사용 하 여 프로젝트를 빌드하는 동안 오류를 만들 수 있습니다.
 
 ## <a name="add-appropriate-build-tools"></a>적절 한 빌드 도구 추가
 
@@ -113,7 +113,8 @@ Visual Studio는 VSIX 빌드에 대 한 대상 버전을 지시 해야 합니다
 
 * 파일을 저장한 후 닫습니다.
 
->**참고:** Visual Studio 2017에서 VSIX 디자이너를 사용 하 여이 작업을 수행 하려는 경우 Visual Studio 2017의 모든 버전과 호환 되는지 확인 하는 필수 구성 요소 버전을 수동으로 편집 해야 합니다.  디자이너는 최소 버전 (예를 들어 15.0.26208.0) Visual Studio의 현재 버전으로 삽입 때문입니다.  그러나 다른 사용자가 이전 버전 수 없으므로 수동으로 편집 하려면이를 15.0입니다.
+> [!NOTE]
+> Visual Studio 2017에서 VSIX 디자이너를 사용 하 여이 작업을 수행 하려는 경우 Visual Studio 2017의 모든 버전과 호환 되는지 확인 하는 필수 구성 요소 버전을 수동으로 편집 해야 합니다.  디자이너는 최소 버전 (예를 들어 15.0.26208.0) Visual Studio의 현재 버전으로 삽입 때문입니다.  그러나 다른 사용자가 이전 버전 수 없으므로 수동으로 편집 하려면이를 15.0입니다.
 
 이 시점에서 매니페스트 파일은 다음과 같이 표시 됩니다.
 
@@ -139,7 +140,8 @@ Visual Studio는 VSIX 빌드에 대 한 대상 버전을 지시 해야 합니다
 
 * 다음 태그를 추가 `<VsixType>v3</VsixType>` 속성 그룹입니다.
 
->**참고:** 에 추가 하는 것이 좋습니다. 아래는 `<OutputType></OutputType>` 태그입니다.
+> [!NOTE]
+> 이 추가 하는 것이 좋습니다. 아래는 `<OutputType></OutputType>` 태그입니다.
 
 ### <a name="3-add-the-debugging-properties"></a>3. 디버깅 속성 추가
 
@@ -211,4 +213,5 @@ Visual Studio는 VSIX 빌드에 대 한 대상 버전을 지시 해야 합니다
 
 ![VSIX 찾기](media/finding-a-VSIX-example.png)
 
->**참고:** 메시지와 함께 프로젝트가 응답 하지 않는 경우 **파일을 열어**, Visual Studio를 강제 종료, 프로젝트 디렉터리로 이동, 숨겨진된 폴더를 표시 및 삭제 합니다 *.vs* 폴더입니다.
+> [!NOTE]
+> 메시지와 함께 프로젝트가 응답 하지 않는 경우 **파일을 열어**, Visual Studio를 강제 종료, 프로젝트 디렉터리로 이동, 숨겨진된 폴더를 표시 및 삭제 합니다 *.vs* 폴더입니다.

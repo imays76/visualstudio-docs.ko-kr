@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 코딩된 UI 테스트 만들기
+title: 코딩된 UI 테스트 만들기
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,16 +9,18 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 5fc3d03e42edbfa6ad4e625a1d4c77df2aadab27
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: fe8bed9c1f1f8aee9ae8e6d1ba460bf226d7b818
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382398"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895524"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>연습: 코딩된 UI 테스트 만들기, 편집 및 유지 관리
 
 이 연습에서는 WPF(Windows Presentation Framework) 앱을 테스트하기 위해 코딩된 UI 테스트를 생성, 편집 및 유지 관리하는 방법에 대해 알아봅니다. 이 연습에서는 여러 타이밍 문제 및 컨트롤 리팩터링으로 인해 중단된 테스트를 해결하기 위한 솔루션을 제공합니다.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## <a name="create-a-wpf-app"></a>WPF 앱 만들기
 
@@ -361,7 +363,7 @@ ms.locfileid: "39382398"
 
 ## <a name="faq"></a>FAQ
 
-[코딩된 UI 테스트 FAQ](https://social.msdn.microsoft.com/Forums/en-US/3a74dd2c-cef8-4923-abbf-7a91f489e6c4/faqs?forum=vsautotest)
+[코딩된 UI 테스트 FAQ](https://social.msdn.microsoft.com/Forums/vsautotest/3a74dd2c-cef8-4923-abbf-7a91f489e6c4/faqs)
 
 ## <a name="see-also"></a>참고 항목
 

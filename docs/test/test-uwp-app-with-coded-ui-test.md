@@ -12,16 +12,18 @@ dev_langs:
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: 081c61cb0d5a2db28b04ebdd12fd53713b41363f
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 3dcbd6065d45bf5350b80d555f335d3b8ec1cec7
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34694095"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895966"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>UWP 앱을 테스트하기 위한 코딩된 UI 테스트 만들기
 
 이 문서에서는 UWP(유니버설 Windows 플랫폼) 앱을 위한 코딩된 UI 테스트를 만드는 방법을 설명합니다.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## <a name="create-a-uwp-app-to-test"></a>테스트할 UWP 앱 만들기
 
@@ -128,7 +130,7 @@ ms.locfileid: "34694095"
         Assert.AreEqual(Me.AssertMethod1ExpectedValues.UITextBoxEditText, uITextBoxEdit.Text, "Textbox value is unexpected.")
     End Sub
     ```
-1. 그런 다음, 테스트할 UWP [앱](#create-a-simple-universal-windows-app)의 **AutomationId**를 가져와야 합니다. Windows **시작** 메뉴를 열어 앱의 타일을 확인합니다. 그런 다음, **코딩된 UI 테스트 빌더** 대화 상자에서 십자선 도구 ![대상 아이콘](media/target-icon.png)을 앱의 타일로 끕니다. 파란색 상자가 타일을 둘러싸면 마우스를 놓습니다.
+1. 그런 다음, 테스트할 UWP [앱](#create-a-uwp-app-to-test)의 **AutomationId**를 가져와야 합니다. Windows **시작** 메뉴를 열어 앱의 타일을 확인합니다. 그런 다음, **코딩된 UI 테스트 빌더** 대화 상자에서 십자선 도구 ![대상 아이콘](media/target-icon.png)을 앱의 타일로 끕니다. 파란색 상자가 타일을 둘러싸면 마우스를 놓습니다.
 
    ![십자선 도구](media/cross-hair-tool.png)
 

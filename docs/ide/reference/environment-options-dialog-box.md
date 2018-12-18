@@ -13,22 +13,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 959be2a2f80f215aa3d72a36b8b989e6fa219c3d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 61b2e6461fb80cfd12f76a6e96ac629ce640fa89
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947939"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388769"
 ---
 # <a name="environment-options-dialog-box"></a>옵션 대화 상자, 환경
+
 **옵션** 대화 상자의 **환경** 폴더에 있는 페이지를 사용하여 IDE(통합 개발 환경)에서 특정 요소의 표시 및 작동 방법을 설정할 수 있습니다. 메뉴 모음의 **도구**, **옵션**을 선택한 다음 **환경**을 선택하여 환경 페이지에 액세스할 수 있습니다.
 
-> [!NOTE]
-> 컴퓨터에 나타나는 대화 상자와 메뉴 명령은 활성 설정 및 사용 중인 Visual Studio 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio IDE 개인 설정](../../ide/personalizing-the-visual-studio-ide.md)을 참조하세요.
-
-
 |자세한 방법|보기|
-|----------------------------------|---------|
+| - |---------|
 |IDE의 창, 메뉴 및 기타 요소의 모양과 동작을 사용자 지정합니다.|[옵션 대화 상자, 환경, 일반](../../ide/reference/general-environment-options-dialog-box.md)|
 |파일의 자동 저장 및 복원에 대한 설정을 변경합니다.|[옵션 대화 상자, 환경, 자동 복구](../../ide/reference/autorecover-environment-options-dialog-box.md)|
 |기타 파일의 동작을 포함하여 문서 표시 및 관리 설정을 지정합니다.|[옵션 대화 상자, 환경, 문서](../../ide/reference/documents-environment-options-dialog-box.md)|

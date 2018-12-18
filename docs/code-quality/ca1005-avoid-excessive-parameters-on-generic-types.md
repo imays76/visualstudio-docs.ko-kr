@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 302ecdfaf4c621f0a9a34b0a5cba79ff652990a9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e65427aecb2d4ecc135480d23834fdc07a413b05
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31898040"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850128"
 ---
 # <a name="ca1005-avoid-excessive-parameters-on-generic-types"></a>CA1005: 제네릭 형식에 매개 변수를 너무 많이 사용하지 마십시오.
+
 |||
 |-|-|
 |TypeName|AvoidExcessiveParametersOnGenericTypes|
@@ -32,16 +33,16 @@ ms.locfileid: "31898040"
 |변경 수준|주요 변경|
 
 ## <a name="cause"></a>원인
- 외부에서 볼 수 있는 제네릭 형식이 형식 매개 변수를 두 개 이상의 있습니다.
+ 외부에 표시 되는 제네릭 형식에 두 개 이상의 형식 매개 변수입니다.
 
 ## <a name="rule-description"></a>규칙 설명
- 제네릭 형식에 포함된 형식 매개 변수가 많을수록 각 형식 매개 변수가 무엇을 나타내는지를 파악하거나 기억하기가 더 어렵습니다. 보통은 다음과 같이 하나의 형식 매개 변수 `List<T>`, 고 다음과 같이 두 개의 형식 매개 변수가 있는 일부 경우에 `Dictionary<TKey, TValue>`합니다. 형식 매개 변수가 세 개 이상의 경우는 너무 어렵습니다 대부분의 사용자 (예를 들어 `TooManyTypeParameters<T, K, V>` C# 또는 `TooManyTypeParameters(Of T, K, V)` 에 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
+ 제네릭 형식에 포함된 형식 매개 변수가 많을수록 각 형식 매개 변수가 무엇을 나타내는지를 파악하거나 기억하기가 더 어렵습니다. 것 같이 하나의 형식 매개 변수를 사용 하 여 일반적으로 분명 `List<T>`, 및 에서처럼 두 형식 매개 변수를 사용 하 여 특정 사례에서 `Dictionary<TKey, TValue>`합니다. 두 개 이상의 형식 매개 변수가 하는 경우는 너무 어렵습니다 대부분의 사용자 (예를 들어 `TooManyTypeParameters<T, K, V>` C# 또는 `TooManyTypeParameters(Of T, K, V)` 에서 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이 규칙 위반 문제를 해결 하려면 두 개의 형식 매개 변수를 사용 하도록 디자인을 변경 합니다.
+ 이 규칙 위반 문제를 해결 하려면 두 개의 형식 매개 변수를 사용 하는 디자인을 변경 합니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
- 디자인에 두 개 이상의 형식 매개 변수가 반드시 필요한 경우가 아니면이 규칙에서는 경고를에서 표시 하지 마십시오. 제네릭을 사용 하 고 이해 하기 쉬운 구문 제공 더 많은 사용자가 새 라이브러리 및 학습에 걸리는 시간이 줄어듭니다.
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
+ 디자인 두 개 이상의 형식 매개 변수를 반드시 필요한 경우가 아니라면이 규칙에서 경고를 표시 하지 마십시오. 새 라이브러리의 도입 률을 높이고 학습에 걸리는 시간이 줄어듭니다 제네릭을 이해 및 사용 하기 쉬운 구문 제공 합니다.
 
 ## <a name="related-rules"></a>관련된 규칙
  [CA1010: 컬렉션은 제네릭 인터페이스를 구현해야 합니다.](../code-quality/ca1010-collections-should-implement-generic-interface.md)
@@ -58,5 +59,5 @@ ms.locfileid: "31898040"
 
  [CA1007: 적합한 제네릭을 사용하십시오.](../code-quality/ca1007-use-generics-where-appropriate.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
  [제네릭](/dotnet/csharp/programming-guide/generics/index)

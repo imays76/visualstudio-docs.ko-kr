@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: db35e354b2cfbe91b9c6041dc6239d2dfd2531f8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 087f6c3ce0cbde32bd06a614e562c3d36fc86888
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108945"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927361"
 ---
 # <a name="bplocationtype"></a>BP_LOCATION_TYPE
-중단점 요청에 대 한 중단점의 위치 유형을 지정합니다.  
+중단점 요청에 대 한 중단점 위치 유형을 지정합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -73,53 +73,53 @@ public enum enum_BP_LOCATION_TYPE {
  없는 중단점 위치를 지정합니다.  
   
  BPLT_FILE_LINE  
- 중단점의 위치 유형 파일 선으로 지정합니다.  
+ 파일 줄으로 중단점의 위치 유형을 지정합니다.  
   
  BPLT_FUNC_OFFSET  
- 중단점의 위치 형식을 함수 오프셋으로 지정 합니다.  
+ 중단점 위치 형식 함수 오프셋으로 지정합니다.  
   
  BPLT_CONTEXT  
- 컨텍스트 중단점의 위치 유형을 지정 합니다.  
+ 중단점 위치 유형을 컨텍스트로 지정합니다.  
   
  BPLT_STRING  
- 중단점의 위치 유형에 문자열로 지정합니다.  
+ 중단점 위치 형식의 문자열로 지정합니다.  
   
  BPLT_ADDRESS  
- 중단점의 위치 유형 주소로 지정합니다.  
+ 주소로 중단점의 위치 유형을 지정합니다.  
   
  BPLT_RESOLUTION  
- 오류 위치에 대 한 유형의 중단점을 지정합니다.  
+ 중단점 위치 형식 해상도로 지정합니다.  
   
  BPLT_CODE_FILE_LINE  
- 위치 유형 중단점의 소스 코드의 줄으로 지정합니다.  
+ 소스 코드의 줄으로 중단점의 위치 유형을 지정합니다.  
   
  BPLT_CODE_FUNC_OFFSET  
- 중단점의 위치 형식을 코드 함수 오프셋으로 지정 합니다.  
+ 코드 함수 오프셋으로 중단점의 위치 유형을 지정합니다.  
   
  BPLT_CODE_CONTEXT  
- 코드 컨텍스트 위치에 대 한 유형의 중단점을 지정합니다.  
+ 코드 컨텍스트로 중단점의 위치 유형을 지정합니다.  
   
  BPLT_CODE_STRING  
- 중단점의 위치 유형 코드 문자열로 지정합니다.  
+ 중단점 위치 형식 코드 문자열로 지정합니다.  
   
  BPLT_CODE_ADDRESS  
- 중단점의 위치 유형 코드 주소로 지정합니다.  
+ 중단점 위치 형식 코드 주소로 지정합니다.  
   
  BPLT_DATA_STRING  
- 중단점의 위치 유형 데이터 문자열로 지정합니다.  
+ 중단점 위치 형식 데이터 문자열로 지정합니다.  
   
  BPLT_TYPE_MASK  
- 중단점 형식 값에서 추출할 수 있도록 비트 마스크를 지정 합니다.  
+ 중단점 형식 값에서 추출할 수 있도록 하는 비트 마스크를 지정 합니다.  
   
  BPLT_LOCATION_TYPE_MASK  
  중단점 위치 유형 값에서 추출할 수 있도록 하는 비트 마스크를 지정 합니다.  
   
 ## <a name="remarks"></a>설명  
- 에 대 한 매개 변수로 전달 되는 [GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md) 메서드.  
+ 매개 변수로 전달 된 [GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md) 메서드.  
   
- 중단점 위치 형식 중단점 유형 및 위치 유형으로 구성 됩니다. 즉, 중단점 위치 형식 중단점 형식만 않습니다 (예를 들어 `BPT_CODE`) 또는 위치 유형 (예를 들어 `BPLT_FILE_LINE`). 현재 지원 되는 모든 중단점 위치 유형에 대해 미리 정의 된 상수가이 열거형에 포함 됩니다 (`BPLT_CODE_FILE_LINE` 통해 `BPLT_DATA_STRING`).  
+ 중단점 위치 유형 및 위치 형식이 중단점 형식으로 구성 됩니다. 즉, 중단점 위치 형식 중단점 유형 뿐 되지 (예를 들어 `BPT_CODE`) 또는 위치 형식 (예를 들어 `BPLT_FILE_LINE`). 이 열거형에 포함 된 현재 지원 되는 모든 중단점 위치 형식에 대 한 미리 정의 된 상수 (`BPLT_CODE_FILE_LINE` 를 통해 `BPLT_DATA_STRING`).  
   
- `BPT_CODE` 및 `BPT_DATA` 의 멤버인는 [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) 열거 합니다.  
+ `BPT_CODE` 및 `BPT_DATA` 의 멤버인 합니다 [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) 열거형입니다.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  

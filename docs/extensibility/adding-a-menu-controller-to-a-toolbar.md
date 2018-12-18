@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78ffb4e98ce8589f20d4a0253ce675e546f15ae4
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 93bf6af51488b5609f24c5664dee040ea086c26c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078731"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867264"
 ---
 # <a name="add-a-menu-controller-to-a-toolbar"></a>도구 모음에 메뉴 컨트롤러 추가
 이 연습은 합니다 [도구 창에 도구 모음을 추가](../extensibility/adding-a-toolbar-to-a-tool-window.md) 연습 및 도구 창 도구 모음에 메뉴 컨트롤러를 추가 하는 방법을 보여 줍니다. 여기에 나와 있는 단계도 적용할 수 있습니다에서 만든 도구 모음에는 [도구 모음 추가](../extensibility/adding-a-toolbar.md) 연습 합니다.  
@@ -34,82 +34,82 @@ ms.locfileid: "39078731"
   
 ## <a name="create-a-menu-controller"></a>메뉴 컨트롤러 만들기  
   
-1.  에 설명 된 절차를 따르십시오 [도구 창에 도구 모음 추가](../extensibility/adding-a-toolbar-to-a-tool-window.md) 도구 모음에 있는 도구 창을 만들 수 있습니다.  
+1. 에 설명 된 절차를 따르십시오 [도구 창에 도구 모음 추가](../extensibility/adding-a-toolbar-to-a-tool-window.md) 도구 모음에 있는 도구 창을 만들 수 있습니다.  
   
-2.  *TWTestCommandPackage.vsct*Symbols 섹션으로 이동 합니다. GuidSymbol 요소에서 **guidTWTestCommandPackageCmdSet**, 메뉴 컨트롤러, 메뉴 컨트롤러 그룹과 세 가지 메뉴 항목을 선언 합니다.  
+2. *TWTestCommandPackage.vsct*Symbols 섹션으로 이동 합니다. GuidSymbol 요소에서 **guidTWTestCommandPackageCmdSet**, 메뉴 컨트롤러, 메뉴 컨트롤러 그룹과 세 가지 메뉴 항목을 선언 합니다.  
   
-    ```xml  
-    <IDSymbol name="TestMenuController" value="0x1300" /><IDSymbol name="TestMenuControllerGroup" value="0x1060" /><IDSymbol name="cmdidMCItem1" value="0x0130" /><IDSymbol name="cmdidMCItem2" value="0x0131" /><IDSymbol name="cmdidMCItem3" value="0x0132" />  
-    ```  
+   ```xml  
+   <IDSymbol name="TestMenuController" value="0x1300" /><IDSymbol name="TestMenuControllerGroup" value="0x1060" /><IDSymbol name="cmdidMCItem1" value="0x0130" /><IDSymbol name="cmdidMCItem2" value="0x0131" /><IDSymbol name="cmdidMCItem3" value="0x0132" />  
+   ```  
   
-3.  메뉴 섹션에서 메뉴 항목을 마지막 후 메뉴로 메뉴 컨트롤러를 정의 합니다.  
+3. 메뉴 섹션에서 메뉴 항목을 마지막 후 메뉴로 메뉴 컨트롤러를 정의 합니다.  
   
-    ```xml  
-    <Menu guid="guidTWTestCommandPackageCmdSet" id="TestMenuController" priority="0x0100" type="MenuController">  
-        <Parent guid="guidTWTestCommandPackageCmdSet" id="TWToolbarGroup" />  
-        <CommandFlag>IconAndText</CommandFlag>  
-        <CommandFlag>TextChanges</CommandFlag>  
-        <CommandFlag>TextIsAnchorCommand</CommandFlag>  
-        <Strings>  
-            <ButtonText>Test Menu Controller</ButtonText>  
-            <CommandName>Test Menu Controller</CommandName>  
-        </Strings>  
-    </Menu>  
-    ```  
+   ```xml  
+   <Menu guid="guidTWTestCommandPackageCmdSet" id="TestMenuController" priority="0x0100" type="MenuController">  
+       <Parent guid="guidTWTestCommandPackageCmdSet" id="TWToolbarGroup" />  
+       <CommandFlag>IconAndText</CommandFlag>  
+       <CommandFlag>TextChanges</CommandFlag>  
+       <CommandFlag>TextIsAnchorCommand</CommandFlag>  
+       <Strings>  
+           <ButtonText>Test Menu Controller</ButtonText>  
+           <CommandName>Test Menu Controller</CommandName>  
+       </Strings>  
+   </Menu>  
+   ```  
   
-     합니다 `TextChanges` 고 `TextIsAnchorCommand` 플래그 마지막 선택한 명령에 맞게 메뉴 컨트롤러를 사용 하도록 설정 하려면 포함 되어야 합니다.  
+    합니다 `TextChanges` 고 `TextIsAnchorCommand` 플래그 마지막 선택한 명령에 맞게 메뉴 컨트롤러를 사용 하도록 설정 하려면 포함 되어야 합니다.  
   
-4.  그룹의 마지막 그룹 항목, 다음 섹션의 메뉴 컨트롤러 그룹을 추가 합니다.  
+4. 그룹의 마지막 그룹 항목, 다음 섹션의 메뉴 컨트롤러 그룹을 추가 합니다.  
   
-    ```xml  
-    <Group guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" priority="0x000">  
-        <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuController" />  
-    </Group>  
-    ```  
+   ```xml  
+   <Group guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" priority="0x000">  
+       <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuController" />  
+   </Group>  
+   ```  
   
-     메뉴 컨트롤러 부모로 설정 하면이 그룹에 배치 하는 모든 명령 메뉴 컨트롤러에 나타납니다. `priority` 특성을 생략 하면 기본값인 0으로 설정 하는 메뉴 컨트롤러에서 전용 그룹 이기 때문에 있습니다.  
+    메뉴 컨트롤러 부모로 설정 하면이 그룹에 배치 하는 모든 명령 메뉴 컨트롤러에 나타납니다. `priority` 특성을 생략 하면 기본값인 0으로 설정 하는 메뉴 컨트롤러에서 전용 그룹 이기 때문에 있습니다.  
   
-5.  단추 섹션에서 마지막 단추 항목 후 각 메뉴 항목에 대 한 단추 요소를 추가 합니다.  
+5. 단추 섹션에서 마지막 단추 항목 후 각 메뉴 항목에 대 한 단추 요소를 추가 합니다.  
   
-    ```xml  
-    <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem1" priority="0x0000" type="Button">  
-        <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
-        <Icon guid="guidImages" id="bmpPic1" />  
-        <CommandFlag>IconAndText</CommandFlag>  
-        <Strings>  
-            <ButtonText>MC Item 1</ButtonText>  
-            <CommandName>MC Item 1</CommandName>  
-        </Strings>  
-    </Button>  
-    <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem2" priority="0x0100" type="Button">  
-        <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
-        <Icon guid="guidImages" id="bmpPic2" />  
-        <CommandFlag>IconAndText</CommandFlag>  
-        <Strings>  
-            <ButtonText>MC Item 2</ButtonText>  
-            <CommandName>MC Item 2</CommandName>  
-        </Strings>  
-    </Button>  
-    <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem3" priority="0x0200" type="Button">  
-        <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
-        <Icon guid="guidImages" id="bmpPicSearch" />  
-        <CommandFlag>IconAndText</CommandFlag>  
-        <Strings>  
-            <ButtonText>MC Item 3</ButtonText>  
-            <CommandName>MC Item 3</CommandName>  
-        </Strings>  
-    </Button>  
-    ```  
+   ```xml  
+   <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem1" priority="0x0000" type="Button">  
+       <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
+       <Icon guid="guidImages" id="bmpPic1" />  
+       <CommandFlag>IconAndText</CommandFlag>  
+       <Strings>  
+           <ButtonText>MC Item 1</ButtonText>  
+           <CommandName>MC Item 1</CommandName>  
+       </Strings>  
+   </Button>  
+   <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem2" priority="0x0100" type="Button">  
+       <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
+       <Icon guid="guidImages" id="bmpPic2" />  
+       <CommandFlag>IconAndText</CommandFlag>  
+       <Strings>  
+           <ButtonText>MC Item 2</ButtonText>  
+           <CommandName>MC Item 2</CommandName>  
+       </Strings>  
+   </Button>  
+   <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem3" priority="0x0200" type="Button">  
+       <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
+       <Icon guid="guidImages" id="bmpPicSearch" />  
+       <CommandFlag>IconAndText</CommandFlag>  
+       <Strings>  
+           <ButtonText>MC Item 3</ButtonText>  
+           <CommandName>MC Item 3</CommandName>  
+       </Strings>  
+   </Button>  
+   ```  
   
-6.  이 시점에서 메뉴 컨트롤러를 살펴볼 수 있습니다. 프로젝트를 빌드하고 디버깅을 시작합니다. 실험적 인스턴스를 확인 해야 합니다.  
+6. 이 시점에서 메뉴 컨트롤러를 살펴볼 수 있습니다. 프로젝트를 빌드하고 디버깅을 시작합니다. 실험적 인스턴스를 확인 해야 합니다.  
   
-    1.  에 **보기 / 기타 Windows** 메뉴를 열고 **테스트 ToolWindow**합니다.  
+   1. 에 **보기 / 기타 Windows** 메뉴를 열고 **테스트 ToolWindow**합니다.  
   
-    2.  도구 창의 도구 모음에 메뉴 컨트롤러 표시 됩니다.  
+   2. 도구 창의 도구 모음에 메뉴 컨트롤러 표시 됩니다.  
   
-    3.  세 가지 가능한 명령을 보려면 메뉴 컨트롤러의 오른쪽에 있는 화살표를 클릭 합니다.  
+   3. 세 가지 가능한 명령을 보려면 메뉴 컨트롤러의 오른쪽에 있는 화살표를 클릭 합니다.  
   
-     명령을 클릭 하면 메뉴 컨트롤러 제목의 명령을 표시할 변경 되는지 확인 합니다. 다음 섹션에서는 이러한 명령을 활성화 하는 코드를 추가 합니다.  
+      명령을 클릭 하면 메뉴 컨트롤러 제목의 명령을 표시할 변경 되는지 확인 합니다. 다음 섹션에서는 이러한 명령을 활성화 하는 코드를 추가 합니다.  
   
 ## <a name="implement-the-menu-controller-commands"></a>메뉴 컨트롤러 명령 구현  
   

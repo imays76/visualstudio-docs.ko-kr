@@ -1,8 +1,9 @@
 ---
-title: Visual Studio 오프라인 설치에 필요한 인증서 설치 | Microsoft Docs
+title: 오프라인 설치에 필요한 인증서 설치
 description: Visual Studio 오프라인 설치에 대한 인증서를 설치하는 방법을 알아봅니다.
 ms.date: 08/30/2017
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e7a43ce46bc34ed6341d92833ee066479ca2392b
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: b2d171082e43e822faa1a9fdf9a88ff4de0b7bff
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280444"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53158894"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Visual Studio 오프라인 설치에 필요한 인증서 설치
 
@@ -34,6 +35,8 @@ Visual Studio 설치 엔진은 신뢰할 수 있는 콘텐츠만 설치합니다
 ### <a name="option-1---manually-install-certificates-from-a-layout-folder"></a>옵션 1 - 레이아웃 폴더에서 인증서를 수동으로 설치
 
 네트워크 레이아웃을 만들면 필요한 인증서가 Certificates 폴더에 다운로드됩니다. 그러면 각 인증서 파일을 두 번 클릭하고 인증서 관리자 마법사를 통해 클릭하여 인증서를 수동으로 설치할 수 있습니다. 암호를 묻는 메시지가 표시되면 비워 두세요.
+
+**업데이트**: Visual Studio 2017 버전 15.8 미리 보기 2 이상의 경우, 각 인증서 파일을 마우스 오른쪽 단추로 클릭하고 [인증서 설치]를 선택한 다음, [인증서 관리자] 마법사를 클릭하여 인증서를 수동으로 설치할 수 있습니다.
 
 ### <a name="option-2---distribute-trusted-root-certificates-in-an-enterprise-environment"></a>옵션 2 - 엔터프라이즈 환경에서 신뢰할 수 있는 루트 인증서 배포
 
@@ -60,6 +63,15 @@ Visual Studio 설치 엔진은 신뢰할 수 있는 콘텐츠만 설치합니다
 
    certmgr.exe -add -c certificates\vs_installer_opc.SignCertificates.p12 -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
    ```
+   **업데이트**: Visual Studio 2017 버전 15.8 미리 보기 2 이상의 경우, 다음 명령을 사용하여 일괄 처리 파일을 만듭니다.
+
+   ```cmd
+   certmgr.exe -add [layout path]\certificates\manifestSignCertificates.cer -n "Microsoft Root Certificate Authority 2011" -s -r LocalMachine root
+
+   certmgr.exe -add [layout path]\certificates\manifestCounterSignCertificates.cer -n "Microsoft Root Certificate Authority 2010" -s -r LocalMachine root
+
+   certmgr.exe -add [layout path]\certificates\vs_installer_opc.SignCertificates.cer -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
+   ```
 
 3. 일괄 처리 파일을 클라이언트에 배포합니다. 이 명령은 관리자 권한 프로세스에서 실행되어야 합니다.
 
@@ -68,20 +80,22 @@ Visual Studio 설치 엔진은 신뢰할 수 있는 콘텐츠만 설치합니다
 이 폴더에 있는 세 개의 .P12 파일 각각에는 중간 인증서와 루트 인증서가 포함되어 있습니다. Windows 업데이트로 최신 상태가 유지되는 시스템은 대부분 이러한 인증서가 이미 설치되어 있습니다.
 
 * **ManifestSignCertificates.p12**는 다음을 포함합니다.
-    * 중간 인증서: **Microsoft Code Signing PCA 2011**
+    * 중간 인증서: **Microsoft 코드 서명 PCA 2011**
         * 필요하지 않음. 일부 시나리오(있는 경우)에서 성능을 향상합니다.
-    * 루트 인증서: **Microsoft Root Certificate Authority 2011**
+    * 루트 인증서: **Microsoft 루트 인증 기관 2011**
         * 최신 Windows 업데이트가 설치되지 않은 Windows 7 서비스 팩 1 시스템에 필요합니다.
 * **ManifestCounterSignCertificates.p12**는 다음을 포함합니다.
     * 중간 인증서: **Microsoft Time-Stamp PCA 2010**
         * 필요하지 않음. 일부 시나리오(있는 경우)에서 성능을 향상합니다.
-    * 루트 인증서: **Microsoft Root Certificate Authority 2010**
+    * 루트 인증서: **Microsoft 루트 인증 기관 2010**
         * 최신 Windows 업데이트가 설치되지 않은 Windows 7 서비스 팩 1 시스템에 필요합니다.
 * **Vs_installer_opc.SignCertificates.p12**는 다음을 포함합니다.
-    * 중간 인증서: **Microsoft Code Signing PCA**
+    * 중간 인증서: **Microsoft 코드 서명 PCA**
         * 모든 시스템에 필요합니다. Windows 업데이트의 모든 업데이트가 적용된 시스템에는 이 인증서가 없을 수 있습니다.
-    * 루트 인증서: **Microsoft Root Certificate Authority**
-        * 필수. 이 인증서는 Windows 7 이상을 실행하는 시스템과 함께 제공됩니다.
+    * 루트 인증서: **Microsoft 루트 인증 기관**
+        * 필수 요소. 이 인증서는 Windows 7 이상을 실행하는 시스템과 함께 제공됩니다.
+
+**업데이트**: Visual Studio 2017 버전 15.8 미리 보기 2 이상의 경우, Visual Studio 설치 관리자에서는 시스템에 루트 인증서만 설치해야 합니다.
 
 ## <a name="why-are-the-certificates-from-the-certificates-folder-not-installed-automatically"></a>Certificates 폴더의 인증서가 자동으로 설치되지 않는 이유는 무엇인가요?
 
@@ -113,16 +127,7 @@ Visual Studio 설치 엔진은 신뢰할 수 있는 콘텐츠만 설치합니다
 
 인증서가 설치되면 "Visual Studio의 네트워크 설치 만들기" 페이지에 있는 [네트워크 설치에서 배포](create-a-network-installation-of-visual-studio.md#deploying-from-a-network-installation) 섹션의 지침에 따라 Visual Studio 배포를 진행할 수 있습니다.
 
-## <a name="get-support"></a>지원 받기
-
-때로는 무엇인가 잘못될 수도 있습니다. Visual Studio 설치에 실패하는 경우에는 [Visual Studio 2017 설치 및 업그레이드 문제 해결](troubleshooting-installation-issues.md) 페이지를 참조하세요. 문제 해결 단계가 도움이 되지 않는 경우 라이브 채팅을 통해 Microsoft에 설치 지원을 문의할 수 있습니다(영어만 가능). 자세한 내용은 [Visual Studio 지원 페이지](https://visualstudio.microsoft.com/vs/support/#talktous)를 참조하세요.
-
-몇 가지 추가 지원 옵션은 다음과 같습니다.
-
-* Visual Studio 설치 관리자와 Visual Studio IDE에 모두 표시되는 [문제 보고](../ide/how-to-report-a-problem-with-visual-studio-2017.md) 도구를 통해 Microsoft에 제품 문제를 보고할 수 있습니다.
-* [UserVoice](https://visualstudio.uservoice.com/forums/121579)에서 Microsoft와 제품 제안을 공유할 수 있습니다.
-* [Visual Studio 개발자 커뮤니티](https://developercommunity.visualstudio.com/)에서 제품 문제를 추적하고, 답변을 찾을 수 있습니다.
-* [Gitter 커뮤니티의 Visual Studio 관련 대화](https://gitter.im/Microsoft/VisualStudio)를 통해 Microsoft 및 다른 Visual Studio 개발자와 소통할 수도 있습니다. (이 옵션을 사용하려면 [GitHub](https://github.com/) 계정이 필요합니다.)
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>참고 항목
 

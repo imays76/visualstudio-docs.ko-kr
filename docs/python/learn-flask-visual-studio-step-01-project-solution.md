@@ -1,22 +1,24 @@
 ---
-title: 자습서 - Visual Studio의 Flask 학습, 1단계
-description: Visual Studio 프로젝트의 컨텍스트에서 Flask 기본 사항을 안내합니다.
-ms.date: 06/04/2018
+title: Visual Studio 1단계, Flask 기본 사항에서 Flask 자습서 알아보기
+titleSuffix: ''
+description: 필수 구성 요소, Git 및 가상 환경을 비롯하여 Visual Studio 프로젝트의 컨텍스트에서 Flask 기본 사항을 살펴봅니다.
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f64c603d9902343d83b57d56ab891c7b41d021ae
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 0603c1b8dcabc37631c7a52e11cfa964331010d8
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586406"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066641"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>자습서: Visual Studio에서 Flask 웹 프레임워크 시작
 
@@ -24,7 +26,7 @@ ms.locfileid: "39586406"
 
 Flask는 폼 유효성 검사, 데이터베이스 추상화, 인증 등과 같은 기능을 직접 제공하지 않기 때문에 "마이크로" 프레임워크라고 합니다. 대신 이러한 기능은 Flask *확장*이라는 특별한 Python 패키지를 통해 제공됩니다. 확장은 Flask와 원활하게 통합되어 Flask의 일부인 것처럼 보입니다. 예를 들어 Flask 자체는 페이지 템플릿 엔진을 제공하지 않습니다. 템플레이팅은 이 자습서에서 설명한 대로 Jinja 및 Jade와 같은 확장에서 제공됩니다.
 
-이 자습서에서는 다음 방법을 학습합니다.
+이 자습서에서는 다음과 같은 작업을 수행하는 방법을 살펴봅니다.
 
 > [!div class="checklist"]
 > - “빈 Flask 웹 프로젝트” 템플릿을 사용하여 Git 리포지토리에 기본 Flask 프로젝트 만들기(1단계)
@@ -36,7 +38,7 @@ Flask는 폼 유효성 검사, 데이터베이스 추상화, 인증 등과 같�
 이 단계를 진행하는 동안 세 개의 개별 프로젝트가 포함된 단일 Visual Studio 솔루션을 만듭니다. Visual Studio에 포함된 여러 Flask 프로젝트 템플릿을 사용하여 프로젝트를 만듭니다. 프로젝트를 동일한 솔루션에 유지하면 서로 다른 파일 간에 쉽게 전환하여 비교할 수 있습니다.
 
 > [!Note]
-> 이 자습서는 Flask에 대해 자세히 배우고, 자신의 프로젝트에 보다 광범위한 시작점을 제공하는 여러 Flask 프로젝트 템플릿을 사용하는 방법에 대해 배운다는 점에서 [Flask 빠른 시작](../ide/quickstart-python.md?context=visualstudio/python/default)과 다릅니다. 예를 들어 프로젝트 템플릿은 빠른 시작에 표시된 대로 수동으로 패키지를 설치하지 않고, 프로젝트를 생성할 때 자동으로 Flask 패키지를 설치합니다.
+> 이 자습서는 Flask에 대해 자세히 배우고, 자신의 프로젝트에 보다 광범위한 시작점을 제공하는 여러 Flask 프로젝트 템플릿을 사용하는 방법에 대해 배운다는 점에서 [Flask 빠른 시작](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)과 다릅니다. 예를 들어 프로젝트 템플릿은 빠른 시작에 표시된 대로 수동으로 패키지를 설치하지 않고, 프로젝트를 생성할 때 자동으로 Flask 패키지를 설치합니다.
 
 ## <a name="prerequisites"></a>전제 조건
 
@@ -59,7 +61,7 @@ Flask 프로젝트 템플릿은 Visual Studio용 Python 도구의 모든 이전 
     - **이름**: Visual Studio 프로젝트의 이름을 **BasicProject**로 설정합니다. 이 이름은 Flask 프로젝트에도 사용됩니다.
     - **위치**: Visual Studio 솔루션 및 프로젝트를 만들 위치를 지정합니다.
     - **솔루션 이름**: 이 자습서의 여러 프로젝트에 대한 컨테이너로 솔루션에 적합한 **LearningFlask**로 설정합니다.
-    - **솔루션용 디렉터리 만들기**: 설정된 상태(기본값)로 유지합니다.
+    - **솔루션용 디렉터리 만들기**: 설정을 그대로 둡니다(기본값).
     - **새 Git 리포지토리 만들기**: Visual Studio에서 솔루션을 만들 때 로컬 Git 리포지토리를 만들도록 이 옵션(기본적으로 선택 취소되어 있음)을 선택합니다. 이 옵션이 표시되지 않으면 Visual Studio 2017 설치 프로그램을 실행하고 **코드 도구**의 **개별 구성 요소** 탭에 **Windows용 Git** 및 **Visual Studio용 GitHub 확장**을 추가합니다.
 
 1. 잠시 후 Visual Studio에는 **이 프로젝트에는 외부 패키지가 필요합니다.** 라는 대화 상자가 표시됩니다(아래 표시). 이 대화 상자는 템플릿에 최신 Flask 1.x 패키지를 참조하는 *requirements.txt* 파일이 포함되어 있기 때문에 나타납니다. 정확한 종속성을 확인하려면 **필수 패키지 표시**를 선택하세요.
@@ -95,7 +97,7 @@ Flask 프로젝트 템플릿은 Visual Studio용 Python 도구의 모든 이전 
 
     ![기존 원격 리포지토리에 푸시에 대한 팀 탐색기 창](media/flask/step01-push-to-github.png)
 
-    기존 리포지토리가 없는 경우 **GitHub에 게시** 및 **Visual Studio Team Services에 푸시** 옵션을 사용하여 Visual Studio 내에서 직접 만들 수 있습니다.
+    기존 리포지토리가 없는 경우 **GitHub에 게시** 및 **Azure DevOps에 푸시** 옵션을 사용하여 Visual Studio 내에서 직접 만들 수 있습니다.
 
 1. 이 자습서를 진행하면서 주기적으로 Visual Studio의 컨트롤을 사용하여 변경 내용을 커밋하고 푸시하는 습관을 기르는 것이 좋습니다. 이 자습서에서는 적절한 시점에 알려줍니다.
 
@@ -106,7 +108,7 @@ Flask 프로젝트 템플릿은 Visual Studio용 Python 도구의 모든 이전 
 
 대답: 무엇보다도 처음부터 소스 제어를 사용하면 특히 원격 리포지토리를 사용하는 경우에도 정기적으로 프로젝트를 오프사이트에 백업할 수 있습니다. 로컬 파일 시스템에서만 프로젝트를 유지 관리하는 것과 달리 소스 제어는 단일 파일이나 전체 프로젝트를 이전 상태로 되돌릴 수 있는 간단한 기능과 전체 변경 기록도 제공합니다. 이 변경 기록은 회귀(테스트 실패)의 원인을 확인하는 데 도움이 됩니다. 또한 소스 제어는 여러 명의 사용자가 한 프로젝트에서 작업하는 경우 덮어쓰기를 관리하고 충돌 해결을 제공하기 때문에 꼭 필요합니다. 마지막으로, 기본적으로 자동화 형태인 소스 제어는 빌드, 테스트 및 릴리스 관리를 자동화하는 데 적합합니다. 실제로 프로젝트에 DevOps를 사용하는 첫 번째 단계이며, 진입 장벽이 매우 낮기 때문에 처음부터 소스 제어를 사용하지 않을 이유가 없습니다.
 
-자동화로서 소스 제어에 대한 자세한 내용은 모바일 앱용으로 작성되고 웹앱에도 적용되는 MSDN Magazine의 [The Source of Truth: The Role of Repositories in DevOps](https://msdn.microsoft.com/magazine/mt763232)(정보의 출처: DevOps에서 리포지토리의 역할) 문서를 참조하세요.
+자동화와 같은 소스 제어에 대한 자세한 내용은 [사실의 소스: DevOps의 리포지토리 역할](https://msdn.microsoft.com/magazine/mt763232), 웹앱에도 적용되는 모바일 앱용으로 작성된 MSDN Magazine의 문서를 참조하세요.
 
 ### <a name="question-can-i-prevent-visual-studio-from-auto-committing-a-new-project"></a>질문: Visual Studio에서 새 프로젝트를 자동 커밋하지 않도록 할 수 있나요?
 
@@ -192,11 +194,11 @@ Flask 프로젝트 템플릿은 Visual Studio용 Python 도구의 모든 이전 
 
 ### <a name="question-what-is-the-purpose-of-the-name-argument-to-the-flask-class"></a>질문: Flask 클래스에 대한 __name__ 인수의 용도는 무엇인가요?
 
-답변: 인수는 앱의 모듈 또는 패키지의 이름이며, 템플릿, 정적 파일 및 앱에 속한 기타 리소스를 찾을 수 있는 위치를 Flask에 알려 줍니다. 단일 모듈에 포함된 앱의 경우 `__name__`이 항상 적절한 값입니다. 디버깅 정보가 필요한 확장의 경우에도 중요합니다. 자세한 정보 및 추가 인수는 [Flask 클래스 설명서](http://flask.pocoo.org/docs/1.0/api/#flask.Flask)(flask.pocoo.org)를 참조하세요.
+대답: 인수는 앱의 모듈 또는 패키지의 이름이며, 템플릿, 정적 파일 및 앱에 속한 기타 리소스를 찾을 수 있는 위치를 Flask에 알려줍니다. 단일 모듈에 포함된 앱의 경우 `__name__`이 항상 적절한 값입니다. 디버깅 정보가 필요한 확장의 경우에도 중요합니다. 자세한 정보 및 추가 인수는 [Flask 클래스 설명서](http://flask.pocoo.org/docs/1.0/api/#flask.Flask)(flask.pocoo.org)를 참조하세요.
 
 ### <a name="question-can-a-function-have-more-than-one-route-decorator"></a>질문: 함수에 둘 이상의 경로 데코레이터가 있을 수 있나요?
 
-답변: 예, 동일한 기능이 여러 경로를 제공하는 경우 원하는 만큼 데코레이터를 사용할 수 있습니다. 예를 들어 "/" 및 "/ hello" 둘 다에 `hello` 함수를 사용하려면 다음 코드를 사용합니다.
+대답: 예, 동일한 기능이 여러 경로를 제공하는 경우 원하는 만큼 데코레이터를 사용할 수 있습니다. 예를 들어 "/" 및 "/ hello" 둘 다에 `hello` 함수를 사용하려면 다음 코드를 사용합니다.
 
 ```python
 @app.route('/')
@@ -210,7 +212,7 @@ def hello():
 
 ### <a name="question-how-does-flask-work-with-variable-url-routes-and-query-parameters"></a>질문: Flask는 다양한 URL 경로와 쿼리 매개 변수에서 어떻게 작동하나요?
 
-답변: 경로에서 `<variable_name>`으로 변수를 표시하고, Flask는 명명된 인수를 사용하여 변수를 함수에 전달합니다. 변수는 URL 경로의 일부이거나 쿼리 매개 변수일 수 있습니다. 예를 들어 `'/hello/<name>` 형식의 경로는 함수에 `name`이라는 문자열 인수를 생성하고, 경로에서 `?message=<msg>`를 사용하여 "message=" 쿼리 매개 변수에 지정된 값을 구문 분석하고, 함수에 `msg`로 전달합니다.
+대답: 경로에서 `<variable_name>`으로 변수를 표시하고, Flask는 명명된 인수를 사용하여 변수를 함수에 전달합니다. 변수는 URL 경로의 일부이거나 쿼리 매개 변수일 수 있습니다. 예를 들어 `'/hello/<name>` 형식의 경로는 함수에 `name`이라는 문자열 인수를 생성하고, 경로에서 `?message=<msg>`를 사용하여 "message=" 쿼리 매개 변수에 지정된 값을 구문 분석하고, 함수에 `msg`로 전달합니다.
 
 ```python
 @app.route('/hello/<name>?message=<msg>')

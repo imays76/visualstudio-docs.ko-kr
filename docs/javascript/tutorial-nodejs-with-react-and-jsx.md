@@ -2,7 +2,7 @@
 title: Node.js 및 React 앱 만들기
 description: 이 자습서에서는 Visual Studio용 Node.js 도구를 사용하여 앱을 만듭니다.
 ms.custom: mvc
-ms.date: 05/23/2018
+ms.date: 11/01/2018
 ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
@@ -13,18 +13,18 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f7bb4dfea8e23941e6d9ad29b9760c9e7c85fc5f
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 9203b07767d38443dbad8cc619a40971ca09f2c6
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567144"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750788"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>자습서: Visual Studio에서 Node.js 및 React 앱 만들기
 
 Visual Studio를 사용하면 쉽게 Node.js 프로젝트를 만들고 IntelliSense 및 Node.js를 지원하는 다른 기본 제공 기능을 경험할 수 있습니다. Visual Studio용 이 자습서에서는 Visual Studio 템플릿에서 Node.js 웹 응용 프로그램 프로젝트를 만듭니다. 그런 다음, React를 사용하여 간단한 앱을 만듭니다.
 
-이 자습서에서는 다음 방법을 학습합니다.
+이 자습서에서는 다음과 같은 작업을 수행하는 방법을 살펴봅니다.
 > [!div class="checklist"]
 > * Node.js 프로젝트 만들기
 > * NPM 패키지 추가
@@ -32,11 +32,35 @@ Visual Studio를 사용하면 쉽게 Node.js 프로젝트를 만들고 IntelliSe
 > * JSX 트랜스파일
 > * 디버거 연결
 
+## <a name="before-you-begin"></a>시작하기 전에
+
+다음은 몇 가지 주요 개념을 소개하는 빠른 FAQ입니다.
+
+### <a name="what-is-nodejs"></a>Node.js란?
+
+Node.js는 JavaScript 서버 쪽을 실행하는 서버 쪽 JavaScript 런타임 환경입니다.
+
+### <a name="what-is-npm"></a>npm이란?
+
+npm는 Node.js에 대한 기본 패키지 관리자입니다. 패키지 관리자는 프로그래머가 Node.js 라이브러리의 소스 코드를 쉽게 게시 및 공유하게 하며, 라이브러리의 설치, 업데이트 및 제거를 간소화하도록 설계되었습니다.
+
+### <a name="what-is-react"></a>React란?
+
+React는 UI를 만드는 데 사용되는 프런트 엔드 프레임워크입니다.
+
+### <a name="what-is-jsx"></a>JSX란?
+
+JSX는 일반적으로 UI 요소를 설명하기 위해 React와 함께 사용되는 JavaScript 구문 확장입니다. JSX 코드는 일반 JavaScript로 트랜스파일되어야 브라우저에서 실행할 수 있습니다.
+
+### <a name="what-is-webpack"></a>webpack이란?
+
+webpack은 브라우저에서 실행될 수 있도록 JavaScript 파일을 번들로 제공합니다. 다른 리소스와 자산으로 변환하거나 패키지화할 수도 있습니다. 종종 JSX 또는 TypeScript 코드를 일반 JavaScript로 트랜스파일하도록 Babel 또는 TypeScript 등의 컴파일러를 지정하는 데 사용됩니다.
+
 ## <a name="prerequisites"></a>전제 조건
 
 * Node.js 개발 워크로드와 Visual Studio 2017이 설치되어 있어야 합니다.
 
-    아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 페이지로 이동하여 체험용으로 설치합니다.
+    아직 Visual Studio를 설치하지 않은 경우  [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  페이지로 이동하여 체험용으로 설치합니다.
 
     워크로드를 설치해야 하지만 이미 Visual Studio가 있는 경우 **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual Studio 설치 관리자 열기** 링크를 선택합니다. Visual Studio 설치 관리자가 시작됩니다. **Node.js 개발** 워크로드를 선택한 다음 **수정**을 선택합니다.
 
@@ -62,13 +86,15 @@ Visual Studio를 사용하면 쉽게 Node.js 프로젝트를 만들고 IntelliSe
 
     ![솔루션 탐색기에서 Node.js 프로젝트](../javascript/media/tutorial-nodejs-react-project-structure.png)
 
-    * 굵게 강조 표시된 것은 **새 프로젝트** 대화 상자에서 지정한 이름을 사용하는 프로젝트입니다. 파일 시스템에서 이 프로젝트는 프로젝트 폴더의 *.njsproj* 파일로 표시됩니다. 속성을 마우스 오른쪽 단추로 클릭하고 **속성**을 선택하여 프로젝트와 연결된 환경 변수와 속성을 설정할 수 있습니다. 프로젝트 파일이 Node.js 프로젝트 소스에 사용자 지정 변경을 하지 않으므로 다른 개발 도구와 라운드트립을 수행할 수 있습니다.
+    (1) **bold** 강조 표시된 것은 **새 프로젝트** 대화 상자에서 지정한 이름을 사용하는 프로젝트입니다. 파일 시스템에서 이 프로젝트는 프로젝트 폴더의 *.njsproj* 파일로 표시됩니다. 속성을 마우스 오른쪽 단추로 클릭하고 **속성**을 선택하여 프로젝트와 연결된 환경 변수와 속성을 설정할 수 있습니다. 프로젝트 파일이 Node.js 프로젝트 소스에 사용자 지정 변경을 하지 않으므로 다른 개발 도구와 라운드트립을 수행할 수 있습니다.
 
-    * 최상위 수준은 기본적으로 프로젝트와 이름이 동일한 솔루션입니다. 디스크에서 *.sln* 파일로 표시되는 솔루션은 하나 이상의 관련된 프로젝트에 대한 컨테이너입니다.
+    (2) 최상위 수준은 기본적으로 프로젝트와 이름이 동일한 솔루션입니다. 디스크에서 *.sln* 파일로 표시되는 솔루션은 하나 이상의 관련된 프로젝트에 대한 컨테이너입니다.
 
-    * npm 노드에는 설치된 npm 패키지가 있으면 표시됩니다. npm 노드를 마우스 오른쪽 버튼으로 클릭하고 대화 상자를 사용하여 npm 패키지를 검색하고 설치할 수 있습니다.
+    (3) npm 노드에는 설치된 모든 npm 패키지가 표시됩니다. 대화 상자를 사용하여 npm 패키지를 검색하고 설치하거나 *package.json*에서 설정 및 npm 노드에서 마우스 오른쪽 단추로 클릭 옵션을 사용하여 업데이트 패키지를 설치 및 업데이트하려면 Npm 노드를 마우스 오른쪽 단추로 클릭할 수 있습니다.
 
-    * *server.js*와 같은 프로젝트 파일은 프로젝트 노드 아래 표시됩니다. *server.js*는 프로젝트 시작 파일입니다.
+    (4) *package.json*은 로컬로 설치된 패키지에 대한 패키지 버전 및 종속성을 관리하기 위해 npm에서 사용하는 파일입니다. 이 파일에 대한 자세한 내용은 [package.json configuration](../javascript/configure-packages-with-package-json.md)을 참조하세요.
+
+    (5) *server.js*와 같은 프로젝트 파일은 프로젝트 노드 아래에 표시됩니다. *server.js*는 프로젝트 시작 파일이므로 **굵게** 표시됩니다. 프로젝트에서 파일을 마우스 오른쪽 단추로 클릭하고 **Node.js 시작 파일로 설정**을 선택하여 시작 파일을 설정할 수 있습니다.
 
 ## <a name="add-npm-packages"></a>NPM 패키지 추가
 
@@ -95,22 +121,22 @@ Visual Studio를 사용하면 쉽게 Node.js 프로젝트를 만들고 IntelliSe
 
     프로젝트의 *package.json* 파일은 패키지 버전을 포함하여 새 패키지 정보로 업데이트됩니다.
 
-1. UI를 사용하여 나머지 패키지를 한 번에 하나씩 검색하고 추가하는 대신 package.json에 다음 코드를 붙여넣습니다. 이렇게 하려면 `dependencies` 섹션을 다음 코드로 바꿉니다.
+1. UI를 사용하여 나머지 패키지를 한 번에 하나씩 검색하고 추가하는 대신 *package.json*에 다음 코드를 붙여넣습니다. 이렇게 하려면 다음 코드와 함께 `dependencies` 섹션을 추가합니다.
 
-    ```js
+    ```json
     "dependencies": {
-      "express": "4.16.2",
-      "path": "0.12.7",
-      "react": "16.4.0",
-      "react-dom": "16.4.0",
-      "ts-loader": "4.0.1",
-      "typescript": "2.7.2",
-      "webpack": "4.1.1",
-      "webpack-cli": "2.0.11"
+      "express": "~4.16.4",
+      "path": "~0.12.7",
+      "react": "~16.6.0",
+      "react-dom": "~16.6.0",
+      "ts-loader": "~5.3.0",
+      "typescript": "~3.1.5",
+      "webpack": "~4.23.1",
+      "webpack-cli": "~3.1.2"
     }
     ```
 
-    사용 중인 빈 템플릿 버전에 `dependencies` 섹션이 없는 경우 기존 섹션을 바꾸는 대신 추가해야 합니다.
+    빈 템플릿 버전에 `dependencies` 섹션이 이미 있는 경우는 앞에 나온 JSON 코드로 바꾸기만 하면 됩니다. 이 파일의 사용에 대한 자세한 내용은 [package.json configuration](../javascript/configure-packages-with-package-json.md)을 참조하세요.
 
 1. 프로젝트에서 **npm** 노드를 마우스 오른쪽 단추로 클릭하고 **npm 패키지 업데이트**를 선택합니다.
 
@@ -176,7 +202,7 @@ Visual Studio를 사용하면 쉽게 Node.js 프로젝트를 만들고 IntelliSe
     var React = require('react');
     var ReactDOM = require('react-dom');
 
-    class Hello extends React.Component {
+    export class Hello extends React.Component {
         render() {
             return (
                 <h1>Welcome to React!!</h1>
@@ -270,7 +296,7 @@ Visual Studio를 사용하면 쉽게 Node.js 프로젝트를 만들고 IntelliSe
 
     ![webpack 실행](../javascript/media/tutorial-nodejs-react-run-webpack.png)
 
-    위의 출력 대신 오류를 참조하면 앱이 작동하기 전에 해당 오류를 해결해야 합니다. npm 패키지 버전이이 자습서에 표시된 버전과 다른 경우 오류의 원인이 될수 있습니다. 오류를 수정하는 한 방법은 이전 단계에서 표시된 정확한 버전을 사용하는 것입니다. 또한 이러한 패키지 버전 중 하나 이상이 사용되지 않아 오류를 일으킬 경우 오류를 수정하려면 최신 버전을 설치해야 합니다.
+    위의 출력 대신 오류를 참조하면 앱이 작동하기 전에 해당 오류를 해결해야 합니다. npm 패키지 버전이이 자습서에 표시된 버전과 다른 경우 오류의 원인이 될수 있습니다. 오류를 수정하는 한 방법은 이전 단계에서 표시된 정확한 버전을 사용하는 것입니다. 또한 이러한 패키지 버전 중 하나 이상이 사용되지 않아 오류를 일으킬 경우 오류를 수정하려면 최신 버전을 설치해야 합니다. *package.json*을 사용하여 npm 패키지 버전을 제어하는 방법에 대한 자세한 내용은 [package.json configuration](../javascript/configure-packages-with-package-json.md)을 참조하세요.
 
 1. 솔루션 탐색기에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **추가** > **기존 폴더**를 선택한 다음, *dist* 폴더를 선택하고 **폴더 선택**을 선택합니다.
 
@@ -286,9 +312,11 @@ Visual Studio를 사용하면 쉽게 Node.js 프로젝트를 만들고 IntelliSe
 
 ## <a name="run-the-app"></a>앱 실행
 
-1. 크롬이 현재 디버그 대상으로 선택되었는지 확인 합니다.
+1. 현재 디버그 대상으로 Chrome을 선택합니다.
 
     ![디버그 대상으로 크롬 선택](../javascript/media/tutorial-nodejs-react-debug-target.png)
+
+    머신에서 Chrome을 사용할 수 있지만 옵션으로 표시되지 않는 경우 디버그 대상 드롭다운 목록에서 **브라우저 선택**을 선택하고 기본 브라우저 대상으로 Chrome을 선택합니다(**기본값으로 설정** 선택).
 
 1. 앱을 실행하려면 **F5**(**디버그** > **디버깅 시작**) 키 또는 녹색 화살표 단추를 누릅니다.
 
@@ -326,25 +354,27 @@ Visual Studio를 사용하면 쉽게 Node.js 프로젝트를 만들고 IntelliSe
 
 1. 모든 크롬 창을 닫습니다.
 
-1. Windows **시작** 단추(**실행**을 마우스 오른쪽 단추로 클릭하고 선택)에서 **실행** 명령을 열고 다음 명령을 입력합니다.
+2. Windows **시작** 단추(**실행**을 마우스 오른쪽 단추로 클릭하고 선택)에서 **실행** 명령을 열고 다음 명령을 입력합니다.
 
     `chrome.exe --remote-debugging-port=9222`
 
     디버깅 사용이 설정된 상태로 크롬을 시작합니다.
 
-1. 다음 그림에 표시된 것처럼 Visual Studio로 전환하고 `render()` 기능의 *app-bundle.js* 코드에서 중단점을 설정합니다.
+3. 다음 그림에 표시된 것처럼 Visual Studio로 전환하고 `render()` 기능의 *app-bundle.js* 코드에서 중단점을 설정합니다.
 
     ![중단점 설정](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
-1. Visual Studio에서 디버그 대상으로 선택된 크롬을 사용하여 **Ctrl**+**F5**(**디버그** > **디버깅하지 않고 시작**) 키를 눌러 브라우저에서 앱을 실행합니다.
+    *app-bundle.js*에서 `render()` 함수를 찾으려면 **Ctrl**+**F**를 사용합니다(**편집** > **찾기 및 바꾸기** > **빠른 찾기** 사용).
+
+4. Visual Studio에서 디버그 대상으로 선택된 크롬을 사용하여 **Ctrl**+**F5**(**디버그** > **디버깅하지 않고 시작**) 키를 눌러 브라우저에서 앱을 실행합니다.
 
     앱이 새 브라우저 탭에서 열립니다.
 
-1. **디버그** > **프로세스에 연결**을 선택합니다.
+5. **디버그** > **프로세스에 연결**을 선택합니다.
 
-1. **프로세스에 연결** 대화 상자의 **연결** 필드에서 **Webkit 코드**를 선택하고 필터 상자에 **크롬**을 입력해 검색 결과를 필티링합니다.
+6. **프로세스에 연결** 대화 상자의 **연결** 필드에서 **Webkit 코드**를 선택하고 필터 상자에 **크롬**을 입력해 검색 결과를 필티링합니다.
 
-1. 올바른 호스트 포트(이 예제에서는 1337)를 사용하여 크롬 프로세스를 선택하고 **연결**을 선택합니다.
+7. 올바른 호스트 포트(이 예제에서는 1337)를 사용하여 크롬 프로세스를 선택하고 **연결**을 선택합니다.
 
     ![프로세스에 연결](../javascript/media/tutorial-nodejs-react-attach-to-process.png)
 
@@ -353,20 +383,20 @@ Visual Studio를 사용하면 쉽게 Node.js 프로젝트를 만들고 IntelliSe
     > [!NOTE]
     > 디버거가 연결되지 않고 “프로세스에 연결할 수 없습니다. 작업이 현재 상태에서 잘못되었으므로 디버깅 모드로 Chrome을 시작하기 전에 작업 관리자를 사용하여 Chrome의 모든 인스턴스를 닫습니다. 크롬 확장 프로그램을 실행하여 전체 디버그 모드를 방지할 수 있습니다.
 
-1. 중단점이 있는 코드가 이미 실행됐기 때문에 중단점을 적중하려면 브라우저 페이지를 새로 고치기 합니다.
+8. 중단점이 있는 코드가 이미 실행됐기 때문에 중단점을 적중하려면 브라우저 페이지를 새로 고치기 합니다.
 
     디버거에서 일시 중지된 동안 변수를 가리키고 디버거 창을 사용하여 앱 상태를 검사할 수 있습니다. 단계별 코드 실행(**F5**, **F10** 및 **F11**)으로 디버거로 이동할 수 있습니다 .
 
     환경 및 브라우저 상태에 따라 *app.tsx*에서 매핑된 위치 또는 *app-bundle.js*에서 중단점을 적중할 수 있습니다. 어느 경우든 단계별 코드를 실행하고 변수를 검사할 수 있습니다.
 
-    * *app.tsx*에서 코드를 중단해야 하는데 그럴 수 없는 경우 이전 단계에 설명된 대로 **프로세스에 연결**을 사용하여 디버거를 연결합니다. 그런 다음, **스크립트 문서** > **app.tsx**를 열어 솔루션 탐색기에서 동적으로 생성된 *app.tsx* 파일을 열고, 중단점을 설정하고, 브라우저에서 페이지를 새로 고칩니다(`return` 문 또는 `var` 선언 같은 중단점을 허용하는 코드 줄에서 중단점을 설정합니다).
+   * *app.tsx*에서 코드를 중단해야 하는데 그럴 수 없는 경우 이전 단계에 설명된 대로 **프로세스에 연결**을 사용하여 디버거를 연결합니다. 그런 다음, **스크립트 문서** > **app.tsx**를 열어 솔루션 탐색기에서 동적으로 생성된 *app.tsx* 파일을 열고, 중단점을 설정하고, 브라우저에서 페이지를 새로 고칩니다(`return` 문 또는 `var` 선언 같은 중단점을 허용하는 코드 줄에서 중단점을 설정합니다).
 
-        또는 *app.tsx*에서 코드를 중단해야 하는데 그럴 수 없는 경우 *app.tsx*에서 `debugger;` 문을 사용하거나 대신 Chrome 개발자 도구에서 중단점을 설정합니다.
+       또는 *app.tsx*에서 코드를 중단해야 하는데 그럴 수 없는 경우 *app.tsx*에서 `debugger;` 문을 사용하거나 대신 Chrome 개발자 도구에서 중단점을 설정합니다.
 
-    * *app-bundle.js*에서 코드를 중단해야 하는데 그럴 수 없는 경우 *app-bundle.js.map* 소스 맵 파일을 제거합니다.
+   * *app-bundle.js*에서 코드를 중단해야 하는데 그럴 수 없는 경우 *app-bundle.js.map* 소스 맵 파일을 제거합니다.
 
-    > [!TIP]
-    > 이러한 단계를 수행하여 처음으로 프로세스에 연결할 때 **디버그** > **프로세스에 다시 연결**을 선택하여 Visual Studio 2017에서 동일 프로세스에 신속하게 다시 연결할 수 있습니다.
+     > [!TIP]
+     > 이러한 단계를 수행하여 처음으로 프로세스에 연결할 때 **디버그** > **프로세스에 다시 연결**을 선택하여 Visual Studio 2017에서 동일 프로세스에 신속하게 다시 연결할 수 있습니다.
 
 ## <a name="next-steps"></a>다음 단계
 

@@ -1,17 +1,17 @@
 ---
 title: Mac용 Visual Studio 확장
 description: 확장 패키지라는 모듈을 사용하여 Mac용 Visual Studio의 기능을 확장할 수 있습니다. 이 가이드의 첫 번째 부분에서는 간단한 Mac용 Visual Studio 확장 패키지를 만들어 문서에 날짜와 시간을 삽입합니다. 이 가이드의 두 번째 부분에서는 확장 패키지 시스템의 기본 사항 및 Mac용 Visual Studio의 기초를 형성하는 몇 가지 핵심 API를 소개합니다.
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: eeca19a8724a93c46f832ead0ac16ecda84b70bf
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 8212039cd4f83cd9ea2b53a1050f32ed5dbad367
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178262"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295139"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Mac용 Visual Studio 확장
 
@@ -23,7 +23,7 @@ Mac용 Visual Studio를 사용자 지정하려면 다음 다이어그램과 같�
 
 ![추가 기능 아키텍처](media/extending-visual-studio-mac-addin1.png)
 
-Mac용 Visual Studio에서 확장 패키지를 빌드하려면 Mac용 Visual Studio IDE 내에 기존 확장 지점에서 빌드되는 확장이 있어야 합니다. 확장 패키지가 추가 기능 호스트에 정의된 확장 지점을 사용하는 경우 해당 확장 패키지에 대한 _종속성_이 있다고 합니다.
+Mac용 Visual Studio에서 확장 패키지를 빌드하려면 Mac용 Visual Studio IDE 내에 기존 확장 지점에서 빌드되는 확장이 있어야 합니다. 확장 패키지가 추가 기능 호스트에서 정의된 확장 지점을 사용하는 경우 해당 확장 패키지에 대한  _종속성_ 이 있다고 합니다.
 
 이 모듈식 디자인의 이점은 Mac용 Visual Studio를 확장할 수 있다는 것입니다. 사용자 지정 확장 패키지로 빌드할 수 있는 많은 확장 지점이 있습니다. 현재 확장 패키지의 예로 C# 및 F# 지원, 디버거 도구, 프로젝트 템플릿 등이 있습니다.
 
@@ -52,13 +52,13 @@ Mac용 Visual Studio에서 확장 패키지를 빌드하려면 Mac용 Visual Stu
 
 ![날짜 삽입 스크린샷](media/extending-visual-studio-mac-addin13.png)
 
-해당 `assembly:AddinDependency ` 특성도 빌드 시간에 추가됩니다. 메타데이터 및 종속성 선언이 구현되고 나면 확장 패키지의 필수 구성 요소에 집중할 수 있습니다.
+해당 `assembly:AddinDependency` 특성도 빌드 시간에 추가됩니다. 메타데이터 및 종속성 선언이 구현되고 나면 확장 패키지의 필수 구성 요소에 집중할 수 있습니다.
 
 ## <a name="extensions-and-extension-points"></a>확장 및 확장 지점
 
-확장 지점은 데이터 구조(형식)를 정의하는 자리 표시자인 반면, 확장은 특정 확장 지점에서 지정된 구조에 맞는 데이터를 정의합니다. 확장 지점은 해당 선언에서 허용할 수 있는 확장 형식을 지정합니다. 확장은 형식 이름 또는 확장 경로를 사용하여 선언됩니다. 필요한 확장 지점을 만드는 방법에 대한 자세한 내용은 [확장 지점 참조](http://monoaddins.codeplex.com/wikipage?title=Extension%20Points&referringTitle=Description%20of%20Add-ins%20and%20Add-in%20Roots)를 참조하세요.
+확장 지점은 데이터 구조(형식)를 정의하는 자리 표시자인 반면, 확장은 특정 확장 지점에서 지정된 구조에 맞는 데이터를 정의합니다. 확장 지점은 해당 선언에서 허용할 수 있는 확장 형식을 지정합니다. 확장은 형식 이름 또는 확장 경로를 사용하여 선언됩니다. 필요한 확장 지점을 만드는 방법에 대한 자세한 내용은 [확장 지점 참조](https://github.com/mono/mono-addins/wiki/Extension-Points)를 참조하세요.
 
-확장/확장 지점 아키텍처를 통해 Mac용 Visual Studio 개발이 신속한 모듈식 개발로 유지됩니다. 
+확장/확장 지점 아키텍처를 통해 Mac용 Visual Studio 개발이 신속한 모듈식 개발로 유지됩니다.
 
 <!--Since there are a large number of extension types, this article focuses on the ones used in the extension package that was built in the [Walkthrough](~/extending-visual-studio-mac-walkthrough.md).-->
 
@@ -162,4 +162,8 @@ public enum DateInserterCommands
 ## <a name="additional-information"></a>추가 정보
 
 > [!NOTE]
-Mac용 Visual Studio용 확장 시나리오 개선을 위해 현재 작업 중입니다. 확장을 만들고 있으며 추가 도움 또는 정보가 필요하거나 피드백을 제공하려는 경우 [Mac용 Visual Studio 확장 제작](https://aka.ms/vsmac-extensions-survey) 양식을 작성해 주세요.
+> Mac용 Visual Studio용 확장 시나리오 개선을 위해 현재 작업 중입니다. 확장을 만들고 있으며 추가 도움 또는 정보가 필요하거나 피드백을 제공하려는 경우 [Mac용 Visual Studio 확장 제작](https://aka.ms/vsmac-extensions-survey) 양식을 작성해 주세요.
+
+## <a name="see-also"></a>참고 항목
+
+- [Visual Studio 확장 개발(Windows에서)](/visualstudio/extensibility/starting-to-develop-visual-studio-extensions)

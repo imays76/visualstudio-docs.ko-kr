@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: db34be21836e4c317c5ad70c6874b21081da931d
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 56088e45af5ed45b3a303ffc99679e77b51f56ae
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498982"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826520"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>FAQ: VSPackage 확장으로 추가 기능 변환
 추가 기능은 이제 사용되지 않습니다. 새 Visual Studio 확장을 하려면 VSIX 확장 프로그램을 만드는 해야 합니다. 다음은 Visual Studio 추가 기능에서 VSIX 확장을 변환 하는 방법에 대 한 일부 자주 묻는 질문에 대 한 답변입니다.  
@@ -58,94 +58,94 @@ ms.locfileid: "39498982"
 ##  <a name="BKMK_RunAddin"></a> VSPackage에서 추가 기능에서 코드를 실행할 수는 방법  
  추가 기능 코드는 보통 두 가지 방법 중 하나로 실행됩니다.  
   
--   메뉴 명령에 의해 트리거된 (코드는 `IDTCommandTarget.Exec` 메서드.)  
+- 메뉴 명령에 의해 트리거된 (코드는 `IDTCommandTarget.Exec` 메서드.)  
   
--   시작 시 자동으로 실행. 코드는 `OnConnection` 이벤트 처리기에 포함되어 있습니다.  
+- 시작 시 자동으로 실행. 코드는 `OnConnection` 이벤트 처리기에 포함되어 있습니다.  
   
- VSPackage에서도 같은 방식을 사용할 수 있습니다. 콜백 메서드에 일부 추가 기능 코드를 추가하는 방법은 다음과 같습니다.  
+  VSPackage에서도 같은 방식을 사용할 수 있습니다. 콜백 메서드에 일부 추가 기능 코드를 추가하는 방법은 다음과 같습니다.  
   
 ### <a name="to-implement-a-menu-command-in-a-vspackage"></a>VSPackage에서 메뉴 명령을 구현하려면  
   
-1.  메뉴 명령이 포함된 VSPackage를 만듭니다. (자세한 내용은 [메뉴 명령을 사용 하 여 확장 프로그램을 만들려면](../extensibility/creating-an-extension-with-a-menu-command.md).)  
+1. 메뉴 명령이 포함된 VSPackage를 만듭니다. (자세한 내용은 [메뉴 명령을 사용 하 여 확장 프로그램을 만들려면](../extensibility/creating-an-extension-with-a-menu-command.md).)  
   
-2.  VSPackage 정의가 포함된 파일을 엽니다. (C# 프로젝트에서 있기  *\<프로젝트 이름 > Package.cs*.)  
+2. VSPackage 정의가 포함된 파일을 엽니다. (C# 프로젝트에서 있기  *\<프로젝트 이름 > Package.cs*.)  
   
-3.  파일에 다음 `using` 문을 추가합니다.  
+3. 파일에 다음 `using` 문을 추가합니다.  
   
-    ```csharp  
-    using EnvDTE;  
-    using EnvDTE80;  
-    ```  
+   ```csharp  
+   using EnvDTE;  
+   using EnvDTE80;  
+   ```  
   
-4.  `MenuItemCallback` 메서드를 찾습니다. <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 호출을 추가하여 <xref:EnvDTE80.DTE2> 개체를 가져옵니다.  
+4. `MenuItemCallback` 메서드를 찾습니다. <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 호출을 추가하여 <xref:EnvDTE80.DTE2> 개체를 가져옵니다.  
   
-    ```csharp  
-    DTE2 dte = (DTE2)GetService(typeof(DTE));  
-    ```  
+   ```csharp  
+   DTE2 dte = (DTE2)GetService(typeof(DTE));  
+   ```  
   
-5.  추가 기능의 `IDTCommandTarget.Exec` 메서드에 포함되어 있었던 코드를 추가합니다. 예를 들어, 다음은에 새 창을 추가 하는 코드를 **출력** 창 고 새 창에서 출력 "Some Text"입니다.  
+5. 추가 기능의 `IDTCommandTarget.Exec` 메서드에 포함되어 있었던 코드를 추가합니다. 예를 들어, 다음은에 새 창을 추가 하는 코드를 **출력** 창 고 새 창에서 출력 "Some Text"입니다.  
   
-    ```csharp  
-    private void MenuItemCallback(object sender, EventArgs e)  
-    {  
-        DTE2 dte = (DTE2) GetService(typeof(DTE));  
-        OutputWindow outputWindow = dte.ToolWindows.OutputWindow;  
+   ```csharp  
+   private void MenuItemCallback(object sender, EventArgs e)  
+   {  
+       DTE2 dte = (DTE2) GetService(typeof(DTE));  
+       OutputWindow outputWindow = dte.ToolWindows.OutputWindow;  
   
-        OutputWindowPane outputWindowPane = outputWindow.OutputWindowPanes.Add("A New Pane");  
-        outputWindowPane.OutputString("Some Text");  
-    }  
+       OutputWindowPane outputWindowPane = outputWindow.OutputWindowPanes.Add("A New Pane");  
+       outputWindowPane.OutputString("Some Text");  
+   }  
   
-    ```  
+   ```  
   
-6.  이 프로젝트를 빌드하고 실행합니다. 키를 눌러 **F5** 누르거나 **시작** 에 **디버그** 도구 모음. Visual Studio의 실험적 인스턴스에서 **도구** 메뉴 단추가 있어야 **내 명령 이름**합니다. 단어가이 단추를 선택 하는 경우 **Some Text** 에 표시 됩니다는 **출력** 창 선택 합니다. (열어야 할 수도 합니다 **출력** 창입니다.)  
+6. 이 프로젝트를 빌드하고 실행합니다. 키를 눌러 **F5** 누르거나 **시작** 에 **디버그** 도구 모음. Visual Studio의 실험적 인스턴스에서 **도구** 메뉴 단추가 있어야 **내 명령 이름**합니다. 단어가이 단추를 선택 하는 경우 **Some Text** 에 표시 됩니다는 **출력** 창 선택 합니다. (열어야 할 수도 합니다 **출력** 창입니다.)  
   
- 시작 시 코드가 실행되도록 할 수도 있습니다. 그러나 일반적으로 VSPackage 확장에는 이 방식을 사용하지 않는 것이 좋습니다. Visual Studio 시작 시 너무 많은 확장이 로드되면 시작 시간이 현저하게 길어질 수 있습니다. 따라서 솔루션을 열 때와 같이 일부 조건이 충족되는 경우에만 VSPackage를 자동으로 로드하는 것이 보다 효율적입니다.  
+   시작 시 코드가 실행되도록 할 수도 있습니다. 그러나 일반적으로 VSPackage 확장에는 이 방식을 사용하지 않는 것이 좋습니다. Visual Studio 시작 시 너무 많은 확장이 로드되면 시작 시간이 현저하게 길어질 수 있습니다. 따라서 솔루션을 열 때와 같이 일부 조건이 충족되는 경우에만 VSPackage를 자동으로 로드하는 것이 보다 효율적입니다.  
   
- 아래 절차에서는 솔루션을 열 때 자동으로 로드되는 VSPackage의 추가 기능 코드를 실행하는 방법을 보여줍니다.  
+   아래 절차에서는 솔루션을 열 때 자동으로 로드되는 VSPackage의 추가 기능 코드를 실행하는 방법을 보여줍니다.  
   
 ### <a name="to-autoload-a-vspackage"></a>VSPackage를 자동 로드하려면  
   
-1.  Visual Studio 패키지 프로젝트 항목과 VSIX 프로젝트를 만듭니다. (이 작업을 수행 하는 단계를 참조 하세요 [VSIX 확장 개발은 어떻게 시작 하나요?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping)합니다. 추가 된 **Visual Studio 패키지** 대신 프로젝트 항목입니다.) VSIX 프로젝트 이름을 **testautoload로**합니다.  
+1. Visual Studio 패키지 프로젝트 항목과 VSIX 프로젝트를 만듭니다. (이 작업을 수행 하는 단계를 참조 하세요 [VSIX 확장 개발은 어떻게 시작 하나요?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping)합니다. 추가 된 **Visual Studio 패키지** 대신 프로젝트 항목입니다.) VSIX 프로젝트 이름을 **testautoload로**합니다.  
   
-2.  오픈 *TestAutoloadPackage.cs*합니다. 패키지 클래스가 선언된 줄을 찾습니다.  
+2. 오픈 *TestAutoloadPackage.cs*합니다. 패키지 클래스가 선언된 줄을 찾습니다.  
   
-    ```csharp  
-    public sealed class <name of your package>Package : Package  
-    ```  
+   ```csharp  
+   public sealed class <name of your package>Package : Package  
+   ```  
   
-3.  이 줄 위에는 특성 집합이 있습니다. 다음 특성을 추가합니다.  
+3. 이 줄 위에는 특성 집합이 있습니다. 다음 특성을 추가합니다.  
   
-    ```csharp  
-    [ProvideAutoLoad(UIContextGuids80.SolutionExists)]  
-    ```  
+   ```csharp  
+   [ProvideAutoLoad(UIContextGuids80.SolutionExists)]  
+   ```  
   
-4.  중단점을 설정 합니다 `Initialize()` 메서드 및 디버깅을 시작 (**F5**).  
+4. 중단점을 설정 합니다 `Initialize()` 메서드 및 디버깅을 시작 (**F5**).  
   
-5.  실험적 인스턴스에서 프로젝트를 엽니다. VSPackage가 로드되고 중단점에 도달합니다.  
+5. 실험적 인스턴스에서 프로젝트를 엽니다. VSPackage가 로드되고 중단점에 도달합니다.  
   
- <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80>의 필드를 사용하여 VSPackage를 로드할 다른 컨텍스트를 지정할 수 있습니다. 자세한 내용은 [부하 Vspackage](../extensibility/loading-vspackages.md)합니다.  
+   <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80>의 필드를 사용하여 VSPackage를 로드할 다른 컨텍스트를 지정할 수 있습니다. 자세한 내용은 [부하 Vspackage](../extensibility/loading-vspackages.md)합니다.  
   
 ## <a name="how-can-i-get-the-dte-object"></a>DTE 개체는 어떻게 가져오나요?  
  추가 기능에 메뉴 명령, 도구 모음 단추, 도구 창 등의 UI가 표시되지 않는 경우 VSPackage에서 DTE 자동화 개체를 가져오면 코드를 그대로 사용할 수 있습니다. 방법은 다음과 같습니다.  
   
 ### <a name="to-get-the-dte-object-from-a-vspackage"></a>VSPackage에서 DTE 개체를 가져오려면  
   
-1.  Visual Studio 패키지 항목 템플릿 사용 하 여 VSIX 프로젝트에서 찾습니다 합니다  *\<프로젝트 이름 > Package.cs* 파일입니다. 이 파일은 <xref:Microsoft.VisualStudio.Shell.Package>에서 파생되는 클래스로, Visual Studio와 상호 작용하는 데 사용할 수 있습니다. 여기서는 해당 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A>를 사용하여 <xref:EnvDTE80.DTE2> 개체를 가져옵니다.  
+1. Visual Studio 패키지 항목 템플릿 사용 하 여 VSIX 프로젝트에서 찾습니다 합니다  *\<프로젝트 이름 > Package.cs* 파일입니다. 이 파일은 <xref:Microsoft.VisualStudio.Shell.Package>에서 파생되는 클래스로, Visual Studio와 상호 작용하는 데 사용할 수 있습니다. 여기서는 해당 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A>를 사용하여 <xref:EnvDTE80.DTE2> 개체를 가져옵니다.  
   
-2.  다음 `using` 문을 추가합니다.  
+2. 다음 `using` 문을 추가합니다.  
   
-    ```csharp  
-    using EnvDTE;  
-    using EnvDTE80;  
-    ```  
+   ```csharp  
+   using EnvDTE;  
+   using EnvDTE80;  
+   ```  
   
-3.  `Initialize` 메서드를 찾습니다. 이 메서드는 패키지 마법사에서 지정한 명령을 처리합니다. <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 호출을 추가하여 DTE 개체를 가져옵니다.  
+3. `Initialize` 메서드를 찾습니다. 이 메서드는 패키지 마법사에서 지정한 명령을 처리합니다. <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 호출을 추가하여 DTE 개체를 가져옵니다.  
   
-    ```csharp  
-    DTE dte = (DTE)GetService(typeof(DTE));  
-    ```  
+   ```csharp  
+   DTE dte = (DTE)GetService(typeof(DTE));  
+   ```  
   
- <xref:EnvDTE.DTE> 자동화 개체를 가져온 후에는 추가 기능 코드의 나머지 부분을 프로젝트에 추가할 수 있습니다. <xref:EnvDTE80.DTE2> 개체가 필요한 경우에도 같은 작업을 수행하면 됩니다.  
+   <xref:EnvDTE.DTE> 자동화 개체를 가져온 후에는 추가 기능 코드의 나머지 부분을 프로젝트에 추가할 수 있습니다. <xref:EnvDTE80.DTE2> 개체가 필요한 경우에도 같은 작업을 수행하면 됩니다.  
   
 ## <a name="how-do-i-change-menu-commands-and-toolbar-buttons-in-my-add-in-to-the-vspackage-style"></a>추가 기능의 메뉴 명령 및 도구 모음 단추를 VSPackage 스타일로 변경하려면 어떻게 하나요?  
  VSPackage 확장 사용은 *.vsct* 대부분의 메뉴 명령, 도구 모음, 도구 모음 단추 및 다른 UI를 만들려는 파일입니다. **사용자 지정 명령** 프로젝트 항목 템플릿을에 명령을 만드는 옵션을 제공 합니다 **도구** 메뉴. 자세한 내용은 [메뉴 명령을 사용 하 여 확장 프로그램을 만들려면](../extensibility/creating-an-extension-with-a-menu-command.md)합니다.  

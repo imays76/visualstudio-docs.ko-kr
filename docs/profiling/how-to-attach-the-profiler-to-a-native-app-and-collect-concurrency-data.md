@@ -1,6 +1,6 @@
 ---
-title: '방법: 명령줄을 통해 네이티브 독립 실행형 응용 프로그램에 프로파일러를 연결하여 동시성 데이터 수집 | Microsoft 문서'
-ms.custom: ''
+title: 프로파일러를 네이티브 앱에 연결하여 동시성 데이터 수집
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d71a5eaaf37b5707ef8722399d33e96f1259e4f0
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: ef2c5a7cbd21cba8b60944c2e3f45e4af05e630a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39277828"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067047"
 ---
-# <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line"></a>방법: 명령줄을 통해 네이티브 독립 실행형 응용 프로그램에 프로파일러를 연결하여 동시성 데이터 수집
+# <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line"></a>방법: 명령줄을 통해 네이티브 독립 실행형 애플리케이션에 프로파일러를 연결하여 동시성 데이터 수집
 이 문서에서는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구 명령줄 도구를 사용하여 프로파일러를 실행 중인 네이티브(C/C++) 독립 실행형 응용 프로그램에 연결하고 스레드 경합 데이터를 수집하는 방법을 설명합니다.  
   
 > [!NOTE]

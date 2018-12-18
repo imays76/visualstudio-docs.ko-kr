@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 29592f7956177a4894967d7f393605a54f7ec07b
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 67b80eb48129fb989822e28bcb0ac0e330c426bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513163"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828433"
 ---
 # <a name="vspackage-registration"></a>VSPackage 등록
 Vspackage advise 해야 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 는 설치 되 고 해야 로드할 수 있습니다. 이 프로세스는 레지스트리에서 정보를 작성 하 여 수행 됩니다. 설치 관리자의 일반적인 작업입니다.  
@@ -48,16 +48,16 @@ Vspackage advise 해야 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.
   
  이론상에서 좋지만 자체 등록에 VSPackage 설치에 적합 하는 여러 결점이 있습니다.  
   
--   올바르게 설치, 제거, 설치 롤백 및 제거 rollback을 지원 하려면 자체 RegPkg를 호출 하 여 등록 하는 모든 관리 되는 VSPackage에 대 한 네 가지 사용자 지정 작업을 작성 해야 합니다.  
+- 올바르게 설치, 제거, 설치 롤백 및 제거 rollback을 지원 하려면 자체 RegPkg를 호출 하 여 등록 하는 모든 관리 되는 VSPackage에 대 한 네 가지 사용자 지정 작업을 작성 해야 합니다.  
   
--   네 번째 사용자 지정 작업 RegSvr32 또는 RegPkg의 지원 되는 모든 버전에 대 한 호출을 만든 side-by-side-지원 접근 필요할 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]합니다.  
+- 네 번째 사용자 지정 작업 RegSvr32 또는 RegPkg의 지원 되는 모든 버전에 대 한 호출을 만든 side-by-side-지원 접근 필요할 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]합니다.  
   
--   자체 등록된 키를 다른 기능이 나 응용 프로그램에서 사용할 경우 인해 방법이 없기 때문에 자체 등록 된 모듈을 사용 하 여 설치를 안전 하 게 롤백할 수 없습니다.  
+- 자체 등록된 키를 다른 기능이 나 응용 프로그램에서 사용할 경우 인해 방법이 없기 때문에 자체 등록 된 모듈을 사용 하 여 설치를 안전 하 게 롤백할 수 없습니다.  
   
--   경우에 따라 자체 등록 된 Dll 표시 되지 않거나 잘못 된 버전에 있는 보조 Dll에 연결 합니다. 반면에 Windows Installer 레지스트리 테이블을 사용 하 여 시스템의 현재 상태에 의존 하지 않고 Dll을 등록할 수 있습니다.  
+- 경우에 따라 자체 등록 된 Dll 표시 되지 않거나 잘못 된 버전에 있는 보조 Dll에 연결 합니다. 반면에 Windows Installer 레지스트리 테이블을 사용 하 여 시스템의 현재 상태에 의존 하지 않고 Dll을 등록할 수 있습니다.  
   
--   형식 라이브러리와 같은 네트워크 리소스에 대 한 액세스 구성 요소가 원본에서 실행으로 지정 및 SelfReg 테이블에 포함 된 자동 등록 코드를 정의할 수 있습니다. 설치 구성 요소 관리자 설치 중에 실패를 발생할 수 있습니다.  
+- 형식 라이브러리와 같은 네트워크 리소스에 대 한 액세스 구성 요소가 원본에서 실행으로 지정 및 SelfReg 테이블에 포함 된 자동 등록 코드를 정의할 수 있습니다. 설치 구성 요소 관리자 설치 중에 실패를 발생할 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [Windows Installer](/windows/desktop/Msi/windows-installer-portal)   
- [관리 되는 패키지 등록](http://msdn.microsoft.com/en-us/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)
+ [관리 되는 패키지 등록](https://msdn.microsoft.com/library/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25fe5a4e75ddf349210a936f47d99c94ec70c240
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: ba94a599c119d537efb90b29c1c2ec0084ace447
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704709"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948337"
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
 솔루션 파일 및 모든 프로젝트 파일이나 지정한 프로젝트 파일을 이러한 파일의 현재 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 형식으로 업데이트합니다.

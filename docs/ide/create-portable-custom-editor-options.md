@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 EditorConfig 설정 사용
+title: EditorConfig 설정
 ms.date: 08/01/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: 9758aab8d36b113a5e4ba2fea5d475f1967dabab
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: f2df8491ca3af165681a76c039d63c42c008f2f8
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39469056"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062928"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>EditorConfig를 사용하여 휴대용, 사용자 지정 편집기 설정 만들기
 
@@ -22,8 +22,10 @@ Visual Studio 2017에서는 프로젝트 또는 코드베이스에 [EditorConfig
 
 Visual Studio를 포함하여 다양한 코드 편집기와 IDE에서 EditorConfig 설정이 지원됩니다. 코드를 이용하여 휴대할 수 있는 구성 요소이며 Visual Studio 외부에서도 코딩 스타일을 적용할 수 있습니다.
 
+Visual Studio에서 프로젝트에 EditorConfig 파일을 추가할 때 문서의 서식을 지정(기본 프로필의 **편집** > **고급** > **문서 서식** 또는 **Ctrl**+**K**, **Ctrl**+**D**)하지 않으면 기존 코드의 서식이 변경되지 않습니다. 하지만 새로운 코드 줄은 EditorConfig 설정에 따라 서식이 지정됩니다. **문서 서식**을 [**서식 지정** 옵션 페이지](reference/options-text-editor-csharp-formatting.md#format-document-settings)에 적용하려는 EditorConfig 설정을 정의할 수 있습니다.
+
 > [!NOTE]
-> Visual Studio에서 프로젝트에 EditorConfig 파일을 추가할 때 문서의 서식을 지정(**편집** > **고급** > **문서 서식** 또는 **Ctrl**+**K**, **Ctrl**+**D**)하지 않으면 기존 코드의 서식이 변경되지 않습니다. 하지만 새로운 코드 줄은 EditorConfig 설정에 따라 서식이 지정됩니다.
+> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio의 EditorConfig](/visualstudio/mac/editorconfig)를 참조하세요.
 
 ## <a name="coding-consistency"></a>코딩 일관성
 
@@ -32,6 +34,9 @@ EditorConfig 파일의 설정을 사용하면 사용하는 편집기나 IDE에 �
 개인 프로젝트에서 사용하는 코딩 규칙과 팀 프로젝트에서 사용되는 규칙이 서로 다를 수 있습니다. 예를 들어, 코딩할 때 들여쓰기를 하면 탭 문자가 추가되는 것을 선호할 수 있습니다. 그러나 팀에서는 들여쓰기 시 탭 문자 대신 공백 문자 4개가 추가되는 것을 선호할 수 있습니다. EditorConfig 파일을 통해 각 시나리오에 맞게 구성하면 이 문제를 해결할 수 있습니다.
 
 설정은 코드베이스의 파일에 포함되므로 해당 코드베이스와 함께 전송됩니다. EditorConfig 규격 편집기에서 코드 파일을 열기만 하면 텍스트 편집기 설정이 구현됩니다. EditorConfig 파일에 대한 자세한 내용은 [EditorConfig.org](http://editorconfig.org/) 웹 사이트를 참조하세요.
+
+> [!NOTE]
+> EditorConfig 파일에서 설정된 규칙은 현재, 빌드 오류 또는 경고로 인해 CI/CD 파이프라인에서 적용할 수 없습니다. 모든 스타일 편차는 Visual Studio 편집기 및 **오류 목록**에만 나타납니다.
 
 ## <a name="supported-settings"></a>지원되는 설정
 
@@ -120,7 +125,7 @@ EditorConfig 파일을 편집한 후 새 설정을 적용하려면 코드 파일
 
 ![EditorConfig 언어 서비스 확장을 사용한 IntelliSense](media/editorconfig-intellisense.png)
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 *.editorconfig* 파일을 프로젝트에 추가하기 전과 후의 C# 코드 조각 들여쓰기 상태를 보여줍니다. Visual Studio 텍스트 편집기에 대한 **옵션** 대화 상자의 **탭** 설정은 **Tab** 키를 누를 때 공백 문자를 생성하도록 설정되어 있습니다.
 
@@ -170,3 +175,4 @@ dir .editorconfig /s
 - [언어 서비스를 위한 EditorConfig 지원](../extensibility/supporting-editorconfig.md)
 - [EditorConfig.org](http://editorconfig.org/)
 - [코드 편집기의 기능](writing-code-in-the-code-and-text-editor.md)
+- [EditorConfig(Mac용 Visual Studio)](/visualstudio/mac/editorconfig)

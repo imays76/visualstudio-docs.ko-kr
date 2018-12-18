@@ -1,22 +1,23 @@
 ---
 title: 빠른 시작 - 템플릿을 사용하여 Python 프로젝트 만들기
 description: 이 빠른 시작에서 기본 Flask 앱의 기본 제공 템플릿을 사용하여 Python용 Visual Studio 프로젝트를 만듭니다.
-ms.date: 05/07/2018
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3478e5b6156cdcf9c1aa6d814cb3cdd35e9579d1
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: c36fc6e10b196c3da4ba58ff047adab62345fa6f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586501"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066027"
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>빠른 시작: Visual Studio의 템플릿에서 Python 프로젝트 만들기
 
@@ -76,10 +77,9 @@ ms.locfileid: "39586501"
 
 1. **디버그** > **디버깅하지 않고 시작**을 선택하여 앱을 실행하고 브라우저에서 `localhost:5555`를 엽니다.
 
+**질문: Visual Studio에서 제공하는 다른 Python 템플릿은 무엇인가요?**
 
-  **질문: Visual Studio에서 제공하는 다른 Python 템플릿은 무엇인가요?**
-
-**응답**: Python 워크로드를 설치하면 Visual Studio에서는 [Flask, Bottle 및 Django 웹 프레임워크](../python/python-web-application-project-templates.md), Azure 클라우드 서비스, 다른 기계 학습 시나리오 및 Python 앱을 포함하는 기존 폴더 구조에서 프로젝트를 만드는 템플릿을 비롯한 다양한 프로젝트 템플릿을 제공합니다. **Python** 언어 노드 및 해당 자식 노드를 선택하여 **파일** > **새로 만들기** > **프로젝트** 대화 상자를 통해 이러한 항목에 액세스합니다.
+**대답**: Python 워크로드를 설치하면 Visual Studio에서는 [Flask, Bottle 및 Django 웹 프레임워크](../python/python-web-application-project-templates.md), Azure 클라우드 서비스, 다른 기계 학습 시나리오 및 Python 앱을 포함하는 기존 폴더 구조에서 프로젝트를 만드는 템플릿을 비롯한 다양한 프로젝트 템플릿을 제공합니다. **Python** 언어 노드 및 해당 자식 노드를 선택하여 **파일** > **새로 만들기** > **프로젝트** 대화 상자를 통해 이러한 항목에 액세스합니다.
 
 또한 Visual Studio에서는 다양한 파일 또는 *항목 템플릿*을 제공하여 Python 클래스, Python 패키지, Python 단위 테스트, *web.config* 파일 등을 신속하게 만듭니다. Python 프로젝트가 열려 있는 경우 **프로젝트** > **새 항목 추가** 메뉴 명령을 통해 항목 템플릿에 액세스합니다. [항목 템플릿](python-item-templates.md) 참조를 참조하세요.
 
@@ -87,7 +87,7 @@ ms.locfileid: "39586501"
 
 **질문: Cookiecutter 템플릿도 사용할 수 있나요?**
 
-**대답**: 예. 사실, Visual Studio에서는 Cookiecutter와의 직접 통합을 제공합니다. 이 기능은 [빠른 시작: Cookiecutter 템플릿으로 프로젝트 만들기](../python/quickstart-04-python-in-visual-studio-project-from-cookiecutter.md)를 통해 배울 수 있습니다.
+**대답**: 예! 실제로, Visual Studio가 제공하는 Cookiecutter와의 직접 통합은 [빠른 시작: Cookiecutter 템플릿으로 프로젝트 만들기](../python/quickstart-04-python-in-visual-studio-project-from-cookiecutter.md)를 통해 배울 수 있습니다.
 
 ## <a name="next-steps"></a>다음 단계
 

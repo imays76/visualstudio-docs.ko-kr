@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b72e058a2ef025b0118dac8fd419e75d1ad53349
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 3e174440411e54d0f3960035874bd3b84b392c57
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327231"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939501"
 ---
 # <a name="associate-custom-data-with-sharepoint-tools-extensions"></a>SharePoint 도구 확장과 사용자 지정 데이터 연결
   SharePoint 도구 확장의 특정 개체에 사용자 지정 데이터를 추가할 수 있습니다. 이 데이터 확장 프로그램의 다른 코드에서 나중에 액세스 하려면 확장 프로그램의 한 부분에 있는 경우에 유용 합니다. 데이터 저장 및 액세스 하는 사용자 지정 방법을 구현 하는 대신 확장의 개체를 사용 하 여 데이터를 연결할 수 있으며 나중에 동일한 개체에서 데이터를 다음 검색할 수 있습니다.  
@@ -73,14 +73,14 @@ ms.locfileid: "36327231"
   
  개체는 SharePoint 도구 확장에서 사용자 지정 데이터를 검색할 가져오기는 <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> 개체의 다음 메서드 중 하나를 사용 하는 속성:  
   
--   <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.TryGetValue%2A>. 이 메서드는 반환 **true** 데이터 개체가 있는 경우 또는 **false** 존재 하지 않는 경우. 값 형식 또는 참조 형식의 인스턴스를 검색 하려면이 메서드를 사용할 수 있습니다.  
+- <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.TryGetValue%2A>. 이 메서드는 반환 **true** 데이터 개체가 있는 경우 또는 **false** 존재 하지 않는 경우. 값 형식 또는 참조 형식의 인스턴스를 검색 하려면이 메서드를 사용할 수 있습니다.  
   
--   <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.GetValue%2A>. 이 메서드가 반환 된 데이터 개체를 종료 하는 경우 또는 **null** 존재 하지 않는 경우. 참조 형식의 인스턴스를 검색에이 메서드를 사용할 수 있습니다.  
+- <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.GetValue%2A>. 이 메서드가 반환 된 데이터 개체를 종료 하는 경우 또는 **null** 존재 하지 않는 경우. 참조 형식의 인스턴스를 검색에이 메서드를 사용할 수 있습니다.  
   
- 다음 코드 예제에서는 특정 데이터 개체는 프로젝트 항목과 연결 된 이미 있는지 여부를 결정 합니다. 데이터 개체는 이미 프로젝트 항목과 연결 된 경우에 개체를 추가 하는 코드는 <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> 프로젝트 항목의 속성입니다. 더 큰 예제의의 컨텍스트에서이 예제를 보려면 [방법: 사용자 지정 SharePoint 프로젝트 항목 형식에 속성 추가](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)합니다.  
+  다음 코드 예제에서는 특정 데이터 개체는 프로젝트 항목과 연결 된 이미 있는지 여부를 결정 합니다. 데이터 개체는 이미 프로젝트 항목과 연결 된 경우에 개체를 추가 하는 코드는 <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> 프로젝트 항목의 속성입니다. 더 큰 예제의의 컨텍스트에서이 예제를 보려면 [방법: 사용자 지정 SharePoint 프로젝트 항목 형식에 속성 추가](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)합니다.  
   
- [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#13)]
- [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#13)]  
+  [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#13)]
+  [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#13)]  
   
 ## <a name="see-also"></a>참고자료
  [SharePoint 도구 확장의 프로그래밍 개념 및 기능](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)   

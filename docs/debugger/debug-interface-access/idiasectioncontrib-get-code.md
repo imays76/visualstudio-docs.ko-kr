@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cfa38b5512fa628c1134c5e1cb068e95aa7b6809
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 122b9ad10413e9ba89bf309011e2449e9f6707fd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462294"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866378"
 ---
 # <a name="idiasectioncontribgetcode"></a>IDiaSectionContrib::get_code
 실행 코드 섹션에 포함 되는지 여부를 나타내는 플래그를 검색 합니다.  

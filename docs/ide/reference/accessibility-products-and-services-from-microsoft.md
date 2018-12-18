@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a389652b969ef4e4d29defbef40c91979d959e1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 58f3ad239802b032006a5a28816462147018982f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948745"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839533"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Microsoft의 내게 필요한 옵션 제품 및 서비스
 
@@ -46,7 +46,6 @@ Microsoft는 제품과 서비스를 모든 사용자가 사용하기 더욱 쉽�
 > [!NOTE]
 > 이 섹션의 정보는 미국에서 Microsoft 제품 사용 허가를 받은 사용자에게만 적용될 수 있습니다. 미국 이외의 지역에서 이 제품을 구입한 경우 소프트웨어 패키지와 함께 제공된 Microsoft 자회사 정보 카드를 사용하거나 [Microsoft 접근성](http://go.microsoft.com/fwlink/?LinkId=8431) 웹 사이트를 방문하여 Microsoft 지원 서비스 전화 번호와 주소 목록을 볼 수 있습니다. 자회사에 연락하여 이 섹션에서 설명하는 제품 및 서비스 유형이 해당 지역에서 제공되는지 확인할 수 있습니다. 내게 필요한 옵션에 대한 정보는 일본어, 프랑스어 등 다른 언어로도 제공됩니다.
 
-
 ##  <a name="windows"></a> Windows의 접근성 기능
 
  Windows 운영 체제에는 키보드 입력 또는 마우스를 사용하는 데 어려움이 있거나 시력 또는 청각 장애가 있는 사용자에게 유용한 여러 접근성 기능이 기본 제공됩니다. 해당 기능은 설치 중에 설치됩니다. 이러한 기능에 대한 자세한 내용은 Windows 도움말 및 [Microsoft 접근성](http://go.microsoft.com/fwlink/?LinkId=8431) 웹 사이트를 참조하세요.
@@ -65,29 +64,29 @@ Microsoft는 제품과 서비스를 모든 사용자가 사용하기 더욱 쉽�
 
 ##  <a name="altfortmats"></a> 대체 형식의 설명서
 
- 인쇄물을 읽거나 처리하는 데 어려움이 있는 경우 보다 접근하기 쉬운 형식의 Microsoft 제품 설명서를 얻을 수 있습니다. [Microsoft 접근성](http://go.microsoft.com/fwlink/?LinkId=8431) 웹 사이트에서 접근하기 쉬운 제품 설명서의 인덱스를 볼 수 있습니다.
+인쇄물을 읽거나 처리하는 데 어려움이 있는 경우 보다 접근하기 쉬운 형식의 Microsoft 제품 설명서를 얻을 수 있습니다. [Microsoft 접근성](http://go.microsoft.com/fwlink/?LinkId=8431) 웹 사이트에서 접근하기 쉬운 제품 설명서의 인덱스를 볼 수 있습니다.
 
- 또한 RFB&D(Recording for the Blind & Dyslexic, Inc)에서 Microsoft 설명서를 추가로 얻을 수 있습니다. RFB&D에서는 배포 서비스에 등록된 정식 사용자에게 이러한 설명서를 배포합니다. Microsoft 제품 설명서 및 Microsoft Press 책자의 사용 가능 여부에 대한 자세한 내용은 다음 연락처로 문의하세요.
+또한 Learning Ally에서 Microsoft 설명서를 추가로 얻을 수 있습니다. Learning Ally에서는 배포 서비스에 등록된 정식 사용자에게 이러한 설명서를 배포합니다. Microsoft 제품 설명서 및 Microsoft Press 책자의 사용 가능 여부에 대한 자세한 내용은 다음 연락처로 문의하세요.
 
-|Recording for the Blind & Dyslexic, Inc.|
-|----------------------------------------------|
-|20 Roszel Road<br /><br /> Princeton, NJ 08540<br /><br /> 미국 내 전화 번호: (800) 221-4792<br /><br /> 미국 및 캐나다 이외의 전화 번호: (609) 452-0606<br /><br /> 팩스: (609) 987-8116<br /><br /> Blind & Dyslexic 웹 사이트에 대한 기록: [http://www.rfbd.org](http://go.microsoft.com/fwlink/?LinkId=62504).|
+|Learning Ally|
+| - |
+|20 Roszel Road<br /><br /> Princeton, NJ 08540<br /><br /> Learning Ally 웹 사이트: [http://www.learningally.org](http://www.learningally.org/).|
 
- 웹 주소는 변경될 수 있으므로 여기에 나와 있는 웹 사이트에 연결되지 않을 수도 있습니다.
+웹 주소는 변경될 수 있으므로 여기에 나와 있는 웹 사이트에 연결되지 않을 수도 있습니다.
 
 ##  <a name="hearing"></a> 청각 장애가 있는 사용자를 위한 고객 서비스
 
- 청각 장애가 있는 경우 문자 전화(TTY/TDD) 서비스를 통해 Microsoft 제품 및 고객 서비스를 모두 이용할 수 있습니다.
+청각 장애가 있는 경우 문자 전화(TTY/TDD) 서비스를 통해 Microsoft 제품 및 고객 서비스를 모두 이용할 수 있습니다.
 
--   고객 서비스를 받으려면 월요일 ~ 금요일(공휴일 제외), 오전 6시 30분부터 오후 5시 30분(태평양 표준시)까지 Microsoft Sales Information Center((800) 892-5234)로 문의하세요.
+- 고객 서비스를 받으려면 월요일 ~ 금요일(공휴일 제외), 오전 6시 30분부터 오후 5시 30분(태평양 표준시)까지 Microsoft Sales Information Center((800) 892-5234)로 문의하세요.
 
--   미국에서 기술 지원을 받으려면 월요일 ~ 금요일(공휴일 제외), 오전 6시부터 오후 6시(태평양 표준시)까지 Microsoft 기술 지원 서비스((800) 892-5234)로 문의하세요. 캐나다에서는 월요일 ~ 금요일(공휴일 제외), 오전 8시부터 오후 8시(동부 표준시)까지 (905) 568-9641로 전화를 걸어 문의하세요.
+- 미국에서 기술 지원을 받으려면 월요일 ~ 금요일(공휴일 제외), 오전 6시부터 오후 6시(태평양 표준시)까지 Microsoft 기술 지원 서비스((800) 892-5234)로 문의하세요. 캐나다에서는 월요일 ~ 금요일(공휴일 제외), 오전 8시부터 오후 8시(동부 표준시)까지 (905) 568-9641로 전화를 걸어 문의하세요.
 
- Microsoft 지원 서비스에는 서비스 이용 시점의 가격, 약관 및 조건이 적용됩니다.
+Microsoft 지원 서비스에는 서비스 이용 시점의 가격, 약관 및 조건이 적용됩니다.
 
 ##  <a name="moreinfo"></a> 추가 정보
 
- 컴퓨터의 접근성 기술이 장애가 있는 사용자에게 어떤 도움을 주는지에 대한 자세한 내용은 [Microsoft 접근성](http://go.microsoft.com/fwlink/?LinkId=8431) 웹 사이트를 참조하세요.
+컴퓨터의 접근성 기술이 장애가 있는 사용자에게 어떤 도움을 주는지에 대한 자세한 내용은 [Microsoft 접근성](http://go.microsoft.com/fwlink/?LinkId=8431) 웹 사이트를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 

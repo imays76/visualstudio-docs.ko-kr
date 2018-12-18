@@ -18,15 +18,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5690abe8e155c33d8e998ea0a18749e172da7e34
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: a35ee6d086153adc718a1616c0c8f0c8c606fbb7
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38797534"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220032"
 ---
 # <a name="property-pages-javascript"></a>속성 페이지, JavaScript
-**속성 페이지**에서 프로젝트 설정에 액세스할 수 있습니다. **속성 페이지**에 표시되는 페이지를 사용하여 프로젝트 속성을 변경할 수 있습니다.
+**속성 페이지**는 프로젝트 설정에 대한 액세스를 제공합니다. **속성 페이지**에 표시되는 페이지를 사용하여 프로젝트 속성을 변경할 수 있습니다.
 
 프로젝트 속성에 액세스하려면 **솔루션 탐색기**에서 프로젝트 노드를 선택합니다. **프로젝트** 메뉴에서 **속성**을 클릭합니다.
 

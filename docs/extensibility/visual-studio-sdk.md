@@ -17,31 +17,31 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c527604639d701c3cda5bddba9ee61c01e5c8dd
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: b5701044e20f2122199d9d0ca5558e453e6e5f72
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586777"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906028"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Visual Studio SDK를 사용 하면 Visual Studio 기능을 확장 하거나 Visual Studio에 새 기능을 통합할 수 있습니다. Visual Studio Marketplace 뿐만 아니라 다른 사용자에 게 확장을 배포할 수 있습니다. 다음은 Visual Studio를 확장할 수 있는 몇 가지 방법입니다.  
   
--   IDE에 명령, 단추, 메뉴 및 기타 UI 요소 추가  
+- IDE에 명령, 단추, 메뉴 및 기타 UI 요소 추가  
   
--   새로운 기능에 대 한 도구 창 추가  
+- 새로운 기능에 대 한 도구 창 추가  
   
--   지정된 된 언어에 대 한 IntelliSense를 확장 하거나 새 프로그래밍 언어에 대 한 IntelliSense를 제공 합니다.  
+- 지정된 된 언어에 대 한 IntelliSense를 확장 하거나 새 프로그래밍 언어에 대 한 IntelliSense를 제공 합니다.  
   
--   전구를 사용 하 여 더 나은 코드를 작성할 힌트와 개발자는 데 도움이 되는 제안 제공  
+- 전구를 사용 하 여 더 나은 코드를 작성할 힌트와 개발자는 데 도움이 되는 제안 제공  
   
--   새 언어에 대 한 지원을 사용 하도록 설정  
+- 새 언어에 대 한 지원을 사용 하도록 설정  
   
--   사용자 지정 프로젝트 형식을 추가합니다  
+- 사용자 지정 프로젝트 형식을 추가합니다  
   
--   수백만 명의 개발자가 Visual Studio Marketplace를 통해 도달  
+- 수백만 명의 개발자가 Visual Studio Marketplace를 통해 도달  
   
- 및 이러한 기능에 대 한 자세한 내용은 하기 전에 Visual Studio 확장을 써 본 적, 경우 찾아야 [Visual Studio 확장 개발 시작](../extensibility/starting-to-develop-visual-studio-extensions.md)합니다.  
+  및 이러한 기능에 대 한 자세한 내용은 하기 전에 Visual Studio 확장을 써 본 적, 경우 찾아야 [Visual Studio 확장 개발 시작](../extensibility/starting-to-develop-visual-studio-extensions.md)합니다.  
   
 ## <a name="install-the-visual-studio-sdk"></a>Visual Studio SDK 설치  
  Visual Studio SDK는 Visual Studio 설치에서 선택적 기능입니다. 또한 VS SDK를 나중에 설치할 수 있습니다. 자세한 내용은 [Visual Studio SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)합니다.  
@@ -68,7 +68,7 @@ Visual Studio SDK를 사용 하면 Visual Studio 기능을 확장 하거나 Visu
 ## <a name="other-visual-studio-sdk-resources"></a>다른 Visual Studio SDK 리소스  
  VSSDK에 대 한 질문 했거나 확장 개발 경험을 공유 하려는 경우 사용할 수 있습니다 합니다 [Visual Studio 확장성 포럼](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx) 또는 [ExtendVS Gitter Chatroom](https://gitter.im/Microsoft/extendvs)합니다.  
   
- 자세한 내용을 볼 수는 [VSX 실수가 블로그](http://blogs.msdn.com/b/vsx/) 및 다양 한 Microsoft Mvp가 작성 한 블로그:  
+ 자세한 내용을 볼 수는 [VSX 실수가 블로그](https://blogs.msdn.microsoft.com/vsx/) 및 다양 한 Microsoft Mvp가 작성 한 블로그:  
   
 -   [즐겨 사용 하는 Visual Studio 확장](http://geekswithblogs.net/sdorman/archive/2014/10/05/favorite-visual-studio-extensions.aspx)  
   

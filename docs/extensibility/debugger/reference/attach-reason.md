@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2dc7736f9210ef15cec8cece45d7899cc116a334
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6e2e103a345a3a064afb96cc7861bd3394da3a0f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099524"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861620"
 ---
 # <a name="attachreason"></a>ATTACH_REASON
-프로그램 노드에 연결 하는 디버그 엔진 (DE)에 대 한 이유를 지정 합니다.  
+프로그램 노드를 연결 하는 디버그 엔진 (DE)에 대 한 이유를 지정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -46,7 +46,7 @@ public enum enum_ATTACH_REASON {
   
 ## <a name="members"></a>멤버  
  ATTACH_REASON_AUTO  
- 디버그 모드에서 현재 프로세스 이므로 연결 합니다.  
+ 프로세스 디버그 모드에서 현재 이므로 연결 합니다.  
   
  ATTACH_REASON_LAUNCH  
  프로세스가 시작 된 때문에 연결 합니다.  
@@ -55,7 +55,7 @@ public enum enum_ATTACH_REASON {
  사용자 요청으로 인해 연결 합니다.  
   
 ## <a name="remarks"></a>설명  
- 이러한 값에 대 한 매개 변수로 사용 됩니다는 [연결](../../../extensibility/debugger/reference/idebugengine2-attach.md) 및 [연결](../../../extensibility/debugger/reference/idebugprogramex2-attach.md) 메서드.  
+ 이러한 값은 매개 변수로 사용 합니다 [연결](../../../extensibility/debugger/reference/idebugengine2-attach.md) 하 고 [연결](../../../extensibility/debugger/reference/idebugprogramex2-attach.md) 메서드.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  

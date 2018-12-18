@@ -2,7 +2,7 @@
 title: Node.js 및 Express 앱 만들기
 description: 이 자습서에서는 Visual Studio용 Node.js 도구를 사용하여 앱을 만듭니다.
 ms.custom: ''
-ms.date: 06/27/2018
+ms.date: 09/24/2018
 ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
@@ -13,17 +13,17 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ff8d28a0fa6b8889dcc90632126f8b4dd75b70dc
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: 8e7a1d04b83ffef2f7ec6efc786af6f5bc6e992e
+ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39132335"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168346"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>자습서: Visual Studio에서 Node.js 및 Express 앱 만들기
 Node.js 및 Express를 사용하여 Visual Studio를 개발하기 위한 이 자습서에서는 Node.js 웹 응용 프로그램을 만들고, 일부 코드를 추가하며, IDE의 일부 기능을 살펴보고, 앱을 실행합니다. 아직 Visual Studio를 설치하지 않은 경우 [여기](http://visualstudio.microsoft.com)에서 평가판을 설치합니다.
 
-이 자습서에서는 다음 방법을 학습합니다.
+이 자습서에서는 다음과 같은 작업을 수행하는 방법을 살펴봅니다.
 > [!div class="checklist"]
 > * Node.js 프로젝트 만들기
 > * 일부 코드를 추가합니다.
@@ -41,11 +41,11 @@ Node.js는 JavaScript 서버 쪽을 실행하는 서버 쪽 JavaScript 런타임
 
 ### <a name="what-is-npm"></a>npm이란?
 
-npm는 Node.js에 대한 기본 패키지 관리자입니다. 패키지 관리자는 프로그래머가 Node.js 라이브러리의 소스 코드를 쉽게 게시 및 공유하게 하며, 라이브러리의 설치, 업데이트 및 제거를 간소화하도록 설계되었습니다.
+npm는 Node.js를 위한 기본 패키지 관리자입니다. 패키지 관리자는 프로그래머가 Node.js 라이브러리의 소스 코드를 쉽게 게시 및 공유하게 하며, 라이브러리의 설치, 업데이트 및 제거를 간소화하도록 설계되었습니다.
 
 ### <a name="what-is-express"></a>Express란?
 
-Express는 웹 응용 프로그램을 빌드하기 위해 Node.js에 대한 서버 프레임워크로 사용된 웹 응용 프로그램 프레임워크입니다. Express를 사용하면 Pug(이전의 Jade) 같은 UI를 만들기 위해 다양한 프런트 엔드 프레임 워크를 선택할 수 있습니다. Pug가 이 자습서에 사용됩니다.
+Express는 웹 응용 프로그램을 빌드하기 위해 Node.js에 대한 서버 프레임워크로 사용된 웹 응용 프로그램 프레임워크입니다. Express를 사용하면 UI를 만들기 위해 Pug(이전의 Jade) 같은 다른 프런트 엔드 프레임 워크를 선택할 수 있습니다. 이 자습서에서는 Pug를 사용합니다.
 
 ## <a name="prerequisites"></a>전제 조건
 
@@ -85,7 +85,7 @@ Visual Studio는 *프로젝트*에서 단일 응용 프로그램에 대한 파�
 
     (3) npm 노드에는 설치된 모든 npm 패키지가 표시됩니다. 대화 상자를 사용하여 npm 패키지를 검색하고 설치하거나 *package.json*에서 설정 및 npm 노드에서 마우스 오른쪽 단추로 클릭 옵션을 사용하여 업데이트 패키지를 설치 및 업데이트하려면 Npm 노드를 마우스 오른쪽 단추로 클릭할 수 있습니다.
 
-    (4) *package.json*은 로컬로 설치된 패키지에 대한 패키지 버전 및 종속성을 관리하기 위해 npm에서 사용하는 파일입니다.
+    (4) *package.json*은 로컬로 설치된 패키지에 대한 패키지 버전 및 종속성을 관리하기 위해 npm에서 사용하는 파일입니다. 이 파일에 대한 자세한 내용은 [package.json configuration](../javascript/configure-packages-with-package-json.md)을 참조하세요.
 
     (5) *app.js*와 같은 프로젝트 파일은 프로젝트 노드 아래 표시됩니다. *app.js*는 프로젝트 시작 파일이므로 **굵게** 표시됩니다. 프로젝트에서 파일을 마우스 오른쪽 단추로 클릭하고 **Node.js 시작 파일로 설정**을 선택하여 시작 파일을 설정할 수 있습니다.
 
@@ -192,9 +192,11 @@ IntelliSense는 코드를 작성할 때 지원하는 Visual Studio 도구입니�
 
 ## <a name="run-the-application"></a>응용 프로그램 실행
 
-1. 디버그 도구 모음에서의 디버그 대상을 선택합니다.
+1. 디버그 도구 모음(예: Edge 또는 Chrome)에서 디버그 대상을 선택합니다.
 
     ![디버그 대상 선택](../javascript/media/tutorial-nodejs-deploy-target.png)
+
+    머신에서 Chrome을 사용할 수 있지만 옵션으로 표시되지 않는 경우 디버그 대상 드롭다운 목록에서 **브라우저 선택**을 선택하고 기본 브라우저 대상으로 Chrome을 선택합니다(**기본값으로 설정** 선택).
 
 1. **F5**(**디버그** > **디버깅 시작**) 키를 눌러 응용 프로그램을 실행합니다.
 

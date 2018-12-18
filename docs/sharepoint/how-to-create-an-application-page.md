@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: eefbb12584cdff2bb32b9d4406c916969ec435c4
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 9f390ddf14925b43f1aa1d9e79db05e2aa64f234
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119376"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296205"
 ---
 # <a name="how-to-create-an-application-page"></a>방법: 응용 프로그램 페이지 만들기
   하나 이상의 SharePoint 사이트에 대한 ASP.NET 웹 페이지를 만들 수 있습니다. Sharepoint에서 이러한 페이지는 응용 프로그램 페이지 라고 합니다. 사이트 페이지와 달리 응용 프로그램 페이지는 페이지 뒤에 실행 되는 코드를 포함 합니다. 자세한 내용은 [SharePoint 용 응용 프로그램 페이지를 만들](../sharepoint/creating-application-pages-for-sharepoint.md)합니다.  
@@ -46,7 +46,7 @@ ms.locfileid: "37119376"
   
      Visual Studio 프로젝트에 여러 폴더와 파일을 추가합니다. 이러한 파일에 대 한 자세한 내용은 참조 하세요. [SharePoint 용 응용 프로그램 페이지를 만들](../sharepoint/creating-application-pages-for-sharepoint.md)합니다.  
   
-     에 **원본** ASP.NET 페이지 파일이 Visual Web Developer 디자이너 뷰가 나타납니다. 컨트롤을 추가 하 여 페이지를 디자인할 수는 **도구 상자** 콘텐츠 자리 표시자에 배치 하 고 있습니다. 자세한 내용은 [웹 페이지 디자이너, 소스 뷰](http://msdn.microsoft.com/en-us/5911396b-fe51-4150-9ff1-b085f812862f)합니다.  
+     에 **원본** ASP.NET 페이지 파일이 Visual Web Developer 디자이너 뷰가 나타납니다. 컨트롤을 추가 하 여 페이지를 디자인할 수는 **도구 상자** 콘텐츠 자리 표시자에 배치 하 고 있습니다. 자세한 내용은 [웹 페이지 디자이너, 소스 뷰](/previous-versions/aspnet/ms178154\(v\=vs.100\))합니다.  
   
 7.  컨트롤 이벤트를 처리하려면 응용 프로그램 페이지의 코드 파일에 코드를 추가합니다.  
   

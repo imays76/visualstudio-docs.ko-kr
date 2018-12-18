@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e59d4087e44458ecd49efd5d7be9f45e68c6da2b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bfc2afb15dbacde1eb0a96178d2769365deb4e31
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119535"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893795"
 ---
 # <a name="idebugthread2setnextstatement"></a>IDebugThread2::SetNextStatement
-지정 된 코드 컨텍스트를 현재 명령 포인터를 설정합니다.  
+지정 된 코드 컨텍스트에 현재 명령 포인터를 설정합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -43,22 +43,22 @@ int SetNextStatement (
   
 #### <a name="parameters"></a>매개 변수  
  `pStackFrame`  
- 나중에 사용 됩니다. null 값으로 설정 합니다.  
+ 사용 하도록 예약 됩니다. null 값으로 설정 합니다.  
   
  `pCodeContext`  
  [in] [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) 실행 될 코드 위치를 설명 하는 개체 및 컨텍스트.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다. 다음 표에서 가능한 다른 값을 보여 줍니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다. 다음 표에서 가능한 다른 값을 보여 줍니다.  
   
 |값|설명|  
 |-----------|-----------------|  
-|E_CANNOT_SET_NEXT_STATEMENT_ON_NONLEAF_FRAME|다음 문은 프레임 스택에 깊은 스택 프레임에 수 없습니다.|  
-|E_CANNOT_SETIP_TO_DIFFERENT_FUNCTION|다음 문이 스택의 프레임에 연관 되어 있습니다.|  
-|E_CANNOT_SET_NEXT_STATEMENT_ON_EXCEPTION|일부 디버깅 엔진이 예외가 발생 한 후 다음 문을 설정할 수 없습니다.|  
+|E_CANNOT_SET_NEXT_STATEMENT_ON_NONLEAF_FRAME|다음 문이 프레임 스택에 심층적인 스택 프레임을 일 수 없습니다.|  
+|E_CANNOT_SETIP_TO_DIFFERENT_FUNCTION|다음 문을 스택의 모든 프레임을 사용 하 여 연결 되지 않습니다.|  
+|E_CANNOT_SET_NEXT_STATEMENT_ON_EXCEPTION|일부 디버그 엔진에 예외가 발생 한 후 다음 문을 설정할 수 없습니다.|  
   
 ## <a name="remarks"></a>설명  
- 명령 포인터는 다음 명령이 나 문을 실행할 수를 나타냅니다. 이 메서드는 소스 코드 줄을 다시 시도 하거나 예를 들어 다른 함수에서 계속 실행을 강제로 사용 됩니다.  
+ 명령 포인터는 다음 명령 또는 문 실행을 나타냅니다. 이 메서드는 소스 코드 줄을 다시 시도 하거나 다른 함수에 예를 들어 계속 실행 하도록 사용 됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08387df82b20ef38380fe6302a5ca1f5d0bcbc9c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5285dce44c7aacad12fad60f255140a14d53a8d7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115069"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857539"
 ---
 # <a name="idebugprogram2candetach"></a>IDebugProgram2::CanDetach
 디버그 엔진 (DE) 프로그램에서 분리 하는 경우를 결정 합니다.  
@@ -38,7 +38,7 @@ int CanDetach();
 ```  
   
 ## <a name="return-value"></a>반환 값  
- 하는 경우를 분리 하려면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다. 반환 `S_FALSE` 경우는 DE 프로그램에서 분리할 수 없습니다.  
+ 경우를 분리 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다. 반환 `S_FALSE` 경우는 DE 프로그램에서 분리할 수 없습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

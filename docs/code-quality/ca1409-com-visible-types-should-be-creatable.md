@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f4cb5579e8632b97300a768bb203ddd3056bd72
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 817c2215245412faf0bb30d46aec40a953f239b5
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31897119"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546852"
 ---
 # <a name="ca1409-com-visible-types-should-be-creatable"></a>CA1409: COM 노출 형식을 만들 수 있어야 합니다.
+
 |||
 |-|-|
 |TypeName|ComVisibleTypesShouldBeCreatable|
@@ -32,23 +33,25 @@ ms.locfileid: "31897119"
 |변경 수준|주요 변경 아님|
 
 ## <a name="cause"></a>원인
- 특히 표시 유형 구성 요소 개체 모델 (COM)에 표시 된 참조 형식 매개 변수가 있는 public 생성자를 포함 하지만 공용 기본 (매개 변수가 없는) 생성자가 없습니다.
+ 특히 표시 구성 요소 개체 모델 (COM)에 표시 되는 참조 형식 매개 변수가 있는 public 생성자를 포함 하지만 (매개 변수가 없는) 공용 기본 생성자가 포함 되지 않습니다.
 
 ## <a name="rule-description"></a>규칙 설명
- COM 클라이언트에서 공용 기본 생성자가 없는 형식을 만들 수 없습니다. 그러나 형식은 여전히 액세스할 수 있습니다 COM 클라이언트에서 다른 방법 형식을 만드는 예를 들어 (메서드 호출의 반환 값)을 통해 클라이언트에 전달 하는 데 사용할 수 있는 경우.
+ COM 클라이언트에서 공용 기본 생성자가 없는 형식을 만들 수 없습니다. 그러나 형식 여전히 액세스할 수 있습니다 COM 클라이언트에서 다른 방법 예를 들어 (메서드 호출의 반환 값)를 통해 클라이언트에 전달 및 형식을 만들 수 있는 경우.
 
- 규칙에서 파생 된 형식을 무시 <xref:System.Delegate?displayProperty=fullName>합니다.
+ 규칙에서 파생 된 형식은 무시 <xref:System.Delegate?displayProperty=fullName>합니다.
 
- 기본적으로 다음 COM에 표시 되지만: 어셈블리, public 형식, public 인스턴스 멤버를 공용 형식 및 공용 값 형식의 모든 멤버입니다.
+ 기본적으로 다음은 COM에 표시: 어셈블리, public 형식, 공용 인스턴스 멤버를 공용 형식 및 공개 값 형식의 모든 멤버입니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이 규칙 위반 문제를 해결 하려면 공용 기본 생성자를 추가 또는 제거는 <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> 형식에서 합니다.
+ 이 규칙 위반 문제를 해결 하려면 공용 기본 생성자를 추가 하거나 제거 합니다 <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> 형식에서입니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
- 만들고 개체를 COM 클라이언트에 전달 하는 다른 방법 제공 되는 경우이 규칙에서는 경고를에서 표시 하지 않는 안전 합니다.
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
+ 다른 방법으로 만들 COM 클라이언트에 개체를 전달 하는 제공 되는 경우이 규칙에서 경고를 표시 하지 않아도 안전 합니다.
 
 ## <a name="related-rules"></a>관련된 규칙
  [CA1017: 어셈블리를 ComVisibleAttribute로 표시하십시오.](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
-## <a name="see-also"></a>참고 항목
- [상호 운용할.NET 형식의 정규화](/dotnet/framework/interop/qualifying-net-types-for-interoperation) [비관리 코드와의 상호 운용](/dotnet/framework/interop/index)
+## <a name="see-also"></a>참고자료
+
+- [상호 운용할 .NET 형식의 정규화](/dotnet/framework/interop/qualifying-net-types-for-interoperation)
+- [비관리 코드와의 상호 운용](/dotnet/framework/interop/index)

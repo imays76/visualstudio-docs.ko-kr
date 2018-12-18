@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1d610d5403bfe0341008213c5e4c663196b90229
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 4cfd5fb259db7903541e0a86f16c720c9ff9c4d2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252513"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937423"
 ---
 # <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>.NET Framework 4 또는.NET Framework 4.5로 마이그레이션하는 Office 프로젝트에서 리본 사용자 지정 업데이트
   프로젝트를 사용 하 여 만든 리본 사용자 지정을 포함 하는 경우는 **리본 (비주얼 디자이너)** 프로젝트 항목, 대상 프레임 워크를 변경 하는 경우 다음과 같이 변경 하면 프로젝트 코드를 확인 해야 합니다 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 또는 나중에 있습니다.  
@@ -119,18 +119,18 @@ ms.locfileid: "39252513"
   
  <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> 개체에 액세스하는 방법에는 다음 두 가지가 있습니다.  
   
--   Ribbon 클래스의 팩터리 속성을 사용 합니다. Ribbon 클래스의 코드에서 이 방법을 사용합니다.  
+- Ribbon 클래스의 팩터리 속성을 사용 합니다. Ribbon 클래스의 코드에서 이 방법을 사용합니다.  
   
--   `Globals.Factory.GetRibbonFactory` 메서드 사용. Ribbon 클래스 외부 코드에서 이 방법을 사용합니다. Globals 클래스에 대 한 자세한 내용은 참조 하세요. [Office 프로젝트의에서 개체에 대 한 전역 액세스](../vsto/global-access-to-objects-in-office-projects.md)합니다.  
+- `Globals.Factory.GetRibbonFactory` 메서드 사용. Ribbon 클래스 외부 코드에서 이 방법을 사용합니다. Globals 클래스에 대 한 자세한 내용은 참조 하세요. [Office 프로젝트의에서 개체에 대 한 전역 액세스](../vsto/global-access-to-objects-in-office-projects.md)합니다.  
   
- 다음 코드 예제에서는 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 이상을 대상으로 하는 프로젝트에서 Ribbon 클래스에 <xref:Microsoft.Office.Tools.Ribbon.RibbonButton>을 만드는 방법을 보여 줍니다.  
+  다음 코드 예제에서는 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 이상을 대상으로 하는 프로젝트에서 Ribbon 클래스에 <xref:Microsoft.Office.Tools.Ribbon.RibbonButton>을 만드는 방법을 보여 줍니다.  
   
 <CodeContentPlaceHolder>10</CodeContentPlaceHolder>  
 <CodeContentPlaceHolder>11</CodeContentPlaceHolder>  
  다음 표에서는 프로그래밍 방식으로 만들 수 있는 컨트롤 및 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 이상을 대상으로 하는 프로젝트에서 컨트롤을 만드는 데 사용할 메서드를 보여 줍니다.  
   
 |컨트롤|[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 이상 프로젝트에서 사용할 RibbonFactory 메서드|  
-|-------------|---------------------------------------------------------------------------------------------------------------|  
+|-------------| - |  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonButton>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonButton%2A>|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonButtonGroup>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonButtonGroup%2A>|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonCheckBox%2A>|  
@@ -155,7 +155,7 @@ ms.locfileid: "39252513"
  다음 표에서는 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 이상을 대상으로 하는 프로젝트에서 리본 이벤트 및 연결된 대리자를 보여 줍니다.  
   
 |이벤트(event)|[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 이상 프로젝트에서 사용할 대리자|  
-|-----------|---------------------------------------------------------------------------------------------------|  
+|-----------| - |  
 |생성된 Ribbon 클래스의 <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage> 이벤트|<xref:Microsoft.Office.Tools.Ribbon.RibbonLoadImageEventHandler>|  
 |<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load>|<xref:Microsoft.Office.Tools.Ribbon.RibbonUIEventHandler>|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.TextChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.ButtonClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.SelectionChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox.TextChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ButtonClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup.DialogLauncherClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click>|<xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler>|  
@@ -165,11 +165,11 @@ ms.locfileid: "39252513"
   
  <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> 개체에 액세스하는 방법에는 다음 두 가지가 있습니다.  
   
--   Ribbon 클래스의 `Factory` 속성 사용. Ribbon 클래스의 코드에서 이 방법을 사용합니다.  
+- Ribbon 클래스의 `Factory` 속성 사용. Ribbon 클래스의 코드에서 이 방법을 사용합니다.  
   
--   `Globals.Factory.GetRibbonFactory` 메서드 사용. Ribbon 클래스 외부 코드에서 이 방법을 사용합니다. Globals 클래스에 대 한 자세한 내용은 참조 하세요. [Office 프로젝트의에서 개체에 대 한 전역 액세스](../vsto/global-access-to-objects-in-office-projects.md)합니다.  
+- `Globals.Factory.GetRibbonFactory` 메서드 사용. Ribbon 클래스 외부 코드에서 이 방법을 사용합니다. Globals 클래스에 대 한 자세한 내용은 참조 하세요. [Office 프로젝트의에서 개체에 대 한 전역 액세스](../vsto/global-access-to-objects-in-office-projects.md)합니다.  
   
- 다음 코드 예제에서는 .NET Framework 3.5를 대상으로 하는 프로젝트의 Ribbon 클래스에서 탭의 `Position` 속성을 설정하는 방법을 보여 줍니다.  
+  다음 코드 예제에서는 .NET Framework 3.5를 대상으로 하는 프로젝트의 Ribbon 클래스에서 탭의 `Position` 속성을 설정하는 방법을 보여 줍니다.  
   
 ```vb  
 Me.tab1.Position = RibbonPosition.AfterOfficeId("TabHome")  

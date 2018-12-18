@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d24665526f4487f6d2f514f41eb2afbc291847c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 07c04aff053b8ce304290fefa7f56f08b448f244
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108312"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836640"
 ---
 # <a name="idebugalias2getappdomainid"></a>IDebugAlias2::GetAppDomainId
 응용 프로그램 도메인에 대 한 식별자를 검색합니다.  
@@ -43,10 +43,10 @@ int GetAppDomainId (
  [out] 응용 프로그램 도메인 식별자를 반환합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 응용 프로그램 다시 시작 될 때마다 응용 프로그램 도메인 식별자 변경 하 고 새 응용 프로그램 도메인 생성 됩니다.  
+ 응용 프로그램 다시 시작 될 때마다 응용 프로그램 도메인 식별자 변경 및 새 응용 프로그램 도메인 생성 됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugAlias2](../../../extensibility/debugger/reference/idebugalias2.md)

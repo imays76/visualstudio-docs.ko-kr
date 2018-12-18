@@ -1,31 +1,39 @@
 ---
 layout: LandingPage
+title: Visual Studio에서 JavaScript 앱 만들기 | Microsoft Docs
+description: Visual Studio 2017을 사용하여 응용 프로그램을 만드는 방법에 대해 알아봅니다.
 ms.topic: landing-page
-title: JavaScript | Microsoft Docs
-ms.openlocfilehash: 45b67c450b8165808ca8a1042e21d9c5e0b54c84
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-nodejs
+ms.author: mikejo
+author: mikejo5000
+manager: douge
+ms.openlocfilehash: bc71a896022ea57a3867143ceb0a0d9e96b83149
+ms.sourcegitcommit: 1c675dae7c348defb32d9f7ccf7079a1062a1c4b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008540"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48243932"
 ---
-# <a name="javascript-technologies-in-visual-studio"></a>Visual Studio의 JavaScript 기술
+# <a name="javascript-in-visual-studio"></a>Visual Studio의 JavaScript
 
-이 페이지에서는 이러한 언어를 사용하여 Visual Studio에서 앱을 작성할 수 있게 해주는 JavaScript 및 TypeScript 기반 설명서에 대한 링크를 제공합니다.
+Visual Studio에서는 JavaScript 또는 TypeScript를 사용하여 앱을 만들 수 있도록 다양한 도구를 제공합니다.
+
+<h2>5분 빠른 시작을 사용하여 Visual Studio에서 JavaScript를 사용하는 방법을 알아봅니다</h2>
 
 <ul class="panelContent cardsFTitle">
     <li>
-        <a href="https://docs.microsoft.com/visualstudio/nodejs/tutorial-nodejs">
+        <a href="https://docs.microsoft.com/visualstudio/ide/quickstart-nodejs?toc=/visualstudio/javascript/toc.json">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/logos/logo_nodejs.svg" alt="">
+                            <img src="/media/logos/logo_nodejs.svg" alt="Create a basic Node.js app">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Node.js용 도구에 대한 자세한 정보</h3>
+                        <h3>기본 Node.js 앱 만들기</h3>
                     </div>
                 </div>
             </div>
@@ -33,17 +41,58 @@ ms.locfileid: "40008540"
         </a>
     </li>
     <li>
+        <a href="https://docs.microsoft.com/visualstudio/javascript/quickstart-vuejs-with-nodejs">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/logos/logo_nodejs.svg" alt="Create a Vue.js app">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Vue.js 앱 만들기</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+        <li>
         <a href="https://docs.microsoft.com/windows/uwp/get-started/create-a-hello-world-app-js-uwp">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/logos/logo_windows.svg" alt="">
+                            <img src="/media/logos/logo_windows.svg" alt="Create a UWP app">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>UWP(유니버설 Windows 앱) 시작</h3>
+                        <h3>UWP(유니버셜 Windows 앱) 만들기</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+</ul>
+
+<h2>자습서 자세히 알아보기</h2>
+
+<ul class="panelContent cardsFTitle">
+    <li>
+        <a href="https://docs.microsoft.com/aspnet/core/client-side/spa/">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/logos/logo_net.svg" alt="Create an app with ASP.NET and a JavaScript framework">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>ASP.NET 및 AngularJS를 사용하여 앱 만들기</h3>
                     </div>
                 </div>
             </div>
@@ -51,17 +100,17 @@ ms.locfileid: "40008540"
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/azure/app-service-web/app-service-web-nodejs-get-started">
+        <a href="https://docs.microsoft.com/visualstudio/javascript/tutorial-nodejs">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/logos/logo_nodejs.svg" alt="">
+                            <img src="/media/logos/logo_nodejs.svg" alt="Create a Node.js app with Express">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Azure 및 Node.js 시작</h3>
+                        <h3>Express를 사용하여 Node.js 앱 만들기</h3>
                     </div>
                 </div>
             </div>
@@ -69,17 +118,17 @@ ms.locfileid: "40008540"
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/">
+        <a href="https://docs.microsoft.com/visualstudio/javascript/tutorial-nodejs-with-react-and-jsx">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/logos/logo_cordova.svg" alt="">
+                            <img src="/media/logos/logo_nodejs.svg" alt="Create a Node.js app with React">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Apache Cordova용 도구</h3>
+                        <h3>React를 사용하여 Node.js 앱 만들기</h3>
                     </div>
                 </div>
             </div>
@@ -87,17 +136,17 @@ ms.locfileid: "40008540"
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/aspnet/core/client-side/angular">
+        <a href="https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/first-steps/build-your-first-app?view=toolsforcordova-2017">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/logos/logo_net.svg" alt="">
+                            <img src="/media/logos/logo_cordova.svg" alt="Create an app with Apache Cordova">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>ASP.NET 및 AngularJS와 같은 프레임워크 시작</h3>
+                        <h3>Apache Cordova를 사용하여 앱 만들기</h3>
                     </div>
                 </div>
             </div>

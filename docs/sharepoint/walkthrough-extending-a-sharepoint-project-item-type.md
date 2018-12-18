@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b7d0604e0e80fcb0fa14c65bd57669f60e68fd11
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 756486daa709efd6ce1ff697d6d190bb7f4a2e34
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118267"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295724"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>연습: SharePoint 프로젝트 항목 형식 확장
   사용할 수는 **비즈니스 데이터 연결 모델** SharePoint에서 비즈니스 데이터 연결 (BDC) 서비스에 대 한 모델을 만드는 프로젝트 항목입니다. 기본적으로이 프로젝트 항목을 사용 하 여 모델을 만들 때 모델의 데이터 표시 되지 않습니다 사용자. 사용자가 데이터를 볼 수 있도록 SharePoint에 외부 목록도 만들어야 합니다.  
@@ -42,24 +42,24 @@ ms.locfileid: "37118267"
 ## <a name="prerequisites"></a>전제 조건  
  이 연습을 완료 하려면 개발 컴퓨터의 다음 구성 요소가 필요 합니다.  
   
--   Microsoft Windows, SharePoint, Visual Studio의 버전을 지원 합니다. 자세한 내용은 [SharePoint 솔루션 개발을 위한 요구 사항](../sharepoint/requirements-for-developing-sharepoint-solutions.md)합니다.  
+- Microsoft Windows, SharePoint, Visual Studio의 버전을 지원 합니다.  
   
--   [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)] 이 연습에서는 합니다 **VSIX 프로젝트** 템플릿 프로젝트 항목을 배포 하려면 VSIX 패키지를 만들려면 sdk에서. 자세한 내용은 [Visual Studio에서 SharePoint 도구 확장](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)합니다.  
+- [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)] 이 연습에서는 합니다 **VSIX 프로젝트** 템플릿 프로젝트 항목을 배포 하려면 VSIX 패키지를 만들려면 sdk에서. 자세한 내용은 [Visual Studio에서 SharePoint 도구 확장](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)합니다.  
   
- 다음 개념을 이해에 도움이 필요 하지는 않지만, 연습을 완료 하는:  
+  다음 개념을 이해에 도움이 필요 하지는 않지만, 연습을 완료 하는:  
   
--   BDC 서비스에서 [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]합니다. 자세한 내용은 [BDC 아키텍처](http://go.microsoft.com/fwlink/?LinkId=177798)합니다.  
+- BDC 서비스에서 [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]합니다. 자세한 내용은 [BDC 아키텍처](http://go.microsoft.com/fwlink/?LinkId=177798)합니다.  
   
--   BDC 모델에 대 한 XML 스키마입니다. 자세한 내용은 [BDC 모델 인프라](http://go.microsoft.com/fwlink/?LinkId=177799)합니다.  
+- BDC 모델에 대 한 XML 스키마입니다. 자세한 내용은 [BDC 모델 인프라](http://go.microsoft.com/fwlink/?LinkId=177799)합니다.  
   
 ## <a name="create-the-projects"></a>프로젝트 만들기
  이 연습을 완료 하려면 두 프로젝트를 만들어야 합니다.  
   
--   프로젝트 항목 확장을 배포 하려면 VSIX 패키지를 만들려면 VSIX 프로젝트입니다.  
+- 프로젝트 항목 확장을 배포 하려면 VSIX 패키지를 만들려면 VSIX 프로젝트입니다.  
   
--   프로젝트 항목 확장을 구현 하는 클래스 라이브러리 프로젝트.  
+- 프로젝트 항목 확장을 구현 하는 클래스 라이브러리 프로젝트.  
   
- 프로젝트를 만들어 연습을 시작 합니다.  
+  프로젝트를 만들어 연습을 시작 합니다.  
   
 #### <a name="to-create-the-vsix-project"></a>VSIX 프로젝트를 만들려면  
   
@@ -164,7 +164,7 @@ ms.locfileid: "37118267"
   
 1.  **솔루션 탐색기**선택한을 GenerateExternalDataLists 프로젝트에서 source.extension.vsixmanifest 파일에 대 한 바로 가기 메뉴를 열고 **엽니다**합니다.  
   
-     Visual Studio 매니페스트 편집기에서 파일을 엽니다. Source.extension.vsixmanifest 파일 모든 VSIX 패키지에 필요한 extension.vsixmanifest 파일에 대 한 기준입니다. 이 파일에 대 한 자세한 내용은 참조 하세요. [VSIX 확장 스키마 1.0 참조](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)합니다.  
+     Visual Studio 매니페스트 편집기에서 파일을 엽니다. Source.extension.vsixmanifest 파일 모든 VSIX 패키지에 필요한 extension.vsixmanifest 파일에 대 한 기준입니다. 이 파일에 대 한 자세한 내용은 참조 하세요. [VSIX 확장 스키마 1.0 참조](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)합니다.  
   
 2.  에 **Product Name** 상자에 입력 합니다 **외부 데이터 목록 생성기**합니다.  
   
@@ -179,7 +179,7 @@ ms.locfileid: "37118267"
 6.  에 **형식** 목록에서 선택 **Microsoft.VisualStudio.MefComponent**합니다.  
   
     > [!NOTE]  
-    >  이 값에 해당 하는 `MefComponent` extension.vsixmanifest 파일의 요소입니다. 이 요소는 VSIX 패키지 확장 어셈블리의 이름을 지정합니다. 자세한 내용은 [MEFComponent 요소 (VSX 스키마)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551)합니다.  
+    >  이 값에 해당 하는 `MefComponent` extension.vsixmanifest 파일의 요소입니다. 이 요소는 VSIX 패키지 확장 어셈블리의 이름을 지정합니다. 자세한 내용은 [MEFComponent 요소 (VSX 스키마)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))합니다.  
   
 7.  에 **소스** 목록에서 선택 **현재 솔루션의 프로젝트**합니다.  
   
@@ -220,7 +220,7 @@ ms.locfileid: "37118267"
   
 5.  에 **이름** 상자에 입력 합니다 **SharePointProjectTestBDC**를 선택한 후는 **확인** 단추입니다.  
   
-6.  SharePoint 사용자 지정 마법사에서에서 디버깅을 위해 사용 하려는 사이트의 URL을 입력 **팜 솔루션으로 배포**를 선택한 후 합니다 **마침**단추입니다.  
+6.  SharePoint 사용자 지정 마법사에서에서 디버깅을 위해 사용 하려는 사이트의 URL을 입력 **팜 솔루션으로 배포**를 선택한 후 합니다 **마침** 단추입니다.  
   
 7.  SharePointProjectTestBDC 프로젝트에 대 한 바로 가기 메뉴를 열고 **추가**를 선택한 후 **새 항목**합니다.  
   

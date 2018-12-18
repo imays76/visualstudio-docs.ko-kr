@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f59167b356f4a04b4b37e699fbe49f1ea82943e
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: cf07f939a9ce15d2ebca7afb0ee37695fa5fbf98
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692303"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220601"
 ---
 # <a name="concurrency-visualizer-markers"></a>동시성 시각화 도우미 표식
 동시성 시각화 도우미에서 표식은 응용 프로그램의 이벤트를 나타내는 아이콘입니다.  일반적으로 응용 프로그램은 응용 프로그램에서의 단계 또는 발생 작업을 지정하기 위해 이러한 이벤트를 생성합니다.  이벤트는 응용 프로그램에서 생성되거나 응용 프로그램에서 사용되는 라이브러리 및 런타임에 의해 생성될 수 있습니다.  
@@ -43,21 +43,21 @@ ms.locfileid: "34692303"
 ## <a name="known-sources-of-markers"></a>표식의 알려진 소스  
  공급자가 특정 제약 조건을 준수하는 한 모든 ETW 공급자는 표식을 생성할 수 있습니다. 표식에 대해 추가 이벤트 소스를 수신하도록 동시성 시각화 도우미를 구성할 수 있습니다. 기본적으로 다음과 같은 이벤트 소스를 수신합니다.  
   
--   [동시성 시각화 도우미 SDK](../profiling/concurrency-visualizer-sdk.md)  
+- [동시성 시각화 도우미 SDK](../profiling/concurrency-visualizer-sdk.md)  
   
--   [TPL(작업 병렬 라이브러리)](/dotnet/standard/parallel-programming/task-parallel-library-tpl)  
+- [TPL(작업 병렬 라이브러리)](/dotnet/standard/parallel-programming/task-parallel-library-tpl)  
   
--   [데이터 흐름](/dotnet/standard/parallel-programming/dataflow-task-parallel-library)  
+- [데이터 흐름](/dotnet/standard/parallel-programming/dataflow-task-parallel-library)  
   
--   [PLINQ(병렬 LINQ)](/dotnet/standard/parallel-programming/parallel-linq-plinq)  
+- [PLINQ(병렬 LINQ)](/dotnet/standard/parallel-programming/parallel-linq-plinq)  
   
--   [동시성 런타임](/cpp/parallel/concrt/concurrency-runtime)  
+- [동시성 런타임](/cpp/parallel/concrt/concurrency-runtime)  
   
--   [시나리오 표식 지원](http://msdn.microsoft.com/en-us/e3b55bc2-b451-4214-ae00-0c7f5a5baec8)  
+- [시나리오 표식 지원](/previous-versions/visualstudio/visual-studio-2010/dd984115\(v\=vs.100\))  
   
--   [C++ AMP(C++ Accelerated Massive Parallelism)](/cpp/parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism)  
+- [C++ AMP(C++ Accelerated Massive Parallelism)](/cpp/parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism)  
   
- [고급 설정](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) 대화 상자의 표식 탭에서 여러 소스의 표식을 동시성 시각화 도우미에 표시할지 여부를 제어할 수 있으며, 중요도 및 범주에 따라 표식을 필터링할 수 있습니다.  
+  [고급 설정](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) 대화 상자의 표식 탭에서 여러 소스의 표식을 동시성 시각화 도우미에 표시할지 여부를 제어할 수 있으며, 중요도 및 범주에 따라 표식을 필터링할 수 있습니다.  
   
 ## <a name="markers-from-eventsource"></a>EventSource의 표식  
  동시성 시각화 도우미는 EventSource 이벤트도 표시할 수 있습니다.  자세한 내용은 [EventSource 이벤트를 표식으로 시각화](../profiling/visualizing-eventsource-events-as-markers.md)를 참조하세요.  

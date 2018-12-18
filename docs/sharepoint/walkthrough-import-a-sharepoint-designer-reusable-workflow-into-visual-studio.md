@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2269beef06f7ca43556c2c00493ac8d7cb1c4ad5
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 249799bc9daf13992bd9fe03dff8c86263f91263
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119541"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851480"
 ---
 # <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>연습: Visual Studio에 SharePoint Designer의 재사용 가능한 워크플로 가져오기
   이 연습에서는 SharePoint Designer 2010에서 만든 재사용 가능한 워크플로 가져오는 방법을 보여는 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 워크플로 프로젝트입니다.  
@@ -38,22 +38,22 @@ ms.locfileid: "37119541"
   
  이 연습에서는 다음 작업을 수행합니다.  
   
--   SharePoint Designer에서 간단 하 고 재사용 가능한 워크플로 만드는 중입니다.  
+- SharePoint Designer에서 간단 하 고 재사용 가능한 워크플로 만드는 중입니다.  
   
--   SharePoint Designer 재사용 가능한 워크플로를 내보내는 *.wsp* 파일 및 SharePoint에 있습니다.  
+- SharePoint Designer 재사용 가능한 워크플로를 내보내는 *.wsp* 파일 및 SharePoint에 있습니다.  
   
--   가져오기의 *.wsp* 파일 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 재사용 가능한 워크플로 가져오기 프로젝트를 사용 하 여 합니다.  
+- 가져오기의 *.wsp* 파일 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 재사용 가능한 워크플로 가져오기 프로젝트를 사용 하 여 합니다.  
   
--   코드를 추가 하 여 워크플로 변경 합니다.  
+- 코드를 추가 하 여 워크플로 변경 합니다.  
   
--   SharePoint 사이트에서 가져온된 워크플로 사용합니다.  
+- SharePoint 사이트에서 가져온된 워크플로 사용합니다.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>전제 조건  
  이 연습을 완료하려면 다음 구성 요소가 필요합니다.  
   
--   지원 되는 버전 [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] 및 SharePoint입니다. 자세한 내용은 [SharePoint 솔루션 개발을 위한 요구 사항](../sharepoint/requirements-for-developing-sharepoint-solutions.md)합니다.  
+-   지원 되는 버전 [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] 및 SharePoint입니다.  
   
 -   Visual Studio.  
   
@@ -64,21 +64,21 @@ ms.locfileid: "37119541"
   
 #### <a name="to-create-sharepoint-subsites"></a>SharePoint 하위 사이트를 만들려면  
   
-1.  SharePoint Designer 2010의 메뉴 모음에서 선택 **파일** > **새 웹 사이트**합니다.  
+1. SharePoint Designer 2010의 메뉴 모음에서 선택 **파일** > **새 웹 사이트**합니다.  
   
-2.  에 **새 웹 사이트** 대화 상자에서 워크플로 만들거나 http://의 값을 사용 하려는 SharePoint 사이트로*SystemName*/ 선택한 후는 **확인** 단추입니다.  
+2. 에 **새 웹 사이트** 대화 상자에서 워크플로 만들거나 http://의 값을 사용 하려는 SharePoint 사이트로<em>SystemName</em>/ 선택한 후는 **확인** 단추입니다.  
   
-     홈 페이지가 나타납니다.  
+    홈 페이지가 나타납니다.  
   
-3.  에 **하위** 섹션을 선택 합니다 **새로 만들기** 단추.  
+3. 에 **하위** 섹션을 선택 합니다 **새로 만들기** 단추.  
   
-4.  에 **새로 만들기** 대화 상자에서 **SharePoint 템플릿** 왼쪽 창의 목록에서 선택한 **팀 사이트** 오른쪽 창의 목록에서.  
+4. 에 **새로 만들기** 대화 상자에서 **SharePoint 템플릿** 왼쪽 창의 목록에서 선택한 **팀 사이트** 오른쪽 창의 목록에서.  
   
-5.  에 **웹 사이트의 위치를 지정** 상자에 단어를 대체 **하위** URL의 **SPD1**를 선택한 후는 **확인** 단추입니다.  
+5. 에 **웹 사이트의 위치를 지정** 상자에 단어를 대체 **하위** URL의 **SPD1**를 선택한 후는 **확인** 단추입니다.  
   
-     SharePoint Designer로 새 하위를 열립니다. SharePoint Designer의이 인스턴스를 닫고 다시 인스턴스로 이동 하는 첫 번째 (최상위 사이트).  
+    SharePoint Designer로 새 하위를 열립니다. SharePoint Designer의이 인스턴스를 닫고 다시 인스턴스로 이동 하는 첫 번째 (최상위 사이트).  
   
-6.  두 번째 하위 단어를 대체 합니다.이 기간을 설정 하려면 3-5 단계를 반복 **subsite** 에 [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] 사용 하 여 **SPD2**합니다.  
+6. 두 번째 하위 단어를 대체 합니다.이 기간을 설정 하려면 3-5 단계를 반복 **subsite** 에 [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] 사용 하 여 **SPD2**합니다.  
   
 ## <a name="create-a-sharepoint-designer-reusable-workflow"></a>SharePoint Designer의 재사용 가능한 워크플로 만들기
  SharePoint에이 예를 사용할 수 있는 재사용 가능한 워크플로 포함 되어 있지 않으므로, 만들어집니다. 이 간단한 워크플로 특정 타이틀에 있는 태스크 목록에 새 작업을 입력 하는 경우 해당 사용자에 게 작업이 할당 됩니다.  
@@ -158,32 +158,32 @@ ms.locfileid: "37119541"
   
 #### <a name="to-import-a-workflow-from-a-wsp-file-and-modify-it"></a>.Wsp 파일에서 워크플로 가져오고 수정  
   
-1.  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], 메뉴 모음에서 **파일** > **New** > **프로젝트**합니다.  
+1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], 메뉴 모음에서 **파일** > **New** > **프로젝트**합니다.  
   
-2.  에 **새 프로젝트** 대화 상자에서 **SharePoint** 노드 아래의 **Visual C#** 또는 **Visual Basic**를 선택한 다음 합니다 **2010** 노드.  
+2. 에 **새 프로젝트** 대화 상자에서 **SharePoint** 노드 아래의 **Visual C#** 또는 **Visual Basic**를 선택한 다음 합니다 **2010** 노드.  
   
-3.  에 **템플릿** 창 선택 합니다 **다시 사용할 수 있는 SharePoint 2010 워크플로 가져오기** 템플릿을 파일로 프로젝트의 이름을 **WorkflowImportProject1**, 선택한 후는 **확인** 단추입니다.  
+3. 에 **템플릿** 창 선택 합니다 **다시 사용할 수 있는 SharePoint 2010 워크플로 가져오기** 템플릿을 파일로 프로젝트의 이름을 **WorkflowImportProject1**, 선택한 후는 **확인** 단추입니다.  
   
-     SharePoint 사용자 지정 마법사가 나타납니다.  
+    SharePoint 사용자 지정 마법사가 나타납니다.  
   
-4.  에 **디버깅에 대 한 사이트 및 보안 수준을 지정** 페이지에서 입력 합니다 [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] 이전에 만든 두 번째 SharePoint 하위 사이트에 대 한: http://*시스템 이름*/SPD2 합니다.  
+4. 에 **디버깅에 대 한 사이트 및 보안 수준을 지정** 페이지에서 입력 합니다 [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] 이전에 만든 두 번째 SharePoint 하위 사이트에 대 한: http://<em>시스템 이름</em>/SPD2 합니다.  
   
-5.  에 **이 SharePoint 솔루션의 신뢰 수준을?** 섹션을 선택 합니다 **팜 솔루션으로 배포** 옵션 단추를 선택한 후는 **다음** 단추.  
+5. 에 **이 SharePoint 솔루션의 신뢰 수준을?** 섹션을 선택 합니다 **팜 솔루션으로 배포** 옵션 단추를 선택한 후는 **다음** 단추.  
   
-     샌드박스가 적용 된에 대 한 자세한 내용은 참조는 팜 솔루션에 비해 [샌드박스 솔루션 고려 사항](../sharepoint/sandboxed-solution-considerations.md)합니다.  
+    샌드박스가 적용 된에 대 한 자세한 내용은 참조는 팜 솔루션에 비해 [샌드박스 솔루션 고려 사항](../sharepoint/sandboxed-solution-considerations.md)합니다.  
   
-6.  에 **새 프로젝트 소스 지정** 페이지에서 이전에 저장 된 시스템의 위치로 이동 합니다 *.wsp* 파일, 파일을 열고, 선택한를 **다음** 단추입니다.  
+6. 에 **새 프로젝트 소스 지정** 페이지에서 이전에 저장 된 시스템의 위치로 이동 합니다 *.wsp* 파일, 파일을 열고, 선택한를 **다음** 단추입니다.  
   
-    > [!NOTE]  
-    >  선택는 **완료** 에서 사용 가능한 모든 항목을 가져오려는 단추를 *.wsp* 파일.  
+   > [!NOTE]  
+   >  선택는 **완료** 에서 사용 가능한 모든 항목을 가져오려는 단추를 *.wsp* 파일.  
   
-     그러면 재사용 가능한 워크플로 가져오기에 사용할 수 있는 목록이 표시 됩니다.  
+    그러면 재사용 가능한 워크플로 가져오기에 사용할 수 있는 목록이 표시 됩니다.  
   
-7.  **가져올 항목 선택** 상자를 선택 합니다 **SPD Task Workflow** 워크플로 선택한 후는 **마침** 단추.  
+7. **가져올 항목 선택** 상자를 선택 합니다 **SPD Task Workflow** 워크플로 선택한 후는 **마침** 단추.  
   
-     프로젝트에 가져오기 작업이 완료 되 면 **WorkflowImportProject1** 라는 워크플로 포함 하는 데 만들어집니다 **SPD_Workflow_TestFT**합니다. 이 폴더에는 워크플로의 정의 파일 *Elements.xml* 및 워크플로 디자이너 파일 (*.xoml*). 디자이너에 두 파일이: 규칙 (.rules) 파일과 코드 숨김 파일 (하거나 *.cs* 또는 *.vb*프로젝트의 프로그래밍 언어에 따라).  
+    프로젝트에 가져오기 작업이 완료 되 면 **WorkflowImportProject1** 라는 워크플로 포함 하는 데 만들어집니다 **SPD_Workflow_TestFT**합니다. 이 폴더에는 워크플로의 정의 파일 *Elements.xml* 및 워크플로 디자이너 파일 (*.xoml*). 디자이너에 두 파일이: 규칙 (.rules) 파일과 코드 숨김 파일 (하거나 *.cs* 또는 *.vb*프로젝트의 프로그래밍 언어에 따라).  
   
-8.  **솔루션 탐색기**를 삭제 합니다 **기타 가져온 파일** 폴더입니다.  
+8. **솔루션 탐색기**를 삭제 합니다 **기타 가져온 파일** 폴더입니다.  
   
 9. 에 *Elements.xml* 파일을 삭제 `InstantiationURL="_layouts/IniErkflIP.sspx"`합니다.  
   
@@ -203,11 +203,11 @@ ms.locfileid: "37119541"
   
 13. 에 **Windows Workflow v3.0** 노드의 합니다 **도구 상자**, 다음 단계 중 하나를 수행:  
   
-    -   바로 가기 메뉴를 열고 합니다 **코드** 활동을 선택한 후 **복사**합니다. 워크플로 디자이너에서 아래의 줄에 대 한 바로 가기 메뉴를 열고 합니다 **SequenceActivity1** 활동을 선택한 후 **붙여넣기**합니다.  
+    - 바로 가기 메뉴를 열고 합니다 **코드** 활동을 선택한 후 **복사**합니다. 워크플로 디자이너에서 아래의 줄에 대 한 바로 가기 메뉴를 열고 합니다 **SequenceActivity1** 활동을 선택한 후 **붙여넣기**합니다.  
   
-    -   끌어서 합니다 **코드** 활동에서를 **도구 상자** 워크플로 디자이너에 아래의 줄에 연결 하 고는 **SequenceActivity1** 활동.  
+    - 끌어서 합니다 **코드** 활동에서를 **도구 상자** 워크플로 디자이너에 아래의 줄에 연결 하 고는 **SequenceActivity1** 활동.  
   
-     명명 된 워크플로 디자이너에 활동 추가 **CodeActivity1**합니다. 이 작업에서는 사용자가 워크플로 시작 하는 경우 알림 목록에 공지를 만드는 코드 작업을 추가 합니다.  
+      명명 된 워크플로 디자이너에 활동 추가 **CodeActivity1**합니다. 이 작업에서는 사용자가 워크플로 시작 하는 경우 알림 목록에 공지를 만드는 코드 작업을 추가 합니다.  
   
 14. 다음 단계 중 하나를 수행합니다.  
   

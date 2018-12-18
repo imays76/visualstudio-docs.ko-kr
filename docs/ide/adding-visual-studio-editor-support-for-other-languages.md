@@ -1,5 +1,5 @@
 ---
-title: 다른 언어에 대한 Visual Studio 편집기 지원 추가
+title: 다른 언어에 대한 편집기 지원 추가
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e139fe1858772ed0505f774ce4c36e00bc059e0
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: f0ac463161d42e0d9ddf6b845b752916675ba4fe
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746128"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062097"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>다른 언어에 대한 Visual Studio 편집기 지원 추가
 
@@ -31,7 +31,7 @@ Visual Studio 편집기에서 다양한 컴퓨터 언어 읽기 및 탐색을 �
 
 ## <a name="syntax-colorization-statement-completion-and-navigate-to-support"></a>구문 색 지정, 문 완성 및 탐색 지원
 
-구문 색 지정, 문 완성, 탐색 등의 Visual Studio 편집기 기능은 쉽게 코드를 읽고 만들고 편집하는 데 도움이 됩니다. 다음 스크린샷은 Visual Studio에서 Perl 스크립트를 편집하는 예를 보여 줍니다. 구문에 자동으로 색이 지정됩니다. 예를 들어 코드의 주석은 녹색, 코드는 검은색, 경로는 빨간색, 문은 파란색으로 표시됩니다. Visual Studio 편집기는 지원하는 모든 언어에 자동으로 구문 색 지정을 적용합니다. 또한 알려진 언어 키워드 또는 개체를 입력하기 시작하면 문 완성 기능을 통해 가능한 문 및 개체 목록이 표시됩니다. 문 완성 기능은 보다 빠르고 쉽게 코드를 만드는 데 도움이 됩니다.
+구문 색 지정, 명령문 완성(IntelliSense라고도 함) 및 _탐색 대상_와 같은 Visual Studio 편집기의 기능을 사용하면 코드를 보다 쉽게 작성, 읽기 및 편집할 수 있습니다. 다음 스크린샷은 Visual Studio에서 Perl 스크립트를 편집하는 예를 보여 줍니다. 구문에 자동으로 색이 지정됩니다. 예를 들어 코드의 주석은 녹색, 코드는 검은색, 경로는 빨간색, 문은 파란색으로 표시됩니다. Visual Studio 편집기는 지원하는 모든 언어에 자동으로 구문 색 지정을 적용합니다. 또한 알려진 언어 키워드 또는 개체를 입력하기 시작하면 문 완성 기능을 통해 가능한 문 및 개체 목록이 표시됩니다. 명령문 완성 기능은 코드 작성을 보다 쉽고 빠르게 도와줍니다.
 
 ![Perl 스크립트의 구문 색 지정](../ide/media/vside_perledit.png)
 
@@ -84,7 +84,7 @@ Visual Studio에 대한 새 TextMate 문법을 다음 폴더에 추가합니다.
 
 Windows에서 *%userprofile%* 은 *c:\Users\\\<user name>* 경로로 확인됩니다. 시스템에 extensions 폴더가 없는 경우 새로 만들어야 합니다. 폴더가 이미 있는 경우 숨겨집니다.
 
-TextMate 문법을 만드는 방법에 대한 자세한 내용은 [TextMate – Introduction to Language Grammars: How to add source code syntax highlighting embedded in HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/)(TextMate – 언어 문법 소개: HTML에 포함된 소스 코드 구문 강조 표시를 추가하는 방법) 및 [Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle)(Textmate 번들의 언어 문법 및 사용자 지정 테마를 만드는 방법에 대한 참고 사항)을 참조하세요.
+TextMate 문법을 만드는 방법에 대한 자세한 내용은 [TextMate - 언어 문법 소개: HTML에 포함된 소스 코드 구문 강조 표시를 추가하는 방법](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) 및 [Textmate 번들에 대한 언어 문법 및 사용자 지정 테마를 만드는 방법에 대한 참고 사항](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 

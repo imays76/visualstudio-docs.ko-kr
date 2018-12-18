@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee2676b85889226e2fbb9665462d83aa4b0d6520
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2422c2578979b1fc8c5f07ba92aa4117c87042d1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124852"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933913"
 ---
 # <a name="moduleinfoflags"></a>MODULE_INFO_FLAGS
-모듈에 대 한 기호의 상태를 지정 합니다.  
+모듈의 기호를의 상태를 지정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -42,7 +42,7 @@ public enum enum_MODULE_INFO_FLAGS {
   
 ## <a name="members"></a>멤버  
  MIF_SYMBOLS_LOADED  
- 하나 이상의 일련의 기호가 모듈에 의해 로드 된 (그렇지 않으면 된 로드 된 기호가 없음).  
+ 모듈에 의해 로드 된 하나 이상의 일련의 기호로 (그렇지 않으면 된 로드 된 기호가 없음).  
   
 ## <a name="remarks"></a>설명  
  이 값은 반환 된 [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md) 메서드.  
