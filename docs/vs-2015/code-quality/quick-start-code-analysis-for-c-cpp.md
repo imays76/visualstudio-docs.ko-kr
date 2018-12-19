@@ -1,5 +1,5 @@
 ---
-title: '빠른 시작: c-c + +에 대 한 코드 분석 | Microsoft Docs'
+title: C/C++ 코드 분석 바로 시작하기 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -24,7 +24,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51758191"
 ---
-# <a name="quick-start-code-analysis-for-cc"></a>퀵 스타트: C/C++용 코드 분석
+# <a name="quick-start-code-analysis-for-cc"></a>C/C++ 코드 분석 바로 시작하기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 C 또는 C++ 코드에 대한 코드 분석을 정기적으로 실행하여 응용 프로그램의 품질을 향상시킬 수 있습니다. 이 테스트를 통해 발견 하기 어려운 결함 또는 프로그래밍 관행의 위반의 일반적인 문제를 찾을 수 있습니다. 코드 분석에서는 올바르지만 해당 코드를 사용하는 당사자나 다른 사용자에게 문제를 일으킬 수 있는 특정 코드 패턴을 검색하므로 코드 분석 경고는 컴파일러 오류 및 경고와 다릅니다.  
