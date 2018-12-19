@@ -1,6 +1,6 @@
 ---
-title: C + + 디버그 구성에 대 한 설정을 프로젝트 | Microsoft Docs
-ms.custom: ''
+title: C + + 디버그 구성에 대 한 프로젝트 설정
+ms.custom: seodec18
 ms.date: 11/26/2018
 ms.technology: vs-ide-debug
 ms.topic: reference
@@ -113,12 +113,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b333dca8f717cbd8e1172ed00b4a044aafeed857
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 951b46bfc6ef0910731dfe76cc9913f2c4a423ad
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389658"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066904"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>C++ 디버그 구성에 대한 프로젝트 설정
 C 또는 Visual c + + 디버그 구성에 대 한 프로젝트 설정을 변경할 수 있습니다 합니다 **속성 페이지** 대화 상자에 설명 된 대로 [방법: 디버그 및 릴리스 구성 설정](../debugger/how-to-set-debug-and-release-configurations.md)합니다. 다음 표에서는 **속성 페이지** 대화 상자에서 디버거 관련 설정을 확인할 수 있는 위치에 대해 설명합니다.  
@@ -143,7 +143,7 @@ C 또는 Visual c + + 디버그 구성에 대 한 프로젝트 설정을 변경�
 | **원격 서버 이름**(원격 Windows 디버거) | 응용 프로그램을 디버깅할 다른 컴퓨터의 이름을 지정합니다.<br /><br /> RemoteMachine 빌드 매크로는 이 속성의 값으로 설정됩니다. 자세한 내용은 [빌드 명령 및 속성 매크로](/cpp/ide/common-macros-for-build-commands-and-properties)를 참조하세요. |
 | **연결**(원격 Windows 디버거) | 원격 디버깅을 위해 표준 및 인증 없는 연결 형식 사이를 전환할 수 있습니다. **원격 서버 이름** 상자에 원격 컴퓨터 이름을 지정합니다. 연결 형식에는 다음이 포함됩니다.<br /><br /> -   **Windows 인증을 사용한 원격**<br />-   **인증을 사용하지 않는 원격**<br /><br /> **참고** 인증을 사용하지 않는 원격 디버깅의 경우 원격 컴퓨터가 보안 위반에 취약할 수 있습니다. Windows 인증 모드를 사용하는 것이 더 안전합니다.<br /><br /> 자세한 내용은 [원격 디버깅 설치](../debugger/remote-debugging.md)를 참조하세요. |
 | **HTTP URL**(웹 서비스 디버거 및 웹 브라우저 디버거) | 디버깅하려는 프로젝트가 있는 URL을 지정합니다. |
-| **디버거 형식** | 사용할 디버거 형식을 지정합니다. **네이티브 전용**, **관리 전용**, **GPU 전용**, **혼합**, **자동**(기본값) 또는 **스크립트**를 지정할 수 있습니다.<br /><br /> -   **네이티브 전용**은 비관리 C++ 코드에 사용합니다.<br />-   **관리 전용**은 공용 언어 런타임에서 실행되는 코드(관리 코드)에 사용합니다.<br />-   **혼합**은 관리 코드와 비관리 코드 둘 다에 사용할 수 있는 디버거를 호출합니다.<br />-   **자동**은 컴파일러와 EXE 정보에 따라 디버거 형식을 결정합니다.<br />-   **스크립트**는 스크립트용 디버거를 호출합니다.<br />-   **GPU 전용**은 GPU 디바이스 또는 DirectX 기준 래스터라이저에서 실행되는 C++ AMP 코드에 사용합니다. 참조 [GPU 디버깅 코드](../debugger/debugging-gpu-code.md)합니다. |
+| **디버거 형식** | 사용할 디버거 형식을 지정 합니다. **네이티브 전용**, **관리 전용**를 **GPU 전용**를 **혼합**를 **자동** (기본값) 또는 **스크립트**.<br /><br /> -   **네이티브 전용**은 비관리 C++ 코드에 사용합니다.<br />-   **관리 전용**은 공용 언어 런타임에서 실행되는 코드(관리 코드)에 사용합니다.<br />-   **혼합**은 관리 코드와 비관리 코드 둘 다에 사용할 수 있는 디버거를 호출합니다.<br />-   **자동**은 컴파일러와 EXE 정보에 따라 디버거 형식을 결정합니다.<br />-   **스크립트**는 스크립트용 디버거를 호출합니다.<br />-   **GPU 전용**은 GPU 디바이스 또는 DirectX 기준 래스터라이저에서 실행되는 C++ AMP 코드에 사용합니다. 참조 [GPU 디버깅 코드](../debugger/debugging-gpu-code.md)합니다. |
 | **환경** (로컬 Windows 디버거 및 원격 Windows 디버거) | 디버깅할 프로그램의 환경 변수를 지정합니다. 표준 환경 변수 구문을 사용 하 여 (예를 들어 `PATH="%SystemRoot%\..."`). 이러한 변수는 **환경 병합** 설정에 따라 시스템 환경과 병합되거나 시스템 환경을 재정의합니다. 설정 열에서을 클릭 하는 "..." 나타납니다. 환경 변수를 편집 하려면 해당 링크를 선택 합니다. |
 | **환경 병합**(로컬 Windows 디버거) | **환경** 상자에 지정한 변수를 운영 체제에 정의된 환경과 병합할지 여부를 결정합니다. 기본 설정은 예입니다. |
 | **SQL 디버깅**(MPI 클러스터 디버거를 제외한 모든 디버거) | [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 응용 프로그램에서 SQL 프로시저를 디버깅할 수 있습니다. 기본 설정은 아니요입니다. |

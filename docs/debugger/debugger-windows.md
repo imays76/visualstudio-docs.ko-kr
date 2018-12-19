@@ -1,6 +1,6 @@
 ---
-title: Visual Studio에서 Windows 디버거 | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: 디버거 창 | Microsoft Docs
+ms.custom: seodec18
 ms.date: 04/25/2017
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,16 +10,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ebf9896626a26d1462c2f1d8639722b28ef1e1ea
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
-ms.translationtype: MT
+ms.openlocfilehash: 05d3cd5cd56010e62b6ca50a76e726cb7998070b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178308"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065154"
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>Visual Studio에서 디버거 Windows에 알아봅니다
 
-프로그램을 디버그하는 동안 대부분의 디버거 창을 열 수 있습니다. 디버거 창의 목록을 보려면 중단점을 설정하고 디버깅을 시작합니다. 중단점 및 실행 중지에 도달 하면 클릭 **디버그 > Windows**합니다.
+프로그램을 디버그하는 동안 대부분의 디버거 창을 열 수 있습니다. 디버거 창의 목록을 보려면 중단점을 설정하고 디버깅을 시작합니다. 중단점을 적중하고 실행이 중지되면 **디버그 > Windows**를 클릭합니다.
 
 ||||
 |-|-|-|
@@ -34,7 +34,7 @@ ms.locfileid: "39178308"
 |호출 스택|Ctrl+Alt+C|[방법: 호출 스택 창 사용](../debugger/how-to-use-the-call-stack-window.md)|
 |직접 실행|Ctrl+Alt+I|[직접 실행 창](../ide/reference/immediate-window.md)|
 |병렬 스택|Ctrl+Shift+D, S|[병렬 스택 창 사용](../debugger/using-the-parallel-stacks-window.md)|
-|병렬 조사식|Ctrl+Shift+D, (1, 2, 3, 4)|[가져올 다중 스레드 응용 프로그램 디버깅 시작](../debugger/get-started-debugging-multithreaded-apps.md)|
+|병렬 조사식|Ctrl+Shift+D, (1, 2, 3, 4)|[다중 스레드 애플리케이션 디버깅 시작](../debugger/get-started-debugging-multithreaded-apps.md)|
 |스레드|Ctrl+Alt+H|[스레드 창을 사용 하 여 디버깅](../debugger/how-to-use-the-threads-window.md)|
 |모듈|Ctrl+Alt+U|[방법: 모듈 창 사용](../debugger/how-to-use-the-modules-window.md)|
 |GPU 스레드|-|[방법: GPU 스레드 창 사용](../debugger/how-to-use-the-gpu-threads-window.md)|

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio O/R 디자이너 개요
+title: O/R 디자이너 개요
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 45e477c0-5c6b-41f9-b2d0-2808fb4f6537
@@ -10,14 +10,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7c7abaa95c3b7c8f5ab78b4d58f383243b176f7a
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
-ms.translationtype: MT
+ms.openlocfilehash: 68b19993448ed68520f267177ca760975cd4d4aa
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089414"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066811"
 ---
-# <a name="linq-to-sql-tools-in-visual-studio"></a>Visual Studio에서 LINQ to SQL 도구
+# <a name="linq-to-sql-tools-in-visual-studio"></a>Visual Studio의 LINQ to SQL 도구
 
 LINQ to SQL 첫 번째 개체-관계형 매핑 기술을 Microsoft에서 출시 되었습니다. 기본 시나리오에서 잘 작동 하며 Visual Studio에서 지원 되는 데 계속 이지만 더 이상 개발 합니다. LINQ to SQL을 이미 사용 되는 레거시 응용 프로그램을 유지 관리 하는 경우 또는 다중 테이블 매핑이 필요 하지 않습니다 및 SQL Server를 사용 하는 간단한 응용 프로그램을 사용 합니다. 일반적으로 새 응용 프로그램 개체 관계형 매퍼 레이어를 필요할 때 Entity Framework를 사용 해야 합니다.
 
@@ -46,11 +46,11 @@ Visual Studio 만듭니다는 *.dbml* 파일을 솔루션에 추가 합니다. �
 
 ## <a name="create-and-configure-the-datacontext"></a>만들고 DataContext 구성
 
-추가한 후를 **LINQ to SQL 클래스** 프로젝트를 열고 항목은 **O/R 디자이너**, 빈 디자인 화면을 나타내는 빈 <xref:System.Data.Linq.DataContext> 구성 가능한 상태가 됩니다. <xref:System.Data.Linq.DataContext> 디자인 화면으로 끌어 온 첫째 항목에서 제공 하는 연결 정보를 사용 하 여 구성 됩니다. 따라서 <xref:System.Data.Linq.DataContext>는 디자인 화면에 놓여진 첫째 항목의 연결 정보를 사용하여 구성됩니다. 에 대 한 자세한 내용은 합니다 <xref:System.Data.Linq.DataContext> 클래스 참조 [DataContext 메서드 (O/R 디자이너)](../data-tools/datacontext-methods-o-r-designer.md)합니다.
+추가한 후를 **LINQ to SQL 클래스** 프로젝트를 열고 항목은 **O/R 디자이너**, 빈 디자인 화면을 나타내는 빈 <xref:System.Data.Linq.DataContext> 구성 가능한 상태가 됩니다. 따라서 <xref:System.Data.Linq.DataContext>는 디자인 화면에 놓여진 첫째 항목에서 제공된 연결 정보를 사용하여 구성됩니다. 따라서 <xref:System.Data.Linq.DataContext>는 디자인 화면에 놓여진 첫째 항목의 연결 정보를 사용하여 구성됩니다. 에 대 한 자세한 내용은 합니다 <xref:System.Data.Linq.DataContext> 클래스 참조 [DataContext 메서드 (O/R 디자이너)](../data-tools/datacontext-methods-o-r-designer.md)합니다.
 
 ## <a name="create-entity-classes-that-map-to-database-tables-and-views"></a>데이터베이스 테이블 및 뷰에 매핑되는 엔터티 클래스 만들기
 
-데이터베이스 테이블 및 뷰를 끌어 테이블 및 뷰에 매핑된 엔터티 클래스를 만들 수 있습니다 **서버 탐색기** 하거나 **데이터베이스 탐색기** 에 **O/R 디자이너**합니다. 이전 섹션에 표시 된 대로 <xref:System.Data.Linq.DataContext> 디자인 화면으로 끌어 온 첫째 항목에서 제공 하는 연결 정보를 사용 하 여 구성 됩니다. 다른 연결을 사용 하는 후속 항목에 추가 됩니다는 **O/R 디자이너**에 대 한 연결을 변경할 수는 <xref:System.Data.Linq.DataContext>합니다. 자세한 내용은 [방법: 만들 매핑된 LINQ to SQL 클래스 테이블 및 뷰 (O/R 디자이너)](../data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)합니다.
+데이터베이스 테이블 및 뷰를 끌어 테이블 및 뷰에 매핑된 엔터티 클래스를 만들 수 있습니다 **서버 탐색기** 하거나 **데이터베이스 탐색기** 에 **O/R 디자이너**합니다. 이전 섹션에서 설명한 것처럼 <xref:System.Data.Linq.DataContext>는 디자인 화면으로 끌어온 첫 번째 항목에서 제공된 연결 정보를 사용하여 구성됩니다. 다른 연결을 사용 하는 후속 항목에 추가 됩니다는 **O/R 디자이너**에 대 한 연결을 변경할 수는 <xref:System.Data.Linq.DataContext>합니다. 자세한 내용은 [방법: 테이블 및 보기에 매핑된 LINQ to SQL 클래스 만들기(O/R 디자이너)](../data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)를 참조하세요.
 
 ## <a name="create-datacontext-methods-that-call-stored-procedures-and-functions"></a>저장된 프로시저 및 함수를 호출 하는 DataContext 메서드 만들기
 
@@ -61,11 +61,11 @@ Visual Studio 만듭니다는 *.dbml* 파일을 솔루션에 추가 합니다. �
 
 ## <a name="configure-a-datacontext-to-use-stored-procedures-to-save-data-between-entity-classes-and-a-database"></a>엔터티 클래스와 데이터베이스 간에 데이터를 저장 하려면 저장된 프로시저를 사용 하도록 DataContext 구성
 
-앞에서 설명한 대로 저장 프로시저 및 함수를 호출하는 <xref:System.Data.Linq.DataContext> 메서드를 만들 수 있습니다. 또한 기본 LINQ to SQL 런타임 동작을 수행 하는 삽입, 업데이트 및 삭제에 사용 되는 저장된 프로시저를 할당할 수 있습니다. 자세한 내용은 [방법: 업데이트, 삽입 및 삭제 (O/R 디자이너)를 수행 하는 저장된 프로시저를 할당](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)합니다.
+앞에서 설명한 대로 저장 프로시저 및 함수를 호출하는 <xref:System.Data.Linq.DataContext> 메서드를 만들 수 있습니다. 또한 기본 LINQ to SQL 런타임 동작을 수행 하는 삽입, 업데이트 및 삭제에 사용 되는 저장된 프로시저를 할당할 수 있습니다. 자세한 내용은 [방법: 저장 프로시저를 할당하여 업데이트, 삽입 및 삭제 수행(O/R 디자이너)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)을 참조하세요.
 
 ## <a name="inheritance-and-the-or-designer"></a>상속 및 O/R 디자이너
 
-다른 개체와 마찬가지로 LINQ to SQL 클래스 상속을 사용할 수 및 다른 클래스에서 파생 되어야 합니다. 데이터베이스에서 상속 관계는 여러 가지 방법으로 만들어집니다. 합니다 **O/R 디자이너** 관계형 시스템에서 주로 구현 되는 단일 테이블 상속 개념을 지원 합니다. 자세한 내용은 [방법: O/R 디자이너를 사용 하 여 상속 구성](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)합니다.
+다른 개체와 마찬가지로 LINQ to SQL 클래스 상속을 사용할 수 및 다른 클래스에서 파생 되어야 합니다. 데이터베이스에서 상속 관계는 여러 가지 방법으로 만들어집니다. 합니다 **O/R 디자이너** 관계형 시스템에서 주로 구현 되는 단일 테이블 상속 개념을 지원 합니다. 자세한 내용은 [방법: O/R 디자이너를 사용하여 상속 구성](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)을 참조하세요.
 
 ## <a name="linq-to-sql-queries"></a>LINQ to SQL 쿼리
 
@@ -73,14 +73,14 @@ Visual Studio 만듭니다는 *.dbml* 파일을 솔루션에 추가 합니다. �
 
 ## <a name="separate-the-generated-datacontext-and-entity-class-code-into-different-namespaces"></a>생성 된 DataContext와 엔터티 클래스 코드를 다른 네임 스페이스로 분리
 
-**O/R 디자이너** 제공 합니다 **상황에 맞는 Namespace** 및 **엔터티 Namespace** 속성에는 <xref:System.Data.Linq.DataContext>합니다. 이들 속성은 <xref:System.Data.Linq.DataContext> 및 엔터티 클래스 코드가 어떤 네임스페이스로 생성되는지를 결정합니다. 기본적으로 이들 속성은 비어 있으며 <xref:System.Data.Linq.DataContext> 및 엔터티 클래스는 응용 프로그램의 네임스페이스로 생성됩니다. 응용 프로그램의 네임 스페이스 이외의 네임 스페이스에 코드를 생성 하는 값을 입력 합니다 **상황에 맞는 Namespace** 및/또는 **엔터티 Namespace** 속성입니다.
+**O/R 디자이너** 제공 합니다 **상황에 맞는 Namespace** 및 **엔터티 Namespace** 속성에는 <xref:System.Data.Linq.DataContext>합니다. 이들 속성은 <xref:System.Data.Linq.DataContext> 및 엔터티 클래스 코드가 어떤 네임스페이스로 생성되는지를 결정합니다. 기본적으로 이들 속성은 비어 있으며 <xref:System.Data.Linq.DataContext> 및 엔터티 클래스는 응용 프로그램의 네임스페이스로 생성됩니다. 코드를 애플리케이션의 네임스페이스가 아닌 다른 네임스페이스로 생성하려면 **컨텍스트 네임스페이스** 및/또는 **엔터티 네임스페이스** 속성에 값을 입력합니다.
 
 ## <a name="reference-content"></a>참조 콘텐츠
 
 - <xref:System.Linq>
 - <xref:System.Data.Linq>
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [LINQ to SQL (.NET Framework)](/dotnet/framework/data/adonet/sql/linq/index)
 - [질문과 대답 (.NET Framework)](/dotnet/framework/data/adonet/sql/linq/frequently-asked-questions)
