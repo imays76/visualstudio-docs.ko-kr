@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1bc8aee0a1294aeda4c57a3416de4a0cc98129f3
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
-ms.translationtype: MT
+ms.openlocfilehash: d48c0e1921c57923021e88a2a4a5bb5f89763ef1
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673044"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35675190"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>연습: 사용자 지정 XML 부분에 콘텐츠 컨트롤 바인딩
   이 연습에서는 문서에 저장된 XML 데이터에 Word에 대한 문서 수준 사용자 지정의 콘텐츠 컨트롤을 바인딩하는 방법을 보여 줍니다.  
@@ -36,19 +36,19 @@ ms.locfileid: "50673044"
   
  이 연습에서는 다음 작업을 수행합니다.  
   
-- 디자인 타임에 문서 수준 프로젝트의 Word 문서에 콘텐츠 컨트롤 추가  
+-   디자인 타임에 문서 수준 프로젝트의 Word 문서에 콘텐츠 컨트롤 추가  
   
-- 콘텐츠 컨트롤에 바인딩할 요소를 정의하는 XML 데이터 파일 및 XML 스키마 만들기  
+-   콘텐츠 컨트롤에 바인딩할 요소를 정의하는 XML 데이터 파일 및 XML 스키마 만들기  
   
-- 디자인 타임에 문서에 XML 스키마 연결  
+-   디자인 타임에 문서에 XML 스키마 연결  
   
-- 런타임에 문서의 사용자 지정 XML 부분에 XML 파일의 콘텐츠를 추가합니다.  
+-   런타임에 문서의 사용자 지정 XML 부분에 XML 파일의 콘텐츠를 추가합니다.  
   
-- 사용자 지정 XML 부분의 요소에 콘텐츠 컨트롤 바인딩  
+-   사용자 지정 XML 부분의 요소에 콘텐츠 컨트롤 바인딩  
   
-- XML 스키마에 정의된 값 집합에 <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> 바인딩  
+-   XML 스키마에 정의된 값 집합에 <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> 바인딩  
   
-  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+ [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>전제 조건  
  이 연습을 완료하려면 다음 구성 요소가 필요합니다.  
@@ -71,36 +71,36 @@ ms.locfileid: "50673044"
   
 ### <a name="to-add-content-controls-to-the-document"></a>문서에 콘텐츠 컨트롤을 추가하려면  
   
-1. 에 호스트 된 Word 문서에는 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 디자이너 리본에서 선택 합니다 **삽입** 탭 합니다.  
+1.  에 호스트 된 Word 문서에는 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 디자이너 리본에서 선택 합니다 **삽입** 탭 합니다.  
   
-2. 에 **테이블** 그룹에서 **테이블**, 2 열, 3 개의 행이 있는 테이블을 삽입 합니다.  
+2.  에 **테이블** 그룹에서 **테이블**, 2 열, 3 개의 행이 있는 테이블을 삽입 합니다.  
   
-3. 다음 열과 비슷하도록 첫 번째 열에 텍스트를 입력합니다.  
+3.  다음 열과 비슷하도록 첫 번째 열에 텍스트를 입력합니다.  
   
-   ||  
-   |-|  
-   |**직원 이름**|  
-   |**채용 날짜**|  
-   |**제목**|  
+    ||  
+    |-|  
+    |**직원 이름**|  
+    |**채용 날짜**|  
+    |**제목**|  
   
-4. 테이블의 두 번째 열, 첫 번째 행을 선택 합니다 (옆 **Employee Name**).  
+4.  테이블의 두 번째 열, 첫 번째 행을 선택 합니다 (옆 **Employee Name**).  
   
-5. 리본에서 선택 합니다 **개발자** 탭 합니다.  
+5.  리본에서 선택 합니다 **개발자** 탭 합니다.  
   
-   > [!NOTE]  
-   >  **개발자** 탭이 표시되지 않는 경우 먼저 개발자 탭을 표시해야 합니다. 자세한 내용은 [방법: 리본에 개발 도구 탭 표시](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)합니다.  
+    > [!NOTE]  
+    >  **개발자** 탭이 표시되지 않는 경우 먼저 개발자 탭을 표시해야 합니다. 자세한 내용은 [방법: 리본에 개발 도구 탭 표시](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)합니다.  
   
-6. 에 **컨트롤** 그룹을 선택 합니다 **텍스트** 단추 ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") 를추가할<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>첫째 셀으로 합니다.  
+6.  에 **컨트롤** 그룹을 선택 합니다 **텍스트** 단추 ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") 를추가할<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>첫째 셀으로 합니다.  
   
-7. 테이블의 두 번째 열, 두 번째 행을 선택 합니다 (옆 **Hire Date**).  
+7.  테이블의 두 번째 열, 두 번째 행을 선택 합니다 (옆 **Hire Date**).  
   
-8. **컨트롤** 그룹을 선택 합니다 **날짜 선택** 단추 ![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl") 를추가하려면<xref:Microsoft.Office.Tools.Word.DatePickerContentControl> 두 번째 셀에 있습니다.  
+8.  **컨트롤** 그룹을 선택 합니다 **날짜 선택** 단추 ![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl") 를추가하려면<xref:Microsoft.Office.Tools.Word.DatePickerContentControl> 두 번째 셀에 있습니다.  
   
 9. 테이블의 두 번째 열, 세 번째 행을 선택 합니다 (옆 **Title**).  
   
 10. 에 **컨트롤** 그룹에서 선택 합니다 **드롭 다운 목록** 단추 ![DropDownListContentControl](../vsto/media/dropdownlist.gif "DropDownListContentControl") 추가할 <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> 마지막 셀입니다.  
   
-    이 프로젝트에 대한 전체 사용자 인터페이스입니다. 지금 프로젝트를 실행하는 경우 첫 번째 행에 텍스트를 입력하고 두 번째 행에서 날짜를 선택할 수 있습니다. 다음 단계는 XML 파일의 문서에 표시하려는 데이터를 연결하는 것입니다.  
+ 이 프로젝트에 대한 전체 사용자 인터페이스입니다. 지금 프로젝트를 실행하는 경우 첫 번째 행에 텍스트를 입력하고 두 번째 행에서 날짜를 선택할 수 있습니다. 다음 단계는 XML 파일의 문서에 표시하려는 데이터를 연결하는 것입니다.  
   
 ## <a name="create-the-xml-data-file"></a>XML 데이터 파일 만들기  
  일반적으로 파일 또는 데이터베이스와 같은 외부 소스에서 사용자 지정 XML 부분에 저장할 XML 데이터를 가져옵니다. 이 연습에서는 문서의 콘텐츠 컨트롤에 바인딩할 요소로 표시된, 직원 데이터를 포함하는 XML 파일을 만듭니다. 런타임에 데이터를 사용할 수 있게 하려면 사용자 지정 어셈블리에 XML 파일을 리소스로 포함합니다.  
@@ -189,7 +189,7 @@ ms.locfileid: "50673044"
 ## <a name="attach-the-xml-schema-to-the-document"></a>XML 스키마 문서에 연결  
  `title` 요소의 유효한 값에 <xref:Microsoft.Office.Tools.Word.DropDownListContentControl>을 바인딩하려면 문서에 XML 스키마를 연결해야 합니다.  
   
-### <a name="to-attach-the-xml-schema-to-the-document--includeword15shortvstoincludesword-15-short-mdmd"></a>XML 스키마 문서를 연결 하려면 ( [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)])  
+### <a name="to-attach-the-xml-schema-to-the-document-includeword15shortvstoincludesword-15-short-mdmd"></a>문서에 XML 스키마를 연결하려면([!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)])  
   
 1.  활성화 **EmployeeControls.docx** 디자이너에서 합니다.  
   
@@ -296,7 +296,7 @@ ms.locfileid: "50673044"
   
 9. 파일 이름을 **EmployeeControls.docx.zip**합니다.  
   
-     합니다 **EmployeeControls.docx** 문서가 Open XML 형식으로 저장 됩니다. 이 문서의 바꾸어 합니다 *.zip* 파일 이름 확장명을 문서의 내용을 검사할 수 있습니다. Open XML에 대 한 자세한 내용은 기술 문서를 참조 하세요 [소개 Office (2007) Open XML 파일 형식](/previous-versions/office/developer/office-2007/aa338205(v=office.12))합니다.  
+     합니다 **EmployeeControls.docx** 문서가 Open XML 형식으로 저장 됩니다. 이 문서의 바꾸어 합니다 *.zip* 파일 이름 확장명을 문서의 내용을 검사할 수 있습니다. Open XML에 대 한 자세한 내용은 기술 문서를 참조 하세요 [소개 Office (2007) Open XML 파일 형식](http://msdn.microsoft.com/96018532-f62c-4da7-bbff-16b96a483fbf)합니다.  
   
 10. 엽니다는 **EmployeeControls.docx.zip** 파일입니다.  
   
