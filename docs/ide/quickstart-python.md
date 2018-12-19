@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 025adc3a99e2c5aabe2588852885e537553ddce6
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: a4ef6ebbbce03dce7105b49100c9c8f50c44e5e4
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219278"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159804"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>빠른 시작: Visual Studio를 사용하여 첫 번째 Python 웹앱 만들기
 
@@ -44,9 +44,9 @@ Python IDE인 Visual Studio에 대한 5~10분 분량의 소개에서는 Flask �
 
     ![새로 만든 빈 프로젝트를 보여주는 솔루션 탐색기](media/quickstart-python-01-empty-project.png)
 
-**질문: Python 응용 프로그램에 대한 Visual Studio에서 프로젝트를 만드는 경우의 이점은 무엇입니까?**
+**질문: Python 애플리케이션에 대한 Visual Studio에서 프로젝트를 만드는 경우의 이점은 무엇인가요?**
 
-**대답**: 일반적으로 Python 응용 프로그램은 폴더 및 파일만 사용하여 정의되지만 응용 프로그램이 커질수록 이 간단한 구조는 복잡해질 수 있으며 자동 생성된 파일, 웹 응용 프로그램용 JavaScript 등을 포함할 수 있습니다. Visual Studio 프로젝트는 이러한 복잡성을 관리하는 데 도움이 됩니다. 프로젝트(*.pyproj* 파일)는 프로젝트와 관련된 모든 소스 및 콘텐츠 파일을 식별하며 각 파일에 대한 빌드 정보를 포함하고 소스 제어 시스템과 통합할 정보를 유지 관리하며 응용 프로그램을 논리 구성 요소로 구성하는 데 도움을 줍니다.
+**대답**: 일반적으로 Python 애플리케이션은 폴더 및 파일만 사용하여 정의되지만 애플리케이션이 커질수록 이 간단한 구조는 복잡해질 수 있으며 자동 생성된 파일, 웹 애플리케이션용 JavaScript 등을 포함할 수 있습니다. Visual Studio 프로젝트는 이러한 복잡성을 관리하는 데 도움이 됩니다. 프로젝트(*.pyproj* 파일)는 프로젝트와 관련된 모든 소스 및 콘텐츠 파일을 식별하며 각 파일에 대한 빌드 정보를 포함하고 소스 제어 시스템과 통합할 정보를 유지 관리하며 응용 프로그램을 논리 구성 요소로 구성하는 데 도움을 줍니다.
 
 **질문: 솔루션 탐색기에 표시된 "솔루션"이란?**
 
@@ -62,22 +62,22 @@ Python의 웹앱은 다수의 사용 가능한 Python 라이브러리 중 하나
 
     ![기본 환경을 보여 주는 솔루션 탐색기](media/quickstart-python-02-default-environment.png)
 
-1. 환경을 마우스 오른쪽 단추로 클릭하고 **Python 패키지 설치**를 선택합니다. 이 명령은 패키지 탭에 **Python 환경** 창을 엽니다.
+1. 환경을 마우스 오른쪽 단추로 클릭하고 **Python 패키지 설치**를 선택합니다. 이 명령은 **패키지** 탭에 **Python 환경** 창을 엽니다.
 
 1. 검색 필드에 "flask"를 입력하고 **pip install flask from PyPI**를 선택합니다. 관리자 권한에 대한 프롬프트가 표시되면 수락하고 Visual Studio의 **출력** 창에서 진행률을 살펴봅니다. 전역 환경에 대한 패키지 폴더가 *C:\Program Files*와 같이 보호되는 영역 내에 있는 경우 권한 상승에 대한 프롬프트가 발생합니다.
 
-    ![Flask 라이브러리 설치](media/quickstart-python-03-install-package.png)
+    ![pip 설치를 통해 Flask 라이브러리 설치](media/quickstart-python-03-install-package.png)
 
 1. 설치 후에는 **솔루션 탐색기**의 환경에 라이브러리가 표시되며 Python 코드에서 해당 라이브러리를 사용할 수 있습니다.
 
-    ![Flask 라이브러리가 설치됨](media/quickstart-python-04-package-installed.png)
+    ![Flask 라이브러리가 설치되어 솔루션 탐색기에 표시됨](media/quickstart-python-04-package-installed.png)
 
 > [!Note]
 > 일반적으로 개발자는 전역 환경에 라이브러리를 설치하는 대신 특정 프로젝트에 대한 라이브러리를 설치하는 "가상 환경"을 만듭니다. Visual Studio 템플릿은 일반적으로 [빠른 시작 - 템플릿을 사용하여 Python 프로젝트 만들기](../python/quickstart-02-python-in-visual-studio-project-from-template.md)에 설명된 대로 이 옵션을 제공합니다.
 
 **질문: 어디에서 사용 가능한 다른 Python 패키지에 대해 자세히 알아볼 수 있나요?**
 
-**대답**: [Python 패키지 인덱스](https://pypi.org/)(pypi.org)를 방문하세요.
+**대답**: [Python 패키지 인덱스](https://pypi.org/)를 방문하세요.
 
 ## <a name="add-a-code-file"></a>코드 파일 추가
 
@@ -151,10 +151,10 @@ Python의 웹앱은 다수의 사용 가능한 Python 라이브러리 중 하나
 
 이 빠른 시작에서 수행한 단계가 매우 일반적이기 때문에 자동화될 수 있다고 추측할 수 있습니다. 이러한 자동화는 Visual Studio 프로젝트 템플릿의 역할입니다. 이 문서에서 만든 것과 비슷하지만 단계가 더 적은 웹앱을 만드는 데모는 [빠른 시작 - 템플릿을 사용하여 Python 프로젝트 만들기](../python/quickstart-02-python-in-visual-studio-project-from-template.md)를 참조하세요.
 
-대화형 창 사용, 디버깅, 데이터 시각화 및 Git 작업을 포함하여 Visual Studio의 Python에 대한 자세한 자습서를 계속 진행하려면 [자습서: Visual Studio에서 Python 시작](../python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md)을 참조하세요.
+대화형 창 사용, 디버깅, 데이터 시각화 및 Git 작업을 포함하여, Visual Studio의 Python에 대한 자습서를 계속 진행하려면 [자습서: Visual Studio에서 Python 시작](../python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md)을 살펴보세요.
 
 Visual Studio에서 제공하는 다른 기능을 탐색하려면 아래 링크를 선택합니다.
 
 - [Visual Studio의 Python 웹앱 템플릿](../python/python-web-application-project-templates.md)에 대해 알아보기
 - [Python 디버깅](../python/debugging-python-in-visual-studio.md)에 대해 자세히 알아보기
-- 일반적인 [Visual Studio IDE](../ide/visual-studio-ide.md)에 대해 자세히 알아보기
+- 일반적인 [Visual Studio IDE](../get-started/visual-studio-ide.md)에 대해 자세히 알아보기

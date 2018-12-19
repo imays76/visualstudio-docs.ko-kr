@@ -1,6 +1,6 @@
 ---
-title: Visual Studio에서 XAML 앱의 리소스 소비량 분석 | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: XAML 앱의 리소스 사용 분석
+ms.custom: seodec18
 ms.date: 11/01/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 971d8eff11d28eda884066407b03f3f6addb43ad
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 32368b280faf7b87aa128865cf169c7675a58c95
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220959"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059180"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>리소스 소비량 및 UI 스레드 활동 분석(XAML)
 
@@ -124,7 +124,7 @@ ms.locfileid: "51220959"
   
 ## <a name="see-also"></a>참고 항목
 
-- [WPF 팀 블로그: WPF 응용 프로그램의 새로운 UI 성능 분석 도구](https://blogs.msdn.microsoft.com/wpf/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications/)  
+- [WPF 팀 블로그: WPF 애플리케이션의 새로운 UI 성능 분석 도구](https://blogs.msdn.microsoft.com/wpf/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications/)  
 - [C++, C# 및 Visual Basic을 사용하는 UWP 앱의 성능 모범 사례](/previous-versions/windows/apps/hh750313\(v\=win.10\))
 - [WPF 응용 프로그램 성능 최적화](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)  
 - [Visual Studio의 프로파일링](../profiling/index.md)  

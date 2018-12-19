@@ -1,6 +1,6 @@
 ---
-title: '디버깅 준비: 콘솔 프로젝트 | Microsoft Docs'
-ms.custom: ''
+title: 콘솔 프로젝트 디버깅을 준비 | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: reference
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 29c54c4bfdeb0341270d78ce677b6085d6f159a2
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 55c588bfffbf11d4abd26fbae1490cf0039373c3
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305184"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057083"
 ---
 # <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>디버깅 준비: 콘솔 프로젝트 (C#, c + +, Visual Basic의 경우 F#)
 

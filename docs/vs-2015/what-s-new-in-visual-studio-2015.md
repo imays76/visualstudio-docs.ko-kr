@@ -1,6 +1,6 @@
 ---
-title: 새로운&#39;Visual Studio 2015의 새로운 | Microsoft Docs
-ms.custom: ''
+title: Visual Studio 2015의 새로운 기능 | Microsoft Docs
+titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
@@ -17,14 +17,14 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ab9d2536b3f92b62233a2ae05b79a722696136e4
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
-ms.translationtype: MT
+ms.openlocfilehash: f1d2b37a988f0078149228cce808397f9fb915d1
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000260"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062440"
 ---
-# <a name="what39s-new-in-visual-studio-2015"></a>새로운&#39;Visual Studio 2015의 새로운
+# <a name="what39s-new-in-visual-studio-2015"></a>Visual Studio 2015의 새로운 기능
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
 
 웹, Windows 스토어, 데스크톱, Android 및 iOS를 위한 최고의 앱과 게임을 만들 수 있는 개발자 생산성 도구, 클라우드 서비스 및 확장의 통합 모음인 Visual Studio 2015를 시작합니다.
@@ -53,7 +53,7 @@ ms.locfileid: "51000260"
  물론 기존의 데스크톱 응용 프로그램에 대한 지원은 언어, 라이브러리 및 도구의 다양한 향상을 통해 이전보다 더욱 개선되었습니다.
 
 ### <a name="cross-platform-mobile-apps-in-c-with-xamarin-for-visual-studio"></a>Xamarin for Visual Studio를 사용하여 C#으로 작성하는 플랫폼 간 모바일 앱
- Xamarin은 C#으로 코드를 작성할 수 있으며 iOS 및 Android API에 기본적으로 바인딩되는 모바일 프레임워크입니다. Microsoft는 공유 코드를 포함하는 단일 솔루션에서 Android, iOS 및 Windows Phone용으로 개발할 수 있는 확장인 Xamarin for Visual Studio 릴리스에서 Xamarin과 긴밀하게 협력했습니다. Xamarin을 사용하면 하나의 언어와 하나의 코드베이스를 사용하므로 플랫폼 사이의 델타가 최소화됩니다.  Xamarin for Visual Studio는 Visual Studio 2010 이상에서 지원됩니다. 스타터 버전의 Xamarin은 Visual Studio 2015에 포함 됩니다. 시작 하려면 참조 [Visual Studio에서 Xamarin을 사용 하 여 네이티브 UI로 앱 빌드](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)합니다.
+ Xamarin은 C#으로 코드를 작성할 수 있으며 iOS 및 Android API에 기본적으로 바인딩되는 모바일 프레임워크입니다. Microsoft는 공유 코드를 포함하는 단일 솔루션에서 Android, iOS 및 Windows Phone용으로 개발할 수 있는 확장인 Xamarin for Visual Studio 릴리스에서 Xamarin과 긴밀하게 협력했습니다. Xamarin을 사용하면 하나의 언어와 하나의 코드베이스를 사용하므로 플랫폼 사이의 델타가 최소화됩니다.  Xamarin for Visual Studio는 Visual Studio 2010 이상에서 지원됩니다. Visual Studio 2015에는 스타터 버전의 Xamarin이 포함되어 있습니다. 시작 하려면 참조 [Visual Studio에서 Xamarin을 사용 하 여 네이티브 UI로 앱 빌드](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)합니다.
 
 ### <a name="cross-platform-mobile-apps-in-htmljavascript-with-apache-cordova"></a>Apache Cordova를 사용하여 HTML/JavaScript로 작성하는 플랫폼 간 모바일 앱
  Visual Studio Tools for Apache Cordova는 Microsoft와 오픈 소스 Apache Cordova 커뮤니티 사이의 긴밀한 공동 작업의 결과입니다. 이 도구는 HTML, CSS 및 JavaScript(또는 Typescript)를 사용한 플랫폼 간 모바일 개발을 지원합니다. 단일한 코드베이스를 사용하여 Android, iOS 및 Windows를 대상으로 하며 JavaScript IntelliSense, DOM 탐색기, JavaScript 콘솔, 중단점, 조사식, 지역, 내 코드만 등을 포함하는 다양한 Visual Studio IDE를 사용할 수 있습니다.  Visual Studio Tools for Apache Cordova를 사용하여 응용 프로그램은 공통 JavaScript API를 제공하는 플러그인을 통해 모든 플랫폼에서 기본 장치 기능에 액세스할 수 있습니다. 시작 하려면 참조 [Visual Studio Tools for Apache Cordova 시작](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42)합니다.
@@ -82,7 +82,7 @@ ms.locfileid: "51000260"
  Visual Studio 2015는 기존의 데스크톱 및 Windows 스토어 개발을 계속 지원합니다. Windows가 진화함에 따라 Visual Studio도 그에 따라 진화합니다.  Visual Studio 2015에서는 C++용 라이브러리 및 언어는 물론 .NET용 라이브러리 및 언어도 대폭 향상되어 모든 Windows 버전에 적용할 수 있게 되었습니다.
 
 #### <a name="the-net-framework"></a>.NET Framework
- Microsoft [!INCLUDE[net_v46](./includes/net-v46-md.md)]에서는 약 150개의 새로운 API와 50개의 업데이트된 API를 통해 더 많은 시나리오를 지원합니다. 예를 들어 이제 더 많은 컬렉션에서 <xref:System.Collections.Generic.IReadOnlyCollection%601>을 구현하므로 컬렉션을 보다 쉽게 사용할 수 있습니다. 또한 ASP.NET 5는 앞에서 언급한 것처럼 첨단 클라우드 기반 앱을 빌드하기 위한 간결한 .NET 플랫폼을 제공합니다.
+ Microsoft [!INCLUDE[net_v46](./includes/net-v46-md.md)] 에서는 약 150개의 새로운 API와 50개의 업데이트된 API를 통해 더 많은 시나리오를 지원합니다. 예를 들어 이제 더 많은 컬렉션에서 <xref:System.Collections.Generic.IReadOnlyCollection%601>을 구현하므로 컬렉션을 보다 쉽게 사용할 수 있습니다. 또한 ASP.NET 5는 앞에서 언급한 것처럼 첨단 클라우드 기반 앱을 빌드하기 위한 간결한 .NET 플랫폼을 제공합니다.
 
  따라서 이제 C#으로 작성되었으며 .NET Framework를 대상으로 하는 Windows Store 앱에서 .NET 네이티브를 활용하여 앱을 IL이 아닌 네이티브 코드로 컴파일할 수 있습니다. 또한 [!INCLUDE[net_v46](./includes/net-v46-md.md)]에서는 64비트 JIT(Just-In-Time) 컴파일러인 RyuJIT를 추가합니다.
 
@@ -144,7 +144,7 @@ ms.locfileid: "51000260"
  다음은 코드에 대해 다양한 형식의 진단과 분석을 수행하는 새로운 도구 및 향상된 도구입니다.
 
 ### <a name="perftips"></a>PerfTips
- 성능 팁은 디버깅 동안 메서드의 실행 시간을 표시하여, 프로파일러를 호출할 필요 없이 신속하게 병목 현상을 찾아낼 수 있습니다. 시작하려면 [성능 팁: Visual Studio를 사용하여 디버그하는 동안 성능 정보 요약](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)을 참조하세요.
+ 성능 팁은 디버깅 동안 메서드의 실행 시간을 표시하여, 프로파일러를 호출할 필요 없이 신속하게 병목 현상을 찾아낼 수 있습니다. 시작 하려면 참조 [PerfTips: 성능 정보에서 요약 Visual Studio를 사용 하 여 디버그 하는 동안](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)
 
 ### <a name="error-list"></a>오류 목록
  이제 오류 목록이 모든 열에서 필터링을 지원합니다. 또한 코드 변경으로 수천 개의 경고가 생성되는 경우에도 입력하는 내용에 따라 전체 C# 또는 Visual Basic 솔루션의 오류, 경고 및 코드 분석의 실시간 보기를 보여 줍니다. 새로운 오류 목록은 기존 사용법과 호환됩니다. 자세한 내용은 [Error List Window](./ide/reference/error-list-window.md)을 참조하세요.
@@ -160,13 +160,13 @@ ms.locfileid: "51000260"
 ## <a name="enjoy-these-additional-ide-improvements"></a>이러한 추가 IDE 개선 사항 활용
 
 ### <a name="synchronized-settings-roaming-settings"></a>동기화된 설정(로밍 설정)
- Visual Studio 2013은 텍스트 편집기, 키 바인딩, 테마 및 글꼴 및 색상, 시작, 환경 별칭과 같이 가장 일반적으로 구성되는 일부 설정에 대해 동기화된 설정을 도입했습니다.  Visual Studio 2015는 더 많은 설정을 동기화하고 Professional, Enterprise, Express SKU, Blend와 같은 Visual Studio 응용 프로그램 제품군 전체에서 설정을 동기화하여 이러한 환경을 향상합니다. Visual Studio 2013에서 사용한 것과 동일한 계정으로 Visual Studio 2015에 처음으로 로그인하면 Visual Studio 2013에서 적용된 동기화된 설정을 볼 수 있습니다. "동기화"를 입력 하 여 설정에 액세스할 수 있습니다 **빠른 실행**, 또는 이동할 **도구 > 옵션 > 환경 > 동기화 된 설정**합니다.
+ Visual Studio 2013은 텍스트 편집기, 키 바인딩, 테마 및 글꼴 및 색상, 시작, 환경 별칭과 같이 가장 일반적으로 구성되는 일부 설정에 대해 동기화된 설정을 도입했습니다.  Visual Studio 2015는 더 많은 설정을 동기화하고 Professional, Enterprise, Express SKU, Blend와 같은 Visual Studio 응용 프로그램 제품군 전체에서 설정을 동기화하여 이러한 환경을 향상합니다. Visual Studio 2013에서 사용한 것과 동일한 계정으로 Visual Studio 2015에 처음으로 로그인하면 Visual Studio 2013에서 적용된 동기화된 설정을 볼 수 있습니다. **빠른 실행**에서 "동기화"를 입력하거나 **도구 > 옵션 > 환경 > 동기화된 설정**으로 이동하여 설정에 액세스할 수 있습니다.
 
 ### <a name="automatic-extension-updates"></a>자동 확장 업데이트
  이제 Visual Studio 갤러리에서 새 버전을 사용할 수 있는 경우 설치된 Visual Studio 확장이 자동으로 업데이트됩니다. 자동 확장 업데이트를 사용자 지정할 수 있는 방법에 대한 자세한 내용은 [Visual Studio 확장 찾기 및 사용](./ide/finding-and-using-visual-studio-extensions.md) 을 참조하세요.
 
 ### <a name="title-case-menus"></a>제목 대소문자 메뉴
- 사용자의 의견을 반영하였습니다. 원래대로 Visual Studio 메뉴의 첫 글자가 대문자로 표시되도록 바뀌었습니다. 그러나 모두 대문자 스타일이 마음에 있다면 있습니다 수 설정 시작 시 또는 합니다 **도구 > 옵션 > 일반** 속성 페이지:
+ 사용자의 의견을 반영하였습니다. 원래대로 Visual Studio 메뉴의 첫 글자가 대문자로 표시되도록 바뀌었습니다. 그러나 [모두 대문자] 스타일이 마음에 든다면 시작 시 또는 **도구 > 옵션 > 일반** 속성 페이지에서 설정할 수 있습니다.
 
  ![Visual Studio 2015 제목 대/소문자 주 메뉴 명령](./ide/media/vs2015-mainmenu.png "VS2015_MainMenu")
 
@@ -183,18 +183,18 @@ ms.locfileid: "51000260"
 ### <a name="notification-hub"></a>알림 허브
  알림 허브에 대한 UI가 쉽고 빠르게 검색할 수 있도록 간소화되었습니다. 성능 문제, 렌더링 문제 및 크래시를 포함하는 기타 종류의 알림이 추가되었으며, 이제 알림 표시를 중지하도록 Visual Studio에 지시할 수 있습니다. 자세한 내용은 [Visual Studio 알림](./ide/visual-studio-notifications.md)을 참조하세요.
 
-### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens: 코드 변경 사항 찾기(Enterprise 및 Professional Edition에만 해당)
+### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens (Enterprise 및 Professional edition만 해당) 코드 변경 사항 찾기
  코드에 대한 정보를 찾는 동안 편집기에서 나가지 않고 계속 작업에 집중할 수 있습니다. VSTS(Visual Studio Team Services) 또는 TFS(Team Foundation Server)에 저장된 코드에 대한 작업 항목, 버그, 코드 검토 등의 변경 내용과 기타 기록을 검토할 수 있습니다.
 
  Visual Studio Enterprise 및 Visual Studio Professional에서 이제 다음 작업을 수행할 수 있습니다.
 
 - Visual Studio 편집기에서 전체 코드 파일의 기록을 가져옵니다.
 
-   ![CodeLens: 코드 파일 세부 정보 가져오기](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
+   ![CodeLens 코드 파일 세부 정보 가져오기](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
 
 - 코드를 변경한 사용자를 보여 주는 그래프를 확인합니다. 이는 팀의 변경 내용에서 패턴을 찾고 해당 영향을 평가하는 데 도움이 될 수 있습니다.
 
-   ![CodeLens: 코드 변경 내용 기록을 그래프로 보기](./ide/media/codelens.png "CodeLens")
+   ![CodeLens 코드 변경 내용 기록을 그래프로 참조](./ide/media/codelens.png "CodeLens")
 
 - 코드가 마지막으로 변경된 시기를 쉽게 확인합니다.
 
@@ -225,7 +225,7 @@ ms.locfileid: "51000260"
 
 - **보다 신속하게 반응 코드 맵 얻기**. 끌어 놓기 작업은 즉각적인 결과를 생산하고 노드 간 링크는 보다 빠르게 생성되며, 이때 노드 확장 또는 추가 노드 요청과 같은 후속 사용자 시작 작업에는 영향을 주지 않습니다. 솔루션을 빌드하지 않고 코드 맵을 만드는 경우, 이제 어셈블리를 작성하지 않은 경우와 같은 비정상적인 상황이 모두 처리됩니다.
 
-- **솔루션 다시 빌드 건너뛰기입니다.** 다이어그램을 만들고 편집할 때 더 나은 성능을 제공합니다.
+- **솔루션 다시 빌드 건너뛰기** 다이어그램을 만들고 편집할 때 더 나은 성능을 제공합니다.
 
 - **코드 포인트 노드 및 그룹 필터링**. 범주별로 코드 포인트를 표시하거나 숨기고 솔루션 폴더, 어셈블리, 네임스페이스, 프로젝트 폴더, 형식별로 코드 포인트를 그룹화하여 맵을 빠르게 정리할 수 있습니다.
 
@@ -235,7 +235,7 @@ ms.locfileid: "51000260"
 
   [Map dependencies across your solutions](./modeling/map-dependencies-across-your-solutions.md)을 참조하세요.
 
-  **이 릴리스에서 다른 디자인 및 모델링 변경:**
+  **이 릴리스의 다른 디자인 및 모델링 변경 내용:**
 
 - **레이어 다이어그램**. 클래스 뷰 및 개체 브라우저를 사용하여 이러한 다이어그램을 업데이트합니다. 소프트웨어 디자인 요구 사항에 충족하기 위해, 레이어 다이어그램을 사용하여 소프트웨어에 대한 원하는 종속성을 설명합니다. 이러한 제약 조건을 충족하지 않는 코드를 찾고 이 기준에 맞춰 향후 코드의 유효성을 검사하여 코드를 이 디자인과 일관되게 유지합니다.
 
@@ -269,7 +269,8 @@ ms.locfileid: "51000260"
  먼저, 위에서 설명한 대로 찡그린 얼굴을 보냅니다. 대화 상자가 나타나면 기본 태그 중 하나를 사용하여 피드백에 태그를 지정할 수도 있고 태그를 직접 만들 수도 있습니다. 태그는 Microsoft에서 사용자의 피드백을 적절한 기능 팀으로 전달하는 데 도움이 됩니다. **범주 선택** 드롭다운 목록에서 Microsoft에 알리려는 문제를 나타내는 옵션을 선택한 후 문제를 재현하기 위한 단계를 수행합니다. Visual Studio를 사용하여 피드백을 보내는 방법과 관련된 자세한 단계도 확인할 수 있습니다. 자세한 내용은 [Visual Studio 웃는 얼굴 보내기 지침을 보낼](http://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b)합니다.
 
 ## <a name="see-also"></a>참고 항목
-* [Apache Cordova 사용 하 여 플랫폼 간 앱 빌드](http://msdn.microsoft.com/library/34d3c1be-22b3-4812-97fb-10b4e8ad2134)
+
+* [Apache Cordova를 사용하여 플랫폼 간 앱 제작](http://msdn.microsoft.com/library/34d3c1be-22b3-4812-97fb-10b4e8ad2134)
 * [Visual Studio에서 Xamarin을 사용하여 네이티브 UI로 앱 빌드](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)
 * [Visual C++를 사용하여 플랫폼 간 앱 빌드](./misc/build-cross-platform-mobile-apps-with-visual-cpp.md)
 * [IntelliTest를 사용하여 코드에 대한 단위 테스트 생성](./test/generate-unit-tests-for-your-code-with-intellitest.md)
