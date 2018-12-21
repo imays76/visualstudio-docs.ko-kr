@@ -50,9 +50,9 @@ ms.locfileid: "53053388"
 
 [C26400 NO_RAW_POINTER_ASSIGNMENT](c26400.md) 소유자를 사용 하 여 함수 호출 또는 할당의 결과 할당 하지 마세요\<T >를 원시 포인터 값을 반환; 소유자를 사용 하 여\<T > 대신 합니다. 참조 [C++ Core Guidelines I.11](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Ri-raw)합니다.
 
-[C26401 DONT_DELETE_NON_OWNER](c26401.md) 소유자가 아닌 원시 포인터를 삭제 하지 마십시오\<T >입니다. 참조 [C++ Core Guidelines I.11](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Ri-raw)합니다.
+[C26401 DONT_DELETE_NON_OWNER](c26401.md) 소유자가 아닌 원시 포인터를 삭제 하지 마십시오\<T>입니다. 참조 [C++ Core Guidelines I.11](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Ri-raw)합니다.
 
-[C26402 DONT_HEAP_ALLOCATE_MOVABLE_RESULT](C26402.md)   는 이동 생성자가 하는 경우 힙 할당 하는 대신 범위 개체를 반환 합니다. 참조 [C++ Core Guidelines R.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr)합니다.
+[C26402 DONT_HEAP_ALLOCATE_MOVABLE_RESULT](C26402.md)  는 이동 생성자가 하는 경우 힙 할당 하는 대신 범위 개체를 반환 합니다. 참조 [C++ Core Guidelines R.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr)합니다.
 
 [C26408 NO_MALLOC_FREE](C26408.md) malloc () 및 free () 방지, 삭제 함께 new의 nothrow 버전을 선호 합니다. 참조 [C++ Core Guidelines R.10](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-mallocfree)합니다.
 
@@ -77,19 +77,19 @@ ms.locfileid: "53053388"
 
 [C26414 RESET_LOCAL_SMART_PTR](C26414.md) 이동, 복사, 다시 할당 또는 '% 기호 %'와 같은 로컬 스마트 포인터 다시 설정 합니다. 참조 [C++ Core Guidelines R.5](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-scoped)합니다.
 
-[C26415 SMART_PTR_NOT_NEEDED](C26415.md) 스마트 포인터 매개 변수 '% 기호 %'는 포함 된 포인터를 액세스할 때만 사용 합니다. 대신 T * 또는 T &를 사용 합니다. 참조 [C++ Core Guidelines 합니다 (r.30](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-smartptrparam)합니다.
+[C26415 SMART_PTR_NOT_NEEDED](C26415.md) 스마트 포인터 매개 변수 '% 기호 %'는 포함 된 포인터를 액세스할 때만 사용 합니다. 대신 T \* 또는 T &를 사용 합니다. 참조 [C++ Core Guidelines 합니다 r.30](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-smartptrparam)합니다.
 
 ## <a name="sharedpointer-group"></a>SHARED_POINTER 그룹
 
 [C26414 RESET_LOCAL_SMART_PTR](C26414.md) 이동, 복사, 다시 할당 또는 '% 기호 %'와 같은 로컬 스마트 포인터 다시 설정 합니다. 참조 [C++ Core Guidelines R.5](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-scoped)합니다.
 
-[C26415 SMART_PTR_NOT_NEEDED](C26415.md) 스마트 포인터 매개 변수 '% 기호 %'는 포함 된 포인터를 액세스할 때만 사용 합니다. 대신 T * 또는 T &를 사용 합니다. 참조 [C++ Core Guidelines 합니다 (r.30](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-smartptrparam)합니다.
+[C26415 SMART_PTR_NOT_NEEDED](C26415.md) 스마트 포인터 매개 변수 '% 기호 %'는 포함 된 포인터를 액세스할 때만 사용 합니다. 대신 T \* 또는 T &를 사용 합니다. 참조 [C++ Core Guidelines 합니다 r.30](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-smartptrparam)합니다.
 
 [C26416 NO_RVALUE_REF_SHARED_PTR](C26416.md) 공유 포인터 매개 변수 '% 기호 %'는 rvalue 참조로 전달 됩니다. 대신 값으로 전달 합니다. 참조 [C++ Core Guidelines 하세요 (r.34](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-sharedptrparam-owner)합니다.
 
-[C26417 NO_LVALUE_REF_SHARED_PTR](C26417.md) 공유 포인터 매개 변수 '% 있는 기호' 참조로 전달 하 고 다시 설정 되지 않습니다 또는 다시 할당 합니다. 대신 T * 또는 T &를 사용 합니다. 참조 [C++ Core Guidelines 하세요 (r.35](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-sharedptrparam)합니다.
+[C26417 NO_LVALUE_REF_SHARED_PTR](C26417.md) 공유 포인터 매개 변수 '% 있는 기호' 참조로 전달 하 고 다시 설정 되지 않습니다 또는 다시 할당 합니다. 대신 T \* 또는 T &를 사용 합니다. 참조 [C++ Core Guidelines 하세요 (r.35](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-sharedptrparam)합니다.
 
-[C26418 NO_VALUE_OR_CONST_REF_SHARED_PTR](C26418.md) 공유 포인터 매개 변수 '% 기호 %'을 복사 하거나 이동 하지 않습니다. 대신 T * 또는 T &를 사용 합니다. 참조 [C++ Core Guidelines 하세요 (r.36](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-sharedptrparam-const)합니다.
+[C26418 NO_VALUE_OR_CONST_REF_SHARED_PTR](C26418.md) 공유 포인터 매개 변수 '% 기호 %'을 복사 하거나 이동 하지 않습니다. 대신 T \* 또는 T &를 사용 합니다. 참조 [C++ Core Guidelines 하세요 (r.36](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-sharedptrparam-const)합니다.
 
 ## <a name="declaration-group"></a>선언 그룹
 
