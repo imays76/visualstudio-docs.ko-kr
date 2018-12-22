@@ -25,7 +25,7 @@ ms.workload:
 - cplusplus
 ms.openlocfilehash: 35f694d9cc397800249dd9b4acd86bf63d22ad93
 ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/10/2018
 ms.locfileid: "44320711"
@@ -74,5 +74,5 @@ C:\>cl /analyze Sample.cpp
 - [C++ Core Guidelines 검사기 사용](using-the-cpp-core-guidelines-checkers.md)
 - [C + + 핵심 지침 검사기 참조](code-analysis-for-cpp-corecheck.md)
 - [규칙 집합을 사용하여 실행할 C++ 규칙 지정](using-rule-sets-to-specify-the-cpp-rules-to-run.md)
-- [코드 분석 도구를 사용 하 여 드라이버 품질 분석](/windows-hardware/drivers/develop/analyzing-driver-quality-by-using-code-analysis-tools)
-- [드라이버 경고에 대 한 코드 분석](/windows-hardware/drivers/devtest/prefast-for-drivers-warnings)
+- [코드 분석 도구를 사용한 드라이버 품질 분석](/windows-hardware/drivers/develop/analyzing-driver-quality-by-using-code-analysis-tools)
+- [드라이버 경고에 대한 코드 분석](/windows-hardware/drivers/devtest/prefast-for-drivers-warnings)
