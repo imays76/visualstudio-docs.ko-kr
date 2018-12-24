@@ -26,7 +26,7 @@ ms.locfileid: "53058482"
 # <a name="welcome-to-visual-studio-2015"></a>Visual Studio 2015 시작
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
 
-클라우드를 비롯한 다양한 환경에서 장치, 데스크톱 및 웹용으로 유용한 앱을 만드는 데 필요한 모든 기능을 갖춘 Visual Studio를 시작합니다. 단일 IDE에서 iOS, Android 및 Windows용 코드를 작성할 수 있습니다. 유용한 IntelliSense, 쉬운 코드 탐색, 빠른 빌드 및 신속한 배포의 이점을 누려 보세요. Visual Studio를 사용하여 생산성을 높이고 혼자서나 대규모 팀에 속해서 작업을 손쉽게 수행할 수 있습니다.
+클라우드를 비롯한 다양한 환경에서 디바이스, 데스크톱 및 웹용으로 유용한 앱을 만드는 데 필요한 모든 기능을 갖춘 Visual Studio를 시작합니다. 단일 IDE에서 iOS, Android 및 Windows용 코드를 작성할 수 있습니다. 유용한 IntelliSense, 쉬운 코드 탐색, 빠른 빌드 및 신속한 배포의 이점을 누려 보세요. Visual Studio를 사용하여 생산성을 높이고 혼자서나 대규모 팀에 속해서 작업을 손쉽게 수행할 수 있습니다.
 
 > [!NOTE]
 >  [Visual Studio 2015 업데이트 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs)의 릴리스 정보는 여기를 클릭하세요.
@@ -51,7 +51,7 @@ ms.locfileid: "53058482"
  Microsoft 개발자와 개발 커뮤니티에서 만든 [기존 VS IDE용 확장](https://visualstudiogallery.msdn.microsoft.com/) 을 찾아 보세요.
 
 ## <a name="build-apps-for-android-ios-and-windows"></a>Android, iOS 및 Windows용 앱 빌드
- Visual Studio를 사용하여 Android, iOS 및 Windows 장치용 앱을 빌드할 수 있습니다. [플랫폼 간 모바일 개발](./cross-platform/cross-platform-mobile-development-in-visual-studio.md)에서 자세한 내용을 알아보세요.
+ Visual Studio를 사용하여 Android, iOS 및 Windows 디바이스용 앱을 빌드할 수 있습니다. [플랫폼 간 모바일 개발](./cross-platform/cross-platform-mobile-development-in-visual-studio.md)에서 자세한 내용을 알아보세요.
 
  UWP(유니버설 Windows 앱)에 대한 자세한 내용은 [유니버설 Windows 앱](https://dev.windows.com/en-us/windows-apps)을 참조하세요.
 

@@ -39,7 +39,7 @@ ms.locfileid: "53052386"
  [앱 릴리스 버전 빌드](../ide/getting-started-with-cpp-in-visual-studio.md#BKMK_BuildRelease)
 
 ##  <a name="BKMK_Configure"></a> Visual Studio에 로그인
- Visual Studio를 처음 시작하는 경우 Live 또는 Outlook 같은 Microsoft 계정을 사용하여 로그인할 수 있는 옵션이 제공됩니다. 로그인하면 모든 장치 간에 설정을 동기화할 수 있습니다. 자세한 내용은 [Signing in to Visual Studio](../ide/signing-in-to-visual-studio.md)을 참조하세요.
+ Visual Studio를 처음 시작하는 경우 Live 또는 Outlook 같은 Microsoft 계정을 사용하여 로그인할 수 있는 옵션이 제공됩니다. 로그인하면 모든 디바이스 간에 설정을 동기화할 수 있습니다. 자세한 내용은 [Signing in to Visual Studio](../ide/signing-in-to-visual-studio.md)을 참조하세요.
 
  그림 1: Visual Studio IDE
 

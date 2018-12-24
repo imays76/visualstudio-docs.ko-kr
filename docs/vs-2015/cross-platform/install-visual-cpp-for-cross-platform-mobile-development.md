@@ -18,7 +18,7 @@ ms.author: corob
 manager: ghogen
 ms.openlocfilehash: 0c8cbe8992a1035e2fb4a26feb9a77b5546bfa56
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51786017"
@@ -42,7 +42,7 @@ ms.locfileid: "51786017"
   > [!IMPORTANT]
   >  Windows 7 또는 Windows Server 2008 R2를 사용하는 경우 클래식 Windows 응용 프로그램용 코드, Android Native Activity 앱 및 라이브러리, iOS용 앱 및 코드 라이브러리를 개발할 수 있지만 Windows 스토어 또는 유니버설 Windows 앱은 개발할 수 없습니다.  
   
-  특정 장치 플랫폼용 앱을 빌드하려는 경우에는 다음의 몇 가지 요구 사항이 추가로 적용됩니다.  
+  특정 디바이스 플랫폼용 앱을 빌드하려는 경우에는 다음의 몇 가지 요구 사항이 추가로 적용됩니다.  
   
 - Windows Phone 에뮬레이터 및 Android용 Microsoft Visual Studio 에뮬레이터를 사용하려면 Hyper-V를 실행할 수 있는 컴퓨터가 필요합니다. 에뮬레이터를 설치하고 실행하려면 먼저 Windows에서 Hyper-V 기능을 사용하도록 설정해야 합니다. 자세한 내용은 에뮬레이터의 [시스템 요구 사항](http://msdn.microsoft.com/en-us/4d5bb438-231a-4cd2-84b7-e9660b0e3baf)을 참조하세요.  
   
@@ -91,7 +91,7 @@ ms.locfileid: "51786017"
 5.  Visual Studio를 엽니다. 처음으로 Visual Studio를 실행하는 경우 구성 및 로그인하는 데 약간의 시간이 걸릴 수 있습니다. Visual Studio가 준비되면 **도구** 메뉴에서 **확장 및 업데이트**, **업데이트**를 차례로 선택합니다. 플랫폼 간 모바일 개발용 Visual C++ 또는 Android용 Microsoft Visual Studio 에뮬레이터에 사용할 수 있는 Visual Studio 업데이트가 있는 경우 설치합니다.  
   
 ##  <a name="InstallForiOS"></a> Install tools for iOS  
- 플랫폼 간 모바일 개발용 Visual C++를 사용하여 iOS 코드를 편집 및 디버그하고 iOS 시뮬레이터 또는 iOS 장치에 배포할 수 있지만 라이선스 제한으로 인해 Mac에서 원격으로 코드를 빌드해야 합니다. Visual Studio를 사용하여 iOS 앱을 빌드 및 실행하려면 Mac에서 원격 에이전트를 설치 및 구성해야 합니다. 자세한 설치 지침, 필수 조건 및 구성 옵션은 [Install And Configure Tools to Build using iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)을 참조하세요. iOS용으로 빌드하지 않는 경우에는 이 단계를 건너뛸 수 있습니다.  
+ 플랫폼 간 모바일 개발용 Visual C++를 사용하여 iOS 코드를 편집 및 디버그하고 iOS 시뮬레이터 또는 iOS 디바이스에 배포할 수 있지만 라이선스 제한으로 인해 Mac에서 원격으로 코드를 빌드해야 합니다. Visual Studio를 사용하여 iOS 앱을 빌드 및 실행하려면 Mac에서 원격 에이전트를 설치 및 구성해야 합니다. 자세한 설치 지침, 필수 조건 및 구성 옵션은 [Install And Configure Tools to Build using iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)을 참조하세요. iOS용으로 빌드하지 않는 경우에는 이 단계를 건너뛸 수 있습니다.  
   
 ##  <a name="ThirdParty"></a> 수동으로 종속성 설치 또는 업데이트  
  Visual C++ 모바일 개발 옵션을 설치할 때 Visual Studio 설치 관리자를 사용하여 타사 종속성을 하나 이상 설치하지 않는 경우 나중에 [Install the tools](#InstallTheTools)의 단계를 사용하여 설치할 수 있습니다. Visual Studio와 독립적으로 설치하거나 업데이트할 수도 있습니다.  

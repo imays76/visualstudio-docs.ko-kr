@@ -20,7 +20,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: feebccb0905a4e3161484b5c1fe9f0142fa41d53
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51743533"
@@ -47,7 +47,7 @@ ms.locfileid: "51743533"
 |스레드 풀|CLR 스레드 풀에 의해 생성된 스레드입니다.|  
   
 ## <a name="disk-channels"></a>디스크 채널  
- 디스크 채널은 컴퓨터에 있는 실제 드라이브에 해당합니다. 시스템의 각 실제 드라이브에 대해 읽기 및 쓰기 작업용 별도 채널이 존재하므로 각 드라이브에는 두 개의 채널이 있습니다. 디스크 번호는 커널 장치 이름에 해당합니다. 디스크 채널은 디스크 작업이 있을 때만 표시됩니다.  
+ 디스크 채널은 컴퓨터에 있는 실제 드라이브에 해당합니다. 시스템의 각 실제 드라이브에 대해 읽기 및 쓰기 작업용 별도 채널이 존재하므로 각 드라이브에는 두 개의 채널이 있습니다. 디스크 번호는 커널 디바이스 이름에 해당합니다. 디스크 채널은 디스크 작업이 있을 때만 표시됩니다.  
   
 ## <a name="marker-channels"></a>표식 채널  
  표식 채널은 응용 프로그램에서 생성된 이벤트 및 여기에 사용되는 라이브러리에 해당합니다. 예를 들어 작업 병렬 라이브러리, 병렬 패턴 라이브러리 및 C++ AMP는 표식으로 나타나는 이벤트를 생성합니다. 각 표식 채널은 채널 설명 옆에 표시되는 스레드 ID와 연결됩니다. ID는 이벤트를 생성한 스레드를 식별합니다. 채널 설명에는 이벤트를 생성한 ETW(Windows용 이벤트 추적) 공급자의 이름이 포함됩니다. 채널에 [동시성 시각화 도우미 SDK](../profiling/concurrency-visualizer-sdk.md)의 이벤트가 표시될 경우 계열 이름도 표시됩니다.  

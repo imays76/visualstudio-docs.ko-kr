@@ -144,7 +144,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
  고급 시나리오에서는 대상을 사용하여 서로의 관계를 설명하고 종속성 분석을 수행할 수 있습니다. 종속성 분석을 통해 대상이 최신 상태이면 빌드 프로세스의 전체 섹션을 건너뛸 수 있습니다. 대상에 대한 자세한 내용은 [대상](../msbuild/msbuild-targets.md)을 참조하세요.
 
 ##  <a name="build-logs"></a>빌드 로그
- 빌드 오류, 경고 및 메시지를 콘솔이나 다른 출력 장치에 기록할 수 있습니다. 자세한 내용은 [빌드 로그 가져오기](../msbuild/obtaining-build-logs-with-msbuild.md) 및 [MSBuild 로그인](../msbuild/logging-in-msbuild.md)을 참조하세요.
+ 빌드 오류, 경고 및 메시지를 콘솔이나 다른 출력 디바이스에 기록할 수 있습니다. 자세한 내용은 [빌드 로그 가져오기](../msbuild/obtaining-build-logs-with-msbuild.md) 및 [MSBuild 로그인](../msbuild/logging-in-msbuild.md)을 참조하세요.
 
 ## <a name="use-msbuild-in-visual-studio"></a>Visual Studio에서 MSBuild 사용
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서는 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일 형식을 사용하여 관리되는 프로젝트에 대한 빌드 정보를 저장합니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 인터페이스를 사용하여 추가되거나 변경된 프로젝트 설정은 모든 프로젝트에 대해 생성되는 *.\*proj* 파일에 반영됩니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서는 관리되는 프로젝트를 로드 및 빌드하기 위해 호스팅된 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 인스턴스를 사용합니다. 즉, 관리되는 프로젝트는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 또는 명령 프롬프트([!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]가 설치되지 않은 경우)에서 빌드할 수 있으며 그 결과는 동일합니다.

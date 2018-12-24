@@ -87,7 +87,7 @@ MSBuild 작업은 일반적으로 <xref:Microsoft.Build.Framework.ITask> 인터�
   
 3. 프로젝트 파일을 저장합니다.  
   
-   이 코드는 Hello로 지칭되고 매개 변수, 참조 또는 `Using` 문이 없는 인라인 작업을 만듭니다. Hello 작업에는 기본 로깅 장치(일반적으로 콘솔 창)에 hello 메시지를 표시하는 코드 한 줄만 포함됩니다.  
+   이 코드는 Hello로 지칭되고 매개 변수, 참조 또는 `Using` 문이 없는 인라인 작업을 만듭니다. Hello 작업에는 기본 로깅 디바이스(일반적으로 콘솔 창)에 hello 메시지를 표시하는 코드 한 줄만 포함됩니다.  
   
 ### <a name="run-the-hello-task"></a>Hello 작업 실행  
  **명령 프롬프트 창**에서 MSBuild를 실행하여 Hello 작업을 생성하고 이 작업을 호출하는 TestBuild 대상을 처리합니다.  
@@ -110,7 +110,7 @@ MSBuild 작업은 일반적으로 <xref:Microsoft.Build.Framework.ITask> 인터�
    코드 편집기와 **명령 프롬프트 창**을 오가면서 프로젝트 파일을 변경하고 결과를 빠르게 확인할 수 있습니다.  
   
 ## <a name="define-the-echo-task"></a>Echo 작업 정의  
- 문자열 매개 변수를 수락하고 기본 로깅 장치에 문자열을 해당 문자열을 표시하는 인라인 작업을 만듭니다.  
+ 문자열 매개 변수를 수락하고 기본 로깅 디바이스에 문자열을 해당 문자열을 표시하는 인라인 작업을 만듭니다.  
   
 #### <a name="to-define-the-echo-task"></a>Echo 작업을 정의하려면  
   

@@ -26,7 +26,7 @@ ms.lasthandoff: 07/24/2018
 ms.locfileid: "39233076"
 ---
 # <a name="xsltransformation-task"></a>XslTransformation 작업
-XSLT 또는 컴파일된 XSLT 및 출력을 사용하여 XML 입력을 출력 장치 또는 파일로 변환합니다.  
+XSLT 또는 컴파일된 XSLT 및 출력을 사용하여 XML 입력을 출력 디바이스 또는 파일로 변환합니다.  
   
 ## <a name="parameters"></a>매개 변수  
  다음 표에서는 `XslTransformation` 작업의 매개 변수에 대해 설명합니다.  

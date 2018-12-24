@@ -229,7 +229,7 @@ ms.locfileid: "49951147"
  XML 파일로의 XPath 쿼리에 의해 지정된 대로 값을 반환합니다.  
 
  [XslTransformation 작업](../msbuild/xsltransformation-task.md)  
- XSLT(*Extensible Stylesheet Language Transformation*) 또는 컴파일된 XSLT 및 출력을 사용하여 XML 입력을 출력 장치 또는 파일로 변환합니다.  
+ XSLT(*Extensible Stylesheet Language Transformation*) 또는 컴파일된 XSLT 및 출력을 사용하여 XML 입력을 출력 디바이스 또는 파일로 변환합니다.  
 
   [ZipDirectory 작업](../msbuild/zipdirectory-task.md)  
  디렉터리의 콘텐츠에서 *.zip* 보관을 만듭니다.

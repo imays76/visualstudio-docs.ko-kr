@@ -18,7 +18,7 @@ ms.locfileid: "49930117"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Visual Studio의 EMS(Enterprise Mobility + Security)
 
-Visual Studio Enterprise의 연간 클라우드 및 표준 구독에는 EMS(Enterprise Mobility + Security)가 포함되어 있습니다.  EMS(Azure Active Directory, Microsoft Intune, Azure Information Protection, Microsoft Advanced Threat Analytics 및 Microsoft Cloud App Security)를 사용하여 ID, 장치, 응용 프로그램 및 데이터를 보호하고 관리합니다.
+Visual Studio Enterprise의 연간 클라우드 및 표준 구독에는 EMS(Enterprise Mobility + Security)가 포함되어 있습니다.  EMS(Azure Active Directory, Microsoft Intune, Azure Information Protection, Microsoft Advanced Threat Analytics 및 Microsoft Cloud App Security)를 사용하여 ID, 디바이스, 응용 프로그램 및 데이터를 보호하고 관리합니다.
 
 > [!NOTE]
 > 볼륨 라이선싱 다년 구독을 구매하는 경우 현재 EMS 혜택은 첫 해에만 사용할 수 있습니다.  

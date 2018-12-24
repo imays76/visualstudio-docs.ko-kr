@@ -22,7 +22,7 @@ manager: ghogen
 robots: noindex,nofollow
 ms.openlocfilehash: 11e8587176ecc452f8f97132d296cff93b09b5ac
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51741291"
@@ -82,7 +82,7 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
 ###  <a name="BKMK_CPU_utilization_timeline_graph"></a> CPU 사용률 타임라인 그래프  
  ![CpuUtilization&#40;%&#41; 타임라인 그래프](../profiling/media/cpu-use-wt-timelinegraph.png "CPU_USE_WT_TimelineGraph")  
   
- CPU 사용률 그래프는 장치의 모든 프로세서 코어에서의 전체 CPU 시간 백분율로 앱의 CPU 활동을 보여 줍니다. 이 보고서의 데이터는 듀얼 코어 컴퓨터에서 수집되었습니다. 대용량 스파이크 두 개는 단추를 두 번 클릭할 경우의 CPU 활동을 보여 줍니다. `GetMaxNumberButton_Click`은 단일 코어에서 동기적으로 수행되므로 메서드 그래프의 높이가 50%를 초과하지 않습니다. `GetMaxNumberAsycButton_Click`은 두 코어에서 비동기적으로 실행되므로 다시 해당 스파이크가 두 코어에서 거의 모든 CPU 리소스를 활용하는 것처럼 보입니다.  
+ CPU 사용률 그래프는 디바이스의 모든 프로세서 코어에서의 전체 CPU 시간 백분율로 앱의 CPU 활동을 보여 줍니다. 이 보고서의 데이터는 듀얼 코어 컴퓨터에서 수집되었습니다. 대용량 스파이크 두 개는 단추를 두 번 클릭할 경우의 CPU 활동을 보여 줍니다. `GetMaxNumberButton_Click`은 단일 코어에서 동기적으로 수행되므로 메서드 그래프의 높이가 50%를 초과하지 않습니다. `GetMaxNumberAsycButton_Click`은 두 코어에서 비동기적으로 실행되므로 다시 해당 스파이크가 두 코어에서 거의 모든 CPU 리소스를 활용하는 것처럼 보입니다.  
   
 ####  <a name="BKMK_Select_timeline_segments_to_view_details"></a> 세부 정보를 볼 타임라인 세그먼트 선택  
  **진단 세션** 타임라인에서 선택 막대를 사용하여 GetMaxNumberButton_Click 데이터에 초점을 맞춥니다.  

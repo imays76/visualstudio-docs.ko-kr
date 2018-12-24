@@ -16,7 +16,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: eb36ad055f126ce034fbb7323877b65aa8e3105c
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51722248"
@@ -44,7 +44,7 @@ Visual Studio에서는 이제 성능 도구를 선택할 수 있습니다. 그 �
      디버그 빌드에는 릴리스 빌드에서 제공하는 함수 호출 및 상수 인라인 처리, 사용되지 않는 코드 경로 정리 및 디버거가 사용할 수 없는 방식으로 변수 저장과 같은 특정 최적화가 없습니다. 디버거 자체가 디버깅에 필요한 특정 작업(예: 예외 및 모듈 로드 이벤트 가로채기)을 수행하기 때문에 성능 시간을 변경합니다. 따라서 디버거 통합 도구의 성능 수치는 수십 밀리초 범위까지만 정확합니다. 디버거가 없는 도구를 사용한 릴리스 구성의 성능 수치는 훨씬 더 정확합니다.  
   
 ##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> 디버깅하는 동안 프로파일링 데이터 수집  
- 다음 섹션에서는 로컬 디버그에 대해 설명합니다. 장치에서의 디버그 또는 원격 디버그에 대해서는 뒤의 섹션에서 확인할 수 있습니다.  
+ 다음 섹션에서는 로컬 디버그에 대해 설명합니다. 디바이스에서의 디버그 또는 원격 디버그에 대해서는 뒤의 섹션에서 확인할 수 있습니다.  
   
 1. 디버그할 프로젝트를 연 다음 **디버그 / 디버깅 시작** 을 클릭합니다(또는 도구 모음에서 **시작** 을 클릭하거나 **F5**사용).  
   
@@ -113,12 +113,12 @@ Visual Studio에서는 이제 성능 도구를 선택할 수 있습니다. 그 �
 |![5단계](../profiling/media/procguid-6.png "ProcGuid_6")|데이터에 여러 도구의 정보가 포함되어 있으면 도구에 대한 세부 정보는 탭 아래에 수집됩니다.|  
 |![6단계](../profiling/media/procguid-6a.png "ProcGuid_6a")|도구에는 세부 정보 뷰가 하나 이상 있을 수 있습니다. 뷰는 타임라인의 선택된 부분으로 필터링됩니다.|  
   
-## <a name="setting-the-analysis-target-to-another-device"></a>다른 장치로 분석 대상 설정  
+## <a name="setting-the-analysis-target-to-another-device"></a>다른 디바이스로 분석 대상 설정  
  Visual Studio 프로젝트에서 앱을 시작할 수 있는 것 외에, 다른 대상에서 진단 세션을 실행할 수도 있습니다. 예를 들어 Windows 앱 스토어에서 설치된 앱 버전의 성능 문제를 진단할 수 있습니다.  
   
  ![진단 도구 분석 대상 선택](../profiling/media/pdhub-chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")  
   
- 장치에 이미 설치된 앱을 시작하거나 이미 실행 중인 일부 앱에 진단 도구를 연결할 수 있습니다. **실행 중인 응용 프로그램** 또는 **설치된 응용 프로그램**을 선택하면 지정된 배포 대상에서 앱을 검색하는 목록에서 앱을 선택하는 것입니다.  
+ 디바이스에 이미 설치된 앱을 시작하거나 이미 실행 중인 일부 앱에 진단 도구를 연결할 수 있습니다. **실행 중인 응용 프로그램** 또는 **설치된 응용 프로그램**을 선택하면 지정된 배포 대상에서 앱을 검색하는 목록에서 앱을 선택하는 것입니다.  
   
  ![진단을 위해 실행 중이거나 설치된 응용 프로그램 선택](../profiling/media/pdhub-selectrunningapp.png "PDHUB_SelectRunningApp")  
   

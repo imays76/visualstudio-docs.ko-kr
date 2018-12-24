@@ -43,7 +43,7 @@ ms.locfileid: "50671705"
 -   [SharePoint 솔루션 만들기](#Solutions)  
   
 ##  <a name="Apps"></a> Office 및 SharePoint용 추가 기능 만들기  
- Office 2013 및 SharePoint 2013에는 Office와 SharePoint를 확장하는 추가 기능을 빌드 및 배포하고 수익을 창출할 수 있는 새로운 추가 기능 모델이 도입되었습니다.  Office 또는 SharePoint Online에서 이러한 추가 기능을 실행할 수 있으며 사용자는 다양한 장치에서 추가 기능을 조작할 수 있습니다.  
+ Office 2013 및 SharePoint 2013에는 Office와 SharePoint를 확장하는 추가 기능을 빌드 및 배포하고 수익을 창출할 수 있는 새로운 추가 기능 모델이 도입되었습니다.  Office 또는 SharePoint Online에서 이러한 추가 기능을 실행할 수 있으며 사용자는 다양한 디바이스에서 추가 기능을 조작할 수 있습니다.  
   
  새 사용 하는 방법을 알아봅니다 [Office 추가 기능 모델](/office/dev/add-ins/overview/office-add-ins) 에 사용자를 위한 Office 환경을 확장 합니다.  
   

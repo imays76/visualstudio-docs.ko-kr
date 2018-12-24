@@ -17,7 +17,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: d046603919c0639427b29cb23cdfa6f8ea74337c
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49289837"
@@ -52,7 +52,7 @@ Visual Studio 2017에서 최신 설명서를 참조 하세요 [의견을 보내]
   
  Microsoft에서 직접 관리와 지원을 받아야 하는 대규모 조직의 경우 다양한 프리미어 지원 제안을 통해 계약을 체결할 수 있습니다. 자세한 내용은 [Microsoft 서비스 프리미어 지원](http://go.microsoft.com/fwlink/?LinkId=258223)을 참조하세요.  
   
- 제품이 새 컴퓨터 또는 장치와 함께 설치되어 온 경우 하드웨어 제조업체가 이 소프트웨어에 대한 기술 지원을 제공합니다. 제조업체에 직접 문의하여 지원을 받으세요.  
+ 제품이 새 컴퓨터 또는 디바이스와 함께 설치되어 온 경우 하드웨어 제조업체가 이 소프트웨어에 대한 기술 지원을 제공합니다. 제조업체에 직접 문의하여 지원을 받으세요.  
   
  Microsoft 지원 서비스는 현재 가격, 약관 및 조건에 따라 다를 수 있습니다. 이러한 가격, 계약 조건은 예고 없이 변경될 수 있습니다.  
   

@@ -32,7 +32,7 @@ ms.locfileid: "53062789"
 
      [자습서 수행](https://docs.asp.net/en/latest/tutorials/your-first-aspnet-application.html) &#124;                               [문서 찾아보기](https://docs.asp.net/) &#124;                                   [동영상 시청](http://www.asp.net/vnext)
 
--   **[HTML/Javascript (Apache Cordova) 플랫폼 간 모바일 앱 만들기](http://taco.visualstudio.com/docs/get-started-first-mobile-app/)**  : Apache Cordova HTML/CSS/Javascript를 기반으로 하는 오픈 소스 플랫폼 간 환경입니다.  Javascript 코드는 특정 플랫폼을 대상으로 하는 래퍼에서 실행되며 장치의 모든 하드웨어 기능에 액세스할 수 있게 해줍니다. Apple 스토어, Android 스토어 및 Windows 스토어용 앱을 개발할 수 있습니다.
+-   **[HTML/Javascript (Apache Cordova) 플랫폼 간 모바일 앱 만들기](http://taco.visualstudio.com/docs/get-started-first-mobile-app/)**  : Apache Cordova HTML/CSS/Javascript를 기반으로 하는 오픈 소스 플랫폼 간 환경입니다.  Javascript 코드는 특정 플랫폼을 대상으로 하는 래퍼에서 실행되며 디바이스의 모든 하드웨어 기능에 액세스할 수 있게 해줍니다. Apple 스토어, Android 스토어 및 Windows 스토어용 앱을 개발할 수 있습니다.
 
      [샘플 로드](https://github.com/Microsoft/cordova-samples/tree/master/todo-angularjs) &#124;   [자습서 수행](http://taco.visualstudio.com/docs/get-started-first-mobile-app/) &#124;                               [문서 찾아보기](http://taco.visualstudio.com/docs/get-started-vs-tools-apache-cordova/) &#124;                                [동영상 시청](https://channel9.msdn.com/Blogs/Seth-Juarez/Getting-Started-with-Apache-Cordova-in-Visual-Studio)
 

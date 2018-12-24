@@ -19,7 +19,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 2838534f8241b347cc22b3c50c595b3973f14b56
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49291280"
@@ -39,16 +39,16 @@ ms.locfileid: "49291280"
  Visual Basic 및 C# 개발자에게 중요한 세 가지 상위 보안 문제인 권한, 웹 응용 프로그램 및 Visual Studio 설치에 대한 정보를 제공합니다.  
   
 ## <a name="securing-mobile-applications"></a>모바일 응용 프로그램 보안  
- 모바일 장치의 인기가 증가하면서 이러한 장치의 정보 및 데이터 보안에 대한 중요성도 더욱 커지고 있습니다.  
+ 모바일 디바이스의 인기가 증가하면서 이러한 디바이스의 정보 및 데이터 보안에 대한 중요성도 더욱 커지고 있습니다.  
   
  [장치 보안 고려 사항](http://msdn.microsoft.com/en-us/45fab484-8718-452e-8210-04fda3c6cb87)  
- 장치에 대한 보안 정책에 영향을 주는 여러 요인에 대해 설명합니다.  
+ 디바이스에 대한 보안 정책에 영향을 주는 여러 요인에 대해 설명합니다.  
   
  [.NET Compact Framework의 보안 목표](http://msdn.microsoft.com/en-us/64ac2770-e2bc-40a3-abbf-56c8a2c0e364)  
  .NET Compact Framework 보안 목표에 대해 설명합니다.  
   
  [보안 모바일 Web Form 페이지 디자인](http://msdn.microsoft.com/en-us/b69727c1-f81f-4221-a116-8f92f769365f)  
- 무선 네트워크와 모바일 장치의 보안 계획, 구현 및 지원에 대해 설명합니다.  
+ 무선 네트워크와 모바일 디바이스의 보안 계획, 구현 및 지원에 대해 설명합니다.  
   
 ## <a name="securing-web-applications"></a>웹 응용 프로그램 보안  
  잘못 작성된 웹 페이지는 전체 서버 및 잠재적으로 전체 네트워크의 무결성 및 보안을 손상시킬 수 있습니다. 따라서 웹 응용 프로그램을 계획할 때 보안 고려 사항을 검토해야 합니다.  

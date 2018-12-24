@@ -16,7 +16,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 8d4bc5d8e8a24483c30ac813d3253626e58dd353
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51791750"
@@ -24,7 +24,7 @@ ms.locfileid: "51791750"
 # <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>UWP(유니버설 Windows 플랫폼)로 앱 마이그레이션
 필요한 경우 Windows 스토어 8.1 앱, Windows Phone 8.1 앱 또는 Visual Studio 2015 RC로 만든 유니버설 Windows 앱에 대한 기존 프로젝트 파일을 수동으로 변경하면 Visual Studio 2015 RTM과 함께 사용할 수 있습니다. Windows 앱 프로젝트 및 Windows Phone 프로젝트를 둘 다 포함하는 Windows 8.1 유니버설 앱이 있는 경우 각 프로젝트를 마이그레이션하는 단계를 따라야 합니다.  
   
- 이제 유니버설 Windows 플랫폼을 사용할 경우 하나 이상의 장치 제품군을 앱의 대상으로 지정합니다. 유니버설 Windows 앱에 대한 자세한 내용은 이 [플랫폼 가이드](https://msdn.microsoft.com/library/windows/apps/dn894631.aspx)(영문)를 참조하세요.  
+ 이제 유니버설 Windows 플랫폼을 사용할 경우 하나 이상의 디바이스 제품군을 앱의 대상으로 지정합니다. 유니버설 Windows 앱에 대한 자세한 내용은 이 [플랫폼 가이드](https://msdn.microsoft.com/library/windows/apps/dn894631.aspx)(영문)를 참조하세요.  
   
 - 유니버설 Windows 플랫폼을 사용하려면[기존 C#/VB Windows 스토어 8.1 또는 Windows Phone 8.1 앱을 마이그레이션](#MigrateCSharp) 합니다.  
   
@@ -40,7 +40,7 @@ ms.locfileid: "51791750"
   
 #### <a name="migrate-your-cvb-project-files"></a>C#/VB 프로젝트 파일 마이그레이션  
   
-1.  설치한 유니버설 Windows 플랫폼을 찾으려면 **\Program Files (x86)\Windows Kits\10\Platforms\UAP**폴더를 엽니다. 이 폴더는 설치된 각 유니버설 Windows 플랫폼에 대한 폴더 목록을 포함합니다. 폴더 이름은 설치한 유니버설 Windows 플랫폼 버전입니다. 예를 들어 이 Windows 10 장치에는 버전 10.0.10240.0의 유니버설 Windows 플랫폼이 설치되어 있습니다.  
+1.  설치한 유니버설 Windows 플랫폼을 찾으려면 **\Program Files (x86)\Windows Kits\10\Platforms\UAP**폴더를 엽니다. 이 폴더는 설치된 각 유니버설 Windows 플랫폼에 대한 폴더 목록을 포함합니다. 폴더 이름은 설치한 유니버설 Windows 플랫폼 버전입니다. 예를 들어 이 Windows 10 디바이스에는 버전 10.0.10240.0의 유니버설 Windows 플랫폼이 설치되어 있습니다.  
   
      ![설치 된 버전을 보려면 폴더를 엽니다](../misc/media/uap-uwpversions.png "UAP_UWPVersions")  
   
@@ -255,7 +255,7 @@ ms.locfileid: "51791750"
   
 #### <a name="migrate-your-c-project-files"></a>C++ 프로젝트 파일 마이그레이션  
   
-1.  설치한 유니버설 Windows 플랫폼을 찾으려면 **\Program Files (x86)\Windows Kits\10\Platforms\UAP**폴더를 엽니다. 이 폴더는 설치된 각 유니버설 Windows 플랫폼에 대한 폴더 목록을 포함합니다. 폴더 이름은 설치한 유니버설 Windows 플랫폼 버전입니다. 예를 들어 이 Windows 10 장치에는 버전 10.0.10240.0의 유니버설 Windows 플랫폼이 설치되어 있습니다.  
+1.  설치한 유니버설 Windows 플랫폼을 찾으려면 **\Program Files (x86)\Windows Kits\10\Platforms\UAP**폴더를 엽니다. 이 폴더는 설치된 각 유니버설 Windows 플랫폼에 대한 폴더 목록을 포함합니다. 폴더 이름은 설치한 유니버설 Windows 플랫폼 버전입니다. 예를 들어 이 Windows 10 디바이스에는 버전 10.0.10240.0의 유니버설 Windows 플랫폼이 설치되어 있습니다.  
   
      ![설치 된 버전을 보려면 폴더를 엽니다](../misc/media/uap-uwpversions.png "UAP_UWPVersions")  
   
@@ -533,7 +533,7 @@ ms.locfileid: "51791750"
     </Extension>  
     ```  
   
-14. Bluetooth 장치 기능 bluetooth.rfcomm 및 bluetooth.genericAttributeProfile을 제네릭 Bluetooth 기능으로 바꿉니다. 예를 들어:  
+14. Bluetooth 디바이스 기능 bluetooth.rfcomm 및 bluetooth.genericAttributeProfile을 제네릭 Bluetooth 기능으로 바꿉니다. 예를 들어:  
   
      **이전:**  
   
@@ -618,7 +618,7 @@ ms.locfileid: "51791750"
   
 ##### <a name="update-your-cvb-projects-to-use-the-latest-universal-windows-platform"></a>최신 유니버설 Windows 플랫폼을 사용하도록 C#/VB 프로젝트 업데이트  
   
-1. 설치한 유니버설 Windows 플랫폼을 찾으려면 **\Program Files (x86)\Windows Kits\10\Platforms\UAP**폴더를 엽니다. 이 폴더는 설치된 각 유니버설 Windows 플랫폼에 대한 폴더 목록을 포함합니다. 폴더 이름은 설치한 유니버설 Windows 플랫폼 버전입니다. 예를 들어 이 Windows 10 장치에는 버전 10.0.10240.0의 유니버설 Windows 플랫폼이 설치되어 있습니다.  
+1. 설치한 유니버설 Windows 플랫폼을 찾으려면 **\Program Files (x86)\Windows Kits\10\Platforms\UAP**폴더를 엽니다. 이 폴더는 설치된 각 유니버설 Windows 플랫폼에 대한 폴더 목록을 포함합니다. 폴더 이름은 설치한 유니버설 Windows 플랫폼 버전입니다. 예를 들어 이 Windows 10 디바이스에는 버전 10.0.10240.0의 유니버설 Windows 플랫폼이 설치되어 있습니다.  
   
     ![설치 된 버전을 보려면 폴더를 엽니다](../misc/media/uap-uwpversions.png "UAP_UWPVersions")  
   
@@ -752,7 +752,7 @@ ms.locfileid: "51791750"
   
 ###  <a name="RCUpdate10CPlusPlus"></a> 최신 유니버설 Windows 플랫폼을 사용 하도록 c + + 프로젝트 업데이트  
   
-1.  설치한 유니버설 Windows 플랫폼을 찾으려면 **\Program Files (x86)\Windows Kits\10\Platforms\UAP**폴더를 엽니다. 이 폴더는 설치된 각 유니버설 Windows 플랫폼에 대한 폴더 목록을 포함합니다. 폴더 이름은 설치한 유니버설 Windows 플랫폼 버전입니다. 예를 들어 이 Windows 10 장치에는 버전 10.0.10240.0의 유니버설 Windows 플랫폼이 설치되어 있습니다.  
+1.  설치한 유니버설 Windows 플랫폼을 찾으려면 **\Program Files (x86)\Windows Kits\10\Platforms\UAP**폴더를 엽니다. 이 폴더는 설치된 각 유니버설 Windows 플랫폼에 대한 폴더 목록을 포함합니다. 폴더 이름은 설치한 유니버설 Windows 플랫폼 버전입니다. 예를 들어 이 Windows 10 디바이스에는 버전 10.0.10240.0의 유니버설 Windows 플랫폼이 설치되어 있습니다.  
   
      ![설치 된 버전을 보려면 폴더를 엽니다](../misc/media/uap-uwpversions.png "UAP_UWPVersions")  
   

@@ -21,7 +21,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 504a63d0f99a1a96d1192a1666d45dafde037253
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51775110"
@@ -31,7 +31,7 @@ ms.locfileid: "51775110"
 
 Windows 스토어 앱에 대한 Visual Studio 시뮬레이터는 Windows 스토어 앱을 시뮬레이션하는 데스크톱 응용 프로그램입니다. 개발 컴퓨터에서 응용 프로그램을 실행하고 일반적인 터치 및 회전 이벤트를 시뮬레이트할 수 있습니다. 에뮬레이트하려는 실제 화면 크기와 해상도를 선택하고 네트워크 연결 속성을 시뮬레이트할 수도 있습니다.  
   
- 시뮬레이터는 Windows 스토어 앱을 디자인, 개발, 디버그 및 테스트할 수 있는 환경을 제공합니다. 그러나 앱을 Windows 스토어에 게시하기 전 먼저 실제 장치에서 앱을 테스트해야 합니다.  
+ 시뮬레이터는 Windows 스토어 앱을 디자인, 개발, 디버그 및 테스트할 수 있는 환경을 제공합니다. 그러나 앱을 Windows 스토어에 게시하기 전 먼저 실제 디바이스에서 앱을 테스트해야 합니다.  
   
  Windows 스토어 앱에 대한 Visual Studio 시뮬레이터는 로컬 컴퓨터의 격리된 환경에서는 실행되지 않습니다. 따라서 복구할 수 없는 시스템 차원의 오류처럼 시뮬레이터에서 발생하는 오류가 전체 컴퓨터에 영향을 줄 수 있습니다.  
   
@@ -61,9 +61,9 @@ Windows 스토어 앱에 대한 Visual Studio 시뮬레이터는 Windows 스토�
   
 -   ![시뮬레이터 두 손가락 대상](../debugger/media/simulator-twofinger.png "SIMULATOR_TwoFinger")  
   
-     이중 대상 아이콘은 장치 화면에서 두 손가락의 위치를 나타냅니다.  
+     이중 대상 아이콘은 디바이스 화면에서 두 손가락의 위치를 나타냅니다.  
   
-    -   마우스를 이동하여 아이콘을 장치 화면의 개체 위에 배치합니다.  
+    -   마우스를 이동하여 아이콘을 디바이스 화면의 개체 위에 배치합니다.  
   
     -   축소 또는 확대하기 전에 마우스 휠을 앞쪽이나 뒤쪽으로 돌려 두 손가락의 시뮬레이션된 거리를 변경합니다.  
   
@@ -76,7 +76,7 @@ Windows 스토어 앱에 대한 Visual Studio 시뮬레이터는 Windows 스토�
 ## <a name="object-rotation"></a>개체 방향  
  **터치 에뮬레이션 회전** 단추는 조작 모드를 두 손가락을 사용한 회전 제스처로 설정합니다.  
   
--   -   마우스를 이동하여 아이콘을 장치 화면의 개체 위에 배치합니다.  
+-   -   마우스를 이동하여 아이콘을 디바이스 화면의 개체 위에 배치합니다.  
   
     -   개체를 회전하기 전에 마우스 휠을 앞쪽이나 뒤쪽으로 돌려 두 손가락의 시뮬레이션된 방향을 변경합니다.  
   
@@ -88,10 +88,10 @@ Windows 스토어 앱에 대한 Visual Studio 시뮬레이터는 Windows 스토�
  시뮬레이터 창이 항상 다른 창의 위쪽에 오도록 설정할 수 있습니다. **맨 위 창 설정/해제** 단추는 시뮬레이터 창의 **항상 위** 모드를 사용하거나 사용하지 않도록 설정합니다.  
   
 ##  <a name="BKMK_Change_the_device_orientation"></a> 장치 방향 변경  
- 시뮬레이터를 임의의 방향으로 90도 회전하여 장치 방향을 가로와 세로 간에 전환할 수 있습니다.  
+ 시뮬레이터를 임의의 방향으로 90도 회전하여 디바이스 방향을 가로와 세로 간에 전환할 수 있습니다.  
   
 > [!NOTE]
->  시뮬레이터는 프로젝트의 [DisplayProperties.AutoRotationPreferences](http://go.microsoft.com/fwlink/?LinkId=249460) 속성을 무시합니다. 예를 들어 프로젝트에서 방향이 `Landscape`로 설정된 상태에서 시뮬레이터를 세로 방향으로 회전하면 시뮬레이터 표시 이미지도 회전되고 크기가 조정됩니다. 실제 장치에서 이러한 설정을 테스트합니다.  
+>  시뮬레이터는 프로젝트의 [DisplayProperties.AutoRotationPreferences](http://go.microsoft.com/fwlink/?LinkId=249460) 속성을 무시합니다. 예를 들어 프로젝트에서 방향이 `Landscape`로 설정된 상태에서 시뮬레이터를 세로 방향으로 회전하면 시뮬레이터 표시 이미지도 회전되고 크기가 조정됩니다. 실제 디바이스에서 이러한 설정을 테스트합니다.  
   
 > [!NOTE]
 >  시뮬레이터의 한 쪽 가장자리가 시뮬레이터가 표시되는 화면보다 크도록 시뮬레이터를 회전하면 시뮬레이터 크기가 화면 안에 맞도록 자동으로 조정됩니다. 시뮬레이터를 다시 회전하는 경우 원래 크기로 조정되지 않습니다.  
@@ -99,7 +99,7 @@ Windows 스토어 앱에 대한 Visual Studio 시뮬레이터는 Windows 스토�
 ##  <a name="BKMK_Change_the_simulated_screen_size_and_resolution"></a> 시뮬레이션된 화면 크기 및 해상도 변경  
  시뮬레이트된 화면 크기 및 해상도를 변경하려면 색상표에서 **해상도 변경** 단추를 선택하고 목록에서 새 크기와 해상도를 선택합니다.  
   
- 화면 크기 및 해상도는 *Screen width inches, pixel width X pixel height*로 나열됩니다. 화면 크기와 해상도 모두 시뮬레이션됩니다. 시뮬레이터에서의 위치 좌표는 선택한 장치 크기 및 해상도의 좌표로 변환됩니다.  
+ 화면 크기 및 해상도는 *Screen width inches, pixel width X pixel height*로 나열됩니다. 화면 크기와 해상도 모두 시뮬레이션됩니다. 시뮬레이터에서의 위치 좌표는 선택한 디바이스 크기 및 해상도의 좌표로 변환됩니다.  
   
 > [!NOTE]
 >  비트맵 이미지의 배율이 조정된 버전을 응용 프로그램에 저장할 수 있으며 그러면 Windows에서 현재 배율에 맞는 올바른 이미지가 로드됩니다. 자세한 내용은 [응답성 있는 설계 101](https://msdn.microsoft.com/library/windows/apps/dn958435.aspx)을 참조하세요. 그러나 Windows에서 해상도에 맞는 다른 이미지를 선택하도록 시뮬레이터 해상도를 변경하면 디버그 세션을 중지한 후 다시 시작해야만 새 이미지를 볼 수 있습니다.  
