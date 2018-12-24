@@ -12,7 +12,7 @@ ms.author: crdun
 manager: crdun
 ms.openlocfilehash: f3a72c197963332ad433f88e6cb7fffde5a9a41b
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51730407"
@@ -46,17 +46,17 @@ Xamarin을 사용하여 일반적인 C#/.NET 코드베이스에서 네이티브 
   
 1.  Windows 및 Android 타기팅:  
   
-    1.  권장: Android 장치가 없는 경우 빠른 Hyper-V 기반 Visual Studio Emulator for Android를 사용할 수 있는 Windows 8 이상을 실행하는 VM이 아닌 물리적 Windows 컴퓨터 (VM이 아닌 실제 컴퓨터를 사용해야 한다는 내용을 앞에서 언급했는지 확인)  
+    1.  권장: Android 디바이스가 없는 경우 빠른 Hyper-V 기반 Visual Studio Emulator for Android를 사용할 수 있는 Windows 8 이상을 실행하는 VM이 아닌 물리적 Windows 컴퓨터 (VM이 아닌 실제 컴퓨터를 사용해야 한다는 내용을 앞에서 언급했는지 확인)  
   
     1.  Windows 7 이전 버전이 설치된 컴퓨터를 사용할 수도 있으며, 이 경우 Xamarin Player for Android를 에뮬레이터로 사용하게 됩니다. 
     
-    1. 어떤 구성을 사용하든 항상 연결된 물리적 장치에서 앱을 직접 실행할 수 있습니다.  
+    1. 어떤 구성을 사용하든 항상 연결된 물리적 디바이스에서 앱을 직접 실행할 수 있습니다.  
   
 1.  IOS 타기팅:  
   
     1.  OS X 10.10.5 이상(Xcode 7.1에 필요)을 실행하는 OS X Yosemite가 설치된 네트워크 Mac 또는 Mac mini  
   
-    1.  Windows(7 이상) 컴퓨터에서 Visual Studio를 기본 개발 환경으로 사용하는 경우에는 iOS 앱을 컴파일/디버그하고, iOS 시뮬레이터 또는 테더링된 장치에 연결하고, 사용자 인터페이스 디자인을 위해 Visual Studio에서 스토리보드 디자인을 사용할 때만 네트워크 Mac이 필요합니다. 이러한 보조 역할에는 이전 Mac 모델을 사용해도 충분합니다.  
+    1.  Windows(7 이상) 컴퓨터에서 Visual Studio를 기본 개발 환경으로 사용하는 경우에는 iOS 앱을 컴파일/디버그하고, iOS 시뮬레이터 또는 테더링된 디바이스에 연결하고, 사용자 인터페이스 디자인을 위해 Visual Studio에서 스토리보드 디자인을 사용할 때만 네트워크 Mac이 필요합니다. 이러한 보조 역할에는 이전 Mac 모델을 사용해도 충분합니다.  
   
 ##  <a name="windows"></a> Windows 설치(Visual Studio 및 Xamarin)  
   
@@ -77,7 +77,7 @@ Xamarin을 사용하여 일반적인 C#/.NET 코드베이스에서 네이티브 
   
         ![플랫폼 간 모바일 개발 아래에서 Xamarin 옵션 선택](../cross-platform/media/cross-plat-xamarin-setup-2.png "Cross-Plat Xamarin Setup 2")  
   
-   2.  Windows 8 이상: **플랫폼 간 모바일 개발 > Microsoft Visual Studio Emulator for Android**. 참고: Windows 7 이하 컴퓨터를 사용하거나 Mac에서 Windows를 실행하고 있으면 이 확인란이 *선택 취소*되어 있는지 확인합니다. 5단계 후에 "Windows 컴퓨터의 에뮬레이터에 대한 참고"를 참조하세요. 물리적 Android 장치에서만 디버그하려는 경우에는 이 확인란을 선택 취소한 상태로 유지해도 됩니다.  
+   2.  Windows 8 이상: **플랫폼 간 모바일 개발 > Microsoft Visual Studio Emulator for Android**. 참고: Windows 7 이하 컴퓨터를 사용하거나 Mac에서 Windows를 실행하고 있으면 이 확인란이 *선택 취소*되어 있는지 확인합니다. 5단계 후에 "Windows 컴퓨터의 에뮬레이터에 대한 참고"를 참조하세요. 물리적 Android 디바이스에서만 디버그하려는 경우에는 이 확인란을 선택 취소한 상태로 유지해도 됩니다.  
   
    3.  (선택 사항) Windows 장치를 대상으로 지정하려면 **Windows 및 웹 개발 > 유니버설 Windows 앱 개발 도구** 및/또는 **Windows 8.1 및 Windows Phone 8.0/8.1 도구**도 선택합니다. 여기에는 다운로드하는 데 시간이 더 오래 걸리는 에뮬레이터 이미지를 설치하기 위한 옵션이 포함되고, 언제든지 Visual Studio 설치 관리자로 돌아가서 나중에 추가할 수 있습니다.  
   
@@ -92,7 +92,7 @@ Xamarin을 사용하여 일반적인 C#/.NET 코드베이스에서 네이티브 
 
    **도구 > 옵션**에 Xamarin에 대한 옵션이 표시되지 않으면 설치를 다시 확인하거나 Visual Studio를 다시 시작해 보세요. 옵션 대화 상자에서 Xamarin을 검색할 수도 있습니다.
       
-6. Windows 7 이하 버전의 경우 또는 Mac에서 Windows를 실행하는 경우 물리적 장치가 없으면 [Android SDK 에뮬레이터](https://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/debug-on-emulator/android-sdk-emulator/)를 사용합니다. 다음 참고를 참조하세요.  
+6. Windows 7 이하 버전의 경우 또는 Mac에서 Windows를 실행하는 경우 물리적 디바이스가 없으면 [Android SDK 에뮬레이터](https://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/debug-on-emulator/android-sdk-emulator/)를 사용합니다. 다음 참고를 참조하세요.  
   
    **Windows 컴퓨터의 에뮬레이터에 대한 참고:** CPU는 한 번에 하나의 가상화 기술만 지원하므로 개발 컴퓨터에서 하나의 기술만 사용하는 것이 좋습니다. 세 가지 주요 가상화 기술은 Hyper-V(Visual Studio Emulator for Android 및 Windows Phone 에뮬레이터에서 사용됨), Virtual Box(Genymotion에서 사용됨) 및 Intel HAXM(Android SDK 에뮬레이터에서 사용됨)입니다. Hyper-V와 Virtual Box 간의 다양한 문제 때문에 지정된 컴퓨터에서 한 가지 유형의 에뮬레이터만 사용하는 것이 좋습니다. 즉, 위의 권장 사항에 따라 Windows 8 이상 컴퓨터에서는 Hyper-V를 사용하고 Windows 7 이하 컴퓨터를 사용하는 경우와 Mac에서 Windows를 실행하는 경우에는 Intel HAXM 에뮬레이터를 사용하는 것이 좋습니다.  
   

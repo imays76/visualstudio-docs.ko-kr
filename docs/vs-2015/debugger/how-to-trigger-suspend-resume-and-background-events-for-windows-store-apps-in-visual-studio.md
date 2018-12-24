@@ -23,7 +23,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 889eb8aac5dcef4a5bafa2543f9731a97e2e0bd1
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51745177"
@@ -31,7 +31,7 @@ ms.locfileid: "51745177"
 # <a name="how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio"></a>Visual Studio에서 Windows 스토어 앱에 대한 일시 중단, 다시 시작 및 백그라운드 이벤트를 트리거하는 방법
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-디버깅하고 있지 않을 때는 Windows PLM( **프로세스 수명 관리** )에서 응용 프로그램의 실행 상태(장치 상태 및 사용자 작업에 응답하여 응용 프로그램 시작, 일시 중단, 다시 시작 및 종료)를 제어합니다. 디버깅하는 중에는 Windows가 이러한 활성화 이벤트를 사용하지 않도록 설정합니다. 이 항목에서는 디버거에서 이러한 이벤트를 발생시키는 방법에 대해 설명합니다.  
+디버깅하고 있지 않을 때는 Windows PLM( **프로세스 수명 관리** )에서 응용 프로그램의 실행 상태(디바이스 상태 및 사용자 작업에 응답하여 응용 프로그램 시작, 일시 중단, 다시 시작 및 종료)를 제어합니다. 디버깅하는 중에는 Windows가 이러한 활성화 이벤트를 사용하지 않도록 설정합니다. 이 항목에서는 디버거에서 이러한 이벤트를 발생시키는 방법에 대해 설명합니다.  
   
  이 항목에서는 **백그라운드 작업**을 디버깅하는 방법에 대해서도 설명합니다. 백그라운드 작업을 사용하면 응용 프로그램을 실행하고 있지 않은 경우에도 백그라운드 프로세스에서 특정 작업을 수행할 수 있습니다. 디버거를 사용하여 응용 프로그램을 디버그 모드에 둔 다음 UI를 시작하지 않고 백그라운드 작업을 시작하고 디버깅할 수 있습니다.  
   
@@ -73,7 +73,7 @@ ms.locfileid: "51745177"
  디버거에서 응용 프로그램의 백그라운드 작업을 시작하는 이벤트를 트리거할 수 있습니다.  
   
 > [!NOTE]
->  디버거는 장치 상태의 변경을 나타내는 이벤트처럼 데이터를 포함하지 않는 이벤트만 트리거할 수 있습니다. 사용자 입력 또는 다른 데이터가 필요한 백그라운드 작업은 수동으로 트리거해야 합니다.  
+>  디버거는 디바이스 상태의 변경을 나타내는 이벤트처럼 데이터를 포함하지 않는 이벤트만 트리거할 수 있습니다. 사용자 입력 또는 다른 데이터가 필요한 백그라운드 작업은 수동으로 트리거해야 합니다.  
   
  가장 실질적으로 백그라운드 작업 이벤트를 트리거하는 방법은 응용 프로그램이 실행되고 있지 않는 경우입니다. 그러나 표준 디버깅 세션의 이벤트 트리거도 지원됩니다.  
   
@@ -114,7 +114,7 @@ ms.locfileid: "51745177"
      ![일시 중단, 다시 시작, 종료 및 백그라운드 작업](../debugger/media/dbg-suspendresumebackground.png "DBG_SuspendResumeBackground")  
   
 ##  <a name="BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app"></a> 설치된 응용 프로그램에서 프로세스 수명 관리 이벤트 및 백그라운드 작업 트리거  
- 설치된 응용 프로그램 디버그 대화 상자를 사용하여 이미 설치된 응용 프로그램을 디버거에 로드할 수 있습니다. 예를 들어 Windows 스토어에서 설치된 응용 프로그램을 디버깅하거나 응용 프로그램의 소스 파일은 있지만 응용 프로그램에 대한 Visual Studio 프로젝트가 없는 경우에 응용 프로그램을 디버깅할 수 있습니다. 설치된 응용 프로그램 디버그 대화 상자에서는 Visual Studio 컴퓨터나 원격 장치에서 디버그 모드로 응용 프로그램을 시작하거나 디버그 모드에서 실행되도록 응용 프로그램을 설정하고 응용 프로그램을 시작하지 않을 수 있습니다. 자세한 내용은 **JavaScript** 또는 [Visual C++, Visual C# 및 Visual Basic](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Start_an_installed_app_in_the_debugger) 버전의 [디버깅 세션을 시작하는 방법](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md#BKMK_Start_an_installed_app_in_the_debugger) 에서 **디버거에서 설치된 응용 프로그램 시작** 단원을 참조하십시오.  
+ 설치된 응용 프로그램 디버그 대화 상자를 사용하여 이미 설치된 응용 프로그램을 디버거에 로드할 수 있습니다. 예를 들어 Windows 스토어에서 설치된 응용 프로그램을 디버깅하거나 응용 프로그램의 소스 파일은 있지만 응용 프로그램에 대한 Visual Studio 프로젝트가 없는 경우에 응용 프로그램을 디버깅할 수 있습니다. 설치된 응용 프로그램 디버그 대화 상자에서는 Visual Studio 컴퓨터나 원격 디바이스에서 디버그 모드로 응용 프로그램을 시작하거나 디버그 모드에서 실행되도록 응용 프로그램을 설정하고 응용 프로그램을 시작하지 않을 수 있습니다. 자세한 내용은 **JavaScript** 또는 [Visual C++, Visual C# 및 Visual Basic](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Start_an_installed_app_in_the_debugger) 버전의 [디버깅 세션을 시작하는 방법](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md#BKMK_Start_an_installed_app_in_the_debugger) 에서 **디버거에서 설치된 응용 프로그램 시작** 단원을 참조하십시오.  
   
  응용 프로그램이 디버거에 로드되면 위에서 설명한 절차를 사용할 수 있습니다.  
   

@@ -23,7 +23,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: b6f1767ce1c572e1e3d8eacae8ba3a60f3593476
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49193994"
@@ -229,7 +229,7 @@ ms.locfileid: "49193994"
  XML 파일로의 XPath 쿼리에 의해 지정된 대로 값을 반환합니다.  
   
  [XslTransformation 작업](../msbuild/xsltransformation-task.md)  
- XSLT(*Extensible Stylesheet Language Transformation*) 또는 컴파일된 XSLT 및 출력을 사용하여 XML 입력을 출력 장치 또는 파일로 변환합니다.  
+ XSLT(*Extensible Stylesheet Language Transformation*) 또는 컴파일된 XSLT 및 출력을 사용하여 XML 입력을 출력 디바이스 또는 파일로 변환합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [MSBuild 참조](../msbuild/msbuild-reference.md)   

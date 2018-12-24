@@ -943,7 +943,7 @@ Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | 데스크톱 C
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | UWP용 Windows 10 SDK(10.0.16299.0): C#, VB, JS | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | UWP용 Windows 10 SDK(10.0.16299.0): C++ | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK(10.0.17763.0) | 15.9.28218.60 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.IpOverUsb | USB 장치 연결 | 15.7.27625.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.IpOverUsb | USB 디바이스 연결 | 15.7.27625.0 | Optional
 Microsoft.VisualStudio.ComponentGroup.UWP.VC | C++ 유니버설 Windows 플랫폼 도구 | 15.9.28107.0 | Optional
 Microsoft.VisualStudio.ComponentGroup.Windows10SDK.15063 | Windows 10 SDK(10.0.15063.0) | 15.8.27825.0 | Optional
 Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK(10.0.16299.0) | 15.8.27825.0 | Optional

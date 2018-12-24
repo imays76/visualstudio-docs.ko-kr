@@ -50,7 +50,7 @@ Visual Studio 2015의 새로운 기능에 자세히 알아보려면 원한다 �
  ![Visual Studio IDE](../ide/media/visualstudioide.png "VisualStudioIDE")
 
 ### <a name="signing-in"></a>로그인
- Visual Studio를 처음 시작할 때 Microsoft 계정이나 회사 또는 학교 계정으로 로그인할 수 있습니다. 로그인을 하면 창 레이아웃 등 여러 장치 간에 설정을 동기화하고 Azure 구독 및 Visual Studio Team Services와 같이 필요할 수 있는 서비스에 자동으로 연결할 수 있습니다. 구독 기반 라이선스가 있는 경우 라이선스 토큰을 최신 상태로 유지하기 위해 정기적으로 Visual Studio에 로그인해야 합니다. 제품 키 라이선스가 있는 경우 로그인할 필요가 없지만 로그인하면 더 편리하게 Azure, Office 365, Salesforce.com에서 Visual Studio Team Services 및 사용자 계정에 연결할 수 있습니다. 자세한 내용은 [Visual Studio에 로그인](../ide/signing-in-to-visual-studio.md)을 참조하세요.
+ Visual Studio를 처음 시작할 때 Microsoft 계정이나 회사 또는 학교 계정으로 로그인할 수 있습니다. 로그인을 하면 창 레이아웃 등 여러 디바이스 간에 설정을 동기화하고 Azure 구독 및 Visual Studio Team Services와 같이 필요할 수 있는 서비스에 자동으로 연결할 수 있습니다. 구독 기반 라이선스가 있는 경우 라이선스 토큰을 최신 상태로 유지하기 위해 정기적으로 Visual Studio에 로그인해야 합니다. 제품 키 라이선스가 있는 경우 로그인할 필요가 없지만 로그인하면 더 편리하게 Azure, Office 365, Salesforce.com에서 Visual Studio Team Services 및 사용자 계정에 연결할 수 있습니다. 자세한 내용은 [Visual Studio에 로그인](../ide/signing-in-to-visual-studio.md)을 참조하세요.
 
  여러 개의 Visual Studio Team Services 계정, Azure 계정 또는 MSDN 구독이 있는 경우 연결하여 한 번의 로그인으로 모든 계정의 리소스와 서비스에 액세스할 수 있습니다. 자세한 내용은 [Work with multiple user accounts](../ide/work-with-multiple-user-accounts.md)을 참조하세요.
 
@@ -149,7 +149,7 @@ Visual Studio 2015의 새로운 기능에 자세히 알아보려면 원한다 �
 오류 또는 성공 메시지를 포함하는 빌드 출력이 **출력** 창에 나타납니다. 합니다 **오류 목록** 빌드 오류에 대 한 자세한 정보를 표시 합니다.
 
 ## <a name="debugging-your-code"></a>코드 디버그
- Visual Studio의 최신 디버거를 사용하면 로컬 프로젝트나 원격 장치 또는 Android 또는 Windows Phone용 에뮬레이터와 같은 에뮬레이터에서 실행 중인 코드를 디버그할 수 있습니다. 한 번에 문 하나씩 코드를 단계별로 실행하고 진행에 따라 변수를 검사하고, 다중 스레드 응용 프로그램을 단계별로 실행하고, 지정된 조건이 true일 때만 적중되는 중단점을 설정할 수 있습니다. 코드의 컨텍스트에서 나갈 필요가 없도록 이러한 모든 작업을 코드 편집기 자체에서 구성할 수 있습니다.
+ Visual Studio의 최신 디버거를 사용하면 로컬 프로젝트나 원격 디바이스 또는 Android 또는 Windows Phone용 에뮬레이터와 같은 에뮬레이터에서 실행 중인 코드를 디버그할 수 있습니다. 한 번에 문 하나씩 코드를 단계별로 실행하고 진행에 따라 변수를 검사하고, 다중 스레드 응용 프로그램을 단계별로 실행하고, 지정된 조건이 true일 때만 적중되는 중단점을 설정할 수 있습니다. 코드의 컨텍스트에서 나갈 필요가 없도록 이러한 모든 작업을 코드 편집기 자체에서 구성할 수 있습니다.
 
  ![중단점 설정 미리 보기 창](../ide/media/dbg-breakpoints-peekwindow.png "DBG_Breakpoints_PeekWindow")
 

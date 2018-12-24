@@ -16,7 +16,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: af6d58ac5cd87523124d567e36559a82d69ddfc6
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51810535"
@@ -42,9 +42,9 @@ ms.locfileid: "51810535"
   
    -   로컬 컴퓨터에서 앱을 실행하면 설치된 앱의 실행을 가장 잘 복제합니다.  
   
-   -   원격 장치에서 데이터를 수집하는 경우 원격 데스크톱 연결을 사용하는 것이 아니라 장치에서 직접 앱을 실행합니다.  
+   -   원격 디바이스에서 데이터를 수집하는 경우 원격 데스크톱 연결을 사용하는 것이 아니라 디바이스에서 직접 앱을 실행합니다.  
   
-   -   Windows Phone 앱의 경우 **장치** 에서 직접 데이터를 수집하면 가장 정확한 데이터가 제공됩니다.  
+   -   Windows Phone 앱의 경우 **디바이스** 에서 직접 데이터를 수집하면 가장 정확한 데이터가 제공됩니다.  
   
 2. **디버그** 메뉴에서 **성능 프로파일러...** 를 선택합니다.  
   

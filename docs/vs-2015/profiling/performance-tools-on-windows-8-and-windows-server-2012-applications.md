@@ -16,7 +16,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: e02ce9a9ef06574de999620017b96d470a76e6c9
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51767526"
@@ -94,7 +94,7 @@ Windows 8 및 Windows Server 2012의 강화된 보안 기능을 위해 Visual St
 -   샘플링 이벤트 및 타이밍 간격 설정 또는 추가 성능 카운터 데이터 수집과 같은 샘플링 옵션  
   
 ##  <a name="BKMK_Profiling_from_the_command_line"></a> 명령줄에서 프로파일링  
- 다음 두 명령줄 도구를 사용하여 Visual Studio가 설치되지 않은 장치를 비롯한 Windows 8 및 Windows Server 2012 장치에서 프로파일링 데이터를 수집합니다.  
+ 다음 두 명령줄 도구를 사용하여 Visual Studio가 설치되지 않은 디바이스를 비롯한 Windows 8 및 Windows Server 2012 디바이스에서 프로파일링 데이터를 수집합니다.  
   
 |도구 이름|설명|  
 |---------------|-----------------|  
@@ -103,7 +103,7 @@ Windows 8 및 Windows Server 2012의 강화된 보안 기능을 위해 Visual St
   
  두 도구는 로컬 컴퓨터에서 사용하기 위해 Visual Studio와 함께 설치됩니다.  
   
- Visual Studio가 설치되지 않은 장치에서 응용 프로그램을 프로파일링하려면 다음 중 하나를 수행합니다.  
+ Visual Studio가 설치되지 않은 디바이스에서 응용 프로그램을 프로파일링하려면 다음 중 하나를 수행합니다.  
   
 -   [MSDN 웹 사이트](http://go.microsoft.com/fwlink/?LinkID=219549)에서 Visual Studio용 원격 도구의 일부로 도구를 다운로드합니다.  
   

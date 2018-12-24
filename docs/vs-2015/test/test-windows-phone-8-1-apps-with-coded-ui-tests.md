@@ -15,7 +15,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 808482fdd7599adb270fe7634d61d4b88acb0d80
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49890147"
@@ -23,7 +23,7 @@ ms.locfileid: "49890147"
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>코딩된 UI 테스트를 사용하여 Windows UWP 및 8.1 Phone 앱 테스트
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-모바일 장치 또는 에뮬레이터에서 실행되는 UWP 앱 및 XAML 기반 Phone 8.1 앱에 대한 UI 테스트를 만드는 데 이 연습을 사용합니다.   
+모바일 디바이스 또는 에뮬레이터에서 실행되는 UWP 앱 및 XAML 기반 Phone 8.1 앱에 대한 UI 테스트를 만드는 데 이 연습을 사용합니다.   
   
 ## <a name="create-a-simple-windows-phone-app"></a>간단한 Windows Phone 앱 만들기  
   
@@ -323,7 +323,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
  **A**: 예, 코딩된 UI 테스트 빌더를 사용하려면 에뮬레이터가 실행 중이고 애뮬레이터에 앱을 배포해야 합니다. 그렇지 않으면 실행 중인 에뮬레이터가 없다는 오류 메시지가 throw됩니다.  
   
 ###  <a name="TestingPhoneAppsCodedUI_EmulatorDevice"></a> Q: 테스트는 에뮬레이터에서만 실행할 수 있나요? 아니면 실제 장치에서도 할 수 있나요?  
- **A**: 두 옵션 모두 지원됩니다. 에뮬레이터 유형을 변경하거나 장치 도구 모음에서 장치를 선택하여 테스트 실행 대상을 선택합니다. 장치를 선택하면 컴퓨터의 USB 포트 중 하나에 Phone Blue 장치를 연결해야 합니다.  
+ **A**: 두 옵션 모두 지원됩니다. 에뮬레이터 유형을 변경하거나 디바이스 도구 모음에서 디바이스를 선택하여 테스트 실행 대상을 선택합니다. 디바이스를 선택하면 컴퓨터의 USB 포트 중 하나에 Phone Blue 디바이스를 연결해야 합니다.  
   
  ![에뮬레이터 버전 또는 실제 장치 선택](../test/media/cuit-phone-testtarget.png "CUIT_Phone_TestTarget")  
   
@@ -342,14 +342,14 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
   
 - 로컬 컴퓨터에서 실행 중인 UWP 앱이 스토어 앱으로 실행되는 경우. 이를 테스트하려면 **코딩된 UI 테스트 프로젝트(Windows)** 템플릿을 사용해야 합니다. 새 프로젝트를 만들 때 이 템플릿을 찾으려면 **Windows**, **범용** 노드로 이동합니다. 또는 **Windows**, **Windows 8**, **Windows** 노드로 이동합니다.  
   
-- 모바일 장치 또는 에뮬레이터에서 실행 중인 UWP 앱이 휴대폰 앱으로 실행되는 경우. 이를 테스트하려면 **코딩된 UI 테스트 프로젝트(Windows Phone)** 템플릿을 사용해야 합니다. 새 프로젝트를 만들 때 이 템플릿을 찾으려면 **Windows**, **범용** 노드로 이동합니다. 또는 **Windows**, **Windows 8**, **Windows Phone** 노드로 이동합니다.  
+- 모바일 디바이스 또는 에뮬레이터에서 실행 중인 UWP 앱이 휴대폰 앱으로 실행되는 경우. 이를 테스트하려면 **코딩된 UI 테스트 프로젝트(Windows Phone)** 템플릿을 사용해야 합니다. 새 프로젝트를 만들 때 이 템플릿을 찾으려면 **Windows**, **범용** 노드로 이동합니다. 또는 **Windows**, **Windows 8**, **Windows Phone** 노드로 이동합니다.  
   
   프로젝트를 만든 후의 테스트 작성은 이전과 동일합니다.  
   
 ### <a name="q-can-i-select-controls-that-are-outside-the-emulator"></a>Q: 에뮬레이터 외부에 있는 컨트롤을 선택할 수 있나요?  
  **A**: 아니요, 빌더가 이러한 컨트롤은 검색하지 않습니다.  
   
-### <a name="q-can-i-use-the-coded-ui-test-builder-to-map-controls-using-a-physical-phone-device"></a>Q: 코딩된 UI 테스트 빌더를 사용하여 실제 휴대폰 장치에 컨트롤을 매핑할 수 있나요?  
+### <a name="q-can-i-use-the-coded-ui-test-builder-to-map-controls-using-a-physical-phone-device"></a>Q: 코딩된 UI 테스트 빌더를 사용하여 실제 휴대폰 디바이스에 컨트롤을 매핑할 수 있나요?  
  **A**: 아니요, 빌더는 앱을 에뮬레이터에 배포한 경우에만 UI 요소를 매핑할 수 있습니다.  
   
 ### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>Q: UIMap.Designer 파일에서 코드를 수정할 수 없는 이유는 무엇인가요?  
@@ -379,7 +379,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
   
 |기능|Windows 스토어 응용 프로그램|Windows Phone 앱|  
 |-------------|------------------------|------------------------|  
-|테스트 실행 대상|로컬 또는 원격 컴퓨터. 자동화된 테스트 사례를 사용하여 테스트를 실행하는 경우 원격 컴퓨터를 지정할 수 있습니다. [Microsoft Test Manager에서 테스트 사례 자동화](http://msdn.microsoft.com/library/4e02568b-9cde-47cc-b41c-82726c177e42)를 참조하세요.|에뮬레이터 또는 장치. 이 항목의 [Q: 테스트는 에뮬레이터에서만 실행할 수 있나요? 아니면 실제 장치에서도 할 수 있나요?](#TestingPhoneAppsCodedUI_EmulatorDevice) 를 참조하세요.|  
+|테스트 실행 대상|로컬 또는 원격 컴퓨터. 자동화된 테스트 사례를 사용하여 테스트를 실행하는 경우 원격 컴퓨터를 지정할 수 있습니다. [Microsoft Test Manager에서 테스트 사례 자동화](http://msdn.microsoft.com/library/4e02568b-9cde-47cc-b41c-82726c177e42)를 참조하세요.|에뮬레이터 또는 디바이스. 이 항목의 [Q: 테스트는 에뮬레이터에서만 실행할 수 있나요? 아니면 실제 디바이스에서도 할 수 있나요?](#TestingPhoneAppsCodedUI_EmulatorDevice) 를 참조하세요.|  
 |명령줄에서 실행|대상을 지정하는 데 Settings 파일이 필요 없습니다.|대상을 지정하는 데에는 Runsettings 파일이 필요합니다.|  
 |셸 컨트롤의 특수화 클래스|<xref:Microsoft.VisualStudio.TestTools.UITesting.DirectUIControls.DirectUIControl>|<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>|  
 |XAML 앱의 WebView 컨트롤|Html* 특수화 클래스를 사용하여 HTML 요소와 상호 작용하는 경우 지원됩니다. <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>을 참조하세요.|지원되지 않습니다.|  

@@ -20,7 +20,7 @@ ms.author: tglee
 manager: ghogen
 ms.openlocfilehash: 25d6655969245adf1b2a28df2b3327561d149983
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51722820"
@@ -40,7 +40,7 @@ Visual Studio 2017에 대 한 최신 설명서를 참조 하세요. 합니다 [V
 ## <a name="avoiding-reboots"></a>재부팅 방지  
  Visual Studio를 배포하기 전에 적절한 Visual Studio 필수 조건을 충족하는지 확인하여 다시 부팅을 줄일 수 있습니다. .NET Framework 용.NET Framework 4.6을 먼저 설치 하지 않고 Visual Studio 2015를 배포 하는 경우 Windows 8을 실행 하는 컴퓨터를 다시 부팅 해야 합니다.  
   
- Windows 및 Android 장치 에뮬레이션의 경우 Windows 기능 Hyper-V가 아직 설정되어 있지 않으면 컴퓨터를 다시 부팅해야 할 수 있습니다. 웹 개발의 경우 Windows 기능 웹 서버가 아직 설정되어 있지 않으면 컴퓨터를 다시 부팅해야 할 수 있습니다. Office 개발의 경우 Windows 기능을 Windows Identify Foundation이 아직 설정되어 있지 않으면 컴퓨터를 다시 부팅해야 할 수 있습니다. Windows 기능 웹 서버가 아직 설정되어 있지 않으면 컴퓨터를 다시 부팅합니다. Office 개발의 경우 Windows 기능을 Windows Identify Foundation이 아직 설정되어 있지 않으면 컴퓨터를 다시 부팅해야 할 수 있습니다. Windows 기능 검색 및 설치를 자동화하는 방법에 대한 자세한 내용은 [Windows Server 2008 R2의 Server Core 설치를 실행하는 서버에 서버 역할 설치](https://technet.microsoft.com/library/ee441260(v=ws.10).aspx)(영문)를 참조하세요.  
+ Windows 및 Android 디바이스 에뮬레이션의 경우 Windows 기능 Hyper-V가 아직 설정되어 있지 않으면 컴퓨터를 다시 부팅해야 할 수 있습니다. 웹 개발의 경우 Windows 기능 웹 서버가 아직 설정되어 있지 않으면 컴퓨터를 다시 부팅해야 할 수 있습니다. Office 개발의 경우 Windows 기능을 Windows Identify Foundation이 아직 설정되어 있지 않으면 컴퓨터를 다시 부팅해야 할 수 있습니다. Windows 기능 웹 서버가 아직 설정되어 있지 않으면 컴퓨터를 다시 부팅합니다. Office 개발의 경우 Windows 기능을 Windows Identify Foundation이 아직 설정되어 있지 않으면 컴퓨터를 다시 부팅해야 할 수 있습니다. Windows 기능 검색 및 설치를 자동화하는 방법에 대한 자세한 내용은 [Windows Server 2008 R2의 Server Core 설치를 실행하는 서버에 서버 역할 설치](https://technet.microsoft.com/library/ee441260(v=ws.10).aspx)(영문)를 참조하세요.  
   
 ## <a name="error-return-codes"></a>오류 반환 코드  
  다음 표에서는 중요한 오류 코드를 보여 줍니다. 자동화에서 이러한 오류 코드를 사용하여 다시 부팅이 필요한지 여부 및 설치 성공 여부를 확인할 수 있습니다. 에 오류 코드를 받은 경우에 문제 해결 단계를 고려해 야 합니다 [Visual Studio 설치](../install/install-visual-studio-2015.md) 페이지입니다.  

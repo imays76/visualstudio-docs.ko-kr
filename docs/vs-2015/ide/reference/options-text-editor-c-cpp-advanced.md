@@ -22,7 +22,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: aafa46e62af6eadb56d8cf53cb2190bc7403358b
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49285703"
@@ -94,7 +94,7 @@ ms.locfileid: "49285703"
 -   32 - ClassView  
   
 ## <a name="fallback-location"></a>대체(fallback) 위치  
- 대체(fallback) 위치는 기본 위치(솔루션과 동일한 디렉터리)가 사용되지 않는 경우 SDF 및 IntelliSense 지원 파일(예: iPCH)이 배치되는 위치입니다. 사용자에게 솔루션 디렉터리에 쓸 수 있는 권한이 없거나 솔루션 디렉터리가 느린 장치에 있는 경우 이러한 상황이 발생할 수 있습니다. 기본 대체(fallback) 위치는 사용자의 임시 디렉터리에 있습니다.  
+ 대체(fallback) 위치는 기본 위치(솔루션과 동일한 디렉터리)가 사용되지 않는 경우 SDF 및 IntelliSense 지원 파일(예: iPCH)이 배치되는 위치입니다. 사용자에게 솔루션 디렉터리에 쓸 수 있는 권한이 없거나 솔루션 디렉터리가 느린 디바이스에 있는 경우 이러한 상황이 발생할 수 있습니다. 기본 대체(fallback) 위치는 사용자의 임시 디렉터리에 있습니다.  
   
  **항상 대체(fallback) 위치 사용**  
  코드 검색 데이터베이스와 IntelliSense 파일이 .sln 파일 옆이 아닌 “대체(fallback) 위치”로 지정한 폴더에 항상 저장됨을 나타냅니다. IDE는 SDF 또는 iPCH 파일을 솔루션 디렉터리 옆에 배치하려고 하지 않고 항상 대체(fallback) 위치를 사용합니다.  

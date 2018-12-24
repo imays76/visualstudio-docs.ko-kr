@@ -19,7 +19,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: f1d2b37a988f0078149228cce808397f9fb915d1
 ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/07/2018
 ms.locfileid: "53062440"
@@ -43,12 +43,12 @@ ms.locfileid: "53062440"
 ## <a name="sign-in-across-multiple-accounts"></a>여러 계정에 로그인
  Visual Studio 2015에서는 단순화된 새로운 로그인 환경을 통해 Visual Studio 계정이 여러 개인 경우에도 온라인 리소스에 간편하게 액세스할 수 있습니다. Visual Studio에 로그인하면 컴퓨터의 Visual Studio 2015 및 Blend의 모든 인스턴스에 자동으로 로그인됩니다. 자동으로 로그인되면 설정 로밍이 자동으로 시작됩니다. Visual Studio 2015에서는 기능 간에 계정이 공유되므로 적절한 토큰이 있는 동안에는 **팀 탐색기**에서 Visual Studio Team Services 계정에 액세스하고 서버 탐색기에서 Microsoft Azure 구독의 리소스와 웹 사이트에 액세스할 수 있습니다. 또한 Application Insights 프로젝트의 새 프로젝트 대화 상자에 Azure 리소스가 표시되는 것은 물론, 새 [연결된 서비스 추가](http://msdn.microsoft.com/office/aa905340.aspx) 대화 상자에는 Azure 모바일, Azure 저장소, [Microsoft Office 365](https://developer.salesforce.com/) 및 **Saleforce.com developer** 계정도 표시됩니다.
 
- 새로운 계정 관리자를 통해 여러 사용자 계정을 추가하는 등 Visual Studio에서 여러 사용자 계정으로 작업한 후, 서비스에 연결하거나 온라인 리소스에 액세스할 경우 즉시 이러한 계정 사이를 전환할 수 있습니다. Visual Studio는 Visual Studio 또는 Blend의 모든 인스턴스에서 사용할 수 있도록 추가하는 계정을 기억합니다. 또한 Visual Studio는 다른 장치에서 해당 계정 중 하나로 신속하게 작업을 시작할 수 있도록 개인 설정 계정을 사용하여 계정 목록을 로밍할 예정입니다. 그러나 중요한 자격 증명은 로밍하지 않습니다. 물론 언제든지 계정 설정 대화 상자에서 계정을 제거할 수 있습니다. 시작하려면 [Work with multiple user accounts](./ide/work-with-multiple-user-accounts.md)을 참조하세요.
+ 새로운 계정 관리자를 통해 여러 사용자 계정을 추가하는 등 Visual Studio에서 여러 사용자 계정으로 작업한 후, 서비스에 연결하거나 온라인 리소스에 액세스할 경우 즉시 이러한 계정 사이를 전환할 수 있습니다. Visual Studio는 Visual Studio 또는 Blend의 모든 인스턴스에서 사용할 수 있도록 추가하는 계정을 기억합니다. 또한 Visual Studio는 다른 디바이스에서 해당 계정 중 하나로 신속하게 작업을 시작할 수 있도록 개인 설정 계정을 사용하여 계정 목록을 로밍할 예정입니다. 그러나 중요한 자격 증명은 로밍하지 않습니다. 물론 언제든지 계정 설정 대화 상자에서 계정을 제거할 수 있습니다. 시작하려면 [Work with multiple user accounts](./ide/work-with-multiple-user-accounts.md)을 참조하세요.
 
  ![계정 관리자](./ide/media/vs2015-accountmanager.gif "VS2015_AccountManager")
 
 ## <a name="choose-your-target-platforms"></a>대상 플랫폼 선택
- Visual Studio 2015는 플랫폼 간 모바일 장치 개발을 지원합니다. iOS, Android 및 Windows를 대상으로 하는 앱 및 게임을 작성하고 Visual Studio IDE 내에서 공통 코드베이스를 공유할 수 있습니다. 이러한 새 프로젝트 형식을 파일, 새 프로젝트 대화 상자에서 모두 볼 수 있습니다.
+ Visual Studio 2015는 플랫폼 간 모바일 디바이스 개발을 지원합니다. iOS, Android 및 Windows를 대상으로 하는 앱 및 게임을 작성하고 Visual Studio IDE 내에서 공통 코드베이스를 공유할 수 있습니다. 이러한 새 프로젝트 형식을 파일, 새 프로젝트 대화 상자에서 모두 볼 수 있습니다.
 
  물론 기존의 데스크톱 응용 프로그램에 대한 지원은 언어, 라이브러리 및 도구의 다양한 향상을 통해 이전보다 더욱 개선되었습니다.
 
@@ -56,18 +56,18 @@ ms.locfileid: "53062440"
  Xamarin은 C#으로 코드를 작성할 수 있으며 iOS 및 Android API에 기본적으로 바인딩되는 모바일 프레임워크입니다. Microsoft는 공유 코드를 포함하는 단일 솔루션에서 Android, iOS 및 Windows Phone용으로 개발할 수 있는 확장인 Xamarin for Visual Studio 릴리스에서 Xamarin과 긴밀하게 협력했습니다. Xamarin을 사용하면 하나의 언어와 하나의 코드베이스를 사용하므로 플랫폼 사이의 델타가 최소화됩니다.  Xamarin for Visual Studio는 Visual Studio 2010 이상에서 지원됩니다. Visual Studio 2015에는 스타터 버전의 Xamarin이 포함되어 있습니다. 시작 하려면 참조 [Visual Studio에서 Xamarin을 사용 하 여 네이티브 UI로 앱 빌드](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)합니다.
 
 ### <a name="cross-platform-mobile-apps-in-htmljavascript-with-apache-cordova"></a>Apache Cordova를 사용하여 HTML/JavaScript로 작성하는 플랫폼 간 모바일 앱
- Visual Studio Tools for Apache Cordova는 Microsoft와 오픈 소스 Apache Cordova 커뮤니티 사이의 긴밀한 공동 작업의 결과입니다. 이 도구는 HTML, CSS 및 JavaScript(또는 Typescript)를 사용한 플랫폼 간 모바일 개발을 지원합니다. 단일한 코드베이스를 사용하여 Android, iOS 및 Windows를 대상으로 하며 JavaScript IntelliSense, DOM 탐색기, JavaScript 콘솔, 중단점, 조사식, 지역, 내 코드만 등을 포함하는 다양한 Visual Studio IDE를 사용할 수 있습니다.  Visual Studio Tools for Apache Cordova를 사용하여 응용 프로그램은 공통 JavaScript API를 제공하는 플러그인을 통해 모든 플랫폼에서 기본 장치 기능에 액세스할 수 있습니다. 시작 하려면 참조 [Visual Studio Tools for Apache Cordova 시작](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42)합니다.
+ Visual Studio Tools for Apache Cordova는 Microsoft와 오픈 소스 Apache Cordova 커뮤니티 사이의 긴밀한 공동 작업의 결과입니다. 이 도구는 HTML, CSS 및 JavaScript(또는 Typescript)를 사용한 플랫폼 간 모바일 개발을 지원합니다. 단일한 코드베이스를 사용하여 Android, iOS 및 Windows를 대상으로 하며 JavaScript IntelliSense, DOM 탐색기, JavaScript 콘솔, 중단점, 조사식, 지역, 내 코드만 등을 포함하는 다양한 Visual Studio IDE를 사용할 수 있습니다.  Visual Studio Tools for Apache Cordova를 사용하여 응용 프로그램은 공통 JavaScript API를 제공하는 플러그인을 통해 모든 플랫폼에서 기본 디바이스 기능에 액세스할 수 있습니다. 시작 하려면 참조 [Visual Studio Tools for Apache Cordova 시작](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42)합니다.
 
 ### <a name="cross-platform-mobile-games-in-c-with-unity"></a>Unity를 사용하여 C#으로 작성하는 플랫폼 간 모바일 게임
  Unity는 다중 플랫폼 2D 및 3D 게임 개발용으로 널리 사용되는 플랫폼입니다. C#으로 게임을 작성하고 Android, iOS, Windows Phone 및 다수의 다른 플랫폼 에서 기본적으로 실행할 수 있습니다. Visual Studio Tools for Unity는 Unity와 Visual Studio IDE를 통합하는 확장입니다. 이 확장을 통해 Unity 개발자용으로 설계된 생산성 기능 외에 Visual Studio IDE 및 디버거의 모든 기능을 사용할 수 있습니다. Visual Studio Tools for Unity 2.0 Preview 2는 Visual Studio 2015에 대한 지원을 비롯해 지역 창과 조사식 창의 향상된 개체 시각화 같은 다양한 새로운 기능을 추가합니다. Microsoft는 최근에 Visual Studio Tools for Unity의 제작사인 SyntaxTree를 인수했습니다. Visual Studio Tools for Unity 2.0 Preview 2를 다운로드하고 Visual Studio Tools for Unity에 대한 자세한 내용을 보려면 [Visual Studio Tools for Unity 2.0](http://Aka.ms/vstu)을 참조하세요.
 
 ### <a name="cross-platform-apps-and-libraries-for-native-c"></a>네이티브 C++용 플랫폼 간 앱 및 라이브러리
- C++는 대부분의 모바일 장치에서 기본적으로 사용할 수 있는 언어입니다. 이 언어를 사용하여 여러 모바일 플랫폼 대상에 대해 빌드할 수 있는 플랫폼 간 공유 코드 라이브러리를 작성할 수 있습니다. C++를 사용하여 전체 모바일 앱을 만들 수도 있습니다. Visual C++를 사용하여 플랫폼 간 코드를 편집, 빌드, 배포 및 디버그할 수 있습니다. Windows 앱용 템플릿 외에도 Android Native-Activity 앱, iOS 앱용 템플릿을 사용하여 프로젝트를 만들거나 Xamarin 하이브리드 앱이 포함된 여러 플랫폼에 대해 공유 코드 라이브러리를 사용하여 프로젝트를 만들 수도 있습니다. 플랫폼별 IntelliSense를 사용하면 API를 탐색하고 Android, iOS 또는 Windows 대상에 대한 올바른 코드를 생성할 수 있습니다. x86 또는 ARM 네이티브 플랫폼에 대한 빌드를 구성하거나, 네트워크에 연결된 Mac의 iOS 시뮬레이터 또는 iOS 장치에 코드를 배포하거나 직접 연결된 Android 장치에 코드를 배포하거나, 높은 성능의 Android용 Microsoft Visual Studio 에뮬레이터를 사용하여 테스트할 수 있습니다. Visual Studio 디버거에서 중단점을 설정하고 변수를 조사하고 스택을 보고 단계별로 C++ 코드를 실행할 수 있습니다. 플랫폼에 가장 특정한 코드를 제외한 모든 코드를 여러 앱 플랫폼 간에 공유하고, Visual Studio에서 하나의 솔루션을 사용하여 이 코드를 모두 빌드할 수 있습니다.
+ C++는 대부분의 모바일 디바이스에서 기본적으로 사용할 수 있는 언어입니다. 이 언어를 사용하여 여러 모바일 플랫폼 대상에 대해 빌드할 수 있는 플랫폼 간 공유 코드 라이브러리를 작성할 수 있습니다. C++를 사용하여 전체 모바일 앱을 만들 수도 있습니다. Visual C++를 사용하여 플랫폼 간 코드를 편집, 빌드, 배포 및 디버그할 수 있습니다. Windows 앱용 템플릿 외에도 Android Native-Activity 앱, iOS 앱용 템플릿을 사용하여 프로젝트를 만들거나 Xamarin 하이브리드 앱이 포함된 여러 플랫폼에 대해 공유 코드 라이브러리를 사용하여 프로젝트를 만들 수도 있습니다. 플랫폼별 IntelliSense를 사용하면 API를 탐색하고 Android, iOS 또는 Windows 대상에 대한 올바른 코드를 생성할 수 있습니다. x86 또는 ARM 네이티브 플랫폼에 대한 빌드를 구성하거나, 네트워크에 연결된 Mac의 iOS 시뮬레이터 또는 iOS 디바이스에 코드를 배포하거나 직접 연결된 Android 디바이스에 코드를 배포하거나, 높은 성능의 Android용 Microsoft Visual Studio 에뮬레이터를 사용하여 테스트할 수 있습니다. Visual Studio 디버거에서 중단점을 설정하고 변수를 조사하고 스택을 보고 단계별로 C++ 코드를 실행할 수 있습니다. 플랫폼에 가장 특정한 코드를 제외한 모든 코드를 여러 앱 플랫폼 간에 공유하고, Visual Studio에서 하나의 솔루션을 사용하여 이 코드를 모두 빌드할 수 있습니다.
 
  플랫폼 간 c + +에서 시작 하려면 참조 [Visual c + +를 사용 하 여 플랫폼 간 모바일 앱 빌드](./misc/build-cross-platform-mobile-apps-with-visual-cpp.md)
 
-### <a name="universal-windows-apps-for-any-windows-10-device"></a>Windows 10 장치용 유니버설 Windows 앱
- 유니버설 Windows 플랫폼과 단일 Windows 코어를 사용하여 휴대폰에서 데스크톱에 이르는 모든 Windows 10 장치에서 동일한 앱을 실행할 수 있습니다. Visual Studio 2015 및 유니버설 Windows 앱 개발 도구를 사용하여 이러한 유니버설 Windows 앱을 만듭니다.
+### <a name="universal-windows-apps-for-any-windows-10-device"></a>Windows 10 디바이스용 유니버설 Windows 앱
+ 유니버설 Windows 플랫폼과 단일 Windows 코어를 사용하여 휴대폰에서 데스크톱에 이르는 모든 Windows 10 디바이스에서 동일한 앱을 실행할 수 있습니다. Visual Studio 2015 및 유니버설 Windows 앱 개발 도구를 사용하여 이러한 유니버설 Windows 앱을 만듭니다.
 
  ![유니버설 Windows 플랫폼](./cross-platform/media/uwp-coreextensions.png "UWP_CoreExtensions")
 
@@ -93,12 +93,12 @@ ms.locfileid: "53062440"
  자세한 내용은 [What's New](http://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa) 하며 [.NET 블로그](http://blogs.msdn.com/b/dotnet/)합니다.
 
 #### <a name="c"></a>C++
- Visual C++에서는 C++11/14 언어 규칙이 대폭 개선된 것은 물론, 플랫폼 간 모바일 장치 개발과 다시 시작 가능한 함수 및 await(현재 C++17에서 표준화하기로 계획)가 지원되며, CRT(C 런타임 라이브러리) 및 C++ STL(표준 템플릿 라이브러리) 구현의 개선 사항 및 버그 수정, MFC의 크기 조정 가능한 대화 상자를 비롯해 새로운 컴파일러 최적화 기능, 향상된 빌드 성능, 새로운 진단 기능, 코드 편집기의 새로운 생산성 도구를 제공합니다.
+ Visual C++에서는 C++11/14 언어 규칙이 대폭 개선된 것은 물론, 플랫폼 간 모바일 디바이스 개발과 다시 시작 가능한 함수 및 await(현재 C++17에서 표준화하기로 계획)가 지원되며, CRT(C 런타임 라이브러리) 및 C++ STL(표준 템플릿 라이브러리) 구현의 개선 사항 및 버그 수정, MFC의 크기 조정 가능한 대화 상자를 비롯해 새로운 컴파일러 최적화 기능, 향상된 빌드 성능, 새로운 진단 기능, 코드 편집기의 새로운 생산성 도구를 제공합니다.
 
  자세한 내용은 [What's New for Visual c + +](http://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7) 하며 [Visual c + + 블로그](http://blogs.msdn.com/b/vcblog/)합니다.
 
-## <a name="device-preview-menu-bar"></a>장치 미리 보기 메뉴 모음
- 유니버설 Windows 플랫폼 프로젝트에서 장치 미리 보기 메뉴 모음을 사용하면 XAML기반 UI가 다양한 화면 크기에서 렌더링되는 방식을 볼 수 있습니다.
+## <a name="device-preview-menu-bar"></a>디바이스 미리 보기 메뉴 모음
+ 유니버설 Windows 플랫폼 프로젝트에서 디바이스 미리 보기 메뉴 모음을 사용하면 XAML기반 UI가 다양한 화면 크기에서 렌더링되는 방식을 볼 수 있습니다.
 
  ![장치 미리 보기 메뉴](./ide/media/vs2015-device-preview.png "vs2015_device_preview")
 
@@ -124,7 +124,7 @@ ms.locfileid: "53062440"
  XAML 사용자 인터페이스를 설계하기 위한 Blend 환경이 크게 향상되었습니다. Blend는 보다 직관적인 UI, IntelliSense가 포함된 보다 강력한 XAML 편집 기능, 보다 향상된 Visual Studio 통합을 제공하도록 완전히 다시 설계되었습니다. 자세한 내용은 [Visual Studio 및 Blend for Visual Studio에서 XAML 디자인](./designers/designing-xaml-in-visual-studio.md)합니다.
 
 ## <a name="cross-platform-debugging-support"></a>플랫폼 간 디버깅 지원
- Visual Studio를 사용하여 Windows, iOS 및 Android 장치에서 실행되는 네이티브 모바일 앱을 만들고 디버그할 수 있습니다. [Android용 Visual Studio 에뮬레이터](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx)(영문)를 사용하거나 장치를 연결하고 Visual Studio에서 직접 코드를 디버그합니다.
+ Visual Studio를 사용하여 Windows, iOS 및 Android 디바이스에서 실행되는 네이티브 모바일 앱을 만들고 디버그할 수 있습니다. [Android용 Visual Studio 에뮬레이터](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx)(영문)를 사용하거나 장치를 연결하고 Visual Studio에서 직접 코드를 디버그합니다.
 
 -   **JavaScript / Cordova**. [Visual Studio Tools for Apache Cordova](http://msdn.microsoft.com/library/dn879821\(v=vs.140\).aspx) 를 사용하여 JavaScript로 Windows, iOS 및 Android용 네이티브 앱을 빌드합니다.
 
@@ -176,7 +176,7 @@ ms.locfileid: "53062440"
  ![편집기의 터치 지원](./ide/media/vs2015-touchsupport.png "VS2015_TouchSupport")
 
 ### <a name="custom-layouts"></a>사용자 지정 레이아웃
- 사용자 지정 창 레이아웃을 만들고 저장하고 로밍할 수 있습니다. 예를 들어 데스크톱 컴퓨터에서 사용할 한 개의 선호하는 레이아웃을 정의하고, 랩톱 또는 작은 화면 장치에서 사용할 다른 레이아웃을 정의할 수 있습니다. 또는 UI 프로젝트에서 사용할 한 개의 레이아웃과 데이터베이스 프로젝트에서 사용할 또 다른 레이아웃을 정의할 수 있습니다. 키 바인딩을 사용하여 레이아웃 간에 빠르게 전환할 수 있습니다. 이러한 레이아웃은 로그인 시 Visual Studio의 모든 인스턴스에서 사용할 수 있습니다. 자세한 내용은 [사용자 지정 창 레이아웃 만들기](./misc/create-custom-window-layouts.md)를 참조하세요.
+ 사용자 지정 창 레이아웃을 만들고 저장하고 로밍할 수 있습니다. 예를 들어 데스크톱 컴퓨터에서 사용할 한 개의 선호하는 레이아웃을 정의하고, 랩톱 또는 작은 화면 디바이스에서 사용할 다른 레이아웃을 정의할 수 있습니다. 또는 UI 프로젝트에서 사용할 한 개의 레이아웃과 데이터베이스 프로젝트에서 사용할 또 다른 레이아웃을 정의할 수 있습니다. 키 바인딩을 사용하여 레이아웃 간에 빠르게 전환할 수 있습니다. 이러한 레이아웃은 로그인 시 Visual Studio의 모든 인스턴스에서 사용할 수 있습니다. 자세한 내용은 [사용자 지정 창 레이아웃 만들기](./misc/create-custom-window-layouts.md)를 참조하세요.
 
  ![Visual Studio 사용자 지정 레이아웃 메뉴 항목](./ide/media/vs2015-customlayout.png "VS2015_CustomLayout")
 

@@ -2,7 +2,7 @@
 layout: HubPage
 hide_bc: true
 title: Visual Studio 설명서 | Microsoft Docs
-description: Visual Studio 2017을 사용하여 플랫폼 및 장치에 대해 선택한 언어로 응용 프로그램, 서비스 및 도구를 개발하는 방법에 대해 알아봅니다.
+description: Visual Studio 2017을 사용하여 플랫폼 및 디바이스에 대해 선택한 언어로 응용 프로그램, 서비스 및 도구를 개발하는 방법에 대해 알아봅니다.
 ms.topic: landing-page
 searchScope: []
 ms.openlocfilehash: d4419aadd8be604918b6793685079053e03d4289
@@ -34,7 +34,7 @@ ms.locfileid: "52821359"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Visual Studio IDE</h3>
-                                                    <p>Windows를 사용하여 Android, iOS, Windows, 웹 또는 클라우드에서 모든 장치에 연결할 수 있는 앱 및 게임을 빌드합니다.</p>
+                                                    <p>Windows를 사용하여 Android, iOS, Windows, 웹 또는 클라우드에서 모든 디바이스에 연결할 수 있는 앱 및 게임을 빌드합니다.</p>
                                                 </div>
                                             </div>
                                         </div>
