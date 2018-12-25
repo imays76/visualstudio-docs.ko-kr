@@ -46,13 +46,13 @@ DLL을 만드는 템플릿은 다음과 같습니다.
   
    자세한 내용은 [Web Control Library (Managed Code)](../debugger/web-control-library-managed-code.md)을 참조하십시오.  
   
-- (C++): MFC ActiveX 컨트롤 및 MFC 스마트 장치 ActiveX 컨트롤  
+- (C++): MFC ActiveX 컨트롤 및 MFC 스마트 디바이스 ActiveX 컨트롤  
   
    ActiveX 컨트롤은 인터넷을 통해 클라이언트 컴퓨터에 다운로드하여 웹 페이지에 표시 및 활성화할 수 있는 컨트롤입니다.  
   
    독립적으로 실행할 수 없고 HTML 웹 페이지에 포함되어야 한다는 점에서 ActiveX 컨트롤을 디버깅하는 방식은 다른 종류의 컨트롤을 디버깅하는 방식과 비슷합니다. 자세한 내용은 [How to: Debug an ActiveX Control](../debugger/how-to-debug-an-activex-control.md)을 참조하십시오.  
   
-- (C++): MFC 스마트 장치 DLL  
+- (C++): MFC 스마트 디바이스 DLL  
   
    자세한 내용은 [MFC Debugging Techniques](../debugger/mfc-debugging-techniques.md)을 참조하세요.  
   
