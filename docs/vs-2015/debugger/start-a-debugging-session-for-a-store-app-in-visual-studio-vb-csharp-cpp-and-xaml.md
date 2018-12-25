@@ -41,7 +41,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: cb49d00d069a86be83ec02b92efe4ac93fc706b3
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51802579"
@@ -124,9 +124,9 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
 ###  <a name="BKMK_Choose_the_deployment_target"></a> 배포 대상 선택  
  ![Windows에만 적용 됩니다](../debugger/media/windows-only-content.png "windows_only_content")  
 
- Visual Studio 컴퓨터, 로컬 컴퓨터의 Visual Studio 시뮬레이터 또는 원격 장치에서 Windows 스토어 앱을 배포하고 디버깅할 수 있습니다.  
+ Visual Studio 컴퓨터, 로컬 컴퓨터의 Visual Studio 시뮬레이터 또는 원격 디바이스에서 Windows 스토어 앱을 배포하고 디버깅할 수 있습니다.  
 
-- C# 및 Visual Basic 응용 프로그램의 경우 프로젝트에 대한 **디버그** 속성 페이지의 **대상 장치** 목록에서 대상을 선택합니다.  
+- C# 및 Visual Basic 응용 프로그램의 경우 프로젝트에 대한 **디버그** 속성 페이지의 **대상 디바이스** 목록에서 대상을 선택합니다.  
 
 - C++ 응용 프로그램의 경우 **디버깅** 속성 페이지의 **실행할 디버거** 목록에서 대상을 선택합니다.  
 
@@ -135,8 +135,8 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
 |||  
 |-|-|  
 |**로컬 컴퓨터**|로컬 컴퓨터의 현재 세션에서 응용 프로그램을 디버깅합니다. 참조 [로컬 컴퓨터에서 실행 Windows 스토어 앱](../debugger/run-windows-store-apps-on-the-local-machine.md)합니다.|  
-|**시뮬레이터**|[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 앱에 대한 Visual Studio 시뮬레이터에서 응용 프로그램을 디버깅합니다. 시뮬레이터는 로컬 컴퓨터에서 사용할 수 없는 터치 제스처 및 장치 회전과 같은 장치 기능을 디버깅할 수 있도록 하는 데스크톱 창입니다. 참조 [Windows 스토어 앱 실행 시뮬레이터에서](../debugger/run-windows-store-apps-in-the-simulator.md)합니다.|  
-|**원격 컴퓨터**|인트라넷을 통해 로컬 컴퓨터에 연결되거나 이더넷 케이블을 사용하여 직접 연결된 장치에서 응용 프로그램을 디버깅합니다. 원격으로 디버깅하려면 Visual Studio 원격 도구가 원격 장치에 설치되어 실행되고 있어야 합니다. 참조 [Windows 스토어 앱 실행을 원격 컴퓨터에서](../debugger/run-windows-store-apps-on-a-remote-machine.md)합니다.|  
+|**시뮬레이터**|[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 앱에 대한 Visual Studio 시뮬레이터에서 응용 프로그램을 디버깅합니다. 시뮬레이터는 로컬 컴퓨터에서 사용할 수 없는 터치 제스처 및 디바이스 회전과 같은 디바이스 기능을 디버깅할 수 있도록 하는 데스크톱 창입니다. 참조 [Windows 스토어 앱 실행 시뮬레이터에서](../debugger/run-windows-store-apps-in-the-simulator.md)합니다.|  
+|**원격 컴퓨터**|인트라넷을 통해 로컬 컴퓨터에 연결되거나 이더넷 케이블을 사용하여 직접 연결된 디바이스에서 응용 프로그램을 디버깅합니다. 원격으로 디버깅하려면 Visual Studio 원격 도구가 원격 디바이스에 설치되어 실행되고 있어야 합니다. 참조 [Windows 스토어 앱 실행을 원격 컴퓨터에서](../debugger/run-windows-store-apps-on-a-remote-machine.md)합니다.|  
 
  **원격 컴퓨터**를 선택하는 경우 다음 방법 중 하나를 사용하여 원격 컴퓨터의 이름 또는 IP 주소를 지정합니다.  
 
@@ -161,7 +161,7 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
 
   ![Windows Phone만 적용 됩니다](../debugger/media/phone-only-content.png "phone_only_content")  
 
-  장치 또는 Visual Studio 휴대폰 에뮬레이터 중 하나에서 Windows Phone 스토어 앱을 배포하고 디버깅할 수 있습니다. **대상 장치** 목록에서 장치 또는 에뮬레이터를 선택합니다.  
+  디바이스 또는 Visual Studio 휴대폰 에뮬레이터 중 하나에서 Windows Phone 스토어 앱을 배포하고 디버깅할 수 있습니다. **대상 장치** 목록에서 장치 또는 에뮬레이터를 선택합니다.  
 
 ###  <a name="BKMK_Choose_the_debugger_to_use"></a> 사용할 디버거 선택  
  기본적으로 Visual Studio는 C# 및 Visual Basic 응용 프로그램에서 관리 코드를 디버깅합니다.  
@@ -198,7 +198,7 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
 ###  <a name="BKMK__Optional__Disable_network_loopbacks"></a> (선택 사항) 네트워크 루프백 비활성화  
  ![Windows에만 적용 됩니다](../debugger/media/windows-only-content.png "windows_only_content")  
 
- 보안상의 이유로 일반적인 방식으로 설치된 Windows 스토어 앱은 앱이 설치된 장치에 대한 네트워크 호출을 수행할 수 없습니다. 기본적으로 Visual Studio를 배포하면 배포된 응용 프로그램에 대한 이 규칙의 예외가 만들어 집니다. 이 예외로 인해 사용자는 단일 컴퓨터에서 통신 프로시저를 테스트할 수 있습니다. 응용 프로그램을 Windows 스토어에 제출하기 전에 이 예외 없이 응용 프로그램을 테스트해야 합니다.  
+ 보안상의 이유로 일반적인 방식으로 설치된 Windows 스토어 앱은 앱이 설치된 디바이스에 대한 네트워크 호출을 수행할 수 없습니다. 기본적으로 Visual Studio를 배포하면 배포된 응용 프로그램에 대한 이 규칙의 예외가 만들어 집니다. 이 예외로 인해 사용자는 단일 컴퓨터에서 통신 프로시저를 테스트할 수 있습니다. 응용 프로그램을 Windows 스토어에 제출하기 전에 이 예외 없이 응용 프로그램을 테스트해야 합니다.  
 
  네트워크 루프백 예외를 제거하려면  
 
@@ -248,16 +248,16 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
   . 백그라운드 작업 디버깅 하는 방법에 대 한 자세한 내용은 참조 하세요. [트리거 일시 중단, 다시 시작 및 백그라운드 이벤트를 Windows 스토어)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)합니다.  
 
 ###  <a name="BKMK_Start_an_installed_app_in_the_debugger"></a> 디버거에서 설치된 응용 프로그램 시작  
- F5 키를 사용하여 디버깅을 시작할 때 Visual Studio에서는 응용 프로그램을 빌드 및 배포하고 디버그 모드에서 실행되도록 응용 프로그램을 설정한 다음 응용 프로그램을 시작합니다. 장치에 이미 설치된 응용 프로그램을 시작하려면 설치된 응용 프로그램 패키지 디버그 대화 상자를 사용합니다. 이 절차는 Windows 스토어에서 설치된 응용 프로그램을 디버깅해야 하는 경우나 응용 프로그램의 소스 파일은 있지만 응용 프로그램에 대한 Visual Studio 프로젝트가 없는 경우에 유용합니다. 예를 들어 Visual Studio 프로젝트 또는 솔루션을 사용하지 않는 사용자 지정 빌드 시스템이 있을 수 있습니다.  
+ F5 키를 사용하여 디버깅을 시작할 때 Visual Studio에서는 응용 프로그램을 빌드 및 배포하고 디버그 모드에서 실행되도록 응용 프로그램을 설정한 다음 응용 프로그램을 시작합니다. 디바이스에 이미 설치된 응용 프로그램을 시작하려면 설치된 응용 프로그램 패키지 디버그 대화 상자를 사용합니다. 이 절차는 Windows 스토어에서 설치된 응용 프로그램을 디버깅해야 하는 경우나 응용 프로그램의 소스 파일은 있지만 응용 프로그램에 대한 Visual Studio 프로젝트가 없는 경우에 유용합니다. 예를 들어 Visual Studio 프로젝트 또는 솔루션을 사용하지 않는 사용자 지정 빌드 시스템이 있을 수 있습니다.  
 
- 응용 프로그램은 로컬 장치에 설치되거나 원격 장치에 있을 수 있습니다.  응용 프로그램을 즉시 시작하거나 시작 메뉴나 활성화 계약 등의 다른 프로세스나 방법으로 시작될 때 디버거에서 실행되도록 응용 프로그램을 설정할 수 있습니다. 응용 프로그램을 시작하지 않고 백그라운드 프로세스를 디버깅하려는 경우에도 디버그 모드에서 실행되도록 응용 프로그램을 설정할 수 있습니다. 자세한 내용은 [트리거 일시 중단, 다시 시작 및 백그라운드 이벤트를 Windows 스토어)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)합니다.  
+ 응용 프로그램은 로컬 디바이스에 설치되거나 원격 디바이스에 있을 수 있습니다.  응용 프로그램을 즉시 시작하거나 시작 메뉴나 활성화 계약 등의 다른 프로세스나 방법으로 시작될 때 디버거에서 실행되도록 응용 프로그램을 설정할 수 있습니다. 응용 프로그램을 시작하지 않고 백그라운드 프로세스를 디버깅하려는 경우에도 디버그 모드에서 실행되도록 응용 프로그램을 설정할 수 있습니다. 자세한 내용은 [트리거 일시 중단, 다시 시작 및 백그라운드 이벤트를 Windows 스토어)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)합니다.  
 
  디버그 모드에서 실행되도록 설치된 응용 프로그램을 설정하려면 다음을 수행합니다.  
 
 > [!NOTE]
 >  이 절차를 시작할 때 응용 프로그램이 실행되고 있지 않아야 합니다.  
 
-1. **디버그** 메뉴에서 **디버그 Installed App Package**를 선택합니다.  
+1.  **디버그** 메뉴에서 **디버그 Installed App Package**를 선택합니다.  
 
 2. 목록에서 다음 옵션 중 하나를 선택합니다.  
 
@@ -265,8 +265,8 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
    |                    |                                                                                                                                                                                                                                                                                                                                                                                                           |
    |--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    | **로컬 컴퓨터**  |                                                                                                                로컬 컴퓨터의 현재 세션에서 응용 프로그램을 디버깅합니다. 참조 [로컬 컴퓨터에서 실행 Windows 스토어 앱](../debugger/run-windows-store-apps-on-the-local-machine.md)합니다.                                                                                                                 |
-   |   **시뮬레이터**    | [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 앱에 대한 Visual Studio 시뮬레이터에서 응용 프로그램을 디버깅합니다. 시뮬레이터는 로컬 컴퓨터에서 사용할 수 없는 터치 제스처 및 장치 회전과 같은 장치 기능을 디버깅할 수 있도록 하는 데스크톱 창입니다. 참조 [Windows 스토어 앱 실행 시뮬레이터에서](../debugger/run-windows-store-apps-in-the-simulator.md)합니다. |
-   | **원격 컴퓨터** |                          인트라넷을 통해 로컬 컴퓨터에 연결되거나 이더넷 케이블을 사용하여 직접 연결된 장치에서 응용 프로그램을 디버깅합니다. 원격으로 디버깅하려면 Visual Studio 원격 도구가 원격 장치에 설치되어 실행되고 있어야 합니다. 참조 [Windows 스토어 앱 실행을 원격 컴퓨터에서](../debugger/run-windows-store-apps-on-a-remote-machine.md)합니다.                           |
+   |   **시뮬레이터**    | [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 앱에 대한 Visual Studio 시뮬레이터에서 응용 프로그램을 디버깅합니다. 시뮬레이터는 로컬 컴퓨터에서 사용할 수 없는 터치 제스처 및 디바이스 회전과 같은 디바이스 기능을 디버깅할 수 있도록 하는 데스크톱 창입니다. 참조 [Windows 스토어 앱 실행 시뮬레이터에서](../debugger/run-windows-store-apps-in-the-simulator.md)합니다. |
+   | **원격 컴퓨터** |                          인트라넷을 통해 로컬 컴퓨터에 연결되거나 이더넷 케이블을 사용하여 직접 연결된 디바이스에서 응용 프로그램을 디버깅합니다. 원격으로 디버깅하려면 Visual Studio 원격 도구가 원격 디바이스에 설치되어 실행되고 있어야 합니다. 참조 [Windows 스토어 앱 실행을 원격 컴퓨터에서](../debugger/run-windows-store-apps-on-a-remote-machine.md)합니다.                           |
 
 
 3. **설치된 응용 프로그램 패키지** 목록에서 응용 프로그램을 선택합니다.  
@@ -292,7 +292,7 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
 
 ####  <a name="BKMK_Set_the_app_to_run_in_debug_mode"></a> 응용 프로그램이 디버그 모드에서 실행되도록 설정  
 
-1.  응용 프로그램이 설치된 장치에 Visual Studio 원격 도구를 설치합니다. [원격 도구 설치](http://msdn.microsoft.com/library/windows/apps/hh441469.aspx#BKMK_Installing_the_Remote_Tools)를 참조하세요.  
+1.  응용 프로그램이 설치된 디바이스에 Visual Studio 원격 도구를 설치합니다. [원격 도구 설치](http://msdn.microsoft.com/library/windows/apps/hh441469.aspx#BKMK_Installing_the_Remote_Tools)를 참조하세요.  
 
 2.  시작 화면에서 `Debuggable Package Manager` 를 검색한 다음 시작합니다.  
 
@@ -309,7 +309,7 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
 
     **프로세스에 연결** 대화 상자가 나타납니다.  
 
-2. 원격 장치의 응용 프로그램에 연결하려면 **한정자** 상자에 원격 장치를 지정합니다. 다음과 같은 작업을 수행할 수 있습니다.  
+2. 원격 디바이스의 응용 프로그램에 연결하려면 **한정자** 상자에 원격 디바이스를 지정합니다. 다음과 같은 작업을 수행할 수 있습니다.  
 
    -   **한정자** 상자에 이름을 입력합니다.  
 
@@ -321,7 +321,7 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
 
     **선택** 을 선택한 후 다음 중 하나를 수행합니다.  
 
-   -   **디버깅할 코드 형식을 자동으로 결정**을 선택합니다.  
+   -    **디버깅할 코드 형식을 자동으로 결정**을 선택합니다.  
 
    -   **다음 코드 형식 디버깅** 을 선택한 다음 목록에서 하나 이상의 형식을 선택합니다.  
 

@@ -25,7 +25,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ba06e6a8ba95887c0cc6b6acfd14cef10ff03798
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51787758"
@@ -116,7 +116,7 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
   
     -   0 픽셀 값이 표시되는 상자(예: 테두리 및 안쪽 여백)는 해당 CSS 속성이 설정되어 있지 않음을 나타냅니다.  
   
-11. margin-left 규칙이 적용되는 방식을 보려면 **계산됨** 탭을 선택하고 margin-left 규칙 아래를 봅니다. 이 규칙이 5em 값으로 설정되어 있는 것을 볼 수 있지만 대상 장치에 따라 계산된 값은 66.66px 또는 146.66px가 됩니다.  
+11. margin-left 규칙이 적용되는 방식을 보려면 **계산됨** 탭을 선택하고 margin-left 규칙 아래를 봅니다. 이 규칙이 5em 값으로 설정되어 있는 것을 볼 수 있지만 대상 디바이스에 따라 계산된 값은 66.66px 또는 146.66px가 됩니다.  
   
     > [!TIP]
     >  합니다 **계산 됨** 탭 margin-left 규칙이 설정 되어 있는지를 보여 줍니다는 `..hubpage .hub. section4 .sub-image-row img` hub.css에 있는 CSS 선택기입니다. 이 데모 응용 프로그램에서 수정해야 합니다.  
@@ -125,7 +125,7 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
   
 12. **레이아웃** 탭에서 상자 왼쪽의 **여백** 상자에 표시되는 **66.66**또는 **146.66** 중 하나를 선택합니다.  
   
-13. `0` 을 입력하고 Enter 키를 누릅니다. (또한 위쪽 화살표 및 아래쪽 화살표 키를 사용해서 값을 변경할 수 있습니다.)  
+13.  `0` 을 입력하고 Enter 키를 누릅니다. (또한 위쪽 화살표 및 아래쪽 화살표 키를 사용해서 값을 변경할 수 있습니다.)  
   
 14. 다른 선택 \<i m g > 요소를 DOM 탐색기 및 margin-left 값을 0으로 변경 합니다.  
   

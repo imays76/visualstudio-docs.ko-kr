@@ -401,7 +401,7 @@ ms.locfileid: "53058326"
    }
    ```
 
-3. 해당 프로젝트를 마우스 오른쪽 단추로 클릭하고 시작 프로젝트로 설정을 선택한 후 장치 또는 에뮬레이터나 시뮬레이터에서 앱을 시작하여 세 플랫폼(Android, iOS 및 Windows Phone) 모두에서 앱을 실행합니다. 아래와 같이 유효한 미국 우편 번호(예: 60601)를 입력하고 날씨 검색 단추를 눌러 해당 지역의 날씨 데이터를 표시합니다. 물론 iOS 프로젝트의 경우 네트워크의 Mac OS X 컴퓨터에 Visual Studio가 연결되어 있어야 합니다.
+3. 해당 프로젝트를 마우스 오른쪽 단추로 클릭하고 시작 프로젝트로 설정을 선택한 후 디바이스 또는 에뮬레이터나 시뮬레이터에서 앱을 시작하여 세 플랫폼(Android, iOS 및 Windows Phone) 모두에서 앱을 실행합니다. 아래와 같이 유효한 미국 우편 번호(예: 60601)를 입력하고 날씨 검색 단추를 눌러 해당 지역의 날씨 데이터를 표시합니다. 물론 iOS 프로젝트의 경우 네트워크의 Mac OS X 컴퓨터에 Visual Studio가 연결되어 있어야 합니다.
 
     ![Android, iOS 및 Windows Phone의 날씨 앱 샘플](../cross-platform/media/crossplat-xamarin-formsguide-1.png "CrossPlat Xamarin FormsGuide 1")
 
