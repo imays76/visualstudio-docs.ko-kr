@@ -15,7 +15,7 @@ ms.author: crdun
 manager: crdun
 ms.openlocfilehash: f2e7af8227e11d554a4f953593dad396d5543aca
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51745210"
@@ -91,7 +91,7 @@ Xamarin을 통해 C#, .NET 및 Visual Studio를 사용하여 Android, iOS 및 Wi
 |-------------|----------------------------|-------------------------|  
 |테스트 계획, 테스트 사례 만들기 및 테스트 도구 모음 구성|예||  
 |수동 테스트|예||  
-|테스트 관리자(테스트 기록 및 재생)|예|Visual Studio에서만 제공하는 Windows 장치 및 Android 에뮬레이터. [Xamarin 테스트 레코더](https://www.xamarin.com/test-cloud/recorder)를 사용하면 모든 장치에 대한 기록이 가능합니다.|  
+|테스트 관리자(테스트 기록 및 재생)|예|Visual Studio에서만 제공하는 Windows 디바이스 및 Android 에뮬레이터. [Xamarin 테스트 레코더](https://www.xamarin.com/test-cloud/recorder)를 사용하면 모든 장치에 대한 기록이 가능합니다.|  
 |코드 검사|N/A||  
 |[코드 단위 테스트](../test/unit-test-your-code.md)|예|Windows 및 Android 대상의 경우 기본 제공 MSTest 도구를 사용할 수 있습니다. Windows, Android 및 iOS에서 단위 테스트를 실행하려면 NUnit를 사용하는 것이 좋습니다. [Xamarin용 TFS 구성](http://developer.xamarin.com/guides/cross-platform/ci/configuring_tfs/) (Xamarin 웹 사이트)을 참조하세요.|  
 |[UI 자동화를 사용하여 코드 테스트](../test/use-ui-automation-to-test-your-code.md)|Windows에만 해당|Visual Studio의 UI 테스트 레코더는 Windows 전용입니다. 모든 플랫폼에 대해서는 [Xamarin 테스트 레코더](https://www.xamarin.com/test-cloud/recorder)를 참조하세요.|  

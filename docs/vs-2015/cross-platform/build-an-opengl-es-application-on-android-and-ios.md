@@ -18,7 +18,7 @@ ms.author: corob
 manager: ghogen
 ms.openlocfilehash: 4978c8196553dba5566ec63fbfcd133d06b6dd6f
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51733403"
@@ -27,7 +27,7 @@ ms.locfileid: "51733403"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-플랫폼 간 모바일 개발용 Visual C++ 옵션을 설치하는 경우 공통 코드를 공유하는 iOS 앱과 Android 앱에 대한 Visual Studio 솔루션 및 프로젝트를 만들 수 있습니다. 이 항목에서는 간단한 iOS 앱과 Android Native Activity 앱 둘 다를 만드는 솔루션 템플릿을 안내합니다. 앱에는 공통적으로 OpenGL ES를 사용하여 각 플랫폼에서 동일한 애니메이션 회전 큐브를 표시하는 C++ 코드가 있습니다. OpenGL ES(OpenGL for Embedded Systems 또는 GLES)는 다양한 모바일 장치에서 지원되는 2D 및 3D 그래픽 API입니다.  
+플랫폼 간 모바일 개발용 Visual C++ 옵션을 설치하는 경우 공통 코드를 공유하는 iOS 앱과 Android 앱에 대한 Visual Studio 솔루션 및 프로젝트를 만들 수 있습니다. 이 항목에서는 간단한 iOS 앱과 Android Native Activity 앱 둘 다를 만드는 솔루션 템플릿을 안내합니다. 앱에는 공통적으로 OpenGL ES를 사용하여 각 플랫폼에서 동일한 애니메이션 회전 큐브를 표시하는 C++ 코드가 있습니다. OpenGL ES(OpenGL for Embedded Systems 또는 GLES)는 다양한 모바일 디바이스에서 지원되는 2D 및 3D 그래픽 API입니다.  
   
  [요구 사항](#req)   
  [새 OpenGLES 응용 프로그램 프로젝트 만들기](#Create)   
@@ -70,7 +70,7 @@ ms.locfileid: "51733403"
 - **MyOpenGLESApp.iOS.Application** 에는 MyOpenGLESApp.iOS.StaticLibrary의 C++ 정적 라이브러리 코드에 연결되는 iOS 앱을 개발하기 위한 리소스와 Objective-C 글루 코드가 포함됩니다. 이 프로젝트는 Visual Studio 및 원격 에이전트에서 Mac으로 전송되는 빌드 패키지를 만듭니다. 이 프로젝트를 빌드하면 Visual Studio가 Mac에서 앱을 빌드하고 배포하기 위한 파일과 명령을 보냅니다.  
   
 ##  <a name="BuildAndroid"></a> Android 앱 빌드 및 실행  
- 템플릿에서 만든 솔루션은 Android 앱을 기본 프로젝트로 설정합니다.  이 앱을 빌드 및 실행하여 설치 및 설정을 확인할 수 있습니다. 초기 테스트의 경우 Android용 Visual Studio 에뮬레이터에 의해 설치된 장치 프로필 중 하나에서 앱을 실행합니다. 다른 대상에서 앱을 테스트하려는 경우 대상 에뮬레이터를 로드하거나 장치를 컴퓨터에 연결할 수 있습니다.  
+ 템플릿에서 만든 솔루션은 Android 앱을 기본 프로젝트로 설정합니다.  이 앱을 빌드 및 실행하여 설치 및 설정을 확인할 수 있습니다. 초기 테스트의 경우 Android용 Visual Studio 에뮬레이터에 의해 설치된 디바이스 프로필 중 하나에서 앱을 실행합니다. 다른 대상에서 앱을 테스트하려는 경우 대상 에뮬레이터를 로드하거나 디바이스를 컴퓨터에 연결할 수 있습니다.  
   
 #### <a name="to-build-and-run-the-android-native-activity-app"></a>Android Native Activity 앱을 빌드 및 실행하려면  
   
@@ -78,7 +78,7 @@ ms.locfileid: "51733403"
   
     ![솔루션 플랫폼을 x86으로 설정](../cross-platform/media/cppmdd-opengles-solutionplat.png "CPPMDD_OpenGLES_SolutionPlat")  
   
-    x86을 사용하여 Windows용 Android 에뮬레이터를 대상으로 지정합니다. 장치를 대상으로 지정하는 경우 장치 프로세서에 따라 솔루션 플랫폼을 선택합니다. **솔루션 플랫폼** 목록이 표시되지 않는 경우 **단추 추가/제거** 목록에서 **솔루션 플랫폼** 을 선택한 후 플랫폼을 선택합니다.  
+    x86을 사용하여 Windows용 Android 에뮬레이터를 대상으로 지정합니다. 디바이스를 대상으로 지정하는 경우 디바이스 프로세서에 따라 솔루션 플랫폼을 선택합니다. **솔루션 플랫폼** 목록이 표시되지 않는 경우 **단추 추가/제거** 목록에서 **솔루션 플랫폼** 을 선택한 후 플랫폼을 선택합니다.  
   
 2. **솔루션 탐색기**에서 MyOpenGLESApp.Android.Packaging 프로젝트의 바로 가기 메뉴를 열고 **빌드**를 선택합니다.  
   
@@ -92,7 +92,7 @@ ms.locfileid: "51733403"
   
     ![배포 대상 선택](../cross-platform/media/cppmdd-opengles-pickemulator.png "CPPMDD_OpenGLES_PickEmulator")  
   
-    다른 에뮬레이터를 설치했거나 Android 장치를 연결한 경우 배포 대상 드롭다운 목록에서 선택할 수 있습니다. 앱을 실행하려면 빌드된 솔루션 플랫폼이 대상 장치의 플랫폼과 일치해야 합니다.  
+    다른 에뮬레이터를 설치했거나 Android 디바이스를 연결한 경우 배포 대상 드롭다운 목록에서 선택할 수 있습니다. 앱을 실행하려면 빌드된 솔루션 플랫폼이 대상 디바이스의 플랫폼과 일치해야 합니다.  
   
 4. F5 키를 눌러 디버깅을 시작하거나 Shift+F5를 눌러 디버깅하지 않고 시작합니다.  
   
@@ -123,7 +123,7 @@ ms.locfileid: "51733403"
   
     ![솔루션 플랫폼을 x86으로 설정](../cross-platform/media/cppmdd-opengles-solutionplat.png "CPPMDD_OpenGLES_SolutionPlat")  
   
-    x86을 사용하여 iOS 시뮬레이터를 대상으로 지정합니다. iOS 장치를 대상으로 지정하는 경우 장치 프로세서(일반적으로 ARM 프로세서)에 따라 솔루션 플랫폼을 선택합니다. **솔루션 플랫폼** 목록이 표시되지 않는 경우 **단추 추가/제거** 목록에서 **솔루션 플랫폼** 을 선택한 후 플랫폼을 선택합니다.  
+    x86을 사용하여 iOS 시뮬레이터를 대상으로 지정합니다. iOS 디바이스를 대상으로 지정하는 경우 디바이스 프로세서(일반적으로 ARM 프로세서)에 따라 솔루션 플랫폼을 선택합니다. **솔루션 플랫폼** 목록이 표시되지 않는 경우 **단추 추가/제거** 목록에서 **솔루션 플랫폼** 을 선택한 후 플랫폼을 선택합니다.  
   
 3. 솔루션 탐색기에서 MyOpenGLESApp.iOS.Application 프로젝트의 바로 가기 메뉴를 열고 **빌드**를 선택합니다.  
   
@@ -147,7 +147,7 @@ ms.locfileid: "51733403"
   
    생성된 iOS 앱 및 라이브러리 프로젝트는 공유 코드만 구현하는 C++ 코드를 정적 라이브러리에 넣습니다. 대부분의 응용 프로그램 코드는 응용 프로그램 프로젝트에 있습니다. 이 템플릿 프로젝트의 공유 라이브러리 코드 호출은 GameViewController.m 파일에서 수행됩니다. iOS 앱을 빌드하기 위해 Visual Studio는 Mac에서 실행되는 원격 클라이언트와 통신해야 하는 Xcode 플랫폼 도구 집합을 사용합니다.  
   
-   Visual Studio는 프로젝트 파일을 전송하고 Xcode를 사용하여 앱을 빌드하는 명령을 원격 클라이언트에 보냅니다. 원격 클라이언트는 빌드 상태 정보를 Visual Studio로 다시 보냅니다. 앱이 성공적으로 빌드된 경우 Visual Studio를 사용하여 앱을 실행 및 디버그하는 명령을 보낼 수 있습니다. Visual Studio의 디버거는 Mac에서 실행되는 iOS 시뮬레이터 또는 연결된 iOS 장치에서 실행 중인 앱을 제어합니다. Visual Studio는 StaticLibrary 프로젝트의 속성을 대상 iOS 플랫폼에서 빌드, 연결 및 디버그하는 데 사용되는 명령줄 스위치 및 옵션에 매핑합니다. 컴파일러 명령줄 옵션에 대한 자세한 내용을 보려면 MyOpenGLESApp.iOS.StaticLibrary 프로젝트에 대한 **속성 페이지** 대화 상자를 엽니다.  
+   Visual Studio는 프로젝트 파일을 전송하고 Xcode를 사용하여 앱을 빌드하는 명령을 원격 클라이언트에 보냅니다. 원격 클라이언트는 빌드 상태 정보를 Visual Studio로 다시 보냅니다. 앱이 성공적으로 빌드된 경우 Visual Studio를 사용하여 앱을 실행 및 디버그하는 명령을 보낼 수 있습니다. Visual Studio의 디버거는 Mac에서 실행되는 iOS 시뮬레이터 또는 연결된 iOS 디바이스에서 실행 중인 앱을 제어합니다. Visual Studio는 StaticLibrary 프로젝트의 속성을 대상 iOS 플랫폼에서 빌드, 연결 및 디버그하는 데 사용되는 명령줄 스위치 및 옵션에 매핑합니다. 컴파일러 명령줄 옵션에 대한 자세한 내용을 보려면 MyOpenGLESApp.iOS.StaticLibrary 프로젝트에 대한 **속성 페이지** 대화 상자를 엽니다.  
   
 ##  <a name="Customize"></a> 앱 사용자 지정  
  공유 C++ 코드를 수정하여 공통 기능을 추가하거나 변경할 수 있습니다. MyOpenGLESApp.Android.NativeActivity 및 MyOpenGLESApp.iOS.Application 프로젝트에서 공유 코드 호출을 일치하도록 변경해야 합니다. 전처리기 매크로를 사용하여 공통 코드에서 플랫폼별 섹션을 지정할 수 있습니다. 전처리기 매크로 `__ANDROID__` 는 Android용으로 빌드할 때 미리 정의됩니다. 전처리기 매크로 `__APPLE__` 는 iOS용으로 빌드할 때 미리 정의됩니다.  

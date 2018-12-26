@@ -16,7 +16,7 @@ ms.author: crdun
 manager: ghogen
 ms.openlocfilehash: a7dbe0e13691e5ac0dbf67945728bada3ef4e57f
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51771309"
@@ -133,7 +133,7 @@ ms.locfileid: "51771309"
  이 Unity의 인스턴스에서 실행되는 Unity 프로젝트의 이름입니다.  
   
  **Machine**  
- 이 Unity가 실행되고 있는 컴퓨터 또는 장치의 이름입니다.  
+ 이 Unity가 실행되고 있는 컴퓨터 또는 디바이스의 이름입니다.  
   
  **Type**  
  이 Unity의 인스턴스가 Unity 편집기의 일부로 실행 중인 경우 **편집기**이며 이 Unity의 인스턴스가 독립 실행형 플레이어인 경우 **플레이어**입니다.  

@@ -3,7 +3,7 @@ layout: HubPage
 hide_bc: true
 title: Visual Studio 설명서 | Microsoft Docs
 titleSuffix: ''
-description: Visual Studio 2017을 사용하여 플랫폼 및 장치에 대해 선택한 언어로 응용 프로그램, 서비스 및 도구를 개발하는 방법에 대해 알아봅니다.
+description: Visual Studio 2017을 사용하여 플랫폼 및 디바이스에 대해 선택한 언어로 응용 프로그램, 서비스 및 도구를 개발하는 방법에 대해 알아봅니다.
 ms.topic: hub-page
 ms.custom: seodec18
 ms.openlocfilehash: b509f5d34596f3db46d20157fd3ce1fd2cec3d7c
@@ -807,7 +807,7 @@ ASP.NET Core를 사용한 웹앱</a>
                         <ul id="windows" class="cardsC">
                             <li>
                                 <div class="container intro">
-                                    <p>Visual Studio를 사용하여 Windows를 실행하는 모든 장치에서 이용할 앱과 게임을 개발합니다.</p>
+                                    <p>Visual Studio를 사용하여 Windows를 실행하는 모든 디바이스에서 이용할 앱과 게임을 개발합니다.</p>
                                 </div>
                             </li>
                             <li>

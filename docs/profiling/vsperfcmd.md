@@ -76,8 +76,8 @@ VSPerfCmd [/U] [/options]
 |[Sys](../profiling/sys-vsperfcmd.md)[**:**_n_]|n번째 시스템 호출마다 샘플링합니다(기본값 = 10).|  
 |[Timer](../profiling/timer.md)[**:**_n_]|n번째 프로세서 주기마다 샘플링합니다(기본값 = 10000000).|  
   
-## <a name="service-component-and-kernel-mode-device-options"></a>서비스 구성 요소 및 커널 모드 장치 옵션  
- 다음 Admin 옵션은 프로파일링 서비스 구성 요소 또는 커널 모드 장치 드라이버를 지원합니다. Admin 옵션은 프로파일링 권한을 설정하고 프로파일링된 서비스 또는 장치 드라이버를 제어합니다.  
+## <a name="service-component-and-kernel-mode-device-options"></a>서비스 구성 요소 및 커널 모드 디바이스 옵션  
+ 다음 Admin 옵션은 프로파일링 서비스 구성 요소 또는 커널 모드 디바이스 드라이버를 지원합니다. Admin 옵션은 프로파일링 권한을 설정하고 프로파일링된 서비스 또는 디바이스 드라이버를 제어합니다.  
   
  Admin 옵션은 관리 자격 증명으로 실행 중인 명령 프롬프트에서 실행되어야 합니다.  
   
@@ -85,8 +85,8 @@ VSPerfCmd [/U] [/options]
 |------------|-----------------|  
 |**Admin:Security**, \<**ALLOW&#124;DENY**>, *Right*[ *Right*], \<*User*&#124;*Group*>|지정된 사용자 또는 그룹이 프로파일링 서비스에 액세스하는 것을 허용하거나 거부합니다.<br /><br /> `Right`는 다음이 될 수 있습니다.<br /><br /> CrossSession - 사용자에게 서비스에 대해 상호 세션 프로파일링을 수행할 수 있는 액세스 권한을 부여합니다.<br /><br /> SampleProfiling - 사용자에게 드라이버에 대해 샘플링 프로파일링을 사용할 수 있는 액세스 권한을 부여합니다. 추적 프로파일링 중 커널 전환 정보에 액세스하는 데에도 사용됩니다.<br /><br /> FullAccess - 사용자에게 CrossSession 및 SampleProfiling 액세스 권한을 모두 부여합니다.|  
 |**Admin:Security, List**|프로파일링 서비스의 현재 상태 및 사용자 권한을 나열합니다.|  
-|**Admin:** \<*Service*&#124;*Driver*>\<**START**&#124;**STOP**&#124;**INSTALL**&#124;**UNINSTALL**>|프로파일링 서비스 구성 요소(서비스) 또는 커널 모드 장치 드라이버(드라이버)를 시작하거나, 중지하거나, 설치하거나, 제거합니다.|  
-|**Admin:** \<*Service*&#124;*Driver*>**AutoStart**\<**ON**&#124;**OFF**>|다시 시작 후 프로파일링 서비스(서비스) 또는 커널 모드 장치 드라이버(드라이버) 자동 시작을 사용하도록 설정하거나 사용하지 않도록 설정합니다.|  
+|**Admin:** \<*Service*&#124;*Driver*>\<**START**&#124;**STOP**&#124;**INSTALL**&#124;**UNINSTALL**>|프로파일링 서비스 구성 요소(서비스) 또는 커널 모드 디바이스 드라이버(드라이버)를 시작하거나, 중지하거나, 설치하거나, 제거합니다.|  
+|**Admin:** \<*Service*&#124;*Driver*>**AutoStart**\<**ON**&#124;**OFF**>|다시 시작 후 프로파일링 서비스(서비스) 또는 커널 모드 디바이스 드라이버(드라이버) 자동 시작을 사용하도록 설정하거나 사용하지 않도록 설정합니다.|  
   
 ## <a name="vsperfcmd-driver"></a>VSPerfCmd /Driver  
  **VSPerfCmd /Driver** 옵션은 이제 사용되지 않습니다. 해당 기능에는 **VsPerfCmdAdmin** 옵션을 사용합니다.  

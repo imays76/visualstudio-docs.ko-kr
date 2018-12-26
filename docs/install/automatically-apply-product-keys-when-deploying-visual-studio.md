@@ -21,7 +21,7 @@ ms.locfileid: "53159596"
 ---
 # <a name="automatically-apply-product-keys-when-deploying-visual-studio"></a>Visual Studio를 배포할 때 제품 키를 자동으로 적용
 
-Visual Studio의 배포를 자동화하는 데 사용되는 스크립트의 일부로 제품 키를 프로그래밍 방식으로 적용할 수 있습니다. Visual Studio의 설치 중이나 설치가 완료된 후에 장치에서 프로그래밍 방식으로 제품 키를 설정할 수 있습니다.
+Visual Studio의 배포를 자동화하는 데 사용되는 스크립트의 일부로 제품 키를 프로그래밍 방식으로 적용할 수 있습니다. Visual Studio의 설치 중이나 설치가 완료된 후에 디바이스에서 프로그래밍 방식으로 제품 키를 설정할 수 있습니다.
 
 ## <a name="apply-the-license-after-installation"></a>설치 후 라이선스 적용
 

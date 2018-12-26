@@ -63,7 +63,7 @@ Visual Studio의 [클라우드 탐색기](/azure/vs-azure-tools-resources-managi
 
 ## <a name="build-cross-platform-apps-and-games"></a>플랫폼 간 앱 및 게임 제작
 
-Visual Studio를 사용하여 Android, iOS 및 기타 [모바일 장치](https://visualstudio.microsoft.com/vs/mobile-app-development/)뿐 아니라 macOS, Linux, Windows용 앱과 게임을 빌드할 수 있습니다.
+Visual Studio를 사용하여 Android, iOS 및 기타 [모바일 디바이스](https://visualstudio.microsoft.com/vs/mobile-app-development/)뿐 아니라 macOS, Linux, Windows용 앱과 게임을 빌드할 수 있습니다.
 
 - Windows, macOS 및 Linux에서 실행되는 [.NET Core](/dotnet/core/) 앱을 빌드합니다.
 
@@ -89,7 +89,7 @@ Visual Studio의 **SQL Server 개체 탐색기**는 SQL Server Management Studio
 
 ## <a name="debug-test-and-improve-your-code"></a>코드 디버그, 테스트 및 향상
 
-코드를 작성할 때 이를 실행하고 버그와 성능을 테스트해야 합니다. Visual Studio의 최신 디버깅 시스템을 사용하면 로컬 프로젝트에서 실행 중인 코드를 원격 장치 또는 [장치 에뮬레이터](../cross-platform/visual-studio-emulator-for-android.md)에서 디버그할 수 있습니다. 한 번에 문 하나씩, 코드를 단계별로 실행하고 변수를 검사할 수 있습니다. 지정된 조건이 true인 경우에만 적중되는 중단점을 설정할 수 있습니다. 이러한 값을 모두 코드 편집기 자체에서 관리할 수 있으므로 코드를 떠날 필요가 없습니다. Visual Studio의 디버깅에 대한 자세한 내용은 [디버거 기능 둘러보기](../debugger/debugger-feature-tour.md)를 참조하세요.
+코드를 작성할 때 이를 실행하고 버그와 성능을 테스트해야 합니다. Visual Studio의 최신 디버깅 시스템을 사용하면 로컬 프로젝트에서 실행 중인 코드를 원격 디바이스 또는 [디바이스 에뮬레이터](../cross-platform/visual-studio-emulator-for-android.md)에서 디버그할 수 있습니다. 한 번에 문 하나씩, 코드를 단계별로 실행하고 변수를 검사할 수 있습니다. 지정된 조건이 true인 경우에만 적중되는 중단점을 설정할 수 있습니다. 이러한 값을 모두 코드 편집기 자체에서 관리할 수 있으므로 코드를 떠날 필요가 없습니다. Visual Studio의 디버깅에 대한 자세한 내용은 [디버거 기능 둘러보기](../debugger/debugger-feature-tour.md)를 참조하세요.
 
 앱 성능 향상에 대한 자세한 내용은 Visual Studio의 [프로파일링](../profiling/profiling-feature-tour.md) 기능을 참조하세요.
 

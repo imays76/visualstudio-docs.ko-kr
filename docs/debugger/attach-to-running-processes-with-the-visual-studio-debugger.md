@@ -1,6 +1,6 @@
 ---
-title: Visual Studio의 디버거를 사용 하 여 실행 중인 프로세스에 연결 | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: 디버거를 사용 하 여 실행 중인 프로세스에 연결 | Microsoft Docs
+ms.custom: seodec18
 ms.date: 09/27/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd1ceb341ac613eef3e26f3599ee137161545a85
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
-ms.translationtype: MTE95
+ms.openlocfilehash: 07ed9670795e11b0d98b3703445450b468a93aa8
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389191"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068463"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Visual Studio 디버거에서 실행 중인 프로세스에 연결
 로컬 또는 원격 컴퓨터에서 실행 중인 프로세스에 Visual Studio 디버거를 연결할 수 있습니다. 프로세스를 실행 한 후 선택 **디버깅할** > **프로세스에 연결** 누르거나 **Ctrl**+**Alt** + **P** 사용 하 여 Visual Studio에는 **프로세스에 연결** 프로세스에 디버거를 연결 하는 대화 상자.

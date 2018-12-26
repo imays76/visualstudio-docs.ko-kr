@@ -1,6 +1,6 @@
 ---
-title: Visual Studio 디버거에서 중단점을 사용 합니다. | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: 디버거에서 중단점을 사용 합니다. | Microsoft Docs
+ms.custom: seodec18
 ms.date: 10/15/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -36,12 +36,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 15fa2172aab62d6b6f6ffcd21186b28f336ead4e
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
-ms.translationtype: MTE95
+ms.openlocfilehash: 16bcb4bb12e852a8fa268998d0605b2ffc7471e5
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389139"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068450"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Visual Studio 디버거에서 중단점을 사용 합니다.
 중단점은 개발자의 도구 상자에서 가장 중요 한 디버깅 기술 중 하나입니다. 디버거가 실행을 일시 중지 하려는 위치에 중단점을 설정 합니다. 예를 들어, 다음 코드 변수의 상태를 보거나 특정 중단점에서 호출 스택을 확인 하는 것이 좋습니다. 코드를 처음으로 디버그하려고 하는 경우 이 문서를 계속 진행하기 전에 먼저 [완전 초보자를 위한 디버깅](../debugger/debugging-absolute-beginners.md)을 참조하는 것이 좋습니다.
@@ -61,7 +61,7 @@ C# 코드, 중단점 및 현재 실행 줄은 자동으로 강조 합니다. C +
   
  ![중단점 실행 중지 됨](../debugger/media/breakpointexecution.png "중단점 실행")  
   
- 디버거가 중단점에서 중지 되 면 변수 값 및 호출 스택을 포함 하는 앱의 현재 상태를 살펴볼 수 있습니다. 호출 스택에 대한 자세한 내용은 [방법: 호출 스택 창 사용](../debugger/how-to-use-the-call-stack-window.md)을 참조하세요.  
+ 디버거가 중단점에서 중지 되 면 변수 값 및 호출 스택을 포함 하는 앱의 현재 상태를 살펴볼 수 있습니다. 호출 스택에 대 한 자세한 내용은 참조 하세요. [방법: 호출 스택 창을 사용 하 여](../debugger/how-to-use-the-call-stack-window.md)입니다.  
 
 - 중단점이 설정/해제 합니다. 클릭을, 키를 누릅니다 **F9**를 사용할지 **디버그** > **중단점 설정/해제** 삭제 또는 다시 삽입 합니다.
   
@@ -89,7 +89,7 @@ C# 코드, 중단점 및 현재 실행 줄은 자동으로 강조 합니다. C +
 
 명령에서 디버거가 중단 합니다.  
 
-호출 스택에 대한 자세한 내용은 [방법: 호출 스택 창 사용](../debugger/how-to-use-the-call-stack-window.md)을 참조하세요. 
+호출 스택에 대 한 자세한 내용은 참조 하세요. [방법: 호출 스택 창을 사용 하 여](../debugger/how-to-use-the-call-stack-window.md)입니다. 
 
 시각적으로 추적 코드 실행 중 중단점을 참조 하세요 [디버깅 하는 동안 호출 스택의 메서드 매핑](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)합니다. 
   
@@ -220,7 +220,7 @@ C# 코드, 중단점 및 현재 실행 줄은 자동으로 강조 합니다. C +
 <a name="BKMK_Specify_a_breakpoint_condition_using_a_code_expression"></a>
 ### <a name="conditional-expression"></a>조건식
 
-선택 하면 **조건식**, 두 조건을 선택할 수 있습니다: **마찬가지** 또는 **변경 될 때**합니다. 선택 **그렇습니다** 식의 만족할 때 중단 하려면 또는 **변경 될 때** 식의 값이 변경 될 경우 중단 하려면.  
+선택 하면 **조건식**, 두 조건을 선택할 수 있습니다. **참인** 나 **변경 될 때**합니다. 선택 **그렇습니다** 식의 만족할 때 중단 하려면 또는 **변경 될 때** 식의 값이 변경 될 경우 중단 하려면.  
   
  다음 예제에서는 중단점이 적중 될 경우에만 값 `testInt` 됩니다 **4**:  
   
@@ -269,7 +269,7 @@ C# 코드, 중단점 및 현재 실행 줄은 자동으로 강조 합니다. C +
  ![중단점 적중 횟수](../debugger/media/breakpointhitcount.png "BreakpointHitCount")  
   
 ### <a name="filter"></a>필터  
-지정된 장치에서만 발생하거나 지정된 프로세스 및 스레드에서만 발생하도록 중단점을 제한할 수 있습니다.  
+지정된 디바이스에서만 발생하거나 지정된 프로세스 및 스레드에서만 발생하도록 중단점을 제한할 수 있습니다.  
   
 아래 **조건을** 에 **중단점 설정** 창에서 **필터**을 다음 식 중 하나 이상을 입력 하 고:  
   

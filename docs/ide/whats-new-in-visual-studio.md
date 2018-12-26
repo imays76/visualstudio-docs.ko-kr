@@ -36,7 +36,7 @@ Visual Studio의 이전 버전에서 업그레이드하려고 하십니까? Visu
 * **[재정의된 기본 사항](#redefined-fundamentals)**. 새로운 설치 환경을 통해 더 빠르게 설치하고, 필요할 때 원하는 항목을 설치할 수 있습니다.
 * **[성능 및 생산성](#performance-and-productivity)**. 새로운 최신 모바일, 클라우드 및 데스크톱 개발 기능에 집중했습니다. 또한 Visual Studio는 더 빨리 시작하고, 더 빨리 응답하며, 이전보다 적은 메모리를 사용합니다.
 * **[Azure로 클라우드 앱 개발](#cloud-app-development-with-azure)**. 기본 제공 Azure 도구 모음을 통해 Microsoft Azure 기반의 클라우드 중심 앱을 쉽게 만들 수 있습니다. Visual Studio를 사용하면 Azure에서 직접 앱과 서비스를 쉽게 구성, 빌드, 디버그, 패키징 및 배포할 수 있습니다.
-* **[Windows 앱 개발](#windows-app-development)**. Visual Studio 2017의 UWP 템플릿을 사용하여 모든 Windows 10 장치 &ndash; PC, 태블릿, 전화, Xbox, HoloLens, Surface Hub 등에 대한 단일 프로젝트를 만듭니다.
+* **[Windows 앱 개발](#windows-app-development)**. Visual Studio 2017의 UWP 템플릿을 사용하여 모든 Windows 10 디바이스 &ndash; PC, 태블릿, 전화, Xbox, HoloLens, Surface Hub 등에 대한 단일 프로젝트를 만듭니다.
 * **[모바일 앱 개발](#mobile-app-development)**. 하나의 핵심 코드베이스와 기술 집합으로 다중 플랫폼 모바일 요구 사항을 통합하는 Xamarin에서 혁신적인 결과를 빠르게 얻습니다.
 * **[플랫폼 간 개발](#cross-platform-development)**. 모든 대상 플랫폼에 소프트웨어를 원활하게 제공할 수 있습니다. Redgate 데이터 도구를 통해 DevOps 프로세스를 SQL Server로 확장하고 Visual Studio에서 데이터베이스 배포를 안전하게 자동화할 수 있습니다. 또는 .NET Core를 사용하여 Windows, Linux 및 macOS 운영 체제에서 수정되지 않고 실행되는 앱 및 라이브러리를 작성할 수 있습니다.
 * **[게임 개발](#games-development)**. VSTU(Visual Studio Tools for Unity)를 사용하면 Visual Studio를 통해 게임 및 편집기 스크립트를 C#으로 작성한 다음 강력한 디버거를 사용하여 오류를 찾고 수정할 수 있습니다.
@@ -259,11 +259,11 @@ Visual Studio에서 C++ 핵심 지침을 배포하고, C++11 및 C++ 기능에 �
 
 ### <a name="universal-windows-platform"></a>유니버설 Windows 플랫폼
 
-UWP(Universal Windows Platform)는 Windows 10용 앱 플랫폼입니다. API 집합 하나, 앱 패키지 하나 및 스토어 하나만으로 UWP용 앱을 개발하여 모든 Windows 10 장치 &ndash; PC, 태블릿, 전화, Xbox, HoloLens, Surface Hub 등에 연결할 수 있습니다. UWP는 다양한 화면 크기와 터치, 마우스와 키보드, 게임 컨트롤러 또는 펜을 비롯한 다양한 인터랙션 모델을 지원합니다. UWP 앱의 핵심은 작업 환경이 사용자의 모든 장치에서 이동이 가능하여 현재 진행 중인 작업에 가장 편리하거나 생산적인 장치를 사용하기를 바란다는 점입니다.
+UWP(Universal Windows Platform)는 Windows 10용 앱 플랫폼입니다. API 집합 하나, 앱 패키지 하나 및 스토어 하나만으로 UWP용 앱을 개발하여 모든 Windows 10 디바이스 &ndash; PC, 태블릿, 전화, Xbox, HoloLens, Surface Hub 등에 연결할 수 있습니다. UWP는 다양한 화면 크기와 터치, 마우스와 키보드, 게임 컨트롤러 또는 펜을 비롯한 다양한 인터랙션 모델을 지원합니다. UWP 앱의 핵심은 작업 환경이 사용자의 모든 디바이스에서 이동이 가능하여 현재 진행 중인 작업에 가장 편리하거나 생산적인 디바이스를 사용하기를 바란다는 점입니다.
 
  ![유니버설 Windows 플랫폼](../cross-platform/media/uwp_coreextensions.png)
 
-&mdash;C#, Visual Basic, C++ 또는 JavaScript&mdash; 중에서 원하는 개발 언어를 선택하여 Windows 10 장치용 유니버설 Windows 플랫폼 앱을 만듭니다. Visual Studio 2017은 모든 장치에 대해 단일 프로젝트를 만들 수 있도록 각 언어에 UWP 앱 템플릿을 제공합니다. 작업을 마치면 Visual Studio 내에서 앱 패키지를 생성하고 Microsoft Store에 제출하여 Windows 10 장치를 사용하는 고객에게 앱을 제공할 수 있습니다.
+&mdash;C#, Visual Basic, C++ 또는 JavaScript&mdash; 중에서 원하는 개발 언어를 선택하여 Windows 10 장치용 유니버설 Windows 플랫폼 앱을 만듭니다. Visual Studio 2017은 모든 디바이스에 대해 단일 프로젝트를 만들 수 있도록 각 언어에 UWP 앱 템플릿을 제공합니다. 작업을 마치면 Visual Studio 내에서 앱 패키지를 생성하고 Microsoft Store에 제출하여 Windows 10 디바이스를 사용하는 고객에게 앱을 제공할 수 있습니다.
 
 **15.5의 새로운 기능**: Visual Studio 2017 버전 15.5는 Windows 10 Fall Creators Update SDK(10.0.16299.0)를 가장 잘 지원합니다. Windows 10 Fall Creators Update는 UWP 개발자를 위해 많은 사항이 개선되었습니다. 다음은 큰 변화 중 일부입니다. 
 
@@ -276,7 +276,7 @@ UWP에 대한 자세한 내용은 [UWP(유니버설 Windows 플랫폼)용 앱 �
 
 ### <a name="xamarin"></a>Xamarin
 
-“.NET을 사용한 모바일 개발” 워크로드의 일부로, C#, .NET 및 Visual Studio에 친숙한 개발자는 Xamarin을 사용하여 네이티브 Android, iOS 및 Windows 앱을 제공할 수 있습니다. 개발자는 모바일 앱용 Xamarin을 사용할 때 Objective-C 또는 Java 같은 네이티브 코딩 언어를 배울 필요 없이 Android, iOS 및 Windows 장치의 원격 디버깅을 비롯한 동일한 기능을 사용하여 생산성을 얻을 수 있습니다.
+“.NET을 사용한 모바일 개발” 워크로드의 일부로, C#, .NET 및 Visual Studio에 친숙한 개발자는 Xamarin을 사용하여 네이티브 Android, iOS 및 Windows 앱을 제공할 수 있습니다. 개발자는 모바일 앱용 Xamarin을 사용할 때 Objective-C 또는 Java 같은 네이티브 코딩 언어를 배울 필요 없이 Android, iOS 및 Windows 디바이스의 원격 디버깅을 비롯한 동일한 기능을 사용하여 생산성을 얻을 수 있습니다.
 
 자세한 내용은 [Visual Studio 및 Xamarin](../cross-platform/visual-studio-and-xamarin.md) 페이지를 참조하세요.
 
@@ -288,7 +288,7 @@ UWP에 대한 자세한 내용은 [UWP(유니버설 Windows 플랫폼)용 앱 �
 
 ### <a name="visual-studio-tools-for-xamarin"></a>Visual Studio Tools for Xamarin
 
-**15.4의 새로운 기능**: Xamarin Live를 사용하여 개발자는 iOS 및 Android 장치에서 직접 자신의 앱을 계속해서 배포, 테스트 및 디버그할 수 있습니다. &mdash;앱 스토어 또는 Google Play에서 사용할 수 있는&mdash; Xamarin Live Player를 다운로드한 후 장치를 Visual Studio와 연결하고 모바일 앱을 빌드하는 방법을 혁신적으로 개선할 수 있습니다. 이 기능은 이제 Visual Studio에 포함되었으며 **도구** > **옵션** > **Xamarin** > **기타** > **Xamarin Live Player 사용**으로 이동하여 사용하도록 설정할 수 있습니다.
+**15.4의 새로운 기능**: Xamarin Live를 사용하여 개발자는 iOS 및 Android 디바이스에서 직접 자신의 앱을 계속해서 배포, 테스트 및 디버그할 수 있습니다. &mdash;앱 스토어 또는 Google Play에서 사용할 수 있는&mdash; Xamarin Live Player를 다운로드한 후 장치를 Visual Studio와 연결하고 모바일 앱을 빌드하는 방법을 혁신적으로 개선할 수 있습니다. 이 기능은 이제 Visual Studio에 포함되었으며 **도구** > **옵션** > **Xamarin** > **기타** > **Xamarin Live Player 사용**으로 이동하여 사용하도록 설정할 수 있습니다.
 
 ![Xamarin Live Player 쌍, 배포 및 라이브 편집 모드의 애니메이션](../ide/media/xamarinliveplayer.gif)
 
@@ -335,7 +335,7 @@ Visual Studio 2017의 모든 버전에는 다음이 포함되어 있습니다.
 
 .NET Core는 .NET Standard의 일반적인 용도를 위한 모듈식 플랫폼 간 오픈 소스 구현이며 .NET Framework와 동일한 API를 다수 포함합니다.
 
-.NET Core 플랫폼은 관리되는 컴파일러, 런타임, 기본 클래스 라이브러리 및 ASP.NET Core와 같은 다양한 응용 프로그램 모델을 포함하는 여러 요소로 구성됩니다. .NET Core는 세 개의 주요 운영 체제를 지원합니다. Windows, Linux 및 macOS. 장치, 클라우드 및 포함/IoT 시나리오에 .NET Core를 사용할 수 있습니다.
+.NET Core 플랫폼은 관리되는 컴파일러, 런타임, 기본 클래스 라이브러리 및 ASP.NET Core와 같은 다양한 응용 프로그램 모델을 포함하는 여러 요소로 구성됩니다. .NET Core는 세 개의 주요 운영 체제를 지원합니다. Windows, Linux 및 macOS. 디바이스, 클라우드 및 포함/IoT 시나리오에 .NET Core를 사용할 수 있습니다.
 
 그리고 이제 Docker 지원도 포함합니다.
 

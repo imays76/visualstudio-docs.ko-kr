@@ -1,6 +1,6 @@
 ---
-title: Visual Studio에서 XAML 앱의 리소스 소비량 분석 | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: XAML 앱의 리소스 사용 분석
+ms.custom: seodec18
 ms.date: 11/01/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 971d8eff11d28eda884066407b03f3f6addb43ad
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 32368b280faf7b87aa128865cf169c7675a58c95
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220959"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059180"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>리소스 소비량 및 UI 스레드 활동 분석(XAML)
 
@@ -37,10 +37,10 @@ ms.locfileid: "51220959"
   
 ## <a name="collect-application-timeline-data"></a>응용 프로그램 타임라인 데이터 수집
 
-로컬 시스템, 연결된 장치, Visual Studio 시뮬레이터 또는 에뮬레이터, 또는 원격 장치에서 앱 응답성을 프로파일링할 수 있습니다. [디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행](../profiling/running-profiling-tools-with-or-without-the-debugger.md)을 참조하세요.
+로컬 시스템, 연결된 디바이스, Visual Studio 시뮬레이터 또는 에뮬레이터, 또는 원격 디바이스에서 앱 응답성을 프로파일링할 수 있습니다. [디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행](../profiling/running-profiling-tools-with-or-without-the-debugger.md)을 참조하세요.
 
 > [!TIP]
-> 가능한 경우 장치에서 앱을 직접 실행합니다. 시뮬레이터에서 또는 원격 데스크톱 연결을 통해 관찰한 응용 프로그램 성능은 장치의 실제 성능과 다를 수 있습니다. 반면에 Visual Studio 원격 도구를 사용하여 데이터를 수집하면 성능 데이터에 영향을 주지 않습니다.  
+> 가능한 경우 디바이스에서 앱을 직접 실행합니다. 시뮬레이터에서 또는 원격 데스크톱 연결을 통해 관찰한 응용 프로그램 성능은 디바이스의 실제 성능과 다를 수 있습니다. 반면에 Visual Studio 원격 도구를 사용하여 데이터를 수집하면 성능 데이터에 영향을 주지 않습니다.  
 
 기본 단계는 다음과 같습니다.  
 
@@ -124,7 +124,7 @@ ms.locfileid: "51220959"
   
 ## <a name="see-also"></a>참고 항목
 
-- [WPF 팀 블로그: WPF 응용 프로그램의 새로운 UI 성능 분석 도구](https://blogs.msdn.microsoft.com/wpf/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications/)  
+- [WPF 팀 블로그: WPF 애플리케이션의 새로운 UI 성능 분석 도구](https://blogs.msdn.microsoft.com/wpf/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications/)  
 - [C++, C# 및 Visual Basic을 사용하는 UWP 앱의 성능 모범 사례](/previous-versions/windows/apps/hh750313\(v\=win.10\))
 - [WPF 응용 프로그램 성능 최적화](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)  
 - [Visual Studio의 프로파일링](../profiling/index.md)  

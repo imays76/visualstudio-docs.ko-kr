@@ -20,7 +20,7 @@ ms.lasthandoff: 07/25/2018
 ms.locfileid: "39251639"
 ---
 # <a name="visual-c-for-cross-platform-mobile-development"></a>플랫폼 간 모바일 개발용 Visual C++
-플랫폼 간 모바일 개발용 Visual C++를 사용하여 iOS, Android 및 Windows 장치용 네이티브 C++ 앱을 빌드하고 iOS, Android 및 Windows용으로 빌드된 라이브러리의 공통 코드를 공유할 수 있습니다. 이는 공유 라이브러리 및 네이티브 앱의 플랫폼 간 개발에 필요한 도구와 SDK를 설치하는, Visual Studio 2015에서 사용할 수 있는 옵션입니다. 설치된 경우 Visual C++를 사용하여 iOS 및 Android 장치와 플랫폼, Windows, Windows Phone 및 Xbox에서 실행되는 코드를 만들 수 있습니다.  
+플랫폼 간 모바일 개발용 Visual C++를 사용하여 iOS, Android 및 Windows 디바이스용 네이티브 C++ 앱을 빌드하고 iOS, Android 및 Windows용으로 빌드된 라이브러리의 공통 코드를 공유할 수 있습니다. 이는 공유 라이브러리 및 네이티브 앱의 플랫폼 간 개발에 필요한 도구와 SDK를 설치하는, Visual Studio 2015에서 사용할 수 있는 옵션입니다. 설치된 경우 Visual C++를 사용하여 iOS 및 Android 디바이스와 플랫폼, Windows, Windows Phone 및 Xbox에서 실행되는 코드를 만들 수 있습니다.  
   
  여러 플랫폼에 대한 코드를 작성하기 어려울 수 있습니다. iOS, Android 및 Windows용 기본 개발 언어와 도구는 각 플랫폼마다 다릅니다. 그러나 모든 플랫폼이 C++의 코드 작성을 지원합니다. 이는 플랫폼 간에 핵심 코드를 다시 사용할 수 있도록 하는 공통 분모입니다. C++로 작성된 네이티브 코드는 성능과 리버스 엔지니어링 방지 기능이 둘 다 뛰어날 수 있습니다. 여러 플랫폼용 앱을 만들 때 코드 재사용을 통해 시간과 노력을 모두 절약할 수 있습니다.  
   
@@ -30,7 +30,7 @@ ms.locfileid: "39251639"
   
 2.  **강력하고 친숙한 빌드 환경.** Visual Studio 템플릿을 사용하여 공유 가능한 플랫폼 간 솔루션 및 프로젝트를 쉽게 만듭니다. 하나의 공통 인터페이스를 사용하여 모든 프로젝트에 대한 속성을 관리합니다. Visual Studio 편집기에서 모든 코드를 편집하고 코드 완성 및 오류 강조 표시를 위해 기본 제공 플랫폼 간 IntelliSense를 활용합니다.  
   
-3.  **통합된 디버깅 환경.** Visual Studio에 있는 세계적 수준의 디버깅 도구를 사용하여 Android 장치 및 에뮬레이터, iOS 시뮬레이터 및 장치, Windows 또는 Windows Phone 장치 및 에뮬레이터를 비롯한 모든 플랫폼에서 C++ 코드를 감시하고 단계별로 실행합니다.  
+3.  **통합된 디버깅 환경.** Visual Studio에 있는 세계적 수준의 디버깅 도구를 사용하여 Android 디바이스 및 에뮬레이터, iOS 시뮬레이터 및 디바이스, Windows 또는 Windows Phone 디바이스 및 에뮬레이터를 비롯한 모든 플랫폼에서 C++ 코드를 감시하고 단계별로 실행합니다.  
   
 ## <a name="get-the-tools"></a>도구 다운로드  
  플랫폼 간 모바일 개발용 Visual C++는 Visual Studio 2015와 함께 제공되는 설치 가능한 옵션입니다. 필수 조건과 설치 지침은 [플랫폼 간 모바일 개발용 Visual C++ 설치](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)를 참조하세요. iOS용 코드를 빌드하려면 Mac 컴퓨터와 Apple iOS 개발자 계정도 필요합니다. 자세한 내용은 [iOS를 사용하여 빌드할 도구 설치 및 구성](../cross-platform/install-and-configure-tools-to-build-using-ios.md)을 참조하세요.  

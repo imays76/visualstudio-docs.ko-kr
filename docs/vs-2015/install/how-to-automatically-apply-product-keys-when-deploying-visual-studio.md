@@ -26,7 +26,7 @@ ms.locfileid: "53050229"
 
 Visual Studio 2017에 대 한 최신 설명서를 참조 하세요 [Visual Studio를 배포할 때 제품 키를 자동으로 적용](/visualstudio/install/automatically-apply-product-keys-when-deploying-visual-studio)합니다.
 
-Visual Studio 2015의 배포를 자동화하는 데 사용되는 스크립트의 일부로 제품 키를 프로그래밍 방식으로 적용할 수 있습니다. 제품 키는 Visual Studio의 설치 중이나 설치가 완료된 후에 프로그래밍 방식으로 장치에서 설정할 수 있습니다.
+Visual Studio 2015의 배포를 자동화하는 데 사용되는 스크립트의 일부로 제품 키를 프로그래밍 방식으로 적용할 수 있습니다. 제품 키는 Visual Studio의 설치 중이나 설치가 완료된 후에 프로그래밍 방식으로 디바이스에서 설정할 수 있습니다.
 
 ## <a name="apply-the-license-during-installation"></a>설치 중 라이선스 적용
  /ProductKey 매개 변수를 사용하여 Visual Studio의 설치 프로세스 중에 제품 키를 적용할 수 있습니다. 이 설치 매개 변수를 /Silent 매개 변수와 함께 사용하여 최종 사용자에게 이미 사용이 허가된 상태로 Visual Studio를 설치할 수 있습니다. /ProductKey 매개 변수를 사용하려면 명령 프롬프트를 엽니다. 설치 프로그램(예: vs_enterprise.exe 또는 vs_professional.exe)를 실행하고 대시가 포함되지 않은 제품 키(25자)를 사용하여 /ProductKey 매개 변수를 설정합니다.

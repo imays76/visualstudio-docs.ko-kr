@@ -18,7 +18,7 @@ ms.locfileid: "34845913"
 ---
 # <a name="configure-visual-studio-as-a-wip-exempt-app"></a>WIP 제외 앱으로 Visual Studio 구성
 
-[WIP(Windows Information Protection)](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)는 기업의 통제 범위를 벗어나는 이메일, 소셜 미디어 및 공용 클라우드와 같은 앱을 통해 엔터프라이즈 데이터가 누출되지 않도록 보호합니다. WIP는 환경이나 다른 앱을 변경할 필요 없이 기업 소유 장치와 개인 장치에서 실수로 데이터가 누출되지 않도록 보호할 수 있도록 합니다.
+[WIP(Windows Information Protection)](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)는 기업의 통제 범위를 벗어나는 이메일, 소셜 미디어 및 공용 클라우드와 같은 앱을 통해 엔터프라이즈 데이터가 누출되지 않도록 보호합니다. WIP는 환경이나 다른 앱을 변경할 필요 없이 기업 소유 디바이스와 개인 디바이스에서 실수로 데이터가 누출되지 않도록 보호할 수 있도록 합니다.
 
 WIP용으로 *확인된* 앱은 엔터프라이즈 데이터가 보호되지 않은 네트워크 위치로 이동하는 것을 방지하고 개인 데이터를 암호화하지 못하게 해야 합니다. Visual Studio는 확인된 앱이 아니므로 제외하지 않는 한 WIP 지원 환경에서 작동하지 않습니다. WIP 지원 머신에서 Visual Studio가 작동하도록 하려면 이 문서의 단계를 수행합니다.
 

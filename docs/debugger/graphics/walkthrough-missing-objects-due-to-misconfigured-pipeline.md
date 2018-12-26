@@ -12,7 +12,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 88e313b7db1306465bce530eea41e875227abc0e
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49855185"
@@ -26,7 +26,7 @@ ms.locfileid: "49855185"
   
 -   **그래픽 파이프라인 단계** 창을 사용하여 `DrawIndexed` Direct3D API 호출의 효과를 검사합니다.  
   
--   장치 컨텍스트를 검사하여 셰이더 단계를 설정하지 않았음을 확인합니다.  
+-   디바이스 컨텍스트를 검사하여 셰이더 단계를 설정하지 않았음을 확인합니다.  
   
 -   **그래픽 파이프라인 단계** 창을 **그래픽 이벤트 호출 스택** 과 함께 사용하여 설정되지 않은 픽셀 셰이더의 원본을 찾을 수 있도록 합니다.  
   
@@ -69,9 +69,9 @@ ms.locfileid: "49855185"
   
     ![DrawIndexed 이벤트 및 파이프라인에 미치는 영향](media/gfx_diag_demo_misconfigured_pipeline_step_2.png "gfx_diag_demo_misconfigured_pipeline_step_2")  
   
-   앱이 누락된 개체의 기하 도형에 대한 그리기 호출을 발행했음을 확인하고 픽셀 셰이더 단계 비활성 상태임이 발견되면 장치 상태를 검사하여 찾은 사항들을 확인할 수 있습니다. **그래픽 개체 표** 를 사용하여 장치 컨텍스트와 기타 Direct3D 개체 데이터를 검사할 수 있습니다.  
+   앱이 누락된 개체의 기하 도형에 대한 그리기 호출을 발행했음을 확인하고 픽셀 셰이더 단계 비활성 상태임이 발견되면 디바이스 상태를 검사하여 찾은 사항들을 확인할 수 있습니다. **그래픽 개체 표** 를 사용하여 장치 컨텍스트와 기타 Direct3D 개체 데이터를 검사할 수 있습니다.  
   
-#### <a name="to-examine-device-context"></a>장치 컨텍스트를 검사하려면,  
+#### <a name="to-examine-device-context"></a>디바이스 컨텍스트를 검사하려면,  
   
 1. **d3d11 장치 컨텍스트**를 엽니다. 에 **그래픽 파이프라인 단계** 창 선택 합니다 **ID3D11DeviceContext** 포함 된 링크를 `DrawIndexed` 창의 위쪽에 표시 되는 호출.  
   

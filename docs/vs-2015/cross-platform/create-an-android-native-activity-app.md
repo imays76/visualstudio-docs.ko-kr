@@ -18,7 +18,7 @@ ms.author: corob
 manager: ghogen
 ms.openlocfilehash: f6bc8d96c6207889f07ec6bf1257be3d620855fc
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51731432"
@@ -60,7 +60,7 @@ ms.locfileid: "51731432"
 -   **MyAndroidApp.Packaging** 은 Android 장치 또는 에뮬레이터에 배포하기 위한 .apk 파일을 만듭니다. 이 프로젝트에는 리소스와 매니페스트 속성을 설정하는 AndroidManifest.xml 파일이 포함되어 있습니다. Ant 빌드 프로세스를 제어하는 build.xml 파일도 포함되어 있습니다. 이 프로젝트는 기본적으로 시작 프로젝트로 설정되므로 Visual Studio에서 직접 배포 및 실행할 수 있습니다.  
   
 ##  <a name="BuildHello"></a> 기본 Android Native Activity 앱 빌드 및 실행  
- 템플릿을 통해 생성된 앱을 제작 및 실행하여 설치 및 설정을 확인합니다. 이 초기 테스트의 경우 Android용 Visual Studio 에뮬레이터에 의해 설치된 장치 프로필 중 하나에서 앱을 실행합니다. 다른 대상에서 앱을 테스트하려는 경우 대상 에뮬레이터를 로드하거나 장치를 컴퓨터에 연결할 수 있습니다.  
+ 템플릿을 통해 생성된 앱을 제작 및 실행하여 설치 및 설정을 확인합니다. 이 초기 테스트의 경우 Android용 Visual Studio 에뮬레이터에 의해 설치된 디바이스 프로필 중 하나에서 앱을 실행합니다. 다른 대상에서 앱을 테스트하려는 경우 대상 에뮬레이터를 로드하거나 디바이스를 컴퓨터에 연결할 수 있습니다.  
   
 #### <a name="to-build-and-run-the-default-native-activity-app"></a>기본 NativeActivity 앱을 빌드하고 실행하려면  
   
@@ -68,7 +68,7 @@ ms.locfileid: "51731432"
   
      ![솔루션 플랫폼 드롭다운 x86 선택](../cross-platform/media/cppmdd-rc-na-solution-x86.png "CPPMDD_RC_NA_Solution_x86")  
   
-     **x86** 목록이 표시되지 않는 경우 **x86** 드롭다운 목록에서 **솔루션 플랫폼** 을 선택한 후 플랫폼을 선택합니다.  
+      **x86** 목록이 표시되지 않는 경우 **x86** 드롭다운 목록에서 **솔루션 플랫폼** 을 선택한 후 플랫폼을 선택합니다.  
   
 2.  메뉴 모음에서 **빌드**, **솔루션 빌드**를 선택합니다.  
   
@@ -76,7 +76,7 @@ ms.locfileid: "51731432"
   
 3.  배포 대상으로 VS 에뮬레이터 Android Phone(x86) 프로필 중 하나를 선택합니다.  
   
-     다른 에뮬레이터를 설치했거나 Android 장치를 연결한 경우 배포 대상 드롭다운 목록에서 선택할 수 있습니다.  
+     다른 에뮬레이터를 설치했거나 Android 디바이스를 연결한 경우 배포 대상 드롭다운 목록에서 선택할 수 있습니다.  
   
 4.  F5 키를 눌러 디버깅을 시작하거나 Shift+F5를 눌러 디버깅하지 않고 시작합니다.  
   

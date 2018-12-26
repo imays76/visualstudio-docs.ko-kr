@@ -1,6 +1,6 @@
 ---
-title: Visual Studio 디버거에서 레지스터 값 보기 | Microsoft Docs
-ms.custom: ''
+title: 디버거에서 레지스터 값 보기 | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/19/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab40e0b63b2a679b4c36a4625d517a03b6c123ad
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 31d9b9a9243bdf5bd39ebddf90ffa0ea32b23072
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389327"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058443"
 ---
 # <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>레지스터 창에서 레지스터 값 보기 (C#, c + +, Visual Basic의 경우 F#)
 
@@ -43,7 +43,7 @@ ms.locfileid: "52389327"
 
 **레지스터** 창에서는 레지스터를 플랫폼 및 프로세서 유형에 따라 각각 다른 그룹으로 구성하여 간단하게 표시합니다. 표시 하거나 레지스터 그룹을 숨길 수 있습니다. 자세한 내용은 [방법: 레지스터 그룹 표시 및 숨기기](../debugger/how-to-display-and-hide-register-groups.md)를 참조하세요.
 
-레지스터 값은 편집할 수 있습니다. 자세한 내용은 [방법: 레지스터 값 편집](../debugger/how-to-edit-a-register-value.md)합니다.
+레지스터 값은 편집할 수 있습니다. 자세한 내용은 [방법: 레지스터 값 편집](../debugger/how-to-edit-a-register-value.md)을 참조하세요.
 
 **레지스터 창을 열려면**
 

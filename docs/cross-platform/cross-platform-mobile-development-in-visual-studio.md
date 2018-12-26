@@ -19,7 +19,7 @@ ms.locfileid: "46496144"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio에서 플랫폼 간 모바일 개발
 
-Visual Studio를 사용하여 Android, iOS 및 Windows 장치용 앱을 빌드할 수 있습니다.  앱을 디자인할 때 Visual Studio의 도구를 사용하여 Office 365, Azure App Service 및 Application Insights와 같은 연결된 서비스를 쉽게 추가할 수 있습니다.
+Visual Studio를 사용하여 Android, iOS 및 Windows 디바이스용 앱을 빌드할 수 있습니다.  앱을 디자인할 때 Visual Studio의 도구를 사용하여 Office 365, Azure App Service 및 Application Insights와 같은 연결된 서비스를 쉽게 추가할 수 있습니다.
 
 C# 및 .NET Framework, HTML 및 JavaScript 또는 C++를 사용하여 앱을 빌드합니다. 코드, 문자열, 이미지 및 경우에 따라 사용자 인터페이스도 공유합니다.
 
@@ -50,9 +50,9 @@ Xamarin용 Visual Studio Tools를 사용하면 동일한 솔루션 및 공유 �
 
  Xamarin은 Android, iOS 및 Windows의 기본 기능을 .NET 클래스 및 메서드로 표시합니다. 즉, 앱은 네이티브 API와 네이티브 컨트롤에 대한 모든 권한이 있으며 네이티브 플랫폼 언어로 작성된 앱과 응답 성능이 동일합니다.
 
- 프로젝트를 만든 후 Visual Studio의 모든 생산성 기능을 활용할 수 있습니다. 예를 들어 디자이너를 사용하여 페이지를 만들고 IntelliSense를 사용하여 모바일 플랫폼의 네이티브 API를 탐색할 수 있습니다. 앱을 실행하고 앱의 모양을 확인할 준비가 되면, Android SDK 에뮬레이터를 사용하고 Windows 앱을 기본적으로 실행할 수 있습니다. 또한 테더링된 Android 및 Windows 장치를 직접 사용할 수도 있습니다. iOS 프로젝트의 경우 네트워크로 연결된 Mac에 연결하고 Visual Studio에서 iOS 에뮬레이터를 시작하거나 테더링된 장치에 연결합니다.
+ 프로젝트를 만든 후 Visual Studio의 모든 생산성 기능을 활용할 수 있습니다. 예를 들어 디자이너를 사용하여 페이지를 만들고 IntelliSense를 사용하여 모바일 플랫폼의 네이티브 API를 탐색할 수 있습니다. 앱을 실행하고 앱의 모양을 확인할 준비가 되면, Android SDK 에뮬레이터를 사용하고 Windows 앱을 기본적으로 실행할 수 있습니다. 또한 테더링된 Android 및 Windows 디바이스를 직접 사용할 수도 있습니다. iOS 프로젝트의 경우 네트워크로 연결된 Mac에 연결하고 Visual Studio에서 iOS 에뮬레이터를 시작하거나 테더링된 디바이스에 연결합니다.
 
-#### <a name="design-one-set-of-pages-that-render-across-all-devices-by-using-xamarinforms"></a>Xamarin.Forms를 사용하여 모든 장치에서 렌더링되는 페이지 집합을 디자인합니다.
+#### <a name="design-one-set-of-pages-that-render-across-all-devices-by-using-xamarinforms"></a>Xamarin.Forms를 사용하여 모든 디바이스에서 렌더링되는 페이지 집합을 디자인합니다.
 
  앱 디자인의 복잡도에 따라 프로젝트 템플릿의 *모바일 앱* 그룹에서 **Xamarin.Forms** 템플릿을 사용하여 앱을 빌드하는 것이 효과적일 수 있습니다. Xamarin.Forms는 Android, iOS 및 Windows에서 공유할 수 있는 단일 인터페이스를 만들 수 있는 UI 도구 키트입니다.  Xamarin.Forms 솔루션을 컴파일하면 Android 앱, iOS 앱 및 Windows 앱을 얻게 됩니다. 자세한 내용은 [Xamarin을 사용한 모바일 개발에 대해 알아보기](../cross-platform/learn-about-mobile-development-with-xamarin.md) 및 [Xamarin.Forms 문서](/xamarin/xamarin-forms/)를 참조하세요.
 
@@ -73,9 +73,9 @@ Xamarin용 Visual Studio Tools를 사용하면 동일한 솔루션 및 공유 �
 
  ![Windows 장치](../cross-platform/media/windowsdevices.png "Windows 장치")
 
- 전체 범위의 Windows 10 장치를 대상으로 하는 단일 앱을 만들려는 경우 유니버설 Windows 앱을 만듭니다. 단일 프로젝트를 사용하여 앱을 디자인하면 어떤 장치에서 페이지를 표시하든 관계없이 페이지가 제대로 렌더링됩니다.
+ 전체 범위의 Windows 10 디바이스를 대상으로 하는 단일 앱을 만들려는 경우 유니버설 Windows 앱을 만듭니다. 단일 프로젝트를 사용하여 앱을 디자인하면 어떤 디바이스에서 페이지를 표시하든 관계없이 페이지가 제대로 렌더링됩니다.
 
- UWP(유니버설 Windows 플랫폼) 앱 프로젝트 템플릿으로 시작합니다. 페이지를 시각적으로 디자인한 다음 미리 보기 창에서 열어 다양한 유형의 장치에서 어떻게 표시되는지 확인합니다. 장치에서 페이지가 표시되는 방식이 마음에 들지 않으면 화면 크기, 해상도 또는 다양한 방향(예: 가로 또는 세로 모드)에 잘 맞도록 페이지를 최적화할 수 있습니다. Visual Studio의 직관적인 도구 창과 쉽게 액세스할 수 있는 메뉴 옵션을 사용하여 모든 작업을 수행할 수 있습니다. 앱을 실행하고 코드를 단계별로 실행할 준비가 되면 **표준** 도구 모음에 있는 하나의 드롭다운 목록에서 다양한 장치 유형의 장치 에뮬레이터 및 시뮬레이터를 모두 사용할 수 있습니다.
+ UWP(유니버설 Windows 플랫폼) 앱 프로젝트 템플릿으로 시작합니다. 페이지를 시각적으로 디자인한 다음 미리 보기 창에서 열어 다양한 유형의 디바이스에서 어떻게 표시되는지 확인합니다. 디바이스에서 페이지가 표시되는 방식이 마음에 들지 않으면 화면 크기, 해상도 또는 다양한 방향(예: 가로 또는 세로 모드)에 잘 맞도록 페이지를 최적화할 수 있습니다. Visual Studio의 직관적인 도구 창과 쉽게 액세스할 수 있는 메뉴 옵션을 사용하여 모든 작업을 수행할 수 있습니다. 앱을 실행하고 코드를 단계별로 실행할 준비가 되면 **표준** 도구 모음에 있는 하나의 드롭다운 목록에서 다양한 디바이스 유형의 디바이스 에뮬레이터 및 시뮬레이터를 모두 사용할 수 있습니다.
 
 |**자세히**|
 |--------------------|
@@ -90,7 +90,7 @@ Xamarin용 Visual Studio Tools를 사용하면 동일한 솔루션 및 공유 �
 
  HTML과 JavaScript에 대해 잘 알고 있는 웹 개발자는 Visual Studio Apache Cordova용 도구를 사용하여 Windows, Android 및 iOS를 대상으로 지정할 수 있습니다. 이러한 앱은 세 플랫폼을 모두 대상으로 지정할 수 있으며 가장 익숙한 기술과 프로세스를 사용하여 빌드할 수 있습니다.
 
- Apache Cordova는 플러그 인 모델이 포함된 프레임워크입니다. 이 플러그 인 모델은 세 플랫폼 모두(Android, iOS 및 Windows)의 기본 장치 기능에 액세스하는 데 사용할 수 있는 단일 JavaScript API를 제공합니다.
+ Apache Cordova는 플러그 인 모델이 포함된 프레임워크입니다. 이 플러그 인 모델은 세 플랫폼 모두(Android, iOS 및 Windows)의 기본 디바이스 기능에 액세스하는 데 사용할 수 있는 단일 JavaScript API를 제공합니다.
 
  이러한 API는 크로스 플랫폼이기 때문에 작성하는 코드를 세 플랫폼 간에 대부분 공유할 수 있습니다. 따라서 개발 및 유지 관리 비용이 줄어듭니다. 또한 처음부터 다시 시작할 필요가 없습니다. 다양한 유형의 웹 응용 프로그램을 만든 경우 어떤 방식으로든 수정하거나 다시 디자인할 필요 없이 해당 파일을 Cordova 앱과 공유할 수 있습니다.
 
@@ -100,9 +100,9 @@ Xamarin용 Visual Studio Tools를 사용하면 동일한 솔루션 및 공유 �
 
  확장을 설치한 후 Visual Studio를 열고 **새 응용 프로그램(Apache Cordova)** 프로젝트를 만듭니다. 그런 다음 JavaScript 또는 Typescript를 사용하여 앱을 개발할 수 있습니다. 플러그 인을 추가하여 앱 기능을 확장할 수도 있습니다. 플러그 인의 API는 코드 작성 시 IntelliSense에 표시됩니다.
 
- 앱을 실행하고 코드를 단계별로 실행할 준비가 되면 Apache Ripple 에뮬레이터 또는 Android Emulator, 브라우저 또는 컴퓨터에 직접 연결한 장치와 같은 에뮬레이터를 선택합니다. 그런 다음 앱을 시작합니다. Windows PC에서 앱을 개발하는 경우 Windows PC에서 실행할 수도 있습니다. 이러한 모든 옵션은 Visual Studio Tools for Apache Cordova의 일부로 Visual Studio에 기본 제공됩니다.
+ 앱을 실행하고 코드를 단계별로 실행할 준비가 되면 Apache Ripple 에뮬레이터 또는 Android Emulator, 브라우저 또는 컴퓨터에 직접 연결한 디바이스와 같은 에뮬레이터를 선택합니다. 그런 다음 앱을 시작합니다. Windows PC에서 앱을 개발하는 경우 Windows PC에서 실행할 수도 있습니다. 이러한 모든 옵션은 Visual Studio Tools for Apache Cordova의 일부로 Visual Studio에 기본 제공됩니다.
 
- UWP(유니버설 Windows 플랫폼) 앱을 만들기 위한 프로젝트 템플릿은 Visual Studio에서 계속 제공되므로 Windows 장치만 대상으로 하려는 경우 자유롭게 사용할 수 있습니다. 나중에 Android 및 iOS를 대상으로 지정하려는 경우에는 언제든지 코드를 Cordova 프로젝트로 이동할 수 있습니다.
+ UWP(유니버설 Windows 플랫폼) 앱을 만들기 위한 프로젝트 템플릿은 Visual Studio에서 계속 제공되므로 Windows 디바이스만 대상으로 하려는 경우 자유롭게 사용할 수 있습니다. 나중에 Android 및 iOS를 대상으로 지정하려는 경우에는 언제든지 코드를 Cordova 프로젝트로 이동할 수 있습니다.
 
 |**자세히**|
 |--------------------|
@@ -123,7 +123,7 @@ Xamarin용 Visual Studio Tools를 사용하면 동일한 솔루션 및 공유 �
 
  앱을 실행하고 앱의 모양을 확인할 준비가 되면 Android Emulator를 사용합니다. 이 에뮬레이터는 빠르고 안정적이며 설치와 구성이 간편합니다.
 
- C++ 및 UWP(유니버설 Windows 플랫폼) 앱 프로젝트 템플릿을 사용하여 전체 범위의 Windows 10 장치를 대상으로 하는 앱을 빌드할 수도 있습니다. 자세한 내용은 이 항목의 앞부분에 있는 [Windows 10 장치를 대상으로 지정](#WindowsHTML) 섹션을 참조하세요.
+ C++ 및 UWP(유니버설 Windows 플랫폼) 앱 프로젝트 템플릿을 사용하여 전체 범위의 Windows 10 디바이스를 대상으로 하는 앱을 빌드할 수도 있습니다. 자세한 내용은 이 항목의 앞부분에 있는 [Windows 10 디바이스를 대상으로 지정](#WindowsHTML) 섹션을 참조하세요.
 
  정적 또는 동적 공유 라이브러리를 만들어 Android와 Windows 사이에 C++ 코드를 공유할 수 있습니다.
 

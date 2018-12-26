@@ -113,7 +113,7 @@ MSBuild는 빌드의 대상을 추적하며 각 대상이 여러 번 빌드되�
 
 메시지 작업은 MSBuild와 함께 제공되는 여러 작업 중 하나입니다. 사용 가능한 작업 및 사용법 정보의 전체 목록은 [작업 참조](../msbuild/msbuild-task-reference.md)를 참조하세요.
 
-메시지 작업에서는 Text 특성의 문자열 값을 입력으로 사용하며 출력 장치에 해당 값을 표시합니다. HelloWorld 대상은 메시지 작업을 "Hello"와 "World"를 표시하는 데 각각 한 번씩 두 번 실행합니다.
+메시지 작업에서는 Text 특성의 문자열 값을 입력으로 사용하며 출력 디바이스에 해당 값을 표시합니다. HelloWorld 대상은 메시지 작업을 "Hello"와 "World"를 표시하는 데 각각 한 번씩 두 번 실행합니다.
 
 ## <a name="build-the-target"></a>대상 빌드
  **Visual Studio 명령 프롬프트**에서 MSBuild를 실행하여 위에 정의되어 있는 HelloWorld 대상을 빌드합니다. -target 또는 -t 명령줄 스위치를 사용하여 대상을 선택합니다.

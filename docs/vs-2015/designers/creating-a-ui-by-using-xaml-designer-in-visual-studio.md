@@ -34,7 +34,7 @@ Visual Studio의 XAML 디자이너는 XAML 기반 Windows 스토어, Windows Pho
  애니메이션 및 동작과 같은 고급 XAML 디자인 작업에 대해서는 [Creating a UI by using Blend for Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)를 참조하세요.
 
 ## <a name="xaml-designer-workspace"></a>XAML 디자이너 작업 영역
- XAML 디자이너의 작업 영역은 몇 가지 그래픽 인터페이스 요소로 구성됩니다. 여기에는 아트보드, XAML 편집기, 장치 창, 문서 개요 창 및 속성 창이 포함됩니다. XAML 디자이너를 열려면 **솔루션 탐색기** 에서 XAML 파일을 마우스 오른쪽 단추로 클릭하고 **뷰 디자이너**를 선택합니다.
+ XAML 디자이너의 작업 영역은 몇 가지 그래픽 인터페이스 요소로 구성됩니다. 여기에는 아트보드, XAML 편집기, 디바이스 창, 문서 개요 창 및 속성 창이 포함됩니다. XAML 디자이너를 열려면 **솔루션 탐색기** 에서 XAML 파일을 마우스 오른쪽 단추로 클릭하고 **뷰 디자이너**를 선택합니다.
 
 ## <a name="authoring-views"></a>뷰 작성
  XAML 디자이너는 앱의 렌더링된 XAML 태그에 대한 XAML 뷰 및 동기화된 디자인 뷰를 제공합니다. Visual Studio에서 XAML 파일을 연 상태에서, **디자인** 및 **XAML** 탭을 사용하여 디자인 뷰와 XAML 뷰 사이에서 전환할 수 있습니다.  **창 바꾸기** 단추를 사용하여 아트보드 또는 XAML 편집기 중 하나의 맨 위에 나타나는 창을 전환할 수 있습니다.
@@ -83,12 +83,12 @@ Visual Studio의 XAML 디자이너는 XAML 기반 Windows 스토어, Windows Pho
 
  **태그 확대/축소** 태그 확대/축소를 사용하여 XAML 뷰의 크기를 조정할 수 있습니다. 20%부터 400%까지 확대/축소할 수 있습니다.
 
-## <a name="device-window"></a>장치 창
- XAML 디자이너의 장치 창에서 다양한 디자인 타임 뷰와 디스플레이, Windows 스토어 또는 Windows Phone 프로젝트에 대한 표시 옵션으로 시뮬레이트할 수 있습니다. 장치 창은  XAML 디자이너에서 작업할 때 **디자인** 메뉴에서 사용할 수 있습니다. 다음과 같이 나타납니다.
+## <a name="device-window"></a>디바이스 창
+ XAML 디자이너의 디바이스 창에서 다양한 디자인 타임 뷰와 디스플레이, Windows 스토어 또는 Windows Phone 프로젝트에 대한 표시 옵션으로 시뮬레이트할 수 있습니다. 디바이스 창은  XAML 디자이너에서 작업할 때 **디자인** 메뉴에서 사용할 수 있습니다. 다음과 같이 나타납니다.
 
  ![장치 창](../designers/media/xaml-editor-device-panel.png "xaml_editor_device_panel")
 
- 다음은 장치 창에서 사용할 수 있는 옵션입니다.
+ 다음은 디바이스 창에서 사용할 수 있는 옵션입니다.
 
  **디스플레이** 앱의 다른 디스플레이 크기 및 해상도를 미리 봅니다.
 

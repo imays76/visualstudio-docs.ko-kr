@@ -30,7 +30,7 @@ Visual Studio에서 C++를 사용하여 Windows 데스크톱 앱, UWP(유니버�
    > [!IMPORTANT]
    > Windows 7 또는 Windows Server 2008 R2를 사용하는 경우 Windows 데스크톱 응용 프로그램용 코드, Android Native Activity 앱 및 라이브러리, iOS용 앱 및 코드 라이브러리를 개발할 수 있지만 Windows Phone 또는 UWP 앱은 개발할 수 없습니다.
 
-특정 장치 플랫폼용 앱을 빌드하려는 경우에는 다음의 몇 가지 요구 사항이 추가로 적용됩니다.
+특정 디바이스 플랫폼용 앱을 빌드하려는 경우에는 다음의 몇 가지 요구 사항이 추가로 적용됩니다.
 
 - Windows Phone 에뮬레이터 및 Android용 Microsoft Visual Studio 에뮬레이터를 사용하려면 Hyper-V를 실행할 수 있는 컴퓨터가 필요합니다. 에뮬레이터를 설치하고 실행하려면 먼저 Windows에서 Hyper-V 기능을 사용하도록 설정해야 합니다. 자세한 내용은 에뮬레이터의 [시스템 요구 사항](system-requirements-for-the-visual-studio-emulator-for-android.md)을 참조하세요.
 
@@ -50,7 +50,7 @@ Visual Studio 2017용 Visual Studio 설치 관리자에는 Visual Studio에서 A
 
 - Android 빌드 프로세스를 수행하려면 Android SDK, Apache Ant 및 Java SE 개발 키트가 필요합니다.
 
-- Google Android Emulator 및 Intel Hardware Accelerated Execution Manager는 선택적이지만 권장되는 구성 요소입니다. Android 장치에서 직접 개발하고 디버그할 수 있지만, 종종 데스크톱에서 에뮬레이터를 사용하여 디버그하기가 더 쉽습니다. Microsoft는 별도로 설치할 수 있는 Visual Studio Emulator for Android도 제공합니다.
+- Google Android Emulator 및 Intel Hardware Accelerated Execution Manager는 선택적이지만 권장되는 구성 요소입니다. Android 디바이스에서 직접 개발하고 디버그할 수 있지만, 종종 데스크톱에서 에뮬레이터를 사용하여 디버그하기가 더 쉽습니다. Microsoft는 별도로 설치할 수 있는 Visual Studio Emulator for Android도 제공합니다.
 
 #### <a name="to-install-the-mobile-development-with-c-workload-in-visual-studio-2017"></a>Visual Studio 2017에서 C++ 워크로드를 사용하여 모바일 개발을 설치하려면
 
@@ -105,7 +105,7 @@ Visual Studio 2015를 사용하는 경우 설치 관리자에는 Visual Studio 2
 
 ## <a name="install-tools-for-ios"></a>Install tools for iOS
 
-플랫폼 간 모바일 개발용 Visual C++를 사용하여 iOS 코드를 편집 및 디버그하고 iOS 시뮬레이터 또는 iOS 장치에 배포할 수 있지만 라이선스 제한으로 인해 Mac에서 원격으로 코드를 빌드해야 합니다. Visual Studio를 사용하여 iOS 앱을 빌드 및 실행하려면 Mac에서 원격 에이전트를 설치 및 구성해야 합니다. 자세한 설치 지침, 필수 조건 및 구성 옵션은 [iOS를 사용하여 빌드할 도구 설치 및 구성](../cross-platform/install-and-configure-tools-to-build-using-ios.md)을 참조하세요. iOS용으로 빌드하지 않는 경우에는 이 단계를 건너뛸 수 있습니다.
+플랫폼 간 모바일 개발용 Visual C++를 사용하여 iOS 코드를 편집 및 디버그하고 iOS 시뮬레이터 또는 iOS 디바이스에 배포할 수 있지만 라이선스 제한으로 인해 Mac에서 원격으로 코드를 빌드해야 합니다. Visual Studio를 사용하여 iOS 앱을 빌드 및 실행하려면 Mac에서 원격 에이전트를 설치 및 구성해야 합니다. 자세한 설치 지침, 필수 조건 및 구성 옵션은 [iOS를 사용하여 빌드할 도구 설치 및 구성](../cross-platform/install-and-configure-tools-to-build-using-ios.md)을 참조하세요. iOS용으로 빌드하지 않는 경우에는 이 단계를 건너뛸 수 있습니다.
 
 ## <a name="install-or-update-dependencies-manually"></a>수동으로 종속성 설치 또는 업데이트
 

@@ -12,7 +12,7 @@ ms.author: crdun
 manager: crdun
 ms.openlocfilehash: 329c684dcc09a15ec86f80493d9f084e486b7cfe
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51733179"
@@ -38,9 +38,9 @@ ms.locfileid: "51733179"
 ## <a name="essentials-overview-of-the-visual-studio-and-xamarin-environment"></a>주요 사항: Visual Studio 및 Xamarin 환경 개요  
  *5-15분*  
   
-- Visual Studio 및 Xamarin이 설치된 Windows 컴퓨터에서 대부분 작업을 수행합니다. 이 컴퓨터에서 직접 Windows 및 Android 앱을 빌드하고 장치나 에뮬레이터에서 실행 및 디버그합니다. Mac을 통해 원격으로 iOS 앱을 빌드, 실행 및 디버그할 수도 있습니다. Windows 컴퓨터의 Visual Studio를 iOS 스토리보드 디자이너 및 iOS 시뮬레이터에 연결할 수도 있습니다.  
+- Visual Studio 및 Xamarin이 설치된 Windows 컴퓨터에서 대부분 작업을 수행합니다. 이 컴퓨터에서 직접 Windows 및 Android 앱을 빌드하고 디바이스나 에뮬레이터에서 실행 및 디버그합니다. Mac을 통해 원격으로 iOS 앱을 빌드, 실행 및 디버그할 수도 있습니다. Windows 컴퓨터의 Visual Studio를 iOS 스토리보드 디자이너 및 iOS 시뮬레이터에 연결할 수도 있습니다.  
   
-- Xcode 및 Xamarin이 설치된 Mac은 iOS 앱용 빌드/서명 호스트 및 런타임 환경으로 사용됩니다. Windows 컴퓨터의 Visual Studio에서 iOS에 대한 빌드는 이 Mac으로 위임됩니다. Visual Studio에서 iOS 앱을 디버그하면 앱은 Mac의 iOS 시뮬레이터에서 실행되거나 Mac에 연결된 테더링된 장치에서 직접 실행됩니다. 이 경우 Mac이나 그 주변에서 앱을 조작하고 Visual Studio에서 디버깅을 수행합니다.  
+- Xcode 및 Xamarin이 설치된 Mac은 iOS 앱용 빌드/서명 호스트 및 런타임 환경으로 사용됩니다. Windows 컴퓨터의 Visual Studio에서 iOS에 대한 빌드는 이 Mac으로 위임됩니다. Visual Studio에서 iOS 앱을 디버그하면 앱은 Mac의 iOS 시뮬레이터에서 실행되거나 Mac에 연결된 테더링된 디바이스에서 직접 실행됩니다. 이 경우 Mac이나 그 주변에서 앱을 조작하고 Visual Studio에서 디버깅을 수행합니다.  
   
   이러한 관계는 아래에서 설명하고 iOS 앱 작업에 대한 자세한 내용은 [Visual Studio용 Xamarin.iOS 소개](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/introduction_to_xamarin_ios_for_visual_studio/) (영문)(xamarin.com)를 참조하세요.  
   
@@ -80,16 +80,16 @@ ms.locfileid: "51733179"
   
 3.  (선택 사항) [Xamarin.Forms 소개](http://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/introduction-to-xamarin-forms/) (영문)(xamarin.com)  
   
-4.  (선택 사항) [장치 클래스](http://developer.xamarin.com/guides/xamarin-forms/platform-features/device/) 설명서(영문)에서 사용자 지정을 위해 OnPlatform을 사용하는 예제 참조(xamarin.com)  
+4.  (선택 사항) [디바이스 클래스](http://developer.xamarin.com/guides/xamarin-forms/platform-features/device/) 설명서(영문)에서 사용자 지정을 위해 OnPlatform을 사용하는 예제 참조(xamarin.com)  
   
 5.  (선택 사항) Jason Smith(MSDN Magazine)의 [크로스 플랫폼 - Xamarin.Forms를 사용하여 모바일 플랫폼 간에 UI 코드 공유](https://msdn.microsoft.com/magazine/dn904669.aspx) (영문)에서는 Xamarin.Forms 내의 다양한 사용자 지정 옵션에 대해 설명하며 자세한 내용은 [각 플랫폼의 컨트롤 사용자 지정](http://developer.xamarin.com/guides/xamarin-forms/custom-renderer/) (영문)(xamarin.com)에 나와 있습니다.  
   
 ## <a name="deeper-dive-debugging-with-emulators"></a>심층 분석: 에뮬레이터를 사용한 디버깅  
  *10~15분*  
   
- 물리적 장치를 사용하지 않고도 플랫폼 간 앱을 디버깅하려면 다음을 사용해야 합니다.  
+ 물리적 디바이스를 사용하지 않고도 플랫폼 간 앱을 디버깅하려면 다음을 사용해야 합니다.  
   
-1.  **Android 에뮬레이터.** 사용 중인 Windows 버전에 따라, Microsoft의 Visual Studio Emulator for Android 또는 Xamarin Player를 사용하는 것이 좋습니다. 두 제품 모두 빠른 성능을 제공하고 다양한 장치 기능을 지원합니다.  
+1.  **Android 에뮬레이터.** 사용 중인 Windows 버전에 따라, Microsoft의 Visual Studio Emulator for Android 또는 Xamarin Player를 사용하는 것이 좋습니다. 두 제품 모두 빠른 성능을 제공하고 다양한 디바이스 기능을 지원합니다.  
   
     -   **Windows 8+ 컴퓨터:** Visual Studio와 함께 설치되는 Microsoft의 [Visual Studio Emulator for Android](https://www.visualstudio.com/en-us/features/msft-android-emulator-vs.aspx)를 사용하는 것이 좋습니다.  [Visual Studio Emulator for Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) 비디오(영문)(Channel9, 5분 55초)에서는 개요 및 데모를 제공합니다.  
   

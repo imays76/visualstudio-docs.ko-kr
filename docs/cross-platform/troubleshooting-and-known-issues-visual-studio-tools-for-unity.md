@@ -94,11 +94,11 @@ Visual Studio에서 특정 중단점에 대한 원본 위치를 찾을 수 없�
 
 ## <a name="unable-to-debug-android-players"></a>Android 플레이어를 디버그할 수 없음
 
-플레이어 검색(Unity에서 사용하는 기본 메커니즘)에 멀티캐스트를 사용하지만, 이후에는 일반 TCP 연결을 사용하여 디버거를 연결합니다. 검색 단계는 Android 장치에 대한 주요 문제입니다.
+플레이어 검색(Unity에서 사용하는 기본 메커니즘)에 멀티캐스트를 사용하지만, 이후에는 일반 TCP 연결을 사용하여 디버거를 연결합니다. 검색 단계는 Android 디바이스에 대한 주요 문제입니다.
 
-Wi-Fi는 유용하지만 대기 시간 때문에 USB에 비해 속도가 느립니다. 일부 라우터 또는 장치에 대해 적절한 멀티캐스트 지원이 부족하다는 것을 확인했습니다(Nexus 시리즈는 이에 대해 잘 알려져 있음).
+Wi-Fi는 유용하지만 대기 시간 때문에 USB에 비해 속도가 느립니다. 일부 라우터 또는 디바이스에 대해 적절한 멀티캐스트 지원이 부족하다는 것을 확인했습니다(Nexus 시리즈는 이에 대해 잘 알려져 있음).
 
-USB는 디버깅하기에 매우 빠릅니다. 이제 Visual Studio Tools for Unity에서 USB 장치를 감지할 수 있고 디버깅을 위해 adb 서버와 통신하여 포트를 올바르게 전달할 수 있습니다.
+USB는 디버깅하기에 매우 빠릅니다. 이제 Visual Studio Tools for Unity에서 USB 디바이스를 감지할 수 있고 디버깅을 위해 adb 서버와 통신하여 포트를 올바르게 전달할 수 있습니다.
 
 ## <a name="issues-with-visual-studio-2015-and-intellisense-or-code-coloration"></a>Visual Studio 2015 및 IntelliSense 또는 코드 색 지정 관련 문제입니다.
 

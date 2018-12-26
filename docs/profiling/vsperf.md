@@ -20,7 +20,7 @@ ms.locfileid: "49903545"
 # <a name="vsperf"></a>VSPerf
 **VsPerf** 명령줄 도구를 사용하면 다음을 수행할 수 있습니다.  
   
-1. 장치에 Visual Studio가 설치되어 있지 않으면 명령줄에서 UWP 앱을 프로파일링합니다.  
+1. 디바이스에 Visual Studio가 설치되어 있지 않으면 명령줄에서 UWP 앱을 프로파일링합니다.  
   
 2. 샘플링 프로파일링 방법을 사용하여 Windows 8 데스크톱 응용 프로그램 및 Windows Server 2012 응용 프로그램을 프로파일링합니다.  
   
