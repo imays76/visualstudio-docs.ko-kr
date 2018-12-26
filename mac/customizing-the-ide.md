@@ -1,4 +1,4 @@
----
+﻿---
 title: IDE 사용자 지정
 description: Mac용 Visual Studio를 다양한 방식으로 사용자 지정하여 사용자가 효율성과 미적 요구를 모두 충족하는 환경에서 앱을 개발하도록 할 수 있습니다. 이 항목에서는 Mac용 Visual Studio를 요구에 맞게 조정할 수 있는 여러 가지 방법을 살펴봅니다.
 author: conceptdev
@@ -71,7 +71,7 @@ Mac용 Visual Studio에서 표시되는 언어를 변경하려면 다음 이미�
 
 ## <a name="workspace-layout"></a>작업 영역 레이아웃
 
-Mac용 Visual Studio 작업 영역은 문서 주요 기능 영역(일반적으로 편집기나 디자이너 화면, 옵션 파일)을 중심으로 응용 프로그램 파일 액세스 및 관리, 테스트, 디버그에 유용한 정보가 포함된 '패드'들이 부수적으로 배치되어 있습니다.
+Mac용 Visual Studio 작업 영역은 문서 주요 기능 영역(일반적으로 편집기나 디자이너 화면, 옵션 파일)을 중심으로 응용 프로그램 파일 액세스 및 관리, 테스트, 디버그에 유용한 정보가 포함된 '패드'들이 부수적으로 배치되어 있습니다. 
 
  ![작업 영역 레이아웃](media/customizing-the-ide-image1a.png)
 
