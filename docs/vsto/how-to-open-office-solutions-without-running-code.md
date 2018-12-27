@@ -1,5 +1,5 @@
 ---
-title: '방법: 코드를 실행 하지 않고 Open Office 솔루션'
+title: '방법: 코드를 실행 하지 않고 Office 솔루션 열기'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,19 +16,19 @@ helpviewer_keywords:
 - assemblies [Office development in Visual Studio], bypassing
 - Office documents [Office development in Visual Studio, opening without running code
 - documents [Office development in Visual Studio], opening without running code
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f7ced7b38a4f32d96b397e7f9eebb1d40be03ae3
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 7684fd2d01d0151798c9e59c593e3e0c2acb95b1
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254990"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646908"
 ---
-# <a name="how-to-open-office-solutions-without-running-code"></a>방법: 코드를 실행 하지 않고 Open Office 솔루션
+# <a name="how-to-open-office-solutions-without-running-code"></a>방법: 코드를 실행 하지 않고 Office 솔루션 열기
   관리 코드 확장을 사용 하 여 만든 Microsoft Office 솔루션에는 최종 사용자의 Office 응용 프로그램의 보안 설정이 높은를 설정한 경우에 실행 됩니다. Microsoft Office가 아니라 Microsoft.NET Framework에서.NET 어셈블리 코드 보안을 관리 하는 때문입니다.  
   
  그러나 코드를 실행 하지 않고 문서를 열려면 하려는 경우 경우가 있습니다. 예를 들어 문서를 열 때 실행 되는 코드의 내용을 변경 될 수 있습니다 하지만 모양을 문서 코드 변경 되기 전에를 업데이트 하려면. 또는 다른 사람에 특정 정보를 사용 하 여 문서를 송신 하려는 및 코드를 실행 하 고 가능한 경우 콘텐츠를 변경 하지 않으려면입니다.  
@@ -52,7 +52,7 @@ ms.locfileid: "35254990"
   
      솔루션을 여러 사용자가 사용 하는 경우이 메서드는 실행 모두에 대 한 솔루션을 방지 합니다. 이 기능은 코드 또는 참조 된 서버에서 문제가 발견 되 고 모든 사용자가 해당 실행을 중지 하려는 경우에 유용할 수 있습니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Office 솔루션 보안](../vsto/securing-office-solutions.md)   
  [Office 솔루션 배포](../vsto/deploying-an-office-solution.md)   
  [Office 솔루션을 만들고 디자인](../vsto/designing-and-creating-office-solutions.md)   

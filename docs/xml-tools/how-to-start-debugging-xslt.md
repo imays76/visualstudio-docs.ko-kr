@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: e499aea3793e5c496930fe255133d51361e6f394
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 9e3251d83361623aea0c0a54a2752c97b06a66f8
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178350"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561868"
 ---
 # <a name="how-to-start-debugging-xslt"></a>방법: XSLT 디버깅 시작
 
@@ -91,7 +91,7 @@ namespace ConsoleApplication
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [연습: XSLT 스타일 시트 디버깅](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
-- [디버거 기본 사항](../debugger/getting-started-with-the-debugger.md)
+- [디버거 소개](../debugger/debugger-feature-tour.md)   

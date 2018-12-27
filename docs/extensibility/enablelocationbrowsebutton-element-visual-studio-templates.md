@@ -2,9 +2,8 @@
 title: EnableLocationBrowseButton 요소 (Visual Studio 템플릿) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#EnableLocationBrowseButton
 helpviewer_keywords:
@@ -15,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7bebf88b8d5c98722226f42f9a1b1666695a3b7e
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: b08480c0535c3b2b4d119beb2d14e18997a3ae54
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639541"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561488"
 ---
 # <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>EnableLocationBrowseButton 요소 (Visual Studio 템플릿)
 지정 여부를 합니다 **찾아보기** 단추를 사용할 수는 **새 프로젝트** 대화 상자에서 사용자가 새 프로젝트를 저장 된 기본 디렉터리를 쉽게 수정할 수 있도록 합니다.  
@@ -60,7 +59,7 @@ ms.locfileid: "39639541"
   
  에 **새 프로젝트** 대화 상자에서를 **위치** 텍스트 상자가 새 프로젝트를 저장 된 디렉터리를 지정 합니다. 합니다 **찾아보기** 단추를 표시 하 여이 디렉터리를 수정할 수 있습니다 합니다 **프로젝트 위치** 컴퓨터에서 사용할 수 있는 다른 디렉터리에 쉽게 이동할 수 있는 대화 상자 및 그런 다음 새 프로젝트 저장 된 디렉터리를 선택 합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에 대 한 메타 데이터는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Windows 응용 프로그램입니다.  
   
 ```  
@@ -88,6 +87,6 @@ ms.locfileid: "39639541"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)   
  [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

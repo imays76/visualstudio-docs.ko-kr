@@ -2,9 +2,8 @@
 title: WizardData 요소 (Visual Studio 템플릿) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#WizardData
 helpviewer_keywords:
@@ -16,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6685c09e463b50f1fd856c65eadc09555a6dedb9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5a7f024c1ca9840b2dcde181d772bf18af99e603
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140117"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561293"
 ---
 # <a name="wizarddata-element-visual-studio-templates"></a>WizardData 요소(Visual Studio 템플릿)
 사용자 지정 XML 지정  
@@ -56,12 +55,12 @@ ms.locfileid: "31140117"
 ## <a name="text-value"></a>텍스트 값  
  텍스트 값은 선택적입니다.  
   
- 이 텍스트에 지정 된 사용자 지정 마법사 확장명에 전달할 사용자 지정 XML 지정는 [WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md) 요소입니다.  
+ 이 텍스트에 지정 된 사용자 지정 마법사 확장명에 전달할 사용자 지정 XML을 지정 합니다 [WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md) 요소입니다.  
   
 ## <a name="remarks"></a>설명  
- 이 요소의 모든 XML은 지정할 수 있습니다. XML 전달 됩니다 매개 변수로 사용자 지정 마법사 확장 프로그램에이 요소의 콘텐츠를 사용할 확장명을 허용 합니다. 유효성을 검사 하지는이 데이터에서 수행 됩니다.  
+ 이 요소의 모든 XML은 지정할 수 있습니다. XML 전달할 매개 변수로 사용자 지정 마법사 확장은이 요소의 콘텐츠를 사용할 확장명을 허용 합니다. 유효성을 검사 하지는이 데이터에서 수행 됩니다.  
   
- 콘텐츠는 `WizardData` 요소 내에서 매개 변수의 문자열 사전 매개 변수로 변경 되지 않고 전달 되는 `IWizard.RunStarted` 메서드. 매개 변수는 이름이 $WizardData$입니다.  
+ 콘텐츠를 `WizardData` 요소 내에서 매개 변수의 문자열 사전에서 매개 변수로 변경 되지 않고 전달 됩니다는 `IWizard.RunStarted` 메서드. 매개 변수 $WizardData $를 이라고 합니다.  
   
 ## <a name="example"></a>예제  
  다음 예제에 대 한 표준 프로젝트 템플릿에 대 한 메타 데이터는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Windows 응용 프로그램입니다.  

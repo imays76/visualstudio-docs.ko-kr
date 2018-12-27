@@ -21,24 +21,24 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], custom XML parts
 - Excel [Office development in Visual Studio], custom XML parts
 - documents [Office development in Visual Studio], custom XML parts
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 71720ef96ee7d17bd52ea118a8c44a8f4b117cad
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 467b1055518697b035a3fa7e2a094d7f22b8198a
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671731"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648354"
 ---
 # <a name="custom-xml-parts-overview"></a>사용자 지정 XML 부분 개요
   일부 Microsoft Office 응용 프로그램에 대한 문서에 XML 데이터를 포함할 수 있습니다. 데이터 라는 문서에서 XML 데이터를 포함 하는 경우는 *사용자 지정 XML 부분*합니다.  
   
  Visual Studio에서 VSTO 추가 기능 또는 문서 수준 솔루션을 사용하여 문서에 사용자 지정 XML 부분을 만들고 수정할 수 있습니다. 사용자 지정 XML 부분을 만들고 수정하기 위해 Microsoft Office 응용 프로그램을 시작할 필요는 없습니다.  
   
- **적용 대상:** 이 항목의 정보를 Excel, PowerPoint 및 Word 용 문서 수준 프로젝트 및 VSTO 추가 기능 프로젝트에 적용 됩니다. 자세한 내용은 [Office 응용 프로그램 및 프로젝트 형식으로 사용할 수 있는 기능](../vsto/features-available-by-office-application-and-project-type.md)합니다.  
+ **적용 대상:** 이 항목의 정보는 Excel, PowerPoint 및 Word에 대 한 문서 수준 프로젝트 및 VSTO 추가 기능 프로젝트에 적용 됩니다. 자세한 내용은 [Office 응용 프로그램 및 프로젝트 형식으로 사용할 수 있는 기능](../vsto/features-available-by-office-application-and-project-type.md)합니다.  
   
 > [!NOTE]  
 >  또한 visual Studio를 사용하여 문서 수준 사용자 지정에 데이터 개체를 캐시할 수 있습니다. 몇 가지 유사점은 있지만 이 기능은 사용자 지정 XML 부분과 다릅니다. 자세한 내용은 [문서 수준 사용자 지정에서 캐시 된 데이터](../vsto/cached-data-in-document-level-customizations.md)입니다.  
@@ -81,7 +81,7 @@ ms.locfileid: "50671731"
 ## <a name="bind-custom-xml-parts-to-word-content-controls"></a>Word 콘텐츠 컨트롤에 사용자 지정 XML 부분 바인딩  
  사용자 지정 XML 부분의 요소에 Word 솔루션의 콘텐츠 컨트롤을 바인딩할 수 있습니다. 콘텐츠 컨트롤이 사용자 지정 XML 부분에 바인딩된 경우 사용자 지정 XML 부분의 데이터가 콘텐츠 컨트롤의 UI(사용자 인터페이스)에 표시됩니다. 사용자가 컨트롤의 텍스트를 편집하는 경우 해당 XML 요소가 자동으로 업데이트됩니다. 마찬가지로, 사용자 지정 XML 부분의 요소 값이 변경되는 경우 XML 요소에 바인딩된 콘텐츠 컨트롤에 새 데이터가 표시됩니다. 자세한 내용은 [콘텐츠 컨트롤](../vsto/content-controls.md)합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [문서 수준 사용자 지정의 XML 스키마 및 데이터](../vsto/xml-schemas-and-data-in-document-level-customizations.md)   
  [방법: 문서 수준 사용자 지정에 사용자 지정 XML 부분 추가](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)   
  [방법: VSTO 추가 기능을 사용 하 여 문서에 사용자 지정 XML 부분 추가](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)   

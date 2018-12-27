@@ -2,9 +2,8 @@
 title: 요소 (Visual Studio 템플릿)을 숨겨진 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Hidden
 helpviewer_keywords:
@@ -15,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18c5783eb6e9572e030e4ea764ad0393f61f6049
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 5eedcbca60ba0df886976a71780bb431a4fafbf9
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498264"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561618"
 ---
 # <a name="hidden-element-visual-studio-templates"></a>Hidden 요소 (Visual Studio 템플릿)
 템플릿 중 하나에 표시할지 여부를 지정 합니다 **새 프로젝트** 하거나 **새 항목 추가** 대화 상자.  
@@ -60,7 +59,7 @@ ms.locfileid: "39498264"
   
  다른 자식 요소가 없습니다를 지정 하는 경우는 `TemplateData` 요소는 필요 합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 템플릿의 메타데이터를 보여 줍니다.  
   
 ```  
@@ -88,6 +87,6 @@ ms.locfileid: "39498264"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)   
  [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

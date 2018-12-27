@@ -12,17 +12,17 @@ helpviewer_keywords:
 - Office development in Visual Studio, getting started
 - FAQs (frequently asked questions) [Office development in Visual Studio]
 - Office development in Visual Studio, frequently asked questions
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 085ed1a4f430be957d96991798458e411bc22992
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: ffdf53a6317f2b06ea550075c104f0528a35c5de
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672810"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441758"
 ---
 # <a name="common-tasks-in-office-programming"></a>Office 프로그래밍의 일반적인 작업
   이 항목은 Visual Studio를 사용하여 Office 솔루션을 프로그래밍하는 방법에 대한 다음 범주의 일반적인 질문에 대해 답변을 찾을 수 있도록 설계되었습니다.  
@@ -47,21 +47,21 @@ ms.locfileid: "50672810"
   
 -   [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
   
--   [방법: 업그레이드 Office 솔루션](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)합니다.  
+-   [방법: Office 솔루션 업그레이드](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)합니다.  
   
--   [방법: 설치 Office 주 interop 어셈블리](../vsto/how-to-install-office-primary-interop-assemblies.md)합니다.  
+-   [방법: Office 주 interop 어셈블리 설치](../vsto/how-to-install-office-primary-interop-assemblies.md)합니다.  
   
--   [방법: 주 interop 어셈블리를 통해 대상 Office 응용 프로그램](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)합니다.  
+-   [방법: 주 interop 어셈블리를 통해 Office 응용 프로그램을 대상](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)합니다.  
   
 -   [방법: Office 프로젝트에서 이벤트 처리기 만들기](../vsto/how-to-create-event-handlers-in-office-projects.md)합니다.  
   
--   [방법: 코드를 실행 하지 않고 Open Office 솔루션](../vsto/how-to-open-office-solutions-without-running-code.md)합니다.  
+-   [방법: 코드를 실행 하지 않고 Office 솔루션 열기](../vsto/how-to-open-office-solutions-without-running-code.md)합니다.  
   
 -   [방법: Office 솔루션에 대 한 구성 정보 설정](../vsto/how-to-set-up-configuration-information-for-an-office-solution.md)합니다.  
   
--   [방법: 리본에 개발 도구 탭 표시](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)합니다.  
+-   [방법: 리본 메뉴에 개발 도구 탭 표시](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)합니다.  
   
--   [방법: 사용자 인터페이스 오류 표시 add-in](../vsto/how-to-show-add-in-user-interface-errors.md)합니다.  
+-   [방법: 추가 사용자 인터페이스 오류 표시](../vsto/how-to-show-add-in-user-interface-errors.md)합니다.  
   
 ##  <a name="ui"></a> 사용자 인터페이스 사용자 지정 작업  
   
@@ -81,7 +81,7 @@ ms.locfileid: "50672810"
   
 ### <a name="task-panes-in-document-level-customizations"></a>문서 수준 사용자 지정의 작업창  
   
--   [방법: Word 문서에 작업창을 추가 하거나 Excel 통합 문서](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)합니다.  
+-   [방법: Excel 통합 문서 또는 Word 문서에 작업창 추가](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)합니다.  
   
 ### <a name="task-panes-in-vsto-add-ins"></a>VSTO 추가 기능의 작업창  
   
@@ -89,7 +89,7 @@ ms.locfileid: "50672810"
   
 ### <a name="ribbon-customizations"></a>리본 메뉴 사용자 지정  
   
--   [방법: 리본 메뉴 사용자 지정 시작](../vsto/how-to-get-started-customizing-the-ribbon.md)합니다.  
+-   [방법: 리본 사용자 지정 시작](../vsto/how-to-get-started-customizing-the-ribbon.md)합니다.  
   
 -   [방법: 리본의 탭 위치 변경](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)합니다.  
   
@@ -97,7 +97,7 @@ ms.locfileid: "50672810"
   
 -   [방법: Backstage 보기에 컨트롤 추가](../vsto/how-to-add-controls-to-the-backstage-view.md)합니다.  
   
--   [방법: 리본 디자이너에서 리본 XML로 리본 내보내기](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md).  
+-   [방법: 리본 XML로 리본 디자이너에서 리본 메뉴 내보내기](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)합니다.  
   
 ### <a name="outlook-form-regions"></a>Outlook 양식 영역  
   
@@ -197,7 +197,7 @@ ms.locfileid: "50672810"
   
 -   [방법: 오프 라인 이나 서버에서 사용 하기 위해 데이터를 캐시](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)합니다.  
   
--   [방법: 프로그래밍 방식으로 Office 문서에서 데이터 소스를 캐싱](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)합니다.  
+-   [방법: Office 문서에서 데이터 원본을 프로그래밍 방식으로 캐시](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)합니다.  
   
 -   [방법: 암호로 보호 된 문서의 데이터 캐시](../vsto/how-to-cache-data-in-a-password-protected-document.md)합니다.  
   
@@ -211,7 +211,7 @@ ms.locfileid: "50672810"
   
 -   [방법: 문서에서 관리 코드 확장명 제거](../vsto/how-to-remove-managed-code-extensions-from-documents.md)합니다.  
   
--   [방법: 연결 관리 코드 확장명 문서로](../vsto/how-to-attach-managed-code-extensions-to-documents.md)합니다.  
+-   [방법: 문서에 관리 코드 확장명 연결](../vsto/how-to-attach-managed-code-extensions-to-documents.md)합니다.  
   
 ##  <a name="security"></a> 보안 작업  
   
@@ -233,7 +233,7 @@ ms.locfileid: "50672810"
   
 -   [방법: Office 솔루션의 설치 경로 변경](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [시작 &#40;Visual Studio에서 Office 개발&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Office 응용 프로그램 및 프로젝트 형식으로 사용할 수 있는 기능](../vsto/features-available-by-office-application-and-project-type.md)   
  [Office 개발 샘플 및 연습](../vsto/office-development-samples-and-walkthroughs.md)  

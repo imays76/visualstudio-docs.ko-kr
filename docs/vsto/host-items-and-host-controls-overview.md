@@ -34,17 +34,17 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], host items
 - Word [Office development in Visual Studio], host controls
 - host controls [Office development in Visual Studio], deleting
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 48ce311a767d68ce1402961d2ddf4cf8b673637c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4ff20a05b752ee16971e67cb8e12c838384523b9
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937501"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647976"
 ---
 # <a name="host-items-and-host-controls-overview"></a>호스트 항목 및 호스트 컨트롤 개요
   호스트 항목과 호스트 컨트롤은 Visual Studio에서 Office 개발 도구를 사용하여 만든 Office 솔루션에 프로그래밍 모델을 제공하는 데 도움이 되는 형식입니다. 호스트 항목과 호스트 컨트롤은 COM 기반의 Microsoft Office Word 및 Microsoft Office Excel의 개체 모델과 상호 작용합니다. 이는 Windows Forms 컨트롤과 같이 관리되는 개체와 상호 작용한다고 하는 편이 더 정확합니다.  
@@ -141,7 +141,7 @@ ms.locfileid: "49937501"
   
 - [방법: Word 문서에 책갈피 컨트롤 추가](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
   
-- [방법: 콘텐츠를 추가 합니다. Word 문서에 컨트롤](../vsto/how-to-add-content-controls-to-word-documents.md)  
+- [방법: 콘텐츠 추가 컨트롤을 Word 문서](../vsto/how-to-add-content-controls-to-word-documents.md)  
   
 - [방법: Word 문서에 XMLNode 컨트롤 추가](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)  
   
@@ -171,7 +171,7 @@ ms.locfileid: "49937501"
 > [!NOTE]  
 >  Excel에서 <xref:Microsoft.Office.Interop.Excel._Application.EnableEvents%2A> 개체의 <xref:Microsoft.Office.Interop.Excel.Application> 속성을 **false**라는 Word 또는 Excel 개체 모델에 고유하게 존재하는 개체를 확장합니다. 이 속성을 **false** 로 설정하면 Excel에서 호스트 컨트롤의 이벤트를 비롯한 어떤 이벤트도 발생시킬 수 없습니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [호스트 항목 및 호스트 컨트롤의 프로그래밍 방식으로 제한 사항](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [VSTO 추가 기능 프로그래밍](../vsto/programming-vsto-add-ins.md)   
  [문서 수준 사용자 지정 프로그래밍](../vsto/programming-document-level-customizations.md)   

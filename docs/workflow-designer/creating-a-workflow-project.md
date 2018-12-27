@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a4f8ed1effbc459bd2a17e3433738c1b461513b
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: cf7c9c5348e7a7c31fa7e1d65b7fa6047d05d565
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755656"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53685707"
 ---
 # <a name="workflow-project-templates"></a>워크플로 프로젝트 템플릿
 
@@ -72,12 +72,12 @@ Visual Studio는 4 개의 서로 다른 워크플로 프로젝트 템플릿을 �
 
 원하는 경우는 **활동 디자이너 라이브러리** 템플릿, Visual Studio XAML 및 코드 숨김 구현 파일에서 활동 디자이너 정의 만듭니다. Workflow Designer가 열리고 활동 디자이너의 캔버스가 표시 됩니다. 끌어서 Windows Presentation Foundation (WPF)에서 제어 **도구 상자** 사용자 지정 활동 디자이너에서 사용 하는 디자인 화면입니다.
 
-사용자 지정 활동 디자이너를 구현 하는 방법의 예제를 참조 하세요 [방법: 사용자 지정 활동 디자이너를 만드는](/dotnet/framework/windows-workflow-foundation/how-to-create-a-custom-activity-designer)합니다.
+사용자 지정 활동 디자이너를 구현 하는 방법의 예제를 참조 하세요. [방법: 사용자 지정 활동 디자이너를 만드는](/dotnet/framework/windows-workflow-foundation/how-to-create-a-custom-activity-designer)합니다.
 
 > [!NOTE]
 > 기본.NET Framework 활동 및 사용자 지정 활동에 대 한 사용자 지정 활동 디자이너를 사용할 수 있습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-- [Workflow Designer 사용](../workflow-designer/using-the-workflow-designer.md)
+- [Workflow Designer 사용](developing-applications-with-the-workflow-designer.md)
 - [(.NET Framework) 워크플로 디자인 합니다.](/dotnet/framework/windows-workflow-foundation/designing-workflows)

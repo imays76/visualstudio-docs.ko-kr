@@ -1,5 +1,5 @@
 ---
-title: '방법: 리본 메뉴 사용자 지정 시작'
+title: '방법: 리본 사용자 지정 시작'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -13,19 +13,19 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], adding
 - Ribbon [Office development in Visual Studio], customizing
 - customizing the Ribbon, adding Ribbon to project
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7a4c7edbc78182908ea7bce9b91945bbbccdb54c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e52efc4cfd1252ff908785195df5c06b8bc90baa
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49838350"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647151"
 ---
-# <a name="how-to-get-started-customizing-the-ribbon"></a>방법: 리본 메뉴 사용자 지정 시작
+# <a name="how-to-get-started-customizing-the-ribbon"></a>방법: 리본 사용자 지정 시작
   Microsoft Office 응용 프로그램의 리본을 사용자 지정 하려면 추가 **리본 (비주얼 디자이너)** 또는 **리본 (XML)** Office 프로젝트 항목입니다.  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
@@ -38,21 +38,21 @@ ms.locfileid: "49838350"
   
 3. 에 **이름을** 리본 항목에 대 한 이름을 입력 합니다.  
   
-    이름에는 다음 문자를 포함할 수 없습니다.  
+    이름은 다음 문자를 포함할 수 없습니다.  
   
-   -   파운드 (#)  
+   -   파운드(#)  
   
-   -   백분율 (%)  
+   -   백분율(%)  
   
    -   앰퍼샌드 (&)  
   
-   -   *(별표)  
+   -   별표(*)  
   
    -   세로 막대(|)  
   
    -   백슬래시(\\)  
   
-   -   콜론 (:)  
+   -   콜론(:)  
   
    -   큰따옴표(")  
   
@@ -62,9 +62,9 @@ ms.locfileid: "49838350"
   
    -   물음표(?)  
   
-   -   슬래시 (/)  
+   -   슬래시(/)  
   
-   -   선행 또는 후행 공백 (' ')  
+   -   선행 또는 후행 공백(' ')  
   
    -   ("Nul", "aux", "con", "com1", "lpt1" 등)와 같은 Windows 또는 DOS에 예약 된 이름  
   
@@ -72,7 +72,7 @@ ms.locfileid: "49838350"
   
    에 리본 항목을 표시할지 **솔루션 탐색기**합니다. 다음 단계에 대 한 자세한 내용은 [리본 개요](../vsto/ribbon-overview.md)합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [런타임에 리본 메뉴에 액세스](../vsto/accessing-the-ribbon-at-run-time.md)   
  [리본 디자이너](../vsto/ribbon-designer.md)   
  [리본 XML](../vsto/ribbon-xml.md)   

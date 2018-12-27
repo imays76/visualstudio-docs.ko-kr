@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Office development in Visual Studio, creating solutions
 - solutions [Office development in Visual Studio], creating
 - Office project types in Visual Studio
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 05cf317823d4f5853d960109bd97da77ea8a927d
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 4803cbb515c680ce0d004cb2f9c1f5ee730bc588
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671249"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648809"
 ---
 # <a name="design-and-create-office-solutions"></a>Office 솔루션을 만들고 디자인
   Visual Studio에서는 몇 가지 유형의 Office 솔루션을 만드는 데 사용할 수 있는 프로젝트 템플릿을 제공합니다. 설명서의 이 섹션에서는 프로젝트 템플릿에 대해 설명하고 Office 프로젝트를 만드는 지침을 제공합니다. 프로젝트를 만든 후 코드 및 사용자 인터페이스 사용자 지정을 구현 하는 방법에 대 한 정보를 참조 하세요 [개발 Office 솔루션](../vsto/developing-office-solutions.md)합니다.  
@@ -34,7 +34,7 @@ ms.locfileid: "50671249"
 >  Office 환경을 확장 하는 솔루션을 개발 하는 데 관심이 [여러 플랫폼](https://dev.office.com/add-in-availability)? 새 확인해 [Office 추가 기능 모델](https://dev.office.com/docs/add-ins/overview/office-add-ins)합니다. Office 추가 기능의 VSTO 추가 기능 및 솔루션에 비해 작은 사용 공간이 있고 거의 모든 웹 프로그래밍 기술을, HTML5, JavaScript, CSS3, XML 등을 사용 하 여 빌드할 수 있습니다.  
   
 ## <a name="create-office-projects"></a>Office 프로젝트 만들기  
- 시작하기 전에 요구 사항을 결정하고 가장 적합한 기능을 제공하는 솔루션의 유형을 찾아야 합니다. 예를 들어 Office 솔루션이 응용 프로그램을 사용할 때마다 실행되어야 하는 경우 VSTO 추가 기능이 요구 사항에 가장 적합합니다. 코드가 단일 문서와 긴밀하게 통합된 경우 문서 수준 사용자 지정을 만듭니다. 이러한 프로젝트 형식은 Visual Studio 프로젝트 템플릿으로 사용할 수 있습니다. Visual Studio를 사용 하 여 포함 된 Office 프로젝트 템플릿에 대 한 자세한 내용은 참조 하세요. [Office 프로젝트 템플릿 개요](../vsto/office-project-templates-overview.md)합니다. Office 프로젝트를 만드는 방법에 대 한 자세한 내용은 참조 하세요. [방법: Visual Studio에서 만드는 Office 프로젝트](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
+ 시작하기 전에 요구 사항을 결정하고 가장 적합한 기능을 제공하는 솔루션의 유형을 찾아야 합니다. 예를 들어 Office 솔루션이 응용 프로그램을 사용할 때마다 실행되어야 하는 경우 VSTO 추가 기능이 요구 사항에 가장 적합합니다. 코드가 단일 문서와 긴밀하게 통합된 경우 문서 수준 사용자 지정을 만듭니다. 이러한 프로젝트 형식은 Visual Studio 프로젝트 템플릿으로 사용할 수 있습니다. Visual Studio를 사용 하 여 포함 된 Office 프로젝트 템플릿에 대 한 자세한 내용은 참조 하세요. [Office 프로젝트 템플릿 개요](../vsto/office-project-templates-overview.md)합니다. Office 프로젝트를 만드는 방법에 대 한 자세한 내용은 참조 하세요. [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
   
  Office 프로젝트에는 Visual Studio의 기타 프로젝트 형식과 다른 기능과 프로젝트 항목이 있습니다. 예를 들어 문서 수준 프로젝트를 만들 때 프로젝트의 문서나 통합 문서는 Visual Studio 내에서 열고 편집할 수 있습니다. 자세한 내용은 [Visual Studio 환경의 Office 프로젝트](../vsto/office-projects-in-the-visual-studio-environment.md)합니다.  
   
@@ -51,7 +51,7 @@ ms.locfileid: "50671249"
   
   .NET Framework 3.5를 대상으로 하는 VSTO 추가 기능 프로젝트를 마이그레이션하는 경우 Visual Studio에서는 설치한 Office 버전에 따라 프로젝트의 대상 프레임워크를 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 이상으로 변경합니다.  
   
-  그러나 Visual Studio에서 대상 프레임워크를 변경한 후 특정 기능을 사용하는 프로젝트의 일부 코드를 수정해야 할 수 있습니다. 대상 프레임 워크를 변경 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법:.NET Framework의 버전을 대상](../ide/how-to-target-a-version-of-the-dotnet-framework.md)합니다. 프로젝트에서 필요할 수 있는 변경 내용에 대 한 자세한 정보를 참조 하세요. [.NET Framework 4 이상으로 마이그레이션 Office 솔루션](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)합니다.  
+  그러나 Visual Studio에서 대상 프레임워크를 변경한 후 특정 기능을 사용하는 프로젝트의 일부 코드를 수정해야 할 수 있습니다. 대상 프레임 워크를 변경 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법: 한 버전의 .NET Framework를 대상으로 지정](../ide/how-to-target-a-version-of-the-dotnet-framework.md)을 참조하세요. 프로젝트에서 필요할 수 있는 변경 내용에 대 한 자세한 정보를 참조 하세요. [.NET Framework 4 이상으로 마이그레이션 Office 솔루션](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)합니다.  
   
   Visual Studio 프로젝트의 대상.NET Framework를 변경 하 고 ClickOnce를 사용 하 여 솔루션을 배포 하는 경우 확인에.NET Framework의 해당 버전도 선택 해야 합니다 **필수 구성 요소** 대화 상자. 이 선택은 프로젝트의 대상 프레임워크를 변경할 때 자동으로 변경되지 않습니다. 자세한 내용은 [방법: Office 솔루션을 실행 하려면 최종 사용자 컴퓨터에서 필수 구성 요소 설치](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)합니다.  
   
@@ -94,7 +94,7 @@ ms.locfileid: "50671249"
 ## <a name="referenced-assemblies"></a>참조된 어셈블리  
  어셈블리는 프로젝트의 참조에 나열된 다른 어셈블리를 참조할 수 있습니다. 그러나 하나의 문서 수준 프로젝트 어셈블리가 다른 문서 수준 프로젝트 어셈블리를 참조할 수 없습니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Office 프로젝트 템플릿 개요](../vsto/office-project-templates-overview.md)   
  [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Visual Studio 환경의 office 프로젝트](../vsto/office-projects-in-the-visual-studio-environment.md)   

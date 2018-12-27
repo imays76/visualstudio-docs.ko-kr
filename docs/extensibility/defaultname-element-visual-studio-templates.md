@@ -2,9 +2,8 @@
 title: DefaultName 요소 (Visual Studio 템플릿) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#DefaultName
 helpviewer_keywords:
@@ -15,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03513b786c17e5bef3d8fa1fff79c1c3e73fe6a0
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 29e64b046187b21fec91381e6d4bbb14c3e0f393
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500321"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562193"
 ---
 # <a name="defaultname-element-visual-studio-templates"></a>DefaultName 요소 (Visual Studio 템플릿)
 만들 때 프로젝트 또는 항목에 대 한 Visual Studio 프로젝트 시스템에서 생성 하는 이름을 지정 합니다.  
@@ -66,7 +65,7 @@ ms.locfileid: "39500321"
   
  프로젝트 시스템에서 프로젝트 또는 항목에 대 한 기본 이름을 생성 하지 않으려면 설정한 합니다 [ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md) 요소를 `False`입니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에 대 한 표준 항목 템플릿에 대 한 메타 데이터를 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 클래스입니다.  
   
 ```  
@@ -85,6 +84,6 @@ ms.locfileid: "39500321"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)   
  [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

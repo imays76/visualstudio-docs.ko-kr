@@ -18,15 +18,15 @@ author: TerryGLee
 ms.author: tglee
 manager: douge
 ms.workload: office
-ms.openlocfilehash: e79442ea42583f326f9cb59360777269c399b7a0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1d1b606d4416da10c329a7421378ea979a2fa4cf
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879300"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684693"
 ---
 # <a name="replaceable-parameters"></a>대체 가능 매개 변수
-  대체 가능 매개 변수 또는 *토큰*, 실제 값을 갖는 디자인 타임에 알려지지 않은 SharePoint 솔루션 항목에 대 한 값을 제공 하려면 프로젝트 파일 내에서 사용할 수 있습니다. 표준 비슷합니다 함수에서 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 템플릿 토큰입니다. 자세한 내용은 [템플릿 매개 변수](/visualstudio/ide/template-parameters)합니다.  
+  대체 가능 매개 변수 또는 *토큰*, 실제 값을 갖는 디자인 타임에 알려지지 않은 SharePoint 솔루션 항목에 대 한 값을 제공 하려면 프로젝트 파일 내에서 사용할 수 있습니다. 표준 비슷합니다 함수에서 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 템플릿 토큰입니다. 자세한 내용은 [템플릿 매개 변수](../ide/template-parameters.md)합니다.  
   
 ## <a name="token-format"></a>토큰 형식
  토큰 시작 및 달러 기호 ($) 문자로 끝나야 합니다. 배포에서 사용 되는 모든 토큰 값으로 대체 됩니다 실제 프로젝트는 SharePoint 솔루션 패키지를 패키지화 하는 경우 (*.wsp* 파일). 예를 들어, 토큰 **$SharePoint.Package.Name$** "테스트 SharePoint 패키지" 문자열을 해결할 수 있습니다.  
@@ -109,6 +109,5 @@ ms.locfileid: "49879300"
   
  대상에 직접 확장을 추가할 수 있습니다 (*.targets*) 파일입니다. 그러나 뿐만 아니라 확장 변경 로컬 시스템에 패키지 하는 모든 SharePoint 프로젝트 확장명 목록에 추가 사용자 고유의 합니다. 시스템에서 유일한 개발자 또는 대부분의 프로젝트에 필요한 경우에이 확장 편리할 수 있습니다. 그러나 시스템 관련 인이 방법은 이식 가능 하지 않습니다.이 고 따라서 것이 좋습니다 때문에 추가한 확장 프로젝트 파일에 대신 합니다.  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  [SharePoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)  
-  

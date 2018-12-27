@@ -15,21 +15,21 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio], custom properties
 - _AssemblyLocation property
 - _AssemblyName property
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 23d0aa3b065a05b1c85b54e7889c4fe1bac4af7a
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 9fcd250f75e21d24409bb7b17764d9d18e7d6c7b
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671523"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441446"
 ---
 # <a name="custom-document-properties-overview"></a>사용자 지정 문서 속성 개요
 
-Visual Studio 프로젝트의 문서에 두 개의 사용자 지정 속성을 추가 하는 문서 수준 프로젝트를 빌드할 때: \_AssemblyLocation 및 \_AssemblyName 합니다. 사용자가 문서를 열면, 이러한 사용자 지정 문서 속성에 대 한 Microsoft Office 응용 프로그램 확인 합니다. 문서에 존재 하는 경우 응용 프로그램이 로드 된 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], 사용자 지정을 시작 하는 합니다. 자세한 내용은 [Visual Studio에서 아키텍처의 Office 솔루션](../vsto/architecture-of-office-solutions-in-visual-studio.md)합니다.
+문서 수준 프로젝트를 빌드할 때 Visual Studio 프로젝트의 문서에 두 개의 사용자 지정 속성을 추가 합니다. \_AssemblyLocation 및 \_AssemblyName 합니다. 사용자가 문서를 열면, 이러한 사용자 지정 문서 속성에 대 한 Microsoft Office 응용 프로그램 확인 합니다. 문서에 존재 하는 경우 응용 프로그램이 로드 된 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], 사용자 지정을 시작 하는 합니다. 자세한 내용은 [Visual Studio에서 아키텍처의 Office 솔루션](../vsto/architecture-of-office-solutions-in-visual-studio.md)합니다.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
@@ -53,7 +53,7 @@ Visual Studio 프로젝트의 문서에 두 개의 사용자 지정 속성을 �
 
   *solutionid 특성이 있으며,* guid는 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 솔루션 식별을 위해 사용 합니다. 합니다 *solutionid 특성이 있으며,* 프로젝트를 빌드할 때 자동으로 생성 됩니다. 합니다 **vstolocal** 용어를 나타냅니다는 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 문서와 동일한 폴더에서 어셈블리를 로드할 수 해야 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio에서 Office 솔루션의 아키텍처](../vsto/architecture-of-office-solutions-in-visual-studio.md)
 - [문서 수준 사용자 지정 아키텍처](../vsto/architecture-of-document-level-customizations.md)

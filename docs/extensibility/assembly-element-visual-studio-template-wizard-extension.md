@@ -2,9 +2,8 @@
 title: Assembly 요소 (Visual Studio 템플릿 마법사 확장명) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Assembly
 helpviewer_keywords:
@@ -16,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9fa0728be191086ba84de86110deea122316466f
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 829ba0fd25494affb2a8bf7e59c31361cbc9dc4b
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153859"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562024"
 ---
 # <a name="assembly-element-visual-studio-template-wizard-extension"></a>Assembly 요소 (Visual Studio 템플릿 마법사 확장명)
 이름 또는 구현 하는 어셈블리의 강력한 이름을 지정 합니다 `IWizard` 인터페이스입니다.  
@@ -54,12 +53,12 @@ ms.locfileid: "39153859"
 ## <a name="text-value"></a>텍스트 값  
  텍스트 값은 필수입니다.  
   
- 구현 하는 어셈블리를 지정 하는이 텍스트는 `IWizard` 인터페이스입니다. 전체 어셈블리 이름으로이 어셈블리 이름을 지정 해야 합니다. 예를 들어, `MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null`을 입력합니다.  
+ 구현 하는 어셈블리를 지정 하는이 텍스트는 `IWizard` 인터페이스입니다. 전체 어셈블리 이름으로이 어셈블리 이름을 지정 해야 합니다. 예를 들어 `MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null`과 같은 형식입니다.  
   
 ## <a name="remarks"></a>설명  
  `Assembly`은 `WizardExtension`의 필수 자식 요소입니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에 대 한 표준 프로젝트 템플릿에 대 한 메타 데이터는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Windows 응용 프로그램입니다.  
   
 ```  
@@ -90,7 +89,7 @@ ms.locfileid: "39153859"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)   
  [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)   
  [방법: 프로젝트 템플릿에 마법사 사용](../extensibility/how-to-use-wizards-with-project-templates.md)

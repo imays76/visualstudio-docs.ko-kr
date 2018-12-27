@@ -2,9 +2,8 @@
 title: WizardExtension 요소 (Visual Studio 템플릿) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#WizardExtension
 helpviewer_keywords:
@@ -16,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5544f0d97fec3ae0b3102ed02c284b9c22a98b54
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c12a0e0e1bcccee936a0a324d03f0251d6c1a083
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31144868"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561151"
 ---
 # <a name="wizardextension-element-visual-studio-templates"></a>WizardExtension 요소(Visual Studio 템플릿)
-템플릿 마법사 사용자 지정 하기 위한 등록 요소를 포함 합니다.  
+템플릿 마법사를 사용자 지정에 대 한 등록 요소를 포함 합니다.  
   
  \<VSTemplate>  
  ...  
@@ -49,8 +48,8 @@ ms.locfileid: "31144868"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[어셈블리](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|필수적 요소입니다.<br /><br /> 이름 또는 전역 어셈블리 캐시에 표시 되는 어셈블리의 강력한 이름을 지정 합니다. 하나 이상 있어야 `Assembly` 요소에는 `WizardExtension` 요소입니다.|  
-|[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|필수적 요소입니다.<br /><br /> 구현 하는 클래스의 정규화 된 이름을 `IWizard` 인터페이스입니다. 하나 이상 있어야 `FullClassName` 요소에는 `WizardExtension` 요소입니다.|  
+|[어셈블리](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|필수적 요소입니다.<br /><br /> 이름 또는 전역 어셈블리 캐시에 표시 되는 어셈블리의 강력한 이름을 지정 합니다. 적어도 하나 있어야 `Assembly` 요소에는 `WizardExtension` 요소입니다.|  
+|[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|필수적 요소입니다.<br /><br /> 구현 하는 클래스의 정규화 된 이름을 `IWizard` 인터페이스입니다. 적어도 하나 있어야 `FullClassName` 요소에는 `WizardExtension` 요소입니다.|  
   
 ### <a name="parent-elements"></a>부모 요소  
   

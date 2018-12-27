@@ -2,9 +2,8 @@
 title: SupportsLanguageDropDown 요소 (Visual Studio 템플릿) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#SupportsLanguageDropDown
 helpviewer_keywords:
@@ -16,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b02dcf9b54cfec3dcccca62f9529291e01a912f6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 92043550d9318fc5de70d14bed12b110d3ef2e26
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138830"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562128"
 ---
 # <a name="supportslanguagedropdown-element-visual-studio-templates"></a>SupportsLanguageDropDown 요소(Visual Studio 템플릿)
-웹 항목 템플릿에 여러 언어에 대해 동일 여부 및 여부를 지정 된 **언어** 옵션이 설정 되었는지는 **새 항목 추가** 대화 상자.  
+웹 항목 템플릿이 적용 되는 여러 언어에 대해 동일한 여부를 지정 합니다 **언어** 옵션이 설정 되었는지는 **새 항목 추가** 대화 상자.  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -54,17 +53,17 @@ ms.locfileid: "31138830"
 ## <a name="text-value"></a>텍스트 값  
  텍스트 값은 필수입니다.  
   
- 텍스트 중 하나 여야 합니다 `true` 또는 `false`한다는 표시 이므로 여부는 **언어** 옵션은 사용할 수는 **새 항목 추가** 대화 상자.  
+ 텍스트 여야 `true` 또는 `false`나타내는 여부는 **언어** 옵션에서 사용할 수는 **새 항목 추가** 대화 상자.  
   
 ## <a name="remarks"></a>설명  
  `SupportsLanguageDropDown`는 선택적 요소입니다. 기본값은 `false`입니다.  
   
  `SupportsLanguageDropDown` 요소는 웹 항목 템플릿을 사용할 수 있습니다.  
   
- 이 요소에 대 한 값으로 설정 되 면 `true`, 항목 템플릿에 모든 프로그래밍 언어에 대해 동일 및 **언어** 에서 옵션을 사용할 수는 **새 항목 추가** 대화 상자. 이 옵션을 사용 하는 서식 파일에서 만들려는 새 항목의 프로그래밍 언어를 선택할 수 있습니다.  
+ 이 요소의 값 설정 된 경우 `true`, 항목 템플릿에 모든 프로그래밍 언어에 대해 동일 하며 **언어** 옵션은 사용할 수를 **새 항목 추가** 대화 상자. 이 옵션을 사용 하면 템플릿에서 만들려고 할 수 있는 새 항목의 프로그래밍 언어를 선택할 수 있습니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제에서는 표시 하도록 지정 된 **언어** 옵션 드롭다운입니다.  
+ 다음 예제에서는 표시 하도록 지정 합니다 **언어** 옵션 드롭다운 합니다.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Project"  

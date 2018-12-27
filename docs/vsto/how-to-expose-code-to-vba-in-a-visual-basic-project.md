@@ -14,17 +14,17 @@ helpviewer_keywords:
 - Visual Basic [Office development in Visual Studio], exposing code to VBA
 - exposing code to VBA
 - host items [Office development in Visual Studio], exposing code to VBA
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7e4bc9f4227c11f8e34838a2785b27da62a0a6b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 43308e73d00f163b27a4dbe20dc9f0cbb656c4ba
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839650"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648641"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>방법: Visual Basic 프로젝트에서 VBA로 코드 노출
   코드에 노출할 수 있습니다는 [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] 두 가지 유형의 서로 상호 작용 하는 코드를 원하는 경우 Applications (VBA) 코드에 대 한 Visual basic 프로젝트입니다.  
@@ -39,12 +39,12 @@ ms.locfileid: "49839650"
   
 - [호스트 항목 클래스에 없는 코드 노출](#NonHostItem)  
   
-  ![비디오 링크](../vsto/media/playvideo.gif "비디오 링크") 관련된 비디오 데모를 참조 하세요. [어떻게 수행 할까요 호출 VSTO 코드 VBA에서?](http://go.microsoft.com/fwlink/?LinkId=136757)합니다.  
+  ![비디오 링크](../vsto/media/playvideo.gif "비디오 링크") 관련된 비디오 데모를 참조 하세요. [어떻게 할까요? VBA에서 VSTO 코드를 호출할? ](http://go.microsoft.com/fwlink/?LinkId=136757).  
   
 ##  <a name="HostItemCode"></a> 호스트 항목 클래스에 코드 노출  
  호스트 항목 클래스에서 Visual Basic 코드를 호출 하는 VBA 코드를 사용 하도록 설정 하려면 설정 합니다 **EnableVbaCallers** 호스트 항목의 속성 **True**합니다.  
   
- 호스트 항목 클래스의 메서드를 노출 하 여 VBA에서 호출 하는 방법을 보여 주는 연습을 참조 하세요 [연습: VBA에서 Visual Basic 프로젝트에서 코드를 호출할](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)합니다. 호스트 항목에 대 한 자세한 내용은 참조 하세요. [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)합니다.  
+ 호스트 항목 클래스의 메서드를 노출 하 여 VBA에서 호출 하는 방법을 보여 주는 연습을 참조 하세요. [연습: Visual Basic 프로젝트에서 VBA에서 코드를 호출할](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)합니다. 호스트 항목에 대 한 자세한 내용은 참조 하세요. [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)합니다.  
   
 #### <a name="to-expose-code-in-a-host-item-to-vba"></a>VBA에 호스트 항목의 코드 노출  
   
@@ -120,7 +120,7 @@ ms.locfileid: "49839650"
   
 9. 프로젝트를 빌드합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Office 솔루션을 만들고 디자인](../vsto/designing-and-creating-office-solutions.md)   
  [VBA 및 문서 수준 사용자 지정 결합](../vsto/combining-vba-and-document-level-customizations.md)   

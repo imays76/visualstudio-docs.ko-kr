@@ -2,9 +2,8 @@
 title: CustomDataSignature 요소 (Visual Studio 템플릿) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - <CustomDataSignature> Element (Visual Studio Templates)
 - CustomDataSignature Element (Visual Studio Templates)
@@ -14,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2f32c90adf1732cac1542935a8a6ce2da983c35
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: eddff64680dd41637f78f33c46fe78f32bbc3a85
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500646"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561319"
 ---
 # <a name="customdatasignature-element-visual-studio-templates"></a>CustomDataSignature 요소 (Visual Studio 템플릿)
 사용자 지정 데이터를 찾을 텍스트 서명을 지정 합니다.  
@@ -57,6 +56,6 @@ ms.locfileid: "39500646"
 ## <a name="remarks"></a>설명  
  `CustomDataSignature`는 선택적 요소입니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)   
  [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

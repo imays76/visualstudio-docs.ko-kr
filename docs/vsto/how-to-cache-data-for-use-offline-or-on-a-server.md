@@ -15,17 +15,17 @@ helpviewer_keywords:
 - offline data [Office development in Visual Studio]
 - data [Office development in Visual Studio], caching
 - data caching [Office development in Visual Studio], offline use
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a53b3539d71383d4fad95838250380c5849e8c5b
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: e5c6b0155f2fbfd50fd4234bae28d69d1e83416a
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254214"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647099"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>방법: 오프 라인 이나 서버에서 사용 하기 위해 데이터 캐시
   표시할 수 있습니다 문서에서 캐시할 데이터 항목을 사용할 수 있도록 오프 라인입니다. 또한 따라서 데이터에 대 한 문서에서 문서를 서버에 저장 된 경우 다른 코드를 조작할 수를 합니다.  
@@ -62,9 +62,9 @@ ms.locfileid: "35254214"
   
 4.  에 **속성** 창에서 합니다 **한정자** 속성을 **공용** (하며 기본값은 **내부**).  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [데이터 캐시](../vsto/caching-data.md)   
- [방법: 프로그래밍 방식으로 Office 문서에서 데이터 소스를 캐싱](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)   
+ [방법: Office 문서에서 데이터 원본을 프로그래밍 방식으로 캐시](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)   
  [방법: 암호로 보호 된 문서의 데이터 캐시](../vsto/how-to-cache-data-in-a-password-protected-document.md)   
  [서버에 있는 문서의 데이터에 액세스](../vsto/accessing-data-in-documents-on-the-server.md)   
  [데이터를 저장 합니다.](/visualstudio/data-tools/saving-data)  

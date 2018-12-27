@@ -2,9 +2,8 @@
 title: 요소 (Visual Studio 템플릿)를 참조 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#References
 helpviewer_keywords:
@@ -16,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24b1e29faf2a322bf8dd40d48622b3e2a0c8da65
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: fa4b760f9762c07ede4a21dbb37d00ef9f84dd59
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639164"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561985"
 ---
 # <a name="references-element-visual-studio-templates"></a>References 요소 (Visual Studio 템플릿)
 서식 파일 프로젝트에 추가 하는 어셈블리 참조를 그룹화 합니다.  
@@ -63,7 +62,7 @@ ms.locfileid: "39639164"
   
  `Reference` 및 `References` 요소에만 사용할 수 있습니다 *.vstemplate* 파일을 `Type` 특성의 값 `Item`합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제는 `TemplateContent` 항목 템플릿의 요소입니다. 이 XML에 대 한 참조를 추가 합니다 *System.dll* 하 고 *System.Data.dll* 어셈블리입니다.  
   
 ```xml  
@@ -84,6 +83,6 @@ ms.locfileid: "39639164"
 </TemplateContent>  
 ```  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)   
  [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

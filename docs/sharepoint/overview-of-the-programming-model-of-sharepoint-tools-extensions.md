@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 82309d00d45ab6ac801297a55371cf9be5620440
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8417600d379312304a05d0e4a1ddfc49637ae0e9
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829484"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684917"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>SharePoint의 프로그래밍 모델 개요 도구 확장
   Visual Studio에서 SharePoint 도구의 확장을 만드는 경우 SharePoint 도구에서 노출하는 확장성 인터페이스를 하나 이상 구현하여 시작합니다. 대부분의 경우 SharePoint 도구에서 제공하는 다른 형식을 사용하여 확장에서 기능도 구현합니다. 일부 시나리오에서는 Visual Studio 및 SharePoint에서 제공하는 다른 개체 모델의 형식을 사용할 수도 있습니다. 각 개체 모델의 용도 이해 하 고 SharePoint 도구의 확장을 만들려면 서로 사용 하는 방법을 알고 있어야 합니다.  
@@ -97,7 +97,7 @@ ms.locfileid: "49829484"
 
  이 개체 모델은 Visual Studio SDK에 포함된 어셈블리 집합에서 정의됩니다. 이 개체 모델의 주 어셈블리의 일부를 포함 *Microsoft.VisualStudio.Shell.11.0.dll*하십시오 *Microsoft.VisualStudio.Shell.Interop.dll*, 및  *Microsoft.VisualStudio.OLE.Interop.dll*합니다.  
 
- 통합 개체 모델에 대 한 자세한 내용은 참조 하세요. [자동화 모델 개요](/visualstudio/extensibility/internals/automation-model-overview) 하 고 [Visual Studio SDK 참조](/visualstudio/extensibility/visual-studio-sdk-reference)합니다.  
+ 통합 개체 모델에 대 한 자세한 내용은 참조 하세요. [자동화 모델 개요](../extensibility/internals/automation-model-overview.md) 하 고 [Visual Studio SDK 참조](../extensibility/visual-studio-sdk-reference.md)합니다.  
 
 ### <a name="sharepoint-object-models"></a>SharePoint 개체 모델
  SharePoint 도구 확장에서는 SharePoint API를 사용하여 SharePoint 사이트를 수정하거나 SharePoint 사이트에서 데이터를 검색할 수 있습니다. [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] 및 [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]에서는 두 가지 개체 모델인 서버 개체 모델과 클라이언트 개체 모델을 제공합니다.  
@@ -109,8 +109,7 @@ ms.locfileid: "49829484"
 |서버 개체 모델|서버 개체 모델을 사용하면 [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] 및 [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]에 표시되는 모든 기능을 프로그래밍 방식으로 액세스할 수 있습니다. 이 개체 모델은 SharePoint 서버에서 실행되는 SharePoint 솔루션에 사용됩니다. 이 개체 모델의 대부분에 정의 되어는 *Microsoft.SharePoint.dll* 어셈블리입니다. 서버 개체 모델에 대 한 자세한 내용은 참조 하세요. [SharePoint Foundation Server 쪽 개체 모델을 사용 하 여](http://go.microsoft.com/fwlink/?LinkId=177796)입니다.|  
 |클라이언트 개체 모델|클라이언트 개체 모델은 원격 클라이언트나 서버의 SharePoint 데이터와 상호 작용하는 데 사용할 수 있는 서버 개체 모델의 하위 집합입니다. 이 모델은 일반적인 작업을 수행하기 위해 실행해야 하는 왕복 수를 최소화하도록 디자인되었습니다. 대부분의 클라이언트 개체 모델에 정의 되어는 *대부분 Microsoft.SharePoint.Client.dll* 하 고 *Microsoft.SharePoint.Client.Runtime.dll* 어셈블리입니다. 클라이언트 개체 모델에 대 한 자세한 내용은 참조 하세요. [관리 클라이언트 개체 모델](http://go.microsoft.com/fwlink/?LinkId=177797)합니다.|  
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  [Visual Studio에서 SharePoint 도구 확장](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)   
  [SharePoint 개체 모델 호출](../sharepoint/calling-into-the-sharepoint-object-models.md)   
  [SharePoint 프로젝트 서비스 사용](../sharepoint/using-the-sharepoint-project-service.md)  
-

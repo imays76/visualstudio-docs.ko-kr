@@ -2,9 +2,8 @@
 title: Assembly 요소 (Visual Studio 템플릿) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Assembly
 helpviewer_keywords:
@@ -16,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 195faf23ecb2fca019b4948b3150ab6f9c00f5ec
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 2d2c1482f419153d14ad2d319f4581b1e14de7c6
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155466"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561070"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Assembly 요소 (Visual Studio 템플릿)
 서식 파일 프로젝트에 해당 어셈블리 참조를 추가 하는 어셈블리에 대 한 정보를 지정 합니다.  
@@ -58,7 +57,7 @@ ms.locfileid: "39155466"
   
  이 텍스트는 항목 템플릿이 인스턴스화될 때 프로젝트에 추가할 어셈블리를 지정 합니다. 다음 방법 중 하나에서이 어셈블리 이름을 지정 해야 합니다.  
   
--   전체 어셈블리 이름입니다. 예를 들어:  
+-   전체 어셈블리 이름입니다. 예를 들면 다음과 같습니다.  
   
     ```  
     <Assembly>  
@@ -66,7 +65,7 @@ ms.locfileid: "39155466"
     </Assembly>  
     ```  
   
--   단순한 텍스트 참조 합니다. 예를 들어:  
+-   단순한 텍스트 참조 합니다. 예를 들면 다음과 같습니다.  
   
     ```  
     <Assembly> System </Assembly>  
@@ -77,7 +76,7 @@ ms.locfileid: "39155466"
   
  `Reference`, `References,` 및 `Assembly` 요소에만 사용할 수 있습니다 *.vstemplate* 파일을 `Type` 특성의 값 `Item`합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제는 `TemplateContent` 항목 템플릿의 요소입니다. 이 XML에 대 한 참조를 추가 합니다 *System.dll* 하 고 *System.Data.dll* 어셈블리입니다.  
   
 ```  
@@ -98,6 +97,6 @@ ms.locfileid: "39155466"
 </TemplateContent>  
 ```  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)   
  [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

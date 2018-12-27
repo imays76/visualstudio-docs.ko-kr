@@ -2,9 +2,8 @@
 title: SupportsMasterPage 요소 (Visual Studio 템플릿) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#SupportsMasterPage
 helpviewer_keywords:
@@ -16,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94d7db9c00e75b255f5cfe1486b45a5d9460faac
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8c3eb9a421e6a2678405bcedc95d835990c3a7d9
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138436"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561306"
 ---
 # <a name="supportsmasterpage-element-visual-studio-templates"></a>SupportsMasterPage 요소(Visual Studio 템플릿)
-지정 여부는 **마스터 페이지 선택** 확인란이 활성화는 **새 항목 추가** 대화 상자.  
+지정 여부는 **마스터 페이지 선택** 확인란이 활성화 합니다 **새 항목 추가** 대화 상자.  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -49,12 +48,12 @@ ms.locfileid: "31138436"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|서식 파일을 분류 하 고 표시 되는 방식을 정의 하는 데이터를 지정 된 **새 프로젝트** 또는 **새 항목** 대화 상자.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|서식 파일을 분류 하 고 표시 하는 방법을 정의 하는 데이터를 지정 합니다 **새 프로젝트** 또는 **새 항목** 대화 상자.|  
   
 ## <a name="text-value"></a>텍스트 값  
  텍스트 값은 필수입니다.  
   
- 텍스트 중 하나 여야 합니다 `true` 또는 `false`한다는 표시 이므로 여부는 **마스터 페이지 선택** 확인란이 활성화는 **새 항목 추가** 대화 상자.  
+ 텍스트 여야 `true` 또는 `false`나타내는 여부는 **마스터 페이지 선택** 확인란이 활성화를 **새 항목 추가** 대화 상자.  
   
 ## <a name="remarks"></a>설명  
  `SupportsMasterPage`는 선택적 요소입니다. 기본값은 `false`입니다.  
@@ -62,7 +61,7 @@ ms.locfileid: "31138436"
  `SupportsMasterPage` 요소는 웹 항목 템플릿을 사용할 수 있습니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제에서는 마스터 페이지에 대 한 지원이 포함 된 웹 프로젝트에 대 한 메타 데이터를 보여 줍니다.  
+ 다음 예에서는 마스터 페이지에 대 한 지원을 포함 하는 웹 프로젝트에 대 한 메타 데이터를 보여 줍니다.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Project"  

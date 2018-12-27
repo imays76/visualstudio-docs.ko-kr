@@ -11,17 +11,17 @@ dev_langs:
 helpviewer_keywords:
 - data [Office development in Visual Studio], walkthroughs
 - walkthroughs [Office development in Visual Studio], data
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 35dbc38bf4e0873e9f3fb0fc1bf5c0525e56a61e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b56e17ca04d4c712058e20bd4f644b80e47cd2f7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674836"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647312"
 ---
 # <a name="data-in-office-solutions-walkthroughs"></a>에서 데이터 Office 솔루션 연습
   다음 연습에서는 Microsoft Office Word 및 Microsoft Office Excel용 문서 수준 사용자 지정 및 VSTO 추가 기능 데이터로 작업하는 방법을 보여 줍니다.  
@@ -49,19 +49,19 @@ ms.locfileid: "35674836"
  Word 문서의 콘텐츠 컨트롤을 문서에 저장된 XML 데이터에 바인딩하는 방법을 보여 줍니다.  
   
 ## <a name="cache-data-in-document-level-solutions"></a>문서 수준 솔루션의 데이터 캐시  
- [연습: 캐시 된 데이터 집합을 사용 하 여 마스터-세부 관계 만들기](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)  
+ [연습: 캐시 된 데이터 집합을 사용 하 여 마스터-세부 관계를 만들려면](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)  
  워크시트에서 마스터/세부 관계를 만들고 오프라인에서 솔루션을 사용할 수 있도록 데이터를 캐시하는 방법을 보여 줍니다.  
   
- [연습: 서버의 통합 문서에 데이터를 삽입 합니다.](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)  
+ [연습: 서버에서 통합 문서에 데이터 삽입](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)  
  Excel을 시작하지 않고 Microsoft Office Excel 통합 문서로 캐시되는 데이터 집합에 데이터를 삽입하는 방법을 보여 줍니다.  
   
- [연습: 서버의 통합 문서에서 캐시 된 데이터를 검색 합니다.](../vsto/walkthrough-retrieving-cached-data-from-a-workbook-on-a-server.md)  
+ [연습: 서버에서 통합 문서에서 캐시 된 데이터를 검색 합니다.](../vsto/walkthrough-retrieving-cached-data-from-a-workbook-on-a-server.md)  
  Excel을 시작하지 않고 Microsoft Office Excel 통합 문서에 캐시되는 데이터 집합에서 데이터를 검색하는 방법을 보여 줍니다.  
   
- [연습: 서버의 통합 문서에서 캐시 된 데이터를 변경 합니다.](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)  
+ [연습: 서버에서 통합 문서에서 캐시 된 데이터를 변경 합니다.](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)  
  Excel을 시작하지 않고 Microsoft Office Excel 통합 문서에 캐시되는 데이터 집합을 수정하는 방법을 보여 줍니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Word를 사용 하 여 연습](../vsto/walkthroughs-using-word.md)   
  [Excel을 사용 하 여 연습](../vsto/walkthroughs-using-excel.md)   
  [Office UI 사용자 지정 연습](../vsto/office-ui-customization-walkthroughs.md)   

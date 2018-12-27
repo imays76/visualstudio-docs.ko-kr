@@ -2,9 +2,8 @@
 title: Project 요소 (Visual Studio 템플릿) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Project
 helpviewer_keywords:
@@ -16,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 464f6498ccf06f5087c0fa6b12a456082a36c2bd
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 19374e37f295b6d344b2c0f3991109371b1f4454
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639141"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561777"
 ---
 # <a name="project-element-visual-studio-templates"></a>Project 요소 (Visual Studio 템플릿)
 파일 또는 프로젝트에 추가할 디렉터리를 지정 합니다.  
@@ -76,7 +75,7 @@ ms.locfileid: "39639141"
   
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 사용자가 입력 한 이름을 기반으로 프로젝트 파일 이름을 자동으로 바뀝니다 합니다 **새 프로젝트** 대화 상자. 사용 된 `TargetFileName` 템플릿을 사용 하 여 만든 프로젝트 파일에 대 한 대체 파일 이름을 제공 하려는 경우 특성입니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 프로젝트 템플릿에 대 한 메타 데이터는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 응용 프로그램입니다.  
   
 ```  
@@ -103,7 +102,7 @@ ms.locfileid: "39639141"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)   
  [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)   
  [ProjectItem 요소 (Visual Studio 프로젝트 템플릿)](../extensibility/projectitem-element-visual-studio-project-templates.md)   

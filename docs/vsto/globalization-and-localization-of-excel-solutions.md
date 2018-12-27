@@ -10,17 +10,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - globalization [Office development in Visual Studio], configuring
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ade59e757778ac7858732f5bf9880b9f88eacd69
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 4a305a74d24b8480732fb2132bf6c25f4f4f3d7a
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567463"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647781"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Excel 솔루션 전역화 및 지역화
   이 섹션에는 영어 이외의 Windows 언어 설정이 있는 컴퓨터에서 실행되는 Microsoft Office Excel 솔루션의 특수 고려 사항에 대한 정보를 포함합니다. Microsoft Office 솔루션을 전역화하고 지역화하는 대부분의 측면은 Visual Studio를 사용하여 다른 종류의 솔루션을 만들 때와 동일하게 발생합니다. 일반적인 정보를 참조 하세요 [Globalize 및 응용 프로그램을 지역화](/visualstudio/ide/globalizing-and-localizing-applications)합니다.  
@@ -39,7 +39,7 @@ ms.locfileid: "39567463"
   
  관리 코드에서 전달되거나 조작된 데이터에 영어(미국) 서식을 사용해도, Excel은 최종 사용자의 로캘 설정에 따라 데이터를 올바르게 해석합니다. 관리 코드는 데이터와 함께 로캘 ID 1033을 전달하기 때문에 Excel은 데이터의 서식을 올바르게 지정할 수 있으며, 이는 데이터가 영어(미국) 서식이므로 사용자의 로캘 설정과 일치하도록 다시 서식이 지정되어야 한다는 것을 나타냅니다.  
   
- 예를 들어 최종 사용자의 국가별 옵션이 독일어(독일) 로캘로 설정되어 있는 경우 최종 사용자는 2005년 6월 29일이 29.06.2005로 서식화될 것을 기대합니다. 그러나 솔루션이 날짜를 문자열로 Excel에 전달하는 경우 영어(미국) 서식에 따라 6/29/2005로 날짜를 서식화해야 합니다. 셀의 서식이 날짜 셀로 지정된 경우 Excel은 독일어(독일) 서식으로 날짜를 표시합니다.  
+ 예를 들어 최종 사용자의 국가별 옵션이 독일어 (독일) 로캘로 설정 있으면 기대 이러한 방식으로 형식을 지정할 날짜 2005 년 6 월 29 일: 29.06.2005 합니다. 그러나 솔루션이 날짜를 문자열로 Excel를 통과 하는 경우 영어 (미국) 서식에 따라 날짜를 포맷 해야 합니다. 2005 년 6 월 29 일입니다. 셀의 서식이 날짜 셀로 지정된 경우 Excel은 독일어(독일) 서식으로 날짜를 표시합니다.  
   
 ### <a name="pass-other-locale-ids-to-the-excel-object-model"></a>Excel 개체 모델에 다른 로캘 Id 전달  
  CLR(공용 언어 런타임)은 로캘 구분 데이터를 허용하는 Excel 개체 모델의 모든 메서드 및 속성으로 로캘 ID 1033을 자동으로 전달합니다. 모든 호출에 대해 이 동작을 자동으로 개체 모델로 변경하는 방법은 없습니다. 그러나 메서드를 호출하는 <xref:System.Type.InvokeMember%2A> 를 사용하고 로캘 ID를 메서드의 *culture* 매개 변수에 전달하여 다른 로캘 ID를 특정 메서드에 전달할 수 있습니다.  
@@ -80,7 +80,7 @@ Application.ActiveCell.Value2 = "05/12/04"
   
  Visual Studio의 Office 개발 도구를 사용하여 만든 솔루션에서 사용되고 COM interop를 통해 Excel로 전달되는 경우 날짜 서식이 en-US 스타일로 지정될 때 동일한 코드는 동일한 결과를 생성합니다.  
   
- 예를 들어:  
+ 예를 들면 다음과 같습니다.  
   
  [!code-vb[Trin_VstcoreCreatingExcel#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb#6)]
  [!code-csharp[Trin_VstcoreCreatingExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#6)]  
@@ -98,8 +98,8 @@ Application.ActiveCell.Value2 = "05/12/04"
 ### <a name="applications-that-use-external-data"></a>외부 데이터를 사용 하는 응용 프로그램  
  레거시 시스템에서 내보낸 쉼표로 구분된 값이 포함된 파일(CSV 파일)과 같이 외부 데이터를 사용하거나 열려 있는 모든 코드는 en-US 이외의 서식을 사용하여 이러한 파일을 내보내는 경우에도 영향을 받을 수 있습니다. 데이터베이스가 날짜를 문자열로 저장하지 않거나 이진 형식을 사용하는 작업만 수행하면 모든 값이 이진 형식이 되기 때문에 데이터베이스 액세스가 영향을 받지 않을 수 있습니다. 또한 Excel의 데이터를 사용하여 SQL 쿼리를 구성하는 경우 사용하는 함수에 따라 해당 쿼리가 en-US 형식인지 확인해야 합니다.  
   
-## <a name="see-also"></a>참고자료  
- [방법: Office 다국어 사용자 인터페이스 대상](../vsto/how-to-target-the-office-multilingual-user-interface.md)   
+## <a name="see-also"></a>참고 항목  
+ [방법: 대상 Office 다국어 사용자 인터페이스](../vsto/how-to-target-the-office-multilingual-user-interface.md)   
  [Office 솔루션을 만들고 디자인](../vsto/designing-and-creating-office-solutions.md)   
  [Office 솔루션의 선택적 매개 변수](../vsto/optional-parameters-in-office-solutions.md)  
   

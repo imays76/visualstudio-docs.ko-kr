@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c2cedf1a07307b8494e6a6b810e9590f347c9f1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 255f1b9f8a277f0d58437f8b0a8b1400a069c237
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847385"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561920"
 ---
 # <a name="debugger-user-interface-xslt"></a>디버거 사용자 인터페이스 (XSLT)
 
@@ -99,8 +99,8 @@ ms.locfileid: "49847385"
 
  자세한 내용은 [방법: 디스어셈블리 창을 사용 하 여](../debugger/how-to-use-the-disassembly-window.md)입니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [XSLT 디버그](../xml-tools/debugging-xslt.md)
-- [디버거 기본 사항](../debugger/getting-started-with-the-debugger.md)
+- [디버거 소개](../debugger/debugger-feature-tour.md)   
 - [Visual Studio에서 자동 및 지역 창에서 변수 검사](../debugger/autos-and-locals-windows.md)

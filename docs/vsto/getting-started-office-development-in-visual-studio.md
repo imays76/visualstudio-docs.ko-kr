@@ -1,6 +1,7 @@
 ---
 title: 시작 (Office 개발 Visual Studio에서)
-ms.custom: ''
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -10,17 +11,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Office development in Visual Studio, getting started
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5c7fb4888daecfe396ade51500cd156e49801850
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d415fc57cd4923fbe5c62f4f9758dac23a4fccc3
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675250"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647666"
 ---
 # <a name="get-started-office-development-in-visual-studio"></a>시작 (Office 개발 Visual Studio에서)
   이 섹션에는 Visual Studio에서 Microsoft Office 개발자 도구 사용을 시작하는 데 도움이 되는 항목이 포함되어 있습니다.  

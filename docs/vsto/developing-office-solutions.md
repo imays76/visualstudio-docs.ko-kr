@@ -12,17 +12,17 @@ helpviewer_keywords:
 - Office development in Visual Studio, about developing solutions
 - solutions [Office development in Visual Studio], developing
 - Office solutions [Office development in Visual Studio], developing
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a95c5f5767e227c35763cfaea1e3619093fffda3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ea6054ae0917413a4e862e5c6309492ce84deff2
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833072"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648854"
 ---
 # <a name="develop-office-solutions"></a>Office 솔루션 개발
   Visual Studio에서 Office 개발자 도구를 사용하여 프로젝트를 디자인하고 프로젝트 파일을 설정한 후 코드와 사용자 지정 UI(사용자 인터페이스)의 구현에 집중하기 시작할 수 있습니다.  
@@ -62,10 +62,10 @@ ms.locfileid: "49833072"
 |[Office의 스레딩 지원](../vsto/threading-support-in-office.md)|Office 솔루션에서 여러 스레드로 작업하는 방법에 대해 개괄적으로 설명합니다.|  
 |[Office 프로젝트의 내게 필요한 옵션](../vsto/accessibility-in-office-projects.md)|Office 솔루션에서 사용할 수 있는 내게 필요한 옵션 기능에 대해 설명합니다.|  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [방법: 사용자 지정 문서 속성 만들기 및 수정](../vsto/how-to-create-and-modify-custom-document-properties.md)   
- [방법: 읽기 가능 및 문서 속성에 쓰기](../vsto/how-to-read-from-and-write-to-document-properties.md)   
- [방법: Office 다국어 사용자 인터페이스 대상](../vsto/how-to-target-the-office-multilingual-user-interface.md)   
+ [방법: 읽기 및 문서 속성에 쓰기](../vsto/how-to-read-from-and-write-to-document-properties.md)   
+ [방법: 대상 Office 다국어 사용자 인터페이스](../vsto/how-to-target-the-office-multilingual-user-interface.md)   
  [연습: Excel 용 첫 VSTO 추가 기능에 만들기](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)   
  [연습: Excel 용 첫 문서 수준 사용자 지정 만들기](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)   
  [연습: 첫 번째 VSTO 추가 기능에 Outlook에 대 한 만들기](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)   

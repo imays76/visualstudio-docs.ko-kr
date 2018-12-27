@@ -17,17 +17,17 @@ helpviewer_keywords:
 - objects [Office development in Visual Studio], Office object models
 - Excel object model
 - Office object models
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8ca93cae45eed272b683275896efcf83229ca9a3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eb5b930df90f36395a22461ad0f26e82548afb6f
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880795"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647527"
 ---
 # <a name="excel-object-model-overview"></a>Excel 개체 모델 개요
   Microsoft Office Excel을 사용하는 솔루션을 개발하려면 Excel 개체 모델에서 제공하는 개체와 상호 작용할 수 있습니다. 이 항목에서는 가장 중요한 개체를 소개합니다.  
@@ -48,7 +48,7 @@ ms.locfileid: "49880795"
   
   이 항목에서는 Excel 개체 모델에 대한 간략한 개요를 제공합니다. 여기서 전체 Excel 개체 모델에 대 한 자세히 알아볼 수 있습니다 하는 리소스에 대 한 참조 [Excel 개체 모델 설명서 사용](#ExcelOMDocumentation)합니다.  
   
-  ![비디오 링크](../vsto/media/playvideo.gif "비디오 링크") 관련된 비디오 데모를 참조 하세요. [How do i: 사용 하 여 이벤트 처리기는 Excel 2007 추가 기능에서?](http://go.microsoft.com/fwlink/?LinkID=130291), 및 [거품형 차트 만들기 도형을 i: 사용 하 여 하는 방법 excel? ](http://go.microsoft.com/fwlink/?LinkID=130313).  
+  ![비디오 링크](../vsto/media/playvideo.gif "비디오 링크") 관련된 비디오 데모를 참조 하세요. [어떻게 할까요? 이벤트 처리기를 사용 하는 Excel 2007 추가 기능에서? ](http://go.microsoft.com/fwlink/?LinkID=130291), 및 [어떻게 할까요? 셰이프를 사용 하 여 Excel에서 거품형 차트를 만들 수 있습니까? ](http://go.microsoft.com/fwlink/?LinkID=130313).  
   
 ## <a name="access-objects-in-an-excel-project"></a>Excel 프로젝트의 개체에 액세스  
  Excel에 대 한 새 VSTO 추가 기능에 프로젝트를 만들 때 자동으로 만들어지고를 *ThisAddIn.vb* 하거나 *ThisAddIn.cs* 코드 파일. `Me.Application` 또는 `this.Application`을 사용하여 응용 프로그램 개체에 액세스할 수 있습니다.  
@@ -106,7 +106,7 @@ ms.locfileid: "49880795"
  Excel 개체 모델에 대한 자세한 내용은 Excel PIA(주 interop 어셈블리) 참조 및 VBA 개체 모델 참조를 참조할 수 있습니다.  
   
 ### <a name="primary-interop-assembly-reference"></a>주 interop 어셈블리 참조  
- Excel PIA 참조 설명서에서는 Excel에 대한 주 interop 어셈블리의 형식에 대해 설명합니다. 이 설명서는 다음 위치에서 사용할 수 있습니다: [Excel 2010 주 interop 어셈블리 참조](http://go.microsoft.com/fwlink/?LinkId=189585)합니다.  
+ Excel PIA 참조 설명서에서는 Excel에 대한 주 interop 어셈블리의 형식에 대해 설명합니다. 이 설명서는 다음 위치에서 제공 됩니다. [Excel 2010 주 interop 어셈블리 참조](http://go.microsoft.com/fwlink/?LinkId=189585)합니다.  
   
  클래스 및 인터페이스 간의 차이점에는 PIA, PIA의 이벤트 구현 방식 등 Excel PIA의 디자인에 대 한 자세한 내용은 참조 하세요. [클래스 및 Office 주 interop 어셈블리인터페이스에대한개요](http://go.microsoft.com/fwlink/?LinkId=189592).  
   
