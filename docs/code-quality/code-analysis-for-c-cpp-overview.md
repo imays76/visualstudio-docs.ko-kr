@@ -1,4 +1,4 @@
----
+﻿---
 title: C/C++용 코드 분석 개요
 ms.date: 04/28/2018
 ms.prod: visual-studio-dev15
@@ -56,11 +56,11 @@ C:\>cl /analyze Sample.cpp
 
 ## <a name="annotation-support"></a>주석 지원
 
-주석을 코드 분석의 정확성을 개선 합니다. 주석이 함수 매개 변수에서 사전 및 사후 조건에 대 한 추가 정보를 제공 및 반환 형식입니다. 자세한 내용은 참조 하세요. [방법: __analysis_assume를 사용 하 여 추가 코드 정보 지정](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)
+주석을 통해 코드 분석의 정확성을 개선 할 수 있습니다. 주석을 이용해 함수 매개변수나 반환 형식의 사전, 사후 조건에 대한 추가 정보를 제공할 수 있습니다. 자세한 내용은 [방법: __analysis_assume를 사용한 추가 코드 정보 지정](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)을 참조하세요.
 
 ## <a name="run-analysis-tool-as-part-of-check-in-policy"></a>체크 인 정책의 일부로 분석 도구를 실행 합니다.
 
-모든 소스 코드 체크 인 특정 정책을 충족 필요할 수도 있습니다. 특히, 최신 로컬 빌드 단계로 분석을 실행 하는지 확인 하려고 합니다. 코드 분석 체크 인 정책을 사용 하도록 설정 하는 방법에 대 한 자세한 내용은 참조 하세요. [만들기 및 사용 하 여 코드 분석 체크 인 정책](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+모든 소스 코드 체크인이 특정 정책을 충족하도록 요구할 수 있습니다. 특히, 최신 로컬 빌드 과정에서 분석이 실행되도록 할 수 있습니다. 코드 분석 체크인 정책을 사용하도록 설정하는 방법에 대한 자세한 내용은 [코드 분석 체크인 정책 만들고 사용하기](../code-quality/creating-and-using-code-analysis-check-in-policies.md)를 참조하세요.
 
 ## <a name="team-build-integration"></a>팀 빌드 통합
 
@@ -72,7 +72,7 @@ C:\>cl /analyze Sample.cpp
 - [연습: C/C++ 코드 결함 분석](walkthrough-analyzing-c-cpp-code-for-defects.md)
 - [C/C++용 코드 분석 경고](code-analysis-for-c-cpp-warnings.md)
 - [C++ Core 지침 검사기 사용](using-the-cpp-core-guidelines-checkers.md)
-- [C + + 핵심 지침 검사기 참조](code-analysis-for-cpp-corecheck.md)
+- [C++ Core 지침 검사기 참조](code-analysis-for-cpp-corecheck.md)
 - [규칙 집합을 사용하여 실행할 C++ 규칙 지정](using-rule-sets-to-specify-the-cpp-rules-to-run.md)
 - [코드 분석 도구를 사용한 드라이버 품질 분석](/windows-hardware/drivers/develop/analyzing-driver-quality-by-using-code-analysis-tools)
 - [드라이버 경고에 대한 코드 분석](/windows-hardware/drivers/devtest/prefast-for-drivers-warnings)
