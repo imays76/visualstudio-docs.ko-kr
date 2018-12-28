@@ -12,17 +12,17 @@ helpviewer_keywords:
 - actions panes [Office development in Visual Studio], control layout
 - controls [Office development in Visual Studio], layout on actions panes
 - smart documents [Office development in Visual Studio], control layout
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f523d56b189fb1517df7e22d18cd689e9300eff3
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 38f9e534fe213b766ea74c83604ddf1cafa1ac65
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255917"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647051"
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>방법: 작업 창에서 컨트롤 레이아웃 관리
   기본적으로 작업창 문서 또는 워크시트의 오른쪽에 도킹 그러나 왼쪽, 위쪽 이나 아래쪽에 도킹 될 수 있습니다. 여러 사용자 정의 컨트롤을 사용 하는 경우 작업 창에서 사용자 정의 컨트롤을 제대로 쌓는 코드를 작성할 수 있습니다. 자세한 내용은 [작업창 개요](../vsto/actions-pane-overview.md)합니다.  
@@ -39,7 +39,7 @@ ms.locfileid: "35255917"
   
 ## <a name="to-set-the-stack-order-of-the-actions-pane-controls"></a>작업 창 컨트롤 스택 순서를 설정 하려면  
   
-1.  여러 사용자 정의 컨트롤 또는 중첩 된 작업 창 컨트롤을 사용 하 여 작업 창을 포함 하는 Microsoft Office Word 용 문서 수준 프로젝트를 엽니다. 자세한 내용은 [방법: Word 문서에 작업창을 추가 하거나 Excel 통합 문서](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)합니다.  
+1.  여러 사용자 정의 컨트롤 또는 중첩 된 작업 창 컨트롤을 사용 하 여 작업 창을 포함 하는 Microsoft Office Word 용 문서 수준 프로젝트를 엽니다. 자세한 내용은 [방법: Excel 통합 문서 또는 Word 문서에 작업창 추가](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)합니다.  
   
 2.  마우스 오른쪽 단추로 클릭 **ThisDocument.cs** 하거나 **ThisDocument.vb** 에서 **솔루션 탐색기** 을 클릭 한 다음 **코드 보기**합니다.  
   
@@ -59,7 +59,7 @@ ms.locfileid: "35255917"
   
 6.  프로젝트를 실행 하 고 작업 창 컨트롤이 쌓이는 지 왼쪽에서 오른쪽 작업창은 문서의 맨 위에 있는 도킹 및 컨트롤 포개 집니다 위쪽에서 아래쪽으로 작업창은 문서의 오른쪽 아래에서 도킹 될 때를 확인 합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  [!code-csharp[Trin_VstcoreActionsPaneWord#29](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#29)]
  [!code-vb[Trin_VstcoreActionsPaneWord#29](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#29)]  
   
@@ -68,11 +68,11 @@ ms.locfileid: "35255917"
   
 -   여러 사용자 정의 컨트롤을 포함 하는 작업 창 또는 중첩 된 작업창을 사용 하 여 Word 문서 수준 프로젝트를 제어 합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [작업 창 개요](../vsto/actions-pane-overview.md)   
- [방법: Word 문서에 작업창을 추가 하거나 Excel 통합 문서](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
  [방법: Word 문서 또는 Excel 통합 문서에 작업 창 추가](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
- [연습: 작업창에서 문서로 텍스트 삽입](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)   
- [연습: 작업창에서 문서로 텍스트 삽입](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
+ [방법: Word 문서 또는 Excel 통합 문서에 작업 창 추가](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
+ [연습: 작업 창에서 문서로 텍스트 삽입](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)   
+ [연습: 작업 창에서 문서로 텍스트 삽입](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
   
   

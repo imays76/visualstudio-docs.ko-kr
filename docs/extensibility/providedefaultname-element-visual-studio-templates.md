@@ -2,9 +2,8 @@
 title: ProvideDefaultName 요소 (Visual Studio 템플릿) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProvideDefaultName
 helpviewer_keywords:
@@ -15,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a187df0e50a2948ab6f1ef3a0fffea651dca23b9
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 684eff17bbc655736c9913b43c717b636f4393b8
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636014"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561657"
 ---
 # <a name="providedefaultname-element-visual-studio-templates"></a>ProvideDefaultName 요소 (Visual Studio 템플릿)
 지정 여부는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로젝트 시스템의 템플릿에 대 한 기본 이름이 생성 됩니다는 **새 항목 추가** 또는 **새 프로젝트** 대화 상자.  
@@ -62,7 +61,7 @@ ms.locfileid: "39636014"
   
  사용 된 [DefaultName](../extensibility/defaultname-element-visual-studio-templates.md) 항목 또는 프로젝트의 기본 이름을 지정 하는 요소는 **새 항목 추가** 및 **새 프로젝트** 대화 상자. 때 값을 `ProvideDefaultName` 요소는 `true`, 생략은 `DefaultName` 프로젝트에 대 한 요소는 템플릿 이름, 즉, 값을 사용 하 여 대화 상자를 채웁니다를 [이름](../extensibility/name-element-visual-studio-templates.md) 요소.
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드 예제에서는 합니다 `ProvideDefaultName` 요소를 `false`입니다.  
   
 ```  
@@ -81,6 +80,6 @@ ms.locfileid: "39636014"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)   
  [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

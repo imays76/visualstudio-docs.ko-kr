@@ -16,17 +16,17 @@ helpviewer_keywords:
 - application-level add-ins [Office development in Visual Studio], extending Excel workbooks
 - controls [Office development in Visual Studio], adding at run time
 - HasVstoObject method
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 424b2cf8a6461ed0d60a1c16555c49c0ed8a0136
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eb1197d85f52c314eb9ec0a01ccd5069f9c43f39
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895784"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647821"
 ---
 # <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-runtime"></a>Word 문서 및 런타임에 VSTO 추가 기능에서 Excel 통합 문서 확장
   VSTO 추가 기능을 사용하여 다음과 같은 방법으로 Word 문서 및 Excel 통합 문서를 사용자 지정할 수 있습니다.  
@@ -39,7 +39,7 @@ ms.locfileid: "49895784"
   
   이 기능을 사용 하려면 런타임에 문서 또는 통합 문서를 확장 하는 개체를 생성 합니다.  
   
-  **적용 대상:** 이 문서의 정보는 다음 응용 프로그램에서 VSTO 추가 기능 프로젝트에 적용 됩니다: Excel 및 Word입니다. 자세한 내용은 [Office 응용 프로그램 및 프로젝트 형식으로 사용할 수 있는 기능](../vsto/features-available-by-office-application-and-project-type.md)합니다.  
+  **적용 대상:** 이 문서의 정보는 다음 응용 프로그램에서 VSTO 추가 기능 프로젝트에 적용 됩니다. Excel 및 Word입니다. 자세한 내용은 [Office 응용 프로그램 및 프로젝트 형식으로 사용할 수 있는 기능](../vsto/features-available-by-office-application-and-project-type.md)합니다.  
   
 ## <a name="generate-extended-objects-in-vsto-add-ins"></a>VSTO 추가 기능에서 확장된 개체를 생성 합니다.  
  *확장 개체* 는 Visual Studio Tools for Office 런타임에서 제공하는 형식의 인스턴스로, 기본적으로 Word 또는 Excel 개체 모델에 있는 개체( *네이티브 Office 개체*라고 함)에 기능을 추가합니다. Word 또는 Excel 개체에 대한 확장 개체를 생성하려면 `GetVstoObject` 메서드를 사용합니다. 처음으로 호출 하는 `GetVstoObject` 메서드는 지정 된 Word 또는 Excel 개체 지정된 된 개체를 확장 하는 새 개체를 반환 합니다. 메서드를 호출하고 동일한 Word 또는 Excel 개체를 지정할 때마다 동일한 확장 개체가 반환됩니다.  
@@ -123,7 +123,7 @@ ms.locfileid: "49895784"
   
  `HasVstoObject` 메서드는 지정된 Office 개체에 확장 개체가 있는 경우에만 코드를 실행하려는 경우 유용합니다. 예를 들어 Word VSTO 추가 기능을 처리 하는 경우는 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> 저장 되기 전에 문서를 관리 되는 컨트롤을 제거 하려면 사용 하 여 이벤트를 `HasVstoObject` 문서가 확장 되었는지 여부를 결정 하는 방법입니다. 문서 확장 되지 않은 경우 해당 컨트롤 관리 없습니다 및 이벤트 처리기는 문서에 컨트롤을 정리 하려고 하지 않고도 반환할 수 있습니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [VSTO 추가 기능 프로그래밍](../vsto/programming-vsto-add-ins.md)   
  [런타임에 Office 문서에 컨트롤 추가](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)   

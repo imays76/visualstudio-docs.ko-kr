@@ -17,12 +17,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5701044e20f2122199d9d0ca5558e453e6e5f72
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 84f17a71383b6f507b4ea274d8a5cf416ab5f55e
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906028"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739163"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Visual Studio SDK를 사용 하면 Visual Studio 기능을 확장 하거나 Visual Studio에 새 기능을 통합할 수 있습니다. Visual Studio Marketplace 뿐만 아니라 다른 사용자에 게 확장을 배포할 수 있습니다. 다음은 Visual Studio를 확장할 수 있는 몇 가지 방법입니다.  
@@ -76,10 +76,10 @@ Visual Studio SDK를 사용 하면 Visual Studio 기능을 확장 하거나 Visu
   
 -   [Visual Studio 확장](http://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [메뉴 명령을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-menu-command.md)   
  [방법: Visual Studio 2017로 확장성 프로젝트 마이그레이션](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)   
- [FAQ: VSPackage 확장으로 추가 기능 변환](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)   
+ [자주 묻는 질문(FAQ): 추가 기능을 VSPackage 확장으로 변환](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)   
  [관리 코드에서 다중 스레드 관리](../extensibility/managing-multiple-threads-in-managed-code.md)   
  [메뉴 및 명령 확장](../extensibility/extending-menus-and-commands.md)   
  [도구 모음에 명령 추가](../extensibility/adding-commands-to-toolbars.md)   
@@ -92,7 +92,7 @@ Visual Studio SDK를 사용 하면 Visual Studio 기능을 확장 하거나 Visu
  [Visual Studio의 다른 부분 확장](../extensibility/extending-other-parts-of-visual-studio.md)   
  [서비스 제공 및 사용](../extensibility/using-and-providing-services.md)   
  [Vspackage 관리](../extensibility/managing-vspackages.md)   
- [Visual Studio 격리 셸](../extensibility/visual-studio-isolated-shell.md)   
+ [Visual Studio 격리 셸](/visualstudio/extensibility/shell/visual-studio-isolated-shell)   
  [Visual Studio 확장 기능 제공](../extensibility/shipping-visual-studio-extensions.md)   
  [Visual Studio SDK 기본 사항](../extensibility/internals/inside-the-visual-studio-sdk.md)   
  [Visual Studio SDK에 대 한 지원](../extensibility/support-for-the-visual-studio-sdk.md)   

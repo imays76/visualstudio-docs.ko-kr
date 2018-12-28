@@ -1,6 +1,6 @@
 ---
-title: '방법: Visual C# 프로젝트에서 VBA로 코드 노출'
-ms.custom: ''
+title: '방법: VBA로 코드 노출 된 C# 프로젝트'
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -13,19 +13,19 @@ helpviewer_keywords:
 - VBA [Office development in Visual Studio], exposing code in document-level customizations
 - document-level customizations [Office development in Visual Studio], exposing code
 - exposing code to VBA
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f00f668c3eac9a39251d0a4e19f98ed597c373db
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1f0b3f004f6aebed6426238a081369c7d50e15f5
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873489"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648511"
 ---
-# <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>방법: Visual C# 프로젝트에서 VBA로 코드 노출
+# <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>방법: 시각적 개체에서 VBA로 코드 노출 C# 프로젝트
   두 가지 유형의 서로 상호 작용 하는 코드를 원하는 경우 Visual C# 프로젝트에서 Visual basic Applications (VBA) 코드에 대 한 코드를 노출할 수 있습니다.  
   
  Visual C# 프로세스는 Visual Basic 프로세스와 다릅니다. 자세한 내용은 [방법: Visual Basic 프로젝트에서 VBA로 코드 노출](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)합니다.  
@@ -35,7 +35,7 @@ ms.locfileid: "49873489"
 ## <a name="expose-code-in-a-visual-c-project"></a>Visual C# 프로젝트의 코드 노출  
  Visual C# 프로젝트에서 코드를 호출 하는 VBA 코드를 사용 하려면 COM에 노출 되므로 코드를 수정 하 고 설정 합니다 **ReferenceAssemblyFromVbaProject** 속성을 **True** 디자이너에서 합니다.  
   
- VBA에서 Visual C# 프로젝트에서 메서드를 호출 하는 방법을 보여 주는 연습을 참조 하세요 [연습: Visual C에서 vba의 코드를 호출 합니다.&#35; 프로젝트](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)합니다.  
+ 시각적 개체에서 메서드를 호출 하는 방법을 보여 주는 연습은 C# 에서 VBA 프로젝트, 참조 [연습: Visual C에서 vba의 코드를 호출할&#35; 프로젝트](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)합니다.  
   
 ### <a name="to-expose-code-in-a-visual-c-project-to-vba"></a>에 Visual C# 프로젝트에서 VBA로 코드 노출  
   
@@ -103,7 +103,7 @@ ms.locfileid: "49873489"
   
 12. 프로젝트를 빌드합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Office 솔루션을 만들고 디자인](../vsto/designing-and-creating-office-solutions.md)   
  [VBA 및 문서 수준 사용자 지정 결합](../vsto/combining-vba-and-document-level-customizations.md)   

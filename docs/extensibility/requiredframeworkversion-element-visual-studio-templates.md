@@ -2,9 +2,8 @@
 title: RequiredFrameworkVersion 요소 (Visual Studio 템플릿) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - <RequiredFrameworkVersion> (Visual Studio Templates)
 - RequiredFrameworkVersion (Visual Studio Templates)
@@ -14,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23538e8e00553322f4f04e50414a8b3ddbd73b91
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 4c219d2f929122163b49d51d5280c25490aaccb1
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39635923"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739788"
 ---
 # <a name="requiredframeworkversion-element-visual-studio-templates"></a>RequiredFrameworkVersion 요소 (Visual Studio 템플릿)
 
@@ -60,7 +59,7 @@ ms.locfileid: "39635923"
 
 `RequiredFrameworkVersion`는 선택적 요소입니다. 템플릿은 특정 최소 버전 (및 이상 버전 있는 경우)를 지원 하는 경우에이 요소를 사용 하 여.NET Framework의 합니다. 지정 하는 경우는 `RequiredFrameworkVersion` 요소 및 템플릿에 특정 최소 버전의.NET Framework를 지원 하지 않습니다 합니다 **대상 프레임 워크 버전** 드롭다운에는 적용 되지 않는 경우 표시 됩니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 표준에 대 한 메타 데이터를 보여 줍니다. [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 클래스 템플릿.
 
@@ -84,8 +83,8 @@ ms.locfileid: "39635923"
 
 이 예제에서는 서식 파일을 여는 데 필요한.NET Framework의 최소 버전 표시 `RequiredFrameworkVersion`,이 3.0 이라고 합니다. 이 템플릿을 사용 하 여 만든 프로젝트는.NET Framework 버전 3.0에서 대상으로 지정할 수 있습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
 - [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
-- [특정.NET Framework 버전 대상](../ide/targeting-a-specific-dotnet-framework-version.md)
+- [특정.NET Framework 버전 대상](../ide/visual-studio-multi-targeting-overview.md)

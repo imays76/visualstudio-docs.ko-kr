@@ -12,17 +12,17 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], populating with data
 - Web services [Office development in Visual Studio], populating documents
 - data [Office development in Visual Studio], adding to documents
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4ac901b524818086d6dbf23b7b55487054170b3e
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: fe69a35fb7f11eb649a45cd2d2238d1fb8e17ad1
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758544"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647038"
 ---
 # <a name="how-to-populate-documents-with-data-from-services"></a>방법: 서비스의 데이터로 문서 채우기
 
@@ -30,9 +30,9 @@ Windows Forms 프로젝트에서와 동일한 방식으로 Microsoft Office에 �
 
 [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
-다음 예제에서는 디자인 타임에 문서에 데이터 바인딩된 컨트롤을 추가하는 방법을 보여 줍니다. 런타임에 VSTO 추가 기능에서 데이터 바인딩된 컨트롤을 추가 하는 방법의 예제를 참조 하세요 [연습: VSTO 추가 기능 프로젝트의 서비스에서 데이터를 바인딩할](../vsto/walkthrough-binding-to-data-from-a-service-in-a-vsto-add-in-project.md)합니다.
+다음 예제에서는 디자인 타임에 문서에 데이터 바인딩된 컨트롤을 추가하는 방법을 보여 줍니다. 런타임에 VSTO 추가 기능에서 데이터 바인딩된 컨트롤을 추가 하는 방법의 예제를 참조 하세요. [연습: VSTO 추가 기능 프로젝트의 서비스에서 데이터를 바인딩할](../vsto/walkthrough-binding-to-data-from-a-service-in-a-vsto-add-in-project.md)합니다.
 
-![비디오 링크](../vsto/media/playvideo.gif "비디오 링크") 관련된 비디오 데모를 참조 하세요. [어떻게 상호 작용 할까요 웹 서비스를 사용 하 여 Microsoft Excel에서?](http://go.microsoft.com/fwlink/?LinkID=130284)합니다.
+![비디오 링크](../vsto/media/playvideo.gif "비디오 링크") 관련된 비디오 데모를 참조 하세요. [어떻게 할까요? Microsoft Excel에서 웹 서비스와 상호 작용? ](http://go.microsoft.com/fwlink/?LinkID=130284).
 
 ## <a name="to-populate-a-document-level-project-with-data-from-a-web-service"></a>웹 서비스에서 데이터를 사용 하 여 문서 수준 프로젝트를 채우려면
 
@@ -54,7 +54,7 @@ Windows Forms 프로젝트에서와 동일한 방식으로 Microsoft Office에 �
 
 프로젝트를 실행하면 컨트롤이 데이터 원본 첫 번째 레코드를 표시합니다. <xref:System.Windows.Forms.BindingSource>의 개체를 사용하여 통화 이벤트를 처리하여 레코드를 스크롤하게 할 수 있습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [Office 솔루션의 컨트롤에 데이터 바인딩](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [새 데이터 소스 추가](../data-tools/add-new-data-sources.md)

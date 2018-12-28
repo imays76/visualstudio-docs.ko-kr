@@ -36,17 +36,17 @@ helpviewer_keywords:
 - custom XML parts, content controls
 - templates [Office development in Visual Studio], content controls
 - BuildingBlockGalleryContentControl class
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 924f31ac38219453ae96fd573d968b18ce19c913
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: a4cb82609ef8f1a37379c1451e733e8b046313e2
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672901"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441524"
 ---
 # <a name="content-controls"></a>콘텐츠 컨트롤
   콘텐츠 컨트롤은 다음과 같은 기능이 있는 문서와 템플릿을 디자인하는 방법을 제공합니다.  
@@ -78,7 +78,7 @@ ms.locfileid: "50672901"
 >  Open XML 형식으로 저장 된 문서 에서만에서 콘텐츠 컨트롤을 사용할 수 있습니다. Word 97-2003 문서에 저장 된 문서에 콘텐츠 컨트롤을 사용할 수 없습니다 (*.doc*) 형식입니다.  
   
 ## <a name="types-of-content-controls"></a>콘텐츠 컨트롤 형식  
- 문서에 추가할 수 있는 9가지 형식의 콘텐츠 컨트롤이 있습니다. 대부분의 콘텐츠 컨트롤은 <xref:Microsoft.Office.Tools.Word> 네임스페이스에 해당 형식이 있습니다. 사용 가능한 콘텐츠 컨트롤 중 하나를 나타낼 수 있는 제네릭 <xref:Microsoft.Office.Tools.Word.ContentControl>을 사용할 수도 있습니다. 각 사용 가능한 콘텐츠 컨트롤을 사용 하는 방법을 보여 주는 연습을 참조 하세요 [연습: 콘텐츠 컨트롤을 사용 하 여 템플릿을 만드는](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)합니다.  
+ 문서에 추가할 수 있는 9가지 형식의 콘텐츠 컨트롤이 있습니다. 대부분의 콘텐츠 컨트롤은 <xref:Microsoft.Office.Tools.Word> 네임스페이스에 해당 형식이 있습니다. 사용 가능한 콘텐츠 컨트롤 중 하나를 나타낼 수 있는 제네릭 <xref:Microsoft.Office.Tools.Word.ContentControl>을 사용할 수도 있습니다. 각 사용 가능한 콘텐츠 컨트롤을 사용 하는 방법을 보여 주는 연습을 참조 하세요. [연습: 콘텐츠 컨트롤을 사용 하 여 템플릿을 만드는](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)합니다.  
   
 ### <a name="build-block-gallery"></a>블록 갤러리를 빌드  
  문서 블록 갤러리의 목록에서 선택할 수 있습니다 *문서 블록* 를 문서에 삽입 합니다. 문서 블록은 일반적인 표지, 서식이 지정된 표 또는 머리글과 같이 여러 번 사용하기 위해 생성된 콘텐츠입니다. 자세한 내용은 <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> 형식을 참조하세요. 구성 요소에 대 한 자세한 내용은 참조 하세요. [Word 2007에서 개발자를 위한 새로운](/previous-versions/office/developer/office-2007/bb266218(v=office.12))합니다.  
@@ -119,8 +119,8 @@ ms.locfileid: "50672901"
   
 |작업|방법|  
 |--------------------|--------------|  
-|컨트롤에 표시되는 텍스트를 가져오거나 설정합니다.|사용 된 **텍스트** 속성입니다. **참고:** 는 <xref:Microsoft.Office.Tools.Word.PictureContentControl> 고 <xref:Microsoft.Office.Tools.Word.ContentControl> 형식에는이 속성이 없습니다.|  
-|사용자가 컨트롤을 편집하거나, 컨트롤이 데이터 소스의 데이터로 채워지거나, 컨트롤의 내용이 삭제될 때까지 컨트롤에 표시되는 임시 텍스트를 가져오거나 설정합니다.|사용 된 **PlaceholderText** 속성입니다. **참고:** 는 <xref:Microsoft.Office.Tools.Word.PictureContentControl> 형식에는이 속성이 없습니다.|  
+|컨트롤에 표시되는 텍스트를 가져오거나 설정합니다.|사용 된 **텍스트** 속성입니다. **참고:**  <xref:Microsoft.Office.Tools.Word.PictureContentControl> 및 <xref:Microsoft.Office.Tools.Word.ContentControl> 형식에는 이 속성이 없습니다.|  
+|사용자가 컨트롤을 편집하거나, 컨트롤이 데이터 소스의 데이터로 채워지거나, 컨트롤의 내용이 삭제될 때까지 컨트롤에 표시되는 임시 텍스트를 가져오거나 설정합니다.|사용 된 **PlaceholderText** 속성입니다. **참고:**  <xref:Microsoft.Office.Tools.Word.PictureContentControl> 형식에는 이 속성이 없습니다.|  
 |사용자가 클릭할 때 콘텐츠 컨트롤의 테두리에 표시되는 제목을 가져오거나 설정합니다.|사용 된 **Title** 속성입니다.|  
 |사용자 컨트롤을 편집한 후 자동으로 문서에서 컨트롤을 제거합니다. 컨트롤의 텍스트는 문서에 남아 있습니다.|사용 된 **임시** 속성입니다.|  
 |사용자가 콘텐츠 컨트롤을 클릭하거나 커서가 프로그래밍 방식으로 콘텐츠 컨트롤로 이동할 때 코드를 실행합니다.|컨트롤의 <xref:Microsoft.Office.Tools.Word.ContentControlBase.Entering> 이벤트를 처리합니다.|  
@@ -158,7 +158,7 @@ ms.locfileid: "50672901"
 ### <a name="use-the-windows-forms-data-binding-model"></a>Windows Forms 데이터 바인딩 모델을 사용 하 여  
  대부분의 콘텐츠 컨트롤은 Windows Forms에서 사용하는 단순 데이터 바인딩 모델을 지원합니다. 단순 데이터 바인딩은 컨트롤이 데이터 테이블의 열 값과 같은 단일 데이터 요소에 바인딩됨을 의미합니다. 자세한 내용은 [데이터 바인딩 및 Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms)합니다.  
   
- 문서 수준 프로젝트에 데이터 바인딩할 수 있습니다 콘텐츠 컨트롤을 사용 하 여 합니다 **데이터 원본** 창에서 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]합니다. 문서에 데이터 바인딩된 콘텐츠 컨트롤을 추가 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법: 데이터베이스의 데이터로 문서 채우기](../vsto/how-to-populate-documents-with-data-from-a-database.md) 하 고 [방법: 개체의 데이터로 문서 채우기](../vsto/how-to-populate-documents-with-data-from-objects.md)합니다.  
+ 문서 수준 프로젝트에 데이터 바인딩할 수 있습니다 콘텐츠 컨트롤을 사용 하 여 합니다 **데이터 원본** 창에서 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]합니다. 문서에 데이터 바인딩된 콘텐츠 컨트롤을 추가 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법: 데이터베이스의 데이터로 문서 채우기](../vsto/how-to-populate-documents-with-data-from-a-database.md) 고 [방법: 개체의 데이터로 문서 채우기](../vsto/how-to-populate-documents-with-data-from-objects.md)합니다.  
   
  다음 표에서 각 데이터 형식에 바인딩할 수 있는 콘텐츠 컨트롤을 **데이터 원본** 창입니다.  
   
@@ -188,7 +188,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price")
 plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, null);  
 ```  
   
- 좀 더 자세히 사용자 지정 XML 부분에 콘텐츠 컨트롤을 바인딩하는 방법을 보여 주는 연습을 참조 하세요 [연습: 사용자 지정 XML 부분에 콘텐츠 컨트롤 바인딩](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)합니다.  
+ 좀 더 자세히 사용자 지정 XML 부분에 콘텐츠 컨트롤을 바인딩하는 방법을 보여 주는 연습을 참조 하세요. [연습: 사용자 지정 XML 부분에 콘텐츠 컨트롤 바인딩](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)합니다.  
   
  사용자 지정 XML 부분에 콘텐츠 컨트롤을 바인딩하는 경우 양방향 데이터 바인딩이 자동으로 사용됩니다. 사용자가 컨트롤의 텍스트를 편집하는 경우 해당 XML 요소가 자동으로 업데이트됩니다. 마찬가지로, 사용자 지정 XML 부분의 요소 값이 변경되는 경우 XML 요소에 바인딩된 콘텐츠 컨트롤에 새 데이터가 표시됩니다.  
   
@@ -229,7 +229,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
 ### <a name="event-limitations"></a>이벤트 제한 사항  
  콘텐츠 컨트롤은 사용자가 컨트롤의 텍스트 또는 기타 항목을 변경할 때 발생하는 이벤트를 제공하지 않습니다. 예를 들어 사용자가 <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> 또는 <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl>에서 다른 항목을 선택할 때 발생하는 이벤트가 없습니다.  
   
- 사용자가 콘텐츠 컨트롤의 내용을 편집하는 시기를 확인하기 위해 사용자 지정 XML 부분에 컨트롤을 바인딩한 다음 <xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating> 이벤트를 처리할 수 있습니다. 이 이벤트는 사용자가 사용자 지정 XML 부분에 바인딩된 컨트롤의 내용을 변경할 때 발생합니다. 사용자 지정 XML 부분에 콘텐츠 컨트롤을 바인딩하는 방법을 보여 주는 연습을 참조 하세요 [연습: 사용자 지정 XML 부분에 콘텐츠 컨트롤 바인딩](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)합니다.  
+ 사용자가 콘텐츠 컨트롤의 내용을 편집하는 시기를 확인하기 위해 사용자 지정 XML 부분에 컨트롤을 바인딩한 다음 <xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating> 이벤트를 처리할 수 있습니다. 이 이벤트는 사용자가 사용자 지정 XML 부분에 바인딩된 컨트롤의 내용을 변경할 때 발생합니다. 사용자 지정 XML 부분에 콘텐츠 컨트롤을 바인딩하는 방법을 보여 주는 연습을 참조 하세요. [연습: 사용자 지정 XML 부분에 콘텐츠 컨트롤 바인딩](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)합니다.  
   
 ###  <a name="checkbox"></a> Word 프로젝트의 확인란 콘텐츠 컨트롤  
  Word 2010에서는 확인란을 나타내는 새로운 형식의 콘텐츠 컨트롤이 도입되었습니다. 그러나는 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Office 프로젝트에서 사용할 수는 해당 CheckBoxContentControl 형식을 제공 하지 않습니다. [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] 또는 Word 2010 프로젝트에서 확인란 콘텐츠 컨트롤을 만들려면 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddContentControl%2A> 메서드를 사용하여 <xref:Microsoft.Office.Tools.Word.ContentControl> 개체를 만들고 <xref:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlCheckBox> 값을 메서드에 전달하여 확인란 콘텐츠 컨트롤을 지정합니다. 다음 코드 예제에서는 이 작업을 수행하는 방법을 보여 줍니다.  
@@ -237,7 +237,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
  [!code-vb[Trin_ContentControlReference#800](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/checkbox.vb#800)]
  [!code-csharp[Trin_ContentControlReference#800](../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/checkbox.cs#800)]  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [확장 된 개체를 사용 하 여 Word 자동화](../vsto/automating-word-by-using-extended-objects.md)   
  [방법: Word 문서에 콘텐츠 컨트롤 추가](../vsto/how-to-add-content-controls-to-word-documents.md)   
  [연습: 콘텐츠 컨트롤을 사용 하 여 템플릿 만들기](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)   

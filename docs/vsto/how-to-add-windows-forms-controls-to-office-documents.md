@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Windows Forms controls [Office development in Visual Studio], adding
 - controls [Office development in Visual Studio], Windows Forms controls
 - documents [Office development in Visual Studio], Windows Forms controls
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7b5a6246a79d2d1f910b6ca39ce290f6c325dbe6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 10fa7da3028c2d4706ec380bb4ceeae1d55b45af
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892755"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647860"
 ---
 # <a name="how-to-add-windows-forms-controls-to-office-documents"></a>방법: Office 문서에 Windows Forms 컨트롤 추가
   디자인 타임에 문서 수준 프로젝트에서 Microsoft Office Excel 및 Microsoft Office Word 문서에 Windows Forms 컨트롤을 추가할 수 있습니다. 런타임에 VSTO 추가 기능 및 문서 수준 사용자 지정에서 컨트롤을 추가할 수 있습니다. 예를 들어 사용자가 옵션 목록에서 선택할 수 있도록 워크시트에 <xref:Microsoft.Office.Tools.Excel.Controls.ComboBox> 컨트롤을 추가할 수 있습니다.  
@@ -38,7 +38,7 @@ ms.locfileid: "49892755"
   
 - [런타임에 VSTO 추가 기능에서 컨트롤 추가](#runtimeaddin)  
   
-  ![비디오 링크](../vsto/media/playvideo.gif "비디오 링크") 관련된 비디오 데모를 참조 하세요. [어떻게 수행 할까요 추가 컨트롤을 문서에 화면 런타임에?](http://go.microsoft.com/fwlink/?LinkId=132782)합니다.  
+  ![비디오 링크](../vsto/media/playvideo.gif "비디오 링크") 관련된 비디오 데모를 참조 하세요. [어떻게 할까요? 런타임에 문서 화면에 컨트롤 추가 ](http://go.microsoft.com/fwlink/?LinkId=132782).  
   
 ##  <a name="designtime"></a> 디자인 타임에 컨트롤 추가  
  디자인 타임에 문서 수준 프로젝트의 문서에 Windows Forms 컨트롤을 추가하는 여러 가지 방법이 있습니다.  
@@ -47,7 +47,7 @@ ms.locfileid: "49892755"
   
 ### <a name="to-drag-a-windows-forms-control-to-the-document"></a>Windows Forms 컨트롤을 문서로 끌어오려면  
   
-1.  문서가 디자이너에 표시되도록 Visual Studio에서 Excel 통합 문서 프로젝트 또는 Word 문서 프로젝트를 만들거나 엽니다. 프로젝트를 만드는 방법에 대 한 정보를 참조 하세요 [방법: Visual Studio에서 만드는 Office 프로젝트](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
+1.  문서가 디자이너에 표시되도록 Visual Studio에서 Excel 통합 문서 프로젝트 또는 Word 문서 프로젝트를 만들거나 엽니다. 프로젝트를 만드는 방법에 대 한 정보를 참조 하세요. [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
   
 2.  에 **공용 컨트롤** 탭의 **도구 상자**에 추가 하려는 컨트롤을 문서에 놓습니다.  
   
@@ -56,7 +56,7 @@ ms.locfileid: "49892755"
   
 ### <a name="to-draw-a-windows-forms-control-on-the-document"></a>문서에서 Windows Forms 컨트롤을 그리려면  
   
-1.  문서가 디자이너에 표시되도록 Visual Studio에서 Excel 통합 문서 프로젝트 또는 Word 문서 프로젝트를 만들거나 엽니다. 프로젝트를 만드는 방법에 대 한 정보를 참조 하세요 [방법: Visual Studio에서 만드는 Office 프로젝트](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
+1.  문서가 디자이너에 표시되도록 Visual Studio에서 Excel 통합 문서 프로젝트 또는 Word 문서 프로젝트를 만들거나 엽니다. 프로젝트를 만드는 방법에 대 한 정보를 참조 하세요. [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
   
 2.  에 **공용 컨트롤** 탭을 **도구 상자**, 추가 하려는 컨트롤을 클릭 합니다.  
   
@@ -69,7 +69,7 @@ ms.locfileid: "49892755"
   
 ### <a name="to-add-a-windows-forms-control-to-the-document-by-single-clicking-the-control"></a>컨트롤을 한 번 클릭하여 문서에 Windows Forms 컨트롤을 추가하려면  
   
-1.  문서가 디자이너에 표시되도록 Visual Studio에서 Excel 통합 문서 프로젝트 또는 Word 문서 프로젝트를 만들거나 엽니다. 프로젝트를 만드는 방법에 대 한 정보를 참조 하세요 [방법: Visual Studio에서 만드는 Office 프로젝트](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
+1.  문서가 디자이너에 표시되도록 Visual Studio에서 Excel 통합 문서 프로젝트 또는 Word 문서 프로젝트를 만들거나 엽니다. 프로젝트를 만드는 방법에 대 한 정보를 참조 하세요. [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
   
 2.  에 **공용 컨트롤** 탭의 **도구 상자**를 추가 하려는 컨트롤을 클릭  
   
@@ -82,7 +82,7 @@ ms.locfileid: "49892755"
   
 ### <a name="to-add-a-windows-forms-control-to-the-document-by-double-clicking-the-control"></a>컨트롤을 두 번 클릭하여 문서에 Windows Forms 컨트롤을 추가하려면  
   
-1.  문서가 디자이너에 표시되도록 Visual Studio에서 Excel 통합 문서 프로젝트 또는 Word 문서 프로젝트를 만들거나 엽니다. 프로젝트를 만드는 방법에 대 한 정보를 참조 하세요 [방법: Visual Studio에서 만드는 Office 프로젝트](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
+1.  문서가 디자이너에 표시되도록 Visual Studio에서 Excel 통합 문서 프로젝트 또는 Word 문서 프로젝트를 만들거나 엽니다. 프로젝트를 만드는 방법에 대 한 정보를 참조 하세요. [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
   
 2.  에 **공용 컨트롤** 탭을 **도구 상자**, 추가 하려는 컨트롤을 두 번 클릭 합니다.  
   
@@ -93,7 +93,7 @@ ms.locfileid: "49892755"
   
 ### <a name="to-add-a-windows-forms-control-to-the-document-by-pressing-the-enter-key"></a>Enter 키를 눌러 문서에 Windows Forms 컨트롤을 추가 하려면  
   
-1.  문서가 디자이너에 표시되도록 Visual Studio에서 Excel 통합 문서 프로젝트 또는 Word 문서 프로젝트를 만들거나 엽니다. 프로젝트를 만드는 방법에 대 한 정보를 참조 하세요 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
+1.  문서가 디자이너에 표시되도록 Visual Studio에서 Excel 통합 문서 프로젝트 또는 Word 문서 프로젝트를 만들거나 엽니다. 프로젝트를 만드는 방법에 대 한 정보를 참조 하세요. [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
   
 2.  에 **공용 컨트롤** 탭을 **도구 상자**을 추가 하 고 키를 눌러 원하는 컨트롤을 클릭 합니다 **Enter** 키.  
   
@@ -135,7 +135,7 @@ ms.locfileid: "49892755"
      [!code-vb[Trin_WordAddInDynamicControls#7](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#7)]
      [!code-csharp[Trin_WordAddInDynamicControls#7](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#7)]  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Windows Forms 컨트롤에 대 한 Office 문서 개요](../vsto/windows-forms-controls-on-office-documents-overview.md)   
  [런타임에 Office 문서에 컨트롤 추가](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [방법: 워크시트 셀에서 컨트롤 크기 조정](../vsto/how-to-resize-controls-within-worksheet-cells.md)   

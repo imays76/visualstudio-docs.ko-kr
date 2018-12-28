@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c4e808d93d2ae3039d4c5d79d1c14c65360bba32
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3b60987b90440d6f72ede8cdc0f02023c8f4cc6b
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892313"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739428"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>SharePoint 워크플로 솔루션 만들기
 
@@ -42,7 +42,7 @@ SharePoint에 대 한 자세한 내용은 참조 하세요. [Microsoft SharePoin
  SharePoint 워크플로 만들 수 있습니다 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 하 고 SharePoint 웹 사이트에 배포 합니다. 워크플로 SharePoint에 배포 된 후 목록 또는 라이브러리를 사용 하 여 연결 합니다. 그런 다음 시작 자동으로 프로세스에 의해 또는 사용자가 수동으로. 워크플로 작업에 대 한 자세한 내용은 참조 하세요. [Visual Studio를 사용 하 여 SharePoint 개발 워크플로](https://docs.microsoft.com/sharepoint/dev/general-development/develop-sharepoint-workflows-using-visual-studio)합니다.
 
 ## <a name="create-custom-sharepoint-workflows"></a>사용자 지정 SharePoint 워크플로 만들기
- 두 SharePoint 워크플로 프로젝트에서 사용할 수 있습니다 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]: **순차 워크플로** 하 고 **상태 시스템 워크플로**합니다.
+ 두 SharePoint 워크플로 프로젝트에서 사용할 수 있는 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]: **순차 워크플로** 하 고 **상태 시스템 워크플로**합니다.
 
  A *순차 워크플로* 일련의 단계를 나타냅니다. 마지막 작업이 완료 될 때까지 단계를 하나씩 수행 됩니다. 순차 워크플로 항상 반드시 순서 대로 실행 합니다. 외부 이벤트를 수신 하 고 병렬 논리 흐름을 포함할 수 있습니다, 실행의 정확한 순서는 달라질 수 있습니다. 다음 그림에서는 순차 워크플로의 예를 보여 줍니다.
 
@@ -122,12 +122,12 @@ SharePoint에 대 한 자세한 내용은 참조 하세요. [Microsoft SharePoin
   이러한 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 연결 및 초기화 폼에 대 한 항목 템플릿이 포함 되어 있습니다. 예는 *연결 양식* 지출 비용 워크플로의 등 워크플로에 관련 된 매개 변수를 워크플로 설치 관리자가 있는 입력 됩니다. 예는 *양식을* 은 입력을 소비 하는 워크플로에 비용 워크플로의 사용자 수입니다. 이러한 양식 유형에 대 한 자세한 내용은 참조 하세요. [SharePoint 프로젝트 및 프로젝트 항목 템플릿](../sharepoint/sharepoint-project-and-project-item-templates.md)합니다.
 
 ### <a name="item-properties"></a>항목 속성
- SharePoint 라이브러리 또는 목록 항목의 속성을 사용 하 여 사용자 로부터 정보를 수집할 수 있습니다. Workflow1.cs 또는 Workflow1.vb 주 코드 파일 이름의 Microsoft.SharePoint.Workflow.SPWorkflowActivationProperties.WorkflowProperties 클래스의 인스턴스를 선언 `workflowProperties`합니다. 사용 된 `workflowProperties` 라이브러리의 코드 목록 속성에 액세스 하는 개체입니다. 예제를 보려면 [연습: SharePoint 워크플로 솔루션을 만들고](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md)합니다.
+ SharePoint 라이브러리 또는 목록 항목의 속성을 사용 하 여 사용자 로부터 정보를 수집할 수 있습니다. Workflow1.cs 또는 Workflow1.vb 주 코드 파일 이름의 Microsoft.SharePoint.Workflow.SPWorkflowActivationProperties.WorkflowProperties 클래스의 인스턴스를 선언 `workflowProperties`합니다. 사용 된 `workflowProperties` 라이브러리의 코드 목록 속성에 액세스 하는 개체입니다. 예를 들어 참조 [연습: SharePoint 워크플로 솔루션을 만들고](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md)합니다.
 
 ## <a name="debug-a-sharepoint-workflow-template"></a>SharePoint 워크플로 템플릿 디버그
  디버깅할 수 SharePoint 워크플로 프로젝트를 동일한 다른 디버그할 때 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 웹 기반 프로젝트입니다. 시작 하는 경우는 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 디버거를 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 에 지정 된 설정을 사용 하는 **SharePoint 사용자 지정 마법사** 적절 한 SharePoint 웹 사이트를 열고 자동 워크플로 템플릿을 연결 적절 한 라이브러리 또는 목록입니다. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 또한 연결 합니다 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 디버거를 [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] 라는 프로세스가 *w3wp.exe*합니다.
 
- 워크플로 테스트 하려면이 수동으로 시작 해야 합니다. 자세한 내용은 "워크플로에 디버깅" 섹션을 참조 [SharePoint 솔루션 디버깅](../sharepoint/debugging-sharepoint-solutions.md)합니다. 에 대 한 자세한 내용은 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 웹 응용 프로그램 디버깅을 참조 하십시오 [웹 응용 프로그램 및 스크립트 디버그](../debugger/debugging-web-applications-and-script.md)합니다.
+ 워크플로 테스트 하려면이 수동으로 시작 해야 합니다. 자세한 내용은 "워크플로에 디버깅" 섹션을 참조 [SharePoint 솔루션 디버깅](../sharepoint/debugging-sharepoint-solutions.md)합니다. 에 대 한 자세한 내용은 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 웹 응용 프로그램 디버깅을 참조 하십시오 [웹 응용 프로그램 및 스크립트 디버그](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)합니다.
 
 ## <a name="deploy-a-sharepoint-workflow-template"></a>SharePoint 워크플로 템플릿 배포
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 워크플로 프로젝트 같은 다른 배포 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 프로젝트입니다. 자세한 내용은 [패키지 및 배포 하는 SharePoint 솔루션](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)합니다.
@@ -145,7 +145,7 @@ SharePoint에 대 한 자세한 내용은 참조 하세요. [Microsoft SharePoin
 |[연습: 사용자 지정 사이트 워크플로 작업 만들기](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md)|두 가지 주요 작업을 수행 하는 방법에 설명 합니다: 사이트 수준 워크플로 만들고 사용자 지정 워크플로 작업을 합니다.|
 |[연습: Visual Studio에 SharePoint Designer의 재사용 가능한 워크플로 가져오기](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|SharePoint Designer 2010에서 만든 다시 사용할 수 있는 선언적 워크플로 가져오는 방법을 보여 줍니다는 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 프로젝트입니다.|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [SharePoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)
 - [SharePoint 솔루션 빌드 및 디버그](../sharepoint/building-and-debugging-sharepoint-solutions.md)

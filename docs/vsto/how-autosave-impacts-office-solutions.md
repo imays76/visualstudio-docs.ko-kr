@@ -10,17 +10,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - autosave
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 60c83b8d83967d93f079033c4853904068ad29d5
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: dfd040f6aab19cb42189ea137e5f4cd1898f5be4
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672433"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646986"
 ---
 # <a name="how-autosave-impacts-office-solutions"></a>자동 저장이 Office 솔루션에 미치는 영향을
 
@@ -29,6 +29,6 @@ ms.locfileid: "50672433"
 > [!NOTE]
 > Windows 데스크톱 Word에 대 한 자동 저장, Excel 및 PowerPoint 2017에서 도입 되었으며 office 365 구독자에서 현재 사용할 수 있습니다. Office 2016 또는 이전 영구 라이선스를 구입한 현재 없는 경우 이러한 기능에 액세스할 수 있습니다. (Excel Online에서 Excel for Android, ios, Excel 및 Excel Mobile Windows 스토어에서 수행이 기능을 지원 하지만.)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [Office 솔루션 개발](./developing-office-solutions.md)

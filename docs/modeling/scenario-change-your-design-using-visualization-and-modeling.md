@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc8066148b2c8612b3a07922e15422022b8c9c4d
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: c041ebd5b9bc692fea376582c9451024bf3ce9e4
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967508"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53685021"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>시나리오: 시각화 및 모델링을 사용하여 디자인 변경
 
@@ -55,7 +55,7 @@ Visual Studio에서 시각화 및 모델링 도구를 사용하여 소프트웨�
 
 ## <a name="scenario-overview"></a>시나리오 개요
 
-이 시나리오에서는 Dinner Now 및 Lucerne Publishing이라는 가상 회사 두 개의 소프트웨어 개발 수명 주기에 따른 에피소드를 설명합니다. Dinner Now는 시애틀에서 웹 기반 음식 배달 서비스를 제공합니다. 고객이는 음식을 주문 하 고 Dinner Now 웹 사이트에서 요금을 지불할 수 있습니다. 주문은 배달을 위해 해당 현지 음식점에 전송됩니다. 뉴욕에 있는 회사인 Lucerne Publishing은 오프라인과 온라인으로 여러 가지 비즈니스를 운영합니다. 예를 들어 고객이 음식점 리뷰를 게시할 수 있는 웹 사이트를 실행 합니다.
+이 시나리오에서는 가상 회사 두 개의 소프트웨어 개발 수명 주기에서 에피소드를 설명합니다. Dinner Now 및 lucerne은 게시 합니다. Dinner Now는 시애틀에서 웹 기반 음식 배달 서비스를 제공합니다. 고객이는 음식을 주문 하 고 Dinner Now 웹 사이트에서 요금을 지불할 수 있습니다. 주문은 배달을 위해 해당 현지 음식점에 전송됩니다. 뉴욕에 있는 회사인 Lucerne Publishing은 오프라인과 온라인으로 여러 가지 비즈니스를 운영합니다. 예를 들어 고객이 음식점 리뷰를 게시할 수 있는 웹 사이트를 실행 합니다.
 
 Lucerne은 최근에 Dinner Now를 인수했고, 다음과 같이 변경하고자 합니다.
 
@@ -97,7 +97,7 @@ Team Foundation Server에 대한 자세한 내용은 다음을 참조하세요.
 
 - [솔루션 전체의 종속성 매핑](../modeling/map-dependencies-across-your-solutions.md)
 
-- [방법: 프로젝트에 클래스 다이어그램 추가(클래스 디자이너)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)
+- [방법: (클래스 디자이너) 프로젝트에 클래스 다이어그램 추가](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)
 
 - [Visual Studio용 모델링 SDK - 도메인별 언어](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
 
@@ -107,7 +107,7 @@ Team Foundation Server에 대한 자세한 내용은 다음을 참조하세요.
 
 - [코드와 디자인의 일관성 유지](#ValidatingCode)
 
-- [논리적 아키텍처를 설명 합니다: 종속성 다이어그램](#DescribeLayers)
+- [논리적 아키텍처에 설명 합니다. 종속성 다이어그램](#DescribeLayers)
 
 - [종속성 다이어그램을 사용하여 코드 유효성 검사](../modeling/validate-code-with-layer-diagrams.md)
 
@@ -147,7 +147,7 @@ Dinner Now는 새 요구 사항을 충족하기 위한 비용을 예측해야 �
 |**맵 또는 다이어그램**|**보여 주는 것**|
 |-|-|
 |*코드 맵*<br /><br /> 참조<br /><br /> - [솔루션 전체의 종속성 매핑](../modeling/map-dependencies-across-your-solutions.md)<br />- [찾아보기 및 코드 맵을 다시 정렬](../modeling/browse-and-rearrange-code-maps.md)<br />- [DGML 파일을 편집 하 여 코드 맵 사용자 지정](../modeling/customize-code-maps-by-editing-the-dgml-files.md)|코드의 종속성 및 기타 관계.<br /><br /> 예를 들어 Dinner Now는 어셈블리 및 해당 종속성을 살펴보기 위해 먼저 어셈블리 코드 맵을 검토할 수 있습니다. 맵을 분석하여 해당 어셈블리의 네임스페이스 및 클래스를 살펴볼 수 있습니다.<br /><br /> Dinner Now에서 맵을 만들어서 코드의 특정 영역 및 다른 관계 종류를 살펴볼 수도 있습니다. 솔루션 탐색기를 사용하여 관심 있는 영역 및 관계를 찾고 선택합니다.|
-|*코드 기반 클래스 다이어그램*<br /><br /> [방법: 프로젝트에 클래스 다이어그램 추가(클래스 디자이너)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)를 참조하세요.|코드의 기존 클래스|
+|*코드 기반 클래스 다이어그램*<br /><br /> [방법: (클래스 디자이너) 프로젝트에 클래스 다이어그램 추가](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)합니다.|코드의 기존 클래스|
 
  예를 들어 개발자는 코드 맵을 만듭니다. 범위를 조정하여 새 시나리오가 영향을 미치는 영역에 초점을 맞춥니다. 맵에서 다음 영역이 선택되고 강조 표시됩니다.
 
@@ -167,7 +167,7 @@ Dinner Now는 새 요구 사항을 충족하기 위한 비용을 예측해야 �
 
 |**다이어그램**|**설명 내용**|
 |-|-|
-|*코드 기반 클래스 다이어그램*<br /><br /> [방법: 프로젝트에 클래스 다이어그램 추가(클래스 디자이너)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)를 참조하세요.|코드의 기존 클래스.|
+|*코드 기반 클래스 다이어그램*<br /><br /> [방법: (클래스 디자이너) 프로젝트에 클래스 다이어그램 추가](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)합니다.|코드의 기존 클래스.|
 
 ### <a name="ValidatingCode"></a> 코드와 디자인의 일관성 유지
  Dinner Now는 업데이트된 코드와 디자인의 일관성이 유지되는지 확인해야 합니다. 시스템의 기능 레이어를 설명 및 연결 솔루션 아티팩트를 레이어에 간에 허용 되는 종속성을 지정 하는 종속성 다이어그램을 만듭니다.
@@ -254,7 +254,7 @@ Lucerne과 Dinner Now는 결제 시스템을 통합해야 합니다. 다음 섹�
 
 - [형식 용어집 정의: 클래스 다이어그램](#DefineClasses)
 
-- [논리적 아키텍처를 설명 합니다: 종속성 다이어그램](#DescribeLayers)
+- [논리적 아키텍처에 설명 합니다. 종속성 다이어그램](#DescribeLayers)
 
 참조
 
@@ -332,7 +332,7 @@ Lucerne 결제 시스템에 대한 다음 맵을 생성하여 클래스, 메서�
 |**다이어그램**|**설명 내용**|
 |-|-|
 |종속성 다이어그램|시스템의 논리적 아키텍처. 종속성 유효성 검사를 사용 하 여 코드와 디자인의 일관성이 유지 되는지 확인 합니다.<br /><br /> 를 기존 dependencys 또는 의도 한 dependencys 식별할 수 있도록 하려면 코드 맵을 만들고 관련된 항목을 그룹화 합니다. 종속성 다이어그램을 만들려면 다음을 참조 하세요:<br /><br /> - [코드에서 종속성 다이어그램 만들기](../modeling/create-layer-diagrams-from-your-code.md)<br />- [종속성 다이어그램: 지침](../modeling/layer-diagrams-guidelines.md)|
-|클래스 다이어그램(코드 기반)|특정 프로젝트에 대한 코드의 기존 클래스.<br /><br /> 코드에서 기존 클래스를 시각화 및 수정하려면 클래스 디자이너를 사용합니다.<br /><br /> [방법: 프로젝트에 클래스 다이어그램 추가(클래스 디자이너)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)를 참조하세요.|
+|클래스 다이어그램(코드 기반)|특정 프로젝트에 대한 코드의 기존 클래스.<br /><br /> 코드에서 기존 클래스를 시각화 및 수정하려면 클래스 디자이너를 사용합니다.<br /><br /> [방법: (클래스 디자이너) 프로젝트에 클래스 다이어그램 추가](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)합니다.|
 
 ### <a name="DefineClasses"></a> 형식 용어집 정의: 클래스 다이어그램
  클래스 다이어그램에서는 시스템에 참가하는 엔터티, 용어 또는 개념과 서로 간의 관계를 정의합니다. 예를 들어 개발 중에 이들 다이어그램을 사용하여 구현 언어나 스타일과 관계없이 각 클래스에 대한 특성 및 작업을 설명할 수 있습니다.
@@ -385,7 +385,7 @@ Lucerne 결제 시스템에 대한 다음 맵을 생성하여 클래스, 메서�
 
 기존 클래스를 살펴보고 논의하려면 먼저 클래스 디자이너를 사용하여 코드에서 클래스 다이어그램을 만듭니다.
 
-- [방법: 프로젝트에 클래스 다이어그램 추가(클래스 디자이너)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)
+- [방법: (클래스 디자이너) 프로젝트에 클래스 다이어그램 추가](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)
 
 #### <a name="summary-strengths-of-class-diagrams"></a>요약: 클래스 다이어그램의 장점
  클래스 다이어그램을 통해 다음을 정의할 수 있습니다.

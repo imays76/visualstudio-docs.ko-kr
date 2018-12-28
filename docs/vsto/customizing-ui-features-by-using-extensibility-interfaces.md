@@ -18,17 +18,17 @@ helpviewer_keywords:
 - FormRegionStartup interface
 - add-ins [Office development in Visual Studio], extensibility interfaces
 - extensibility interfaces [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ec1f538515c8765629e812b8d7f4070476dd95ba
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 94ef77afa51e7cccb8f5aed18b1cf5ad0e1eaf1f
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670847"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648893"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>확장성 인터페이스를 사용 하 여 UI 기능 사용자 지정
   Visual Studio의 Office 개발 도구에는 많은 구현 세부 사항을 처리하는 클래스와 디자이너가 제공되며, 이를 사용하여 VSTO 추가 기능에 사용자 지정 작업창, 리본 사용자 지정, Outlook 양식 영역을 만들 수 있습니다. 하지만 특별한 요구 사항이 있는 경우 각각의 기능에 대한 *확장성 인터페이스* 를 직접 구현할 수도 있습니다.  
@@ -47,7 +47,7 @@ ms.locfileid: "50670847"
   
 |인터페이스|설명|응용 프로그램|  
 |---------------|-----------------|------------------|  
-|<xref:Microsoft.Office.Core.IRibbonExtensibility>|리본 UI를 사용자 지정하려면 이 인터페이스를 구현합니다. **참고:** 추가할 수는 **리본 (XML)** 기본값을 생성 하려면 프로젝트에 항목을 <xref:Microsoft.Office.Core.IRibbonExtensibility> VSTO 추가 기능에서 구현 합니다. 자세한 내용은 [Ribbon XML](../vsto/ribbon-xml.md)을 참조하세요.|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> InfoPath 2010<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> 프로젝트<br /><br /> Visio<br /><br /> 단어|  
+|<xref:Microsoft.Office.Core.IRibbonExtensibility>|리본 UI를 사용자 지정하려면 이 인터페이스를 구현합니다. **참고:**  추가할 수는 **리본 (XML)** 기본값을 생성 하려면 프로젝트에 항목을 <xref:Microsoft.Office.Core.IRibbonExtensibility> VSTO 추가 기능에서 구현 합니다. 자세한 내용은 [Ribbon XML](../vsto/ribbon-xml.md)을 참조하세요.|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> InfoPath 2010<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> 프로젝트<br /><br /> Visio<br /><br /> 단어|  
 |<xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>|사용자 지정 작업창을 만들려면 이 인터페이스를 구현합니다.|Excel<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> 단어|  
 |<xref:Microsoft.Office.Interop.Outlook.FormRegionStartup>|Outlook 양식 영역을 만들려면 이 인터페이스를 구현합니다.|Outlook|  
   
@@ -79,7 +79,7 @@ ms.locfileid: "50670847"
  [!code-vb[Trin_SimpleExtensibilityInterface#2](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#2)]
  [!code-csharp[Trin_SimpleExtensibilityInterface#2](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#2)]  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Office 개발 샘플 및 연습](../vsto/office-development-samples-and-walkthroughs.md)   
  [VSTO 추가 기능 프로그래밍](../vsto/programming-vsto-add-ins.md)   
  [Office 솔루션 개발](../vsto/developing-office-solutions.md)   

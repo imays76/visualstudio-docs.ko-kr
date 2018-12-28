@@ -16,17 +16,17 @@ helpviewer_keywords:
 - ClickOnce deployment [Office development in Visual Studio], MSI
 - publishing Office solutions [Office development in Visual Studio], setup project
 - Office applications [Office development in Visual Studio], MSI
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3e811fac767e8b89f0a6958511c54642f07190cf
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: f5aaf0cdff2795ff0726ca2de36e794179f2d924
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673057"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648770"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Windows Installer를 사용 하 여 Office 솔루션 배포
 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]을 사용하여 Office 솔루션에 필요한 Windows Installer를 만드는 방법을 알아봅니다.  
@@ -503,7 +503,7 @@ VSTO 추가 기능을 컴퓨터의 모든 사용자에 대해 설치할지(컴�
 16. **Your Solution ID** 를 클립보드에 복사한 솔루션 ID로 바꿉니다.  
 
    > [!IMPORTANT]  
-   >    설치 관리자를 테스트하여 이 사용자 지정 작업으로 실행되는 콘솔 응용 프로그램이 [INSTALLDIR] 디렉터리의 문서에 액세스할 수 있는지 확인합니다. 일부 디렉터리 사용자의 컴퓨터에 관리 액세스 (예: Program Files 디렉터리) 필요할 수 있습니다. 열어야 솔루션 관리 액세스가 필요한 디렉터리에 배포 하는 경우는 **속성** 대화 상자를 *setup.exe* 파일을 선택 합니다 **호환성** 탭을 선택 합니다 **관리자로이 프로그램을 실행** 설치 관리자를 배포 하기 전에 확인란 합니다. 디렉터리에 사용자가 액세스 [잘못] 속성을 설정 하려면 관리자 권한으로 설치 프로그램을 실행 하는 사용자, 같은 이미,의 **문서** 디렉터리. 자세한 내용은 참조는 [지정 하려는 사용자의 컴퓨터에 솔루션을 설치](#Location) 이 항목의 섹션입니다.  
+   >    설치 관리자를 테스트하여 이 사용자 지정 작업으로 실행되는 콘솔 응용 프로그램이 [INSTALLDIR] 디렉터리의 문서에 액세스할 수 있는지 확인합니다. 일부 디렉터리 사용자의 컴퓨터에 관리 액세스 (예: Program Files 디렉터리) 필요할 수 있습니다. 열어야 솔루션 관리 액세스가 필요한 디렉터리에 배포 하는 경우는 **속성** 대화 상자를 *setup.exe* 파일을 선택 합니다 **호환성** 탭을 선택 합니다 **관리자로이 프로그램을 실행** 설치 관리자를 배포 하기 전에 확인란 합니다. 관리자 권한으로 설치 프로그램을 실행 하는 사용자를 사용 하지 않으려는 경우는 사용자 액세스 권한을 디렉터리로 [INSTALLDIR] 속성을 설정 같은 이미 합니다 **문서** 디렉터리입니다. 자세한 내용은 참조는 [지정 하려는 사용자의 컴퓨터에 솔루션을 설치](#Location) 이 항목의 섹션입니다.  
 
 
 ## <a name="Build"></a>Build the setup project  
@@ -528,10 +528,10 @@ VSTO 추가 기능을 컴퓨터의 모든 사용자에 대해 설치할지(컴�
 
 9. 메뉴 모음에서 선택 **빌드합니다** > **OfficeAddInSetup 빌드**합니다.  
 
-   빌드가 완료 된 후 찾을 수는 *setup.exe* 의 파일은 **OfficeAddInSetup** 프로젝트 다음 위치의: <em>OfficeAddInSetupProjectRoot</em> **\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1\\**  
+   빌드가 완료 되 면을 찾을 수 있습니다 합니다 *setup.exe* 의 파일을 **OfficeAddInSetup** 다음 위치에 있는 프로젝트: <em>OfficeAddInSetupProjectRoot</em>**\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1\\**  
 
 
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
 [Office 솔루션 배포 필수 조건](https://msdn.microsoft.com/library/9f672809-43a3-40a1-9057-397ce3b5126e)  
 [Office 솔루션 배포](../vsto/deploying-an-office-solution.md)  
 [VSTO 추가 기능에 대 한 레지스트리 항목](../vsto/registry-entries-for-vsto-add-ins.md)  

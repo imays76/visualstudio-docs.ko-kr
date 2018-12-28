@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cf35f0d09178dd0516794ab79e8ac92239e42cd6
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 098c0f50f24e216a407343ceb446d0073370fed1
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966546"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740142"
 ---
 # <a name="create-models-for-your-app"></a>앱용 모델 만들기
 
@@ -42,7 +42,7 @@ ms.locfileid: "50966546"
 |-|-|
 |[종속성 다이어그램: 지침](../modeling/layer-diagrams-guidelines.md)<br /><br /> [종속성 다이어그램: 참조](../modeling/layer-diagrams-reference.md)|시스템의 상위 수준 아키텍처|
 |코드 맵<br /><br /> [솔루션 전체의 종속성 매핑](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [코드 맵 분석기를 사용하여 잠재적 문제 찾기](../modeling/find-potential-problems-using-code-map-analyzers.md)|기존 코드의 종속성 및 기타 관계|
-|코드에서 생성된 클래스 다이어그램<br /><br /> [클래스 다이어그램 사용(클래스 디자이너)](../ide/working-with-class-diagrams-class-designer.md)|.NET 코드의 형식 및 해당 관계|
+|코드에서 생성된 클래스 다이어그램<br /><br /> [클래스 다이어그램 사용(클래스 디자이너)](../ide/class-designer/designing-and-viewing-classes-and-types.md)|.NET 코드의 형식 및 해당 관계|
 
 ## <a name="related-tasks"></a>관련 작업
 

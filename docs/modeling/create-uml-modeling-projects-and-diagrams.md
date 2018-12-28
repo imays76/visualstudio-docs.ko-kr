@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 700b6c42cbdbf0a8b8c6f604a4c25f0042e2bffe
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: d0e956f1d86079bbeea20beb84201d0a92026b9a
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966780"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684513"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>UML 모델링 프로젝트 및 다이어그램 만들기
 
@@ -31,4 +31,4 @@ UML을 사용 하 여 Visual Studio 2015에서에 대 한 내용은 다음을 �
 * [앱용 모델 만들기](create-models-for-your-app.md)
 * [개발 프로세스에서 모델 사용](use-models-in-your-development-process.md)
 * [개발하는 동안 시스템 유효성 검사](validate-your-system-during-development.md)
-* [UML 모델 및 다이어그램 확장](extend-uml-models-and-diagrams.md)
+* [UML 모델 및 다이어그램 확장](create-uml-modeling-projects-and-diagrams.md)

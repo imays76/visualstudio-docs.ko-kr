@@ -11,17 +11,17 @@ dev_langs:
 helpviewer_keywords:
 - Office development in Visual Studio, deploying solutions
 - ClickOnce deployment [Office development in Visual Studio], deploying solutions
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e46a0bdc23ee16c4821d3da751d5a90aa62a14c3
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 8c690283eacabe56b18ef786bf4ab58fd03768e4
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673070"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648783"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>ClickOnce를 사용 하 여 Office 솔루션 배포
   ClickOnce를 사용하면 Office 솔루션을 더 적은 단계로 배포할 수 있습니다. 업데이트를 게시하는 경우 솔루션에서 자동으로 이를 감지하여 설치합니다. 그러나 ClickOnce에서는 컴퓨터의 각 사용자에 대해 별도로 솔루션을 설치하도록 합니다. Windows Installer를 사용 하 여 고려해 야 하므로 (*.msi*) 둘 이상의 사용자를 동일한 컴퓨터에 솔루션을 실행 합니다.  
@@ -262,7 +262,7 @@ ms.locfileid: "50673070"
 
 3.  엽니다는 **ExcelWorkbook.dll.manifest** 메모장과 같은 텍스트 편집기에서 파일입니다.  
 
-4.  `</vstav3:update>` 요소 뒤에 다음 코드를 추가합니다. 클래스 특성에 대 한 합니다 `<vstav3:entryPoint>` 요소에 다음 구문을 사용: *NamespaceName.ClassName*합니다. 다음 예제에서는 네임스페이스 및 클래스 이름이 같기 때문에 결과 진입점 이름은 `FileCopyPDA.FileCopyPDA`입니다.  
+4.  `</vstav3:update>` 요소 뒤에 다음 코드를 추가합니다. 클래스 특성에 대 한는 `<vstav3:entryPoint>` 요소 구문을 사용 합니다. *NamespaceName.ClassName*합니다. 다음 예제에서는 네임스페이스 및 클래스 이름이 같기 때문에 결과 진입점 이름은 `FileCopyPDA.FileCopyPDA`입니다.  
 
     ```xml
     <vstav3:postActions>  
@@ -460,7 +460,7 @@ ms.locfileid: "50673070"
 > [!NOTE]  
 >  로컬 데이터는 이전 버전의 솔루션 하나에 대해서만 저장됩니다. 두 버전을 롤백하는 경우 로컬 데이터는 보존 되지 않습니다. 로컬 데이터에 대 한 자세한 내용은 참조 하세요. [ClickOnce 응용 프로그램의 로컬 및 원격 데이터 액세스](/visualstudio/deployment/accessing-local-and-remote-data-in-clickonce-applications)합니다.  
 
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Office 솔루션 배포](../vsto/deploying-an-office-solution.md)   
  [Office 솔루션 게시](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
  [방법: ClickOnce를 사용 하 여 Office 솔루션 게시](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)   

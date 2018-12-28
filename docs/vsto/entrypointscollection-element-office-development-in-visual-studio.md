@@ -1,6 +1,7 @@
 ---
 title: '&lt;entryPointsCollection&gt; 요소 (Visual Studio에서 Office 개발)'
-ms.custom: ''
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -12,17 +13,17 @@ helpviewer_keywords:
 - <entryPointsCollection> element
 - application manifests [Office development in Visual Studio], <entryPointsCollection> element
 - entryPointsCollection element
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 119cff9135b2b65f09d265aed2af3a7e2d500d60
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: f9e9489127f4b82bbca3d76172445fdafd6ad84a
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447907"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646708"
 ---
 # <a name="ltentrypointscollectiongt-element-office-development-in-visual-studio"></a>&lt;entryPointsCollection&gt; 요소 (Visual Studio에서 Office 개발)
   `entryPointsCollection` 네임스페이스의 `vstav3` 요소에는 Office 솔루션과 관련된 모든 `entryPoints` 요소가 포함됩니다.  
@@ -50,12 +51,12 @@ ms.locfileid: "34447907"
  `entryPointsCollection` 에는 다음 요소가 있습니다.  
   
 ### <a name="entrypoints"></a>entryPoints  
- 필수. 역할은 `entryPoints` 요소에는 `vstav3` 네임 스페이스에 정의 된 [ &#60;t r y p&#62; 요소 &#40;Visual Studio에서 Office 개발&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md)합니다.  
+ 필수 요소. 역할을 합니다 `entryPoints` 요소에는 `vstav3` 네임 스페이스에 정의 된 [ &#60;진입점&#62; 요소 &#40;Visual Studio에서 Office 개발&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
   
 ## <a name="document-level-customization-example"></a>문서 수준 사용자 지정 예제  
   
 ### <a name="description"></a>설명  
- 다음 코드 예제에서는 `entryPointsCollection` 을 사용하여 배포된 문서 수준 솔루션에 대한 응용 프로그램 매니페스트의 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]요소를 보여 줍니다. 이 코드 예제는에 제공 된 큰 예제의 일부 [Office 솔루션에 대 한 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)합니다.  
+ 다음 코드 예제에서는 `entryPointsCollection` 을 사용하여 배포된 문서 수준 솔루션에 대한 응용 프로그램 매니페스트의 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]요소를 보여 줍니다. 이 코드 예제는에서 제공 하는 더 큰 예제의 일부입니다 [Office 솔루션에 대 한 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)합니다.  
   
 ### <a name="code"></a>코드  
   
@@ -101,7 +102,7 @@ ms.locfileid: "34447907"
 ## <a name="vsto-add-in-example"></a>VSTO 추가 기능 예제  
   
 ### <a name="description"></a>설명  
- 다음 코드 예제에서는 `entryPointsCollection` 을 사용하여 배포된 응용 프로그램 수준 솔루션에 대한 응용 프로그램 매니페스트의 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]요소를 보여 줍니다. 이 코드 예제는에 제공 된 큰 예제의 일부 [Office 솔루션에 대 한 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)합니다.  
+ 다음 코드 예제에서는 `entryPointsCollection` 을 사용하여 배포된 응용 프로그램 수준 솔루션에 대한 응용 프로그램 매니페스트의 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]요소를 보여 줍니다. 이 코드 예제는에서 제공 하는 더 큰 예제의 일부입니다 [Office 솔루션에 대 한 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)합니다.  
   
 ### <a name="code"></a>코드  
   
@@ -123,7 +124,7 @@ ms.locfileid: "34447907"
 ## <a name="multi-project-deployment-example"></a>다중 프로젝트 배포 예제  
   
 ### <a name="description"></a>설명  
- 다음 코드 예제에서는 두 개의 Office 솔루션을 사용하는 다중 프로젝트 배포에 대한 응용 프로그램 매니페스트의 `entryPointsCollection` 요소를 보여 줍니다. 이 코드 예제는에 제공 된 큰 예제의 일부 [Office 솔루션에 대 한 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)합니다.  
+ 다음 코드 예제에서는 두 개의 Office 솔루션을 사용하는 다중 프로젝트 배포에 대한 응용 프로그램 매니페스트의 `entryPointsCollection` 요소를 보여 줍니다. 이 코드 예제는에서 제공 하는 더 큰 예제의 일부입니다 [Office 솔루션에 대 한 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)합니다.  
   
 ### <a name="code"></a>코드  
   
@@ -178,7 +179,7 @@ ms.locfileid: "34447907"
     </vstav3:entryPointsCollection>  
 ```  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Office 솔루션에 대 한 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)   
  [Office 솔루션의 배포 매니페스트](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce 응용 프로그램 매니페스트](/visualstudio/deployment/clickonce-application-manifest)  

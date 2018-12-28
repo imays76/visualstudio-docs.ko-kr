@@ -1,10 +1,8 @@
 ---
-title: CreateInPlace (Visual Studio 템플릿) | Microsoft Docs
-ms.custom: ''
+title: CreateInPlace 요소 (Visual Studio 템플릿)
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#CreateInPlace
 helpviewer_keywords:
@@ -16,14 +14,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33d4a05f3c1f7a3aff83d05e1816308511414ad2
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 61fa7f61acbe59f61feb4472c55459e07e4980a6
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231398"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561816"
 ---
-# <a name="createinplace-visual-studio-templates"></a>CreateInPlace (Visual Studio 템플릿)
+# <a name="createinplace-element-visual-studio-templates"></a>CreateInPlace 요소 (Visual Studio 템플릿)
 프로젝트를 만듭니다 및 지정 된 위치의 매개 변수 대체를 수행 하거나 임시 위치에 매개 변수 대체를 수행 하 고 다음 지정된 된 위치에 프로젝트를 저장 여부를 지정 합니다.  
   
  \<VSTemplate>  
@@ -59,7 +57,7 @@ ms.locfileid: "39231398"
 ## <a name="remarks"></a>설명  
  `CreateInPlace`는 선택적 요소입니다. 기본값은 `true`입니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 템플릿의 메타데이터를 보여 줍니다.  
   
 ```  
@@ -87,6 +85,6 @@ ms.locfileid: "39231398"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)   
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)

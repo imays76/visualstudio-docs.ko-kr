@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b200c5b0df5f150e0d34b351a3e36a8a986f3ed6
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: 7cf16e015c6c5e0f828d759e40dc8cc0eed7c050
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248246"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739486"
 ---
 # <a name="changes-to-the-design-of-office-projects-that-target-the-net-framework-4-or-the-net-framework-45"></a>.NET Framework 4.5 또는.NET Framework 4를 대상으로 하는 Office 프로젝트의 디자인 변경
   [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]부터 Visual Studio에서는 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 이상을 대상으로 하는 Office 프로젝트의 디자인에 몇 가지 변경 사항이 도입되었습니다. 이전 버전의 Visual Studio에서 Office 프로젝트를 사용하는 데 익숙한 경우 .NET Framework 4.0 이상의 버전을 대상으로 하는 Office 프로젝트를 개발하기 전에 이러한 변경 사항을 알고 있어야 합니다. 기본적으로 Visual Studio 2013 이상을 사용하여 만드는 모든 프로젝트는 .NET Framework 4.0 이상을 대상으로 합니다.  
@@ -35,7 +35,7 @@ ms.locfileid: "53248246"
   
 -   [.NET Framework 4 또는.NET Framework 4.5로 마이그레이션하는 Excel 및 Word 프로젝트 업데이트](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
   
--   [.NET Framework 4 또는.NET Framework 4.5로 마이그레이션하는 Office 프로젝트에서 리본 사용자 지정 업데이트](../vsto/updating-ribbon-customizations-in-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
+-   [.NET Framework 4 또는.NET Framework 4.5로 마이그레이션하는 Office 프로젝트에서 리본 사용자 지정 업데이트](/visualstudio/vsto/update-ribbon-customizations-in-office-projects-to-migrate-to-dotnet-framework-4-or-4-5)  
   
 -   [.NET Framework 4 또는.NET Framework 4.5로 마이그레이션하는 Outlook 프로젝트에서 양식 영역 업데이트](../vsto/updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
   
@@ -51,7 +51,7 @@ ms.locfileid: "53248246"
 |---------------------|-----------------|  
 |<xref:System.Security.SecurityTransparentAttribute> 는 Office 프로젝트에서 더 이상 사용되거나 지원되지 않습니다.|Visual Studio 2008에서 업그레이드하는 Office 프로젝트의 AssemblyInfo 코드 파일에서 이 특성을 제거해야 합니다. 자세한 내용은 [.NET Framework 4 또는.NET Framework 4.5로 마이그레이션하는 Office 프로젝트를 실행 하는 변경 필요한](../vsto/required-changes-to-run-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)합니다.|  
 |합니다 **ExcelLocale1033Attribute** 는 더 이상 사용 되거나 Excel 프로젝트에서 지원 합니다.|이 특성을 제거 해야 합니다 *AssemblyInfo* Excel 프로젝트의 코드 파일. 자세한 내용은 [.NET Framework 4 또는.NET Framework 4.5로 마이그레이션하는 업데이트 Excel 및 Word 프로젝트](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)합니다.|  
-|**리본(비주얼 디자이너)** 프로젝트 항목의 프로그래밍 모델이 변경되었습니다.|프로젝트에서 모든 리본 항목에 대한 코드 숨김 파일을 수정해야 합니다. 또한 런타임에 리본 컨트롤을 인스턴스화하거나, 리본 이벤트를 처리 하거나 프로그래밍 방식으로 리본 구성 요소의 위치를 설정 하는 코드를 수정 해야 합니다. 자세한 내용은 [.NET Framework 4 또는.NET Framework 4.5로 마이그레이션하는 Office 프로젝트에서 업데이트 리본 사용자 지정](../vsto/updating-ribbon-customizations-in-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)합니다.|  
+|**리본(비주얼 디자이너)** 프로젝트 항목의 프로그래밍 모델이 변경되었습니다.|프로젝트에서 모든 리본 항목에 대한 코드 숨김 파일을 수정해야 합니다. 또한 런타임에 리본 컨트롤을 인스턴스화하거나, 리본 이벤트를 처리 하거나 프로그래밍 방식으로 리본 구성 요소의 위치를 설정 하는 코드를 수정 해야 합니다. 자세한 내용은 [.NET Framework 4 또는.NET Framework 4.5로 마이그레이션하는 Office 프로젝트에서 업데이트 리본 사용자 지정](/visualstudio/vsto/update-ribbon-customizations-in-office-projects-to-migrate-to-dotnet-framework-4-or-4-5)합니다.|  
 |Outlook 양식 영역의 프로그래밍 모델이 변경되었습니다.|프로젝트 및 런타임에 특정 양식 영역 클래스를 인스턴스화하는 코드의 모든 양식 영역에 대 한 코드 숨김 파일을 수정 해야 합니다. 자세한 내용은 [.NET Framework 4 또는.NET Framework 4.5로 마이그레이션하는 Outlook 프로젝트에서 양식 영역 업데이트](../vsto/updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)합니다.|  
 |Excel 및 Word 프로젝트에서 스마트 태그에 대한 프로그래밍 모델이 변경되었습니다. [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] 및 [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]에서는 스마트 태그가 사용되지 않습니다.|솔루션에서 스마트 태그를 사용하는 경우 프로젝트를 빌드할 때 오류가 발생합니다. 스마트 태그가 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] 및 [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]에서 더 이상 사용되지 않기 때문에 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 이상에서 솔루션을 테스트하고 디버그하려면 태그를 제거해야 합니다.|  
 |`GetVstoObject` 및 `HasVstoObject` 메서드의 구문이 변경되었습니다.|PIA(주 Interop 어셈블리)로부터 네이티브 개체에서 이러한 메서드에 액세스할 때 `Globals.Factory` 개체를 이러한 메서드에 전달해야 합니다. 또는 프로젝트에서 `Globals.Factory` 속성에 의해 반환되는 개체에서 이러한 메서드에 액세스할 수 있습니다. 자세한 내용은 [.NET Framework 4 또는.NET Framework 4.5로 마이그레이션하는 업데이트 Excel 및 Word 프로젝트](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)합니다.|  

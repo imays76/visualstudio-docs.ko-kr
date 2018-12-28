@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f2710693c7dae7c4238f9f31fbe8065d6864a19
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 4c583b9af65610340886794c03cb92be945b73d4
+ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672966"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53425866"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>언어 서버 프로토콜 확장 추가
 
@@ -202,12 +202,12 @@ namespace MockLanguageExtension
             await StartAsync.InvokeAsync(this, EventArgs.Empty);
         }
 
-        public async Task OnServerInitializeFailedAsync(Exception e)
+        public Task OnServerInitializeFailedAsync(Exception e)
         {
             return Task.CompletedTask;
         }
 
-        public async Task OnServerInitializedAsync()
+        public Task OnServerInitializedAsync()
         {
             return Task.CompletedTask;
         }
@@ -242,7 +242,7 @@ VSIX 매니페스트 디자이너를 열고로 이동 합니다 **자산** 탭:
 
 ![MEF 자산을 정의 합니다.](media/lsp-define-asset.png)
 
-* **Type**: Microsoft.VisualStudio.MefComponent
+* **형식**: Microsoft.VisualStudio.MefComponent
 * **원본**: 현재 솔루션의 프로젝트
 * **프로젝트**: [프로젝트]
 
@@ -293,7 +293,7 @@ LSP 언어 서버에 대 한 지원을 추가 하지 않아도 Visual Studio에�
 
 LSP 언어 서비스 확장에 설정에 대 한 지원을 추가 하려면 아래이 단계를 수행 합니다.
 
-1. JSON 파일을 추가 (예를 들어 *MockLanguageExtensionSettings.json*) 설정 및 기본값을 포함 하는 프로젝트에서. 예를 들어:
+1. JSON 파일을 추가 (예를 들어 *MockLanguageExtensionSettings.json*) 설정 및 기본값을 포함 하는 프로젝트에서. 예를 들면 다음과 같습니다.
 
    ```json
    {
@@ -326,7 +326,7 @@ LSP 언어 서비스 확장에 설정에 대 한 지원을 추가 하려면 아�
 
    ![vspackage 자산 편집](media/lsp-add-vspackage-asset.png)
 
-   * **Type**: Microsoft.VisualStudio.VsPackage
+   * **형식**: Microsoft.VisualStudio.VsPackage
    * **원본**: 파일 시스템의 파일
    * **경로**: [에 대 한 경로 *.pkgdef* 파일]
 
@@ -334,7 +334,7 @@ LSP 언어 서비스 확장에 설정에 대 한 지원을 추가 하려면 아�
 
 1. 사용자는 서버를 소유 하는 파일이 포함 된 작업 영역을 엽니다.
 2. 사용자의 파일을 추가 합니다 *.vs* 라는 폴더 *VSWorkspaceSettings.json*합니다.
-3. 줄을 추가 하는 사용자를 *VSWorkspaceSettings.json* 파일 서버에서 제공 하는 설정에 대 한 합니다. 예를 들어:
+3. 줄을 추가 하는 사용자를 *VSWorkspaceSettings.json* 파일 서버에서 제공 하는 설정에 대 한 합니다. 예를 들면 다음과 같습니다.
 
    ```json
    {

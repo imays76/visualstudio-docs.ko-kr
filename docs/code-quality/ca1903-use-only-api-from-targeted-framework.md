@@ -1,5 +1,5 @@
 ---
-title: 'CA1903: 대상 프레임워크에서 API만 사용하십시오.'
+title: 'CA1903: 대상된 프레임 워크에서 API만 사용'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -16,14 +16,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1d42a74cfaf93ba0e8e5aec7e15c522d2e26b7a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ace24746aafa70c73bc87c55c197913136f1a7b1
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822815"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738874"
 ---
-# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: 대상 프레임워크에서 API만 사용하십시오.
+# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: 대상된 프레임 워크에서 API만 사용
 
 |||
 |-|-|
@@ -48,7 +48,7 @@ ms.locfileid: "49822815"
 |.NET Framework 3.5|.NET Framework 3.5 SP1|
 |.NET Framework 4|N/A|
 
- 프로젝트의 대상 프레임 워크를 변경 하려면을 참조 하세요 [특정.NET Framework 버전 대상 지정](../ide/targeting-a-specific-dotnet-framework-version.md)합니다.
+ 프로젝트의 대상 프레임 워크를 변경 하려면을 참조 하세요 [특정.NET Framework 버전 대상 지정](../ide/visual-studio-multi-targeting-overview.md)합니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  서비스 팩에 대 한 종속성을 제거 하려면 새 멤버 또는 형식의 모든 사용을 제거 합니다. 의도적인 종속성 인 경우 경고를 억제 또는이 규칙을 해제 합니다.
@@ -66,7 +66,7 @@ ms.locfileid: "49822815"
 
  [!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework2#1](../code-quality/codesnippet/CSharp/ca1903-use-only-api-from-targeted-framework_2.cs)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [Portability Warnings](../code-quality/portability-warnings.md)
-- [특정 대상 .NET Framework 버전 지정](../ide/targeting-a-specific-dotnet-framework-version.md)
+- [특정 대상 .NET Framework 버전 지정](../ide/visual-studio-multi-targeting-overview.md)

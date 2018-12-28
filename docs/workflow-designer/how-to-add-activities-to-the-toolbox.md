@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a009f36152163e3ac23b85deac4ea99f26092be9
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 1d542d55593ca492b624b1939c71bb389ac42ad3
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118215"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684563"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>방법: 도구 상자에 활동 추가
 
@@ -60,6 +60,6 @@ ms.locfileid: "37118215"
 
 6.  사용자 지정 활동에 표시 합니다 **도구 상자** 항목 추가 되기 전에 포커스가 있던 범주 아래. 예를 들어 경우는 **일반** 범주에서 선택 된 합니다 **도구 상자** 도구 상자 항목을 추가 하기 전에 활동 아래에 표시 됩니다는 **일반** 범주.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-- [워크플로 디자이너 사용](../workflow-designer/using-the-workflow-designer.md)
+- [워크플로 디자이너 사용](developing-applications-with-the-workflow-designer.md)
