@@ -1,5 +1,5 @@
 ---
-title: 예상 &#39; 동안 &#39; | Microsoft Docs
+title: "'While' 필요 | Microsoft Docs"
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,19 +20,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: de38e7e593d0547a695c2e037903d01387cdf0bb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 689e740b9954cada3788e53094e5a4fc1241baf8
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633033"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53801978"
 ---
-# <a name="expected-39while39"></a>예상 &#39; 동안 &#39;
-포함 되지 않은 `while` 조건이 `do...while` 루프입니다. A **않습니다** 문에 해당 있어야 `while` 코드 블록의 끝을 테스트 합니다.  
+# <a name="expected-while"></a>'while'이 필요합니다.
+포함 되지 않은 합니다 `while` 조건이 `do...while` 루프입니다. A **수행** 문에 해당 있어야 `while` 코드 블록의 끝을 테스트 합니다.  
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   
--   포함 된 `while` 닫는 중괄호 뒤에 문을 테스트 합니다.  
+-   포함 된 `while` 닫는 중괄호 뒤의 문으로 테스트 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [while 문](../../javascript/reference/while-statement-javascript.md)   

@@ -1,5 +1,5 @@
 ---
-title: 예상 &#39;)&#39; 정규식 (JavaScript) | Microsoft Docs
+title: 예상 ')' 정규식 (JavaScript) | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,14 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b5d1075a41d2b97d10166b1372e8df3a93dd9d8e
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 6c344105010e406ef4936fdcca58baffbd610088
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279130"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802344"
 ---
-# <a name="expected-3939-in-regular-expression-javascript"></a>예상 &#39;)&#39; 정규식 (JavaScript)
+# <a name="expected--in-regular-expression-javascript"></a>정규식에 ')'가 필요합니다.(JavaScript)
 정규식 캡처, 어설션 또는 그룹을 만들려고 시도 했음 해도 닫는 괄호를 포함 하지 않았습니다. 괄호는 정규식의 몇 가지 목적이 있습니다. 주로 사용 되는 하위 식에서 어설션을 지정 하거나 항목으로 하나의 단위로 처리할 수 있도록 패턴을 그룹화 하려면 캡처 *, +,? 등입니다.  
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  

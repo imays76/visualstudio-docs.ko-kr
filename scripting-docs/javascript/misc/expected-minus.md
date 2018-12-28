@@ -1,5 +1,5 @@
 ---
-title: 예상 &#39;-&#39; | Microsoft Docs
+title: 예상 '-' | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,14 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 141d7239ebbd32ceff9be45a8b4be97afd8887b0
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: d1c0891065569a1f43777f87692568af26323924
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283277"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804762"
 ---
-# <a name="expected-39-39"></a>예상 &#39;-&#39;
+# <a name="expected--"></a>예상 '-'
 정규식 리터럴 만들려고 시도 했음 해도 슬래시 (/) 중 하나를 포함 하지 않았습니다. 문자열 리터럴 따옴표의 쌍 내에서 문자로 기록 됩니다을 하는 것 처럼 정규식 리터럴 슬래시 (/) 문자 쌍 내에서 문자로 표현 됩니다.  
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  

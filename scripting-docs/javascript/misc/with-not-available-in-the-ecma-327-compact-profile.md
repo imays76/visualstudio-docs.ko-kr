@@ -1,5 +1,5 @@
 ---
-title: '&#39; &#39; ECMA 327 Compact Profile에서 사용할 수 없는 | Microsoft Docs'
+title: "'with'는 ECMA 327 Compact Profile에서 사용할 수 없음 | Microsoft Docs"
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,16 +20,16 @@ caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 68e9a9acebd0225c5bcb86573698dbd7d116e0d3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 61546ac1dbc03184691e4e178070ecbd7c86cf75
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633293"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53801998"
 ---
-# <a name="39with39-not-available-in-the-ecma-327-compact-profile"></a>&#39; &#39; ECMA 327 Compact Profile에서 사용할 수 없음
+# <a name="with-not-available-in-the-ecma-327-compact-profile"></a>'with'는 ECMA 327 Compact Profile에서 사용할 수 없습니다.
 ' with'는 ECMA 327 Compact Profile (ErrWithNotInCP에서에서 사용할 수 없음  
   
  사용할 수 없습니다는 Compact Profile에서 키워드를 사용 합니다.  
   
- 에 대 한 자세한 내용은 키워드로 참조 [문으로](../../javascript/reference/with-statement-javascript.md)합니다.
+ 에 대 한 자세한 내용은 키워드를 사용 하 여 볼 [문을 사용 하 여](../../javascript/reference/with-statement-javascript.md)입니다.

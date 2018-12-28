@@ -12,17 +12,17 @@ helpviewer_keywords:
 - formatting [Office development in Visual Studio]
 - color, Excel ranges
 - ranges, applying color
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: feaa149f879137634ada607f31ea78b813544d2d
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: bcd48caa95b2dca1391582ce91156fb6e4859b99
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256245"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802318"
 ---
 # <a name="how-to-programmatically-apply-color-to-excel-ranges"></a>방법: 프로그래밍 방식으로 Excel 범위에 색 적용
   셀 범위 내의 텍스트에 색을 적용 하려면 사용을 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤 또는 네이티브 Excel 범위 개체입니다.  
@@ -53,7 +53,7 @@ ms.locfileid: "35256245"
      [!code-csharp[Trin_VstcoreExcelAutomation#67](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#67)]
      [!code-vb[Trin_VstcoreExcelAutomation#67](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#67)]  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [범위를 사용 하 여 작동 합니다.](../vsto/working-with-ranges.md)   
  [NamedRange 컨트롤](../vsto/namedrange-control.md)   
  [방법: 프로그래밍 방식으로 통합 문서에서 범위에 스타일 적용](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   

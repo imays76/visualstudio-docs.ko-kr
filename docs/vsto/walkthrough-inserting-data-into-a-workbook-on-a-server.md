@@ -1,5 +1,5 @@
 ---
-title: '연습: 서버의 통합 문서에 데이터를 삽입 합니다.'
+title: '연습: 서버에서 통합 문서에 데이터 삽입'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,14 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dc27a04e39ad93d9898364df308f6e7b042cd11b
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 0c594a15b2f411b9c1360d94f0f41624c11cebcf
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672329"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804866"
 ---
-# <a name="walkthrough-insert-data-into-a-workbook-on-a-server"></a>연습: 서버의 통합 문서에 데이터를 삽입 합니다.
+# <a name="walkthrough-insert-data-into-a-workbook-on-a-server"></a>연습: 서버에서 통합 문서에 데이터 삽입
   이 연습에서는 Microsoft Office Excel 통합 문서에 사용 하 여 Excel을 시작 하지 않고 캐시 된 데이터 집합에 데이터를 삽입 하는 방법에 설명 합니다 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 클래스입니다.
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
@@ -57,7 +57,7 @@ ms.locfileid: "50672329"
 
 -   Microsoft SQL Server 또는 AdventureWorksLT 샘플 데이터베이스가 연결 된 Microsoft SQL Server Express의 실행 중인 인스턴스에 액세스 합니다. AdventureWorksLT 데이터베이스를 다운로드할 수 있습니다 합니다 [CodePlex 웹 사이트](http://go.microsoft.com/fwlink/?linkid=87843)합니다. 데이터베이스 연결에 대한 자세한 내용은 다음 항목을 참조하세요.
 
-    -   SQL Server Management Studio 또는 SQL Server Management Studio Express를 사용 하 여 데이터베이스를 연결, 참조 [방법: 데이터베이스 (SQL Server Management Studio) 연결](/sql/relational-databases/databases/attach-a-database)합니다.
+    -   SQL Server Management Studio 또는 SQL Server Management Studio Express를 사용 하 여 데이터베이스를 연결 하려면 참조 [방법: 데이터베이스 (SQL Server Management Studio) 연결](/sql/relational-databases/databases/attach-a-database)합니다.
 
     -   명령줄을 사용 하 여 데이터베이스를 연결, 참조 [방법: SQL Server Express에 데이터베이스 파일을 첨부할](/previous-versions/sql/)합니다.
 
@@ -89,7 +89,7 @@ ms.locfileid: "50672329"
 ## <a name="define-a-dataset-in-the-class-library-project"></a>클래스 라이브러리 프로젝트에서 데이터 집합을 정의 합니다.
  SQL Server 2005에 대 한 AdventureWorksLT 데이터베이스에서 데이터를 포함 하는 형식화 된 데이터 집합을 정의 합니다. 이 연습의 뒷부분에서 Excel 통합 문서 프로젝트를 콘솔 응용 프로그램 프로젝트에서이 데이터 집합을 참조 합니다.
 
- 데이터 집합은는 *형식화 된 데이터 집합* AdventureWorksLT 데이터베이스의 Product 테이블에서 데이터를 나타내는입니다. 형식화 된 데이터 집합에 대 한 자세한 내용은 참조 하세요. [Visual Studio에서 데이터 집합 도구](/visualstudio/data-tools/dataset-tools-in-visual-studio)합니다.
+ 데이터 집합은는 *형식화 된 데이터 집합* AdventureWorksLT 데이터베이스의 Product 테이블에서 데이터를 나타내는입니다. 형식화 된 데이터 집합에 대 한 자세한 내용은 참조 하세요. [Visual Studio에서 데이터 집합 도구](../data-tools/dataset-tools-in-visual-studio.md)합니다.
 
 ### <a name="to-define-a-typed-dataset-in-the-class-library-project"></a>클래스 라이브러리 프로젝트에서 형식화 된 데이터 집합을 정의 하려면
 
@@ -157,7 +157,7 @@ ms.locfileid: "50672329"
 
 2.  **데이터** 메뉴에서 **새 데이터 소스 추가**를 클릭합니다.
 
-     합니다 **데이터 소스 구성 마법사** 열립니다.
+     **데이터 원본 구성** 마법사가 열립니다.
 
 3.  클릭 **개체**를 클릭 하 고 **다음**합니다.
 
@@ -293,8 +293,8 @@ ms.locfileid: "50672329"
 
 다음이 항목에서 캐시 된 데이터로 작업 하는 방법에 대 한 자세한 수 있습니다.
 
--   Excel을 시작 하지 않고 캐시 된 데이터 집합에서 데이터를 변경 합니다. 자세한 내용은 [연습: 캐시 된 서버에서 통합 문서에서 데이터 변경](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)합니다.
+-   Excel을 시작 하지 않고 캐시 된 데이터 집합에서 데이터를 변경 합니다. 자세한 내용은 [연습: 서버에서 통합 문서에서 캐시 된 데이터 변경](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-- [연습: 서버의 통합 문서에서 캐시 된 데이터를 변경 합니다.](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)
+- [연습: 서버에서 통합 문서에서 캐시 된 데이터를 변경 합니다.](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)

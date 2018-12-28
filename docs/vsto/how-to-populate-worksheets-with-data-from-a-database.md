@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e63a95635c57c3fa344d7d9197436a2e0e744621
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 53267cdd429b9a4d8848026e460776359b55c023
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648193"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802876"
 ---
 # <a name="how-to-populate-worksheets-with-data-from-a-database"></a>방법: 데이터베이스의 데이터로 워크시트 채우기
 
@@ -56,7 +56,7 @@ Windows Forms 프로젝트에서 데이터를 액세스 하는 동일한 방식�
 
 컨트롤 외에도 다음과 같은 데이터 관련 개체가 프로젝트에 자동으로 추가됩니다.
 
--   데이터베이스에서 연결된 데이터 테이블을 캡슐화하는 형식화된 데이터 집합. 자세한 내용은 [Visual Studio에서 데이터 집합 도구](/visualstudio/data-tools/dataset-tools-in-visual-studio)합니다.
+-   데이터베이스에서 연결된 데이터 테이블을 캡슐화하는 형식화된 데이터 집합. 자세한 내용은 [Visual Studio에서 데이터 집합 도구](../data-tools/dataset-tools-in-visual-studio.md)합니다.
 
 -   컨트롤을 형식화된 데이터 집합에 연결하는 <xref:System.Windows.Forms.BindingSource>. 자세한 내용은 [BindingSource 구성 요소 개요](/dotnet/framework/winforms/controls/bindingsource-component-overview)합니다.
 
