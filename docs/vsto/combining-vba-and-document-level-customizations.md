@@ -22,17 +22,17 @@ helpviewer_keywords:
 - VBA [Office development in Visual Studio], about VBA and document-level customizations
 - managed code [Office development in Visual Studio], Visual Basic for Applications and
 - document-level customizations [Office development in Visual Studio], Visual Basic for Applications and
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2243a3e03ed84325523f62d77ae3cc6d20f83bbb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2dc8a08d7d921c650c8332d3c363d16f5c414b1c
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878078"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441719"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>VBA 및 문서 수준 사용자 지정 결합
   Microsoft Office Word 또는 Microsoft Office Excel의 문서 수준 사용자 지정의 일부인 문서에서 VBA(Visual Basic for Applications) 코드를 사용할 수 있습니다. 사용자 지정 어셈블리에서 문서의 VBA 코드를 호출하거나, 문서의 VBA 코드에서 사용자 지정 어셈블리의 코드를 호출할 수 있도록 프로젝트를 구성할 수 있습니다.  
@@ -118,7 +118,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
   
   3.  프로젝트에서 호스트 항목 클래스의 **ReferenceAssemblyFromVbaProject** 속성을 **True**로 설정합니다. 이렇게 하면 사용자 지정 어셈블리의 형식 라이브러리가 어셈블리에 포함되고 형식 라이브러리에 대한 참조가 문서의 VBA 프로젝트에 추가됩니다.  
   
-  자세한 지침은 [방법: Visual Basic 프로젝트에서 VBA로 코드 노출](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md) 및 [방법: Visual C에서 VBA로 코드 노출&#35; 프로젝트](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md).  
+  자세한 내용은 참조 하세요. [방법: Visual Basic 프로젝트에서 VBA로 코드 노출](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md) 고 [방법: Visual C에서 VBA로 코드 노출&#35; 프로젝트](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)합니다.  
   
   **EnableVbaCallers** 및 **ReferenceAssemblyFromVbaProject** 속성은 디자인 타임에만 **속성** 창에서 사용할 수 있으며 런타임에는 사용할 수 없습니다. 속성을 보려면 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]에서 호스트 항목에 대한 디자이너를 엽니다. 이러한 속성을 설정 하는 경우 Visual Studio에서 수행 하는 특정 작업에 대 한 자세한 내용은 참조 하세요. [호스트 항목 속성에서 수행 하는 작업](#PropertyTasks)합니다.  
   
@@ -252,7 +252,7 @@ GetManagedClass(pdispInteropObject Object) As Object
 |설정한 후 합니다 **EnableVbaCallers** 또는 **ReferenceAssemblyFromVbaProject** 버전 번호를 지정 된 속성에 오류 메시지가 표시 된 <xref:System.Reflection.AssemblyVersionAttribute> 올바르지 않습니다.|있는지 확인 합니다 <xref:System.Reflection.AssemblyVersionAttribute> 의 선언을 *AssemblyInfo.cs* 또는 *AssemblyInfo.vb* 프로젝트 파일에에서는 올바른 어셈블리 버전 번호를 설정 합니다. 유효한 어셈블리 버전 번호에 대한 자세한 내용은 <xref:System.Reflection.AssemblyVersionAttribute> 클래스를 참조하세요.|  
 |사용자 지정 어셈블리의 이름을 변경한 후 사용자 지정 어셈블리를 호출하는 VBA 코드의 작동이 중지됩니다.|사용자 지정 어셈블리를 VBA 코드에 노출한 후 사용자 지정 어셈블리의 이름을 변경하면 문서의 VBA 프로젝트와 사용자 지정 어셈블리 간의 연결이 끊어집니다. 이 문제를 해결하려면 프로젝트에서 **ReferenceFromVbaAssembly** 속성을 **False** 로 변경했다가 다시 **True**로 변경한 후 VBA 코드에서 이전 어셈블리 이름에 대한 모든 참조를 새 어셈블리 이름으로 바꿉니다.|  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [방법: Visual Basic 프로젝트에서 VBA로 코드 노출](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
  [방법: Visual C에서 VBA로 코드 노출&#35; 프로젝트](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
  [연습: Visual Basic 프로젝트에서 VBA에서 코드 호출](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)   
