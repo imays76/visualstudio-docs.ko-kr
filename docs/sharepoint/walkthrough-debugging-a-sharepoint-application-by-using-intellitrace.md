@@ -1,5 +1,5 @@
 ---
-title: '연습: IntelliTrace를 사용 하 여 SharePoint 응용 프로그램 디버그 | Microsoft Docs'
+title: '연습: IntelliTrace를 사용 하 여 SharePoint 응용 프로그램을 디버깅 | Microsoft Docs'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 59f801c79c8bb19a63064bdac2fe717ee3e3a845
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 307d4842f25b3227f3857cf81be154a5db817a7e
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295587"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804288"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>연습: IntelliTrace를 사용 하 여 SharePoint 응용 프로그램 디버그
 
@@ -206,7 +206,7 @@ IntelliTrace를 사용 하 여 SharePoint 솔루션을 보다 쉽게 디버깅�
     {
         // The following line induces an error to demonstrate debugging.
         // Remove this line later for proper operation.
-        throw new System.InvalidOperationException("A serious error occurred!"); 
+        throw new System.InvalidOperationException("A serious error occurred!");
         try
         {
             using (SPSite site = new SPSite(siteUrl))
@@ -261,7 +261,7 @@ IntelliTrace를 사용 하 여 SharePoint 솔루션을 보다 쉽게 디버깅�
 
 2. 공지 사항 및 작업 목록의 내용을 표시 합니다.
 
-     알림 목록 이라고 하는 새 공지 사항이 있어야 **Activated 기능: IntelliTraceTest_Feature1**, 작업 목록 이라고 하는 새 작업을 해야 했으며 **비활성화 기능: IntelliTraceTest_ Feature1**합니다. 이러한 항목 중 하나가 없는 경우 기능이 활성화 되어 있는지 여부를 확인 합니다. 이 활성화 되지 않은 경우이 활성화 합니다.
+     알림 목록 이라고 하는 새 공지 사항이 있어야 **Activated 기능: IntelliTraceTest_Feature1**, 작업 목록 이라고 하는 새 작업을 해야 했으며 **비활성화 기능: IntelliTraceTest_Feature1**합니다. 이러한 항목 중 하나가 없는 경우 기능이 활성화 되어 있는지 여부를 확인 합니다. 이 활성화 되지 않은 경우이 활성화 합니다.
 
 3. 다음 단계를 수행 하 여 기능을 비활성화 합니다.
 
@@ -280,9 +280,9 @@ IntelliTrace를 사용 하 여 SharePoint 솔루션을 보다 쉽게 디버깅�
 SharePoint를 실행 하는 시스템에서 Microsoft Monitoring Agent를 설치 하는 경우에 IntelliTrace 반환 하는 제네릭 정보 보다 더 관련 된 데이터를 사용 하 여 SharePoint 솔루션을 디버깅할 수 있습니다. 에이전트에 SharePoint 솔루션 실행 하는 동안 디버그 정보를 캡처하려면 PowerShell cmdlet을 사용 하 여 Visual Studio 외부에서 작동 합니다.
 
 > [!NOTE]
-> 이 섹션의 구성 정보는이 예제와 관련이 있습니다. 다른 구성 옵션에 대 한 자세한 내용은 참조 하세요. [IntelliTrace 독립 실행형 수집기를 사용 하 여](/visualstudio/debugger/using-the-intellitrace-stand-alone-collector)입니다.
+> 이 섹션의 구성 정보는이 예제와 관련이 있습니다. 다른 구성 옵션에 대 한 자세한 내용은 참조 하세요. [IntelliTrace 독립 실행형 수집기를 사용 하 여](../debugger/using-the-intellitrace-stand-alone-collector.md)입니다.
 
-1. SharePoint를 실행 하는 컴퓨터의 [Microsoft Monitoring Agent를 설정 하 고 솔루션을 모니터링 하려면](/visualstudio/debugger/using-the-intellitrace-stand-alone-collector)합니다.
+1. SharePoint를 실행 하는 컴퓨터의 [Microsoft Monitoring Agent를 설정 하 고 솔루션을 모니터링 하려면](../debugger/using-the-intellitrace-stand-alone-collector.md)합니다.
 
 2. 기능을 비활성화 합니다.
 
@@ -310,7 +310,7 @@ SharePoint를 실행 하는 시스템에서 Microsoft Monitoring Agent를 설치
 
 2. 선택 된 **예외 디버그** 단추입니다.
 
-     메시지가 표시 되 면 기호 파일을 로드 합니다. 에 **IntelliTrace** 예외 강조 표시 됩니다 창 "throw 됨: 심각한 오류가 발생 했습니다!".
+     메시지가 표시 되 면 기호 파일을 로드 합니다. 에 **IntelliTrace** 예외 강조 표시 됩니다 창 "throw 됨: 심각한 오류가 발생 했습니다! ".
 
      IntelliTrace 창에서 실패 한 코드를 표시 하는 예외를 선택 합니다.
 
@@ -332,8 +332,8 @@ SharePoint를 실행 하는 시스템에서 Microsoft Monitoring Agent를 설치
 
      코드는 이제 제대로 실행 됩니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[확인 하 고 SharePoint 코드 디버그](../sharepoint/verifying-and-debugging-sharepoint-code.md)  
-[IntelliTrace](/visualstudio/debugger/intellitrace)  
-[연습: 단위 테스트를 사용 하 여 SharePoint 코드 확인](/previous-versions/visualstudio/visual-studio-2010/gg599006\(v\=vs.100\))
+- [확인 하 고 SharePoint 코드 디버그](../sharepoint/verifying-and-debugging-sharepoint-code.md)
+- [IntelliTrace](../debugger/intellitrace.md)
+- [연습: 단위 테스트를 사용 하 여 SharePoint 코드 확인](/previous-versions/visualstudio/visual-studio-2010/gg599006\(v\=vs.100\))

@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3b60987b90440d6f72ede8cdc0f02023c8f4cc6b
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 0dd8a1339dddc52326bf7b0e42d52c1eaa53e6cf
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739428"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802500"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>SharePoint 워크플로 솔루션 만들기
 
@@ -127,7 +127,7 @@ SharePoint에 대 한 자세한 내용은 참조 하세요. [Microsoft SharePoin
 ## <a name="debug-a-sharepoint-workflow-template"></a>SharePoint 워크플로 템플릿 디버그
  디버깅할 수 SharePoint 워크플로 프로젝트를 동일한 다른 디버그할 때 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 웹 기반 프로젝트입니다. 시작 하는 경우는 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 디버거를 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 에 지정 된 설정을 사용 하는 **SharePoint 사용자 지정 마법사** 적절 한 SharePoint 웹 사이트를 열고 자동 워크플로 템플릿을 연결 적절 한 라이브러리 또는 목록입니다. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 또한 연결 합니다 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 디버거를 [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] 라는 프로세스가 *w3wp.exe*합니다.
 
- 워크플로 테스트 하려면이 수동으로 시작 해야 합니다. 자세한 내용은 "워크플로에 디버깅" 섹션을 참조 [SharePoint 솔루션 디버깅](../sharepoint/debugging-sharepoint-solutions.md)합니다. 에 대 한 자세한 내용은 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 웹 응용 프로그램 디버깅을 참조 하십시오 [웹 응용 프로그램 및 스크립트 디버그](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)합니다.
+ 워크플로 테스트 하려면이 수동으로 시작 해야 합니다. 자세한 내용은 "워크플로에 디버깅" 섹션을 참조 [SharePoint 솔루션 디버깅](../sharepoint/debugging-sharepoint-solutions.md)합니다. 에 대 한 자세한 내용은 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 웹 응용 프로그램 디버깅을 참조 하십시오 [웹 응용 프로그램 및 스크립트 디버그](../debugger/how-to-enable-debugging-for-aspnet-applications.md)합니다.
 
 ## <a name="deploy-a-sharepoint-workflow-template"></a>SharePoint 워크플로 템플릿 배포
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 워크플로 프로젝트 같은 다른 배포 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 프로젝트입니다. 자세한 내용은 [패키지 및 배포 하는 SharePoint 솔루션](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)합니다.

@@ -1,5 +1,5 @@
 ---
-title: 에 할당할 수 없습니다 &#39;이&#39; | Microsoft 문서
+title: "'This'에 할당할 수 없습니다 | Microsoft Docs"
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,14 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 47e55d39e85675b37d2ac9741d1207a9e81d369e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f47778075b0395e4f0791d8f485188d40fab87a4
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856654"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802594"
 ---
-# <a name="cannot-assign-to-39this39"></a>에 할당할 수 없습니다 &#39;이&#39;
+# <a name="cannot-assign-to-this"></a>'this'에 할당할 수 없습니다.
 값을 할당 하려고 **이**합니다. **이렇게** 되는 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 키워드 중 하나를 참조 하는:
 
 - 현재 메서드 실행, 개체

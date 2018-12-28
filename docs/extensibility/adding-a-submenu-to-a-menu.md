@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ec436383aa745ed033858724b4d4b2ff8b929c6
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 7af96fd1973b32587a217a1cd57ef0d99b0cd626
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863922"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803009"
 ---
 # <a name="add-a-submenu-to-a-menu"></a>메뉴에 하위 메뉴를 추가 합니다.
 이 연습에서 데모 기반 [Visual Studio 메뉴 모음에 메뉴를 추가](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) 하위 메뉴를 추가 하는 방법을 표시 하 여 합니다 **TestMenu** 메뉴.
@@ -126,7 +126,7 @@ ms.locfileid: "48863922"
     }
     ```
 
-3.  추가 `SubItemCallback()`합니다. 이 방법은 하위 메뉴에 새 명령을 클릭할 때 호출 됩니다.
+3.  `SubItemCallback()`를 추가합니다. 이 방법은 하위 메뉴에 새 명령을 클릭할 때 호출 됩니다.
 
     ```csharp
     private void SubItemCallback(object sender, EventArgs e)
@@ -155,5 +155,7 @@ ms.locfileid: "48863922"
 
 5.  에 **TestMenu** 메뉴에서 클릭 **하위 메뉴** 을 클릭 한 다음 **테스트 하위 명령**합니다. 메시지 상자를 표시 하 고 "테스트 명령 내에서 TestCommand.SubItemCallback()" 텍스트를 표시 해야 합니다.
 
-## <a name="see-also"></a>참고자료
- [Visual Studio 메뉴 모음에 메뉴 추가](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)
+## <a name="see-also"></a>참고 항목
+
+- [Visual Studio 메뉴 모음에 메뉴 추가](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)
+- [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)

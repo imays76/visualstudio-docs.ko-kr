@@ -26,12 +26,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ba6f0a1aff0c263534c17256b7f5cf49ff9c9533
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 46cd388079db9d7869bcae733c6baef33c07a212
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898059"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53805135"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>SharePoint 패키징 및 배포 문제 해결
   이 항목에서는 SharePoint 솔루션을 패키지하고 배포할 때 발생할 수 있는 다양한 문제에 대해 설명합니다.
@@ -40,7 +40,7 @@ ms.locfileid: "49898059"
  Visual Studio, SharePoint 및 기타 계층 간에서 진단하려면 EnableDiagnostics 레지스트리 키를 사용하여 스택 추적을 확인할 수 있습니다. 자세한 내용은 [디버그 SharePoint 솔루션](../sharepoint/debugging-sharepoint-solutions.md)합니다.
 
 ## <a name="add-project-output-to-the-solution-package"></a>솔루션 패키지에 프로젝트 출력 추가
- 패키지 디자이너를 통해 패키지에 프로젝트 출력을 추가할 수 있습니다. 그러나 프로젝트 출력을 추가할 때 프로젝트의 플랫폼이 SharePoint 솔루션의 플랫폼과 일치하는지 확인해야 합니다. 사용 하는 것이 좋습니다 합니다 **Any CPU** SharePoint 서버에 배포 하려는 어셈블리에 대 한 대상 플랫폼입니다. 자세한 내용은 [프로젝트 디자이너, 컴파일 페이지 &#40;Visual Basic&#41; ](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) 하 고 [고급 컴파일러 설정 대화 상자 &#40;Visual Basic&#41;](/visualstudio/ide/reference/advanced-compiler-settings-dialog-box-visual-basic).
+ 패키지 디자이너를 통해 패키지에 프로젝트 출력을 추가할 수 있습니다. 그러나 프로젝트 출력을 추가할 때 프로젝트의 플랫폼이 SharePoint 솔루션의 플랫폼과 일치하는지 확인해야 합니다. 사용 하는 것이 좋습니다 합니다 **Any CPU** SharePoint 서버에 배포 하려는 어셈블리에 대 한 대상 플랫폼입니다. 자세한 내용은 [프로젝트 디자이너, 컴파일 페이지 &#40;Visual Basic&#41; ](../ide/reference/compile-page-project-designer-visual-basic.md) 하 고 [고급 컴파일러 설정 대화 상자 &#40;Visual Basic&#41;](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).
 
 ## <a name="validation-warnings-and-errors"></a>유효성 검사 경고 및 오류
  Visual Studio의 SharePoint 개발 도구는 유효성 검사 단계를 수행하여 솔루션 패키지가 올바르게 생성되었는지 확인합니다. 기능과 패키지에 대한 사용자 지정 유효성 검사 단계를 만들 수도 있습니다. 자세한 내용은 [방법: SharePoint 솔루션에 대 한 유효성 검사 규칙 사용자 지정 기능 및 패키지를 만들](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)합니다.
@@ -50,7 +50,7 @@ ms.locfileid: "49898059"
 
  다음 테이블에 대 한 설정을 보여 줍니다 합니다 **배포 충돌 해결** 속성입니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |자동|충돌을 검색하고 자동으로 해결합니다.|
 |프롬프트|충돌을 검색하고 충돌을 해결하기 전에 개발자에게 보고합니다.|
@@ -88,7 +88,7 @@ ms.locfileid: "49898059"
  SharePoint 프로젝트 항목의 이름에 괄호가 포함되어 있으면 오류가 표시되면서 솔루션 배포에 실패하게 됩니다.
 
 ### <a name="error-message"></a>오류 메시지
- 배포 단계 '솔루션 추가'에서 오류가 발생했습니다. 솔루션에서 cab 파일의 압축을 풀지 못했습니다.
+ 배포 단계 ' 솔루션 추가 '에서 오류가 발생 했습니다. 솔루션에서 cab 파일을 추출 하지 못했습니다.
 
 ### <a name="resolution"></a>해결
  이 문제를 해결하려면 SharePoint 프로젝트 항목의 이름에서 모든 괄호를 제거합니다.
@@ -97,7 +97,7 @@ ms.locfileid: "49898059"
  현재 배포되어 있는 웹 응용 프로그램이 아닌 다른 웹 응용 프로그램의 사이트에 비주얼 웹 파트를 처음으로 배포(비주얼 웹 파트의 SiteUrl 속성을 변경하여 배포함)하면 오류가 발생합니다.
 
 ### <a name="error-message"></a>오류 메시지
- 배포 단계 '솔루션 추가'에서 오류가 발생했습니다. 이 팜에 ID [#]인 기능이 이미 설치되었습니다. 강제 특성을 사용하여 기능을 명시적으로 다시 설치합니다.
+ 배포 단계 ' 솔루션 추가 '에서 오류가 발생 했습니다. 이 팜에 ID [#]를 사용 하 여 기능을 이미 설치 되었습니다. 강제 특성을 사용하여 기능을 명시적으로 다시 설치합니다.
 
 ### <a name="resolution"></a>해결
  이 오류는 비주얼 웹 파트 기능이 SharePoint에서 제거되는 방식으로 인해 발생합니다. 시각적 웹 파트를 성공적으로 배포 하려면 솔루션 다시 선택 하 여 배포 합니다 **F5** 키입니다.
@@ -113,6 +113,6 @@ ms.locfileid: "49898059"
 
  이 경고를 제거하려면 프로젝트를 빌드한 다음 디자이너를 닫았다가 다시 열거나 프로젝트에 대해 자동 취소 옵션을 사용하지 않도록 설정합니다. 이 작업을 수행 하려면 선택을 취소 합니다 **디버깅 후 자동 취소** 확인란 합니다 **SharePoint** 프로젝트 속성 대화 상자의 탭 합니다.
 
-## <a name="see-also"></a>참고자료
- [패키지 및 SharePoint 솔루션 배포](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
+## <a name="see-also"></a>참고 항목
 
+- [패키지 및 SharePoint 솔루션 배포](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

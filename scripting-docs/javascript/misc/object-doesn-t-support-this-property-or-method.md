@@ -1,5 +1,5 @@
 ---
-title: 개체 원본이&#39;t이 속성 또는 메서드를 지원 합니다. | Microsoft Docs
+title: 개체가이 속성 또는 메서드를 지원 하지 않습니다 | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,14 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c87d7d1c23682d014924c5c9b948133d8391c72
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 893b8328affcd0a893840cefddba61a322db315c
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/10/2018
-ms.locfileid: "24633413"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53801864"
 ---
-# <a name="object-doesn39t-support-this-property-or-method"></a>개체 원본이&#39;t이 속성 또는 메서드를 지원 합니다.
+# <a name="object-doesnt-support-this-property-or-method"></a>개체에서 이 속성 또는 메서드를 지원하지 않음
 이 개체에 대해 없는 속성이나 메서드를 지정했습니다. 모든 개체에서 모든 속성과 메서드를 지원하는 것은 아닙니다.  
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  

@@ -127,12 +127,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: ae4fcfa442f648126a93d1ec6a3b0d3c4fc7c981
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d60691836b38720cadeddfdf254d3646f9fa5479
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924826"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53805109"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>함수 매개 변수 및 반환 값에 주석 지정
 이 문서에서는 간단한 함수 매개 변수에 대 한 주석의 일반적인 용도 설명 합니다.-스칼라 및 구조체와 클래스에 대 한 포인터-버퍼의 대부분의 종류입니다.  이 문서는 또한 주석에 대 한 일반적인 사용 패턴을 보여줍니다. 함수에 관련 된 추가 주석을 참조 하세요. [함수 동작에 주석 지정](../code-quality/annotating-function-behavior.md)
@@ -218,7 +218,7 @@ ms.locfileid: "49924826"
 
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`
 
-     최대 버퍼에 있는 모든 요소 즉, `s` 사전 상태에서 유효한 후 상태입니다.  예를 들어:
+     최대 버퍼에 있는 모든 요소 즉, `s` 사전 상태에서 유효한 후 상태입니다.  다음은 사용 예를 보여줍니다.
 
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`
 
@@ -246,7 +246,7 @@ ms.locfileid: "49924826"
 
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`
 
-     최대 버퍼에 있는 모든 요소 즉, `s` 사전 상태에서 유효한 후 상태입니다.  예를 들어:
+     최대 버퍼에 있는 모든 요소 즉, `s` 사전 상태에서 유효한 후 상태입니다.  다음은 사용 예를 보여줍니다.
 
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`
 
@@ -483,7 +483,7 @@ ms.locfileid: "49924826"
 
 -   `_Struct_size_bytes_(size)`
 
-     구조체 또는 클래스 선언에 적용 됩니다.  지정 된 바이트 수를 사용 하 여 해당 형식의 유효한 개체를 선언된 된 형식 보다 클 수 있습니다 나타냅니다 `size`합니다.  예를 들어:
+     구조체 또는 클래스 선언에 적용 됩니다.  지정 된 바이트 수를 사용 하 여 해당 형식의 유효한 개체를 선언된 된 형식 보다 클 수 있습니다 나타냅니다 `size`합니다.  다음은 사용 예를 보여줍니다.
 
      `typedef _Struct_size_bytes_(nSize) struct MyStruct {    size_t nSize;    ... };`
 
@@ -495,4 +495,12 @@ ms.locfileid: "49924826"
  [코드 분석 팀 블로그](http://go.microsoft.com/fwlink/?LinkId=251197)
 
 ## <a name="see-also"></a>참고 항목
- [C/c + + 코드 오류를 줄이기 위한 SAL 주석 사용](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md) [SAL 이해](../code-quality/understanding-sal.md) [함수 동작에 주석 지정](../code-quality/annotating-function-behavior.md) [구조체 및 클래스에 주석 지정](../code-quality/annotating-structs-and-classes.md) [ 잠금 동작에 주석 달기](../code-quality/annotating-locking-behavior.md) [주석 적용 시기 및 위치 지정](../code-quality/specifying-when-and-where-an-annotation-applies.md) [내장 함수](../code-quality/intrinsic-functions.md) [모범 사례 및 예제](../code-quality/best-practices-and-examples-sal.md)
+
+- [C/C++ 코드 오류를 줄이기 위한 SAL 주석 사용](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
+- [SAL 이해](../code-quality/understanding-sal.md)
+- [함수 동작에 주석 지정](../code-quality/annotating-function-behavior.md)
+- [구조체 및 클래스에 주석 지정](../code-quality/annotating-structs-and-classes.md)
+- [잠금 동작에 주석 지정](../code-quality/annotating-locking-behavior.md)
+- [주석 적용 시기 및 위치 지정](../code-quality/specifying-when-and-where-an-annotation-applies.md)
+- [내장 함수](../code-quality/intrinsic-functions.md)
+- [모범 사례 및 예제](../code-quality/best-practices-and-examples-sal.md)
