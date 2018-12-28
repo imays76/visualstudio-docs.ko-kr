@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 96f00e6080cb10778a92aaa860422da8366be54d
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: c76ee4a98694fee811b9edea4bcd8a095640cd25
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389314"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739684"
 ---
 # <a name="overview-of-static-code-analysis-for-managed-code-in-visual-studio"></a>Visual Studio에서 관리 되는 코드에 대 한 정적 코드 분석 개요
 
@@ -30,13 +30,13 @@ Visual Studio 2017 두 가지 방법으로 관리 되는 코드의 코드 분석
 분석 도구는 분석하는 동안 수행하는 검사를 경고 메시지로 나타냅니다. 경고 메시지는 관련 프로그래밍 및 디자인 문제를 식별하며 가능한 경우 문제 해결 방법에 대한 정보를 제공합니다.
 
 > [!NOTE]
-> Visual Studio에서.NET Core 및.NET Standard 프로젝트에 대 한 정적 코드 분석이 지원 되지 않습니다. Msbuild의 일부로.NET Core 또는.NET Standard 프로젝트에서 코드 분석을 실행 하는 경우 유사한 오류가 표시 됩니다 **오류: CA0055: 플랫폼을 식별할 수 없습니다 \<your.dll >** 합니다. .NET Core 또는.NET Standard 프로젝트에서 코드를 분석 하려면 사용 하 여 [Roslyn 분석기](../code-quality/roslyn-analyzers-overview.md) 대신 합니다.
+> Visual Studio에서.NET Core 및.NET Standard 프로젝트에 대 한 정적 코드 분석이 지원 되지 않습니다. Msbuild의 일부로.NET Core 또는.NET Standard 프로젝트에서 코드 분석을 실행 하는 경우 유사한 오류가 표시 됩니다 **오류: CA0055: 에 대 한 플랫폼을 식별할 수 없습니다 \<your.dll >** 합니다. .NET Core 또는.NET Standard 프로젝트에서 코드를 분석 하려면 사용 하 여 [Roslyn 분석기](../code-quality/roslyn-analyzers-overview.md) 대신 합니다.
 
-## <a name="ide-integrated-development-environment-integration"></a>IDE (통합된 개발 환경) 통합
+## <a name="ide-integrated-development-environment-integration"></a>IDE(통합 개발 환경) 통합
 
 수동 또는 자동으로 프로젝트에서 코드 분석을 실행할 수 있습니다.
 
-프로젝트를 빌드할 때마다 코드 분석을 실행 하려면 선택한 **빌드에 코드 분석 사용** 프로젝트의 속성 페이지. 자세한 내용은 [방법: 설정 및 자동 코드 분석 사용 안 함](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)합니다.
+프로젝트를 빌드할 때마다 코드 분석을 실행 하려면 선택한 **빌드에 코드 분석 사용** 프로젝트의 속성 페이지. 자세한 내용은 [방법: 자동 코드 분석 활성화 및 비활성화](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)합니다.
 
 프로젝트에 대해 수동으로 코드 분석을 실행, 메뉴 모음에서 선택 **분석** > **코드 분석 실행** > **에서 코드 분석 실행 \<프로젝트 >** 합니다.
 
@@ -71,14 +71,14 @@ Public class MyClass
 
 - 최신 빌드의 일부로 코드 분석을 실행 합니다.
 
-체크 인 정책을 지정하여 위 사항을 확인할 수 있습니다. 자세한 내용은 [프로젝트 체크 인 정책 사용 하 여 코드 품질 향상](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md)합니다.
+체크 인 정책을 지정하여 위 사항을 확인할 수 있습니다. 자세한 내용은 [프로젝트 체크 인 정책 사용 하 여 코드 품질 향상](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)합니다.
 
 ## <a name="team-build-integration"></a>팀 빌드 통합
 
-빌드 시스템의 통합된 기능을 사용하여 빌드 프로세스의 일부로 분석 도구를 실행할 수 있습니다. 자세한 내용은 [Azure Pipelines](/azure/devops/pipelines/index?view=vsts)를 참조하세요.
+빌드 시스템의 통합된 기능을 사용하여 빌드 프로세스의 일부로 분석 도구를 실행할 수 있습니다. 자세한 내용은 [Azure 파이프라인](/azure/devops/pipelines/index?view=vsts)을 참조합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [Roslyn 분석기 개요](../code-quality/roslyn-analyzers-overview.md)
 - [규칙 집합을 사용하여 코드 분석 규칙 그룹화](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
-- [방법: 자동 코드 분석 사용 설정 및 해제](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)
+- [방법: 자동 코드 분석 활성화 및 비활성화](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

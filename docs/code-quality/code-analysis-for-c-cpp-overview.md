@@ -23,12 +23,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 35f694d9cc397800249dd9b4acd86bf63d22ad93
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
-ms.translationtype: HT
+ms.openlocfilehash: a1aeb3cea738a08850762083929741c082d7ccb6
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320711"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739861"
 ---
 # <a name="code-analysis-for-cc-overview"></a>C/C++용 코드 분석 개요
 
@@ -52,7 +52,7 @@ C:\>cl /analyze Sample.cpp
 
 ## <a name="pragma-support"></a>#pragma 지원
 
-`#pragma` 지시문을 사용해 경고를 오류로 간주하거나 경고의 활성화 및 비활성화, 코드 라인별 경고 표시를 생략할 수 있습니다. 자세한 내용은 [방법: C/C++ 프로젝트의 코드 분석 속성 설정](how-to-set-code-analysis-properties-for-c-cpp-projects.md)을 참조합니다.
+`#pragma` 지시문을 사용해 경고를 오류로 간주하거나 경고의 활성화 및 비활성화, 코드 라인별 경고 표시를 생략할 수 있습니다. 자세한 내용은 [방법: C/c + + 프로젝트에 대 한 코드 분석 속성 설정](how-to-set-code-analysis-properties-for-c-cpp-projects.md)합니다.
 
 ## <a name="annotation-support"></a>주석 지원
 
@@ -60,16 +60,16 @@ C:\>cl /analyze Sample.cpp
 
 ## <a name="run-analysis-tool-as-part-of-check-in-policy"></a>체크 인 정책의 일부로 분석 도구를 실행 합니다.
 
-모든 소스 코드 체크인이 특정 정책을 충족하도록 요구할 수 있습니다. 특히, 최신 로컬 빌드 과정에서 분석이 실행되도록 할 수 있습니다. 코드 분석 체크인 정책을 사용하도록 설정하는 방법에 대한 자세한 내용은 [코드 분석 체크인 정책 만들고 사용하기](../code-quality/creating-and-using-code-analysis-check-in-policies.md)를 참조하세요.
+모든 소스 코드 체크인이 특정 정책을 충족하도록 요구할 수 있습니다. 특히, 최신 로컬 빌드 과정에서 분석이 실행되도록 할 수 있습니다. 코드 분석 체크인 정책을 사용하도록 설정하는 방법에 대한 자세한 내용은 [코드 분석 체크인 정책 만들고 사용하기](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)를 참조하세요.
 
 ## <a name="team-build-integration"></a>팀 빌드 통합
 
 빌드 시스템의 통합 기능을 사용하여 [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] 빌드 절차에 코드 분석 도구 실행 단계를 추가할 수 있습니다. 자세한 내용은 [Azure 파이프라인](/azure/devops/pipelines/index?view=vsts)을 참조합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-- [빠른 시작: C/C++ 코드 분석](quick-start-code-analysis-for-c-cpp.md)
-- [연습: C/C++ 코드 결함 분석](walkthrough-analyzing-c-cpp-code-for-defects.md)
+- [빠른 시작: C/c + + 용 코드 분석](quick-start-code-analysis-for-c-cpp.md)
+- [연습: 오류에 대 한 C/c + + 코드 분석](walkthrough-analyzing-c-cpp-code-for-defects.md)
 - [C/C++용 코드 분석 경고](code-analysis-for-c-cpp-warnings.md)
 - [C++ Core 지침 검사기 사용](using-the-cpp-core-guidelines-checkers.md)
 - [C++ Core 지침 검사기 참조](code-analysis-for-cpp-corecheck.md)

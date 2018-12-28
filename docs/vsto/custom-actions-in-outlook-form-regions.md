@@ -11,17 +11,17 @@ dev_langs:
 helpviewer_keywords:
 - form regions [Office development in Visual Studio], custom actions
 - custom actions [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4e2ad8e1c3b55d479cb031fe920e3027dbc1788c
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 6b19b65c387e4ffc59108be71c143f130b347551
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671068"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441662"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Outlook 양식 영역의 사용자 지정 작업
   사용자가 Microsoft Office Outlook 항목에 응답할 수 있도록 단추를 표시 하는 작업입니다. 예를 들어, 메일 항목에 응답 하려면 사용자가 클릭 합니다 **회신**를 **전체 회신**, 또는 **앞으로** 작업 단추입니다. 이러한 각 작업을 새 메일 항목을 만들고 원래 항목의 정보를 사용 하 여 항목의 필드를 채웁니다.  
@@ -54,7 +54,7 @@ ms.locfileid: "50671068"
 ## <a name="customize-a-custom-action-at-runtime"></a>런타임 시 사용자 지정 동작을 사용자 지정  
  또한 코드를 사용 하 여 사용자 지정 작업 동작을 추가할 수 있습니다. 예를 들어 전자 메일 받는 사람 이름을 사용 하 고 새 약속 항목의 참석자로 해당 이름을 추가 하는 코드를 추가할 수 있습니다. 이 위해 처리 합니다 [CustomAction](/office/vba/api/Outlook.MailItem.CustomAction) 이벤트를 [MailItem 개체](/office/vba/api/Outlook.MailItem)합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Outlook 양식 영역 만들기](../vsto/creating-outlook-form-regions.md)   
  [연습: Outlook 양식 영역 디자인](../vsto/walkthrough-designing-an-outlook-form-region.md)   
  [Outlook 메시지 클래스를 사용 하 여 양식 영역을 연결 합니다.](../vsto/associating-a-form-region-with-an-outlook-message-class.md)  

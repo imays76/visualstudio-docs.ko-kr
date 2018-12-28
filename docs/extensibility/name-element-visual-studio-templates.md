@@ -2,9 +2,8 @@
 title: Name 요소 (Visual Studio 템플릿) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Name
 helpviewer_keywords:
@@ -15,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 743c732410c97aa795264dd6fe2495d2d14f2481
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 66e23b99c715f59a0c7a817c379e6cf06001c285
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638872"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561202"
 ---
 # <a name="name-element-visual-studio-templates"></a>Name 요소 (Visual Studio 템플릿)
 에 표시 된 대로 템플릿의 이름을 지정 합니다 **새 프로젝트** 하거나 **새 항목 추가** 대화 상자.  
@@ -66,7 +65,7 @@ ms.locfileid: "39638872"
 ## <a name="remarks"></a>설명  
  `Name`은 `TemplateData`의 필수 자식 요소입니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 프로젝트 템플릿에 대 한 메타 데이터는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 응용 프로그램입니다.  
   
 ```xml  
@@ -93,6 +92,6 @@ ms.locfileid: "39638872"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)   
  [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 539ab866056b97f7054dda1843870dcfdd4379d9
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: 358b61c5b09bfd9fb701bc44135101fe230dacce
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248140"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739269"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>메뉴 명령을 사용 하 여 확장 만들기
 이 연습에는 메모장을 실행 하는 메뉴 명령을 사용 하 여 확장을 만드는 방법을 보여 줍니다.  
@@ -126,4 +126,4 @@ ms.locfileid: "53248140"
   
 5. 옵션 및 속성 페이지 및 사용자 설정 확장 프로그램을 추가 합니다. [확장 속성 및 속성 창](../extensibility/extending-properties-and-the-property-window.md) 고 [사용자 설정 및 Ooptions 확장](../extensibility/extending-user-settings-and-options.md)  
   
-   다른 종류의 확장 프로젝트의 새 형식 만들기와 같은 좀 더 많은 작업이 필요 ([프로젝트를 확장할](../extensibility/extending-projects.md)), 편집기의 새 형식 만들기 ([만들기 사용자 지정 편집기 및 디자이너](../extensibility/creating-custom-editors-and-designers.md)), 구현 또는 사용자 격리 된 셸에서 확장: [Visual Studio 격리 셸](../extensibility/visual-studio-isolated-shell.md)
+   다른 종류의 확장 프로젝트의 새 형식 만들기와 같은 좀 더 많은 작업이 필요 ([프로젝트를 확장할](../extensibility/extending-projects.md)), 편집기의 새 형식 만들기 ([만들기 사용자 지정 편집기 및 디자이너](../extensibility/creating-custom-editors-and-designers.md)), 구현 또는 사용자 격리 된 셸에서 확장: [Visual Studio 격리 셸](/visualstudio/extensibility/shell/visual-studio-isolated-shell)

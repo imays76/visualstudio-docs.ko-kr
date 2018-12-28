@@ -11,17 +11,17 @@ dev_langs:
 helpviewer_keywords:
 - form regions [Office development in Visual Studio], guidelines
 - icons [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 535ab0329412b261b06fb2d04daefe817299dbe9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d2a052cbad69f87c5b25005ff21959841af55f68
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892014"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648757"
 ---
 # <a name="guidelines-to-create-outlook-form-regions"></a>Outlook 양식 영역 만들기 지침
   다음 정보를 통해 양식 영역을 최적화하고 잠재적인 문제를 방지할 수 있습니다.  
@@ -89,7 +89,7 @@ ms.locfileid: "49892014"
   
   **창을** 아이콘이 알림 영역에서 표시 됩니다는 **Alt**+**탭** 열기 대화 상자는 표시 바꾸기 또는 모두 바꾸기 양식 항목 영역입니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [런타임에 양식 영역 액세스](../vsto/accessing-a-form-region-at-run-time.md)   
  [Outlook 양식 영역 만들기](../vsto/creating-outlook-form-regions.md)   
  [연습: Outlook 양식 영역 디자인](../vsto/walkthrough-designing-an-outlook-form-region.md)   

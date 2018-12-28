@@ -2,9 +2,8 @@
 title: MaxFrameworkVersion 요소 (Visual Studio 템플릿) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - <MaxFrameworkVersion> Element (Visual Studio Templates)
 - MaxFrameworkVersion Element (Visual Studio Templates)
@@ -14,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12433fd96aee78c0f8f9ead3b531ae11b1d28f17
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 64f1550db7d2b3613bfa2e9d2da016cc1c6a3e4f
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636362"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561790"
 ---
 # <a name="maxframeworkversion-element-visual-studio-templates"></a>MaxFrameworkVersion 요소 (Visual Studio 템플릿)
 
@@ -60,7 +59,7 @@ ms.locfileid: "39636362"
 
 `MaxFrameworkVersion`는 선택적 요소입니다. `MaxFrameworkVersion` 필요를 하지 못하도록 실수로 템플릿에 대 한 지원 되는.NET Framework 버전을 제한 하지 않으면 요소를 생략 해야 합니다. .NET Framework 서식 파일에 적용할 수 없는 경우도 생략 해야 합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 표준에 대 한 메타 데이터를 보여 줍니다. [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 클래스 템플릿.
 
@@ -84,7 +83,7 @@ ms.locfileid: "39636362"
 
 이 예제에서는 서식 파일을 여는 데 필요한.NET Framework의 최대 버전 표시 `MaxFrameworkVersion`, 4.7.1 됩니다. 이 템플릿을 사용 하 여 만든 프로젝트는.NET Framework 버전 4.7.1 최대 대상 수 있습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
 - [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

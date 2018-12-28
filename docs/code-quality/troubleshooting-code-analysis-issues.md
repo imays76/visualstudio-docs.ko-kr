@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1c80e7421569804f6d6781b117522dd1ef1dea8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 34fce91db15d484b140aee291f9abd915d9399d2
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885891"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738795"
 ---
 # <a name="troubleshooting-code-analysis-issues"></a>코드 분석 문제 해결
 이 항목에는 다음 Visual Studio 코드 분석 문제에 대한 문제 해결 정보가 포함되어 있습니다.
@@ -32,4 +32,4 @@ ms.locfileid: "49885891"
 3. 규칙 집합을 다시 열고, 변경을 취소한 후 다시 저장합니다.
 
 ## <a name="see-also"></a>참고 항목
- [응용 프로그램 품질 분석](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md) [관리 코드 품질 분석](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md) [코드 분석 규칙 그룹화를 설정 하는 규칙을 사용 하 여](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
+ [응용 프로그램 품질 분석](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md) [관리 코드 품질 분석](../code-quality/code-analysis-for-managed-code-overview.md) [코드 분석 규칙 그룹화를 설정 하는 규칙을 사용 하 여](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)

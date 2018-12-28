@@ -24,17 +24,17 @@ helpviewer_keywords:
 - Office development in Visual Studio, Excel solutions
 - document-level customizations [Office development in Visual Studio], Excel
 - Office projects [Office development in Visual Studio], Excel
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 917a83a434dc27074b0d786f64fcdbdc5fd294d3
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: 64fac12a47a519496ecba3f31f3fd035ff2d9121
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027395"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647947"
 ---
 # <a name="excel-solutions"></a>Excel 솔루션
   Visual Studio에서는 Microsoft Office Excel용 VSTO 추가 기능 및 문서 수준 사용자 지정을 만드는 데 사용할 수 있는 프로젝트 템플릿을 제공합니다. 이러한 솔루션을 사용하여 Excel을 자동화하고, Excel 기능을 확장한 다음 Excel UI(사용자 인터페이스)를 사용자 지정할 수 있습니다. 문서 수준 사용자 지정 및 VSTO 추가 기능 간의 차이점에 대 한 자세한 내용은 참조 하세요. [Office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)합니다.  
@@ -62,7 +62,7 @@ ms.locfileid: "53027395"
 ##  <a name="doclevel"></a> Excel 용 문서 수준 사용자 지정 개발  
  Microsoft Office Excel용 문서 수준 사용자 지정은 특정 통합 문서와 연결된 어셈블리로 구성됩니다. 어셈블리는 일반적으로 UI를 사용자 지정하고 Excel을 자동화하여 통합 문서를 확장합니다. Excel 자체와 연결된 VSTO 추가 기능과 달리 사용자 지정에 구현하는 기능은 연결된 통합 문서가 Excel에서 열려 있는 경우에만 사용할 수 있습니다.  
 
- Excel 용 문서 수준 사용자 지정 프로젝트를 만들려면 Excel 통합 문서 또는 Excel 서식 파일 프로젝트 템플릿을 사용 합니다 **새 프로젝트** Visual Studio의 대화 상자. 자세한 내용은 [방법: Visual Studio에서 만드는 Office 프로젝트](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
+ Excel 용 문서 수준 사용자 지정 프로젝트를 만들려면 Excel 통합 문서 또는 Excel 서식 파일 프로젝트 템플릿을 사용 합니다 **새 프로젝트** Visual Studio의 대화 상자. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
 
  문서 수준 사용자 지정 작업에 대 한 자세한 내용은 참조 하세요. [의 문서 수준 사용자 지정 아키텍처](../vsto/architecture-of-document-level-customizations.md)합니다.  
 
@@ -74,7 +74,7 @@ ms.locfileid: "53027395"
 ##  <a name="applevel"></a> Excel 용 VSTO 추가 기능 개발  
  Microsoft Office Excel용 VSTO 추가 기능은 Excel에서 로드되는 어셈블리로 구성됩니다. 어셈블리는 일반적으로 UI를 사용자 지정하고 Excel을 자동화하여 Excel을 확장합니다. 특정 통합 문서와 연결 되는 문서 수준 사용자 지정과 달리 VSTO 추가 기능에서 구현 하는 기능은 단일 통합 문서로 제한 되지 않습니다.  
 
- Excel 용 VSTO 추가 기능 프로젝트를 만들려면 Excel 통합 문서 또는 Excel 서식 파일 프로젝트 템플릿을 사용 합니다 **새 프로젝트** Visual Studio의 대화 상자. 자세한 내용은 [방법: Visual Studio에서 만드는 Office 프로젝트](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
+ Excel 용 VSTO 추가 기능 프로젝트를 만들려면 Excel 통합 문서 또는 Excel 서식 파일 프로젝트 템플릿을 사용 합니다 **새 프로젝트** Visual Studio의 대화 상자. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
 
  VSTO 추가 기능이 작동하는 방법에 대한 일반적인 내용은 [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)를 참조하세요.
 
@@ -99,7 +99,7 @@ ms.locfileid: "53027395"
 
 |작업|추가 정보|  
 |----------|--------------------------|  
-|통합 문서에 작업 창 추가|[작업 창 개요](../vsto/actions-pane-overview.md)<br /><br /> [방법: Word 문서에 작업창을 추가 하거나 Excel 통합 문서](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)|  
+|통합 문서에 작업 창 추가|[작업 창 개요](../vsto/actions-pane-overview.md)<br /><br /> [방법: Word 문서 또는 Excel 통합 문서에 작업 창 추가](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)|  
 |워크시트에 XML 노드에 매핑된 확장된 범위 컨트롤 추가|[방법: 워크시트에 XMLMappedRange 컨트롤 추가](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)|  
 
 ### <a name="options-for-vsto-add-ins"></a>VSTO 추가 기능에 대한 옵션  

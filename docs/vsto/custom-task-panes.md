@@ -23,17 +23,17 @@ helpviewer_keywords:
 - custom task panes [Office development in Visual Studio]
 - task panes [Office development in Visual Studio], about custom task panes
 - custom task panes [Office development in Visual Studio], about custom task panes
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e4e8384bc86bf59216c353b0f4610d3863445781
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 79384ac86afe15afda8e6c99e15a519e66302014
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49889765"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648270"
 ---
 # <a name="custom-task-panes"></a>사용자 지정 작업창
   작업창은 일반적으로 Microsoft Office 응용 프로그램에서 창의 한쪽에 도킹된 사용자 인터페이스 패널입니다. 사용자 지정 작업창을 사용하면 사용자 고유의 작업창을 만들고 사용자에게 솔루션 기능에 액세스하기 위한 친숙한 인터페이스를 제공할 수 있습니다. 예를 들어 인터페이스에는 문서를 수정하거나 데이터 소스의 데이터를 표시하는 코드를 실행하는 컨트롤이 포함될 수 있습니다.  
@@ -86,7 +86,7 @@ ms.locfileid: "49889765"
 ## <a name="access-the-application-from-the-task-pane"></a>작업창에서 응용 프로그램에 액세스  
  사용자 정의 컨트롤에서 응용 프로그램을 자동화하려는 경우 코드에서 `Globals.ThisAddIn.Application`을 사용하여 개체 모델에 직접 액세스할 수 있습니다. 정적 `Globals` 클래스는 `ThisAddIn` 개체에 대한 액세스를 제공합니다. 이 개체의 `Application` 필드는 응용 프로그램의 개체 모델에 대한 진입점입니다.  
   
- 에 대 한 자세한 내용은 합니다 `Application` 필드를 `ThisAddIn` 개체를 참조 하십시오 [프로그램 VSTO 추가 기능](../vsto/programming-vsto-add-ins.md)합니다. 사용자 지정 작업창에서 응용 프로그램을 자동화 하는 방법을 보여주는 연습을 참조 하세요 [연습: 자동 사용자 지정 작업창에서 응용 프로그램](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)합니다. 에 대 한 자세한 내용은 합니다 `Globals` 클래스를 참조 하십시오 [Office 프로젝트의에서 개체에 대 한 전역 액세스](../vsto/global-access-to-objects-in-office-projects.md)합니다.  
+ 에 대 한 자세한 내용은 합니다 `Application` 필드를 `ThisAddIn` 개체를 참조 하십시오 [프로그램 VSTO 추가 기능](../vsto/programming-vsto-add-ins.md)합니다. 사용자 지정 작업창에서 응용 프로그램을 자동화 하는 방법을 보여주는 연습을 참조 하세요. [연습: 사용자 지정 작업창에서 응용 프로그램 자동](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)합니다. 에 대 한 자세한 내용은 합니다 `Globals` 클래스를 참조 하십시오 [Office 프로젝트의에서 개체에 대 한 전역 액세스](../vsto/global-access-to-objects-in-office-projects.md)합니다.  
   
 ## <a name="manage-the-user-interface-of-the-task-pane"></a>작업창의 사용자 인터페이스 관리  
  작업창을 만든 후 <xref:Microsoft.Office.Tools.CustomTaskPane> 개체의 속성 및 이벤트를 사용하여 작업창의 사용자 인터페이스를 제어하고 사용자가 작업창을 변경할 때 응답할 수 있습니다.  
@@ -96,7 +96,7 @@ ms.locfileid: "49889765"
   
  사용자가 클릭 하 여 언제 든 지 작업창에 닫을 수는 **닫습니다** 작업창의 모퉁이 있는 단추 (X). 그러나 사용자가 사용자 지정 작업창을 다시 열 수 있는 기본 방법은 없습니다. 표시할 방법을 제공하지 않는 한 사용자 지정 작업창을 닫은 사용자는 사용자 지정 작업창을 다시 볼 수 없습니다.  
   
- VSTO 추가 기능에서 사용자 지정 작업창을 만드는 경우 사용자가 사용자 지정 작업창을 표시하거나 숨기기 위해 클릭할 수 있는 UI 요소(예: 단추)도 만들어야 합니다. Microsoft Office 응용 프로그램에서 리본 메뉴 사용자 지정을 지원하는 사용자 지정 작업창을 만드는 경우 사용자 지정 작업창을 표시하거나 숨기는 단추를 사용하여 리본 메뉴에 컨트롤 그룹을 추가할 수 있습니다. 이 작업을 수행 하는 방법을 보여주는 연습을 참조 하세요 [연습: 사용자 지정 작업창과 리본 단추 동기화](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)합니다.  
+ VSTO 추가 기능에서 사용자 지정 작업창을 만드는 경우 사용자가 사용자 지정 작업창을 표시하거나 숨기기 위해 클릭할 수 있는 UI 요소(예: 단추)도 만들어야 합니다. Microsoft Office 응용 프로그램에서 리본 메뉴 사용자 지정을 지원하는 사용자 지정 작업창을 만드는 경우 사용자 지정 작업창을 표시하거나 숨기는 단추를 사용하여 리본 메뉴에 컨트롤 그룹을 추가할 수 있습니다. 이 작업을 수행 하는 방법을 보여주는 연습을 참조 하세요. [연습: 사용자 지정 작업창과 리본 단추 동기화](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)합니다.  
   
  Microsoft Office 응용 프로그램에서 리본 메뉴 사용자 지정을 지원하지 않는 사용자 지정 작업창을 만드는 경우 사용자 지정 작업창을 표시하거나 숨기는 <xref:Microsoft.Office.Core.CommandBarButton>을 추가할 수 있습니다.  
   
@@ -140,7 +140,7 @@ ms.locfileid: "49889765"
   
 - [Word, InfoPath 및 PowerPoint](#WordAndInfoPath)  
   
-  ![비디오 링크](../vsto/media/playvideo.gif "비디오 링크") 관련된 비디오 데모를 참조 하세요. [Word VSTO 추가 기능에서 작업창 i: 관리 하는 방법?](http://go.microsoft.com/fwlink/?LinkId=136781)합니다.  
+  ![비디오 링크](../vsto/media/playvideo.gif "비디오 링크") 관련된 비디오 데모를 참조 하세요. [어떻게 할까요? Word VSTO 추가 기능에서 작업창을 관리 하나요? ](http://go.microsoft.com/fwlink/?LinkId=136781).  
   
 ##  <a name="Outlook"></a> Outlook  
  Outlook에 대한 사용자 지정 작업창을 만드는 경우 사용자 지정 작업창이 특정 탐색기 또는 검사기 창에 연결됩니다. 탐색기 폴더의 내용을 표시 하는 windows 되며 검사기 전자 메일 메시지 또는 작업 같은 항목을 표시 하는 창입니다.  
@@ -220,8 +220,8 @@ ms.locfileid: "49889765"
   
 -   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.WindowDeactivate](/previous-versions/office/developer/office-2010/ff763093(v=office.14))
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [방법: 응용 프로그램에 사용자 지정 작업창 추가](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
  [연습: 사용자 지정 작업창에서 응용 프로그램을 자동화](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
- [연습:는 사용자 지정 작업창과 리본 단추 동기화](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   
- [연습: Outlook에서 전자 메일 메시지를 사용 하 여 사용자 지정 작업창을 표시](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)  
+ [연습: 사용자 지정 작업창과 리본 단추 동기화](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   
+ [연습: Outlook에서 전자 메일 메시지를 사용 하 여 사용자 지정 작업창을 표시 합니다.](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)  

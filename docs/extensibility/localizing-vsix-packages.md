@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54de0b219eb1c86a413b7a95e87a48e7f65ac9ec
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 85d32f25e8dd1f2f56af0857f2be0ff24c4d3126
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636976"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740249"
 ---
 # <a name="localizing-vsix-packages"></a>VSIX 패키지 지역화
 
@@ -58,7 +58,7 @@ Vsixlangpack 파일을 만들 때 설정 해야 합니다 `Include in Vsix` 속�
 
 2.  에 **속성 표에서**, 클릭 **Vsix에 포함**, 해당 값을 설정 하 고 `true`입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ### <a name="description"></a>설명
 
@@ -102,10 +102,10 @@ Vsixlangpack 파일을 만들 때 설정 해야 합니다 `Include in Vsix` 속�
 </PackageLanguagePackManifest>
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 |제목|설명|
 |-----------|-----------------|
-|[VSIX 언어 팩 스키마 2.0 참조](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|VSIX 언어 팩에는.vsix 배포 파일이의 지역화 정보를 설명합니다.|
+|[VSIX 언어 팩 스키마 2.0 참조](/visualstudio/extensibility/vsix-language-pack-schema-2-0-reference)|VSIX 언어 팩에는.vsix 배포 파일이의 지역화 정보를 설명합니다.|
 |[VSIX 패키지 분석](../extensibility/anatomy-of-a-vsix-package.md)|Vsix 패키지의 내용과 구조를 설명합니다.|
 |[메뉴 명령 지역화](../extensibility/localizing-menu-commands.md)|확장의 다른 텍스트 리소스를 지역화 하는 방법을 보여 줍니다.|

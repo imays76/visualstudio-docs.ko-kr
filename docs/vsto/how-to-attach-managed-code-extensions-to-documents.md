@@ -1,5 +1,5 @@
 ---
-title: '방법: 연결 관리 되는 문서에 대 한 코드 확장'
+title: '방법: 문서에 관리 코드 확장명 연결'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - managed code extensions [Office development in Visual Studio], attaching
 - documents [Office development in Visual Studio], managed code extensions
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c6e39f27caf9d321bb83666d72114a9675091f03
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: aa7eda6dfed28ceebb9b400568463cc689993f1e
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257045"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646895"
 ---
-# <a name="how-to-attach-managed-code-extensions-to-documents"></a>방법: 연결 관리 되는 문서에 대 한 코드 확장
+# <a name="how-to-attach-managed-code-extensions-to-documents"></a>방법: 문서에 관리 코드 확장명 연결
   기존 Microsoft Office Word 문서 또는 Microsoft Office Excel 통합 문서에 사용자 지정 어셈블리를 연결할 수 있습니다. Microsoft Office 프로젝트와 Visual Studio에 개발 도구에서 지원 되는 모든 파일 형식 문서 또는 통합 문서를 수 있습니다. 자세한 내용은 [의 문서 수준 사용자 지정 아키텍처](../vsto/architecture-of-document-level-customizations.md)합니다.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -33,7 +33,7 @@ ms.locfileid: "35257045"
 > [!NOTE]  
 >  사용자 지정 코드를 지정된 된 문서에 없는 컨트롤을 필요로 하는 경우 로드 되지 것입니다.  
   
- ![비디오 링크](../vsto/media/playvideo.gif "비디오 링크") 관련된 비디오 데모를 참조 하세요. [Word 문서에서 VSTO 어셈블리를 분리 하거나 i: 연결 하려면 어떻게?](http://go.microsoft.com/fwlink/?LinkId=136782)합니다.  
+ ![비디오 링크](../vsto/media/playvideo.gif "비디오 링크") 관련된 비디오 데모를 참조 하세요. [어떻게 할까요? 연결 또는 분리를 VSTO 어셈블리 Word 문서에서? ](http://go.microsoft.com/fwlink/?LinkId=136782).  
   
 ### <a name="to-attach-managed-code-extensions-to-a-document"></a>문서에 관리 코드 확장명 연결  
   
@@ -53,7 +53,7 @@ ms.locfileid: "35257045"
   
 4.  프로젝트를 빌드하고 사용자 지정을 연결 하려는 컴퓨터의 응용 프로그램을 실행 합니다. 컴퓨터는 Visual Studio 2010 Tools for Office Runtime 설치 있어야 합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [ServerDocument 클래스를 사용 하 여 서버의 문서 관리](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
  [방법: 문서에서 관리 코드 확장명 제거](../vsto/how-to-remove-managed-code-extensions-from-documents.md)   
  [Office 솔루션에서 응용 프로그램 및 배포 매니페스트](../vsto/application-and-deployment-manifests-in-office-solutions.md)  

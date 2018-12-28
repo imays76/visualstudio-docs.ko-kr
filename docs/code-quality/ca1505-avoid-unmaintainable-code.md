@@ -1,5 +1,5 @@
 ---
-title: 'CA1505: 유지 관리할 수 없는 코드는 사용하지 마십시오.'
+title: 'CA1505: 유지 관리할 수 없는 코드를 방지 합니다.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -16,14 +16,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9aae34f6e999bcf74fdfbae4597b22529863e34f
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 7678b0f6b435929c9e53a40062155842e273bbdc
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546917"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740314"
 ---
-# <a name="ca1505-avoid-unmaintainable-code"></a>CA1505: 유지 관리할 수 없는 코드는 사용하지 마십시오.
+# <a name="ca1505-avoid-unmaintainable-code"></a>CA1505: 유지 관리할 수 없는 코드를 방지 합니다.
 
 |||
 |-|-|
@@ -36,7 +36,7 @@ ms.locfileid: "45546917"
  형식 또는 메서드에 낮은 유지 관리 인덱스 값이 있습니다.
 
 ## <a name="rule-description"></a>규칙 설명
- 유지 관리 인덱스는 다음 메트릭을 사용 하 여 계산 됩니다: 줄의 코드, 프로그램 볼륨 및 순환 복잡성입니다. 프로그램 볼륨은 형식 또는 코드의 연산자 및 피연산자의 수를 기반으로 하는 방법에 대 한 이해 하기 어려운 이유는 측정값입니다. 순환 복잡성은 구조적 형식 또는 메서드의 복잡성을 측정 합니다. 코드 메트릭에 대 한 자세히 알아볼 수 있습니다 [측정 복잡성과 관리 되는 코드 관리 용이성](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)합니다.
+ 유지 관리 인덱스는 다음 메트릭을 사용 하 여 계산 됩니다: 줄의 코드, 프로그램 볼륨 및 순환 복잡성입니다. 프로그램 볼륨은 형식 또는 코드의 연산자 및 피연산자의 수를 기반으로 하는 방법에 대 한 이해 하기 어려운 이유는 측정값입니다. 순환 복잡성은 구조적 형식 또는 메서드의 복잡성을 측정 합니다. 코드 메트릭에 대 한 자세히 알아볼 수 있습니다 [측정 복잡성과 관리 되는 코드 관리 용이성](../code-quality/code-metrics-values.md)합니다.
 
  낮은 유지 관리 인덱스를 나타내고 형식 또는 메서드를 유지 관리 하기 어렵고 다시 디자인 좋은 후보가 됩니다.
 
@@ -46,7 +46,7 @@ ms.locfileid: "45546917"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
  형식 또는 메서드는 여전히 크더라도 큰 크기로 나 형식 또는 메서드를 분할할 수 없는 경우 경우이 경고를 제외 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [유지 관리 경고](../code-quality/maintainability-warnings.md)
-- [관리 코드의 복잡성 및 유지 관리 용이성 측정](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+- [관리 코드의 복잡성 및 유지 관리 용이성 측정](../code-quality/code-metrics-values.md)

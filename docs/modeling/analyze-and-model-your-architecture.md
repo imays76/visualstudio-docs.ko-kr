@@ -32,12 +32,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b32f5585c71f5767a907d9f3eb9c2dc8329ab97
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 0e9dd37f3db5bc231a831879d2620ad55a50c3b7
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348881"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740447"
 ---
 # <a name="analyze-and-model-your-architecture"></a>아키텍처 분석 및 모델링
 
@@ -49,15 +49,15 @@ ms.locfileid: "51348881"
 
 * 개발 프로세스의 일부로 응용 프로그램 수명 주기 전체에 걸쳐 다양한 상세 수준으로 모델을 만듭니다.
 
-참조 [시나리오: 시각화를 사용 하 고 모델링 하 여 디자인 변경](../modeling/scenario-change-your-design-using-visualization-and-modeling.md)합니다.
+참조 [시나리오: 모델링 및 시각화를 사용 하 여 디자인 변경](../modeling/scenario-change-your-design-using-visualization-and-modeling.md)합니다.
 
 ## <a name="to"></a>대상
 
 |||
 |-|-|
-|**코드 시각화**:<br /><br /> -코드 맵을 만들어서 코드 구성 및 관계 참조 하세요. 어셈블리, 네임스페이스, 클래스, 메서드 간의 종속성을 시각화합니다.<br />-코드에서 클래스 다이어그램을 만들어서 클래스 구조 및 특정 프로젝트에 대 한 멤버를 참조 하세요.<br />-코드의 유효성을 검사 하는 종속성 다이어그램을 만들어 코드와 해당 디자인 간에 충돌을 확인 합니다.|-   [코드 시각화](../modeling/visualize-code.md)<br />-   [작업 클래스 및 기타 형식 (클래스 디자이너)](../ide/working-with-classes-and-other-types-class-designer.md)<br />-   [동영상: Visual Studio 2015 코드 맵으로 코드의 디자인 이해](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)<br />-   [비디오: 실시간에서 아키텍처 종속성 유효성 검사](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)|
-|**아키텍처 정의**:<br /><br /> 정의 및 종속성 다이어그램을 만들어서 코드 구성 요소 간의 종속성에 제약 조건을 적용 합니다.|-   [동영상: Visual Studio (채널 9)를 사용 하 여 아키텍처 종속성 유효성 검사](https://channel9.msdn.com/Events/Connect/2016/170)|
-|**요구 사항 및 의도한 디자인을 사용하여 시스템의 유효성을 검사합니다.**<br /><br /> -의도 한 아키텍처를 설명 하는 종속성 다이어그램을 사용 하 여 코드 종속성의 유효성을 검사 하 고 디자인과 충돌할 수 있는 변경을 방지 합니다.|-   [동영상: Visual Studio (채널 9)를 사용 하 여 아키텍처 종속성 유효성 검사](https://channel9.msdn.com/Events/Connect/2016/170)|
+|**코드 시각화**:<br /><br /> -코드 맵을 만들어서 코드 구성 및 관계 참조 하세요. 어셈블리, 네임스페이스, 클래스, 메서드 간의 종속성을 시각화합니다.<br />-코드에서 클래스 다이어그램을 만들어서 클래스 구조 및 특정 프로젝트에 대 한 멤버를 참조 하세요.<br />-코드의 유효성을 검사 하는 종속성 다이어그램을 만들어 코드와 해당 디자인 간에 충돌을 확인 합니다.|-   [코드 시각화](../modeling/visualize-code.md)<br />-   [작업 클래스 및 기타 형식 (클래스 디자이너)](../ide/class-designer/designing-and-viewing-classes-and-types.md)<br />-   [비디오: Visual Studio 2015 코드 맵으로 코드의 디자인 이해](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)<br />-   [비디오: 실시간에서 아키텍처 종속성 유효성 검사](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)|
+|**아키텍처 정의**:<br /><br /> 정의 및 종속성 다이어그램을 만들어서 코드 구성 요소 간의 종속성에 제약 조건을 적용 합니다.|-   [비디오: Visual Studio (채널 9)를 사용 하 여 아키텍처 종속성 유효성 검사](https://channel9.msdn.com/Events/Connect/2016/170)|
+|**요구 사항 및 의도한 디자인을 사용하여 시스템의 유효성을 검사합니다.**<br /><br /> -의도 한 아키텍처를 설명 하는 종속성 다이어그램을 사용 하 여 코드 종속성의 유효성을 검사 하 고 디자인과 충돌할 수 있는 변경을 방지 합니다.|-   [비디오: Visual Studio (채널 9)를 사용 하 여 아키텍처 종속성 유효성 검사](https://channel9.msdn.com/Events/Connect/2016/170)|
 |**모델 및 다이어그램 사용자 지정**:<br /><br /> -자체 도메인 특정 언어를 만듭니다.|-   [Modeling SDK for Visual Studio-도메인별 언어](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)|
 |**T4 템플릿을 사용하여 텍스트 생성**:<br /><br /> -텍스트 기반 파일을 생성 하려면 템플릿의 내부 제어 논리 및 텍스트 블록이 사용 합니다.<br /> -Visual Studio에 포함 하는 MSBuild 사용 하 여 T4 템플릿 빌드|-   [코드 생성 및 T4 텍스트 템플릿](../modeling/code-generation-and-t4-text-templates.md)|
 |**Team Foundation 버전 제어를 사용하여 모델, 다이어그램 및 코드 맵 공유**:<br /><br /> -추가 코드 맵, 프로젝트 및 종속성 다이어그램에 Team Foundation 버전 제어와 공유할 수 있습니다 합니다.| |
@@ -109,7 +109,7 @@ DSL은 특정 용도에 맞게 디자인하는 표기법입니다. Visual Studio
 
 [Visual Studio 시각화 및 모델링 도구 포럼](http://go.microsoft.com/fwlink/?LinkId=184720)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [새로운 기능](../modeling/what-s-new-for-design-in-visual-studio.md)
 - [DevOps 및 응용 프로그램 수명 주기 관리](/azure/devops/user-guide/devops-alm-overview)

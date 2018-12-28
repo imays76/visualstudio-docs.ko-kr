@@ -9,17 +9,17 @@ dev_langs:
 - ''
 helpviewer_keywords:
 - ''
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3f821b9769b9353fbee6379ddc1b3826f87ac2de
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 53286b4545a45f1b3ed49d9470501cde9d2cca74
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671095"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648909"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Office의 COM, VSTO 및 VBA 추가 기능에 대 한 개발 모범 사례
   Office 용 COM, VSTO, VBA 추가 기능을 개발 하는 경우이 문서에 설명 된 개발 모범 사례를 따르세요.   확인 하는 데 도움이 됩니다.
@@ -34,7 +34,7 @@ ms.locfileid: "50671095"
  Office 추가 기능 설치 프로세스 중 설치 여부 검색 추가 기능에 필요 없는 것이 좋습니다. Office를 설치 하지 않은 경우에서 추가 기능을 설치할 수 있으며 사용자는 Office가 설치 된 후에 액세스할 수 합니다. 
   
 ## <a name="use-embedded-interop-types-nopia"></a>포함 된 Interop 형식 (NoPIA)를 사용 합니다.  
-솔루션이.NET 4.0을 사용 하거나 나중에 사용 하는 경우 포함 된 interop 형식 (NoPIA) 대신에 따라는 Office 주 Interop 어셈블리 (PIA) 재배포 가능 합니다. 형식 포함을 사용 하 여 솔루션의 설치 크기를 줄이는 및 향후 호환성을 보장 합니다. Office 2010은 office PIA 재배포 가능 파일을 함께 제공 되는 마지막 버전 이었습니다. 자세한 내용은 [연습: Microsoft Office 어셈블리의 형식 정보 포함](https://msdn.microsoft.com/library/ee317478.aspx) 하 고 [형식 동등성 및 포함 된 interop 형식](/windows/uwp/porting/desktop-to-uwp-root).
+솔루션이.NET 4.0을 사용 하거나 나중에 사용 하는 경우 포함 된 interop 형식 (NoPIA) 대신에 따라는 Office 주 Interop 어셈블리 (PIA) 재배포 가능 합니다. 형식 포함을 사용 하 여 솔루션의 설치 크기를 줄이는 및 향후 호환성을 보장 합니다. Office 2010은 office PIA 재배포 가능 파일을 함께 제공 되는 마지막 버전 이었습니다. 자세한 내용은 [연습: Microsoft Office 어셈블리의 형식 정보 포함](https://msdn.microsoft.com/library/ee317478.aspx) 하 고 [형식 동등성 및 포함 된 interop 형식](/windows/uwp/porting/desktop-to-uwp-root)합니다.
 
 솔루션을 이전 버전의.NET에서는.NET 4.0 이상을 사용 하 여 솔루션을 업데이트 하는 것이 좋습니다. .NET 4.0 이상을 사용 하 여 최신 버전의 Windows 런타임 필수 구성 요소를 줄입니다.
   

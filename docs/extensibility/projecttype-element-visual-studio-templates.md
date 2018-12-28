@@ -2,9 +2,8 @@
 title: ProjectType 요소 (Visual Studio 템플릿) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectType
 helpviewer_keywords:
@@ -15,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14726d5338830eb4044d22778d886241cfd0cd83
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3531eb6ee1c974b0978904572d47ae581d6a9cd0
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921134"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561881"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>ProjectType 요소 (Visual Studio 템플릿)
 지정 된 그룹에 나타나도록 프로젝트 템플릿을 분류 합니다 **새 프로젝트** 하거나 **새 항목 추가** 대화 상자.  
@@ -58,9 +57,9 @@ ms.locfileid: "49921134"
   
  이 값에는 프로젝트 템플릿 만들고, 유형과 다음 값 중 하나를 포함 해야 합니다 지정 합니다.  
   
-- `CSharp`: 템플릿이 만들도록 지정을 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 프로젝트 또는 항목입니다.  
+- `CSharp`: 서식 파일을 만들도록 지정을 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 프로젝트 또는 항목입니다.  
   
-- `VisualBasic`: 템플릿이 만들도록 지정을 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 프로젝트 또는 항목입니다.  
+- `VisualBasic`: 서식 파일을 만들도록 지정을 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 프로젝트 또는 항목입니다.  
   
 - `Web`: 템플릿이 웹 프로젝트 또는 항목을 만들도록 지정 합니다. 경우는 `ProjectType` 이 값을 포함 하는 요소, 프로젝트 또는 항목의 언어에 정의 된 합니다 [ProjectSubType 요소 (Visual Studio 템플릿)](../extensibility/projectsubtype-element-visual-studio-templates.md)합니다.  
   
@@ -98,7 +97,7 @@ ms.locfileid: "49921134"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)   
  [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)   
  [ProjectSubType 요소 (Visual Studio 템플릿)](../extensibility/projectsubtype-element-visual-studio-templates.md)

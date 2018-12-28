@@ -30,17 +30,17 @@ helpviewer_keywords:
 - Sheet1_Shutdown
 - events [Office development in Visual Studio]
 - ThisAddIn_Shutdown
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 85cbee61cde596831d06aa83af326cc0a0534f0f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5ed18bdcf0f4a7ef6dbb8a358cbf11fd7b49e628
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949684"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647650"
 ---
 # <a name="events-in-office-projects"></a>Office 프로젝트의 이벤트
   각 Office 프로젝트 템플릿은 몇 가지 이벤트 처리기를 자동으로 생성합니다. 문서 수준 사용자 지정의 이벤트 처리기는 VSTO 추가 기능의 이벤트 처리기와 약간 다릅니다.  
@@ -48,7 +48,7 @@ ms.locfileid: "49949684"
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
 ## <a name="document-level-projects"></a>문서 수준 프로젝트  
- Visual Studio에서는 문서 수준 사용자 지정의 신규 또는 기존 문서나 워크시트 뒤에서 생성된 코드를 제공합니다. 이 코드에서는 두 가지 이벤트인 **Startup** 및 **Shutdown**을 발생시킵니다.  
+ Visual Studio에서는 문서 수준 사용자 지정의 신규 또는 기존 문서나 워크시트 뒤에서 생성된 코드를 제공합니다. 이 코드 두 가지 이벤트를 발생 시킵니다. **시작** 하 고 **종료**합니다.  
   
 ### <a name="startup-event"></a>Startup 이벤트  
  **Startup** 이벤트는 문서가 실행 중이고 어셈블리의 모든 초기화 코드가 실행된 후 각 호스트 항목(문서, 통합 문서 또는 워크시트)에 대해 발생합니다. 이 이벤트는 코드가 실행되고 있는 클래스의 생성자에서 실행될 마지막 항목입니다. 호스트 항목에 대 한 자세한 내용은 참조 하세요. [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)합니다.  
@@ -155,7 +155,7 @@ ms.locfileid: "49949684"
 > [!NOTE]  
 >  레지스트리를 수정하여 Outlook이 종료될 때 Outlook에서 <xref:Microsoft.Office.Tools.AddInBase.Shutdown> 이벤트를 강제로 발생시킬 수 있습니다. 그러나 관리자가 이 설정을 되돌리는 경우 `ThisAddIn_Shutdown` 메서드에 추가하는 모든 코드가 Outlook이 종료될 때 더 이상 실행되지 않습니다. 자세한 내용은 [Outlook 2010의 종료 변경](http://go.microsoft.com/fwlink/?LinkID=184614)합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Office 솔루션 개발](../vsto/developing-office-solutions.md)   
  [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [문서 수준 사용자 지정 프로그래밍](../vsto/programming-document-level-customizations.md)   

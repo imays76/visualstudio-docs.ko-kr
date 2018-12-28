@@ -12,17 +12,17 @@ helpviewer_keywords:
 - data caching [Office development in Visual Studio], protected documents
 - datasets [Office development in Visual Studio], caching
 - data [Office development in Visual Studio], caching
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c15d3fee1728118df2701cc940dc288ae500942d
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 21e2b0501b96a1c04cee72487678b3e909440fb4
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255345"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647293"
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>방법: 암호로 보호 된 문서의 데이터 캐시
   문서 또는 통합 문서를 암호로 보호 되는 데이터 캐시에 데이터를 추가 하는 경우 캐시 된 데이터의 변경 내용은 자동으로 저장 되지 않습니다. 프로젝트의 두 메서드를 재정의 하 여 캐시 된 데이터 변경 내용을 저장할 수 있습니다.  
@@ -43,7 +43,7 @@ ms.locfileid: "35255345"
   
      문서를 저장 한 후의 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 문서 보호를 적용할 수 있는 옵션을 제공 하려면이 메서드를 호출 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 코드 예제에는 암호로 보호 되는 Word 문서에서 데이터를 캐시 하는 방법을 보여 줍니다. 코드에서 보호를 제거 하기 전에 합니다 <xref:Microsoft.Office.Tools.Word.DocumentBase.UnprotectDocument%2A> 메서드를 현재 저장 <xref:Microsoft.Office.Tools.Word.Document.ProtectionType%2A> 값을 동일한 형식의 보호에 다시 적용할 수 있도록 합니다 <xref:Microsoft.Office.Tools.Word.DocumentBase.ProtectDocument%2A> 메서드.  
   
  [!code-csharp[Trin_CachedDataProtectedDocument#1](../vsto/codesnippet/CSharp/Trin_CachedDataProtectedDocument/ThisDocument.cs#1)]
@@ -67,7 +67,7 @@ ms.locfileid: "35255345"
   
      통합 문서 저장 되 면는 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 통합 문서에 대 한 보호를 적용할 수 있는 옵션을 제공 하려면이 메서드를 호출 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 코드 예제에는 암호로 보호 되는 Excel 통합 문서에서 데이터를 캐시 하는 방법을 보여 줍니다. 코드에서 보호를 제거 하기 전에 합니다 <xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A> 메서드를 현재 저장 <xref:Microsoft.Office.Tools.Excel.Workbook.ProtectStructure%2A> 및 <xref:Microsoft.Office.Tools.Excel.Workbook.ProtectWindows%2A> 값을 동일한 형식의 보호에 다시 적용할 수 있도록는 <xref:Microsoft.Office.Tools.Excel.WorkbookBase.ProtectDocument%2A> 메서드.  
   
  [!code-vb[Trin_CachedDataProtectedWorkbook#1](../vsto/codesnippet/VisualBasic/Trin_CachedDataProtectedWorkbook/ThisWorkbook.vb#1)]
@@ -76,9 +76,9 @@ ms.locfileid: "35255345"
 ### <a name="compile-the-code"></a>코드 컴파일  
  이 코드를 추가 합니다 `ThisWorkbook` 프로젝트의 클래스입니다. 이 코드는 암호 라는 필드에 저장 되어 있다고 가정 `securelyStoredPassword`합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [데이터 캐시](../vsto/caching-data.md)   
  [방법: 오프 라인 이나 서버에서 사용 하기 위해 데이터 캐시](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
- [방법: 프로그래밍 방식으로 Office 문서에서 데이터 소스를 캐싱](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)  
+ [방법: Office 문서에서 데이터 원본을 프로그래밍 방식으로 캐시](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)  
   
   

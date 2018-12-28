@@ -1,6 +1,7 @@
 ---
 title: '&lt;friendlyName&gt; 요소 (Visual Studio에서 Office 개발)'
-ms.custom: ''
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -10,17 +11,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <friendlyName> element
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 26842ab926ed7ef0ea2cfd62bf032c25b2c69d02
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: bcb22c14931992f572f7ffbb4ea74bec852714d0
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548478"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648460"
 ---
 # <a name="ltfriendlynamegt-element-office-development-in-visual-studio"></a>&lt;friendlyName&gt; 요소 (Visual Studio에서 Office 개발)
   `friendlyName` 네임스페이스의 `vstov4` 요소는 설치된 프로그램 목록에 표시되는 이름을 저장합니다.  
@@ -40,7 +41,7 @@ ms.locfileid: "34548478"
 ## <a name="vsto-add-in-example"></a>VSTO 추가 기능 예제  
   
 ### <a name="description"></a>설명  
- 다음 코드 예제에서는 `friendlyName` 을 사용하여 배포된 응용 프로그램 수준 솔루션의 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]요소를 보여 줍니다. 이 코드 예제는에 제공 된 큰 예제의 일부 [Office 솔루션에 대 한 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)합니다.  
+ 다음 코드 예제에서는 `friendlyName` 을 사용하여 배포된 응용 프로그램 수준 솔루션의 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]요소를 보여 줍니다. 이 코드 예제는에서 제공 하는 더 큰 예제의 일부입니다 [Office 솔루션에 대 한 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)합니다.  
   
 ### <a name="code"></a>코드  
   
@@ -50,7 +51,7 @@ ms.locfileid: "34548478"
 </vstov4:friendlyName>  
 ```  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Office 솔루션에 대 한 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)   
  [Office 솔루션의 배포 매니페스트](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce 응용 프로그램 매니페스트](/visualstudio/deployment/clickonce-application-manifest)  

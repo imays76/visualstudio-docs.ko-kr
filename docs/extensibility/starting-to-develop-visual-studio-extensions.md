@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5d6e84bc526cf597fbfd22bd36b93cd419ba0d6
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: eaae915b8e201b5596bdd435c432ffccfa9ad8c3
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349665"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739921"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Visual Studio 확장 개발 시작
 
@@ -64,7 +64,7 @@ Visual Studio 확장을 개발 하려면 Visual Studio 외에도 Visual Studio S
 
 -   [Visual Studio의 다른 부분 확장](../extensibility/extending-other-parts-of-visual-studio.md)
 
--   [Visual Studio Shell(격리)](../extensibility/visual-studio-isolated-shell.md)
+-   [Visual Studio Shell(격리)](/visualstudio/extensibility/shell/visual-studio-isolated-shell)
 
 ##  <a name="BKMK_ProjectTemplate"></a> 프로젝트 템플릿은 무엇 VSSDK에서 제공 하는?
  확장의 두 가지 주요 유형은 Vspackage 및 MEF 확장입니다. 일반적으로 VSPackage 확장을 사용 하거나 명령, 도구 창 및 프로젝트를 확장 하는 확장에 사용 됩니다. MEF 확장은 확장 하거나 Visual Studio 편집기 사용자 지정 하는 데 사용 됩니다.
@@ -75,13 +75,13 @@ Visual Studio 확장을 개발 하려면 Visual Studio 외에도 Visual Studio S
 
  격리 셸 템플릿 버전의 브랜딩 및 사용자 고유의으로 배포할 수 있는 Visual Studio shell에서 확장 패키지에 사용 됩니다. 다음 항목에서는 각 유형의 확장을 사용 하 여 시작 하는 방법을 보여 줍니다.
 
--   메뉴 명령: [메뉴 명령을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-menu-command.md)
+-   메뉴 명령: [메뉴 명령을 사용하여 확장 만들기](../extensibility/creating-an-extension-with-a-menu-command.md)
 
--   Windows 도구: [도구 창으로 확장 만들기](../extensibility/creating-an-extension-with-a-tool-window.md)
+-   도구 창: [도구 창으로 확장 만들기](../extensibility/creating-an-extension-with-a-tool-window.md)
 
--   편집기 확장: [편집기 항목 템플릿을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-an-editor-item-template.md)
+-   편집기 확장: [편집기 항목 템플릿을 사용하여 확장 만들기](../extensibility/creating-an-extension-with-an-editor-item-template.md)
 
--   기본 Vspackage: [VSPackage를 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-vspackage.md)
+-   기본 Vspackage의 경우: [로 확장 만들기](../extensibility/creating-an-extension-with-a-vspackage.md)
 
 -   VSIX 프로젝트 템플릿: [VSIX 프로젝트 템플릿 시작](../extensibility/getting-started-with-the-vsix-project-template.md)
 
@@ -94,8 +94,8 @@ Visual Studio 확장을 개발 하려면 Visual Studio 외에도 Visual Studio S
 ## <a name="how-can-i-distribute-my-extension"></a>My 확장을 배포할 수는 방법
  다른 컴퓨터에 확장을 설치 하거나.vsix 파일을 두 번 클릭 하 여 설치 파일로 친구에 게 보낼 수 있습니다. VSIX 패키지에 대 한 자세한 내용을 확인할 수 있습니다 [Visual Studio 확장 전달](../extensibility/shipping-visual-studio-extensions.md)합니다.
 
- 또한 많은 수의 Visual Studio 고객에 게 표시 하는 Visual Studio Marketplace에서 확장 프로그램을 게시할 수 있습니다. Marketplace 확장 패키지의 예제를 참조 하세요 [연습: Visual Studio 확장 기능 게시](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)합니다. Marketplace에 게시 하기 위해 수행 해야 하는 방법에 대 한 자세한 내용은 참조 하세요. [제품 및 Visual Studio 용 확장](/azure/devops/extend/overview?view=vsts)합니다.
+ 또한 많은 수의 Visual Studio 고객에 게 표시 하는 Visual Studio Marketplace에서 확장 프로그램을 게시할 수 있습니다. Marketplace 확장 패키지의 예제를 참조 하세요. [연습: Visual Studio 확장 기능 게시](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)합니다. Marketplace에 게시 하기 위해 수행 해야 하는 방법에 대 한 자세한 내용은 참조 하세요. [제품 및 Visual Studio 용 확장](/azure/devops/extend/overview?view=vsts)합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [Mac용 Visual Studio 확장](/visualstudio/mac/extending-visual-studio-mac)

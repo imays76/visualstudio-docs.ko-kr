@@ -1,6 +1,7 @@
 ---
-title: '&lt;t r y p&gt; 요소 (Visual Studio에서 Office 개발)'
-ms.custom: ''
+title: '&lt;진입점&gt; 요소 (Visual Studio에서 Office 개발)'
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -10,19 +11,19 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <entryPoints> element
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bec51fd4d9e6a140d274f028a0e0286a161ac147
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 01b28dab575f867f017b04f2e0180c07193b983b
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448391"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647012"
 ---
-# <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;t r y p&gt; 요소 (Visual Studio에서 Office 개발)
+# <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;진입점&gt; 요소 (Visual Studio에서 Office 개발)
   `entryPoints` 네임스페이스의 `vstav3` 요소에는 Office 솔루션과 관련된 모든 `entryPoint` 요소가 포함됩니다.  
   
 ## <a name="syntax"></a>구문  
@@ -50,12 +51,12 @@ ms.locfileid: "34448391"
  `entryPoints` 에는 다음 요소가 있습니다.  
   
 ### <a name="entrypoint"></a>entryPoint  
- 필수. 역할은 `entryPoint` 요소에는 `vstav3` 네임 스페이스에 정의 된 [ &#60;entryPoint&#62; 요소 &#40;Visual Studio에서 Office 개발&#41;](../vsto/entrypoint-element-office-development-in-visual-studio.md)합니다.  
+ 필수 요소. 역할을 합니다 `entryPoint` 요소에는 `vstav3` 네임 스페이스에 정의 된 [ &#60;entryPoint&#62; 요소 &#40;Visual Studio에서 Office 개발&#41;](../vsto/entrypoint-element-office-development-in-visual-studio.md).  
   
 ## <a name="document-level-customization-example"></a>문서 수준 사용자 지정 예제  
   
 ### <a name="description"></a>설명  
- 다음 코드 예제에서는 `entryPoints` 을 사용하여 배포된 문서 수준 솔루션에 대한 응용 프로그램 매니페스트의 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]요소를 보여 줍니다. 이 코드 예제는에 제공 된 큰 예제의 일부 [Office 솔루션에 대 한 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)합니다.  
+ 다음 코드 예제에서는 `entryPoints` 을 사용하여 배포된 문서 수준 솔루션에 대한 응용 프로그램 매니페스트의 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]요소를 보여 줍니다. 이 코드 예제는에서 제공 하는 더 큰 예제의 일부입니다 [Office 솔루션에 대 한 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)합니다.  
   
 ### <a name="code"></a>코드  
   
@@ -99,7 +100,7 @@ ms.locfileid: "34448391"
 ## <a name="vsto-add-in-example"></a>VSTO 추가 기능 예제  
   
 ### <a name="description"></a>설명  
- 다음 코드 예제에서는 `entryPoints` 을 사용하여 배포된 응용 프로그램 수준 솔루션에 대한 응용 프로그램 매니페스트의 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]요소를 보여 줍니다. 이 코드 예제는에 제공 된 큰 예제의 일부 [Office 솔루션에 대 한 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)합니다.  
+ 다음 코드 예제에서는 `entryPoints` 을 사용하여 배포된 응용 프로그램 수준 솔루션에 대한 응용 프로그램 매니페스트의 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]요소를 보여 줍니다. 이 코드 예제는에서 제공 하는 더 큰 예제의 일부입니다 [Office 솔루션에 대 한 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)합니다.  
   
 ### <a name="code"></a>코드  
   
@@ -119,7 +120,7 @@ ms.locfileid: "34448391"
 ## <a name="multi-project-deployment-example"></a>다중 프로젝트 배포 예제  
   
 ### <a name="description"></a>설명  
- 다음 코드 예제에서는 다중 프로젝트 배포에 대한 응용 프로그램 매니페스트의 `entryPoints` 요소를 보여 줍니다. 이 코드 예제는에 제공 된 큰 예제의 일부 [Office 솔루션에 대 한 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)합니다.  
+ 다음 코드 예제에서는 다중 프로젝트 배포에 대한 응용 프로그램 매니페스트의 `entryPoints` 요소를 보여 줍니다. 이 코드 예제는에서 제공 하는 더 큰 예제의 일부입니다 [Office 솔루션에 대 한 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)합니다.  
   
 ### <a name="code"></a>코드  
   
@@ -172,7 +173,7 @@ ms.locfileid: "34448391"
 </vstav3:entryPoints>  
 ```  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Office 솔루션에 대 한 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)   
  [Office 솔루션의 배포 매니페스트](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce 응용 프로그램 매니페스트](/visualstudio/deployment/clickonce-application-manifest)  

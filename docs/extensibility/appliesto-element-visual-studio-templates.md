@@ -2,21 +2,20 @@
 title: AppliesTo 요소 (Visual Studio 템플릿) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 ms.assetid: 8fb1334b-d78c-405f-98b4-786e9f6b58d7
 author: gregvanl
 ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6f399e0b054b5f9b112733399d644e1357837049
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: f26461291e6e74dd4fe7130b331fc6b38692e252
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280733"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562154"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo 요소 (Visual Studio 템플릿)
 하나 이상의 기능에 맞게 선택적 식을 지정합니다. <xref:Microsoft.VisualStudio.Shell.Interop.VsProjectCapabilityExpressionMatcher>를 참조하십시오. 기능은 계층 구조를 통해 프로젝트 형식에 의해 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID5> 속성으로 노출됩니다. 이렇게 하면 적용할 수 있는 일반적인 기능을 가진 여러 프로젝트 형식에서 템플릿을 공유할 수 있습니다.  
@@ -99,6 +98,6 @@ ms.locfileid: "44280733"
   
 ```  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)   
  [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

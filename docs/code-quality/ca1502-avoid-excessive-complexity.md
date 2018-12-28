@@ -1,5 +1,5 @@
 ---
-title: 'CA1502: 지나치게 복잡하게 만들지 마십시오.'
+title: 'CA1502: 과도 한 복잡성을 방지 합니다.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -20,14 +20,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bfa12a2a1ade8d32c5518660c46ce79bc997d776
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 969e16eae2d04ed1635e2d2bc9b496ed510a6074
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819305"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740327"
 ---
-# <a name="ca1502-avoid-excessive-complexity"></a>CA1502: 지나치게 복잡하게 만들지 마십시오.
+# <a name="ca1502-avoid-excessive-complexity"></a>CA1502: 과도 한 복잡성을 방지 합니다.
 
 |||
 |-|-|
@@ -50,7 +50,7 @@ ms.locfileid: "49819305"
 
 순환 복잡성 25 개가 넘는 경우 규칙 위반을 보고 합니다.
 
-코드 메트릭에 대 한 자세히 알아볼 수 있습니다 [측정 복잡성과 관리 되는 코드 관리 용이성](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md),
+코드 메트릭에 대 한 자세히 알아볼 수 있습니다 [측정 복잡성과 관리 되는 코드 관리 용이성](../code-quality/code-metrics-values.md),
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
 
@@ -104,8 +104,8 @@ ms.locfileid: "49819305"
 
 ## <a name="related-rules"></a>관련된 규칙
 
-[CA1501: 상속성을 너무 많이 사용하지 마십시오.](../code-quality/ca1501-avoid-excessive-inheritance.md)
+[CA1501: 과도 한 상속을 방지](../code-quality/ca1501-avoid-excessive-inheritance.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-- [관리 코드의 복잡성 및 유지 관리 용이성 측정](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+- [관리 코드의 복잡성 및 유지 관리 용이성 측정](../code-quality/code-metrics-values.md)

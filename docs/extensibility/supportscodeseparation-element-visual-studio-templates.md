@@ -2,9 +2,8 @@
 title: SupportsCodeSeparation 요소 (Visual Studio 템플릿) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#SupportsCodeSeparation
 helpviewer_keywords:
@@ -16,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: edd8eb9bbabb47444754d3756216fc81d02c7d7d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e669cf01f7becde7fa95af602ce4518bbaf6957e
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140744"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561392"
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>SupportsCodeSeparation 요소(Visual Studio 템플릿)
-지정 여부는 **다른 파일에 코드를 입력** 확인란이 활성화 되는 **새 항목 추가** 대화 상자.  
+지정 여부는 **별도 파일에 코드를 배치** 의 확인란을 사용할 수는 **새 항목 추가** 대화 상자.  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -49,22 +48,22 @@ ms.locfileid: "31140744"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|필수적 요소입니다.<br /><br /> 템플릿을 분류 하 고 표시 하는 방법을 정의 **새 프로젝트** 또는 **새 항목** 대화 상자.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|필수적 요소입니다.<br /><br /> 템플릿을 분류 하 고 표시 하는 방법을 정의 합니다 **새 프로젝트** 또는 **새 항목** 대화 상자.|  
   
 ## <a name="text-value"></a>텍스트 값  
  텍스트 값은 필수입니다.  
   
- 텍스트 중 하나 여야 합니다 `true` 또는 `false`한다는 표시 이므로 여부는 **다른 파일에 코드를 입력** 확인란이 활성화 되는 **새 항목 추가** 대화 상자.  
+ 텍스트 중 하나 여야 합니다 `true` 또는 `false`나타내는 여부는 **별도 파일에 코드 입력** 의 확인란을 사용할 수는 **새 항목 추가** 대화 상자.  
   
 ## <a name="remarks"></a>설명  
  `SupportsCodeSeparation`는 선택적 요소입니다. 기본값은 `false`입니다.  
   
  `SupportsCodeSeparation` 요소는 웹 항목 템플릿을 사용할 수 있습니다.  
   
- 코드 분리 또는 코드 숨김 페이지 모델을 한 개의 파일과 다른 파일에 프로그래밍 코드에 태그를 유지할 수 있습니다. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 및 다른.NET 언어는이 모델을 사용 합니다.  
+ 코드 분리 또는 코드 숨김 페이지 모델을 한 개의 파일과 다른 파일의 프로그래밍 코드에서 태그를 유지할 수 있습니다. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 및 다른.NET 언어는이 모델을 사용 합니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제에서는 표시 하도록 지정는 **별도 파일에 코드 입력** 옵션입니다.  
+ 표시 하려면 다음 예제에서는 지정 된 **별도 파일에 코드 입력** 옵션.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Project"  

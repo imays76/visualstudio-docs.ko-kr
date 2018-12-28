@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ef7078b09b1bf2382e1c91878995772d80bfa625
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9575020135846edc9cb86bd89ff72682500d8a9d
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853963"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739564"
 ---
 # <a name="troubleshooting-code-metrics-issues"></a>코드 메트릭 문제 해결
 코드 메트릭을 수집할 때 다음 문제 중 일부가 발생할 수 있습니다.
@@ -30,4 +30,4 @@ ms.locfileid: "49853963"
 - 함수는 switch 문(VB에서 Select Case)을 포함합니다. [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)]과 이전 버전 간의 컴파일러 차이점은 제어 이동 사례가 포함된 일부 switch 문에 대해 서로 다른 MSIL 코드를 생성할 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
- [관리 코드의 복잡성 및 유지 관리 용이성 측정](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+ [관리 코드의 복잡성 및 유지 관리 용이성 측정](../code-quality/code-metrics-values.md)

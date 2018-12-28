@@ -1,6 +1,7 @@
 ---
 title: '&lt;설명&gt; 요소 (Visual Studio에서 Office 개발)'
-ms.custom: ''
+titleSuffix: ''
+ms.custom: secdec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -12,17 +13,17 @@ helpviewer_keywords:
 - description element
 - <description> element
 - application manifests [Office development in Visual Studio], <description> element
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9fcdac1e950d98394b5703322f40dd1823b246f6
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: fcd9525c5e1f4e075acdcadc94cfcd7fe0650c1c
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34265117"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648341"
 ---
 # <a name="ltdescriptiongt-element-office-development-in-visual-studio"></a>&lt;설명&gt; 요소 (Visual Studio에서 Office 개발)
   `description` 네임스페이스의 `vstov4` 요소는 Microsoft Office 응용 프로그램의 COM 추가 기능 대화 상자에 나타나는 Office 솔루션에 대한 설명을 저장합니다.  
@@ -42,7 +43,7 @@ ms.locfileid: "34265117"
 ## <a name="vsto-add-in-example"></a>VSTO 추가 기능 예제  
   
 ### <a name="description"></a>설명  
- 다음 코드 예제에서는 `description` 를 사용하여 배포된 응용 프로그램 수준 솔루션의 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]요소를 보여 줍니다. 이 코드 예제는에 제공 된 큰 예제의 일부 [Office 솔루션에 대 한 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)합니다.  
+ 다음 코드 예제에서는 `description` 를 사용하여 배포된 응용 프로그램 수준 솔루션의 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]요소를 보여 줍니다. 이 코드 예제는에서 제공 하는 더 큰 예제의 일부입니다 [Office 솔루션에 대 한 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)합니다.  
   
 ### <a name="code"></a>코드  
   
@@ -53,7 +54,7 @@ ms.locfileid: "34265117"
 </vstov4:description>  
 ```  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Office 솔루션에 대 한 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)   
  [Office 솔루션의 배포 매니페스트](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce 응용 프로그램 매니페스트](/visualstudio/deployment/clickonce-application-manifest)  

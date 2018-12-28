@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a1d7dcb437a77bd91c8dbb3360a33c7260fabb91
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 96db38e8a69d0b8b9ee042420647851aa1fbf0c0
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755241"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684251"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>방법: 워크플로에 중단점 설정
 
 워크플로 디자이너를 사용 하는 경우와 마찬가지로 Visual Basic 또는 C# 코드에서 그래픽 워크플로에 중단점을 설정할 수 있습니다. 예상대로 설정한 각 중단점에서 워크플로 실행이 중지됩니다.
 
-중단점의 세 가지 상태: *보류 중*를 *바인딩된*, 및 *오류*합니다. 새로 설정한 중단점은 보류 중 상태가 되고 단색의 빨간색 아이콘으로 표시됩니다. 런타임 시 워크플로 형식을 로드한 경우 중단점은 바인딩됨 상태가 됩니다. 유효하지 않은 활동 이름과 같이 중단점에 대해 잘못된 형식을 지정하면 오류 창이 나타납니다. 그래도 중단점 창에 중단점이 추가되기는 하지만 소문자 "x"로 표시됩니다.
+중단점에는 세 가지 상태에 있습니다. *보류 중인*, *바인딩된*, 및 *오류*합니다. 새로 설정한 중단점은 보류 중 상태가 되고 단색의 빨간색 아이콘으로 표시됩니다. 런타임 시 워크플로 형식을 로드한 경우 중단점은 바인딩됨 상태가 됩니다. 유효하지 않은 활동 이름과 같이 중단점에 대해 잘못된 형식을 지정하면 오류 창이 나타납니다. 그래도 중단점 창에 중단점이 추가되기는 하지만 소문자 "x"로 표시됩니다.
 
 > [!NOTE]
 > 호출된 워크플로에는 중단점을 설정할 수 없습니다.
@@ -40,8 +40,7 @@ ms.locfileid: "36755241"
 
    또는 눌러 수 있습니다 **F9** 활동 또는 사용자를 선택 하는 활동을 마우스 오른쪽 단추로 클릭 수 및 선택한 후 **중단점** > **중단점 삽입** 상황에 맞는 메뉴입니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-- [방법: 워크플로 디버거 호출](../workflow-designer/how-to-invoke-the-workflow-debugger.md)
 - [워크플로 디자이너로 워크플로 디버깅](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)
 - [방법: 워크플로 디자이너로 XAML 디버그](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)

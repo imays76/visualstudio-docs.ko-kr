@@ -14,22 +14,22 @@ helpviewer_keywords:
 - customizing the Ribbon, about customizing the Ribbon
 - custom Ribbon, about customizing the Ribbon
 - Ribbon [Office development in Visual Studio], Outlook
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 035a38abc2285f744841b1d095387f61a21335a7
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: a0caef19f2f82ed6dcf1d46cfc85637c64e019f4
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671536"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647238"
 ---
 # <a name="customize-a-ribbon-for-outlook"></a>Outlook의 리본을 사용자 지정
   Microsoft Office Outlook에서 리본을 사용자 지정할 경우 응용 프로그램에서 사용자 지정 리본이 나타나는 위치를 고려해야 합니다. Outlook에서 리본은 사용자가 메일 메시지 만들기 등의 특정 작업을 수행할 때 열리는 창과 기본 응용 프로그램 UI(사용자 인터페이스)에 표시됩니다. 이러한 응용 프로그램 창의 이름을 검사기라고 합니다.  
   
- ![비디오 링크](../vsto/media/playvideo.gif "비디오 링크") 관련된 비디오 데모를 참조 하세요. [i: 사용 하 여 Outlook에서 리본을 사용자 지정 리본 디자이너 방법?](http://go.microsoft.com/fwlink/?LinkID=130312)합니다.  
+ ![비디오 링크](../vsto/media/playvideo.gif "비디오 링크") 관련된 비디오 데모를 참조 하세요. [어떻게 할까요? Outlook에서 리본을 사용자 지정 리본 디자이너 사용 ](http://go.microsoft.com/fwlink/?LinkID=130312).  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
@@ -53,7 +53,7 @@ ms.locfileid: "50671536"
  [!code-csharp[Trin_RibbonOutlookBasic#1](../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs#1)]
  [!code-vb[Trin_RibbonOutlookBasic#1](../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb#1)]  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [런타임에 리본 메뉴에 액세스](../vsto/accessing-the-ribbon-at-run-time.md)   
  [리본 개요](../vsto/ribbon-overview.md)   
  [리본 디자이너](../vsto/ribbon-designer.md)   

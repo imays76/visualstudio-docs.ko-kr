@@ -11,17 +11,17 @@ dev_langs:
 helpviewer_keywords:
 - permissions [Office development in Visual Studio
 - inclusion lists [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6e5bd1794b76485d60588b94d3ca139a314f9723
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: b13084a0010bef21283dc7890dd5b1064392e1b2
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255839"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647737"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>방법: 포함 목록 보안 구성
   관리자 권한이 있는 경우 구성할 수 있습니다는 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 신뢰 프롬프트 컨트롤에 최종 사용자가 신뢰 결정 포함 목록에 저장 하 여 Office 솔루션을 설치 하는 옵션이 제공 됩니다 여부. 포함 목록에 대 한 자세한 내용은 [포함 목록을 사용 하 여 Office 신뢰 솔루션](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)합니다.  
@@ -43,7 +43,7 @@ ms.locfileid: "35255839"
   
 1.  레지스트리 편집기를 엽니다.  
   
-    1.  클릭 **시작**를 클릭 하 고 **실행**합니다.  
+    1.  **시작**을 클릭한 다음 **실행**을 클릭합니다.  
   
     2.  에 **열기** 상자에 입력 **regedt32.exe**를 클릭 하 고 **확인**합니다.  
   
@@ -102,7 +102,7 @@ ms.locfileid: "35255839"
   
 1.  레지스트리 편집기를 엽니다.  
   
-    1.  클릭 **시작**를 클릭 하 고 **실행**합니다.  
+    1.  **시작**을 클릭한 다음 **실행**을 클릭합니다.  
   
     2.  에 **열기** 상자에 입력 **regedt32.exe**를 클릭 하 고 **확인**합니다.  
   
@@ -161,7 +161,7 @@ ms.locfileid: "35255839"
   
 1.  레지스트리 편집기를 엽니다.  
   
-    1.  클릭 **시작**를 클릭 하 고 **실행**합니다.  
+    1.  **시작**을 클릭한 다음 **실행**을 클릭합니다.  
   
     2.  에 **열기** 상자에 입력 **regedt32.exe**를 클릭 하 고 **확인**합니다.  
   
@@ -210,7 +210,7 @@ ms.locfileid: "35255839"
   
 3.  응용 프로그램을 빌드 및 실행합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [포함 목록을 사용 하 여 Office 솔루션 신뢰](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)   
  [Office 솔루션 보안](../vsto/securing-office-solutions.md)  
   

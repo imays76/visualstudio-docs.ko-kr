@@ -11,17 +11,17 @@ dev_langs:
 helpviewer_keywords:
 - Chart control [Office development in Visual Studio], adding to worksheets
 - controls [Office development in Visual Studio], adding to worksheets
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 713657c7df5bfd3dd3f864c15ffc86dd1d531eac
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4f1c5cd15710e3886e3e8b0ed7483ba3776cef15
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919925"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648935"
 ---
 # <a name="how-to-add-chart-controls-to-worksheets"></a>방법: 워크시트에 Chart 컨트롤 추가
   추가할 수 있습니다 <xref:Microsoft.Office.Tools.Excel.Chart> 디자인 타임 및 런타임에 문서 수준 사용자 지정에서 Microsoft Office Excel 워크시트에 컨트롤입니다. 추가할 수도 있습니다 <xref:Microsoft.Office.Tools.Excel.Chart> VSTO 추가 기능에서 런타임에 컨트롤입니다.  
@@ -85,7 +85,7 @@ ms.locfileid: "49919925"
   
 -   워크시트의 A5부터 D8까지의 범위에 저장된 차트로 작성할 데이터  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Word 문서 및 런타임에 VSTO 추가 기능에서 Excel 통합 문서 확장](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Office 문서의 컨트롤](../vsto/controls-on-office-documents.md)   
  [차트 컨트롤](../vsto/chart-control.md)   

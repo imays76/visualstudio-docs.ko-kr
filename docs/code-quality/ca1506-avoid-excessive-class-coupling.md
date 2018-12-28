@@ -1,5 +1,5 @@
 ---
-title: 'CA1506: 클래스 결합을 지나치게 많이 사용하지 마십시오.'
+title: 'CA1506: 클래스 결합을 방지'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -16,14 +16,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 57c23ea9c6afb27ee89886936fff690a4285f5c0
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: d4c36d824fcfe698f8eb7a75b1111ccec03f4064
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549914"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740301"
 ---
-# <a name="ca1506-avoid-excessive-class-coupling"></a>CA1506: 클래스 결합을 지나치게 많이 사용하지 마십시오.
+# <a name="ca1506-avoid-excessive-class-coupling"></a>CA1506: 클래스 결합을 방지
 
 |||
 |-|-|
@@ -46,7 +46,7 @@ ms.locfileid: "45549914"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
  형식 또는 메서드가 크더라도 아직 많은 다른 형식에 대 한 종속성에도 불구 하 고 하는 경우이 경고를 제외 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [유지 관리 경고](../code-quality/maintainability-warnings.md)
-- [관리 코드의 복잡성 및 유지 관리 용이성 측정](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+- [관리 코드의 복잡성 및 유지 관리 용이성 측정](../code-quality/code-metrics-values.md)

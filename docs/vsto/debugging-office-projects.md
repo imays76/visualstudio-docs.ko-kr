@@ -15,17 +15,17 @@ helpviewer_keywords:
 - debugging [Office development in Visual Studio], Outlook projects
 - Office projects [Office development in Visual Studio], debugging
 - Outlook [Office development in Visual Studio], projects
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cc1774e57fafadafc7087bb498e0b77a90e96d85
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6c7320ae6cbd0a6d7baa94835177d2a3a6f222cf
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674374"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647902"
 ---
 # <a name="debug-office-projects"></a>Office 프로젝트 디버깅
   다른 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 프로젝트에 사용한 것과 동일한 Microsoft [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 도구를 사용하여 Office 프로젝트를 디버그할 수 있습니다. 중단점 삽입 및[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 지역 **창에 변수 표시와 같은** 디버거 기능은 Office 프로젝트를 디버그할 때도 사용할 수 있습니다. 에 대 한 자세한 내용은 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 디버깅 도구를 참조 하세요 [Visual Studio에서 디버그](/visualstudio/debugger/debugging-in-visual-studio)합니다.  
@@ -79,7 +79,7 @@ ms.locfileid: "35674374"
  Word 97-2003 문서를 기반으로 Word 문서 프로젝트를 디버그 하려면 (*/**.doc) 형식으로 신뢰할 수 있는 폴더 목록에 프로젝트 폴더를 추가 해야 합니다. 이 작업을 수행 하는 방법에 대 한 자세한 내용은 참조 하세요. [문서에 신뢰 부여](../vsto/granting-trust-to-documents.md)합니다.  
   
 ## <a name="debug-disabled-add-ins"></a>디버그 추가 기능을 사용 하지 않도록 설정  
- Microsoft Office 응용 프로그램에서는 예기치 않게 동작하는 VSTO 추가 기능을 사용하지 않도록 설정할 수 있습니다. Microsoft Office 응용 프로그램에서는 응용 프로그램이 시작될 때마다 문제가 있는 코드가 로드되지 않도록 하는 VSTO 추가 기능을 사용하지 않도록 설정합니다. 그러나 일반적인 디버깅 중에는 예기치 않은 동작이 쉽게 발생할 수 있습니다. VSTO 추가 기능을 다시 활성화 하는 방법에 대 한 정보를 참조 하세요 [방법: VSTO 추가 기능을 비활성화 된 다시 사용 하도록 설정](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)합니다.  
+ Microsoft Office 응용 프로그램에서는 예기치 않게 동작하는 VSTO 추가 기능을 사용하지 않도록 설정할 수 있습니다. Microsoft Office 응용 프로그램에서는 응용 프로그램이 시작될 때마다 문제가 있는 코드가 로드되지 않도록 하는 VSTO 추가 기능을 사용하지 않도록 설정합니다. 그러나 일반적인 디버깅 중에는 예기치 않은 동작이 쉽게 발생할 수 있습니다. VSTO 추가 기능을 다시 활성화 하는 방법에 대 한 정보를 참조 하세요. [방법: VSTO 추가 기능을 비활성화 된 다시 사용 하도록 설정](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)합니다.  
   
  Microsoft Office 응용 프로그램에서 VSTO 추가 기능에 사용할 수 있는 비활성화는 하드 비활성화와 소프트 비활성화의 두 가지 유형이 있습니다.  
   
@@ -101,7 +101,7 @@ ms.locfileid: "35674374"
   
  오류를 로그 파일에 기록하려면 `VSTO_LOGALERTS` 라는 환경 변수를 만들고 1로 설정합니다. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 은 VSTO 추가 기능에 대한 배포 매니페스트를 포함하는 폴더 또는 사용자 지정과 관련된 문서 또는 통합 문서를 포함하는 폴더에 로그 파일을 만듭니다. 실패할 경우 합니다 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 로컬에서 로그 파일을 만듭니다 *% TEMP %* 폴더입니다. 응용 프로그램 수준 VSTO 추가 기능의 경우 기본 이름은 *추가 기능 이름*.vsto.log입니다. 문서 수준 프로젝트의 경우 로그 파일의 이름은 *문서 이름*.*확장명*.log(예: ExcelWorkbook1.xlsx.log)입니다. 오류 로깅을 중지하려면 환경 변수를 삭제하거나 0으로 설정합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Office 솔루션 빌드](../vsto/building-office-solutions.md)   
  [방법: VSTO 추가 기능을 비활성화 된 다시 사용 하도록 설정](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)   
  [VSTO 추가 기능 프로그래밍](../vsto/programming-vsto-add-ins.md)  

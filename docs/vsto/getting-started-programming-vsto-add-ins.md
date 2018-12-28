@@ -13,17 +13,17 @@ dev_langs:
 helpviewer_keywords:
 - application-level add-ins [Office development in Visual Studio], getting started
 - add-ins [Office development in Visual Studio], getting started
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8136a090dbf5e3c3f86ce9b4ade1321f7b36b829
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bf6577d48bed61a6dd5a1775da499ddd89f3769c
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858890"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648683"
 ---
 # <a name="get-started-programming-vsto-add-ins"></a>VSTO 추가 기능 프로그래밍 시작
   VSTO 추가 기능을 사용하여 Microsoft Office 응용 프로그램을 자동화하고 응용 프로그램의 기능을 확장할 수 있으며 응용 프로그램의 UI(사용자 인터페이스)를 사용자 지정할 수 있습니다. Visual Studio를 사용 하 여 만들 수 있는 다른 유형의 Office 솔루션에 VSTO 추가 기능을 비교 하는 방법에 대 한 정보를 참조 하세요 [Office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)합니다.  
@@ -33,7 +33,7 @@ ms.locfileid: "49858890"
 ## <a name="create-vsto-add-in-projects"></a>VSTO 추가 기능 프로젝트 만들기  
  VSTO 추가 기능 프로젝트 템플릿 중 하나를 사용 하 여 VSTO 추가 기능 프로젝트 만들기를 **새 프로젝트** 대화 상자. 이러한 템플릿에는 필요한 어셈블리 참조 및 프로젝트 파일이 포함되어 있습니다. Visual Studio에서는 대부분의 Office 응용 프로그램용 VSTO 추가 기능 프로젝트 템플릿을 제공합니다.  
   
- VSTO 추가 기능 프로젝트를 만드는 방법에 대 한 자세한 내용은 참조 하세요. [방법: Visual Studio에서 만드는 Office 프로젝트](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다. 프로젝트 템플릿에 대 한 자세한 내용은 참조 하세요. [Office 프로젝트 템플릿 개요](../vsto/office-project-templates-overview.md)합니다.  
+ VSTO 추가 기능 프로젝트를 만드는 방법에 대 한 자세한 내용은 참조 하세요. [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다. 프로젝트 템플릿에 대 한 자세한 내용은 참조 하세요. [Office 프로젝트 템플릿 개요](../vsto/office-project-templates-overview.md)합니다.  
   
 ## <a name="develop-vsto-add-in-projects"></a>VSTO 추가 기능 프로젝트를 개발 합니다.  
  Visual Studio 자동으로 만드는 VSTO 추가 기능 프로젝트를 만들면 사용자는 *ThisAddIn.vb* (에서 [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]) 또는 *ThisAddIn.cs* (C#) 코드 파일. 이 파일에 포함 된 `ThisAddIn` VSTO 추가 기능에 대 한 기초를 제공 하는 클래스입니다. 이 클래스의 멤버를 사용하여 VSTO 추가 기능이 로드되거나 언로드될 때 코드를 실행하고, 호스트 응용 프로그램의 개체 모델에 액세스하고, 응용 프로그램의 기능을 확장할 수 있습니다. 자세한 내용은 [프로그램 VSTO Add-ins](../vsto/programming-vsto-add-ins.md)합니다.  
@@ -89,7 +89,7 @@ ms.locfileid: "49858890"
   
   Office 프로젝트에서 일반적인 작업 중 몇 가지를 안내 하는 항목의 목록을 참조 하세요 [Office 프로그래밍에서 일반적인](../vsto/common-tasks-in-office-programming.md)합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [시작 &#40;Visual Studio에서 Office 개발&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Office 솔루션에서 코드를 작성 합니다.](../vsto/writing-code-in-office-solutions.md)   

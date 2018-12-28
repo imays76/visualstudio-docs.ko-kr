@@ -1,5 +1,5 @@
 ---
-title: 수 &#39;가 t &#39; 계속 &#39; 루프 외부에서 | Microsoft Docs
+title: 루프 외부에서 '계속'을 사용할 수 없습니다. | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,35 +20,35 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8760eef1bb69f5f3ad18791dde8e25ce16776735
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6d4939635b69cf5b49e36c7168dcf3c1a786821f
+ms.sourcegitcommit: 7ba97696d6d48de698210863183266af90c82af5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633303"
+ms.lasthandoff: 12/17/2018
+ms.locfileid: "53531247"
 ---
-# <a name="can39t-have-39continue39-outside-of-loop"></a>수 &#39;가 t &#39; 계속 &#39; 루프 외부에서
-사용 하려는 **계속** 문이 루프 외부에서. **계속** 문은 a:의 본문 내 에서만 사용할 수 있습니다  
+# <a name="cant-have-continue-outside-of-loop"></a>루프 외부에서 'continue'를 사용할 수 없습니다.
+사용 하려고 합니다 **계속** 문이 루프 외부에서. 합니다 **계속** 문은의 본문 내 에서만 사용할 수 있습니다  
   
--   `do-while`루프  
+-   `do-while` 루프  
   
--   `while`루프  
+-   `while` 루프  
   
 -   **에 대 한** 루프  
   
--   **에 대 한/에서** 루프입니다.  
+-   **에 대한/** 루프입니다.  
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   
--   확인은 **계속** a: 본문 내에서 문이 나타나는  
+-   있는지 확인 합니다 **계속** 문 a: 본문 내에 나타나지만  
   
-    -   `do-while`루프  
+    -   `do-while` 루프  
   
-    -   `while`루프  
+    -   `while` 루프  
   
     -   **에 대 한** 루프  
   
-    -   **에 대 한/에서** 루프입니다.  
+    -   **에 대한/** 루프입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [continue 문](../../javascript/reference/continue-statement-javascript.md)   

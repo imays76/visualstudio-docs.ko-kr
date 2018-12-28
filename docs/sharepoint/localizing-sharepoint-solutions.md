@@ -22,16 +22,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ba02d8811fc6633a55e06ae63c9399c70f59634f
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 3897efa937991b598f6aae1cf24781ab2ce26c37
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119848"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684745"
 ---
 # <a name="localize-sharepoint-solutions"></a>SharePoint 솔루션 지역화
 
-  전 세계적으로 사용할 수 있도록 응용 프로그램을 준비 하는 프로세스를 지역화 라고 합니다. 지역화 리소스를 특정 문화권으로 변환 됩니다. 자세한 내용은 [Globalizing and Localizing Applications](/visualstudio/ide/globalizing-and-localizing-applications)합니다. 이 항목에서는 SharePoint 솔루션을 지역화 하는 방법에 대 한 개요를 제공 합니다.  
+  전 세계적으로 사용할 수 있도록 응용 프로그램을 준비 하는 프로세스를 지역화 라고 합니다. 지역화 리소스를 특정 문화권으로 변환 됩니다. 자세한 내용은 [Globalizing and Localizing Applications](../ide/globalizing-and-localizing-applications.md)합니다. 이 항목에서는 SharePoint 솔루션을 지역화 하는 방법에 대 한 개요를 제공 합니다.  
   
  솔루션을 지역화 하려면 코드에서 하드 코드 된 문자열을 제거 하 고 리소스 파일에 추상화 합니다. 리소스 파일은는 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]-파일 기반을 *.resx* 확장 합니다. 리소스 파일에는 솔루션에서 사용 되는 문자열의 번역된 된 버전이 포함 되어 있습니다. 자세한 내용은 [응용 프로그램의 리소스](http://go.microsoft.com/fwlink/?LinkID=155844)합니다.  
   
@@ -91,7 +91,7 @@ $Resources:String ID
 <asp:<class> runat="server" Text="<%$Resources:<Resource File Name>, <String ID>%>" />  
 ```  
   
- 예를 들어:  
+ 예를 들면 다음과 같습니다.  
   
 ```aspx-csharp  
 <asp:Button ID="btn1" runat="server" onclick="btn1_Click" Text="<%$Resources:Resource1,String7%>"></asp:Button>  
@@ -103,13 +103,13 @@ $Resources:String ID
 <asp:literal ID="<ID>" runat="server" Text="<%$Resources:<Resource File Name>, <String ID>%>" />  
 ```  
   
- 예를 들어:  
+ 예를 들면 다음과 같습니다.  
   
 ```aspx-csharp  
 <asp:literal ID="Literal1" runat="server" Text="<%$Resources:Resource1, String9%>" />  
 ```  
   
- 자세한 내용은 [방법: 지역화 ASPX 태그](../sharepoint/how-to-localize-aspx-markup.md)합니다.  
+ 자세한 내용은 [방법: ASPX 태그 지역화](../sharepoint/how-to-localize-aspx-markup.md)합니다.  
   
 ### <a name="localize-code"></a>코드 지역화
  기능 문자열을 지역화 하는 것 외에도 및 [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] 태그 해야 메시지 문자열 및 솔루션 코드에 표시 되는 오류 문자열을 지역화 합니다. 지역화 된 정보 및 오류 메시지는 위성 어셈블리에 포함 됩니다. 위성 어셈블리와 같은 사용자에 게 표시 되는 문자열을 포함할 [!INCLUDE[TLA2#tla_ui](../sharepoint/includes/tla2sharptla-ui-md.md)] 텍스트와 출력 메시지에 예외와 같은 합니다.  
@@ -133,10 +133,9 @@ HttpContext.GetGlobalResourceObject("<Resource File Name>", "<String ID>")
   
  파생된 클래스에서 리소스 파일 및 문자열 ID에 대 한 지역화 된 값을 가져오려고 ResourceManager 개체에서 문자열 ID 참조 속성 편집기 특성에이 값을 반환 합니다.  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  [방법: 기능 지역화](../sharepoint/how-to-localize-a-feature.md)   
  [방법: ASPX 태그 지역화](../sharepoint/how-to-localize-aspx-markup.md)   
  [방법: 코드 지역화](../sharepoint/how-to-localize-code.md)   
  [방법: 리소스 파일 추가](../sharepoint/how-to-add-a-resource-file.md)   
  [방법: 리소스 파일을 사용 하 여 지역화 된 이름, 속성 및 사용 권한을 지정 합니다.](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)  
-  

@@ -1,6 +1,7 @@
 ---
 title: '&lt;문서&gt; 요소 (Visual Studio에서 Office 개발)'
-ms.custom: ''
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -12,20 +13,20 @@ helpviewer_keywords:
 - document element
 - application manifests [Office development in Visual Studio], <document> element
 - <document> element
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 07d8172ec4e56352c2244aef02d947ac48833ab7
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 634a2aff43b19098629392fedbfbaef7549e8e6c
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447337"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647064"
 ---
 # <a name="ltdocumentgt-element-office-development-in-visual-studio"></a>&lt;문서&gt; 요소 (Visual Studio에서 Office 개발)
-  `document` 의 요소는 `vstov4` 네임 스페이스는 문서 수준 사용자 지정에 대 한 사용자 지정 관련 정보를 저장 합니다.  
+  합니다 `document` 의 요소를 `vstov4` 네임 스페이스는 문서 수준 사용자 지정에 대 한 사용자 지정 관련 정보를 저장 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -34,18 +35,18 @@ ms.locfileid: "34447337"
 ```  
   
 ## <a name="elements-and-attributes"></a>요소 및 특성  
- 문서 수준 사용자 지정에만 필요합니다. `document` 요소는는 `vstov4` 네임 스페이스입니다. `document` 요소에는 다음 특성이 있습니다.  
+ 문서 수준 사용자 지정에만 필요합니다. `document` 요소는 `vstov4` 네임스페이스에 있습니다. `document` 요소에는 다음 특성이 있습니다.  
   
 |특성|설명|  
 |---------------|-----------------|  
-|`solutionId`|필수. 고유 하 게 식별 하는 문서 수준 솔루션에서 Visual Studio Tools for Office 런타임에서 사용 하는 GUID입니다. 이 값은 _AssemblyLocation 사용자 지정 문서 속성으로 저장 됩니다. 자세한 내용은 참조 [사용자 지정 문서 속성 개요](../vsto/custom-document-properties-overview.md)합니다.|  
+|`solutionId`|필수 요소. 문서 수준 솔루션을 고유 하 게 식별 하는 Visual Studio Tools for Office 런타임에서 사용 하는 GUID입니다. 이 값은 _AssemblyLocation 사용자 지정 문서 속성으로 저장 됩니다. 자세한 내용은 [사용자 지정 문서 속성 개요](../vsto/custom-document-properties-overview.md)합니다.|  
   
- `document` 자식 요소가 없습니다.  
+ `document` 에는 자식 요소가 없습니다.  
   
 ## <a name="document-level-customization-example"></a>문서 수준 사용자 지정 예제  
   
 ### <a name="description"></a>설명  
- 다음 코드 예제는 `document` 요소를 사용 하 여 배포 되는 문서 수준 Office 솔루션에 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]합니다. 이 코드 예제는에 제공 된 큰 예제의 일부 [Office 솔루션에 대 한 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)합니다.  
+ 다음 코드 예제는 `document` 요소를 사용 하 여 배포 하는 문서 수준 Office 솔루션에서 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]합니다. 이 코드 예제는에서 제공 하는 더 큰 예제의 일부입니다 [Office 솔루션에 대 한 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)합니다.  
   
 ### <a name="code"></a>코드  
   
@@ -54,7 +55,7 @@ ms.locfileid: "34447337"
   solutionId="73e" />  
 ```  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Office 솔루션에 대 한 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)   
  [Office 솔루션의 배포 매니페스트](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce 응용 프로그램 매니페스트](/visualstudio/deployment/clickonce-application-manifest)  

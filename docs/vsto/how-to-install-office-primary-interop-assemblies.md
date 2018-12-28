@@ -1,5 +1,5 @@
 ---
-title: '방법: 설치 Office 주 interop 어셈블리'
+title: '방법: Office 주 interop 어셈블리 설치'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - primary interop assemblies [Office development in Visual Studio], installing
 - Office primary interop assemblies, installing
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dd044c228e20bbdf169dda456cf24c3246b0ae34
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: bca78cc9387756c1abd4e6c11d3a549777c3f452
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255670"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648589"
 ---
-# <a name="how-to-install-office-primary-interop-assemblies"></a>방법: 설치 Office 주 interop 어셈블리
+# <a name="how-to-install-office-primary-interop-assemblies"></a>방법: Office 주 interop 어셈블리 설치
   Office를 설치할 때 Microsoft Office PIA(주 interop 어셈블리)를 설치합니다.  
   
 ## <a name="to-install-the-pias-when-you-install-office"></a>Office를 설치할 때 PIA를 설치하려면  
@@ -35,7 +35,7 @@ ms.locfileid: "35255670"
     > [!WARNING]  
     >  PIA는 기본적으로 프로그램에서 VSTO 추가 기능 또는 사용자 지정을 사용 하 여 필수 구성 요소로 사용자에 게 Pia를 배포할 필요가 빌드할 때 솔루션에 포함 됩니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Office 주 interop 어셈블리](../vsto/office-primary-interop-assemblies.md)   
  [방법: 주 interop 어셈블리를 통해 대상 Office 응용 프로그램](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
  [방법: Office 솔루션을 개발 하도록 컴퓨터를 구성 합니다.](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)   

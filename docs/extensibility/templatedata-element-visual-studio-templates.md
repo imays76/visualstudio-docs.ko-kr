@@ -2,9 +2,8 @@
 title: TemplateData 요소 (Visual Studio 템플릿) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#TemplateData
 helpviewer_keywords:
@@ -15,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 064e65f56bd89b6ba73d9e65ff1e6fd5e16ee2b5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9b5ae3111691658f9748ba8677ea67ca6e216714
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843251"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561842"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>TemplateData 요소(Visual Studio 템플릿)
 템플릿을 분류하고 **새 프로젝트** 또는 **새 항목 추가** 대화 상자에서 템플릿이 표시되는 방식을 정의합니다.  
@@ -63,7 +62,7 @@ ms.locfileid: "49843251"
 | [ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md) | 선택적 요소입니다.<br /><br /> 만들어질 때 Visual Studio 프로젝트 시스템에서 프로젝트 또는 항목에 대 한 기본 이름을 생성할 됩니다 있는지 여부를 지정 합니다. |
 | [PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md) | 선택적 요소입니다.<br /><br /> 임시 프로젝트로 프로젝트를 만들 수 있는지 여부를 지정 합니다. |
 | [EnableLocationBrowseButton](../extensibility/enablelocationbrowsebutton-element-visual-studio-templates.md) | 선택적 요소입니다.<br /><br /> 지정 여부를 합니다 **찾아보기** 단추를 사용할 수는 **새 프로젝트** 대화 상자에서 사용자가 새 프로젝트를 저장 된 기본 디렉터리를 쉽게 수정할 수 있도록 합니다. |
-| [숨겨진](../extensibility/hidden-element-visual-studio-templates.md) | 선택적 요소입니다.<br /><br /> 템플릿 중 하나에 표시할지 여부를 지정 합니다 **새 프로젝트** 하거나 **새 항목 추가** 대화 상자. |
+| [숨김](../extensibility/hidden-element-visual-studio-templates.md) | 선택적 요소입니다.<br /><br /> 템플릿 중 하나에 표시할지 여부를 지정 합니다 **새 프로젝트** 하거나 **새 항목 추가** 대화 상자. |
 | [NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md) | 선택적 요소입니다.<br /><br /> 부모 범주에 템플릿 표시 하는 횟수를 지정 합니다 **새 프로젝트** 대화 상자. |
 | [LocationFieldMRUPrefix](../extensibility/locationfieldmruprefix-element-visual-studio-templates.md) | 선택적 요소입니다. |
 | [LocationField](../extensibility/locationfield-element-visual-studio-project-templates.md) | 선택적 요소입니다.<br /><br /> 지정 여부는 **위치** 텍스트 상자에 **새 프로젝트** 대화 상자는 활성화, 비활성화 또는 프로젝트 템플릿에 대 한 숨겨진 합니다. |

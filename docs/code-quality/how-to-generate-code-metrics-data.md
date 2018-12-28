@@ -13,18 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e3f8d6f2df0b0d9ec6e3f9d8ead7fd1e08929f8e
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 83ec85855e17f8798f55b01f043d47d7140278e7
+ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966533"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53425775"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>방법: 코드 메트릭 데이터 생성
 
 하나 이상의 프로젝트 또는 전체 솔루션에 대해 코드 메트릭 결과 생성할 수 있습니다. 코드 메트릭 및 사용할 수 있는 Visual Studio 대화형 개발 환경 (IDE) 내에 C# 및 Visual Basic 프로젝트의 경우 명령줄에서.
 
-또한 설치할 수 있습니다는 [NuGet 패키지](https://dotnet.myget.org/feed/roslyn-analyzers/package/nuget/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.2-beta2-63202-01) 4 코드 메트릭을 포함 하는 [분석기](roslyn-analyzers-overview.md) 규칙: CA1501, CA1502, CA1505, 및 CA1506 합니다. 이러한 규칙은 기본적으로 비활성화 되어 있지만 설정할 수 있습니다 **솔루션 탐색기** 또는 [규칙 집합](using-rule-sets-to-group-code-analysis-rules.md) 파일입니다.
+또한 설치할 수 있습니다는 [NuGet 패키지](https://dotnet.myget.org/feed/roslyn-analyzers/package/nuget/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.2-beta2-63202-01) 포함 하는 네 가지 코드 메트릭 [분석기](roslyn-analyzers-overview.md) 규칙: CA1501, CA1502, CA1505, 및 CA1506 합니다. 이러한 규칙은 기본적으로 비활성화 되어 있지만 설정할 수 있습니다 **솔루션 탐색기** 또는 [규칙 집합](using-rule-sets-to-group-code-analysis-rules.md) 파일입니다.
 
 ## <a name="visual-studio-ide-code-metrics"></a>Visual Studio IDE 코드 메트릭
 
@@ -68,7 +68,7 @@ ms.locfileid: "50966533"
    msbuild /m /v:m /p:Configuration=Release Metrics.csproj
    ```
 
-   명명 된 실행 파일 *Metrics.exe* 에서 생성 되는 *이진 파일* 의 리 포 루트에서 디렉터리입니다.
+   명명 된 실행 파일 *Metrics.exe* 에서 생성 되는 *artifacts\bin* 의 리 포 루트에서 디렉터리입니다.
 
    > [!TIP]
    > 빌드할 *Metrics.exe* 에서 [레거시 모드](#legacy-mode), 다음 명령을 실행 합니다.
@@ -79,7 +79,7 @@ ms.locfileid: "50966533"
 
 ### <a name="usage"></a>사용법
 
-실행할 *Metrics.exe*인수로 솔루션 및 XML 출력 파일, 프로젝트를 제공 합니다. 예를 들어:
+실행할 *Metrics.exe*인수로 솔루션 및 XML 출력 파일, 프로젝트를 제공 합니다. 예를 들면 다음과 같습니다.
 
 ```shell
 C:\>Metrics.exe /project:ConsoleApp20.csproj /out:report.xml
@@ -166,7 +166,7 @@ msbuild /m /v:m /t:rebuild /p:LEGACY_CODE_METRICS_MODE=true Metrics.csproj
 
 자세한 내용은 [레거시 모드에서 코드 메트릭을 생성 하는 사용](https://github.com/dotnet/roslyn-analyzers/pull/1841)합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [코드 메트릭 결과 창 사용](../code-quality/working-with-code-metrics-data.md)
 - [코드 메트릭 값](../code-quality/code-metrics-values.md)
