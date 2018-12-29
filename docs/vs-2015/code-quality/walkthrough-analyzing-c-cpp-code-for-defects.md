@@ -21,12 +21,12 @@ ms.author: mblome
 manager: ghogen
 ms.openlocfilehash: 6a5e98ee673d232065dd522b0b81a21760306979
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51782312"
 ---
-# <a name="walkthrough-analyzing-cc-code-for-defects"></a>연습: C/C++ 코드의 오류 분석
+# <a name="walkthrough-analyzing-cc-code-for-defects"></a>연습: C/C++ 코드 오류 분석
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 이 연습에서는 C/c + + 코드에 대 한 코드 분석 도구를 사용 하 여 잠재적인 코드 오류에 대 한 C/c + + 코드를 분석 하는 방법에 설명 합니다.  

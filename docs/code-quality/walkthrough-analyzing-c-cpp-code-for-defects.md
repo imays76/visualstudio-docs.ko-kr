@@ -180,5 +180,5 @@ ms.locfileid: "31922035"
 
 ## <a name="see-also"></a>참고자료
 
-[연습: 코드 오류에 대 한 관리 되는 코드를 분석](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
-[C/c + + 코드 분석](../code-quality/code-analysis-for-c-cpp-overview.md)
+[연습: 코드 오류에 대 한 관리되는 코드를 분석](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
+[C/C++ 코드 분석](../code-quality/code-analysis-for-c-cpp-overview.md)
