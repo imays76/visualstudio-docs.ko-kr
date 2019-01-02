@@ -13,16 +13,16 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 406b3c24cf3c46b694afc8ab24c0ddca11b434ee
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 182f020ee5ca8132eb19647fc9f24c834544ac2e
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159999"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684355"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Visual Studio에서 C++ 시작
 
-이 빠른 시작을 완료하면 Visual Studio를 사용하여 C++로 응용 프로그램을 개발할 때 사용할 수 있는 여러 도구 및 대화 상자에 익숙해집니다. 간단한 "Hello, World" 스타일 콘솔 응용 프로그램을 만들면서 IDE(통합 개발 환경)에서 작업하는 방법을 배워 보겠습니다.
+이 빠른 시작을 완료하면 Visual Studio를 사용하여 C++로 애플리케이션을 개발할 때 사용할 수 있는 여러 도구 및 대화 상자에 익숙해집니다. 간단한 "Hello, World" 스타일 콘솔 애플리케이션을 만들면서 IDE(통합 개발 환경)에서 작업하는 방법을 배워 보겠습니다.
 
 ## <a name="prerequisites"></a>전제 조건
 
@@ -46,7 +46,7 @@ Visual Studio는 *프로젝트*를 사용하여 앱에 대한 코드를 구성�
 
    ![메뉴 모음에서 [파일] > [새로 만들기] > [프로젝트]를 차례로 선택합니다.](../ide/media/get-started-cpp-file-new-project-menu.png)
 
-1. 아직 선택하지 않은 경우 **새 프로젝트** 대화 상자에서 **설치됨 > Visual C++** 를 선택합니다. 가운데 창에서 **Windows 콘솔 응용 프로그램** 템플릿을 선택합니다. **이름** 편집 상자에서 *HelloApp*을 입력합니다.
+1. 아직 선택하지 않은 경우 **새 프로젝트** 대화 상자에서 **설치됨 > Visual C++** 를 선택합니다. 가운데 창에서 **Windows 콘솔 애플리케이션** 템플릿을 선택합니다. **이름** 편집 상자에서 *HelloApp*을 입력합니다.
 
    ![새 프로젝트 대화 상자를 사용하여 앱 프로젝트를 만듭니다.](../ide/media/get-started-cpp-new-project-dialog.png)
 
@@ -135,7 +135,7 @@ HelloApp을 디버그하여 단어 "Hello"가 콘솔 창에 표시되는지 여�
 
 ## <a name="build-a-release-version-of-the-app"></a>앱 릴리스 버전 빌드
 
-모든 것이 작동하는 것을 확인했으므로 응용 프로그램의 릴리스 빌드를 준비할 수 있습니다. 릴리스 빌드는 디버깅 정보를 두고 컴파일러 최적화 옵션을 사용하여 더 작고 빠른 코드를 만듭니다.
+모든 것이 작동하는 것을 확인했으므로 애플리케이션의 릴리스 빌드를 준비할 수 있습니다. 릴리스 빌드는 디버깅 정보를 두고 컴파일러 최적화 옵션을 사용하여 더 작고 빠른 코드를 만듭니다.
 
 ### <a name="to-clean-the-solution-files-and-build-a-release-version"></a>솔루션 파일을 정리하고 릴리스 버전을 빌드하려면
 
@@ -145,7 +145,7 @@ HelloApp을 디버그하여 단어 "Hello"가 콘솔 창에 표시되는지 여�
 
 1. **디버그**부터 **릴리스**까지 HelloApp에 대한 솔루션 구성을 변경하려면 도구 모음에서 솔루션 구성 컨트롤에 대한 드롭다운을 선택한 다음 **릴리스**를 선택합니다.
 
-   ![응용 프로그램 릴리스 버전 빌드](../ide/media/get-started-cpp-set-release-configuration.png)
+   ![애플리케이션 릴리스 버전 빌드](../ide/media/get-started-cpp-set-release-configuration.png)
 
 1. 솔루션을 빌드합니다. 메뉴 모음에서 **빌드 > 솔루션 빌드**를 선택합니다.
 
@@ -156,5 +156,5 @@ HelloApp을 디버그하여 단어 "Hello"가 콘솔 창에 표시되는지 여�
 ## <a name="see-also"></a>참고 항목
 
 - [C++ 데스크톱 개발에 Visual Studio IDE 사용](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)
-- [연습: C# 또는 Visual Basic으로 간단한 애플리케이션 만들기](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
+- [연습: C# 또는 Visual Basic으로 간단한 애플리케이션 만들기](../get-started/csharp/tutorial-wpf.md)
 - [Visual Studio 생산성 팁](../ide/productivity-tips-for-visual-studio.md)

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 05d3cd5cd56010e62b6ca50a76e726cb7998070b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: HT
+ms.openlocfilehash: d55f1ba3a9e0d30dda9d9e390bae0cc3a46f8444
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065154"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562349"
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>Visual Studio에서 디버거 Windows에 알아봅니다
 
@@ -40,7 +40,7 @@ ms.locfileid: "53065154"
 |GPU 스레드|-|[방법: GPU 스레드 창 사용](../debugger/how-to-use-the-gpu-threads-window.md)|
 |작업|Ctrl+Shift+D, K|[작업 창 사용](../debugger/using-the-tasks-window.md)|
 |Python 대화형 디버그|Shift+Alt+I|[Python 대화형 REPL](../python/python-interactive-repl-in-visual-studio.md)|
-|JavaScript 콘솔|Ctrl+Alt+V, C|[퀵 스타트: JavaScript 디버그](../debugger/quickstart-debug-javascript-using-the-console.md)|
+|JavaScript 콘솔|Ctrl+Alt+V, C|[빠른 시작: JavaScript 디버그](../debugger/quickstart-debug-javascript-using-the-console.md)|
 |DOM 탐색기|Ctrl+Alt+V, D|[DOM 탐색기를 사용하여 레이아웃 디버그](../debugger/debug-layout-using-dom-explorer.md)|
 |라이브 시각적 트리|-|[디버그하는 동안 XAML 속성 검사](../debugger/inspect-xaml-properties-while-debugging.md)|
 |라이브 속성 탐색기|-|[디버그하는 동안 XAML 속성 검사](../debugger/inspect-xaml-properties-while-debugging.md)|
@@ -51,4 +51,4 @@ ms.locfileid: "53065154"
 
 ## <a name="see-also"></a>참고 항목
 
-[디버거 기본 사항](../debugger/getting-started-with-the-debugger.md)
+[디버거 소개](../debugger/debugger-feature-tour.md)

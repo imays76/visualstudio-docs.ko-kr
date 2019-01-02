@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 9d924ee92258e348d5ffee1551fcde7707d711cf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c22b9c25f95ea26f2cdaf5c2035fb7a373123241
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855211"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684784"
 ---
 # <a name="get-started-with-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 시작
 
@@ -47,7 +47,7 @@ Unity 설치에 포함되는 Visual Studio의 버전은 최신 버전이 아닐 
 
 Visual Studio 2017이 이미 설치되어 있거나 수동으로 설치하려는 경우에는 Visual Studio 설치 관리자를 실행합니다.
 
-1. [Visual Studio 설치 관리자를 다운로드](/visualstudio/install/install-visual-studio)하거나 이미 설치된 경우에는 설치 관리자를 엽니다.
+1. [Visual Studio 설치 관리자를 다운로드](../install/install-visual-studio.md)하거나 이미 설치된 경우에는 설치 관리자를 엽니다.
 
 1. 원하는 Visual Studio 버전에 대해 **수정**(이미 설치된 경우) 또는 **설치**(새 설치의 경우)를 클릭합니다.
 

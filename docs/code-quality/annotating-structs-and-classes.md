@@ -26,12 +26,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: e4294284ff2911fd05cc771bf4deaad368e3c28b
-ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
+ms.openlocfilehash: a4fb171ec575fdcf85879ed62252c9d373283f62
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47228827"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802633"
 ---
 # <a name="annotating-structs-and-classes"></a>구조체 및 클래스에 주석 지정
 고정 처럼 작동 하는 주석을 사용 하 여 구조체와 클래스 멤버에 주석을 달 수 있습니다-함수 진입/종료 바깥쪽 구조를 매개 변수나 결과 값을 포함 하는 또는 함수 호출에서 true가 될 것으로 가정 됩니다.
@@ -60,7 +60,7 @@ ms.locfileid: "47228827"
 
 -   `_Struct_size_bytes_(size)`
 
-     구조체 또는 클래스 선언에 적용 됩니다.  가 지정한 바이트 수를 사용 하 여 해당 형식의 유효한 개체를 선언된 된 형식 보다 클 수 있습니다 나타냅니다 `size`합니다.  예를 들어:
+     구조체 또는 클래스 선언에 적용 됩니다.  가 지정한 바이트 수를 사용 하 여 해당 형식의 유효한 개체를 선언된 된 형식 보다 클 수 있습니다 나타냅니다 `size`합니다.  다음은 사용 예를 보여줍니다.
 
     ```cpp
 
@@ -79,4 +79,12 @@ ms.locfileid: "47228827"
     ```
 
 ## <a name="see-also"></a>참고 항목
- [C/c + + 코드 오류를 줄이기 위한 SAL 주석 사용](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md) [SAL 이해](../code-quality/understanding-sal.md) [함수 매개 변수 및 반환 값에 주석 지정](../code-quality/annotating-function-parameters-and-return-values.md) [함수동작에주석지정](../code-quality/annotating-function-behavior.md) [잠금 동작에 주석 지정](../code-quality/annotating-locking-behavior.md) [주석 적용 시기 및 위치 지정](../code-quality/specifying-when-and-where-an-annotation-applies.md) [내장 함수](../code-quality/intrinsic-functions.md) [모범 사례 및 예제](../code-quality/best-practices-and-examples-sal.md)
+
+- [C/C++ 코드 오류를 줄이기 위한 SAL 주석 사용](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
+- [SAL 이해](../code-quality/understanding-sal.md)
+- [함수 매개 변수 및 반환 값에 주석 지정](../code-quality/annotating-function-parameters-and-return-values.md)
+- [함수 동작에 주석 지정](../code-quality/annotating-function-behavior.md)
+- [잠금 동작에 주석 지정](../code-quality/annotating-locking-behavior.md)
+- [주석 적용 시기 및 위치 지정](../code-quality/specifying-when-and-where-an-annotation-applies.md)
+- [내장 함수](../code-quality/intrinsic-functions.md)
+- [모범 사례 및 예제](../code-quality/best-practices-and-examples-sal.md)

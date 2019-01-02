@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c490d15f27801dff6bb09f6356ad7c665b09c558
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: c06c77d2bc5a291b4dd2d624352a25abd29338b7
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160194"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740400"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Visual Studio 2017의 새로운 기능
 
@@ -55,7 +55,7 @@ Visual Studio 2017에서 가장 두드러진 개선 사항과 새로운 기능�
 
  Visual Studio를 사용하면 필요할 때 필요한 기능만 쉽고 빠르게 설치할 수 있습니다. 또한 완전히 제거됩니다.
 
- 가장 중요한 변화는 Visual Studio를 설치할 때 확인할 수 있는 새로운 설치 환경입니다. **작업** 탭에는 일반 프레임워크, 언어 및 플랫폼을 나타내도록 그룹화된 설치 옵션이 표시됩니다. .NET 데스크톱 개발에서 Windows, Linux 및 iOS의 C++ 응용 프로그램 개발에 이르기까지 모든 작업을 포함합니다.
+ 가장 중요한 변화는 Visual Studio를 설치할 때 확인할 수 있는 새로운 설치 환경입니다. **작업** 탭에는 일반 프레임워크, 언어 및 플랫폼을 나타내도록 그룹화된 설치 옵션이 표시됩니다. .NET 데스크톱 개발에서 Windows, Linux 및 iOS의 C++ 애플리케이션 개발에 이르기까지 모든 작업을 포함합니다.
 
 필요한 작업을 선택하고, 필요할 때 변경합니다.
 
@@ -217,13 +217,13 @@ Visual Studio에서 C++ 핵심 지침을 배포하고, C++11 및 C++ 기능에 �
 
 #### <a name="snapshots-and-intellitrace-step-back"></a>스냅숏 및 IntelliTrace 뒤로 이동
 
-**15.5의 새로운 기능**: IntelliTrace 뒤로 이동은 모든 중단점 및 디버거 단계 이벤트에서 애플리케이션의 스냅숏을 자동으로 생성합니다. 기록된 스냅숏을 통해 이전 중단점 또는 단계로 돌아가서 응용 프로그램의 과거 상태를 볼 수 있습니다. IntelliTrace 뒤로 이동을 사용하면 이전 응용 프로그램 상태를 보고 싶지만 디버깅을 다시 시작하거나 원하는 앱 상태를 다시 만들지 않으려는 경우에 시간을 절약할 수 있습니다.
+**15.5의 새로운 기능**: IntelliTrace 뒤로 이동은 모든 중단점 및 디버거 단계 이벤트에서 애플리케이션의 스냅숏을 자동으로 생성합니다. 기록된 스냅숏을 통해 이전 중단점 또는 단계로 돌아가서 애플리케이션의 과거 상태를 볼 수 있습니다. IntelliTrace 뒤로 이동을 사용하면 이전 애플리케이션 상태를 보고 싶지만 디버깅을 다시 시작하거나 원하는 앱 상태를 다시 만들지 않으려는 경우에 시간을 절약할 수 있습니다.
 
 **디버그** 도구 모음의 **뒤로 가기**와 **앞으로 가기** 단추를 사용하여 이동하고 스냅숏을 볼 수 있습니다. 이 단추를 사용하여 **진단 도구** 창의 **이벤트** 탭에 나타나는 이벤트를 탐색할 수 있습니다. 이벤트의 앞이나 뒤로 이동하면 선택한 이벤트에 대한 기록 디버깅이 자동으로 활성화됩니다.
 
 ![Visual Studio의 새 예외 도우미 대화 상자](../debugger/media/intellitrace-step-back-icons-description.png  "뒤로 가기 및 앞으로 가기 단추")
 
-자세한 내용은 [IntelliTrace 뒤로 이동을 사용하여 스냅숏 보기](../debugger/how-to-use-intellitrace-step-back.md) 페이지를 참조하세요.
+자세한 내용은 [IntelliTrace 뒤로 이동을 사용하여 스냅숏 보기](../debugger/view-historical-application-state.md) 페이지를 참조하세요.
 
 ### <a name="containerization"></a>컨테이너화
 
@@ -244,31 +244,31 @@ Visual Studio에서 C++ 핵심 지침을 배포하고, C++11 및 C++ 기능에 �
 
 자세한 내용은 [Visual Studio용 Azure Functions 도구](https://docs.microsoft.com/azure/azure-functions/functions-develop-vs) 페이지를 참조하세요.
 
-### <a name="debug-live-aspnet-apps-using-snappoints-and-logpoints-in-live-azure-applications"></a>라이브 Azure 응용 프로그램에서 snappoint와 logpoint를 사용하여 라이브 ASP.NET 앱 디버그
+### <a name="debug-live-aspnet-apps-using-snappoints-and-logpoints-in-live-azure-applications"></a>라이브 Azure 애플리케이션에서 snappoint와 logpoint를 사용하여 라이브 ASP.NET 앱 디버그
 
-**15.5의 새로운 기능**: 스냅숏 디버거는 관심이 있는 코드가 실행될 때 프로덕션 상태 앱의 스냅숏을 생성합니다. 디버거가 스냅숏을 생성하도록 명령하려면 코드에서 snappoint와 logpoint를 설정합니다. 디버거를 통해 프로덕션 응용 프로그램의 트래픽에 영향을 미치지 않으면서 정확히 무엇이 잘못되었는지를 볼 수 있습니다. 스냅샷 디버거를 사용하면 프로덕션 환경에서 발생하는 문제를 해결하는 데 걸리는 시간을 상당히 줄일 수 있습니다.
+**15.5의 새로운 기능**: 스냅숏 디버거는 관심이 있는 코드가 실행될 때 프로덕션 상태 앱의 스냅숏을 생성합니다. 디버거가 스냅숏을 생성하도록 명령하려면 코드에서 snappoint와 logpoint를 설정합니다. 디버거를 통해 프로덕션 애플리케이션의 트래픽에 영향을 미치지 않으면서 정확히 무엇이 잘못되었는지를 볼 수 있습니다. 스냅샷 디버거를 사용하면 프로덕션 환경에서 발생하는 문제를 해결하는 데 걸리는 시간을 상당히 줄일 수 있습니다.
 
 스냅숏 컬렉션은 Azure App Service에서 실행되는 다음 웹앱에서 사용할 수 있습니다.
 
-* .NET Framework 4.6.1 이상에서 실행되는 ASP.NET 응용 프로그램
-* Windows의 .NET Core 2.0 이상에서 실행되는 ASP.NET Core 응용 프로그램
+* .NET Framework 4.6.1 이상에서 실행되는 ASP.NET 애플리케이션
+* Windows의 .NET Core 2.0 이상에서 실행되는 ASP.NET Core 애플리케이션
 
 자세한 내용은 [snappoint와 logpoint를 사용하여 라이브 ASP.NET 앱 디버그](../debugger/debug-live-azure-applications.md)를 참조하세요.
 
 ## <a name="windows-app-development"></a>Windows 앱 개발
 
-### <a name="universal-windows-platform"></a>유니버설 Windows 플랫폼
+### <a name="universal-windows-platform"></a>UWP
 
 UWP(Universal Windows Platform)는 Windows 10용 앱 플랫폼입니다. API 집합 하나, 앱 패키지 하나 및 스토어 하나만으로 UWP용 앱을 개발하여 모든 Windows 10 디바이스 &ndash; PC, 태블릿, 전화, Xbox, HoloLens, Surface Hub 등에 연결할 수 있습니다. UWP는 다양한 화면 크기와 터치, 마우스와 키보드, 게임 컨트롤러 또는 펜을 비롯한 다양한 인터랙션 모델을 지원합니다. UWP 앱의 핵심은 작업 환경이 사용자의 모든 디바이스에서 이동이 가능하여 현재 진행 중인 작업에 가장 편리하거나 생산적인 디바이스를 사용하기를 바란다는 점입니다.
 
- ![유니버설 Windows 플랫폼](../cross-platform/media/uwp_coreextensions.png)
+ ![UWP](../cross-platform/media/uwp_coreextensions.png)
 
-&mdash;C#, Visual Basic, C++ 또는 JavaScript&mdash; 중에서 원하는 개발 언어를 선택하여 Windows 10 장치용 유니버설 Windows 플랫폼 앱을 만듭니다. Visual Studio 2017은 모든 디바이스에 대해 단일 프로젝트를 만들 수 있도록 각 언어에 UWP 앱 템플릿을 제공합니다. 작업을 마치면 Visual Studio 내에서 앱 패키지를 생성하고 Microsoft Store에 제출하여 Windows 10 디바이스를 사용하는 고객에게 앱을 제공할 수 있습니다.
+&mdash;C#, Visual Basic, C++ 또는 JavaScript&mdash; 중에서 원하는 개발 언어를 선택하여 Windows 10 디바이스용 유니버설 Windows 플랫폼 앱을 만듭니다. Visual Studio 2017은 모든 디바이스에 대해 단일 프로젝트를 만들 수 있도록 각 언어에 UWP 앱 템플릿을 제공합니다. 작업을 마치면 Visual Studio 내에서 앱 패키지를 생성하고 Microsoft Store에 제출하여 Windows 10 디바이스를 사용하는 고객에게 앱을 제공할 수 있습니다.
 
 **15.5의 새로운 기능**: Visual Studio 2017 버전 15.5는 Windows 10 Fall Creators Update SDK(10.0.16299.0)를 가장 잘 지원합니다. Windows 10 Fall Creators Update는 UWP 개발자를 위해 많은 사항이 개선되었습니다. 다음은 큰 변화 중 일부입니다. 
 
 * **.NET Standard 2.0에 대한 지원**<br/>간소화된 앱 배포 외에, Windows 10 Fall Creators Update는 .NET Standard 2.0 지원을 제공하는 첫 번째 Windows 10 릴리스입니다. 사실상, [.NET Standard](https://blogs.msdn.microsoft.com/dotnet/2016/09/26/introducing-net-standard/)는 모든 .NET 플랫폼에서 구현할 수 있는 기본 클래스 라이브러리의 참조 구현입니다. .NET Standard의 목표는 .NET 개발자가 작업하는 모든 .NET 플랫폼 전반에서 코드를 최대한 쉽게 공유할 수 있도록 하는 것입니다.
-* **UWP와 Win32의 장점**<br/>Windows 10 플랫폼은 [데스크톱 브리지](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root)를 통해 개발자가 중점을 두는 것이 UWP, WPF, Windows Forms 또는 Xamarin 중 무엇이든 모든 .NET 개발자가 Windows 10을 더 잘 활용할 수 있도록 향상되었습니다. Visual Studio 2017 버전 15.5의 새로운 앱 패키징 프로젝트 형식을 사용하면 UWP 프로젝트에서 하듯이 WPF 또는 Windows Forms 프로젝트용 Windows 앱 패키지를 만들 수 있습니다. 앱을 패키지하면 Windows 10 앱 배포의 모든 이점과 Microsoft Store(소비자 앱) 또는 비즈니스 및 교육용 Microsoft Store를 통해 배포할 수 있는 옵션이 제공됩니다. 패키지된 앱은 데스크톱의 전체 UWP API 표면과 Win32 API 모두에 액세스할 수 있기 때문에 UWP API 및 Windows 10 기능을 사용하여 WPF 및 Windows Forms 응용 프로그램을 점진적으로 현대화할 수 있습니다. 또한 모든 Win32 기능을 갖춘 데스크톱에서 실행되는 UWP 응용 프로그램에 Win32 구성 요소를 포함할 수 있습니다.
+* **UWP와 Win32의 장점**<br/>Windows 10 플랫폼은 [데스크톱 브리지](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root)를 통해 개발자가 중점을 두는 것이 UWP, WPF, Windows Forms 또는 Xamarin 중 무엇이든 모든 .NET 개발자가 Windows 10을 더 잘 활용할 수 있도록 향상되었습니다. Visual Studio 2017 버전 15.5의 새로운 앱 패키징 프로젝트 형식을 사용하면 UWP 프로젝트에서 하듯이 WPF 또는 Windows Forms 프로젝트용 Windows 앱 패키지를 만들 수 있습니다. 앱을 패키지하면 Windows 10 앱 배포의 모든 이점과 Microsoft Store(소비자 앱) 또는 비즈니스 및 교육용 Microsoft Store를 통해 배포할 수 있는 옵션이 제공됩니다. 패키지된 앱은 데스크톱의 전체 UWP API 표면과 Win32 API 모두에 액세스할 수 있기 때문에 UWP API 및 Windows 10 기능을 사용하여 WPF 및 Windows Forms 애플리케이션을 점진적으로 현대화할 수 있습니다. 또한 모든 Win32 기능을 갖춘 데스크톱에서 실행되는 UWP 애플리케이션에 Win32 구성 요소를 포함할 수 있습니다.
 
 UWP에 대한 자세한 내용은 [UWP(유니버설 Windows 플랫폼)용 앱 개발](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md) 페이지를 참조하세요.
 
@@ -278,7 +278,7 @@ UWP에 대한 자세한 내용은 [UWP(유니버설 Windows 플랫폼)용 앱 �
 
 “.NET을 사용한 모바일 개발” 워크로드의 일부로, C#, .NET 및 Visual Studio에 친숙한 개발자는 Xamarin을 사용하여 네이티브 Android, iOS 및 Windows 앱을 제공할 수 있습니다. 개발자는 모바일 앱용 Xamarin을 사용할 때 Objective-C 또는 Java 같은 네이티브 코딩 언어를 배울 필요 없이 Android, iOS 및 Windows 디바이스의 원격 디버깅을 비롯한 동일한 기능을 사용하여 생산성을 얻을 수 있습니다.
 
-자세한 내용은 [Visual Studio 및 Xamarin](../cross-platform/visual-studio-and-xamarin.md) 페이지를 참조하세요.
+자세한 내용은 [Visual Studio 및 Xamarin](/xamarin/) 페이지를 참조하세요.
 
 ### <a name="entitlements-editor"></a>자격 편집기
 
@@ -288,7 +288,7 @@ UWP에 대한 자세한 내용은 [UWP(유니버설 Windows 플랫폼)용 앱 �
 
 ### <a name="visual-studio-tools-for-xamarin"></a>Visual Studio Tools for Xamarin
 
-**15.4의 새로운 기능**: Xamarin Live를 사용하여 개발자는 iOS 및 Android 디바이스에서 직접 자신의 앱을 계속해서 배포, 테스트 및 디버그할 수 있습니다. &mdash;앱 스토어 또는 Google Play에서 사용할 수 있는&mdash; Xamarin Live Player를 다운로드한 후 장치를 Visual Studio와 연결하고 모바일 앱을 빌드하는 방법을 혁신적으로 개선할 수 있습니다. 이 기능은 이제 Visual Studio에 포함되었으며 **도구** > **옵션** > **Xamarin** > **기타** > **Xamarin Live Player 사용**으로 이동하여 사용하도록 설정할 수 있습니다.
+**15.4의 새로운 기능**: Xamarin Live를 사용하여 개발자는 iOS 및 Android 디바이스에서 직접 자신의 앱을 계속해서 배포, 테스트 및 디버그할 수 있습니다. &mdash;앱 스토어 또는 Google Play에서 사용할 수 있는&mdash; Xamarin Live Player를 다운로드한 후 디바이스를 Visual Studio와 연결하고 모바일 앱을 빌드하는 방법을 혁신적으로 개선할 수 있습니다. 이 기능은 이제 Visual Studio에 포함되었으며 **도구** > **옵션** > **Xamarin** > **기타** > **Xamarin Live Player 사용**으로 이동하여 사용하도록 설정할 수 있습니다.
 
 ![Xamarin Live Player 쌍, 배포 및 라이브 편집 모드의 애니메이션](../ide/media/xamarinliveplayer.gif)
 
@@ -322,7 +322,7 @@ DevOps 기능을 SQL Server 데이터베이스 개발로 확장하기 위해 Vis
 
 Visual Studio 2017 Enterprise에는 다음이 포함되어 있습니다.
 
-* [Redgate ReadyRoll Core](http://www.red-gate.com/products/sql-development/readyroll/entrypage/microsoft-and-readyroll?utm_source=microsoft&utm_medium=link&utm_campaign=readyroll&utm_term=docs-newinvs)는 마이그레이션 스크립트를 개발하고, 소스 제어를 사용하여 데이터베이스 변경 내용을 관리하고, SQL Server 데이터베이스 변경 내용을 응용 프로그램 변경 내용과 함께 자동으로 안전하게 배포하는 데 도움이 됩니다.
+* [Redgate ReadyRoll Core](http://www.red-gate.com/products/sql-development/readyroll/entrypage/microsoft-and-readyroll?utm_source=microsoft&utm_medium=link&utm_campaign=readyroll&utm_term=docs-newinvs)는 마이그레이션 스크립트를 개발하고, 소스 제어를 사용하여 데이터베이스 변경 내용을 관리하고, SQL Server 데이터베이스 변경 내용을 애플리케이션 변경 내용과 함께 자동으로 안전하게 배포하는 데 도움이 됩니다.
 * [Redgate SQL Prompt 코어](http://www.red-gate.com/products/sql-development/sql-prompt/entrypage/microsoft-and-sql-prompt?utm_source=microsoft&utm_medium=link&utm_campaign=sqlprompt&utm_term=docs-newinvs)는 지능형 코드 완성 기능을 통해 SQL을 더 빠르고 정확하게 작성하는 데 도움이 됩니다. SQL 프롬프트는 데이터베이스 및 시스템 개체, 키워드를 자동으로 완성하고 입력 시 열을 제안합니다. 모든 열 이름이나 별칭을 기억할 필요가 없으므로 코드가 더 깔끔해지고 오류가 줄어듭니다.
 
 Visual Studio 2017의 모든 버전에는 다음이 포함되어 있습니다.
@@ -335,7 +335,7 @@ Visual Studio 2017의 모든 버전에는 다음이 포함되어 있습니다.
 
 .NET Core는 .NET Standard의 일반적인 용도를 위한 모듈식 플랫폼 간 오픈 소스 구현이며 .NET Framework와 동일한 API를 다수 포함합니다.
 
-.NET Core 플랫폼은 관리되는 컴파일러, 런타임, 기본 클래스 라이브러리 및 ASP.NET Core와 같은 다양한 응용 프로그램 모델을 포함하는 여러 요소로 구성됩니다. .NET Core는 세 개의 주요 운영 체제를 지원합니다. Windows, Linux 및 macOS. 디바이스, 클라우드 및 포함/IoT 시나리오에 .NET Core를 사용할 수 있습니다.
+.NET Core 플랫폼은 관리되는 컴파일러, 런타임, 기본 클래스 라이브러리 및 ASP.NET Core와 같은 다양한 애플리케이션 모델을 포함하는 여러 요소로 구성됩니다. .NET Core는 세 개의 주요 운영 체제를 지원합니다. Windows, Linux 및 macOS. 디바이스, 클라우드 및 포함/IoT 시나리오에 .NET Core를 사용할 수 있습니다.
 
 그리고 이제 Docker 지원도 포함합니다.
 
@@ -355,7 +355,7 @@ Visual Studio 2017의 모든 버전에는 다음이 포함되어 있습니다.
 
 ### <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools for AI
 
-**15.5의 새로운 기능**: Visual Studio의 생산성 기능을 사용하여 현재의 AI 혁신을 가속화합니다. 구문 강조 표시, IntelliSense 및 텍스트 자동 서식 지정과 같이 기본 제공되는 코드 편집기 기능을 사용하세요. 지역 변수 및 모델에 대한 단계별 디버깅을 사용하여 로컬 환경에서 딥 러닝 응용 프로그램을 대화형으로 테스트할 수 있습니다.
+**15.5의 새로운 기능**: Visual Studio의 생산성 기능을 사용하여 현재의 AI 혁신을 가속화합니다. 구문 강조 표시, IntelliSense 및 텍스트 자동 서식 지정과 같이 기본 제공되는 코드 편집기 기능을 사용하세요. 지역 변수 및 모델에 대한 단계별 디버깅을 사용하여 로컬 환경에서 딥 러닝 애플리케이션을 대화형으로 테스트할 수 있습니다.
 
   ![딥 러닝 IDE](../ai/media/about/ide.png)
 
@@ -366,7 +366,7 @@ Visual Studio 2017의 모든 버전에는 다음이 포함되어 있습니다.
 Visual Studio 2017은 개발 환경을 훨씬 더 좋게 만들어 줄 수 있는 새 기능으로 자주 업데이트됩니다. 실험적 미리 보기에 있는 가장 주목할 만한 업데이트 몇 가지를 요약하면 다음과 같습니다.
 
 * **[실시간 공유](https://visualstudio.microsoft.com/services/live-share/)** - Visual Studio 내에서 바로 코드베이스와 컨텍스트를 팀원과 공유하고 즉각적인 양방향 공동 작업을 수행할 수 있는 새로운 도구. 실시간 공유를 사용하면 귀하가 공유한 프로젝트를 팀원이 원활하고 안전하게 읽고, 탐색하고, 편집하고, 디버깅할 수 있습니다.<br><br>자세한 내용은 [실시간 공유 FAQ](/visualstudio/liveshare/faq)를 참조하세요.<br><br>
-* **[IntelliCode](https://visualstudio.microsoft.com/services/intellicode/)** - AI를 사용하여 더 나은 컨텍스트 인식 코드 완성 기능을 제공하고, 개발자에게 팀의 패턴과 스타일에 맞게 코딩하도록 안내하고, 찾기 어려운 코드 문제를 발견하고, 코드 검토를 정말로 중요한 영역에 집중시켜서 소프트웨어 개발을 개선하는 새로운 기능입니다. <br><br>자세한 내용은 [IntelliCode FAQ](../ide/not-in-toc/intellicode-faq.md)를 참조하세요.
+* **[IntelliCode](https://visualstudio.microsoft.com/services/intellicode/)** - AI를 사용하여 더 나은 컨텍스트 인식 코드 완성 기능을 제공하고, 개발자에게 팀의 패턴과 스타일에 맞게 코딩하도록 안내하고, 찾기 어려운 코드 문제를 발견하고, 코드 검토를 정말로 중요한 영역에 집중시켜서 소프트웨어 개발을 개선하는 새로운 기능입니다. <br><br>자세한 내용은 [IntelliCode FAQ](/visualstudio/intellicode/faq)를 참조하세요.
 
 Visual Studio 2017에서 진행 중인 다른 기능에 대해 더 알고 싶은가요? [Visual Studio 로드맵](/visualstudio/productinfo/vs2018-roadmap) 페이지를 참조하세요.
 

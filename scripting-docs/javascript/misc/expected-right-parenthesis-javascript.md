@@ -1,5 +1,5 @@
 ---
-title: 예상 &#39;)&#39; (JavaScript) | Microsoft 문서
+title: 예상 ')' (JavaScript) | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,14 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f816b4635ae219b12370d53fa8c14eb8c0112a7a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4f6a0128bb73e69a151415518ae6c019be0e4df9
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863544"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804671"
 ---
-# <a name="expected-3939-javascript"></a>예상 &#39;)&#39; (JavaScript)
+# <a name="expected--javascript"></a>')'가 필요합니다.(JavaScript)
 괄호 안의 식이 포함 하려고 하는데 닫는 괄호가 포함 되어 있지 않습니다. 일부 식은 괄호 안에 묶어야 합니다. 다음 예제에서 괄호를 사용 하 여 확인 합니다.  
   
 ```JavaScript  

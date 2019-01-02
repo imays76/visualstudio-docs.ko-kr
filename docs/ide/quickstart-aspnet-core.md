@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: fb9dbc94d06bbb260884a2379e2427969fec1031
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 23ba016d95e96965637ca6742501b09b16a42707
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159245"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684368"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>빠른 시작: Visual Studio를 사용하여 첫 번째 ASP.NET Core 웹앱 만들기
 
@@ -41,15 +41,15 @@ Visual Studio를 이미 설치한 경우 최신 릴리스를 실행하고 있는
 
 ## <a name="create-a-project"></a>프로젝트 만들기
 
-시작하려면 ASP.NET Core 웹 응용 프로그램 프로젝트를 만듭니다. 또한 프로젝트 형식에는 어떤 것을 추가하기도 전에 웹앱을 만들 수 있는 모든 템플릿 파일이 함께 제공됩니다!
+시작하려면 ASP.NET Core 웹 애플리케이션 프로젝트를 만듭니다. 또한 프로젝트 형식에는 어떤 것을 추가하기도 전에 웹앱을 만들 수 있는 모든 템플릿 파일이 함께 제공됩니다!
 
 1. Visual Studio 2017을 엽니다.
 
 1. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 차례로 선택합니다.
 
-1. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual C#** 을 확장하고 **.NET Core**를 선택합니다. 가운데 창에서 **ASP.NET Core 웹 응용 프로그램**을 선택합니다. 그런 다음, 파일 이름을 `HelloWorld`로 지정하고 **확인**을 선택합니다.
+1. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual C#** 을 확장하고 **.NET Core**를 선택합니다. 가운데 창에서 **ASP.NET Core 웹 애플리케이션**을 선택합니다. 그런 다음, 파일 이름을 `HelloWorld`로 지정하고 **확인**을 선택합니다.
 
-   ![C#용 새 ASP.NET Core 웹 응용 프로그램 프로젝트 만들기](../ide/media/csharp-aspnet-choose-template-name-file.png)
+   ![C#용 새 ASP.NET Core 웹 애플리케이션 프로젝트 만들기](../ide/media/csharp-aspnet-choose-template-name-file.png)
 
    > [!NOTE]
    > **.NET Core** 프로젝트 템플릿 범주가 표시되지 않으면 왼쪽 창에서 **Visual Studio 설치 관리자 열기** 링크를 선택합니다. (표시 설정에 따라 스크롤해야 볼 수 있습니다.)
@@ -62,14 +62,14 @@ Visual Studio를 이미 설치한 경우 최신 릴리스를 실행하고 있는
    >
    > (새 워크로드를 계속 설치하려면 먼저 Visual Studio를 닫아야 할 수 있습니다.)
 
-1. **새 ASP.NET Core 웹 응용 프로그램** 대화 상자의 상단 드롭다운 메뉴에서 **ASP.NET Core 2.0** 이상을 선택합니다.
+1. **새 ASP.NET Core 웹 애플리케이션** 대화 상자의 상단 드롭다운 메뉴에서 **ASP.NET Core 2.0** 이상을 선택합니다.
 
    > [!NOTE]
    > **ASP.NET Core 2.0** 이상을 볼 수 없는 경우 Visual Studio의 최신 릴리스를 실행하고 있는지 확인합니다. 설치를 업데이트하는 방법에 대한 자세한 내용은 [Visual Studio 2017을 최신 릴리스로 업데이트](../install/update-visual-studio.md) 페이지를 참조하세요.
 
-1. 그런 다음, **웹 응용 프로그램**을 선택한 후, **확인**을 선택합니다.
+1. 그런 다음, **웹 애플리케이션**을 선택한 후, **확인**을 선택합니다.
 
-   ![새 ASP.NET Core 웹 응용 프로그램 대화 상자](../ide/media/quickstart-aspnet-core20.png)
+   ![새 ASP.NET Core 웹 애플리케이션 대화 상자](../ide/media/quickstart-aspnet-core20.png)
 
 곧 Visual Studio에서 프로젝트 파일이 열립니다.
 
@@ -95,20 +95,20 @@ Visual Studio를 이미 설치한 경우 최신 릴리스를 실행하고 있는
 
    ![솔루션 탐색기에서 About.cshtml 파일 선택](../ide/media/csharp-aspnet-about-page-code-file.png)
 
-   **정보** 페이지의 “응용 프로그램 설명” 영역에 대한 텍스트를 포함하는 C# 코드가 편집기에 표시됩니다.
+   **정보** 페이지의 “애플리케이션 설명” 영역에 대한 텍스트를 포함하는 C# 코드가 편집기에 표시됩니다.
 
-   ![Visual Studio 편집기의 응용 프로그램 설명 영역에 대한 C# 코드](../ide/media/csharp-aspnet-about-cshtml-cs-code.png)
+   ![Visual Studio 편집기의 애플리케이션 설명 영역에 대한 C# 코드](../ide/media/csharp-aspnet-about-cshtml-cs-code.png)
 
-1. “응용 프로그램 설명” 메시지 텍스트를 “**내 메시지란?**”으로 변경합니다.
+1. “애플리케이션 설명” 메시지 텍스트를 “**내 메시지란?**”으로 변경합니다.
 
-   ![Visual Studio 편집기에서 응용 프로그램 설명 영역의 기본 메시지 텍스트 변경](../ide/media/csharp-aspnet-about-cshtml-cs-message.png)
+   ![Visual Studio 편집기에서 애플리케이션 설명 영역의 기본 메시지 텍스트 변경](../ide/media/csharp-aspnet-about-cshtml-cs-message.png)
 
 ## <a name="run-the-app"></a>앱 실행
 
 1. **Ctrl**+**F5**를 눌러 앱을 실행하고 웹 브라우저에서 엽니다.
 
    > [!NOTE]
-   > **웹 서버 'IIS Express'에 연결할 수 없음**이라는 오류 메시지 또는 SSL 인증서를 언급하는 오류 메시지를 받는 경우 Visual Studio를 닫습니다. 다음으로, 마우스 오른쪽 단추 또는 컨텍스트 메뉴에서 **관리자 권한으로 실행** 옵션을 사용하여 Visual Studio를 엽니다. 그런 다음 응용 프로그램을 다시 실행합니다.
+   > **웹 서버 'IIS Express'에 연결할 수 없음**이라는 오류 메시지 또는 SSL 인증서를 언급하는 오류 메시지를 받는 경우 Visual Studio를 닫습니다. 다음으로, 마우스 오른쪽 단추 또는 컨텍스트 메뉴에서 **관리자 권한으로 실행** 옵션을 사용하여 Visual Studio를 엽니다. 그런 다음 애플리케이션을 다시 실행합니다.
 
 1. 웹 페이지 위쪽에서 **정보**를 선택합니다.
 
@@ -127,7 +127,7 @@ Visual Studio를 이미 설치한 경우 최신 릴리스를 실행하고 있는
 자세히 알아보려면 계속 다음 자습서를 사용하세요.
 
 > [!div class="nextstepaction"]
-> [Visual Studio에서 C# 및 ASP.NET 시작](tutorial-csharp-aspnet-core.md)
+> [Visual Studio에서 C# 및 ASP.NET 시작](../get-started/csharp/tutorial-aspnet-core.md)
 
 ## <a name="see-also"></a>참고 항목
 

@@ -1,5 +1,5 @@
 ---
-title: '&#39;반환할&#39; 문은 함수 외부 | Microsoft 문서'
+title: "'return' 문이 함수 외부 | Microsoft Docs"
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,14 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 07b633c87dc11b291a5a5783f8121b2a368996d6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a7c4b71938d960d3825030c42e965b6510ca575b
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846520"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802526"
 ---
-# <a name="39return39-statement-outside-of-function"></a>&#39;반환할&#39; 함수 외부 문
+# <a name="return-statement-outside-of-function"></a>함수 외부에 'return' 문이 있습니다.
 사용 하는 `return` 코드의 전역 범위에 문의 합니다. `return` 함수의 본문 안에 문을 사용할만 해야 합니다.  
   
  사용 하 여 함수를 호출 합니다 `()` 연산자는 식입니다. 모든 식에 값이 있습니다. `return` 문을 사용 하는 함수에 의해 반환 되는 값을 지정 합니다. 일반 형식은 다음과 같습니다.  

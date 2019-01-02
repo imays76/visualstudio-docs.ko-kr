@@ -12,17 +12,17 @@ helpviewer_keywords:
 - rows [Office development in Visual Studio], adding to Word tables
 - tables [Office development in Visual Studio], adding rows and columns
 - columns [Office development in Visual Studio], adding to Word tables
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fca44524c3a7c7f10e855eaf62e8b77dc225ae01
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 55a755ccdd7f14af5a38fc516cdb9f76e936e10d
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818681"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804580"
 ---
 # <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>방법: 프로그래밍 방식으로 Word 표에 행 및 열 추가
   Microsoft Office Word 표에서 셀은 행과 열로 구성됩니다. <xref:Microsoft.Office.Interop.Word.Rows> 개체의 <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> 메서드를 사용하여 표에 행을 추가하고, <xref:Microsoft.Office.Interop.Word.Columns> 개체의 <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> 메서드를 사용하여 열을 추가할 수 있습니다.  
@@ -40,7 +40,7 @@ ms.locfileid: "49818681"
 > - Word 2010 문서  
 > - Word 2010 서식 파일  
 > 
->   다른 형식의 프로젝트에서이 작업을 수행 하려는 경우에 대 한 참조를 추가 해야 합니다 **Microsoft.Office.Interop.Word** 어셈블리와 다음 테이블에 행과 열을 추가 하려면 해당 어셈블리의에서 클래스를 사용 해야 합니다. 자세한 내용은 [방법: 주 interop 어셈블리를 통해 대상 Office 응용 프로그램](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) 하 고 [Word 2010 주 interop 어셈블리 참조](http://go.microsoft.com/fwlink/?LinkId=189588)합니다.  
+>   다른 형식의 프로젝트에서이 작업을 수행 하려는 경우에 대 한 참조를 추가 해야 합니다 **Microsoft.Office.Interop.Word** 어셈블리와 다음 테이블에 행과 열을 추가 하려면 해당 어셈블리의에서 클래스를 사용 해야 합니다. 자세한 내용은 [방법: 주 interop 어셈블리를 통해 Office 응용 프로그램을 대상](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) 하 고 [Word 2010 주 interop 어셈블리 참조](http://go.microsoft.com/fwlink/?LinkId=189588)합니다.  
   
 ### <a name="to-add-a-row-to-a-table"></a>표에 행을 추가하려면  
   
@@ -62,7 +62,7 @@ ms.locfileid: "49818681"
 > [!IMPORTANT]  
 >  이 코드는 Word VSTO 추가 기능 템플릿을 사용하여 만든 프로젝트에서만 실행됩니다.  
 >   
->  다른 형식의 프로젝트에서이 작업을 수행 하려는 경우에 대 한 참조를 추가 해야 합니다 **Microsoft.Office.Interop.Word** 어셈블리와 다음 테이블에 행과 열을 추가 하려면 해당 어셈블리의에서 클래스를 사용 해야 합니다. 자세한 내용은 [방법: 주 interop 어셈블리를 통해 대상 Office 응용 프로그램](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) 하 고 [Word 2010 주 interop 어셈블리 참조](http://go.microsoft.com/fwlink/?LinkId=189588)합니다.  
+>  다른 형식의 프로젝트에서이 작업을 수행 하려는 경우에 대 한 참조를 추가 해야 합니다 **Microsoft.Office.Interop.Word** 어셈블리와 다음 테이블에 행과 열을 추가 하려면 해당 어셈블리의에서 클래스를 사용 해야 합니다. 자세한 내용은 [방법: 주 interop 어셈블리를 통해 Office 응용 프로그램을 대상](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) 하 고 [Word 2010 주 interop 어셈블리 참조](http://go.microsoft.com/fwlink/?LinkId=189588)합니다.  
   
 ### <a name="to-add-a-row-to-a-table"></a>표에 행을 추가하려면  
   
@@ -78,7 +78,7 @@ ms.locfileid: "49818681"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#96](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#96)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#96](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#96)]  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [방법: 프로그래밍 방식으로 Word 표 만들기](../vsto/how-to-programmatically-create-word-tables.md)   
  [방법: 프로그래밍 방식으로 추가 되는 텍스트 및 Word 표 셀에에서 서식 지정](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)   
  [방법: 프로그래밍 방식으로 문서 속성을 사용 하 여 Word 표 채우기](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)  

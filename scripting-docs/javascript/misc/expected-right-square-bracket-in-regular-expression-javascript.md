@@ -1,5 +1,5 @@
 ---
-title: 예상 &#39;]&#39; 정규식 (JavaScript) | Microsoft Docs
+title: 예상 ']' 정규식 (JavaScript) | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,14 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 64ef929ba309f0b496e72f3cf740daf6970d08fb
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: e0b34ae4bdf04d261647b9096cda13eec75617c5
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283719"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804418"
 ---
-# <a name="expected-3939-in-regular-expression-javascript"></a>예상 &#39;]&#39; 정규식 (JavaScript)
+# <a name="expected--in-regular-expression-javascript"></a>정규식에 ']'가 필요합니다.(JavaScript)
 정규식 일치를 사용 하는 문자 클래스를 만들려고 하지만 오른쪽 대괄호를 포함 하지 않은 있습니다. 괄호 안에 배치 하 여 개별 문자 조합 문자 클래스를 조합할 수 있습니다. 문자 클래스는 포함 된 하나의 문자를 찾습니다. 예를 들어 / [abc] "a", "b", 문자 중 하 나와 일치 하는 / 또는 "c"입니다.  
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  

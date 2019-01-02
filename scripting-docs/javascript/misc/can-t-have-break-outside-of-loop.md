@@ -1,5 +1,5 @@
 ---
-title: 수&#39;없습니다 &#39;break&#39; 루프 외부에서 | Microsoft Docs
+title: 루프 외부에서 '중단'를 사용할 수 없습니다. | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,14 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bb23f1bc3de087515cad9ba4910cf2ebaf640353
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ce142e07a47b73778ebae6b26452806b3a036d41
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928557"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802409"
 ---
-# <a name="can39t-have-39break39-outside-of-loop"></a>수&#39;없습니다 &#39;break&#39; 루프 외부에서
+# <a name="cant-have-break-outside-of-loop"></a>루프 외부에서 'break'를 사용할 수 없습니다.
 사용 하려고 합니다 **중단** 루프 외부에서 키워드입니다. 합니다 **나누기** 키워드는 루프를 종료 하는 데 사용 됩니다 또는 `switch` 문입니다. 루프의 본문에 포함 되어 있어야 합니다 또는 `switch` 문입니다. 그러나를 **레이블** break 키워드 다음에 올 수 있습니다.  
   
 ```  

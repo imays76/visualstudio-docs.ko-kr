@@ -17,12 +17,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f1d2b37a988f0078149228cce808397f9fb915d1
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: HT
+ms.openlocfilehash: 16c9a490970d6c41a5661f0755f09731ce2fba7e
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062440"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740275"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Visual Studio 2015의 새로운 기능
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "53062440"
 ## <a name="choose-your-target-platforms"></a>대상 플랫폼 선택
  Visual Studio 2015는 플랫폼 간 모바일 디바이스 개발을 지원합니다. iOS, Android 및 Windows를 대상으로 하는 앱 및 게임을 작성하고 Visual Studio IDE 내에서 공통 코드베이스를 공유할 수 있습니다. 이러한 새 프로젝트 형식을 파일, 새 프로젝트 대화 상자에서 모두 볼 수 있습니다.
 
- 물론 기존의 데스크톱 응용 프로그램에 대한 지원은 언어, 라이브러리 및 도구의 다양한 향상을 통해 이전보다 더욱 개선되었습니다.
+ 물론 기존의 데스크톱 애플리케이션에 대한 지원은 언어, 라이브러리 및 도구의 다양한 향상을 통해 이전보다 더욱 개선되었습니다.
 
 ### <a name="cross-platform-mobile-apps-in-c-with-xamarin-for-visual-studio"></a>Xamarin for Visual Studio를 사용하여 C#으로 작성하는 플랫폼 간 모바일 앱
  Xamarin은 C#으로 코드를 작성할 수 있으며 iOS 및 Android API에 기본적으로 바인딩되는 모바일 프레임워크입니다. Microsoft는 공유 코드를 포함하는 단일 솔루션에서 Android, iOS 및 Windows Phone용으로 개발할 수 있는 확장인 Xamarin for Visual Studio 릴리스에서 Xamarin과 긴밀하게 협력했습니다. Xamarin을 사용하면 하나의 언어와 하나의 코드베이스를 사용하므로 플랫폼 사이의 델타가 최소화됩니다.  Xamarin for Visual Studio는 Visual Studio 2010 이상에서 지원됩니다. Visual Studio 2015에는 스타터 버전의 Xamarin이 포함되어 있습니다. 시작 하려면 참조 [Visual Studio에서 Xamarin을 사용 하 여 네이티브 UI로 앱 빌드](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)합니다.
@@ -124,7 +124,7 @@ ms.locfileid: "53062440"
  XAML 사용자 인터페이스를 설계하기 위한 Blend 환경이 크게 향상되었습니다. Blend는 보다 직관적인 UI, IntelliSense가 포함된 보다 강력한 XAML 편집 기능, 보다 향상된 Visual Studio 통합을 제공하도록 완전히 다시 설계되었습니다. 자세한 내용은 [Visual Studio 및 Blend for Visual Studio에서 XAML 디자인](./designers/designing-xaml-in-visual-studio.md)합니다.
 
 ## <a name="cross-platform-debugging-support"></a>플랫폼 간 디버깅 지원
- Visual Studio를 사용하여 Windows, iOS 및 Android 디바이스에서 실행되는 네이티브 모바일 앱을 만들고 디버그할 수 있습니다. [Android용 Visual Studio 에뮬레이터](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx)(영문)를 사용하거나 장치를 연결하고 Visual Studio에서 직접 코드를 디버그합니다.
+ Visual Studio를 사용하여 Windows, iOS 및 Android 디바이스에서 실행되는 네이티브 모바일 앱을 만들고 디버그할 수 있습니다. [Android용 Visual Studio 에뮬레이터](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx)(영문)를 사용하거나 디바이스를 연결하고 Visual Studio에서 직접 코드를 디버그합니다.
 
 -   **JavaScript / Cordova**. [Visual Studio Tools for Apache Cordova](http://msdn.microsoft.com/library/dn879821\(v=vs.140\).aspx) 를 사용하여 JavaScript로 Windows, iOS 및 Android용 네이티브 앱을 빌드합니다.
 
@@ -132,19 +132,19 @@ ms.locfileid: "53062440"
 
 -   **C# / Xamarin**. [Xamarin](http://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) 을 사용하여 Visual Studio에서 C#으로 Windows, iOS 및 Android용 네이티브 앱을 빌드합니다.
 
-     [Xamarin 개발자 가이드](http://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/) 의 [디버깅](http://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/debugging_with_xamarin_android/) (iOS) 및 [장치에서 디버그](http://developer.xamarin.com/guides) 에서는 디버깅 환경에 대해 설명합니다.
+     [Xamarin 개발자 가이드](http://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/) 의 [디버깅](http://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/debugging_with_xamarin_android/) (iOS) 및 [디바이스에서 디버그](http://developer.xamarin.com/guides) 에서는 디버깅 환경에 대해 설명합니다.
 
 -   **C++ / Android**. [플랫폼 간 모바일 개발용 Visual C++](http://msdnstage.redmond.corp.microsoft.com/library/dn872463\(v=vs.140\).aspx) 템플릿을 [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) (영문)와 같은 타사 도구와 함께 사용하여 Windows 및 Android용 네이티브 앱을 만듭니다.
 
 ## <a name="debugging-and-diagnostics"></a>디버깅 및 진단
- 디버깅의 새로운 기능에 대한 자세한 내용은 [What’s New for the Debugger in Visual Studio 2015](./debugger/what’s-new-for-the-debugger-in-visual-studio-2015.md)을 참조하세요.
+ 디버깅의 새로운 기능에 대한 자세한 내용은 [What’s New for the Debugger in Visual Studio 2015](/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio-2015?view=vs-2015)을 참조하세요.
 
  진단의 새로운 기능에 대 한 자세한 내용은 [프로 파일링 도구의 새로운](./profiling/what-s-new-in-profiling-tools.md)합니다.
 
  다음은 코드에 대해 다양한 형식의 진단과 분석을 수행하는 새로운 도구 및 향상된 도구입니다.
 
 ### <a name="perftips"></a>PerfTips
- 성능 팁은 디버깅 동안 메서드의 실행 시간을 표시하여, 프로파일러를 호출할 필요 없이 신속하게 병목 현상을 찾아낼 수 있습니다. 시작 하려면 참조 [PerfTips: 성능 정보에서 요약 Visual Studio를 사용 하 여 디버그 하는 동안](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)
+ 성능 팁은 디버깅 동안 메서드의 실행 시간을 표시하여, 프로파일러를 호출할 필요 없이 신속하게 병목 현상을 찾아낼 수 있습니다. 시작하려면 [성능 팁: Visual Studio를 사용하여 디버그하는 동안 성능 정보 요약](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)을 참조하세요.
 
 ### <a name="error-list"></a>오류 목록
  이제 오류 목록이 모든 열에서 필터링을 지원합니다. 또한 코드 변경으로 수천 개의 경고가 생성되는 경우에도 입력하는 내용에 따라 전체 C# 또는 Visual Basic 솔루션의 오류, 경고 및 코드 분석의 실시간 보기를 보여 줍니다. 새로운 오류 목록은 기존 사용법과 호환됩니다. 자세한 내용은 [Error List Window](./ide/reference/error-list-window.md)을 참조하세요.
@@ -215,7 +215,7 @@ ms.locfileid: "53062440"
 
 - **향상된 하향식 다이어그램**. 이제 중간 규모부터 대규모 Visual Studio 솔루션까지 간소화된 아키텍처 메뉴를 사용하여 솔루션에 보다 유용한 코드 맵을 이용할 수 있습니다. 솔루션 어셈블리가 솔루션 폴더별로 그룹화되므로, 컨텍스트 내에서 이를 확인하고 솔루션을 구조화하는 데 투입한 노력을 활용할 수 있습니다. 프로젝트 및 어셈블리 참조를 즉시 확인할 수 있으며, 링크 형식이 나타납니다. 또한 솔루션에 대한 외부 어셈블리가 보다 간결한 방식으로 그룹화됩니다.
 
-- **테스트 프로젝트는 다른 방식으로 스타일이 지정되며, 필터링이 지원됨**. 이제 테스트 프로젝트의 스타일이 다르게 지정되므로 맵에서 테스트 프로젝트를 쉽고 빠르게 식별할 수 있습니다. 또한 필터도 적용할 수 있으므로, 응용 프로그램의 작업 코드에 집중할 수 있습니다.
+- **테스트 프로젝트는 다른 방식으로 스타일이 지정되며, 필터링이 지원됨**. 이제 테스트 프로젝트의 스타일이 다르게 지정되므로 맵에서 테스트 프로젝트를 쉽고 빠르게 식별할 수 있습니다. 또한 필터도 적용할 수 있으므로, 애플리케이션의 작업 코드에 집중할 수 있습니다.
 
 - **간단한 외부 종속성 링크**. 종속성 링크는 더 이상 System.Object, System.ValueType, System.Enum, System.Delegate에서 상속성을 나타내지 않으므로, 코드 맵에서 외부 종속성을 보다 쉽게 확인할 수 있습니다.
 

@@ -20,12 +20,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 80dfd4901fdaaeff064ba18d80bfe3f69e08116c
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: a9de737604da898c42243895ed84e8962a8c656f
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739903"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803154"
 ---
 # <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>방법: C/c + + 프로젝트에 대 한 코드 분석 속성 설정
 프로젝트의 각 구성에 있는 코드를 분석 하려면 코드 분석 도구를 사용 하는 규칙을 구성할 수 있습니다. 또한 생성 하 고 타사 도구에서 프로젝트에 추가 된 코드에서 발생 한 경고를 표시 하지 않으려면 코드 분석을 보낼 수 있습니다.
@@ -52,4 +52,6 @@ ms.locfileid: "53739903"
  관리 코드를 포함 하는 프로젝트, 코드 분석에서에서 규칙 집합을 선택 하 여 적용할 규칙을 선택할 수 있습니다 합니다 **이 규칙 집합 실행** 목록입니다.
 
 ## <a name="see-also"></a>참고 항목
- [관리 코드 품질 분석](../code-quality/code-analysis-for-managed-code-overview.md) [C/c + + 경고에 대 한 코드 분석](../code-quality/code-analysis-for-c-cpp-warnings.md)
+
+- [관리 코드 품질 분석](../code-quality/code-analysis-for-managed-code-overview.md)
+- [C/C++용 코드 분석 경고](../code-quality/code-analysis-for-c-cpp-warnings.md)

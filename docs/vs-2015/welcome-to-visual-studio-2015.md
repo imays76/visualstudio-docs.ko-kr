@@ -16,17 +16,17 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: gewarren
 manager: crdun
-ms.openlocfilehash: 1898d437cb7d3f439e92b88a45e7b543e8bbd0f5
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c25afa4447a77c6e8bdeb0abb502235fdba1e203
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058482"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53805148"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Visual Studio 2015 시작
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
 
-클라우드를 비롯한 다양한 환경에서 디바이스, 데스크톱 및 웹용으로 유용한 앱을 만드는 데 필요한 모든 기능을 갖춘 Visual Studio를 시작합니다. 단일 IDE에서 iOS, Android 및 Windows용 코드를 작성할 수 있습니다. 유용한 IntelliSense, 쉬운 코드 탐색, 빠른 빌드 및 신속한 배포의 이점을 누려 보세요. Visual Studio를 사용하여 생산성을 높이고 혼자서나 대규모 팀에 속해서 작업을 손쉽게 수행할 수 있습니다.
+클라우드를 비롯한 다양한 환경에서 장치, 데스크톱 및 웹용으로 유용한 앱을 만드는 데 필요한 모든 기능을 갖춘 Visual Studio를 시작합니다. 단일 IDE에서 iOS, Android 및 Windows용 코드를 작성할 수 있습니다. 유용한 IntelliSense, 쉬운 코드 탐색, 빠른 빌드 및 신속한 배포의 이점을 누려 보세요. Visual Studio를 사용하여 생산성을 높이고 혼자서나 대규모 팀에 속해서 작업을 손쉽게 수행할 수 있습니다.
 
 > [!NOTE]
 >  [Visual Studio 2015 업데이트 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs)의 릴리스 정보는 여기를 클릭하세요.
@@ -57,15 +57,15 @@ ms.locfileid: "53058482"
 
  앱 요구 사항과 사용하려는 언어에 따라 필요한 도구를 선택합니다.
 
-1.  [Visual Studio 용 Xamarin](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md): 공용 코드 베이스에서 C# 모든 장치에 대 한
+1.  [Xamarin for Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md): C#을 사용하는 모든 디바이스용 공용 코드베이스
 
 2.  [Visual Studio 사용 하 여 Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42): HTML, CSS 및 JavaScript 또는 Typescript에 대 한 기본 공용 코드
 
-3.  [Visual Studio Tools for Unity](./cross-platform/visual-studio-tools-for-unity.md): 2d/3d 게임 개발C#
+3.  [Visual Studio Tools for Unity](./cross-platform/visual-studio-tools-for-unity.md): C#을 사용하는 2D/3D 게임 개발
 
 4.  [플랫폼 간 개발용 c + +](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md): 공유 코드 라이브러리 및 c + + 앱
 
-5.  [Visual Studio Emulator for Android](./cross-platform/visual-studio-emulator-for-android.md): Android 용 Visual Studio 에뮬레이터: IDE에 관계 없이 Android 앱을 테스트 및 디버그
+5.  [Visual Studio Emulator for Android](./cross-platform/visual-studio-emulator-for-android.md): Android용 Visual Studio 에뮬레이터: IDE에 관계 없이 Android 앱 디버그 및 테스트
 
 ## <a name="connect-your-apps-to-services"></a>앱을 서비스에 연결
  다음과 같은 서비스에 즉시 연결할 수 있습니다(각 서비스에 대한 계정이 있다고 가정함).
@@ -90,17 +90,17 @@ ms.locfileid: "53058482"
 ### <a name="test-your-app"></a>응용 프로그램 테스트
  [단위 테스트를 만들어](./test/unit-test-your-code.md) 앱의 품질을 개선할 수 있습니다. 이러한 테스트는 체크 인할 때마다 실행되거나 빌드의 일부로 실행될 수 있습니다.
 
- 앱의 수동 및 자동 테스트 계획, 만들기 및 실행 테스트 계획, 도구 모음, 테스트 사례 및 테스트 결과는 Visual Studio Team Services를 통해 클라우드에 저장되거나 Team Foundation Server를 통해 온-프레미스로 저장됩니다. [응용 프로그램 테스트](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)에 대해 자세히 알아보세요.
+ 앱의 수동 및 자동 테스트 계획, 만들기 및 실행 테스트 계획, 도구 모음, 테스트 사례 및 테스트 결과는 Visual Studio Team Services를 통해 클라우드에 저장되거나 Team Foundation Server를 통해 온-프레미스로 저장됩니다. [애플리케이션 테스트](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)에 대해 자세히 알아보세요.
 
 ### <a name="deliver-your-teams-code-faster"></a>팀의 코드를 더 빠르게 제공
- 팀 구성원 간의 장벽을 없애고 공동 작업을 개선합니다. 더 나아가 프로덕션까지의 각 개발 단계에 대한 앱의 릴리스를 자동화합니다. 라이브 상태일 때 앱의 성능 및 가용성을 모니터링합니다. 고객이 실제로 앱을 사용하고 있는 방식에 대한 실시간 사용 데이터를 수집합니다. 자세한 내용은 [DevOps 및 응용 프로그램 수명 주기 관리](http://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)를 참조하세요.
+ 팀 구성원 간의 장벽을 없애고 공동 작업을 개선합니다. 더 나아가 프로덕션까지의 각 개발 단계에 대한 앱의 릴리스를 자동화합니다. 라이브 상태일 때 앱의 성능 및 가용성을 모니터링합니다. 고객이 실제로 앱을 사용하고 있는 방식에 대한 실시간 사용 데이터를 수집합니다. 자세한 내용은 [DevOps 및 애플리케이션 수명 주기 관리](http://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)를 참조하세요.
 
 ## <a name="whats-new"></a>새로운 기능
 
 |||||
 |-|-|-|-|
 |[Visual Studio 2015의 새로운 기능](./what-s-new-in-visual-studio-2015.md)|[Visual C#의 새로운 기능](http://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)|[.NET Framework 4.6의 새로운 기능](http://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)|[ALM의 새로운 기능](http://msdn.microsoft.com/en-us/54b98a53-6083-4303-869a-8063d8fae938)|
-|[C++의 새로운 기능](http://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)|[Visual Basic의 새로운 기능](http://msdn.microsoft.com/library/d7e97396-7f42-4873-a81c-4ebcc4b6ca02)|[JavaScript의 새로운 기능](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/what-s-new-in-javascript.md)||
+|[C++의 새로운 기능](http://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)|[Visual Basic의 새로운 기능](http://msdn.microsoft.com/library/d7e97396-7f42-4873-a81c-4ebcc4b6ca02)|[JavaScript의 새로운 기능](/visualstudio/scripting-docs/javascript/what-s-new-in-javascript)||
 |[Python](./python/getting-started-with-python.md)||||
 
 ## <a name="in-this-section"></a>단원 내용
@@ -131,6 +131,6 @@ ms.locfileid: "53058482"
 
 -   [Visual Studio LightSwitch](http://msdn.microsoft.com/library/2021a2cf-f684-493f-8d1b-4cdf39bc6eb3)
 
--   [DevOps 및 응용 프로그램 수명 주기 관리](http://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)
+-   [DevOps 및 애플리케이션 수명 주기 관리](http://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)
 
 -   [의견 보내기](./ide/talk-to-us.md)
