@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: c28dcf247a9e0faaec13ddc4b3006cf6a93fda90
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 5923e3106ad93608effe2604d4305cc0f3038a58
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496144"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802802"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio에서 플랫폼 간 모바일 개발
 
@@ -27,7 +27,7 @@ C# 및 .NET Framework, HTML 및 JavaScript 또는 C++를 사용하여 앱을 빌
 
 ## <a name="build-an-app-for-android-ios-and-windows-net-framework"></a>Android, iOS 및 Windows용 앱 빌드(.NET Framework)
 
-![장치](../cross-platform/media/homedevices.png "HomeDevices")
+![디바이스](../cross-platform/media/homedevices.png "HomeDevices")
 
 Xamarin용 Visual Studio Tools를 사용하면 동일한 솔루션 및 공유 코드는 물론 UI에서도 Android, iOS 및 Windows를 대상으로 지정할 수 있습니다.
 
@@ -36,7 +36,7 @@ Xamarin용 Visual Studio Tools를 사용하면 동일한 솔루션 및 공유 �
 |[Visual Studio 설치](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
 |[Visual Studio의 Xamarin에 대해 알아보기](https://visualstudio.microsoft.com/xamarin/) (VisualStudio.com)|
 |[Xamarin 모바일 앱 개발 설명서](/xamarin/) |
-|[Xamarin 앱을 사용한 DevOps](../cross-platform/application-lifecycle-management-alm-with-xamarin-apps.md) |
+|[Xamarin 앱을 사용한 DevOps](/xamarin/tools/ci/devops/) |
 |[Visual Studio의 유니버설 Windows 앱에 대한 자세한 정보](https://visualstudio.microsoft.com/vs/universal-windows-platform/)(VisualStudio.com)|
 |[Swift와 C# 간의 유사점에 대해 알아보기](http://aka.ms/scposter) (download.microsoft.com)|
 
@@ -54,7 +54,7 @@ Xamarin용 Visual Studio Tools를 사용하면 동일한 솔루션 및 공유 �
 
 #### <a name="design-one-set-of-pages-that-render-across-all-devices-by-using-xamarinforms"></a>Xamarin.Forms를 사용하여 모든 디바이스에서 렌더링되는 페이지 집합을 디자인합니다.
 
- 앱 디자인의 복잡도에 따라 프로젝트 템플릿의 *모바일 앱* 그룹에서 **Xamarin.Forms** 템플릿을 사용하여 앱을 빌드하는 것이 효과적일 수 있습니다. Xamarin.Forms는 Android, iOS 및 Windows에서 공유할 수 있는 단일 인터페이스를 만들 수 있는 UI 도구 키트입니다.  Xamarin.Forms 솔루션을 컴파일하면 Android 앱, iOS 앱 및 Windows 앱을 얻게 됩니다. 자세한 내용은 [Xamarin을 사용한 모바일 개발에 대해 알아보기](../cross-platform/learn-about-mobile-development-with-xamarin.md) 및 [Xamarin.Forms 문서](/xamarin/xamarin-forms/)를 참조하세요.
+ 앱 디자인의 복잡도에 따라 프로젝트 템플릿의 *모바일 앱* 그룹에서 **Xamarin.Forms** 템플릿을 사용하여 앱을 빌드하는 것이 효과적일 수 있습니다. Xamarin.Forms는 Android, iOS 및 Windows에서 공유할 수 있는 단일 인터페이스를 만들 수 있는 UI 도구 키트입니다.  Xamarin.Forms 솔루션을 컴파일하면 Android 앱, iOS 앱 및 Windows 앱을 얻게 됩니다. 자세한 내용은 [Xamarin을 사용한 모바일 개발에 대해 알아보기](/xamarin/cross-platform/get-started/introduction-to-mobile-development/) 및 [Xamarin.Forms 문서](/xamarin/xamarin-forms/)를 참조하세요.
 
 ####  <a name="ShareHTML"></a> Android, iOS 및 Windows 앱 간에 코드 공유
 
@@ -69,9 +69,9 @@ Xamarin용 Visual Studio Tools를 사용하면 동일한 솔루션 및 공유 �
 |[Sharing Code Options](/xamarin/cross-platform/app-fundamentals/code-sharing/)(코드 공유 옵션)(Xamarin) |
 |[.NET을 사용한 코드 공유 옵션](/dotnet/standard/cross-platform/) |
 
-###  <a name="WindowsHTML"></a> Windows 10 장치를 대상으로 지정
+###  <a name="WindowsHTML"></a> Windows 10 디바이스를 대상으로 지정
 
- ![Windows 장치](../cross-platform/media/windowsdevices.png "Windows 장치")
+ ![Windows 디바이스](../cross-platform/media/windowsdevices.png "Windows 디바이스")
 
  전체 범위의 Windows 10 디바이스를 대상으로 하는 단일 앱을 만들려는 경우 유니버설 Windows 앱을 만듭니다. 단일 프로젝트를 사용하여 앱을 디자인하면 어떤 디바이스에서 페이지를 표시하든 관계없이 페이지가 제대로 렌더링됩니다.
 
@@ -86,13 +86,13 @@ Xamarin용 Visual Studio Tools를 사용하면 동일한 솔루션 및 공유 �
 
 ##  <a name="HTML"></a> Android, iOS 및 Windows용 앱 빌드(HTML/JavaScript)
 
- ![Windows, iOS 및 Android 장치](../cross-platform/media/homedevices.png "Windows, iOS 및 Android 장치")
+ ![Windows, iOS 및 Android 디바이스](../cross-platform/media/homedevices.png "Windows, iOS 및 Android 디바이스")
 
  HTML과 JavaScript에 대해 잘 알고 있는 웹 개발자는 Visual Studio Apache Cordova용 도구를 사용하여 Windows, Android 및 iOS를 대상으로 지정할 수 있습니다. 이러한 앱은 세 플랫폼을 모두 대상으로 지정할 수 있으며 가장 익숙한 기술과 프로세스를 사용하여 빌드할 수 있습니다.
 
  Apache Cordova는 플러그 인 모델이 포함된 프레임워크입니다. 이 플러그 인 모델은 세 플랫폼 모두(Android, iOS 및 Windows)의 기본 디바이스 기능에 액세스하는 데 사용할 수 있는 단일 JavaScript API를 제공합니다.
 
- 이러한 API는 크로스 플랫폼이기 때문에 작성하는 코드를 세 플랫폼 간에 대부분 공유할 수 있습니다. 따라서 개발 및 유지 관리 비용이 줄어듭니다. 또한 처음부터 다시 시작할 필요가 없습니다. 다양한 유형의 웹 응용 프로그램을 만든 경우 어떤 방식으로든 수정하거나 다시 디자인할 필요 없이 해당 파일을 Cordova 앱과 공유할 수 있습니다.
+ 이러한 API는 크로스 플랫폼이기 때문에 작성하는 코드를 세 플랫폼 간에 대부분 공유할 수 있습니다. 따라서 개발 및 유지 관리 비용이 줄어듭니다. 또한 처음부터 다시 시작할 필요가 없습니다. 다양한 유형의 웹 애플리케이션을 만든 경우 어떤 방식으로든 수정하거나 다시 디자인할 필요 없이 해당 파일을 Cordova 앱과 공유할 수 있습니다.
 
  ![Javascript로 작성된 다중 장치 하이브리드 앱](../cross-platform/media/multidevicehybridapps.png "Javascript로 작성된 다중 장치 하이브리드 앱")
 
@@ -115,9 +115,9 @@ Xamarin용 Visual Studio Tools를 사용하면 동일한 솔루션 및 공유 �
 ## <a name="build-an-app-for-android-and-windows-c"></a>Android 및 Windows용 앱 빌드(C++)
  ![C++를 사용하여 Android, iOS 및 Windows용 앱 빌드](../cross-platform/media/cross_plat_cpp_intro_image.png "Cross_Plat_CPP_Intro_Image")
 
- 먼저 Visual Studio 2017과 **C++를 사용한 모바일 개발** 워크로드를 설치합니다. 그런 다음 Android용 Native Activity 응용 프로그램이나 Windows를 대상으로 하는 앱을 빌드할 수 있습니다. iOS를 대상으로 하는 C++ 템플릿은 아직 사용할 수 없습니다. 원하는 경우 동일한 솔루션에서 Android 및 Windows를 대상으로 지정한 후 플랫폼 간 정적 또는 동적 공유 라이브러리를 사용하여 Android와 Windows 사이에 코드를 공유할 수 있습니다.
+ 먼저 Visual Studio 2017과 **C++를 사용한 모바일 개발** 워크로드를 설치합니다. 그런 다음 Android용 Native Activity 애플리케이션이나 Windows를 대상으로 하는 앱을 빌드할 수 있습니다. iOS를 대상으로 하는 C++ 템플릿은 아직 사용할 수 없습니다. 원하는 경우 동일한 솔루션에서 Android 및 Windows를 대상으로 지정한 후 플랫폼 간 정적 또는 동적 공유 라이브러리를 사용하여 Android와 Windows 사이에 코드를 공유할 수 있습니다.
 
- 게임과 같은 고급 그래픽 조작이 필요한 Android용 앱을 빌드해야 하는 경우 C++를 사용하여 빌드할 수 있습니다. **Native-Activity 응용 프로그램(Android)** 프로젝트를 사용하여 시작합니다. 이 프로젝트는 Clang 도구 체인을 완전히 지원합니다.
+ 게임과 같은 고급 그래픽 조작이 필요한 Android용 앱을 빌드해야 하는 경우 C++를 사용하여 빌드할 수 있습니다. **Native-Activity 애플리케이션(Android)** 프로젝트를 사용하여 시작합니다. 이 프로젝트는 Clang 도구 체인을 완전히 지원합니다.
 
  ![기본 활동 프로젝트 템플릿](../cross-platform/media/cross-plat_cpp_native.png "기본 활동 프로젝트 템플릿")
 
@@ -138,8 +138,8 @@ Xamarin용 Visual Studio Tools를 사용하면 동일한 솔루션 및 공유 �
 |[Visual Studio 다운로드](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
 |[플랫폼 간 모바일 개발용 Visual C++ 설치](https://msdn.microsoft.com/library/dn707591.aspx) (MSDN Library)|
 |[여러 플랫폼을 대상으로 한 C++ 사용에 대해 알아보기](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
-|[필요한 것을 설치한 다음 Android용 Native-Activity 응용 프로그램 만들기](https://msdn.microsoft.com/library/dn707595.aspx) (MSDN Library)|
-|[Learn more about sharing C++ code with Android and Windows apps](https://visualstudio.microsoft.com/vs/cplusplus-mdd/)(Android 및 Windows 앱과 C++ 코드를 공유하는 방법에 대해 알아보기)(VisualStudio.com)|
+|[필요한 것을 설치한 다음 Android용 Native-Activity 애플리케이션 만들기](https://msdn.microsoft.com/library/dn707595.aspx) (MSDN Library)|
+|[Android 및 Windows 앱과 C++ 코드를 공유하는 방법에 대해 알아보기](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
 |[플랫폼 간 모바일 개발 예제](https://msdn.microsoft.com/library/dn707596.aspx)(MSDN 라이브러리)|
 |[개발자 코드 샘플](https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=SearchText&f%5B0%5D.Value=android&f%5B1%5D.Type=ProgrammingLanguage&f%5B1%5D.Value=C%2B%2B&f%5B1%5D.Text=C%2B%2B)(code.msdn)|
 

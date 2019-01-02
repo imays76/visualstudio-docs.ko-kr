@@ -14,16 +14,16 @@ manager: douge
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: b7f98dccebe9db183c63c6f859ceb2234fdb1acf
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d3dcc5390eac698f3c135c23d497073340bbd8b2
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056920"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648822"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>스냅숏 디버거를 사용 하 여 라이브 ASP.NET Azure 앱 디버그
 
-스냅숏 디버거는 관심이 있는 코드가 실행 되 면 프로덕션 앱의 스냅숏을 만듭니다. 디버거가 스냅숏을 생성하도록 명령하려면 코드에서 snappoint와 logpoint를 설정합니다. 디버거를 통해 프로덕션 응용 프로그램의 트래픽에 영향을 미치지 않으면서 정확히 무엇이 잘못되었는지를 볼 수 있습니다. 스냅샷 디버거를 사용하면 프로덕션 환경에서 발생하는 문제를 해결하는 데 걸리는 시간을 상당히 줄일 수 있습니다.
+스냅숏 디버거는 관심이 있는 코드가 실행 되 면 프로덕션 앱의 스냅숏을 만듭니다. 디버거가 스냅숏을 생성하도록 명령하려면 코드에서 snappoint와 logpoint를 설정합니다. 디버거를 통해 프로덕션 애플리케이션의 트래픽에 영향을 미치지 않으면서 정확히 무엇이 잘못되었는지를 볼 수 있습니다. 스냅샷 디버거를 사용하면 프로덕션 환경에서 발생하는 문제를 해결하는 데 걸리는 시간을 상당히 줄일 수 있습니다.
 
 Snappoint 및 logpoint 중단점, 유사 하지만 중단점과 달리 snappoint 응용 프로그램을 중지 하지 적중 될 때입니다. 일반적으로 snappoint에 스냅숏을 캡처하는 10 ~ 20 밀리초입니다.
 
@@ -36,7 +36,7 @@ Snappoint 및 logpoint 중단점, 유사 하지만 중단점과 달리 snappoint
 
 ## <a name="prerequisites"></a>전제 조건
 
-* 스냅숏 디버거는 Visual Studio 2017 Enterprise 버전 15.5 이상을 사용할 수는 **ASP.NET 및 웹 개발 워크 로드**합니다. ASP.NET Core에 대 한 작업도 수행 해야 합니다 **.NET Core 개발** 워크 로드가 설치 되어 있습니다.
+* 스냅숏 디버거는 Visual Studio 2017 Enterprise 버전 15.5 이상을 사용할 수는 **Azure 개발 워크 로드**합니다. (아래 합니다 **개별 구성 요소** 를 탭 하면 아래에서 찾을 **디버깅 및 테스트** > **스냅숏 디버거**.)
 
     설치 되어 있지 않은 경우 설치할 [Visual Studio 2017 Enterprise 버전 15.5](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 이상. 이전 Visual Studio 2017 설치에서를 업데이트 하는 경우 Visual Studio 설치 관리자를 실행 하 고 스냅숏 디버거 구성 요소를 확인 합니다 **ASP.NET 및 웹 개발 워크 로드**합니다.
 
@@ -44,8 +44,8 @@ Snappoint 및 logpoint 중단점, 유사 하지만 중단점과 달리 snappoint
 
 * 스냅숏 컬렉션은 Azure App Service에서 실행되는 다음 웹앱에서 사용할 수 있습니다.
 
-    * .NET Framework 4.6.1 이상에서 실행되는 ASP.NET 응용 프로그램
-    * Windows의 .NET Core 2.0 이상에서 실행되는 ASP.NET Core 응용 프로그램
+    * .NET Framework 4.6.1 이상에서 실행되는 ASP.NET 애플리케이션
+    * Windows의 .NET Core 2.0 이상에서 실행되는 ASP.NET Core 애플리케이션
 
 ## <a name="open-your-project-and-start-the-snapshot-debugger"></a>프로젝트를 열고 스냅숏 디버거를 시작 합니다.
 

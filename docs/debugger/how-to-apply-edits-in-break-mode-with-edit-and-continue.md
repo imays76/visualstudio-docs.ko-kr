@@ -24,17 +24,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51a69414a8b61368cbb492494187567554f98e4c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 9fdf27353462645916f14fe10c2fdc521504024b
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063728"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684264"
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>방법: 편집을 사용 하 여 중단 모드에서 편집을 적용 하 고 계속 하기 (Visual Basic)
 편집하며 계속하기를 사용하면 실행을 중지한 후에 다시 시작하지 않고도 중단 모드에서 코드를 편집한 다음 계속 진행할 수 있습니다.  
   
-편집 하며 계속 하기를 사용 하 여 디버깅 하는 동안 자세한 내용은 [지원 되는 코드 변경 (C# 및 Visual Basic](../debugger/supported-code-changes-csharp.md)]
+편집 하며 계속 하기를 사용 하 여 디버깅 하는 동안 자세한 내용은 [지원 되는 코드 변경 (C# 및 Visual Basic)](../debugger/supported-code-changes-csharp.md)합니다.
   
 ### <a name="to-edit-code-in-break-mode"></a>중단 모드에서 코드를 편집하려면  
   
@@ -52,7 +52,7 @@ ms.locfileid: "53063728"
   
 2.  원하는 및 지원 되는 코드를 변경 합니다.  
   
-     자세한 내용은 [지원 되는 코드 변경 (C# 및 Visual Basic](../debugger/supported-code-changes-csharp.md)합니다.  
+     자세한 내용은 [지원 되는 코드 변경 (C# 및 Visual Basic)](../debugger/supported-code-changes-csharp.md)합니다.  
   
     > [!NOTE]
     >  편집하며 계속하기에서 허용되지 않는 코드 변경 작업을 수행하면 자주색 물결선이 편집 내용 아래에 밑줄로 표시되고 해당 작업이 작업 목록에 나타납니다. 잘못된 코드 변경 내용을 취소하지 않으면 코드 실행을 계속 진행할 수 없습니다.  
@@ -62,5 +62,5 @@ ms.locfileid: "53063728"
      적용한 편집 내용이 프로젝트에 통합된 상태로 코드가 실행됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [코드 변경 내용을 지원 (C# 및 Visual Basic](../debugger/supported-code-changes-csharp.md)   
+ [코드 변경 내용을 지원 (C# 및 Visual Basic)](../debugger/supported-code-changes-csharp.md)   
  [편집하며 계속하기(Visual Basic)](../debugger/edit-and-continue-visual-basic.md)

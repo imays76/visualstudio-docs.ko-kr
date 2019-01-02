@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a619989543b30ccf07cdb300a5688a985cf27eb7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 7a6f0dac77801d2d02a260fbf392588b1a2f4a32
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068249"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739285"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Visual Studio의 테스트 도구
 
@@ -29,13 +29,13 @@ Visual Studio 테스트 도구를 사용하면 사용자와 팀이 수준 높은
 
 - [코드 검사](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)는 프로젝트의 코드 중 유닛 테스트와 같은 코딩된 테스트를 사용하여 실제로 테스트할 부분을 결정합니다.
 
-- [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)는 스텁 또는 shim을 사용하는 응용 프로그램의 다른 부분을 교체함으로써 사용자가 테스트 중인 코드를 격리시켜 줍니다.
+- [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)는 스텁 또는 shim을 사용하는 애플리케이션의 다른 부분을 교체함으로써 사용자가 테스트 중인 코드를 격리시켜 줍니다.
 
 - [Live Unit Testing](../test/live-unit-testing.md)은 자동으로 백그라운드에서 단위 테스트를 실행하고 Visual Studio 코드 편집기의 코드 검사 및 테스트 결과를 그래픽으로 표시합니다.
 
-- [코딩된 UI 테스트](../test/use-ui-automation-to-test-your-code.md)를 사용하면 사용자 인터페이스를 통해 응용 프로그램을 테스트할 수 있습니다.
+- [코딩된 UI 테스트](../test/use-ui-automation-to-test-your-code.md)를 사용하면 사용자 인터페이스를 통해 애플리케이션을 테스트할 수 있습니다.
 
-- [부하 테스트](../test/quickstart-create-a-load-test-project.md)는 단위 테스트 및 웹 성능 테스트를 실행하여 서버 응용 프로그램에서 부하를 시뮬레이트합니다.
+- [부하 테스트](../test/quickstart-create-a-load-test-project.md)는 단위 테스트 및 웹 성능 테스트를 실행하여 서버 애플리케이션에서 부하를 시뮬레이트합니다.
 
 > [!NOTE]
 > 단위 테스트는 Visual Studio의 모든 버전에서 사용할 수 있습니다. 라이브 단위 테스트, IntelliTest, Coded UI 테스트 등의 다른 테스트 도구는 Visual Studio Enterprise 버전에서만 사용할 수 있습니다. 버전에 대한 자세한 내용은 [Visual Studio 2017 IDE 비교](https://visualstudio.microsoft.com/vs/compare/)를 참조하세요.
@@ -45,4 +45,4 @@ Visual Studio 테스트 도구를 사용하면 사용자와 팀이 수준 높은
 * [예비 및 수동 테스트(Azure Test Plans)](/azure/devops/test/index?view=vsts)
 * [부하 테스트(Azure Test Plans)](/azure/devops/test/load-test/index?view=vsts)
 * [지속적인 테스트(Azure Test Plans)](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
-* [코드 분석 도구](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)
+* [코드 분석 도구](../code-quality/code-analysis-for-managed-code-overview.md)

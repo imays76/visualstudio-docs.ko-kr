@@ -12,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0e4cc2ff43b59fff0aac70d9cc13a0a00662e209
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 64eafbffcf453832dd2ba764ef3396cb7129be89
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068437"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561751"
 ---
 # <a name="debug-your-python-code"></a>Python 코드 디버그
 
@@ -64,7 +64,7 @@ Visual Studio에서는 실행 중인 프로세스에 연결하고, **조사식**
 
 변수가 특정 값이나 값 범위에 도달했을 때만 중단하는 것과 같이 중단점을 트리거하는 조건을 사용자 지정할 수 있습니다. 조건을 설정하려면 중단점의 빨간색 점을 마우스 오른쪽 단추로 클릭하고 **조건**을 선택한 다음 Python 코드를 사용하여 식을 만듭니다. Visual Studio의 이 기능에 대한 자세한 내용은 [중단점 조건](../debugger/using-breakpoints.md#breakpoint-conditions)을 참조하세요.
 
-조건을 설정할 때 **작업**을 설정하고, 출력 창에 기록할 메시지를 만들고, 필요에 따라 자동으로 계속 실행할 수도 있습니다. 메시지를 기록하면 로깅 코드를 응용 프로그램에 직접 추가하지 않고 *추적점*이란 것이 생성됩니다.
+조건을 설정할 때 **작업**을 설정하고, 출력 창에 기록할 메시지를 만들고, 필요에 따라 자동으로 계속 실행할 수도 있습니다. 메시지를 기록하면 로깅 코드를 애플리케이션에 직접 추가하지 않고 *추적점*이란 것이 생성됩니다.
 
 ![중단점이 있는 추적점 만들기](media/debugging-tracepoint.png)
 
@@ -84,7 +84,7 @@ Visual Studio에서는 실행 중인 프로세스에 연결하고, **조사식**
 
 ### <a name="inspect-and-modify-values"></a>값 검사 및 수정
 
-디버거에서 중지되면 변수 값을 검사하고 수정할 수 있습니다. **조사식** 창을 사용하여 개별 변수와 사용자 지정 식을 모니터링할 수도 있습니다. 일반적인 내용은 [변수 검사](../debugger/getting-started-with-the-debugger.md#inspect-variables-with-the-autos-and-locals-windows)를 참조하세요.
+디버거에서 중지되면 변수 값을 검사하고 수정할 수 있습니다. **조사식** 창을 사용하여 개별 변수와 사용자 지정 식을 모니터링할 수도 있습니다. 일반적인 내용은 [변수 검사](../debugger/debugger-feature-tour.md#inspect-variables-with-the-autos-and-locals-windows)를 참조하세요.
 
 **DataTips**를 사용하여 값을 보려면 편집기에서 변수 위로 마우스를 이동하면 됩니다. 값을 클릭하여 변경할 수 있습니다.
 

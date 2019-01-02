@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 59e6c1879d5463682ee41d60e3928fce85c74a8d
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: c750e9e3152ae5efdf2e2ecf09034b6928fe9fa7
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305145"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561855"
 ---
 # <a name="create-custom-views-of-data-in-the-visual-studio-debugger"></a>Visual Studio 디버거에서 데이터의 사용자 지정 뷰 만들기
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 디버거는 검사 및 프로그램의 상태를 수정 하기 위한 다양 한 도구를 제공 합니다. 이러한 도구의 대부분은 중단 모드에서만 작동합니다.
@@ -38,6 +38,5 @@ ms.locfileid: "52305145"
  시각화 도우미를 사용 하는 의미 있는 방식으로 개체 또는 변수 내용을 볼 수 있습니다. Visual Studio 디버거 시각화 도우미 돋보기 단추를 사용 하 여 열 수 있는 다른 windows 가리킵니다 ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "시각화 아이콘") 아이콘입니다. 예를 들어 HTML 시각화 도우미를 HTML 문자열로 해석 및 브라우저에 표시 하는 방법을 보여 줍니다. DataTips에서 시각화 도우미에 액세스할 수 합니다 **조사식** 창 합니다 **자동** 창 및 **지역** 창. 합니다 **간략 한 조사식** 대화 상자는 또한 시각화 도우미를 제공 합니다. 자세한 내용은 [사용자 지정 시각화 도우미 만들기](../debugger/create-custom-visualizers-of-data.md)를 참조하세요.
   
 ## <a name="see-also"></a>참고 항목  
- [디버거 기본 사항](../debugger/getting-started-with-the-debugger.md)   
- [명령 창](../ide/reference/command-window.md)   
+ [디버거 소개](../debugger/debugger-feature-tour.md) [명령 창](../ide/reference/command-window.md)   
  [디버거 보안](../debugger/debugger-security.md)

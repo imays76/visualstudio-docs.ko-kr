@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9160a5ebca6efe2cca48a2b8832a51fab3c6ca5a
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: dd600348e9e0cbb5281437b9ad5542c865ef6575
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159739"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739973"
 ---
 # <a name="install-visual-studio-2017"></a>Visual Studio 2017 설치
 
@@ -45,7 +45,7 @@ Visual Studio 설치를 시작하기 전에
 1. [시스템 요구 사항](/visualstudio/productinfo/vs2017-system-requirements-vs)을 확인합니다. 이러한 요구 사항은 컴퓨터에서 Visual Studio 2017을 지원하는지 여부를 확인하는 데 도움이 됩니다.
 2. 최신 Windows 업데이트를 적용합니다. 이러한 업데이트는 컴퓨터에 최신 보안 업데이트와 Visual Studio에 필요한 시스템 구성 요소가 모두 설치되어 있는지 확인합니다.
 3. 다시 부팅합니다. 다시 부팅하면 보류 중인 설치 또는 업데이트가 Visual Studio 설치를 방해하지 않습니다.
-4. 공간을 확보합니다. 예를 들어 디스크 정리 앱을 실행하여 %SystemDrive%에서 불필요한 파일 및 응용 프로그램을 제거합니다.
+4. 공간을 확보합니다. 예를 들어 디스크 정리 앱을 실행하여 %SystemDrive%에서 불필요한 파일 및 애플리케이션을 제거합니다.
 
 Visual Studio 2017과 함께 이전 버전의 Visual Studio를 나란히 실행하는 방법에 대한 의문 사항은 [Visual Studio 호환성 정보](/visualstudio/productinfo/vs2017-compatibility-vs#compatibility-with-previous-releases)를 참조하세요.
 
@@ -142,7 +142,7 @@ Visual Studio 2017과 함께 이전 버전의 Visual Studio를 나란히 실행�
 
    예를 들어 [C++ 앱을 빌드](../ide/getting-started-with-cpp-in-visual-studio.md)하려면 **설치됨**을 클릭하고, **Visual C++** 를 확장한 다음, 빌드할 C++ 프로젝트 형식을 선택합니다.
 
-   [C# 앱을 빌드](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)하려면 **설치됨**을 클릭하고, **Visual C#** 을 확장한 다음, 빌드할 C# 프로젝트 형식을 선택합니다.
+   [C# 앱을 빌드](../get-started/csharp/tutorial-wpf.md)하려면 **설치됨**을 클릭하고, **Visual C#** 을 확장한 다음, 빌드할 C# 프로젝트 형식을 선택합니다.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

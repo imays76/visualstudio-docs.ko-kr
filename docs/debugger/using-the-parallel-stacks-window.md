@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bf1ca8fabf70f2d4fbe5920803773af07db0a99
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 4ee9d52f63f3158979f2f018ea44d5b68d6612c1
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389230"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562336"
 ---
 # <a name="view-threads-and-tasks-in-the-parallel-stacks-window"></a>병렬 스택 창의 스레드 및 작업 보기
 
@@ -139,9 +139,8 @@ ms.locfileid: "52389230"
   
 ## <a name="see-also"></a>참고 항목  
  [다중 스레드 응용 프로그램 디버깅 시작](../debugger/get-started-debugging-multithreaded-apps.md)   
- [연습: 병렬 애플리케이션 디버그](../debugger/walkthrough-debugging-a-parallel-application.md)   
- [디버거 기본 사항](../debugger/getting-started-with-the-debugger.md)   
- [관리 코드 디버깅](../debugger/debugging-managed-code.md)   
+ [연습: 병렬 응용 프로그램 디버그](../debugger/walkthrough-debugging-a-parallel-application.md)   
+ [디버거 소개](../debugger/debugger-feature-tour.md) [관리 코드 디버깅](../debugger/debugging-managed-code.md)   
  [병렬 프로그래밍](/dotnet/standard/parallel-programming/index)   
  [작업 창 사용](../debugger/using-the-tasks-window.md)   
  [Task 클래스](../extensibility/debugger/task-class-internal-members.md)

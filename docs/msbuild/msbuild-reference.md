@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b2710b6efcc765f98977c2730c5f729e3a8b260
-ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
+ms.openlocfilehash: 70fcbd9eacbfa581166fccf4471b25c0b22fb74a
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48120385"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739840"
 ---
 # <a name="msbuild-reference"></a>MSBuild 참조
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]용 빌드 시스템입니다. 다음 링크를 통해 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 참조 정보가 포함된 항목으로 이동할 수 있습니다.  
@@ -61,7 +61,7 @@ ms.locfileid: "48120385"
  [지시 파일](../msbuild/msbuild-response-files.md)  
  명령줄 스위치를 포함하는 *.rsp* 파일에 대해 설명합니다.  
   
- [추가 리소스](../msbuild/additional-resources-for-msbuild.md)  
+ [추가 리소스](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild)  
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 웹 사이트 및 뉴스 그룹의 링크를 제공합니다.  
   
  [WPF MSBuild 참조](../msbuild/wpf-msbuild-reference.md)  

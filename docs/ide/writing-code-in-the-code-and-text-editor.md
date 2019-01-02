@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca203b0c27906d1f861689953ca55280f73fa894
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 127e858b913f49810eae166681b313622e6840ea
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160116"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684887"
 ---
 # <a name="features-of-the-code-editor"></a>코드 편집기의 기능
 
@@ -93,5 +93,5 @@ Visual Studio 편집기에서는 코드 및 텍스트를 더 쉽게 작성 및 �
 - [원본 편집기(Mac용 Visual Studio)](/visualstudio/mac/source-editor)
 - [Visual Studio IDE](../get-started/visual-studio-ide.md)
 - [Visual Studio에서 C++ 시작](../ide/getting-started-with-cpp-in-visual-studio.md)
-- [Visual Studio에서 C# 및 ASP.NET 시작](../ide/tutorial-csharp-aspnet-core.md)
+- [Visual Studio에서 C# 및 ASP.NET 시작](../get-started/csharp/tutorial-aspnet-core.md)
 - [Visual Studio에서 Python 시작](../ide/quickstart-python.md)

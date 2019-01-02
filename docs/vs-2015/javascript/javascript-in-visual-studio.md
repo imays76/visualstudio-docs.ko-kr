@@ -14,21 +14,21 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 05ef916c2ed4948f23adbb09a68b096d0a704a79
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: bcd092ca1631f54f758cef95895d8509d14dec96
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53050350"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802980"
 ---
 # <a name="javascript-in-visual-studio"></a>Visual Studio의 JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-JavaScript는 Visual Studio의 고급 언어입니다. Visual Studio IDE에서 JavaScript 코드를 작성할 때 대부분 또는 모든 표준 편집 지원(코드 조각, IntelliSense 등)을 사용할 수 있습니다. 여러 응용 프로그램 형식 및 서비스에 대해 JavaScript 코드를 작성할 수 있습니다.
+JavaScript는 Visual Studio의 고급 언어입니다. Visual Studio IDE에서 JavaScript 코드를 작성할 때 대부분 또는 모든 표준 편집 지원(코드 조각, IntelliSense 등)을 사용할 수 있습니다. 여러 애플리케이션 형식 및 서비스에 대해 JavaScript 코드를 작성할 수 있습니다.
 
  JavaScript 언어 참조 문서에 대한 자세한 내용은 [JavaScript](http://msdn.microsoft.com/library/d1et7k7c\(v=vs.94\).aspx)를 참조하세요.
 
- 특정 버전의 Visual Studio나 특정 Visual Studio 확장은 HTML 및 JavaScript를 사용하여 특정 응용 프로그램 유형 및 서비스를 개발하는 데 필요할 수 있습니다. 다음 목록에 자세한 내용을 볼 수 있는 링크가 있습니다.
+ 특정 버전의 Visual Studio나 특정 Visual Studio 확장은 HTML 및 JavaScript를 사용하여 특정 애플리케이션 유형 및 서비스를 개발하는 데 필요할 수 있습니다. 다음 목록에 자세한 내용을 볼 수 있는 링크가 있습니다.
 
 - Apache Cordova를 사용하여 플랫폼 간 앱을 만들려면 [Apache Cordova용 Visual Studio Tools를 다운로드](http://go.microsoft.com/fwlink/p/?LinkId=397606)합니다.
 
@@ -48,16 +48,16 @@ JavaScript는 Visual Studio의 고급 언어입니다. Visual Studio IDE에서 J
 
 |기능|설명|
 |-------------|-----------------|
-|클래스|새로운 구문에서는 [클래스](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/class-statement-javascript.md)의 선언을 지원합니다.|
-|Promise|[Promises](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/promise-object-javascript.md)를 사용하면 더 쉽고 명확한 비동기 코드를 작성할 수 있습니다. Promise 생성자가 `all` 및 `race` 유틸리티 메서드와 함께 지원됩니다.|
-|반복기|이제 반복 가능한 개체(배열, 배열과 유사한 개체, 반복기 등)를 반복하여 고유한 각 속성의 값에 대해 실행될 문이 포함된 사용자 지정 반복 후크를 호출할 수 있습니다. 자세한 내용은 [반복기 및 생성기](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/advanced/iterators-and-generators-javascript.md)를 참조하세요. **참고:**  생성기는 아직 지원되지 않습니다.|
+|클래스|새로운 구문에서는 [클래스](/visualstudio/scripting-docs/javascript/reference/class-statement-javascript)의 선언을 지원합니다.|
+|Promise|[Promises](/visualstudio/scripting-docs/javascript/reference/promise-object-javascript)를 사용하면 더 쉽고 명확한 비동기 코드를 작성할 수 있습니다. Promise 생성자가 `all` 및 `race` 유틸리티 메서드와 함께 지원됩니다.|
+|반복기|이제 반복 가능한 개체(배열, 배열과 유사한 개체, 반복기 등)를 반복하여 고유한 각 속성의 값에 대해 실행될 문이 포함된 사용자 지정 반복 후크를 호출할 수 있습니다. 자세한 내용은 [반복기 및 생성기](/visualstudio/scripting-docs/javascript/advanced/iterators-and-generators-javascript)를 참조하세요. **참고:**  생성기는 아직 지원되지 않습니다.|
 |화살표 함수|화살표 함수(=>)는 어휘 `this` 바인딩이 포함된 `function` 키워드의 약식 구문입니다.|
-|기본 제공 개체에 대한 새로운 메서드|[Array 개체](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/array-object-javascript.md), [Math 개체](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/math-object-javascript.md), [Number 개체](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/number-object-javascript.md), [Object 개체](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/object-object-javascript.md) 및 [String 개체](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/string-object-javascript.md) 기본 제공 개체에는 데이터 조작 및 검사에 사용할 수 있는 많은 새로운 유틸리티 함수와 속성이 포함되어 있습니다.|
-|개체 리터럴 향상|개체는 이제 계산된 속성, 간결한 메서드 정의 및 같은 이름의 변수로 값이 초기화되는 속성에 대한 약식 구문을 지원합니다. 자세한 내용은 [개체 만들기](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/creating-objects-javascript.md)를 참조하세요.|
-|Proxy|[Proxies](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/proxy-object-javascript.md)를 사용하여 개체에 대한 사용자 지정 동작을 설정할 수 있습니다.|
-|Rest 매개 변수|Rest 매개 변수를 사용하여 함수 호출의 연속된 인수를 배열로 전환할 수 있습니다. 자세한 내용은 [함수](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/functions-javascript.md)를 참조하세요.|
-|스프레드 연산자|[스프레드 연산자](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/spread-operator-decrement-dot-dot-dot-javascript.md)(`…`)는 반복 가능한 식을 개별 인수로 확장합니다. 예를 들어 `a.b(…array)`는 `a.b.apply(a, array)`와 거의 같습니다.|
-|기호|[Symbol](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/symbol-object-javascript.md) 개체를 사용하면 기존 개체 속성을 방해할 가능성, 의도하지 않은 표시 및 다른 코드에 의한 조정되지 않은 추가 없이 속성을 기존 개체에 추가할 수 있습니다.|
-|템플릿 문자열|[템플릿 문자열](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/advanced/template-strings-javascript.md)은 식이 계산되어 문자열 리터럴과 연결될 수 있도록 하는 문자열 리터럴입니다.|
-|유니코드 향상|유니코드 지원 기능이 향상되었습니다. 예를 들어 새로운 이스케이프 시퀀스 형식은 에스트랄 코드 포인트(16진수가 5개 이상인 코드 포인트)를 지원합니다. 자세한 내용은 [특수 문자](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/advanced/special-characters-javascript.md)를 참조하세요.|
-|WeakSet|[WeakSet](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/weakset-object-javascript.md)은 참조되는 위치가 없는 경우 가비지 컬렉션될 개체의 컬렉션입니다.|
+|기본 제공 개체에 대한 새로운 메서드|[Array 개체](/visualstudio/scripting-docs/javascript/reference/array-object-javascript), [Math 개체](/visualstudio/scripting-docs/javascript/reference/math-object-javascript), [Number 개체](/visualstudio/scripting-docs/javascript/reference/number-object-javascript), [Object 개체](/visualstudio/scripting-docs/javascript/reference/object-object-javascript) 및 [String 개체](/visualstudio/scripting-docs/javascript/reference/string-object-javascript) 기본 제공 개체에는 데이터 조작 및 검사에 사용할 수 있는 많은 새로운 유틸리티 함수와 속성이 포함되어 있습니다.|
+|개체 리터럴 향상|개체는 이제 계산된 속성, 간결한 메서드 정의 및 같은 이름의 변수로 값이 초기화되는 속성에 대한 약식 구문을 지원합니다. 자세한 내용은 [개체 만들기](/visualstudio/scripting-docs/javascript/creating-objects-javascript)를 참조하세요.|
+|Proxy|[Proxies](/visualstudio/scripting-docs/javascript/reference/proxy-object-javascript)를 사용하여 개체에 대한 사용자 지정 동작을 설정할 수 있습니다.|
+|Rest 매개 변수|Rest 매개 변수를 사용하여 함수 호출의 연속된 인수를 배열로 전환할 수 있습니다. 자세한 내용은 [함수](/visualstudio/scripting-docs/javascript/functions-javascript)를 참조하세요.|
+|스프레드 연산자|[스프레드 연산자](/visualstudio/scripting-docs/javascript/reference/spread-operator-decrement-dot-dot-dot-javascript)(`…`)는 반복 가능한 식을 개별 인수로 확장합니다. 예를 들어 `a.b(…array)`는 `a.b.apply(a, array)`와 거의 같습니다.|
+|기호|[Symbol](/visualstudio/scripting-docs/javascript/reference/symbol-object-javascript) 개체를 사용하면 기존 개체 속성을 방해할 가능성, 의도하지 않은 표시 및 다른 코드에 의한 조정되지 않은 추가 없이 속성을 기존 개체에 추가할 수 있습니다.|
+|템플릿 문자열|[템플릿 문자열](/visualstudio/scripting-docs/javascript/advanced/template-strings-javascript)은 식이 계산되어 문자열 리터럴과 연결될 수 있도록 하는 문자열 리터럴입니다.|
+|유니코드 향상|유니코드 지원 기능이 향상되었습니다. 예를 들어 새로운 이스케이프 시퀀스 형식은 에스트랄 코드 포인트(16진수가 5개 이상인 코드 포인트)를 지원합니다. 자세한 내용은 [특수 문자](/visualstudio/scripting-docs/javascript/advanced/special-characters-javascript)를 참조하세요.|
+|WeakSet|[WeakSet](/visualstudio/scripting-docs/javascript/reference/weakset-object-javascript)은 참조되는 위치가 없는 경우 가비지 컬렉션될 개체의 컬렉션입니다.|

@@ -13,12 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 75043a1716cca0c727eb0530cd63ca715a60424b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1e82dd7fbae434ae129e90562aab91875bb4e28b
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064874"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740103"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>ADO.NET을 사용하여 간단한 데이터 애플리케이션 만들기
 
@@ -37,7 +37,7 @@ ms.locfileid: "53064874"
 
 -   SQL Server Express LocalDB. SQL Server Express LocalDB가 없는 경우에서 설치할 수 있습니다 합니다 [SQL Server Express 다운로드 페이지](https://www.microsoft.com/sql-server/sql-server-editions-express)합니다.
 
-이 항목에는 Visual Studio IDE의 기본 기능에 익숙한 및, 수 있습니다 Windows Forms 응용 프로그램을 만드는 추가 단추 및 기타 컨트롤을 폼에 배치 합니다. 프로젝트에 폼 컨트롤 및 간단한 이벤트 코드의 속성을 설정 가정 합니다. 이러한 작업에 익숙하지 경우 완료 하는 것이 좋습니다 합니다 [시각적 개체를 사용 하 여 시작 C# 및 Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) 이 연습을 시작 하기 전에 항목입니다.
+이 항목에는 Visual Studio IDE의 기본 기능에 익숙한 및, 수 있습니다 Windows Forms 응용 프로그램을 만드는 추가 단추 및 기타 컨트롤을 폼에 배치 합니다. 프로젝트에 폼 컨트롤 및 간단한 이벤트 코드의 속성을 설정 가정 합니다. 이러한 작업에 익숙하지 경우 완료 하는 것이 좋습니다 합니다 [시각적 개체를 사용 하 여 시작 C# 및 Visual Basic](../ide/quickstart-visual-basic-console.md) 이 연습을 시작 하기 전에 항목입니다.
 
 ## <a name="set-up-the-sample-database"></a>샘플 데이터베이스 설정
 
