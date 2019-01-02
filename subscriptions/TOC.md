@@ -44,7 +44,6 @@
 #### [Azure Advisory Chat](vs-azure-advisory-chat.md)
 #### [Azure 커뮤니티](vs-azure-community.md)
 #### [기술 지원](vs-tech-support.md)
-#### [개발자 커뮤니티 지원](vs-priority-support.md)
 #### [Concierge 지원](vs-concierge-chat.md)
 ## 구독 관리
 ### [관리자 책임](admin-responsibilities.md)

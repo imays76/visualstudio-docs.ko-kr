@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 70a06548dd25ade1bf64bad6a99261e043f6ac65
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 9c0fac6932413b5d1992cf9c775415d63abf0344
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670835"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684836"
 ---
 # <a name="options-page-debugging-node-properties"></a>옵션 페이지, 디버깅 노드 속성
 다음 표에서는 **옵션** 대화 상자의 **디버깅** 범주, `DTE.Properties("Debugging", <Property Page>)`와 연관된 일부 페이지(또는 속성 컬렉션)에 대해 설명합니다.
@@ -59,7 +59,7 @@ ms.locfileid: "50670835"
 |InvokedByCommands|Get/Set (Boolean)|사용자가 **한 단계 실행** 또는 **계속**과 같은 디버깅 명령을 선택할 때 편집하며 계속하기가 자동으로 코드 변경 내용을 적용할지 결정합니다. 이 옵션은 네이티브 코드에만 적용됩니다.|
 |InvokedByCommandsAskFirst|Get/Set (Boolean)|사용자가 **한 단계 실행** 또는 **계속**과 같은 디버깅 명령을 선택할 때 편집하며 계속하기가 코드 변경 내용을 적용하기 위한 권한에 대한 프롬프트를 사용자에게 표시할지 결정합니다. 이 옵션은 네이티브 코드에만 적용됩니다.|
 |WarnAboutStaleCode|Get/Set (Boolean)|편집하며 계속하기에서 오래되거나 부실한 코드가 실행될 경우 디버거가 경고 메시지를 실행할지 결정합니다. 이 옵션은 네이티브 코드에만 적용됩니다.|
-|RelinkChangesOnStop|Get/Set(Short)|응용 프로그램 실행이 중지될 때 편집하며 계속하기에 의해 적용된 코드 변경 내용을 Visual Studio가 다시 연결할지 결정합니다. 이 옵션은 네이티브 코드에만 적용됩니다.|
+|RelinkChangesOnStop|Get/Set(Short)|애플리케이션 실행이 중지될 때 편집하며 계속하기에 의해 적용된 코드 변경 내용을 Visual Studio가 다시 연결할지 결정합니다. 이 옵션은 네이티브 코드에만 적용됩니다.|
 |AllowPrecompiling|Get/Set(Short)|편집하며 계속하기가 백그라운드에서 미리 컴파일된 헤더를 로드하도록 허용할지 결정합니다. 이 옵션은 네이티브 코드에만 적용됩니다.|
 
 ## <a name="just-in-time"></a>Just-In-Time
@@ -86,5 +86,5 @@ ms.locfileid: "50670835"
 - [옵션 페이지, 글꼴 및 색 노드 속성](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
 - [옵션 페이지, 텍스트 편집기 노드 속성](../../ide/reference/options-page-text-editor-node-properties.md)
 - [옵션 대화 상자, 디버깅, 일반](../../debugger/general-debugging-options-dialog-box.md)
-- [옵션 대화 상자, 디버깅, 편집하며 계속하기](/visualstudio/debugger/edit-and-continue?view=vs-2015)
+- [옵션 대화 상자, 디버깅, 편집하며 계속하기](../../debugger/edit-and-continue.md?view=vs-2015)
 - [옵션 대화 상자, 디버깅, Just-In-Time](../../debugger/just-in-time-debugging-options-dialog-box.md)

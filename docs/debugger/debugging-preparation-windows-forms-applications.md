@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d441da0fd7a9342ef7b64f47374dc2ca61706db7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 13673e14ae7257dceba8638f24d6b2d5d222efd8
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066420"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561449"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>디버깅 준비: Windows Forms 응용 프로그램
 Windows Forms 프로젝트 템플릿은 Windows Forms 응용 프로그램을 만듭니다. 이러한 형식의 응용 프로그램은 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서 쉽게 디버깅할 수 있습니다. 자세한 내용은 [Windows 응용 프로그램 프로젝트를 만드는](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))합니다.  
@@ -63,7 +63,7 @@ Windows Forms 프로젝트 템플릿은 Windows Forms 응용 프로그램을 만
   
 3. **디버그** 메뉴에서 **시작**을 클릭합니다.  
   
-4. 에 설명 된 기술을 사용 하 여 디버깅할 [디버거 기본 사항](../debugger/getting-started-with-the-debugger.md)합니다.  
+4. 에 설명 된 기술을 사용 하 여 디버깅할 [디버거 소개](../debugger/debugger-feature-tour.md)합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [Debugging Managed Code](../debugger/debugging-managed-code.md) (관리 코드 디버그)  

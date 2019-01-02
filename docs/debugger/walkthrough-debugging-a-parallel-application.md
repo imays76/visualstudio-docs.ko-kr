@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48bcfe8ca54236fc2134d431f5f6dd16d4b82a48
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 0623c3e0fdd0db0315e5fe719c9a81ec97e6a2c6
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060189"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562102"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>연습: Visual Studio에서 병렬 응용 프로그램 디버깅
 이 연습에서는 **병렬 스택** 및 **병렬 스택** 창을 사용하여 병렬 애플리케이션을 디버깅하는 방법을 보여줍니다. 이러한 windows 이해 하 고 사용 하는 코드의 런타임 동작을 확인 하는 데 도움이 합니다 [TPL 작업 병렬 라이브러리 ()](/dotnet/standard/parallel-programming/task-parallel-library-tpl) 또는 [동시성 런타임](/cpp/parallel/concrt/concurrency-runtime)합니다. 이 연습에서는 기본 제공 중단점이 있는 샘플 코드를 제공합니다. 또한 코드가 중단된 후에 **병렬 작업** 및 **병렬 스택** 창을 사용하여 코드를 검사하는 방법을 보여줍니다.  
@@ -298,7 +298,7 @@ ms.locfileid: "53060189"
   
 ## <a name="see-also"></a>참고 항목  
  [다중 스레드 응용 프로그램 디버깅](../debugger/walkthrough-debugging-a-parallel-application.md)   
- [Debugger Basics](../debugger/getting-started-with-the-debugger.md) (디버거 기본 사항)  
+ [디버거 소개](../debugger/debugger-feature-tour.md)  
  [Debugging Managed Code](../debugger/debugging-managed-code.md) (관리 코드 디버그)  
  [병렬 프로그래밍](/dotnet/standard/parallel-programming/index)   
  [동시성 런타임](/cpp/parallel/concrt/concurrency-runtime)   

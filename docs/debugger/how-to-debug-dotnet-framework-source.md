@@ -1,5 +1,5 @@
 ---
-title: 방법:.NET Framework 소스 디버그 | Microsoft Docs
+title: '방법: .NET Framework 소스 디버그 | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/19/2018
 ms.technology: vs-ide-debug
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 234d9979ea1a16b917111e2a8937ad71dd55224f
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: a627c2f0880aee9906e3478b268d688c59b7d090
+ms.sourcegitcommit: 6efb9378a82924cb133912d207c6da4bd5a0b9c2
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389282"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53443914"
 ---
 # <a name="how-to-debug-net-framework-source"></a>방법: .NET Framework 소스 디버그
 
@@ -55,7 +55,7 @@ ms.locfileid: "52389282"
   
 ### <a name="to-load-symbols-from-the-modules-or-call-stack-windows"></a>모듈 또는 호출 스택에서 기호를 로드 하려면 windows  
   
-1. 디버그 하는 동안 창을 선택 하 여 **디버깅할** > **Windows** > **모듈** 나 **호출 스택** . 
+1. 디버그 하는 동안 창을 선택 하 여 **디버깅할** > **Windows** > **모듈** (누르거나 **Ctrl + Alt + U**) 또는 **디버깅할** > **Windows** > **호출 스택** (**Ctrl + Alt + C**). 
    
 1. 기호가 로드 되지 모듈을 마우스 오른쪽 단추로 클릭 합니다. 에 **모듈** 에서 창 상태를 로드 하는 기호를 합니다 **기호 상태** 열입니다. 에 **호출 스택** 창에서 상태가 합니다 **프레임 상태** 열 및 프레임이 흐리게 표시 됩니다. 
    
@@ -66,5 +66,5 @@ ms.locfileid: "52389282"
    - 선택 **기호 설정** 열려는 합니다 **기호** 페이지입니다. 에 **기호** 페이지의 **기호 파일 (.pdb) 위치**를 선택 **Microsoft 기호 서버** 공용 Microsoft 기호 서버에서 액세스 기호입니다. 기타 기호 위치를 추가 하 고 로드 순서를 변경 하려면 도구 모음 단추를 선택 합니다. 선택 **확인** 는 대화 상자를 닫습니다. 
   
 ### <a name="see-also"></a>참고 항목  
- [Debugging Managed Code](../debugger/debugging-managed-code.md) (관리 코드 디버그)  
+ [관리 코드 디버깅](../debugger/debugging-managed-code.md)   
  [기호 파일(.pdb) 및 원본 파일 지정](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

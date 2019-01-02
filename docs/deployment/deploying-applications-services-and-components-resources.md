@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 93a389fdafb6167fb132578111c7a8b5d02c8495
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d578dcf3702b340adcbef36002b64b20f65a5c73
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068054"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684238"
 ---
 # <a name="overview-of-deployment-in-visual-studio"></a>Visual Studio에서 배포 개요
 
@@ -50,10 +50,10 @@ App Service는 Azure의 클라우드 호스트 가상 컴퓨터에서 실행되�
 
 ### <a name="when-to-choose-azure-app-service"></a>Azure App Service를 선택해야 하는 경우
 
-- 인터넷을 통해 액세스할 수 있는 웹 응용 프로그램을 배포하려고 합니다.
-- 다시 배포할 필요가 없도록 수요에 따라 웹 응용 프로그램을 자동으로 크기를 조정하려고 합니다.
+- 인터넷을 통해 액세스할 수 있는 웹 애플리케이션을 배포하려고 합니다.
+- 다시 배포할 필요가 없도록 수요에 따라 웹 애플리케이션을 자동으로 크기를 조정하려고 합니다.
 - 서버 인프라(소프트웨어 업데이트 포함)를 유지 관리하지 않으려고 합니다.
-- 웹 응용 프로그램을 호스트하는 서버에서 컴퓨터 수준 사용자 지정을 하지 않아도 됩니다.
+- 웹 애플리케이션을 호스트하는 서버에서 컴퓨터 수준 사용자 지정을 하지 않아도 됩니다.
 
 > 사용자 고유의 데이터 센터 또는 다른 온-프레미스 컴퓨터에서 Azure App Service를 사용하려는 경우 [Azure Stack](https://azure.microsoft.com/overview/azure-stack/)을 사용하면 됩니다.
 
@@ -63,22 +63,22 @@ App Service에 게시에 대한 자세한 내용은 [빠른 시작 - Azure App S
 
 [Azure VM(Virtual Machines)](https://azure.microsoft.com/documentation/services/virtual-machines/)을 사용하면 개수에 관계없이 클라우드에서 컴퓨팅 리소스를 만들고 관리할 수 있습니다. VM의 모든 소프트웨어 및 업데이트에 대한 책임을 지고 애플리케이션에 필요한 경우 원하는 대로 사용자 지정할 수 있습니다. 원격 데스크톱을 통해 가상 컴퓨터에 직접 액세스할 수 있으며, 각 가상 컴퓨터에서 필요한 기간 동안 할당된 IP 주소를 유지 관리합니다.
 
-가상 머신에 호스트된 애플리케이션의 크기를 조정하려면 수요에 따라 추가 VM을 구동한 다음, 필요한 소프트웨어를 배포해야 합니다. 이러한 추가 수준의 제어를 통해 지역마다 다르게 크기를 조정할 수 있습니다. 예를 들어 응용 프로그램이 다양한 지역 사무소의 직원에게 서비스를 제공하는 경우 해당 지역의 직원 수에 따라 VM의 크기를 조정하여 비용을 절감할 수 있습니다.
+가상 머신에 호스트된 애플리케이션의 크기를 조정하려면 수요에 따라 추가 VM을 구동한 다음, 필요한 소프트웨어를 배포해야 합니다. 이러한 추가 수준의 제어를 통해 지역마다 다르게 크기를 조정할 수 있습니다. 예를 들어 애플리케이션이 다양한 지역 사무소의 직원에게 서비스를 제공하는 경우 해당 지역의 직원 수에 따라 VM의 크기를 조정하여 비용을 절감할 수 있습니다.
 
 자세한 내용은 Azure App Service, Azure Virtual Machines 및 Visual Studio의 사용자 지정 옵션을 통해 배포 대상으로 사용할 수 있는 다른 Azure 서비스 간의 [상세 비교](https://azure.microsoft.com/documentation/articles/choose-web-site-cloud-service-vm/)를 참조하세요.
 
 ### <a name="when-to-choose-azure-app-virtual-machines"></a>Azure App Virtual Machines를 선택해야 하는 경우
 
-- 인터넷을 통해 액세스할 수 있고, 할당된 IP 주소의 수명 주기 동안 모든 권한을 가진 웹 응용 프로그램을 배포하려고 합니다.
+- 인터넷을 통해 액세스할 수 있고, 할당된 IP 주소의 수명 주기 동안 모든 권한을 가진 웹 애플리케이션을 배포하려고 합니다.
 - 특수 데이터베이스 시스템, 특정 네트워킹 구성, 디스크 파티션 등의 추가 소프트웨어를 포함하는 컴퓨터 수준 사용자 지정이 서버에 필요합니다.
-- 웹 응용 프로그램의 크기 조정을 세부적으로 제어하려고 합니다.
-- 기타 다른 이유로 응용 프로그램을 호스트하는 서버에 대한 직접적인 액세스가 필요합니다.
+- 웹 애플리케이션의 크기 조정을 세부적으로 제어하려고 합니다.
+- 기타 다른 이유로 애플리케이션을 호스트하는 서버에 대한 직접적인 액세스가 필요합니다.
 
 > 사용자 고유의 데이터 센터 또는 다른 온-프레미스 컴퓨터에서 Azure Virtual Machines를 사용하려는 경우 [Azure Stack](https://azure.microsoft.com/overview/azure-stack/)을 사용하면 됩니다.
 
 ## <a name="file-system"></a>파일 시스템
 
-파일 시스템에 배포하는 경우 사용자 컴퓨터의 특정 폴더에 애플리케이션의 파일을 복사하면 됩니다. 이 작업은 주로 테스트를 위해 또는 컴퓨터에서 서버도 실행하는 경우 제한된 수의 사용자가 사용할 애플리케이션을 배포하기 위해 사용됩니다. 대상 폴더가 네트워크에서 공유되는 경우 파일 시스템에 배포하면 웹 응용 프로그램 파일을 특정 서버에 배포할 수 있는 다른 사용자들이 사용할 수 있게 됩니다.
+파일 시스템에 배포하는 경우 사용자 컴퓨터의 특정 폴더에 애플리케이션의 파일을 복사하면 됩니다. 이 작업은 주로 테스트를 위해 또는 컴퓨터에서 서버도 실행하는 경우 제한된 수의 사용자가 사용할 애플리케이션을 배포하기 위해 사용됩니다. 대상 폴더가 네트워크에서 공유되는 경우 파일 시스템에 배포하면 웹 애플리케이션 파일을 특정 서버에 배포할 수 있는 다른 사용자들이 사용할 수 있게 됩니다.
 
 구성된 방식이나 연결된 네트워크에 따라 서버를 실행하는 모든 로컬 머신이 인터넷 또는 인트라넷을 통해 애플리케이션을 제공할 수 있습니다. 컴퓨터를 인터넷에 직접 연결하는 경우 외부 보안 위협으로부터 보호하기 위해 특히 주의해야 합니다. 이러한 컴퓨터를 직접 관리하기 때문에 소프트웨어 및 하드웨어 구성에 대한 모든 권한을 갖습니다.
 
@@ -86,9 +86,9 @@ App Service에 게시에 대한 자세한 내용은 [빠른 시작 - Azure App S
 
 ### <a name="when-to-choose-file-system-deployment"></a>파일 시스템 배포를 선택해야 하는 경우
 
-- 파일 공유에만 응용 프로그램을 배포하면 되며, 다른 사용자는 여기서 다른 서버에 배포합니다.
+- 파일 공유에만 애플리케이션을 배포하면 되며, 다른 사용자는 여기서 다른 서버에 배포합니다.
 - 로컬 테스트 배포만 있으면 됩니다.
-- 다른 배포 대상에 보내기 전에 응용 프로그램 파일을 개별적으로 검사하고 수정하려고 합니다.
+- 다른 배포 대상에 보내기 전에 애플리케이션 파일을 개별적으로 검사하고 수정하려고 합니다.
 
 자세한 내용은 [빠른 시작 - 로컬 폴더에 배포](quickstart-deploy-to-local-folder.md)를 참조하세요.
 
@@ -122,4 +122,4 @@ Visual Studio에서 원하는 수의 사용자 지정 배포 프로필을 만들
 - [Visual C++의 개발](/cpp/ide/deployment-in-visual-cpp)
 - [UWP 앱 배포](/windows/uwp/packaging/packaging-uwp-apps?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - [웹 배포를 사용하여 Azure에 Node.js 앱 게시](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
-- [Azure App Service에 Python 앱 게시](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
+- [Azure App Service에 Python 앱 게시](../python/publishing-python-web-applications-to-azure-from-visual-studio.md?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)

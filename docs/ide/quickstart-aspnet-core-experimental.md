@@ -1,10 +1,10 @@
 ---
-title: C#에서 ASP.NET Core 웹앱 만들기
+title: Visual Studio를 사용하여 C#으로 ASP.NET Core 웹앱 만들기
 description: C# 및 ASP.NET Core를 사용하여 단계별로 Visual Studio에서 간단한 Hello World 웹앱을 만드는 방법을 알아봅니다.
+ms.custom: mvc
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
-ms.custom: mvc,seodec18
 ms.topic: quickstart
 author: TerryGLee
 ms.author: tglee
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 23ba016d95e96965637ca6742501b09b16a42707
+ms.openlocfilehash: 8487d09c75ff8880fd6c3fe4af59fa2b494b315e
 ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684368"
+ms.locfileid: "53684969"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>빠른 시작: Visual Studio를 사용하여 첫 번째 ASP.NET Core 웹앱 만들기
 
@@ -41,7 +41,7 @@ Visual Studio를 이미 설치한 경우 최신 릴리스를 실행하고 있는
 
 ## <a name="create-a-project"></a>프로젝트 만들기
 
-시작하려면 ASP.NET Core 웹 애플리케이션 프로젝트를 만듭니다. 또한 프로젝트 형식에는 어떤 것을 추가하기도 전에 웹앱을 만들 수 있는 모든 템플릿 파일이 함께 제공됩니다!
+시작하려면 ASP.NET Core 웹 애플리케이션 프로젝트를 만듭니다. 방법은 다음과 같습니다.
 
 1. Visual Studio 2017을 엽니다.
 
@@ -49,7 +49,14 @@ Visual Studio를 이미 설치한 경우 최신 릴리스를 실행하고 있는
 
 1. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual C#** 을 확장하고 **.NET Core**를 선택합니다. 가운데 창에서 **ASP.NET Core 웹 애플리케이션**을 선택합니다. 그런 다음, 파일 이름을 `HelloWorld`로 지정하고 **확인**을 선택합니다.
 
-   ![C#용 새 ASP.NET Core 웹 애플리케이션 프로젝트 만들기](../ide/media/csharp-aspnet-choose-template-name-file.png)
+1. **새 ASP.NET Core 웹 애플리케이션** 대화 상자의 상단 드롭다운 메뉴에서 **ASP.NET Core 2.0** 이상을 선택한 다음, **웹 애플리케이션**을 선택합니다.
+
+   > [!NOTE]
+   > 맨 위 드롭다운 메뉴에서 **ASP.NET Core 2.0** 이상을 볼 수 없는 경우 Visual Studio의 최신 릴리스를 실행하고 있는지 확인합니다. 설치를 업데이트하는 방법에 대한 자세한 내용은 [Visual Studio 2017을 최신 릴리스로 업데이트](../install/update-visual-studio.md) 페이지를 참조하세요.
+
+   ![Visual Studio에서 C# ASP.NET Core 프로젝트를 만드는 방법을 보여주는 애니메이션 처리된 .gif 파일 보기](../ide/media/csharp-aspnet-animated-create-project.gif)
+
+   곧 Visual Studio에서 프로젝트 파일이 열립니다.
 
    > [!NOTE]
    > **.NET Core** 프로젝트 템플릿 범주가 표시되지 않으면 왼쪽 창에서 **Visual Studio 설치 관리자 열기** 링크를 선택합니다. (표시 설정에 따라 스크롤해야 볼 수 있습니다.)
@@ -62,61 +69,32 @@ Visual Studio를 이미 설치한 경우 최신 릴리스를 실행하고 있는
    >
    > (새 워크로드를 계속 설치하려면 먼저 Visual Studio를 닫아야 할 수 있습니다.)
 
-1. **새 ASP.NET Core 웹 애플리케이션** 대화 상자의 상단 드롭다운 메뉴에서 **ASP.NET Core 2.0** 이상을 선택합니다.
+## <a name="create-and-run-the-app"></a>앱 만들기 및 실행
 
-   > [!NOTE]
-   > **ASP.NET Core 2.0** 이상을 볼 수 없는 경우 Visual Studio의 최신 릴리스를 실행하고 있는지 확인합니다. 설치를 업데이트하는 방법에 대한 자세한 내용은 [Visual Studio 2017을 최신 릴리스로 업데이트](../install/update-visual-studio.md) 페이지를 참조하세요.
+다음으로, "Hello World" 웹앱을 만들고 실행합니다. 방법은 다음과 같습니다.
 
-1. 그런 다음, **웹 애플리케이션**을 선택한 후, **확인**을 선택합니다.
-
-   ![새 ASP.NET Core 웹 애플리케이션 대화 상자](../ide/media/quickstart-aspnet-core20.png)
-
-곧 Visual Studio에서 프로젝트 파일이 열립니다.
-
-## <a name="create-the-app"></a>앱 만들기
-
-1. **솔루션 탐색기**에서 **Pages** 폴더를 확장한 다음, **About.cshtml**을 선택합니다.
+1. Visual Studio의 **솔루션 탐색기**에서 **Pages** 폴더를 확장합니다. 그런 다음, **About.cshtml**을 선택합니다.
 
    ![솔루션 탐색기에서 About.cshtml 파일 선택](../ide/media/csharp-aspnet-about-page-html-file.png)
 
-   이 파일은 웹앱에서 이름이 **정보**로 이름이 지정된 페이지에 해당합니다.
+   이 파일은 웹 브라우저에서 실행되는 웹앱에서 **정보**라는 페이지에 해당합니다.
 
    ![웹앱의 정보 페이지](../ide/media/csharp-aspnet-about-page.png)
 
-   **정보** 페이지의 “추가 정보” 영역에 대한 HTML 코드가 편집기에 표시됩니다.
+1. Visual Studio 코드 편집기에서 “추가 정보” 텍스트를 “**Hello World!**”로 변경합니다.
 
-   ![Visual Studio 편집기의 추가 정보 영역에 대한 HTML 코드](../ide/media/csharp-aspnet-about-cshtml-page.png)
-
-1. “추가 정보” 텍스트를 “**Hello World!**”로 변경합니다.
-
-   ![Visual Studio 편집기에서 추가 정보 영역의 기본 HTML 코드를 변경합니다.](../ide/media/csharp-aspnet-about-cshtml-page-hello-world.png)
-
-1. **솔루션 탐색기**에서 **About.cshtml**을 확장한 다음, **About.cshtml.cs**를 선택합니다. (이 파일은 웹앱의 **정보** 페이지와 일치합니다.)
-
-   ![솔루션 탐색기에서 About.cshtml 파일 선택](../ide/media/csharp-aspnet-about-page-code-file.png)
-
-   **정보** 페이지의 “애플리케이션 설명” 영역에 대한 텍스트를 포함하는 C# 코드가 편집기에 표시됩니다.
-
-   ![Visual Studio 편집기의 애플리케이션 설명 영역에 대한 C# 코드](../ide/media/csharp-aspnet-about-cshtml-cs-code.png)
+1. **솔루션 탐색기**에서 **About.cshtml**을 확장한 다음, **About.cshtml.cs**를 선택합니다.
 
 1. “애플리케이션 설명” 메시지 텍스트를 “**내 메시지란?**”으로 변경합니다.
 
-   ![Visual Studio 편집기에서 애플리케이션 설명 영역의 기본 메시지 텍스트 변경](../ide/media/csharp-aspnet-about-cshtml-cs-message.png)
+1. **IIS Express**를선 택하거나 **Ctrl**+**F5**를 눌러 앱을 실행하고 웹 브라우저에서 엽니다.
 
-## <a name="run-the-app"></a>앱 실행
-
-1. **Ctrl**+**F5**를 눌러 앱을 실행하고 웹 브라우저에서 엽니다.
+   ![Visual Studio에서 C# ASP.NET Core 웹앱을 만들고 실행하는 방법을 보여주는 애니메이션 처리된 .gif 파일 보기](../ide/media/csharp-aspnet-animated-hello-world.gif)
 
    > [!NOTE]
    > **웹 서버 'IIS Express'에 연결할 수 없음**이라는 오류 메시지 또는 SSL 인증서를 언급하는 오류 메시지를 받는 경우 Visual Studio를 닫습니다. 다음으로, 마우스 오른쪽 단추 또는 컨텍스트 메뉴에서 **관리자 권한으로 실행** 옵션을 사용하여 Visual Studio를 엽니다. 그런 다음 애플리케이션을 다시 실행합니다.
 
-1. 웹 페이지 위쪽에서 **정보**를 선택합니다.
-
-   ![웹 페이지에서 정보 선택](../ide/media/csharp-aspnet-home-page-about.png)
-
-1. **정보** 페이지에 추가한 업데이트된 텍스트를 봅니다.
-
-   ![추가한 텍스트가 포함된 업데이트된 페이지 보기](../ide/media/csharp-aspnet-about-page-hello-world.png)
+1. 웹 브라우저에서 **정보** 페이지에 업데이트된 텍스트가 포함되는지 확인합니다.
 
 1. 웹 브라우저를 닫습니다.
 

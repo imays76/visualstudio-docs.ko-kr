@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9c4b0996faf26279ff8018e0e072fd25a33d783
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 86e6aa0da41a16445b3e3328a1ee0bc84063dd52
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063424"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561725"
 ---
 # <a name="debug-at-design-time-in-visual-studio-c-c-visual-basic-f"></a>Visual Studio에서 디자인 타임에 디버그 (C#, c + +, Visual Basic의 경우 F#)
 
@@ -106,5 +106,4 @@ Visual Studio를 사용할 수 있습니다 **직접 실행** 앱을 실행 하�
    페이지 로드 되 면 중단점이 적중 됩니다.
   
 ## <a name="see-also"></a>참고 항목  
- [디버거 보안](../debugger/debugger-security.md)   
- [디버거 기본 사항](../debugger/getting-started-with-the-debugger.md)
+ [디버거 소개](../debugger/debugger-feature-tour.md) [디버거 보안](../debugger/debugger-security.md)   

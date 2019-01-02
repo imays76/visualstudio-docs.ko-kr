@@ -15,12 +15,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a1d7b165466f686549273394c204e4ab31c06b46
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: a68909f602b0be0139cbbe98701012bb3af1ff30
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53158608"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441537"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>빠른 시작: Visual Studio를 사용하여 첫 번째 C# 콘솔 앱 만들기
 
@@ -30,7 +30,7 @@ Visual Studio IDE(통합 개발 환경)에 대한 소개는 이 5~10분 분량�
 
 ## <a name="create-a-project"></a>프로젝트 만들기
 
-먼저 C# 응용 프로그램 프로젝트를 만듭니다. 아무 것도 추가하지 않아도 필요한 모든 템플릿 파일과 함께 프로젝트 형식이 제공됩니다.
+먼저 C# 애플리케이션 프로젝트를 만듭니다. 아무 것도 추가하지 않아도 필요한 모든 템플릿 파일과 함께 프로젝트 형식이 제공됩니다.
 
 1. Visual Studio 2017을 엽니다.
 
@@ -48,9 +48,9 @@ Visual Studio IDE(통합 개발 환경)에 대한 소개는 이 5~10분 분량�
 
      ![Visual Studio 설치 관리자의 .NET Core 플랫폼 간 개발 워크로드](../ide/media/dot-net-core-xplat-dev-workload.png)
 
-## <a name="create-the-application"></a>응용 프로그램 만들기
+## <a name="create-the-application"></a>애플리케이션 만들기
 
-C# 프로젝트 템플릿을 선택하고 프로젝트 이름을 지정한 후에 Visual Studio에서 간단한 “Hello World” 응용 프로그램을 만듭니다. 
+C# 프로젝트 템플릿을 선택하고 프로젝트 이름을 지정한 후에 Visual Studio에서 간단한 “Hello World” 애플리케이션을 만듭니다. 
 
 이렇게 하려면 <xref:System.Console.WriteLine%2A> 메서드를 호출하여 리터럴 문자열 “Hello World!”를 콘솔 창에 표시합니다.
 
@@ -58,11 +58,11 @@ C# 프로젝트 템플릿을 선택하고 프로젝트 이름을 지정한 후�
 
 **F5** 키를 누르면 디버그 모드에서 프로그램을 실행할 수 있습니다. 그러나 콘솔 창은 잠깐만 표시되었다가 닫힙니다.
 
-단일 문을 실행한 후에 응용 프로그램이 종료되도록 `Main` 메서드가 종료되기 때문에 이런 결과가 발생합니다.
+단일 문을 실행한 후에 애플리케이션이 종료되도록 `Main` 메서드가 종료되기 때문에 이런 결과가 발생합니다.
 
 ### <a name="add-some-code"></a>일부 코드를 추가합니다.
 
-**Enter** 키를 누를 때까지 콘솔 창이 닫히지 않도록 응용 프로그램을 일시 중지하는 일부 코드를 추가하겠습니다.
+**Enter** 키를 누를 때까지 콘솔 창이 닫히지 않도록 애플리케이션을 일시 중지하는 일부 코드를 추가하겠습니다.
 
 1. <xref:System.Console.WriteLine%2A> 메서드 호출 바로 다음에 아래 코드를 추가합니다.
 
@@ -74,9 +74,9 @@ C# 프로젝트 템플릿을 선택하고 프로젝트 이름을 지정한 후�
 
    ![Hello World 앱을 일시 중지하는 코드 추가](../ide/media/csharp-console-helloworld-add-code.png)
 
-## <a name="run-the-application"></a>응용 프로그램 실행
+## <a name="run-the-application"></a>애플리케이션 실행
 
-1. 도구 모음에서 **HelloWorld** 단추를 선택하여 응용 프로그램을 디버그 모드로 실행합니다. 또는 **F5** 키를 누르면 됩니다.
+1. 도구 모음에서 **HelloWorld** 단추를 선택하여 애플리케이션을 디버그 모드로 실행합니다. 또는 **F5** 키를 누르면 됩니다.
 
    ![Hello World 단추를 선택하여 도구 모음에서 앱을 실행합니다.](../ide/media/csharp-console-hello-world-button.png)
 
@@ -84,7 +84,7 @@ C# 프로젝트 템플릿을 선택하고 프로젝트 이름을 지정한 후�
 
    ![Hello World!를 표시하는 콘솔 창](../ide/media/csharp-console-hello-world.png)
 
-### <a name="close-the-application"></a>응용 프로그램 닫기
+### <a name="close-the-application"></a>애플리케이션 닫기
 
 1. **Enter** 키를 눌러 콘솔 창을 닫습니다.
 
@@ -99,4 +99,4 @@ C# 프로젝트 템플릿을 선택하고 프로젝트 이름을 지정한 후�
 이 빠른 시작을 완료한 것을 축하 드립니다! C# 및 Visual Studio IDE를 이해하는 데 도움이 되었기를 바랍니다. 자세히 알아보려면 다음 자습서를 계속 진행하세요.
 
 > [!div class="nextstepaction"]
-> [Visual Studio에서 C# 콘솔 앱 시작](tutorial-csharp-console.md)
+> [Visual Studio에서 C# 콘솔 앱 시작](../get-started/csharp/tutorial-console.md)
