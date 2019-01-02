@@ -29,19 +29,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 07ed9670795e11b0d98b3703445450b468a93aa8
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: HT
+ms.openlocfilehash: 499e1200f858530db0caad69d93bd4416f756405
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068463"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561644"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Visual Studio 디버거에서 실행 중인 프로세스에 연결
 로컬 또는 원격 컴퓨터에서 실행 중인 프로세스에 Visual Studio 디버거를 연결할 수 있습니다. 프로세스를 실행 한 후 선택 **디버깅할** > **프로세스에 연결** 누르거나 **Ctrl**+**Alt** + **P** 사용 하 여 Visual Studio에는 **프로세스에 연결** 프로세스에 디버거를 연결 하는 대화 상자.
 
 사용할 수 있습니다 **프로세스에 연결** 로컬 또는 원격 컴퓨터에서 실행 중인 앱을 디버깅 하려면 동시에 여러 프로세스 디버깅, Visual Studio에서 작성 하지 않은 앱을 디버그 또는 사용 하 여 Visual Studio에서 시작 하지 않은 모든 앱을 디버그 합니다 디버거를 연결 합니다. 예를 들어, 디버거 없이 앱을 실행 하 고 예외가 발생 하는 경우 다음 앱을 실행 하는 프로세스에 디버거를 연결 하 디버깅을 시작 합니다.
 
-Visual Studio에서 기본 디버깅에 대 한 자세한 내용은 [디버거를 사용 하 여 시작](../debugger/getting-started-with-the-debugger.md)합니다.
+Visual Studio에서 기본 디버깅에 대 한 자세한 내용은 [디버거 소개](../debugger/debugger-feature-tour.md)합니다.
 
 > [!TIP]
 > 확실 하지 않은 경우 사용할 것인지 **프로세스에 연결** 디버깅 시나리오에 대 한? 참조 [일반적인 디버깅 시나리오](#BKMK_Scenarios)합니다. 
@@ -162,7 +162,7 @@ IIS에 배포 된 ASP.NET 응용 프로그램 디버깅에 대 한 자세한 내
 |원격 디버그 ASP.NET 4 또는 4.5에서 IIS 서버|원격 도구를 사용 하 고 **프로세스에 연결**|*w3wp.exe*|참조 [원격 원격 IIS 컴퓨터에서 ASP.NET 디버깅](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |IIS 서버에서 원격 디버그 ASP.NET Core|원격 도구를 사용 하 고 **프로세스에 연결**|*dotnet.exe*|앱 배포에 대해서 [Publish to IIS](https://docs.asp.net/en/latest/publishing/iis.html)합니다. 디버깅을 참조 하세요. [원격 IIS 컴퓨터에서 원격 디버깅 Asp.net](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
 |지원 되는 앱 형식에 대 한 로컬 IIS 서버에서 클라이언트 쪽 스크립트 디버깅 |사용 하 여 **프로세스에 연결**|*chrome.exe*하십시오 *MicrosoftEdgeCP.exe*, 또는 *iexplore.exe*|스크립트 디버깅을 사용할 수 있어야 합니다. Chrome에 대 한 실행 해야 Chrome에서 디버그 모드를 선택 **Webkit 코드** 에 **연결할** 필드입니다.|
-|디버그는 C#, Visual Basic 또는 c + + 로컬 컴퓨터에서 앱을|사용 하 여 [표준 디버깅](../debugger/getting-started-with-the-debugger.md) 또는 **프로세스에 연결**|*\<응용 프로그램 이름 >.exe*|대부분의 시나리오에서 사용 하 여 표준 디버깅 및 not **프로세스에 연결**합니다.|
+|디버그는 C#, Visual Basic 또는 c + + 로컬 컴퓨터에서 앱을|사용 하 여 [표준 디버깅](../debugger/debugger-feature-tour.md) 또는 **프로세스에 연결**|*\<응용 프로그램 이름 >.exe*|대부분의 시나리오에서 사용 하 여 표준 디버깅 및 not **프로세스에 연결**합니다.|
 |Windows 데스크톱 앱을 원격 디버그|원격 도구|N/A| 참조 [원격 디버그를 C# 또는 Visual Basic 앱](../debugger/remote-debugging-csharp.md) 하거나 [원격 c + + 앱을 디버그](../debugger/remote-debugging-cpp.md)|
 |디버거 없이 앱을 시작한 후 로컬 컴퓨터에 ASP.NET 앱 디버그|사용 하 여 **프로세스에 연결**|*iiexpress.exe*|로드 앱을 확인 하면 도움이 될이 빠르고 같은 (예) 프로 파일링 하는 경우. |
 |서버 프로세스에서 다른 유형의 지원 되는 앱 디버그|서버가 원격 인 경우 원격 도구를 사용 하 고 **프로세스에 연결**|*chrome.exe*하십시오 *iexplore.exe*, 또는 기타 프로세스|필요한 경우 리소스 모니터 프로세스를 식별 하는 데 사용 합니다. [원격 디버깅](../debugger/remote-debugging.md)을 참조하세요.|
