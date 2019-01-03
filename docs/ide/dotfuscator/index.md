@@ -3,7 +3,6 @@ title: Dotfuscator CE(Community Edition)
 ms.date: 10/10/2017
 ms.devlang: dotnet
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 keywords: Dotfuscator, Dotfuscator CE, PreEmptive, PreEmptive Solutions, PreEmptive Protection, 보호, community edition, obfuscation, .NET, 무료, Visual Studio 2017
 helpviewer_keywords:
@@ -13,22 +12,22 @@ helpviewer_keywords:
 - Dotfuscator
 - obfuscation
 - protection
-description: Visual Studio 2017에 포함된 무료 Dotfuscator Community Edition으로 .NET 응용 프로그램을 보호하는 방법에 대해 알아봅니다.
+description: Visual Studio 2017에 포함된 무료 Dotfuscator Community Edition으로 .NET 애플리케이션을 보호하는 방법에 대해 알아봅니다.
 ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d6cac51aaa73053dc0e1f306288d8198fdacccfd
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 946a799c8041f7d75174696ef83e1cf6c1219f2a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219059"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958079"
 ---
 # <a name="dotfuscator-community-edition-ce"></a>Dotfuscator CE(Community Edition)
 
-*PreEmptive Protection - Dotfuscator*는 보안 소프트웨어 개발 수명 주기에 맞도록 손쉽게 조정되는 포괄적인 .NET 응용 프로그램 보호 기능을 제공합니다.
-이 프로그램을 사용하여 데스크톱, 모바일, 서버 및 포함된 응용 프로그램을 강화, 보호 및 정리함으로써 거래 비밀 및 기타 IP(지적 재산권)를 보호하고, 불법 복제 및 위조를 줄이고, 변조 및 무단 디버깅으로부터 보호하는 데 도움을 얻을 수 있습니다.
+*PreEmptive Protection - Dotfuscator*는 보안 소프트웨어 개발 수명 주기에 맞도록 손쉽게 조정되는 포괄적인 .NET 애플리케이션 보호 기능을 제공합니다.
+이 프로그램을 사용하여 데스크톱, 모바일, 서버 및 포함된 애플리케이션을 강화, 보호 및 정리함으로써 거래 비밀 및 기타 IP(지적 재산권)를 보호하고, 불법 복제 및 위조를 줄이고, 변조 및 무단 디버깅으로부터 보호하는 데 도움을 얻을 수 있습니다.
 Dotfuscator는 추가적인 프로그래밍이나 소스 코드 액세스 없이도 컴파일된 어셈블리에 작동합니다.
 
 ![PreEmptive Protection - Dotfuscator](media/header.svg)
@@ -36,14 +35,14 @@ Dotfuscator는 추가적인 프로그래밍이나 소스 코드 액세스 없이
 ## <a name="why-protection-matters"></a>보호가 중요한 이유
 
 **IP(지적 재산권)을 보호**하는 일은 매우 중요합니다.
-응용 프로그램의 코드에는 IP로 간주할 수 있는 디자인 및 구현 세부 정보가 포함되어 있습니다.
-그렇지만 .NET Framework에서 빌드된 응용 프로그램에는 [중요한 메타데이터 및 고급 중간 코드][assemblies]가 포함되어 있으며 이러한 항목들은 수많은 무료 자동화 도구 중 하나만으로 쉽게 리버스 엔지니어링할 수 있습니다.
+애플리케이션의 코드에는 IP로 간주할 수 있는 디자인 및 구현 세부 정보가 포함되어 있습니다.
+그렇지만 .NET Framework에서 빌드된 애플리케이션에는 [중요한 메타데이터 및 고급 중간 코드][assemblies]가 포함되어 있으며 이러한 항목들은 수많은 무료 자동화 도구 중 하나만으로 쉽게 리버스 엔지니어링할 수 있습니다.
 리버스 엔지니어링을 중단하고 중지하여 무단 IP 공개를 방지하고 코드에 영업 비밀이 포함되어 있음을 알릴 수 있습니다.
-Dotfuscator는 원래 응용 프로그램 동작은 유지하면서 .NET 어셈블리를 [난독 처리][obfuscation]하여 리버스 엔지니어링을 방지할 수 있습니다.
+Dotfuscator는 원래 애플리케이션 동작은 유지하면서 .NET 어셈블리를 [난독 처리][obfuscation]하여 리버스 엔지니어링을 방지할 수 있습니다.
 
-**응용 프로그램의 무결성을 보호**하는 것도 중요합니다.
-리버스 엔지니어링 외에도 악의적인 사용자가 응용 프로그램을 불법 복제하거나, 런타임에 응용 프로그램의 동작을 변경하거나, 데이터를 조작하려고 할 수 있습니다.
-Dotfuscator는 변조, 제3자 디버깅 및 루팅된 디바이스를 비롯한 [무단 사용을 감지 및 반응][checks]하는 기능을 응용 프로그램에 삽입합니다.
+**애플리케이션의 무결성을 보호**하는 것도 중요합니다.
+리버스 엔지니어링 외에도 악의적인 사용자가 애플리케이션을 불법 복제하거나, 런타임에 애플리케이션의 동작을 변경하거나, 데이터를 조작하려고 할 수 있습니다.
+Dotfuscator는 변조, 제3자 디버깅 및 루팅된 장치를 비롯한 [무단 사용을 감지 및 반응][checks]하는 기능을 애플리케이션에 삽입합니다.
 
 Dotfuscator를 보안 소프트웨어 개발 수명 주기에 적용하는 방법에 대한 자세한 내용은 PreEmptive Solutions의 [SDL 응용 프로그램 보호 페이지][sdl-protection]를 참조하세요.
 
@@ -53,18 +52,18 @@ Microsoft Visual Studio 2017의 복사본에는 Dotfuscator CE로도 알려진 *
 Visual Studio 2017에 포함된 Dotfuscator CE 버전을 설치하는 방법에 대한 지침은 [설치 페이지][install]를 참조하세요.
 
 Dotfuscator CE는 개발자, 설계자 및 테스터를 위한 광범위한 [소프트웨어 보호 및 보안 강화][software-protection] 서비스를 제공합니다.
-Dotfuscator CE에 포함된 [.NET Obfuscation][obfuscation] 및 기타 [응용 프로그램 보호] [app-protection] 기능의 예는 다음과 같습니다.
+Dotfuscator CE에 포함된 [.NET Obfuscation][obfuscation] 및 기타 [애플리케이션 보호][app-protection] 기능의 예는 다음과 같습니다.
 
 * 식별자 *[이름 바꾸기][renaming]*  - 컴파일된 어셈블리의 리버스 엔지니어링을 더 어렵게 만듭니다.
-* [변조 방지][tamper]: 변조된 응용 프로그램의 실행을 감지하고 변조된 세션을 종료하거나 이러한 세션에 응답합니다.
-* [디버그 방지][debug]: 실행 중인 응용 프로그램에 대한 디버거 연결을 감지하고 디버그된 세션을 종료하거나 이러한 세션에 응답합니다.
-* [루팅 방지 장치][root]: 루팅된 Android 장치에서 응용 프로그램이 실행되고 있는지 감지하고 이러한 장치의 세션을 종료하거나 세션에 응답합니다.
-* [응용 프로그램 만료 동작][shelflife]: “수명 종료” 날짜를 인코드하고 만료된 응용 프로그램 세션을 종료합니다.
+* [변조 방지][tamper]: 변조된 애플리케이션의 실행을 감지하고 변조된 세션을 종료하거나 이러한 세션에 응답합니다.
+* [디버그 방지][debug]: 실행 중인 애플리케이션에 대한 디버거 연결을 감지하고 디버그된 세션을 종료하거나 이러한 세션에 응답합니다.
+* [루팅 방지 장치][root]: 루팅된 Android 장치에서 애플리케이션이 실행되고 있는지 감지하고 이러한 장치의 세션을 종료하거나 세션에 응답합니다.
+* [애플리케이션 만료 동작][shelflife]: “수명 종료” 날짜를 인코드하고 만료된 애플리케이션 세션을 종료합니다.
 
-이러한 기능과 이러한 기능이 응용 프로그램 보호 전략에 맞게 조정되는 방법에 대한 자세한 내용은 [기능 페이지][capabilities]를 참조하세요.
+이러한 기능과 이러한 기능이 애플리케이션 보호 전략에 맞게 조정되는 방법에 대한 자세한 내용은 [기능 페이지][capabilities]를 참조하세요.
 
 Dotfuscator CE는 통합된 기본 보호 기능을 제공합니다.
-Dotfuscator CE에 등록한 사용자와 전 세계에서 널리 사용되고 있는 [.NET Obfuscator][net-obfuscator]인 *PreEmptive Protection - Dotfuscator* Professional Edition 사용자는 더 많은 응용 프로그램 보호 기능을 사용할 수 있습니다.
+Dotfuscator CE에 등록한 사용자와 전 세계에서 널리 사용되고 있는 [.NET Obfuscator][net-obfuscator]인 *PreEmptive Protection - Dotfuscator* Professional Edition 사용자는 더 많은 애플리케이션 보호 기능을 사용할 수 있습니다.
 Dotfuscator를 강화하는 방법에 대한 자세한 내용은 [업그레이드 페이지][upgrades]를 참조하세요.
 
 ## <a name="getting-started"></a>시작
