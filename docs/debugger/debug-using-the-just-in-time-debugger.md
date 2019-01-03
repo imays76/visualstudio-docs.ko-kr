@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f66d3fdcd400be9356776647b0ead118e83d7108
-ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
-ms.translationtype: MT
+ms.openlocfilehash: c6bd9685a5ea9bc2e6e0dc94f7fbff395fab523e
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49382750"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562063"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Just-In-Time 디버거를 사용 하 여 Visual Studio에서 디버그
 
@@ -36,13 +36,13 @@ Just-in-time 디버깅은 Windows 데스크톱 앱에 대 한 작동합니다. �
 
 Just In Time Visual Studio에서 디버깅을 구성할 수 있습니다 **도구가** > **옵션** (또는 **디버그** > **옵션**) 대화 상자입니다. 
 
-**사용 하거나 사용 하지 않도록 설정 하면 시간 디버깅:**
+**Just-In-Time 디버깅을 활성화하거나 비활성화하려면:**
 
 1. 에 **도구** 하거나 **디버그** 메뉴에서 **옵션** > **디버깅**  >   **Just In Time**합니다.
 
    ![JIT 디버깅을 사용할지](../debugger/media/dbg-jit-enable-or-disable.png "JIT 디버깅을 사용할지")
 
-1. 에 **이러한 유형의 코드에 Just-In-Time 디버깅 사용** 상자 시간 Just-디버그 하려면 디버그 하려는 코드의 형식을 선택 합니다: **관리 되는**에 **네이티브**, 및/또는  **스크립트**합니다.
+1. 에 **이러한 유형의 코드에 Just-In-Time 디버깅 사용** 상자 시간 Just-디버그 하려면 디버그 하려는 코드의 형식을 선택 합니다. **관리 되는**, **네이티브**, 및/또는 **스크립트**합니다.
    
 1. **확인**을 선택합니다.
 
@@ -52,7 +52,7 @@ Just In Time Visual Studio에서 디버깅을 구성할 수 있습니다 **도�
 
 컴퓨터에 Visual Studio가 더 이상 설치되어 있지 않아도 Just-In-Time 디버깅은 계속 활성화되어 있습니다. Visual Studio가 설치 되지 않은, 경우에 Just In Time Windows 레지스트리를 편집 하 여 디버깅을 비활성화할 수 없습니다.
 
-**Just In Time 레지스트리를 편집 하 여 디버깅을 사용 하지 않도록 설정 합니다.**
+**레지스트리를 편집하여 Just-In-Time 디버깅을 비활성화하려면:**
 
 1.  Windows에서 **시작** 메뉴에서 실행 합니다 **레지스트리 편집기** (*regedit.exe*).
 
@@ -90,7 +90,7 @@ Just In Time 표준 Windows 폼 오류를 처리 하는 대신 디버깅을 사�
     </configuration>
     ```
     
--  c + + Windows Form 응용 프로그램에서 설정할 수도 `DebuggableAttribute` 하 `true` 에 *.config* 파일 또는 코드에서. 사용 하 여 컴파일하면 [/Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) 하지 않고 [/Og](/cpp/build/reference/og-global-optimizations), 컴파일러를이 특성을 설정 합니다. 그러나 최적화 되지 않은 릴리스 빌드 디버깅 하려는 경우 설정 해야 합니다 `DebuggableAttribute` 앱의 다음 줄을 추가 하 여 *AssemblyInfo.cpp* 파일:
+-  c + + Windows Form 응용 프로그램에서 설정할 수도 `DebuggableAttribute` 하 `true` 에 *.config* 파일 또는 코드에서. [/Zi](/cpp/build/reference/z7-zi-zi-debug-information-format)만 사용하고 [/Og](/cpp/build/reference/og-global-optimizations)는 사용하지 않은 상태에서 컴파일하면 컴파일러에서 이 특성을 자동으로 설정합니다. 그러나 최적화 되지 않은 릴리스 빌드 디버깅 하려는 경우 설정 해야 합니다 `DebuggableAttribute` 앱의 다음 줄을 추가 하 여 *AssemblyInfo.cpp* 파일:
 
    ```cpp
    [assembly:System::Diagnostics::DebuggableAttribute(true, true)];
@@ -107,7 +107,7 @@ Just In Time 표준 Windows 폼 오류를 처리 하는 대신 디버깅을 사�
 
 예를 들어 해야는 C# 를 throw 하는 Visual Studio에서 콘솔 앱을 [NullReferenceException](/dotnet/api/system.nullreferenceexception).
 
-1. Visual studio는 C# 콘솔 앱 (**파일** > **새로 만들기** > **프로젝트** > **C#**  >  **콘솔 응용 프로그램**) 라는 *ThrowsNullException*합니다. Visual Studio에서 프로젝트를 만드는 방법에 대 한 자세한 내용은 참조 하세요. [연습: 간단한 응용 프로그램](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)합니다.
+1. Visual studio는 C# 콘솔 앱 (**파일** > **새로 만들기** > **프로젝트** > **C#**  >  **콘솔 응용 프로그램**) 라는 *ThrowsNullException*합니다. Visual Studio에서 프로젝트를 만드는 방법에 대 한 자세한 내용은 참조 하세요. [연습: ](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md) 간단한 애플리케이션 만들기
    
 1. Visual Studio에서 프로젝트가 열리면 엽니다는 *Program.cs* 파일입니다. 콘솔에 줄을 출력 하 고 다음 NullReferenceException을 throw 하는 다음 코드를 사용 하 여 main () 메서드를 바꿉니다.
    
@@ -124,7 +124,7 @@ Just In Time 표준 Windows 폼 오류를 처리 하는 대신 디버깅을 사�
    >[!NOTE]
    >- 선택할 **디버그** 전체 디버깅 환경을 구성 합니다. 
    >- 선택 하는 경우 [릴리스](../debugger/how-to-set-debug-and-release-configurations.md) 구성을 해제 해야 [Just My Code](../debugger/just-my-code.md) 이 절차를 수행 하려면. 아래 **도구** > **옵션** > **디버깅**을 선택 취소 **내 코드만**합니다.
-   빌드 구성에 대 한 자세한 내용은 참조 하세요. [빌드 구성 이해](../ide/understanding-build-configurations.md)합니다.
+   빌드 구성에 대한 자세한 내용은 [빌드 구성 이해](../ide/understanding-build-configurations.md)를 참조하세요.
    
 1. 기본 제공된 앱을 엽니다 *ThrowsNullException.exe* 에서 프로그램 C# 프로젝트 폴더 (*...\ThrowsNullException\ThrowsNullException\bin\Debug* 하거나 *...\ThrowsNullException\ ThrowsNullException\bin\Release*). 
    
@@ -161,7 +161,7 @@ Just In Time 경우 디버깅 시작 되지 않는 앱 충돌 하는 경우 Visu
 
   - **HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\Windows 오류 보고**
     
-  - (64 비트 컴퓨터용): **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\Windows 오류 보고**
+  - (64 비트 컴퓨터)의 경우 **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\Windows 오류 보고**
   
   자세한 내용은 참조 하세요. [합니다. WER 설정](https://docs.microsoft.com/windows/desktop/wer/wer-settings)합니다.
   
@@ -172,30 +172,30 @@ Just In Time 경우 디버깅 시작 되지 않는 앱 충돌 하는 경우 Visu
   
   - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug**
     
-  - (64 비트 컴퓨터용): **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug**
+  - (64 비트 컴퓨터)의 경우 **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug**
 
 Just In Time 중 다음 오류 메시지가 표시 될 수 있습니다 디버깅:
 
-- **충돌 하는 프로세스에 연결할 수 없습니다. 지정된 된 프로그램을 Windows 또는 MS-DOS 프로그램이 아닙니다.**
+- **충돌 프로세스에 연결할 수 없습니다. 지정한 프로그램은 Windows 또는 MS-DOS 프로그램이 아닙니다.**
 
     디버거가 다른 사용자에서 실행 중인 프로세스에 연결 하려고 했습니다.
 
     Visual Studio에서이 문제를 해결 하려면 엽니다 **디버그** > **프로세스에 연결**를 디버그 하려면 프로세스를 찾습니다는 **사용 가능한 프로세스** 목록입니다. 프로세스의 이름을 모르는 경우의 프로세스 ID를 찾을 합니다 **Visual Studio Just-In-Time Debugger** 대화 합니다. 프로세스를 선택 합니다 **사용 가능한 프로세스** 목록에서 선택한 **연결**합니다. 선택 **No** 시간에서 Just를 해제 하려면 디버거 대화 합니다.
 
-- **사용자가 로그온 하기 때문에 디버거를 시작할 수 없습니다.**
+- **로그온한 사용자가 없으므로 디버거를 시작할 수 없습니다.**
 
     시간에 하면 표시할 사용자 세션이 이므로 콘솔에 로그온 한 사용자가 대화를 디버깅 합니다.
 
     이 문제를 해결하려면 컴퓨터에 로그온합니다.
 
-- **클래스가 등록 되지 않았습니다.**
+- **클래스가 등록되지 않았습니다.**
 
     등록 되지 않은, 아마도 설치 문제로 인해 COM 클래스를 디버거에서 만들려고 합니다.
 
     이 문제를 해결 하려면 Visual Studio 설치 관리자를 사용 하 여 다시 설치 하거나 Visual Studio 설치를 복구 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 - [디버거 보안](../debugger/debugger-security.md)
-- [디버거 기본 사항](../debugger/getting-started-with-the-debugger.md)
+- [디버거 소개](../debugger/debugger-feature-tour.md)
 - [Just In Time, 디버깅, 옵션 대화 상자](../debugger/just-in-time-debugging-options-dialog-box.md)
-- [보안 경고: 신뢰할 수 없는 사용자가 소유한 프로세스에 연결하면 위험할 수 있습니다. 아래의 정보가 의심스럽거나 잘 모르겠으면 이 프로세스에 연결하지 마세요.](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
+- [보안 경고: 신뢰할 수 없는 사용자가 소유한 프로세스에 연결 위험할 수 있습니다. 다음 정보가 의심 스 럽 또는 확실 하지 않은 경우이 프로세스에 연결 하지 않습니다](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)

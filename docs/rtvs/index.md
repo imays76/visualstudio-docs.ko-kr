@@ -10,12 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 05ffd249be3d7734979f3a131a3a10423b76cb9d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 343b992520cddce66a4e4930244738d5b56246b1
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35667017"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804081"
 ---
 # <a name="work-with-r-in-visual-studio"></a>Visual Studio에서 R 작업
 
@@ -43,7 +43,7 @@ Visual Studio에서 R을 사용해 보려면
 | [대화형 창](interactive-repl-for-r-in-visual-studio.md) | R에 대한 전체 REPL 환경에 대화형 창에서 소스 파일의 코드를 쉽게 실행할 수 있는 기능을 제공합니다. | N/A |
 | [코드 시각화](visualizing-data-with-r-in-visual-studio.md) | 도표는 R 환경의 통합 부분이며, RTVS는 각각이 자체적인 기록과 창 간에 도표를 이동하는 기능을 갖춘 여러 개의 독립적인 도표 창을 지원합니다. 도표는 비트맵 및 PDF 파일에 저장되거나 비트맵 또는 메타파일로 클립보드에 복사될 수 있습니다.  | N/A |
 | [변수 탐색기](variable-explorer.md) | 정렬 가능한 표를 보고 CSV로 내보내는 기능을 사용해 전역 또는 패키지별 범위에서 변수를 검사합니다. | N/A |
-| [완전한 기능의 디버깅](debugging-r-in-visual-studio.md) | 대화형 창과의 통합을 포함합니다. | [Visual Studio의 디버깅](../debugger/debugging-in-visual-studio.md) |
+| [완전한 기능의 디버깅](debugging-r-in-visual-studio.md) | 대화형 창과의 통합을 포함합니다. | [Visual Studio의 디버깅](/visualstudio/debugger/debugger-feature-tour) |
 
 [질문과 대답](faq.md)을 참조하세요.
 
@@ -57,4 +57,4 @@ Visual Studio에서 R을 사용해 보려면
 
 1. **웃는 얼굴/찡그린 얼굴 보내기**: **R Tools** > **피드백** 메뉴에서는 문제점 진단에 도움이 될 수 있게 신속하게 피드백을 보내고 RTVS 로그 파일을 첨부할 수 있습니다. (로그를 따로 전송하려는 경우 해당 로그가 *%temp%/RTVSlogs.zip*에 기록됩니다.) **도움말** > **피드백** > **설정** 메뉴 명령을 사용하거나 설치 중에 Visual Studio 원격 분석에서 옵트아웃하면 로깅이 사용되지 않도록 설정됩니다.
 
-1. **전자 메일**: *microsoft.com의 rtvsuserfeedback*에서 팀으로 직접 피드백을 보낼 수 있습니다.
+1. **이메일**: *microsoft.com의 rtvsuserfeedback*에서 팀으로 직접 피드백을 보낼 수 있습니다.

@@ -158,28 +158,28 @@ items:
     - name: 암호화 경고
       href: cryptography-warnings.md
       items:
-      - name: 'CA5350: 취약한 암호화 알고리즘 사용 안 함'
+      - name: 'CA5350: 취약한 암호화 알고리즘을 사용하지 마세요.'
         href: ca5350-do-not-use-weak-cryptographic-algorithms.md
       - name: CA5351 끊어진 암호화 알고리즘 사용 안 함
         href: ca5351-do-not-use-broken-cryptographic-algorithms.md
     - name: 디자인 경고
       href: design-warnings.md
       items:
-      - name: 'CA1000: 정적 멤버를 제네릭 형식으로 선언하지 마십시오.'
+      - name: 'CA1000: 정적 멤버를 제네릭 형식으로 선언하지 마세요.'
         href: ca1000-do-not-declare-static-members-on-generic-types.md
       - name: 'CA1001: 삭제 가능한 필드가 있는 형식은 삭제 가능해야 합니다.'
         href: ca1001-types-that-own-disposable-fields-should-be-disposable.md
-      - name: 'CA1002: 제네릭 목록을 노출하지 마십시오.'
+      - name: 'CA1002: 제네릭 목록을 노출하지 마세요.'
         href: ca1002-do-not-expose-generic-lists.md
-      - name: 'CA1003: 제네릭 이벤트 처리기 인스턴스를 사용하십시오.'
+      - name: 'CA1003: 제네릭 이벤트 처리기 인스턴스를 사용하세요.'
         href: ca1003-use-generic-event-handler-instances.md
       - name: 'CA1004: 제네릭 메서드는 형식 매개 변수를 제공해야 합니다.'
         href: ca1004-generic-methods-should-provide-type-parameter.md
-      - name: 'CA1005: 제네릭 형식에 매개 변수를 너무 많이 사용하지 마십시오.'
+      - name: 'CA1005: 제네릭 형식에 매개 변수를 너무 많이 사용하지 마세요.'
         href: ca1005-avoid-excessive-parameters-on-generic-types.md
-      - name: 'CA1006: 멤버 시그니처에 제네릭 형식을 중첩하지 마십시오.'
+      - name: 'CA1006: 멤버 시그니처에 제네릭 형식을 중첩하지 마세요.'
         href: ca1006-do-not-nest-generic-types-in-member-signatures.md
-      - name: 'CA1007: 적합한 제네릭을 사용하십시오.'
+      - name: 'CA1007: 적합한 제네릭을 사용하세요.'
         href: ca1007-use-generics-where-appropriate.md
       - name: 'CA1008: 열거형에는 0 값이 있어야 합니다.'
         href: ca1008-enums-should-have-zero-value.md
@@ -187,77 +187,77 @@ items:
         href: ca1009-declare-event-handlers-correctly.md
       - name: 'CA1010: 컬렉션은 제네릭 인터페이스를 구현해야 합니다.'
         href: ca1010-collections-should-implement-generic-interface.md
-      - name: 'CA1011: 기본 형식을 매개 변수로 전달해 보십시오.'
+      - name: 'CA1011: 기본 형식을 매개 변수로 전달해 보세요.'
         href: ca1011-consider-passing-base-types-as-parameters.md
       - name: 'CA1012: 추상 형식에는 생성자를 사용하면 안 됩니다.'
         href: ca1012-abstract-types-should-not-have-constructors.md
-      - name: 'CA1013: 더하기 및 빼기를 오버로드할 때 같음 연산자를 오버로드하십시오.'
+      - name: 'CA1013: 더하기 및 빼기를 오버로드할 때 같음 연산자를 오버로드하세요.'
         href: ca1013-overload-operator-equals-on-overloading-add-and-subtract.md
-      - name: 'CA1014: CLSCompliantAttribute로 어셈블리 표시'
+      - name: 'CA1014: CLSCompliantAttribute로 어셈블리를 표시하세요.'
         href: ca1014-mark-assemblies-with-clscompliantattribute.md
       - name: 'CA1016: AssemblyVersionAttribute로 어셈블리 표시'
         href: ca1016-mark-assemblies-with-assemblyversionattribute.md
-      - name: 'CA1017: ComVisibleAttribute로 어셈블리 표시'
+      - name: 'CA1017: ComVisibleAttribute로 어셈블리를 표시하세요.'
         href: ca1017-mark-assemblies-with-comvisibleattribute.md
-      - name: 'CA1018: 특성을 AttributeUsageAttribute로 표시하십시오.'
+      - name: 'CA1018: AttributeUsageAttribute로 특성을 표시하세요.'
         href: ca1018-mark-attributes-with-attributeusageattribute.md
-      - name: 'CA1019: 특성 인수의 접근자를 정의하십시오.'
+      - name: 'CA1019: 특성 인수의 접근자를 정의하세요.'
         href: ca1019-define-accessors-for-attribute-arguments.md
-      - name: 'CA1020: 형식이 부족한 네임스페이스를 사용하지 마십시오.'
+      - name: 'CA1020: 형식이 부족한 네임스페이스를 사용하지 마세요.'
         href: ca1020-avoid-namespaces-with-few-types.md
-      - name: 'CA1021: out 매개 변수를 사용하지 마십시오.'
+      - name: 'CA1021: out 매개 변수를 사용하지 마세요.'
         href: ca1021-avoid-out-parameters.md
-      - name: 'CA1023: 다차원 인덱서는 사용하지 마십시오.'
+      - name: 'CA1023: 다차원 인덱서를 사용하지 마세요.'
         href: ca1023-indexers-should-not-be-multidimensional.md
-      - name: 'CA1024: 적합한 속성을 사용하십시오.'
+      - name: 'CA1024: 적합한 속성을 사용하세요.'
         href: ca1024-use-properties-where-appropriate.md
-      - name: 'CA1025: 반복 인수를 매개 변수 배열로 바꾸십시오.'
+      - name: 'CA1025: 반복 인수를 매개 변수 배열로 바꾸세요.'
         href: ca1025-replace-repetitive-arguments-with-params-array.md
       - name: 'CA1026: 기본 매개 변수를 사용하면 안 됩니다.'
         href: ca1026-default-parameters-should-not-be-used.md
-      - name: 'CA1027: 열거형을 FlagsAttribute로 표시하십시오.'
+      - name: 'CA1027: 열거형을 FlagsAttribute로 표시하세요.'
         href: ca1027-mark-enums-with-flagsattribute.md
-      - name: 'CA1028: 열거형 저장소는 Int32여야 합니다.'
+      - name: 'CA1028: 열거형 스토리지는 Int32여야 합니다.'
         href: ca1028-enum-storage-should-be-int32.md
-      - name: 'CA1030: 적절한 경우 이벤트를 사용하십시오.'
+      - name: 'CA1030: 적절한 경우 이벤트를 사용하세요.'
         href: ca1030-use-events-where-appropriate.md
-      - name: 'CA1031: 일반적인 예외 형식을 catch하지 마십시오.'
+      - name: 'CA1031: 일반적인 예외 형식을 catch하지 마세요.'
         href: ca1031-do-not-catch-general-exception-types.md
-      - name: 'CA1032: 표준 예외 생성자를 구현하십시오.'
+      - name: 'CA1032: 표준 예외 생성자를 구현하세요.'
         href: ca1032-implement-standard-exception-constructors.md
       - name: 'CA1033: 인터페이스 메서드는 자식 형식에서 호출할 수 있어야 합니다.'
         href: ca1033-interface-methods-should-be-callable-by-child-types.md
-      - name: 'CA1034: 중첩 형식은 노출하지 마십시오.'
+      - name: 'CA1034: 중첩 형식은 노출되면 안 됩니다.'
         href: ca1034-nested-types-should-not-be-visible.md
       - name: 'CA1035: ICollection 구현에 강력한 형식의 멤버가 있습니다.'
         href: ca1035-icollection-implementations-have-strongly-typed-members.md
-      - name: 'CA1036: 비교 가능한 형식에 메서드를 재정의하십시오.'
+      - name: 'CA1036: 비교 가능한 형식에 메서드를 재정의하세요.'
         href: ca1036-override-methods-on-comparable-types.md
       - name: 'CA1038: 열거자는 강력한 형식이어야 합니다.'
         href: ca1038-enumerators-should-be-strongly-typed.md
       - name: 'CA1039: 목록은 강력한 형식이어야 합니다.'
         href: ca1039-lists-are-strongly-typed.md
-      - name: 'CA1040: 빈 인터페이스를 사용하지 마십시오.'
+      - name: 'CA1040: 빈 인터페이스를 사용하지 마세요.'
         href: ca1040-avoid-empty-interfaces.md
-      - name: 'CA1041: ObsoleteAttribute 메시지를 제공하십시오.'
+      - name: 'CA1041: ObsoleteAttribute 메시지를 제공하세요.'
         href: ca1041-provide-obsoleteattribute-message.md
-      - name: 'CA1043: 인덱서에 정수 또는 문자열 인수를 사용하십시오.'
+      - name: 'CA1043: 인덱서에 정수 또는 문자열 인수를 사용하세요.'
         href: ca1043-use-integral-or-string-argument-for-indexers.md
       - name: 'CA1044: 속성은 쓰기 전용이면 안 됩니다.'
         href: ca1044-properties-should-not-be-write-only.md
-      - name: 'CA1045: 참조로 참조 형식을 전달하지 않습니다.'
+      - name: 'CA1045: 참조로 형식을 전달하지 마세요.'
         href: ca1045-do-not-pass-types-by-reference.md
-      - name: 'CA1046: 참조 형식에 같음 연산자를 오버로드하지 마십시오.'
+      - name: 'CA1046: 참조 형식에 같음 연산자를 오버로드하지 마세요.'
         href: ca1046-do-not-overload-operator-equals-on-reference-types.md
-      - name: 'CA1047: protected 멤버를 sealed 형식으로 선언하지 마십시오.'
+      - name: 'CA1047: protected 멤버를 sealed 형식으로 선언하지 마세요.'
         href: ca1047-do-not-declare-protected-members-in-sealed-types.md
-      - name: 'CA1048: 가상 멤버를 sealed 형식으로 선언하지 마십시오.'
+      - name: 'CA1048: 가상 멤버를 sealed 형식으로 선언하지 마세요.'
         href: ca1048-do-not-declare-virtual-members-in-sealed-types.md
       - name: 'CA1049: 네이티브 리소스가 있는 형식은 삭제 가능해야 합니다.'
         href: ca1049-types-that-own-native-resources-should-be-disposable.md
-      - name: 'CA1050: 네임스페이스에 형식을 선언하십시오.'
+      - name: 'CA1050: 네임스페이스에 형식을 선언하세요.'
         href: ca1050-declare-types-in-namespaces.md
-      - name: 'CA1051: 표시되는 인스턴스 필드를 선언하지 마십시오.'
+      - name: 'CA1051: 표시되는 인스턴스 필드를 선언하지 마세요.'
         href: ca1051-do-not-declare-visible-instance-fields.md
       - name: 'CA1052: 정적 소유자 형식은 sealed여야 합니다.'
         href: ca1052-static-holder-types-should-be-sealed.md
@@ -275,11 +275,11 @@ items:
         href: ca1058-types-should-not-extend-certain-base-types.md
       - name: 'CA1059: 멤버는 구체적인 특정 형식을 노출하면 안 됩니다.'
         href: ca1059-members-should-not-expose-certain-concrete-types.md
-      - name: 'CA1060: P-Invoke를 NativeMethods 클래스로 이동'
+      - name: 'CA1060: P/Invoke를 NativeMethods 클래스로 이동하세요.'
         href: ca1060-move-p-invokes-to-nativemethods-class.md
       - name: 'CA1061: 기본 클래스 메서드를 숨기지 마십시오.'
         href: ca1061-do-not-hide-base-class-methods.md
-      - name: 'CA1062: public 메서드의 인수의 유효성을 검사하십시오.'
+      - name: 'CA1062: public 메서드의 인수에 대한 유효성을 검사하세요.'
         href: ca1062-validate-arguments-of-public-methods.md
       - name: 'CA1063: IDisposable을 올바르게 구현하십시오.'
         href: ca1063-implement-idisposable-correctly.md
@@ -292,89 +292,89 @@ items:
     - name: 전역화 경고
       href: globalization-warnings.md
       items:
-      - name: 'CA1300: MessageBoxOptions를 지정하십시오.'
+      - name: 'CA1300: MessageBoxOptions를 지정하세요.'
         href: ca1300-specify-messageboxoptions.md
       - name: 'CA1301: 중복 액셀러레이터 키를 사용하지 마십시오.'
         href: ca1301-avoid-duplicate-accelerators.md
-      - name: 'CA1302: 로캘별 문자열을 하드 코딩하지 마십시오.'
+      - name: 'CA1302: 로캘별 문자열을 하드코드하지 마세요.'
         href: ca1302-do-not-hardcode-locale-specific-strings.md
-      - name: 'CA1303: 리터럴을 지역화된 매개 변수로 전달하지 마십시오.'
+      - name: 'CA1303: 리터럴을 지역화된 매개 변수로 전달하지 마세요.'
         href: ca1303-do-not-pass-literals-as-localized-parameters.md
-      - name: 'CA1304: CultureInfo를 지정하십시오.'
+      - name: 'CA1304: CultureInfo를 지정하세요.'
         href: ca1304-specify-cultureinfo.md
-      - name: 'CA1305: IFormatProvider를 지정하십시오.'
+      - name: 'CA1305: IFormatProvider를 지정하세요.'
         href: ca1305-specify-iformatprovider.md
-      - name: 'CA1306: 데이터 형식에 맞는 로캘을 설정하십시오.'
+      - name: 'CA1306: 데이터 형식에 맞는 로캘을 설정하세요.'
         href: ca1306-set-locale-for-data-types.md
-      - name: 'CA1307: StringComparison 지정'
+      - name: 'CA1307: StringComparison 지정하세요.'
         href: ca1307-specify-stringcomparison.md
-      - name: 'CA1308: 문자열을 대문자로 정규화하십시오.'
+      - name: 'CA1308: 대문자로 문자열을 정규화하세요.'
         href: ca1308-normalize-strings-to-uppercase.md
-      - name: 'CA1309: 서수 StringComparison을 사용하십시오.'
+      - name: 'CA1309: 서수 StringComparison을 사용하세요.'
         href: ca1309-use-ordinal-stringcomparison.md
-      - name: 'CA2101: P-Invoke 문자열 인수에 대해 마샬링을 지정하십시오.'
+      - name: 'CA2101: P/Invoke 문자열 인수에 대해 마샬링을 지정하세요.'
         href: ca2101-specify-marshaling-for-p-invoke-string-arguments.md
     - name: 상호 운용성 경고
       href: interoperability-warnings.md
       items:
-      - name: 'CA1400: P-Invoke 진입점이 있어야 합니다.'
+      - name: 'CA1400: P/Invoke 진입점이 있어야 합니다.'
         href: ca1400-p-invoke-entry-points-should-exist.md
-      - name: 'CA1401: P-Invoke는 노출되지 않아야 합니다.'
+      - name: 'CA1401: P/Invoke는 노출되면 안 됩니다.'
         href: ca1401-p-invokes-should-not-be-visible.md
-      - name: 'CA1402: COM 노출 인터페이스에서 오버로드를 사용하지 마십시오.'
+      - name: 'CA1402: COM 노출 인터페이스에서 오버로드를 사용하지 마세요.'
         href: ca1402-avoid-overloads-in-com-visible-interfaces.md
       - name: 'CA1403: 자동 레이아웃 형식은 COM 노출이면 안 됩니다.'
         href: ca1403-auto-layout-types-should-not-be-com-visible.md
-      - name: 'CA1404: P-Invoke 다음에 바로 GetLastError를 호출하십시오.'
+      - name: 'CA1404: P/Invoke 다음에 바로 GetLastError를 호출하세요.'
         href: ca1404-call-getlasterror-immediately-after-p-invoke.md
       - name: 'CA1405: COM 노출 형식의 기본 형식은 COM 노출이어야 합니다.'
         href: ca1405-com-visible-type-base-types-should-be-com-visible.md
-      - name: 'CA1406: Visual Basic 6 클라이언트에서 Int64 인수를 사용하지 않습니다.'
+      - name: 'CA1406: Visual Basic 6 클라이언트에서는 Int64 인수를 사용하지 마세요.'
         href: ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md
-      - name: 'CA1407: COM 노출 형식에 정적 멤버를 사용하지 마십시오.'
+      - name: 'CA1407: COM 노출 형식에 정적 멤버를 사용하지 마세요.'
         href: ca1407-avoid-static-members-in-com-visible-types.md
-      - name: 'CA1408: AutoDual ClassInterfaceType을 사용하지 마십시오.'
+      - name: 'CA1408: AutoDual ClassInterfaceType을 사용하지 마세요.'
         href: ca1408-do-not-use-autodual-classinterfacetype.md
-      - name: 'CA1409: COM 노출 형식을 만들 수 있어야 합니다.'
+      - name: 'CA1409: Com 노출 형식을 만들 수 있어야 합니다.'
         href: ca1409-com-visible-types-should-be-creatable.md
       - name: 'CA1410: COM 등록 메서드는 일치해야 합니다.'
         href: ca1410-com-registration-methods-should-be-matched.md
       - name: 'CA1411: COM 등록 메서드는 노출되면 안 됩니다.'
         href: ca1411-com-registration-methods-should-not-be-visible.md
-      - name: 'CA1412: ComSource 인터페이스를 IDispatch로 표시하십시오.'
+      - name: 'CA1412: ComSource 인터페이스를 IDispatch로 표시하세요.'
         href: ca1412-mark-comsource-interfaces-as-idispatch.md
-      - name: 'CA1413: ComVisible 값 형식에 public이 아닌 필드를 사용하지 마십시오.'
+      - name: 'CA1413: COM 노출 값 형식에 public이 아닌 필드를 사용하지 마세요.'
         href: ca1413-avoid-non-public-fields-in-com-visible-value-types.md
-      - name: 'CA1414: 부울 P-Invoke 인수를 MarshalAs로 표시하십시오.'
+      - name: 'CA1414: 부울 P/Invoke 인수를 MarshalAs로 표시하세요.'
         href: ca1414-mark-boolean-p-invoke-arguments-with-marshalas.md
-      - name: 'CA1415: P-Invoke를 올바르게 선언하십시오.'
+      - name: 'CA1415: P/Invoke를 올바르게 선언하세요.'
         href: ca1415-declare-p-invokes-correctly.md
     - name: 유지 관리 경고
       href: maintainability-warnings.md
       items:
       - name: 'CA1500: 변수 이름은 필드 이름과 달라야 합니다.'
         href: ca1500-variable-names-should-not-match-field-names.md
-      - name: 'CA1501: 상속성을 너무 많이 사용하지 마십시오.'
+      - name: 'CA1501: 상속성을 너무 많이 사용하지 마세요.'
         href: ca1501-avoid-excessive-inheritance.md
-      - name: 'CA1502: 지나치게 복잡하게 만들지 마십시오.'
+      - name: 'CA1502: 지나치게 복잡하게 만들지 마세요.'
         href: ca1502-avoid-excessive-complexity.md
-      - name: 'CA1504: 잘못된 필드 이름을 검토하십시오.'
+      - name: 'CA1504: 잘못된 필드 이름을 검토하세요.'
         href: ca1504-review-misleading-field-names.md
-      - name: 'CA1505: 유지 관리할 수 없는 코드는 사용하지 마십시오.'
+      - name: 'CA1505: 유지 관리할 수 없는 코드를 사용하지 마세요.'
         href: ca1505-avoid-unmaintainable-code.md
-      - name: 'CA1506: 클래스 결합을 지나치게 많이 사용하지 마십시오.'
+      - name: 'CA1506: 클래스를 지나치게 많이 결합하지 마세요.'
         href: ca1506-avoid-excessive-class-coupling.md
     - name: 이동성 경고
       href: mobility-warnings.md
       items:
-      - name: 'CA1600: 유휴 상태 프로세스 우선 순위를 사용하지 마십시오.'
+      - name: 'CA1600: 유휴 프로세스 우선 순위를 사용하지 마세요.'
         href: ca1600-do-not-use-idle-process-priority.md
-      - name: 'CA1601: 전원 상태 변경을 방해하는 타이머를 사용하지 마십시오.'
+      - name: 'CA1601: 전원 상태 변경을 방해하는 타이머를 사용하지 마세요.'
         href: ca1601-do-not-use-timers-that-prevent-power-state-changes.md
     - name: 이름 지정 경고
       href: naming-warnings.md
       items:
-      - name: "CA1700: 열거형 값의 이름을 'Reserved'로 지정하지 마십시오."
+      - name: "CA1700: 열거형 값의 이름을 'Reserved'로 지정하지 마세요."
         href: ca1700-do-not-name-enum-values-reserved.md
       - name: 'CA1701: 리소스 문자열 복합 단어는 정확한 대/소문자를 사용해야 합니다.'
         href: ca1701-resource-string-compound-words-should-be-cased-correctly.md
@@ -394,9 +394,9 @@ items:
         href: ca1710-identifiers-should-have-correct-suffix.md
       - name: 'CA1711: 식별자에는 올바른 접미사를 사용해야 합니다.'
         href: ca1711-identifiers-should-not-have-incorrect-suffix.md
-      - name: 'CA1712: 열거형 값에 형식 이름을 접두사로 사용하지 마십시오.'
+      - name: 'CA1712: 열거형 값에 형식 이름을 접두사로 사용하지 마세요.'
         href: ca1712-do-not-prefix-enum-values-with-type-name.md
-      - name: 'CA1713: 이벤트에 Before 또는 After 접두사를 사용하지 마십시오.'
+      - name: 'CA1713: 이벤트에 Before 또는 After 접두사를 사용하지 마세요.'
         href: ca1713-events-should-not-have-before-or-after-prefix.md
       - name: 'CA1714: 플래그 열거형에는 복수형 이름을 사용해야 합니다.'
         href: ca1714-flags-enums-should-have-plural-names.md
@@ -404,7 +404,7 @@ items:
         href: ca1715-identifiers-should-have-correct-prefix.md
       - name: 'CA1716: 식별자는 키워드와 달라야 합니다.'
         href: ca1716-identifiers-should-not-match-keywords.md
-      - name: 'CA1717: FlagsAttribute 열거형에만 복수형 이름을 사용해야 합니다.'
+      - name: 'CA1717: FlagsAttribute 열거형만 복수형 이름을 가질 수 있습니다.'
         href: ca1717-only-flagsattribute-enums-should-have-plural-names.md
       - name: 'CA1719: 매개 변수 이름은 멤버 이름과 달라야 합니다.'
         href: ca1719-parameter-names-should-not-match-member-names.md
@@ -418,87 +418,87 @@ items:
         href: ca1725-parameter-names-should-match-base-declaration.md
       - name: 'CA1724: 형식 이름은 네임스페이스와 달라야 합니다.'
         href: ca1724-type-names-should-not-match-namespaces.md
-      - name: 'CA1726: 기본 설정 용어를 사용하십시오.'
+      - name: 'CA1726: 기본 설정 용어를 사용하세요.'
         href: ca1726-use-preferred-terms.md
     - name: 성능 경고
       href: performance-warnings.md
       items:
-      - name: 'CA1800: 불필요하게 캐스팅하지 마십시오.'
+      - name: 'CA1800: 불필요하게 캐스트하지 마세요.'
         href: ca1800-do-not-cast-unnecessarily.md
-      - name: 'CA1802: 가능하면 리터럴을 사용하십시오.'
+      - name: 'CA1802: 가능하면 리터럴을 사용하세요.'
         href: ca1802-use-literals-where-appropriate.md
-      - name: 'CA1804: 사용되지 않는 로컬 항목을 제거하십시오.'
+      - name: 'CA1804: 사용되지 않는 로컬 항목을 제거하세요.'
         href: ca1804-remove-unused-locals.md
-      - name: 'CA1809: 불필요한 로컬 항목을 사용하지 마십시오.'
+      - name: 'CA1809: 불필요한 로컬 항목을 사용하지 마세요.'
         href: ca1809-avoid-excessive-locals.md
-      - name: 'CA1810: 참조 형식 정적 필드를 인라인으로 초기화하십시오.'
+      - name: 'CA1810: 참조 형식 정적 필드를 인라인으로 초기화하세요.'
         href: ca1810-initialize-reference-type-static-fields-inline.md
-      - name: 'CA1811: 호출되지 않는 전용 코드를 사용하지 마십시오.'
+      - name: 'CA1811: 호출되지 않는 전용 코드를 사용하지 마세요.'
         href: ca1811-avoid-uncalled-private-code.md
-      - name: 'CA1812: 인스턴스화되지 않은 내부 클래스를 사용하지 마십시오.'
+      - name: 'CA1812: 인스턴스화되지 않은 내부 클래스를 사용하지 마세요.'
         href: ca1812-avoid-uninstantiated-internal-classes.md
-      - name: 'CA1813: 봉인되지 않은 특성을 사용하지 마십시오.'
+      - name: 'CA1813: 봉인되지 않은 특성을 사용하지 마세요.'
         href: ca1813-avoid-unsealed-attributes.md
-      - name: 'CA1814: 다차원 배열보다 가변 배열을 사용하십시오.'
+      - name: 'CA1814: 다차원 배열보다 가변 배열을 사용하세요.'
         href: ca1814-prefer-jagged-arrays-over-multidimensional.md
-      - name: 'CA1815: 값 형식에서 Equals 또는 같음 연산자를 재정의하십시오.'
+      - name: 'CA1815: 값 형식에서 Equals 또는 같음 연산자를 재정의하세요.'
         href: ca1815-override-equals-and-operator-equals-on-value-types.md
       - name: 'CA1819: 속성은 배열을 반환해서는 안 됩니다.'
         href: ca1819-properties-should-not-return-arrays.md
-      - name: 'CA1820: 문자열 길이를 사용하여 문자열이 비었는지 테스트하십시오.'
+      - name: 'CA1820: 문자열 길이를 사용하여 빈 문자열을 테스트하세요.'
         href: ca1820-test-for-empty-strings-using-string-length.md
       - name: 'CA1821: 빈 종료자를 제거하십시오.'
         href: ca1821-remove-empty-finalizers.md
-      - name: 'CA1822: 멤버를 static으로 표시하십시오.'
+      - name: 'CA1822: 멤버를 static으로 표시하세요.'
         href: ca1822-mark-members-as-static.md
-      - name: 'CA1823: 사용되지 않는 전용 필드를 사용하지 마십시오.'
+      - name: 'CA1823: 사용되지 않는 전용 필드를 사용하지 마세요.'
         href: ca1823-avoid-unused-private-fields.md
-      - name: 'CA1824: NeutralResourcesLanguageAttribute로 어셈블리 표시'
+      - name: 'CA1824: NeutralResourcesLanguageAttribute로 어셈블리를 표시하세요.'
         href: ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md
     - name: 이식성 경고
       href: portability-warnings.md
       items:
       - name: 'CA1900: 값 형식 필드는 이식 가능해야 합니다.'
         href: ca1900-value-type-fields-should-be-portable.md
-      - name: 'CA1901: P-Invoke 선언은 이식 가능해야 합니다.'
+      - name: 'CA1901: P/Invoke 선언은 이식 가능해야 합니다.'
         href: ca1901-p-invoke-declarations-should-be-portable.md
-      - name: 'CA1903: 대상 프레임워크에서 API만 사용하십시오.'
+      - name: 'CA1903: 대상 프레임워크의 API만 사용하세요.'
         href: ca1903-use-only-api-from-targeted-framework.md
     - name: 안정성 경고
       href: reliability-warnings.md
       items:
-      - name: 'CA2000: 범위를 벗어나기 전에 개체를 삭제하십시오.'
+      - name: 'CA2000: 범위를 벗어나기 전에 개체를 삭제하세요.'
         href: ca2000-dispose-objects-before-losing-scope.md
-      - name: 'CA2001: 문제가 있는 메서드는 호출하지 마십시오.'
+      - name: 'CA2001: 문제가 있는 메서드는 호출하지 마세요.'
         href: ca2001-avoid-calling-problematic-methods.md
       - name: 'CA2002: 약한 ID를 가진 개체를 잠그지 마십시오.'
         href: ca2002-do-not-lock-on-objects-with-weak-identity.md
-      - name: 'CA2003: 파이버를 스레드로 취급하지 마십시오.'
+      - name: 'CA2003: 파이버를 스레드로 취급하지 마세요.'
         href: ca2003-do-not-treat-fibers-as-threads.md
-      - name: 'CA2004: GC.KeepAlive에 대한 호출을 제거하십시오.'
+      - name: 'CA2004: GC.KeepAlive에 대한 호출을 제거하세요.'
         href: ca2004-remove-calls-to-gc-keepalive.md
-      - name: 'CA2006: SafeHandle을 사용하여 네이티브 리소스를 캡슐화하십시오.'
+      - name: 'CA2006: SafeHandle을 사용하여 네이티브 리소스를 캡슐화하세요.'
         href: ca2006-use-safehandle-to-encapsulate-native-resources.md
     - name: 보안 경고
       href: security-warnings.md
       items:
       - name: 'CA2100: 보안상 취약한 부분이 있는지 SQL 쿼리를 검토하십시오.'
         href: ca2100-review-sql-queries-for-security-vulnerabilities.md
-      - name: 'CA2102: 일반 처리기에서 비 CLSCompliant 예외를 catch하십시오.'
+      - name: 'CA2102: 일반 처리기에서 비 CLSCompliant 예외를 catch하세요.'
         href: ca2102-catch-non-clscompliant-exceptions-in-general-handlers.md
-      - name: 'CA2103: 명령적 보안을 검토하십시오.'
+      - name: 'CA2103: 명령적 보안을 검토하세요.'
         href: ca2103-review-imperative-security.md
-      - name: 'CA2104: 변경 가능한 읽기 전용 참조 형식을 선언하지 마십시오.'
+      - name: 'CA2104: 변경 가능한 읽기 전용 참조 형식을 선언하지 마세요.'
         href: ca2104-do-not-declare-read-only-mutable-reference-types.md
       - name: 'CA2105: 배열 필드는 읽기 전용이면 안 됩니다.'
         href: ca2105-array-fields-should-not-be-read-only.md
-      - name: 'CA2106: 어설션을 안전하게 하십시오.'
+      - name: 'CA2106: 어설션을 안전하게 보호하세요.'
         href: ca2106-secure-asserts.md
-      - name: 'CA2107: Deny 및 PermitOnly 사용을 검토하십시오.'
+      - name: 'CA2107: deny 및 permit only 사용을 검토하세요.'
         href: ca2107-review-deny-and-permit-only-usage.md
       - name: 'CA2108: 값 형식에서 선언적 보안을 검토하십시오.'
         href: ca2108-review-declarative-security-on-value-types.md
-      - name: 'CA2109: 표시되는 이벤트 처리기를 검토하십시오.'
+      - name: 'CA2109: 표시되는 이벤트 처리기를 검토하세요.'
         href: ca2109-review-visible-event-handlers.md
       - name: 'CA2111: 포인터는 노출되면 안 됩니다.'
         href: ca2111-pointers-should-not-be-visible.md
@@ -506,102 +506,102 @@ items:
         href: ca2112-secured-types-should-not-expose-fields.md
       - name: 'CA2114: 메서드 보안은 형식의 상위 집합이어야 합니다.'
         href: ca2114-method-security-should-be-a-superset-of-type.md
-      - name: 'CA2115: 네이티브 리소스를 사용하는 경우에는 GC.KeepAlive를 호출하십시오.'
+      - name: 'CA2115: 네이티브 리소스를 사용하는 경우에는 GC.KeepAlive를 호출하세요.'
         href: ca2115-call-gc-keepalive-when-using-native-resources.md
       - name: 'CA2116: APTCA 메서드는 APTCA 메서드만 호출해야 합니다.'
         href: ca2116-aptca-methods-should-only-call-aptca-methods.md
       - name: 'CA2117: APTCA 형식은 APTCA 기본 형식만 확장해야 합니다.'
         href: ca2117-aptca-types-should-only-extend-aptca-base-types.md
-      - name: 'CA2118: SuppressUnmanagedCodeSecurityAttribute 사용을 검토하십시오.'
+      - name: 'CA2118: SuppressUnmanagedCodeSecurityAttribute 사용을 검토하세요.'
         href: ca2118-review-suppressunmanagedcodesecurityattribute-usage.md
-      - name: 'CA2119: private 인터페이스를 만족하는 메서드를 봉인하십시오.'
+      - name: 'CA2119: private 인터페이스를 만족하는 메서드를 봉인하세요.'
         href: ca2119-seal-methods-that-satisfy-private-interfaces.md
-      - name: 'CA2120: serialization 생성자를 안전하게 하십시오.'
+      - name: 'CA2120: serialization 생성자를 안전하게 하세요.'
         href: ca2120-secure-serialization-constructors.md
       - name: 'CA2121: 정적 생성자는 private이어야 합니다.'
         href: ca2121-static-constructors-should-be-private.md
       - name: 'CA2122: 링크 요청이 있는 메서드를 간접적으로 노출하지 마십시오.'
         href: ca2122-do-not-indirectly-expose-methods-with-link-demands.md
-      - name: 'CA2123: 재정의 링크 요청은 기본 형식의 링크 요청과 같아야 합니다.'
+      - name: 'CA2123: 재정의 링크 요청은 기본 링크 요청과 같아야 합니다.'
         href: ca2123-override-link-demands-should-be-identical-to-base.md
       - name: 'CA2124: 취약한 finally 절을 외부 try에 래핑하십시오.'
         href: ca2124-wrap-vulnerable-finally-clauses-in-outer-try.md
       - name: 'CA2126: 형식 링크 요청에는 상속 요청이 필요합니다.'
         href: ca2126-type-link-demands-require-inheritance-demands.md
-      - name: 'CA2130: 보안 위험 상수는 투명해야 합니다.'
+      - name: 'CA2130: 보안에 중요한 상수는 투명해야 합니다.'
         href: ca2130-security-critical-constants-should-be-transparent.md
-      - name: 'CA2131: 보안에 중요한 형식은 형식 등가에 참여할 수 없습니다.'
+      - name: 'CA2131: 보안에 중요한 형식은 형식 동등에 참여할 수 없습니다.'
         href: ca2131-security-critical-types-may-not-participate-in-type-equivalence.md
-      - name: 'CA2132: 기본 생성자는 최소한 기본 형식 기본 생성자만큼 중요해야 합니다.'
+      - name: 'CA2132: 기본 생성자는 기본 형식의 기본 생성자 이상으로 중요해야 합니다.'
         href: ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors.md
-      - name: 'CA2133: 대리인은 투명도가 일관된 메서드에 바인딩해야 합니다.'
+      - name: 'CA2133: 대리자는 투명도가 일관된 메서드에 바인딩되어야 합니다.'
         href: ca2133-delegates-must-bind-to-methods-with-consistent-transparency.md
-      - name: 'CA2134: 메서드는 기본 메서드를 재정의할 때 일관성 있는 방식을 유지해야 합니다.'
+      - name: 'CA2134: 메서드는 기본 메서드를 재정의할 때 일관된 투명도를 유지해야 합니다.'
         href: ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods.md
-      - name: 'CA2135: 수준 2 어셈블리는 LinkDemands를 포함해서는 안 됩니다.'
+      - name: 'CA2135: 수준 2 어셈블리는 LinkDemands를 포함할 수 없습니다.'
         href: ca2135-level-2-assemblies-should-not-contain-linkdemands.md
-      - name: 'CA2136: 멤버는 충돌하는 투명도 주석을 가져서는 안 됩니다.'
+      - name: 'CA2136: 멤버는 충돌하는 투명도 주석을 포함할 수 없습니다.'
         href: ca2136-members-should-not-have-conflicting-transparency-annotations.md
-      - name: 'CA2137: 투명한 메서드는 안정형 IL만 포함해야 합니다.'
+      - name: 'CA2137: 투명 메서드에는 확인할 수 있는 IL만 포함되어야 합니다.'
         href: ca2137-transparent-methods-must-contain-only-verifiable-il.md
-      - name: 'CA2138: 투명한 메서드는 SuppressUnmanagedCodeSecurity 특성을 가진 메서드를 호출해서는 안 됩니다.'
+      - name: 'CA2138: 투명 메서드는 SuppressUnmanagedCodeSecurity 특성을 사용하여 메서드를 호출해서는 안 됩니다.'
         href: ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md
-      - name: 'CA2139: 투명한 메서드는 HandleProcessCorruptingExceptions 특성을 사용할 수 없습니다.'
+      - name: 'CA2139: 투명 메서드는 HandleProcessCorruptingExceptions 특성을 사용할 수 없습니다.'
         href: ca2139-transparent-methods-may-not-use-the-handleprocesscorruptingexceptions-attribute.md
       - name: 'CA2140: 투명 코드는 보안에 중요한 항목을 참조해서는 안 됩니다.'
         href: ca2140-transparent-code-must-not-reference-security-critical-items.md
       - name: 'CA2141: 투명한 메서드는 LinkDemands를 충족해서는 안 됩니다'
         href: ca2141-transparent-methods-must-not-satisfy-linkdemands.md
-      - name: 'CA2142: 투명한 코드는 LinkDemands를 사용하여 보호해서는 안 됩니다.'
+      - name: 'CA2142: 투명 코드는 LinkDemands로 보호될 수 없습니다.'
         href: ca2142-transparent-code-should-not-be-protected-with-linkdemands.md
-      - name: 'CA2143: 투명한 메서드는 보안 요청을 사용해서는 안 됩니다.'
+      - name: 'CA2143: 투명 메서드는 보안 요청을 사용할 수 없습니다.'
         href: ca2143-transparent-methods-should-not-use-security-demands.md
-      - name: 'CA2144: 투명 코드는 바이트 배열에서 어셈블리를 로드해서는 안 됩니다.'
+      - name: 'CA2144: 투명 코드는 바이트 배열에서 어셈블리를 로드할 수 없습니다.'
         href: ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays.md
-      - name: 'CA2145: 투명한 메서드는 SuppressUnmanagedCodeSecurityAttribute로 데코레이팅해서는 안 됩니다.'
+      - name: 'CA2145: 투명 메서드는 SuppressUnmanagedCodeSecurityAttribute 특성으로 데코레이팅할 수 없습니다.'
         href: ca2145-transparent-methods-should-not-be-decorated-with-the-suppressunmanagedcodesecurityattribute.md
-      - name: 'CA2146: 형식은 최소한 기본 형식 및 인터페이스만큼 중요해야 합니다.'
+      - name: 'CA2146: 형식은 기본 형식 및 인터페이스 이상으로 중요해야 합니다.'
         href: ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md
       - name: 'CA2147: 투명 메서드는 보안 어설션을 사용할 수 없습니다.'
         href: ca2147-transparent-methods-may-not-use-security-asserts.md
-      - name: 'CA2149: 투명한 메서드는 네이티브 코드를 호출해서는 안 됩니다.'
+      - name: 'CA2149: 투명 메서드는 네이티브 코드를 호출해서는 안 됩니다.'
         href: ca2149-transparent-methods-must-not-call-into-native-code.md
-      - name: 'CA2151: 중요한 형식이 포함된 필드는 보안에 중요한 필드여야 함'
+      - name: 'CA2151: 중요한 형식이 포함된 필드는 보안에 중요한 필드여야 합니다.'
         href: ca2151-fields-with-critical-types-should-be-security-critical.md
       - name: 'CA5122: P-Invoke 선언은 안전에 중요한 선언이 아니어야 합니다.'
         href: ca5122-p-invoke-declarations-should-not-be-safe-critical.md
-      - name: 'CA2153: 손상된 상태 예외 처리 방지'
+      - name: 'CA2153: 손상된 상태 예외를 처리하지 마세요.'
         href: ca2153-avoid-handling-corrupted-state-exceptions.md
-      - name: 'CA3075: 안전하지 않은 DTD 처리'
+      - name: 'CA3075: DTD 처리가 안전하지 않습니다.'
         href: ca3075-insecure-dtd-processing.md
-      - name: 'CA3076: 안전하지 않은 XSLT 스크립트 실행'
+      - name: 'CA3076: XSLT 스크립트 실행이 안전하지 않습니다.'
         href: ca3076-insecure-xslt-script-execution.md
-      - name: 'CA3077: API 디자인, XML 문서 및 XML 텍스트 판독기의 안전하지 않은 처리'
+      - name: 'CA3077: API 디자인, XML 문서 및 XML 텍스트 판독기의 처리가 안전하지 않습니다.'
         href: ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md
-      - name: 'CA3147: ValidateAntiForgeryToken을 사용하여 동사 처리기 표시'
+      - name: 'CA3147: ValidateAntiForgeryToken을 사용하여 동사 처리기를 표시하세요.'
         href: ca3147-mark-verb-handlers-with-validateantiforgerytoken.md
     - name: 사용법 경고
       href: usage-warnings.md
       items:
-      - name: 'CA1801: 사용되지 않은 매개 변수를 검토하십시오.'
+      - name: 'CA1801: 사용되지 않은 매개 변수를 검토하세요.'
         href: ca1801-review-unused-parameters.md
-      - name: 'CA1806: 메서드 결과를 무시하지 마십시오.'
+      - name: 'CA1806: 메서드 결과를 무시하지 마세요.'
         href: ca1806-do-not-ignore-method-results.md
-      - name: 'CA1816: GC.SuppressFinalize를 올바르게 호출하십시오.'
+      - name: 'CA1816: GC.SuppressFinalize를 올바르게 호출하세요.'
         href: ca1816-call-gc-suppressfinalize-correctly.md
       - name: 'CA2200: 스택 정보를 유지하도록 다시 throw하십시오.'
         href: ca2200-rethrow-to-preserve-stack-details.md
-      - name: 'CA2201: 예약된 예외 형식을 발생시키지 마십시오.'
+      - name: 'CA2201: 예약된 예외 형식을 발생시키지 마세요.'
         href: ca2201-do-not-raise-reserved-exception-types.md
       - name: 'CA2202: 개체를 여러 번 삭제하지 마십시오.'
         href: ca2202-do-not-dispose-objects-multiple-times.md
-      - name: 'CA2204: 리터럴의 철자가 맞아야 합니다.'
+      - name: 'CA2204: 리터럴의 맞춤법이 정확해야 합니다.'
         href: ca2204-literals-should-be-spelled-correctly.md
-      - name: 'CA2205: Win32 API에 있는 동일한 기능의 관리되는 항목을 사용하십시오.'
+      - name: 'CA2205: Win32 API의 동일한 관리형 기능을 사용하세요.'
         href: ca2205-use-managed-equivalents-of-win32-api.md
-      - name: 'CA2207: 값 형식 정적 필드를 인라인으로 초기화하십시오.'
+      - name: 'CA2207: 값 형식 정적 필드 인라인을 초기화하십시오.'
         href: ca2207-initialize-value-type-static-fields-inline.md
-      - name: 'CA2208: 인수 예외를 올바르게 인스턴스화하십시오.'
+      - name: 'CA2208: 인수 예외를 올바르게 인스턴스화하세요.'
         href: ca2208-instantiate-argument-exceptions-correctly.md
       - name: 'CA2211: 비상수 필드는 노출되면 안 됩니다.'
         href: ca2211-non-constant-fields-should-not-be-visible.md
@@ -615,21 +615,21 @@ items:
         href: ca2215-dispose-methods-should-call-base-class-dispose.md
       - name: 'CA2216: 삭제 가능한 형식은 종료자를 선언해야 합니다.'
         href: ca2216-disposable-types-should-declare-finalizer.md
-      - name: 'CA2217: 열거형을 FlagsAttribute로 표시하지 마십시오.'
+      - name: 'CA2217: 열거형을 FlagsAttribute로 표시하지 마세요.'
         href: ca2217-do-not-mark-enums-with-flagsattribute.md
-      - name: 'CA2218: Equals를 재정의할 때 GetHashCode를 재정의하십시오.'
+      - name: 'CA2218: Equals를 재정할 때 GetHashCode를 재정의하세요.'
         href: ca2218-override-gethashcode-on-overriding-equals.md
-      - name: 'CA2219: exception 절에서 예외를 발생시키지 마십시오.'
+      - name: 'CA2219: exception 절에서 예외를 발생시키지 마세요.'
         href: ca2219-do-not-raise-exceptions-in-exception-clauses.md
       - name: 'CA2220: 종료자는 기본 클래스 종료자를 호출해야 합니다.'
         href: ca2220-finalizers-should-call-base-class-finalizer.md
       - name: 'CA2221: 종료자는 protected여야 합니다.'
         href: ca2221-finalizers-should-be-protected.md
-      - name: 'CA2222: 상속된 멤버 노출 수준을 낮추지 마십시오.'
+      - name: 'CA2222: 상속된 멤버 노출 수준을 낮추지 마세요.'
         href: ca2222-do-not-decrease-inherited-member-visibility.md
       - name: 'CA2223: 멤버는 반환 형식 이외의 것도 달라야 합니다.'
         href: ca2223-members-should-differ-by-more-than-return-type.md
-      - name: 'CA2224: 같음 연산자를 오버로드할 때 Equals를 재정의하십시오.'
+      - name: 'CA2224: 같음 연산자를 오버로드할 때 Equals를 재정의하세요.'
         href: ca2224-override-equals-on-overloading-operator-equals.md
       - name: 'CA2225: 연산자 오버로드에는 명명된 대체 항목이 있습니다.'
         href: ca2225-operator-overloads-have-named-alternates.md
@@ -637,11 +637,11 @@ items:
         href: ca2226-operators-should-have-symmetrical-overloads.md
       - name: 'CA2227: 컬렉션 속성은 읽기 전용이어야 합니다.'
         href: ca2227-collection-properties-should-be-read-only.md
-      - name: 'CA2228: 릴리스되지 않은 리소스 형식을 제공하지 마십시오.'
+      - name: 'CA2228: 릴리스되지 않은 리소스 형식을 제공하지 마세요.'
         href: ca2228-do-not-ship-unreleased-resource-formats.md
       - name: 'CA2229: serialization 생성자를 구현하십시오.'
         href: ca2229-implement-serialization-constructors.md
-      - name: 'CA2230: 가변 인수로 params를 사용하십시오.'
+      - name: 'CA2230: 가변 인수로 params를 사용하세요.'
         href: ca2230-use-params-for-variable-arguments.md
       - name: 'CA2231: ValueType.Equals를 재정의할 때 같음 연산자를 오버로드하십시오.'
         href: ca2231-overload-operator-equals-on-overriding-valuetype-equals.md
@@ -649,21 +649,21 @@ items:
         href: ca2232-mark-windows-forms-entry-points-with-stathread.md
       - name: 'CA2233: 연산은 오버플로되지 않아야 합니다.'
         href: ca2233-operations-should-not-overflow.md
-      - name: 'CA2234: 문자열 대신 System.Uri 개체를 전달하십시오.'
+      - name: 'CA2234: 문자열 대신 System.Uri 개체를 전달하세요.'
         href: ca2234-pass-system-uri-objects-instead-of-strings.md
       - name: 'CA2235: 모두 serialize할 수 없는 필드로 표시하십시오.'
         href: ca2235-mark-all-non-serializable-fields.md
       - name: 'CA2236: ISerializable 형식에서 기본 클래스 메서드를 호출하십시오.'
         href: ca2236-call-base-class-methods-on-iserializable-types.md
-      - name: 'CA2237: ISerializable 형식을 SerializableAttribute로 표시하십시오.'
+      - name: 'CA2237: SerializableAttribute로 ISerializable 형식 표시'
         href: ca2237-mark-iserializable-types-with-serializableattribute.md
       - name: 'CA2238: serialization 메서드를 올바르게 구현하십시오.'
         href: ca2238-implement-serialization-methods-correctly.md
-      - name: 'CA2239: 선택적 필드에 deserialization 메서드를 제공하십시오.'
+      - name: 'CA2239: 선택적 필드에 deserialization 메서드를 제공하세요.'
         href: ca2239-provide-deserialization-methods-for-optional-fields.md
       - name: 'CA2240: ISerializable을 올바르게 구현하십시오.'
         href: ca2240-implement-iserializable-correctly.md
-      - name: 'CA2241: 형식 메서드에 올바른 인수를 제공하십시오.'
+      - name: 'CA2241: 서식 지정 메서드에 올바른 인수를 제공하십시오.'
         href: ca2241-provide-correct-arguments-to-formatting-methods.md
       - name: 'CA2242: NaN에 대해 정확하게 테스트하십시오.'
         href: ca2242-test-for-nan-correctly.md
@@ -708,10 +708,16 @@ items:
       href: C26417.md
     - name: C26418
       href: C26418.md
+    - name: C26426
+      href: C26426.md
+    - name: C26427
+      href: C26427.md
     - name: C26429
       href: C26429.md
     - name: C26430
       href: C26430.md
+    - name: C26431
+      href: C26431.md
     - name: C26432
       href: C26432.md
     - name: C26433
@@ -756,6 +762,10 @@ items:
       href: C26453.md
     - name: C26454
       href: C26454.md
+    - name: C26455
+      href: C26455.md
+    - name: C26456
+      href: C26456.md
     - name: C26460
       href: C26460.md
     - name: C26461
@@ -780,10 +790,26 @@ items:
       href: C26474.md
     - name: C26475
       href: C26475.md
+    - name: C26476
+      href: C26476.md
+    - name: C26477
+      href: C26477.md
+    - name: C26481
+      href: C26481.md
     - name: C26482
       href: C26482.md
     - name: C26483
       href: C26483.md
+    - name: C26485
+      href: C26485.md
+    - name: C26486
+      href: C26486.md
+    - name: C26487
+      href: C26487.md
+    - name: C26488
+      href: C26488.md
+    - name: C26489
+      href: C26489.md
     - name: C26490
       href: C26490.md
     - name: C26491
@@ -1377,7 +1403,7 @@ items:
       href: c28350.md
     - name: C28351
       href: c28351.md
-  - name: 코드 분석 응용 프로그램 오류
+  - name: 코드 분석 애플리케이션 오류
     href: code-analysis-application-errors.md
     items:
     - name: CA0001
@@ -1434,9 +1460,9 @@ items:
       href: ca0505.md
     - name: FxCopCmd 오류
       href: fxcopcmd-errors.md
-ms.openlocfilehash: ec61163b70d1e76abc4b387eb645eb9b11e36374
-ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
+ms.openlocfilehash: 3b48cf2bd9f292a379eee34e3928698e33145893
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46135674"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648180"
