@@ -1,8 +1,7 @@
 ---
-title: 'CA1300: MessageBoxOptions를 지정하십시오.'
+title: 'CA1300: MessageBoxOptions를 지정하세요.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - SpecifyMessageBoxOptions
@@ -19,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 815fe7b7f839adeb3204e33bb532b70909d92b53
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 6b72d40bbb2f83eeb8a402b2d389a941f64bfef2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056389"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845378"
 ---
-# <a name="ca1300-specify-messageboxoptions"></a>CA1300: MessageBoxOptions를 지정하십시오.
+# <a name="ca1300-specify-messageboxoptions"></a>CA1300: MessageBoxOptions를 지정하세요.
 
 |||
 |-|-|
@@ -51,7 +50,7 @@ ms.locfileid: "37056389"
 
 오른쪽에서 왼쪽 읽기 순서를 사용 하는 문화권에 대 한 코드 라이브러리를 지역화할 수는 경우이 규칙에서 경고를 표시 하지 않아도 안전 합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 문화권의 읽기 순서에 대 한 적합 한 옵션이 있는 메시지 상자를 표시 하는 메서드를 보여 줍니다. 표시 되지 않는 리소스 파일, 예제를 빌드하려면 필요 합니다. 리소스 파일 없이 예제를 빌드하려면 및 오른쪽에서 왼쪽 기능을 테스트 하려면 예제의 주석을 따르세요.
 

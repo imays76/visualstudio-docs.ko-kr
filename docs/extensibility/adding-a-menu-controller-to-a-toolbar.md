@@ -1,9 +1,6 @@
 ---
 title: 도구 모음에 메뉴 컨트롤러 추가 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - toolbars [Visual Studio], adding menu controllers
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93bf6af51488b5609f24c5664dee040ea086c26c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 13a1fbd07498f77cde5004dc23df9a2edbfb2e92
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867264"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852994"
 ---
 # <a name="add-a-menu-controller-to-a-toolbar"></a>도구 모음에 메뉴 컨트롤러 추가
 이 연습은 합니다 [도구 창에 도구 모음을 추가](../extensibility/adding-a-toolbar-to-a-tool-window.md) 연습 및 도구 창 도구 모음에 메뉴 컨트롤러를 추가 하는 방법을 보여 줍니다. 여기에 나와 있는 단계도 적용할 수 있습니다에서 만든 도구 모음에는 [도구 모음 추가](../extensibility/adding-a-toolbar.md) 연습 합니다.  
@@ -116,15 +113,15 @@ ms.locfileid: "49867264"
 1.  *TWTestCommandPackageGuids.cs*, 기존 명령 Id 뒤에 세 가지 메뉴 항목에 대 한 명령 Id를 추가 합니다.  
   
     ```csharp  
-    public const int cmdidMCItem1 = 0x130;  
-    public const int cmdidMCItem2 = 0x131;  
-    public const int cmdidMCItem3 = 0x132;  
+    public const int cmdidMCItem1 = 0x130;  
+    public const int cmdidMCItem2 = 0x131;  
+    public const int cmdidMCItem3 = 0x132;  
     ```  
   
 2.  *TWTestCommand.cs*, 맨 위에 있는 다음 코드를 추가 합니다 `TWTestCommand` 클래스입니다.  
   
     ```csharp  
-    private int currentMCCommand; // The currently selected menu controller command  
+    private int currentMCCommand; // The currently selected menu controller command  
     ```  
   
 3.  TWTestCommand 생성자에 대 한 마지막 호출 후에 `AddCommand` 메서드를 동일한 처리기를 통해 각 명령에 대 한 이벤트를 라우팅하는 코드를 추가 합니다.  
@@ -139,7 +136,7 @@ ms.locfileid: "49867264"
           EventHandler(OnMCItemClicked), cmdID);  
         mc.BeforeQueryStatus += new EventHandler(OnMCItemQueryStatus);  
         commandService.AddCommand(mc);  
-        // The first item is, by default, checked.   
+        // The first item is, by default, checked.   
         if (TWTestCommandPackageGuids.cmdidMCItem1 == i)  
         {  
             mc.Checked = true;  
@@ -151,7 +148,7 @@ ms.locfileid: "49867264"
 4.  이벤트 처리기를 추가 합니다 **TWTestCommand** 선택으로 선택한 명령을 표시 하는 클래스입니다.  
   
     ```csharp  
-    private void OnMCItemQueryStatus(object sender, EventArgs e)  
+    private void OnMCItemQueryStatus(object sender, EventArgs e)  
     {  
         OleMenuCommand mc = sender as OleMenuCommand;  
         if (null != mc)  
@@ -164,7 +161,7 @@ ms.locfileid: "49867264"
 5.  사용자가 메뉴 컨트롤러에서 명령을 선택할 때 MessageBox를 표시 하는 이벤트 처리기를 추가 합니다.  
   
     ```csharp  
-    private void OnMCItemClicked(object sender, EventArgs e)  
+    private void OnMCItemClicked(object sender, EventArgs e)  
     {  
         OleMenuCommand mc = sender as OleMenuCommand;  
         if (null != mc)  
@@ -225,6 +222,6 @@ ms.locfileid: "49867264"
   
      메시지와 함께 대화 상자가 나타납니다 **선택한 메뉴 컨트롤러 항목 3**합니다. 메시지 메뉴 컨트롤러 단추의 텍스트에 해당 하는지 확인 합니다. 메뉴 컨트롤러 단추 표시 **MC 항목 3**합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [도구 창에 도구 모음 추가](../extensibility/adding-a-toolbar-to-a-tool-window.md)   
  [도구 모음 추가](../extensibility/adding-a-toolbar.md)

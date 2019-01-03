@@ -1,9 +1,6 @@
 ---
 title: 조사식 창 식 평가 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Watch window expressions
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47e875f4d288c896ace377e2844192aa5c3be275
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: b0f83be579b4be36cc2ed0b702b473c55c2196c9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232105"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822705"
 ---
 # <a name="evaluate-a-watch-window-expression"></a>조사식 창 식 평가
 > [!IMPORTANT]
@@ -45,7 +42,7 @@ ms.locfileid: "39232105"
 7.  Visual Studio 호출 [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) 다음 조사 목록에 표시 되는 식의 값을 가져옵니다.  
   
 ## <a name="parse-then-evaluate"></a>구문 분석 한 다음 평가  
- 식을 평가 하 여 프로세스를 두 단계로 세분화 됩니다 복잡 한 식을 구문 분석 하는 것은 평가 하는 것 보다 훨씬 더 오래 걸릴 수 있습니다, 되므로: 1) 식을 구문 분석 하 고 2) 구문 분석된 된 식을 평가 합니다. 이러한 방식으로 평가는 여러 번 나타날 수 있지만 식을 한 번만 구문 분석 해야 합니다. 중간 구문 분석 된 식에는 EE에서 반환 되는 [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) 에 캡슐화 되며으로 DE에서 반환 하는 개체를 [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) 개체입니다. 합니다 `IDebugExpression` 개체를 모두 평가 지연 합니다 `IDebugParsedExpression` 개체입니다.  
+ 복잡 한 식을 구문 분석 하는 것은 평가 하는 것 보다 훨씬 더 오래 걸릴 수 있습니다, 되므로 식을 평가 하 여 프로세스 두 단계로 세분화 됩니다. 1) 구문 분석 된 식 및 2) 구문 분석된 된 식을 평가합니다. 이러한 방식으로 평가는 여러 번 나타날 수 있지만 식을 한 번만 구문 분석 해야 합니다. 중간 구문 분석 된 식에는 EE에서 반환 되는 [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) 에 캡슐화 되며으로 DE에서 반환 하는 개체를 [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) 개체입니다. 합니다 `IDebugExpression` 개체를 모두 평가 지연 합니다 `IDebugParsedExpression` 개체입니다.  
   
 > [!NOTE]
 >  Visual Studio에서는이 가정 하는 경우에이 2 단계 프로세스를 준수 하는 EE 필요 없는 EE 구문 분석 하 고 동일한 단계에서 평가할 수 있습니다 때 [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) 호출 됩니다 (이것이 MyCEE 샘플의 작동 방법, 예를 들어). 언어 복잡 한 식을 형성 되는 경우에 평가 단계에서 구문 분석 단계를 구분 하는 것이 좋습니다. 여러 식을 조사할 때 Visual Studio 디버거 성능을 향상할 수 있습니다이 표시 됩니다.  

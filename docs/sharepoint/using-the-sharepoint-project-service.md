@@ -1,9 +1,6 @@
 ---
 title: SharePoint 프로젝트 서비스 사용 | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a5d4c2950754ebbef2920720cf784084b2968a82
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: a8416d38629c8970e9cc90e0d873138970b16258
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295061"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875821"
 ---
 # <a name="use-the-sharepoint-project-service"></a>SharePoint 프로젝트 서비스 사용
   SharePoint 프로젝트 시스템에는 프로젝트 시스템과 관련된 작업을 수행하는 데 사용할 수 있는 프로젝트 서비스가 포함되어 있습니다. 프로젝트 서비스는 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> 개체입니다.  
@@ -51,4 +48,3 @@ ms.locfileid: "51295061"
  [Visual Studio에서 SharePoint 도구 확장](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)   
  [SharePoint의 프로그래밍 모델 개요 도구 확장](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)   
  [방법: DTE 개체에서 서비스 가져오기](https://msdn.microsoft.com/library/bb166401.aspx)  
-  

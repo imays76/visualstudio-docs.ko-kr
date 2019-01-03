@@ -1,9 +1,6 @@
 ---
 title: '방법: Visual Studio 2017로 확장성 프로젝트 마이그레이션 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/09/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 8ca07b00-a3ff-40ab-b647-c0a93b55e86a
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 195d63e5ddb8b8536c1d0c1c4197270f5b3aa508
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: 22fdb969112278fafb636e0162db4ebc93b9a657
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826819"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820412"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>방법: Visual Studio 2017로 확장성 프로젝트 마이그레이션
 
@@ -57,7 +54,7 @@ Microsoft.VSSDK.BuildTools NuGet 참조를 업데이트 합니다.
 
 Visual Studio의 설치를 사용자의 확장을 실행 하는 데 필요한 모든 어셈블리를 갖도록 하려면 확장 매니페스트 파일에서 모든 필수 구성 요소 또는 패키지를 지정 합니다. 사용자가 확장을 설치 하려고 합니다 VSIXInstaller가 모든 필수 구성 요소는 설치 되어 있는지 확인 합니다. 일부 값이 없는 경우 확장 설치 프로세스의 일부로 누락 된 구성 요소를 설치 하려면 사용자 라는 메시지가 표시 됩니다.
 
->**참고:** 최소한 모든 확장으로 지정 해야 Visual Studio 핵심 편집기 구성 요소를 필수 구성 요소입니다.
+>**참고:** 여기에 최소한 모든 확장의 필수 구성 요소로 Visual Studio 핵심 편집기 구성 요소를 지정 해야 합니다.
 
 * 확장 매니페스트 파일 편집 (일반적으로 호출 *source.extension.vsixmanifest*).
 * 확인 `InstallationTarget` 15.0을 포함 합니다.
@@ -97,21 +94,21 @@ Visual Studio의 설치를 사용자의 확장을 실행 하는 데 필요한 �
 * 드롭다운을 클릭 **이름을** 원하는 필수 구성 요소를 선택 합니다.
 * 필요한 경우 버전을 업데이트 합니다.
 
-  >참고: 버전 필드는 최대 범위에 걸쳐 (하지만 제외)를 사용 하 여 현재 설치 된 구성 요소를 미리 채울 수 있습니다 다음 주 버전 구성 요소입니다.
+  >참고: 버전 필드는 최대 범위에 걸쳐 (하지만 제외)를 사용 하 여 현재 설치 된 구성 요소의 버전을 사용 하 여 미리 채워진 될 구성 요소의 다음 주 버전.
 
   ![roslyn 필수 구성 요소를 추가 합니다.](media/add-roslyn-prerequisite.png)
 
-* 키를 눌러 **확인**합니다.
+* **확인**을 누릅니다.
 
 ## <a name="update-debug-settings-for-the-project"></a>프로젝트 디버그 설정 업데이트
 
 Visual Studio의 실험적 인스턴스에서 확장 프로그램을 디버그 하려는 경우 확인에 대 한 프로젝트 설정 **디버그** > **작업을 시작** 에 **외부 시작 프로그램:** 값으로 설정 합니다 *devenv.exe* Visual Studio 2017 설치의 파일입니다.
 
-유사할 수 있습니다: *C:\Program Files (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\devenv.exe*
+것 처럼 보일 수 있습니다. *C:\Program 파일 (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\devenv.exe*
 
 ![시작 외부 프로그램](media/start-external-program.png)
 
->**참고:** 디버깅 시작 작업은 일반적으로에 저장 합니다 *. csproj.user* 파일입니다. 이 파일은 일반적으로에 포함 합니다 *.gitignore* 파일 하 고 따라서 일반적으로 함께 저장 되지 않습니다 소스 제어 하고자 하는 경우 다른 프로젝트 파일입니다. 이와 같이 솔루션이 소스 제어에서 새가 끌어온 것 프로젝트 시작 작업에 대 한 설정 값이 없는 것입니다. Visual Studio 2017을 사용 하 여 만든 새 VSIX 프로젝트를 *. csproj.user* 현재 Visual Studio 설치 디렉터리를 가리키는 기본값을 사용 하 여 만든 파일입니다. 그러나 v2 VSIX 확장으로 마이그레이션하는 경우 것입니다를 *. csproj.user* 파일에는 이전 Visual Studio 버전의 설치 디렉터리에 대 한 참조가 포함 됩니다. 값을 설정 **디버그** > **작업을 시작** 확장 프로그램을 디버그 하려는 경우 시작 하려면 올바른 Visual Studio 실험적 인스턴스를 사용 하면 됩니다.
+>**참고:** 디버그 시작 작업은 일반적으로에 저장 합니다 *. csproj.user* 파일입니다. 이 파일은 일반적으로에 포함 합니다 *.gitignore* 파일 하 고 따라서 일반적으로 함께 저장 되지 않습니다 소스 제어 하고자 하는 경우 다른 프로젝트 파일입니다. 이와 같이 솔루션이 소스 제어에서 새가 끌어온 것 프로젝트 시작 작업에 대 한 설정 값이 없는 것입니다. Visual Studio 2017을 사용 하 여 만든 새 VSIX 프로젝트를 *. csproj.user* 현재 Visual Studio 설치 디렉터리를 가리키는 기본값을 사용 하 여 만든 파일입니다. 그러나 v2 VSIX 확장으로 마이그레이션하는 경우 것입니다를 *. csproj.user* 파일에는 이전 Visual Studio 버전의 설치 디렉터리에 대 한 참조가 포함 됩니다. 값을 설정 **디버그** > **작업을 시작** 확장 프로그램을 디버그 하려는 경우 시작 하려면 올바른 Visual Studio 실험적 인스턴스를 사용 하면 됩니다.
 
 ## <a name="check-that-the-extension-builds-correctly-as-a-vsix-v3"></a>확장 (것으로 잘못 VSIX v3) 빌드되는지 확인 합니다.
 
@@ -139,7 +136,7 @@ VSIX 설치 필요한 모든 필수 구성 요소를 사용 하 여 컴퓨터에
 * 선택 사항: 이전 버전의 Visual Studio에서 확인 합니다.
   * 이전 버전과 호환성을 증명합니다.
   * Visual Studio 2012, Visual Studio 2013, Visual Studio 2015에 대해 작동 합니다.
-* 선택 사항: 확인 VSIX 설치 관리자 버전 검사는 다양 한 버전을 제공 합니다.
+* 선택 사항: 다양 한 버전을 제공 하는 VSIX 설치 관리자 버전 검사를 확인 합니다.
   * (설치) 하는 경우 이전 버전을의 Visual Studio에 포함 되어 있습니다.
   * Visual Studio 2017에 포함 됩니다.
 
@@ -149,13 +146,13 @@ Visual Studio 최근에 열린 경우 다음과 같은 대화 상자가 표시 �
 
 프로세스 종료를 표시 될 때까지 기다리거나 작업을 수동으로 종료 합니다. 나열 된 이름으로 또는 괄호 안에 나열 된 PID를 사용 하 여 프로세스를 찾을 수 있습니다.
 
->**참고:** 이러한 프로세스가 종료 되지 않는 자동으로 Visual Studio 인스턴스에 실행 되는 동안. 다른 사용자 로부터 비롯-컴퓨터에 Visual Studio의 모든 인스턴스를 종료 한 다음 다시 시도 하 있습니다를 확인 합니다.
+>**참고:** 이러한 프로세스는 자동으로 종료 되지 Visual Studio 인스턴스에 실행 되는 동안. 다른 사용자 로부터 비롯-컴퓨터에 Visual Studio의 모든 인스턴스를 종료 한 다음 다시 시도 하 있습니다를 확인 합니다.
 
 ## <a name="check-when-missing-the-required-prerequisites"></a>필요한 필수 구성 요소를 누락 하는 경우를 확인 합니다.
 
 * 확장을 설치 하려면 컴퓨터에서 Visual Studio 2017 아닙니다 포함 된 필수 구성 요소 (위)에 정의 된 모든 구성 요소를 시도 합니다.
 * 설치 하 게 식별 하는 누락 된 구성 요소/s는 VSIXInstaller에서 필수 구성 요소로 나열 지 확인 합니다.
-* 참고: 권한 상승 해야 경우 모든 필수 구성 요소 확장을 사용 하 여 설치 해야 합니다.
+* 참고: 모든 필수 구성 요소 확장을 사용 하 여 설치 해야 하는 경우 권한 상승 해야 합니다.
 
 ![vsixinstaller 누락 된 필수 구성 요소](media/vsixinstaller-missing-prerequisite.png)
 
@@ -180,7 +177,7 @@ WPF | 관리되는 데스크톱 워크로드 핵심 | Microsoft.VisualStudio.Com
 
 ### <a name="vs2017-componentbinarymappingxlsx"></a>vs2017 ComponentBinaryMapping.xlsx
 
-Excel 시트에 4 개의 열: **구성 요소 이름**, **ComponentId**를 **버전**, 및 **이진 / 파일 이름을**입니다.  검색 하 고 특정 구성 요소 및 이진 파일을 찾을 필터를 사용할 수 있습니다.
+Excel 시트에 4 개의 열을 가지 있습니다. **구성 요소 이름**, **ComponentId**합니다 **버전**, 및 **이진 파일 이름 /** 합니다.  검색 하 고 특정 구성 요소 및 이진 파일을 찾을 필터를 사용할 수 있습니다.
 
 모든 참조에 대 한 먼저 핵심 편집기 (Microsoft.VisualStudio.Component.CoreEditor) 구성 요소에서 무엇 인지 확인 합니다.  최소한 핵심 편집기 구성 요소를 모든 확장에 대 한 필수 조건으로 지정할 필요 합니다. 참조 중 남아 있는 핵심 편집기에 있지 않은, 필터를 추가 합니다 **이진 파일 / 파일 이름을** 해당 참조의 하위 집합 중 하나라도 있는 구성 요소를 찾는 섹션.
 

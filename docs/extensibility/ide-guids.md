@@ -1,8 +1,6 @@
 ---
 title: IDE Guid | Microsoft Docs
 ms.date: 03/22/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - GUIDs, integrated development environment
@@ -13,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c041f22d8c8d18074fc485412c2d98ef096dc295
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c338ad22b9ca11b510ed331649f7264725249d1d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626298"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870390"
 ---
 # <a name="ide-guids"></a>IDE GUID
 
@@ -127,7 +125,7 @@ ms.locfileid: "42626298"
 |<xref:Microsoft.VisualStudio.VSConstants.VsPackageGuid.VsDocOutlinePackage_guid>|21af45b0-ffa5-11d0-b63f-00a0c922e851|
 |Microsoft.VisualStudio.VSConstants.SID_SVsToolboxActiveXDataProvider|35222106-bb44-11d0-8c46-00c04fc2aae2|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [관리 코드의 COM 상수](../extensibility/com-constants-in-managed-code.md)
 - [IDE 상수](../extensibility/ide-constants.md)

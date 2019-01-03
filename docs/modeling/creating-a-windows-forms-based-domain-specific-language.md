@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 01b2b906d514d8fd9042c1046ea2481faee39499
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 75c50780a8ad48fdd4766576e3d6fe94a580b777
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926685"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869929"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Windows Forms 기반 도메인별 언어 만들기
 DSL 다이어그램을 사용 하는 대신, 도메인 특정 언어 (DSL) 모델의 상태를 표시 하려면 Windows Forms를 사용할 수 있습니다. 이 항목에서는 Visual Studio Visualization and Modeling SDK를 사용 하 여 DSL을 Windows Form 바인딩을 통해 안내 합니다.
@@ -118,9 +117,9 @@ DSL 다이어그램을 사용 하는 대신, 도메인 특정 언어 (DSL) 모�
 
 1.  에 **데이터** 메뉴 선택 **데이터 소스 표시**합니다.
 
-     합니다 **데이터 원본** 창이 열립니다.
+     **데이터 원본** 창이 열립니다.
 
-     선택할 **새 데이터 소스 추가**합니다. 합니다 **데이터 소스 구성 마법사** 열립니다.
+     선택할 **새 데이터 소스 추가**합니다. **데이터 원본 구성** 마법사가 열립니다.
 
 2.  선택할 **개체**하십시오 **다음**합니다.
 

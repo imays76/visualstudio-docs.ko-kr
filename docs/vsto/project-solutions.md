@@ -1,9 +1,6 @@
 ---
 title: 프로젝트 솔루션
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9be194bb2812f46163a6844a9fa038ee79b5f0e7
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1ac5b8a8f26112a849567777cefb907c95a98656
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675160"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909777"
 ---
 # <a name="project-solutions"></a>프로젝트 솔루션
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 에서는 Microsoft Office Project용 VSTO 추가 기능을 만드는 데 사용할 수 있는 프로젝트 템플릿을 제공합니다. VSTO 추가 기능을 사용하여 Project를 자동화하거나 Project 기능을 확장하거나 Project UI(사용자 인터페이스)를 사용자 지정할 수 있습니다.  
@@ -42,7 +39,7 @@ ms.locfileid: "35675160"
   
  VSTO 추가 기능에서 Project 개체 모델에 액세스 하려면 사용 합니다 `Application` 필드는 `ThisAddIn` 프로젝트에서 클래스입니다. 합니다 `Application` 반환 필드는 `Microsoft.Office.Interop.MsProject.Application` 프로젝트의 현재 인스턴스를 나타내는 개체입니다. 자세한 내용은 [프로그램 VSTO 추가 기능](../vsto/programming-vsto-add-ins.md)합니다.  
   
- Project 개체 모델을 호출할 때 Project의 주 Interop 어셈블리에서 제공되는 형식을 사용합니다. 주 interop 어셈블리는 VSTO 추가 기능의 관리 코드와 Project의 COM 개체 모델 간의 다리 역할을 합니다. Project 주 interop 어셈블리의 모든 형식에 정의 된는 `Microsoft.Office.Interop.MSProject` 네임 스페이스입니다. 주 interop 어셈블리에 대 한 자세한 내용은 참조 하세요. [Office 솔루션 개발 개요 &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) 하 고 [Office 주 interop 어셈블리](../vsto/office-primary-interop-assemblies.md).  
+ Project 개체 모델을 호출할 때 Project의 주 Interop 어셈블리에서 제공되는 형식을 사용합니다. 주 interop 어셈블리는 VSTO 추가 기능의 관리 코드와 Project의 COM 개체 모델 간의 다리 역할을 합니다. Project 주 interop 어셈블리의 모든 형식은 `Microsoft.Office.Interop.MSProject` 네임스페이스에서 정의됩니다. 주 interop 어셈블리에 대 한 자세한 내용은 참조 하세요. [Office 솔루션 개발 개요 &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) 하 고 [Office 주 interop 어셈블리](../vsto/office-primary-interop-assemblies.md).  
   
 ## <a name="use-the-project-object-model-documentation"></a>프로젝트 개체 모델 설명서 사용  
  Project 개체 모델에 대한 자세한 내용은 Project VBA 개체 모델 참조를 참조하세요. VBA 개체 모델 참조에서는 VBA(Visual Basic for Applications) 코드로 표시되는 Project 개체 모델에 대해 설명합니다. 자세한 내용은 [Project 2010 개체 모델 참조](http://go.microsoft.com/fwlink/?LinkId=199771)합니다.  
@@ -70,12 +67,10 @@ ms.locfileid: "35675160"
  [연습: 첫 번째에 VSTO 추가 기능 프로젝트 만들기](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)   
  [VSTO 추가 기능 프로그래밍 시작](../vsto/getting-started-programming-vsto-add-ins.md)   
  [Office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
- [Vsto 추가 기능의 아키텍처](../vsto/architecture-of-vsto-add-ins.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [VSTO 추가 기능 프로그래밍](../vsto/programming-vsto-add-ins.md)   
  [Office 솔루션에서 코드를 작성 합니다.](../vsto/writing-code-in-office-solutions.md)   
  [Office 주 interop 어셈블리](../vsto/office-primary-interop-assemblies.md)   
  [Office UI 사용자 지정](../vsto/office-ui-customization.md)   
  [Project 2010 및 Office 개발의 Project Server 2010](http://go.microsoft.com/fwlink/?LinkId=199016)  
-  
-  

@@ -1,13 +1,8 @@
 ---
 title: '연습: 연결 및 초기화 폼이 있는 워크플로 만들기 | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b6aafde6fed0a1f1722c2d355499523114aaaa00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c9878da7c1384dec8d0c8aa863b0eff4252e9efe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873879"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824738"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>연습: 연결 및 초기화 폼을 사용 하 여 워크플로 만들기
   이 연습에는 연결 및 초기화 폼의 사용을 통합 하는 기본 순차 워크플로 만드는 방법을 보여 줍니다. 이 SharePoint 관리자 (연결 형식)가 처음 연결할 때 및 워크플로 (양식)가 시작 될 때 워크플로에 추가 하는 매개 변수를 사용 하도록 설정 하는 ASPX 폼입니다.  
@@ -450,7 +445,6 @@ ms.locfileid: "49873879"
   
 -   SharePoint 워크플로에 대 한 자세한 내용은 참조 하세요 [Windows SharePoint Services에서 워크플로](http://go.microsoft.com/fwlink/?LinkID=166275)합니다.  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  [SharePoint 워크플로 솔루션 만들기](../sharepoint/creating-sharepoint-workflow-solutions.md)   
  [연습: 워크플로에 응용 프로그램 페이지 추가](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)  
-  

@@ -2,7 +2,6 @@
 title: 'CA1722: 식별자에는 올바른 접두사를 사용해야 합니다.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - IdentifiersShouldNotHaveIncorrectPrefix
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ff21b8f3c12cfa9fb3dc3ef03ca2ba2040f3769
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bea94b555be5079deae5a021cb5ecbd2ccd07adb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857620"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904749"
 ---
 # <a name="ca1722-identifiers-should-not-have-incorrect-prefix"></a>CA1722: 식별자에는 올바른 접두사를 사용해야 합니다.
 
@@ -49,4 +48,4 @@ ms.locfileid: "49857620"
  이 규칙에서는 경고를 표시해야 합니다.
 
 ## <a name="related-rules"></a>관련된 규칙
- [CA1715: 식별자에는 올바른 접두사를 사용해야 합니다.](../code-quality/ca1715-identifiers-should-have-correct-prefix.md)
+ [CA1715: 식별자에는 올바른 접두사를 사용 해야 합니다.](../code-quality/ca1715-identifiers-should-have-correct-prefix.md)

@@ -2,7 +2,6 @@
 title: '방법: 사용할 XML 스키마 선택'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: d6fda3ef-d465-4788-8514-2f2d528d658c
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a04075c0625eb7b4dc899a4e183588b96eb7eadd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d49181e598c8ac6c268d1efcece43bd574003f39
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872241"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824394"
 ---
-# <a name="how-to-select-the-xml-schemas-to-use"></a>방법: 사용할 XML 스키마 선택
+# <a name="how-to-select-the-xml-schemas-to-use"></a>방법: 사용 하 여 XML 스키마 선택
 
 XML 편집기에 있는 스키마 캐시를 제공 합니다 *%InstallDir%\Xml\Schemas* 디렉터리입니다. 이 스키마 캐시에는 잘 알려진 XML 스키마가 포함되어 있으며 이 스키마는 IntelliSense 및 XML 문서 유효성 검사에 사용됩니다.
 
@@ -58,7 +57,7 @@ XML 편집기에 있는 스키마 캐시를 제공 합니다 *%InstallDir%\Xml\S
 
 3.  스키마 캐시에 추가할 스키마를 찾아 선택합니다.
 
-4.  클릭 **열려**합니다.
+4.  **열기**를 클릭합니다.
 
      스키마에 추가 하는 스키마를 캐시 하 고는 합니다 **사용 하 여** 열 값으로 설정 됩니다 **이 스키마를 사용 하 여**입니다.
 
@@ -73,7 +72,7 @@ XML 편집기에 있는 스키마 캐시를 제공 합니다 *%InstallDir%\Xml\S
     > [!NOTE]
     > 아직 남아 있으면 통해 스키마에 대 한 참조를 `schemaLocation` 특성 또는 일치 하는 `targetNamespace` 한 다음 **제거** 자동 연결으로 인해이 상황에서 작동 하지 것입니다. 이 경우 것이 좋습니다 스키마를 표시 하는 **선택한 스키마를 사용 하지 마십시오** 에 **사용 하 여** 열입니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [스키마 캐시](../xml-tools/schema-cache.md)
 - [XML 스키마 대화 상자](../xml-tools/xml-schemas-dialog-box.md)

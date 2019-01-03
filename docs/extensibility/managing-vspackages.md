@@ -1,9 +1,6 @@
 ---
 title: Vspackage 관리 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, autoloading
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14aa17f4692857d650cb3bc9fe1a3498fc4f147a
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: c07e3924db75f870910e22aee8c913f5a26a7411
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639566"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822293"
 ---
 # <a name="manage-vspackages"></a>Vspackage 관리
 대부분의 프로젝트 및 항목 템플릿을 등록 하 고 패키지를 자동으로 로드 되므로 Vspackage, 관리에 대해 걱정할 필요가 없습니다. 그러나 일부 경우에 패키지를 관리 하기 위해 좀 더 자세한 내용을 알아보려면 해야 할 수 있습니다.  
@@ -36,7 +33,7 @@ ms.locfileid: "39639566"
  Vspackage는 CMDUICONTEXT GUID 켜져 특정 autoload를 설정할 수 있습니다. 자세한 내용은 [부하 Vspackage](../extensibility/loading-vspackages.md)합니다.  
   
 ## <a name="use-asyncpackage-to-load-vspackages-in-the-background"></a>AsyncPackage를 사용 하 여 백그라운드에서 Vspackage를 로드 합니다.  
- `AsyncPackage` 클래스를 사용 하면 Visual Studio에서 UI 응답성 향상에 대 한 백그라운드 스레드에서 패키지 로드 합니다. 자세한 내용은 [방법: 백그라운드에서 Vspackage를 로드를 사용 하 여 AsyncPackage](../extensibility/how-to-use-asyncpackage-to-load-vspackages-in-the-background.md)합니다.  
+ `AsyncPackage` 클래스를 사용 하면 Visual Studio에서 UI 응답성 향상에 대 한 백그라운드 스레드에서 패키지 로드 합니다. 자세한 내용은 [방법: AsyncPackage를 사용 하 여 백그라운드에서 Vspackage를 로드](../extensibility/how-to-use-asyncpackage-to-load-vspackages-in-the-background.md)합니다.  
   
 ## <a name="rule-based-ui-context-for-extensions"></a>확장에 대 한 규칙 기반 UI 컨텍스트  
  규칙 기반 UI 컨텍스트 확장 작성자를는 UI 컨텍스트의 활성화 되 고 연결된 Vspackage 로드 정확한 조건을 정의할 수 있습니다. 자세한 내용은 [방법: Visual Studio 확장에 대 한 규칙 기반 UI 컨텍스트를 사용 하 여](../extensibility/how-to-use-rule-based-ui-context-for-visual-studio-extensions.md)입니다.  
@@ -45,7 +42,7 @@ ms.locfileid: "39639566"
 확장 시작 및 솔루션 로드 성능에 영향을 줄 수 있습니다. Visual Studio 확장 impact는 어떻게 계산 및 방식을 분석할 수 있습니다 로컬로 확장인 확장에 영향을 주는 성능으로 표시 될 수 있으며 테스트에 대해 알아봅니다. 자세한 내용은 [방법: 확장 성능 진단](how-to-diagnose-extension-performance.md)합니다. 
   
 ## <a name="troubleshoot-vspackages"></a>Vspackage 문제 해결  
- Vspackage 로드 안 함 또는 오류가 발생 하는 문제 해결을 위한 기술을 확인: [Vspackage 문제 해결](../extensibility/troubleshooting-vspackages.md)  
+ Vspackage 로드 안 함 또는 오류가 발생 하는 문제 해결을 위한 기술을 확인 합니다. [Vspackage 문제 해결](../extensibility/troubleshooting-vspackages.md)  
   
 ## <a name="see-also"></a>참고자료  
  [VSPackage](../extensibility/internals/vspackages.md)

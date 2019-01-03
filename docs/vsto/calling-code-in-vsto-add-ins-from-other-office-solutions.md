@@ -1,9 +1,6 @@
 ---
 title: 다른 Office 솔루션에서 VSTO 추가 기능의 코드 호출
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9290fcdd705f6f38b4b7e91e46d5b635f1e309ff
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: 5c347000d75beb628c01c5a8f8275d4755db776f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248100"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910271"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>다른 Office 솔루션에서 VSTO 추가 기능의 코드 호출
   VSTO 추가 기능의 개체를 다른 Microsoft Office 솔루션을 비롯한 다른 솔루션에 노출할 수 있습니다. 이는 해당 VSTO 추가 기능이 다른 솔루션에서 사용하도록 하려는 서비스를 제공하는 경우에 유용합니다. 예를 들어, 웹 서비스의 재무 데이터에 대해 계산을 수행 하는 Microsoft Office Excel 용 VSTO 추가 기능에 있는 경우 다른 솔루션은 Excel VSTO 추가 기능을 런타임에 호출 하 여 이러한 계산을 수행할 수 있습니다.  
@@ -41,15 +38,15 @@ ms.locfileid: "53248100"
 ## <a name="types-of-solutions-that-can-call-code-in-an-add-in"></a>추가 기능에서 코드를 호출할 수 있는 솔루션의 형식  
  VSTO 추가 기능에서 솔루션의 다음 형식으로 개체를 노출할 수 있습니다.  
   
--   VSTO 추가 기능과 동일한 응용 프로그램 프로세스에서 로드되는 문서의 VBA(Visual Basic for Applications) 코드  
+-   VSTO 추가 기능과 동일한 애플리케이션 프로세스에서 로드되는 문서의 VBA(Visual Basic for Applications) 코드  
   
--   VSTO 추가 기능과 동일한 응용 프로그램 프로세스에서 로드되는 문서 수준 사용자 지정  
+-   VSTO 추가 기능과 동일한 애플리케이션 프로세스에서 로드되는 문서 수준 사용자 지정  
   
 -   Visual Studio의 Office 프로젝트 템플릿을 사용하여 만든 다른 VSTO 추가 기능  
   
 -   COM VSTO 추가 기능(즉, <xref:Extensibility.IDTExtensibility2> 인터페이스를 직접 구현하는 VSTO 추가 기능)  
   
--   VSTO 추가 기능과 다른 프로세스에서 실행되는 솔루션(이러한 유형의 솔루션을 *OOP(Out-of-Process) 클라이언트*라고도 함). 여기에는 Windows Forms 또는 콘솔 응용 프로그램 같은 Office 응용 프로그램을 자동화하는 응용 프로그램, 그리고 다른 프로세스에서 로드되는 VSTO 추가 기능이 포함됩니다.  
+-   VSTO 추가 기능과 다른 프로세스에서 실행되는 솔루션(이러한 유형의 솔루션을 *OOP(Out-of-Process) 클라이언트*라고도 함). 여기에는 Windows Forms 또는 콘솔 애플리케이션 같은 Office 애플리케이션을 자동화하는 애플리케이션, 그리고 다른 프로세스에서 로드되는 VSTO 추가 기능이 포함됩니다.  
   
 ## <a name="expose-objects-to-other-solutions"></a>다른 솔루션에 개체를 노출 합니다.  
  VSTO 추가 기능의 개체를 다른 솔루션에 노출하려면 VSTO 추가 기능에서 다음 단계를 수행합니다.  
@@ -90,7 +87,7 @@ ms.locfileid: "53248100"
 ###  <a name="outofproc"></a> Out-of-process-클라이언트에 클래스 노출  
  OOP(Out-of-Process) 클라이언트에 VSTO 추가 기능의 클래스를 노출하려면 <xref:System.Runtime.InteropServices.StandardOleMarshalObject> 에서 클래스를 파생시켜 OOP 클라이언트가 노출된 VSTO 추가 기능 개체를 호출할 수 있도록 해야 합니다. 그렇지 않은 상태에서 OOP(Out-of-Process) 클라이언트에서 노출된 개체 인스턴스를 가져오려고 하면 예기치 않게 실패할 수 있습니다.  
   
- 이 오류는 Office 응용 프로그램의 개체 모델에 대 한 모든 호출은 주 UI 스레드에서 만들어야 하지만 개체에 대 한 out-of-process-클라이언트에서 호출에 임의의 RPC (원격 프로시저 호출) 스레드에 도착 때문입니다. .NET Framework의 COM 마샬링 메커니즘은 스레드를 전환하지 않으며 대신 주 UI 스레드 대신 들어오는 RPC 스레드에서 개체에 대한 호출을 마샬링하려고 합니다. 개체가 <xref:System.Runtime.InteropServices.StandardOleMarshalObject>에서 파생되는 클래스의 인스턴스인 경우 개체에 대한 들어오는 호출은 노출된 개체가 만들어진 스레드에 대해 자동으로 마샬링되며, 이 스레드는 호스트 응용 프로그램의 주 UI 스레드가 됩니다.  
+ 이 오류는 Office 응용 프로그램의 개체 모델에 대 한 모든 호출은 주 UI 스레드에서 만들어야 하지만 개체에 대 한 out-of-process-클라이언트에서 호출에 임의의 RPC (원격 프로시저 호출) 스레드에 도착 때문입니다. .NET Framework의 COM 마샬링 메커니즘은 스레드를 전환하지 않으며 대신 주 UI 스레드 대신 들어오는 RPC 스레드에서 개체에 대한 호출을 마샬링하려고 합니다. 개체가 <xref:System.Runtime.InteropServices.StandardOleMarshalObject>에서 파생되는 클래스의 인스턴스인 경우 개체에 대한 들어오는 호출은 노출된 개체가 만들어진 스레드에 대해 자동으로 마샬링되며, 이 스레드는 호스트 애플리케이션의 주 UI 스레드가 됩니다.  
   
  Office 솔루션에서 스레드를 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [Office의 스레딩 지원](../vsto/threading-support-in-office.md)합니다.  
   
@@ -152,5 +149,3 @@ utilities.ImportData();
  [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [확장성 인터페이스를 사용 하 여 UI 기능 사용자 지정](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)  
-  
-  

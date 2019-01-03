@@ -1,9 +1,6 @@
 ---
 title: IDebugParsedExpression | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugParsedExpression
@@ -15,18 +12,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b877dd974a0b96a176b54f308a6317e7324b6ab
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eaf70cd20982f4c3f2ec469bcce798142caee287
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122316"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819525"
 ---
 # <a name="idebugparsedexpression"></a>IDebugParsedExpression
 > [!IMPORTANT]
->  Visual Studio 2015에서 구현 하는 식 계산기의 이러한 방식으로 사용 되지 않습니다. CLR 식 계산기를 구현 하는 방법에 대 한 정보를 참조 하십시오 [CLR 식 계산기](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 및 [관리 되는 식 계산기 샘플](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)합니다.  
+>  Visual Studio 2015에서 식 계산기를 구현 하는 이러한 방식으로 사용 되지 않습니다. CLR 식 계산기를 구현 하는 방법에 대 한 정보를 참조 하세요 [CLR 식 계산기](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 하 고 [관리 되는 식 계산기 샘플](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)합니다.  
   
- 이 인터페이스는 구문 분석 된 식을 평가 나타냅니다.  
+ 이 인터페이스에는 계산할 준비가 구문 분석 된 식을 나타냅니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -35,27 +32,27 @@ IDebugParsedExpression : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>구현자 참고 사항  
- 식 계산기는 구문 분석 된 식 평가 위해 준비 된 나타내기 위해이 인터페이스를 구현 합니다.  
+ 식 계산기는 평가 위한 준비 되는 구문 분석 된 식을 나타내는 데이 인터페이스를 구현 합니다.  
   
-## <a name="notes-for-callers"></a>호출자에 대 한 참고 사항  
+## <a name="notes-for-callers"></a>호출자에 대 한 정보  
  에 대 한 호출 [구문 분석](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) 이 인터페이스를 반환 합니다.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드  
- 다음 표에서의 메서드를 보여 줍니다. `IDebugParsedExpression`합니다.  
+ 다음 표에서 메서드의 `IDebugParsedExpression`합니다.  
   
 |메서드|설명|  
 |------------|-----------------|  
-|[EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)|구문 분석 된 식을 평가합니다.|  
+|[EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)|구문 분석 된 식을 계산합니다.|  
   
 ## <a name="remarks"></a>설명  
- 호출자에 게 식을 계산 하 고 준비 되 면 호출 [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) 반환 하는 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 평가의 결과 포함 하 합니다. 두 부분으로 구성 방법을 평가, 평가, 구문 분석된 된 식에 여러 번 계산 될 수 있습니다. 다음 구문 분석, 식 구문 분석 하는 시간이 오래 걸리는 과정을 무시 합니다.  
+ 호출자가 식을 계산 하는 준비 되 면 호출 [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) 반환 하는 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 평가의 결과 포함 하는 합니다. 평가 구문 분석 된 식을 여러 번 평가 될 수 있게 평가 구문 분석, 식 구문 분석의 시간이 오래 걸리는 프로세스를 무시 하려면이 두 부분으로 구성 방법  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: ee.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>참고 항목  
  [구문 분석](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)   

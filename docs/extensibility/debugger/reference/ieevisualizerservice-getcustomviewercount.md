@@ -1,9 +1,6 @@
 ---
 title: IEEVisualizerService::GetCustomViewerCount | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEEVisualizerService::GetCustomViewerCount
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a53bfccceab5771c0a0f6ac8c609089098625597
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4dea81aa97f26f7a3641ccd42e0dee3f4ef8fbbe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829991"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53901888"
 ---
 # <a name="ieevisualizerservicegetcustomviewercount"></a>IEEVisualizerService::GetCustomViewerCount
 이 메서드는이 서비스에서 사용할 수 있는 형식 시각화 도우미의 수를 가져옵니다.  
@@ -28,14 +25,14 @@ ms.locfileid: "49829991"
 ## <a name="syntax"></a>구문  
   
 ```cpp  
-HRESULT GetCustomViewerCount(  
-   ULONG* pcelt  
+HRESULT GetCustomViewerCount(  
+   ULONG* pcelt  
 );  
 ```  
   
 ```csharp  
-int GetCustomViewerCount(  
-   out uint pcelt  
+int GetCustomViewerCount(  
+   out uint pcelt  
 );  
 ```  
   

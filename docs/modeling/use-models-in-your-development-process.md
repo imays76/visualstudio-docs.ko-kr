@@ -2,7 +2,6 @@
 title: 개발 프로세스에서 모델 사용
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
 - UML, using models
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25debac1e5f2e977e5dd36ec8b4a083a1a362d1b
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: b1a507a6995ceb3c04dfc3d9daf57fa341fe6fc7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967222"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832820"
 ---
 # <a name="use-models-in-your-development-process"></a>개발 프로세스에서 모델 사용
 
@@ -133,12 +132,12 @@ Visual Studio에서 모델을 사용하여 시스템, 응용 프로그램 또는
 
 |**범주**|**링크**|
 |-|-|
-|**비디오**|![비디오 링크](../data-tools/media/playvideo.gif) [MSDN How Do I Video: 만들기 및 사용 하 여 UML 모델 및 다이어그램 (Visual Studio 2010 Ultimate) 하는 방법](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![비디오 링크](../data-tools/media/playvideo.gif) [Channel 9: Visual Studio 2010을 사용한 UML](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![비디오 링크](../data-tools/media/playvideo.gif) [MSDN 어떻게 할까요? 시리즈: UML 도구 및 확장성 (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|
+|**비디오**|![비디오를 연결할](../data-tools/media/playvideo.gif) [MSDN How Do I Video: UML 모델 및 다이어그램 (Visual Studio 2010 Ultimate) 만들기 및 사용 하는 방법](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![비디오를 연결할](../data-tools/media/playvideo.gif) [Channel 9: Visual Studio 2010을 사용한 UML](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![비디오를 연결할](../data-tools/media/playvideo.gif) [MSDN 어떻게 할까요? 시리즈: UML 도구 및 확장성 (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|
 |**포럼**|- [Visual Studio 시각화 및 모델링 도구](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Visual Studio 시각화 및 모델링 SDK(DSL 도구)](http://go.microsoft.com/fwlink/?LinkId=184721)|
 |**Blogs**|[Microsoft DevOps](https://blogs.msdn.microsoft.com/devops/)|
 |**기술 문서 및 저널**|[MSDN 아키텍처 센터](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Visual Studio 아키텍처 도구 사용 지침](../modeling/visual-studio-architecture-tooling-guidance.md)|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [Agile 개발에서 모델 사용](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
 - [앱용 모델 만들기](../modeling/create-models-for-your-app.md)

@@ -1,9 +1,6 @@
 ---
 title: 기호 공급자 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - symbol handler
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d54494a8fa23e0714769863ac0fa2e5ddc1f4c2
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: 70cd308eaf7234343f7d4c59a7696f668e4415cf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276977"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826259"
 ---
 # <a name="symbol-provider"></a>기호 공급자
 식 계산기 구현 변수와 식을 평가 하기 위해 언어 컴파일러에서 생성 된 기호화 된 디버그 정보에 액세스 해야 합니다. 기호 처리기 라고도 기호 공급자 (SP)의 인터페이스를 사용 하 여 수행 합니다.  
@@ -31,5 +28,5 @@ ms.locfileid: "39276977"
   
  에 SP, 사용자 지정 디버그 엔진에만 수행 하는 경우에 디버그 엔진의 요구에 따라 하다 면 SP를 구현할 수 있습니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [디버거 구성 요소](../../extensibility/debugger/debugger-components.md)

@@ -1,9 +1,6 @@
 ---
 title: 만들기 및 관리 모달 대화 상자 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - dialog boxes, managing in Visual Studio
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6c5a4bdcb6496bae9bf718c38bcf512fbf69756
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: f6d7366fe2cce030f47d4bbd78b4baf6e5fff81d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498751"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847664"
 ---
 # <a name="create-and-manage-modal-dialog-boxes"></a>모달 대화 상자를 만들고 설정 합니다.
-Visual Studio 내에서 모달 대화 상자를 만들 때 대화 상자의 부모 창 대화 상자 표시 되는 동안 않도록은 다음 대화 상자를 닫은 후 다시 부모 창을 사용 하도록 설정 해야 합니다. 이렇게 하지 않으면 오류가 나타날 수 있습니다: *모달 대화 상자가 활성화 되어 있으므로 Microsoft Visual Studio를 종료할 수 없습니다. 활성 대화 상자를 닫고 다시 시도하세요.*  
+Visual Studio 내에서 모달 대화 상자를 만들 때 대화 상자의 부모 창 대화 상자 표시 되는 동안 않도록은 다음 대화 상자를 닫은 후 다시 부모 창을 사용 하도록 설정 해야 합니다. 이렇게 하지 않는 경우 오류가 나타날 수 있습니다. *Microsoft Visual Studio 모달 대화 상자가 활성화 되어 있으므로 종료할 수 없습니다. 활성 대화 상자를 닫고 다시 시도하세요.*  
   
  이 작업을 수행 하는 방법은 두 가지가 있습니다. 파생 하는 WPF 대화 상자를 사용 하는 경우 권장 되는 방법은 <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>를 호출한 다음 <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow.ShowModal%2A> 대화 상자를 표시 합니다. 이 작업을 수행 하는 경우 부모 창의 모달 상태를 관리할 필요가 없습니다.  
   
@@ -71,7 +68,7 @@ Visual Studio 내에서 모달 대화 상자를 만들 때 대화 상자의 부�
     testDialog.ShowModal();  
     ```  
   
-7.  응용 프로그램을 빌드 및 실행합니다. Visual Studio의 실험적 인스턴스가 표시 됩니다. 에 **도구** 실험적 인스턴스의 메뉴 라는 명령이 표시 됩니다 **OpenDialog 호출**합니다. 이 명령은 클릭 하면 대화 상자 창이 표시 됩니다. 최소화 하 고 창을 최대화 수 있어야 합니다.  
+7.  애플리케이션을 빌드 및 실행합니다. Visual Studio의 실험적 인스턴스가 표시 됩니다. 에 **도구** 실험적 인스턴스의 메뉴 라는 명령이 표시 됩니다 **OpenDialog 호출**합니다. 이 명령은 클릭 하면 대화 상자 창이 표시 됩니다. 최소화 하 고 창을 최대화 수 있어야 합니다.  
   
 ## <a name="create-and-manage-a-dialog-box-not-derived-from-dialogwindow"></a>DialogWindow에서 파생 되지 않은 대화 상자를 만들고 설정 합니다.  
   
@@ -128,4 +125,4 @@ Visual Studio 내에서 모달 대화 상자를 만들 때 대화 상자의 부�
     }  
     ```  
   
-7.  응용 프로그램을 빌드 및 실행합니다. 에 **도구가** 메뉴 라는 명령이 표시 됩니다 **OpenDialog 호출**합니다. 이 명령은 클릭 하면 대화 상자 창이 표시 됩니다.
+7.  애플리케이션을 빌드 및 실행합니다. 에 **도구가** 메뉴 라는 명령이 표시 됩니다 **OpenDialog 호출**합니다. 이 명령은 클릭 하면 대화 상자 창이 표시 됩니다.

@@ -1,9 +1,6 @@
 ---
 title: 편집기 어댑터를 사용 하 여 새롭거나 변경 된 동작 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - adapter behavior
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2b32eeb110240cabfec5d81cc862611a0d32fe2
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: d32cad965c4165a8f81e9b880121bb54ab1738b7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639236"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53901612"
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>편집기 어댑터를 사용 하 여 새롭거나 변경 된 동작
 편집기 어댑터의 동작에 다음과 같은 차이점을 알도록 해야 Visual Studio 핵심 편집기의 이전 버전에 대해 작성 된 코드를 업데이트 하는 새로운 API를 사용 하는 대신 편집기 어댑터 (또는 shim)를 사용 하려는 경우 이전 코어 편집기 관련 하 여입니다.  
@@ -44,7 +41,7 @@ ms.locfileid: "39639236"
  WPF 모드는 두 가지 방법으로 Win32 모드에서 서로 다릅니다. 먼저 WPF 컨텍스트에서 텍스트 뷰를 호스트할 수 있습니다. WPF 창 캐스팅 하 여 액세스할 수 있습니다는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> 하 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIElementPane> 호출 및 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIElement.GetUIObject%2A>합니다. 두 번째 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetWindowHandle%2A> 여전히 반환 HWND, 하지만이 HWND의 위치를 확인 하 고 포커스를 설정에 사용할 수 있습니다. 이 편집기 창을 그리는 방법에 영향을 주지 WM_PAINT 메시지에 응답할이 HWND를 사용 하지 해야 합니다. 이 HWND 어댑터를 사용 하 여 새 코드 편집기로의 전환을 용이 하 게에 표시 됩니다. 사용 하지는 않는 것이 좋습니다 `VIF_NO_HWND_SUPPORT` 구성 요소는 HWND에서 반환 된 HWND의 제한으로 인해 작업에 필요한 경우 `GetWindowHandle` 이 모드에서.  
   
 #### <a name="pass-arrays-as-parameters-in-native-code"></a>네이티브 코드의 배열을 매개 변수로 전달  
- 가지 배열 및 개수를 포함 하는 매개 변수가 있는 레거시 편집기 API에서에서 많은 방법이 있습니다. 예제입니다.  
+ 가지 배열 및 개수를 포함 하는 매개 변수가 있는 레거시 편집기 API에서에서 많은 방법이 있습니다. 예는 다음과 같습니다.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEx.AppendViewOnlyMarkerTypes%2A>  
   
@@ -58,7 +55,7 @@ ms.locfileid: "39639236"
  버퍼 어댑터 UI 스레드에서 호출 해야 합니다. 버퍼 어댑터는 COM 마샬링 관리 코드에서 해당 호출을 바이패스 하 고 호출은 자동으로 마샬링할 수 없는 UI 스레드는 관리 되는 개체입니다.  백그라운드 스레드에서 버퍼 어댑터를 호출 하는 경우 사용 해야 <xref:System.Windows.Threading.Dispatcher.Invoke%2A> 또는 비슷한 메서드.  
   
 #### <a name="lockbuffer-methods"></a>LockBuffer 메서드  
- 모든 LockBuffer() 메서드 사용 되지 않습니다. 예제입니다.  
+ 모든 LockBuffer() 메서드 사용 되지 않습니다. 예는 다음과 같습니다.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.LockBuffer%2A>  
   

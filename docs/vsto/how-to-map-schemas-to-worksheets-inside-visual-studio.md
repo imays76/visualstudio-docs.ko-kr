@@ -3,8 +3,6 @@ title: '방법: Visual Studio 내에서 워크시트에 스키마 매핑'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +17,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 672acf2b33463ee5110dc537f14831a1c034380e
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 1be044131ab7248e971e5030f0d35467773587e1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646656"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849931"
 ---
 # <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>방법: Visual Studio 내에서 워크시트에 스키마 매핑
   워크시트 Visual Studio에서 열려 있는 동안 워크시트에 XML 스키마를 매핑할 수 있습니다. Visual Studio 외부에서 통합 문서가 열려 있을 때 사용 하는 것과 동일한 Microsoft Office Excel 도구를 사용할 수 있습니다. Office 프로젝트 이전 워크시트에 스키마 매핑 여부 Excel 솔루션을 만든 후 동일한 개체를 만듭니다.  
@@ -67,8 +65,6 @@ ms.locfileid: "53646656"
   
      Office 프로젝트를 생성 하는 반복 되는 스키마 요소를 끌면는 <xref:Microsoft.Office.Tools.Excel.ListObject> 데이터 원본에 자동으로 바인딩되지 않은 컨트롤입니다. 자세한 내용은 [에서 데이터 및 XML 스키마 문서 수준 사용자 지정](../vsto/xml-schemas-and-data-in-document-level-customizations.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [방법: Visual Studio 내부의 Word 문서에 스키마 매핑](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)   
  [문서 수준 사용자 지정의 XML 스키마 및 데이터](../vsto/xml-schemas-and-data-in-document-level-customizations.md)  
-  
-  

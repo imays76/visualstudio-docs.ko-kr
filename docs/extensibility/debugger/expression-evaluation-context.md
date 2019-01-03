@@ -1,9 +1,6 @@
 ---
 title: 식 계산 컨텍스트 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluation, context
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a01d8fd9e1ac7a439898775bc8b4b0fc933650c
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 15b7f53dddefa78ef58818d20b5ca6eafb84e207
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232496"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835739"
 ---
 # <a name="expression-evaluation-context"></a>식 계산 컨텍스트
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 디버깅 하는 **식 계산 컨텍스트**:  

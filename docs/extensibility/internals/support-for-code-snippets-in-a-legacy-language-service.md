@@ -1,9 +1,6 @@
 ---
 title: 레거시 언어 서비스의 코드 조각에 대 한 지원 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - snippets, supporting in language services
@@ -15,19 +12,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a7ad314e5a160ae280b33586fb7dfe1b42ec470f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f5437f511eda582f2de7b28cc35716b0148df254
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858110"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852955"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>레거시 언어 서비스의 코드 조각 지원
 코드 조각은 소스 파일에 삽입 되는 코드입니다. 코드 조각 자체는 XML 기반 서식 파일 필드 집합이 포함 된 경우 이러한 필드에는 코드 조각이 삽입 되 고 코드 조각 삽입 되는 컨텍스트에 따라 다른 값을 가질 수 후 강조 표시 됩니다. 코드 조각을 삽입 한 후에 즉시 코드 조각 언어 서비스에 서식을 지정할 수 있습니다.  
   
  TAB 키를 사용 하 여 탐색할 수 조각의 필드를 허용 하는 특별 한 편집 모드에서 코드 조각을 삽입 됩니다. 필드는 IntelliSense 스타일 드롭다운 메뉴를 지원할 수 있습니다. 사용자는 ENTER 또는 ESC 키를 입력 하 여 소스 파일에 코드 조각을 커밋합니다. 조각에 대 한 자세한 내용은 참조 하세요 [코드 조각](../../ide/code-snippets.md)합니다.  
   
- 레거시 언어 서비스는 VSPackage의 일부로 구현 됩니다 있지만 MEF 확장을 사용 하는 언어 서비스 기능을 구현 하는 최신 방법입니다. 자세한 내용을 참조 하세요 [연습: 코드 조각 구현](../../extensibility/walkthrough-implementing-code-snippets.md)합니다.  
+ 레거시 언어 서비스는 VSPackage의 일부로 구현 됩니다 있지만 MEF 확장을 사용 하는 언어 서비스 기능을 구현 하는 최신 방법입니다. 자세한 내용을 알아보려면 참조 [연습: 코드 조각 구현](../../extensibility/walkthrough-implementing-code-snippets.md)합니다.  
   
 > [!NOTE]
 >  편집기를 사용 하 여 새 API 최대한 빨리 시작 하는 것이 좋습니다. 언어 서비스의 성능이 향상 되 고 새 편집기 기능을 활용할 수 있습니다.  
@@ -51,7 +48,7 @@ ms.locfileid: "49858110"
 ### <a name="installing-the-snippet-files"></a>조각 파일 설치  
  언어에 대 한 모든 코드 조각은 파일당 일반적으로 하나의 코드 조각 템플릿 XML 파일에 템플릿으로 저장 됩니다. 코드 조각 템플릿을 사용 하는 XML 스키마에 대 한 내용은 참조 하세요 [코드 조각 스키마 참조](../../ide/code-snippets-schema-reference.md)합니다. 언어 ID를 사용 하 여 각 코드 조각 템플릿은 식별 되며 이 언어 ID 레지스트리에 지정 되 고 배치 됩니다는 `Language` 특성을 \<코드 > 템플릿에 태그입니다.  
   
- 코드 조각 템플릿 파일이 저장 되어 있는 두 위치는 일반적으로: 1) 언어로 설치 된 위치 및 2) 사용자의 폴더에에서 있습니다. 이러한 위치는 레지스트리에 추가 되므로 Visual Studio **코드 조각 관리자** 조각을 찾을 수 있습니다. 사용자의 폴더는 사용자가 만든 조각을 저장 됩니다.  
+ 코드 조각 템플릿 파일이 저장 되어 있는 두 위치는 일반적으로: 언어를 설치 하는 1) 위치 하 고 2) 사용자의 폴더에 있습니다. 이러한 위치는 레지스트리에 추가 되므로 Visual Studio **코드 조각 관리자** 조각을 찾을 수 있습니다. 사용자의 폴더는 사용자가 만든 조각을 저장 됩니다.  
   
  설치 된 코드 조각 템플릿 파일에 대 한 일반적인 폴더 레이아웃은 다음과 같습니다: *[InstallRoot]*\\ *[TestLanguage]* \Snippets\\ *[LCID*\Snippets 합니다.  
   
@@ -223,7 +220,7 @@ ms.locfileid: "49858110"
 ### <a name="inserting-a-code-snippet-by-using-a-shortcut"></a>바로 가기를 사용 하 여 코드 조각 삽입  
  완성 목록에서 바로 가기의 구현은 메뉴 명령 구현 보다 훨씬 더 복잡 합니다. 먼저 코드 조각 바로 가기 IntelliSense 단어 완성 목록에 추가 해야 합니다. 다음 코드 조각 바로 가기 이름을 완성 결과로 삽입 경우을 검색 해야 합니다. 조각 제목 및 바로 가기 이름을 사용 하 여 경로 가져오려면 해당 정보를 전달 하며는 마지막으로, 합니다 <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> 메서드는 <xref:Microsoft.VisualStudio.Package.ExpansionProvider> 메서드.  
   
- 코드 조각 바로 가기 단어 완성 목록에 추가 하려면 추가할 합니다 <xref:Microsoft.VisualStudio.Package.Declarations> 개체에 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 클래스입니다. 코드 조각 이름으로 바로 가기의 식별할 수 있는지 확인 해야 합니다. 예제를 보려면 [연습:는의 설치 된 코드 조각 목록 (레거시 구현)를 가져오는](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)합니다.  
+ 코드 조각 바로 가기 단어 완성 목록에 추가 하려면 추가할 합니다 <xref:Microsoft.VisualStudio.Package.Declarations> 개체에 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 클래스입니다. 코드 조각 이름으로 바로 가기의 식별할 수 있는지 확인 해야 합니다. 예를 들어 참조 [연습: 코드 조각 (레거시 구현)를 설치 목록을 가져오는](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)합니다.  
   
  코드 조각 바로 가기 삽입을 검색할 수 있습니다 합니다 <xref:Microsoft.VisualStudio.Package.Declarations.OnAutoComplete%2A> 메서드는 <xref:Microsoft.VisualStudio.Package.Declarations> 클래스입니다. 코드 조각 이름을 소스 파일에 이미 삽입, 때문에 확장을 삽입할 때 제거 해야 합니다. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> 메서드는 코드 조각을 삽입 지점에 설명 하는 범위; 소스 파일의 전체 코드 조각 이름을 포함 하는 범위, 해당 이름의 코드 조각으로 대체 됩니다.  
   
@@ -338,7 +335,7 @@ namespace TestLanguagePackage
   
 4. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
   
-   언어 서비스에 대해 설치 된 코드 조각 목록 가져오기에 대 한 자세한 내용은 참조 하세요. [연습:는의 설치 된 코드 조각 목록 (레거시 구현)를 가져오는](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)합니다.  
+   언어 서비스에 대해 설치 된 코드 조각 목록 가져오기에 대 한 자세한 내용은 참조 하세요. [연습: 코드 조각 (레거시 구현)를 설치 목록을 가져오는](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)합니다.  
   
 ## <a name="implementing-the-expansionfunction-class"></a>ExpansionFunction 클래스 구현  
  확장 기능은 코드 조각 템플릿에 포함 된 필드에 배치 될 하나 이상의 값을 반환 하는 명명된 된 함수입니다. 언어 서비스에서 확장 함수를 지원 하기 위해 클래스에서 파생 해야 합니다 <xref:Microsoft.VisualStudio.Package.ExpansionFunction> 클래스 및 구현 합니다 <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetCurrentValue%2A> 메서드. 다음 재정의 해야 합니다는 <xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionFunction%2A> 의 메서드를 <xref:Microsoft.VisualStudio.Package.LanguageService> 버전의 새 인스턴스를 반환 하는 클래스는 <xref:Microsoft.VisualStudio.Package.ExpansionFunction> 지 원하는 각 확장 함수에 대 한 클래스입니다. 확장 함수에서 가능한 값 목록을 지 원하는 경우 재정의 해야 합니다 <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetIntellisenseList%2A> 의 메서드는 <xref:Microsoft.VisualStudio.Package.ExpansionFunction> 해당 값의 목록을 반환 하는 클래스입니다.  
@@ -395,4 +392,4 @@ namespace TestLanguagePackage
  [레거시 언어 서비스 기능](../../extensibility/internals/legacy-language-service-features1.md)   
  [레거시 언어 서비스 등록](../../extensibility/internals/registering-a-legacy-language-service1.md)   
  [코드 조각](../../ide/code-snippets.md)   
- [연습: 설치된 코드 조각 목록 가져오기(레거시 구현)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)
+ [연습: 설치 된 코드 조각 (레거시 구현) 목록 가져오기](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)

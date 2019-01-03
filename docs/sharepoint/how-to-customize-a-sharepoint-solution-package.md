@@ -1,9 +1,6 @@
 ---
 title: '방법: SharePoint 솔루션 패키지 사용자 지정 | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.RAD.PackageDesignerAdvanced
@@ -13,8 +10,6 @@ f1_keywords:
 dev_langs:
 - VB
 - CSharp
-- VB
-- CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
 author: TerryGLee
@@ -22,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fd1ebe9e49a0b3e26d090fdbbdbbe4dd37c0344a
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 85140f8d85c90d2b58df10a63f50c117e10eb8bd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119885"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835398"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package"></a>방법: SharePoint 솔루션 패키지 사용자 지정
   패키지 디자이너를 사용 하 여를 만들고 패키지를 사용자 지정할 수 있습니다 (*.wsp*). 예를 들어 웹 서버의 솔루션이 배포 될 때 다시 설정 및 배포 서버 유형을 설정 하는 경우 지정할에 SharePoint 프로젝트 항목 및 기능을 추가할 수 있습니다.  
@@ -47,7 +42,7 @@ ms.locfileid: "37119885"
   
 #### <a name="to-view-the-packaged-manifest-file-by-using-solution-explorer"></a>솔루션 탐색기를 사용 하 여 패키지 된 매니페스트 파일을 보려면  
   
-1.  **솔루션 탐색기**, 선택 **모든 파일 표시**합니다.  
+1.  **솔루션 탐색기**에서 **모든 파일 표시**를 선택합니다.  
   
 2.  패키지를 확장 하 고 패키지를 확장 한 다음이 엽니다는 *Package.Template.xml* 파일입니다.  
   
@@ -92,6 +87,5 @@ ms.locfileid: "37119885"
   
      원본 텍스트를 사용 하 여 템플릿을 새로 고쳐집니다 및 XML의 변경 내용이 손실 됩니다.  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  [패키지 및 SharePoint 솔루션 배포](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

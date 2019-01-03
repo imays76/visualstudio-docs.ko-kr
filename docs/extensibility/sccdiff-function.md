@@ -1,9 +1,6 @@
 ---
 title: SccDiff 함수 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccDiff
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 898c5b1b9de186a7ac704b4987fb090de5381f07
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 68f90e406a06069403b76749977c5546b10ed790
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884773"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872056"
 ---
 # <a name="sccdiff-function"></a>SccDiff 함수
 이 함수 표시 (또는 확인만 필요한 경우)에서 차이점 (로컬 디스크)의 현재 파일 및 해당 마지막 체크 인 버전 원본 제어 시스템입니다.  
@@ -85,5 +82,5 @@ SCCRTN SccDiff(
 |SCC_DIFF_QD_CHECKSUM|지원 되는 경우 checksum 통해 파일을 자동으로 비교 합니다. 지원 되지 않는 경우 비교 내용 대체 합니다.|  
 |SCC_DIFF_QD_TIME|지원 되는 경우 해당 타임 스탬프를 통해 파일을 자동으로 비교 합니다. 지원 되지 않는 경우 비교 내용 대체 합니다.|  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [원본 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)

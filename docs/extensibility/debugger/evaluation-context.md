@@ -1,9 +1,6 @@
 ---
 title: 평가 컨텍스트에 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 523ef45d52a81a475eca0e3560243e0eb8357bbd
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 58c1ac8a6b9819aee18f8be58bb392b04c22f922
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232457"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840618"
 ---
 # <a name="evaluation-context"></a>평가 컨텍스트
 > [!IMPORTANT]
@@ -37,7 +34,7 @@ ms.locfileid: "39232457"
   
  `IDebugParsedExpression::EvaluateSync` 반환 합니다는 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) 결과 값 및 해당 형식을 나타내는 인터페이스입니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Key 식 계산기 인터페이스](../../extensibility/debugger/key-expression-evaluator-interfaces.md)   
  [로컬 항목 표시](../../extensibility/debugger/displaying-locals.md)   
  [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)   

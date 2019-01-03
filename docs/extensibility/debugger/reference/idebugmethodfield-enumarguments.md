@@ -1,9 +1,6 @@
 ---
 title: IDebugMethodField::EnumArguments | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugMethodField::EnumArguments
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bfa467da3ebe500db7f8ee64653f294ad236f445
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0f2b6c10076e36b684222ad0ef9d07ce7e1f450f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849192"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870679"
 ---
 # <a name="idebugmethodfieldenumarguments"></a>IDebugMethodField::EnumArguments
 메서드를 호출 하는 데 필요한 각 인수의 형식에 대 한 열거자를 만듭니다.  
@@ -28,7 +25,7 @@ ms.locfileid: "49849192"
 ## <a name="syntax"></a>구문  
   
 ```cpp  
-HRESULT EnumArguments(   
+HRESULT EnumArguments(   
    IEnumDebugFields** ppParams  
 );  
 ```  

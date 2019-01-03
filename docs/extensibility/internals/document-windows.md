@@ -1,9 +1,6 @@
 ---
 title: Windows 문서 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio SDK, document windows
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcd2c47de8e1ad8b650da0819b5e8b0a46213e29
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f10d18989ad94de7a1645b1dc48c474a983450f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875984"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850754"
 ---
 # <a name="document-windows"></a>문서 창
 Visual Studio에서를 *문서 창* (MDI) 다중 문서 인터페이스 창과 사용 하 여 연결 된 자식 프레임된 창입니다. 문서 일반적으로 사용 하는 표시 하 고 소스 코드 또는 텍스트를 수정 하지만 다른 기능 종류를 호스팅할 수도 있습니다. 문서 창:  
@@ -44,5 +41,5 @@ Visual Studio에서를 *문서 창* (MDI) 다중 문서 인터페이스 창과 �
 ## <a name="the-running-document-table"></a>실행 중인 문서 테이블  
  IDE는 모든 문서 창의 상태를 추적 하려면 실행 중인 문서 테이블 (RDT)를 사용 합니다. RDT는 메커니즘은 문서를 통해 windows 이벤트를 같은 솔루션을 닫을 때 또는 파일을 편집한 후 알림이 표시 됩니다. 자세한 내용은 [문서 테이블 실행](../../extensibility/internals/running-document-table.md)합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [지연 된 문서 로드](../../extensibility/internals/delayed-document-loading.md)

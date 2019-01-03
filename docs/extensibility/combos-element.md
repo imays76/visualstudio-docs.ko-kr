@@ -1,9 +1,6 @@
 ---
 title: Combos 요소 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Combos element (VSCT XML schema)
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 02f0fac933ea719b712d9b3bba4117915065aa65
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8186e8287c55f5e8d383457d809cd9e3235cee75
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939022"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895748"
 ---
 # <a name="combos-element"></a>Combos 요소
 그룹 [Combo 요소](../extensibility/combo-element.md) 요소입니다.  
@@ -79,6 +76,6 @@ ms.locfileid: "49939022"
 </Combos>  
 ```  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Vspackage에서 사용자 인터페이스 요소를 추가 하는 방법](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)

@@ -1,9 +1,6 @@
 ---
 title: 요소 그룹화 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Groups
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34ca01d77856fadabcc8e681d2be3b1eb6173c70
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 19bc3f44a4ba87195986327fe756e7419f259076
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813535"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827457"
 ---
 # <a name="group-element"></a>Group 요소
 VSPackage 명령 그룹을 정의합니다.  
@@ -39,8 +36,8 @@ VSPackage 명령 그룹을 정의합니다.
   
 |특성|설명|  
 |---------------|-----------------|  
-|guid|필수. GUID/i D 명령 식별자의 GUID입니다.|  
-|ID|필수. GUID/i D 명령 식별자의 ID입니다.|  
+|guid|필수 요소. GUID/i D 명령 식별자의 GUID입니다.|  
+|ID|필수 요소. GUID/i D 명령 식별자의 ID입니다.|  
 |priority|선택 사항입니다. 우선 순위를 지정 하는 숫자 값입니다.|  
 |조건|선택 사항입니다. 참조 [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)합니다.|  
   
@@ -65,5 +62,5 @@ VSPackage 명령 그룹을 정의합니다.
 </Group>  
 ```  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Visual Studio 명령 테이블 (.vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

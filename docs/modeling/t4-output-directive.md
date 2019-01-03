@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 624afd32a9b0f44e3190fba7e3b126663b96f6f4
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 2a7e98608a9f5885a1f14353b4a5b7fa83c2cdb6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860201"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874338"
 ---
 # <a name="t4-output-directive"></a>T4 Output 지시문
 
@@ -49,7 +48,7 @@ Visual Studio 텍스트 템플릿에서 `output` 지시문은 변환된 된 파�
 
  `<#@ output extension=".vb" #>`
 
- 허용 되는 값: 모든 유효한 파일 이름 확장명입니다.
+ 허용되는 값: 유효한 모든 파일 이름 확장명
 
 ## <a name="encoding-attribute"></a>인코딩 특성
  출력 파일을 생성할 때 사용할 인코딩을 지정합니다. 예를 들면 다음과 같습니다.

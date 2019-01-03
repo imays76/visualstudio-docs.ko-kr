@@ -1,9 +1,6 @@
 ---
 title: 명령을 사용 하 여 열기를 사용 하 여 파일을 표시 합니다. | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project types, supporting Open With command
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6983e9ee7b7cc88efb4870ab0836b856621aeeee
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 5ba2aa9ad9a80a820a1ab8311280c3bf2dedc476
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497530"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820253"
 ---
 # <a name="display-files-by-using-the-open-with-command"></a>연결 프로그램 명령을 사용 하 여 파일을 표시 합니다.
 프로젝트를 표시 하기 위해 IDE를 요청할 수 있습니다 합니다 **연결 프로그램** 대화 상자. 이 요청 라는 표준 편집기의 선택 된 파일을 열 수입니다. 다음 단계는이 프로세스를 설명합니다.  

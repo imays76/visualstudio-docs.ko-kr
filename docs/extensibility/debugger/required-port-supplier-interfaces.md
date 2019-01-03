@@ -1,9 +1,6 @@
 ---
 title: 필요한 포트 공급자 인터페이스 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - port suppliers, required interfaces
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c727cb39b480d72a3e0aa2083ca795bb65ac0ff
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 79991880b244165f6041903c2f71188a25d910cd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252416"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850819"
 ---
 # <a name="required-port-supplier-interfaces"></a>필요한 포트 공급자 인터페이스
 포트 공급자 구현 해야 합니다 [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) 인터페이스.[ IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)  
@@ -57,7 +54,7 @@ ms.locfileid: "39252416"
   
     -   [GetName](../../extensibility/debugger/reference/idebugprocess2-getname.md)  
   
-    -   [Getserver 메서드](../../extensibility/debugger/reference/idebugprocess2-getserver.md)  
+    -   [GetServer](../../extensibility/debugger/reference/idebugprocess2-getserver.md)  
   
     -   [GetPhysicalProcessId](../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)  
   
@@ -83,5 +80,5 @@ ms.locfileid: "39252416"
   
      SDM이이 프로그램에 연결 하는 방법을 제공 합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [포트 공급자 구현](../../extensibility/debugger/implementing-a-port-supplier.md)

@@ -1,9 +1,6 @@
 ---
 title: '방법: 프로그래밍 방식으로 Excel 계산 실행'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0dabde287d71736ab49f35acf968300bccee0d12
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 82e2cbd2f3e74e50c7ff01f6943fdb62e11f1525
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673900"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821063"
 ---
 # <a name="how-to-programmatically-run-excel-calculations"></a>방법: 프로그래밍 방식으로 Excel 계산 실행  
   비슷한 프로세스를 사용 하 여 계산에서 실행 하는 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤 또는 네이티브 Excel 범위 개체입니다.  
@@ -63,5 +60,3 @@ ms.locfileid: "35673900"
  [범위를 사용 하 여 작동 합니다.](../vsto/working-with-ranges.md)   
  [NamedRange 컨트롤](../vsto/namedrange-control.md)   
  [Office 솔루션의 선택적 매개 변수](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
 title: 실행 취소 디자이너 지원을 제공 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - designers [Visual Studio SDK], undo support
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba86f77219329c0e34edecf10aca69e8bedf2226
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eef024c14dfcab515d0205f7e1298020dbd3bd91
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843238"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836298"
 ---
 # <a name="supplying-undo-support-to-designers"></a>디자이너에 실행 취소 지원 제공
 일반적으로 디자이너, 편집기와 같은 코드 요소를 수정 하는 경우 사용자가 최근 변경 내용이 되돌릴 수 있도록 실행 취소 작업을 지원 해야 합니다.  

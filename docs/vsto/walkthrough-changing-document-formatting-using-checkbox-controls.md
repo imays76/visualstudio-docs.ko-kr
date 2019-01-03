@@ -1,9 +1,6 @@
 ---
 title: '연습: CheckBox 컨트롤을 사용 하 여 문서 서식 변경'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 86cf89f7853308e93c55e30deae17786fdb3e413
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6e33d7b683e55f570961d9f9f8f77ea1491db3f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863934"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913871"
 ---
 # <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>연습: CheckBox 컨트롤을 사용 하 여 문서 서식 변경
   이 연습에서는 Microsoft Office Word 용 문서 수준 사용자 지정에서 Windows Forms 컨트롤을 사용 하 여 텍스트 서식을 변경 하는 방법에 설명 합니다.  
@@ -55,7 +52,7 @@ ms.locfileid: "49863934"
   
 1.  이름을 사용 하 여 Word 문서 프로젝트를 만듭니다 **My Word 서식이**합니다. 마법사에서 선택 **새 문서 만들기**합니다.  
   
-     자세한 내용은 [방법: Visual Studio에서 만드는 Office 프로젝트](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
+     자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
   
      Visual Studio 디자이너에서 새 Word 문서가 열리고 추가 합니다 **My Word 서식이** 프로젝트가 **솔루션 탐색기**합니다.  
   
@@ -141,7 +138,7 @@ ms.locfileid: "49863934"
   
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#6)]  
   
-## <a name="test-the-application"></a>응용 프로그램 테스트  
+## <a name="test-the-application"></a>애플리케이션 테스트  
  이제 텍스트를 선택 하거나 확인란의 선택을 취소 하면 올바르게 형식이 확인 하려면 문서를 테스트할 수 있습니다.  
   
 ### <a name="test-your-document"></a>문서를 테스트 합니다.  
@@ -160,10 +157,8 @@ ms.locfileid: "49863934"
 -   라디오 단추를 사용하여 차트 스타일 선택. 자세한 내용은 [연습: 라디오 단추를 사용 하 여 문서에서 차트를 업데이트](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)합니다.  
   
 
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Word를 사용 하 여 연습](../vsto/walkthroughs-using-word.md)   
  [Office 개발 샘플 및 연습](../vsto/office-development-samples-and-walkthroughs.md)   
  [NamedRange 컨트롤](../vsto/namedrange-control.md)   
  [Office 문서의 Windows Forms 컨트롤의 제한 사항](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
-  
-  

@@ -3,7 +3,6 @@ title: '워크플로 디자이너-방법: 인수 디자이너 사용'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Presentation.View.ArgumentDesigner.UI
 - System.Activities.Presentation.View.DesignTimeArgument.UI
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 88d9d568a115680c545a32a0d5f533fcab51da1f
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: e73dcd167f6f267c7979f5c3ffb806b9f12d534a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684602"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891565"
 ---
 # <a name="how-to-use-the-argument-designer"></a>방법: 인수 디자이너 사용
 
@@ -35,7 +34,7 @@ ms.locfileid: "53684602"
     > [!NOTE]
     > 인수를 삭제 하려면 클릭 하 여 인수를 선택 하 고 다음 키를 누릅니다 합니다 **삭제** 키입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [워크플로 디자이너 사용](developing-applications-with-the-workflow-designer.md)
 - [변수 및 인수](/dotnet/framework/windows-workflow-foundation/variables-and-arguments)

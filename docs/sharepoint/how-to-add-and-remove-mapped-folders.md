@@ -1,15 +1,10 @@
 ---
 title: '방법: 매핑된 폴더 추가 및 제거 | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.MappedFolder
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -20,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fe9868a9909dbb78bf510f18584472520948d6f9
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 302b161620961b3b89a616bf4dc998c7a5745456
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757650"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823930"
 ---
 # <a name="how-to-add-and-remove-mapped-folders"></a>방법: 매핑된 폴더 추가 및 제거
   일부 이미지 및 레이아웃 파일 계층 구조에 중첩 되어 같은 폴더 SharePoint에서 일반적으로 사용 합니다. 보다 쉽게 액세스 하려면 SharePoint 프로젝트에 이러한 폴더를 매핑할 수 있습니다. 매핑된 폴더는 SharePoint 프로젝트에 SharePoint 서버의 설치 파일의 실제 위치에 해당 하는입니다.  
@@ -40,7 +35,7 @@ ms.locfileid: "36757650"
   
 1.  메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.  
   
-2.  에 **새 프로젝트** 대화 상자에서 확장를 **Visual Basic** 또는 **Visual C#** 노드를 확장 합니다 **Office/SharePoint** 노드를 차례로 선택 된 **SharePoint 솔루션** 노드.  
+2.  에 **새 프로젝트** 대화 상자에서 하나를 **Visual Basic** 또는 **Visual C#**  노드를 확장 합니다 **Office/SharePoint** 노드를 선택한 후는 **SharePoint 솔루션** 노드.  
   
 3.  프로젝트 템플릿 목록에서 선택 합니다 **SharePoint 2013 비주얼 웹 파트** 템플릿.  
   
@@ -83,6 +78,5 @@ ms.locfileid: "36757650"
   
 3.  매핑된 폴더를 프로젝트에서 제거 하려면 해당 바로 가기 메뉴를 열고, 선택 **삭제**를 선택한 후는 **확인** 제거를 확인 하는 대화 상자의 단추.  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  [SharePoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)  
-  

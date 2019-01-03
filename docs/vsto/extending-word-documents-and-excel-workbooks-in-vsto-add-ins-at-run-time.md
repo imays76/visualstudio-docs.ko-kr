@@ -1,9 +1,6 @@
 ---
 title: Word 문서 및 런타임에 VSTO 추가 기능에서 Excel 통합 문서 확장
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: eb1197d85f52c314eb9ec0a01ccd5069f9c43f39
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: a93923525ce1a3c1a3396963f05b2f0335a8f635
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647821"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909193"
 ---
 # <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-runtime"></a>Word 문서 및 런타임에 VSTO 추가 기능에서 Excel 통합 문서 확장
   VSTO 추가 기능을 사용하여 다음과 같은 방법으로 Word 문서 및 Excel 통합 문서를 사용자 지정할 수 있습니다.  
@@ -35,7 +32,7 @@ ms.locfileid: "53647821"
   
 - Excel 워크시트의 기존 목록 개체를 이벤트를 표시하고 Windows Forms 데이터 바인딩 모델을 사용하여 데이터에 바인딩될 수 있는 확장된 <xref:Microsoft.Office.Tools.Excel.ListObject> 로 변환합니다.  
   
-- 특정 문서, 통합 문서 및 워크시트에 대해 Word 및 Excel에서 표시하는 응용 프로그램 수준 이벤트에 액세스합니다.  
+- 특정 문서, 통합 문서 및 워크시트에 대해 Word 및 Excel에서 표시하는 애플리케이션 수준 이벤트에 액세스합니다.  
   
   이 기능을 사용 하려면 런타임에 문서 또는 통합 문서를 확장 하는 개체를 생성 합니다.  
   
@@ -98,12 +95,12 @@ ms.locfileid: "53647821"
  문서 또는 워크시트에 관리되는 컨트롤을 추가하는 경우 문서를 저장한 후 닫으면 컨트롤이 유지되지 않습니다. 호스트 컨트롤은 모두 제거되고 기본 네이티브 Office 개체만 남겨집니다. 예를 들어 <xref:Microsoft.Office.Tools.Excel.ListObject> 가 <xref:Microsoft.Office.Interop.Excel.ListObject>가 됩니다. Windows Forms 컨트롤도 모두 제거되지만 컨트롤의 ActiveX 래퍼는 문서에 남겨집니다. 컨트롤을 정리하거나 다음에 문서를 열 때 컨트롤을 다시 만들려면 VSTO 추가 기능에 코드를 포함해야 합니다. 자세한 내용은 [Office 문서에서 동적 컨트롤 유지](../vsto/persisting-dynamic-controls-in-office-documents.md)합니다.  
   
 ## <a name="access-application-level-events-on-documents-and-workbooks"></a>문서 및 통합 문서에 대 한 액세스 응용 프로그램 수준 이벤트  
- 네이티브 Word 및 Excel 개체 모델에서 일부 문서, 통합 문서 및 워크시트 이벤트는 응용 프로그램 수준에서만 발생합니다. 예를 들어 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> 이벤트는 Word에서 문서를 열 때 발생하지만 이 이벤트는 <xref:Microsoft.Office.Interop.Word.Application> 클래스가 아닌 <xref:Microsoft.Office.Interop.Word.Document> 클래스에 정의되어 있습니다.  
+ 네이티브 Word 및 Excel 개체 모델에서 일부 문서, 통합 문서 및 워크시트 이벤트는 애플리케이션 수준에서만 발생합니다. 예를 들어 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> 이벤트는 Word에서 문서를 열 때 발생하지만 이 이벤트는 <xref:Microsoft.Office.Interop.Word.Application> 클래스가 아닌 <xref:Microsoft.Office.Interop.Word.Document> 클래스에 정의되어 있습니다.  
   
- VSTO 추가 기능에서 네이티브 Office 개체만 사용하는 경우 이러한 응용 프로그램 수준 이벤트를 처리한 다음 추가 코드를 작성하여 이벤트가 발생한 문서가 사용자 지정한 문서인지를 확인해야 합니다. 호스트 항목은 이러한 이벤트를 문서 수준에서 제공하므로 특정 문서에 대한 이벤트를 더 쉽게 처리할 수 있습니다. 호스트 항목을 생성한 다음 해당 호스트 항목에 대한 이벤트를 처리 할 수 있습니다.  
+ VSTO 추가 기능에서 네이티브 Office 개체만 사용하는 경우 이러한 애플리케이션 수준 이벤트를 처리한 다음 추가 코드를 작성하여 이벤트가 발생한 문서가 사용자 지정한 문서인지를 확인해야 합니다. 호스트 항목은 이러한 이벤트를 문서 수준에서 제공하므로 특정 문서에 대한 이벤트를 더 쉽게 처리할 수 있습니다. 호스트 항목을 생성한 다음 해당 호스트 항목에 대한 이벤트를 처리 할 수 있습니다.  
   
 ### <a name="example-that-uses-native-word-objects"></a>네이티브 Word 개체를 사용 하는 예제  
- 다음 코드 예제에서는 Word 문서에 대한 응용 프로그램 수준 이벤트를 처리하는 방법을 보여 줍니다. `CreateDocument` 메서드는 새 문서를 만든 다음 이 문서가 저장되지 않도록 하는 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> 이벤트 처리기를 정의합니다. 이벤트에 대해 발생 하는 응용 프로그램 수준 이벤트는를 <xref:Microsoft.Office.Interop.Word.Application> 개체 및 이벤트 처리기를 비교 해야 합니다는 `Doc` 매개 변수를 `document1` 여부를 확인 하는 개체 `document1` 저장된 된 문서를 나타냅니다.  
+ 다음 코드 예제에서는 Word 문서에 대한 애플리케이션 수준 이벤트를 처리하는 방법을 보여 줍니다. `CreateDocument` 메서드는 새 문서를 만든 다음 이 문서가 저장되지 않도록 하는 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> 이벤트 처리기를 정의합니다. 이벤트에 대해 발생 하는 응용 프로그램 수준 이벤트는를 <xref:Microsoft.Office.Interop.Word.Application> 개체 및 이벤트 처리기를 비교 해야 합니다는 `Doc` 매개 변수를 `document1` 여부를 확인 하는 개체 `document1` 저장된 된 문서를 나타냅니다.  
   
  [!code-vb[Trin_WordAddInDynamicControls #12](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#12)]
  [!code-csharp[Trin_WordAddInDynamicControls#12](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#12)]  
@@ -128,5 +125,3 @@ ms.locfileid: "53647821"
  [런타임에 Office 문서에 컨트롤 추가](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)   
  [Office 개발 샘플 및 연습](../vsto/office-development-samples-and-walkthroughs.md)  
-  
-  

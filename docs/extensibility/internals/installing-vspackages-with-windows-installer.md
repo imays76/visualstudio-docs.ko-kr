@@ -1,9 +1,6 @@
 ---
 title: Windows Installer를 사용 하 여 Vspackage 설치 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - installation [Visual Studio SDK], with Windows Installer
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3bb49f02b7c160aa879c0652a081d8fd6cb026a
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: e0efb1b5c45595383f62d08399906cbb1b546479
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370538"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827837"
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>Windows Installer를 사용하여 VSPackage 설치
 VSPackage에 통합 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 것 이상의 사용자의 컴퓨터에 파일을 복사 해야 합니다. VSPackage의 설치 관리자 VSPackage 및 해당 종속 파일을 설치 및 등록 하며 통합 해야 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]합니다. VSPackage에서 아이콘을 표시 하는 등 통합 기능을 활용을 걸릴 수 있습니다는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 화면 및에 대 한 대화 상자를 시작 합니다.  
@@ -51,7 +48,7 @@ VSPackage에 통합 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]
  [프로젝트 형식 배포](../../extensibility/internals/deploying-project-types.md)  
  관리 코드 프로젝트 형식에 대 한 새 프로젝트 형식 집계를 사용 하는 방법에 설명 합니다.  
   
- [방법: 설치 관리자에 대한 레지스트리 정보 생성](../../extensibility/internals/how-to-generate-registry-information-for-an-installer.md)  
+ [방법: 설치 관리자에 대 한 레지스트리 정보를 생성 합니다.](../../extensibility/internals/how-to-generate-registry-information-for-an-installer.md)  
  RegPkg.exe를 사용 하 여 관리 되는 VSPackage에 대 한 등록 매니페스트를 생성 하는 방법에 설명 합니다.  
   
  [설치 후 실행해야 하는 명령](../../extensibility/internals/commands-that-must-be-run-after-installation.md)  

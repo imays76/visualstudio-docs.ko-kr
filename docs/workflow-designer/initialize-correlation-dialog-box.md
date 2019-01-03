@@ -3,7 +3,6 @@ title: 워크플로 디자이너-초기화할 상관 관계 대화 상자
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - InitializeCorrelation.UI
 ms.assetid: 2a0a1cd3-7b9e-493e-9264-fcf85289ffcf
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: edfdef1c1f946e2c5f677d0ff1578a40ea7bcd8f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 51f001e053b0c2fdfe892175b00ed3f39dc6f1b4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906236"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829763"
 ---
 # <a name="initialize-correlation-dialog-box"></a>상관 관계 초기화 대화 상자
 
@@ -34,6 +33,6 @@ ms.locfileid: "49906236"
 
 클릭 **뷰** 에 **InitializeCorrelation** 활동 디자이너나 선택는 <xref:System.ServiceModel.Activities.InitializeCorrelation> 워크플로 디자이너에서 작업 합니다. 옆에 있는 줄임표 단추를 차례로 클릭 합니다 <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> 속성 표에 속성입니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)

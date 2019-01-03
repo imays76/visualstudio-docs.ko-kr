@@ -1,9 +1,6 @@
 ---
 title: 언어 서버 프로토콜 개요 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/14/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 6a7d93c2-31ea-4bae-8b29-6988a567ddf2
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad0e802bd63a9d489a98eb9f216e6739e378d590
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1b2329b54ba90a37e0d6d5e782e66c4af923a646
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894861"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828227"
 ---
 # <a name="language-server-protocol"></a>언어 서버 프로토콜
 
@@ -52,11 +49,11 @@ VS 코드 팀 프로토타입화 lint (검색)에 응답 하는 몇 가지 linte
 
 ![lsp 흐름 다이어그램](media/lsp-flow-diagram.png)
 
-* **사용자 도구에서 (문서 라고도 함) 파일을 엽니다**:는 문서가 열려 있는 도구가 언어 서버에 알립니다. (' textDocument/didOpen '). 지금부터 문서의 내용에 대 한 진실을 파일 시스템에 더 이상 하지만 메모리에서 도구를 통해 유지 합니다.
+* **사용자 도구에서 (문서 라고도 함) 파일을 엽니다**: 도구는 문서가 열려 있는 언어 서버 알립니다 (' textDocument/didOpen '). 지금부터 문서의 내용에 대 한 진실을 파일 시스템에 더 이상 하지만 메모리에서 도구를 통해 유지 합니다.
 
-* **사용자가 편집**: 도구 (' textDocument/didChange ') 문서 변경에 대 한 서버 알리고 언어 서버에서 프로그램의 의미 체계 정보가 업데이트 됩니다. 이런 언어 서버가이 정보를 분석 하 고 검색 된 오류 및 경고 (' textDocument/publishDiagnostics ')를 사용 하는 도구에 알립니다.
+* **사용자가 편집**: 도구 문서 변경 (' textDocument/didChange ')에 대 한 서버 알리고 언어 서버에서 프로그램의 의미 체계 정보가 업데이트 됩니다. 이런 언어 서버가이 정보를 분석 하 고 검색 된 오류 및 경고 (' textDocument/publishDiagnostics ')를 사용 하는 도구에 알립니다.
 
-* **사용자가 편집기에서 기호 "정의로 이동"을 실행**: 도구에는 두 개의 매개 변수를 사용 하 여 ' textDocument/정의 ' 요청을 보냅니다. (1) 문서 URI 및 (2) 서버에 요청 정의로 이동 된 시작한 텍스트 위치 합니다. 서버 문서 URI 및 문서 내에서 기호 정의의 위치를 사용 하 여 응답합니다.
+* **사용자의 편집기에서 기호 "정의로 이동"을 실행할**: 이 도구는 두 개의 매개 변수를 사용 하 여 ' textDocument/정의 ' 요청을 보냅니다. (1) 문서 URI 및 (2) 서버에 요청 정의로 이동 된 시작한 텍스트 위치 합니다. 서버 문서 URI 및 문서 내에서 기호 정의의 위치를 사용 하 여 응답합니다.
 
 * **사용자 문서 (파일)를 닫고**: 문서가 더 이상 메모리에 현재 콘텐츠는 이제 파일 시스템에 대 한 최신 언어 서버에 게 알리는 도구에서 ' textDocument/didClose ' 알림이 전송 됩니다.
 

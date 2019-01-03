@@ -1,9 +1,6 @@
 ---
 title: '방법: 프로그래밍 방식으로 문서 저장'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e794a995d1e978cf5aae8d1b6ec9c1711436af73
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 99a50ec83d69217d123d11aa83ff02600b82108c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883479"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821596"
 ---
 # <a name="how-to-programmatically-save-documents"></a>방법: 프로그래밍 방식으로 문서 저장
   Microsoft Office Word 문서를 저장 하는 방법은 여러 가지가 있습니다. 문서의 이름을 변경 하지 않고 문서를 저장할 수 있습니다 하거나 새 이름으로 문서를 저장할 수 있습니다.  
@@ -93,5 +90,3 @@ ms.locfileid: "49883479"
  [방법: 프로그래밍 방식으로 기존 문서 열기](../vsto/how-to-programmatically-open-existing-documents.md)   
  [문서 호스트 항목](../vsto/document-host-item.md)   
  [Office 솔루션의 선택적 매개 변수](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

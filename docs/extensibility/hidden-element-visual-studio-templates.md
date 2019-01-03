@@ -1,6 +1,5 @@
 ---
 title: 요소 (Visual Studio 템플릿)을 숨겨진 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5eedcbca60ba0df886976a71780bb431a4fafbf9
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 008a46399808eae2921e51099814c7ead4675c78
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561618"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896489"
 ---
 # <a name="hidden-element-visual-studio-templates"></a>Hidden 요소 (Visual Studio 템플릿)
 템플릿 중 하나에 표시할지 여부를 지정 합니다 **새 프로젝트** 하거나 **새 항목 추가** 대화 상자.  

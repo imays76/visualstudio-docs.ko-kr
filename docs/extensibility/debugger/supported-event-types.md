@@ -1,9 +1,6 @@
 ---
 title: 지원 되는 이벤트 유형 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], supported events
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f711b3a2e131baf5f7e480982ff34dc7ef89614
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3fc11158987ecb1d7401f1127318138c0b865f96
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949359"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53901794"
 ---
 # <a name="supported-event-types"></a>지원 되는 이벤트 유형
 현재 visual Studio 디버깅 다음 이벤트 유형을 지원합니다.  
@@ -56,7 +53,7 @@ ms.locfileid: "49949359"
 > [!NOTE]
 >  합니다 [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md) 인터페이스는 모든 이벤트에 대 한 필요 합니다.  
   
-|이벤트(event)|IDebugProgram2|IDebugThread2|이벤트를 중지합니다.|  
+|이벤트|IDebugProgram2|IDebugThread2|이벤트를 중지합니다.|  
 |-----------|--------------------|-------------------|---------------------|  
 |[IDebugActivateDocumentEvent2](../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)|하지만 필수가 아닌 허용|하지만 필수가 아닌 허용|아니요|  
 |[IDebugBreakEvent2](../../extensibility/debugger/reference/idebugbreakevent2.md)|필수|필수|예|  
@@ -65,8 +62,8 @@ ms.locfileid: "49949359"
 |[IDebugBreakpointUnboundEvent2](../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)|하지만 필수가 아닌 허용|하지만 필수가 아닌 허용|아니요|  
 |[IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md)|필수|필수|예|  
 |[IDebugCanStopEvent2](../../extensibility/debugger/reference/idebugcanstopevent2.md)|필수|필수|아니요|  
-|[IDebugDocumentTextEvents2](../../extensibility/debugger/reference/idebugdocumenttextevents2.md)|허용 되지 않음|허용 되지 않음|아니요|  
-|[IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md)|허용 되지 않음|허용 되지 않음|아니요|  
+|[IDebugDocumentTextEvents2](../../extensibility/debugger/reference/idebugdocumenttextevents2.md)|허용 안 됨|허용 안 됨|아니요|  
+|[IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md)|허용 안 됨|허용 안 됨|아니요|  
 |[IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md)|필수|필수|예|  
 |[IDebugErrorEvent2](../../extensibility/debugger/reference/idebugerrorevent2.md)|하지만 필수가 아닌 허용|하지만 필수가 아닌 허용|가능 여부|  
 |[IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md)|필수|필수|예|  
@@ -88,5 +85,5 @@ ms.locfileid: "49949359"
 |[IDebugThreadDestroyEvent2](../../extensibility/debugger/reference/idebugthreaddestroyevent2.md)|필수|필수|아니요|  
 |[IDebugThreadNameChangedEvent2](../../extensibility/debugger/reference/idebugthreadnamechangedevent2.md)|하지만 필수가 아닌 허용|하지만 필수가 아닌 허용|아니요|  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [이벤트 전송](../../extensibility/debugger/sending-events.md)

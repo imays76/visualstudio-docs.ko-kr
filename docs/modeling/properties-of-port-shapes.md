@@ -12,13 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 21b0ecfc26728fa4692a07eaa1e2e43ecdcf9cc0
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: d53e6c512b6f026772339c79c46eeb6854fb0095
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967144"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842280"
 ---
 # <a name="properties-of-port-shapes"></a>포트 모양의 속성
 생성된 된 디자이너에서 도메인 클래스를 나타냅니다 port 셰이프를 사용할 수 있습니다.

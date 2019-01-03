@@ -1,22 +1,19 @@
 ---
 title: Visual Studio에서 지연 진단 UI 확장 | Microsoft Docs
-ms.custom: ''
 ms.date: 01/26/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 author: PooyaZv
 ms.author: pozandev
 manager: douge
 ms.workload: multiple
-ms.openlocfilehash: 1bf5dba23622c5dc3d964bdac19fec210aa60b1e
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 1bd09827899000e4f3d1f65fae27da969bcbc107
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639197"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887713"
 ---
-# <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>방법: 진단 UI 확장 프로그램에서 발생 하는 지연
+# <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>방법: 확장으로 인해 발생한 진단 UI 지연
 
 UI가 응답 하지 않음, 리프로 시작 하 고 기본 노력 하 고 Visual Studio UI 스레드의 호출 스택을 검사 합니다. Visual Studio 호출 스택 프레임을 설치 하 고 설정 된 확장의 일부인 모듈에 속해 있는지를 결정 하는 경우 알림을 표시 합니다.
 

@@ -1,9 +1,6 @@
 ---
-title: '연습: 개요 | Microsoft Docs'
-ms.custom: ''
+title: '연습: 개요 | Microsoft 문서'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - outlining
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 740ed444770a440b54fe61b0c8ec8189691fe9a1
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 7de78a60dd7de129eb2626e414ce6ec44bb20ce3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566933"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827525"
 ---
 # <a name="walkthrough-outlining"></a>연습: 개요
 개요 확장 또는 축소 하려는 텍스트 영역의 종류를 정의 하 여 같은 언어 기반 기능을 설정 합니다. 언어 서비스의 컨텍스트에서 영역을 정의 또는 하거나 정의할 수 있습니다 고유한 파일 이름 확장명 및 콘텐츠 유형 및 영역 정의 해당 형식에만 적용할 지역 정의 기존 콘텐츠 형식 (예: "text")를 적용 합니다. 이 연습에서는 정의 개요 영역을 표시 하는 방법을 보여 줍니다.  
@@ -30,7 +27,7 @@ ms.locfileid: "39566933"
   
 ### <a name="to-create-a-mef-project"></a>MEF 프로젝트를 만들려면  
   
-1.  VSIX 프로젝트를 만듭니다. 솔루션 이름을 `OutlineRegionTest`입니다.  
+1.  VSIX 프로젝트를 만듭니다. 솔루션의 이름을 `OutlineRegionTest`로 지정합니다.  
   
 2.  편집기 분류자 항목 템플릿을 프로젝트에 추가 합니다. 자세한 내용은 [편집기 항목 템플릿을 사용 하 여 확장 프로그램을 만들려면](../extensibility/creating-an-extension-with-an-editor-item-template.md)합니다.  
   
@@ -43,7 +40,7 @@ ms.locfileid: "39566933"
   
 ### <a name="to-implement-an-outlining-tagger"></a>개요는 태거를 구현 하려면  
   
-1.  클래스 파일을 추가 하 고 이름을 `OutliningTagger`입니다.  
+1.  클래스 파일을 추가하고 이름을 `OutliningTagger`로 지정합니다.  
   
 2.  다음 네임 스페이스를 가져옵니다.  
   
@@ -134,5 +131,5 @@ ms.locfileid: "39566933"
   
 4.  양쪽 대괄호를 포함 하는 개요 영역 없어야 합니다. 개요 영역을 축소 하 고 여는 중괄호의 왼쪽에 빼기 기호를 클릭 해야 합니다. 경우 영역을 축소 줄임표 기호 (*...* ) 축소 된 영역 및 텍스트가 포함 된 팝업의 왼쪽에 나타날 **가리킨 항목 텍스트** 줄임표 위로 포인터를 이동 하면 표시 됩니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [연습: 파일 이름 확장명에 콘텐츠 형식 링크](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

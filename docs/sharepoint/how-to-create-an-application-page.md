@@ -1,13 +1,8 @@
 ---
 title: '방법: 응용 프로그램 페이지 만들기 | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9f390ddf14925b43f1aa1d9e79db05e2aa64f234
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 659aa277263dab1950309c27e307ddb641bab6b0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296205"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820227"
 ---
 # <a name="how-to-create-an-application-page"></a>방법: 응용 프로그램 페이지 만들기
   하나 이상의 SharePoint 사이트에 대한 ASP.NET 웹 페이지를 만들 수 있습니다. Sharepoint에서 이러한 페이지는 응용 프로그램 페이지 라고 합니다. 사이트 페이지와 달리 응용 프로그램 페이지는 페이지 뒤에 실행 되는 코드를 포함 합니다. 자세한 내용은 [SharePoint 용 응용 프로그램 페이지를 만들](../sharepoint/creating-application-pages-for-sharepoint.md)합니다.  
@@ -50,9 +45,8 @@ ms.locfileid: "51296205"
   
 7.  컨트롤 이벤트를 처리하려면 응용 프로그램 페이지의 코드 파일에 코드를 추가합니다.  
   
-     코드 파일을 ASP.NET 페이지 파일에 대 한 노드를 확장 하는 경우 나타나고에 *.cs* 하거나 *.vb* 프로젝트의 언어에 따라 확장 합니다. 응용 프로그램 페이지를 만드는 방법의 종단 간 예제를 참조 하세요 [연습: SharePoint 응용 프로그램 페이지 만들기](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)합니다.  
+     코드 파일을 ASP.NET 페이지 파일에 대 한 노드를 확장 하는 경우 나타나고에 *.cs* 하거나 *.vb* 프로젝트의 언어에 따라 확장 합니다. 응용 프로그램 페이지를 만드는 방법의 종단 간 예제를 참조 하세요. [연습: SharePoint 응용 프로그램 페이지 만들기](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)합니다.  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  [SharePoint 용 응용 프로그램 페이지 만들기](../sharepoint/creating-application-pages-for-sharepoint.md)   
  [연습: SharePoint 응용 프로그램 페이지 만들기](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)  
-  

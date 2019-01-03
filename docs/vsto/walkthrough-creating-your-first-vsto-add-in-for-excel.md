@@ -1,9 +1,6 @@
 ---
 title: '연습: Excel 용 첫 VSTO 추가 기능에 만들기'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,15 +15,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6a9b7540a42dbaf7b7079793158d33d761199720
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f803db23d868aa553ef4c1cd898428b64e998c3b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949905"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831890"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>연습: Excel 용 첫 VSTO 추가 기능에 만들기
-  이 소개용 연습에서는 Microsoft Office Excel의 응용 프로그램 수준 추가 기능을 만드는 방법을 보여 줍니다. 이러한 종류의 솔루션에서 만드는 기능은 열려 있는 통합 문서에 관계없이 응용 프로그램 자체에서 사용할 수 있습니다.  
+  이 소개용 연습에서는 Microsoft Office Excel의 애플리케이션 수준 추가 기능을 만드는 방법을 보여 줍니다. 이러한 종류의 솔루션에서 만드는 기능은 열려 있는 통합 문서에 관계없이 애플리케이션 자체에서 사용할 수 있습니다.  
   
  [!INCLUDE[appliesto_xlallapp](../vsto/includes/appliesto-xlallapp-md.md)]  
   
@@ -121,19 +118,19 @@ ms.locfileid: "49949905"
 ## <a name="next-steps"></a>다음 단계  
  기본적인 Excel용 VSTO 추가 기능을 만들었으므로 다음 항목에서 VSTO 추가 기능을 개발하는 방법에 대해 자세히 알아볼 수 있습니다.  
   
--   VSTO 추가 기능에서 수행할 수 있는 일반적인 프로그래밍 작업: [프로그램 VSTO 추가 기능](../vsto/programming-vsto-add-ins.md)합니다.  
+-   VSTO 추가 기능에서 수행할 수 있는 일반적인 프로그래밍 작업: [VSTO 추가 기능 프로그래밍](../vsto/programming-vsto-add-ins.md)합니다.  
   
--   Excel VSTO 추가 기능과 관련 된 프로그래밍 작업: [Excel 솔루션](../vsto/excel-solutions.md)합니다.  
+-   Excel VSTO 추가 기능과 관련 된 작업을 프로그래밍 합니다. [Excel 솔루션](../vsto/excel-solutions.md)합니다.  
   
--   Excel 개체 모델 사용: [Excel 개체 모델 개요](../vsto/excel-object-model-overview.md)합니다.  
+-   Excel의 개체 모델 사용: [Excel 개체 모델 개요](../vsto/excel-object-model-overview.md)합니다.  
   
--   Excel의 사용자 인터페이스 (UI) 사용자 지정, 예를 들어에서 리본에 사용자 지정 탭 추가 또는 사용자 고유의 사용자 지정 작업창 만들기: [Office UI 사용자 지정](../vsto/office-ui-customization.md)합니다.  
+-   사용자 지정 사용자 인터페이스 (UI) Excel의 예를 들어 리본에 사용자 지정 탭 추가 또는 사용자 고유의 사용자 지정 작업창 만들기: [Office UI 사용자 지정](../vsto/office-ui-customization.md)합니다.  
   
--   빌드 및 Excel 용 VSTO 추가 기능 디버깅: [빌드 Office 솔루션](../vsto/building-office-solutions.md)합니다.  
+-   빌드 및 Excel 용 VSTO 추가 기능을 디버깅 합니다. [Office 솔루션 빌드](../vsto/building-office-solutions.md)합니다.  
   
--   Excel 용 VSTO 추가 기능 배포: [Office 솔루션 배포](../vsto/deploying-an-office-solution.md)합니다.  
+-   Excel 용 VSTO 추가 기능을 배포 합니다. [Office 솔루션 배포](../vsto/deploying-an-office-solution.md)합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Excel 솔루션](../vsto/excel-solutions.md)   
  [VSTO 추가 기능 프로그래밍](../vsto/programming-vsto-add-ins.md)   
@@ -142,5 +139,3 @@ ms.locfileid: "49949905"
  [Office 솔루션 빌드](../vsto/building-office-solutions.md)   
  [Office 솔루션 배포](../vsto/deploying-an-office-solution.md)   
  [Office 프로젝트 템플릿 개요](../vsto/office-project-templates-overview.md)  
-  
-  

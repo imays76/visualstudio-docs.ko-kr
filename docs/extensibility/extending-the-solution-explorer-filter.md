@@ -1,9 +1,6 @@
 ---
 title: 솔루션 탐색기 필터 확장 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Solution Explorer, extending
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf43243abc361df6c5b32b0e71e966c61a501b52
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 3a5702a5ab42de90363328f0118b89cdc94d67f4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498790"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830299"
 ---
 # <a name="extend-the-solution-explorer-filter"></a>솔루션 탐색기 필터 확장
 확장할 수 있습니다 **솔루션 탐색기** 기능을 다른 파일을 표시할지를 필터링 합니다. 예를 들어 C# 클래스 팩터리의 파일만 표시 하는 필터를 만들면 합니다 **솔루션 탐색기**처럼이 연습을 보여 줍니다.  

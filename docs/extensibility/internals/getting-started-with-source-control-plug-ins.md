@@ -1,9 +1,6 @@
 ---
 title: 원본 제어 플러그 인을 시작 하기 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, getting started
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f1eb4f76616f6a5f6791cbcd1b8a5770d1dcabb
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 829bf676a407fd166eda252cb4e6e2fbdb93fa41
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498102"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854505"
 ---
 # <a name="get-started-with-source-control-plug-ins"></a>원본 제어 플러그 인 시작
 원본 제어 플러그 인 api에서 정의 된 함수를 구현 하는 DLL을 소스 제어 플러그 인을 만들려면 만들어야 차례로 사용 하 여 DLL을 등록 하려면 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 소스 코드 버전 제어에서 사용 하기 위해 사용할 수 있도록 합니다.  

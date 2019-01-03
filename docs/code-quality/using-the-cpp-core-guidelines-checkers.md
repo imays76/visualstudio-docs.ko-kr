@@ -8,19 +8,18 @@ manager: wpickett
 dev_langs:
 - CPP
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
-ms.openlocfilehash: 6595e8990dece15e88e07a6c8eefabd3f543bbb7
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: 2ed89e5210a3b8201f612887f2346b57e03cef20
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143465"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820240"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>C++ Core Guidelines를 이용한 코드검사 사용
 C++ Core Guidelines는 이식 가능한 집합 지침, 규칙 및 C++ 전문가가 및 디자이너에서 생성하는 C++에서 코딩 하는 방법에 대 한 모범 사례입니다. Visual Studio는 현재 C++용 코드 분석 도구의 일부로 이러한 규칙의 하위 집합을 지원합니다. 핵심 지침 검사기는 Visual Studio 2017에서는 기본적으로 설치 되며 [Visual Studio 2015 용 NuGet 패키지로 제공](#vs2015_corecheck)합니다.
 
 ## <a name="the-c-core-guidelines-project"></a>C++ Core Guidelines 프로젝트
- C++ Core Guidelines를 안전하게 하고 효과적으로 최신 C++을 사용하는 데는 Bjarne Stroustrup 등에서 생성 합니다. 지침에는 정적 형식 안전성 및 리소스 보안 강조합니다. 제거 하거나 언어의 가장 오류가 발생 하기 쉬운 부분을 최소화 하는 방법을 식별 하며 신뢰할 수 있는 방식으로 코드를 간단 하 게 하는 방법 및 성능이 향상 하는 것이 좋습니다. 이러한 지침 표준 C++ Foundation에서 유지 됩니다. 자세한 내용은 설명서를 참조 [C++ Core Guidelines](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines), C++ Core Guidelines 설명서 프로젝트 파일에 액세스 하고 [GitHub](https://github.com/isocpp/CppCoreGuidelines)합니다.
+ C++ Core Guidelines를 안전 하 게 하 고 효과적으로 최신 C++를 사용 하는 데는 Bjarne Stroustrup 등에서 생성 합니다. 지침에는 정적 형식 안전성 및 리소스 보안 강조합니다. 제거 하거나 언어의 가장 오류가 발생 하기 쉬운 부분을 최소화 하는 방법을 식별 하며 신뢰할 수 있는 방식으로 코드를 간단 하 게 하는 방법 및 성능이 향상 하는 것이 좋습니다. 이러한 지침 표준 C++ Foundation에서 유지 됩니다. 자세한 내용은 설명서를 참조 [C++ Core Guidelines](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines), C++ Core Guidelines 설명서 프로젝트 파일에 액세스 하고 [GitHub](https://github.com/isocpp/CppCoreGuidelines)합니다.
 
 ## <a name="enable-the-c-core-check-guidelines-in-code-analysis"></a>코드 분석에서 C++ Core Check 지침을 사용 하도록 설정
  선택 하 여 프로젝트에서 코드 분석을 사용할 수 있습니다를 **빌드에 코드 분석 사용** 에서 확인란을 선택 합니다 **코드 분석** 섹션을 **속성 페이지** 대화 상자 프로젝트입니다.
@@ -55,11 +54,11 @@ int main()
 
 이 예제에서는 C++ Core Check 규칙을 찾을 수 있는 경고의 일부를 보여 줍니다.
 
-- 규칙 하세요 (type.5 C26494: 항상 개체를 초기화 합니다.
+- C26494 규칙 하세요 (type.5 같습니다. 항상 개체를 초기화 합니다.
 
-- C26485은 규칙 Bounds.3: 포인터로 배열으로 인해 고갈 상태가 없습니다.
+- C26485 규칙 Bounds.3 같습니다. 배열-포인터 decay 없습니다.
 
-- C26481은 규칙 합니다 (bounds.1: 포인터 산술 연산을 사용 하지 마세요. 대신 `span`를 사용하세요.
+- C26481 규칙 합니다 (bounds.1 같습니다. 포인터 산술 연산을 사용 하지 마세요. 대신 `span`를 사용하세요.
 
 C++ Core Check 코드 분석 규칙 집합은를 설치 하 고이 코드를 컴파일할 때 사용 하도록 설정 하는 경우 처음 두 개의 경고를 출력 하지만 세 번째 표시 되지 않습니다. 빌드 출력에서 예제 코드는 다음과 같습니다.
 

@@ -3,7 +3,6 @@ title: 워크플로 디자이너-InitializeCorrelation 활동 디자이너
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.ServiceModel.Activities.InitializeCorrelation.UI
 ms.assetid: 4c54f34c-ee84-42a6-abb0-ec260c1ccb76
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f72cb538018588ab11335be5a99fe86b5c474c3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 693c0304a8204832c3d3f06eb5587d7274d7d260
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879885"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858619"
 ---
 # <a name="initializecorrelation-activity-designer"></a>InitializeCorrelation 활동 디자이너
 
@@ -47,7 +46,7 @@ ms.locfileid: "49879885"
 |<xref:System.ServiceModel.Activities.InitializeCorrelation.Correlation%2A>|False|상관 관계에서 워크플로 활동을 연결하는 데 사용되는 <xref:System.ServiceModel.Activities.CorrelationHandle>입니다.|
 |<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>|False|메시지를 워크플로 인스턴스와 연결하는 상관 관계 데이터의 사전입니다.<br /><br /> 사용 된 **상관 관계 초기화** 대화 상자를 구성할 수는 <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>합니다. 사용에 대 한 자세한 내용은이 대화 상자를 참조 합니다 [형식 컬렉션 편집기 대화 상자](../workflow-designer/type-collection-editor-dialog-box.md) 문서.|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
 - [Receive](../workflow-designer/receive-activity-designer.md)

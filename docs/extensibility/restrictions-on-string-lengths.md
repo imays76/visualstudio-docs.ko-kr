@@ -1,9 +1,6 @@
 ---
 title: 문자열 길이 제한 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, restrictions on string lengths
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b3552a88f5a78b627e72e877758cf6b7d12de95
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 5bb973a1f50bb29cc605ab63916d8e75b17d1853
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638536"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852718"
 ---
 # <a name="restrictions-on-string-lengths"></a>문자열 길이 제한
 원본 제어 플러그 인 API는 다양 한 함수에서 사용 되는 문자열의 길이 제한 합니다.  
@@ -42,5 +39,5 @@ ms.locfileid: "39638536"
 |SCC_USER_SIZE|32|  
 |SCC_PRJPATH_SIZE|301|  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [원본 제어 플러그 인](../extensibility/source-control-plug-ins.md)

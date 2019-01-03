@@ -3,19 +3,18 @@ title: 워크플로 디자이너-상태 시스템 활동 디자이너
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 ms.assetid: 97f0bff5-7e48-4914-8f04-8015a1c6bfae
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d3597a915e5b0ff946539a025a724778d7f6563a
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: f105a583937650fbccf176efdf04faee3993914d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755511"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873650"
 ---
 # <a name="state-machine-activity-designers"></a>상태 시스템 활동 디자이너
 
@@ -39,7 +38,7 @@ ms.locfileid: "36755511"
 
  [활동 디자이너 사용](../workflow-designer/using-the-activity-designers.md)
 
- [메시징](../workflow-designer/messaging-activity-designers.md)
+ [Messaging](../workflow-designer/messaging-activity-designers.md)
 
  [런타임](../workflow-designer/runtime-activity-designers.md)
 

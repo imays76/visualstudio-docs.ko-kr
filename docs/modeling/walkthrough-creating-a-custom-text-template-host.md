@@ -11,16 +11,15 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 21ef658d3eebe23fba228517700b3804f89a7842
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1a94819b23b404634434ca3d9cdb210dc8e1dce7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878845"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840767"
 ---
 # <a name="walkthrough-create-a-custom-text-template-host"></a>연습: 사용자 지정 텍스트 템플릿 호스트 만들기
 
@@ -718,7 +717,7 @@ ms.locfileid: "49878845"
 
 4. 에 대 한 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 열만 합니다 **프로젝트** 메뉴 **CustomHost 속성**합니다. 에 **시작 개체** 목록에서 클릭 **CustomHost.Program**합니다.
 
-5. 에 **파일** 메뉴에서 클릭 **모두 저장**합니다.
+5. **파일** 메뉴에서 **모두 저장**을 클릭합니다.
 
 6. **빌드** 메뉴에서 **솔루션 빌드**를 클릭합니다.
 
@@ -821,8 +820,8 @@ ms.locfileid: "49878845"
 
 ## <a name="next-steps"></a>다음 단계
 
-이 연습에서는 기본 변형 기능을 지원하는 텍스트 템플릿 변형 호스트를 만들었습니다. 사용자 지정 또는 생성된 지시문 프로세서를 호출하는 텍스트 템플릿을 지원하도록 호스트를 확장할 수 있습니다. 자세한 내용은 [연습: 생성 된 지시문 프로세서에 호스트 연결](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)합니다.
+이 연습에서는 기본 변형 기능을 지원하는 텍스트 템플릿 변형 호스트를 만들었습니다. 사용자 지정 또는 생성된 지시문 프로세서를 호출하는 텍스트 템플릿을 지원하도록 호스트를 확장할 수 있습니다. 자세한 내용은 [연습: 생성된 된 지시문 프로세서에 호스트 연결](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>

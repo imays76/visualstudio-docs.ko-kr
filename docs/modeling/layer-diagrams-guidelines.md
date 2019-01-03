@@ -13,13 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: b7e282ed6aa93189ab15e608a5b3abe0c56411b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f4a044481b1e359b2021b16da1f0b2b5aba8a872
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863336"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924425"
 ---
 # <a name="dependency-diagrams-guidelines"></a>종속성 다이어그램: 지침
 
@@ -174,7 +173,7 @@ ms.locfileid: "49863336"
 
 이후 코드 변경 종속성 다이어그램을 따르는지를 확인 하려면 솔루션의 표준 빌드 프로세스에 레이어 유효성 검사를 포함 합니다. 다른 팀 멤버에 솔루션을 빌드할 때마다 코드의 종속성과 종속성 다이어그램 간의 차이점 빌드 오류로 보고 됩니다. 빌드 프로세스에 레이어 유효성 검사를 포함 하는 방법에 대 한 자세한 내용은 참조 하세요. [종속성 다이어그램을 사용 하 여 코드의 유효성을 검사](../modeling/validate-code-with-layer-diagrams.md)합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [종속성 다이어그램: 참조](../modeling/layer-diagrams-reference.md)
 - [코드에서 종속성 다이어그램 만들기](../modeling/create-layer-diagrams-from-your-code.md)

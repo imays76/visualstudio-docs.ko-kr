@@ -1,9 +1,6 @@
 ---
-title: '방법: 사용자 인터페이스 오류 표시 추가 기능인'
-ms.custom: ''
+title: '방법: 추가 사용자 인터페이스 오류 표시'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,21 +15,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dd6da0c83d0dee835169a0a8068af8d75facbbd4
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 5a11f6bcff5d16a6fc12de5db7e1a7410b4357fb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674764"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819715"
 ---
-# <a name="how-to-show-add-in-user-interface-errors"></a>방법: 사용자 인터페이스 오류 표시 추가 기능인
-  VSTO 추가 기능에 Microsoft Office 사용자 인터페이스 (UI) 및 실패를 조작 하려고 시도 하는 경우에 기본적으로 오류 메시지가 표시 됩니다. 그러나 UI에 관련된 오류에 대한 메시지를 표시하도록 Microsoft Office 응용 프로그램을 구성할 수 있습니다. 이러한 메시지는 이유는 리본 나타나지만 컨트롤이 표시 또는 사용자 지정 리본을 표시 되지 않는 이유를 확인 하는 데 사용할 수 있습니다.  
+# <a name="how-to-show-add-in-user-interface-errors"></a>방법: 추가 사용자 인터페이스 오류 표시
+  VSTO 추가 기능에 Microsoft Office 사용자 인터페이스 (UI) 및 실패를 조작 하려고 시도 하는 경우에 기본적으로 오류 메시지가 표시 됩니다. 그러나 UI에 관련된 오류에 대한 메시지를 표시하도록 Microsoft Office 애플리케이션을 구성할 수 있습니다. 이러한 메시지는 이유는 리본 나타나지만 컨트롤이 표시 또는 사용자 지정 리본을 표시 되지 않는 이유를 확인 하는 데 사용할 수 있습니다.  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
 ## <a name="to-show-vsto-add-in-user-interface-errors"></a>VSTO 추가 기능 사용자 인터페이스 오류를 표시하려면  
   
-1.  응용 프로그램을 시작합니다.  
+1.  애플리케이션을 시작합니다.  
   
 2.  **파일** 탭을 클릭합니다.  
   
@@ -43,12 +40,10 @@ ms.locfileid: "35674764"
 5.  세부 정보 창에서 **VSTO 추가 기능 사용자 인터페이스 오류 표시**를 선택하고 **확인**을 클릭합니다.  
   
     > [!NOTE]  
-    >  Outlook의 경우 세부 정보 창의 **개발자** 섹션에 **VSTO 추가 기능 사용자 인터페이스 오류 표시** 확인란이 있습니다. 다른 응용 프로그램의 경우 이 확인란은 세부 정보 창의 **일반** 섹션에 있습니다.  
+    >  Outlook의 경우 세부 정보 창의 **개발자** 섹션에 **VSTO 추가 기능 사용자 인터페이스 오류 표시** 확인란이 있습니다. 다른 애플리케이션의 경우 이 확인란은 세부 정보 창의 **일반** 섹션에 있습니다.  
   
 ## <a name="see-also"></a>참고자료  
  [Office UI 사용자 지정](../vsto/office-ui-customization.md)   
  [Outlook 양식 영역 만들기](../vsto/creating-outlook-form-regions.md)   
  [리본 개요](../vsto/ribbon-overview.md)   
  [작업 창 개요](../vsto/actions-pane-overview.md)  
-  
-  

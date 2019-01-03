@@ -1,9 +1,6 @@
 ---
 title: Visual Studio 메뉴의 Guid 및 Id | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - visual studio menus
@@ -18,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b7c8af93604a7e8e33d7d21d26b85c59985b878
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 3c2990e7002a75dfb5868a4079d889c08e49c3c3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499941"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906945"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>Guid 및 Id의 Visual Studio 메뉴
 이 문서에서는 메뉴 및 Visual Studio 메뉴 모음에서 그룹의 GUID 및 ID 값을 열거합니다. 이러한 값에 정의 된 *.vsct* Visual Studio SDK의 일부로 설치 되는 파일입니다. 자세한 내용은 [IDE 정의 명령, 메뉴 및 그룹](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)합니다.  
@@ -75,7 +72,7 @@ ms.locfileid: "39499941"
 |추가|IDG_VS_FILE_ADD|  
 |솔루션|IDG_VS_FILE_SOLUTION|  
 |기타|IDG_VS_FILE_MISC|  
-|저장|IDG_VS_FILE_SAVE|  
+|Save|IDG_VS_FILE_SAVE|  
 |이름 바꾸기|IDG_VS_FILE_RENAME|  
 |브라우저|IDG_VS_FILE_BROWSER|  
 |용|IDG_VS_FILE_PRINT|  
@@ -181,7 +178,7 @@ ms.locfileid: "39499941"
  다음 계층에서는 Visual Studio 메뉴 모음에서 메뉴와 연결 된 하위 메뉴를 보여 줍니다. 그룹만 부모로 메뉴를 가질 수 있으므로 모든 하위 메뉴 해야 내림차순 그룹에서 메뉴의 대신 메뉴에서 직접. 메뉴, 그룹 및 하위 메뉴 간의 관계에 대 한 자세한 내용은 참조 하세요. [하위 메뉴에 추가](../../extensibility/adding-a-submenu-to-a-menu.md)합니다.  
   
 > [!NOTE]
->  Visual Studio 메뉴 모음에서 메뉴의 이름을 표시 되지 않습니다 별도로이 계층 구조에 있으므로 다음과 같이 IDE에서 그룹에 대 한 명명 규칙에서 유추할 수 있습니다: *IDG_VS_\<메뉴 이름\>_\< 그룹 이름을\>* 합니다.  
+>  Visual Studio 메뉴 모음에서 메뉴 이름은 별도로이 계층에서 때문에 표시 되지 다음과 같이 IDE에서 그룹에 대 한 명명 규칙에서 유추할 수 있습니다. *IDG_VS_\<메뉴 이름\>_\<그룹 이름\>* 합니다.  
   
 |부모 그룹|하위 메뉴|자식 그룹|  
 |------------------|-------------|------------------|  

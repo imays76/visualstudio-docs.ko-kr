@@ -1,9 +1,6 @@
 ---
 title: 도구 창의 바로 가기 메뉴를 추가 합니다. | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - context menus, adding to tool windows
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5567fd2fe72b8fcc102c8609ac0d155f78141a9
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: fa350ff37a5073a5def0140db694b53c9fdf5067
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078617"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909803"
 ---
 # <a name="add-a-shortcut-menu-in-a-tool-window"></a>도구 창의 바로 가기 메뉴 추가
 이 연습에서는 도구 창의 바로 가기 메뉴를 배치합니다. 바로 가기 메뉴에 단추, 텍스트 상자 또는 창 배경 단추로 클릭할 때 표시 되는 메뉴가입니다. 바로 가기 메뉴에서 명령을 다른 메뉴 또는 도구 모음에서 명령과 동일 하 게 동작 합니다. 바로 가기 메뉴를 지원 하려면 지정 된 *.vsct* 파일을 마우스 오른쪽 단추 클릭에 대 한 응답에 표시 합니다.  
@@ -119,10 +116,10 @@ ms.locfileid: "39078617"
   
     ```csharp  
     public const string guidShortcutMenuPackageCmdSet = "00000000-0000-0000-0000-00000000"; // your GUID will differ  
-    public const int ColorMenu = 0x1000;  
-    public const int cmdidRed = 0x102;  
-    public const int cmdidYellow = 0x103;  
-    public const int cmdidBlue = 0x104;  
+    public const int ColorMenu = 0x1000;  
+    public const int cmdidRed = 0x102;  
+    public const int cmdidYellow = 0x103;  
+    public const int cmdidBlue = 0x104;  
     ```  
   
      다음은의 Symbols 섹션에 정의 된 동일한 명령 Id를 *ShortcutMenuPackage.vsct* 파일입니다. 상황에 맞는 그룹 포함 되지 않습니다 여기에 필요 합니다 *.vsct* 파일입니다.  
@@ -211,7 +208,7 @@ ms.locfileid: "39078617"
 7.  *ShortcutMenuControl.xaml.cs*, 이벤트 처리기에 대 한 스텁을 추가 합니다.  
   
     ```csharp  
-    private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)  
+    private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)  
     {  
     . . .  
     }  
@@ -279,6 +276,6 @@ ms.locfileid: "39078617"
   
 4.  바로 가기 메뉴의 색을 클릭 합니다. 도구 창 배경 색상은 선택한 색으로 변경 되어야 합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)   
  [사용 하 고 서비스를 제공 합니다.](../extensibility/using-and-providing-services.md)

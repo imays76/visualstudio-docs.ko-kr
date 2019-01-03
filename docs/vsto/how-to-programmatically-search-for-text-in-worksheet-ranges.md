@@ -1,9 +1,6 @@
 ---
 title: '방법: 프로그래밍 방식으로 워크시트 범위에서 텍스트 검색'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a323336979e16be376cfcd3da44cbc9b12bd73ea
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: dba0ce5928b61b1ec6b5777e1922cc68f8ed57ee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671965"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826129"
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>방법: 프로그래밍 방식으로 워크시트 범위에서 텍스트 검색
   합니다 <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> 메서드는 <xref:Microsoft.Office.Interop.Excel.Range> 개체 범위 내에서 텍스트를 검색할 수 있습니다. 이 텍스트와 같은 워크시트 셀에 표시 될 수 있는 오류 문자열 중 하나 일 수도 있습니다 `#NULL!` 또는 `#VALUE!`합니다. 오류 문자열에 대 한 자세한 내용은 참조 하세요. [오류 값을 셀](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values)합니다.  
@@ -34,7 +31,7 @@ ms.locfileid: "50671965"
 > [!NOTE]  
 >  <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> 메서드의 검색 범위의 끝에 도달한 후 검색 범위의 시작 부분에 다시 래핑합니다. 코드는 검색 주위에 배치 되지 무한 루프에 확인 해야 합니다. 예제 프로시저를 사용 하 여 처리 하는 방법을 보여 줍니다는 <xref:Microsoft.Office.Interop.Excel.Range.Address%2A> 속성입니다.  
   
- ![비디오 링크](../vsto/media/playvideo.gif "비디오 링크") 관련된 비디오 데모를 참조 하세요. [i: 사용 하 여 Excel 추가 기능에서 Find 메서드 방법?](http://go.microsoft.com/fwlink/?LinkID=130294)합니다.  
+ ![비디오 링크](../vsto/media/playvideo.gif "비디오 링크") 관련된 비디오 데모를 참조 하세요. [어떻게 할까요? Find 메서드를 사용 하 여 Excel 추가 기능에서? ](http://go.microsoft.com/fwlink/?LinkID=130294).  
   
 ## <a name="to-search-for-text-in-a-worksheet-range"></a>워크시트 범위에서 텍스트를 검색 하려면  
   
@@ -84,5 +81,3 @@ ms.locfileid: "50671965"
  [방법: 프로그래밍 방식으로 통합 문서에서 범위에 스타일 적용](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
  [방법: 프로그래밍 방식으로 코드에서 워크시트 범위 참조](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
  [Office 솔루션의 선택적 매개 변수](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
 title: '방법: 프로그래밍 방식으로 숨김된 모드에서 Word 대화 상자를 사용 하 여'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d5b123f1b58e61dffc64b5df912092edfd3fbf53
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0594bea01d8b6fb5cef993a2704beb658b513c48
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674819"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819629"
 ---
 # <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>방법: 프로그래밍 방식으로 숨김된 모드에서 Word 대화 상자를 사용 하 여
   사용자에 게 표시 하지 않고 Microsoft Office Word의 기본 제공 대화 상자를 호출 하 여 호출 하 여 복잡 한 작업을 수행할 수 있습니다. 사용 하 여이 수행할 수 있습니다 합니다 <xref:Microsoft.Office.Interop.Word.Dialog.Execute%2A> 메서드를 <xref:Microsoft.Office.Interop.Word.Dialog> 호출 하지 않고 개체를 <xref:Microsoft.Office.Interop.Word.Dialog.Display%2A> 메서드.  
@@ -47,5 +44,3 @@ ms.locfileid: "35674819"
  [Office 솔루션에서 런타임에 바인딩](../vsto/late-binding-in-office-solutions.md)   
  [리플렉션(C#)](/dotnet/csharp/programming-guide/concepts/reflection)  
  [리플렉션(Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/reflection)  
-  
-  

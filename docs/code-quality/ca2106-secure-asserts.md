@@ -1,8 +1,7 @@
 ---
-title: 'CA2106: 어설션을 안전하게 하십시오.'
+title: 'CA2106: 어설션을 안전하게 보호하세요.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2106
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ff16cdce4be04bd076c93763fb6a22d2721675f
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 164d2bbe335f4b69892cf069bade5cf0df1e0787
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551784"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864675"
 ---
-# <a name="ca2106-secure-asserts"></a>CA2106: 어설션을 안전하게 하십시오.
+# <a name="ca2106-secure-asserts"></a>CA2106: 어설션을 안전하게 보호하세요.
 
 |||
 |-|-|
@@ -44,7 +43,7 @@ ms.locfileid: "45551784"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
  신중 하 게 보안을 검토 한 후에이 규칙에서 경고를 표시 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>
 - [보안 코딩 지침](/dotnet/standard/security/secure-coding-guidelines)
