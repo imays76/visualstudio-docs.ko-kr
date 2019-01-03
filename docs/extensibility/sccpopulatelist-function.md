@@ -1,9 +1,6 @@
 ---
 title: SccPopulateList 함수 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccPopulateList
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73cc3886fe486498f7d0fbe89d0b68cf873c9d0b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b41cea5b06022764e2f05ddd32f1ed476934f691
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903571"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887778"
 ---
 # <a name="sccpopulatelist-function"></a>SccPopulateList 함수
 이 함수는 특정 원본 제어 명령 위한 파일의 목록을 업데이트 하 고 모든 지정 된 파일에 소스 제어 상태를 제공 합니다.  

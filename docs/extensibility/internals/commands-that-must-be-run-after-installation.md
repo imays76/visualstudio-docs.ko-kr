@@ -1,9 +1,6 @@
 ---
 title: 설치 후 실행 해야 하는 명령을 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - post-install commands
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08e1bcf064a8e94af306230e705f686d2d8037c1
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 691cabb67df53faf23c23e2fa3f05f0ca68038a7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510708"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915551"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>설치 후 실행 해야 하는 명령
 통해 확장 프로그램을 배포 하는 경우는 *.msi* 를 실행 해야 파일 **devenv /setup** for Visual Studio 확장을 검색 하는 순서 대로 설치의 일부로.  
@@ -31,7 +28,7 @@ ms.locfileid: "39510708"
   
 ### <a name="reglocator-table-rows-to-locate-devenvexe-from-different-versions-of-visual-studio"></a>Visual Studio의 서로 다른 버전의 devenv.exe를 찾으려고 RegLocator 테이블 행  
   
-|서명|루트|Key|name|형식|  
+|서명|루트|Key|이름|형식|  
 |-----------------|----------|---------|----------|----------|  
 |RL_DevenvExe_2002|2|SOFTWARE\Microsoft\VisualStudio\7.0\Setup\VS|EnvironmentPath|2|  
 |RL_DevenvExe_2003|2|SOFTWARE\Microsoft\VisualStudio\7.1\Setup\VS|EnvironmentPath|2|  

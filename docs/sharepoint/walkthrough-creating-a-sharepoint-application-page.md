@@ -1,13 +1,8 @@
 ---
 title: '연습: SharePoint 응용 프로그램 페이지 만들기 | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 52ff6b3431ac3f87c85eefcf728cfe4c4875f884
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 22f53a59119ed10055decdd5c055edf378838c72
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634789"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867841"
 ---
 # <a name="walkthrough-create-a-sharepoint-application-page"></a>연습: SharePoint 응용 프로그램 페이지 만들기
  
@@ -78,7 +73,7 @@ ms.locfileid: "42634789"
 
 응용 프로그램 페이지 항목을 사용 하면 디자이너를 사용 하 여 응용 프로그램 페이지를 ASP.NET 컨트롤을 추가할 수 있습니다. 이 디자이너는 Visual Web Developer에서 사용 하는 동일한 디자이너입니다. 레이블, 라디오 단추 목록 및 테이블을 추가 합니다 **원본** 디자이너의 보기 및 표준 ASP.NET 페이지를 디자인할 때와 마찬가지로 다음 속성을 설정 합니다.
 
-1. 메뉴 모음에서 선택 **뷰** > **도구 상자**합니다.
+1. 메뉴 모음에서 **보기** > **도구 상자**를 선택합니다.
 
 2. 표준 노드의 합니다 **도구 상자**, 다음 단계 중 하나를 수행 합니다.
 

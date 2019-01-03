@@ -1,9 +1,6 @@
 ---
-title: '방법: 서비스 제공 | Microsoft Docs'
-ms.custom: ''
+title: '방법: 서비스를 제공 합니다. | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - services, providing
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2408eace3ecea447c9b49ff17c729e3f4661b5d6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c42cd3d937cd12ae11d6550fec119ea47c2a6025
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942558"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857817"
 ---
-# <a name="how-to-provide-a-service"></a>방법: 서비스 제공
+# <a name="how-to-provide-a-service"></a>방법: 서비스를 제공 합니다.
 VSPackage는 다른 Vspackage에서 사용할 수 있는 서비스를 제공할 수 있습니다. 서비스를 제공 하는 VSPackage에 서비스 Visual Studio를 등록 하 고 서비스를 추가 해야 합니다.  
   
  합니다 <xref:Microsoft.VisualStudio.Shell.Package> 둘 다 클래스 구현 <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> 및 <xref:System.ComponentModel.Design.IServiceContainer>합니다. <xref:System.ComponentModel.Design.IServiceContainer> 주문형 서비스를 제공 하는 콜백 메서드를 포함 합니다.  

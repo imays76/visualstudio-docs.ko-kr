@@ -1,5 +1,5 @@
 ---
-title: '방법: 도메인별 언어에서 표준 메뉴 명령 수정'
+title: '방법: 도메인 특정 언어에서 표준 메뉴 명령 수정'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +11,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6aa827781cb8ea78aa5df79f8cb839a6f3548e11
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: bc7eedfbdf725333a5cd6d3cdd3d683437d1979c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967053"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870192"
 ---
-# <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>방법: 도메인별 언어에서 표준 메뉴 명령 수정
+# <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>방법: 도메인 특정 언어에서 표준 메뉴 명령 수정
 
 DSL에서 자동으로 정의되는 일부 표준 명령의 동작을 수정할 수 있습니다. 예를 들어, 수정할 수 있습니다 **잘라내기** 중요 한 정보가 제외 되도록 합니다. 이렇게 하려면 명령 집합 클래스에서 메서드를 재정의합니다. 이러한 클래스는 DslPackage 프로젝트의 CommandSet.cs 파일에서 정의되며 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>에서 파생됩니다.
 
@@ -71,7 +70,7 @@ DSL에서 자동으로 정의되는 일부 표준 명령의 동작을 수정할 
 
 ## <a name="override-the-command-methods"></a>명령 메서드 재정의
 
-대부분의 명령에 연결 된 메서드가 두: 같은 이름 사용 하 여 메서드 `ProcessOnStatus`... 명령이 표시 되 고 사용할 수 있어야 하는지 여부를 결정 합니다. 이 메서드는 사용자가 다이어그램을 마우스 오른쪽 단추로 클릭할 때마다 호출되고 빠르게 실행되며 아무것도 변경하지 않아야 합니다. `ProcessOnMenu`... 사용자 명령을 클릭 하 고 명령의 기능을 수행 해야 하는 경우 호출 됩니다. 이 두 메서드 중 하나 또는 둘 다를 재정의할 수 있습니다.
+대부분의 명령에는 두 연결된 방법이 있습니다. 이름 사용 하 여 메서드 같은 `ProcessOnStatus`... 명령이 표시 되 고 사용할 수 있어야 하는지 여부를 결정 합니다. 이 메서드는 사용자가 다이어그램을 마우스 오른쪽 단추로 클릭할 때마다 호출되고 빠르게 실행되며 아무것도 변경하지 않아야 합니다. `ProcessOnMenu`... 사용자 명령을 클릭 하 고 명령의 기능을 수행 해야 하는 경우 호출 됩니다. 이 두 메서드 중 하나 또는 둘 다를 재정의할 수 있습니다.
 
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>메뉴에 명령이 표시되는 경우를 변경하려면
 
@@ -144,7 +143,7 @@ protected override void ProcessOnMenuDeleteCommand()
 
 개체 및 링크를 만드는 방법에 대 한 요소를 이동 하는 방법에 대 한 자세한 내용은 참조 하세요 [탐색 및 업데이트 프로그램 코드에서 모델](../modeling/navigating-and-updating-a-model-in-program-code.md)합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.ComponentModel.Design.MenuCommand>
 - [도메인별 언어를 사용자 지정하는 코드 작성](../modeling/writing-code-to-customise-a-domain-specific-language.md)

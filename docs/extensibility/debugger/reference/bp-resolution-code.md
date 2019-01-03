@@ -1,9 +1,6 @@
 ---
 title: BP_RESOLUTION_CODE | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - BP_RESOLUTION_CODE
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbd9e3d683336d2009e8ff9f02665f7610f988f9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8e8295187087915feb8b0766e363f0d4883d56d6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915193"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925289"
 ---
 # <a name="bpresolutioncode"></a>BP_RESOLUTION_CODE
 코드 중단점의 위치를 설명 합니다.  
@@ -28,13 +25,13 @@ ms.locfileid: "49915193"
 ## <a name="syntax"></a>구문  
   
 ```cpp  
-typedef struct _BP_RESOLUTION_CODE {   
+typedef struct _BP_RESOLUTION_CODE {   
    IDebugCodeContext2* pCodeContext;  
 } BP_RESOLUTION_CODE;  
 ```  
   
 ```csharp  
-public struct BP_RESOLUTION_CODE {   
+public struct BP_RESOLUTION_CODE {   
    public IDebugCodeContext2 pCodeContext;  
 };  
 ```  
@@ -49,9 +46,9 @@ public struct BP_RESOLUTION_CODE {
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>참고 항목  
  [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)   

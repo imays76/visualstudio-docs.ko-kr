@@ -1,9 +1,6 @@
 ---
 title: 레거시 언어 서비스의 탐색 모음에 대 한 지원 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Navigation bar, supporting in language services [managed package framework]
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3ca2b29ca942287180df45629c40a4f38e7a573
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a9fc9d4339978f84b02a5c922c06139031924bf4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918157"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868815"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>레거시 언어 서비스의 탐색 모음 지원
 편집기 보기의 맨 위에 있는 탐색 모음에서 파일 형식 및 멤버를 표시합니다. 왼쪽된 드롭다운 목록에 표시 됩니다 및 멤버 드롭다운 오른쪽에 표시 됩니다. 사용자가 유형을 선택 하면 형식의 첫 번째 줄에 캐럿 배치 됩니다. 사용자가 멤버를 선택 하면 멤버의 정의에 캐럿 배치 됩니다. 드롭다운 목록 상자 캐럿의 현재 위치를 반영 하도록 업데이트 됩니다.  

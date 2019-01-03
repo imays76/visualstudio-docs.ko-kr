@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 82466360fd4f891d28e0218a540d27c803a39662
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 63243df353dc141363a3ebfdd61a5f90a2fe6258
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858876"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887869"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>다이어그램에 배경 이미지 설정
 Visual Studio Visualization and Modeling SDK에서 사용자 지정 코드를 사용 하 여 생성된 된 디자이너의 배경 이미지를 설정할 수 있습니다.
@@ -45,7 +44,7 @@ Visual Studio Visualization and Modeling SDK에서 사용자 지정 코드를 �
 
 11. Resources.Designer.cs가 없는 경우 클릭 Resources.resx 파일에서 **솔루션 탐색기**합니다.
 
-12. 에 **속성** 창에서 설정 합니다 `Custom Tool` 속성을 `ResXFileCodeGenerator`합니다.
+12. **속성** 창에서 `Custom Tool` 속성을 `ResXFileCodeGenerator`로 설정합니다.
 
 13. **솔루션 탐색기**Dsl 프로젝트를 마우스 오른쪽 단추로 클릭, 가리킨 **추가**를 클릭 하 고 **새 폴더**합니다.
 

@@ -1,9 +1,6 @@
 ---
 title: 구성 요소 관리 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - installation [Visual Studio SDK], components
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00a6ea41d631c171700db75361b7aa0beed81cc2
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 31508fd720d1bf6695d6f735e57a829b72087ba9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510870"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917453"
 ---
 # <a name="component-management"></a>구성 요소 관리
 Windows 설치 관리자에서 작업의 단위는 Windows 설치 관리자 구성 요소 (WICs 또는 구성 요소 라고도 함) 라고 합니다. 설치 및 Windows Installer를 사용 하는 설정에 대 한 계산 참조의 기본 단위는 각 WIC를 식별 하는 GUID입니다.  

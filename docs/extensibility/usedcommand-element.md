@@ -1,9 +1,6 @@
 ---
 title: UsedCommand 요소 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - UsedCommands element (VSCT XML schema)
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f7df36c05de0d8dc2f68ab8e41afa11366276b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 697685ea3cf39cf1aede3d2a475d3d3bb39c587f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856303"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886048"
 ---
 # <a name="usedcommand-element"></a>UsedCommand 요소
 다른.vsct 파일에 정의 된 명령에 액세스 하기 위해 VSPackage를 사용 하도록 설정 합니다. 예를 들어 VSPackage는 표준을 **복사본** 명령에 정의 된는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 셸을 추가할 수 명령을 메뉴나 도구 모음을 다시 구현 하지 않고도 합니다.  
@@ -37,8 +34,8 @@ ms.locfileid: "49856303"
   
 |특성|설명|  
 |---------------|-----------------|  
-|guid|필수. 명령을 식별 하는 GUID ID 쌍의 GUID입니다.|  
-|ID|필수. 명령을 식별 하는 GUID ID 쌍의 ID입니다.|  
+|guid|필수 요소. 명령을 식별 하는 GUID ID 쌍의 GUID입니다.|  
+|ID|필수 요소. 명령을 식별 하는 GUID ID 쌍의 ID입니다.|  
 |조건|선택 사항입니다. 참조 [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)합니다.|  
   
 ### <a name="child-elements"></a>자식 요소  

@@ -1,9 +1,6 @@
 ---
 title: Office 응용 프로그램 및 프로젝트 형식으로 사용할 수 있는 기능
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,12 +19,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c495119dea17fa7d4a848c6e3d6f5b16128af378
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 679b0456548a675545d81353332ddb70dcce8cdc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648154"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986403"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>Office 응용 프로그램 및 프로젝트 형식으로 사용할 수 있는 기능
   Visual Studio에는 다음과 같은 형식을 비롯하여 Microsoft Office 응용 프로그램에 대한 다양한 비즈니스 시나리오를 지원하는 몇 가지 프로젝트 템플릿 형식이 있습니다.  
@@ -68,7 +65,7 @@ ms.locfileid: "53648154"
 |리본 사용자 지정|문서 수준 프로젝트<br /><br /> 다음 응용 프로그램의 VSTO 추가 기능 프로젝트:<br /><br /> -Excel<br />-InfoPath (InfoPath 2013 및 InfoPath 2010만 해당)<br />-Outlook<br />-PowerPoint<br />-프로젝트<br />Visio<br />단어|[리본 개요](../vsto/ribbon-overview.md)|  
 |시각적 문서 디자이너|문서 수준 프로젝트|[Visual Studio 환경의 office 프로젝트](../vsto/office-projects-in-the-visual-studio-environment.md)|  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [시작 &#40;Visual Studio에서 Office 개발&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [작업 창 개요](../vsto/actions-pane-overview.md)   
@@ -77,5 +74,3 @@ ms.locfileid: "53648154"
  [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)   
  [문서 수준 사용자 지정의 캐시 된 데이터](../vsto/cached-data-in-document-level-customizations.md)   
  [Office 솔루션 배포](../vsto/deploying-an-office-solution.md)  
-  
-  

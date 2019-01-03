@@ -1,9 +1,6 @@
 ---
 title: Visual Studio의 이미지 및 아이콘 | Microsoft Docs
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 901e6612cec87df0d43c20d34a139b8a578f4f0a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 512b2fe20e1c057c2bac73975a29eff0cc3df8d4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949400"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880704"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Visual Studio의 이미지 및 아이콘
 ##  <a name="BKMK_ImageUseInVisualStudio"></a> Visual Studio에서 이미지 사용  
@@ -26,7 +23,7 @@ ms.locfileid: "49949400"
   
 -   **아이콘**합니다. 명령, 계층, 템플릿 및 등에 표시 되는 작은 이미지입니다. Visual Studio에서 사용 되는 기본 아이콘 크기는 16 x 16 PNG입니다. 이미지 서비스에서 자동으로 생성 되는 아이콘 HDPI 지원이 XAML 형식을 생성 합니다.  
   
-     **참고:** 이미지는 메뉴 시스템으로 사용 하는 동안 모든 명령에 대 한 아이콘 만들지 않아야 합니다. 참조 하세요 [Visual Studio의 메뉴 및 명령](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md) 명령 아이콘을 가져와야 하는지 여부를 확인 합니다.  
+     **참고:** 이미지 메뉴 시스템에서 사용 되지만, 모든 명령에 대 한 아이콘을 만들지 마십시오. 참조 하세요 [Visual Studio의 메뉴 및 명령](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md) 명령 아이콘을 가져와야 하는지 여부를 확인 합니다.  
   
 -   **미리 보기입니다.** 새 프로젝트 대화 상자와 같은 대화 상자에서 미리 보기 영역에 사용 되는 이미지입니다.  
   
@@ -321,7 +318,7 @@ ms.locfileid: "49949400"
   
 ||||||  
 |-|-|-|-|-|  
-|![실행 아이콘](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405 03_ActionModifierRun")<br />실행|![중지 아이콘](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405 19_Stop")<br />Stop|![삭제 아이콘](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405 20_Delete")<br />삭제|![저장 아이콘](../../extensibility/ux-guidelines/media/0405-21_save.png "0405 21_Save")<br />저장|![뒤로 탐색 아이콘](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405 22_NavigateBack")<br />뒤로 탐색|  
+|![실행 아이콘](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405 03_ActionModifierRun")<br />실행|![중지 아이콘](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405 19_Stop")<br />Stop|![삭제 아이콘](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405 20_Delete")<br />삭제|![저장 아이콘](../../extensibility/ux-guidelines/media/0405-21_save.png "0405 21_Save")<br />Save|![뒤로 탐색 아이콘](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405 22_NavigateBack")<br />뒤로 탐색|  
   
 ### <a name="code-hierarchy-palette"></a>코드 계층 색상표  
   
@@ -361,7 +358,7 @@ ms.locfileid: "49949400"
 |이벤트 클래스|VS 작업 주황색|C27D1A / 194,125,26|![견본 C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|  
 |확장 메서드, 메서드, 모듈, 대리자|VS 작업 자주색|652D90 / 101,45,144|![견본 652d90](../../extensibility/ux-guidelines/media/0405_652d90.png "0405_652D90")|  
 |필드, 열거형 항목, 매크로, 구조체, 공용 구조체 값 형식, 연산자, 인터페이스|VS 작업 파랑|00539C / 0,83,156|![견본 00539c](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
-|Object|VS 작업 녹색|388A34 56,138,52 /|![견본 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
+|개체|VS 작업 녹색|388A34 56,138,52 /|![견본 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
 |상수, 예외, 열거형 항목, 맵, 맵 항목, Namespace, 템플릿, 형식 정의|배경 (VS BG)|424242 / 66,66,66|![견본 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|  
   
 ##### <a name="examples-of-intellisense-icons"></a>IntelliSense 아이콘의 예  
@@ -369,7 +366,7 @@ ms.locfileid: "49949400"
 ||||||  
 |-|-|-|-|-|  
 |![IntelliSense 클래스 아이콘](../../extensibility/ux-guidelines/media/0405-36_intellisenseclass.png "0405 36_IntelliSenseClass")<br />클래스|![IntelliSense private 이벤트 아이콘](../../extensibility/ux-guidelines/media/0405-37_intellisenseprivateevent.png "0405 37_IntelliSensePrivateEvent")<br />Private 이벤트|![IntelliSense 대리자 아이콘](../../extensibility/ux-guidelines/media/0405-38_intellisensedelegate.png "0405 38_IntelliSenseDelegate")<br />대리자|![IntelliSense 메서드 친구 아이콘](../../extensibility/ux-guidelines/media/0405-39_intellisensemethodfriend.png "0405 39_IntelliSenseMethodFriend")<br />Friend 메서드|![필드 아이콘](../../extensibility/ux-guidelines/media/0405-40_field.png "0405 40_Field")<br />필드|  
-|![IntelliSense 보호 열거형 항목 아이콘](../../extensibility/ux-guidelines/media/0405-41_intellisenseprotectedenumitem.png "0405 41_IntelliSenseProtectedEnumItem")<br />보호 된 열거형 항목|![IntelliSense 개체 아이콘](../../extensibility/ux-guidelines/media/0405-42_intellisenseobject.png "0405 42_IntelliSenseObject")<br />Object|![IntelliSense 템플릿 아이콘](../../extensibility/ux-guidelines/media/0405-43_intellisensetemplate.png "0405 43_IntelliSenseTemplate")<br />템플릿|![IntelliSense 예외 바로 가기 아이콘](../../extensibility/ux-guidelines/media/0405-44_intellisenseexceptionshortcut.png "0405 44_IntelliSenseExceptionShortcut")<br />예외 바로 가기||  
+|![IntelliSense 보호 열거형 항목 아이콘](../../extensibility/ux-guidelines/media/0405-41_intellisenseprotectedenumitem.png "0405 41_IntelliSenseProtectedEnumItem")<br />보호 된 열거형 항목|![IntelliSense 개체 아이콘](../../extensibility/ux-guidelines/media/0405-42_intellisenseobject.png "0405 42_IntelliSenseObject")<br />개체|![IntelliSense 템플릿 아이콘](../../extensibility/ux-guidelines/media/0405-43_intellisensetemplate.png "0405 43_IntelliSenseTemplate")<br />템플릿|![IntelliSense 예외 바로 가기 아이콘](../../extensibility/ux-guidelines/media/0405-44_intellisenseexceptionshortcut.png "0405 44_IntelliSenseExceptionShortcut")<br />예외 바로 가기||  
   
 ### <a name="notifications"></a>알림  
  Visual Studio의 알림 상태를 나타내는 데 사용 됩니다. 알림 색상표를 검정 또는 흰색 포그라운드 채우기 옵션 뿐만 아니라 다음 네 가지 색을 사용 하 여 다음 상태 수준 사용 하 여 알림을 정의.  

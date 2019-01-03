@@ -1,9 +1,6 @@
 ---
 title: '연습: VBA에서 VSTO 추가 기능에서 코드 호출'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9e46cf9032cae7d6400822be7d72394a7845314f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 89b03298d1a0bb180e3eab706383e48ecd75cd7f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843823"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915905"
 ---
 # <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>연습: VBA에서 VSTO 추가 기능에서 코드 호출
   이 연습에서는 VSTO 추가 기능의 개체를 VBA(Visual Basic for Applications) 및 COM VSTO 추가 기능을 비롯한 다른 Microsoft Office 솔루션에 노출하는 방법을 보여 줍니다.  
@@ -57,7 +54,7 @@ ms.locfileid: "49843823"
   
 ### <a name="to-create-a-new-project"></a>새 프로젝트를 만들려면  
   
-1.  Excel VSTO 추가 기능 프로젝트 템플릿을 사용하여 이름이 **ExcelImportData**인 Excel VSTO 추가 기능 프로젝트를 만듭니다. 자세한 내용은 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)을 참조하세요.  
+1.  Excel VSTO 추가 기능 프로젝트 템플릿을 사용하여 이름이 **ExcelImportData**인 Excel VSTO 추가 기능 프로젝트를 만듭니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 에서는 **ThisAddIn.cs** 또는 **ThisAddIn.vb** 코드 파일을 열고 **ExcelImportData** 프로젝트를 **솔루션 탐색기**에 추가합니다.  
   
@@ -116,7 +113,7 @@ ms.locfileid: "49843823"
 3.  리본에서 **개발자** 탭을 클릭합니다.  
   
     > [!NOTE]  
-    >  **개발자** 탭이 표시되지 않는 경우 먼저 개발자 탭을 표시해야 합니다. 자세한 내용은 [방법: 리본에 개발 도구 탭 표시](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)합니다.  
+    >  **개발자** 탭이 표시되지 않는 경우 먼저 개발자 탭을 표시해야 합니다. 자세한 내용은 [방법: 리본 메뉴에 개발 도구 탭 표시](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)합니다.  
   
 4.  **코드** 그룹에서 **Visual Basic**을 클릭합니다.  
   
@@ -147,11 +144,11 @@ ms.locfileid: "49843823"
 ## <a name="next-steps"></a>다음 단계  
  다음 항목에서 VSTO 추가 기능 프로그래밍에 대해 자세히 알아볼 수 있습니다.  
   
--   `ThisAddIn` 클래스를 사용하여 VSTO 추가 기능 프로젝트에서 호스트 응용 프로그램을 자동화하고 다른 작업을 수행합니다. 자세한 내용은 [프로그램 VSTO 추가 기능](../vsto/programming-vsto-add-ins.md)합니다.  
+-   `ThisAddIn` 클래스를 사용하여 VSTO 추가 기능 프로젝트에서 호스트 애플리케이션을 자동화하고 다른 작업을 수행합니다. 자세한 내용은 [프로그램 VSTO 추가 기능](../vsto/programming-vsto-add-ins.md)합니다.  
   
--   VSTO 추가 기능에서 사용자 지정 작업창을 만듭니다. 자세한 내용은 참조 하세요. [사용자 지정 작업창](../vsto/custom-task-panes.md) 하 고 [방법: 응용 프로그램에 사용자 지정 작업창 추가](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)합니다.  
+-   VSTO 추가 기능에서 사용자 지정 작업창을 만듭니다. 자세한 내용은 [사용자 지정 작업창](../vsto/custom-task-panes.md) 고 [방법: 응용 프로그램에 사용자 지정 작업창 추가](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)합니다.  
   
--   VSTO 추가 기능에서 리본을 사용자 지정 합니다. 자세한 내용은 [리본 개요](../vsto/ribbon-overview.md) 하 고 [방법: 리본 사용자 지정 시작](../vsto/how-to-get-started-customizing-the-ribbon.md).  
+-   VSTO 추가 기능에서 리본을 사용자 지정 합니다. 자세한 내용은 [리본 개요](../vsto/ribbon-overview.md) 고 [방법: 리본 사용자 지정 시작](../vsto/how-to-get-started-customizing-the-ribbon.md)합니다.  
   
 ## <a name="see-also"></a>참고자료  
  [VSTO 추가 기능 프로그래밍](../vsto/programming-vsto-add-ins.md)   
@@ -160,5 +157,3 @@ ms.locfileid: "49843823"
  [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [확장성 인터페이스를 사용 하 여 UI 기능 사용자 지정](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)  
-  
-  

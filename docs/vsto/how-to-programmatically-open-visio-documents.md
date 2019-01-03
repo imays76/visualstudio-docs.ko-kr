@@ -1,9 +1,6 @@
 ---
 title: '방법: 프로그래밍 방식으로 Visio 문서 열기'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,15 +13,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 28f882510e2370c0fb31645da5023e865afd667e
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 1815b0f336026890c88ec0794ea72911560ecb38
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672680"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875724"
 ---
 # <a name="how-to-programmatically-open-visio-documents"></a>방법: 프로그래밍 방식으로 Visio 문서 열기
-  기존 Microsoft Office Visio 문서를 여는 방법은 두 가지가 있습니다: 열고 OpenEx 합니다. OpenEx 메서드는 인수는 호출자에 게 문서가 열리는 방식을 지정할 수 있다는 점을 제외 하 고 Open 메서드가 동일 합니다.  
+  기존 Microsoft Office Visio 문서를 여는 방법은 두 가지가 있습니다. 열기 및 OpenEx 합니다. OpenEx 메서드는 인수는 호출자에 게 문서가 열리는 방식을 지정할 수 있다는 점을 제외 하 고 Open 메서드가 동일 합니다.  
   
  개체 모델에 대한 자세한 내용은 VBA 참조 설명서에서 [Microsoft.Office.Interop.Visio.Documents.Open](/office/vba/api/Visio.Documents.Open) 메서드 및 [Microsoft.Office.Interop.Visio.Documents.OpenEx](/office/vba/api/Visio.Documents.OpenEx) 메서드를 참조하세요.  
   
@@ -51,12 +48,10 @@ ms.locfileid: "50672680"
   
 -   명명 된 Visio 문서 `myDrawing.vsd` 라는 디렉터리에 있어야 합니다 `Test` 에 *My Documents* 폴더 (Windows XP 및 이전) 또는 *문서* 폴더 (Windows Vista).  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Visio 솔루션](../vsto/visio-solutions.md)   
  [Visio 개체 모델 개요](../vsto/visio-object-model-overview.md)   
  [방법: 프로그래밍 방식으로 새 Visio 문서 만들기](../vsto/how-to-programmatically-create-new-visio-documents.md)   
  [방법: 프로그래밍 방식으로 Visio 문서 닫기](../vsto/how-to-programmatically-close-visio-documents.md)   
  [방법: 프로그래밍 방식으로 Visio 문서 저장](../vsto/how-to-programmatically-save-visio-documents.md)   
  [방법: 프로그래밍 방식으로 Visio 문서 인쇄](../vsto/how-to-programmatically-print-visio-documents.md)  
-  
-  

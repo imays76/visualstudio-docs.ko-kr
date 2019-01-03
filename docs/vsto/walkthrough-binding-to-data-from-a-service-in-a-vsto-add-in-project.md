@@ -1,9 +1,6 @@
 ---
-title: '연습: VSTO 추가 기능 프로젝트의 서비스에서 데이터 바인딩'
-ms.custom: ''
+title: '연습: VSTO 추가 기능 프로젝트의 서비스에서 데이터에 바인딩'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,17 +14,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c4ebf998dc7c278fda1e605d18198945958a7fed
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 95b504907d55491ee925ea0824a810314d3c8033
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933185"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892292"
 ---
-# <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>연습: VSTO 추가 기능 프로젝트의 서비스에서 데이터 바인딩
+# <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>연습: VSTO 추가 기능 프로젝트의 서비스에서 데이터에 바인딩
   VSTO 추가 기능 프로젝트에서 호스트 컨트롤에 데이터를 바인딩할 수 있습니다. 이 연습에서는 Microsoft Office Word 문서에 컨트롤을 추가하고, MSDN 콘텐츠 서비스에서 검색된 데이터에 컨트롤을 바인딩하고, 런타임에 이벤트에 응답하는 방법을 보여 줍니다.  
   
- **적용 대상:** 이 항목의 정보는 Word 2010의 응용 프로그램 수준 프로젝트에 적용됩니다. 자세한 내용은 [Office 응용 프로그램 및 프로젝트 형식에 따라 사용 가능한 기능](../vsto/features-available-by-office-application-and-project-type.md)을 참조하세요.  
+ **적용 대상:** 이 항목의 정보는 Word 2010 응용 프로그램 수준 프로젝트에 적용 됩니다. 자세한 내용은 [Office 애플리케이션 및 프로젝트 형식에 따라 사용 가능한 기능](../vsto/features-available-by-office-application-and-project-type.md)을 참조하세요.  
   
  이 연습에서는 다음 작업을 수행합니다.  
   
@@ -53,7 +50,7 @@ ms.locfileid: "49933185"
   
 1.  Visual Basic 또는 C#을 사용하여 이름이 **MTPS 콘텐츠 서비스**인 Word VSTO 추가 기능 프로젝트를 만듭니다.  
   
-     자세한 내용은 [방법: Visual Studio에서 만드는 Office 프로젝트](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
+     자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
   
      Visual Studio에 `ThisAddIn.vb` 또는 `ThisAddIn.cs` 파일이 열리고 프로젝트가 **솔루션 탐색기**에 추가됩니다.  
   
@@ -119,5 +116,3 @@ ms.locfileid: "49933185"
   
 ## <a name="see-also"></a>참고자료  
  [Office 솔루션의 컨트롤에 데이터 바인딩](../vsto/binding-data-to-controls-in-office-solutions.md)  
-  
-  

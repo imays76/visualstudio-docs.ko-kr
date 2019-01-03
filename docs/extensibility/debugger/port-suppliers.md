@@ -1,9 +1,6 @@
 ---
 title: 공급 업체 포트 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - port suppliers
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 680f57878b3dd06e2f5935874f4a3f3bb06a2a1c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e134b9b4adeb45693a9841a0a867a9c3630bf2aa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948228"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835106"
 ---
 # <a name="port-suppliers"></a>포트 공급자
 디버거 아키텍처에는 *포트 공급자*:  
@@ -34,7 +31,7 @@ ms.locfileid: "49948228"
   
   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 기본 포트 공급자와 기본 포트를 제공합니다. 사용자 지정 포트를 구현 해야 하는 경우 사용자 지정 포트 공급자도 해야 해당 사용자 지정 포트를 제공 하도록 구현 해야 합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [서버](../../extensibility/debugger/servers-visual-studio-sdk.md)   
  [포트](../../extensibility/debugger/ports.md)   
  [디버거 개념](../../extensibility/debugger/debugger-concepts.md)   

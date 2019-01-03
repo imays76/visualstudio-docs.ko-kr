@@ -1,9 +1,6 @@
 ---
 title: IDebugProperty3::CreateObjectID | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProperty3::CreateObjectID
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1514c21345356bbece6680b9ccd212d15dbfa191
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b6fab6a75885dba8ddfd952ec3680e2c44b87312
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920978"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855824"
 ---
 # <a name="idebugproperty3createobjectid"></a>IDebugProperty3::CreateObjectID
 다른 모든 속성 간에 고유한 지 확인 하려면이 속성에 대 한 고유 ID를 만듭니다.  
@@ -28,13 +25,13 @@ ms.locfileid: "49920978"
 ## <a name="syntax"></a>구문  
   
 ```cpp  
-HRESULT CreateObjectID(  
+HRESULT CreateObjectID(  
    void  
 );  
 ```  
   
 ```csharp  
-int CreateObjectID();  
+int CreateObjectID();  
 ```  
   
 ## <a name="return-value"></a>반환 값  

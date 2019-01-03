@@ -1,13 +1,8 @@
 ---
-title: '연습: 디자이너를 사용 하 여 SharePoint 용 웹 파트를 만들기 | Microsoft Docs'
-ms.custom: ''
+title: '연습: 디자이너를 사용 하 여 SharePoint 용 웹 파트 만들기 | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1b5cfd9afaf0c37dcf267c63641b7917efe4c249
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 146a1722f240895e0f508b0474df72f6f5f84ece
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831817"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870916"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>연습: 디자이너를 사용 하 여 SharePoint 용 웹 파트 만들기
 
@@ -74,7 +69,7 @@ SharePoint 사이트에 대 한 웹 파트를 만드는 경우 사용자가 직�
 
 1. Visual Web Developer 디자이너에서 선택 합니다 **디자인** 디자인 뷰로 전환 하려면 탭 합니다.
 
-2. 메뉴 모음에서 선택 **뷰** > **도구 상자**합니다.
+2. 메뉴 모음에서 **보기** > **도구 상자**를 선택합니다.
 
 3. 에 **표준** 노드의 **도구 상자**를 선택 합니다 **CheckBoxList** 컨트롤 하 고 다음 단계 중 하나를 수행:
 
@@ -190,7 +185,7 @@ SharePoint 사이트에 대 한 웹 파트를 만드는 경우 사용자가 직�
 
 지정한 모든 달력의 이벤트가 월별 달력 보기에 나타납니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [SharePoint 용 웹 파트 만들기](../sharepoint/creating-web-parts-for-sharepoint.md)  
 [방법: SharePoint 웹 파트 만들기](../sharepoint/how-to-create-a-sharepoint-web-part.md)  

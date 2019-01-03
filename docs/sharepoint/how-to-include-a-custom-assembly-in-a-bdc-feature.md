@@ -1,15 +1,10 @@
 ---
 title: '방법: BDC 기능에 사용자 지정 어셈블리 포함 | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.BDC.Add_Assemblies_Dialog
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e685c3003fa77814217716fc886589e4a2633429
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 3b53b7c8b5cf4dd2c13adbb53a9724a8adaf2328
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294671"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919523"
 ---
 # <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>방법: BDC 기능에 사용자 지정 어셈블리 포함
   프로젝트가 동일한 솔루션의 다른 프로젝트에서 어셈블리를 참조할 수 있습니다. 그러나 사용 하 여 프로젝트의 기능 파일에 이러한 어셈블리를 추가 해야 합니다는 합니다 **할당 참조 어셈블리를 Lobsystem** 대화 상자.  
@@ -52,10 +47,9 @@ ms.locfileid: "51294671"
     > [!NOTE]  
     >  사용자 지정 어셈블리에서 코드를 디버깅 하려면 솔루션 패키지에 어셈블리를 추가 해야 합니다. 자세한 내용은 [방법: 추가 어셈블리 추가 및 제거](../sharepoint/how-to-add-and-remove-additional-assemblies.md)합니다.  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  [방법: 리소스 파일을 사용 하 여 지역화 된 이름, 속성 및 사용 권한을 지정 합니다.](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)   
  [방법: SharePoint 프로젝트에 기존 BDC 모델 파일 추가](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)   
  [비즈니스 데이터 연결 모델 만들기](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [방법: BDC 모델 만들기](../sharepoint/how-to-create-a-bdc-model.md)   
  [SharePoint에 Integragte 비즈니스 데이터](../sharepoint/integrating-business-data-into-sharepoint.md)  
-  

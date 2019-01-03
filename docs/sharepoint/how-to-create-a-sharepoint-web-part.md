@@ -1,13 +1,8 @@
 ---
 title: '방법: SharePoint 웹 파트 만들기 | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6437620b4215726ba48ea3234e37c76e77d21ebe
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 43d776a4031cabfd027c96105f3e71a93ea1c07f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119838"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858425"
 ---
 # <a name="how-to-create-a-sharepoint-web-part"></a>방법: SharePoint 웹 파트 만들기
   만들고 추가 하 여 웹 파트를 사용자 지정할 수 있습니다는 **웹 파트** SharePoint 프로젝트 항목 및 다음 웹 파트 또는 디자이너를 사용 하 여 코드 파일을 편집 합니다. 자세한 내용은 [방법: 디자이너를 사용 하 여 SharePoint 웹 파트를 만들](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)합니다.  
@@ -50,12 +45,10 @@ ms.locfileid: "37119838"
   
 7.  코드 파일에서 <xref:System.Web.UI.Control.CreateChildControls%2A> 메서드에 컨트롤을 추가합니다.  
   
-     예를 들어 참조 [연습: SharePoint에 대 한 웹 파트를 만드는](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)합니다.  
+     예를 들어 참조 [연습: SharePoint 용 웹 파트를 만드는](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)합니다.  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  [SharePoint 용 웹 파트 만들기](../sharepoint/creating-web-parts-for-sharepoint.md)   
  [방법: 디자이너를 사용 하 여 SharePoint 웹 파트 만들기](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)   
  [연습: SharePoint 용 웹 파트 만들기](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)   
  [연습: 디자이너를 사용 하 여 SharePoint 용 웹 파트 만들기](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)  
-  
-  

@@ -1,8 +1,7 @@
 ---
-title: 'CA1304: CultureInfo를 지정하십시오.'
+title: 'CA1304: CultureInfo를 지정하세요.'
 ms.date: 06/30/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - SpecifyCultureInfo
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe02dd66b523e6ee82c5e1a2051f3a68839957d4
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 564180330380a7076b091e0b2f793ea575606d53
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546196"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968487"
 ---
-# <a name="ca1304-specify-cultureinfo"></a>CA1304: CultureInfo를 지정하십시오.
+# <a name="ca1304-specify-cultureinfo"></a>CA1304: CultureInfo를 지정하세요.
 
 |||
 |-|-|
@@ -84,8 +83,8 @@ ms.locfileid: "45546196"
 
 ## <a name="related-rules"></a>관련된 규칙
 
-- [CA1305: IFormatProvider를 지정하십시오.](../code-quality/ca1305-specify-iformatprovider.md)
+- [CA1305: IFormatProvider를 지정 합니다.](../code-quality/ca1305-specify-iformatprovider.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [CultureInfo 클래스를 사용 하 여](/dotnet/standard/globalization-localization/globalization#Cultures)

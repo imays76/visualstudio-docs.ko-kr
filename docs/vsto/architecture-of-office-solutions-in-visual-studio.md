@@ -1,9 +1,7 @@
 ---
 title: Visual Studio에서 Office 솔루션의 아키텍처
 titleSuffix: ''
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0b5916ca091d7479b76c21aff914811d090f6667
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: c5fd58f487aa7323450f1236f9ac39ef11769bdc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53247902"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837984"
 ---
 # <a name="architecture-of-office-solutions-in-visual-studio"></a>Visual Studio에서 Office 솔루션의 아키텍처
   이 섹션의 항목에서는 Visual Studio에서 Office 개발자 도구를 사용하여 만든 솔루션의 작동 방식에 대한 정보를 제공합니다.  
@@ -36,7 +34,7 @@ ms.locfileid: "53247902"
  문서 수준 사용자 지정의 작동 방식 및 개발자와 최종 사용자에게 어떻게 다르게 인식되는지에 대해 설명합니다.  
   
  [VSTO 추가 기능 아키텍처](../vsto/architecture-of-vsto-add-ins.md)  
- VSTO 추가 기능의 구성 요소 및 응용 프로그램에서 로드되는 방법에 대해 설명합니다.  
+ VSTO 추가 기능의 구성 요소 및 애플리케이션에서 로드되는 방법에 대해 설명합니다.  
   
  [Visual Studio Tools for Office Runtime 개요](../vsto/visual-studio-tools-for-office-runtime-overview.md)  
  Office 솔루션에 사용되는 다양한 버전의 런타임에 대해 설명합니다.  
@@ -58,6 +56,4 @@ ms.locfileid: "53247902"
  Office 솔루션을 만들기에 대한 정보 링크를 제공합니다.  
   
  [일반 참조 &#40;Visual Studio에서 Office 개발&#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
- Office 프로젝트의 사용자 인터페이스 요소, Office 프로젝트의 응용 프로그램 및 배포 매니페스트 및 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]의 API에 대한 정보 링크를 제공합니다.  
-  
-  
+ Office 프로젝트의 사용자 인터페이스 요소, Office 프로젝트의 애플리케이션 및 배포 매니페스트 및 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]의 API에 대한 정보 링크를 제공합니다.  

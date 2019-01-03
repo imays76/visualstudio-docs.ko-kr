@@ -1,9 +1,6 @@
 ---
 title: 프로젝트 형식 배포 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], managed-code
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4bed37260925d4961ed5b5b7d3e69d55169444ad
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 358ab66ecf1f3602ce37f85de803bd8953771858
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497903"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892139"
 ---
 # <a name="deploy-project-types"></a>프로젝트 형식 배포
 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 새 프로젝트 형식 aggregator를 설치 (*ProjectAggregator2.dll*) 및 Windows Installer 패키지를 재배포에 대 한도 (*ProjectAggregator2.msi*). 관리 코드 프로젝트 형식에 대해 새 집계가 사용 해야 합니다. 제한 사항을 위반 ProjectAggregator2 작동을 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] aggregator 관리 코드 프로젝트 형식을 올바르게 작동 하지 못하도록 하는 프로젝트입니다. 다음 단계를 새 집계를 사용 하 여 VSPackage를 변경 하는 방법에 설명 합니다.  

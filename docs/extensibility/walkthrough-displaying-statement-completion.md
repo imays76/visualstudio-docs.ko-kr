@@ -1,9 +1,6 @@
 ---
 title: '연습: 문 완성 표시 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - statement completion
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdd96c124dafabf5584dfa13547cdea1e2b843b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 148640c7522f133c780703df4052ef3235d8493a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879326"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986637"
 ---
-# <a name="walkthrough-display-statement-completion"></a>연습: 문 완성을 표시
+# <a name="walkthrough-display-statement-completion"></a>연습: 문 완성 표시
 완성 기능을 제공 하려는 식별자를 정의 하 고 다음 완료 세션을 트리거 언어 기반 문 완성을 구현할 수 있습니다. 언어 서비스의 컨텍스트에서 문 완성을 정의 하 고, 고유한 파일 이름 확장명 및 콘텐츠 형식을 정의 하 고, 해당 형식만 완성 표시 수 있습니다. 또는 기존 콘텐츠 형식에 대 한 완료를 트리거할 수 있습니다-예를 들어 일반 "텍스트"입니다. 이 연습에서는 텍스트 파일의 콘텐츠 형식인 "일반 텍스트" 콘텐츠 형식에 대 한 문 완성을 트리거하는 방법을 보여 줍니다. "Text" 콘텐츠 형식은 코드 및 XML 파일을 포함 하 여 모든 콘텐츠 형식, 상위 항목입니다.  
   
  문 완성은 일반적으로 특정 문자를 입력 하 여 트리거됩니다-예를 들어, "using"와 같은 식별자의 시작 부분을 입력 하 여 합니다. 가 일반적으로 키를 눌러 해제 합니다 **스페이스바**, **탭**, 또는 **Enter** 커밋을 선택 키입니다. 키 입력에 대 한 명령 처리기를 사용 하 여 문자를 입력할 때 트리거하는 IntelliSense 기능을 구현할 수 있습니다 (합니다 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 인터페이스) 및 구현 하는 처리기 공급자는 <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> 인터페이스입니다. 구현 완료에 참여 하는 식별자의 목록인 완료 소스를 만드는 데는 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> 인터페이스와 완료 원본 공급자 (의 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider> 인터페이스). 공급자는 프레임 워크 MEF (Managed Extensibility) 구성 요소 파트. 서비스 및 브로커는 원본 및 컨트롤러 클래스 내보내기 및 가져오기에 대 한 책임이-예를 들어 합니다 <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>, 텍스트 버퍼에 대 한 탐색을 사용 하도록 설정 하는 및 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>, 완료 세션의 트리거.  
@@ -204,5 +201,5 @@ ms.locfileid: "49879326"
   
 4.  입력할 때 먼저 "a"와 "d" 다음 "addition" 및 "조정"를 포함 하는 목록이 표시 됩니다. 또한 선택 되어 있는지 확인 합니다. 다른 "d"를 입력 하면만 "추가"가 이제 선택 목록에 포함 해야 합니다. 키를 눌러 "addition"을 커밋할 수 있습니다 합니다 **스페이스바**를 **탭**, 또는 **Enter** 키 또는 Esc 키 또는 다른 키를 입력 하 여 목록 해제 합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [연습: 파일 이름 확장명에 콘텐츠 형식 링크](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

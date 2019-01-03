@@ -1,9 +1,6 @@
 ---
 title: Office 솔루션 개발
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ea6054ae0917413a4e862e5c6309492ce84deff2
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 53f94016eb354b3c3e5255e37b8399b3687352dc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648854"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856607"
 ---
 # <a name="develop-office-solutions"></a>Office 솔루션 개발
   Visual Studio에서 Office 개발자 도구를 사용하여 프로젝트를 디자인하고 프로젝트 파일을 설정한 후 코드와 사용자 지정 UI(사용자 인터페이스)의 구현에 집중하기 시작할 수 있습니다.  
@@ -55,7 +52,7 @@ ms.locfileid: "53648854"
 |[Office 솔루션에서 코드를 작성 합니다.](../vsto/writing-code-in-office-solutions.md)|Office 솔루션에서 코드를 작성하는 경우의 다양한 측면에 대해 설명합니다.|  
 |[VSTO 추가 기능 프로그래밍](../vsto/programming-vsto-add-ins.md)|VSTO 추가 기능 및 관련된 프로그래밍 작업의 프로그래밍 모델에 대해 개괄적으로 설명합니다.|  
 |[문서 수준 사용자 지정 프로그래밍](../vsto/programming-document-level-customizations.md)|문서 수준 사용자 지정 및 관련된 프로그래밍 작업의 프로그래밍 모델에 대해 개괄적으로 설명합니다.|  
-|[Office UI 사용자 지정](../vsto/office-ui-customization.md)|VSTO 추가 기능과 문서 수준 사용자 지정을 사용하여 Office 응용 프로그램의 UI를 사용자 지정할 수 있는 다양한 방법에 대해 설명합니다.|  
+|[Office UI 사용자 지정](../vsto/office-ui-customization.md)|VSTO 추가 기능과 문서 수준 사용자 지정을 사용하여 Office 애플리케이션의 UI를 사용자 지정할 수 있는 다양한 방법에 대해 설명합니다.|  
 |[Office 솔루션의 데이터](../vsto/data-in-office-solutions.md)|문서 수준 사용자 지정에서 데이터를 컨트롤에 바인딩하거나 데이터를 캐싱하는 것과 같이 Office 솔루션에서 데이터로 작업할 수 있는 다양한 방법에 대해 설명합니다.|  
 |[자동 저장이 Office 솔루션에 미치는 영향을](./how-autosave-impacts-office-solutions.md)|자동 저장을 사용 하는 경우 Office 솔루션을 확인 해야 하는 조정을 설명 합니다.|
 |[Office 솔루션 문제 해결](../vsto/troubleshooting-office-solutions.md)|Office 솔루션을 만들 때 발생할 수 있는 일반적인 문제의 해결에 대한 팁을 제공합니다.|  
@@ -73,5 +70,3 @@ ms.locfileid: "53648854"
  [연습: 첫 번째에 VSTO 추가 기능 프로젝트 만들기](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)   
  [연습: Word 용 첫 VSTO 추가 기능에 만들기](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)   
  [연습: Word 용 첫 문서 수준 사용자 지정 만들기](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)  
-  
-  
