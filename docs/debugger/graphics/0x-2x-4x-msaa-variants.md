@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb5e20697e5dc5364fbcbac7a1d3052790a123a2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 1866f718cbcb4f1d3641e7b9f514a951ccd73662
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872657"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802620"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0x/2x/4x MSAA 변형
 모든 렌더링 대상 및 스왑 체인에서 MSAA(MultiSample Anti-Aliasing) 설정을 재정의합니다.  
@@ -45,7 +45,7 @@ ms.locfileid: "49872657"
   
 - 장치에서는 `ID3D11Device::CheckMultisampleQualityLevels`이 결정한 대로 요청된 렌더링 대상 형식(D3D11_TEXTURE2D_DESC::Format 멤버)에 대한 요청된 샘플 수(0, 2 또는 4) 및 샘플 품질(0)을 지원합니다.  
   
-  D3D11_TEXTURE2D_DESC::BindFlags 멤버에 D3D_BIND_SHADER_RESOUCE 또는 D3D11_BIND_UNORDERED_ACCESS 플래그 집합이 있는 경우 질감 버전이 두 개 생성됩니다. 첫 번째 버전에서 이러한 플래그는 렌더링 대상으로 사용하기 위해 지워지고 두 번째 버전은 첫 번째 버전의 확인 버퍼로 사용하기 위해 이러한 플래그를 그대로 남겨 두는 MSAA가 아닌 질감입니다. MSAA 질감을 셰이더 리소스로 사용하거나 순서가 지정되지 않은 액세스에 사용하는 것은 유효하지 않을 수 있기 때문에 이는 필수입니다. 예를 들어 MSAA 질감에 대해 작동하는 셰이더는 MSAA가 아닌 질감을 예상하므로 잘못된 결과를 생성할 수 있습니다. 변형이 MSAA가 아닌 보조 질감을 만든 경우 MSAA 렌더링 대상이 장치 컨텍스트에서 설정 해제될 때마다 이러한 대상의 콘텐츠가 MSAA가 아닌 질감으로 확인됩니다. 마찬가지로 MSAA 렌더링 대상이 셰이더 리소스로 바운딩되어야 하거나 순서가 지정되지 않은 액세스 보기에서 사용될 때마다 확인된 MSAA가 아닌 질감이 대신 바운딩됩니다.  
+  D3D11_TEXTURE2D_DESC::BindFlags 멤버에 D3D_BIND_SHADER_RESOURCE 또는 D3D11_BIND_UNORDERED_ACCESS 플래그 집합이 있는 경우 질감 버전이 두 개 생성됩니다. 첫 번째 버전에서 이러한 플래그는 렌더링 대상으로 사용하기 위해 지워지고 두 번째 버전은 첫 번째 버전의 확인 버퍼로 사용하기 위해 이러한 플래그를 그대로 남겨 두는 MSAA가 아닌 질감입니다. MSAA 질감을 셰이더 리소스로 사용하거나 순서가 지정되지 않은 액세스에 사용하는 것은 유효하지 않을 수 있기 때문에 이는 필수입니다. 예를 들어 MSAA 질감에 대해 작동하는 셰이더는 MSAA가 아닌 질감을 예상하므로 잘못된 결과를 생성할 수 있습니다. 변형이 MSAA가 아닌 보조 질감을 만든 경우 MSAA 렌더링 대상이 장치 컨텍스트에서 설정 해제될 때마다 이러한 대상의 콘텐츠가 MSAA가 아닌 질감으로 확인됩니다. 마찬가지로 MSAA 렌더링 대상이 셰이더 리소스로 바운딩되어야 하거나 순서가 지정되지 않은 액세스 보기에서 사용될 때마다 확인된 MSAA가 아닌 질감이 대신 바운딩됩니다.  
   
   또한 이러한 변형은 `IDXGIFactory::CreateSwapChain`, `IDXGIFactory2::CreateSwapChainForHwnd`, `IDXGIFactory2::CreateSwapChainForCoreWindow`, `IDXGIFactory2::CreateSwapChainForComposition` 및 `ID3D11CreateDeviceAndSwapChain`을 사용하여 만든 모든 스왑 체인에 대한 MSAA 설정을 재정의합니다.  
   

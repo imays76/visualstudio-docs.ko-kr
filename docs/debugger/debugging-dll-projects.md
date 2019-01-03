@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c00740b31e5b9d7cc5678bfc248e673a57e59ccf
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
-ms.translationtype: MTE95
+ms.openlocfilehash: f35a04620da94efca70fb33933f3940005996e29
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305314"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561696"
 ---
 # <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>Visual Studio에서 Dll 디버깅 (C#, c + +, Visual Basic의 경우 F#)
 
@@ -102,7 +102,7 @@ DLL을 직접 실행할 수 없습니다. 일반적으로 앱에서 호출할 �
 
 DLL을 디버깅 하려면 [호출한 응용 프로그램에서 디버깅 시작](#vxtskdebuggingdllprojectsthecallingapplication), 또는 [DLL 프로젝트에서 디버그](how-to-debug-from-a-dll-project.md) 호출 해당 앱을 지정 하 여 합니다. 디버거를 사용할 수도 있습니다 [직접 실행 창](#vxtskdebuggingdllprojectstheimmediatewindow) 호출 앱을 사용 하지 않고 디자인 타임에 DLL 함수 또는 메서드를 평가 합니다.
 
-자세한 내용은 [디버거를 사용 하 여 시작](getting-started-with-the-debugger.md)합니다.
+자세한 내용은 [디버거 소개](../debugger/debugger-feature-tour.md)합니다.
 
 ### <a name="vxtskdebuggingdllprojectsthecallingapplication"></a> 호출 앱에서 디버깅 시작
 
@@ -119,11 +119,11 @@ DLL을 호출 하는 앱이 될 수 있습니다.
 
   또는  
 
-- 이미 배포 되어 테스트 컴퓨터나 프로덕션 컴퓨터에서 실행 되는 앱에 연결 합니다. 웹 사이트 또는 웹 앱의 Dll에 대 한이 메서드를 사용 합니다. 자세한 내용은 [방법: 실행 중인 프로세스에 연결](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)을 참조하세요.  
+- 이미 배포 되어 테스트 컴퓨터나 프로덕션 컴퓨터에서 실행 되는 앱에 연결 합니다. 웹 사이트 또는 웹 앱의 Dll에 대 한이 메서드를 사용 합니다. 자세한 내용은 [방법: 실행 중인 프로세스에 연결](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
 호출 응용 프로그램 디버깅을 시작 하기 전에 DLL에서 중단점을 설정 합니다. 참조 [중단점을 사용 하 여](../debugger/using-breakpoints.md)입니다. DLL 중단점이 적중 될 때 실행할 수 있습니다 코드를 통해 각 줄의 작업을 관찰 합니다. 자세한 내용은 [디버거에서 코드를 탐색](../debugger/navigating-through-code-with-the-debugger.md)합니다.
   
-디버그 하는 동안 사용할 수 있습니다 합니다 **모듈** Dll을 확인 하려면 창 및 *.exe* 앱이 로드 파일입니다. 열려는 합니다 **모듈** 창에서 디버그 하는 동안 **디버그** > **Windows** > **모듈**합니다. 자세한 내용은 [방법: 모듈 창](../debugger/how-to-use-the-modules-window.md)을 참조하세요. 
+디버그 하는 동안 사용할 수 있습니다 합니다 **모듈** Dll을 확인 하려면 창 및 *.exe* 앱이 로드 파일입니다. 열려는 합니다 **모듈** 창에서 디버그 하는 동안 **디버그** > **Windows** > **모듈**합니다. 자세한 내용은 [방법: 모듈 창을 사용 하 여](../debugger/how-to-use-the-modules-window.md)입니다. 
 
 ###  <a name="vxtskdebuggingdllprojectstheimmediatewindow"></a> 직접 실행 창 사용  
 
@@ -158,7 +158,7 @@ DLL을 호출 하는 앱이 될 수 있습니다.
 
 ##  <a name="vxtskdebuggingdllprojectsmixedmodedebugging"></a> 혼합 모드 디버깅  
 
-관리 되는 또는 네이티브 코드에서 DLL에 대 한 호출 앱을 작성할 수 있습니다. 관리 되는 DLL을 호출 하는 네이티브 앱을 모두 디버그 하려는 경우에 프로젝트 속성에서 관리 및 네이티브 디버거를 사용할 수 있습니다. 정확한 프로세스는 DLL 프로젝트 또는 호출 응용 프로그램 프로젝트에서 디버깅을 시작할 것인지에 따라 달라 집니다. 자세한 내용은 [방법: 혼합 모드에서 디버깅](../debugger/how-to-debug-in-mixed-mode.md)을 참조하세요. 
+관리 되는 또는 네이티브 코드에서 DLL에 대 한 호출 앱을 작성할 수 있습니다. 관리 되는 DLL을 호출 하는 네이티브 앱을 모두 디버그 하려는 경우에 프로젝트 속성에서 관리 및 네이티브 디버거를 사용할 수 있습니다. 정확한 프로세스는 DLL 프로젝트 또는 호출 응용 프로그램 프로젝트에서 디버깅을 시작할 것인지에 따라 달라 집니다. 자세한 내용은 [방법: 혼합 모드에서 디버그](../debugger/how-to-debug-in-mixed-mode.md). 
 
 또한 관리 되는 호출 프로젝트에서 네이티브 DLL을 디버깅할 수 있습니다. 자세한 내용은 [관리 및 네이티브 코드를 디버그 하는 방법을](how-to-debug-managed-and-native-code.md)합니다. 
 
