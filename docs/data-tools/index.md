@@ -6,16 +6,15 @@ ms.date: 01/01/2018
 author: gewarren
 ms.author: gewarren
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.topic: landing-page
 ms.workload:
 - data-storage
-ms.openlocfilehash: 866737bc91615663df59856b8d06b457ad47c15f
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 854cb5287aef6500e80d34fbccac8b343da73fc9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159687"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890552"
 ---
 # <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>Visual Studio에서 데이터 도구를 사용하여 데이터 솔루션 개발
 
@@ -33,7 +32,7 @@ Visual Studio에서 데이터 도구를 사용하여 SQL Server, Azure Data Lake
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>데이터 응용 프로그램 개발을 위한 Visual Studio와 .NET Framework의 도구 및 API 지원에 대한 자세한 정보</h3>
+                        <h3>데이터 애플리케이션 개발을 위한 Visual Studio와 .NET Framework의 도구 및 API 지원에 대한 자세한 정보</h3>
                     </div>
                 </div>
             </div>
@@ -69,7 +68,7 @@ Visual Studio에서 데이터 도구를 사용하여 SQL Server, Azure Data Lake
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Azure Data Lake를 사용하여 U-SQL 및 .NET으로 빅 데이터 응용 프로그램 개발에 대한 자세한 정보</h3>
+                        <h3>Azure Data Lake를 사용하여 U-SQL 및 .NET으로 빅 데이터 애플리케이션 개발에 대한 자세한 정보</h3>
                     </div>
                 </div>
             </div>
