@@ -1,23 +1,23 @@
 ---
 layout: LandingPage
 title: 앱 디버깅 | Microsoft Docs
-description: Visual Studio 2017을 사용하여 플랫폼 및 디바이스에 대해 선택한 언어로 응용 프로그램, 서비스 및 도구를 디버그하는 방법에 대해 알아봅니다.
+description: Visual Studio 2017을 사용하여 플랫폼 및 장치에 대해 선택한 언어로 애플리케이션, 서비스 및 도구를 디버그하는 방법에 대해 알아봅니다.
 ms.custom: seodec18
 ms.topic: landing-page
 ms.technology: vs-ide-debug
 ms.author: mikejo
 author: mikejo5000
 manager: douge
-ms.openlocfilehash: b6ec9fffe0223a018724f9bd82125a63204a15fa
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 2ee721d3febc070435419f2750b52bd4daf533b1
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53048609"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53560715"
 ---
 # <a name="debugging-in-visual-studio"></a>Visual Studio의 디버깅
 
-Visual Studio 디버거를 사용하여 프로그램의 런타임 동작을 관찰하고 문제를 찾아낼 수 있습니다. 디버거는 모든 Visual Studio 프로그래밍 언어 및 관련 라이브러리와 함께 작동합니다. 디버거를 사용하면 프로그램 실행을 중단하여 코드 검사, 변수 검사 및 편집, 레지스터 보기, 소스 코드로부터 만들어진 명령 보기, 응용 프로그램에 사용된 메모리 공간 확인 등을 수행할 수 있습니다.
+Visual Studio 디버거를 사용하여 프로그램의 런타임 동작을 관찰하고 문제를 찾아낼 수 있습니다. 디버거는 모든 Visual Studio 프로그래밍 언어 및 관련 라이브러리와 함께 작동합니다. 디버거를 사용하면 프로그램 실행을 중단하여 코드 검사, 변수 검사 및 편집, 레지스터 보기, 소스 코드로부터 만들어진 명령 보기, 애플리케이션에 사용된 메모리 공간 확인 등을 수행할 수 있습니다.
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -27,7 +27,7 @@ Visual Studio 디버거를 사용하여 프로그램의 런타임 동작을 관�
                     <div class="card">
                         <div class="cardImageOuter">
                             <div class="cardImage">
-                                <img src="/media/common/i_categorize.svg" alt="What is debugging?">
+                                <img src="https://docs.microsoft.com/media/common/i_categorize.svg" alt="What is debugging?">
                             </div>
                         </div>
                         <div class="cardText">
@@ -45,7 +45,7 @@ Visual Studio 디버거를 사용하여 프로그램의 런타임 동작을 관�
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_code-edit.svg" alt="Write better code">
+                            <img src="https://docs.microsoft.com/media/common/i_code-quality.svg" alt="Write better code">
                         </div>
                     </div>
                     <div class="cardText">
@@ -63,7 +63,7 @@ Visual Studio 디버거를 사용하여 프로그램의 런타임 동작을 관�
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_video.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/i_video.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -76,7 +76,7 @@ Visual Studio 디버거를 사용하여 프로그램의 런타임 동작을 관�
     </li>
 </ul>
 
-<h2>5분 빠른 시작을 사용하여 Visual Studio 디버깅 사용</h2>
+<h2>디버거 시작</h2>
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -86,7 +86,7 @@ Visual Studio 디버거를 사용하여 프로그램의 런타임 동작을 관�
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_road-map.svg" alt="Road map">
+                            <img src="https://docs.microsoft.com/media/common/i_road-map.svg" alt="Road map">
                         </div>
                     </div>
                     <div class="cardText">
@@ -97,18 +97,18 @@ Visual Studio 디버거를 사용하여 프로그램의 런타임 동작을 관�
         </div>
         </a>
     </li>
-        <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/quickstart-debug-with-managed">
+    <li>
+        <a href="https://docs.microsoft.com/visualstudio/debugger/debugging-absolute-beginners">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt=".NET">
+                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="Absolute beginners">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>C# 또는 Visual Basic 앱 디버그</h3>
+                        <h3>완전 초보자 가이드</h3>
                     </div>
                 </div>
             </div>
@@ -116,7 +116,25 @@ Visual Studio 디버거를 사용하여 프로그램의 런타임 동작을 관�
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/quickstart-debug-with-cplusplus">
+        <a href="https://docs.microsoft.com/visualstudio/get-started/csharp/tutorial-debugger?toc=/visualstudio/debugger/toc.json">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_csharp.svg" alt="C#">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>C++ 앱 디버그</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://docs.microsoft.com/visualstudio/debugger/getting-started-with-the-debugger-cpp">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -134,17 +152,17 @@ Visual Studio 디버거를 사용하여 프로그램의 런타임 동작을 관�
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/quickstart-debug-aspnet">
+        <a href="https://docs.microsoft.com/visualstudio/get-started/visual-basic/tutorial-debugger?toc=/visualstudio/debugger/toc.json">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="ASP.NET">
+                            <img src="https://docs.microsoft.com/media/logos/logo_vb.svg" alt="VB">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>ASP.NET 앱 디버그</h3>
+                        <h3>Visual Basic 앱 디버그</h3>
                     </div>
                 </div>
             </div>
@@ -153,39 +171,21 @@ Visual Studio 디버거를 사용하여 프로그램의 런타임 동작을 관�
     </li>
 </ul>
 
-<h2>자습서 자세히 알아보기</h2>
+<h2>디버거에 대한 자세한 정보</h2>
 
 <ul class="panelContent cardsFTitle">
     <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/debugging-absolute-beginners">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/using-breakpoints">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_get-started.svg" alt="Absolute beginners">
+                            <img src="https://docs.microsoft.com/media/common/i_investigate.svg" alt="Use breakpoints">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>완전 초보자 가이드</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/getting-started-with-the-debugger">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_get-started.svg" alt="Learn to use the debugger">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>디버거를 사용하는 방법 알아보기</h3>
+                        <h3>중단점에 대한 자세한 정보</h3>
                     </div>
                 </div>
             </div>
@@ -199,7 +199,7 @@ Visual Studio 디버거를 사용하여 프로그램의 런타임 동작을 관�
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_debug.svg" alt="Tips and tricks">
+                            <img src="https://docs.microsoft.com/media/common/i_debug.svg" alt="Tips and tricks">
                         </div>
                     </div>
                     <div class="cardText">
@@ -217,7 +217,7 @@ Visual Studio 디버거를 사용하여 프로그램의 런타임 동작을 관�
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_debug.svg" alt="View historical app state">
+                            <img src="https://docs.microsoft.com/media/common/i_investigate.svg" alt="View historical app state">
                         </div>
                     </div>
                     <div class="cardText">
@@ -235,11 +235,11 @@ Visual Studio 디버거를 사용하여 프로그램의 런타임 동작을 관�
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_debug.svg" alt="Debug Azure">
+                            <img src="https://docs.microsoft.com/media/logos/logo_azure.svg" alt="Azure">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>라이브 Azure App Service 응용 프로그램 디버그</h3>
+                        <h3>라이브 Azure App Service 애플리케이션 디버그</h3>
                     </div>
                 </div>
             </div>

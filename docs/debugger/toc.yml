@@ -20,11 +20,11 @@ items:
 - name: 자습서
   items:
   - name: C#을 디버깅하는 방법 알아보기
-    href: getting-started-with-the-debugger.md
+    href: /visualstudio/get-started/csharp/tutorial-debugger?toc=/visualstudio/debugger/toc.json
   - name: C++를 디버깅하는 방법 알아보기
     href: getting-started-with-the-debugger-cpp.md
   - name: Visual Basic을 디버깅하는 방법 알아보기
-    href: getting-started-with-the-debugger-vb.md
+    href: /visualstudio/get-started/visual-basic/tutorial-debugger?toc=/visualstudio/debugger/toc.json
   - name: 디버거에서 Python 코드 실행...
     href: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
   - name: 라이브 Azure 앱 디버그
@@ -189,7 +189,7 @@ items:
           href: how-to-debug-from-a-dll-project.md
         - name: 혼합 모드에서 디버그
           href: how-to-debug-in-mixed-mode.md
-      - name: '디버깅 준비: 콘솔 프로젝트'
+      - name: '디버깅 준비 중: 콘솔 프로젝트'
         href: debugging-preparation-console-projects.md
       - name: Visual Studio 솔루션에 포함되지 않는 실행 파일 디버그
         href: how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md
@@ -294,10 +294,10 @@ items:
         href: error-mixed-mode-debugging-for-x64-processes-is-supported-only-when-using-microsoft-dotnet-framework-4-or-greater.md
       - name: 원격 컴퓨터는 원격 연결 대화 상자에 표시되지 않습니다.
         href: error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md
-  - name: 다중 스레드 응용 프로그램 디버그
+  - name: 다중 스레드 애플리케이션 디버그
     href: debug-multithreaded-applications-in-visual-studio.md
     items:
-    - name: 다중 스레드 응용 프로그램 디버깅 시작
+    - name: 다중 스레드 애플리케이션 디버깅 시작
       href: get-started-debugging-multithreaded-apps.md
     - name: 스레드 및 프로세스 디버그 도구
       href: debug-threads-and-processes.md
@@ -316,7 +316,7 @@ items:
       href: debug-multiple-processes.md
     - name: '연습: 스레드 창을 사용하여 디버그'
       href: how-to-use-the-threads-window.md
-    - name: '연습: 병렬 응용 프로그램 디버그'
+    - name: '연습: 병렬 애플리케이션 디버그'
       href: walkthrough-debugging-a-parallel-application.md
     - name: 디버그 중 다른 스레드로 전환
       href: how-to-switch-to-another-thread-while-debugging.md
@@ -364,10 +364,10 @@ items:
         href: debug-live-azure-apps-faq.md
       - name: 스냅숏 디버깅 문제 해결
         href: debug-live-azure-apps-troubleshooting.md
-  - name: 특정 응용 프로그램 형식 디버그
+  - name: 특정 애플리케이션 형식 디버그
     href: debugging-applications.md
     items:
-    - name: 64비트 응용 프로그램 디버그
+    - name: 64비트 애플리케이션 디버그
       href: debug-64-bit-applications.md
     - name: UWP 앱 디버그
       href: debugging-windows-store-and-windows-universal-apps.md
@@ -408,14 +408,14 @@ items:
     - name: 관리 코드 디버그
       href: debugging-managed-code.md
       items:
-      - name: '디버깅 준비: C#, F# 및 Visual Basic 프로젝트 형식'
+      - name: '디버깅 준비 중: C#, F# 및 Visual Basic 프로젝트 형식'
         href: debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md
         items:
-        - name: '관리 디버깅: 권장 속성 설정'
+        - name: '관리형 디버깅: 권장되는 속성 설정'
           href: managed-debugging-recommended-property-settings.md
-        - name: '디버깅 준비: Windows Forms 응용 프로그램'
+        - name: '디버깅 준비 중: Windows Forms 응용 프로그램'
           href: debugging-preparation-windows-forms-applications.md
-        - name: '디버깅 준비: Windows 서비스'
+        - name: '디버깅 준비 중: Windows 서비스'
           href: debugging-preparation-windows-services.md
       - name: 출력 창으로 메시지 보내기
         href: diagnostic-messages-in-the-output-window.md
@@ -427,7 +427,7 @@ items:
         href: walkthrough-debugging-a-windows-form.md
       - name: OnStart 메서드 디버그
         href: how-to-debug-the-onstart-method.md
-      - name: 혼합 모드 응용 프로그램 디버그
+      - name: 혼합 모드 애플리케이션 디버그
         href: debugging-mixed-mode-applications.md
       - name: JIT 최적화 및 디버깅
         href: jit-optimization-and-debugging.md
@@ -449,7 +449,7 @@ items:
     - name: 네이티브 코드 디버그
       href: debugging-native-code.md
       items:
-      - name: '디버깅 준비: Visual C++ 프로젝트 형식'
+      - name: '디버깅 준비 중: Visual C++ 프로젝트 형식'
         href: debugging-preparation-visual-cpp-project-types.md
       - name: 최적화된 코드 디버그
         href: how-to-debug-optimized-code.md
@@ -535,7 +535,7 @@ items:
       href: debugging-gpu-code.md
     - name: 그래픽 진단
       href: graphics/toc.yml
-    - name: ASP.NET 응용 프로그램 디버그
+    - name: ASP.NET 애플리케이션 디버그
       href: how-to-enable-debugging-for-aspnet-applications.md
       items:
       - name: 'ASP.NET 디버깅: 시스템 요구 사항'
@@ -544,16 +544,16 @@ items:
         href: how-to-run-the-worker-process-under-a-user-account.md
       - name: ASP.NET 프로세스의 이름 찾기
         href: how-to-find-the-name-of-the-aspnet-process.md
-      - name: 배포된 웹 응용 프로그램 디버그
+      - name: 배포된 웹 애플리케이션 디버그
         href: debugging-deployed-web-applications.md
-      - name: '연습: Web Form 디버깅'
+      - name: '연습: Web Form 디버그'
         href: walkthrough-debugging-a-web-form.md
       - name: ASP.NET 예외 디버그
         href: how-to-debug-aspnet-exceptions.md
-      - name: '웹 응용 프로그램 디버그: 오류 및 문제 해결'
+      - name: '웹 애플리케이션 디버그: 오류 및 문제 해결'
         href: debugging-web-applications-errors-and-troubleshooting.md
         items:
-        - name: '웹 응용 프로그램 디버그: 문제 해결'
+        - name: '웹 애플리케이션 디버그: 문제 해결'
           href: debugging-web-applications-troubleshooting.md
           items:
           - name: IIS 속성 설정 확인
@@ -577,7 +577,7 @@ items:
             href: error-the-web-server-could-not-find-the-requested-resource.md
           - name: 웹 서버가 제대로 구성되어 있지 않습니다.
             href: error-the-web-server-is-not-configured-correctly.md
-    - name: 웹 응용 프로그램 디버그
+    - name: 웹 애플리케이션 디버그
       href: debugging-web-applications.md
       items:
       - name: 클라이언트 쪽 스크립트 디버깅
@@ -840,9 +840,9 @@ items:
   items:
   - name: Visual Studio 디버거의 새로운 기능
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: 82809574dbbecf01e26e1677a4bb22ce9a482cf6
-ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.openlocfilehash: cb7973423106d5c7b2af72b005226722eb07ef5b
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821398"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561738"
