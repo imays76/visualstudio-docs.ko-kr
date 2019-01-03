@@ -1,9 +1,6 @@
 ---
 title: 사용자 인터페이스 참조 (Visual Studio에서 Office 개발)
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,18 +12,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4b307759252b54f2510d8af90320b9595f3eeb87
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 0f11a15e2aa93b88def7e430825ddff3dce6fa5f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767563"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831419"
 ---
 # <a name="user-interface-reference-office-development-in-visual-studio"></a>사용자 인터페이스 참조 (Visual Studio에서 Office 개발)
   다음 사용자 인터페이스 요소는 Visual Studio의 Office 프로젝트 중 일부입니다.  
   
 ## <a name="in-this-section"></a>단원 내용  
- [프로젝트 디자이너, 게시 페이지 &#40;Visual Studio에서 Office 개발&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)  
+ [게시 페이지, 프로젝트 디자이너 &#40;Visual Studio에서 Office 개발&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)  
  Office 솔루션을 배포하기 위한 속성을 구성하기 위해 사용하는 속성 페이지에 대해 설명합니다.  
   
  [게시 마법사 &#40;Visual Studio에서 Office 개발&#41;](../vsto/publish-wizard-office-development-in-visual-studio.md)  
@@ -47,5 +44,3 @@ ms.locfileid: "34767563"
   
  [Visual Studio 환경의 office 프로젝트](../vsto/office-projects-in-the-visual-studio-environment.md)  
  Visual Studio 통합 개발 환경에서 Office 프로젝트가 표시되는 방법에 대해 설명합니다.  
-  
-  

@@ -1,9 +1,6 @@
 ---
 title: '방법: 기본 제공 글꼴 및 색 구성표에 액세스 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - fonts, accessing built-in
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 295f6d26d086914bf75d5744ca47594dfefb6591
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f1e579ab9e42ffd7448e3c0dbe62766c058e6f01
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911254"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874604"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>방법: 기본 제공 글꼴을 액세스 및 ccheme 색
 Visual Studio 통합된 개발 환경 (IDE) 편집기 창과 사용 하 여 연결 된 글꼴 및 색 구성표를 있습니다. 이 체계를 통해 액세스할 수 있습니다는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> 인터페이스입니다.
@@ -61,7 +58,7 @@ Visual Studio 통합된 개발 환경 (IDE) 편집기 창과 사용 하 여 연�
     |이름|형식|데이터|설명|
     |----------|----------|----------|-----------------|
     |범주|REG_SZ|GUID|스톡 글꼴 및 색 구성표를 포함 하는 범주를 식별 하는 임의의 GUID입니다.|
-    |패키지|REG_SZ|GUID|{F5E7E71D-1401-11D1-883B-0000F87579D2}<br /><br /> 이 GUID는 기본 글꼴 및 색 구성을 사용 하는 모든 Vspackage에서 사용 됩니다.|
+    |Package|REG_SZ|GUID|{F5E7E71D-1401-11D1-883B-0000F87579D2}<br /><br /> 이 GUID는 기본 글꼴 및 색 구성을 사용 하는 모든 Vspackage에서 사용 됩니다.|
     |NameID|REG_DWORD|ID|리소스의 ID는 VSPackage에서 지역화할 수 있는 범주 이름입니다.|
     |ToolWindowPackage|REG_SZ|GUID|구현 하는 VSPackage의 GUID는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> 인터페이스입니다.|
 
@@ -96,7 +93,7 @@ if (spPropCatContainer != NULL){
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [글꼴 및 색 사용](../extensibility/using-fonts-and-colors.md)
 - [텍스트 색 지정에 대 한 글꼴 및 색 정보 가져오기](../extensibility/getting-font-and-color-information-for-text-colorization.md)

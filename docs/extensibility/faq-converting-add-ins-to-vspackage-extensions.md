@@ -1,9 +1,6 @@
 ---
-title: 'FAQ: VSPackage 확장으로 추가 기능 변환 | Microsoft Docs'
-ms.custom: ''
+title: 'FAQ: 추가 기능을 VSPackage 확장으로 변환 | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
 author: gregvanl
@@ -11,14 +8,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56088e45af5ed45b3a303ffc99679e77b51f56ae
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9623ec6fd2fed89dbe541d6088f7366d38bc0636
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826520"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879149"
 ---
-# <a name="faq-converting-add-ins-to-vspackage-extensions"></a>FAQ: VSPackage 확장으로 추가 기능 변환
+# <a name="faq-converting-add-ins-to-vspackage-extensions"></a>FAQ: 추가 기능을 VSPackage 확장으로 변환
 추가 기능은 이제 사용되지 않습니다. 새 Visual Studio 확장을 하려면 VSIX 확장 프로그램을 만드는 해야 합니다. 다음은 Visual Studio 추가 기능에서 VSIX 확장을 변환 하는 방법에 대 한 일부 자주 묻는 질문에 대 한 답변입니다.  
   
 > [!WARNING]
@@ -53,7 +50,7 @@ ms.locfileid: "49826520"
   
      두 번째 Visual Studio 인스턴스가 표시됩니다. 이 두 번째 인스턴스는 실험적 인스턴스이며, 코드를 작성하는 데 사용하는 Visual Studio 인스턴스와 설정이 다를 수도 있습니다. 실험적 인스턴스를 처음 실행할 때는 VS Online에 로그인하고 테마와 프로필을 지정하라는 메시지가 표시됩니다.  
   
-     에 **도구** (실험적 인스턴스)에서 메뉴 단추가 표시 됩니다 **내 명령 이름**합니다. 이 단추를 선택 하면 메시지가 표시 됩니다. **Testvspackagepackage.menuitemcallback**합니다.  
+     에 **도구** (실험적 인스턴스)에서 메뉴 단추가 표시 됩니다 **내 명령 이름**합니다. 이 단추를 선택 하면 메시지가 표시 됩니다. **TestVSPackagePackage.MenuItemCallback() 내**합니다.  
   
 ##  <a name="BKMK_RunAddin"></a> VSPackage에서 추가 기능에서 코드를 실행할 수는 방법  
  추가 기능 코드는 보통 두 가지 방법 중 하나로 실행됩니다.  

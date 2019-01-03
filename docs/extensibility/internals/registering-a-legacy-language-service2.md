@@ -1,9 +1,6 @@
 ---
 title: 레거시 언어 Service2 등록 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - registration, language services
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f247a510b6fb52903970e408f930b13a8faba08e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 689a612ad277291f72af5527300b4d49f76f173f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879019"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828643"
 ---
 # <a name="registering-a-legacy-language-service"></a>레거시 언어 서비스 등록
 다음 섹션에서는 레지스트리 항목 목록을 다양 한 언어에 대 한 서비스 옵션에서 사용할 수 있는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]합니다.  
@@ -34,7 +31,7 @@ ms.locfileid: "49879019"
 |----------|----------|-----------|-----------------|  
 |(기본값)|REG_SZ|*\<GUID &GT;*|언어 서비스의 GUID입니다.|  
 |LangResID|REG_DWORD|0x0-0xffff|리소스 식별자 (ResID) 언어의 이름 지역화 된 텍스트 문자열입니다.|  
-|패키지|REG_SZ|*\<GUID &GT;*|VSPackage의 GUID입니다.|  
+|Package|REG_SZ|*\<GUID &GT;*|VSPackage의 GUID입니다.|  
 |ShowCompletion|REG_DWORD|0-1|지정 여부를 **문 완성** 옵션을 **옵션** 대화 상자가 활성화 됩니다.|  
 |ShowSmartIndent|REG_DWORD|0-1|지정 여부를 선택할 수 있는 옵션이 **스마트** 에서 들여쓰기를 **옵션** 대화 상자가 활성화 됩니다.|  
 |RequestStockColors|REG_DWORD|0-1|지정 여부 사용자 지정 또는 기본 색 키워드 색을 사용 합니다.|  
@@ -89,7 +86,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |이름|형식|범위|설명|  
 |----------|----------|-----------|-----------------|  
 |(기본값)|REG_SZ|resID|이 옵션 페이지의 지역화 된 표시 이름입니다. 리터럴 텍스트 또는 # 이름일 수 있습니다`nnn`여기서 `nnn` 위성 DLL의 지정 된 VSPackage에서에서 문자열 리소스 ID입니다.|  
-|패키지|REG_SZ|*GUID*|이 옵션 페이지를 구현 하는 VSPackage의 GUID입니다.|  
+|Package|REG_SZ|*GUID*|이 옵션 페이지를 구현 하는 VSPackage의 GUID입니다.|  
 |페이지|REG_SZ|*GUID*|호출 하 여 VSPackage에서 요청 속성 페이지의 GUID를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> 메서드. 이 레지스트리 항목이 없는 경우 노드를 페이지가 아닌 레지스트리 키에 설명 합니다.|  
   
 ### <a name="example"></a>예제  
@@ -144,7 +141,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |DisplayName|REG_SZ|resID|에 표시할 이름을 합니다 **연결 프로그램** 대화 상자. 이름이 표준 형식 문자열 리소스 ID 또는 이름입니다.|  
 |ExcludeDefTextEditor|REG_DWORD|0-1|에 사용 합니다 **연결** 메뉴 명령입니다. 특정 파일 형식에 대해 사용할 수 있는 편집기의 목록에서 기본 텍스트 편집기를 나열 하려면이 값을 1로 설정 합니다.|  
 |LinkedEditorGUID|REG_SZ|*\<GUID &GT;*|코드 페이지 지원 파일을 열 수 있는 모든 언어 서비스에 사용 합니다. 예를 들어.txt 파일을 사용 하 여 열면 합니다 **프로그램** 명령을 사용 하 여 및 인코딩 없이 소스 코드 편집기를 사용 하 여에 대 한 옵션이 제공 됩니다.<br /><br /> 하위 키의 이름을 지정 된 GUID는 코드 페이지 편집기 팩터리의; 이 특정 레지스트리 항목에 지정 된 연결된 GUID 일반 편집기 팩터리입니다. 이 항목의 목적은 IDE 기본 편집기를 사용 하 여 파일이 열리지 않으면, IDE 편집기를 사용 하는 다음 목록에서 시도 됩니다. 다음이 편집기는이 편집기 팩터리는 기본적으로 실패 한 편집기 팩터리와 동일 하기 때문에 코드 페이지 편집기 팩터리 되지 않아야 합니다.|  
-|패키지|REG_SZ|*\<GUID &GT;*|VSPackage의 GUID ResID 표시 이름입니다.|  
+|Package|REG_SZ|*\<GUID &GT;*|VSPackage의 GUID ResID 표시 이름입니다.|  
   
 ### <a name="example"></a>예제  
   

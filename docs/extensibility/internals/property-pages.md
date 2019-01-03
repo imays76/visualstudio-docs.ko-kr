@@ -1,9 +1,6 @@
 ---
 title: 속성 페이지 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - configuration options, changing properties
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a547f5d3b075f5489caca2567ca1f1679f145073
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4f7aa506e806cc83876475a2fea0a3a949a7198f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878884"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837890"
 ---
 # <a name="property-pages"></a>속성 페이지
 사용자가 보고 하 고 속성 페이지를 사용 하 여 프로젝트 구성에 종속 된와-속성을 변경할 수 있습니다. A **속성 페이지** 에서 단추를 사용할 수는 **속성** 창 또는 선택한 개체의 속성 페이지 보기를 제공 하는 개체에 대 한 솔루션 탐색기 도구 모음입니다. 속성 페이지 환경에서 생성 되 고 솔루션 및 프로젝트에 사용할 수 있습니다. 그러나도 사용할 수는 구성에 종속 된 속성을 사용 하는 프로젝트 항목에 대 한 사용 가능 합니다. 프로젝트 내에서 파일 올바르게 다른 컴파일러 스위치 설정이 필요한 경우에이 기능을 사용할 수 있습니다.  

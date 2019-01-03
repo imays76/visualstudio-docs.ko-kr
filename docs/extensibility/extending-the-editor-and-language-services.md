@@ -1,9 +1,6 @@
 ---
 title: 편집기 및 언어 서비스 확장 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new -
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7194b245ad3803112f5596c82308c384840d7bdf
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 5e1d8bac8f682017166c3e625aa0578c90515209
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637551"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837332"
 ---
 # <a name="extend-the-editor-and-language-services"></a>편집기 및 언어 서비스 확장
 언어 서비스 기능 (예: IntelliSense) 자체 편집기를 추가할 수 있으며 Visual Studio code 편집기의 대부분의 기능을 확장할 수 있습니다.  확장할 수 있습니다의 전체 목록을 참조 하세요 [언어 서비스 및 편집기 확장 지점](../extensibility/language-service-and-editor-extension-points.md)합니다.  
@@ -42,17 +39,17 @@ ms.locfileid: "39637551"
 |[레거시 코드 편집기로 적응](../extensibility/adapting-legacy-code-to-the-editor.md)|레거시 코드 편집기를 확장 하려면 (전 Visual Studio 2010)를 조정 하는 다양 한 방법에 설명 합니다.|  
 |[레거시 언어 서비스 마이그레이션](../extensibility/internals/migrating-a-legacy-language-service.md)|기반 VSPackage 언어 서비스를 마이그레이션하는 방법에 설명 합니다.|  
 |[연습: 파일 이름 확장명에 콘텐츠 형식 링크](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)|콘텐츠 형식을 파일 이름 확장명에 연결 하는 방법을 보여 줍니다.|  
-|[연습: 여백 문자 모양 만들기](../extensibility/walkthrough-creating-a-margin-glyph.md)|아이콘에 여백을 추가 하는 방법을 보여 줍니다.|  
-|[연습: 텍스트 강조 표시](../extensibility/walkthrough-highlighting-text.md)|사용 하는 방법을 보여 줍니다 *태그* 텍스트를 강조 표시 합니다.|  
+|[연습: 여백 모양 만들기](../extensibility/walkthrough-creating-a-margin-glyph.md)|아이콘에 여백을 추가 하는 방법을 보여 줍니다.|  
+|[연습: 텍스트를 강조 표시](../extensibility/walkthrough-highlighting-text.md)|사용 하는 방법을 보여 줍니다 *태그* 텍스트를 강조 표시 합니다.|  
 |[연습: 추가 개요](../extensibility/walkthrough-outlining.md)|특정 종류의 중괄호에 대 한 개요를 추가 하는 방법을 보여 줍니다.|  
 |[연습: 일치 하는 중괄호를 표시 합니다.](../extensibility/walkthrough-displaying-matching-braces.md)|일치 하는 중괄호를 강조 표시 하는 방법을 보여 줍니다.|  
-|[연습: 표시 QuickInfo 도구 설명 표시](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)|속성, 메서드 및 이벤트와 같은 코드의 요소를 설명 하는 요약 정보 팝업을 표시 하는 방법을 보여 줍니다.|  
+|[연습: QuickInfo 도구 설명 표시](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)|속성, 메서드 및 이벤트와 같은 코드의 요소를 설명 하는 요약 정보 팝업을 표시 하는 방법을 보여 줍니다.|  
 |[연습: 서명 도움말 표시](../extensibility/walkthrough-displaying-signature-help.md)|서명에서 매개 변수의 형식과 수에 대 한 정보를 제공 하는 팝업을 표시 하는 방법을 보여 줍니다.|  
 |[연습: 명령문 완성 표시](../extensibility/walkthrough-displaying-statement-completion.md)|문 완성 기능을 구현 하는 방법을 보여 줍니다.|  
-|[연습: 구현 코드 조각](../extensibility/walkthrough-implementing-code-snippets.md)|코드 조각 확장을 구현 하는 방법을 보여 줍니다.|  
+|[연습: 코드 조각 구현](../extensibility/walkthrough-implementing-code-snippets.md)|코드 조각 확장을 구현 하는 방법을 보여 줍니다.|  
 |[연습: 밝은 전구 추천 표시](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)|코드 제안 전구를 표시 하는 방법을 보여 줍니다.|  
-|[연습: 편집기 확장을 사용 하 여 셸 명령 사용](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)|MEF 구성 요소를 사용 하 여 VSPackage에서 메뉴 명령과 연결 하는 방법을 보여 줍니다.|  
-|[연습: 편집기 확장을 사용 하 여 바로 가기 키 사용](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)|VSPackage에서 메뉴 바로 가기는 MEF 구성 요소를 사용 하 여 연결 하는 방법을 보여 줍니다.|  
+|[연습: 편집기 확장에서 셸 명령 사용](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)|MEF 구성 요소를 사용 하 여 VSPackage에서 메뉴 명령과 연결 하는 방법을 보여 줍니다.|  
+|[연습: 편집기 확장을 사용 하 여 바로 가기 키를 사용 합니다.](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)|VSPackage에서 메뉴 바로 가기는 MEF 구성 요소를 사용 하 여 연결 하는 방법을 보여 줍니다.|  
 |[MEF(Managed Extensibility Framework)](/dotnet/framework/mef/index)|에 대 한는 Framework MEF (Managed Extensibility) 정보를 제공 합니다.|  
 |[Windows Presentation Foundation](/dotnet/framework/wpf/index)|Windows Presentation Foundation (WPF)에 대 한 정보를 제공 합니다.|  
   

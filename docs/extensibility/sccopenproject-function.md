@@ -1,9 +1,6 @@
 ---
 title: SccOpenProject 함수 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccOpenProject
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 928c1d63451dc49fabf01503e8cb7f6789b98998
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4fde4a8e59fb64e12b78eacc14406fdf5020b64f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837011"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856477"
 ---
 # <a name="sccopenproject-function"></a>SccOpenProject 함수
 이 함수 기존 소스 제어 프로젝트를 열거나 새로 만듭니다.  

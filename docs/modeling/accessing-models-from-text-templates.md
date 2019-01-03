@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 806e0984ce0309ff071e595725615034a7d42f09
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 364e39744f403e83847d983e02843bf538bf5c57
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882524"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856867"
 ---
 # <a name="accessing-models-from-text-templates"></a>텍스트 템플릿에서 모델에 액세스
 텍스트 템플릿을 사용 하 여 보고서 파일, 소스 코드 파일 및 도메인 특정 언어 모델을 기반으로 하는 기타 텍스트 파일을 만들 수 있습니다. 텍스트 템플릿에 대 한 기본 정보를 참조 하세요. [코드 생성 및 T4 텍스트 템플릿](../modeling/code-generation-and-t4-text-templates.md)합니다. 텍스트 템플릿 DSL을 디버깅할 때 실험적 모드에서 작동 하 고 DSL를 배포한 컴퓨터 에서도 작동 합니다.
@@ -143,7 +142,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 
  파일을 로드 하는 가장 효과적인 방법 Visual Studio ModelBus를 사용 하면 됩니다. 일반적인 시나리오에서는 텍스트 템플릿에 일반적인 방법으로 첫 번째 모델을 로드 하려면 DSL 별 지시문을 사용 합니다. 해당 모델에는 다른 모델에 대 한 ModelBus 참조 포함 됩니다. ModelBus 참조 되는 모델을 열고 특정 요소에 액세스를 사용할 수 있습니다. 자세한 내용은 [텍스트 템플릿에서 Visual Studio ModelBus를 사용 하 여](../modeling/using-visual-studio-modelbus-in-a-text-template.md)입니다.
 
- 덜 일반적인 시나리오를 파일 이름에만 권한이 있는 모델 파일을 여는 현재 Visual Studio 프로젝트에서 되지 않을 수 있습니다. 에 설명 된 기술을 사용 하 여 파일을 열 수는 예에서 [방법: 프로그램 코드로 파일에서 모델 열기](../modeling/how-to-open-a-model-from-file-in-program-code.md)합니다.
+ 덜 일반적인 시나리오를 파일 이름에만 권한이 있는 모델 파일을 여는 현재 Visual Studio 프로젝트에서 되지 않을 수 있습니다. 에 설명 된 기술을 사용 하 여 파일을 열 수는 예제의 경우 [방법: 프로그램 코드로 파일에서 모델 열기](../modeling/how-to-open-a-model-from-file-in-program-code.md)합니다.
 
 ## <a name="generating-multiple-files-from-a-template"></a>템플릿에서 여러 파일을 생성합니다.
  -여러 파일을 생성 하려는 경우 예를 들어 모델에서 각 요소에 대 한 별도 파일을 생성 하려면 몇 가지가 있습니다 가능 합니다. 기본적으로 각 템플릿 파일에서 파일을 하나만 생성 됩니다.

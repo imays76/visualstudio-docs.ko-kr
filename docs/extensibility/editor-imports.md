@@ -1,9 +1,6 @@
 ---
 title: 편집기 가져오기 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - services
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ede17217dbac62bcc0086e6f4e5afca0cf9e0a0
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: cffc59c0bcaed2797b5f2548a47c067d04da56ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637217"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893933"
 ---
 # <a name="editor-imports"></a>편집기 가져오기
 편집기 서비스, 팩터리 및 핵심 편집기를 다양 한 종류의 액세스를 사용 하 여 확장을 제공 하는 브로커의 숫자를 가져올 수 있습니다. 예를 들어, 가져올 수 있습니다 합니다 <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> 을 제공 하기는 <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> 지정된 된 콘텐츠 형식에 대 한 합니다. (이 검색기 허용 텍스트 버퍼에서 다른 유형의 검색을 수행 합니다.)  
@@ -45,13 +42,13 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
   
  가져오기를 사용 하 여 더 많은 예제를 다음 연습을 참조 합니다.  
   
- [연습: 여백 문자 모양 만들기](../extensibility/walkthrough-creating-a-margin-glyph.md)  
+ [연습: 여백 모양 만들기](../extensibility/walkthrough-creating-a-margin-glyph.md)  
   
  [연습: 텍스트 뷰 사용자 지정](../extensibility/walkthrough-customizing-the-text-view.md)  
   
- [연습: 텍스트 강조 표시](../extensibility/walkthrough-highlighting-text.md)  
+ [연습: 텍스트를 강조 표시](../extensibility/walkthrough-highlighting-text.md)  
   
- [연습: 표시 QuickInfo 도구 설명 표시](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [연습: QuickInfo 도구 설명 표시](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
  [연습: 서명 도움말 표시](../extensibility/walkthrough-displaying-signature-help.md)  
   
@@ -67,7 +64,7 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
 internal SVsServiceProvider ServiceProvider = null;   
 ```  
   
- 참조 [연습: 편집기 확장에서 DTE 개체 액세스](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md) 자세한 내용은 합니다.  
+ [연습: 편집기 확장에서 DTE 개체 액세스](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md) 자세한 내용은 합니다.  
   
 ## <a name="services"></a>서비스  
  편집기 서비스는 서비스를 제공 하 고 여러 구성 요소 간에 공유 되는 일반적으로 단일 엔터티입니다.  

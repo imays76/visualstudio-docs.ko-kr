@@ -1,9 +1,6 @@
 ---
 title: 언로드 및 다시 로드에 대 한 고려 사항 중첩 프로젝트 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - nested projects, unloading and reloading
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c38b50f661ed7ea16c56d9a877b809d2d60dd51c
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: db5af7d761df39e2a0fee29f27e3f34526f07a7e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513460"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870942"
 ---
 # <a name="considerations-for-unloading-and-reloading-nested-projects"></a>중첩 된 프로젝트를 다시 로드 및 언로드 시 고려 사항
 
@@ -37,7 +34,7 @@ ms.locfileid: "39513460"
 
 부모 프로젝트 호출 하 여이 프로세스를 처리할 `QueryInterface` 에 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents> 인터페이스입니다. `IVsFireSolutionEvents` 시키려면 IDE에 지시 하는 함수에는 `OnBeforeUnloadProject` 중첩 된 프로젝트를 언로드하고 제기 이벤트는 `OnAfterLoadProject` 동일한 프로젝트를 다시 로드 하는 이벤트입니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3>
 - [중첩 프로젝트](../../extensibility/internals/nesting-projects.md)

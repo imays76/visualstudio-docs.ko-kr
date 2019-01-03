@@ -1,15 +1,10 @@
 ---
-title: '방법: 엔터티 간 연결 만들기 | Microsoft Docs'
-ms.custom: ''
+title: '방법: 엔터티 간의 연결 만들기 | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - AssociationGroupTool
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -26,14 +21,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 51527092332f1fa82019f1abf9251a8b44aedf06
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: eaaa3f86cc0751b0b80d61555a69aa6bfecda2f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119461"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878249"
 ---
-# <a name="how-to-create-an-association-between-entities"></a>방법: 엔터티 간 연결 만들기
+# <a name="how-to-create-an-association-between-entities"></a>방법: 엔터티 간의 연결 만들기
   연결을 만들어 비즈니스 데이터 연결 (BDC) 모델의 엔터티 간의 관계를 정의할 수 있습니다. Visual Studio는 각 연결에 대 한 정보를 사용 하 여 모델의 소비자에 게 제공 하는 메서드를 생성 합니다. 이러한 메서드는 SharePoint 웹 파트, 목록 또는 사용자 지정 응용 프로그램에서 사용되어 UI(사용자 인터페이스)에 데이터 관계를 표시할 수 있습니다.  
   
  BDC 디자이너에서 두 가지 유형의 연결을 만들 수 있습니다: 외래 키 기반 연결 및 외래 키가 없는 연결 합니다. 자세한 내용은 [엔터티 간의 연결을 만들](../sharepoint/creating-an-association-between-entities.md)합니다.  
@@ -66,7 +61,7 @@ ms.locfileid: "37119461"
   
      연결 탐색 방법의 예제를 참조 하세요 [엔터티 간의 연결을 만들](../sharepoint/creating-an-association-between-entities.md)합니다.  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  [엔터티 간의 연결 만들기](../sharepoint/creating-an-association-between-entities.md)   
  [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [방법: Finder 메서드 추가](../sharepoint/how-to-add-a-finder-method.md)   
@@ -78,5 +73,4 @@ ms.locfileid: "37119461"
  [방법: 메서드에 매개 변수를 추가 합니다.](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
  [방법: 메서드 인스턴스 정의](../sharepoint/how-to-define-a-method-instance.md)   
  [방법: 매개 변수의 형식 설명자 정의](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
- [연습: 비즈니스 데이터를 사용 하 여 SharePoint에서 외부 목록 만들기](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)  
-  
+ [연습: 비즈니스 데이터를 사용 하 여 SharePoint에 외부 목록 만들기](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)  

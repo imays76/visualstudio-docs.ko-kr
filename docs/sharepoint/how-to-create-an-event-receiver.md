@@ -1,9 +1,6 @@
 ---
 title: '방법: 이벤트 수신기 만들기 | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.SPE.EventReceiver
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dd4528a47215254684be51400329b05c3998bbab
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9a9f18bb4399e52c6afbac9b20a7b16d04a39843
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635150"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861574"
 ---
 # <a name="how-to-create-an-event-receiver"></a>방법: 이벤트 수신기 만들기
   만들어 *이벤트 수신기*, SharePoint 등 목록 또는 목록 항목을 사용 하 여 상호 작용할 때 응답할 수 있습니다. 예를 들어, 사용자 일정을 변경 하거나 연락처 목록에서 이름을 삭제 하는 경우 이벤트 수신기의 코드를 트리거할 수 있습니다. 이 항목에 따라 목록 인스턴스에 이벤트 수신기를 추가 하는 방법을 알아보십시오.
@@ -33,11 +30,11 @@ ms.locfileid: "42635150"
  이러한 단계를 완료 하려면 설치 해야 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Windows 및 SharePoint 버전을 지원 합니다. 이 예제에서는 SharePoint 프로젝트를 필요로 하므로 완료 해야 항목의 절차 [연습: SharePoint 용 사이트 열, 콘텐츠 형식 및 목록 만들기](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)합니다.
 
 ## <a name="adding-an-event-receiver"></a>이벤트 수신기 추가
- 프로젝트에서 만든 [연습: SharePoint 용 사이트 열, 콘텐츠 형식 및 목록 만들기](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) 사용자 지정 사이트 열, 사용자 지정 목록 및 콘텐츠 형식을 포함 합니다. 다음 절차에서는 SharePoint 목록 등에서 발생 하는 이벤트를 처리 하는 방법을 보여 주는 목록 인스턴스에 (이벤트 수신기) 간단한 이벤트 처리기를 추가 하 여이 프로젝트를 확장 하겠습니다.
+ 만든 프로젝트 [연습: SharePoint 용 사이트 열, 콘텐츠 형식 및 목록 만들기](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) 사용자 지정 사이트 열, 사용자 지정 목록 및 콘텐츠 형식을 포함 합니다. 다음 절차에서는 SharePoint 목록 등에서 발생 하는 이벤트를 처리 하는 방법을 보여 주는 목록 인스턴스에 (이벤트 수신기) 간단한 이벤트 처리기를 추가 하 여이 프로젝트를 확장 하겠습니다.
 
 #### <a name="to-add-an-event-receiver-to-the-list-instance"></a>목록 인스턴스에 이벤트 수신기를 추가 하려면
 
-1.  만든 프로젝트를 엽니다 [연습: SharePoint 용 사이트 열, 콘텐츠 형식 및 목록 만들기](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)합니다.
+1.  만든 프로젝트를 열고 [연습: SharePoint 용 사이트 열, 콘텐츠 형식 및 목록 만들기](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)합니다.
 
 2.  **솔루션 탐색기**, 이름으로 지정 된 SharePoint 프로젝트 노드를 선택 **클리닉**합니다.
 
@@ -72,6 +69,6 @@ ms.locfileid: "42635150"
 
      선택한 후는 **저장** 단추를 **환자 이름** Scott Brown 이름 열을 자동으로 업데이트 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [SharePoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)

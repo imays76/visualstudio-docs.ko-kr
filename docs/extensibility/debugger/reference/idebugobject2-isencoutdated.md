@@ -1,9 +1,6 @@
 ---
 title: IDebugObject2::IsEncOutdated | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugObject2::IsEncOutdated
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6ec1e09628b2bd1da23bda6baaa1fa157dfbf08
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a7f8344896c0ad262a8db09cb4caa0e00414431b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928102"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838887"
 ---
 # <a name="idebugobject2isencoutdated"></a>IDebugObject2::IsEncOutdated
 이 메서드는 부모 컨테이너 또는이 개체의 편집 하며 계속 하기 상태 최신 인지 확인 합니다. 이 메서드와 항상 반환을 사용자 지정 식 계산기 구현 하지 않는 `E_NOTIMPL`합니다.  
@@ -28,14 +25,14 @@ ms.locfileid: "49928102"
 ## <a name="syntax"></a>구문  
   
 ```cpp  
-HRESULT IsEncOutdated(  
-   BOOL* pfEncOutdated  
+HRESULT IsEncOutdated(  
+   BOOL* pfEncOutdated  
 );  
 ```  
   
 ```csharp  
-int IsEncOutdated(  
-   out int pfEncOutdated  
+int IsEncOutdated(  
+   out int pfEncOutdated  
 );  
 ```  
   

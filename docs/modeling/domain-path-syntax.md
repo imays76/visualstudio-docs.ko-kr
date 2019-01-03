@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 984b27b65b251a1e87c72962e488fd0d4036a4d0
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 13a8ab293a6a18856ba98edc7aa04154bc876d40
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749546"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834934"
 ---
 # <a name="domain-path-syntax"></a>도메인 경로 구문
 DSL 정의는 XPath 유형 구문을 사용하여 모델에서 특정 요소를 찾습니다.
@@ -29,9 +28,9 @@ DSL 정의는 XPath 유형 구문을 사용하여 모델에서 특정 요소를 
 
  ![CommentReferencesSubjects 참조 관계](../modeling/media/dsl_reference.png)
 
- 구문은 모델 트리를 트래버스합니다. 예를 들어 도메인 관계 **CommentReferencesSubjects** 위의 그림에는 **주제** 역할입니다. 경로 세그먼트 **/! Subjectt** 지정는 경로 통해 액세스 하는 요소에서 끝나는 **주제** 역할입니다.
+ 구문은 모델 트리를 트래버스합니다. 예를 들어, 도메인 관계 **CommentReferencesSubjects** 위의 그림에는 **주제** 역할입니다. 경로 세그먼트 **/! Subjectt** 경로 통해 액세스 하는 요소에 완료 되는지 지정 합니다 **주제** 역할입니다.
 
- 각 세그먼트는 도메인 관계의 이름으로 시작됩니다. 순회 요소에서 관계를, 경로 세그먼트 표시 *Relationship.PropertyName*합니다. 경로 세그먼트도 표시는 홉 인 경우 링크 요소에 *관계 /! RoleName*합니다.
+ 각 세그먼트는 도메인 관계의 이름으로 시작됩니다. 경로 세그먼트 요소로 순회 인 경우 요소에서 관계로 *Relationship.PropertyName*합니다. 경로 세그먼트 요소로 홉 인 경우 링크에서 요소로 *관계 /! RoleName*합니다.
 
  경로 구문은 슬래시로 구분됩니다. 각 경로 세그먼트는 요소에서 링크(관계 인스턴스) 또는 링크에서 요소로의 홉입니다. 경로 세그먼트는 쌍으로 나타나는 경우가 많습니다. 이 쌍의 경로 세그먼트 하나는 요소에서 링크로의 홉을 나타내고 다음 세그먼트는 링크에서 반대쪽 요소로의 홉을 나타냅니다. 모든 링크는 관계 자체의 소스나 대상일 수도 있습니다.
 
