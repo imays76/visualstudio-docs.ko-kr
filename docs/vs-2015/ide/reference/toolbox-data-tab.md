@@ -18,12 +18,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4359cb1c4623442639552e71d1b1dc902e09963e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.openlocfilehash: c5a75242a193345098ac33557a87e792f94f1ef4
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49307653"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648563"
 ---
 # <a name="toolbox-data-tab"></a>도구 상자, 데이터 탭
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,9 +37,9 @@ ms.locfileid: "49307653"
 ## <a name="ui-element-list"></a>UI 요소 목록  
  구성 요소에 대한 .NET Framework 참조 페이지로 직접 이동하려면 **도구 상자**의 항목 또는 디자이너 트레이의 구성 요소 항목에서 **F1** 키를 누릅니다.  
   
-|이름|설명|  
+|name|설명|  
 |----------|-----------------|  
-|<xref:System.Data.DataSet>|형식화된 데이터 집합 또는 형식화되지 않은 데이터 집합의 인스턴스를 폼 또는 구성 요소에 추가합니다. 이 개체를 디자이너로 끌면 기존 형식화된 데이터 집합 클래스를 선택하거나 새로운 빈 형식화되지 않은 데이터 집합을 만들도록 지정할 수 있는 대화 상자가 표시됩니다. **참고:** **도구 상자**에서는 새 형식화된 데이터 집합 스키마 및 클래스를 만드는 데 <xref:System.Data.DataSet> 개체를 사용하지 않습니다. 자세한 내용은 [데이터 집합 만들기 및 구성](../../data-tools/create-and-configure-datasets-in-visual-studio.md)을 참조하세요.|  
+|<xref:System.Data.DataSet>|형식화된 데이터 집합 또는 형식화되지 않은 데이터 집합의 인스턴스를 폼 또는 구성 요소에 추가합니다. 이 개체를 디자이너로 끌면 기존 형식화된 데이터 집합 클래스를 선택하거나 새로운 빈 형식화되지 않은 데이터 집합을 만들도록 지정할 수 있는 대화 상자가 표시됩니다. **참고:**  사용 하지 않는 합니다 <xref:System.Data.DataSet> 에서 개체를 **도구 상자** 새 형식화 된 데이터 집합 스키마를 만들고 클래스. 자세한 내용은 [데이터 집합 만들기 및 구성](../../data-tools/create-and-configure-datasets-in-visual-studio.md)을 참조하세요.|  
 |<xref:System.Windows.Forms.DataGridView>|데이터를 표 형식으로 효과적이고 유연하게 표시할 수 있습니다.|  
 |<xref:System.Windows.Forms.BindingSource>|내부 데이터 소스에 컨트롤을 바인딩하는 프로세스를 간소화합니다.|  
 |<xref:System.Windows.Forms.BindingNavigator>|데이터에 바인딩된 폼의 컨트롤에 대한 탐색 및 조작 UI(사용자 인터페이스)를 나타냅니다.|  
@@ -47,14 +47,6 @@ ms.locfileid: "49307653"
 ## <a name="see-also"></a>참고 항목  
  [데이터 연습](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   
  [Visual Studio에서 데이터에 Windows Forms 컨트롤 바인딩](../../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
- [Visual Studio에서 데이터 응용 프로그램 개요](../../data-tools/overview-of-data-applications-in-visual-studio.md)   
- [Visual Studio에서 데이터에 연결](../../data-tools/connecting-to-data-in-visual-studio.md)   
- [데이터를 받기 위해 응용 프로그램 준비](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
- [응용 프로그램에 데이터를 가져오는 중](../../data-tools/fetching-data-into-your-application.md)   
+ [데이터를 받기 위해 애플리케이션 준비](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
  [Visual Studio에서 데이터에 컨트롤 바인딩](../../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [응용 프로그램에서 데이터 편집](../../data-tools/editing-data-in-your-application.md)   
  [데이터 유효성 검사](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   
- [데이터 저장](../../data-tools/saving-data.md)
-
-
-
