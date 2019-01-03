@@ -1,9 +1,6 @@
 ---
 title: '연습: 단추를 사용 하 여 문서에서 텍스트 상자에 텍스트를 표시 합니다.'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 132a94b6e91148d943d998ab7e4aab96d0d74960
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 188fc5d954bb41ced952e48874816bdfd503765b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822567"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910141"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>연습: 단추를 사용 하 여 문서에서 텍스트 상자에 텍스트를 표시 합니다.
   이 연습에서는 Microsoft Office Word에 대한 문서 수준 사용자 지정에서 단추 및 텍스트 상자를 사용하는 방법을 보여 줍니다.  
@@ -49,7 +46,7 @@ ms.locfileid: "49822567"
   
 1.  이름을 사용 하 여 Word 문서 프로젝트를 만듭니다 **My Word Button**합니다. 마법사에서 선택 **새 문서 만들기**합니다.  
   
-     자세한 내용은 [방법: Visual Studio에서 만드는 Office 프로젝트](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
+     자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
   
      Visual Studio 디자이너에서 새 Word 문서가 열리고 추가 합니다 **My Word Button** 프로젝트가 **솔루션 탐색기**합니다.  
   
@@ -94,7 +91,7 @@ ms.locfileid: "49822567"
   
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#8](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#8)]  
   
-## <a name="test-the-application"></a>응용 프로그램 테스트  
+## <a name="test-the-application"></a>애플리케이션 테스트  
  이제 문서 했는지를 테스트할 수 있습니다 메시지 **Hello World!** 단추를 클릭할 때 텍스트 상자에 표시 됩니다.  
   
 ### <a name="to-test-your-document"></a>문서를 테스트하려면  
@@ -112,11 +109,9 @@ ms.locfileid: "49822567"
   
 -   라디오 단추를 사용하여 차트 스타일 선택. 자세한 내용은 [연습: 라디오 단추를 사용 하 여 문서에서 차트를 업데이트](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Windows Forms 컨트롤에 대 한 Office 문서 개요](../vsto/windows-forms-controls-on-office-documents-overview.md)   
  [Word를 사용 하 여 연습](../vsto/walkthroughs-using-word.md)   
  [Office 개발 샘플 및 연습](../vsto/office-development-samples-and-walkthroughs.md)   
  [방법: Office 문서에 Windows Forms 컨트롤 추가](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
  [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)  
-  
-  

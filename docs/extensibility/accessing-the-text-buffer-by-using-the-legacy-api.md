@@ -1,9 +1,6 @@
 ---
 title: 레거시 API를 사용 하 여 텍스트 버퍼에 액세스 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text buffers
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3347fc2fd03a2eb6b466145672d3aebb77ad71a6
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: ba58811c800501b5397465192ffbdec4c80160a7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078016"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915009"
 ---
 # <a name="access-the-text-buffer-by-using-the-legacy-api"></a>기존 API를 사용 하 여 텍스트 버퍼에 액세스
 텍스트는 텍스트 스트림 및 파일 유지 관리 하는 일을 담당 합니다. 버퍼 수를 읽거나 쓰려면 다른 형식이 있지만 버퍼를 사용 하 여 모든 일반 통신 유니코드를 사용 하 여 수행 됩니다. 레거시 Api에서 텍스트 버퍼 1 개 또는 2 차원 좌표 시스템을 하 여 버퍼의 문자 위치를 식별 합니다.  

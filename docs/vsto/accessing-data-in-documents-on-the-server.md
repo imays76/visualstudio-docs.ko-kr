@@ -1,8 +1,6 @@
 ---
 title: 서버에 있는 문서의 데이터에 액세스
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 85f1183ac4d7d623539c7508f036efd01573e023
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 9d815178e772e391eb19eb43b5870fbcd9dbdaa6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802902"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858106"
 ---
 # <a name="access-data-in-documents-on-the-server"></a>서버에 있는 문서의 데이터에 액세스
   Microsoft Office Word 또는 Microsoft Office Excel의 개체 모델을 사용 하지 않고도 데이터를 문서 수준 사용자 지정에 대해 프로그래밍할 수 있습니다. 즉, 단어 없는 서버의 문서에 포함 된 데이터에 액세스할 수 있습니다 하거나 Excel이 설치 되어 있습니다. 예를 들어 서버에서 코드 (예를 들어는 [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] 페이지) 문서에서 데이터를 사용자 지정 하 고 최종 사용자에 게 사용자 지정된 된 문서를 보낼 수입니다. 최종 사용자가 문서를 열면 솔루션 어셈블리에 데이터 바인딩 코드가 문서에 사용자 지정된 데이터를 바인딩합니다. 문서의 데이터는 사용자 인터페이스에서 구분 하기 때문에 이것이 가능 합니다. 자세한 내용은 [문서 수준 사용자 지정에서 캐시 된 데이터](../vsto/cached-data-in-document-level-customizations.md)입니다.
@@ -80,7 +78,7 @@ ms.locfileid: "53802902"
 ## <a name="access-typed-datasets-in-the-cache"></a>형식화 된 데이터 집합 캐시에 액세스
  Office 솔루션에서와 Windows Forms 응용 프로그램과 같은 사무실 외부에서 응용 프로그램에서 형식화 된 데이터 집합의 데이터에 액세스 하려는 경우 또는 [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] 프로젝트 둘 다에서 참조 되는 별도 어셈블리에서 형식화 된 데이터 집합을 정의 해야 프로젝트입니다. 사용 하 여 형식화 된 데이터 집합 각 프로젝트에 추가 하는 경우는 **데이터 원본 구성을** 마법사 또는 **데이터 집합 디자이너**,.NET Framework는 서로 다른 형식으로 두 프로젝트의 형식화 된 데이터 집합을 처리 . 형식화 된 데이터 집합을 만드는 방법에 대 한 자세한 내용은 참조 하세요. [만들기 및 Visual Studio에서 데이터 집합을 구성](../data-tools/create-and-configure-datasets-in-visual-studio.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [서버에 있는 문서의 데이터에 액세스](../vsto/accessing-data-in-documents-on-the-server.md)
 - [문서 수준 사용자 지정의 캐시 된 데이터](../vsto/cached-data-in-document-level-customizations.md)

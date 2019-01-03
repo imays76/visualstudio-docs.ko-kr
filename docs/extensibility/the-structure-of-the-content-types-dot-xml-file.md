@@ -1,9 +1,6 @@
 ---
-title: '[Content_types].xml 파일의 구조 | Microsoft 문서'
-ms.custom: ''
+title: '[Content_types].xml 파일의 구조 | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - content_types
@@ -16,18 +13,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 538a518d1186dc50a9e5e89635af0a07c2542041
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dd4ed2783ba3b56004037338452722f3ea0f8ddc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893275"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909897"
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>[Content_types].xml 파일의 구조
 VSIX 패키지에서 원하는 콘텐츠 종류에 대 한 정보를 포함합니다. Visual Studio는 패키지를 설치 하려면 [Content_Types].xml 파일을 사용 하지만 파일 자체를 설치 하지 않습니다.  
   
 > [!NOTE]
->  [Content_Types].xml 파일 형식을의 일부인이 항목에서는 VSIX 패키지에 사용 되는 [Content_Type].xml 파일에만 적용 되는 *OPC Open Packaging Conventions ()* 표준입니다. 자세한 내용은 [OPC:는 새로운 표준에 대 한 패키징 Your Data](http://go.microsoft.com/fwlink/?LinkID=148207) MSDN 웹 사이트입니다.  
+>  [Content_Types].xml 파일 형식을의 일부인이 항목에서는 VSIX 패키지에 사용 되는 [Content_Type].xml 파일에만 적용 되는 *OPC Open Packaging Conventions ()* 표준입니다. 자세한 내용은 참조 하세요. [OPC: 새로운 표준에 대 한 패키징 Your 데이터](http://go.microsoft.com/fwlink/?LinkID=148207) MSDN 웹 사이트입니다.  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
  다음 섹션에서는 루트 요소 및 해당 특성 및 자식 요소를 설명합니다.  
@@ -76,7 +73,7 @@ VSIX 패키지에서 원하는 콘텐츠 종류에 대 한 정보를 포함합�
 |htm 또는 html|텍스트/html|  
 |rtf|응용 프로그램/서식 있는 텍스트|  
 |pdf|응용 프로그램/pdf|  
-|gif|이미지/gif|  
+|GIF|image/gif|  
 |jpg 또는 jpeg|jpg 이미지 /|  
 |Tiff|tiff 이미지 /|  
 |vsix|application/zip|  

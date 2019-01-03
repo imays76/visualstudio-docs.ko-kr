@@ -2,7 +2,6 @@
 title: '방법: XSLT 디버깅 시작'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
@@ -11,12 +10,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e3251d83361623aea0c0a54a2752c97b06a66f8
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 170d4d3d0c952e13a5fefb74b23536f50be1e9a6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561868"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925133"
 ---
 # <a name="how-to-start-debugging-xslt"></a>방법: XSLT 디버깅 시작
 
@@ -91,7 +90,7 @@ namespace ConsoleApplication
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [연습: XSLT 스타일 시트 디버깅](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
 - [디버거 소개](../debugger/debugger-feature-tour.md)   

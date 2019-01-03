@@ -1,9 +1,6 @@
 ---
 title: '연습: 리본 디자이너를 사용 하 여 사용자 지정 탭 만들기'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a0089880e143c3db8f260141d9936058bf35b1ce
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 4eda44b274a9720ac067f486706c7404853b0ffc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808874"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917594"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-the-ribbon-designer"></a>연습: 리본 디자이너를 사용 하 여 사용자 지정 탭 만들기
   리본 디자이너를 사용하여 사용자 지정 탭을 만들고 이 탭에 컨트롤을 추가 및 배치할 수 있습니다.  
@@ -55,7 +52,7 @@ ms.locfileid: "38808874"
   
 ### <a name="to-create-an-excel-workbook-project"></a>Excel 통합 문서 프로젝트를 만들려면  
   
--   이름의 Excel 통합 문서 프로젝트를 만듭니다 **MyExcelRibbon**합니다. 자세한 내용은 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)을 참조하세요.  
+-   이름의 Excel 통합 문서 프로젝트를 만듭니다 **MyExcelRibbon**합니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
   
      Visual Studio 디자이너에서 새 통합 문서를 열고 사이트를 추가 합니다 **MyExcelRibbon** 프로젝트가 **솔루션 탐색기**합니다.  
   
@@ -77,7 +74,7 @@ ms.locfileid: "38808874"
 5.  1-5단계를 반복하여 두 번째 작업 창 및 레이블을 만듭니다. 설정 된 **텍스트** 속성에 두 번째 레이블의 **Actions Pane 2**합니다.  
   
 ##  <a name="BKMK_CreateCustomTab"></a> 사용자 지정 탭 만들기  
- Office 응용 프로그램의 디자인 지침 중 하나는 사용자가 항상 Office 응용 프로그램 UI를 제어할 수 있어야 한다는 것입니다. 작업 창에 대해 이 기능을 추가하려면 리본 메뉴의 사용자 지정 탭에서 각 작업 창을 표시하거나 숨기는 단추를 추가합니다. 사용자 지정 탭을 만들려면 추가 된 **리본 (비주얼 디자이너)** 항목을 프로젝트입니다. 이 디자이너는 컨트롤을 추가 및 배치하고, 컨트롤 속성을 설정하고, 컨트롤 이벤트를 처리하는 데 유용합니다.  
+ Office 애플리케이션의 디자인 지침 중 하나는 사용자가 항상 Office 애플리케이션 UI를 제어할 수 있어야 한다는 것입니다. 작업 창에 대해 이 기능을 추가하려면 리본 메뉴의 사용자 지정 탭에서 각 작업 창을 표시하거나 숨기는 단추를 추가합니다. 사용자 지정 탭을 만들려면 추가 된 **리본 (비주얼 디자이너)** 항목을 프로젝트입니다. 이 디자이너는 컨트롤을 추가 및 배치하고, 컨트롤 속성을 설정하고, 컨트롤 이벤트를 처리하는 데 유용합니다.  
   
 ### <a name="to-create-a-custom-tab"></a>사용자 지정 탭을 만들려면  
   
@@ -161,15 +158,13 @@ ms.locfileid: "38808874"
   
 -   표준 또는 사용자 지정 Microsoft Office Outlook 양식을 확장합니다. 자세한 내용은 [연습: Outlook 양식 영역 디자인](../vsto/walkthrough-designing-an-outlook-form-region.md)합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [런타임에 리본 메뉴에 액세스](../vsto/accessing-the-ribbon-at-run-time.md)   
  [리본 개요](../vsto/ribbon-overview.md)   
  [리본 디자이너](../vsto/ribbon-designer.md)   
  [Outlook의 리본을 사용자 지정](../vsto/customizing-a-ribbon-for-outlook.md)   
- [방법: 리본 메뉴 사용자 지정 시작](../vsto/how-to-get-started-customizing-the-ribbon.md)   
+ [방법: 리본 사용자 지정 시작](../vsto/how-to-get-started-customizing-the-ribbon.md)   
  [방법: 리본의 탭 위치 변경](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
  [방법: 기본 제공 탭 사용자 지정](../vsto/how-to-customize-a-built-in-tab.md)   
- [방법: backstage 보기에 컨트롤 추가](../vsto/how-to-add-controls-to-the-backstage-view.md)   
+ [방법: Backstage 보기에 컨트롤 추가](../vsto/how-to-add-controls-to-the-backstage-view.md)   
  [리본 개체 모델 개요](../vsto/ribbon-object-model-overview.md)  
-  
-  

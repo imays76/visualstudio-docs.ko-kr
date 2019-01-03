@@ -3,8 +3,6 @@ title: '방법: Visual Studio에서 Office 프로젝트 만들기'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.SelectDocWizard.Page1
@@ -25,12 +23,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 90dc0903f1a653ab2402d5877ebd4f962ba8cbe1
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 66263d8453fc550f0edb9c81d9c424f04a07c1b0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647889"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902242"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>방법: Visual Studio에서 Office 프로젝트 만들기
   사용할 수 있습니다 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 만들려면 vsto 추가 기능과 문서 수준 사용자 지정 Microsoft Office 응용 프로그램에 대 한 합니다. 이러한 형식의 프로젝트에 대 한 자세한 내용은 참조 하세요. [Office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)합니다.  
@@ -165,5 +163,3 @@ ms.locfileid: "53647889"
  [Office 솔루션 공동 개발](../vsto/collaborative-development-of-office-solutions.md)   
  [Office 솔루션을 만들고 디자인](../vsto/designing-and-creating-office-solutions.md)   
  [VSTO 추가 기능 프로그래밍 시작](../vsto/getting-started-programming-vsto-add-ins.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
 title: 레거시 언어 서비스의 중괄호 일치 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - brace matching
@@ -14,19 +11,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7564d76485fc60486a581de71a0497a1dc3e4a7
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 5f1c69a280e84a3c444c371bef5c99c7a3c17506
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512749"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910037"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>레거시 언어 서비스의 중괄호 일치
 중괄호 일치 괄호와 중괄호와 같이 함께 수행 해야 하는 언어 요소를 추적 하는 개발자는 데 도움이 됩니다. 개발자가 닫는 중괄호를 여는 중괄호 강조 표시 됩니다.  
   
  쌍 및 삼중 쌍 이라는 두 가지 또는 세 개의 동시 발생 요소를 일치 시킬 수 있습니다. 삼중 쌍은 세 개의 동시 발생 요소의 집합입니다. 예를 들어 C#에서 `foreach` 문을 forms 3: `foreach()`, `{`, 및 `}`합니다. 세 요소 모두에 닫는 중괄호를 입력할 때 강조 표시 됩니다.  
   
- 레거시 언어 서비스는 VSPackage의 일부로 구현 됩니다 있지만 MEF 확장을 사용 하는 언어 서비스 기능을 구현 하는 최신 방법입니다. 중괄호 일치를 구현 하는 새로운 방법에 대 한 자세한 내용을 참조 하세요 [연습: 괄호 일치 표시](../../extensibility/walkthrough-displaying-matching-braces.md)합니다.  
+ 레거시 언어 서비스는 VSPackage의 일부로 구현 됩니다 있지만 MEF 확장을 사용 하는 언어 서비스 기능을 구현 하는 최신 방법입니다. 중괄호 일치를 구현 하는 새로운 방법에 대 한 자세한 참조 [연습: 괄호 일치 표시](../../extensibility/walkthrough-displaying-matching-braces.md)합니다.  
   
 > [!NOTE]
 >  편집기를 사용 하 여 새 API 최대한 빨리 시작 하는 것이 좋습니다. 언어 서비스의 성능이 향상 되 고 새 편집기 기능을 활용할 수 있습니다.  
@@ -138,6 +135,6 @@ namespace TestLanguagePackage
 }  
 ```  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [레거시 언어 서비스 기능](../../extensibility/internals/legacy-language-service-features1.md)   
  [레거시 언어 서비스 파서 및 검사기](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)

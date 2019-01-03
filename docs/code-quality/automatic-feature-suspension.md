@@ -11,15 +11,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
-ms.openlocfilehash: b97a58a7f5ba3808c658b838de942e94c12b9b79
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 46df354cf860aa1aa08fd8d738711dad41fd6741
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049096"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861305"
 ---
 # <a name="automatic-feature-suspension"></a>자동 기능 일시 중단
 
@@ -43,7 +42,7 @@ Visual Studio에서 메모리 부족 상태를 감지 하면 자동으로 안정
 
 ## <a name="full-solution-analysis-suspended"></a>일시 중단 하는 전체 솔루션 분석
 
-기본적으로 전체 솔루션 분석 Visual basic의 경우 사용 하도록 설정 되어 Visual C#을 사용할 수 없습니다. 그러나 메모리 부족 상태에서 전체 솔루션 분석 자동으로 비활성화 됩니다 Visual Basic 및 Visual C#, 옵션 대화 상자에서 해당 설정에 관계 없이 합니다. 선택 하 여 전체 솔루션 분석 다시 활성화할 수 있지만 합니다 **다시 사용 하도록 설정** 표시 되 면을 선택 하 여 표시줄 정보 단추를 **전체 솔루션 분석 사용** 옵션 대화 상자에서 확인란 Visual Studio를 다시 시작 합니다. 옵션 대화 상자는 항상 현재 전체 솔루션 분석 설정을 표시합니다. 자세한 내용은 [방법: 사용 하도록 설정 하 고 전체 솔루션 분석 사용 안 함](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)합니다.
+기본적으로 전체 솔루션 분석 Visual basic의 경우 사용 하도록 설정 되어 Visual C#을 사용할 수 없습니다. 그러나 메모리 부족 상태에서 전체 솔루션 분석 자동으로 비활성화 됩니다 Visual Basic 및 Visual C#, 옵션 대화 상자에서 해당 설정에 관계 없이 합니다. 선택 하 여 전체 솔루션 분석 다시 활성화할 수 있지만 합니다 **다시 사용 하도록 설정** 표시 되 면을 선택 하 여 표시줄 정보 단추를 **전체 솔루션 분석 사용** 옵션 대화 상자에서 확인란 Visual Studio를 다시 시작 합니다. 옵션 대화 상자는 항상 현재 전체 솔루션 분석 설정을 표시합니다. 자세한 내용은 [방법: 전체 솔루션 분석 활성화 및 비활성화](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)합니다.
 
 ## <a name="gc-low-latency-disabled"></a>GC 지연율이 낮은 사용 하지 않도록 설정
 
@@ -66,6 +65,6 @@ GC 짧은 대기 시간 모드를 다시 사용 하려면 Visual Studio를 다�
 
 ## <a name="see-also"></a>참고 항목
 
-- [방법: 전체 솔루션 분석 사용 설정 및 해제](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)
+- [방법: 전체 솔루션 분석 활성화 및 비활성화](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)
 - [가비지 수집 기본 사항](/dotnet/standard/garbage-collection/fundamentals)
 - [대규모 솔루션에 대 한 성능 고려 사항](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)

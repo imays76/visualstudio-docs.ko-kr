@@ -1,9 +1,6 @@
 ---
 title: IEnumDebugCustomAttributes::Next | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEnumCustomAttributes::Next
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 107ab2c7ad882705d67924528ac16893a26451e9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b97fb2ff4d0f8babcb3616f48fb04aab67143c91
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927582"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919974"
 ---
 # <a name="ienumdebugcustomattributesnext"></a>IEnumDebugCustomAttributes::Next
 열거형 시퀀스에서 사용자 지정 특성의 지정된 된 수를 검색 합니다.  
@@ -28,7 +25,7 @@ ms.locfileid: "49927582"
 ## <a name="syntax"></a>구문  
   
 ```cpp  
-HRESULT Next (   
+HRESULT Next (   
    ULONG      celt,  
    CODE_PATH* rgelt,  
    ULONG*     pceltFetched  

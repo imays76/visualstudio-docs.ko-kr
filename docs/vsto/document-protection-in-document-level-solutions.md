@@ -1,9 +1,6 @@
 ---
 title: 문서 수준 솔루션의 문서 보호
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 03724e523c1f49277e0bc2b23465d5296d806695
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: b6894aa05adf55945383cb3c2e28b8c5fdebdc16
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648537"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908855"
 ---
 # <a name="document-protection-in-document-level-solutions"></a>문서 수준 솔루션의 문서 보호
   문서 수준 프로젝트에서 Microsoft Office Word 및 Microsoft Office Excel의 보호 기능을 사용할 수 있습니다. 이러한 기능에는 권한이 없는 사용자가 보호 된 문서 부분을 변경 하지 못하도록 차단 합니다.  
@@ -55,12 +52,10 @@ ms.locfileid: "53648537"
 ## <a name="setting-the-password"></a>암호를 설정합니다.  
  Visual Studio는 자동으로 보호를 사용 하도록 설정 하지만 기본적으로 암호를 제공 합니다. 문서를 보호 하려면 암호를 하려는 경우 솔루션을 배포 하기 전에 추가 해야 합니다. 권한 있는 사용자가 문서에서 보호를 제거 하면 암호를 추가 합니다. 암호가 없으면 보호 쉽게 제거할 수 없습니다. 암호를 설정 하는 방법에 대 한 자세한 내용은 특정 Office 응용 프로그램에서 도움말을 참조 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [방법: 프로그래밍 방식으로 문서 및 문서의 일부 보호](../vsto/how-to-programmatically-protect-documents-and-parts-of-documents.md)   
  [Office 개발 샘플 및 연습](../vsto/office-development-samples-and-walkthroughs.md)   
  [정보 권한 관리 및 관리 코드 확장명 개요](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
  [Office 문서의 암호 보호](../vsto/password-protection-on-office-documents.md)   
  [방법: 제한 된 권한으로 문서 뒤에서 실행 하는 코드를 허용 합니다.](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
  [Office 솔루션을 만들고 디자인](../vsto/designing-and-creating-office-solutions.md)  
-  
-  

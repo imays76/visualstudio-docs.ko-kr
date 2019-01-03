@@ -1,8 +1,7 @@
 ---
-title: 'CA2123: 재정의 링크 요청은 기본 형식의 링크 요청과 같아야 합니다.'
+title: 'CA2123: 재정의 링크 요청은 기본 링크 요청과 같아야 합니다.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2123
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ebb37743f9259390aba400a5d89d24b5f41a0d49
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 50ca27f9c6cf15c663514588a0c08bd5b91e3bd0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546982"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882093"
 ---
-# <a name="ca2123-override-link-demands-should-be-identical-to-base"></a>CA2123: 재정의 링크 요청은 기본 형식의 링크 요청과 같아야 합니다.
+# <a name="ca2123-override-link-demands-should-be-identical-to-base"></a>CA2123: 재정의 링크 요청은 기본 링크 요청과 같아야 합니다.
 
 |||
 |-|-|
@@ -51,7 +50,7 @@ ms.locfileid: "45546982"
 
  [!code-csharp[FxCop.Security.OverridesAndSecurity#1](../code-quality/codesnippet/CSharp/ca2123-override-link-demands-should-be-identical-to-base_1.cs)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [보안 코딩 지침](/dotnet/standard/security/secure-coding-guidelines)
 - [링크 요청](/dotnet/framework/misc/link-demands)

@@ -1,8 +1,7 @@
 ---
-title: 'CA1046: 참조 형식에 같음 연산자를 오버로드하지 마십시오.'
+title: 'CA1046: 참조 형식에 같음 연산자를 오버로드하지 마세요.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - DoNotOverloadOperatorEqualsOnReferenceTypes
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f0aeb519fdc22d3fb68812d24979c7aa6c23f85
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 14229e6f73e93aa1ca4323ba12d965270e3228cb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551709"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904736"
 ---
-# <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046: 참조 형식에 같음 연산자를 오버로드하지 마십시오.
+# <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046: 참조 형식에 같음 연산자를 오버로드하지 마세요.
 
 |||
 |-|-|
@@ -66,9 +65,9 @@ c and a are == ? Yes
 
 ## <a name="related-rules"></a>관련된 규칙
 
-[CA1013: 더하기 및 빼기를 오버로드할 때 같음 연산자를 오버로드하십시오.](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
+[CA1013: 오버 로드에 같음 연산자를 오버 더하기 및 빼기](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.Object.Equals%2A?displayProperty=fullName>
 - [같음 연산자](/dotnet/standard/design-guidelines/equality-operators)

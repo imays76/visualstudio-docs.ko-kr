@@ -1,9 +1,6 @@
 ---
 title: '방법: Visual Basic 프로젝트에서 VBA로 코드 노출'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 43308e73d00f163b27a4dbe20dc9f0cbb656c4ba
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 7a534d32dc8e9352c10a214fbd70ec361b82aed1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648641"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900994"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>방법: Visual Basic 프로젝트에서 VBA로 코드 노출
   코드에 노출할 수 있습니다는 [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] 두 가지 유형의 서로 상호 작용 하는 코드를 원하는 경우 Applications (VBA) 코드에 대 한 Visual basic 프로젝트입니다.  
@@ -120,11 +117,9 @@ ms.locfileid: "53648641"
   
 9. 프로젝트를 빌드합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Office 솔루션을 만들고 디자인](../vsto/designing-and-creating-office-solutions.md)   
  [VBA 및 문서 수준 사용자 지정 결합](../vsto/combining-vba-and-document-level-customizations.md)   
  [연습: Visual Basic 프로젝트에서 VBA에서 코드 호출](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)   
  [방법: Visual C에서 VBA로 코드 노출&#35; 프로젝트](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)  
-  
-  

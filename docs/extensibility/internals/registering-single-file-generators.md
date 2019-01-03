@@ -1,9 +1,6 @@
 ---
 title: 단일 파일 생성기 등록 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - registration, custom tools
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2e65a1ef3db913223d9248797d1cf4bd9c9ded6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5ba4bb20eb5e3a98d20a3272a603e53a772b5f1b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875999"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880973"
 ---
 # <a name="registering-single-file-generators"></a>단일 파일 생성기 등록
 사용자 지정 도구에서 사용할 수 있도록 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], 따라서를 등록 해야 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 인스턴스화할 수 있습니다 및 특정 프로젝트 형식에 연결 합니다.  
@@ -47,11 +44,11 @@ ms.locfileid: "49875999"
   
    -   CLSID  
   
-        필수. 구현 하는 COM 구성 요소의 클래스 라이브러리의 식별자를 지정 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>합니다.  
+        필수 요소. 구현 하는 COM 구성 요소의 클래스 라이브러리의 식별자를 지정 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>합니다.  
   
    -   GeneratesDesignTimeSource  
   
-        필수. 이 사용자 지정 도구에서 생성 된 파일에서 형식을 사용할 수 있는 비주얼 디자이너를 수행 하는지 여부를 나타냅니다. 이 매개 변수의 값 (0) 0 비주얼 디자이너에 사용할 수 없는 형식에 대 한 또는 비주얼 디자이너를 사용할 수 있는 형식 (1) 1 있어야 합니다.  
+        필수 요소. 이 사용자 지정 도구에서 생성 된 파일에서 형식을 사용할 수 있는 비주얼 디자이너를 수행 하는지 여부를 나타냅니다. 이 매개 변수의 값 (0) 0 비주얼 디자이너에 사용할 수 없는 형식에 대 한 또는 비주얼 디자이너를 사용할 수 있는 형식 (1) 1 있어야 합니다.  
   
    > [!NOTE]
    >  사용자 지정 도구 사용 가능 하도록 사용자 지정 도구는 원하는 각 언어에 대해 별도로 등록 해야 합니다.  

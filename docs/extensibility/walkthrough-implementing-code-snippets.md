@@ -1,9 +1,6 @@
 ---
 title: '연습: 코드 조각 구현 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
 author: gregvanl
@@ -11,14 +8,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd4a22dc63f0304cc8afa98e35c5f7afd6cac011
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4866f028851fadbee9f8ab5dbd6d4dc50015a728
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921995"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902190"
 ---
-# <a name="walkthrough-implement-code-snippets"></a>연습: 구현 코드 조각
+# <a name="walkthrough-implement-code-snippets"></a>연습: 코드 조각 구현
 코드 조각을 작성 하 고 확장의 사용자가 자신의 코드에 추가할 수 있도록 편집기 확장에 포함할 수 있습니다.  
   
  코드 조각에는 코드 또는 파일에 통합할 수 있는 기타 텍스트의 일부입니다. 특정 프로그래밍 언어에 대 한 등록 된 모든 조각을 보려면 합니다 **도구** 메뉴에서 클릭 **코드 조각 관리자**합니다. 코드 조각에서 원하는 위치를 마우스 오른쪽 단추로 파일에서 조각을 삽입 하려면 다음 코드 조각 삽입 또는 **감싸기**원하는 코드 조각을 찾아서 두 번 클릭 합니다. 키를 눌러 **탭** 하거나 **Shift**+**탭** 조각의 관련 부분을 수정 하 여 키를 누릅니다 **Enter** 또는 **Esc** 계약에 동의 합니다. 자세한 내용은 [코드 조각](../ide/code-snippets.md)합니다.  
@@ -33,7 +30,7 @@ ms.locfileid: "49921995"
   
 3. 코드 조각 확장을 구현 합니다.  
   
-   이 연습에 더해서 [연습: 문 완성 표시](../extensibility/walkthrough-displaying-statement-completion.md)합니다.  
+   이 연습은 기반으로 [연습: 문 완성 표시](../extensibility/walkthrough-displaying-statement-completion.md)합니다.  
   
 ## <a name="prerequisites"></a>전제 조건  
  Visual Studio 2015부터 있습니다 다운로드 센터에서 Visual Studio SDK를 설치 하지 마세요. Visual Studio 설치에서 선택적 기능으로 포함 되어 있습니다. 또한 VS SDK를 나중에 설치할 수 있습니다. 자세한 내용은 [Visual Studio SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)합니다.  

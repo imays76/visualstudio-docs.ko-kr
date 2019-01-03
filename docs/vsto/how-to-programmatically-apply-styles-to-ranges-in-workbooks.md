@@ -1,9 +1,6 @@
 ---
 title: '방법: 프로그래밍 방식으로 통합 문서에서 범위에 스타일 적용'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d19c886a7b3ae1a1976ab2a47fe139ba830a4ea5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4c0129319e1d979efd924d9d2bef57f0ef5dbf1a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674464"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876421"
 ---
 # <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>방법: 프로그래밍 방식으로 통합 문서에서 범위에 스타일 적용
   통합 문서의 영역에 명명된 스타일을 적용할 수 있습니다. Excel에서는 미리 정의된 다양한 스타일을 제공합니다.  
@@ -74,5 +71,3 @@ ms.locfileid: "35674464"
  [NamedRange 컨트롤](../vsto/namedrange-control.md)   
  [Office 프로젝트의 개체에 대 한 전역 액세스](../vsto/global-access-to-objects-in-office-projects.md)   
  [Office 솔루션의 선택적 매개 변수](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

@@ -1,13 +1,8 @@
 ---
 title: '방법: Finder 메서드에 필터 설명자 추가 | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -20,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 63374f4d96c86ea3eafbd4c6fa3fbe3d1f5a5899
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: bf1909f6c57ed82ba5afcfd30f6586e9bd4d6d14
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755601"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877772"
 ---
 # <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>방법: Finder 메서드에 필터 설명자 추가
   필터 설명자 값을 전달할 메서드가 실행 되기 전에 모델의 소비자를 사용 합니다. 자세한 내용은 [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)합니다.  
@@ -34,7 +29,7 @@ ms.locfileid: "36755601"
   
 ### <a name="to-add-a-filter-descriptor-to-a-finder-method"></a>Finder 메서드에 필터 설명자를 추가 하려면  
   
-1.  에 **BDC 메서드 세부 정보** 창 Finder 메서드 노드를 확장 합니다 **매개 변수** 노드를 다음 입력된 매개 변수를 추가 합니다. 자세한 내용은 [방법: 메서드에 매개 변수를 추가](../sharepoint/how-to-add-a-parameter-to-a-method.md)합니다.  
+1.  에 **BDC 메서드 세부 정보** 창 Finder 메서드 노드를 확장 합니다 **매개 변수** 노드를 다음 입력된 매개 변수를 추가 합니다. 자세한 내용은 [방법: 메서드 매개 변수를 추가](../sharepoint/how-to-add-a-parameter-to-a-method.md)합니다.  
   
 2.  에 **메서드 세부 정보** 창에서 매개 변수의 형식 설명자를 선택 합니다.  
   
@@ -72,12 +67,10 @@ ms.locfileid: "36755601"
      [!code-csharp[SP_BDC#11](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderservice.cs#11)]
      [!code-vb[SP_BDC#11](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb#11)]  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  [방법: Finder 메서드 추가](../sharepoint/how-to-add-a-finder-method.md)   
  [방법: 특정 Finder 메서드 추가](../sharepoint/how-to-add-a-specific-finder-method.md)   
  [방법: 메서드에 매개 변수를 추가 합니다.](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
  [방법: 매개 변수의 형식 설명자 정의](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
  [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [SharePoint에 비즈니스 데이터 통합](../sharepoint/integrating-business-data-into-sharepoint.md)  
-  
-  

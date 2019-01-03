@@ -1,13 +1,8 @@
 ---
 title: '방법: 모듈을 사용 하 여 파일 포함 | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5c5152221e5e58504ba84e0ad0f31511b4d93aa0
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: d0cfe558c21a941ed5cc16eccef2e014acfbcdb7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119381"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923499"
 ---
 # <a name="how-to-include-files-by-using-a-module"></a>방법: 모듈을 사용 하 여 파일 포함
   *모듈* (사용 하 여 혼동 하면 안 [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] 모듈)은 SharePoint에 ASPX 마스터 페이지와 같은 파일, 텍스트 파일 또는 이미지를 배포할 수 있도록 하는 컨테이너입니다.  
@@ -58,7 +53,7 @@ ms.locfileid: "37119381"
   
      파일을 프로젝트에 추가 하면 항목에 대 한 모듈의 Elements.xml 파일에 자동으로 추가 됩니다. SharePoint 서버에 의해 지정 되는 프로젝트의 루트 디렉터리를 기준으로 파일 복사는 프로젝트를 배포할 때 합니다 **파일** 요소의 **Url** 와 같은 특성 `Url="Module1/New Folder/SomeFile.doc`합니다. 파일에 대 한 배포 위치를 변경 하려는 경우 하거나 이동할 다른 폴더로 **솔루션 탐색기** 변경 하거나 해당 **Url** 설정 합니다.  
   
-8.  문서 라이브러리에 표시 하려는 모든 파일을 추가 합니다 `Type="GhostableInLibrary"` 특성에서 해당 항목을 *Elements.xml*합니다. 예를 들어 개체에 적용된  
+8.  문서 라이브러리에 표시 하려는 모든 파일을 추가 합니다 `Type="GhostableInLibrary"` 특성에서 해당 항목을 *Elements.xml*합니다. 예를 들면 다음과 같습니다.  
   
     ```xml  
     <File Path="Module1\Some Folder\SomePage.aspx" Url="Module1/Some Folder/SomePage.aspx" Type="GhostableInLibrary" />  
@@ -68,7 +63,6 @@ ms.locfileid: "37119381"
   
      파일을 SharePoint의 지정된 된 위치에 복사합니다.  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  [패키지 및 SharePoint 솔루션 배포](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)   
  [SharePoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)  
-  

@@ -1,9 +1,6 @@
 ---
 title: '연습: 워크시트에서 라디오 단추를 사용하여 차트 업데이트'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5aff631d8c9b6bd65b8ae91c5d936d2669764791
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e165fc0a02f3185c74f4a3eb4b0fe9536f71fb66
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866443"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891943"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>연습: 워크시트에서 라디오 단추를 사용하여 차트 업데이트
   이 연습에서는 Microsoft Office Excel 워크시트에서 라디오 단추를 사용 하 여 옵션을 신속 하 게 전환 하는 방법을 사용자에 게 제공의 기본 사항을 보여 줍니다. 이 경우 옵션은 차트의 스타일을 변경 합니다.  
@@ -96,7 +93,7 @@ ms.locfileid: "49866443"
 
 1.  이름으로 Excel 통합 문서 프로젝트를 만듭니다 **내 Excel 차트**합니다. 마법사에서 선택 **기존 문서 복사**합니다.  
 
-     자세한 내용은 [방법: Visual Studio에서 만드는 Office 프로젝트](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
+     자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
 
 2.  클릭 합니다 **찾아보기** 단추 및이 연습의 앞부분에서 만든 통합 문서를 찾습니다.  
 
@@ -238,7 +235,7 @@ ms.locfileid: "49866443"
 
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#20](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#20)]  
 
-## <a name="test-the-application"></a>응용 프로그램 테스트  
+## <a name="test-the-application"></a>애플리케이션 테스트  
  이제 라디오 단추를 선택 하면 차트의 올바르게 스타일을 확인 하려면 통합 문서를 테스트할 수 있습니다.  
 
 ### <a name="to-test-your-workbook"></a>통합 문서를 테스트하려면  
@@ -258,6 +255,5 @@ ms.locfileid: "49866443"
 
 -   확인란을 사용 하 여 워크시트 서식 변경 합니다. 자세한 내용은 [연습: CheckBox 컨트롤을 사용 하 여 변경 워크시트 서식](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)합니다.  
 
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Excel을 사용 하 여 연습](../vsto/walkthroughs-using-excel.md)  
-

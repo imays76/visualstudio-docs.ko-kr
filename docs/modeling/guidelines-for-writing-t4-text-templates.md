@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 09ed896c85807da5a65084360fa62e24c3cca141
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c0b7e1c151333a3afd0fe93fe533913f6f6d3fbd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896213"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911626"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>T4 텍스트 템플릿 작성 지침
 Visual Studio에서 프로그램 코드 또는 기타 응용 프로그램 리소스를 생성 하는 경우에 다음 일반 지침 유용할 수도 있습니다. 규칙 고정 되지 것입니다.

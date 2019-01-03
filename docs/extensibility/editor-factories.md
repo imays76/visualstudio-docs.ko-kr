@@ -1,9 +1,6 @@
 ---
 title: 편집기 팩터리 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - editor factories
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f4dc0eca2c74161abb9cc4afe3917a160a18422
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 998aae3efed362e07c07ae1933f2a6858b4f54b5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933133"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887360"
 ---
 # <a name="editor-factories"></a>편집기 팩터리
 편집기 팩터리를 편집기 개체를 만들고 실제 뷰 라고 창 프레임에 넣습니다. 문서 데이터 및 편집기 및 디자이너를 만드는 데 필요한 문서 뷰 개체를 만듭니다. 편집기 팩터리를 Visual Studio 핵심 편집기 및 모든 표준 편집기를 만들 필요 합니다. 편집기 팩터리를 사용 하 여 사용자 지정 편집기를 만들 수도 있습니다.  
@@ -54,6 +51,6 @@ ms.locfileid: "49933133"
   
 4. 경우에 편집기 팩터리를 사용 하 여 Visual Studio에서 호출 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> 문서 데이터 개체 및 문서 뷰 개체를 반환 하 고 Visual Studio 다음 문서 창을 만듭니다, 문서 보기 개체에서 배치은 실행 중인 문서에 항목을 만듭니다 문서 데이터 개체에 대 한 테이블 (RDT).  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>   
  [문서 테이블 실행](../extensibility/internals/running-document-table.md)

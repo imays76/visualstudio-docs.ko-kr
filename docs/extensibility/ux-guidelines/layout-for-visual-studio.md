@@ -1,9 +1,6 @@
 ---
 title: Visual Studio에 대 한 레이아웃 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 638cfc29ed2aa05a8576a2244b81f0625453076d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e82ed0f65a8546cc16decce84c3cca01237694d0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816699"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898754"
 ---
 # <a name="layout-for-visual-studio"></a>Visual Studio에 대 한 레이아웃
 대부분의 Visual Studio 대화 상자 [유틸리티 대화 상자 레이아웃](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), 다음 표준에 대화 상자는 unthemed 되 [Windows Desktop 대화 상자 레이아웃 원칙](/windows/desktop/uxguide/win-dialog-box)합니다. Visual Studio UI를 새로 고치려면 이동, 띄 대화 상자의 일부 환경으로 제품 정의 설정 하는 새 디자인을가지고 있습니다. 이러한 [테마가 지정 된 대화 상자 레이아웃](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) 모양이 테마를 지정 합니다.  
@@ -38,11 +35,11 @@ ms.locfileid: "49816699"
   
  ![컨트롤 위의 레이블에 대 한 대화 상자 간격 조정](../../extensibility/ux-guidelines/media/0801-a_utilityspacingabove.png "0801 a_UtilitySpacingAbove")  
   
- **그림 08.01 탬 플 릿 간격 컨트롤 위의 레이블에 사용 하 여 유틸리티 대화 상자에 대 한 지침**  
+ **그림 a 08.01: 컨트롤 위의 레이블에 사용 하 여 유틸리티 대화 상자에 대 한 간격 지침**  
   
  ![대화 상자 간격 조정 컨트롤의 왼쪽에 레이블을](../../extensibility/ux-guidelines/media/0801-b_utilityspacingleft.png "0801 b_UtilitySpacingLeft")  
   
- **레이블이 컨트롤 왼쪽에 있는 유틸리티 대화 상자에 대 한 그림 08.01-b: 간격 지침**  
+ **그림 08.01-b: 레이블이 컨트롤 왼쪽에 있는 유틸리티 대화 상자에 대 한 간격 지침**  
   
 ### <a name="layout-details"></a>레이아웃 정보  
   
@@ -85,14 +82,14 @@ ms.locfileid: "49816699"
   
  ![컨트롤 사이의 거리를 권장](../../extensibility/ux-guidelines/media/0801-d_controldistance.png "0801 d_ControlDistance")  
   
- **컨트롤 사이의 거리에 대 한 그림 08.01-d: 권장 사항**  
+ **그림 08.01-d: 컨트롤 사이의 거리에 대 한 권장 사항**  
   
 #### <a name="control-indentation"></a>컨트롤의 들여쓰기  
  컨트롤은 중첩 된 경우 위의 일반적으로 레이블이 컨트롤의 왼쪽된 가장자리를 사용 하 여 가로로 내부 컨트롤을 정렬 합니다.  
   
  ![컨트롤 맞춤 중첩](../../extensibility/ux-guidelines/media/0801-e_controlalign.png "0801 e_ControlAlign")  
   
- **그림 08.01-e: 중첩 컨트롤 맞춤**  
+ **그림 08.01-e: 중첩 된 컨트롤 맞춤**  
   
 #### <a name="control-width"></a>컨트롤 너비  
  텍스트 상자 또는 다른 유사한 컨트롤의 너비 필드에 대 한 평균 입력 미만 이어야 합니다. 평균 영어 단어는 5 자입니다. 예를 들어, 긴 경로 이름이 필요로 하는 텍스트 상자에서는 가로 레이아웃으로 있어야 드롭다운을 하는 동안 플랫폼 이름 길이가 긴 항목을 사용할 수 있는 이어야만 합니다.  
@@ -114,11 +111,11 @@ ms.locfileid: "49816699"
   
   ![가로 확인 및 취소 단추가](../../extensibility/ux-guidelines/media/0801-f_horizokcan.png "0801 f_HorizOKCan")  
   
-  **가로 확인/취소를 사용 하 여 그림 08.01-f: 세로 내부 단추**  
+  **그림 08.01-f: 가로 확인/취소를 사용 하 여 세로 내부 단추**  
   
   ![세로 확인 및 취소 단추가](../../extensibility/ux-guidelines/media/0801-g_vertokcan.png "0801 g_VertOKCan")  
   
-  **세로 확인/취소를 사용 하 여 그림 08.01-g: 가로 내부 단추**  
+  **그림 08.01-g: 세로 확인/취소를 사용 하 여 내부 가로 단추**  
   
 #### <a name="browse-button"></a>[찾아보기...] 단추  
  **[찾아보기...]**  텍스트 상자에 다음 단추 해야 줄임표를 포함 하 여 전체에서 "찾아보기..." 쓰십시오. 공간이 긴밀 하 게 또는 여러 개 있을 경우 **[찾아보기...]**  방금 줄임표 단추 화면에서 단추를 줄일 수 있습니다.  
@@ -143,7 +140,7 @@ ms.locfileid: "49816699"
 ### <a name="themed-dialog-layout-examples"></a>테마가 지정 된 대화 상자 레이아웃 예제  
  ![테마가 지정 된 대화 상자 레이아웃](../../extensibility/ux-guidelines/media/0801-h_themeddialog.png "0801 h_ThemedDialog")  
   
- **그림 08.01-h: 테마가 지정 된 대화**  
+ **그림 08.01-h: 테마가 지정 된 대화 상자**  
   
  ![테마가 지정 된 대화 크기](../../extensibility/ux-guidelines/media/0801-i_themeddialogdimensions.png "0801 i_ThemedDialogDimensions")  
   

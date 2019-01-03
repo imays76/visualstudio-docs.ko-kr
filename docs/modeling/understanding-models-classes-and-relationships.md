@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 74172b6e7f03d7e3baef329f053fc4a83ee6ae28
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 749c75af9056bc50689c47ca9ef8de037dfd71e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967391"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908646"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>모델, 클래스 및 관계 이해
 도메인 특정 언어 (DSL) 작성할 수 있는 모든 사용자 지정 프로그램 코드와 함께 해당 DSL 정의 파일에서 정의 됩니다. DSL 솔루션에 있는 프로그램 코드의 대부분은이 파일에서 생성 됩니다.
@@ -54,9 +53,9 @@ ms.locfileid: "50967391"
 
  ![관계 포함 및 참조](../modeling/media/music_classes.png)
 
- 그림 4 개 도메인 클래스를 보여 줍니다: 음악, 앨범에서 아티스트 및 Song 합니다. 도메인 클래스 이름, 제목 등의 도메인 속성을 정의합니다. 인스턴스 모델에 이러한 속성 중 일부의 값은 다이어그램에 표시 됩니다.
+ 그림 4 개 도메인 클래스를 나타냅니다. 음악, Album, 음악가 및 Song 합니다. 도메인 클래스 이름, 제목 등의 도메인 속성을 정의합니다. 인스턴스 모델에 이러한 속성 중 일부의 값은 다이어그램에 표시 됩니다.
 
- 클래스에 도메인 관계: MusicHasAlbums, MusicHasArtists, AlbumbHasSongs, 및 ArtistAppearedOnAlbums입니다. 관계 대 한 1..1을 등 복합성이 0.. *입니다. 예를 들어, 모든 노래 AlbumHasSongs 관계를 통해 하나만 앨범에 연결 되어야 합니다. 모든 앨범이 임의 개수의 노래를 가질 수 있습니다.
+ 클래스 간에 도메인 관계 됩니다. MusicHasAlbums, MusicHasArtists, AlbumbHasSongs, 및 ArtistAppearedOnAlbums입니다. 관계 대 한 1..1을 등 복합성이 0.. *입니다. 예를 들어, 모든 노래 AlbumHasSongs 관계를 통해 하나만 앨범에 연결 되어야 합니다. 모든 앨범이 임의 개수의 노래를 가질 수 있습니다.
 
 ### <a name="rearranging-the-dsl-definition-diagram"></a>DSL 정의 다이어그램을 다시 정렬
  이 그림에서와 마찬가지로 앨범 도메인 클래스는 DSL 정의 다이어그램에서 여러 번 나타날 수 있는 고 지입니다. 항상 하나의 주 보기 및 일부 있을 수 있습니다 *참조* 뷰.

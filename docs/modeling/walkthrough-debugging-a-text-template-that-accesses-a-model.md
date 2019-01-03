@@ -1,5 +1,5 @@
 ---
-title: '연습: 모델에 액세스하는 텍스트 템플릿 디버깅'
+title: '연습: 모델에 액세스 하는 텍스트 템플릿 디버그'
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -8,15 +8,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: d2c58579cce95c3117aa7653d62733f4e297bcc4
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 9041adb5ddb8ac76dde15069ce117ea8ad3c6e66
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966468"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914545"
 ---
-# <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>연습: 모델에 액세스하는 텍스트 템플릿 디버깅
+# <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>연습: 모델에 액세스 하는 텍스트 템플릿 디버그
 수정 하거나 도메인별 언어 솔루션에서 텍스트 템플릿을 추가 하는 경우 엔진은 소스 코드 또는 생성 된 코드를 컴파일할 때 템플릿을 변환 하는 경우 오류가 발생할 수 있습니다. 다음 연습에서는 텍스트 템플릿 디버그를 수행할 수 있는 작업의 일부를 보여 줍니다.
 
 > [!NOTE]

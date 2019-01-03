@@ -1,9 +1,6 @@
 ---
 title: 가장 최근에 사용한 되는 하위 메뉴에 목록 추가 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - MRU lists
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d140fed32ac3816b75e13496dc3507fc728f7d26
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f436a9c0589f1661e9ad41c76fbd0cf641cc8496
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916532"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858184"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>가장 최근에 사용한 되는 하위 메뉴에 목록 추가
 이 연습에서 데모 기반 [하위 메뉴에 추가](../extensibility/adding-a-submenu-to-a-menu.md), 동적 목록을 하위 메뉴에 추가 하는 방법을 보여줍니다. 동적 목록 mru (가장 최근에 사용 됨) 목록을 만들기 위한 기본을 형성 합니다.  
@@ -49,8 +46,8 @@ ms.locfileid: "49916532"
 2.  `Symbols` 섹션을 `GuidSymbol` guidTestCommandPackageCmdSet, 노드 추가 대 한 기호를 `MRUListGroup` 그룹 및 `cmdidMRUList` 명령을 다음과 같이 합니다.  
   
     ```csharp  
-    <IDSymbol name="MRUListGroup" value="0x1200"/>  
-    <IDSymbol name="cmdidMRUList" value="0x0200"/>  
+    <IDSymbol name="MRUListGroup" value="0x1200"/>  
+    <IDSymbol name="cmdidMRUList" value="0x0200"/>  
     ```  
   
 3.  에 `Groups` 섹션에서 선언 된 그룹의 기존 그룹 항목 뒤에 추가 합니다.  
@@ -89,7 +86,7 @@ ms.locfileid: "49916532"
   
     ```csharp  
     public const string guidTestCommandPackageCmdSet = "00000000-0000-0000-0000-00000000"; // get the GUID from the .vsct file  
-    public const uint cmdidMRUList = 0x200;  
+    public const uint cmdidMRUList = 0x200;  
     ```  
   
 2.  *TestCommand.cs* 추가 다음 문을 사용 하 여 합니다.  
@@ -151,7 +148,7 @@ ms.locfileid: "49916532"
 6.  후 합니다 `InitMRUMenu` 메서드를 다음 추가 `OnMRUQueryStatus` 메서드. 이 각 MRU 항목의 텍스트를 설정 하는 처리기.  
   
     ```csharp  
-    private void OnMRUQueryStatus(object sender, EventArgs e)  
+    private void OnMRUQueryStatus(object sender, EventArgs e)  
     {  
         OleMenuCommand menuCommand = sender as OleMenuCommand;  
         if (null != menuCommand)  
@@ -159,7 +156,7 @@ ms.locfileid: "49916532"
             int MRUItemIndex = menuCommand.CommandID.ID - this.baseMRUID;  
             if (MRUItemIndex >= 0 && MRUItemIndex < this.mruList.Count)  
             {  
-                menuCommand.Text = this.mruList[MRUItemIndex] as string;  
+                menuCommand.Text = this.mruList[MRUItemIndex] as string;  
             }  
         }  
     }  
@@ -168,7 +165,7 @@ ms.locfileid: "49916532"
 7.  후 합니다 `OnMRUQueryStatus` 메서드를 다음 추가 `OnMRUExec` 메서드. MRU 항목을 선택 하는 것에 대 한 처리기입니다. 이 메서드는 선택한 항목 목록의 맨 위로 이동 하 고 메시지 상자에 선택한 항목을 표시 합니다.  
   
     ```csharp  
-    private void OnMRUExec(object sender, EventArgs e)  
+    private void OnMRUExec(object sender, EventArgs e)  
     {  
         var menuCommand = sender as OleMenuCommand;  
         if (null != menuCommand)  
@@ -176,7 +173,7 @@ ms.locfileid: "49916532"
             int MRUItemIndex = menuCommand.CommandID.ID - this.baseMRUID;  
             if (MRUItemIndex >= 0 && MRUItemIndex < this.mruList.Count)  
             {  
-                string selection = this.mruList[MRUItemIndex] as string;  
+                string selection = this.mruList[MRUItemIndex] as string;  
                 for (int i = MRUItemIndex; i > 0; i--)  
                 {  
                     this.mruList[i] = this.mruList[i - 1];  
@@ -204,5 +201,5 @@ ms.locfileid: "49916532"
   
 4.  하위 메뉴를 다시 엽니다. 있음을 **항목 3** 목록의 맨 위에 있는 이제는 다른 항목을 한 위치 아래로 푸시한 및 합니다. 클릭 **항목 3** 다시 및 메시지 상자는 여전히 표시 되었다는 **선택 항목 3**, 텍스트는 새 위치 명령 레이블 함께 올바르게 옮겨 졌음을 나타냅니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [메뉴 항목 동적 추가](../extensibility/dynamically-adding-menu-items.md)

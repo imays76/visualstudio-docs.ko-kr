@@ -1,9 +1,6 @@
 ---
 title: 디버깅 작업 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], tasks
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a1d2ae4b05398daa7c42be441cebecb304bf956
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: aa719871e075a5448fa2d351c5bd7950a833601a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204169"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900154"
 ---
 # <a name="debug-tasks"></a>작업 디버그
 프로그램을 디버깅 하려면이 시작 해야 합니다 및는 디버그 엔진 (DE)에 연결 해야 합니다. 그렇지 않으면는 DE 이전에 시작된 된 프로그램에 연결 되어야 합니다. 연결 되 면는 DE 특정 시작 이벤트를 생성 해야 합니다. 응답으로 디버그 패키지는 IDE에서 설정 된 중단점은 바인딩 하려고 합니다. 프로그램에서 바인딩된 중단점에 도달 하면 중지 하 고 사용자 입력을 기다립니다.  
@@ -58,5 +55,5 @@ ms.locfileid: "39204169"
  [디버거 컨텍스트](../../extensibility/debugger/debugger-contexts.md)  
  DE 동시에 코드, 설명서 및 식 평가 컨텍스트 내에서 작동 하는 방법을 설명 합니다. 세 개의 컨텍스트, 위치, 위치 또는 평가를 관련 각각에 대해 설명합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [시작](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)

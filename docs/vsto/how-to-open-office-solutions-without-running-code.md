@@ -1,9 +1,6 @@
 ---
 title: '방법: 코드를 실행 하지 않고 Office 솔루션 열기'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7684fd2d01d0151798c9e59c593e3e0c2acb95b1
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 59cee99ad603ec1a03f8beffd36b82d4b83ed308
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646908"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930109"
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>방법: 코드를 실행 하지 않고 Office 솔루션 열기
   관리 코드 확장을 사용 하 여 만든 Microsoft Office 솔루션에는 최종 사용자의 Office 응용 프로그램의 보안 설정이 높은를 설정한 경우에 실행 됩니다. Microsoft Office가 아니라 Microsoft.NET Framework에서.NET 어셈블리 코드 보안을 관리 하는 때문입니다.  
@@ -57,5 +54,3 @@ ms.locfileid: "53646908"
  [Office 솔루션 배포](../vsto/deploying-an-office-solution.md)   
  [Office 솔루션을 만들고 디자인](../vsto/designing-and-creating-office-solutions.md)   
  [Office 솔루션에서 응용 프로그램 및 배포 매니페스트](../vsto/application-and-deployment-manifests-in-office-solutions.md)  
-  
-  

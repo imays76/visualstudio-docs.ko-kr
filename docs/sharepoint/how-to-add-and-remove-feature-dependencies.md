@@ -1,16 +1,11 @@
 ---
 title: '방법: 기능 종속성 추가 및 제거 | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - MICROSOFT.VISUALSTUDIO.SHAREPOINT.DESIGNERS.CUSTOMDEPENDENCYWINDOW
 - VS.SHAREPOINTTOOLS.RAD.FEATUREDESIGNERDEPENDENCY
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -20,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a7a61ff71b5ed8caa8ad50dff71957bee20b955a
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 704973591b1bcdcb849e847e9c5e7cefc78f0202
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757994"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924243"
 ---
 # <a name="how-to-add-and-remove-feature-dependencies"></a>방법: 기능 종속성 추가 및 제거
   SharePoint 기능 기능이 나 데이터에 대 한 다른 기능에 달라질 수 있습니다. 이러한 경우 기능에 대 한 종속성으로 이러한 다른 기능을 표시할 수 있습니다. 이 이렇게 하면 SharePoint 서버는 기능이 활성화 되기 전에 종속 기능 활성화 되는지를 확인 합니다.  
@@ -73,4 +68,3 @@ ms.locfileid: "36757994"
  [SharePoint 기능 만들기](../sharepoint/creating-sharepoint-features.md)   
  [방법: SharePoint 기능 사용자 지정](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
  [방법: SharePoint 기능에 항목 추가 및 제거](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)  
-  

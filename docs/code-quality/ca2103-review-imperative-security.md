@@ -1,8 +1,7 @@
 ---
-title: 'CA2103: 명령적 보안을 검토하십시오.'
+title: 'CA2103: 명령적 보안을 검토하세요.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2103
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f8975e3118e9907bf4688efe93dc60646b6d80b
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 21576101e15a1c424e1fd6d5aedcae000c381677
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547702"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900271"
 ---
-# <a name="ca2103-review-imperative-security"></a>CA2103: 명령적 보안을 검토하십시오.
+# <a name="ca2103-review-imperative-security"></a>CA2103: 명령적 보안을 검토하세요.
 
 |||
 |-|-|
@@ -46,7 +45,7 @@ ms.locfileid: "45547702"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
  사용 권한을 변경 되는 데이터에 의존 하지 않는 경우이 규칙에서 경고를 표시 하지 않아도 안전 합니다. 그러나 선언적 해당 하는 명령적 요청을 변경 하는 것이 좋습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [보안 코딩 지침](/dotnet/standard/security/secure-coding-guidelines)
 - [데이터 및 모델링](/dotnet/framework/data/index)

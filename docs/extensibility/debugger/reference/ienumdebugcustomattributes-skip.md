@@ -1,9 +1,6 @@
 ---
 title: IEnumDebugCustomAttributes::Skip | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEnumCustomAttributes::Skip
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e27ebc6e752f6ce9ffdc27d0b80a5a279f6fffcc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 48b58141119f6722d66e153a87022ca8fcb770e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49869147"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53903788"
 ---
 # <a name="ienumdebugcustomattributesskip"></a>IEnumDebugCustomAttributes::Skip
 열거형 시퀀스에서 사용자 지정 특성의 지정된 된 수를 건너뜁니다.  
@@ -28,7 +25,7 @@ ms.locfileid: "49869147"
 ## <a name="syntax"></a>구문  
   
 ```cpp  
-HRESULT Skip (   
+HRESULT Skip (   
    ULONG celt  
 );  
 ```  

@@ -1,9 +1,6 @@
 ---
 title: '방법: 데이터에 ListObject 열 매핑'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 64c098fe1c1d4695feb9addd8e5161175dc09dc9
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 508a0fa8df58e70eb216f722ee96395c7a9c21ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646840"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899985"
 ---
 # <a name="how-to-map-listobject-columns-to-data"></a>방법: 데이터에 ListObject 열 매핑
   <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤을 <xref:System.Data.DataTable>에 바인딩할 때 목록에 있는 모든 열이 표시되는 것을 원하지 않거나 데이터에 바인딩되지 않은 특정 열이 있을 수 있습니다. <xref:Microsoft.Office.Tools.Excel.ListObject> 메서드를 호출할 때 <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> 에 나타내려는 열을 매핑할 수 있습니다.  
@@ -62,12 +59,10 @@ ms.locfileid: "53646840"
 ## <a name="compile-the-code"></a>코드 컴파일  
  이 코드 예제에서는 이 코드가 표시되는 워크시트에 <xref:Microsoft.Office.Tools.Excel.ListObject> 이라는 기존 `list1` 가 있는 것으로 간주합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [Word 문서 및 런타임에 VSTO 추가 기능에서 Excel 통합 문서 확장](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Office 문서의 컨트롤](../vsto/controls-on-office-documents.md)   
  [런타임에 Office 문서에 컨트롤 추가](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [방법: ListObject 컨트롤을 데이터로 채우기](../vsto/how-to-fill-listobject-controls-with-data.md)   
  [확장 된 개체를 사용 하 여 Excel 자동화](../vsto/automating-excel-by-using-extended-objects.md)   
  [ListObject 컨트롤](../vsto/listobject-control.md)  
-  
-  

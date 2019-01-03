@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 77d26595bd97a98ef9a4cd1f72c14739695bb755
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: e9165d5ff6a38dd0dbf214321132f2da0a60b15d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859850"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883161"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>도메인별 언어에서 코드 생성
 Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 모델에 표현 된 데이터에서 코드, 문서, 구성 파일 및 기타 아티팩트를 생성 하는 강력한 방법을 제공 합니다. 사용 하 여 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], 데이터를 나타내는 클래스의 집합을 만들 수 있습니다 및 이름이 클래스에서 텍스트 템플릿을 작성할 수 있습니다 및 해당 데이터를 반영 하는 속성입니다.
@@ -40,11 +39,11 @@ Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 모델에 표현 된 �
 
  텍스트 템플릿에서 도메인 특정 언어를 참조 하는 방법에 대 한 기본 정보를 제공 합니다.
 
- [연습: 모델에 액세스하는 텍스트 템플릿 디버그](../modeling/walkthrough-debugging-a-text-template-that-accesses-a-model.md)
+ [연습: 모델에 액세스 하는 텍스트 템플릿 디버그](../modeling/walkthrough-debugging-a-text-template-that-accesses-a-model.md)
 
  문제 해결 및 도메인 특정 언어를 가리키는 텍스트 템플릿 디버깅을 수행 하는 방법을 설명 합니다.
 
- [연습: 생성된 지시문 프로세서에 호스트 연결](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)
+ [연습: 생성된 된 지시문 프로세서에 호스트 연결](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)
 
  생성된 된 지시문 프로세서에 사용자 지정 호스트를 연결 하는 방법에 설명 합니다.
 

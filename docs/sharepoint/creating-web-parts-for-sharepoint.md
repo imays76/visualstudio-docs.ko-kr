@@ -1,9 +1,6 @@
 ---
 title: SharePoint를 위한 웹 파트 만들기 | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - Microsoft.SharePoint.WebControls.DateTimeControl
@@ -18,8 +15,6 @@ f1_keywords:
 dev_langs:
 - VB
 - CSharp
-- VB
-- CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, Web Parts
 - Web Parts [SharePoint development in Visual Studio], designing
@@ -28,15 +23,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0cbc26a198cace58a957f3d3aaf25457cf457256
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1efe8524521be590e920818f919a7a52d8fba7e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906047"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879136"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>SharePoint 용 웹 파트 만들기
-  웹 파트를 사용 하 여 브라우저를 사용 하 여 콘텐츠, 모양 및 SharePoint 사이트의 페이지의 동작을 수정할 수 있습니다. 웹 파트는 웹 파트 페이지 내에서 실행 되는 서버 쪽 컨트롤: SharePoint 사이트에 표시 되는 페이지의 구성 요소 들은 합니다. 참조 [구성 요소: 웹 파트](http://go.microsoft.com/fwlink/?LinkID=182097)합니다.  
+  웹 파트를 사용 하 여 브라우저를 사용 하 여 콘텐츠, 모양 및 SharePoint 사이트의 페이지의 동작을 수정할 수 있습니다. 웹 파트는 웹 파트 페이지 내에서 실행 되는 서버 쪽 컨트롤: SharePoint 사이트에 표시 되는 페이지의 구성 요소 들은 합니다. 참조 [문서 블록: 웹 파트](http://go.microsoft.com/fwlink/?LinkID=182097)합니다.  
   
  수 만들고 Visual Studio에서 템플릿을 사용 하 여 SharePoint 사이트에서 웹 파트를 디버그 합니다.  
   
@@ -57,7 +52,7 @@ ms.locfileid: "49906047"
  자세한 내용은 [방법: SharePoint 웹 파트를 만드는](../sharepoint/how-to-create-a-sharepoint-web-part.md)합니다.  
   
 ### <a name="visual-web-part-item"></a>비주얼 웹 파트 항목
- 비주얼 웹 파트는 Visual Studio에서 Visual Web Developer 디자이너를 사용 하 여 만든 웹 파트입니다. 비주얼 웹 파트를 다른 웹 파트와 동일 하 게 작동 합니다. 단추 및 텍스트 상자 같은 컨트롤에 웹 파트를 추가 하려면 XML 파일에 코드를 추가 합니다. 끌거나 Visual Studio에서 웹 파트를 복사 하 여 비주얼 웹 파트에 컨트롤을 추가 하는 반면 **도구 상자**합니다. 그러면 디자이너는 XML 파일에 필요한 코드를 생성합니다. 참조 [방법: 디자이너를 사용 하 여 만들 SharePoint 웹 파트](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)합니다.  
+ 비주얼 웹 파트는 Visual Studio에서 Visual Web Developer 디자이너를 사용 하 여 만든 웹 파트입니다. 비주얼 웹 파트를 다른 웹 파트와 동일 하 게 작동 합니다. 단추 및 텍스트 상자 같은 컨트롤에 웹 파트를 추가 하려면 XML 파일에 코드를 추가 합니다. 끌거나 Visual Studio에서 웹 파트를 복사 하 여 비주얼 웹 파트에 컨트롤을 추가 하는 반면 **도구 상자**합니다. 그러면 디자이너는 XML 파일에 필요한 코드를 생성합니다. [방법: 디자이너를 사용 하 여 SharePoint 웹 파트 만들기](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)합니다.  
   
 ## <a name="sharepoint-controls"></a>SharePoint 컨트롤
  Visual Studio 응용 프로그램 페이지와 같은 SharePoint 페이지를 만들기 위한 몇 가지 컨트롤을 제공 합니다. 이러한 컨트롤에 표시 된 **도구 상자** 아래에서 **SharePoint 컨트롤**합니다. 이러한 컨트롤의 기능에서 파생 되는 [Microsoft.SharePoint.WebControls](http://go.microsoft.com/fwlink/?LinkId=235315) SharePoint 사이트 및 목록 페이지에 사용 되는 ASP.NET 서버 컨트롤을 포함 하는 네임 스페이스입니다.  
@@ -121,4 +116,3 @@ ms.locfileid: "49906047"
 |[연습: SharePoint 용 웹 파트 만들기](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)|SharePoint 용 웹 파트를 디자인 하는 방법에 설명 합니다.|  
 |[연습: 디자이너를 사용 하 여 SharePoint 용 웹 파트 만들기](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)|시각적 디자인 화면에 컨트롤을 끌어와 SharePoint를 위한 웹 파트를 디자인 하는 방법에 설명 합니다.|  
 |[연습: SharePoint 용 OData를 표시 하는 Silverlight 웹 파트 만들기](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md)|Silverlight 응용 프로그램을 호스팅하고 SharePoint 목록의 데이터를에서 표시 하는 SharePoint 용 웹 파트를 디자인 하는 방법에 설명 합니다.|  
-  

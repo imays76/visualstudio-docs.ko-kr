@@ -1,9 +1,6 @@
 ---
 title: 글꼴 및 텍스트 색 지정에 대 한 색 정보를 가져오는 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - text, coloring
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b9d5aa4c3f649f7be44db2e18f67884acd23201
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: c48a500323185466b1fa5ffaedeff750de31e04d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370668"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919432"
 ---
 # <a name="get-font-and-color-information-for-text-colorization"></a>텍스트 색 지정에 대 한 글꼴 및 색 정보 가져오기
 렌더링 또는 사용자 인터페이스 (UI) 요소에 컬러로 텍스트를 표시 하는 프로세스는 프로젝트, 기술 및 개발자 환경 설정의 유형에 따라 달라 집니다. 합니다 **글꼴 및 색** 속성 페이지 설정을 저장 합니다.

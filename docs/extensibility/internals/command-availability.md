@@ -1,8 +1,6 @@
 ---
 title: 명령 가용성 | Microsoft Docs
 ms.date: 03/22/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - commands, context
@@ -13,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98250763f504bc7d142f15e559334f296a2e026b
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 7ac9a172ee2cb7a117a1d9b63c4f1fef9f631952
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511136"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915872"
 ---
 # <a name="command-availability"></a>명령 가용성
 
@@ -30,17 +28,17 @@ Visual Studio 컨텍스트에 사용할 수 있는 명령을 결정 합니다. �
 
 - IDE: IDE에서 제공 하는 명령과 항상 사용할 수 있습니다.
 
-- VSPackage: Vspackage 명령을 표시 하거나 숨길 때 정의할 수 있습니다.
+- VSPackage: Vspackage는 명령을 표시 하거나 숨길 때 정의할 수 있습니다.
 
 - 프로젝트: 프로젝트 명령은 현재 선택한 프로젝트에 대해서만 표시 됩니다.
 
-- 편집기: 하나만 편집기 활성화할 수 번입니다. 활성 편집기에서 명령을 사용할 수 있습니다. 편집기는 언어 서비스와 긴밀 하 게 작동합니다. 언어 서비스에 연결된 된 편집기의 컨텍스트에서 해당 명령을 처리 해야 합니다.
+- 편집기: 한 번에 하나만 편집기를 활성화할 수 있습니다. 활성 편집기에서 명령을 사용할 수 있습니다. 편집기는 언어 서비스와 긴밀 하 게 작동합니다. 언어 서비스에 연결된 된 편집기의 컨텍스트에서 해당 명령을 처리 해야 합니다.
 
 - 파일 형식: 편집기에는 둘 이상의 파일 형식을 로드할 수 있습니다. 사용 가능한 명령 파일 형식에 따라 변경할 수 있습니다.
 
-- 활성 창: 마지막 활성 문서 창이 키 바인딩에 대 한 사용자 인터페이스 (UI) 컨텍스트를 설정 합니다. 그러나 내부 웹 브라우저를 유사한 키 바인딩 테이블이 있는 도구 창 UI 컨텍스트를 설정할 수도 없습니다. HTML 편집기와 같은 다중 탭 문서 창에 대 한 모든 탭에는 다른 명령을 컨텍스트가 GUID입니다. 도구 창을 등록 되 면 항상 사용할 수 있기에 **보기** 메뉴.
+- 활성 창: 마지막 활성 문서 창이 키 바인딩에 대 한 사용자 인터페이스 (UI) 컨텍스트를 설정합니다. 그러나 내부 웹 브라우저를 유사한 키 바인딩 테이블이 있는 도구 창 UI 컨텍스트를 설정할 수도 없습니다. HTML 편집기와 같은 다중 탭 문서 창에 대 한 모든 탭에는 다른 명령을 컨텍스트가 GUID입니다. 도구 창을 등록 되 면 항상 사용할 수 있기에 **보기** 메뉴.
 
-- UI 컨텍스트의: UI 컨텍스트 변수의 값으로 식별 됩니다 합니다 <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT> 클래스, 예를 들어 <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid> 솔루션을 빌드할 때 또는 <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid> 디버거가 활성 상태일 때. 여러 UI 컨텍스트는 동시에 활성화할 수 있습니다.
+- UI 컨텍스트: UI 컨텍스트 변수의 값으로 식별 됩니다 합니다 <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT> 클래스, 예를 들어 <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid> 솔루션을 빌드할 때 또는 <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid> 디버거가 활성 상태일 때. 여러 UI 컨텍스트는 동시에 활성화할 수 있습니다.
 
 ## <a name="define-custom-context-guids"></a>사용자 지정 컨텍스트 Guid를 정의 합니다.
 
@@ -55,7 +53,7 @@ Visual Studio 컨텍스트에 사용할 수 있는 명령을 결정 합니다. �
 > [!CAUTION]
 > VSPackage 영향을 주지 않습니다 모든 기존 컨텍스트 Guid에 따라 달라질 수 있습니다 다른 Vspackage 때문에 있는지 확인 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [선택 컨텍스트 개체](../../extensibility/internals/selection-context-objects.md)
 - [Vspackage에서 사용자 인터페이스 요소를 추가 하는 방법](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

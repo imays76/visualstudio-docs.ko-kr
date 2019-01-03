@@ -1,9 +1,6 @@
 ---
 title: IDebugClassField | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugClassField
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d81afddc1eef1970474aea8b810925205b0615c2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1239abda48ffce5081986b9452e2416694a06ff9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107818"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914827"
 ---
 # <a name="idebugclassfield"></a>IDebugClassField
 이 인터페이스는 형식으로 클래스를 나타냅니다.  
@@ -28,22 +25,22 @@ ms.locfileid: "31107818"
 ## <a name="syntax"></a>구문  
   
 ```  
-IDebugClassField : IDebugContainerField  
+IDebugClassField : IDebugContainerField  
 ```  
   
 ## <a name="notes-for-implementers"></a>구현자 참고 사항  
- 기호 공급자를 구현 하는 동일한 개체에서이 인터페이스를 구현 하는 [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) 인터페이스입니다. 이 인터페이스는 특수화 클래스 형식을 나타내는입니다.  
+ 기호 공급자를 구현 하는 동일한 개체에서이 인터페이스를 구현 합니다 [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) 인터페이스입니다. 이 인터페이스는 클래스 형식을 나타내는 특수화입니다.  
   
-## <a name="notes-for-callers"></a>호출자에 대 한 참고 사항  
- 인터페이스의 수는 포함 하 여이 인터페이스를 반환할 수 있는 메서드가 [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md), [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md), 및 [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)합니다. 사용할 수는 또한 [QueryInterface](/cpp/atl/queryinterface) 에서이 인터페이스를 가져올 수는 [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) 인터페이스는 [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) 플래그를 반환 하는 메서드 `FIELD_TYPE_CLASS`합니다.  
+## <a name="notes-for-callers"></a>호출자에 대 한 정보  
+ 여러 가지 인터페이스를 비롯 하 여이 인터페이스를 반환할 수 있는 방법이 [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)를 [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md), 및 [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)합니다. 또한 사용할 수 있습니다 [QueryInterface](/cpp/atl/queryinterface) 에서이 인터페이스를 가져올 수 합니다 [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) 인터페이스의 [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) 메서드 플래그를 반환 합니다. `FIELD_TYPE_CLASS`합니다.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드  
- 메서드 외에도 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 및 [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) 인터페이스의 경우이 인터페이스에서 다음을 구현 합니다.  
+ 메서드 외에도 합니다 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 및 [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) 인터페이스에서이 인터페이스에서 다음을 구현 합니다.  
   
 |메서드|설명|  
 |------------|-----------------|  
 |[EnumBaseClasses](../../../extensibility/debugger/reference/idebugclassfield-enumbaseclasses.md)|이 클래스의 기본 클래스에 대 한 열거자를 만듭니다.|  
-|[DoesInterfaceExist](../../../extensibility/debugger/reference/idebugclassfield-doesinterfaceexist.md)|클래스에는 특정 인터페이스는 정의 하는 경우를 결정 합니다.|  
+|[DoesInterfaceExist](../../../extensibility/debugger/reference/idebugclassfield-doesinterfaceexist.md)|특정 인터페이스를 클래스에 정의 된 경우를 결정 합니다.|  
 |[EnumNestedClasses](../../../extensibility/debugger/reference/idebugclassfield-enumnestedclasses.md)|이 클래스의 중첩 된 클래스에 대 한 열거자를 만듭니다.|  
 |[GetEnclosingClass](../../../extensibility/debugger/reference/idebugclassfield-getenclosingclass.md)|이 클래스를 포함 하는 클래스를 가져옵니다.|  
 |[EnumInterfacesImplemented](../../../extensibility/debugger/reference/idebugclassfield-enuminterfacesimplemented.md)|이 클래스에서 구현 된 인터페이스에 대 한 열거자를 만듭니다.|  
@@ -54,9 +51,9 @@ IDebugClassField : IDebugContainerField
 ## <a name="requirements"></a>요구 사항  
  헤더: sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>참고 항목  
  [기호 공급자 인터페이스](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   

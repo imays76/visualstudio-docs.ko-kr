@@ -1,15 +1,10 @@
 ---
 title: '방법: 사용자 지정 속성 추가 | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.BDC.Property_Editor
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ac95ffcaf686c3ab086f994680e7bce80c330f0f
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 845e5c3862ef64a584e4f9033dbe481d454010f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756232"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913299"
 ---
 # <a name="how-to-add-a-custom-property"></a>방법: 사용자 지정 속성 추가
   사용 하 여 모델 사용자 지정 속성을 추가할 수 있습니다 합니다 **속성 편집기**합니다. 연결 문자열과 같은 정보 및 런타임 시 다른 데이터를 검색 하는 코드에서 이러한 속성에 액세스할 수 있습니다.  
@@ -48,10 +43,8 @@ ms.locfileid: "36756232"
   
 6.  에 대 한 합니다 **값** 사용자 지정 속성의 필드 값을 지정 하 고 다음을 선택 합니다 **확인** 단추.  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [비즈니스 데이터 연결 모델 만들기](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [SharePoint 비즈니스 데이터 통합](../sharepoint/integrating-business-data-into-sharepoint.md)  
-  
-  

@@ -3,7 +3,6 @@ title: Visual Studio용 모델링 SDK - 도메인별 언어
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6de309ca6ff9c1813a2a2a6ebc54ea6baa3a795f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 9524e071edc82ba2da78df77afdda85e0ac10505
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060480"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860337"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Visual Studio용 모델링 SDK - 도메인별 언어
 
@@ -71,10 +70,10 @@ MSDK를 사용하여 도메인 관련 언어(DSL) 형태로 모델을 신속하�
 
  [WPF 기반 도메인별 언어 만들기](../modeling/creating-a-wpf-based-domain-specific-language.md)
 
- [방법: 도메인별 언어 디자이너 확장](../modeling/how-to-extend-the-domain-specific-language-designer.md)
+ [방법: 도메인 특정 언어 디자이너 확장](../modeling/how-to-extend-the-domain-specific-language-designer.md)
 
  [시각화 및 모델링 SDK에서 지원되는 Visual Studio 버전](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md)
 
- [방법: 도메인별 언어를 새 버전으로 마이그레이션](../modeling/how-to-migrate-a-domain-specific-language-to-a-new-version.md)
+ [방법: 도메인 특정 언어를 새 버전으로 마이그레이션](../modeling/how-to-migrate-a-domain-specific-language-to-a-new-version.md)
 
  [Visual Studio용 모델링 SDK에 대한 API 참조](../modeling/api-reference-for-modeling-sdk-for-visual-studio.md)

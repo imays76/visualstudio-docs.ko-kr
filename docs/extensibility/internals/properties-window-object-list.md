@@ -1,9 +1,6 @@
 ---
-title: 속성 창의 개체 목록 | Microsoft Docs
-ms.custom: ''
+title: 속성 창 개요 목록 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, object list
@@ -13,24 +10,24 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6b7d238f7ce64122ac18a52dab59afb063ce47e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5e014889613317f773a741b6e43e6f08e5494af5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130138"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868724"
 ---
-# <a name="properties-window-object-list"></a>속성 창의 개체 목록
-개체 목록에는 **속성** 창에 하나 이상의 선택 된 창 내에서 사용할 수 있는 다른 개체에 선택을 변경할 수 있는 드롭 다운 목록입니다. 에 대 한 호출을 트리거합니다이 목록 내에서 다른 개체를 선택 하면 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A> 새 개체를 선택 하는 환경에 알릴 수 있습니다. 표시 되는 정보는 **속성** 창이 새로 선택 된 개체와 연결 된 속성을 표시 하려면 다음 변경 됩니다.  
+# <a name="properties-window-object-list"></a>속성 창 개요 목록
+개체 목록에는 **속성** 창 하나 이상의 선택한 창 내에서 사용할 수 있는 기타 개체 선택을 변경할 수 있는 드롭다운 목록입니다. 에 대 한 호출 트리거이 목록 내에서 다른 개체를 선택 하면 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A> 알리는 환경의 new-object가 선택 되어 있는지를 합니다. 표시 되는 정보는 **속성** 창이 새로 선택한 개체에 연결 된 속성을 표시 하려면 다음 변경 됩니다.  
   
 ## <a name="the-object-list"></a>개체 목록  
- 두 필드의 개체 목록으로 구성 됩니다: 개체 유형과 개체 이름 (굵게 표시).  
+ 두 필드의 개체 목록으로 구성 됩니다: 개체 유형과 개체 이름을 (굵게 표시 됨).  
   
- 개체 자체에서 굵게 표시 된 개체 유형의 왼쪽에 표시 개체 이름을 검색 하는 사용 하 여는 `Name` 속성에서 제공 되는 <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo> 인터페이스입니다. <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo.GetClassInfo%2A>에 유일한 방법은 <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo>, 반환 <xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo> 해당 인터페이스의 coclass에 대 한 합니다. **속성** 창을 사용 하 여 <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo> 드롭 다운 목록에서 개체 이름을로 표시 되는 coclass의 이름을 가져올 수 있습니다.  
+ 개체 자체에서 굵게 표시 된 개체 형식의 왼쪽에 표시 되는 개체 이름 검색은 사용 하 여는 `Name` 제공한 속성은 <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo> 인터페이스. <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo.GetClassInfo%2A>에서 유일한 방법은 <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo>를 반환 합니다 <xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo> 해당 인터페이스의 coclass에 대 한 합니다. 합니다 **속성** 창을 사용 하 여 <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo> 드롭다운 목록의 개체 이름으로 표시 되는 coclass의 이름을 가져옵니다.  
   
- 개체에 없는 경우는 `Name` 속성 이름을 개체 목록의 이름 영역에 표시 되지 않습니다. 개체 목록에 표시 되는 이름을 사용 하려는 경우 개체에는 Name 속성을 추가할 수 있습니다.  
+ 개체에 없는 경우는 `Name` 속성 이름을 개체 목록의 이름 영역에 표시 되지 않습니다. 개체 목록에 표시 이름을 지정 하려는 경우 개체에는 Name 속성을 추가할 수 있습니다.  
   
- COM 개체를 구현 하지 않는 경우 <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo>, **속성** 목록의 왼쪽에서 인터페이스 이름 대신 개체 이름 창에 표시 됩니다.  
+ COM 개체를 구현 하지 않는 경우 <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo>서 **속성** 창 왼쪽 목록의 개체 이름 대신 인터페이스 이름을 표시 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [속성 확장](../../extensibility/internals/extending-properties.md)

@@ -1,13 +1,8 @@
 ---
 title: SharePoint 개발 샘플 및 연습 | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 80724e21a1c004bd99f194e76179d9c08d6b570a
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 2624f40c93e470651f5c285abd51de9dbcfd4b8d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119392"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892523"
 ---
 # <a name="sharepoint-development-samples-and-walkthroughs"></a>SharePoint 개발 샘플 및 연습
   이 섹션에서는 샘플 응용 프로그램, 예제 코드 및 구문, 구조 및 SharePoint 솔루션을 구축 하는 데 사용 되는 기술을 설명 하는 단계별 연습을 포함 합니다.  
@@ -37,6 +32,5 @@ ms.locfileid: "37119392"
 |[SharePoint 개발 샘플](../sharepoint/sharepoint-development-samples.md)|Visual Studio에서 SharePoint 개발 도구를 사용 하는 방법을 보여 주는 샘플 응용 프로그램을 설명 합니다.|  
 |[SharePoint 개발 연습](../sharepoint/sharepoint-development-walkthroughs.md)|Visual Studio의 SharePoint 개발 도구를 소개하는 단계별 지침을 제공합니다.|  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  [SharePoint 솔루션 만들기](../sharepoint/create-sharepoint-solutions.md)  
-  

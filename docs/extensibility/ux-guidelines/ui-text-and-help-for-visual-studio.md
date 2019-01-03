@@ -1,9 +1,6 @@
 ---
 title: UI 텍스트 및 Visual Studio에 대 한 도움말 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52260b2cd401f8cdbd3a94704ab29db2f64fdc6d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bca879905e524e80205878034773349ddff06460
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842237"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907168"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>UI 텍스트 및 Visual Studio에 대 한 도움말
 ##  <a name="BKMK_UITextAndTerminology"></a> UI 텍스트 및 용어  
@@ -262,7 +259,7 @@ ms.locfileid: "49842237"
   
 |양호|잘못 된|  
 |----------|---------|  
-|"를 서비스에 번호로 전화를 걸 파일이 없습니다. 확인 수 및 다시 전화 접속 하거나 0 연산자에 대 한 전화 접속. "|-"(449) 오류: 잘못 된 수"<br />-"이 처리 되지 않은 예외가 오류 작업이 완료 되었음을 나타냅니다."<br /><br /> ![Visual Studio에서 잘못 된 오류 메시지](../../extensibility/ux-guidelines/media/0602-a_errordialog.png "a_ErrorDialog 0602")|  
+|"를 서비스에 번호로 전화를 걸 파일이 없습니다. 확인 수 및 다시 전화 접속 하거나 0 연산자에 대 한 전화 접속. "|-"오류 (449): "잘못 된 수<br />-"이 처리 되지 않은 예외가 오류 작업이 완료 되었음을 나타냅니다."<br /><br /> ![Visual Studio에서 잘못 된 오류 메시지](../../extensibility/ux-guidelines/media/0602-a_errordialog.png "a_ErrorDialog 0602")|  
   
 ## <a name="accessing-help"></a>도움말 액세스  
   

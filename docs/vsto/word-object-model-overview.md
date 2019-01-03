@@ -1,9 +1,6 @@
 ---
 title: Word 개체 모델 개요
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 75a5f8e79bbd6dd34b046cbff6d59844a977efb3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f4d550389e6659388c39fc6a2953eeb816c8eb01
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878013"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922279"
 ---
 # <a name="word-object-model-overview"></a>Word 개체 모델 개요
   Visual Studio에서 Word 솔루션을 개발하는 경우 Word 개체 모델을 조작합니다. 이 개체 모델은 Word용 주 interop 어셈블리에 제공되고 <xref:Microsoft.Office.Interop.Word> 네임스페이스에서 제공되는 클래스 및 인터페이스로 구성됩니다.  
@@ -66,7 +63,7 @@ ms.locfileid: "49878013"
   Word 개체 모델 외에도 Visual Studio의 Office 프로젝트는 Word 개체 모델에서 일부 개체를 확장하는 *호스트 항목* 및 *호스트 컨트롤* 을 제공합니다. 호스트 항목 및 호스트 컨트롤은 확장되는 Word 개체처럼 동작하지만 데이터 바인딩 기능과 같은 추가 기능 및 추가 이벤트도 제공합니다. 자세한 내용은 [확장 된 개체를 사용 하 여 Word 자동화](../vsto/automating-word-by-using-extended-objects.md) 하 고 [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)합니다.  
   
 ### <a name="application-object"></a>Application 개체  
- <xref:Microsoft.Office.Interop.Word.Application> 개체는 Word 응용 프로그램을 나타내며 다른 모든 개체의 부모입니다. 멤버는 일반적으로 전체 Word에 적용됩니다. 속성 및 메서드를 사용하여 Word 환경을 제어할 수 있습니다.  
+ <xref:Microsoft.Office.Interop.Word.Application> 개체는 Word 애플리케이션을 나타내며 다른 모든 개체의 부모입니다. 멤버는 일반적으로 전체 Word에 적용됩니다. 속성 및 메서드를 사용하여 Word 환경을 제어할 수 있습니다.  
   
  VSTO 추가 기능 프로젝트에서 <xref:Microsoft.Office.Interop.Word.Application> 클래스의 `Application` 필드를 사용하여 `ThisAddIn` 개체에 액세스할 수 있습니다. 자세한 내용은 [프로그램 VSTO 추가 기능](../vsto/programming-vsto-add-ins.md)합니다.  
   
@@ -122,7 +119,7 @@ ms.locfileid: "49878013"
  Word 개체 모델에 대한 자세한 내용은 Word PIA(주 interop 어셈블리) 참조 및 VBA(Visual Basic for Applications) 개체 모델 참조를 참조할 수 있습니다.  
   
 ### <a name="primary-interop-assembly-reference"></a>주 interop 어셈블리 참조  
- Word PIA 참조 설명서에서는 Word에 대한 주 interop 어셈블리의 형식에 대해 설명합니다. 이 설명서는 다음 위치에서 사용할 수 있습니다: [Word 2010 주 interop 어셈블리 참조](http://go.microsoft.com/fwlink/?LinkId=189588)합니다.  
+ Word PIA 참조 설명서에서는 Word에 대한 주 interop 어셈블리의 형식에 대해 설명합니다. 이 설명서는 다음 위치에서 제공 됩니다. [Word 2010 주 interop 어셈블리 참조](http://go.microsoft.com/fwlink/?LinkId=189588)합니다.  
   
  클래스 및 인터페이스 간의 차이점에는 PIA, PIA의 이벤트 구현 방식 등 Word PIA의 디자인에 대 한 자세한 내용은 참조 하세요. [클래스 및 Office 주 interop 어셈블리인터페이스에대한개요](http://go.microsoft.com/fwlink/?LinkId=189592).  
   
@@ -131,7 +128,7 @@ ms.locfileid: "49878013"
   
  VBA 개체 모델 참조의 모든 개체 및 멤버는 Word PIA의 형식 및 멤버에 해당합니다. VBA 개체 모델 참조의 문서 개체에 해당 하는 예를 들어를 <xref:Microsoft.Office.Interop.Word.Document> 는 Word PIA의 개체입니다. VBA 개체 모델 참조에서는 대부분의 속성, 메서드 및 이벤트에 대한 코드 예제를 제공하지만 Visual Studio를 사용하여 만든 Word 프로젝트에서 사용하려면 이 참조의 VBA 코드를 Visual Basic 또는 Visual C#으로 변환해야 합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Office 주 interop 어셈블리](../vsto/office-primary-interop-assemblies.md)   
  [확장 된 개체를 사용 하 여 Word 자동화](../vsto/automating-word-by-using-extended-objects.md)   
  [문서 작업](../vsto/working-with-documents.md)   
@@ -140,5 +137,3 @@ ms.locfileid: "49878013"
  [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)   
  [호스트 항목 및 호스트 컨트롤의 프로그래밍 방식으로 제한 사항](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Office 솔루션의 선택적 매개 변수](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

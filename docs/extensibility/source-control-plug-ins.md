@@ -1,9 +1,6 @@
 ---
 title: 원본 제어 플러그 인 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, reference
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4be7a1d0739b6a0c8431d588b05de58a296b809c
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: f45ffeb57db79edd6305c3195a87012dc7de26b7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495702"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923642"
 ---
 # <a name="source-control-plug-ins"></a>소스 제어 플러그 인
 소스 제어 플러그 인 SDK 참조 섹션에는 소스 제어 시스템으로 통합 될 수 있도록 전체 인터페이스 사양을 포함 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]합니다. 구문 및 의미 체계의 소스 제어 플러그 인 인터페이스를 구현 해야 하는 다양 한 함수 및 데이터 형식 지정을 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 통합된 개발 환경 (IDE)입니다.  
@@ -57,7 +54,7 @@ ms.locfileid: "46495702"
  [용어](../extensibility/source-control-plug-in-glossary.md)  
  유용한 용어 및 소스 제어 플러그 인 SDK 설명서를 읽기에 대 한 해당 정의 제공 합니다.  
   
- [방법: 소스 제어 플러그 인에 대한 호환성 경고 해제](../extensibility/how-to-turn-off-compatibility-warnings-for-source-control-plug-ins.md)  
+ [방법: 원본 제어 플러그 인에 대 한 호환성 경고 해제](../extensibility/how-to-turn-off-compatibility-warnings-for-source-control-plug-ins.md)  
  경고를 사용 하지 않도록 설정 하는 방법에 설명 합니다.  
   
 ## <a name="related-sections"></a>관련 단원  

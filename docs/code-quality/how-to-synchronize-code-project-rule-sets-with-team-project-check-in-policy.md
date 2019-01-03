@@ -1,8 +1,7 @@
 ---
-title: '방법: 코드 프로젝트 규칙 집합을 팀 프로젝트 체크 인 정책과 동기화'
+title: '방법: 코드 프로젝트 규칙 세트를 팀 프로젝트 체크 인 정책과 동기화'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
@@ -12,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3769962829f5d0511b684f03ad8682071b48c07b
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: e8c63e7b54f1303f62fca938cb5dc44147af88dd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281158"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883245"
 ---
-# <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>방법: 코드 프로젝트 규칙 집합을 Azure DevOps 프로젝트 체크 인 정책과 동기화
+# <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>방법: Azure DevOps 프로젝트 체크 인 정책을 사용 하 여 코드 프로젝트 규칙 집합 동기화
 
 체크 인 정책에 대 한 설정 규칙에 지정 된 규칙을 하나 이상 포함 된 규칙 집합을 지정 하 여 동기화 할 Azure DevOps 프로젝트에 대 한 체크 인 정책 코드 프로젝트에 대 한 코드 분석 설정이 있습니다. 수석 개발자 이름의 하 고 체크 인 정책에 대해 설정할 규칙의 위치를 알릴 수 있습니다. 프로젝트에 대 한 코드 분석 규칙 집합이 올바르게 사용 하도록 다음 옵션 중 하나를 사용할 수 있습니다.
 
@@ -55,7 +54,7 @@ ms.locfileid: "44281158"
 
 1.  프로젝트 설정 대화 상자의 코드 분석 페이지의 Azure DevOps 프로젝트의 체크 인 정책을 선택 하려면이 항목 앞부분의 절차 중 하나를 수행 합니다.
 
-2.  클릭 **열려**합니다.
+2.  **열기**를 클릭합니다.
 
 3.  추가 또는 사용 하 여 규칙을 제거 합니다 [규칙 집합 편집기](../code-quality/working-in-the-code-analysis-rule-set-editor.md)합니다.
 

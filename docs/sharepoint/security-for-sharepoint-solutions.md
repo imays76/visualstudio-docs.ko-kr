@@ -1,9 +1,6 @@
 ---
 title: SharePoint 솔루션 보안 | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b014c3b4ada42982c41928ca17472e3f585af3ed
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ae284cd05e173f271bff3b0a3ef7d9cba3fadfc6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878767"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904905"
 ---
 # <a name="security-for-sharepoint-solutions"></a>SharePoint 솔루션 보안
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 응용 프로그램의 보안을 강화 하는 데 도움이 되는 다음과 같은 기능이 통합 되어 있습니다.
@@ -37,7 +34,7 @@ ms.locfileid: "49878767"
  AllowPartiallyTrustedCallers 특성 시스템 전역 어셈블리 캐시에 배포 되지 않은 모든 SharePoint 솔루션에 추가 됩니다 ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). 샌드박스 솔루션 또는 SharePoint 응용 프로그램 Bin 디렉터리에 배포 된 솔루션 포함. 자세한 내용은 [for Microsoft.NET Framework 버전 1 보안 변경 내용](http://go.microsoft.com/fwlink/?LinkId=177515) 하 고 [SharePoint Foundation에서 웹 파트 배포](http://go.microsoft.com/fwlink/?LinkId=177509)합니다.
 
 ## <a name="safe-against-script-property"></a>스크립트 속성에 대해 안전
- *삽입 스크립트* 컨트롤이 나 웹 페이지에 악성 코드 삽입 됩니다. 스크립트 삽입에 대 한 SharePoint 2010 사이트를 보호 하기 위해, 참가자 보거나 기본적으로 웹 파트 또는 해당 속성을 편집할 수 없습니다. 이 동작은 SafeAgainstScript 호출 SafeControl 특성에 의해 제어 됩니다. [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]에서 프로젝트 항목의에이 특성을 설정 **안전 컨트롤 항목** 하위 **스크립트에 대해 안전**합니다. 자세한 내용은 참조 하세요. [프로젝트 항목에 패키지 및 배포 정보를 제공](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) 하 고 [방법: 안전 컨트롤로 표시 제어](../sharepoint/how-to-mark-controls-as-safe-controls.md)입니다.
+ *삽입 스크립트* 컨트롤이 나 웹 페이지에 악성 코드 삽입 됩니다. 스크립트 삽입에 대 한 SharePoint 2010 사이트를 보호 하기 위해, 참가자 보거나 기본적으로 웹 파트 또는 해당 속성을 편집할 수 없습니다. 이 동작은 SafeAgainstScript 호출 SafeControl 특성에 의해 제어 됩니다. [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]에서 프로젝트 항목의에이 특성을 설정 **안전 컨트롤 항목** 하위 **스크립트에 대해 안전**합니다. 자세한 내용은 [프로젝트 항목에 패키지 및 배포 정보 제공](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) 및 [방법: 컨트롤로 표시 안전](../sharepoint/how-to-mark-controls-as-safe-controls.md)합니다.
 
 ## <a name="vista-and-windows-7-user-account-control"></a>Vista 및 Windows 7 사용자 계정 컨트롤
  [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] 및 [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] 사용자 계정 컨트롤 (UAC)으로 알려진 보안 기능을 통합 합니다. SharePoint 솔루션을 개발 하 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 에 [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] 하 고 [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] 시스템의 경우 UAC를 실행 해야 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 시스템 관리자로 합니다. **시작** 메뉴에서 바로 가기 메뉴를 열고 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]를 선택한 후 **관리자 권한으로 실행**합니다.

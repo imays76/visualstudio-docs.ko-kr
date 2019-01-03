@@ -3,7 +3,6 @@ title: 워크플로 디자이너로 응용 프로그램 개발
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - DefaultWorkflowDesigner
 - DefaultWorkflowDesigner.UI
@@ -18,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f6fa987303ccbc3c6dc9122fb03daef02896a327
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 8ef3b7e9bfc18407023e6a84a25eb32d453823ce
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756423"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53903633"
 ---
 # <a name="develop-apps-with-the-workflow-designer"></a>워크플로 디자이너를 사용하여 앱 개발
 

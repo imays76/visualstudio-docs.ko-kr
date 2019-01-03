@@ -1,6 +1,5 @@
 ---
 title: Name 요소 (Visual Studio 템플릿) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66e23b99c715f59a0c7a817c379e6cf06001c285
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: ca61a572ee923b5f9fa3f3999554d36057f4dd91
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561202"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925487"
 ---
 # <a name="name-element-visual-studio-templates"></a>Name 요소 (Visual Studio 템플릿)
 에 표시 된 대로 템플릿의 이름을 지정 합니다 **새 프로젝트** 하거나 **새 항목 추가** 대화 상자.  
@@ -92,6 +91,6 @@ ms.locfileid: "53561202"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)   
  [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

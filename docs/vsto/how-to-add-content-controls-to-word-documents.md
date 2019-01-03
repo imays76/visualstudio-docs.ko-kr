@@ -1,9 +1,6 @@
 ---
 title: '방법: 콘텐츠 추가 컨트롤을 Word 문서'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -29,12 +26,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8a7f99768236c8945fe82645c70c586361edcdde
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 10ca0276eb6ddd392fc1ac4e584f5d9caf12fde8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648048"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905282"
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>방법: 콘텐츠 추가 컨트롤을 Word 문서
   문서 수준 Word 프로젝트에서는 있습니다 콘텐츠 컨트롤을 추가할 수 문서 프로젝트에서 디자인 타임 또는 런타임 시. Word VSTO 추가 기능 프로젝트에서는 런타임에 열려 있는 문서에 콘텐츠 컨트롤을 추가할 수 있습니다.  
@@ -192,4 +189,3 @@ ms.locfileid: "53648048"
  [호스트 항목 및 호스트 컨트롤의 프로그래밍 방식으로 제한 사항](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [VSTO 추가 기능 프로그래밍](../vsto/programming-vsto-add-ins.md)   
  [문서 수준 사용자 지정 프로그래밍](../vsto/programming-document-level-customizations.md)  
-  

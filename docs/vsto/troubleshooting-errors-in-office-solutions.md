@@ -1,9 +1,6 @@
 ---
 title: Office 솔루션의 오류 문제 해결
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.Project.DesignerDisabled
@@ -23,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bcc5600f38e2d53244d972e4c4c7094182bfa48c
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: d99c3ba5c393638f965fa32f03a6c534d583a166
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672953"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919026"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Office 솔루션의 오류 문제 해결
   Visual Studio에서 Office 솔루션을 개발하는 동안 다음 작업을 수행할 때 문제가 발생할 수 있습니다.  
@@ -57,9 +54,9 @@ ms.locfileid: "50672953"
 ### <a name="errors-when-you-create-an-excel-workbook-project-based-on-an-existing-workbook"></a>기존 통합 문서에 따라 Excel 통합 문서 프로젝트를 만드는 경우 오류 발생  
  기존 통합 문서를 기반으로 새 Excel 통합 문서 프로젝트를 만든 경우 다음 오류가 조합을 볼 수 있습니다.  
   
- Excel에서: "개인 정보 경고: 이 문서에는 매크로, ActiveX 컨트롤, XML 확장 팩 정보, 웹 구성 요소가 있습니다. 문서 검사에서 제거할 수 없는 개인 정보가 포함되어 있을 수 있습니다."  
+ Excel에서: "개인 정보 경고: 이 문서는 매크로, ActiveX 컨트롤, XML 확장 팩 정보, 또는 웹 구성 요소를 포함합니다. 문서 검사에서 제거할 수 없는 개인 정보가 포함되어 있을 수 있습니다."  
   
- Visual Studio에서: "디자이너를 제대로 로드하지 못했습니다.  
+ Visual Studio에서: "디자이너를 제대로 로드 하지 못했습니다."  
   
  이러한 오류는 해당 개인 정보가 문서 검사를 사용하여 제거된 통합 문서를 기반으로 하는 프로젝트를 만들려는 경우에 발생할 수 있습니다. 이 오류를 방지하려면 프로젝트를 만들기 전에 다음 단계를 수행합니다.  
   
@@ -139,7 +136,7 @@ Word.DocumentClass document = (Word.DocumentClass) Globals.ThisAddIn.Application
   
  이 코드를 실행하면 다음과 같은 컴파일 오류가 발생합니다.  
   
-- Visual Basic의 경우: "'있으면 DocumentClass' 클래스에 대 한 참조가 허용 되지 않습니다 해당 어셈블리가 NO-PIA 모드를 사용 하 여 연결 되는 경우."  
+- Visual Basic: "'있으면 DocumentClass' 클래스에 대 한 참조가 허용 되지 않습니다 해당 어셈블리가 NO-PIA 모드를 사용 하 여 연결 되는 경우."  
   
 - Visual C#: "Interop 형식 'Microsoft.Office.Interop.Word.DocumentClass'를 포함할 수 없습니다. 적용 가능한 인터페이스를 대신 사용하세요."  
   
@@ -216,9 +213,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
   
  클릭 하는지에 **Yes** 또는 **No** 대화 상자에서 Visual Studio에서 Excel 또는 Word 프로세스를 종료 하 고 디버거를 중지 합니다. 이 대화 상자를 표시하지 않고 프로젝트 디버깅을 중지하려면 Visual Studio에서 디버거를 중지하는 대신 Excel 또는 Word를 직접 종료합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Office 솔루션 문제 해결](../vsto/troubleshooting-office-solutions.md)   
  [Office 솔루션 보안 문제 해결](../vsto/troubleshooting-office-solution-security.md)   
  [Office 솔루션 배포 문제 해결](../vsto/troubleshooting-office-solution-deployment.md)  
-  
-  

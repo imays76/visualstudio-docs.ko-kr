@@ -1,9 +1,6 @@
 ---
-title: '연습: c + +를 사용 하 여 SDK 만들기 | Microsoft Docs'
-ms.custom: ''
+title: '연습: C + +를 사용 하 여 SDK 만들기 | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 36ea793b-3832-41a1-b906-69e680ad5e1d
 author: gregvanl
@@ -11,14 +8,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6311526df299da860c829520a2087ecc8d786600
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2a0db4f34315f9e0eb4a5627cdc286a43a904a34
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930647"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917607"
 ---
-# <a name="walkthrough-create-an-sdk-using-c"></a>연습: c + +를 사용 하 여 SDK 만들기
+# <a name="walkthrough-create-an-sdk-using-c"></a>연습: C + +를 사용 하 여 SDK 만들기
 이 연습에서는 네이티브 c + + 수학 라이브러리 SDK 패키지는 SDK로는 VSIX Visual Studio Extension ()를 만들고 앱을 만드는 데 사용 하는 방법을 보여 줍니다. 이 연습에서는 이러한 단계로 구분 됩니다.  
   
 -   [네이티브 및 Windows 런타임 라이브러리를 만들려면](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createClassLibrary)  
@@ -112,7 +109,7 @@ ms.locfileid: "49930647"
   
     [!code-xml[CreatingAnSDKUsingCpp#7](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-cpp_7.xml)]  
   
-12. 메뉴 모음에서 선택 **뷰** > **기타 Windows** > **속성 창** (키보드: 선택 된 **F4**키).  
+12. 메뉴 모음에서 선택 **뷰** > **기타 Windows** > **속성 창** (키보드: 선택 된 **F4** 키).  
   
 13. **솔루션 탐색기**를 선택 합니다 **NativeMathWRT.winmd** 파일입니다. 에 **속성** 창에서를 **빌드 작업** 속성을 **콘텐츠**, 변경한 후를 **VSIX에 포함** 속성 **True**합니다.  
   
@@ -176,6 +173,6 @@ ms.locfileid: "49930647"
   
 ## <a name="next-steps"></a>다음 단계  
   
-## <a name="see-also"></a>참고자료  
- [연습: C# 또는 Visual Basic을 사용 하 여 SDK 만들기](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)   
+## <a name="see-also"></a>참고 항목  
+ [연습: 사용 하 여 SDK 만들기 C# 또는 Visual Basic](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)   
  [소프트웨어 개발 키트 만들기](../extensibility/creating-a-software-development-kit.md)

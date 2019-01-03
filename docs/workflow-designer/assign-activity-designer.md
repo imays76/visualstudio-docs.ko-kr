@@ -3,7 +3,6 @@ title: 워크플로 디자이너-Assign 활동 디자이너
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.Assign.UI
 ms.assetid: ba3feb3c-f144-47ea-926d-cf752b804153
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 600f38d7bcd387915ba61fc148805705e8609431
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e5f3080dfcd7afbc999ad478fa3bbdc8470ef54a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905257"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905824"
 ---
 # <a name="assign-activity-designer"></a>Assign 활동 디자이너
 
@@ -43,7 +42,7 @@ ms.locfileid: "49905257"
 |<xref:System.Activities.Statements.Assign.To%2A>|True|<xref:System.Activities.Statements.Assign.Value%2A>가 할당되는 변수 또는 인수입니다. 값은 유효한 Visual Basic 식별자 여야 합니다. 속성을 설정 하려면 Visual Basic 식을 입력 합니다 **하** 상자에 **할당** 활동 디자이너나 속성 표의.|
 |<xref:System.Activities.Statements.Assign.Value%2A>|True|변수에 할당된 값입니다. 설정 하는 <xref:System.Activities.Statements.Assign.Value%2A>, Visual Basic 식을 입력 합니다 **값** 상자에 **할당** 활동 디자이너나 속성 표의.|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [Primitives](../workflow-designer/primitives-activity-designers.md)
 - [Delay](../workflow-designer/delay-activity-designer.md)

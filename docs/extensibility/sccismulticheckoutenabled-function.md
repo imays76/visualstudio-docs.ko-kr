@@ -1,9 +1,6 @@
 ---
 title: SccIsMultiCheckoutEnabled 함수 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccIsMultiCheckoutEnabled
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4a71f839c2129bcfb699188dec09b02b18d4cd1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ded0e14a1a3d7cbbe1261328672bb6aad89d6628
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920120"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874747"
 ---
 # <a name="sccismulticheckoutenabled-function"></a>SccIsMultiCheckoutEnabled 함수
 이 함수는 소스 제어 플러그 인 파일에서 여러 체크 아웃을 허용 하는지 여부를 확인 합니다.  

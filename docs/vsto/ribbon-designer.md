@@ -1,9 +1,6 @@
 ---
 title: 리본 디자이너
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - Designer_Microsoft.VisualStudio.Tools.Office.Ribbon.Design.RibbonDesigner
@@ -29,12 +26,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 160cde8b4a2e6034cb9c5ced7c6a13d57c1b546c
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 7179de49f80bee847077a7f247cc11dee855be80
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804801"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928869"
 ---
 # <a name="ribbon-designer"></a>리본 디자이너
   리본 디자이너는 시각적 디자인 캔버스입니다. Microsoft Office 응용 프로그램의 리본에 사용자 지정 탭, 그룹 및 컨트롤을 추가 하려면 리본 디자이너를 사용 합니다.
