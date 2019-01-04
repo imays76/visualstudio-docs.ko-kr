@@ -1,9 +1,6 @@
 ---
 title: SccGetProjPath 함수 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccGetProjPath
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dfeb65cd23b14949857faf4253dfec3ec85f5b20
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6c5f714260af3ef247ad4fe0a059e6166d59f1df
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49889388"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942426"
 ---
 # <a name="sccgetprojpath-function"></a>SccGetProjPath 함수
 이 함수는 프로젝트 경로 소스 제어 플러그 인에 의미 있는 문자열에 대 한 라는 메시지입니다. 사용자가 있는 경우 라고 합니다.  
@@ -71,15 +68,15 @@ SCCRTN SccGetProjPath (
  pbNew  
  [out에서] 들어오는 값 새 프로젝트를 만들지 여부를 나타냅니다. 반환 된 값에는 프로젝트를 만들기의 성공을 나타냅니다.  
   
-|들어오|해석|  
+|들어오는|해석|  
 |--------------|--------------------|  
-|true|사용자는 새 프로젝트를 만들 수 있습니다.|  
-|false|사용자는 새 프로젝트를 만들 수 없습니다.|  
+|TRUE|사용자는 새 프로젝트를 만들 수 있습니다.|  
+|FALSE|사용자는 새 프로젝트를 만들 수 없습니다.|  
   
 |나가는 포트|해석|  
 |--------------|--------------------|  
-|true|새 프로젝트를 만들었습니다.|  
-|false|기존 프로젝트를 선택 했습니다.|  
+|TRUE|새 프로젝트를 만들었습니다.|  
+|FALSE|기존 프로젝트를 선택 했습니다.|  
   
 ## <a name="return-value"></a>반환 값  
  원본 제어 플러그 인이 함수의 구현은 다음 값 중 하나를 반환 하:  
@@ -87,7 +84,7 @@ SCCRTN SccGetProjPath (
 |값|설명|  
 |-----------|-----------------|  
 |SCC_OK|성공적으로 프로젝트를 만들거나 검색 됩니다.|  
-|SCC_I_OPERATIONCANCELED|작업이 취소 되었습니다.|  
+|SCC_I_OPERATIONCANCELED|작업이 취소되었습니다.|  
 |SCC_E_ACCESSFAILURE|소스 제어 시스템에 경합 또는 네트워크 문제로 인해 액세스 문제가 있습니다.|  
 |SCC_E_CONNECTIONFAILURE|소스 제어 시스템에 연결 하려는 중 오류가 발생 했습니다.|  
 |SCC_E_NONSPECIFICERROR|지정되지 않은 오류가 발생했습니다.|  
@@ -108,6 +105,6 @@ SCCRTN SccGetProjPath (
   
  예를 들어, 사용자는 **새 프로젝트** Visual Studio에서 마법사가 자신의 프로젝트를 소스 제어에 추가 하 고이 함수를 호출 하는 Visual Studio 플러그 인에 소스 제어 시스템에서 새 프로젝트를 만들 수 있는지 결정 Visual Studio 프로젝트를 포함 합니다. 클릭 하면 **취소** 마법사를 완료 하기 전에 프로젝트 만들어지지 않습니다. 클릭 하면 **확인**를 호출 하는 Visual Studio `SccOpenProject`전달 `SCC_OPT_CREATEIFNEW`, 소스 제어 프로젝트는 해당 시점에 생성 됩니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [원본 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)   
  [SccOpenProject](../extensibility/sccopenproject-function.md)

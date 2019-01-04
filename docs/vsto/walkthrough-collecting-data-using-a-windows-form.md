@@ -1,9 +1,6 @@
 ---
-title: '연습: Windows Form을 사용 하 여 데이터를 수집 합니다.'
-ms.custom: ''
+title: '연습: Windows 폼을 사용 하 여 데이터를 수집 합니다.'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1d48f2a104505e6b6ea9942847d8cd4dd2f3e669
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 11e9b73671a8c4b03c33169739ea8fd02b486568
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900477"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926632"
 ---
-# <a name="walkthrough-collect-data-by-using-a-windows-form"></a>연습: Windows Form을 사용 하 여 데이터를 수집 합니다.
+# <a name="walkthrough-collect-data-by-using-a-windows-form"></a>연습: Windows 폼을 사용 하 여 데이터를 수집 합니다.
   이 연습에서는 Microsoft Office Excel용 문서 수준 사용자 지정에서 Windows Form을 열고 사용자로부터 정보를 수집하고 워크시트 셀에 해당 정보를 기록하는 방법을 보여 줍니다.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
@@ -146,5 +143,3 @@ ms.locfileid: "49900477"
  [문서 수준 사용자 지정 프로그래밍](../vsto/programming-document-level-customizations.md)   
  [Word를 사용 하 여 연습](../vsto/walkthroughs-using-word.md)   
  [Excel을 사용 하 여 연습](../vsto/walkthroughs-using-excel.md)  
-  
-  

@@ -1,15 +1,10 @@
 ---
 title: '방법: SharePoint 기능에 항목 추가 및 제거 | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.RAD.FeatureDesigner
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2ead6b7ba57afa2adeabbbe04bc27583b2ad1593
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0a820f506154a72b797963996b39e7ec225fac31
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854834"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964019"
 ---
 # <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>방법: SharePoint 기능에 항목 추가 및 제거
   SharePoint 솔루션을 만들 때 Visual Studio 기능에 기본 SharePoint 프로젝트 항목을 추가 합니다. 배포 하기 전에 추가 하는 SharePoint 기능을 수정 하려면 SharePoint 프로젝트 항목을 제거 합니다.  
@@ -57,7 +52,6 @@ ms.locfileid: "49854834"
   
      SharePoint 프로젝트 항목에 표시 된 **솔루션에서 항목** 목록입니다.  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  [SharePoint 기능 만들기](../sharepoint/creating-sharepoint-features.md)   
  [패키지 및 SharePoint 솔루션 배포](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

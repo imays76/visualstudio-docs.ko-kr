@@ -1,9 +1,6 @@
 ---
 title: '연습: 첫 번째에 VSTO 추가 기능 프로젝트 만들기'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,15 +15,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7fb6ece309fb0c5e7c67abf039d2b27a9f04236d
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: c0edd7a956f158f87a4f5102ab9ba3bb4bae1ec6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671419"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931257"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>연습: 첫 번째에 VSTO 추가 기능 프로젝트 만들기
-  이 연습에서는 Microsoft Office Project 용 VSTO 추가 기능을 만드는 방법을 보여 줍니다. 이러한 종류의 솔루션에서 만드는 기능은 열려 있는 프로젝트에 관계없이 응용 프로그램 자체에서 사용할 수 있습니다. 자세한 내용은 [Office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)합니다.  
+  이 연습에서는 Microsoft Office Project 용 VSTO 추가 기능을 만드는 방법을 보여 줍니다. 이러한 종류의 솔루션에서 만드는 기능은 열려 있는 프로젝트에 관계없이 애플리케이션 자체에서 사용할 수 있습니다. 자세한 내용은 [Office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)합니다.  
   
  [!INCLUDE[appliesto_projallapp](../vsto/includes/appliesto-projallapp-md.md)]  
   
@@ -123,19 +120,17 @@ ms.locfileid: "50671419"
 ## <a name="next-steps"></a>다음 단계  
  기본적인 Project용 VSTO 추가 기능을 만들었으므로 다음 항목에서 VSTO 추가 기능을 개발하는 방법에 대해 자세히 알아볼 수 있습니다.  
   
--   Project 용 VSTO 추가 기능에서 수행할 수 있는 일반적인 프로그래밍 작업: [프로그램 VSTO 추가 기능](../vsto/programming-vsto-add-ins.md)합니다.  
+-   Project 용 VSTO 추가 기능에서 수행할 수 있는 일반적인 프로그래밍 작업: [VSTO 추가 기능 프로그래밍](../vsto/programming-vsto-add-ins.md)합니다.  
   
--   프로젝트의 개체 모델 사용: [솔루션 프로젝트](../vsto/project-solutions.md)합니다.  
+-   프로젝트의 개체 모델을 사용 합니다. [솔루션 프로젝트](../vsto/project-solutions.md)합니다.  
   
--   빌드 및 VSTO 추가 기능 프로젝트에 대 한 디버깅: [빌드 Office 솔루션](../vsto/building-office-solutions.md)합니다.  
+-   빌드 및 VSTO 추가 기능 프로젝트에 대 한 디버깅: [Office 솔루션 빌드](../vsto/building-office-solutions.md)합니다.  
   
--   Project 용 VSTO 추가 기능 배포: [Office 솔루션 배포](../vsto/deploying-an-office-solution.md)합니다.  
+-   VSTO 추가 기능 프로젝트에 대 한 배포: [Office 솔루션 배포](../vsto/deploying-an-office-solution.md)합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [VSTO 추가 기능 프로그래밍](../vsto/programming-vsto-add-ins.md)   
  [프로젝트 솔루션](../vsto/project-solutions.md)   
  [Office 솔루션 빌드](../vsto/building-office-solutions.md)   
  [Office 솔루션 배포](../vsto/deploying-an-office-solution.md)   
  [Office 프로젝트 템플릿 개요](../vsto/office-project-templates-overview.md)  
-  
-  

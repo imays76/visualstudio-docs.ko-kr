@@ -1,6 +1,5 @@
 ---
 title: Visual c + + 프로젝트 확장성
-ms.custom: ''
 ms.date: 09/12/2018
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
@@ -11,12 +10,12 @@ ms.author: corob
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 913ad2e785fcdb2067f89d0d4de2b250db40468b
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 0eccf13f38799c1d35b7fe4226fa02ec1a291b0c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349678"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986988"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio c + + 프로젝트 시스템 확장 및 도구 집합 통합
 
@@ -36,19 +35,19 @@ ms.locfileid: "51349678"
 
 - `$(ApplicationType)`
 
-   예제: Windows 스토어, Android, Linux
+   예를 들면 다음과 같습니다. Windows 스토어, Android, Linux
 
 - `$(ApplicationTypeRevision)`
 
    이 해야 유효한 버전 문자열 형식.build.revision]].
 
-   예: 1.0, 10.0.0.0
+   예를 들면 다음과 같습니다. 1.0, 10.0.0.0
 
 - `$(Platform)`
 
    빌드 아키텍처 라는 이유 때문에 "플랫폼"입니다.
 
-   예: Win32, x86, x64, ARM   
+   예를 들면 다음과 같습니다. Win32, x86, x64, ARM   
 
 - `$(PlatformToolset)`
 
@@ -481,10 +480,10 @@ CPS 컨텍스트 형식에 대해 다른 값을 지원 되지만 Visual c + + �
 
 | 특성 | 설명 |
 |------------| - |
-| `generic` | 모든 속성이 범주 머리글 아래에서 한 페이지에 표시 됩니다.<br/>규칙에 대 한 표시 될 수 있습니다 `Project` 하 고 `PropertySheet` 컨텍스트를 아닌 `File`합니다.<br/><br/> 예: `$(VCTargetsPath)` \\ *1033*\\*general.xml* |
-| `tool` | 범주는 하위로 표시 됩니다.<br/>규칙이 모든 컨텍스트에 표시 될 수 있습니다: `Project`, `PropertySheet` 고 `File`입니다.<br/>프로젝트 항목이 있는 경우에 규칙은 프로젝트 속성에 표시 합니다 `ItemType` 에 정의 된 `Rule.DataSource`규칙 이름에 포함 되어 있지 않으면는 `ProjectTools` 항목 그룹입니다.<br/><br/>예: `$(VCTargetsPath)` \\ *1033*\\*clang.xml* |
-| `debugger` | 페이지는 디버깅 페이지의 일부로 표시 됩니다.<br/>범주는 현재 무시 됩니다.<br/>규칙 이름이 디버그 시작 관리자 MEF 개체의 일치 해야 `ExportDebugger` 특성입니다.<br/><br/>예: `$(VCTargetsPath)` \\ *1033*\\*디버거\_로컬\_windows.xml* |
-| *custom* | 사용자 지정 템플릿입니다. 템플릿의 이름은 일치 해야 합니다는 `ExportPropertyPageUIFactoryProvider` 특성을 `PropertyPageUIFactoryProvider` MEF 개체입니다. 참조 **Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**합니다.<br/><br/> 예: `$(VCTargetsPath)` \\ *1033*\\*userMacros.xml* |
+| `generic` | 모든 속성이 범주 머리글 아래에서 한 페이지에 표시 됩니다.<br/>규칙에 대 한 표시 될 수 있습니다 `Project` 하 고 `PropertySheet` 컨텍스트를 아닌 `File`합니다.<br/><br/> 예제: `$(VCTargetsPath)`\\*1033*\\*general.xml* |
+| `tool` | 범주는 하위로 표시 됩니다.<br/>규칙이 모든 컨텍스트에 표시 될 수 있습니다: `Project`, `PropertySheet` 고 `File`입니다.<br/>프로젝트 항목이 있는 경우에 규칙은 프로젝트 속성에 표시 합니다 `ItemType` 에 정의 된 `Rule.DataSource`규칙 이름에 포함 되어 있지 않으면는 `ProjectTools` 항목 그룹입니다.<br/><br/>예제: `$(VCTargetsPath)`\\*1033*\\*clang.xml* |
+| `debugger` | 페이지는 디버깅 페이지의 일부로 표시 됩니다.<br/>범주는 현재 무시 됩니다.<br/>규칙 이름이 디버그 시작 관리자 MEF 개체의 일치 해야 `ExportDebugger` 특성입니다.<br/><br/>예제: `$(VCTargetsPath)`\\*1033*\\*디버거\_로컬\_windows.xml* |
+| *custom* | 사용자 지정 템플릿입니다. 템플릿의 이름은 일치 해야 합니다는 `ExportPropertyPageUIFactoryProvider` 특성을 `PropertyPageUIFactoryProvider` MEF 개체입니다. 참조 **Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**합니다.<br/><br/> 예제: `$(VCTargetsPath)`\\*1033*\\*userMacros.xml* |
 
 규칙 속성 그리드 기반 템플릿의 하나를 사용 하는 경우 해당 속성에 대 한 이러한 확장 지점을 사용할 수 있습니다.
 
@@ -530,7 +529,7 @@ CPS 컨텍스트 형식에 대해 다른 값을 지원 되지만 Visual c + + �
 </ItemGroup>
 ```
 
-예: `$(VCTargetsPath)` \\ *BuildCustomizations*\\*masm.xml*
+예제: `$(VCTargetsPath)`\\*BuildCustomizations*\\*masm.xml*
 
 ### <a name="debuggers"></a>디버거
 
@@ -542,7 +541,7 @@ Visual Studio에서 디버그 서비스 디버그 엔진에 대 한 확장성을
 
 디버그 세션에 대 한 디버그 엔진 및 기타 속성 지정을 구현 해야 합니다는 [디버그 시작 관리자](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/extensibility/IDebugLaunchProvider.md) MEF 구성 요소 추가 `debugger` 규칙입니다. 예를 들어 참조 된 `$(VCTargetsPath)` \\1033\\디버거\_로컬\_windows.xml 파일.
 
-### <a name="deploy"></a>배포
+### <a name="deploy"></a>배포:
 
 .vcxproj 프로젝트 사용에 대 한 Visual Studio 프로젝트 시스템 확장성 [배포 공급자](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/extensibility/IDeployProvider.md)합니다.
 

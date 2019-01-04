@@ -1,9 +1,6 @@
 ---
 title: 명령 모양 변경 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - commands, changing appearance
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61ba39bc8a312fb06499bed7ca94e33dc5e7153e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 787f334afe4c3cae06099c6db29924e7f2bbeeb4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825993"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963060"
 ---
 # <a name="change-the-appearance-of-a-command"></a>명령 모양 변경
 명령의 모양을 변경 하 여 사용자에 게 피드백을 제공할 수 있습니다. 예를 들어 명령을 사용할 수 없을 때 다르게 좋습니다. 명령을 사용 가능 여부, 숨기기 또는 표시 하면 또는 확인 하거나 메뉴에서 선택 취소 합니다.  
@@ -87,7 +84,7 @@ ms.locfileid: "49825993"
   
 8.  에 **도구** 돌아가면 메뉴 **새 텍스트**합니다. 클릭 **새 텍스트**합니다. 명령이 회색 이제 해야 합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)   
  [Vspackage에서 사용자 인터페이스 요소를 추가 하는 방법](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [메뉴 및 명령 확장](../extensibility/extending-menus-and-commands.md)   

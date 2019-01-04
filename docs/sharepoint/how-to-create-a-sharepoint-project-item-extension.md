@@ -1,9 +1,6 @@
 ---
 title: '방법: SharePoint 프로젝트 항목 확장명 만들기 | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 93459096e6d88ce3754c32bf7f61a3cf369cbeba
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 0c716301eee70fea704831890dd1e61b12651f7c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119875"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956194"
 ---
 # <a name="how-to-create-a-sharepoint-project-item-extension"></a>방법: SharePoint 프로젝트 항목 확장명 만들기
   Visual Studio에서 이미 설치 되어 있는 SharePoint 프로젝트 항목에 기능을 추가 하려는 경우 프로젝트 항목 확장을 만듭니다. 자세한 내용은 [확장 SharePoint 프로젝트 항목](../sharepoint/extending-sharepoint-project-items.md)합니다.  
@@ -47,7 +44,7 @@ ms.locfileid: "37119875"
   
 5.  구현에서의 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A> 메서드를 사용 하 여 멤버를 *projectItemType* 확장 프로그램의 동작을 정의 하는 매개 변수입니다. 이 매개 변수는 프로그램 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType> 에 정의 된 이벤트에 대 한 액세스를 제공 하는 개체를 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> 및 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemFileEvents> 인터페이스. 특정 인스턴스를 확장 하는 프로젝트 항목 형식에 액세스 하려면 처리 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> 와 같은 이벤트 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> 고 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemInitialized>입니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드 예제에는 이벤트 수신기 프로젝트 항목에 대 한 간단한 확장 프로그램을 만드는 방법을 보여 줍니다. 될 때마다 SharePoint 프로젝트에 이벤트 수신기 프로젝트 항목을 추가 하는 사용자를이 확장 기록에 메시지를 **출력** 창 및 **오류 목록** 창입니다.  
   
  [!code-csharp[SPExtensibility.ProjectSystemExtension.General#1](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/projectitemextension.cs#1)]
@@ -65,8 +62,6 @@ ms.locfileid: "37119875"
 ## <a name="deploy-the-extension"></a>확장 배포  
  확장 배포를 만들려면를 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 어셈블리 및 확장을 사용 하 여 배포 하려는 다른 파일에 대 한 패키지 (VSIX) 확장 합니다. 자세한 내용은 [Visual Studio에서 SharePoint 도구에 대 한 확장 배포](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)합니다.  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  [SharePoint 프로젝트 항목 확장](../sharepoint/extending-sharepoint-project-items.md)   
  [연습: SharePoint 프로젝트 항목 형식 확장](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)  
-  
-  

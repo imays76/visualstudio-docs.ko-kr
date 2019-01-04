@@ -1,9 +1,6 @@
 ---
 title: IDebugProcess3 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProcess3
@@ -15,18 +12,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21c4dfffe02d2550bccf5b23f264ab8283524aa2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 499f495308f885230bb14f34abe87c4f735ddb24
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121094"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962503"
 ---
 # <a name="idebugprocess3"></a>IDebugProcess3
-이 인터페이스는 실행 중인 프로세스와 프로그램을 나타냅니다. 이 인터페이스의 여러 가지 방법에 대체 값으로 존재는 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 인터페이스입니다. 프로세스의 모든 프로그램에 대 한 제어를 제공합니다.  
+이 인터페이스는 실행 중인 프로세스와 프로그램을 나타냅니다. 이 인터페이스의 여러 메서드를 대체도 존재 합니다 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 인터페이스입니다. 프로세스에서 모든 프로그램에 대 한 제어를 제공합니다.  
   
 > [!NOTE]
->  [계속](../../../extensibility/debugger/reference/idebugprogram2-continue.md), [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md), 및 [단계](../../../extensibility/debugger/reference/idebugprogram2-step.md) 메서드는 사용 되지 않으며 더 이상 사용 해야 합니다. 에 해당 하는 메서드를 사용 하 여는 `IDebugProcess3` 대신 인터페이스입니다.  
+>  [계속](../../../extensibility/debugger/reference/idebugprogram2-continue.md), [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md), 및 [단계](../../../extensibility/debugger/reference/idebugprogram2-step.md) 메서드는 사용 되지 않으며 더 이상 사용 해야 합니다. 해당 메서드를 사용 합니다 `IDebugProcess3` 대신 인터페이스입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -35,10 +32,10 @@ IDebugProcess3 : IDebugProcess2
 ```  
   
 ## <a name="notes-for-implementers"></a>구현자 참고 사항  
- 이 인터페이스는 프로그램을 관리 그룹으로 사용자 지정 포트 공급자를 통해 구현 됩니다. 프로그램 그룹으로 관리 되는 경우에 실행을 제어 하 고는 식 계산기에 대 한 언어를 연결할 수 있습니다. 이 인터페이스는 포트 협력 업체에서 구현 되어야 합니다.  
+ 이 인터페이스는 프로그램을 관리 그룹으로 사용자 지정 포트 공급자를 통해 구현 됩니다. 프로그램 그룹으로 관리 되는 경우에 실행을 제어 하 고 식 계산기에 대 한 언어를 설정할 수 있습니다. 포트 공급자가이 인터페이스를 구현 해야 합니다.  
   
-## <a name="notes-for-callers"></a>호출자에 대 한 참고 사항  
- 이 인터페이스는 세션 디버그 관리자 (SDM)에서 주로이 프로세스에서 식별 한 프로그램 그룹을 상호 작용 하기 위해 호출 됩니다.  
+## <a name="notes-for-callers"></a>호출자에 대 한 정보  
+ 이 인터페이스는 세션 디버그 관리자 (SDM)에서 주로이 프로세스에서 식별 한 프로그램 그룹을 사용 하 여 상호 작용 하기 위해 호출 됩니다.  
   
  호출 [QueryInterface](/cpp/atl/queryinterface) 에 [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) 인터페이스가이 인터페이스를 가져올 수 있습니다.  
   
@@ -47,24 +44,24 @@ IDebugProcess3 : IDebugProcess2
   
 |메서드|설명|  
 |------------|-----------------|  
-|[Continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md)|또는 프로세스를 통해 단계별 실행의 실행을 계속 합니다.|  
-|[실행](../../../extensibility/debugger/reference/idebugprocess3-execute.md)|프로세스의 실행을 시작합니다.|  
-|[Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)|하나의 명령 또는 프로세스에서 문을 앞으로 이동 합니다.|  
-|[GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)|디버깅 하는 프로세스를 시작한 이유를 가져옵니다.|  
+|[Continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md)|프로세스를 통해 단계별 실행 또는 실행을 계속 합니다.|  
+|[Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md)|프로세스의 실행을 시작합니다.|  
+|[Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)|프로세스의 한 문이나 명령 앞으로 이동 합니다.|  
+|[GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)|프로세스가 디버깅을 위해 시작 된는 이유를 가져옵니다.|  
 |[SetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-sethostingprocesslanguage.md)|디버그 엔진에서 적절 한 식 계산기를 로드할 수 있도록 호스팅 언어를 설정 합니다.|  
-|[GetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-gethostingprocesslanguage.md)|현재이 프로세스에 대해 설정 하는 언어를 검색 합니다.|  
-|[DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)|이 프로세스에 대 한 편집 하며 계속 (ENC)를 해제합니다.<br /><br /> 사용자 지정 포트 공급자는이 메서드를 구현 하지 않습니다 (항상 반환 해야 `E_NOTIMPL`).|  
-|[GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md)|이 프로세스에 대 한 ENC 상태를 가져옵니다.<br /><br /> 사용자 지정 포트 공급자는이 메서드를 구현 하지 않습니다 (항상 반환 해야 `E_NOTIMPL`).|  
-|[GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)|사용할 수 있는 디버그 엔진에 대 한 고유 식별자의 배열을 검색합니다.|  
+|[GetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-gethostingprocesslanguage.md)|이 프로세스에 대 한 현재 설정 된 언어를 검색 합니다.|  
+|[DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)|이 프로세스에 대 한 편집 및 계속 (ENC)를 해제합니다.<br /><br /> 사용자 지정 포트 공급자는이 메서드를 구현 하지 않습니다 (항상 반환할 `E_NOTIMPL`).|  
+|[GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md)|이 프로세스에 대 한 ENC 상태를 가져옵니다.<br /><br /> 사용자 지정 포트 공급자는이 메서드를 구현 하지 않습니다 (항상 반환할 `E_NOTIMPL`).|  
+|[GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)|사용할 디버그 엔진에 대 한 고유 식별자의 배열을 검색합니다.|  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: Msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>참고 항목  
- [코어 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Core 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

@@ -1,9 +1,6 @@
 ---
 title: 작성 합니다. Vsct 파일 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, manual authoring
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26a5353531d997ad40b913b5ee223614d6517c55
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3b39cd97bca9ee88628d064f917686d2a7f45aaa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917819"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945264"
 ---
 # <a name="author-vsct-files"></a>.Vsct 파일 작성
 이 문서에서는 작성 하는 방법을 보여 줍니다.는 *.vsct* 파일을 Visual Studio 통합된 개발 환경 (IDE)에 메뉴 항목, 도구 모음 및 기타 사용자 인터페이스 (UI) 요소를 추가 합니다. 이미 있지 않은 Visual Studio 패키지 (VSPackage) UI 요소를 추가 하는 경우 다음이 단계를 사용 하 여는 *.vsct* 파일입니다.  
@@ -26,14 +23,14 @@ ms.locfileid: "49917819"
  새 프로젝트를 생성 하기 때문에 Visual Studio 패키지 템플릿을 사용 하는 권장 된 *.vsct* 선택 사항에 따라 이미 사용자 지정 편집기, 도구 창이 나 메뉴 명령에 대 한 필수 요소는 파일 . 이 수정할 수 있습니다 *.vsct* VSPackage의 요구 사항을 충족 하는 파일입니다. 수정 하는 방법에 대 한 자세한를 *.vsct* 파일에서 예제를 참조 하십시오 [메뉴와 명령을 확장](../../extensibility/extending-menus-and-commands.md)합니다.  
   
 ## <a name="author-the-file"></a>파일 작성  
- 작성자는 *.vsct* 이러한 단계에서 파일: 파일 및 리소스에 대 한 구조를 만듭니다, UI 요소를 선언 하 고, IDE에서 UI 요소를 배치 하 고 모든 특수 동작을 추가 합니다.  
+ 작성자는 *.vsct* 이러한 단계에서 파일: 파일 및 리소스에 대 한 구조 만들기, UI 요소를 선언, IDE에서 UI 요소를 배치 및 모든 특수 동작을 추가 합니다.  
   
 ### <a name="file-structure"></a>파일 구조  
  기본 구조를 *.vsct* 파일이 [CommandTable](../../extensibility/commandtable-element.md) 포함 하는 루트 요소를 [명령](../../extensibility/commands-element.md) 요소와 [기호](../../extensibility/symbols-element.md) 요소입니다.  
   
 #### <a name="to-create-the-file-structure"></a>파일 구조를 만들려면  
   
-1.  추가 된 *.vsct* 파일을 프로젝트의 단계를 수행 하 여 [방법:.vsct 파일 만들기](../../extensibility/internals/how-to-create-a-dot-vsct-file.md).  
+1.  추가 된 *.vsct* 의 단계를 수행 하 여 프로젝트 파일 [방법: .Vsct 파일 만들기](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)합니다.  
   
 2. 필요한 네임 스페이스를 추가 합니다 `CommandTable` 다음 예제에서와 같이 요소:  
   
@@ -56,7 +53,7 @@ ms.locfileid: "49917819"
   
    -   *Stdidcmd.h*: Visual Studio에서 노출 하는 모든 명령에 대 한 Id를 정의 합니다.  
   
-   -   *Vsshlids.h*: Visual Studio 메뉴에 대 한 명령 Id를 포함 합니다.  
+   -   *Vsshlids.h*: Visual Studio 메뉴에 대 한 명령 Id를 포함합니다.  
   
 2. 패키지는 Visual Studio에서 또는 다른 패키지에서 정의 된 모든 명령을 호출 하는 경우 추가 `UsedCommands` 요소 뒤의 `Commands` 요소입니다. 이 요소와 채우기는 [UsedCommand](../../extensibility/usedcommand-element.md) 패키지의 일부가 아닌 호출 된 각 명령에 대 한 요소입니다. 설정 합니다 `guid` 및 `id` 의 특성을 `UsedCommand` 요소를 호출 하는 명령의 GUID 및 ID 값입니다. 
 

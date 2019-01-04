@@ -1,9 +1,6 @@
 ---
 title: 업그레이드 및 Office 솔루션 마이그레이션
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5b86699f11ab59aaf0ef09f5c7ae52d69e41e96c
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 0f8a1ca1fa9c3d59b7fa95a12d08d5bb82ab422b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671744"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988367"
 ---
 # <a name="upgrade-and-migrate-office-solutions"></a>업그레이드 및 Office 솔루션 마이그레이션
   Microsoft Office 프로젝트를 이전 버전 Visual Studio에서 만든 경우 현재 버전의 Visual Studio에서 사용하려면 프로젝트를 업그레이드해야 합니다. Microsoft Office 프로젝트를 업그레이드하려면 Microsoft Office 개발자 도구가 포함된 Visual Studio 버전에서 프로젝트를 엽니다. Microsoft Office 개발자 도구가 포함 된 Visual Studio의 버전에 대 한 자세한 내용은 참조 하세요. [Office 솔루션을 개발 하도록 컴퓨터를 구성](../vsto/configuring-a-computer-to-develop-office-solutions.md)합니다.  
@@ -66,7 +63,7 @@ ms.locfileid: "50671744"
 ## <a name="targeted-office-application"></a>대상된 Office 응용 프로그램  
  Office 프로젝트를 Visual Studio 2013으로 업그레이드하는 경우 Visual Studio에서 문서 수준 사용자 지정 프로젝트 또는 VSTO 추가 기능 프로젝트와 같은 프로젝트 형식에서 지원되는 Microsoft Office 버전을 대상으로 지정하도록 프로젝트를 수정합니다.  
   
- Visual Studio 2013의 Office 프로젝트는 [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 및 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] 응용 프로그램을 대상으로 할 수 있습니다. Visual Studio에서 설치된 최신 버전의 Office를 대상으로 하도록 프로젝트를 수정합니다. 해당 버전의 Office가 설치되어 있지 않으면 Visual Studio에서 프로젝트를 업그레이드하지 않습니다.  
+ Visual Studio 2013의 Office 프로젝트는 [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 및 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] 애플리케이션을 대상으로 할 수 있습니다. Visual Studio에서 설치된 최신 버전의 Office를 대상으로 하도록 프로젝트를 수정합니다. 해당 버전의 Office가 설치되어 있지 않으면 Visual Studio에서 프로젝트를 업그레이드하지 않습니다.  
   
 > [!NOTE]  
 >  대상으로 VSTO 추가 기능 프로젝트를 업그레이드할 [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 나중에 있는지 또는 `ThisAddIn_Startup` 이벤트 처리기는 VSTO 추가 기능에 응용 프로그램에서 문서에 액세스 하는 코드를 포함 하지 않습니다. 자세한 내용은 [문서를 시작 하면 Office 응용 프로그램 액세스](../vsto/programming-vsto-add-ins.md#AccessingDocuments)합니다.  
@@ -87,9 +84,7 @@ ms.locfileid: "50671744"
   
  ClickOnce를 사용하여 VSTO 추가 기능을 배포하려면 설치 프로그램 또는 InstallShield Limited Edition 프로젝트를 완전히 삭제할 수 있습니다. ClickOnce를 사용 하 여 VSTO 추가 기능을 배포 하는 방법에 대 한 자세한 내용은 참조 하십시오 [Office 솔루션 배포](../vsto/deploying-an-office-solution.md)합니다.  
   
-## <a name="see-also"></a>참고자료  
- [방법: 업그레이드 Office 솔루션](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)   
+## <a name="see-also"></a>참고 항목  
+ [방법: Office 솔루션 업그레이드](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)   
  [.NET Framework 4 이상으로 Office 솔루션 마이그레이션](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
  [프로젝트 업그레이드, 옵션 대화 상자](../vsto/project-upgrade-options-dialog-box.md)  
-  
-  
