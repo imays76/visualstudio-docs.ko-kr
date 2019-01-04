@@ -1,9 +1,6 @@
 ---
 title: '방법: Office 솔루션에 서명'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 076cfcb6b63d650665e79a1e2d522595d4a82922
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 3aafdf24a6a2c5c5484291fb30b70a4ef1b7aa7e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804697"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829049"
 ---
 # <a name="how-to-sign-office-solutions"></a>방법: Office 솔루션에 서명
   솔루션에 서명 하는 경우에 증거로 인증서를 사용 하 여 솔루션에 신뢰를 부여할 수 있습니다. 여러 솔루션에 대 한 동일한 인증서를 사용할 수 있습니다 하 고 추가 보안 정책 업데이트를 사용 하 여 모든 솔루션 신뢰할 수 있는 됩니다.

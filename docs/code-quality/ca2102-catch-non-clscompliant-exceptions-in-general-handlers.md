@@ -1,8 +1,7 @@
 ---
-title: 'CA2102: 일반 처리기에서 비 CLSCompliant 예외를 catch하십시오.'
+title: 'CA2102: 일반 처리기에서 비 CLSCompliant 예외를 catch하세요.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2102
@@ -15,14 +14,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f5af37daba4ce1791c5485d65734d1dd8c3d87f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: de5bb494822b2faabce0bdf8a3b2a1e2e9a80b99
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887048"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840397"
 ---
-# <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102: 일반 처리기에서 비 CLSCompliant 예외를 catch하십시오.
+# <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102: 일반 처리기에서 비 CLSCompliant 예외를 catch하세요.
 
 |||
 |-|-|
@@ -86,7 +85,7 @@ csc /r:ThrowNonClsCompliantException.dll CatchNonClsCompliantException.cs
 
 ## <a name="related-rules"></a>관련된 규칙
 
-[CA1031: 일반적인 예외 형식을 catch하지 마십시오.](../code-quality/ca1031-do-not-catch-general-exception-types.md)
+[CA1031: 일반적인 예외 형식을 catch 하지 마십시오.](../code-quality/ca1031-do-not-catch-general-exception-types.md)
 
 ## <a name="see-also"></a>참고자료
 

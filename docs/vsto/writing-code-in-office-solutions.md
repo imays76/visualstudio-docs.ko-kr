@@ -1,9 +1,6 @@
 ---
 title: Office 솔루션에서 코드를 작성 합니다.
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.Project.RefactoringCancelled
@@ -36,12 +33,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a8c26607d918c4fce457222337a287014943b9a0
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 35c78f03cdb537ef5be2fd3b9004ca713485d3bc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803281"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942975"
 ---
 # <a name="write-code-in-office-solutions"></a>Office 솔루션에서 코드를 작성 합니다.
   Visual Studio의 Office 프로젝트에는 기타 유형의 프로젝트와 다른 코드 작성의 몇 가지 측면이 있습니다. 이러한 차이점 중 상당수는 Office 개체 모델이 관리 코드에 노출되는 방식과 관련되어 있으며, 다른 차이점은 Office 프로젝트의 디자인과 관련되어 있습니다.
@@ -49,12 +46,12 @@ ms.locfileid: "53803281"
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 ## <a name="managed-code-and-office-programming"></a>관리 코드와 Office 프로그래밍
- 통합된 Microsoft Office 솔루션을 만들 수 있도록 하는 핵심 기술은 COM(구성 요소 개체 모델) 기술의 일부인 자동화입니다. 자동화를 사용하면 적절한 프로그래밍 인터페이스를 지원하는 모든 응용 프로그램, DLL 또는 ActiveX 컨트롤이 노출하는 소프트웨어 개체를 코드를 통해 만들고 제어할 수 있습니다.
+ 통합된 Microsoft Office 솔루션을 만들 수 있도록 하는 핵심 기술은 COM(구성 요소 개체 모델) 기술의 일부인 자동화입니다. 자동화를 사용하면 적절한 프로그래밍 인터페이스를 지원하는 모든 애플리케이션, DLL 또는 ActiveX 컨트롤이 노출하는 소프트웨어 개체를 코드를 통해 만들고 제어할 수 있습니다.
 
 ### <a name="understand-primary-interop-assemblies"></a>주 interop 어셈블리 이해
- Microsoft Office 응용 프로그램은 기능의 상당 부분을 자동화에 노출합니다. 그러나 Visual Basic 또는 C#과 같은 관리 코드를 직접 사용하여 Office 응용 프로그램을 자동화할 수 없습니다. 관리 코드를 사용하여 Office 응용 프로그램을 자동화하려면 Office PIA(주 interop 어셈블리)를 사용해야 합니다. 주 interop 어셈블리를 사용하면 관리 코드가 Office 응용 프로그램의 COM 기반 개체 모델과 상호 작용할 수 있습니다.
+ Microsoft Office 애플리케이션은 기능의 상당 부분을 자동화에 노출합니다. 그러나 Visual Basic 또는 C#과 같은 관리 코드를 직접 사용하여 Office 애플리케이션을 자동화할 수 없습니다. 관리 코드를 사용하여 Office 애플리케이션을 자동화하려면 Office PIA(주 interop 어셈블리)를 사용해야 합니다. 주 interop 어셈블리를 사용하면 관리 코드가 Office 애플리케이션의 COM 기반 개체 모델과 상호 작용할 수 있습니다.
 
- 모든 Microsoft Office 응용 프로그램에는 PIA가 있습니다. Visual Studio에서 Office 프로젝트를 만들 때 적절한 PIA에 대한 참조가 프로젝트에 자동으로 추가됩니다. 프로젝트에서 다른 Office 응용 프로그램의 기능을 자동화하려면 적절한 PIA에 대한 참조를 수동으로 추가해야 합니다. 자세한 내용은 [방법: 주 interop 어셈블리를 통해 Office 응용 프로그램을 대상](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)합니다.
+ 모든 Microsoft Office 애플리케이션에는 PIA가 있습니다. Visual Studio에서 Office 프로젝트를 만들 때 적절한 PIA에 대한 참조가 프로젝트에 자동으로 추가됩니다. 프로젝트에서 다른 Office 애플리케이션의 기능을 자동화하려면 적절한 PIA에 대한 참조를 수동으로 추가해야 합니다. 자세한 내용은 [방법: 주 interop 어셈블리를 통해 Office 응용 프로그램을 대상](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)합니다.
 
 ### <a name="use-primary-interop-assemblies-at-design-time-and-runtime"></a>디자인 타임과 런타임에 주 interop 어셈블리를 사용 합니다.
  대부분의 개발 작업을 수행하려면 개발 컴퓨터의 전역 어셈블리 캐시에서 Office PIA를 설치하고 등록해야 합니다. 자세한 내용은 [Office 솔루션을 개발 하도록 컴퓨터를 구성](../vsto/configuring-a-computer-to-develop-office-solutions.md)합니다.
@@ -62,7 +59,7 @@ ms.locfileid: "53803281"
  최종 사용자 컴퓨터에서는 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 이상을 대상으로 하는 Office 솔루션을 실행하는 데 Office PIA가 필요하지 않습니다. 자세한 내용은 [디자인 Office 솔루션을 만들고](../vsto/designing-and-creating-office-solutions.md)합니다.
 
 ### <a name="use-types-in-primary-interop-assemblies"></a>주 interop 어셈블리에서 형식 사용
- Office PIA에는 Office 응용 프로그램의 개체 모델을 노출하는 형식과 코드에서 직접 사용되지 않을 추가 인프라 형식의 조합이 포함되어 있습니다. Office Pia의 유형에 대 한 개요를 참조 하세요 [Office 주 interop 어셈블리의 클래스 및 인터페이스 개요](/previous-versions/office/office-12/ms247299\(v\=office.12\))합니다.
+ Office PIA에는 Office 애플리케이션의 개체 모델을 노출하는 형식과 코드에서 직접 사용되지 않을 추가 인프라 형식의 조합이 포함되어 있습니다. Office Pia의 유형에 대 한 개요를 참조 하세요 [Office 주 interop 어셈블리의 클래스 및 인터페이스 개요](/previous-versions/office/office-12/ms247299\(v\=office.12\))합니다.
 
  Office PIA의 형식이 COM 기반 개체 모델의 형식에 해당하기 때문에 이러한 형식을 사용하는 방식은 다른 관리되는 형식과 다른 경우가 많습니다. 예를 들어 Office 주 interop 어셈블리에서 선택적 매개 변수가 있는 메서드를 호출하는 방식은 프로젝트에서 사용하고 있는 프로그래밍 언어에 따라 달라집니다. 자세한 내용은 다음 항목을 참조하세요.
 
@@ -71,12 +68,12 @@ ms.locfileid: "53803281"
 -   [Office 솔루션에서 런타임에 바인딩을](../vsto/late-binding-in-office-solutions.md)합니다.
 
 ## <a name="program-model-of-office-projects"></a>Office 프로젝트의 프로그램 모델
- 모든 Office 프로젝트에는 코드에 대한 진입점을 제공하는 생성된 클래스가 하나 이상 포함되어 있습니다. 이러한 클래스를 사용하면 호스트 응용 프로그램의 개체 모델과 작업창 및 사용자 지정 작업창과 같은 기능에도 액세스할 수 있습니다.
+ 모든 Office 프로젝트에는 코드에 대한 진입점을 제공하는 생성된 클래스가 하나 이상 포함되어 있습니다. 이러한 클래스를 사용하면 호스트 애플리케이션의 개체 모델과 작업창 및 사용자 지정 작업창과 같은 기능에도 액세스할 수 있습니다.
 
 ### <a name="understand-the-generated-classes"></a>생성된 된 클래스 이해
- Excel 및 Word의 문서 수준 프로젝트에서 생성된 클래스는 응용 프로그램 개체 모델의 최상위 개체와 유사합니다. 예를 들어 Word 문서 프로젝트의 생성된 `ThisDocument` 클래스는 Word 개체 모델의 <xref:Microsoft.Office.Interop.Word.Document> 클래스와 동일한 멤버를 제공합니다. 문서 수준 프로젝트에서 생성된 된 클래스에 대 한 자세한 내용은 참조 하세요. [문서 수준 사용자 지정 프로그램](../vsto/programming-document-level-customizations.md)합니다.
+ Excel 및 Word의 문서 수준 프로젝트에서 생성된 클래스는 애플리케이션 개체 모델의 최상위 개체와 유사합니다. 예를 들어 Word 문서 프로젝트의 생성된 `ThisDocument` 클래스는 Word 개체 모델의 <xref:Microsoft.Office.Interop.Word.Document> 클래스와 동일한 멤버를 제공합니다. 문서 수준 프로젝트에서 생성된 된 클래스에 대 한 자세한 내용은 참조 하세요. [문서 수준 사용자 지정 프로그램](../vsto/programming-document-level-customizations.md)합니다.
 
- VSTO 추가 기능 프로젝트는 `ThisAddIn`이라는 생성된 클래스를 제공합니다. 이 클래스는 호스트 응용 프로그램의 개체 모델에 있는 클래스와 유사하지 않습니다. 대신 이 클래스는 VSTO 추가 기능 자체를 나타내며, 호스트 응용 프로그램의 개체 모델과 VSTO 추가 기능에 사용 가능한 다른 기능에 액세스하는 데 사용할 수 있는 멤버를 제공합니다. 자세한 내용은 [프로그램 VSTO 추가 기능](../vsto/programming-vsto-add-ins.md)합니다.
+ VSTO 추가 기능 프로젝트는 `ThisAddIn`이라는 생성된 클래스를 제공합니다. 이 클래스는 호스트 애플리케이션의 개체 모델에 있는 클래스와 유사하지 않습니다. 대신 이 클래스는 VSTO 추가 기능 자체를 나타내며, 호스트 애플리케이션의 개체 모델과 VSTO 추가 기능에 사용 가능한 다른 기능에 액세스하는 데 사용할 수 있는 멤버를 제공합니다. 자세한 내용은 [프로그램 VSTO 추가 기능](../vsto/programming-vsto-add-ins.md)합니다.
 
  Office 프로젝트의 모든 생성된 클래스에는 `Startup` 및 `Shutdown` 이벤트 처리기가 포함되어 있습니다. 코드 작성을 시작하려면 일반적으로 이러한 이벤트 처리기에 코드를 추가합니다. VSTO 추가 기능을 초기화하기 위해 `Startup` 이벤트 처리기에 코드를 추가할 수 있습니다. VSTO 추가 기능에서 사용하는 리소스를 정리하기 위해 `Shutdown` 이벤트 처리기에 코드를 추가할 수 있습니다. 자세한 내용은 [Office 프로젝트의 이벤트](../vsto/events-in-office-projects.md)합니다.
 
@@ -97,10 +94,10 @@ ms.locfileid: "53803281"
  Visual Studio에서 Office 프로젝트 템플릿은 Visual Basic 및 Visual C# 프로그래밍 언어만 지원합니다. 따라서 이러한 프로젝트 템플릿은 **에서** 새 프로젝트 **대화 상자의** Visual Basic **및** Visual C# [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]노드에서만 사용할 수 있습니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.
 
 ## <a name="language-choice-and-office-programming"></a>선택한 언어 및 Office 프로그래밍
- Microsoft Office 및 VBA(Visual Basic for Applications)는 응용 프로그램 사용자 지정의 워크플로를 최적화하기 위해 함께 작동하도록 개발되었습니다. Visual Basic은 이러한 개발 중 일부를 상속했습니다. 예를 들어 Visual Basic에서는 선택적 매개 변수를 지원하므로 Visual C#을 사용하는 경우보다 Microsoft Office 주 interop 어셈블리의 일부 메서드를 호출할 때 적은 코드를 작성할 수 있습니다.
+ Microsoft Office 및 VBA(Visual Basic for Applications)는 애플리케이션 사용자 지정의 워크플로를 최적화하기 위해 함께 작동하도록 개발되었습니다. Visual Basic은 이러한 개발 중 일부를 상속했습니다. 예를 들어 Visual Basic에서는 선택적 매개 변수를 지원하므로 Visual C#을 사용하는 경우보다 Microsoft Office 주 interop 어셈블리의 일부 메서드를 호출할 때 적은 코드를 작성할 수 있습니다.
 
 ## <a name="program-with-visual-basic-vs-visual-c-in-office-solutions"></a>Visual Basic vs 사용 하 여 프로그램입니다. Office 솔루션에서 visual C#
- Visual Basic 또는 Visual C#을 사용하여 Office 솔루션을 만들 수 있습니다. Microsoft Office 개체 모델이 Microsoft VBA(Visual Basic for Applications)와 함께 사용하도록 설계되었기 때문에 Visual Basic 개발자는 Microsoft Office 응용 프로그램이 노출하는 개체로 편안하게 작업할 수 있습니다. Visual C# 개발자는 Visual Basic 개발자와 거의 동일한 기능을 사용할 수 있지만 Office 개체 모델을 사용하기 위해 추가 코드를 작성해야 하는 경우가 있습니다. 또한 Office 개발의 기본 프로그래밍 기능과 Visual Basic 및 C#으로 작성된 관리 코드 간에는 몇 가지 차이점이 있습니다.
+ Visual Basic 또는 Visual C#을 사용하여 Office 솔루션을 만들 수 있습니다. Microsoft Office 개체 모델이 Microsoft VBA(Visual Basic for Applications)와 함께 사용하도록 설계되었기 때문에 Visual Basic 개발자는 Microsoft Office 애플리케이션이 노출하는 개체로 편안하게 작업할 수 있습니다. Visual C# 개발자는 Visual Basic 개발자와 거의 동일한 기능을 사용할 수 있지만 Office 개체 모델을 사용하기 위해 추가 코드를 작성해야 하는 경우가 있습니다. 또한 Office 개발의 기본 프로그래밍 기능과 Visual Basic 및 C#으로 작성된 관리 코드 간에는 몇 가지 차이점이 있습니다.
 
 ## <a name="key-differences-between-visual-basic-and-visual-c"></a>Visual Basic 및 Visual C# 간의 주요 차이점
  다음 표에서는 Office 개발에서 Visual Basic과 Visual C#의 주요 차이점을 보여 줍니다.
@@ -117,7 +114,7 @@ ms.locfileid: "53803281"
 
 |기능|설명|Visual Basic 및 Visual C# 지원|
 |-------------|-----------------|-----------------------------------------|
-|배열 인덱스|Microsoft Office 응용 프로그램에서 컬렉션의 배열 하한은 1부터 시작합니다. Visual Basic 및 Visual C#에서는 0부터 시작하는 배열을 사용합니다. 자세한 내용은 [배열 &#40;C&#35; 프로그래밍 가이드&#41; ](/dotnet/csharp/programming-guide/arrays/index) 하 고 [Visual Basic의 배열](/dotnet/visual-basic/programming-guide/language-features/arrays/index).|Microsoft Office 응용 프로그램의 개체 모델에서 컬렉션의 첫 번째 항목에 액세스하려면 인덱스 0 대신 1을 사용합니다.|
+|배열 인덱스|Microsoft Office 애플리케이션에서 컬렉션의 배열 하한은 1부터 시작합니다. Visual Basic 및 Visual C#에서는 0부터 시작하는 배열을 사용합니다. 자세한 내용은 [배열 &#40;C&#35; 프로그래밍 가이드&#41; ](/dotnet/csharp/programming-guide/arrays/index) 하 고 [Visual Basic의 배열](/dotnet/visual-basic/programming-guide/language-features/arrays/index).|Microsoft Office 애플리케이션의 개체 모델에서 컬렉션의 첫 번째 항목에 액세스하려면 인덱스 0 대신 1을 사용합니다.|
 
 ## <a name="see-also"></a>참고 항목
 

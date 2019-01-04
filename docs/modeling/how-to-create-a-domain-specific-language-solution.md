@@ -1,5 +1,5 @@
 ---
-title: '방법: 도메인별 언어 솔루션 만들기'
+title: '방법: 도메인 특정 언어 솔루션 만들기'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,15 +14,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: f138f1f809ae5a81aa97c571a147c679bacaa3b2
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: aeeacdd9fc52f26a14930f0756be463ac4f87eec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967235"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943774"
 ---
-# <a name="how-to-create-a-domain-specific-language-solution"></a>방법: 도메인별 언어 솔루션 만들기
+# <a name="how-to-create-a-domain-specific-language-solution"></a>방법: 도메인 특정 언어 솔루션 만들기
 도메인 특정 언어 (DSL) 특수 한 Visual Studio 솔루션을 사용 하 여 만들어집니다.
 
 ## <a name="prerequisites"></a>전제 조건
@@ -131,7 +130,7 @@ ms.locfileid: "50967235"
 
  강력한 이름 지정에 대 한 자세한 내용은 참조 하세요. [강력한 어셈블리 만들기 및 사용](http://go.microsoft.com/fwlink/?LinkId=186073)합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [도메인별 언어 정의 방법](../modeling/how-to-define-a-domain-specific-language.md)
 - [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -1,9 +1,6 @@
 ---
 title: 시작 후 연결 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, attaching to programs
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b767ef1aeed691255a62a9cb5c1e264034acf24e
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 33bc38ca3e0c9b3bde07be48c74c31e4fc5148df
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152921"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922218"
 ---
 # <a name="attach-after-a-launch"></a>시작 후 연결
 프로그램 시작 디버그 세션 언급된 프로그램에 디버그 엔진 (DE)를 연결할 준비가 된 것입니다.  
@@ -46,7 +43,7 @@ ms.locfileid: "39152921"
   
  프로그램 및 시작 이벤트를 보낼 준비가 이제는 DE 연결 됩니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [프로그램에 직접 연결](../../extensibility/debugger/attaching-directly-to-a-program.md)   
  [포트에 알림](../../extensibility/debugger/notifying-the-port.md)   
  [디버깅 작업](../../extensibility/debugger/debugging-tasks.md)   

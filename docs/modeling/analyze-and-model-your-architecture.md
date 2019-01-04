@@ -2,7 +2,6 @@
 title: 아키텍처 분석 및 모델링
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio Ultimate, exploring code
@@ -32,12 +31,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e9dd37f3db5bc231a831879d2620ad55a50c3b7
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 986c32b0994e2b5ed0434e9d9a6b672dc0fbefff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740447"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855051"
 ---
 # <a name="analyze-and-model-your-architecture"></a>아키텍처 분석 및 모델링
 
@@ -47,7 +46,7 @@ ms.locfileid: "53740447"
 
 * 아키텍처 종속성을 존중 필요성에 팀을 교육 합니다.
 
-* 개발 프로세스의 일부로 응용 프로그램 수명 주기 전체에 걸쳐 다양한 상세 수준으로 모델을 만듭니다.
+* 개발 프로세스의 일부로 애플리케이션 수명 주기 전체에 걸쳐 다양한 상세 수준으로 모델을 만듭니다.
 
 참조 [시나리오: 모델링 및 시각화를 사용 하 여 디자인 변경](../modeling/scenario-change-your-design-using-visualization-and-modeling.md)합니다.
 

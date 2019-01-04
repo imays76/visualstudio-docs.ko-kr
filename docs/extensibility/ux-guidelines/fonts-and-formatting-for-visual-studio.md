@@ -1,9 +1,6 @@
 ---
 title: 글꼴 및 Visual Studio에 대 한 서식 지정 | Microsoft Docs
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a758c1e44f9f78f7dc2a225e641d91f97db72cc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 69ce90f8748168608d09584a4ef370fbdfac394a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942831"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989045"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>글꼴 및 Visual Studio에 대 한 서식 지정
 ##  <a name="BKMK_TheEnvironmentFont"></a> 환경 글꼴
@@ -104,122 +101,122 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visual
 ```
   
 #### <a name="375-environment-font--light"></a>375% 환경 글꼴 + Light  
- **으로 표시 됩니다:** 34 pt Segoe UI Light  
+ **다음과 같이 나타납니다.** 34 pt Segoe UI Light  
  **사용:** (드물게) 고유한 브랜드 UI와 같은 시작 페이지
 
- **프로시저 코드:** 여기서 `textBlock` 는 이전에 정의 된 textblock 및 `label` 은 이전에 정의 된 레이블입니다.  
+ **절차적 코드:** 여기서 `textBlock` 는 이전에 정의 된 textblock 및 `label` 은 이전에 정의 된 레이블입니다.  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment375PercentFontSizeStyleKey);  
 ```
   
- **XAML:** 같이 TextBlock 또는 Label의 스타일을 설정 합니다.  
+ **XAML:** TextBlock 또는 표시 된 것 처럼 레이블 스타일을 설정 합니다.  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey}}">TextBlock: 375 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey}}">TextBlock: 375 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment375PercentFontSizeStyleKey}}">Label: 375 Percent Scaling</Label>  
 ```
   
 #### <a name="310-environment-font--light"></a>310% 환경 글꼴 + Light  
- **으로 표시 됩니다:** 28 pt Segoe UI Light   
+ **다음과 같이 나타납니다.** 28 pt Segoe UI Light   
  **사용:** 큰 서명 대화 상자 제목, 주 보고서의 제목  
   
- **프로시저 코드:** 여기서 `textBlock` 는 이전에 정의 된 textblock 및 `label` 은 이전에 정의 된 레이블입니다.  
+ **절차적 코드:** 여기서 `textBlock` 는 이전에 정의 된 textblock 및 `label` 은 이전에 정의 된 레이블입니다.  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment310PercentFontSizeStyleKey);    
 ```
   
- **XAML:** 같이 TextBlock 또는 Label의 스타일을 설정 합니다.  
+ **XAML:** TextBlock 또는 표시 된 것 처럼 레이블 스타일을 설정 합니다.  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey}}">TextBlock: 310 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey}}">TextBlock: 310 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment310PercentFontSizeStyleKey}}">Label: 310 Percent Scaling</Label>     
 ```
   
 #### <a name="200-environment-font--semilight"></a>200% 환경 글꼴 + Semilight  
- **으로 표시 됩니다:** 18pt Segoe UI Semilight    
+ **다음과 같이 나타납니다.** 18pt Segoe UI Semilight    
  **사용:** 소규모 및 중간 규모 대화 상자에 제목, 부제목  
   
- **프로시저 코드:** 여기서 `textBlock` 는 이전에 정의 된 textblock 및 `label` 은 이전에 정의 된 레이블입니다. 
+ **절차적 코드:** 여기서 `textBlock` 는 이전에 정의 된 textblock 및 `label` 은 이전에 정의 된 레이블입니다. 
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment200PercentFontSizeStyleKey);    
 ```
   
- **XAML:** 같이 TextBlock 또는 Label의 스타일을 설정 합니다.  
+ **XAML:** TextBlock 또는 표시 된 것 처럼 레이블 스타일을 설정 합니다.  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey}}">TextBlock: 200 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey}}">TextBlock: 200 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment200PercentFontSizeStyleKey}}">Label: 200 Percent Scaling</Label>    
 ```
   
 #### <a name="155-environment-font"></a>155% 환경 글꼴  
- **으로 표시 됩니다:** 14pt Segoe UI    
+ **다음과 같이 나타납니다.** 14pt Segoe UI    
  **사용:** 문서의 섹션 제목 및 UI 또는 보고서  
   
- **프로시저 코드:** 여기서 `textBlock` 는 이전에 정의 된 textblock 및 `label` 은 이전에 정의 된 레이블입니다.  
+ **절차적 코드:** 여기서 `textBlock` 는 이전에 정의 된 textblock 및 `label` 은 이전에 정의 된 레이블입니다.  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment155PercentFontSizeStyleKey);    
 ```
   
- **XAML:** 같이 TextBlock 또는 Label의 스타일을 설정 합니다.  
+ **XAML:** TextBlock 또는 표시 된 것 처럼 레이블 스타일을 설정 합니다.  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey}}">TextBlock: 155 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey}}">TextBlock: 155 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment155PercentFontSizeStyleKey}}">Label: 155 Percent Scaling</Label>  
 ```
   
 #### <a name="133-environment-font"></a>133% 환경 글꼴  
- **으로 표시 됩니다:** 12pt Segoe UI    
+ **다음과 같이 나타납니다.** 12pt Segoe UI    
  **사용:** 서명 대화 상자 및 문서에서 더 작은 부제목 및 UI  
   
- **프로시저 코드:** 여기서 `textBlock` 는 이전에 정의 된 textblock 및 `label` 은 이전에 정의 된 레이블입니다.  
+ **절차적 코드:** 여기서 `textBlock` 는 이전에 정의 된 textblock 및 `label` 은 이전에 정의 된 레이블입니다.  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment133PercentFontSizeStyleKey);    
 ```
   
- **XAML:** 같이 TextBlock 또는 Label의 스타일을 설정 합니다.  
+ **XAML:** TextBlock 또는 표시 된 것 처럼 레이블 스타일을 설정 합니다.  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey}}">TextBlock: 133 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey}}">TextBlock: 133 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment133PercentFontSizeStyleKey}}">Label: 133 Percent Scaling</Label>    
 ```
   
 #### <a name="122-environment-font"></a>122% 환경 글꼴  
- **으로 표시 됩니다:** 11 pt Segoe UI    
+ **다음과 같이 나타납니다.** 11 pt Segoe UI    
  **사용:** 서명 대화 상자에서 머리글 섹션, 세로 탭 탐색 트리 뷰에서 노드 최상위  
   
- **프로시저 코드:** 여기서 `textBlock` 는 이전에 정의 된 textblock 및 `label` 은 이전에 정의 된 레이블입니다.  
+ **절차적 코드:** 여기서 `textBlock` 는 이전에 정의 된 textblock 및 `label` 은 이전에 정의 된 레이블입니다.  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment122PercentFontSizeStyleKey);    
 ```
   
- **XAML:** 같이 TextBlock 또는 Label의 스타일을 설정 합니다.  
+ **XAML:** TextBlock 또는 표시 된 것 처럼 레이블 스타일을 설정 합니다.  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey}}">TextBlock: 122 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey}}">TextBlock: 122 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment122PercentFontSizeStyleKey}}">Label: 122 Percent Scaling</Label>    
 ```
   
@@ -227,19 +224,19 @@ label.SetResourceReference(Label.StyleProperty,
  **으로 표시 됩니다:** 굵게 표시 된 9 pt Segoe UI    
  **사용:** 레이블과 부제가 서명 대화 상자, 보고서 및 문서에도 UI  
   
- **프로시저 코드:** 여기서 `textBlock` 는 이전에 정의 된 textblock 및 `label` 은 이전에 정의 된 레이블입니다.  
+ **절차적 코드:** 여기서 `textBlock` 는 이전에 정의 된 textblock 및 `label` 은 이전에 정의 된 레이블입니다.  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironmentBoldStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironmentBoldStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironmentBoldStyleKey);    
 ```
   
- **XAML:** 같이 TextBlock 또는 Label의 스타일을 설정 합니다.  
+ **XAML:** TextBlock 또는 표시 된 것 처럼 레이블 스타일을 설정 합니다.  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironmentBoldStyleKey}}"> Bold TextBlock</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironmentBoldStyleKey}}"> Bold TextBlock</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironmentBoldStyleKey}}"> Bold Label</Label>    
 ```
   
@@ -316,7 +313,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 |대화 상자 제목|레이블|  
 |그룹 상자|확인란|  
 |메뉴 항목|라디오 단추|  
-|상황에 맞는 메뉴 항목|목록 상자 항목|  
+|컨텍스트 메뉴 항목|목록 상자 항목|  
 |단추|상태 표시줄|  
 |테이블 레이블||  
 |열 머리글||  
@@ -325,11 +322,11 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="title-case"></a>첫 글자를 대문자로  
  첫 글자를 대문자로 대부분 또는 모든 구 내에서 단어의 첫 글자를 대문자로 작성 하는 스타일입니다. Visual Studio에서 첫 글자를 대문자로 비롯 한 여러 항목에 대 한 사용 됩니다.  
   
-- **Tooltips.** 예: "선택한 항목 미리 보기"  
+- **Tooltips.** 예제: "선택한 항목 미리 보기"  
   
-- **열 헤더입니다.** 예: "시스템 응답"  
+- **열 헤더입니다.** 예제: "시스템 응답"  
   
-- **메뉴 항목입니다.** 예: "모두 저장"  
+- **메뉴 항목입니다.** 예제: "모두 저장"  
   
   첫 글자를 대문자로 사용 하는 경우 이러한은 단어를 활용 하는 경우 및 소문자 상태로 유지 하는 경우에 대 한 지침입니다.  
   
@@ -356,9 +353,9 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="sentence-case"></a>문장  
  문장만 문장의 첫 번째 단어는 대문자로 시작에 명사와 대명사 작성 하기 위한 표준 대/소문자 메서드는 "I" 합니다. 일반적으로 문장 전세계 고객에 게 특히 경우 콘텐츠는 번역할 컴퓨터에 대 한 읽기 쉽습니다. 에 대 한 문장 사례를 사용 합니다.  
   
-1.  **상태 표시줄 메시지입니다.** 상태 정보만 제공 이며 즉, 간단 하 게 됩니다. 예: "프로젝트 파일을 로드"  
+1.  **상태 표시줄 메시지입니다.** 상태 정보만 제공 이며 즉, 간단 하 게 됩니다. 예제: "프로젝트 파일을 로드"  
   
-2.  **다른 모든 UI 요소의**, 레이블, 확인란, 라디오 단추 및 목록 상자 항목입니다. "목록에서 모든 항목을 선택"을 다음과 같습니다.  
+2.  **다른 모든 UI 요소의**, 레이블, 확인란, 라디오 단추 및 목록 상자 항목입니다. 예제: "목록의 모든 항목을 선택 합니다."  
   
 ### <a name="text-formatting"></a>텍스트 서식 지정  
  Visual Studio 2013의 서식 지정 하는 기본 텍스트에 의해 제어 됩니다 [글꼴로](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont)합니다. 이 서비스는 IDE (통합된 개발 환경), 전체에서 일관 된 글꼴 모양이 표시 되도록 하 고 사용자에 게 일관 된 환경을 보장 하기 위해 사용 해야 합니다.  
@@ -412,37 +409,37 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
 |||  
 |-|-|  
-|**사용법:** 드물게 발생 합니다. 고유한 브랜드 UI만 해당 합니다.<br /><br /> **수행 합니다.**<br /><br /> --문장의 첫 글자를 사용 하는 중<br />-간단한 항상 사용<br /><br /> **안 함:**<br /><br /> -사용 하 여 UI에 대 한 서명 시작 페이지와 같은 UI 이외의<br />-굵게, 기울임꼴 또는 굵게 기울임꼴<br />-본문 텍스트 사용<br />-도구 창에서 사용 합니다.|**으로 표시 됩니다:** 34 pt Segoe UI Light<br /><br /> **예를 보여 줍니다.**<br /><br /> *현재 사용 되지 않습니다. 시작 페이지에서 사용할 수 있습니다.*|  
+|**사용법:** 드물게 발생 합니다. 고유한 브랜드 UI만 해당 합니다.<br /><br /> **수행 합니다.**<br /><br /> --문장의 첫 글자를 사용 하는 중<br />-간단한 항상 사용<br /><br /> **안 함:**<br /><br /> -사용 하 여 UI에 대 한 서명 시작 페이지와 같은 UI 이외의<br />-굵게, 기울임꼴 또는 굵게 기울임꼴<br />-본문 텍스트 사용<br />-도구 창에서 사용 합니다.|**다음과 같이 나타납니다.** 34 pt Segoe UI Light<br /><br /> **예를 보여 줍니다.**<br /><br /> *현재 사용 되지 않습니다. 시작 페이지에서 사용할 수 있습니다.*|  
   
 #### <a name="310-environment-font--light"></a>310% 환경 글꼴 + Light  
   
 |||  
 |-|-|  
-|**사용법:**<br /><br /> -더 큰 서명 대화 상자 제목<br />-기본 보고서 제목<br /><br /> **수행 합니다.**<br /><br /> --문장의 첫 글자를 사용 하는 중<br />-간단한 항상 사용<br /><br /> **안 함:**<br /><br /> -사용 하 여 UI에 대 한 서명 시작 페이지와 같은 UI 이외의<br />-굵게, 기울임꼴 또는 굵게 기울임꼴<br />-본문 텍스트 사용<br />-도구 창에서 사용 합니다.|**으로 표시 됩니다:** 28 pt Segoe UI Light<br /><br /> **예를 보여 줍니다.**<br /><br /> ![310% 환경 글꼴의 예 &#43; Light 제목의](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202 a_EF310")|  
+|**사용법:**<br /><br /> -더 큰 서명 대화 상자 제목<br />-기본 보고서 제목<br /><br /> **수행 합니다.**<br /><br /> --문장의 첫 글자를 사용 하는 중<br />-간단한 항상 사용<br /><br /> **안 함:**<br /><br /> -사용 하 여 UI에 대 한 서명 시작 페이지와 같은 UI 이외의<br />-굵게, 기울임꼴 또는 굵게 기울임꼴<br />-본문 텍스트 사용<br />-도구 창에서 사용 합니다.|**다음과 같이 나타납니다.** 28 pt Segoe UI Light<br /><br /> **예를 보여 줍니다.**<br /><br /> ![310% 환경 글꼴의 예 &#43; Light 제목의](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202 a_EF310")|  
   
 #### <a name="200-environment-font--semilight"></a>200% 환경 글꼴 + Semilight  
   
 |||  
 |-|-|  
-|**사용법:**<br /><br /> -부제목<br />-대화 상자에서 소규모 및 중간 규모 제목<br /><br /> **수행 합니다.**<br /><br /> --문장의 첫 글자를 사용 하는 중<br />-항상 Semilight 가중치를 사용 하 여<br /><br /> **안 함:**<br /><br /> -굵게, 기울임꼴 또는 굵게 기울임꼴<br />-본문 텍스트 사용<br />-도구 창에서 사용 합니다.|**으로 표시 됩니다:** 18pt Segoe UI Semillight<br /><br /> **예를 보여 줍니다.**<br /><br /> ![200% 환경 글꼴의 예 &#43; Semilight](../../extensibility/ux-guidelines/media/0202-b_ef200.png "0202 b_EF200")|  
+|**사용법:**<br /><br /> -부제목<br />-대화 상자에서 소규모 및 중간 규모 제목<br /><br /> **수행 합니다.**<br /><br /> --문장의 첫 글자를 사용 하는 중<br />-항상 Semilight 가중치를 사용 하 여<br /><br /> **안 함:**<br /><br /> -굵게, 기울임꼴 또는 굵게 기울임꼴<br />-본문 텍스트 사용<br />-도구 창에서 사용 합니다.|**다음과 같이 나타납니다.** 18pt Segoe UI Semillight<br /><br /> **예를 보여 줍니다.**<br /><br /> ![200% 환경 글꼴의 예 &#43; Semilight](../../extensibility/ux-guidelines/media/0202-b_ef200.png "0202 b_EF200")|  
   
 #### <a name="155-environment-font"></a>155% 환경 글꼴  
   
 |||  
 |-|-|  
-|**사용법:**<br /><br /> 문서의 섹션 제목 및 UI<br />-보고서<br /><br /> **수행 합니다.** 문장의 첫 글자를 사용 합니다.<br /><br /> **안 함:**<br /><br /> -굵게, 기울임꼴 또는 굵게 기울임꼴<br />-본문 텍스트 사용<br />-표준 Visual Studio 컨트롤에서 사용 합니다.<br />-도구 창에서 사용 합니다.|**으로 표시 됩니다:** 14pt Segoe UI<br /><br /> **예를 보여 줍니다.**<br /><br /> ![155% 환경 글꼴 제목의 예](../../extensibility/ux-guidelines/media/0202-c_ef155.png "0202 c_EF155")|  
+|**사용법:**<br /><br /> 문서의 섹션 제목 및 UI<br />-보고서<br /><br /> **수행 합니다.** 문장의 첫 글자를 사용 합니다.<br /><br /> **안 함:**<br /><br /> -굵게, 기울임꼴 또는 굵게 기울임꼴<br />-본문 텍스트 사용<br />-표준 Visual Studio 컨트롤에서 사용 합니다.<br />-도구 창에서 사용 합니다.|**다음과 같이 나타납니다.** 14pt Segoe UI<br /><br /> **예를 보여 줍니다.**<br /><br /> ![155% 환경 글꼴 제목의 예](../../extensibility/ux-guidelines/media/0202-c_ef155.png "0202 c_EF155")|  
   
 #### <a name="133-environment-font"></a>133% 환경 글꼴  
   
 |||  
 |-|-|  
-|**사용법:**<br /><br /> 서명 대화 상자에서 더 작은 부제목<br />문서에서 더 작은 부제목 및 UI<br /><br /> **수행 합니다.** 문장의 첫 글자를 사용 합니다.<br /><br /> **안 함:**<br /><br /> -굵게, 기울임꼴 또는 굵게 기울임꼴<br />-본문 텍스트 사용<br />-표준 Visual Studio 컨트롤에서 사용 합니다.<br />-도구 창에서 사용 합니다.|**으로 표시 됩니다:** 12pt Segoe UI<br /><br /> **예를 보여 줍니다.**<br /><br /> ![133% 환경 글꼴 제목의 예](../../extensibility/ux-guidelines/media/0202-d_ef133.png "0202 d_EF133")|  
+|**사용법:**<br /><br /> 서명 대화 상자에서 더 작은 부제목<br />문서에서 더 작은 부제목 및 UI<br /><br /> **수행 합니다.** 문장의 첫 글자를 사용 합니다.<br /><br /> **안 함:**<br /><br /> -굵게, 기울임꼴 또는 굵게 기울임꼴<br />-본문 텍스트 사용<br />-표준 Visual Studio 컨트롤에서 사용 합니다.<br />-도구 창에서 사용 합니다.|**다음과 같이 나타납니다.** 12pt Segoe UI<br /><br /> **예를 보여 줍니다.**<br /><br /> ![133% 환경 글꼴 제목의 예](../../extensibility/ux-guidelines/media/0202-d_ef133.png "0202 d_EF133")|  
   
 #### <a name="122-environment-font"></a>122% 환경 글꼴  
   
 |||  
 |-|-|  
-|**사용법:**<br /><br /> 대화 상자에서 서명 섹션 제목<br />-트리 뷰에서 상위 노드<br />-세로 탭 탐색<br /><br /> **수행 합니다.** 문장의 첫 글자를 사용 합니다.<br /><br /> **안 함:**<br /><br /> -굵게, 기울임꼴 또는 굵게 기울임꼴<br />-본문 텍스트 사용<br />-표준 Visual Studio 컨트롤에서 사용 합니다.<br />-도구 창에서 사용 합니다.|**으로 표시 됩니다:** 11 pt Segoe UI<br /><br /> **예를 보여 줍니다.**<br /><br /> ![122% 환경 글꼴 제목의 예](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202 e_EF122")|  
+|**사용법:**<br /><br /> 대화 상자에서 서명 섹션 제목<br />-트리 뷰에서 상위 노드<br />-세로 탭 탐색<br /><br /> **수행 합니다.** 문장의 첫 글자를 사용 합니다.<br /><br /> **안 함:**<br /><br /> -굵게, 기울임꼴 또는 굵게 기울임꼴<br />-본문 텍스트 사용<br />-표준 Visual Studio 컨트롤에서 사용 합니다.<br />-도구 창에서 사용 합니다.|**다음과 같이 나타납니다.** 11 pt Segoe UI<br /><br /> **예를 보여 줍니다.**<br /><br /> ![122% 환경 글꼴 제목의 예](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202 e_EF122")|  
   
 #### <a name="environment-font--bold"></a>환경 글꼴 + 굵게  
   
@@ -454,7 +451,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
 |||  
 |-|-|  
-|**사용법:** 다른 모든 텍스트<br /><br /> **수행 합니다.** 문장의 첫 글자를 사용 합니다.<br /><br /> **안 함:** 기울임꼴 또는 굵게 기울임꼴|**으로 표시 됩니다:** 9 pt Segoe UI<br /><br /> **예를 보여 줍니다.**<br /><br /> ![환경 글꼴의 예](../../extensibility/ux-guidelines/media/0202-g_ef.png "0202 g_EF")|  
+|**사용법:** 다른 모든 텍스트<br /><br /> **수행 합니다.** 문장의 첫 글자를 사용 합니다.<br /><br /> **안 함:** 기울임꼴 또는 굵게 기울임꼴|**다음과 같이 나타납니다.** 9 (태평양 표준시) Segoe UI<br /><br /> **예를 보여 줍니다.**<br /><br /> ![환경 글꼴의 예](../../extensibility/ux-guidelines/media/0202-g_ef.png "0202 g_EF")|  
   
 ### <a name="padding-and-spacing"></a>안쪽 여백 및 간격  
  머리글에는 적절 한 강조를 제공 하도록 주위에 공간이 필요 합니다. 이 공간은 포인트 크기 및 다른 새로운 수평선 등 환경 글꼴의 텍스트 줄을 머리글 근처에 따라 달라 집니다.  

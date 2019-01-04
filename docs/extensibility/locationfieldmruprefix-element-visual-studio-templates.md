@@ -1,6 +1,5 @@
 ---
 title: LocationFieldMRUPrefix 요소 (Visual Studio 템플릿) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8460b3c13ce04976b65393964d74f6a7010798d
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 9ece3ed2671a24c60a59adaae33871cda975c517
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561436"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887054"
 ---
 # <a name="locationfieldmruprefix-element-visual-studio-templates"></a>LocationFieldMRUPrefix 요소 (Visual Studio 템플릿)
 가장 최근에 사용한 (MRU) 경로 지정 합니다 **새 프로젝트** 하 고 **새 항목 추가** 대화 상자.  

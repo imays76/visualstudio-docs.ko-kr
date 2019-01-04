@@ -1,9 +1,6 @@
 ---
 title: IManagedAddin::Load
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -14,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d1ea659d59e780beba3949e7cae363affa312c17
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 67a1f330862ad6156d85a8f86afcfe863d776850
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675502"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924451"
 ---
 # <a name="imanagedaddinload"></a>IManagedAddin::Load
   관리되는 VSTO 추가 기능이 로드되면 호출됩니다.  
@@ -46,10 +43,8 @@ HRESULT Load([in] BSTR bstrManifestURL,
   
  *bstrManifestURL* 의 값을 포함 하는 매개 변수를 `Manifest` 아래 항목을 **HKEY_CURRENT_USER\Software\Microsoft\Office\\_\<응용 프로그램 이름 >_ \Addins\\_\<-add-in ID >_**  VSTO 추가 기능에 대 한 레지스트리 키입니다. 자세한 내용은 [IManagedAddin 인터페이스](../vsto/imanagedaddin-interface.md)합니다.  
   
- [IManagedAddIn::Load](../vsto/imanagedaddin-load.md) 메서드를 구현하여 로드되는 VSTO 추가 기능을 위한 응용 프로그램 도메인 및 보안 정책 구성 등의 작업을 수행합니다.  
+ [IManagedAddIn::Load](../vsto/imanagedaddin-load.md) 메서드를 구현하여 로드되는 VSTO 추가 기능을 위한 애플리케이션 도메인 및 보안 정책 구성 등의 작업을 수행합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [IManagedAddin Interface](../vsto/imanagedaddin-interface.md)   
  [IManagedAddin::Unload](../vsto/imanagedaddin-unload.md)  
-  
-  

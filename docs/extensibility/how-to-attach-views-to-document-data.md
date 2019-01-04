@@ -1,9 +1,6 @@
 ---
 title: '방법: 문서 데이터에 보기 연결 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - attach views to document data
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46b41c9432970eb9373a80a4e42a92ce82fe9186
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 38818faa83f1fe901c5c3b19786aff8b3935f3b2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821346"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870101"
 ---
 # <a name="how-to-attach-views-to-document-data"></a>방법: 문서 데이터에 보기 연결
 새 문서 보기에 있는 경우에 기존 문서 데이터 개체에 연결할 수 있습니다.  
@@ -45,6 +42,6 @@ ms.locfileid: "49821346"
 ## <a name="robust-programming"></a>강력한 프로그래밍  
  Visual Studio의 사용자 구현을 호출 하는 경우는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> 메서드를 전달 다시에 대 한 포인터를 기존 문서 데이터 개체에는 `punkDocDataExisting` 있으면 매개 변수입니다. 반환 하는 문서 데이터 개체를 검사 `punkDocDataExisting` 문서 데이터 개체를이 항목의 절차의 4 단계에서 참고에 설명 된 대로 편집기에 대 한 적절 한 경우를 확인 합니다. 적절 한 경우에 설명 된 대로 편집기 팩터리의 데이터에 대 한 두 번째 보기를 제공 해야 [여러 문서 보기 지원](../extensibility/supporting-multiple-document-views.md)합니다. 그렇지 않은 경우 다음 적절 한 오류 메시지가 표시 됩니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [여러 문서 보기를 지원 합니다.](../extensibility/supporting-multiple-document-views.md)   
  [문서 데이터 및 사용자 지정 편집기의 문서 뷰](../extensibility/document-data-and-document-view-in-custom-editors.md)

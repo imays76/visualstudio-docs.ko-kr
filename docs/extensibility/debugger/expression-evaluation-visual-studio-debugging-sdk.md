@@ -1,9 +1,6 @@
 ---
 title: 식 계산 (Visual Studio 디버깅 SDK) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52c897e40b825f85e07b4b4f14796655618280a8
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: bdd8937963175ffe0e8cadbfe2f6653b16a1f5a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39230736"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888727"
 ---
 # <a name="expression-evaluation-visual-studio-debugging-sdk"></a>식 계산 (Visual Studio 디버깅 SDK)
 IDE는 중단 모드에서는 여러 프로그램 변수를 포함 하는 간단한 식 평가 해야 합니다. 평가 위해 디버그 엔진 (DE) 구문 분석 하 고 IDE의 창 중 하나에 입력 한 식을 계산 해야 합니다. 
@@ -36,10 +33,10 @@ IDE는 중단 모드에서는 여러 프로그램 변수를 포함 하는 간단
 |메서드|설명|  
 |------------|-----------------|  
 |[EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)|비동기적으로 식을 계산합니다.|  
-|[중단](../../extensibility/debugger/reference/idebugexpression2-abort.md)|비동기 식 평가 종료 합니다.|  
+|[Abort](../../extensibility/debugger/reference/idebugexpression2-abort.md)|비동기 식 평가 종료 합니다.|  
 |[EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)|동기적으로 식을 계산합니다.|  
   
  동기 및 비동기 평가 구현 해야 합니다 [IDebugProperty2::GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) 메서드. 비동기 식 계산의 구현이 필요 [IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [실행 제어 및 상태 평가](../../extensibility/debugger/execution-control-and-state-evaluation.md)

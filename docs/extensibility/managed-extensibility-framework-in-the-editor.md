@@ -1,9 +1,6 @@
 ---
 title: Managed Extensibility Framework 편집기에서 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - using MEF for extensions
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5ea47032ed2c5e4fb9b99afb214e068ca39d692
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a295d3e3474f478cf3a2aa3efc2e0cefc3086b00
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857525"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925669"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>편집기에서 managed Extensibility Framework
 편집기는 프레임 워크 MEF (Managed Extensibility) 구성 요소를 사용 하 여 빌드됩니다. 사용자 고유의 MEF 구성 요소 편집기를 확장을 빌드하고 코드 편집기 구성 요소도 사용할 수 있습니다.  
@@ -105,5 +102,5 @@ internal IClassificationTypeRegistryService ClassificationRegistry;
   
 5.  경우에 배치 하 여 어셈블리를 컴파일한는 *... \Common7\IDE\Components\* Visual Studio 설치의 폴더입니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [언어 서비스 및 편집기 확장 지점](../extensibility/language-service-and-editor-extension-points.md)

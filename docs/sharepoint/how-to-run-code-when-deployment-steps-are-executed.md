@@ -1,9 +1,6 @@
 ---
-title: '방법: 실행 코드 배포 단계가 진행 될 때 실행 됩니다 | Microsoft Docs'
-ms.custom: ''
+title: '방법: 실행된 코드 배포 단계가 진행 될 때 실행 됩니다 | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cebd88cc49afa1092dfcd1d67ffdbf0fa3567ad0
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 62ab9019eb9722baca523aeff00b4ed511039497
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119768"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883258"
 ---
 # <a name="how-to-run-code-when-deployment-steps-are-executed"></a>방법: 배포 단계를 실행할 때 코드를 실행 합니다.
   SharePoint 프로젝트의 배포 단계에 대 한 추가 작업을 수행 하려는 경우에 Visual Studio는 각 배포 단계를 실행 한 후 및 하기 전에 SharePoint 프로젝트 항목에 의해 발생 하는 이벤트를 처리할 수 있습니다. 자세한 내용은 [확장 SharePoint 패키징 및 배포](../sharepoint/extending-sharepoint-packaging-and-deployment.md)합니다.  
@@ -39,7 +36,7 @@ ms.locfileid: "37119768"
   
 3.  이벤트 처리기를 사용 합니다 <xref:Microsoft.VisualStudio.SharePoint.DeploymentStepStartedEventArgs> 및 <xref:Microsoft.VisualStudio.SharePoint.DeploymentStepCompletedEventArgs> 배포 단계에 대 한 정보를 가져오려면 매개 변수입니다. 예를 들어, 어떤 배포 단계가 실행 되 고 솔루션 되 고 있는지 여부를 확인할 수 있습니다 배포 되거나 취소 합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드 예제에서는 처리 하는 방법에 설명 합니다 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> 및 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepCompleted> 목록 인스턴스 프로젝트 항목에 대 한 확장에는 이벤트입니다. 이 확장 추가 메시지를 기록 합니다 **출력** 배포 및 솔루션을 제거 하는 동안 응용 프로그램 풀을 재생 하는 Visual Studio 창.  
   
  [!code-vb[SPExtensibility.ProjectSystemExtension.General#4](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/handledeploymentstepevents.vb#4)]
@@ -58,6 +55,4 @@ ms.locfileid: "37119768"
 ## <a name="see-also"></a>참고자료
  [SharePoint 패키징 및 배포 확장](../sharepoint/extending-sharepoint-packaging-and-deployment.md)   
  [연습: SharePoint 프로젝트용 사용자 지정 배포 단계 만들기](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)   
- [방법: SharePoint 프로젝트가 배포 되거나 취소 하는 경우 코드를 실행 합니다.](../sharepoint/how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted.md)  
-  
-  
+ [방법: SharePoint 프로젝트는 배포 되거나 취소 될 때 코드를 실행 합니다.](../sharepoint/how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted.md)  

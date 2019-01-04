@@ -1,9 +1,6 @@
 ---
 title: SharePoint 솔루션 문제 해결 | Microsoft Docs
-ms.custom: ''
 ms.date: 02/22/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - Microsoft.VisualStudio.Tools.SharePoint.Errors.Debugging
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 103595772c5597eadb251e1d21befba88df2c9d2
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 0e72b1f8a7ca76aa2b3afd68041c500b24efd8db
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803203"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53957964"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>SharePoint 솔루션 문제 해결
   다음 문제 또는 경고를 사용 하 여 SharePoint 솔루션을 디버깅할 때 발생할 수 있습니다는 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 디버거. 자세한 내용은 [SharePoint 2007 워크플로 솔루션 디버깅](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247)합니다.
@@ -280,7 +277,7 @@ ms.locfileid: "53803203"
 ### <a name="resolution"></a>해결
  이 문제를 해결하려면 Visual Studio에서 SharePoint 프로젝트의 사이트 URL 속성 값이 웹 응용 프로그램의 대체 액세스 매핑에 대한 기본 영역에 할당된 URL과 일치하는지 확인합니다. 인트라넷 등의 다른 영역을 URL에 사용하여 오류를 해결할 수 없습니다. 프로젝트의 사이트 URL과 기본 영역의 URL은 일치해야 합니다. 대체 액세스 매핑에 액세스 하려면 SharePoint 2010 중앙 관리 유틸리티를 열어를 선택 합니다 **응용 프로그램 관리** 링크를 차례로 **웹 응용 프로그램**, 선택는  **대체 액세스 매핑 구성** 링크 합니다. 자세한 내용은 [웹 응용 프로그램에 대 한 영역을 만들](http://go.microsoft.com/fwlink/?LinkId=192274)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [SharePoint 패키징 및 배포 문제 해결](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)
 - [SharePoint 솔루션 빌드 및 디버그](../sharepoint/building-and-debugging-sharepoint-solutions.md)

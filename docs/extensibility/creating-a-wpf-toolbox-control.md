@@ -1,9 +1,6 @@
 ---
 title: WPF 도구 상자 컨트롤 만들기 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - toolbox control
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 43734720a4e86f9f1e214285df1873b39b67fa01
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 07ab3bc10bd755a768c80e53c96ad133ecce08a3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500334"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847544"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>WPF 도구 상자 컨트롤 만들기
 WPF (Windows Presentation Framework) 도구 상자 컨트롤 템플릿을 통해 자동으로 추가 되는 WPF 컨트롤을 만들 수는 **도구 상자** 확장이 설치 되는 경우. 이 항목에서는 템플릿을 사용 하 여 만드는 방법을 보여 줍니다.는 **도구 상자** 컨트롤을 다른 사용자에 게 배포할 수 있습니다.  
@@ -41,7 +38,7 @@ WPF (Windows Presentation Framework) 도구 상자 컨트롤 템플릿을 통해
   
 1.  오픈 *MyToolboxControl.xaml* 디자이너에서 합니다.  
   
-     디자이너 표시를 <xref:System.Windows.Controls.Grid> 포함 된 컨트롤을 <xref:System.Windows.Controls.Button> 제어 합니다.  
+     디자이너에 <xref:System.Windows.Controls.Button> 컨트롤이 포함된 <xref:System.Windows.Controls.Grid> 컨트롤이 표시됩니다.  
   
 2.  표 형태 레이아웃을 정렬 합니다. 선택 하는 경우는 <xref:System.Windows.Controls.Grid> 그리드의 왼쪽된 위 가장자리에 표시 하는 파란색 컨트롤 막대를 제어 합니다. 막대를 클릭 하 여 표에 행과 열을 추가할 수 있습니다.  
   
@@ -84,7 +81,7 @@ WPF (Windows Presentation Framework) 도구 상자 컨트롤 템플릿을 통해
   
 1.  프로젝트를 다시 작성 하 고 디버깅을 시작 합니다.  
   
-2.  Visual Studio의 새 인스턴스에서 WPF 응용 프로그램 프로젝트를 만듭니다. XAML 디자이너가 열려 있는지 확인 합니다.  
+2.  Visual Studio의 새 인스턴스에서 WPF 애플리케이션 프로젝트를 만듭니다. XAML 디자이너가 열려 있는지 확인 합니다.  
   
 3.  **도구 상자** 에서 컨트롤을 찾아 디자인 화면으로 끕니다.  
   

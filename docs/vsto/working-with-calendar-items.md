@@ -1,9 +1,6 @@
 ---
 title: 달력 항목 작업
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 199665d7cce60034c2b998b6c67fbc1623c43307
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: a087f0c11dfe1723a53fe04fc3b44c9212b60f24
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258595"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887921"
 ---
 # <a name="work-with-calendar-items"></a>달력 항목 작업
   <xref:Microsoft.Office.Interop.Outlook.AppointmentItem> 클래스에는 달력 항목이 있는 작업을 수행하는 데 사용하는 메서드 및 속성이 포함됩니다.  
@@ -45,5 +42,3 @@ ms.locfileid: "35258595"
  [폴더 작업](../vsto/working-with-folders.md)   
  [메일 항목 작업](../vsto/working-with-mail-items.md)   
  [Outlook 솔루션](../vsto/outlook-solutions.md)  
-  
-  

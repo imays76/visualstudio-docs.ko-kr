@@ -1,6 +1,5 @@
 ---
 title: 요소 (Visual Studio 템플릿)를 참조 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa4b760f9762c07ede4a21dbb37d00ef9f84dd59
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: b0da362b5c054ba5bb9b7266a3508ea73ca8dcaf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561985"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53884571"
 ---
 # <a name="references-element-visual-studio-templates"></a>References 요소 (Visual Studio 템플릿)
 서식 파일 프로젝트에 추가 하는 어셈블리 참조를 그룹화 합니다.  
@@ -83,6 +82,6 @@ ms.locfileid: "53561985"
 </TemplateContent>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)   
  [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

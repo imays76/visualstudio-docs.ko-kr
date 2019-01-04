@@ -1,9 +1,6 @@
 ---
 title: Visual Studio의 다른 부분 확장 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - user interfaces
@@ -13,18 +10,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8cad30462879240fd6691c3a7a5a15ea69856b7d
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: f49d2e10b61bac39941a12f5617fc313f17c208f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639528"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967283"
 ---
 # <a name="extend-other-parts-of-visual-studio"></a>Visual Studio의 다른 부분 확장
 확장할 수 있는 Visual Studio UI의 더 많은 부분이 있습니다. 여기에서는 보여줍니다 일부에 불과합니다.  
   
 ## <a name="create-a-vspackage"></a>VSPackage를 만듭니다  
- Visual Studio 확장성의 기본 구성 요소에는 Vspackage는 합니다.  VSPackage를 추가 하는 방법 알아보기: [VSPackage를 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-vspackage.md)  
+ Visual Studio 확장성의 기본 구성 요소에는 Vspackage는 합니다.  VSPackage를 추가 하는 방법에 알아봅니다. [VSPackage를 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-vspackage.md)  
   
 ## <a name="extend-the-toolbox"></a>도구 상자 확장  
  도구 상자에 새 컨트롤 및 기타 항목을 추가 하는 방법 및 도구 상자 기능을 사용 하는 방법에 알아봅니다.  
@@ -34,10 +31,10 @@ ms.locfileid: "39639528"
 -   [Windows Forms 도구 상자 컨트롤 만들기](../extensibility/creating-a-windows-forms-toolbox-control.md)  
   
 ## <a name="extend-the-status-bar"></a>상태 표시줄 확장  
- 상태 표시줄 및 진행률 표시줄에 읽기 및 쓰기 방법 및 애니메이션 및 기타 UI를 제공 하는 방법에 알아봅니다: [상태 표시줄 확장](../extensibility/extending-the-status-bar.md)합니다.  
+ 상태 표시줄 및 진행률 표시줄에 읽기 및 쓰기 방법 및 애니메이션 및 기타 UI를 제공 하는 방법에 알아봅니다. [상태 표시줄 확장](../extensibility/extending-the-status-bar.md)합니다.  
   
 ## <a name="create-custom-start-pages"></a>사용자 지정 시작 페이지 만들기  
- 사용자 고유의 시작 페이지를 처음부터 만들거나 다운로드할 수 있는 시작 페이지 샘플에서 확인 하는 방법을 알아봅니다: [사용자 지정 시작 페이지를 만들려면](../extensibility/creating-a-custom-start-page.md)합니다.  
+ 사용자 고유의 시작 페이지를 처음부터 만들거나 다운로드할 수 있는 시작 페이지 샘플에서 확인 하는 방법에 알아봅니다. [사용자 지정 시작 페이지를 만들려면](../extensibility/creating-a-custom-start-page.md)합니다.  
   
 ## <a name="write-to-the-activity-log"></a>활동 로그에 쓰기  
- 활동 로그에 작성 하는 방법을 알아봅니다: [방법: 활동 로그를 사용 하 여](../extensibility/how-to-use-the-activity-log.md)입니다.
+ 활동 로그에 작성 하는 방법에 알아봅니다. [방법: 활동 로그를 사용 하 여](../extensibility/how-to-use-the-activity-log.md)입니다.

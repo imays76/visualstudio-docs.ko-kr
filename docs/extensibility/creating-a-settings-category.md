@@ -1,9 +1,6 @@
 ---
 title: Creating a Settings Category | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - profile settings, creating categories
@@ -13,16 +10,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66667b97ef10d6b07bef3e8c1c3b19842a07482e
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 4653883dbb9d82fd23d5188a2a247db0ec6b69cd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388666"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935621"
 ---
 # <a name="create-a-settings-category"></a>설정 범주 만들기
 
-이 연습에서는 Visual Studio 설정 범주를 만들고 값을 저장 하 고 설정 파일에서 값을 복원 하려면 사용 합니다. 설정 범주는 "사용자 지정 설정 지점;"으로 표시 되는 관련된 속성의 그룹 즉,에서 확인란으로는 **가져오기 및 내보내기 설정을** 마법사. (에서 찾을 수 있습니다 합니다 **도구** 메뉴.) 설정 저장 되거나, 범주로 서 복원 되 고 개별 설정 마법사에 표시 되지 않습니다. 자세한 내용은 [환경 설정을](../ide/environment-settings.md)합니다.
+이 연습에서는 Visual Studio 설정 범주를 만들고 값을 저장 하 고 설정 파일에서 값을 복원 하려면 사용 합니다. 설정 범주는 "사용자 지정 설정 지점;"으로 표시 되는 관련된 속성의 그룹 즉,에서 확인란으로는 **가져오기 및 내보내기 설정을** 마법사. (에서 찾을 수 있습니다 합니다 **도구** 메뉴.) 설정 저장 되거나, 범주로 서 복원 되 고 개별 설정 마법사에 표시 되지 않습니다. 자세한 내용은 [환경 설정](../ide/environment-settings.md)을 참조하세요.
 
 파생 시켜 설정 범주를 만들면는 <xref:Microsoft.VisualStudio.Shell.DialogPage> 클래스입니다.
 
@@ -101,7 +98,7 @@ ms.locfileid: "52388666"
 
 4.  값을 변경 **OptionFloat** 3.1416입니다 하 고 **OptionInteger** 12입니다. **확인**을 클릭합니다.
 
-5.  에 **도구** 메뉴에서 클릭 **설정 가져오기 및 내보내기**합니다.
+5.  **도구** 메뉴에서 **설정 가져오기 및 내보내기**를 선택합니다.
 
      합니다 **설정 가져오기 및 내보내기** 마법사가 나타납니다.
 

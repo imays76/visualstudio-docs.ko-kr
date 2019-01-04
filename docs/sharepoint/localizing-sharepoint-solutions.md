@@ -1,16 +1,11 @@
 ---
 title: SharePoint 솔루션 지역화 | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.GlobalAndFeatureResource
 - VS.SharePoint.Project.AddResourceDialog
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3897efa937991b598f6aae1cf24781ab2ce26c37
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: b653efc0cce8d8fb2b3e28b8e6c61e6371b4f6e9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684745"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837358"
 ---
 # <a name="localize-sharepoint-solutions"></a>SharePoint 솔루션 지역화
 
@@ -91,7 +86,7 @@ $Resources:String ID
 <asp:<class> runat="server" Text="<%$Resources:<Resource File Name>, <String ID>%>" />  
 ```  
   
- 예를 들면 다음과 같습니다.  
+ 예를 들어:  
   
 ```aspx-csharp  
 <asp:Button ID="btn1" runat="server" onclick="btn1_Click" Text="<%$Resources:Resource1,String7%>"></asp:Button>  
@@ -103,7 +98,7 @@ $Resources:String ID
 <asp:literal ID="<ID>" runat="server" Text="<%$Resources:<Resource File Name>, <String ID>%>" />  
 ```  
   
- 예를 들면 다음과 같습니다.  
+ 예를 들어:  
   
 ```aspx-csharp  
 <asp:literal ID="Literal1" runat="server" Text="<%$Resources:Resource1, String9%>" />  
@@ -133,7 +128,7 @@ HttpContext.GetGlobalResourceObject("<Resource File Name>", "<String ID>")
   
  파생된 클래스에서 리소스 파일 및 문자열 ID에 대 한 지역화 된 값을 가져오려고 ResourceManager 개체에서 문자열 ID 참조 속성 편집기 특성에이 값을 반환 합니다.  
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
  [방법: 기능 지역화](../sharepoint/how-to-localize-a-feature.md)   
  [방법: ASPX 태그 지역화](../sharepoint/how-to-localize-aspx-markup.md)   
  [방법: 코드 지역화](../sharepoint/how-to-localize-code.md)   

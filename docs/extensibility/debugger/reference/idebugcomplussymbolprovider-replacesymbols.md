@@ -1,9 +1,6 @@
 ---
 title: IDebugComPlusSymbolProvider::ReplaceSymbols | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - ReplaceSymbols
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d67626778aefe67c5f0973da8b74fc0b7e776ebb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 745066b7300a17cfb82cd4d6110c7f91086c80a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876154"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843754"
 ---
 # <a name="idebugcomplussymbolproviderreplacesymbols"></a>IDebugComPlusSymbolProvider::ReplaceSymbols
 지정된 된 데이터 스트림에 있는 현재 디버그 기호를 바꿉니다.  

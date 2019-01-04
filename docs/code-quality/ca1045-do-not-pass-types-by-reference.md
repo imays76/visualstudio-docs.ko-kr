@@ -1,8 +1,7 @@
 ---
-title: 'CA1045: 참조로 참조 형식을 전달하지 않습니다.'
+title: 'CA1045: 참조로 형식을 전달하지 마세요.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1045
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ee365dd36a3a88b896fe9ec6e2f676b4e29bf1e
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: b2516387f6de81eef2f68d521652aa85ce521aea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547843"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53839059"
 ---
-# <a name="ca1045-do-not-pass-types-by-reference"></a>CA1045: 참조로 참조 형식을 전달하지 않습니다.
+# <a name="ca1045-do-not-pass-types-by-reference"></a>CA1045: 참조로 형식을 전달하지 마세요.
 
 |||
 |-|-|
@@ -89,4 +88,4 @@ Passing by return value:
 ```
 
 ## <a name="related-rules"></a>관련된 규칙
- [CA1021: out 매개 변수를 사용하지 마십시오.](../code-quality/ca1021-avoid-out-parameters.md)
+ [CA1021: Out 매개 변수를 방지](../code-quality/ca1021-avoid-out-parameters.md)

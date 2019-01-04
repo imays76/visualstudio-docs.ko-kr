@@ -2,7 +2,6 @@
 title: 코드 메트릭 계산
 ms.date: 11/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - code metrics [Visual Studio]
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b56db0d54e198e0d6d25b19db528ac979a3d44b4
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4be2b3672741d0bcae64085d1140e5c2ae2bbf63
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056774"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855574"
 ---
 # <a name="code-metrics-values"></a>코드 메트릭 값
 
@@ -24,7 +23,7 @@ ms.locfileid: "53056774"
 
 개발자는 복잡 하 고 관리 코드의 유지 관리 편의성을 측정 하는 코드 메트릭 데이터를 생성 하려면 Visual Studio를 사용할 수 있습니다. 전체 솔루션 또는 단일 프로젝트에 대해 코드 메트릭 데이터를 생성할 수 있습니다.
 
-Visual Studio에서 코드 메트릭 데이터를 생성 하는 방법에 대 한 정보를 참조 하세요 [방법: 코드 메트릭 데이터 생성](../code-quality/how-to-generate-code-metrics-data.md)합니다.
+Visual Studio에서 코드 메트릭 데이터를 생성 하는 방법에 대 한 정보를 참조 하세요. [방법: 코드 메트릭 데이터 생성](../code-quality/how-to-generate-code-metrics-data.md)합니다.
 
 ## <a name="software-measurements"></a>소프트웨어 측정
 

@@ -1,9 +1,6 @@
 ---
 title: Office 솔루션에 신뢰를 부여
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 49b2e66f35bf320d6eca04fd1b171a5e0c65132e
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 1acc6f73dd52bacdfd62aff3b2da62e559c4fda6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804788"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890471"
 ---
 # <a name="grant-trust-to-office-solutions"></a>Office 솔루션에 신뢰를 부여
   Office 솔루션으로 각 대상 컴퓨터의 보안 정책을 수정 신뢰 솔루션 어셈블리, 응용 프로그램 매니페스트, 배포 매니페스트 및 문서에 신뢰를 부여 합니다. 또는 최종 사용자 Office 솔루션에 신뢰를 부여할 수 있습니다.

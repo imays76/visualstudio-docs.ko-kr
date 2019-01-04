@@ -1,9 +1,6 @@
 ---
 title: SccBeginBatch 함수 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccBeginBatch
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9593496f36fba4a56334a206cf39e9a6ad96ad2
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: c2e0ae1dd4d01018d9637e5722d8079222afbf3c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639791"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869128"
 ---
 # <a name="sccbeginbatch-function"></a>SccBeginBatch 함수
 이 함수는 소스 제어 작업의 일괄 처리 시퀀스를 시작합니다. 합니다 [SccEndBatch](../extensibility/sccendbatch-function.md) 일괄 처리를 종료 하도록 호출 됩니다. 이러한 일괄 처리를 중첩할 수 있습니다.  
@@ -47,6 +44,6 @@ SCCRTN SccBeginBatch(void);
   
  일괄 처리 작업을 적용 하는 동안 소스 제어 플러그 인 사용자에 게 최대 모든 질문에 대 한 하나의 대화 상자를 표시 하 고 모든 후속 작업에서 해당 대화 상자에서 응답을 적용 해야 합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [원본 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)   
  [SccEndBatch](../extensibility/sccendbatch-function.md)

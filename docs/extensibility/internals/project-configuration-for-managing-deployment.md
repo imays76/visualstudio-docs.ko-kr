@@ -1,9 +1,6 @@
 ---
 title: 배포를 관리 하는 것에 대 한 프로젝트 구성 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project configurations, managing deployment
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d3f632f7b271e3272a38dd79653b4c2ff238220
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 02b7f04afc666fb842414c8a46793eb3178fe404
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951537"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852588"
 ---
 # <a name="project-configuration-for-managing-deployment"></a>배포 관리를 위한 프로젝트 구성
 배포는 물리적으로 디버깅 및 설치에 대 한 예상 되는 위치를 빌드 프로세스에서 출력 항목을 이동 하는 행위. 예를 들어, 웹 응용 프로그램을 로컬 컴퓨터에서 작성 및 서버에 배치 될 수 있습니다.  

@@ -1,9 +1,6 @@
 ---
 title: IDebugDocumentContext2::EnumCodeContexts | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugDocumentContext2::EnumCodeContexts
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a56f4b33c8a07437d255ab0d29b6f6b2cb81267
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 05ae1c136997cd6ae564a9bc0526d908bb8016b7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948007"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929765"
 ---
 # <a name="idebugdocumentcontext2enumcodecontexts"></a>IDebugDocumentContext2::EnumCodeContexts
 이 문서 컨텍스트와 연결 된 모든 코드 컨텍스트 목록을 검색 합니다.  
@@ -28,13 +25,13 @@ ms.locfileid: "49948007"
 ## <a name="syntax"></a>구문  
   
 ```cpp  
-HRESULT EnumCodeContexts(   
+HRESULT EnumCodeContexts(   
    IEnumDebugCodeContexts2** ppEnumCodeCxts  
 );  
 ```  
   
 ```csharp  
-int EnumCodeContexts(   
+int EnumCodeContexts(   
    out IEnumDebugCodeContexts2 ppEnumCodeCxts  
 );  
 ```  

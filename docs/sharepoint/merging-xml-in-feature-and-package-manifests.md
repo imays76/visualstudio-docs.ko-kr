@@ -1,9 +1,6 @@
 ---
 title: 매니페스트 XML 기능 및 패키지 병합 | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,18 +12,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d3101245d720e9fdd1c4923ea03acd5b2d4db816
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 30c339bf38f8fc873b27b9c213fad21d66fb9fa7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119797"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914438"
 ---
 # <a name="merge-xml-in-feature-and-package-manifests"></a>기능 및 패키지 매니페스트에서 XML 병합
   기능과 패키지 정의한 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 매니페스트 파일. 이러한 패키지 매니페스트 디자이너와 사용자 지정에서 생성 된 데이터의 조합인 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 가 매니페스트 템플릿을 입력 합니다. 패키징 시 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 사용자 지정 병합 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 디자이너 제공를 사용 하 여 문을 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 하 여 패키지 된 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 매니페스트 파일. 유사한 요소 병합 예외의 뒷부분에 설명 된 예외를 사용 하 여 병합 하지 않으려면 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 유효성 검사 오류를 SharePoint에 파일을 배포한 후 더 작고 효율적으로 파일 매니페스트를 확인 합니다.  
   
 ## <a name="modify-the-manifests"></a>매니페스트를 수정 합니다.
- 기능 또는 패키지 디자이너를 사용 하지 않도록 설정 될 때까지 패키지 매니페스트 파일은 직접 수정할 수 없습니다. 사용자 지정을 수동으로 추가할 수 있지만 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 매니페스트 템플릿 요소 기능 및 패키지 디자이너를 통해 또는 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 편집기입니다. 자세한 내용은 참조 하세요. [방법: Customize a SharePoint Feature](../sharepoint/how-to-customize-a-sharepoint-feature.md) 하 고 [방법: SharePoint 솔루션 패키지 사용자 지정](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)합니다.  
+ 기능 또는 패키지 디자이너를 사용 하지 않도록 설정 될 때까지 패키지 매니페스트 파일은 직접 수정할 수 없습니다. 사용자 지정을 수동으로 추가할 수 있지만 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 매니페스트 템플릿 요소 기능 및 패키지 디자이너를 통해 또는 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 편집기입니다. 자세한 내용은 [방법: Customize a SharePoint Feature](../sharepoint/how-to-customize-a-sharepoint-feature.md) 고 [방법: SharePoint 솔루션 패키지 사용자 지정](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)합니다.  
   
 ## <a name="feature-and-package-manifest-merge-process"></a>기능 및 패키지 매니페스트 병합 프로세스
  디자이너에서 제공 요소와 함께 사용자 지정 요소를 결합 하는 경우 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 다음 프로세스를 사용 합니다. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 각 요소에 고유한 키 값이 있는지 여부를 확인 합니다. 요소에 고유한 키 값이 없으면 요소가 패키지된 매니페스트 파일에 추가됩니다. 이와 마찬가지로 여러 키가 있는 요소는 병합될 수 없으므로 따라서 매니페스트 파일에 추가 됩니다.  
@@ -54,8 +51,8 @@ ms.locfileid: "37119797"
 |ElementFile|위치|  
 |한 ElementManifests/ElementManifest|위치|  
 |속성/속성|Key|  
-|CustomUpgradeAction|name|  
-|CustomUpgradeActionParameter|name|  
+|CustomUpgradeAction|이름|  
+|CustomUpgradeActionParameter|이름|  
   
 > [!NOTE]  
 >  CustomUpgradeAction 요소를 수정 하는 유일한 방법은 사용자 지정 이므로 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 편집기 없습니다를 병합 한 결과 부족 합니다.  
@@ -83,5 +80,4 @@ ms.locfileid: "37119797"
   
 ## <a name="see-also"></a>참고자료
  [패키지 및 SharePoint 솔루션 배포](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)   
- [빌드 및 SharePoint 솔루션 디버깅](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
-  
+ [SharePoint 솔루션 빌드 및 디버그](../sharepoint/building-and-debugging-sharepoint-solutions.md)  

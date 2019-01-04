@@ -1,9 +1,6 @@
 ---
 title: CreatePkgDef 유틸리티 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - package definition
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47fee24292ee92b34cea6add21bc220a1a17f135
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c5c18e77405cd4e48c89d3b481937c7d837488cd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867665"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910937"
 ---
 # <a name="createpkgdef-utility"></a>CreatePkgDef 유틸리티
 만들고 매개 변수로 Visual Studio 확장명.dll 파일을 *.pkgdef* 함께 파일을 *.dll* 파일입니다. 합니다 *.pkgdef* 파일 그렇지 않으면 작성 될 수 있는 시스템 레지스트리에 확장을 설치할 때 모든 정보를 포함 합니다.  
@@ -37,7 +34,7 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
   
 ## <a name="arguments"></a>인수  
  **/ = 아웃&lt;파일 이름&gt;**  
- 필수. 이름을 가져오거나 설정 합니다 *.pkgdef* 출력 파일을 &lt;FileName&gt;합니다.  
+ 필수 요소. 이름을 가져오거나 설정 합니다 *.pkgdef* 출력 파일을 &lt;FileName&gt;합니다.  
   
  **/codebase**  
  선택 사항입니다. 등록을 강제로 수행 합니다 **코드 베이스** 유틸리티입니다.  
@@ -64,5 +61,5 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
 > [!NOTE]
 >  합니다 **확장 및 업데이트** VSIX 패키지의 일부로 설치 되어 있지 않으면 확장에 액세스 하는 도구를 사용할 수 없습니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [CreateExpInstance 유틸리티](../../extensibility/internals/createexpinstance-utility.md)

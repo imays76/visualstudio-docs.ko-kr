@@ -1,17 +1,12 @@
 ---
 title: 기존 SharePoint 사이트에서 항목 가져오기 | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.WSPImport.SelectionDependency
 - VS.SharepointTools.WSPImport.SpecifyProjectSource
 - VS.SharePointTools.WSPImport.SelectionItemsToImport
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -23,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7435d6c7ad210554031994f4a366812f9799ffb2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6345e6650c815242db661cef52b78db31d447b06
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832110"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918156"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>기존 SharePoint 사이트에서 항목 가져오기
   SharePoint 솔루션 패키지 가져오기 프로젝트 템플릿을 사용하면 기존 SharePoint 사이트에 있는 콘텐츠 형식 및 필드 등의 요소를 새 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 솔루션에서 다시 사용할 수 있습니다. 수정 없이도 가져온 솔루션을 대부분 실행할 수 있지만 몇 가지 제한 및 문제를 고려해야 합니다. 항목을 가져온 후 수정한 경우에는 특히 주의해야 합니다.  
@@ -51,7 +46,7 @@ ms.locfileid: "49832110"
   
 - [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]  
   
-  이러한 응용 프로그램에서 만든 솔루션을 가져올 수 있는 경우도 있지만 기능이 테스트되지 않아 지원되지 않습니다.  
+  이러한 애플리케이션에서 만든 솔루션을 가져올 수 있는 경우도 있지만 기능이 테스트되지 않아 지원되지 않습니다.  
   
 ## <a name="item-import-restrictions"></a>항목 가져오기 제한
  기존 대부분의 SharePoint 항목을 가져올 수 있지만 *.wsp* 파일인 다음 항목이 지원 되지 않으며 제대로 작동 하려면 수정 해야 할 수 있습니다.  
@@ -103,13 +98,13 @@ ms.locfileid: "49832110"
 ## <a name="import-fields-and-property-bags"></a>가져오기 필드 및 속성 모음
  여러 필드가 있는 솔루션을 가져올 때에 단일 병합할은 모든 개별 필드 정의가 *Elements.xml* 파일 노드 아래 **솔루션 탐색기** 호출 **필드** . 마찬가지로, 모든 속성 모음 항목은 병합할를 *Elements.xml* 라는 노드 아래에 있는 파일 **PropertyBags**합니다.  
   
- SharePoint에서 필드는 텍스트, 부울 또는 조회 같은 지정된 데이터 형식의 열입니다. 자세한 내용은 [구성 요소: 열 및 필드 형식](http://go.microsoft.com/fwlink/?LinkId=182304)을 참조하세요. 속성 모음을 사용하면 팜부터 SharePoint 사이트의 목록에 이르기까지 SharePoint의 개체에 속성을 추가할 수 있습니다. 속성 모음은 속성 이름 및 값의 해시 테이블로 구현됩니다. 자세한 내용은 [SharePoint 구성 관리](http://go.microsoft.com/fwlink/?LinkId=182296) 또는 [SharePoint 속성 모음 설정](http://go.microsoft.com/fwlink/?LinkId=182297)을 참조하세요.  
+ SharePoint에서 필드는 텍스트, 부울 또는 조회 같은 지정된 데이터 형식의 열입니다. 자세한 내용은 참조 하세요. [문서 블록: 열 및 필드 형식](http://go.microsoft.com/fwlink/?LinkId=182304)합니다. 속성 모음을 사용하면 팜부터 SharePoint 사이트의 목록에 이르기까지 SharePoint의 개체에 속성을 추가할 수 있습니다. 속성 모음은 속성 이름 및 값의 해시 테이블로 구현됩니다. 자세한 내용은 [SharePoint 구성 관리](http://go.microsoft.com/fwlink/?LinkId=182296) 또는 [SharePoint 속성 모음 설정](http://go.microsoft.com/fwlink/?LinkId=182297)을 참조하세요.  
   
 ## <a name="delete-items-in-the-project"></a>프로젝트에서 항목 삭제
  SharePoint 솔루션의 대부분 항목에는 하나 이상의 종속 항목이 포함됩니다. 예를 들어 목록 인스턴스는 콘텐츠 형식에 종속되고 콘텐츠 형식은 필드에 종속됩니다. SharePoint 솔루션을 가져온 후 솔루션에서 항목을 삭제하고 종속 항목을 삭제하지 않은 경우 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 에서는 솔루션을 배포할 때까지 참조 문제를 알리지 않습니다. 예를 들어 가져온 솔루션에 콘텐츠 형식에 종속된 목록 인스턴스가 있는데 해당 콘텐츠 형식을 삭제한 경우 배포 시 오류가 발생할 수 있습니다. 이 오류는 SharePoint 서버에 종속 항목이 없는 경우 발생합니다. 마찬가지로, 삭제 된 항목에도 관련된 속성 모음이, 하는 경우 해당 속성 모음에서 항목을 삭제 합니다 **PropertyBags** *Elements.xml* 파일입니다. 따라서 가져온 솔루션에서 항목을 삭제하고 배포 오류가 발생한 경우 종속 항목도 삭제되어야 하는지 확인합니다.  
   
 ## <a name="restore-missing-feature-attributes"></a>누락 된 기능 특성 복원
- 솔루션을 가져올 때 가져온 기능 매니페스트에서 일부 선택적 기능 특성이 누락됩니다. 새 기능 파일에서 이러한 특성을 복원 하려는 경우 원래 기능 파일과 새 기능 매니페스트를 비교 하 여 누락 된 특성을 식별 하 고 항목의 지침에 따라 [방법: SharePoint 기능사용자지정](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
+ 솔루션을 가져올 때 가져온 기능 매니페스트에서 일부 선택적 기능 특성이 누락됩니다. 새 기능 파일에서 이러한 특성을 복원 하려는 경우 원래 기능 파일과 새 기능 매니페스트를 비교 하 여 누락 된 특성을 식별 하 고 항목의 지침에 따라 [방법: SharePoint 기능 사용자 지정](../sharepoint/how-to-customize-a-sharepoint-feature.md)합니다.  
   
 ## <a name="deployment-conflict-detection-is-not-performed-on-built-in-list-instances"></a>기본 제공 목록 인스턴스에서 배포 충돌 검색이 수행 되지 않습니다.
  [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 는 기본 제공 목록 인스턴스(SharePoint에서 제공하는 기본 목록 인스턴스)에서 배포 충돌 검색을 수행하지 않습니다. 충돌 검색을 수행하지 않는 이유는 SharePoint의 기본 제공 목록 인스턴스를 덮어쓰지 않기 위해서입니다. 기본 제공 목록 인스턴스는 계속 배포되거나 업데이트되지만 결코 삭제되거나 덮어 쓰이지는 않습니다. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [SharePoint 패키징 및 배포 문제 해결](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)합니다.  

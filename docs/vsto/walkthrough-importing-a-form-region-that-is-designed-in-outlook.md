@@ -1,9 +1,6 @@
 ---
 title: '연습: Outlook에서 디자인 한 양식 영역 가져오기'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 413d2fed56da809b2fdb8c1fad867818e0cce010
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bfb7365d6e8d336d2cfae24286b6df087430e635
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903519"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956181"
 ---
 # <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>연습: Outlook에서 디자인 한 양식 영역 가져오기
   이 연습에서는 **새 양식 영역** 마법사를 사용하여 Microsoft Office Outlook에서 양식 영역을 디자인한 다음 Outlook VSTO 추가 기능 프로젝트로 양식 영역을 가져오는 방법을 보여 줍니다. Outlook에서 양식 영역을 디자인하면 Outlook 데이터에 바인딩되는 양식 영역에 네이티브 Outlook 컨트롤을 추가할 수 있습니다. 양식 영역을 가져온 후에 각 컨트롤의 이벤트를 처리할 수 있습니다.  
@@ -48,7 +45,7 @@ ms.locfileid: "49903519"
 > [!NOTE]  
 >  일부 Visual Studio 사용자 인터페이스 요소의 경우 다음 지침에 설명된 것과 다른 이름 또는 위치가 시스템에 표시될 수 있습니다. 이러한 요소는 사용하는 Visual Studio 버전 및 설정에 따라 결정됩니다. 자세한 내용은 [Visual Studio IDE 개인 설정](../ide/personalizing-the-visual-studio-ide.md)을 참조하세요.  
   
- ![비디오 링크](../vsto/media/playvideo.gif "비디오 링크") 관련된 비디오 데모를 참조 하세요. [How do i: 만들 Outlook 양식 영역을 Visual Studio 2008을 사용 하 여?](http://go.microsoft.com/fwlink/?LinkID=130305)합니다.  
+ ![비디오 링크](../vsto/media/playvideo.gif "비디오 링크") 관련된 비디오 데모를 참조 하세요. [어떻게 할까요? Visual Studio 2008을 사용 하 여 Outlook 양식 영역 만들기 ](http://go.microsoft.com/fwlink/?LinkID=130305).  
 ## <a name="design-a-form-region-by-using-the-form-region-designer-in-outlook"></a>Outlook에서 양식 영역 디자이너를 사용 하 여 양식 영역 디자인  
  이 단계에서는 Outlook에서 양식 영역을 디자인합니다. 그런 다음 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]로 가져올 수 있도록 찾기 쉬운 위치에 양식 영역을 저장합니다.  
   
@@ -58,7 +55,7 @@ ms.locfileid: "49903519"
   
 1.  Microsoft Office Outlook을 시작합니다.  
   
-2.  Outlook의 **개발자** 탭에서 **양식 디자인**을 클릭합니다. 자세한 내용은 [방법: 리본에 개발 도구 탭 표시](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)합니다.  
+2.  Outlook의 **개발자** 탭에서 **양식 디자인**을 클릭합니다. 자세한 내용은 [방법: 리본 메뉴에 개발 도구 탭 표시](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)합니다.  
   
 3.  **양식 디자인** 상자에서 **작업**을 클릭한 다음 **열기**를 클릭합니다.  
   
@@ -127,7 +124,7 @@ ms.locfileid: "49903519"
   
 3.  기본 프로젝트 디렉터리에 프로젝트를 저장합니다.  
   
-     자세한 내용은 [방법: Visual Studio에서 만드는 Office 프로젝트](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
+     자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
   
 ## <a name="import-the-form-region"></a>양식 영역 가져오기  
  **새 Outlook 양식 영역** 마법사를 사용하여 Outlook에서 디자인한 양식 영역을 Outlook VSTO 추가 기능 프로젝트로 가져올 수 있습니다.  
@@ -246,9 +243,9 @@ ms.locfileid: "49903519"
      이제**이 작업은 다음 작업에 따라 다름** 목록 상자에 **50% 완료 -- 종속 작업** 이 표시됩니다.  
   
 ## <a name="next-steps"></a>다음 단계  
- 다음 항목에서 Outlook 응용 프로그램의 UI를 사용자 지정하는 방법에 대해 자세히 알아볼 수 있습니다.  
+ 다음 항목에서 Outlook 애플리케이션의 UI를 사용자 지정하는 방법에 대해 자세히 알아볼 수 있습니다.  
   
--   관리 되는 컨트롤을 비주얼 디자이너로 끌어서 양식 영역의 모양을 디자인 하는 방법에 대 한 자세한 내용은 참조 하세요 [연습: Outlook 양식 영역 디자인](../vsto/walkthrough-designing-an-outlook-form-region.md)합니다.  
+-   관리 되는 컨트롤을 비주얼 디자이너로 끌어서 양식 영역의 모양을 디자인 하는 방법에 대 한 자세한 내용은를 참조 하세요. [연습: Outlook 양식 영역 디자인](../vsto/walkthrough-designing-an-outlook-form-region.md)합니다.  
   
 -   Outlook 항목의 리본을 사용자 지정 하는 방법에 알아보려면 [Outlook에 대 한 리본을 사용자 지정](../vsto/customizing-a-ribbon-for-outlook.md)합니다.  
   
@@ -263,5 +260,3 @@ ms.locfileid: "49903519"
  [Outlook 메시지 클래스를 사용 하 여 양식 영역을 연결 합니다.](../vsto/associating-a-form-region-with-an-outlook-message-class.md)   
  [Outlook 양식 영역의 사용자 지정 작업](../vsto/custom-actions-in-outlook-form-regions.md)   
  [방법: Outlook에서 양식 영역 표시 하지 않기](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)  
-  
-  

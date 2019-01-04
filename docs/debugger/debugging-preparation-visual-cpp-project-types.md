@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c39acdef217d2b858645073cb96da4952c91df5a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: MTE95
+ms.openlocfilehash: f8d31881bed3e40db5080d642c0d3043ef2da704
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066316"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562037"
 ---
 # <a name="debugging-preparation-visual-c-project-types"></a>디버깅 준비: Visual C++ 프로젝트 형식
 이 단원에서는 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 프로젝트 템플릿으로 만든 기본 프로젝트 형식을 디버깅하는 방법에 대해 설명합니다.  
@@ -73,7 +73,7 @@ ms.locfileid: "53066316"
   
 2.  **디버그** 메뉴에서 **시작**을 선택합니다.  
   
-3.  에 설명 된 기술을 사용 하 여 디버깅할 [디버거 기본 사항](../debugger/getting-started-with-the-debugger.md)합니다.  
+3.  에 설명 된 기술을 사용 하 여 디버깅할 [디버거 소개](../debugger/debugger-feature-tour.md)합니다.  
   
 ###  <a name="BKMK_To_manually_set_a_Debug_configuration"></a> 디버그 구성을 직접 설정하려면  
   
@@ -111,7 +111,7 @@ ms.locfileid: "53066316"
  [항목 내용](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
 ## <a name="see-also"></a>참고 항목  
- [Debugger Basics](../debugger/getting-started-with-the-debugger.md) (디버거 기본 사항)  
+ [디버거 소개](../debugger/debugger-feature-tour.md)   
  [C++ 디버그 구성을 위한 프로젝트 설정](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [실행 중인 프로그램 또는 여러 프로그램에 연결](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [디버그 및 릴리스 구성](../debugger/how-to-set-debug-and-release-configurations.md)   

@@ -1,8 +1,6 @@
 ---
 title: MenuCommand 및 OleMenuCommands | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - commands, creating in VSPackages
@@ -10,12 +8,12 @@ helpviewer_keywords:
 - menus, creating commands
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 manager: douge
-ms.openlocfilehash: 0fbe8ea2a78eae02cb7e0d390da49eafe55e75ee
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3b33d84f62db9cfe1371ffc540830f63d93e67d1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49888959"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926241"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommand 및 OleMenuCommand
 파생 하 여 메뉴 명령을 만들 수 있습니다 <xref:System.ComponentModel.Design.MenuCommand> 주고 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 개체를 적절 한 이벤트 처리기를 구현 합니다. 대부분의 경우 <xref:System.ComponentModel.Design.MenuCommand>를 VSPackage 프로젝트 템플릿으로 사용할 수 있지만 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>를 사용해야 할 때가 있습니다.  

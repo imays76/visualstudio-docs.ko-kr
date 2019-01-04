@@ -1,9 +1,6 @@
 ---
 title: 색 및 Visual Studio에 대 한 스타일 지정 | Microsoft Docs
-ms.custom: ''
 ms.date: 07/31/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d8285ad08a9ad83ecd137223459a6b29cb7ae69
-ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
+ms.openlocfilehash: 12555b48550d252ce125ac437c1e30d5ae22fae9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51561714"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914610"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>색 및 Visual Studio에 대 한 스타일 지정
 
@@ -82,7 +79,7 @@ Visual Studio 소스 코드는 토큰 이름 및 각 테마에 대해 각 색상
 
 ### <a name="user-customizable-colors"></a>사용자 지정 가능한 색
 
-참고: [최종 사용자에 대 한 색을 노출 합니다.](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)
+참조 [최종 사용자에 대 한 색을 노출합니다.](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)
 
 경우에 따라 최종 사용자가 코드 편집기 또는 디자인 화면을 만들 때와 같은 UI를 사용자 지정할 수 있도록 해야 합니다. 사용자 지정 가능한 UI 구성 요소에서 발견 되는 **글꼴 및 색** 섹션을 **도구 &gt; 옵션** 전경색, 배경색, 또는 둘 다를 변경 하려면 사용자가 선택할 수 있는 대화 상자에서.
 
@@ -365,7 +362,7 @@ VSPackage를 사용자 지정 범주를 구현 하거나 항목을 표시 하려
 | 이름 | 형식 | 데이터 | 설명 |
 | --- | --- | --- | --- |
 | 범주 | REG_SZ | GUID | 범주를 식별 하는 GUID 생성 |
-| 패키지 | REG_SZ | GUID | 범주를 지 원하는 VSPackage 서비스의 GUID |
+| Package | REG_SZ | GUID | 범주를 지 원하는 VSPackage 서비스의 GUID |
 
  레지스트리에 지정 된 서비스의 구현을 제공 해야 합니다 [IVsFontAndColorDefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults) 해당 범주에 대 한 합니다.
 
@@ -378,7 +375,7 @@ VSPackage를 사용자 지정 범주를 구현 하거나 항목을 표시 하려
 | 이름 | 형식 | 데이터 | 설명 |
 |--- | --- | --- | --- |
 | 범주 | REG_SZ | GUID | 범주를 식별 하는 GUID 생성 |
-| 패키지 | REG_SZ | GUID | 범주를 지 원하는 VSPackage 서비스의 GUID |
+| Package | REG_SZ | GUID | 범주를 지 원하는 VSPackage 서비스의 GUID |
 
 레지스트리에 지정 된 서비스의 구현을 제공 해야 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> 해당 그룹에 대 한 합니다.
 

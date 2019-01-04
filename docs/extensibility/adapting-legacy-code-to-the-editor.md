@@ -1,9 +1,6 @@
 ---
 title: 레거시 코드 편집기로 적응 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - adapters
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e04ae5484b6c1fd5bcc56154c6cec23334e7ef8d
-ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
+ms.openlocfilehash: 4fba22a2b2dacec57439b66abe6607c248ed1914
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53307793"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926046"
 ---
 # <a name="adapt-legacy-code-to-the-editor"></a>레거시 코드 편집기로 적응
 Visual Studio 편집기에 기존 코드 구성 요소에서 액세스할 수 있는 많은 기능이 있습니다. 다음 지침을 예를 들어 VSPackage로 편집기 기능을 사용 하려면-MEF 구성 요소를 조정 하는 방법을 보여 줍니다. 지침에는 서비스를 가져올 편집기의 관리 및 비관리 코드에서 어댑터를 사용 하는 방법을 보여 줍니다.  

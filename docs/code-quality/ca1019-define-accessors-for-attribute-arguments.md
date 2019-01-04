@@ -1,8 +1,7 @@
 ---
-title: 'CA1019: 특성 인수의 접근자를 정의하십시오.'
+title: 'CA1019: 특성 인수의 접근자를 정의하세요.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1019
@@ -19,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e095c862edc5d7b68e1a6c55ada90a425b7e64f
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: e840ddacc327799d5f138c84476598b16c6e006a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550455"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920659"
 ---
-# <a name="ca1019-define-accessors-for-attribute-arguments"></a>CA1019: 특성 인수의 접근자를 정의하십시오.
+# <a name="ca1019-define-accessors-for-attribute-arguments"></a>CA1019: 특성 인수의 접근자를 정의하세요.
 
 |||
 |-|-|
@@ -71,7 +70,7 @@ ms.locfileid: "45550455"
 [!code-csharp[FxCop.Design.AttributeAccessorsNamedApplied#1](../code-quality/codesnippet/CSharp/ca1019-define-accessors-for-attribute-arguments_3.cs)]
 
 ## <a name="related-rules"></a>관련된 규칙
- [CA1813: 봉인되지 않은 특성을 사용하지 마십시오.](../code-quality/ca1813-avoid-unsealed-attributes.md)
+ [CA1813: 봉인 되지 않은 특성](../code-quality/ca1813-avoid-unsealed-attributes.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  [특성](/dotnet/standard/design-guidelines/attributes)

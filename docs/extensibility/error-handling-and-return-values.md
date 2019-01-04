@@ -1,9 +1,6 @@
 ---
 title: 오류 처리 및 반환 값 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - errors [Visual Studio SDK], handling
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97e5fbd68a82a74112f884a8091992c1fd6ba6ae
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 87ec370ce857345923d7c8deab0d61b8df1c0dde
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370746"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898856"
 ---
 # <a name="error-handling-and-return-values"></a>오류 처리 및 반환 값
 Vspackage 및 COM 오류에 대 한 동일한 아키텍처를 사용 합니다. 합니다 `SetErrorInfo` 및 `GetErrorInfo` 함수는 Win32 API (응용 프로그래밍 인터페이스)의 일부인 합니다. 모든 VSPackage 통합된 개발 환경 (IDE)에서 호출할 수 있습니다 이러한 다양 한 오류 정보를 기록 하려면 전역 Win32 Api는 오류 알림의 받을 때. [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] 오류 정보를 관리 하는 interop 어셈블리를 제공 합니다.  
@@ -56,7 +53,7 @@ Vspackage 및 COM 오류에 대 한 동일한 아키텍처를 사용 합니다. 
   
 -   실패에서 수신 된 정보에 전달 해야 다른 호출에서 발생 하는 오류를 반환 하는 모든 함수에서 호출 된 `HRESULT` 수정 하지 않고는 `ErrorInfo` 개체입니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
  [SetErrorInfo (구성 요소 자동화)](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-seterrorinfo)   
  [GetErrorInfo](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-geterrorinfo)   

@@ -1,9 +1,6 @@
 ---
 title: '&lt;업데이트&gt; 요소 (Visual Studio에서 Office 개발)'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ec520c140dedf3a5bb93ebd5f17f8751687abcac
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 661aa9c0c1a590e78d20e52b6321294d59e70c63
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53805012"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988990"
 ---
 # <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;업데이트&gt; 요소 (Visual Studio에서 Office 개발)
   `update` 요소 업데이트에 대 한 솔루션은 확인 간격을 지정 합니다.
@@ -84,7 +81,7 @@ ms.locfileid: "53805012"
 </vstav3:update>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [ClickOnce를 사용 하 여 Office 솔루션 배포](../vsto/deploying-an-office-solution-by-using-clickonce.md)
 - [Office 솔루션에 대 한 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)

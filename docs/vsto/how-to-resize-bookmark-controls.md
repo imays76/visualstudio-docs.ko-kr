@@ -1,9 +1,6 @@
 ---
 title: '방법: 책갈피 컨트롤 크기 조정'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 57b6d6a089570c52607cf73eeed4fc00978ab251
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1a700164ceea11bf83467048140c79723908b619
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924839"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942452"
 ---
 # <a name="how-to-resize-bookmark-controls"></a>방법: 책갈피 컨트롤 크기 조정
   Microsoft Office Word 문서에 추가할 때 <xref:Microsoft.Office.Tools.Word.Bookmark> 컨트롤의 크기를 설정합니다. 나중에 크기를 조정할 수도 있습니다.  
@@ -42,7 +39,7 @@ ms.locfileid: "49924839"
   
    이 방법은 책갈피의 크기 또는 위치를 대폭 변경할 경우 유용합니다.  
   
-  문서 수준 프로젝트에서 디자인 타임 또는 런타임에 프로젝트의 문서에 <xref:Microsoft.Office.Tools.Word.Bookmark> 컨트롤을 추가할 수 있습니다. VSTO 추가 기능 프로젝트에 추가할 수 있습니다 <xref:Microsoft.Office.Tools.Word.Bookmark> 런타임에 열려 있는 문서에 컨트롤입니다. 자세한 내용은 [방법: Word 문서에 책갈피 추가 제어](../vsto/how-to-add-bookmark-controls-to-word-documents.md)입니다.  
+  문서 수준 프로젝트에서 디자인 타임 또는 런타임에 프로젝트의 문서에 <xref:Microsoft.Office.Tools.Word.Bookmark> 컨트롤을 추가할 수 있습니다. VSTO 추가 기능 프로젝트에 추가할 수 있습니다 <xref:Microsoft.Office.Tools.Word.Bookmark> 런타임에 열려 있는 문서에 컨트롤입니다. 자세한 내용은 [방법: Word 문서에 책갈피 컨트롤 추가](../vsto/how-to-add-bookmark-controls-to-word-documents.md)합니다.  
   
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
@@ -97,5 +94,3 @@ ms.locfileid: "49924839"
  [방법: NamedRange 컨트롤 크기 조정](../vsto/how-to-resize-namedrange-controls.md)   
  [방법: ListObject 컨트롤 크기 조정](../vsto/how-to-resize-listobject-controls.md)   
  [호스트 항목 및 호스트 컨트롤의 프로그래밍 방식으로 제한 사항](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

@@ -2,7 +2,6 @@
 title: 'CA1710: 식별자에는 올바른 접미사를 사용해야 합니다.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1710
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 263870511715757c8771b0b596e443d82be91525
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 2e8923f3bb1ae4fe92891593c2109852810beb4e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549892"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944712"
 ---
 # <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710: 식별자에는 올바른 접미사를 사용해야 합니다.
 
@@ -56,7 +55,7 @@ ms.locfileid: "45549892"
 |<xref:System.Collections.Stack?displayProperty=fullName>|컬렉션 또는 스택|
 |<xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>|컬렉션|
 |<xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|사전|
-|<xref:System.Data.DataSet?displayProperty=fullName>|데이터 집합|
+|<xref:System.Data.DataSet?displayProperty=fullName>|DataSet|
 |<xref:System.Data.DataTable?displayProperty=fullName>|컬렉션 또는 DataTable|
 |<xref:System.IO.Stream?displayProperty=fullName>|스트림|
 |<xref:System.Security.IPermission?displayProperty=fullName>|사용 권한|
@@ -95,9 +94,9 @@ A <xref:System.Data.DataSet> 개체의 컬렉션으로 구성 됩니다 <xref:Sy
 
 ## <a name="related-rules"></a>관련된 규칙
 
-[CA1711: 식별자에는 올바른 접미사를 사용해야 합니다.](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
+[CA1711: 식별자에는 접미사를 사용 해야 합니다.](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [특성](/dotnet/standard/design-guidelines/attributes)
 - [이벤트 처리 및 발생](/dotnet/standard/events/index)

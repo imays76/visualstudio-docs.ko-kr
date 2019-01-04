@@ -1,9 +1,6 @@
 ---
 title: OPTNAMECHANGEPFN | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - OPTNAMECHANGEPFN
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12b8f6eb441eb9ca65cbdf2215363af48c65bfa4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8054094083b39a8f71ae9fe6fcb908b7af29a7a3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912996"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962771"
 ---
 # <a name="optnamechangepfn"></a>OPTNAMECHANGEPFN
 이것이에 대 한 호출에 지정 된 콜백 함수는 [SccSetOption](../extensibility/sccsetoption-function.md) (옵션을 사용 하 여 `SCC_OPT_NAMECHANGEPFN`) 이름 변경에 대 한 소스 제어 플러그 인 다시 IDE 통신에 사용 되 고 합니다.  
@@ -53,6 +50,6 @@ typedef void (*OPTNAMECHANGEPFN)(
   
  호출 하지 IDE이이 콜백은 지원 하지 않는 경우는 [SccSetOption](../extensibility/sccsetoption-function.md) 를 지정 합니다. 하는 경우 플러그 인을 지원 하지 않으면이 콜백에서 반환 `SCC_E_OPNOTSUPPORTED` 에서 `SccSetOption` IDE 콜백을 설정 하려고 할 때 작동 합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [IDE에 의해 구현 된 콜백 함수](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [SccSetOption](../extensibility/sccsetoption-function.md)

@@ -3,8 +3,6 @@ title: '&lt;formRegions&gt; 요소 (Visual Studio에서 Office 개발)'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d72206ac6ddd6696c1f2fac0f9de6552408a5a46
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 997bd24861f986736d7d691a8d2877f9b5a78566
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804593"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909101"
 ---
 # <a name="ltformregionsgt-element-office-development-in-visual-studio"></a>&lt;formRegions&gt; 요소 (Visual Studio에서 Office 개발)
   합니다 `formRegions` 의 요소를 `vstov4` 네임 스페이스는에서 VSTO 추가 기능을 사용 하 여 연결 된 Microsoft Office Outlook 양식 영역을 포함 합니다.
@@ -40,7 +38,7 @@ ms.locfileid: "53804593"
 ## <a name="elements-and-attributes"></a>요소 및 특성
  `formRegions` 네임스페이스의 `vstov4` 요소에는 Outlook VSTO 추가 기능에 대한 모든 `formRegion` 요소가 포함됩니다. 양식 영역을 포함하는 Outlook VSTO 추가 기능에만 필요합니다.
 
- 하나의 응용 프로그램 매니페스트에서는 하나의 `formRegions` 요소만 정의할 수 있습니다.
+ 하나의 애플리케이션 매니페스트에서는 하나의 `formRegions` 요소만 정의할 수 있습니다.
 
  `formRegions` 요소에는 특성이 없습니다.
 
@@ -52,7 +50,7 @@ ms.locfileid: "53804593"
 ## <a name="vsto-add-in-example"></a>VSTO 추가 기능 예제
 
 ### <a name="description"></a>설명
- 다음 코드 예제에서는 `formRegions` 을 사용하여 배포된 응용 프로그램 수준의 Office 솔루션에 대한 응용 프로그램 매니페스트의 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]요소를 보여 줍니다. 이 코드 예제는에서 제공 하는 더 큰 예제의 일부입니다 [Office 솔루션에 대 한 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)합니다.
+ 다음 코드 예제에서는 `formRegions` 을 사용하여 배포된 애플리케이션 수준의 Office 솔루션에 대한 애플리케이션 매니페스트의 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]요소를 보여 줍니다. 이 코드 예제는에서 제공 하는 더 큰 예제의 일부입니다 [Office 솔루션에 대 한 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)합니다.
 
 ### <a name="code"></a>코드
 

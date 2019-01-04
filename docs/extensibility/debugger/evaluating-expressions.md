@@ -1,9 +1,6 @@
 ---
 title: 식 평가 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - expressions [Debugging SDK], evaluating
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bfd6248b06b69fa89d1888467a70718cf98b2a9a
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 7df128995c114c724c7a25ebe4949be935a3c496
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232470"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929739"
 ---
 # <a name="evaluate-expressions"></a>식 평가
 식에서 전달 하는 문자열에서 만든 합니다 **자동**, **조사식**, **간략 한 조사식**, 또는 **직접 실행** windows. 식을 계산할 때 이름과 변수 또는 인수 및 해당 값의 형식을 포함 하는 인쇄 가능한 문자열을 생성 합니다. 이 문자열은 해당 IDE 창에 표시 됩니다.  

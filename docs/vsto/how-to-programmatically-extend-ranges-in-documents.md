@@ -1,9 +1,6 @@
 ---
 title: '방법: 프로그래밍 방식으로 문서의 범위 확장'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 810f65cbb021845c4fa659cd785e83e8c979376d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4f6bfb4979285753a5dd15dd4fe4dabfab013309
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49888673"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919666"
 ---
-# <a name="how-to-programmatically-extend-ranges-in-documents"></a>방법: 문서의 범위 프로그래밍 방식으로 확장
+# <a name="how-to-programmatically-extend-ranges-in-documents"></a>방법: 프로그래밍 방식으로 문서의 범위 확장
   Microsoft Office Word 문서에서 <xref:Microsoft.Office.Interop.Word.Range> 개체를 정의한 후 <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> 및 <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> 메서드를 사용하여 해당 개체의 시작점과 끝점을 변경합니다. <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> 하 고 <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> 메서드는 동일한 두 개의 인수를 *단위* 및 *개수*합니다. 합니다 *개수* 인수는 이동할 단위의 수와 *단위* 인수는 다음 중 하나일 수 있습니다 <xref:Microsoft.Office.Interop.Word.WdUnits> 값:  
   
 - <xref:Microsoft.Office.Interop.Word.WdUnits.wdCharacter>  
@@ -85,7 +82,7 @@ ms.locfileid: "49888673"
   
 ## <a name="vsto-add-in-code"></a>VSTO 추가 기능 코드  
   
-### <a name="to-extend-a-range-in-an-application-level-vsto-add-in"></a>응용 프로그램 수준 VSTO 추가 기능의 범위를 확장하려면  
+### <a name="to-extend-a-range-in-an-application-level-vsto-add-in"></a>애플리케이션 수준 VSTO 추가 기능의 범위를 확장하려면  
   
 1.  다음 예제에서는 VSTO 추가 기능의 전체 코드를 보여 줍니다. 이 코드를 사용하려면 프로젝트의 `ThisAddIn` 클래스에서 실행합니다.  
   
@@ -97,5 +94,4 @@ ms.locfileid: "49888673"
  [방법: 프로그래밍 방식으로 범위 또는 문서 선택 영역 축소](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)   
  [방법: 프로그래밍 방식으로 정의 하 고 문서에서 범위를 선택 합니다.](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
  [방법: 프로그래밍 방식으로 범위의 시작 및 끝 문자 검색](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)   
- [방법: 프로그래밍 방식으로 범위를 만들 때 단락 표시를 제외](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)  
-  
+ [방법: 프로그래밍 방식으로 제외 단락 표시 범위를 만들 때](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)  

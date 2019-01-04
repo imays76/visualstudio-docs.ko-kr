@@ -1,9 +1,6 @@
 ---
 title: Roslyn 분석기 및 코드 인식 라이브러리 ImmutableArrays에 대 한 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
 author: gregvanl
@@ -11,18 +8,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2af6141ae3b7a61805b2515f11f72f164389949
-ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.openlocfilehash: c59fcaa44314c421f896ca5f64e0a2582faa5eb9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821385"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833370"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Roslyn 분석기 및 ImmutableArrays에 대 한 코드 인식 라이브러리
 
 합니다 [.NET 컴파일러 플랫폼](https://github.com/dotnet/roslyn) ("Roslyn")를 사용 하면 코드 인식 라이브러리를 작성할 수 있습니다. 코드 인식 라이브러리는 가장 좋은 방법은 또는 오류를 방지 하려면 기능을 사용할 수 있습니다 및 라이브러리를 사용할 수 있습니다 (Roslyn 분석기) 도구를 제공 합니다. 이 항목에서는 사용할 때 일반적인 오류를 catch 하는 실제 Roslyn 분석기를 빌드하는 방법을 보여 줍니다.는 [System.Collections.Immutable](https://www.nuget.org/packages/System.Collections.Immutable) NuGet 패키지. 예제에는 분석기가 발견 한 코드 문제에 대 한 코드 수정 제공 하는 방법을 보여 줍니다. 사용자 코드 수정 사항은 Visual Studio 전구 UI에서에서 참조 하 고 코드에 대 한 수정 프로그램이 자동으로 적용할 수 있습니다.
 
-## <a name="get-started"></a>시작하기
+## <a name="get-started"></a>시작
 
 이 예제를 빌드하려면 다음이 필요 합니다.
 
@@ -301,7 +298,7 @@ private async Task<Document> ChangeToImmutableArrayEmpty(
 
 이제 눌러도 **F5** Visual Studio의 두 번째 인스턴스에서 분석기를 실행 합니다. 이전에 사용한 콘솔 프로젝트를 엽니다. 새 개체 생성 식에 대 한 위치에 나타날 전구를 표시 하는 이제 `ImmutableArray<int>`합니다. 키를 누르면 **Ctrl**+**합니다.** (기간), 수정, 코드를 다음 표시 되 고 전구 UI에서에서 미리 보기를 자동으로 생성 된 코드 차이 표시 됩니다. Roslyn을이 만듭니다.
 
-**Pro 팁:** Visual Studio의 두 번째 인스턴스를 시작 및 코드 수정 사항을 사용 하 여 밝은 전구 표시 되지 않는 경우 Visual Studio 구성 요소 캐시의 선택을 취소 해야 할 수 있습니다. Visual Studio의 Visual Studio 최신 구성 요소를 선택 해야 하므로 구성 요소 다시 검사를 강제로 캐시 지우기. 먼저 Visual Studio의 두 번째 인스턴스를 종료 합니다. 그런 다음, **Windows 탐색기**, 이동할 *%LOCALAPPDATA%\Microsoft\VisualStudio\15.0Roslyn\\*합니다. ("15.0" 변경 버전 Visual Studio를 사용 하 여). 하위 디렉터리를 삭제 *ComponentModelCache*합니다.
+**Pro 팁:** Visual Studio의 두 번째 인스턴스를 시작 하 고 코드 수정 사항을 사용 하 여 밝은 전구 표시 되지 않는 경우 Visual Studio 구성 요소 캐시를 지우려면 해야 할 수 있습니다. Visual Studio의 Visual Studio 최신 구성 요소를 선택 해야 하므로 구성 요소 다시 검사를 강제로 캐시 지우기. 먼저 Visual Studio의 두 번째 인스턴스를 종료 합니다. 그런 다음, **Windows 탐색기**, 이동할 *%LOCALAPPDATA%\Microsoft\VisualStudio\15.0Roslyn\\*합니다. ("15.0" 변경 버전 Visual Studio를 사용 하 여). 하위 디렉터리를 삭제 *ComponentModelCache*합니다.
 
 ## <a name="talk-video-and-finish-code-project"></a>비디오 설명 및 코드 프로젝트를 완료 합니다.
 
@@ -309,7 +306,7 @@ private async Task<Document> ChangeToImmutableArrayEmpty(
 
 완성된 된 모든 코드를 볼 수 있습니다 [여기](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)합니다. 하위 폴더 *DoNotUseImmutableArrayCollectionInitializer* 하 고 *DoNotUseImmutableArrayCtor* 각 문제를 찾는 C# 파일을 있고 코드를 구현 하는 C# 파일에 표시 되는 수정 합니다 Visual Studio 전구 UI입니다. 참고, 완성 된 코드에는 약간의 추상화는 ImmutableArray를 페치 하지 않으려면\<T > 형식 개체를 반복 합니다. 중첩 된 등록된 작업을 사용 하 여 사용할 수 있는 컨텍스트에서 형식 개체를 저장 하 때마다 하위 작업 (개체 생성을 분석 하 고 컬렉션 초기화 분석)를 실행 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 * [\\\Build 2015 강연](https://channel9.msdn.com/events/Build/2015/3-725)
 * [GitHub에서 완성 된 코드](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)

@@ -1,9 +1,6 @@
 ---
 title: '연습: 단추를 사용 하 여 워크시트에 텍스트 상자에 텍스트를 표시 합니다.'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25294e9cb8f57036603ec4817fcbd59976a358a3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7d7cf32019d3bfa1e6690512f4f348728a409bbb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49840287"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941612"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-worksheet-using-a-button"></a>연습: 단추를 사용 하 여 워크시트에 텍스트 상자에 텍스트를 표시 합니다.
   이 연습에서는 Visual Studio에서 Office 개발 도구를 사용 하 여 Excel 프로젝트를 만드는 방법과 Microsoft Office Excel 워크시트에서 단추 및 텍스트 상자를 사용 하는 기본 사항을 보여 줍니다. 결과 전체 샘플을 보려면 Excel 컨트롤 샘플을 참조 하세요 [Office 개발 샘플 및 연습](../vsto/office-development-samples-and-walkthroughs.md)합니다.  
@@ -53,7 +50,7 @@ ms.locfileid: "49840287"
   
 ### <a name="to-create-a-new-project"></a>새 프로젝트를 만들려면  
   
-1.  이름으로 Excel 통합 문서 프로젝트를 만듭니다 **내 Excel 단추**합니다. 했는지 **새 문서 만들기** 을 선택 합니다. 자세한 내용은 [방법: Visual Studio에서 만드는 Office 프로젝트](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
+1.  이름으로 Excel 통합 문서 프로젝트를 만듭니다 **내 Excel 단추**합니다. 했는지 **새 문서 만들기** 을 선택 합니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
   
      Visual Studio 디자이너에서 새 Excel 통합 문서를 열고 사이트를 추가 합니다 **내 Excel 단추** 프로젝트가 **솔루션 탐색기**합니다.  
   
@@ -91,11 +88,11 @@ ms.locfileid: "49840287"
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#11](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#11)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#11)]  
   
-3.  C#에서 이벤트 처리기를 추가 해야 합니다는 <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> 아래와 같이 이벤트입니다. 이벤트 처리기를 만드는 방법은 [방법: Office 프로젝트에서 이벤트 처리기 만들기](../vsto/how-to-create-event-handlers-in-office-projects.md)합니다.  
+3.  C#에서 이벤트 처리기를 추가 해야 합니다는 <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> 아래와 같이 이벤트입니다. 이벤트 처리기를 만드는 방법에 대 한 정보를 참조 하세요. [방법: Office 프로젝트에서 이벤트 처리기 만들기](../vsto/how-to-create-event-handlers-in-office-projects.md)합니다.  
   
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#12](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#12)]  
   
-## <a name="test-the-application"></a>응용 프로그램 테스트  
+## <a name="test-the-application"></a>애플리케이션 테스트  
  통합 문서가 있는지 테스트할 수 있습니다 메시지 **Hello World!** 단추를 클릭할 때 텍스트 상자에 표시 됩니다.  
   
 ### <a name="to-test-your-workbook"></a>통합 문서를 테스트하려면  
@@ -113,9 +110,7 @@ ms.locfileid: "49840287"
   
 -   확인란을 사용 하 여 서식을 변경 합니다. 자세한 내용은 [연습: CheckBox 컨트롤을 사용 하 여 변경 워크시트 서식](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [방법: Office 문서에 Windows Forms 컨트롤 추가](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
  [Excel을 사용 하 여 연습](../vsto/walkthroughs-using-excel.md)   
  [Office 문서의 Windows Forms 컨트롤의 제한 사항](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
-  
-  

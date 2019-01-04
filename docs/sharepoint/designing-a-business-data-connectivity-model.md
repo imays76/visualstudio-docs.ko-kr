@@ -1,13 +1,8 @@
 ---
 title: 비즈니스 데이터 연결 모델 디자인 | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 27b83cefdaa24e5a439352318aa149ec4e24d09d
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 97172f0b3a03d015c087a58077696ceff2b4369d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327244"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858385"
 ---
 # <a name="design-a-business-data-connectivity-model"></a>비즈니스 데이터 연결 모델 디자인
   모델 파일에 엔터티 및 메서드를 추가 하 여 비즈니스 데이터 연결 (BDC) 서비스에 대 한 모델을 개발할 수 있습니다. 엔터티는 데이터 필드의 컬렉션을 설명 합니다. 예를 들어, 엔터티는 데이터베이스의 테이블을 나타낼 수 있습니다. 메서드를 추가, 삭제 또는 엔터티를 나타내는 데이터 업데이트와 같은 작업을 수행 합니다. 자세한 내용은 [SharePoint 비즈니스 데이터 통합](../sharepoint/integrating-business-data-into-sharepoint.md)합니다.  
@@ -57,7 +52,7 @@ ms.locfileid: "36327244"
  메서드 인스턴스의 기본값에 추가 하려면 모델의 XML을 직접 수정 해야 합니다. 자세한 내용은 [DefaultValue](http://go.microsoft.com/fwlink/?LinkID=169279)합니다.  
   
 ## <a name="add-filter-descriptors"></a>필터 설명자 추가
- 모델의 소비자가 기준과 일치 하는 엔터티의 인스턴스를 검색 하려고 할 수 있습니다. 이 기능을 사용 하려면 메서드에 필터 설명자를 추가할 수 있습니다. 필터 설명자 실행 되기 전에 값을 메서드에 전달 하 여 메서드 결과 집합을 필터링 할 모델 소비자를 사용 합니다. 자세한 내용은 [방법: 외부 시스템에서 인스턴스 제한 하는 작업 필터 매개 변수 추가](http://go.microsoft.com/fwlink/?LinkID=169267)합니다.  
+ 모델의 소비자가 기준과 일치 하는 엔터티의 인스턴스를 검색 하려고 할 수 있습니다. 이 기능을 사용 하려면 메서드에 필터 설명자를 추가할 수 있습니다. 필터 설명자 실행 되기 전에 값을 메서드에 전달 하 여 메서드 결과 집합을 필터링 할 모델 소비자를 사용 합니다. 자세한 내용은 [방법: 외부 시스템에서 인스턴스를 제한 하는 작업 필터 매개 변수를 추가할](http://go.microsoft.com/fwlink/?LinkID=169267)합니다.  
   
  SharePoint은 사용자가 필터 값을 제공할 수 있는 몇 가지 기능을 제공 합니다. 예를 들어, 비즈니스 데이터 웹 파트를 필터 텍스트 상자를 제공합니다. 사용자는 텍스트 상자에 값을 입력하여 목록에서 데이터를 제한할 수 있습니다. 메서드에 필터 설명자를 추가 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법: Finder 메서드에 필터 설명자 추가](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md)합니다.  
   
@@ -71,7 +66,7 @@ ms.locfileid: "36327244"
  필터 설명자의 속성에 대 한 자세한 내용은 참조 하세요. [FilterDescriptor](http://go.microsoft.com/fwlink/?LinkID=169280)합니다.  
   
 ### <a name="provide-default-values"></a>기본 값 제공
- 일부 경우에 사용자 필터 값을 제공 하지 않을 수 있습니다. 메서드 인스턴스에 기본값을 추가 하 여 또는 메서드의 코드에서 기본 값을 설정 하 여 기본값을 제공할 수 있습니다. 메서드 인스턴스의 기본값을 추가 하는 방법에 대 한 자세한 내용은 참조 하세요. [MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282)합니다. 메서드의 코드에서 입력된 매개 변수의 기본값을 설정 하는 방법의 예제를 참조 하세요 [방법: Finder 메서드에 필터 설명자 추가](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md)합니다.  
+ 일부 경우에 사용자 필터 값을 제공 하지 않을 수 있습니다. 메서드 인스턴스에 기본값을 추가 하 여 또는 메서드의 코드에서 기본 값을 설정 하 여 기본값을 제공할 수 있습니다. 메서드 인스턴스의 기본값을 추가 하는 방법에 대 한 자세한 내용은 참조 하세요. [MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282)합니다. 메서드의 코드에서 입력된 매개 변수의 기본값을 설정 하는 방법의 예제를 참조 하세요. [방법: Finder 메서드에 필터 설명자 추가](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md)합니다.  
   
 ## <a name="validate-the-model"></a>모델 유효성 검사
  개발 하는 동안 모델을 확인할 수 있습니다. Visual Studio에서 예상 대로 동작 모델을 방해할 수 있는 문제를 식별 합니다. 이러한 문제는 Visual Studio에 나타납니다 **오류 목록**합니다.  
@@ -130,7 +125,6 @@ ms.locfileid: "36327244"
 |[방법: 메서드 인스턴스 정의](../sharepoint/how-to-define-a-method-instance.md)|BDC를 실행 하는 메서드의 인스턴스를 만드는 방법을 보여 줍니다.|  
 |[방법: Finder 메서드에 필터 설명자 추가](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md)|Finder 메서드에 의해 반환 되는 인스턴스의 수를 제한 하는 사용자를 사용 하도록 설정 하는 방법을 보여 줍니다.|  
 |[엔터티 간 연결 만들기](../sharepoint/creating-an-association-between-entities.md)|모델의 엔터티 간의 관계를 정의 하는 방법을 설명 합니다. 비즈니스 데이터 웹 파트, 외부 목록 및 사용자 지정 응용 프로그램 사용자 인터페이스 (UI)에서 이러한 데이터 관계를 표시할 수 있습니다.|  
-|[방법: 엔터티 간 연결 만들기](../sharepoint/how-to-create-an-association-between-entities.md)|모델의 엔터티 간의 관계를 정의 하는 방법을 보여 줍니다.|  
-|[연습: 만들기 외부 목록의 SharePoint 비즈니스 데이터를 사용 하 여](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)|만들고 SharePoint 외부 목록에서 연락처를 표시 하는 모델을 테스트 하는 방법을 보여 주는 단계별 지침을 제공 합니다.|  
+|[방법: 엔터티 간의 연결 만들기](../sharepoint/how-to-create-an-association-between-entities.md)|모델의 엔터티 간의 관계를 정의 하는 방법을 보여 줍니다.|  
+|[연습: 비즈니스 데이터를 사용 하 여 SharePoint에서 만들기 외부 목록](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)|만들고 SharePoint 외부 목록에서 연락처를 표시 하는 모델을 테스트 하는 방법을 보여 주는 단계별 지침을 제공 합니다.|  
 |[SharePoint 비즈니스 데이터 통합](../sharepoint/integrating-business-data-into-sharepoint.md)|BDC 서비스에 대 한 모델을 디자인 및 구현에 대해 개괄적으로 설명 합니다.|  
-  

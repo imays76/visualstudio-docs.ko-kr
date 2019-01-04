@@ -1,9 +1,6 @@
 ---
 title: 디버깅에 대 한 언어 서비스 지원 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugger, language support
@@ -14,23 +11,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59c044f6ffc3f2cdf0749f0192f4b8fa458b00cc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1963dad4861ad9026a683c695cf25a6becff7571
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128659"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841360"
 ---
-# <a name="language-service-support-for-debugging"></a>디버깅에 대 한 언어 서비스 지원
-언어 서비스를 통해 디버거 지원 기능을 제공할 수는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo> 인터페이스입니다. 이러한 기능에는 중단점 유효성 검사 및 식의 목록을 제공는 **자동** 창.  
+# <a name="language-service-support-for-debugging"></a>디버깅에 대한 언어 서비스 지원
+언어 서비스를 통해 디버거를 지 원하는 기능을 제공할 수는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo> 인터페이스입니다. 이러한 기능은 다음 중단점 유효성 검사 및 식의 목록을 제공 합니다 **자동** 창입니다.  
   
- 그러나 해당 언어를 디버깅 하는 식 계산기가 필요 합니다. 식 계산기는 디버깅 하는 동안 값을 생성 하는 식을 계산 하는 일을 담당 합니다. CLR 식 계산기를 구현 하는 방법에 대 한 내용은 다음을 참조 하십시오.  
+ 그러나 언어를 디버그 하는 식 계산기가 해야 합니다. 식 계산기는 디버깅 하는 동안 값을 생성 하는 식을 계산 하는 일을 담당 합니다. CLR 식 계산기를 구현 하는 방법에 대 한 내용은 다음을 참조 하세요.  
   
 -   [CLR 식 계산기](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)  
   
 -   [관리 되는 식 계산기 예제](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)  
   
 ## <a name="compiler-output"></a>컴파일러 출력  
- 컴파일러의 형식이 결정 해당 언어에 대해 디버깅을 구현 하기 위해 수행 해야 합니다. 컴파일러는 Windows 운영 체제를 대상 하.pdb 파일을 작성 하는 경우에 디버깅 엔진 Visual Studio에 통합 된 네이티브 코드와 프로그램을 디버깅할 수 있습니다. 컴파일러에서 생성 하는 Microsoft MSIL (intermediate language) 하는 경우에 디버깅 엔진도 Visual Studio에 통합 된 관리 코드와 프로그램을 디버깅할 수 있습니다. 컴파일러 전용 운영 체제 또는 다른 런타임 환경을 대상으로 하는 경우 사용자 고유의 디버깅 엔진을 작성 해야 합니다.  
+ 컴파일러의 형식 언어에 대 한 디버깅을 구현 하기 위해 수행 해야 하는 항목을 결정 합니다. 컴파일러는 Windows 운영 체제를 대상으로 하 고.pdb 파일을 작성 하는 경우 네이티브 코드 디버깅 Visual Studio에 통합 된 엔진을 사용 하 여 프로그램을 디버깅할 수 있습니다. 컴파일러는 MSIL (Microsoft intermediate language)를 생성 하는 경우에 디버깅 엔진으로, Visual Studio에도 통합 되어 관리 되는 코드를 사용 하 여 프로그램을 디버깅할 수 있습니다. 컴파일러는 전용 운영 체제 또는 다양 한 런타임 환경을 대상으로 하는 경우 디버깅 엔진을 직접 작성 해야 합니다.  
   
- 해당 언어에 대 한 디버깅 구현에 대 한 자세한 내용은 참조 하십시오. [시작](../../extensibility/debugger/getting-started-with-debugger-extensibility.md) Visual Studio Debugging SDK에 있습니다.
+ 언어에 대 한 디버깅 구현에 대 한 자세한 내용은 참조 하세요. [Getting Started](../../extensibility/debugger/getting-started-with-debugger-extensibility.md) Visual Studio 디버깅 sdk에서.

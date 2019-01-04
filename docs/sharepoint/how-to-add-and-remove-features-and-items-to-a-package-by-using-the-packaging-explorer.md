@@ -1,15 +1,10 @@
 ---
-title: '방법: 패키징 탐색기를 사용 하 여 패키지에 기능과 항목을 제거 하 고 추가 | Microsoft Docs'
-ms.custom: ''
+title: '방법: 추가 및 패키징 탐색기를 사용 하 여 패키지에 기능과 항목 제거 | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.RAD.PackagingExplorer
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7875401dee07961d63de6c7b71a97e647c21a0b7
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: b1211b0bdc3625b915221cfafaa5377d371aaa25
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755614"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880863"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>방법: 추가 및 패키징 탐색기를 사용 하 여 패키지에 기능과 항목 제거
   SharePoint 항목 및 기능을 배포 하는 패키지를 구성 하려면 패키징 탐색기를 사용할 수 있습니다. .Wsp 파일 내에서 SharePoint 프로젝트 항목 및 기능을 조정할 수 있습니다.  
@@ -67,6 +62,5 @@ ms.locfileid: "36755614"
   
 2.  기능 또는 패키지에 대 한 바로 가기 메뉴를 열고 선택한 **유효성 검사**합니다.  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  [패키지 및 SharePoint 솔루션 배포](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

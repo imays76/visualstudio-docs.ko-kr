@@ -1,9 +1,7 @@
 ---
 title: Folder 요소 (Visual Studio 프로젝트 템플릿) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Folder
@@ -15,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4fca64abf91105e0363ecd67ea5244c533996f3
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: aacda209865ee9e7d9eae48a93be7e23f16c26ec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497177"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912732"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Folder 요소 (Visual Studio 프로젝트 템플릿)
 프로젝트에 추가 될 폴더를 지정 합니다.  
@@ -67,7 +65,7 @@ ms.locfileid: "39497177"
   
  템플릿에서 폴더에 프로젝트 항목을 구성 하려면 다음 방법 중 하나를 사용할 수 있습니다.  
   
--   템플릿에서 폴더를 포함 *.zip* 파일과 프로젝트에 추가 합니다 *.vstemplate* 파일에서 파일의 경로를 지정 하 여는 `ProjectItem` 요소를 사용 하 여 `Folder` 요소. 이것이 권장된 방법입니다. 예를 들어:  
+-   템플릿에서 폴더를 포함 *.zip* 파일과 프로젝트에 추가 합니다 *.vstemplate* 파일에서 파일의 경로를 지정 하 여는 `ProjectItem` 요소를 사용 하 여 `Folder` 요소. 이것이 권장된 방법입니다. 예:  
   
      `...`  
   
@@ -77,7 +75,7 @@ ms.locfileid: "39497177"
   
      `...`  
   
--   템플릿에서 폴더를 포함 *.zip* 파일과 프로젝트에 추가 합니다 *.vstemplate* 파일 `Folder` 요소입니다. 예를 들어:  
+-   템플릿에서 폴더를 포함 *.zip* 파일과 프로젝트에 추가 합니다 *.vstemplate* 파일 `Folder` 요소입니다. 예:  
   
      `...`  
   
@@ -91,7 +89,7 @@ ms.locfileid: "39497177"
   
      `...`  
   
--   템플릿에서 폴더를 포함 하지 *.zip* 파일을 사용 하 여 폴더를 추가 하지만 합니다 `TargetFileName` 특성을 `ProjectItem` 요소입니다. 예를 들어:  
+-   템플릿에서 폴더를 포함 하지 *.zip* 파일을 사용 하 여 폴더를 추가 하지만 합니다 `TargetFileName` 특성을 `ProjectItem` 요소입니다. 예:  
   
      `...`  
   
@@ -101,7 +99,7 @@ ms.locfileid: "39497177"
   
      `...`  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 프로젝트 템플릿에 대 한 메타 데이터는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Windows 응용 프로그램입니다.  
   
 ```  

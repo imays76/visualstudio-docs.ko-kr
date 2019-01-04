@@ -1,6 +1,5 @@
 ---
 title: Visual Studio 템플릿 매니페스트 스키마 참조 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
@@ -9,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38581d7c7dd788fef481676283fdc96c8abc96ba
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 8306eb62317807913aa0d23e19b6fb5adc4dfa53
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586315"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961957"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Visual Studio 템플릿 매니페스트 스키마 참조
 이 스키마에는 Visual Studio 템플릿 매니페스트의 형식을 설명 합니다 (*.vstman*) Visual Studio 프로젝트 또는 항목 템플릿에 대해 생성 되는 파일입니다. 또한 스키마 위치 및 템플릿에 대 한 기타 관련 정보를 설명합니다.  
@@ -29,7 +28,7 @@ ms.locfileid: "39586315"
   
 ### <a name="attributes"></a>특성  
   
--   **버전**: 템플릿 매니페스트의 버전을 나타내는 문자열입니다. 필수.  
+-   **버전**: 템플릿 매니페스트 버전을 나타내는 문자열입니다. 필수 요소.  
   
 -   **로캘**: 로캘 또는 로캘의 템플릿 매니페스트를 나타내는 문자열입니다. 로캘 값을 모든 서식 파일에 적용 됩니다. 각 로캘에 대해 별도 매니페스트를 사용 해야 합니다. 선택 사항입니다.  
   
@@ -46,11 +45,11 @@ ms.locfileid: "39586315"
  컨테이너 템플릿 매니페스트 요소입니다. 매니페스트를 정의 하는 각 템플릿에 대 한 하나의 템플릿 컨테이너를 있습니다.  
   
 ### <a name="attributes"></a>특성  
- **VSTemplateType**: 템플릿의 형식을 지정 하는 문자열 값 (`"Project"`하십시오 `"Item"`, 또는 `"ProjectGroup"`). 필수  
+ **VSTemplateType**: 서식 파일의 형식을 지정 하는 문자열 값 (`"Project"`, `"Item"`, 또는 `"ProjectGroup"`). 필수  
   
 ### <a name="child-elements"></a>자식 요소  
   
--   **RelativePathOnDisk**: 디스크에 있는 템플릿 파일의 상대 경로입니다. 이 위치에 표시 된 템플릿 트리에서 템플릿의 위치를 정의 합니다 **새 프로젝트** 하거나 **새 항목** 대화 합니다. 디렉터리 및 개별 파일로 배포 템플릿에 대해이 경로 템플릿 파일을 포함 하는 디렉터리를 가리킵니다. 템플릿 배포에 대 한는 *.zip* 파일을이 경로에 대 한 경로 여야 합니다 합니다 *.zip* 파일입니다.  
+-   **RelativePathOnDisk**:  디스크에서 템플릿 파일의 상대 경로입니다. 이 위치에 표시 된 템플릿 트리에서 템플릿의 위치를 정의 합니다 **새 프로젝트** 하거나 **새 항목** 대화 합니다. 디렉터리 및 개별 파일로 배포 템플릿에 대해이 경로 템플릿 파일을 포함 하는 디렉터리를 가리킵니다. 템플릿 배포에 대 한는 *.zip* 파일을이 경로에 대 한 경로 여야 합니다 합니다 *.zip* 파일입니다.  
   
 -   * * VSTemplateHeader: A [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) 헤더를 설명 하는 요소입니다.  
   
@@ -67,13 +66,13 @@ ms.locfileid: "39586315"
   
 ### <a name="child-elements"></a>자식 요소  
   
--   **RelativePath**: 템플릿의 경로입니다. 모든 매니페스트에 대 한 첫 번째 것 win 됩니다 있도록 경로 당 하나의 항목 수입니다.  
+-   **RelativePath**: 서식 파일의 경로입니다. 모든 매니페스트에 대 한 첫 번째 것 win 됩니다 있도록 경로 당 하나의 항목 수입니다.  
   
 -   **LocalizedName**: A **NameDescriptionIcon** 지역화 된 이름을 지정 하는 요소입니다. 선택 사항입니다.  
   
 -   **SortOrder**: 정렬 순서를 지정 하는 문자열입니다. 선택 사항입니다.  
   
--   **ParentFolderOverrideName**: 부모 폴더의 이름을 재정의 합니다. 선택 사항입니다. 이 요소에는 **이름을** 특성 이름을 지정 하는 문자열 값입니다.  
+-   **ParentFolderOverrideName**: 부모 폴더의 재정의 된 이름입니다. 선택 사항입니다. 이 요소에는 **이름을** 특성 이름을 지정 하는 문자열 값입니다.  
   
 ### <a name="parent-element"></a>부모 요소  
  **VSTemplateManifest**  
@@ -85,7 +84,7 @@ ms.locfileid: "39586315"
   
 -   **패키지**: 패키지를 지정 하는 문자열 값입니다. 선택 사항입니다.  
   
--   **ID**: ID를 지정 하는 문자열 값 선택 사항입니다.  
+-   **ID**: Id를 지정 하는 문자열 값 선택 사항입니다.  
   
 ### <a name="child-elements"></a>자식 요소  
  없음  

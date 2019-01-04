@@ -1,13 +1,8 @@
 ---
-title: '연습: 비즈니스 데이터를 사용 하 여 SharePoint에서 외부 목록 만들기 | Microsoft Docs'
-ms.custom: ''
+title: '연습: 비즈니스 데이터를 사용 하 여 SharePoint에 외부 목록 만들기 | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -24,14 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 18848f0ebd6ffa289ea09553de82f5b9eb893181
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 96c52d1d30444aa557465ce2022a3ef1db4c3de0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295841"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918786"
 ---
-# <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>연습: 비즈니스 데이터를 사용 하 여 SharePoint에서 외부 목록 만들기
+# <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>연습: 비즈니스 데이터를 사용 하 여 SharePoint에 외부 목록 만들기
 
 데이터 연결 (BDC (비즈니스) 서비스를 SharePoint을 백 엔드 서버 응용 프로그램, 웹 서비스 및 데이터베이스의 비즈니스 데이터를 표시할 수 있습니다.
 
@@ -125,7 +120,7 @@ ms.locfileid: "51295841"
 
 모델에 엔터티를 추가 합니다. Visual Studio에서 엔터티를 추가할 수 있습니다 **도구 상자** BDC 디자이너에 있습니다.
 
-1. 메뉴 모음에서 선택 **뷰** > **도구 상자**합니다.
+1. 메뉴 모음에서 **보기** > **도구 상자**를 선택합니다.
 
 2. 에 **BusinessDataConnectivity** 탭의 **도구 상자**, 추가 **엔터티** BDC 디자이너에 합니다.
 
@@ -192,7 +187,7 @@ Specificfinder 메서드를 사용 하 여 연락처 엔터티를 추가 합니�
     |FirstName|System.String|
     |LastName|System.String|
     |전화 번호|System.String|
-    |전자 메일 주소|System.String|
+    |EmailAddress|System.String|
     |EmailPromotion|System.Int32|
     |NameStyle|System.Boolean|
     |PasswordHash|System.String|

@@ -1,9 +1,6 @@
 ---
 title: '연습: Excel 작업 창의 컨트롤에 데이터 바인딩'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8fbc1baa66dc98b2c5eec27c2a86e0fde3c5e967
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fd16a9443cbfd612b30872e8850a9f1b00d09108
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942649"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866805"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-an-excel-actions-pane"></a>연습: Excel 작업 창의 컨트롤에 데이터 바인딩
   이 연습에서는 Microsoft Office Excel에서 작업 창의 컨트롤에 대 한 데이터 바인딩을 보여 줍니다. 컨트롤은 SQL Server 데이터베이스의 테이블 간 마스터/세부 관계를 보여 줍니다.  
@@ -61,7 +58,7 @@ ms.locfileid: "49942649"
   
 ### <a name="to-create-a-new-project"></a>새 프로젝트를 만들려면  
   
-1.  이름으로 Excel 통합 문서 프로젝트를 만듭니다 **내 Excel 작업 창의**합니다. 마법사에서 선택 **새 문서 만들기**합니다. 자세한 내용은 [방법: Visual Studio에서 만드는 Office 프로젝트](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
+1.  이름으로 Excel 통합 문서 프로젝트를 만듭니다 **내 Excel 작업 창의**합니다. 마법사에서 선택 **새 문서 만들기**합니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
   
      Visual Studio 디자이너에서 새 Excel 통합 문서를 열고 사이트를 추가 합니다 **내 Excel 작업 창의** 프로젝트가 **솔루션 탐색기**.  
   
@@ -166,7 +163,7 @@ ms.locfileid: "49942649"
      [!code-csharp[Trin_VstcoreActionsPaneExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#4)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#4)]  
   
-## <a name="test-the-application"></a>응용 프로그램 테스트  
+## <a name="test-the-application"></a>애플리케이션 테스트  
  이제 문서를 열 때 작업 창이 열리고는 컨트롤이 있는 마스터/세부 관계를 확인 하 여 문서를 테스트할 수 있습니다.  
   
 ### <a name="to-test-your-document"></a>문서를 테스트하려면  
@@ -190,5 +187,3 @@ ms.locfileid: "49942649"
  [작업 창 개요](../vsto/actions-pane-overview.md)   
  [방법: 작업 창에서 컨트롤 레이아웃 관리](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
  [Office 솔루션의 컨트롤에 데이터 바인딩](../vsto/binding-data-to-controls-in-office-solutions.md)  
-  
-  

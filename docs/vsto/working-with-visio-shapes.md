@@ -1,9 +1,6 @@
 ---
 title: Visio 셰이프 작업
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 385b546e812c3772188abf3ee2d1a2767d28eb46
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: aa78a0b8956b390e48221f7a516c7a41e6f5ced9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258387"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942322"
 ---
 # <a name="work-with-visio-shapes"></a>Visio 셰이프 작업
   이 섹션의에서 항목에서는 Microsoft Office Visio의 개체 모델을 사용 하 여 Office 프로젝트의 셰이프를 사용 하 여 작업에 대 한 단계별 절차 및 코드 예제를 제공 합니다.  
@@ -35,5 +32,3 @@ ms.locfileid: "35258387"
  [Visio 솔루션](../vsto/visio-solutions.md)   
  [Visio 개체 모델 개요](../vsto/visio-object-model-overview.md)   
  [Office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)  
-  
-  

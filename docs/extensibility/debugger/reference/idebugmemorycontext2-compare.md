@@ -1,9 +1,6 @@
 ---
 title: IDebugMemoryContext2::Compare | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugMemoryContext2::Compare
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5be5c6dccecc8191030482c282033aa6159f2022
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 86ba475aa9eab6b6cd878f9051e5851611955cf1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873905"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851179"
 ---
 # <a name="idebugmemorycontext2compare"></a>IDebugMemoryContext2::Compare
 일치 하는 첫 번째 컨텍스트의 인덱스를 반환 하는 비교 플래그를 나타내는 방식으로 지정된 된 배열에 각 컨텍스트에 메모리 컨텍스트를 비교 합니다.  
@@ -29,7 +26,7 @@ ms.locfileid: "49873905"
 ## <a name="syntax"></a>구문  
   
 ```cpp  
-HRESULT Compare(   
+HRESULT Compare(   
    CONTEXT_COMPARE        compare,  
    IDebugMemoryContext2** rgpMemoryContextSet,  
    DWORD                  dwMemoryContextSetLen,  

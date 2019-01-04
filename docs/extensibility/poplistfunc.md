@@ -1,9 +1,6 @@
 ---
 title: POPLISTFUNC | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - POPDIRLISTFUNC
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 061f7b4d1c1fb9ddeb76444f058a95fe30abe47c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b888875720ae08ec4c8dffdc65031877f31ca924
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920874"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926098"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
 이 콜백은에 제공 되는 [SccPopulateList](../extensibility/sccpopulatelist-function.md) IDE에서 소스 제어 플러그 인 파일 또는 디렉터리의 목록을 업데이트 하는 데 사용 됩니다 (도 제공는 `SccPopulateList` 함수).  
@@ -65,7 +62,7 @@ typedef BOOL (*POPLISTFUNC) (
 > [!NOTE]
 >  `SCC_CAP_POPULATELIST` 기능 비트 Visual Studio에 필요 합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [IDE에 의해 구현 된 콜백 함수](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [원본 제어 플러그 인](../extensibility/source-control-plug-ins.md)   
  [SccPopulateList](../extensibility/sccpopulatelist-function.md)   

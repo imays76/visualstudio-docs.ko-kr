@@ -1,9 +1,6 @@
 ---
 title: '방법: 실행 취소 스택을 지웁니다. | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - clear undo stack
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a1575093ee78fec887c9fbedcfc29339f86f2e7
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 14cf2af71f492dc4a82f6d8d9cf05fadcb0dcda2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370486"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827549"
 ---
 # <a name="how-to-clear-the-undo-stack"></a>방법: 실행 취소 스택을 지웁니다.
 아래에 다음 프로시저 실행 취소 스택을 지웁니다. 하는 방법에 설명 합니다.  
@@ -45,5 +42,5 @@ ms.locfileid: "46370486"
     }  
     ```  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [방법: 실행 취소 관리 구현](../extensibility/how-to-implement-undo-management.md)

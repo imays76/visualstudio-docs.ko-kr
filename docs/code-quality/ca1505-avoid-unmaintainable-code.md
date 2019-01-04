@@ -1,8 +1,7 @@
 ---
-title: 'CA1505: 유지 관리할 수 없는 코드를 방지 합니다.'
+title: 'CA1505: 유지 관리할 수 없는 코드를 사용하지 마세요.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - AvoidUnmaintainableCode
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7678b0f6b435929c9e53a40062155842e273bbdc
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 250049806eb8765f9cc080f1b2de0b7ae0dd1fce
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740314"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864558"
 ---
-# <a name="ca1505-avoid-unmaintainable-code"></a>CA1505: 유지 관리할 수 없는 코드를 방지 합니다.
+# <a name="ca1505-avoid-unmaintainable-code"></a>CA1505: 유지 관리할 수 없는 코드를 사용하지 마세요.
 
 |||
 |-|-|

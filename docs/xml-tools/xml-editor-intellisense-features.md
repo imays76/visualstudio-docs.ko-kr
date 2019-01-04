@@ -2,7 +2,6 @@
 title: XML 편집기 IntelliSense 기능
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 2b26f214-cc3a-46bf-b260-14eb8e599182
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 78a9711a623abe2f7a37cb03be628c2b60723359
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 36350123135142e84adff0c3189ba81e31ebf6b2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886385"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986208"
 ---
 # <a name="xml-editor-intellisense-features"></a>XML 편집기 IntelliSense 기능
 
@@ -118,7 +117,7 @@ XML 편집기는 네임 스페이스를 삽입할 수 있습니다 또는 네임
 
 3.  아무 것도 변경 합니다 **자동 삽입** 섹션을 클릭 **확인**합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [XML 편집기](../xml-tools/xml-editor.md)
 - [IntelliSense 사용](../ide/using-intellisense.md)

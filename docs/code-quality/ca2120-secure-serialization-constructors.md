@@ -1,8 +1,7 @@
 ---
-title: 'CA2120: serialization 생성자를 안전하게 하십시오.'
+title: 'CA2120: serialization 생성자를 안전하게 하세요.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2120
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 123bff32b847342f4081a73abb1d8b899cc0efec
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 1dbb6f74b138b0ec555af06ece4b6cb11ad8b678
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548506"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899686"
 ---
-# <a name="ca2120-secure-serialization-constructors"></a>CA2120: serialization 생성자를 안전하게 하십시오.
+# <a name="ca2120-secure-serialization-constructors"></a>CA2120: serialization 생성자를 안전하게 하세요.
 
 |||
 |-|-|
@@ -52,9 +51,9 @@ ms.locfileid: "45548506"
 ## <a name="related-rules"></a>관련된 규칙
  [CA2229: serialization 생성자를 구현하십시오.](../code-quality/ca2229-implement-serialization-constructors.md)
 
- [CA2237: ISerializable 형식을 SerializableAttribute로 표시하십시오.](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
+ [CA2237: SerializableAttribute로 ISerializable 형식 표시](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>
 - <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>

@@ -1,13 +1,8 @@
 ---
-title: '연습: SharePoint 용 웹 파트 만들기 | Microsoft Docs'
-ms.custom: ''
+title: '연습: SharePoint를 위한 웹 파트 만들기 | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 09b9299c6428ef63ccf71220fc3cb599e9e3b5a9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5f2c851659d09cc118f8f54b6e82bb3b806d7e34
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872410"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944287"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>연습: SharePoint 용 웹 파트 만들기
 
@@ -219,7 +214,7 @@ ms.locfileid: "49872410"
 
      모든 직원에 게 웹 파트에 표시 됩니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [SharePoint 용 웹 파트 만들기](../sharepoint/creating-web-parts-for-sharepoint.md)  
 [방법: SharePoint 웹 파트 만들기](../sharepoint/how-to-create-a-sharepoint-web-part.md)  

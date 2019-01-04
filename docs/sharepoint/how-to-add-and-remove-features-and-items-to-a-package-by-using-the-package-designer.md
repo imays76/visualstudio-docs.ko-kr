@@ -1,15 +1,10 @@
 ---
 title: '방법: 추가 및 패키지 디자이너를 사용 하 여 패키지에 기능과 항목 제거 | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.RAD.PackageDesignerDesign
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,17 +14,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 60a1de6a499b033f99844280c3d2aa73b6ed8ba6
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 5b28db9329debba9e46606d0f57117e4f01a8f26
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294970"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906919"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>방법: 추가 및 패키지 디자이너를 사용 하 여 패키지에 기능과 항목 제거
   SharePoint 솔루션을 만들 때 Visual Studio 솔루션의 패키지에 기본 SharePoint 기능을 추가 합니다. 최종 배포 하기 전에 추가할 수 있으며 SharePoint 프로젝트 항목 및 SharePoint 패키지를 수정 하는 기능을 제거할 수 있습니다.  
   
- 또는 SharePoint 프로젝트 항목 추가 및 제거를 패키징 탐색기를 사용할 수 있습니다. 볼 수 있으며 기능 패키지 (.wsp)에 포함 되 고 SharePoint 프로젝트 항목의 계층 구조를 변경할 수도 있습니다. 자세한 내용은 참조 하세요. [방법: 패키징 탐색기를 사용 하 여 패키지에 기능과 항목을 제거 하 고 추가](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md)합니다.  
+ 또는 SharePoint 프로젝트 항목 추가 및 제거를 패키징 탐색기를 사용할 수 있습니다. 볼 수 있으며 기능 패키지 (.wsp)에 포함 되 고 SharePoint 프로젝트 항목의 계층 구조를 변경할 수도 있습니다. 자세한 내용은 [방법: 추가 및 패키징 탐색기를 사용 하 여 패키지에 기능과 항목 제거](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md)합니다.  
   
 ## <a name="add-features-to-a-sharepoint-package"></a>SharePoint 패키지에 기능 추가  
  패키지 디자이너를 사용 하 여 SharePoint 패키지에 기능을 추가할 수 있습니다.  
@@ -65,4 +60,3 @@ ms.locfileid: "51294970"
  [SharePoint 솔루션 패키지 만들기](../sharepoint/creating-sharepoint-solution-packages.md)   
  [방법: SharePoint 솔루션 패키지 사용자 지정](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)  
  [방법: 패키지 만들기](https://msdn.microsoft.com/b24be45c-e91d-49bb-afb0-7b265404214b)  
-  

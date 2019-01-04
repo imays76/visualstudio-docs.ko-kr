@@ -1,9 +1,6 @@
 ---
 title: QUERYCHANGESFUNC | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - QUERYCHANGESFUNC
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74b5241a14ebaecb05db36a9ab4e1b808917afa5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1a50de0f08f5e31404a6dbe2cbf3a268ee53cc69
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879183"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855012"
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
 이에서 사용 하는 콜백 함수는 [SccQueryChanges](../extensibility/sccquerychanges-function.md) 파일 이름의 컬렉션을 열거 하 고 각 파일의 상태를 확인 하는 작업입니다.  

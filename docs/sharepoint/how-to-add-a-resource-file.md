@@ -1,13 +1,8 @@
 ---
 title: '방법: 리소스 파일 추가 | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0091054c0c0d2cfb7f19f2ca46839cfdcf47832b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1e21aefb95dab4b4a6fdc852159c7a0f226e613f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861191"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877629"
 ---
 # <a name="how-to-add-a-resource-file"></a>방법: 리소스 파일 추가
   리소스 파일을 추가 하기 위한 명령을 솔루션 노드와 솔루션 탐색기에서 기능 노드의 바로 가기 메뉴를 켜져 있습니다. 자세한 내용은 [지역화 SharePoint 솔루션](../sharepoint/localizing-sharepoint-solutions.md)합니다.  
@@ -57,5 +52,3 @@ ms.locfileid: "49861191"
   
 ## <a name="see-also"></a>참고자료
  [SharePoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)  
-  
- 

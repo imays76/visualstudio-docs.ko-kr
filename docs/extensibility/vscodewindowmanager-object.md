@@ -1,9 +1,6 @@
 ---
 title: VSCodeWindowManager 개체 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - VSCodeWindowManager
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7617062caf233f0711ce2b97d6816af25023ad83
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 2fc3aa99fd54234cdc21250a39052b37d233a70b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586741"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943290"
 ---
 # <a name="vscodewindowmanager-object"></a>VSCodeWindowManager 개체
 언어 서비스는 코드 창 관리자를 구현 하 고는 선의 도구 영역 (예를 들어, 드롭다운 표시줄)를 관리 합니다. 자세한 내용은 [레거시 API를 사용 하 여 사용자 지정 코드 Windows](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)합니다.  
@@ -32,5 +29,5 @@ ms.locfileid: "39586741"
 |---------------|-----------------|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|도구 영역을 (예: 드롭다운 표시줄)를 추가 하거나 코드 창에서 제거할 수 있습니다.|  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [기존 API를 사용 하 여 사용자 지정 코드 창](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)

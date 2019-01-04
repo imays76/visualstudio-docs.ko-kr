@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: e1fd3b1cd19efa9032b7b92576a489e3b17373db
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 01aee6de65f1ddc0db16b0ebe527fb3d4d5480ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919342"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958815"
 ---
 # <a name="develop-tests-from-a-model"></a>모델에서 테스트 개발
 요구 사항 및 아키텍처 모델을 사용하여 시스템 및 해당 구성 요소의 테스트를 구성하도록 지원할 수 있습니다. 이렇게 하면 사용자 및 기타 이해 관계자에게 중요한 요구 사항을 테스트하는지 확인할 수 있고 요구 사항이 변경될 때 테스트를 빠르게 업데이트할 수 있습니다. [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)]를 사용하는 경우 모델과 테스트 간의 링크를 유지할 수도 있습니다.
@@ -52,7 +51,7 @@ ms.locfileid: "49919342"
 
     -   개발 계획에서 사용 사례의 한 측면을 다른 측면보다 먼저 구현하는 경우 개발이 진행됨에 따라 테스트를 별도로 사용하도록 설정할 수 있습니다.
 
--   테스트를 디자인할 때 사후 조건이 달성되었는지 여부를 확인하는 테스트 데이터 선택 항목을 코드 또는 스크립트에서 구분합니다. 예를 들어 단순한 산술 함수 테스트는 입력 4, 출력이 2인지 확인이 될 수 있습니다. 대신, 스크립트를 입력 선택, 출력에 자신을 곱하고 결과가 원래 입력인지 확인으로 디자인합니다. 이 스타일을 사용하면 테스트의 본문을 변경하지 않고 테스트 입력을 확인할 수 있습니다.
+-   테스트를 디자인할 때 사후 조건이 달성되었는지 여부를 확인하는 테스트 데이터 선택 항목을 코드 또는 스크립트에서 구분합니다. 예를 들어 단순한 산술 함수 테스트 수 있습니다. 입력 4; 출력이 2 인지 확인 합니다. 대신 스크립트를 디자인 합니다. 입력;를 선택 합니다. 자체적으로 출력을 곱하는 하 고 결과가 원래 입력 인지 확인 합니다. 이 스타일을 사용하면 테스트의 본문을 변경하지 않고 테스트 입력을 확인할 수 있습니다.
 
 #### <a name="linking-tests-to-use-cases"></a>사용 사례에 테스트 연결
  사용 중인 경우 [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] 를 디자인 및 테스트를 실행 하려면 요구 사항, 사용 사례 또는 사용자 스토리 작업 항목 아래에 테스트를 구성할 수 있습니다. 모델의 사용 사례에 이러한 작업 항목을 연결할 수 있습니다. 이렇게 하면 테스트에 대한 요구 사항 변경을 신속하게 추적할 수 있으며 각 사용 사례의 진행률을 추적하는 데 도움이 됩니다.

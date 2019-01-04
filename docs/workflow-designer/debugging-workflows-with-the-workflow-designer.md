@@ -3,7 +3,6 @@ title: 워크플로 디자이너로 워크플로 디버깅
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - Visual Studio Workflow Designer [WFD], debugging workflows
 - Workflow Designer [WFD], debugging workflows
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 482e13a91513151d7c4595e0a622f223751ae553
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 64574156bb1645a3d1f4e84f50a8e322751fd370
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755316"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923430"
 ---
 # <a name="debug-workflows-with-the-workflow-designer"></a>워크플로 디자이너로 워크플로 디버깅
 
@@ -37,13 +36,13 @@ ms.locfileid: "36755316"
    > [!NOTE]
    > 워크플로 응용 프로그램은 x86을 대상으로 하는 경우 아키텍처 원격 디버깅이 작동 하지 않습니다 원격 컴퓨터의 Visual Studio가 설치 되어 아니면 워크플로 응용 프로그램에 대 한 대상 로변경되고64비트운영체제를실행하는컴퓨터에서호스트될 **모든 CPU**합니다.
 
-## <a name="step-through-code"></a>코드를 단계별로 실행
+## <a name="step-through-code"></a>단계별 코드 실행
 
-- **들어가기**: 키를 눌러 작업으로 단계 **F11**합니다. 디버거는 정의된 임의의 처리기에서 한 단계씩 코드를 실행합니다. 정의된 처리기가 없으면 해당 활동을 프로시저 단위로 실행합니다. 다른 활동이 포함된 복합 활동의 경우 실행 중인 첫 번째 활동을 단계적으로 실행합니다.
+- **단계**: 키를 눌러 작업으로 단계 **F11**합니다. 디버거는 정의된 임의의 처리기에서 한 단계씩 코드를 실행합니다. 정의된 처리기가 없으면 해당 활동을 프로시저 단위로 실행합니다. 다른 활동이 포함된 복합 활동의 경우 실행 중인 첫 번째 활동을 단계적으로 실행합니다.
 
-- **나가기:** 키를 눌러 작업을 벗어난 단계 **Shift**+**F11**합니다. 활동에서 나가기를 수행하면 현재 활동 및 모든 형제 활동이 완료 시까지 실행됩니다. 그런 다음 디버거는 현재 활동의 부모에서 중단합니다. 코드 처리기에서 나갈 때 디버거는 처리기가 연결된 활동에서 중단합니다.
+- **프로시저 나가기:** 키를 눌러 작업을 벗어난 단계 **Shift**+**F11**합니다. 활동에서 나가기를 수행하면 현재 활동 및 모든 형제 활동이 완료 시까지 실행됩니다. 그런 다음 디버거는 현재 활동의 부모에서 중단합니다. 코드 처리기에서 나갈 때 디버거는 처리기가 연결된 활동에서 중단합니다.
 
-- **스텝**: 키를 눌러 작업 건너뛰기 **F10**합니다. 복합 활동을 프로시저 단위로 실행할 때 디버거는 복합 활동의 첫 번째 실행 가능 자식에서 중단합니다. <xref:System.Activities.Statements.Assign> 활동과 같은 비복합 활동을 프로시저 단위로 실행할 경우 디버거는 해당 활동 및 그와 연결된 처리기를 실행하고 다음 활동에서 중단합니다. 실행할 활동이 복합 활동 중 마지막 자식 활동인 경우, 디버거는 활동 실행 후 부모 활동에서 중단합니다.
+- **프로시저 단위 실행**: 키를 눌러 작업 건너뛰기 **F10**합니다. 복합 활동을 프로시저 단위로 실행할 때 디버거는 복합 활동의 첫 번째 실행 가능 자식에서 중단합니다. <xref:System.Activities.Statements.Assign> 활동과 같은 비복합 활동을 프로시저 단위로 실행할 경우 디버거는 해당 활동 및 그와 연결된 처리기를 실행하고 다음 활동에서 중단합니다. 실행할 활동이 복합 활동 중 마지막 자식 활동인 경우, 디버거는 활동 실행 후 부모 활동에서 중단합니다.
 
 ## <a name="debug-with-f5"></a>F5 키를 사용 하 여 디버그
 

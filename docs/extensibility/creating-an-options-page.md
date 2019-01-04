@@ -1,9 +1,6 @@
 ---
 title: 옵션 페이지 만들기 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], creating
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b9d61b4a57e0255577fdb0621dafd4263fc127c
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 162c03fec6119985636122a414c00c96e384b340
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607772"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843689"
 ---
 # <a name="create-an-options-page"></a>옵션 페이지 만들기
 이 연습을 검토 하 고 속성을 설정 하려면 속성 표를 사용 하는 간단한 도구/옵션 페이지를 만듭니다.  
@@ -264,5 +261,5 @@ ms.locfileid: "51607772"
   
      현재 값을 표시 하는 메시지 상자 `OptionInteger`합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [옵션 및 옵션 페이지](../extensibility/internals/options-and-options-pages.md)

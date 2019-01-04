@@ -1,8 +1,7 @@
 ---
-title: 'CA1309: 서수 StringComparison을 사용하십시오.'
+title: 'CA1309: 서수 StringComparison을 사용하세요.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - UseOrdinalStringComparison
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 91953fd855576b6f40d02ebb3653fff07bfdef9c
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: d7e36b199a3447ff3d38266adc723caf229973c7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546433"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838676"
 ---
-# <a name="ca1309-use-ordinal-stringcomparison"></a>CA1309: 서수 StringComparison을 사용하십시오.
+# <a name="ca1309-use-ordinal-stringcomparison"></a>CA1309: 서수 StringComparison을 사용하세요.
 
 |||
 |-|-|
@@ -47,7 +46,7 @@ ms.locfileid: "45546433"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
  라이브러리 또는 응용 프로그램 제한 된 로컬 사용자를 위한 것 때나 현재 문화권의 의미를 사용 해야 하는 경우이 규칙에서 경고를 표시 하지 않아도 안전 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [전역화 경고](../code-quality/globalization-warnings.md)
-- [CA1307: StringComparison을 지정하십시오.](../code-quality/ca1307-specify-stringcomparison.md)
+- [CA1307: StringComparison 지정](../code-quality/ca1307-specify-stringcomparison.md)

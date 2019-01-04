@@ -1,9 +1,6 @@
 ---
 title: 레거시 언어 서비스 개발 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - vs.vsip.LangServWiz.langtoks
@@ -19,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d92c07742dcc4433aa96071d655f58d938a1f80
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: c6bcf4c6993a37ec58d288d2c31f7c4cc3ecab9b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497832"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845792"
 ---
 # <a name="develop-a-legacy-language-service"></a>레거시 언어 서비스 개발
 이 섹션 항목의 링크를 도움이 되는 레거시 언어 서비스를 만듭니다.  
@@ -63,7 +60,7 @@ ms.locfileid: "39497832"
  [레거시 언어 서비스의 매개 변수 정보](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)  
  오버 로드 된 함수 및 메서드에 대 한 메서드 팁을 제공 하는 방법에 설명 합니다.  
   
- [방법: 숨겨진된 텍스트를 제공 합니다. 레거시 언어 서비스의 지원](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
+ [방법: 레거시 언어 서비스의 숨겨진된 텍스트 지원 제공](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
  숨겨진된 텍스트 영역의 용도 설명 하 고 숨겨진된 텍스트 영역을 구현 하는 방법에 대 한 지침을 제공 합니다.  
   
  [방법: 레거시 언어 서비스의 확장된 개요 표시 지원 제공](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  

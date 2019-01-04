@@ -1,6 +1,5 @@
 ---
 title: DPI Issues2 주소 지정 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
@@ -9,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c4ca03c932b86ad6f9907020b037abb1308a6f7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4c85d867d042ea51023fc20259814a27b108e150
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918534"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875169"
 ---
 # <a name="address-dpi-issues"></a>DPI 문제
 장치 수가 증가 "고해상도" 화면을 사용 하 여 전달 됩니다. 이 화면에는 일반적으로 200 개가 넘는 인치 당 픽셀 수 (가) 있습니다. 이러한 컴퓨터에서 응용 프로그램을 사용 하 여 작업 콘텐츠를 장치에 대 한 일반 보기로 거리에 있는 콘텐츠를 표시 하는 요구를 충족 하도록 확장 해야 합니다. 2014 년을 기준으로 기본 고밀도 디스플레이 대 한 대상이 모바일 컴퓨팅 장치 (태블릿, 랩톱 클램쉘 및 휴대폰)입니다.  
@@ -174,7 +173,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
   
  각 이미지 요소를 표시 하는 것에 대 한이 이중 확장, XAML 태그를 사용 하는 UI를 사용 하도록 설정 하려면 할 수정할 수 있습니다. 다음 예제에서는 Shell.12/14 고 DpiHelper 라이브러리를 사용 하 여 Visual Studio에서 WPF에서 이중 확장을 사용 하는 방법을 보여 줍니다.  
   
- 1 단계: 300%, 200%, 이미지 Prescale 등에 NearestNeighbor를 사용 하 여입니다.  
+ 1단계: 200%, 300% 등에 NearestNeighbor를 사용 하 여 이미지를 prescale입니다.  
   
  바인딩 또는 XAML 태그 확장을 사용 하 여 적용할 변환기를 사용 하 여 이미지를 prescale입니다. 예를 들어:  
   
@@ -204,7 +203,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
 </Image>  
 ```  
   
- 2 단계: 현재 DPI에 최종 크기가 올바른지 확인 합니다.  
+ 2단계: 현재 DPI에 최종 크기가 올바른지 확인 하십시오.  
   
  WPF UI UIElement 설정 BitmapScalingMode 속성을 사용 하 여 현재 dpi를 확장 하기 때문에 해당 소스 2-3 배 보다 크게 보입니다 prescaled 이미지를 사용 하 여 이미지 컨트롤을 해야 합니다. 다음은이 효과 대처 하는 몇 가지 방법입니다.  
   

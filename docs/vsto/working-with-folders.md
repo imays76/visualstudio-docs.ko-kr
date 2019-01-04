@@ -1,9 +1,6 @@
 ---
 title: 폴더 작업
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cbfe7f673554543a8d84558175b64063db9710f8
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 843019c1e7c845f0cdf2dcae7e571bf9ed991b79
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258400"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952617"
 ---
 # <a name="work-with-folders"></a>폴더 작업
   <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> 클래스에는 폴더를 액세스, 작성 및 사용자 지정할 때 사용하는 메서드 및 속성이 포함되어 있습니다.  
@@ -39,10 +36,8 @@ ms.locfileid: "35258400"
   
  Outlook 작업 및 Outlook 개체 모델에 대 한 자세한 내용은 참조 하세요. [Outlook 개체 모델 개요](../vsto/outlook-object-model-overview.md)합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [연락처 항목 작업](../vsto/working-with-contact-items.md)   
  [메일 항목 작업](../vsto/working-with-mail-items.md)   
  [달력 항목 작업](../vsto/working-with-calendar-items.md)   
  [Outlook 솔루션](../vsto/outlook-solutions.md)  
-  
-  

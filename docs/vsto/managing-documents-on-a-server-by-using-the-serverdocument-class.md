@@ -1,9 +1,6 @@
 ---
 title: ServerDocument 클래스를 사용 하 여 서버의 문서 관리
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e983f4cf1b90150113fcfa33702d85bb41a30924
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bcaebef3edcdf742bc56915d0209f3f61ee63df8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939139"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53903252"
 ---
 # <a name="manage-documents-on-a-server-by-using-the-serverdocument-class"></a>ServerDocument 클래스를 사용 하 여 서버의 문서 관리
   사용할 수는 `ServerDocument` 클래스는 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Microsoft Office Word 및 Microsoft Office Excel 설치 되지 않은 경우에 문서 수준 사용자 지정의 몇 가지 측면을 관리할 수 합니다. 다음 작업을 수행할 수 있습니다.  
@@ -61,13 +58,12 @@ ms.locfileid: "49939139"
 |작업|사용할 멤버|  
 |----------|-------------------|  
 |문서 여부를 결정 하는 문서 수준 사용자 지정의 일부입니다.|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.GetCustomizationVersion%2A> 메서드|  
-|프로그래밍 방식으로 런타임에 문서에 사용자 지정을 연결 합니다.<br /><br /> 자세한 내용은 참조 하세요. [방법: 연결 관리 되는 문서에 대 한 코드 확장](../vsto/how-to-attach-managed-code-extensions-to-documents.md)|중 하나는 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> 메서드.|  
+|프로그래밍 방식으로 런타임에 문서에 사용자 지정을 연결 합니다.<br /><br /> 자세한 내용은 [방법: 문서에 관리 코드 확장명 연결](../vsto/how-to-attach-managed-code-extensions-to-documents.md)|중 하나는 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> 메서드.|  
 |런타임에 프로그래밍 방식으로 문서에서 사용자 지정을 제거 하려면<br /><br /> 자세한 내용은 [방법: 문서에서 관리 코드 확장명 제거](../vsto/how-to-remove-managed-code-extensions-from-documents.md)합니다.|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.RemoveCustomization%2A> 메서드|  
 |문서와 연결 된 배포 매니페스트의 URL을 가져옵니다.|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.DeploymentManifestUrl%2A> 속성|  
   
 ## <a name="see-also"></a>참고자료  
- [방법: 연결 관리 되는 문서에 대 한 코드 확장](../vsto/how-to-attach-managed-code-extensions-to-documents.md)   
+ [방법: 문서에 관리 코드 확장명 연결](../vsto/how-to-attach-managed-code-extensions-to-documents.md)   
  [방법: 문서에서 관리 코드 확장명 제거](../vsto/how-to-remove-managed-code-extensions-from-documents.md)   
  [Visual Studio Tools for Office 런타임 개요](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
  [데이터 캐시](../vsto/caching-data.md)  
-  

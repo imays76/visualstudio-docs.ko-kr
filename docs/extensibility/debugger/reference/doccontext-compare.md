@@ -1,9 +1,6 @@
 ---
 title: DOCCONTEXT_COMPARE | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - DOCCONTEXT_COMPARE
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f092666833b80dd59ed4b7b3345c379078ce2bf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0fd536404778b5f61e859da28d9e4fec1df32d3a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862959"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851062"
 ---
 # <a name="doccontextcompare"></a>DOCCONTEXT_COMPARE
 두 문서 컨텍스트를 비교 하기 위한 조건을 지정 합니다.  
@@ -28,7 +25,7 @@ ms.locfileid: "49862959"
 ## <a name="syntax"></a>구문  
   
 ```cpp  
-enum enum_DOCCONTEXT_COMPARE {   
+enum enum_DOCCONTEXT_COMPARE {   
    DOCCONTEXT_EQUAL         = 0x0001,  
    DOCCONTEXT_LESS_THAN     = 0x0002,  
    DOCCONTEXT_GREATER_THAN  = 0x0003,  
@@ -38,7 +35,7 @@ typedef DWORD DOCCONTEXT_COMPARE;
 ```  
   
 ```csharp  
-enum enum_DOCCONTEXT_COMPARE {   
+enum enum_DOCCONTEXT_COMPARE {   
    DOCCONTEXT_EQUAL         = 0x0001,  
    DOCCONTEXT_LESS_THAN     = 0x0002,  
    DOCCONTEXT_GREATER_THAN  = 0x0003,  
@@ -67,9 +64,9 @@ enum enum_DOCCONTEXT_COMPARE {
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>참고 항목  
  [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

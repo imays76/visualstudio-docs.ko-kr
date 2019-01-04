@@ -1,9 +1,6 @@
 ---
 title: IDebugProgramHost2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgramHost2
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b0161e2dd978b82eb5b09780a3fc07c25d15667
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cb56da6abb76053a3dd18989695b42b0f167c3e2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119079"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53903265"
 ---
 # <a name="idebugprogramhost2"></a>IDebugProgramHost2
 이 인터페이스는 프로그램에 대 한 호스트 (process) 정보를 제공합니다.  
@@ -32,9 +29,9 @@ IDebugProgramHost2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>구현자 참고 사항  
- 디버그 엔진으로 동일한 개체에서이 인터페이스를 구현 하는 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 호스팅 프로세스에 대 한 정보를 제공 하는 인터페이스입니다. 선택적 인터페이스입니다.  
+ 디버그 엔진으로 동일한 개체에서이 인터페이스를 구현 합니다 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 호스팅 프로세스에 대 한 정보를 제공 하는 인터페이스입니다. 이 선택적 인터페이스입니다.  
   
-## <a name="notes-for-callers"></a>호출자에 대 한 참고 사항  
+## <a name="notes-for-callers"></a>호출자에 대 한 정보  
  호출 [QueryInterface](/cpp/atl/queryinterface) 에 `IDebugProgram2` 인터페이스가이 인터페이스를 가져올 수 있습니다.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드  
@@ -49,10 +46,10 @@ IDebugProgramHost2 : IUnknown
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>참고 항목  
- [코어 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Core 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

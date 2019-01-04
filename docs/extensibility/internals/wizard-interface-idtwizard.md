@@ -1,9 +1,6 @@
 ---
 title: 마법사 인터페이스 (IDTWizard) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDTWizard interface
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f1bc71239ff7923676c35496e103223a6b6e56e
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 16ce767c70e532da5991b99a5a77f65b7adc12e0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219863"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869724"
 ---
 # <a name="wizard-interface-idtwizard"></a>마법사 인터페이스(IDTWizard)
 통합된 개발 환경 (IDE)에서 사용 하 여 <xref:EnvDTE.IDTWizard> 마법사를 사용 하 여 통신 하는 인터페이스입니다. 마법사는 IDE에서 설치 하려면이 인터페이스를 구현 해야 합니다.  

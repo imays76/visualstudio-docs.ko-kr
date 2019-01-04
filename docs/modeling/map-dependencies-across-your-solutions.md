@@ -17,13 +17,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 51b03ce504b2fe8f588cf3e360882f97d61664f8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 084518e27924c714b2e1ca7982389fb93ff274cc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896943"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861626"
 ---
 # <a name="map-dependencies-with-code-maps"></a>코드 맵 사용 하 여 종속성 매핑
 
@@ -238,9 +237,9 @@ Visual Studio 2017에서 코드 맵을 만들려면 먼저 설치 합니다 **�
 
    ![필터 창을 사용하여 디스플레이 단순화](../modeling/media/almcodemapfilterpane.png)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-- [동영상: Visual Studio 2015 코드 맵으로 코드의 디자인 이해](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)]
+- [비디오: Visual Studio 2015 코드 맵으로 코드의 디자인 이해](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)]
 - [코드 맵을 사용하여 응용 프로그램 디버그](../modeling/use-code-maps-to-debug-your-applications.md)
 - [디버그하는 동안 호출 스택의 메서드 매핑](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
 - [코드 맵 분석기를 사용하여 잠재적 문제 찾기](../modeling/find-potential-problems-using-code-map-analyzers.md)

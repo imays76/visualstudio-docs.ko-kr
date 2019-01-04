@@ -1,9 +1,6 @@
 ---
 title: 형식 시각화 도우미 및 사용자 지정 뷰어 구현 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], custom viewer
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fab6cba691a835c2213e5303c1be2419a79c18e9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 14e9efa179405602cd94fa7460a9c7790077403d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927244"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820454"
 ---
 # <a name="implement-type-visualizers-and-custom-viewers"></a>형식 시각화 도우미 및 사용자 지정 뷰어 구현
 > [!IMPORTANT]
@@ -58,7 +55,7 @@ ms.locfileid: "49927244"
   
 - [IDebugBinder3](../../extensibility/debugger/reference/idebugbinder3.md)  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [CLR 식 계산기 작성](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
  [데이터 시각화 및 보기](../../extensibility/debugger/visualizing-and-viewing-data.md)   
  [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md)

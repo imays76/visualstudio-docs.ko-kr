@@ -1,9 +1,6 @@
 ---
 title: 시작 후 시작 이벤트 보내기 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], startup events
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64a2423e3e6900d992ba1a2fafe13f72ab329520
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: caa9f615c6ed6f314695b195a6095d238382a4c2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927075"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967503"
 ---
 # <a name="send-startup-events-after-a-launch"></a>시작 후 시작 이벤트 보내기
 디버그 엔진 (DE) 프로그램에 연결 된 후 디버그 세션에 다시 일련의 시작 이벤트를 보냅니다.  
@@ -46,6 +43,6 @@ ms.locfileid: "49927075"
   
   코드 로드 및 실행할 준비가 되었지만 경우는 DE SDM을 보내는 코드를 실행 하기 전에 [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) 부하 완료 이벤트입니다. 마지막으로, 프로그램이 이미 실행 중이 아닌 경우는 DE 보냅니다는 [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) 항목 시점 이벤트, 신호 프로그램에서 해당 주 진입점에 도달 하 고 디버깅 하는 것에 대 한 준비가 되었습니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [실행 제어](../../extensibility/debugger/control-of-execution.md)   
  [디버깅 작업](../../extensibility/debugger/debugging-tasks.md)

@@ -3,8 +3,6 @@ title: Visual Studio를 사용하여 Office용 VSTO 추가 기능 만들기
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -14,15 +12,15 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ae35f11066ccb0bbd5e9fa36f137c8a77281463c
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 7708bc32e240f5976f1a7b6b9f9a1afb4c950743
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441498"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942660"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Visual Studio를 사용하여 Office용 VSTO 추가 기능 만들기
-  Visual Studio의 Microsoft Office 개발자 도구를 사용하여 Office를 확장하는 .NET Framework 응용 프로그램을 만들 수 있습니다. 이러한 응용 프로그램을 *Office 솔루션*이라고도 합니다.  
+  Visual Studio의 Microsoft Office 개발자 도구를 사용하여 Office를 확장하는 .NET Framework 애플리케이션을 만들 수 있습니다. 이러한 애플리케이션을 *Office 솔루션*이라고도 합니다.  
   
  Office 개발자 도구는 다양한 비즈니스 요구 사항에 맞는 Office 솔루션을 만드는 데 사용할 수 있는 기능을 제공합니다. 이 도구에는 Visual Basic 또는 Visual C#을 사용하여 Office 솔루션을 만들 수 있는 프로젝트 템플릿과 Office 솔루션용 사용자 지정 사용자 인터페이스를 만들 수 있는 비주얼 디자이너가 포함되어 있습니다.  
   
@@ -85,7 +83,7 @@ ms.locfileid: "53441498"
  사용자에게 Office 솔루션을 제공하는 방법과 배포 방법을 선택할 때 고려해야 하는 중요한 문제에 대한 정보를 제공합니다.  
   
  [Office 개발 샘플 및 연습](../vsto/office-development-samples-and-walkthroughs.md)  
- 일반적인 작업을 수행하기 위한 단계별 지침을 제공하는 항목과 샘플 응용 프로그램에 대한 링크를 제공합니다.  
+ 일반적인 작업을 수행하기 위한 단계별 지침을 제공하는 항목과 샘플 애플리케이션에 대한 링크를 제공합니다.  
   
  [일반 참조 &#40;Visual Studio에서 Office 개발&#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
  Office 주 interop 어셈블리, 매니페스트, 사용자 인터페이스 요소 및 오류 메시지에 대 한 자세한 정보 링크를 제공합니다.  
@@ -94,7 +92,7 @@ ms.locfileid: "53441498"
  [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]를 대상으로 하는 Office 프로젝트에서 사용되는 API 네임스페이스 및 형식 관련 정보의 링크를 제공합니다. 네임 스페이스 및 Office 프로젝트에서 사용 되는 형식에 대 한 API 참조 설명서에 대 한.NET Framework 3.5를 대상으로 하는 Visual Studio 2008 설명서에서 다음 참조 섹션을 참조 합니다. [2007 시스템 관리 되는 참조](http://go.microsoft.com/fwlink/?LinkId=160658)합니다.  
   
  [관리 되지 않는 API 참조 &#40;Visual Studio에서 Office 개발&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)  
- Office 응용 프로그램의 관리되는 VSTO 추가 기능 로드/언로드와 같은 작업을 수행하는 데 사용할 수 있는 COM 인터페이스 관련 정보에 대한 링크를 제공합니다.  
+ Office 애플리케이션의 관리되는 VSTO 추가 기능 로드/언로드와 같은 작업을 수행하는 데 사용할 수 있는 COM 인터페이스 관련 정보에 대한 링크를 제공합니다.  
   
 ## <a name="related-sections"></a>관련 단원  
  [Visual Studio 개발자 포털을 통한 office 개발](http://go.microsoft.com/fwlink/?LinkId=123844)  
@@ -113,6 +111,4 @@ ms.locfileid: "53441498"
  Visual Studio를 사용 하 여 디자인, 개발, 디버깅을 웹 응용 프로그램, XML 웹 서비스 및 기존의 클라이언트 응용 프로그램을 배포 하는 방법을 설명 하는 항목에 대 한 링크가 포함 되어 있습니다.  
   
  [Visual Studio에서.NET framework 프로그래밍](/previous-versions/visualstudio/visual-studio-2010/k1s94fta(v=vs.100))  
- Visual Basic 및 Visual C#에서 .NET Framework를 사용하여 응용 프로그램을 개발하는 방법을 설명합니다.  
-  
-  
+ Visual Basic 및 Visual C#에서 .NET Framework를 사용하여 애플리케이션을 개발하는 방법을 설명합니다.  

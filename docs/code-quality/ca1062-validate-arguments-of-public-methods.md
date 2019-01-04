@@ -1,8 +1,7 @@
 ---
-title: 'CA1062: public 메서드의 인수의 유효성을 검사하십시오.'
+title: 'CA1062: public 메서드의 인수에 대한 유효성을 검사하세요.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1062
@@ -19,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c5894eaf321204ace98a55a3d08411d61207ff7c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1b3b9461c72b21fcb2b77590786f47b90f5a98f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857565"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860756"
 ---
-# <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062: public 메서드의 인수의 유효성을 검사하십시오.
+# <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062: public 메서드의 인수에 대한 유효성을 검사하세요.
 
 |||
 |-|-|

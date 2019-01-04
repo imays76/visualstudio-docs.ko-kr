@@ -1,9 +1,6 @@
 ---
-title: '연습: C# 또는 Visual Basic을 사용 하 여 SDK 만들기 | Microsoft Docs'
-ms.custom: ''
+title: '연습: 사용 하 여 SDK 만들기 C# 또는 Visual Basic | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
 author: gregvanl
@@ -11,14 +8,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c65f827af864a32bb13a90a0ba9818467298527
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 13e95988ee67431686472b2bdb0e548c03201b7d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835159"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921655"
 ---
-# <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>연습: C# 또는 Visual Basic을 사용 하 여 SDK 만들기
+# <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>연습: 사용 하 여 SDK 만들기 C# 또는 Visual Basic
 이 연습에서는 Visual C#을 사용 하 여 간단한 수학 라이브러리 SDK를 만들고 다음 SDK는 Visual Studio 확장 (VSIX)로 패키지 하는 방법에 알아봅니다. 다음 절차를 완료 합니다.  
   
 -   [SimpleMath Windows 런타임 구성 요소를 만들려면](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createClassLibrary)  
@@ -241,7 +238,7 @@ ms.locfileid: "49835159"
   
     성공적으로 만들고 확장명 SDK를 사용 합니다.  
   
-## <a name="see-also"></a>참고자료  
- [연습: c + +를 사용 하 여 SDK 만들기](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
+## <a name="see-also"></a>참고 항목  
+ [연습: C + +를 사용 하 여 SDK 만들기](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
  [연습: JavaScript를 사용 하 여 SDK 만들기](../extensibility/walkthrough-creating-an-sdk-using-javascript.md)   
  [소프트웨어 개발 키트 만들기](../extensibility/creating-a-software-development-kit.md)

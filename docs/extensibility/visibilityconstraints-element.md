@@ -1,9 +1,6 @@
 ---
 title: VisibilityConstraints 요소 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - VisibilityConstraints
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ade6f2ac15d5b1c46b9b388d13b52d87129a66b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 394da3e3ea7123b9b7208689aef8e032300dfcde
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930273"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950292"
 ---
 # <a name="visibilityconstraints-element"></a>VisibilityConstraints 요소
 VisibilityConstraints 요소는 정적 도구 모음 및 명령 그룹의 표시 여부를 결정합니다. 표시 여부는 처음에 의해 제어 됩니다는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSPackage를 로드 하지 않고 통합된 개발 환경 (IDE)입니다.  
@@ -61,7 +58,7 @@ VisibilityConstraints 요소는 정적 도구 모음 및 명령 그룹의 표시
   
 ```xml  
 <VisibilityConstraints>  
-  <VisibilityItem guid="cmdSetGuidMyProductCommands"     id="cmdidAddWidget"  
+  <VisibilityItem guid="cmdSetGuidMyProductCommands"     id="cmdidAddWidget"  
     context="guidNotViewSourceMode"/>  
 </VisibilityConstraints>  
 ```  

@@ -1,9 +1,6 @@
 ---
 title: '연습: Visual Studio 확장 기능 게시 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - publishing web controls
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae0b9d48e2a2292229b40e3aaf2a1c755e4c844e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0eef45253ff8d6aa0060c122c5003f8f239e73c5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815743"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852455"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>연습: Visual Studio 확장 게시
 
@@ -33,7 +30,7 @@ ms.locfileid: "49815743"
 
 이 문서에서는 기본 VSPackage 확장을 사용 하지만 단계는 모든 종류의 확장에 대 한 유효한 합니다.
 
-1. C#에서 VSPackage를 만듭니다 `TestPublish` 메뉴 명령을 포함 합니다. 자세한 내용은 [첫 번째 확장 만들기: Hello World](../extensibility/extensibility-hello-world.md)합니다.
+1. C#에서 VSPackage를 만듭니다 `TestPublish` 메뉴 명령을 포함 합니다. 자세한 내용은 참조 하세요. [첫 번째 확장 만들기: Hello World](../extensibility/extensibility-hello-world.md)합니다.
 
 ## <a name="package-your-extension"></a>확장 패키지
 
@@ -123,13 +120,13 @@ Marketplace는 게시자 계정을 관리 하 고 액세스할 추가 사용자 
 
 3. 추가 하 고 적절 한 수준의 액세스를 부여 하려는 사용자의 이메일 주소를 지정할 수 있습니다 **역할 선택**합니다.  다음 옵션 중에서 선택할 수 있습니다.
 
-   * **작성자**: 사용자 확장을 게시 하지만 없습니다 보거나 관리할 수 있는 다른 사용자가 게시 된 확장 합니다.
+   * **작성자**: 사용자 확장을 게시할 수 있지만 볼 하거나 다른 사용자가 게시 된 확장을 관리 수 없습니다.
   
-   * **판독기**: 사용자 확장 하지만 수 없습니다. 게시 보거나 관리할 수 있는 확장 합니다.
+   * **판독기**: 사용자 확장을 볼 수 있지만 게시 하거나 확장을 관리할 수 없습니다.
   
-   * **참가자**: 사용자 수 게시 확장을 관리할 수 있지만 게시자 설정을 편집 하거나 없습니다 액세스를 관리 합니다.
+   * **참가자**: 사용자 게시 및 확장을 관리 하지만 수 없습니다. 게시자 설정을 편집 하거나 관리할 수 액세스 합니다.
   
-   * **소유자**: 사용자 수 게시 및 확장 관리, 게시자 설정을 편집 및 액세스를 관리 합니다.
+   * **소유자**: 사용자 수 게시 및 확장 관리, 게시자 설정을 편집 하 고 액세스 관리.
   
 ## <a name="install-the-extension-from-the-visual-studio-marketplace"></a>Visual Studio Marketplace에서 확장을 설치 합니다.
 

@@ -1,9 +1,6 @@
 ---
 title: InfoPath에 대 한 리본을 사용자 지정
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,15 +13,15 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6e6bdffe8de45db600d6fc456dbc75b8369bd2d7
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: c69ef50662bd1b98e896d1b8d3933d23be26123c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648741"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837266"
 ---
 # <a name="customize-a-ribbon-for-infopath"></a>InfoPath에 대 한 리본을 사용자 지정
-  Microsoft Office InfoPath에서 리본을 사용자 지정할 경우 응용 프로그램에서 사용자 지정 리본이 나타나는 위치를 고려해야 합니다. [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] 에서는 다음 세 가지 유형의 InfoPath 응용 프로그램 창에서 리본을 표시할 수 있습니다.  
+  Microsoft Office InfoPath에서 리본을 사용자 지정할 경우 애플리케이션에서 사용자 지정 리본이 나타나는 위치를 고려해야 합니다. [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] 에서는 다음 세 가지 유형의 InfoPath 응용 프로그램 창에서 리본을 표시할 수 있습니다.  
   
 - 디자인 모드에서 열린 양식 템플릿을 표시하는 창입니다.  
   
@@ -69,5 +66,3 @@ ms.locfileid: "53648741"
  [리본 개요](../vsto/ribbon-overview.md)   
  [리본 디자이너](../vsto/ribbon-designer.md)   
  [Ribbon XML](../vsto/ribbon-xml.md)  
-  
-  

@@ -1,8 +1,7 @@
 ---
-title: 'CA2137: 투명한 메서드는 안정형 IL만 포함해야 합니다.'
+title: 'CA2137: 투명 메서드에는 확인할 수 있는 IL만 포함되어야 합니다.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2137
@@ -12,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 131824b22291acb0b83af6ff24e9751a98db3ed1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 76d628b05ae5c0b6ccb8db94a1bf2c09537fd812
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845343"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913200"
 ---
-# <a name="ca2137-transparent-methods-must-contain-only-verifiable-il"></a>CA2137: 투명한 메서드는 안정형 IL만 포함해야 합니다.
+# <a name="ca2137-transparent-methods-must-contain-only-verifiable-il"></a>CA2137: 투명 메서드에는 확인할 수 있는 IL만 포함되어야 합니다.
 
 |||
 |-|-|

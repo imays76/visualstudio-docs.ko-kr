@@ -1,9 +1,6 @@
 ---
 title: 프로그램에 연결 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, attaching to programs
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c87aa879009ef0cd68a83d8ad7affdf0be58f796
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 50c9ce5079f15c945c963f530997d9bbc333bc42
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903649"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832611"
 ---
 # <a name="attach-to-the-program"></a>프로그램에 연결
 적절 한 포트를 사용 하 여 프로그램을 등록 한 후에 디버그 하려는 프로그램에는 디버거를 연결 해야 합니다.  
@@ -60,7 +57,7 @@ ms.locfileid: "49903649"
     > [!NOTE]
     >  이 다릅니다 `IDebugProgram2` 에 전달 된 개체는 `IDebugEngine2::Attach` 메서드. 이전에 전달 된 `IDebugProgram2` 개체 에서만 포트에서 인식 되 고 별도 개체입니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [실행 기반 첨부 파일](../../extensibility/debugger/launch-based-attachment.md)   
  [이벤트 전송](../../extensibility/debugger/sending-events.md)   
  [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)   

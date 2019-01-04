@@ -2,7 +2,6 @@
 title: 코드 분석 문제 해결
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: troubleshooting
 ms.assetid: 61c7e44d-2780-4df5-9bcb-49e40c1152fc
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b481a200cfd085cddcd0e8826eef94f7d4e5fbee
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: c11ff3f6df9ba8ca2cd58f89fd3eec89e6a9abb2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804392"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876048"
 ---
 # <a name="troubleshooting-code-analysis-issues"></a>코드 분석 문제 해결
 이 항목에는 다음 Visual Studio 코드 분석 문제에 대한 문제 해결 정보가 포함되어 있습니다.
@@ -33,6 +32,6 @@ ms.locfileid: "53804392"
 
 ## <a name="see-also"></a>참고 항목
 
-- [응용 프로그램 품질 분석](../code-quality/code-analysis-for-managed-code-overview.md)
+- [애플리케이션 품질 분석](../code-quality/code-analysis-for-managed-code-overview.md)
 - [관리 코드 품질 분석](../code-quality/code-analysis-for-managed-code-overview.md)
 - [규칙 집합을 사용하여 코드 분석 규칙 그룹화](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)

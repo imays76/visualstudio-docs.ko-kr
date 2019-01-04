@@ -1,6 +1,5 @@
 ---
 title: Assembly 요소 (Visual Studio 템플릿) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d2c1482f419153d14ad2d319f4581b1e14de7c6
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 74e57ae61ddfaa24de4cc8e3e332b3fa9f7250c6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561070"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912901"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Assembly 요소 (Visual Studio 템플릿)
 서식 파일 프로젝트에 해당 어셈블리 참조를 추가 하는 어셈블리에 대 한 정보를 지정 합니다.  
@@ -57,7 +56,7 @@ ms.locfileid: "53561070"
   
  이 텍스트는 항목 템플릿이 인스턴스화될 때 프로젝트에 추가할 어셈블리를 지정 합니다. 다음 방법 중 하나에서이 어셈블리 이름을 지정 해야 합니다.  
   
--   전체 어셈블리 이름입니다. 예를 들면 다음과 같습니다.  
+-   전체 어셈블리 이름입니다. 예:  
   
     ```  
     <Assembly>  
@@ -65,7 +64,7 @@ ms.locfileid: "53561070"
     </Assembly>  
     ```  
   
--   단순한 텍스트 참조 합니다. 예를 들면 다음과 같습니다.  
+-   단순한 텍스트 참조 합니다. 예:  
   
     ```  
     <Assembly> System </Assembly>  
@@ -97,6 +96,6 @@ ms.locfileid: "53561070"
 </TemplateContent>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)   
  [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

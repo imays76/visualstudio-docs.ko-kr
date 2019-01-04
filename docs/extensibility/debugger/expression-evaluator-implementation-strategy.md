@@ -1,9 +1,6 @@
 ---
 title: 식 계산기 구현 전략 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluation, implementation strategy
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0b60a82b9451dfa43f5cd231fd38dd32b1729ed
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: a2f324f42bf65a9805308a7e6052e411c906a42f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39233050"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888675"
 ---
 # <a name="expression-evaluator-implementation-strategy"></a>식 계산기 구현 전략
 > [!IMPORTANT]
@@ -32,6 +29,6 @@ ms.locfileid: "39233050"
   
  합니다 [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) 다음 메서드를 구현 해야 합니다. 디버그 엔진 (DE)를 전달 하 여 지역 변수 및 인수 목록을 가져오려면이 메서드를 호출 `IDebugProperty2::EnumChildren` 는 `guidFilter` 인수의 `guidFilterLocalsPlusArgs`합니다. `IDebugProperty2::EnumChildren` 호출 [EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md) 하 고 [EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md), 단일 열거에 결과 결합 합니다. 참조 [지역 표시](../../extensibility/debugger/displaying-locals.md) 대 한 자세한 내용은 합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [식 계산기를 구현 합니다.](../../extensibility/debugger/implementing-an-expression-evaluator.md)   
  [지역 변수 표시](../../extensibility/debugger/displaying-locals.md)

@@ -1,9 +1,6 @@
 ---
 title: '연습: 항목 템플릿을 사용 하 여 사용자 지정 작업 프로젝트 항목 만들기, 2 부 | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
@@ -14,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2c37ab6f42be8e363dcba8a3e2aa6ef78816bff0
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 4305fd980252515f126df2c1b3848c0676cd2079
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296244"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913938"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>연습: 항목 템플릿, 2 부를 사용 하 여 사용자 지정 작업 프로젝트 항목 만들기
   사용자 지정 형식의 SharePoint 프로젝트 항목을 정의 하 고 Visual Studio에서 항목 템플릿을 사용 하 여 연결 후 템플릿에 대 한 마법사를 제공 하려면 수도 있습니다. 서식 파일 프로젝트에 프로젝트 항목의 새 인스턴스를 추가 하는 데 사용할 사용자 로부터 정보를 수집 하는 마법사를 사용할 수 있습니다. 정보를 수집 하는 프로젝트 항목을 초기화에 사용할 수 있습니다.  
@@ -50,12 +47,12 @@ ms.locfileid: "51296244"
   
   다음 개념을 이해에 도움이 필요 하지는 않지만, 연습을 완료 하는:  
   
-- Visual Studio에서 프로젝트 및 항목 템플릿에 대 한 마법사를 제공 합니다. 자세한 내용은 [방법: 프로젝트 템플릿에 마법사 사용](../extensibility/how-to-use-wizards-with-project-templates.md) 및 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 인터페이스입니다.  
+- Visual Studio에서 프로젝트 및 항목 템플릿에 대 한 마법사를 제공 합니다. 자세한 내용은 [방법: 프로젝트 템플릿에 마법사 사용](../extensibility/how-to-use-wizards-with-project-templates.md) 하며 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 인터페이스입니다.  
   
 - SharePoint에서 사용자 지정 동작입니다. 자세한 내용은 [사용자 지정 동작](http://go.microsoft.com/fwlink/?LinkId=177800)합니다.  
   
 ## <a name="create-the-wizard-project"></a>마법사 프로젝트를 만들려면
- 이 연습을 완료 하려면 CustomActionProjectItem 솔루션에서 만든 프로젝트를 추가 해야 합니다 [연습: 항목 템플릿, 1 부를 사용 하 여 사용자 지정 작업 프로젝트 항목을 만들어](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)합니다. 구현 합니다 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 인터페이스 및이 프로젝트에서 마법사 UI를 정의 합니다.  
+ 만든 CustomActionProjectItem 솔루션에 프로젝트를 추가 해야 하는이 연습을 완료 하려면 [연습: 항목 템플릿, 1 부를 사용 하 여 사용자 지정 작업 프로젝트 항목을 만들어](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)합니다. 구현 합니다 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 인터페이스 및이 프로젝트에서 마법사 UI를 정의 합니다.  
   
 #### <a name="to-create-the-wizard-project"></a>마법사 프로젝트를 만들려면  
   
@@ -82,7 +79,7 @@ ms.locfileid: "51296244"
   
 2.  에 **프로젝트 디자이너**, 대상 프레임 워크가.NET Framework 4.5로 설정 되어 있는지 확인 합니다.  
   
-     Visual C# 프로젝트의 경우에이 값을 설정할 수 있습니다 합니다 **응용 프로그램** 탭 합니다. Visual Basic 프로젝트에서이 값을 설정할 수 있습니다 합니다 **컴파일** 탭 합니다. 자세한 내용은 [방법: 한 버전의 .NET Framework를 대상으로 지정](../ide/how-to-target-a-version-of-the-dotnet-framework.md)을 참조하세요.  
+     Visual C# 프로젝트의 경우에이 값을 설정할 수 있습니다 합니다 **응용 프로그램** 탭 합니다. Visual Basic 프로젝트에서이 값을 설정할 수 있습니다 합니다 **컴파일** 탭 합니다. 자세한 내용은 [방법: 한 버전의 .NET Framework를 대상으로 지정](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
   
 3.  에 **ItemTemplateWizard** 프로젝트를 추가 **창 (WPF)** 프로젝트에 항목 및 다음 항목의 이름을 **WizardWindow**합니다.  
   
@@ -344,11 +341,10 @@ ms.locfileid: "51296244"
   
 4.  Visual Studio (실험적 인스턴스 및 CustomActionProjectItem 솔루션이 열려 있는 Visual Studio의 인스턴스)의 두 인스턴스를 닫습니다.  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  [연습: 항목 템플릿, 1 부를 사용 하 여 사용자 지정 작업 프로젝트 항목 만들기](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
  [사용자 지정 SharePoint 프로젝트 항목 형식 정의](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [SharePoint 프로젝트 항목에 대 한 프로젝트 템플릿과 항목 템플릿 만들기](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
  [Visual Studio 템플릿 스키마 참조](/visualstudio/extensibility/visual-studio-template-schema-reference)   
  [방법: 프로젝트 템플릿에 마법사 사용](../extensibility/how-to-use-wizards-with-project-templates.md)   
  [기본 사용자 지정 작업 위치 및 Id](http://go.microsoft.com/fwlink/?LinkId=181964)  
-  

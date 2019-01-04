@@ -1,9 +1,6 @@
 ---
 title: Visual Studio SDK 기본 사항 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - roadmap, Visual Studio integration SDK
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e72c5033554310555005de17872ee83110768687
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: f356fe21f512ae1fabb51df3ab562b067a692665
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757044"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821147"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Visual Studio SDK 기본 사항
 이 섹션에서는 Visual Studio 아키텍처, 구성 요소, 서비스, 스키마, 유틸리티 등을 비롯 한 Visual Studio 확장에 대 한 자세한 정보를 제공 합니다.
@@ -31,13 +28,13 @@ ms.locfileid: "36757044"
  ![환경 아키텍처 그래픽](../../extensibility/internals/media/environment.gif "환경") Visual Studio 아키텍처의 보기를 일반화 합니다.
 
 ## <a name="vspackages"></a>VSPackages
- VSPackage는 UI 요소, 서비스, 프로젝트, 편집기 및 디자이너를 사용하여 Visual Studio를 구성 및 확장하는 소프트웨어 모듈입니다. Vspackage는 Visual Studio의 중앙 아키텍처 단위입니다. 자세한 내용은 [Vspackage](../../extensibility/internals/vspackages.md)합니다.
+ VSPackage는 UI 요소, 서비스, 프로젝트, 편집기 및 디자이너를 사용하여 Visual Studio를 구성 및 확장하는 소프트웨어 모듈입니다. Vspackage는 Visual Studio의 중앙 아키텍처 단위입니다. 자세한 내용은 [VSPackages](../../extensibility/internals/vspackages.md)을 참조하세요.
 
 ## <a name="visual-studio-shell"></a>Visual Studio Shell
  Visual Studio shell 기본 기능을 제공 하 고 해당 구성 요소 Vspackage 및 MEF 확장 간에 간 통신을 지원 합니다. 자세한 내용은 [Visual Studio Shell](../../extensibility/internals/visual-studio-shell.md)합니다.
 
 ## <a name="user-experience-guidelines"></a>사용자 환경 지침
- 이러한 지침 디자인 및 유용성 팁에 대 한 참조를 수행 해야 Visual Studio에 대 한 새로운 기능을 디자인 하려는 경우: [Visual Studio User Experience Guidelines](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md)합니다.
+ Visual Studio에 대 한 새로운 기능을 디자인 하려는 경우를 살펴보고 디자인 및 유용성 팁에 대 한 이러한 지침을 수행 해야 합니다. [Visual Studio User Experience Guidelines](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md)합니다.
 
 ## <a name="commands"></a>명령
  명령은 문서 인쇄, 보기 새로 고침 또는 새 파일 만들기 등의 작업을 수행하는 함수입니다.
@@ -103,7 +100,7 @@ ms.locfileid: "36757044"
  자세한 내용은 [추가 프로젝트 및 프로젝트 항목 템플릿](../../extensibility/internals/adding-project-and-project-item-templates.md)합니다.
 
 ## <a name="properties-and-options"></a>속성 및 옵션
- **속성** 단일 또는 여러 선택된 항목의 속성 창에 표시 됩니다. [확장 속성](../../extensibility/internals/extending-properties.md) 와 같은 특정 구성 요소에 관련 된 옵션의 집합을 포함 하는 옵션 페이지를 프로그래밍 언어 또는 VSPackage: [옵션 및 옵션 페이지](../../extensibility/internals/options-and-options-pages.md)합니다. 설정은 일반적으로 UI 관련 기능을 가져오고 내보낼 수 있습니다: [사용자 설정에 대 한 지원을](../../extensibility/internals/support-for-user-settings.md)합니다.
+ 합니다 **속성** 단일 또는 여러 선택된 항목의 속성 창에 표시 됩니다. [속성 확장](../../extensibility/internals/extending-properties.md) 옵션 페이지, VSPackage 또는 프로그래밍 언어와 같은 특정 구성 요소와 관련 된 옵션 집합을 포함 합니다. [옵션 및 옵션 페이지](../../extensibility/internals/options-and-options-pages.md)합니다. 설정은 일반적으로 UI 관련 기능을 가져오고 내보낼 수 있습니다. [사용자 설정에 대 한 지원을](../../extensibility/internals/support-for-user-settings.md)합니다.
 
 ## <a name="visual-studio-services"></a>Visual Studio 서비스
  서비스 구성 요소를 사용 하는 인터페이스의 특정 집합을 제공 합니다. Visual Studio 확장을 포함 하 여 모든 구성 요소에서 사용할 수 있는 서비스 집합을 제공 합니다. 예를 들어, Visual Studio 서비스를 표시 또는 도움말, 상태 표시줄에 또는 UI 이벤트에 액세스할 수 있도록 동적으로 숨겨진 도구 창을 사용 합니다. Visual Studio 편집기는 또한 편집기 확장에서 가져올 수 있는 서비스를 제공 합니다. 자세한 내용은 [사용 및 제공 서비스](../../extensibility/using-and-providing-services.md)합니다.

@@ -1,9 +1,6 @@
 ---
 title: Vspackage 문제 해결 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, troubleshooting
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad5ab8a337d790af8cd6d800c7bf36ea6ff01286
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 5ba413fa4b5a77c8c4f7fc9dfc9aa3c4ab87d31d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348684"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835973"
 ---
 # <a name="troubleshooting-vspackages"></a>VSPackage 문제 해결
 다음은 일반적인 문제는 문제를 해결 하기 위한 팁 및 VSPackage를 사용 하 여 있을 수 있습니다.  

@@ -1,8 +1,6 @@
 ---
 title: Office 솔루션의 컨트롤에 데이터 바인딩
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -21,15 +19,15 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5b5d7a52e4f8b9e6c9741d3b62bc18b2d4cb66f7
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: bc5136b3e5c5ea09c5574e1fd3ec7ab457181112
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248022"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898637"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>Office 솔루션의 컨트롤에 데이터 바인딩
-  컨트롤이 자동으로 데이터를 표시할 수 있도록 Windows Forms 컨트롤 및 Microsoft Office Word 문서 또는 Microsoft Office Excel 워크시트의 *호스트 컨트롤* 을 데이터 원본에 바인딩할 수 있습니다. 응용 프로그램 수준과 문서 수준 프로젝트 둘 다 데이터를 컨트롤에 바인딩할 수 있습니다.  
+  컨트롤이 자동으로 데이터를 표시할 수 있도록 Windows Forms 컨트롤 및 Microsoft Office Word 문서 또는 Microsoft Office Excel 워크시트의 *호스트 컨트롤* 을 데이터 원본에 바인딩할 수 있습니다. 애플리케이션 수준과 문서 수준 프로젝트 둘 다 데이터를 컨트롤에 바인딩할 수 있습니다.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
@@ -111,5 +109,3 @@ ms.locfileid: "53248022"
  [TableAdapter를 사용 하 여 데이터를 업데이트 합니다.](../data-tools/update-data-by-using-a-tableadapter.md)    
  [데이터 캐시](../vsto/caching-data.md)   
  [Office 솔루션의 데이터](../vsto/data-in-office-solutions.md)  
-  
-  

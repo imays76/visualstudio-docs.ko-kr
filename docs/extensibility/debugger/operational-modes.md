@@ -1,9 +1,6 @@
 ---
 title: 운영 모드 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, modes
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91f3339fd18db8c006855c634e011b14eecc9206
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 158eca797c13ca7889ea4d7cf2e5d811783e997e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49888942"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923681"
 ---
 # <a name="operational-modes"></a>운영 모드
 세 가지 모드는 IDE 작동할 수 있습니다, 다음과 같습니다.  
@@ -57,5 +54,5 @@ ms.locfileid: "49888942"
   
  프로그램 코드 또는 함수에 다음 줄으로 성공적으로 단계 또는 중단점을 설정 하거나 커서까지 실행을 중단 모드로 돌아갑니다는 DE 자동으로 전환 됩니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [실행 제어](../../extensibility/debugger/control-of-execution.md)

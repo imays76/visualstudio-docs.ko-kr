@@ -1,9 +1,6 @@
 ---
 title: 요소를 기호 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Symbols element (VSCT XML schema)
@@ -14,17 +11,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4186f53ec84c44b97acbc3a59d663404a52dd255
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: aeeaff19eb0eb479cdb7faa441c2cde8f60f52d0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856736"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965897"
 ---
 # <a name="symbols-element"></a>Symbols 요소
 Guid 및 기타 VSCT 요소에서 사용 되는 Id를 정의 합니다. 비관리 코드에 대 한이 정보 일반적으로 제공 하 여 지정 된 헤더 파일에서 [Extern 요소](../extensibility/extern-element.md)합니다. 코드는이 정보를 정의 하는 기호 요소의 자식 요소를 관리 합니다.  
   
- 기존.cto 파일에서.vsct 파일을 만든 경우 기호를 기호 요소의 자식으로 생성 됩니다. 자세한 내용은 참조 하세요. [방법: 만들기를 합니다. 기존 Vsct 파일입니다. Cto 파일](../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file)합니다.  
+ 기존.cto 파일에서.vsct 파일을 만든 경우 기호를 기호 요소의 자식으로 생성 됩니다. 자세한 내용은 [방법: 만들기는 합니다. 기존 Vsct 파일입니다. Cto 파일](../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file)합니다.  
   
  Symbols 요소와 혼동 하지 마십시오 합니다 [정의 요소](../extensibility/define-element.md), 전처리기 사용에 대 한 이름-값 쌍을 정의 하는 합니다.  
   

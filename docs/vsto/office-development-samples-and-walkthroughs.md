@@ -1,9 +1,6 @@
 ---
 title: Office 개발 샘플 및 연습
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -23,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 925886683b274ddff704771d4939c2112003bb58
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 989536860500e092a36addc74eedc4759c959160
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674861"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909790"
 ---
 # <a name="office-development-samples-and-walkthroughs"></a>Office 개발 샘플 및 연습
   이 섹션에서는 샘플 응용 프로그램, 예제 코드 및 구문, 구조 및 Microsoft Office 솔루션을 구축 하는 데 사용 되는 기술을 설명 하는 단계별 연습을 포함 합니다.  
@@ -60,5 +57,3 @@ ms.locfileid: "35674861"
 |[Office 프로그래밍의 일반적인 작업](../vsto/common-tasks-in-office-programming.md)|Visual Studio에서 Office 개발을 사용 하 여 프로그래밍 하는 방법에 대 한 질문과 대답을 나열 하 고 일반적인 문제를 해결 하는 데 도움이 되는 항목에 대 한 링크를 제공 합니다.|  
 |[Office 솔루션을 만들고 디자인](../vsto/designing-and-creating-office-solutions.md)|Microsoft Office 솔루션을 만드는 방법에 대 한 솔루션에서 어셈블리의 역할에 대 한 정보 링크를 제공 합니다.|  
 |[작업 창 개요](../vsto/actions-pane-overview.md)|작업 창 이라고 문서 수준 작업창의 개요를 제공 합니다.|  
-  
-  

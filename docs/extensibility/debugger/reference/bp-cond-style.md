@@ -1,9 +1,6 @@
 ---
 title: BP_COND_STYLE | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - BP_COND_STYLE
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ff46d6cae842d258aab8fb03409ff263670c410
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f279981b7a9d6cd8fa269c4781b9be1148c392f4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939776"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885889"
 ---
 # <a name="bpcondstyle"></a>BP_COND_STYLE
 보류 중인 중단점 조건 스타일을 지정 하 고 바인딩된 중단점.  
@@ -28,7 +25,7 @@ ms.locfileid: "49939776"
 ## <a name="syntax"></a>구문  
   
 ```cpp  
-enum enum_BP_COND_STYLE {   
+enum enum_BP_COND_STYLE {   
    BP_COND_NONE         = 0x0000,  
    BP_COND_WHEN_TRUE    = 0x0001,  
    BP_COND_WHEN_CHANGED = 0x0002  
@@ -37,7 +34,7 @@ typedef DWORD BP_COND_STYLE;
 ```  
   
 ```csharp  
-public enum enum_BP_COND_STYLE {   
+public enum enum_BP_COND_STYLE {   
    BP_COND_NONE         = 0x0000,  
    BP_COND_WHEN_TRUE    = 0x0001,  
    BP_COND_WHEN_CHANGED = 0x0002  
@@ -60,9 +57,9 @@ public enum enum_BP_COND_STYLE {
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>참고 항목  
  [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

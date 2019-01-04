@@ -2,7 +2,6 @@
 title: IDE 또는 명령줄에서 코드의 메트릭 생성
 ms.date: 11/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - code metrics data
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 83ec85855e17f8798f55b01f043d47d7140278e7
-ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
+ms.openlocfilehash: 96b74421d638a99823399a0049b712bc6c54c8a9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53425775"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849060"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>방법: 코드 메트릭 데이터 생성
 
@@ -79,7 +78,7 @@ ms.locfileid: "53425775"
 
 ### <a name="usage"></a>사용법
 
-실행할 *Metrics.exe*인수로 솔루션 및 XML 출력 파일, 프로젝트를 제공 합니다. 예를 들면 다음과 같습니다.
+실행할 *Metrics.exe*인수로 솔루션 및 XML 출력 파일, 프로젝트를 제공 합니다. 예를 들어:
 
 ```shell
 C:\>Metrics.exe /project:ConsoleApp20.csproj /out:report.xml
@@ -166,7 +165,7 @@ msbuild /m /v:m /t:rebuild /p:LEGACY_CODE_METRICS_MODE=true Metrics.csproj
 
 자세한 내용은 [레거시 모드에서 코드 메트릭을 생성 하는 사용](https://github.com/dotnet/roslyn-analyzers/pull/1841)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [코드 메트릭 결과 창 사용](../code-quality/working-with-code-metrics-data.md)
 - [코드 메트릭 값](../code-quality/code-metrics-values.md)

@@ -1,9 +1,6 @@
 ---
 title: IDebugField::Equal | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugField::Equal
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ae30cd36d2a3f51b697afa3cb5f4615a5f322da
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0157a09390bd6e8380e97cef8e4c4158c75ac3ab
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830784"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918825"
 ---
 # <a name="idebugfieldequal"></a>IDebugField::Equal
 이 메서드는 같음에 대 한 지정된 된 필드를 사용 하 여이 필드를 비교합니다.  
@@ -28,7 +25,7 @@ ms.locfileid: "49830784"
 ## <a name="syntax"></a>구문  
   
 ```cpp  
-HRESULT Equal(   
+HRESULT Equal(   
    IDebugField* pField  
 );  
 ```  

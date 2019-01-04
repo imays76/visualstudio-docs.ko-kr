@@ -1,13 +1,8 @@
 ---
-title: '방법: Specificfinder 메서드 추가 | Microsoft Docs'
-ms.custom: ''
+title: '방법: 특정 Finder 메서드 추가 | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8005728d29c38e32d55f01e42d2666c69112b3f3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 163badc38ba4037729e29d013c98e0b733c9eaf9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886491"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913467"
 ---
 # <a name="how-to-add-a-specific-finder-method"></a>방법: 특정 Finder 메서드 추가
   만들어 단일 엔터티 인스턴스를 반환할 수 있습니다는 *Specificfinder* 메서드. 비즈니스 데이터 연결 (BDC) 서비스는 사용자가 비즈니스 데이터 웹 파트 또는 외부 목록에서 엔터티를 선택할 때 특정 Finder 메서드를 실행 합니다. 자세한 내용은 [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)합니다.  
@@ -36,7 +31,7 @@ ms.locfileid: "49886491"
   
 1. 에 **BDC 디자이너**, 엔터티를 선택 합니다.  
   
-    엔터티를 추가 하는 방법에 대 한 자세한 합니다 **BDC 디자이너** Visual Studio에서 참조 [방법: 모델에 엔터티를 추가](../sharepoint/how-to-add-an-entity-to-a-model.md)합니다.  
+    엔터티를 추가 하는 방법에 대 한 자세한 합니다 **BDC 디자이너** Visual Studio에서 참조 [방법: 모델에 엔터티 추가](../sharepoint/how-to-add-an-entity-to-a-model.md)합니다.  
   
 2. 메뉴 모음에서 선택 **뷰** > **기타 Windows**를 **BDC 메서드 세부 정보**합니다.  
   
@@ -99,4 +94,3 @@ ms.locfileid: "49886491"
  [BDC 모델 디자인 도구 개요](../sharepoint/bdc-model-design-tools-overview.md)   
  [방법: 메서드에 매개 변수를 추가 합니다.](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
  [방법: 메서드 인스턴스 정의](../sharepoint/how-to-define-a-method-instance.md)  
-  

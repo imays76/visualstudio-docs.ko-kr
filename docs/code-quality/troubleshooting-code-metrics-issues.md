@@ -2,7 +2,6 @@
 title: 코드 메트릭 문제 해결
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: troubleshooting
 ms.assetid: f2fdb995-4888-4246-85dc-7bacadd45968
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9575020135846edc9cb86bd89ff72682500d8a9d
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 5c20fc0cd975dba4efcf9384d804e7732afecec0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739564"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930897"
 ---
 # <a name="troubleshooting-code-metrics-issues"></a>코드 메트릭 문제 해결
 코드 메트릭을 수집할 때 다음 문제 중 일부가 발생할 수 있습니다.

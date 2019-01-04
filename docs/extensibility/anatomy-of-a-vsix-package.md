@@ -1,9 +1,6 @@
 ---
 title: VSIX 패키지 분석 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - visual studio extension
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1dea0fce75d83678161013baef109364842fcc46
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b9fa23b603f8eb94ebca5256145b7fb7df837d40
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937735"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921486"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>VSIX 패키지 분석
 VSIX 패키지를 *.vsix* 하나 이상의 Visual Studio 확장 Visual Studio 메타 데이터를 포함 하는 파일 분류 및 확장 설치를 사용 하 여 합니다. 메타 데이터가 포함 된 VSIX 매니페스트의 하며 *[Content_Types].xml* 파일입니다. VSIX 패키지를 하나 이상 포함 될 수도 있습니다 *Extension.vsixlangpack* 있도록 지역화 된 설치 텍스트 파일과 종속성을 설치 하는 추가 VSIX 패키지를 포함할 수 있습니다.  

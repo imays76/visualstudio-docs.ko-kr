@@ -1,9 +1,6 @@
 ---
 title: IDebugCustomAttributeQuery | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugCustomAttributeQuery interface
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef26d44f72f762749aff8758d68c7ee2fe765fc3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 138e4e90a9fcc7c28239fecf2306963950381d89
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105127"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902034"
 ---
 # <a name="idebugcustomattributequery"></a>IDebugCustomAttributeQuery
 메서드 또는 형식에 사용자 지정 특성에 대 한 쿼리를 나타냅니다.  
@@ -30,7 +27,7 @@ IDebugCustomAttributeQuery : IUnknown
 ```  
   
 ## <a name="methods"></a>메서드  
- 이 인터페이스는 다음 메서드를 구현합니다.  
+ 이 인터페이스는 다음 메서드를 구현 합니다.  
   
 |메서드|설명|  
 |------------|-----------------|  
@@ -40,6 +37,6 @@ IDebugCustomAttributeQuery : IUnknown
 ## <a name="requirements"></a>요구 사항  
  헤더: Sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll

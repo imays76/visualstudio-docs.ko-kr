@@ -1,9 +1,6 @@
 ---
 title: 소스 제어 VSPackage를 구현할지 여부 결정 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, about source control packages
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3bef6030b6a21eeda708a5258c47c9dfdcfc0a3
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 6ed78f8245479edfaa5e87c22e6651c867d96f98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497315"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914466"
 ---
 # <a name="determine-whether-to-implement-a-source-control-vspackage"></a>소스 제어 VSPackage를 구현할지 여부 결정
 이 섹션에서는 소스 제어 통합 적합 한 경로 선택 하는 방법에 대 한 솔루션을 사용 하면 광범위 한 지침을 확장 하는 것에 대 한 원본 제어 플러그 인 및 소스 제어 Vspackage의 선택 항목을 설명 합니다.  

@@ -1,16 +1,11 @@
 ---
 title: 샌드박스 솔루션 고려 사항 | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.SandboxedSolutions
 - VS.SharePointTools.Security.SandboxedSolutions
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -23,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2f9a5d0c439d619864cc6e9559608e3c3891fc7e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4e26c87d3280ca3cfdd44baa11b09bd007eaca08
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890038"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53862103"
 ---
 # <a name="sandboxed-solution-considerations"></a>샌드박스 솔루션 고려 사항
   *샌드박스 솔루션* 는 사이트 컬렉션 사용자가 자신의 사용자 지정 코드 솔루션을 업로드할 수 있도록 Microsoft SharePoint 2010의 기능입니다. 일반적인 샌드박스가 적용 된 솔루션은 사용자가 자신의 웹 파트를 업로드 합니다.  
@@ -142,7 +137,6 @@ ms.locfileid: "49890038"
   
 - 코드를 사용 하 여 워크플로  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  [차이점 샌드박스 솔루션과 팜 솔루션](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)   
  [SharePoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)  
-  

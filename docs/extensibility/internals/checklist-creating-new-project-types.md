@@ -1,9 +1,6 @@
 ---
 title: '검사 목록: 새 프로젝트 형식 만들기 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], creating new types
@@ -14,19 +11,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3da952e22515b48f06fdc50b34b2eb49f5709cc2
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: edd4c0a1bf4b6cbc76c2bc4bdbc597efd348799c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370577"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861587"
 ---
 # <a name="checklist-create-new-project-types"></a>검사 목록: 새 프로젝트 형식 만들기
 새 프로젝트 형식을 만들려면 몇 가지 작업을 완료 해야 합니다. 이러한 작업에 대 한 지침을 제공 하는 다음 검사 목록:  
   
 1.  새 프로젝트 형식에 대 한 기능을 디자인 합니다. 자세한 내용은 [프로젝트 형식 디자인 결정](../../extensibility/internals/project-type-design-decisions.md)합니다.  
   
-2.  코드 및 기타 프로젝트 요소는 편집기가 사용을 확인 합니다. 핵심 또는 표준 편집기를 사용 하거나 만들고 프로젝트별 편집기를 사용할 수 있습니다. 자세한 내용은 참조 하세요. [사용자 지정 편집기와 디자이너를 만들](../../extensibility/creating-custom-editors-and-designers.md) 하 고 [방법: 프로젝트별 편집기 열기](../../extensibility/how-to-open-project-specific-editors.md)합니다.  
+2.  코드 및 기타 프로젝트 요소는 편집기가 사용을 확인 합니다. 핵심 또는 표준 편집기를 사용 하거나 만들고 프로젝트별 편집기를 사용할 수 있습니다. 자세한 내용은 [사용자 지정 편집기와 디자이너를 만들](../../extensibility/creating-custom-editors-and-designers.md) 및 [방법: 프로젝트별 편집기 열기](../../extensibility/how-to-open-project-specific-editors.md)합니다.  
   
 3.  프로젝트 항목에는 참여 수준을 확인 합니다 **클래스 뷰** 하며 **개체 브라우저**합니다. 자세한 내용은 [기호 검색 도구 지원](../../extensibility/internals/supporting-symbol-browsing-tools.md)합니다.  
   
@@ -60,7 +57,7 @@ ms.locfileid: "46370577"
   
 8.  Microsoft 설치 관리자를 만듭니다 (*.msi*) 파일에 Vspackage를 설치 합니다. 자세한 내용은 [Windows Installer를 사용 하 여 Vspackage 설치](../../extensibility/internals/installing-vspackages-with-windows-installer.md)를 [프로젝트 유형을 등록할](../../extensibility/internals/registering-a-project-type.md), 및 [Vspackage](../../extensibility/internals/vspackages.md)합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Visual Studio에서 계층 구조](../../extensibility/internals/hierarchies-in-visual-studio.md)   
  [프로젝트 형식을 만들어야 하는 경우](../../extensibility/internals/when-to-create-project-types.md)   
  [프로젝트 형식 만들기](../../extensibility/internals/creating-project-types.md)

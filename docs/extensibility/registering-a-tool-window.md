@@ -1,9 +1,6 @@
 ---
 title: 도구 창을 등록 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, registering managed
@@ -14,17 +11,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 17c9233d3df0bb7101b374fd1990536d2341fa49
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 0ae73dec5b494e4f9d78949224a34bcdbc66361f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638331"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53884959"
 ---
 # <a name="register-a-tool-window"></a>도구 창 등록
 도구 창을 사용 하 여 등록할 수 있습니다 <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> 고 <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute>입니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
   
 ```csharp
   

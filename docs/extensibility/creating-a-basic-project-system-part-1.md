@@ -1,9 +1,6 @@
 ---
 title: 기본 프로젝트 시스템 만들기, 1 부 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - writing a project system
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d7d48a7aae98da574747da2df32c9368ab930aa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 43ba49107c1f3b2ab72db024b8dbfd01d8eab857
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887555"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832556"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>1 부 기본 프로젝트 시스템을 만들려면
 Visual Studio에서 프로젝트는 개발자가 소스 코드 파일 및 기타 자산을 구성 하는 데 사용할 컨테이너를 사용 합니다. 프로젝트에서 솔루션의 자식으로 표시 합니다 **솔루션 탐색기**합니다. 프로젝트를 사용 하 여 구성, 빌드, 디버그 및 소스 코드를 배포 및 웹 서비스, 데이터베이스 및 기타 리소스에 대 한 참조를 만들 수 있습니다.  
@@ -559,7 +556,7 @@ Templates
      템플릿 매개 변수 $nameSpace$ 및 $ $className$ 수행할 새 값이 없는지 확인 합니다. 다음 섹션에서 템플릿 매개 변수 대체를 구현 하는 방법을 배웁니다.  
   
 ## <a name="substitute-template-parameters"></a>템플릿 매개 변수를 대체 합니다.  
- 이전 단원에서 등록할 프로젝트 템플릿을 Visual Studio를 사용 하 여 사용 하 여는 `ProvideProjectFactory` 특성입니다. 재정의 하 고 확장 하 여 기본 템플릿 매개 변수 대체를 사용 하면 이러한 방식으로 템플릿 폴더의 경로 등록 합니다 `ProjectNode.AddFileFromTemplate` 클래스입니다. 자세한 내용은 [새 프로젝트 생성: 내부 살펴보기, 2 부](../extensibility/internals/new-project-generation-under-the-hood-part-two.md)합니다.  
+ 이전 단원에서 등록할 프로젝트 템플릿을 Visual Studio를 사용 하 여 사용 하 여는 `ProvideProjectFactory` 특성입니다. 재정의 하 고 확장 하 여 기본 템플릿 매개 변수 대체를 사용 하면 이러한 방식으로 템플릿 폴더의 경로 등록 합니다 `ProjectNode.AddFileFromTemplate` 클래스입니다. 자세한 내용은 참조 하세요. [새 프로젝트 생성: 내부적으로 2 부](../extensibility/internals/new-project-generation-under-the-hood-part-two.md)합니다.  
   
  대체 코드를 추가 합니다 `AddFileFromTemplate` 클래스입니다.  
   

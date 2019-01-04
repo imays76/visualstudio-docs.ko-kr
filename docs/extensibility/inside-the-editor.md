@@ -1,9 +1,6 @@
 ---
 title: 편집기 내부에서 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - architecture
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18587516298fa58e8a5e783ffb1f7c37d5a6b497
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2fc5d3fe27358d0372539e2a3bca23c4300924bd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49859683"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928950"
 ---
 # <a name="inside-the-editor"></a>편집기 내에서
 편집기는 텍스트 보기 및 사용자 인터페이스에서 모델 별도 텍스트 편집기를 유지 하도록 설계 된 다른 하위 시스템의 숫자로 구성 됩니다.  

@@ -1,9 +1,6 @@
 ---
 title: CommandName 요소 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - CommandName element (VSCT XML schema)
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca5f38febab608aedf794fb02dbfbc65debbfc5e
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 3a05be5b08afa04dc8ca3e9c0a5eb2a9d015a66c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39230926"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886399"
 ---
 # <a name="commandname-element"></a>CommandName 요소
 `CommandName` 키보드 범주에 표시 되는 텍스트를 지정 하는 요소는 **옵션** 대화 상자에서 및를 **명령** 목록에 **사용자 지정** 대화 상자입니다.  
@@ -45,5 +42,5 @@ ms.locfileid: "39230926"
 |-------------|-----------------|  
 |[Strings 요소](../extensibility/strings-element.md)|텍스트 요소와 같은 그룹화 `ButtonText` 고 `CommandName`입니다.|  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Visual Studio 명령 테이블 (.vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -11,13 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: ef7c49c514c9104ee4659db983b04c27036df889
-ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
+ms.openlocfilehash: d5d4b4c50a02a92d150a87788e6dc307dd2f8e64
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281825"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865520"
 ---
 # <a name="code-generation-in-a-build-process"></a>빌드 프로세스에서 코드 생성
 
@@ -294,7 +293,7 @@ Visual Studio 매크로 같은 **$ (solutiondir)** MSBuild에서 작동 하지 �
 
 - [런타임 텍스트 템플릿](../modeling/run-time-text-generation-with-t4-text-templates.md) 응용 프로그램에서 런타임에 변형 됩니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - T4 MSbuild 템플릿이 훌륭한 지침 *%ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\msbuild\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets*
 - [T4 텍스트 템플릿 작성](../modeling/writing-a-t4-text-template.md)

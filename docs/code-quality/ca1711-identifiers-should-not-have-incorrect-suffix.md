@@ -2,7 +2,6 @@
 title: 'CA1711: 식별자에는 올바른 접미사를 사용해야 합니다.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1711
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e3c9b23e555d0752ee33f2031fb883bdf50ff897
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 86bcd9373fda82c1f650da88a87d905a7ba1e6a7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549734"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920435"
 ---
 # <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711: 식별자에는 올바른 접미사를 사용해야 합니다.
 
@@ -77,7 +76,7 @@ ms.locfileid: "45549734"
 
 ## <a name="related-rules"></a>관련된 규칙
 
-- [CA1710: 식별자에는 올바른 접미사를 사용해야 합니다.](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)
+- [CA1710: 식별자에는 올바른 접미사를 사용 해야 합니다.](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)
 
 ## <a name="see-also"></a>참고자료
 

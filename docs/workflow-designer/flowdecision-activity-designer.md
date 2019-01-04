@@ -3,7 +3,6 @@ title: FlowDecision 활동 디자이너-워크플로 디자이너
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.FlowDecision.UI
 ms.assetid: 4a49edc3-3662-4b7b-812e-0a5ba00d6c94
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a87c5c9ebe1b3eed2c3c569e508c5b76ce6845d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 15100a7a43147e49d6762119828566d613034fea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818993"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848207"
 ---
 # <a name="flowdecision-activity-designer"></a>FlowDecision 활동 디자이너
 
@@ -47,7 +46,7 @@ ms.locfileid: "49818993"
 |<xref:System.Activities.Statements.FlowDecision.True%2A>|False|<xref:System.Activities.Statements.FlowDecision.Condition%2A>이 충족되는 경우의 흐름 제어 경로입니다.|
 |<xref:System.Activities.Statements.FlowDecision.False%2A>|False|<xref:System.Activities.Statements.FlowDecision.Condition%2A>이 충족되지 않는 경우의 흐름 제어 경로입니다.|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [워크플로](../workflow-designer/flowchart-activity-designers.md)
 - [워크플로](../workflow-designer/flowchart-activity-designer.md)

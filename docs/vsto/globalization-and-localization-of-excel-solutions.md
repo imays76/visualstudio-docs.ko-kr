@@ -1,9 +1,6 @@
 ---
 title: Excel 솔루션 전역화 및 지역화
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e5c25a93c62a5737681fe2d3ea27f10c69fbfc92
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 6de8e63331c4cb5250ceadd6f7394dd54319e499
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802240"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856412"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Excel 솔루션 전역화 및 지역화
   이 섹션에는 영어 이외의 Windows 언어 설정이 있는 컴퓨터에서 실행되는 Microsoft Office Excel 솔루션의 특수 고려 사항에 대한 정보를 포함합니다. Microsoft Office 솔루션을 전역화하고 지역화하는 대부분의 측면은 Visual Studio를 사용하여 다른 종류의 솔루션을 만들 때와 동일하게 발생합니다. 일반적인 정보를 참조 하세요 [Globalize 및 응용 프로그램을 지역화](../ide/globalizing-and-localizing-applications.md)합니다.
@@ -55,7 +52,7 @@ ms.locfileid: "53802240"
 ### <a name="change-culture"></a>문화권 변경
  문서 수준 사용자 지정 코드는 일반적으로 Excel의 주 UI 스레드를 공유하므로 스레드 문화권을 변경하면 해당 스레드에서 실행되는 그 밖의 모든 부분에 영향을 미칩니다. 즉, 변경 내용이 사용자 지정에 제한되는 것이 아닙니다.
 
- Windows Forms 컨트롤은 응용 프로그램 수준 VSTO 추가 기능을 호스트 응용 프로그램에서 시작하기 전에 초기화됩니다. 이러한 상황에서 문화권은 UI 컨트롤을 설정하기 전에 변경되어야 합니다.
+ Windows Forms 컨트롤은 애플리케이션 수준 VSTO 추가 기능을 호스트 애플리케이션에서 시작하기 전에 초기화됩니다. 이러한 상황에서 문화권은 UI 컨트롤을 설정하기 전에 변경되어야 합니다.
 
 ## <a name="install-the-language-packs"></a>언어 팩 설치
  Windows에 대해 영어가 아닌 설정이 있는 경우 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 언어 팩을 설치하여 Windows와 동일한 언어로 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 메시지를 볼 수 있습니다. 최종 사용자가 Windows에 대해 영어가 아닌 설정으로 솔루션을 실행하는 경우 Windows와 동일한 언어로 런타임 메시지를 보려면 올바른 언어 팩이 있어야 합니다. 합니다 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 언어 팩은 합니다 [Microsoft 다운로드 센터](http://www.microsoft.com/downloads)합니다.
@@ -66,7 +63,7 @@ ms.locfileid: "53802240"
  관리되는 클라이언트가 COM 개체에서 메서드를 호출하고 문화권별 정보를 전달할 때마다 현재 스레드 로캘과 일치하는 <xref:System.Globalization.CultureInfo.CurrentCulture%2A> (로캘)을 사용해서 수행해야 합니다. 현재 스레드 로캘은 기본적으로 사용자의 국가별 설정에서 상속됩니다. 그러나 Visual Studio에서 Office 개발 도구를 사용하여 만든 Excel 솔루션에서 Excel 개체 모델로 호출하는 경우에는 영어(미국) 데이터 서식(로캘 ID 1033)이 Excel 개체 모델에 자동으로 전달됩니다. 날짜 및 통화와 같이 로캘 구분 서식을 가진 모든 데이터는 영어(미국) 데이터 서식을 사용하여 서식을 지정한 다음에 Microsoft Office Excel로 전달하거나 프로젝트 코드에서 데이터를 읽어야 합니다.
 
 ## <a name="considerations-for-storing-data"></a>데이터를 저장 하기 위한 고려 사항
- 데이터가 올바르게 해석되고 표시되게 하려면 강력한 형식의 개체 대신 하드 코드된 문자열 리터럴로 Excel 워크시트 수식 같이 응용 프로그램이 데이터를 저장할 때 문제가 발생할 수 있다는 것도 고려해야 합니다. 고정 문화권 또는 영어(미국)(LCID 값 1033) 스타일을 가정하여 서식이 지정된 데이터를 사용해야 합니다.
+ 데이터가 올바르게 해석되고 표시되게 하려면 강력한 형식의 개체 대신 하드 코드된 문자열 리터럴로 Excel 워크시트 수식 같이 애플리케이션이 데이터를 저장할 때 문제가 발생할 수 있다는 것도 고려해야 합니다. 고정 문화권 또는 영어(미국)(LCID 값 1033) 스타일을 가정하여 서식이 지정된 데이터를 사용해야 합니다.
 
 ### <a name="applications-that-use-string-literals"></a>문자열 리터럴을 사용 하는 응용 프로그램
  하드 코드되었을 수 있는 값에는 영어(미국) 서식으로 기록된 날짜 리터럴과 지역화된 함수 이름이 있는 Excel 워크시트 수식이 포함됩니다. 다른 가능한 값으로는 "1,000"과 같은 숫자가 포함된 하드 코드된 문자열이 있을 수 있습니다. 즉, 일부 문화권에서 이 값은 천(1,000)으로 해석되지만 다른 문화권에서는 1.0을 나타냅니다. 잘못된 서식으로 수행된 계산 및 비교는 잘못된 데이터를 유발할 수 있습니다.

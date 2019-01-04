@@ -1,9 +1,6 @@
 ---
 title: '연습: VSTO 추가 기능 프로젝트의 단순 데이터 바인딩'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0373bcba5cecbbc47451f3ad050ba0ea44a12246
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: df572f63ec6bb8a77a854144dd2ff4a165148c41
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672667"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828422"
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>연습: VSTO 추가 기능 프로젝트의 단순 데이터 바인딩
 
@@ -50,7 +47,7 @@ VSTO 추가 기능 프로젝트에서 호스트 컨트롤 및 Windows Forms 컨�
 
 -   `AdventureWorksLT` 샘플 데이터베이스가 연결된 SQL Server 2005 또는 SQL Server 2005 Express의 실행 중인 인스턴스 액세스 권한 다운로드할 수 있습니다 합니다 `AdventureWorksLT` 에서 데이터베이스를 [CodePlex 웹 사이트](http://go.microsoft.com/fwlink/?LinkId=115611)합니다. 데이터베이스 연결에 대한 자세한 내용은 다음 항목을 참조하세요.
 
-    -   SQL Server Management Studio 또는 SQL Server Management Studio Express를 사용 하 여 데이터베이스를 연결, 참조 [방법: 데이터베이스 (SQL Server Management Studio) 연결](/sql/relational-databases/databases/attach-a-database)합니다.
+    -   SQL Server Management Studio 또는 SQL Server Management Studio Express를 사용 하 여 데이터베이스를 연결 하려면 참조 [방법: 데이터베이스 (SQL Server Management Studio) 연결](/sql/relational-databases/databases/attach-a-database)합니다.
 
     -   명령줄을 사용 하 여 데이터베이스를 연결, 참조 [방법: SQL Server Express에 데이터베이스 파일을 첨부할](/previous-versions/sql/)합니다.
 
@@ -62,7 +59,7 @@ VSTO 추가 기능 프로젝트에서 호스트 컨트롤 및 Windows Forms 컨�
 
 1.  Visual Basic 또는 C#을 사용하여 이름이 **데이터베이스에서 문서 채우기**인 Word VSTO 추가 기능 프로젝트를 만듭니다.
 
-     자세한 내용은 [방법: Visual Studio에서 만드는 Office 프로젝트](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.
+     자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.
 
      Visual Studio가 열립니다는 *ThisAddIn.vb* 또는 *ThisAddIn.cs* 파일을 추가 합니다 **데이터베이스에서 문서 채우기** 프로젝트가 **솔루션 탐색기** .
 
@@ -84,7 +81,7 @@ VSTO 추가 기능 프로젝트에서 호스트 컨트롤 및 Windows Forms 컨�
 
     그렇지 않은 경우 **새 연결**을 클릭하고 **연결 추가** 대화 상자를 사용하여 새 연결을 만듭니다. 자세한 내용은 [새 연결 추가](../data-tools/add-new-connections.md)합니다.
 
-5. **응용 프로그램 구성 파일에 연결 문자열 저장** 페이지에서 **다음**을 클릭합니다.
+5. **애플리케이션 구성 파일에 연결 문자열 저장** 페이지에서 **다음**을 클릭합니다.
 
 6. **데이터베이스 개체 선택** 페이지에서 **테이블** 을 확장하고 **Customer(SalesLT)** 를 선택합니다.
 
@@ -153,7 +150,7 @@ Word를 열면 콘텐츠 컨트롤에 `AdventureWorksLTDataSet` 데이터 집합
 
 2.  **다음** 및 **이전** 단추를 클릭하여 데이터베이스 레코드를 스크롤합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [Office 솔루션의 데이터](../vsto/data-in-office-solutions.md)
 - [Office 솔루션의 컨트롤에 데이터 바인딩](../vsto/binding-data-to-controls-in-office-solutions.md)

@@ -1,9 +1,6 @@
 ---
 title: 요소를 정의 합니다. | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Define
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2596023628086ce5e921eeb8499956828d4c8a5c
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 69177b035ee8e0c162a629873110df9f7ec7917f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497163"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889158"
 ---
 # <a name="define-element"></a>요소를 정의 합니다.
 기호 이름 및 값 쌍을 정의합니다. 조건부 특성에서이 기호를 평가할 수 있습니다. 자세한 내용은 [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)합니다. 참고 항목의 [Symbols 요소](../extensibility/symbols-element.md)합니다.  
@@ -37,8 +34,8 @@ ms.locfileid: "39497163"
   
 |특성|설명|  
 |---------------|-----------------|  
-|name|필수. 기호 이름:<br /><br /> 이름 = "모드"|  
-|값|필수. 기호의 값:<br /><br /> 값 = "Standard"|  
+|name|필수 요소. 기호 이름:<br /><br /> 이름 = "모드"|  
+|값|필수 요소. 기호의 값:<br /><br /> 값 = "Standard"|  
 |조건|선택 사항입니다. 자세한 내용은 [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)합니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
@@ -50,12 +47,12 @@ ms.locfileid: "39497163"
 |-------------|-----------------|  
 |[CommandTable 요소](../extensibility/commandtable-element.md)|통합된 개발 환경 (IDE)에 VSPackage가 제공 하는 명령을 나타내는 모든 요소를 정의 합니다. 예를 들어 메뉴 항목, 메뉴, 도구 모음 및 콤보 상자입니다.|  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
   
 ```  
 <Define name="DEMO_UI"/>  
 <Define name="MODE" value="Standard"/>  
 ```  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Visual Studio 명령 테이블 (.vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

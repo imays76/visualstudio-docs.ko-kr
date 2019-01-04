@@ -3,7 +3,6 @@ title: 워크플로 디자이너-경우 활동 디자이너
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.If.UI
 ms.assetid: 930a8fa2-db98-43e9-ad6d-a85cc7a6519a
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 716f2b13758864d5eda449967990f9e5be399a9d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: de237acd09f4c4139bdf79f986dbb43c1a1f8343
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822844"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988419"
 ---
 # <a name="if-activity-designer"></a>If 활동 디자이너
 
@@ -33,7 +32,7 @@ ms.locfileid: "49822844"
 |<xref:System.Activities.Statements.If.Else%2A>|False|경우에 실행할 활동입니다 합니다 <xref:System.Activities.Statements.If.Condition%2A> 됩니다 **false**합니다. 실행 되는 활동을 추가 하는 <xref:System.Activities.Statements.If.Else%2A> 분기에서의 활동를 **도구 상자** 에 **Else** 상자에 **경우** 힌트 텍스트가 있는 활동 디자이너 " 여기에 작업 놓기 "입니다.|
 |<xref:System.Activities.Statements.If.Then%2A>|False|경우에 실행할 활동입니다 합니다 <xref:System.Activities.Statements.If.Condition%2A> 됩니다 **true**합니다. 실행 되는 활동을 추가 하는 <xref:System.Activities.Statements.If.Then%2A> 분기에서의 활동를 **도구 상자** 에 **다음** 상자에 **경우** 힌트 텍스트가 있는 활동 디자이너 " 여기에 작업 놓기 "입니다.|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [Sequence](../workflow-designer/sequence-activity-designer.md)
 - [Parallel](../workflow-designer/parallel-activity-designer.md)

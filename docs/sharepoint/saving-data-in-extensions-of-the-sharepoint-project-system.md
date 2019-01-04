@@ -1,9 +1,6 @@
 ---
 title: SharePoint 프로젝트 시스템의 확장에 데이터 저장 | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 helpviewer_keywords:
 - SharePoint project items, saving string data
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 74228b5259b733c91397eb1b40a2485daea8b79e
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: c7f0210a24df180e93aa8772f08b91e7312f5ccc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119533"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829256"
 ---
 # <a name="save-data-in-extensions-of-the-sharepoint-project-system"></a>SharePoint 프로젝트 시스템의 확장에 데이터를 저장 합니다.
   SharePoint 프로젝트 시스템을 확장 하는 경우에 SharePoint 프로젝트를 닫은 후 지속 되는 문자열 데이터를 저장할 수 있습니다. 데이터는 일반적으로 특정 프로젝트 항목 또는 프로젝트 자체에 연결 됩니다.  
@@ -60,4 +57,3 @@ ms.locfileid: "37119533"
  [SharePoint 프로젝트 시스템 확장](../sharepoint/extending-the-sharepoint-project-system.md)   
  [SharePoint 도구 확장과 사용자 지정 데이터 연결](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)   
  [SharePoint 프로젝트 시스템 형식과 기타 Visual Studio 프로젝트 형식 간의 변환](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)  
-  

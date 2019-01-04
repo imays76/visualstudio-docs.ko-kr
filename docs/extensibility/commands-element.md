@@ -1,9 +1,6 @@
 ---
 title: 요소는 명령 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - Commands
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31f34dbf974ef860ddabd29af0e94b3c65a11f32
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 704a37b1aeb211921b962fd816af89abb686a14e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231010"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955934"
 ---
 # <a name="commands-element"></a>Commands 요소
 VSPackage 도구 모음에서 명령의 컬렉션을 나타냅니다. 컬렉션 수 최대 5 개의 하위 섹션에서는 다음과 같이: 메뉴, 그룹, 단추, combos, 및 비트맵입니다.  
@@ -65,7 +62,7 @@ VSPackage 도구 모음에서 명령의 컬렉션을 나타냅니다. 컬렉션 
 |-------------|-----------------|  
 |[CommandTable 요소](../extensibility/commandtable-element.md)|VSPackage는 IDE를 제공 하는 명령을 나타내는 모든 요소를 정의 합니다. 가능한 요소에는 메뉴 항목, 메뉴, 도구 모음 및 콤보 상자는입니다.|  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 사용 하는 방법을 보여 줍니다는 [Commands 요소](../extensibility/commands-element.md)합니다.  
   
 ```  

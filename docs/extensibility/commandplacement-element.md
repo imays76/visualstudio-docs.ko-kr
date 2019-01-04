@@ -1,9 +1,6 @@
 ---
 title: CommandPlacement 요소 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - CommandPlacements element (VSCT XML schema)
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4d7288de9b0724d8ff4ef7b6174f59e747a9879d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c5d694f6ed12d3fd7d531ec6a0a01ec70a826561
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870265"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941362"
 ---
 # <a name="commandplacement-element"></a>CommandPlacement 요소
 CommandPlacement 요소에는 단추, 그룹 및 메뉴 둘 이상의 그룹 또는 메뉴에 포함 될 수 있습니다. CommandPlacement 요소를 사용 하 여 사용자 인터페이스의 모양을 수정 하려면 이러한 항목을 완전히 다시 정의할 필요가 없습니다.  
@@ -41,16 +38,16 @@ CommandPlacement 요소에는 단추, 그룹 및 메뉴 둘 이상의 그룹 또
   
 |특성|설명|  
 |---------------|-----------------|  
-|guid|필수. 에 정의 된 대로 명령 집합의 guid를 [Symbols 요소](../extensibility/symbols-element.md)합니다.|  
-|ID|필수. 메뉴, 그룹 또는 명령에 정의 된 대로 배치할의 id를 `Symbols Element`입니다.|  
-|priority|필수. 부모 요소에서 항목의 표시 위치를 결정합니다.|  
+|guid|필수 요소. 에 정의 된 대로 명령 집합의 guid를 [Symbols 요소](../extensibility/symbols-element.md)합니다.|  
+|ID|필수 요소. 메뉴, 그룹 또는 명령에 정의 된 대로 배치할의 id를 `Symbols Element`입니다.|  
+|priority|필수 요소. 부모 요소에서 항목의 표시 위치를 결정합니다.|  
 |조건|선택 사항입니다. 참조 [조건부 Aattributes](../extensibility/vsct-xml-schema-conditional-attributes.md)합니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
   
 |요소|설명|  
 |-------------|-----------------|  
-|부모|필수. 메뉴 또는 항목을 배치할 수를 호스팅하는 그룹입니다.|  
+|부모|필수 요소. 메뉴 또는 항목을 배치할 수를 호스팅하는 그룹입니다.|  
   
 ### <a name="parent-elements"></a>부모 요소  
   
@@ -69,6 +66,6 @@ CommandPlacement 요소에는 단추, 그룹 및 메뉴 둘 이상의 그룹 또
 </CommandPlacements>  
 ```  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [CommandPlacements 요소](../extensibility/commandplacements-element.md)   
  [Visual Studio 명령 테이블 (.vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

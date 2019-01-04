@@ -2,7 +2,6 @@
 title: '방법: XML 조각 만들기'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: d8556dd7-1382-4af7-ba80-3e873c9416be
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db7d1cc841da888c46342ec25bf28c3af7370be9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ec6332f52e732e99cc6d81512c9b3c469e99e18e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867717"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829104"
 ---
 # <a name="how-to-create-xml-snippets"></a>방법: XML 조각 만들기
 
@@ -118,8 +117,8 @@ XML 편집기를 사용하여 새 XML 조각을 만들 수 있습니다. 이 편
 
  그런 다음 XML 조각에서 $prefix$ 변수를 사용할 수 있습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [XML 조각](../xml-tools/xml-snippets.md)
-- [방법: 사용 하 여 XML 조각](../xml-tools/how-to-use-xml-snippets.md)
+- [방법: XML 조각 사용](../xml-tools/how-to-use-xml-snippets.md)
 - [방법: XML 스키마에서 XML 조각 생성](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)

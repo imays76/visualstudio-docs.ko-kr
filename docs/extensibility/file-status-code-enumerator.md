@@ -1,9 +1,6 @@
 ---
 title: 파일 상태 코드 열거자 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - named constants, SccStatus enumerator
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 884c7ab1b5d4fe1461fd1ae00fbc670f0bc7b6f2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cf7e39f91f6916f4d3ace7a9a303ea1c8e626ee9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921017"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954778"
 ---
 # <a name="file-status-code-enumerator"></a>파일 상태 코드 열거자
 `SccStatus` 소스 제어 시스템에서 파일의 상태를 지정 하는 명명 된 상수 값을 포함 하는 열거자입니다. 이 열거형은에서 사용 합니다 [SccQueryInfo](../extensibility/sccqueryinfo-function.md) 하며 `POPLISTFUNC` 콜백 함수 (참조 [POPLISTFUNC](../extensibility/poplistfunc.md) 세부 정보에 대 한).  
@@ -30,24 +27,24 @@ ms.locfileid: "49921017"
   
 ```  
 enum SccStatus {  
-   SCC_STATUS_INVALID          = -1L,  
-   SCC_STATUS_NOTCONTROLLED    = 0x0000L,  
-   SCC_STATUS_CONTROLLED       = 0x0001L,  
-   SCC_STATUS_CHECKEDOUT       = 0x0002L,  
-   SCC_STATUS_OUTOTHER         = 0x0004L,  
-   SCC_STATUS_OUTEXCLUSIVE     = 0x0008L,  
-   SCC_STATUS_OUTMULTIPLE      = 0x0010L,  
-   SCC_STATUS_OUTOFDATE        = 0x0020L,  
-   SCC_STATUS_DELETED          = 0x0040L,  
-   SCC_STATUS_LOCKED           = 0x0080L,  
-   SCC_STATUS_MERGED           = 0x0100L,  
-   SCC_STATUS_SHARED           = 0x0200L,  
-   SCC_STATUS_PINNED           = 0x0400L,  
-   SCC_STATUS_MODIFIED         = 0x0800L,  
-   SCC_STATUS_OUTBYUSER        = 0x1000L  
-   SCC_STATUS_NOMERGE          = 0x2000L  
-   SCC_STATUS_RESERVED_1       = 0x4000L  
-   SCC_STATUS_RESERVED_2       = 0x8000L  
+   SCC_STATUS_INVALID          = -1L,  
+   SCC_STATUS_NOTCONTROLLED    = 0x0000L,  
+   SCC_STATUS_CONTROLLED       = 0x0001L,  
+   SCC_STATUS_CHECKEDOUT       = 0x0002L,  
+   SCC_STATUS_OUTOTHER         = 0x0004L,  
+   SCC_STATUS_OUTEXCLUSIVE     = 0x0008L,  
+   SCC_STATUS_OUTMULTIPLE      = 0x0010L,  
+   SCC_STATUS_OUTOFDATE        = 0x0020L,  
+   SCC_STATUS_DELETED          = 0x0040L,  
+   SCC_STATUS_LOCKED           = 0x0080L,  
+   SCC_STATUS_MERGED           = 0x0100L,  
+   SCC_STATUS_SHARED           = 0x0200L,  
+   SCC_STATUS_PINNED           = 0x0400L,  
+   SCC_STATUS_MODIFIED         = 0x0800L,  
+   SCC_STATUS_OUTBYUSER        = 0x1000L  
+   SCC_STATUS_NOMERGE          = 0x2000L  
+   SCC_STATUS_RESERVED_1       = 0x4000L  
+   SCC_STATUS_RESERVED_2       = 0x8000L  
 };  
 ```  
   
@@ -106,7 +103,7 @@ enum SccStatus {
  SCC_STATUS_RESERVED_2  
  내부용으로 예약됩니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [원본 제어 플러그 인](../extensibility/source-control-plug-ins.md)   
  [SccQueryInfo](../extensibility/sccqueryinfo-function.md)   
  [POPLISTFUNC](../extensibility/poplistfunc.md)

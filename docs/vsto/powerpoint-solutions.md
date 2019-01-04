@@ -1,9 +1,6 @@
 ---
 title: PowerPoint 솔루션
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d7a2775526a088129060fc6375958b08cf6b19eb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0f264cd7382ea16a7c4cfa5896241f4359b0cd67
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906561"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906048"
 ---
 # <a name="powerpoint-solutions"></a>PowerPoint 솔루션
   Visual Studio에서는 Microsoft Office PowerPoint용 VSTO 추가 기능을 만드는 데 사용할 수 있는 프로젝트 템플릿을 제공합니다. VSTO 추가 기능을 사용하여 PowerPoint를 자동화하거나, PowerPoint 기능을 확장하거나, PowerPoint UI(사용자 인터페이스)를 사용자 지정할 수 있습니다.  
@@ -37,7 +34,7 @@ ms.locfileid: "49906561"
 > [!NOTE]  
 >  Office 환경을 확장 하는 솔루션을 개발 하는 데 관심이 [여러 플랫폼](https://dev.office.com/add-in-availability)? 새 확인해 [Office 추가 기능 모델](https://dev.office.com/docs/add-ins/overview/office-add-ins)합니다. Office 추가 기능의 VSTO 추가 기능 및 솔루션에 비해 작은 사용 공간이 있고 거의 모든 웹 프로그래밍 기술을, HTML5, JavaScript, CSS3, XML 등을 사용 하 여 빌드할 수 있습니다.  
   
- ![비디오 링크](../vsto/media/playvideo.gif "비디오 링크") 관련된 비디오 데모를 참조 하세요. [방법: 만들기 추가 Microsoft PowerPoint 용?](http://go.microsoft.com/fwlink/?LinkId=132767)합니다.  
+ ![비디오 링크](../vsto/media/playvideo.gif "비디오 링크") 관련된 비디오 데모를 참조 하세요. [어떻게 할까요? Microsoft PowerPoint 용 인 추가 기능 만들기 ](http://go.microsoft.com/fwlink/?LinkId=132767).  
   
 ## <a name="automate-powerpoint-by-using-the-powerpoint-object-model"></a>PowerPoint 개체 모델을 사용 하 여 PowerPoint를 자동화 합니다.  
  PowerPoint 개체 모델은 PowerPoint 자동화에 사용할 수 있는 다양한 형식을 노출합니다. 이러한 형식을 사용하여 일반적인 작업을 수행하는 코드를 작성할 수 있습니다.  
@@ -56,7 +53,7 @@ ms.locfileid: "49906561"
  PowerPoint 개체 모델에 대한 자세한 내용은 PowerPoint PIA(주 interop 어셈블리) 참조 및 VBA 개체 모델 참조를 참조할 수 있습니다.  
   
 ### <a name="primary-interop-assembly-reference"></a>주 interop 어셈블리 참조  
- PowerPoint PIA 참조 설명서에서는 PowerPoint에 대한 주 interop 어셈블리의 형식에 대해 설명합니다. 이 설명서는 다음 위치에서 사용할 수 있습니다: [PowerPoint 2010 주 interop 어셈블리 참조](http://go.microsoft.com/fwlink/?LinkId=189588)합니다.  
+ PowerPoint PIA 참조 설명서에서는 PowerPoint에 대한 주 interop 어셈블리의 형식에 대해 설명합니다. 이 설명서는 다음 위치에서 제공 됩니다. [PowerPoint 2010 주 interop 어셈블리 참조](http://go.microsoft.com/fwlink/?LinkId=189588)합니다.  
   
  클래스 및 인터페이스 간의 차이점에는 PIA, PIA의 이벤트 구현 방식 등 PowerPoint PIA의 디자인에 대 한 자세한 내용은 참조 하세요. [Office 주 interop 어셈블리의 클래스 및 인터페이스 개요 ](http://go.microsoft.com/fwlink/?LinkId=199885).  
   
@@ -76,7 +73,7 @@ ms.locfileid: "49906561"
   
  PowerPoint의 UI 및 다른 Microsoft Office 응용 프로그램을 사용자 지정 하는 방법에 대 한 자세한 내용은 참조 하세요. [Office UI 사용자 지정](../vsto/office-ui-customization.md)합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [연습: PowerPoint 용 첫 VSTO 추가 기능에 만들기](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)   
  [VSTO 추가 기능 프로그래밍 시작](../vsto/getting-started-programming-vsto-add-ins.md)   
  [Office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
@@ -87,5 +84,3 @@ ms.locfileid: "49906561"
  [Office 주 interop 어셈블리](../vsto/office-primary-interop-assemblies.md)   
  [Office UI 사용자 지정](../vsto/office-ui-customization.md)   
  [Office 개발의 PowerPoint 2010](http://go.microsoft.com/fwlink/?LinkId=199015)  
-  
-  

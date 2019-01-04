@@ -1,9 +1,6 @@
 ---
 title: '방법: 레거시 언어 서비스의 개요 표시 지원 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], collapse to definitions command
@@ -15,17 +12,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6f9ba947aee0276e2cca6270438cdaf20e7626e
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 8c22fdde3bc66a26246100f037c7009d5931cb95
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510959"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888005"
 ---
 # <a name="how-to-support-outlining-in-a-legacy-language-service"></a>방법: 레거시 언어 서비스의 개요 표시 지원
 개요 확장 또는 축소 텍스트의 서로 다른 지역에 사용 됩니다. 사용 되는 방식으로 개요 다른 언어에서 다르게 정의할 수 있습니다. 자세한 내용은 [개요](../../ide/outlining.md)를 참조하세요.  
   
- 레거시 언어 서비스는 VSPackage의 일부로 구현 됩니다 있지만 MEF 확장을 사용 하는 언어 서비스 기능을 구현 하는 최신 방법입니다. 개요를 구현 하는 새로운 방법에 대 한 자세한 내용을 참조 하세요 [연습: 개요](../../extensibility/walkthrough-outlining.md)합니다.  
+ 레거시 언어 서비스는 VSPackage의 일부로 구현 됩니다 있지만 MEF 확장을 사용 하는 언어 서비스 기능을 구현 하는 최신 방법입니다. 개요를 구현 하는 새로운 방법에 대 한 자세한 참조 [연습: 개요](../../extensibility/walkthrough-outlining.md)를 참조하세요.  
   
 > [!NOTE]
 >  편집기를 사용 하 여 새 API 최대한 빨리 시작 하는 것이 좋습니다. 언어 서비스의 성능이 향상 되 고 새 편집기 기능을 활용할 수 있습니다.  
@@ -48,6 +45,6 @@ ms.locfileid: "39510959"
 > [!NOTE]
 >  줄 바꿈 문자를 숨기는 방법에 대 한 주의 해야 합니다. 숨겨진된 텍스트 확장 해야 첫 번째 줄의 시작 부분에서 마지막 마지막 줄 바꿈 문자에 표시 된 채로 섹션에서 마지막 줄의 문자입니다.  
   
-## <a name="see-also"></a>참고자료  
- [방법: 숨겨진된 텍스트를 제공 합니다. 레거시 언어 서비스의 지원](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)   
+## <a name="see-also"></a>참고 항목  
+ [방법: 레거시 언어 서비스의 숨겨진된 텍스트 지원 제공](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)   
  [방법: 레거시 언어 서비스의 확장된 개요 표시 지원 제공](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)

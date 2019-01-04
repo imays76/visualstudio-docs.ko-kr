@@ -1,9 +1,6 @@
 ---
 title: SccGetVersion 함수 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccGetVersion
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70beb89f13d2f752f3adb0f25e2b370fa272171a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b997f3724dc3d1bb0f9155f3b575fef3ce9f2802
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136447"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879629"
 ---
 # <a name="sccgetversion-function"></a>SccGetVersion 함수
-이 함수는 소스 제어 플러그 인에서 지 원하는 소스 제어 플러그 인 API의 버전 번호를 가져옵니다.  
+이 함수에는 소스 제어 플러그 인에서 지 원하는 원본 제어 플러그 인 API의 버전 번호를 가져옵니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -35,7 +32,7 @@ LONG SccGetVersion(void);
  없음  
   
 ## <a name="return-value"></a>반환 값  
- A `LONG` 지원 되는 소스 제어 플러그 인 API의 버전 번호를 포함 하는 데이터 형식:  
+ `LONG` 지원 되는 원본 제어 플러그 인 API의 버전 번호를 포함 하는 데이터 형식:  
   
 |WORD|설명|  
 |----------|-----------------|  
@@ -43,7 +40,7 @@ LONG SccGetVersion(void);
 |LOWORD|부 버전|  
   
 ## <a name="remarks"></a>설명  
- 예를 들어 소스 제어 플러그 인 소스 제어 플러그 인 API의 버전 1.3을 지 원하는 경우이 함수 0x0103를 반환 합니다.  
+ 예를 들어, 소스 제어 플러그 인을 원본 제어 플러그 인 API의 버전 1.3을 지 원하는 경우이 함수는 0x0103를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)

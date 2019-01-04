@@ -1,9 +1,6 @@
 ---
 title: IDebugPendingBreakpoint2::SetPassCount | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugPendingBreakpoint2::SetPassCount
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c83a2498de2e939a41c07196a67c0844b7311668
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c4294febaf80c3e02f3cd6efcca9693458badb8e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846368"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950597"
 ---
 # <a name="idebugpendingbreakpoint2setpasscount"></a>IDebugPendingBreakpoint2::SetPassCount
 설정 하거나 보류 중단점과 연결 된 통과 수를 변경 합니다.  
@@ -29,13 +26,13 @@ ms.locfileid: "49846368"
 ## <a name="syntax"></a>구문  
   
 ```cpp  
-HRESULT SetPassCount(   
+HRESULT SetPassCount(   
    BP_PASSCOUNT bpPassCount  
 );  
 ```  
   
 ```csharp  
-int SetPassCount(   
+int SetPassCount(   
    BP_PASSCOUNT bpPassCount  
 );  
 ```  

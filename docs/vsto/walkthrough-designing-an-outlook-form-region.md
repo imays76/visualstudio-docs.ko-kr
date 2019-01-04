@@ -1,9 +1,6 @@
 ---
 title: '연습: Outlook 양식 영역 디자인'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 693261bb6894681b613ad0db2f0b3c116109a782
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c7c14b7702acff281ab32483930559b5fe521044
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813689"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942374"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>연습: Outlook 양식 영역 디자인
   사용자 지정 양식 영역은 표준 또는 사용자 지정 Microsoft Office Outlook 양식을 확장합니다. 이 연습에서는 연락처 항목의 검사기 창에 새 페이지로 표시되는 사용자 지정 양식 영역을 디자인합니다. 이 양식 영역은 Windows Live 로컬 검색 웹 사이트에 주소 정보를 전송하여 연락처에 대해 나열된 각 주소의 지도를 표시합니다. 양식 영역에 대 한 자세한 내용은 [만들 Outlook 양식 영역](../vsto/creating-outlook-form-regions.md)합니다.  
@@ -62,7 +59,7 @@ ms.locfileid: "49813689"
   
 3.  임의 디렉터리에 프로젝트를 저장합니다.  
   
-     자세한 내용은 [방법: Visual Studio에서 만드는 Office 프로젝트](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
+     자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
   
 ## <a name="add-a-form-region-to-the-outlook-vsto-add-in-project"></a>Outlook VSTO 추가 기능 프로젝트에 양식 영역 추가  
  Outlook VSTO 추가 기능 솔루션에는 하나 이상의 Outlook 양식 영역 항목이 포함될 수 있습니다. 사용 하 여 프로젝트에 양식 영역 항목을 추가 합니다 **새 Outlook 양식 영역** 마법사.  
@@ -169,7 +166,7 @@ ms.locfileid: "49813689"
      Map It 양식 영역이 나타나고 로컬 검색 웹 사이트를 표시합니다. 합니다 **비즈니스**를 **홈**, 및 **다른** 주소가 스크래치 패드에 나타납니다. 스크래치 패드에서 매핑할 주소를 선택합니다.  
   
 ## <a name="next-steps"></a>다음 단계  
- 다음 항목에서 Outlook 응용 프로그램의 UI를 사용자 지정하는 방법에 대해 자세히 알아볼 수 있습니다.  
+ 다음 항목에서 Outlook 애플리케이션의 UI를 사용자 지정하는 방법에 대해 자세히 알아볼 수 있습니다.  
   
 -   Outlook 항목의 리본을 사용자 지정 하는 방법에 알아보려면 [Outlook에 대 한 리본을 사용자 지정](../vsto/customizing-a-ribbon-for-outlook.md)합니다.  
   
@@ -182,5 +179,3 @@ ms.locfileid: "49813689"
  [Outlook 메시지 클래스를 사용 하 여 양식 영역을 연결 합니다.](../vsto/associating-a-form-region-with-an-outlook-message-class.md)   
  [Outlook 양식 영역의 사용자 지정 작업](../vsto/custom-actions-in-outlook-form-regions.md)   
  [방법: Outlook에서 양식 영역 표시 하지 않기](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)  
-  
-  

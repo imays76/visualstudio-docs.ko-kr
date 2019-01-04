@@ -1,9 +1,6 @@
 ---
 title: 시작 (Visual Studio에서 SharePoint 개발) | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a8078ff645227e07d7facbaf773c310546afdf2a
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 2159bbec0d89b43d37bcdd3c30a60ad9b329531c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295217"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847420"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>시작 (SharePoint 개발에 Visual Studio)
   이 섹션은 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 를 사용하여 [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] 및 [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]을 활용하는 SharePoint 솔루션 개발을 시작하는 데 도움이 됩니다.
@@ -46,8 +43,8 @@ ms.locfileid: "51295217"
 |[SharePoint 워크플로 솔루션 만들기](../sharepoint/creating-sharepoint-workflow-solutions.md)|워크플로 디자인 및 개발을 설명합니다.|
 |[SharePoint 비즈니스 데이터 통합](../sharepoint/integrating-business-data-into-sharepoint.md)|BDC(비즈니스 데이터 연결) 모델에 연결하여 비즈니스 데이터를 통합하는 방법을 설명합니다.|
 |[SharePoint 용 Creatie 웹 파트](../sharepoint/creating-web-parts-for-sharepoint.md)|SharePoint 사이트의 페이지 구성 요소인 웹 파트와 웹 파트 페이지를 설명합니다.|
-|[SharePoint 용 응용 프로그램 페이지 만들기](../sharepoint/creating-application-pages-for-sharepoint.md)|디자이너를 사용하여 응용 프로그램 페이지를 디자인하는 방법을 설명합니다.|
-|[웹 파트 또는 응용 프로그램 페이지에 대 한 재사용 가능한 컨트롤 만들기](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|SharePoint에서 응용 프로그램 페이지 및 웹 파트를 위해 재사용 가능한 사용자 지정 컨트롤을 만드는 방법을 설명합니다.|
+|[SharePoint 용 응용 프로그램 페이지 만들기](../sharepoint/creating-application-pages-for-sharepoint.md)|디자이너를 사용하여 애플리케이션 페이지를 디자인하는 방법을 설명합니다.|
+|[웹 파트 또는 응용 프로그램 페이지에 대 한 재사용 가능한 컨트롤 만들기](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|SharePoint에서 애플리케이션 페이지 및 웹 파트를 위해 재사용 가능한 사용자 지정 컨트롤을 만드는 방법을 설명합니다.|
 |[서버 탐색기를 사용 하 여 SharePoint 연결 찾아보기](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)|Visual Studio 도구 창에서 SharePoint 사이트의 구성 요소를 통해 탐색하는 방법을 설명합니다.|
 |[SharePoint 솔루션 빌드 및 디버그](../sharepoint/building-and-debugging-sharepoint-solutions.md)|디버그 SharePoint 솔루션 및 빌드하는 방법에 설명 합니다.|
 |[패키지 및 SharePoint 솔루션 배포](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)|설명 패키지 하는 방법 및 SharePoint 솔루션을 배포 합니다.|

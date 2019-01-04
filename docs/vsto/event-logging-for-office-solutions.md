@@ -1,9 +1,6 @@
 ---
 title: Office 솔루션에 대 한 이벤트 로깅
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8064c36b6b0e567f868fee7212560d726bbd3c66
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 6cca606022a8b35ba43f9174925aac978835d289
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647960"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857055"
 ---
 # <a name="event-logging-for-office-solutions"></a>Office 솔루션에 대 한 이벤트 로깅
   Windows에서 이벤트 뷰어를 사용하여 Office 솔루션을 설치하거나 제거할 때 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 에서 캡처되는 예외 메시지를 확인할 수 있습니다. 이벤트 로거에서 이러한 메시지를 사용하여 설치 및 배포 문제를 해결할 수 있습니다.  
@@ -39,7 +36,7 @@ ms.locfileid: "53647960"
   
 2.  **이벤트 뷰어**를 시작합니다.  
   
-3.  이벤트 로그의 목록에서 **응용 프로그램**을 선택합니다.  
+3.  이벤트 로그의 목록에서 **애플리케이션**을 선택합니다.  
   
 4.  **보기** 메뉴에서 **필터**를 클릭합니다.  
   
@@ -57,7 +54,7 @@ ms.locfileid: "53647960"
   
 3. **Windows 로그**를 확장합니다.  
   
-4. 이벤트 로그의 목록에서 **응용 프로그램**을 선택합니다.  
+4. 이벤트 로그의 목록에서 **애플리케이션**을 선택합니다.  
   
 5. **동작** 메뉴에서 **현재 로그 필터링**을 클릭합니다.  
   
@@ -102,5 +99,3 @@ ms.locfileid: "53647960"
 ## <a name="see-also"></a>참고 항목  
  [Office 솔루션 배포](../vsto/deploying-an-office-solution.md)   
  [Office 솔루션 배포 문제 해결](../vsto/troubleshooting-office-solution-deployment.md)  
-  
-  

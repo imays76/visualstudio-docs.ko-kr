@@ -1,9 +1,6 @@
 ---
 title: '방법: 문서에서 관리 코드 확장명 제거'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a57384fa22e810be27969bb5164e1951dccd1bf2
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 2057fe53a571bccf04373636f83aaedecebfd4ef
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675125"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964775"
 ---
 # <a name="how-to-remove-managed-code-extensions-from-documents"></a>방법: 문서에서 관리 코드 확장명 제거
   프로그래밍 방식으로 문서 또는 Microsoft Office Word 또는 Microsoft Office Excel 용 문서 수준 사용자 지정을 포함 된 통합 문서에서 사용자 지정 어셈블리를 제거할 수 있습니다. 사용자가 다음 문서를 열 고 볼 수 있으며 콘텐츠를 하지만 문서에 추가한 모든 사용자 지정 사용자 인터페이스 (UI)는 표시 되지 코드가 실행 되지 않습니다.  
@@ -30,7 +27,7 @@ ms.locfileid: "35675125"
   
  하나를 사용 하 여 사용자 지정 어셈블리를 제거할 수 있습니다 합니다 `RemoveCustomization` 에서 제공 하는 메서드는 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]합니다. 어떤 방법을 사용 하 여 런타임에 사용자 지정을 제거 하려는 여부에 따라 달라 집니다 (즉, 단어 하는 동안 사용자 지정에서 코드를 실행 하 여 문서 또는 Excel 통합 문서 연 경우) 또는 닫힌된 문서 또는 문서에서 사용자 지정을 제거 하려는 경우 해당 i Microsoft Office가 설치 되지 않은 서버에 대 한 s입니다.  
   
- ![비디오 링크](../vsto/media/playvideo.gif "비디오 링크") 관련된 비디오 데모를 참조 하세요. [i: 연결 수행 하는 방법 또는 Word 문서에서 VSTO 어셈블리를 분리?](http://go.microsoft.com/fwlink/?LinkId=136782)합니다.  
+ ![비디오 링크](../vsto/media/playvideo.gif "비디오 링크") 관련된 비디오 데모를 참조 하세요. [어떻게 할까요 연결 또는 분리를 VSTO 어셈블리 Word 문서에서? ](http://go.microsoft.com/fwlink/?LinkId=136782).  
   
 ## <a name="to-remove-the-customization-assembly-at-runtime"></a>런타임 시 사용자 지정 어셈블리를 제거 하려면  
   
@@ -58,6 +55,4 @@ ms.locfileid: "35675125"
   
 ## <a name="see-also"></a>참고자료  
  [ServerDocument 클래스를 사용 하 여 서버의 문서 관리](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
- [방법: 연결 관리 되는 문서에 대 한 확장 코드](../vsto/how-to-attach-managed-code-extensions-to-documents.md)  
-  
-  
+ [방법: 문서에 관리 코드 확장명 연결](../vsto/how-to-attach-managed-code-extensions-to-documents.md)  

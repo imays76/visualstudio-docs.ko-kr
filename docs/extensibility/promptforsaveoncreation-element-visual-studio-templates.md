@@ -1,6 +1,5 @@
 ---
 title: PromptForSaveOnCreation 요소 (Visual Studio 템플릿) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99e26a5466dfeb08a927323d11f6ec49e53730c4
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: bafe937bee5b51498fa7b7d5978c5cbf7e151a07
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53560586"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961052"
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation 요소 (Visual Studio 템플릿)
 저장 위치를 통해 프로젝트에 대해 묻는 여부를 지정 합니다 **새 프로젝트** 프로젝트를 만들 때 대화 상자. 이 요소 설정 된 경우 `true`에 저장 된 사용자가 입력 한 다음 위치 같으면 `false`을 묻는 메시지가 나타나지 않습니다. (즉, 임시 프로젝트가 만들어집니다.)  

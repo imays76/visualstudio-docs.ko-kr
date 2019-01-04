@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 538ebb2121c488fa56f693a424f91b8af19a0c3e
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 255dad6de728fd503f004522a79228546e4a288c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966845"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892305"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>도메인별 언어 도구 개요
 Visual Studio에서 호스팅되는 도메인 특정 언어 도구 (DSL 도구)를 사용 하 여 도메인 특정 언어의 디자인과 생성 하는 모든 사용자에 게 필요한 언어를 기반으로 하는 모델을 만들 수 있습니다.

@@ -1,9 +1,6 @@
 ---
 title: 게시 페이지, 프로젝트 디자이너 (Visual Studio에서 Office 개발)
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.ProjectProperties.Publish.2007System
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 66cb2c4cb15dfad2fa9d3a0508bd2d023360ee90
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 63094c3bdf8bd2787f11dd6fd6818ea265d781f2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803716"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966001"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>게시 페이지, 프로젝트 디자이너 (Visual Studio에서 Office 개발)
   **프로젝트 디자이너** 의 **게시** 페이지를 통해 배포를 위한 속성을 구성합니다.
@@ -81,21 +78,21 @@ ms.locfileid: "53803716"
 
   **옵션 (Office 설정)** 다음 속성에 대 한 게시 옵션을 설정할 수 있습니다.
 
-- 솔루션 이름: Office 응용 프로그램에 표시되는 Office 솔루션의 이름
+- 솔루션 이름: Office 애플리케이션에 표시되는 Office 솔루션의 이름
 
-- 설명: Office 응용 프로그램에 표시되는 Office 솔루션에 대한 설명
+- 설명: Office 애플리케이션에 표시되는 Office 솔루션에 대한 설명
 
 - VSTO 추가 기능 로드 동작
 
-  -   시작 시 로드: Office 응용 프로그램이 시작될 때 VSTO 추가 기능이 로드되도록 지정합니다.
+  -   시작 시 로드: Office 애플리케이션이 시작될 때 VSTO 추가 기능이 로드되도록 지정합니다.
 
-  -   요청 시 로드: 사용자가 VSTO 추가 기능의 기능을 사용하는 UI 요소를 클릭할 때처럼 VSTO 추가 기능이 응용 프로그램에서 필요로 할 때 로드되도록 지정합니다.
+  -   요청 시 로드: 사용자가 VSTO 추가 기능의 기능을 사용하는 UI 요소를 클릭할 때처럼 VSTO 추가 기능이 애플리케이션에서 필요로 할 때 로드되도록 지정합니다.
 
   **게시 언어** 이 옵션의 Microsoft 소프트웨어 사용 조건에 언어를 설정 하 고 필수 조건 목록에서 언어 팩을 포함 합니다. 사용자 지정의 언어에는 영향을 주지 않습니다. 설치 프로그램의 언어는 Visual Studio의 설치된 언어에 의해 결정됩니다.
 
   변경 하는 방법에 대 한 자세한 내용은 합니다 **게시 언어**를 참조 [방법: ClickOnce 응용 프로그램의 게시 언어 변경](../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)합니다.
 
-  **게시 버전** 사용자 지정에 대 한 버전 번호를 설정 합니다. 버전 번호가 변경되면 응용 프로그램이 업데이트로 게시됩니다. 이전에 게시된 버전을 덮어쓰지 않도록 빌드 프로세스 동안 각 버전에 대해 새 폴더가 만들어집니다. 게시 버전의 각 부분(**주**, **부**, **빌드**, **수정**)에는 최대 5개의 숫자가 포함될 수 있습니다.
+  **게시 버전** 사용자 지정에 대 한 버전 번호를 설정 합니다. 버전 번호가 변경되면 애플리케이션이 업데이트로 게시됩니다. 이전에 게시된 버전을 덮어쓰지 않도록 빌드 프로세스 동안 각 버전에 대해 새 폴더가 만들어집니다. 게시 버전의 각 부분(**주**, **부**, **빌드**, **수정**)에는 최대 5개의 숫자가 포함될 수 있습니다.
 
   **자동 수정 번호 릴리스마다 증가** 선택 사항입니다. 선택된 경우(기본값), 버전 번호의 **수정** 부분이 사용자 지정을 게시할 때마다 1씩 증가합니다. 그러면 사용자 지정이 업데이트로 게시됩니다.
 

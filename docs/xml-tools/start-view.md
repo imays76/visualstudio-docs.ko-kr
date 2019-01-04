@@ -2,7 +2,6 @@
 title: XML 스키마 디자이너 시작 뷰
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: f25e7a2f-7469-4279-b2f4-ee2dfd4d3af1
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 302c6574b8c09447f4b7e561118e60d200a3944f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ae65e494c20808123841143155e02d91c41b858e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920679"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857908"
 ---
 # <a name="start-view"></a>시작 뷰
 
@@ -27,13 +26,13 @@ ms.locfileid: "49920679"
 
 ## <a name="watermark"></a>워터마크
 
-워터 마크 창에는 모든 XSD 디자이너 뷰, XML 편집기에 대 한 링크의 목록을 포함 하 고 **XML 스키마 탐색기**합니다. 스키마 집합에 오류가 있는 경우 목록 끝에 "오류 목록을 사용하여 스키마 집합의 오류 표시 및 수정"이라는 텍스트가 표시됩니다.
+워터 마크 창에는 모든 XSD 디자이너 뷰, XML 편집기에 대 한 링크의 목록을 포함 하 고 **XML 스키마 탐색기**합니다. 스키마 집합에 오류가 있을 경우 목록 끝에 다음 텍스트가 표시 됩니다. 사용 하 여 오류 목록 보기 및 집합에서 오류를 수정 합니다. "
 
 ## <a name="schema-set-details"></a>스키마 집합 정보
 
 합니다 **스키마 집합 정보** 전역 스키마 노드 형식을 나열 하 고 스키마에 있는 각 형식의 인스턴스 수를 표시 하는 창입니다. 사용할 수는 **추가** 작업 영역에 새 노드를 추가할 노드 형식 옆에 있는 링크입니다.
 
-## <a name="toolbar"></a>Toolbar
+## <a name="toolbar"></a>ToolBar
 
 시작 뷰 간을 탐색할 수 있습니다 합니다 [콘텐츠 모델 뷰](../xml-tools/content-model-view.md) 하며 [그래프 뷰](../xml-tools/graph-view.md) XML 스키마 디자이너 도구 모음에서 합니다.
 
@@ -43,11 +42,11 @@ ms.locfileid: "49920679"
 
 |옵션|설명|
 |-|-----------------|
-|**시작 뷰 표시**|시작 뷰로 전환합니다. 바로 가기 키를 사용 하 여이 뷰에 액세스할 수 있습니다: **Ctrl**+**1**합니다.|
-|**콘텐츠 모델 뷰 표시**|콘텐츠 모델 뷰로 전환합니다. 바로 가기 키를 사용 하 여이 뷰에 액세스할 수 있습니다: **Ctrl**+**2**합니다.|
-|**그래프 뷰 표시**|그래프 뷰로 전환합니다. 바로 가기 키를 사용 하 여이 뷰에 액세스할 수 있습니다: **Ctrl**+**3**합니다.|
+|**시작 뷰 표시**|시작 뷰로 전환합니다. 이 보기는 바로 가기 키를 사용 하 여 액세스할 수 있습니다. **Ctrl**+**1**합니다.|
+|**콘텐츠 모델 뷰 표시**|콘텐츠 모델 뷰로 전환합니다. 이 보기는 바로 가기 키를 사용 하 여 액세스할 수 있습니다. **Ctrl**+**2**합니다.|
+|**그래프 뷰 표시**|그래프 뷰로 전환합니다. 이 보기는 바로 가기 키를 사용 하 여 액세스할 수 있습니다. **Ctrl**+**3**합니다.|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [XML 스키마 탐색기](../xml-tools/xml-schema-explorer.md)
 - [그래프 뷰](../xml-tools/graph-view.md)

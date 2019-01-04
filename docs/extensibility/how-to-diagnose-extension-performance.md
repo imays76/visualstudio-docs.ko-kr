@@ -1,9 +1,6 @@
 ---
 title: '방법: 확장 성능 진단 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/08/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 46b0a1e3-7e69-47c9-9d8d-a1815d6c3896
 author: BertanAygun
@@ -11,12 +8,12 @@ ms.author: bertaygu
 manager: douge
 ms.workload:
 - bertaygu
-ms.openlocfilehash: d1f2942c9f5987a686226c94e9764b8ab6300050
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fd51728f5e57af1017cb4b280f9ffc9d1c50df98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934927"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943423"
 ---
 # <a name="measuring-extension-impact-in-startup"></a>시작에서 확장 영향 측정
 
@@ -31,7 +28,7 @@ ms.locfileid: "49934927"
 이 문서는 확장 영향을 계산 하는 방식을 설명 하 여 확장을 쉽게 하려고 합니다. 이 문서에는 확장 영향을 로컬로 분석 될 수 있습니다 하는 방법을 설명 합니다. 로컬로 확장 영향 분석 확장인 경우 확장에 영향을 주는 성능으로 표시 될 수 있습니다 결정 됩니다.
 
 > [!NOTE]
-> 이 문서는 시작 및 솔루션 로드 시 확장의 영향에 중점을 둡니다. 또한 확장 하면 UI가 응답 하지 않을 때 Visual Studio 성능에 영향입니다. 대 한 자세한 내용은이 항목을 참조 하세요 [방법: 확장에 의해 발생 한 진단 UI 지연](how-to-diagnose-ui-delays-caused-by-extensions.md)합니다.
+> 이 문서는 시작 및 솔루션 로드 시 확장의 영향에 중점을 둡니다. 또한 확장 하면 UI가 응답 하지 않을 때 Visual Studio 성능에 영향입니다. 대 한 자세한 내용은이 항목을 참조 하세요. [방법: 진단 UI 확장 프로그램에서 발생 하는 지연](how-to-diagnose-ui-delays-caused-by-extensions.md)합니다.
 
 ## <a name="how-extensions-can-impact-startup"></a>확장 시작에 미칠 수 있습니다
 
@@ -51,11 +48,11 @@ Visual Studio 2015에서 시작 하는 많은 기능을 추가 했습니다. 이
 
 이러한 기능에 대 한 자세한 내용은 다음 문서에서 찾을 수 있습니다.
 
-[규칙 기반 UI 컨텍스트](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md): UI 컨텍스트를 구축 하는 다양 한 규칙 기반 엔진 및 특성을 버전과 프로젝트 형식을 기반으로 하는 사용자 지정 컨텍스트를 만들 수 있습니다. 보다 구체적인 시나리오 중 패키지를 로드 하려면 사용자 지정 컨텍스트를 사용할 수 있습니다. 이러한 특정 시나리오에는 시작 하는 대신 특정 기능을 사용 하 여 프로젝트의 현재 상태 포함 됩니다. 사용자 지정 컨텍스트 뿐만 [사용자 지정 컨텍스트 연결에 대 한 가시성을 명령을](visibilityconstraints-element.md) 프로젝트 구성 요소 또는 다른 사용 가능한 조건에 따라 합니다. 이 기능은 상태 쿼리 명령 처리기를 등록 하는 패키지를 로드할 필요가 없습니다.
+[규칙 기반 UI 컨텍스트](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md): UI 컨텍스트를 구축 하는 다양 한 규칙 기반 엔진을 사용 하면 프로젝트 형식, 버전, 및 특성에 따라 사용자 지정 컨텍스트를 만들 수 있습니다. 보다 구체적인 시나리오 중 패키지를 로드 하려면 사용자 지정 컨텍스트를 사용할 수 있습니다. 이러한 특정 시나리오에는 시작 하는 대신 특정 기능을 사용 하 여 프로젝트의 현재 상태 포함 됩니다. 사용자 지정 컨텍스트 뿐만 [사용자 지정 컨텍스트 연결에 대 한 가시성을 명령을](visibilityconstraints-element.md) 프로젝트 구성 요소 또는 다른 사용 가능한 조건에 따라 합니다. 이 기능은 상태 쿼리 명령 처리기를 등록 하는 패키지를 로드할 필요가 없습니다.
 
-[비동기 패키지 지원](how-to-use-asyncpackage-to-load-vspackages-in-the-background.md): Visual Studio 패키지 로드 되도록 백그라운드에서 비동기적으로 패키지 로드 자동 부하 특성 또는 비동기 서비스 쿼리를 요청한 경우를 허용 하는 Visual Studio 2015에서 새 AsyncPackage 기본 클래스 . 이 백그라운드 로드가 응답성을 유지 하기 위해 IDE를 허용 합니다. IDE는 응답도 확장은 백그라운드에서 초기화 되 고 시작 및 솔루션 로드와 같은 중요 한 시나리오를 받지 않습니다.
+[비동기 패키지 지원](how-to-use-asyncpackage-to-load-vspackages-in-the-background.md): Visual Studio 2015에서 새 AsyncPackage 기본 클래스에는 로드할 백그라운드에서 비동기적으로 자동 부하 특성 또는 비동기 서비스 쿼리를 패키지 로드를 요청한 경우 Visual Studio 패키지가 있습니다. 이 백그라운드 로드가 응답성을 유지 하기 위해 IDE를 허용 합니다. IDE는 응답도 확장은 백그라운드에서 초기화 되 고 시작 및 솔루션 로드와 같은 중요 한 시나리오를 받지 않습니다.
 
-[비동기 서비스](how-to-provide-an-asynchronous-visual-studio-service.md): 비동기 패키지 지원과 지원이 추가 되었습니다 서비스를 비동기적으로 쿼리 및 비동기 서비스를 등록할 수 있습니다. 무엇 보다도 노력에 비동기 쿼리 작업은 대부분 백그라운드 스레드에서 발생 되도록 비동기 쿼리를 지원 하기 위해 핵심 Visual Studio 서비스를 변환 합니다. SComponentModel (Visual Studio MEF 호스트)는 이제 완전히 비동기 로드를 지원 하도록 확장을 허용 하도록 비동기 쿼리를 지 원하는 주요 서비스 중 하나입니다.
+[비동기 서비스](how-to-provide-an-asynchronous-visual-studio-service.md): 비동기 패키지 지원과 서비스를 비동기적으로 쿼리하고 비동기 서비스를 등록할 수에 대 한 지원을 추가 했습니다. 무엇 보다도 노력에 비동기 쿼리 작업은 대부분 백그라운드 스레드에서 발생 되도록 비동기 쿼리를 지원 하기 위해 핵심 Visual Studio 서비스를 변환 합니다. SComponentModel (Visual Studio MEF 호스트)는 이제 완전히 비동기 로드를 지원 하도록 확장을 허용 하도록 비동기 쿼리를 지 원하는 주요 서비스 중 하나입니다.
 
 ## <a name="reducing-impact-of-auto-loaded-extensions"></a>확장을 로드 자동 미치는 영향을 줄이기
 
@@ -167,11 +164,11 @@ PerfView 자세한 분석을 위해 자체 도움말 메뉴에서 시간 스택 
 
 몇 가지 흥미로운 호출 위의 예제에 대 한 스택 것입니다.
 
-1. IO를 사용 하 여 `System.IO` 클래스: 파일 IO 속도 차이 컴퓨터에서 달라질 수 있으므로 문제의 잠재적 원인이 될 수는 있지만 이러한 프레임 포괄 비용 추적에 많은 비용이 소요 되지 않을 수 있습니다.
+1. IO를 사용 하 여 `System.IO` 클래스: 이러한 프레임 포괄 비용 추적에 많은 비용이 소요 되지 않을 수 있습니다 하는 동안 파일 IO 속도 차이 컴퓨터에서 달라질 수 있으므로 문제의 원인이 됩니다.
 
    ![시스템 io 프레임](media/perfview-system-io-frames.png)
 
-2. 다른 비동기 작업에서 대기 하는 호출을 차단 합니다:이 경우 포괄 시간은 비동기 작업 완료 시 주 스레드는 차단 시간을 나타냅니다.
+2. 다른 비동기 작업에서 대기 하는 호출을 차단 합니다. 이 경우 포괄 시간을 비동기 작업 완료 시 주 스레드는 차단에 나타냅니다.
 
    ![차단 호출 프레임](media/perfview-blocking-call-frames.png)
 

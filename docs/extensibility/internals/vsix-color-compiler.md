@@ -1,6 +1,5 @@
 ---
 title: VSIX 색 컴파일러 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
@@ -9,17 +8,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 115f3a6c9d01d1e92a5eb7c840dfb17abcfd3c72
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a1fee65200d026200de5196d1396191d759aded8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31144332"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990859"
 ---
 # <a name="vsix-color-compiler"></a>VSIX 색 컴파일러
-Visual Studio 확장 색 컴파일러 도구는.pkgdef 파일 하 인스턴스별로 Visual Studio에서 사용할 수 있도록 하는 변환 하 고 기존 Visual Studio 테마에 대 한 색을 나타내는.xml 파일을 사용 하는 콘솔 응용 프로그램에는. 쉽게.xml 파일 간의 차이점을 비교할 수 있기 때문에이 도구는 소스 제어에서 사용자 지정 색을 관리 하는 데 유용 합니다. 것도 연결할 수 빌드 환경에 빌드 출력이 잘못.pkgdef 파일 되도록 합니다.  
+Visual Studio 확장명 색 컴파일러 도구는 기존 Visual Studio 테마에 대 한 색을 나타내는.xml 파일을 사용 하는 콘솔 응용 프로그램 및 변환 하는.pkgdef 파일에 Visual Studio에서 해당 색을 사용할 수 있습니다. .Xml 파일 간의 차이점을 비교 하기가 쉽지 이기 때문에이 도구는 소스 제어에서 사용자 지정 색을 관리 하는 데 유용 합니다. 것도 연결 될 수 있습니다 빌드 환경에 빌드 출력이 잘못.pkgdef 파일을 되도록 합니다.  
   
- **테마의 XML 스키마**  
+ **테마 XML 스키마**  
   
  전체 테마.xml 파일은 다음과 같습니다.  
   
@@ -43,7 +42,7 @@ Visual Studio 확장 색 컴파일러 도구는.pkgdef 파일 하 인스턴스�
   
  **테마**  
   
- \<테마 > 요소는 전체 테마를 정의 합니다. 테마를 하나 이상 포함 해야 \<범주 > 요소입니다. 테마 요소는 다음과 같이 정의 됩니다.  
+ \<테마 > 요소는 전체 테마를 정의 합니다. 테마를 하나 이상 있어야 \<범주 > 요소입니다. 테마 요소는 다음과 같이 정의 됩니다.  
   
 ```xml  
 <Theme Name="name" GUID="guid">  
@@ -55,9 +54,9 @@ Visual Studio 확장 색 컴파일러 도구는.pkgdef 파일 하 인스턴스�
 |-|-|  
 |**특성**|**정의**|  
 |이름|[필수] 테마의 이름|  
-|GUID|[필수] 테마의 GUID (같아야 GUID 서식 지정)|  
+|GUID|[필수] 테마의 GUID (일치 해야 GUID 서식 지정)|  
   
- Visual Studio에 대 한 사용자 지정 색을 만들 때 해당 색 다음 테마에 대 한 정의 해야 합니다. 없는 색에 대 한 없으면 특정 테마 Visual Studio에서는 밝은 테마에서 누락 된 색을 로드 하려고 합니다.  
+ Visual Studio에 대 한 사용자 지정 색을 만들 때 해당 색 다음 테마에 대 한 정의 해야 합니다. 없는 색은 특정 테마에 존재 하는 경우 Visual Studio에서는 밝은 테마에서 누락 된 색을 로드 하려고 합니다.  
   
 |||  
 |-|-|  
@@ -69,7 +68,7 @@ Visual Studio 확장 색 컴파일러 도구는.pkgdef 파일 하 인스턴스�
   
  **범주**  
   
- \<범주 > 요소는 테마에 색의 컬렉션을 정의 합니다. 범주 이름 제공 논리 그룹 및 좁은 최대한으로 정의 해야 합니다. 범주는 하나 이상 포함 해야 \<색 > 요소입니다. Category 요소는 다음과 같이 정의 됩니다.  
+ \<범주 > 요소는 테마의 색의 컬렉션을 정의 합니다. 범주 이름 논리적 그룹화를 제공 및 좁은 최대한으로 정의 해야 합니다. 범주를 하나 이상 있어야 \<색 > 요소입니다. 범주 요소는 다음과 같이 정의 됩니다.  
   
 ```xml  
 <Category Name="name" GUID="guid">  
@@ -81,11 +80,11 @@ Visual Studio 확장 색 컴파일러 도구는.pkgdef 파일 하 인스턴스�
 |-|-|  
 |**특성**|**정의**|  
 |이름|[필수] 범주 이름|  
-|GUID|[필수] 범주의 GUID (같아야 GUID 서식 지정)|  
+|GUID|[필수] (일치 해야 GUID 서식 지정) 하는 범주 GUID|  
   
  **색**  
   
- \<색 > 요소는 구성 요소 또는 UI 상태에 대 한 색을 정의 합니다. 색에 대 한 기본 이름 지정 체계를 [UI 유형] [상태]. 중복 되는 대로 "색" 라는 단어를 사용 하지 마십시오. 요소 형식 및의 경우 또는 "상태" 색을 적용할 색을 명확 하 게 나타내야 합니다. 색, 비어 있지 않아야 하 고 하나 또는 둘 다 있어야는 \<배경 > 및 \<전경 > 요소입니다. 색 요소는 다음과 같이 정의 됩니다.  
+ \<색 > 요소는 구성 요소 또는 UI의 상태에 대 한 색을 정의 합니다. 색에 대 한 기본 명명 스키마는 [UI 유형] [State]. 중복 그대로 단어 "색"을 사용 하지 마세요. 요소 형식 및 경우를 "상태" 색을 적용할 색을 명확 하 게 나타내야 합니다. 색 비어 있어야 하며 하나 또는 둘 다 포함 해야 합니다는 \<백그라운드 > 및 \<전경 > 요소입니다. 색 요소는 다음과 같이 정의 됩니다.  
   
 ```xml  
 <Color Name="name">  
@@ -99,9 +98,9 @@ Visual Studio 확장 색 컴파일러 도구는.pkgdef 파일 하 인스턴스�
 |**특성**|**정의**|  
 |이름|[필수] 색의 이름|  
   
- **배경색 및/또는 전경**  
+ **백그라운드 및/또는 포그라운드**  
   
- \<배경 > 및 \<전경 > 요소를 색의 값과 배경이 나 전경 UI 요소 중 하나에 대 한 형식을 정의 합니다. 이 요소는 하위 항목이 없습니다.  
+ \<백그라운드 > 및 \<전경 > 요소를 색의 값 및 배경이 나 전경 UI 요소 중 하나에 대 한 형식을 정의 합니다. 이러한 요소에 자식이 없습니다.  
   
 ```xml  
 <Background Type="type" Source="int" />  
@@ -111,14 +110,14 @@ Visual Studio 확장 색 컴파일러 도구는.pkgdef 파일 하 인스턴스�
 |||  
 |-|-|  
 |**특성**|**정의**|  
-|형식|[필수] 색의 형식입니다. 다음 중 하나일 수 있습니다.<br /><br /> *CT_INVALID:* 색 잘못 되었거나 설정 되지 않았습니다.<br /><br /> *CT_RAW:* 원시 ARGB 값입니다.<br /><br /> *CT_COLORINDEX:* 사용 하지 마십시오.<br /><br /> *CT_SYSCOLOR:* SysColor에서 Windows 시스템 색상입니다.<br /><br /> *CT_VSCOLOR:* __VSSYSCOLOREX에서 Visual Studio 색입니다.<br /><br /> *CT_AUTOMATIC:* 자동 색입니다.<br /><br /> *CT_TRACK_FOREGROUND:* 사용 하지 마십시오.<br /><br /> *CT_TRACK_BACKGROUND:* 사용 하지 마십시오.|  
-|소스|[필수] 16 진수로 표시 된 색의 값|  
+|형식|[필수] 형식 색입니다. 다음 중 하나일 수 있습니다.<br /><br /> *CT_INVALID:* 색이 잘못 되었거나 설정 하지 않습니다.<br /><br /> *CT_RAW:* 원시 ARGB 값입니다.<br /><br /> *CT_COLORINDEX:* 사용 하지 마세요.<br /><br /> *CT_SYSCOLOR:* SysColor에서 Windows 시스템 색입니다.<br /><br /> *CT_VSCOLOR:* __VSSYSCOLOREX에서 Visual Studio 색입니다.<br /><br /> *CT_AUTOMATIC:* 자동 색입니다.<br /><br /> *CT_TRACK_FOREGROUND:* 사용 하지 마세요.<br /><br /> *CT_TRACK_BACKGROUND:* 사용 하지 마세요.|  
+|소스|[필수] 16 진수에서 표시 색상 값|  
   
- __VSCOLORTYPE 열거에 의해 지원 되는 모든 값에 형식 특성은 스키마에서 사용할 수 있습니다. 그러나 CT_RAW 및 CT_SYSCOLOR를 사용 하는 것이 좋습니다.  
+ __VSCOLORTYPE 열거에 의해 지원 되는 모든 값 형식 특성에서 스키마에에서 의해 지원 됩니다. 그러나 CT_RAW 및 CT_SYSCOLOR만 사용 하는 것이 좋습니다.  
   
  **모두 함께**  
   
- 다음은 올바른 테마.xml 파일의 간단한 예입니다.  
+ 올바른 테마.xml 파일의 간단한 예는 다음과 같습니다.  
   
 ```xml  
 <Themes>  
@@ -135,18 +134,18 @@ Visual Studio 확장 색 컴파일러 도구는.pkgdef 파일 하 인스턴스�
 ## <a name="how-to-use-the-tool"></a>이 도구를 사용 하는 방법  
  **구문**  
   
- VsixColorCompiler \<XML 파일 > \<PkgDef 파일 > \<선택적 Args >  
+ VsixColorCompiler \<XML 파일 > \<PkgDef 파일 > \<선택적 인수 >  
   
  **인수**  
   
 ||||  
 |-|-|-|  
 |**스위치 이름**|**참고**|**필수 또는 선택**|  
-|(.Mp 파일) 명명 되지 않은|이 첫 번째 이름 없는 매개 변수 이며 변환할 XML 파일의 경로입니다.|필수|  
-|(.Pkgdef 파일) 명명 되지 않은|두 번째 명명 되지 않은 매개 변수 이므로 생성된.pkgdef 파일에 대 한 출력 경로입니다.<br /><br /> 기본값: \<XML 파일 이름 >.pkgdef|Optional|  
-|/noLogo|이 플래그를 설정의 인쇄 제품 및 저작권 정보를 중지 합니다.|Optional|  
-|/?|도움말 정보를 출력 합니다.|Optional|  
-|/help|도움말 정보를 출력 합니다.|Optional|  
+|(.Mp 파일) 명명 되지 않은|이 명명 되지 않은 첫 번째 매개 변수 이며 변환할 XML 파일의 경로입니다.|필수|  
+|(.Pkgdef 파일) 명명 되지 않은|두 번째 명명 되지 않은 매개 변수 이며 생성 된.pkgdef 파일에 대 한 출력 경로입니다.<br /><br /> 기본값: \<XML 파일 이름 >.pkgdef|Optional|  
+|/noLogo|인쇄에서 제품 및 저작권 정보를 중지이 플래그를 설정 합니다.|Optional|  
+|/?|도움말 정보를 인쇄 합니다.|Optional|  
+|/help|도움말 정보를 인쇄 합니다.|Optional|  
   
  **예제**  
   
@@ -156,9 +155,9 @@ Visual Studio 확장 색 컴파일러 도구는.pkgdef 파일 하 인스턴스�
   
 ## <a name="notes"></a>노트  
   
--   이 도구를 최신 버전의 VC + + 런타임이 설치 해야 합니다.  
+-   이 도구를 최신 버전의 VC + + 런타임 설치 해야 합니다.  
   
--   단일 파일에만 사용할 수 있습니다. 폴더 경로 통해 대량 변환은 지원 되지 않습니다.  
+-   단일 파일만 지원 됩니다. 폴더 경로 통해 대량 변환은 지원 되지 않습니다.  
   
 ## <a name="sample-output"></a>샘플 출력  
  .Pkgdef 파일 도구로 생성 되는 것과 비슷하지만 키 아래:  

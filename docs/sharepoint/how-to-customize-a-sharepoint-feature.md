@@ -1,17 +1,12 @@
 ---
-title: '방법: SharePoint 기능 사용자 지정 | Microsoft Docs'
-ms.custom: ''
+title: '방법: Customize a SharePoint Feature | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.RAD.FeatureDesigner.SwitchView
 - VS.SharePointTools.RAD.featureDesigner.Manifest
 - VS.SharePointTools.RAD.FeatureDesignerProperties
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -21,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9be9ba70bb94e743a788db11b55c188275bcad64
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 15cb1b9527cb3a1e469d33a4125e1b410209d98f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119424"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835476"
 ---
 # <a name="how-to-customize-a-sharepoint-feature"></a>방법: SharePoint 기능 사용자 지정
   만들기 및 Visual Studio의 기능 디자이너를 사용 하 여 SharePoint 기능을 사용자 지정할 수 있습니다. 예를 들어, 기능 범위를 설정 하 고 다른 기능 종속성으로 추가할 수 있습니다. 기본적으로 기능 디자이너 솔루션 탐색기 또는 SharePoint 패키지 탐색기에서 새로운 기능을 추가 하면 열려 있습니다.  
@@ -94,6 +89,5 @@ ms.locfileid: "37119424"
   
 2.  원본 텍스트를 사용 하 여 템플릿을 새로 고쳐집니다 및 XML의 변경 내용이 손실 됩니다.  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  [패키지 및 SharePoint 솔루션 배포](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

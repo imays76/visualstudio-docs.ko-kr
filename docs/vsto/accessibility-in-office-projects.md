@@ -1,8 +1,6 @@
 ---
 title: Office 프로젝트의 내게 필요한 옵션
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -18,19 +16,20 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 97f96e5a79a6e98bb6367d9c00975e3e6288385a
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 32d44c33192d9d4e4fdcf1b8db8cb47102a1df61
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803813"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833328"
 ---
 # <a name="accessibility-in-office-projects"></a>Office 프로젝트의 내게 필요한 옵션
-  Microsoft Visual Studio 및 Microsoft Office 표준 접근성 요구 사항을 충족 하는 사용자 지정 솔루션을 구축할 수 있도록 많은 내게 필요한 옵션 기능을 포함 합니다. Microsoft는 웹에서 내게 필요한 옵션에 대 한 지침을 게시합니다. 자세한 내용은 참조는 [내게 필요한 옵션 웹 사이트](http://go.microsoft.com/fwlink/?LinkID=37113)합니다.
 
- 대부분의 경우 Visual Studio에서 Office 프로젝트는 솔루션에 액세스할 수 있도록 설정할 수 있는 내게 필요한 옵션 표준 또는 노출 속성을 만족 합니다. 그러나 액세스 가능성 제한 된 기능이 몇 가지 있습니다.
+Microsoft Visual Studio 및 Microsoft Office 표준 접근성 요구 사항을 충족 하는 사용자 지정 솔루션을 구축할 수 있도록 많은 내게 필요한 옵션 기능을 포함 합니다. Microsoft는 웹에서 내게 필요한 옵션에 대 한 지침을 게시합니다. 자세한 내용은 참조는 [내게 필요한 옵션 웹 사이트](http://go.microsoft.com/fwlink/?LinkID=37113)합니다.
 
- [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
+대부분의 경우 Visual Studio에서 Office 프로젝트는 솔루션에 액세스할 수 있도록 설정할 수 있는 내게 필요한 옵션 표준 또는 노출 속성을 만족 합니다. 그러나 액세스 가능성 제한 된 기능이 몇 가지 있습니다.
+
+[!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 ## <a name="accessibility-at-design-time"></a>디자인 타임에 내게 필요한 옵션
 

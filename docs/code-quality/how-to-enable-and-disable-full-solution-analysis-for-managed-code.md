@@ -1,5 +1,5 @@
 ---
-title: '방법: 설정 및 관리 코드에 대 한 전체 솔루션 분석 사용 해제'
+title: '방법: 사용 하도록 설정 하 고 관리 되는 코드에 대 한 전체 솔루션 분석 사용 안 함'
 ms.date: 03/23/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,44 +8,43 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
-ms.openlocfilehash: d227360be39455662d3d2ebe822810debd655dac
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b6e5d73f0a08511730cb79eccf60570bad804137
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922774"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937886"
 ---
 # <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>방법: 관리 코드에 대 한 전체 솔루션 분석 활성화 및 비활성화
 
-*전체 솔루션 분석이* 은 Visual Studio 기능을 통해 솔루션에 열려 있는 Visual C# 또는 Visual Basic 파일에만 코드 분석 문제를 확인할 수 있습니다 또는 코드에서 파일을 닫힙니다. 기본적으로 전체 솔루션 분석 사용은 *사용* Visual basic 및 *비활성화* Visual C#에 대 한 합니다.
+*전체 솔루션 분석* 열고 시각적 개체에만 코드 분석 문제를 볼 수 있도록 Visual Studio 기능은 C# 또는 Visual Basic 파일용 솔루션 또는 접근할 수 있는 코드 파일. 기본적으로 전체 솔루션 분석은 *사용 하도록 설정* Visual basic의 경우 및 *비활성화* 시각적 개체에 C#.
 
-모든 파일의 모든 문제를 보려면 유용할 수 있지만 산만 수도 있습니다. 저하 Visual Studio 솔루션 매우 큰 경우 또는 경우에 많은 파일이 있습니다. 표시 된 문제 수를 제한 하 고 Visual Studio 성능 향상을 하려면 전체 솔루션 분석 사용을 비활성화할 수 있습니다. 필요한 경우이 기능을 쉽게 다시 활성화할 수 있습니다.
+모든 파일에서 모든 문제를 확인 하려면 유용할 수 있지만 산만 수도 있습니다. 느려집니다 Visual Studio 솔루션이 매우 크거나 파일이 많은 경우. 표시 된 문제 수를 제한 하 고 Visual Studio 성능을 개선 하려면 전체 솔루션 분석을 비활성화할 수 있습니다. 필요한 경우이 기능을 쉽게 다시 활성화할 수 있습니다.
 
-## <a name="to-toggle-full-solution-analysis"></a>전체 솔루션 분석 사용을 전환 하려면
+## <a name="to-toggle-full-solution-analysis"></a>전체 솔루션 분석을 설정/해제 하려면
 
-1. 열려는 **옵션** Visual Studio의 메뉴 모음에서 대화 상자에서 선택 **도구** > **옵션**합니다.
+1. 열려는 합니다 **옵션** Visual Studio의 메뉴 모음에서 대화 상자에서 선택 **도구** > **옵션**합니다.
 
-1. 에 **옵션** 대화 상자에서 선택 **텍스트 편집기** > **C#** 또는 **기본**  >   **고급**합니다.
+1. 에 **옵션** 대화 상자에서 **텍스트 편집기**  >  **C#** 하거나 **기본**  >  **고급**합니다.
 
-1. 선택 된 **전체 솔루션 분석 사용** 전체 솔루션 분석 사용 하거나 사용 하지 않으려면 확인란의 선택을 취소 하려면 확인란 합니다. 선택 **확인** 다 합니다.
+1. 선택 된 **전체 솔루션 분석 사용** 전체 솔루션 분석 사용 하거나 사용 하지 않도록 확인란의 선택을 취소 하려면 확인란 합니다. 선택할 **확인** 완료 되 면 합니다.
 
     ![전체 솔루션 분석 사용 확인란을 사용 하도록 설정 합니다.](../code-quality/media/options-enable-full-solution-analysis.png)
 
-## <a name="results-of-enabling-and-disabling-full-solution-analysis"></a>설정 및 해제 전체 솔루션 분석 사용의 결과
+## <a name="results-of-enabling-and-disabling-full-solution-analysis"></a>전체 솔루션 분석 사용 하지 않도록 설정 하 고 결과
 
-다음 스크린샷에 전체 솔루션 분석 사용 설정 된 경우 결과 볼 수 있습니다. 모든 오류 및의 코드 분석 문제 *모든* 솔루션에 있는 파일의 표시, 파일은 열려 있는지 여부에 관계 없이 합니다.
+다음 스크린 샷에서 전체 솔루션 분석 사용 하는 경우 결과 볼 수 있습니다. 모든 오류 및에서 코드 분석 문제가 *모든* 솔루션에 있는 파일의 표시 여부에 관계 없이 파일을 열고 여부.
 
 ![전체 솔루션 분석 사용 하도록 설정 합니다.](../code-quality/media/fsa_enabled.png)
 
-다음 스크린 샷에서 전체 솔루션 분석 사용을 해제 한 후 동일한 솔루션에서 결과 보여 줍니다. 오류 및 열려 있는 솔루션 파일에서 코드 분석 문제에 표시 된 **오류 목록**합니다.
+다음 스크린 샷에서 전체 솔루션 분석을 해제 한 후 동일한 솔루션에서 결과 보여 줍니다. 오류 및 열려 있는 솔루션 파일의 코드 분석 문제를 표시 합니다 **오류 목록**합니다.
 
 ![전체 솔루션 분석 사용 하지 않도록 설정 합니다.](../code-quality/media/fsa_disabled.png)
 
 ## <a name="automatically-disable-full-solution-analysis"></a>자동으로 전체 솔루션 분석 사용 안 함
 
-Visual Studio를 검색 하는 경우 200MB 또는 시스템 메모리의 작은 사용할 수 있는 것을 자동으로 비활성화 전체 솔루션 분석 사용 (및 다른 기능) 사용 하는 경우. 이 경우 Visual Studio에 사용할 수 없도록 일부 기능을 알리는 경고가 나타납니다. 단추를 사용 하면 전체 솔루션 분석 사용 하려는 경우 다시 수 있습니다.
+Visual Studio를 검색 하는 경우 200 MB 또는 사용 가능한 시스템 메모리의 이하인 경우, 자동으로 비활성화 전체 솔루션 분석 (및 다른 기능) 사용 하는 경우. 이 경우 Visual Studio에 사용 하지 않도록 몇 가지 기능에 알리는 경고가 나타납니다. 단추를 사용 하면 원하는 경우 전체 솔루션 분석 사용 하도록 다시 설정할 수 있습니다.
 
-![전체 솔루션 분석 사용 중단 경고 텍스트](../code-quality/media/fsa_alert.png)
+![전체 솔루션 분석을 일시 중단 하는 경고 텍스트](../code-quality/media/fsa_alert.png)

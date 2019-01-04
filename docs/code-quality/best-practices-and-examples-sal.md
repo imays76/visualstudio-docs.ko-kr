@@ -2,19 +2,18 @@
 title: 모범 사례 및 예제(SAL)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 author: mikeblome
 ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 7922d381d61d40c20fa69859dd091849684723b2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 51d9526cb9778dd7f4fde61cca5667c7eaece2f1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899970"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959198"
 ---
 # <a name="best-practices-and-examples-sal"></a>모범 사례 및 예제(SAL)
 SAL(Source Code Annotation Language)을 최대한 활용하고 몇 가지 일반적인 문제를 방지하는 방법은 다음과 같습니다.
@@ -238,7 +237,7 @@ _Ret_maybenull_ void *MightReturnNullPtr2();
 
 이 예제에서 `_Out_opt_`는 포인터가 사전 조건의 일부로 NULL일 수 있는 것으로 지정합니다. 하지만 사전 조건은 반환 값에 적용할 수 없습니다. 이 경우에 올바른 주석은 `_Ret_maybenull_`입니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [C/c + + 코드 오류를 줄이기 위한 SAL 주석 사용](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 [SAL 이해](../code-quality/understanding-sal.md)

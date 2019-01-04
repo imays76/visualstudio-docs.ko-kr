@@ -1,9 +1,6 @@
 ---
 title: 열거자 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, enumerators
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e555ca317dea79d1fe3b856a7c449d01f0b792af
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 26631c4b6ae6d6fb8d5bd00c772cc7f11943d459
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636228"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848102"
 ---
 # <a name="enumerators"></a>열거자
 이 섹션에서는 소스 제어 플러그 인에 대해 알아야 하는 원본 제어 플러그 인 API 데이터 형식 열거자를 나열 합니다.  

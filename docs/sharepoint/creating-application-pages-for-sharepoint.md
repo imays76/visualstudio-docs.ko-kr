@@ -1,13 +1,8 @@
 ---
 title: SharePoint 용 응용 프로그램 페이지 만들기 | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -21,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5f1c3b03507ca97724106c6ca1d121b3c54eb659
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0ed9c17d68e2386b7a5b5077ee4a7d1764ea5aee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853144"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876408"
 ---
 # <a name="create-application-pages-for-sharepoint"></a>SharePoint 용 응용 프로그램 페이지 만들기
   *응용 프로그램 페이지* SharePoint 웹 사이트에서 사용 하기 위해 설계 된 ASP.NET 웹 페이지입니다. 응용 프로그램 페이지는 ASP.NET 페이지의 특수화 된 형식입니다. 응용 프로그램 페이지 및 표준 ASP.NET 페이지 간의 주요 차이점은 응용 프로그램 페이지는 SharePoint 마스터 페이지를 사용 하 여 병합 되는 콘텐츠를 포함 합니다. 마스터 페이지를는 응용 프로그램 페이지를 사이트에서 다른 페이지와 동일한 모양 및 동작을 공유할 수 있습니다.  
@@ -80,4 +75,3 @@ ms.locfileid: "49853144"
  [SharePoint Foundation 개발 심층 정보](http://go.microsoft.com/fwlink/?LinkID=182103)   
  [ASP.NET 개요](/aspnet/overview)   
  [ASP.NET 웹 페이지 2](/aspnet/web-pages/index)   
-  

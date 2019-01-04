@@ -1,9 +1,6 @@
 ---
 title: SccGetEvents 함수 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccGetEvents
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 981b3c9b0a03abfa13fedc7c62e77f02a425b248
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4f575162d6c5079a1233302186ae904241cb8673
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896993"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942231"
 ---
 # <a name="sccgetevents-function"></a>SccGetEvents 함수
 이 함수는 큐에 대기 중인된 상태 이벤트를 검색합니다.  
@@ -63,6 +60,6 @@ SCCRTN SccGetEvents (
   
  소스 제어 플러그 인에서 가리키는 버퍼에 빈 문자열을 저장 보고서는 상태 업데이트 되지 경우 `lpFileName`합니다. 그렇지 않으면 플러그 인 저장 파일의 전체 경로 이름에는 상태 정보를 변경 된 적절 한 상태 코드를 반환 합니다 (에 자세히 설명 하는 값 중 하나 [상태 코드를 파일](../extensibility/file-status-code-enumerator.md)).  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [원본 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)   
  [파일 상태 코드](../extensibility/file-status-code-enumerator.md)

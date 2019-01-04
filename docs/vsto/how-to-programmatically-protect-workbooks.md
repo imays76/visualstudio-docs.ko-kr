@@ -1,9 +1,6 @@
 ---
 title: '방법: 프로그래밍 방식으로 통합 문서를 보호'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8999bb1e30958897f9b7732ab393650320ec77b1
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b41eed7ee8b20cc807ada75ee0a4c1ccd1519fc6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673960"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900777"
 ---
 # <a name="how-to-programmatically-protect-workbooks"></a>방법: 프로그래밍 방식으로 통합 문서를 보호
   사용자 수 없습니다. 추가 하거나 워크시트를 삭제 한도 프로그래밍 방식으로 통합 문서 보호 해제 되도록 Microsoft Office Excel 통합 문서를 보호할 수 있습니다. 필요에 따라 암호를 지정 수를 구조를 (따라서 사용자 시트를 이동할 수 없습니다) 보호와 보호 된 통합 문서의 windows 것인지 여부를 나타냅니다 수 있습니다.  
@@ -68,10 +65,8 @@ ms.locfileid: "35673960"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#7](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#7)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#7](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#7)]  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [통합 문서를 사용 하 여 작동 합니다.](../vsto/working-with-workbooks.md)   
  [방법: 프로그래밍 방식으로 워크시트 보호](../vsto/how-to-programmatically-protect-worksheets.md)   
  [방법: 프로그래밍 방식으로 워크시트 숨기기](../vsto/how-to-programmatically-hide-worksheets.md)   
  [Office 솔루션의 선택적 매개 변수](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

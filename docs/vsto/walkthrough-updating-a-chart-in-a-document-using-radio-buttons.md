@@ -1,9 +1,6 @@
 ---
 title: '연습: 라디오 단추를 사용 하 여 문서에서 차트를 업데이트 합니다.'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5e82c50c83a8824b4570779034b0480aa0615a30
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a16a9bffef76d904349f36e7cd2705ef89b13832
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904676"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943238"
 ---
 # <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>연습: 라디오 단추를 사용 하 여 문서에서 차트를 업데이트 합니다.
   이 연습에서는 Microsoft Office Word의 문서 수준 사용자 지정에서 라디오 단추를 사용하여 문서에서 차트 스타일 선택 옵션을 사용자에게 제공하는 방법을 보여줍니다.  
@@ -52,7 +49,7 @@ ms.locfileid: "49904676"
   
 ### <a name="to-create-a-new-project"></a>새 프로젝트를 만들려면  
   
-1.  이름을 사용 하 여 Word 문서 프로젝트를 만듭니다 **My Chart Options**합니다. 마법사에서 선택 **새 문서 만들기**합니다. 자세한 내용은 [방법: Visual Studio에서 만드는 Office 프로젝트](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
+1.  이름을 사용 하 여 Word 문서 프로젝트를 만듭니다 **My Chart Options**합니다. 마법사에서 선택 **새 문서 만들기**합니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
   
      Visual Studio 디자이너에서 새 Word 문서가 열리고 추가 합니다 **My Chart Options** 프로젝트가 **솔루션 탐색기**합니다.  
   
@@ -76,7 +73,7 @@ ms.locfileid: "49904676"
   
 6.  에 **레이아웃** 탭의 **형식 개체** 대화 상자에서 **사각형** 클릭 **확인**합니다.  
   
-## <a name="add-a-user-control-to-the-project"></a>사용자 컨트롤을 프로젝트에 추가  
+## <a name="add-a-user-control-to-the-project"></a>프로젝트에 사용자 정의 컨트롤 추가  
  기본적으로 문서에서는 여러 라디오 단추를 함께 사용할 수 있습니다. 라디오 단추를 사용자 컨트롤에 추가한 다음 컨택을 제어하는 코드를 작성하여 해당 단추가 올바르게 작동하도록 지정할 수 있습니다.  
   
 ### <a name="to-add-a-user-control"></a>사용자 컨트롤을 추가하려면  
@@ -197,7 +194,7 @@ ms.locfileid: "49904676"
   
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#16](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#16)]  
   
-## <a name="test-the-application"></a>응용 프로그램 테스트  
+## <a name="test-the-application"></a>애플리케이션 테스트  
  이제 문서를 테스트하여 라디오 단추를 선택할 때 차트 스타일이 올바르게 업데이트되는지 확인할 수 있습니다.  
   
 ### <a name="to-test-your-document"></a>문서를 테스트하려면  
@@ -215,9 +212,7 @@ ms.locfileid: "49904676"
   
 -   콤보 상자에서 스타일을 선택하여 서식을 변경합니다. 자세한 내용은 [연습: CheckBox 컨트롤을 사용 하 여 변경 문서 서식](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Word를 사용 하 여 연습](../vsto/walkthroughs-using-word.md)   
  [Office 개발 샘플 및 연습](../vsto/office-development-samples-and-walkthroughs.md)   
  [Office 문서의 Windows Forms 컨트롤의 제한 사항](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
-  
-  

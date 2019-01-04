@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 930d7ededf4a54aaf75516c59001eaccf38c210c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 436b327e090d11d6e0e54f1a908e3e871d2b846a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896770"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857123"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>프로그램 코드에서 모델 탐색 및 업데이트
 
@@ -475,7 +474,7 @@ partial class MyDiagram
  또한이 메서드를 사용 하 여 커넥터의 노출 된 다른 속성과 색을 설정할 수 있습니다.
 
 ### <a name="use-transactions"></a>트랜잭션을 사용 하 여
- 모양, 연결선 및 다이어그램의 하위 폼은 <xref:Microsoft.VisualStudio.Modeling.ModelElement> 및 저장소에 라이브입니다. 따라서 변경 해야 하는 트랜잭션에서 합니다. 자세한 내용은 [방법: 트랜잭션을 사용 하 여 모델 업데이트](../modeling/how-to-use-transactions-to-update-the-model.md)합니다.
+ 모양, 연결선 및 다이어그램의 하위 폼은 <xref:Microsoft.VisualStudio.Modeling.ModelElement> 및 저장소에 라이브입니다. 따라서 변경 해야 하는 트랜잭션에서 합니다. 자세한 내용은 [방법: 트랜잭션을 사용 모델을 업데이트 하 여](../modeling/how-to-use-transactions-to-update-the-model.md)입니다.
 
 ##  <a name="docdata"></a> 문서 보기 및 문서 데이터
  ![표준 다이어그램 형식의 클래스 다이어그램](../modeling/media/dsldiagramsanddocs.png)
@@ -488,6 +487,6 @@ partial class MyDiagram
 - <xref:Microsoft.VisualStudio.Modeling.ModelElement>
 - [도메인별 언어에서 유효성 검사](../modeling/validation-in-a-domain-specific-language.md)
 - [도메인별 언어에서 코드 생성](../modeling/generating-code-from-a-domain-specific-language.md)
-- [방법: 트랜잭션을 사용하여 모델 업데이트](../modeling/how-to-use-transactions-to-update-the-model.md)
+- [방법: 트랜잭션을 사용 하 여 모델 업데이트](../modeling/how-to-use-transactions-to-update-the-model.md)
 - [Visual Studio Modelbus를 사용하여 모델 통합](../modeling/integrating-models-by-using-visual-studio-modelbus.md)
 - [변경 내용에 대한 대응 및 전파](../modeling/responding-to-and-propagating-changes.md)

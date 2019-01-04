@@ -1,9 +1,6 @@
 ---
 title: 파일 이름 확장명에 대 한 동사 등록 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - verbs, registering
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd42bc89eb853a5d65f8e15eab3fdf2cd054f278
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 55b6e8d450a298b6d35079998863a9394ec7d70d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927803"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949734"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>파일 이름 확장명에 대 한 동사 등록
 응용 프로그램의 파일 이름 확장명을 연결에는 일반적으로 사용자가 파일을 두 번 클릭할 때 발생 하는 기본 작업이 있습니다. 이 작업 동사 예를 들어 열기 작업에 해당 하는 연결 된 것이 좋습니다.  
@@ -114,5 +111,5 @@ ms.locfileid: "49927803"
 > [!NOTE]
 >  Side-by-side-배포에서 확장의 기본 동사가 변경 하려는 경우 설치 및 제거에 미치는 영향을 고려 합니다. 설치 하는 동안 원래 기본 값을 덮어씁니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Side-by-side-파일 연결 관리](../extensibility/managing-side-by-side-file-associations.md)

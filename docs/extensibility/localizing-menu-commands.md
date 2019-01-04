@@ -1,9 +1,6 @@
 ---
 title: 메뉴 명령 지역화 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - localize
@@ -18,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c8eb9e566f4f5916961a95a1c61f8fdcbb689f1e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 27c12228de5a49d0b61cc61e5c1233343430b686
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876219"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934059"
 ---
 # <a name="localize-menu-commands"></a>메뉴 명령 지역화
 지역화 된 만들어 메뉴 및 도구 모음 명령에 대 한 지역화 된 텍스트를 제공할 수 있습니다 *.vsct* 파일과 지역화 *.resx* 통합 하기 위해 VSPackage를 및 프로젝트 파일을 업데이트 한 다음 파일을 변경 내용입니다.  

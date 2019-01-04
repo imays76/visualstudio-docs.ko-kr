@@ -1,9 +1,6 @@
 ---
 title: '연습: 런타임에 VSTO 추가 기능 프로젝트에서 워크시트에 컨트롤 추가'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,17 +15,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b3671b00ecad0380dd38e770beeef703fa916fac
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5aa574abb6f0d14d17a9bfb73c28a6c330885bc2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915700"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968646"
 ---
 # <a name="walkthrough-add-controls-to-a-worksheet-at-runtime-in-vsto-add-in-project"></a>연습: 런타임에 VSTO 추가 기능 프로젝트에서 워크시트에 컨트롤 추가
   Excel VSTO 추가 기능을 사용하여 열려 있는 워크시트에 컨트롤을 추가할 수 있습니다. 이 연습에서는 리본 메뉴를 사용하여 사용자가 <xref:Microsoft.Office.Tools.Excel.Controls.Button>, <xref:Microsoft.Office.Tools.Excel.NamedRange> 및 <xref:Microsoft.Office.Tools.Excel.ListObject>를 워크시트에 추가할 수 있도록 하는 방법을 보여 줍니다. 정보를 참조 하세요 [런타임에 Office 문서에 컨트롤 추가](../vsto/adding-controls-to-office-documents-at-run-time.md)합니다.  
   
- **적용 대상:** 이 항목의 정보를 Excel의 VSTO 추가 기능 프로젝트에 적용 됩니다. 자세한 내용은 [Office 응용 프로그램 및 프로젝트 형식에 따라 사용 가능한 기능](../vsto/features-available-by-office-application-and-project-type.md)을 참조하세요.  
+ **적용 대상:** 이 항목의 정보를 Excel의 VSTO 추가 기능 프로젝트에 적용 됩니다. 자세한 내용은 [Office 애플리케이션 및 프로젝트 형식에 따라 사용 가능한 기능](../vsto/features-available-by-office-application-and-project-type.md)을 참조하세요.  
   
  이 연습에서는 다음 작업을 수행합니다.  
   
@@ -52,7 +49,7 @@ ms.locfileid: "49915700"
   
 ### <a name="to-create-a-new-excel-vsto-add-in-project"></a>새 Excel VSTO 추가 기능 프로젝트를 만들려면  
   
-1.  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]를 이름으로 Excel VSTO 추가 기능 프로젝트를 만듭니다 **ExcelDynamicControls**합니다. 자세한 내용은 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)을 참조하세요.  
+1.  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]를 이름으로 Excel VSTO 추가 기능 프로젝트를 만듭니다 **ExcelDynamicControls**합니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
   
 2.  에 대 한 참조를 추가 합니다 **Microsoft.Office.Tools.Excel.v4.0.Utilities.dll** 어셈블리입니다. 이 참조는 이 연습의 뒷부분에서 프로그래밍 방식으로 워크시트에 Windows Forms 컨트롤을 추가하는 데 필요합니다.  
   
@@ -142,7 +139,7 @@ ms.locfileid: "49915700"
   
 1.  **솔루션 탐색기**를 선택 *ThisAddIn.cs* 하거나 *ThisAddIn.vb*합니다.  
   
-2.  에 **뷰** 메뉴에서 클릭 **코드**합니다.  
+2.  **보기** 메뉴에서 **코드**를 클릭합니다.  
   
 3.  다음 메서드를 `ThisAddIn` 클래스에 추가합니다. 이 코드는 통합 문서에서 첫 번째 워크시트를 가져온 다음 `HasVstoObject` 메서드를 사용하여 워크시트에 생성된 워크시트 개체가 있는지 여부를 확인합니다. 생성된 워크시트 개체에 컨트롤이 있는 경우 코드가 해당 워크시트 개체를 가져온 다음 컨트롤 컬렉션을 반복하고 컨트롤을 제거합니다.  
   
@@ -195,5 +192,3 @@ ms.locfileid: "49915700"
  [Office 문서의 컨트롤](../vsto/controls-on-office-documents.md)   
  [NamedRange 컨트롤](../vsto/namedrange-control.md)   
  [ListObject 컨트롤](../vsto/listobject-control.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
 title: VSIX 매니페스트 디자이너 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - VS.Sdk.VsixManifestEditor
@@ -17,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93780f0d8c85eaa2736759f3765c34edfb7c9998
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 54ad66452151142b3ad18a97591a5cf774896a14
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853872"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852351"
 ---
 # <a name="vsix-manifest-designer"></a>VSIX 매니페스트 디자이너
 VSIX 패키지 매니페스트 파일을 Visual Studio 확장에 대 한 설치 동작을 설정 하는 수정 합니다.  
@@ -151,6 +148,6 @@ VSIX 패키지 매니페스트 파일을 Visual Studio 확장에 대 한 설치 
   
   식별자와 일치 해야 합니다는 `ID` 종속성 패키지 메타 데이터의 특성입니다. 원본은 현재 솔루션, 현재 설치 된 확장을 또는 파일에서 프로젝트를 수 있습니다. 합니다 **성은 종속성 해결** 중첩 된 패키지의 상대 경로 또는 종속성에 대 한 다운로드 위치의 URL을 설정할 수 있습니다. 에 해당 하는 ID, 버전 및 종속성 패키지의 해상도 `Id`, `Version`, 및 `Location` 관련 된 특성 `Dependency` 요소입니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [VSIX 확장 스키마 2.0 참조](../extensibility/vsix-extension-schema-2-0-reference.md)   
  [VSIX 패키지 분석](../extensibility/anatomy-of-a-vsix-package.md)

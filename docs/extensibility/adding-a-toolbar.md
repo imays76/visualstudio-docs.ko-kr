@@ -1,9 +1,6 @@
 ---
 title: 도구 모음 추가 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - toolbars [Visual Studio], adding to IDE
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2888ab6fade4893389af23ff456a63ffc5fbc40
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 6fa301a146dec9e7ee9b2f7edcaa6480e6bf5fef
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151988"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934744"
 ---
 # <a name="add-a-toolbar"></a>도구 모음 추가
 이 연습에서는 Visual Studio IDE에 도구 모음을 추가 하는 방법을 보여 줍니다.  
@@ -92,5 +89,5 @@ ms.locfileid: "39151988"
   
 7.  이제 도구 모음에서 찾기 파일 아이콘의 오른쪽에 아이콘으로 표시 됩니다. 했다는 메시지 상자가 표시 아이콘을 클릭 하면 **ToolbarTestCommandPackage 합니다. IDEToolbar.ToolbarTestCommand.MenuItemCallback() 내**합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)

@@ -1,9 +1,6 @@
 ---
 title: 공용 언어 런타임 식 계산기 작성 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluators, tutorial
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d93299702db0c56963eb8f404d05e8e67ab08b0
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: 06feb8d0755b3fd36a418238c0f3067c3643feef
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276821"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834896"
 ---
 # <a name="writing-a-common-language-runtime-expression-evaluator"></a>공용 언어 런타임 식 계산기 작성
 > [!IMPORTANT]
@@ -55,5 +52,5 @@ ms.locfileid: "39276821"
  [형식 시각화 도우미 및 사용자 지정 뷰어 구현](../../extensibility/debugger/implementing-type-visualizers-and-custom-viewers.md)  
  형식 시각화 도우미 및 사용자 지정 뷰어를 지원 하도록 구성 요소에서 구현 해야 하는 인터페이스에 설명 합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Visual Studio 디버거 확장성](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

@@ -1,9 +1,6 @@
 ---
 title: '방법: 프로그래밍 방식으로 문서의 텍스트에 주석 추가'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c5e7900f5316e64ef884d857bfc1448ac315fd19
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 677f0ba2cf02f4dd62759ea5f125c91290dc0762
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804606"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857029"
 ---
 # <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>방법: 프로그래밍 방식으로 문서의 텍스트에 주석 추가
   문서 클래스의 주석 속성 다양 한 Microsoft Office Word 문서에서 텍스트에 메모를 추가 합니다.  
@@ -52,5 +49,3 @@ ms.locfileid: "53804606"
 ## <a name="see-also"></a>참고 항목  
  [방법: 프로그래밍 방식으로 문서에서 모든 메모 제거](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)   
  [문서 호스트 항목](../vsto/document-host-item.md)  
-  
-  

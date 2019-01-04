@@ -1,9 +1,6 @@
 ---
 title: '연습: 괄호 일치 표시 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - brace matching
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f29596c95646db78145725f1f0cead424e1de5e
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: a048ce1e89de65e805d01971de5c4221b13be826
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500438"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956585"
 ---
 # <a name="walkthrough-display-matching-braces"></a>연습: 일치 하는 중괄호를 표시 합니다.
 중괄호 일치 하려면 중괄호를 정의 하 고 때 중괄호 중 하나에 캐럿이 여는 중괄호를 텍스트 표식 태그를 추가 하 여 일치 하는 등의 언어 기반 기능을 구현 합니다. 언어의 컨텍스트에서 중괄호를 정의 하 고, 고유한 파일 이름 확장명 및 콘텐츠 형식 정의 하 고, 입력 하거나 기존 콘텐츠 형식 (예: "text")에 태그를 적용 하는 태그를 적용할 수 있습니다. 다음 연습에는 중괄호 일치 하는 "text" 콘텐츠 형식에 대 한 태그를 적용 하는 방법을 보여 줍니다.  
@@ -30,7 +27,7 @@ ms.locfileid: "39500438"
   
 #### <a name="to-create-a-mef-project"></a>MEF 프로젝트를 만들려면  
   
-1.  편집기 분류자 프로젝트를 만듭니다. 솔루션 이름을 `BraceMatchingTest`입니다.  
+1.  편집기 분류자 프로젝트를 만듭니다. 솔루션의 이름을 `BraceMatchingTest`로 지정합니다.  
   
 2.  편집기 분류자 항목 템플릿을 프로젝트에 추가 합니다. 자세한 내용은 [편집기 항목 템플릿을 사용 하 여 확장 프로그램을 만들려면](../extensibility/creating-an-extension-with-an-editor-item-template.md)합니다.  
   
@@ -125,5 +122,5 @@ ms.locfileid: "39500438"
   
 4.  중괄호 앞에 캐럿을 배치 하는 경우 해당 중괄호와 일치 하는 닫는 중괄호 강조 표시 됩니다. 닫는 중괄호 바로 뒤에 커서를 놓습니다는 중괄호와 일치 하는 여는 중괄호는 강조 표시 됩니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [연습: 파일 이름 확장명에 콘텐츠 형식 링크](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

@@ -1,8 +1,7 @@
 ---
-title: 'CA2131: 보안에 중요한 형식은 형식 등가에 참여할 수 없습니다.'
+title: 'CA2131: 보안에 중요한 형식은 형식 동등에 참여할 수 없습니다.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2131
@@ -12,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d83f005d1f1093e3fd2826a573200194e3babcef
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f91f5be2aad41006dacab059db27e9609a4f84f7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918287"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913031"
 ---
-# <a name="ca2131-security-critical-types-may-not-participate-in-type-equivalence"></a>CA2131: 보안에 중요한 형식은 형식 등가에 참여할 수 없습니다.
+# <a name="ca2131-security-critical-types-may-not-participate-in-type-equivalence"></a>CA2131: 보안에 중요한 형식은 형식 동등에 참여할 수 없습니다.
 
 |||
 |-|-|
@@ -45,5 +44,5 @@ ms.locfileid: "49918287"
 
  [!code-csharp[FxCop.Security.CA2131.CriticalTypesMustNotParticipateInTypeEquivalence#1](../code-quality/codesnippet/CSharp/ca2131-security-critical-types-may-not-participate-in-type-equivalence_1.cs)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  [보안 투명 코드, 수준 2](/dotnet/framework/misc/security-transparent-code-level-2)

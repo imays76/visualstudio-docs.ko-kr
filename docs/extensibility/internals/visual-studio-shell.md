@@ -1,9 +1,6 @@
 ---
 title: Visual Studio Shell | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - shell, Visual Studio
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ef0bf2811e9858925398637e835be8684c7f9ef
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 006b5f3ee19eddb528e339a6a056e2ad0d258fa8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928947"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865494"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] shell은 통합의 주요 에이전트인 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]합니다. 셸에 공통 서비스를 공유 하는 Vspackage를 사용 하도록 설정 하려면 필요한 기능을 제공 합니다. 때문에 아키텍처 목표 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 는 Vspackage의 기본 기능이 vest 방법은 셸에서 기본 기능을 제공 하 고 Vspackage 해당 구성 요소 간에 간 통신을 지원 하기 위한 프레임 워크입니다.  

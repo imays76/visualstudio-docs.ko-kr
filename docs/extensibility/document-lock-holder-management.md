@@ -1,9 +1,6 @@
 ---
 title: 문서 잠금 소유자 관리 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - document locking
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b27025418c903de0128a3eddea2aa0fab00aa9ea
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: f2f2da0e351f8444ef9966b00551b941830dda3a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804460"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986442"
 ---
 # <a name="document-lock-holder-management"></a>문서 잠금 소유자 관리
 실행 중인 문서 테이블 (RDT) 열린 문서 및 편집 잠금을의 개수를 유지 합니다. 문서 창에 열려 있는 문서를 표시 하는 사용자 없이 백그라운드에서 편집할 프로그래밍 방식으로 때 문서는 RDT에 대해 한 편집 잠금을 배치할 수 있습니다. 이 기능은 그래픽 사용자 인터페이스를 통해 여러 파일을 수정 하는 디자이너에서 자주 사용 됩니다.
@@ -42,7 +39,7 @@ ms.locfileid: "53804460"
 
  여러 번 UI 디자이너 코드 파일을 프로그래밍 방식으로 수정 하는 둘 이상의 파일을 변경 합니다. 이러한 경우에는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell2.SaveItemsViaDlg%2A> 메서드를 이용 하 여 하나 이상의 문서를 저장 하는 처리 합니다 **다음 항목의 변경 내용을 저장 하 시겠습니까?** 대화 상자.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [문서 테이블 실행](../extensibility/internals/running-document-table.md)
 - [지 속성 및 문서 테이블 실행](../extensibility/internals/persistence-and-the-running-document-table.md)

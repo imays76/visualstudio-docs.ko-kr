@@ -1,9 +1,6 @@
 ---
 title: Vspackage의 리소스 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - managed VSPackages, resources in
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4de310a9b1c0cfdfcbbf2855d3e371e118be8bdf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6bacf652d1fd691f17e721851b5b49d0da7acca0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856290"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827496"
 ---
 # <a name="resources-in-vspackages"></a>VSPackage의 리소스
 자체 관리 되는 VSPackage 또는 네이티브 위성 UI Dll을 관리 되는 위성 Dll에서에서 지역화 된 리소스를 포함할 수 있습니다.  
@@ -90,4 +87,4 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
   
 ## <a name="see-also"></a>참고 항목  
  [Vspackage 관리](../../extensibility/managing-vspackages.md)   
- [MFC 응용 프로그램의 지역화된 리소스: 위성 DLL](/cpp/build/localized-resources-in-mfc-applications-satellite-dlls)   
+ [MFC 애플리케이션의 지역화된 리소스: 위성 DLL](/cpp/build/localized-resources-in-mfc-applications-satellite-dlls)   

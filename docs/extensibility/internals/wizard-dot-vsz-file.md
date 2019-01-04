@@ -1,9 +1,6 @@
 ---
 title: 마법사 (합니다. Vsz) 파일 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - .vsz files
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0076e1ee7409486a3b7b86ccd0f46bcd02a54a5
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: c66665fa927cbd1f7c2f704467750c6c943eb467
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757885"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898192"
 ---
 # <a name="wizard-vsz-file"></a>마법사(.Vsz) 파일
 
@@ -49,7 +46,7 @@ Param="WIZARDUI = FALSE"
 
 .Vsz 파일에 기본 로캘 ID를 추가 하려면 지정 `FALLBACK_LCID`= xxxx, 여기서 xxxx는 로캘 ID, 영어에 대 한 예를 들어 1033입니다. 때 `FALLBACK_LCID` 매개 변수를 정의 현재 ID를 찾을 수 없으면 마법사에서 제공 된 대체 (fallback) 로캘 ID를 사용 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [사용자 지정 매개 변수](../../extensibility/internals/custom-parameters.md)
 - [마법사](../../extensibility/internals/wizards.md)

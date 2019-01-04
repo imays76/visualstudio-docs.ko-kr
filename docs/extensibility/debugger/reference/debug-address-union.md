@@ -1,9 +1,6 @@
 ---
 title: DEBUG_ADDRESS_UNION | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - DEBUG_ADDRESS_UNION
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37b22b6a67df981920b2288e6f917d57a67dd762
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6a6a9ddc8806bdbba5a583e16657c3c5126a8992
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872085"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947207"
 ---
 # <a name="debugaddressunion"></a>DEBUG_ADDRESS_UNION
 주소의 다양 한 종류를 설명 합니다.  
@@ -90,12 +87,12 @@ public struct DEBUG_ADDRESS_UNION {
  [C + + 전용] 공용 구조체의 이름입니다.  
   
  unionmember  
- [C#만 해당] 이 값을 기반으로 적절 한 구조 형식으로 마샬링할 수 해야 `dwKind`합니다. 간의 연결에 대 한 주의 참조 하세요. `dwKind` 및 공용 구조체의 해석 합니다.  
+ [C# 만] 이 값을 기반으로 적절 한 구조 형식으로 마샬링할 수 해야 `dwKind`합니다. 간의 연결에 대 한 주의 참조 하세요. `dwKind` 및 공용 구조체의 해석 합니다.  
   
 ## <a name="remarks"></a>설명  
  이 구조체의 일부인를 [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) 구조체이 고 다양 한 다른 유형의 주소 중 하나를 나타냅니다 (합니다 `DEBUG_ADDRESS` 구조에 대 한 호출에 의해 채워진 합니다 [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) 메서드).  
   
- [C#만 해당] 다음 표에서 해석 하는 방법을 보여 줍니다는 `unionmember` 주소의 각 종류에 대 한 멤버입니다. 한 가지 주소에 대 한이 작업을 수행 하는 방법을 보여 줍니다.  
+ [C# 만] 다음 표에서 해석 하는 방법을 보여 줍니다는 `unionmember` 주소의 각 종류에 대 한 멤버입니다. 한 가지 주소에 대 한이 작업을 수행 하는 방법을 보여 줍니다.  
   
 |`dwKind`|`unionmember` 로 해석|  
 |--------------|----------------------------------|  
@@ -137,9 +134,9 @@ namespace MyPackage
 ## <a name="requirements"></a>요구 사항  
  헤더: sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>참고 항목  
  [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)   

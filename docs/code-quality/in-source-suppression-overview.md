@@ -2,7 +2,6 @@
 title: 코드 분석 경고 표시 안 함
 ms.date: 08/03/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - source suppression, code analysis
@@ -16,12 +15,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e90de7acf13ca28a20a35aa3ad3e70f58780279
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: d72697a8969983d83445808b75c63bc8657ecf1f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513048"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932882"
 ---
 # <a name="suppress-code-analysis-warnings"></a>코드 분석 경고 표시 안 함
 
@@ -140,7 +139,7 @@ public class Animal
 
 관리 코드 컴파일러 및 일부 타사 도구는 신속한 코드 개발을 용이 하 게 코드를 생성 합니다. 소스 파일에 표시 되는 컴파일러에서 생성 된 코드는 일반적으로 표시 된 `GeneratedCodeAttribute` 특성입니다.
 
-코드 분석 경고 및 생성 된 코드에 대 한 오류를 표시 하지 않을 것인지를 선택할 수 있습니다. 이러한 경고 및 오류를 표시 하지 않는 방법에 대 한 정보를 참조 하세요 [방법: 생성 된 코드에 대 한 경고 표시 안 함](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md)합니다.
+코드 분석 경고 및 생성 된 코드에 대 한 오류를 표시 하지 않을 것인지를 선택할 수 있습니다. 이러한 경고 및 오류를 표시 하지 않는 방법에 대 한 정보를 참조 하세요. [방법: 생성 된 코드에 대 한 경고를 표시 하지 않으려면](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md)합니다.
 
 > [!NOTE]
 > 코드 분석에서 무시 `GeneratedCodeAttribute` 전체 어셈블리 또는 단일 매개 변수 중 하나에 적용 됩니다.
@@ -167,7 +166,7 @@ public class Animal
 
 전역 비 표시 오류 파일에 비 표시 오류는 전역 수준 비 표시 오류 또는 대상을 지정 하지 않는 비 표시 오류는 유지 관리 합니다. 예를 들어, 어셈블리 수준 위반에 대해가이 파일에 저장 됩니다. 또한 일부 ASP.NET 비 표시 오류는 프로젝트 수준 설정 양식 뒤에 있는 코드에 사용할 수 없기 때문에이 파일에 저장 됩니다. 전역 비 표시 오류 파일이 생성 되어 처음 선택 하면 프로젝트에 추가 합니다 **프로젝트 비 표시 오류 파일의** 옵션을 합니다 **표시 안 함** 명령을 **오류 목록**창.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.Diagnostics.CodeAnalysis>
 - [Roslyn 분석기를 사용 합니다.](../code-quality/use-roslyn-analyzers.md)

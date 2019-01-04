@@ -1,9 +1,6 @@
 ---
 title: SccAddFilesFromSCC 함수 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccAddFilesFromSCC
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b827e1f7e26fb98e9d49de4e9fe2388e46ee07cb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b650810ea0c3a7df32d6a058947d83fb8842b7f7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831174"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53818967"
 ---
 # <a name="sccaddfilesfromscc-function"></a>SccAddFilesFromSCC 함수
 이 함수는 현재 열려 있는 프로젝트를 소스 제어에서 파일 목록을 추가 합니다.  
@@ -77,8 +74,8 @@ SCCRTN SccAddFilesFromSCC(
 |SCC_E_PROJNOTOPEN|프로젝트 열려 있지 않습니다.|  
 |SCC_E_OPNOTPERFORMED|연결에 지정 된 대로 동일한 프로젝트에 아닙니다. `lpAuxProjPath.`|  
 |SCC_E_NOTAUTHORIZED|사용자는 데이터베이스를 업데이트할 권한이 없습니다.|  
-|SCC_E_NONSPECIFICERROR|알 수 없는 오류가 발생 했습니다.|  
+|SCC_E_NONSPECIFICERROR|알 수 없는 오류입니다.|  
 |SCC_I_RELOADFILE|파일 또는 프로젝트 다시 로드 해야 합니다.|  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [원본 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)

@@ -1,16 +1,11 @@
 ---
-title: '연습: 생성 및 SharePoint 워크플로 솔루션을 디버깅 | Microsoft Docs'
-ms.custom: ''
+title: '연습: SharePoint 워크플로 솔루션 만들기 및 디버깅 | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Workflow.WorkflowConditions
 - VS.SharePointTools.Workflow.WorkflowList
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -21,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c254f6f3e044f938ed2749567d66ee7a313081e7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bfd1d1e434826a652525fb7e7151ecf0e8e13b75
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626490"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912992"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>연습: 만들고 SharePoint 워크플로 솔루션을 디버그 합니다.
   이 연습에는 기본 순차 워크플로 템플릿을 만드는 방법을 보여 줍니다. 워크플로 문서를 검토 했는지 여부를 결정 하는 공유 문서 라이브러리의 속성을 확인 합니다. 문서를 검토 하는 경우 워크플로가 완료 됩니다.  
@@ -127,7 +122,7 @@ ms.locfileid: "42626490"
      이 페이지를 사용 하면 워크플로가 시작 되는 경우를 지정할 수 있습니다. 기본적으로 워크플로 시작 하거나 사용자의 SharePoint 워크플로 연관 된 항목을 만들면가 수동으로 시작 합니다.  
   
 ## <a name="create-workflow-activities"></a>워크플로 작업 만들기
- 워크플로에 하나 이상의 *활동* 수행 하는 작업을 나타냅니다. 워크플로 디자이너를 사용 하 여 워크플로에 대 한 작업을 정렬 합니다. 이 절차에서는 워크플로에 두 활동이 추가 됩니다: HandleExternalEventActivity 및 OnWorkFlowItemChanged 합니다. 이러한 활동의 문서 검토 상태를 모니터링 합니다 **Shared Documents** 목록  
+ 워크플로에 하나 이상의 *활동* 수행 하는 작업을 나타냅니다. 워크플로 디자이너를 사용 하 여 워크플로에 대 한 작업을 정렬 합니다. 이 절차에서는 두 작업 워크플로에 추가 됩니다. HandleExternalEventActivity 및 OnWorkFlowItemChanged 합니다. 이러한 활동의 문서 검토 상태를 모니터링 합니다 **Shared Documents** 목록  
   
 #### <a name="to-create-workflow-activities"></a>워크플로 작업을 만들려면  
   
@@ -292,8 +287,7 @@ ms.locfileid: "42626490"
   
 -   Windows Workflow Foundation 활동에 대 한 자세한 내용은 참조 하세요 [Namespace System.Workflow.Activities](http://go.microsoft.com/fwlink/?LinkId=178993)합니다.  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  [SharePoint 워크플로 솔루션 만들기](../sharepoint/creating-sharepoint-workflow-solutions.md)   
  [SharePoint 프로젝트 및 프로젝트 항목 템플릿](../sharepoint/sharepoint-project-and-project-item-templates.md)   
  [SharePoint 솔루션 빌드 및 디버그](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
-  

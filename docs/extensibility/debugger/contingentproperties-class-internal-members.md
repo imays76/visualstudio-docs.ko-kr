@@ -1,9 +1,6 @@
 ---
 title: ContingentProperties 클래스-내부 멤버 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - ContingentProperties class [.NET Framework debug engines]
@@ -14,17 +11,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e3497b31e663967417544d8e87d40d860c2e4a8
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: fa554cc3740819d892ca1c3a60028be97928b51e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204416"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922229"
 ---
 # <a name="contingentproperties-class---internal-members"></a>ContingentProperties 클래스-내부 멤버
 에 대 한 추가 속성을 포함 한 <xref:System.Threading.Tasks.Task> 개체입니다.  
   
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **네임스페이스:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **어셈블리:** mscorlib (mscorlib.dll)  
   
@@ -41,12 +38,12 @@ ms.locfileid: "39204416"
   
 ### <a name="fields"></a>필드  
   
-|name|설명|  
+|이름|설명|  
 |----------|-----------------|  
 |[m_children](../../extensibility/debugger/m-children-field.md)|이 작업을 사용 하 여 등록 된 자식 작업의 목록입니다.|  
   
 ## <a name="remarks"></a>설명  
  .NET Framework는 필요할 때에이 클래스의 필드를 초기화 합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [.NET Framework에 대 한 병렬 확장 기능 내부](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

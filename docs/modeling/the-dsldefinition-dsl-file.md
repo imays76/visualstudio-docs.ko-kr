@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5988876bc1cdc7d186efb60d7d3875f9946bfc7d
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: c0f69d660a1693e42662a82a2a19ce790725fb43
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967521"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869257"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>DslDefinition.dsl 파일
 
@@ -97,9 +96,9 @@ DslDefinition.dsl 파일 전체에서 모니커를 사용하여 특정 항목에
 
 모니커 시스템을 사용하려면 XML 트리의 형제에 고유한 이름이 지정되어 있어야 합니다. 그러므로 예를 들어 이름이 같은 클래스가 두 개 포함된 DSL 정의를 저장하려고 하면 유효성 검사 오류가 발생합니다. 나중에 정상적으로 다시 로드할 수 있도록 항상 DslDefinition.dsl 파일을 저장하기 전에 이러한 중복 이름 오류를 해결해야 합니다.
 
-각 형식에는 자체 모니커 형식인 DomainClassMoniker, DomainRelationshipMoniker 등이 있습니다.
+각 형식에는 자체 모니커 형식인에 있습니다. DomainClassMoniker, DomainRelationshipMoniker 및 등입니다.
 
-## <a name="types"></a>형식
+## <a name="types"></a>유형
 
 Types 섹션은 DslDefinition.dsl 파일이 속성 형식으로 포함하는 모든 형식을 지정합니다. 이러한 형식에는 System.String과 같은 외부 형식과 열거 형식의 두 가지 종류가 있습니다.
 
@@ -228,7 +227,7 @@ OutPort 클래스 멤버를 InPort 클래스 멤버에 연결하는 Connection �
 
 각 역할은 다음 특성이 들어 있는 소스 및 대상 역할을 포함합니다.
 
--   `RolePlayer` 특성은 연결된 인스턴스(소스의 경우 OutPort, 대상의 경우 InPort)의 도메인 클래스를 참조합니다.
+-   `RolePlayer` 특성은 연결 된 인스턴스의 도메인 클래스를 참조 합니다. OutPort InPort 대상에 대 한 원본에 대 한 합니다.
 
 -   `Multiplicity` 특성에 사용 가능한 값은 네 가지로 ZeroMany, ZeroOne, One 및 OneMany가 있습니다. 이 특성은 역할 수행자 하나에 연결할 수 있는 이 관계의 링크 수를 나타냅니다.
 

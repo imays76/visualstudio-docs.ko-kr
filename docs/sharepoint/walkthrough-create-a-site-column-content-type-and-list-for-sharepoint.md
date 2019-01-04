@@ -1,17 +1,12 @@
 ---
 title: '연습: 사이트 열, 콘텐츠 형식 및 SharePoint 목록 만들기 | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.ListDesigner.GeneralMessageHelp
 - Microsoft.VisualStudio.SharePoint.Designers.ListDesigner.ViewModels.ListViewModel.SortingAndGrouping
 - VS.SharePointTools.ListDesigner.SortingGrouping
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -24,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2fb78f5c40a04bb69d2f95d7f872b05e3d501113
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9bd2673ec63c9476217e13fad40f2316fcdf1886
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900126"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852533"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>연습: SharePoint 용 사이트 열, 콘텐츠 형식 및 목록 만들기
   다음 절차에는 사용자 지정 SharePoint 사이트 열을 만드는 방법을 보여 줍니다-또는 *필드*-사이트 열을 사용 하는 콘텐츠 형식 및 합니다. 또한 새 콘텐츠 형식을 사용 하는 목록을 만드는 방법을 보여 줍니다.  
@@ -95,7 +90,7 @@ ms.locfileid: "49900126"
     </Field>  
     ```  
   
-4.  동일한 프로시저를 사용 하 여 두 개 이상의 사이트 열 프로젝트에 추가: **환자 ID** (유형 = "Integer") 및 **의사 이름이** (유형 = "Text"). 해당 그룹 값을 설정 **클리닉 사이트 열**합니다.  
+4.  동일한 절차를 사용 하 여 프로젝트에 두 개 이상의 사이트 열을 추가 합니다. **환자 ID** (유형 = "Integer") 및 **의사 이름이** (유형 = "Text"). 해당 그룹 값을 설정 **클리닉 사이트 열**합니다.  
   
 ## <a name="create-a-custom-content-type"></a>사용자 지정 콘텐츠 형식 만들기
  다음으로, 콘텐츠 형식 만들기-연락처 콘텐츠 형식을 기반으로-는 이전 절차에서 만든 사이트 열이 포함 됩니다. 기존 콘텐츠 형식, 콘텐츠 형식을 기반으로 기본 콘텐츠 형식을 사용 하 여 새 콘텐츠 형식에 대 한 여러 사이트 열을 제공 하기 때문에 시간을 절약할 수 있습니다.  
@@ -116,7 +111,7 @@ ms.locfileid: "49900126"
   
      그러면 이전에 정의한 사이트 열 외에 연락처 콘텐츠 형식에서 다른 유용할 수 있는 사이트 열에 액세스할을 수 있습니다.  
   
-6.  콘텐츠 형식 다음 디자이너가 표시 되 면에 **열** 탭에서 이전에 정의한 열 사이트 세 개의 추가: **환자 이름**, **환자 ID**, 및 **의사 이름이**합니다. 이러한 열을 추가 하려면 첫 번째 목록 상자에서 사이트 열 목록에서 선택 **표시 이름**를 한 번에 하나의 목록에 각 사이트 열을 선택 합니다.  
+6.  콘텐츠 형식 다음 디자이너가 표시 되 면에 **열** 탭에서 이전에 정의한 열을 세 개의 사이트를 추가 합니다. **환자 이름을**, **환자 ID**, 및 **의사 이름이**합니다. 이러한 열을 추가 하려면 첫 번째 목록 상자에서 사이트 열 목록에서 선택 **표시 이름**를 한 번에 하나의 목록에 각 사이트 열을 선택 합니다.  
   
     > [!TIP]  
     >  사이트 열을 더 빨리 선택 하려면 열 이름의 처음 몇 글자를 입력 하 여 목록을 필터링 합니다.  
@@ -205,10 +200,10 @@ ms.locfileid: "49900126"
   
 15. 에 **열 이름** 목록에서 선택 **환자 이름**, 있는지는 **정렬** 열으로 설정 됩니다 **오름차순**를 선택한 다음 합니다  **확인** 단추입니다.  
   
-## <a name="test-the-application"></a>응용 프로그램 테스트
+## <a name="test-the-application"></a>애플리케이션 테스트
  이제 사용자 지정 사이트 열, 콘텐츠 형식 및 목록 준비 되 면 SharePoint에 배포 하 고 테스트 하려면 응용 프로그램을 실행 합니다.  
   
-#### <a name="to-test-the-application"></a>응용 프로그램을 테스트하려면  
+#### <a name="to-test-the-application"></a>애플리케이션을 테스트하려면  
   
 1.  메뉴 모음에서 **파일** > **모두 저장**을 차례로 선택합니다.  
   
@@ -232,4 +227,3 @@ ms.locfileid: "49900126"
  [방법: 사용자 지정 필드 유형 만들기](http://go.microsoft.com/fwlink/?LinkId=192079)   
  [콘텐츠 형식](http://go.microsoft.com/fwlink/?LinkId=192080)   
  [열](http://go.microsoft.com/fwlink/?LinkId=192081)  
-  

@@ -1,9 +1,6 @@
 ---
 title: 중단점 (Visual Studio SDK) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - breakpoints
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 146c8c7e17017a675ad1077d03800328b0d345d3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e4082f1dab489a045469b1ecd7135211c94a3dd0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49932678"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836116"
 ---
 # <a name="breakpoints-visual-studio-sdk"></a>중단점(Visual Studio SDK)
 중단점의 세 가지 종류가 있습니다: 보류 중 및 오류입니다.  

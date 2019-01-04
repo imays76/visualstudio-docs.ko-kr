@@ -1,8 +1,7 @@
 ---
-title: 'CA1816: GC.SuppressFinalize를 올바르게 호출하십시오.'
+title: 'CA1816: GC.SuppressFinalize를 올바르게 호출하세요.'
 ms.date: 06/30/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1816
@@ -19,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c874aac5d84d45159ef7d169ab2749269fa0905
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: a3dcfdf8f094d50c5f462ae1a9d0ef4e85a0bb87
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174233"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882288"
 ---
-# <a name="ca1816-call-gcsuppressfinalize-correctly"></a>CA1816: GC.SuppressFinalize를 올바르게 호출하십시오.
+# <a name="ca1816-call-gcsuppressfinalize-correctly"></a>CA1816: GC.SuppressFinalize를 올바르게 호출하세요.
 
 |||
 |-|-|
@@ -81,9 +80,9 @@ ms.locfileid: "37174233"
 
 ## <a name="related-rules"></a>관련된 규칙
 
-- [CA2215: Dispose 메서드는 기본 클래스 Dispose를 호출해야 합니다.](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)
-- [CA2216: 삭제 가능한 형식은 종료자를 선언해야 합니다.](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
+- [CA2215: Dispose 메서드는 기본 클래스 dispose를 호출 해야 합니다.](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)
+- [CA2216: 삭제 가능한 형식은 종료자를 선언 해야 합니다.](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [삭제 패턴](/dotnet/standard/design-guidelines/dispose-pattern)

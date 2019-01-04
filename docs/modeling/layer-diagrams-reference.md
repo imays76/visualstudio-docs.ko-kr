@@ -21,13 +21,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1ef2d68cb0f8e3d6904bdf3f3ebbab321649c3e1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a883b82da76fff2fc4b298de7263320c069a501b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920932"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948396"
 ---
 # <a name="dependency-diagrams-reference"></a>종속성 다이어그램: 참조
 
@@ -95,7 +94,7 @@ Visual Studio에서 사용할 수는 *종속성 다이어그램* 시스템의 �
 |-|-|
 |**범주**|클래스, 네임스페이스, 소스 파일 등의 아티팩트 종류|
 |**계층**|아티팩트에 연결되는 레이어|
-|**유효성 검사 지원**|하는 경우 **True**, 레이어 유효성 검사 프로세스는 프로젝트와이 요소에서 종속성을 따르는지 확인 수 있습니다.<br /><br /> 하는 경우 **False**, 다음 링크를 레이어 유효성 검사 프로세스에 참여 하지 않습니다.<br /><br /> 자세한 내용은 [종속성 다이어그램: 지침](../modeling/layer-diagrams-guidelines.md)합니다.|
+|**유효성 검사 지원**|하는 경우 **True**, 레이어 유효성 검사 프로세스는 프로젝트와이 요소에서 종속성을 따르는지 확인 수 있습니다.<br /><br /> 하는 경우 **False**, 다음 링크를 레이어 유효성 검사 프로세스에 참여 하지 않습니다.<br /><br /> 자세한 내용은 참조 하세요. [종속성 다이어그램: 지침](../modeling/layer-diagrams-guidelines.md)합니다.|
 |**식별자**|연결된 아티팩트에 대한 참조|
 
 ## <a name="see-also"></a>참고자료

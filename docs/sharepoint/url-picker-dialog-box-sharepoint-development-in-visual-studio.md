@@ -1,9 +1,6 @@
 ---
 title: URL 선택기 대화 상자 (Visual Studio에서 SharePoint 개발) | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.VWD.URLPicker
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 517058c99a6ec5a297b95324decbb2cfcbe04271
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ffeca5bf0149ce5a36e5abb77eab673e87f36dc7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950760"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925903"
 ---
 # <a name="url-picker-dialog-box-sharepoint-development-in-visual-studio"></a>URL 선택기 대화 상자 (Visual Studio에서 SharePoint 개발)
   URL 선택기 대화 상자에서 프로젝트에 있거나 SharePoint를 실행하는 로컬 서버에 있는 마스터 페이지 파일 또는 이미지 파일과 같은 파일을 선택할 수 있습니다.  
@@ -46,7 +43,7 @@ ms.locfileid: "49950760"
   
   확장 된 **Server** SharePoint를 실행 하는 로컬 서버에 있는 파일을 선택 하는 노드. 이러한 파일 대화 상자에서 선택 가능한 파일로 표시는 다음 조건을 충족 해야 합니다.  
   
-- 파일을 다음 매핑된 폴더 중 하나에 있어야 합니다. **이미지**, **레이아웃**, 또는 **ControlTemplates**합니다.  
+- 파일을 다음 매핑된 폴더 중 하나에 있어야 합니다. **이미지**하십시오 **레이아웃**, 또는 **ControlTemplates**합니다.  
   
 - SharePoint 콘텐츠 데이터베이스에서 파일을 찾을 수 없습니다.  
   
@@ -62,4 +59,3 @@ ms.locfileid: "49950760"
  [SharePoint 용 응용 프로그램 페이지 만들기](../sharepoint/creating-application-pages-for-sharepoint.md)   
  [SharePoint 용 웹 파트 만들기](../sharepoint/creating-web-parts-for-sharepoint.md)   
  [웹 파트 또는 응용 프로그램 페이지에 대 한 재사용 가능한 컨트롤 만들기](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)   
-  

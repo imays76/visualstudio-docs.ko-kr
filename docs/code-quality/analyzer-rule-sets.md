@@ -2,7 +2,6 @@
 title: 분석기 규칙 집합
 ms.date: 07/20/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - analyzers, rule sets
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7df084a81de2afc522fc3b82141cf8c5c59205ca
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 514f264186047c044e5db1b944cd62d517588e80
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204519"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885225"
 ---
 # <a name="rule-sets-for-roslyn-analyzers"></a>Roslyn 분석기에 대 한 규칙 집합
 
@@ -56,7 +55,7 @@ Roslyn 분석기를 레거시 "FxCop" 정적 코드 분석에서 마이그레이
 
 ## <a name="see-also"></a>참고자료
 
-- [.NET 컴파일러 플랫폼 분석기 개요](roslyn-analyzers-overview.md)
+- [.NET Compiler Platform 분석기 개요](roslyn-analyzers-overview.md)
 - [.NET 컴파일러 플랫폼 분석기 설치](install-roslyn-analyzers.md)
 - [구성 및 Roslyn 분석기 규칙 사용](use-roslyn-analyzers.md)
 - [코드 분석 규칙 그룹화를 사용 하 여 규칙 집합](using-rule-sets-to-group-code-analysis-rules.md)

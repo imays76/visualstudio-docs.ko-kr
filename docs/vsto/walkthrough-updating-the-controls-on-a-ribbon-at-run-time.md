@@ -1,9 +1,6 @@
 ---
 title: '연습: 런타임에 리본의 컨트롤 업데이트'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 40072b1dcd6b24f552a3c87c8241ea4498229053
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: cd318be64bb15f72a0bd0147e2b14e79301fb7d6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389152"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926954"
 ---
 # <a name="walkthrough-update-the-controls-on-a-ribbon-at-runtime"></a>연습: 런타임에 리본의 컨트롤 업데이트
 
@@ -68,7 +65,7 @@ ms.locfileid: "52389152"
 
 3.  기본 프로젝트 디렉터리에 프로젝트를 저장합니다.
 
-     자세한 내용은 [방법: Visual Studio에서 만드는 Office 프로젝트](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.
+     자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.
 
 ## <a name="design-a-custom-ribbon-group"></a>사용자 지정 리본 그룹 디자인
 
@@ -152,7 +149,7 @@ ms.locfileid: "52389152"
 
 8.  다음 표의 옆에 있는 확인란을 각각 선택합니다.
 
-    1.  **고객은**
+    1.  **고객**
 
     2.  **주문 세부 정보**
 
@@ -182,7 +179,7 @@ ms.locfileid: "52389152"
 
 3. **솔루션 탐색기**, 클릭 **CustomerRibbon.cs** 하거나 **CustomerRibbon.vb** 하 여 선택 합니다.
 
-4. 에 **뷰** 메뉴에서 클릭 **코드**합니다.
+4. **보기** 메뉴에서 **코드**를 클릭합니다.
 
     코드 편집기에서 리본 코드 파일이 열립니다.
 
@@ -303,7 +300,7 @@ ms.locfileid: "52389152"
 - [런타임에 리본 메뉴에 액세스](../vsto/accessing-the-ribbon-at-run-time.md)
 - [리본 개요](../vsto/ribbon-overview.md)
 - [LINQ(Language-Integrated Query)](/dotnet/csharp/linq/index)
-- [방법: 리본 메뉴 사용자 지정 시작](../vsto/how-to-get-started-customizing-the-ribbon.md)
+- [방법: 리본 사용자 지정 시작](../vsto/how-to-get-started-customizing-the-ribbon.md)
 - [리본 디자이너](../vsto/ribbon-designer.md)
 - [연습: 리본 디자이너를 사용 하 여 사용자 지정 탭 만들기](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
 - [리본 개체 모델 개요](../vsto/ribbon-object-model-overview.md)
@@ -311,5 +308,5 @@ ms.locfileid: "52389152"
 - [방법: 리본의 탭 위치 변경](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
 - [방법: 기본 제공 탭 사용자 지정](../vsto/how-to-customize-a-built-in-tab.md)
 - [방법: Backstage 보기에 컨트롤 추가](../vsto/how-to-add-controls-to-the-backstage-view.md)
-- [방법: 리본 XML로 리본 디자이너에서 리본 메뉴 내보내기](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
-- [방법: 사용자 인터페이스 오류 표시 추가 기능인](../vsto/how-to-show-add-in-user-interface-errors.md)
+- [방법: 리본 디자이너에서 리본 XML로 리본 메뉴 내보내기](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
+- [방법: 추가 사용자 인터페이스 오류 표시](../vsto/how-to-show-add-in-user-interface-errors.md)

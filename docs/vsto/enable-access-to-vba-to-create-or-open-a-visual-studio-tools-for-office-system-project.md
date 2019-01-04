@@ -4,7 +4,6 @@ decsprition: You must explicitly enable access to the Office VBA project system 
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +20,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1b1a7be701c9bec45011980ced63051150579ca7
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 0404498490569d3c9edee5b9e190535eafcb105b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647572"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933491"
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>만들거나 Visual Studio Tools for the Microsoft Office system 프로젝트를 열고는 VBA에 대 한 액세스를 사용 하도록 설정
 
@@ -127,6 +126,6 @@ ms.locfileid: "53647572"
 
 5. 선택 **Office 설치에서 오류 감지 및 복구**를 클릭 하 고 **설치**합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
  [Office 솔루션 보안](../vsto/securing-office-solutions.md)

@@ -3,7 +3,6 @@ title: 워크플로 디자이너-Receive 활동 디자이너
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.ServiceModel.Activities.Receive.UI
 ms.assetid: f58d3c70-944d-4bb4-90a7-e68c103caddc
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb48c19befc3cf2c155248cfc33c01eedd16ce26
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 86c2d67d3922679096a3b3980a928a234515b78e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950097"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858998"
 ---
 # <a name="receive-activity-designer"></a>Receive 활동 디자이너
 
@@ -55,7 +54,7 @@ ms.locfileid: "49950097"
 | <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> | False | <xref:System.ServiceModel.Activities.Receive> 활동에 의해 구현되는 서비스 작업에 사용할 serializer의 형식을 지정합니다. 기본값은 <xref:System.Runtime.Serialization.DataContractSerializer>이며, 제공된 데이터 계약을 사용하는 XML 스트림 또는 문서에 형식 인스턴스를 serialize 및 deserialize합니다. XML에 대한 제어를 강화해야 하는 경우에도 <xref:System.Xml.Serialization.XmlSerializer>를 사용할 수 있습니다. |
 | <xref:System.ServiceModel.Activities.Receive.Action%2A> | False | 메시지의 동작 헤더를 지정합니다. 명시적으로 설정 하지 않으면 기본값인: https://tempuri.org/{service 계약 네임 스페이스} / {서비스 계약 이름} /} /{operation name}. |
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)

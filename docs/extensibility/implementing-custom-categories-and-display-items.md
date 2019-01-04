@@ -1,9 +1,6 @@
 ---
 title: 사용자 지정 범주 및 표시 항목 구현 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - font and color control [Visual Studio SDK], categories
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 850e4396c11cbd83f578304eed78a25042185a25
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 178cd43486a9553f70853c9df0e106ac3ece78f1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894640"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908438"
 ---
 # <a name="implement-custom-categories-and-display-items"></a>사용자 지정 범주를 구현 하 고 항목을 표시
 VSPackage를 해당 텍스트의 색 및 글꼴의 제어를 제공할 수는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 사용자 지정 범주 및 표시 항목을 통해 통합된 개발 환경 (IDE)입니다.
@@ -57,7 +54,7 @@ VSPackage를 해당 텍스트의 색 및 글꼴의 제어를 제공할 수는 [!
   |이름|형식|데이터|설명|
   |----------|----------|----------|-----------------|
   |범주|REG_SZ|GUID|만든 범주를 식별 하는 GUID입니다.|
-  |패키지|REG_SZ|GUID|범주를 지 원하는 VSPackage 서비스의 GUID입니다.|
+  |Package|REG_SZ|GUID|범주를 지 원하는 VSPackage 서비스의 GUID입니다.|
 
   레지스트리에 지정 된 서비스의 구현을 제공 해야 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> 해당 범주에 대 한 합니다.
 
@@ -72,7 +69,7 @@ VSPackage를 해당 텍스트의 색 및 글꼴의 제어를 제공할 수는 [!
   |이름|형식|데이터|설명|
   |----------|----------|----------|-----------------|
   |범주|REG_SZ|GUID|만든 그룹을 식별 하는 GUID입니다.|
-  |패키지|REG_SZ|GUID|범주를 지 원하는 서비스의 GUID입니다.|
+  |Package|REG_SZ|GUID|범주를 지 원하는 서비스의 GUID입니다.|
 
   레지스트리에 지정 된 서비스의 구현을 제공 해야 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> 해당 그룹에 대 한 합니다.
 

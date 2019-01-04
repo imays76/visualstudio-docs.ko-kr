@@ -1,9 +1,6 @@
 ---
 title: 디버거 시작 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], launching the debugger
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b1cc4a75a17ea686ef5c5c5c75e21f1c5f74de8
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 1d1c1ba42d1d05217eff6e8ff7a0b6f1209a05db
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231118"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990885"
 ---
 # <a name="launch-the-debugger"></a>디버거를 시작 합니다.
 디버거 시작 메서드 및 해당 적절 한 특성을 사용 하 여 이벤트의 순서를 전송 해야 합니다.  
@@ -54,6 +51,6 @@ ms.locfileid: "39231118"
   
 8.  DE 보냅니다는 [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) 를 사용 하 여 SDM을 `EVENT_SYNC` 특성입니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [디버거 이벤트 호출](../../extensibility/debugger/calling-debugger-events.md)   
  [프로그램 시작](../../extensibility/debugger/launching-a-program.md)

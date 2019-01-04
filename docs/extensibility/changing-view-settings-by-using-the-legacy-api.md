@@ -1,9 +1,6 @@
 ---
 title: 레거시 API를 사용 하 여 보기 설정 변경 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - changing view settings
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f92c4146cc40aff6cf4c73ab3652f68f33a27b51
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 08c23aa1705880b444fdf036ee269bcc8ae32dfa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077970"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902426"
 ---
 # <a name="change-view-settings-by-using-the-legacy-api"></a>기존 API를 사용 하 여 보기 설정 변경
 가상 공간, 자동 줄 바꿈 및 선택 영역 여백 등의 핵심 편집기 기능에 대 한 설정을 이용 하 여 사용자가 변경할 수 있습니다 합니다 **옵션** 대화 상자. 하지만 이러한 설정을 변경할 수 이기도 프로그래밍 방식으로 합니다.  

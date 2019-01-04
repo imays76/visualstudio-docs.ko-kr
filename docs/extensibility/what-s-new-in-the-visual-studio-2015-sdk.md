@@ -1,9 +1,6 @@
 ---
 title: 새로운&#39;Visual Studio 2015 SDK의 새로운 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: c64aac80-a411-463f-b7bd-8b7607a52ece
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4926ed9fafb64664d3ac0426466d90611cae4450
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 4c5a84da9fef0bee2a4701337ea62864f5fd34b3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566695"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952844"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>새로운&#39;Visual Studio 2015 SDK에 새로운
 Visual Studio SDK는 Visual Studio 2015, 업데이트 하는 Visual Studio 2015 및 Visual Studio 2017에 대 한 다음 새로운 및 업데이트 된 기능.  
@@ -62,12 +59,12 @@ Visual Studio SDK는 Visual Studio 2015, 업데이트 하는 Visual Studio 2015 
 > [!NOTE]
 >  참조 어셈블리를 설치 하는 VS SDK를 사용 하 여 프로젝트와 함께 할 수 있습니다 (아래에 있는 \<Visual Studio 설치 위치 > \ VSSDK\VisualStudioIntegration\Common\Assemblies) 되도록 기존 확장성 프로젝트 필요 하지 않습니다 NuGet 패키지를 사용 하도록 업그레이드 합니다.  프로젝트 **참조] / [참조 추가** 대화 계속 참조 어셈블리를 설치 하는 VS SDK를 사용 합니다.  
 >   
->  NuGet을 사용 하도록 기존 프로젝트를 수정 하려는 경우 [방법: Visual Studio 2015로 마이그레이션 Vspackage](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md) 확장성 프로젝트에 NuGet 패키지 업데이트에 대 한 섹션이 있는 합니다.  
+>  NuGet을 사용 하도록 기존 프로젝트를 수정 하려는 경우 [방법: Visual Studio 2015에서 Vspackage로](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md) 확장성 프로젝트에 NuGet 패키지 업데이트에 대 한 섹션이 있는 합니다.  
   
 ## <a name="light-bulbs"></a>전구  
  확장 프로그램 코드를 작성 하는 가장 흥미로운 새로운 방법 중 하나는 Roslyn 프로젝트에서 제공 됩니다. 자세한 내용은 [Roslyn](https://github.com/dotnet/Roslyn)합니다.  
   
- 전구는 VSSDK 함께 제공 되는 새로운 기능입니다. 기본 제공 코드 분석기에 의해 식별 된 문제에 대 한 수정 또는 코드 리팩터링 작업 집합을 표시 하도록 확장 하는 Visual Studio 편집기에 사용 되는 아이콘입니다. 자세한 내용은 [연습: 밝은 전구 추천 표시](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)합니다.  
+ 전구는 VSSDK 함께 제공 되는 새로운 기능입니다. 기본 제공 코드 분석기에 의해 식별 된 문제에 대 한 수정 또는 코드 리팩터링 작업 집합을 표시 하도록 확장 하는 Visual Studio 편집기에 사용 되는 아이콘입니다. 자세한 내용은 [연습: Displaying Light Bulb Suggestions](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)합니다.  
   
 ## <a name="updated-user-experience-guidelines"></a>업데이트 된 사용자 환경 지침  
  Visual Studio에 대 한 새 확장 또는 기능을 디자인? 업데이트 및 확장 된 확인해 [Visual Studio 사용자 환경 지침](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md)합니다.  확인할 수는 [토큰 색](../extensibility/ux-guidelines/shared-colors-for-visual-studio.md), [글꼴 크기](../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md)를 [대화 상자 레이아웃 사양](../extensibility/ux-guidelines/layout-for-visual-studio.md), 및 Visual Studio를 사용 하 여 새 UI를 원활 하 게 통합 하는 데 필요한 다른 지침.

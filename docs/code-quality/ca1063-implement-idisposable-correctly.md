@@ -2,7 +2,6 @@
 title: 'CA1063: IDisposable을 올바르게 구현하십시오.'
 ms.date: 02/12/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - ImplementIDisposableCorrectly
@@ -18,12 +17,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: e202c35ee6bd8353170e758629b1cc6e739b775d
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 55ebe4c74bcaf2a8d5299018b7666328ff51c028
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080973"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949052"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: IDisposable을 올바르게 구현하십시오.
 
@@ -134,7 +133,7 @@ public class Resource : IDisposable
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [삭제 패턴 (프레임 워크 디자인 지침)](/dotnet/standard/design-guidelines/dispose-pattern)
 - [관리 되지 않는 리소스 (.NET 가이드) 정리](/dotnet/standard/garbage-collection/unmanaged)

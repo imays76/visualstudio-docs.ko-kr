@@ -1,6 +1,5 @@
 ---
 title: VSTemplate 요소 (Visual Studio 템플릿) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2e1af9e283093c053324a12742ff23a7f3b3e9c
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 899a8ac07d8e5b578c7619cceff173608b15792a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53560822"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947025"
 ---
 # <a name="vstemplate-element-visual-studio-templates"></a>VSTemplate 요소 (Visual Studio 템플릿)
 프로젝트 템플릿, 항목 템플릿 또는 시작 키트에 대 한 모든 메타 데이터를 포함합니다.  

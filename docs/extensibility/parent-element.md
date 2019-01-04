@@ -1,9 +1,6 @@
 ---
 title: 부모 요소 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Parent
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a66f9fff773fb9a9542de13ceb97ad8732c319b
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: c025957bd0d3cf06bf73e1b35b5faa661386a0a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39635858"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902439"
 ---
 # <a name="parent-element"></a>부모 요소
 단추 또는 콤보 상자의 부모를 그룹 수만 있습니다. 메뉴 또는 그룹의 부모는 다른 메뉴 또는 그룹 수 있습니다. 에 [CommandPlacement 요소](../extensibility/commandplacement-element.md)에이 요소가 필요 하며 다른 모든 인스턴스에 선택적 것입니다. 이 요소를 생략 하면 부모의 `Group_Undefined:0` 암시 됩니다.  
@@ -37,8 +34,8 @@ ms.locfileid: "39635858"
   
 |특성|설명|  
 |---------------|-----------------|  
-|guid|필수. GUID의 GUID/i D 명령 식별자입니다.|  
-|ID|필수. ID의 GUID/i D 명령 식별자입니다.|  
+|guid|필수 요소. GUID의 GUID/i D 명령 식별자입니다.|  
+|ID|필수 요소. ID의 GUID/i D 명령 식별자입니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
  없음  

@@ -2,7 +2,6 @@
 title: 코드 오류에 대 한 관리 코드 분석 하는 연습 | Microsoft Docs
 ms.date: 01/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis [Visual Studio]
@@ -12,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 49c122e5cf22e9290f6dab1d45539887c68c01bd
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: fd24485d02d20bf4ab1b5def30e34b8d14a71cb3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117721"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955255"
 ---
-# <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>연습: 코드에 대 한 분석 관리 되는 코드 결함
+# <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>연습: 코드 오류에 대 한 관리 되는 코드 분석
 
 이 연습에서는 코드 분석 도구를 사용 하 여 코드 오류에 대 한 관리 되는 프로젝트를 분석할 수 있습니다.
 
@@ -87,53 +86,53 @@ ms.locfileid: "37117721"
 
     가리키도록 해야 선택한 개발자 프로필에 따라 **다른 Windows** 에 **뷰** 메뉴를 선택한 후 **오류 목록**합니다.
 
-1. **솔루션 탐색기**, 선택 **모든 파일 표시**합니다.
+1. **솔루션 탐색기**에서 **모든 파일 표시**를 선택합니다.
 
 1. 속성 노드를 확장 한 다음 엽니다는 *AssemblyInfo.cs* 파일입니다.
 
 1. 경고를 해결 하려면 다음 팁을 사용 합니다.
 
-   [CA1014: CLSCompliantAttribute로 어셈블리 표시](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): Microsoft.Design: '데모'를 CLSCompliantAttribute로 표시 해야 하 고 해당 값은 true 여야 합니다.
+   [CA1014: CLSCompliantAttribute로 어셈블리 표시](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): Microsoft.Design: '데모'를 CLSCompliantAttribute로 표시 되어야 합니다 하 고 해당 값은 true 여야 합니다.
 
    1. 코드를 추가 `using System;` AssemblyInfo.cs 파일에 있습니다.
 
    1. 다음으로 코드를 추가 `[assembly: CLSCompliant(true)]` AssemblyInfo.cs 파일의 끝에 있습니다.
 
-   [CA1032: 표준 예외 생성자를 구현](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design:이 클래스에 다음 생성자를 추가 합니다: 공용 demo(String)
+   [CA1032: 표준 예외 생성자를 구현](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: 이 클래스에 다음 생성자를 추가 합니다: 공용 demo(String)
 
    1. 생성자를 추가 합니다 `public demo (String s) : base(s) { }` 클래스에 `demo`입니다.
 
-   [CA1032: 표준 예외 생성자를 구현](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design:이 클래스에 다음 생성자를 추가 합니다: 공용 데모 (String, 예외)
+   [CA1032: 표준 예외 생성자를 구현](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: 이 클래스에 다음 생성자를 추가 합니다: 공용 데모 (String, 예외)
 
    1. 생성자를 추가 합니다 `public demo (String s, Exception e) : base(s, e) { }` 클래스에 `demo`입니다.
 
-   [CA1032: 표준 예외 생성자를 구현](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design:이 클래스에 다음 생성자를 추가 합니다: 데모 (SerializationInfo, StreamingContext) 보호
+   [CA1032: 표준 예외 생성자를 구현](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: 이 클래스에 다음 생성자를 추가 합니다: 데모 (SerializationInfo, StreamingContext) 보호
 
    1. 코드를 추가 `using System.Runtime.Serialization;` Class1.cs 파일의 시작 부분에 있습니다.
 
    1. 그런 다음 생성자를 추가 `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`
 
-   [CA1032: 표준 예외 생성자를 구현](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design:이 클래스에 다음 생성자를 추가 합니다: 공용 demo()
+   [CA1032: 표준 예외 생성자를 구현](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: 이 클래스에 다음 생성자를 추가 합니다: 공용 demo()
 
    1. 생성자를 추가 합니다 `public demo () : base() { }` 클래스에 `demo` **합니다.**
 
-   [CA1709: 식별자는 대/소문자 올바르게](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: 'TestCode'로 변경 하 여 네임 스페이스 이름 'testCode'의 대/소문자를 수정 합니다.
+   [CA1709: 식별자에는 올바르게 표기를 사용 해야](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: 'TestCode'로 변경 하 여 네임 스페이스 이름 'testCode'의 대/소문자를 수정 합니다.
 
    1. 네임 스페이스의 대/소문자를 변경 `testCode` 에 `TestCode`입니다.
 
-   [CA1709: 식별자는 대/소문자 올바르게](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: '데모'로 변경 하 여 형식 이름 '데모'의 대/소문자를 수정 합니다.
+   [CA1709: 식별자에는 올바르게 표기를 사용 해야](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: 형식 이름 '데모'의 대/소문자를 '데모'로 변경 하 여 수정 합니다.
 
    1. 멤버의 이름을 변경 `Demo`합니다.
 
-   [CA1709: 식별자는 대/소문자 올바르게](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: 'Item'로 변경 하 여 멤버 이름 'item'의 대/소문자를 수정 합니다.
+   [CA1709: 식별자에는 올바르게 표기를 사용 해야](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: 'Item'로 변경 하 여 멤버 이름 'item'의 대/소문자를 수정 합니다.
 
    1. 멤버의 이름을 변경 `Item`합니다.
 
-   [: Ca1710 식별자에는 올바른 접미사 사용 해야 합니다.](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft.Naming: '예외' 종료 'testCode.demo' 이름 바꾸기.
+   [CA1710: 식별자에는 올바른 접미사를 사용 해야 합니다.](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft.Naming: 'Exception'에서 end 'testCode.demo를'의 이름을 바꿉니다.
 
    1. 클래스 및 해당 생성자의 이름을 변경 `DemoException`합니다.
 
-   [: Ca2210 어셈블리에는 올바른 강력한 이름을 사용 해야 합니다.](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md): 'CodeAnalysisManagedDemo' 강력한 이름 키를 사용 하 여 로그인 합니다.
+   [CA2210: 어셈블리에는 올바른 강력한 이름을 사용 해야 합니다.](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md): 'CodeAnalysisManagedDemo' 강력한 이름 키를 사용 하 여 로그인 합니다.
 
    1. 에 **프로젝트** 메뉴 선택 **CodeAnalysisManagedDemo 속성**합니다.
 
@@ -153,7 +152,7 @@ ms.locfileid: "37117721"
 
    1. 에 **파일** 메뉴 선택 **선택한 항목 저장**, 한 다음 속성 페이지를 닫습니다.
 
-   [CA2237: ISerializable 형식을 SerializableAttribute로 표시](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft.Usage: ISerializable을 구현 하는이 형식의 '데모' 형식으로 [Serializable] 특성을 추가 합니다.
+   [CA2237: SerializableAttribute로 ISerializable 형식 표시](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft.Usage: 이 형식이 ISerializable을 구현 하는 대로 '데모'를 입력 [Serializable] 특성을 추가 합니다.
 
    1. 추가 된 `[Serializable ()]` 특성을 클래스 `demo`합니다.
 
@@ -196,6 +195,6 @@ ms.locfileid: "37117721"
 
      프로젝트 경고 또는 오류 없이 빌드됩니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [관리 코드에 대 한 코드 분석](../code-quality/code-analysis-for-managed-code-overview.md)

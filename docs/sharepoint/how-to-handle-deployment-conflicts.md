@@ -1,9 +1,6 @@
 ---
 title: '방법: 배포 충돌 처리 | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
@@ -12,12 +9,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d7c30a7c634c30c9fe3e92ef988d7d8fc043cf6b
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: d55c260618eb7edcf68e91b521f2ace203ddbf01
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119868"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898884"
 ---
 # <a name="how-to-handle-deployment-conflicts"></a>방법: 배포 충돌 처리
   SharePoint 프로젝트 항목에 대 한 배포 충돌을 처리 하는 사용자 고유의 코드를 제공할 수 있습니다. 예를 들어, 현재 프로젝트 항목의 모든 파일 배포 위치에 이미 존재 하 고 현재 프로젝트 항목을 배포 하기 전에 다음 배포 된 파일을 삭제 하는지 여부를 확인할 수 있습니다. 배포 충돌에 대 한 자세한 내용은 참조 하십시오 [확장 SharePoint 패키징 및 배포](../sharepoint/extending-sharepoint-packaging-and-deployment.md)합니다.  
@@ -40,7 +37,7 @@ ms.locfileid: "37119868"
   
 4.  충돌이 있는 경우 사용 합니다 <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflictCollection.Add%2A> 메서드를 <xref:Microsoft.VisualStudio.SharePoint.DeploymentStepStartedEventArgs.Conflicts%2A> 새 이벤트 인수의 속성 <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> 개체입니다. 이 개체에는 배포 충돌을 나타냅니다. 호출 하 여 <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflictCollection.Add%2A> 메서드를 충돌을 해결 하기 위해 호출 하는 메서드를 지정할 수도 있습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드 예제에서는 목록 정의 프로젝트 항목에 대 한 프로젝트 항목 확장에서 배포 충돌을 처리 하기 위한 기본 프로세스를 보여 줍니다. 다른 형식의 프로젝트 항목에 대 한 배포 충돌을 처리 하려면 다른 문자열을 전달 하 여 <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>입니다. 자세한 내용은 [확장 SharePoint 프로젝트 항목](../sharepoint/extending-sharepoint-project-items.md)합니다.  
   
  간단히 하기 위해 합니다 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> 이 예제의 이벤트 처리기 배포 충돌이 있다고 가정 (즉, 항상 추가 새 <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> 개체), 및 `Resolve` 메서드는 반환 **true** 나타내는 충돌이 해결 되었습니다. 실제 시나리오에서 사용자 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> 이벤트 처리기는 먼저 현재 프로젝트 항목에서 파일과 배포 위치에 파일 간에 충돌이 있는 경우를 확인 한 다음 추가 <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> 충돌이 있는 경우에 개체입니다. 예를 들어 사용할 수 있습니다는 `e.ProjectItem.Files` 프로젝트 항목에 파일을 분석 하는 이벤트 처리기의 속성에는 배포 위치에서 파일을 분석 하는 SharePoint 명령을 호출할 수 있습니다. 실제 시나리오에서는 마찬가지로 `Resolve` 메서드는 SharePoint 사이트에서 충돌을 해결 하는 SharePoint 명령을 호출할 수 있습니다. SharePoint 명령 만들기에 대 한 자세한 내용은 참조 하세요. [방법: SharePoint 명령 만들기](../sharepoint/how-to-create-a-sharepoint-command.md)합니다.  
@@ -58,9 +55,8 @@ ms.locfileid: "37119868"
 ## <a name="deploy-the-extension"></a>확장 배포  
  확장 배포를 만들려면를 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 어셈블리 및 확장을 사용 하 여 배포 하려는 다른 파일에 대 한 패키지 (VSIX) 확장 합니다. 자세한 내용은 [Visual Studio에서 SharePoint 도구의 확장을 배포할](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)합니다.  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  [SharePoint 패키징 및 배포 확장](../sharepoint/extending-sharepoint-packaging-and-deployment.md)   
  [SharePoint 프로젝트 항목 확장](../sharepoint/extending-sharepoint-project-items.md)   
  [방법: 배포 단계를 실행할 때 코드를 실행 합니다.](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)   
  [방법: SharePoint 명령 만들기](../sharepoint/how-to-create-a-sharepoint-command.md)  
-  

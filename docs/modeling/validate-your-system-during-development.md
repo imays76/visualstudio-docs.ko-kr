@@ -2,7 +2,6 @@
 title: 개발하는 동안 시스템 유효성 검사
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e7a8ff8ac2de47e9f4d52e44f61ea4ec99f7d87f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0878291441f6fe5d5237c0317b3df631aefee139
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907302"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869322"
 ---
 # <a name="validate-your-system-during-development"></a>개발하는 동안 시스템 유효성 검사
 Visual Studio에서는 소프트웨어와 사용자 요구 사항 및 시스템 아키텍처의 일관성을 유지할 수 있습니다.
@@ -35,7 +34,7 @@ Visual Studio에서는 소프트웨어와 사용자 요구 사항 및 시스템 
 
 |**범주**|**링크**|
 |-|-|
-|**비디오**|![비디오 링크](../data-tools/media/playvideo.gif) [Channel 9: Doug 7: 코드 이해 및 Visual Studio 2010을 사용 하 여 시스템 디자인](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![비디오 링크](../data-tools/media/playvideo.gif) [Channel 9: 종속성 다이어그램을 사용 하 여 응용 프로그램 설계](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![비디오 링크](../data-tools/media/playvideo.gif) [MSDN 어떻게 할까요? 시리즈: 종속성 다이어그램을 사용 하 여 코드 유효성을 검사 하는 방법](http://go.microsoft.com/fwlink/?LinkID=214405)|
+|**비디오**|![비디오를 연결할](../data-tools/media/playvideo.gif) [Channel 9: Doug Seven: 코드 이해 및 Visual Studio 2010을 사용 하 여 시스템 디자인](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![비디오를 연결할](../data-tools/media/playvideo.gif) [Channel 9: 종속성 다이어그램을 사용 하 여 응용 프로그램 설계](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![비디오를 연결할](../data-tools/media/playvideo.gif) [MSDN 어떻게 할까요? 시리즈: 종속성 다이어그램을 사용 하 여 코드 유효성을 검사 하는 방법](http://go.microsoft.com/fwlink/?LinkID=214405)|
 |**포럼**|-   [Visual Studio 시각화 및 모델링 도구](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio 시각화 및 모델링 SDK(DSL 도구)](http://go.microsoft.com/fwlink/?LinkId=184721)|
 |**Blogs**|-   [Microsoft DevOps](https://blogs.msdn.microsoft.com/devops/)|
 |**기술 문서 및 저널**|[MSDN 아키텍처 센터](http://go.microsoft.com/fwlink/?LinkId=201343)|

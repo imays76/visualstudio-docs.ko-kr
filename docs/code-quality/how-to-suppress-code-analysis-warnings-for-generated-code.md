@@ -2,7 +2,6 @@
 title: '방법: 생성된 코드에 대한 코드 분석 경고 표시 안 함'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 ms.assetid: 3a96434e-d419-43a7-81ba-95cccac835b8
 author: gewarren
@@ -10,22 +9,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ac2c5d4a7aca3f77feabc0aaba75d7f56a751821
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b2913ea1645ab7fced11aa64e671a5c0f0a87edc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919456"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53844982"
 ---
 # <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>방법: 생성된 코드에 대한 코드 분석 경고 표시 안 함
-관리 되는 코드 컴파일러는 종종 신속 하 게 코드 개발을 용이 하 게 하려면 프로젝트에 추가 되는 코드를 생성 합니다. 또한 개발자 자주 사용 하 여 타사 도구 응용 프로그램을 신속 하 게 개발할 수 있도록 지원 합니다. 또한 이러한 도구에는 프로젝트에 추가 된 코드를 생성 합니다.
+관리 되는 코드 컴파일러는 종종 코드를 빠르게 개발할 수 있도록 프로젝트에 추가 되는 코드를 생성 합니다. 또한 개발자는 종종 응용 프로그램을 신속 하 게 개발 하는 데 타사 도구를 사용 합니다. 이러한 도구는 또한 프로젝트에 추가 되는 코드를 생성 합니다.
 
- 코드 분석에서 생성 된 코드에서 검색 하는 규칙 위반 보려는 수 있습니다. 그러나 보고 하 고 위반을 포함 하는 코드를 유지 관리할 수 없는 참조 하지 않을 수 있습니다.
+ 생성 된 코드에서 코드 분석을 검색 하는 규칙 위반을 확인 하려는 합니다. 그러나 볼 수 없으며 위반을 포함 하는 코드를 유지 관리 하는 경우이 참조 하지 않을 수 있습니다.
 
- **생성 된 코드 결과 표시 안 함** 프로젝트의 코드 분석 속성 페이지에서 확인란을 사용 하면 타사 도구에서 생성 된 코드에서 코드 분석 경고를 표시할지 여부를 선택할 수 있습니다.
+ 합니다 **생성 된 코드 결과 표시 안 함** 프로젝트의 코드 분석 속성 페이지에서 확인란을 사용 하면 타사 도구에서 생성 된 코드에서 코드 분석 경고를 표시 하려는 지 여부를 선택할 수 있습니다.
 
 > [!NOTE]
->  이 옵션 양식 및 서식 파일에 오류 및 경고를 표시 하는 경우 생성 된 코드에서 코드 분석 오류 및 경고를 억제 하지 않습니다. 폼이나 템플릿의 소스 코드를 볼 수도 있고 유지 관리할 수도 있습니다.
+>  이 옵션 폼 및 템플릿에 오류 및 경고를 표시 하는 경우 생성 된 코드에서 코드 분석 오류 및 경고를 억제 하지 않습니다. 폼이나 템플릿의 소스 코드를 볼 수도 있고 유지 관리할 수도 있습니다.
 
 ### <a name="to-suppress-warnings-for-generated-code-in-a-project"></a>프로젝트에서 생성 된 코드에 대 한 경고를 표시 하지 않으려면
 

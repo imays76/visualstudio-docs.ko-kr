@@ -1,9 +1,6 @@
 ---
 title: '연습: Visual Basic 프로젝트에서 VBA에서 코드 호출'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bd766e8ce1896c0b53d32cbe3f4174da5bc934d7
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: b58f2cb729b84d814addc07dcb9840e26bb2a767
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808939"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917659"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>연습: Visual Basic 프로젝트에서 VBA에서 코드 호출
   이 연습에서는 문서의 VBA(Visual Basic for Applications) 코드에서 Microsoft Office Word에 대한 문서 수준 사용자 지정의 메서드를 호출하는 방법을 보여 줍니다. 이 절차에는 세 가지 기본 단계( `ThisDocument` 호스트 항목 클래스에 메서드 추가, VBA 코드에 메서드 노출, 문서의 VBA 코드에서 메서드 호출)가 포함됩니다.  
@@ -72,7 +69,7 @@ ms.locfileid: "38808939"
 3.  리본에서 **개발자** 탭을 클릭합니다.  
   
     > [!NOTE]  
-    >  **개발자** 탭이 표시되지 않는 경우 먼저 개발자 탭을 표시해야 합니다. 자세한 내용은 [방법: 리본에 개발 도구 탭 표시](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)합니다.  
+    >  **개발자** 탭이 표시되지 않는 경우 먼저 개발자 탭을 표시해야 합니다. 자세한 내용은 [방법: 리본 메뉴에 개발 도구 탭 표시](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)합니다.  
   
 4.  **코드** 그룹에서 **Visual Basic**을 클릭합니다.  
   
@@ -214,15 +211,13 @@ ms.locfileid: "38808939"
 ## <a name="next-steps"></a>다음 단계  
  다음 항목에서는 VBA에서 Office 솔루션의 코드를 호출하는 방법에 대해 자세히 알아볼 수 있습니다.  
   
--   VBA에서 Visual C# 사용자 지정의 코드를 호출합니다. 이 프로세스는 Visual Basic 프로세스와 다릅니다. 자세한 내용은 [연습: Visual C에서 vba의 코드를 호출 합니다.&#35; 프로젝트](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)합니다.  
+-   VBA에서 Visual C# 사용자 지정의 코드를 호출합니다. 이 프로세스는 Visual Basic 프로세스와 다릅니다. 자세한 내용은 [연습: Visual C에서 vba의 코드를 호출할&#35; 프로젝트](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)합니다.  
   
 -   VBA에서 VSTO 추가 기능의 코드를 호출합니다. 자세한 내용은 [연습: VBA에서 VSTO 추가 기능에서 코드를 호출할](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [VBA 및 문서 수준 사용자 지정 결합](../vsto/combining-vba-and-document-level-customizations.md)   
  [문서 수준 사용자 지정 프로그래밍](../vsto/programming-document-level-customizations.md)   
  [방법: Visual Basic 프로젝트에서 VBA로 코드 노출](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
  [방법: Visual C에서 VBA로 코드 노출&#35; 프로젝트](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
  [연습: Visual C에서 vba의 코드를 호출할&#35; 프로젝트](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)  
-  
-  

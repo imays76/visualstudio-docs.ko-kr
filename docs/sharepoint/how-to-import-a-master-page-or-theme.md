@@ -1,9 +1,6 @@
 ---
 title: '방법: 마스터 페이지 또는 테마 가져오기 | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,15 +13,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 116ab878d8591fb15bfbb319b2c1d79952fbd0e7
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 7341d12571143d2725b3dd05e5d8e9f03c7d9125
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119905"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952920"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>방법: 마스터 페이지 또는 테마 가져오기
-  제공할 수 있습니다 페이지 SharePoint 사이트에서 일관 된 모양을 만들고 마스터 페이지 및 테마를 사용 하 여. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 이러한 요소에 대 한 템플릿을 제공 하지 않습니다 SharePoint Designer에서 만들고를 다음으로 가져와야 하지만 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]합니다. 자세한 내용은 [구성 요소: 페이지 및 사용자 인터페이스](http://go.microsoft.com/fwlink/?LinkID=182095) Microsoft 웹 사이트입니다.  
+  제공할 수 있습니다 페이지 SharePoint 사이트에서 일관 된 모양을 만들고 마스터 페이지 및 테마를 사용 하 여. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 이러한 요소에 대 한 템플릿을 제공 하지 않습니다 SharePoint Designer에서 만들고를 다음으로 가져와야 하지만 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]합니다. 자세한 내용은 참조 하세요. [문서 블록: 페이지 및 사용자 인터페이스](http://go.microsoft.com/fwlink/?LinkID=182095) Microsoft 웹 사이트입니다.  
   
 ### <a name="to-import-a-master-page-or-theme"></a>마스터 페이지 또는 테마 가져오기  
   
@@ -51,7 +48,7 @@ ms.locfileid: "37119905"
 8.  마스터 페이지를 추가한 경우 변경 해당 **배포 충돌 해결** 설정을 **자동** 모듈의 속성입니다.  
   
     > [!NOTE]  
-    >  마스터 페이지의 이름이 기본 마스터 페이지 또는 사용자 지정 마스터 페이지에 표시 된 기존 마스터 페이지의 이름과 같은 경우 오류가 발생할 수 있습니다. 이 문제를 해결 하는 방법에 대 한 정보를 참조 하세요 [연습: 사용자 지정 마스터 페이지 및 사이트 페이지를 이미지로 가져오기](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md)합니다.  
+    >  마스터 페이지의 이름이 기본 마스터 페이지 또는 사용자 지정 마스터 페이지에 표시 된 기존 마스터 페이지의 이름과 같은 경우 오류가 발생할 수 있습니다. 이 문제를 해결 하는 방법에 대 한 정보를 참조 하세요. [연습: 사용자 지정 마스터 페이지 및 사이트 페이지를 이미지로 가져오기](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md)합니다.  
   
 9. 모듈을 엽니다 *Elements.xml*합니다.  
   
@@ -92,9 +89,8 @@ ms.locfileid: "37119905"
   
      마스터 페이지 또는 테마 목록 표시 되 고 가져온 테마 또는 마스터 페이지를 포함 합니다.  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  [마스터 페이지](http://go.microsoft.com/fwlink/?LinkId=184955)   
  [기존 SharePoint 사이트에서 항목 가져오기](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   
  [SharePoint에 대 한 페이지 만들기](../sharepoint/creating-pages-for-sharepoint.md)   
  [모듈을 사용 하 여 솔루션에 파일을 포함](../sharepoint/using-modules-to-include-files-in-the-solution.md)  
-  

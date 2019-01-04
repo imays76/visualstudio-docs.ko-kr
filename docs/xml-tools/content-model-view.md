@@ -2,7 +2,6 @@
 title: XML 스키마 디자이너 콘텐츠 모델 뷰
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: e8db7c7d-31cf-479e-9dcc-299759891795
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a151daa4419c24464aeeafd9a3b58d202a6e82b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9a38ca198c4f5a84b1792142078f92398aeeaa4e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942586"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951474"
 ---
 # <a name="content-model-view"></a>콘텐츠 모델 뷰
 
@@ -37,7 +36,7 @@ ms.locfileid: "49942586"
 
  노드의 콘텐츠 모델은 트리 노드로 나타나는 요소 및 특성이 있는 확장명 가능한 그래픽 트리로 표현됩니다. 기본적으로 하나의 수준만 확장됩니다. 작성자, 형식 이름, 그룹 및 기타 컨테이너와 같은 기타 정보는 이러한 정보를 포함하는 요소 및 특성과 함께 확장 가능한 세로 막대에 배치됩니다. 세로 막대를 두 번 클릭하면 가로 막대로 바뀌고 트리가 축소됩니다. 가로 막대를 두 번 클릭하면 세로 막대로 바뀌고 트리가 확장됩니다. 컨테이너의 모든 노드를 선택 세로 막대를 선택 합니다. 요소 확장 하거나 축소할 수 있으면 노드의 오른쪽에 확장 기가 나타납니다.
 
- 디자인 화면 비어 있는 경우 XML 편집기는 **XML 스키마 탐색기**, 워터 마크가 표시 됩니다. 합니다 *워터 마크* 모든 XSD 디자이너 뷰에 대 한 링크 목록이 됩니다. 스키마 집합에 오류가 있는 경우 목록 끝에 "오류 목록을 사용하여 스키마 집합의 오류 표시 및 수정"이라는 텍스트가 표시됩니다.
+ 디자인 화면 비어 있는 경우 XML 편집기는 **XML 스키마 탐색기**, 워터 마크가 표시 됩니다. 합니다 *워터 마크* 모든 XSD 디자이너 뷰에 대 한 링크 목록이 됩니다. 스키마 집합에 오류가 있을 경우 목록 끝에 다음 텍스트가 표시 됩니다. 사용 하 여 오류 목록 보기 및 집합에서 오류를 수정 합니다. "
 
 ## <a name="breadcrumb-bar"></a>이동 경로 탐색 막대
 
@@ -83,9 +82,9 @@ ms.locfileid: "49942586"
 
 |옵션|설명|
 |-|-----------------|
-|**시작 뷰 표시**|전환 합니다 [보기 시작](../xml-tools/start-view.md)합니다. 바로 가기 키를 사용 하 여이 뷰에 액세스할 수 있습니다: **Ctrl**+**1**합니다.|
-|**콘텐츠 모델 뷰 표시**|전환 합니다 [콘텐츠 모델 뷰](../xml-tools/content-model-view.md)합니다. 바로 가기 키를 사용 하 여이 뷰에 액세스할 수 있습니다: **Ctrl**+**2**합니다.|
-|**그래프 뷰 표시**|전환 합니다 [그래프 보기](../xml-tools/graph-view.md)합니다. 바로 가기 키를 사용 하 여이 뷰에 액세스할 수 있습니다: **Ctrl**+**3**합니다.|
+|**시작 뷰 표시**|전환 합니다 [보기 시작](../xml-tools/start-view.md)합니다. 이 보기는 바로 가기 키를 사용 하 여 액세스할 수 있습니다. **Ctrl**+**1**합니다.|
+|**콘텐츠 모델 뷰 표시**|전환 합니다 [콘텐츠 모델 뷰](../xml-tools/content-model-view.md)합니다. 이 보기는 바로 가기 키를 사용 하 여 액세스할 수 있습니다. **Ctrl**+**2**합니다.|
+|**그래프 뷰 표시**|전환 합니다 [그래프 보기](../xml-tools/graph-view.md)합니다. 이 보기는 바로 가기 키를 사용 하 여 액세스할 수 있습니다. **Ctrl**+**3**합니다.|
 |**작업 영역 지우기**|작업 영역 및 디자인 화면을 지웁니다.|
 |**작업 영역에서 제거**|작업 영역 및 디자인 화면에서 선택한 노드를 제거합니다.|
 |**작업 영역에서 선택 항목을 제외한 모든 제거**|작업 영역 및 디자인 화면에서 선택하지 않은 노드를 제거합니다.|
@@ -125,6 +124,6 @@ ms.locfileid: "49942586"
 
  XML 편집기에서 설정 된 스키마를 변경한 경우 변경 내용이 콘텐츠 모델 뷰에서 동기화 됩니다. 자세한 내용은 [XML 편집기와의 통합](../xml-tools/integration-with-xml-editor.md)합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [XML 스키마 디자이너 작업 영역](../xml-tools/xml-schema-designer-workspace.md)

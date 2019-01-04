@@ -1,9 +1,6 @@
 ---
 title: Word 용 문서 수준 사용자 지정 프로그래밍 시작
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 36eedad9432738119b1993ba56ae46a363b166a0
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 651208958b40ff92804b9989234f8c3822ec83d9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648415"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904801"
 ---
 # <a name="get-started-programming-document-level-customizations-for-word"></a>Word 용 문서 수준 사용자 지정 프로그래밍 시작
   바로 시작 하는 Visual Studio를 사용 하 여 Microsoft Office Word 용 문서 수준 사용자 지정 만들기를 하는 경우 알아야 할 내용을 다음과 같습니다.  
@@ -74,5 +71,3 @@ ms.locfileid: "53648415"
  [Word를 사용 하 여 연습](../vsto/walkthroughs-using-word.md)   
  [Word 개체 모델 개요](../vsto/word-object-model-overview.md)   
  [Office 솔루션에서 코드를 작성 합니다.](../vsto/writing-code-in-office-solutions.md)  
-  
-  

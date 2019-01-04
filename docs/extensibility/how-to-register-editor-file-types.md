@@ -1,8 +1,6 @@
 ---
 title: '방법: 편집기 파일 형식 등록 | Microsoft Docs'
 ms.date: 03/22/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - register file types
@@ -12,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 326b29574d8ff2562196652cdcde9865aee24c0e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 23a3277a550b17371b4d8315da64eb7507c8c863
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896928"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857804"
 ---
 # <a name="how-to-register-editor-file-types"></a>방법: 편집기 파일 형식 등록
 일부분으로 제공 하는 등록 특성을 사용 하 여 편집기 파일 형식을 등록 하는 가장 쉬운 방법은는 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] 관리 되는 패키지 프레임 워크 (MPF) 클래스입니다. 네이티브에서 패키지를 구현 하는 경우 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], 편집기 및 연결 된 확장을 등록 하는 레지스트리 스크립트를 작성할 수도 있습니다.

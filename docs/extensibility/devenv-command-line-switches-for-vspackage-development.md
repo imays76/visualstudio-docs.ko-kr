@@ -1,9 +1,6 @@
 ---
 title: VSPackage 개발을 위한 Devenv 명령줄 스위치 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - /setup command line switch
@@ -20,12 +17,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8fd305133f913877f8d4ad4808a8c4efcab52af4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e4333f7e0c892771ffb9b4643f4814cf3352a8f1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847060"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820295"
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>VSPackage 개발을 위한 Devenv 명령줄 스위치
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 개발자가 실행할 때 명령줄에서 작업을 자동화할 수 있습니다 *devenv.exe*, Visual Studio 통합된 개발 환경 (IDE)를 시작 하는 파일입니다.  

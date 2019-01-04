@@ -1,9 +1,6 @@
 ---
 title: '연습: 책갈피에 대 한 바로 가기 메뉴 만들기'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ff261fd6032f3c666dfa3d745508586ffede6504
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8cf987c458fb3a79c17fc6efedb34fefd8a53179
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884084"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940556"
 ---
 # <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>연습: 책갈피에 대 한 바로 가기 메뉴 만들기
   이 연습에 대 한 바로 가기 메뉴를 만드는 방법을 보여 줍니다 <xref:Microsoft.Office.Tools.Word.Bookmark> Word 용 문서 수준 사용자 지정에서 컨트롤입니다. 책갈피의 텍스트를 누를 때 바로 가기 메뉴 표시 되 고 텍스트 서식 지정에 대 한 사용자 옵션을 제공 합니다.  
@@ -54,7 +51,7 @@ ms.locfileid: "49884084"
   
 ### <a name="to-create-a-new-project"></a>새 프로젝트를 만들려면  
   
--   이름을 가진 Word 문서 프로젝트를 만듭니다 **내 책갈피 바로 가기 메뉴**합니다. 마법사에서 선택 **새 문서 만들기**합니다. 자세한 내용은 [방법: Visual Studio에서 만드는 Office 프로젝트](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
+-   이름을 가진 Word 문서 프로젝트를 만듭니다 **내 책갈피 바로 가기 메뉴**합니다. 마법사에서 선택 **새 문서 만들기**합니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
   
      Visual Studio 디자이너에서 새 Word 문서가 열리고 추가 합니다 **내 책갈피 바로 가기 메뉴** 프로젝트가 **솔루션 탐색기**합니다.  
   
@@ -91,7 +88,7 @@ ms.locfileid: "49884084"
   
 ### <a name="to-add-commands-to-a-shortcut-menu"></a>바로 가기 메뉴에 명령을 추가 하려면  
   
-1.  추가 된 **리본 XML** 프로젝트 항목입니다. 자세한 내용은 [방법: 리본 메뉴 사용자 지정 시작](../vsto/how-to-get-started-customizing-the-ribbon.md)합니다.  
+1.  추가 된 **리본 XML** 프로젝트 항목입니다. 자세한 내용은 [방법: 리본 사용자 지정 시작](../vsto/how-to-get-started-customizing-the-ribbon.md)합니다.  
   
 2.  **솔루션 탐색기**를 선택 **ThisDocument.cs** 하거나 **ThisDocument.vb**합니다.  
   
@@ -173,7 +170,7 @@ ms.locfileid: "49884084"
   
      [!code-csharp[Trin_Word_Document_Menus#4](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#4)]  
   
-## <a name="test-the-application"></a>응용 프로그램 테스트  
+## <a name="test-the-application"></a>애플리케이션 테스트  
  책갈피의에서 텍스트를 마우스 오른쪽 단추로 클릭할 때 굵게 및 기울임꼴 메뉴 항목 바로 가기 메뉴에 표시 하 고 텍스트의 형식이 올바르게 지정 되었는지 확인 하려면 문서를 테스트 합니다.  
   
 ### <a name="to-test-your-document"></a>문서를 테스트하려면  
@@ -195,11 +192,9 @@ ms.locfileid: "49884084"
   
 -   책갈피의 서식을 변경 하는 확인란을 사용 합니다. 자세한 내용은 [연습: CheckBox 컨트롤을 사용 하 여 변경 문서 서식](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Word를 사용 하 여 연습](../vsto/walkthroughs-using-word.md)   
  [Office UI 사용자 지정](../vsto/office-ui-customization.md)   
  [확장 된 개체를 사용 하 여 Word 자동화](../vsto/automating-word-by-using-extended-objects.md)   
  [Bookmark 컨트롤](../vsto/bookmark-control.md)   
  [Office 솔루션의 선택적 매개 변수](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
 title: IDebugProgramEx2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgramEx2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8e26a21e00ff9f0fff664130171a302667ee414
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3131dae9d9bf715d3927f9654224cab3d6a36d53
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120964"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907886"
 ---
 # <a name="idebugprogramex2"></a>IDebugProgramEx2
-이 인터페이스를 사용 하면 세션을 디버그 관리자 (SDM) 프로그램에 연결 하 고 프로그램과 연결 된 프로그램 노드를 가져오고 있습니다.  
+이 인터페이스는 세션을 디버그 관리자 (SDM) 프로그램에 연결 및 프로그램과 연결 된 프로그램 노드를 가져올 수 있습니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -32,10 +29,10 @@ IDebugProgramEx2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>구현자 참고 사항  
- 와 같은 개체에 대해이 인터페이스를 구현 하는 사용자 지정 포트 공급자는 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 동시에 허용 모든 세션을 추적 포트 공급자에 연결 된 프로그램에 연결 SDM 알리기 위해 인터페이스는 프로그램입니다. 사용자 지정 포트 공급자 중에서 선택한 경우이 인터페이스를 구현할 수 있습니다.  
+ 동일한 개체에서이 인터페이스를 구현 하는 사용자 지정 포트 공급자는 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) SDM 동시에 연결 포트 공급자 모든 세션을 추적할 수 있도록 하는 동안 프로그램에 연결 하기 위해 인터페이스는 프로그램입니다. 사용자 지정 포트 공급자 선택 하는 경우이 인터페이스를 구현할 수 있습니다.  
   
-## <a name="notes-for-callers"></a>호출자에 대 한 참고 사항  
- SDM 호출 [QueryInterface](/cpp/atl/queryinterface) 에 `IDebugProgram2` 인터페이스 프로그램에 연결 되어 있는 세션을 추적 하려면이 인터페이스를 가져올 수 있습니다.  
+## <a name="notes-for-callers"></a>호출자에 대 한 정보  
+ SDM 호출 [QueryInterface](/cpp/atl/queryinterface) 에 `IDebugProgram2` 프로그램에 연결 하는 세션을 추적 하려면이 인터페이스를 얻기 위해 인터페이스입니다.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드  
  다음 표에서의 메서드를 보여 줍니다. `IDebugProgramEx2`합니다.  
@@ -51,10 +48,10 @@ IDebugProgramEx2 : IUnknown
 ## <a name="requirements"></a>요구 사항  
  헤더: Portpriv.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>참고 항목  
- [코어 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Core 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

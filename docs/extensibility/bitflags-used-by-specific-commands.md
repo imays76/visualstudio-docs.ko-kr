@@ -1,9 +1,6 @@
 ---
 title: 특정 명령에 사용 되는 비트 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, bitflags used by specific commands
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39451e8d404e586d77de31b97db6b8dd81bdc18b
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 403b9649feb24ca06cb24762f1b0cf484bed0612
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152116"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875422"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>특정 명령에 사용 되는 비트
 단일 값에 하나 이상의 비트를 설정 하 여 원본 제어 플러그 인 API 함수 개수의 동작을 수정할 수 있습니다. 이러한 값을 비트 라고 합니다. 원본 제어 플러그 인 API에서 사용 하는 다양 한 비트는 사용 하는 함수에 의해 그룹화 여기서 자세히 나와 있습니다.  
@@ -37,7 +34,7 @@ ms.locfileid: "39152116"
 |----------|-----------|-----------------|  
 |`SCC_FILETYPE_AUTO`|0x00|소스 제어 플러그 인은 텍스트 또는 이진 파일 인지를 자동으로 검색 해야 합니다.|  
 |`SCC_FILETYPE_TEXT`|0x01|파일 형식은 텍스트입니다.|  
-|`SCC_FILETYPE_BINARY`|0x04|이진 파일 형식이입니다. **참고:** `SCC_FILETYPE_TEXT` 고 `SCC_FILETYPE_BINARY` 플래그는 함께 사용할 수 없습니다.   정확히 하나 또는 둘 다 설정 합니다.|  
+|`SCC_FILETYPE_BINARY`|0x04|이진 파일 형식이입니다. **참고:** `SCC_FILETYPE_TEXT` 고 `SCC_FILETYPE_BINARY` 플래그는 함께 사용할 수 없습니다. 정확히 하나 또는 둘 다 설정 합니다.|  
 |`SCC_ADD_STORELATEST`|0x02|최신 버전 (델타 없음)만 저장 합니다.|  
   
 ## <a name="diff-flags"></a>비교 플래그  
@@ -46,7 +43,7 @@ ms.locfileid: "39152116"
 |플래그|값|설명|  
 |----------|-----------|-----------------|  
 |`SCC_DIFF_IGNORECASE`|0x0002|대/소문자 차이 무시 합니다.|  
-|`SCC_DIFF_IGNORESPACE`|0x0004|공백 차이 무시 합니다. **참고:** 는 `SCC_DIFF_IGNORECASE` 고 `SCC_DIFF_IGNORESPACE` 플래그는 선택 사항 비트입니다.|  
+|`SCC_DIFF_IGNORESPACE`|0x0004|공백 차이 무시 합니다. **참고:**  합니다 `SCC_DIFF_IGNORECASE` 고 `SCC_DIFF_IGNORESPACE` 플래그는 선택 사항 비트입니다.|  
 |`SCC_DIFF_QD_CONTENTS`|0x0010|전체 파일 콘텐츠를 비교 하 여 QD입니다.|  
 |`SCC_DIFF_QD_CHECKSUM`|0x0020|체크섬에서 QD 합니다.|  
 |`SCC_DIFF_QD_TIME`|0x0040|파일 날짜/시간 스탬프에 의해 QD 합니다.|  
@@ -81,8 +78,8 @@ ms.locfileid: "39152116"
   
 |플래그|값|설명|  
 |----------|-----------|-----------------|  
-|`SCC_GET_ALL`|0x00000001L|IDE 디렉터리를 전달 하는, 파일 수는 없습니다: 이러한 디렉터리의 모든 파일입니다.|  
-|`SCC_GET_RECURSIVE`|0x00000002L|디렉터리를 전달 하는 IDE:이 디렉터리 및 모든 해당 하위 디렉터리를 가져옵니다.|  
+|`SCC_GET_ALL`|0x00000001L|IDE는 파일이 아닌 디렉터리를 전달: 이러한 디렉터리의 모든 파일을 가져옵니다.|  
+|`SCC_GET_RECURSIVE`|0x00000002L|IDE는 디렉터리를 전달 합니다. 이러한 디렉터리와 모든 해당 하위 디렉터리를 가져옵니다.|  
   
 ## <a name="noption-values"></a>nOption 값  
  사용 하는 이러한 플래그를 [SccSetOption](../extensibility/sccsetoption-function.md) 에 `nOption` 매개 변수입니다.  

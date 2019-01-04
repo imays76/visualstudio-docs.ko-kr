@@ -1,9 +1,6 @@
 ---
 title: IDebugEvent2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugEvent2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: aff8be869bd65def16ca0519f7c87ea82320bb99
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ca850f06fa2c17bb6f7c6ccb0756ad2498c67b9d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111210"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870166"
 ---
 # <a name="idebugevent2"></a>IDebugEvent2
-이 인터페이스는 중단점에서 중지 하는 등의 중요 한 디버그 정보 및 디버깅 메시지와 같은 중요 하지 않은 정보를 모두 전달 하기 위해 사용 됩니다.  
+이 인터페이스는 모두 중단점에서 중지 하는 등의 중요 한 디버그 정보 및 디버깅 메시지와 같은 중요 하지 않은 정보를 전달 하기 위해 사용 됩니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -32,10 +29,10 @@ IDebugEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>구현자 참고 사항  
- 디버그 엔진 (DE) 및 사용자 지정 포트 공급자 이벤트의 다른 모든 인터페이스와 같은 개체에이 인터페이스를 구현합니다.  
+ 디버그 엔진 (DE) 및 사용자 지정 포트 공급자를 다른 모든 이벤트 인터페이스와 같은 개체에서이 인터페이스를 구현 합니다.  
   
-## <a name="notes-for-callers"></a>호출자에 대 한 참고 사항  
- 인터페이스에 지정 된 ID (IID) 인수를 사용 하 여 [이벤트](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) 또는 [이벤트](../../../extensibility/debugger/reference/idebugportevents2-event.md), 세션 디버그 관리자 (SDM) 호출 하면 중지 [QueryInterface](/cpp/atl/queryinterface) 에 `IDebugEvent2` 가져오는 인터페이스를 적절 한 이벤트 인터페이스입니다.  
+## <a name="notes-for-callers"></a>호출자에 대 한 정보  
+ 인터페이스에 지정 된 ID (IID) 인수를 사용 하 여 [이벤트](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) 또는 [이벤트](../../../extensibility/debugger/reference/idebugportevents2-event.md), 세션 디버그 관리자 (SDM) 호출 [QueryInterface](/cpp/atl/queryinterface) 에 `IDebugEvent2` 를 얻기 위해 인터페이스 적절 한 이벤트 인터페이스입니다.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드  
  다음 표에서의 메서드를 보여 줍니다. `IDebugEvent2`합니다.  
@@ -45,16 +42,16 @@ IDebugEvent2 : IUnknown
 |[GetAttributes](../../../extensibility/debugger/reference/idebugevent2-getattributes.md)|이 디버그 이벤트에 대 한 특성을 가져옵니다.|  
   
 ## <a name="remarks"></a>설명  
- 와 같은 보다 구체적인 이벤트 인터페이스 [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)IDebugEvent2 인터페이스에서 파생 되지 않은 있지만와 같은 개체에는 별도 인터페이스로 구현 대신 않습니다, `IDebugEvent2`합니다.  
+ 와 같은 보다 구체적인 이벤트 인터페이스 [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)IDebugEvent2 인터페이스에서 파생 되지 않은 되지만 동일한 개체에서 별도 인터페이스로 구현 대신 됩니다 `IDebugEvent2`합니다.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>참고 항목  
- [코어 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Core 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)   
  [이벤트](../../../extensibility/debugger/reference/idebugportevents2-event.md)   
  [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

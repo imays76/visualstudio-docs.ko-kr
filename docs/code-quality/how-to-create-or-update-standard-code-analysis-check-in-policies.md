@@ -2,7 +2,6 @@
 title: 표준 코드 분석 체크 인 정책 만들기 또는 업데이트
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.policyeditor
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c4a7405dd94837d5e373470cd9181c18d913191
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 22a74926f4fd9136e15757eb6967d5eb56a8ecbf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740077"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890341"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>방법: 표준 코드 분석 체크 인 정책 만들기 또는 업데이트
 
@@ -69,6 +68,6 @@ ms.locfileid: "53740077"
 
 설정 만들기 및 사용자 지정 체크 인 정책 규칙을 구현 하는 방법에 대 한 자세한 내용은 [관리 코드에 대 한 사용자 지정 구현 체크 인 정책을](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [코드 분석 체크 인 정책 만들기 및 사용](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)

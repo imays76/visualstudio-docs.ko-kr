@@ -1,15 +1,10 @@
 ---
 title: '방법: 모델에 엔터티 추가 | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - EntityTool
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 72dbebd8ff9b2e7bf7b001d540158656271c0556
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 347728ac4f096359f06ca7823adfcd1b25ff527a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757720"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964036"
 ---
 # <a name="how-to-add-an-entity-to-a-model"></a>방법: 모델에 엔터티 추가
   엔터티를 만들려면 Visual Studio에서 엔터티 컨트롤을 추가 **도구 상자** 비즈니스 데이터 연결 (BDC) 디자이너에 있습니다.  
@@ -52,11 +47,9 @@ ms.locfileid: "36757720"
      [!code-csharp[SP_BDC_Entity_Data_Class#1](../sharepoint/codesnippet/CSharp/sp_bdc_entity_data_class/bdcmodel1/contact.cs#1)]
      [!code-vb[SP_BDC_Entity_Data_Class#1](../sharepoint/codesnippet/VisualBasic/sp_bdc_entity_data_class/bdcmodel1/contact.vb#1)]  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  [방법: Creator 메서드 추가](../sharepoint/how-to-add-a-creator-method.md)   
  [방법: Deleter 메서드 추가](../sharepoint/how-to-add-a-deleter-method.md)   
  [방법: Updater 메서드 추가](../sharepoint/how-to-add-an-updater-method.md)   
  [방법: Finder 메서드 추가](../sharepoint/how-to-add-a-finder-method.md)   
  [방법: 특정 Finder 메서드 추가](../sharepoint/how-to-add-a-specific-finder-method.md)  
-  
- 

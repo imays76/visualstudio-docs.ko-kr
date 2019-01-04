@@ -1,9 +1,6 @@
 ---
 title: 파일 열기 명령을 사용 하 여 파일을 표시 합니다. | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project types, supporting Open File command
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 425433c3d67e654398fde1609b3f9c4d54e63648
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 59ff5d938c21c6344d1979fbfca94e8acb791db6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498727"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964665"
 ---
 # <a name="display-files-by-using-the-open-file-command"></a>파일 열기 명령을 사용 하 여 파일을 표시 합니다.
 다음 단계는 IDE가 처리 하는 방법을 설명 합니다 **열려 있는 파일** 명령에서 사용할 수 있는 **파일** 메뉴에서 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]합니다. 또한 단계는 프로젝트가이 명령에서 발생 하는 호출에 응답 해야 하는 방법을 설명 합니다.  
@@ -52,9 +49,9 @@ ms.locfileid: "39498727"
   
 4.  IDE는 프로젝트 파일을 엽니다 결정을 하는 즉시 호출한는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> 해당 프로젝트는 메서드.  
   
-5.  프로젝트에는 다음 프로젝트별 편집기 또는 표준 편집기를 사용 하 여 파일을 여는 옵션을 있습니다. 자세한 내용은 참조 하세요. [방법: 프로젝트별 편집기 열기](../../extensibility/how-to-open-project-specific-editors.md) 하 고 [방법: 표준 편집기 열기](../../extensibility/how-to-open-standard-editors.md)각각.  
+5.  프로젝트에는 다음 프로젝트별 편집기 또는 표준 편집기를 사용 하 여 파일을 여는 옵션을 있습니다. 자세한 내용은 [방법: 프로젝트별 편집기 열기](../../extensibility/how-to-open-project-specific-editors.md) 고 [방법: 표준 편집기 열기](../../extensibility/how-to-open-standard-editors.md), 각각.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [연결 프로그램 명령을 사용 하 여 파일을 표시 합니다.](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)   
  [열기 및 프로젝트 항목 저장](../../extensibility/internals/opening-and-saving-project-items.md)   
  [방법: 프로젝트별 편집기 열기](../../extensibility/how-to-open-project-specific-editors.md)   

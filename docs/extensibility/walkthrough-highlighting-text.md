@@ -1,9 +1,6 @@
 ---
-title: '연습: 텍스트를 강조 표시. | Microsoft Docs'
-ms.custom: ''
+title: '연습: 텍스트를 강조 표시 | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - highlight text
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ac85c1155851494c2782f72778fdb07e9e55e66
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: ab42147b8600b2c17e3454f545c5d3148e31ba9e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566930"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941877"
 ---
-# <a name="walkthrough-highlight-text"></a>연습: 텍스트 강조 표시
+# <a name="walkthrough-highlight-text"></a>연습: 텍스트를 강조 표시
 Managed Extensibility Framework (MEF) 구성 요소 파트를 만들어 편집기로 다양 한 시각 효과 추가할 수 있습니다. 이 연습에서는 텍스트 파일에서 현재 단어의 모든 발생을 강조 표시 하는 방법을 보여 줍니다. 단어 텍스트 파일에서 한 번 이상 발생 하 고 한 번에 캐럿을 배치 하는 경우 모든 강조 표시 됩니다.  
   
 ## <a name="prerequisites"></a>전제 조건  
@@ -28,7 +25,7 @@ Managed Extensibility Framework (MEF) 구성 요소 파트를 만들어 편집�
   
 ## <a name="create-a-mef-project"></a>MEF 프로젝트 만들기  
   
-1.  C# VSIX 프로젝트를 만듭니다. (에 **새 프로젝트** 대화 상자에서 **Visual C# / 확장성**, 한 다음 **VSIX 프로젝트**.) 솔루션 이름을 `HighlightWordTest`입니다.  
+1.  C# VSIX 프로젝트를 만듭니다. (에 **새 프로젝트** 대화 상자에서 **Visual C# / 확장성**, 한 다음 **VSIX 프로젝트**.) 솔루션의 이름을 `HighlightWordTest`로 지정합니다.  
   
 2.  편집기 분류자 항목 템플릿을 프로젝트에 추가 합니다. 자세한 내용은 [편집기 항목 템플릿을 사용 하 여 확장 프로그램을 만들려면](../extensibility/creating-an-extension-with-an-editor-item-template.md)합니다.  
   
@@ -160,7 +157,7 @@ Managed Extensibility Framework (MEF) 구성 요소 파트를 만들어 편집�
     NormalizedSnapshotSpanCollection WordSpans { get; set; }  
     SnapshotSpan? CurrentWord { get; set; }  
     SnapshotPoint RequestedPoint { get; set; }  
-    object updateLock = new object();  
+    object updateLock = new object();  
   
     ```  
   
@@ -187,7 +184,7 @@ Managed Extensibility Framework (MEF) 구성 요소 파트를 만들어 편집�
     ```csharp  
     void ViewLayoutChanged(object sender, TextViewLayoutChangedEventArgs e)  
     {  
-        // If a new snapshot wasn't generated, then skip this layout   
+        // If a new snapshot wasn't generated, then skip this layout   
         if (e.NewSnapshot != e.OldSnapshot)  
         {  
             UpdateAtCaretPosition(View.Caret.Position);  
@@ -215,7 +212,7 @@ Managed Extensibility Framework (MEF) 구성 요소 파트를 만들어 편집�
         if (!point.HasValue)  
             return;  
   
-        // If the new caret position is still within the current word (and on the same snapshot), we don't need to check it   
+        // If the new caret position is still within the current word (and on the same snapshot), we don't need to check it   
         if (CurrentWord.HasValue  
             && CurrentWord.Value.Snapshot == View.TextSnapshot  
             && point.Value >= CurrentWord.Value.Start  
@@ -235,10 +232,10 @@ Managed Extensibility Framework (MEF) 구성 요소 파트를 만들어 편집�
         //Find all words in the buffer like the one the caret is on  
         TextExtent word = TextStructureNavigator.GetExtentOfWord(currentRequest);  
         bool foundWord = true;  
-        //If we've selected something not worth highlighting, we might have missed a "word" by a little bit  
+        //If we've selected something not worth highlighting, we might have missed a "word" by a little bit  
         if (!WordExtentIsValid(currentRequest, word))  
         {  
-            //Before we retry, make sure it is worthwhile   
+            //Before we retry, make sure it is worthwhile   
             if (word.Span.Start != currentRequest  
                  || currentRequest == currentRequest.GetContainingLine().Start  
                  || char.IsWhiteSpace((currentRequest - 1).GetChar()))  
@@ -247,11 +244,11 @@ Managed Extensibility Framework (MEF) 구성 요소 파트를 만들어 편집�
             }  
             else  
             {  
-                // Try again, one character previous.    
+                // Try again, one character previous.    
                 //If the caret is at the end of a word, pick up the word.  
                 word = TextStructureNavigator.GetExtentOfWord(currentRequest - 1);  
   
-                //If the word still isn't valid, we're done   
+                //If the word still isn't valid, we're done   
                 if (!WordExtentIsValid(currentRequest, word))  
                     foundWord = false;  
             }  
@@ -265,7 +262,7 @@ Managed Extensibility Framework (MEF) 구성 요소 파트를 만들어 편집�
         }  
   
         SnapshotSpan currentWord = word.Span;  
-        //If this is the current word, and the caret moved within a word, we're done.   
+        //If this is the current word, and the caret moved within a word, we're done.   
         if (CurrentWord.HasValue && currentWord == CurrentWord)  
             return;  
   
@@ -275,11 +272,11 @@ Managed Extensibility Framework (MEF) 구성 요소 파트를 만들어 편집�
   
         wordSpans.AddRange(TextSearchService.FindAll(findData));  
   
-        //If another change hasn't happened, do a real update   
+        //If another change hasn't happened, do a real update   
         if (currentRequest == RequestedPoint)  
             SynchronousUpdate(currentRequest, new NormalizedSnapshotSpanCollection(wordSpans), currentWord);  
     }  
-    static bool WordExtentIsValid(SnapshotPoint currentRequest, TextExtent word)  
+    static bool WordExtentIsValid(SnapshotPoint currentRequest, TextExtent word)  
     {  
         return word.IsSignificant  
             && currentRequest.Snapshot.GetText(word.Span).Any(c => char.IsLetter(c));  
@@ -317,7 +314,7 @@ Managed Extensibility Framework (MEF) 구성 요소 파트를 만들어 편집�
     public IEnumerable<ITagSpan<HighlightWordTag>> GetTags(NormalizedSnapshotSpanCollection spans)  
     {  
         if (CurrentWord == null)  
-            yield break;  
+            yield break;  
   
         // Hold on to a "snapshot" of the word spans and current word, so that we maintain the same  
         // collection throughout  
@@ -325,9 +322,9 @@ Managed Extensibility Framework (MEF) 구성 요소 파트를 만들어 편집�
         NormalizedSnapshotSpanCollection wordSpans = WordSpans;  
   
         if (spans.Count == 0 || wordSpans.Count == 0)  
-            yield break;  
+            yield break;  
   
-        // If the requested snapshot isn't the same as the one our words are on, translate our spans to the expected snapshot   
+        // If the requested snapshot isn't the same as the one our words are on, translate our spans to the expected snapshot   
         if (spans[0].Snapshot != wordSpans[0].Snapshot)  
         {  
             wordSpans = new NormalizedSnapshotSpanCollection(  
@@ -336,16 +333,16 @@ Managed Extensibility Framework (MEF) 구성 요소 파트를 만들어 편집�
             currentWord = currentWord.TranslateTo(spans[0].Snapshot, SpanTrackingMode.EdgeExclusive);  
         }  
   
-        // First, yield back the word the cursor is under (if it overlaps)   
-        // Note that we'll yield back the same word again in the wordspans collection;   
-        // the duplication here is expected.   
+        // First, yield back the word the cursor is under (if it overlaps)   
+        // Note that we'll yield back the same word again in the wordspans collection;   
+        // the duplication here is expected.   
         if (spans.OverlapsWith(new NormalizedSnapshotSpanCollection(currentWord)))  
-            yield return new TagSpan<HighlightWordTag>(currentWord, new HighlightWordTag());  
+            yield return new TagSpan<HighlightWordTag>(currentWord, new HighlightWordTag());  
   
-        // Second, yield all the other words in the file   
+        // Second, yield all the other words in the file   
         foreach (SnapshotSpan span in NormalizedSnapshotSpanCollection.Overlap(spans, wordSpans))  
         {  
-            yield return new TagSpan<HighlightWordTag>(span, new HighlightWordTag());  
+            yield return new TagSpan<HighlightWordTag>(span, new HighlightWordTag());  
         }  
     }  
     ```  
@@ -384,14 +381,14 @@ Managed Extensibility Framework (MEF) 구성 요소 파트를 만들어 편집�
     ```csharp  
     public ITagger<T> CreateTagger<T>(ITextView textView, ITextBuffer buffer) where T : ITag  
     {  
-        //provide highlighting only on the top buffer   
+        //provide highlighting only on the top buffer   
         if (textView.TextBuffer != buffer)  
-            return null;  
+            return null;  
   
         ITextStructureNavigator textStructureNavigator =  
             TextStructureNavigatorSelector.GetTextStructureNavigator(buffer);  
   
-        return new HighlightWordTagger(textView, buffer, TextSearchService, textStructureNavigator) as ITagger<T>;  
+        return new HighlightWordTagger(textView, buffer, TextSearchService, textStructureNavigator) as ITagger<T>;  
     }  
     ```  
   
@@ -408,5 +405,5 @@ Managed Extensibility Framework (MEF) 구성 요소 파트를 만들어 편집�
   
 4.  "Hello"의 항목 중 하나를 사용 하는 커서를 이동 합니다. 모든 파란색에서 강조 표시 됩니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [연습: 파일 이름 확장명에 콘텐츠 형식 링크](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

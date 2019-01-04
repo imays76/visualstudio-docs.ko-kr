@@ -1,9 +1,6 @@
 ---
 title: Office 솔루션을 개발 하도록 컴퓨터를 구성 합니다.
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a0e6f44b923bf515977c07bbfec69b9c8e58593c
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 47435fb5767b19ca36fc94387bdbefe3578f6325
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441420"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955947"
 ---
 # <a name="configure-a-computer-to-develop-office-solutions"></a>Office 솔루션을 개발 하도록 컴퓨터를 구성 합니다.
 
@@ -30,7 +27,7 @@ Microsoft Office용 VSTO 추가 기능 및 사용자 지정을 만들려면 지�
 |--------------|------------------------|
 |Visual Studio 2017| 사용 하 여 모든 버전의 **Office/SharePoint 개발** 워크 로드.|
 |.NET Framework|-.NET Framework 4 이상|
-|Microsoft Office|<ul><li>Office Professional Plus for Office 365를 비롯한 Office의 모든 제품군 버전</li><li>다음의 독립 실행형 응용 프로그램<br /><br /> <ul><li>Excel</li><li>InfoPath(Office 2013 및 Office 2010에만 해당)</li><li>Outlook</li><li>PowerPoint</li><li>프로젝트</li><li>Visio</li><li>Word</li></ul></li></ul><br /> Office의 일부분으로 VBA(Visual Basic for Applications)를 설치해야 합니다. **중요:** 간편 실행 버전의 Office 2010 응용 프로그램은 지원되지 않습니다.|
+|Microsoft Office|<ul><li>Office Professional Plus for Office 365를 비롯한 Office의 모든 제품군 버전</li><li>다음의 독립 실행형 애플리케이션<br /><br /> <ul><li>Excel</li><li>InfoPath(Office 2013 및 Office 2010에만 해당)</li><li>Outlook</li><li>PowerPoint</li><li>프로젝트</li><li>Visio</li><li>Word</li></ul></li></ul><br /> Office의 일부분으로 VBA(Visual Basic for Applications)를 설치해야 합니다. **중요:** 간편 실행 버전의 Office 2010 응용 프로그램은 지원되지 않습니다.|
 
 자세한 설치 단계를 참조 하세요. [방법: Office 솔루션을 개발 하도록 컴퓨터를 구성](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)합니다.
 

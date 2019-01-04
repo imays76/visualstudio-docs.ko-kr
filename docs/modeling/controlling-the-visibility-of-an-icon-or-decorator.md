@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: a46509fb55c3d99c3cb2920dd6088497f326ab08
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a8fc55493aab5a19a175b75b7b1d808e9fa156e9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895498"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877564"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>아이콘 또는 데코레이터의 가시성 제어
 A *데코레이터* 아이콘 또는 셰이프를 도메인 특정 언어 (DSL)에 표시 되는 텍스트 줄. 데코레이터 표시를 확인 하 고 상태 모델의 속성에 따라 사라질 수 있습니다. 예를 들어 개인을 나타낼 셰이프를에서 사용자의 성별, 자녀 수에 따라 표시 되는 서로 다른 아이콘이 있을 수 있습니다.

@@ -1,6 +1,5 @@
 ---
 title: Visual Studio 템플릿 스키마 참조 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0774cdbba791c62a5794c7f837d6ce6b32c49432
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 25c8af779c8c943e7145c44d8e64f814977f88aa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561829"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966942"
 ---
 # <a name="visual-studio-template-schema-reference"></a>Visual Studio 템플릿 스키마 참조
 이 섹션의 XML 요소에 대 한 정보가 *.vstemplate* 프로젝트 템플릿과 항목 템플릿은 시작 키트에 대 한 메타 데이터를 저장 하는 파일에 있는 파일을 합니다.
@@ -81,6 +80,6 @@ ms.locfileid: "53561829"
 |[WizardData](../extensibility/wizarddata-element-visual-studio-templates.md)|--|이름|
 |[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Assembly<br /><br /> FullClassName|--|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

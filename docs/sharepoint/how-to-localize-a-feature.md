@@ -1,13 +1,8 @@
 ---
 title: '방법: 기능 지역화 | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c143016aaec81c65c118923ff9513bb4607353dc
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 165eee357c001720af132236a8577f259efa4f24
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119496"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887680"
 ---
 # <a name="how-to-localize-a-feature"></a>방법: 기능 지역화
   기능 제목 및 설명을 기본적으로 하드 코드 된 문자열 값을 사용합니다. 기능 제목 및 설명을 지역화 하려면 지역화 된 리소스를 참조 하는 식을 사용 하 여 문자열을 대체 합니다.  
@@ -62,9 +57,8 @@ ms.locfileid: "37119496"
   
      지역화 기능 제목 및 설명에는 응용 프로그램에 나타납니다. 지역화 된 리소스를 표시 하려면 SharePoint 서버에 리소스 파일의 문화권과 일치 하는 언어 팩 설치 되어 있어야 합니다.  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  [SharePoint 솔루션 지역화](../sharepoint/localizing-sharepoint-solutions.md)   
  [방법: 리소스 파일 추가](../sharepoint/how-to-add-a-resource-file.md)   
  [방법: ASPX 태그 지역화](../sharepoint/how-to-localize-aspx-markup.md)   
  [방법: 코드 지역화](../sharepoint/how-to-localize-code.md)  
-  

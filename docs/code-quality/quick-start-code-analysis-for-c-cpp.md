@@ -1,8 +1,7 @@
----
-title: 'C/C++ 코드 분석 바로 시작하기'
+﻿---
+title: '빠른 시작: C/C++ 코드 분석'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - C/C++ code analysis
@@ -12,14 +11,14 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3aefc42e77c6ccaf14a426a26e12b81b49bb5632
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 00dedc25185dfc3a9f12ba645205ce47925003df
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818772"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825203"
 ---
-# <a name="quickstart-code-analysis-for-cc"></a>C/C++ 코드 분석 바로 시작하기
+# <a name="quickstart-code-analysis-for-cc"></a>빠른 시작: C/C++용 코드 분석
 
 C 또는 C++ 코드에 대한 코드 분석을 정기적으로 실행하여 응용 프로그램의 품질을 향상시킬 수 있습니다. 이 테스트를 통해 발견 하기 어려운 결함 또는 프로그래밍 관행의 위반의 일반적인 문제를 찾을 수 있습니다. 코드 분석은 유효하지만 해당 코드를 사용하는 당사자나 다른 사용자에게 계속 문제를 일으킬 수 있는 특정 코드 패턴을 검색하므로, 코드 분석 경고는 컴파일러 오류 및 경고와 다릅니다.
 

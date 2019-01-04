@@ -1,9 +1,6 @@
 ---
 title: SharePoint 워크플로 솔루션 만들기 | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VSTO.NewSharePointWorkflowWizard.Page3
@@ -23,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0dd8a1339dddc52326bf7b0e42d52c1eaa53e6cf
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: b0a1e4d1e3aa548d51225ac50dacf78b73e1efae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802500"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820506"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>SharePoint 워크플로 솔루션 만들기
 
@@ -145,7 +142,7 @@ SharePoint에 대 한 자세한 내용은 참조 하세요. [Microsoft SharePoin
 |[연습: 사용자 지정 사이트 워크플로 작업 만들기](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md)|두 가지 주요 작업을 수행 하는 방법에 설명 합니다: 사이트 수준 워크플로 만들고 사용자 지정 워크플로 작업을 합니다.|
 |[연습: Visual Studio에 SharePoint Designer의 재사용 가능한 워크플로 가져오기](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|SharePoint Designer 2010에서 만든 다시 사용할 수 있는 선언적 워크플로 가져오는 방법을 보여 줍니다는 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 프로젝트입니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [SharePoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)
 - [SharePoint 솔루션 빌드 및 디버그](../sharepoint/building-and-debugging-sharepoint-solutions.md)

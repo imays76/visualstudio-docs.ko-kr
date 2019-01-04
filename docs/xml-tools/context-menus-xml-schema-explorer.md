@@ -2,7 +2,6 @@
 title: XML 스키마 탐색기에서 상황에 맞는 메뉴
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: 42ab17ca-b8c1-40d7-beda-d033f66fe874
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6f13a2dc434602819a423b8122a97675e332cab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d38dea96b109db9d60014df9bf7d4d420308f195
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939126"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898898"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>상황에 맞는 메뉴 (XML 스키마 탐색기)
 
@@ -32,7 +31,7 @@ ms.locfileid: "49939126"
 |**전역 요소 표시**|스키마 집합에서 모든 전역 요소를 찾아서 강조 표시합니다.|
 |**속성 창**|열립니다는 **속성** 창 (이미 열려 있지) 경우입니다. 이 창에서 노드에 대한 정보를 표시합니다.|
 
-## <a name="node-type-namespace"></a>노드 형식: Namespace
+## <a name="node-type-namespace"></a>노드 형식: 네임스페이스
  다음 표에서는 네임스페이스 노드에 사용할 수 있는 옵션에 대해 설명합니다.
 
 |옵션|설명|

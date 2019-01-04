@@ -1,8 +1,7 @@
 ---
-title: 'CA1415: P-Invoke를 올바르게 선언하십시오.'
+title: 'CA1415: P/Invoke를 올바르게 선언하세요.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1415
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f95c3e68190acbd53c4b75ceb81abf2885d15bce
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 41240738c7c303a04cc3d4251ece3efbead14c4d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922629"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840832"
 ---
 # <a name="ca1415-declare-pinvokes-correctly"></a>CA1415: P/Invoke를 올바르게 선언하십시오.
 
@@ -49,5 +48,5 @@ ms.locfileid: "49922629"
 
  [!code-csharp[FxCop.Interoperability.DeclarePInvokes#1](../code-quality/codesnippet/CSharp/ca1415-declare-p-invokes-correctly_1.cs)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  [비관리 코드와의 상호 운용](/dotnet/framework/interop/index)

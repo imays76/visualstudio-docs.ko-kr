@@ -1,8 +1,7 @@
 ---
-title: 'CA2132: 기본 생성자는 최소한 기본 형식 기본 생성자만큼 중요해야 합니다.'
+title: 'CA2132: 기본 생성자는 기본 형식의 기본 생성자 이상으로 중요해야 합니다.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2132
@@ -12,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66e1f402e082eb1ee42faa3e04ea319dca3ed1d5
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 68dd8093d279ae1a2651bc04845b2459b9fb3808
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546775"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912797"
 ---
-# <a name="ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors"></a>CA2132: 기본 생성자는 최소한 기본 형식 기본 생성자만큼 중요해야 합니다.
+# <a name="ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors"></a>CA2132: 기본 생성자는 기본 형식의 기본 생성자 이상으로 중요해야 합니다.
 
 |||
 |-|-|
@@ -37,7 +36,7 @@ ms.locfileid: "45546775"
 
 ## <a name="rule-description"></a>규칙 설명
 
-형식 및 멤버를는 <xref:System.Security.SecurityCriticalAttribute> Silverlight 응용 프로그램 코드에서 사용할 수 없습니다. 보안에 중요한 형식 및 멤버는 .NET Framework for Silverlight 클래스 라이브러리의 신뢰할 수 있는 코드에서만 사용할 수 있습니다. 파생 클래스의 public 또는 protected 구성 요소는 투명성이 기본 클래스보다 높거나 같아야 하기 때문에 응용 프로그램의 클래스는 SecurityCritical로 표시된 클래스에서 파생될 수 없습니다.
+형식 및 멤버를는 <xref:System.Security.SecurityCriticalAttribute> Silverlight 응용 프로그램 코드에서 사용할 수 없습니다. 보안에 중요한 형식 및 멤버는 .NET Framework for Silverlight 클래스 라이브러리의 신뢰할 수 있는 코드에서만 사용할 수 있습니다. 파생 클래스의 public 또는 protected 구성 요소는 투명성이 기본 클래스보다 높거나 같아야 하기 때문에 애플리케이션의 클래스는 SecurityCritical로 표시된 클래스에서 파생될 수 없습니다.
 
 CoreCLR 플랫폼 코드에 대 한 기본 형식에 public 또는 protected 불투명 기본 생성자가 하는 경우 다음 파생된 형식을 준수 해야 기본 생성자 상속 규칙입니다. 파생된 형식에 기본 생성자가 있어야 하 고 해당 생성자는 기본 형식의 중요 한 기본 생성자로 이상 이어야 합니다.
 

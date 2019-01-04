@@ -1,9 +1,6 @@
 ---
 title: 연락처 항목 작업
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0533db441fad61e0e52d5fa1e7433d7e3038239b
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: f52df252ef6c173465e45029bb23362ba0c36293
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258556"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857519"
 ---
 # <a name="work-with-contact-items"></a>연락처 항목 작업
   <xref:Microsoft.Office.Interop.Outlook.ContactItem> 클래스에는 연락처가 있는 작업을 수행하는 데 사용하는 메서드 및 속성이 포함됩니다.  
@@ -43,5 +40,3 @@ ms.locfileid: "35258556"
  [폴더 작업](../vsto/working-with-folders.md)   
  [달력 항목 작업](../vsto/working-with-calendar-items.md)   
  [Outlook 솔루션](../vsto/outlook-solutions.md)  
-  
-  

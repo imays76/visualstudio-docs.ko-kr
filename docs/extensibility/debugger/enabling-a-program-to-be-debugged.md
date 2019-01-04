@@ -1,9 +1,6 @@
 ---
 title: 디버그할 프로그램을 사용 하도록 설정 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], enabling for programs
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad6e8e9cb8dd34e3cd084bde1eb94ff5774dd4ba
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 94034f54457a66b0dccd4ccf2d533915a8d818dc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204390"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888480"
 ---
 # <a name="enable-a-program-to-be-debugged"></a>디버깅할 프로그램 사용 설정
 디버그 엔진 (DE) 프로그램을 디버그하기 전에 먼저는 DE 시작 하거나 기존 프로그램에 연결 합니다.  

@@ -1,9 +1,6 @@
 ---
 title: '연습: Word 작업 창의 컨트롤에 데이터 바인딩'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 17daf186920be45a70200cd896a390ab74c4c6d0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a113cbdffffb202a832ce145c4507bf5845ff52d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873892"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926452"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>연습: Word 작업 창의 컨트롤에 데이터 바인딩
   이 연습에서는 word에서 작업 창의 컨트롤에 대 한 데이터 바인딩을 보여 줍니다. 컨트롤은 SQL Server 데이터베이스의 테이블 간 마스터/세부 관계를 보여 줍니다.  
@@ -61,7 +58,7 @@ ms.locfileid: "49873892"
   
 1.  이름을 사용 하 여 Word 문서 프로젝트를 만듭니다 **My Word 작업 창의**합니다. 마법사에서 선택 **새 문서 만들기**합니다.  
   
-     자세한 내용은 [방법: Visual Studio에서 만드는 Office 프로젝트](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
+     자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
   
      Visual Studio 디자이너에서 새 Word 문서가 열리고 추가 합니다 **My Word 작업창** 프로젝트가 **솔루션 탐색기**합니다.  
   
@@ -216,7 +213,7 @@ ms.locfileid: "49873892"
      [!code-csharp[Trin_VstcoreActionsPaneWord#7](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#7)]
      [!code-vb[Trin_VstcoreActionsPaneWord#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#7)]  
   
-## <a name="test-the-application"></a>응용 프로그램 테스트  
+## <a name="test-the-application"></a>애플리케이션 테스트  
  이제 문서를 열 때 작업 창이 표시 되는지 확인 하려면 문서를 테스트할 수 있습니다. 작업 창 컨트롤에 마스터/세부 관계를 테스트 하 고 데이터는 단어에서 채워졌는지 확인 하면 테이블의 **삽입** 단추를 클릭 합니다.  
   
 ### <a name="to-test-your-document"></a>문서를 테스트하려면  
@@ -240,7 +237,5 @@ ms.locfileid: "49873892"
   
 ## <a name="see-also"></a>참고자료  
  [작업 창 개요](../vsto/actions-pane-overview.md)   
- [방법: Word 문서에 작업창을 추가 하거나 Excel 통합 문서](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
+ [방법: Word 문서 또는 Excel 통합 문서에 작업 창 추가](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
  [Office 솔루션의 컨트롤에 데이터 바인딩](../vsto/binding-data-to-controls-in-office-solutions.md)  
-  
-  

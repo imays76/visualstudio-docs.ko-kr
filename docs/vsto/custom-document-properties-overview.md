@@ -1,9 +1,6 @@
 ---
 title: 사용자 지정 문서 속성 개요
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9fcd250f75e21d24409bb7b17764d9d18e7d6c7b
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: bd76957844008975f67c6c1cb504aa0388b9e91b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441446"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53936895"
 ---
 # <a name="custom-document-properties-overview"></a>사용자 지정 문서 속성 개요
 
@@ -53,7 +50,7 @@ ms.locfileid: "53441446"
 
   *solutionid 특성이 있으며,* guid는 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 솔루션 식별을 위해 사용 합니다. 합니다 *solutionid 특성이 있으며,* 프로젝트를 빌드할 때 자동으로 생성 됩니다. 합니다 **vstolocal** 용어를 나타냅니다는 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 문서와 동일한 폴더에서 어셈블리를 로드할 수 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [Visual Studio에서 Office 솔루션의 아키텍처](../vsto/architecture-of-office-solutions-in-visual-studio.md)
 - [문서 수준 사용자 지정 아키텍처](../vsto/architecture-of-document-level-customizations.md)

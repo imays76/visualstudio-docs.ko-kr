@@ -1,8 +1,7 @@
 ---
-title: 'CA1060: P-Invoke를 NativeMethods 클래스로 이동'
+title: 'CA1060: P/Invoke를 NativeMethods 클래스로 이동하세요.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - MovePInvokesToNativeMethodsClass
@@ -19,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bf3e3f01eb6decb1ac2705655675455485bceb5b
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: e1dc9cf738e74390ea1867966d20f4246d0b1f8c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551953"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874234"
 ---
 # <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060: P/Invoke를 NativeMethods 클래스로 이동
 

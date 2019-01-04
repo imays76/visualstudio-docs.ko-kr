@@ -1,8 +1,7 @@
 ---
-title: 'CA2217: 열거형을 FlagsAttribute로 표시하지 마십시오.'
+title: 'CA2217: 열거형을 FlagsAttribute로 표시하지 마세요.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - DoNotMarkEnumsWithFlags
@@ -20,14 +19,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 12cc5f9fc58ac533d118b693587cf807f44b288f
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: d8afe63de8630b3fa7466e8c0784c26ba00bb1ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031646"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852481"
 ---
-# <a name="ca2217-do-not-mark-enums-with-flagsattribute"></a>CA2217: 열거형을 FlagsAttribute로 표시하지 마십시오.
+# <a name="ca2217-do-not-mark-enums-with-flagsattribute"></a>CA2217: 열거형을 FlagsAttribute로 표시하지 마세요.
 
 |||
 |-|-|
@@ -38,31 +37,31 @@ ms.locfileid: "32031646"
 
 ## <a name="cause"></a>원인
 
-외부에서 볼 수는 열거형으로 표시 된 <xref:System.FlagsAttribute>, 하나 있거나 열거형에 정의 된 값의 거듭제곱 두 또는 다른 조합 하지 않은 값을 더 합니다.
+외부에 표시 되는 열거형으로 표시 된 <xref:System.FlagsAttribute>, 및 두 개 이상 있어 더 많은 값의 거듭제곱 두 또는 다른 조합 되지 않는 열거형에 값을 정의 합니다.
 
 ## <a name="rule-description"></a>규칙 설명
 
-열거형 있어야 <xref:System.FlagsAttribute> present 열거형에 정의 된 각 값은 2 개 또는 조합의 거듭제곱이 하는 경우에 값을 정의 합니다.
+열거형 있어야 <xref:System.FlagsAttribute> 현재 열거형에 정의 된 각 값은 2 개 또는의 조합을 활용 하는 경우에 값을 정의 합니다.
 
-## <a name="how-to-fix-violations"></a>위반 문제를 해결 하는 방법
+## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
 
-이 규칙 위반 문제를 해결 하려면 제거 <xref:System.FlagsAttribute> 열거형에서 합니다.
+이 규칙 위반 문제를 해결 하려면 제거 <xref:System.FlagsAttribute> 열거형에서입니다.
 
 ## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
 
 이 규칙에서는 경고를 표시해야 합니다.
 
-## <a name="example-that-should-not-have-the-attribute"></a>특성이 없는 예제
+## <a name="example-that-should-not-have-the-attribute"></a>특성이 없어야 하는 예제
 
-다음 예제에서는 열거형 `Color`, 3 값이 들어 있는입니다. 두 자리 또는 정의 된 값의 조합을의 거듭제곱 3이 않습니다. `Color` 열거형으로 표시 해서는 안 <xref:System.FlagsAttribute>합니다.
+다음 예제에서는 열거형 `Color`, 3 값이 들어 있는입니다. 3 개 정의 된 값의 조합을 활용 아닙니다. 합니다 `Color` 열거형으로 표시 해서는 안 됩니다 <xref:System.FlagsAttribute>합니다.
 
 [!code-cpp[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/CPP/ca2217-do-not-mark-enums-with-flagsattribute_1.cpp)]
 [!code-csharp[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/CSharp/ca2217-do-not-mark-enums-with-flagsattribute_1.cs)]
 [!code-vb[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/VisualBasic/ca2217-do-not-mark-enums-with-flagsattribute_1.vb)]
 
-## <a name="example-that-should-have-the-attribute"></a>특성을 가져야 하는 예제
+## <a name="example-that-should-have-the-attribute"></a>특성에 있어야 하는 예제
 
-다음 예제에서는 열거형 `Days`, 표시로 대 한 요구 사항에 맞는 <xref:System.FlagsAttribute>합니다.
+다음 예제에서는 열거형을 보여 줍니다 `Days`를 사용 하 여 표시 하는 것에 대 한 요구 사항을 충족 하는 <xref:System.FlagsAttribute>합니다.
 
 [!code-cpp[FxCop.Usage.EnumNoFlags2#1](../code-quality/codesnippet/CPP/ca2217-do-not-mark-enums-with-flagsattribute_2.cpp)]
 [!code-csharp[FxCop.Usage.EnumNoFlags2#1](../code-quality/codesnippet/CSharp/ca2217-do-not-mark-enums-with-flagsattribute_2.cs)]
@@ -70,8 +69,8 @@ ms.locfileid: "32031646"
 
 ## <a name="related-rules"></a>관련된 규칙
 
-[CA1027: 열거형을 FlagsAttribute로 표시하십시오.](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+[CA1027: 열거형을 FlagsAttribute로 표시](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.FlagsAttribute?displayProperty=fullName>

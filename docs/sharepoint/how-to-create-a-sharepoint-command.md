@@ -1,9 +1,6 @@
 ---
 title: '방법: SharePoint 명령 만들기 | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 89384a1bf095b27f97be46ae303148ab5f8c7d1f
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 7f83447bcceb010f5a479d61c250e703daa1aab1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117139"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894852"
 ---
 # <a name="how-to-create-a-sharepoint-command"></a>방법: SharePoint 명령 만들기
   사용자 지정 SharePoint 도구 확장에서 서버 개체 모델을 사용 하려는 경우 만들어야 *SharePoint 명령을* API를 호출 합니다. 서버 개체 모델을 직접 호출할 수 있는 어셈블리는 SharePoint 명령을 정의 합니다.  
@@ -31,7 +28,7 @@ ms.locfileid: "37117139"
   
 1.  다음 구성을 포함 하는 클래스 라이브러리 프로젝트를 만듭니다.  
   
-    -   .NET Framework 3.5를 대상 으로합니다. 대상 프레임 워크를 선택 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법:.NET Framework의 버전을 대상](../ide/how-to-target-a-version-of-the-dotnet-framework.md)합니다.  
+    -   .NET Framework 3.5를 대상 으로합니다. 대상 프레임 워크를 선택 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법: 한 버전의 .NET Framework를 대상으로 지정](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
   
     -   AnyCPU 또는 x64를 대상으로 플랫폼입니다. 기본적으로 클래스 라이브러리 프로젝트의 대상 플랫폼은 AnyCPU입니다. 대상 플랫폼을 선택 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법: 플랫폼을 대상으로 한 프로젝트 구성](../ide/how-to-configure-projects-to-target-platforms.md)합니다.  
   
@@ -62,7 +59,7 @@ ms.locfileid: "37117139"
   
      SharePoint 도구 확장에서 명령을 호출 하는 경우에 동일한 고유 식별자를 지정 해야 합니다. 자세한 내용은 [방법: SharePoint 명령 실행](../sharepoint/how-to-execute-a-sharepoint-command.md)합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드 예제에서는 식별자를 가진 SharePoint 명령을 `Contoso.Commands.UpgradeSolution`합니다. 이 명령은 서버 개체 모델에서 Api를 사용 하 여 배포 된 솔루션으로 업그레이드 합니다.  
   
  [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#5](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/SharePointCommands/Commands.cs#5)]
@@ -80,8 +77,7 @@ ms.locfileid: "37117139"
 ## <a name="deploying-the-command"></a>이 명령은 배포  
  명령에 배포 하려면 동일한 명령을 어셈블리를 포함 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 확장명 (*vsix*) 명령을 사용 하는 확장 어셈블리를 사용 하 여 패키지 있습니다. 또한 extension.vsixmanifest 파일에서 명령 어셈블리에 대 한 항목을 추가 해야 합니다. 자세한 내용은 [Visual Studio에서 SharePoint 도구의 확장을 배포할](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)합니다.  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  [SharePoint 개체 모델 호출](../sharepoint/calling-into-the-sharepoint-object-models.md)   
  [방법: SharePoint 명령 실행](../sharepoint/how-to-execute-a-sharepoint-command.md)   
- [연습: 웹 파트를 표시 하려면 서버 탐색기를 확장 합니다.](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  
-  
+ [연습: 웹 파트를 표시 하려면 서버 탐색기 확장](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  

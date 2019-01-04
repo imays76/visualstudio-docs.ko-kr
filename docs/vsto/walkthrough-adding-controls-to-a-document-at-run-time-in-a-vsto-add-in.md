@@ -1,9 +1,6 @@
 ---
 title: '연습: VSTO 추가 기능에서 런타임에 문서에 컨트롤 추가'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,17 +15,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 774e26388f5eb25fb0a16dee05557c6bf34a0ff0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 085860294955e1049d05cf38abea636bc2eb8672
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951589"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954898"
 ---
 # <a name="walkthrough-add-controls-to-a-document-at-runtime-in-a-vsto-add-in"></a>연습: VSTO 추가 기능에서 런타임에 문서에 컨트롤 추가
   VSTO 추가 기능을 사용 하 여 열려 있는 Microsoft Office Word 문서에 컨트롤을 추가할 수 있습니다. 이 연습에서는 리본 메뉴를 사용 하 여 추가할 사용자를 사용 하도록 설정 하는 방법에 설명 된 <xref:Microsoft.Office.Tools.Word.Controls.Button> 또는 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 문서.  
 
- **적용 대상:** 이 항목의 정보는 Word 2010의 VSTO 추가 기능 프로젝트에 적용됩니다. 자세한 내용은 [Office 응용 프로그램 및 프로젝트 형식에 따라 사용 가능한 기능](../vsto/features-available-by-office-application-and-project-type.md)을 참조하세요.  
+ **적용 대상:** 이 항목의 정보는 Word 2010의 VSTO 추가 기능 프로젝트에 적용 됩니다. 자세한 내용은 [Office 애플리케이션 및 프로젝트 형식에 따라 사용 가능한 기능](../vsto/features-available-by-office-application-and-project-type.md)을 참조하세요.  
 
  이 연습에서는 다음 작업을 수행합니다.  
 
@@ -54,7 +51,7 @@ ms.locfileid: "49951589"
 
 ### <a name="to-create-a-new-word-vsto-add-in-project"></a>새 Word VSTO 추가 기능 프로젝트를 만들려면  
 
-1.  이름을 사용 하 여 Word 용 VSTO 추가 기능 프로젝트를 만들려면 **WordDynamicControls**합니다. 자세한 내용은 [방법: Visual Studio에서 만드는 Office 프로젝트](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
+1.  이름을 사용 하 여 Word 용 VSTO 추가 기능 프로젝트를 만들려면 **WordDynamicControls**합니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
 
 2.  **Microsoft.Office.Tools.Word.v4.0.Utilities.dll** 어셈블리에 대한 참조를 추가합니다. 이 참조는 이 연습의 뒷부분에서 프로그래밍 방식으로 문서에 Windows Forms 컨트롤을 추가하는 데 필요합니다.  
 
@@ -187,7 +184,7 @@ ms.locfileid: "49951589"
 
 -   런타임에 문서에 많은 다른 유형의 컨트롤을 추가 하 고 문서를 다시 열 때 컨트롤을 다시 만드는 방법을 보여 주는 샘플에는 Word에서 추가 기능 동적 컨트롤 샘플을 참조 하세요. [Office 개발 샘플 및 연습](../vsto/office-development-samples-and-walkthroughs.md).  
 
--   Excel 용 VSTO 추가 기능을 사용 하 여 워크시트에 컨트롤을 추가 하는 방법을 보여 주는 연습을 참조 하세요 [연습: 런타임에 VSTO 추가 기능 프로젝트에서 워크시트에 컨트롤 추가](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md)합니다.  
+-   Excel 용 VSTO 추가 기능을 사용 하 여 워크시트에 컨트롤을 추가 하는 방법을 보여 주는 연습을 참조 하세요. [연습: 런타임에 VSTO 추가 기능 프로젝트에서 워크시트에 컨트롤 추가](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md)합니다.  
 
 ## <a name="see-also"></a>참고자료  
  [Word 솔루션](../vsto/word-solutions.md)   
@@ -196,4 +193,3 @@ ms.locfileid: "49951589"
  [방법: Office 문서에 Windows Forms 컨트롤 추가](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
  [방법: Word 문서에 콘텐츠 컨트롤 추가](../vsto/how-to-add-content-controls-to-word-documents.md)   
  [Word 문서 및 런타임에 VSTO 추가 기능에서 Excel 통합 문서 확장](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)  
-

@@ -1,9 +1,6 @@
 ---
 title: IDebugProgramNameChangedEvent2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugProgramNameChangedEvent2 interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13ce56d169c76bb88c19866e50fd707cdd8cb450
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 91ae416431129ebf5dffafc69ca93441e7f72dc0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116986"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889295"
 ---
 # <a name="idebugprogramnamechangedevent2"></a>IDebugProgramNameChangedEvent2
-에서 전송 디버그 엔진 (DE) 세션 디버그 관리자 (SDM)는 프로그램의 이름이 변경 될 때.  
+프로그램의 이름을 변경 하는 경우 디버그 엔진 (DE)에서 (SDM) 세션 디버그 관리자에 게 전송 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -30,14 +27,14 @@ IDebugProgramNameChangedEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>구현자 참고 사항  
- DE 프로그램의 이름이 변경 된 보고서에이 인터페이스를 구현 합니다. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) 해당이 인터페이스와 같은 개체에 대해 인터페이스를 구현 해야 합니다. SDM 사용 하 여 [QueryInterface](/cpp/atl/queryinterface) 액세스로는 **IDebugEvent2** 인터페이스입니다.  
+ DE 프로그램의 이름이 변경 된 보고서에이 인터페이스를 구현 합니다. 합니다 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) 이 인터페이스와 동일한 개체에서 인터페이스를 구현 해야 합니다. SDM 사용 [QueryInterface](/cpp/atl/queryinterface) 액세스 하는 **IDebugEvent2** 인터페이스입니다.  
   
-## <a name="notes-for-callers"></a>호출자에 대 한 참고 사항  
- DE을 만들어 프로그램 이름 변경을 보고 하기 위해이 이벤트 개체를 보냅니다. DE를 사용 하 여이 이벤트를 보냅니다는 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 디버깅 중인 프로그램에 연결할 때는 SDM에서 제공 되는 콜백 함수입니다. 사용자 지정 포트 공급자는이 이벤트를 사용 하 여 인터페이스에서 I 보냅니다.  
+## <a name="notes-for-callers"></a>호출자에 대 한 정보  
+ DE을 만들어 프로그램 이름 변경을 보고 하려면이 이벤트 개체를 보냅니다. DE를 사용 하 여이 이벤트를 전송 합니다 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 디버깅 중인 프로그램에 연결할 때 SDM에서 제공 하는 콜백 함수. 사용자 지정 포트 공급자는이 이벤트를 사용 하 여 인터페이스를 보냅니다.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: Msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll

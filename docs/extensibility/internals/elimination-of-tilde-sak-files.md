@@ -1,9 +1,6 @@
 ---
 title: 제거 ~ SAK 파일 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - temporary files
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d840ea26757ca56ee58b5ac4941f7f3c1065562
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 37d2d8fbbd98e75b398caec9e4c2f36a5853ba4a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497952"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53862816"
 ---
 # <a name="elimination-of-sak-files"></a>제거 ~ SAK 파일
 원본 제어 플러그 인 API 1.2에서는 *~ SAK* 기능 플래그를 통해 파일 대체 되었으며 원본 여부를 검색 하는 새 함수 제어 플러그 인 지원 합니다 *MSSCCPRJ* 파일 및 공유 체크 아웃 합니다.  
@@ -53,5 +50,5 @@ Visual Studio.NET 2003 접두사로 추가 하는 임시 파일을 만들었습�
 > [!NOTE]
 >  이 레지스트리 키로 설정 되어 있으면 *dword:00000000은*되 존재 하지 않는, 키 및 Visual Studio는 여전히 임시 파일을 만들려고 시도 합니다. 그러나 레지스트리 키로 설정 되어 있으면 *dword:00000001*, 임시 파일을 만들려면 Visual Studio를 시도 하지 않습니다. 소스 제어 플러그 인을 지원 하지 않음을 가정 대신 합니다 *MSSCCPRJ.SCC* 파일과 공유 체크 아웃을 지원 하지 않습니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [원본 제어 플러그 인 API 버전 1.2의 새로운 기능](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

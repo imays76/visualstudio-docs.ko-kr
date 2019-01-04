@@ -12,13 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2181e9f89fc8d859bfda9a29de6af8726ae5aef3
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: cf200620036c41fe4ed975fa6ff60bd1438b7d88
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967430"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821043"
 ---
 # <a name="customizing-element-creation-and-movement"></a>요소 만들기 및 이동 사용자 지정
 
@@ -75,7 +74,7 @@ Emd는 추가 포함 관계를 정의할 때 자동으로 생성 됩니다. 사�
 >
 > 사용자 지정 코드에서 새 요소 또는 새 관계를 항상 처리 되지 않는 있는지 확인 하려는 경우 고려해를 `AddRule` 포함 관계에 대해 및 `DeleteRule` 요소의 도메인 클래스에 있습니다. 자세한 내용은 [규칙이 전파 변경 내용을 내에서 모델](../modeling/rules-propagate-changes-within-the-model.md)합니다.
 
-## <a name="example-defining-an-emd-without-custom-code"></a>예: 사용자 지정 코드 없이 emd는 추가 정의
+## <a name="example-defining-an-emd-without-custom-code"></a>예제: 사용자 지정 코드 없이 emd는 추가 정의
 
 다음 예제에서는 기존 셰이프를 도구 상자에서 끌어서 동시에 요소 및 커넥터를 만들 수 있도록 합니다. 예제는 DSL 정의에 emd는 추가 추가합니다. 이 수정 하기 전에 사용자가 기존 셰이프에 있지만 다이어그램으로 도구를 끌 수 있습니다.
 
@@ -91,7 +90,7 @@ Emd는 추가 포함 관계를 정의할 때 자동으로 생성 됩니다. 사�
 
    1.  **DSL 탐색기**를 확장 하 고 **도메인 클래스**합니다. 마우스 오른쪽 단추로 클릭 `ExampleElement` 을 클릭 한 다음 **새 요소 병합 지시문 추가**합니다.
 
-   2.  있는지 확인 합니다 **DSL 정보** 창이 열려 새 EMD의 세부 정보를 볼 수 있도록 합니다. (메뉴: **뷰**, **다른 Windows**합니다 **DSL 정보**.)
+   2.  있는지 확인 합니다 **DSL 정보** 창이 열려 새 EMD의 세부 정보를 볼 수 있도록 합니다. (메뉴: **볼**, **다른 Windows**합니다 **DSL 정보**.)
 
 3. 설정 된 **인덱싱 클래스** DSL 세부 정보 창에 어떤 종류의 요소를 병합할 수 있게 정의 `ExampleElement` 개체입니다.
 
@@ -145,7 +144,7 @@ Emd는 추가 포함 관계를 정의할 때 자동으로 생성 됩니다. 사�
 
      EMD는를 사용 하 여 명시적으로 호출할 수 있습니다 새 요소를 만든 사용자 지정 코드를 작성 하는 경우는 `ElementOperations.Merge` 메서드. 코드의에서 링크는 새 요소 모델에 다른 작업으로 동일한 방식으로 이렇게 됩니다. 자세한 내용은 [복사 동작 사용자 지정](../modeling/customizing-copy-behavior.md)합니다.
 
-## <a name="example-adding-custom-accept-code-to-an-emd"></a>예제: emd는 추가 Custom Accept 코드 추가
+## <a name="example-adding-custom-accept-code-to-an-emd"></a>예제: Emd는 추가를 허용 하는 사용자 지정 코드 추가
 
 사용자 지정 코드에 emd는 추가를 추가 하면 더 복잡 한 병합 동작을 정의할 수 있습니다. 이 간단한 예제에서는 고정 된 수의 요소를 둘 이상의 다이어그램에 추가 사용자를 방지 합니다. 이 예제에서는 EMD 포함 관계와 함께 제공 되는 기본값을 수정 합니다.
 
@@ -161,7 +160,7 @@ Emd는 추가 포함 관계를 정의할 때 자동으로 생성 됩니다. 사�
 
 4.  솔루션을 다시 빌드합니다. 모델에서 생성된 된 코드를 업데이트할 수는 없으므로 평소 보다 오래 걸립니다.
 
-     빌드 오류를 보고, 비슷합니다 됩니다: "Company.ElementMergeSample.ExampleElement 없습니다 정의 CanMergeExampleElement..."
+     빌드 오류를 보고와 유사 하 게 됩니다. "Company.ElementMergeSample.ExampleElement 없습니다 정의 CanMergeExampleElement..."
 
      메서드를 구현 해야 `CanMergeExampleElement`합니다.
 
@@ -208,7 +207,7 @@ Emd는 추가 포함 관계를 정의할 때 자동으로 생성 됩니다. 사�
 
     3.  모델에 4 개 요소를 추가 하려면 다음이 방법 중 하나로 사용할 수 없다는 것을 확인 합니다. 요소 병합 지시문을 사용 하 여 모두 때문입니다.
 
-## <a name="example-adding-custom-merge-code-to-an-emd"></a>예제: emd는 추가 사용자 지정 병합 코드 추가
+## <a name="example-adding-custom-merge-code-to-an-emd"></a>예제: Emd는 추가에 병합 하는 사용자 지정 코드 추가
 
 사용자 지정 병합 코드에서 사용자 도구를 끌 요소에 붙여넣을 때 수행할 작업을 정의할 수 있습니다. 두 가지 방법으로 사용자 지정 병합을 정의할 수 있습니다.
 

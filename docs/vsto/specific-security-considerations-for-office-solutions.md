@@ -1,9 +1,6 @@
 ---
 title: Office 솔루션에 대 한 특정 보안 고려 사항
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dcb2e0a3c381b1dd07c7724c3a64c53307856014
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 33d827efa7dcc4e5590b4bc45fb0d6bd3fbe1432
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951394"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955544"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>Office 솔루션에 대 한 특정 보안 고려 사항
   Microsoft .NET Framework 및 Microsoft Office에서 제공된 보안 기능을 통해 다양한 보안 위협에 대해 Office 솔루션을 보호할 수 있습니다. 이 항목에서는 이러한 위협 중 일부에 대해 설명하고 이러한 위협으로부터 보호하기 위한 권장 사항을 제공합니다. 또한 Office 솔루션에 영향을 주는 Microsoft Office 보안 설정에 대한 정보를 포함합니다.  
@@ -46,9 +43,9 @@ ms.locfileid: "49951394"
   
 -   사용자 대신 권한 있는 데이터 가져오기 및 보호되지 않는 워크시트에 데이터 쓰기 등 특정 유형의 기능을 노출할 때 주의합니다.  
   
--   응용 프로그램 형식에 따라 코드를 실행하기 전에 원본 문서가 실행 중인지 확인해야 합니다. 예를 들어 알려지고 안전한 위치에 저장된 문서에서 실행되고 있는지 확인합니다.  
+-   애플리케이션 형식에 따라 코드를 실행하기 전에 원본 문서가 실행 중인지 확인해야 합니다. 예를 들어 알려지고 안전한 위치에 저장된 문서에서 실행되고 있는지 확인합니다.  
   
--   응용 프로그램에서 권한 있는 작업을 수행하는 경우 문서를 열 때 경고를 표시하는 것도 좋은 방법입니다. 예를 들어 응용 프로그램이 개인 정보에 액세스하려고 하며 계속할지 또는 취소할지 선택하라는 시작 대화 상자나 시작 화면을 사용자에게 표시할 수 있습니다. 문제 없는 문서에서 이러한 경고가 나타나는 경우 최종 사용자는 손상되기 전에 응용 프로그램을 종료할 수 있습니다.  
+-   애플리케이션에서 권한 있는 작업을 수행하는 경우 문서를 열 때 경고를 표시하는 것도 좋은 방법입니다. 예를 들어 애플리케이션이 개인 정보에 액세스하려고 하며 계속할지 또는 취소할지 선택하라는 시작 대화 상자나 시작 화면을 사용자에게 표시할 수 있습니다. 문제 없는 문서에서 이러한 경고가 나타나는 경우 최종 사용자는 손상되기 전에 애플리케이션을 종료할 수 있습니다.  
   
 ## <a name="code-is-blocked-by-the-outlook-object-model-guard"></a>Outlook 개체 모델 보호에 의해 코드가 차단 됨  
  Microsoft Office에서는 코드에서 개체 모델의 특정 속성, 메서드 및 개체를 사용하지 못하도록 제한할 수 있습니다. 이러한 개체에 액세스를 제한 하면 Outlook 전자 메일 웜 및 바이러스가 악의적인 용도로 개체 모델을 사용 하지 않도록 수 있습니다. 이 보안 기능을 Outlook 개체 모델 보호라고 합니다. Outlook 작업을 중지 하려면 사용자 또는 사용자가 t의 제한 된 기간에 대 한 메서드나 속성에 대 한 액세스를 부여할 수 있도록 하는 보안 경고를 표시 하는 경우 VSTO 추가 기능에 개체 모델 보호에 사용 하는 동안 제한 된 속성 또는 메서드를 사용 하 여, ime입니다. 사용자가 작업을 중지한 경우 Visual Studio의 Office 솔루션을 사용하여 만들어진 Outlook VSTO 추가 기능에서 <xref:System.Runtime.InteropServices.COMException>을 throw합니다.  
@@ -85,9 +82,9 @@ ms.locfileid: "49951394"
  Outlook은 VSTO 추가 기능을 VSTO 추가 기능 진입점 DLL의 해시 코드를 기반으로 신뢰 합니다. 모든 Outlook VSTO 추가 기능 대상으로 하는 합니다 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 동일한 진입점 DLL을 사용 하 여 (*VSTOLoader.dll*). 즉, 모든 VSTO 추가 기능에 대상으로 하는 관리자가 신뢰 하는 경우는 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 대상으로 하는 다른 모든 VSTO 추가 기능을 개체 모델 보호 발생 없이 실행 하도록는 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 신뢰할 수 있음. 개체 모델 보호 발생 없이 실행하도록 VSTO 추가 기능을 신뢰하는 방법에 대한 자세한 내용은 [Outlook에서 바이러스 예방 기능을 관리하는 데 사용되는 방법 지정](http://go.microsoft.com/fwlink/?LinkId=128773)을 참조하세요.  
   
 ## <a name="permission-changes-do-not-take-effect-immediately"></a>사용 권한 변경 내용이 즉시 적용 되지 않습니다.  
- 관리자가 문서 또는 어셈블리에 대한 사용 권한을 조정한 경우 변경 내용을 적용하려면 사용자가 모든 Office 응용 프로그램을 종료했다가 다시 시작해야 합니다.  
+ 관리자가 문서 또는 어셈블리에 대한 사용 권한을 조정한 경우 변경 내용을 적용하려면 사용자가 모든 Office 애플리케이션을 종료했다가 다시 시작해야 합니다.  
   
- Microsoft Office 응용 프로그램을 호스트하는 기타 응용 프로그램도 새 권한이 적용되는 것을 방해할 수 있습니다. 보안 정책을 변경한 후에는 호스트인지 또는 독립 실행형인지 관계없이 Office를 사용하는 모든 응용 프로그램을 종료해야 합니다.  
+ Microsoft Office 애플리케이션을 호스트하는 기타 애플리케이션도 새 권한이 적용되는 것을 방해할 수 있습니다. 보안 정책을 변경한 후에는 호스트인지 또는 독립 실행형인지 관계없이 Office를 사용하는 모든 애플리케이션을 종료해야 합니다.  
   
 ## <a name="trust-center-settings-in-the-microsoft-office-system-do-not-affect-add-ins-or-document-level-customizations"></a>추가 기능 또는 문서 수준 사용자 지정 Microsoft Office system의 보안 센터 설정 영향을 주지 않습니다.  
  사용자는 **보안 센터**의 옵션을 설정하여 VSTO 추가 기능이 로드되지 않도록 방지할 수 있습니다. 그러나 Visual Studio의 Office 솔루션을 사용하여 만든 문서 수준 사용자 지정 및 VSTO 추가 기능은 이러한 신뢰 설정에 의해 영향을 받지 않습니다.  
@@ -104,7 +101,7 @@ ms.locfileid: "49951394"
   
   다음 절차에서는 사용자가 **보안 센터** 를 사용하여 VSTO 추가 기능이 Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 및 Microsoft Office 2010에서 로드되지 않도록 제한하는 방법을 설명합니다. 이러한 절차는 Visual Studio의 Office 개발을 사용하여 만든 사용자 지정 또는 VSTO 추가 기능에 영향을 주지 않습니다.  
   
-#### <a name="to-disable-vsto-add-ins-in-microsoft-office-2010-and-microsoft-includeoffice15shortvstoincludesoffice-15-short-mdmd-applications"></a>Microsoft Office 2010 및 Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 응용 프로그램에서 VSTO 추가 기능을 사용하지 않으려면  
+#### <a name="to-disable-vsto-add-ins-in-microsoft-office-2010-and-microsoft-includeoffice15shortvstoincludesoffice-15-short-mdmd-applications"></a>Microsoft Office 2010 및 Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 애플리케이션에서 VSTO 추가 기능을 사용하지 않으려면  
   
 1.  **파일** 탭을 선택합니다.  
   
@@ -116,9 +113,7 @@ ms.locfileid: "49951394"
   
 5.  범주 창에서 **추가 기능**을 선택합니다.  
   
-6.  세부 정보 창에서 **응용 프로그램 추가 기능에 신뢰할 수 있는 게시자의 서명 필요** 또는 **모든 응용 프로그램 추가 기능 사용 안 함**을 선택합니다.  
+6.  세부 정보 창에서 **애플리케이션 추가 기능에 신뢰할 수 있는 게시자의 서명 필요** 또는 **모든 애플리케이션 추가 기능 사용 안 함**을 선택합니다.  
   
 ## <a name="see-also"></a>참고자료  
  [Office 솔루션 보안](../vsto/securing-office-solutions.md)  
-  
-  

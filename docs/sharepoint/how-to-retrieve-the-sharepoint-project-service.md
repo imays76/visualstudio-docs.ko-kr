@@ -1,9 +1,6 @@
 ---
 title: '방법: SharePoint 프로젝트 서비스 검색 | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e8f9faa0ca539c3b5381aca4159cc4653543087a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dfd18de91848c8aabbdabc91fd37763418bb938a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880600"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891604"
 ---
 # <a name="how-to-retrieve-the-sharepoint-project-service"></a>방법: SharePoint 프로젝트 서비스 검색
   SharePoint 프로젝트 서비스는 다음 형식의 솔루션에 액세스할 수 있습니다.  
@@ -89,7 +86,7 @@ ms.locfileid: "49880600"
      [!code-vb[SPExtensibility.ProjectService.FromSPExplorerExtensions#1](../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromspexplorerextensions.getprojectservice/extension/extension.vb#1)]
      [!code-csharp[SPExtensibility.ProjectService.FromSPExplorerExtensions#1](../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromspexplorerextensions.getprojectservice/extension/extension.cs#1)]  
   
-     확장에 대 한 자세한를 **SharePoint 연결** 노드에서 **서버 탐색기**를 참조 하세요 [하는 방법: 서버 탐색기에서 SharePoint 노드 확장](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).  
+     확장에 대 한 자세한 내용은 합니다 **SharePoint 연결** 에서 노드 **서버 탐색기**를 참조 [방법: 서버 탐색기에서 SharePoint 노드 확장](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)합니다.  
   
 ## <a name="retrieve-the-service-in-other-visual-studio-extensions"></a>다른 Visual Studio 확장에서 서비스 검색  
  프로젝트 서비스, VSPackage 또는 액세스할 수 있는 모든 Visual Studio 확장을 검색할 수 있습니다는 <xref:EnvDTE80.DTE2> 자동화 개체 모델을 구현 하는 프로젝트 템플릿 마법사와 같은 개체를 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 인터페이스입니다.  
@@ -102,8 +99,7 @@ ms.locfileid: "49880600"
   
   액세스할 수 있는 Visual Studio 확장에서를 <xref:EnvDTE80.DTE2> 개체를 요청할 수 있습니다는 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> 사용 하 여 개체를 <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A> 메서드의 <xref:Microsoft.VisualStudio.Shell.ServiceProvider> 개체입니다. 자세한 내용은 [DTE 개체에서 서비스를 가져오는](../extensibility/how-to-get-a-service.md#getting-a-service-from-the-dte-object)합니다.  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  [SharePoint 프로젝트 서비스 사용](../sharepoint/using-the-sharepoint-project-service.md)   
  [방법: 서비스 가져오기](../extensibility/how-to-get-a-service.md)   
  [방법: 프로젝트 템플릿에 마법사 사용](../extensibility/how-to-use-wizards-with-project-templates.md)  
-  

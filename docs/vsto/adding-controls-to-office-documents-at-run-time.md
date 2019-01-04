@@ -1,8 +1,6 @@
 ---
 title: 런타임에 Office 문서에 컨트롤 추가
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -25,12 +23,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2ad16bc414e6d67b563240bcd2bceb15e9c34e97
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: be96a6967657a79d1e3bed9336ebb530accba2a0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305639"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842790"
 ---
 # <a name="add-controls-to-office-documents-at-runtime"></a>런타임에 Office 문서에 컨트롤 추가
   Microsoft Office Word 문서 및 런타임에 Microsoft Office Excel 통합 문서에 컨트롤을 추가할 수 있습니다. 런타임 시 이러한를 제거할 수도 있습니다. 추가 하거나 런타임 시 제거 하는 컨트롤 이라고 *동적 컨트롤*합니다.  
@@ -45,7 +43,7 @@ ms.locfileid: "52305639"
 
 - [문서에 Windows Forms 컨트롤 추가](#WindowsForms)합니다.  
 
-  ![비디오 링크](../vsto/media/playvideo.gif "비디오 링크") 관련된 비디오 데모를 참조 하세요. [어떻게 수행 할까요 추가 컨트롤을 문서에 화면 런타임에?](http://go.microsoft.com/fwlink/?LinkId=132782)합니다.  
+  ![비디오 링크](../vsto/media/playvideo.gif "비디오 링크") 관련된 비디오 데모를 참조 하세요. [어떻게 할까요? 런타임에 문서 화면에 컨트롤 추가 ](http://go.microsoft.com/fwlink/?LinkId=132782).  
 
 ##  <a name="ControlsCollection"></a> 컨트롤 컬렉션을 사용 하 여 런타임에 컨트롤 관리  
  추가 하 고 가져오기 또는 런타임 시 컨트롤을 제거, 사용의 도우미 메서드 <xref:Microsoft.Office.Tools.Excel.ControlCollection> 고 <xref:Microsoft.Office.Tools.Word.ControlCollection> 개체입니다.  
@@ -88,7 +86,7 @@ ms.locfileid: "52305639"
 
 - [방법: 워크시트에 Chart 컨트롤 추가](../vsto/how-to-add-chart-controls-to-worksheets.md)  
 
-- [방법: 콘텐츠를 추가 합니다. Word 문서에 컨트롤](../vsto/how-to-add-content-controls-to-word-documents.md)  
+- [방법: 콘텐츠 추가 컨트롤을 Word 문서](../vsto/how-to-add-content-controls-to-word-documents.md)  
 
 - [방법: Word 문서에 책갈피 컨트롤 추가](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
 
@@ -141,7 +139,7 @@ ms.locfileid: "52305639"
   [!code-vb[Trin_VstcoreProgrammingControlsExcel#3](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#3)]
   [!code-csharp[Trin_VstcoreProgrammingControlsExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#3)]  
 
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Office 문서의 컨트롤](../vsto/controls-on-office-documents.md)   
  [Office 문서에서 동적 컨트롤 유지](../vsto/persisting-dynamic-controls-in-office-documents.md)   
  [방법: 워크시트에 ListObject 컨트롤 추가](../vsto/how-to-add-listobject-controls-to-worksheets.md)   

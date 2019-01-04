@@ -1,9 +1,6 @@
 ---
 title: Visual Studio SDK에 대 한 지원 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio SDK, support options
@@ -17,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fe2d5bbc2e06bcfa7bc7f47d6aaebbbdc9b1261
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 5f1f54d43c02d02aa2967eaead2de75a664619c0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495520"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959276"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Visual Studio SDK 지원
 몇 가지 지원 옵션은 Visual Studio 통합된 개발 환경 (IDE)를 확장 하는 방법에 대 한 질문이 있는 고객이 사용할 수 있습니다.  

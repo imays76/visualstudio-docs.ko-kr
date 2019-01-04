@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: c3859c9818c4312628ef3d0cf9f3e6277a7ae424
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 337560d6db6d8747b1aedd23d789f2ef56d045c9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389434"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885290"
 ---
 # <a name="t4-template-directive"></a>T4 템플릿 지시문
 
@@ -98,7 +97,7 @@ hostspecific="true"
 
 이 속성의 형식이 호스트의 형식에 따라 달라지기 때문에 이 속성은 특정 호스트에서만 작동하는 텍스트 템플릿을 작성하는 경우에만 유용합니다. 에 적용 됩니다 [디자인 타임 템플릿을](../modeling/design-time-code-generation-by-using-t4-text-templates.md), 하지 않고 [런타임 템플릿](../modeling/run-time-text-generation-with-t4-text-templates.md)합니다.
 
-때 `hostspecific` 됩니다 `true` Visual Studio를 사용 하는 캐스팅할 수 있습니다 `this.Host` 를 IServiceProvider로 Visual Studio 기능에 액세스 합니다. `Host.ResolvePath(filename)`를 사용하여 프로젝트에서 파일의 절대 경로를 가져올 수도 있습니다. 예:
+때 `hostspecific` 됩니다 `true` Visual Studio를 사용 하는 캐스팅할 수 있습니다 `this.Host` 를 IServiceProvider로 Visual Studio 기능에 액세스 합니다. `Host.ResolvePath(filename)`를 사용하여 프로젝트에서 파일의 절대 경로를 가져올 수도 있습니다. 예를 들어:
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -136,7 +135,7 @@ Content of myFile is:
 
 합니다 `language` 언어를 지정 하는 특성 ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 또는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]) 문 및 식 블록에서 소스 코드를 사용 하도록 합니다. 출력이 생성되는 중간 코드 파일에서 이 언어가 사용됩니다. 이 언어는 템플릿에서 생성되는 언어와 관련이 없으며 모든 종류의 텍스트일 수 있습니다.
 
-예:
+예를 들어:
 
 ```vb
 <#@ template language="VB" #>

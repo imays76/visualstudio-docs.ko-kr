@@ -1,9 +1,6 @@
 ---
 title: IDebugModOpt | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugModOpt interface
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0477f8b3a39bd919a814828377228c5ccc02bd11
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7585a303c8f4a37567d64b0a27f7a8560c3135f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112397"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851539"
 ---
 # <a name="idebugmodopt"></a>IDebugModOpt
 디버그 선택적 한정자를 나타냅니다.  
@@ -29,8 +26,8 @@ ms.locfileid: "31112397"
 IDebugModOpt : IUnknown  
 ```  
   
-## <a name="notes-for-callers"></a>호출자에 대 한 참고 사항  
- 가져온는 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 클래스 또는 메서드를 나타내는 개체입니다.  
+## <a name="notes-for-callers"></a>호출자에 대 한 정보  
+ 가져온를 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 클래스 또는 메서드를 나타내는 개체입니다.  
   
 ## <a name="methods"></a>메서드  
  이 인터페이스는 다음 메서드를 구현합니다.  
@@ -42,6 +39,6 @@ IDebugModOpt : IUnknown
 ## <a name="requirements"></a>요구 사항  
  헤더: Sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll

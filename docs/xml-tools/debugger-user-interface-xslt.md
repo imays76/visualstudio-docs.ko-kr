@@ -2,7 +2,6 @@
 title: 디버거 사용자 인터페이스(XSLT)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: 846fdabd-e5c3-4688-9b0d-a93fbeea1b96
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 255f1b9f8a277f0d58437f8b0a8b1400a069c237
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 3bd9ee5e1d86982b2e1b0a8495c9b43a14f43988
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561920"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875299"
 ---
 # <a name="debugger-user-interface-xslt"></a>디버거 사용자 인터페이스 (XSLT)
 
@@ -99,7 +98,7 @@ ms.locfileid: "53561920"
 
  자세한 내용은 [방법: 디스어셈블리 창을 사용 하 여](../debugger/how-to-use-the-disassembly-window.md)입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [XSLT 디버그](../xml-tools/debugging-xslt.md)
 - [디버거 소개](../debugger/debugger-feature-tour.md)   

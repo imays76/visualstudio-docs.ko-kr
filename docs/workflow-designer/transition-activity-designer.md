@@ -3,7 +3,6 @@ title: 전환 활동 디자이너-워크플로 디자이너
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.Transition.UI
 ms.assetid: f6e8b5cc-7fb8-4699-9703-f3c9fc7cc316
@@ -12,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6855cf3361b573d20e9b51590168ab94c9cd500b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d60962fbe53184767095735cd460d6eb1eb969fd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880769"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963990"
 ---
 # <a name="transition-activity-designer"></a>전환 활동 디자이너
 
@@ -34,7 +33,7 @@ ms.locfileid: "49880769"
 |속성 이름|필수|용도|
 |-|--------------|-|
 |<xref:System.Activities.Statements.Transition.DisplayName%2A>|False|<xref:System.Activities.Statements.Transition> 활동 디자이너의 이름을 지정합니다. 기본값은 **T1**합니다. 값은 속성 표, 확장된 전환 디자이너의 헤더 및 확장된 전환 디자이너 내에서 작업 섹션의 헤더에서 편집할 수 있습니다. <xref:System.Activities.Activity.DisplayName%2A>은 Workflow Designer 상단에 표시되는 이동 경로 탐색에 사용됩니다.<br /><br /> <xref:System.Activities.Activity.DisplayName%2A>은 꼭 필요하지 않더라도 사용하는 것이 좋습니다.|
-|<xref:System.Activities.Statements.Transition.Condition%2A>|False|있는 경우 계산 되어야 하는 식을 지정 **True** 전에 대상 상태로 제어가 전달 됩니다. 속성 표 및 확장명 전환 디자이너에서 이 조건을 편집할 수 있습니다. 전환 디자이너에 나타나는 순서로 공유 전환의 여러 조건을 평가합니다. **참고:** 경우는 <xref:System.Activities.Statements.Transition.Condition%2A> 로 전환 **False** (또는 모든 공유 트리거 전환 조건이 **False**), 전환이 발생 하지 것입니다 및 상태 로부터의 모든 전환에 대 한 모든 트리거가 다시 예약 됩니다. 이 자습서에서는 조건이 구성된 방식(추측이 올바른지 또는 잘못되었는지에 따라 특정 동작이 지정됨) 때문에 이러한 상황이 발생할 수 없습니다.|
+|<xref:System.Activities.Statements.Transition.Condition%2A>|False|있는 경우 계산 되어야 하는 식을 지정 **True** 전에 대상 상태로 제어가 전달 됩니다. 속성 표 및 확장명 전환 디자이너에서 이 조건을 편집할 수 있습니다. 전환 디자이너에 나타나는 순서로 공유 전환의 여러 조건을 평가합니다. **참고:**  경우는 <xref:System.Activities.Statements.Transition.Condition%2A> 로 전환 **False** (모든 공유 트리거 전환 조건이 또는 **False**), 전환이 발생 하지 것입니다 및 모두에 대 한 모든 트리거를 상태 전환은 다시 실행 됩니다. 이 자습서에서는 조건이 구성된 방식(추측이 올바른지 또는 잘못되었는지에 따라 특정 동작이 지정됨) 때문에 이러한 상황이 발생할 수 없습니다.|
 |**소스**|True|이 전환이 원래 발생한 상태를 나타냅니다. 소스 상태의 이름을 클릭하면 디자이너 보기가 해당 상태의 확장된 보기로 전환됩니다. 이 값은 전환이 만들어질 때 설정되며 변경될 수 있습니다.|
 |<xref:System.Activities.Statements.Transition.Trigger%2A>|False|완료 시 전환을 시작하는 활동을 지정합니다. 활동을 끌어이 작업을 설정 하려면 합니다 **도구 상자** 놓습니다 합니다 **트리거** 전환의 섹션입니다.|
 |<xref:System.Activities.Statements.Transition.Action%2A>|False|트리거 활동이 완료 되 면 실행 되는 활동을 지정 하며 <xref:System.Activities.Statements.Transition.Condition%2A>가 있으면로 **true**합니다. 이 활동은 소스 상태(있을 경우)에 대한 <xref:System.Activities.Statements.State.Exit%2A> 활동이 실행된 후에 대상 상태로 전환할 때 실행됩니다. 전환 디자이너가 확장 되는 경우이 값에서 활동을 끌어 설정할 수 있습니다 합니다 **도구 상자** 놓으면 합니다 **작업** 전환의 섹션입니다. 단일 전환에 여러 작업이 있을 수 있습니다. 개별 작업을 확장하고 수축할 수 있으며 전환 중인 작업이 여러 개 있을 때 작업에 나타나는 위 또는 아래 화살표를 클릭하여 순서를 지정할 수 있습니다.|
@@ -53,4 +52,4 @@ ms.locfileid: "49880769"
 
 - [StateMachine](../workflow-designer/statemachine-activity-designer.md)
 - [FinalState](../workflow-designer/finalstate-activity-designer.md)
-- [상태](../workflow-designer/state-activity-designer.md)
+- [State](../workflow-designer/state-activity-designer.md)

@@ -3,7 +3,6 @@ title: 워크플로 디자이너 셸 기능
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - WFDShellFeatures.UI
 ms.assetid: 14bfe312-9592-408e-92ce-e98585ad16e7
@@ -12,16 +11,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d881a6c6e14983fd8537d8e78066ef9479b9633
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 2aaac9c6148aee2b39d0231f7b893bcfaf89e301
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757211"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880678"
 ---
 # <a name="workflow-designer-shell-features"></a>워크플로 디자이너 셸 기능
 
-워크플로 디자이너의 세 가지 주요 UI 영역 구성 됩니다: 디자이너 화면, 위에 이동 경로 탐색 막대 및 아래쪽의 셸 합니다. 화면 위쪽에 있는 이동 경로 탐색 막대는 현재 루트 활동의 상위 목록을 표시하는 데 사용됩니다. 자세한 내용은 [방법: 사용 하 여 이동 경로 탐색](../workflow-designer/how-to-use-breadcrumb-navigation.md)합니다. 화면 중앙의 디자이너 화면은 워크플로를 작성하는 데 사용됩니다. 화면 아래쪽의 셸에는 현재 뷰를 관리하는 데 사용되는 단추가 포함되어 있습니다.
+워크플로 디자이너의 세 가지 주요 UI 영역 구성 됩니다: 디자이너 화면, 위에 이동 경로 탐색 막대 및 아래쪽의 셸 합니다. 화면 위쪽에 있는 이동 경로 탐색 막대는 현재 루트 활동의 상위 목록을 표시하는 데 사용됩니다. 자세한 내용은 [방법: 이동 경로 탐색 사용](../workflow-designer/how-to-use-breadcrumb-navigation.md)합니다. 화면 중앙의 디자이너 화면은 워크플로를 작성하는 데 사용됩니다. 화면 아래쪽의 셸에는 현재 뷰를 관리하는 데 사용되는 단추가 포함되어 있습니다.
 
 ## <a name="shell-features"></a>셸 기능
  셸 막대 오른쪽에는 워크플로를 확대/축소하고 워크플로의 내용을 화면 크기에 맞추며 개요 맵을 표시하거나 숨기는 데 사용할 수 있는 단추가 있습니다.  바로 가기 키 Ctrl++ 및 Ctrl+-를 사용하여 워크플로를 확대하거나 축소할 수도 있습니다.

@@ -1,9 +1,6 @@
 ---
 title: Task 클래스-내부 멤버 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, Task class [.NET Framework]
@@ -14,17 +11,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9e9bbf6bbf42b8008850b540a59fa2b5d75b199
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: 34c8da8d661dcb0a8096576617403209a0a70c56
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276766"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872793"
 ---
 # <a name="task-class---internal-members"></a>Task 클래스-내부 멤버
 이 문서에서는 설명의 internal 멤버를 <xref:System.Threading.Tasks.Task?displayProperty=fullName> 도움이 되는 클래스 사용자 지정 디버거를 구현 합니다. 이 클래스에 대 한 일반 정보에 대 한 참조를 <xref:System.Threading.Tasks.Task> 참조 문서입니다.  
   
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **네임스페이스:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **어셈블리:** mscorlib (에서 *mscorlib.dll*)  
   
@@ -52,7 +49,7 @@ ms.locfileid: "39276766"
   
 ### <a name="fields"></a>필드  
   
-|name|설명|  
+|이름|설명|  
 |----------|-----------------|  
 |[m_action](../../extensibility/debugger/m-action-field.md)|실행할 코드를 나타내는 대리자를 <xref:System.Threading.Tasks.Task> 개체입니다.|  
 |[m_contingentProperties](../../extensibility/debugger/m-contingentproperties-field.md)|추가 속성을 저장 합니다 <xref:System.Threading.Tasks.Task> 개체입니다.|  
@@ -82,6 +79,6 @@ ms.locfileid: "39276766"
   
 -   `InternalWait`  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  <xref:System.Threading.Tasks.Task?displayProperty=fullName>   
  [.NET Framework에 대 한 병렬 확장 기능 내부](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

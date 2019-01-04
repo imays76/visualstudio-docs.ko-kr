@@ -2,7 +2,6 @@
 title: 'CA2233: 연산은 오버플로되지 않아야 합니다.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - OperationsShouldNotOverflow
@@ -19,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 73c0e616eb527a2213c77cdae00c42635d49b130
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 273fb94f4f0b66badef60178635fe3db360f73a4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49938906"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954580"
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233: 연산은 오버플로되지 않아야 합니다.
 
@@ -63,7 +62,7 @@ ms.locfileid: "49938906"
 ```csharp
 public static void Main()
 {
-    int value = int.MinValue;    // int.MinValue is -2147483648
+    int value = int.MinValue;    // int.MinValue is -2147483648
     value = Calculator.Decrement(value);
     Console.WriteLine(value);
 }
@@ -71,7 +70,7 @@ public static void Main()
 
 ```vb
 Public Shared Sub Main()
-    Dim value = Integer.MinValue    ' Integer.MinValue is -2147483648
+    Dim value = Integer.MinValue    ' Integer.MinValue is -2147483648
     value = Calculator.Decrement(value)
     Console.WriteLine(value)
 End Sub
@@ -110,7 +109,7 @@ End Sub
 
 3.  선택 **산술 연산 오버플로/언더플로 확인** 누릅니다 **확인**합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.OverflowException?displayProperty=fullName>
 - [C# 연산자](/dotnet/csharp/language-reference/operators/index)

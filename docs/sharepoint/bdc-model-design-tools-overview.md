@@ -1,17 +1,12 @@
 ---
 title: BDC 모델 디자인 도구 개요 | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.BDC.Method_Details
 - VS.SharePointTools.BDC.Explorer
 - VS.SharePointTools.BDC.Diagram
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -28,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6c5a799a245d2149161809977446d0c005dbe293
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e4b2a094d33088adb9aa3fc2c0fba953030c781b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914504"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923337"
 ---
 # <a name="bdc-model-design-tools-overview"></a>BDC 모델 디자인 도구 개요
   BDC 디자이너를 사용 하 여 비즈니스 데이터 연결 (BDC) 모델을 디자인할 수는 **BDC 메서드 세부 정보** 창 및 **BDC 탐색기**합니다.  
@@ -78,7 +73,7 @@ ms.locfileid: "49914504"
   
  자세한 내용은 [방법: 매개 변수의 형식 설명자 정의](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)합니다.  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  [방법: BDC 모델 만들기](../sharepoint/how-to-create-a-bdc-model.md)   
  [방법: 모델에 엔터티 추가](../sharepoint/how-to-add-an-entity-to-a-model.md)   
  [방법: Finder 메서드 추가](../sharepoint/how-to-add-a-finder-method.md)   
@@ -87,9 +82,7 @@ ms.locfileid: "49914504"
  [방법: Deleter 메서드 추가](../sharepoint/how-to-add-a-deleter-method.md)   
  [방법: Updater 메서드 추가](../sharepoint/how-to-add-an-updater-method.md)   
  [엔터티 간의 연결 만들기](../sharepoint/creating-an-association-between-entities.md)   
- [연습: 비즈니스 데이터를 사용 하 여 SharePoint에서 외부 목록 만들기](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)   
+ [연습: 비즈니스 데이터를 사용 하 여 SharePoint에 외부 목록 만들기](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)   
  [SharePoint 비즈니스 데이터 통합](../sharepoint/integrating-business-data-into-sharepoint.md)   
  [비즈니스 데이터 연결 모델 만들기](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)  
-  
- 
