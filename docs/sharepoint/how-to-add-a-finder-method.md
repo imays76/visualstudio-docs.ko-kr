@@ -1,13 +1,8 @@
 ---
 title: '방법: Finder 메서드 추가 | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 597d1e706ad75ba6ec16b958c94b5ba9d8e97760
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 40a3cb4457f3078e843b89349fd850d83b8a1c67
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836231"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963462"
 ---
 # <a name="how-to-add-a-finder-method"></a>방법: Finder 메서드 추가
   웹 파트 또는 목록에서 엔터티 목록을 표시 하려면 데이터 연결 (BDC (비즈니스) 서비스를 사용 하려면 만들어야 합니다는 *Finder* 메서드. Finder 메서드는 엔터티 인스턴스 컬렉션을 반환 하는 특수 메서드입니다. 자세한 내용은 [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)합니다.  
@@ -67,7 +62,7 @@ ms.locfileid: "49836231"
     [!code-csharp[SP_BDC#2](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#2)]
     [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  [BDC 모델 디자인 도구 개요](../sharepoint/bdc-model-design-tools-overview.md)   
  [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [방법: 특정 Finder 메서드 추가](../sharepoint/how-to-add-a-specific-finder-method.md)   
@@ -76,5 +71,3 @@ ms.locfileid: "49836231"
  [방법: Updater 메서드 추가](../sharepoint/how-to-add-an-updater-method.md)   
  [방법: 메서드에 매개 변수를 추가 합니다.](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
  [방법: 메서드 인스턴스 정의](../sharepoint/how-to-define-a-method-instance.md)  
-  
-  

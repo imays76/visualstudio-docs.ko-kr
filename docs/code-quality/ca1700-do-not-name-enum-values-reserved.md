@@ -1,8 +1,7 @@
 ---
-title: 'CA1700: 열거형 값 이름을 지정 하지 않으면 &#39;예약&#39;'
+title: 'CA1700: 열거형 값 이름을 지정 하지 마세요 &#39;예약&#39;'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1700
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c5d1cff8f6833696bdb74dbf145b14aaaaaf509
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 27372856d8984a1c16741142a4affec757670b32
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883668"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914636"
 ---
-# <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700: 열거형 값 이름을 지정 하지 않으면 &#39;예약&#39;
+# <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700: 열거형 값 이름을 지정 하지 마세요 &#39;예약&#39;
 
 |||
 |-|-|
@@ -60,12 +59,12 @@ ms.locfileid: "49883668"
 
 ## <a name="related-rules"></a>관련된 규칙
 
-[CA2217: 열거형을 FlagsAttribute로 표시하지 마십시오.](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+[CA2217: 열거형을 FlagsAttribute로 표시 하지 마십시오.](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
-[CA1712: 열거형 값에 형식 이름을 접두사로 사용하지 마십시오.](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
+[CA1712: 열거형 값 형식 이름의 접두사로 사용 하지 마세요](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
 
-[CA1028: 열거형 저장소는 Int32여야 합니다.](../code-quality/ca1028-enum-storage-should-be-int32.md)
+[CA1028: 열거형 저장소는 Int32 여야 합니다.](../code-quality/ca1028-enum-storage-should-be-int32.md)
 
-[CA1008: 열거형에는 0 값이 있어야 합니다.](../code-quality/ca1008-enums-should-have-zero-value.md)
+[CA1008: 열거형 값이 0 이면 있어야 합니다.](../code-quality/ca1008-enums-should-have-zero-value.md)
 
-[CA1027: 열거형을 FlagsAttribute로 표시하십시오.](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+[CA1027: 열거형을 FlagsAttribute로 표시](../code-quality/ca1027-mark-enums-with-flagsattribute.md)

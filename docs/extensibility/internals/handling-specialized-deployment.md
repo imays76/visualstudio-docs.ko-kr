@@ -1,9 +1,6 @@
 ---
 title: 특수 배포 처리 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - deploying applications [Visual Studio SDK]
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3c73b118f7e137847c1342fb9949c3d7dd6dd0b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 82fb87d2837179c97d4f6aeac884ab90898e2481
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863247"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53897971"
 ---
 # <a name="handle-specialized-deployment"></a>특수 배포 처리
 배포에는 프로젝트에 대 한 선택적 작업입니다. 예를 들어, 웹 프로젝트를 웹 서버를 업데이트 하는 프로젝트에 있도록 배포를 지원 합니다. 마찬가지로, 한 **스마트 장치** 프로젝트는 대상 장치에 빌드된 응용 프로그램을 복사 하는 배포를 지원 합니다. 프로젝트 하위 형식 구현 하 여 특수 한 배포 동작을 제공할 수는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> 인터페이스입니다. 이 인터페이스에는 배포 작업의 전체 집합을 정의합니다.  
@@ -293,5 +290,5 @@ ms.locfileid: "49863247"
 > [!NOTE]
 >  이 항목에서 제공 하는 모든 코드 예는에서 더 큰 예제의 부분 [VSSDK 샘플](http://aka.ms/vs2015sdksamples)합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [프로젝트 하위 형식](../../extensibility/internals/project-subtypes.md)

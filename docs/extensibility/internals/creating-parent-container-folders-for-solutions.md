@@ -1,9 +1,6 @@
 ---
 title: 솔루션에 대 한 부모 컨테이너 폴더 만들기 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - solutions, creating parent containers
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 87fbda8cb55d0d2a6ef9f21a2a7878d4babd3fe6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 49c07cbb4ea87c33b0b22ed7db323018be2f2b11
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830693"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889100"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>부모 솔루션에 대 한 컨테이너 폴더 만들기
 원본 제어 플러그 인 API 버전 1.2에는 사용자 솔루션 내에서 모든 웹 프로젝트에 대 한 단일 루트 원본 제어 대상을 지정할 수 있습니다. 이 단일 루트를 슈퍼 통합 루트 (도메인 이름 얻기) 라고 합니다.  
@@ -52,7 +49,7 @@ ms.locfileid: "49830693"
 |기능|소스 제어 플러그 인 API 버전 1.1|소스 제어 플러그 인 API 버전 1.2|  
 |-------------| - | - |  
 |소스 코드 제어에 솔루션 추가|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccGetProjPath()<br /><br /> SccOpenProject()|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccCreateSubProject()<br /><br /> SccCreateSubProject()<br /><br /> SccOpenProject()|  
-|소스 제어 중인 솔루션에 프로젝트 추가|SccGetProjPath()<br /><br /> OpenProject()|SccGetParentProjectPath()<br /><br /> SccOpenProject()<br /><br />  **참고:** Visual Studio 솔루션을 SUR.의 직계 자식이 있다고 가정|  
+|소스 제어 중인 솔루션에 프로젝트 추가|SccGetProjPath()<br /><br /> OpenProject()|SccGetParentProjectPath()<br /><br /> SccOpenProject()<br /><br />  **참고:**  Visual Studio 솔루션을 SUR.의 직계 자식이 있다고 가정|  
   
 ## <a name="examples"></a>예제  
  다음 표에서 두 가지 예제를 나열합니다. 두 경우 모두를 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 될 때까지 소스 제어에서 솔루션에 대 한 대상 위치를 묻는 메시지가 합니다 *user_choice* 대상으로 지정 됩니다. user_choice를 지정 하면 솔루션 및 프로젝트가 원본 제어 대상에 대 한 사용자 프롬프트 없이 추가 됩니다.  
@@ -68,5 +65,5 @@ ms.locfileid: "49830693"
   
  **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] DoNotCreateSolutionRootFolderInSourceControl** = *dword:00000001*
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [원본 제어 플러그 인 API 버전 1.2의 새로운 기능](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

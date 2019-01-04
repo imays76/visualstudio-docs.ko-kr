@@ -1,9 +1,6 @@
 ---
 title: Office 문서에서 동적 컨트롤 유지
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b77310f797db3eb031bc311f4fc68bc7fd6b4c56
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 570131dfdb3cb582ba6ee6c8a12fff2dfcc01e98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37059294"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894797"
 ---
 # <a name="persist-dynamic-controls-in-office-documents"></a>Office 문서에서 동적 컨트롤 유지
 
@@ -38,7 +35,7 @@ ms.locfileid: "37059294"
 
 ## <a name="persist-host-controls-in-the-document"></a>문서에 호스트 컨트롤 유지
 
-문서를 저장하고 닫으면 모든 동적 호스트 컨트롤이 문서에서 제거됩니다. 기본 네이티브 Office 개체만 남아 있습니다. 예를 들어, 한 <xref:Microsoft.Office.Tools.Excel.ListObject?displayProperty=fullName> 호스트 컨트롤은을 <xref:Microsoft.Office.Interop.Excel.ListObject?displayProperty=fullName>입니다. 네이티브 Office 개체는 호스트 컨트롤 이벤트에 연결되어 있지 않으며 호스트 컨트롤의 데이터 바인딩 기능이 없습니다.
+문서를 저장하고 닫으면 모든 동적 호스트 컨트롤이 문서에서 제거됩니다. 기본 네이티브 Office 개체만 남아 있습니다. 예를 들어 <xref:Microsoft.Office.Tools.Excel.ListObject?displayProperty=fullName> 호스트 컨트롤은 <xref:Microsoft.Office.Interop.Excel.ListObject?displayProperty=fullName>가 됩니다. 네이티브 Office 개체는 호스트 컨트롤 이벤트에 연결되어 있지 않으며 호스트 컨트롤의 데이터 바인딩 기능이 없습니다.
 
 다음 표에서는 각 호스트 컨트롤 유형에 대해 문서에 남아 있는 네이티브 Office 개체를 보여 줍니다.
 
@@ -56,7 +53,7 @@ ms.locfileid: "37059294"
 
 Word 용 호스트 컨트롤을 만들려면 다시 또는 <xref:Microsoft.Office.Tools.Excel.NamedRange> 또는 <xref:Microsoft.Office.Tools.Excel.ListObject> for Excel을 사용 하 여 호스트 컨트롤을 `Add` \< *컨트롤 클래스*> 메서드의 <xref:Microsoft.Office.Tools.Excel.ControlCollection?displayProperty=fullName> 또는 <xref:Microsoft.Office.Tools.Word.ControlCollection?displayProperty=fullName> 개체입니다. 네이티브 Office 개체에 대한 매개 변수가 있는 메서드를 사용합니다.
 
-예를 들어, 만들려는 경우를 <xref:Microsoft.Office.Tools.Excel.ListObject?displayProperty=fullName> 기존 네이티브 컨트롤을 호스트 <xref:Microsoft.Office.Interop.Excel.ListObject?displayProperty=fullName> 문서를 열 때 사용 합니다 <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddListObject%2A> 메서드와 기존 전달 <xref:Microsoft.Office.Interop.Excel.ListObject>. 다음 코드 예제에서는 Excel용 문서 수준 프로젝트에서 이 과정을 보여 줍니다. 코드는 <xref:Microsoft.Office.Tools.Excel.ListObject> 클래스의 <xref:Microsoft.Office.Interop.Excel.ListObject> 라는 기존 `MyListObject` 를 기반으로 하는 동적 `Sheet1` 를 다시 만듭니다.
+예를 들어 문서를 열 때 기존 네이티브 <xref:Microsoft.Office.Tools.Excel.ListObject?displayProperty=fullName> 에서 <xref:Microsoft.Office.Interop.Excel.ListObject?displayProperty=fullName> 호스트 컨트롤을 만들려는 경우 <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddListObject%2A> 메서드를 사용하고 기존 <xref:Microsoft.Office.Interop.Excel.ListObject>를 전달합니다. 다음 코드 예제에서는 Excel용 문서 수준 프로젝트에서 이 과정을 보여 줍니다. 코드는 <xref:Microsoft.Office.Tools.Excel.ListObject> 클래스의 <xref:Microsoft.Office.Interop.Excel.ListObject> 라는 기존 `MyListObject` 를 기반으로 하는 동적 `Sheet1` 를 다시 만듭니다.
 
 [!code-csharp[Trin_ExcelWorkbookDynamicControls#6](../vsto/codesnippet/CSharp/trin_excelworkbookdynamiccontrols4/Sheet1.cs#6)]
 [!code-vb[Trin_ExcelWorkbookDynamicControls#6](../vsto/codesnippet/VisualBasic/trin_excelworkbookdynamiccontrols4/Sheet1.vb#6)]
@@ -89,18 +86,18 @@ VSTO 추가 기능을 사용 하 여 문서에 동적 Windows Forms 컨트롤을
 
 #### <a name="remove-activex-wrappers-when-the-document-is-opened"></a>문서를 열 때 ActiveX 래퍼 제거
 
-모든 ActiveX 래퍼를 제거 하려면 호출 합니다 `GetVstoObject` 에 대 한 호스트 항목을 생성 하는 메서드를 <xref:Microsoft.Office.Interop.Word.Document> 또는 <xref:Microsoft.Office.Interop.Excel.Workbook> 새로 열린된 문서를 나타내는입니다. 예를 들어 Word 문서에서 모든 ActiveX 래퍼를 제거 하려면 호출할 수 있습니다는 `GetVstoObject` 에 대 한 호스트 항목을 생성 하는 메서드를 <xref:Microsoft.Office.Interop.Word.Document> 에 대 한 이벤트 처리기에 전달 되는 개체는 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> 이벤트.
+모든 ActiveX 래퍼를 제거하려면 `GetVstoObject` 메서드를 호출하여 새로 열린 문서를 나타내는 <xref:Microsoft.Office.Interop.Word.Document> 또는 <xref:Microsoft.Office.Interop.Excel.Workbook>에 대한 호스트 항목을 생성합니다. 예를 들어 Word 문서에서 모든 ActiveX 래퍼를 제거하려면 `GetVstoObject` 메서드를 호출하여 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> 이벤트의 이벤트 처리기에 전달되는 <xref:Microsoft.Office.Interop.Word.Document> 개체에 대한 호스트 항목을 생성할 수 있습니다.
 
 이 절차는 VSTO 추가 기능이 설치되어 있는 컴퓨터에서만 문서가 열리는 것을 알고 있는 경우에 유용합니다. VSTO 추가 기능이 설치되어 있지 않은 다른 사용자에게 문서가 전달될 수 있는 경우 문서를 닫기 전에 컨트롤을 제거하는 것이 좋습니다.
 
-다음 코드 예제를 호출 하는 방법에 설명 합니다 `GetVstoObject` 문서가 열릴 때 메서드.
+다음 코드 예제에서는 문서를 열 때 `GetVstoObject` 메서드를 호출하는 방법을 보여 줍니다.
 
 [!code-vb[Trin_WordAddInDynamicControls#11](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#11)]
 [!code-csharp[Trin_WordAddInDynamicControls#11](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#11)]
 
 하지만 `GetVstoObject` 메서드는 주로 런타임에 새 호스트 항목을 생성, 지울 수도 문서에서 모든 ActiveX 래퍼 처음 특정 문서에 대 한 호출 됩니다. 사용 하는 방법에 대 한 자세한 합니다 `GetVstoObject` 메서드를 참조 하세요 [확장 Word 문서 및 Excel 통합 런타임에 VSTO 추가 기능에서](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)합니다.
 
-VSTO 추가 기능에 문서를 열 때 동적 컨트롤을 만드는, VSTO 추가 기능에 이미 호출 된 `GetVstoObject` 컨트롤을 만드는 프로세스의 일부로 메서드. 별도 호출을 추가 해야 합니다 `GetVstoObject` 이 시나리오에서는 ActiveX 래퍼를 제거 하는 방법입니다.
+VSTO 추가 기능에 문서를 열 때 동적 컨트롤을 만드는, VSTO 추가 기능에 이미 호출 된 `GetVstoObject` 컨트롤을 만드는 프로세스의 일부로 메서드. 이 시나리오에서는 ActiveX 래퍼를 제거하기 위해 `GetVstoObject` 메서드에 대한 별도 호출을 추가할 필요가 없습니다.
 
 #### <a name="remove-the-dynamic-controls-before-the-document-is-closed"></a>문서를 닫기 전에 동적 컨트롤 제거
 
@@ -111,6 +108,6 @@ VSTO 추가 기능에 문서를 열 때 동적 컨트롤을 만드는, VSTO 추�
 [!code-vb[Trin_WordAddInDynamicControls#10](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#10)]
 [!code-csharp[Trin_WordAddInDynamicControls#10](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#10)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [런타임에 Office 문서에 컨트롤 추가](../vsto/adding-controls-to-office-documents-at-run-time.md)

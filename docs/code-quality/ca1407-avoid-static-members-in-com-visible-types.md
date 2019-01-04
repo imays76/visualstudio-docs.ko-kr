@@ -1,8 +1,7 @@
 ---
-title: 'CA1407: COM 노출 형식에 정적 멤버를 사용하지 마십시오.'
+title: 'CA1407: COM 노출 형식에 정적 멤버를 사용하지 마세요.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1407
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed145c1b3a3ddf6b0308c8862ee0f15e7637c990
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f72949326cf52455013c20419202b358b06d8b0b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879092"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916441"
 ---
-# <a name="ca1407-avoid-static-members-in-com-visible-types"></a>CA1407: COM 노출 형식에 정적 멤버를 사용하지 마십시오.
+# <a name="ca1407-avoid-static-members-in-com-visible-types"></a>CA1407: COM 노출 형식에 정적 멤버를 사용하지 마세요.
 
 |||
 |-|-|
@@ -89,11 +88,11 @@ namespace Samples
  [!code-csharp[FxCop.Interoperability.ComVisibleStaticMembersFixed#1](../code-quality/codesnippet/CSharp/ca1407-avoid-static-members-in-com-visible-types_2.cs)]
 
 ## <a name="related-rules"></a>관련된 규칙
- [CA1017: 어셈블리를 ComVisibleAttribute로 표시하십시오.](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
+ [CA1017: ComVisibleAttribute로 어셈블리 표시](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
- [CA1406: Visual Basic 6 클라이언트에서 Int64 인수를 사용하지 않습니다.](../code-quality/ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md)
+ [CA1406: Visual Basic 6 클라이언트에서 Int64 인수를 방지 합니다.](../code-quality/ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md)
 
- [CA1413: Com 노출 값 형식에 public이 아닌 필드를 사용하지 마십시오.](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)
+ [CA1413: COM 노출 값 형식에 public이 아닌 필드를 방지 합니다.](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)
 
 ## <a name="see-also"></a>참고자료
  [비관리 코드와의 상호 운용](/dotnet/framework/interop/index)

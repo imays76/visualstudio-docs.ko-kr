@@ -1,9 +1,6 @@
 ---
 title: 문서 위치 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], contexts
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 456761279e41bd35a3a5f049b33403132fe07d66
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: e30a7ca3846ae40f1fd830f2e16a30642f3925a9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203698"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896034"
 ---
 # <a name="document-position"></a>문서 위치
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 디버깅을 *위치를 문서화*:  
@@ -29,7 +26,7 @@ ms.locfileid: "39203698"
   
 -   에 의해 구현 되는 [IDebugDocumentPosition2](../../extensibility/debugger/reference/idebugdocumentposition2.md) 인터페이스입니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [코드 컨텍스트](../../extensibility/debugger/code-context.md)   
  [문서 컨텍스트](../../extensibility/debugger/document-context.md)   
  [기호 공급자](../../extensibility/debugger/symbol-provider.md)   

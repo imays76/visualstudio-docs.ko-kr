@@ -2,7 +2,6 @@
 title: 사용자 지정 코드 분석 규칙 집합 만들기
 ms.date: 11/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.addremoverulesets
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 061ceec7a513a0d4c92f06fad5ef730100dbfb8e
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: f2a0b2de9450fc2e9350371b08f4a3a9bf8d9c1b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000218"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929924"
 ---
 # <a name="customize-a-rule-set"></a>규칙 집합을 사용자 지정
 
@@ -119,7 +118,7 @@ ms.locfileid: "51000218"
 > [!div class="nextstepaction"]
 > [규칙 집합 편집기에서 규칙 수정](../code-quality/working-in-the-code-analysis-rule-set-editor.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-- [방법: 관리 코드 프로젝트에 대한 코드 분석 구성](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
+- [방법: 관리 코드 프로젝트에 대 한 코드 분석 구성](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
 - [코드 분석 규칙 집합 참조](../code-quality/rule-set-reference.md)

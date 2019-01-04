@@ -2,7 +2,6 @@
 title: ASP.NET 웹 앱에 대 한 코드 분석 구성
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.asp
@@ -11,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 8b2776399e776e34126c3c000332aa267682b88f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a781e918a925ebd43110339e03d528a4cf6b3c70
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065315"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853033"
 ---
-# <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>방법: ASP.NET 웹 응용 프로그램에 대한 코드 분석 구성
+# <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>방법: ASP.NET 웹 애플리케이션에 대한 코드 분석 구성
 
 Visual Studio에서 코드 분석의 목록에서 선택할 수 있습니다 *규칙 집합* 적용할 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 응용 프로그램입니다. 기본 규칙 집합은 Microsoft 최소 권장 규칙. 웹 사이트에 적용 되도록 설정 하는 다른 규칙을 선택할 수 있습니다.
 

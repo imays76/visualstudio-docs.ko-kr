@@ -1,9 +1,6 @@
 ---
 title: m_contingentProperties 필드 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - m_contingentProperties field, Task class [.NET Framework debug engines]
@@ -13,17 +10,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50676f799367c8a2aece7daacb270d8bb31738e9
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 5778c9337984bc6eceb150cd78111ee8eb9037b1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232817"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821927"
 ---
 # <a name="mcontingentproperties-field"></a>m_contingentProperties 필드
 추가 속성을 저장 합니다 <xref:System.Threading.Tasks.Task> 개체입니다.  
   
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **네임스페이스:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **어셈블리:** mscorlib (에서 *mscorlib.dll*)  
   
@@ -37,5 +34,5 @@ ms.locfileid: "39232817"
   
 ## <a name="remarks"></a>설명  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Task 클래스](../../extensibility/debugger/task-class-internal-members.md)

@@ -1,8 +1,7 @@
 ---
-title: 'CA2146: 형식은 최소한 기본 형식 및 인터페이스만큼 중요해야 합니다.'
+title: 'CA2146: 형식은 기본 형식 및 인터페이스 이상으로 중요해야 합니다.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2146
@@ -12,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f0550061102c7f785dfe69d1505801a60648e9b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 785c31d3d6d58215936e69d0c8034be955c9afd7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895901"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899891"
 ---
-# <a name="ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces"></a>CA2146: 형식은 최소한 기본 형식 및 인터페이스만큼 중요해야 합니다.
+# <a name="ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces"></a>CA2146: 형식은 기본 형식 및 인터페이스 이상으로 중요해야 합니다.
 
 |||
 |-|-|

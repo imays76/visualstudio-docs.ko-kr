@@ -1,9 +1,6 @@
 ---
 title: Office 솔루션 배포
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -26,12 +23,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2a479f5318e232f748853dad8a41f9623f202d46
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 890f237f576025743ff17a2e924ab38dec74e923
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648576"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866072"
 ---
 # <a name="deploy-an-office-solution"></a>Office 솔루션 배포
   ClickOnce 또는 Windows Installer를 사용하여 Office 솔루션을 배포할 수 있습니다. ClickOnce를 사용하면 솔루션의 배포 및 업데이트에 필요한 단계 수를 줄일 수 있습니다. Windows Installer를 사용하는 경우, 솔루션이 설치되는 방법과 사용자가 솔루션을 설치할 때 설치 프로그램에서 표시되는 페이지를 제어할 수 있습니다.  
@@ -50,5 +47,3 @@ ms.locfileid: "53648576"
  [ClickOnce를 사용 하 여 Office 솔루션 배포](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
  [Windows Installer를 사용 하 여 Office 솔루션 배포](../vsto/deploying-an-office-solution-by-using-windows-installer.md)   
  [Office 솔루션 배포 문제 해결](../vsto/troubleshooting-office-solution-deployment.md)  
-  
-  

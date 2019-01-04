@@ -1,9 +1,6 @@
 ---
 title: 엔터티 간의 연결 만들기 | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.BDC.Association_Dialog
@@ -24,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 22ac00ac48f4fe907e4fb4215992b49227f39961
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 134b477cdc199d85c983633a2a5996d113420443
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325465"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842981"
 ---
 # <a name="create-an-association-between-entities"></a>엔터티 간의 연결 만들기
   연결을 만들어 비즈니스 데이터 연결 (BDC) 모델의 엔터티 간의 관계를 정의할 수 있습니다. Visual Studio는 각 연결에 대 한 정보를 사용 하 여 모델의 소비자에 게 제공 하는 메서드를 생성 합니다. 이러한 메서드는 SharePoint 웹 파트, 목록 또는 사용자 지정 응용 프로그램에서 사용되어 UI(사용자 인터페이스)에 데이터 관계를 표시할 수 있습니다.  
@@ -79,8 +76,6 @@ ms.locfileid: "36325465"
  [!code-csharp[SP_BDC#10](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs#10)]
  [!code-vb[SP_BDC#10](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#10)]  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [방법: 엔터티 간 연결 만들기](../sharepoint/how-to-create-an-association-between-entities.md)  
-  
- 
+ [방법: 엔터티 간의 연결 만들기](../sharepoint/how-to-create-an-association-between-entities.md)  

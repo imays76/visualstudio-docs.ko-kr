@@ -1,9 +1,6 @@
 ---
 title: 워크시트 호스트 항목
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -23,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4052e7d9b096d9bae6671834369ece6d31bee4a0
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 76766ddde90b63821b34bd561f8d1977d730f49c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258920"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866740"
 ---
 # <a name="worksheet-host-item"></a>워크시트 호스트 항목
   <xref:Microsoft.Office.Tools.Excel.Worksheet> 호스트 항목은 Excel용 주 interop 어셈블리의 <xref:Microsoft.Office.Interop.Excel.Worksheet> 형식을 확장한 형식입니다. <xref:Microsoft.Office.Tools.Excel.Worksheet> 호스트 항목은 <xref:Microsoft.Office.Interop.Excel.Worksheet> 개체와 동일한 모든 속성, 메서드 및 이벤트를 제공할 뿐 아니라 추가 이벤트를 노출하고 호스트 컨트롤 및 Windows Forms 컨트롤에 대한 컨테이너 역할을 합니다.  
@@ -53,9 +50,9 @@ ms.locfileid: "35258920"
  새로 만들 수 없습니다 <xref:Microsoft.Office.Tools.Excel.Worksheet> 런타임에 문서 수준 프로젝트에서 항목을 호스트 합니다. 형식의 됩니다 런타임에 새 Excel 워크시트를 만든 경우 <xref:Microsoft.Office.Interop.Excel.Worksheet>합니다. 이 형식은 호스트 항목이 아니므로 호스트 컨트롤 또는 Windows Forms 컨트롤을 포함할 수 없습니다. 런타임에 문서를 만드는 방법에 대 한 자세한 내용은 참조 하세요. [방법: 프로그래밍 방식으로 통합 문서에 새 워크시트 추가](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)합니다.  
   
 ## <a name="understand-worksheet-host-items-in-vsto-add-in-projects"></a>VSTO 추가 기능 프로젝트에서 워크시트 호스트 항목 이해  
- 응용 프로그램 수준 프로젝트에서는 런타임에 Excel에서 열리는 워크시트에 대해 <xref:Microsoft.Office.Tools.Excel.Worksheet> 호스트 항목을 생성할 수 있습니다. <xref:Microsoft.Office.Tools.Excel.Worksheet> 호스트 항목을 사용하여 연결된 워크시트에 컨트롤을 추가하거나 <xref:Microsoft.Office.Interop.Excel.Worksheet> 개체에서 사용할 수 없는 이벤트를 처리할 수 있습니다.  
+ 애플리케이션 수준 프로젝트에서는 런타임에 Excel에서 열리는 워크시트에 대해 <xref:Microsoft.Office.Tools.Excel.Worksheet> 호스트 항목을 생성할 수 있습니다. <xref:Microsoft.Office.Tools.Excel.Worksheet> 호스트 항목을 사용하여 연결된 워크시트에 컨트롤을 추가하거나 <xref:Microsoft.Office.Interop.Excel.Worksheet> 개체에서 사용할 수 없는 이벤트를 처리할 수 있습니다.  
   
- 생성 하는 <xref:Microsoft.Office.Tools.Excel.Worksheet> 호스트 항목을 사용 하 여는 `GetVstoObject` 메서드. 자세한 내용은 [확장 Word 문서 및 Excel 통합 런타임에 VSTO 추가 기능에서](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)합니다.  
+ <xref:Microsoft.Office.Tools.Excel.Worksheet> 호스트 항목을 생성하려면 `GetVstoObject` 메서드를 사용합니다. 자세한 내용은 [확장 Word 문서 및 Excel 통합 런타임에 VSTO 추가 기능에서](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)합니다.  
   
 ## <a name="see-also"></a>참고자료  
  [Office 개발 샘플 및 연습](../vsto/office-development-samples-and-walkthroughs.md)   
@@ -66,5 +63,3 @@ ms.locfileid: "35258920"
  [통합 문서 호스트 항목](../vsto/workbook-host-item.md)   
  [확장 된 개체를 사용 하 여 Excel 자동화](../vsto/automating-excel-by-using-extended-objects.md)   
  [호스트 항목 및 호스트 컨트롤의 프로그래밍 방식으로 제한 사항](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
 title: 저장 된 글꼴 및 색 설정에 액세스 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - fonts, accessing stored settings
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 953f74b309d8dc147d04d86b843f138002de972f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3a3c4738923c4b187ea6a55e5f6b52f550f7442d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910682"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990911"
 ---
 # <a name="access-stored-font-and-color-settings"></a>저장 된 글꼴 및 색 설정에 액세스
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 통합된 개발 환경 (IDE) 글꼴에 대 한 수정 된 설정을 저장 하 고 레지스트리에 색입니다. 사용할 수는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> 이러한 설정에 액세스 하는 인터페이스입니다.

@@ -1,9 +1,6 @@
 ---
 title: AsyncVoidMethodBuilder.m_objectIdForDebugger 필드 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - m_objectIdForDebugger field, AsyncVoidMethodBuilder structure [.NET Framework debug engines]
@@ -13,17 +10,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e9b0fc96eca5582be01745f4fe934cfe812bc65
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 9d24affabaf22f44e56b7e3c818b302ea6bd3b40
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155427"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944420"
 ---
 # <a name="asyncvoidmethodbuildermobjectidfordebugger-field"></a>AsyncVoidMethodBuilder.m_objectIdForDebugger 필드
 디버거에서 사용 하 여이 작성기를 고유 하 게 식별 하 여 지연 초기화 된 개체를 나타냅니다.  
   
- **Namespace:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
+ **네임스페이스:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
   
  **어셈블리:** mscorlib (mscorlib.dll)  
   
@@ -35,6 +32,6 @@ ms.locfileid: "39155427"
 .field private object m_objectIdForDebugger  
 ```  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>   
  [.NET Framework에 대 한 병렬 확장 기능 내부](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

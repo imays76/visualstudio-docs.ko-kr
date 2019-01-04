@@ -2,7 +2,6 @@
 title: 'CA1052: 정적 소유자 형식은 sealed여야 합니다.'
 ms.date: 11/09/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - StaticHolderTypesShouldBeSealed
@@ -20,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 937a5eba672eef928dd4f8c0e5356e504d769153
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 0ec090fd11c122699bafb3d72ca1eeab13ecb830
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348677"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825947"
 ---
 # <a name="ca1052-static-holder-types-should-be-sealed"></a>CA1052: 정적 소유자 형식은 sealed여야 합니다.
 
@@ -68,4 +67,4 @@ public 또는 protected 추상이 아닌 정적 멤버만 포함 형식과로 �
 
 ## <a name="related-rules"></a>관련된 규칙
 
-[CA1053: 정적 소유자 형식에는 생성자를 사용하면 안 됩니다.](../code-quality/ca1053-static-holder-types-should-not-have-constructors.md)
+[CA1053: 정적 소유자 형식에는 생성자를 사용 해야 합니다.](../code-quality/ca1053-static-holder-types-should-not-have-constructors.md)

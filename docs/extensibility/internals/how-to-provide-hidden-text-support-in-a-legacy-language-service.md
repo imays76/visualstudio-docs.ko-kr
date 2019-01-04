@@ -1,9 +1,6 @@
 ---
 title: '방법: 레거시 언어 서비스의 숨겨진된 텍스트 지원 제공 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - hidden text, supporting
@@ -15,14 +12,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d368caaa9b65f6f9ab8b12c1f49994e3bfe16670
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 53e7e47f3f38ecca4e68e100dbc24bfaae5aad8b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511962"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926348"
 ---
-# <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>방법: 숨겨진된 텍스트를 제공 합니다. 레거시 언어 서비스의 지원
+# <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>방법: 레거시 언어 서비스의 숨겨진된 텍스트 지원 제공
 개요 영역 외에도 숨겨진된 텍스트 영역을 만들 수 있습니다. 클라이언트에서 제어 되 나 편집기 제어 숨겨진된 텍스트 영역 수 및 텍스트 영역을 완전히 숨기는 데 사용 됩니다. 편집기는 가로선으로 숨겨진된 영역을 표시합니다. 이러한 예로 **스크립트만** HTML 편집기에서 보기.  
   
   

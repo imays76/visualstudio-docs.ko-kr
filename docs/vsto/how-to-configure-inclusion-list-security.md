@@ -1,9 +1,6 @@
 ---
 title: '방법: 포함 목록 보안 구성'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b13084a0010bef21283dc7890dd5b1064392e1b2
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 026cdef278f87ec4367dd88a8530a35425452b75
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647737"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895579"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>방법: 포함 목록 보안 구성
   관리자 권한이 있는 경우 구성할 수 있습니다는 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 신뢰 프롬프트 컨트롤에 최종 사용자가 신뢰 결정 포함 목록에 저장 하 여 Office 솔루션을 설치 하는 옵션이 제공 됩니다 여부. 포함 목록에 대 한 자세한 내용은 [포함 목록을 사용 하 여 Office 신뢰 솔루션](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)합니다.  
@@ -93,7 +90,7 @@ ms.locfileid: "53647737"
     key.Close();  
     ```  
   
-3.  응용 프로그램을 빌드 및 실행합니다.  
+3.  애플리케이션을 빌드 및 실행합니다.  
   
 ## <a name="restrict-the-inclusion-list"></a>포함 목록을 제한합니다  
  솔루션 사용자 신뢰 여부를 결정 하 라는 메시지가 표시 됩니다 전에 알려진 id가 있는 Authenticode 인증서로 서명 될 수 있도록 포함 목록을 제한 합니다.  
@@ -152,7 +149,7 @@ ms.locfileid: "53647737"
     key.Close();  
     ```  
   
-3.  응용 프로그램을 빌드 및 실행합니다.  
+3.  애플리케이션을 빌드 및 실행합니다.  
   
 ## <a name="disable-the-inclusion-list"></a>포함 목록을 사용 하지 않도록 설정  
  최종 사용자에 게 알려지고 신뢰할 수 있는 인증서로 서명 된 솔루션에만 설치할 수 있도록 포함 목록을 비활성화할 수 있습니다.  
@@ -208,10 +205,8 @@ ms.locfileid: "53647737"
   
     ```  
   
-3.  응용 프로그램을 빌드 및 실행합니다.  
+3.  애플리케이션을 빌드 및 실행합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [포함 목록을 사용 하 여 Office 솔루션 신뢰](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)   
  [Office 솔루션 보안](../vsto/securing-office-solutions.md)  
-  
-  

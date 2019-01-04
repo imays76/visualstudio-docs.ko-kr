@@ -1,9 +1,6 @@
 ---
 title: AsyncTaskMethodBuilder.m_builder 필드 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - m_builder field, AsyncTaskMethodBuilder structure [.NET Framework debug engines]
@@ -13,17 +10,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5cada786753db5bc720f3b07cdc58108e7170001
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: ef71973ffaf680f4ded8c85f5e04a30a89f40bfd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155375"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961091"
 ---
 # <a name="asynctaskmethodbuildermbuilder-field"></a>AsyncTaskMethodBuilder.m_builder 필드
 제네릭이 아닌 인스턴스가 대리자는 제네릭 작성기 개체를 나타냅니다.  
   
- **Namespace:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
+ **네임스페이스:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
   
  **어셈블리:** mscorlib (mscorlib.dll)  
   
@@ -37,6 +34,6 @@ ms.locfileid: "39155375"
   
 ## <a name="remarks"></a>설명  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder>   
  [.NET Framework에 대 한 병렬 확장 기능 내부](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

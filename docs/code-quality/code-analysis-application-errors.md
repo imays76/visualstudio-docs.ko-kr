@@ -1,8 +1,7 @@
 ---
-title: 코드 분석 응용 프로그램 오류
+title: 코드 분석 애플리케이션 오류
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 helpviewer_keywords:
 - errors [Visual Studio ALM], code analysis
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4eae301ca32ef986c76203fd04e7bd6dc9302fec
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 954bce670ea4b8f05f4d9ba88c4a7f09850375e1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740181"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826064"
 ---
 # <a name="code-analysis-application-errors"></a>코드 분석 응용 프로그램 오류
 

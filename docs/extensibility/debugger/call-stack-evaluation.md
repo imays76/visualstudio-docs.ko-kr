@@ -1,9 +1,6 @@
 ---
 title: 호출 스택 평가 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], call stack evaluation
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f59ce938d2b37c5967856dc64c9116fa9a695dbe
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: d4d17c48f98a1f9bb0632df76ff5b04b0bdf5403
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151436"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851224"
 ---
 # <a name="call-stack-evaluation"></a>호출 스택 평가
 중단 모드에 있는 동안 호출 스택의 스택 프레임을 보려면 구현 해야 합니다 [EnumFrameInfo](../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) 메서드.  

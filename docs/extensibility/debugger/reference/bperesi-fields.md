@@ -1,9 +1,6 @@
 ---
 title: BPERESI_FIELDS | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - BPERESI_FIELDS
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a9530e950ddd5dbf75fb10b5391dc658bdf899fc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 155703f0791be4d0cf32bbf53f6a6696587aee5f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49869940"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859307"
 ---
 # <a name="bperesifields"></a>BPERESI_FIELDS
 중단점의 실패 한 확인에 대 한 검색할 정보를 지정 합니다.  
@@ -28,7 +25,7 @@ ms.locfileid: "49869940"
 ## <a name="syntax"></a>구문  
   
 ```cpp  
-enum enum_BPERESI_FIELDS {   
+enum enum_BPERESI_FIELDS {   
    PERESI_BPRESLOCATION = 0x0001,  
    BPERESI_PROGRAM      = 0x0002,  
    BPERESI_THREAD       = 0x0004,  
@@ -40,7 +37,7 @@ typedef DWORD BPERESI_FIELDS;
 ```  
   
 ```csharp  
-public enum enum_BPERESI_FIELDS {   
+public enum enum_BPERESI_FIELDS {   
    PERESI_BPRESLOCATION = 0x0001,  
    BPERESI_PROGRAM      = 0x0002,  
    BPERESI_THREAD       = 0x0004,  
@@ -79,9 +76,9 @@ public enum enum_BPERESI_FIELDS {
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>참고 항목  
  [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

@@ -1,9 +1,6 @@
 ---
 title: 원본 제어 통합 개요 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], about source control
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: edd2e04f4e1102d66cc04cd1365dc7abd1488c9c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f0a354ebafe81b707fa6b0560e473a753a36685d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931847"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902993"
 ---
 # <a name="source-control-integration-overview"></a>소스 제어 통합 개요
 이 섹션에서는 Visual Studio 소스 제어;에 통합 하는 두 가지 방법 비교 소스 제어 플러그 인 및 원본 제어 솔루션을 제공 하 고 새 소스 제어 기능을 강조 표시 하는 VSPackage는 합니다. Visual Studio 자동 솔루션 기반 전환 뿐 아니라 소스 제어 Vspackage와 원본 제어 플러그 인 간에 수동 전환할 수 있습니다.  
@@ -35,7 +32,7 @@ ms.locfileid: "49931847"
   
 1. 에 지정 된 함수를 구현 하는 DLL을 만드는 [소스 제어 플러그 인](../../extensibility/source-control-plug-ins.md)합니다.  
   
-2. 적절 한 레지스트리 항목을 만들어 DLL을 등록 (에 설명 된 [방법: 소스 제어 플러그 인을 설치](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).  
+2. 적절 한 레지스트리 항목을 만들어 DLL을 등록 (에 설명 된 [방법: 소스 제어 플러그 인 설치](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).  
   
 3. UI 및 표시 (Visual Studio 구성 요소 소스 제어 플러그 인을 통해 소스 제어 기능을 처리 하는) 소스 제어 어댑터 패키지에서 메시지가 표시 되 면 도우미 만들기  
   

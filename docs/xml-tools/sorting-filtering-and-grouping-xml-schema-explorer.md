@@ -1,8 +1,7 @@
 ---
-title: 정렬, 필터링 및 XML 스키마 탐색기에 그룹화
+title: 정렬, 필터링 및 XML 스키마 탐색기에서 그룹화
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 4a914de0-9ffc-4526-9603-92e460e52513
 author: gewarren
@@ -10,26 +9,26 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a3e281f8e3995cf22100d328089f1993110f756
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: ad0c790ced2d25c63faab8260278b4e02d3015f9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693671"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820859"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>정렬, 필터링 및 그룹화 (XML 스키마 탐색기)
 
-통해 사용할 수 있는 옵션을 설명 하는이 항목의 **정렬, 필터링 및 그룹화 옵션** 메뉴에는 **XML 스키마 탐색기** 도구 모음입니다.
+통해 사용할 수 있는 옵션에 설명 합니다 **정렬, 필터링 및 그룹화 옵션** 메뉴에서를 **XML 스키마 탐색기** 도구 모음입니다.
 
 ## <a name="filter-options"></a>필터 옵션
 
- 사용할 수 있는 필터 옵션은 다음과 같습니다. 기본적으로는 **네임 스페이스 표시** 및 **스키마 파일 표시** 옵션을 선택 합니다.
+ 사용할 수 있는 필터 옵션은 다음과 같습니다. 기본적으로 **네임 스페이스 표시** 하 고 **스키마 파일 표시** 옵션을 선택 합니다.
 
 -   **네임 스페이스 표시**합니다.
 
 -   **스키마 파일 표시**합니다.
 
--   **작성자 표시 (sequence/choice/all)** 합니다.
+-   **작성자 표시 (시퀀스/choice/all)** 합니다.
 
 ## <a name="sorting-options"></a>정렬 옵션
 
@@ -77,7 +76,7 @@ ms.locfileid: "34693671"
 
 ### <a name="document-order"></a>문서 순서
 
- **문서 순서** 옵션은 사용할 수는 **스키마 파일 표시** 옵션을 선택 합니다. 때 **문서 순서** 을 선택 하면 전역 노드가 스키마 파일에 나타나는 순서로 표시 됩니다.
+ 합니다 **문서 순서** 옵션을 사용할 수는 **스키마 파일 표시** 옵션을 선택 합니다. 때 **문서 순서** 을 선택 하면 전역 노드가 스키마 파일에 나타나는 순서로 표시 됩니다.
 
 ## <a name="persisting-sortfilter-options"></a>정렬/필터 옵션 유지
 

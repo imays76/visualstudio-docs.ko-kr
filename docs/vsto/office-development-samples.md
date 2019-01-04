@@ -1,9 +1,6 @@
 ---
 title: Office 개발 샘플
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a082137632399bee10ba2f4f91d00f153e9fe625
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: df2b8cebd7e4d907546b9cdf9aae50b29e5717d6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674770"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964535"
 ---
 # <a name="office-development-samples"></a>Office 개발 샘플
   Visual Studio에는 Microsoft Office 개발자 도구를 사용하여 Office 솔루션을 만드는 방법을 보여 주는 샘플 응용 프로그램이 포함되어 있습니다. 이러한 샘플의 코드는 Office 솔루션을 빌드하는 데 사용되는 구문, 구조 및 기술을 보여 줍니다.  
@@ -46,5 +43,3 @@ ms.locfileid: "35674770"
 ## <a name="see-also"></a>참고자료  
  [MSDN 개발자 샘플: 코드 샘플을 통한](http://go.microsoft.com/fwlink/?LinkID=248199)   
  [Office 프로그래밍의 일반적인 작업](../vsto/common-tasks-in-office-programming.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
 title: 메뉴 항목에 바로 가기 키 바인딩 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - keyboard command
@@ -17,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66436f31a0c2f3b895b4f12a5fb352eddf685632
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: d319dfdf1203870ecc1b80787522a56d6f37b5e2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219642"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940377"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>메뉴 항목에 바로 가기 키 바인딩
 바로 가기 키 사용자 지정 메뉴 명령을 바인딩할 항목을 방금 추가 된 *.vsct* 파일 패키지에 대 한 합니다. 이 항목에서는 바로 가기 키 사용자 지정 단추, 메뉴 항목 또는 도구 모음 명령에 매핑하는 방법 및 기본 편집기에서 키보드 매핑을 적용 하거나 사용자 지정 편집기를 제한 하는 방법을 설명 합니다.  
@@ -108,5 +105,5 @@ ms.locfileid: "50219642"
 <KeyBinding guid="guidVSStd97" id="cmdidBold" editor="guidTestEditorEditorFactory" key1="B" mod1="Control" />  
 ```  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [메뉴 및 명령 확장](../extensibility/extending-menus-and-commands.md)

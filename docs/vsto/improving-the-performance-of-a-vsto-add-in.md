@@ -1,9 +1,6 @@
 ---
 title: VSTO 추가 기능의 성능 향상
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,15 +10,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 65e61f03893f171bd824132665a47f5e6361391f
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: fc4a65a0b09a706eebad04c90e1779d00c7f3801
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804619"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937285"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>VSTO 추가 기능에 성능을 향상합니다
-  Office 응용 프로그램용으로 만드는 VSTO 추가 기능을 최적화하여 신속하게 시작하고, 종료하고, 항목을 열고, 다른 작업을 수행할 수 있는 향상된 환경을 사용자에게 제공할 수 있습니다. VSTO 추가 기능이 Outlook용인 경우 낮은 성능 때문에 VSTO 추가 기능이 사용하지 않도록 설정될 가능성도 줄일 수 있습니다. 다음 전략을 실행하여 VSTO 추가 기능의 성능을 높일 수 있습니다.
+  Office 애플리케이션용으로 만드는 VSTO 추가 기능을 최적화하여 신속하게 시작하고, 종료하고, 항목을 열고, 다른 작업을 수행할 수 있는 향상된 환경을 사용자에게 제공할 수 있습니다. VSTO 추가 기능이 Outlook용인 경우 낮은 성능 때문에 VSTO 추가 기능이 사용하지 않도록 설정될 가능성도 줄일 수 있습니다. 다음 전략을 실행하여 VSTO 추가 기능의 성능을 높일 수 있습니다.
 
 - [요청 시 VSTO 추가 기능 로드](#Load)
 
@@ -36,9 +33,9 @@ ms.locfileid: "53804619"
 ##  <a name="Load"></a> 요청 시 VSTO 추가 기능 로드
  다음과 같은 경우에만 로드되도록 VSTO 추가 기능을 구성할 수 있습니다.
 
-- VSTO 추가 기능이 설치된 후 사용자가 응용 프로그램을 처음으로 시작하는 경우
+- VSTO 추가 기능이 설치된 후 사용자가 애플리케이션을 처음으로 시작하는 경우
 
-- 이후에 응용 프로그램을 시작한 후 사용자가 VSTO 추가 기능과 처음으로 상호 작용하는 경우
+- 이후에 애플리케이션을 시작한 후 사용자가 VSTO 추가 기능과 처음으로 상호 작용하는 경우
 
   예를 들어, VSTO 추가 기능에 채울 수 있습니다 워크시트 데이터를 레이블이 지정 된 사용자 지정 단추를 선택 하면 **내 데이터 가져오기**합니다. 응용 프로그램이 VSTO 추가 기능에 적어도 한 번 로드 해야 되도록 합니다 **내 데이터 가져오기** 단추가 리본에 나타날 수 있습니다. 그러나 VSTO 추가 기능에서 다시 로드 되지 않습니다 사용자가 다음에 응용 프로그램을 시작 하는 경우. VSTO 추가 기능은 사용자가 **내 데이터 가져오기** 단추를 선택할 때만 로드됩니다.
 

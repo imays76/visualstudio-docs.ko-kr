@@ -1,9 +1,6 @@
 ---
 title: Microsoft 도움말 뷰어 SDK | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: af324b141815813aec9eaadfcd9982689fdeb467
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 0a4ec2f9fa5fbd6e0fbbdd57bf6de6f2c9dfb0fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000349"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987053"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft 도움말 뷰어 SDK
 
@@ -142,7 +139,7 @@ Visual Studio 브랜딩 패키지 컨트롤을 지원 합니다.
 
 4.  코드 조각을 추가 합니다.  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
 
-5.  코드 언어 관련 텍스트를 추가 합니다. `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` 는 `devLangnu=` 다른 언어를 입력할 수 있습니다. 예를 들어 `devLangnu="Fortran"` Fortran 표시 때 코드 조각을 DisplayLanguage Fortran =
+5.  코드 언어 관련 텍스트를 추가 합니다.  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` `devLangnu=` 다른 언어를 입력할 수 있습니다. 예를 들어 `devLangnu="Fortran"` Fortran 표시 때 코드 조각을 DisplayLanguage Fortran =
 
 6.  페이지 링크를 추가 합니다. `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
 
@@ -283,15 +280,15 @@ F1 흐름 다이어그램:
 
 도움말 뷰어 기본 도움말 콘텐츠 소스 온라인 (브라우저에서 시작)로 설정 하면:
 
--   Visual Studio 파트너 (VSP) 기능 (속성 모음 prefix.keyword 및 레지스트리에서 찾을 접두사에 대 한 온라인 URL) F1 propertybag에 값을 내보냅니다: F1 VSP URL + 매개 변수를 브라우저에 보냅니다.
+-   Visual Studio 파트너 (VSP) 기능 (속성 모음 prefix.keyword 및 레지스트리에서 찾을 접두사에 대 한 온라인 URL) F1 propertybag에 값을 내보냅니다. F1은 VSP URL + 매개 변수를 브라우저에 보냅니다.
 
--   Visual Studio 기능 (언어 편집기, Visual Studio 특정 메뉴 항목 등): F1 Visual Studio URL을 브라우저에 보냅니다.
+-   Visual Studio 기능 (언어 편집기, Visual Studio 특정 메뉴 항목 등).  F1은 브라우저에는 Visual Studio URL을 보냅니다.
 
 도움말 뷰어 기본 도움말 콘텐츠 소스 로컬 도움말 (도움말 뷰어에서 시작)로 설정 하면:
 
--   VSP 기능 키워드 F1 속성 모음 및 로컬 저장소 인덱스 간에 일치 하는 위치 (속성 모음 prefix.keyword 즉, 로컬 저장소 인덱스에 있는 값 =): F1 도움말 뷰어에서 항목을 렌더링 합니다.
+-   VSP 기능 키워드 F1 속성 모음 및 로컬 저장소 인덱스 간에 일치 하는 위치 (속성 모음 prefix.keyword 즉, 로컬 저장소 인덱스에 있는 값 =):  F1 도움말 뷰어에서 항목을 렌더링합니다.
 
--   Visual Studio 기능 (Visual Studio 기능에서 발생 하는 속성 모음의 재정의를 VSP에 대 한 옵션 없음): F1 도움말 뷰어에서 Visual Studio 항목을 렌더링 합니다.
+-   Visual Studio 기능 (Visual Studio 기능에서 발생 하는 속성 모음의 재정의를 VSP에 대 한 옵션 없음): F1 도움말 뷰어에서 Visual Studio 항목을 렌더링합니다.
 
 공급 업체 도움말 콘텐츠에 대 한 F1 대체 (fallback)를 사용 하도록 설정 하려면 다음 레지스트리 값을 설정 합니다. F1 대체 (fallback)는 도움말 뷰어 F1 도움말 콘텐츠를 검색할 온라인으로 설정 하 고 공급 업체 콘텐츠 사용자의 하드 드라이브에 로컬로 설치 되어 있는지를 의미 합니다. 도움말 뷰어에서 온라인 도움말에 대 한 기본 설정은 이더라도 콘텐츠에 대 한 로컬 도움말 같아야 합니다.
 
@@ -325,7 +322,7 @@ F1 흐름 다이어그램:
 
 **구문 분석 하는 기본 네이티브 Namespace**
 
-기본 네임 스페이스를 기본 구문 분석을 설정 하려면 레지스트리에 추가 새로운 DWORD의 이름으로: BaseNativeNamespaces 해당 값을 1 (아래 지원 하고자 하는 카탈로그 키)로 설정 합니다.  예를 들어, Visual Studio 카탈로그를 사용 하려면 키 경로에 추가할 수 있습니다.
+구문 분석 하는 기본 네이티브 네임 스페이스를 설정 하려면 레지스트리에 이름으로 새 DWORD를 추가 합니다. BaseNativeNamespaces 해당 값을 1 (아래 지원 하고자 하는 카탈로그 키)로 설정 합니다.  예를 들어, Visual Studio 카탈로그를 사용 하려면 키 경로에 추가할 수 있습니다.
 
 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
@@ -343,7 +340,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudi
 
 다음 레지스트리 키와 값을 추가 합니다.
 
-HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic 도움말 키: 소매 가격의 디버그 출력 표시: 예
+HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic 도움말 키: 소매 가격에 디버그 출력을 표시 합니다. 예
 
 IDE에서 도움말 메뉴 항목의 "도움말 컨텍스트 디버그"를 선택 합니다.
 
@@ -374,7 +371,7 @@ Visual Studio 릴리스는 Visual Studio 파트너에 대 한 격리 및 통합�
 
 브랜드 패키지는 도움말 뷰어를 포함 하는 제품으로 설치 됩니다.  Visual Studio 제품:
 
--   대체 (fallback) 브랜드 패키지 (Branding_\<로캘 >.mshc) 도움말 뷰어 2.3 앱 루트에 설치 됩니다 (예: C:\Program Files (x86) \Microsoft Help Viewer\v2.3) 도움말 뷰어 언어 팩을 통해.  이 패키지를 브랜딩 제품 설치 되지 않은 경우에 사용 됩니다 (콘텐츠 없음 설치) 설치 된 브랜드 패키지가 없거나 손상 되었습니다.  Visual Studio 요소 (예: 로고 및 피드백) 앱 루트 대체 (fallback) 브랜드 패키지를 사용 하는 경우 무시 됩니다.
+-   대체 (fallback) 브랜드 패키지 (Branding_\<로캘 >.mshc) 도움말 뷰어 2.3 앱 루트에 설치 됩니다 (예: C:\Program 파일 (x86) \Microsoft Help Viewer\v2.3) 도움말 뷰어 언어 팩을 통해.  이 패키지를 브랜딩 제품 설치 되지 않은 경우에 사용 됩니다 (콘텐츠 없음 설치) 설치 된 브랜드 패키지가 없거나 손상 되었습니다.  Visual Studio 요소 (예: 로고 및 피드백) 앱 루트 대체 (fallback) 브랜드 패키지를 사용 하는 경우 무시 됩니다.
 
 -   콘텐츠 패키지 서비스에서 Visual Studio 콘텐츠 설치 되 면 (첫 번째 시간 콘텐츠 설치 시나리오)에 대 한 브랜딩 패키지도 설치 됩니다.  브랜드 패키지에 대 한 업데이트 인 경우 다음 콘텐츠 업데이트 또는 추가 패키지 설치 작업을 수행 하는 경우 업데이트가 설치 됩니다.
 
@@ -615,7 +612,7 @@ MSHA이이 입문서를 위해 이름이 HelpContentSetup.msha (파일의 이름
 
 참고: 아래 구현은 예제에 포함 했습니다 브랜딩 패키지. 이것이 필요한 Visual Studio 콘텐츠 렌더링 요소 및 콘텐츠 동작을 얻기 위해 포함 하는 데 중요 합니다.
 
-샘플 HelpContentSetup.msha 파일: ("콘텐츠 이름을 1을 설정 하는 데 사용"을 대체 및 "2" 등 파일 이름 집합 이름을 콘텐츠입니다.)
+HelpContentSetup.msha 파일 샘플: ("콘텐츠 설정 1 이름" 바꾸기 및 "2" 등 파일 이름 집합 이름을 콘텐츠입니다.)
 
 ```html
 <html>
@@ -725,11 +722,11 @@ Visual Studio 콘텐츠 저장소를 만듭니다. Integrated Shell 시나리오
 
 - HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
-   키: LocationPath 문자열 값: C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio15\
+   키: LocationPath 문자열 값입니다. C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio15\
 
 - HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15\en-US
 
-   키: CatalogName 문자열 값: [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] 설명서
+   키: CatalogName 문자열 값입니다. [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] 설명서
 
 **프로젝트 만들기**
 
@@ -796,7 +793,7 @@ Visual Studio 콘텐츠 저장소를 만듭니다. Integrated Shell 시나리오
 
 7. 다음 레지스트리 키를 추가 합니다.
 
-    HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15Key LocationPath 문자열 값입니다.:
+    HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15Key: LocationPath 문자열 값입니다.
 
     ISO 셸용:
 
@@ -806,7 +803,7 @@ Visual Studio 콘텐츠 저장소를 만듭니다. Integrated Shell 시나리오
 
     C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio15en-미국
 
-    키: CatalogName 문자열 값: [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] 설명서. ISO 셸에 대 한 카탈로그의 이름입니다.
+    키: CatalogName 문자열 값입니다. [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] 설명서입니다. ISO 셸에 대 한 카탈로그의 이름입니다.
 
 8. (택시 및 MSHC MSHA) 콘텐츠를 로컬 폴더로 복사 합니다.
 

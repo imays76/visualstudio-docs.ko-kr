@@ -1,9 +1,6 @@
 ---
 title: Visual Studio에서 office 및 SharePoint 개발
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -24,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 38291b46f2f9fee83ba9af0ae553cecca5ee35f6
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 76043da9815becd6b5cb25a2117b4ff746d6d242
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671705"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898650"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Visual Studio에서 office 및 SharePoint 개발
   사용자가 [Office 스토어](https://store.office.com/) 또는 조직 카탈로그에서 다운로드하는 간단한 앱 또는 추가 기능이나 컴퓨터에 설치하는 .NET Framework 기반 솔루션을 만들어 Microsoft Office 및 SharePoint를 확장할 수 있습니다.  
@@ -109,5 +106,3 @@ ms.locfileid: "50671705"
 |--------|---------|  
 |SharePoint 솔루션과 SharePoint 추가 기능 비교|[SharePoint 솔루션과 SharePoint 추가 기능 비교](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|  
 |SharePoint 솔루션 만들기|[SharePoint 솔루션 만들기](../sharepoint/create-sharepoint-solutions.md)|  
-  
-  

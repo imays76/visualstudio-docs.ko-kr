@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 16ee7eae30d947e6a83444c8e744cbaca398bf94
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 167d008d2e773e4b3d026d3d196ce80bdbd95b13
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894820"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911652"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>사용자 지정 지시문 처리기 배포
 
@@ -200,6 +199,6 @@ Visual Studio 또는 MSBuild에서 텍스트 템플릿을 변형 하려는 경�
 |클래스|REG_SZ|\<**정규화 된 클래스 이름**>|
 |Assembly|REG_SZ|\<**GAC에 어셈블리 이름**>|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [사용자 지정 T4 텍스트 템플릿 지시문 프로세서 만들기](../modeling/creating-custom-t4-text-template-directive-processors.md)

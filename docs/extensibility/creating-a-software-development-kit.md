@@ -1,9 +1,6 @@
 ---
 title: 소프트웨어 개발 키트 만들기 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dea4acc347094657bdb916a7d5be386dcd54f8ad
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: ea506479226ed8585296208064bd3533cf0a5783
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349558"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922845"
 ---
 # <a name="create-a-software-development-kit"></a>소프트웨어 개발 키트 만들기
 소프트웨어 개발 키트 (SDK)은 Visual Studio에서 단일 항목으로 참조할 수 있는 Api 컬렉션입니다. 합니다 **참조 관리자** 대화 상자는 프로젝트에 관련 된 모든 Sdk를 나열 합니다. 프로젝트에 SDK를 추가 하면 Api는 Visual Studio에서 사용할 수 있습니다.  
@@ -58,9 +55,9 @@ ms.locfileid: "51349558"
 |------------------------| - |
 | *참조* 폴더 | 에 대해 코딩할 수 있는 Api를 포함 하는 이진 파일을 포함 합니다. 이러한 Windows 메타 데이터 (WinMD) 파일 또는 어셈블리에 포함할 수 있습니다. |
 | *DesignTime* 폴더 | 사전-run/디버깅 타임에만 필요한 파일이 포함 됩니다. XML 문서, 라이브러리, 헤더, 도구 상자 디자인 타임 이진 파일, MSBuild 아티팩트 등을 포함 될 수 있습니다 이러한<br /><br /> XML 문서에 이상적으로 배치 하 고는 *\DesignTime* 폴더 하지만 참조에 대 한 XML 문서는 계속 하 여 Visual Studio에서 참조 파일과 함께 배치 합니다. 예를 들어, XML 문서 참조<em>\References\\[구성]\\[arch]\sample.dll</em> 됩니다 *\References\\[구성]\\[arch]\sample.xml*, 해당 문서의 지역화 된 버전 됩니다 *\References\\[구성]\\[arch]\\[locale]\sample.xml*합니다. |
-| *구성* 폴더 | 만 세 개의 폴더가 있을 수 있습니다: *디버그*를 *소매* 및 *CommonConfiguration*합니다. SDK 작성자는 아래에서 해당 파일을 배치할 수 있습니다 *CommonConfiguration* 경우 SDK 파일의 동일한 집합 사용 해야, SDK 소비자의 대상이 되는 구성에 관계 없이 합니다. |
+| *구성* 폴더 | 만 세 개의 폴더가 있을 수 있습니다. *디버그*, *소매* 하 고 *CommonConfiguration*합니다. SDK 작성자는 아래에서 해당 파일을 배치할 수 있습니다 *CommonConfiguration* 경우 SDK 파일의 동일한 집합 사용 해야, SDK 소비자의 대상이 되는 구성에 관계 없이 합니다. |
 | *아키텍처* 폴더 | 지원 되는 모든 *아키텍처* 폴더가 있습니다. Visual Studio는 다음 아키텍처를 지원 합니다: x86, x64, ARM 및 neutral입니다. 참고: Win32, x86에 매핑되고 AnyCPU 중립에 매핑됩니다.<br /><br /> MSBuild 에서만 찾습니다 *\CommonConfiguration\neutral* 플랫폼 Sdk에 대 한 합니다. |
-| *SDKManifest.xml* | 이 파일은 Visual Studio SDK를 사용 해야 하는 방법을 설명 합니다. SDK 매니페스트에서 살펴봅니다 [!INCLUDE[win81](../debugger/includes/win81_md.md)]:<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **표시 이름:** 개체 브라우저 찾아보기 목록에 표시 하는 값입니다.<br /><br /> **PlatformIdentity:** 이 특성의 존재 여부 지시 Visual Studio 및 MSBuild SDK 플랫폼 SDK는 및에서 추가 된 참조를 복사 하지 않아야 함을 로컬로 합니다.<br /><br /> **TargetFramework:** 만 투영 하는이 값에 지정 된 대로 동일한 프레임 워크를 대상으로 하는 되도록 Visual Studio에서이 특성은 사용 특성 SDK를 사용할 수 있습니다.<br /><br /> **MinVSVersion:** 에 적용 되는 Sdk만을 사용 하려면이 특성은 Visual Studio에서 사용 합니다.<br /><br /> **참조:** 이 특성 컨트롤을 포함 하는 참조만 지정 해야 합니다. 에 대 한 참조를 컨트롤에 포함 되는지 여부를 지정 하는 방법에 대 한 내용은 아래 참조 합니다. |
+| *SDKManifest.xml* | 이 파일은 Visual Studio SDK를 사용 해야 하는 방법을 설명 합니다. SDK 매니페스트에서 살펴봅니다 [!INCLUDE[win81](../debugger/includes/win81_md.md)]:<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **표시 이름:** 개체 브라우저 찾아보기 목록에 표시 하는 값입니다.<br /><br /> **PlatformIdentity:** 이 특성의 존재 여부 지시 로컬 Visual Studio 및 MSBuild SDK 플랫폼 SDK는 및에서 추가 된 참조를 복사 하면 안 됩니다.<br /><br /> **TargetFramework:** 이 값에 지정 된 대로 동일한 프레임 워크를 대상으로 하는 프로젝트는 되도록 Visual Studio에서이 특성은 사용 특성 SDK를 사용할 수 있습니다.<br /><br /> **MinVSVersion:** 이 특성에 적용 되는 Sdk만을 사용 하려면 Visual Studio에서 사용 됩니다.<br /><br /> **참조:** 이 특성 컨트롤을 포함 하는 참조만 지정 해야 합니다. 에 대 한 참조를 컨트롤에 포함 되는지 여부를 지정 하는 방법에 대 한 내용은 아래 참조 합니다. |
 
 ##  <a name="ExtensionSDKs"></a> 확장 Sdk  
  다음 섹션에서는 확장 SDK를 배포 하기 위해 수행 해야 합니다.  
@@ -130,7 +127,7 @@ ms.locfileid: "51349558"
 
     XML 참조 문서는 참조 파일과 함께 배치 됩니다. 예를 들어,에 대 한 XML 참조 문서를 *\References\\< 구성\>\\< arch\>\sample.dll* 어셈블리가 *\References\\ < config\>\\< arch\>\sample.xml*, 해당 문서의 지역화 된 버전 이며 *\References\\< config\>\\< arch\>\\< 로캘\>\sample.xml*합니다.  
 
-5. *Configuration* 폴더: 세 개의 하위 폴더: *디버그*를 *소매*, 및 *CommonConfiguration*합니다. SDK 작성자는 아래에서 해당 파일을 배치할 수 있습니다 *CommonConfiguration* 경우 SDK 파일의 동일한 집합 사용 해야, SDK 소비자의 대상 구성에 관계 없이 합니다.  
+5. *구성* 폴더: 세 개의 하위 폴더: *디버그*, *소매*, 및 *CommonConfiguration*합니다. SDK 작성자는 아래에서 해당 파일을 배치할 수 있습니다 *CommonConfiguration* 경우 SDK 파일의 동일한 집합 사용 해야, SDK 소비자의 대상 구성에 관계 없이 합니다.  
 
 6. *아키텍처* 폴더: 다음 아키텍처는 지원: x86, x64, ARM, neutral입니다. Win32, x86에 매핑되고 AnyCPU 중립에 매핑됩니다.  
 
@@ -165,15 +162,15 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
 
 2. ProductFamilyName: 전체 SDK 제품 이름입니다. 예를 들어를 [!INCLUDE[winjs_long](../debugger/includes/winjs_long_md.md)] SDK "Microsoft.WinJS" SDK 제품 패밀리의 동일한 제품군에 속하는 "Microsoft.WinJS.1.0" 및 "Microsoft.WinJS.2.0" 라고 합니다. 이 특성에는 Visual Studio 및 MSBuild 해당 연결을 만들 수 있습니다. 이 특성이 없는 경우 SDK 이름 제품 제품군 이름으로 사용 됩니다.  
 
-3. FrameworkIdentity: 사용 중인 앱의 매니페스트에이 특성의 값을 추가할 하나 이상의 Windows 구성 요소 라이브러리 종속성을 지정 합니다. 이 특성은 Windows 구성 요소 라이브러리에만 적용 됩니다.  
+3. FrameworkIdentity: 이 특성의 값은 소비 응용 프로그램의 매니페스트를 넣을 하나 이상의 Windows 구성 요소 라이브러리 종속성을 지정 합니다. 이 특성은 Windows 구성 요소 라이브러리에만 적용 됩니다.  
 
 4. TargetFramework: 참조 관리자 및 도구 상자에서 사용할 수 있는 Sdk를 지정 합니다. 예를 들어 이것은 대상 프레임 워크 모니커의 목록을 세미콜론으로 구분 된 ".NET Framework, 버전 = v2.0;.NET Framework, 버전 v4.5.1 =". 여러 버전의 동일한 대상 프레임 워크의 지정 된 경우 참조 관리자는 필터링 용도로 지정된 된 가장 낮은 버전을 사용 합니다. 예를 들어 경우 ".NET Framework, 버전 v2.0; = 버전,.NET Framework v4.5.1 ="를 지정 하면 참조 관리자를 사용 하 여 ".NET Framework, 버전 v2.0 =". 특정 대상 프레임 워크 프로필을 지정 된 경우 해당 프로필에만 필터링 목적으로 하는 것에 대 한 참조 매니저가 사용 됩니다. 예를 들어, "Silverlight 버전 v4.0, 프로필 = WindowsPhone =" 지정 된 참조 관리자에만 Windows Phone 프로필에 대 한 필터 전체 Silverlight 4.0 Framework를 대상으로 프로젝트 참조 관리자에서 SDK를 표시 하지 않습니다.  
 
 5. MinVSVersion: 최소 Visual Studio 버전입니다.  
 
-6. MaxPlatformVerson: 최대 대상 플랫폼 버전을 사용해 확장 SDK가 작동 하지는 플랫폼 버전을 지정 합니다. 예를 들어, Microsoft Visual c + + 런타임 패키지 v11.0만 Windows 8 프로젝트에서 참조 해야 합니다. 따라서 Windows 8 프로젝트의 MaxPlatformVersion 8.0입니다. 즉, Windows 8.1 프로젝트의 경우 필터링 된 Microsoft Visual c + + 런타임 패키지 참조 관리자 오류를 throw 하는 MSBuild 때를 [!INCLUDE[win81](../debugger/includes/win81_md.md)] 프로젝트에서 참조 합니다. 참고:이 요소는 지원부터 [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)]합니다.  
+6. MaxPlatformVerson: 최대 대상 플랫폼 버전 확장 SDK가 작동 하지는 플랫폼 버전을 지정 하는 것 같습니다. 예를 들어, Microsoft Visual c + + 런타임 패키지 v11.0만 Windows 8 프로젝트에서 참조 해야 합니다. 따라서 Windows 8 프로젝트의 MaxPlatformVersion 8.0입니다. 즉, Windows 8.1 프로젝트의 경우 필터링 된 Microsoft Visual c + + 런타임 패키지 참조 관리자 오류를 throw 하는 MSBuild 때를 [!INCLUDE[win81](../debugger/includes/win81_md.md)] 프로젝트에서 참조 합니다. 참고:이 요소는 지원부터 [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)]합니다.  
 
-7. AppliesTo: 적용 되는 Visual Studio 프로젝트 유형을 지정 하 여 참조 관리자에서 사용할 수 있는 Sdk를 지정 합니다. 9 개의 값은 인식: WindowsAppContainer, VisualC, VB, CSharp, WindowsXAML, JavaScript, 관리 되는, 및 네이티브 합니다. SDK 작성자가 사용할 수 있습니다 하 고 ("+'), 또는 ("&#124;")가 아닌 ("! ") 정확 하 게 SDK에 적용 되는 프로젝트 형식의 범위를 지정 하는 연산자입니다.  
+7. AppliesTo: 적용 되는 Visual Studio 프로젝트 유형을 지정 하 여 참조 관리자에서 사용할 수 있는 Sdk를 지정 합니다. 9 개의 값이 인식 됩니다. WindowsAppContainer VisualC, VB, CSharp, WindowsXAML, JavaScript, 관리 및 네이티브 합니다. SDK 작성자가 사용할 수 있습니다 하 고 ("+'), 또는 ("&#124;")가 아닌 ("! ") 정확 하 게 SDK에 적용 되는 프로젝트 형식의 범위를 지정 하는 연산자입니다.  
 
     프로젝트를 식별 하는 WindowsAppContainer [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 앱.  
 
@@ -181,19 +178,19 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
 
 9. SupportedArchitectures: 세미콜론으로 구분한 목록 SDK에서 지 원하는 아키텍처입니다. MSBuild 대상된 SDK 아키텍처를 사용 하는 프로젝트에서 지원 되지 않는 경우 경고를 표시 합니다. 이 특성을 지정 하지 않으면 MSBuild는이 유형의 경고를 표시 되지 않습니다.  
 
-10. SupportsMultipleVersions:이 특성 설정 된 경우 **오류** 또는 **경고**, 동일한 프로젝트 같은 SDK 제품군의 여러 버전을 참조할 수 없습니다는 MSBuild 나타냅니다. 이 특성이 존재 하지 않거나로 설정 된 경우 **허용**, MSBuild는 이러한 유형의 오류 또는 경고가 표시 되지 않습니다.  
+10. SupportsMultipleVersions: 이 특성이로 설정 된 경우 **오류** 하거나 **경고**, 동일한 프로젝트 같은 SDK 제품군의 여러 버전을 참조할 수 없습니다는 MSBuild 나타냅니다. 이 특성이 존재 하지 않거나로 설정 된 경우 **허용**, MSBuild는 이러한 유형의 오류 또는 경고가 표시 되지 않습니다.  
 
-11. AppX: 디스크에서 Windows 구성 요소 라이브러리에 대 한 앱 패키지의 경로 지정합니다. 이 값은 로컬 디버깅 하는 동안 Windows 구성 요소 라이브러리의 등록 구성 요소에 전달 됩니다. 파일 이름에 대 한 명명 규칙은  *\<회사 >.\< 제품 >. \<아키텍처 >. \<구성 >. \<버전 >.appx*합니다. 구성 및 아키텍처는 Windows 구성 요소 라이브러리를 적용 하지는 선택적 특성 이름과 특성 값입니다. 이 값은 Windows 구성 요소 라이브러리에만 적용 됩니다.  
+11. AppX: 디스크에서 Windows 구성 요소 라이브러리에 대 한 앱 패키지에 대 한 경로 지정합니다. 이 값은 로컬 디버깅 하는 동안 Windows 구성 요소 라이브러리의 등록 구성 요소에 전달 됩니다. 파일 이름에 대 한 명명 규칙은  *\<회사 >.\< 제품 >. \<아키텍처 >. \<구성 >. \<버전 >.appx*합니다. 구성 및 아키텍처는 Windows 구성 요소 라이브러리를 적용 하지는 선택적 특성 이름과 특성 값입니다. 이 값은 Windows 구성 요소 라이브러리에만 적용 됩니다.  
 
-12. CopyRedistToSubDirectory: 위치를 지정에 있는 파일을 *\redist* 앱 패키지 루트에 상대적인 폴더를 복사할 (즉,는 **패키지 위치** 에서 선택한는 **앱 만들기 패키지** 마법사) 및 런타임 레이아웃 루트입니다. 기본 위치는 앱 패키지의 루트 및 **F5** 레이아웃 합니다.  
+12. CopyRedistToSubDirectory: 위치를 지정에 있는 파일을 *\redist* 앱 패키지 루트에 상대적인 폴더를 복사할 (즉,는 **패키지 위치** 에서 선택한를 **앱 패키지 만들기** 마법사) 및 런타임 레이아웃 루트입니다. 기본 위치는 앱 패키지의 루트 및 **F5** 레이아웃 합니다.  
 
-13. DependsOn:이 SDK가 종속 된 Sdk를 정의 하는 SDK id의 목록입니다. 이 특성은 참조 관리자의 세부 정보 창에 나타납니다.  
+13. DependsOn: 이 SDK가 종속 된 Sdk를 정의 하는 SDK id의 목록입니다. 이 특성은 참조 관리자의 세부 정보 창에 나타납니다.  
 
-14. MoreInfo: 도움말 및 자세한 정보를 제공 하는 웹 페이지에 대 한 URL입니다. 이 값은 참조 관리자의 오른쪽 창에서 자세한 정보 링크에 사용 됩니다.  
+14. MoreInfo: 도움말 및 자세한 정보를 제공 하는 웹 페이지 URL입니다. 이 값은 참조 관리자의 오른쪽 창에서 자세한 정보 링크에 사용 됩니다.  
 
-15. 등록 유형: 앱 매니페스트에서 WinMD 등록 지정 되며 누구 구현이 DLL는 네이티브 WinMD에 대 한 필요 합니다.  
+15. 등록 유형: WinMD 등록 응용 프로그램 매니페스트에서 지정 하며 누구 구현이 DLL는 네이티브 WinMD에 대 한 필요 합니다.  
 
-16. 파일 참조: 네이티브 Winmd 또는 컨트롤을 포함 하는 참조만 지정 합니다. 참조를 컨트롤에 포함 되는지 여부를 지정 하는 방법에 대 한 정보를 참조 하세요 [도구 상자 항목의 위치를 지정](#ToolboxItems) 아래.  
+16. 파일 참조: 컨트롤이 포함 된 네이티브 Winmd 참조만 지정 합니다. 참조를 컨트롤에 포함 되는지 여부를 지정 하는 방법에 대 한 정보를 참조 하세요 [도구 상자 항목의 위치를 지정](#ToolboxItems) 아래.  
 
 ##  <a name="ToolboxItems"></a> 도구 상자 항목의 위치를 지정 합니다.  
  ToolBoxItems 요소의 합니다 *SDKManifest.xml* 플랫폼 및 확장 Sdk의 도구 상자 항목의 위치와 범주를 지정 하는 스키마입니다. 다음 예제에서는 서로 다른 위치를 지정 하는 방법을 보여 줍니다. WinMD 또는 DLL에 대 한 참조에 적용 됩니다.  
@@ -266,7 +263,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>  
     ```  
 
-## <a name="see-also"></a>참고자료  
- [연습: c + +를 사용 하 여 SDK 만들기](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
- [연습: C# 또는 Visual Basic을 사용 하 여 SDK 만들기](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)   
+## <a name="see-also"></a>참고 항목  
+ [연습: C + +를 사용 하 여 SDK 만들기](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
+ [연습: 사용 하 여 SDK 만들기 C# 또는 Visual Basic](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)   
  [프로젝트에서 참조 관리](../ide/managing-references-in-a-project.md)

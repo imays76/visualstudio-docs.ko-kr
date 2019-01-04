@@ -1,9 +1,6 @@
 ---
 title: '방법: Word 문서에 책갈피 컨트롤 추가'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.Bookmark.Dialog
@@ -19,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0e58525d20efe17d24cd916b5e9eff79c7da59d7
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 5c89e922f41104be880d598354440a4c6665a39e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647792"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904814"
 ---
 # <a name="how-to-add-bookmark-controls-to-word-documents"></a>방법: Word 문서에 책갈피 컨트롤 추가
   문서 수준 프로젝트에 추가할 수 있습니다 <xref:Microsoft.Office.Tools.Word.Bookmark> 디자인 타임 또는 런타임에 프로젝트의 문서에 컨트롤을 합니다. VSTO 추가 기능 프로젝트에 추가할 수 있습니다 <xref:Microsoft.Office.Tools.Word.Bookmark> 런타임에 열려 있는 문서에 컨트롤입니다.  
@@ -128,7 +125,7 @@ ms.locfileid: "53647792"
      [!code-vb[Trin_WordAddInDynamicControls#5](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#5)]
      [!code-csharp[Trin_WordAddInDynamicControls#5](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#5)]  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [확장 된 개체를 사용 하 여 Word 자동화](../vsto/automating-word-by-using-extended-objects.md)   
  [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)   
  [런타임에 Office 문서에 컨트롤 추가](../vsto/adding-controls-to-office-documents-at-run-time.md)   
@@ -136,5 +133,3 @@ ms.locfileid: "53647792"
  [VSTO 추가 기능 프로그래밍](../vsto/programming-vsto-add-ins.md)   
  [문서 수준 사용자 지정 프로그래밍](../vsto/programming-document-level-customizations.md)   
  [방법: 책갈피 컨트롤 크기 조정](../vsto/how-to-resize-bookmark-controls.md)  
-  
-  

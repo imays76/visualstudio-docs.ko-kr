@@ -1,9 +1,6 @@
 ---
 title: Visual Studio의 일반 컨트롤 패턴 | Microsoft Docs
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e10fdcea9819c34735f285c78a0e2ebb0650f64a
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 5c281aa989abc32e4287e49d05af03b198adc013
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512319"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832637"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Visual Studio의 일반 컨트롤 패턴
 ##  <a name="BKMK_CommonControls"></a> 공용 컨트롤  
@@ -69,7 +66,7 @@ ms.locfileid: "39512319"
   
 -   필드 있어야 하는 데 필요한  **\<필요한 >** 내에서 워터 마크으로 합니다. 드문 경우를 제외 하 고 배경색을 변경 하지 않아야.  
   
--   유효성 검사 오류: 참조 [Visual Studio의 알림 및 진행률](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)  
+-   오류가 유효성 검사: 참조 [Visual Studio의 알림 및 진행률](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)  
   
 -   입력된 필드 표시 된 창의 너비에 맞게 하지도 임의로 경로 같은 긴 필드의 길이 일치 하는 내용에 맞게 크기를 조정 해야 합니다. 길이 제한 횟수 문자는 필드에 허용 하는 것에 대 한 사용자에 게 표시를 수 있습니다.  
   
@@ -371,7 +368,7 @@ Visual Studio에서 대부분의 단추 유틸리티 대화 상자에 나타나�
 ##### <a name="tree-view-control"></a>트리 뷰 컨트롤  
 Visual Studio 트리 컨트롤 일반적인 키보드 탐색을 수행 해야 합니다.  
   
--   **위쪽 화살표:** 트리에서 위로 이동 하 여 항목을 선택 합니다.  
+-   **위쪽 화살표:** 트리를 이동 하 여 항목을 선택 합니다.  
   
 -   **아래쪽 화살표:** 트리 아래로 이동 하 여 항목을 선택 합니다.  
   
@@ -379,15 +376,15 @@ Visual Studio 트리 컨트롤 일반적인 키보드 탐색을 수행 해야 �
   
 -   **왼쪽된 화살표:** 트리에서 노드를 축소  
   
--   **키 입력:** 시작, 로드, 선택한 항목 실행  
+-   **키를 입력 합니다.** 시작, 로드, 선택한 항목 실행  
   
 ##### <a name="trid-tree-view-and-grid-view"></a>Trid (트리 보기 및 그리드 보기)  
 Trid 컨트롤은 grid에서 트리 뷰를 포함 하는 복잡 한 컨트롤입니다. 확장, 축소 및 트리를 탐색한 다음 내용을 추가 하 여 트리 뷰로 동일한 키보드 명령을 따라야 합니다.  
   
 -   **오른쪽 화살표:** 노드를 확장 합니다. 노드가 확장 된 후 지속 되는 가장 가까운 열 오른쪽으로 이동 합니다. 행의 끝에서 탐색 중지 해야 합니다.  
   
--   **탭:** Navigates 가장 가까운 셀 오른쪽에 있습니다.  행의 끝을 탐색 다음 행으로 계속 됩니다.  
+-   **탭:** 오른쪽에 가장 가까운 셀으로 이동합니다.  행의 끝을 탐색 다음 행으로 계속 됩니다.  
   
--   **Shift + Tab:** Navigates 가장 가까운 셀 왼쪽에 있습니다.  행의 부분을 탐색 이전 행의 오른쪽에 있는 셀을 계속합니다.  
+-   **Shift + Tab:** 왼쪽의 가장 가까운 셀으로 이동합니다.  행의 부분을 탐색 이전 행의 오른쪽에 있는 셀을 계속합니다.  
   
 ![Visual Studio의 trid 컨트롤](../../extensibility/ux-guidelines/media/070705-6_trid.png "070705 6_Trid")<br />Visual Studio의 trid 컨트롤

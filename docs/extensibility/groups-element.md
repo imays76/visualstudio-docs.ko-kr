@@ -1,9 +1,6 @@
 ---
 title: Groups 요소 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Groups
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 816716cb269df331b17c0ef01a26dbae4a389c76
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8a8a7d17161b6d14926232f66905d7556a244e29
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895433"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874552"
 ---
 # <a name="groups-element"></a>Groups 요소
 VSPackage의 명령 그룹을 정의 하는 항목을 포함 합니다.  
@@ -65,6 +62,6 @@ VSPackage의 명령 그룹을 정의 하는 항목을 포함 합니다.
 </Groups>  
 ```  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Vspackage에서 사용자 인터페이스 요소를 추가 하는 방법](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)

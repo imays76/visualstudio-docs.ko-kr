@@ -1,9 +1,6 @@
 ---
 title: 포트 공급자 구현 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], implementing port suppliers
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cdde98a85175692ed4717c8a9af0b26799c35214
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: cd068f9c669b898ac3d29dadccffb6edd1e0c783
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39233037"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985526"
 ---
 # <a name="implement-a-port-supplier"></a>포트 공급자 구현
 포트 공급자 세션 디버그 관리자 (SDM)에 대 한 요청 포트를 제공합니다. 포트 공급자를 비 DCOM 컴퓨터 또는 새 장치를 지원 해야 하는 경우에 디버그할 때 구현 되어야 합니다. 예를 들어 휴대 전화에 디버깅을 제공 하려면 (아마도 통해 IR 또는 셀 연결) 들의 휴대 전화에 연결 및 프로세스와 휴대폰에서 실행 중인 프로그램을 열거 하는 포트를 제공 하는 포트 공급자를 설정할 수 있습니다.  
@@ -37,5 +34,5 @@ ms.locfileid: "39233037"
  [디버거 개념](../../extensibility/debugger/debugger-concepts.md)  
  기본 디버깅 아키텍처 개념을 설명합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Visual Studio 디버거 확장성](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

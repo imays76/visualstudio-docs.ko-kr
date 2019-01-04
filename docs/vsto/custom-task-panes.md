@@ -1,9 +1,6 @@
 ---
 title: 사용자 지정 작업창
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -28,12 +25,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 79384ac86afe15afda8e6c99e15a519e66302014
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: a3bb4f99c4a77a398cb1f5e3765ee6353a367fb7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648270"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923155"
 ---
 # <a name="custom-task-panes"></a>사용자 지정 작업창
   작업창은 일반적으로 Microsoft Office 응용 프로그램에서 창의 한쪽에 도킹된 사용자 인터페이스 패널입니다. 사용자 지정 작업창을 사용하면 사용자 고유의 작업창을 만들고 사용자에게 솔루션 기능에 액세스하기 위한 친숙한 인터페이스를 제공할 수 있습니다. 예를 들어 인터페이스에는 문서를 수정하거나 데이터 소스의 데이터를 표시하는 코드를 실행하는 컨트롤이 포함될 수 있습니다.  
@@ -117,7 +114,7 @@ ms.locfileid: "53648270"
   
  다음 표에서는 사용자 지정 작업창에 대한 사용자 변경 내용에 응답하기 위해 처리할 수 있는 이벤트를 보여 줍니다.  
   
-|작업|이벤트(event)|  
+|작업|이벤트|  
 |----------|-----------|  
 |사용자가 작업창의 위치를 변경할 때 응답|<xref:Microsoft.Office.Tools.CustomTaskPane.DockPositionChanged>|  
 |사용자 작업창을 숨기거나 표시되도록 설정할 때 응답|<xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged>|  

@@ -1,9 +1,6 @@
 ---
 title: '방법: 표준 편집기 열기 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], opening
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e740cdbb04a9b20ddb5a9d0465434333dd29264
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: fbc4c694dcaa39e61eef484f018204474e67dd7a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639385"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820347"
 ---
 # <a name="how-to-open-standard-editors"></a>방법: 표준 편집기 열기
 표준 편집기를 열면 IDE 파일에 대 한 프로젝트별 편집기를 지정 하는 대신 지정 된 파일 형식에 대해 표준 편집기를 확인 하 게 있습니다.  
@@ -52,7 +49,7 @@ ms.locfileid: "39639385"
   
      개체를 호출 하 여 해당 데이터를 사용 하 여 초기화 문서 뷰 개체를 문서 보기 창 프레임에 성공적으로 배치 된, 경우 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.LoadDocData%2A>합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>   
  [열기 및 프로젝트 항목 저장](../extensibility/internals/opening-and-saving-project-items.md)   
  [방법: 프로젝트별 편집기 열기](../extensibility/how-to-open-project-specific-editors.md)   

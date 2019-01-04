@@ -1,9 +1,6 @@
 ---
 title: IDebugParsedExpression::EvaluateSync | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugParsedExpression::EvaluateSync
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cdf9fa9057e946d68da9f1e02d5aaf90b34e569a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f855fd8407c3f4846ee98e10e813fdc2bd387845
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931768"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855353"
 ---
 # <a name="idebugparsedexpressionevaluatesync"></a>IDebugParsedExpression::EvaluateSync
 이 메서드는 구문 분석 된 식을 계산 하 고 필요에 따라 다른 데이터 형식으로 결과 캐스팅 합니다.  
@@ -28,7 +25,7 @@ ms.locfileid: "49931768"
 ## <a name="syntax"></a>구문  
   
 ```cpp  
-HRESULT EvaluateSync(   
+HRESULT EvaluateSync(   
    DWORD                 dwEvalFlags,  
    DWORD                 dwTimeout,  
    IDebugSymbolProvider* pSymbolProvider,  

@@ -1,9 +1,6 @@
 ---
 title: 선택 컨텍스트 개체 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - selection, tracking
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f09bcb260f4edd09045f860ed08d951622e54a5d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 22a57c07be39a4867f746c7f5f5dfe844daab69b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913165"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878616"
 ---
 # <a name="selection-context-objects"></a>선택 컨텍스트 개체
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 통합된 개발 환경 (IDE) 전역 선택 컨텍스트 개체를 사용 하 여 IDE에서 표시 되어야 할 사항을 결정 합니다. IDE의 각 창 전역 선택 컨텍스트에 푸시된 자체 선택 컨텍스트 개체를 가질 수 있습니다. IDE는 해당 창에 포커스가 있는 경우 창에서 값을 사용 하 여 전역 선택 항목 컨텍스트를 업데이트 합니다. 자세한 내용은 [사용자에 게 피드백](../../extensibility/internals/feedback-to-the-user.md)합니다.  

@@ -1,9 +1,6 @@
 ---
 title: 에서 데이터 Office 솔루션 연습
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b56e17ca04d4c712058e20bd4f644b80e47cd2f7
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: aff3712e9c2c3fdf68e575abf6c3a3bdafafcf53
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647312"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829036"
 ---
 # <a name="data-in-office-solutions-walkthroughs"></a>에서 데이터 Office 솔루션 연습
   다음 연습에서는 Microsoft Office Word 및 Microsoft Office Excel용 문서 수준 사용자 지정 및 VSTO 추가 기능 데이터로 작업하는 방법을 보여 줍니다.  
@@ -70,5 +67,3 @@ ms.locfileid: "53647312"
  [시작 &#40;Visual Studio에서 Office 개발&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Office 프로그래밍의 일반적인 작업](../vsto/common-tasks-in-office-programming.md)   
  [Office 솔루션을 만들고 디자인](../vsto/designing-and-creating-office-solutions.md)  
-  
-  

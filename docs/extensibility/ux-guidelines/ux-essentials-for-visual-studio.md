@@ -1,9 +1,6 @@
 ---
 title: Visual Studio 용 UX Essentials | Microsoft Docs
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37d2942e64a4c964ad696d1eb2c0d4bf3c777b87
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6cd0824d245e835159e3887ce7286b2e55876ba3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848594"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874874"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Visual Studio 용 UX Essentials
 ## <a name="best-practices"></a>최선의 구현 방법  
@@ -63,7 +60,7 @@ ms.locfileid: "49848594"
  - 초기 대화 높이 있어야 **700 픽셀 보다 작은**이므로 96dpi에서 IDE 프레임의 최소 해상도 맞게 합니다.
   
 ### <a name="high-density-displays"></a>고밀도 표시  
- Visual Studio의 UI는 모든 DPI 배율 인수 기본적으로 지 원하는 Windows에서 잘 작동 해야 합니다: 150%, 200%에 만들어지고 250%입니다.  
+ Visual Studio의 UI는 모든 DPI 배율 기본적으로 지 원하는 Windows에서 잘 작동 해야 합니다. 150%, 200%에 만들어지고 250%입니다.  
   
 ## <a name="anti-patterns"></a>안티패턴  
  Visual Studio는 지침 및 모범 사례는 UI의 많은 예제를 포함 합니다. 일관성을 유지 하기 위해, 개발자는 종종 작성 하는 유사한 제품 UI 디자인 패턴에서 차용 합니다. 이 사용 하면 사용자 상호 작용 및 시각 디자인의 일관성을 드라이브 우리를 수행할 경우에 따라 제공 하는 기능 우선 순위 지정을 제거 하거나 일정 제약 조건으로 인해 지침을 충족 하지 않는 몇 가지 세부 정보를 사용 하 여 좋은 방법입니다. 이러한 경우에 하지 팀이 이러한 "안티 패턴" 중 하나를 복사 하므로 Visual Studio 환경 내에서 잘못 되었거나 일관 되지 않은 UI 급부상 하 고 있습니다.  
@@ -79,7 +76,7 @@ ms.locfileid: "49848594"
 #### <a name="anti-pattern-solution"></a>안티패턴 솔루션  
  사용자가 작업을 시작 하는 즉시 및 이러한 작업을 완료 하기 전에 즉시 구성 해야 하는 영역 옆에 있는 중요 한 중지 아이콘을 배치 합니다.  
   
-#### <a name="example-manifest-designer-declarations"></a>예: 매니페스트 디자이너 선언  
+#### <a name="example-manifest-designer-declarations"></a>예제: 매니페스트 디자이너 선언  
  선언 목록에 즉시 추가 사용자 필수 속성이 설정 될 때까지 유지 하는 오류 상태에 배치 됩니다.  
   
  이 경우 있습니다 이므로 추가 문제는 경고에 사용 되는 아이콘을 포함 한 "&times;" 아이콘을 그 옆에 있는 일반적인 제거 아이콘을 사용할 수 없습니다. 결과적으로, UI 컨트롤을 더 이상 사용 하지 않게 제거 단추를 사용합니다.  
@@ -124,11 +121,11 @@ UI를 해제 하기 전에 설명 텍스트를 읽을 수 있습니다를 강제
   
  에 표시 된 대로 약간 더 나은 하지만 여전히 바람직하지 도구 모음에서이 유형의 설정 배치 됩니다 **그림 B**합니다. 분할 단추 적은 공간을 차지 하 고 드롭다운을 통해 개선 되므로, 모두 디자인 여전히 사용 하 여 도구 모음 명령을 실제로 그리 승격 합니다.  
  
- ![그림 b: Better, 있지만 명령 모음 안티패턴](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "Commandbaranti-패턴-FigureB")<br />그림 b: 좀 나아 보이긴 하지만 여전히를 명령 모음 안티패턴
+ ![그림 b: Better, 있지만 명령 모음 안티패턴](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "Commandbaranti-패턴-FigureB")<br />그림 b: Better, 있지만 명령 모음 안티패턴
  
   에 표시 된 올바른 접근 방식에서 **그림 C**, 설정을 일련의 명령에 연결 됩니다. 설정할 전역 설정은 없습니다 및 방금 4 개 명령은 간에 전환 하는 것입니다. 도구 모음에서 명령을 허용 되는 경우에만입니다. 
 
- ![C: 그림 Visual Studio 명령 모음 패턴의 사용을 수정 하](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurec.png "Commandbaranti-패턴-FigureC")<br />그림 c: 올바른 Visual Studio 명령 모음 패턴 사용
+ ![그림 c: Visual Studio 명령 모음 패턴의 올바른 사용 방법](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurec.png "Commandbaranti-패턴-FigureC")<br />그림 c: Visual Studio 명령 모음 패턴의 올바른 사용
    
 ### <a name="control-anti-patterns"></a>컨트롤 안티패턴  
  몇 가지 안티패턴은 단순히 잘못 된 사용 또는 프레젠테이션 컨트롤 또는 컨트롤 그룹입니다.  
@@ -156,7 +153,7 @@ UI를 해제 하기 전에 설명 텍스트를 읽을 수 있습니다를 강제
   
    ![무시 컬러 서비스와 "자세한 내용을 보려면" 대 한 하이퍼링크를 사용 하 여 Visual Studio 안티 패턴입니다. ](../../extensibility/ux-guidelines/media/0102-j_hyperlinkincorrect.png "0102 j_HyperlinkIncorrect")<br />무시 컬러 서비스와 "자세한 내용을 보려면" 대 한 하이퍼링크를 사용 하 여 Visual Studio 안티 패턴입니다.  
   
-   **향상 된 솔루션:** 링크를 클릭 하 여 사용자 요청 하는 질문을 제기 합니다.  
+   **더 나은 솔루션:** 링크를 클릭 하 여 사용자 요청 하는 질문을 제기 합니다.  
   
 -   Windows Azure 서비스는 어떻게 작동 하나요?  
   
@@ -167,4 +164,4 @@ UI를 해제 하기 전에 설명 텍스트를 읽을 수 있습니다를 강제
   
  **잘못 된:** "여기를 클릭 새 프로젝트를 만드는 방법에 대 한 지침은."
   
- **Good:** "새 프로젝트를 어떻게 만들 수행?"
+ **좋은:** "새 프로젝트를 어떻게 만들 수행"?

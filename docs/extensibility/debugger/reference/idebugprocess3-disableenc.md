@@ -1,9 +1,6 @@
 ---
 title: IDebugProcess3::DisableENC | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProcess3::DisableENC
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc769e7386777dbf59dadbbe93b53bc9cac01ce0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c8d440783dbd6112e6f9918cd22388b4b8efbff0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875868"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921193"
 ---
 # <a name="idebugprocess3disableenc"></a>IDebugProcess3::DisableENC
 이 메서드가 명시적으로 편집 하며 계속 하기가 비활성화가이 프로세스에 대 한 포함 하는 모든 프로그램. 사용자 지정 포트 공급자는 항상 반환 `E_NOTIMPL`합니다.  
@@ -28,8 +25,8 @@ ms.locfileid: "49875868"
 ## <a name="syntax"></a>구문  
   
 ```cpp  
-HRESULT DisableENC(  
-   EncUnavailableReason reason  
+HRESULT DisableENC(  
+   EncUnavailableReason reason  
 );  
 ```  
   

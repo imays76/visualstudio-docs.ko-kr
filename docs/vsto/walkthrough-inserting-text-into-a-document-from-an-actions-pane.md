@@ -1,9 +1,6 @@
 ---
-title: '연습: 작업창에서 문서로 텍스트 삽입'
-ms.custom: ''
+title: '연습: 작업 창에서 문서로 텍스트 삽입'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b3b9683c5f41b81d529ad6f3347b54131f32f011
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 4e868f8639aa8803e1ba9631bf46929bc917be3f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948727"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943092"
 ---
-# <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>연습: 작업창에서 문서로 텍스트 삽입
+# <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>연습: 작업 창에서 문서로 텍스트 삽입
   이 연습에는 Microsoft Office Word 문서에서 작업창을 만드는 방법을 보여 줍니다. 작업 창에는 두 개의 입력을 수집 하 고 다음 문서에 텍스트를 보낼 포함 되어 있습니다.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -51,7 +48,7 @@ ms.locfileid: "51948727"
   
 ### <a name="to-create-a-new-project"></a>새 프로젝트를 만들려면  
   
-1.  이름을 사용 하 여 Word 문서 프로젝트를 만듭니다 **작업창 내 기본**입니다. 마법사에서 선택 **새 문서 만들기**합니다. 자세한 내용은 [방법: Visual Studio에서 만드는 Office 프로젝트](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
+1.  이름을 사용 하 여 Word 문서 프로젝트를 만듭니다 **작업창 내 기본**입니다. 마법사에서 선택 **새 문서 만들기**합니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
   
      Visual Studio 디자이너에서 새 Word 문서가 열리고 추가 합니다 **내 기본 작업창** 프로젝트가 **솔루션 탐색기**.  
   
@@ -66,7 +63,7 @@ ms.locfileid: "51948727"
   
     **이름**  
   
-    **주소**  
+    **Address**  
   
     **이 Word에서 기본 작업창의 예입니다.**  
   
@@ -164,7 +161,7 @@ ms.locfileid: "51948727"
      [!code-csharp[Trin_VstcoreActionsPaneWord#11](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#11)]
      [!code-vb[Trin_VstcoreActionsPaneWord#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#11)]  
   
-## <a name="test-the-application"></a>응용 프로그램 테스트  
+## <a name="test-the-application"></a>애플리케이션 테스트  
  작업 창이 열리고 문서가 열릴 때 단추를 클릭할 때 책갈피에 삽입은 텍스트 상자에 입력 된 텍스트가 있는지 확인 하려면 문서를 테스트 합니다.  
   
 ### <a name="to-test-your-document"></a>문서를 테스트하려면  
@@ -182,11 +179,9 @@ ms.locfileid: "51948727"
   
 -   작업 창의 컨트롤에 데이터를 바인딩하십시오. 자세한 내용은 [연습: Word 작업 창의 컨트롤에 데이터 바인딩할](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [작업 창 개요](../vsto/actions-pane-overview.md)   
- [방법: Word 문서에 작업창을 추가 하거나 Excel 통합 문서](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
+ [방법: Word 문서 또는 Excel 통합 문서에 작업 창 추가](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
  [방법: Excel 통합 문서에 작업 창 추가](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100))   
  [방법: 작업 창에서 컨트롤 레이아웃 관리](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
  [Bookmark 컨트롤](../vsto/bookmark-control.md)  
-  
-  

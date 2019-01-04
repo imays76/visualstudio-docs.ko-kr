@@ -1,9 +1,6 @@
 ---
 title: 프로젝트 형식 등록 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], new project registry entries
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1839ed51b3bd8b26bd67583054fa142f5853a2de
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2e3c5aa9dd5784f6d987a433b0f402547e8f7d8b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939686"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826389"
 ---
 # <a name="registering-a-project-type"></a>프로젝트 형식 등록
 레지스트리 항목을 사용 하도록 설정 하는 새 프로젝트 형식을 만들면 만들어야 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 인식 및 프로젝트 형식을 사용 하 여 작동 합니다. 일반적으로 레지스트리 스크립트 (.rgs) 파일을 사용 하 여 이러한 레지스트리 항목을 만듭니다.  
@@ -66,7 +63,7 @@ ms.locfileid: "49939686"
 ```  
 \{ACEF4EB2-57CF-11D2-96F4-000000000000} (The CLSID for the VSPackage)  
    @="FigPrj Project Package"  
-   "InprocServer32"="9.0<Visual Studio SDK installation path>\\VSIntegration\\Archive\\FigPkgs\\FigPrj\\                      Debug\\FigPrj.dll"  
+   "InprocServer32"="9.0<Visual Studio SDK installation path>\\VSIntegration\\Archive\\FigPkgs\\FigPrj\\                      Debug\\FigPrj.dll"  
    "CompanyName"="Microsoft"  
    "ProductName"="Figure Project Sample"  
    "ProductVersion"="9.0"  
@@ -105,12 +102,12 @@ ms.locfileid: "49939686"
    @="FigPrj Project"  
    "DisplayName"="#2"  
    "Package"="{ACEF4EB2-57CF-11D2-96F4-000000000000}"  
-   "ProjectTemplatesDir"="C:\\Program Files\\VSIP 9.0\\EnvSDK\\FigPkgs\\                           FigPrj\\FigPrjProjects"  
-   "ItemTemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                           FigPrjProjectItems"  
+   "ProjectTemplatesDir"="C:\\Program Files\\VSIP 9.0\\EnvSDK\\FigPkgs\\                           FigPrj\\FigPrjProjects"  
+   "ItemTemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                           FigPrjProjectItems"  
    "DisplayProjectFileExtensions"="#3"  
    "PossibleProjectExtensions"="figp"  
    "DefaultProjectExtension"=".figp"  
-\{C061DB26-5833-11D2-96F5-000000000000}\Filters\1       (Folder 1 contains settings for Open Files filters.)  
+\{C061DB26-5833-11D2-96F5-000000000000}\Filters\1       (Folder 1 contains settings for Open Files filters.)  
    @="#4"  
    "CommonOpenFilesFilter"=dword:00000000  
    "CommonFindFilesFilter"=dword:00000000  
@@ -129,7 +126,7 @@ ms.locfileid: "49939686"
    "SortPriority"=dword:000003e8  
 \{C061DB26-5833-11D2-96F5-000000000000}\AddItemTemplates\TemplateDirs\ {ACEF4EB2-57CF-11D2-96F4-000000000000}\1 (Second GUID indicates the registered project type for the Add Items templates.)  
    @="#6"  
-   "TemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                    FigPrjProjectItems"  
+   "TemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                    FigPrjProjectItems"  
    "SortPriority"=dword:00000064  
 ```  
   
@@ -190,7 +187,7 @@ ms.locfileid: "49939686"
 \AddItemTemplates\TemplateDirs\{ACEF4EB2-57CF-11D2-96F4-000000000000}\1  
                                  (CLSID for Figures Project projects)  
    @="#6"  
-   "TemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                    FigPrjProjectItems"  
+   "TemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                    FigPrjProjectItems"  
    "SortPriority"=dword:00000064  
 ```  
   
@@ -230,7 +227,7 @@ ms.locfileid: "49939686"
  다음 예제에서는 모든 레지스트리 키 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\NewProjectTemplates] 아래에 있습니다.  
   
 ```  
-\TemplateDirs\{ACEF4EB2-57CF-11D2-96F4-000000000000}\1                (CLSID for Figures Project projects)  
+\TemplateDirs\{ACEF4EB2-57CF-11D2-96F4-000000000000}\1                (CLSID for Figures Project projects)  
    @="#7"  
    "TemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\FigPrjProjects"  
    "SortPriority"=dword:00000029  

@@ -1,8 +1,7 @@
 ---
-title: 'CA2143: 투명한 메서드는 보안 요청을 사용해서는 안 됩니다.'
+title: 'CA2143: 투명 메서드는 보안 요청을 사용할 수 없습니다.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2143
@@ -12,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7abb977d69f6221e396a5aea8c2268d505b4ab21
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ff92d7ed697db2f692ed17426bdb5dad38164cf8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870460"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954567"
 ---
-# <a name="ca2143-transparent-methods-should-not-use-security-demands"></a>CA2143: 투명한 메서드는 보안 요청을 사용해서는 안 됩니다.
+# <a name="ca2143-transparent-methods-should-not-use-security-demands"></a>CA2143: 투명 메서드는 보안 요청을 사용할 수 없습니다.
 
 |||
 |-|-|
@@ -46,4 +45,4 @@ ms.locfileid: "49870460"
  [!code-csharp[FxCop.Security.CA2143.TransparentMethodsShouldNotDemand#1](../code-quality/codesnippet/CSharp/ca2143-transparent-methods-should-not-use-security-demands_1.cs)]
 
 ## <a name="see-also"></a>참고자료
- [CA2142: 투명한 코드는 LinkDemands를 사용하여 보호해서는 안 됩니다.](../code-quality/ca2142-transparent-code-should-not-be-protected-with-linkdemands.md)
+ [CA2142: 투명 코드는 LinkDemands를 사용 하 여 보호 해서는 안](../code-quality/ca2142-transparent-code-should-not-be-protected-with-linkdemands.md)

@@ -1,9 +1,6 @@
 ---
 title: 중단점 바인딩 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - breakpoints, binding
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e02b3da843f7e4cffe33d660a8a82ab3c4c0dc03
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 263e339fa4ab8001fcd542f7dcedd10b5a24659a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153448"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988782"
 ---
 # <a name="bind-breakpoints"></a>중단점 바인딩
 사용자 설정 중단점, 아마도 키를 눌러 **F9**, IDE 요청을 작성 하 고 중단점을 만들려고 하면 디버그 세션의 메시지를 표시 합니다.  
@@ -56,5 +53,5 @@ ms.locfileid: "39153448"
   
  독일에 바인딩할 수도 DE 중단점을 처리 하지만, 일부 다른 바인딩할 수 없습니다 경우 경고를 반환 합니다. IDE는 소스 코드 줄의 왼쪽에 중단점 문자 모양 내 질문 문자 모양을 배치 하 여 응답 합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [디버깅 작업](../../extensibility/debugger/debugging-tasks.md)

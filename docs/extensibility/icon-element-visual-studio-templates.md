@@ -1,6 +1,5 @@
 ---
 title: Icon 요소 (Visual Studio 템플릿) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40febe9ea2ac45011499dfb38f49fbaa85aa1958
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: db50dd4fa62bb1d6a3947d0c7091c94b2138efff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53560702"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868081"
 ---
 # <a name="icon-element-visual-studio-templates"></a>Icon 요소 (Visual Studio 템플릿)
 경로 중에 나타나는 아이콘으로 사용 되는 이미지 파일의 파일 이름을 지정 합니다 **새 프로젝트** 또는 **새 항목 추가** 템플릿에 대 한 대화 상자.  

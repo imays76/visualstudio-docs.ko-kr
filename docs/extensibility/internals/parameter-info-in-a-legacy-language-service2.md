@@ -1,9 +1,6 @@
 ---
 title: 레거시 언어 Service2의 매개 변수 정보 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliSense, Parameter Info tool tip
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b562f5dd2c7e4f3851f6ed16e0f0007ef65e14cb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a11f7416f77aa997d6874457cc3af83ebb761bb4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863258"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988150"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>레거시 언어 서비스의 매개 변수 정보
 IntelliSense 매개 변수 정보는 메서드 매개 변수 목록에 대 한 문자 (일반적으로 여는 괄호)를 시작 하는 사용자가 매개 변수 목록 메서드 시그니처를 표시 하는 도구 설명입니다. 각 매개 변수를 입력 매개 변수 구분 기호 (쉼표)를 입력 하 고 도구 설명 굵게 표시 된 다음 매개 변수를 표시 하도록 업데이트 됩니다.  

@@ -1,9 +1,6 @@
 ---
 title: '방법: 프로그래밍 방식으로 새 Visio 문서 만들기'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4142ebe86ea69fbb0a74f25c2a7053a60c527cdb
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 0962c0d7927fd7b21969b36020e2a40d587cf452
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671562"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872507"
 ---
 # <a name="how-to-programmatically-create-new-visio-documents"></a>방법: 프로그래밍 방식으로 새 Visio 문서 만들기
   새 Microsoft Office Visio 드로잉 문서를 만들려면 열려 있는 Visio 문서의 `Microsoft.Office.Interop.Visio.Documents` 컬렉션에 추가합니다. 결과적으로 `Microsoft.Office.Interop.Visio.Documents.Add` 메서드는 새 Visio 드로잉 문서를 만듭니다. 자세한 내용은 VBA 참조 설명서에서 [Microsoft.Office.Interop.Visio.Documents.Add](/office/vba/api/Visio.Documents.Add) 메서드를 참조하세요.  
@@ -81,5 +78,3 @@ ms.locfileid: "50671562"
  [방법: 프로그래밍 방식으로 Visio 문서 닫기](../vsto/how-to-programmatically-close-visio-documents.md)   
  [방법: 프로그래밍 방식으로 Visio 문서 저장](../vsto/how-to-programmatically-save-visio-documents.md)   
  [방법: 프로그래밍 방식으로 Visio 문서 인쇄](../vsto/how-to-programmatically-print-visio-documents.md)  
-  
-  

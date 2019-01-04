@@ -1,9 +1,6 @@
 ---
 title: '방법: 워크시트 셀에서 컨트롤 크기 조정'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 91a7e66e085408b35f0ce1d8f7d4783e0c4715a8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 67ec290959263282c9a6f924ca9d6ba2c67b5930
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674884"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927352"
 ---
 # <a name="how-to-resize-controls-within-worksheet-cells"></a>방법: 워크시트 셀에서 컨트롤 크기 조정
   워크시트에 행 또는 열 크기를 조정 하면 셀 내에서 모든 호스트 컨트롤 크기가 조정 되었습니다에 있는 셀의 너비 또는 높이 자동으로 조정 합니다. Windows Forms 컨트롤 기본적으로 자동으로 크기가 조정 되지 않습니다.  
@@ -82,4 +79,3 @@ ms.locfileid: "35674884"
  [방법: 인쇄할 때 워크시트에서 컨트롤 숨기기](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   
  [런타임에 Office 문서에 컨트롤 추가](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [Office 문서의 Windows Forms 컨트롤의 제한 사항](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
-  

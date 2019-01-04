@@ -1,8 +1,7 @@
 ---
-title: 'CA1809: 불필요한 로컬 항목을 사용하지 마십시오.'
+title: 'CA1809: 불필요한 로컬 항목을 사용하지 마세요.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1809
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0135241e81fb020d5f5107bcb76e37bad16fb56d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0824517aa7d5dc05f9a0297ca44cd235f5800653
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828509"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904018"
 ---
-# <a name="ca1809-avoid-excessive-locals"></a>CA1809: 불필요한 로컬 항목을 사용하지 마십시오.
+# <a name="ca1809-avoid-excessive-locals"></a>CA1809: 불필요한 로컬 항목을 사용하지 마세요.
 
 |||
 |-|-|
@@ -45,4 +44,4 @@ ms.locfileid: "49828509"
  성능 문제가 없는 경우이 규칙에서 경고를 표시 하거나 규칙을 사용 하지 않도록 설정 해도 됩니다.
 
 ## <a name="related-rules"></a>관련된 규칙
- [CA1804: 사용되지 않는 로컬 항목을 제거하십시오.](../code-quality/ca1804-remove-unused-locals.md)
+ [CA1804: 사용 되지 않는 로컬 항목을 제거](../code-quality/ca1804-remove-unused-locals.md)

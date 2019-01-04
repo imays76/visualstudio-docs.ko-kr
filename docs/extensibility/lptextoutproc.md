@@ -1,9 +1,6 @@
 ---
 title: LPTEXTOUTPROC | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - LPTEXTOUTPROC
@@ -19,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d8439d706dbe8c84d807fb445eda272b96ad589
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c3bef9a76c12b44345c000a3133fb3edcfed1352
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822880"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956844"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 사용자 통합된 개발 환경 (IDE) 내에서 소스 제어 작업을 실행 하는 경우 소스 제어 플러그 인 작업에 관련 된 오류 또는 상태 메시지를 전달 하려고 합니다. 플러그 인이 목적을 위해 자체 메시지 상자를 표시할 수 있습니다. 그러나 더 원활한 통합을 위한 플러그 인에 전달할 수 문자열 상태 정보를 표시 하는 기본으로 표시 하는 IDE. 이 메커니즘은는 `LPTEXTOUTPROC` 함수 포인터입니다. IDE 오류 및 상태를 표시 하기 위한 (아래에서 자세히 설명)이이 함수를 구현 합니다.  
@@ -55,7 +52,7 @@ typedef LONG (*LPTEXTOUTPROC) (
 |`SCC_MSG_DOCANCEL`|없는 메시지 문자열을 사용 하 여 전송 합니다.|  
 |`SCC_MSG_STARTCANCEL`|시작 표시를 **취소** 단추입니다.|  
 |`SCC_MSG_STOPCANCEL`|표시를 중지 한 **취소** 단추입니다.|  
-|`SCC_MSG_BACKGROUND_IS_CANCELLED`|백그라운드 작업이 취소 될 경우 IDE 요청: IDE 반환 `SCC_MSG_RTN_CANCEL` 작업이 취소 되었습니다; 그렇지 않으면 반환 `SCC_MSG_RTN_OK`합니다. `display_string` 로 캐스팅 매개 변수를 [SccMsgDataIsCancelled](#LinkSccMsgDataIsCancelled) 소스 제어 플러그 인에서 제공 하는 구조를 합니다.|  
+|`SCC_MSG_BACKGROUND_IS_CANCELLED`|백그라운드 작업이 취소 될 경우 IDE를 요청 합니다. IDE 반환 `SCC_MSG_RTN_CANCEL` 작업이 취소 되었습니다; 그렇지 않으면 반환 `SCC_MSG_RTN_OK`합니다. `display_string` 로 캐스팅 매개 변수를 [SccMsgDataIsCancelled](#LinkSccMsgDataIsCancelled) 소스 제어 플러그 인에서 제공 하는 구조를 합니다.|  
 |`SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE`|Ide가 파일에 대 한 버전 제어에서 검색 하기 전에 합니다. `display_string` 로 캐스팅 매개 변수를 [SccMsgDataOnBeforeGetFile](#LinkSccMsgDataOnBeforeGetFile) 소스 제어 플러그 인에서 제공 하는 구조를 합니다.|  
 |`SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE`|버전 제어에서 검색 한 후에 파일에 대 한 IDE를 지시 합니다. `display_string` 로 캐스팅 매개 변수를 [SccMsgDataOnAfterGetFile](#LinkSccMsgDataOnAfterGetFile) 소스 제어 플러그 인에서 제공 하는 구조를 합니다.|  
 |`SCC_MSG_BACKGROUND_ON_MESSAGE`|Ide가 백그라운드 작업의 현재 상태입니다. `display_string` 로 캐스팅 매개 변수를 [SccMsgDataOnMessage](#LinkSccMsgDataOnMessage) 소스 제어 플러그 인에서 제공 하는 구조를 합니다.|  
@@ -140,6 +137,6 @@ LONG SendStatusMessage(
 }  
 ```  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [IDE에 의해 구현 된 콜백 함수](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [원본 제어 플러그 인](../extensibility/source-control-plug-ins.md)

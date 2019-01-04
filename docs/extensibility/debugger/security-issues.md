@@ -1,9 +1,6 @@
 ---
 title: 보안 문제 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - security [Debugging SDK]
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6cd4d07721f202169ca0689882ac1a41045a4d61
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 387c00fa9440bd8a6ffdc862e9b91110dadcfd69
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252325"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940761"
 ---
 # <a name="security-issues"></a>보안 문제
 Visual Studio를 사용 하 여 프로그램을 디버깅 하려면 필요한 권한만 개발자 프로그램을 실행 해야 하는 것과 같은 됩니다. 대부분의 상황에 대 한 원격 디버깅 포함 됩니다. 인터넷 정보 서비스와 같은 다른 서비스와 관련 된 몇 가지 상황에는 높은 수준의 사용 권한이 필요할 수 있습니다.  

@@ -1,13 +1,8 @@
 ---
 title: '방법: Updater 메서드 추가 | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a4d50180173673b4999c18b8980c682d79637bd3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8a68ed8809b30444829dc09bb5c1fcb2386c4a92
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951420"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872520"
 ---
 # <a name="how-to-add-an-updater-method"></a>방법: Updater 메서드 추가
   사용자가 만들어 외부 SharePoint 목록의 비즈니스 데이터를 업데이트할 수는 *Updater* 메서드. 자세한 내용은 [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)합니다.  
@@ -48,7 +43,7 @@ ms.locfileid: "49951420"
   
    - 메서드에 대 한 입력된 매개 변수입니다.  
   
-   - 매개 변수의 형식 설명자입니다. Finder 메서드에 대 한 Visual Studio에서는 정의 된 엔터티 형식 설명자를 기본적으로 (예: 담당자).  
+   - 매개 변수의 형식 설명자입니다. Finder 메서드에 대 한 Visual Studio에서는 정의 된 엔터티 형식 설명자를 기본적으로 (예: 연락처)입니다.  
   
    - 메서드에 대 한 메서드 인스턴스입니다.  
   
@@ -69,7 +64,7 @@ ms.locfileid: "49951420"
     [!code-csharp[SP_BDC#5](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#5)]
     [!code-vb[SP_BDC#5](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#5)]  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [방법: Finder 메서드 추가](../sharepoint/how-to-add-a-finder-method.md)   
  [방법: 특정 Finder 메서드 추가](../sharepoint/how-to-add-a-specific-finder-method.md)   
@@ -79,5 +74,3 @@ ms.locfileid: "49951420"
  [BDC 모델 디자인 도구 개요](../sharepoint/bdc-model-design-tools-overview.md)   
  [방법: 메서드에 매개 변수를 추가 합니다.](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
  [방법: 메서드 인스턴스 정의](../sharepoint/how-to-define-a-method-instance.md)  
-  
- 

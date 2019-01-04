@@ -1,9 +1,6 @@
 ---
 title: Visual Studio에 대 한 색 공유 | Microsoft Docs
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 19d628f2f83943b88a415699dddd78f033597983
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d9e709ceb16a95094f14df65d42e7167ef5abdba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833345"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991245"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Visual Studio에 대 한 공유 색
 일반적인 Visual Studio 셸 요소를 사용 하는 UI를 디자인할 때나 사용자 인터페이스 요소를 유사한 기능과 일치 원하는 이름을 사용 하 여 기존 토큰 패키지 정의 파일에서 선택 하 고 색을 할당 합니다. 이렇게 하면 UI가 전체 Visual Studio 환경과 일관성 있게 유지되며 테마를 추가하거나 업데이트할 경우 자동으로 업데이트됩니다.  
@@ -1870,7 +1867,7 @@ Visual Studio는 사용자가 추적을 위해 검색 가능한 키워드를 선
 | --- | --- |
 | ... ui를 지 원하는 태그를 지정 합니다. | ... 모든 유형에 대 한 다른 UI입니다. |
 
-#### <a name="tags"></a>Tags  
+#### <a name="tags"></a>태그  
 
 **태그: 기본 상태**
 

@@ -1,8 +1,7 @@
 ---
-title: '방법: 코드 분석 체크 인 정책 사용 하 여 유지 관리 가능한 코드 적용'
+title: '방법: 코드 분석 체크 인 정책을 통해 유지 관리할 수 있는 코드 적용'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, check-in policies
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 060ca6482249e9b1e538b25977a1bdf5dfb97276
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 7d31e52ab2f158b73a0076414b6d18e0b7421b04
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739381"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825719"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>방법: 코드 분석 체크 인 정책 사용 하 여 유지 관리 가능한 코드 적용
 
@@ -59,7 +58,7 @@ Team foundation 버전 제어의 관리자는 체크 인 정책 요구 사항에
 
 3. **확인**을 클릭합니다. 새 체크 인 정책을 이제 이후의 체크 인에 적용 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [코드 메트릭 값](../code-quality/code-metrics-values.md)
 - [코드 분석 체크 인 정책 만들기 및 사용](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)

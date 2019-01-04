@@ -1,9 +1,6 @@
 ---
 title: Visual Studio 찾기 | Microsoft Docs
-ms.custom: ''
 ms.date: 08/21/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - deployment, VSIX
@@ -12,12 +9,12 @@ ms.author: heaths
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65b0b8dfcc42cfcf80fc24f0c844469b77734e9c
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: f9d74c0a899139046cab1d73b59086e4ab9e2276
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495390"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955135"
 ---
 # <a name="locate-visual-studio"></a>Visual Studio를 찾습니다
 
@@ -25,7 +22,7 @@ Visual Studio 2017부터 동일한 버전 또는 심지어 버전의 여러 인�
 
 이 네이티브 및 관리 코드에 사용할 수 있는 NuGet 패키지를 사용 하 여 신속 하 고 읽기 전용 API입니다.
 
-| 코드 | 패키지 |
+| 코드 | Package |
 | ---- | --- |
 | 네이티브 | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Native |
 | 관리 | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |
@@ -42,6 +39,6 @@ Visual Studio 2017부터 동일한 버전 또는 심지어 버전의 여러 인�
 | [VSSetup cmdlet](https://github.com/Microsoft/vssetup.powershell) | 지원 되는 PowerShell cmdlet 동일한 조건에 따라 인스턴스를 찾는 데 사용할 수 있는 개체로 풍부한 정보를 반환 하는 2.0 이상 _vswhere_ 및 인스턴스에 대 한 더 많은 속성을 검색 합니다. 참조 된 [wiki](https://github.com/Microsoft/vssetup.powershell/wiki) 예입니다. |
 | [VSIXBootstrapper](https://github.com/Microsoft/vsixbootstrapper) | 자동으로 찾습니다 _VSIXInstaller_ 하 고 설치 하려면 명령줄을 통해 전달 된 **.vsix* 파일입니다. 이 기능은 쿼리 Api에 대 한 직접 지원 되지 않은 설치 관리자에서 유용할 수 있습니다. 참조 된 [wiki](https://github.com/Microsoft/vsixbootstrapper/wiki) 예입니다. |
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 * [Visual Studio 2017 설치 프로그램 변경 내용](https://blogs.msdn.microsoft.com/heaths/2016/09/15/changes-to-visual-studio-15-setup/)

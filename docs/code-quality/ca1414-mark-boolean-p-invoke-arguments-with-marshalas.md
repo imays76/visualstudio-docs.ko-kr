@@ -1,8 +1,7 @@
 ---
-title: 'CA1414: 부울 P-Invoke 인수를 MarshalAs로 표시하십시오.'
+title: 'CA1414: 부울 P/Invoke 인수를 MarshalAs로 표시하세요.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1414
@@ -20,14 +19,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a5936c07646201ab3988dd7cc792f758ed698063
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 31159ec2e90c96579940f276f1d0410cdf3dadb1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548970"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931439"
 ---
-# <a name="ca1414-mark-boolean-pinvoke-arguments-with-marshalas"></a>CA1414: 부울 P/Invoke 인수를 MarshalAs로 표시하십시오.
+# <a name="ca1414-mark-boolean-pinvoke-arguments-with-marshalas"></a>CA1414: 부울 P/Invoke 인수를 MarshalAs로 표시하세요.
 
 |||
 |-|-|
@@ -59,11 +58,11 @@ ms.locfileid: "45548970"
  [!code-cpp[FxCop.Interoperability.BoolMarshalAs#1](../code-quality/codesnippet/CPP/ca1414-mark-boolean-p-invoke-arguments-with-marshalas_1.cpp)]
 
 ## <a name="related-rules"></a>관련된 규칙
- [CA1901: P/Invoke 선언은 이식 가능해야 합니다.](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)
+ [CA1901: P/Invoke 선언은 이식 가능 해야 합니다.](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)
 
- [CA2101: P/Invoke 문자열 인수에 대해 마샬링을 지정합니다.](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
+ [CA2101: P/Invoke 문자열 인수에 대해 마샬링을 지정 하십시오.](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>
 - [비관리 코드와의 상호 운용](/dotnet/framework/interop/index)

@@ -1,9 +1,6 @@
 ---
 title: Extern 요소 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - Extern
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 353d7e59d7f9d0cbc6aa93d4118a4cb8ff6ee197
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: dc48dc471dab06bf18c0edf622cfa18e7159eaab
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497708"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895261"
 ---
 # <a name="extern-element"></a>Extern 요소
 Extern 요소는 모든 외부 헤더가 참조 (*.h*)를 병합 하는 파일을 *.vsct* 컴파일 타임에 파일입니다. VSCT 컴파일러인 지정 되거나 참조 포함 경로에 병합할 파일 이어야 합니다는 [Include 요소](../extensibility/include-element.md)합니다. 기타 파일이 될 수 있습니다 *.vsct* 파일 또는 c + + 헤더 파일입니다.  
@@ -44,7 +41,7 @@ Extern 요소
   
 |특성|설명|  
 |---------------|-----------------|  
-|href|필수. 헤더 파일에 대 한 경로:<br /><br /> href="stdidcmd.h"|  
+|href|필수 요소. 헤더 파일에 대 한 경로:<br /><br /> href="stdidcmd.h"|  
 |조건|선택 사항입니다. 참조 [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)합니다.|  
 |language|선택 사항입니다. 모든 기본 언어가 [ \<문자열 >](../extensibility/strings-element.md) 명령 테이블에 있는 요소:<br /><br /> language = "en-우리"|  
   
@@ -60,7 +57,7 @@ Extern 요소
 |-------------|-----------------|  
 |[CommandTable 요소](../extensibility/commandtable-element.md)|명령을 나타내는 요소를 모두 정의-메뉴 항목, 메뉴, 도구 모음 및 콤보 상자,-VSPackage IDE를 제공 하는 합니다.|  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  

@@ -1,13 +1,8 @@
 ---
 title: '방법: 메서드 인스턴스 정의 | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -20,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6e6dd6c0d7676c6b3c2071f0fcb07e8073313633
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 84a03fe6066911b12ba0e5a413ea3521033bc283
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119365"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952565"
 ---
 # <a name="how-to-define-a-method-instance"></a>방법: 메서드 인스턴스 정의
   모델의 모든 메서드에 대 한 메서드 인스턴스를 하나 이상 정의 해야 합니다.  
@@ -50,4 +45,3 @@ ms.locfileid: "37119365"
  [방법: 메서드에 매개 변수를 추가 합니다.](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
  [방법: 매개 변수의 형식 설명자 정의](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
  [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)  
-  

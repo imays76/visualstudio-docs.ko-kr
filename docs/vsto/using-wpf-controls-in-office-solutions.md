@@ -1,9 +1,6 @@
 ---
 title: Office 솔루션에서 WPF 컨트롤 사용
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5419a715cbe255b5cfc31a113a00e3525d63d827
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 49b4d2fd4a32b6d73e5fcdfc65850abcb2835856
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008205"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822277"
 ---
 # <a name="use-wpf-controls-in-office-solutions"></a>Office 솔루션에서 WPF 컨트롤 사용
 
@@ -58,7 +55,7 @@ Office 솔루션의 UI 요소에 직접 WPF 컨트롤을 추가할 수 없습니
 
     -   양식 영역에 대 한 추가 **Outlook 양식 영역** 프로젝트 항목입니다. 자세한 내용은 [방법: Outlook 추가 기능 프로젝트에 양식 영역 추가](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)합니다.
 
-    -   작업 창에 대 한 추가 **작업 창 컨트롤** 하거나 **사용자 정의 컨트롤** 항목을 프로젝트입니다. 자세한 내용은 [방법: Word 문서에 작업창을 추가 하거나 Excel 통합 문서](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md) 및 [방법: Word 문서에 작업창을 추가 하거나 Excel 통합 문서](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)합니다.
+    -   작업 창에 대 한 추가 **작업 창 컨트롤** 하거나 **사용자 정의 컨트롤** 항목을 프로젝트입니다. 자세한 내용은 [방법: Word 문서에 작업창을 추가 하거나 Excel 통합 문서](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md) 고 [방법: Excel 통합 문서 또는 Word 문서에 작업창 추가](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)합니다.
 
     -   사용자 지정 작업창을 위한 추가 된 **사용자 정의 컨트롤** 항목을 프로젝트입니다. 자세한 내용은 [방법: 응용 프로그램에 사용자 지정 작업창 추가](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)합니다.
 
@@ -119,13 +116,13 @@ Windows Forms 컨트롤 및 폼에 WPF 컨트롤을 호스트하기 위한 아�
 
 -   [연습: WPF 콘텐츠 스타일](/dotnet/framework/winforms/advanced/walkthrough-styling-wpf-content)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [Office UI 사용자 지정](../vsto/office-ui-customization.md)
 - [Windows Forms 컨트롤에 대 한 Office 문서 개요](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [작업 창 개요](../vsto/actions-pane-overview.md)
 - [사용자 지정 작업창](../vsto/custom-task-panes.md)
 - [Outlook 양식 영역 만들기](../vsto/creating-outlook-form-regions.md)
-- [방법: Word 문서에 작업창을 추가 하거나 Excel 통합 문서](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
+- [방법: Word 문서 또는 Excel 통합 문서에 작업 창 추가](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
 - [방법: 응용 프로그램에 사용자 지정 작업창 추가](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
 - [방법: Outlook 추가 기능 프로젝트에 양식 영역 추가](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)

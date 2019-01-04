@@ -1,9 +1,6 @@
 ---
 title: 보기 장식, 명령 및 설정 만들기 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e937dfe47160959f2c011e53633c4d7b8a36766b
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.openlocfilehash: 4de9446afcc7528ba5c27160b4e00ad911b657e9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53348529"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958744"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>연습: 보기 장식, 명령 및 설정 (열 안내선) 만들기
 명령 및 효과 보기를 사용 하 여 Visual Studio 텍스트/코드 편집기를 확장할 수 있습니다. 이 문서는 인기 있는 확장 기능을 열 가이드를 사용 하 여 시작 하는 방법을 보여 줍니다. 열 안내선은 특정 열 너비에 코드를 관리할 수 있도록 텍스트 편집기의 보기에 그려지는 시각적으로 밝은 선입니다. 특히, 서식이 지정 된 코드 샘플 문서, 블로그 게시물에서에서 포함 또는 버그 보고서에 대해 중요할 수 있습니다.

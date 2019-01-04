@@ -2,7 +2,6 @@
 title: 네이티브 최소 규칙 규칙 집합
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: 2d898bc4-fba5-472e-8f09-b0c6b511c5a3
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9149276064b76a08705b70883bb3c2e136e23334
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: cd988bae2f9fd2776785202a1e632735f989f7ab
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389016"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845488"
 ---
 # <a name="native-minimum-rules-rule-set"></a>네이티브 최소 규칙 규칙 집합
 Microsoft 네이티브 최소 규칙은 잠재적 보안 허점 및 응용 프로그램 충돌을 비롯 하 여 네이티브 코드의 가장 중요 한 문제에 집중 합니다. 네이티브 프로젝트에 대해 만드는 모든 사용자 지정 규칙 집합에 이 규칙 집합을 포함해야 합니다.
@@ -37,7 +36,7 @@ Microsoft 네이티브 최소 규칙은 잠재적 보안 허점 및 응용 프�
 |[C6270](../code-quality/c6270.md)|Format 함수에 부동 인수 없음|
 |[C6271](../code-quality/c6271.md)|Format 함수의 추가 인수|
 |[C6272](../code-quality/c6272.md)|Format 함수의 비부동 인수|
-|[C6273](../code-quality/c6273.md)|Format 함수에 정수가 아닌 인수|
+|[C6273](../code-quality/c6273.md)|Format 함수에 비정수 인수|
 |[C6274](../code-quality/c6274.md)|Format 함수의 비문자 인수|
 |[C6276](../code-quality/c6276.md)|잘못된 문자열 캐스팅|
 |[C6277](../code-quality/c6277.md)|잘못된 CreateProcess 호출|
@@ -70,7 +69,7 @@ Microsoft 네이티브 최소 규칙은 잠재적 보안 허점 및 응용 프�
 |[C6518](../code-quality/c6518.md)|쓰기 불가능 버퍼에 대한 쓰기 가능 크기|
 |[C6522](../code-quality/c6522.md)|잘못된 크기 문자열 유형|
 |[C6525](../code-quality/c6525.md)|잘못된 크기 문자열 접근할 수 없는 위치|
-|[C6527](../code-quality/c6527.md)|주석이 잘못되었습니다. 'NeedsRelease' 속성은 void 형식 값에 사용할 수 없습니다.|
+|[C6527](../code-quality/c6527.md)|주석이 잘못 되었습니다. 'NeedsRelease ' 속성은 void 형식의 값에 사용할 수 없습니다.|
 |[C6530](../code-quality/c6530.md)|인식할 수 없는 형식 문자열 스타일|
 |[C6540](../code-quality/c6540.md)|이 함수에 특성 주석을 사용하면 기존의 모든 __declspec 주석이 무효화됩니다.|
 |[C6551](../code-quality/c6551.md)|크기 사양이 잘못되었습니다. 식을 구문 분석할 수 없습니다.|
@@ -145,16 +144,16 @@ Microsoft 네이티브 최소 규칙은 잠재적 보안 허점 및 응용 프�
 |[C28282](../code-quality/c28282.md)|형식 문자열이 사전 조건에 있어야 합니다.|
 |[C28285](../code-quality/c28285.md)|함수의 경우 매개 변수에 구문 오류가 있습니다.|
 |[C28286](../code-quality/c28286.md)|함수의 경우 끝 부분 근처에 구문 오류가 있습니다.|
-|[C28287](../code-quality/c28287.md)|함수의 경우 주석에 구문 오류가에 \_에서\_() 주석에 (인식할 수 없는 매개 변수 이름)|
-|[C28288](../code-quality/c28288.md)|함수의 경우 주석에 구문 오류가에 \_에서\_() 주석에 (잘못 된 매개 변수 이름)|
-|[C28289](../code-quality/c28289.md)|함수의 경우 ReadableTo 또는 WritableTo에 limit-spec가 매개 변수로 포함되지 않았습니다.|
+|[C28287](../code-quality/c28287.md)|함수의 경우 \_At\_() 주석에 구문 오류(인식할 수 없는 매개 변수 이름)|
+|[C28288](../code-quality/c28288.md)|함수의 경우 \_At\_() 주석에 구문 오류(잘못된 매개 변수 이름)|
+|[C28289](../code-quality/c28289.md)|함수의 경우: ReadableTo 또는 WritableTo 없는 위한 제한 사양을 매개 변수로|
 |[C28290](../code-quality/c28290.md)|함수의 주석에 실제 매개 변수 개수보다 많은 외부 참조가 있습니다.|
 |[C28291](../code-quality/c28291.md)|함수의 경우 역참조 수준 0에서 post null/notnull이 의미가 없습니다.|
 |[C28300](../code-quality/c28300.md)|연산자에 호환되지 않는 형식의 식 피연산자입니다.|
 |[C28301](../code-quality/c28301.md)|함수의 첫 번째 선언에 대한 주석이 없습니다.|
-|[C28302](../code-quality/c28302.md)|추가 \_Deref\_ 연산자에서 발견 되었습니다.|
-|[C28303](../code-quality/c28303.md)|모호한 \_Deref\_ 연산자에서 발견 되었습니다.|
-|[C28304](../code-quality/c28304.md)|부적절 하 게 배치 \_Notref\_ 토큰에 적용할 연산자를 찾을 수 있습니다.|
+|[C28302](../code-quality/c28302.md)|주석에 추가 \_Deref\_ 연산자가 있습니다.|
+|[C28303](../code-quality/c28303.md)|주석에 모호한 \_Deref\_ 연산자가 있습니다.|
+|[C28304](../code-quality/c28304.md)|토큰에 부적절하게 배치된 \_Notref\_ 연산자가 적용되었습니다.|
 |[C28305](../code-quality/c28305.md)|토큰을 구문 분석하는 동안 오류가 발생했습니다.|
 |[C28350](../code-quality/c28350.md)|주석이 조건부로 적용할 수 없는 상황을 설명합니다.|
 |[C28351](../code-quality/c28351.md)|주석이 동적 값(변수)을 조건에 사용할 수 없는 경우를 설명합니다.|

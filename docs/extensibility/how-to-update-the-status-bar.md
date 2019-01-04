@@ -1,9 +1,6 @@
 ---
 title: '방법: 상태 표시줄 업데이트 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - update status bar
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7f7d52ad8dc75f8e8bd313794b44c231522cde7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 554b0c46074c4ffc1860250a0e9dfd8d2bb24b60
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829939"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874166"
 ---
 # <a name="how-to-update-the-status-bar"></a>방법: 상태 표시줄 업데이트
 합니다 **상태 표시줄** 는 하나 이상의 상태 텍스트 줄 또는 표시기를 포함 하는 여러 응용 프로그램 창의 아래쪽에 있는 컨트롤 막대입니다.  
@@ -49,5 +46,5 @@ ms.locfileid: "49829939"
   
   VSPackage 구현자는 상태 표시줄에서 상태 텍스트를 업데이트 하는 일을 담당 합니다. IDE 상태 텍스트 필드를 빈 텍스트로 설정 된 경우이 문자열 "READY"로 다시 설정 ("") 유휴 시간에 있습니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [상태 표시줄](/cpp/mfc/status-bars)

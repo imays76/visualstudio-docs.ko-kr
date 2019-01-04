@@ -1,9 +1,6 @@
 ---
 title: Visual Studio의 복합 패턴 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14d9f233d41638092d1a722094cb0c86f368a748
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 07a2e38f38ca5e9414f5ab6b416eb0ca888131f2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951602"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866909"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Visual Studio의 복합 패턴
 복합 패턴 고유 구성의 상호 작용 및 설계 요소를 결합 합니다. 일관성 관련 하 여 Visual Studio에서 가장 중요 한 복합 패턴 중 일부는 다음과 같습니다.  
@@ -242,7 +239,7 @@ ms.locfileid: "49951602"
 
     -   **명시적인 명령:** 인라인 프레 젠 터  
 
-    -   **앰비언트 표시기를 두 번 클릭:** CodeLens 팝업 창  
+    -   **앰비언트 표시기를 두 번 클릭 합니다.** CodeLens 팝업 창  
 
 -   **항상** Esc 키를 누를 때마다 정보 콘텐츠를 해제 합니다.  
 
@@ -397,7 +394,7 @@ ms.locfileid: "49951602"
  선택 핸들은 사각형 패턴 개체의 경계 상자 주위 그릴 사각형입니다. 아래 차트 그래픽 개체 핸들, 크기 조정 및 내부 편집 모양을 가질 수 있는 다양 한 상태의 예를 보여 줍니다. 핸들의 크기를 창 테두리 가장자리 메트릭을 사용 하 여 연계 해야 합니다 **GetSystemMetrics** API.  
 
 
-| 시스템 상태 | 모양 | 시각적 세부 정보 |
+| 상태 | 모양 | 시각적 세부 정보 |
 |-------------------------|---------------| - |
 | **선택 되지 않음** | 기본 | ![기본 단추 상태](../../extensibility/ux-guidelines/media/0713-10_defaultstate.png "0713 10_DefaultState") |
 | **기본 선택** | 크기를 조정할 수 | ![크기 조정 핸들을 사용한 기본 선택](../../extensibility/ux-guidelines/media/0713-11_primaryresize.png "0713 11_PrimaryResize") |
@@ -440,7 +437,7 @@ ms.locfileid: "49951602"
  인접 한,이 목록에서 선택 될 수 있습니다 또는 지역입니다. 다중 선택을 허용 되는 연속 된 시점과 비연속 선택 해야 항상 지원, 지역 (상자) 선택 항목에 대 한 지원을 하는 동안에 선택 사항입니다. 지역 선택 목록 본문의 공백을 드래그 하 여 시작 됩니다.  
 
 
-| Object | 선택 |
+| 개체 | 선택 |
 |--------|------------|
 | 목록 | 연속 |
 | 목록 | 서로 분리 |
@@ -481,7 +478,7 @@ ms.locfileid: "49951602"
 ### <a name="overview"></a>개요  
  Visual Studio의 각 소프트웨어 구성 요소를 일반적으로 자체 상태 및 지 속성에 대 한 책임 있지만 Visual Studio 자동으로 설정을 저장 일부의 경우에서와 같이 창 크기와 위치를 사용 하 여 합니다. 다음 테이블은 자동으로 저장 하는 설정과 명시적 사용자가 필요 하거나 수행할 동작을 프로그래밍 하는 설정의 조합입니다.  
 
-|Object|저장을|저장 하는 경우|저장 위치|  
+|개체|저장을|저장 하는 경우|저장 위치|  
 |------------|------------------|------------------|-------------------|  
 |선택 가능한 개체 (예를 들어, 코드 줄)|코드 줄에 중단점을 설정<br /><br /> 코드 줄을 사용 하 여 연결 된 사용자 바로 가기|프로젝트가 저장 된 경우|합니다 **사용자 옵션 (.suo)** 프로젝트용 파일|  
 |대화 상자|가 이동한 경우 대화 상자에서의 위치<br /><br /> 사용자 대화 상자에서 마지막으로 사용한 뷰|대화 상자가 닫힌 경우<br /><br /> Visual Studio 세션 종료 될 때|메모리에서<br /><br /> 레지스트리에서 **HKEY_Current_User**|  

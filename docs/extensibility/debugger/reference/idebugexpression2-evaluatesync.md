@@ -1,9 +1,6 @@
 ---
 title: IDebugExpression2::EvaluateSync | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugExpression2::EvaluateSync
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b288d9995797a000f16533fcee9dafd85171722
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 48e72b61f6d7504572ebcf5e9bed4be062307ed1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864611"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850767"
 ---
 # <a name="idebugexpression2evaluatesync"></a>IDebugExpression2::EvaluateSync
 이 메서드는 동기적으로 식을 계산 합니다.  
@@ -28,7 +25,7 @@ ms.locfileid: "49864611"
 ## <a name="syntax"></a>구문  
   
 ```cpp  
-HRESULT EvaluateSync(   
+HRESULT EvaluateSync(   
    EVALFLAGS             dwFlags,  
    DWORD                 dwTimeout,  
    IDebugEventCallback2* pExprCallback,  
@@ -61,7 +58,7 @@ int EvaluateSync(
 ## <a name="return-value"></a>반환 값  
  성공 하면 반환 `S_OK`; 그렇지 않으면 오류 코드를 반환 합니다. 몇 가지 일반적인 오류 코드:  
   
-|Error|설명|  
+|오류|설명|  
 |-----------|-----------------|  
 |E_EVALUATE_BUSY_WITH_EVALUATION|다른 식이 계산 되는 현재 및 동시 식 계산에 사용할 수 없습니다.|  
 |E_EVALUATE_TIMEOUT|평가 시간이 초과 되었습니다.|  

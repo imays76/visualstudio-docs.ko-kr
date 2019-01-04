@@ -1,9 +1,6 @@
 ---
 title: IDebugExceptionEvent2::PassToDebuggee | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugExceptionEvent2::PassToDebuggee
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b1fb575299000e4b9ab894a4700fdf314d17d6c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 338127784a7ea4ee474edf1bfc58a75c5df7704d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832708"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945615"
 ---
 # <a name="idebugexceptionevent2passtodebuggee"></a>IDebugExceptionEvent2::PassToDebuggee
 예외를 삭제 해야 하는 경우 또는 예외 실행을 다시 시작할 때 디버깅 중인 프로그램에 전달 되어야 합니다 있는지 여부를 지정 합니다.  
@@ -28,14 +25,14 @@ ms.locfileid: "49832708"
 ## <a name="syntax"></a>구문  
   
 ```cpp  
-HRESULT PassToDebuggee(  
-   BOOL fPass  
+HRESULT PassToDebuggee(  
+   BOOL fPass  
 );  
 ```  
   
 ```csharp  
-int PassToDebuggee(  
-   int fPass  
+int PassToDebuggee(  
+   int fPass  
 );  
 ```  
   

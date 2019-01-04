@@ -1,9 +1,6 @@
 ---
 title: 통합 문서 호스트 항목
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -23,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b477b40425f7ded5fbaacf09aabc446ff207d86c
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: f15d93818c2db553d22d9639e6460f6637d33c80
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258170"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952890"
 ---
 # <a name="workbook-host-item"></a>통합 문서 호스트 항목
   <xref:Microsoft.Office.Tools.Excel.Workbook> 호스트 항목은 Excel용 주 interop 어셈블리의 <xref:Microsoft.Office.Interop.Excel.Workbook> 형식을 확장한 형식입니다. <xref:Microsoft.Office.Tools.Excel.Workbook> 호스트 항목은 <xref:Microsoft.Office.Interop.Excel.Workbook> 개체와 동일한 속성, 메서드 및 이벤트를 제공하지만 추가 기능도 제공합니다.  
@@ -55,7 +52,7 @@ ms.locfileid: "35258170"
 >  Visual Studio의 Office 개발 도구는 공유 통합 문서를 지원하지 않습니다.  
   
 ## <a name="understand-workbook-host-items-in-vsto-add-in-projects"></a>VSTO 추가 기능 프로젝트에서 통합 문서 호스트 항목 이해  
- VSTO 추가 기능 프로젝트에서 생성할 수 있습니다는 <xref:Microsoft.Office.Tools.Excel.Workbook> Excel에서 열려 있는 통합 문서에 대해 런타임에 호스트 항목입니다. 생성 하는 <xref:Microsoft.Office.Tools.Excel.Workbook> 호스트 항목을 사용 하 여는 `GetVstoObject` 메서드. 자세한 내용은 [확장 Word 문서 및 Excel 통합 런타임에 VSTO 추가 기능에서](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)합니다.  
+ VSTO 추가 기능 프로젝트에서 생성할 수 있습니다는 <xref:Microsoft.Office.Tools.Excel.Workbook> Excel에서 열려 있는 통합 문서에 대해 런타임에 호스트 항목입니다. <xref:Microsoft.Office.Tools.Excel.Workbook> 호스트 항목을 생성하려면 `GetVstoObject` 메서드를 사용합니다. 자세한 내용은 [확장 Word 문서 및 Excel 통합 런타임에 VSTO 추가 기능에서](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)합니다.  
   
 ## <a name="see-also"></a>참고자료  
  [Office 개발 샘플 및 연습](../vsto/office-development-samples-and-walkthroughs.md)   
@@ -64,5 +61,3 @@ ms.locfileid: "35258170"
  [워크시트 호스트 항목](../vsto/worksheet-host-item.md)   
  [확장 된 개체를 사용 하 여 Excel 자동화](../vsto/automating-excel-by-using-extended-objects.md)   
  [호스트 항목 및 호스트 컨트롤의 프로그래밍 방식으로 제한 사항](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

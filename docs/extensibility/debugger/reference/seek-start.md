@@ -1,9 +1,6 @@
 ---
 title: SEEK_START | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SEEK_START
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a10d749022757860c6f7cc620091c2ac10623976
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6aa97560982b49f4544589b18b72892c683d24e7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905224"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850520"
 ---
 # <a name="seekstart"></a>SEEK_START
 디스어셈블리 스트림에서 검색을 시작 하는 위치를 지정 합니다.  
@@ -28,7 +25,7 @@ ms.locfileid: "49905224"
 ## <a name="syntax"></a>구문  
   
 ```cpp  
-enum enum_SEEK_START {   
+enum enum_SEEK_START {   
    SEEK_START_BEGIN       = 0x0001,  
    SEEK_START_END         = 0x0002,  
    SEEK_START_CURRENT     = 0x0003,  
@@ -39,7 +36,7 @@ typedef DWORD SEEK_START;
 ```  
   
 ```csharp  
-public enum enum_SEEK_START {   
+public enum enum_SEEK_START {   
    SEEK_START_BEGIN       = 0x0001,  
    SEEK_START_END         = 0x0002,  
    SEEK_START_CURRENT     = 0x0003,  
@@ -70,9 +67,9 @@ public enum enum_SEEK_START {
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>참고 항목  
  [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

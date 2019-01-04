@@ -1,9 +1,6 @@
 ---
 title: VSTO 추가 기능에 대 한 레지스트리 항목
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,15 +16,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 14d35e8d6aa6209f628e38be65c9be5fbc614561
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 3436ddcdcb8c521985487738d4045e1e1bbd830a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673018"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909114"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>VSTO 추가 기능에 대 한 레지스트리 항목
-  Visual Studio를 사용하여 만든 VSTO 추가 기능을 배포할 때에는 특정 레지스트리 항목 집합을 만들어야 합니다. 이러한 레지스트리 항목은 Microsoft Office 응용 프로그램에서 VSTO 추가 기능을 찾아 로드할 수 있는 정보를 제공합니다.  
+  Visual Studio를 사용하여 만든 VSTO 추가 기능을 배포할 때에는 특정 레지스트리 항목 집합을 만들어야 합니다. 이러한 레지스트리 항목은 Microsoft Office 애플리케이션에서 VSTO 추가 기능을 찾아 로드할 수 있는 정보를 제공합니다.  
   
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
   
@@ -76,10 +73,10 @@ ms.locfileid: "50673018"
   
 |입력|형식|값|  
 |-----------|----------|-----------|  
-|**설명**|REG_SZ|필수. VSTO 추가 기능에 대한 간략한 설명입니다.<br /><br /> 이 설명은 사용자가 Microsoft Office 응용 프로그램의 **옵션** 대화 상자에 있는 **추가 기능** 창의 VSTO 추가 기능을 선택했을 때 표시됩니다.|  
-|**FriendlyName**|REG_SZ|필수. Microsoft Office 응용 프로그램의 **COM 추가 기능** 대화 상자에 표시되는 VSTO 추가 기능에 대한 설명이 포함된 이름입니다. 기본값은 VSTO 추가 기능 ID입니다.|  
-|**LoadBehavior**|REG_DWORD|필수. 응용 프로그램에서 VSTO 추가 기능 및 VSTO 추가 기능의 현재 상태(로드 또는 언로드)를 로드하려고 할 때 지정하는 값입니다.<br /><br /> 기본적으로 이 항목은 시작 시 VSTO 추가 기능을 로드하도록 지정하는 3으로 설정됩니다. 자세한 내용은 [LoadBehavior 값](#LoadBehavior)합니다. **참고:** 수정에서 VSTO 추가 기능 비활성화 하면 사용자를 **LoadBehavior** 값을 **HKEY_CURRENT_USER** 레지스트리 하이브입니다. 각 사용자의 값에 대 한 합니다 **LoadBehavior** HKEY_CURRENT_USER 하이브의 값에는 기본값을 재정의 **LoadBehavior** 에 정의 된 합니다 **HKEY_LOCAL_MACHINE** hive입니다.|  
-|**Manifest**|REG_SZ|필수 요소. VSTO 추가 기능에 대한 배포 매니페스트의 전체 경로입니다. 경로는 로컬 컴퓨터, 네트워크 공유(UNC) 또는 웹 서버(HTTP)의 위치일 수 있습니다.<br /><br /> Windows Installer를 사용하여 솔루션을 배포하는 경우 **매니페스트** 경로에 접두사 **file:///** 을 추가해야 합니다. 문자열도 추가 해야 합니다  **&#124;vstolocal** (즉, 파이프 문자 **&#124;** 뒤 **vstolocal**)이이 경로 끝에 있습니다. 그러면 솔루션이 ClickOnce 캐시가 아니라 설치 폴더에서 로드됩니다. 자세한 내용은 [Windows Installer를 사용 하 여 Office 솔루션 배포](../vsto/deploying-an-office-solution-by-using-windows-installer.md)합니다. **참고:** Visual Studio를 자동으로 추가 빌드할 때 VSTO 추가 기능에 개발 컴퓨터에는  **&#124;vstolocal** 문자열을이 레지스트리 항목입니다.|  
+|**설명**|REG_SZ|필수. VSTO 추가 기능에 대한 간략한 설명입니다.<br /><br /> 이 설명은 사용자가 Microsoft Office 애플리케이션의 **옵션** 대화 상자에 있는 **추가 기능** 창의 VSTO 추가 기능을 선택했을 때 표시됩니다.|  
+|**FriendlyName**|REG_SZ|필수. Microsoft Office 애플리케이션의 **COM 추가 기능** 대화 상자에 표시되는 VSTO 추가 기능에 대한 설명이 포함된 이름입니다. 기본값은 VSTO 추가 기능 ID입니다.|  
+|**LoadBehavior**|REG_DWORD|필수. 애플리케이션에서 VSTO 추가 기능 및 VSTO 추가 기능의 현재 상태(로드 또는 언로드)를 로드하려고 할 때 지정하는 값입니다.<br /><br /> 기본적으로 이 항목은 시작 시 VSTO 추가 기능을 로드하도록 지정하는 3으로 설정됩니다. 자세한 내용은 [LoadBehavior 값](#LoadBehavior)합니다. **참고:**  수정에서 VSTO 추가 기능 비활성화 하면 사용자, **LoadBehavior** 값을 **HKEY_CURRENT_USER** 레지스트리 하이브입니다. 각 사용자의 값에 대 한 합니다 **LoadBehavior** HKEY_CURRENT_USER 하이브의 값에는 기본값을 재정의 **LoadBehavior** 에 정의 된 합니다 **HKEY_LOCAL_MACHINE** hive입니다.|  
+|**Manifest**|REG_SZ|필수 요소. VSTO 추가 기능에 대한 배포 매니페스트의 전체 경로입니다. 경로는 로컬 컴퓨터, 네트워크 공유(UNC) 또는 웹 서버(HTTP)의 위치일 수 있습니다.<br /><br /> Windows Installer를 사용하여 솔루션을 배포하는 경우 **매니페스트** 경로에 접두사 **file:///** 을 추가해야 합니다. 문자열도 추가 해야 합니다  **&#124;vstolocal** (즉, 파이프 문자 **&#124;** 뒤 **vstolocal**)이이 경로 끝에 있습니다. 그러면 솔루션이 ClickOnce 캐시가 아니라 설치 폴더에서 로드됩니다. 자세한 내용은 [Windows Installer를 사용 하 여 Office 솔루션 배포](../vsto/deploying-an-office-solution-by-using-windows-installer.md)합니다. **참고:**  Visual Studio를 자동으로 추가 빌드할 때 VSTO 추가 기능에 개발 컴퓨터에는  **&#124;vstolocal** 문자열을이 레지스트리 항목입니다.|  
   
 ###  <a name="OutlookEntries"></a> Outlook 양식 영역에 대 한 레지스트리 항목  
  Outlook용 VSTO 추가 기능에 사용자 지정 양식 영역을 만들 경우 추가 레지스트리 항목을 사용하여 Outlook에 양식 영역을 등록합니다. 이러한 항목은 양식 영역을 지원하는 각 메시지 클래스에 대한 다른 레지스트리 키 아래에 만들어집니다. 다음 위치에서 이러한 레지스트리 키가 있는 *루트* 됩니다 **HKEY_CURRENT_USER** 또는 **HKEY_LOCAL_MACHINE**합니다.  
@@ -91,26 +88,24 @@ ms.locfileid: "50673018"
  양식 영역 레지스트리 항목에 대 한 자세한 내용은 참조 하세요. [사용자 지정 양식에서 양식 영역의 위치를 지정](/office/vba/outlook/Concepts/Creating-Form-Regions/specify-the-location-of-a-form-region-in-a-custom-form)합니다. Outlook 양식 영역에 대 한 자세한 내용은 참조 하세요. [만들 Outlook 양식 영역](../vsto/creating-outlook-form-regions.md)합니다.  
   
 ##  <a name="LoadBehavior"></a> LoadBehavior 값  
- 합니다 **LoadBehavior** 아래에 있는 항목을 *루트*\Software\Microsoft\Office\\*응용 프로그램 이름*\Addins\\*추가 ID* 키에는 VSTO 추가 기능의 런타임 동작을 지정 하는 값의 비트 조합입니다. 가장 낮은 순서 비트(값 0과 1)는 VSTO 추가 기능이 현재 로드되었는지 여부를 나타냅니다. 다른 비트는 응용 프로그램에서 VSTO 추가 기능을 로드하는 시기를 나타냅니다.  
+ 합니다 **LoadBehavior** 아래에 있는 항목을 *루트*\Software\Microsoft\Office\\*응용 프로그램 이름*\Addins\\*추가 ID* 키에는 VSTO 추가 기능의 런타임 동작을 지정 하는 값의 비트 조합입니다. 가장 낮은 순서 비트(값 0과 1)는 VSTO 추가 기능이 현재 로드되었는지 여부를 나타냅니다. 다른 비트는 애플리케이션에서 VSTO 추가 기능을 로드하는 시기를 나타냅니다.  
   
  일반적으로 **LoadBehavior** 항목 0, 3 또는 16 (10 진수)로 설정 됩니다는 VSTO 추가-설치 될 때 최종 사용자 컴퓨터에 있습니다. VSTO 추가 기능을 빌드하거나 게시할 때, 기본적으로 Visual Studio는 VSTO 추가 기능의 **LoadBehavior** 항목을 3으로 설정합니다.  
   
- 다음 표에서는 **LoadBehavior** 항목의 가능한 모든 값을 모두 보여 줍니다. 이 표의 일부 설명은 VSTO 추가 기능 수동으로 또는 프로그래밍 방식으로 로드를 참조합니다. VSTO 추가 기능을 수동으로 로드하려면 응용 프로그램의 **COM 추가 기능** 대화 상자에서 VSTO 추가 기능 옆에 있는 확인란을 선택합니다. VSTO 추가 기능을 프로그래밍 방식으로 로드하려면 <xref:Microsoft.Office.Core.COMAddIn.Connect%2A> 에 대한 VSTO 추가 기능을 나타내는 <xref:Microsoft.Office.Core.COMAddIn> 개체의 **P:Microsoft.Office.Core.COMAddIn.Connect**를 참조하세요.  
+ 다음 표에서는 **LoadBehavior** 항목의 가능한 모든 값을 모두 보여 줍니다. 이 표의 일부 설명은 VSTO 추가 기능 수동으로 또는 프로그래밍 방식으로 로드를 참조합니다. VSTO 추가 기능을 수동으로 로드하려면 애플리케이션의 **COM 추가 기능** 대화 상자에서 VSTO 추가 기능 옆에 있는 확인란을 선택합니다. VSTO 추가 기능을 프로그래밍 방식으로 로드하려면 <xref:Microsoft.Office.Core.COMAddIn.Connect%2A> 에 대한 VSTO 추가 기능을 나타내는 <xref:Microsoft.Office.Core.COMAddIn> 개체의 **P:Microsoft.Office.Core.COMAddIn.Connect**를 참조하세요.  
   
 |값(10 진수)|VSTO 추가 기능 상태|VSTO 추가 기능 로드 동작|설명|  
 |--------------------------|-------------------------|--------------------------------|-----------------|  
-|0|언로드됨|자동으로 로드하지 않음|응용 프로그램이 VSTO 추가 기능을 자동으로 로드하지 않습니다. 사용자는 VSTO 추가 기능을 수동으로 로드하거나, VSTO 추가 기능을 프로그래밍 방식으로 로드할 수 있습니다.<br /><br /> VSTO 추가 기능이 성공적으로 로드되면 **LoadBehavior** 값은 0으로 유지되지만 **COM 추가 기능** 대화 상자의 VSTO 추가 기능 상태는 업데이트되어 VSTO 추가 기능이 로드된 것으로 나타납니다.|  
-|1|로드됨|자동으로 로드하지 않음|응용 프로그램이 VSTO 추가 기능을 자동으로 로드하지 않습니다. 사용자는 VSTO 추가 기능을 수동으로 로드하거나, VSTO 추가 기능을 프로그래밍 방식으로 로드할 수 있습니다.<br /><br /> 하지만 합니다 **COM 추가 기능** 대화 상자에 나타나지만, VSTO 추가 기능에 응용 프로그램이 시작 된 후 로드 됩니다 VSTO 추가 기능에 수동으로 또는 프로그래밍 방식으로 로드 될 때까지 로드 되지 않습니다.<br /><br /> 응용 프로그램에서 VSTO 추가 기능을 성공적으로 로드하면 **LoadBehavior** 값이 0으로 바뀌며, 응용 프로그램을 종료하면 0으로 유지됩니다.|  
-|2|언로드됨|시작 시 로드|응용 프로그램이 VSTO 추가 기능을 자동으로 로드하지 않습니다. 사용자는 VSTO 추가 기능을 수동으로 로드하거나, VSTO 추가 기능을 프로그래밍 방식으로 로드할 수 있습니다.<br /><br /> 응용 프로그램에서 VSTO 추가 기능을 성공적으로 로드하면 **LoadBehavior** 값이 3으로 바뀌며, 응용 프로그램을 종료하면 3으로 유지됩니다.|  
-|3|로드됨|시작 시 로드|응용 프로그램을 시작하면 응용 프로그램에서 VSTO 추가 기능을 로드합니다. Visual Studio에서 VSTO 추가 기능을 빌드하거나 게시할 때 기본값입니다.<br /><br /> 응용 프로그램이 VSTO 추가 기능을 성공적으로 로드하면 **LoadBehavior** 값이 3으로 유지됩니다. VSTO 추가 기능을 로드할 때 오류가 발생하면 **LoadBehavior** 값이 2로 바뀌며, 응용 프로그램을 종료하면 2로 유지됩니다.|  
-|8|언로드됨|요청 시 로드|응용 프로그램이 VSTO 추가 기능을 자동으로 로드하지 않습니다. 사용자는 VSTO 추가 기능을 수동으로 로드하거나, VSTO 추가 기능을 프로그래밍 방식으로 로드할 수 있습니다.<br /><br /> 응용 프로그램이 VSTO 추가 기능을 성공적으로 로드하면 **LoadBehavior** 값이 9로 바뀝니다.|  
-|10|로드됨|요청 시 로드|사용자가 VSTO 추가 기능의 기능을 사용하는 UI 요소를 클릭할 때처럼(예: 리본의 사용자 지정 단추), VSTO 추가 기능은 응용 프로그램에서 필요로 하는 경우에만 로드됩니다.<br /><br /> 응용 프로그램에서 VSTO 추가 기능을 성공적으로 로드하면 **LoadBehavior** 값은 9로 유지되지만 **COM 추가 기능** 대화 상자의 VSTO 추가 기능 상태는 업데이트되어 VSTO 추가 기능이 현재 로드된 것으로 나타납니다. VSTO 추가 기능을 로드할 때 오류가 발생하는 경우는 **LoadBehavior** 값이 8로 바뀝니다.|  
-|16|로드됨|처음으로 로드한 다음 요청 시 로드|VSTO 추가 기능이 요청 시 로드되도록 하려면 이 값을 설정합니다. 사용자가 응용 프로그램을 처음으로 실행할 때 응용 프로그램에서 VSTO 추가 기능을 로드합니다. 사용자가 다음에 응용 프로그램을 실행하면 응용 프로그램에서 VSTO 추가 기능에서 정의한 UI 요소를 로드합니다. 그러나 사용자가 VSTO 추가 기능과 연결된 UI 요소를 클릭할 때까지 VSTO 추가 기능은 로드되지 않습니다.<br /><br /> 응용 프로그램에서 처음으로 VSTO 추가 기능을 로드할 때 VSTO 추가 기능이 로드되는 동안 **LoadBehavior** 값은 16으로 유지됩니다. 응용 프로그램을 닫은 후에는 **LoadBehavior** 값이 9로 바뀝니다.|  
+|0|언로드됨|자동으로 로드하지 않음|애플리케이션이 VSTO 추가 기능을 자동으로 로드하지 않습니다. 사용자는 VSTO 추가 기능을 수동으로 로드하거나, VSTO 추가 기능을 프로그래밍 방식으로 로드할 수 있습니다.<br /><br /> VSTO 추가 기능이 성공적으로 로드되면 **LoadBehavior** 값은 0으로 유지되지만 **COM 추가 기능** 대화 상자의 VSTO 추가 기능 상태는 업데이트되어 VSTO 추가 기능이 로드된 것으로 나타납니다.|  
+|1|로드됨|자동으로 로드하지 않음|애플리케이션이 VSTO 추가 기능을 자동으로 로드하지 않습니다. 사용자는 VSTO 추가 기능을 수동으로 로드하거나, VSTO 추가 기능을 프로그래밍 방식으로 로드할 수 있습니다.<br /><br /> 하지만 합니다 **COM 추가 기능** 대화 상자에 나타나지만, VSTO 추가 기능에 응용 프로그램이 시작 된 후 로드 됩니다 VSTO 추가 기능에 수동으로 또는 프로그래밍 방식으로 로드 될 때까지 로드 되지 않습니다.<br /><br /> 애플리케이션에서 VSTO 추가 기능을 성공적으로 로드하면 **LoadBehavior** 값이 0으로 바뀌며, 애플리케이션을 종료하면 0으로 유지됩니다.|  
+|2|언로드됨|시작 시 로드|애플리케이션이 VSTO 추가 기능을 자동으로 로드하지 않습니다. 사용자는 VSTO 추가 기능을 수동으로 로드하거나, VSTO 추가 기능을 프로그래밍 방식으로 로드할 수 있습니다.<br /><br /> 애플리케이션에서 VSTO 추가 기능을 성공적으로 로드하면 **LoadBehavior** 값이 3으로 바뀌며, 애플리케이션을 종료하면 3으로 유지됩니다.|  
+|3|로드됨|시작 시 로드|애플리케이션을 시작하면 애플리케이션에서 VSTO 추가 기능을 로드합니다. Visual Studio에서 VSTO 추가 기능을 빌드하거나 게시할 때 기본값입니다.<br /><br /> 애플리케이션이 VSTO 추가 기능을 성공적으로 로드하면 **LoadBehavior** 값이 3으로 유지됩니다. VSTO 추가 기능을 로드할 때 오류가 발생하면 **LoadBehavior** 값이 2로 바뀌며, 애플리케이션을 종료하면 2로 유지됩니다.|  
+|8|언로드됨|요청 시 로드|애플리케이션이 VSTO 추가 기능을 자동으로 로드하지 않습니다. 사용자는 VSTO 추가 기능을 수동으로 로드하거나, VSTO 추가 기능을 프로그래밍 방식으로 로드할 수 있습니다.<br /><br /> 애플리케이션이 VSTO 추가 기능을 성공적으로 로드하면 **LoadBehavior** 값이 9로 바뀝니다.|  
+|10|로드됨|요청 시 로드|사용자가 VSTO 추가 기능의 기능을 사용하는 UI 요소를 클릭할 때처럼(예: 리본의 사용자 지정 단추), VSTO 추가 기능은 애플리케이션에서 필요로 하는 경우에만 로드됩니다.<br /><br /> 애플리케이션에서 VSTO 추가 기능을 성공적으로 로드하면 **LoadBehavior** 값은 9로 유지되지만 **COM 추가 기능** 대화 상자의 VSTO 추가 기능 상태는 업데이트되어 VSTO 추가 기능이 현재 로드된 것으로 나타납니다. VSTO 추가 기능을 로드할 때 오류가 발생하는 경우는 **LoadBehavior** 값이 8로 바뀝니다.|  
+|16|로드됨|처음으로 로드한 다음 요청 시 로드|VSTO 추가 기능이 요청 시 로드되도록 하려면 이 값을 설정합니다. 사용자가 애플리케이션을 처음으로 실행할 때 애플리케이션에서 VSTO 추가 기능을 로드합니다. 사용자가 다음에 애플리케이션을 실행하면 애플리케이션에서 VSTO 추가 기능에서 정의한 UI 요소를 로드합니다. 그러나 사용자가 VSTO 추가 기능과 연결된 UI 요소를 클릭할 때까지 VSTO 추가 기능은 로드되지 않습니다.<br /><br /> 애플리케이션에서 처음으로 VSTO 추가 기능을 로드할 때 VSTO 추가 기능이 로드되는 동안 **LoadBehavior** 값은 16으로 유지됩니다. 애플리케이션을 닫은 후에는 **LoadBehavior** 값이 9로 바뀝니다.|  
   
 ## <a name="see-also"></a>참고자료  
  [Visual Studio에서 Office 솔루션의 아키텍처](../vsto/architecture-of-office-solutions-in-visual-studio.md)   
  [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [Office 솔루션 빌드](../vsto/building-office-solutions.md)   
  [Office 솔루션 배포](../vsto/deploying-an-office-solution.md)  
-  
-  

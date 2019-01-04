@@ -1,9 +1,6 @@
 ---
 title: '방법: 프로그래밍 방식으로 문서 및 문서의 일부 보호'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9acef141944b106a9bace38fef8ede7041bfecc5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 030cc69a2a89f81f728afc4e6367ddd6c2d81990
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673883"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991112"
 ---
 # <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>방법: 프로그래밍 방식으로 문서 및 문서의 일부 보호
   Microsoft Office Word 문서에 보호를 추가하여 사용자의 문서 편집을 방지할 수 있습니다.  
@@ -62,7 +59,7 @@ ms.locfileid: "35673883"
   
 ## <a name="protect-a-document-by-using-a-vsto-add-in"></a>VSTO 추가 기능을 사용 하 여 문서를 보호 합니다.  
   
-### <a name="to-protect-a-document-by-using-an-application-level-vsto-add-in"></a>응용 프로그램 수준 VSTO 추가 기능을 사용하여 문서를 보호하려면  
+### <a name="to-protect-a-document-by-using-an-application-level-vsto-add-in"></a>애플리케이션 수준 VSTO 추가 기능을 사용하여 문서를 보호하려면  
   
 1.  보호하려는 <xref:Microsoft.Office.Interop.Word._Document.Protect%2A> 의 <xref:Microsoft.Office.Interop.Word.Document> 메서드를 호출합니다.  
   
@@ -77,5 +74,3 @@ ms.locfileid: "35673883"
  [방법: 제한 된 권한으로 문서 뒤에서 실행 하는 코드를 허용 합니다.](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
  [방법: Word 문서에 책갈피 컨트롤 추가](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
  [Office 솔루션을 만들고 디자인](../vsto/designing-and-creating-office-solutions.md)  
-  
-  

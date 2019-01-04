@@ -1,9 +1,6 @@
 ---
 title: ProjectItemFolder 요소 | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 54d47165117b88041346e9b666db8db17a20ddb9
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: fdecca0b987efd22d4ddd9d3555ede2601b8205e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119925"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855626"
 ---
 # <a name="projectitemfolder-element"></a>ProjectItemFolder 요소
   매핑된 폴더를 나타냅니다.  
@@ -61,12 +58,11 @@ ms.locfileid: "37119925"
   
 |||  
 |-|-|  
-|**네임스페이스**|http<nolink>: //schemas.microsoft.com/VisualStudio/2010/<br>SharePointTools/SharePointProjectItemModel|  
+|**Namespace**|http<nolink>: //schemas.microsoft.com/VisualStudio/2010/<br>SharePointTools/SharePointProjectItemModel|  
 |**스키마 이름**|SharePoint 프로젝트 항목 스키마|  
 |**유효성 검사 파일**|ProjectItemModelSchema.xsd|  
 |**비어 있을 수 있습니다.**|아니요|  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  [SharePoint 프로젝트 항목 스키마 참조](../sharepoint/sharepoint-project-item-schema-reference.md)   
  [방법: 매핑된 폴더 추가 및 제거](../sharepoint/how-to-add-and-remove-mapped-folders.md)  
-  

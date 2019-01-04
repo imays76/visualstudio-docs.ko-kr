@@ -3,8 +3,6 @@ title: '&lt;사용자 지정&gt; 요소 (Visual Studio에서 Office 개발)'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a93c5fcd5b8863a4f0f80e48caa915a11e092587
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 924199174e03842937b4add6a39300c718a7c161
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802214"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938487"
 ---
 # <a name="ltcustomizationgt-element-office-development-in-visual-studio"></a>&lt;사용자 지정&gt; 요소 (Visual Studio에서 Office 개발)
   `customization` 네임스페이스의 `vstov4` 요소는 특정 Office 솔루션에 대해 설명합니다. 문서 수준 사용자 지정 및 VSTO 추가 기능에 대한 자식 요소가 서로 다릅니다.
@@ -53,7 +51,7 @@ ms.locfileid: "53802214"
 ```
 
 ## <a name="elements-and-attributes"></a>요소 및 특성
- `customization` 요소에는 사용자 지정 관련 정보가 포함됩니다. 이 요소는 `vstov4=urn:schemas-microsoft-com:vsto.v4`네임스페이스에 있어야 합니다. 각 Office 솔루션에 대해 하나의 `customization` 요소가 있습니다. 예를 들어 다중 프로젝트 배포에서 세 개의 Office 솔루션을 배포하면 응용 프로그램 매니페스트에 세 개의 `customization` 요소가 있습니다.
+ `customization` 요소에는 사용자 지정 관련 정보가 포함됩니다. 이 요소는 `vstov4=urn:schemas-microsoft-com:vsto.v4`네임스페이스에 있어야 합니다. 각 Office 솔루션에 대해 하나의 `customization` 요소가 있습니다. 예를 들어 다중 프로젝트 배포에서 세 개의 Office 솔루션을 배포하면 애플리케이션 매니페스트에 세 개의 `customization` 요소가 있습니다.
 
  어셈블리의 자식 요소도 이 네임스페이스에 있어야 합니다.
 

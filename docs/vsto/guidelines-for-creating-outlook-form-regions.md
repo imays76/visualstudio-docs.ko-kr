@@ -1,9 +1,6 @@
 ---
 title: Outlook 양식 영역 만들기 지침
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d2a052cbad69f87c5b25005ff21959841af55f68
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: c5ecb22caaa7b86b4bc777b08e749d0fd75bd5e0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648757"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873251"
 ---
 # <a name="guidelines-to-create-outlook-form-regions"></a>Outlook 양식 영역 만들기 지침
   다음 정보를 통해 양식 영역을 최적화하고 잠재적인 문제를 방지할 수 있습니다.  
@@ -95,5 +92,3 @@ ms.locfileid: "53648757"
  [연습: Outlook 양식 영역 디자인](../vsto/walkthrough-designing-an-outlook-form-region.md)   
  [방법: Outlook 추가 기능 프로젝트에 양식 영역 추가](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
  [Outlook 메시지 클래스를 사용 하 여 양식 영역을 연결 합니다.](../vsto/associating-a-form-region-with-an-outlook-message-class.md)  
-  
-  

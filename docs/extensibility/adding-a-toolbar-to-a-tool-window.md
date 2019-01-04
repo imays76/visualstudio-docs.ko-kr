@@ -1,9 +1,6 @@
 ---
 title: 도구 창에 도구 모음 추가 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, adding toolbars
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59e540ec840bc7aadb2465c7f7c71433bf2ddb27
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 3eefb192c5e0ec660a614af8c32ecc34cc683888
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39150765"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934429"
 ---
 # <a name="add-a-toolbar-to-a-tool-window"></a>도구 창에 도구 모음을 추가 합니다.
 이 연습에는 도구 창에 도구 모음을 추가 하는 방법을 보여 줍니다.  
@@ -116,5 +113,5 @@ ms.locfileid: "39150765"
   
 3.  도구 모음에서 메시지를 표시할 아이콘을 클릭 **TWTestCommandPackage 내 TWToolbar.TWTestCommand.MenuItemCallback()** 합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [도구 모음 추가](../extensibility/adding-a-toolbar.md)

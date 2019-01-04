@@ -1,8 +1,6 @@
 ---
 title: 작업 창 개요
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e8c7136c1f97f531600799f3aede30170813cf0a
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: de9e6a7f148612716cee55b5a21a26f1bcf04d9b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305678"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821129"
 ---
 # <a name="actions-pane-overview"></a>작업 창 개요
   작업창은 사용자 지정 가능한 **문서 동작** 특정 Microsoft Office Word 문서 또는 Microsoft Office Excel 통합 문서에 연결 된 작업창 합니다. 작업창과 같은 다른 기본 제공 작업창과 함께 Office 작업창 내에서 호스트 되는 **XML 원본은** Excel에서 작업 창 또는 **스타일 및 서식** word에서 작업창입니다. Windows Forms 컨트롤 또는 WPF 컨트롤을 사용하여 작업 창 사용자 인터페이스를 디자인할 수 있습니다.
@@ -35,7 +33,7 @@ ms.locfileid: "52305678"
 > [!NOTE]  
 >  작업 창은 사용자 지정 작업창과 다릅니다. 사용자 지정 작업창은 특정 문서가 아니라 응용 프로그램과 연결됩니다. VSTO 추가 기능에서 일부 Microsoft Office 응용 프로그램에 대한 사용자 지정 작업창을 만들 수 있습니다. 자세한 내용은 [사용자 지정 작업창](../vsto/custom-task-panes.md)합니다.  
 
- ![비디오 링크](../vsto/media/playvideo.gif "비디오 링크") 관련된 비디오 데모를 참조 하세요. [How do i: 사용 하 여 WPF 컨트롤 Excel 작업 창의 내부?](http://go.microsoft.com/fwlink/?LinkId=132763)합니다.
+ ![비디오 링크](../vsto/media/playvideo.gif "비디오 링크") 관련된 비디오 데모를 참조 하세요. [어떻게 할까요? Excel 작업 창 내에서 WPF 컨트롤 사용 ](http://go.microsoft.com/fwlink/?LinkId=132763).
 
 ## <a name="display-the-actions-pane"></a>작업 창 표시  
  작업 창은 <xref:Microsoft.Office.Tools.ActionsPane> 클래스로 표현됩니다. 문서 수준 프로젝트를 만드는 경우 프로젝트에서 `ThisWorkbook`(Excel용) 또는 `ThisDocument`(Word용) 클래스의 `ActionsPane` 필드를 통해 코드에서 이 클래스의 인스턴스를 사용할 수 있습니다. 작업 창을 표시하려면 `ActionsPane` 필드의 <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> 속성에 Windows Forms 컨트롤을 추가합니다. 다음 코드 예제에서는 `actions`라는 컨트롤을 작업 창에 추가합니다.  
@@ -57,7 +55,7 @@ ms.locfileid: "52305678"
 
 3. 프로젝트에서 `ThisWorkbook`(Excel용) 또는 `ThisDocument`(Word용) 클래스의 `ActionsPane` 필드에 포함된 컨트롤에 사용자 지정 사용자 정의 컨트롤의 인스턴스를 추가합니다.  
 
-   이 프로세스를 자세히 보여 주는 예제를 보려면 [방법: Word 문서에 작업창을 추가 하거나 Excel 통합 문서](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)합니다.  
+   이 프로세스를 자세히 보여 주는 예제를 보려면 [방법: Excel 통합 문서 또는 Word 문서에 작업창 추가](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)합니다.  
 
 ## <a name="hide-the-actions-pane"></a>작업 창 숨기기  
  <xref:Microsoft.Office.Tools.ActionsPane> 클래스에는 <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> 메서드 및 <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> 속성이 있지만 <xref:Microsoft.Office.Tools.ActionsPane> 클래스 자체의 멤버를 사용하여 사용자 인터페이스에서 작업 창을 제거할 수 없습니다. 호출을 <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> 메서드 또는 설정 합니다 <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> 속성을 **false** ; 작업 창의 컨트롤만 숨겨집니다 작업창 숨겨지지 않습니다.  
@@ -94,7 +92,7 @@ ms.locfileid: "52305678"
 2.  에 **표시/숨기기** 그룹에서 클릭 합니다 **문서 동작** 토글 단추입니다.  
 
 ## <a name="program-actions-pane-events"></a>프로그램 작업 창 이벤트  
- 작업 창에 여러 개의 사용자 정의 컨트롤을 추가한 다음 사용자 정의 컨트롤을 표시하거나 숨겨 문서의 이벤트에 응답하는 코드를 작성할 수 있습니다. 문서에 XML 스키마 요소를 매핑하는 경우 삽입 지점이 XML 요소 중 하나의 내부에 있을 때마다 작업 창에 특정 사용자 정의 컨트롤을 표시할 수 있습니다. 자세한 내용은 참조 하세요. [방법: Visual Studio 내부의 Word 문서에 스키마 매핑](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md) 하 고 [방법: Visual Studio 내에서 워크시트에 스키마 매핑](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)합니다.  
+ 작업 창에 여러 개의 사용자 정의 컨트롤을 추가한 다음 사용자 정의 컨트롤을 표시하거나 숨겨 문서의 이벤트에 응답하는 코드를 작성할 수 있습니다. 문서에 XML 스키마 요소를 매핑하는 경우 삽입 지점이 XML 요소 중 하나의 내부에 있을 때마다 작업 창에 특정 사용자 정의 컨트롤을 표시할 수 있습니다. 자세한 내용은 [방법: Visual Studio 내부의 Word 문서에 스키마 매핑](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md) 고 [방법: Visual Studio 내에서 워크시트에 스키마 매핑](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)합니다.  
 
  호스트 컨트롤, 응용 프로그램 또는 문서 이벤트를 포함하여 개체의 이벤트에 응답하는 코드를 작성할 수도 있습니다. 자세한 내용은 [연습: NamedRange 컨트롤의 이벤트에 대 한 프로그램](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)합니다.  
 
@@ -107,7 +105,7 @@ ms.locfileid: "52305678"
  작업 창에 있는 컨트롤의 <xref:System.Windows.Forms.Control.Validating> 이벤트 처리기에 메시지 상자를 표시하는 경우 포커스가 두 번째로 컨트롤에서 메시지 상자로 이동할 때 이벤트가 발생할 수도 있습니다. 이 문제를 방지하려면 <xref:System.Windows.Forms.ErrorProvider> 컨트롤을 사용하여 유효성 검사 오류 메시지를 표시합니다.  
 
 ## <a name="user-control-stacking-order"></a>사용자 정의 컨트롤 스택 순서  
- 여러 개의 사용자 정의 컨트롤을 사용하는 경우 가로 또는 세로로 도킹하는지에 관계없이 작업 창에서 사용자 정의 컨트롤을 제대로 쌓는 코드를 작성할 수 있습니다. <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A> 속성의 <xref:Microsoft.Office.Tools.StackStyle> 열거형을 사용하여 작업 창의 사용자 정의 컨트롤 스택 순서를 설정할 수 있습니다. 자세한 내용은 참조 하세요. [방법: 작업 창에서 컨트롤 레이아웃 관리](../vsto/how-to-manage-control-layout-on-actions-panes.md)  
+ 여러 개의 사용자 정의 컨트롤을 사용하는 경우 가로 또는 세로로 도킹하는지에 관계없이 작업 창에서 사용자 정의 컨트롤을 제대로 쌓는 코드를 작성할 수 있습니다. <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A> 속성의 <xref:Microsoft.Office.Tools.StackStyle> 열거형을 사용하여 작업 창의 사용자 정의 컨트롤 스택 순서를 설정할 수 있습니다. 자세한 내용은 [방법: 작업 창에서 컨트롤 레이아웃 관리](../vsto/how-to-manage-control-layout-on-actions-panes.md)  
 
  <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A> 속성은 다음 <xref:Microsoft.Office.Tools.StackStyle> 열거형 값을 사용할 수 있습니다.  
 
@@ -153,13 +151,13 @@ ms.locfileid: "52305678"
  [!code-csharp[Trin_VstcoreActionsPaneWord#101](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#101)]
  [!code-vb[Trin_VstcoreActionsPaneWord#101](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#101)]  
 
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Office 솔루션에서 WPF 컨트롤 사용](../vsto/using-wpf-controls-in-office-solutions.md)   
  [Office UI 사용자 지정](../vsto/office-ui-customization.md)   
  [Office 프로젝트의 개체에 대 한 전역 액세스](../vsto/global-access-to-objects-in-office-projects.md)   
- [방법: Word 문서에 작업창을 추가 하거나 Excel 통합 문서](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
- [연습: 작업창에서 문서로 텍스트 삽입](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)   
+ [방법: Word 문서 또는 Excel 통합 문서에 작업 창 추가](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
+ [연습: 작업 창에서 문서로 텍스트 삽입](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)   
  [연습: Word 작업 창의 컨트롤에 데이터 바인딩](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)   
  [연습: Excel 작업 창의 컨트롤에 데이터 바인딩](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md)   
  [방법: 작업 창에서 컨트롤 레이아웃 관리](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
- [연습: 작업창에서 문서로 텍스트 삽입](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
+ [연습: 작업 창에서 문서로 텍스트 삽입](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  

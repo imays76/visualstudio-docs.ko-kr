@@ -1,9 +1,6 @@
 ---
 title: DBG_ATTRIB_FLAGS | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - DBG_ATTRIB_FLAGS
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 774bef7a3f28c973c9569544556d3033ede0093d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2df250545963ad29a609ebe9202c554f646eef74
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107740"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840046"
 ---
 # <a name="dbgattribflags"></a>DBG_ATTRIB_FLAGS
-에 대 한 다양 한 특성에 설명 된 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 또는 [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) 인터페이스입니다. 멤버는 [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) 구조입니다.  
+에 대 한 다양 한 특성에 설명 합니다는 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 요소나 [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) 인터페이스입니다. 멤버는 [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) 구조입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -176,43 +173,43 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
  참조 또는 속성에 자식이 있음을 나타냅니다.  
   
  DBG_ATTRIB_OBJ_HAS_ID  
- 이 개체에 대 한 ID 만들어졌음을 나타냅니다.  
+ 이 개체의 ID가 생성 되었음을 나타냅니다.  
   
  DBG_ATTRIB_OBJ_CAN_HAVE_ID  
- 이 개체에 대 한 ID를 만들 수 있음을 나타냅니다.  
+ 이 개체의 ID를 만들 수 있음을 나타냅니다.  
   
  DBG_ATTRIB_VALUE_READONLY  
  값이 읽기 전용임을 나타냅니다.  
   
  DBG_ATTRIB_VALUE_ERROR  
- 값이 오류 인지를 나타냅니다.  
+ 오류 값 임을 나타냅니다.  
   
  DBG_ATTRIB_VALUE_SIDE_EFFECT  
- 평가 부작용 나타냅니다.  
+ 평가 부작용을 나타냅니다.  
   
  DBG_ATTRIB_OVERLOADED_CONTAINER  
  이 속성은 실제로 오버 로드의 컨테이너를 나타냅니다.  
   
  DBG_ATTRIB_VALUE_BOOLEAN  
- 나타냅니다 값 `DEBUG_PROPERTY_INFO::bstrValue` 부울입니다.  
+ 함을 값 `DEBUG_PROPERTY_INFO::bstrValue` 부울입니다.  
   
  DBG_ATTRIB_VALUE_BOOLEAN_TRUE  
- 나타냅니다 값 `DEBUG_PROPERTY_INFO::bstrValue` 부울 및 `TRUE`합니다.  
+ 함을 값 `DEBUG_PROPERTY_INFO::bstrValue` 부울 및 `TRUE`합니다.  
   
  DBG_ATTRIB_VALUE_INVALID  
  `DEBUG_PROPERTY_INFO::bstrValue`의 값이 유효하지 않음을 나타냅니다.  
   
  DBG_ATTRIB_VALUE_NAT  
- 나타냅니다 값 `DEBUG_PROPERTY_INFO::bstrValue` 은 "*작업 하지*" (NAT). NAT는 지연 된 잘못 된 예외를 나타내는 Intel 64 비트 프로세서의 레지스터 플래그를 설명 합니다.  
+ 함을 값 `DEBUG_PROPERTY_INFO::bstrValue` 는 "*것 없습니다*" (NAT). NAT는 지연 된 잘못 된 예외를 나타내는 Intel 64 비트 프로세서의 레지스터 플래그를 설명 합니다.  
   
  DBG_ATTRIB_VALUE_AUTOEXPANDED  
- 나타냅니다 값 `DEBUG_PROPERTY_INFO::bstrValue` 자동 확장 된 것 같습니다.  
+ 함을 값 `DEBUG_PROPERTY_INFO::bstrValue` 자동 확장 되었습니다 수 있습니다.  
   
  DBG_ATTRIB_VALUE_TIMEOUT  
- 평가 시간 초과 나타냅니다.  
+ 평가 시간이 초과 되었습니다를 나타냅니다.  
   
  DBG_ATTRIB_VALUE_RAW_STRING  
- 나타냅니다 값 `DEBUG_PROPERTY_INFO::bstrValue` 원시 문자열에 의해 나타낼 수 있습니다.  
+ 함을 값 `DEBUG_PROPERTY_INFO::bstrValue` 원시 문자열로 나타낼 수 있습니다.  
   
  DBG_ATTRIB_VALUE_CUSTOM_VIEWER  
  이 속성에 연결 된 하나 이상의 사용자 지정 뷰어 있음을 나타냅니다.  
@@ -233,7 +230,7 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
  최종 액세스 권한이 있는 개체를 나타냅니다.  
   
  DBG_ATTRIB_ACCESS_ALL  
- 액세스 특성을 추출할 마스크 `DBG_ATTRIB_FLAGS`합니다.  
+ 마스크의 액세스 특성을 추출할 `DBG_ATTRIB_FLAGS`합니다.  
   
  DBG_ATTRIB_STORAGE_NONE  
  저장소 형식이 지정 되지 않은 임을 나타냅니다.  
@@ -248,25 +245,25 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
  레지스터에 저장소를 나타냅니다.  
   
  DBG_ATTRIB_STORAGE_ALL  
- 저장소 특성을 추출할 마스크 `DBG_ATTRIB_FLAGS`합니다.  
+ 저장소 특성을 추출 하는 마스크 `DBG_ATTRIB_FLAGS`합니다.  
   
  DBG_ATTRIB_TYPE_NONE  
- 형식 한정자 없는 임을 나타냅니다.  
+ 어떠한 형식 한정자 임을 나타냅니다.  
   
  DBG_ATTRIB_TYPE_VIRTUAL  
- 개체의 유형 가상 임을 나타냅니다.  
+ 개체의 형식 가상 임을 나타냅니다.  
   
  DBG_ATTRIB_TYPE_CONSTANT  
  개체 형식이 상수임을 나타냅니다.  
   
  DBG_ATTRIB_TYPE_SYNCHRONIZED  
- 개체 유형 동기화 되었음을 나타냅니다.  
+ 개체 유형의 동기화 있는지를 나타냅니다.  
   
  DBG_ATTRIB_TYPE_VOLATILE  
- 개체의 유형을 일시적 임을 나타냅니다.  
+ 개체의 형식 일시적 임을 나타냅니다.  
   
  DBG_ATTRIB_TYPE_ALL  
- 형식 특성을 추출할 마스크 `DBG_ATTRIB_FLAGS`합니다.  
+ 형식 특성을 추출 하는 마스크 `DBG_ATTRIB_FLAGS`합니다.  
   
  DBG_ATTRIB_DATA  
  이 개체는 데이터 필드를 나타냅니다.  
@@ -290,10 +287,10 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
  이 개체는 내부 클래스를 나타냅니다.  
   
  DBG_ATTRIB_MOSTDERIVED  
- 이 개체는 나타냅니다 '*가장 많이 파생 된*'. 용어 "*가장 많이 파생 된*" 개체의 실제 형식과 참조 형식이 아닌 것을 의미 합니다.  
+ 이 개체가 나타내는 '*가장 많이 파생 된*'. 용어 "*가장 많이 파생 된*" 개체의 실제 형식 및 해당 참조 형식이 아닌 것을 의미 합니다.  
   
  DBG_ATTRIB_CHILD_ALL  
- 마스크 나타냅니다 `DBG_ATTRIB_DATA` 통해 `DBG_ATTRIB_MOSTDERIVED`합니다.  
+ 마스크는 나타냅니다 `DBG_ATTRIB_DATA` 를 통해 `DBG_ATTRIB_MOSTDERIVED`합니다.  
   
  DBG_ATTRIB_MULTI_CUSTOM_VIEWERS  
  개체에 연결 된 여러 사용자 지정 뷰어 있음을 나타냅니다.  
@@ -301,18 +298,18 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
 ## <a name="remarks"></a>설명  
   
 > [!NOTE]
->  이 열거형의 값 실제로 C#에 대 한 어셈블리에 정의 되지 않습니다. 대신, 정의가 소스 파일을 복사 해야 합니다.  
+>  이 열거형의 값을 C#에 대 한 어셈블리에서 실제로 정의 되지 않습니다. 대신 정의 소스 파일을 복사 해야 합니다.  
   
- 이러한 플래그를 사용 하는 개체의 자식에 대 한 인수로 전달 될 때 필터링 [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)합니다. 값에 비트와 함께 `OR`합니다.  
+ 이러한 플래그에 대 한 인수로 전달 하는 경우 예를 들어 개체의 자식을 필터링 할 수도 있습니다 [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)합니다. 비트 값을 결합할 수 있습니다 `OR`합니다.  
   
- `DBG_ATTRIB_VALUE_CUSTOM_VIEWER` 플래그를 나타내는 값을는 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 얻으려고는 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) 에서 인터페이스는 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 인터페이스 및 호출 [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) 사용자 지정 뷰어 중 목록에 대 한 합니다.  
+ 합니다 `DBG_ATTRIB_VALUE_CUSTOM_VIEWER` 플래그를 표시 하는 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 가져오려고 합니다 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) 에서 인터페이스를 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 인터페이스를 호출 [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) 사용자 지정 뷰어 목록에 대 한 합니다.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>참고 항목  
  [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

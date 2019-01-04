@@ -1,12 +1,8 @@
 ---
 title: 대체 가능 매개 변수 | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,12 +14,12 @@ author: TerryGLee
 ms.author: tglee
 manager: douge
 ms.workload: office
-ms.openlocfilehash: 1d1b606d4416da10c329a7421378ea979a2fa4cf
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: 762ef5ca27fade9a8ec58f6e0b7f5b60e4baaccb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684693"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989167"
 ---
 # <a name="replaceable-parameters"></a>대체 가능 매개 변수
   대체 가능 매개 변수 또는 *토큰*, 실제 값을 갖는 디자인 타임에 알려지지 않은 SharePoint 솔루션 항목에 대 한 값을 제공 하려면 프로젝트 파일 내에서 사용할 수 있습니다. 표준 비슷합니다 함수에서 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 템플릿 토큰입니다. 자세한 내용은 [템플릿 매개 변수](../ide/template-parameters.md)합니다.  

@@ -2,7 +2,6 @@
 title: 'CA1714: 플래그 열거형에는 복수형 이름을 사용해야 합니다.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - FlagsEnumsShouldHavePluralNames
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc24a758d5c3c124267e4c967c6eb4afd1364cc2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cf78041d61da991804a4dcdb0f924dc4a5f489e3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49871552"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881815"
 ---
 # <a name="ca1714-flags-enums-should-have-plural-names"></a>CA1714: 플래그 열거형에는 복수형 이름을 사용해야 합니다.
 
@@ -47,9 +46,9 @@ ms.locfileid: "49871552"
  이름이 복수형 단어 이지만 끝나지 위반을 보류 하려면 안전의 '. 예를 들어, 이전에 설명 된 여러 날짜 열거형 'DaysOfTheWeek' 이름이 지정 된,이 규칙이 있지만 의도 하지 논리를 위반 것입니다. 이러한 위반 되지 않아야 합니다.
 
 ## <a name="related-rules"></a>관련된 규칙
- [CA1027: 열거형을 FlagsAttribute로 표시하십시오.](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+ [CA1027: 열거형을 FlagsAttribute로 표시](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
- [CA2217: 열거형을 FlagsAttribute로 표시하지 마십시오.](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+ [CA2217: 열거형을 FlagsAttribute로 표시 하지 마십시오.](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>참고자료
 

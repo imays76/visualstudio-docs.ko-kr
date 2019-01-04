@@ -1,9 +1,6 @@
 ---
 title: Outlook 양식 영역 만들기
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - MICROSOFT.OFFICE.TOOLS.OUTLOOK.FORMREGION
@@ -19,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 77dcdecc766b253eb0cafb808bec8cb48294d6fa
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 7b5145701f72bed183dbcff3c3fbe48f757740f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441732"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842202"
 ---
 # <a name="create-outlook-form-regions"></a>Outlook 양식 영역 만들기
   양식 영역을 사용하여 Microsoft Office Outlook 양식을 사용자 지정할 수 있습니다. Visual Studio는 양식 영역을 쉽게 디자인, 개발 및 디버그할 수 있도록 하는 고급 도구를 제공합니다.  
@@ -154,7 +151,7 @@ ms.locfileid: "53441732"
 ###  <a name="HandlingFormRegionEvents"></a> 양식 영역 이벤트 처리  
  합니다 **Outlook 양식 영역** 항목 양식 영역 코드 파일에 다음 세 개의 이벤트 처리기를 자동으로 추가 합니다.  
   
-|이벤트(event)|설명|  
+|이벤트|설명|  
 |-----------|-----------------|  
 |FormRegionInitializing|양식 영역을 초기화하기 전에 발생합니다. 이 이벤트 처리기의 조건을 검사하여 Outlook에서 양식 영역을 표시할지 여부를 확인할 수 있습니다. 자세한 내용은 [방법: Outlook에서 양식 영역 표시 하지 않기](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)합니다.|  
 |FormRegionShowing|양식 영역의 인스턴스가 만들어진 후 양식 영역이 표시되기 전에 발생합니다.|  
@@ -190,4 +187,3 @@ ms.locfileid: "53441732"
 |[방법: Outlook에서 양식 영역 표시 하지 않기](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)|Microsoft Office Outlook에서 특정 항목에 대한 양식 영역을 표시하지 않도록 하는 방법을 보여 줍니다.|  
 |양식 영역이 표시되는 Outlook 항목에 액세스하는 방법을 보여 줍니다.|  
 |[Outlook 양식 영역의 사용자 지정 작업](../vsto/custom-actions-in-outlook-form-regions.md)|사용자가 Outlook 항목에 응답할 수 있도록 하는 방법을 설명합니다.|  
-  

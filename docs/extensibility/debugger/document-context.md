@@ -1,9 +1,6 @@
 ---
 title: 컨텍스트 문서 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], contexts
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef82c6533eddf32dd8315193531a57e2e7328ad9
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: dffe0c72a20acc10b45ef12068ba95015db2276f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203562"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852890"
 ---
 # <a name="document-context"></a>문서 컨텍스트
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 디버깅 하는 *문서 컨텍스트*:  
@@ -29,7 +26,7 @@ ms.locfileid: "39203562"
   
 -   에 의해 구현 되는 [IDebugDocumentContext2](../../extensibility/debugger/reference/idebugdocumentcontext2.md) 인터페이스입니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [코드 컨텍스트](../../extensibility/debugger/code-context.md)   
  [기호 공급자](../../extensibility/debugger/symbol-provider.md)   
  [기호 공급자 인터페이스](../../extensibility/debugger/reference/symbol-provider-interfaces.md)   

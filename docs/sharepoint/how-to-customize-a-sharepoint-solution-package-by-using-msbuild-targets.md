@@ -1,13 +1,8 @@
 ---
 title: '방법: MSBuild 대상을 사용 하 여 SharePoint 솔루션 패키지 사용자 지정 | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -17,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 434d673c62d0b26efa1559db7d7d98747146fd2d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ad63fd1bbf5f3f41b86368b9215dab670b64f2e3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49889691"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939288"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>방법: MSBuild 대상을 사용 하 여 SharePoint 솔루션 패키지 사용자 지정
   명령 프롬프트에서 MSBuild 대상을 사용 하 여 사용자 지정할 수 있습니다 Visual Studio에서 SharePoint 패키지 파일을 만드는 방법을 (*.wsp*). 예를 들어 MSBuild 속성을 사용자 지정하여 패키징 중간 디렉터리 및 열거되는 파일을 지정하는 MSBuild 항목 그룹을 변경할 수 있습니다.  
@@ -86,4 +81,3 @@ ms.locfileid: "49889691"
   
 ## <a name="see-also"></a>참고자료
  [패키지 및 SharePoint 솔루션 배포](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

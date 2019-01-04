@@ -2,7 +2,6 @@
 title: 'CA2116: APTCA 메서드는 APTCA 메서드만 호출해야 합니다.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - AptcaMethodsShouldOnlyCallAptcaMethods
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7decf94644bdb055f38c267c945dc0dcc813550a
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 03c00efe53a5385d7604d0191ff60ae70888e655
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547921"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954437"
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116: APTCA 메서드는 APTCA 메서드만 호출해야 합니다.
 
@@ -80,9 +79,9 @@ ClassRequiringFullTrust.DoWork was called.
 
 ## <a name="related-rules"></a>관련된 규칙
 
-- [CA2117: APTCA 형식은 APTCA 기본 형식만 확장해야 합니다.](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)
+- [CA2117: APTCA 형식은 APTCA 기본 형식만 확장 해야](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [보안 코딩 지침](/dotnet/standard/security/secure-coding-guidelines)
 - [부분적으로 신뢰할 수 있는 코드에서 라이브러리 사용](/dotnet/framework/misc/using-libraries-from-partially-trusted-code)

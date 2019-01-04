@@ -1,9 +1,6 @@
 ---
 title: IntelliSense 호스팅 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - IntelliSense hosting
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28fc8ca212574c054add28e69a409fde4f58308a
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 2ba74b54e074a7522783e63c367586a943607857
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638836"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838179"
 ---
 # <a name="intellisense-hosting"></a>IntelliSense 호스팅
 Visual Studio IntelliSense 호스팅 수 있습니다. Visual Studio 텍스트 편집기에서 호스트 되지 않는 코드에 대 한 IntelliSense를 제공 하면 IntellSense 있습니다 호스팅.  
@@ -50,5 +47,5 @@ Visual Studio IntelliSense 호스팅 수 있습니다. Visual Studio 텍스트 �
 #### <a name="ivsintellisensecompletor"></a>IVsIntellisenseCompletor  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseCompletor> 인터페이스는 통합된 개발 환경 (IDE)에서 사용 되는 표준 완료 창의 공동 creatable 버전입니다. 모든 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost> 인터페이스가 completor 인터페이스를 사용 하 여 IntelliSense를 신속 하 게 구현할 수 있습니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  <xref:Microsoft.VisualStudio.TextManager.Interop>

@@ -1,9 +1,6 @@
 ---
 title: '방법: 프로그래밍 방식으로 기존 문서 열기'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dd9e120283c392978a21fa9f796f9eed5e3dab31
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 2163ddc7db3f0fbcf32abaa8c845b3838e9d2c98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258725"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932157"
 ---
 # <a name="how-to-programmatically-open-existing-documents"></a>방법: 프로그래밍 방식으로 기존 문서 열기
   <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> 정규화 된 경로 및 파일 이름으로 지정 된 기존 Microsoft Office Word 문서를 엽니다. 이 메서드는 반환 된 <xref:Microsoft.Office.Interop.Word.Document> 열린된 문서를 나타내는입니다.  
@@ -47,9 +44,7 @@ ms.locfileid: "35258725"
   
 -   라는 문서가 *NewDocument.doc* 라는 디렉터리에 있어야 *테스트* 에서 C 드라이브입니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [방법: 프로그래밍 방식으로 새 문서 만들기](../vsto/how-to-programmatically-create-new-documents.md)   
  [방법: 프로그래밍 방식으로 문서 닫기](../vsto/how-to-programmatically-close-documents.md)   
  [Office 솔루션의 선택적 매개 변수](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

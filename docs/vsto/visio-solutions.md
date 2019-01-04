@@ -1,9 +1,6 @@
 ---
 title: Visio 솔루션
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,19 +17,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c7fc3f699cd33f2bb45487ca1329d812cfbeb950
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: ce1de2fae3fe9b5543a779bb3cad95ef8e8b38e1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671549"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885011"
 ---
 # <a name="visio-solutions"></a>Visio 솔루션
   Visual Studio에서는 Microsoft Office Visio용 VSTO 추가 기능을 만드는 데 사용할 수 있는 프로젝트 템플릿을 제공합니다. VSTO 추가 기능을 사용하여 Visio를 자동화하거나, Visio 기능을 확장하거나, Visio UI(사용자 인터페이스)를 사용자 지정할 수 있습니다.  
   
  VSTO 추가 기능에 대 한 자세한 내용은 참조 하세요. [VSTO 추가 기능 프로그래밍 시작](../vsto/getting-started-programming-vsto-add-ins.md) 하 고 [Architecture of VSTO add-ins](../vsto/architecture-of-vsto-add-ins.md)합니다. Microsoft Office를 사용한 프로그래밍을 처음 접하는 경우 참조 [시작 &#40;Visual Studio에서 Office 개발&#41;](../vsto/getting-started-office-development-in-visual-studio.md)합니다.  
   
- **적용 대상:** 이 항목의 정보는 Visio 2010의 VSTO 추가 기능 프로젝트에 적용됩니다. 자세한 내용은 [Office 응용 프로그램 및 프로젝트 형식에 따라 사용 가능한 기능](../vsto/features-available-by-office-application-and-project-type.md)을 참조하세요.  
+ **적용 대상:** 이 항목의 정보는 Visio 2010에서 VSTO 추가 기능 프로젝트에 적용 됩니다. 자세한 내용은 [Office 애플리케이션 및 프로젝트 형식에 따라 사용 가능한 기능](../vsto/features-available-by-office-application-and-project-type.md)을 참조하세요.  
   
 > [!NOTE]  
 >  Office 환경을 확장 하는 솔루션을 개발 하는 데 관심이 [여러 플랫폼](https://dev.office.com/add-in-availability)? 새 확인해 [Office 추가 기능 모델](https://dev.office.com/docs/add-ins/overview/office-add-ins)합니다. Office 추가 기능의 VSTO 추가 기능 및 솔루션에 비해 작은 사용 공간이 있고 거의 모든 웹 프로그래밍 기술을, HTML5, JavaScript, CSS3, XML 등을 사용 하 여 빌드할 수 있습니다.  
@@ -46,7 +43,7 @@ ms.locfileid: "50671549"
   
 - 이동 및 확대/축소와 같은 다이어그램 시각화를 제어합니다.  
   
-- 응용 프로그램 UI를 사용자 지정합니다.  
+- 애플리케이션 UI를 사용자 지정합니다.  
   
 - 외부 데이터를 Visio로 가져오고, 셰이프에 연결하고, 페이지에 그래픽으로 표시합니다.  
   
@@ -79,4 +76,3 @@ ms.locfileid: "50671549"
  [Office UI 사용자 지정](../vsto/office-ui-customization.md)   
  [Visio 개체 모델 개요](../vsto/visio-object-model-overview.md)   
  [Office 개발에서 Visio 2010](http://go.microsoft.com/fwlink/?LinkId=199017)  
-  

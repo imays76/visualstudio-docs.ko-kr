@@ -1,9 +1,7 @@
 ---
 title: '&lt;addin&gt; 요소 (Visual Studio에서 Office 개발)'
 titleSuffix: ''
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7e3e5b2c8b123d7dc33693bb3e63326e3e99a776
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 6ab185a1341192542d4e35ad01aa2d5ce5fba748
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802552"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867735"
 ---
 # <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;addin&gt; 요소 (Visual Studio에서 Office 개발)
   합니다 **추가 기능** 의 요소를 `vstav3` 네임 스페이스는 Microsoft Office VSTO 추가 기능 및 Visual Studio를 사용 하 여 개발 하는 문서 수준 사용자 지정 관련 정보를 포함 합니다.
@@ -68,7 +66,7 @@ ms.locfileid: "53802552"
 ### <a name="postactions"></a>postActions
  선택 사항입니다. 합니다 **postActions** 요소에 설명 되어 [ &#60;postActions&#62; 요소 &#40;Visual Studio에서 Office 개발&#41;](../vsto/postactions-element-office-development-in-visual-studio.md).
 
-### <a name="application"></a>응용 프로그램
+### <a name="application"></a>애플리케이션
  필수 요소. 합니다 **응용 프로그램** 요소에 설명 되어 [ &#60;응용&#62; 요소 &#40;Visual Studio에서 Office 개발&#41;](../vsto/application-element-office-development-in-visual-studio.md).
 
 ## <a name="document-level-customization-example"></a>문서 수준 사용자 지정 예제

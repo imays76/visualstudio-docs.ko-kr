@@ -2,7 +2,6 @@
 title: 함수 동작에 주석 지정
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - _On_failure_
@@ -22,12 +21,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 8aa47ad88f137ff9a74d0365c25995125c835c03
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 360c434b9c841954c4672dd774037dac81d6c4d4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53801770"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835158"
 ---
 # <a name="annotating-function-behavior"></a>함수 동작에 주석 지정
 주석을 추가 하는 것 외에도 [함수 매개 변수 및 반환 값](../code-quality/annotating-function-parameters-and-return-values.md), 전체 함수의 속성 주석을 달 수 있습니다.
@@ -55,7 +54,7 @@ ms.locfileid: "53801770"
 |`_Return_type_success_(expr)`|typedef에 적용될 수 있습니다. 해당 형식을 반환하고 명시적으로 `_Success_`를 포함하지 않는 모든 함수가 `_Success_(expr)`를 포함한 것처럼 주석 처리되도록 지정합니다. `_Return_type_success_`는 함수 또는 함수 포인터 typedef에서 사용할 수 없습니다.|
 |`_Success_(expr)`|`expr`은 값을 생성하는 식입니다. `_Success_` 주석이 함수 선언 또는 정의에 제공된 경우 함수 및 사전 조건의 각 주석(`anno`)은 `_When_(expr, anno)`으로 코딩된 것처럼 작동합니다. `_Success_` 주석은 해당 매개 변수 또는 반환 유형이 아닌 함수에서만 사용할 수 있습니다. 함수에는 최대한 하나의 `_Success_` 주석만 있을 수 있으며, `_When_`, `_At_` 또는 `_Group_`에는 있을 수 없습니다. 자세한 내용은 [를 지정 하 고 여기서는 주석이 적용 됩니다](../code-quality/specifying-when-and-where-an-annotation-applies.md)합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [C/C++ 코드 오류를 줄이기 위한 SAL 주석 사용](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [SAL 이해](../code-quality/understanding-sal.md)

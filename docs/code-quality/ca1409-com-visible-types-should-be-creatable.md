@@ -1,8 +1,7 @@
 ---
-title: 'CA1409: COM 노출 형식을 만들 수 있어야 합니다.'
+title: 'CA1409: Com 노출 형식을 만들 수 있어야 합니다.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - ComVisibleTypesShouldBeCreatable
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 817c2215245412faf0bb30d46aec40a953f239b5
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 5fd168c5174dcc403a38c6eb3e443c3711fce537
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546852"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821690"
 ---
-# <a name="ca1409-com-visible-types-should-be-creatable"></a>CA1409: COM 노출 형식을 만들 수 있어야 합니다.
+# <a name="ca1409-com-visible-types-should-be-creatable"></a>CA1409: Com 노출 형식을 만들 수 있어야 합니다.
 
 |||
 |-|-|
@@ -49,7 +48,7 @@ ms.locfileid: "45546852"
  다른 방법으로 만들 COM 클라이언트에 개체를 전달 하는 제공 되는 경우이 규칙에서 경고를 표시 하지 않아도 안전 합니다.
 
 ## <a name="related-rules"></a>관련된 규칙
- [CA1017: 어셈블리를 ComVisibleAttribute로 표시하십시오.](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
+ [CA1017: ComVisibleAttribute로 어셈블리 표시](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
 ## <a name="see-also"></a>참고자료
 

@@ -1,9 +1,6 @@
 ---
 title: '방법: 프로그래밍 방식으로 워크시트 메모 표시'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e8f4875e75562d9fa1f6d9cd4982ae2148e35a1c
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: c246eae0465c64598aae1191c4053f8ba266b6ff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257688"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831565"
 ---
 # <a name="how-to-programmatically-display-worksheet-comments"></a>방법: 프로그래밍 방식으로 워크시트 메모 표시
   Microsoft Office Excel 워크시트에서 프로그래밍 방식으로 메모를 표시하고 숨길 수 있습니다.  
@@ -35,7 +32,7 @@ ms.locfileid: "35257688"
      [!code-csharp[Trin_VstcoreExcelAutomation#31](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#31)]
      [!code-vb[Trin_VstcoreExcelAutomation#31](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#31)]  
   
-## <a name="to-display-all-comments-on-a-worksheet-in-an-application-level-vsto-add-in"></a>응용 프로그램 수준 VSTO의 추가 기능에서 워크시트에 모든 메모를 표시하려면  
+## <a name="to-display-all-comments-on-a-worksheet-in-an-application-level-vsto-add-in"></a>애플리케이션 수준 VSTO의 추가 기능에서 워크시트에 모든 메모를 표시하려면  
   
 1.  메모를 표시하려는 경우 <xref:Microsoft.Office.Interop.Excel.Comment.Visible%2A> 속성을 **true** 로 설정하고 그렇지 않은 경우 **false**로 설정합니다.  
   
@@ -46,5 +43,3 @@ ms.locfileid: "35257688"
  [워크시트 작업](../vsto/working-with-worksheets.md)   
  [방법: 프로그래밍 방식으로 추가 하 고 워크시트 메모를 삭제 합니다.](../vsto/how-to-programmatically-add-and-delete-worksheet-comments.md)   
  [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)  
-  
-  

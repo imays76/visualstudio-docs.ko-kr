@@ -3,19 +3,18 @@ title: Workflow Designer에서 FinalState 활동 디자이너
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 ms.assetid: aa186893-8775-40dd-981f-8593ead831d0
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 4f49ed7bd2d370f72d8a6be69c28148fbf67e1bf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 55fc609ffd327d1e3bea8ee52849c92746055410
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924345"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950529"
 ---
 # <a name="finalstate-activity-designer"></a>FinalState 활동 디자이너
 
@@ -34,8 +33,8 @@ ms.locfileid: "49924345"
 |<xref:System.Activities.Statements.State.DisplayName%2A>|False|머리글에 <xref:System.Activities.Statements.State> 활동 디자이너의 이름을 지정합니다. 기본값은 **상태**합니다. 속성 표에서 또는 활동 디자이너의 머리글에서 직접 값을 편집할 수 있습니다. <xref:System.Activities.Statements.State.DisplayName%2A>은 Workflow Designer 상단에 표시되는 이동 경로 탐색에 사용됩니다.<br /><br /> <xref:System.Activities.Statements.State.DisplayName%2A>은 꼭 필요하지 않더라도 사용하는 것이 좋습니다.|
 |<xref:System.Activities.Statements.State.Entry%2A>|False|이 상태가 전환될 때 발생하는 동작을 지정합니다. 활동을 끌어이 값을 설정할 수 있습니다 합니다 **도구 상자** 놓으면는 <xref:System.Activities.Statements.State.Entry%2A> 상태 섹션입니다.|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [StateMachine](../workflow-designer/statemachine-activity-designer.md)
-- [상태](../workflow-designer/state-activity-designer.md)
+- [State](../workflow-designer/state-activity-designer.md)
 - [Transition](../workflow-designer/transition-activity-designer.md)

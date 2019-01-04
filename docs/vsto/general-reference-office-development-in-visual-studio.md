@@ -3,8 +3,6 @@ title: 일반 참조 (Visual Studio에서 Office 개발)
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bdc279d72f6e088c1adc22a78d9864e1d595b764
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: ec7b021c1eddff17ccc5687ec3d16f765838d062
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646853"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933180"
 ---
 # <a name="general-reference-office-development-in-visual-studio"></a>일반 참조 (Visual Studio에서 Office 개발)
   이 섹션에서는 Visual Studio에서 Microsoft Office 프로젝트에 대 한 기술 세부 정보를 포함합니다.  
@@ -54,5 +52,3 @@ ms.locfileid: "53646853"
   
  [Office 솔루션을 만들고 디자인](../vsto/designing-and-creating-office-solutions.md)  
  Visual Studio를 사용 하 여 Office 프로젝트 만들기를 시작 하는 방법에 대 한 정보에 대 한 링크를 제공 합니다.  
-  
-  

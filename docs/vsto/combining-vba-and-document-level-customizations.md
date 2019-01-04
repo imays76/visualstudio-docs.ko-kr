@@ -1,9 +1,6 @@
 ---
 title: VBA 및 문서 수준 사용자 지정 결합
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.VBAInterop.InvalidAssemblyVersion
@@ -27,12 +24,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2dc8a08d7d921c650c8332d3c363d16f5c414b1c
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 7217665d0d5b9ea594b605739916e017184730fb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441719"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987890"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>VBA 및 문서 수준 사용자 지정 결합
   Microsoft Office Word 또는 Microsoft Office Excel의 문서 수준 사용자 지정의 일부인 문서에서 VBA(Visual Basic for Applications) 코드를 사용할 수 있습니다. 사용자 지정 어셈블리에서 문서의 VBA 코드를 호출하거나, 문서의 VBA 코드에서 사용자 지정 어셈블리의 코드를 호출할 수 있도록 프로젝트를 구성할 수 있습니다.  
@@ -245,7 +242,7 @@ GetManagedClass(pdispInteropObject Object) As Object
 ## <a name="troubleshoot"></a>문제 해결
  다음 표에는 몇 가지 일반적인 오류와 해당 오류를 해결하기 위한 제안 사항이 나와 있습니다.  
   
-|Error|제안 해결 방법|  
+|오류|제안 해결 방법|  
 |-----------|----------------|  
 |**EnableVbaCallers** 또는 **ReferenceAssemblyFromVbaProject** 속성을 설정한 후 문서에 VBA 프로젝트가 포함되어 있지 않다는 오류 메시지가 표시되거나 문서에서 VBA 프로젝트에 액세스할 수 있는 권한이 없습니다.|프로젝트의 문서에 VBA 매크로가 하나 이상 포함되어 있고, VBA 프로젝트를 실행하는 데 충분한 신뢰가 있으며, VBA 프로젝트가 암호로 보호되지 않는지 확인합니다.|  
 |설정한 후 합니다 **EnableVbaCallers** 또는 **ReferenceAssemblyFromVbaProject** 속성을 오류 메시지를 나타내는 <xref:System.Runtime.InteropServices.GuidAttribute> 선언이 없거나 손상 되었습니다.|있는지 확인 합니다 <xref:System.Runtime.InteropServices.GuidAttribute> 선언에는 *AssemblyInfo.cs* 또는 *AssemblyInfo.vb* 프로젝트에서 파일 및이 특성이 유효한 GUID로 설정 되어 있는지 합니다.|  
@@ -260,5 +257,3 @@ GetManagedClass(pdispInteropObject Object) As Object
  [Office 솔루션을 만들고 디자인](../vsto/designing-and-creating-office-solutions.md)   
  [비교 하는 Visual Studio에서 Office 및 VBA 솔루션](../vsto/vba-and-office-solutions-in-visual-studio-compared.md)   
  [문서 수준 사용자 지정 프로그래밍](../vsto/programming-document-level-customizations.md)  
-  
-  

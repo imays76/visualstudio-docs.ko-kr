@@ -11,13 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2072006941c0572fc8072f2dd99afe7d324326bd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: aec059dab655068d6dffaed6fe9a920cda1b6b7e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842848"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53897984"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>모델 공유 및 다이어그램 내보내기
 Visual Studio에서 여러 가지 방법으로 모델 및 다이어그램을 동료와 공유할 수 있습니다.

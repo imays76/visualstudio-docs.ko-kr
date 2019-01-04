@@ -1,9 +1,6 @@
 ---
 title: 오류 코드 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - error codes, source control plug-ins
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 53287b85c74fae205874dce7fdd0ebf274bfda96
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 6d9139ca59394c8d5de69ddf77f51bf57b8b7619
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636855"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931975"
 ---
 # <a name="error-codes"></a>오류 코드
 원본 제어 플러그 인 API 함수에서 오류를 반환 하는 경우 다음 오류 코드 중 하나를 사용할 수 있습니다. 모든 오류는 경고 또는 정보 제공 용 이므로 오류 코드는 양수, 음수 이며 성공 0입니다.  
@@ -64,7 +61,7 @@ ms.locfileid: "39636855"
 |`SCC_E_FILESYNTAXERR`|-27|파일 구문 오류가 있습니다.|  
 |`SCC_E_FILENOTEXIST`|-28|오류, 로컬 파일이 존재 하지 않습니다.|  
 |`SCC_E_CONNECTIONFAILURE`|-29|오류: 연결이 실패가 했습니다.|  
-|`SCC_E_UNKNOWNERROR`|-30|알 수 없는 오류가 발생 했습니다.|  
+|`SCC_E_UNKNOWNERROR`|-30|알 수 없는 오류입니다.|  
 |`SCC_E_BACKGROUNDGETINPROGRESS`|-31|백그라운드 가져오기 작업이 현재 진행 중입니다.|  
   
 ## <a name="macros-provided-for-quick-checking"></a>빠른 검사를 제공 하는 매크로  

@@ -1,9 +1,6 @@
 ---
 title: '방법: 프로그래밍 방식으로 Word에서 기본 제공 대화 상자를 사용 하 여'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f5ee28b0296037b9b5490ca691a27d613c793228
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 38e9fd10171bcc5be20f061217ff85b85ae3b52d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674477"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829065"
 ---
 # <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>방법: 프로그래밍 방식으로 Word에서 기본 제공 대화 상자를 사용 하 여
   Microsoft Office Word에서 작업할 때 사용자 입력에 대 한 대화 상자를 표시 해야 하는 경우가 있습니다. 만들 수 있지만 사용자 고유의에서 노출 되는 word에서 기본 제공 대화 상자를 사용 하는 방법을 사용 하려면 수도 있습니다는 <xref:Microsoft.Office.Interop.Word.Dialogs> 의 컬렉션을 <xref:Microsoft.Office.Interop.Word.Application> 개체입니다. 이 열거형으로 표현 되는 기본 제공 대화 상자에서는 200에 액세스할 수 있습니다.  
@@ -55,5 +52,3 @@ ms.locfileid: "35674477"
  [Option strict 문](/dotnet/visual-basic/language-reference/statements/option-strict-statement)   
  [리플렉션(C#)](/dotnet/csharp/programming-guide/concepts/reflection)  
  [리플렉션(Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/reflection)  
-  
-  

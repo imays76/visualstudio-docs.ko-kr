@@ -1,9 +1,6 @@
 ---
 title: '방법: Outlook에서 양식 영역 표시 하지 않기'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0aaeafe14f35092be30c982ebb758e40afedb8aa
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: a7df2aef4348e95a30c0b14b26686764890b6abf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647083"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849751"
 ---
 # <a name="how-to-prevent-outlook-from-displaying-a-form-region"></a>방법: Outlook에서 양식 영역 표시 하지 않기
   원하지 않는 Microsoft Office Outlook 특정 항목에 대 한 양식 영역을 표시 하는 경우가 있을 수 있습니다. 예를 들어 연락처 항목에 회사 주소를 찾을 수 없는 경우 표시 되 지도에 비즈니스의 위치를 보여 주는 양식 영역을 방지할 수 있습니다.  
@@ -42,11 +39,9 @@ ms.locfileid: "53647083"
  [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]
  [!code-vb[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#1)]  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [Outlook 양식 영역 만들기](../vsto/creating-outlook-form-regions.md)   
  [연습: Outlook 양식 영역 디자인](../vsto/walkthrough-designing-an-outlook-form-region.md)   
  [방법: Outlook 추가 기능 프로젝트에 양식 영역 추가](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
  [연습: Outlook 양식 영역 디자인](../vsto/walkthrough-designing-an-outlook-form-region.md)   
  [연습: Outlook에서 디자인 한 양식 영역 가져오기](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)  
-  
-  

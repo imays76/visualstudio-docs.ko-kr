@@ -1,9 +1,6 @@
 ---
 title: '방법: Office 주 interop 어셈블리 설치'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bca78cc9387756c1abd4e6c11d3a549777c3f452
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 2a37c93cfe1d0bb03a022e69e2be31f354017c2f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648589"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914649"
 ---
 # <a name="how-to-install-office-primary-interop-assemblies"></a>방법: Office 주 interop 어셈블리 설치
   Office를 설치할 때 Microsoft Office PIA(주 interop 어셈블리)를 설치합니다.  
@@ -42,5 +39,3 @@ ms.locfileid: "53648589"
  [방법: Visual Studio Tools for Office 런타임 재배포 가능 패키지 설치](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)   
  [Office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [시작 &#40;Visual Studio에서 Office 개발&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
-  
-  

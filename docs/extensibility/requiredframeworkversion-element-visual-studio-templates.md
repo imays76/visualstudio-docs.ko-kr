@@ -1,6 +1,5 @@
 ---
 title: RequiredFrameworkVersion 요소 (Visual Studio 템플릿) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c219d2f929122163b49d51d5280c25490aaccb1
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 64faab530e8470ac1efd5ade39f77552371048ef
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739788"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872030"
 ---
 # <a name="requiredframeworkversion-element-visual-studio-templates"></a>RequiredFrameworkVersion 요소 (Visual Studio 템플릿)
 
@@ -83,7 +82,7 @@ ms.locfileid: "53739788"
 
 이 예제에서는 서식 파일을 여는 데 필요한.NET Framework의 최소 버전 표시 `RequiredFrameworkVersion`,이 3.0 이라고 합니다. 이 템플릿을 사용 하 여 만든 프로젝트는.NET Framework 버전 3.0에서 대상으로 지정할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
 - [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

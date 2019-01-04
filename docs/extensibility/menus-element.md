@@ -1,9 +1,6 @@
 ---
 title: Menus 요소 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Menus
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e0bfb702b9465ee4d00547f5d965bfbaae18742b
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: cca8887a9daf79ef2479052a6d9fcfd1efa12b31
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637632"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925604"
 ---
 # <a name="menus-element"></a>Menus 요소
 모든 메뉴 및 VSPackage 구현 하는 도구 모음을 정의 합니다.  
@@ -55,7 +52,7 @@ ms.locfileid: "39637632"
 |-------------|-----------------|  
 |[Commands 요소](../extensibility/commands-element.md)|VSPackage의 명령 컬렉션을 나타냅니다.|  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
   
 ```xml  
 <Commands package="guidMyPackage">  
@@ -80,6 +77,6 @@ ms.locfileid: "39637632"
 <Commands>  
 ```  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Vspackage에서 사용자 인터페이스 요소를 추가 하는 방법](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)

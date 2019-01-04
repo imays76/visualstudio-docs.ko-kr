@@ -1,9 +1,6 @@
 ---
 title: Visual Studio 2017 확장성의 주요 변경 내용 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/09/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 54d5af60-0b44-4ae1-aa57-45aa03f89f3d
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a7ed5322c131bd9f3b758b31169676865880fd7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5305a5fd5dea53554e4ac9c0015e8181d5906788
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826494"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841952"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Visual Studio 2017 확장성의 변경 내용
 
@@ -43,15 +40,15 @@ VSIX v3 도입 가벼운 설치 환경을 지원 하도록 (버전 3) 형식입�
 
 ## <a name="building-an-extension-for-visual-studio-2017"></a>Visual Studio 2017 용 확장을 빌드
 
-새 작성 하기 위한 도구 디자이너 VSIX v3 매니페스트 형식은 이제 Visual Studio 2017에서 사용할 수 있습니다. 함께 제공 되는 문서를 참조 하세요 [방법: Visual Studio 2017로 확장성 프로젝트 마이그레이션](how-to-migrate-extensibility-projects-to-visual-studio-2017.md) 디자이너 도구를 사용 하 여 또는 수동 업데이트할 프로젝트에 대 한 자세한 내용은 및 매니페스트를 VSIX v3 확장을 개발 합니다.
+새 작성 하기 위한 도구 디자이너 VSIX v3 매니페스트 형식은 이제 Visual Studio 2017에서 사용할 수 있습니다. 함께 제공 되는 문서를 참조 하세요. [방법: Visual Studio 2017로 확장성 프로젝트 마이그레이션](how-to-migrate-extensibility-projects-to-visual-studio-2017.md) 디자이너 도구를 사용 하 여 또는 수동 업데이트할 프로젝트에 대 한 자세한 내용은 및 매니페스트를 VSIX v3 확장을 개발 합니다.
 
-## <a name="change-visual-studio-user-data-path"></a>Visual Studio 사용자 데이터 경로 변경 합니다.
+## <a name="change-visual-studio-user-data-path"></a>변경 내용: Visual Studio 사용자 데이터 경로
 
 이전에 Visual Studio의 각 주요 릴리스에서 하나만 설치할 각 컴퓨터에 존재할 수 있습니다. Visual Studio 2017의 side-by-side-설치를 지원 하려면 Visual Studio에 대 한 여러 사용자 데이터 경로 사용자의 컴퓨터에 존재할 수 있습니다.
 
 Visual Studio 프로세스 내에서 실행 되는 코드는 Visual Studio Settings Manager를 사용 하도록 업데이트 되어야 합니다. Visual Studio 프로세스 외부에서 실행 되는 코드에서 특정 Visual Studio 설치의 사용자 경로 찾을 수 [지침에 따라](locating-visual-studio.md)합니다.
 
-## <a name="change-global-assembly-cache-gac"></a>변경: 전역 어셈블리 캐시 (GAC)
+## <a name="change-global-assembly-cache-gac"></a>변경 내용: 전역 어셈블리 캐시 (GAC)
 
 대부분의 Visual Studio 핵심 어셈블리를 GAC에 더 이상 설치 됩니다. Visual Studio 프로세스에서 실행 되는 코드 런타임에 필요한 어셈블리를 찾을 수 있도록 다음 변경 내용이 적용 됩니다.
 
@@ -84,7 +81,7 @@ Visual Studio 프로세스 내에서 실행 되는 코드는 Visual Studio Setti
 * 확장은 Visual Studio 프로세스 외부에서 실행 되 하는 경우:
   * 아래에서 Visual Studio 핵심 어셈블리에 대 한 확인 하는 것이 좋습니다 <em>[INSTALLDIR] \Common7\IDE\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> 또는 *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*구성 파일 또는 어셈블리 확인자를 사용 하 여 합니다.
 
-## <a name="change-reduce-registry-impact"></a>변경: 레지스트리 영향 줄이기
+## <a name="change-reduce-registry-impact"></a>변경 내용: 레지스트리 영향 줄이기
 
 ### <a name="global-com-registration"></a>전역 COM 등록
 
@@ -95,8 +92,8 @@ Visual Studio 프로세스 내에서 실행 되는 코드는 Visual Studio Setti
 ### <a name="visual-studio-registry"></a>Visual Studio 레지스트리
 
 * Visual Studio 시스템에 여러 레지스트리 키를 설치 하는 이전에 **HKEY_LOCAL_MACHINE** 하 고 **HKEY_CURRENT_USER** Visual Studio 관련 키 아래 하이브:
-  * **HKLM\Software\Microsoft\VisualStudio\{버전}**: MSI 설치 관리자 및 컴퓨터별 확장에서 생성 된 레지스트리 키입니다.
-  * **HKCU\Software\Microsoft\VisualStudio\{버전}**: 사용자별 설정을 저장 하려면 Visual Studio에서 만든 레지스트리 키입니다.
+  * **HKLM\Software\Microsoft\VisualStudio\{버전}**: MSI 설치 관리자 및 컴퓨터별 확장에서 만든 레지스트리 키입니다.
+  * **HKCU\Software\Microsoft\VisualStudio\{버전}**: 사용자 관련 설정을 저장 하려면 Visual Studio에서 만든 레지스트리 키입니다.
   * **HKCU\Software\Microsoft\VisualStudio\{버전} _Config**: 위의 Visual Studio HKLM 키와 레지스트리 키의 복사본에서 병합 *.pkgdef* 파일 확장명으로 합니다.
 * 레지스트리에 대 한 영향을 줄이기 위해 Visual Studio는 이제 사용 합니다 [RegLoadAppKey](/windows/desktop/api/winreg/nf-winreg-regloadappkeya) 레지스트리 키 아래에 있는 개인 이진 파일에 저장할 수는 함수 *[VSAPPDATA]\privateregistry.bin*합니다. Visual Studio 관련 키의 매우 작은 수만 시스템 레지스트리를 유지합니다.
 

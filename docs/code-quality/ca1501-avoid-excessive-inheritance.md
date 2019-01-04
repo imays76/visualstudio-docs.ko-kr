@@ -1,8 +1,7 @@
 ---
-title: 'CA1501: 상속성을 너무 많이 사용하지 마십시오.'
+title: 'CA1501: 상속성을 너무 많이 사용하지 마세요.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1501
@@ -19,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0627d246fe9f9f72a95cded7daf8d2c94bf20b3a
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 030d1d520ef2feb1f7b530c55c609a1cd951893b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546969"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861071"
 ---
-# <a name="ca1501-avoid-excessive-inheritance"></a>CA1501: 상속성을 너무 많이 사용하지 마십시오.
+# <a name="ca1501-avoid-excessive-inheritance"></a>CA1501: 상속성을 너무 많이 사용하지 마세요.
 
 |||
 |-|-|

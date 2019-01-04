@@ -1,9 +1,6 @@
 ---
 title: '연습: 서명 도움말 표시 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - signature help/parameter info
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc260fe45bf4c6cf801718c2f4c3bbaa98842dd6
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 796b15b603ee314425d895279f6abff8e9d7e713
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498907"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986728"
 ---
 # <a name="walkthrough-display-signature-help"></a>연습: 서명 도움말 표시
 서명 도움말 (라고도 *매개 변수 정보*) 매개 변수 목록 시작 문자 (일반적으로 여는 괄호)를 입력 하는 경우 도구 설명에 메서드의 시그니처를 표시 합니다. 매개 변수 및 매개 변수 구분 기호 (쉼표)를 입력 한 도구 설명 굵게 표시 된 다음 매개 변수를 표시 하도록 업데이트 됩니다. 다음과 같은 방법으로 시그니처 도움말를 정의할 수 있습니다: 언어 서비스의 컨텍스트에서 고유한 파일 이름 확장명 및 콘텐츠 형식을 정의 하 고 해당 형식만 대 한 시그니처 도움말을 표시 또는 기존 콘텐츠 형식 (예: "text")에 대 한 시그니처 도움말을 표시 합니다. 이 연습에서는 "text" 콘텐츠 형식에 대 한 시그니처 도움말을 표시 하는 방법을 보여 줍니다.  
@@ -34,7 +31,7 @@ ms.locfileid: "39498907"
   
 #### <a name="to-create-a-mef-project"></a>MEF 프로젝트를 만들려면  
   
-1.  C# VSIX 프로젝트를 만듭니다. (에 **새 프로젝트** 대화 상자에서 **Visual C# / 확장성**, 한 다음 **VSIX 프로젝트**.) 솔루션 이름을 `SignatureHelpTest`입니다.  
+1.  C# VSIX 프로젝트를 만듭니다. (에 **새 프로젝트** 대화 상자에서 **Visual C# / 확장성**, 한 다음 **VSIX 프로젝트**.) 솔루션의 이름을 `SignatureHelpTest`로 지정합니다.  
   
 2.  편집기 분류자 항목 템플릿을 프로젝트에 추가 합니다. 자세한 내용은 [편집기 항목 템플릿을 사용 하 여 확장 프로그램을 만들려면](../extensibility/creating-an-extension-with-an-editor-item-template.md)합니다.  
   
@@ -57,7 +54,7 @@ ms.locfileid: "39498907"
   
 #### <a name="to-implement-the-signature-help-signatures-and-parameters"></a>시그니처 도움말 서명 및 매개 변수를 구현 하려면  
   
-1.  클래스 파일을 추가 하 고 이름을 `SignatureHelpSource`입니다.  
+1.  클래스 파일을 추가하고 이름을 `SignatureHelpSource`로 지정합니다.  
   
 2.  다음 가져오기를 추가 합니다.  
   

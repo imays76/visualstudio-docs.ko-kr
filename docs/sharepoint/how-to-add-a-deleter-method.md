@@ -1,13 +1,8 @@
 ---
 title: '방법: Deleter 메서드 추가 | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -24,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0bc47da90356149e3fe2e1d1b888bf5ac6a877e5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5b1ddbd45771637ffcdd2ad1b6d553b8c497982b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842679"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924178"
 ---
 # <a name="how-to-add-a-deleter-method"></a>방법: Deleter 메서드 추가
   최종 사용자가 SharePoint 사이트에서 외부 목록에서 모델을 Deleter 메서드를 추가 하 여 데이터 레코드를 삭제할 수 있습니다. 자세한 내용은 [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)합니다.  
@@ -71,7 +66,7 @@ ms.locfileid: "49842679"
     [!code-csharp[SP_BDC#6](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs#6)]
     [!code-vb[SP_BDC#6](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#6)]  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [방법: Finder 메서드 추가](../sharepoint/how-to-add-a-finder-method.md)   
  [방법: 특정 Finder 메서드 추가](../sharepoint/how-to-add-a-specific-finder-method.md)   
@@ -80,5 +75,3 @@ ms.locfileid: "49842679"
  [BDC 모델 디자인 도구 개요](../sharepoint/bdc-model-design-tools-overview.md)   
  [방법: 메서드에 매개 변수를 추가 합니다.](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
  [방법: 메서드 인스턴스 정의](../sharepoint/how-to-define-a-method-instance.md)  
-  
-  

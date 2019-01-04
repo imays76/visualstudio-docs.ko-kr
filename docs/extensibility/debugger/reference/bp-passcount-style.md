@@ -1,9 +1,6 @@
 ---
 title: BP_PASSCOUNT_STYLE | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - BP_PASSCOUNT_STYLE
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f382c83813eb794fc48e33310ba8381030b424fc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e10c1c2f97e56a1ff24aa09a956b628b646985f7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846124"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864377"
 ---
 # <a name="bppasscountstyle"></a>BP_PASSCOUNT_STYLE
 중단점이 발생 하는 중단점 패스 개수와 연결 된 조건을 지정 합니다.  
@@ -28,7 +25,7 @@ ms.locfileid: "49846124"
 ## <a name="syntax"></a>구문  
   
 ```cpp  
-enum enum_BP_PASSCOUNT_STYLE {   
+enum enum_BP_PASSCOUNT_STYLE {   
    BP_PASSCOUNT_NONE             = 0x0000,  
    BP_PASSCOUNT_EQUAL            = 0x0001,  
    BP_PASSCOUNT_EQUAL_OR_GREATER = 0x0002,  
@@ -38,7 +35,7 @@ typedef DWORD BP_PASSCOUNT_STYLE;
 ```  
   
 ```csharp  
-public enum enum_BP_PASSCOUNT_STYLE {   
+public enum enum_BP_PASSCOUNT_STYLE {   
    BP_PASSCOUNT_NONE             = 0x0000,  
    BP_PASSCOUNT_EQUAL            = 0x0001,  
    BP_PASSCOUNT_EQUAL_OR_GREATER = 0x0002,  
@@ -65,9 +62,9 @@ public enum enum_BP_PASSCOUNT_STYLE {
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>참고 항목  
  [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

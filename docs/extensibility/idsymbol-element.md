@@ -1,9 +1,6 @@
 ---
 title: IDSymbol 요소 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDSymbol element (VSCT XML schema)
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d88acb221abfc26c45c9002abb92f704936334b
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: ef9ad479d44e43caf0a77c4db01cc349678c73ca
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500383"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836704"
 ---
 # <a name="idsymbol-element"></a>IDSymbol 요소
 `IDSymbol` 요소 메뉴, 그룹 또는 명령을 나타내는 guid: id 쌍의 ID를 포함 합니다. 부모에서 가져온 GUID `GuidSymbol` 요소입니다. `IDSymbol` 요소에는 `name` 특성에 포함 되어 있는 ID에 대 한 친숙 한 이름을 지정 하는 `value` 특성.  
@@ -37,8 +34,8 @@ ms.locfileid: "39500383"
   
 |특성|설명|  
 |---------------|-----------------|  
-|name|필수. 이름 ID 기호입니다.|  
-|값|필수. ID 기호의 숫자 ID 값입니다.|  
+|name|필수 요소. 이름 ID 기호입니다.|  
+|값|필수 요소. ID 기호의 숫자 ID 값입니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
  없음  
@@ -52,5 +49,5 @@ ms.locfileid: "39500383"
 ## <a name="remarks"></a>설명  
  모든 `IDSymbol` 요소에는 주어진 `GuidSymbol` 요소는 고유 해야 합니다. `value`합니다. 그러나 `IDSymbol` 으로 부모가 서로 다른 패키지에 동일한 값을 가진 요소가 있을 수 있습니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Visual Studio 명령 테이블 (.vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

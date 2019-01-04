@@ -1,22 +1,20 @@
 ---
 title: '방법: AsyncPackage를 사용 하 여 백그라운드에서 Vspackage를 로드 합니다. | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.technology: vs-ide-sdk
 ms.assetid: dedf0173-197e-4258-ae5a-807eb3abc952
 author: gregvanl
 ms.author: gregvanl
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1afd0199401159ace6ccc34bf3f32aa564cf195f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 32fb275cc788722df7085e64d25ded88de127381
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828522"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922931"
 ---
-# <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>방법: 백그라운드에서 Vspackage를 로드를 사용 하 여 AsyncPackage
+# <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>방법: AsyncPackage를 사용 하 여 백그라운드에서 Vspackage를 로드 합니다.
 디스크 I/O 로드 되 고 VS 패키지 초기화 될 수 있습니다. 이러한 I/O UI 스레드에서 발생 하는 경우에 응답성 문제를 발생할 수 있습니다. Visual Studio 2015에 도입 된이 문제를 해결 합니다 <xref:Microsoft.VisualStudio.Shell.AsyncPackage> 백그라운드 스레드에서 로드 패키지를 사용 하도록 설정 하는 클래스입니다.  
   
 ## <a name="create-an-asyncpackage"></a>AsyncPackage 만들기  
@@ -57,9 +55,9 @@ ms.locfileid: "49828522"
   
 5. 주의 해야 Rpc (원격 프로시저 호출)를 만들지 않는 비동기 초기화 코드에서 (에서 **InitializeAsync**). 호출할 때 발생할 수 있습니다 이러한 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 직접 또는 간접적으로 합니다.  사용 하 여 UI 스레드는 차단 동기화 로드 필요한 경우 <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory>합니다. 기본 차단 모델 Rpc 사용 하지 않도록 설정 합니다. 이 비동기 작업에서 RPC를 사용 하려는 경우 있습니다 됩니다 경우 교착 상태가 UI 스레드는 자체 패키지를 로드 될 때까지 기다리는 것을 의미 합니다. 일반적인 대안은 같이 사용 하 여 필요한 경우 코드를 UI 스레드로 마샬링하 **조인 가능 작업 팩터리**의 <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A> 또는 RPC를 사용 하지 않는 다른 메커니즘입니다.  사용 하지 마세요 **ThreadHelper.Generic.Invoke** 하거나 일반적으로 UI 스레드를 얻기 위해 기다리는 호출 스레드를 차단 합니다.  
   
-    참고: 사용 하지 말아야 **GetService** 하거나 **QueryService** 에서 프로그램 `InitializeAsync` 메서드. 사용 하는 경우에 먼저 UI 스레드로 전환 해야 합니다. 대신 사용 하는 것 <xref:Microsoft.VisualStudio.Shell.AsyncServiceProvider.GetServiceAsync%2A> 에서 프로그램 **AsyncPackage** (캐스팅 하도록 하 여 <xref:Microsoft.VisualStudio.Shell.Interop.IAsyncServiceProvider>.)  
+    참고: 사용 하지 않아야 **GetService** 하거나 **QueryService** 에서 프로그램 `InitializeAsync` 메서드. 사용 하는 경우에 먼저 UI 스레드로 전환 해야 합니다. 대신 사용 하는 것 <xref:Microsoft.VisualStudio.Shell.AsyncServiceProvider.GetServiceAsync%2A> 에서 프로그램 **AsyncPackage** (캐스팅 하도록 하 여 <xref:Microsoft.VisualStudio.Shell.Interop.IAsyncServiceProvider>.)  
   
-   C#의 경우 AsyncPackage를 만듭니다.:  
+   C#:  AsyncPackage를 만듭니다.  
   
 ```csharp  
 [PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]       
@@ -79,7 +77,7 @@ public sealed class TestPackage : AsyncPackage
   
 1.  제거 해야 합니다 `Initialize` 패키지에서 제공 되었던 재정의 합니다.  
   
-2.  교착 상태 방지: 있을 수 있습니다 Rpc 코드에서 숨겨집니다. 이제 백그라운드 스레드에서 발생합니다. 있는지 확인 하는 경우 RPC (예를 들어 **GetService**) 중 하나 (1) 주 스레드가 전환 해야, (2) 사용 하 여 비동기 버전의 경우 API가 있습니다 (예를 들어, **GetServiceAsync**).  
+2.  교착 상태를 방지 합니다. 있을 수 있습니다 Rpc 코드에서 숨겨집니다. 이제 백그라운드 스레드에서 발생합니다. 있는지 확인 하는 경우 RPC (예를 들어 **GetService**) 중 하나 (1) 주 스레드가 전환 해야, (2) 사용 하 여 비동기 버전의 경우 API가 있습니다 (예를 들어, **GetServiceAsync**).  
   
 3.  너무 자주 스레드 간에 전환 하지 마세요. 로드 하는 시간을 줄이기 위해 백그라운드 스레드에서 발생할 수 있는 작업을 지역화 하려고 합니다.  
   
@@ -96,7 +94,7 @@ public sealed class TestPackage : AsyncPackage
   
   패키지에에서 남아 있을 기회 (비동기 초기화 단계) UI 스레드에서 작업 하지만 해당 작업의 완료에 대 한 UI 스레드가 차단 됩니다. 호출자에 게 사용 하는 경우 **IAsyncServiceProvider** 서비스에 대 한 비동기적으로 쿼리 한 다음 부하 및 초기화를 수행 하려면 결과 작업 개체에서 즉시 차단 하지는 비동기적으로 가정 합니다.  
   
-  C#의 경우: 서비스를 비동기적으로 쿼리 하는 방법:  
+  C#:  서비스를 비동기적으로 쿼리 하는 방법:  
   
 ```csharp  
 using Microsoft.VisualStudio.Shell;   
@@ -105,4 +103,3 @@ using Microsoft.VisualStudio.Shell.Interop;
 IAsyncServiceProvider asyncServiceProvider = Package.GetService(typeof(SAsyncServiceProvider)) as IAsyncServiceProvider;   
 IMyTestService testService = await asyncServiceProvider.GetServiceAsync(typeof(SMyTestService)) as IMyTestService;  
 ```
-  

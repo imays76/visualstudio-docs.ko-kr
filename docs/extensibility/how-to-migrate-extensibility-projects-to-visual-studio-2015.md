@@ -1,9 +1,6 @@
 ---
 title: '방법: Visual Studio 2015로 확장성 프로젝트 마이그레이션 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio SDK, upgrading
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09b8950a05c4e4181209190af17eb0d6ccdb35ba
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 456661c06934063041f06c36c20eee72d52c5b4a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639710"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915337"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>방법: Visual Studio 2015로 확장성 프로젝트 마이그레이션
 확장 프로그램을 업그레이드 하는 방법을 다음과 같습니다.  
@@ -42,13 +39,13 @@ ms.locfileid: "39639710"
   
 ### <a name="to-update-an-extensibility-project-to-nuget-vs-sdk-reference-assemblies"></a>확장성 프로젝트를 NuGet VS SDK 참조 어셈블리를 업데이트 하려면  
   
-1.  프로젝트에 필요한 VS SDK 참조 어셈블리를 결정 합니다.  **솔루션 탐색기**에서 프로젝트의 확장 **참조** 노드와 프로젝트 참조 목록 검토 합니다.  VS SDK 참조 어셈블리는 접두사가 **Microsoft.VisualStudio** 이름에서 (예: Microsoft.VisualStudio.Shell.14.0).  
+1.  프로젝트에 필요한 VS SDK 참조 어셈블리를 결정 합니다.  **솔루션 탐색기**에서 프로젝트의 확장 **참조** 노드와 프로젝트 참조 목록 검토 합니다.  VS SDK 참조 어셈블리는 접두사가 **Microsoft.VisualStudio** 이름에서 (예: Microsoft.VisualStudio.Shell.14.0)입니다.  
   
 2.  마우스 오른쪽 단추로 선택 하 여 VS SDK 참조 어셈블리를 프로젝트에서 제거할 **제거**합니다.  
   
 3.  VS SDK 참조 어셈블리의 NuGet 버전을 추가 합니다.  **솔루션 탐색기 참조** 노드를 열고 합니다 **NuGet 패키지 관리** 대화 합니다.  이 대화 상자에 자세히 알아보려면 원한다 면 참조 [패키지 관리자 UI](/NuGet/Tools/Package-Manager-UI)합니다. VS SDK 참조 어셈블리에 게시 되어 [nuget.org](http://www.nuget.org) 하 여 [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility)합니다.  
   
-4.  사용 하 여 **nuget.org** 으로 프로그램 **패키지 원본**, 원하는 참조 어셈블리에 일치 하는 NuGet 패키지 이름에 대 한 검색 (예를 들어: Microsoft.VisualStudio.Shell.14.0) 설치 프로그램 프로젝트입니다.  NuGet은 초기 어셈블리의 종속성을 충족 하기 위해 여러 명의 참조 어셈블리를 추가할 수 있습니다.  
+4.  사용 하 여 **nuget.org** 으로 프로그램 **패키지 원본**, 원하는 참조 어셈블리에 일치 하는 NuGet 패키지 이름 검색 (예를 들어: Microsoft.VisualStudio.Shell.14.0) 프로젝트에 설치 합니다.  NuGet은 초기 어셈블리의 종속성을 충족 하기 위해 여러 명의 참조 어셈블리를 추가할 수 있습니다.  
   
      원한다 면 수 추가한 모든 VS SDK 참조 어셈블리를 한 번에 VS SDK를 설치 하 여 [메타 패키지가](http://www.nuget.org/packages/VSSDK_Reference_Assemblies)합니다.  
   

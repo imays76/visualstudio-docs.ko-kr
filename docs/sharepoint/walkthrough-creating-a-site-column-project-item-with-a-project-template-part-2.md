@@ -1,9 +1,6 @@
 ---
 title: '연습: 프로젝트 템플릿을 사용 하 여 사이트 열 프로젝트 항목 만들기, 2 부 | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
@@ -14,17 +11,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d4512dc15d394cdf2442d8bfcf440ccb31623a29
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f5f9f2bbad380302d2a13b4352b2c9a7a54797e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942077"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829909"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>연습: 2 부 프로젝트 템플릿을 사용 하 여 사이트 열 프로젝트 항목 만들기
   사용자 지정 형식의 SharePoint 프로젝트 항목을 정의 하 고 Visual Studio에서 프로젝트 템플릿을 사용 하 여 연결 후 템플릿에 대 한 마법사를 제공 하려면 수도 있습니다. 프로젝트 항목을 포함 하는 새 프로젝트를 만드는 템플릿을 사용할 때 사용자 로부터 정보를 수집 하는 마법사를 사용할 수 있습니다. 정보를 수집 하는 프로젝트 항목을 초기화에 사용할 수 있습니다.  
   
- 이 연습에 설명 된 사이트 열 프로젝트 템플릿에 마법사를 추가 합니다 [연습: 프로젝트 템플릿 1 부를 사용 하 여 사이트 열 프로젝트 항목 만들기](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)합니다. 사용자가 사이트 열 프로젝트를 만들 때 마법사 사이트 열 (예: 기본 형식 및 그룹)에 대 한 정보를 수집 하 고이 정보를 추가 합니다 *Elements.xml* 새 프로젝트의 파일입니다.  
+ 이 연습에 설명 된 사이트 열 프로젝트 템플릿에 마법사를 추가 합니다 [연습: 프로젝트 템플릿을 사용 하 여 사이트 열 프로젝트 항목 만들기, 1 부](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)합니다. 사용자가 사이트 열 프로젝트를 만들 때 마법사 사이트 열 (예: 기본 형식 및 그룹)에 대 한 정보를 수집 하 고이 정보를 추가 합니다 *Elements.xml* 새 프로젝트의 파일입니다.  
   
  이 연습에서는 다음 작업을 수행합니다.  
   
@@ -44,7 +41,7 @@ ms.locfileid: "49942077"
 > 샘플 워크플로의 계열에 대 한 참조 [SharePoint workflow 샘플](https://docs.microsoft.com/sharepoint/dev/general-development/sharepoint-workflow-samples)합니다.  
   
 ## <a name="prerequisites"></a>전제 조건  
- 이 연습을 수행 하려면 먼저 만들어야 SiteColumnProjectItem 솔루션 완료 하 여 [연습: 프로젝트 템플릿 1 부를 사용 하 여 사이트 열 프로젝트 항목 만들기](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)합니다.  
+ 이 연습을 수행 하려면 먼저 만들어야 SiteColumnProjectItem 솔루션 완료 하 여 [연습: 프로젝트 템플릿을 사용 하 여 사이트 열 프로젝트 항목 만들기, 1 부](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)합니다.  
   
  또한이 연습을 완료 하려면 개발 컴퓨터의 다음 구성 요소가 필요 합니다.  
   
@@ -54,7 +51,7 @@ ms.locfileid: "49942077"
   
   다음 개념을 이해에 도움이 필요 하지는 않지만, 연습을 완료 하는:  
   
-- Visual Studio에서 프로젝트 및 항목 템플릿에 대 한 마법사를 제공 합니다. 자세한 내용은 [방법: 프로젝트 템플릿에 마법사 사용](../extensibility/how-to-use-wizards-with-project-templates.md) 및 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 인터페이스입니다.  
+- Visual Studio에서 프로젝트 및 항목 템플릿에 대 한 마법사를 제공 합니다. 자세한 내용은 [방법: 프로젝트 템플릿에 마법사 사용](../extensibility/how-to-use-wizards-with-project-templates.md) 하며 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 인터페이스입니다.  
   
 - SharePoint에서 사이트 열입니다. 자세한 내용은 [열](http://go.microsoft.com/fwlink/?LinkId=183547)합니다.  
   
@@ -70,7 +67,7 @@ ms.locfileid: "49942077"
 |SharePoint 명령|이 마법사 데이터 모델 마법사를 실행 하는 동안 로컬 SharePoint 사이트에 호출 하기 위해 사용 되는 메서드입니다. SharePoint 명령은.NET Framework 3.5를 대상 해야 하기 때문에 이러한 명령은 마법사 코드의 나머지 부분 보다 다른 어셈블리에서 구현 됩니다.|  
   
 ## <a name="create-the-projects"></a>프로젝트 만들기
- 이 연습을 완료 하려면 여러 프로젝트에서 만든 SiteColumnProjectItem 솔루션에 추가 해야 [연습: 프로젝트 템플릿 1 부를 사용 하 여 사이트 열 프로젝트 항목 만들기](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md):  
+ 이 연습을 완료 하려면 여러 프로젝트에서 만든 SiteColumnProjectItem 솔루션에 추가 해야 [연습: 1 부 프로젝트 템플릿을 사용 하 여 사이트 열 프로젝트 항목 만들기](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md):  
   
 - WPF 프로젝트입니다. 구현 합니다 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 인터페이스 및이 프로젝트에서 마법사 UI를 정의 합니다.  
   
@@ -119,7 +116,7 @@ ms.locfileid: "49942077"
   
 3.  대상 프레임 워크는.NET Framework 4.5,.NET Framework 4.5 클라이언트 프로필 아님로 설정 되어 있는지 확인 합니다.  
   
-     자세한 내용은 [방법: 한 버전의 .NET Framework를 대상으로 지정](../ide/how-to-target-a-version-of-the-dotnet-framework.md)을 참조하세요.  
+     자세한 내용은 [방법: 한 버전의 .NET Framework를 대상으로 지정](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
   
 4.  바로 가기 메뉴를 열고 합니다 **ProjectTemplateWizard** 프로젝트를 선택 **추가**를 선택한 후 **새 항목**합니다.  
   
@@ -163,7 +160,7 @@ ms.locfileid: "49942077"
   
 13. Visual Basic 프로젝트를 개발 하는 경우 ProjectTemplateWizard 네임 스페이스를 프로젝트에 사용 하 여 가져올는 **프로젝트 디자이너**합니다.  
   
-     자세한 내용은 참조 하세요. [방법: 가져온 네임 스페이스를 제거 또는 추가 &#40;Visual Basic&#41;](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)합니다.  
+     자세한 내용은 [방법: 추가 또는 가져온된 네임 스페이스를 제거 &#40;Visual Basic&#41;](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)합니다.  
   
 #### <a name="to-configure-the-sharepointcommands-project"></a>SharePointcommands 프로젝트를 구성 하려면
   
@@ -323,7 +320,7 @@ ms.locfileid: "49942077"
 1.  메뉴 모음에서 **빌드** > **솔루션 빌드**를 선택합니다.  
   
 ## <a name="removing-the-keysnk-file-from-the-project-template"></a>프로젝트 템플릿에서 key.snk 파일을 제거합니다.
- [연습: 프로젝트 템플릿 1 부를 사용 하 여 사이트 열 프로젝트 항목 만들기](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md), 사용자가 만든 프로젝트 템플릿을 사이트 열 프로젝트 인스턴스마다 서명에 사용 되는 key.snk 파일을 포함 합니다. 이 key.snk 파일을 마법사에는 이제 각 프로젝트에 대 한 새 key.snk 파일을 생성 하기 때문에 더 이상 필요 합니다. 프로젝트 템플릿에서 key.snk 파일을 제거 하 고이 파일에 대 한 참조를 제거 합니다.  
+ [연습: 1 부 프로젝트 템플릿을 사용 하 여 사이트 열 프로젝트 항목 만들기](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md), 사용자가 만든 프로젝트 템플릿을 사이트 열 프로젝트 인스턴스마다 서명에 사용 되는 key.snk 파일을 포함 합니다. 이 key.snk 파일을 마법사에는 이제 각 프로젝트에 대 한 새 key.snk 파일을 생성 하기 때문에 더 이상 필요 합니다. 프로젝트 템플릿에서 key.snk 파일을 제거 하 고이 파일에 대 한 참조를 제거 합니다.  
   
 #### <a name="to-remove-the-keysnk-file-from-the-project-template"></a>프로젝트 템플릿에서 key.snk 파일을 제거 하려면  
   
@@ -541,10 +538,9 @@ ms.locfileid: "49942077"
   
      배포 하는 방법에 대 한 자세한 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 확장을 참조 하세요 [Visual Studio 확장 전달](/visualstudio/extensibility/shipping-visual-studio-extensions)합니다.  
   
-## <a name="see-also"></a>참고자료
- [연습: 프로젝트 템플릿 1 부를 사용 하 여 사이트 열 프로젝트 항목 만들기](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)   
+## <a name="see-also"></a>참고 항목
+ [연습: 1 부 프로젝트 템플릿을 사용 하 여 사이트 열 프로젝트 항목 만들기](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)   
  [사용자 지정 SharePoint 프로젝트 항목 형식 정의](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [SharePoint 프로젝트 항목에 대 한 프로젝트 템플릿과 항목 템플릿 만들기](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
  [Visual Studio 템플릿 스키마 참조](/visualstudio/extensibility/visual-studio-template-schema-reference)   
  [방법: 프로젝트 템플릿에 마법사 사용](../extensibility/how-to-use-wizards-with-project-templates.md)  
-  

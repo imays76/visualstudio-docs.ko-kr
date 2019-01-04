@@ -1,9 +1,6 @@
 ---
 title: '방법: 레거시 API 사용 하 여 텍스트 버퍼 이벤트에 대 한 등록 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - register for text buffer events
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ffe8362f26a55fdb6a9fe236782965a2062ed69
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 3eb5706cea2ec0e79ed29812beb94d39a117c61d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639935"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886009"
 ---
 # <a name="how-to-register-for-text-buffer-events-with-the-legacy-api"></a>방법: 기존 API 사용 하 여 텍스트 버퍼 이벤트에 등록
 기존 API를 사용 하 여 텍스트 버퍼를 액세스 하는 경우 다음 절차에 표시 된 대로 텍스트 버퍼 이벤트에 등록 해야 합니다.  

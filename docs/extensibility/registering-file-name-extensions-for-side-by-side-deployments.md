@@ -1,9 +1,6 @@
 ---
 title: Side-by-side-배포에 대 한 파일 이름 확장명 등록 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - file extensions, registering for side-by-side
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1aa553b5370f637f5a779bbdff432319ce3e0bf4
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 1c6d867d1ab28cd2cfe3d8c01fe6818d13c6dc74
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638481"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907737"
 ---
 # <a name="register-file-name-extensions-for-side-by-side-deployments"></a>Side-by-side-배포에 대 한 파일 이름 확장명 등록
 Side-by-side-환경에 배포 하는 Vspackage, 파일의 올바른 버전을 사용 하 여 연결할 파일 이름 확장명을 등록 해야 합니다 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]합니다. 버전별 파일 이름 확장명을 사용 하지 않으면 등록을 사용 하면 프로젝트를 열고 적절 한 버전의 항목 파일을 프로젝트에 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]입니다.  
@@ -38,4 +35,4 @@ Side-by-side-환경에 배포 하는 Vspackage, 파일의 올바른 버전을 �
   
 ## <a name="related-sections"></a>관련 단원  
  [여러 버전의 Visual Studio 지원](../extensibility/supporting-multiple-versions-of-visual-studio.md)  
- 여러 버전의 관련 된 문제에 설명 합니다 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 및 VSPackage 개발 및 최종 사용자에 게 배포 하는 중입니다.
+ 개발 및 최종 사용자에게 배포하는 동안 발생하는 여러 버전의 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 및 VSPackage에 관련된 문제에 대해 설명합니다.

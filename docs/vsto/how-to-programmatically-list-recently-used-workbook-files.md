@@ -1,9 +1,6 @@
 ---
 title: '방법: 프로그래밍 방식으로 최근에 사용한 파일 목록에서 통합 문서'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d3e909ad3e1509689d953e0ad6c6b8346ff97f91
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 850dc26b9a5f270b3806d9623795535d34cf8f4b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257591"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989635"
 ---
 # <a name="how-to-programmatically-list-recently-used-workbook-files"></a>방법: 프로그래밍 방식으로 최근에 사용한 파일 목록에서 통합 문서
   <xref:Microsoft.Office.Interop.Excel._Application.RecentFiles%2A> 속성 최근에 사용한 파일의 Microsoft Office Excel 목록에 표시 되는 모든 파일의 이름이 들어 있는 컬렉션을 반환 합니다. 목록의 길이 유지 하려면 사용자가 선택한 파일의 수에 따라 달라 집니다. 범위에서 결과 표시할 수 있습니다.  
@@ -41,5 +38,3 @@ ms.locfileid: "35257591"
  [통합 문서를 사용 하 여 작동 합니다.](../vsto/working-with-workbooks.md)   
  [NamedRange 컨트롤](../vsto/namedrange-control.md)   
  [Office 솔루션의 선택적 매개 변수](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

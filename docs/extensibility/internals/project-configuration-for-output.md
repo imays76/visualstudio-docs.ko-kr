@@ -1,9 +1,6 @@
 ---
 title: 프로젝트 출력에 대 한 구성 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project configurations, output
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a02e331484abf2ef1450493d2ea1bdddaabe82bd
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 50abcfcc68ee881a7977224ba2354701e735d2bc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42901186"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843296"
 ---
 # <a name="project-configuration-for-output"></a>출력에 대한 프로젝트 구성
 모든 구성에는 실행 파일 또는 리소스 파일과 같은 출력 항목을 생성 하는 빌드 프로세스의 집합을 지원할 수 있습니다. 이러한 출력 항목은 사용자에 게 개인 및 관련된 형식의 실행 파일 (.exe,.dll,.lib) 및 원본 파일 (.idl,.h 파일)와 같은 출력을 연결 하는 그룹에 배치할 수 있습니다.  

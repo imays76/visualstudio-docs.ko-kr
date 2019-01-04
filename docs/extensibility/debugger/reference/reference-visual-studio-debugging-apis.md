@@ -1,9 +1,6 @@
 ---
 title: 참조 (Visual Studio 디버깅 Api) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - reference, Debugging SDK
@@ -15,23 +12,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13e709a49d1f5bf278bed82aa64bfaaf7e92f0b6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c6e9de42d4ff1000ead76158aa3a8c9956286d89
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125905"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845644"
 ---
-# <a name="reference-visual-studio-debugging-apis"></a>참조 (Visual Studio 디버깅 Api)
-Visual Studio Debugging SDK 참조의 런타임 아키텍처 및 디버거 및 해당 구성 요소 기능에 대 한 기본 모델에 간략하게 설명 합니다. 설명서에서는 인터페이스를 통해 정의 하는 동작 외에도 설명 구성 요소 및 인터페이스에 대해 최대한 적은 가정 합니다.  
+# <a name="reference-visual-studio-debugging-apis"></a>참조(Visual Studio 디버깅 API)
+Visual Studio 디버깅 SDK 참조의 런타임 아키텍처 및 디버거 및 해당 구성 요소 기능에 대 한 기본 모델을 간략하게 설명합니다. 설명서에서는 인터페이스를 통해 정의 하는 동작 외에도 설명 구성 요소 및 인터페이스에 대 한 최대한 적은 가정 합니다.  
   
- 참조 섹션의 목표와 다양 한 지원을 최대한 언어, 실행된 시간 및 운영 체제의 집합을 제공 하는 것입니다.  
+ 참조 섹션의 목적은으로 다양 한 지원 가능한 언어, 실행된 시간 및 운영 체제의 집합을 제공 하는 것입니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [API 참조](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)  
  인터페이스, 열거자 및 Visual Studio 디버깅 API의 구조에 대 한 설명서를 포함합니다.  
   
- [용어 설명](../../../extensibility/debugger/reference/visual-studio-debugger-glossary.md)  
+ [용어](../../../extensibility/debugger/reference/visual-studio-debugger-glossary.md)  
  디버깅 관련 용어 및 해당 정의의 목록을 제공합니다.  
   
 ## <a name="see-also"></a>참고 항목  

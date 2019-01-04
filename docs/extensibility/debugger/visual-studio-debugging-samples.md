@@ -1,9 +1,6 @@
 ---
 title: Visual Studio 디버깅 샘플 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - sample applications [Debugging SDK]
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c422dc47ab7bf74c4a16e81efb4ed85d6b87b520
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3eb2fd3e5e2c6c7e2c3e43a8caaf52fa6e4cc7d9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950916"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960406"
 ---
 # <a name="visual-studio-debugging-samples"></a>Visual Studio 디버깅 샘플
 두 샘플에 사용 하 여 Visual Studio 디버거를 확장 하는 방법을 보여 줍니다 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]합니다.  

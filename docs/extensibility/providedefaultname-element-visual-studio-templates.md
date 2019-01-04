@@ -1,6 +1,5 @@
 ---
 title: ProvideDefaultName 요소 (Visual Studio 템플릿) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 684eff17bbc655736c9913b43c717b636f4393b8
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: c9c9c7180b4da2d2d43523a278a3ce803ca37584
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561657"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841926"
 ---
 # <a name="providedefaultname-element-visual-studio-templates"></a>ProvideDefaultName 요소 (Visual Studio 템플릿)
 지정 여부는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로젝트 시스템의 템플릿에 대 한 기본 이름이 생성 됩니다는 **새 항목 추가** 또는 **새 프로젝트** 대화 상자.  

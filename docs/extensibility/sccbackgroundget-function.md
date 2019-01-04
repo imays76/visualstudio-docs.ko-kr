@@ -1,9 +1,6 @@
 ---
 title: SccBackgroundGet 함수 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccBackgroundGet
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39550665c804aa971ba88ee76707bdd150f74ab0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ae32f7b0c9eea907c830a3cc62e0e53e87803177
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811791"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826879"
 ---
 # <a name="sccbackgroundget-function"></a>SccBackgroundGet 함수
 이 함수는 소스 제어에서 각 지정된 된 파일의 사용자 상호 작용 없이 가져옵니다.  
@@ -70,6 +67,6 @@ SCCRTN SccBackgroundGet(
   
  사용 된 `dwFlags` 인수는 동일 합니다 [SccGet](../extensibility/sccget-function.md)합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [원본 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)   
  [SccGet](../extensibility/sccget-function.md)

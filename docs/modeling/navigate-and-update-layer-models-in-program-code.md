@@ -11,17 +11,16 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8ca10b8504dc4383ad6251e3819c14b7102d32d3
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: eea76a607490bda244597e22e25246b39c2c537d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566741"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948656"
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>프로그램 코드에서 레이어 모델 탐색 및 업데이트
 
-이 문서에 요소 및 탐색 하 고 프로그램 코드를 사용 하 여 업데이트할 수 있는 레이어 모델의 관계를 설명 합니다. 사용자의 관점에서 종속성 다이어그램에 대 한 자세한 내용은 참조 하세요. [종속성 다이어그램: 참조](../modeling/layer-diagrams-reference.md) 하 고 [종속성 다이어그램: 지침](../modeling/layer-diagrams-guidelines.md)합니다.
+이 문서에 요소 및 탐색 하 고 프로그램 코드를 사용 하 여 업데이트할 수 있는 레이어 모델의 관계를 설명 합니다. 사용자의 관점에서 종속성 다이어그램에 대 한 자세한 내용은 참조 하세요. [종속성 다이어그램: 참조](../modeling/layer-diagrams-reference.md) 고 [종속성 다이어그램: 지침](../modeling/layer-diagrams-guidelines.md)합니다.
 
 합니다 <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer> 이 항목에서 설명 하는 모델은 보다 일반적인의 단순한 버전 <xref:Microsoft.VisualStudio.GraphModel> 모델입니다. 작성 하는 경우는 [메뉴 명령 또는 제스처 확장이](../modeling/add-commands-and-gestures-to-layer-diagrams.md)를 사용 하 여는 `Layer` 모델. 작성 하는 경우는 [레이어 유효성 검사 확장](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)를 사용 하는 것이 쉽습니다는 `GraphModel`합니다.
 

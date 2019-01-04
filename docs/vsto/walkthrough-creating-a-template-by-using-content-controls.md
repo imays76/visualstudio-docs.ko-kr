@@ -1,9 +1,6 @@
 ---
 title: '연습: 콘텐츠 컨트롤을 사용 하 여 템플릿 만들기'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e597f13d2627a8b3e40aa65926d1c990be839c38
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0ad53a4e3e834959cbc37d2063a5dd2d1b0d7f6c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833189"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931988"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>연습: 콘텐츠 컨트롤을 사용 하 여 템플릿 만들기
   이 연습에서는 콘텐츠 컨트롤을 사용하여 Microsoft Office Word 서식 파일에서 구조화되고 재사용 가능한 콘텐츠를 만드는 문서 수준 사용자 지정을 만드는 방법을 보여 줍니다.  
@@ -59,7 +56,7 @@ ms.locfileid: "49833189"
   
 ### <a name="to-create-a-new-word-template-project"></a>새 Word 서식 파일 프로젝트를 만들려면  
   
-1.  이름을 사용 하 여 Word 서식 파일 프로젝트를 만듭니다 **MyBuildingBlockTemplate**합니다. 마법사에서 솔루션에 새 문서를 만듭니다. 자세한 내용은 [방법: Visual Studio에서 만드는 Office 프로젝트](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
+1.  이름을 사용 하 여 Word 서식 파일 프로젝트를 만듭니다 **MyBuildingBlockTemplate**합니다. 마법사에서 솔루션에 새 문서를 만듭니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 디자이너에서 새 Word 서식 파일을 열고 사이트를 추가 합니다 **MyBuildingBlockTemplate** 프로젝트가 **솔루션 탐색기**합니다.  
   
@@ -86,7 +83,7 @@ ms.locfileid: "49833189"
 5. 리본에서 **개발자** 탭을 클릭합니다.  
   
    > [!NOTE]  
-   >  **개발자** 탭이 표시되지 않는 경우 먼저 개발자 탭을 표시해야 합니다. 자세한 내용은 [방법: 리본에 개발 도구 탭 표시](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)합니다.  
+   >  **개발자** 탭이 표시되지 않는 경우 먼저 개발자 탭을 표시해야 합니다. 자세한 내용은 [방법: 리본 메뉴에 개발 도구 탭 표시](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)합니다.  
   
 6. 에 **컨트롤** 그룹에서 클릭 합니다 **텍스트** 단추 ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") 를추가할<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>첫째 셀으로 합니다.  
   
@@ -237,7 +234,7 @@ ms.locfileid: "49833189"
   
 -   문서에 포함된 사용자 지정 XML 부분이라는 XML 부분에 콘텐츠 컨트롤을 바인딩합니다. 자세한 내용은 [연습: 사용자 지정 XML 부분에 콘텐츠 컨트롤 바인딩](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [확장 된 개체를 사용 하 여 Word 자동화](../vsto/automating-word-by-using-extended-objects.md)   
  [콘텐츠 컨트롤](../vsto/content-controls.md)   
  [방법: Word 문서에 콘텐츠 컨트롤 추가](../vsto/how-to-add-content-controls-to-word-documents.md)   
@@ -245,5 +242,3 @@ ms.locfileid: "49833189"
  [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)   
  [호스트 항목 및 호스트 컨트롤의 프로그래밍 방식으로 제한 사항](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [런타임에 Office 문서에 컨트롤 추가](../vsto/adding-controls-to-office-documents-at-run-time.md)  
-  
-  

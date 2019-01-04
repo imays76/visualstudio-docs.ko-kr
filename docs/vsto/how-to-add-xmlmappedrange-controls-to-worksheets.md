@@ -1,9 +1,6 @@
 ---
 title: '방법: 워크시트에 XMLMappedRange 컨트롤 추가'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9d7cc26c0170c2a20e27026ebcbc6d8705d34ce2
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 5f5f11b09c5fd44b59ed47702d0eee2e6f563223
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646718"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856594"
 ---
 # <a name="how-to-add-xmlmappedrange-controls-to-worksheets"></a>방법: 워크시트에 XMLMappedRange 컨트롤 추가
   Visual Studio 자동으로 추가 Microsoft Office Excel에서 셀으로 XML 요소를 매핑하는 경우는 <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> 워크시트에 컨트롤입니다.  
@@ -69,5 +66,3 @@ ms.locfileid: "53646718"
  [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)   
  [호스트 항목 및 호스트 컨트롤의 프로그래밍 방식으로 제한 사항](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [방법: Visual Studio 내에서 워크시트에 스키마 매핑](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)  
-  
-  

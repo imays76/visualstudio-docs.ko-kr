@@ -1,9 +1,6 @@
 ---
 title: 레거시 언어 서비스 필수 항목 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - languages, integrating into Visual Studio
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 344a7949c5058237d8599d69ea3b234e9a6e8e72
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 79ecbd971315c004a9be40221a6950afb5856823
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850180"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847206"
 ---
 # <a name="legacy-language-service-essentials"></a>레거시 언어 서비스 필수 항목
 Visual Studio 프로그래밍 언어를 통합 하도록 언어 서비스를 제공 해야 합니다. 이 항목에서는 레거시 언어 서비스에서 제공 되는 기능을 설명 합니다.  
@@ -50,4 +47,3 @@ Visual Studio 프로그래밍 언어를 통합 하도록 언어 서비스를 제
 |-----------------------| - |
 | 식 계산기 | 지원 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 에 표시할 중단점 유효성을 검사 하 고 식의 목록을 제공 하 여 디버거를 **자동** 디버그 창입니다.<br /><br /> 자세한 내용은 [디버깅에 대 한 언어 서비스 지원](../../extensibility/internals/language-service-support-for-debugging.md)합니다. |
 | 기호 검색 도구 | 지원 **개체 브라우저**를 **클래스 뷰**합니다 **호출 브라우저**, 및 **기호 찾기 결과**합니다. |
-

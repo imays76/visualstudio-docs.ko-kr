@@ -1,9 +1,6 @@
 ---
 title: '방법: 실행 코드는 경우는 SharePoint 프로젝트가 배포 되거나 취소 될 | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: da1b6dd4ff71bcc78043ea88c8f833b9c0f32a38
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bb5ba251df3271e704ea4b455c5cc47003ab8e2e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832448"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933624"
 ---
-# <a name="how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>방법: SharePoint 프로젝트가 배포 되거나 취소 하는 경우 코드를 실행 합니다.
+# <a name="how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>방법: SharePoint 프로젝트는 배포 되거나 취소 될 때 코드를 실행 합니다.
   SharePoint 프로젝트는 배포 되거나 취소 될 때 추가 작업을 수행 하려는 경우에 Visual Studio에서 발생 하는 이벤트를 처리할 수 있습니다. 자세한 내용은 [확장 SharePoint 패키징 및 배포](../sharepoint/extending-sharepoint-packaging-and-deployment.md)합니다.  
   
 ### <a name="to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>시 SharePoint 프로젝트 코드를 실행 하려면 배포 되거나 취소  
@@ -56,7 +53,6 @@ ms.locfileid: "49832448"
 ## <a name="deploy-the-extension"></a>확장 배포  
  확장 배포를 만들려면를 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 어셈블리 및 확장을 사용 하 여 배포 하려는 다른 파일에 대 한 패키지 (VSIX) 확장 합니다. 자세한 내용은 [Visual Studio에서 SharePoint 도구의 확장을 배포할](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)합니다.  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  [SharePoint 패키징 및 배포 확장](../sharepoint/extending-sharepoint-packaging-and-deployment.md)   
  [방법: 배포 단계를 실행할 때 코드를 실행 합니다.](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)  
-  

@@ -1,13 +1,8 @@
 ---
 title: SharePoint 솔루션 빌드 및 디버깅 | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 82733a8d3e908e82ad8f841857aa70374495e556
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 0ab8fe8b7a6a26e855e603a2f2969c894ff7da50
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283537"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987196"
 ---
 # <a name="build-and-debug-sharepoint-solutions"></a>빌드 및 SharePoint 솔루션 디버깅
   일반적으로 SharePoint 솔루션 빌드 및 디버깅 같습니다 빌드 및 기타 유형의 프로젝트를 디버깅 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]합니다. 이 섹션의 항목에서는 차이점에 대해 설명합니다.  
@@ -39,7 +34,7 @@ ms.locfileid: "44283537"
 |중간 파일을 패키지 합니다.|*\<프로젝트 이름 > \pkgobj\debug* 나  *\<ProjectName > \pkgobj\release*|  
   
 ## <a name="build-sharepoint-solutions"></a>SharePoint 솔루션 빌드
- SharePoint 솔루션을 빌드하려면 개발 컴퓨터에 올바른 버전의 SharePoint server 설치 되어 있어야 합니다. 이 고, 그렇지 SharePoint 솔루션을 빌드하는 다른 형식의 프로젝트를 빌드하는 것과 동일한 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]입니다. 자세한 내용은 [방법: 빌드 SharePoint 솔루션](../sharepoint/how-to-build-sharepoint-solutions.md)합니다.  
+ SharePoint 솔루션을 빌드하려면 개발 컴퓨터에 올바른 버전의 SharePoint server 설치 되어 있어야 합니다. 이 고, 그렇지 SharePoint 솔루션을 빌드하는 다른 형식의 프로젝트를 빌드하는 것과 동일한 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]입니다. 자세한 내용은 [방법: SharePoint 솔루션 빌드](../sharepoint/how-to-build-sharepoint-solutions.md)합니다.  
   
 ## <a name="debug-and-test-sharepoint-solutions"></a>SharePoint 솔루션을 테스트 및 디버그
  디버깅 하기 전에 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 복사본은 *.wsp* SharePoint 서버에 패키지 사이트 및 웹 범위 기능을 활성화 하 고 경우에 따라 프로젝트를 시작 합니다. 수동으로 프로젝트를 열어야 하는 경우도 있습니다. 자세한 내용은 [문제를 해결 하는 SharePoint 솔루션](../sharepoint/troubleshooting-sharepoint-solutions.md) 하 고 [디버그 SharePoint 솔루션](../sharepoint/debugging-sharepoint-solutions.md)합니다.  
@@ -53,9 +48,7 @@ ms.locfileid: "44283537"
 ## <a name="using-the-clean-command"></a>정리 명령 사용  
  SharePoint 솔루션 디버깅을 위해 SharePoint 서버에 설치 된 경우는 **정리** 명령 솔루션을 제거 하지 않습니다. 대신 SharePoint 구성을 통해 기능을 비활성화 해야 합니다.  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  [SharePoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)   
  [서버 탐색기를 사용 하 여 SharePoint 연결 찾아보기](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)   
  [패키지 및 SharePoint 솔루션 배포](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  
- 

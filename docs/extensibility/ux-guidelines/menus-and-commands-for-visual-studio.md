@@ -1,9 +1,6 @@
 ---
 title: Visual Studio의 메뉴 및 명령 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 0a1ed675-2bd1-4603-ba3a-f40dfb5cfb69
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f5686f96ce0125cac98ca08582e8407c4e1e926
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bddedab69583c8ec4ff809810e049a4aff2046ee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937956"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933801"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Visual Studio의 메뉴 및 명령
 ## <a name="command-usage"></a>명령 사용법  
@@ -52,7 +49,7 @@ ms.locfileid: "49937956"
  사용자의 포커스 영역에 가깝게에서 명령을 배치 하는 것이 유용 합니다. 이 작업을 수행 하는 한 가지 방법은 편집기 도구 창 또는 문서 맨 위에 있는 포함된 된 도구 모음을 만드는 것입니다. 도구 모음에 배치 하는 명령 창 내에서 콘텐츠 영역에 구체적 이어야 합니다. 이러한 도구 모음에서 공유 명령을 중복 되지 않습니다. 예를 들어 포함된 된 도구 모음 내에서 "저장" 아이콘을 두지 마십시오.  
   
 ### <a name="content-and-command-visibility"></a>콘텐츠 및 명령 표시  
- 다음 범위에서 명령이 존재: **환경**를 **계층**, 및 **문서**합니다. 명령 배치 했으므로 신뢰 하기 위해 각 범위 인지 알고 있어야 합니다.  
+ 명령을 다음 범위에 존재합니다. **환경**하십시오 **계층**, 및 **문서**합니다. 명령 배치 했으므로 신뢰 하기 위해 각 범위 인지 알고 있어야 합니다.  
   
  명령에 **환경** 범위 기본 컨텍스트를 설정 하 고 여러 컨텍스트 간에 공유 됩니다. 표시 유형 또는 문서와 도구 창의 배열을 변경 됩니다. 범위는 환경의 명령 사이 **새 프로젝트**, **서버에 연결**를 **프로세스 연결**를 **잘라내기**,  **복사본**, **붙여넣기**, **찾을**를 **옵션**를 **사용자 지정**, **새 창**, 및 **도움말을 보려면**합니다.  
   
@@ -284,7 +281,7 @@ ms.locfileid: "49937956"
   
 - **사용 하는 한정자 키를 확인 하려면 Windows 지침을 따릅니다.** Ctrl 키 조합이 사용 하 여 전체 문서에 적용 되는 명령 등과 같이 대규모 효과 명령에 대 한 합니다. 확장 또는 표준 바로 가기 키의 동작을 보완 하는 명령의 Shift 키 조합을 사용 합니다. Ctrl + alt 키 조합을 사용 하지 마세요.  
   
-- **불필요 한 바로 가기 키를 제거 합니다.** 레거시 기능을 사용 하는 경우에 액세스 키를 동일한 명령에 대 한 빠른 액세스를 제공 하는 경우 (미만 CEIP 데이터에서 10 번) 극단적인 infrequency 이하의 보통 infrequency (100 번 보다 CEIP 데이터에서)를 사용 하 여 사용 되는 바로 가기를 제거 하는 것이 좋습니다. 예를 들어: Alt, H, C 도움말/콘텐츠 열립니다.  
+- **불필요 한 바로 가기 키를 제거 합니다.** 레거시 기능을 사용 하는 경우에 액세스 키를 동일한 명령에 대 한 빠른 액세스를 제공 하는 경우 (미만 CEIP 데이터에서 10 번) 극단적인 infrequency 이하의 보통 infrequency (100 번 보다 CEIP 데이터에서)를 사용 하 여 사용 되는 바로 가기를 제거 하는 것이 좋습니다. 예: Alt 키를 H C 도움말/콘텐츠 열립니다.  
   
   바로 가기 가용성을 확인 하는 간단한 방법은 아닙니다. 바로 가기를 추가 하려면 다음이 단계를 수행 합니다.  
   

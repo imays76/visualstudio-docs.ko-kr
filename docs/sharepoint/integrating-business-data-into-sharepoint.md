@@ -1,13 +1,8 @@
 ---
 title: SharePoint에 비즈니스 데이터 통합 | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -24,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e75367844a3a62e044a98f9d52c567fcfca3590e
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 194f2e0c88a0cbce9ef34f77246cf7969066833e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119918"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934442"
 ---
 # <a name="integrate-business-data-into-sharepoint"></a>SharePoint 비즈니스 데이터 통합
   SharePoint에 비즈니스 데이터를 통합할 수 있습니다. 비즈니스 데이터와 같은 백 엔드 서버 응용 프로그램에서 가져올 수 있습니다 [!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)], Siebel 및 SAP 또는 웹 서비스입니다. 사용자 수 보기, 추가, 업데이트 또는 외부 목록 또는 SharePoint에 비즈니스 데이터 웹 파트를 사용 하 여 비즈니스 데이터를 삭제 합니다.  이 데이터를 오프 라인 Microsoft Outlook과 같은 Microsoft Office 응용 프로그램에서 액세스할 수도 있습니다. 자세한 내용은 [여기서 수 외부 데이터를 표시할](http://go.microsoft.com/fwlink/?LinkId=169295)합니다.  
@@ -61,4 +56,3 @@ ms.locfileid: "37119918"
 |[비즈니스 데이터 연결 모델 만들기](../sharepoint/creating-a-business-data-connectivity-model.md)|어떻게 새 모델을 만들거나 가져오는 SharePoint에서 내보내기 하는 모델을 보여 줍니다.|  
 |[비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)|Visual Studio 디자인 도구를 사용 하 여 모델의 요소를 디자인 하는 방법에 설명 합니다.|  
 |[SharePoint Designer를 사용 하 여 vs 하는 경우. BCS를 사용 하 여 visual Studio를 만들 때 솔루션](http://go.microsoft.com/fwlink/?LinkID=183448)|Visual Studio를 사용 하거나 SharePoint Designer를 사용 하 여 BDC에 대 한 모델을 만들 것인지를 결정 하도록 도와줍니다.|  
-  

@@ -1,9 +1,6 @@
 ---
 title: Office 프로젝트의 이벤트
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -35,12 +32,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5ed18bdcf0f4a7ef6dbb8a358cbf11fd7b49e628
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 070c386434e6f63c06b9049985986fbae3f92f8d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647650"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929888"
 ---
 # <a name="events-in-office-projects"></a>Office 프로젝트의 이벤트
   각 Office 프로젝트 템플릿은 몇 가지 이벤트 처리기를 자동으로 생성합니다. 문서 수준 사용자 지정의 이벤트 처리기는 VSTO 추가 기능의 이벤트 처리기와 약간 다릅니다.  
@@ -85,7 +82,7 @@ ms.locfileid: "53647650"
     -   `ThisWorkbook_Shutdown`  
   
 > [!NOTE]  
->  문서의 **Shutdown** 이벤트 처리기 중에 프로그래밍 방식으로 컨트롤을 제거하지 마세요. 문서의 UI 요소는 **Shutdown** 이벤트가 발생할 때 더 이상 사용할 수 없습니다. 응용 프로그램이 닫히기 전에 컨트롤을 제거하려면 **BeforeClose** , **BeforeSave**등의 다른 이벤트 처리기에 코드를 추가합니다.  
+>  문서의 **Shutdown** 이벤트 처리기 중에 프로그래밍 방식으로 컨트롤을 제거하지 마세요. 문서의 UI 요소는 **Shutdown** 이벤트가 발생할 때 더 이상 사용할 수 없습니다. 애플리케이션이 닫히기 전에 컨트롤을 제거하려면 **BeforeClose** , **BeforeSave**등의 다른 이벤트 처리기에 코드를 추가합니다.  
   
 ### <a name="event-handler-method-declarations"></a>이벤트 처리기 메서드 선언  
  모든 이벤트 처리기 메서드 선언에는 동일한 인수인 *sender* 및 *e*가 전달됩니다. Excel에서 *sender* 인수는 `Sheet1` , `Sheet2`등의 시트를 참조하고, Word에서 *sender* 인수는 문서를 참조합니다. *e* 인수는 이벤트의 표준 인수를 참조합니다. 이 경우에는 표준 인수가 사용되지 않습니다.  
@@ -138,7 +135,7 @@ ms.locfileid: "53647650"
   
  VSTO 추가 기능이 `ThisAddIn_Startup` 메서드를 재정의하지 않는 한 <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> 이벤트 처리기의 코드는 실행할 첫 번째 사용자 코드입니다. 이 경우에 `ThisAddIn_Startup` 이벤트 처리기는 <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A>뒤에 호출됩니다.  
   
- 코드를 추가 하지는 `ThisAdd-In_Startup` 이벤트 처리기 코드는 문서를 열어야 하는 데 필요한 경우. 대신 사용자가 문서를 만들거나 열 때 Office 응용 프로그램에서 발생하는 이벤트에 해당 코드를 추가합니다. 자세한 내용은 [문서를 시작 하면 Office 응용 프로그램 액세스](../vsto/programming-vsto-add-ins.md#AccessingDocuments)합니다.  
+ 코드를 추가 하지는 `ThisAdd-In_Startup` 이벤트 처리기 코드는 문서를 열어야 하는 데 필요한 경우. 대신 사용자가 문서를 만들거나 열 때 Office 애플리케이션에서 발생하는 이벤트에 해당 코드를 추가합니다. 자세한 내용은 [문서를 시작 하면 Office 응용 프로그램 액세스](../vsto/programming-vsto-add-ins.md#AccessingDocuments)합니다.  
   
  VSTO 추가 기능의 시작 시퀀스에 대 한 자세한 내용은 참조 [Architecture of VSTO add-ins](../vsto/architecture-of-vsto-add-ins.md)합니다.  
   
@@ -161,5 +158,3 @@ ms.locfileid: "53647650"
  [문서 수준 사용자 지정 프로그래밍](../vsto/programming-document-level-customizations.md)   
  [VSTO 추가 기능 프로그래밍](../vsto/programming-vsto-add-ins.md)   
  [Office 프로젝트 템플릿 개요](../vsto/office-project-templates-overview.md)  
-  
-  

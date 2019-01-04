@@ -1,9 +1,6 @@
 ---
 title: '방법: 응용 프로그램에 사용자 지정 작업창 추가'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6436176c7af4206319d9d2f8408baccb0572da5b
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 0241cfa4b377d35a639b7aa193a38b44135078e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646999"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822786"
 ---
 # <a name="how-to-add-a-custom-task-pane-to-an-application"></a>방법: 응용 프로그램에 사용자 지정 작업창 추가
   VSTO 추가 기능을 사용하여 위에 나열된 응용 프로그램에 사용자 지정 작업창을 추가할 수 있습니다. 자세한 내용은 [사용자 지정 작업창](../vsto/custom-task-panes.md)합니다.  
@@ -60,9 +57,7 @@ ms.locfileid: "53646999"
     > [!NOTE]  
     >  이 코드는 응용 프로그램의 활성 창과 사용자 지정 작업창을 연결합니다. 일부 응용 프로그램의 경우 작업창이 응용 프로그램의 다른 문서나 항목과 함께 표시되도록 이 코드를 수정하는 것이 좋습니다. 자세한 내용은 [사용자 지정 작업창](../vsto/custom-task-panes.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [Office UI 사용자 지정](../vsto/office-ui-customization.md)   
  [사용자 지정 작업창](../vsto/custom-task-panes.md)   
  [연습: 사용자 지정 작업창에서 응용 프로그램을 자동화](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)  
-  
-  

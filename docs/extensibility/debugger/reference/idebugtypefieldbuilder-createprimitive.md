@@ -1,9 +1,6 @@
 ---
 title: IDebugTypeFieldBuilder::CreatePrimitive | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - CreatePrimitive
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f536c1fb610601ad7e9ffc86a7e42304249d9743
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1abb2dd1f4f7c21c329c2af4429009592394ee26
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841639"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902138"
 ---
 # <a name="idebugtypefieldbuildercreateprimitive"></a>IDebugTypeFieldBuilder::CreatePrimitive
 기본 형식을 나타내는 개체를 만듭니다.  

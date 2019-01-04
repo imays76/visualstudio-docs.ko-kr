@@ -1,9 +1,6 @@
 ---
 title: Office 솔루션의 데이터
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2b53f4b9af7cf262e55935fa5c355a165515bb16
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: dad32dd0412c8cc6ad1ce45160fc06c96e089772
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53801590"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828906"
 ---
 # <a name="data-in-office-solutions"></a>Office 솔루션의 데이터
   많은 Office 솔루션에서 사용자는 데이터를 검색하거나 수정할 수 있도록 합니다. Visual Studio를 사용하여 Office 솔루션을 만드는 경우 데이터로 작업할 수 있는 여러 가지 방법이 있습니다.

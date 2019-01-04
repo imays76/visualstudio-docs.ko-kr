@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 01a2b4863736b22e08cf2075e6402d836e9cc671
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ca540b8ada32eac3afb6fcc4cb8d8da7204052b4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926802"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915428"
 ---
 # <a name="invoking-text-transformation-in-a-vs-extension"></a>VS 확장에서 텍스트 변환 호출
 메뉴 명령 등 Visual Studio 확장을 작성 하는 경우 또는 [도메인별 언어](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md), 텍스트 템플릿 변환에 텍스트 템플릿 서비스를 사용할 수 있습니다. <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating> 서비스를 가져와서 <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>으로 캐스팅합니다.
@@ -135,8 +134,8 @@ Sample text.
  <xref:System.MarshalByRefObject>에서 파생되는 매개 변수 클래스를 사용하여 텍스트 템플릿의 값을 전달할 수 있습니다.
 
 ## <a name="related-topics"></a>관련 항목
- 텍스트 전처리 된 텍스트 템플릿에서 생성: 호출 된 `TransformText()` 생성된 된 클래스의 메서드. 자세한 내용은 [T4 텍스트 템플릿을 사용 하 여 런타임 텍스트 생성](../modeling/run-time-text-generation-with-t4-text-templates.md)합니다.
+ 전처리된 텍스트 템플릿에서 텍스트를 생성하려면 생성된 클래스의 `TransformText()` 메서드를 호출합니다. 자세한 내용은 [T4 텍스트 템플릿을 사용 하 여 런타임 텍스트 생성](../modeling/run-time-text-generation-with-t4-text-templates.md)합니다.
 
- Visual Studio 확장을 벗어나는 텍스트를 생성 하려면: 사용자 지정 호스트를 정의 합니다. 자세한 내용은 [사용자 지정 호스트를 사용 하 여 텍스트 템플릿 처리](../modeling/processing-text-templates-by-using-a-custom-host.md)합니다.
+ Visual Studio 확장을 벗어나는 텍스트를 생성 합니다. 사용자 지정 호스트를 정의합니다. 자세한 내용은 [사용자 지정 호스트를 사용 하 여 텍스트 템플릿 처리](../modeling/processing-text-templates-by-using-a-custom-host.md)합니다.
 
- 나중에 컴파일된 하 고 실행할 수 있는 소스 코드를 생성할: 호출 된 `t4.PreprocessTemplate()` 메서드의 <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.
+ 나중에 컴파일하고 실행할 수 있는 소스 코드를 생성하려면 `t4.PreprocessTemplate()`의 <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating> 메서드를 호출합니다.

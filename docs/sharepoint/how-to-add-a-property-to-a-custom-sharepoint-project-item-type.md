@@ -1,9 +1,6 @@
 ---
 title: '방법: 사용자 지정 SharePoint 프로젝트 항목 형식에 속성을 추가 합니다. | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8a74fbffd5a1d8e9c5e660961d93f7181e51827a
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 44b791c5855838cc8108902305d016fe7f9900ac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757008"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950487"
 ---
 # <a name="how-to-add-a-property-to-a-custom-sharepoint-project-item-type"></a>방법: 사용자 지정 SharePoint 프로젝트 항목 형식에 속성 추가
   사용자 지정 SharePoint 프로젝트 항목 형식을 정의할 때에 프로젝트 항목에 속성을 추가할 수 있습니다. 속성에 표시 합니다 **속성** 창에서 프로젝트 항목을 선택 하는 경우 **솔루션 탐색기**합니다.  
@@ -37,7 +34,7 @@ ms.locfileid: "36757008"
   
 3.  에 대 한 이벤트 처리기에서는 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> 이벤트를 사용자 지정 속성 클래스의 인스턴스를 추가 합니다 <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemPropertiesRequestedEventArgs.PropertySources%2A> 이벤트 인수 매개 변수 컬렉션입니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드 예제에서는 명명 된 속성을 추가 하는 방법을 보여 줍니다 **속성의 예로** 을 사용자 지정 프로젝트 항목 형식입니다.  
   
  [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#11](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#11)]
@@ -51,13 +48,13 @@ ms.locfileid: "36757008"
 ### <a name="specify-the-behavior-of-custom-properties"></a>사용자 지정 속성의 동작을 지정  
  사용자 지정 속성을 나타나고 동작을 정의할 수 있습니다 합니다 **속성** 창에서 특성을 적용 하 여는 <xref:System.ComponentModel> 속성 정의에 네임 스페이스입니다. 다음 특성은 여러 시나리오에서 유용 합니다.  
   
--   <xref:System.ComponentModel.DisplayNameAttribute>:에 표시 되는 속성의 이름을 지정 합니다 **속성** 창입니다.  
+-   <xref:System.ComponentModel.DisplayNameAttribute>: 에 표시 되는 속성의 이름을 지정 합니다 **속성** 창입니다.  
   
--   <xref:System.ComponentModel.DescriptionAttribute>: 아래쪽에 표시 되는 설명 문자열을 지정 합니다.는 **속성** 창 속성을 선택 합니다.  
+-   <xref:System.ComponentModel.DescriptionAttribute>: 맨 아래에 표시 되는 설명 문자열을 지정 합니다 **속성** 속성을 선택 하는 경우 창입니다.  
   
 -   <xref:System.ComponentModel.DefaultValueAttribute>: 속성의 기본값을 지정 합니다.  
   
--   <xref:System.ComponentModel.TypeConverterAttribute>:에 표시 되는 문자열 간에 사용자 지정 변환을 지정 합니다 **속성** 창과 문자열이 아닌 속성 값입니다.  
+-   <xref:System.ComponentModel.TypeConverterAttribute>: 에 표시 되는 문자열 간에 사용자 지정 변환을 지정 합니다 **속성** 창과 문자열이 아닌 속성 값입니다.  
   
 -   <xref:System.ComponentModel.EditorAttribute>: 속성을 수정 하는 데 사용자 지정 편집기를 지정 합니다.  
   
@@ -73,9 +70,7 @@ ms.locfileid: "36757008"
   
  프로젝트 항목을 배포 하려면 만들기를 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 어셈블리, 템플릿 및 프로젝트 항목을 사용 하 여 배포 하려는 다른 파일에 대 한 패키지 (VSIX) 확장 합니다. 자세한 내용은 [Visual Studio에서 SharePoint 도구의 확장을 배포할](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)합니다.  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  [방법: SharePoint 프로젝트 항목 형식 정의](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)   
  [방법: 사용자 지정 SharePoint 프로젝트 항목 형식에 바로 가기 메뉴 항목 추가](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md)   
  [사용자 지정 SharePoint 프로젝트 항목 형식 정의](../sharepoint/defining-custom-sharepoint-project-item-types.md)  
-  
-  

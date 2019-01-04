@@ -1,9 +1,6 @@
 ---
 title: '방법: 파일 변경 알림 표시 안 함 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - suppress file change notification
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 505827d25a7e6016403567c172ad094d072f1ef3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0d2ca702be87722d2d3197d5584811d77c62472b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885826"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874286"
 ---
 # <a name="how-to-suppress-file-change-notifications"></a>방법: 파일 변경 알림 표시 안 함
 메시지와 함께 대화 상자가 표시 텍스트 버퍼를 나타내는 물리적 파일이 변경 된 경우 **다음 항목의 변경 내용을 저장 하 시겠습니까?** 이 파일 변경 알림 이라고 합니다. 하지만 많은 변경 하는 경우 파일을이 대화 상자를 반복적으로 표시 될 수 있습니다 신속 하 게 성가신.  
@@ -79,7 +76,7 @@ void CSuspendFileChanges::Suspend()
   
     CComPtr<IUnknown> srpDocData;  
     VSCOOKIE vscookie = VSCOOKIE_NIL;  
-    pRDT->FindAndLockDocument(RDT_NoLock, T2COLE(m_strMkDocument),    
+    pRDT->FindAndLockDocument(RDT_NoLock, T2COLE(m_strMkDocument),    
       NULL, NULL, &srpDocData, &vscookie);  
     if ( (vscookie == VSCOOKIE_NIL) || !srpDocData)  
         return;  

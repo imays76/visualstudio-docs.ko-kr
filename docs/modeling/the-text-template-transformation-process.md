@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1ace7528eb1685765fe5c7ff11ce9b3c3234a941
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1f4cadbbf9de2f9f02a8bc95a4f436f399e2052b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919158"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908659"
 ---
 # <a name="the-text-template-transformation-process"></a>텍스트 템플릿 변형 프로세스
 텍스트 템플릿 변형 프로세스의 입력으로 텍스트 템플릿 파일을 출력으로 새 텍스트 파일을 생성 합니다. 예를 들어 텍스트 템플릿을 사용 하 여 Visual Basic 또는 C# 코드를 생성 하거나 HTML 보고서를 생성할 수 있습니다.

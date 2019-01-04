@@ -1,9 +1,6 @@
 ---
 title: '방법: 프로그래밍 방식으로 전자 메일 항목 만들기'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,23 +14,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 28b6b1dac69199ff7431eacbe05d8a17a1734763
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: e5b665a5ed281cafaf19017d2cf65a6ab1dd80b9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256600"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869723"
 ---
 # <a name="how-to-programmatically-create-an-email-item"></a>방법: 프로그래밍 방식으로 전자 메일 항목 만들기
   이 예제에서는 Microsoft Office Outlook에서 전자 메일 메시지를 만듭니다.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  [!code-csharp[Trin_OL_CreateMailItem#1](../vsto/codesnippet/CSharp/Trin_OL_CreateMailItem/thisaddin.cs#1)]  
   
 ## <a name="see-also"></a>참고자료  
  [메일 항목 작업](../vsto/working-with-mail-items.md)   
  [VSTO 추가 기능 프로그래밍 시작](../vsto/getting-started-programming-vsto-add-ins.md)  
-  
-  

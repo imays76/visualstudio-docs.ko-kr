@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7f2a22a39b30d6a1910a95d5c30992bbd14dbc9a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eb39e9d510d2da8a7e8b7ae9ac08ff655f334f2e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828679"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866493"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>잠금 정책을 정의하여 읽기 전용 세그먼트 만들기
 Visual Studio Visualization and Modeling SDK의 불변성 API는 프로그램을을 읽을 수 있지만 변경 되지 않도록 도메인 특정 언어 (DSL) 모델의 전체 또는 일부를 잠글 수 있습니다. 이 읽기 전용 옵션이 사용할 수 있습니다, 예를 들어 사용자 동료 들이 주석 달기 및 DSL 모델 검토를 요청할 수 있지만 원래 변경에서 차단할 수 있습니다.

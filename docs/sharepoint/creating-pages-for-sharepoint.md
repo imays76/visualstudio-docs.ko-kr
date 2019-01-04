@@ -1,9 +1,6 @@
 ---
 title: SharePoint를 위한 페이지 만들기 | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ecdbde69735f548b7ab70da132e9e2cc2080bbcb
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 71f0a75678c0123853f128f42bfdbf1c75ac0c74
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326052"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859817"
 ---
 # <a name="create-pages-for-sharepoint"></a>SharePoint에 대 한 페이지 만들기
   응용 프로그램 페이지, 사이트 페이지, 마스터 페이지 및 SharePoint 사이트에 대 한 페이지 레이아웃을 만들 수 있습니다.  
@@ -44,7 +41,7 @@ ms.locfileid: "36326052"
 |마스터 페이지|사이트 페이지에 대 한 일반적인 구조를 정의 하려는 경우 마스터 페이지 및 응용 프로그램 페이지를 만듭니다.|  
 |페이지 레이아웃|페이지 레이아웃에 따라 다릅니다 [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] 추가로 사이트 페이지 및 응용 프로그램 페이지에 대 한 공통 구조를 정의할 수 있습니다.|  
   
- 각 페이지 유형의 개요를 참조 하세요 [구성 요소: 페이지 및 사용자 인터페이스](http://go.microsoft.com/fwlink/?LinkID=182095), 및 [페이지 레이아웃 및 마스터 페이지](http://go.microsoft.com/fwlink/?LinkID=182096)합니다.  
+ 각 페이지 유형의 개요를 참조 하세요. [문서 블록: 페이지 및 사용자 인터페이스](http://go.microsoft.com/fwlink/?LinkID=182095), 및 [페이지 레이아웃 및 마스터 페이지](http://go.microsoft.com/fwlink/?LinkID=182096)합니다.  
   
 ## <a name="create-application-pages"></a>응용 프로그램 페이지 만들기
  추가 하 여 Visual Studio에서 응용 프로그램 페이지를 만들 수는 **응용 프로그램 페이지** SharePoint 프로젝트 항목입니다. 페이지에 컨트롤을 추가 하 고 코드를 추가 하 여 컨트롤 이벤트를 처리할 수 있습니다.  
@@ -61,7 +58,7 @@ ms.locfileid: "36326052"
   
  솔루션에 이러한 파일 직접 추가 하거나 가져올 수 있습니다. 두 경우 모두 추가 하는 각 항목에 대 한 적절 한 매핑된 폴더를 만들어야 합니다. 매핑된 폴더를 만드는 방법에 대 한 자세한 내용은 참조 하세요. [방법: 매핑된 폴더 추가 및 제거](../sharepoint/how-to-add-and-remove-mapped-folders.md)합니다.  
   
- 연계 스타일 시트를 만드는 방법에 대 한 자세한 내용은 참조 하세요. [SharePoint Foundation에서 스타일 시트 클래스 사용 연계](http://go.microsoft.com/fwlink/?LinkID=182098)합니다. SharePoint 솔루션에 대 한 JavaScript 및 JScript 파일을 만드는 방법에 대 한 자세한 내용은 참조 하세요. [설정 하는 기본 ASPX 페이지 ECMAScript](http://go.microsoft.com/fwlink/?LinkID=182099)합니다. 테마에 대 한 자세한 내용은 참조 하십시오 [구성 요소: 페이지 및 사용자 인터페이스](http://go.microsoft.com/fwlink/?LinkID=182095)합니다.  
+ 연계 스타일 시트를 만드는 방법에 대 한 자세한 내용은 참조 하세요. [SharePoint Foundation에서 스타일 시트 클래스 사용 연계](http://go.microsoft.com/fwlink/?LinkID=182098)합니다. SharePoint 솔루션에 대 한 JavaScript 및 JScript 파일을 만드는 방법에 대 한 자세한 내용은 참조 하세요. [설정 하는 기본 ASPX 페이지 ECMAScript](http://go.microsoft.com/fwlink/?LinkID=182099)합니다. 테마에 대 한 자세한 내용은 참조 하세요. [문서 블록: 페이지 및 사용자 인터페이스](http://go.microsoft.com/fwlink/?LinkID=182095)합니다.  
   
 ## <a name="related-topics"></a>관련 항목
   
@@ -70,4 +67,3 @@ ms.locfileid: "36326052"
 |[SharePoint 용 응용 프로그램 페이지 만들기](../sharepoint/creating-application-pages-for-sharepoint.md)|응용 프로그램 페이지를 추가 하는 방법에 설명 합니다. *.aspx* SharePoint 마스터 페이지를 사용 하 여 병합 되는 콘텐츠입니다.|  
 |[방법: 응용 프로그램 페이지 만들기](../sharepoint/how-to-create-an-application-page.md)|SharePoint 사이트에서 실행 되는 ASP.NET 페이지를 만드는 방법을 보여 줍니다.|  
 |[연습: SharePoint 응용 프로그램 페이지 만들기](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)|디자인 하 고 SharePoint 사이트에 대 한 ASP.NET 웹 페이지를 디버그 하는 방법을 보여 줍니다.|  
-  

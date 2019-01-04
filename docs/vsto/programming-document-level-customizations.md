@@ -1,9 +1,6 @@
 ---
 title: 문서 수준 사용자 지정 프로그래밍
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - Sheet3
@@ -30,17 +27,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d9c7fa658c24caa65b3c955002ffeeaff6573c55
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9d559e358e50295368f68ad02ebb7532353a98b6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812233"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925448"
 ---
 # <a name="program-document-level-customizations"></a>문서 수준 사용자 지정 프로그래밍
   문서 수준 사용자 지정을 사용하여 Microsoft Office Word 또는 Microsoft Office Excel을 확장한 경우 다음 작업을 수행할 수 있습니다.  
   
-- 개체 모델을 사용하여 응용 프로그램을 자동화합니다.  
+- 개체 모델을 사용하여 애플리케이션을 자동화합니다.  
   
 - 문서 화면에 컨트롤을 추가합니다.  
   
@@ -50,7 +47,7 @@ ms.locfileid: "49812233"
   
 - Microsoft Office가 설치되지 않은 서버에서 문서의 특정 측면을 관리합니다.  
   
-- 응용 프로그램의 UI(사용자 인터페이스)를 사용자 지정합니다.  
+- 애플리케이션의 UI(사용자 인터페이스)를 사용자 지정합니다.  
   
   [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
@@ -87,7 +84,7 @@ ms.locfileid: "49812233"
   이러한 기본 클래스는 해당 멤버에 대한 모든 호출을 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]에 있는 해당 호스트 항목 인터페이스의 내부 구현으로 리디렉션합니다. 예를 들어 <xref:Microsoft.Office.Tools.Word.DocumentBase.Protect%2A> 클래스의 `ThisDocument` 메서드를 호출하는 경우 <xref:Microsoft.Office.Tools.Word.DocumentBase> 클래스는 이 호출을 <xref:Microsoft.Office.Tools.Word.Document> 에 있는 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]인터페이스의 내부 구현으로 리디렉션합니다.  
   
 ## <a name="access-the-object-model-of-the-host-application"></a>호스트 응용 프로그램의 개체 모델 액세스  
- 호스트 응용 프로그램의 개체 모델에 액세스하려면 프로젝트에서 생성된 클래스의 멤버를 사용합니다. 이러한 각 클래스는 Excel 또는 Word의 개체 모델에 있는 개체에 해당하며 대부분의 동일한 속성, 메서드 및 이벤트를 포함합니다. 예를 들어 Word 문서 수준 프로젝트의 `ThisDocument` 클래스는 Word 개체 모델의 <xref:Microsoft.Office.Interop.Word.Document> 개체와 동일한 대부분의 멤버를 제공합니다.  
+ 호스트 애플리케이션의 개체 모델에 액세스하려면 프로젝트에서 생성된 클래스의 멤버를 사용합니다. 이러한 각 클래스는 Excel 또는 Word의 개체 모델에 있는 개체에 해당하며 대부분의 동일한 속성, 메서드 및 이벤트를 포함합니다. 예를 들어 Word 문서 수준 프로젝트의 `ThisDocument` 클래스는 Word 개체 모델의 <xref:Microsoft.Office.Interop.Word.Document> 개체와 동일한 대부분의 멤버를 제공합니다.  
   
  다음 코드 예제에서는 Word 개체 모델을 사용하여 Word 문서 수준 사용자 지정의 일부인 문서를 저장하는 방법을 보여 줍니다. 이 예제는 `ThisDocument` 클래스에서 실행하기 위한 것입니다.  
   
@@ -175,5 +172,3 @@ Globals.ThisDocument.Save();
  [VBA 및 문서 수준 사용자 지정 결합](../vsto/combining-vba-and-document-level-customizations.md)   
  [ServerDocument 클래스를 사용 하 여 서버의 문서 관리](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
  [Office 솔루션에서 코드를 작성 합니다.](../vsto/writing-code-in-office-solutions.md)  
-  
-  

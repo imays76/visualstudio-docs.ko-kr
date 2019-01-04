@@ -1,9 +1,6 @@
 ---
 title: Office UI 사용자 지정
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 48c7fe1948231f88aba8309d6d06186848d32455
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f776fc7972272804adaf6fe4af8f7e3f3c0edc53
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836770"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924829"
 ---
 # <a name="office-ui-customization"></a>Office UI 사용자 지정
   Visual Studio에서 Office 개발자 도구를 사용하여 Microsoft Office 응용 프로그램의 UI(사용자 인터페이스)를 사용자 지정할 수 있습니다. 이 항목에서는 다음 섹션에서 사용자 지정할 수 있는 UI 기능에 대해 설명합니다.  
@@ -105,8 +102,6 @@ ms.locfileid: "49836770"
  [Outlook 양식 영역 만들기](../vsto/creating-outlook-form-regions.md)   
  [사용자 지정 작업창](../vsto/custom-task-panes.md)   
  [Office 솔루션에서 WPF 컨트롤 사용](../vsto/using-wpf-controls-in-office-solutions.md)   
- [방법: 리본에 개발 도구 탭 표시](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)   
- [방법: 사용자 인터페이스 오류 표시 추가 기능인](../vsto/how-to-show-add-in-user-interface-errors.md)   
- [연습: Windows form을 사용 하 여 데이터를 수집 합니다.](../vsto/walkthrough-collecting-data-using-a-windows-form.md)  
-  
-  
+ [방법: 리본 메뉴에 개발 도구 탭 표시](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)   
+ [방법: 추가 사용자 인터페이스 오류 표시](../vsto/how-to-show-add-in-user-interface-errors.md)   
+ [연습: Windows 폼을 사용 하 여 데이터를 수집 합니다.](../vsto/walkthrough-collecting-data-using-a-windows-form.md)  

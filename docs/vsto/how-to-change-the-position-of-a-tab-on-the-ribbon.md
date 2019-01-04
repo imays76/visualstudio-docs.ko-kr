@@ -1,9 +1,6 @@
 ---
 title: '방법: 리본의 탭 위치 변경'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c00fa747ee3c74592d491796e1281207d0c5a83f
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: f1b324ec6e43639b55ba308aab7028592c8671d1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647118"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956519"
 ---
 # <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>방법: 리본의 탭 위치 변경
   사용 하 여 리본 메뉴의 사용자 지정 탭 순서를 변경할 수는 **탭 컬렉션 편집기**합니다. 리본의 기본 제공 탭 앞 이나 뒤에 사용자 지정 탭을 배치할 수 있습니다. 기본 제공 탭은 Microsoft Office 응용 프로그램의 리본 메뉴에 이미 있는 탭입니다. 예를 들어 합니다 **데이터** 탭은 Excel에서 기본 제공 탭 합니다.  
@@ -65,5 +62,3 @@ ms.locfileid: "53647118"
  [리본 XML](../vsto/ribbon-xml.md)   
  [연습: 리본 디자이너를 사용 하 여 사용자 지정 탭 만들기](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
  [연습: 리본 XML을 사용 하 여 사용자 지정 탭 만들기](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
-  
-  

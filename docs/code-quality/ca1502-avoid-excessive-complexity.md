@@ -1,8 +1,7 @@
 ---
-title: 'CA1502: 과도 한 복잡성을 방지 합니다.'
+title: 'CA1502: 지나치게 복잡하게 만들지 마세요.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - AvoidExcessiveComplexity
@@ -20,14 +19,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 969e16eae2d04ed1635e2d2bc9b496ed510a6074
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 21b623041bdf599439fd51f99354f206eb25c433
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740327"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893158"
 ---
-# <a name="ca1502-avoid-excessive-complexity"></a>CA1502: 과도 한 복잡성을 방지 합니다.
+# <a name="ca1502-avoid-excessive-complexity"></a>CA1502: 지나치게 복잡하게 만들지 마세요.
 
 |||
 |-|-|

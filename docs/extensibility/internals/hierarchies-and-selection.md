@@ -1,9 +1,6 @@
 ---
 title: 계층 구조 및 선택 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, hierarchies
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f5e08fad921d0d3568e05ba3b2ce2ebd5fb1ea5
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: be2d4745a4d11dd10c299637487a6f69488a4242
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510454"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874111"
 ---
 # <a name="hierarchies-and-selection"></a>계층 구조 및 선택
 사용자 지정할 때 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]를 이해 해야 하는 방법을 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 프로젝트 및 사용자에 게 표시 되는 내용을 확인 하려면 선택 항목 컨텍스트를 사용 하는 방법 등의 계층이 처리 합니다. 이 섹션의 개념을 설명 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 계층 및 선택 합니다.  

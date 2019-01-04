@@ -8,26 +8,25 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: bfe0cbdda1b3eaa7d1afc936c7dbba75df6da07b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a741a506338066dddbee2cdbfd701ad3bfb4c922
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947169"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929700"
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>색, 선 스타일 및 기타 모양 속성 제어
-일부 셰이프 속성 색 노출 될 수 있습니다' '-같은 즉, 연결 된 셰이프의 도메인 속성에 합니다. 일부는에 대 한 직접 제어 합니다.
+일부 셰이프 속성 같은 색 노출 될 수 있지만' '-즉, 연결 모양의 도메인 속성. 다른 사용자가 직접 제어 해야 합니다.
 
 ## <a name="exposing-a-property"></a>속성을 노출합니다.
- 색과 같은 일부 셰이프 속성 도메인 속성의 값에 연결할 수 있습니다.
+ 도메인 속성의 값으로 색와 같은 일부 셰이프 속성을 연결할 수 있습니다.
 
- DSL 정의 도형, 커넥터 또는 다이어그램 클래스를 선택 합니다. 해당 상황에 맞는 메뉴에서 선택 **노출 추가**를 채우기 색 등의 원하는 속성을 선택 합니다.
+ DSL 정의에서 모양, 연결선 또는 다이어그램 클래스를 선택 합니다. 해당 상황에 맞는 메뉴에서 선택 **Add Exposed**를 채우기 색 등의 원하는 속성을 선택 합니다.
 
- 모양에는 이제 프로그램 코드에서 또는 사용자로 설정할 수 있는 도메인 속성을 있습니다.
+ 셰이프는 이제 프로그램 코드 또는 사용자로 설정할 수 있는 도메인 속성이 있습니다.
 
-## <a name="dynamically-updating-an-exposed-property"></a>노출 된 속성을 동적으로 업데이트합니다.
- 일반적으로 다른 속성에 따라 노출 된 속성을 확인 하려고 합니다. 예를 들어 좋습니다 0 보다 작은 있는 셰이프를 특정 도메인 속성은 때마다 빨간색으로 바뀝니다. 이 종속성을 하려면 만들고는 [규칙](../modeling/rules-propagate-changes-within-the-model.md)합니다. 예를 들어:
+## <a name="dynamically-updating-an-exposed-property"></a>동적으로 노출 된 속성 업데이트
+ 일반적으로 노출 된 속성을 다른 속성에 종속 되 게 하려고 합니다. 예를 들어 좋습니다 0 보다 작은 셰이프를 특정 도메인 속성은 때마다 빨간색으로 바뀝니다. 이 종속성을 만듭니다는 [규칙](../modeling/rules-propagate-changes-within-the-model.md)합니다. 예를 들어:
 
 ```csharp
 using System;

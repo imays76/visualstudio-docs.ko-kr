@@ -1,9 +1,6 @@
 ---
-title: '연습: NamedRange 컨트롤의 이벤트 프로그래밍'
-ms.custom: ''
+title: '연습: NamedRange 컨트롤의 이벤트에 대 한 프로그램'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3f8b55cda9576a0203857b3fdaeccbb205b42168
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 020d10aec83cd9249378c326f02ba37c3721b126
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812520"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910820"
 ---
-# <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>연습: NamedRange 컨트롤의 이벤트 프로그래밍
+# <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>연습: NamedRange 컨트롤의 이벤트에 대 한 프로그램
   이 연습에서는 추가 하는 방법을 보여 줍니다.는 <xref:Microsoft.Office.Tools.Excel.NamedRange> Microsoft Office Excel 워크시트 및 Visual Studio에서 Office 개발 도구를 사용 하 여 해당 이벤트에 대 한 프로그램을 컨트롤 합니다.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -54,7 +51,7 @@ ms.locfileid: "49812520"
   
 ### <a name="to-create-a-new-project"></a>새 프로젝트를 만들려면  
   
-1.  이름으로 Excel 통합 문서 프로젝트를 만듭니다 **명명 된 범위 내 이벤트**합니다. 했는지 **새 문서 만들기** 을 선택 합니다. 자세한 내용은 [방법: Visual Studio에서 만드는 Office 프로젝트](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
+1.  이름으로 Excel 통합 문서 프로젝트를 만듭니다 **명명 된 범위 내 이벤트**합니다. 했는지 **새 문서 만들기** 을 선택 합니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
   
      Visual Studio가 디자이너에서 새 Excel 통합 문서를 열고 추가 합니다 **명명 된 범위 내 이벤트** 프로젝트가 **솔루션 탐색기**합니다.  
   
@@ -108,7 +105,7 @@ ms.locfileid: "49812520"
      [!code-csharp[Trin_VstcoreHostControlsExcel#24](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#24)]
      [!code-vb[Trin_VstcoreHostControlsExcel#24](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#24)]  
   
-3.  C#으로 추가 해야에 표시 된 대로 명명된 된 범위에 대 한 이벤트 처리기는 <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> 아래 이벤트입니다. 이벤트 처리기를 만드는 방법은 [방법: Office 프로젝트에서 이벤트 처리기 만들기](../vsto/how-to-create-event-handlers-in-office-projects.md)합니다.  
+3.  C#으로 추가 해야에 표시 된 대로 명명된 된 범위에 대 한 이벤트 처리기는 <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> 아래 이벤트입니다. 이벤트 처리기를 만드는 방법에 대 한 정보를 참조 하세요. [방법: Office 프로젝트에서 이벤트 처리기 만들기](../vsto/how-to-create-event-handlers-in-office-projects.md)합니다.  
   
      [!code-csharp[Trin_VstcoreHostControlsExcel#25](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#25)]  
   
@@ -136,7 +133,7 @@ ms.locfileid: "49812520"
     > [!NOTE]  
     >  Excel 범위에 있는 셀을 두 번 클릭 하면 선택이 범위로 이동 하기 때문에 <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> 이벤트가 발생 하기 전에 <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick> 이벤트가 발생 합니다.  
   
-## <a name="test-the-application"></a>응용 프로그램 테스트  
+## <a name="test-the-application"></a>애플리케이션 테스트  
  이벤트를 설명 하는 텍스트를 확인 하려면 통합 문서를 테스트할 수 있습니다 이제는 <xref:Microsoft.Office.Tools.Excel.NamedRange> 이벤트가 발생 하는 경우 다른 명명 된 범위에 컨트롤 삽입 됩니다.  
   
 ### <a name="to-test-your-document"></a>문서를 테스트하려면  
@@ -166,5 +163,3 @@ ms.locfileid: "49812520"
  [방법: 워크시트에 NamedRange 컨트롤 추가](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
  [호스트 항목 및 호스트 컨트롤의 프로그래밍 방식으로 제한 사항](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [방법: Office 프로젝트에서 이벤트 처리기 만들기](../vsto/how-to-create-event-handlers-in-office-projects.md)  
-  
-  

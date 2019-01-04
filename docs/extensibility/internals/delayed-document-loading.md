@@ -1,9 +1,6 @@
 ---
 title: 지연 된 문서 로드 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: fb07b8e2-a4e3-4cb0-b04f-8eb11c491f35
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03ca02010586711fa1a9af463f2fde5d0f4963a5
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 27edc56516293ff6502f0708a02faa7bae1e3719
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500370"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940364"
 ---
 # <a name="delayed-document-loading"></a>지연 된 문서 로드
 사용자는 Visual Studio 솔루션 다시 열릴 때 대부분의 관련된 문서를 즉시 로드 되지 않습니다. 문서 창 프레임의 초기화 보류 중 상태에 만들어지고 (스텁 프레임) 자리 표시자 문서 실행 Document 테이블 (RDT)에 배치 됩니다.  
@@ -59,7 +56,7 @@ ms.locfileid: "39500370"
 - 그렇지 않은 경우에 가입할 수 있습니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents.OnAfterAttributeChange%2A>합니다.  
   
 
- 다음 예제는 가상의 문서 액세스 시나리오: 열린 문서에 대 한 일부 정보를 표시 하려고 하는 Visual Studio 확장, 예를 들어 편집 잠금 수 및 문서 데이터에 대 한 것입니다. 사용 하 여 RDT 문서 열거 <xref:Microsoft.VisualStudio.Shell.Interop.IEnumRunningDocuments>, 다음 호출 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.GetDocumentInfo%2A> 편집 잠금 수 및 문서 데이터를 검색 하기 위해 각 문서에 대 한 합니다. 문서 초기화 보류 중 상태에서 이면 문서 데이터를 요청 하면 불필요 하 게 초기화 됩니다.  
+ 다음 예제에서는 가상의 문서 액세스 경우 같습니다. Visual Studio 확장에서 열린 문서에 대 한 일부 정보를 표시 하려는 예를 들어 편집 잠금 수 및 문서 데이터에 대 한 것입니다. 사용 하 여 RDT 문서 열거 <xref:Microsoft.VisualStudio.Shell.Interop.IEnumRunningDocuments>, 다음 호출 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.GetDocumentInfo%2A> 편집 잠금 수 및 문서 데이터를 검색 하기 위해 각 문서에 대 한 합니다. 문서 초기화 보류 중 상태에서 이면 문서 데이터를 요청 하면 불필요 하 게 초기화 됩니다.  
   
  문서에 액세스 하는 더 효율적으로 사용 하는 것 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentEditLockCount%2A> 편집 잠금 수를 사용 하 여 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentFlags%2A> 문서 초기화 되었는지 여부를 확인 하려면. 플래그는 포함 되지 않은 경우 <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4>, 문서가 이미 초기화 된 문서 데이터를 요청 하 고 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentData%2A> 모든 불필요 한 초기화가 발생 하지 않습니다. 플래그를 포함 하는 경우 <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4>, 확장 문서 초기화 될 때까지 문서 데이터를 요청 하지 않아야 합니다. 검색 가능한이 초기화는 `OnAfterAttributeChange(Ex)` 이벤트 처리기입니다.  
   

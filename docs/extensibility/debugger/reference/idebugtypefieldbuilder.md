@@ -1,9 +1,6 @@
 ---
 title: IDebugTypeFieldBuilder | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugTypeFieldBuilder interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3c14959e0b14b74b31732a7d8611c0ae2d2c699
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 90ed594ff8b6c8f3811b61fe68b2d2ab16a9a017
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121793"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962077"
 ---
 # <a name="idebugtypefieldbuilder"></a>IDebugTypeFieldBuilder
-형식을 나타내는 필드를 만들 수 있는 기능을 나타냅니다.  
+형식을 나타내는 필드를 만들 수를 나타냅니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -29,11 +26,11 @@ ms.locfileid: "31121793"
 IDebugTypeFieldBuilder : IUnknown  
 ```  
   
-## <a name="notes-for-callers"></a>호출자에 대 한 참고 사항  
- 이 인터페이스는 기호 공급자에서 가져옵니다.  
+## <a name="notes-for-callers"></a>호출자에 대 한 정보  
+ 기호 공급자에서이 인터페이스를 가져옵니다.  
   
 ## <a name="methods"></a>메서드  
- 이 인터페이스는 다음 메서드를 구현합니다.  
+ 이 인터페이스는 다음 메서드를 구현 합니다.  
   
 |메서드|설명|  
 |------------|-----------------|  
@@ -43,6 +40,6 @@ IDebugTypeFieldBuilder : IUnknown
 ## <a name="requirements"></a>요구 사항  
  헤더: Sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll

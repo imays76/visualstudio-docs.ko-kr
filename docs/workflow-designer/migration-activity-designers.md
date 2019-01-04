@@ -3,23 +3,22 @@ title: 워크플로 디자이너-마이그레이션 활동 디자이너
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 ms.assetid: 7598e869-1da1-4721-b4bf-6cbe402be1a2
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7f118f340ab91359f26ee03c3900d734720c128
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bc20f1390b3c4e30f3c7233d7f1c0f55ca0d56ee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31970016"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879681"
 ---
 # <a name="migration-activity-designers"></a>마이그레이션 활동 디자이너
 
-마이그레이션 활동 디자이너는.NET Framework 4를 대상으로 하는 워크플로에서 워크플로 3.0/3.5 활동을 호출 하는 데 사용 됩니다. 이 섹션에 포함 된 항목 워크플로 디자이너의 활동 디자이너를 사용 하는 방법에 지침을 제공 합니다.
+마이그레이션 활동 디자이너는.NET Framework 4를 대상으로 하는 워크플로에서 워크플로 3.0/3.5 활동을 호출 하는 데 사용 됩니다. 이 단원의 항목에서는 워크플로 디자이너 활동 디자이너를 사용 하는 방법에 지침을 제공 합니다.
 
 ## <a name="related-sections"></a>관련 단원
  그 밖의 활동 디자이너 형식에 대해서는 다음 항목을 참조하세요.
@@ -30,7 +29,7 @@ ms.locfileid: "31970016"
 
  [활동 디자이너 사용](../workflow-designer/using-the-activity-designers.md)
 
- [메시징](../workflow-designer/messaging-activity-designers.md)
+ [Messaging](../workflow-designer/messaging-activity-designers.md)
 
  [런타임](../workflow-designer/runtime-activity-designers.md)
 

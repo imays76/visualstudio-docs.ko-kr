@@ -1,9 +1,6 @@
 ---
 title: SccAdd 함수 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccAdd
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: defb9a682b7f382f414d7bedfe60509d73cea64b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7fc2b74b32c0fb90a578644df0065e24eb8e373f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49840027"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830906"
 ---
 # <a name="sccadd-function"></a>SccAdd 함수
 이 함수는 소스 제어 시스템에 새 파일을 추가합니다.  
@@ -96,5 +93,5 @@ SCCRTN SccAdd(
 |SCC_FILETYPE_UTF16LE|0x20|Little Endian 형식 UTF16에 유니코드 텍스트로 파일을 처리합니다.|  
 |SCC_FILETYPE_UTF16BE|0x40|처리에서 UTF16 Big Endian 유니코드 텍스트로 서식을 지정 합니다.|  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [원본 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)

@@ -1,9 +1,6 @@
 ---
 title: Outlook의 리본을 사용자 지정
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a0caef19f2f82ed6dcf1d46cfc85637c64e019f4
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 58d1acb1c62e4a79226eb3ab5da0b95ccc2156e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647238"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932368"
 ---
 # <a name="customize-a-ribbon-for-outlook"></a>Outlook의 리본을 사용자 지정
   Microsoft Office Outlook에서 리본을 사용자 지정할 경우 응용 프로그램에서 사용자 지정 리본이 나타나는 위치를 고려해야 합니다. Outlook에서 리본은 사용자가 메일 메시지 만들기 등의 특정 작업을 수행할 때 열리는 창과 기본 응용 프로그램 UI(사용자 인터페이스)에 표시됩니다. 이러한 응용 프로그램 창의 이름을 검사기라고 합니다.  
@@ -58,5 +55,3 @@ ms.locfileid: "53647238"
  [리본 개요](../vsto/ribbon-overview.md)   
  [리본 디자이너](../vsto/ribbon-designer.md)   
  [Ribbon XML](../vsto/ribbon-xml.md)  
-  
-  

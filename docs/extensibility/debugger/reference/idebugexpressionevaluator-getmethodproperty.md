@@ -1,9 +1,6 @@
 ---
 title: IDebugExpressionEvaluator::GetMethodProperty | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugExpressionEvaluator::GetMethodProperty
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70c527fcc9e676523d6372c53517c43b9e5feb7d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a0569c3e6a3d79279533c1c1c6717e8e5c3ce059
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950331"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820776"
 ---
 # <a name="idebugexpressionevaluatorgetmethodproperty"></a>IDebugExpressionEvaluator::GetMethodProperty
 이 메서드는 지역 변수, 인수 및 기타 속성 메서드를 포함 하는 속성 개체를 가져옵니다.  
@@ -28,7 +25,7 @@ ms.locfileid: "49950331"
 ## <a name="syntax"></a>구문  
   
 ```cpp  
-HRESULT GetMethodProperty(   
+HRESULT GetMethodProperty(   
    IDebugSymbolProvider* pSymbolProvider,  
    IDebugAddress*        pAddress,  
    IDebugBinder*         pBinder,  

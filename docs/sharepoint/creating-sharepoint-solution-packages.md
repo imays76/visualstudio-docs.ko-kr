@@ -1,9 +1,6 @@
 ---
 title: SharePoint 솔루션 패키지 만들기 | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 87b80d7c607cf4de686e601263bcb67dcc2f92ae
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 0d275b7d2e4ccfea5d89148b6b46883fa32e6560
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326854"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966666"
 ---
 # <a name="create-sharepoint-solution-packages"></a>SharePoint 솔루션 패키지 만들기
   패키지 디자이너를 사용 하 여 만들 수 있으며 배포 패키지를 사용자 지정 키를 누릅니다. 예를 들어, SharePoint 프로젝트 항목 및 기능을 IIS 서버를 다시 설정, 기능 활성화 범위를 설정 및 기능 종속성을 식별을 추가할 수 있습니다. 또한 디자이너는 각 패키지를 설명 하는 XML 파일인 매니페스트를 생성 합니다.  
@@ -29,7 +26,7 @@ ms.locfileid: "36326854"
 ## <a name="packaging-tools"></a>패키징 도구
  사용할 수는 **패키지 디자이너** 패키지를 사용자 지정 하는 매니페스트를 생성 합니다. SharePoint 프로젝트 항목을 포함, 웹 서버를 다시 설정 하 고 배포 서버 유형을 설정 해야 하는지 여부를 구성할 수 있습니다. 자세한 내용은 [방법: 추가 및 패키지 디자이너를 사용 하 여 패키지에 기능과 항목 제거](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)합니다.  
   
- 사용할 수 있습니다 합니다 **패키징 탐색기** 기능 및 패키지 파일에 항목을 수정 하려면 (*.wsp*). 자세한 내용은 참조 하세요. [방법: 패키징 탐색기를 사용 하 여 패키지에 기능과 항목을 제거 하 고 추가](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md)합니다.  
+ 사용할 수 있습니다 합니다 **패키징 탐색기** 기능 및 패키지 파일에 항목을 수정 하려면 (*.wsp*). 자세한 내용은 [방법: 추가 및 패키징 탐색기를 사용 하 여 패키지에 기능과 항목 제거](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md)합니다.  
   
  패키지를 만들려면 Visual Studio 및 MSBuild를 사용할 수 있습니다 (*.wsp*) 파일을 SharePoint 솔루션을 배포 합니다. 이 프로세스는 SharePoint 배포에 필요한 매니페스트 파일을 생성 합니다. 자세한 내용은 [방법: MSBuild 작업을 사용 하 여 SharePoint 솔루션 패키지 만들기](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)합니다.  
   
@@ -38,9 +35,9 @@ ms.locfileid: "36326854"
   
 |패키지 디자이너 속성|기본 설정의 설명|  
 |-------------------------------|------------------------------------|  
-|이름|필수. 패키지의 기본 이름을 되어 *ProjectName*합니다.|  
+|이름|필수 요소. 패키지의 기본 이름을 되어 *ProjectName*합니다.|  
 |웹 서버를 다시 설정|선택 사항입니다. 한 후에 웹 서버를 다시 시작 하려는 경우 선택 합니다 *.wsp* 파일이 SharePoint 서버에 설치 됩니다.|  
-|배포 서버 유형|필수. 기본적으로 범위 ApplicationServer에 설정 됩니다.<br /><br /> ApplicationServer: 서비스를 호스팅하는 서버를 설명 합니다.<br /><br /> WebFrontEnd: 웹 사이트를 호스팅하는 서버를 설명 합니다.|  
+|배포 서버 유형|필수 요소. 기본적으로 범위 ApplicationServer에 설정 됩니다.<br /><br /> ApplicationServer. 서비스를 호스팅하는 서버를 설명 합니다.<br /><br /> WebFrontEnd: 웹 사이트를 호스팅하는 서버를 설명 합니다.|  
 |솔루션의 항목|모든 SharePoint 프로젝트 항목 및 패키지에 추가할 수 있는 기능입니다.|  
 |패키지에는 항목|선택 사항입니다. 모든 SharePoint 항목 및 패키지에 배포 하려는 하는 기능입니다.|  
   
@@ -74,11 +71,9 @@ ms.locfileid: "36326854"
 ## <a name="package-folder-structure"></a>패키지 폴더 구조
  SharePoint 프로젝트를 패키지할 때는 *.wsp* 에서 파일을 만들 합니다 *SolutionFolder\bin\\\<BuildConfiguration >* 폴더입니다. 예를 들어 솔루션이 *C:\Visual Studio 2013\Projects\ListDefinition1* 빌드 구성이 릴리스로 설정 됩니다 및 합니다 *.wsp* 파일은 *C:\Visual Studio 2013\ Projects\ListDefinition1\bin\Release*합니다.  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  [방법: SharePoint 솔루션 패키지 사용자 지정](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)  
  [방법: 추가 및 패키지 디자이너를 사용 하 여 패키지에 기능과 항목 제거](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)   
  [방법: MSBuild 작업을 사용 하 여 SharePoint 솔루션 패키지 만들기](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)   
  [방법: MSBuild 작업을 사용 하 여 SharePoint 솔루션 패키지 만들기](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)   
  [방법: MSBuild 대상을 사용 하 여 SharePoint 솔루션 패키지 사용자 지정](../sharepoint/how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets.md)  
-  
- 

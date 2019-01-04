@@ -1,9 +1,6 @@
 ---
 title: 중단점 만들기 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - breakpoints, creating
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 04eefdca7459f95da3ddef0430a59f9af52e581e
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 9641dc70fb1aa175c0d9e1017a1eb866bc5e3737
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203903"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53903054"
 ---
 # <a name="create-a-breakpoint"></a>중단점 만들기
 다음 중단점을 만드는 과정을 설명 합니다.  

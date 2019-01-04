@@ -1,9 +1,6 @@
 ---
 title: 기본 프로젝트 시스템 만들기, 2 부 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - writing a project system
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f5a059562db2409dca8eca1fb53c007059456b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d54e8833389d110efdcefd8d437645ef5824d8f6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928115"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967776"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>2 부 기본 프로젝트 시스템을 만들려면
 이 시리즈의 첫 번째 연습의 [1 부 기본 프로젝트 시스템을 만들려면](../extensibility/creating-a-basic-project-system-part-1.md), 기본 프로젝트 시스템을 만드는 방법을 보여 줍니다. 이 연습에서는 Visual Studio 템플릿, 속성 페이지 및 기타 기능을 추가 하 여 기본 프로젝트 시스템에 작성 합니다. 이 시작 하기 전에 첫 번째 연습을 완료 해야 합니다.  
@@ -187,9 +184,9 @@ ZipProjects:
   
 1. Visual Studio SDK 실험적 인스턴스 다시 설정 합니다.  
   
-    [!INCLUDE[win7](../debugger/includes/win7_md.md)]:에 **시작** 메뉴에서 찾을 합니다 **Microsoft Visual Studio/Microsoft Visual Studio SDK/도구** 폴더를 선택한 후 **Microsoft Visual Studio 실험적 다시 설정 인스턴스**합니다.  
+    [!INCLUDE[win7](../debugger/includes/win7_md.md)]: 에 **시작** 메뉴에서 찾을 합니다 **Microsoft Visual Studio/Microsoft Visual Studio SDK/Tools** 폴더를 선택한 후 **MicrosoftVisualStudio실험적인스턴스다시설정**.  
   
-    Windows의 이후 버전에서:에 **시작** 화면에서 입력 **Microsoft Visual Studio를 다시 설정 \<버전 > 실험적 인스턴스**합니다.  
+    Windows의 이후 버전: 에 **시작** 화면에서 입력 **Microsoft Visual Studio를 다시 설정 \<버전 > 실험적 인스턴스**합니다.  
   
 2. 명령 프롬프트 창이 나타납니다. 단어가 표시 되 면 **계속 하려면 아무 키나 눌러**, 클릭 **ENTER**합니다. 창을 닫은 후에 Visual Studio를 엽니다.  
   

@@ -1,9 +1,6 @@
 ---
 title: 파일 이름 확장명에 대 한 파일 처리기 지정 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - file extensions, specifying file handlers
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 885e4647d00ac0e1a1d1c60e9f58b4dbcd7971b0
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 41970ba51b11ddbd81eca679dd7c540efe7d59a7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43776050"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930381"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>파일 이름 확장명에 대한 파일 처리기 지정
 다양 한 방법으로 특정 파일 확장명을 가진 파일을 처리 하는 응용 프로그램을 확인할 수 있습니다. OpenWithList 및 Openwithprogid 동사에는 파일 확장명에 대 한 레지스트리 항목에서 파일 처리기를 지정 하려면 두 가지 있습니다.  

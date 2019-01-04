@@ -1,9 +1,6 @@
 ---
-title: '새 프로젝트 생성: 내부 살펴보기, 1 부 | Microsoft Docs'
-ms.custom: ''
+title: '새 프로젝트 생성: 내부적으로 1 부 | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], new project dialog
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f678e15a26a85245e22edd323008ab517ea1e39c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8ca4ac8523185f1fe818ffa287ed9083b6618c04
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907068"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827652"
 ---
-# <a name="new-project-generation-under-the-hood-part-one"></a>새 프로젝트 생성: 내부 살펴보기, 1부
+# <a name="new-project-generation-under-the-hood-part-one"></a>새 프로젝트 생성: 내부적으로 1 부
 고유의 프로젝트 형식을 만드는 방법에 대 한 생각 적이 있습니까? 새 프로젝트를 만들 때 실제로 무엇이 발생 궁금해? 살펴보기 해 실제로 그럴까요 참조 보겠습니다.  
   
  Visual Studio를 조정 하는 작업을 여러 가지가 있습니다.  
@@ -91,7 +88,7 @@ devenv /installvstemplates
  수가 작을수록 더 낮은 우선 순위를 트리에서 높을수록 위치 합니다.  
   
 ##### <a name="developeractivity"></a>DeveloperActivity  
- 이 하위 키가 있는 경우 루트 노드의 위치를 개발자 설정 대화 상자에서 제어 됩니다. 예를 들어 개체에 적용된  
+ 이 하위 키가 있는 경우 루트 노드의 위치를 개발자 설정 대화 상자에서 제어 됩니다. 예를 들면 다음과 같습니다.  
   
  DeveloperActivity REG_SZ VC #  
   
@@ -124,7 +121,7 @@ devenv /installvstemplates
 -   정렬 순서를 변경할 수 있습니다.  
   
 ##### <a name="finding-the-root-node-for-a-project-type"></a>프로젝트 형식에 대 한 루트 노드 찾기  
- Visual Studio ProjectTemplates 폴더 이동, 모든.zip 파일을 엽니다 및.vstemplate 파일을 추출 합니다. .Vstemplate 파일을 응용 프로그램 템플릿을 설명 하기 위해 XML을 사용 합니다. 자세한 내용은 [새 프로젝트 생성: 내부 살펴보기, 2 부](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)합니다.  
+ Visual Studio ProjectTemplates 폴더 이동, 모든.zip 파일을 엽니다 및.vstemplate 파일을 추출 합니다. .Vstemplate 파일을 응용 프로그램 템플릿을 설명 하기 위해 XML을 사용 합니다. 자세한 내용은 참조 하세요. [새 프로젝트 생성: 내부적으로 2 부](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)합니다.  
   
  \<ProjectType > 태그에는 응용 프로그램에 대 한 프로젝트 형식을 결정 합니다. 예를 들어 \CSharp\SmartDevice\WindowsCE\1033\WindowsCE-EmptyProject.zip 파일에는이 태그를 가진 EmptyProject.vstemplate 파일을 포함 됩니다.  
   
@@ -216,4 +213,4 @@ devenv /installvstemplates
     **MyProjectNode** 는 Windows 노드 바로 아래 Visual C#의 자식 노드로 표시 됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [새 프로젝트 생성: 내부 살펴보기, 2부](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
+ [새 프로젝트 생성: 내부적으로 2 부](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

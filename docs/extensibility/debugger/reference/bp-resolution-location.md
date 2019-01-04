@@ -1,9 +1,6 @@
 ---
 title: BP_RESOLUTION_LOCATION | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - BP_RESOLUTION_LOCATION
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0dda42a65824b8fdb93ec8561f3affb59ee5d166
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 61d58e827ba35dc9ee55ea0c2a96ceb8c0ad966e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926126"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954516"
 ---
 # <a name="bpresolutionlocation"></a>BP_RESOLUTION_LOCATION
 중단점 해결 위치의 구조를 지정합니다.  
@@ -62,21 +59,21 @@ public struct BP_RESOLUTION_LOCATION {
  [C + + 전용] 자리 표시자입니다.  
   
  `unionmember1`  
- [C#만 해당] 해석 하는 방법에 대 한 설명을 참조 하세요.  
+ [C# 만] 해석 하는 방법에 대 한 설명을 참조 하세요.  
   
  `unionmember2`  
- [C#만 해당] 해석 하는 방법에 대 한 설명을 참조 하세요.  
+ [C# 만] 해석 하는 방법에 대 한 설명을 참조 하세요.  
   
  `unionmember3`  
- [C#만 해당] 해석 하는 방법에 대 한 설명을 참조 하세요.  
+ [C# 만] 해석 하는 방법에 대 한 설명을 참조 하세요.  
   
  `unionmember4`  
- [C#만 해당] 해석 하는 방법에 대 한 설명을 참조 하세요.  
+ [C# 만] 해석 하는 방법에 대 한 설명을 참조 하세요.  
   
 ## <a name="remarks"></a>설명  
  이 구조체의 멤버인 합니다 [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) 하 고 [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) 구조입니다.  
   
- [C#만 해당] `unionmemberX` 멤버는 다음 표에 따라 해석 됩니다. 왼쪽된 열을 살펴보면를 `bpType` 한 다음 각 기능 확인에 걸쳐 값 `unionmemberX` 마샬링 및 멤버 나타냅니다는 `unionmemberX` 적절 하 게 합니다. C#에서이 구조를 해석 하는 방법에 대 한 예제를 참조 하세요.  
+ [C# 만] `unionmemberX` 멤버는 다음 표에 따라 해석 됩니다. 왼쪽된 열을 살펴보면를 `bpType` 한 다음 각 기능 확인에 걸쳐 값 `unionmemberX` 마샬링 및 멤버 나타냅니다는 `unionmemberX` 적절 하 게 합니다. C#에서이 구조를 해석 하는 방법에 대 한 예제를 참조 하세요.  
   
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|  
 |----------------------|--------------------|--------------------|--------------------|--------------------|  
@@ -116,9 +113,9 @@ namespace MyPackage
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>참고 항목  
  [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)   

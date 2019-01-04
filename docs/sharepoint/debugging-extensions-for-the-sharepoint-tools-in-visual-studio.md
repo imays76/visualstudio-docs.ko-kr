@@ -1,9 +1,6 @@
 ---
 title: Visual Studio에서 SharePoint 도구에 대 한 확장명 디버깅 | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5f878284c6e181956cbd3e708334301963aa25cf
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 8f838363b52a85faff022f49542fcc2fcc7e450d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326097"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950818"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Visual Studio에서 SharePoint 도구에 대 한 확장명 디버깅
   실험적 인스턴스 또는 일반 인스턴스의 Visual Studio에서 SharePoint 도구 확장을 디버그할 수 있습니다. 확장 동작 문제를 해결 해야 할 경우에 추가 오류 정보를 표시 하 고 Visual Studio SharePoint 명령을 실행 하는 방법을 구성 하려면 레지스트리 값을 수정할 수 있습니다.
@@ -38,7 +35,7 @@ ms.locfileid: "36326097"
 
 -   [연습: SharePoint 프로젝트용 사용자 지정 배포 단계 만들기](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)
 
--   [연습: 웹 파트를 표시 하려면 서버 탐색기를 확장 합니다.](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
+-   [연습: 웹 파트를 표시 하려면 서버 탐색기 확장](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
 
 -   [연습: 서버 탐색기 확장의 SharePoint 클라이언트 개체 모델 호출](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)
 
@@ -125,7 +122,7 @@ ms.locfileid: "36326097"
 |값|설명|
 |-----------|-----------------|
 |AttachDebuggerToHostProcess|디버거를 연결할 수 있는 대화 상자를 표시할지 여부를 지정 하는 REG_DWORD *vssphost4.exe* 것으로 시작 합니다. 이 시작 된 후에 즉시 vssphost.exe에서 디버그 하려는 명령을 실행 하는 경우에 유용 하 고 명령을 실행 하기 전에 수동으로 디버거를 연결 하려면 충분 한 시간 없는 합니다. 대화 상자를 표시할 *vssphost4.exe* 호출을 <xref:System.Diagnostics.Debugger.Break%2A> 메서드 시작 시.<br /><br /> 이 동작을 사용 하려면이 값을 1로 설정 합니다. 이 동작을 해제 하려면이 값을 0으로 설정 하거나이 값을 삭제 합니다.<br /><br /> 이 값을 1로 설정 하면 Visual Studio에서는 전에 디버거를 연결 하려면 충분 한 시간을 확보할 HostProcessStartupTimeout 가치를 높일 수도 있습니다 *vssphost4.exe* 성공적으로 시작 된 신호입니다.|
-|ChannelOperationTimeout|Visual Studio가 SharePoint 명령이 실행 될 때까지 대기 (초)에서 시간을 지정 하는 REG_DWORD입니다. 명령 시간 내에 실행 되지 않을 경우는 <xref:Microsoft.VisualStudio.SharePoint.SharePointConnectionException> throw 됩니다.<br /><br /> 기본값은 120 초입니다.|
+|ChannelOperationTimeout|Visual Studio가 SharePoint 명령이 실행 될 때까지 대기 (초)에서 시간을 지정 하는 REG_DWORD입니다. 명령 시간 내에 실행 되지 않을 경우는 <xref:Microsoft.VisualStudio.SharePoint.SharePointConnectionException> throw 됩니다.<br /><br /> 기본값은 120초입니다.|
 |HostProcessStartupTimeout|Visual Studio 대기 시간을 초 단위로 지정 하는 REG_DWORD *vssphost4.exe* 성공적으로 시작 된 신호입니다. 하는 경우 *vssphost4.exe* 성공적으로 시작 하는 시간 내에 표시 되지 않습니다는 <xref:Microsoft.VisualStudio.SharePoint.SharePointConnectionException> throw 됩니다.<br /><br /> 기본값은 60 초입니다.|
 |MaxReceivedMessageSize|최대 허용 크기, Visual Studio 간에 전달 되는 WCF 메시지를 바이트 단위로 지정 하는 REG_DWORD와 *vssphost4.exe*합니다.<br /><br /> 기본값은 1048576 바이트 (1MB).|
 |MaxStringContentLength|최대 허용 크기, Visual Studio 간에 전달 되는 문자열 (바이트)를 지정 하는 REG_DWORD와 *vssphost4.exe*합니다.<br /><br /> 기본값은 1048576 바이트 (1MB).|

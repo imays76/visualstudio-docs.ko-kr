@@ -1,9 +1,6 @@
 ---
 title: 레거시 언어 서비스의 코드 주석 처리 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - comments, supporting in language services [managed package framework]
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a4215d3ea841f8e7c7c9f057535d9585682dcfa
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 3f1e3599a085fdc176fab83b55d664456c26d8bb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510464"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886710"
 ---
 # <a name="comment-code-in-a-legacy-language-service"></a>레거시 언어 서비스의 코드 주석
 프로그래밍 언어는 일반적으로 주석을 추가 하거나 코드를 주석 처리 하는 수단을 제공 합니다. 주석을 코드에 대 한 추가 정보를 제공 하지만 컴파일 또는 해석 하는 중에 무시 되는 텍스트의 섹션을입니다.  
@@ -43,7 +40,7 @@ ms.locfileid: "39510464"
   
  재정의 해야 합니다 <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> 반환 하는 방법을 <xref:Microsoft.VisualStudio.Package.CommentInfo> 언어에 대 한 주석 문자를 사용 하 여 구조입니다. C#-스타일 줄 주석 문자는 기본값입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  여기서는의 구현 예제는 <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> 메서드.  
   
 ```csharp  
@@ -65,6 +62,6 @@ namespace MyLanguagePackage
 }  
 ```  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [레거시 언어 서비스 기능](../../extensibility/internals/legacy-language-service-features1.md)   
  [레거시 언어 서비스 등록](../../extensibility/internals/registering-a-legacy-language-service1.md)

@@ -1,9 +1,6 @@
 ---
 title: Office 프로젝트 템플릿 개요
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -33,12 +30,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d1ad35b9aecc9e7559902104f447cbbec3415b49
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 399a4aa1e735426ee5fe63bca60d89fed1fd94a7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934329"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940603"
 ---
 # <a name="office-project-templates-overview"></a>Office 프로젝트 템플릿 개요
   Visual Studio의 Microsoft Office 개발자 도구에는 다음 형식의 Office 솔루션을 만들기 위한 프로젝트 템플릿이 포함되어 있습니다.  
@@ -49,7 +46,7 @@ ms.locfileid: "49934329"
   
   이러한 유형의 Office 솔루션의 자세한 비교를 참조 하세요. [Office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)합니다.  
   
-  Office 프로젝트 템플릿은 **새 프로젝트** 대화 상자에서 **Visual C#** 및 **Visual Basic** 언어 노드의 **Office** 노드에서만 사용할 수 있습니다. 각 템플릿은 어셈블리 참조 및 디버깅 설정을 비롯하여 대상 응용 프로그램에 적절한 구성이 포함된 프로젝트를 생성합니다.  
+  Office 프로젝트 템플릿은 **새 프로젝트** 대화 상자에서 **Visual C#** 및 **Visual Basic** 언어 노드의 **Office** 노드에서만 사용할 수 있습니다. 각 템플릿은 어셈블리 참조 및 디버깅 설정을 비롯하여 대상 애플리케이션에 적절한 구성이 포함된 프로젝트를 생성합니다.  
   
   프로젝트마다 특정 유형의 솔루션에 대한 작업을 시작하는 데 사용할 수 있는 파일 및 코드가 있습니다. 각 프로젝트의 생성된 코드에는 Startup 및 Shutdown 이벤트 처리기가 포함됩니다. 이러한 이벤트 처리기에 코드를 추가하여 솔루션이 로드될 때 솔루션을 초기화하고 솔루션이 언로드될 때 솔루션을 정리할 수 있습니다. 자세한 내용은 [Visual Studio 환경의 Office 프로젝트](../vsto/office-projects-in-the-visual-studio-environment.md) 하 고 [Office 프로젝트의 이벤트](../vsto/events-in-office-projects.md)합니다.  
   
@@ -125,7 +122,7 @@ ms.locfileid: "49934329"
   
 - **Word 2010 추가 기능**  
   
-  이러한 프로젝트 템플릿 중 하나를 기반으로 하는 프로젝트를 만드는 경우 연결된 응용 프로그램이 열릴 때 솔루션의 코드가 실행됩니다. 문서 수준 프로젝트와 달리 이 코드는 단일 문서와 연결되지 않습니다.  
+  이러한 프로젝트 템플릿 중 하나를 기반으로 하는 프로젝트를 만드는 경우 연결된 애플리케이션이 열릴 때 솔루션의 코드가 실행됩니다. 문서 수준 프로젝트와 달리 이 코드는 단일 문서와 연결되지 않습니다.  
   
   이러한 프로젝트 형식에 대한 기초적인 내용은 다음 항목을 참조하십시오.  
   
@@ -176,5 +173,3 @@ ms.locfileid: "49934329"
  [Excel 용 문서 수준 사용자 지정 프로그래밍 시작](../vsto/getting-started-programming-document-level-customizations-for-excel.md)   
  [Word 용 문서 수준 사용자 지정 프로그래밍 시작](../vsto/getting-started-programming-document-level-customizations-for-word.md)   
  [VSTO 추가 기능 프로그래밍 시작](../vsto/getting-started-programming-vsto-add-ins.md)  
-  
-  

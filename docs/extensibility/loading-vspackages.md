@@ -1,9 +1,6 @@
 ---
 title: Vspackage를 로드 합니다. | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, autoloading
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26bd199a688b1b47728aac561720224a71f1583b
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 477ac9b0b97a7544402f0f70204b8ecf7b43ba95
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638149"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925838"
 ---
 # <a name="load-vspackages"></a>Vspackage를 로드 합니다.
 Vspackage는 해당 기능이 필요한 경우에 Visual Studio에 로드 됩니다. 예를 들어, Visual Studio 프로젝트 팩터리 또는 VSPackage 구현 하는 서비스를 사용 하는 경우 VSPackage가 로드 됩니다. 이 기능은 성능 향상을 위해 가능할 때마다 사용 되는 지연 된 로드를 라고 합니다.  
@@ -38,7 +35,7 @@ Vspackage는 해당 기능이 필요한 경우에 Visual Studio에 로드 됩니
     [PackageRegistration(UseManagedResourcesOnly = true)]  
     [ProvideAutoLoad(UIContextGuids80.SolutionExists)]  
     [Guid("00000000-0000-0000-0000-000000000000")] // your specific package GUID  
-    public class MyAutoloadedPackage : Package  
+    public class MyAutoloadedPackage : Package  
     {. . .}  
     ```  
   

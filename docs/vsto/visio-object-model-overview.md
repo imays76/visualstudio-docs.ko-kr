@@ -1,9 +1,6 @@
 ---
 title: Visio 개체 모델 개요
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 872665a9af220e1b86a3d053254880e3ababa6cd
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 040144b1e18e216ef8ceadbd218cd42ccf7c40f1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671406"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848469"
 ---
 # <a name="visio-object-model-overview"></a>Visio 개체 모델 개요
   Microsoft Office Visio용 Office 솔루션을 개발하기 위해 Visio 개체 모델을 조작할 수 있습니다. 이 개체 모델은 Visio용 주 interop 어셈블리에 제공되고 `Microsoft.Office.Interop.Visio` 네임스페이스에서 제공되는 클래스 및 인터페이스로 구성됩니다.  
@@ -79,9 +76,7 @@ ms.locfileid: "50671406"
   
  자세한 내용은 [Office 주 interop 어셈블리의 클래스 및 인터페이스 개요](http://go.microsoft.com/fwlink/?LinkId=189592) 하 고 [Office 주 interop 어셈블리](../vsto/office-primary-interop-assemblies.md)합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Visio 솔루션](../vsto/visio-solutions.md)   
  [Visio 문서 작업](../vsto/working-with-visio-documents.md)   
  [Visio 셰이프 작업](../vsto/working-with-visio-shapes.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
 title: SccPopulateDirList 함수 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccPopulateDirList
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b5839735e7564b486444cc0f9b65c71bc06f047
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 477d18f3cb5f187b61d78d779339e2c43c402a43
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847996"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854739"
 ---
 # <a name="sccpopulatedirlist-function"></a>SccPopulateDirList 함수
 이 함수는 파일과 디렉터리 (선택 사항)를 검사 하는 디렉터리 목록을 지정 된 소스 제어에 저장 됩니다 결정 합니다.  
@@ -28,7 +25,7 @@ ms.locfileid: "49847996"
 ## <a name="syntax"></a>구문  
   
 ```cpp  
-SCCRTN SccPopulateDirList(  
+SCCRTN SccPopulateDirList(  
    LPVOID        pContext,  
    LONG          nDirs,  
    LPCSTR*       lpDirPaths,  

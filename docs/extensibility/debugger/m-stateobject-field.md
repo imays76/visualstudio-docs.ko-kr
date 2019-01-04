@@ -1,9 +1,6 @@
 ---
 title: m_stateObject 필드 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - m_stateObject field, Task class [.NET Framework debug engines]
@@ -13,17 +10,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4d33879ca8aaaba08288f9e16d54ab462d92f67b
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 7fbd5404f7138fd2f98d56d63089acdb2afdad9f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231319"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850205"
 ---
 # <a name="mstateobject-field"></a>m_stateObject 필드
 데이터 작업을 사용할지를 나타내는 개체입니다.  
   
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **네임스페이스:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **어셈블리:** mscorlib (에서 *mscorlib.dll*)  
   
@@ -38,5 +35,5 @@ ms.locfileid: "39231319"
 ## <a name="remarks"></a>설명  
  이 `state` 의 매개 변수는 <xref:System.Threading.Tasks.Task.%23ctor%2A> 생성자입니다. 에 대 한 지원 필드 이기도 합니다 <xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=fullName> 속성입니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Task 클래스](../../extensibility/debugger/task-class-internal-members.md)

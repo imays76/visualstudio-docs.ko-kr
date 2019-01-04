@@ -1,9 +1,6 @@
 ---
 title: SharePoint 패키징 및 배포를 확장 합니다. | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8c6ca4b347cdd733ac166782d8e78dc8e78e0772
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 54c735bf0ab534e042e595fd12864a06dcf0a30f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325367"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916881"
 ---
 # <a name="extend-sharepoint-packaging-and-deployment"></a>SharePoint 패키징 및 배포 확장
   SharePoint 프로젝트의 패키징 및 배포 프로세스를 확장할 수 있습니다.
@@ -28,22 +25,22 @@ ms.locfileid: "36325367"
 ## <a name="create-deployment-steps"></a>배포 단계 만들기
  SharePoint 프로젝트를 배포하면 [!INCLUDE[vs_current_short](../sharepoint/includes/vs-current-short-md.md)]에서 일련의 배포 단계를 실행합니다. Visual Studio에는 솔루션 제거 및 추가와 같은 여러 작업에 대한 기본 제공 배포 단계가 포함되어 있지만 고유한 배포 단계를 직접 만들 수도 있습니다.  
   
- 배포 단계를 만드는 방법을 보여 주는 연습을 참조 하세요 [연습: SharePoint 프로젝트용 사용자 지정 배포 단계 만들기](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)합니다.  
+ 배포 단계를 만드는 방법을 보여 주는 연습을 참조 하세요. [연습: SharePoint 프로젝트용 사용자 지정 배포 단계 만들기](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)합니다.  
   
 ## <a name="create-deployment-configurations"></a>배포 구성 만들기
  배포 구성은 지정된 프로젝트에 대해 실행되지만 모든 SharePoint 프로젝트 항목에 영향을 미칠 수 있는 일련의 배포 단계입니다. 각 배포 구성에는 프로젝트 배포 시 실행되는 일련의 단계와 프로젝트 취소 시 실행되는 일련의 단계가 포함되어 있습니다. [!INCLUDE[vs_current_short](../sharepoint/includes/vs-current-short-md.md)] 두 개의 기본 제공 배포 구성이 포함 되어 있습니다 있습니다 수, 직접 만들 수도 있지만. 배포 구성을 만들 때 기본 제공 배포 단계와 직접 만든 배포 단계를 포함할 수 있습니다.  
   
- 배포 구성을 만드는 방법을 보여 주는 연습을 참조 하세요 [연습: SharePoint 프로젝트용 사용자 지정 배포 단계 만들기](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)합니다.  
+ 배포 구성을 만드는 방법을 보여 주는 연습을 참조 하세요. [연습: SharePoint 프로젝트용 사용자 지정 배포 단계 만들기](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)합니다.  
   
 ## <a name="run-code-when-a-sharepoint-solution-is-deployed-or-retracted"></a>SharePoint 솔루션이 배포 되거나 취소 하는 경우 코드를 실행 합니다.
  SharePoint 솔루션이 배포되거나 취소될 때 이벤트를 처리하여 추가 작업을 수행할 수 있습니다. Visual Studio에서는 다음 시나리오에서 처리할 수 있는 이벤트를 발생시킵니다.  
   
 -   SharePoint 프로젝트 항목에 대한 각 배포 단계가 실행되기 전후. 자세한 내용은 [방법: 배포 단계를 실행할 때 코드 실행](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)합니다.  
   
--   SharePoint 프로젝트가 배포되거나 취소되기 전후. 자세한 내용은 [방법: SharePoint 프로젝트가 배포 되거나 취소 될 때 코드를 실행할](../sharepoint/how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted.md)합니다.  
+-   SharePoint 프로젝트가 배포되거나 취소되기 전후. 자세한 내용은 [방법: SharePoint 프로젝트는 배포 되거나 취소 될 때 코드를 실행할](../sharepoint/how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted.md)합니다.  
   
 ## <a name="handle-deployment-conflicts"></a>배포 충돌 처리
- 모듈, 웹 파트, 목록 인스턴스 및 콘텐츠 형식과 같은 SharePoint 프로젝트 항목의 일부 형식은 배포 충돌 해결을 기본적으로 제공합니다. 이러한 프로젝트 항목 중 하나가 포함된 솔루션을 배포하는 경우 Visual Studio에서는 먼저 배포할 항목의 파일과 같은 이름, URL 또는 ID를 가진 파일이 SharePoint 사이트에 이미 있는지 여부를 확인합니다. 충돌이 있는 경우 Visual Studio에서 자동으로 충돌을 해결할 수 있습니다. 또는 Visual Studio에서 충돌을 해결하거나 배포를 취소하도록 할지를 묻는 메시지가 표시될 수도 있습니다. 자세한 내용은 [Troubleshooting SharePoint Packaging and 배포](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)합니다.  
+ 모듈, 웹 파트, 목록 인스턴스 및 콘텐츠 형식과 같은 SharePoint 프로젝트 항목의 일부 형식은 배포 충돌 해결을 기본적으로 제공합니다. 이러한 프로젝트 항목 중 하나가 포함된 솔루션을 배포하는 경우 Visual Studio에서는 먼저 배포할 항목의 파일과 같은 이름, URL 또는 ID를 가진 파일이 SharePoint 사이트에 이미 있는지 여부를 확인합니다. 충돌이 있는 경우 Visual Studio에서 자동으로 충돌을 해결할 수 있습니다. 또는 Visual Studio에서 충돌을 해결하거나 배포를 취소하도록 할지를 묻는 메시지가 표시될 수도 있습니다. 자세한 내용은 [Troubleshooting SharePoint Packaging and Deployment](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)을 참조하세요.  
   
  배포 충돌을 확인하고 해결하는 사용자 고유의 코드를 제공하여 이 기능을 확장할 수 있습니다. 자세한 내용은 [방법: 배포 충돌 처리](../sharepoint/how-to-handle-deployment-conflicts.md)합니다.  
   
@@ -60,5 +57,3 @@ ms.locfileid: "36325367"
  [연습: SharePoint 프로젝트용 사용자 지정 배포 단계 만들기](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)   
  [방법: SharePoint 솔루션에 대 한 유효성 검사 규칙 사용자 지정 기능 및 패키지 만들기](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)   
  [SharePoint 프로젝트 시스템 확장](../sharepoint/extending-the-sharepoint-project-system.md)  
-  
-  

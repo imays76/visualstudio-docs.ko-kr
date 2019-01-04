@@ -1,9 +1,6 @@
 ---
 title: Office 문서의 컨트롤
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0c166ef848f3c9de321bf3451cccdf9c16cfb472
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 0645c7cd3d030b553457abace8d7cdee07984011
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441472"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930598"
 ---
 # <a name="controls-on-office-documents"></a>Office 문서의 컨트롤
   Visual Studio에서 Office 개발 도구를 사용하여 Windows Forms 컨트롤과 *호스트 컨트롤* 을 Word 문서와 Excel 워크시트에 추가할 수 있습니다. 호스트 컨트롤은 Word 및 Excel 개체 모델의 다양한 UI(사용자 인터페이스) 개체를 확장하는 개체입니다.  
@@ -50,9 +47,7 @@ ms.locfileid: "53441472"
   
 ## <a name="related-sections"></a>관련 단원  
  [Office UI 사용자 지정](../vsto/office-ui-customization.md)  
- Visual Studioo를 사용하여 Microsoft Office 응용 프로그램의 UI를 사용자 지정하는 여러 가지 방법에 대해 설명합니다.  
+ Visual Studioo를 사용하여 Microsoft Office 애플리케이션의 UI를 사용자 지정하는 여러 가지 방법에 대해 설명합니다.  
   
  [Office 솔루션의 컨트롤에 데이터 바인딩](../vsto/binding-data-to-controls-in-office-solutions.md)  
  문서 내에서 호스트 컨트롤에 데이터를 바인딩하여 Word 및 Excel 문서에서 데이터를 표시하는 방법에 대해 설명합니다.  
-  
-  

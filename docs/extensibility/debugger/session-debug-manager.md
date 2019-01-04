@@ -1,9 +1,6 @@
 ---
 title: 세션 디버그 관리자 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - session debug manager, unifying session views
@@ -18,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 109dce19f85e0742217c1c478b1b1687fd5a33e8
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: 014ac5b4c310b97fb1c041eeaededef8c97ab88b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276327"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905360"
 ---
 # <a name="session-debug-manager"></a>세션 디버그 관리자
 세션 디버그 관리자 SDM ()는 임의 개수의 다양 한 컴퓨터 개수에 관계 없이 여러 프로세스에서 프로그램을 디버깅 하는 디버그 엔진 (DE)를 관리 합니다. 멀티플렉서 디버그 엔진 뿐만 SDM IDE에 디버그 세션의 통합된 보기를 제공 합니다.  
@@ -39,7 +36,7 @@ ms.locfileid: "39276327"
   
  현재 프로세스, 스레드 또는 스택 프레임은 SDM 추적 하지 않습니다. 프로세스, 프로그램 및 스레드 정보는 특정 디버깅 이벤트와 함께에서 SDM에 전송 됩니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [디버그 엔진](../../extensibility/debugger/debug-engine.md)   
  [디버거 구성 요소](../../extensibility/debugger/debugger-components.md)   
  [디버거 컨텍스트](../../extensibility/debugger/debugger-contexts.md)

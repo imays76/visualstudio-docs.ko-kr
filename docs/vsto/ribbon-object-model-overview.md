@@ -1,9 +1,6 @@
 ---
 title: 리본 개체 모델 개요
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25e34dcb38685a885ae0730740c25e1cb502e15c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e8c0e18146361cfbe89433d79962afcb89de3061
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910591"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961311"
 ---
 # <a name="ribbon-object-model-overview"></a>리본 개체 모델 개요
   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 가져오고 런타임에 리본 컨트롤의 속성을 설정 하는 데 사용할 수 있는 강력한 형식의 개체 모델을 노출 합니다. 예를 들어 수 동적으로 메뉴 컨트롤을 채우는 또는 표시 하거나 숨길 수 컨트롤 컨텍스트. Office 응용 프로그램에서 리본 메뉴가 로드 되기 전에만 있지만 리본, 탭, 그룹 및 컨트롤도 추가할 수 있습니다. 정보를 참조 하세요 [읽기 전용이 되는 속성을 설정할](#SettingReadOnlyProperties)합니다.  
@@ -37,7 +34,7 @@ ms.locfileid: "49910591"
 ##  <a name="RibbonEvents"></a> 리본 이벤트  
  합니다 **리본** 클래스는 다음 세 가지 이벤트를 포함 합니다.  
   
-|이벤트(event)|설명|  
+|이벤트|설명|  
 |-----------|-----------------|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Load>|Office 응용 프로그램에 리본 사용자 지정 로드 될 때 발생 합니다. <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load> 이벤트 처리기는 리본 코드 파일에 자동으로 추가 됩니다. 이 이벤트 처리기를 사용 하 여 리본이 로드 될 때 사용자 지정 코드를 실행 합니다.|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|하면 리본 사용자 지정의 캐시 이미지에 리본 메뉴가 로드 하는 경우. 이 이벤트 처리기에서 리본 메뉴 이미지를 캐시 하는 코드를 작성 하는 경우 성능이 약간 향상을 얻을 수 있습니다. 자세한 내용은 <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>을 참조하세요.|  
@@ -171,7 +168,7 @@ ms.locfileid: "49910591"
 ## <a name="ribbon-control-events"></a>리본 컨트롤 이벤트  
  각 컨트롤 클래스에는 하나 이상의 이벤트가 포함 됩니다. 다음 표에서 이러한 이벤트를 설명 합니다.  
   
-|이벤트(event)|설명|  
+|이벤트|설명|  
 |-----------|-----------------|  
 |클릭|컨트롤을 클릭할 때 발생 합니다.|  
 |TextChanged|편집 상자 또는 콤보 상자의 텍스트가 변경 될 때 발생 합니다.|  
@@ -184,19 +181,18 @@ ms.locfileid: "49910591"
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|*보낸 사람*|<xref:System.Object> 이벤트를 발생 시킨 컨트롤을 나타내는입니다.|  
+|*보낸 사람*|이벤트를 발생시킨 컨트롤을 나타내는 <xref:System.Object>입니다.|  
 |*e*|<xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventArgs>이 들어 있는 <xref:Microsoft.Office.Core.IRibbonControl>입니다. 이 컨트롤에서 제공 하는 리본 개체 모델에서 사용할 수 없는 모든 속성에 액세스 하는 데는 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]합니다.|  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [런타임에 리본 메뉴에 액세스](../vsto/accessing-the-ribbon-at-run-time.md)   
  [리본 개요](../vsto/ribbon-overview.md)   
- [방법: 리본 메뉴 사용자 지정 시작](../vsto/how-to-get-started-customizing-the-ribbon.md)   
+ [방법: 리본 사용자 지정 시작](../vsto/how-to-get-started-customizing-the-ribbon.md)   
  [리본 디자이너](../vsto/ribbon-designer.md)   
  [연습: 리본 디자이너를 사용 하 여 사용자 지정 탭 만들기](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
  [연습: 런타임에 리본의 컨트롤 업데이트](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
  [Outlook의 리본을 사용자 지정](../vsto/customizing-a-ribbon-for-outlook.md)   
  [방법: 기본 제공 탭 사용자 지정](../vsto/how-to-customize-a-built-in-tab.md)   
  [방법: Backstage 보기에 컨트롤 추가](../vsto/how-to-add-controls-to-the-backstage-view.md)   
- [방법: 리본 XML로 리본 디자이너에서 리본 메뉴 내보내기](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
- [방법: 사용자 인터페이스 오류 표시 추가 기능인](../vsto/how-to-show-add-in-user-interface-errors.md)  
- 
+ [방법: 리본 디자이너에서 리본 XML로 리본 메뉴 내보내기](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
+ [방법: 추가 사용자 인터페이스 오류 표시](../vsto/how-to-show-add-in-user-interface-errors.md)  

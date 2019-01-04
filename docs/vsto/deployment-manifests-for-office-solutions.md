@@ -1,9 +1,6 @@
 ---
 title: Office 솔루션의 배포 매니페스트
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 495d1973ccc9dbf3251ec0f53456e8b30678cf45
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 8e2b45ac44cafd757aaa4ff96c97995c88ab10ed
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802370"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835385"
 ---
 # <a name="deployment-manifests-for-office-solutions"></a>Office 솔루션의 배포 매니페스트
   배포 매니페스트는 Office 솔루션의 배포 설정에 설명 하 고 응용 프로그램의 현재 버전을 식별 하는 XML 파일입니다.

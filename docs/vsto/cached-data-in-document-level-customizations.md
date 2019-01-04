@@ -1,9 +1,6 @@
 ---
 title: 문서 수준 사용자 지정의 캐시 된 데이터
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c17c24dda11ea210c190a31197b783036357f2de
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: 25cfbeba37be0d11e05b4524f5e683cfa798da6e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248298"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964652"
 ---
 # <a name="cached-data-in-document-level-customizations"></a>문서 수준 사용자 지정의 캐시 된 데이터
   문서 수준 사용자 지정의 주된 목적은 Office 문서에는 보기에서 데이터를 분리 하는 것입니다. 데이터 숫자와 텍스트를 포함 하 여 문서에 저장 된 정보를 가리킵니다. 보기는 사용자 인터페이스와 Microsoft Office Word 및 Microsoft Office Excel의 개체 모델을 가리킵니다.  
@@ -66,5 +63,3 @@ ms.locfileid: "53248298"
 ## <a name="see-also"></a>참고 항목  
  [Office 솔루션의 데이터](../vsto/data-in-office-solutions.md)   
  [Visual Studio에서 Office 솔루션의 아키텍처](../vsto/architecture-of-office-solutions-in-visual-studio.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
 title: '연습: 문서 수준 프로젝트의 단순 데이터 바인딩'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25173e5c4d4aeb02045cf858ae1e093b7a04d2bb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a9967d830d72355f23173a7dfc6f1a95be073959
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824382"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895495"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>연습: 문서 수준 프로젝트의 단순 데이터 바인딩
   이 연습에서는 문서 수준 프로젝트의 데이터 바인딩의 기본 사항을 보여 줍니다. SQL Server 데이터베이스에서 단일 데이터 필드는 Microsoft Office Excel에서 명명된 된 범위에 바인딩되어 있습니다. 이 연습에는 테이블의 모든 레코드를 스크롤할 수 있도록 하는 컨트롤을 추가 하는 방법을 보여 줍니다.  
@@ -57,7 +54,7 @@ ms.locfileid: "49824382"
   
 ### <a name="to-create-a-new-project"></a>새 프로젝트를 만들려면  
   
-1. 이름의 Excel 통합 문서 프로젝트를 만듭니다 **단순 데이터 바인딩 내**, Visual Basic 또는 C#을 사용 하 여 합니다. 했는지 **새 문서 만들기** 을 선택 합니다. 자세한 내용은 [방법: Visual Studio에서 만드는 Office 프로젝트](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
+1. 이름의 Excel 통합 문서 프로젝트를 만듭니다 **단순 데이터 바인딩 내**, Visual Basic 또는 C#을 사용 하 여 합니다. 했는지 **새 문서 만들기** 을 선택 합니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
   
    Visual Studio가 디자이너에서 새 Excel 통합 문서를 열고 추가 합니다 **단순 데이터 바인딩 내** 프로젝트가 **솔루션 탐색기**합니다.  
   
@@ -172,7 +169,7 @@ ms.locfileid: "49824382"
      [!code-csharp[Trin_VstcoreDataExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#7)]
      [!code-vb[Trin_VstcoreDataExcel#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#7)]  
   
-## <a name="test-the-application"></a>응용 프로그램 테스트  
+## <a name="test-the-application"></a>애플리케이션 테스트  
  이제 데이터베이스의 레코드를 찾아볼 수 있도록 되도록 통합 문서를 테스트할 수 있습니다.  
   
 ### <a name="to-test-your-workbook"></a>통합 문서를 테스트하려면  
@@ -198,5 +195,3 @@ ms.locfileid: "49824382"
  [Office 솔루션의 컨트롤에 데이터 바인딩](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Office 솔루션의 데이터](../vsto/data-in-office-solutions.md)   
  [연습: 문서 수준 프로젝트의 복합 데이터 바인딩](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)  
-  
-  

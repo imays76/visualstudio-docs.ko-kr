@@ -1,9 +1,6 @@
 ---
 title: 디버그 세션 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], sessions
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67734025b70ee6f910ed46f034dcfb1b10135cc3
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 049a2d2e2738c3d3182cd014f0aa52429406a08c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203779"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882375"
 ---
 # <a name="debug-session"></a>디버그 세션
 디버거 아키텍처 측면을 *세션*:  
@@ -27,6 +24,6 @@ ms.locfileid: "39203779"
   
 -   세션 디버그 관리자 (SDM)에 의해 구현 됩니다. 자세한 내용은 [세션 디버그 관리자](../../extensibility/debugger/session-debug-manager.md)합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [세션 디버그 관리자](../../extensibility/debugger/session-debug-manager.md)   
  [디버거 개념](../../extensibility/debugger/debugger-concepts.md)

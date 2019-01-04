@@ -11,13 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: aa8f773ba6f9d0722eb4e07e9c795d0d43860ebb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 608cb5881d7e2bc6911fb6a0f7b90f79ca448f9e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49869990"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885996"
 ---
 # <a name="debugging-a-t4-text-template"></a>T4 텍스트 템플릿 디버깅
 텍스트 템플릿에서 중단점을 설정할 수 있습니다. 디자인 타임 텍스트 템플릿 디버그 텍스트 템플릿 파일을 저장 하 고 선택한 **T4 템플릿 디버그** 솔루션 탐색기에서 파일의 바로 가기 메뉴. 런타임 텍스트 템플릿 디버깅을 단순히 속해 있는 응용 프로그램을 디버깅 합니다.

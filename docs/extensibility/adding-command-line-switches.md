@@ -1,9 +1,6 @@
 ---
 title: 명령줄 스위치를 추가 합니다. | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - command-line switches, adding
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f8349cc71bf0541d726a47bf5b875724c89bcc6
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 3a3dbe187407380c338488b0006b186d6875bfbf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53738591"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827509"
 ---
 # <a name="add-command-line-switches"></a>명령줄 스위치를 추가 합니다.
 VSPackage에 적용 되는 명령줄 스위치를 추가할 수 있습니다 때 *devenv.exe* 실행 됩니다. 사용 하 여 <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> 스위치와 해당 속성의 이름을 선언 합니다. 이 예제에서는 myswitch 인 스위치 라는 VSPackage의 서브 클래스에 대 한 항목이 **AddCommandSwitchPackage** 인수 없이 및 자동으로 로드 하는 VSPackage를 사용 하 여 합니다.  
@@ -71,7 +68,7 @@ cmdline.GetOption("MySwitch", out isPresent, out optionValue);
   
  것이 패키지를 로드할 때마다 명령줄 스위치에 대 한 확인 해야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>   
  [Devenv 명령줄 스위치](../ide/reference/devenv-command-line-switches.md)   

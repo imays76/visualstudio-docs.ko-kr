@@ -1,9 +1,6 @@
 ---
 title: '방법: 주 interop 어셈블리를 통해 대상 Office 응용 프로그램'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 576d26f039005dac3d494652f1e5127c39092a00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fb5a97475612eb52fa51eadcfbe9eaa613a55bfb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863752"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845904"
 ---
 # <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>방법: 주 interop 어셈블리를 통해 대상 Office 응용 프로그램
   새 Office 프로젝트를 만들 때 Visual Studio는 프로젝트를 빌드하는 데 필요한 Microsoft Office PIA(주 interop 어셈블리)에 대한 참조를 자동으로 추가합니다. 다음과 같은 시나리오에서는 다른 PIA에 대한 참조를 추가해야 합니다.  
@@ -54,10 +51,8 @@ ms.locfileid: "49863752"
   
      에 어셈블리 이름을 표시 합니다 **참조** 의 폴더 **솔루션 탐색기**합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Office 주 interop 어셈블리](../vsto/office-primary-interop-assemblies.md)   
  [Office 솔루션에서 코드를 작성 합니다.](../vsto/writing-code-in-office-solutions.md)   
  [Office 솔루션 개발](../vsto/developing-office-solutions.md)   
- [방법: 설치 Office 주 interop 어셈블리](../vsto/how-to-install-office-primary-interop-assemblies.md)  
-  
-  
+ [방법: Office 주 interop 어셈블리 설치](../vsto/how-to-install-office-primary-interop-assemblies.md)  

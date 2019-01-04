@@ -1,6 +1,6 @@
 ---
 title: 색 값 참조
-description: '새 Visual Studio 색 토큰을 만들기 위한 참조: 16 진수 코드'
+description: '참조: 새 Visual Studio 색 토큰을 만들기에 대 한 16 진수 코드'
 keywords: 색, 16 진수 코드, 색상, 테마 UI, 테마 설정
 author: brickgeorge
 ms.author: gregvanl
@@ -8,15 +8,13 @@ ms.date: 08/04/2017
 ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
-ms.technology:
-- vs-ide-sdk
 manager: douge
-ms.openlocfilehash: 5216be58983b8b354a8136f9d7941a460915dc44
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: de1623cfbfc937139e45b4791a28fd47f18501de
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50751091"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870062"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Visual Studio에 대 한 색 값 참조
 
@@ -299,7 +297,7 @@ ms.locfileid: "50751091"
 > [!NOTE]
 > **높은 대비 견본 비교만 표시 됩니다.** 높은 대비 UI에 대 한 시스템 색 이름을 사용 하 고 이러한 견본에는 스 포 이트 또는 색 선택기를 사용 하지 마십시오. 이 항목의 높은 대비 견본 Windows에서 고대비 #1 테마를 반영합니다. 색 다른 고대비 테마에서 다르게 보입니다.
 
-### <a name="tags"></a>Tags
+### <a name="tags"></a>태그
 
 | | 밝은 테마 | 어두운 테마 | 파란색 테마 | 고대비 | 
 | --- | :---: | :---: | :---: | :---: |

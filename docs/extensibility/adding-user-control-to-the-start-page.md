@@ -1,9 +1,6 @@
 ---
 title: 시작 페이지에 사용자 컨트롤 추가 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - start page dll
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96b280221ba7efdefd3023f015bd4075b8c03aaa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8218910c50c63e3cef8f8ad402967bd21fb0da5d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910498"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874695"
 ---
 # <a name="add-user-control-to-the-start-page"></a>시작 페이지에 사용자 정의 컨트롤 추가
 이 연습에서는 사용자 지정 시작 페이지에 대 한 DLL 참조를 추가 하는 방법을 보여 줍니다. 예제 솔루션에 사용자 컨트롤을 추가, 사용자 정의 컨트롤을 빌드 및 시작 페이지에서 빌드된 어셈블리를 참조 한 다음 *.xaml* 파일입니다. 새 탭을 기본 웹 브라우저로 함수는 사용자 컨트롤을 호스팅합니다.  
@@ -110,7 +107,7 @@ ms.locfileid: "49910498"
 2.  SetButton_Click 이벤트 처리기에서 다음과 같이 입력 합니다.  
   
     ```csharp  
-    private void SetButton_Click(object sender, RoutedEventArgs e)  
+    private void SetButton_Click(object sender, RoutedEventArgs e)  
     {  
         try  
         {  

@@ -1,9 +1,6 @@
 ---
 title: VisibilityItem 요소 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VisibilityItem element (VSCT XML schema)
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3abf3a93db79ac347931acf9275065eb0d085ca4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8eca5e797fe41c56cfcdbe1b1678c0824f3b93b2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920198"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939465"
 ---
 # <a name="visibilityitem-element"></a>VisibilityItem 요소
 `VisibilityItem` 요소 도구 모음 및 명령 정적 표시 여부를 결정 합니다. 모든 항목에는 명령 또는 메뉴 및 연결 된 명령 UI 컨텍스트를 식별합니다. Visual Studio 명령, 메뉴 및 도구 모음 및 표시 여부를 정의 하는 Vspackage를 로드 하지 않고 검색 합니다. IDE를 사용 하 여 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> 명령 UI 컨텍스트의 활성 상태 인지 여부를 결정 하는 방법.  
@@ -46,9 +43,9 @@ ms.locfileid: "49920198"
   
 |특성|설명|  
 |---------------|-----------------|  
-|guid|필수. GUID/i D 명령 식별자의 GUID입니다.|  
-|ID|필수. ID의 GUID/i D 명령 식별자입니다.|  
-|컨텍스트(context)|필수. 이 명령은 표시 되는 UI 컨텍스트.|  
+|guid|필수 요소. GUID/i D 명령 식별자의 GUID입니다.|  
+|ID|필수 요소. ID의 GUID/i D 명령 식별자입니다.|  
+|컨텍스트(context)|필수 요소. 이 명령은 표시 되는 UI 컨텍스트.|  
 |조건|선택 사항입니다. 참조 [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)합니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
@@ -67,7 +64,7 @@ ms.locfileid: "49920198"
   
 ```xml  
 <VisibilityConstraints>  
-  <VisibilityItem guid="cmdSetGuidMyProductCommands"     id="cmdidAddWidget"  
+  <VisibilityItem guid="cmdSetGuidMyProductCommands"     id="cmdidAddWidget"  
     context="guidNotViewSourceMode"/>  
 </VisibilityConstraints>  
 ```  

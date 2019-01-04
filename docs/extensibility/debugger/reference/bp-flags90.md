@@ -1,9 +1,6 @@
 ---
 title: BP_FLAGS90 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - BP_FLAGS90 enumeration
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 32109a6065811c5f36cf00b0287291ca760eb7c1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 01c96ce035fa2ec0322397a68ebdcd3f862d6c7a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862699"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914720"
 ---
 # <a name="bpflags90"></a>BP_FLAGS90
 선택적 플래그에 대 한 유효한 값을 열거합니다. 중단점을 설정 하는 경우 추가 정보를 지정 하는 선택적 플래그를 사용할 수 있습니다. 이 열거형을 확장 합니다 [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) 열거형입니다.  
@@ -68,9 +65,9 @@ public enum enum_BP_FLAGS90
 ## <a name="requirements"></a>요구 사항  
  헤더: Msdbg90.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>참고 항목  
  [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

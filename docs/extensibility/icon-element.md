@@ -1,9 +1,6 @@
 ---
 title: Icon 요소 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Icon
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2494e75c312385a1a0c86709eb417d4b124a97de
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 475bca35ca1bdc1879301912c7ddd271f369a6ef
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497695"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870010"
 ---
 # <a name="icon-element"></a>Icon 요소
 아이콘 태그의 guid 속성에 정의 된 비트맵의 guid입니다. `id` 특성 비트맵 스트립에 슬롯을 선택 합니다. 이 요소는 선택적입니다. 이 요소를 사용 하는 경우의 값이 포함 되었습니다 **guidOfficeIcon:msotcidNoIcon** 암시 됩니다.  
@@ -37,8 +34,8 @@ ms.locfileid: "39497695"
   
 |특성|설명|  
 |---------------|-----------------|  
-|guid|필수. 정의 된 비트맵의 guid입니다.|  
-|ID|필수. 비트맵 스트립에 슬롯을 선택합니다.|  
+|guid|필수 요소. 정의 된 비트맵의 guid입니다.|  
+|ID|필수 요소. 비트맵 스트립에 슬롯을 선택합니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
   
@@ -52,5 +49,5 @@ ms.locfileid: "39497695"
 |-------------|-----------------|  
 |[Buttons 요소](../extensibility/buttons-element.md)||  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Visual Studio 명령 테이블 (.vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

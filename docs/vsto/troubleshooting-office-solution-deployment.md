@@ -1,9 +1,6 @@
 ---
 title: Office 솔루션 배포 문제 해결
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ac390e58d29ad0810e20c53a9e910f4bd55b10df
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 5d6dc3a871389b8b7624b31a4f2a4d3e4e185865
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804999"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947259"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Office 솔루션 배포 문제 해결
   이 항목에는 Office 솔루션을 배포할 때 발생할 수 있는 일반적인 문제를 해결하는 방법에 대한 정보가 포함되어 있습니다.
@@ -35,7 +32,7 @@ ms.locfileid: "53804999"
 ## <a name="change-the-assembly-name-causes-conflicts"></a>어셈블리 이름 변경 시 충돌 발생
  변경 하는 경우는 **어셈블리 이름** 값을 **응용 프로그램** 페이지를 **프로젝트 디자이너** 게시 도구가 수정 하는 솔루션을 이미 배포한 후는 설치 패키지 하나만 유지할 필요가 *Setup.exe* 파일과 두 개의 배포 매니페스트 합니다. 두 개의 매니페스트 파일을 배포하는 경우 다음 상황이 발생할 수 있습니다.
 
-- 최종 사용자가 두 버전을 모두 설치한 경우 응용 프로그램이 두 VSTO 추가 기능을 모두 로드합니다.
+- 최종 사용자가 두 버전을 모두 설치한 경우 애플리케이션이 두 VSTO 추가 기능을 모두 로드합니다.
 
 - 어셈블리 이름이 변경되기 전에 VSTO 추가 기능이 설치된 경우 최종 사용자에게 업데이트가 전달되지 않습니다.
 

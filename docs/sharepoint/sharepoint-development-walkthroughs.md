@@ -1,13 +1,8 @@
 ---
 title: SharePoint 개발 연습 | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -17,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b8285f6ef3a3ae01681a646c6ce46023ce2c3a8a
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: c01f9f07b9d6d0bc962592a370fe2d2104ad2a5e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119784"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945849"
 ---
 # <a name="sharepoint-development-walkthroughs"></a>SharePoint 개발 연습
   다음 연습에는 개발 및 사용 하 여 SharePoint 솔루션을 배포 하는 방법을 보여 줍니다 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]합니다.  
@@ -40,7 +35,7 @@ ms.locfileid: "37119784"
   
 |항목|설명|  
 |-----------|-----------------|  
-|[연습: Visual Studio에 SharePoint Designer의 다시 사용 가능한 워크플로 가져오기](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|SharePoint Designer 2010에서 만든 재사용 가능한 워크플로 가져오는 방법을 보여 줍니다는 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 워크플로 프로젝트입니다.|  
+|[연습: Visual Studio에 SharePoint Designer의 재사용 가능한 워크플로 가져오기](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|SharePoint Designer 2010에서 만든 재사용 가능한 워크플로 가져오는 방법을 보여 줍니다는 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 워크플로 프로젝트입니다.|  
 |[연습: 기존 SharePoint 사이트에서 항목 가져오기](../sharepoint/walkthrough-import-items-from-an-existing-sharepoint-site.md)|기존 SharePoint 사이트에서 항목을 가져오는 방법을 보여 줍니다는 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 프로젝트입니다.|  
   
 ## <a name="web-parts"></a>웹 파트
@@ -71,7 +66,7 @@ ms.locfileid: "37119784"
   
 |항목|설명|  
 |-----------|-----------------|  
-|[연습: 비즈니스 데이터를 사용 하 여 SharePoint에서 외부 목록 만들기](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)|샘플 데이터베이스의 연락처 정보를 반환 하는 BDC 서비스에 대 한 모델을 만드는 방법을 보여 줍니다.|  
+|[연습: 비즈니스 데이터를 사용 하 여 SharePoint에 외부 목록 만들기](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)|샘플 데이터베이스의 연락처 정보를 반환 하는 BDC 서비스에 대 한 모델을 만드는 방법을 보여 줍니다.|  
   
 ## <a name="packaging-and-deployment"></a>패키징 및 배포
   
@@ -87,7 +82,7 @@ ms.locfileid: "37119784"
 |[연습: SharePoint 프로젝트 확장명 만들기](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)|모든 SharePoint 프로젝트에 사용자 지정 속성을 추가 하는 방법을 보여 줍니다. 개발자는 추가 하거나 매핑된 폴더를 제거 하려면 속성을 사용 수 있습니다.|  
 |[연습: 항목 템플릿, 1 부를 사용 하 여 사용자 지정 작업 프로젝트 항목 만들기](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)|SharePoint에서 사용자 지정 작업을 만들고 항목 템플릿을 새 프로젝트 항목 형식과 연결 하기 위한 SharePoint 프로젝트 항목 형식을 정의 하는 방법을 보여 줍니다.|  
 |[연습: 항목 템플릿, 2 부를 사용 하 여 사용자 지정 작업 프로젝트 항목 만들기](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)|항목 템플릿과 사용 하 여 연결 된 사용자 지정 SharePoint 프로젝트 항목 형식 위한 마법사를 만드는 방법을 보여 줍니다.|  
-|[연습: 프로젝트 템플릿 1 부를 사용 하 여 사이트 열 프로젝트 항목 만들기](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)|SharePoint에서 사이트 열을 만들고 프로젝트 템플릿으로 새 프로젝트 항목 형식과 연결 하기 위한 SharePoint 프로젝트 항목 형식을 정의 하는 방법을 보여 줍니다.|  
+|[연습: 1 부 프로젝트 템플릿을 사용 하 여 사이트 열 프로젝트 항목 만들기](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)|SharePoint에서 사이트 열을 만들고 프로젝트 템플릿으로 새 프로젝트 항목 형식과 연결 하기 위한 SharePoint 프로젝트 항목 형식을 정의 하는 방법을 보여 줍니다.|  
 |[연습: 2 부 프로젝트 템플릿을 사용 하 여 사이트 열 프로젝트 항목 만들기](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)|프로젝트 템플릿과 사용 하 여 연결 된 사용자 지정 SharePoint 프로젝트 항목 형식 위한 마법사를 만드는 방법을 보여 줍니다.|  
 |[연습: SharePoint 프로젝트용 사용자 지정 배포 단계 만들기](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)|SharePoint 솔루션 업그레이드에 사용할 수 있는 사용자 지정 배포 단계를 정의 하는 방법을 보여 줍니다.|  
   
@@ -95,9 +90,8 @@ ms.locfileid: "37119784"
   
 |항목|설명|  
 |-----------|-----------------|  
-|[연습: 웹 파트를 표시 하려면 서버 탐색기를 확장 합니다.](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)|서버 탐색기에 표시 되는 SharePoint 사이트에서 웹 파트를 표시 하기 위해 새 노드를 추가 하는 방법에 설명 합니다. 이 연습에는 SharePoint 서버 개체 모델을 호출 하는 SharePoint 명령을 만드는 방법을 보여 줍니다.|  
+|[연습: 웹 파트를 표시 하려면 서버 탐색기 확장](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)|서버 탐색기에 표시 되는 SharePoint 사이트에서 웹 파트를 표시 하기 위해 새 노드를 추가 하는 방법에 설명 합니다. 이 연습에는 SharePoint 서버 개체 모델을 호출 하는 SharePoint 명령을 만드는 방법을 보여 줍니다.|  
 |[연습: 서버 탐색기 확장의 SharePoint 클라이언트 개체 모델 호출](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)|서버 탐색기에 표시 되는 SharePoint 사이트에서 웹 파트를 표시 하기 위해 새 노드를 추가 하는 방법에 설명 합니다. 이 연습에는 SharePoint 클라이언트 개체 모델을 사용 하는 방법을 보여 줍니다.|  
   
 ## <a name="see-also"></a>참고자료
  [SharePoint 개발 샘플 및 연습](../sharepoint/sharepoint-development-samples-and-walkthroughs.md)  
-  

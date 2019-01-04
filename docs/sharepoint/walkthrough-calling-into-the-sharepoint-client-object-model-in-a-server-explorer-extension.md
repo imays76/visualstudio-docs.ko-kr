@@ -1,9 +1,6 @@
 ---
 title: '연습: 서버 탐색기 확장의 SharePoint 클라이언트 개체 모델 호출 | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f4510aa820e0f82c2fcd73ccb83ed0f8120a1399
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: bce304bfb9657262fa7aeac43c58280e6992af17
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296036"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918890"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>연습: 서버 탐색기 확장의 SharePoint 클라이언트 개체 모델 호출
   이 연습에 대 한 확장에서 SharePoint 클라이언트 개체 모델을 호출 하는 방법에 설명 합니다 **SharePoint 연결** 노드에서 **서버 탐색기**합니다. SharePoint 클라이언트 개체 모델을 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [SharePoint 개체 모델 호출](../sharepoint/calling-into-the-sharepoint-object-models.md)합니다.  
@@ -123,7 +120,7 @@ ms.locfileid: "51296036"
   
      **프로젝트 디자이너**가 열립니다.  
   
-6.  **응용 프로그램** 탭을 선택합니다.  
+6.  **애플리케이션** 탭을 선택합니다.  
   
 7.  에 **기본 네임 스페이스** 상자 (C#) 또는 **루트 네임 스페이스** (Visual Basic) 상자에 입력 **ServerExplorer.SharePointConnections.WebPartNode**합니다.  
   
@@ -285,6 +282,6 @@ ms.locfileid: "51296036"
 ## <a name="see-also"></a>참고자료
  [SharePoint 개체 모델 호출](../sharepoint/calling-into-the-sharepoint-object-models.md)   
  [서버 탐색기에서 SharePoint 연결 노드 확장](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
- [연습: 웹 파트를 표시 하려면 서버 탐색기를 확장 합니다.](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
+ [연습: 웹 파트를 표시 하려면 서버 탐색기 확장](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
  [아이콘에 대한 이미지 편집기](/cpp/windows/image-editor-for-icons)   
  [아이콘 또는 다른 이미지 만들기 &#40;아이콘에 대 한 이미지 편집기&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)

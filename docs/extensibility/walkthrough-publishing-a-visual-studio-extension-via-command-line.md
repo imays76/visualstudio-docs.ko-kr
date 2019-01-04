@@ -1,9 +1,6 @@
 ---
 title: '연습: 명령줄을 통해 Visual Studio 확장 기능 게시 | Microsoft Docs'
-ms.custom: ''
 ms.date: 07/12/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - publishing extensions
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d95e2fbe36a73074b97f47f6714f1fc4aa8228c
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: cb35365220ade512defc180b06e46b95999dfa7b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050185"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857217"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>연습: 명령줄을 통해 Visual Studio 확장 기능 게시
 
@@ -203,7 +200,7 @@ This is test extension.
 
 이 경우 기본 VSPackage 확장을 사용 하지만 동일한 단계는 모든 종류의 확장에 대 한 유효한 합니다.
 
-1. 메뉴 명령이 포함 된 "TestPublish" 라는 C#에서 VSPackage를 만듭니다. 자세한 내용은 [첫 번째 확장 만들기: Hello World](../extensibility/extensibility-hello-world.md)합니다.
+1. 메뉴 명령이 포함 된 "TestPublish" 라는 C#에서 VSPackage를 만듭니다. 자세한 내용은 참조 하세요. [첫 번째 확장 만들기: Hello World](../extensibility/extensibility-hello-world.md)합니다.
 
 ### <a name="package-your-extension"></a>확장 패키지
 

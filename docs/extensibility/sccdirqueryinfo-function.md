@@ -1,9 +1,6 @@
 ---
 title: SccDirQueryInfo 함수 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccDirQueryInfo
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2c7c00f2023d7debd684b442b3901547ac8d1d2
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: f710dfed6a6f5225fd74f828077eb228124714c5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639421"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956805"
 ---
 # <a name="sccdirqueryinfo-function"></a>SccDirQueryInfo 함수
 이 함수는 현재 상태에 대 한 정규화 된 디렉터리의 목록을 검사합니다.  
@@ -67,6 +64,6 @@ LPLONG  lpStatus
 > [!NOTE]
 >  소스 제어 플러그 인을 하나 이상 상태 값은 구현 하지 하기로 구현 되지 않은 비트를 0으로 설정 되어야 합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [원본 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)   
  [디렉터리 상태 코드](../extensibility/directory-status-code-enumerator.md)

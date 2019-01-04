@@ -1,9 +1,6 @@
 ---
 title: '방법: 인쇄할 때 워크시트에서 컨트롤 숨기기'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 322c314a768545996f343526367de44c667ce89b
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: d245e6d1d4af1d0135abe88c89f54490a0f5296e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646801"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873433"
 ---
 # <a name="how-to-hide-controls-on-worksheets-when-printing"></a>방법: 인쇄할 때 워크시트에서 컨트롤 숨기기
   Windows Forms 컨트롤을 포함 하는 Microsoft Office Excel 문서를 인쇄할 때 컨트롤 인쇄 된 워크시트에 표시 됩니다. 워크시트를 인쇄할 때 컨트롤을 숨길 수 있습니다.  
@@ -44,10 +41,8 @@ ms.locfileid: "53646801"
   
 3.  에 **속성** 창에서 설정 합니다 <xref:Microsoft.Office.Tools.Excel.Controls.Button.PrintObject%2A> 속성을 **False**합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [Office 문서의 컨트롤](../vsto/controls-on-office-documents.md)   
  [Windows Forms 컨트롤에 대 한 Office 문서 개요](../vsto/windows-forms-controls-on-office-documents-overview.md)   
  [방법: Office 문서에 Windows Forms 컨트롤 추가](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
  [방법: 워크시트 셀에서 컨트롤 크기 조정](../vsto/how-to-resize-controls-within-worksheet-cells.md)  
-  
-  

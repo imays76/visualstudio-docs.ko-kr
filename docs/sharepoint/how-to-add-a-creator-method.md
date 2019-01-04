@@ -1,13 +1,8 @@
 ---
 title: '방법: Creator 메서드 추가 | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a8aa49416a826e5100932b4741d3e536a9d2f37d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 01ad692065a51d51fc1f6b72acc563688da3a217
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897344"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925422"
 ---
 # <a name="how-to-add-a-creator-method"></a>방법: Creator 메서드 추가
   Creator 메서드는 엔터티의 데이터 원본에 새 데이터를 추가합니다. 데이터 연결 (BDC (비즈니스)를 선택한 경우이 메서드를 호출 합니다 **새 항목** 단추를 **리본** 모델을 기반으로 하는 목록입니다. 자세한 내용은 [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)합니다.  
@@ -68,7 +63,7 @@ ms.locfileid: "49897344"
     [!code-csharp[SP_BDC#4](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#4)]
     [!code-vb[SP_BDC#4](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#4)]  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [방법: Finder 메서드 추가](../sharepoint/how-to-add-a-finder-method.md)   
  [방법: 특정 Finder 메서드 추가](../sharepoint/how-to-add-a-specific-finder-method.md)   
@@ -77,5 +72,3 @@ ms.locfileid: "49897344"
  [BDC 모델 디자인 도구 개요](../sharepoint/bdc-model-design-tools-overview.md)   
  [방법: 메서드에 매개 변수를 추가 합니다.](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
  [방법: 메서드 인스턴스 정의](../sharepoint/how-to-define-a-method-instance.md)  
-  
-  

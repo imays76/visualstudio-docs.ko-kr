@@ -1,9 +1,6 @@
 ---
 title: '방법: NamedRange 컨트롤 크기 조정'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,19 +14,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6d785aba9d08f71aa8530bc2edd015f497caafef
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ac274e6e7e9a7e263e17dc03fa1c5c857f02864f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673937"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989765"
 ---
 # <a name="how-to-resize-namedrange-controls"></a>방법: NamedRange 컨트롤 크기 조정
   Microsoft Office Excel 문서에 추가할 때 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤의 크기를 설정할 수 있지만 나중에 크기를 조정할 수도 있습니다.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- 문서 수준 프로젝트에서 디자인 타임 또는 런타임에 명명된 범위의 크기를 조정할 수 있습니다. 또한 응용 프로그램 수준 VSTO 추가 기능에서 런타임에 명명된 범위의 크기를 조정할 수도 있습니다.  
+ 문서 수준 프로젝트에서 디자인 타임 또는 런타임에 명명된 범위의 크기를 조정할 수 있습니다. 또한 애플리케이션 수준 VSTO 추가 기능에서 런타임에 명명된 범위의 크기를 조정할 수도 있습니다.  
   
  이 항목에서는 다음 작업에 대해 설명합니다.  
   
@@ -77,7 +74,7 @@ ms.locfileid: "35673937"
      [!code-vb[Trin_VstcoreHostControlsExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#5)]  
   
 ##  <a name="runtimeaddin"></a> 런타임에 VSTO 추가 기능 프로젝트에서 NamedRange 컨트롤 크기 조정  
- 크기를 조정할 수는 <xref:Microsoft.Office.Tools.Excel.NamedRange> 런타임에 열려 있는 워크시트에 컨트롤입니다. 추가 하는 방법에 대 한 자세한를 <xref:Microsoft.Office.Tools.Excel.NamedRange> VSTO 추가 기능을 사용 하 여 워크시트에 컨트롤을 참조 하세요 [방법: 워크시트에 NamedRange 추가 제어](../vsto/how-to-add-namedrange-controls-to-worksheets.md)입니다.  
+ 크기를 조정할 수는 <xref:Microsoft.Office.Tools.Excel.NamedRange> 런타임에 열려 있는 워크시트에 컨트롤입니다. 추가 하는 방법에 대 한 자세한를 <xref:Microsoft.Office.Tools.Excel.NamedRange> VSTO 추가 기능을 사용 하 여 워크시트에 컨트롤을 참조 하세요 [방법: 워크시트에 NamedRange 컨트롤 추가](../vsto/how-to-add-namedrange-controls-to-worksheets.md)합니다.  
   
 ### <a name="to-resize-a-named-range-programmatically"></a>프로그래밍 방식으로 명명된 범위의 크기를 조정하려면  
   
@@ -101,5 +98,3 @@ ms.locfileid: "35673937"
  [방법: 워크시트에 NamedRange 컨트롤 추가](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
  [방법: 책갈피 컨트롤 크기 조정](../vsto/how-to-resize-bookmark-controls.md)   
  [방법: ListObject 컨트롤 크기 조정](../vsto/how-to-resize-listobject-controls.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
 title: '연습: Excel 용 첫 문서 수준 사용자 지정 만들기'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ce16e3c2aca99acf6de9a7ce74c0c2ff46c0dcbb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 70e82a8b126f5292cd8efe1420c59af90ca59c3d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849036"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955320"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>연습: Excel 용 첫 문서 수준 사용자 지정 만들기
   이 소개용 연습에서는 Microsoft Office Excel에 대한 문서 수준 사용자 지정을 만드는 방법을 보여 줍니다. 이러한 종류의 솔루션에서 만드는 기능은 특정 통합 문서가 열려 있는 경우에만 사용할 수 있습니다. 통합 문서가 열려 있을 때 새 리본 탭 표시와 같은 응용 프로그램 수준 변경은 문서 수준 사용자 지정을 사용하여 수행할 수 없습니다.  
@@ -159,17 +156,17 @@ ms.locfileid: "49849036"
   
 -   Excel 용 문서 수준 사용자 지정과 관련 된 프로그래밍 작업: [Excel 솔루션](../vsto/excel-solutions.md)합니다.  
   
--   Excel 개체 모델 사용: [Excel 개체 모델 개요](../vsto/excel-object-model-overview.md)합니다.  
+-   Excel의 개체 모델 사용: [Excel 개체 모델 개요](../vsto/excel-object-model-overview.md)합니다.  
   
--   Excel의 UI 사용자 지정, 예를 들어에서 리본에 사용자 지정 탭 추가 또는 사용자 고유의 작업 창 만들기: [Office UI 사용자 지정](../vsto/office-ui-customization.md)합니다.  
+-   Excel의 UI, 예를 들어, 사용자 지정 리본 메뉴에 사용자 지정 탭 추가 또는 사용자 고유의 작업 창 만들기: [Office UI 사용자 지정](../vsto/office-ui-customization.md)합니다.  
   
 -   Visual Studio에서 Office 개발 도구에서 제공 하는 확장 된 Excel 개체를 사용 하 여 Excel 개체 모델 (예를 들어, 문서에서 관리 되는 컨트롤 호스트 및 Windows Forms를 사용 하 여 Excel 컨트롤 데이터 바인딩 사용 가능 하지 않은 작업을 수행 하려면 데이터 바인딩 모델): [확장 된 개체를 사용 하 여 Excel 자동화](../vsto/automating-excel-by-using-extended-objects.md)합니다.  
   
--   빌드 및 디버깅 Excel 용 문서 수준 사용자 지정: [빌드 Office 솔루션](../vsto/building-office-solutions.md)합니다.  
+-   빌드 및 디버깅 Excel 용 문서 수준 사용자 지정 합니다. [Office 솔루션 빌드](../vsto/building-office-solutions.md)합니다.  
   
 -   Excel 용 문서 수준 사용자 지정 배포: [Office 솔루션 배포](../vsto/deploying-an-office-solution.md)합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Excel 솔루션](../vsto/excel-solutions.md)   
  [문서 수준 사용자 지정 프로그래밍](../vsto/programming-document-level-customizations.md)   
@@ -179,5 +176,3 @@ ms.locfileid: "49849036"
  [Office 솔루션 빌드](../vsto/building-office-solutions.md)   
  [Office 솔루션 배포](../vsto/deploying-an-office-solution.md)   
  [Office 프로젝트 템플릿 개요](../vsto/office-project-templates-overview.md)  
-  
-  

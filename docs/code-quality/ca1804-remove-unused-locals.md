@@ -1,8 +1,7 @@
 ---
-title: 'CA1804: 사용되지 않는 로컬 항목을 제거하십시오.'
+title: 'CA1804: 사용되지 않는 로컬 항목을 제거하세요.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1804
@@ -19,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b1846c1b8d9173db6d1f4b5acd0544fd601da67a
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 47578cc281334da7eeebeea6eaa5ef0c1c021c8f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45545465"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819863"
 ---
-# <a name="ca1804-remove-unused-locals"></a>CA1804: 사용되지 않는 로컬 항목을 제거하십시오.
+# <a name="ca1804-remove-unused-locals"></a>CA1804: 사용되지 않는 로컬 항목을 제거하세요.
 
 |||
 |-|-|
@@ -54,10 +53,10 @@ ms.locfileid: "45545465"
  [!code-csharp[FxCop.Performance.UnusedLocals#1](../code-quality/codesnippet/CSharp/ca1804-remove-unused-locals_1.cs)]
 
 ## <a name="related-rules"></a>관련된 규칙
- [CA1809: 불필요한 로컬 항목을 사용하지 마십시오.](../code-quality/ca1809-avoid-excessive-locals.md)
+ [CA1809: 과도 한 지역 변수를 방지 합니다.](../code-quality/ca1809-avoid-excessive-locals.md)
 
- [CA1811: 호출되지 않는 전용 코드를 사용하지 마십시오.](../code-quality/ca1811-avoid-uncalled-private-code.md)
+ [CA1811: 호출 되지 않는 전용 코드를 방지 합니다.](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
- [CA1812: 인스턴스화되지 않은 내부 클래스를 사용하지 마십시오.](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+ [CA1812: 인스턴스화되지 않은 내부 클래스를 방지 합니다.](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
- [CA1801: 사용되지 않은 매개 변수를 검토하십시오.](../code-quality/ca1801-review-unused-parameters.md)
+ [CA1801: 사용 되지 않는 매개 변수를 검토](../code-quality/ca1801-review-unused-parameters.md)

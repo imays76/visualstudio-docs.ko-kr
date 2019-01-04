@@ -1,8 +1,7 @@
 ---
-title: 관리 코드에 대 한 설정 관리 최소 규칙 규칙
+title: 관리 코드에 대한 관리 최소 규칙 규칙 집합
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: 44a50c54-8dd3-42b2-8387-532a150e5a6c
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: bf05f4787cbd393173380be8123657abeddc0cd5
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 56d8528a5a419eb23b1192ef265f70ea536cfe48
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204520"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890445"
 ---
-# <a name="managed-minimum-rules-rule-set-for-managed-code"></a>관리 코드에 대 한 설정 관리 최소 규칙 규칙
+# <a name="managed-minimum-rules-rule-set-for-managed-code"></a>관리 코드에 대한 관리 최소 규칙 규칙 집합
 
 관리 되는 최소 규칙은 잠재적 보안 허점, 응용 프로그램 충돌 및 기타 중요 한 논리 및 디자인 오류를 비롯 하 여 코드의 가장 중요 한 문제에 집중 합니다. 프로젝트에 대 한 만든이 규칙 사용자 지정 규칙 집합에 있는 집합을 포함 합니다.
 

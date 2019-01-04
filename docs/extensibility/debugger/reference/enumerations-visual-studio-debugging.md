@@ -1,9 +1,6 @@
 ---
 title: 열거형 (Visual Studio 디버깅) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - enumerations [Visual Studio SDK]
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a9fe9c7ad6b46adefb4f32ceaf3dd13b351cafb
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 604cf38d96b25347a49edd24b29cffdaf012d52a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233762"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860012"
 ---
 # <a name="enumerations-visual-studio-debugging"></a>Enumerations (Visual Studio Debugging)
 다음은 열거형을 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Debugging SDK.  
@@ -249,9 +246,9 @@ ms.locfileid: "36233762"
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h, sh.h, 또는 ee.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>참고 항목  
  [API 참조](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

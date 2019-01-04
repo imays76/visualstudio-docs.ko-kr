@@ -1,9 +1,6 @@
 ---
 title: '방법: 사용자 지정 텍스트 표식 만들기 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - custom text markers
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ac2ad16c0e6a3e0a6c76e15ff6860838fa349c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1c8389788504a49bc9a4962c89ed47500a1dc7da
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893106"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965222"
 ---
 # <a name="how-to-create-custom-text-markers"></a>방법: 사용자 지정 텍스트 표식 만들기
 강조 하거나 코드를 구성할 사용자 지정 텍스트 마커를 만들려는 경우 다음 단계를 수행 해야 합니다.  
@@ -29,7 +26,7 @@ ms.locfileid: "49893106"
   
 - 확인 하려면 다른 프로세스에서 사용할 수 있는 서비스 만들기 텍스트 마커를 사용 합니다.  
   
-  텍스트 마커 코드 영역에 적용 하는 방법에 대 한 세부 정보를 참조 하세요 [방법: 텍스트 표식을 사용 하 여](../extensibility/how-to-use-text-markers.md)입니다.  
+  텍스트 마커 코드 영역에 적용 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법: 텍스트 마커를 사용 하 여](../extensibility/how-to-use-text-markers.md)입니다.  
   
 ## <a name="to-register-a-custom-marker"></a>사용자 지정 마커를 등록 하려면  
   
@@ -54,7 +51,7 @@ ms.locfileid: "49893106"
   
    -   DisplayName  
   
-   -   패키지  
+   -   Package  
   
    -   `Default` REG_SZ 형식의 선택적 항목이입니다. 항목의 값에 몇 가지 유용한 식별 정보, 예를 들어 "사용자 지정 텍스트 표식"를 포함 하는 문자열은 설정 된 경우.  
   

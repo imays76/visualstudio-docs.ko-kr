@@ -1,9 +1,6 @@
 ---
 title: 레거시 API를 사용 하 여 핵심 편집기 인스턴스화 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - instantiating editor
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59642b934f82990ce50f6dabaa38a97f34575997
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 14583d242c260e4b0f1a754d53faf35b645be666
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941570"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838166"
 ---
 # <a name="instantiate-the-core-editor-by-using-the-legacy-api"></a>기존 API를 사용 하 여 핵심 편집기 인스턴스화합니다
 편집기는 텍스트 삽입, 삭제, 복사 및 붙여넣기 등의 기능을 편집 합니다. 텍스트 색 지정, 들여쓰기 및 IntelliSense 문 완성 등의 언어 서비스에 의해 제공 되는 함수를 사용 하 여 이러한 함수를 결합 합니다.  
@@ -65,7 +62,7 @@ ms.locfileid: "49941570"
   
  경우는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> 핵심 편집기의 인스턴스를 자동으로 가져옵니다 기본 바로 가기 키, 텍스트 편집기로 동일한 명령을 GUID를 반환 합니다.  
   
- 일반적인 정보를 참조 하세요 [연습: 핵심 편집기를 만들고 등록 된 편집기 파일 형식이](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)합니다.  
+ 일반 정보를 참조 하세요. [연습: 핵심 편집기를 만들고 등록 된 편집기 파일 형식이](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)합니다.  
   
 ## <a name="see-also"></a>참고자료  
  [핵심 편집기 내에서](../extensibility/inside-the-core-editor.md)   

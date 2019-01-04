@@ -1,9 +1,6 @@
 ---
 title: Office 솔루션 보안
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 51061c4abd52997db4bb9f3054333fba54352f35
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: fb5f5577fc1c8e51ddac8b51b64cae1891dfbee6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804645"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820840"
 ---
 # <a name="secure-office-solutions"></a>Office 솔루션 보안
   Office 솔루션에 대 한 보안 모델에서는 여러 가지 기술을: 합니다 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)], Microsoft Office 및 Internet Explorer 제한 된 사이트 영역에 보안 센터. 다음 섹션에서는 다양한 보안 기능의 작동 방식을 설명합니다.
@@ -103,7 +100,7 @@ ms.locfileid: "53804645"
 
  ![VSTO 보안-설치 프로그램을 사용 하 여 설치할](../vsto/media/setup-vstoinstaller.png "VSTO 보안-설치 프로그램을 사용 하 여 설치 하려면")
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [Office 솔루션에 신뢰를 부여](../vsto/granting-trust-to-office-solutions.md)
 - [문서에 신뢰를 부여](../vsto/granting-trust-to-documents.md)

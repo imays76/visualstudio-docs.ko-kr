@@ -1,9 +1,6 @@
 ---
 title: SharePoint 프로젝트 항목 확장 | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b83d5f92a54d58aae2d4c7860e6648920615d63f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d02871b991c999c490aac8aaeafc677711c95266
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823634"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959974"
 ---
 # <a name="extend-sharepoint-project-items"></a>SharePoint 프로젝트 항목 확장
   Visual Studio에서 이미 설치 되어 있는 SharePoint 프로젝트 항목 형식에 기능을 추가 하려는 경우 프로젝트 항목 확장을 만듭니다. 예를 들어, 기본 제공 확장을 만들 수 있습니다 **이벤트 수신기** 하거나 **목록 정의** Visual Studio에서 프로젝트 항목 또는 사용자 지정 프로젝트 항목 형식에 대 한 확장을 만들 수 있습니다. 또한 모든 SharePoint 프로젝트 항목 형식에 대 한 확장을 만들 수 있습니다.  
@@ -36,7 +33,7 @@ ms.locfileid: "49823634"
   
 - 프로젝트 항목에 사용자 지정 속성을 추가 합니다. 속성에 표시 된 **속성** 창에서 프로젝트 항목을 선택 하면 **솔루션 탐색기**합니다. 자세한 내용은 [방법: SharePoint 프로젝트 항목 확장에 속성 추가](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)합니다.  
   
-  만들기, 배포 및 프로젝트 항목 확장을 테스트 하는 방법을 보여주는 연습을 참조 하세요 [연습: SharePoint 프로젝트 항목 형식을 확장](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)합니다.  
+  만들기, 배포 및 프로젝트 항목 확장을 테스트 하는 방법을 보여주는 연습을 참조 하세요. [연습: SharePoint 프로젝트 항목 형식을 확장](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)합니다.  
   
 ## <a name="understand-the-relationship-between-project-item-extensions-and-project-item-instances"></a>프로젝트 항목 확장 및 프로젝트 항목 인스턴스 간의 관계를 이해
  프로젝트 항목 확장을 만들 때 연결 된 형식의 프로젝트 항목을 SharePoint 프로젝트에 추가 되 면 Visual Studio 확장을 로드 합니다. 예를 들어 확장을 만드는 **이벤트 수신기** 프로젝트 항목, Visual Studio 확장 프로그램 사용자에 추가 로드를 **이벤트 수신기** 프로젝트에 프로젝트 항목입니다. Visual Studio 연결 된 프로젝트 항목 형식의 모든 인스턴스에 대 한 확장 프로그램의 동일한 인스턴스를 사용합니다. 이전 예제에서는 사용자가 두 번째 추가 하는 경우 **이벤트 수신기** 프로젝트에 프로젝트 항목, 확장 프로그램의 동일한 인스턴스에 두 번째 프로젝트 항목을 사용 합니다.  
@@ -67,10 +64,9 @@ ms.locfileid: "49823634"
 |웹 파트|Microsoft.VisualStudio.SharePoint.WebPart|  
 |워크플로 연결 양식|Microsoft.VisualStudio.SharePoint.WorkflowAssociation|  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  [방법: SharePoint 프로젝트 항목 확장명 만들기](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)   
  [방법: SharePoint 프로젝트 항목 확장에 바로 가기 메뉴 항목 추가](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)   
  [방법: SharePoint 프로젝트 항목 확장에 속성 추가](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)   
  [연습: SharePoint 프로젝트 항목 형식 확장](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)   
  [SharePoint 프로젝트 시스템 확장](../sharepoint/extending-the-sharepoint-project-system.md)  
-  

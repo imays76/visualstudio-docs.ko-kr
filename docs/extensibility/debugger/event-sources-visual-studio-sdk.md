@@ -1,9 +1,6 @@
 ---
 title: 이벤트 소스 (Visual Studio SDK) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], event sources
@@ -13,17 +10,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f196f7711db151ef2da867a11bc6a8b71394d9c8
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 0566468a7beaf7e50723c2e8e594e5cd2eebec79
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232659"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888610"
 ---
 # <a name="event-sources-visual-studio-sdk"></a>이벤트 소스 (Visual Studio SDK)
 이벤트의 두 원본이: 디버그 엔진 (DE) 및 세션 디버그 관리자 (SDM). SDM에서 전송 되는 이벤트를 NULL 엔진을 설치 하는 동안에 NULL이 아닌 엔진을가 하는 독일에서 전송 되는 이벤트입니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 보내는 방법을 보여 줍니다 합니다 **IDebugProgramCreateEvent2** SDM DE에서.  
   
 ```csharp  
@@ -75,5 +72,5 @@ HRESULT CEvent::SendAsynchronousEvent(IDebugEventCallback2 *pCallback, IDebugEng
   
 ```  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [이벤트 전송](../../extensibility/debugger/sending-events.md)

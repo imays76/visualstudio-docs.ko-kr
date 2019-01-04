@@ -16,13 +16,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: dde7b368297979e53d4ee09b75961652749d3321
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: bfbb0affe6c159f27a2568d5da35bcb98e80cdeb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380745"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939929"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>T4 텍스트 템플릿을 사용하여 런타임 텍스트 생성
 
@@ -300,7 +299,7 @@ Include 지시문의 템플릿 파일 또는 파일을 포함된 텍스트 내�
 
 해당 되는 추상 기본 클래스 템플릿을 작성 하 여 런타임 템플릿 사이의 콘텐츠를 공유할 수 있습니다. 사용 합니다 `inherits` 의 매개 변수는 `<@#template#>` 지시문 다른 런타임 템플릿 클래스를 참조 합니다.
 
-#### <a name="inheritance-pattern-fragments-in-base-methods"></a>상속 패턴: 기본 메서드의 조각
+#### <a name="inheritance-pattern-fragments-in-base-methods"></a>상속 패턴: 기본 메서드에서 조각
 
 패턴의 예제에 사용 되는 경우 다음 사항에 유의 합니다.
 
@@ -355,7 +354,7 @@ begin 1
 end 1
 ```
 
-#### <a name="inheritance-pattern-text-in-base-body"></a>기본 본문의 상속 패턴: 텍스트
+#### <a name="inheritance-pattern-text-in-base-body"></a>상속 패턴: 기본 본문 텍스트
 
 템플릿 상속을 사용 하 여이 대체 접근 방법에서는 텍스트의 기본 템플릿에서 정의 됩니다. 데이터를 제공 하는 파생된 템플릿의 텍스트 조각 기본 내용에 적합 하며
 
@@ -431,7 +430,7 @@ End material for DerivedTemplate1.
 
 ## <a name="related-topics"></a>관련 항목
 
-디자인 타임 템플릿을: 응용 프로그램의 일부가 됩니다 하는 템플릿을 사용 하 여 코드를 생성 하려는 경우, 참조 [T4 텍스트 템플릿을 사용 하 여 디자인 타임 코드 생성](../modeling/design-time-code-generation-by-using-t4-text-templates.md)합니다.
+디자인 타임 템플릿: 응용 프로그램의 일부가 됩니다 하는 템플릿을 사용 하 여 코드를 생성 하려는 경우, 참조 [T4 텍스트 템플릿을 사용 하 여 디자인 타임 코드 생성](../modeling/design-time-code-generation-by-using-t4-text-templates.md)합니다.
 
 런타임 템플릿은 컴파일 타임에 템플릿과 그 내용이 결정 됩니다 모든 응용 프로그램에서 사용할 수 있습니다. 런타임에 변경 하는 템플릿에서 텍스트를 생성 하는 Visual Studio 확장 프로그램을 작성 하려는 경우 참조 [VS 확장에서 텍스트 변환 호출](../modeling/invoking-text-transformation-in-a-vs-extension.md)합니다.
 

@@ -1,9 +1,6 @@
 ---
 title: 워크시트 작업
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 44bc87817453e0d1d11c08b1c8baabb73f590ede
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 9133fbf2e8ede3ec8595ae3a0e22bea3b5b07c6b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258374"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857694"
 ---
 # <a name="work-with-worksheets"></a>워크시트 작업
   <xref:Microsoft.Office.Tools.Excel.Worksheet> 및 <xref:Microsoft.Office.Interop.Excel.Worksheet> 클래스에는 워크시트가 있는 작업을 수행하는 데 사용하는 메서드 및 속성이 포함됩니다.  
@@ -50,10 +47,8 @@ ms.locfileid: "35258374"
   
  VSTO 추가 기능에서 이러한 작업을 수행하는 방법과 문서 수준 사용자 지정에서 수행하는 방법 간에 차이가 있는 경우가 있습니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [확장 된 개체를 사용 하 여 Excel 자동화](../vsto/automating-excel-by-using-extended-objects.md)   
  [통합 문서를 사용 하 여 작동 합니다.](../vsto/working-with-workbooks.md)   
  [범위를 사용 하 여 작동 합니다.](../vsto/working-with-ranges.md)   
  [Excel 워크시트에서 Windows Forms 컨트롤 사용](../vsto/using-windows-forms-controls-on-excel-worksheets.md)  
-  
-  

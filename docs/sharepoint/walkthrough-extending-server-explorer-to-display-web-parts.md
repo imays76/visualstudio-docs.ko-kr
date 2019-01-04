@@ -1,9 +1,6 @@
 ---
 title: '연습: 웹 파트를 표시 하려면 서버 탐색기 확장 | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6d32f76965c0dbef359e54bda114221e460a9bfd
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: acee9055fc250f158e05945f0db30c9ffb0fee14
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296387"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53957899"
 ---
-# <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>연습: 웹 파트를 표시 하려면 서버 탐색기를 확장 합니다.
+# <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>연습: 웹 파트를 표시 하려면 서버 탐색기 확장
   Visual Studio에서 사용할 수 있습니다 합니다 **SharePoint 연결** 노드의 **서버 탐색기** SharePoint 사이트에서 구성 요소를 볼 수 있습니다. 그러나 **서버 탐색기** 기본적으로 일부 구성 요소를 표시 하지 않습니다. 이 연습에서는 확장할 예정 **서버 탐색기** SharePoint 사이트를 연결 된 각 웹 파트 갤러리에 표시 되도록 합니다.  
   
  이 연습에서는 다음 작업을 수행합니다.  
@@ -43,7 +40,7 @@ ms.locfileid: "51296387"
 -   디버깅 및 테스트를 확장 합니다.  
   
 > [!NOTE]  
->  다른 버전의 서버 개체 모델에 해당 하는 대신 SharePoint에 대 한 클라이언트 개체 모델을 사용 하는이 연습을 참조 하세요 [연습: 서버 탐색기 확장의 SharePoint 클라이언트 개체 모델을 호출할](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)합니다.  
+>  다른 버전의 서버 개체 모델에 해당 하는 대신 SharePoint에 대 한 클라이언트 개체 모델을 사용 하는이 연습을 참조 하세요. [연습: 서버 탐색기 확장의 SharePoint 클라이언트 개체 모델을 호출할](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)합니다.  
   
 ## <a name="prerequisites"></a>전제 조건  
  이 연습을 완료 하려면 개발 컴퓨터의 다음 구성 요소가 필요 합니다.  
@@ -143,7 +140,7 @@ ms.locfileid: "51296387"
   
      **프로젝트 디자이너**가 열립니다.  
   
-6.  **응용 프로그램** 탭을 선택합니다.  
+6.  **애플리케이션** 탭을 선택합니다.  
   
 7.  에 **기본 네임 스페이스** 상자 (C#) 또는 **루트 네임 스페이스** 상자 ([!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]), 입력 **ServerExplorer.SharePointConnections.WebPartNode**합니다.  
   
@@ -171,7 +168,7 @@ ms.locfileid: "51296387"
   
      **프로젝트 디자이너**가 열립니다.  
   
-8.  **응용 프로그램** 탭을 선택합니다.  
+8.  **애플리케이션** 탭을 선택합니다.  
   
 9. 에 **기본 네임 스페이스** 상자 (C#) 또는 **루트 네임 스페이스** 상자 ([!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]), 입력 **ServerExplorer.SharePointConnections.WebPartNode**합니다.  
   
@@ -372,9 +369,8 @@ ms.locfileid: "51296387"
   
 4.  Visual Studio (실험적 인스턴스 및 WebPartNode 솔루션이 열려 있는 Visual Studio의 인스턴스)의 두 인스턴스를 닫습니다.  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  [서버 탐색기에서 SharePoint 연결 노드 확장](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [연습: 서버 탐색기 확장의 SharePoint 클라이언트 개체 모델 호출](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)   
  [아이콘에 대한 이미지 편집기](/cpp/windows/image-editor-for-icons)   
  [아이콘 또는 다른 이미지 만들기 &#40;아이콘에 대 한 이미지 편집기&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
-  

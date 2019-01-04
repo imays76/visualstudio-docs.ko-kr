@@ -1,9 +1,6 @@
 ---
 title: VSPackage 용 설치 디렉터리를 선택 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, installation directory
@@ -13,24 +10,24 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e32f2581e4980feebbbecb3cc8e7aa98bfeb670
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: df13749a16ad107c864fa1dcf1b3e0f4e7cbed41
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370954"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926296"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>VSPackage 용 설치 디렉터리를 선택 합니다.
 VSPackage 및 해당 지원 파일을 사용자의 파일 시스템에 있어야 합니다. 위치는 VSPackage는 관리 또는 사용자 선택을 확인 하 고-side-by-side 버전 관리 체계를 관리 되지 않는 하는지 여부에 따라 달라 집니다.  
   
 ## <a name="unmanaged-vspackages"></a>관리 되지 않는 Vspackage  
- 비관리 VSPackage를 모든 위치에 설치할 수 있는 COM 서버를입니다. 등록 정보 위치를 정확 하 게 반영 해야 합니다. 설치 관리자 사용자 인터페이스 (UI)의 하위 디렉터리와 같이 기본 위치를 제공 해야 합니다 `ProgramFilesFolder` Windows Installer 속성 값입니다. 예를 들어:  
+ 비관리 VSPackage를 모든 위치에 설치할 수 있는 COM 서버를입니다. 등록 정보 위치를 정확 하 게 반영 해야 합니다. 설치 관리자 사용자 인터페이스 (UI)의 하위 디렉터리와 같이 기본 위치를 제공 해야 합니다 `ProgramFilesFolder` Windows Installer 속성 값입니다. 예:  
   
 *&lt;ProgramFilesFolder&gt;\\&lt;MyCompany&gt;\\&lt;MyVSPackageProduct&gt;\V1.0\\*
   
  작은 부팅 파티션을 유지 하는 사용자에 맞게 기본 디렉터리를 변경 하 여 다른 볼륨에 응용 프로그램 및 도구를 설치 하려는 사용자를 허용 합니다.  
   
- Side-by-side-체계 버전 관리 VSPackage를 사용 하는 경우에 다른 버전을 저장 하위 디렉터리를 사용할 수 있습니다. 예를 들어:
+ Side-by-side-체계 버전 관리 VSPackage를 사용 하는 경우에 다른 버전을 저장 하위 디렉터리를 사용할 수 있습니다. 예:
 
  *&lt;ProgramFilesFolder&gt;\\&lt;MyCompany&gt;\\&lt;MyVSPackageProduct&gt;\\V1.0\\2002\\*
   

@@ -1,9 +1,6 @@
 ---
 title: TASK_STATE_WAITING_ON_CHILDREN 필드 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - TASK_STATE_WAITING_ON_CHILDREN field, Task class [.NET Framework debug engines]
@@ -13,17 +10,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ccfee9939df0f525d147b46f304c69214c22aa7f
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: 8a12652ccd999e7ec1c8a3e87fe1af12c9d91201
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276688"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924496"
 ---
 # <a name="taskstatewaitingonchildren-field"></a>TASK_STATE_WAITING_ON_CHILDREN 필드
 해당 대리자 실행을 마친 작업과 연결 된 자식 작업이 완료 되기를 기다리는 암시적으로 합니다.  
   
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **네임스페이스:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **어셈블리:** mscorlib (에서 *mscorlib.dll*)  
   

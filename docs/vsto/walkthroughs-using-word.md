@@ -1,9 +1,6 @@
 ---
 title: Word를 사용 하 여 연습
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c8baedac87ae0f740c9413d4cdba2f07aa0d978a
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: a439b100c273ee7e884e54b03a44049ad8494935
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258329"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822920"
 ---
 # <a name="walkthroughs-using-word"></a>Word를 사용 하 여 연습
   다음 연습에서는 문서 수준 사용자 지정 및 VSTO 추가 기능을 사용하여 Microsoft Office Word를 자동화하고 UI(사용자 인터페이스)를 사용자 지정할 수 있는 방법을 보여 줍니다.  
@@ -30,7 +27,7 @@ ms.locfileid: "35258329"
  [연습: Word 용 첫 문서 수준 사용자 지정 만들기](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)  
  Word용 기본 문서 수준 사용자 지정을 만드는 방법을 보여 줍니다.  
   
- [연습: 작업창에서 문서로 텍스트 삽입](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
+ [연습: 작업 창에서 문서로 텍스트 삽입](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
  사용자가 작업 창의 컨트롤에 텍스트를 입력할 때 텍스트를 Word 문서에 추가하는 방법을 보여 줍니다.  
   
  [연습: Word 작업 창의 컨트롤에 데이터 바인딩](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)  
@@ -75,5 +72,3 @@ ms.locfileid: "35258329"
  [Office 개발 샘플 및 연습](../vsto/office-development-samples-and-walkthroughs.md)   
  [VSTO 추가 기능 프로그래밍](../vsto/programming-vsto-add-ins.md)   
  [문서 수준 사용자 지정 프로그래밍](../vsto/programming-document-level-customizations.md)  
-  
-  

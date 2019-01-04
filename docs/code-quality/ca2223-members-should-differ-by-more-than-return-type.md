@@ -2,7 +2,6 @@
 title: 'CA2223: 멤버는 반환 형식 이외의 것도 달라야 합니다.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - MembersShouldDifferByMoreThanReturnType
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 93822dd3db325e3463c4a8f175c8ca289cac9e5d
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: c09239fbb904edac6481cee372b9e96e0183b62a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549828"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890785"
 ---
 # <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223: 멤버는 반환 형식 이외의 것도 달라야 합니다.
 

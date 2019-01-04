@@ -1,9 +1,6 @@
 ---
 title: 식 계산기 인터페이스 키 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba5affe8bd6b3e787f76863b29233b90a4ec0b72
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: dbbe661e9a3a8998153369d59317f9d9475e8f35
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39230824"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873446"
 ---
 # <a name="key-expression-evaluator-interfaces"></a>Key 식 계산기 인터페이스
 > [!IMPORTANT]
@@ -59,5 +56,5 @@ ms.locfileid: "39230824"
   
      이 인터페이스는 값 및 콘텐츠 형식을 나타내는 및 식 평가의 결과입니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [평가 컨텍스트](../../extensibility/debugger/evaluation-context.md)

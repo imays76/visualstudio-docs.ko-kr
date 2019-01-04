@@ -1,9 +1,6 @@
 ---
 title: Office 솔루션 공동 개발
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9b4d22c92bd180eb27f8ebb50e65b24d17a92e47
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 2d8c6d19442a1735ee90db52e4c5f1a98e1fe860
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441550"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876499"
 ---
 # <a name="collaborative-development-of-office-solutions"></a>Office 솔루션 공동 개발
   여러 개발자가 Office 프로젝트에서 다른 Visual Studio 프로젝트에서 공동으로 동일한 방식으로 작동할 수 있습니다. Visual Studio Office가 서로 다른 위치에 설치 된 경우에 각 컴퓨터에 Microsoft Office 설치를 올바르게 찾습니다. 그러나 알아야 할 몇 가지 중요 한 고려 사항이 있습니다.  
@@ -45,9 +42,7 @@ ms.locfileid: "53441550"
   
  암호 빌드 시 자동으로 생성 된 임시 인증서를 보호 되지 않습니다. 인증서는 개발자의 로그인 이름 및 기타 개인 정보를 포함 합니다. 임시 인증서로 서명 하는 사용자 지정을 배포 하는 경우에이 정보에 액세스할 수 되기도 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [Office 솔루션 보안](../vsto/securing-office-solutions.md)   
  [Office 솔루션을 만들고 디자인](../vsto/designing-and-creating-office-solutions.md)   
  [Office 솔루션 빌드](../vsto/building-office-solutions.md)  
-  
-  

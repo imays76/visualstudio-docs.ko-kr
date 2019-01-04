@@ -1,8 +1,7 @@
 ---
-title: 'CA2207: 값 형식 정적 필드를 인라인으로 초기화하십시오.'
+title: 'CA2207: 값 형식 정적 필드 인라인을 초기화하십시오.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - InitializeValueTypeStaticFieldsInline
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 96e6a8e90b1ebed09408f34e432f5c08dd4da40f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ee4ffd51eef5b8a4f0523dd2356d4e0bdb29b945
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912307"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869162"
 ---
-# <a name="ca2207-initialize-value-type-static-fields-inline"></a>CA2207: 값 형식 정적 필드를 인라인으로 초기화하십시오.
+# <a name="ca2207-initialize-value-type-static-fields-inline"></a>CA2207: 값 형식 정적 필드 인라인을 초기화하십시오.
 
 |||
 |-|-|
@@ -47,4 +46,4 @@ ms.locfileid: "49912307"
  이 규칙에서는 경고를 표시해야 합니다.
 
 ## <a name="related-rules"></a>관련된 규칙
- [CA1810: 참조 형식 정적 필드를 인라인으로 초기화하십시오.](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md)
+ [CA1810: 참조 형식 정적 필드를 인라인으로 초기화](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md)

@@ -1,13 +1,8 @@
 ---
 title: SharePoint 용 사이트 정의 만들기 | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0e43cfa7c9fa78722639053c572280cbaad912bf
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 66e3566b7bfabb7ec2049632937beaa697246403
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325344"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868328"
 ---
 # <a name="create-site-definitions-for-sharepoint"></a>SharePoint 용 사이트 정의 만들기
   SharePoint 사이트 정의 프로젝트 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 만들 수 있습니다를 *사이트 정의*를 새 SharePoint 사이트에 대 한 기반으로 역할을 하는 합니다. 이러한 정의 뿐만 아니라 모양 및 SharePoint 사이트에 있지만 해당 기본 콘텐츠 및 기능 동작을 결정합니다. 정의에서 미리 구성 된 목록, 콘텐츠 형식, 이벤트 수신기, 이미지 및 기타 항목을 넣을 수 있습니다. SharePoint에는 블로그 등의 사이트 정의가 포함되어 있습니다. 블로그 사이트 정의 기반으로 하는 사이트를 만들 때 사이트 목록, 웹 파트 및 사이트를 블로깅 하면서 필요한 기타 항목을 포함 합니다.  
@@ -65,5 +60,3 @@ ms.locfileid: "36325344"
   
 ## <a name="see-also"></a>참고자료
  [SharePoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)  
-  
- 

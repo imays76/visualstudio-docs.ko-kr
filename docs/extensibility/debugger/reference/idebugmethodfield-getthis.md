@@ -1,9 +1,6 @@
 ---
 title: IDebugMethodField::GetThis | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugMethodField::GetThis
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 302486a0cd59f6bc843af6aba76f734775cf405e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e117bdca592bf6d9ebcade52b1d8a069fcd66b18
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842939"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851445"
 ---
 # <a name="idebugmethodfieldgetthis"></a>IDebugMethodField::GetThis
 가져옵니다 합니다 `this` (`Me` 에서 [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]) 메서드를 포함 하는 개체의 포인터입니다.  
@@ -28,7 +25,7 @@ ms.locfileid: "49842939"
 ## <a name="syntax"></a>구문  
   
 ```cpp  
-HRESULT GetThis(   
+HRESULT GetThis(   
    IDebugClassField** ppClass  
 );  
 ```  

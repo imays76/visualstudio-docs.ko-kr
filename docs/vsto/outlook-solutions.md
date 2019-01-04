@@ -1,9 +1,6 @@
 ---
 title: Outlook 솔루션
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7d0a79d48b8ff054e4c7bdb9151f3eefbf287b24
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6c1849a832bcc2bda8ea63b9939968ea44f5cd5b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831239"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868698"
 ---
 # <a name="outlook-solutions"></a>Outlook 솔루션
   Visual Studio에서는 Microsoft Office Outlook용 VSTO 추가 기능을 만드는 데 사용할 수 있는 프로젝트 템플릿을 제공합니다. VSTO 추가 기능을 사용하여 Outlook을 자동화하거나, Outlook 기능을 확장하거나, Outlook UI(사용자 인터페이스)를 사용자 지정할 수 있습니다. VSTO 추가 기능에 대한 자세한 내용은 [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)를 참조하세요.  
@@ -39,7 +36,7 @@ ms.locfileid: "49831239"
 ## <a name="create-an-outlook-vsto-add-in-project"></a>Outlook VSTO 추가 기능 프로젝트를 만들려면  
  **새 프로젝트** 대화 상자에서 **Outlook 추가 기능** 프로젝트 템플릿을 사용하여 Outlook 프로젝트를 만듭니다. 이 템플릿에는 필요한 어셈블리 참조 및 프로젝트 파일이 포함되어 있습니다.  
   
- VSTO 추가 기능 프로젝트를 만드는 방법에 대 한 자세한 내용은 참조 하세요. [방법: Visual Studio에서 만드는 Office 프로젝트](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다. 프로젝트 템플릿에 대 한 자세한 내용은 참조 하세요. [Office 프로젝트 템플릿 개요](../vsto/office-project-templates-overview.md)합니다.  
+ VSTO 추가 기능 프로젝트를 만드는 방법에 대 한 자세한 내용은 참조 하세요. [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다. 프로젝트 템플릿에 대 한 자세한 내용은 참조 하세요. [Office 프로젝트 템플릿 개요](../vsto/office-project-templates-overview.md)합니다.  
   
 ## <a name="outlook-vsto-add-in-programming-model"></a>Outlook VSTO 추가 기능 프로그래밍 모델  
  Outlook VSTO 추가 기능 프로젝트를 만드는 경우 Visual Studio는 솔루션의 기초가 되는 `ThisAddIn`인이라는 클래스를 생성합니다. 이 클래스는 코드를 작성하기 위한 시작점을 제공하고 VSTO 추가 기능에 Outlook의 개체 모델도 노출합니다.  
@@ -76,5 +73,3 @@ ms.locfileid: "49831239"
 |[Outlook 양식 영역 만들기](../vsto/creating-outlook-form-regions.md)|양식 영역을 쉽게 디자인, 개발 및 디버그할 수 있도록 Visual Studio에서 제공하는 도구에 대해 설명합니다.|  
 |[연습: 첫 번째 VSTO 추가 기능에 Outlook에 대 한 만들기](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)|Microsoft Office Outlook용 VSTO 추가 기능을 만드는 방법을 보여 줍니다.|  
 |[Office 개발의 outlook 2010](http://go.microsoft.com/fwlink/?LinkId=199013)|Visual Studio를 사용한 Office 개발에 국한되지 않고 Outlook 솔루션을 개발하는 방법에 대한 문서와 참조 설명서를 찾을 수 있는 MSDN 라이브러리 영역입니다.|  
-  
-  

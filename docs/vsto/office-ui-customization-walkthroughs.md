@@ -1,9 +1,6 @@
 ---
 title: Office UI 사용자 지정 연습
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,18 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 93a945278d2565bb98706e9303bc662a78cd00ee
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a9632fb12ec5567f527c0a5368af5645a91cddeb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674855"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826587"
 ---
 # <a name="office-ui-customization-walkthroughs"></a>Office UI 사용자 지정 연습
-  다음 연습에서는 문서 수준 사용자 지정 및 VSTO 추가 기능을 사용하여 Microsoft Office 응용 프로그램의 UI(사용자 인터페이스)를 사용자 지정할 수 있는 방법을 보여 줍니다.  
+  다음 연습에서는 문서 수준 사용자 지정 및 VSTO 추가 기능을 사용하여 Microsoft Office 애플리케이션의 UI(사용자 인터페이스)를 사용자 지정할 수 있는 방법을 보여 줍니다.  
   
 ## <a name="actions-pane-walkthroughs"></a>작업 창 연습  
- [연습: 작업창에서 문서로 텍스트 삽입](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
+ [연습: 작업 창에서 문서로 텍스트 삽입](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
  Word 문서에서 작업 창을 만드는 방법을 보여 줍니다. 작업 창에는 사용자 입력을 문서에 보내는 두 개의 컨트롤이 포함됩니다.  
   
  [연습: Word 작업 창의 컨트롤에 데이터 바인딩](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)  
@@ -40,12 +37,12 @@ ms.locfileid: "35674855"
   
 ## <a name="custom-task-pane-walkthroughs"></a>사용자 지정 작업창 연습  
  [연습: 사용자 지정 작업창에서 응용 프로그램을 자동화](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)  
- 사용자가 컨트롤을 클릭할 때 호스트 응용 프로그램을 자동화하는 컨트롤이 포함된 사용자 지정 작업창을 만드는 방법을 보여 줍니다.  
+ 사용자가 컨트롤을 클릭할 때 호스트 애플리케이션을 자동화하는 컨트롤이 포함된 사용자 지정 작업창을 만드는 방법을 보여 줍니다.  
   
- [연습:는 사용자 지정 작업창과 리본 단추 동기화](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)  
+ [연습: 사용자 지정 작업창과 리본 단추 동기화](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)  
  사용자가 리본 메뉴의 토글 단추를 클릭하여 숨기거나 표시할 수 있는 사용자 지정 작업창을 만드는 방법을 보여 줍니다.  
   
- [연습: Outlook에서 전자 메일 메시지를 사용 하 여 사용자 지정 작업창을 표시](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)  
+ [연습: Outlook에서 전자 메일 메시지를 사용 하 여 사용자 지정 작업창을 표시 합니다.](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)  
  Outlook에서 만들거나 열린 각 메일 메시지가 포함된 사용자 지정 작업창의 고유 인스턴스를 표시하는 방법을 보여 줍니다.  
   
 ## <a name="ribbon-walkthroughs"></a>리본 연습  
@@ -53,13 +50,13 @@ ms.locfileid: "35674855"
  리본 디자이너를 사용하여 사용자 지정 리본 탭을 만드는 방법을 보여 줍니다. 탭에 작업 창을 숨기거나 표시하는 데 사용할 수 있는 단추가 포함되어 있습니다.  
   
  [연습: 런타임에 리본의 컨트롤 업데이트](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)  
- 리본이 Office 응용 프로그램에 로드된 후 리본 개체 모델을 사용하여 리본 메뉴의 컨트롤을 업데이트하는 방법을 보여 줍니다.  
+ 리본이 Office 애플리케이션에 로드된 후 리본 개체 모델을 사용하여 리본 메뉴의 컨트롤을 업데이트하는 방법을 보여 줍니다.  
   
  [연습: 리본 XML을 사용 하 여 사용자 지정 탭 만들기](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
  이 연습에서는 리본 디자이너를 사용하는 대신 리본 XML을 사용하여 사용자 지정 리본 탭을 만드는 방법을 보여 줍니다.  
   
 ## <a name="controls-on-word-documents"></a>Word 문서의 컨트롤  
- [연습:는 VSTO 추가 기능에서 런타임에 문서에 컨트롤 추가](../vsto/walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md)  
+ [연습: VSTO 추가 기능에서 런타임에 문서에 컨트롤 추가](../vsto/walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md)  
  VSTO 추가 기능을 사용하여 문서에 컨트롤을 추가하는 방법을 보여 줍니다.  
   
  [연습: CheckBox 컨트롤을 사용 하 여 문서 서식 변경](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)  
@@ -92,5 +89,3 @@ ms.locfileid: "35674855"
  [시작 &#40;Visual Studio에서 Office 개발&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Office 프로그래밍의 일반적인 작업](../vsto/common-tasks-in-office-programming.md)   
  [Office 솔루션을 만들고 디자인](../vsto/designing-and-creating-office-solutions.md)  
-  
-  

@@ -2,7 +2,6 @@
 title: 코드 분석 규칙 집합 편집기 사용
 ms.date: 04/04/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.ruleseteditor
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdd80031530049b204c0befc445c1416aa08b43e
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 548f50b3d348c520ed7746b7dc3d123ffeb4c6aa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000818"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826038"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>코드 분석 규칙 집합 편집기 사용
 
@@ -28,7 +27,7 @@ ms.locfileid: "51000818"
 |작업 (심각도)|설명|
 |-|-|
 |경고|경고를 생성 합니다 **오류 목록** 및 빌드 시간에도 합니다.|
-|Error|오류를 생성 합니다 **오류 목록** 및 빌드 시간에도 합니다.|
+|오류|오류를 생성 합니다 **오류 목록** 및 빌드 시간에도 합니다.|
 |Info|메시지를 생성 합니다 **오류 목록**합니다.|
 |Hidden|위반은 사용자에 게 표시 되지 않습니다. IDE에 있지만 위반을 알립니다.|
 |없음|규칙 표시 되지 않습니다. 동작 규칙 규칙 집합에서 제거 된 경우와 같습니다.|
@@ -44,7 +43,7 @@ ms.locfileid: "51000818"
 
 - 선택 하거나 개별 규칙에 대 한 확인란의 선택을 취소 합니다. 규칙에 대 한 확인란을 선택 하면 규칙은 경고 작업으로 설정 됩니다.
 
-## <a name="toolbar"></a>Toolbar
+## <a name="toolbar"></a>ToolBar
 
 그룹화, 필터링 하 고 규칙 집합 표에 표시 되는 데이터를 검색 하 여 규칙 집합 편집기의 도구 모음을 사용할 수 있습니다.
 
@@ -74,7 +73,7 @@ ms.locfileid: "51000818"
 |**ID**|규칙의 식별자입니다.|
 |**범주**|규칙 집합의 멤버 자격은, 외에도 코드 분석 규칙 또한 범주별으로 그룹화 됩니다. 자세한 내용은 [코드 분석 경고](../code-quality/code-analysis-for-managed-code-warnings.md)합니다.|
 |**이름**|규칙의 제목입니다.|
-|**네임스페이스**|규칙의 네임 스페이스입니다.|
+|**Namespace**|규칙의 네임 스페이스입니다.|
 |**대상 유형**|규칙의 네이티브, 관리 되는 여부 데이터베이스 코드를 나타냅니다.|
 |**작업**|실행할 코드 분석에서 규칙을 위반 하는 경우 수행할 동작입니다. 편집할 수는 **동작** 필드입니다.|
 |**소스 규칙 집합**|규칙을 포함 하는 규칙 집합입니다.|

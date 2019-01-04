@@ -1,9 +1,6 @@
 ---
 title: Office의 스레딩 지원
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5aafdad425d611d7d57c2ae8e53e505d3522ba38
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 48a7ab96b26dc9410eef6977c53af7a3cf4a9841
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49871112"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857895"
 ---
 # <a name="threading-support-in-office"></a>Office의 스레딩 지원
   이 문서에서는 Microsoft Office 개체 모델의 스레딩 지원 되는 방법에 대 한 정보를 제공 합니다. Office 개체 모델은 하지 스레드로부터 안전한 지, 이지만 Office 솔루션에서 여러 스레드를 사용 하 여 작업할 수 있습니다. Office 응용 프로그램은 구성 요소 개체 모델 (COM) 서버. COM 클라이언트가 임의 스레드에서 COM 서버를 호출할 수 있습니다. 스레드로부터 안전 하지 않은 COM 서버에 대 한 COM 하나만 논리 스레드가 언제 든 지 서버에서 실행 되도록 동시 호출을 serialize 하는 메커니즘을 제공 합니다. 이 메커니즘 (STA) 단일 스레드 아파트 모델 이라고 합니다. 호출이 serialize 되므로 서버 사용량이 또는 백그라운드 스레드에서 다른 호출을 처리 하는 동안 호출자 기간 동안 차단 될 수 있습니다.  
@@ -79,5 +76,3 @@ ms.locfileid: "49871112"
  [스레딩 (C#)](/dotnet/csharp/programming-guide/concepts/threading/index) [스레딩 (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/threading/index)   
  [사용 하 여 스레드 및 스레딩](/dotnet/standard/threading/using-threads-and-threading)   
  [Office 솔루션을 만들고 디자인](../vsto/designing-and-creating-office-solutions.md)  
-  
-  

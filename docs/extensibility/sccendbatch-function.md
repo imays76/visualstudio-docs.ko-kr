@@ -1,9 +1,6 @@
 ---
 title: SccEndBatch 함수 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccEndBatch
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6d7b30bca6c0cb69a761b356786f40501e5af43
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 6b7fc5afbc5b1a084f0c5d84f5daf1cb7f257364
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638380"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869429"
 ---
 # <a name="sccendbatch-function"></a>SccEndBatch 함수
 이 기능으로 소스 제어 작업의 일괄 처리를 마칩니다. 이러한 일괄 처리를 중첩할 수 있습니다.  
@@ -45,6 +42,6 @@ SCCRTN SccEndBatch(void);
 ## <a name="remarks"></a>설명  
  원본 제어 일괄 처리는 여러 프로젝트 또는 여러 컨텍스트 간에 동일한 소스 제어 작업을 실행 하는 데 사용 됩니다. 일괄 처리 작업 중 사용자 환경에서 중복 대화 상자를 제거 하기 위해 일괄 처리를 사용할 수 있습니다. 합니다 [SccBeginBatch](../extensibility/sccbeginbatch-function.md) 하며 `SccEndBatch` 함수는 작업의 시작과 끝을 나타내는 데 쌍으로 사용 됩니다. 이러한 중첩 될 수 없습니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [원본 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)   
  [SccBeginBatch](../extensibility/sccbeginbatch-function.md)

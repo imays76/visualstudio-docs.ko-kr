@@ -2,7 +2,6 @@
 title: XML 편집기에서 XML 문서 유효성 검사
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: abb353bd-6c4a-4978-b03b-a8c245bbfb55
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04b2e821abbbc7a24ce5b77b7374de617852cf2a
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: eaf0ee4a039586e1f35883a2ce7a16f356f322b5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693840"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899732"
 ---
 # <a name="xml-document-validation"></a>XML 문서 유효성 검사
 
@@ -23,7 +22,7 @@ XML 편집기에서는 XML 1.0 구문을 검사하고 데이터를 입력할 때
 
  컴파일된 스키마의 `targetNamespace`와 요소의 xmlns 선언을 비교하여 유효성 검사에 사용된 스키마를 찾을 수 있습니다. 우선 순위에 따라 나열된 다음 위치 중 하나에서 컴파일된 스키마가 로드됩니다.
 
--   에 지정 된 파일 이름을 **스키마** 문서의 필드 **속성** 창.
+-   지정 된 파일 이름을 사용 합니다 **스키마** 문서의 필드 **속성** 창입니다.
 
 -   인라인 스키마 또는 DTD
 
@@ -40,10 +39,10 @@ XML 편집기에서는 XML 1.0 구문을 검사하고 데이터를 입력할 때
 -   스키마 캐시 디렉터리의 스키마
 
 ## <a name="xslt-files"></a>XSLT 파일
- XSLT 파일을 편집 하는 경우는 *xslt.xsd* 스키마 캐시에 있는 파일 유효성 검사에 사용 됩니다. 유효성 검사 오류는 파란색 물결 무늬 밑줄로 표시되고 XSLT 컴파일러 오류는 빨간색 물결 무늬 밑줄로 표시됩니다.
+ XSLT 파일을 편집 하는 경우는 *xslt.xsd* 스키마 캐시에 있는 파일 유효성 검사가 사용 됩니다. 유효성 검사 오류는 파란색 물결 무늬 밑줄로 표시되고 XSLT 컴파일러 오류는 빨간색 물결 무늬 밑줄로 표시됩니다.
 
 ## <a name="xml-schema-xsd-files"></a>XML 스키마 (XSD) 파일
- XML 스키마 파일을 편집 하는 경우는 *xsdschema.xsd* 스키마 캐시에 있는 파일 유효성 검사에 사용 됩니다. 유효성 검사 오류는 파란색 물결 무늬 밑줄로 표시되고 컴파일 오류는 빨간색 물결 무늬 밑줄로 표시됩니다.
+ XML 스키마 파일을 편집 하는 경우는 *xsdschema.xsd* 스키마 캐시에 있는 파일 유효성 검사가 사용 됩니다. 유효성 검사 오류는 파란색 물결 무늬 밑줄로 표시되고 컴파일 오류는 빨간색 물결 무늬 밑줄로 표시됩니다.
 
 ## <a name="see-also"></a>참고자료
 

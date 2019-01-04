@@ -1,9 +1,6 @@
 ---
 title: '연습: SharePoint 프로젝트 항목 형식 확장 | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 756486daa709efd6ce1ff697d6d190bb7f4a2e34
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: a32182b4df4851bb7befb1a95af70d2e4da6666c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295724"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868669"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>연습: SharePoint 프로젝트 항목 형식 확장
   사용할 수는 **비즈니스 데이터 연결 모델** SharePoint에서 비즈니스 데이터 연결 (BDC) 서비스에 대 한 모델을 만드는 프로젝트 항목입니다. 기본적으로이 프로젝트 항목을 사용 하 여 모델을 만들 때 모델의 데이터 표시 되지 않습니다 사용자. 사용자가 데이터를 볼 수 있도록 SharePoint에 외부 목록도 만들어야 합니다.  
@@ -295,9 +292,7 @@ ms.locfileid: "51295724"
   
 5.  Visual Studio (실험적 인스턴스 및 GenerateExternalDataLists 솔루션 열기의 인스턴스)의 두 인스턴스를 닫습니다.  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  [SharePoint 프로젝트 시스템 확장](../sharepoint/extending-the-sharepoint-project-system.md)   
  [비즈니스 데이터 연결 모델 만들기](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)  
-  
-  

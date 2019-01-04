@@ -2,19 +2,18 @@
 title: XML 데이터 사용
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 579d535348a8f5f2b7c728aa4d8ad5fbb434bdda
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 7ecd138ae1559f75880d343181a4d35b60394b42
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349350"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834563"
 ---
 # <a name="working-with-xml-data"></a>XML 데이터 사용
 
@@ -56,6 +55,6 @@ Visual Studio에서 XSLT 스타일시트를 디버깅할 수 있습니다. 디�
 
 [관리 코드에서 XML 웹 서비스](/previous-versions/visualstudio/visual-studio-2008/xy59yt45\(v\=vs.90\)) 만들기 및 XML 웹 서비스를 배포 하는 방법 및 XML 웹 서비스에 액세스 하는 방법에 설명 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio의 XML 도구](../xml-tools/xml-tools-in-visual-studio.md)

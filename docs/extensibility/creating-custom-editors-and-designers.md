@@ -1,9 +1,6 @@
 ---
 title: 사용자 지정 편집기 및 디자이너 만들기 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - designers [Visual Studio SDK]
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05eeae4901af8780927e0ce0577b385ee9ffa371
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2c3f7a4b3f3219be4a4e3a40a0bb792b34599ce0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950905"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946999"
 ---
 # <a name="create-custom-editors-and-designers"></a>사용자 지정 편집기 및 디자이너 만들기
 Visual Studio 통합된 개발 환경 (IDE)는 다양 한 유형의 편집기를 호스팅할 수 있습니다.  
@@ -101,5 +98,5 @@ Visual Studio 통합된 개발 환경 (IDE)는 다양 한 유형의 편집기를
  [Visual Studio의 다른 부분 확장](../extensibility/extending-other-parts-of-visual-studio.md)  
  나머지와 일치 하는 UI 요소를 만드는 방법에 설명 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>

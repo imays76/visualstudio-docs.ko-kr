@@ -8,24 +8,23 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: f73fd8170c91fe51692c9ec5b5b39e7c36570dd2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fce705b4f36c8c3bf0e6d44feaff353853652cb3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949372"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940656"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>하나의 솔루션에 여러 DSL 포함
 여러 DSL이 함께 설치되도록 단일 솔루션의 일부분으로 패키지할 수 있습니다.
 
- 다양한 기술을 통해 여러 DSL을 통합할 수 있습니다. 자세한 내용은 참조 하세요. [Visual Studio Modelbus를 사용 하 여 모델 통합](../modeling/integrating-models-by-using-visual-studio-modelbus.md) 하 고 [방법: 끌어서 놓기 처리기 추가](../modeling/how-to-add-a-drag-and-drop-handler.md) 및 [복사 동작 사용자 지정](../modeling/customizing-copy-behavior.md)합니다.
+ 다양한 기술을 통해 여러 DSL을 통합할 수 있습니다. 자세한 내용은 [Visual Studio Modelbus를 사용 하 여 모델 통합](../modeling/integrating-models-by-using-visual-studio-modelbus.md) 고 [방법: 끌어서 놓기 처리기 추가](../modeling/how-to-add-a-drag-and-drop-handler.md) 하 고 [복사 동작 사용자 지정](../modeling/customizing-copy-behavior.md)합니다.
 
 ### <a name="to-build-more-than-one-dsl-in-the-same-solution"></a>같은 솔루션에서 둘 이상의 DSL을 작성하려면
 
 1. 둘 이상의 DSL 솔루션과 VSIX 프로젝트를 만든 다음 모든 프로젝트를 단일 솔루션에 추가합니다.
 
-   -   새 VSIX 프로젝트를 만들려면:에 **새 프로젝트** 대화 상자에서 **Visual C#** 를 **확장성**를 **VSIX 프로젝트**합니다.
+   -   새 VSIX 프로젝트를 만들려면: **새 프로젝트** 대화 상자에서 **시각적 C#** , **확장성**, **VSIX 프로젝트**.
 
    -   VSIX 솔루션 디렉터리에 둘 이상의 DSL 솔루션을 만듭니다.
 

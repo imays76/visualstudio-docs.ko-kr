@@ -1,21 +1,18 @@
 ---
-title: 이해 하 고 UI 응답 확장으로 인해 진단 | Microsoft Docs
-ms.custom: ''
+title: 이해 및 진단 확장에 의해 발생 한 UI 무응답 | Microsoft Docs
 ms.date: 01/26/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 author: PooyaZv
 ms.author: pozandev
 manager: douge
 ms.workload: multiple
-ms.openlocfilehash: ac962df3bc72d886ffc6d5d495d115abe60d9895
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 461818080afadfde5b378174ecd12775e35c801f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137478"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963316"
 ---
-# <a name="understanding-and-diagnosing-ui-unresponsiveness-caused-by-extensions"></a>이해 하 고 UI 확장 프로그램에서 발생 하는 응답 하지 않는 문제를 진단 합니다.
+# <a name="understanding-and-diagnosing-ui-unresponsiveness-caused-by-extensions"></a>이해 및 진단 확장으로 인해 UI 무응답
 
-완료 합니다.
+채워야 합니다.

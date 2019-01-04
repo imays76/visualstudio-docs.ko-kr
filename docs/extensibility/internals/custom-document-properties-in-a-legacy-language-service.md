@@ -1,9 +1,6 @@
 ---
 title: 레거시 언어 서비스에서 사용자 지정 문서 속성 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - custom document properties, language services [managed package framework]
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 473b3970fe8a7d7e65b8e569420b2be6455a3d14
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 1c323b71f67f795cb9a3c6ab7492cbcf77a9b8c0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499086"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946713"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>레거시 언어 서비스의 사용자 지정 문서 속성
 문서 속성에 표시 될 수는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **속성** 창입니다. 프로그래밍 언어 개별 원본 파일과 연결 된 속성이 없는 일반적으로 합니다. 그러나 XML 인코딩, 스키마 및 스타일 시트에 영향을 주는 문서 속성을 지원 합니다.  
@@ -33,7 +30,7 @@ ms.locfileid: "39499086"
 ## <a name="customize-the-documentproperties-class"></a>DocumentProperties 클래스를 사용자 지정  
  를 지원 하기 위해 사용자 지정 문서 속성에서 클래스를 파생 해야 하는 <xref:Microsoft.VisualStudio.Package.DocumentProperties> 클래스 및 필요에 따라 많은 속성을 추가 합니다. 사용자 특성 구성에 제공 해야 합니다 **속성** 창 표시 합니다. 속성에만 있는 경우는 `get` 접근자에서 읽기 전용으로 표시 됩니다는 **속성** 창. 속성 둘 다 있으면 `get` 하 고 `set` 접근자 속성을 업데이트할 수도 있습니다에 **속성** 창입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  파생 된 클래스 예제는 다음과 같습니다 <xref:Microsoft.VisualStudio.Package.DocumentProperties>, 두 속성을 보여 주는 `Filename` 고 `Description`입니다. 속성이 업데이트 되는 경우, 사용자 지정 메서드를는 <xref:Microsoft.VisualStudio.Package.LanguageService> 속성 소스 파일에 쓸 클래스 라고 합니다.  
   
 ```csharp  
@@ -126,7 +123,7 @@ namespace TestLanguagePackage
 ## <a name="instantiate-the-custom-documentproperties-class"></a>사용자 지정 DocumentProperties 클래스 인스턴스화  
  사용자 지정 문서 속성 클래스를 인스턴스화할 때 재정의 해야 합니다는 <xref:Microsoft.VisualStudio.Package.LanguageService.CreateDocumentProperties%2A> 사용 중인 버전에서 메서드를 <xref:Microsoft.VisualStudio.Package.LanguageService> 의 단일 인스턴스를 반환 하는 클래스에 <xref:Microsoft.VisualStudio.Package.DocumentProperties> 클래스입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   
 ```csharp  
 using System.ComponentModel;  
@@ -153,7 +150,7 @@ namespace TestLanguagePackage
 ## <a name="properties-in-the-source-file"></a>소스 파일의 속성  
  문서 속성에 일반적으로 소스 파일에 특정 되므로 값은 원본 파일 자체에 저장 됩니다. 이렇게 하려면 언어 파서 또는 스캐너 이러한 속성을 정의를 지원 합니다. 예를 들어, XML 문서 속성은 루트 노드에 저장 됩니다. 경우 루트 노드에서 값을 수정 합니다 **속성** 창 값이 변경 되 고 편집기에서 루트 노드 업데이트 됩니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  속성을 저장 하는이 예제 `Filename` 고 `Description` 소스 파일의 처음 두 줄에 포함 된 특수 주석 헤더에으로:  
   
 ```  
@@ -400,5 +397,5 @@ namespace TestLanguagePackage
 }  
 ```  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [레거시 언어 서비스 기능](../../extensibility/internals/legacy-language-service-features1.md)

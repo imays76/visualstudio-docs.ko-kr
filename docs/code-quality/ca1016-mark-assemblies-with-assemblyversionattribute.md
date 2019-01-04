@@ -2,7 +2,6 @@
 title: 'CA1016: AssemblyVersionAttribute로 어셈블리 표시'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - MarkAssembliesWithAssemblyVersion
@@ -20,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fbc3fa747171892066705ddc32a114cb34e1b02
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: b4361671eb884fada158cb5032b667ea03522b87
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858177"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912706"
 ---
 # <a name="ca1016-mark-assemblies-with-assemblyversionattribute"></a>CA1016: AssemblyVersionAttribute로 어셈블리 표시
 
@@ -67,7 +66,7 @@ ms.locfileid: "47858177"
  [!code-vb[FxCop.Design.AssembliesVersion#1](../code-quality/codesnippet/VisualBasic/ca1016-mark-assemblies-with-assemblyversionattribute_1.vb)]
  [!code-cpp[FxCop.Design.AssembliesVersion#1](../code-quality/codesnippet/CPP/ca1016-mark-assemblies-with-assemblyversionattribute_1.cpp)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [어셈블리 버전 관리](/dotnet/framework/app-domains/assembly-versioning)
 - [방법: 게시자 정책 만들기](/dotnet/framework/configure-apps/how-to-create-a-publisher-policy)

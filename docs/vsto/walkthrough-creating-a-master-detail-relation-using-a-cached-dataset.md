@@ -1,9 +1,6 @@
 ---
-title: '연습: 캐시 된 데이터 집합을 사용 하 여 마스터-세부 관계 만들기'
-ms.custom: ''
+title: '연습: 캐시 된 데이터 집합을 사용 하 여 마스터-세부 관계를 만들려면'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9d877eae119c922939ea61007a845e5bd7049076
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c75ee922694e80b5ba70e4743d397cdf465169e8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933159"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823651"
 ---
-# <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>연습: 캐시 된 데이터 집합을 사용 하 여 마스터-세부 관계 만들기
+# <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>연습: 캐시 된 데이터 집합을 사용 하 여 마스터-세부 관계를 만들려면
   이 연습에서는 워크시트에서 마스터/세부 관계를 만들고 솔루션을 오프 라인으로 사용할 수 있도록 데이터를 캐시 하는 방법을 보여 줍니다.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -57,7 +54,7 @@ ms.locfileid: "49933159"
   
 ### <a name="to-create-a-new-project"></a>새 프로젝트를 만들려면  
   
-1. 이름으로 Excel 통합 문서 프로젝트를 만듭니다 **내 마스터-세부**, Visual Basic 또는 C#을 사용 하 여 합니다. 했는지 **새 문서 만들기** 을 선택 합니다. 자세한 내용은 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)을 참조하세요.  
+1. 이름으로 Excel 통합 문서 프로젝트를 만듭니다 **내 마스터-세부**, Visual Basic 또는 C#을 사용 하 여 합니다. 했는지 **새 문서 만들기** 을 선택 합니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
   
    Visual Studio 디자이너에서 새 Excel 통합 문서를 열고 사이트를 추가 합니다 **내 마스터-세부** 프로젝트가 **솔루션 탐색기**합니다.  
   
@@ -165,7 +162,7 @@ ms.locfileid: "49933159"
      [!code-vb[Trin_VstcoreDataExcel#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#18)]
      [!code-csharp[Trin_VstcoreDataExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#18)]  
   
-## <a name="test-the-application"></a>응용 프로그램 테스트  
+## <a name="test-the-application"></a>애플리케이션 테스트  
  이제 데이터가 예상 대로 나타나는지 하 고 솔루션을 오프 라인으로 사용할 수 있는 통합 문서를 테스트할 수 있습니다.  
   
 ### <a name="to-test-the-data-caching"></a>데이터 캐싱 테스트  
@@ -196,5 +193,3 @@ ms.locfileid: "49933159"
  [Office 솔루션의 데이터](../vsto/data-in-office-solutions.md)   
  [데이터 캐시](../vsto/caching-data.md)   
  [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)  
-  
-  

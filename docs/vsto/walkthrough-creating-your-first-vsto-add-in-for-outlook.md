@@ -1,9 +1,6 @@
 ---
 title: '연습: 첫 번째 VSTO 추가 기능에 Outlook에 대 한 만들기'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,15 +15,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fc0f2e7cc7dc40dc305f7860223b5d4acf19a573
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fbb5c938d6dbd269732b49584fc4e3831e869b0e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950965"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962547"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-outlook"></a>연습: 첫 번째 VSTO 추가 기능에 Outlook에 대 한 만들기
-  이 연습에서는 Microsoft Office Outlook용 VSTO 추가 기능을 만드는 방법을 보여 줍니다. 이러한 종류의 솔루션에서 만드는 기능은 열려 있는 Outlook 항목에 관계없이 응용 프로그램 자체에서 사용할 수 있습니다. 자세한 내용은 [Office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)합니다.  
+  이 연습에서는 Microsoft Office Outlook용 VSTO 추가 기능을 만드는 방법을 보여 줍니다. 이러한 종류의 솔루션에서 만드는 기능은 열려 있는 Outlook 항목에 관계없이 애플리케이션 자체에서 사용할 수 있습니다. 자세한 내용은 [Office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)합니다.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
@@ -145,5 +142,3 @@ ms.locfileid: "49950965"
  [Office 솔루션 빌드](../vsto/building-office-solutions.md)   
  [Office 솔루션 배포](../vsto/deploying-an-office-solution.md)   
  [Office 프로젝트 템플릿 개요](../vsto/office-project-templates-overview.md)  
-  
-  

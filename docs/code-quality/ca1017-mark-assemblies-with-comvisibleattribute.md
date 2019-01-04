@@ -1,8 +1,7 @@
 ---
-title: 'CA1017: ComVisibleAttribute로 어셈블리 표시'
+title: 'CA1017: ComVisibleAttribute로 어셈블리를 표시하세요.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1017
@@ -20,14 +19,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d2e720bf4e0bd613b5f31b82e7c50084b1b6d3c1
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 2c6d5f2356f6174739cc4a19e49265f0b163d035
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548558"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864740"
 ---
-# <a name="ca1017-mark-assemblies-with-comvisibleattribute"></a>CA1017: ComVisibleAttribute로 어셈블리 표시
+# <a name="ca1017-mark-assemblies-with-comvisibleattribute"></a>CA1017: ComVisibleAttribute로 어셈블리를 표시하세요.
 
 |||
 |-|-|
@@ -55,7 +54,7 @@ ms.locfileid: "45548558"
  [!code-vb[FxCop.Design.AssembliesCom#1](../code-quality/codesnippet/VisualBasic/ca1017-mark-assemblies-with-comvisibleattribute_1.vb)]
  [!code-csharp[FxCop.Design.AssembliesCom#1](../code-quality/codesnippet/CSharp/ca1017-mark-assemblies-with-comvisibleattribute_1.cs)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [비관리 코드와의 상호 운용](/dotnet/framework/interop/index)
 - [상호 운용할 .NET 형식의 정규화](/dotnet/framework/interop/qualifying-net-types-for-interoperation)

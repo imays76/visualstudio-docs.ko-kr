@@ -1,9 +1,6 @@
 ---
 title: 레거시 언어 서비스 모델 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - language services, model
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 381c5b37cdc5d8a166003bdf7dd931dd95e6dcb3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b4478ef31c107fcf437a452a857eabe2cd015734
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49943091"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819902"
 ---
 # <a name="model-of-a-legacy-language-service"></a>레거시 언어 서비스 모델
 언어 서비스는 특정 언어에 대 한 기능과 요소를 정의 하 고 해당 언어에 대 한 정보를 사용 하 여 편집기를 제공 하는 데 사용 됩니다. 예를 들어, 편집기 구문 색 지정을 지원 하기 위해 요소 및 언어의 키워드를 알고 있어야 합니다.  
@@ -43,7 +40,7 @@ ms.locfileid: "49943091"
   
   다음 표에서 모델에서 개체의 개요를 제공합니다.  
   
-| 구성 요소 | Object | 기능 |
+| 구성 요소 | 개체 | 기능 |
 |------------------| - | - |
 | 텍스트 버퍼 | <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> | 유니코드 읽기/쓰기 텍스트 스트림입니다. 다른 인코딩을 사용 하는 텍스트는 것이 가능 합니다. |
 | 코드 창 | <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow> | 하나 이상의 텍스트 뷰를 포함 하는 문서 창입니다. 때 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 는 코드 창 (MDI) 다중 문서 인터페이스 모드로 MDI 자식입니다. |

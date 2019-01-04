@@ -11,16 +11,15 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: c430dad62686e49d9ce07fdff9a3665b0ea519a4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 44eb71a4bbb209453ee7deef6adf3b10c561e8af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930325"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951828"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>연습: 사용자 지정 지시문 프로세서 만들기
 
@@ -603,7 +602,7 @@ End Property
 
 4. Visual Basic에 대 한 열을 **프로젝트** 메뉴 **CustomDP 속성**합니다. 에 **응용 프로그램** 탭의 **루트 네임 스페이스**, 기본 값을 삭제 `CustomDP`합니다.
 
-5. 에 **파일** 메뉴에서 클릭 **모두 저장**합니다.
+5. **파일** 메뉴에서 **모두 저장**을 클릭합니다.
 
 6. **빌드** 메뉴에서 **솔루션 빌드**를 클릭합니다.
 

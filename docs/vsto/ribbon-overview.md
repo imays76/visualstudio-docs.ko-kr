@@ -1,9 +1,6 @@
 ---
 title: 리본 개요
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 51de8b5fbc4e21b4dabaf34f526b85f0b98623db
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ff1cda312fdc007c1c700d2edf6576dcc91d87e3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846365"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989205"
 ---
 # <a name="ribbon-overview"></a>리본 개요
   리본 메뉴 관련된 명령을 쉽게 찾을 수 있도록 구성할 수 있는 방법이 있습니다. 명령은 리본 메뉴에 컨트롤로 나타납니다. 컨트롤은으로 구성 된 *그룹* 응용 프로그램 창 위쪽 가장자리의 가로 스트립을 따라. 관련 그룹은 탭에서 구성됩니다.  
@@ -84,7 +81,7 @@ ms.locfileid: "49846365"
   
  또한 변경되지 않은 기본 속성 값은 결과 리본 XML 파일에 표시되지 않습니다.  
   
- 리본 메뉴를 XML로 내보내기 하는 방법에 대 한 자세한 내용은 참조 [하는 방법: 리본 디자이너에서 리본 XML로 리본 메뉴 내보내기](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md).  
+ XML로 리본 내보내기 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법: 리본 XML로 리본 디자이너에서 리본 메뉴 내보내기](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)합니다.  
   
 ### <a name="update-the-code"></a>코드 업데이트  
  새 리본 코드 파일에 추가 됩니다 **솔루션 탐색기**. 이 파일에는 리본 XML 클래스가 포함되어 있습니다. 단추 클릭과 같은 사용자 동작을 처리하려면 이 클래스의 `Ribbon Callbacks` 영역에 콜백 메서드를 만들어야 합니다. 이벤트 처리기의 코드를 이러한 콜백 메서드로 이동하고 리본 확장성(RibbonX) 프로그래밍 모델을 사용하도록 코드를 수정합니다. 자세한 내용은 [Ribbon XML](../vsto/ribbon-xml.md)을 참조하세요.  
@@ -120,20 +117,18 @@ ms.locfileid: "49846365"
   
 |제목|설명|  
 |-----------|-----------------|  
-|[방법: 리본 메뉴 사용자 지정 시작](../vsto/how-to-get-started-customizing-the-ribbon.md)|Microsoft Office 응용 프로그램의 리본 사용자 지정을 추가 하는 방법을 보여 줍니다 한 **리본 (비주얼 디자이너)** 또는 **리본 (XML)** 항목을 Office 프로젝트.|  
+|[방법: 리본 사용자 지정 시작](../vsto/how-to-get-started-customizing-the-ribbon.md)|Microsoft Office 응용 프로그램의 리본 사용자 지정을 추가 하는 방법을 보여 줍니다 한 **리본 (비주얼 디자이너)** 또는 **리본 (XML)** 항목을 Office 프로젝트.|  
 |[리본 디자이너](../vsto/ribbon-designer.md)|Microsoft Office 응용 프로그램의 리본 메뉴에 사용자 지정 탭, 그룹 및 컨트롤을 추가 하 여 리본 디자이너를 사용 하는 방법을 설명 합니다.|  
 |[연습: 리본 디자이너를 사용 하 여 사용자 지정 탭 만들기](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|리본 디자이너를 사용하여 사용자 지정 리본 탭을 만드는 방법을 보여 줍니다. 리본 디자이너를 사용하여 사용자 지정 탭에 컨트롤을 추가하고 배치할 수 있습니다.|  
 |[리본 개체 모델 개요](../vsto/ribbon-object-model-overview.md)|런타임에 리본 컨트롤의 속성을 설정 하 고 가져오는 데 사용할 수 있는 강력한 형식의 개체 모델에 대 한 개요를 제공 합니다.|  
-|[연습: 런타임에 리본의 컨트롤 업데이트](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)|리본이 Office 응용 프로그램에 로드된 후 리본 개체 모델을 사용하여 리본 메뉴의 컨트롤을 업데이트하는 방법을 보여 줍니다.|  
+|[연습: 런타임에 리본의 컨트롤 업데이트](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)|리본이 Office 애플리케이션에 로드된 후 리본 개체 모델을 사용하여 리본 메뉴의 컨트롤을 업데이트하는 방법을 보여 줍니다.|  
 |[Outlook의 리본을 사용자 지정](../vsto/customizing-a-ribbon-for-outlook.md)|Microsoft Office Outlook 리본 메뉴를 사용자 지정 하기 위한 지침을 제공 합니다.|  
 |[InfoPath 용 리본 사용자 지정](../vsto/customizing-a-ribbon-for-infopath.md)|Microsoft Office InfoPath에서 리본 메뉴를 사용자 지정 하기 위한 지침을 제공 합니다.|  
 |[런타임에 리본 메뉴에 액세스](../vsto/accessing-the-ribbon-at-run-time.md)|표시, 숨기기, 리본, 수정 및 사용자가 컨트롤에 사용자 지정 작업 창, 작업 창 또는 양식 영역을 Outlook에서 코드를 실행할 수 있도록 하는 방법을 보여 줍니다.|  
 |[방법: 리본의 탭 위치 변경](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)|리본 메뉴의 탭 순서를 변경 하는 방법을 보여 줍니다.|  
 |[방법: 기본 제공 탭 사용자 지정](../vsto/how-to-customize-a-built-in-tab.md)|기본 제공 탭에 그룹 및 컨트롤을 추가하는 방법을 보여 줍니다.|  
-|[방법: Backstage 보기에 컨트롤을 추가 합니다.](../vsto/how-to-add-controls-to-the-backstage-view.md)|컨트롤을 클릭할 때 열리는 메뉴를 추가 하는 방법을 보여 줍니다 있는 **파일**.|  
-|[방법: 리본 그룹에 대화 상자 표시 아이콘을 추가 합니다.](../vsto/how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md)|리본 메뉴의 그룹에 대화 상자 표시 아이콘을 추가할 수 보여 줍니다.|  
-|[방법: 리본 XML로 리본 디자이너에서 리본 메뉴 내보내기](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)|하 여 디자이너에서 리본 XML로 내보내어 고급 방식으로 리본을 사용자 지정 하는 방법을 보여 줍니다.|  
+|[방법: Backstage 보기에 컨트롤 추가](../vsto/how-to-add-controls-to-the-backstage-view.md)|컨트롤을 클릭할 때 열리는 메뉴를 추가 하는 방법을 보여 줍니다 있는 **파일**.|  
+|[방법: 리본 그룹에 대화 상자 표시 아이콘 추가](../vsto/how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md)|리본 메뉴의 그룹에 대화 상자 표시 아이콘을 추가할 수 보여 줍니다.|  
+|[방법: 리본 디자이너에서 리본 XML로 리본 메뉴 내보내기](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)|하 여 디자이너에서 리본 XML로 내보내어 고급 방식으로 리본을 사용자 지정 하는 방법을 보여 줍니다.|  
 |[Ribbon XML](../vsto/ribbon-xml.md)|리본 메뉴를 사용자 지정 리본 메뉴 XML을 사용 하 여 방법에 대해 설명 합니다.|  
 |[연습: 리본 디자이너를 사용 하 여 사용자 지정 탭 만들기](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|사용 하 여 사용자 지정 리본 탭을 만드는 방법을 보여 줍니다 있는 **리본 (XML)** 항목입니다.|  
-  
-  

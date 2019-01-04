@@ -1,9 +1,6 @@
 ---
 title: InfoPath 솔루션
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4ae2882cbf38349eac57f1dfb731cc7d717769a4
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 0d346437d6d520ce3beed564c82895ef9f4d1be4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670860"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864949"
 ---
 # <a name="infopath-solutions"></a>InfoPath 솔루션
   Visual Studio에서는 Microsoft Office InfoPath 2013 및 InfoPath 2010용 VSTO 추가 기능을 만드는 데 사용할 수 있는 프로젝트 템플릿을 제공합니다. InfoPath는 Office 2016에서 사용할 수 없습니다.  
@@ -39,7 +36,7 @@ ms.locfileid: "50670860"
 > [!NOTE]  
 >  Office 환경을 확장 하는 솔루션을 개발 하는 데 관심이 [여러 플랫폼](https://dev.office.com/add-in-availability)? 새 확인해 [Office 추가 기능 모델](https://dev.office.com/docs/add-ins/overview/office-add-ins)합니다. Office 추가 기능의 VSTO 추가 기능 및 솔루션에 비해 작은 사용 공간이 있고 거의 모든 웹 프로그래밍 기술을, HTML5, JavaScript, CSS3, XML 등을 사용 하 여 빌드할 수 있습니다.  
   
- InfoPath용 VSTO 추가 기능은 다른 Microsoft Office VSTO 추가 기능과 유사합니다. 이러한 유형의 솔루션은 응용 프로그램에 의해 로드되는 어셈블리로 구성됩니다. 최종 사용자는 열려 있는 양식이나 양식 서식 파일과 상관없이 이 어셈블리의 기능에 액세스할 수 있습니다. VSTO 추가 기능에 대 한 자세한 내용은 참조 하세요. [VSTO 추가 기능 프로그래밍 시작](../vsto/getting-started-programming-vsto-add-ins.md) 하 고 [Architecture of VSTO add-ins](../vsto/architecture-of-vsto-add-ins.md)합니다.  
+ InfoPath용 VSTO 추가 기능은 다른 Microsoft Office VSTO 추가 기능과 유사합니다. 이러한 유형의 솔루션은 애플리케이션에 의해 로드되는 어셈블리로 구성됩니다. 최종 사용자는 열려 있는 양식이나 양식 서식 파일과 상관없이 이 어셈블리의 기능에 액세스할 수 있습니다. VSTO 추가 기능에 대 한 자세한 내용은 참조 하세요. [VSTO 추가 기능 프로그래밍 시작](../vsto/getting-started-programming-vsto-add-ins.md) 하 고 [Architecture of VSTO add-ins](../vsto/architecture-of-vsto-add-ins.md)합니다.  
   
 > [!NOTE]  
 >  Visual Studio 2015에는 이전 버전의 Visual Studio에서 제공된 InfoPath 양식 서식 파일 프로젝트가 포함되어 있지 않습니다. 또한 Visual Studio 2015를 사용하여 이전 버전의 Visual Studio에서 만든 InfoPath 양식 서식 파일 프로젝트를 열거나 편집할 수 없습니다. 그러나 Visual Studio Tools for Applications를 사용하여 InfoPath 양식 서식 파일 프로젝트를 열고 편집할 수 있습니다. 자세한 내용은 [InfoPath 2010에서 VSTO 2008 프로젝트를 사용 하 여 작동 합니다.](http://go.microsoft.com/fwlink/?LinkID=218903)합니다.  
@@ -70,5 +67,3 @@ ms.locfileid: "50670860"
  [Office 주 interop 어셈블리](../vsto/office-primary-interop-assemblies.md)   
  [Office UI 사용자 지정](../vsto/office-ui-customization.md)   
  [Office 개발의 InfoPath 2010](http://go.microsoft.com/fwlink/?LinkId=199012)  
-  
-  

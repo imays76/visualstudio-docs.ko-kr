@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2f5b8948d94c64d84b33714a4b432a46bfb73b59
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 55452088ff947cb92888018aa8d3d262483e0fb9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931547"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938188"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>DSL의 MSI 및 VSIX 배포
 사용자 고유의 컴퓨터 또는 다른 컴퓨터에 도메인 특정 언어를 설치할 수 있습니다. Visual Studio는 이미 대상 컴퓨터에 설치 되어야 합니다.
@@ -24,7 +23,7 @@ ms.locfileid: "49931547"
 
 |메서드|이점|
 |-|-|
-|VSX (Visual Studio 확장명)|배포 하기 아주 간단: 복사 하 고 실행 합니다 **.vsix** DslPackage 프로젝트에서 파일.<br /><br /> 자세한 내용은 참조 [를 설치 하 고는 VSX를 사용 하 여 DSL을 제거](#Installing)합니다.|
+|VSX (Visual Studio 확장명)|배포 하기 아주 간단 합니다. 복사 하 고 실행 합니다 **.vsix** DslPackage 프로젝트에서 파일입니다.<br /><br /> 자세한 내용은 참조 [를 설치 하 고는 VSX를 사용 하 여 DSL을 제거](#Installing)합니다.|
 |MSI (설치 관리자 파일)|-Visual Studio DSL 파일을 두 번 클릭 하 여 할 수 있습니다.<br />-대상 컴퓨터에서 DSL 파일 형식을 사용 하 여 아이콘을 연결합니다.<br />-DSL 파일 형식을 사용 하 여 XSD (XML 스키마)에 연결합니다. 이 파일은 Visual Studio에 로드 되 면 경고를 방지 합니다.<br /><br /> MSI를 만들려는 솔루션에는 설치 프로젝트를 추가 해야 합니다.<br /><br /> 자세한 내용은 [MSI 파일을 사용 하 여 DSL을 배포](#msi)합니다.|
 
 ## <a name="Installing"></a> 설치 하 고는 VSX를 사용 하 여 DSL을 제거 합니다.

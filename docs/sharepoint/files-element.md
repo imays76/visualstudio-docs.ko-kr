@@ -1,9 +1,6 @@
 ---
 title: 요소 파일 | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 37fc7bb582482f645fe5699196ca33d79304a5c3
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: e27e3192ec0d9a312c3cfc0a3521daf534c68e9a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327296"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922314"
 ---
 # <a name="files-element"></a>Files 요소
   기능 요소 파일 등의 SharePoint 프로젝트 항목 및 종속 비 SharePoint 프로젝트의 출력을 사용 하 여 배포할 파일을 지정 합니다.  
@@ -60,12 +57,10 @@ ms.locfileid: "36327296"
   
 |||  
 |-|-|  
-|**네임스페이스**|http<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
+|**Namespace**|http<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
 |**스키마 이름**|SharePoint 프로젝트 항목 스키마|  
 |**유효성 검사 파일**|ProjectItemModelSchema.xsd|  
 |**비어 있을 수 있습니다.**|아니요|  
   
 ## <a name="see-also"></a>참고자료
  [SharePoint 프로젝트 항목 스키마 참조](../sharepoint/sharepoint-project-item-schema-reference.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
 title: XMLNode 컨트롤
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cd047814f11b5fddad868bd65b84deba369facd5
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: f83d829ac5067d751cc035ac83c0fb3397178658
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258891"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927443"
 ---
 # <a name="xmlnode-control"></a>XMLNode 컨트롤
   **중요 한** Microsoft Word에 대 한이 항목의 설정 정보가 혜택 및 개인 및 United States 및 해당 지역 외부에 위치한는 또는 사용 하는 조직의 사용에 단독으로 표시 되었거나 개발 실행 되는 프로그램, Microsoft Word 2010 년 1 월, Microsoft 구현의 특정 기능을 제거 하는 경우 하기 전에 Microsoft에서 사용이 허가 된 제품에서에서 관련 된 사용자 지정 XML Microsoft Word입니다. Microsoft Word에 대 한이 정보를 읽거나 개인 이나 조직에서는 미국에 있는 Microsoft Word 2010 년 1 월 10 일 후 Microsoft에서 사용이 허가 된 제품에서 실행 되는 프로그램을 개발 하거나를 사용 하는 해당 지역에서 사용 될 수 있습니다. ; 이러한 제품 구매 및 미국 이외의 용도로 사용이 허가 된 날짜 이전에 사용이 허가 된 제품으로 동일한 작동 하지 않습니다.  
@@ -32,7 +29,7 @@ ms.locfileid: "35258891"
  <xref:Microsoft.Office.Tools.Word.XMLNode> 만 Word에서 요소 매핑을 제거 하 여 컨트롤을 삭제할 수 있습니다.  
   
 ## <a name="bind-data-to-the-control"></a>컨트롤에 데이터 바인딩  
- <xref:Microsoft.Office.Tools.Word.XMLNode> 컨트롤은 단순 데이터 바인딩을 지원 합니다. XML 노드를 사용 하 여 데이터 원본에 바인딩할 수 해야는 <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> 속성입니다. 바인딩된 데이터 집합의 데이터 업데이트 되 면는 <xref:Microsoft.Office.Tools.Word.XMLNode> 컨트롤이 변경 내용을 반영 합니다.  
+ <xref:Microsoft.Office.Tools.Word.XMLNode> 컨트롤은 단순 데이터 바인딩을 지원 합니다. XML 노드를 사용 하 여 데이터 원본에 바인딩할 수 해야는 <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> 속성입니다. 바인딩된 데이터 집합의 데이터가 업데이트되면 <xref:Microsoft.Office.Tools.Word.XMLNode> 컨트롤이 변경 내용을 반영합니다.  
   
 ## <a name="formatting"></a>서식  
  에 적용할 수 있는 형식 지정에 <xref:Microsoft.Office.Interop.Word.XMLNode> 개체에 적용할 수 있습니다는 <xref:Microsoft.Office.Tools.Word.XMLNode> 컨트롤입니다. 글꼴, 밑줄 스타일 및 스타일 문자 포함 됩니다.  
@@ -80,12 +77,10 @@ ms.locfileid: "35258891"
   
  경우에 동일한 차이점이 합니다 <xref:Microsoft.Office.Tools.Word.XMLNode.ContextLeave> 이벤트 및 <xref:Microsoft.Office.Tools.Word.XMLNode.Deselect> 이벤트입니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)   
  [확장 된 개체를 사용 하 여 Word 자동화](../vsto/automating-word-by-using-extended-objects.md)   
  [XMLNodes 컨트롤](../vsto/xmlnodes-control.md)   
  [방법: Word 문서에 XMLNode 컨트롤 추가](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)   
  [방법: Visual Studio 내부의 Word 문서에 스키마 매핑](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)   
  [호스트 항목 및 호스트 컨트롤의 프로그래밍 방식으로 제한 사항](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

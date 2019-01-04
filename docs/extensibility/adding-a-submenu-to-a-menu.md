@@ -1,9 +1,6 @@
 ---
 title: 하위 메뉴에 추가 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - context menus
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7af96fd1973b32587a217a1cd57ef0d99b0cd626
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 88a80b5a5c2d6bc5b96b88f74e8c6d7ff672c6a3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803009"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986598"
 ---
 # <a name="add-a-submenu-to-a-menu"></a>메뉴에 하위 메뉴를 추가 합니다.
 이 연습에서 데모 기반 [Visual Studio 메뉴 모음에 메뉴를 추가](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) 하위 메뉴를 추가 하는 방법을 표시 하 여 합니다 **TestMenu** 메뉴.

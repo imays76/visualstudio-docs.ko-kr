@@ -1,9 +1,6 @@
 ---
 title: Office 솔루션 보안 문제 해결
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 002759a1a5fd8a16ee3e7842df7439d6e6b9755f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 105e28398b3ee5119ba66e2a666856e9edd4755c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862933"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955661"
 ---
 # <a name="troubleshoot-office-solution-security"></a>Office 솔루션 보안 문제 해결
   이 항목에서는 Office 솔루션 보안 작업을 수행할 때 발생할 수 있는 일반적인 문제를 해결 하기 위한 팁을 포함 합니다.  
@@ -45,13 +42,11 @@ ms.locfileid: "49862933"
   배포 매니페스트의 위치 제한 된 사이트 영역에 할당 되 면 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 솔루션을 설치 하지 않습니다. 위치 라고 하 고 수 하는 경우 신뢰할 수 있는, 사용자 수 제한 된 사이트 영역에서 위치를 제거 하 고 솔루션을 설치 합니다. 영역을 관리 하는 방법에 대 한 자세한 내용은 [ClickOnce 신뢰할 수 있는 게시자 구성](http://go.microsoft.com/fwlink/?LinkId=94774)합니다.  
   
 ## <a name="solutions-cannot-be-installed-from-network-file-shares-or-web-locations-when-internet-explorer-enhanced-security-configuration-or-internet-explorer-7-is-installed"></a>Internet Explorer 7 또는 Internet Explorer 보안 강화 구성을 설치 하는 경우 네트워크 파일 공유 또는 웹 위치에서 솔루션을 설치할 수 없습니다.  
- Internet Explorer 향상 된 보안 구성 (IEESC) Windows Server 2003 이상 버전에서는 및 Internet Explorer 7 이상 크게 인터넷을 탐색 하는 사용자의 기능을 제한 합니다. 사용자가 네트워크 파일 공유 또는 웹 위치에서 Office 솔루션을 설치 하려고 하면 다음 오류 메시지가 발생할 수 있습니다. "인증서 사용 에대한배포매니페스트에서명하기때문에이응용프로그램에서사용자지정기능이작동하지것입니다*SolutionName* 를 신뢰할 수 없습니다. 관리자에 게 문의에 게 문의 합니다. "  
+ Internet Explorer 향상 된 보안 구성 (IEESC) Windows Server 2003 이상 버전에서는 및 Internet Explorer 7 이상 크게 인터넷을 탐색 하는 사용자의 기능을 제한 합니다. 사용자가 설치 하려고 하면 Office 솔루션에서 네트워크 파일 공유 또는 웹 위치에서 다음 오류 메시지가 발생할 수 있습니다. "인증서 사용에 대 한 배포 매니페스트에 서명 하기 때문에이 응용 프로그램에서 사용자 지정된 기능이 작동 하지 것입니다 *SolutionName* 를 신뢰할 수 없습니다. 관리자에 게 문의에 게 문의 합니다. "  
   
  IEESC 및 Internet Explorer 7 이상을 사용 하 여 배포 매니페스트의 URL은 인터넷 영역에서 분류 되며, 매니페스트 신뢰할 수 있는 게시자 인증서가 있어야 합니다. 또는 솔루션을 설치할 수 없습니다. Ieesc, 기본 동작은 신뢰 결정을 내리는 데 최종 사용자에 게 프롬프트입니다.  
   
  IEESC과 Internet Explorer 7의 효과 관리 하 고 이상 웹 사이트 및 범용 명명 규칙 (UNC) 경로 식별 하려면 신뢰 하 고 (로컬 인트라넷 이나 신뢰할 수 있는 사이트)의 신뢰할 수 있는 보안 영역 중 하나에 추가 합니다. 영역을 관리 하는 방법에 대 한 자세한 내용은 [신뢰할 수 있는 게시자 구성 ClickOnce](http://go.microsoft.com/fwlink/?LinkId=94774)합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Office 솔루션 보안](../vsto/securing-office-solutions.md)  
-  
-  

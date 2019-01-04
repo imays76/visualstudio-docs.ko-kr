@@ -1,13 +1,8 @@
 ---
 title: '방법: SharePoint 배포 명령 설정 | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -17,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 060acd0164ff7819d2abfb8d92f2394b4bcc0672
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 98aedc0c7fa557a45b43ab8344a49587b8febec1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119968"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920367"
 ---
-# <a name="how-to-set-sharepoint-deployment-commands"></a>방법: Set SharePoint 배포 명령
+# <a name="how-to-set-sharepoint-deployment-commands"></a>방법: SharePoint 배포 명령 설정
   배포 전 및 배포 후 명령을 설정 하 여 배포 프로세스를 사용자 지정할 수 있습니다. 이러한 명령은 Visual Studio에서 SharePoint 솔루션을 디버깅할 때 다른 배포 작업 전후에 실행 됩니다.  
   
 ### <a name="to-add-a-pre-deployment-command"></a>배포 전 명령을 추가 하려면  
@@ -47,6 +42,5 @@ ms.locfileid: "37119968"
   
      예를 들어, 배포가 완료 된 후에 디렉터리 콘텐츠를 나열 하려면 입력 **dir**합니다. 빌드 디렉터리에서 어셈블리를 복사 하는 MSBuild 변수를 사용 하려면 입력 **$ (targetpath) c:\DeploymentDirectory 복사**합니다.  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  [패키지 및 SharePoint 솔루션 배포](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

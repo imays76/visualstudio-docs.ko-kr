@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8aed2920e7be177fdbccc9b71796e58cf103e846
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 69884d3dd52f2aaab04dac8f32f18d286f5929af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057596"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828240"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>텍스트 템플릿에서 Visual Studio ModelBus 사용
 을 Visual Studio ModelBus 참조를 포함 하는 모델을 읽은 텍스트 템플릿을 작성 하는 경우에 액세스 대상 모델에 대 한 참조를 해결 하는 것이 좋습니다. 이 경우 텍스트 템플릿 및 참조 도메인 특정 언어 (Dsl)를 적용 해야 할 수도 있습니다.
@@ -181,7 +180,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 2. DSL 정의 다이어그램에서 위쪽에 없는 다이어그램의 빈 부분을 마우스 오른쪽 단추로 클릭 하 고 클릭 **Modelbus**합니다.
 
-   -   표시 되지 않으면 **Modelbus**를 다운로드 하 고 VMSDK ModelBus 확장을 설치 해야 합니다. VMSDK 사이트 찾기: [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579)합니다.
+   -   표시 되지 않으면 **Modelbus**를 다운로드 하 고 VMSDK ModelBus 확장을 설치 해야 합니다. VMSDK 사이트에서 찾으려면 [시각화 및 모델링 SDK](http://go.microsoft.com/fwlink/?LinkID=185579)합니다.
 
 3. 에 **Modelbus** 대화 상자에서 **이 Dsl을 ModelBus**를 클릭 하 고 **확인**합니다.
 
@@ -211,7 +210,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
     `<MefComponent>|T4ModelBusAdapter|</MefComponent>`
 
-7. 에 `T4ModelBusAdapter` 프로젝트에 대 한 참조를 추가 합니다: **Microsoft.VisualStudio.TextTemplating.Modeling.11.0**
+7. 에 `T4ModelBusAdapter` 프로젝트에 대 한 참조를 추가 합니다. **Microsoft.VisualStudio.TextTemplating.Modeling.11.0**
 
 8. Open T4ModelBusAdapter\AdapterManager.tt:
 

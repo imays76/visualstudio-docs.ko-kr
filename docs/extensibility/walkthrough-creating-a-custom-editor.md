@@ -1,9 +1,6 @@
 ---
 title: '연습: 사용자 지정 편집기 만들기 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - create
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9110e1c2ac6c39898f7dbbd6f9f4412ebcba278
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 8656f14f3a6c9cd52b73ac0fdd3573d008c7aa0e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497439"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847156"
 ---
 # <a name="walkthrough-create-a-custom-editor"></a>연습: 사용자 지정 편집기 만들기
 VSPackage 프로젝트 템플릿은 c + +에서 간단한 사용자 지정 편집기를 만들 수 있습니다. VSPackage 프로젝트 템플릿은 C# 또는 Visual Basic 프로젝트를 더 이상 지원합니다. 자세한 내용은 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)합니다.  
@@ -49,5 +46,5 @@ VSPackage 프로젝트 템플릿은 c + +에서 간단한 사용자 지정 편�
   
      편집기는 잘라내기 및 붙여넣기, 찾기 및 바꾸기, 및 오픈 로드 작업을 지원합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [VSPackage](../extensibility/internals/vspackages.md)

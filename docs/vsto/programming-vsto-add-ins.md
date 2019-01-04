@@ -1,9 +1,6 @@
 ---
 title: VSTO 추가 기능 프로그래밍
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.ProjectItem.Addin
@@ -35,15 +32,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 522a3cbac565e217f0b6525fb6288f5b79908a78
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b3520eb8af160a12de5cb74fa40094004e041c0e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674458"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830653"
 ---
 # <a name="program-vsto-add-ins"></a>VSTO 추가 기능 프로그래밍
-  VSTO 추가 기능을 만들어 Microsoft Office 응용 프로그램을 확장하는 경우 프로젝트의 `ThisAddIn` 클래스에 대해 직접 코드를 작성합니다. 이 클래스를 사용하여 Microsoft Office 호스트 응용 프로그램의 개체 모델 액세스, 응용 프로그램의 UI(사용자 인터페이스) 사용자 지정, 다른 Office 솔루션에 VSTO 추가 기능의 개체 표시 등의 작업을 수행할 수 있습니다.  
+  VSTO 추가 기능을 만들어 Microsoft Office 애플리케이션을 확장하는 경우 프로젝트의 `ThisAddIn` 클래스에 대해 직접 코드를 작성합니다. 이 클래스를 사용하여 Microsoft Office 호스트 애플리케이션의 개체 모델 액세스, 애플리케이션의 UI(사용자 인터페이스) 사용자 지정, 다른 Office 솔루션에 VSTO 추가 기능의 개체 표시 등의 작업을 수행할 수 있습니다.  
   
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
   
@@ -60,9 +57,9 @@ ms.locfileid: "35674458"
 >  Outlook에서는 기본적으로 VSTO 추가 기능이 언로드될 때 `ThisAddIn_Shutdown` 이벤트 처리기가 항상 호출되지는 않습니다. 자세한 내용은 [Office 프로젝트의 이벤트](../vsto/events-in-office-projects.md)합니다.  
   
 ### <a name="access-the-object-model-of-the-host-application"></a>호스트 응용 프로그램의 개체 모델 액세스  
- 호스트 응용 프로그램의 개체 모델에 액세스하려면 `Application` 클래스의 `ThisAddIn` 필드를 사용합니다. 이 필드는 호스트 응용 프로그램의 현재 인스턴스를 나타내는 개체를 반환합니다. 다음 표에서는 각 VSTO 추가 기능 프로젝트에서 `Application` 필드에 대한 반환 값의 형식을 보여 줍니다.  
+ 호스트 애플리케이션의 개체 모델에 액세스하려면 `Application` 클래스의 `ThisAddIn` 필드를 사용합니다. 이 필드는 호스트 애플리케이션의 현재 인스턴스를 나타내는 개체를 반환합니다. 다음 표에서는 각 VSTO 추가 기능 프로젝트에서 `Application` 필드에 대한 반환 값의 형식을 보여 줍니다.  
   
-|호스트 응용 프로그램|반환 값 형식|  
+|호스트 애플리케이션|반환 값 형식|  
 |----------------------|-----------------------|  
 |Microsoft Office Excel|<xref:Microsoft.Office.Interop.Excel.Application>|  
 |Microsoft Office InfoPath|<xref:Microsoft.Office.Interop.InfoPath.Application>|  
@@ -92,7 +89,7 @@ Dim newWorkbook As Excel.Workbook = Globals.ThisAddIn.Application.Workbooks.Add(
 Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.Type.Missing);  
 ```  
   
- 특정 Microsoft Office 응용 프로그램의 개체 모델에 대한 자세한 내용은 다음 항목을 참조하세요.  
+ 특정 Microsoft Office 애플리케이션의 개체 모델에 대한 자세한 내용은 다음 항목을 참조하세요.  
   
 -   [Excel 개체 모델 개요](../vsto/excel-object-model-overview.md)  
   
@@ -109,7 +106,7 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
 -   [Visio 개체 모델 개요](../vsto/visio-object-model-overview.md)  
   
 ###  <a name="AccessingDocuments"></a> Office 응용 프로그램을 시작할 때 문서 액세스  
- 일부 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] 응용 프로그램은 시작될 때 자동으로 문서를 열지 않고, [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 응용 프로그램은 시작될 때 문서를 열지 않습니다. 따라서 코드를 추가 하지는 `ThisAdd-In_Startup` 이벤트 처리기 코드는 문서를 열어야 하는 데 필요한 경우. 대신 사용자가 문서를 만들거나 열 때 Office 응용 프로그램에서 발생하는 이벤트에 해당 코드를 추가합니다. 이런 식으로 코드에서 작업을 수행하기 전에 문서가 열리도록 할 수 있습니다.  
+ 일부 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] 애플리케이션은 시작될 때 자동으로 문서를 열지 않고, [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 애플리케이션은 시작될 때 문서를 열지 않습니다. 따라서 코드를 추가 하지는 `ThisAdd-In_Startup` 이벤트 처리기 코드는 문서를 열어야 하는 데 필요한 경우. 대신 사용자가 문서를 만들거나 열 때 Office 애플리케이션에서 발생하는 이벤트에 해당 코드를 추가합니다. 이런 식으로 코드에서 작업을 수행하기 전에 문서가 열리도록 할 수 있습니다.  
   
  다음 코드 예제에서는 사용자가 문서를 만들거나 기존 문서를 여는 경우에만 Word에서 문서로 작업합니다.  
   
@@ -122,18 +119,18 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
 |작업|사용할 멤버|  
 |----------|-------------------|  
 |VSTO 추가 기능이 로드될 때 코드를 실행하여 VSTO 추가 기능을 초기화합니다.|`ThisAddIn_Startup` 메서드에 코드를 추가합니다. <xref:Microsoft.Office.Tools.AddInBase.Startup> 이벤트에 대한 기본 이벤트 처리기입니다. 자세한 내용은 [Office 프로젝트의 이벤트](../vsto/events-in-office-projects.md)합니다.|  
-|VSTO 추가 기능이 언로드되기 전에 코드를 실행하여 VSTO 추가 기능에서 사용된 리소스를 정리합니다.|`ThisAddIn_Shutdown` 메서드에 코드를 추가합니다. <xref:Microsoft.Office.Tools.AddInBase.Shutdown> 이벤트에 대한 기본 이벤트 처리기입니다. 자세한 내용은 [Office 프로젝트의 이벤트](../vsto/events-in-office-projects.md)합니다. **참고:** Outlook에서는 기본적으로는 `ThisAddIn_Startup` 이벤트 처리기에서 VSTO 추가 기능 로드 되지 경우 항상 호출 되지 않습니다. 자세한 내용은 [Office 프로젝트의 이벤트](../vsto/events-in-office-projects.md)합니다.|  
+|VSTO 추가 기능이 언로드되기 전에 코드를 실행하여 VSTO 추가 기능에서 사용된 리소스를 정리합니다.|`ThisAddIn_Shutdown` 메서드에 코드를 추가합니다. <xref:Microsoft.Office.Tools.AddInBase.Shutdown> 이벤트에 대한 기본 이벤트 처리기입니다. 자세한 내용은 [Office 프로젝트의 이벤트](../vsto/events-in-office-projects.md)합니다. **참고:**  Outlook에서는 기본적으로 VSTO 추가 기능이 언로드될 때 `ThisAddIn_Startup` 이벤트 처리기가 항상 호출되지는 않습니다. 자세한 내용은 [Office 프로젝트의 이벤트](../vsto/events-in-office-projects.md)합니다.|  
 |사용자 지정 작업창을 표시합니다.|`CustomTaskPanes` 필드를 사용합니다. 자세한 내용은 [사용자 지정 작업창](../vsto/custom-task-panes.md)합니다.|  
 |다른 Microsoft Office 솔루션에 VSTO 추가 기능의 개체를 표시합니다.|<xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> 메서드를 재정의합니다. 자세한 내용은 [다른 Office 솔루션에서 VSTO 추가 기능의 코드 호출](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)합니다.|  
-|확장성 인터페이스를 구현하여 Microsoft Office 시스템의 기능을 사용자 지정합니다.|<xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> 메서드를 재정의하여 인터페이스를 구현하는 클래스의 인스턴스를 반환합니다. 자세한 내용은 [확장성 인터페이스를 사용 하 여 UI 사용자 지정 기능](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)합니다. **참고:** 리본 UI를 사용자 지정 하려면 재정의할 수도 있습니다는 <xref:Microsoft.Office.Tools.AddInBase.CreateRibbonExtensibilityObject%2A> 메서드.|  
+|확장성 인터페이스를 구현하여 Microsoft Office 시스템의 기능을 사용자 지정합니다.|<xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> 메서드를 재정의하여 인터페이스를 구현하는 클래스의 인스턴스를 반환합니다. 자세한 내용은 [확장성 인터페이스를 사용 하 여 UI 사용자 지정 기능](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)합니다. **참고:**  리본 UI를 사용자 지정하려면 <xref:Microsoft.Office.Tools.AddInBase.CreateRibbonExtensibilityObject%2A> 메서드를 재정의할 수도 있습니다.|  
   
 ### <a name="understand-the-design-of-the-thisaddin-class"></a>ThisAddIn 클래스의 디자인 이해  
  [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]를 대상으로 하는 프로젝트에서 <xref:Microsoft.Office.Tools.AddIn> 은 인터페이스입니다. `ThisAddIn` 클래스는 <xref:Microsoft.Office.Tools.AddInBase> 클래스에서 파생됩니다. 이 기본 클래스는 해당 멤버에 대한 모든 호출을 <xref:Microsoft.Office.Tools.AddIn> 에서 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]인터페이스의 내부 구현으로 리디렉션합니다.  
   
- Outlook에서 VSTO 추가 기능 프로젝트에는 `ThisAddIn` 클래스에서 파생 되는 `Microsoft.Office.Tools.Outlook.OutlookAddIn` 클래스 및.NET Framework 3.5를 대상으로 하는 프로젝트에서 <xref:Microsoft.Office.Tools.Outlook.OutlookAddInBase> 대상으로 하는 프로젝트에서 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. 이러한 기본 클래스는 양식 영역을 지원하기 위해 몇 가지 추가 기능을 제공합니다. 양식 영역에 대 한 자세한 내용은 참조 하세요. [만들 Outlook 양식 영역](../vsto/creating-outlook-form-regions.md)합니다.  
+ Outlook의 VSTO 추가 기능 프로젝트에서 `ThisAddIn` 클래스는 .NET Framework 3.5를 대상으로 하는 프로젝트의 `Microsoft.Office.Tools.Outlook.OutlookAddIn` 클래스 및 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]를 대상으로 하는 프로젝트의 <xref:Microsoft.Office.Tools.Outlook.OutlookAddInBase>에서 파생됩니다. 이러한 기본 클래스는 양식 영역을 지원하기 위해 몇 가지 추가 기능을 제공합니다. 양식 영역에 대 한 자세한 내용은 참조 하세요. [만들 Outlook 양식 영역](../vsto/creating-outlook-form-regions.md)합니다.  
   
 ## <a name="customize-the-user-interface-of-microsoft-office-applications"></a>Microsoft Office 응용 프로그램의 사용자 인터페이스  
- VSTO 추가 기능을 사용하여 Microsoft Office 응용 프로그램의 UI를 프로그래밍 방식으로 사용자 지정할 수 있습니다. 예를 들어 리본을 사용자 지정하거나, 사용자 지정 작업창을 표시하거나, Outlook에서 사용자 지정 양식 영역을 만들 수 있습니다. 자세한 내용은 [Office UI 사용자 지정](../vsto/office-ui-customization.md)합니다.  
+ VSTO 추가 기능을 사용하여 Microsoft Office 애플리케이션의 UI를 프로그래밍 방식으로 사용자 지정할 수 있습니다. 예를 들어 리본을 사용자 지정하거나, 사용자 지정 작업창을 표시하거나, Outlook에서 사용자 지정 양식 영역을 만들 수 있습니다. 자세한 내용은 [Office UI 사용자 지정](../vsto/office-ui-customization.md)합니다.  
   
  Visual Studio는 사용자 지정 작업창, 리본 사용자 지정 및 Outlook 양식 영역을 만드는 데 사용할 수 있는 디자이너 및 클래스를 제공합니다. 이러한 디자이너 및 클래스를 사용하면 이러한 기능을 사용자 지정하는 프로세스를 간소화할 수 있습니다. 자세한 내용은 [사용자 지정 작업창](../vsto/custom-task-panes.md), [리본 디자이너](../vsto/ribbon-designer.md), 및 [만들려면 Outlook 양식 영역](../vsto/creating-outlook-form-regions.md)합니다.  
   
@@ -153,7 +150,5 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
  [연습: VBA에서 VSTO 추가 기능에서 코드 호출](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)   
  [확장성 인터페이스를 사용 하 여 UI 기능 사용자 지정](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)   
  [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)   
- [Vsto 추가 기능의 아키텍처](../vsto/architecture-of-vsto-add-ins.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [Office 솔루션에서 코드를 작성 합니다.](../vsto/writing-code-in-office-solutions.md)  
-  
-  

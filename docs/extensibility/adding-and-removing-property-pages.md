@@ -1,9 +1,6 @@
 ---
 title: 추가 하 고 속성 페이지를 제거 합니다. | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - property pages, adding
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c487eb6bafdc66c715bc9466ea6aafed2e78d6fe
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: e88154f2ea979f69ad8fd2f578282a0b24667a2d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077882"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885319"
 ---
 # <a name="add-and-remove-property-pages"></a>추가 하 고 속성 페이지를 제거 합니다.
 프로젝트 속성, 설정 및 리소스를 관리 하기 위한 중앙된 위치를 제공 하는 프로젝트 디자이너 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]합니다. 단일 창으로 표시 된 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE (통합 개발 환경) 및 오른쪽에서 왼쪽에 있는 탭을 통해 액세스 되는 창 수를 포함 합니다. 프로젝트 디자이너 (속성 페이지 라고도 함)는 창의 프로젝트 형식 및 언어에 따라 다릅니다. 프로젝트 디자이너를 사용 하 여 액세스할 수 있습니다 합니다 **속성** 명령 합니다 **프로젝트** 메뉴.  
@@ -208,5 +205,5 @@ ms.locfileid: "39077882"
 > [!NOTE]
 >  이 항목에서 제공 하는 모든 코드 예는에서 더 큰 예제의 부분 [VSSDK 샘플](http://aka.ms/vs2015sdksamples)합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [프로젝트 하위 형식](../extensibility/internals/project-subtypes.md)

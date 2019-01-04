@@ -1,9 +1,6 @@
 ---
 title: Excel 개체 모델 개요
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,12 +19,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: eb5b930df90f36395a22461ad0f26e82548afb6f
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 45ac85d47ace9c4ce1d954dff51ca4545d2cab35
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647527"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821771"
 ---
 # <a name="excel-object-model-overview"></a>Excel 개체 모델 개요
   Microsoft Office Excel을 사용하는 솔루션을 개발하려면 Excel 개체 모델에서 제공하는 개체와 상호 작용할 수 있습니다. 이 항목에서는 가장 중요한 개체를 소개합니다.  
@@ -69,7 +66,7 @@ ms.locfileid: "53647527"
   
  Excel 문서의 데이터는 구조화 수준이 높기 때문에 개체 모델이 계층적이고 간단합니다. Excel에서는 수백 개의 있는 상호 작용 하려는 개체를 제공 하지만 사용 가능한 개체의 작은 하위 집합에 집중 하 여 개체 모델의 좋은 출발을 가져올 수 있습니다. 이러한 개체에는 다음 네 가지가 있습니다.  
   
-- 응용 프로그램  
+- 애플리케이션  
   
 - 통합 문서  
   
@@ -123,5 +120,3 @@ ms.locfileid: "53647527"
 |[범위를 사용 하 여 작동 합니다.](../vsto/working-with-ranges.md)|범위와 관련된 일반적인 작업을 수행하는 방법을 보여 주는 예제를 제공합니다.|  
 |[워크시트 작업](../vsto/working-with-worksheets.md)|워크시트와 관련된 일반적인 작업을 수행하는 방법을 보여 주는 예제를 제공합니다.|  
 |[통합 문서를 사용 하 여 작동 합니다.](../vsto/working-with-workbooks.md)|통합 문서와 관련된 일반적인 작업을 수행하는 방법을 보여 주는 예제를 제공합니다.|  
-  
-  

@@ -1,9 +1,6 @@
 ---
 title: '연습: CheckBox 컨트롤을 사용 하 여 워크시트 서식 변경'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fae4a6cc21264e62c5a12db79c8a937f0a366314
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: adc12d920fd3dc128bf23f92508fef8d239b4e8d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843537"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935101"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>연습: CheckBox 컨트롤을 사용 하 여 워크시트 서식 변경
   이 연습에서는 Microsoft Office Excel 워크시트에서 확인란을 사용 하 여 서식을 변경 하려면의 기본 사항을 보여 줍니다. 만들고 프로젝트에 코드를 추가 하려면 Visual Studio에서 Office 개발 도구를 사용 합니다. 결과 전체 샘플을 보려면 Excel 컨트롤 샘플을 참조 하세요 [Office 개발 샘플 및 연습](../vsto/office-development-samples-and-walkthroughs.md)합니다.  
@@ -52,7 +49,7 @@ ms.locfileid: "49843537"
   
 ### <a name="to-create-a-new-project"></a>새 프로젝트를 만들려면  
   
-1.  이름으로 Excel 통합 문서 프로젝트를 만듭니다 **내 Excel 서식을**합니다. 했는지 **새 문서 만들기** 을 선택 합니다. 자세한 내용은 [방법: Visual Studio에서 만드는 Office 프로젝트](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
+1.  이름으로 Excel 통합 문서 프로젝트를 만듭니다 **내 Excel 서식을**합니다. 했는지 **새 문서 만들기** 을 선택 합니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
   
      Visual Studio 디자이너에서 새 Excel 통합 문서를 열고 사이트를 추가 합니다 **내 Excel 서식을** 프로젝트가 **솔루션 탐색기**.  
   
@@ -142,11 +139,11 @@ ms.locfileid: "49843537"
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#9](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#9)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#9)]  
   
-5.  C#에서는 확인란에 대 한 이벤트 처리기를 추가 해야 합니다 <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> 아래와 같이 이벤트입니다. 이벤트 처리기를 만드는 방법은 [방법: Office 프로젝트에서 이벤트 처리기 만들기](../vsto/how-to-create-event-handlers-in-office-projects.md)합니다.  
+5.  C#에서는 확인란에 대 한 이벤트 처리기를 추가 해야 합니다 <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> 아래와 같이 이벤트입니다. 이벤트 처리기를 만드는 방법에 대 한 정보를 참조 하세요. [방법: Office 프로젝트에서 이벤트 처리기 만들기](../vsto/how-to-create-event-handlers-in-office-projects.md)합니다.  
   
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#10)]  
   
-## <a name="test-the-application"></a>응용 프로그램 테스트  
+## <a name="test-the-application"></a>애플리케이션 테스트  
  이제 텍스트를 선택 하거나 확인란의 선택을 취소 하면 올바르게 형식이 되도록 통합 문서를 테스트할 수 있습니다.  
   
 ### <a name="to-test-your-workbook"></a>통합 문서를 테스트하려면  
@@ -163,8 +160,7 @@ ms.locfileid: "49843537"
 -   프로젝트를 배포 합니다. 자세한 내용은 [ClickOnce를 사용 하 여 Office 솔루션 배포](../vsto/deploying-an-office-solution-by-using-clickonce.md)합니다.  
 -   단추를 사용하여 텍스트 상자를 채웁니다. 자세한 내용은 [연습: 단추를 사용 하 여 워크시트에 텍스트 상자에 텍스트 표시](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Excel을 사용 하 여 연습](../vsto/walkthroughs-using-excel.md)   
  [NamedRange 컨트롤](../vsto/namedrange-control.md)   
  [Office 문서의 Windows Forms 컨트롤의 제한 사항](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
-  

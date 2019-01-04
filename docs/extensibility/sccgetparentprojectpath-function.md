@@ -1,9 +1,6 @@
 ---
 title: SccGetParentProjectPath 함수 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccGetParentProjectPath
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 828c72224655f404e88ac0913908ef293119ccb3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 21010d25642e81fd9155138c66feb301fe50582c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855159"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935166"
 ---
 # <a name="sccgetparentprojectpath-function"></a>SccGetParentProjectPath 함수
 이 함수는 지정된 된 프로젝트의 부모 프로젝트 경로 결정합니다. 이 함수는 사용자가 Visual Studio 프로젝트를 소스 제어에 추가할 때 호출 됩니다.  
@@ -95,7 +92,7 @@ SCCRTN SccGetParentProjectPath(
   
  레지스트리 항목 dword:00000001으로 설정 된 경우 Visual Studio는 이러한 새 함수를 사용 하지 및 이전 버전의 Visual Studio에서와 마찬가지로 소스 제어에 추가 하는 작업에서 작동 합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [원본 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)   
  [SccCreateSubProject](../extensibility/scccreatesubproject-function.md)   
  [SccGetProjPath](../extensibility/sccgetprojpath-function.md)

@@ -1,9 +1,6 @@
 ---
 title: Outlook 양식 영역의 사용자 지정 작업
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6b19b65c387e4ffc59108be71c143f130b347551
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 5f7268ed6801e06477312b47f2c890b59ba62f64
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441662"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869521"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Outlook 양식 영역의 사용자 지정 작업
   사용자가 Microsoft Office Outlook 항목에 응답할 수 있도록 단추를 표시 하는 작업입니다. 예를 들어, 메일 항목에 응답 하려면 사용자가 클릭 합니다 **회신**를 **전체 회신**, 또는 **앞으로** 작업 단추입니다. 이러한 각 작업을 새 메일 항목을 만들고 원래 항목의 정보를 사용 하 여 항목의 필드를 채웁니다.  
@@ -58,5 +55,3 @@ ms.locfileid: "53441662"
  [Outlook 양식 영역 만들기](../vsto/creating-outlook-form-regions.md)   
  [연습: Outlook 양식 영역 디자인](../vsto/walkthrough-designing-an-outlook-form-region.md)   
  [Outlook 메시지 클래스를 사용 하 여 양식 영역을 연결 합니다.](../vsto/associating-a-form-region-with-an-outlook-message-class.md)  
-  
-  

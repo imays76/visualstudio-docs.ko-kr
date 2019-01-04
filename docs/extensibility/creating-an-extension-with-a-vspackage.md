@@ -1,9 +1,6 @@
 ---
 title: Creating an Extension with VSPackage | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: c0cc5e08-4897-44f2-8309-e3478f1f999e
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50af15e1c15b5d0b6318c498923229778e8c0169
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 1060dda64fc402e69f7f87601a1643fbabed5507
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500776"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838413"
 ---
 # <a name="create-an-extension-with-a-vspackage"></a>VSPackage를 사용 하 여 확장 만들기
 이 연습에서는 VSIX 프로젝트를 만들고 VSPackage 프로젝트 항목을 추가 하는 방법을 보여 줍니다. 메시지 상자를 표시 하려면 UI 셸 서비스를 가져오려는 VSPackage 사용 됩니다.  

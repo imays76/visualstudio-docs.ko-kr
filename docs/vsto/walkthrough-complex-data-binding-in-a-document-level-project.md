@@ -1,9 +1,6 @@
 ---
 title: '연습: 문서 수준 프로젝트의 복합 데이터 바인딩'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6886908f01ceaeb36ed83ba0970ef250873d69c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5030db198ab253a417e770ec7dc022a99cfafbd8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841886"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964061"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>연습: 문서 수준 프로젝트의 복합 데이터 바인딩
   이 연습에서는 문서 수준 프로젝트에서 복잡 한 데이터 바인딩의 기본 사항을 보여 줍니다. Northwind SQL Server 데이터베이스의 필드에 Microsoft Office Excel 워크시트에서 여러 셀을 바인딩할 수 있습니다.  
@@ -58,7 +55,7 @@ ms.locfileid: "49841886"
   
 1.  이름의 Excel 통합 문서 프로젝트를 만듭니다 **복잡 한 데이터 바인딩 내**합니다. 마법사에서 선택 **새 문서 만들기**합니다.  
   
-     자세한 내용은 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)을 참조하세요.  
+     자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
   
      Visual Studio가 디자이너에서 새 Excel 통합 문서를 열고 추가 합니다 **복합 데이터 바인딩 내** 프로젝트가 **솔루션 탐색기**합니다.  
   
@@ -140,7 +137,7 @@ ms.locfileid: "49841886"
      [!code-csharp[Trin_VstcoreDataExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#10)]
      [!code-vb[Trin_VstcoreDataExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#10)]  
   
-## <a name="test-the-application"></a>응용 프로그램 테스트  
+## <a name="test-the-application"></a>애플리케이션 테스트  
  이제 목록 개체의 데이터를 조작할 수 있습니다 및 데이터가 예상 대로 나타나는지 확인 하려면 통합 문서를 테스트할 수 있습니다.  
   
 ### <a name="to-test-the-data-binding"></a>데이터 바인딩을 테스트 하려면  
@@ -226,9 +223,7 @@ ms.locfileid: "49841886"
   
 -   필드와 테이블 간 마스터/세부 관계를 만듭니다. 자세한 내용은 [연습: 캐시 된 데이터 집합을 사용 하 여 마스터-세부 관계를 만들고](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Office 솔루션의 컨트롤에 데이터 바인딩](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Office 솔루션의 데이터](../vsto/data-in-office-solutions.md)   
  [연습: 문서 수준 프로젝트의 단순 데이터 바인딩](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)  
-  
-  

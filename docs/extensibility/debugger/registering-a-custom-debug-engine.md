@@ -1,9 +1,6 @@
 ---
 title: 등록 사용자 지정 디버그 엔진 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, registering
@@ -13,18 +10,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c87b3749c2ea63e89e2e8fb0caf773434a38df2
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 493a3ee8ee6b4f1a5dd62bd205831b99b79ca48a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281392"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896099"
 ---
 # <a name="register-a-custom-debug-engine"></a>사용자 지정 디버그 엔진 등록
 디버그 엔진 해야 다음 COM 규칙 하는 클래스 팩터리로 자체 등록할 뿐만 아니라 Visual Studio 레지스트리 하위 키를 통해 Visual Studio를 사용 하 여 등록 합니다.  
   
 > [!NOTE]
->  일부분으로 빌드되는 TextInterpreter 샘플에서는 디버그 엔진을 등록 하는 방법의 예제를 찾을 수 있습니다 합니다 [자습서: ATL COM을 사용 하 여 디버그 엔진 구축](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)합니다.  
+>  일부분으로 빌드되는 TextInterpreter 샘플에서는 디버그 엔진을 등록 하는 방법의 예제를 찾을 수 있습니다는 [자습서: ATL COM을 사용 하 여 디버그 엔진 구축](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)합니다.  
   
 ## <a name="dll-server-process"></a>DLL 서버 프로세스  
  디버그 엔진은 일반적으로 설정 자체 DLL에서 COM 서버로 합니다. 따라서 디버그 엔진 Visual Studio에서 액세스 하려면 먼저 COM을 사용 하 여 해당 클래스 팩터리의 CLSID를 등록 해야 합니다. 그런 다음 디버그 엔진 등록 해야 자체 (라고도 메트릭으로) 속성을 설정 하려면 Visual Studio를 사용 하 여 디버그 엔진 지원 합니다. Visual Studio 레지스트리 하위 키를 기록 하는 메트릭 선택한 디버그 엔진을 지 원하는 기능에 따라 달라 집니다.  

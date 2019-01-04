@@ -1,9 +1,6 @@
 ---
 title: 프로젝트 디자인 하위 유형 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project subtypes, design
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9032da4a8884c940973865016bf0bbec955ebb5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9bf1b3f57fe82a4f5f6747c2667e0849f6ce6456
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876596"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858025"
 ---
 # <a name="project-subtypes-design"></a>프로젝트 하위 형식 디자인
 Microsoft Build Engine (MSBuild)을 기준으로 프로젝트를 확장 하는 Vspackage를 사용 하는 프로젝트 하위 형식 있습니다. 집계를 사용 하 여 다시 사용할 수 있습니다에서 구현 되는 관리 되는 코어 프로젝트 시스템의 대량 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 아직 여전히 특정 시나리오에 대 한 동작을 사용자 지정 합니다.  

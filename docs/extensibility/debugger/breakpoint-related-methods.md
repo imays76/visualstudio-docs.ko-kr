@@ -1,9 +1,6 @@
 ---
 title: 중단점 관련 메서드 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], breakpoint methods
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e7e823c5fef66077ba03d4cb9eec4367b79038db
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 4da8292d817649c83f26ebce4abe346e32624a93
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152146"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947285"
 ---
 # <a name="breakpoint-related-methods"></a>중단점 관련 메서드
 디버그 엔진 (DE)에 중단점 설정을 지원 해야 합니다. Visual Studio 디버깅 중단점의 형식을 지원 합니다.  
@@ -42,10 +39,10 @@ ms.locfileid: "39152146"
 |메서드|설명|  
 |------------|-----------------|  
 |[CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)|지정 된 결정 중단점 보류 중인 코드 위치에 바인딩할 수 있습니다.|  
-|[바인딩](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|바인딩할 지정 된 중단점 보류 중인 하나 이상의 코드 위치입니다.|  
+|[Bind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|바인딩할 지정 된 중단점 보류 중인 하나 이상의 코드 위치입니다.|  
 |[GetState](../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md)|보류 중인 중단점의 상태를 가져옵니다.|  
 |[GetBreakpointRequest](../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md)|보류 중인 중단점을 만드는 데 중단점 요청을 가져옵니다.|  
-|[사용 하도록 설정](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)|보류 중인 중단점의 활성화 상태를 토글합니다.|  
+|[Enable](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)|보류 중인 중단점의 활성화 상태를 토글합니다.|  
 |[EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)|보류 중인 중단점에서 바인딩된 모든 중단점을 열거 합니다.|  
 |[EnumErrorBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)|보류 중인 중단점에서 발생 하는 모든 오류 중단점을 열거 합니다.|  
 |[삭제](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|보류 중인 중단점 및에서 바인딩된 모든 중단점을 삭제 합니다.|  
@@ -59,7 +56,7 @@ ms.locfileid: "39152146"
 |[GetPendingBreakpoint](../../extensibility/debugger/reference/idebugboundbreakpoint2-getpendingbreakpoint.md)|중단점이 포함 된 보류 중인 중단점을 가져옵니다.|  
 |[GetState](../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)|바인딩된 중단점의 상태를 가져옵니다.|  
 |[GetBreakpointResolution](../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md)|중단점을 설명 하는 중단점 해상도를 가져옵니다.|  
-|[사용 하도록 설정](../../extensibility/debugger/reference/idebugboundbreakpoint2-enable.md)|사용 하거나 중단점을 사용 하지 않도록 설정 합니다.|  
+|[Enable](../../extensibility/debugger/reference/idebugboundbreakpoint2-enable.md)|사용 하거나 중단점을 사용 하지 않도록 설정 합니다.|  
 |[삭제](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md)|바인딩된 중단점을 삭제 합니다.|  
   
  확인 및 정보는 다음의 구현에 필요한 요청 [IDebugBreakpointResolution2](../../extensibility/debugger/reference/idebugbreakpointresolution2.md) 메서드.  
@@ -85,5 +82,5 @@ ms.locfileid: "39152146"
   
  메서드를 구현 해야 중단점의 소스 코드를 보면 [IDebugStackFrame2::GetDocumentContext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md) 의 메서드 및/또는 [IDebugStackFrame2::GetCodeContext](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [실행 제어 및 상태 평가](../../extensibility/debugger/execution-control-and-state-evaluation.md)

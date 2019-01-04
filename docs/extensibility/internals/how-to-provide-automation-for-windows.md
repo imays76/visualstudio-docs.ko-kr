@@ -1,9 +1,6 @@
 ---
 title: '방법: Windows에 대 한 자동화 제공 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK], tool windows
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9158ac7d133d30ae5fbca0281cbc55138e041f6
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: eb5fe307cd477f1c1a30b402cce05850a1a35ae1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510740"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841241"
 ---
-# <a name="how-to-provide-automation-for-windows"></a>방법: windows에 대 한 자동화 제공
+# <a name="how-to-provide-automation-for-windows"></a>방법: Windows에 대 한 자동화 제공
 문서 창과 도구에 대 한 자동화를 제공할 수 있습니다. 창에서 자동화 개체를 사용할 수 있도록 하 고 환경에 아직 때마다 자동화 끄 제공 작업 목록으로 바로 사용할 수 있는 자동화 개체를 제공 합니다.
 
 ## <a name="automation-for-tool-windows"></a>도구 창에 대 한 자동화
@@ -42,6 +39,6 @@ ms.locfileid: "39510740"
 
  편집기를 통해 검색할 VSPackage 관련 자동화 개체를 제공할 수 또한 합니다 <xref:EnvDTE.Document.Object%2A> 메서드를 구현 하 여는 `IVsExtensibleObject` 또는 `IExtensibleObject` 인터페이스입니다. 합니다 [VSSDK 샘플](http://aka.ms/vs2015sdksamples) RTF 문서 관련 자동화 개체를 제공 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
     
 <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject>

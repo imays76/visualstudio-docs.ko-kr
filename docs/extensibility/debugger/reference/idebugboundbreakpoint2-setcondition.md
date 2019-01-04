@@ -1,9 +1,6 @@
 ---
 title: IDebugBoundBreakpoint2::SetCondition | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugBoundBreakpoint2::SetCondition
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07512dbec66d3abd3c380629a32bd8468b253eb1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6d3e672b2a10445b5f5a6d26dd6182248fedc22d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882632"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944065"
 ---
 # <a name="idebugboundbreakpoint2setcondition"></a>IDebugBoundBreakpoint2::SetCondition
 설정 하거나이 바인딩된 중단점과 연결 된 조건을 변경 합니다.  
@@ -29,13 +26,13 @@ ms.locfileid: "49882632"
 ## <a name="syntax"></a>구문  
   
 ```cpp  
-HRESULT SetCondition(   
+HRESULT SetCondition(   
    BP_CONDITION bpCondition  
 );  
 ```  
   
 ```csharp  
-int SetCondition(   
+int SetCondition(   
    enum_BP_CONDITION bpCondition  
 );  
 ```  

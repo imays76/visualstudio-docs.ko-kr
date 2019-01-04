@@ -1,8 +1,7 @@
 ---
-title: 'CA2115: 네이티브 리소스를 사용하는 경우에는 GC.KeepAlive를 호출하십시오.'
+title: 'CA2115: 네이티브 리소스를 사용하는 경우에는 GC.KeepAlive를 호출하세요.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CallGCKeepAliveWhenUsingNativeResources
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 21777b19e488e60e68c11ccceaad779dcf4e94a3
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 1d1f7214ce570042d1cebdbf0ac75ffaf81b0ea1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546995"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849495"
 ---
-# <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115: 네이티브 리소스를 사용하는 경우에는 GC.KeepAlive를 호출하십시오.
+# <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115: 네이티브 리소스를 사용하는 경우에는 GC.KeepAlive를 호출하세요.
 
 |||
 |-|-|
@@ -65,7 +64,7 @@ ms.locfileid: "45546995"
 
 [!code-csharp[FxCop.Security.IntptrAndFinalize#1](../code-quality/codesnippet/CSharp/ca2115-call-gc-keepalive-when-using-native-resources_1.cs)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.GC.KeepAlive%2A?displayProperty=fullName>
 - <xref:System.IntPtr?displayProperty=fullName>

@@ -10,21 +10,20 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 104a74a38099286675a742ce9eea367d9eeabe84
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 449fb0c12b11163ba0ceca981e66a7da0c399e1c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944390"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950201"
 ---
 # <a name="boundsrules-constrain-shape-location-and-size"></a>BoundsRules로 모양 위치 및 크기 제한
 
-A *범위 규칙* 도형의 위치와 크기에 제한을 정의 하는 클래스입니다. 사용자가 셰이프 또는 모서리나 측면 도형의 끌고 동안 반복적으로 호출 되는 메서드를 제공 합니다.
+A *범위 규칙* 모양의 위치와 크기에 제한을 정의 하는 클래스입니다. 사용자가 셰이프 또는 모서리나 도형의 끌고 하는 동안 반복적으로 호출 되는 메서드를 제공 합니다.
 
-다음 예제에서는 직사각형의 고정 된 크기를 가로 또는 세로 막대 수를 제한 합니다. 사용자가 모서리나 측면을 끌면 개요의 너비와 높이의 두 가지 허용 된 구성 간의 대칭 이동 합니다.
+다음 예제에서는 사각형 셰이프 고정 크기를 가로 또는 세로 막대 수를 제한 합니다. 사용자 모서리나 끌면 윤곽선 사이의 너비 및 높이의 두 가지 허용 된 구성은 대칭 이동 합니다.
 
-범위 규칙 클래스에서 파생 <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules>합니다. 도형에 규칙의 인스턴스를 만듭니다.
+범위 규칙 클래스에서 파생 <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules>합니다. 셰이프의 규칙의 인스턴스를 만듭니다.
 
 ```csharp
 using Microsoft.VisualStudio.Modeling.Diagrams; ...
@@ -66,7 +65,7 @@ public class BarBoundsRule: BoundsRules
 } } }
 ```
 
-확인 하려는 경우 위치 및 크기 수 제한 합니다.
+확인 하려는 경우 위치 및 크기를 둘 다 수 제한 합니다.
 
 ## <a name="see-also"></a>참고자료
 

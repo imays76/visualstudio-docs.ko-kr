@@ -1,9 +1,6 @@
 ---
 title: 디버그 엔진을 사용자 지정 만들기 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, implementing
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ece2b480890054526552ad3aeea4f3bd1a437f74
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: fe3d22bc271366ba307510ea4b61ad6a1093c99d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203682"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852705"
 ---
 # <a name="create-a-custom-debug-engine"></a>사용자 지정 디버그 엔진 만들기
 디버그 엔진 (DE)는 구성 요소로, 특정 런타임 아키텍처를 디버깅할 수 있습니다. 일반적으로 런타임 환경 별로 하나의 DE 구현이입니다.  

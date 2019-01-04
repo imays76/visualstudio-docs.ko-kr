@@ -1,9 +1,6 @@
 ---
 title: 확장성 인터페이스를 사용 하 여 UI 기능 사용자 지정
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -23,12 +20,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 94ef77afa51e7cccb8f5aed18b1cf5ad0e1eaf1f
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 52da4aa630ef5cf6357b38aeb79ac78f882077e0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648893"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866662"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>확장성 인터페이스를 사용 하 여 UI 기능 사용자 지정
   Visual Studio의 Office 개발 도구에는 많은 구현 세부 사항을 처리하는 클래스와 디자이너가 제공되며, 이를 사용하여 VSTO 추가 기능에 사용자 지정 작업창, 리본 사용자 지정, Outlook 양식 영역을 만들 수 있습니다. 하지만 특별한 요구 사항이 있는 경우 각각의 기능에 대한 *확장성 인터페이스* 를 직접 구현할 수도 있습니다.  
@@ -43,9 +40,9 @@ ms.locfileid: "53648893"
  클래스 및 이러한 기능에 대 한 Visual Studio를 제공 하는 디자이너에 대 한 자세한 내용은 참조 하세요. [사용자 지정 작업창](../vsto/custom-task-panes.md)를 [리본 디자이너](../vsto/ribbon-designer.md), 및 [만들Outlook양식영역](../vsto/creating-outlook-form-regions.md).  
   
 ## <a name="extensibility-interfaces-you-can-implement-in-a-vsto-add-in"></a>VSTO 추가 기능에서 구현할 수 있는 확장성 인터페이스  
- 다음 표에는 구현할 수 있는 확장성 인터페이스와 이러한 인터페이스를 지원하는 응용 프로그램이 나와 있습니다.  
+ 다음 표에는 구현할 수 있는 확장성 인터페이스와 이러한 인터페이스를 지원하는 애플리케이션이 나와 있습니다.  
   
-|인터페이스|설명|응용 프로그램|  
+|인터페이스|설명|애플리케이션|  
 |---------------|-----------------|------------------|  
 |<xref:Microsoft.Office.Core.IRibbonExtensibility>|리본 UI를 사용자 지정하려면 이 인터페이스를 구현합니다. **참고:**  추가할 수는 **리본 (XML)** 기본값을 생성 하려면 프로젝트에 항목을 <xref:Microsoft.Office.Core.IRibbonExtensibility> VSTO 추가 기능에서 구현 합니다. 자세한 내용은 [Ribbon XML](../vsto/ribbon-xml.md)을 참조하세요.|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> InfoPath 2010<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> 프로젝트<br /><br /> Visio<br /><br /> 단어|  
 |<xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>|사용자 지정 작업창을 만들려면 이 인터페이스를 구현합니다.|Excel<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> 단어|  
@@ -86,5 +83,3 @@ ms.locfileid: "53648893"
  [다른 Office 솔루션에서 VSTO 추가 기능의 코드 호출](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
  [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [VSTO 추가 기능 아키텍처](../vsto/architecture-of-vsto-add-ins.md)  
-  
-  

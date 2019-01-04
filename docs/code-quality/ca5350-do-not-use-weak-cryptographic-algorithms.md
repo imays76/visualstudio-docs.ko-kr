@@ -1,8 +1,7 @@
 ---
-title: 'CA5350: 취약한 암호화 알고리즘 사용 안 함'
+title: 'CA5350: 취약한 암호화 알고리즘을 사용하지 마세요.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: 4c51bb8a-fcfa-46aa-ab61-634be84c4a7a
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba5e70505db86b1497e625b216da955bba677245
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 11c13b44c2f09075550dc5872ccf76d00aae4f6f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547856"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987287"
 ---
-# <a name="ca5350-do-not-use-weak-cryptographic-algorithms"></a>CA5350: 취약한 암호화 알고리즘 사용 안 함
+# <a name="ca5350-do-not-use-weak-cryptographic-algorithms"></a>CA5350: 취약한 암호화 알고리즘을 사용하지 마세요.
 
 |||
 |-|-|
@@ -47,7 +46,7 @@ ms.locfileid: "45547856"
 
 - TripleDES 암호화의 경우 <xref:System.Security.Cryptography.Aes> 암호화를 사용합니다.
 
-- SHA1 또는 RIPEMD160 해시 함수를 사용 합니다 [sha-2](/windows/desktop/SecCrypto/hash-and-signature-algorithms) 제품군 (예: <xref:System.Security.Cryptography.SHA512>를 <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).
+- SHA1 또는 RIPEMD160 해시 함수의 경우 [SHA-2](/windows/desktop/SecCrypto/hash-and-signature-algorithms) 제품군의 암호화(예: <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>)를 사용합니다.
 
 ## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
 

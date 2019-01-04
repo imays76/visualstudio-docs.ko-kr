@@ -1,9 +1,6 @@
 ---
 title: '방법: SharePoint 프로젝트 항목 확장에 바로 가기 메뉴 항목 추가 | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1a3e92d3131fb52342eb2d5ee10abd13a9dd005e
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 82f1d7e73683fe60052093d1c5434e1298d73261
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756047"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886691"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension"></a>방법: SharePoint 프로젝트 항목 확장에 바로 가기 메뉴 항목 추가
   프로젝트 항목 확장을 사용 하 여 기존 SharePoint 프로젝트 항목에 바로 가기 메뉴 항목을 추가할 수 있습니다. 메뉴 항목은 사용자의 프로젝트 항목을 마우스 오른쪽 단추로 클릭 하면 나타납니다 **솔루션 탐색기**합니다.  
@@ -37,7 +34,7 @@ ms.locfileid: "36756047"
   
 3.  에 <xref:Microsoft.VisualStudio.SharePoint.IMenuItem.Click> 새 이벤트 처리기 <xref:Microsoft.VisualStudio.SharePoint.IMenuItem> 개체, 사용자가 바로 가기 메뉴 항목을 클릭할 때 실행 하려는 작업을 수행 합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드 예제에서는 이벤트 수신기 프로젝트 항목에 바로 가기 메뉴 항목을 추가 하는 방법에 설명 합니다. 프로젝트 항목에 단추로 클릭할 때 **솔루션 탐색기** 가 합니다 **출력 창에 메시지 쓰기** 에 메시지를 표시 하는 메뉴 항목을 Visual Studio는 **출력**창.  
   
  [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#1](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemextensionmenu.vb#1)]
@@ -55,9 +52,8 @@ ms.locfileid: "36756047"
 ## <a name="deploy-the-extension"></a>확장 배포  
  확장 배포를 만들려면를 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 어셈블리 및 확장을 사용 하 여 배포 하려는 다른 파일에 대 한 패키지 (VSIX) 확장 합니다. 자세한 내용은 [Visual Studio에서 SharePoint 도구의 확장을 배포할](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)합니다.  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  [방법: SharePoint 프로젝트 항목 확장명 만들기](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)   
  [방법: SharePoint 프로젝트 항목 확장에 속성 추가](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)   
  [SharePoint 프로젝트 항목 확장](../sharepoint/extending-sharepoint-project-items.md)   
  [연습: SharePoint 프로젝트 항목 형식 확장](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)  
-  

@@ -1,9 +1,6 @@
 ---
 title: 공용 언어 런타임 및 식 평가 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7db25e563e2728d30ade9f4c7f2dc6faf659721b
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 9e6521f2e38044fc5a333228f5225e42853a42dd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204377"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959169"
 ---
 # <a name="common-language-runtime-and-expression-evaluation"></a>공용 언어 런타임 및 식 평가
 > [!IMPORTANT]
@@ -38,5 +35,5 @@ ms.locfileid: "39204377"
   
  CLR DE 식을 평가 하는 전용 EE를 호출 하는 경우는 DE SP를 바인더 개체 인터페이스를 사용 하 여 EE를 제공 합니다. 따라서 CLR 기반 디버그 엔진 수단을 쓰는 것이 적절 한 식 계산기 인터페이스를 구현 하는 데에 필요 CLR은 바인딩 및 기호를 처리를 담당 합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [CLR 식 계산기 작성](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

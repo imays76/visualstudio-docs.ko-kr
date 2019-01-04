@@ -3,7 +3,6 @@ title: TransactedReceiveScope 활동 디자이너-워크플로 디자이너
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.ServiceModel.Activities.TransactedReceiveScope.UI
 ms.assetid: 7ca93aad-4e83-4d81-90f4-998ee114d9b6
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a42c1cc9dac8e71bfe71f684232fdbf67fadb710
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e4860eb391f4aab0f15eaa0536b248140c1e5770
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929545"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914931"
 ---
 # <a name="transactedreceivescope-activity-designer"></a>TransactedReceiveScope 활동 디자이너
 
@@ -43,7 +42,7 @@ ms.locfileid: "49929545"
 |<xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A>|True|삭제를 <xref:System.ServiceModel.Activities.Receive> 활동을 **요청** activity designer 화면에는 블록입니다.|
 |<xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A>|False|삭제를 <xref:System.Activities.Activity> 에 **본문** activity designer 화면에서 차단 합니다.|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)

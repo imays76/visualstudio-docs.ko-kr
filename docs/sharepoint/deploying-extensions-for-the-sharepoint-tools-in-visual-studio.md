@@ -1,9 +1,6 @@
 ---
 title: Visual Studio에서 SharePoint 도구의 확장을 배포 합니다. | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c3bf20f945c40dd963820b1bf3f4032a2dd517ca
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 02e72a2991b5061459533cab9a3fbf213baa6b94
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295971"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880824"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Visual Studio에서 SharePoint 도구에 대 한 확장 배포
 
@@ -52,11 +49,11 @@ VSIX 프로젝트를 사용 하는 방법에 대 한 자세한 내용은 참조 
 
 작업할 수도 있습니다 추가 프로젝트를 사용 하 여 특정 형식의 확장:
 
--   확장에 의해 사용 되는 SharePoint 명령을 구현 하는 클래스 라이브러리 프로젝트. 이 시나리오를 보여 주는 연습을 참조 하세요 [연습: 웹 파트를 표시 하려면 서버 탐색기 확장](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)합니다.
+-   확장에 의해 사용 되는 SharePoint 명령을 구현 하는 클래스 라이브러리 프로젝트. 이 시나리오를 보여 주는 연습을 참조 하세요. [연습: 웹 파트를 표시 하려면 서버 탐색기 확장](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)합니다.
 
--   확장 프로그램에 SharePoint 프로젝트 항목의 새 형식을 정의 하는 경우 항목 템플릿 또는 프로젝트 템플릿을 만드는 프로젝트 템플릿 또는 항목 템플릿을 프로젝트입니다. 이 시나리오를 보여 주는 연습을 참조 하세요 [연습: 항목 템플릿, 1 부를 사용 하 여 사용자 지정 작업 프로젝트 항목을 만들어](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)합니다.
+-   확장 프로그램에 SharePoint 프로젝트 항목의 새 형식을 정의 하는 경우 항목 템플릿 또는 프로젝트 템플릿을 만드는 프로젝트 템플릿 또는 항목 템플릿을 프로젝트입니다. 이 시나리오를 보여 주는 연습을 참조 하세요. [연습: 항목 템플릿, 1 부를 사용 하 여 사용자 지정 작업 프로젝트 항목을 만들어](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)합니다.
 
--   확장 프로그램에 템플릿을 포함 하는 경우 항목 템플릿 또는 프로젝트 템플릿을 사용자 지정 마법사를 구현 하는 클래스 라이브러리 프로젝트. 이 시나리오를 보여 주는 연습을 참조 하세요 [연습: 항목 템플릿, 2 부를 사용 하 여 사용자 지정 작업 프로젝트 항목을 만들어](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)합니다.
+-   확장 프로그램에 템플릿을 포함 하는 경우 항목 템플릿 또는 프로젝트 템플릿을 사용자 지정 마법사를 구현 하는 클래스 라이브러리 프로젝트. 이 시나리오를 보여 주는 연습을 참조 하세요. [연습: 항목 템플릿, 2 부를 사용 하 여 사용자 지정 작업 프로젝트 항목을 만들어](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)합니다.
 
 동일한 Visual Studio 솔루션에서 모든 프로젝트를 포함 하는 경우에 클래스 라이브러리 프로젝트의 빌드 출력을 포함 하려면 VSIX 프로젝트에서 source.extension.vsixmanifest 파일을 수정할 수 있습니다.
 
@@ -219,8 +216,8 @@ Source.extension.vsixmanifest 파일에 다음 항목에 항목을 추가 해야
 |확장 형식|관련된 연습|
 |--------------------|--------------------------|
 |확장 프로그램 어셈블리에만 포함 하는 확장|[연습: SharePoint 프로젝트 항목 형식 확장](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)<br /><br /> [연습: SharePoint 프로젝트 확장명 만들기](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)<br /><br /> [연습: 서버 탐색기 확장의 SharePoint 클라이언트 개체 모델 호출](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)|
-|SharePoint 명령을 포함 하는 확장|[연습: SharePoint 프로젝트용 사용자 지정 배포 단계 만들기](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)<br /><br /> [연습: 웹 파트를 표시 하려면 서버 탐색기를 확장 합니다.](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)<br /><br /> [연습: 2 부 프로젝트 템플릿을 사용 하 여 사이트 열 프로젝트 항목 만들기](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)|
-|Visual Studio 템플릿을 포함 하는 확장|[연습: 항목 템플릿, 1 부를 사용 하 여 사용자 지정 작업 프로젝트 항목 만들기](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)<br /><br /> [연습: 프로젝트 템플릿 1 부를 사용 하 여 사이트 열 프로젝트 항목 만들기](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)|
+|SharePoint 명령을 포함 하는 확장|[연습: SharePoint 프로젝트용 사용자 지정 배포 단계 만들기](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)<br /><br /> [연습: 웹 파트를 표시 하려면 서버 탐색기 확장](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)<br /><br /> [연습: 2 부 프로젝트 템플릿을 사용 하 여 사이트 열 프로젝트 항목 만들기](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)|
+|Visual Studio 템플릿을 포함 하는 확장|[연습: 항목 템플릿, 1 부를 사용 하 여 사용자 지정 작업 프로젝트 항목 만들기](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)<br /><br /> [연습: 1 부 프로젝트 템플릿을 사용 하 여 사이트 열 프로젝트 항목 만들기](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)|
 |템플릿 마법사를 포함 하는 확장|[연습: 항목 템플릿, 2 부를 사용 하 여 사용자 지정 작업 프로젝트 항목 만들기](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)<br /><br /> [연습: 2 부 프로젝트 템플릿을 사용 하 여 사이트 열 프로젝트 항목 만들기](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)|
 
 ## <a name="create-vsix-packages-manually"></a>VSIX 패키지를 수동으로 만들기
@@ -267,7 +264,7 @@ SharePoint 도구 확장 프로그램에 대해 VSIX 패키지를 수동으로 �
 </PackageManifest>
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [SharePoint 프로젝트 시스템 확장](../sharepoint/extending-the-sharepoint-project-system.md)
 - [서버 탐색기에서 SharePoint 연결 노드 확장](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)

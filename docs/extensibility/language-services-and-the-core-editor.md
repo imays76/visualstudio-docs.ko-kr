@@ -1,9 +1,6 @@
 ---
 title: 언어 서비스 및 핵심 편집기 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - language services
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e7f439cf1564e14857b3a609191cc0bea05e0e04
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 9f3380545ce78defb57be8944881309ea2ab2990
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636241"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929905"
 ---
 # <a name="language-services-and-the-core-editor"></a>언어 서비스 및 핵심 편집기
 Visual Studio의 편집기는 언어 서비스를 사용 하 여 자주 연결 됩니다. 무엇 보다도 언어 서비스 구문 색 지정, 문 완성, IntelliSense 및 텍스트 서식 지정을 제공합니다.  
@@ -38,7 +35,7 @@ Visual Studio의 편집기는 언어 서비스를 사용 하 여 자주 연결 �
   
  핵심 편집기에 대 한 문서 데이터 개체를 텍스트 버퍼 라고 하며이 표현 된 <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> 개체입니다. 문서 보기 개체 텍스트 뷰 라고 하며이 표현 된 <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow> 개체입니다. 이러한 두 개체는 핵심 편집기의 통합된 보기를 제공 하도록 언어 서비스를 통해 함께 작동 합니다. 텍스트 버퍼 및 문서 창에 텍스트 뷰 표시의 정보는 코드 창을 호출 됩니다. 코드 창 문서 코드 창 관리자에 의해 관리 됩니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>   

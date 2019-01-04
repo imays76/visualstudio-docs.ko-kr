@@ -1,9 +1,6 @@
 ---
 title: 사용자 지정 편집기의 문서 데이터 및 문서 보기 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - document data and document view
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2076f1a6c96aea717470fa1e955e5b9786f7fcc5
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: d2af41600ed809259cd7512a7fc0a146047a37ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639817"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53818877"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>문서 데이터 및 사용자 지정 편집기의 문서 뷰
 사용자 지정 편집기를 두 부분으로 구성 됩니다: 문서 데이터 개체 및 문서 뷰 개체입니다. 이름으로 문서 데이터 개체에 표시할 텍스트 데이터를 나타냅니다. 마찬가지로, 문서 뷰 개체 (또는 "보기")에서 문서 데이터 개체를 표시 하는 하나 이상의 windows를 나타냅니다.  

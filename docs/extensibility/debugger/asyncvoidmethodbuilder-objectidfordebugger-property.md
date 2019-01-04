@@ -1,9 +1,6 @@
 ---
 title: AsyncVoidMethodBuilder.ObjectIdForDebugger 속성 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - ObjectIdForDbugger property, AsyncVoidMethodBuilder structure [.NET Framework debug engines]
@@ -13,17 +10,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf0f8acbfbdc129371d288d64cc48b3e4b0704ad
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 1d0c6d2e8fbe9a26a8d38351d0e6e423b1c0de5e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151485"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961369"
 ---
 # <a name="asyncvoidmethodbuilderobjectidfordebugger-property"></a>AsyncVoidMethodBuilder.ObjectIdForDebugger 속성
 고유 하 게 식별 하 고 디버거가이 작성기를 사용할 수 있는 개체를 가져옵니다.  
   
- **Namespace:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
+ **네임스페이스:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
   
  **어셈블리:** mscorlib (mscorlib.dll)  
   

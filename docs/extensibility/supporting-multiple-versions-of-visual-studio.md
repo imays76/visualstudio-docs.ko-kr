@@ -1,9 +1,6 @@
 ---
 title: 여러 버전의 Visual Studio 지원 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, supporting multiple versions
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3837116a33dc5608f75e48e3397273f65e5ea260
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8388bb28fc4504bee4fa8734adb1f6e690031600
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817992"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822906"
 ---
 # <a name="supporting-multiple-versions-of-visual-studio"></a>여러 버전의 Visual Studio 지원
 용어 *side-by-side-* 설치 하 고 동일한 컴퓨터에서 제품의 여러 버전을 유지 관리할 수 있는 것을 의미 합니다. Vspackage, 즉,는 사용자는 동일한 컴퓨터에 설치 하는 몇 가지 Visual Studio 버전을 가질 수 있습니다. 그러나 단일 버전의 Visual Studio에 로드 하 여 Vspackage의 side-by-side-버전 수는 없습니다.  

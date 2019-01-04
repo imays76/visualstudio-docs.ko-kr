@@ -1,9 +1,6 @@
 ---
 title: Essentials 서비스 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - services, essentials
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26bfa7ce51249adc883415d09689ed390b7dfabc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3428deeaf0e9cdc2aa926f5b1ff17b5030540f2b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934407"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867279"
 ---
 # <a name="service-essentials"></a>서비스 필수 항목
 서비스는 두 Vspackage 간의 계약입니다. 하나의 VSPackage를 사용 하는 다른 VSPackage에 대 한 인터페이스의 특정 집합을 제공 합니다. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 다른 Vspackage에 서비스를 제공 하는 Vspackage의 컬렉션인 됩니다.  

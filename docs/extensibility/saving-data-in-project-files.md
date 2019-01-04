@@ -1,9 +1,6 @@
 ---
 title: 프로젝트 파일에 데이터 저장 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - data [Visual Studio], saving in project files
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: adc7d06b8479da4aef7042fd64702cff5ca3be60
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 090040f616cdfbc68ecaf8f35c315bf70ccf5bb6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900659"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820136"
 ---
 # <a name="save-data-in-project-files"></a>프로젝트 파일에서 데이터를 저장 합니다.
 프로젝트 하위 형식 저장 하 고 프로젝트 파일에서 하위 형식의 특정 데이터를 검색할 수 있습니다. 관리 패키지 프레임 워크 (MPF)는이 작업을 수행 하는 두 가지 인터페이스를 제공 합니다.  

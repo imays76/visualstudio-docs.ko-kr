@@ -1,8 +1,6 @@
 ---
 title: 프로젝트 속성 사용자 인터페이스 | Microsoft Docs
 ms.date: 03/22/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project properties [Visual Studio], user interface
@@ -14,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4fdaeb87966f051c134d7c2d2354c0f5a3e725da
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 56e2045459af33e04c728cf5e8324c44a35b6774
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495859"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874059"
 ---
 # <a name="project-property-user-interface"></a>프로젝트 속성 사용자 인터페이스
 프로젝트 하위 형식 프로젝트에서 항목을 사용할 수 있습니다 **속성 페이지** 대화 상자 기본 프로젝트에서 제공 되기 때문 숨기기 또는 제공 하 고, 읽기 전용 컨트롤 및 전체 페이지를 확인 또는 프로젝트 하위 형식의 특정 페이지를 추가할**속성 페이지** 대화 상자.

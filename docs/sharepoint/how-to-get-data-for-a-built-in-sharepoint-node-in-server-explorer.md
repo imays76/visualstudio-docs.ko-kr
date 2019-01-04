@@ -1,9 +1,6 @@
 ---
 title: '방법: 서버 탐색기에서 기본 제공 SharePoint 노드에 대 한 데이터를 가져올 | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,17 +13,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 06965449cd07fb39480eb1974fc1c90e2d126c73
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e9ef30de63789072f021aaded87dd5e9c8071637
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119818"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898975"
 ---
 # <a name="how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer"></a>방법: 서버 탐색기에서 기본 제공 SharePoint 노드에 대 한 데이터 가져오기
   각 기본 제공 SharePoint 노드에 대 한 **서버 탐색기**, 노드에서 나타내는 기본 SharePoint 구성 요소에 대 한 데이터를 가져올 수 있습니다. 자세한 내용은 [서버 탐색기에서 SharePoint 연결 노드 확장](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드 예제에는 목록 노드를 나타내는 기본 SharePoint 목록에 대 한 데이터를 가져오는 방법을 보여 줍니다 **서버 탐색기**합니다. 기본적으로 노드 목록에는 **브라우저에서 보기** 목록을 웹 브라우저에서 열기 위해 클릭할 수 있는 상황에 맞는 메뉴 항목입니다. 추가 하 여 목록 노드를 확장 하는이 예제는 **Visual Studio에서 보기** 목록은 Visual Studio에서 직접 열리는 상황에 맞는 메뉴 항목입니다. Visual Studio에서 열 목록의 URL을 가져오려면 노드에 대 한 목록 데이터를 액세스 하는 코드입니다.  
   
  [!code-vb[SPExtensibility.ProjectSystemExtension.General#10](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextensionnodeinfo.vb#10)]
@@ -55,4 +52,3 @@ ms.locfileid: "37119818"
  [방법: 서버 탐색기에서 SharePoint 노드 확장](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)   
  [SharePoint 프로젝트 서비스 사용](../sharepoint/using-the-sharepoint-project-service.md)   
  [Visual Studio에서 SharePoint 도구에 대 한 확장 배포](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
-  

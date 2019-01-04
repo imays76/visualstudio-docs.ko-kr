@@ -1,9 +1,6 @@
 ---
 title: '연습: 시작 페이지 사용자 지정 XAML 추가 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - custom start page
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0b6d095ad9fb45d5cc9bd8979a267cb2ccf961f
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: c792f999164c08d3a723a16872df66e69197fe16
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495624"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929603"
 ---
 # <a name="walkthrough-add-custom-xaml-to-the-start-page"></a>연습: 시작 페이지 사용자 지정 XAML 추가
 이 연습에서는 사용자 지정 Visual Studio 시작 페이지를 만들려면 웹 브라우저를 포함 하는 방법을 보여 줍니다.  
@@ -89,8 +86,8 @@ ms.locfileid: "46495624"
 1.  **도구 / 옵션 / 환경**를 선택 **시작**합니다. 에 **시작 페이지 사용자 지정** 목록에서 프로그램 *.xaml* 파일을 마우스 오른쪽 단추로 **확인**합니다.  
   
 ## <a name="next-steps"></a>다음 단계  
- 이제 Visual Studio 시작 페이지는 웹 브라우저 탭 및 MyButton 탭을 표시 하는 탭을 있습니다. 사용 하 여 다른 기능을 포함 하는 사용자 지정 시작 페이지를 만들 수는 *코드 숨김* 모델에 표시 된 대로 사용자 지정.dll을 추가할 [시작 페이지에 사용자 정의 컨트롤 추가](../extensibility/adding-user-control-to-the-start-page.md)합니다. 결과.vsix 파일을 게시 하 여 다른 사용자와 사용자 지정 시작 페이지를 공유할 수 있습니다 합니다 [Visual Studio 갤러리](http://go.microsoft.com/fwlink/?LinkID=123847) 웹 사이트 또는 다른 웹 사이트 또는 네트워크 공유 합니다. 자세한 내용은 [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md)합니다.  
+ 이제 Visual Studio 시작 페이지는 웹 브라우저 탭 및 MyButton 탭을 표시 하는 탭을 있습니다. 사용 하 여 다른 기능을 포함 하는 사용자 지정 시작 페이지를 만들 수는 *코드 숨김* 모델에 표시 된 대로 사용자 지정.dll을 추가할 [시작 페이지에 사용자 정의 컨트롤 추가](../extensibility/adding-user-control-to-the-start-page.md)합니다. 결과.vsix 파일을 게시 하 여 다른 사용자와 사용자 지정 시작 페이지를 공유할 수 있습니다 합니다 [Visual Studio 갤러리](http://go.microsoft.com/fwlink/?LinkID=123847) 웹 사이트 또는 다른 웹 사이트 또는 네트워크 공유 합니다. 자세한 내용은 [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md)을 참조하세요.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [시작 페이지 사용자 지정](../ide/customizing-the-start-page-for-visual-studio.md)   
  [WPF 컨테이너 컨트롤](https://msdn.microsoft.com/library/a0177167-d7db-4205-9607-8ae316952566)

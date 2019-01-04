@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7b486cec0808f6d0b98770cf354e27054f27ebdd
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: b70a7442440a7d7604c226f9b8ae8bc7fc3c4cb1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966624"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886568"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>도메인별 언어 탐색기 작업
 합니다 **DSL 탐색기** 트리 보기에서 여러 종류의 정보를 표시 합니다. 대부분의 DSL 탐색기에서 항목에 대 한 자세한 내용은 참조 하세요. [도메인별 언어 정의 방법](../modeling/how-to-define-a-domain-specific-language.md)합니다.

@@ -1,9 +1,6 @@
 ---
 title: Vspackage에서 사용자 인터페이스 요소를 추가 하는 방법 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - user interfaces, adding elements
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b498f9df752fd5ac1f1212649aa5b8bb62d27fb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 40e3d5266b69419e719c5de7a003e642e8016614
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839117"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962690"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Vspackage에서 사용자 인터페이스 요소를 추가 하는 방법
 VSPackage 예제에서는, 메뉴, 도구 모음에 대 한 사용자 인터페이스 (UI) 요소를 추가 하 고 windows를 이용 하 여 Visual Studio 도구를 *.vsct* 파일입니다.  
@@ -195,7 +192,7 @@ priority="0x0100" type="Menu">
 |-------------| - | - | - |  
 |그룹화|[Groups 요소](../../extensibility/groups-element.md), IDE, 다른 Vspackage|메뉴, 그룹 자체 항목|메뉴, 그룹 및 명령|  
 |메뉴|[Menus 요소](../../extensibility/menus-element.md), IDE, 다른 Vspackage|1 ~ *n* 그룹|0 *n* 그룹|  
-|Toolbar|[Menus 요소](../../extensibility/menus-element.md), IDE, 다른 Vspackage|항목과|0 *n* 그룹|  
+|ToolBar|[Menus 요소](../../extensibility/menus-element.md), IDE, 다른 Vspackage|항목과|0 *n* 그룹|  
 |메뉴 항목|[Buttons 요소](../../extensibility/buttons-element.md), IDE, 다른 Vspackage|1 ~ *n* 항목과 그룹|-0 *n* 그룹|  
 |단추|[Buttons 요소](../../extensibility/buttons-element.md), IDE, 다른 Vspackage|1 ~ *n* 항목과 그룹||  
 |콤보|[Combos 요소](../../extensibility/combos-element.md), IDE, 다른 Vspackage|1 ~ *n* 항목과 그룹||  

@@ -1,9 +1,6 @@
 ---
 title: 프로젝트 형식 만들기 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project types, new
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a453e8ed6c59f242e8a3aadbf056f956aedcaca
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: d80dd7fcaa75b5090145821307dfe7def28afbc1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499918"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987410"
 ---
 # <a name="create-project-types"></a>프로젝트 형식 만들기
 확장할 수 있습니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 새 프로젝트 형식을 만들어 합니다. 새 프로젝트 형식을 만들려면 몇 가지 개념을 이해 하 고 다양 한 단계를 완료 해야 합니다. 다음 항목에서는 프로젝트 유형을 만드는 방법의 개요를 제공 합니다.  

@@ -1,9 +1,6 @@
 ---
 title: IPropertyProxyProvider | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IPropertyProxyProvider
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6d983027a88fd0e116abc7e284eb890eb33261a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f12925c362d3c87b6eb6724c28936333519e844f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124780"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877100"
 ---
 # <a name="ipropertyproxyprovider"></a>IPropertyProxyProvider
-이 인터페이스에서 보고 한 개체의 데이터를 변경 하는 프록시 인터페이스를 제공 합니다.  
+이 인터페이스는 보기 및 개체의 데이터를 변경 하는 프록시 인터페이스를 제공 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -32,9 +29,9 @@ IPropertyProxyProvider : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>구현자 참고 사항  
- 식 계산기 (EE) 구현 하는 동일한 개체에서이 인터페이스를 구현 하는 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) 형식 시각화 도우미는 EE 지원의 일부로 인터페이스입니다.  
+ 식 계산기 (EE) 구현 하는 동일한 개체에서이 인터페이스를 구현 합니다 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) 형식 시각화 도우미는 EE 지원의 일부로 인터페이스.  
   
-## <a name="notes-for-callers"></a>호출자에 대 한 참고 사항  
+## <a name="notes-for-callers"></a>호출자에 대 한 정보  
  호출 [QueryInterface](/cpp/atl/queryinterface) 에 `IDebugProperty3` 인터페이스가이 인터페이스를 가져올 수 있습니다.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드  
@@ -42,20 +39,20 @@ IPropertyProxyProvider : IUnknown
   
 |메서드|설명|  
 |------------|-----------------|  
-|[GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)|개체에 데이터를 볼 수 있는 속성 프록시 인터페이스를 검색 합니다.|  
+|[GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)|개체에서 데이터를 보려면 속성 프록시 인터페이스를 검색 합니다.|  
   
 ## <a name="remarks"></a>설명  
- EE 구현이 인터페이스를 구현 하지만 [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) 에서 일반적으로 처리는 [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md)합니다. 참조 [Visualizing 및 데이터 보기](../../../extensibility/debugger/visualizing-and-viewing-data.md) IEEVisualizerService 인터페이스를 얻는 방법에 대 한 세부 정보에 대 한 합니다.  
+ EE 구현의이 인터페이스를 구현 하지만 [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) 에서 일반적으로 처리 됩니다 [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md)합니다. 참조 [시각화 및 데이터 보기](../../../extensibility/debugger/visualizing-and-viewing-data.md) IEEVisualizerService 인터페이스를 얻는 방법에 대 한 세부 정보에 대 한 합니다.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>참고 항목  
- [코어 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Core 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)   
  [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md)   
- [사용자 지정 뷰어와 형식 시각화 도우미](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)   
+ [형식 시각화 도우미 및 사용자 지정 뷰어](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)   
  [데이터 시각화 및 보기](../../../extensibility/debugger/visualizing-and-viewing-data.md)
