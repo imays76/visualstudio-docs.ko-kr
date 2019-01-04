@@ -1,9 +1,6 @@
 ---
 title: 디버깅을 위한 SDK 도우미 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - dbgmetric.lib
@@ -17,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d352e22b95540cfc1901eb214c2d5180b6024f27
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6655b96ed51cd7cce5e94ce96cedf97517f1872a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821528"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942413"
 ---
 # <a name="sdk-helpers-for-debugging"></a>디버깅을 위한 SDK 도우미
 이러한 함수와 선언은 c + +에서 디버그 엔진, 식 계산기 및 기호 공급자를 구현 하는 것에 대 한 전역 도우미 함수입니다.  
@@ -160,7 +157,7 @@ HRESULT EnumMetricSections(
 ## <a name="metric-definitions"></a>메트릭 정의  
  미리 정의 된 메트릭 이름에 대 한 이러한 정의 사용할 수 있습니다. 와이드 문자 문자열로 정의 된 모든 다양 한 레지스트리 키 및 값 이름에 해당 하는 이름을: 예를 들어 `extern LPCWSTR metrictypeEngine`합니다.  
   
-|미리 정의 된 메트릭 종류|설명:에 대 한 기본 키...|  
+|미리 정의 된 메트릭 종류|설명: 에 대 한 기본 키를 하는 중...|  
 |-----------------------------|---------------------------------------|  
 |metrictypeEngine|모든 디버그 엔진 메트릭.|  
 |metrictypePortSupplier|모든 포트 공급자 메트릭입니다.|  
@@ -179,7 +176,7 @@ HRESULT EnumMetricSections(
 |metricDataBP|로의 데이터에서 변경 중단점 설정에 대 한 지원을 나타내는 데 0이 아닌 값입니다.|  
 |metricDisassembly|디스어셈블리 목록에 대 한 지원을 나타내는 데 0이 아닌 값으로 설정 합니다.|  
 |metricDumpWriting|로 설정 (의 덤프를 출력 장치로 메모리)를 작성 하는 덤프에 대 한 지원을 나타내는 데 0이 아닌 값입니다.|  
-|metricENC|편집 하며 계속 하기 지원을 나타내는 데 0이 아닌 값으로 설정 합니다. **참고:** 사용자 지정 디버그 엔진을이 설정 안 또는 0을 항상 설정 해야 합니다.|  
+|metricENC|편집 하며 계속 하기 지원을 나타내는 데 0이 아닌 값으로 설정 합니다. **참고:**  사용자 지정 디버그 엔진을이 설정 안 또는 0을 항상 설정 해야 합니다.|  
 |metricExceptions|로 예외에 대 한 지원을 나타내는 데 0이 아닌 값입니다.|  
 |metricFunctionBP|로 명명 된 중단점 (특정 함수 이름의 호출 될 때 중단 되는 중단점)에 대 한 지원을 나타내는 데 0이 아닌 값입니다.|  
 |metricHitCountBP|로 설정 "지점 hit" 중단점 (특정 횟수 만큼 적중 된 후에 트리거되는 중단점)의 설정에 대 한 지원을 나타내는 데 0이 아닌 값입니다.|  
@@ -194,7 +191,7 @@ HRESULT EnumMetricSections(
 |metricAlwaysLoadProgramProviderLocal|이 해야 함을 나타내려면 프로그램 공급자 항상 로드 로컬로에 0이 아닌 값으로 설정 합니다.|  
 |metricEngineCanWatchProcess|이 설정 디버그 엔진 프로그램 공급자 대신 이벤트 처리에 대 한 감시를 나타내려면 0이 아닌 합니다.|  
 |metricRemoteDebugging|이 설정 원격 디버깅에 대 한 지원을 나타내는 데 0이 아닌 합니다.|  
-|metricEncUseNativeBuilder|편집 하며 계속 하기에 대 한 빌드를 편집 및 계속 관리자에는 디버그 엔진의 encbuild.dll 사용 해야 함을 나타내려면 0이 아닌 값으로 설정 합니다. **참고:** 사용자 지정 디버그 엔진을이 설정 안 또는 0을 항상 설정 해야 합니다.|  
+|metricEncUseNativeBuilder|편집 하며 계속 하기에 대 한 빌드를 편집 및 계속 관리자에는 디버그 엔진의 encbuild.dll 사용 해야 함을 나타내려면 0이 아닌 값으로 설정 합니다. **참고:**  사용자 지정 디버그 엔진을이 설정 안 또는 0을 항상 설정 해야 합니다.|  
 |metricLoadUnderWOW64|64 비트 프로세스를 디버깅 하는 경우 wow 디버기 프로세스에 디버그 엔진을 로드 해야는 나타내려면 0이 아닌 값으로 설정 그렇지 않으면 디버그 엔진 (WOW64에서 실행 되 고)는 Visual Studio 프로세스에서 로드 됩니다.|  
 |metricLoadProgramProviderUnderWOW64|이 값을 설정 해야 함을 나타내려면 프로그램 공급자는 디버기 프로세스에 로드 된 wow; 64 비트 프로세스를 디버깅 하는 경우에 0이 아닌 값 그렇지 않은 경우 Visual Studio 프로세스에서 로드 됩니다.|  
 |metricStopOnExceptionCrossingManagedBoundary|이 설정 관리/비관리 코드 간에 예외가 throw 되 면 프로세스를 중지 해야 함을 나타내려면 0이 아닌 합니다.|  
@@ -266,7 +263,7 @@ HRESULT EnumMetricSections(
 |-----------------|-----------------|  
 |*[레지스트리 키]*|`HKEY_CURRENT_USER` 또는 `HKEY_LOCAL_MACHINE`|  
 |*[버전 root]*|Visual Studio 버전 (예를 들어 `7.0`, `7.1`, 또는 `8.0`). 그러나이 루트 수정할 수도 있습니다를 사용 하는 **/rootsuffix** 전환할 **devenv.exe**합니다. VSIP,이 한정자는 일반적으로 **Exp**이므로 버전 루트 것, 예를 들어 8.0Exp 합니다.|  
-|*[메트릭 root]*|이 값은 `AD7Metrics` 또는 `AD7Metrics(Debug)`dbgmetric.lib의 디버그 버전 사용 여부에 따라 합니다. **참고:** 디버그와 릴리스 간에 차이가 있을 경우이 명명 규칙을 따라야 dbgmetric.lib 사용 여부 버전 레지스트리에서 반영 되어야 합니다.|  
+|*[메트릭 root]*|이 값은 `AD7Metrics` 또는 `AD7Metrics(Debug)`dbgmetric.lib의 디버그 버전 사용 여부에 따라 합니다. **참고:**  디버그와 릴리스 간에 차이가 있을 경우이 명명 규칙을 따라야 dbgmetric.lib 사용 여부 버전 레지스트리에서 반영 되어야 합니다.|  
 |*[메트릭 유형]*|쓸 메트릭 형식: `Engine`하십시오 `ExpressionEvaluator`, `SymbolProvider`등. 이러한 모든과 같이 정의 되어으로 dbgmetric.h `metricTypeXXXX`여기서 `XXXX` 특정 형식 이름입니다.|  
 |*[메트릭]*|메트릭을 설정 하기 위해 값을 할당할 수는 항목의 이름입니다. 메트릭의 실제 조직의 메트릭 유형에 따라 달라 집니다.|  
 |*[메트릭 값]*|메트릭을 할당할 값입니다. 값 (문자열, 숫자 등) 있어야 합니다. 형식 메트릭에 따라 달라 집니다.|  

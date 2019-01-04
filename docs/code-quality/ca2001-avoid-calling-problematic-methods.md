@@ -1,8 +1,7 @@
 ---
-title: 'CA2001: 문제가 있는 메서드는 호출하지 마십시오.'
+title: 'CA2001: 문제가 있는 메서드는 호출하지 마세요.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2001
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ef7daf2cdf6ee27863f8239999a436f17a5d6866
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: f9e66a7c535ec83ac176700dbae8ee58fbf04135
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176943"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958789"
 ---
-# <a name="ca2001-avoid-calling-problematic-methods"></a>CA2001: 문제가 있는 메서드는 호출하지 마십시오.
+# <a name="ca2001-avoid-calling-problematic-methods"></a>CA2001: 문제가 있는 메서드는 호출하지 마세요.
 
 |||
 |-|-|
@@ -56,6 +55,6 @@ ms.locfileid: "39176943"
 
 문제가 있는 메서드에 대 한 대안이 사용할 경우에이 규칙에서 메시지를 표시 해야 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [안정성 경고](../code-quality/reliability-warnings.md)

@@ -1,9 +1,6 @@
 ---
 title: 새로운&#39;Visual Studio 2017 SDK의 새로운 | Microsoft Docs
-ms.custom: ''
 ms.date: 10/31/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 9efcf0a3-dbde-4cab-8ed3-425826a48b2e
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6f2a003bc19764aa07262552d3f0cc41316835b6
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 88e68ae7e6a88d1acd88016819eb4634962ef101
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566910"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952211"
 ---
 # <a name="what39s-new-in-the-visual-studio-2017-sdk"></a>새로운&#39;Visual Studio 2017 SDK의 새로운
 
@@ -49,4 +46,4 @@ Visual Studio 2017부터 사용자 지정 프로젝트 및 항목 템플릿에 �
 
 ## <a name="updated-extension-performance-guidelines"></a>업데이트 된 확장 성능 지침
 
-새로운 [방법: 확장 성능 진단](how-to-diagnose-extension-performance.md) 아래에 있는 문서 [관리 Vspackage](managing-vspackages.md) 시작 및 솔루션 로드 시간 검색 Visual Studio에 대 한 확장 영향을 분석 하는 방법을 보여 주는 합니다.
+새로운 [방법: 확장 성능 진단](how-to-diagnose-extension-performance.md) 에서 문서 [관리 Vspackage](managing-vspackages.md) 시작 및 솔루션 로드 시간을 검색 하 여 Visual Studio에 대 한 확장 영향을 분석 하는 방법을 보여 줍니다.

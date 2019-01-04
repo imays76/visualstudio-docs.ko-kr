@@ -1,9 +1,6 @@
 ---
-title: '새 프로젝트 생성: 내부 살펴보기, 2 부 | Microsoft Docs'
-ms.custom: ''
+title: '새 프로젝트 생성: 내부적으로 2 부 | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], new project dialog
@@ -14,15 +11,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38f2a4a84c6223c2e195c3d703f52d7fd5b18c86
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3401523e7c8026b59f6737a8f0599b4df74a445f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837531"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943514"
 ---
-# <a name="new-project-generation-under-the-hood-part-two"></a>새 프로젝트 생성: 내부 살펴보기, 2부
-[새 프로젝트 생성: 내부 살펴보기, 1 부](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) 살펴본 방법을 **새 프로젝트** 대화 상자가 채워집니다. 선택한를 가정해 보겠습니다를 **Visual C# Windows 응용 프로그램**작성, 합니다 **이름** 및 **위치** 텍스트 상자 및 확인을 클릭된 합니다.  
+# <a name="new-project-generation-under-the-hood-part-two"></a>새 프로젝트 생성: 내부적으로 2 부
+[새 프로젝트 생성: 내부적으로 1 부](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) 살펴보았습니다 하는 방법을 **새 프로젝트** 대화 상자가 채워집니다. 선택한를 가정해 보겠습니다를 **Visual C# Windows 응용 프로그램**작성, 합니다 **이름** 및 **위치** 텍스트 상자 및 확인을 클릭된 합니다.  
   
 ## <a name="generating-the-solution-files"></a>솔루션 파일 생성  
  지시 하는 응용 프로그램 템플릿을 선택 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 압축을 풀고 해당.vstemplate 파일을 열에이 파일의 XML 명령을 해석 하기 위한 템플릿을 시작 합니다. 이러한 명령은 새로운 또는 기존의 솔루션에서 프로젝트 및 프로젝트 항목을 만듭니다.  
@@ -70,7 +67,7 @@ namespace Simple
  이 형식은 기본.vstemplate 파일을  
   
 ```  
-<VSTemplate Version="2.0.0"     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005"     Type="Project">  
+<VSTemplate Version="2.0.0"     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005"     Type="Project">  
     <TemplateData>  
     </TemplateData>  
     <TemplateContent>  
@@ -78,7 +75,7 @@ namespace Simple
 </VSTemplate>  
 ```  
   
- 살펴보았습니다 합니다 \<TemplateData > 섹션을 [새 프로젝트 생성: 내부 살펴보기, 1 부](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)합니다. 이 섹션의 태그의 모양을 제어 되는 **새 프로젝트** 대화 상자.  
+ 살펴보았습니다 합니다 \<TemplateData > 섹션을 [새 프로젝트 생성: 내부적으로 1 부](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)합니다. 이 섹션의 태그의 모양을 제어 되는 **새 프로젝트** 대화 상자.  
   
  태그는 \<TemplateContent > 새 프로젝트 및 프로젝트 항목의 생성 제어 섹션입니다. 다음은 \<TemplateContent > \Program Files\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip 폴더 cswindowsapplication.vstemplate 파일에서 섹션입니다.  
   
@@ -92,13 +89,13 @@ namespace Simple
     <ProjectItem TargetFileName="Properties\Resources.resx">  
       Resources.resx  
     </ProjectItem>  
-    <ProjectItem ReplaceParameters="true"       TargetFileName="Properties\Resources.Designer.cs">  
+    <ProjectItem ReplaceParameters="true"       TargetFileName="Properties\Resources.Designer.cs">  
       Resources.Designer.cs  
     </ProjectItem>  
     <ProjectItem TargetFileName="Properties\Settings.settings">  
       Settings.settings  
     </ProjectItem>  
-    <ProjectItem ReplaceParameters="true"       TargetFileName="Properties\Settings.Designer.cs">  
+    <ProjectItem ReplaceParameters="true"       TargetFileName="Properties\Settings.Designer.cs">  
       Settings.Designer.cs  
     </ProjectItem>  
     <ProjectItem ReplaceParameters="true" OpenInEditor="true">  
@@ -157,5 +154,5 @@ namespace Simple
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [새 프로젝트 생성: 내부 살펴보기, 1부](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)  
+ [새 프로젝트 생성: 내부적으로 1 부](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)  
  [MSBuild](../../msbuild/msbuild.md)

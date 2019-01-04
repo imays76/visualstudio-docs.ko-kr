@@ -2,7 +2,6 @@
 title: 'CA2105: 배열 필드는 읽기 전용이면 안 됩니다.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2105
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a033c23a323a94dcbda0a98f9ec57de529d3c308
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0969147ce4f454f7720f26f72b46cab6e91c37bf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883297"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937980"
 ---
 # <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105: 배열 필드는 읽기 전용이면 안 됩니다.
 
@@ -50,7 +49,7 @@ ms.locfileid: "49883297"
 
 - Public 필드를 private 배열의 복제본을 반환 하는 메서드로 대체 합니다. 코드 복제본에 의존 하지 않습니다, 이므로 위험이 없는 요소를 수정할 경우.
 
-두 번째 방법은 했다면 바꾸지 마세요 필드 속성을 사용 하 여 부정적인 배열을 반환 하는 속성에는 성능에 영향을 합니다. 자세한 내용은 [CA1819: 속성은 배열을 반환 해서는](../code-quality/ca1819-properties-should-not-return-arrays.md)합니다.
+두 번째 방법은 했다면 바꾸지 마세요 필드 속성을 사용 하 여 부정적인 배열을 반환 하는 속성에는 성능에 영향을 합니다. 자세한 내용은 참조 하세요. [CA1819: 속성은 배열을 반환 해서는](../code-quality/ca1819-properties-should-not-return-arrays.md)합니다.
 
 ## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
 
@@ -77,7 +76,7 @@ Before tampering: Grades: 90, 90, 90 Private Grades: 90, 90, 90  Secure Grades, 
 After tampering: Grades: 90, 555, 90 Private Grades: 90, 555, 90  Secure Grades, 90, 90, 90
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.Array?displayProperty=fullName>
 - <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>

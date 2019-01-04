@@ -1,9 +1,6 @@
 ---
 title: '방법: 개체의 데이터로 문서 채우기'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 87e194aa29a44458c23e5057d7813e5e21ffbc42
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 5333b3d6f9ba107bde21bbc23566940ee5dbf80d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648383"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960617"
 ---
 # <a name="how-to-populate-documents-with-data-from-objects"></a>방법: 개체의 데이터로 문서 채우기
 
@@ -69,7 +66,7 @@ BindingSource에 데이터 개체 연결:
 
 4.  데이터 원본을 데이터 바인딩으로 컨트롤에 추가합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [새 데이터 소스 추가](../data-tools/add-new-data-sources.md)
 - [Visual Studio에서 데이터에 Windows Forms 컨트롤 바인딩](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

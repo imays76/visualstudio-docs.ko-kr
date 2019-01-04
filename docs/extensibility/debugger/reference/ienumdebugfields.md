@@ -1,9 +1,6 @@
 ---
 title: IEnumDebugFields | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEnumDebugFields
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a475d7e163cd146a0fd200c1bcac2f3a572ef9e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e71e9e8f0d326e37184568d316f34cbbc34950f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124214"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942309"
 ---
 # <a name="ienumdebugfields"></a>IEnumDebugFields
-이 인터페이스를 구현 하는 개체의 컬렉션을 나타냅니다는 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 인터페이스입니다.  
+이 인터페이스를 구현 하는 개체의 컬렉션을 나타냅니다 합니다 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 인터페이스입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -32,30 +29,30 @@ IEnumDebugFields : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>구현자 참고 사항  
- 이 인터페이스를 구현 하는 개체의 집합을 제공할 기호 공급자에 의해 구현 됩니다는 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 인터페이스입니다. 이 하지 있어 표준 COM 열거형은 [GetCount](../../../extensibility/debugger/reference/ienumdebugfields-getcount.md) 메서드.  
+ 기호 공급자를 구현 하는 개체의 집합을 제공 하 여이 인터페이스는 구현 된 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 인터페이스입니다. 있어 표준 COM 열거형을 아닌지 확인 합니다 [GetCount](../../../extensibility/debugger/reference/ienumdebugfields-getcount.md) 메서드.  
   
-## <a name="notes-for-callers"></a>호출자에 대 한 참고 사항  
- 이 인터페이스에서 반환 된 [GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md) 및 [GetNamespacesUsedAtAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnamespacesusedataddress.md)합니다.  
+## <a name="notes-for-callers"></a>호출자에 대 한 정보  
+ 이 인터페이스는 반환한 [GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md) 하 고 [GetNamespacesUsedAtAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnamespacesusedataddress.md)합니다.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드  
  이 인터페이스는 다음 메서드를 구현 합니다.  
   
 |메서드|설명|  
 |------------|-----------------|  
-|[다음](../../../extensibility/debugger/reference/ienumdebugfields-next.md)|다음 검색 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 열거에 있는 개체입니다.|  
-|[Skip](../../../extensibility/debugger/reference/ienumdebugfields-skip.md)|지정 된 항목 수를 건너뜁니다.|  
-|[다시 설정](../../../extensibility/debugger/reference/ienumdebugfields-reset.md)|열거형의 첫 번째 항목을 다시 설정합니다.|  
-|[복제](../../../extensibility/debugger/reference/ienumdebugfields-clone.md)|현재 열거형의 복사본을 검색 합니다.|  
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugfields-getcount.md)|열거형에 있는 항목의 수를 검색 합니다.|  
+|[다음](../../../extensibility/debugger/reference/ienumdebugfields-next.md)|다음 집합을 검색 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 열거형 개체입니다.|  
+|[Skip](../../../extensibility/debugger/reference/ienumdebugfields-skip.md)|지정된 된 개수의 항목을 건너뜁니다.|  
+|[Reset](../../../extensibility/debugger/reference/ienumdebugfields-reset.md)|첫 번째 항목을 열거를 다시 설정합니다.|  
+|[Clone](../../../extensibility/debugger/reference/ienumdebugfields-clone.md)|현재 열거형의 복사본을 검색 합니다.|  
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugfields-getcount.md)|열거형 항목을 검색합니다.|  
   
 ## <a name="remarks"></a>설명  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>참고 항목  
  [기호 공급자 인터페이스](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   

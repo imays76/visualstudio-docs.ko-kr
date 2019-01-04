@@ -1,9 +1,6 @@
 ---
 title: IDE에 의해 구현 된 콜백 함수 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, callback functions
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c76a9ef3ab81cf764d5f82fdfb9c8d6a86f24bee
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 3dd5196fae42079249f0632a065aacbf504938a8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232483"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990781"
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>IDE에 의해 구현 된 콜백 함수
 와 통합 하 고 통합 된 최종 사용자 환경을 제공 하기 위해 최대한 원활 하 게으로 통합된 개발 환경 (IDE) 소스 제어 플러그 인 사용할 수 IDE에 의해 구현 되는 콜백 함수. 플러그 인이 함수를 호출할 수 이러한 정보는 IDE를 전달 하는 소스 제어 작업 중 적절 한 시간 IDE 기본 UI에 포함 된 요소로이 정보를 표시할 수 있습니다. 사용자 이면 플러그 인 사용 자체 UI 보다이 시나리오에서 덜 조각난 된 환경이 있습니다.  

@@ -1,13 +1,8 @@
 ---
 title: '방법: SharePoint 연결 추가 또는 제거 | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 17f1b1ccdee75a379dfc7bce42df2b5a117bdd2e
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 02c0aa0f6b2af5123939a396f9b0ac9dc6febd17
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755417"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941955"
 ---
 # <a name="how-to-add-or-remove-sharepoint-connections"></a>방법: SharePoint 연결 추가 또는 제거
   서버 탐색기를 사용 하면 데이터 연결 뿐만 아니라 SharePoint 사이트를 찾아볼 수 있습니다. 그러나 SharePoint 사이트의 콘텐츠를 찾아보려면 먼저 추가 해야 하는 **SharePoint 연결** 노드.  
@@ -50,4 +45,3 @@ ms.locfileid: "36755417"
   
 ## <a name="see-also"></a>참고자료
  [서버 탐색기를 사용 하 여 SharePoint 연결 찾아보기](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)  
-  

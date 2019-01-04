@@ -3,7 +3,6 @@ title: 워크플로 디자이너-InvokeMethod 활동 디자이너
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.InvokeMethod.UI
 ms.assetid: 15e6efdc-52ca-46d8-9c5e-063f7c8265a6
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ac82e36d3abc942e0c5492cc4d7acf347eba36c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cd0b30d3695d13b51b988dfee31829d03e4b661d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839572"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946943"
 ---
 # <a name="invokemethod-activity-designer"></a>InvokeMethod 활동 디자이너
 
@@ -57,7 +56,7 @@ ms.locfileid: "49839572"
 
 3.  <xref:System.Activities.Statements.InvokeMethod.Parameters%2A> 컬렉션을 반복하고 각 인수를 등록합니다.
 
-다음과 같은 메시지와 함께 <xref:System.Activities.InvalidWorkflowException> 형식의 예외가 발생합니다. 'InvokeMethod': 이름이 'TargetObject'인 변수(RuntimeArgument 또는 DelegateArgument) 변수가 이미 있습니다. 이름은 환경 범위 내에서 고유해야 합니다.
+예외가 발생 합니다 형식의 <xref:System.Activities.InvalidWorkflowException> 다음 메시지와 함께 합니다. ' InvokeMethod': 이름이 ''를 사용 하 여 변수를 RuntimeArgument 또는 DelegateArgument를을 이미 존재합니다. 이름은 환경 범위 내에서 고유해야 합니다.
 
 이 제한에 적용 되지 않습니다 <xref:System.Activities.Statements.InvokeMethod.TargetType%2A> 고 <xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A>입니다. 워크플로 인수가 아닙니다 하며에 등록 되지 않습니다는 <xref:System.Activities.Statements.InvokeMethod.GenericTypeArguments%2A> 의 컬렉션을 <xref:System.Activities.Statements.InvokeMethod> 활동에서를 <xref:System.Activities.Activity.CacheMetadata%2A> 메서드.
 

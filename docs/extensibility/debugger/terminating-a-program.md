@@ -1,9 +1,6 @@
 ---
 title: 프로그램 종료 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - programs, termination events
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 29eb65f222a94816086e5b24b2579cbee0e48001
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 28be8f34602a3a175c40d630463686f0ca99c919
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846254"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958854"
 ---
 # <a name="terminating-a-program"></a>프로그램 종료
 다음 섹션에서는 하나의 스레드를 사용 하 여 단일 프로그램 종료를 설명합니다.  
@@ -32,5 +29,5 @@ ms.locfileid: "49846254"
   
    IDE는 디자인 모드로 전환 됩니다. 디버그 엔진 또는 런타임 환경 호출 [IDebugPortNotify2::RemoveProgramNode](../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md) 포트에서 프로그램을 제거 하도록 합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [디버거 이벤트 호출](../../extensibility/debugger/calling-debugger-events.md)

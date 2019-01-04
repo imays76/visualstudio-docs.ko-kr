@@ -1,13 +1,8 @@
 ---
 title: '연습: 기본 사이트 정의 프로젝트 만들기 | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8a9a879db7c1d24dbfd8312dbc75d9b0bbaa8803
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7e09124e3204240f188c65e10865bbf221e15358
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844420"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958893"
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>연습: 기본 사이트 정의 프로젝트 만들기
   이 연습에서는 일부 컨트롤에 시각적 웹 파트를 포함 하는 기본 사이트 정의 만드는 방법을 보여 줍니다. 명확성을 위해 사용자가 만든 시각적 웹 파트에만 몇 가지 컨트롤이 있습니다. 그러나 더 많은 기능을 포함 하는 보다 복잡 한 SharePoint 사이트 정의 만들 수 있습니다.  
@@ -189,4 +184,3 @@ ms.locfileid: "49844420"
 ## <a name="see-also"></a>참고자료
  [방법: 이벤트 수신기 만들기](../sharepoint/how-to-create-an-event-receiver.md)   
  [SharePoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)  
-  
