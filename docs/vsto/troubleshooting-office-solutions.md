@@ -1,9 +1,6 @@
 ---
 title: Office 솔루션 문제 해결
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9c2997e199699bbae30e5ea02c9be400eb8250fc
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 8bc018e104ff06671f1012b1e2e1db4eaa62587e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673931"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926556"
 ---
 # <a name="troubleshoot-office-solutions"></a>Office 솔루션 문제 해결
   이 섹션에는 Visual Studio의 Office 개발 도구를 사용하여 솔루션을 만들 때 발생할 수 있는 일반적인 문제를 해결하기 위한 팁이 들어 있습니다.  
@@ -52,5 +49,3 @@ ms.locfileid: "35673931"
   
  [Office 프로그래밍의 일반적인 작업](../vsto/common-tasks-in-office-programming.md)  
  Office 솔루션을 프로그래밍하는 방법에 대해 질문과 대답을 나열하고 일반적인 문제를 해결하는 데 도움이 되는 항목에 대한 링크를 제공합니다.  
-  
-  

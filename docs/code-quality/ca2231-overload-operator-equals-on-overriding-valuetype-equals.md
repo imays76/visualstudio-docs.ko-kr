@@ -2,7 +2,6 @@
 title: 'CA2231: ValueType.Equals를 재정의할 때 같음 연산자를 오버로드하십시오.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - OverloadOperatorEqualsOnOverridingValueTypeEquals
@@ -20,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: afdbb6f75754f5f7c839326139a57f2c20de97c3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1f005f62f5bf45ce29db41b29650f1d0cc5e4e25
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816595"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958620"
 ---
 # <a name="ca2231-overload-operator-equals-on-overriding-valuetypeequals"></a>CA2231: ValueType.Equals를 재정의할 때 같음 연산자를 오버로드하십시오.
 
@@ -42,7 +41,7 @@ ms.locfileid: "49816595"
 ## <a name="rule-description"></a>규칙 설명
  대부분의 프로그래밍 언어에서 값 형식의 같음 연산자 (= =)의 기본 구현이 없는 있습니다. 프로그래밍 언어가 연산자 오버 로드를 지 원하는 경우 같음 연산자를 구현 하는 것이 좋습니다. 해당 동작의 동일 해야 합니다. <xref:System.Object.Equals%2A>합니다.
 
- 기본 같음 연산자를 같음 연산자의 오버 로드 된 구현을 사용할 수 없습니다. 이렇게 하면 스택 오버플로가 발생 합니다. 같음 연산자를 구현 하려면 구현에서 Object.Equals 메서드를 사용 합니다. 예를 들어:
+ 기본 같음 연산자를 같음 연산자의 오버 로드 된 구현을 사용할 수 없습니다. 이렇게 하면 스택 오버플로가 발생 합니다. 같음 연산자를 구현 하려면 구현에서 Object.Equals 메서드를 사용 합니다. 예:
 
 ```vb
 If (Object.ReferenceEquals(left, Nothing)) Then
@@ -70,16 +69,16 @@ return left.Equals(right);
  [!code-csharp[FxCop.Usage.EqualsGetHashCode#1](../code-quality/codesnippet/CSharp/ca2231-overload-operator-equals-on-overriding-valuetype-equals_1.cs)]
 
 ## <a name="related-rules"></a>관련된 규칙
- [CA1046: 참조 형식에 같음 연산자를 오버로드하지 마십시오.](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
+ [CA1046: 참조 형식에 같음 연산자 오버 로드 하지 마십시오.](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
 
- [CA2225: 연산자 오버로드에는 명명된 대체 항목이 있습니다.](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
+ [CA2225: 연산자 오버 로드는 명명 된 대체](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
 
- [CA2226: 연산자에는 대칭 오버로드가 있어야 합니다.](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
+ [CA2226: 연산자에는 대칭 오버 로드가 있어야 합니다.](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
 
- [CA2224: 같음 연산자를 오버로드할 때 Equals를 재정의하십시오.](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
+ [CA2224: 같음 연산자를 오버 로드할 때 equals 재정의](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
 
- [CA2218: Equals를 재정의할 때 GetHashCode를 재정의하십시오.](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
+ [CA2218: Equals GetHashCode를 재정의 합니다.](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.Object.Equals%2A?displayProperty=fullName>

@@ -1,8 +1,7 @@
 ---
-title: 'CA1305: IFormatProvider를 지정하십시오.'
+title: 'CA1305: IFormatProvider를 지정하세요.'
 ms.date: 06/30/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - SpecifyIFormatProvider
@@ -18,14 +17,14 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 05e2efde1be3430f95b00edbe8da8f952efad758
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: fea236a51b8bde5171c91ad1935d4168dfabd94a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174308"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954239"
 ---
-# <a name="ca1305-specify-iformatprovider"></a>CA1305: IFormatProvider를 지정하십시오.
+# <a name="ca1305-specify-iformatprovider"></a>CA1305: IFormatProvider를 지정하세요.
 
 |||
 |-|-|
@@ -64,7 +63,7 @@ ms.locfileid: "37174308"
 
 코드 유지 가능성이 중요 한 개발 우선 순위를 기본 형식으로 올바른 경우 및이 규칙에서 경고를 표시 하지 않아도 안전 합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드에서는 `example1` CA1305 규칙을 위반 하는 문자열입니다. 합니다 `example2` 문자열이 전달 하 여 CA1305 규칙을 충족 <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>를 구현 하는 <xref:System.IFormatProvider>를 <xref:System.String.Format(System.IFormatProvider,System.String,System.Object)?displayProperty=nameWithType>입니다. 합니다 `example3` 보간된 문자열을 전달 하 여 CA1305 규칙을 충족 하는 문자열 <xref:System.FormattableString.Invariant%2A?displayProperty=fullName]>합니다.
 
@@ -83,7 +82,7 @@ string example3 = FormattableString.Invariant($"Hello {name}");
 
 ## <a name="related-rules"></a>관련된 규칙
 
-- [CA1304: CultureInfo를 지정하십시오.](../code-quality/ca1304-specify-cultureinfo.md)
+- [CA1304: CultureInfo를 지정 합니다.](../code-quality/ca1304-specify-cultureinfo.md)
 
 ## <a name="see-also"></a>참고자료
 

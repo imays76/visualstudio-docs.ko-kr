@@ -3,8 +3,6 @@ title: '방법: Visual Studio Tools for Office 런타임 재배포 가능 패키
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 83bc53dec2c4085b59a07ddc4694ff184b9e75a7
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: f9267e340d62def2660f807670dc9804dd531c8f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648498"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988769"
 ---
 # <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>방법: Visual Studio Tools for Office 런타임 재배포 가능 패키지 설치
   Visual Studio 2010 Tools for Office 런타임에서의 Microsoft Office 개발자 도구를 사용 하 여 만든 솔루션을 실행 하는 각 컴퓨터에 설치 해야 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]합니다. 런타임은 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 및 Microsoft Office를 설치할 때 자동으로 설치됩니다. 자세한 내용은 [Visual Studio Tools for Office 런타임 설치 시나리오](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)합니다.  
@@ -59,5 +57,3 @@ ms.locfileid: "53648498"
  [방법: Office 주 interop 어셈블리 설치](../vsto/how-to-install-office-primary-interop-assemblies.md)   
  [ServerDocument 클래스를 사용 하 여 서버의 문서 관리](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
  [Office 솔루션 배포](../vsto/deploying-an-office-solution.md)  
-  
-  

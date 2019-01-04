@@ -1,9 +1,6 @@
 ---
 title: VSIX 프로젝트 템플릿 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - deploy packages
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f897c2ae11e9b9677557684ca4755d0df66ddbdd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5b54fef4e3662783ee7927eb049058c8245ce91c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864792"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943410"
 ---
 # <a name="vsix-project-template"></a>VSIX 프로젝트 템플릿
 VSIX 프로젝트에서 하나 이상의 Visual Studio 확장을 래핑할 VSIX 프로젝트 템플릿을 사용 하 고 다음에서 패키지를 게시할 수 있습니다 합니다 [Visual Studio 갤러리](http://go.microsoft.com/fwlink/?LinkID=123847) 웹 사이트입니다.  
@@ -81,7 +78,7 @@ VSIX 프로젝트에서 하나 이상의 Visual Studio 확장을 래핑할 VSIX 
   
 8. 솔루션을 빌드합니다.  
   
-    [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 빌드는 *.vsix* [Content_Types] VSIX 매니페스트 파일을 포함 하는 파일 *.xml* 파일을 프로젝트에 추가 하는 확장 자산 모두.  
+    [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 빌드를 *.vsix* VSIX 매니페스트 파일인 [Content_Types]를 포함 하는 파일 *.xml* 파일 및 모든 프로젝트에 추가한 확장 자산입니다.  
   
 ## <a name="see-also"></a>참고자료  
  [VSIX 확장 스키마 2.0 참조](../extensibility/vsix-extension-schema-2-0-reference.md)   

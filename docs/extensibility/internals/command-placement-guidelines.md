@@ -1,9 +1,6 @@
 ---
 title: 명령 배치 지침 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - commands, small command sets
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bac09a361c885d866bf6a78e6fe7b49c246265ba
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 6834a12c4ecc052c9589a156c2eeb701e88036e1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511188"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933864"
 ---
 # <a name="command-placement-guidelines"></a>명령 배치 지침
 Visual Studio 통합된 개발 환경 (IDE)에 명령을 배치에 대 한 모범 사례는 명령 집합의 크기에 따라 달라 집니다. 명령을 정의 하 고 정보에 따라 배치 *.vsct* 파일입니다.  

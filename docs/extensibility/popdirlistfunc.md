@@ -1,9 +1,6 @@
 ---
 title: POPDIRLISTFUNC | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - POPLISTFUNC
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2dc3e0aee42da176ee147e1d960143236cf89f9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 69278a0faca0d31ae5afbf4b84dbc78efad1bf06
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847294"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926202"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
 이에 지정 된 콜백 함수는 [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) 디렉터리 및 (선택 사항)는 소스 제어 중인 파일 이름 컬렉션을 업데이트 하는 함수입니다.  
@@ -59,7 +56,7 @@ typedef BOOL (*POPDIRLISTFUNC)(
 ## <a name="remarks"></a>설명  
  경우는 `fOptions` 의 매개 변수를 `SccPopulateDirList` 함수에 포함 되어는 `SCC_PDL_INCLUDEFILES` 플래그, 디렉터리 이름 뿐만 아니라 파일 이름에 가능한 목록 포함 됩니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [IDE에 의해 구현 된 콜백 함수](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)   
  [오류 코드](../extensibility/error-codes.md)

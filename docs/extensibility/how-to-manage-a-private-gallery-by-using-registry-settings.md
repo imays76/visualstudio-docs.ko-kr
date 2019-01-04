@@ -1,9 +1,6 @@
 ---
 title: '방법: 레지스트리 설정을 사용 하 여 개인 갤러리 관리 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSIX private galleries, managing
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2351c048576d6cf0e93515df8bdce34eef09bfc8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d81594265f19eed0530aaeb06aebc777630bfbf7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854665"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986975"
 ---
 # <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>방법: 레지스트리 설정을 사용 하 여 개인 갤러리 관리
 관리자 또는 격리 셸 확장의 개발자 인 경우에 컨트롤, 템플릿 및 도구는 Visual Studio 갤러리, 샘플 갤러리 또는 전용 갤러리에 대 한 액세스를 제어할 수 있습니다. 갤러리를 사용 가능 여부 확인을 만들려면을 *.pkgdef* 수정 된 레지스트리 키와 값을 설명 하는 파일입니다.  
@@ -29,7 +26,7 @@ ms.locfileid: "49854665"
   
 ```  
 [$RootKey$\ExtensionManager\Repositories\{UniqueGUID}]  
-@={URI}  (REG_SZ)  
+@={URI}  (REG_SZ)  
 Disabled=0 | 1 (DWORD)  
 Priority=0 (highest priority) ... MaxInt (lowest priority) (DWORD) (uint)  
 Protocol=Atom Feed|Sharepoint (REG_SZ)  
@@ -70,5 +67,5 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
 ```  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [전용 갤러리](../extensibility/private-galleries.md)

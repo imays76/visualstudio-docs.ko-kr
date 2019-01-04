@@ -3,7 +3,6 @@ title: 워크플로 디자이너-DoWhile 활동 디자이너
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.DoWhile.UI
 ms.assetid: 948deb35-d72f-462b-bea6-4b119c10a148
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 19817fb23bd8a22532df7d349262b689f632a3a7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bc96d44a38a0cf8a1865de236b9f7ef473c960a7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839624"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960432"
 ---
 # <a name="dowhile-activity-designer"></a>DoWhile 활동 디자이너
 
@@ -32,7 +31,7 @@ ms.locfileid: "49839624"
 |<xref:System.Activities.Statements.DoWhile.Body%2A>|False|조건은 하는 동안 실행할 활동입니다 **true**합니다. 추가할를 <xref:System.Activities.Statements.DoWhile.Body%2A> 활동을 도구 상자에서 활동을 **본문** 상자에 **DoWhile** 여기에 작업 놓기 "힌트 텍스트가 있는 활동 디자이너.|
 |<xref:System.Activities.Statements.DoWhile.Condition%2A>|True|루프를 반복할 때마다 평가할 조건입니다. 설정 하는 <xref:System.Activities.Statements.DoWhile.Condition%2A>, Visual Basic 식을 입력 합니다 **조건** 상자에 **DoWhile** 활동 디자이너나 속성 표의.|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [While](../workflow-designer/while-activity-designer.md)
 - [제어 흐름](../workflow-designer/control-flow-activity-designers.md)

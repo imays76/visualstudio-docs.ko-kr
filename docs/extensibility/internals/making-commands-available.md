@@ -1,8 +1,6 @@
 ---
 title: 명령을 사용할 수 있도록 | Microsoft Docs
 ms.date: 03/22/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - menus [Visual Studio SDK], commands
@@ -15,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1292dc3879effa53f3b4a41b87374a3a5f46ff0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ac673709ea648a3c0fb6602797af90f86f33f0e0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857135"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949721"
 ---
 # <a name="making-commands-available"></a>명령을 사용 가능하게 지정
 Visual Studio에 여러 Vspackage를 추가 하는 경우 사용자 인터페이스 (UI) 명령을 사용 하 여 들어오지 될 수 있습니다. 다음과 같이이 문제를 줄이기 위해 패키지를 프로그래밍할 수 있습니다.
@@ -144,7 +142,7 @@ Visual Studio에 여러 Vspackage를 추가 하는 경우 사용자 인터페이
 </VisibilityConstraints>
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [MenuCommand 및 OleMenuCommand](../../extensibility/menucommands-vs-olemenucommands.md)
 - [VSPackage에서 사용자 인터페이스 요소를 추가하는 방법](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

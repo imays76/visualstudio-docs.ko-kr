@@ -2,7 +2,6 @@
 title: 'CA2225: 연산자 오버로드에는 명명된 대체 항목이 있습니다.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - OperatorOverloadsHaveNamedAlternates
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a12060752317a2b4c23ec2eba7e96e945be00db0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0a60a050f6403abec471b02e44696081f07c347a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914582"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954807"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: 연산자 오버로드에는 명명된 대체 항목이 있습니다.
 
@@ -69,7 +68,7 @@ ms.locfileid: "49914582"
 |%=|N/A|%=|Mod|
 |* (이진)|*|*|곱하기|
 |*=|N/A|*=|곱하기|
-|~|not|~|OnesComplement|
+|~|Not|~|OnesComplement|
 |>>|>>|>>|오른쪽 Shift|
 =|N/A|>>=|오른쪽 Shift|
 |-(이진)|-(이진)|-(이진)|빼기|
@@ -97,12 +96,12 @@ ms.locfileid: "49914582"
  [!code-csharp[FxCop.Usage.OperatorOverloadsHaveNamedAlternates#1](../code-quality/codesnippet/CSharp/ca2225-operator-overloads-have-named-alternates_1.cs)]
 
 ## <a name="related-rules"></a>관련된 규칙
- [CA1046: 참조 형식에 같음 연산자를 오버로드하지 마십시오.](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
+ [CA1046: 참조 형식에 같음 연산자 오버 로드 하지 마십시오.](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
 
- [CA2226: 연산자에는 대칭 오버로드가 있어야 합니다.](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
+ [CA2226: 연산자에는 대칭 오버 로드가 있어야 합니다.](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
 
- [CA2224: 같음 연산자를 오버로드할 때 Equals를 재정의하십시오.](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
+ [CA2224: 같음 연산자를 오버 로드할 때 equals 재정의](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
 
- [CA2218: Equals를 재정의할 때 GetHashCode를 재정의하십시오.](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
+ [CA2218: Equals GetHashCode를 재정의 합니다.](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
 
  [CA2231: ValueType.Equals를 재정의할 때 같음 연산자를 오버로드하십시오.](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)

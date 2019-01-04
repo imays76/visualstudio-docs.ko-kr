@@ -1,9 +1,6 @@
 ---
 title: 확장 및 도구 Windows 사용자 지정 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - user interfaces, essentials
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c11485e830d1b7bcef851a50225e15f351e64f3e
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 4c942076f10aa39994c2a809f994b9725831d67b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637486"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949838"
 ---
 # <a name="extend-and-customize-tool-windows"></a>확장 및 도구 창 사용자 지정
 Visual Studio는 여러 가지 도구 창, 문서 창 및 대화 상자 창 예를 들어 windows 제공합니다. 와 같은 다른 windows는 **속성** 창 합니다 **출력** 창 및 **작업 목록** 창 유형의 도구 창입니다.  
@@ -37,11 +34,11 @@ Visual Studio는 여러 가지 도구 창, 문서 창 및 대화 상자 창 예�
   
  도구 창을 문서 프레임에서 도킹, 부동 또는 탭할 수 있습니다. 도구 창 프레임이 IDE에서 제공되고 크기, 위치, 도킹 상태 및 기타 영구적 속성을 제어하는 데 사용됩니다. 도구 창에서 내용을 표시합니다. 기본 크기 및 위치는 도구 창이 처음 열릴 때만 적용되고 이후에는 도구 창 상태가 유지됩니다.  
   
- 도구 창에서 WPF 사용자 컨트롤을 호스트하고 도구 모음을 지원할 수 있습니다. 재정의할 수 있습니다는 <xref:Microsoft.VisualStudio.Shell.WindowPane.Window%2A> 속성을 호스팅된 컨트롤의 핸들을 반환 합니다.  
+ 도구 창에서 WPF 사용자 컨트롤을 호스트하고 도구 모음을 지원할 수 있습니다. <xref:Microsoft.VisualStudio.Shell.WindowPane.Window%2A> 속성을 재정의하여 호스트된 컨트롤의 핸들을 반환할 수 있습니다.  
   
- 도구 창에 다양 한 기능을 추가할 수 있습니다. 예를 들어, 도구 모음을 추가할 수 있습니다: [도구 창에 도구 모음을 추가](../extensibility/adding-a-toolbar-to-a-tool-window.md) 또는 바로 가기 메뉴: [도구 창에서 바로 가기 메뉴를 추가](../extensibility/adding-a-shortcut-menu-in-a-tool-window.md)합니다. 도구 창 내에서 항목을 검색할 수 있는 검색 컨트롤을 추가할 수 있습니다: [도구 창에 추가 검색](../extensibility/adding-search-to-a-tool-window.md)합니다.  
+ 도구 창에 다양 한 기능을 추가할 수 있습니다. 예를 들어, 도구 모음을 추가할 수 있습니다. [도구 창에 도구 모음 추가](../extensibility/adding-a-toolbar-to-a-tool-window.md) 또는 바로 가기 메뉴: [도구 창의 바로 가기 메뉴를 추가](../extensibility/adding-a-shortcut-menu-in-a-tool-window.md)합니다. 도구 창 내에서 항목을 검색할 수 있는 검색 컨트롤을 추가할 수 있습니다. [도구 창에 검색 추가](../extensibility/adding-search-to-a-tool-window.md)합니다.  
   
- 도구 창의 이벤트를 구독할 수 있습니다: [이벤트를 구독할](../extensibility/subscribing-to-an-event.md)합니다.  
+ 도구 창의 이벤트를 구독할 수 있습니다. [이벤트를 구독할](../extensibility/subscribing-to-an-event.md)합니다.  
   
 ## <a name="extend-existing-tool-windows"></a>기존 도구 창 확장  
  새 도구 창에 대 한 정보를 추가할 수 있습니다 **옵션** 페이지 및의 새 설정의 **속성** 페이지를 쓸 합니다 **작업 목록** 및 **출력**  windows. 자세한 내용은 참조 하세요. [확장 속성, 작업 목록, 출력 및 옵션 windows](../extensibility/extending-the-properties-task-list-output-and-options-windows.md) 하 고 [확장 속성, 작업 목록, 출력 및 옵션 windows](../extensibility/extending-the-properties-task-list-output-and-options-windows.md)합니다.  
@@ -49,5 +46,5 @@ Visual Studio는 여러 가지 도구 창, 문서 창 및 대화 상자 창 예�
 ## <a name="modal-dialog-boxes"></a>모달 대화 상자  
  Visual Studio 확장에서 만들어야 모달 대화 상자에서 파생 시켜 <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow?displayProperty=fullName>, 있으며 UI의 나머지 부분을 제어할 수 있습니다. 자세한 내용은 [만들기 및 모달 대화 상자 관리](../extensibility/creating-and-managing-modal-dialog-boxes.md)합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [도구 창으로 확장 프로그램을 만들려면](../extensibility/creating-an-extension-with-a-tool-window.md)

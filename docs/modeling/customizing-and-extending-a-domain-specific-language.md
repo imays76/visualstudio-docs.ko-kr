@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: a49d9998aa319e66c22baa345864bc473f733c87
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 165798341f08afd3b55e8f6b8092457f022a0634
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816706"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960039"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>도메인별 언어 사용자 지정 및 확장
 Visual Studio 모델링 및 시각화 SDK (VMSDK)는 모델링 도구를 정의할 수 있습니다 여러 수준을 제공 합니다.
@@ -57,13 +56,13 @@ Visual Studio 모델링 및 시각화 SDK (VMSDK)는 모델링 도구를 정의�
 |복사 및 끌어서 놓기에 모양과 셰이프 레이아웃을 유지 합니다.|추가할 모양 및 연결선 복사한 `ElementGroupPrototype`합니다. 재정의에 가장 편리한 방법은 `ElementOperations.CreateElementGroupPrototype()`<br /><br /> 참조 [복사 동작 사용자 지정](../modeling/customizing-copy-behavior.md)합니다.|
 |선택한 위치(예: 현재 커서 위치)에 모양을 붙여넣습니다.|재정의 `ClipboardCommandSet.ProcessOnCopy()` 의 위치별 버전을 사용 하도록 `ElementOperations.Merge().` 참조 [복사 동작 사용자 지정](../modeling/customizing-copy-behavior.md)합니다.|
 |붙여넣을 때 추가 링크를 만들려면|Override ClipboardCommandSet.ProcessOnPasteCommand()|
-|설정에서에서 끌어서 놓기이 다이어그램에서 다른 Dsl 및 Windows 요소|참조 [방법: 끌어서 놓기 처리기 추가](../modeling/how-to-add-a-drag-and-drop-handler.md)|
+|설정에서에서 끌어서 놓기이 다이어그램에서 다른 Dsl 및 Windows 요소|[방법: 끌어서 놓기 처리기 추가](../modeling/how-to-add-a-drag-and-drop-handler.md)|
 |부모를 끌어 된 것 처럼 도형이 나 도구는 포트와 같은 자식 셰이프를 끌어 놓을 수를 허용 합니다.|부모에 끌어 놓은 개체를 전달할 대상 개체 클래스에 대해 요소 병합 지시문을 정의 합니다. 참조 [요소 만들기 및 이동 사용자 지정](../modeling/customizing-element-creation-and-movement.md)합니다.|
 |도형 또는 도구가 셰이프를 끌어 놓을 수 있는 추가 링크를 허용 하거나 생성 된 개체입니다. 예를 들어, 메모를 연결할가 항목을 놓을 수 있도록 합니다.|대상 도메인 클래스의 요소 병합 지시문을 정의 하 고 생성에 대 한 링크를 정의 합니다. 복잡 한 경우 사용자 지정 코드를 추가할 수 있습니다. 참조 [요소 만들기 및 이동 사용자 지정](../modeling/customizing-element-creation-and-movement.md)합니다.|
 |하나의 도구를 사용 하 여 요소의 그룹을 만듭니다. 예를 들어, 고정된 된 포트 집합을 사용 하 여 구성 요소입니다.|도구 상자 초기화 ToolboxHelper.cs의 메서드를 재정의 합니다. 요소 그룹 프로토타입을 EGP () 요소 및 해당 관계 링크가 포함 된를 만듭니다. 참조 [도구 및 도구 상자 사용자 지정](../modeling/customizing-tools-and-the-toolbox.md)합니다.<br /><br /> 보안 주체 및 포트 셰이프는 EGP 포함 하거나는 EGP 인스턴스화될 때 포트 모양은 위치로 boundsrules로 정의 합니다. 참조 [boundsrules로 모양 위치 및 크기 제한](../modeling/boundsrules-constrain-shape-location-and-size.md)합니다.|
 |연결 도구 하나를 사용 하 여 여러 유형의 관계를 인스턴스화합니다.|도구에서 호출 되는 연결 작성기에 링크 연결 지시문 (LCD)를 추가 합니다. Lcd 두 요소의 형식에서 관계 유형을 결정합니다. 요소의 상태에 따라 달라 집니다.이 위해 사용자 지정 코드를 추가할 수 있습니다. 참조 [도구 및 도구 상자 사용자 지정](../modeling/customizing-tools-and-the-toolbox.md)합니다.|
 |스티커 도구-사용자 수를 연속 해 서 많은 모양이 나 연결선을 만들려면 도구 두 번 클릭 합니다.|DSL 탐색기에서 선택 된 `Editor` 노드. 속성 창에서 설정할 **스티커 도구 상자 항목을 사용 하 여**입니다.|
-|메뉴 명령 정의|참조 [방법: 표준 메뉴 명령 수정](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|
+|메뉴 명령 정의|[방법: 표준 메뉴 명령 수정](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|
 |유효성 검사 규칙을 사용 하 여 모델을 제한 합니다.|참조 [도메인별 언어에서 유효성 검사](../modeling/validation-in-a-domain-specific-language.md)|
 |DSL에서 코드, 구성 파일 또는 문서를 생성 합니다.|[도메인별 언어에서 코드 생성](../modeling/generating-code-from-a-domain-specific-language.md)|
 |모델을 저장 하는 방법을 사용자 지정 파일에 있습니다.|참조 [파일 저장소 및 XML Serialization을 사용자 지정](../modeling/customizing-file-storage-and-xml-serialization.md)|

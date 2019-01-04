@@ -12,13 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0417507323a627753bc62e50b424c37b547d4dad
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 21899be482e47152e8ca60d78535f49613f52ede
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967482"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946044"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>도메인 특정 언어 정의에 추적 속성 추가
 
@@ -719,7 +718,7 @@ XML serialization에 대 한 사용자 지정 후 로드 동작을 지 원하는
 
 다음 단계에서에서 빌드 및 실행은 DSL 디자이너의 새 인스턴스를 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 추적 속성 제대로 작동 하는지 확인할 수 있도록 합니다.
 
-1. 에 **빌드할** 메뉴에서 클릭 **솔루션 다시 빌드**합니다.
+1. **빌드** 메뉴에서 **솔루션 다시 빌드**를 클릭합니다.
 
 2. **디버그** 메뉴에서 **디버깅 시작**을 클릭합니다.
 
@@ -757,7 +756,7 @@ XML serialization에 대 한 사용자 지정 후 로드 동작을 지 원하는
 
 둘 이상의 추적 속성을 사용 하거나 둘 이상의 DSL에 추적 속성을 구현 하려는 경우 각 추적 속성을 지원 하기 위한 일반적인 코드를 생성 하려면 텍스트 템플릿을 만들 수 있습니다. 텍스트 템플릿에 대 한 자세한 내용은 참조 하세요. [코드 생성 및 T4 텍스트 템플릿](../modeling/code-generation-and-t4-text-templates.md)합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor>
 - <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>

@@ -1,15 +1,10 @@
 ---
 title: '방법: SharePoint 프로젝트에 기존 BDC 모델 파일 추가 | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.BDC.ImportDialog
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bda78d33a5b49d936fb632e78472c91ab1230ba5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c9efe862fcd0844d6b6e0c050d4c647b2d9c705a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922616"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950123"
 ---
 # <a name="how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project"></a>방법: SharePoint 프로젝트에 기존 BDC 모델 파일 추가
   사용자 지정, 패키지 및 모델 파일을 추가 하려면 Visual Studio를 사용 하 여 비즈니스 데이터 연결 (BDC) 모델을 다시 배포할 수 있습니다 (*.bdcm*) SharePoint 팜에 프로젝트입니다. 자세한 내용은 [비즈니스 데이터 연결 모델 만들기](../sharepoint/creating-a-business-data-connectivity-model.md)합니다.  
@@ -56,5 +51,3 @@ ms.locfileid: "49922616"
  [방법: 리소스 파일을 사용 하 여 지역화 된 이름, 속성 및 사용 권한을 지정 합니다.](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)   
  [방법: BDC 기능에 사용자 지정 어셈블리 포함](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)   
  [SharePoint에 비즈니스 데이터 통합](../sharepoint/integrating-business-data-into-sharepoint.md)  
-  
- 

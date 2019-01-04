@@ -1,9 +1,6 @@
 ---
 title: SccInitialize 함수 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccInitialize
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 136978a6d1dc19a414079ba424ebcd5d50f6840a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d43bdc2be0de233c30d36da445a2b7bee3afbaf2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934576"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950039"
 ---
 # <a name="sccinitialize-function"></a>SccInitialize 함수
 이 함수는 소스 제어 플러그 인을 초기화 하 고 기능 및 제한 사항이 통합된 개발 환경 (IDE)를 제공 합니다.  

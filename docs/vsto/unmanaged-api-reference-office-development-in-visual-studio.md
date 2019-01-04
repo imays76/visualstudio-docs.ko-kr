@@ -1,9 +1,6 @@
 ---
 title: 관리 되지 않는 API 참조 (Visual Studio에서 Office 개발)
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9b0f48ea5997c2c8c2dd7d90eebde8322fad8a7a
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1ac4dfa9dd697993cffb527be521bd04c4c087ca
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674309"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991164"
 ---
 # <a name="unmanaged-api-reference-office-development-in-visual-studio"></a>관리 되지 않는 API 참조 (Visual Studio에서 Office 개발)
   2007 Microsoft Office 시스템부터 Office 응용 프로그램 사용 합니다 [IManagedAddin 인터페이스](../vsto/imanagedaddin-interface.md) 에서 VSTO 추가 기능 로더 구성 요소에 포함 된 호출에 대 한 인터페이스를 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]입니다. 이 구성 요소는 부하로 관리 되는 vsto 추가 하는 데 사용 됩니다. 이 인터페이스를 구현하여 사용자 고유의 VSTO 추가 기능 로더 구성 요소를 만들 수 있습니다.  
@@ -31,6 +28,4 @@ ms.locfileid: "35674309"
   
 ## <a name="in-this-section"></a>단원 내용  
  [IManagedAddin 인터페이스](../vsto/imanagedaddin-interface.md)  
- Office 응용 프로그램에서 관리되는 VSTO 추가 기능을 로드 및 언로드하기 위해 구현할 수 있는 COM 인터페이스입니다.  
-  
-  
+ Office 애플리케이션에서 관리되는 VSTO 추가 기능을 로드 및 언로드하기 위해 구현할 수 있는 COM 인터페이스입니다.  

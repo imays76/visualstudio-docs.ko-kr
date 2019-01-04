@@ -1,9 +1,6 @@
 ---
 title: '방법: 사용자 지정 디버그 엔진 디버그 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, debugging
@@ -14,18 +11,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdc01eec9982f7e3a03cd84424bc56b031846a7d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 26e227af6eb15874e6f79dd890a20a76d62d1a96
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858864"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962391"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>방법: 사용자 지정 디버그 엔진 디버그
 프로젝트 형식에서 디버그 엔진 (DE)를 시작 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> 메서드. 즉, 인스턴스의 제어 하는 DE 시작 되는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 프로젝트 형식을 제어 합니다. 그러나 해당 인스턴스의 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 는 DE를 디버깅할 수 없습니다. 다음에 사용자 지정 DE 디버깅할 수 있도록 하는 단계는 같습니다.  
   
 > [!NOTE]
->  : "사용자 지정 디버그 엔진 디버그" 절차에서에 연결 하기 전에 시작 하는 de 기다려야 합니다. 메시지 상자는 DE 시작 될 때 나타나는 독일의 시작 부분에 배치 하면 해당 지점에 연결할 수 있으며 계속 하려면 메시지 상자의 선택을 취소 한 다음 수 있습니다. 이런 방식으로 catch 할 수 있습니다 모든 DE 이벤트입니다.  
+>  :     "사용자 지정 디버그 엔진 디버그" 절차를 연결 하기 전에 시작 하는 de 기다려야 합니다. 메시지 상자는 DE 시작 될 때 나타나는 독일의 시작 부분에 배치 하면 해당 지점에 연결할 수 있으며 계속 하려면 메시지 상자의 선택을 취소 한 다음 수 있습니다. 이런 방식으로 catch 할 수 있습니다 모든 DE 이벤트입니다.  
   
 > [!WARNING]
 >  원격 디버깅 절차를 시도 하기 전에 설치 해야 합니다. 참조 [원격 디버깅](../../debugger/remote-debugging.md) 세부 정보에 대 한 합니다.  
@@ -76,5 +73,5 @@ ms.locfileid: "49858864"
   
 9. DE 시작 프로세스를 디버깅 하려는 경우를 시작한 후에 독일에 연결 하는 "사용자 지정 디버그 엔진 디버그" 절차의 단계를 수행할 수 있습니다. 이렇게 하면 세 개의 인스턴스가 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 실행: 인스턴스화된 프로젝트 형식 및 사용자 장치에 연결 된 세 번째에 대 한 두 번째 프로젝트 형식이 소스에 하나입니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [사용자 지정 디버그 엔진 만들기](../../extensibility/debugger/creating-a-custom-debug-engine.md)

@@ -1,9 +1,6 @@
 ---
 title: CreateExpInstance 유틸리티 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - experimental builds
@@ -17,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0f7f52f45023106d3e504258a538823c1c8fbb4
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 39aed4f3c02b1467f2fdf975d6443923acd018f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500659"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961104"
 ---
 # <a name="createexpinstance-utility"></a>CreateExpInstance 유틸리티
 사용 된 **CreateExpInstance** 유틸리티를 만들거나 다시 설정 하거나 Visual Studio의 실험적 인스턴스를 삭제 합니다. 디버그 하 고 내부 제품을 변경 하지 않고 Visual Studio 확장을 테스트 하는 실험적 인스턴스를 사용할 수 있습니다.  
@@ -61,5 +58,5 @@ CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSu
   
  **CreateExpInstance.exe /Reset /VSInstance 14.0 = /RootSuffix Exp =**  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [VSPackage](../../extensibility/internals/vspackages.md)

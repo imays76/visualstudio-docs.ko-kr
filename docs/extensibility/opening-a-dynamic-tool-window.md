@@ -1,9 +1,6 @@
 ---
 title: 동적 도구 창 열기 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, dynamic
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d37a72629dfb7c10eeb51bcd2317151447e9edd
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 766582650e8c0d97ea585f8d9f34c48983331d7f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636648"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926465"
 ---
 # <a name="open-a-dynamic-tool-window"></a>동적 도구 창을 열려면
 도구 창은 일반적으로 메뉴에는 해당 하는 바로 가기 명령에서 열립니다. 그러나 때때로 특정 UI 컨텍스트의 적용 되며, UI 컨텍스트가 더 이상 적용 되 면 닫습니다 때마다 열리는 도구 창을 해야 할 수 없습니다. 이러한 유형의 도구 창 이라고 *동적* 하거나 *자동 표시*합니다.  

@@ -1,8 +1,7 @@
 ---
-title: 'CA1404: P-Invoke 다음에 바로 GetLastError를 호출하십시오.'
+title: 'CA1404: P/Invoke 다음에 바로 GetLastError를 호출하세요.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CallGetLastErrorImmediatelyAfterPInvoke
@@ -19,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e9a339a4b665f892c3e3e63c77ba0dee5891df8
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 5ae16f99aefe4411b345a1b135c7f014a1061911
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45552044"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963112"
 ---
 # <a name="ca1404-call-getlasterror-immediately-after-pinvoke"></a>CA1404: P/Invoke 다음에 바로 GetLastError를 호출하십시오.
 
@@ -67,10 +66,10 @@ ms.locfileid: "45552044"
 ## <a name="related-rules"></a>관련된 규칙
  [CA1060: P/Invoke를 NativeMethods 클래스로 이동](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)
 
- [CA1400: P/Invoke 진입점이 있어야 합니다.](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
+ [CA1400: P/Invoke 진입점 있어야 합니다.](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
 
- [CA1401: P/Invoke는 노출되지 않아야 합니다.](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
+ [CA1401: P/Invoke을 표시 해야 합니다.](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
 
- [CA2101: P/Invoke 문자열 인수에 대해 마샬링을 지정합니다.](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
+ [CA2101: P/Invoke 문자열 인수에 대해 마샬링을 지정 하십시오.](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
 
- [CA2205: Win32 API에 있는 동일한 기능의 관리되는 항목을 사용하십시오.](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)
+ [CA2205: 관리 되는 Win32 api를 사용 합니다.](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)

@@ -1,8 +1,7 @@
 ---
-title: 'CA2000: 범위를 벗어나기 전에 개체를 삭제하십시오.'
+title: 'CA2000: 범위를 벗어나기 전에 개체를 삭제하세요.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2000
@@ -20,14 +19,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 041cade3d1c65a40826920b94adf012aa9a4b021
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 0d6aa3574e71cf64e01d083171e8bb477da02265
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549870"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951133"
 ---
-# <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000: 범위를 벗어나기 전에 개체를 삭제하십시오.
+# <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000: 범위를 벗어나기 전에 개체를 삭제하세요.
 
 |||
 |-|-|
@@ -53,7 +52,7 @@ ms.locfileid: "45549870"
 
 - 삭제 가능한 개체의 멤버를 초기화 하지 말아야 사용 하 여 생성자에 문의 합니다.
 
-- 한 가지 예외 처리기로만 보호 되는 생성자를 중첩 합니다. 예를 들어 개체에 적용된
+- 한 가지 예외 처리기로만 보호 되는 생성자를 중첩 합니다. 예를 들면 다음과 같습니다.
 
     ```csharp
     using (StreamReader sr = new StreamReader(new FileStream("C:\myfile.txt", FileMode.Create)))
@@ -70,7 +69,7 @@ ms.locfileid: "45549870"
 ## <a name="related-rules"></a>관련된 규칙
  [CA2213: 삭제 가능한 필드는 삭제해야 합니다.](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
 
- [CA2202: 개체를 여러 번 삭제하지 마십시오.](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)
+ [CA2202: 개체가 여러 번 삭제 하지 마십시오](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)
 
 ## <a name="example"></a>예제
 
@@ -167,7 +166,7 @@ End Function
 
   [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../code-quality/codesnippet/VisualBasic/ca2000-dispose-objects-before-losing-scope-vboverflow_1.vb)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.IDisposable>
 - [삭제 패턴](/dotnet/standard/design-guidelines/dispose-pattern)

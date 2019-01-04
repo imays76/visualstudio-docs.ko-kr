@@ -1,9 +1,6 @@
 ---
 title: 명령을 구현 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - commands, implementation
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f002e660b2c3b745e4a7ea67f715b613b96bd0a
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: ea4240ddf84dc1b475adcf81fe80471c9d1bc2b9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510441"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965423"
 ---
 # <a name="command-implementation"></a>명령 구현
 명령에서 VSPackage를 구현 하려면 다음 작업을 수행 해야 합니다.  
@@ -72,15 +69,15 @@ if ( null != mcs )
   
     -   `OLECMDF_SUPPORTED`: 명령이 지원 됩니다.  
   
-    -   `OLECMDF_INVISIBLE`: 명령을 볼 수 없습니다.  
+    -   `OLECMDF_INVISIBLE`: 명령을 표시 되어야 합니다.  
   
     -   `OLECMDF_LATCHED`: 명령에 설정/해제 하 고 확인 한 후에 나타납니다.  
   
-    -   `OLECMDF_ENABLED`: 명령이 사용 됩니다.  
+    -   `OLECMDF_ENABLED`: 명령이 활성화 됩니다.  
   
-    -   `OLECMDF_DEFHIDEONCTXTMENU`바로 가기 메뉴에 나타나는 경우: 명령을 숨겨야 합니다.  
+    -   `OLECMDF_DEFHIDEONCTXTMENU`: 바로 가기 메뉴에 표시 되는 경우 명령을 숨겨야 합니다.  
   
-    -   `OLECMDF_NINCHED`: 명령이 메뉴 컨트롤러가 고을 사용 하지 않는 하지만 해당 드롭다운 메뉴 목록을 비어 있지 않고 계속 사용할 수 있습니다. (이 플래그는 거의 사용 합니다.)  
+    -   `OLECMDF_NINCHED`: 명령 메뉴 컨트롤러가 고을 사용 하지 않는 하지만 해당 드롭다운 메뉴 목록을 비어 있지 않고 계속 사용할 수 있습니다. (이 플래그는 거의 사용 합니다.)  
   
 -   명령에 정의 된 경우는 *.vsct* 파일을 `TextChanges` 플래그, 다음 매개 변수 설정:  
   
@@ -139,5 +136,5 @@ public int Exec(ref Guid pguidCmdGroup, uint nCmdID, uint nCmdexecopt, IntPtr pv
   
 ```  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Vspackage에서 사용자 인터페이스 요소를 추가 하는 방법](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

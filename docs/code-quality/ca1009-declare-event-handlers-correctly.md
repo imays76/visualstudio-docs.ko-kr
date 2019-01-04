@@ -2,7 +2,6 @@
 title: 'CA1009: 이벤트 처리기를 제대로 선언하십시오.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1009
@@ -20,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 7697b394396f729133b7cb6a7f3c0501c5c45202
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: b56f93a1ea4afbe3c9fd590df937fe56a155b044
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547398"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987656"
 ---
 # <a name="ca1009-declare-event-handlers-correctly"></a>CA1009: 이벤트 처리기를 제대로 선언하십시오.
 
@@ -58,7 +57,7 @@ ms.locfileid: "45547398"
  [!code-vb[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/VisualBasic/ca1009-declare-event-handlers-correctly_1.vb)]
 
 ## <a name="related-rules"></a>관련된 규칙
- [CA2109: 표시되는 이벤트 처리기를 검토하십시오.](../code-quality/ca2109-review-visible-event-handlers.md)
+ [CA2109: 표시 되는 이벤트 처리기를 검토 합니다.](../code-quality/ca2109-review-visible-event-handlers.md)
 
 ## <a name="see-also"></a>참고자료
 

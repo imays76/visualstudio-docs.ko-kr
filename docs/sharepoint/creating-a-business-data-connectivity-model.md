@@ -1,13 +1,8 @@
 ---
 title: 비즈니스 데이터 연결 모델 만들기 | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -20,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 68940d6e48f1f3a3e51017e1cc838976735de104
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2a1feefe5bc338460f359dd6c1a25b50bddf67ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930208"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53957487"
 ---
 # <a name="create-a-business-data-connectivity-model"></a>비즈니스 데이터 연결 모델 만들기
   비즈니스 데이터 연결 (BDC) 모델을 만들 수도 있고 Visual Studio를 사용 하 여 기존 BDC 모델을 사용자 지정할 수 있습니다. 각 SharePoint 프로젝트 모델 하나만 포함할 수 있습니다. 자세한 내용은 [SharePoint 비즈니스 데이터 통합](../sharepoint/integrating-business-data-into-sharepoint.md)합니다.  
@@ -73,5 +68,3 @@ ms.locfileid: "49930208"
 |[방법: SharePoint 프로젝트에 기존 BDC 모델 파일 추가](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)|기존 모델을 SharePoint 프로젝트로 가져오는 방법을 보여 줍니다.|  
 |[방법: 리소스 파일을 사용 하 여 지역화 된 이름, 속성 및 사용 권한을 지정 합니다.](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)|웹 파트 또는 웹 페이지에서 모델을 사용할 경우 모델 메타 데이터와 병합 되는 문자열을 제공 하는 방법에 설명 합니다.|  
 |[방법: BDC 기능에 사용자 지정 어셈블리 포함](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)|기능에서 사용자 지정 어셈블리를 포함 하는 방법을 보여 줍니다.|  
-  
- 

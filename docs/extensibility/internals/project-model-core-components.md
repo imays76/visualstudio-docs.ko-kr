@@ -1,9 +1,6 @@
 ---
 title: 프로젝트 모델 핵심 구성 요소 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project models, objects and interfaces
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 863aef532e90d749f5c9c93a9d16cb2daf7f6c0b
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 91a2d4b1a1457938af9c65a91254b44245eb7824
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495988"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990362"
 ---
 # <a name="project-model-core-components"></a>프로젝트 모델 핵심 구성 요소
 다음 표에서 프로젝트 모델을 확장 합니다. 테이블에 인터페이스 및 인터페이스 모델 및 특정 개체와 연결 된 서비스에서 식별 된 서비스의 간략 한 설명을 제공 합니다. 또한 테이블에는 다른 인터페이스 프로젝트 생성 및 유지 관리의 특정 프로젝트 형식 요구 사항에 따라에서는 선택 사항에 자세히 설명 합니다.  

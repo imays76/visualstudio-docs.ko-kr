@@ -1,9 +1,6 @@
 ---
 title: 상태 표시줄 확장 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - status bars, about status bars
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e072814120f18c7cc1ea09bf0829266958691ba
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: eed1810f91358e514d2cd8085d73c030f81085b3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497916"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962904"
 ---
 # <a name="extend-the-status-bar"></a>상태 표시줄 확장
 정보를 표시 하는 IDE의 아래쪽에 Visual Studio 상태 표시줄을 사용할 수 있습니다.  

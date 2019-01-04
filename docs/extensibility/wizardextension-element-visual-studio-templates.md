@@ -1,6 +1,5 @@
 ---
 title: WizardExtension 요소 (Visual Studio 템플릿) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c12a0e0e1bcccee936a0a324d03f0251d6c1a083
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: c67d85666cc9dd45186b13d9a95ea37eb86447ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561151"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963929"
 ---
 # <a name="wizardextension-element-visual-studio-templates"></a>WizardExtension 요소(Visual Studio 템플릿)
 템플릿 마법사를 사용자 지정에 대 한 등록 요소를 포함 합니다.  

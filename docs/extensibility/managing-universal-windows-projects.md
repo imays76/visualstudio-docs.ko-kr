@@ -1,9 +1,6 @@
 ---
 title: 유니버설 Windows 프로젝트 관리 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4d4039b3d22206afb292e90d46608decd2cfa96a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ce0bee04719a9c984f300d34da09a6b9f6adbb81
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930234"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955804"
 ---
 # <a name="manage-universal-windows-projects"></a>유니버설 Windows 프로젝트 관리
 유니버설 Windows 앱은 Windows 8.1 및 Windows Phone 8.1, 두 가지 플랫폼에서 코드 및 기타 자산을 사용 하는 개발자를 대상으로 하는 앱입니다. 플랫폼 특정 코드 및 리소스를 별도 프로젝트, Windows 및 Windows Phone 대 한 다른 유지 되는 동안 공유 코드 및 리소스를 공유 프로젝트에 유지 됩니다. 유니버설 Windows 앱에 대 한 자세한 내용은 참조 하세요. [유니버설 Windows 앱](https://msdn.microsoft.com/library/windows/apps/dn609832.aspx)합니다. Visual Studio 확장 프로젝트를 관리 하는 유니버설 Windows 앱 프로젝트는 단일 플랫폼 앱에서 다른 구조를 알고 있어야 합니다. 이 연습에서는 공유 프로젝트를 이동 하 고 공유 항목을 관리 하는 방법을 보여 줍니다.  

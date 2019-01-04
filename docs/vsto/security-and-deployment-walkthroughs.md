@@ -1,9 +1,6 @@
 ---
 title: 보안 및 배포 연습
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25a306300b1f5bf477a5435be58aca71ba5d70de
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: e0ce327c620531a1ba5f9a21ccbfd3aeef1c1fa8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671289"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986247"
 ---
 # <a name="security-and-deployment-walkthroughs"></a>보안 및 배포 연습
   다음 항목에는 Office 솔루션을 배포 하는 방법 및 솔루션 실행을 허용 하도록 보안 정책을 설정 하는 방법을 보여 줍니다.  
@@ -51,7 +48,7 @@ ms.locfileid: "50671289"
  [방법: Office 솔루션 배포를 위해 IIS 준비](https://msdn.microsoft.com/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4)  
  배포 매니페스트에 대 한 MIME 형식을 Microsoft 인터넷 정보 서비스 (IIS)를 구성 하는 방법을 설명 합니다.  
   
- [방법: 업데이트에는 Office 솔루션 배포](https://msdn.microsoft.com/be96db53-b6ea-46ab-b8d9-b76b098b3b13)  
+ [방법: 배포 된 Office 솔루션 업데이트](https://msdn.microsoft.com/be96db53-b6ea-46ab-b8d9-b76b098b3b13)  
  사용 하 여 Office 솔루션을 업데이트 하는 방법에 대 한 정보를 제공 합니다 **게시 마법사**합니다.  
   
  [방법: Office 솔루션의 설치 경로 변경](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)  
@@ -76,7 +73,5 @@ ms.locfileid: "50671289"
  [Office 솔루션을 만들고 디자인](../vsto/designing-and-creating-office-solutions.md)  
  솔루션에서 Word 및 Excel 솔루션 및 어셈블리의 역할을 만드는 방법에 대 한 링크를 제공 합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Office 개발 샘플 및 연습](../vsto/office-development-samples-and-walkthroughs.md)  
-  
-  

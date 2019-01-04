@@ -1,9 +1,6 @@
 ---
 title: '방법: 서비스 가져오기 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - services, consuming
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7b28f018ba92ad2ab8a266311ac2e71fd910440
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 635a02daf6f6501679cc2a38cd252b1e1ebec7a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951381"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990031"
 ---
 # <a name="how-to-get-a-service"></a>방법: 서비스 가져오기
 다른 기능에 액세스 하려면 Visual Studio 서비스를 가져올 해야 합니다. 일반적으로 Visual Studio 서비스를 사용할 수 있는 하나 이상의 인터페이스를 제공 합니다. VSPackage에서 대부분의 서비스를 가져올 수 있습니다.  
@@ -53,7 +50,7 @@ ms.locfileid: "49951381"
   
  정적 <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> 메서드는 모든 VSPackage에서 파생 된 처음으로 초기화 되는 캐시 된 서비스 공급자 사용 <xref:Microsoft.VisualStudio.Shell.Package> 배치 됩니다.  
   
- VSPackage는 배치 하기 전에 VSPackage 생성자가 호출 되므로 전역 서비스를 VSPackage 생성자 내에서 일반적으로 사용할 수 없습니다. 참조 [방법: 서비스 문제 해결](../extensibility/how-to-troubleshoot-services.md) 해결 방법에 대 한 합니다.  
+ VSPackage는 배치 하기 전에 VSPackage 생성자가 호출 되므로 전역 서비스를 VSPackage 생성자 내에서 일반적으로 사용할 수 없습니다. [방법: 서비스 문제 해결](../extensibility/how-to-troubleshoot-services.md) 해결 방법에 대 한 합니다.  
   
  도구 창이 나 다른 비 VSPackage 요소에서 서비스 가져오기 방법의 예는 다음과 같습니다.  
   
@@ -70,7 +67,7 @@ if (log == null) return;
  DTE 개체에서 서비스를 이동 하는 방법은 다음과 같습니다.  
   
 ```csharp  
-// Start with the DTE object, for example:   
+// Start with the DTE object, for example:   
 // using EnvDTE;  
 // DTE dte = (DTE)GetService(typeof(DTE));  
   
@@ -86,6 +83,6 @@ if (sp != null)
 ```  
   
 ## <a name="see-also"></a>참고자료  
- [방법: 서비스 제공](../extensibility/how-to-provide-a-service.md)   
+ [방법: 서비스를 제공 합니다.](../extensibility/how-to-provide-a-service.md)   
  [사용 하 고 서비스를 제공 합니다.](../extensibility/using-and-providing-services.md)   
  [서비스 필수 항목](../extensibility/internals/service-essentials.md)

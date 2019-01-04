@@ -2,7 +2,6 @@
 title: 'CA1038: 열거자는 강력한 형식이어야 합니다.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - EnumeratorsShouldBeStronglyTyped
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22cc84a0cdc8d4fdb86f6890ae0ebd25eb65beb8
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 426dbcd4116ee4ff52befbcbd8e9beea62e8cb72
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45545491"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954010"
 ---
 # <a name="ca1038-enumerators-should-be-strongly-typed"></a>CA1038: 열거자는 강력한 형식이어야 합니다.
 
@@ -56,11 +55,11 @@ ms.locfileid: "45545491"
  [!code-csharp[FxCop.Design.IEnumeratorStrongTypes#1](../code-quality/codesnippet/CSharp/ca1038-enumerators-should-be-strongly-typed_1.cs)]
 
 ## <a name="related-rules"></a>관련된 규칙
- [CA1035: ICollection 구현에 강력한 형식의 멤버가 있습니다.](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)
+ [CA1035: ICollection 구현에 강력한 형식의 멤버가](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)
 
- [CA1039: 목록은 강력한 형식이어야 합니다.](../code-quality/ca1039-lists-are-strongly-typed.md)
+ [CA1039: 목록은 강력한 형식](../code-quality/ca1039-lists-are-strongly-typed.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.Collections.IEnumerator?displayProperty=fullName>
 - <xref:System.Collections.CollectionBase?displayProperty=fullName>

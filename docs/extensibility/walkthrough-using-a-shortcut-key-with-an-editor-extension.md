@@ -1,9 +1,6 @@
 ---
-title: '연습: 편집기 확장을 사용 하 여 바로 가기 키 사용 | Microsoft Docs'
-ms.custom: ''
+title: '연습: 편집기 확장에서 바로 가기 키 사용 | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link keystrokes to commands
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d009351efdd36e0d415d0e2e457f7974608ab665
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e669b86a84f21dd6187558fc0a853c875d5d2e71
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886502"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53953013"
 ---
-# <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>연습: 편집기 확장을 사용 하 여 바로 가기 키 사용
+# <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>연습: 편집기 확장을 사용 하 여 바로 가기 키를 사용 합니다.
 편집기 확장에서 바로 가기 키에 대응할 수 있습니다. 다음 연습에는 바로 가기 키를 사용 하 여 보기 장식 텍스트 뷰를 추가 하는 방법을 보여 줍니다. 이 연습에서는 뷰포트 adornment 편집기 템플릿을 기준으로 하며 장식을 사용 하 여 추가할 수 있도록는 + 문자입니다.  
   
 ## <a name="prerequisites"></a>전제 조건  
@@ -80,7 +77,7 @@ Visual Studio 2017 버전 15.6 편집기 확장에서 명령을 처리 하는 �
 3.  KeyBindingCommandFilter 이라는 클래스에서 상속 해야 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>합니다.  
   
     ```csharp  
-    internal class KeyBindingCommandFilter : IOleCommandTarget  
+    internal class KeyBindingCommandFilter : IOleCommandTarget  
     ```  
   
 4.  텍스트 보기에 대 한 전용 필드, 다음 명령을 명령 체인 및 명령 필터가 이미 추가 되어 있는지 여부를 나타내는 플래그를 추가 합니다.  
@@ -88,8 +85,8 @@ Visual Studio 2017 버전 15.6 편집기 확장에서 명령을 처리 하는 �
     ```csharp  
     private IWpfTextView m_textView;  
     internal IOleCommandTarget m_nextTarget;  
-    internal bool m_added;  
-    internal bool m_adorned;  
+    internal bool m_added;  
+    internal bool m_adorned;  
     ```  
   
 5.  텍스트 뷰를 설정 하는 생성자를 추가 합니다.  

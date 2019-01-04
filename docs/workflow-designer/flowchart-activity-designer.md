@@ -3,7 +3,6 @@ title: 워크플로 디자이너-순서도 활동 디자이너
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.Flowchart.UI
 - System.Activities.Statements.FlowStep.UI
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3468e4e09f8e31ae6b3e8bf7a49b7a1c368b3e73
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6aee36a87b6bf9210a880c9b547f8efda08dbe98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877688"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926650"
 ---
 # <a name="flowchart-activity-designer"></a>순서도 활동 디자이너
 
@@ -48,7 +47,7 @@ ms.locfileid: "49877688"
 |<xref:System.Activities.Statements.Flowchart.StartNode%2A>|False|<xref:System.Activities.Statements.FlowNode>를 시작할 때 실행되는 <xref:System.Activities.Statements.Flowchart>입니다.|
 |<xref:System.Activities.Statements.Flowchart.Nodes%2A>|False|<xref:System.Activities.Statements.FlowNode>에 있는 <xref:System.Activities.Statements.Flowchart> 개체 컬렉션을 포함합니다.|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [워크플로](../workflow-designer/flowchart-activity-designers.md)
 - [FlowDecision](../workflow-designer/flowdecision-activity-designer.md)

@@ -1,9 +1,6 @@
 ---
 title: '연습: Word 용 첫 VSTO 추가 기능에 만들기'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cf20b3f742bfc5ff6de6af080f3651f9d9027234
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f8cd238c64b32501a42900d37723c350e84673f1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940972"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948974"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>연습: Word 용 첫 VSTO 추가 기능에 만들기
   이 소개용 연습에서는 Microsoft Office Word용 VSTO 추가 기능을 만드는 방법을 보여 줍니다. 이러한 종류의 솔루션에서 만드는 기능은 열려 있는 문서에 관계없이 응용 프로그램 자체에서 사용할 수 있습니다.  
@@ -124,19 +121,19 @@ ms.locfileid: "49940972"
 ## <a name="next-steps"></a>다음 단계  
  기본적인 Word용 VSTO 추가 기능을 만들었으므로 다음 항목에서 VSTO 추가 기능을 개발하는 방법에 대해 자세히 알아볼 수 있습니다.  
   
--   VSTO 추가 기능에서 수행할 수 있는 일반적인 프로그래밍 작업: [프로그램 VSTO 추가 기능](../vsto/programming-vsto-add-ins.md)합니다.  
+-   VSTO 추가 기능에서 수행할 수 있는 일반적인 프로그래밍 작업: [VSTO 추가 기능 프로그래밍](../vsto/programming-vsto-add-ins.md)합니다.  
   
--   Word VSTO 추가 기능과 관련 된 프로그래밍 작업: [Word 솔루션](../vsto/word-solutions.md)합니다.  
+-   Word VSTO 추가 기능과 관련 된 작업을 프로그래밍 합니다. [Word 솔루션](../vsto/word-solutions.md)합니다.  
   
--   Word 개체 모델 사용: [Word 개체 모델 개요](../vsto/word-object-model-overview.md)합니다.  
+-   Word의 개체 모델 사용: [Word 개체 모델 개요](../vsto/word-object-model-overview.md)합니다.  
   
--   Word의 UI 사용자 지정, 예를 들어에서 리본에 사용자 지정 탭 추가 또는 사용자 고유의 사용자 지정 작업창 만들기: [Office UI 사용자 지정](../vsto/office-ui-customization.md)합니다.  
+-   Word의 UI, 예를 들어, 사용자 지정 리본에 사용자 지정 탭 추가 또는 사용자 고유의 사용자 지정 작업창 만들기: [Office UI 사용자 지정](../vsto/office-ui-customization.md)합니다.  
   
--   빌드 및 Word 용 VSTO 추가 기능 디버깅: [빌드 Office 솔루션](../vsto/building-office-solutions.md)합니다.  
+-   빌드 및 Word 용 VSTO 추가 기능을 디버깅 합니다. [Office 솔루션 빌드](../vsto/building-office-solutions.md)합니다.  
   
 -   Word 용 VSTO 추가 기능 배포: [Office 솔루션 배포](../vsto/deploying-an-office-solution.md)합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Word 솔루션](../vsto/word-solutions.md)   
  [VSTO 추가 기능 프로그래밍](../vsto/programming-vsto-add-ins.md)   
@@ -145,5 +142,3 @@ ms.locfileid: "49940972"
  [Office 솔루션 빌드](../vsto/building-office-solutions.md)   
  [Office 솔루션 배포](../vsto/deploying-an-office-solution.md)   
  [Office 프로젝트 템플릿 개요](../vsto/office-project-templates-overview.md)  
-  
-  

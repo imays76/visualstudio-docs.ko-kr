@@ -1,9 +1,6 @@
 ---
 title: '방법: Office 문서에서 데이터 원본을 프로그래밍 방식으로 캐시'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3db60729facffdfd42553f95215e154de528436f
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: dd125e105681aa389a0c1b213fc5373b1177db6f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804447"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960698"
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>방법: Office 문서에서 데이터 원본을 프로그래밍 방식으로 캐시
   호출 하 여 문서의 데이터 캐시에 데이터 개체를 프로그래밍 방식으로 추가할 수 있습니다는 `StartCaching` 와 같은 호스트의 메서드 항목을 <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Tools.Excel.Workbook>, 또는 <xref:Microsoft.Office.Tools.Excel.Worksheet>합니다. 데이터 개체를 호출 하 여 데이터 캐시에서 제거 된 `StopCaching` 메서드 호스트 항목의 합니다.

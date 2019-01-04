@@ -1,9 +1,6 @@
 ---
 title: ListObject 컨트롤
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.Toolbox.List
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2fe8191acc2bab7fbcfa2f21ef203f6057535a75
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0c488cafabcdffc3bfa56ee59ea4ca163c9d9dd0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674782"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945186"
 ---
 # <a name="listobject-control"></a>ListObject 컨트롤
   <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤은 이벤트를 노출하고, 데이터에 바인딩될 수 있는 목록입니다. 워크시트에 목록을 추가하면 Visual Studio에서 Microsoft Office Excel 개체 모델을 트래버스하지 않고 직접 프로그래밍할 수 있는 <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤을 만듭니다.  
@@ -34,7 +31,7 @@ ms.locfileid: "35674782"
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
 ## <a name="create-the-control"></a>컨트롤 만들기  
- 문서 수준 프로젝트에서는 디자인 타임 또는 런타임에 <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤을 워크시트에 추가할 수 있습니다. VSTO 추가 기능 프로젝트에 추가할 수 있습니다 <xref:Microsoft.Office.Tools.Excel.ListObject> 런타임에만 워크시트에 컨트롤입니다. 자세한 내용은 [방법: 워크시트에 ListObject 추가 제어](../vsto/how-to-add-listobject-controls-to-worksheets.md)입니다.  
+ 문서 수준 프로젝트에서는 디자인 타임 또는 런타임에 <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤을 워크시트에 추가할 수 있습니다. VSTO 추가 기능 프로젝트에 추가할 수 있습니다 <xref:Microsoft.Office.Tools.Excel.ListObject> 런타임에만 워크시트에 컨트롤입니다. 자세한 내용은 [방법: 워크시트에 ListObject 컨트롤 추가](../vsto/how-to-add-listobject-controls-to-worksheets.md)합니다.  
   
 > [!NOTE]  
 >  기본적으로 동적으로 생성된 목록 개체는 워크시트를 닫을 때 워크시트에서 호스트 컨트롤로 유지되지 않습니다. 자세한 내용은 [런타임에 Office 문서에 컨트롤 추가](../vsto/adding-controls-to-office-documents-at-run-time.md)합니다.  
@@ -49,7 +46,7 @@ ms.locfileid: "35674782"
   
  데이터는 <xref:Microsoft.Office.Tools.Excel.ListObject>와 별개이므로 <xref:Microsoft.Office.Tools.Excel.ListObject>를 통해 직접 수행하지 않고 바인딩된 데이터 집합을 통해 데이터를 추가 및 제거해야 합니다. 바인딩된 데이터 집합의 데이터가 임의 메커니즘을 통해 업데이트되면 <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤이 자동으로 변경 내용을 반영합니다. 자세한 내용은 [Office 솔루션의 컨트롤에 데이터 바인딩](../vsto/binding-data-to-controls-in-office-solutions.md)합니다.  
   
- <xref:Microsoft.Office.Tools.Excel.ListObject> 를 데이터 원본에 바인딩하여 <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤을 신속하게 채울 수 있습니다. 데이터 바인딩된 <xref:Microsoft.Office.Tools.Excel.ListObject>에서 데이터를 편집하는 경우 데이터 원본에서도 자동으로 변경됩니다. <xref:Microsoft.Office.Tools.Excel.ListObject> 를 채운 다음 데이터 원본을 수정하지 않고 사용자가 <xref:Microsoft.Office.Tools.Excel.ListObject> 의 데이터를 변경할 수 있게 하려면 <xref:Microsoft.Office.Tools.Excel.ListObject.Disconnect%2A> 메서드를 사용하여 <xref:Microsoft.Office.Tools.Excel.ListObject> 를 데이터 원본에서 분리합니다. 자세한 내용은 참조 하세요. [방법: ListObject 입력 데이터를 사용 하 여 제어](../vsto/how-to-fill-listobject-controls-with-data.md)입니다.  
+ <xref:Microsoft.Office.Tools.Excel.ListObject> 를 데이터 원본에 바인딩하여 <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤을 신속하게 채울 수 있습니다. 데이터 바인딩된 <xref:Microsoft.Office.Tools.Excel.ListObject>에서 데이터를 편집하는 경우 데이터 원본에서도 자동으로 변경됩니다. <xref:Microsoft.Office.Tools.Excel.ListObject> 를 채운 다음 데이터 원본을 수정하지 않고 사용자가 <xref:Microsoft.Office.Tools.Excel.ListObject> 의 데이터를 변경할 수 있게 하려면 <xref:Microsoft.Office.Tools.Excel.ListObject.Disconnect%2A> 메서드를 사용하여 <xref:Microsoft.Office.Tools.Excel.ListObject> 를 데이터 원본에서 분리합니다. 자세한 내용은 [방법: ListObject 컨트롤을 데이터로 채우기](../vsto/how-to-fill-listobject-controls-with-data.md)합니다.  
   
 > [!NOTE]  
 >  겹치는 <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤에서는 데이터 바인딩이 지원되지 않습니다.  
@@ -58,7 +55,7 @@ ms.locfileid: "35674782"
  컨트롤을 먼저 바인딩한 다음 <xref:Microsoft.Office.Tools.Excel.ListObject> 을 호출하여 데이터 집합을 채우면 XML 파일을 데이터 바인딩된 <xref:System.Data.DataSet.ReadXml%2A> 컨트롤로 읽어들이는 속도가 느려집니다. 성능을 개선하려면 컨트롤에 바인딩하기 전에 <xref:System.Data.DataSet.ReadXml%2A> 을 호출합니다.  
   
 ### <a name="disconnect-listobject-controls-from-the-data-source"></a>데이터 원본에서 ListObject 컨트롤 연결 끊기  
- 데이터 원본에 바인딩하여 <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤을 데이터로 채운 다음 연결을 끊어 목록 개체의 데이터를 수정해도 데이터 원본에 영향을 주지 않도록 할 수 있습니다. 자세한 내용은 참조 하세요. [방법: ListObject 입력 데이터를 사용 하 여 제어](../vsto/how-to-fill-listobject-controls-with-data.md)입니다.  
+ 데이터 원본에 바인딩하여 <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤을 데이터로 채운 다음 연결을 끊어 목록 개체의 데이터를 수정해도 데이터 원본에 영향을 주지 않도록 할 수 있습니다. 자세한 내용은 [방법: ListObject 컨트롤을 데이터로 채우기](../vsto/how-to-fill-listobject-controls-with-data.md)합니다.  
   
 ### <a name="restore-column-and-row-order"></a>열 및 행 순서 복원  
  디자인 타임에 문서에 추가된 <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤에 데이터를 바인딩하면 통합 문서를 저장할 때마다 Visual Studio에서 열 및 행 순서를 추적합니다. 사용자가 이동 하는 경우는 <xref:Microsoft.Office.Tools.Excel.ListObject> 열 이나 행 런타임에 새 순서는 통합 문서를 연 다음에 유지 됩니다 및 <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤이 바인딩된 데이터 원본에 다시 합니다.  
@@ -110,13 +107,13 @@ ms.locfileid: "35674782"
   
 -   <xref:Microsoft.Office.Tools.Excel.ListObject.SelectionChange>  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [확장 된 개체를 사용 하 여 Excel 자동화](../vsto/automating-excel-by-using-extended-objects.md)   
  [방법: 워크시트에 ListObject 컨트롤 추가](../vsto/how-to-add-listobject-controls-to-worksheets.md)   
  [방법: ListObject 컨트롤 크기 조정](../vsto/how-to-resize-listobject-controls.md)   
  [방법: ListObject 컨트롤에는 새 행을 추가할 때 데이터 유효성 검사](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md)   
- [방법: 데이터를 지도 ListObject 열](../vsto/how-to-map-listobject-columns-to-data.md)   
- [방법: 데이터를 사용 하 여 채우기 ListObject 컨트롤](../vsto/how-to-fill-listobject-controls-with-data.md)   
+ [방법: 데이터에 ListObject 열 매핑](../vsto/how-to-map-listobject-columns-to-data.md)   
+ [방법: ListObject 컨트롤을 데이터로 채우기](../vsto/how-to-fill-listobject-controls-with-data.md)   
  [Office 개발 샘플 및 연습](../vsto/office-development-samples-and-walkthroughs.md)   
  [Office 솔루션의 컨트롤에 데이터 바인딩](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Word 문서 및 런타임에 VSTO 추가 기능에서 Excel 통합 문서 확장](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
@@ -124,5 +121,3 @@ ms.locfileid: "35674782"
  [런타임에 Office 문서에 컨트롤 추가](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [방법: 데이터베이스의 데이터로 워크시트 채우기](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
  [호스트 항목 및 호스트 컨트롤의 프로그래밍 방식으로 제한 사항](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

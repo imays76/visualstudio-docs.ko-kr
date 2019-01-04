@@ -1,9 +1,6 @@
 ---
 title: '연습: 서버에서 통합 문서에 데이터 삽입'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0c594a15b2f411b9c1360d94f0f41624c11cebcf
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: aeba8355a4d7b9934f045a828efc251500d3e77c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804866"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947142"
 ---
 # <a name="walkthrough-insert-data-into-a-workbook-on-a-server"></a>연습: 서버에서 통합 문서에 데이터 삽입
   이 연습에서는 Microsoft Office Excel 통합 문서에 사용 하 여 Excel을 시작 하지 않고 캐시 된 데이터 집합에 데이터를 삽입 하는 방법에 설명 합니다 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 클래스입니다.
@@ -105,7 +102,7 @@ ms.locfileid: "53804866"
 
     그렇지 않은 경우 **새 연결**을 클릭하고 **연결 추가** 대화 상자를 사용하여 새 연결을 만듭니다. 자세한 내용은 [방법: 데이터베이스의 데이터에에서 연결할](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)합니다.
 
-6. **응용 프로그램 구성 파일에 연결 문자열 저장** 페이지에서 **다음**을 클릭합니다.
+6. **애플리케이션 구성 파일에 연결 문자열 저장** 페이지에서 **다음**을 클릭합니다.
 
 7. 에 **데이터베이스 개체 선택** 페이지에서 **테이블** 선택한 **Product (SalesLT)** 합니다.
 
@@ -295,6 +292,6 @@ ms.locfileid: "53804866"
 
 -   Excel을 시작 하지 않고 캐시 된 데이터 집합에서 데이터를 변경 합니다. 자세한 내용은 [연습: 서버에서 통합 문서에서 캐시 된 데이터 변경](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [연습: 서버에서 통합 문서에서 캐시 된 데이터를 변경 합니다.](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)

@@ -1,9 +1,6 @@
 ---
 title: Visual Studio의 알림 및 진행률 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: aee6e5656142d0597ff6101da5e2e5f690f8fcc5
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 1c0241a16caec1fd25b3ccd177042af3be90a6b9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863955"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942673"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Visual Studio의 알림 및 진행률
 ##  <a name="BKMK_NotificationSystems"></a> 알림 시스템  
@@ -51,7 +48,7 @@ ms.locfileid: "48863955"
 |[Visual Studio 알림 창](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_VSNotificationsToolWindow)|알림 창을 공개적으로 확장할 수 없습니다. 그러나 다양 한 라이선스와 Visual Studio로 또는 패키지에 업데이트 정보 알림을 중요 한 문제를 포함 하 여 Visual Studio에 대 한 메시지를 통신에 사용 됩니다.|다른 유형의 알림 사용 하지 마세요.|  
 |[오류 목록](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ErrorList)|문제 (오류/경고/정보)에 문제가 사용자의 현재 열려 있는 솔루션에 직접 연결을 하는 경우 코드에서 작업을 수행 해야 할 수 있습니다.<br /><br /> 이 예를 포함 합니다.<br /><br /> 컴파일러 메시지 (오류/경고/정보)<br /><br /> 코드에 대 한 코드 분석/진단 메시지<br /><br /> --메시지를 작성 하는 중<br /><br /> 프로젝트 또는 솔루션 파일에 관련 된 문제에 대 한 적절 한 수 있지만 먼저 솔루션 탐색기를 표시 하는 것이 좋습니다.|모든 사용자의 열려 있는 솔루션 코드 관련이 없는 항목에 대 한 사용 하지 마세요.|  
 |편집기 알림: 밝은 전구|열려 있는 파일에 존재 하는 문제를 해결할 수 있는 수정 해야 하는 경우 사용 합니다.<br /><br /> 전구는 또한 주문형, 리팩터링, 같은 사용자의 코드에서 수행 되는 경우 "알림 스타일입니다."를 표시 되지 것입니다 빠른 작업을 호스트 하기 위한 사용 가능|열린 파일에 모든 관계 없는 항목에 대 한 사용 하지 마세요.|  
-|편집기 알림: 물결선|사용 하 여 사용자가 열려 있는 코드 (예를 들어, 오류에 대 한 빨간색 구부러진)의 특정 범위를 사용 하 여 문제를 알립니다.|가 열려 있는 코드의 특정 범위에 있는 항목에 대해 사용 하지 마세요.|  
+|편집기 알림: 오류 표시선|사용 하 여 사용자가 열려 있는 코드 (예를 들어, 오류에 대 한 빨간색 구부러진)의 특정 범위를 사용 하 여 문제를 알립니다.|가 열려 있는 코드의 특정 범위에 있는 항목에 대해 사용 하지 마세요.|  
 |[포함 된 상태 표시줄](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_EmbeddedStatusBars)|사용 하 여 콘텐츠 또는 특정 도구 창, 문서 창 또는 대화 상자 창의 컨텍스트 내에서 프로세스와 관련 된 상태를 제공 합니다.|일반적인 제품 알림, 프로세스 또는 특정 창 내에서 콘텐츠를 모든 관계 없는 항목에 대 한 사용 하지 마세요.|  
 |[Windows 트레이 알림](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_WindowsTray)|-의-out-proc 프로세스에 대 한 알림 화면 또는 응용 프로그램을 도우미를 사용 합니다.|IDE와 관련 된 알림을 사용 하지 마세요.|  
 |[알림 거품형](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_NotificationBubbles)|원격 프로세스를 미리 알리거나 변경 하는 데 **외부** IDE입니다.|프로세스의 사용자에 게 알리기 위한 수단으로 사용 하지 마세요 **내에서** IDE.|  
@@ -250,7 +247,7 @@ ms.locfileid: "48863955"
   
  ![인라인 진행률 메시징](../../extensibility/ux-guidelines/media/0903-09_inlinetext.png "0903 09_InlineText")  
   
- **서버 탐색기 인라인 텍스트: 새로 고치는 중...**  
+ **서버 탐색기 인라인 텍스트: 새로 고치고 있습니다...**  
   
 ##### <a name="tool-windows"></a>도구 창  
  전역 진행률 표시 도구 모음 바로 아래에 배치 부정형 진행률 표시줄을 표시 됩니다.  
@@ -329,13 +326,13 @@ ms.locfileid: "48863955"
 ### <a name="creating-an-infobar"></a>정보 표시줄을 만드는  
  정보 표시줄에 왼쪽에서 오른쪽의 네 가지 섹션이 있습니다.  
   
--   **아이콘:** 아이콘을 추가할 위치입니다 경고 아이콘 같은 정보 표시줄을 표시 하려고 합니다.  
+-   **아이콘:** 이 모든 아이콘을 추가할 위치에 대 한 경고 아이콘 같은 정보 표시줄을 표시 하려는.  
   
 -   **텍스트:** 필요한 경우 텍스트에 있는 링크와 함께, 시나리오/상황 사용자를 설명 하는 텍스트는 추가할 수 있습니다. 텍스트를 간결 하 게 유지 하도록 기억 합니다.  
   
--   **작업:** 링크와 단추를 사용자에 정보 표시줄에 수행할 수 있는 작업에 대 한이 섹션에 포함 해야 합니다.  
+-   **작업의 경우:** 이 섹션에는 링크와 단추를 사용자에 정보 표시줄에 수행할 수 있는 작업에 대 한 포함 되어야 합니다.  
   
--   **닫기 단추:** 오른쪽 마지막 섹션에 닫기 단추가 있습니다.  
+-   **닫기 단추.** 마지막 섹션 오른쪽에 닫기 단추를 가질 수 있습니다.  
   
 #### <a name="creating-a-standard-infobar-in-managed-code"></a>관리 코드에서 표준 infobar 만들기  
  InfoBarModel 클래스 정보 표시줄에 대 한 데이터 소스를 만드는 데 사용할 수 있습니다. 이러한 네 가지 생성자 중 하나를 사용 합니다.  

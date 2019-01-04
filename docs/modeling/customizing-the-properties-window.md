@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 76e7b9433fe76464e7af385081ac3577d53919e1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 42f1f99cd8d5d8bc214b3a7ccde571d2a45a7d4a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813899"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987342"
 ---
 # <a name="customizing-the-properties-window"></a>속성 창 사용자 지정
 도메인 특정 언어 (DSL) Visual Studio에서의 모양 및 동작의 속성 창 사용자 지정할 수 있습니다. DSL 정의에서 각 도메인 클래스에 도메인 속성을 정의합니다. 기본적으로 모델 탐색기 또는 다이어그램에서 클래스의 인스턴스를 선택 하면 속성 창에서 모든 도메인 속성 나열 됩니다. 이 수 다이어그램에서 셰이프 필드에 매핑되지 않은 하는 경우에 하 고 도메인 속성의 값을 편집 합니다.
@@ -24,7 +23,7 @@ ms.locfileid: "49813899"
 ## <a name="names-descriptions-and-categories"></a>이름, 설명 및 범주
  **이름 및 표시 이름을**입니다. 도메인 속성의 정의에서 속성의 표시 이름 속성 창에서 런타임에 표시 되는 이름입니다. 반면, 이름 속성을 업데이트 하는 프로그램 코드를 작성 하는 경우 사용 됩니다. 이름에는 올바른 CLR 영숫자 이름 이어야 합니다. 하지만 표시 이름은 공백을 포함할 수 있습니다.
 
- DSL 정의에서 속성의 이름으로 설정 하면 해당 표시 이름은 이름의 복사본을 자동 설정 됩니다. 표시 이름 공간을 자동으로 포함 됩니다 "FuelGauge"와 같은 파스칼식 대/소문자 이름, 작성 하는 경우: "연료 계기"입니다. 그러나 다른 값으로 명시적으로 표시 이름을 설정할 수 있습니다.
+ DSL 정의에서 속성의 이름으로 설정 하면 해당 표시 이름은 이름의 복사본을 자동 설정 됩니다. "FuelGauge"와 같은 파스칼식 대/소문자 이름, 작성 하는 경우 표시 이름을 공간을 자동으로 포함 됩니다. "연료 계기"입니다. 그러나 다른 값으로 명시적으로 표시 이름을 설정할 수 있습니다.
 
  **설명**합니다. 도메인 속성 설명은 두 곳에 나타납니다.
 
@@ -41,7 +40,7 @@ ms.locfileid: "49813899"
 
  모양에 노출할 수 있습니다 합니다 **FillColor**, **OutlineColor**를 **TextColor**를 **OutlineDashStyle**,  **OutlineThickness** 하 고 **FillGradientMode** 속성입니다. 커넥터를 노출할 수 있습니다 합니다 **색**`,`**TextColor**를 **DashStyle**, 및 **두께** 속성입니다. 다이어그램에 노출할 수 있습니다 합니다 **FillColor** 하 고 **TextColor** 속성입니다.
 
-## <a name="forwarding-displaying-properties-of-related-elements"></a>전달: 관련 요소의 속성 표시
+## <a name="forwarding-displaying-properties-of-related-elements"></a>전달 합니다. 관련 요소의 속성 표시
  DSL의 사용자가 모델에서 요소를 선택 하면 속성 창에서 해당 요소의 속성이 표시 됩니다. 그러나 지정 된 관련 요소의 속성을 표시할 수 있습니다. 함께 작동 하는 요소 그룹을 정의 하는 경우에 유용 합니다. 예를 들어, 기본 요소 및 선택적 플러그 인 요소를 정의할 수 있습니다. 기본 요소는 도형에 매핑된 다른 경우 한 요소에 있는 것 처럼 해당 속성을 보려는 유용 합니다.
 
  이 효과 라고 *속성 전달*, 여러 사례에서 자동으로 발생 합니다. 다른 경우에는 도메인 형식 설명자를 정의 하 여 전달 하는 속성을 얻을 수 있습니다.
@@ -181,7 +180,7 @@ ms.locfileid: "49813899"
 > [!NOTE]
 >  별도 코드 파일에서 코드를 추가 합니다 **Dsl** 프로젝트입니다.
 
- 예를 들어:
+ 예:
 
 ```csharp
 internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
@@ -218,7 +217,7 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
 (typeof(MyTypeConverter))]
 ```
 
- <xref:System.ComponentModel.TypeConverter>에서 파생된 클래스를 정의합니다. 별도 파일에 코드를 추가 합니다 **Dsl** 프로젝트입니다. 예를 들어:
+ <xref:System.ComponentModel.TypeConverter>에서 파생된 클래스를 정의합니다. 별도 파일에 코드를 추가 합니다 **Dsl** 프로젝트입니다. 예:
 
 ```csharp
 /// <summary>
