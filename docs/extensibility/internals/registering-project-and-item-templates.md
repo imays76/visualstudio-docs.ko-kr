@@ -1,9 +1,6 @@
 ---
 title: 프로젝트 및 항목 템플릿 등록 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], adding items
@@ -17,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fea06b4e36b35266f39dc07d58a29c1b53310b57
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9bf60283dd56268ff7b47b5f0e81ebb23ee28197
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934602"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930624"
 ---
 # <a name="registering-project-and-item-templates"></a>프로젝트 템플릿 및 항목 템플릿 등록
 프로젝트 형식에는 해당 프로젝트 및 프로젝트 항목 템플릿을 위치한 디렉터리를 등록 해야 합니다. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 에 표시할 작업을 결정 하 여 프로젝트 형식과 연결 된 등록 정보를 사용 하는 **새 프로젝트 추가** 하 고 **새 항목 추가** 대화 상자.  
@@ -44,7 +41,7 @@ ms.locfileid: "49934602"
 |----------|----------|-----------------|  
 |@|REG_SZ|이러한 종류의 프로젝트의 기본 이름입니다.|  
 |DisplayName|REG_SZ|패키지에서 등록 하는 위성 DLL에서에서 검색할 이름의 리소스 ID입니다.|  
-|패키지|REG_SZ|패키지에서 등록 된 패키지의 클래스 ID입니다.|  
+|Package|REG_SZ|패키지에서 등록 된 패키지의 클래스 ID입니다.|  
 |ProjectTemplatesDir|REG_SZ|프로젝트 템플릿 파일의 기본 경로입니다. 프로젝트 템플릿 파일에서 표시 되는 **새 프로젝트** 템플릿.|  
 
 ### <a name="registering-item-templates"></a>등록 항목 템플릿  

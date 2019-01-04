@@ -1,9 +1,6 @@
 ---
 title: 언어 서버 프로토콜 확장 추가 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/14/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c583b9af65610340886794c03cb92be945b73d4
-ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
+ms.openlocfilehash: ad112d34c8f23a7738137f148f00a38a27335424
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53425866"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966562"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>언어 서버 프로토콜 확장 추가
 
@@ -293,7 +290,7 @@ LSP 언어 서버에 대 한 지원을 추가 하지 않아도 Visual Studio에�
 
 LSP 언어 서비스 확장에 설정에 대 한 지원을 추가 하려면 아래이 단계를 수행 합니다.
 
-1. JSON 파일을 추가 (예를 들어 *MockLanguageExtensionSettings.json*) 설정 및 기본값을 포함 하는 프로젝트에서. 예를 들면 다음과 같습니다.
+1. JSON 파일을 추가 (예를 들어 *MockLanguageExtensionSettings.json*) 설정 및 기본값을 포함 하는 프로젝트에서. 예를 들어:
 
    ```json
    {
@@ -313,12 +310,19 @@ LSP 언어 서비스 확장에 설정에 대 한 지원을 추가 하려면 아�
       }
    }
    ```
+
 4. .Pkgdef 파일을 프로젝트에 추가 (새 텍스트 파일을 추가 하 고.pkgdef 파일 확장명이 변경). Pkgdef 파일에는이 정보를 포함 되어야 합니다.
 
    ```xml
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\[settings-name]]
     @="$PackageFolder$\[settings-file-name].json"
    ```
+
+    예제:
+    ```xml
+    [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\MockLanguageExtension]
+    @="$PackageFolder$\MockLanguageExtensionSettings.json"
+    ```
 
 5. .Pkgdef 파일을 마우스 오른쪽 단추로 클릭 하 고 선택 **속성**합니다. 변경 합니다 **빌드** 작업을 **콘텐츠** 하며 **VSIX에 포함** 속성을 true로 합니다.
 
@@ -334,7 +338,7 @@ LSP 언어 서비스 확장에 설정에 대 한 지원을 추가 하려면 아�
 
 1. 사용자는 서버를 소유 하는 파일이 포함 된 작업 영역을 엽니다.
 2. 사용자의 파일을 추가 합니다 *.vs* 라는 폴더 *VSWorkspaceSettings.json*합니다.
-3. 줄을 추가 하는 사용자를 *VSWorkspaceSettings.json* 파일 서버에서 제공 하는 설정에 대 한 합니다. 예를 들면 다음과 같습니다.
+3. 줄을 추가 하는 사용자를 *VSWorkspaceSettings.json* 파일 서버에서 제공 하는 설정에 대 한 합니다. 예를 들어:
 
    ```json
    {

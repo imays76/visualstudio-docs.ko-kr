@@ -1,9 +1,6 @@
 ---
 title: BP_ERROR_TYPE | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - BP_ERROR_TYPE
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f61247bafe95039b89b43e740ce69693b584604f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3c16d3a9658f2e53a651f7a5201bc5f04d48413c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866341"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989479"
 ---
 # <a name="bperrortype"></a>BP_ERROR_TYPE
 중단점 오류 유형을 지정 합니다.  
@@ -28,7 +25,7 @@ ms.locfileid: "49866341"
 ## <a name="syntax"></a>구문  
   
 ```cpp  
-enum enum_BP_ERROR_TYPE {   
+enum enum_BP_ERROR_TYPE {   
    BPET_NONE            = 0x00000000,  
    BPET_TYPE_WARNING    = 0x00000001,  
    BPET_TYPE_ERROR      = 0x00000002,  
@@ -45,7 +42,7 @@ typedef DWORD BP_ERROR_TYPE;
 ```  
   
 ```csharp  
-public enum enum_BP_ERROR_TYPE {   
+public enum enum_BP_ERROR_TYPE {   
    BPET_NONE            = 0x00000000,  
    BPET_TYPE_WARNING    = 0x00000001,  
    BPET_TYPE_ERROR      = 0x00000002,  
@@ -102,9 +99,9 @@ public enum enum_BP_ERROR_TYPE {
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>참고 항목  
  [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

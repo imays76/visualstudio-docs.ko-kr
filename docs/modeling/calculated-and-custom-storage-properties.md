@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: f54589d70bc7cab3959d7f0a7ad2a84d3b028754
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f86082c1b382904dc721d3caab54bf6d18418096
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877194"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938323"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>계산된 저장소 속성 및 사용자 지정 저장소 속성
 도메인 특정 언어 (DSL)의 모든 도메인 속성에 언어 탐색기에서 다이어그램에 사용자에 게 표시 하 고 프로그램 코드에서 액세스할 수 있습니다. 그러나 속성은 해당 값을 저장 하는 방식에서 다릅니다.
@@ -45,7 +44,7 @@ ms.locfileid: "49877194"
 
 4.  **빌드** 메뉴에서 **솔루션 빌드**를 클릭합니다.
 
-     다음과 같은 오류 메시지가: "*YourClass* Get에 대 한 정의가 없습니다*YourProperty*."
+     다음과 같은 오류 메시지가 표시됩니다. "*YourClass* Get에 대 한 정의가 없습니다*YourProperty*."
 
 5.  오류 메시지를 두 번 클릭 합니다.
 

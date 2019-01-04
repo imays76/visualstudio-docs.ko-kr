@@ -3,8 +3,6 @@ title: '&lt;formRegion&gt; 요소 (Visual Studio에서 Office 개발)'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a5908ef088b1723b62fdf5122ec3bf78a166d254
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 86aa6b715a99c962a2f0fd627dd6d3fb7618108a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53801916"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987695"
 ---
 # <a name="ltformregiongt-element-office-development-in-visual-studio"></a>&lt;formRegion&gt; 요소 (Visual Studio에서 Office 개발)
   `formRegion` 의 요소를 `vstov4` 네임 스페이스는에서 VSTO 추가 기능을 사용 하 여 연결 된 Microsoft Office Outlook 양식 영역을 식별 합니다.
@@ -59,7 +57,7 @@ ms.locfileid: "53801916"
 |`name`|필수 요소. 양식 영역과 관련된 양식을 식별합니다.|
 
 ## <a name="example"></a>예제
- 다음 코드 예제에서는 `formRegion` 을 사용하여 배포된 Outlook VSTO 추가 기능에 대한 응용 프로그램 매니페스트의 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]요소를 보여 줍니다. 이 양식 영역과 관련된 세 개의 메시지 클래스가 있습니다. 이 코드 예제는에서 제공 하는 더 큰 예제의 일부입니다 [Office 솔루션에 대 한 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)합니다.
+ 다음 코드 예제에서는 `formRegion` 을 사용하여 배포된 Outlook VSTO 추가 기능에 대한 애플리케이션 매니페스트의 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]요소를 보여 줍니다. 이 양식 영역과 관련된 세 개의 메시지 클래스가 있습니다. 이 코드 예제는에서 제공 하는 더 큰 예제의 일부입니다 [Office 솔루션에 대 한 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)합니다.
 
 ```xml
 <vstov4:formRegion

@@ -1,9 +1,6 @@
 ---
 title: XmlMappedRange 컨트롤
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,19 +14,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9cf21ceda64fe79996e05426a3379972c3c4be33
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f19bf36b145a5f2c1b4e841a96cdd485a0fb6ac1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674999"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946706"
 ---
 # <a name="xmlmappedrange-control"></a>XmlMappedRange 컨트롤
   <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> 컨트롤은 반복 되지 않는 스키마 요소는 Microsoft Office Excel에서 셀에 매핑될 때에 생성 되는 범위입니다. 예를 들어 경우는 `maxOccurs` 스키마 요소의 특성에는 1과 같습니다. Visual Studio에서 XML이 매핑된 범위의 만든 후 Excel 개체 모델을 트래버스 하지 않고 직접 프로그래밍할 수 있습니다. 삭제할 수 있습니다는 <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> 요소 매핑이 제거 되는 경우 Excel 내에서 제어 합니다.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
- ![비디오 링크](../vsto/media/playvideo.gif "비디오 링크") 관련된 비디오 데모를 참조 하세요. [How do i: 사용 하 여 XML 매핑 Excel에서?](http://go.microsoft.com/fwlink/?LinkID=130288)합니다.  
+ ![비디오 링크](../vsto/media/playvideo.gif "비디오 링크") 관련된 비디오 데모를 참조 하세요. [어떻게 할까요? Excel에서 XML 매핑 사용 ](http://go.microsoft.com/fwlink/?LinkID=130288).  
   
 ## <a name="bind-data-to-the-control"></a>컨트롤에 데이터 바인딩  
  <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> 컨트롤은 단일 데이터 필드 (단순 데이터 바인딩)에 대 한 바인딩을 지원 합니다. <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤 수 복잡 한 데이터 바인딩을 지원 하 고 반복 스키마 요소는 셀에 매핑될 때 자동으로 만들어집니다. 자세한 내용은 [ListObject 컨트롤](../vsto/listobject-control.md)합니다.  
@@ -60,11 +57,9 @@ ms.locfileid: "35674999"
   
 -   <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.SelectionChange>  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [확장 된 개체를 사용 하 여 Excel 자동화](../vsto/automating-excel-by-using-extended-objects.md)   
  [방법: 워크시트에 XMLMappedRange 컨트롤 추가](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)   
  [Office 솔루션의 컨트롤에 데이터 바인딩](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [방법: Visual Studio 내에서 워크시트에 스키마 매핑](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)   
  [호스트 항목 및 호스트 컨트롤의 프로그래밍 방식으로 제한 사항](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

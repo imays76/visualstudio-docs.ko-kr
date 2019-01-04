@@ -1,9 +1,6 @@
 ---
-title: '연습: Outlook에서 전자 메일 메시지를 사용 하 여 사용자 지정 작업창을 표시'
-ms.custom: ''
+title: '연습: Outlook에서 전자 메일 메시지를 사용 하 여 사용자 지정 작업창을 표시 합니다.'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1c25121e96005486450397938aad3c24f89d26cc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 322cb9b2136adab37a4506b8332d7d6477ab75ea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828470"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926588"
 ---
-# <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>연습: Outlook에서 전자 메일 메시지를 사용 하 여 사용자 지정 작업창을 표시
+# <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>연습: Outlook에서 전자 메일 메시지를 사용 하 여 사용자 지정 작업창을 표시 합니다.
   이 연습에는 만들거나 열린 각 메일 메시지를 사용 하 여 사용자 지정 작업창의 고유 인스턴스를 표시 하는 방법을 보여 줍니다. 사용자는 각 메일 메시지의 리본에 있는 단추를 사용하여 사용자 지정 작업창을 표시하거나 숨길 수 있습니다.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -60,14 +57,14 @@ ms.locfileid: "49828470"
   
 - Microsoft [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] 또는 Microsoft Outlook 2010  
   
-  ![비디오 링크](../vsto/media/playvideo.gif "비디오 링크") 관련된 비디오 데모를 참조 하세요. [How do i: 사용 하 여 Outlook에서 작업창?](http://go.microsoft.com/fwlink/?LinkID=130309)합니다.  
+  ![비디오 링크](../vsto/media/playvideo.gif "비디오 링크") 관련된 비디오 데모를 참조 하세요. [어떻게 할까요? Outlook에서 작업창 사용 ](http://go.microsoft.com/fwlink/?LinkID=130309).  
   
 ## <a name="create-the-project"></a>프로젝트를 만듭니다.  
  사용자 지정 작업창은 VSTO 추가 기능에서 구현됩니다. Outlook 용 VSTO 추가 기능 프로젝트를 만들어 시작 합니다.  
   
 ### <a name="to-create-a-new-project"></a>새 프로젝트를 만들려면  
   
-1.  이름이 **OutlookMailItemTaskPane** 인 **Outlook 추가 기능**프로젝트를 만듭니다. **Outlook 추가 기능** 프로젝트 템플릿을 사용합니다. 자세한 내용은 [방법: Visual Studio에서 만드는 Office 프로젝트](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
+1.  이름이 **OutlookMailItemTaskPane** 인 **Outlook 추가 기능**프로젝트를 만듭니다. **Outlook 추가 기능** 프로젝트 템플릿을 사용합니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 에서는 *ThisAddIn.cs* 또는 *ThisAddIn.vb* 코드 파일을 열고 **OutlookMailItemTaskPane** 프로젝트를 **솔루션 탐색기**에 추가합니다.  
   
@@ -267,7 +264,7 @@ ms.locfileid: "49828470"
   
 -   VSTO 추가 기능에서 다른 응용 프로그램에 대 한 사용자 지정 작업창을 만듭니다. 사용자 지정 작업창을 지 원하는 응용 프로그램에 대 한 자세한 내용은 참조 하세요. [사용자 지정 작업창](../vsto/custom-task-panes.md)합니다.  
   
--   사용자 지정 작업창을 사용하여 Microsoft Office 응용 프로그램을 자동화합니다. 자세한 내용은 [연습: 사용자 지정 작업창에서 응용 프로그램을 자동화](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)합니다.  
+-   사용자 지정 작업창을 사용하여 Microsoft Office 애플리케이션을 자동화합니다. 자세한 내용은 [연습: 사용자 지정 작업창에서 응용 프로그램을 자동화](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)합니다.  
   
 -   Excel에서 사용자 지정 작업창을 숨기거나 표시하는 데 사용할 수 있는 리본 단추를 만듭니다. 자세한 내용은 [연습: 사용자 지정 작업창과 리본 단추 동기화](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)합니다.  
   
@@ -275,9 +272,7 @@ ms.locfileid: "49828470"
  [사용자 지정 작업창](../vsto/custom-task-panes.md)   
  [방법: 응용 프로그램에 사용자 지정 작업창 추가](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
  [연습: 사용자 지정 작업창에서 응용 프로그램을 자동화](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
- [연습:는 사용자 지정 작업창과 리본 단추 동기화](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   
+ [연습: 사용자 지정 작업창과 리본 단추 동기화](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   
  [리본 개요](../vsto/ribbon-overview.md)   
  [Outlook 개체 모델 개요](../vsto/outlook-object-model-overview.md)   
  [런타임에 리본 메뉴에 액세스](../vsto/accessing-the-ribbon-at-run-time.md)  
-  
-  

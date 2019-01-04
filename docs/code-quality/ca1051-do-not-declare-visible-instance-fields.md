@@ -1,8 +1,7 @@
 ---
-title: 'CA1051: 표시되는 인스턴스 필드를 선언하지 마십시오.'
+title: 'CA1051: 표시되는 인스턴스 필드를 선언하지 마세요.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1051
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f907b1d8626e8babc88137ed70cf6330386ab92a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b85fe5458dc4395ab7f1e119c3da90b685c96410
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832201"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944472"
 ---
-# <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051: 표시되는 인스턴스 필드를 선언하지 마십시오.
+# <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051: 표시되는 인스턴스 필드를 선언하지 마세요.
 
 |||
 |-|-|
@@ -52,7 +51,7 @@ ms.locfileid: "49832201"
  [!code-csharp[FxCop.Design.TypesPublicInstanceFields#1](../code-quality/codesnippet/CSharp/ca1051-do-not-declare-visible-instance-fields_1.cs)]
 
 ## <a name="related-rules"></a>관련된 규칙
- [CA2112: 보안 형식은 필드를 노출하면 안 됩니다.](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
+ [CA2112: 보안된 형식은 필드를 노출 해야](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
 
 ## <a name="see-also"></a>참고자료
  [링크 요청](/dotnet/framework/misc/link-demands)

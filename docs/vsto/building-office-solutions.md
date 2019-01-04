@@ -1,8 +1,6 @@
 ---
 title: Office 솔루션 빌드
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -29,12 +27,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 00df7bded676fdae89dc6fb44e9e89fac814504e
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 8733c4e068bd7c4be2674e302707b81cc180cfd8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803924"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963245"
 ---
 # <a name="build-office-solutions"></a>Office 솔루션 빌드
   일반적으로 Office 프로젝트를 빌드하고 디버깅하는 것은 Windows Forms와 같이 Visual Studio에서 다른 형식의 프로젝트를 빌드하고 디버깅하는 것과 같습니다. 이 섹션의 항목에서는 차이점에 대해 설명합니다. 응용 프로그램을 빌드하는 방법에 대 한 일반 정보를 참조 하세요. [Visual Studio에서 컴파일 및 빌드](../ide/compiling-and-building-in-visual-studio.md)합니다.
@@ -59,7 +57,7 @@ ms.locfileid: "53803924"
 -   프로그램 데이터베이스 (*PDB*) 파일입니다.
 
 > [!NOTE]
->  로컬 컴퓨터 대신 원격 위치에 문서 수준의 솔루션을 빌드하는 경우 응용 프로그램의 보안 센터에서 신뢰할 수 있는 위치 목록에 정규화된 경로를 추가합니다. 자세한 내용은의 문서에 신뢰 부여 라는 섹션을 참조 하세요 [Secure Office 솔루션](../vsto/securing-office-solutions.md)합니다.
+>  로컬 컴퓨터 대신 원격 위치에 문서 수준의 솔루션을 빌드하는 경우 애플리케이션의 보안 센터에서 신뢰할 수 있는 위치 목록에 정규화된 경로를 추가합니다. 자세한 내용은의 문서에 신뢰 부여 라는 섹션을 참조 하세요 [Secure Office 솔루션](../vsto/securing-office-solutions.md)합니다.
 
 ### <a name="application-level-projects"></a>응용 프로그램 수준 프로젝트
  VSTO 추가 기능 프로젝트를 빌드하면 프로젝트 출력에 다음 항목이 포함 됩니다.
@@ -105,7 +103,7 @@ ms.locfileid: "53803924"
  플랫폼 대상을 x64로 설정하는 경우 솔루션이 32비트 버전의 Windows 또는 Office에서는 실행되지 않습니다. x64 플랫폼 대상은 64비트 프로세스에서 실행되는 솔루션이 필요합니다.
 
 ## <a name="use-the-clean-command"></a>정리 명령을 사용 하 여
- 개발 컴퓨터에서 빌드된 프로젝트 파일을 제거하려면 **의** 빌드 **메뉴에서** 정리 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]명령을 사용하면 됩니다. **정리** 명령은 빌드 출력 위치에 있는 모든 파일을 삭제합니다. 또한 응용 프로그램 수준 프로젝트에서 **정리** 명령은 빌드 프로세스에서 만들어지는 레지스트리 항목을 제거합니다.
+ 개발 컴퓨터에서 빌드된 프로젝트 파일을 제거하려면 **의** 빌드 **메뉴에서** 정리 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]명령을 사용하면 됩니다. **정리** 명령은 빌드 출력 위치에 있는 모든 파일을 삭제합니다. 또한 애플리케이션 수준 프로젝트에서 **정리** 명령은 빌드 프로세스에서 만들어지는 레지스트리 항목을 제거합니다.
 
 ## <a name="related-topics"></a>관련 항목
 

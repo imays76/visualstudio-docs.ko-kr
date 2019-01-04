@@ -1,9 +1,6 @@
 ---
 title: 종료 및 분리 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - programs, termination events
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 143b3a266bab8ad48f7f431234d1bf50c16c9de4
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: aa26d994418d411bfccc5279e9eb6bf84a8a2772
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276925"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934640"
 ---
 # <a name="termination-and-detaching"></a>종료 및 분리
 다음 섹션에서는 정상 종료를 설명합니다.  
@@ -29,5 +26,5 @@ ms.locfileid: "39276925"
   
  보내야 하는 [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) 정상 종료를 구현 합니다. 정상 종료 실행 되어야 합니다 [IDebugProgramDestroyEvent2::GetExitCode](../../extensibility/debugger/reference/idebugprogramdestroyevent2-getexitcode.md) 메서드.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [사용자 지정 디버그 엔진 만들기](../../extensibility/debugger/creating-a-custom-debug-engine.md)

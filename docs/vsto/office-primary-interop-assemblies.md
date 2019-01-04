@@ -1,9 +1,6 @@
 ---
 title: Office 주 Interop 어셈블리
-ms.custom: ''
 ms.date: 09/20/2018
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,16 +14,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b44352996c1f6cf343f8100abb4f75814765c22a
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: f83a2b61a80616fdcdb8b48c7501b4fa47f0b99c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672992"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926738"
 ---
 # <a name="office-primary-interop-assemblies"></a>Office 주 Interop 어셈블리
 
-Office 프로젝트에서 Microsoft Office 응용 프로그램의 기능을 사용하려면 응용 프로그램용 PIA(주 interop 어셈블리)를 사용해야 합니다. PIA를 사용하면 관리 코드가 Microsoft Office 응용 프로그램의 COM 기반 개체 모델과 상호 작용할 수 있습니다.  
+Office 프로젝트에서 Microsoft Office 애플리케이션의 기능을 사용하려면 애플리케이션용 PIA(주 interop 어셈블리)를 사용해야 합니다. PIA를 사용하면 관리 코드가 Microsoft Office 애플리케이션의 COM 기반 개체 모델과 상호 작용할 수 있습니다.  
   
 새 Office 프로젝트를 만들 때 Visual Studio는 프로젝트를 빌드하는 데 필요한 PIA에 대한 참조를 추가합니다. Microsoft Office Excel용 프로젝트에서 Microsoft Office Word 기능을 사용해야 하는 등의 경우에는 추가 PIA에 대한 참조를 추가해야 할 수도 있습니다.  
   
@@ -80,9 +77,9 @@ Visual Studio는 이러한 PIA 복사본을 개발 컴퓨터의 다음 위치에
 
 ## <a name="use-features-of-multiple-microsoft-office-applications-in-a-single-project"></a>단일 프로젝트에서 여러 Microsoft Office 응용 프로그램의 기능을 사용 합니다.  
 
-Visual Studio의 각 Office 프로젝트 템플릿은 단일 Microsoft Office 응용 프로그램에서 사용하도록 설계되어 있습니다. 여러 Microsoft Office 응용 프로그램에서 기능을 사용하거나 Visual Studio에 프로젝트가 없는 응용 프로그램 또는 구성 요소에서 기능을 사용하려면 필요한 PIA에 대한 참조를 추가해야 합니다.  
+Visual Studio의 각 Office 프로젝트 템플릿은 단일 Microsoft Office 애플리케이션에서 사용하도록 설계되어 있습니다. 여러 Microsoft Office 애플리케이션에서 기능을 사용하거나 Visual Studio에 프로젝트가 없는 애플리케이션 또는 구성 요소에서 기능을 사용하려면 필요한 PIA에 대한 참조를 추가해야 합니다.  
   
-대부분의 경우, 아래에서 Visual Studio가 설치 되는 Pia에 대 한 참조를 추가 해야 합니다 `%ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\` 디렉터리입니다. 이러한 버전의 어셈블리에 표시 합니다 **프레임 워크** 탭의 **참조 관리자** 대화 상자. 자세한 내용은 [방법: 주 interop 어셈블리를 통해 대상 Office 응용 프로그램](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)합니다.  
+대부분의 경우, 아래에서 Visual Studio가 설치 되는 Pia에 대 한 참조를 추가 해야 합니다 `%ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\` 디렉터리입니다. 이러한 버전의 어셈블리에 표시 합니다 **프레임 워크** 탭의 **참조 관리자** 대화 상자. 자세한 내용은 [방법: 주 interop 어셈블리를 통해 Office 응용 프로그램을 대상](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)합니다.  
   
 전역 어셈블리 캐시에서 PIA를 설치 및 등록한 경우 이러한 어셈블리 버전은 **참조 관리자** 대화 상자의 **COM** 탭에 표시됩니다. 이러한 어셈블리 버전에 대한 참조는 추가해서는 안 됩니다. 해당 버전을 사용하는 경우 몇 가지 개발 문제가 발생할 수 있습니다. 예를 들어 전역 어셈블리 캐시에 여러 PIA 버전을 등록한 경우에는 **참조 관리자** 대화 상자의 **COM** 탭에서 다른 어셈블리 버전을 지정하더라도 프로젝트는 마지막으로 등록된 어셈블리 버전에 자동으로 바인딩됩니다.  
   
@@ -97,7 +94,7 @@ Visual Studio의 각 Office 프로젝트 템플릿은 단일 Microsoft Office �
 
 <br/>
 
-|Office 응용 프로그램 또는 구성 요소|주 interop 어셈블리 이름|  
+|Office 애플리케이션 또는 구성 요소|주 interop 어셈블리 이름|  
 |-------------------------------------|-----------------------------------|  
 |Microsoft Access 14.0 개체 라이브러리<br /><br /> Microsoft Access 15.0 개체 라이브러리|Microsoft.Office.Interop.Access.dll|  
 |Microsoft Office 14.0 Access 데이터베이스 엔진 개체 라이브러리<br /><br /> Microsoft Office 15.0 Access 데이터베이스 엔진 개체 라이브러리|Microsoft.Office.Interop.Access.Dao.dll|  
@@ -106,14 +103,14 @@ Visual Studio의 각 Office 프로젝트 템플릿은 단일 Microsoft Office �
 |Microsoft InfoPath 2.0 형식 라이브러리(InfoPath 2007에만 해당함)|[Microsoft.Office.Interop.InfoPath.dll](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.infopath?view=infopath-form)|  
 |Microsoft InfoPath XML Interop 어셈블리(InfoPath 2007에만 해당함)|Microsoft.Office.Interop.InfoPath.Xml.dll|  
 |Microsoft Office 14.0 개체 라이브러리(Office 공유 기능)<br /><br /> Microsoft Office 15.0 개체 라이브러리(Office 공유 기능)|office.dll|  
-|Microsoft Office Outlook 뷰 컨트롤(웹 페이지와 응용 프로그램에서 받은 편지함에 액세스하는 데 사용할 수 있음)|Microsoft.Office.Interop.OutlookViewCtl.dll|  
+|Microsoft Office Outlook 뷰 컨트롤(웹 페이지와 애플리케이션에서 받은 편지함에 액세스하는 데 사용할 수 있음)|Microsoft.Office.Interop.OutlookViewCtl.dll|  
 |Microsoft Outlook 14.0 개체 라이브러리<br /><br /> Microsoft Outlook 15.0 개체 라이브러리|[Microsoft.Office.Interop.Outlook.dll](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.outlook?view=outlook-pia)|  
 |Microsoft PowerPoint 14.0 개체 라이브러리<br /><br /> Microsoft PowerPoint 15.0 개체 라이브러리|Microsoft.Office.Interop.PowerPoint.dll|  
 |Microsoft Project 14.0 개체 라이브러리<br /><br /> Microsoft Project 15.0 개체 라이브러리|[Microsoft.Office.Interop.MSProject.dll](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.msproject?view=office-project-server)|  
 |Microsoft Publisher 14.0 개체 라이브러리<br /><br /> Microsoft Publisher 15.0 개체 라이브러리|Microsoft.Office.Interop.Publisher.dll|  
 |Microsoft SharePoint Designer 14.0 웹 개체 참조 라이브러리|Microsoft.Office.Interop.SharePointDesigner.dll|  
 |Microsoft SharePoint Designer 14.0 페이지 개체 참조 라이브러리|Microsoft.Office.Interop.SharePointDesignerPage.dll|  
-|Microsoft 스마트 태그 2.0 형식 라이브러리 **참고:** 스마트 태그에서 사용 되지 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] 고 [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]입니다.|Microsoft.Office.Interop.SmartTag.dll|  
+|Microsoft Smart Tags 2.0 형식 라이브러리 **참고 합니다.**  [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] 및 [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]에서는 스마트 태그가 사용되지 않습니다.|Microsoft.Office.Interop.SmartTag.dll|  
 |Microsoft Visio 14.0 형식 라이브러리<br /><br /> Microsoft Visio 15.0 형식 라이브러리|Microsoft.Office.Interop.Visio.dll|  
 |Microsoft Visio 14.0 웹으로 저장 형식 라이브러리<br /><br /> Microsoft Visio 15.0 웹으로 저장 형식 라이브러리|Microsoft.Office.Interop.Visio.SaveAsWeb.dll|  
 |Microsoft Visio 14.0 드로잉 컨트롤 형식 라이브러리<br /><br /> Microsoft Visio 15.0 드로잉 컨트롤 형식 라이브러리|Microsoft.Office.Interop.VisOcx.dll|  
@@ -128,7 +125,7 @@ Office PIA를 Office와 함께 또는 PIA의 재배포 가능 패키지를 설�
 
 자세한 내용은 [방법: 사용 하도록 설정 하 고 자동 바인딩 리디렉션 사용 안 함](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection)합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
 
 - [방법: 주 interop 어셈블리를 통해 대상 Office 응용 프로그램](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
 - [Excel 개체 모델 개요](../vsto/excel-object-model-overview.md)   
@@ -139,5 +136,3 @@ Office PIA를 Office와 함께 또는 PIA의 재배포 가능 패키지를 설�
 - [Visio 개체 모델 개요](../vsto/visio-object-model-overview.md)   
 - [Word 개체 모델 개요](../vsto/word-object-model-overview.md)   
 - [일반 참조 &#40;Visual Studio에서 Office 개발&#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
-  
-  

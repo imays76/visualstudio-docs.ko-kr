@@ -11,13 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6cfbe7c83db57bbeb24089e7d3e794caaeca9d81
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 284a789a7ba4e7fec1a87723c51a32f650f6d843
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967417"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987968"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>방법: 바로 가기 메뉴에 명령 추가
 사용자가 DSL(Domain-Specific Language) 관련 작업을 수행할 수 있도록 DSL에 메뉴 명령을 추가할 수 있습니다. 사용자가 다이어그램을 마우스 오른쪽 단추로 클릭하면 상황에 맞는(바로 가기) 메뉴에 명령이 표시됩니다. 특정 상황에서만 메뉴에 표시되도록 명령을 정의할 수 있습니다. 예를 들어 사용자가 특정 형식의 요소나 특정 상태의 요소를 클릭할 때만 메뉴가 표시되도록 지정할 수 있습니다.
@@ -281,7 +280,7 @@ private void OnMenuMyContextMenuCommand(object sender, EventArgs e)
 }
 ```
 
- 개체 및 링크를 만드는 방법에 대 한 모델에서 개체를 이동 하는 방법에 대 한 자세한 내용은 참조 하세요 [방법: 표준 메뉴 명령 수정](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)합니다.
+ 개체 및 링크를 만드는 방법에 대 한 모델에서 개체를 이동 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법: 표준 메뉴 명령 수정](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)합니다.
 
 ### <a name="register-the-command"></a>명령 등록
  CommandSet.vsct의 Symbols 섹션에서 작성한 GUID 및 ID 값 선언을 C#에서 반복합니다.

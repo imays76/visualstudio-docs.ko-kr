@@ -1,15 +1,10 @@
 ---
 title: 서버 탐색기를 사용 하 여 SharePoint 연결 찾아보기 | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.SharePointExplorer.SharePointConnection
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -21,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e897469eee33a1e4ee48b9096714b4213c099a8f
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: d3804b97967cffb299393e7e3a8866e51a2e3224
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325997"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931361"
 ---
 # <a name="browse-sharepoint-connections-by-using-server-explorer"></a>서버 탐색기를 사용 하 여 SharePoint 연결 찾아보기
   로컬 SharePoint 연결에서 검색할 수 있습니다 **서버 탐색기**합니다. 이 방법을 사용하면 시스템에서 SharePoint 사이트의 구성 요소를 탐색할 수 있습니다. 목록 정 및 콘텐츠 형식과 같은 SharePoint 사이트 구성 요소 라는 노드에 나타납니다 **SharePoint 연결** 의 트리 뷰에서 **서버 탐색기**합니다. 표시할 **서버 탐색기**, 메뉴 모음에서 **뷰** > **서버 탐색기**합니다. SharePoint 사이트 구성 요소를 표시하는 것 외에도 바로 가기 메뉴의 명령을 사용하여 항목을 제거하거나, 속성을 보거나, 트리 뷰를 새로 고칠 수 있습니다.  
@@ -43,7 +38,7 @@ ms.locfileid: "36325997"
 |명령 이름|설명|  
 |------------------|-----------------|  
 |새로 고침|트리 뷰 노드를 표시 된 마지막 시간 이후 발생 했을 수 있는 모든 변경 내용을 반영 하도록 업데이트 합니다.|  
-|삭제|트리 보기에서 선택한 노드를 제거합니다. **참고:** SharePoint 연결 아래에이 명령을 사용할 수는 **SharePoint 연결** 노드.|  
+|삭제|트리 보기에서 선택한 노드를 제거합니다. **참고:**  SharePoint 연결 아래에이 명령을 사용할 수는 **SharePoint 연결** 노드.|  
 |속성|선택한 노드에 대 한 사용 가능한 속성을 표시 합니다 **속성** 창입니다. 속성은 모두 읽기 전용 및 일부 노드는 연관 된 속성입니다.|  
 |연결 추가|이동 하려는 SharePoint 사이트를 지정할 수 있습니다. 사용할 수는 **SharePoint 연결** 노드 및 하위 사이트 노드.|  
 |브라우저에서 보기|웹 브라우저에서 선택된 된 항목을 표시합니다. 이 명령은 아래에 몇 가지 목록에서 사용 될 합니다 **나열** 에 포함 된 노드 **목록 및 라이브러리**합니다.|  
@@ -54,7 +49,5 @@ ms.locfileid: "36325997"
 |-----------|-----------------|  
 |[방법: SharePoint 연결 추가 또는 제거](../sharepoint/how-to-add-or-remove-sharepoint-connections.md)|새 SharePoint 사이트에 추가 하는 데 필요한 단계를 설명 합니다 **SharePoint 연결** 노드에서 **서버 탐색기**합니다.|  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  [SharePoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)  
-  
- 

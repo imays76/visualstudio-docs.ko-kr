@@ -2,7 +2,6 @@
 title: 코드 생성 및 T4 텍스트 템플릿
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.TextTemplating.TextTemplating
@@ -17,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a273e6a82bbf99d1a3d57f3759504fedaa5532e6
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 60ebc9047280f228aa95aeaaddf83281d2020efc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176283"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930650"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>코드 생성 및 T4 텍스트 템플릿
 
@@ -42,9 +41,9 @@ T4 텍스트 템플릿 두 종류가 있습니다: 런타임 및 디자인 타�
 
 템플릿은 생성된 출력과 유사합니다. 결과 출력과 템플릿이 유사하기 때문에 템플릿을 변경하려는 경우 실수를 방지할 수 있습니다.
 
-또한 템플릿에는 프로그램 코드 조각이 포함됩니다. 이러한 조각을 사용하여 텍스트 섹션을 반복하고, 조건부 섹션을 만들고, 응용 프로그램의 데이터를 표시할 수 있습니다.
+또한 템플릿에는 프로그램 코드 조각이 포함됩니다. 이러한 조각을 사용하여 텍스트 섹션을 반복하고, 조건부 섹션을 만들고, 애플리케이션의 데이터를 표시할 수 있습니다.
 
-출력을 생성하기 위해 응용 프로그램은 템플릿에 의해 생성된 함수를 호출합니다. 예를 들어:
+출력을 생성하기 위해 애플리케이션은 템플릿에 의해 생성된 함수를 호출합니다. 예를 들어:
 
 ```csharp
 string webResponseText = new MyTemplate().TransformText();

@@ -1,9 +1,6 @@
 ---
 title: 식 계산기 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - expressions [Debugging SDK]
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49c64928e10f534c8bcbdfdb1a573edb09570c7e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5d0e356fc1683da505068899bf15e916b2bc1408
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879157"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921499"
 ---
 # <a name="expression-evaluator"></a>식 계산기
 식 계산기 (EE)를 IDE 중단 모드에 있을 때 사용자가 볼 수 있도록 하는 언어 구문 분석 하 고 런타임 시 변수 및 식 평가를 구문을 검사 합니다.  
@@ -43,5 +40,5 @@ ms.locfileid: "49879157"
 ## <a name="implementation-notes"></a>구현 참고 사항  
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 공용 언어 런타임 (CLR) 인터페이스를 사용 하 여 식 계산기를 사용 하 여 이야기 하고자 하는 디버그 엔진입니다. 결과적으로, 식 계산기를 함께 작동 하는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 디버그 엔진에서 CLR를 지원 해야 합니다 (모든 CLR 디버깅 인터페이스의 전체 목록은 일부인 debugref.doc에서 찾을 수 있습니다의 [!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)]).  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [디버거 구성 요소](../../extensibility/debugger/debugger-components.md)

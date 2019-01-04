@@ -1,13 +1,8 @@
 ---
 title: '방법: 안전한 컨트롤로 표시 제어 | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 04470034f1fa1531a1677b4acd6b36f0b99c8a62
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 87e99937239ad080d24bf997d6c2de2a5d8f73ac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119815"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989376"
 ---
-# <a name="how-to-mark-controls-as-safe-controls"></a>방법: 안전한 컨트롤로 표시 제어
+# <a name="how-to-mark-controls-as-safe-controls"></a>방법: 안전한 컨트롤로 표시 컨트롤
   보안을 위해 SharePoint가 없는 웹 컨트롤과 웹 컨트롤 스크립트 삽입에 대해 보호 되는 구분 됩니다. 컨트롤을 보호 하거나 *안전 컨트롤*, 신뢰할 수 없는 사용자가 액세스할 수 있습니다. SharePoint 프로젝트 항목의 또는 안전 컨트롤 항목 속성에 안전 하 게 컨트롤을 표시할 수 있습니다 합니다 **패키지 디자이너** 패키지에 어셈블리를 추가 합니다. 자세한 내용은 다음 항목을 참조하세요.  
   
  [web.config 파일 설정 변경](http://go.microsoft.com/fwlink/?LinkId=178965) 하 고 [웹 파트 어셈블리를 안전 컨트롤로 등록](http://go.microsoft.com/fwlink/?LinkId=171013)합니다.  
@@ -120,4 +115,3 @@ ms.locfileid: "37119815"
 ## <a name="see-also"></a>참고자료
  [프로젝트 항목에 패키징 및 배포 정보를 제공 합니다.](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)   
  [패키지 및 SharePoint 솔루션 배포](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

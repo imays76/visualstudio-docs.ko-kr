@@ -3,8 +3,6 @@ title: 시작 (Office 개발 Visual Studio에서)
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d415fc57cd4923fbe5c62f4f9758dac23a4fccc3
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: d0d2868becbdc68f88c8ac191e3a044f3cfc8b10
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647666"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955359"
 ---
 # <a name="get-started-office-development-in-visual-studio"></a>시작 (Office 개발 Visual Studio에서)
   이 섹션에는 Visual Studio에서 Microsoft Office 개발자 도구 사용을 시작하는 데 도움이 되는 항목이 포함되어 있습니다.  
@@ -37,7 +35,7 @@ ms.locfileid: "53647666"
  [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 이상을 대상으로 하는 Office 프로젝트의 새로운 디자인에 대해 설명하고 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 이상으로 마이그레이션되는 Office 프로젝트의 주요 코드 변경 내용을 제공합니다.  
   
  [Office 응용 프로그램 및 프로젝트 형식으로 사용할 수 있는 기능](../vsto/features-available-by-office-application-and-project-type.md)  
- 리본 확장성, 사용자 지정 작업창, 작업창 및 양식 영역 등 Office 개발 기능을 사용하는 데 필요한 응용 프로그램 및 프로젝트에 대해 설명합니다.  
+ 리본 확장성, 사용자 지정 작업창, 작업창 및 양식 영역 등 Office 개발 기능을 사용하는 데 필요한 애플리케이션 및 프로젝트에 대해 설명합니다.  
   
  [Office 솔루션을 개발 하도록 컴퓨터를 구성 합니다.](../vsto/configuring-a-computer-to-develop-office-solutions.md)  
  Office 개발 도구, Office 솔루션을 최종 사용자 컴퓨터 및 Office 주 interop 어셈블리에서 실행할 수 있도록 런타임을 설치 하는 것에 대 한 정보 및 단계를 제공 합니다.  
@@ -49,7 +47,7 @@ ms.locfileid: "53647666"
  Visual Studio를 사용하여 Word용 문서 수준 사용자 지정을 만드는 데 필요한 중요한 개념에 대한 요약을 제공합니다.  
   
  [VSTO 추가 기능 프로그래밍 시작](../vsto/getting-started-programming-vsto-add-ins.md)  
- Visual Studio를 사용하여 Microsoft Office 응용 프로그램용 응용 프로그램 수준 VSTO(Visual Studio Tools for Office) 추가 기능을 만드는 데 필요한 중요한 개념에 대한 요약을 제공합니다.  
+ Visual Studio를 사용하여 Microsoft Office 애플리케이션용 애플리케이션 수준 VSTO(Visual Studio Tools for Office) 추가 기능을 만드는 데 필요한 중요한 개념에 대한 요약을 제공합니다.  
   
  [비교 하는 Visual Studio에서 Office 및 VBA 솔루션](../vsto/vba-and-office-solutions-in-visual-studio-compared.md)  
  Visual Studio에서 Office 솔루션을 개발할 때 Visual Basic for Applications와 Office 개발 도구의 상대적 장점에 대해 설명합니다.  
@@ -59,7 +57,7 @@ ms.locfileid: "53647666"
   
 ## <a name="related-sections"></a>관련 단원  
  [Office 개발 샘플 및 연습](../vsto/office-development-samples-and-walkthroughs.md)  
- 일반적인 작업을 수행하기 위한 단계별 지침을 제공하는 항목과 샘플 응용 프로그램에 대한 링크를 제공합니다.  
+ 일반적인 작업을 수행하기 위한 단계별 지침을 제공하는 항목과 샘플 애플리케이션에 대한 링크를 제공합니다.  
   
  [Visual Studio에서 Office 솔루션의 아키텍처](../vsto/architecture-of-office-solutions-in-visual-studio.md)  
  Office 솔루션 및 디자인 타임과 런타임에 작동 하는 방법의 구성 요소를 설명 합니다.  
@@ -78,5 +76,3 @@ ms.locfileid: "53647666"
   
  [Visual Studio Tools for Office 기술 문서 및 시각적 방법 도움말](http://go.microsoft.com/fwlink/?LinkID=106640)  
  Visual Studio를 사용하여 만든 Office 솔루션에 대한 기술 문서 및 비디오에 대한 링크를 제공합니다.  
-  
-  

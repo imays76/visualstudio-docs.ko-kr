@@ -1,9 +1,6 @@
 ---
 title: 등록 및 선택 (소스 제어 VSPackage) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - registration, source control packages
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d601aeca3864e47da77fd6418f4cfd3a5db1623
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d549ab4af45a2571b2d20d47215109f57b3f3384
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834880"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930715"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>등록 및 선택(소스 제어 VSPackage)
 소스 제어 VSPackage를 노출 하려면 등록 해야 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]합니다. 둘 이상의 소스 제어 VSPackage를 등록 하는 경우 사용자가 적절 한 시간에 로드 하는 VSPackage 선택할 수 있습니다. 참조 [Vspackage](../../extensibility/internals/vspackages.md) Vspackage 및 등록 하는 방법에 대 한 자세한 내용은 합니다.  
@@ -34,11 +31,11 @@ ms.locfileid: "49834880"
 ### <a name="registry-entries"></a>레지스트리 항목  
  소스 제어 패키지를 개인 guid가 세 개 필요합니다.  
   
-- 패키지 GUID: 소스 제어 구현 (이 단원의 ID_Package 라고 함)를 포함 하는 패키지에 대 한 기본 GUID입니다.  
+- 패키지 GUID: 원본 제어 구현 (이 단원의 ID_Package 라고 함)를 포함 하는 패키지에 대 한 기본 GUID입니다.  
   
-- 소스 제어 GUID:이 소스 제어는 Visual Studio 원본 제어 스텁을 등록 하는 데 사용 되는 VSPackage에 대 한 GUID 및 명령 UI 컨텍스트의 GUID로도 사용 됩니다. 원본 제어 서비스 GUID를 GUID 소스 제어에 등록 됩니다. 예제에서는 소스 제어 GUID ID_SccProvider 라고 합니다.  
+- 소스 제어 GUID: 이 소스 제어는 Visual Studio 원본 제어 스텁을 등록 하는 데 사용 되는 VSPackage에 대 한 GUID 및 명령 UI 컨텍스트의 GUID로도 사용 됩니다. 원본 제어 서비스 GUID를 GUID 소스 제어에 등록 됩니다. 예제에서는 소스 제어 GUID ID_SccProvider 라고 합니다.  
   
-- 원본 제어 서비스에서 GUID: 개인 서비스 (이 단원의 SID_SccPkgService 라고 함)는 Visual Studio에서 사용 되는 GUID입니다. 그 뿐 아니라 소스 제어 패키지 하 고 Vspackage에서 도구 창에 대 한 다른 Guid를 정의 해야 합니다.  
+- 소스 제어 서비스 GUID: 개인 서비스 (이 단원의 SID_SccPkgService 라고 함)는 Visual Studio에서 사용 되는 GUID입니다. 그 뿐 아니라 소스 제어 패키지 하 고 Vspackage에서 도구 창에 대 한 다른 Guid를 정의 해야 합니다.  
   
   다음 레지스트리 항목을 소스 제어 VSPackage에서 이루어져야 합니다.  
   

@@ -1,9 +1,6 @@
 ---
 title: '연습: 리본 XML을 사용 하 여 사용자 지정 탭 만들기'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 45e35b7cf97a6b9a1f310149817f8e79956a47aa
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: dda5c2721d9932afd20c0b02f4a82bbbde7116ae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808926"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955229"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-ribbon-xml"></a>연습: 리본 XML을 사용 하 여 사용자 지정 탭 만들기
   이 연습에 사용 하 여 사용자 지정 리본 탭을 만드는 방법을 보여 줍니다 합니다 **리본 (XML)** 항목입니다.  
@@ -55,7 +52,7 @@ ms.locfileid: "38808926"
   
 1.  만들기는 **에서 Word 추가 기능** 이름 사용 하 여 프로젝트 **MyRibbonAddIn**합니다.  
   
-     자세한 내용은 [방법: Visual Studio에서 만드는 Office 프로젝트](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
+     자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)합니다.  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 열립니다는 **ThisAddIn.cs** 또는 **ThisAddIn.vb** 코드 파일을 추가 합니다 **MyRibbonAddIn** 프로젝트가 **솔루션 탐색기**.  
   
@@ -157,9 +154,7 @@ ms.locfileid: "38808926"
   
 -   Outlook 양식 영역을 사용하여 Microsoft Office Outlook의 UI를 사용자 지정합니다. 자세한 내용은 [연습: Outlook 양식 영역 디자인](../vsto/walkthrough-designing-an-outlook-form-region.md)합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [리본 개요](../vsto/ribbon-overview.md)   
  [리본 XML](../vsto/ribbon-xml.md)   
  [연습: 리본 디자이너를 사용 하 여 사용자 지정 탭 만들기](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
 title: 항목에 추가 된 새 항목 추가 대화 상자 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, adding items
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b98e696def519cea6d3644d0ef3a48bc82c19136
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d447090585a2314899bb2d6246c6fb450a9e767d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812584"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956051"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>새 항목 추가 대화 상자에 항목 추가
 항목을 추가 하기 위한 프로세스를 **새 항목 추가** 레지스트리 키를 사용 하 여 대화 상자를 시작 합니다. 다음 레지스트리 항목에 표시 된 대로 합니다 **AddItemTemplates** 섹션에서 사용할 수 있는 어떤 항목에 있는 디렉터리의 이름과 경로 포함 합니다 **새 항목 추가** 대화 상자에 배치 됩니다.  
@@ -81,7 +78,7 @@ ms.locfileid: "49812584"
 
   이 필터 기능을 구현 하는 경우 테이블은 숨겨야 하는 모든 항목을 매핑할 필요가 없습니다. 단순히 항목 유형으로 분류 하는 분류에 배치 합니다 *.vsdir* 파일 또는 파일입니다. 그런 다음 인터페이스를 구현 하 여 특정 분류를이 있는 항목 중 하나를 숨길 수 있습니다. 이러한 방식으로 항목을 만들 수 있습니다 합니다 **새 항목 추가** 프로젝트 내에서 상태를 기반으로 대화 상자 동적입니다.  
 
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>   
  [프로젝트 및 항목 템플릿을 등록합니다](../../extensibility/internals/registering-project-and-item-templates.md)   
  [일반적으로 프로젝트를 확장 하는 데 사용 되는 개체에 대 한 Catid](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)   

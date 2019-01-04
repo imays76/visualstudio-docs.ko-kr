@@ -1,9 +1,6 @@
 ---
 title: '방법: 서버 탐색기에 사용자 지정 SharePoint 노드 추가 | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bb0ba7f09ae564a794792ad6f7a60f53f6f6422e
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: bc648abd1d8981bd5c64782bd094e40d507b4142
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755643"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937665"
 ---
 # <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>방법: 서버 탐색기에 사용자 지정 SharePoint 노드 추가
   아래에 있는 사용자 지정 노드를 추가할 수 있습니다 합니다 **SharePoint 연결** 노드에서 **서버 탐색기**합니다. 에 표시 되지 않는 추가 SharePoint 구성 요소를 표시 하려는 경우에 유용 **서버 탐색기** 기본적으로 합니다. 자세한 내용은 [서버 탐색기에서 SharePoint 연결 노드 확장](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)합니다.  
@@ -61,15 +58,15 @@ ms.locfileid: "36755643"
   
 1.  노드 정의와 같은 프로젝트에서 구현 하는 클래스를 만들기는 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> 인터페이스입니다.  
   
-2.  추가 된 <xref:System.ComponentModel.Composition.ExportAttribute> 특성을 클래스입니다. 이 특성을 검색 하 고 로드 되도록 Visual Studio를 사용 하면 프로그램 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> 구현 합니다. 전달 된 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> 특성 생성자에는 형식입니다.  
+2.  클래스에 <xref:System.ComponentModel.Composition.ExportAttribute> 특성을 추가합니다. 이 특성을 검색 하 고 로드 되도록 Visual Studio를 사용 하면 프로그램 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> 구현 합니다. 전달 된 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> 특성 생성자에는 형식입니다.  
   
-3.  추가 된 <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute> 특성을 클래스입니다. 노드 확장에서이 특성을 확장 하려는 노드의 형식에 대 한 문자열 식별자를 지정 합니다.  
+3.  클래스에 <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute> 특성을 추가합니다. 노드 확장에서이 특성을 확장 하려는 노드의 형식에 대 한 문자열 식별자를 지정 합니다.  
   
      Visual Studio에서 제공 하는 기본 제공 노드 형식에 지정 하려면 다음 열거형 값 중 하나를 특성 생성자에 전달 합니다.  
   
-    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypes>: 사용 하 여 사이트 연결 노드 (사이트 Url을 표시 하는 노드)를 지정 하는 이러한 값 사이트에서 다른 모든 부모 노드 또는 노드 **서버 탐색기**합니다.  
+    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypes>: 사이트 연결 노드 (사이트 Url을 표시 하는 노드)를 지정 하는 이러한 값 사이트에서 다른 모든 부모 노드 또는 노드를 사용 하 여 **서버 탐색기**합니다.  
   
-    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.ExtensionNodeTypes>: 목록, 필드 또는 콘텐츠 형식을 나타내는 노드 같은 SharePoint 사이트에서 개별 구성 요소를 나타내는 기본 제공 노드 중 하나를 지정 하려면 이러한 값을 사용 합니다.  
+    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.ExtensionNodeTypes>: 이러한 값을 사용 하 여 목록, 필드 또는 콘텐츠 형식을 나타내는 노드 같은 SharePoint 사이트에서 개별 구성 요소를 나타내는 기본 제공 노드 중 하나를 지정 합니다.  
   
 4.  구현에서를 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension.Initialize%2A> 메서드, 핸들을 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeChildrenRequested> 의 이벤트를 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeType> 매개 변수입니다.  
   
@@ -98,9 +95,7 @@ ms.locfileid: "36755643"
 ## <a name="deploy-the-extension"></a>확장 배포  
  배포 하는 **서버 탐색기** 확장을 만들기를 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 어셈블리 및 확장을 사용 하 여 배포 하려는 다른 파일에 대 한 패키지 (VSIX) 확장 합니다. 자세한 내용은 [Visual Studio에서 SharePoint 도구의 확장을 배포할](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)합니다.  
   
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  [서버 탐색기에서 SharePoint 연결 노드 확장](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [방법: 서버 탐색기에서 SharePoint 노드 확장](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)   
- [연습: 웹 파트를 표시 하려면 서버 탐색기를 확장 합니다.](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  
-  
-  
+ [연습: 웹 파트를 표시 하려면 서버 탐색기 확장](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  
