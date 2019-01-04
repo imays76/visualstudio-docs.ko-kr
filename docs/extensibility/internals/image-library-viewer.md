@@ -1,6 +1,5 @@
 ---
 title: 이미지 라이브러리 뷰어 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
@@ -9,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7808c4485a00c080a8a5b260a6472d81bfb7fd44
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b0ec0995068cafe277c95bd125f91d2d1d3df16b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816835"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968672"
 ---
 # <a name="image-library-viewer"></a>이미지 라이브러리 뷰어
 Visual Studio 이미지 라이브러리 뷰어 도구를 로드 하 고 Visual Studio는 동일한 방식으로 조작할 수 있도록 이미지 매니페스트를 검색할 수 있습니다. 백그라운드, 크기, DPI, 고대비 등 및 기타 설정을 변경할 수 있습니다. 또한 도구는 각 이미지 매니페스트에 대 한 정보를 로드를 표시 하 고 이미지 매니페스트에서 각 이미지에 대 한 소스 정보를 표시 합니다. 이 도구에 유용합니다.  
@@ -73,7 +72,7 @@ Visual Studio 이미지 라이브러리 뷰어 도구를 로드 하 고 Visual S
 |-|-|  
 |**하위 요소**|**정의**|  
 |가져오기|현재 매니페스트에서 사용 하 여 지정 된 매니페스트 파일의 기호를 가져옵니다.|  
-|GUID|GUID를 나타내는 기호와 GUID 서식 지정과 일치 해야 합니다.|  
+|Guid|GUID를 나타내는 기호와 GUID 서식 지정과 일치 해야 합니다.|  
 |ID|기호 ID를 나타내며 음수가 아닌 정수 여야 합니다.|  
 |문자열|기호는 임의의 문자열 값을 나타냅니다.|  
   
@@ -114,7 +113,7 @@ Visual Studio 이미지 라이브러리 뷰어 도구를 로드 하 고 Visual S
 |||  
 |-|-|  
 |**특성**|**정의**|  
-|GUID|[필수] 이미지 모니커의 GUID 부분|  
+|Guid|[필수] 이미지 모니커의 GUID 부분|  
 |ID|[필수] 이미지 모니커 ID 부분|  
 |AllowColorInversion|[선택 사항, 기본값은 true] 이미지를 프로그래밍 방식으로 어두운 배경을 사용 하는 경우 반전 된 색을 가질 수 있는지 여부를 나타냅니다.|  
   
@@ -132,7 +131,7 @@ Visual Studio 이미지 라이브러리 뷰어 도구를 로드 하 고 Visual S
 |-|-|  
 |**특성**|**정의**|  
 |URI|[필수] 이미지를 로드할 수 있는 정의 하는 URI입니다. 다음 중 하나일 수 있습니다.<br /><br /> -A [Pack URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) 응용 프로그램을 사용 하 여: / / / 기관<br /><br /> -절대 구성 요소 리소스 참조<br /><br /> -네이티브 리소스를 포함 하는 파일 경로|  
-|배경|[선택 사항] 어떤 종류의 원본으로 사용할 목적이 백그라운드에서 나타냅니다.<br /><br /> 다음 중 하나일 수 있습니다.<br /><br /> - *Light*:는 밝은 배경의에서 소스를 사용할 수 있습니다.<br /><br /> - *어두운*: 어두운 배경을에서 소스를 사용할 수 있습니다.<br /><br /> - *고 대비*: 고대비 모드에서 백그라운드에서 소스를 사용할 수 있습니다.<br /><br /> - *HighContrastLight*: 소스는 밝은 배경의 고대비 모드에서 사용할 수 있습니다.<br /><br /> -*HighContrastDark*: 원본 어두운 배경을 고대비 모드에서 사용할 수 있습니다.<br /><br /> 경우는 **백그라운드** 특성을 생략 하면, 백그라운드에서 소스를 사용할 수 있습니다.<br /><br /> 경우 **백그라운드** 됩니다 *Light*를 *어두운*를 *HighContrastLight*, 또는 *HighContrastDark*, 원본의 색 반전 되지 않습니다. 하는 경우 **백그라운드** 생략 되거나로 *고 대비*, 소스의 색 반전을 이미지의 의해 제어 됩니다 **AllowColorInversion** 특성입니다.|  
+|배경|[선택 사항] 어떤 종류의 원본으로 사용할 목적이 백그라운드에서 나타냅니다.<br /><br /> 다음 중 하나일 수 있습니다.<br /><br /> - *Light*: 밝은 배경에 소스를 사용할 수 있습니다.<br /><br /> - *어두운*: 어두운 배경을에서 소스를 사용할 수 있습니다.<br /><br /> - *고 대비*: 고대비 모드에서 백그라운드에서 소스를 사용할 수 있습니다.<br /><br /> - *HighContrastLight*: 고대비 모드에서 밝은 배경에 소스를 사용할 수 있습니다.<br /><br /> -*HighContrastDark*: 고대비 모드에서 어두운 배경을에서 소스를 사용할 수 있습니다.<br /><br /> 경우는 **백그라운드** 특성을 생략 하면, 백그라운드에서 소스를 사용할 수 있습니다.<br /><br /> 경우 **백그라운드** 됩니다 *Light*를 *어두운*를 *HighContrastLight*, 또는 *HighContrastDark*, 원본의 색 반전 되지 않습니다. 하는 경우 **백그라운드** 생략 되거나로 *고 대비*, 소스의 색 반전을 이미지의 의해 제어 됩니다 **AllowColorInversion** 특성입니다.|  
   
  \<소스 > 요소는 다음 선택적 하위 요소 중 하나만 포함할 수 있습니다.  
   
@@ -170,7 +169,7 @@ Visual Studio 이미지 라이브러리 뷰어 도구를 로드 하 고 Visual S
 |||  
 |-|-|  
 |**특성**|**정의**|  
-|GUID|[필수] 이미지 모니커의 GUID 부분|  
+|Guid|[필수] 이미지 모니커의 GUID 부분|  
 |ID|[필수] 이미지 모니커 ID 부분|  
 |외부|[선택 사항, 기본값: false] 이미지 모니커를 사용 하 여 현재 매니페스트에서 이미지를 참조 하는지 여부를 나타냅니다.|  
   

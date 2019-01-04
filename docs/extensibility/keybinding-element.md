@@ -1,9 +1,6 @@
 ---
 title: KeyBinding 요소 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, KeyBindings
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77fb94e702615d0d27ce2587c034000f6c4b3e3d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6c401b1f5179fa03dbd43ffbcff3bd2f0151340c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905105"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931675"
 ---
 # <a name="keybinding-element"></a>KeyBinding 요소
 KeyBinding 요소는 명령에 대 한 바로 가기 키를 지정합니다.  
@@ -39,10 +36,10 @@ KeyBinding 요소는 명령에 대 한 바로 가기 키를 지정합니다.
   
 |특성|설명|  
 |---------------|-----------------|  
-|guid|필수.|  
-|ID|필수.|  
-|편집기|필수. 편집기 GUID는이 바로 가기 키를 활성화 될 편집 컨텍스트를 나타냅니다. 전역 바인딩 범위 값은 "guidVSStd97"입니다.|  
-|key1|필수. 유효한 값은 모두 입력할 수 영숫자 및 두 자리 16 진수 값 0x로 시작 하 고 [VK_constants](/windows/desktop/inputdev/virtual-key-codes)합니다.|  
+|guid|필수 요소.|  
+|ID|필수 요소.|  
+|편집기|필수 요소. 편집기 GUID는이 바로 가기 키를 활성화 될 편집 컨텍스트를 나타냅니다. 전역 바인딩 범위 값은 "guidVSStd97"입니다.|  
+|key1|필수 요소. 유효한 값은 모두 입력할 수 영숫자 및 두 자리 16 진수 값 0x로 시작 하 고 [VK_constants](/windows/desktop/inputdev/virtual-key-codes)합니다.|  
 |mod1|선택 사항입니다. 조합을 **Ctrl**를 **Alt**, 및 **Shift** 공백으로 구분 합니다.|  
 |key2|선택 사항입니다. 유효한 값은 모두 입력할 수 영숫자 및 두 자리 16 진수 값 0x로 시작 하 고 [VK_constants](/windows/desktop/inputdev/virtual-key-codes)합니다.|  
 |mod2|선택 사항입니다. 조합을 **Ctrl**를 **Alt**, 및 **Shift** 공백으로 구분 합니다.|  
@@ -73,6 +70,6 @@ KeyBinding 요소는 명령에 대 한 바로 가기 키를 지정합니다.
 </KeyBindings>  
 ```  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [KeyBindings 요소](../extensibility/keybindings-element.md)   
  [Visual Studio 명령 테이블 (.vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

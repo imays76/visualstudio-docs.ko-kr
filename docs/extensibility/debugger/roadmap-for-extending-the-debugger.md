@@ -1,9 +1,6 @@
 ---
 title: 디버거 확장 로드맵 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], roadmap
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7527d142b27e5b49bcf133429dc232614bad04a2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 87d9d1eb077e875e234166ba57e378dde721abaa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942675"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951071"
 ---
 # <a name="roadmap-for-extending-the-debugger"></a>디버거 확장 로드맵
 이 설명서에서는 확장에 대 한 가이드 및 참조 정보를 제공 합니다 [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] 사용 하 여 디버거를 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]입니다.  
@@ -46,11 +43,11 @@ ms.locfileid: "49942675"
   
    [사용자 지정 디버그 엔진 만들기](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
   
-   [자습서: 빌드 ATL COM을 사용 하 여 디버그 엔진](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)  
+   [자습서: ATL COM을 사용 하 여 디버그 엔진 구축](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)  
   
    [포트 공급자 구현](../../extensibility/debugger/implementing-a-port-supplier.md)  
   
    [샘플](../../extensibility/debugger/visual-studio-debugging-samples.md)  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [시작](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)

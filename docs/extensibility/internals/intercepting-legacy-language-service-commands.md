@@ -1,9 +1,6 @@
 ---
 title: 레거시 언어 서비스 명령 가로채기 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - commands, intercepting language service
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 669d03043ad36ad1e96084cb4cc8833ab20f0998
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c6e0b44c383cfd6499a3c23423bbce21db4ff876
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832864"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965115"
 ---
 # <a name="intercepting-legacy-language-service-commands"></a>레거시 언어 서비스 명령 가로채기
 사용 하 여 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], 텍스트 뷰 처리할 수 있는 언어 서비스 절편 명령 할 수 있습니다. 텍스트 뷰를 관리 하지 않는 언어 관련 동작에 유용 합니다. 언어 서비스에서 하나 이상의 명령 필터 텍스트 보기에 추가 하 여 이러한 명령을 가로챌 수 있습니다.  
