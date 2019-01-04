@@ -3,7 +3,6 @@ title: 활동 디자이너는 동안 워크플로 디자이너
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.While.UI
 ms.assetid: ea008091-2e4c-4f64-bfa5-afb919552446
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de41c8351c7767cbfe0882cffb48b145e341f923
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c75ce30ba231efa9084ce6ec733f08c5b86aa861
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835867"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987760"
 ---
 # <a name="while-activity-designer"></a>While 활동 디자이너
 
@@ -33,7 +32,7 @@ ms.locfileid: "49835867"
 |<xref:System.Activities.Statements.While.Body%2A>|False|활동 실행을 포함 하는 동안 합니다 <xref:System.Activities.Statements.While.Condition%2A> 로 평가 **true**합니다.|
 |<xref:System.Activities.Statements.While.Condition%2A>|True|확인 하기 위해 평가 되는 Visual Basic 식을 포함 여부를 작업은 <xref:System.Activities.Statements.While.Body%2A> 를 실행 해야 합니다.|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [제어 흐름](../workflow-designer/control-flow-activity-designers.md)
 - [DoWhile](../workflow-designer/dowhile-activity-designer.md)

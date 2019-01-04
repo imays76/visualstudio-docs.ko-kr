@@ -1,9 +1,6 @@
 ---
 title: IDebugProcess3::SetHostingProcessLanguage | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProcess3::SetHostingProcessLanguage
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 537b2c2b682db1e1bed8131df6f010e55ef47744
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 170e5a2f315248164cf6af277197f7a9f9da05b5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900347"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933679"
 ---
 # <a name="idebugprocess3sethostingprocesslanguage"></a>IDebugProcess3::SetHostingProcessLanguage
 이 메서드는 프로세스에서 호스트 되는 언어를 설정 합니다. 이 언어 적절 한 식 계산기를 로드 하려면 디버그 엔진 (DE)에서 사용할 수 있습니다.  
@@ -28,8 +25,8 @@ ms.locfileid: "49900347"
 ## <a name="syntax"></a>구문  
   
 ```cpp  
-HRESULT SetHostingProcessLanguage(  
-   REFGUID guidLang  
+HRESULT SetHostingProcessLanguage(  
+   REFGUID guidLang  
 );  
 ```  
   
