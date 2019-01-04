@@ -1,9 +1,6 @@
 ---
 title: IDebugProperty2::GetExtendedInfo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProperty2::GetExtendedInfo
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77ed932909845dc992c62ba884d6d48e2b788a61
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e0366d547dea7f181c42fd5cccbacb568418c203
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825974"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935413"
 ---
 # <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
 확장 속성에 대 한 정보를 가져옵니다.  
@@ -28,14 +25,14 @@ ms.locfileid: "49825974"
 ## <a name="syntax"></a>구문  
   
 ```cpp  
-HRESULT GetExtendedInfo (   
+HRESULT GetExtendedInfo (   
    REFGUID* guidExtendedInfo,  
    VARIANT* pExtendedInfo  
 );  
 ```  
   
 ```csharp  
-int GetExtendedInfo (   
+int GetExtendedInfo (   
    ref Guid guidExtendedInfo,  
    out object pExtendedInfo  
 );  
@@ -46,7 +43,7 @@ int GetExtendedInfo (
  [in] 검색할 확장 정보의 형식을 결정 하는 GUID입니다. 세부 정보에 대 한 설명을 참조 하세요.  
   
  `pExtendedInfo`  
- [out] 반환 된 `VARIANT` (c + +) 또는 확장된 속성 정보를 검색할 수 있는 개체 (C#). 예를 들어이 매개 변수를 반환할 수 있습니다는 `IUnknown` 에 대해 쿼리할 수 있는 인터페이스를 [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) 인터페이스입니다. 세부 정보에 대 한 설명을 참조 하세요.  
+ [out] 반환 된 `VARIANT` (c + +) 또는 개체 (C#) 확장된 속성 정보를 검색 하려면 사용할 수 있는 합니다. 예를 들어이 매개 변수를 반환할 수 있습니다는 `IUnknown` 에 대해 쿼리할 수 있는 인터페이스를 [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) 인터페이스입니다. 세부 정보에 대 한 설명을 참조 하세요.  
   
 ## <a name="return-value"></a>반환 값  
  성공 하면 반환 `S_OK`; 그렇지 않으면 오류 코드를 반환 합니다. 반환 `S_GETEXTENDEDINFO_NO_EXTENDEDINFO` 검색할 확장된 정보가 없는 경우.  
