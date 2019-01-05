@@ -1,9 +1,6 @@
 ---
 title: SharePoint 솔루션 개발 | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.ProjectProperties
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25a7402a8d0464152e9b1bdd9d2edcdc66824914
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: bc45f1420f073347153c6b7b8dd72cae44dd6b0f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295906"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871059"
 ---
 # <a name="develop-sharepoint-solutions"></a>SharePoint 솔루션 개발
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 에서 여러 가지 SharePoint 프로젝트 형식 템플릿을 사용하여 SharePoint 사이트와 사이트 요소를 만들 수 있습니다. 사용 가능한 프로젝트 형식 목록을 참조 하세요 [SharePoint 프로젝트 및 프로젝트 항목 템플릿](../sharepoint/sharepoint-project-and-project-item-templates.md)합니다. SharePoint 프로젝트의 요소와 속성에 대한 설명은 다음과 같습니다.  
@@ -69,11 +66,11 @@ ms.locfileid: "51295906"
 |활성 배포 구성|배포하는 동안 수행되는 일련의 단계를 지정합니다. 자세한 내용은 [방법: SharePoint 배포 구성 편집](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md)합니다.|  
 |어셈블리 배포 대상|*SharePoint 응용 프로그램 어셈블리* 가 배치되는 위치를 결정합니다. 올바른 어셈블리 위치 값은 *GlobalAssemblyCache* (기본값) 또는 *WebApplication*입니다.<br /><br /> *Sandboxed Solution* 속성을 **true**로 설정하면 이 속성이 사용하지 않도록 설정됩니다.|  
 |디버깅 후 자동 취소|[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]에서 디버그 모드로 응용 프로그램을 실행하고 나서 SharePoint에서 배포된 솔루션을 자동으로 취소할지를 지정합니다. 이 옵션을 선택하면 디버그한 후 IDE가 디자인 뷰로 돌아가면 솔루션이 취소됩니다. 이 옵션의 선택을 취소하면 솔루션이 취소되지 않습니다. 자세한 내용은 [솔루션 취소](http://go.microsoft.com/fwlink/?LinkId=183819)를 참조하세요.|  
-|구성 편집|프로젝트에 사용할 배포 구성을 지정합니다. 자세한 내용은 참조 하세요. [방법: SharePoint 배포 구성 편집](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md) 하 고 [배포를 게시 및 SharePoint 솔루션 패키지를 업그레이드](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md).|  
+|구성 편집|프로젝트에 사용할 배포 구성을 지정합니다. 자세한 내용은 [방법: SharePoint 배포 구성 편집](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md) 하 고 [배포를 게시 하 고 SharePoint 솔루션 패키지를 업그레이드](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md)합니다.|  
 |스크립트 디버깅 대신 Silverlight 디버깅 사용|이 옵션을 선택하면 Silverlight 디버거가 디버깅 프로세스에 연결됩니다. 이 옵션의 선택을 취소하면 스크립트 디버거가 디버깅 프로세스에 연결됩니다. 자세한 내용은 [Silverlight 디버깅 개요](http://go.microsoft.com/fwlink/?LinkId=179826)를 참조하세요.|  
 |패키지에 어셈블리 포함|빌드 시간에 프로젝트 어셈블리를 패키지할지를 지정합니다.|  
-|배포 후 명령줄|SharePoint 솔루션을 배포한 후에 실행할 명령을 지정합니다. 이 명령줄은 MSBuild 변수 및 모든 배치 명령을 지원합니다. 자세한 내용은 [How to: Set SharePoint Deployment Commands](../sharepoint/how-to-set-sharepoint-deployment-commands.md)을 참조하세요.|  
-|배포 전 명령줄|SharePoint 솔루션을 배포하기 전에 실행할 명령을 지정합니다. 이 명령줄은 MSBuild 변수 및 모든 배치 명령을 지원합니다. 자세한 내용은 [How to: Set SharePoint Deployment Commands](../sharepoint/how-to-set-sharepoint-deployment-commands.md)을 참조하세요.|  
+|배포 후 명령줄|SharePoint 솔루션을 배포한 후에 실행할 명령을 지정합니다. 이 명령줄은 MSBuild 변수 및 모든 배치 명령을 지원합니다. 자세한 내용은 [방법: SharePoint 배포 명령 설정](../sharepoint/how-to-set-sharepoint-deployment-commands.md)합니다.|  
+|배포 전 명령줄|SharePoint 솔루션을 배포하기 전에 실행할 명령을 지정합니다. 이 명령줄은 MSBuild 변수 및 모든 배치 명령을 지원합니다. 자세한 내용은 [방법: SharePoint 배포 명령 설정](../sharepoint/how-to-set-sharepoint-deployment-commands.md)합니다.|  
 |프로젝트 파일|빌드, 구성 및 기타 프로젝트 정보가 들어 있는 파일의 이름입니다.|  
 |프로젝트 폴더|시스템에서 프로젝트 파일의 위치입니다. 읽기 전용입니다.|  
 |Sandboxed Solution|프로젝트를 *사용자가 만든 솔루션*이라고도 하는 *샌드박스 솔루션*으로 배포할지를 지정합니다. 샌드박스 솔루션을 신뢰할 수 있어야 할 필요는 없습니다. **true** 값은 프로젝트가 샌드박스 솔루션으로 배포됨을 의미하고 **false** 값은 프로젝트가 팜 솔루션으로 배포됨을 의미합니다. 자세한 내용은 [Sandboxed Solution Considerations](../sharepoint/sandboxed-solution-considerations.md) 및 [Differences Between Sandboxed and Farm Solutions](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)를 참조하세요.|  
@@ -104,7 +101,7 @@ ms.locfileid: "51295906"
 |배포 위치|SharePoint 서버에서 파일의 정규화된 경로입니다. 이 경로는 배포 루트 및 배포 경로 하위 속성으로 구성됩니다.|  
 |배포 경로|Workflow1 같은 SharePoint 서버 파일을 파일의 상대 경로\\합니다. 파일에 대한 정규화된 경로는 *Deployment Path* 값을 *Deployment Root* 값의 끝에 연결해서 만듭니다.<br /><br /> 값을 선택 하 *RootFile* 에 대 한 합니다 *배포 유형을* 속성 변경 내용을 합니다 *Deployment Root* 속성을 \<SharePointRoot >\\의 정규화 된 경로에 결과 \<SharePointRoot > \Workflow1\\합니다. 자세한 내용은 [패키징 및 SharePoint 솔루션 배포](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)합니다.|  
 |Deployment Root|문자열. SharePoint 서버에서 파일이 배포되는 루트 폴더입니다. 예를 들어 \<SharePointRoot > \Template\Features\\\<FeatureName >\\합니다.<br /><br /> *Deployment Root* 속성 값은 *Deployment Type* 설정에 따라 결정됩니다.|  
-|RootFile|*Deployment Root* 값을 결정하는 파일의 배포 유형입니다. 다음 값 중 하나입니다.<br /><br /> : NoDeployment  *\<값 없음 >*<br /><br /> ElementManifest:  *\<SharePointRoot > \Template\Features\\\<FeatureName >*\\<br /><br /> : ElementFile  *\<SharePointRoot > \Template\Features\\\<FeatureName >\\*<br /><br /> : TemplateFile  *\<SharePointRoot > \Template\\*<br /><br /> RootFile:  *\<SharePointRoot >\\*<br /><br /> : GlobalResource  *\<SharePointRoot > \Resources\\*<br /><br /> ClassResource:  *\<ClassResourcePath >\\*<br /><br /> 자세한 내용은 <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>을 참조하세요.|  
+|RootFile|*Deployment Root* 값을 결정하는 파일의 배포 유형입니다. 다음 값 중 하나입니다.<br /><br /> : NoDeployment  *\<값 없음 >*<br /><br /> ElementManifest: *\<SharePointRoot > \Template\Features\\\<FeatureName >*\\<br /><br /> ElementFile: *\<SharePointRoot > \Template\Features\\\<FeatureName >\\*<br /><br /> TemplateFile: *\<SharePointRoot > \Template\\*<br /><br /> RootFile: *\<SharePointRoot >\\*<br /><br /> GlobalResource: *\<SharePointRoot > \Resources\\*<br /><br /> ClassResource: *\<ClassResourcePath >\\*<br /><br /> 자세한 내용은 <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>을 참조하세요.|  
 |파일 이름|항목 파일에 대한 파일 또는 폴더의 이름입니다.|  
 |전체 경로|항목에 대한 파일의 위치입니다. 읽기 전용입니다.|  
   
@@ -117,10 +114,10 @@ ms.locfileid: "51295906"
 |[연습: SharePoint 용 사이트 열, 콘텐츠 형식 및 목록 만들기](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|고객 필드, 콘텐츠 형식, 목록 정의 및 목록 인스턴스를 만드는 과정을 단계별로 안내합니다.|  
 |[방법: 이벤트 수신기 만들기](../sharepoint/how-to-create-an-event-receiver.md)|만든 프로젝트에 대 한 이벤트 수신기를 추가 하는 방법에 설명 [연습: SharePoint 용 사이트 열, 콘텐츠 형식 및 목록 만들기](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)합니다.|  
 |[SharePoint 워크플로 솔루션 만들기](../sharepoint/creating-sharepoint-workflow-solutions.md)|워크플로 연결 양식과 워크플로 시작 양식을 포함하는 워크플로 프로젝트를 만드는 방법을 설명합니다.|  
-|[SharePoint에 대 한 페이지 만들기](../sharepoint/creating-pages-for-sharepoint.md)|SharePoint에 대한 응용 프로그램 페이지, 사이트 페이지, 마스터 페이지, 페이지 레이아웃과 같은 페이지를 만드는 방법을 설명합니다.|  
+|[SharePoint에 대 한 페이지 만들기](../sharepoint/creating-pages-for-sharepoint.md)|SharePoint에 대한 애플리케이션 페이지, 사이트 페이지, 마스터 페이지, 페이지 레이아웃과 같은 페이지를 만드는 방법을 설명합니다.|  
 |[SharePoint 용 웹 파트 만들기](../sharepoint/creating-web-parts-for-sharepoint.md)|사용자가 브라우저를 사용하여 직접 SharePoint 사이트 페이지의 콘텐츠, 모양 및 동작을 수정할 수 있도록 컨트롤을 추가하는 방법을 설명합니다.|  
-|[웹 파트 또는 응용 프로그램 페이지에 대 한 재사용 가능한 컨트롤 만들기](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|SharePoint에서 실행되는 응용 프로그램 페이지 및 웹 파트에서 사용할 수 있는 사용자 컨트롤을 만드는 방법을 설명합니다.|  
-|[SharePoint 비즈니스 데이터 통합](../sharepoint/integrating-business-data-into-sharepoint.md)|Web services 및 백 엔드 서버 응용 프로그램의 데이터를 SharePoint 응용 프로그램에 통합하는 방법을 설명합니다.|  
+|[웹 파트 또는 응용 프로그램 페이지에 대 한 재사용 가능한 컨트롤 만들기](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|SharePoint에서 실행되는 애플리케이션 페이지 및 웹 파트에서 사용할 수 있는 사용자 컨트롤을 만드는 방법을 설명합니다.|  
+|[SharePoint 비즈니스 데이터 통합](../sharepoint/integrating-business-data-into-sharepoint.md)|Web services 및 백 엔드 서버 애플리케이션의 데이터를 SharePoint 애플리케이션에 통합하는 방법을 설명합니다.|  
 |[SharePoint 용 사이트 정의 만들기](../sharepoint/creating-site-definitions-for-sharepoint.md)|SharePoint 사이트를 만드는 데 사용되는 사이트 정의: 템플릿을 만드는 방법을 설명합니다.|  
 |[기존 SharePoint 사이트에서 항목 가져오기](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)|기존 SharePoint 사이트의 콘텐츠 형식 및 모듈 같은 항목을 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 프로젝트로 가져오는 방법을 설명합니다.|  
 |[모듈을 사용하여 솔루션에 파일 포함](../sharepoint/using-modules-to-include-files-in-the-solution.md)|모듈을 사용하여 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 프로젝트의 파일을 SharePoint 사이트에 배포하는 방법을 설명합니다.|  
@@ -136,5 +133,3 @@ ms.locfileid: "51295906"
  [서버 탐색기를 사용 하 여 SharePoint 연결 찾아보기](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)   
  [빌드 및 SharePoint 솔루션 디버깅](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
  [패키지 및 SharePoint 솔루션 배포](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  
-  

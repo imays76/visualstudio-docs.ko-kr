@@ -1,9 +1,6 @@
 ---
 title: 속성 Window Fields and Interfaces | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, fields and interfaces
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 149c02918ec909c03c1102a5fc0f1643b79fb46d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 98b5069a6b3709b467386a5424fded0809367a44
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883408"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872230"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Properties Window Fields and Interfaces
 모델에 표시 되는 정보를 확인 하려면 선택 합니다 **속성** IDE에서 포커스가 있는 창에서 창 기반 합니다. 모든 창 및 선택된 된 창 내에서 개체에 전역 선택 컨텍스트에 푸시된 해당 선택 컨텍스트 개체를 가질 수 있습니다. 해당 창에 포커스가 있는 경우 창 프레임의 값을 사용 하 여 전역 선택 컨텍스트를 업데이트 하는 환경입니다. 포커스 변경 되 면 선택 항목 컨텍스트를 그렇습니다.  
@@ -105,7 +102,7 @@ STDAPI DLLGetDocumentation
 );  
 ```  
   
- `DLLGetDocumentation` 함수는 DLL에 대한.def 파일에 정의된 내보내기여야 합니다.  
+  `DLLGetDocumentation` 함수는 DLL에 대한.def 파일에 정의된 내보내기여야 합니다.  
   
  내부적으로 .olb 파일이 생성되는데 실제로 이것은 DLL입니다. 이 DLL에는 형식 라이브러리(.tlb) 파일 리소스 하나와 내보내기 함수 `DLLGetDocumentation`하나가 있습니다.  
   

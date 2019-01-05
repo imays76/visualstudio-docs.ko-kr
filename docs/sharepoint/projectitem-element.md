@@ -1,9 +1,6 @@
 ---
 title: ProjectItem 요소 | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ca0c295410caffb476d6c1e796864c47520a2f56
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e7c9a32a7fa84d8adc064aa3a3ac035999295791
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119928"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890104"
 ---
 # <a name="projectitem-element"></a>ProjectItem 요소
   SharePoint 프로젝트 항목을 나타냅니다. 이 요소는 필수 루트 요소에는 *.spdata* 파일.  
@@ -52,8 +49,8 @@ ms.locfileid: "37119928"
 |**DefaultFile**|선택적 **xs: string** 특성입니다.<br /><br /> 상대 경로에 있는 SharePoint 프로젝트 항목을 열 때 Visual Studio 편집기에서 열려 있는 파일의 파일 이름 포함 **솔루션 탐색기**합니다. 경로 포함 된 폴더에서 상대 경로 *.spdata* 파일입니다.|  
 |**FeatureReceiverClass**|선택적 **xs: string** 특성입니다.<br /><br /> 이 SharePoint 프로젝트 항목에 대 한 기능 수신기 클래스의 정규화 된 이름입니다. 기능 수신기에 대 한 자세한 내용은 참조 하세요. [프로젝트 항목에 패키징 및 배포 정보를 제공](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)합니다.|  
 |**FeatureReceiverAssembly**|선택적 **xs: string** 특성입니다.<br /><br /> 이 SharePoint 프로젝트 항목에 대 한 기능 수신기를 정의 하는 어셈블리의 정규화 된 이름을 지정 합니다. 기능 수신기에 대 한 자세한 내용은 참조 하세요. [프로젝트 항목에 패키징 및 배포 정보를 제공](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)합니다. 정규화 된 어셈블리 이름에 대 한 자세한 내용은 참조 하세요. [어셈블리 이름](/dotnet/framework/app-domains/assembly-names)합니다.|  
-|**SupportedTrustLevels**|선택적 **xs: string** 특성입니다.<br /><br /> 이 SharePoint 프로젝트 항목을 지 원하는 신뢰 수준을 지정 합니다. 이 값 다음 문자열 중 하나일 수 있습니다: 샌드박스, FullTrust 또는 모든 합니다. 값 All Sandboxed와 FullTrust를 지정 합니다.<br /><br /> 사용자 지정 SharePoint 프로젝트 항목 형식에서이 특성의 값을 할당 하는 값에 해당 합니다 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedTrustLevels%2A> 구현에서 속성을 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> 메서드. Visual Studio에서 지정 하는 동일한 신뢰 수준을 지정 되도록 값을 덮어씁니다이 특성에 대해 다른 값을 지정 하는 경우는 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedTrustLevels%2A> 속성입니다.|  
-|**SupportedDeploymentScopes**|선택적 **xs: string** 특성입니다.<br /><br /> 이 SharePoint 프로젝트 항목을 지 원하는 배포 범위를 지정 합니다. 이 값은 다음 문자열 중 하나 이상의 구성 된 쉼표로 구분 된 문자열: 팜, 사이트, 웹, 웹 응용 프로그램 또는 패키지 있습니다. 예를 들면 `Web, Site` 같은 형식입니다.<br /><br /> 사용자 지정 SharePoint 프로젝트 항목 형식에서이 특성의 값을 할당 하는 값에 해당 합니다 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A> 구현에서 속성을 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> 메서드. Visual Studio에서 지정 하는 동일한 신뢰 수준을 지정 되도록 값을 덮어씁니다이 특성에 대해 다른 값을 지정 하는 경우는 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A> 속성입니다.|  
+|**SupportedTrustLevels**|선택적 **xs: string** 특성입니다.<br /><br /> 이 SharePoint 프로젝트 항목을 지 원하는 신뢰 수준을 지정 합니다. 이 값에는 다음 문자열 중 하나일 수 있습니다. 샌드박스, FullTrust 또는 모든 합니다. 값 All Sandboxed와 FullTrust를 지정 합니다.<br /><br /> 사용자 지정 SharePoint 프로젝트 항목 형식에서이 특성의 값을 할당 하는 값에 해당 합니다 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedTrustLevels%2A> 구현에서 속성을 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> 메서드. Visual Studio에서 지정 하는 동일한 신뢰 수준을 지정 되도록 값을 덮어씁니다이 특성에 대해 다른 값을 지정 하는 경우는 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedTrustLevels%2A> 속성입니다.|  
+|**SupportedDeploymentScopes**|선택적 **xs: string** 특성입니다.<br /><br /> 이 SharePoint 프로젝트 항목을 지 원하는 배포 범위를 지정 합니다. 이 값은 다음 문자열 중 하나 이상의 구성 된 쉼표로 구분 된 문자열: 팜, 사이트, 웹, 웹 응용 프로그램 또는 패키지 있습니다.  `Web, Site`<br /><br /> 사용자 지정 SharePoint 프로젝트 항목 형식에서이 특성의 값을 할당 하는 값에 해당 합니다 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A> 구현에서 속성을 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> 메서드. Visual Studio에서 지정 하는 동일한 신뢰 수준을 지정 되도록 값을 덮어씁니다이 특성에 대해 다른 값을 지정 하는 경우는 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A> 속성입니다.|  
 |**Type**|필요한 **xs: string** 특성입니다.<br /><br /> SharePoint 프로젝트 항목에 대 한 식별자입니다. 사용자 지정 SharePoint 프로젝트 항목 형식에서 식별자가 전달 하는 문자열을 <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>입니다. 자세한 내용은 [방법: SharePoint 프로젝트 항목 형식 정의](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)합니다.<br /><br /> Visual Studio를 사용 하 여 포함 된 기본 제공 SharePoint 프로젝트 항목에 대 한 식별자 목록에 대해서 [확장 SharePoint 프로젝트 항목](../sharepoint/extending-sharepoint-project-items.md)합니다.|  
   
 ### <a name="child-elements"></a>자식 요소
@@ -73,11 +70,10 @@ ms.locfileid: "37119928"
   
 |||  
 |-|-|  
-|**네임스페이스**|http<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
+|**Namespace**|http<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
 |**스키마 이름**|SharePoint 프로젝트 항목 스키마|  
 |**유효성 검사 파일**|ProjectItemModelSchema.xsd|  
 |**비어 있을 수 있습니다.**|아니요|  
   
 ## <a name="see-also"></a>참고자료
 [SharePoint 프로젝트 항목 스키마 rseference](../sharepoint/sharepoint-project-item-schema-reference.md)  
-  
