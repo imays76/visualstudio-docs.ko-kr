@@ -24,12 +24,12 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: a91bc594f2f028f7dfc7a11263b7aac23150b7f5
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49287575"
 ---
-# <a name="save-a-dataset-as-xml"></a>데이터 집합을 XML로 저장
+# <a name="save-a-dataset-as-xml"></a>데이터 세트를 XML로 저장
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   

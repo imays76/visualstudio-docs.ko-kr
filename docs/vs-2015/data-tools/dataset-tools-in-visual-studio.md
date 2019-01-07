@@ -58,7 +58,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: b5881542c78c5c055d1cbc26d54eb5e478a13124
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49254347"
@@ -79,7 +79,7 @@ ms.locfileid: "49254347"
 ## <a name="dataset-workflow"></a>데이터 집합 워크플로  
  Visual Studio에는 많은 데이터 집합을 사용 하 여 작업을 간소화 하기 위해 도구를 제공 합니다. 기본 종단 간 워크플로 다음과 같습니다.  
   
--   사용 된 **데이터 원본** 창 하나 이상의 데이터 원본에서 새 데이터 집합 만들기. 사용 된 **데이터 집합 디자이너** 데이터 집합을 구성 하 고 해당 속성을 설정할 합니다. 예를 들어, 각 테이블의 열과를 포함 하려면 데이터 원본에서 테이블을 지정 해야 합니다. 데이터 집합을 요구 하는 메모리의 양을 절약 하기 위해 신중 하 게 선택 합니다. 자세한 내용은 [데이터 집합 만들기 및 구성](../data-tools/create-and-configure-datasets-in-visual-studio.md)을 참조하세요.  
+-   사용 된 **데이터 원본** 창 하나 이상의 데이터 원본에서 새 데이터 집합 만들기. 사용 된 **데이터 집합 디자이너** 데이터 집합을 구성 하 고 해당 속성을 설정할 합니다. 예를 들어, 각 테이블의 열과를 포함 하려면 데이터 원본에서 테이블을 지정 해야 합니다. 데이터 집합을 요구 하는 메모리의 양을 절약 하기 위해 신중 하 게 선택 합니다. 자세한 내용은 [데이터 세트 만들기 및 구성](../data-tools/create-and-configure-datasets-in-visual-studio.md)을 참조하세요.  
   
 -   외래 키를 올바르게 처리할 수 있도록 테이블 간의 관계를 지정 합니다. 자세한 내용은 [Tableadapter를 사용 하 여 데이터 집합 채우기](../data-tools/fill-datasets-by-using-tableadapters.md)합니다.  
   
@@ -93,7 +93,7 @@ ms.locfileid: "49254347"
   
     -   [데이터를 다시 데이터베이스에 저장](../data-tools/save-data-back-to-the-database.md)  
   
--   쿼리 및 데이터 집합의 데이터를 검색 합니다. 자세한 내용은 [데이터 집합 쿼리](../data-tools/query-datasets.md)합니다. [!INCLUDE[linq_dataset](../includes/linq-dataset-md.md)] 사용 하도록 설정 [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) 데이터에 대 한 <xref:System.Data.DataSet> 개체입니다. 자세한 내용은 [LINQ to DataSet](http://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17)를 참조하세요.  
+-   쿼리 및 데이터 집합의 데이터를 검색 합니다. 자세한 내용은 [데이터 집합 쿼리](../data-tools/query-datasets.md)합니다. [!INCLUDE[linq_dataset](../includes/linq-dataset-md.md)] 사용 하도록 설정 [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) 데이터에 대 한 <xref:System.Data.DataSet> 개체입니다. 자세한 내용은 [LINQ to DataSet](http://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17)을 참조하세요.  
   
 -   사용 된 **데이터 원본** 창 사용자 인터페이스 컨트롤을 데이터 집합 또는 개별 열을 바인딩할 하 고 사용자가 편집 가능한 열을 지정 하려면. 자세한 내용은 [Visual Studio에서 데이터에 컨트롤 바인딩](../data-tools/bind-controls-to-data-in-visual-studio.md)합니다.  
   

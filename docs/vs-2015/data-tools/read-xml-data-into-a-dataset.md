@@ -28,12 +28,12 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 6eb85fcef78b4b856c47ccb4436d1314ae440136
 ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/29/2018
 ms.locfileid: "50219733"
 ---
-# <a name="read-xml-data-into-a-dataset"></a>XML 데이터를 Dataset에 읽어오기
+# <a name="read-xml-data-into-a-dataset"></a>XML 데이터를 데이터 세트에 읽어오기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   

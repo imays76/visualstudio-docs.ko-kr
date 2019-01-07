@@ -29,7 +29,7 @@ ms.locfileid: "53927443"
  <xref:Microsoft.Office.Tools.Word.XMLNode> 만 Word에서 요소 매핑을 제거 하 여 컨트롤을 삭제할 수 있습니다.  
   
 ## <a name="bind-data-to-the-control"></a>컨트롤에 데이터 바인딩  
- <xref:Microsoft.Office.Tools.Word.XMLNode> 컨트롤은 단순 데이터 바인딩을 지원 합니다. XML 노드를 사용 하 여 데이터 원본에 바인딩할 수 해야는 <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> 속성입니다. 바인딩된 데이터 집합의 데이터가 업데이트되면 <xref:Microsoft.Office.Tools.Word.XMLNode> 컨트롤이 변경 내용을 반영합니다.  
+ <xref:Microsoft.Office.Tools.Word.XMLNode> 컨트롤은 단순 데이터 바인딩을 지원 합니다. XML 노드를 사용 하 여 데이터 원본에 바인딩할 수 해야는 <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> 속성입니다. 바인딩된 데이터 세트의 데이터가 업데이트되면 <xref:Microsoft.Office.Tools.Word.XMLNode> 컨트롤이 변경 내용을 반영합니다.  
   
 ## <a name="formatting"></a>서식  
  에 적용할 수 있는 형식 지정에 <xref:Microsoft.Office.Interop.Word.XMLNode> 개체에 적용할 수 있습니다는 <xref:Microsoft.Office.Tools.Word.XMLNode> 컨트롤입니다. 글꼴, 밑줄 스타일 및 스타일 문자 포함 됩니다.  

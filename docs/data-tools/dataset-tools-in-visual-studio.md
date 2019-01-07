@@ -1,5 +1,5 @@
 ---
-title: 데이터 집합 도구
+title: 데이터 세트 도구
 ms.date: 11/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
@@ -51,7 +51,7 @@ ms.workload:
 - data-storage
 ms.openlocfilehash: 3a8a1ac0f2ac4e4b147fbe11dba8d88ccea4c255
 ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 11/26/2018
 ms.locfileid: "52304989"
@@ -71,7 +71,7 @@ ms.locfileid: "52304989"
 
 Visual Studio는 데이터 집합을 사용 하 여 작업을 간소화 하기 위해 도구를 제공 합니다. 기본 종단 간 워크플로 다음과 같습니다.
 
-- 사용 된 [데이터 소스 창](add-new-data-sources.md#data-sources-window) 하나 이상의 데이터 원본에서 새 데이터 집합을 만들려면. 사용 된 **데이터 집합 디자이너** 데이터 집합을 구성 하 고 해당 속성을 설정할 합니다. 예를 들어, 각 테이블의 열과를 포함 하려면 데이터 원본에서 테이블을 지정 해야 합니다. 데이터 집합에 필요한 메모리 양을 절약 하기 위해 신중 하 게 선택 합니다. 자세한 내용은 [데이터 집합 만들기 및 구성](../data-tools/create-and-configure-datasets-in-visual-studio.md)을 참조하세요.
+- 사용 된 [데이터 소스 창](add-new-data-sources.md#data-sources-window) 하나 이상의 데이터 원본에서 새 데이터 집합을 만들려면. 사용 된 **데이터 집합 디자이너** 데이터 집합을 구성 하 고 해당 속성을 설정할 합니다. 예를 들어, 각 테이블의 열과를 포함 하려면 데이터 원본에서 테이블을 지정 해야 합니다. 데이터 집합에 필요한 메모리 양을 절약 하기 위해 신중 하 게 선택 합니다. 자세한 내용은 [데이터 세트 만들기 및 구성](../data-tools/create-and-configure-datasets-in-visual-studio.md)을 참조하세요.
 
 - 외래 키를 올바르게 처리할 수 있도록 테이블 간의 관계를 지정 합니다. 자세한 내용은 [Tableadapter를 사용 하 여 데이터 집합 채우기](../data-tools/fill-datasets-by-using-tableadapters.md)합니다.
 
@@ -85,7 +85,7 @@ Visual Studio는 데이터 집합을 사용 하 여 작업을 간소화 하기 �
 
     - [데이터를 다시 데이터베이스에 저장](../data-tools/save-data-back-to-the-database.md)
 
-- 쿼리 및 데이터 집합의 데이터를 검색 합니다. 자세한 내용은 [데이터 집합 쿼리](../data-tools/query-datasets.md)합니다. [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)] 사용 하도록 설정 [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/) 데이터에 대 한 <xref:System.Data.DataSet> 개체입니다. 자세한 내용은 [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset)를 참조하세요.
+- 쿼리 및 데이터 집합의 데이터를 검색 합니다. 자세한 내용은 [데이터 집합 쿼리](../data-tools/query-datasets.md)합니다. [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)] 사용 하도록 설정 [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/) 데이터에 대 한 <xref:System.Data.DataSet> 개체입니다. 자세한 내용은 [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset)을 참조하세요.
 
 - 사용 된 **데이터 원본** 창 사용자 인터페이스 컨트롤을 데이터 집합 또는 개별 열을 바인딩할 하 고 사용자가 편집 가능한 열을 지정 하려면. 자세한 내용은 [Visual Studio에서 데이터에 컨트롤 바인딩](../data-tools/bind-controls-to-data-in-visual-studio.md)합니다.
 

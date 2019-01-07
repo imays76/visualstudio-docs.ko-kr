@@ -70,7 +70,7 @@ ms.locfileid: "53958399"
  디버그 속성은 소스 제어에서 여러 사용자 간에 공유되지 않습니다. Visual Basic 및 C# 프로젝트는 디버깅 속성을 사용자별 파일(*ProjectName*.vbproj.user 또는 *ProjectName*.csproj.user)에 저장하며 이 파일은 소스 제어에서 사용되지 않습니다. 둘 이상의 사용자를 디버깅하는 경우 각 사용자가 디버그 속성을 수동으로 입력해야 합니다.
 
 ## <a name="debug-cached-datasets-in-a-document-level-project"></a>문서 수준 프로젝트에서 캐시 된 데이터 집합 디버깅
- 프로젝트를 빌드할 때마다 데이터 집합이 비워지고 다시 만들어집니다. 캐시된 데이터 집합을 디버그하려면 Visual Studio 외부에서 문서를 열고 디버거를 연결해야 합니다.
+ 프로젝트를 빌드할 때마다 데이터 세트가 비워지고 다시 만들어집니다. 캐시된 데이터 세트를 디버그하려면 Visual Studio 외부에서 문서를 열고 디버거를 연결해야 합니다.
 
 ## <a name="debug-word-document-projects-based-on-the-word-97-2003-document-doc-format"></a>Word 97-2003 문서를 기반으로 디버그 Word 문서 프로젝트 (*.doc) 형식
  Word 97-2003 문서를 기반으로 Word 문서 프로젝트를 디버그 하려면 (*/**.doc) 형식으로 신뢰할 수 있는 폴더 목록에 프로젝트 폴더를 추가 해야 합니다. 이 작업을 수행 하는 방법에 대 한 자세한 내용은 참조 하세요. [문서에 신뢰 부여](../vsto/granting-trust-to-documents.md)합니다.

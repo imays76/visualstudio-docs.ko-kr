@@ -1,5 +1,5 @@
 ---
-title: 형식화된 데이터 집합 및 형식화되지 않은 데이터 집합
+title: 형식화된 데이터 세트 및 형식화되지 않은 데이터 세트
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.workload:
 - data-storage
 ms.openlocfilehash: d817938a7611d7390e400cfbf69c6836b9256f3b
 ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/29/2018
 ms.locfileid: "37117227"
 ---
-# <a name="typed-vs-untyped-datasets"></a>형식화된 데이터 집합 및 형식화되지 않은 데이터 집합
+# <a name="typed-vs-untyped-datasets"></a>형식화된 데이터 세트 및 형식화되지 않은 데이터 세트
 형식화 된 데이터 집합은 기본에서 파생 하는 데이터 집합 <xref:System.Data.DataSet> 클래스 및 다음 정보를 사용 하 여는 **데이터 집합 디자이너**, dataset 클래스를 강력한 새 생성 하는.xsd 파일에 저장 된 합니다. 정보 스키마 (테이블, 열 및 등)에서 생성 되 고이 새 데이터 집합 클래스 최고 수준의 개체 및 속성의 집합으로 컴파일됩니다. 형식화 된 데이터 집합 기본에서 상속 되므로 <xref:System.Data.DataSet> 기능의 모든 클래스, 형식화 된 가정 합니다 <xref:System.Data.DataSet> 클래스 및 인스턴스를 사용 하는 메서드를 사용 하 여 사용할 수는 <xref:System.Data.DataSet> 클래스를 매개 변수로.
 
  형식화 되지 않은 데이터 집합을 해당 기본 제공 스키마를 반면에 있습니다. 형식화 된 데이터 집합에서와 같이 형식화 되지 않은 데이터 집합을 포함 테이블, 열 및 등-있지만 해당 컬렉션으로만 표시 됩니다. 그러나 (수동으로 만든 후 테이블 및 기타 데이터 요소 형식화 되지 않은 데이터 집합에서 내보낼 수 있습니다 데이터 집합의 구조를 스키마로 데이터 집합을 사용 하 여 <xref:System.Data.DataSet.WriteXmlSchema%2A> 메서드.)

@@ -1,5 +1,5 @@
 ---
-title: 데이터 집합 쿼리
+title: 데이터 세트 쿼리
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.workload:
 - data-storage
 ms.openlocfilehash: 2276828a67cec2562063d220ef3173d98fdf487b
 ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 07/02/2018
 ms.locfileid: "37174295"
 ---
-# <a name="query-datasets"></a>데이터 집합 쿼리
+# <a name="query-datasets"></a>데이터 세트 쿼리
 데이터 집합의 특정 레코드를 검색 하려면 사용 합니다 `FindBy` 메서드는 DataTable에서 테이블의 행 컬렉션을 반복 하거나 사용 하 여 사용자 고유의 foreach 문을 작성할 [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset)합니다.
 
 ## <a name="dataset-case-sensitivity"></a>데이터 집합의 대/소문자 구분

@@ -25,7 +25,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: a9f28902673018a4ae90fbb2ed83e741be99fbfc
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49204830"
@@ -186,16 +186,16 @@ ms.locfileid: "49204830"
   
 ## <a name="run-the-application"></a>응용 프로그램 실행  
   
-#### <a name="to-run-the-application"></a>응용 프로그램을 실행하려면  
+#### <a name="to-run-the-application"></a>애플리케이션을 실행하려면  
   
--   F5 키를 눌러 응용 프로그램을 실행합니다.  
+-   F5 키를 눌러 애플리케이션을 실행합니다.  
   
 -   고객 레코드를 두 번 클릭 **Form1** 열려는 **Form2** 해당 고객의 주문과 함께 합니다.  
   
 ## <a name="next-steps"></a>다음 단계  
  응용 프로그램 요구 사항에 따라 폼 간에 데이터를 전달한 후 몇 단계를 더 수행해야 할 수도 있습니다. 이 연습에서 보완할 수 있는 사항은 다음과 같습니다.  
   
--   데이터 집합을 편집하여 데이터베이스 개체를 추가하거나 편집합니다. 자세한 내용은 [데이터 집합 만들기 및 구성](../data-tools/create-and-configure-datasets-in-visual-studio.md)을 참조하세요.  
+-   데이터 집합을 편집하여 데이터베이스 개체를 추가하거나 편집합니다. 자세한 내용은 [데이터 세트 만들기 및 구성](../data-tools/create-and-configure-datasets-in-visual-studio.md)을 참조하세요.  
   
 -   데이터를 데이터베이스로 다시 보내는 기능을 추가합니다. 자세한 내용은 [데이터를 데이터베이스에 다시 저장](../data-tools/save-data-back-to-the-database.md)합니다.  
   

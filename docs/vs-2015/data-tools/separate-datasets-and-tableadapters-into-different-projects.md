@@ -22,12 +22,12 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 1e94c76254b14bdf82e4e7a219cbb0f35cb532f1
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49824330"
 ---
-# <a name="separate-datasets-and-tableadapters-into-different-projects"></a>데이터 집합 및 TableAdapter를 다른 프로젝트로 분리
+# <a name="separate-datasets-and-tableadapters-into-different-projects"></a>데이터 세트 및 TableAdapter를 다른 프로젝트로 분리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   

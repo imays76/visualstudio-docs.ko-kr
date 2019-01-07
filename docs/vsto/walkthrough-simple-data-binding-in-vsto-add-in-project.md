@@ -31,7 +31,7 @@ VSTO 추가 기능 프로젝트에서 호스트 컨트롤 및 Windows Forms 컨�
 
 -   추가 된 <xref:Microsoft.Office.Tools.Word.ContentControl> 런타임에 문서에 있습니다.
 
--   컨트롤을 데이터 집합 인스턴스에 연결하는 <xref:System.Windows.Forms.BindingSource> 만들기
+-   컨트롤을 데이터 세트 인스턴스에 연결하는 <xref:System.Windows.Forms.BindingSource> 만들기.
 
 -   사용자가 레코드를 스크롤하고 컨트롤에서 볼 수 있도록 설정
 
@@ -69,7 +69,7 @@ VSTO 추가 기능 프로젝트에서 호스트 컨트롤 및 Windows Forms 컨�
 
 **데이터 원본** 창을 사용하여 형식화된 데이터 집합을 프로젝트에 추가합니다.
 
-### <a name="to-add-a-typed-dataset-to-the-project"></a>프로젝트에 형식화된 데이터 집합을 추가하려면
+### <a name="to-add-a-typed-dataset-to-the-project"></a>프로젝트에 형식화된 데이터 세트를 추가하려면
 
 1. 경우는 **데이터 원본** 창이 표시 되지 않으면, 메뉴 모음에 의해 표시 **뷰** > **기타 Windows**  >   **데이터 원본**합니다.
 
@@ -89,7 +89,7 @@ VSTO 추가 기능 프로젝트에서 호스트 컨트롤 및 Windows Forms 컨�
 
     합니다 *AdventureWorksLTDataSet.xsd* 파일에 추가 됩니다 **솔루션 탐색기**합니다. 이 파일은 다음 항목을 정의합니다.
 
-   - `AdventureWorksLTDataSet`라는 형식화된 데이터 집합 이 데이터 집합은 AdventureWorksLT 데이터베이스의 **Customer(SalesLT)** 테이블 내용을 나타냅니다.
+   - `AdventureWorksLTDataSet`라는 형식화된 데이터 집합 이 데이터 세트는 AdventureWorksLT 데이터베이스의 **Customer(SalesLT)** 테이블 내용을 나타냅니다.
 
    - 라는 TableAdapter `CustomerTableAdapter`합니다. 이 TableAdapter의 읽기 및 쓰기 데이터를 사용할 수는 `AdventureWorksLTDataSet`합니다. 자세한 내용은 [TableAdapter 개요](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)합니다.
 
@@ -140,13 +140,13 @@ VSTO 추가 기능 프로젝트에서 호스트 컨트롤 및 Windows Forms 컨�
 
 ## <a name="test-the-add-in"></a>추가 기능을 테스트 합니다.
 
-Word를 열면 콘텐츠 컨트롤에 `AdventureWorksLTDataSet` 데이터 집합의 데이터가 표시됩니다. **다음** 및 **이전** 단추를 클릭하여 데이터베이스 레코드를 스크롤합니다.
+Word를 열면 콘텐츠 컨트롤에 `AdventureWorksLTDataSet` 데이터 세트의 데이터가 표시됩니다. **다음** 및 **이전** 단추를 클릭하여 데이터베이스 레코드를 스크롤합니다.
 
 ### <a name="to-test-the-vsto-add-in"></a>VSTO 추가 기능을 테스트하려면
 
 1.  **F5**키를 누릅니다.
 
-     이름이 `customerContentControl` 인 콘텐츠 컨트롤이 만들어지고 데이터로 채워집니다. 동시에 `adventureWorksLTDataSet` 라는 데이터 집합 개체와 <xref:System.Windows.Forms.BindingSource> 라는 `customerBindingSource` 가 프로젝트에 추가됩니다. <xref:Microsoft.Office.Tools.Word.ContentControl> 이 <xref:System.Windows.Forms.BindingSource>에 바인딩된 다음 데이터 집합 개체에 바인딩됩니다.
+     이름이 `customerContentControl` 인 콘텐츠 컨트롤이 만들어지고 데이터로 채워집니다. 동시에 `adventureWorksLTDataSet`라는 데이터 세트 개체와 <xref:System.Windows.Forms.BindingSource>라는 `customerBindingSource`가 프로젝트에 추가됩니다. <xref:Microsoft.Office.Tools.Word.ContentControl> 이 <xref:System.Windows.Forms.BindingSource>에 바인딩된 다음 데이터 집합 개체에 바인딩됩니다.
 
 2.  **다음** 및 **이전** 단추를 클릭하여 데이터베이스 레코드를 스크롤합니다.
 

@@ -138,12 +138,12 @@ ms.locfileid: "52281799"
   
      A **FillByCityToolStrip** 폼에 추가 됩니다.  
   
-## <a name="testing-the-application"></a>응용 프로그램 테스트  
+## <a name="testing-the-application"></a>애플리케이션 테스트  
  응용 프로그램을 실행하면 매개 변수를 입력으로 사용할 수 있는 폼이 열립니다.  
   
-#### <a name="to-test-the-application"></a>응용 프로그램을 테스트하려면  
+#### <a name="to-test-the-application"></a>애플리케이션을 테스트하려면  
   
-1.  F5 키를 눌러 응용 프로그램을 실행합니다.  
+1.  F5 키를 눌러 애플리케이션을 실행합니다.  
   
 2.  형식 **런던** 에 **City** 텍스트 상자를 클릭 한 다음 **FillByCity**합니다.  
   
@@ -152,9 +152,9 @@ ms.locfileid: "52281799"
 ## <a name="next-steps"></a>다음 단계  
  응용 프로그램 요구 사항에 따라 매개 변수가 있는 폼을 만든 후 몇 단계를 더 수행해야 할 수도 있습니다. 이 연습에서 보완할 수 있는 사항은 다음과 같습니다.  
   
--   관련 데이터를 표시하는 컨트롤을 추가합니다. 자세한 내용은 [방법: Windows Forms 응용 프로그램에서 관련 데이터 표시](../data-tools/how-to-display-related-data-in-a-windows-forms-application.md)를 참조하세요.  
+-   관련 데이터를 표시하는 컨트롤을 추가합니다. 자세한 내용은 [방법: Windows Forms 애플리케이션에서 관련 데이터 표시](../data-tools/how-to-display-related-data-in-a-windows-forms-application.md)를 참조하세요.  
   
--   데이터 집합을 편집하여 데이터베이스 개체를 추가하거나 편집합니다. 자세한 내용은 [데이터 집합 만들기 및 구성](../data-tools/create-and-configure-datasets-in-visual-studio.md)을 참조하세요.  
+-   데이터 집합을 편집하여 데이터베이스 개체를 추가하거나 편집합니다. 자세한 내용은 [데이터 세트 만들기 및 구성](../data-tools/create-and-configure-datasets-in-visual-studio.md)을 참조하세요.  
   
 ## <a name="see-also"></a>참고 항목  
  [Visual Studio에서 데이터에 Windows Forms 컨트롤 바인딩](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

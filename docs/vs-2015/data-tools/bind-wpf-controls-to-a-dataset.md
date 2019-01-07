@@ -28,7 +28,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 10/29/2018
 ms.locfileid: "50219798"
 ---
-# <a name="bind-wpf-controls-to-a-dataset"></a>데이터 집합으로 WPF 컨트롤 바인딩
+# <a name="bind-wpf-controls-to-a-dataset"></a>데이터 세트로 WPF 컨트롤 바인딩
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -232,10 +232,10 @@ ms.locfileid: "50219798"
     > [!NOTE]
     >  이 예에서는 `Save`의 `TableAdapter` 메서드를 사용하여 변경 내용을 저장합니다. 이 연습에서는 데이터 테이블을 하나만 변경하므로 이러한 방식이 적절합니다. 여러 데이터 테이블의 변경 내용을 저장해야 하는 경우에는 데이터 집합과 함께 생성되는 `UpdateAll`의 `TableAdapterManager` 메서드를 사용할 수 있습니다. 자세한 내용은 [TableAdapterManager 개요](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650)합니다.  
   
-## <a name="test-the-application"></a>응용 프로그램 테스트  
- 응용 프로그램을 빌드 및 실행합니다. 제품 레코드를 보고 업데이트할 수 있는지 확인합니다.  
+## <a name="test-the-application"></a>애플리케이션 테스트  
+ 애플리케이션을 빌드 및 실행합니다. 제품 레코드를 보고 업데이트할 수 있는지 확인합니다.  
   
-#### <a name="to-test-the-application"></a>응용 프로그램을 테스트하려면  
+#### <a name="to-test-the-application"></a>애플리케이션을 테스트하려면  
   
 1.  **F5**키를 누릅니다.  
   
@@ -251,7 +251,7 @@ ms.locfileid: "50219798"
   
 4.  변경한 제품 레코드로 이동하여 변경 내용이 유지되었는지를 확인합니다.  
   
-5.  응용 프로그램을 닫습니다.  
+5.  애플리케이션을 닫습니다.  
   
 ## <a name="next-steps"></a>다음 단계  
  이 연습을 완료하고 나면 다음과 같은 관련 작업을 수행할 수 있습니다.  

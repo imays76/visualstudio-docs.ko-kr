@@ -19,12 +19,12 @@ ms.workload:
 - data-storage
 ms.openlocfilehash: 812b464fe3e9742309a1ce6918d8d6b383101bf8
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49864129"
 ---
-# <a name="create-relationships-between-datasets"></a>데이터 집합 간 관계 만들기
+# <a name="create-relationships-between-datasets"></a>데이터 세트 간 관계 만들기
 관련된 데이터를 포함 하는 데이터 집합에 사용 하 여 테이블 <xref:System.Data.DataRelation> 서로 관련된 레코드를 반환 하 고 테이블 간의 부모/자식 관계를 나타내는 개체입니다. 관련된 테이블을 사용 하 여 데이터 집합에 추가 합니다 **데이터 소스 구성 마법사**, 또는 **데이터 집합 디자이너**생성 하 고 구성 합니다 <xref:System.Data.DataRelation> 개체입니다.
 
 <xref:System.Data.DataRelation> 개체 두 기능을 수행 합니다.

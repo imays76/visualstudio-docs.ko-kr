@@ -50,13 +50,13 @@ ms.locfileid: "53829036"
  워크시트에서 마스터/세부 관계를 만들고 오프라인에서 솔루션을 사용할 수 있도록 데이터를 캐시하는 방법을 보여 줍니다.  
   
  [연습: 서버에서 통합 문서에 데이터 삽입](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)  
- Excel을 시작하지 않고 Microsoft Office Excel 통합 문서로 캐시되는 데이터 집합에 데이터를 삽입하는 방법을 보여 줍니다.  
+ Excel을 시작하지 않고 Microsoft Office Excel 통합 문서로 캐시되는 데이터 세트에 데이터를 삽입하는 방법을 보여 줍니다.  
   
  [연습: 서버에서 통합 문서에서 캐시 된 데이터를 검색 합니다.](../vsto/walkthrough-retrieving-cached-data-from-a-workbook-on-a-server.md)  
- Excel을 시작하지 않고 Microsoft Office Excel 통합 문서에 캐시되는 데이터 집합에서 데이터를 검색하는 방법을 보여 줍니다.  
+ Excel을 시작하지 않고 Microsoft Office Excel 통합 문서에 캐시되는 데이터 세트에서 데이터를 검색하는 방법을 보여 줍니다.  
   
  [연습: 서버에서 통합 문서에서 캐시 된 데이터를 변경 합니다.](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)  
- Excel을 시작하지 않고 Microsoft Office Excel 통합 문서에 캐시되는 데이터 집합을 수정하는 방법을 보여 줍니다.  
+ Excel을 시작하지 않고 Microsoft Office Excel 통합 문서에 캐시되는 데이터 세트를 수정하는 방법을 보여 줍니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [Word를 사용 하 여 연습](../vsto/walkthroughs-using-word.md)   

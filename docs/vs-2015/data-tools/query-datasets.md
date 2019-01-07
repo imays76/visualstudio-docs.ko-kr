@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: a6e1ff0cd6f77d2155ff4982ca02657a741c02d7
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49890571"
 ---
-# <a name="query-datasets"></a>데이터 집합 쿼리
+# <a name="query-datasets"></a>데이터 세트 쿼리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   

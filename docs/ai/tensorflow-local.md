@@ -21,7 +21,7 @@ ms.locfileid: "49933991"
 ---
 # <a name="train-a-tensorflow-model-locally"></a>로컬로 tensorflow 모델 학습
 
-이 빠른 시작에서는 Visual Studio Tools for AI에서 로컬로 [MNIST](http://yann.lecun.com/exdb/mnist/) 데이터 집합을 통해 TensorFlow 모델을 학습합니다.
+이 빠른 시작에서는 Visual Studio Tools for AI에서 로컬로 [MNIST](http://yann.lecun.com/exdb/mnist/) 데이터 세트를 통해 TensorFlow 모델을 학습합니다.
 
 MNIST 데이터베이스에는 60,000개의 학습 예제 집합과 직접 작성한 10,000개의 테스트 예제 집합이 있습니다.
 

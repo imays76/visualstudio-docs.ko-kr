@@ -1,5 +1,5 @@
 ---
-title: 데이터 집합 및 TableAdapter를 다른 프로젝트로 분리
+title: 데이터 세트 및 TableAdapter를 다른 프로젝트로 분리
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - data-storage
 ms.openlocfilehash: 01e572a2ac20d1cfb103e1600307b51bdf58a0b8
 ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 07/02/2018
 ms.locfileid: "37174321"
 ---
-# <a name="separate-datasets-and-tableadapters-into-different-projects"></a>데이터 집합 및 TableAdapter를 다른 프로젝트로 분리
+# <a name="separate-datasets-and-tableadapters-into-different-projects"></a>데이터 세트 및 TableAdapter를 다른 프로젝트로 분리
 형식화 된 데이터 집합 향상 된 있도록 합니다 [Tableadapter](create-and-configure-tableadapters.md) dataset 클래스는 별도 프로젝트로 생성 될 수 있습니다. 이 통해 빠르게 응용 프로그램 계층을 분리 하 고 n 계층 데이터 응용 프로그램을 생성할 수 있습니다.
 
 다음 절차를 사용 하 여 프로세스를 설명 합니다 **데이터 집합 디자이너** 생성된 된 TableAdapter 코드를 포함 하는 프로젝트에서 별도 관리 되는 프로젝트에 데이터 집합 코드를 생성 하려면.

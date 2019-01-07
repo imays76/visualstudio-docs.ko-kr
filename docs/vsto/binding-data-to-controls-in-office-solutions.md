@@ -33,12 +33,12 @@ ms.locfileid: "53898637"
   
  호스트 컨트롤은 Word의 콘텐츠 컨트롤 및 Excel의 명명된 범위와 같이 Word 및 Excel 개체 모델에 있는 개체를 확장합니다. 자세한 내용은 [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)합니다.  
   
- Windows Forms와 호스트 컨트롤 모두 데이터 집합 및 데이터 테이블 같은 데이터 원본에 대해 *단순 데이터 바인딩* 과 *복합 데이터 바인딩* 을 둘 다 지원하는 Windows Forms 데이터 바인딩 모델을 사용합니다. Windows Forms 데이터 바인딩 모델에 대 한 자세한 내용은 참조 하세요. [데이터 바인딩 및 Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms)합니다.  
+ Windows Forms와 호스트 컨트롤 모두 데이터 세트 및 데이터 테이블 같은 데이터 원본에 대해 *단순 데이터 바인딩*과 *복합 데이터 바인딩*을 둘 다 지원하는 Windows Forms 데이터 바인딩 모델을 사용합니다. Windows Forms 데이터 바인딩 모델에 대 한 자세한 내용은 참조 하세요. [데이터 바인딩 및 Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms)합니다.  
   
  ![비디오 링크](../vsto/media/playvideo.gif "비디오 링크") 관련된 비디오 데모를 참조 하세요. [어떻게 할까요? : Excel에서 데이터베이스 데이터 사용? ](http://go.microsoft.com/fwlink/?LinkID=130287).  
   
 ## <a name="simple-data-binding"></a>단순 데이터 바인딩  
- 단순 데이터 바인딩은 컨트롤 속성이 데이터 테이블의 값 등 단일 데이터 요소에 바인딩될 때 존재합니다. 예를 들어 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤은 데이터 집합의 필드로 바인딩될 수 있는 <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> 속성을 가집니다. 데이터 집합의 필드가 변경되면 명명된 범위의 값도 변경됩니다. <xref:Microsoft.Office.Tools.Word.XMLNodes> 컨트롤을 제외한 모든 호스트 컨트롤은 단일 데이터 바인딩을 지원합니다. <xref:Microsoft.Office.Tools.Word.XMLNodes> 컨트롤은 컬렉션이므로 데이터 바인딩을 지원하지 않습니다.  
+ 단순 데이터 바인딩은 컨트롤 속성이 데이터 테이블의 값 등 단일 데이터 요소에 바인딩될 때 존재합니다. 예를 들어 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤은 데이터 세트의 필드로 바인딩될 수 있는 <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> 속성을 가집니다. 데이터 세트의 필드가 변경되면 명명된 범위의 값도 변경됩니다. <xref:Microsoft.Office.Tools.Word.XMLNodes> 컨트롤을 제외한 모든 호스트 컨트롤은 단일 데이터 바인딩을 지원합니다. <xref:Microsoft.Office.Tools.Word.XMLNodes> 컨트롤은 컬렉션이므로 데이터 바인딩을 지원하지 않습니다.  
   
  호스트 컨트롤에 대한 단순 데이터 바인딩을 수행하려면 <xref:System.Windows.Forms.Binding>을 해당 컨트롤의 `DataBindings` 속성에 추가합니다. <xref:System.Windows.Forms.Binding> 개체는 컨트롤의 속성 값과 데이터 요소 값 사이의 단순 바인딩을 나타냅니다.  
   

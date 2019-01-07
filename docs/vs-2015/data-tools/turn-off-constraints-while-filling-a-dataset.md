@@ -28,12 +28,12 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 9c47d3cb5e02117cb75ab86579b0cb3b166bd510
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49259911"
 ---
-# <a name="turn-off-constraints-while-filling-a-dataset"></a>데이터 집합을 채우는 동안 제약 조건 해제
+# <a name="turn-off-constraints-while-filling-a-dataset"></a>데이터 세트를 채우는 동안 제약 조건 해제
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
