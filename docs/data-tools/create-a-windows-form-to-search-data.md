@@ -18,7 +18,7 @@ ms.workload:
 - data-storage
 ms.openlocfilehash: 15cfd136050d9a0e3fca89964c5a9712b7b5ae06
 ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
 ms.locfileid: "53159895"
@@ -141,7 +141,7 @@ ms.locfileid: "53159895"
 
      **FillByCityToolStrip**이 양식에 추가됩니다.
 
-## <a name="test-the-application"></a>응용 프로그램 테스트
+## <a name="test-the-application"></a>애플리케이션 테스트
 
 응용 프로그램을 실행 폼 열리고 매개 변수 입력으로 사용할 수 있습니다.
 
@@ -157,7 +157,7 @@ ms.locfileid: "53159895"
 
 -   관련 데이터를 표시하는 컨트롤을 추가합니다. 자세한 내용은 [데이터 집합의 관계](relationships-in-datasets.md)합니다.
 
--   데이터 집합을 편집하여 데이터베이스 개체를 추가하거나 편집합니다. 자세한 내용은 [데이터 집합 만들기 및 구성](../data-tools/create-and-configure-datasets-in-visual-studio.md)을 참조하세요.
+-   데이터 집합을 편집하여 데이터베이스 개체를 추가하거나 편집합니다. 자세한 내용은 [데이터 세트 만들기 및 구성](../data-tools/create-and-configure-datasets-in-visual-studio.md)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 

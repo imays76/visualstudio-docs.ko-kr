@@ -1,5 +1,5 @@
 ---
-title: 데이터 집합으로 WPF 컨트롤 바인딩
+title: 데이터 세트로 WPF 컨트롤 바인딩
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.workload:
 - data-storage
 ms.openlocfilehash: 43b262344965091cf7599a9e1b2c43d6bcdb94f2
 ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 11/26/2018
 ms.locfileid: "52305730"
 ---
-# <a name="bind-wpf-controls-to-a-dataset"></a>데이터 집합으로 WPF 컨트롤 바인딩
+# <a name="bind-wpf-controls-to-a-dataset"></a>데이터 세트로 WPF 컨트롤 바인딩
 
 이 연습에서는 데이터 바인딩된 컨트롤을 포함 하는 WPF 응용 프로그램을 만들 수 있습니다. 이러한 컨트롤은 데이터 집합에서 캡슐화된 제품 레코드에 바인딩됩니다. 또한 제품을 통해 찾아보고 제품 레코드 변경 내용을 저장 단추를 추가할 수 있습니다.
 
@@ -218,9 +218,9 @@ WPF 디자이너에서 XAML을 수정하여 창에 여러 단추를 추가합니
     > [!NOTE]
     > 이 예에서는 `Save`의 `TableAdapter` 메서드를 사용하여 변경 내용을 저장합니다. 이 연습에서는 데이터 테이블을 하나만 변경하므로 이러한 방식이 적절합니다. 여러 데이터 테이블의 변경 내용을 저장해야 하는 경우에는 데이터 집합과 함께 생성되는 `UpdateAll`의 `TableAdapterManager` 메서드를 사용할 수 있습니다. 자세한 내용은 [Tableadapter](../data-tools/create-and-configure-tableadapters.md)합니다.
 
-## <a name="test-the-application"></a>응용 프로그램 테스트
+## <a name="test-the-application"></a>애플리케이션 테스트
 
-응용 프로그램을 빌드 및 실행합니다. 제품 레코드를 보고 업데이트할 수 있는지 확인합니다.
+애플리케이션을 빌드 및 실행합니다. 제품 레코드를 보고 업데이트할 수 있는지 확인합니다.
 
 1. **F5**키를 누릅니다.
 
@@ -236,7 +236,7 @@ WPF 디자이너에서 XAML을 수정하여 창에 여러 단추를 추가합니
 
 4. 변경한 제품 레코드로 이동하여 변경 내용이 유지되었는지를 확인합니다.
 
-5. 응용 프로그램을 닫습니다.
+5. 애플리케이션을 닫습니다.
 
 ## <a name="next-steps"></a>다음 단계
 

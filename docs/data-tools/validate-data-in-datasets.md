@@ -1,5 +1,5 @@
 ---
-title: 데이터 집합의 데이터 유효성 검사
+title: 데이터 세트의 데이터 유효성 검사
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -25,12 +25,12 @@ ms.workload:
 - data-storage
 ms.openlocfilehash: 5a0a8846719c6ad57e65e1e308e9884e81e1997d
 ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 07/02/2018
 ms.locfileid: "37174724"
 ---
-# <a name="validate-data-in-datasets"></a>데이터 집합의 데이터 유효성 검사
+# <a name="validate-data-in-datasets"></a>데이터 세트의 데이터 유효성 검사
 데이터 유효성 검사는 데이터 집합의 스키마 내에서 제약 조건에 따르는 데이터 개체에 입력할 값 확인 프로세스. 유효성 검사 프로세스는 또한 이러한 값은 다음과 같습니다 응용 프로그램에 대해 설정 된 규칙을 확인 합니다. 기본 데이터베이스에 업데이트를 보내기 전에 데이터의 유효성을 검사 하는 것이 좋습니다. 이렇게 하면 오류 뿐 아니라 잠재적인 응용 프로그램와 데이터베이스 간의 왕복 수가 줄어듭니다.
 
 자체 데이터 집합에 유효성 검사를 구축 하 여 데이터 집합에 기록 되는 데이터가 유효한 지 확인할 수 있습니다. 데이터 집합 업데이트 수행 방법에 관계 없이 데이터를 확인할 수 있습니다-구성 요소 내에서 양식 또는 다른 방법으로 컨트롤에서 직접 여부. 데이터 집합 (달리 데이터베이스 백 엔드) 응용 프로그램의 일부 이기 때문에 빌드 응용 프로그램별 유효성 검사 논리 마련 된 공간입니다.

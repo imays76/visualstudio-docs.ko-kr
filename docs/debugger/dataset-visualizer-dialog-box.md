@@ -25,12 +25,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: caa7e79ed33871cbcd816cd09edfe84b167e1702
 ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
 ms.locfileid: "31457269"
 ---
-# <a name="dataset-visualizer-dialog-box"></a>데이터 집합 시각화 도우미 대화 상자
+# <a name="dataset-visualizer-dialog-box"></a>데이터 세트 시각화 도우미 대화 상자
 데이터 집합 시각화 도우미를 사용하면 DataSet, DataTable, DataView 또는 DataViewManager 개체의 내용을 볼 수 있습니다. 디버거 변수 창이나 DataTip에서 이러한 개체 중 하나의 값 옆에 나타나는 돋보기 아이콘을 클릭하면 이 시각화 도우미에 액세스할 수 있습니다.  
   
  이 시각화 도우미에서 개체를 변경할 수 있습니다. 변경 내용은 행을 커밋하는 즉시 저장됩니다.  

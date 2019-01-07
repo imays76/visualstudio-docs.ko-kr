@@ -175,7 +175,7 @@ ms.locfileid: "53888129"
 
 3.  끌기 합니다 **제품** A1 셀에는 테이블입니다.
 
-     A <xref:Microsoft.Office.Tools.Excel.ListObject> 제어 라는 `productListObject` A1 셀부터 워크시트에 만들어집니다. 동시에 `adventureWorksLTDataSet` 라는 데이터 집합 개체와 <xref:System.Windows.Forms.BindingSource> 라는 `productBindingSource` 가 프로젝트에 추가됩니다. <xref:Microsoft.Office.Tools.Excel.ListObject> 가 <xref:System.Windows.Forms.BindingSource>에 바인딩된 다음 데이터 집합 개체에 바인딩됩니다.
+     A <xref:Microsoft.Office.Tools.Excel.ListObject> 제어 라는 `productListObject` A1 셀부터 워크시트에 만들어집니다. 동시에 `adventureWorksLTDataSet`라는 데이터 세트 개체와 <xref:System.Windows.Forms.BindingSource>라는 `productBindingSource`가 프로젝트에 추가됩니다. <xref:Microsoft.Office.Tools.Excel.ListObject> 가 <xref:System.Windows.Forms.BindingSource>에 바인딩된 다음 데이터 집합 개체에 바인딩됩니다.
 
 ## <a name="add-the-dataset-to-the-data-cache"></a>데이터 캐시에 데이터 집합을 추가 합니다.
  통합 문서에서 데이터 집합에 액세스 하려면 Excel 통합 문서 프로젝트 외부에서 코드를 사용 하려면 데이터 캐시에 데이터 집합을 추가 해야 합니다. 데이터 캐시에 대 한 자세한 내용은 참조 하세요. [문서 수준 사용자 지정에서 캐시 된 데이터](../vsto/cached-data-in-document-level-customizations.md) 하 고 [데이터를 캐시](../vsto/caching-data.md)합니다.

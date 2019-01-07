@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: a0f7c21dcffb7c17f859d79d3aed5522beb14acf
 ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/29/2018
 ms.locfileid: "50220536"
 ---
-# <a name="add-validation-to-an-n-tier-dataset"></a>n 계층 데이터 집합에 유효성 검사 추가
+# <a name="add-validation-to-an-n-tier-dataset"></a>n 계층 데이터 세트에 유효성 검사 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   

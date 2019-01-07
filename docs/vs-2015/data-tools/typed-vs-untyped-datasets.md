@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 71761826611c490a3fb43413acaa29eb6520138f
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49283792"
 ---
-# <a name="typed-vs-untyped-datasets"></a>형식화된 데이터 집합 및 형식화되지 않은 데이터 집합
+# <a name="typed-vs-untyped-datasets"></a>형식화된 데이터 세트 및 형식화되지 않은 데이터 세트
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   

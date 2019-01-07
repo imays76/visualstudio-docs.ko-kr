@@ -22,12 +22,12 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 5a983b671b5c6b43009ad3cc32c2cb287977f05c
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49949294"
 ---
-# <a name="edit-data-in-datasets"></a>데이터 집합의 데이터 편집
+# <a name="edit-data-in-datasets"></a>데이터 세트의 데이터 편집
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   

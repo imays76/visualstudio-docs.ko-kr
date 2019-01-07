@@ -15,12 +15,12 @@ ms.workload:
 - data-storage
 ms.openlocfilehash: 23837bcfb1d3761f8ebf23020c15e901833d63b3
 ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 11/26/2018
 ms.locfileid: "52305224"
 ---
-# <a name="create-and-configure-datasets-in-visual-studio"></a>Visual Studio에서 데이터 집합 만들기 및 구성
+# <a name="create-and-configure-datasets-in-visual-studio"></a>Visual Studio에서 데이터 세트 만들기 및 구성
 
 데이터 집합은 데이터베이스에서 데이터를 메모리에 저장 하 고 사용 하도록 설정 하려면 변경 내용 추적을 지 원하는 개체 집합을 만들기, 읽기, 업데이트 및 삭제 (CRUD) 작업 항상 데이터베이스에 연결할 필요가 없이 해당 데이터에 있습니다. 데이터 집합은 간단한 용으로 설계 된 *데이터 폼* 비즈니스 응용 프로그램입니다. 새 응용 프로그램에 대 한 Entity Framework를 사용 하 여 저장 하 고 메모리에서 데이터를 모델링 하는 것이 좋습니다. 데이터 집합을 사용 하려면 데이터베이스 개념에 대 한 기본 지식이 있어야 합니다.
 

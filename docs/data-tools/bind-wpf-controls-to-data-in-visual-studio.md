@@ -20,7 +20,7 @@ ms.workload:
 - data-storage
 ms.openlocfilehash: 4fa8ddf42cad6ad613846ceff2b49739b7dc1c18
 ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 11/26/2018
 ms.locfileid: "52305340"
@@ -59,7 +59,7 @@ Visual Studio에서 데이터 바인딩된 컨트롤을 만드는 방법에 대 
 | 서비스 | 예 | 아니요 |
 | Object | 예 | 아니요 |
 
-### <a name="datasets"></a>데이터 집합
+### <a name="datasets"></a>데이터 세트
 
 테이블 또는 열을 끌어다 놓으면 합니다 **데이터 원본** Visual Studio 디자이너 창을 생성 [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] 다음을 수행 하는:
 

@@ -27,7 +27,7 @@ manager: ghogen
 robots: noindex,nofollow
 ms.openlocfilehash: eacf075a0ba8689ff0cb5ca822d5cc8ca2f7ad1e
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49233911"
@@ -99,7 +99,7 @@ Visual Studio에서 거의 모든 데이터베이스 제품 또는 서비스의 
  LINQ to SQL  
  이전 세대 개체 관계형 매퍼입니다. 덜 복잡 한 시나리오에 적합 하 않지만 더 이상 활성 개발 중입니다.  
   
- 데이터 집합  
+ 데이터 세트  
  가장 오래 된 세 가지 모델링 기술입니다. 주로 나타나는 하지 엄청난 양의 데이터를 처리 하거나 하는 복잡 한 쿼리 또는 변환을 수행 "데이터 폼" 응용 프로그램의 신속한 개발을 위한 설계 되었습니다. 데이터 집합 개체를 논리적으로 SQL 데이터베이스 개체를.NET 개체 보다 훨씬 더 유사한 DataTable 및 DataRow 개체 이루어져 있습니다. SQL 데이터 원본을 기반으로 상대적으로 간단한 응용 프로그램에 대해 데이터 집합에 적합 한 선택 될 수 있습니다.  
   
  이러한 기술 중 하나를 사용 하는 요구 사항이 있습니다. 일부 시나리오에서는 성능은 중요 하며, 경우에 특히 사용할 수 있습니다 단순히 DataReader 개체를 데이터베이스에서 읽고 목록과 같은 컬렉션 개체에 필요한 값을 복사할\<T >입니다.  

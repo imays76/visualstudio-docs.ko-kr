@@ -22,12 +22,12 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: bea966bfde9726047ab52d10523a54be3f15c373
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49217396"
 ---
-# <a name="create-and-configure-datasets-in-visual-studio"></a>Visual Studio에서 데이터 집합 만들기 및 구성
+# <a name="create-and-configure-datasets-in-visual-studio"></a>Visual Studio에서 데이터 세트 만들기 및 구성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   

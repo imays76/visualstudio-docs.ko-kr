@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: fa90ddb397d1c18e88ab8f25e2a0c3aee3e4d9a5
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49891130"
 ---
-# <a name="validate-data-in-datasets"></a>데이터 집합의 데이터 유효성 검사
+# <a name="validate-data-in-datasets"></a>데이터 세트의 데이터 유효성 검사
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   

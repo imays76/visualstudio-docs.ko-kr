@@ -40,11 +40,11 @@ ms.locfileid: "53871887"
  <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤은 특정 시트 범위로만 구성될 수 있습니다. <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤은 모든 시트에 적용되는 상대적 이름을 가질 수 없으며 통합 문서에서 둘 이상의 워크시트를 포함하는 범위(3D 범위)로 구성될 수 없습니다.  
   
 ## <a name="bind-data-to-the-control"></a>컨트롤에 데이터 바인딩  
- 명명된 범위에는 많은 셀을 포함할 수 있으므로 복잡한 데이터 바인딩이 가능해 보일 수 있습니다. 그러나 범위는 단지 데이터 집합의 특정 열에 쉽게 매핑할 수 없는 셀 모음일 뿐입니다. 따라서 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤은 단순 데이터 바인딩만 지원합니다. <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤은 복잡한 데이터 바인딩에 사용할 수 있습니다. 자세한 내용은 [ListObject 컨트롤](../vsto/listobject-control.md)합니다.  
+ 명명된 범위에는 많은 셀을 포함할 수 있으므로 복잡한 데이터 바인딩이 가능해 보일 수 있습니다. 그러나 범위는 단지 데이터 세트의 특정 열에 쉽게 매핑할 수 없는 셀 모음일 뿐입니다. 따라서 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤은 단순 데이터 바인딩만 지원합니다. <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤은 복잡한 데이터 바인딩에 사용할 수 있습니다. 자세한 내용은 [ListObject 컨트롤](../vsto/listobject-control.md)합니다.  
   
  <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤은 <xref:System.Windows.Forms.Control.DataBindings%2A> 속성을 사용하여 데이터 원본에 바인딩할 수 있습니다. <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤의 기본 데이터 바인딩 속성은 <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A>입니다.  
   
- 바인딩된 데이터 집합의 데이터가 임의 메커니즘을 통해 업데이트되면 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤이 변경 내용을 반영합니다.  
+ 바인딩된 데이터 세트의 데이터가 임의 메커니즘을 통해 업데이트되면 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤이 변경 내용을 반영합니다.  
   
 ## <a name="formatting"></a>서식  
  <xref:Microsoft.Office.Interop.Excel.Range> 에 적용할 수 있는 서식은 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤에 적용할 수 있습니다. 여기에 테두리, 글꼴, 숫자 서식 및 스타일.  

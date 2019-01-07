@@ -1,5 +1,5 @@
 ---
-title: 데이터 집합을 채우는 동안 제약 조건 해제
+title: 데이터 세트를 채우는 동안 제약 조건 해제
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -24,12 +24,12 @@ ms.workload:
 - data-storage
 ms.openlocfilehash: d128216f84228c9cd4946f9a38c6c1b7845f92f1
 ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/29/2018
 ms.locfileid: "37117240"
 ---
-# <a name="turn-off-constraints-while-filling-a-dataset"></a>데이터 집합을 채우는 동안 제약 조건 해제
+# <a name="turn-off-constraints-while-filling-a-dataset"></a>데이터 세트를 채우는 동안 제약 조건 해제
 
 데이터 집합 제약 조건 (예: 외래 키 제약 조건)를 포함 하는 경우 데이터 집합에 대해 수행 되는 작업 순서와 관련 된 오류를 발생 시킬 수 있습니다. 예를 들어, 로드 하기 전에 자식 레코드를 로드와 관련 된 부모 레코드 제약 조건을 위반 및 오류를 발생 시킬 수 있습니다. 자식 레코드를 로드 하는 즉시 제약 조건 관련된 부모 레코드에 대 한 확인 하 고 오류를 발생 시킵니다.
 

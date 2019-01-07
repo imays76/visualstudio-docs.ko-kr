@@ -30,7 +30,7 @@ ms.locfileid: "53831773"
 
 - 추가 된 <xref:Microsoft.Office.Tools.Excel.ListObject> 런타임에 워크시트에 컨트롤입니다.
 
-- 컨트롤을 데이터 집합 인스턴스에 연결하는 <xref:System.Windows.Forms.BindingSource> 만들기
+- 컨트롤을 데이터 세트 인스턴스에 연결하는 <xref:System.Windows.Forms.BindingSource> 만들기.
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -61,7 +61,7 @@ ms.locfileid: "53831773"
 ## <a name="create-a-data-source"></a>데이터 원본 만들기
  **데이터 원본** 창을 사용하여 형식화된 데이터 집합을 프로젝트에 추가합니다.
 
-### <a name="to-add-a-typed-dataset-to-the-project"></a>프로젝트에 형식화된 데이터 집합을 추가하려면
+### <a name="to-add-a-typed-dataset-to-the-project"></a>프로젝트에 형식화된 데이터 세트를 추가하려면
 
 1. 경우는 **데이터 원본** 창이 표시 되지 않으면, 메뉴 모음에 의해 표시 **뷰** > **기타 Windows**  >   **데이터 원본**합니다.
 
@@ -81,7 +81,7 @@ ms.locfileid: "53831773"
 
     합니다 *AdventureWorksLTDataSet.xsd* 파일에 추가 됩니다 **솔루션 탐색기**합니다. 이 파일은 다음 항목을 정의합니다.
 
-   - `AdventureWorksLTDataSet`라는 형식화된 데이터 집합 이 데이터 집합은 AdventureWorksLT 데이터베이스의 **Address(SalesLT)** 테이블의 내용을 나타냅니다.
+   - `AdventureWorksLTDataSet`라는 형식화된 데이터 집합 이 데이터 세트는 AdventureWorksLT 데이터베이스의 **Address(SalesLT)** 테이블의 내용을 나타냅니다.
 
    - 라는 TableAdapter `AddressTableAdapter`합니다. 이 TableAdapter의 읽기 및 쓰기 데이터를 사용할 수는 `AdventureWorksLTDataSet`합니다. 자세한 내용은 [TableAdapter 개요](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)합니다.
 
@@ -92,7 +92,7 @@ ms.locfileid: "53831773"
 
  데이터 바인딩 컨트롤에 대 한 자세한 내용은 참조 하세요. [Office 솔루션의 컨트롤에 데이터 바인딩](../vsto/binding-data-to-controls-in-office-solutions.md)합니다.
 
-### <a name="to-add-the-list-object-dataset-and-table-adapter"></a>목록 개체, 데이터 집합 및 테이블 어댑터를 추가하려면
+### <a name="to-add-the-list-object-dataset-and-table-adapter"></a>목록 개체, 데이터 세트 및 테이블 어댑터를 추가하려면
 
 1.  `ThisAddIn` 클래스에서 다음 컨트롤을 선언하여 `Address` 데이터 집합의 `AdventureWorksLTDataSet` 테이블을 표시합니다.
 
@@ -120,13 +120,13 @@ ms.locfileid: "53831773"
      [!code-vb[Trin_ExcelAddInDatabase#5](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInDatabase_O12/ThisAddIn.vb#5)]
 
 ## <a name="test-the-add-in"></a>추가 기능을 테스트 합니다.
- Excel을 열면 <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤이 `Address` 데이터 집합의 `AdventureWorksLTDataSet` 테이블에 있는 데이터를 표시합니다.
+ Excel을 열면 <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤이 `Address` 데이터 세트의 `AdventureWorksLTDataSet` 테이블에 있는 데이터를 표시합니다.
 
 ### <a name="to-test-the-vsto-add-in"></a>VSTO 추가 기능을 테스트하려면
 
 -   **F5**키를 누릅니다.
 
-     <xref:Microsoft.Office.Tools.Excel.ListObject> 라는 `addressListObject` 컨트롤이 워크시트에 만들어집니다. 동시에 `adventureWorksLTDataSet` 라는 데이터 집합 개체와 <xref:System.Windows.Forms.BindingSource> 라는 `addressBindingSource` 가 프로젝트에 추가됩니다. <xref:Microsoft.Office.Tools.Excel.ListObject> 가 <xref:System.Windows.Forms.BindingSource>에 바인딩된 다음 데이터 집합 개체에 바인딩됩니다.
+     <xref:Microsoft.Office.Tools.Excel.ListObject> 라는 `addressListObject` 컨트롤이 워크시트에 만들어집니다. 동시에 `adventureWorksLTDataSet`라는 데이터 세트 개체와 <xref:System.Windows.Forms.BindingSource>라는 `addressBindingSource`가 프로젝트에 추가됩니다. <xref:Microsoft.Office.Tools.Excel.ListObject> 가 <xref:System.Windows.Forms.BindingSource>에 바인딩된 다음 데이터 집합 개체에 바인딩됩니다.
 
 ## <a name="see-also"></a>참고 항목
 

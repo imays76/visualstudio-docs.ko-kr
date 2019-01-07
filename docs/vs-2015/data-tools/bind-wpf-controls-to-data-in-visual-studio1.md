@@ -27,7 +27,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 3852a02015ba175b49a8e94adf8991003707a497
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49914686"
@@ -65,7 +65,7 @@ ms.locfileid: "49914686"
 |서비스|예|아니요|  
 |Object|예|아니요|  
   
-### <a name="datasets"></a>데이터 집합  
+### <a name="datasets"></a>데이터 세트  
  테이블 또는 열을 끌어다 놓으면 합니다 **데이터 원본** 창에서 디자이너로 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 생성 [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] 다음을 수행 하는:  
   
 - 항목을 끌어 온 컨테이너의 리소스에 데이터 집합과 새 <xref:System.Windows.Data.CollectionViewSource>를 추가합니다. <xref:System.Windows.Data.CollectionViewSource>는 데이터 집합에 있는 데이터를 탐색하고 표시하는 데 사용할 수 있는 개체입니다.  
