@@ -41,7 +41,7 @@ ms.locfileid: "53871059"
   프로젝트에 대한 기능이나 패키지가 정의되지 않더라도 두 노드는 모두 항상 모든 SharePoint 프로젝트에 표시됩니다.  
   
 #### <a name="features-node"></a>기능 노드
-  **기능** 노드에는 SharePoint 프로젝트 기능이 하나 이상 포함됩니다. 기능은 SharePoint용 확장의 컨테이너입니다. 기능이 SharePoint 서버에 배포되고 나면 SharePoint 사이트에서 SharePoint 관리자가 기능을 사이트 정의에 포함하거나 개별적으로 활성화할 수 있습니다. 자세한 내용은 [기능 작업](http://go.microsoft.com/fwlink/?LinkID=147704)을 참조하세요.  
+ **기능** 노드에는 SharePoint 프로젝트 기능이 하나 이상 포함됩니다. 기능은 SharePoint용 확장의 컨테이너입니다. 기능이 SharePoint 서버에 배포되고 나면 SharePoint 사이트에서 SharePoint 관리자가 기능을 사이트 정의에 포함하거나 개별적으로 활성화할 수 있습니다. 자세한 내용은 [기능 작업](http://go.microsoft.com/fwlink/?LinkID=147704)을 참조하세요.  
   
  콘텐츠 형식이나 목록 인스턴스와 같은 항목을 SharePoint 프로젝트에 추가하면 해당 항목은 **기능** 노드의 기능에 추가됩니다. 항목 범위에 따라 새 기능 또는 기존 기능에 추가되는지 결정됩니다. 새 항목의 범위가 기존 기능 범위와 같으면 새 항목은 기존 기능에 추가됩니다. 그러지 않으면 항목이 새 기능에 추가됩니다.  
   
@@ -50,7 +50,7 @@ ms.locfileid: "53871059"
  기능이 SharePoint 프로젝트에 추가되면 **솔루션 탐색기** 에 기본 이름인 Feature*x*.feature를 사용한 노드로 표시됩니다. 여기서 *x* 는 고유 번호입니다. 기능이 SharePoint 서버에 배포되고 나면 SharePoint 관리자가 기능을 활성화하여 SharePoint 사이트 사용자가 사용 가능하도록 설정할 수 있습니다.  
   
 #### <a name="package-node"></a>패키지 노드
- **패키지** 노드에는 SharePoint 프로젝트에 대한 배포 메커니즘으로 사용하는 단일 파일이 포함됩니다. 라고도 하는이 파일을 *솔루션 패키지*, 됩니다. CAB를 기반으로 한 합니다. WSP 확장입니다. 솔루션 패키지는 SharePoint 사이트에 적용되는 기능 집합, 사이트 정의 및 어셈블리가 포함되고 개별적으로 사용하거나 사용하지 않도록 설정할 수 있는 배포 가능하고 재사용 가능한 파일입니다.  **패키지** 노드에는 항상 패키지에 대한 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 정의 파일인 Package.wspdef라는 파일이 포함됩니다. 패키지가 SharePoint를 실행하는 서버에 배포되고 나면 SharePoint 관리자가 패키지를 설치하고 해당 기능을 활성화할 수 있습니다.  
+ **패키지** 노드에는 SharePoint 프로젝트에 대한 배포 메커니즘으로 사용하는 단일 파일이 포함됩니다. 라고도 하는이 파일을 *솔루션 패키지*, 됩니다. CAB를 기반으로 한 합니다. WSP 확장입니다. 솔루션 패키지는 SharePoint 사이트에 적용되는 기능 집합, 사이트 정의 및 어셈블리가 포함되고 개별적으로 사용하거나 사용하지 않도록 설정할 수 있는 배포 가능하고 재사용 가능한 파일입니다. **패키지** 노드에는 항상 패키지에 대한 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 정의 파일인 Package.wspdef라는 파일이 포함됩니다. 패키지가 SharePoint를 실행하는 서버에 배포되고 나면 SharePoint 관리자가 패키지를 설치하고 해당 기능을 활성화할 수 있습니다.  
   
  보거나 패키지 노드를 두 번 클릭 하거나 해당 바로 가기 메뉴를 열고 선택 하 여 패키지 디자이너에서 패키지의 콘텐츠를 변경할 수 있습니다 **열려**합니다. 자세한 내용은 [만들 SharePoint 솔루션 패키지](../sharepoint/creating-sharepoint-solution-packages.md)합니다.  
   
@@ -96,7 +96,7 @@ ms.locfileid: "53871059"
 |-------------------|-----------------|  
 |빌드 작업|파일이 빌드 및 배포 프로세스와 연결되는 방법을 지정합니다. 자세한 내용은 [파일 속성](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\))을 참조하세요.|  
 |출력 디렉터리에 복사|소스 파일을 출력 디렉터리로 복사할 것인지를 지정합니다. 다음 값 중 하나입니다.<br /><br /> -   *복사 안 함*<br />-   *항상 복사*<br />-   *변경 된 내용만 복사*<br /><br /> 자세한 내용은 [파일 속성](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\))을 참조하세요.|  
-|사용자 지정 도구|디자인 타임에 파일을 변환하고 변환 출력을 다른 파일에 저장하는 도구의 이름을 지정합니다. 예를 들어 데이터 집합(.[!INCLUDE[TLA2#tla_xsd](../sharepoint/includes/tla2sharptla-xsd-md.md)]) 파일에는 기본 사용자 지정 도구가 있습니다. 자세한 내용은 [파일 속성](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\))을 참조하세요.|  
+|사용자 지정 도구|디자인 타임에 파일을 변환하고 변환 출력을 다른 파일에 저장하는 도구의 이름을 지정합니다. 예를 들어 데이터 세트(.[!INCLUDE[TLA2#tla_xsd](../sharepoint/includes/tla2sharptla-xsd-md.md)]) 파일에는 기본 사용자 지정 도구가 있습니다. 자세한 내용은 [파일 속성](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\))을 참조하세요.|  
 |사용자 지정 도구 네임스페이스|사용자 지정 도구의 출력이 복사될 네임스페이스입니다. 자세한 내용은 [파일 속성](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\))을 참조하세요.|  
 |배포 위치|SharePoint 서버에서 파일의 정규화된 경로입니다. 이 경로는 배포 루트 및 배포 경로 하위 속성으로 구성됩니다.|  
 |배포 경로|Workflow1 같은 SharePoint 서버 파일을 파일의 상대 경로\\합니다. 파일에 대한 정규화된 경로는 *Deployment Path* 값을 *Deployment Root* 값의 끝에 연결해서 만듭니다.<br /><br /> 값을 선택 하 *RootFile* 에 대 한 합니다 *배포 유형을* 속성 변경 내용을 합니다 *Deployment Root* 속성을 \<SharePointRoot >\\의 정규화 된 경로에 결과 \<SharePointRoot > \Workflow1\\합니다. 자세한 내용은 [패키징 및 SharePoint 솔루션 배포](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)합니다.|  
