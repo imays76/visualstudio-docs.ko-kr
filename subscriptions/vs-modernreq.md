@@ -3,18 +3,18 @@ title: Visual Studio 구독의 MODERNRequirements 혜택 | Microsoft Docs
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/12/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: 선택한 Visual Studio Enterprise 구독에 포함된 ModernRequirements 제품군에 대해 알아봅니다.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 1c080b19694495057243c2d8df9ee505bd650cb3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 69dcde708cdd88c1e9945567fc8525fb1763627c
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942870"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740262"
 ---
 # <a name="the-modernrequirements4tfs-benefit-in-visual-studio-subscriptions"></a>Visual Studio 구독의 MODERNRequirements4TFS 혜택
 
@@ -51,7 +51,7 @@ ms.locfileid: "49942870"
 
 10. "SmartOffice4TFS_Online" 하위 폴더를 엽니다.
 
-11. 이 폴더에는 다음 네 가지 설치 관리자 응용 프로그램이 하나씩 포함되어 있습니다.
+11. 이 폴더에는 다음 네 가지 설치 관리자 애플리케이션이 하나씩 포함되어 있습니다.
     - SmartExcel4TFS_Online
     - SmartOutlook4TFS_Online
     - SmartVisio4TFS_Online
@@ -62,13 +62,13 @@ ms.locfileid: "49942870"
 
 12. 폴더에서 마우스 오른쪽 단추를 클릭하고 **모두 추출**을 선택합니다.  파일을 추출하려는 위치를 지정하고 **추출**을 클릭합니다.
 
-13. 제품 중 하나를 설치하려면 [다운로드] 폴더에서 해당 응용 프로그램을 시작합니다.  이 예에서는 SmartWord4TFS를 설치합니다.  사용자 계정 컨트롤 대화 상자가 열리면 **예**를 클릭하여 응용 프로그램을 시작합니다.
+13. 제품 중 하나를 설치하려면 [다운로드] 폴더에서 해당 애플리케이션을 시작합니다.  이 예에서는 SmartWord4TFS를 설치합니다.  사용자 계정 컨트롤 대화 상자가 열리면 **예**를 클릭하여 애플리케이션을 시작합니다.
 
 14. 설치 마법사가 시작됩니다.  **다음** 을 클릭하여 계속합니다.
 
 15. **동의함** 라디오 단추를 클릭하여 약관에 동의하고 **다음**을 클릭합니다.
 
-16. 응용 프로그램을 설치하려는 위치를 선택하고, 모든 사용자 또는 자신만 사용할지 여부를 지정합니다.  **다음**을 클릭합니다.
+16. 애플리케이션을 설치하려는 위치를 선택하고, 모든 사용자 또는 자신만 사용할지 여부를 지정합니다.  **다음**을 클릭합니다.
 
 17. SmartWord를 [작성자 모드] 또는 [검토자 모드]로 설치할지 여부를 선택합니다.  이러한 모드에 대한 자세한 내용은 [MODERNRequirements 지원](http://www.modernrequirements.com/support-2/)에 문의하세요.  **다음**을 클릭합니다.
 
@@ -88,14 +88,18 @@ ms.locfileid: "49942870"
 
 | 구독 수준                                                 |     채널                                            | 이점                                                          | 갱신 가능?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise(표준, 연간 클라우드)   | VL, Azure, 일반 정품, 선택한 NFR<sup>1</sup> | 6개월       |  아니요.  새 구독자만 사용할 수 있음          |
-| Visual Studio Professional(표준, 연간 클라우드) | VL, Azure, 일반 정품                                       | 사용할 수 없음                                                          |해당 없음     |
+| Visual Studio Enterprise(Standard)   | VL, Azure, 일반 정품, 선택한 NFR<sup>1</sup> | 6개월       |  아니요.  새 구독자만 사용할 수 있음          |
+| Visual Studio Professional(표준) | VL, Azure, 일반 정품                                       | 사용할 수 없음                                                          |해당 없음     |
 | Visual Studio Test Professional(표준)                         | VL, 일반 정품                                              | 사용할 수 없음                                                          |해당 없음     |
 | MSDN 플랫폼(표준)                                          | VL, 일반 정품                                              | 사용할 수 없음                                                          |해당 없음     |
 | Visual Studio Dev Essentials | 해당 없음  |사용할 수 없음                                                          |해당 없음     |
 | Visual Studio Enterprise, Visual Studio Professional(월간 클라우드) | Azure                                       | 사용할 수 없음                                                           |해당 없음|
 
-<sup>1</sup> *포함: NFR(전매 금지), VSIP(Visual Studio 업계 파트너), Microsoft 파트너 네트워크(Enterprise), FTE.  제외: Microsoft 파트너 네트워크(Professional), MCT Software & Services Developer, BizSpark, Imagine, MVP(Microsoft Valued Professional), RD(Region Director).  MCT 소프트웨어 및 서비스.*
+<sup>1</sup> *포함:  NFR(전매 금지), VSIP(Visual Studio 업계 파트너), Microsoft 파트너 네트워크(Enterprise), FTE.  제외:  Microsoft 파트너 네트워크(Professional), MCT Software & Services Developer, BizSpark, Imagine, MVP(Microsoft Valued Professional), RD(Region Director).  MCT 소프트웨어 및 서비스.*
+
+> [!NOTE]
+> Microsoft는 더 이상 Visual Studio Professional 연간 구독 및 클라우드 구독에 Visual Studio Enterprise 연간 구독을 제공하지 않습니다. 기존 고객 환경 및 해당 구독의 갱신, 증가, 감소 또는 취소 기능은 변경되지 않습니다. 새 고객은 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)으로 이동하여 Visual Studio를 구입하기 위한 다양한 옵션을 살펴보세요.
+
 
 어떤 구독을 사용하고 있는지 확실하지 않나요?  자신의 이메일 주소에 할당된 모든 구독을 보려면 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)에 연결합니다. 일부 구독이 표시되지 않으면 하나 이상이 다른 전자 메일 주소에 할당되어 있을 수 있습니다.  해당 구독을 보려면 해당 전자 메일 주소로 로그인해야 합니다.
 

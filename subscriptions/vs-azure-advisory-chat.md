@@ -3,18 +3,18 @@ title: Visual Studio 구독의 Azure Advisory Chat 혜택 | Microsoft Docs
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/02/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Visual Studio 구독에 포함된 Azure Advisory Chat 이점을 활용하는 방법에 대해 알아봅니다.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 84eb6c7021a4e64b65c6e5390ef43833dd6c7fea
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2c70ddda4e65eb67c89539b16b0322c890f4060f
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896005"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739415"
 ---
 # <a name="azure-advisory-chat"></a>Azure Advisory Chat
 
@@ -40,20 +40,24 @@ Azure Advisory Chat을 사용하는 것은 간단합니다.
 
 |                                                      구독 수준                                                      |     채널      |    이점    | 갱신 가능? |
 |------------------------------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
-|                                      Visual Studio Enterprise(표준, 연간 클라우드)                                       | VL, Azure, 일반 정품 |   1년    |    예     |
-| Visual Studio Professional(표준, 연간 클라우드, 월간 클라우드) Visual Studio Enterprise(월간 클라우드, NFR<sup>1</sup>) |        모두        | 사용할 수 없음 |     아니요     |
+|                                      Visual Studio Enterprise(Standard)                                       | VL, Azure, 일반 정품 |   1년    |    예     |
+| Visual Studio Professional(표준, 월간 클라우드) Visual Studio Enterprise(월간 클라우드, NFR<sup>1</sup>) |        모두        | 사용할 수 없음 |     아니요     |
 |                                          Visual Studio Test Professional(표준)                                          |        모두        | 사용할 수 없음 |     아니요     |
 |                                                  MSDN 플랫폼(표준)                                                   |        모두        | 사용할 수 없음 |     아니요     |
 |                                                 Visual Studio Dev Essentials                                                 |        N/A        | 사용할 수 없음 |     아니요     |
 
-<sup>1</sup> 포함: NFR(전매금지), MVP(Microsoft Valued Professional), RD(Region Director), VSIP(Visual Studio Industry Partner), BizSpark, Imagine, MCT
+<sup>1</sup> *포함:  NFR(전매금지), MVP(Microsoft Valued Professional), RD(Region Director), VSIP(Visual Studio Industry Partner), BizSpark, Imagine, MCT*
+
+> [!NOTE]
+> Microsoft는 더 이상 Visual Studio Professional 연간 구독 및 클라우드 구독에 Visual Studio Enterprise 연간 구독을 제공하지 않습니다. 기존 고객 환경 및 해당 구독의 갱신, 증가, 감소 또는 취소 기능은 변경되지 않습니다. 새 고객은 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)으로 이동하여 Visual Studio를 구입하기 위한 다양한 옵션을 살펴보세요.
+
 
 어떤 구독을 사용하고 있는지 확실하지 않나요?  자신의 이메일 주소에 할당된 모든 구독을 보려면 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)에 연결합니다. 일부 구독이 표시되지 않으면 하나 이상이 다른 전자 메일 주소에 할당되어 있을 수 있습니다.  해당 구독을 보려면 해당 전자 메일 주소로 로그인해야 합니다.
 
 ## <a name="frequently-asked-questions"></a>질문과 대답
 
-### <a name="q--what-is-the-difference-between-azure-advisory-chat-and-azure-advisor"></a>Q: Azure Advisory Chat과 Azure Advisor의 차이점은 무엇인가요?
--  A: Azure Advisory Chat은 Azure에 대한 질문을 지원하기 위한 실시간 채팅 서비스입니다. [Azure Advisor](/azure/advisor/advisor-overview)는 Azure 배포를 최적화하기 위한 모범 사례를 따르는 데 도움이 되는 개인 설정된 클라우드 컨설턴트입니다. 또한 리소스 구성 및 사용 원격 분석을 분석한 다음, Azure 리소스의 비용 효율성, 성능, 고가용성 및 보안을 향상하는 데 도움이 될 수 있는 솔루션을 추천합니다.
+### <a name="q--what-is-the-difference-between-azure-advisory-chat-and-azure-advisor"></a>Q:  Azure Advisory Chat과 Azure Advisor의 차이점은 무엇인가요?
+-  A:  Azure Advisory Chat은 Azure에 대한 질문을 지원하기 위한 실시간 채팅 서비스입니다. [Azure Advisor](/azure/advisor/advisor-overview)는 Azure 배포를 최적화하기 위한 모범 사례를 따르는 데 도움이 되는 개인 설정된 클라우드 컨설턴트입니다. 또한 리소스 구성 및 사용 원격 분석을 분석한 다음, Azure 리소스의 비용 효율성, 성능, 고가용성 및 보안을 향상하는 데 도움이 될 수 있는 솔루션을 추천합니다.
 
 ## <a name="support-resources"></a>지원 리소스
 -  Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 Visual Studio [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)에 문의하세요.

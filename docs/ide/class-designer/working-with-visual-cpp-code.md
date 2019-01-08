@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 109c2408e16c5ca4943855889191733234778761
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 19c3e72dd6f02d97dcb083cd61d7102a6926eb2e
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33958453"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684589"
 ---
 # <a name="work-with-visual-c-code-in-class-designer"></a>클래스 디자이너에서 Visual C++ 코드 사용
 
@@ -48,7 +48,7 @@ ms.locfileid: "33958453"
 - Typedef
 
 > [!NOTE]
-> 이 UML 클래스 다이어그램에서 모델링 프로젝트를 만들 수 있습니다 수 없습니다. 자세한 내용은 [UML 클래스 다이어그램: 참조](../../modeling/uml-class-diagrams-reference.md)를 참조하세요.
+> 이 UML 클래스 다이어그램에서 모델링 프로젝트를 만들 수 있습니다 수 없습니다. 자세한 내용은 [UML 클래스 다이어그램: 참조](../../modeling/create-uml-modeling-projects-and-diagrams.md)를 참조하세요.
 
 ## <a name="troubleshoot-type-resolution-and-display-issues"></a>형식 확인 및 표시 문제 해결
 
@@ -112,8 +112,6 @@ MSDN(Microsoft Developer Network) 공개 포럼에서 오류 및 경고 문제 �
 
 ## <a name="see-also"></a>참고 항목
 
-- [클래스와 형식 디자인 및 보기](designing-and-viewing-classes-and-types.md)
-- [클래스 다이어그램 작업](working-with-class-diagrams.md)
 - [클래스와 형식 디자인 및 보기](designing-and-viewing-classes-and-types.md)
 - [클래스 디자이너 오류에 대한 추가 정보](additional-information-about-errors.md)
 - [클래스 디자이너의 Visual C++ 클래스](visual-cpp-classes.md)

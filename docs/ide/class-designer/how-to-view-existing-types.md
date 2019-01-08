@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f477f64188c9592db65d0a82c8a1b8b3ec5b776
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 16e1c31585296913647b5c3d641126c3abca22a8
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33956655"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684446"
 ---
 # <a name="how-to-view-existing-types-in-class-designer"></a>방법: 클래스 디자이너에서 기존 형식 보기
 
@@ -65,6 +65,6 @@ ms.locfileid: "33956655"
 
 ## <a name="see-also"></a>참고 항목
 
-- [방법: 형식 간의 상속 보기](how-to-view-inheritance-between-types.md)
+- [방법: 형식 간에 상속 보기](how-to-view-inheritance-between-types.md)
 - [방법: 클래스 다이어그램 사용자 지정](how-to-customize-class-diagrams.md)
-- [형식 및 관계 보기](viewing-types-and-relationships.md)
+- [형식 및 관계 보기](designing-and-viewing-classes-and-types.md)

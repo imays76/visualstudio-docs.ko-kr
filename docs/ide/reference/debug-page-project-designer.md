@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e7bc849a48161fdf1763517f90514dfb464b74e
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: c7b79b5aa5054781813d561089dab204bd1763bf
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37090025"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684764"
 ---
 # <a name="debug-page-project-designer"></a>프로젝트 디자이너, 디버그 페이지
 
@@ -45,19 +45,19 @@ ms.locfileid: "37090025"
 
 ## <a name="start-action"></a>시작 작업
 
-**시작 작업**은 프로젝트, 사용자 지정 프로그램, URL 등 응용 프로그램을 디버깅할 때 시작할 항목을 나타냅니다. 기본적으로 이 옵션은 **프로젝트 시작**으로 설정되어 있습니다. **디버그** 페이지의 **시작 작업** 설정은 `StartAction` 속성의 값을 결정합니다.
+**시작 작업**은 프로젝트, 사용자 지정 프로그램, URL 등 애플리케이션을 디버깅할 때 시작할 항목을 나타냅니다. 기본적으로 이 옵션은 **프로젝트 시작**으로 설정되어 있습니다. **디버그** 페이지의 **시작 작업** 설정은 `StartAction` 속성의 값을 결정합니다.
 
 **시작 프로젝트**
 
-이 옵션을 선택하여 응용 프로그램을 디버깅할 때 실행 파일(Windows 응용 프로그램 및 콘솔 응용 프로그램 프로젝트의 경우)이 시작되도록 지정합니다. 이 옵션은 기본적으로 선택됩니다.
+이 옵션을 선택하여 애플리케이션을 디버깅할 때 실행 파일(Windows 애플리케이션 및 콘솔 애플리케이션 프로젝트의 경우)이 시작되도록 지정합니다. 이 옵션은 기본적으로 선택됩니다.
 
 **시작 외부 프로그램**
 
-이 옵션을 선택하여 응용 프로그램을 디버깅할 때 특정 프로그램을 시작하도록 지정합니다.
+이 옵션을 선택하여 애플리케이션을 디버깅할 때 특정 프로그램을 시작하도록 지정합니다.
 
 **URL로 브라우저 시작**
 
-이 옵션을 선택하여 응용 프로그램을 디버깅할 때 특정 URL에 액세스하도록 지정합니다.
+이 옵션을 선택하여 애플리케이션을 디버깅할 때 특정 URL에 액세스하도록 지정합니다.
 
 ## <a name="start-options"></a>시작 옵션
 
@@ -71,7 +71,7 @@ ms.locfileid: "37090025"
 
 **원격 컴퓨터 사용**
 
-원격 컴퓨터에서 응용 프로그램을 디버깅하려면 이 확인란을 선택하고 텍스트 상자에 원격 컴퓨터에 대한 경로를 입력합니다.
+원격 컴퓨터에서 애플리케이션을 디버깅하려면 이 확인란을 선택하고 텍스트 상자에 원격 컴퓨터에 대한 경로를 입력합니다.
 
 ## <a name="debugger-engines"></a>디버거 엔진
 
@@ -81,12 +81,12 @@ ms.locfileid: "37090025"
 
 **SQL Server 디버깅 사용**
 
-Visual Basic 응용 프로그램에서 SQL 프로시저의 디버깅을 사용하거나 사용하지 않도록 설정하려면 이 확인란을 선택하거나 선택을 취소합니다. 이 확인란은 기본적으로 선택되어 있지 않습니다.
+Visual Basic 애플리케이션에서 SQL 프로시저의 디버깅을 사용하거나 사용하지 않도록 설정하려면 이 확인란을 선택하거나 선택을 취소합니다. 이 확인란은 기본적으로 선택되어 있지 않습니다.
 
 ## <a name="see-also"></a>참고 항목
 
-- [Visual Studio의 디버깅](../../debugger/debugging-in-visual-studio.md)
+- [Visual Studio의 디버깅](../../debugger/debugger-feature-tour.md)
 - [C# 디버그 구성에 대한 프로젝트 설정](../../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Visual Basic 디버그 구성에 대한 프로젝트 설정](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
-- [방법: 제한된 권한으로 ClickOnce 응용 프로그램 디버그](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
+- [방법: 제한된 권한으로 ClickOnce 애플리케이션 디버그](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
 - [방법: 구성 만들기 및 편집](../../ide/how-to-create-and-edit-configurations.md)

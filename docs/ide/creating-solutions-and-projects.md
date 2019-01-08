@@ -17,16 +17,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c03709517f1c1d5bd28a2a0847a51895eb49557
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 06696ca975fb80eaa97cd265c9d45e6174d3b053
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052154"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348540"
 ---
 # <a name="create-solutions-and-projects"></a>솔루션 및 프로젝트 만들기
 
-*프로젝트*는 Visual Studio에서 소스 코드 파일, 비트맵, 아이콘, 구성 요소 및 서비스 참조 등, 앱을 빌드하는 데 필요한 항목을 저장하는 논리적 컨테이너입니다. 새 프로젝트를 만들 때 Visual Studio는 해당 프로젝트를 포함할 *솔루션*을 만듭니다. 그런 다음 원하는 경우 다른 새 프로젝트나 기존 프로젝트를 솔루션에 추가할 수 있습니다. 특정 프로젝트에 연결되어 있지 않은 파일을 솔루션에 포함할 수도 있습니다.
+*프로젝트*는 소스 코드 파일, 비트맵, 아이콘, 구성 요소 및 서비스 참조 등 Visual Studio에서 앱을 빌드하는 데 필요한 항목을 보관합니다. 새 프로젝트를 만들 때 Visual Studio는 해당 프로젝트를 포함할 *솔루션*을 만듭니다. 그런 다음 원하는 경우 다른 새 프로젝트나 기존 프로젝트를 솔루션에 추가할 수 있습니다. 특정 프로젝트에 연결되어 있지 않은 파일을 솔루션에 포함할 수도 있습니다.
 
 ![솔루션/프로젝트 계층 구조](./media/vside-proj-soln.png)
 

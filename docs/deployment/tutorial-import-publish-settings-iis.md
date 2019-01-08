@@ -1,6 +1,6 @@
 ---
 title: 게시 설정을 가져와서 IIS에 게시
-ms.custom: Create and import a publishing profile to deploy an application from Visual Studio to IIS
+description: Visual Studio에서 IIS로 애플리케이션을 배포하기 위한 게시 프로필 만들기 및 가져오기
 ms.date: 05/07/2018
 ms.technology: vs-ide-deployment
 ms.topic: tutorial
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6df935578955d3c72b6f4fa61efdf614229bca0
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 4da4a45566fc6d773f185a6a34f7e02cb093fff5
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808467"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348507"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Visual Studio에서 게시 설정을 가져와서 IIS에 애플리케이션 게시
 
@@ -41,7 +41,7 @@ ms.locfileid: "38808467"
 
 * **ASP.NET** 및 **.NET Framework** 개발 워크로드와 Visual Studio 2017이 설치되어 있어야 합니다. .NET Core 앱의 경우 **.NET Core** 워크로드도 필요합니다.
 
-    아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 페이지로 이동하여 체험용으로 설치합니다.
+    아직 Visual Studio를 설치하지 않은 경우  [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  페이지로 이동하여 체험용으로 설치합니다.
 
 * IIS에서 게시 설정 파일을 생성하려면 Windows Server 2012 또는 Windows Server 2016을 실행하는 컴퓨터가 있어야 하며 올바르게 구성된 IIS 웹 서버 역할이 있어야 합니다. ASP.NET 4.5 또는 ASP.NET Core가 설치되어야 합니다. ASP.NET Core의 경우 [IIS에 게시](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)를 참조하세요. ASP.NET 4.5의 경우 [ASP.NET 3.5 및 ASP.NET 4.5를 사용하는 IIS 8.0](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)을 참조하세요.
 

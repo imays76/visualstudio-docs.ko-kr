@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 765e5b154e7787af7afae8ca1f52338cc061a598
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: eedec77ab44f591532a5a2bb827a46965ec242e7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220751"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647380"
 ---
 # <a name="signfile-task"></a>SignFile 작업
 
@@ -51,7 +51,7 @@ ms.locfileid: "51220751"
 
  이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [Task 기본 클래스](../msbuild/task-base-class.md)를 참조하세요.
   
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
  다음 예제에서는 `SignFile` 작업을 통해 `FilesToSign` 속성으로 지정된 인증서를 사용하여 `Certificate` 항목 컬렉션에 지정된 파일에 서명을 합니다.
 
@@ -73,7 +73,7 @@ ms.locfileid: "51220751"
 ```
 
 > [!NOTE]
-> 인증서 지문은 인증서의 SHA-1 해시입니다. 자세한 내용은 [신뢰할 수 있는 루트 CA 인증서의 SHA-1 해시 얻기](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc733076\(v\=ws.10\))를 참조하세요.
+> 인증서 지문은 인증서의 SHA-1 해시입니다. 자세한 내용은 [신뢰할 수 있는 루트 CA 인증서의 SHA-1 해시 얻기](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc733076\(v\=ws.10\))를 참조하세요. 인증서 세부 정보에서 지문을 복사하여 붙여넣는 경우 추가(3F) 보이지 않는 문자를 포함하지 마세요. 이로 인해 `SignFile`이 인증서를 찾지 못할 수 있습니다.
   
 ## <a name="see-also"></a>참고 항목  
  [작업 참조](../msbuild/msbuild-task-reference.md)   

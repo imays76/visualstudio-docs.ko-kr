@@ -9,12 +9,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 41e27d2d7a3fc79695fa1d476a76e199348c5320
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: ca0c3da5048194ce438e815bd1612f6b166bb29b
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320893"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802568"
 ---
 # <a name="devops-with-unity-apps"></a>Unity 앱을 사용한 DevOps
 
@@ -42,7 +42,7 @@ Visual Studio는 Azure DevOps Services 및 Team Foundation Server와 함께 다�
 
 참조 링크: **[분석 및 모델 아키텍처](../modeling/analyze-and-model-your-architecture.md)**
 
-일반 설명: 이러한 디자인 기능은 코딩 언어에 독립적이거나 C#과 같은 .NET 언어로 작동하지만 개체 계층 구조 및 클래스 관계를 포함하는 기존 응용 프로그램 패러다임에서 작동합니다. Unity 내에서 게임을 디자인하는 경우 완전히 다른 패러다임, 즉 그래픽 개체, 소리, 셰이더, 스크립트 등의 관계가 필요합니다. 이러한 이유로 Visual Studio 모델링 다이어그램 도구는 Unity 프로젝트 전체와 특별한 관련이 없습니다. C# 스크립트 내에서 관계를 관리하는 데 사용될 수 있지만 전체의 일부일 뿐입니다.
+일반 주석: 이러한 디자인 기능은 코딩 언어에 독립적이거나 C#과 같은 .NET 언어로 작동하지만 개체 계층 구조 및 클래스 관계를 포함하는 기존 응용 프로그램 패러다임에서 작동합니다. Unity 내에서 게임을 디자인하는 경우 완전히 다른 패러다임, 즉 그래픽 개체, 소리, 셰이더, 스크립트 등의 관계가 필요합니다. 이러한 이유로 Visual Studio 모델링 다이어그램 도구는 Unity 프로젝트 전체와 특별한 관련이 없습니다. C# 스크립트 내에서 관계를 관리하는 데 사용될 수 있지만 전체의 일부일 뿐입니다.
 
 |기능|Unity에서 지원 여부|추가 설명|
 |-------------|--------------------------|-------------------------|
@@ -63,7 +63,7 @@ Visual Studio는 Azure DevOps Services 및 Team Foundation Server와 함께 다�
 |[Azure Repos에서 Git 시작하기](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio)|예|표 뒤에 나오는 설명을 참조하세요.|
 |[코드 품질 향상](../test/improve-code-quality.md)|예||
 |[코드 변경 내용 및 기타 기록 찾기](../ide/find-code-changes-and-other-history-with-codelens.md)|예||
-|[코드 맵을 사용하여 응용 프로그램 디버그](../modeling/use-code-maps-to-debug-your-applications.md)|예||
+|[코드 맵을 사용하여 애플리케이션 디버그](../modeling/use-code-maps-to-debug-your-applications.md)|예||
 
 Unity로 버전 제어를 수행하기 위한 특별 고려 사항:
 
@@ -102,9 +102,9 @@ Unity로 버전 제어를 수행하기 위한 특별 고려 사항:
 
 |기능|Unity에서 지원 여부|추가 설명|
 |-------------|--------------------------|-------------------------|
-|[관리 코드 품질 분석](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|예|Visual Studio 내에서 C# 스크립트 코드를 분석할 수 있습니다.|
+|[관리 코드 품질 분석](../code-quality/code-analysis-for-managed-code-overview.md)|예|Visual Studio 내에서 C# 스크립트 코드를 분석할 수 있습니다.|
 |[코드 복제본 검색을 사용하여 중복 코드 찾기](https://msdn.microsoft.com/library/hh205279.aspx)|예|Visual Studio 내에서 C# 스크립트 코드를 분석할 수 있습니다.|
-|[관리 코드의 복잡성 및 유지 관리 용이성 측정](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|예|Visual Studio 내에서 C# 스크립트 코드를 분석할 수 있습니다.|
+|[관리 코드의 복잡성 및 유지 관리 용이성 측정](../code-quality/code-metrics-values.md)|예|Visual Studio 내에서 C# 스크립트 코드를 분석할 수 있습니다.|
 |[성능 탐색기](../profiling/performance-explorer.md)|아니요|[Unity 프로파일러](http://docs.unity3d.com/Manual/Profiler.html)(Unity 웹 사이트)를 사용합니다.|
 |[.NET Framework 메모리 문제 분석](https://msdn.microsoft.com/library/dn342825.aspx)|아니요|Visual Studio 도구에는 프로파일링을 위한 모노 프레임워크(Unity에서 사용)에 대한 후크가 없습니다. [Unity 프로파일러](http://docs.unity3d.com/Manual/Profiler.html)(Unity 설명서)를 사용합니다.|
 

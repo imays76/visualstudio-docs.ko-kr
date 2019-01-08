@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 320615daa95ba9fad69fe48490f83c19ccf8e1ce
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 148d839ccfac7b3a8fb9b75ba4d7e1f632cb5676
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34065119"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684823"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Visual Studio에서 코드를 작동하게 하기
 
@@ -26,7 +26,7 @@ Visual Studio에서는 프로젝트 빌드 및 디버깅 도구의 강력한 통
 
 ## <a name="build-your-code"></a>코드 빌드
 
-빌드 구성에는 **디버그** 및 **릴리스**의 두 가지 기본 유형이 있습니다. **디버그** 구성은 보다 풍부한 대화형 런타임 디버깅 환경을 허용하는 더 느리고 큰 실행 파일을 생성합니다. **디버그** 실행 파일은 쉬핑해서는 안 됩니다. **릴리스** 구성은 적어도 컴파일러의 관점에서 배송하기에 적합한 더 빠르고 최적화된 실행 파일을 빌드합니다. 기본 빌드 구성은 **디버그**입니다.
+빌드 구성에는 다음 두 가지 기본 유형이 있습니다. **디버그** 및 **릴리스**. **디버그** 구성은 보다 풍부한 대화형 런타임 디버깅 환경을 허용하는 더 느리고 큰 실행 파일을 생성합니다. **디버그** 실행 파일은 쉬핑해서는 안 됩니다. **릴리스** 구성은 적어도 컴파일러의 관점에서 배송하기에 적합한 더 빠르고 최적화된 실행 파일을 빌드합니다. 기본 빌드 구성은 **디버그**입니다.
 
 프로젝트를 빌드하는 가장 쉬운 방법은 **F7** 키를 누르는 것이지만 주 메뉴에서 **빌드** > **솔루션 빌드**를 선택하여 빌드를 시작할 수도 있습니다.
 
@@ -144,7 +144,7 @@ IDE 아래쪽에 있는 **오류 목록** 탭에 새로운 경고나 업데이�
 
 ![Visual Studio 런타임 값 검사](../ide/media/vs_ide_gs_debug_inspect_value.png)
 
-변수 위에 마우스를 가져가 현재 값과 참조를 확인합니다. 예상하지 않은 값이 표시되는 경우 이전 또는 호출하는 코드에 버그가 있을 가능성이 큽니다. 자세한 디버깅 정보를 알아보려면 디버거 사용해 대해 [알아보세요](../debugger/getting-started-with-the-debugger.md).
+변수 위에 마우스를 가져가 현재 값과 참조를 확인합니다. 예상하지 않은 값이 표시되는 경우 이전 또는 호출하는 코드에 버그가 있을 가능성이 큽니다. 자세한 디버깅 정보를 알아보려면 디버거 사용해 대해 [알아보세요](../debugger/debugger-feature-tour.md).
 
 또한 Visual Studio에서는 앱의 시간별 CPU 및 메모리 사용량을 관찰할 수 있는 **진단 도구** 창을 표시합니다. 나중에 앱 개발 시 이러한 도구를 사용하여 예기치 않은 과도한 CPU 사용량이나 메모리 할당을 찾을 수 있습니다. **조사식** 창 및 중단점과 함께 사용하여 예기치 않은 높은 사용량이나 해제되지 않은 리소스의 원인을 확인합니다. 자세한 내용은 [프로파일링 기능 둘러보기](../profiling/profiling-feature-tour.md)를 참조하세요.
 
@@ -159,5 +159,5 @@ Visual Studio의 단위 테스트 및 단위 테스트를 통해 더 나은 품�
 ## <a name="see-also"></a>참고 항목
 
 - [디버거 기능 둘러보기](../debugger/debugger-feature-tour.md)
-- [디버거 사용에 대해 자세히 알아보기](../debugger/getting-started-with-the-debugger.md)
+- [디버거 사용에 대해 자세히 알아보기](../debugger/debugger-feature-tour.md)
 - [코드 생성 및 수정](../ide/code-generation-in-visual-studio.md)

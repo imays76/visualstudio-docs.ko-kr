@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 682010bc4235948918b3bffce70d04d5db0781af
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 79cdab9ef8cd127b54117188c9d1a49ad4948c9e
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861633"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53805161"
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>빠른 시작: 먼저 Visual Studio의 배포 살펴보기
 
@@ -49,13 +49,13 @@ ms.locfileid: "49861633"
 
 ## <a name="publish-to-azure"></a>Azure에 게시
 
-- **ASP.NET**, **ASP.NET Core**, **Python** 및 **Node.js**: 게시 도구를 사용하여 Azure App Service 또는 Azure Virtual Machine에 앱을 신속하게 배포할 수 있습니다. 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **게시**를 선택합니다. (모든 게시 프로필을 이전에 구성한 경우 **새 프로필 만들기**를 클릭해야 합니다.) 게시 대화 상자에서 **App Service** 또는 **Azure Virtual Machines** 중 하나를 선택한 다음, 구성 단계를 따릅니다.
+- **ASP.NET**, **ASP.NET Core**, **Python** 및 **Node.js.**: 게시 도구를 사용하여 Azure App Service 또는 Azure Virtual Machine에 앱을 신속하게 배포할 수 있습니다. 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **게시**를 선택합니다. (모든 게시 프로필을 이전에 구성한 경우 **새 프로필 만들기**를 클릭해야 합니다.) 게시 대화 상자에서 **App Service** 또는 **Azure Virtual Machines** 중 하나를 선택한 다음, 구성 단계를 따릅니다.
 
     ![Azure App Service 선택](../deployment/media/quickstart-publish-azure.png "Azure App Service 선택")
 
     Visual Studio 2017 버전 15.7 이상에서 ASP.NET Core 앱을 **Linux용 App Service**에 배포할 수 있습니다.
 
-    Python 앱은 [Python - Azure App Service에 게시](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)도 참조하세요.
+    Python 앱은 [Python - Azure App Service에 게시](../python/publishing-python-web-applications-to-azure-from-visual-studio.md?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)도 참조하세요.
 
     간략한 소개는 [Azure에 게시](quickstart-deploy-to-azure.md) 및 [Linux에 게시](quickstart-deploy-to-linux.md)를 참조하세요. 또한 [Azure에 ASP.NET Core 앱 게시](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)도 참조하세요. Git를 사용한 배포는 [Git를 사용하여 Azure에 ASP.NET Core 연속 배포](/aspnet/core/publishing/azure-continuous-deployment)를 참조하세요.
 
@@ -66,7 +66,7 @@ ms.locfileid: "49861633"
 
 ## <a name="publish-to-web-or-deploy-to-network-share"></a>웹에 게시 또는 네트워크 공유에 배포
 
-- **ASP.NET**, **ASP.NET Core**, **Node.js** 및 **Python**: FTP 또는 Web Deploy를 사용하여 웹 사이트에 배포하려면 게시 도구를 사용할 수 있습니다. 자세한 내용은 [웹 사이트에 배포](quickstart-deploy-to-a-web-site.md)를 참조하세요.
+- **ASP.NET**, **ASP.NET Core**, **Node.js.** 및 **Python**: FTP 또는 Web Deploy를 사용하여 웹 사이트에 배포하려면 게시 도구를 사용할 수 있습니다. 자세한 내용은 [웹 사이트에 배포](quickstart-deploy-to-a-web-site.md)를 참조하세요.
 
     솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **게시**를 선택합니다. (모든 게시 프로필을 이전에 구성한 경우 **새 프로필 만들기**를 클릭해야 합니다.) 게시 도구에서 원하는 옵션을 선택하고 구성 단계를 따릅니다.
 

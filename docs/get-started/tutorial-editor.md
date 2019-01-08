@@ -1,8 +1,9 @@
 ---
-title: 편집 소개
+title: 코드 편집기의 편집 개요
 ms.date: 11/30/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
+ms.technology: vs-ide-general
+ms.custom: get-started
 ms.topic: tutorial
 author: gewarren
 ms.author: gewarren
@@ -11,20 +12,21 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e2f451ecfb73e0c1ac69da4e48f3d2c8033aa51
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: 6c3953f69d263b948e84f0d1aa48d878cd39afe6
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027800"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803335"
 ---
 # <a name="learn-to-use-the-code-editor"></a>코드 편집기를 사용하는 방법 알아보기
 
 Visual Studio의 코드편집기에 대한 이 10분 소개에서 코드를 파일에 추가하여 Visual Studio에서 코드를 보다 쉽게 작성, 탐색 및 이해하는 몇 가지 방법을 살펴봅니다.
 
-아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 페이지로 이동하여 체험용으로 설치합니다.
+> [!TIP]
+> 아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 페이지로 이동하여 체험용으로 설치합니다.
 
-이 아티클에서는 사용자가 프로그래밍 언어에 이미 친숙하다고 가정합니다. 친숙하지 않은 경우에는 먼저 [Python](../ide/quickstart-python.md) 또는 [C#](../ide/tutorial-csharp-aspnet-core.md)으로 웹앱 만들기나 [Visual Basic](../ide/quickstart-visual-basic-console.md) 또는 [C++](../ide/getting-started-with-cpp-in-visual-studio.md)로 콘솔 앱 만들기에 대한 프로그래밍 빠른 시작 중 하나를 살펴보는 것이 좋습니다.
+이 아티클에서는 사용자가 프로그래밍 언어에 이미 친숙하다고 가정합니다. 친숙하지 않은 경우에는 먼저 [Python](../ide/quickstart-python.md) 또는 [C#](../get-started/csharp/tutorial-aspnet-core.md)으로 웹앱 만들기나 [Visual Basic](../ide/quickstart-visual-basic-console.md) 또는 [C++](../ide/getting-started-with-cpp-in-visual-studio.md)로 콘솔 앱 만들기에 대한 프로그래밍 빠른 시작 중 하나를 살펴보는 것이 좋습니다.
 
 ## <a name="create-a-new-code-file"></a>새 코드 파일 만들기
 
@@ -42,7 +44,7 @@ Visual Studio의 코드편집기에 대한 이 10분 소개에서 코드를 파�
 
 Visual Studio에서는 일반적으로 사용되는 코드 블록을 쉽고 빠르게 생성하는 데 사용할 수 있는 유용한 *코드 조각*을 제공합니다. [코드 조각](../ide/code-snippets.md)은 C#, Visual Basic 및 C++를 포함하여 다양한 프로그래밍 언어에서 사용할 수 있습니다. C# `void Main` 코드 조각을 파일에 추가하겠습니다.
 
-1. 파일에서 마지막 닫는 괄호 **}** 바로 위에 커서를 놓고, `svm`(`static void Main` &mdash;의미를 알 수 없는 경우 너무 걱정하지 마세요라는 의미임) 문자를 입력합니다.
+1. 파일에서 마지막 닫기 괄호 **}** 바로 위에 커서를 놓고 `svm` 문자를 입력합니다. (`svm`은 `static void Main`을 의미하며, [Main()](/dotnet/csharp/programming-guide/main-and-command-args/) 메서드는 C# 애플리케이션의 진입점입니다.)
 
    `svm` 코드 조각에 대한 정보를 포함한 팝업 대화 상자가 표시됩니다.
 
@@ -50,7 +52,7 @@ Visual Studio에서는 일반적으로 사용되는 코드 블록을 쉽고 빠�
 
 1. **탭** 키를 두 번 눌러 코드 조각을 삽입합니다.
 
-   `static void Main()` 메서드 서명이 파일에 추가됩니다. [Main()](/dotnet/csharp/programming-guide/main-and-command-args/) 메서드는 C# 응용 프로그램의 진입점입니다.
+   `static void Main()` 메서드 서명이 파일에 추가됩니다.
 
 사용 가능한 코드 조각은 프로그래밍 언어마다 다릅니다. **편집** > **IntelliSense** > **코드 조각 삽입**을 선택한 다음, 언어의 폴더를 선택하여 언어에 사용 가능한 코드 조각을 확인할 수 있습니다. C#의 경우 목록은 다음과 같습니다.
 

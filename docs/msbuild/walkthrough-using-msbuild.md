@@ -1,7 +1,7 @@
 ---
 title: '연습: MSBuild 사용 | Microsoft Docs'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 12/18/2018
 ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94fdbb5f143d1c087d97490961d230ace239f348
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 13493b9ab21386ff5856fd6046e963d362071570
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880151"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648922"
 ---
 # <a name="walkthrough-use-msbuild"></a>연습: MSBuild 사용
 MSBuild는 Microsoft 및 Visual Studio용 빌드 플랫폼입니다. 이 연습에서는 MSBuild의 구성 요소를 소개하고 MSBuild 프로젝트를 작성, 조작 및 디버깅하는 방법을 보여 줍니다. 학습 내용은 다음과 같습니다.
@@ -39,7 +39,7 @@ Visual Studio 또는 **명령 창**에서 MSBuild를 실행할 수 있습니다.
 
 2.  **파일** 메뉴에서 **새로 만들기**를 가리킨 다음 **프로젝트**를 클릭합니다.
 
-3.  **새 프로젝트** 대화 상자에서 **Visual C#** 프로젝트 형식을 선택하고 **Windows Forms 응용 프로그램** 템플릿을 선택합니다. **이름** 상자에 `BuildApp`을 입력합니다. 솔루션의 **위치**를 *D:\\*와 같이 입력합니다. **솔루션용 디렉터리 만들기**의 기본값(선택된 상태), **소스 제어에 추가**의 기본값(선택되지 않은 상태) 및 **솔루션 이름**의 기본값(**BuildApp**)을 적용합니다.
+3.  **새 프로젝트** 대화 상자에서 **Visual C#** 프로젝트 형식을 선택하고 **Windows Forms 애플리케이션** 템플릿을 선택합니다. **이름** 상자에 `BuildApp`을 입력합니다. 솔루션의 **위치**를 *D:\\*와 같이 입력합니다. **솔루션용 디렉터리 만들기**의 기본값(선택된 상태), **소스 제어에 추가**의 기본값(선택되지 않은 상태) 및 **솔루션 이름**의 기본값(**BuildApp**)을 적용합니다.
 
 4.    **확인**을 클릭하여 프로젝트 파일을 만듭니다.
 
@@ -68,7 +68,7 @@ Visual Studio 또는 **명령 창**에서 MSBuild를 실행할 수 있습니다.
 
 프로젝트 요소에서 xmlns 네임스페이스를 지정해야 합니다. `ToolsVersion`이 새 프로젝트에 존재하는 경우 "15.0"이어야 합니다.
 
-응용 프로그램 빌드 작업에서는 [대상](../msbuild/target-element-msbuild.md) 및 [작업](../msbuild/task-element-msbuild.md) 요소를 사용합니다.
+애플리케이션 빌드 작업에서는 [대상](../msbuild/target-element-msbuild.md) 및 [작업](../msbuild/task-element-msbuild.md) 요소를 사용합니다.
 
 -   작업(task)은 작업(work)의 최소 단위(빌드의 "구성 요소")이며, 입력과 출력을 포함할 수 있는 독립적인 실행 가능 구성 요소입니다. 현재 프로젝트 파일에는 참조되거나 정의된 작업(task)이 없습니다. 아래 섹션에서 프로젝트 파일에 작업(task)을 추가합니다. 자세한 내용은 [작업](../msbuild/msbuild-tasks.md) 항목을 참조하세요.
 
@@ -116,24 +116,28 @@ MSBuild는 빌드의 대상을 추적하며 각 대상이 여러 번 빌드되�
 메시지 작업에서는 Text 특성의 문자열 값을 입력으로 사용하며 출력 디바이스에 해당 값을 표시합니다. HelloWorld 대상은 메시지 작업을 "Hello"와 "World"를 표시하는 데 각각 한 번씩 두 번 실행합니다.
 
 ## <a name="build-the-target"></a>대상 빌드
- **Visual Studio 명령 프롬프트**에서 MSBuild를 실행하여 위에 정의되어 있는 HelloWorld 대상을 빌드합니다. -target 또는 -t 명령줄 스위치를 사용하여 대상을 선택합니다.
+ Visual Studio용 **개발자 명령 프롬프트**에서 MSBuild를 실행하여 위에 정의되어 있는 HelloWorld 대상을 빌드합니다. -target 또는 -t 명령줄 스위치를 사용하여 대상을 선택합니다.
 
 > [!NOTE]
->  이하 섹션에서는 **Visual Studio 명령 프롬프트**를 **명령 창**으로 지칭하겠습니다.
+>  아래 섹션에서 **개발자 명령 프롬프트**를 **명령 창**으로 지칭하겠습니다.
 
 #### <a name="to-build-the-target"></a>대상을 빌드하려면
 
-1.  **시작**, **모든 프로그램**을 차례로 클릭합니다. **Visual Studio Tools** 폴더에서 **Visual Studio 명령 프롬프트**를 찾아서 클릭합니다.
+1. **명령 창**을 엽니다.
 
-2.  명령 창에서 프로젝트 파일을 포함하는 폴더(이 연습의 경우 *D:\BuildApp\BuildApp*)로 이동합니다.
+   (Windows 10) 작업 표시줄의 검색 상자에 `dev` 또는 `developer command prompt`와 같은 도구 이름을 입력합니다. 그러면 검색 패턴과 일치하는 설치된 앱의 목록이 표시됩니다.
 
-3.  명령 스위치 -t:HelloWorld를 사용하여 msbuild를 실행합니다. 그러면 HelloWorld 대상이 선택 및 빌드됩니다.
+   수동으로 찾아야 하는 경우 파일은 *<visualstudio installation folder>\<version>\Common7\Tools* 폴더의 *LaunchDevCmd.bat*입니다.
+
+2. 명령 창에서 프로젝트 파일을 포함하는 폴더(이 연습의 경우 *D:\BuildApp\BuildApp*)로 이동합니다.
+
+3. 명령 스위치 -t:HelloWorld를 사용하여 msbuild를 실행합니다. 그러면 HelloWorld 대상이 선택 및 빌드됩니다.
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4.  **명령 창**에서 출력을 검사합니다. "Hello" 및 "World"의 두 줄이 표시됩니다.
+4. **명령 창**에서 출력을 검사합니다. "Hello" 및 "World"의 두 줄이 표시됩니다.
 
     ```
     Hello
@@ -290,7 +294,7 @@ MSBuild는 Configuration 속성을 생성하고 "Release" 값을 지정합니다
 </ItemGroup>
 ```
 
- 위의 코드는 두 항목이 포함된 항목 그룹을 정의합니다. 항목 종류 Compile에는 *Program.cs* 및 *Properties\AssemblyInfo.cs*의 두 값이 있습니다.
+ 위의 코드는 두 항목이 포함된 항목 그룹을 정의합니다. 항목 종류 컴파일에는 다음 두 가지 값이 있습니다. *Program.cs* 및 *Properties\AssemblyInfo.cs*.
 
  다음 코드는 이 두 파일을 모두 세미콜론으로 구분하여 Include 특성 하나에 선언하는 방식으로 같은 항목 종류를 만듭니다.
 
@@ -388,7 +392,7 @@ MSBuild는 Configuration 속성을 생성하고 "Release" 값을 지정합니다
 <Photos Include="images\**.jpeg" />
 ```
 
- 위의 코드는 *images* 폴더 및 모든 하위 폴더에 있는 파일 확장명이 *.jpeg*인 모든 파일을 Photos 항목 종류에 추가합니다. 더 많은 예제를 확인하려면 [방법: 빌드할 파일 선택](../msbuild/how-to-select-the-files-to-build.md)을 참조하세요.
+ 위의 코드는 *images* 폴더 및 모든 하위 폴더에 있는 파일 확장명이 *.jpeg*인 모든 파일을 Photos 항목 종류에 추가합니다. 추가 예제는 [방법: 빌드할 파일 선택](../msbuild/how-to-select-the-files-to-build.md)을 참조하세요.
 
  선언하는 항목은 항목 종류에 추가됩니다. 예를 들어 개체에 적용된
 
@@ -409,7 +413,7 @@ MSBuild는 Configuration 속성을 생성하고 "Release" 값을 지정합니다
 <Compile Include="*.cs" Exclude="*Designer*">
 ```
 
- 위의 코드는 이름에 *Designer*라는 문자열이 포함된 파일을 제외하고 파일 확장명이 *.cs*인 모든 파일을 Compile 항목 종류에 추가합니다. 더 많은 예제를 확인하려면 [방법: 빌드에서 파일 제외](../msbuild/how-to-exclude-files-from-the-build.md)를 참조하세요.
+ 위의 코드는 이름에 *Designer*라는 문자열이 포함된 파일을 제외하고 파일 확장명이 *.cs*인 모든 파일을 Compile 항목 종류에 추가합니다. 추가 예제는 [방법: 빌드에서 파일 제외](../msbuild/how-to-exclude-files-from-the-build.md)를 참조하세요.
 
 Exclude 특성은 Include 특성과 Exclude 특성을 모두 포함하는 항목 요소에서 Include 특성에 의해 추가된 항목에만 영향을 줍니다. 예를 들어 개체에 적용된
 
@@ -562,7 +566,7 @@ Exclude 특성은 Include 특성과 Exclude 특성을 모두 포함하는 항목
 이 구문으로 표현되는 메타데이터로 인해 일괄 처리가 수행되지는 않습니다.
 
 ## <a name="whats-next"></a>새로운 기능
- 간단한 프로젝트 파일을 단계별로 만드는 방법을 알아보려면 [연습: 처음부터 새로 MSBuild 프로젝트 파일 만들기](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)를 진행해 보세요.
+ 간단한 프로젝트 파일을 단계별로 만드는 방법을 알아보려면 [연습: 처음부터 MSBuild 프로젝트 파일 만들기](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)를 진행해 보세요.
 
 ## <a name="see-also"></a>참고 항목
 

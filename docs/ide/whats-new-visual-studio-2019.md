@@ -2,7 +2,7 @@
 title: Visual Studio 2019 Preview의 새로운 기능
 titleSuffix: ''
 description: Visual Studio 2019 미리 보기 릴리스의 새로운 기능을 알아보세요.
-ms.date: 12/04/2018
+ms.date: 12/19/2018
 ms.prod: visual-studio-dev16
 ms.technology: vs-acquisition
 ms.custom: seodec18
@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 06e3966703d95f897706eec8c46c2cd78fda859f
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 56c9a30ee534a2812455b6777f25b9730f5985b6
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159752"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647766"
 ---
 # <a name="what39s-new-in-visual-studio-2019-preview"></a>Visual Studio 2019 미리 보기의 새로운 기능
 
@@ -50,6 +50,8 @@ Visual Studio 2019를 열면 가장 먼저 보이는 것이 새로운 시작 창
    ![Visual Studio 2019의 새로운 시작 창](../ide/media/start-window.png)
 
 새로운 시작 창은 코드를 복제 또는 체크 아웃하고, 프로젝트 또는 솔루션을 열고, 로컬 폴더를 열고, 새 프로젝트를 만드는 옵션을 제공합니다. 이러한 옵션을 간단한 대화 상자에 제공하므로 Visual Studio 초보자부터 고급 사용자까지 모든 사용자가 신속하게 코드를 가져올 수 있습니다.
+
+자세한 내용은 [코드 가져오기: 새 Visual Studio 시작 창 디자인 방법](https://blogs.msdn.microsoft.com/visualstudio/2018/12/13/get-to-code-how-we-designed-the-new-visual-studio-start-window/) 블로그 게시물을 참조하세요.
 
 ### <a name="better-search"></a>향상된 검색
 
@@ -82,6 +84,8 @@ Visual Studio 2019를 열면 가장 먼저 보이는 것이 새로운 시작 창
 [Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/)는 Visual Studio 내에서 바로 코드베이스와 컨텍스트를 팀원과 공유하고 즉각적인 양방향 공동 작업을 수행할 수 있는 개발자 서비스입니다. 실시간 공유를 사용하면 귀하가 공유한 프로젝트를 팀원이 원활하고 안전하게 읽고, 탐색하고, 편집하고, 디버깅할 수 있습니다.
 
 Visual Studio 2019 미리 보기를 사용하면 이 서비스가 기본적으로 설치됩니다.
+
+자세한 내용은 [실시간 코드 검토 및 대화형 교육을 위한 Visual Studio Live Share](https://blogs.msdn.microsoft.com/visualstudio/2018/12/06/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/) 블로그 게시물을 참조하세요.
 
 ## <a name="modern-development-support"></a>최신 개발 지원
 
@@ -122,7 +126,7 @@ Visual Studio용 IntelliCode 확장을 처음 소개할 때는 C#만 지원했�
 
 C#을 사용하는 분들을 위해 사용자 고유의 코드에서 사용자 지정 모델을 학습하는 기능도 추가되었습니다.
 
-확장에 대한 자세한 내용 및 다운로드 방법은 Microsoft DevLabs의 [Visual Studio IntelliCode - 미리 보기](https://go.microsoft.com/fwlink/?linkid=872707) 페이지를 참조하세요.
+최근 업데이트에 대한 자세한 내용은 [Visual Studio IntelliCode는 더 많은 언어를 지원하고 코드에서 학습](https://blogs.msdn.microsoft.com/visualstudio/2018/12/05/visual-studio-intellicode-supports-more-languages-and-learns-from-your-code/) 블로그 게시물을 참조하세요. 그리고, 확장과 다운로드 방법에 대한 자세한 내용은 Microsoft DevLabs의 [Visual Studio IntelliCode - 미리 보기](https://go.microsoft.com/fwlink/?linkid=872707) 페이지를 참조하세요.
 
 ## <a name="give-us-feedback"></a>피드백 보내기
 
@@ -135,4 +139,5 @@ C#을 사용하는 분들을 위해 사용자 고유의 코드에서 사용자 �
 ## <a name="see-also"></a>참고 항목
 
 * [Visual Studio 2019 릴리스 정보](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)
+* [Microsoft Connect(); 2018 회의](https://www.microsoft.com/connectevent)
 * [Visual Studio 2017의 새로운 기능](whats-new-in-visual-studio.md)

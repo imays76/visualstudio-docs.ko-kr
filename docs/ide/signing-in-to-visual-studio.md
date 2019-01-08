@@ -1,9 +1,10 @@
 ---
 title: Visual Studio에 로그인
-ms.custom: ''
-ms.date: 11/16/2017
+titleSuffix: ''
+ms.custom: seodec18
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
+ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 author: TerryGLee
@@ -11,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7568583ac9239e168760000f0712ca7dcc4c33f
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 2e72205708ca5114c5757e9d122230af7af13d94
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159856"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348391"
 ---
 # <a name="sign-in-to-visual-studio"></a>Visual Studio에 로그인
 
@@ -27,13 +28,13 @@ IDE에 로그인하여 개인 설정 계정을 설정하면 Visual Studio의 개
 
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>Visual Studio에 로그인해야 하는 이유는 무엇인가요?
 
-로그인하면 Visual Studio 환경이 향상됩니다. 몇 가지 예를 들자면, 로그인한 후에는 여러 디바이스에서 설정을 동기화하고 평가판을 연장하고 Azure 서비스에 자동으로 연결할 수 있습니다.
+로그인하면 Visual Studio 환경이 향상됩니다. 몇 가지 예를 들자면, 로그인한 후에는 여러 디바이스에서 [설정을 동기화](synchronized-settings-in-visual-studio.md)하고 평가판을 연장하고 Azure 서비스에 자동으로 연결할 수 있습니다.
 
 다음은 로그인 후 예상할 수 있고 수행할 수 있는 작업의 전체 목록입니다.
 
 - **Visual Studio Dev Essentials 프로그램에 액세스** - 이 프로그램은 무료 소프트웨어 제품, 교육, 지원 등을 포함합니다. 자세한 내용은 [Visual Studio Dev Essentials](http://aka.ms/vsdevhelp) 를 참조하세요.
 
-- **Visual Studio 설정 동기화** – 아무 장치에서나 Visual Studio에 로그인하면 키 바인딩, 창 레이아웃 및 색 테마 등의 사용자 지정 설정이 즉시 적용됩니다. [Visual Studio의 동기화된 설정](../ide/synchronized-settings-in-visual-studio.md)을 참조하세요.
+- **Visual Studio 설정 동기화** – 아무 디바이스에서나 Visual Studio에 로그인하면 키 바인딩, 창 레이아웃 및 색 테마 등의 사용자 지정 설정이 즉시 적용됩니다. [Visual Studio의 동기화된 설정](../ide/synchronized-settings-in-visual-studio.md)을 참조하세요.
 
 - **Visual Studio Community 버전 잠금 해제** - Community Edition 설치에서 라이선스를 입력하라는 메시지가 표시되는 경우 IDE에 로그인하여 직접 잠금을 해제합니다.
 

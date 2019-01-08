@@ -2,23 +2,24 @@
 title: 프로젝트 및 솔루션 소개
 ms.date: 12/11/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
+ms.technology: vs-ide-general
+ms.custom: get-started
 ms.topic: tutorial
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a4967f687f214e544aa65526144803ce31e99d7
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 25450c2bb2965852e2077fc234548f224e070ff8
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159336"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441745"
 ---
 # <a name="learn-about-projects-and-solutions"></a>프로젝트 및 솔루션에 대한 자세한 정보
 
-이 소개 아티클에서는 Visual Studio에서 *솔루션* 및 *프로젝트* 만들기를 살펴봅니다. 솔루션은 하나 이상의 관련된 코드 프로젝트를 구성하는 데 사용되는 컨테이너입니다(예: 클래스 라이브러리 및 해당 테스트 프로젝트). 프로젝트의 속성 및 포함될 수 있는 일부 파일을 살펴봅니다. 또한 하나의 프로젝트에서 다른 프로젝트에 대한 참조를 만듭니다.
+이 소개 아티클에서는 Visual Studio에서 *솔루션* 및 *프로젝트* 만들기를 살펴봅니다. 솔루션은 하나 이상의 관련된 코드 프로젝트를 구성하는 데 사용되는 컨테이너입니다(예: 클래스 라이브러리 프로젝트 및 해당 테스트 프로젝트). 프로젝트의 속성 및 포함될 수 있는 일부 파일을 살펴봅니다. 또한 하나의 프로젝트에서 다른 프로젝트에 대한 참조를 만듭니다.
 
 아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 페이지로 이동하여 체험용으로 설치합니다.
 
@@ -29,7 +30,7 @@ ms.locfileid: "53159336"
 
 ## <a name="solutions-and-projects"></a>솔루션 및 프로젝트
 
-솔루션은 Visual Studio가 하나 이상의 관련 프로젝트를 구성하는 데 사용되는 컨테이너입니다. Visual Studio에서 솔루션을 열 때 포함된 모든 프로젝트를 자동으로 로드합니다.
+이름과 달리 솔루션은 "답변"이 아닙니다. 솔루션은 Visual Studio에서 하나 이상의 관련 프로젝트를 구성하는 데 사용되는 간단한 컨테이너입니다. Visual Studio에서 솔루션을 열면 솔루션에 포함된 모든 프로젝트가 자동으로 로드됩니다.
 
 ### <a name="create-a-solution"></a>솔루션 만들기
 
@@ -104,7 +105,7 @@ ms.locfileid: "53159336"
 
 ## <a name="add-a-second-project"></a>두 번째 프로젝트 추가
 
-일반적으로 솔루션에 둘 이상의 프로젝트 및 종종 이러한 프로젝트 참조가 서로 포함됩니다. 솔루션의 프로젝트는 클래스 라이브러리, 실행 가능한 응용 프로그램 및 일부 단위 테스트 프로젝트 또는 웹 사이트일 수 있습니다.
+일반적으로 솔루션에 둘 이상의 프로젝트 및 종종 이러한 프로젝트 참조가 서로 포함됩니다. 솔루션의 프로젝트는 클래스 라이브러리, 실행 가능한 애플리케이션 및 일부 단위 테스트 프로젝트 또는 웹 사이트일 수 있습니다.
 
 솔루션에 단위 테스트 프로젝트를 추가해 보겠습니다. 이번에는 프로젝트에 추가 코드 파일을 추가하지 않아도 되도록 프로젝트 템플릿으로 시작하겠습니다.
 
@@ -166,7 +167,7 @@ ms.locfileid: "53159336"
 
 1. **솔루션 탐색기**에서 **QuickTest** 프로젝트를 선택합니다. 마우스 오른쪽 단추로 클릭하거나 상황에 맞는 메뉴에서 **속성**을 선택하거나 **Alt**+**Enter** 키를 누릅니다.
 
-   프로젝트의 *속성 페이지*가 **응용 프로그램** 탭에서 열립니다. 속성 페이지에는 프로젝트에 대한 다양한 설정이 포함됩니다. **QuickTest** 프로젝트의 어셈블리의 이름은 실제로 "QuickTest"입니다. 변경하려는 경우 여기에서 변경할 수 있습니다. 그런 다음, 테스트 프로젝트를 빌드할 때 결과 이진 파일의 이름이 *QuickTest.dll*에서 선택한 이름으로 변경됩니다.
+   프로젝트의 *속성 페이지*가 **애플리케이션** 탭에서 열립니다. 속성 페이지에는 프로젝트에 대한 다양한 설정이 포함됩니다. **QuickTest** 프로젝트의 어셈블리의 이름은 실제로 "QuickTest"입니다. 변경하려는 경우 여기에서 변경할 수 있습니다. 그런 다음, 테스트 프로젝트를 빌드할 때 결과 이진 파일의 이름이 *QuickTest.dll*에서 선택한 이름으로 변경됩니다.
 
    ![프로젝트 속성](media/tutorial-projects-properties.png)
 

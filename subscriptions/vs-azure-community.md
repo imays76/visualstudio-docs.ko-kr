@@ -3,18 +3,18 @@ title: Visual Studio 구독의 Azure 커뮤니티 혜택 | Microsoft Docs
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/08/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: 선택한 Visual Studio 구독에 포함된 Azure 커뮤니티 혜택에 대해 알아봅니다.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 693e51d969481d6511e3663d2f675861821c99fb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f3e0890d6b8f5e64535deea52670877d3c356f8d
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937462"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739389"
 ---
 # <a name="azure-community"></a>Azure 커뮤니티
 
@@ -54,15 +54,19 @@ Azure 커뮤니티 혜택의 제공 여부는 구독 수준에 따르며 아래�
 
 |                                          구독 수준                                           |     채널      |    이점    | 갱신 가능? |
 |-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
-|                           Visual Studio Enterprise(표준, 연간 클라우드)                           | VL, Azure, 일반 정품 |   1년    |    예     |
-|                          Visual Studio Professional(표준, 연간 클라우드)                          | VL, Azure, 일반 정품 |   1년    |    예     |
+|                           Visual Studio Enterprise(Standard)                           | VL, Azure, 일반 정품 |   1년    |    예     |
+|                          Visual Studio Professional(표준)                          | VL, Azure, 일반 정품 |   1년    |    예     |
 |                              Visual Studio Test Professional(표준)                               |    VL, 일반 정품     |   1년    |    예     |
 |                                       MSDN 플랫폼(표준)                                       |    VL, 일반 정품     |   1년    |    예     |
 | Visual Studio Enterprise(월간 클라우드) Visual Studio Professional(월간 클라우드) NFR<sup>1</sup> |        모두        | 사용할 수 없음 |     아니요     |
 |                                     Visual Studio Dev Essentials                                      |        N/A        | 사용할 수 없음 |     아니요     |
 |                                                                                                       |                   |               |            |
 
-<sup>1</sup> 포함: NFR(전매금지), Microsoft FTE, MVP(Microsoft Valued Professional), RD(Region Director), VSIP(Visual Studio Industry Partner), BizSpark, Imagine, MCT(Microsoft Certified Trainer)
+<sup>1</sup> *포함:  NFR(전매금지), Microsoft FTE, MVP(Microsoft Valued Professional), RD(Region Director), VSIP(Visual Studio Industry Partner), BizSpark, Imagine, MCT(Microsoft Certified Trainer)*
+
+> [!NOTE]
+> Microsoft는 더 이상 Visual Studio Professional 연간 구독 및 클라우드 구독에 Visual Studio Enterprise 연간 구독을 제공하지 않습니다. 기존 고객 환경 및 해당 구독의 갱신, 증가, 감소 또는 취소 기능은 변경되지 않습니다. 새 고객은 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)으로 이동하여 Visual Studio를 구입하기 위한 다양한 옵션을 살펴보세요.
+
 
 어떤 구독을 사용하고 있는지 확실하지 않나요?  자신의 이메일 주소에 할당된 모든 구독을 보려면 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)에 연결합니다. 일부 구독이 표시되지 않으면 하나 이상이 다른 전자 메일 주소에 할당되어 있을 수 있습니다.  해당 구독을 보려면 해당 전자 메일 주소로 로그인해야 합니다.
 

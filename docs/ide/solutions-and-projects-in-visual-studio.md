@@ -11,7 +11,6 @@ f1_keywords:
 - vs.addnewitem
 - vs.addexistingitem
 - VS.SolutionExplorer
-- vs.newproject
 - vs.addexistingsolutionitem
 - vs.environment.solutions
 - VS.SolutionExplorer.Solutions
@@ -26,12 +25,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 518479d92aa9b0ec51c4fda8b7484a03ce45a560
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 0d6d5b6e6d8af8d03301c7f9f8e192e8f10df3ef
+ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159674"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53425762"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio의 솔루션 및 프로젝트
 
@@ -56,7 +55,7 @@ Visual Studio에서 프로젝트 파일은 **솔루션 탐색기**에서 프로�
 
 ## <a name="solutions"></a>솔루션
 
-프로젝트는 *솔루션*에 포함되어 있습니다. 솔루션에는 빌드 정보, Visual Studio 창 설정 및 특정 프로젝트와 관련이 없는 기타 파일과 함께 하나 이상의 관련된 프로젝트가 포함됩니다. 솔루션은 고유한 형식을 가진 텍스트 파일(*.sln* 확장명)으로 설명되고 직접 편집할 수 없습니다.
+프로젝트는 *솔루션*에 포함되어 있습니다. 이름과 달리 솔루션은 "답변"이 아닙니다. 이는 간단히 빌드 정보, Visual Studio 창 설정 및 특정 프로젝트와 관련이 없는 기타 파일과 함께 하나 이상의 관련된 프로젝트를 위한 컨테이너입니다. 솔루션은 고유한 형식을 가진 텍스트 파일(*.sln* 확장명)로 설명되고 직접 편집할 수 없습니다.
 
 Visual Studio에서는 두 가지 파일 형식(*.sln* 및 *.suo*)을 사용하여 솔루션 관련 설정을 저장합니다.
 
@@ -67,7 +66,7 @@ Visual Studio에서는 두 가지 파일 형식(*.sln* 및 *.suo*)을 사용하�
 
 ## <a name="create-new-projects"></a>새 프로젝트 만들기
 
-새 프로젝트를 만드는 가장 쉬운 방법은 특정 유형의 응용 프로그램이나 웹 사이트에 대한 프로젝트 템플릿에서 시작하는 것입니다. 프로젝트 템플릿은 미리 생성된 코드 파일, 구성 파일, 자산 및 설정의 기본 집합으로 구성됩니다. 이러한 템플릿은 **파일** > **새로 만들기** > **프로젝트**를 선택할 경우 표시되는 **새 프로젝트** 대화 상자에서 확인할 수 있습니다. 자세한 내용은 [솔루션 및 프로젝트 만들기](../ide/creating-solutions-and-projects.md)를 참조하세요.
+새 프로젝트를 만드는 가장 쉬운 방법은 특정 유형의 애플리케이션이나 웹 사이트에 대한 프로젝트 템플릿에서 시작하는 것입니다. 프로젝트 템플릿은 미리 생성된 코드 파일, 구성 파일, 자산 및 설정의 기본 집합으로 구성됩니다. 이러한 템플릿은 **파일** > **새로 만들기** > **프로젝트**를 선택할 경우 표시되는 **새 프로젝트** 대화 상자에서 확인할 수 있습니다. 자세한 내용은 [솔루션 및 프로젝트 만들기](../ide/creating-solutions-and-projects.md)를 참조하세요.
 
 사용자 지정 프로젝트 및 항목 템플릿을 만들 수도 있습니다. 자세한 내용은 [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)를 참조하세요.
 

@@ -13,16 +13,16 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 9203b07767d38443dbad8cc619a40971ca09f2c6
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: 27a76ab16da00fe68b6dffbc072b926bf04fa502
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750788"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441771"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>자습서: Visual Studio에서 Node.js 및 React 앱 만들기
 
-Visual Studio를 사용하면 쉽게 Node.js 프로젝트를 만들고 IntelliSense 및 Node.js를 지원하는 다른 기본 제공 기능을 경험할 수 있습니다. Visual Studio용 이 자습서에서는 Visual Studio 템플릿에서 Node.js 웹 응용 프로그램 프로젝트를 만듭니다. 그런 다음, React를 사용하여 간단한 앱을 만듭니다.
+Visual Studio를 사용하면 쉽게 Node.js 프로젝트를 만들고 IntelliSense 및 Node.js를 지원하는 다른 기본 제공 기능을 경험할 수 있습니다. Visual Studio용 이 자습서에서는 Visual Studio 템플릿에서 Node.js 웹 애플리케이션 프로젝트를 만듭니다. 그런 다음, React를 사용하여 간단한 앱을 만듭니다.
 
 이 자습서에서는 다음과 같은 작업을 수행하는 방법을 살펴봅니다.
 > [!div class="checklist"]
@@ -42,7 +42,7 @@ Node.js는 JavaScript 서버 쪽을 실행하는 서버 쪽 JavaScript 런타임
 
 ### <a name="what-is-npm"></a>npm이란?
 
-npm는 Node.js에 대한 기본 패키지 관리자입니다. 패키지 관리자는 프로그래머가 Node.js 라이브러리의 소스 코드를 쉽게 게시 및 공유하게 하며, 라이브러리의 설치, 업데이트 및 제거를 간소화하도록 설계되었습니다.
+npm는 Node.js를 위한 기본 패키지 관리자입니다. 패키지 관리자는 프로그래머가 Node.js 라이브러리의 소스 코드를 쉽게 게시 및 공유하게 하며, 라이브러리의 설치, 업데이트 및 제거를 간소화하도록 설계되었습니다.
 
 ### <a name="what-is-react"></a>React란?
 
@@ -72,15 +72,15 @@ webpack은 브라우저에서 실행될 수 있도록 JavaScript 파일을 번�
 
 ## <a name="create-a-project"></a>프로젝트 만들기
 
-먼저 Node.js 웹 응용 프로그램 프로젝트를 만듭니다.
+먼저 Node.js 웹 애플리케이션 프로젝트를 만듭니다.
 
 1. Visual Studio 2017을 엽니다.
 
 1. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 차례로 선택합니다.
 
-1. **새 프로젝트** 대화 상자의 왼쪽 창에서 **JavaScript**를 확장한 후 **Node.js**를 선택합니다. 가운데 창에서 **빈 Node.js 웹 응용 프로그램**을 선택하고 **NodejsWebAppBlank**의 이름을 입력한 다음, **확인**을 선택합니다.
+1. **새 프로젝트** 대화 상자의 왼쪽 창에서 **JavaScript**를 확장한 후 **Node.js**를 선택합니다. 가운데 창에서 **빈 Node.js 웹 애플리케이션**을 선택하고 **NodejsWebAppBlank**의 이름을 입력한 다음, **확인**을 선택합니다.
 
-     **빈 Node.js 웹 응용 프로그램** 프로젝트 템플릿이 표시되지 않으면 먼저 Node.js 개발 워크로드를 설치해야 합니다.
+     **빈 Node.js 웹 애플리케이션** 프로젝트 템플릿이 표시되지 않으면 먼저 Node.js 개발 워크로드를 설치해야 합니다.
 
     Visual Studio가 새 솔루션을 만들고 프로젝트를 엽니다.
 
@@ -192,7 +192,7 @@ webpack은 브라우저에서 실행될 수 있도록 JavaScript 파일을 번�
     });
     ```
 
-   이전 코드는 Express를 사용하여 웹 응용 프로그램 서버로 Node.js를 시작합니다. 위의 코드는 프로젝트 속성에서 구성된 포트 번호에 포트를 설정합니다(기본적으로 포트는 구성 속성에서 1337로 구성됩니다). 프로젝트 속성을 열려면 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다.
+   이전 코드는 Express를 사용하여 웹 애플리케이션 서버로 Node.js를 시작합니다. 위의 코드는 프로젝트 속성에서 구성된 포트 번호에 포트를 설정합니다(기본적으로 포트는 구성 속성에서 1337로 구성됩니다). 프로젝트 속성을 열려면 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다.
 
 1. *app.tsx*를 열고 다음 코드를 추가합니다.
 
@@ -258,7 +258,7 @@ webpack은 브라우저에서 실행될 수 있도록 JavaScript 파일을 번�
     }
     ```
 
-    Webpack 구성 코드는 Webpack에게 TypeScript 로더를 사용해 JSX를 트랜스파일하도록 지시합니다.
+    webpack 구성 코드는 webpack에게 TypeScript 로더를 사용해 JSX를 트랜스파일하도록 지시합니다.
 
 1. *tsconfig.json*을 열고 다음 코드로 기본 코드를 대체하여 TypeScript 컴파일러 옵션을 지정합니다.
 

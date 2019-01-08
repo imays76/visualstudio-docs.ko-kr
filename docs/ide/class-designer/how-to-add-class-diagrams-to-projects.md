@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 133f15f6c160e9ec48b1db4ab8713023e492cbae
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 081a80fd6521bc286f931334762a05495b038a37
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42901300"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684320"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>방법: 프로젝트에 클래스 다이어그램 추가
 
@@ -79,5 +79,3 @@ Visual Studio 2017을 실행 중이고 **클래스 디자이너** 구성 요소�
 - [방법: 클래스 디자이너를 사용하여 형식 만들기](how-to-create-types.md)
 - [방법: 기존 형식 보기](how-to-view-existing-types.md)
 - [클래스와 형식 디자인 및 보기](designing-and-viewing-classes-and-types.md)
-- [형식 및 관계 보기](viewing-types-and-relationships.md)
-- [클래스 다이어그램 작업](working-with-class-diagrams.md)

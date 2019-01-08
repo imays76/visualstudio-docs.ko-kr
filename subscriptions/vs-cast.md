@@ -3,18 +3,18 @@ title: Visual Studio 구독의 CAST Highlight 혜택 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 12/04/2018
+ms.date: 12/19/2018
 ms.topic: conceptual
 description: 선택한 Visual Studio 구독에서 제공하는 CAST Highlight 혜택 알아보기
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 74ed8a20195936c5ba7ef9c7ce7591838b620d5d
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 7ee8059a8e80834b6b35f93be888d7fd90e4a3a3
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52897072"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739999"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Visual Studio 구독의 CAST Highlight 혜택
 
@@ -89,8 +89,8 @@ Visual Studio Enterprise 구독자는 모든 기능을 제공하는 CAST Highlig
 
 | 구독 수준                                                 |     채널                                            | 이점                                                          | 갱신 가능?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise(표준, 연간 클라우드)   | VL, Azure, 일반 정품, | 30일 동안 5개 앱 액세스|  아니요.  새 구독자만 사용할 수 있음          |
-| Visual Studio Professional(표준, 연간 클라우드) | VL, Azure, 일반 정품                                       | 사용할 수 없음                                                             |  N/A          |
+| Visual Studio Enterprise(Standard)   | VL, Azure, 일반 정품, | 30일 동안 5개 앱 액세스|  아니요.  새 구독자만 사용할 수 있음          |
+| Visual Studio Professional(표준) | VL, Azure, 일반 정품                                       | 사용할 수 없음                                                             |  N/A          |
 | Visual Studio Test Professional(표준)                         | VL, 일반 정품                                              | 사용할 수 없음                                             |  N/A           |
 | MSDN 플랫폼(표준)                                          | VL, 일반 정품                                              | 사용할 수 없음                                              |  N/A          |
 | Visual Studio Dev Essentials | N/A  | 사용할 수 없음 | N/A |
@@ -99,8 +99,11 @@ Visual Studio Enterprise 구독자는 모든 기능을 제공하는 CAST Highlig
 
 
 
-<sup>1</sup> 포함: NFR(전매금지), FTE, MVP(Microsoft Valued Professional), RD(Region Director), MPN(Microsoft 파트너 네트워크), VSIP(Visual Studio Industry Partner), Microsoft Certified Trainer, BizSpark, Imagine
+<sup>1</sup> *포함:  NFR(전매금지), FTE, MVP(Microsoft Valued Professional), RD(Region Director), MPN(Microsoft 파트너 네트워크), VSIP(Visual Studio Industry Partner), Microsoft Certified Trainer, BizSpark, Imagine*
 
+
+> [!NOTE]
+> Microsoft는 더 이상 Visual Studio Professional 연간 구독 및 클라우드 구독에 Visual Studio Enterprise 연간 구독을 제공하지 않습니다. 기존 고객 환경 및 해당 구독의 갱신, 증가, 감소 또는 취소 기능은 변경되지 않습니다. 새 고객은 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)으로 이동하여 Visual Studio를 구입하기 위한 다양한 옵션을 살펴보세요.
 
 
 어떤 구독을 사용하고 있는지 확실하지 않나요?  자신의 이메일 주소에 할당된 모든 구독을 보려면 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)에 연결합니다. 일부 구독이 표시되지 않으면 하나 이상이 다른 전자 메일 주소에 할당되어 있을 수 있습니다.  해당 구독을 보려면 해당 전자 메일 주소로 로그인해야 합니다.

@@ -3,22 +3,22 @@ title: Parasoft Virtualize/SOAtest Professional Desktop 혜택 | Microsoft Docs
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 10/03/2017
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Visual Studio 구독에 포함된 Parasoft Virtualize/SOA Test Professional 구독을 활성화하는 방법을 알아봅니다.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f9e9c617ba64ca0502e50619c107f000b4f6ad5c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cb6b04358febf47d3f3332d4b8d10dd96b20ba6b
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830190"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739671"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Parasoft Virtualize/SOAtest Professional Desktop
 
-조기에 더 자주 테스트하세요.  사용할 수 없는 개발 중인 응용 프로그램 및 시스템의 동작을 시뮬레이션하고 테스트하세요.  혜택에는 체험 6개월 구독이 포함되어 있습니다.  6개월 구독 기간이 끝나면 연간 구독료의 25% 할인 혜택을 받을 수 있습니다.
+조기에 더 자주 테스트하세요.  사용할 수 없는 개발 중인 애플리케이션 및 시스템의 동작을 시뮬레이션하고 테스트하세요.  혜택에는 체험 6개월 구독이 포함되어 있습니다.  6개월 구독 기간이 끝나면 연간 구독료의 25% 할인 혜택을 받을 수 있습니다.
 
 
 ## <a name="activation-steps"></a>활성화 단계
@@ -58,7 +58,7 @@ ms.locfileid: "49830190"
 
 13. 그런 다음, 설치할 구성 요소를 선택하거나 모든 구성 요소를 설치(기본값)할 수 있습니다.  원하는 항목을 선택하고 **다음**을 클릭합니다.
 
-14. 설치된 응용 프로그램에 대한 바로 가기에 원하는 위치를 지정하고 **다음**을 클릭합니다.
+14. 설치된 애플리케이션에 대한 바로 가기에 원하는 위치를 지정하고 **다음**을 클릭합니다.
 
 15. HTTPS 사이트의 특정 기능 테스트에는 SOAtest 웹 루트 인증 기관 인증서가 필요합니다.  루트 CA 인증서 설치 여부를 선택하고 **다음**을 클릭합니다.
     > [!div class="mx-imgBorder"]
@@ -76,15 +76,18 @@ ms.locfileid: "49830190"
 
 | 구독 수준                                                 |     채널                                            | 이점                                                          | 갱신 가능?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise(표준, 연간 클라우드)   | VL, Azure, 일반 정품, 선택한 NFR<sup>1</sup> | 6개월       |  예       |
-| Visual Studio Professional(표준, 연간 클라우드) | VL, Azure, 일반 정품                                       | 사용할 수 없음                                                           |해당 없음         |
+| Visual Studio Enterprise(Standard)   | VL, Azure, 일반 정품, 선택한 NFR<sup>1</sup> | 6개월       |  예       |
+| Visual Studio Professional(표준) | VL, Azure, 일반 정품                                       | 사용할 수 없음                                                           |해당 없음         |
 | Visual Studio Test Professional(표준)                         | VL, 일반 정품                                              | 사용할 수 없음                                                           |해당 없음         |
 | MSDN 플랫폼(표준)                                          | VL, 일반 정품                                              | 사용할 수 없음                                                           |해당 없음         |
 | Visual Studio Dev Essentials | 해당 없음  | 사용할 수 없음|해당 없음 |
 | Visual Studio Enterprise, Visual Studio Professional(월간 클라우드) | Azure                                       | 사용할 수 없음                                                           |해당 없음|
 
-<sup>1</sup>  *포함: Microsoft 파트너 네트워크(Enterprise).  제외: NFR(전매금지), VSIP(Visual Studio Industry Partner), FTE, MCT Software & Services Developer, BizSpark, Imagine, MVP(Microsoft Valued Professional), RD(Region Director).  MCT 소프트웨어 및 서비스.*
+<sup>1</sup> *포함: Microsoft 파트너 네트워크(Enterprise).  제외:  NFR(전매금지), VSIP(Visual Studio Industry Partner), FTE, MCT Software & Services Developer, BizSpark, Imagine, MVP(Microsoft Valued Professional), RD(Region Director).  MCT 소프트웨어 및 서비스.*
 
+
+> [!NOTE]
+> Microsoft는 더 이상 Visual Studio Professional 연간 구독 및 클라우드 구독에 Visual Studio Enterprise 연간 구독을 제공하지 않습니다. 기존 고객 환경 및 해당 구독의 갱신, 증가, 감소 또는 취소 기능은 변경되지 않습니다. 새 고객은 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)으로 이동하여 Visual Studio를 구입하기 위한 다양한 옵션을 살펴보세요.
 
 
 ## <a name="support-resources"></a>지원 리소스
