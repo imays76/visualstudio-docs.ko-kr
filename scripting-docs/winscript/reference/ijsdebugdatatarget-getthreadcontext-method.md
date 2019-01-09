@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4e2f858c66eda2ad09b04d7beab776c793b6f195
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 50e2bdb7b8720549aac5e5b3c4cebffc4b7ae892
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728183"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090066"
 ---
 # <a name="ijsdebugdatatargetgetthreadcontext-method"></a>IJsDebugDataTarget::GetThreadContext 메서드
-에 대 한 검색 컨텍스트 스레드를 지정 합니다.  
+스레드가 제공 하는 컨텍스트를 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetThreadContext(  
    DWORD threadId,  
    ULONG32 contextFlags,  
@@ -42,13 +42,13 @@ HRESULT GetThreadContext(
  [in] 대상 프로세스에서 실행 되는 스레드입니다.  
   
  `contextFlags`  
- [in] 상황에 맞는 플래그를 지정합니다. (자세한 내용은 참조 winnt.h CONTEXT_ALL 검색)에 대 한 컨텍스트 ContextFlags 필드와 같습니다.  
+ [in] 상황에 맞는 플래그를 지정합니다. (자세한 내용은 winnt.h에서 context_all 검색)에 대 한 CONTEXT의 ContextFlags 필드와 동일 합니다.  
   
  `contextSize`  
- [in] PContext로 지정 된 버퍼의 크기입니다.  
+ [in] Pcontext가 지정한 버퍼의 크기입니다.  
   
  `pContext`  
- [out] PContext로 지정 된 버퍼에 플랫폼 관련 컨텍스트 구조를 수신 합니다.  
+ [out] 플랫폼별 컨텍스트 구조체를 pcontext 지정한 버퍼로 받습니다.  
   
 ## <a name="return-value"></a>반환 값  
   

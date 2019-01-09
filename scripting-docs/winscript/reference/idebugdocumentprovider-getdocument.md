@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8dd952a63253dbbf6034e0345547e2bec73b60c2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: afdf039ebac10a407f8ee3b27b5918d97d7e96a9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726223"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088779"
 ---
 # <a name="idebugdocumentprovidergetdocument"></a>IDebugDocumentProvider::GetDocument
-로 인해 문서가 아직 없는 경우 인스턴스화할 수 있습니다.  
+로 인해 문서가 아직 존재 하지 않는 경우 인스턴스화할 수 있습니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetDocument(  
    IDebugDocument**  ppssd  
 );  
@@ -48,7 +48,7 @@ HRESULT GetDocument(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 이 방법을 사용 하면 문서 아직 없는 경우 인스턴스화할 수입니다.  
+ 이 메서드를 사용 하면 문서를 아직 존재 하지 않는 경우 인스턴스화할 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugDocumentProvider 인터페이스](../../winscript/reference/idebugdocumentprovider-interface.md)

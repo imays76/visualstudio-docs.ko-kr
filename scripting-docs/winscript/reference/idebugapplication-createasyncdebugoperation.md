@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8714f4401249d73cf09d241ebf4c2b2115911d6b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 30051276b682bdf906db72bc2682e1c5d58c455a
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725533"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090703"
 ---
 # <a name="idebugapplicationcreateasyncdebugoperation"></a>IDebugApplication::CreateAsyncDebugOperation
-지정 된 동기 디버그 작업에 대 한 비동기 액세스를 제공합니다.  
+지정 된 동기식 디버그 작업에 대 한 비동기 액세스를 제공합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT CreateAsyncDebugOperation(  
    IDebugSyncOperation*    psdo,  
    IDebugAsyncOperation**  ppado  
@@ -39,7 +39,7 @@ HRESULT CreateAsyncDebugOperation(
   
 #### <a name="parameters"></a>매개 변수  
  `psdo`  
- [in] 동기 디버그 작업 개체입니다.  
+ [in] 동기식 디버그 작업 개체입니다.  
   
  `ppado`  
  [out] 비동기 디버그 작업 개체입니다.  
@@ -52,7 +52,7 @@ HRESULT CreateAsyncDebugOperation(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 이 메서드를 사용 하면 명시적으로 디버거 스레드와 동기화 하지 않고 식을 비동기적으로 평가 하는 언어 엔진입니다. 자세한 내용은 참조 [IDebugSyncOperation 인터페이스](../../winscript/reference/idebugsyncoperation-interface.md) 및 [IDebugAsyncOperation 인터페이스](../../winscript/reference/idebugasyncoperation-interface.md)합니다.  
+ 이 메서드를 사용 하면 디버거 스레드를 사용 하 여 명시적으로 동기화 하지 않고 식을 비동기적으로 평가 하는 언어 엔진입니다. 자세한 내용은 [IDebugSyncOperation 인터페이스](../../winscript/reference/idebugsyncoperation-interface.md) 하 고 [IDebugAsyncOperation 인터페이스](../../winscript/reference/idebugasyncoperation-interface.md)합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugApplication 인터페이스](../../winscript/reference/idebugapplication-interface.md)   

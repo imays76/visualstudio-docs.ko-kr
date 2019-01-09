@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 300102d75fcfa797e8e073b9a1ce77cc5ee2827a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 47bf36a8d013ffbb3c09214d590960c833e53218
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725873"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086270"
 ---
 # <a name="idebugdocumentcontextenumcodecontexts"></a>IDebugDocumentContext::EnumCodeContexts
-이 문서 컨텍스트와 연결 된 코드 컨텍스트를 열거 합니다.  
+이 문서 컨텍스트와 연결 된 코드 컨텍스트 열거 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT EnumCodeContexts(  
    IEnumDebugCodeContexts**  ppescc  
 );  
@@ -48,7 +48,7 @@ HRESULT EnumCodeContexts(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 문서는 문서가 포함 파일 또는 템플릿을 하지 않는 한 일반적으로 하나의 코드 컨텍스트와 연결 합니다.  
+ 문서 포함 파일 또는 템플릿을 아닌 문서가 하나만 코드 컨텍스트를 사용 하 여 일반적으로 연결 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugDocumentContext 인터페이스](../../winscript/reference/idebugdocumentcontext-interface.md)

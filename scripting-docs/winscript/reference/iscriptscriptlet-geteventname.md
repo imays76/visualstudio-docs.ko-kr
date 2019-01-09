@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 600eb4aff3bcefea31eb5fec76a2dc3cdce62a05
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4bffd1a3d518a5166c81934d5f3c7508f62284d5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733673"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097788"
 ---
 # <a name="iscriptscriptletgeteventname"></a>IScriptScriptlet::GetEventName
-스크립틀릿와 연결 된 이벤트의 이름을 반환 합니다.  
+Scriptlet과 연결 된 이벤트의 이름을 반환 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetEventName(  
    BSTR               *pbstr  
 );  
@@ -38,7 +38,7 @@ HRESULT GetEventName(
   
 #### <a name="parameters"></a>매개 변수  
  `pbstr`  
- [out] 연결 된 이벤트 이름을 포함 하는 버퍼의 `IScriptScriptlet` 개체입니다.  
+ [out] 연결 된 이벤트 이름을 포함 하는 버퍼를 `IScriptScriptlet` 개체입니다.  
   
 ## <a name="return-value"></a>반환 값  
  `HRESULT`입니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  

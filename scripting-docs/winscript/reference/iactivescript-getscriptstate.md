@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 285a09308c7477dbeed68f9f93417b503ca4fe49
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a64067679e1c56831002494c579ffdeba84a1abe
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24640183"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096579"
 ---
 # <a name="iactivescriptgetscriptstate"></a>IActiveScript::GetScriptState
-스크립팅 엔진의 현재 상태를 검색합니다. 호스트 개체 또는 비 기반 설명선 발생 하지 않고 기본이 아닌 스레드에서이 메서드를 호출할 수 있습니다는 [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) 인터페이스입니다.  
+스크립팅 엔진의 현재 상태를 검색합니다. 호스트 개체 또는 기본이 아닌 설명선 발생 하지 않고 기본이 아닌 스레드에서이 메서드를 호출할 수는 [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) 인터페이스입니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetScriptState(  
     SCRIPTSTATE *pss  // address of structure for state information  
 );  
@@ -38,10 +38,10 @@ HRESULT GetScriptState(
   
 #### <a name="parameters"></a>매개 변수  
  `pss`  
- [out] 에 정의 된 값을 받을 변수의 주소는 [SCRIPTSTATE 열거형](../../winscript/reference/scriptstate-enumeration.md) 열거 합니다. 값은 호출 스레드와 연관 스크립팅 엔진의 현재 상태를 나타냅니다.  
+ [out] 에 정의 된 값을 받을 변수의 주소는 [SCRIPTSTATE 열거형](../../winscript/reference/scriptstate-enumeration.md) 열거형입니다. 값은 호출 스레드와 연결 된 스크립팅 엔진의 현재 상태를 나타냅니다.  
   
 ## <a name="return-value"></a>반환 값  
- 반환 `S_OK` 성공 하면 또는 `E_POINTER` 포인터가 잘못 지정 되었습니다.  
+ 반환 `S_OK` 성공 하면 또는 `E_POINTER` 잘못 된 포인터를 지정 된 경우.  
   
 ## <a name="see-also"></a>참고 항목  
  [IActiveScript](../../winscript/reference/iactivescript.md)

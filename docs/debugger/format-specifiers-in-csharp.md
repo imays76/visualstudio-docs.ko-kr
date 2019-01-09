@@ -1,8 +1,6 @@
 ---
 title: 형식 지정자는 디버거에서 (C#) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/21/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -27,12 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9c69792b5f925141b95d28a5e2c5255e12011668
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: f01951a45a2e50f6dac093924627fe178011c9f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305392"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899016"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>형식 지정자에 C# Visual Studio 디버거에서
 값이 표시 하는 형식을 변경할 수 있습니다 합니다 **조사식** 형식 지정자를 사용 하 여 창입니다. 형식 지정자를 사용할 수도 있습니다는 **직접 실행** 창 합니다 **명령** 창에서 [추적점](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints), 및 소스 창. 를 일시 중지 하면 해당 창에 식의 결과에 표시 됩니다는 [DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) 지정 된 형식으로 표시 합니다.  
@@ -60,7 +58,7 @@ ms.locfileid: "52305392"
 |지정자|형식|원래 조사식 값|표시|  
 |---------------|------------|--------------------------|--------------|  
 |ac|암시적 속성 확인 및 암시적 함수 호출이 해제 된 경우 유용할 수 있는 식의 평가 강제 합니다.|메시지 “사용자가 암시적 함수 실행을 해제했습니다.”|\<value>|  
-|d|10진수 정수|0x0065|101|  
+|일|10진수 정수|0x0065|101|  
 |dynamic|동적 뷰를 사용하여 지정된 개체를 표시합니다.|동적 뷰를 포함하여 개체의 모든 멤버를 표시합니다.|동적 뷰만 표시합니다.|  
 |h|16진수 정수|61541|0x0000F065|  
 |nq|따옴표 없는 문자열|"My String"|My String|  

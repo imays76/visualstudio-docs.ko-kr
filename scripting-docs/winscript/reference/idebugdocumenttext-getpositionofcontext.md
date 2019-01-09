@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f843d71096dea4c22eda757a4d6975dfda94180
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: adc921ab461cd0cafb144c9d54061947e160c392
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726773"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092757"
 ---
 # <a name="idebugdocumenttextgetpositionofcontext"></a>IDebugDocumentText::GetPositionOfContext
 문서 컨텍스트에 해당 하는 문자 위치 범위를 반환 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetPositionOfContext(  
    IDebugDocumentContext*  psc,  
    ULONG*                  pcCharacterPosition,  
@@ -43,7 +43,7 @@ HRESULT GetPositionOfContext(
  [in] 문서 컨텍스트 개체입니다.  
   
  `pcCharacterPosition`  
- [out] 시작 문자 위치 범위의 위치입니다.  
+ [out] 시작 문자 위치 범위의 위치 합니다.  
   
  `cNumChars`  
  [out] 범위에 있는 문자의 수입니다.  
@@ -56,7 +56,7 @@ HRESULT GetPositionOfContext(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 이 메서드를 제공 하는 문서 컨텍스트에이 문서와 연결 되어야 합니다.  
+ 문서 컨텍스트를이 메서드에 제공 된이 문서와 연결 되어야 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugDocumentText 인터페이스](../../winscript/reference/idebugdocumenttext-interface.md)

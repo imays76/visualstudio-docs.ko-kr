@@ -1,8 +1,6 @@
 ---
 title: 'Idiaenumstackframes:: Reset | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ea0dd46ab99d3f8d52e8be82af74b0e3ab1e340f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 8a4d7d7b85890460e009559999fdce7cce3e0c89
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457386"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954145"
 ---
 # <a name="idiaenumstackframesreset"></a>IDiaEnumStackFrames::Reset
 열거형 시퀀스를 시작 부분으로 다시 설정합니다.  

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1c660222ebc136c57605dd0fda2c7f5fa88c368c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ed29673735038e9664324e9e342be199705348d5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725263"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088363"
 ---
 # <a name="iapplicationdebuggerondebugoutput"></a>IApplicationDebugger::onDebugOutput
 디버그 출력 이벤트를 처리합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT onDebugOutput(  
    LPCOLESTR  pstr  
 );  
@@ -48,7 +48,7 @@ HRESULT onDebugOutput(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 디버거는 일반적으로 표시 `pstr` 출력 창에 있습니다.  
+ 디버거는 일반적으로 표시 `pstr` 출력 창에서.  
   
  이 메서드를 호출한 경우 `IDebugApplication::DebugOutput` 라고 합니다.  
   

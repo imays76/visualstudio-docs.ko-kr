@@ -18,19 +18,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cdbb293afc6f58f8d9d9c1fe27bae467fd36792c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4fc82dbd26fc2b9956b3d32596e5fa730b96f9a8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729093"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093459"
 ---
 # <a name="iscriptentrygetitemname"></a>IScriptEntry::GetItemName
 식별 하는 항목 이름을 반환 하는 `IScriptEntry` 개체입니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetItemName(  
    BSTR               *pbstr  
 );  
@@ -38,7 +38,7 @@ HRESULT GetItemName(
   
 #### <a name="parameters"></a>매개 변수  
  `pbstr`  
- [out] 항목 이름을 포함 하는 버퍼의 주소입니다. 항목 이름이 항목 식별 하기 위해 호스트에서 사용 됩니다.  
+ [out] 항목 이름을 포함 하는 버퍼의 주소입니다. 항목 이름 항목을 식별 하는 호스트에서 사용 됩니다.  
   
 ## <a name="return-value"></a>반환 값  
  `HRESULT`입니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  

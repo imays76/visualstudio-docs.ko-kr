@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fcc598fa97d47a564ddb12aaa0480e42b6601118
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6b478f425b1aaf284bc7af744f5ac99f9be7fe8c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727813"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097073"
 ---
 # <a name="idebughelpercreatesimpleconnectionpoint"></a>IDebugHelper::CreateSimpleConnectionPoint
-래핑하는 이벤트 인터페이스를 반환 된 주어진 `IDispatch` 개체입니다.  
+래핑하는 이벤트 인터페이스를 반환 합니다.는 주어진 `IDispatch` 개체입니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT CreateSimpleConnectionPoint(  
    IDispatch*                pdisp  
    ISimpleConnectionPoint**  ppscp  
@@ -42,7 +42,7 @@ HRESULT CreateSimpleConnectionPoint(
  [in] `IDispatch` 를 래핑하는 개체입니다.  
   
  `ppscp`  
- [out] 래핑하는 이벤트 인터페이스 `pdisp`합니다.  
+ [out] 이벤트 인터페이스를 래핑하는 `pdisp`합니다.  
   
 ## <a name="return-value"></a>반환 값  
  이 메서드는 `HRESULT`를 반환합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
@@ -52,7 +52,7 @@ HRESULT CreateSimpleConnectionPoint(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 래핑하는 이벤트 인터페이스를 반환 된 주어진 `IDispatch` (참조 [ISimpleConnectionPoint 인터페이스](../../winscript/reference/isimpleconnectionpoint-interface.md)).  
+ 래핑하는 이벤트 인터페이스를 반환 합니다는 주어진 `IDispatch` (참조 [ISimpleConnectionPoint 인터페이스](../../winscript/reference/isimpleconnectionpoint-interface.md)).  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugHelper 인터페이스](../../winscript/reference/idebughelper-interface.md)   

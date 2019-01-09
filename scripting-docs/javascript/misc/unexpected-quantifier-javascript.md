@@ -20,17 +20,17 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ef0955bac35009d9b6c82f1856bb9005a08043ad
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 693fdf4091a6f6fdf63c701b63c4355a67ee6fbd
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282269"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096748"
 ---
 # <a name="unexpected-quantifier-javascript"></a>예기치 않은 수량자입니다.(JavaScript)
 정규식 검색 패턴을 작성할 때 잘못 된 반복 요소를 사용 하 여 패턴 요소를 만들었습니다. 예를 들어, 패턴  
   
-```  
+```js
 /^+/  
 ```  
   

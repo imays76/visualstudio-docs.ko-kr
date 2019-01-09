@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1da2f68de40a66b98b97ab7c7eb1d63748f1e07a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b45fc7be1a5178e952fefcd794171410d149a1f4
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733643"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090027"
 ---
 # <a name="iscriptnodegetparent"></a>IScriptNode::GetParent
 반환 된 `IScriptNode` 개체의 부모인 개체입니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetParent(  
    IScriptNode       **ppsnParent  
 );  
@@ -38,9 +38,9 @@ HRESULT GetParent(
   
 #### <a name="parameters"></a>매개 변수  
  `ppsnParent`  
- [out] 에 대 한 포인터를 수신 하는 변수의 주소는 `IScriptNode` 부모 인스턴스의 인터페이스입니다.  
+ [out] 에 대 한 포인터를 받는 변수의 주소는 `IScriptNode` 부모 인스턴스의 인터페이스입니다.  
   
- 클래스를 구현 하는 경우 `IScriptEntry` 또는 `IScriptScriptlet`, `IScriptNode` 개체가 반환 됩니다.  
+ 클래스를 구현 하는 경우 `IScriptEntry` 나 `IScriptScriptlet`, `IScriptNode` 개체가 반환 됩니다.  
   
  클래스를 구현 하는 경우 `IScriptNode` (웹 페이지를 나타냄), NULL이 반환 됩니다.  
   

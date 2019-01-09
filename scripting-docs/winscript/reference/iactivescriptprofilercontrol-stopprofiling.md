@@ -16,19 +16,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 63d837b0f7a59b1e3efc832c4d98cb7dcab5447c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b65c536c303a9bc0da7d0e29992315c05a61de52
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724513"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092484"
 ---
 # <a name="iactivescriptprofilercontrolstopprofiling"></a>IActiveScriptProfilerControl::StopProfiling
 스크립팅 엔진에서 프로 파일링을 중지 합니다. 이 메서드를 호출 [IActiveScriptProfilerCallback::Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md) 프로파일러 개체에 대 한 다음 해제 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT StopProfiling(  
     [in] HRESULT hrShutdownReason);  
 ```  
@@ -38,7 +38,7 @@ HRESULT StopProfiling(
  [in] HRESULT에 대 한 매개 변수로 전달할 수는 [IActiveScriptProfilerCallback::Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md) 프로파일러 개체의 메서드.  
   
 ## <a name="return-value"></a>반환 값  
- HRESULT를 반환 합니다. 다음과 같은 값을 사용할 수 있습니다.  
+ HRESULT를 반환합니다. 다음과 같은 값을 사용할 수 있습니다.  
   
 |반환 값|의미|  
 |------------------|-------------|  

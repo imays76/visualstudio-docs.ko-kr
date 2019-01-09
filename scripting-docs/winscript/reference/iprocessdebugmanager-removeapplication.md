@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b8d95be6227f192596e174095744a4e0247e0c37
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c163f756e426cab9ce36c1c8343b142bf76aafd6
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729183"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086517"
 ---
 # <a name="iprocessdebugmanagerremoveapplication"></a>IProcessDebugManager::RemoveApplication
-실행 되는 응용 프로그램을 제거 응용 프로그램 목록입니다.  
+실행 중인 응용 프로그램을 제거 합니다. 응용 프로그램 목록입니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT RemoveApplication(  
    DWORD  dwAppCookie  
 );  
@@ -38,7 +38,7 @@ HRESULT RemoveApplication(
   
 #### <a name="parameters"></a>매개 변수  
  `dwAppCookie`  
- [in] 제공 하는 쿠키 `IProcessDebugManager::AddApplication` 응용 프로그램이 응용 프로그램 목록에 추가할 때.  
+ [in] 제공 하는 쿠키 `IProcessDebugManager::AddApplication` 응용 프로그램의 응용 프로그램 목록에 추가 될 때입니다.  
   
 ## <a name="return-value"></a>반환 값  
  이 메서드는 `HRESULT`를 반환합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
@@ -48,8 +48,8 @@ HRESULT RemoveApplication(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 이 메서드를 실행 하는에서 응용 프로그램을 제거 응용 프로그램 목록입니다.  
+ 이 메서드는 실행 중인 응용 프로그램을 제거 응용 프로그램 목록입니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)   
+ [Iprocessdebugmanager:: Addapplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)   
  [IProcessDebugManager 인터페이스](../../winscript/reference/iprocessdebugmanager-interface.md)

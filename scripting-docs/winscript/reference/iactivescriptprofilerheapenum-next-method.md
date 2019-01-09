@@ -12,19 +12,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3927743a1de1d3048537327aebd24a847a7d22e5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f1f8d709c98efba8551ffdd026b77234785c8de4
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724593"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095734"
 ---
 # <a name="iactivescriptprofilerheapenumnext-method"></a>IActiveScriptProfilerHeapEnum::Next 메서드
-힙 개체에서 집합의 개체 또는 개체를 가져옵니다는 [iactivescriptprofilercontrol3:: Enumheap 메서드](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md)합니다.  
+힙 개체 집합에는 다음 개체 또는 개체를 가져옵니다 합니다 [IActiveScriptProfilerControl3::EnumHeap 메서드](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md)합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT Next (    [in] ULONG celt,    [out, size_is(celt), length_is(*pceltFetched)] PROFILER_HEAP_OBJECT** heapObjects,     [out] ULONG *pceltFetched);  
 ```  
   
@@ -36,7 +36,7 @@ HRESULT Next (    [in] ULONG celt,    [out, size_is(celt), length_is(*pceltFetch
  [out] 다음 [PROFILER_HEAP_OBJECT 구조체](../../winscript/reference/profiler-heap-object-structure.md) 구조입니다.  
   
  `pceltFetched`  
- [out] 반환 되는 개체 수  
+ [out] 반환 된 개체의 수  
   
 ## <a name="return-value"></a>반환 값  
  HRESULT입니다.

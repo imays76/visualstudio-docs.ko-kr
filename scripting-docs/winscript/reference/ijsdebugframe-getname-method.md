@@ -16,19 +16,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 34bb58444a30926ac558ca63a3a7ffff4ed5ca50
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6fdf708c833bff4501718a12d009441db90b363b
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727623"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097463"
 ---
 # <a name="ijsdebugframegetname-method"></a>IJsDebugFrame::GetName 메서드
 스택 프레임의 이름을 가져옵니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetName(  
    BSTR *pName  
 );  

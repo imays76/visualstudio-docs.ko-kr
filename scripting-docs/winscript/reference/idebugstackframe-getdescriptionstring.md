@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cdc77aa2ef2f9d7c95b0b82d5195a6a73524f055
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1f6479485a508f71797d6965f71edd3253927088
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729373"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097229"
 ---
 # <a name="idebugstackframegetdescriptionstring"></a>IDebugStackFrame::GetDescriptionString
-스택 프레임의 짧거나 긴 텍스트 설명을 반환합니다.  
+스택 프레임의 단기 또는 장기 텍스트 설명을 반환합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetDescriptionString(  
    BOOL   fLong,  
    BSTR*  pbstrDescription  
@@ -39,7 +39,7 @@ HRESULT GetDescriptionString(
   
 #### <a name="parameters"></a>매개 변수  
  `fLong`  
- [in] 플래그를 여기서 `TRUE` 긴 설명을 반환 하 고 `FALSE` 대 한 간단한 설명을 반환 합니다.  
+ [in] 플래그를 여기서 `TRUE` 긴 설명을 반환 하 고 `FALSE` 짧은 설명을 반환 합니다.  
   
  `pbstrDescription`  
  [out] 스택 프레임의 설명입니다.  
@@ -52,7 +52,7 @@ HRESULT GetDescriptionString(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 일반적으로 경우 `fLong` 은 `FALSE`,이 메서드는 스택 프레임과 연결 된 함수의 이름만 제공 합니다. 때 `fLong` 은 `TRUE`, 함수 매개 변수 및 기타 관련 정보에도이 방법을 제공할 수 있습니다.  
+ 일반적으로 하는 경우 `fLong` 는 `FALSE`,이 메서드는 스택 프레임과 연결 된 함수의 이름만 제공 합니다. 때 `fLong` 는 `TRUE`,이 메서드를 함수 매개 변수 및 기타 관련 정보를 제공할 수도 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugStackFrame 인터페이스](../../winscript/reference/idebugstackframe-interface.md)

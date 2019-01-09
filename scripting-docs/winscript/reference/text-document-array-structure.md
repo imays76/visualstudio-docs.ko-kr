@@ -14,19 +14,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 03ed7f13b4e57f9e44ca147810614f980b24b9a5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8ff283b52d15310304fb60c322bdb51c33ed33ac
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734103"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096943"
 ---
 # <a name="textdocumentarray-structure"></a>TEXT_DOCUMENT_ARRAY 구조체
-배열을 [IDebugDocumentText 인터페이스](../../winscript/reference/idebugdocumenttext-interface.md) 개체입니다. CoTaskMemAlloc 순위가 멤버 할당 됩니다.  
+배열을 [IDebugDocumentText 인터페이스](../../winscript/reference/idebugdocumenttext-interface.md) 개체입니다. 멤버는 CoTaskMemAlloc을 사용 하 여 할당 됩니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 typedef struct tagTEXT_DOCUMENT_ARRAY{    DWORD dwCount;    [size_is(dwCount)] IDebugDocumentText **Members;} TEXT_DOCUMENT_ARRAY;  
 ```  
   

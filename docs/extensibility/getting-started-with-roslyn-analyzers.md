@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 591e09596c92476b7664b541d74344099d19ecb9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 70dcdcfbc31434dd09f83951e7d89d9fd1832168
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874533"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091717"
 ---
 # <a name="get-started-with-roslyn-analyzers"></a>Roslyn 분석기 시작
 
@@ -39,4 +39,4 @@ Visual Studio에서 프로젝트 기반 라이브 코드 분석기를 사용 하
 - [자습서: 첫 번째 분석기 및 코드 수정 사항을 작성 합니다.](/dotnet/csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix)
 - [.NET 컴파일러 플랫폼 패키지 버전 참조](roslyn-version-support.md)
 - [GitHub OSS 사이트에서 더 많은 문서](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)
-- [GitHub의 Roslyn 분석기를 사용 하 여 구현 하는 FxCop 규칙](https://github.com/dotnet/roslyn/tree/master/src/Diagnostics/FxCop)
+- [Roslyn 분석기를 사용 하 여 구현 하는 FxCop 규칙](http://roslynanalyzersstatus.azurewebsites.net/)

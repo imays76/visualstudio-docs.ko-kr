@@ -1,8 +1,6 @@
 ---
-title: Just-in-time 디버거를 사용 하지 않도록 설정 | Microsoft 문서
-ms.custom: ''
+title: Just-in-time 디버거를 사용 하지 않도록 설정 | Microsoft Docs
 ms.date: 05/23/18
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
@@ -13,14 +11,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 147e16bab14a6a038622804cf9c57e5fdc92bf02
-ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
+ms.openlocfilehash: f946c44039407ac413fb0b49234a8590025e12d3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49382781"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959789"
 ---
-# <a name="disable-the-just-in-time-debugger"></a>Just-in-time 디버거를 사용 하지 않도록 설정 
+# <a name="disable-the-just-in-time-debugger"></a>Just-In-Time 디버거를 사용하지 않도록 설정 
 
 Just-In-Time 디버거 대화 상자를 실행 중인 앱에서 오류가 발생 하는 경우 열 및 계속에서 앱을 방지할 수 있습니다. 
 
@@ -46,4 +44,3 @@ Visual Studio 사용자 인 경우 내용은 오류를 디버깅 하려고 [Just
 Just In Time 디버깅을 해제 하면 앱이 오류를 처리 하 고 정상적으로 실행 하는 일을 할 수 있습니다. 
 
 앱에 아직 처리 되지 않은 오류, 오류 메시지가 표시 될 수 있습니다 또는 앱 충돌 또는 중단 될 수 있습니다. 오류가 해결 될 때까지 앱이 정상적으로 실행 되지 않습니다. 앱의 소유자에 게 문의 하 고 해결 하도록 요청을 시도할 수 있습니다.
-

@@ -10,17 +10,17 @@ helpviewer_keywords:
 - filling ranges automatically
 - ranges, automatically filling
 - workbooks, filling ranges
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a704fd0cdc18802aff487b5d66b72044303ce2dd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 867f59c04e9d0f99b36e6a067ad9a5cbc1041f46
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895586"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088324"
 ---
 # <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>방법: 프로그래밍 방식으로 자동으로 채울 범위 증분 변경 되는 데이터
   합니다 <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> 메서드는 <xref:Microsoft.Office.Interop.Excel.Range> 개체 값을 사용 하 여 워크시트의 범위를 자동으로 채울 수 있습니다. 대부분의 경우는 <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> 메서드 점진적으로 증가 또는 감소 하는 값 범위에서 저장소를 사용 합니다. 선택적 상수를 제공 하 여 동작을 지정할 수는 <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> 열거형입니다.  
@@ -51,7 +51,7 @@ ms.locfileid: "53895586"
   
 -   열 D는 일련의 숫자, 각 행 마다 2 씩 증가 포함 하는 것입니다. 초기 값 입력 **4** D1 셀에서 및 **6** D2 셀에서입니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [범위를 사용 하 여 작동 합니다.](../vsto/working-with-ranges.md)   
  [방법: 프로그래밍 방식으로 코드에서 워크시트 범위 참조](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
  [방법: 프로그래밍 방식으로 통합 문서에서 범위에 스타일 적용](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   

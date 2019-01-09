@@ -1,5 +1,5 @@
 ---
-title: IProcessDebugManager::CreateDebugDocumentHelper | Microsoft Docs
+title: 'Iprocessdebugmanager:: Createdebugdocumenthelper | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0b57f941017a0eef7892d43be9ed0414645e55e0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 62f61f00d2b5f850848efbcf3df65c5a3b10de3c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728863"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090485"
 ---
 # <a name="iprocessdebugmanagercreatedebugdocumenthelper"></a>IProcessDebugManager::CreateDebugDocumentHelper
 이 응용 프로그램에 대 한 새 디버그 문서 도우미를 만듭니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT CreateDebugDocumentHelper(  
    IUnknown*               punkOuter,  
    IDebugDocumentHelper**  pddh  
@@ -39,7 +39,7 @@ HRESULT CreateDebugDocumentHelper(
   
 #### <a name="parameters"></a>매개 변수  
  `punkOuter`  
- [in] 반환 된 개체가 집계 될 경우 `punkOuter` 는 제어 하는 인터페이스 포인터 `IUnknown`합니다. 그렇지 않으면 null 포인터를입니다.  
+ [in] 인 경우 반환 되는 개체를 집계할 수를 `punkOuter` 를 제어 하는 인터페이스 포인터 `IUnknown`합니다. 그렇지 않을 경우 null 포인터입니다.  
   
  `pddh`  
  [out] 이 응용 프로그램에 대 한 디버그 문서 도우미 개체입니다.  

@@ -18,19 +18,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1d1404d90cc1edd882505e463938a2c1a5e8aea8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: cce802cc1a6d63001cfbed020592b30a9d8dab1b
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733663"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094798"
 ---
 # <a name="iscriptnodedelete"></a>IScriptNode::Delete
 이 개체 트리를 삭제합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT Delete();  
 ```  
   
@@ -45,7 +45,7 @@ HRESULT Delete();
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 후의 `Delete` 메서드가 호출 되는 [IScriptNode::Alive](../../winscript/reference/iscriptnode-alive.md) 메서드가 해당 스크립트 노드 아니기 때문에 나타내야 합니다.  
+ 후 합니다 `Delete` 메서드를 호출 합니다 [IScriptNode::Alive](../../winscript/reference/iscriptnode-alive.md) 메서드는 스크립트 노드가 비활성 상태임을 지정 해야 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IScriptNode 인터페이스](../../winscript/reference/iscriptnode-interface.md)

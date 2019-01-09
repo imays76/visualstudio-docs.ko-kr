@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e2068bd130e7eb03747b89e2ba107019aa1cd458
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f1838d6494311502faf99d86c80e0a74ded4c6e5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727713"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092406"
 ---
 # <a name="ienumjsstackframesnext-method"></a>IEnumJsStackFrames::Next 메서드
 지정 된 프레임 수를 가져옵니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT Next(  
    ULONG cFrameCount,  
    JS_NATIVE_FRAME *pFrames,  
@@ -38,13 +38,13 @@ HRESULT Next(
   
 #### <a name="parameters"></a>매개 변수  
  `cFrameCount`  
- [in] 가져올 프레임 수를 지정 합니다.  
+ [in] 가져올 프레임의 수입니다.  
   
  `pFrames`  
- [out] 프레임을 저장할 배열입니다.  
+ [out] 프레임을 저장 하는 배열입니다.  
   
  `pcFetched`  
- [out] 프레임 수가 반환 됩니다.  
+ [out] 반환 된 프레임 수입니다.  
   
 ## <a name="return-value"></a>반환 값  
   

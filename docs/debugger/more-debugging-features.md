@@ -1,8 +1,6 @@
 ---
 title: 다른 디버깅 기능 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,17 +13,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 38783f5ec228965010dbe8054373803185fe2e7c
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 793cbfdc1e56a8dfdc986c08d4aaad1c5f208218
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282705"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822680"
 ---
 # <a name="more-debugging-features"></a>추가 디버그 기능
 이 섹션에는 Visual Studio 디버거와 함께 사용할 수 있는 추가 기능이 포함되어 있습니다.  
   
- 팁과 요령을 빠르고 쉽게 디버깅의 목록을 참조 하세요 [디버그 팁과 요령](https://blogs.msdn.microsoft.com/visualstudio/2015/05/22/debugging-tips-and-tricks/)합니다.  
+ 디버그를 더 빠르고 쉽게 해주는 팁과 요령 목록이 필요하면 [디버그 팁과 요령](https://blogs.msdn.microsoft.com/visualstudio/2015/05/22/debugging-tips-and-tricks/)을 참조하세요.  
   
 ## <a name="additional-features"></a>추가 기능  
  [디버그하는 동안 XAML 속성 검사](../debugger/inspect-xaml-properties-while-debugging.md)  
@@ -40,8 +38,8 @@ ms.locfileid: "44282705"
  [Just-In-Time 디버깅](../debugger/just-in-time-debugging-in-visual-studio.md)  
  Visual Studio의 외부에서 실행하는 동안 프로그램이 충돌할 때 자동으로 디버거를 시작할 수 있는 Just-In-Time 디버깅에 대해 설명합니다.  
   
- [연습: 디자인 타임에 디버그](../debugger/walkthrough-debugging-at-design-time.md)  
- 응용 프로그램이 실행되지 않을 때 Visual Studio 직접 실행 창을 사용하여 함수나 서브루틴을 실행하는 방법을 보여 줍니다. 
+ [연습: 디자인 타임에 디버깅](../debugger/walkthrough-debugging-at-design-time.md)  
+ 애플리케이션이 실행되지 않을 때 Visual Studio 직접 실행 창을 사용하여 함수나 서브루틴을 실행하는 방법을 보여 줍니다. 
   
  [편집하며 계속하기](../debugger/edit-and-continue.md)  
  프로그램이 중단 모드에 있는 동안 소스 코드를 변경할 수 있으며, 디버그 세션을 종료하고 프로그램을 다시 빌드하지 않고도 변경 내용을 적용할 수 있도록 해 주는 도구인 편집하며 계속하기에 대해 설명하고, 이 기능을 활성화/비활성화하는 방법을 소개합니다.  

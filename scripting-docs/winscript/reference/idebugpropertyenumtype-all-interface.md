@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 75de35bd42ea91e7d27523ba42c392650686041a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2dc5bb84125ca0bf3b25f8f9b8cfe1dad6aeb6d9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726813"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097008"
 ---
 # <a name="idebugpropertyenumtypeall-interface"></a>IDebugPropertyEnumType_All 인터페이스
-`IDebugPropertyEnumType` 인터페이스를 정의 하는 필터로 전달 될 각 해당 Iid 있도록 `IDebugProperty::EnumMembers` 적절 한 열거자를 요청 하는 중입니다.  
+합니다 `IDebugPropertyEnumType` 각 해당 Iid에 필터로 전달 될 수 있도록 인터페이스를 정의 `IDebugProperty::EnumMembers` 적절 한 열거자를 요청 하는 중입니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 IDebugPropertyEnumType_All : IUnknown  
 ```  
   
@@ -40,12 +40,12 @@ IDebugPropertyEnumType_All : IUnknown
 |------------|-----------------|  
 |[IDebugPropertyEnumType_All::GetName](../../winscript/reference/idebugpropertyenumtype-all-getname.md)|이름을 설명 하는 텍스트 문자열을 반환 합니다.|  
   
- 다음 인터페이스에서 상속 하므로 `IDebugPropertyEnumType_All`, 있고 추가 메서드가 없습니다.  
+ 다음 인터페이스에서 상속할 `IDebugPropertyEnumType_All`, 있고 추가 메서드가 없습니다.  
   
-```  
-IDebugPropertyEnumType_Arguments : IDebugPropertyEnumType_All   
-IDebugPropertyEnumType_Locals : IDebugPropertyEnumType_All   
-IDebugPropertyEnumType_LocalsPlusArgs : IDebugPropertyEnumType_All   
+```cpp
+IDebugPropertyEnumType_Arguments : IDebugPropertyEnumType_All   
+IDebugPropertyEnumType_Locals : IDebugPropertyEnumType_All   
+IDebugPropertyEnumType_LocalsPlusArgs : IDebugPropertyEnumType_All   
 IDebugPropertyEnumType_Registers : IDebugPropertyEnumType_All  
 ```  
   

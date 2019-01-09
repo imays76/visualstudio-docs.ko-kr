@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 63489dad447ece245e14e483127cb67327d55fe5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4f042fa0f8fb087b796e306074152f11afd7fed4
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727923"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091483"
 ---
 # <a name="idispatchexgetmembername"></a>IDispatchEx::GetMemberName
 멤버의 이름을 검색합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetMemberName(  
    DISPID id,  
    BSTR *pbstrName  
@@ -39,10 +39,10 @@ HRESULT GetMemberName(
   
 #### <a name="parameters"></a>매개 변수  
  `id`  
- 멤버를 식별합니다. 사용 하 여 `GetDispID` 또는 `GetNextDispID` 디스패치 식별자를 가져올 수 있습니다.  
+ 멤버를 식별합니다. 사용 하 여 `GetDispID` 또는 `GetNextDispID` 디스패치 식별자를 가져오려고 합니다.  
   
  `pbstrName`  
- 주소는 `BSTR` 멤버의 이름을 받는입니다. 호출 응용 프로그램은이 값을 해제 해야 합니다.  
+ 주소는 `BSTR` 멤버의 이름을 받는입니다. 호출 응용 프로그램은이 값을 해제 하는 일을 담당 합니다.  
   
 ## <a name="return-value"></a>반환 값  
  다음 값 중 하나를 반환합니다.  
@@ -54,7 +54,7 @@ HRESULT GetMemberName(
   
 ## <a name="example"></a>예제  
   
-```  
+```cpp
 HRESULT hr;  
    BSTR bstrName;  
    DISPID dispid;  

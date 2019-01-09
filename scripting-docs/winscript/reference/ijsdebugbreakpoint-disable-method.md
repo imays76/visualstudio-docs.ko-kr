@@ -16,26 +16,26 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c53ff133fb07d256d00668e499e5996ac650230f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 873f5d285a877e04076859b0230589ced705078b
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727843"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094213"
 ---
 # <a name="ijsdebugbreakpointdisable-method"></a>IJsDebugBreakPoint::Disable 메서드
-중단점을 해제 합니다.  
+중단점을 사용 하지 않도록 설정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT Disable(void);  
 ```  
   
 ## <a name="return-value"></a>반환 값  
   
 ## <a name="remarks"></a>설명  
- 삭제 된 중단점에 호출 된 경우 E_UNEXPECTED를 반환 합니다. 이미 사용할 수 없는 중단점에 호출 된 경우 S_FALSE를 반환 합니다.  
+ 삭제 된 중단점에서 E_UNEXPECTED를 반환 합니다. 이미 사용할 수 없는 중단점에서 S_FALSE를 반환 합니다.  
   
 ## <a name="requirements"></a>요구 사항  
  **헤더:** jscript9diag.h  

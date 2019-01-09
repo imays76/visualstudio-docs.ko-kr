@@ -3,7 +3,6 @@ title: Visual Studio 솔루션의 일부가 아닌 응용 프로그램을 디버
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/19/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c408ca42f82c0419c6570068e2a83e97f2371e9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 6930360254111533ac635a404d203a87bbdd767e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066615"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874312"
 ---
 # <a name="debug-an-app-that-isnt-part-of-a-visual-studio-solution-c-c-visual-basic-f"></a>Visual Studio 솔루션의 일부가 아닌 응용 프로그램을 디버깅 (c + +에서는 C#, Visual Basic의 경우 F#)
 

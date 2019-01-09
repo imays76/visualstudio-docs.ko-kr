@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a8b4caac89897f015fec7ac483b967f9b42676aa
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 91facd7a7055ab5ac9e7666c6a0d171e78c73eed
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729123"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086738"
 ---
 # <a name="iremotedebugapplicationeventsonbreakflagchange"></a>IRemoteDebugApplicationEvents::OnBreakFlagChange
-Break 플래그 변경 될 때 이벤트를 처리 합니다.  
+나누기 플래그를 변경할 때 이벤트를 처리 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT OnBreakFlagChange(  
    APPBREAKFLAGS                   abf,  
    IRemoteDebugApplicationThread*  prdatSteppingThread  
@@ -39,7 +39,7 @@ HRESULT OnBreakFlagChange(
   
 #### <a name="parameters"></a>매개 변수  
  `abf`  
- [in] 응용 프로그램에 대 한 현재 나누기 플래그를 지정 합니다.  
+ [in] 응용 프로그램에 대 한 현재 중단 플래그입니다.  
   
  `prdatSteppingThread`  
  [in] 현재 실행 중인 스레드입니다.  
@@ -52,7 +52,7 @@ HRESULT OnBreakFlagChange(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 이 메서드는 break 플래그 변경 될 때 이벤트를 처리 합니다.  
+ 이 메서드는 나누기 플래그를 변경할 때 이벤트를 처리 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IRemoteDebugApplicationEvents 인터페이스](../../winscript/reference/iremotedebugapplicationevents-interface.md)   

@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 85fbdb556b59c67610ad65b7e1f056399ad6da58
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: afd216c869cd88a643f68f0abd1fc095a675e24b
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728203"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095799"
 ---
 # <a name="ijsdebugdatatargetreadbstr-method"></a>IJsDebugDataTarget::ReadBSTR 메서드
-디버그 대상에서 BSTR을 읽습니다.  
+디버그 대상에서 읽히는 BSTR을 읽습니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT ReadBSTR(  
    UINT64 address,  
    BSTR *pString  
@@ -37,7 +37,7 @@ HRESULT ReadBSTR(
   
 #### <a name="parameters"></a>매개 변수  
  `address`  
- [in] 읽을 수 주소입니다.  
+ [in] 읽을 주소입니다.  
   
  `pString`  
  [out] BSTR은 디버그 대상에서 읽습니다.  
@@ -45,7 +45,7 @@ HRESULT ReadBSTR(
 ## <a name="return-value"></a>반환 값  
   
 ## <a name="remarks"></a>설명  
- 주소는 유효 하지 않을 경우 E_JsDEBUG_INVALID_MEMORY_ADDRESS를 반환 합니다.  
+ 주소가 올바르지 않으면 E_JsDEBUG_INVALID_MEMORY_ADDRESS를 반환 합니다.  
   
 ## <a name="requirements"></a>요구 사항  
  **헤더:** jscript9diag.h  

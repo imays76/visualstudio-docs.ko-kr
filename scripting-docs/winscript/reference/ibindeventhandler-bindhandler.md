@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 66de7cba8181ce9f3d683a90e4d7dd51e63d4779
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 62ac6de8342f0a436d984f4194351507fdcd5edd
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725193"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090716"
 ---
 # <a name="ibindeventhandlerbindhandler"></a>IBindEventHandler::BindHandler
-개체에 이벤트를 바인딩합니다.  
+이벤트 개체에 바인딩합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT BindHandler(  
    LPCOLESTR   pstrEvent,  
    IDispatch*  pdisp  
@@ -39,10 +39,10 @@ HRESULT BindHandler(
   
 #### <a name="parameters"></a>매개 변수  
  `pstrEvent`  
- [in] 이벤트 처리를 지정 합니다.  
+ [in] 처리할 이벤트를 지정 합니다.  
   
  `pdisp`  
- [in] 이벤트를 처리할 개체를 지정 합니다.  
+ [in] 이벤트를 처리 하는 개체를 지정 합니다.  
   
 ## <a name="return-value"></a>반환 값  
  이 메서드는 `HRESULT`를 반환합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  

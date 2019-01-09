@@ -13,15 +13,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 15cfd136050d9a0e3fca89964c5a9712b7b5ae06
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
-ms.translationtype: HT
+ms.openlocfilehash: 0b37a4b4ed8756cc566bfc1464d51e49c32d8e66
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159895"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829159"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>데이터 검색을 위한 Windows Form 만들기
 
@@ -145,7 +144,7 @@ ms.locfileid: "53159895"
 
 응용 프로그램을 실행 폼 열리고 매개 변수 입력으로 사용할 수 있습니다.
 
-1.  **F5** 키를 눌러 응용 프로그램을 실행합니다.
+1.  **F5** 키를 눌러 애플리케이션을 실행합니다.
 
 2.  **도시** 텍스트 상자에 **런던**을 입력한 다음, **FillByCity**를 클릭합니다.
 

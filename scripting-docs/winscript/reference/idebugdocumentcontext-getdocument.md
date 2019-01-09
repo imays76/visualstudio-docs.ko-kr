@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6776a65ca9adbcf9304e57e0b93f4ebcb4a33bc4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8a002781fc72f724931bc9eaa51d6a1621740b27
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726023"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093485"
 ---
 # <a name="idebugdocumentcontextgetdocument"></a>IDebugDocumentContext::GetDocument
 이 컨텍스트를 포함 하는 문서를 반환 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetDocument(  
    IDebugDocument**  ppsd  
 );  
@@ -48,7 +48,7 @@ HRESULT GetDocument(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- `GetDocument` 메서드는이 컨텍스트를 포함 하는 문서를 반환 합니다.  
+ `GetDocument` 메서드가이 컨텍스트를 포함 하는 문서를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugDocumentContext 인터페이스](../../winscript/reference/idebugdocumentcontext-interface.md)

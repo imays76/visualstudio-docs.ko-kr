@@ -18,19 +18,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 881598b39625b02651a4d57456904db60ace80c4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8bb0a1fabc90eea86f440ebca97a9adb1328c401
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24640773"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097281"
 ---
 # <a name="breakpointstate-enumeration"></a>BREAKPOINT_STATE 열거형
 중단점의 상태를 나타냅니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 typedef enum tagBREAKPOINT_STATE {  
    BREAKPOINT_DELETED = 0,  
    BREAKPOINT_DISABLED = 1,  
@@ -42,9 +42,9 @@ typedef enum tagBREAKPOINT_STATE {
   
 |멤버|설명|  
 |------------|-----------------|  
-|BREAKPOINT_DELETED|중단점 더 이상 존재 하지만 여전히 것에 대 한 참조가 없습니다.|  
-|BREAKPOINT_DISABLED|중단점 존재 하지만 사용할 수 없습니다.|  
-|BREAKPOINT_ENABLED|중단점 존재 하며 활성화 되어 있습니다.|  
+|BREAKPOINT_DELETED|중단점 더 이상 존재 하지만 참조가 계속 됩니다.|  
+|BREAKPOINT_DISABLED|중단점이 존재 하지만 사용 하지 않도록 설정 됩니다.|  
+|BREAKPOINT_ENABLED|중단점이 존재 하 고 활성화 됩니다.|  
   
 ## <a name="see-also"></a>참고 항목  
  [액티브 스크립트 디버거 상수, 열거형 및 구조체](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

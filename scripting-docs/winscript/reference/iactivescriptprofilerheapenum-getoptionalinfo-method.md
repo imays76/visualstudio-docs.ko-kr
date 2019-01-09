@@ -12,30 +12,30 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e6ad237f2feb173408e895984dab7e7455004d16
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bcba1214a0c57e738dec41cdc4976f478802fedc
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724683"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088805"
 ---
 # <a name="iactivescriptprofilerheapenumgetoptionalinfo-method"></a>IActiveScriptProfilerHeapEnum::GetOptionalInfo 메서드
-지정된 된 개체에 대 한 선택적 정보를 가져옵니다 (힙 개체에서 반환 된 집합에서의 [iactivescriptprofilercontrol3:: Enumheap 메서드](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md)).  
+지정된 된 개체의 선택적 정보를 가져옵니다 (힙 개체에서 반환 된 집합에서의 [IActiveScriptProfilerControl3::EnumHeap 메서드](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md)).  
   
- 반환된 개체에 할당된 반환된 메모리를 해제해서는 안 됩니다. 대신, 호출 해야는 [iactivescriptprofilerheapenum:: Freeobjectandoptionalinfo 메서드](../../winscript/reference/iactivescriptprofilerheapenum-freeobjectandoptionalinfo-method.md)합니다.  
+ 반환된 개체에 할당된 반환된 메모리를 해제해서는 안 됩니다. 대신 호출 해야 합니다 [iactivescriptprofilerheapenum:: Freeobjectandoptionalinfo 메서드](../../winscript/reference/iactivescriptprofilerheapenum-freeobjectandoptionalinfo-method.md)합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetOptionalInfo (    [in] PROFILER_HEAP_OBJECT* heapObject,    [in] ULONG celt,    [out, size_is(celt)] PROFILER_HEAP_OBJECT_OPTIONAL_INFO* optionalInfo);  
 ```  
   
 #### <a name="parameters"></a>매개 변수  
  `heapObject`  
- [PROFILER_HEAP_OBJECT 구조체](../../winscript/reference/profiler-heap-object-structure.md) 를 정보를 반환 합니다.  
+ 합니다 [PROFILER_HEAP_OBJECT 구조체](../../winscript/reference/profiler-heap-object-structure.md) 의 정보를 반환 합니다.  
   
  `celt`  
- 수가 [PROFILER_HEAP_OBJECT_OPTIONAL_INFO 구조체](../../winscript/reference/profiler-heap-object-optional-info-structure.md) 구조체를 반환 합니다.  
+ 수가 [PROFILER_HEAP_OBJECT_OPTIONAL_INFO 구조체](../../winscript/reference/profiler-heap-object-optional-info-structure.md) 구조를 반환 합니다.  
   
  `optionalInfo`  
  [out] 배열을 [PROFILER_HEAP_OBJECT_OPTIONAL_INFO 구조체](../../winscript/reference/profiler-heap-object-optional-info-structure.md) 지정된 된 개체에 대 한 구조입니다.  

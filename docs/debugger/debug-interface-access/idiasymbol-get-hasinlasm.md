@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_hasinlasm | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c582e57a7cc2302d1afb9b9cfe4ac479bcdd0bdf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: e924b7a2c1d2fe3d0d28585924f68648a4a07ce4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847736"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859778"
 ---
 # <a name="idiasymbolgethasinlasm"></a>IDiaSymbol::get_hasInlAsm
 인라인 어셈블리의 함수에 포함 되는지 여부를 지정 하는 플래그를 검색 합니다.  

@@ -2,10 +2,9 @@
 title: 더 나은 C# 코드를 작성하여 버그 수정
 description: 작은 버그를 사용 하 여 더 나은 코드를 작성 하는 방법 이해
 ms.custom:
-- debug-experiments
+- debug-experiment
 - seodec18
 ms.date: 11/20/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - debugger
@@ -14,16 +13,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a2e3aaebd02754556f028f53a190160f502ef9ca
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a6be1f46c8a529eb7f2e7d21e34fb1a58458a3de
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051677"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967578"
 ---
 # <a name="fix-bugs-by-writing-better-c-code-using-visual-studio"></a>잘 작성 하 여 버그 수정 C# Visual Studio를 사용 하는 코드
 
-코드를 디버깅 걸리는-수 있으며 때로는 이유도 바로-작업. 효과적으로 디버깅 하는 방법을 배울 시간이 걸리지만 Visual Studio와 같은 강력한 IDE를 훨씬 더 쉽게 작업을 수행할 수 있습니다. IDE는 코드를 보다 신속 하 게 디버깅할 수 뿐 아니라 하 고, 하지만 더 적은 버그를 사용 하 여 더 나은 코드를 작성할 수 있습니다 수 있습니다. 이 문서의 목적은 코드 분석기를 사용 하는 경우 이해 하 게 되므로, 디버거를 사용 하 고 다른 도구를 사용 하는 경우에 디버깅 프로세스의 전체적인 보기를 제공 하는 것입니다.  
+코드를 디버깅 걸리는-수 있으며 때로는 이유도 바로-작업. 효과적으로 디버깅 하는 방법을 배울 시간이 걸리지만 Visual Studio와 같은 강력한 IDE를 훨씬 더 쉽게 작업을 수행할 수 있습니다. IDE는 코드를 보다 신속 하 게 디버깅할 수 뿐 아니라 하 고, 하지만 더 적은 버그를 사용 하 여 더 나은 코드를 작성할 수 있습니다 수 있습니다. 이 문서의 목적은 코드 분석기를 사용 하는 경우 이해 하 게 되므로, 디버거를 사용 하 고 다른 도구를 사용 하는 경우에 디버깅 프로세스의 전체적인 보기를 제공 하는 것입니다.
 
 이 문서에서는 생산성 디버깅 세션을 확인 하기 위해 IDE를 활용 하는 방법에 대 한 이야기입니다. 에서는 터치 여러 작업을 같은:
 
@@ -305,7 +304,7 @@ namespace Console_Parse_JSON_DotNetCore
 
             for (int i = 0; i < users.Length; i++)
             {
-                List<User> result = localDB.FindAll(delegate (User u) { 
+                List<User> result = localDB.FindAll(delegate (User u) {
                     return u.lastname == users[i].lastname;
                     });
                 foreach (var item in result)
@@ -317,7 +316,7 @@ namespace Console_Parse_JSON_DotNetCore
             Console.ReadKey();
         }
 
-        // Deserialize a JSON stream to a User object.  
+        // Deserialize a JSON stream to a User object.
         public static User[] ReadToObject(string json)
         {
             User deserializedUser = new User();

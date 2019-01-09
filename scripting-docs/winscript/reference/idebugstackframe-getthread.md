@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 888e15bdd154fbac444eb91fc31ad7f17c2981ca
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6f6f21c553197a3967619b9aedc25779444185e4
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726783"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095747"
 ---
 # <a name="idebugstackframegetthread"></a>IDebugStackFrame::GetThread
 이 스택 프레임과 연결 된 스레드를 반환 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetThread(  
    IDebugApplicationThread**  ppat  
 );  

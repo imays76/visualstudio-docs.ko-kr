@@ -20,19 +20,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a7c4b71938d960d3825030c42e965b6510ca575b
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 82ba1488692f8e8b59063b8f9a52b0682d27e7f8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802526"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096449"
 ---
 # <a name="return-statement-outside-of-function"></a>함수 외부에 'return' 문이 있습니다.
 사용 하는 `return` 코드의 전역 범위에 문의 합니다. `return` 함수의 본문 안에 문을 사용할만 해야 합니다.  
   
- 사용 하 여 함수를 호출 합니다 `()` 연산자는 식입니다. 모든 식에 값이 있습니다. `return` 문을 사용 하는 함수에 의해 반환 되는 값을 지정 합니다. 일반 형식은 다음과 같습니다.  
+ 사용 하 여 함수를 호출 합니다 `()` 연산자는 식입니다. 모든 식에 값이 있습니다. `return` 문을 사용 하는 함수에서 반환 된 값을 지정 합니다. 일반 형식은 다음과 같습니다.  
   
-```  
+```js
   
 return [ expression ];  
 ```  
