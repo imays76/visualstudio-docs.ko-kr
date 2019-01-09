@@ -2,7 +2,6 @@
 title: 최선의 코딩된 UI 테스트 방법
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests, best practices
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed2ab3ff15e94bf0e014b99b6451840e6f26a04e
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 28781756e46f39aa0925521c0ec0bfacdcca5009
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896026"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848589"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>코딩된 UI 테스트에 대한 모범 사례
 
@@ -44,9 +43,9 @@ ms.locfileid: "52896026"
 
 -   UI(사용자 인터페이스)가 변경되면 테스트 메서드 또는 어설션 메서드를 다시 기록하거나 기존 테스트 메서드의 영향을 받는 섹션을 다시 기록합니다.
 
--   테스트 대상 응용 프로그램의 각 모듈에 대해 별도 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> 파일을 만듭니다. 자세한 내용은 [여러 UI 맵이 포함된 대형 응용 프로그램 테스트](../test/testing-a-large-application-with-multiple-ui-maps.md)를 참조하세요.
+-   테스트 대상 애플리케이션의 각 모듈에 대해 별도 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> 파일을 만듭니다. 자세한 내용은 [여러 UI 맵이 포함된 대형 애플리케이션 테스트](../test/testing-a-large-application-with-multiple-ui-maps.md)를 참조하세요.
 
--   테스트 대상 응용 프로그램에서 UI 컨트롤을 만들 때 의미 있는 이름을 사용합니다. 의미 있는 이름을 사용하면 자동으로 생성된 컨트롤 이름에 더 큰 명확성과 유용성이 제공됩니다.
+-   테스트 대상 애플리케이션에서 UI 컨트롤을 만들 때 의미 있는 이름을 사용합니다. 의미 있는 이름을 사용하면 자동으로 생성된 컨트롤 이름에 더 큰 명확성과 유용성이 제공됩니다.
 
 -   API로 코딩하여 어설션을 만드는 경우 *UIMap.cs* 파일에 있는 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> 클래스 부분에 각 어설션에 대한 메서드를 만듭니다. 어설션을 실행하려면 테스트 메서드에서 이 메서드를 호출합니다.
 
@@ -93,5 +92,5 @@ Playback.PlaybackSettings.WaitForReadyLevel = WaitForReadyLevel.UIThreadOnly;
 - <xref:Microsoft.VisualStudio.TestTools.UITesting>
 - [UI 자동화를 사용하여 코드 테스트](../test/use-ui-automation-to-test-your-code.md)
 - [코딩된 UI 테스트 만들기](../test/use-ui-automation-to-test-your-code.md)
-- [여러 UI 맵이 포함된 대형 응용 프로그램 테스트](../test/testing-a-large-application-with-multiple-ui-maps.md)
+- [여러 UI 맵이 포함된 대형 애플리케이션 테스트](../test/testing-a-large-application-with-multiple-ui-maps.md)
 - [코딩된 UI 테스트 및 작업 기록에 지원되는 구성 및 플랫폼](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

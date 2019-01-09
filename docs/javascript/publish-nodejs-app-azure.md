@@ -1,9 +1,7 @@
 ---
 title: Linux App Service에 Node.js 앱 게시
-description: Azure에서 Linux App Service에 Visual Studio에서 생성한 Node.js 응용 프로그램을 게시할 수 있습니다.
-ms.custom: ''
+description: Azure에서 Linux App Service에 Visual Studio에서 생성한 Node.js 애플리케이션을 게시할 수 있습니다.
 ms.date: 11/1/2018
-ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -13,23 +11,23 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 8af99919fe80f1f5e2776e381d24aa8d37bad36d
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: fcd7c64e15f890c2411327bff5bdc820509fe712
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750769"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846258"
 ---
-# <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Azure에 Node.js 응용 프로그램 게시(Linux App Service)
+# <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Azure에 Node.js 애플리케이션 게시(Linux App Service)
 
-이 자습서에서는 간단한 Node.js 응용 프로그램을 만들고 Azure에 게시하는 작업을 안내합니다.
+이 자습서에서는 간단한 Node.js 애플리케이션을 만들고 Azure에 게시하는 작업을 안내합니다.
 
-Azure에 Node.js 응용 프로그램을 게시할 때 몇 가지 옵션이 있습니다. 여기에는 Azure App Service, 사용자가 선택한 OS를 실행하는 VM, Kubernetes 관리를 위한 Azure Container Service(AKS), Docker를 사용하는 컨테이너 인스턴스 등이 포함됩니다. 이러한 각 옵션에 대한 자세한 내용은 [계산](https://azure.microsoft.com/product-categories/compute/)을 참조하세요.
+Azure에 Node.js 애플리케이션을 게시할 때 몇 가지 옵션이 있습니다. 여기에는 Azure App Service, 사용자가 선택한 OS를 실행하는 VM, Kubernetes 관리를 위한 Azure Container Service(AKS), Docker를 사용하는 컨테이너 인스턴스 등이 포함됩니다. 이러한 각 옵션에 대한 자세한 내용은 [계산](https://azure.microsoft.com/product-categories/compute/)을 참조하세요.
 
 이 자습서에서는 앱을 [Linux App Service](/azure/app-service/containers/app-service-linux-intro)에 배포합니다.
-Linux App Service는 Linux Docker 컨테이너를 배포하여 Node.js 응용 프로그램을 실행합니다(Windows에서 IIS 뒤에서 Node.js 앱을 실행하는 Windows App Service와는 반대).
+Linux App Service는 Linux Docker 컨테이너를 배포하여 Node.js 애플리케이션을 실행합니다(Windows에서 IIS 뒤에서 Node.js 앱을 실행하는 Windows App Service와는 반대).
 
-이 자습서에서는 Visual Studio용 Node.js 도구를 사용하여 설치한 템플릿에서 시작하는 Node.js 응용 프로그램을 만들고, 코드를 GitHub의 리포지토리로 푸시한 다음, GitHub 리포지토리에서 배포할 수 있도록 Azure 웹 포털을 통해 Azure App Service를 프로비전하는 방법을 설명합니다. 명령줄을 사용하여 Azure App Service를 프로비전하고 로컬 Git 리포지토리에서 코드를 푸시하려면 [Node.js 앱 만들기](/azure/app-service/containers/quickstart-nodejs)를 참조하세요.
+이 자습서에서는 Visual Studio용 Node.js 도구를 사용하여 설치한 템플릿에서 시작하는 Node.js 애플리케이션을 만들고, 코드를 GitHub의 리포지토리로 푸시한 다음, GitHub 리포지토리에서 배포할 수 있도록 Azure 웹 포털을 통해 Azure App Service를 프로비전하는 방법을 설명합니다. 명령줄을 사용하여 Azure App Service를 프로비전하고 로컬 Git 리포지토리에서 코드를 푸시하려면 [Node.js 앱 만들기](/azure/app-service/containers/quickstart-nodejs)를 참조하세요.
 
 이 자습서에서는 다음과 같은 작업을 수행하는 방법을 살펴봅니다.
 > [!div class="checklist"]
@@ -42,7 +40,7 @@ Linux App Service는 Linux Docker 컨테이너를 배포하여 Node.js 응용 �
 
 1. **파일** > **새 프로젝트** 대화 상자를 사용하여 새로운 TypeScript Express 앱을 만듭니다.
 
-1. **TypeScript** 노드 아래에서 **기본 Node.js Express 4 응용 프로그램**을 선택합니다.
+1. **TypeScript** 노드 아래에서 **기본 Node.js Express 4 애플리케이션**을 선택합니다.
 
     ![새로운 TypeScript Express 앱 만들기](../javascript/media/azure-ts-express-app.png)
 
@@ -98,12 +96,12 @@ Visual Studio에 대해 GitHub를 설정하려면 다음을 수행합니다.
 
     배포하는 데 몇 분 정도 걸릴 수 있습니다.
 
-6. 배포된 후 **응용 프로그램 설정** 섹션으로 이동하고 `SCM_SCRIPT_GENERATOR_ARGS`란 이름 및 `--node` 값의 설정을 추가합니다.
+6. 배포된 후 **애플리케이션 설정** 섹션으로 이동하고 `SCM_SCRIPT_GENERATOR_ARGS`란 이름 및 `--node` 값의 설정을 추가합니다.
 
-    ![응용 프로그램 설정](../javascript/media/azure-script-generator-args.png)
+    ![애플리케이션 설정](../javascript/media/azure-script-generator-args.png)
 
     > [!WARNING]
-    > App Service 배포 프로세스는 추론 집합을 사용하여 시도 및 실행할 응용 프로그램의 유형을 결정합니다. .*sln* 파일이 배포된 콘텐츠에서 검색되면 MSBuild 기반 프로젝트가 배포되는 것으로 가정합니다. 위에서 추가된 설정은 이 논리를 재정의하고 Node.js 응용 프로그램임을 명시적으로 지정합니다. 이 설정이 없으면 .*sln* 파일이 App Service에 배포되는 리포지토리의 일부인 경우 Node.js 응용 프로그램은 배포에 실패하게 됩니다.
+    > App Service 배포 프로세스는 추론 집합을 사용하여 시도 및 실행할 애플리케이션의 유형을 결정합니다. .*sln* 파일이 배포된 콘텐츠에서 검색되면 MSBuild 기반 프로젝트가 배포되는 것으로 가정합니다. 위에서 추가된 설정은 이 논리를 재정의하고 Node.js 애플리케이션임을 명시적으로 지정합니다. 이 설정이 없으면 .*sln* 파일이 App Service에 배포되는 리포지토리의 일부인 경우 Node.js 애플리케이션은 배포에 실패하게 됩니다.
 
 7. 배포된 후 App Service를 열고 **배포 옵션**을 선택합니다.
 
@@ -123,7 +121,7 @@ Visual Studio에 대해 GitHub를 설정하려면 다음을 수행합니다.
 
     동기화가 완료된 후 확인 표시가 표시됩니다.
 
-    사이트는 현재 GitHub 리포지토리에서 Node.js 응용 프로그램을 실행하고 있으며, Azure App Service에 대해 생성된 URL에서 액세스할 수 있습니다(기본적으로 Azure App Service에 지정된 이름 뒤에는 “.azurewebsites.net”이 옴”).
+    사이트는 현재 GitHub 리포지토리에서 Node.js 애플리케이션을 실행하고 있으며, Azure App Service에 대해 생성된 URL에서 액세스할 수 있습니다(기본적으로 Azure App Service에 지정된 이름 뒤에는 “.azurewebsites.net”이 옴”).
 
 ## <a name="modify-your-app-and-push-changes"></a>사용자 앱 수정 및 변경 내용 푸시
 
@@ -155,7 +153,7 @@ Visual Studio에 대해 GitHub를 설정하려면 다음을 수행합니다.
 
 ## <a name="next-steps"></a>다음 단계
 
-이 자습서에서는 Linux App Service를 만들고 서비스에 Node.js 응용 프로그램을 배포하는 방법을 알아봅니다. Linux App Service에 대해 자세히 알아볼 수도 있습니다.
+이 자습서에서는 Linux App Service를 만들고 서비스에 Node.js 애플리케이션을 배포하는 방법을 알아봅니다. Linux App Service에 대해 자세히 알아볼 수도 있습니다.
 
 > [!div class="nextstepaction"]
 > [Linux App Service](/azure/app-service/containers/app-service-linux-intro)

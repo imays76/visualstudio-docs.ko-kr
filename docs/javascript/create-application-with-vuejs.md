@@ -1,9 +1,8 @@
 ---
 title: Node.js를 사용하여 Vue.js 앱 만들기
-description: Vue.js 프레임워크를 사용하여 Visual Studio에서 Node.js 응용 프로그램을 만들 수 있습니다.
+description: Vue.js 프레임워크를 사용하여 Visual Studio에서 Node.js 애플리케이션을 만들 수 있습니다.
 ms.custom: seodec18
 ms.date: 07/06/2018
-ms.technology: vs-nodejs
 ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
@@ -13,18 +12,18 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 03576347dc740f44a04ca38150abde458338ef14
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 37d44112630797ecbc8621a885412ef4014610fd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066878"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857727"
 ---
-# <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Visual Studio용 Node.js 도구를 사용하여 Vue.js 응용 프로그램 만들기
+# <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Visual Studio용 Node.js 도구를 사용하여 Vue.js 애플리케이션 만들기
 
-Visual Studio 2017에는 Vue.js, JavaScript 및 TypeScript를 사용하여 응용 프로그램을 만들 때 개발 환경을 개선하는 [Vue.js](https://vuejs.org/) 프레임워크를 위한 향상된 지원이 포함되어 있습니다.
+Visual Studio 2017에는 Vue.js, JavaScript 및 TypeScript를 사용하여 애플리케이션을 만들 때 개발 환경을 개선하는 [Vue.js](https://vuejs.org/) 프레임워크를 위한 향상된 지원이 포함되어 있습니다.
 
-Visual Studio에서 Vue.js 응용 프로그램을 개발할 때 다음과 같은 새로운 기능이 지원됩니다.
+Visual Studio에서 Vue.js 애플리케이션을 개발할 때 다음과 같은 새로운 기능이 지원됩니다.
 
 * *.vue* 파일에서 스크립트, 스타일 및 템플릿 블록에 대한 지원
 * *.vue* 파일에서 `lang` 특성 인식
@@ -53,22 +52,22 @@ Visual Studio에서 Vue.js 응용 프로그램을 개발할 때 다음과 같은
 
 ## <a name="create-a-vuejs-project-with-aspnet-core-and-the-vue-cli"></a>ASP.NET Core 및 Vue CLI를 사용하여 Vue.js 프로젝트 만들기
 
-Vue.js는 빠르게 프로젝트를 스캐폴딩하기 위한 공식 CLI를 제공합니다. CLI를 사용하여 응용 프로그램을 만들려는 경우 이 문서의 단계를 수행하여 개발 환경을 설정합니다.
+Vue.js는 빠르게 프로젝트를 스캐폴딩하기 위한 공식 CLI를 제공합니다. CLI를 사용하여 애플리케이션을 만들려는 경우 이 문서의 단계를 수행하여 개발 환경을 설정합니다.
 
 > [!IMPORTANT]
 > 이러한 단계는 사용자가 Vue.js 프레임워크를 사용한 경험이 있다고 가정합니다. 그렇지 않은 경우 [Vue.js](https://vuejs.org/)를 방문하여 프레임워크에 대해 자세히 알아보세요.
 
 ### <a name="create-a-new-aspnet-core-project"></a>새 ASP.NET Core 프로젝트 만들기
 
-이 예제에서는 빈 ASP.NET Core 응용 프로그램(C#)을 사용합니다. 그러나 다양한 프로젝트 및 프로그래밍 언어 중에서 선택할 수 있습니다.
+이 예제에서는 빈 ASP.NET Core 애플리케이션(C#)을 사용합니다. 그러나 다양한 프로젝트 및 프로그래밍 언어 중에서 선택할 수 있습니다.
 
 #### <a name="create-an-empty-project"></a>빈 프로젝트 만들기
 
 1. Visual Studio를 열고 주 메뉴에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.
 
-1. **Visual C#** > **웹**에서 **ASP.NET Core 웹 응용 프로그램**을 선택한 다음, **확인**을 클릭합니다.
+1. **Visual C#** > **웹**에서 **ASP.NET Core 웹 애플리케이션**을 선택한 다음, **확인**을 클릭합니다.
 
-    **ASP.NET Core 웹 응용 프로그램** 프로젝트 템플릿이 표시되지 않는 경우 먼저 **ASP.NET 및 웹 개발** 워크로드 및 .**NET Core** 개발 워크로드를 설치해야 합니다. 워크로드를 설치하려면 **새 프로젝트**(**파일** > **새로 만들기** > **프로젝트**를 선택) 대화 상자의 왼쪽 창에서 **Visual Studio 설치 관리자 열기** 링크를 클릭합니다. Visual Studio 설치 관리자가 시작됩니다. 필요한 워크로드를 선택합니다.
+    **ASP.NET Core 웹 애플리케이션** 프로젝트 템플릿이 표시되지 않는 경우 먼저 **ASP.NET 및 웹 개발** 워크로드 및 .**NET Core** 개발 워크로드를 설치해야 합니다. 워크로드를 설치하려면 **새 프로젝트**(**파일** > **새로 만들기** > **프로젝트**를 선택) 대화 상자의 왼쪽 창에서 **Visual Studio 설치 관리자 열기** 링크를 클릭합니다. Visual Studio 설치 관리자가 시작됩니다. 필요한 워크로드를 선택합니다.
 
 1. **비어 있음**을 선택한 다음, **확인**을 클릭합니다.
 
@@ -87,7 +86,7 @@ Vue.js는 빠르게 프로젝트를 스캐폴딩하기 위한 공식 CLI를 제�
 
 vue cli npm 모듈을 설치하려면 명령 프롬프트를 열고 버전 3.0인 경우(현재는 베타) `npm install --g vue-cli` 또는 `npm install -g @vue/cli`를 입력합니다.
 
-### <a name="scaffold-a-new-client-application-using-the-vue-cli"></a>vue CLI를 사용하여 새 클라이언트 응용 프로그램 스캐폴드
+### <a name="scaffold-a-new-client-application-using-the-vue-cli"></a>vue CLI를 사용하여 새 클라이언트 애플리케이션 스캐폴드
 
 1. 명령 프롬프트로 이동한 후 현재 디렉터리를 프로젝트 루트 폴더로 변경합니다.
 

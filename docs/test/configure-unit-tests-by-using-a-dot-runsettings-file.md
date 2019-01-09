@@ -2,19 +2,18 @@
 title: .runsettings 파일을 사용하여 단위 테스트 구성
 ms.date: 02/28/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 935c1ebfb2efd888de5b336eafab4059fa6cd443
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 06cd85291b63ddd7c31136e24cf622f510849775
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903558"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961902"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>*.runsettings* 파일을 사용하여 단위 테스트 구성
 
@@ -175,7 +174,7 @@ ms.locfileid: "49903558"
 
 ### <a name="diagnostic-data-adapters-data-collectors"></a>진단 데이터 어댑터(데이터 수집기)
 
-**DataCollectors** 요소는 진단 데이터 어댑터의 설정을 지정합니다. 진단 데이터 어댑터는 테스트 환경 및 응용 프로그램에 대한 추가 정보를 수집합니다. 각 어댑터에는 기본 설정이 있으며 기본 설정을 사용하지 않으려는 경우에만 설정을 제공해야 합니다.
+**DataCollectors** 요소는 진단 데이터 어댑터의 설정을 지정합니다. 진단 데이터 어댑터는 테스트 환경 및 애플리케이션에 대한 추가 정보를 수집합니다. 각 어댑터에는 기본 설정이 있으며 기본 설정을 사용하지 않으려는 경우에만 설정을 제공해야 합니다.
 
 #### <a name="code-coverage-adapter"></a>코드 검사 어댑터
 
@@ -194,7 +193,7 @@ ms.locfileid: "49903558"
 </CodeCoverage>
 ```
 
-코드 검사 데이터 수집기는 테스트에서 응용 프로그램 코드 중 실행된 부분에 대한 로그를 만듭니다. 코드 검사의 설정을 사용자 지정하는 방법에 대한 자세한 내용은 [코드 검사 분석 사용자 지정](../test/customizing-code-coverage-analysis.md)을 참조하세요.
+코드 검사 데이터 수집기는 테스트에서 애플리케이션 코드 중 실행된 부분에 대한 로그를 만듭니다. 코드 검사의 설정을 사용자 지정하는 방법에 대한 자세한 내용은 [코드 검사 분석 사용자 지정](../test/customizing-code-coverage-analysis.md)을 참조하세요.
 
 #### <a name="video-data-collector"></a>비디오 데이터 수집기
 

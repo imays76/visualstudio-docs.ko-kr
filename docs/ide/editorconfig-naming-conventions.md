@@ -9,15 +9,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: df74252361e330ac992f8f3e852d9c33006d18e7
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: 60bffcf458e96a5e224493ac9a33b8fa9fb72541
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443586"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898663"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>EditorConfig에 대한 .NET 명명 규칙
 
@@ -148,7 +147,7 @@ ms.locfileid: "47443586"
 
 `dotnet_naming_rule.<namingRuleTitle>.severity = <value>`
 
-다음 표에서는 허용될 수 있는 심각도 값 및 해당 의미를 보여 줍니다.
+다음 표에서는 허용될 수 있는 심각도 값 및 해당 의미를 보여줍니다.
 
 심각도 | 효과
 ------------ | -------------
@@ -160,7 +159,7 @@ suggestion | 이 스타일을 따르지 않을 경우 처음 두 문자에 점�
 > [!NOTE]
 > 명명 규칙 위반을 확인하기 위해 프로젝트를 빌드하지 않아도 됩니다. 코드가 편집되면 **오류 목록** 또는 제안 중 하나로 표시됩니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 *.editorconfig* 파일은 공용 속성, 메서드, 필드, 이벤트 및 대리자를 대문자로 시작하도록 지정하는 명명 규칙을 포함하고 있습니다. 이 명명 규칙은 값을 구분하기 위해 쉼표를 사용하여 규칙을 적용하는 여러 종류의 기호를 지정합니다.
 
@@ -178,7 +177,7 @@ dotnet_naming_style.first_word_upper_case_style.capitalization = first_word_uppe
 dotnet_naming_rule.public_members_must_be_capitalized.severity = suggestion
 ```
 
-다음 스크린샷에서는 편집기에서 이 명명 규칙의 영향을 보여 줍니다. 두 공용 변수의 이름은 첫 번째 문자를 대문자로 시작하지 않고 지정되었습니다. 한 변수는 `const`이고 다른 변수는 `readonly`입니다. 명명 규칙이 `readonly` 기호에만 적용되므로 `readonly` 변수는 명명 규칙 제안만을 보여 줍니다.
+다음 스크린샷에서는 편집기에서 이 명명 규칙의 영향을 보여줍니다. 두 공용 변수의 이름은 첫 번째 문자를 대문자로 시작하지 않고 지정되었습니다. 한 변수는 `const`이고 다른 변수는 `readonly`입니다. 명명 규칙이 `readonly` 기호에만 적용되므로 `readonly` 변수는 명명 규칙 제안만을 보여줍니다.
 
 ![명명 규칙 제안](media/editorconfig-naming-rule-suggestion.png)
 

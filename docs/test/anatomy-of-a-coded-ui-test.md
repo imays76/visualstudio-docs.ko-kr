@@ -2,7 +2,6 @@
 title: 코딩된 UI 테스트 분석
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d5c1a8bcc8ee43aa36b8a39cd53f4be4f6882f06
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: dbee9735922b680daad51a698b3e05ad54f31115
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896590"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949312"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>코딩된 UI 테스트 분석
 
@@ -128,7 +127,7 @@ public void AddItems()
 
  이 메서드에서 `UIItemWindow` 및 `UIItemEdit`는 둘 다 *UIMap.cs* 파일의 뒷부분에서 정의되는 `UICalculatorWindow` 클래스를 사용하여 액세스할 수 있는 속성입니다.
 
- 다음은 `AddItemsParams` 개체의 속성을 사용하여 키보드에서 계산기 응용 프로그램으로 텍스트를 보내는 줄입니다.
+ 다음은 `AddItemsParams` 개체의 속성을 사용하여 키보드에서 계산기 애플리케이션으로 텍스트를 보내는 줄입니다.
 
  `VerifyTotal()` 메서드는 구조가 유사하며 다음과 같은 어설션 코드를 포함합니다.
 
@@ -139,7 +138,7 @@ Assert.AreEqual(
     uIItemEdit.Text);
 ```
 
- Windows 계산기 응용 프로그램의 개발자가 공개적으로 사용할 수 있는 컨트롤 이름을 제공하지 않으므로 텍스트 상자 이름은 알 수 없음으로 나열됩니다. 실제 값이 예상 값과 같지 않은 경우 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A?displayProperty=fullName> 메서드가 실패하여 테스트에 실패합니다. 또한 예상 값은 소수점 뒤에 공백을 포함합니다. 이 특정 테스트의 기능을 수정해야 하는 경우 해당 소수점과 공백을 허용해야 합니다.
+ Windows 계산기 애플리케이션의 개발자가 공개적으로 사용할 수 있는 컨트롤 이름을 제공하지 않으므로 텍스트 상자 이름은 알 수 없음으로 나열됩니다. 실제 값이 예상 값과 같지 않은 경우 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A?displayProperty=fullName> 메서드가 실패하여 테스트에 실패합니다. 또한 예상 값은 소수점 뒤에 공백을 포함합니다. 이 특정 테스트의 기능을 수정해야 하는 경우 해당 소수점과 공백을 허용해야 합니다.
 
 #####  <a name="UIMapProperties"></a> UIMap 속성
  각 속성에 대한 코드도 클래스 전체에서 표준적입니다. `AddItemsParams` 속성에 대한 다음 코드는 `AddItems()` 메서드에서 사용됩니다.
@@ -283,5 +282,5 @@ public void MyTestCleanup()
 - [UI 자동화를 사용하여 코드 테스트](../test/use-ui-automation-to-test-your-code.md)
 - [코딩된 UI 테스트 만들기](../test/use-ui-automation-to-test-your-code.md)
 - [코딩된 UI 테스트에 대한 모범 사례](../test/best-practices-for-coded-ui-tests.md)
-- [여러 UI 맵이 포함된 대형 응용 프로그램 테스트](../test/testing-a-large-application-with-multiple-ui-maps.md)
+- [여러 UI 맵이 포함된 대형 애플리케이션 테스트](../test/testing-a-large-application-with-multiple-ui-maps.md)
 - [코딩된 UI 테스트 및 작업 기록에 지원되는 구성 및 플랫폼](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

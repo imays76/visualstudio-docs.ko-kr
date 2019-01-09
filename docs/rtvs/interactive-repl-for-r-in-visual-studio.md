@@ -3,19 +3,18 @@ title: R에 대한 대화형 REPL
 description: 편집기 창과 통합된 Visual Studio의 R용 대화형 REPL 환경을 사용하는 방법입니다.
 ms.date: 06/28/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: a9e475e108fee9134699b0ee80e59fbf3f5eea32
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 7df300a57120bec2fc93ec7433a7ea9fdd3a2fc8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235538"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947077"
 ---
 # <a name="work-with-the-r-interactive-window"></a>R 대화형 창 사용
 

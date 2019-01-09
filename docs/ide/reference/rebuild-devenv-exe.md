@@ -2,7 +2,6 @@
 title: -Rebuild(devenv.exe)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - Devenv, /rebuild switch
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b0946137cb259386648b7b3ac2883c33f5724352
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 782a0864c692d8c50932f41077762c994f24eeae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948611"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985685"
 ---
 # <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
 지정된 솔루션 구성을 정리하고 빌드합니다.
@@ -35,11 +34,11 @@ devenv SolutionName /rebuild SolnConfigName [/project ProjName] [/projectconfig 
 ## <a name="arguments"></a>인수
  `SolnConfigName`
 
- 필수. `SolutionName`으로 명명된 솔루션을 다시 빌드하는 데 사용할 솔루션 구성의 이름입니다.
+ 필수 요소. `SolutionName`으로 명명된 솔루션을 다시 빌드하는 데 사용할 솔루션 구성의 이름입니다.
 
  `SolutionName`
 
- 필수. 솔루션 파일의 전체 경로 및 이름입니다.
+ 필수 요소. 솔루션 파일의 전체 경로 및 이름입니다.
 
  /project `ProjName`
 
@@ -49,7 +48,7 @@ devenv SolutionName /rebuild SolnConfigName [/project ProjName] [/projectconfig 
 
  선택 사항입니다. `/project` 다시 빌드 시 사용할 프로젝트 빌드 구성 이름입니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 -   이 스위치는 IDE(통합 개발 환경)내에서 **솔루션 다시 빌드** 메뉴 명령과 동일한 기능을 수행합니다.
 
@@ -57,7 +56,7 @@ devenv SolutionName /rebuild SolnConfigName [/project ProjName] [/projectconfig 
 
 -   오류를 포함한 정리 및 빌드에 대한 요약 정보는 **명령** 창 또는 `/out` 스위치로 지정된 로그 파일에 표시할 수 있습니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  이 예제에서는 `MySolution`의 `Debug` 솔루션 구성 내에 있는 `Debug` 프로젝트 빌드 구성을 사용하여 `CSharpWinApp` 프로젝트를 정리하고 다시 빌드합니다.
 
 ```cmd

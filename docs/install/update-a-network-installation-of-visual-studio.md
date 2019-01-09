@@ -2,7 +2,6 @@
 title: 네트워크 기반 설치 업데이트
 description: --layout 명령을 사용하여 네트워크 기반 Visual Studio 설치를 업데이트하는 방법 알아보기
 ms.date: 08/14/2017
-ms.technology: vs-acquisition
 ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -15,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 736f8dc9c79faa5c81055296c9fbf534c512f6fa
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 55509f49aff21d5c4e4319a35de20b29a6bc3f75
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159492"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906405"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio-2017"></a>Visual Studio 2017의 네트워크 기반 설치 업데이트
 
@@ -76,7 +75,7 @@ ms.locfileid: "53159492"
 
 * 관리자는 다음 두 가지 명령을 각각 사용하여 사용자 조작 없이 Visual Studio의 클라이언트 배포를 업데이트할 수 있습니다.
   * 먼저 Visual Studio 설치 관리자를 업데이트합니다. <br>```vs_enterprise.exe --quiet --update```
-  * 그다음에 Visual Studio 응용 프로그램 자체를 업데이트합니다. <br>```vs_enterprise.exe update --installPath "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" --quiet --wait --norestart```
+  * 그다음에 Visual Studio 애플리케이션 자체를 업데이트합니다. <br>```vs_enterprise.exe update --installPath "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" --quiet --wait --norestart```
 
 > [!NOTE]
 > [vswhere.exe 명령](tools-for-managing-visual-studio-instances.md)을 사용하여 클라이언트 컴퓨터에서 기존 Visual Studio 인스턴스의 설치 경로를 확인합니다.

@@ -13,17 +13,16 @@ helpviewer_keywords:
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.service: ''
-ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.assetid: be73e3af-d87b-4d14-bd08-2e4bda074fb3
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d0496b9559e5e3fbd8984de97d98ea2e075db1a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e84aaad94916687a34179677cb569595746d86e3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063168"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964574"
 ---
 # <a name="visual-studio-enterprise-2017-component-directory"></a>Visual Studio Enterprise 2017 구성 요소 디렉터리
 
@@ -212,7 +211,7 @@ Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET 및 웹 개발 도구 필수
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 및 웹 개발 | 15.8.27825.0 | 권장
 Microsoft.VisualStudio.Component.FSharp.Desktop | F# 데스크톱 언어 지원 | 15.8.27825.0 | Optional
 
-## <a name="data-science-and-analytical-applications"></a>데이터 과학 및 분석 응용 프로그램
+## <a name="data-science-and-analytical-applications"></a>데이터 과학 및 분석 애플리케이션
 
 **ID:** Microsoft.VisualStudio.Workload.DataScience
 
@@ -364,7 +363,7 @@ Component.UnityEngine.x86 | Unity 5.6 32비트 편집기 | 15.6.27406.0 | 권장
 
 **ID:** Microsoft.VisualStudio.Workload.NativeCrossPlat
 
-**설명:** Linux 환경에서 실행되는 응용 프로그램을 만들고 디버그합니다.
+**설명:** Linux 환경에서 실행되는 애플리케이션을 만들고 디버그합니다.
 
 ### <a name="components-included-by-this-workload"></a>이 작업에 포함되는 구성 요소
 

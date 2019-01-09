@@ -1,8 +1,7 @@
 ---
-title: 응용 프로그램 전역화
+title: 애플리케이션 전역화
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Basic code, international applications
@@ -14,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1ab77b58047c92cfbf692e014f041e34456a01e
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 6fe4cd1488c30a68042829101a1e09c89ce848f6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863584"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937324"
 ---
-# <a name="globalize-applications"></a>응용 프로그램 전역화
+# <a name="globalize-applications"></a>애플리케이션 전역화
 
 전역화는 여러 문화권에서 작동하도록 소프트웨어를 디자인하고 개발하는 프로세스입니다. 다음 문서는 Windows Forms 및 Web Forms 페이지에 둘 다 적용됩니다.
 
@@ -33,6 +32,6 @@ ms.locfileid: "48863584"
 
 - [전역화 및 지역화](https://msdn.microsoft.com/Library/8ef3838e-9d05-4236-9dd0-ceecff9df80d) Web Forms 전역화에 대한 도움말 페이지의 링크를 제공합니다.
 
-- [.NET Framework 기반의 국가별 응용 프로그램 소개](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) Visual Basic 또는 C#을 사용하여 국제 시장용 소프트웨어를 개발하는 방법에 대한 필수 개념을 설명합니다.
+- [.NET Framework 기반의 국가별 애플리케이션 소개](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) Visual Basic 또는 C#을 사용하여 국제 시장용 소프트웨어를 개발하는 방법에 대한 필수 개념을 설명합니다.
 
-- [지역화 대비 응용 프로그램 개발을 위한 최선의 구현 방법](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps) 디자인 문제 및 용어와 같이 전 세계 대상을 위한 프로그래밍에 필요한 정보를 제공합니다.
+- [지역화 대비 애플리케이션 개발을 위한 최선의 구현 방법](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps) 디자인 문제 및 용어와 같이 전 세계 대상을 위한 프로그래밍에 필요한 정보를 제공합니다.

@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Visual Studio 프로젝트 컨텍스트에서 Django 기본 사항을 검토하는 연습 과정으로, Django 개발을 위해 Visual Studio에서 제공하는 지원을 설명합니다.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 549bd552cee0d9b833d1dee36f29f3a36b3f5f07
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ce92fa303da56b72c1c5bd7b9f2c11be0e542ed3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53061082"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941101"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>자습서: Visual Studio에서 Django 웹 프레임워크 시작
 
@@ -46,9 +45,9 @@ Django 프로젝트 템플릿은 Visual Studio용 Python 도구의 모든 이전
 
 ### <a name="visual-studio-projects-and-django-projects"></a>“Visual Studio 프로젝트” 및 “Django 프로젝트”
 
-Django 용어에서 “Django 프로젝트”는 전체 웹 응용 프로그램을 만들기 위해 웹 호스트에 배포하는 하나 이상의 “앱”과 함께 여러 개의 사이트 수준 구성 파일로 구성됩니다. Django 프로젝트에는 여러 앱이 포함될 수 있으며, 동일한 앱이 여러 Django 프로젝트에 있을 수 있습니다.
+Django 용어에서 “Django 프로젝트”는 전체 웹 애플리케이션을 만들기 위해 웹 호스트에 배포하는 하나 이상의 “앱”과 함께 여러 개의 사이트 수준 구성 파일로 구성됩니다. Django 프로젝트에는 여러 앱이 포함될 수 있으며, 동일한 앱이 여러 Django 프로젝트에 있을 수 있습니다.
 
-Visual Studio 프로젝트에는 여러 앱과 함께 Django 프로젝트가 포함될 수 있습니다. 간단한 설명을 위해 이 자습서에서 “프로젝트”라고만 하면 Visual Studio 프로젝트를 나타내는 것입니다. 웹 응용 프로그램의 “Django 프로젝트” 부분을 나타낼 때는 명확하게 “Django 프로젝트”를 사용합니다.
+Visual Studio 프로젝트에는 여러 앱과 함께 Django 프로젝트가 포함될 수 있습니다. 간단한 설명을 위해 이 자습서에서 “프로젝트”라고만 하면 Visual Studio 프로젝트를 나타내는 것입니다. 웹 애플리케이션의 “Django 프로젝트” 부분을 나타낼 때는 명확하게 “Django 프로젝트”를 사용합니다.
 
 이 자습서의 과정에서는 별도의 Django 프로젝트 세 개가 포함된 단일 Visual Studio 솔루션을 만들며, 각 프로젝트에는 단일 Django 앱이 포함됩니다. 프로젝트를 동일한 솔루션에 유지하면 서로 다른 파일 간에 쉽게 전환하여 비교할 수 있습니다.
 

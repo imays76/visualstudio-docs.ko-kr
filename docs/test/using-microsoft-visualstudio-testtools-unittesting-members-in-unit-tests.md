@@ -2,19 +2,18 @@
 title: 단위 테스트에서 Microsoft.VisualStudio.TestTools.UnitTesting 멤버 사용
 ms.date: 03/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: reference
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bad6f01a49856e44120c0dc121ee262d9d26506c
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 13fb1fb6b0b78ffbb2e89b80180260f14b695282
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295607"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902791"
 ---
 # <a name="use-the-mstest-framework-in-unit-tests"></a>단위 테스트에서 MSTest 프레임워크 사용
 
@@ -79,7 +78,7 @@ ClassInitialize 및 ClassCleanup은 클래스를 로드한 직후와 클래스�
 
 ## <a name="assert-classes-and-related-exceptions"></a>Assert 클래스 및 관련 예외
 
-단위 테스트에서는 다양한 종류의 어설션, 예외 및 특성을 사용하여 특정 응용 프로그램 동작을 확인할 수 있습니다. 자세한 내용은 [Assert 클래스 사용](../test/using-the-assert-classes.md)을 참조하세요.
+단위 테스트에서는 다양한 종류의 어설션, 예외 및 특성을 사용하여 특정 애플리케이션 동작을 확인할 수 있습니다. 자세한 내용은 [Assert 클래스 사용](../test/using-the-assert-classes.md)을 참조하세요.
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 

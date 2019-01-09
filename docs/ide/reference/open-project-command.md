@@ -2,7 +2,6 @@
 title: 프로젝트 열기 명령
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - file.openproject
@@ -17,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ff848ded38b0f59d3894ec4f78dd79ec9d182b8
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 34a6783e71d2a6dfee718aa441fbb3007aa71fa9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924150"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946242"
 ---
 # <a name="open-project-command"></a>프로젝트 열기 명령
 
@@ -38,18 +37,18 @@ File.OpenProject filename
 
 `filename`
 
-필수. 열려는 프로젝트 또는 솔루션의 전체 경로와 파일 이름입니다.
+필수 요소. 열려는 프로젝트 또는 솔루션의 전체 경로와 파일 이름입니다.
 
 > [!NOTE]
 > `filename` 인수 구문에서 공백을 포함하는 경로에는 따옴표를 사용해야 합니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 입력 시 자동 완성에서 올바른 경로와 파일 이름을 찾으려고 합니다.
 
 디버깅 중에는 이 명령을 사용할 수 없습니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 Visual Basic 프로젝트 **Test1**을 엽니다.
 

@@ -2,7 +2,6 @@
 title: DevEnv 빌드 스위치
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - builds, command-line
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cdd510e523aaabc468c1f01626593e51d0ad1558
-ms.sourcegitcommit: 9571742f4a808c75b1034aa72fc24b54bc50692e
+ms.openlocfilehash: 9caddb066d02366cac7ee9e34f2d55c726a69896
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49410964"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824446"
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
 
@@ -37,12 +36,12 @@ Devenv SolutionName /build SolnConfigName [/project ProjName [/projectconfig Pro
 
 |||
 |-|-|
-|*SolutionName*|필수. 솔루션 파일의 전체 경로 및 이름입니다.|
-|*SolnConfigName*|필수. *SolutionName*에서 명명된 솔루션을 빌드하는 데 사용할 솔루션 구성의 이름입니다. 여러 솔루션 플랫폼을 사용할 수 있는 경우 플랫폼(예를 들어 **"디버그\|Win32"**)을 지정해야 합니다.|
+|*SolutionName*|필수 요소. 솔루션 파일의 전체 경로 및 이름입니다.|
+|*SolnConfigName*|필수 요소. *SolutionName*에서 명명된 솔루션을 빌드하는 데 사용할 솔루션 구성의 이름입니다. 여러 솔루션 플랫폼을 사용할 수 있는 경우 플랫폼(예를 들어 **"디버그\|Win32"**)을 지정해야 합니다.|
 |/project *ProjName*|선택 사항입니다. 솔루션 내에 있는 프로젝트 파일의 경로와 이름입니다. *SolutionName* 폴더에서 프로젝트 파일, 프로젝트의 표시 이름 또는 프로젝트 파일의 전체 경로와 이름까지의 상대 경로를 입력할 수 있습니다.|
 |/projectconfig *ProjConfigName*|선택 사항입니다. 명명된 프로젝트를 빌드할 때 사용할 프로젝트 빌드 구성 이름입니다. 여러 프로젝트 플랫폼을 사용할 수 있는 경우 플랫폼(예를 들어 **"디버그\|Win32"**)을 지정해야 합니다.|
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 - **/build** 스위치는 IDE(통합 개발 환경)내에서 **솔루션 빌드** 메뉴 명령과 동일한 기능을 수행합니다.
 
@@ -54,7 +53,7 @@ Devenv SolutionName /build SolnConfigName [/project ProjName [/projectconfig Pro
 
 - **잘못된 프로젝트 구성**이라는 오류 메시지가 발생하면 솔루션 플랫폼 또는 프로젝트 플랫폼(예를 들어 **"디버그\|Win32"**)을 지정했는지 확인합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 명령은 "MySolution"의 "Debug" 솔루션 구성 내에서 "디버그" 프로젝트 빌드 구성을 사용하여 "CSharpConsoleApp" 프로젝트를 빌드합니다.
 

@@ -3,7 +3,6 @@ title: IntelliTrace를 사용하여 이전 앱 상태 보기
 description: 스냅숏 만들기 및 IntelliTrace 뒤로 이동으로 스냅숏을 보는 방법을 알아봅니다
 ms.custom: seodec18
 ms.date: 09/19/2018
-ms.technology: vs-ide-debug
 ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
 author: mikejo5000
@@ -11,16 +10,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba1ab23fead36cfabc8b2754535e8b10de981987
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 87758b0f75b3b38f67f72f4a32122fa9d0955335
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060147"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939981"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio"></a>Visual Studio에서 IntelliTrace 뒤로 이동을 사용하여 이전 앱 상태 검사
 
-IntelliTrace 뒤로 이동은 모든 중단점 및 디버거 단계 이벤트에서 애플리케이션의 스냅숏을 자동으로 생성합니다. 기록된 스냅숏을 통해 이전 중단점 또는 단계로 돌아가서 응용 프로그램의 과거 상태를 볼 수 있습니다. IntelliTrace 뒤로 이동을 사용하면 이전 응용 프로그램 상태를 보고 싶지만 디버깅을 다시 시작하거나 원하는 앱 상태를 다시 만들지 않으려는 경우에 시간을 절약할 수 있습니다.
+IntelliTrace 뒤로 이동은 모든 중단점 및 디버거 단계 이벤트에서 애플리케이션의 스냅숏을 자동으로 생성합니다. 기록된 스냅숏을 통해 이전 중단점 또는 단계로 돌아가서 애플리케이션의 과거 상태를 볼 수 있습니다. IntelliTrace 뒤로 이동을 사용하면 이전 애플리케이션 상태를 보고 싶지만 디버깅을 다시 시작하거나 원하는 앱 상태를 다시 만들지 않으려는 경우에 시간을 절약할 수 있습니다.
 
 IntelliTrace 뒤로 이동은 Visual Studio Enterprise 2017 버전 15.5 이상부터 제공되며 Windows 10 1주년 업데이트 이상이 필요합니다. 기능은 현재 ASP.NET, WinForms, WPF, 관리 콘솔 앱 및 관리 클래스 라이브러리 디버깅에 지원됩니다. Visual Studio 2017 Enterprise 버전 15.7부터 ASP.NET Core 및 .NET Core에도 기능이 지원됩니다. Visual Studio 2017 Enterprise 버전 15.9 미리 보기 2부터 Windows를 대상으로 하는 네이티브 앱에도 기능이 지원됩니다. UWP 애플리케이션 디버깅은 현재 지원되지 않습니다.
 
@@ -111,7 +110,7 @@ IntelliTrace 뒤로 이동은 Visual Studio Enterprise 2017 버전 15.5 이상�
   * Windows 10 가을 크리에이터 업데이트(RS3)로 설치 또는 업그레이드합니다. 
   * 또는: 
     1. Visual Studio 설치 관리자에서 데스크톱(x86, x64) 구성 요소용 VC++ 2015.3 v140 도구 집합을 설치합니다.
-    2. 대상 응용 프로그램을 빌드합니다.
+    2. 대상 애플리케이션을 빌드합니다.
     3. 명령줄에서 editbin 도구를 사용하여 대상 실행 파일에 대한 `Largeaddressaware` 플래그를 설정합니다. 예를 들어 경로를 업데이트한 후 다음 명령을 사용할 수 있습니다. "C:\Program Files(x86)\Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" /Largeaddressaware "C:\Path\To\Application\app.exe".
     4. 디버깅을 시작하려면 **F5** 키를 누릅니다. 이제 디버거 단계 및 중단점에서 스냅숏이 만들어집니다.
 

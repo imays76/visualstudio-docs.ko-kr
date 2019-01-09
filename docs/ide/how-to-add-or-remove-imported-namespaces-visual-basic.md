@@ -2,7 +2,6 @@
 title: '방법: 가져온 네임스페이스 추가 또는 제거(Visual Basic)'
 ms.date: 06/21/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - adding imported namespaces
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df39b7867cd4c7baa2206b2c63634810b2f29dde
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 42beee330bcd8ab6003bd44277b77063937cf2d8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944650"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955187"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>방법: 가져온 네임스페이스 추가 또는 제거(Visual Basic)
 
@@ -49,7 +48,7 @@ ms.locfileid: "31944650"
 3.  **가져온 네임스페이스** 목록에서 제거할 네임스페이스의 확인란을 선택 취소합니다.
 
 ## <a name="user-imports"></a>사용자 가져오기
- 사용자 가져오기를 사용하여 전체 네임스페이스가 아닌 특정 네임스페이스 내의 특정 클래스를 가져올 수 있습니다. 예를 들어 응용 프로그램에는 <xref:System.Diagnostics> 네임스페이스에 대한 가져오기가 있을 수 있지만, 관심 있는 네임스페이스 내의 유일한 클래스는 `Debug` 클래스입니다. <xref:System.Diagnostics.Debug>를 사용자 가져오기를 정의하고 나서 <xref:System.Diagnostics>에 대한 가져오기를 제거할 수 있습니다.
+ 사용자 가져오기를 사용하여 전체 네임스페이스가 아닌 특정 네임스페이스 내의 특정 클래스를 가져올 수 있습니다. 예를 들어 애플리케이션에는 <xref:System.Diagnostics> 네임스페이스에 대한 가져오기가 있을 수 있지만, 관심 있는 네임스페이스 내의 유일한 클래스는 `Debug` 클래스입니다. <xref:System.Diagnostics.Debug>를 사용자 가져오기를 정의하고 나서 <xref:System.Diagnostics>에 대한 가져오기를 제거할 수 있습니다.
 
  필요한 것이 실제로 `EventLog` 클래스였다는 생각과 결정을 나중에 변경한다면 <xref:System.Diagnostics.EventLog>를 사용자 가져오기로 입력하고 업데이트 기능을 사용하여 <xref:System.Diagnostics.Debug>를 덮어쓸 수 있습니다.
 
