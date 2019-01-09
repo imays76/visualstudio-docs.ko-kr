@@ -1,8 +1,6 @@
 ---
 title: Move 작업 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3aaa9d7113d27acd3d5d30292fba2c6564fe3290
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 6e2f66ea8b3a2439e3fa5ce481f0af9ec09c8207
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077262"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917516"
 ---
 # <a name="move-task"></a>Move 작업
 새 위치로 파일을 이동합니다.  
@@ -39,7 +37,7 @@ ms.locfileid: "39077262"
 |`OverwriteReadOnlyFiles`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 파일이 읽기 전용으로 표시되더라도 파일을 덮어씁니다.|  
 |`SourceFiles`|필수 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> 이동할 파일을 지정합니다.|  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  `DestinationFolder` 매개 변수 또는 `DestinationFiles` 매개 변수 중 하나(둘 다가 아닌)를 지정해야 합니다. 둘 다를 지정하는 경우 작업이 실패하고 오류가 기록됩니다.  
 
  `Move` 작업은 원하는 대상 파일의 필요에 따라 폴더를 만듭니다.

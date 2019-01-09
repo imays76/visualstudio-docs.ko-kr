@@ -2,7 +2,6 @@
 title: Visual Basic IntelliSense
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.IntelliSense
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bd68ae1996ce9ca70e2a8bf1dcb66822e1a8bb1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e01c255a7e89298a2a4bd7548bab0b548520ceed
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823283"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877892"
 ---
 # <a name="intellisense-for-visual-basic-code-files"></a>Visual Basic 코드 파일에 대한 IntelliSense
 
@@ -45,13 +44,13 @@ Visual Basic 소스 코드 편집기는 다음과 같은 IntelliSense 기능을 
 
 ## <a name="intellisense-in-zone"></a>영역 내 IntelliSense
 
-영역 내 IntelliSense는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]를 통해 응용 프로그램을 배포해야 하는 Visual Basic 개발자에게 도움을 주며 부분 신뢰 설정으로 제한됩니다. 이 기능:
+영역 내 IntelliSense는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]를 통해 애플리케이션을 배포해야 하는 Visual Basic 개발자에게 도움을 주며 부분 신뢰 설정으로 제한됩니다. 이 기능:
 
-- 응용 프로그램을 실행할 사용 권한을 선택할 수 있습니다.
+- 애플리케이션을 실행할 사용 권한을 선택할 수 있습니다.
 
 - 선택한 영역의 API를 멤버 목록에서 사용할 수 있는 상태로 표시하고, 추가 사용 권한이 필요한 API를 사용할 수 없는 상태로 표시합니다.
 
-자세한 내용은 [ClickOnce 응용 프로그램의 코드 액세스 보안](../deployment/code-access-security-for-clickonce-applications.md)을 참조하세요.
+자세한 내용은 [ClickOnce 애플리케이션의 코드 액세스 보안](../deployment/code-access-security-for-clickonce-applications.md)을 참조하세요.
 
 ## <a name="filtered-completion-lists"></a>필터링된 완성 목록
 

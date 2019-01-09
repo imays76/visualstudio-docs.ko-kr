@@ -2,7 +2,6 @@
 title: 별칭 명령
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - tools.alias
@@ -18,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 41bddec00866f7c10140abc40c5ff12c623310d3
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: fa8b14618085ddae67616f5ef3e30fb1b030e45a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33703407"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930689"
 ---
 # <a name="alias-command"></a>별칭 명령
 전체 명령에 대한 새 별칭, 전체 명령 및 인수에 대한 새 별칭, 또 다른 별칭을 만듭니다.
@@ -48,7 +47,7 @@ Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
 
  /reset 선택 사항입니다. 미리 정의된 별칭 목록을 원래 설정으로 다시 설정합니다. 즉, 미리 정의된 모든 별칭을 복원하고 모든 사용자 정의 별칭을 제거합니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
  별칭은 명령을 나타내므로 명령줄 시작 부분에 있어야 합니다.
 
  이 명령을 실행할 때는 별명 뒤가 아닌 명령 바로 다음에 스위치를 포함해야 합니다. 그렇지 않으면 스위치 자체가 별명 문자열의 일부로 포함됩니다.
@@ -79,4 +78,4 @@ Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
 - [Visual Studio 명령](../../ide/reference/visual-studio-commands.md)
 - [명령 창](../../ide/reference/command-window.md)
 - [찾기/명령 상자](../../ide/find-command-box.md)
-- [Visual Studio 명령 별칭](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

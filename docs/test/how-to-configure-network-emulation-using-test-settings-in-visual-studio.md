@@ -9,17 +9,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 032eff41f0e6b6366e5eb56dad591a02ebde4984
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ae6e3aaf204b54e413a76a8d07e0391a214b007d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065897"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900732"
 ---
 # <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>방법: Visual Studio에서 테스트 설정을 사용하여 네트워크 에뮬레이션 구성
 
-Visual Studio에서 다양한 네트워크 환경에 처한 응용 프로그램을 테스트하도록 진단 데이터 어댑터를 구성할 수 있습니다. 테스트를 실행할 때 네트워크 부하나 병목 현상을 인위적으로 조작하고 그 결과를 테스트하도록 진단 데이터 어댑터를 구성할 수도 있습니다.
+Visual Studio에서 다양한 네트워크 환경에 처한 애플리케이션을 테스트하도록 진단 데이터 어댑터를 구성할 수 있습니다. 테스트를 실행할 때 네트워크 부하나 병목 현상을 인위적으로 조작하고 그 결과를 테스트하도록 진단 데이터 어댑터를 구성할 수도 있습니다.
 
 > [!WARNING]
 > 에뮬레이트한 네트워크보다 속도가 느린 실제 네트워크 환경에서 테스트를 실행하는 경우 더 느린 네트워크 속도에서 테스트가 실행됩니다. 속도가 더 느린 네트워크 환경을 에뮬레이트할 수는 있지만 속도가 더 빠른 네트워크 환경은 에뮬레이트할 수 없습니다.

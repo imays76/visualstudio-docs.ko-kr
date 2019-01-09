@@ -1,8 +1,6 @@
 ---
 title: RC 작업 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - VC.Project.VCResourceCompilerTool.UndefineProcessorDefinitions
@@ -24,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0db327943dcaf9b14a921cf4437b6c23874b4380
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 156de08e8bd0ed2a8cadd0653facfa99d352cb20
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219434"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915590"
 ---
 # <a name="rc-task"></a>RC 작업
 Microsoft Windows 리소스 컴파일러 도구, *rc.exe*를 래핑합니다. **RC** 작업은 커서, 아이콘, 비트맵, 대화 상자 및 글꼴과 같은 리소스를 리소스(*.res*) 파일로 컴파일합니다. 자세한 내용은 [리소스 컴파일러](https://docs.microsoft.com/windows/desktop/menurc/resource-compiler)를 참조하세요.
