@@ -1,8 +1,6 @@
 ---
 title: 열거형 및 구조체 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bc3b2b74c6539cbbdfd1a7e99c88c0b1e65c5cc
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: c8f994e83e6817062878ef7a0d8e6cd9981b3ec9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462054"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988085"
 ---
 # <a name="enumerations-and-structures"></a>열거형 및 구조체
 이들은, 열거형 및 DIA SDK에서 사용 되는 구조입니다.  
@@ -31,22 +29,22 @@ ms.locfileid: "31462054"
   
 ## <a name="enumerations"></a>열거형  
  [BasicType 열거형](../../debugger/debug-interface-access/basictype.md)  
- 심볼의 기본 유형을 지정합니다.  
+ 기호 기본 형식을 지정합니다.  
   
  [CV_access_e 열거형](../../debugger/debug-interface-access/cv-access-e.md)  
  표시 유형 (액세스 수준) 멤버 함수 및 변수의 범위를 지정합니다.  
   
  [CV_call_e 열거형](../../debugger/debug-interface-access/cv-call-e.md)  
- 함수에 대 한 호출 규칙을 지정합니다.  
+ 함수의 호출 규칙을 지정 합니다.  
   
  [CV_CFL_LANG 열거형](../../debugger/debug-interface-access/cv-cfl-lang.md)  
- 응용 프로그램이 나 연결 된 모듈의 소스 코드 언어를 지정합니다.  
+ 응용 프로그램 또는 연결 된 모듈의 소스 코드 언어를 지정합니다.  
   
  [CV_CPU_TYPE_e 열거형](../../debugger/debug-interface-access/cv-cpu-type-e.md)  
  대상 프로세서를 지정합니다.  
   
  [CV_HREG_e 열거형](../../debugger/debug-interface-access/cv-hreg-e.md)  
- 대상 레지스터를 지정 합니다.  
+ 대상 레지스터를 지정합니다.  
   
  [DataKind 열거형](../../debugger/debug-interface-access/datakind.md)  
  데이터 값의 특정 범위를 나타냅니다.  
@@ -55,7 +53,7 @@ ms.locfileid: "31462054"
  기호에 포함 된 위치 정보의 종류를 나타냅니다.  
   
  [MemoryTypeEnum 열거형](../../debugger/debug-interface-access/memorytypeenum.md)  
- 메모리 액세스의 유형을 지정 합니다.  
+ 메모리 액세스의 형식을 지정 합니다.  
   
  [NameSearchOptions 열거형](../../debugger/debug-interface-access/namesearchoptions.md)  
  기호 및 파일 이름에 대 한 검색 옵션을 지정합니다.  
@@ -70,7 +68,7 @@ ms.locfileid: "31462054"
  썽크 형식을 지정합니다.  
   
  [UdtKind 열거형](../../debugger/debug-interface-access/udtkind.md)  
- 다양 한 사용자 정의 형식 (UDT)에 대해 설명합니다.  
+ 다양을 한 사용자 정의 형식 (UDT)에 대해 설명합니다.  
   
 ## <a name="structures"></a>구조체  
  [DiaAddressMapEntry 구조체](../../debugger/debug-interface-access/diaaddressmapentry.md)  

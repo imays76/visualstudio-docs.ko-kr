@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6aa7ef34d035ad89a096414c285b4f66a4f4fa1e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 579d0ef243de7cd9bfcb821e75aa5ca213712a88
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726703"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090599"
 ---
 # <a name="idebugdocumenttextauthorreplacetext"></a>IDebugDocumentTextAuthor::ReplaceText
 문서에서 텍스트를 바꿉니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT ReplaceText(  
    ULONG    cCharacterPosition,  
    ULONG    cNumToReplace,  
@@ -43,7 +43,7 @@ HRESULT ReplaceText(
  [in] 바꿀 문자 범위의의 위치를 시작 합니다.  
   
  `cNumToReplace`  
- [in] 바꿀 문자 수입니다.  
+ [in] 교체할 문자 수입니다.  
   
  `pcharText[]`  
  [in] 이전 문자를 바꿀 새 문자를 포함 하는 버퍼입니다.  

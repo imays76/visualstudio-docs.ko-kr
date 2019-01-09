@@ -18,19 +18,19 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fc518e87414d051e9b1393b60b5874a0204b78b2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c388340c35afe2ae7e5e7d0f5078e70b46c0b1bc
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729553"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090885"
 ---
 # <a name="iscriptentrygetname"></a>IScriptEntry::GetName
 단일 개체 (예: 함수)를 나타내는 항목에 대 한 개체의 이름을 반환 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetName(  
    BSTR               *pbstr  
 );  
@@ -38,7 +38,7 @@ HRESULT GetName(
   
 #### <a name="parameters"></a>매개 변수  
  `pbstr`  
- [out] 가 나타내는 개체의 이름에서 `IScriptEntry` 스크립트 블록입니다. 항목에서 단일 개체를 나타낼 경우에 NULL이 반환 됩니다.  
+ [out] 가 나타내는 개체의 이름을 합니다 `IScriptEntry` 스크립트 블록입니다. 진입점이 단일 개체를 나타내지 않는 경우 NULL이 반환 됩니다.  
   
  자식 항목에는 단일 함수 개체를 나타냅니다.  
   

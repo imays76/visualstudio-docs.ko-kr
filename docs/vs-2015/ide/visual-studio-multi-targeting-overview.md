@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -19,20 +18,20 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 54aabe4871ee7f40e32d42cefd8d291276f361cb
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: cf64514f1510a9d4d65930bfc22dc322569853c0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049802"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886503"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visual Studio 다중 대상 지정 개요
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 이 버전에서는 응용 프로그램에 필요한 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 버전을 지정할 수 있습니다. 따라서 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 이 버전을 사용해서 이전 버전에서 시작한 프로젝트 개발을 계속하려는 경우 프레임워크 대상을 변경할 필요가 없습니다. 여러 가지 버전의 프레임워크를 대상으로 지정하는 프로젝트가 포함된 솔루션을 만들 수도 있습니다. 프레임워크 대상 지정을 통해 응용 프로그램에서 지정된 버전의 프레임워크에서 제공되는 기능만 사용하도록 할 수 있습니다.
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 이 버전에서는 애플리케이션에 필요한 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 버전을 지정할 수 있습니다. 따라서 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 이 버전을 사용해서 이전 버전에서 시작한 프로젝트 개발을 계속하려는 경우 프레임워크 대상을 변경할 필요가 없습니다. 여러 가지 버전의 프레임워크를 대상으로 지정하는 프로젝트가 포함된 솔루션을 만들 수도 있습니다. 프레임워크 대상 지정을 통해 애플리케이션에서 지정된 버전의 프레임워크에서 제공되는 기능만 사용하도록 할 수 있습니다.
 
 > [!TIP]
->  다른 플랫폼에 대한 응용 프로그램을 대상으로 지정할 수도 있습니다. 자세한 내용은 [멀티 타기팅](../msbuild/msbuild-multitargeting-overview.md)을 참조하세요.
+>  다른 플랫폼에 대한 애플리케이션을 대상으로 지정할 수도 있습니다. 자세한 내용은 [멀티 타기팅](../msbuild/msbuild-multitargeting-overview.md)을 참조하세요.
 
 ## <a name="framework-targeting-features"></a>프레임워크 대상 지정 기능
  프레임워크 대상 지정에는 다음 기능이 포함됩니다.
@@ -62,7 +61,7 @@ ms.locfileid: "53049802"
 - 빌드에는 컴파일러 버전 및 대상 버전에 적절한 컴파일러 옵션을 사용합니다.
 
 > [!NOTE]
->  프레임워크 대상 지정을 수행해도 응용 프로그램이 제대로 실행되지 않을 수 있습니다. 응용 프로그램을 테스트하여 대상 버전에 대해 실행되는지 확인해야 합니다. .NET Framework 2.0 이전의 프레임워크 버전은 대상으로 지정할 수 없습니다.
+>  프레임워크 대상 지정을 수행해도 애플리케이션이 제대로 실행되지 않을 수 있습니다. 애플리케이션을 테스트하여 대상 버전에 대해 실행되는지 확인해야 합니다. .NET Framework 2.0 이전의 프레임워크 버전은 대상으로 지정할 수 없습니다.
 
 ## <a name="selecting-a-target-framework-version"></a>대상 프레임워크 버전 선택
  프로젝트를 만들 때 **새 프로젝트** 대화 상자에서 대상 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 버전을 선택합니다. 사용 가능한 프로젝트 템플릿 목록은 선택에 따라 필터링됩니다. 기존 프로젝트의 경우 [프로젝트 속성] 대화 상자에서 대상 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 버전을 변경할 수 있습니다. 자세한 내용은 [방법: 한 버전의 .NET Framework를 대상으로 지정](../ide/how-to-target-a-version-of-the-dotnet-framework.md).

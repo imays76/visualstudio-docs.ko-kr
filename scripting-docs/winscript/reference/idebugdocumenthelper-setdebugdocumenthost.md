@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::SetDebugDocumentHost | Microsoft Docs
+title: 'Idebugdocumenthelper:: Setdebugdocumenthost | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5d1377edaa5b10a7ebb06713e512010be010a9d3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9c4a935d849fed2b617abf5ee33ca2901b9c944c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726373"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088220"
 ---
 # <a name="idebugdocumenthelpersetdebugdocumenthost"></a>IDebugDocumentHelper::SetDebugDocumentHost
-설정 된 `IDebugDocumentHost` 이 문서에 대 한 합니다.  
+집합의 `IDebugDocumentHost` 이 문서에 대 한 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT SetDebugDocumentHost(  
    IDebugDocumentHost*  pddh  
 );  
@@ -48,7 +48,7 @@ HRESULT SetDebugDocumentHost(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- `IDebugDocumentHost` 인터페이스 스마트 호스트 구문 색 지정에 사용 됩니다, 지연 된 텍스트를 가져오고 새로 생성에 대 한 제어 개체를 반환 합니다. 컨텍스트 문서입니다.  
+ `IDebugDocumentHost` 인터페이스는 스마트 호스트 구문 색 지정, 지연 된 텍스트를 가져오고 새로 만든에 대 한 제어 개체를 반환 합니다. 문서 컨텍스트.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugDocumentHelper 인터페이스](../../winscript/reference/idebugdocumenthelper-interface.md)   

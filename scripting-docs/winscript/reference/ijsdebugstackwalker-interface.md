@@ -12,19 +12,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dbea11bf1188d148818ea8a082bceec76c704c2b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d79950c6d5595a0a8a95623a7510c5523f16e41b
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728553"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087901"
 ---
 # <a name="ijsdebugstackwalker-interface"></a>IJsDebugStackWalker 인터페이스
-지정 된 스레드의 스택 워크를 나타냅니다.  
+지정 된 스레드의 스택 워커를 나타냅니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 IJsDebugStackWalker : public IUnknown;  
 ```  
   
@@ -37,7 +37,7 @@ IJsDebugStackWalker : public IUnknown;
 |[IJsDebugStackWalker::GetNext 메서드](../../winscript/reference/ijsdebugstackwalker-getnext-method.md)|다음 프레임을 가져옵니다.|  
   
 ## <a name="remarks"></a>설명  
- 스택 walkers 대상 중지 되 고 대상 프로세스를 다시 계속 되 면 잘못 된 동안에 만들 수 있습니다.  
+ 스택 워커 대상 중지 되 고 사용할 수 없습니다. 대상 프로세스가 다시 계속 된 후에 만들 수 있습니다.  
   
 ## <a name="requirements"></a>요구 사항  
  **헤더:** jscript9diag.h  

@@ -12,19 +12,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9fdad752587869fbdd1edfa325ddc1282cfa3a95
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3cfbd2f3924391a8c7ff75ea5e4c06e7b0f07c35
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734163"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093030"
 ---
 # <a name="profilerheapobjectrelationshiplist-structure"></a>PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST 구조체
-힙 개체에 속하는 관계의 목록을 나타냅니다.  
+힙 개체에 속해 있는 관계의 목록을 나타냅니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 typedef struct _PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST{    UINT count;    [size_is(count)] PROFILER_HEAP_OBJECT_RELATIONSHIP elements[];} PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST;  
 ```  
   
@@ -32,5 +32,5 @@ typedef struct _PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST{    UINT count;    [size_
   
 |멤버|형식|설명|  
 |------------|----------|-----------------|  
-|count|UINT|힙 개체의 관계 수를 지정 합니다.|  
-|요소|[PROFILER_HEAP_OBJECT_RELATIONSHIP 구조체](../../winscript/reference/profiler-heap-object-relationship-structure.md)|힙 개체의 관계를 지정 합니다.|
+|count|UINT|힙 개체의 관계의 수입니다.|  
+|요소|[PROFILER_HEAP_OBJECT_RELATIONSHIP 구조체](../../winscript/reference/profiler-heap-object-relationship-structure.md)|힙 개체의 관계입니다.|

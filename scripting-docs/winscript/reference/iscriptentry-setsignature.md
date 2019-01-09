@@ -18,19 +18,19 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9ff480f8e5c3192a7e2b355d39825cc3a084370
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 660f667d3542ff2cb9a7e96444d98b3082218a2a
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729343"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089507"
 ---
 # <a name="iscriptentrysetsignature"></a>IScriptEntry::SetSignature
 집합 형식에 대 한 정보는 `IScriptEntry` 함수 개체입니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT SetSignature(  
    ITypeInfo          *pti  
    ULONG              iMethod  
@@ -39,7 +39,7 @@ HRESULT SetSignature(
   
 #### <a name="parameters"></a>매개 변수  
  `pti`  
- [in] 유형 정보입니다.  
+ [in] 형식 정보입니다.  
   
  `iMethod`  
  [in] 메서드 인덱스는 `ITypeInfo` 개체입니다.  
@@ -52,7 +52,7 @@ HRESULT SetSignature(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 형식 정보를 사용 하 여 설정한 `IScriptEntry::SetSignature` 또는 [IScriptNode::CreateChildHandler](../../winscript/reference/iscriptnode-createchildhandler.md)합니다. 함수 내부 표현에 따라 항목으로 형식 정보를 생성할 수도 있습니다.  
+ 형식 정보를 사용 하 여 설정한 `IScriptEntry::SetSignature` 나 [IScriptNode::CreateChildHandler](../../winscript/reference/iscriptnode-createchildhandler.md)합니다. 내부 함수 표현을 기반 항목으로 형식 정보를 생성할 수도 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IScriptEntry 인터페이스](../../winscript/reference/iscriptentry-interface.md)

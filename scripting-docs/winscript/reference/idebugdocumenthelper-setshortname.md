@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 69674b5639c7d59a4551192177d9ebdafd27ac99
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7014ecc858734a4dea6f9c4c2453f101c28d8996
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726093"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089936"
 ---
 # <a name="idebugdocumenthelpersetshortname"></a>IDebugDocumentHelper::SetShortName
-문서에 대 한 약식 이름을 설정합니다.  
+문서에 대 한 짧은 이름을 설정합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT SetShortName(  
    LPCOLESTR  pszShortName  
 );  
@@ -38,7 +38,7 @@ HRESULT SetShortName(
   
 #### <a name="parameters"></a>매개 변수  
  `pszShortName`  
- [in] 문서의 짧은 이름이 포함 된 null로 끝나는 문자열입니다.  
+ [in] 문서의 짧은 이름을 포함 하는 null 종료 문자열입니다.  
   
 ## <a name="return-value"></a>반환 값  
  이 메서드는 `HRESULT`를 반환합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  

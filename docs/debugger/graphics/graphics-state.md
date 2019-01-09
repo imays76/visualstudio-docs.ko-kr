@@ -1,8 +1,6 @@
 ---
 title: 그래픽 상태 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.statewindow
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b45e5d922a5f2ed5a2ba15086c708c734d25e95
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 80a69c1da16e8e43c1a306a8659bb8e41bed21e7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476382"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968104"
 ---
 # <a name="graphics-state"></a>그래픽 상태
 Visual Studio 그래픽 진단의 상태 창은 그리기 호출과 같은 현재 이벤트 시간에 활성화된 그래픽 상태를 이해하는 데 도움이 됩니다.  
@@ -38,21 +36,21 @@ Visual Studio 그래픽 진단의 상태 창은 그리기 호출과 같은 현�
   
 -   상태 창 왼쪽 위, 제목 표시줄 바로 아래에서 사용하려는 상태 보기 스타일에 해당하는 단추를 선택합니다.  
   
-    -   **API 입력된 상태 보기 표시**  
+    -   API 입력 상태 보기 표시  
   
-    -   **논리 상태 보기 표시**  
+    -   논리 상태 보기 표시  
   
-    -   **고정 된 상태 보기 표시**  
+    -   고정된 상태 보기 표시  
   
 > [!IMPORTANT]
->  상태를 고정 해야는 **표시 API 입력 상태** 또는 **논리 상태 표시** 에 표시할 것에 대 한 뷰는 **표시 고정 된 상태 보기**합니다.  
+>  고정된 상태 보기 표시**에 상태를 표시하려면 API 입력 상태 표시 **또는 논리 상태 표시**에서 상태를 고정해야 합니다.  
   
 ### <a name="state-table-format"></a>상태 테이블 형식  
  상태 창에는 여러 정보 열이 표시됩니다.  
   
 |열|설명|  
 |------------|-----------------|  
-|이름|상태 항목의 이름입니다. 이 항목이 상태 번들을 나타내는 경우 항목을 확장하여 표시할 수 있습니다.<br /><br /> 에 **API 입력 상태 보기** 및 **논리 상태 보기** 상태, 상태 간의 계층 관계를 표시 하도록 이름이 들여쓰기 됩니다.<br /><br /> 에 **고정 된 상태 보기** 상태 이면 정규화 된 이름이 플랫 목록에 표시 됩니다.|  
+|name|상태 항목의 이름입니다. 이 항목이 상태 번들을 나타내는 경우 항목을 확장하여 표시할 수 있습니다.<br /><br /> API 입력 상태 보기 **및 논리 상태 보기** 상태에서는 상태 간의 계층 관계를 표시하기 위해 이름이 들여쓰기됩니다.<br /><br /> 고정된 상태 보기** 상태에서는 정규화된 이름이 플랫 목록에 표시됩니다.|  
 |값|상태 항목의 값입니다.|  
 |형식|상태 항목의 형식입니다.|  
   

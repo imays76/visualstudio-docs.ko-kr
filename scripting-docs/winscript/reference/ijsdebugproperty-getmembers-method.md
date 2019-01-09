@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 066db431f27eca01fab63d10d0396575b3895527
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 351862f488aceb5fd3e9176cc4676e70b197d803
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728433"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087029"
 ---
 # <a name="ijsdebugpropertygetmembers-method"></a>IJsDebugProperty::GetMembers 메서드
 이 개체의 멤버를 가져옵니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetMembers(  
    JS_PROPERTY_MEMBERS members,  
    IJsEnumDebugProperty **ppEnum  
@@ -37,7 +37,7 @@ HRESULT GetMembers(
   
 #### <a name="parameters"></a>매개 변수  
  `members`  
- [in] 멤버 정보에 포함 된 요소를 지정 하는 플래그입니다.  
+ [in] 멤버 정보에 포함 된 항목을 지정 하는 플래그입니다.  
   
  `ppEnum`  
  [out] 개체의 멤버입니다.  

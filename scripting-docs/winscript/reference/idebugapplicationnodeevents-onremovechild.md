@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4a62f187286f66f8adff8acda339e02a02bc6225
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fab0d9e70a3c3536043b4050b2f34bf2ae7ab32c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725993"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092207"
 ---
 # <a name="idebugapplicationnodeeventsonremovechild"></a>IDebugApplicationNodeEvents::onRemoveChild
-자식 노드 디버그 응용 프로그램 노드 개체에서 제거 될 때 이벤트를 처리 합니다.  
+디버그 응용 프로그램 노드 개체의 자식 노드를 제거할 때 이벤트를 처리 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT onRemoveChild(  
    IDebugApplicationNode*  prddpChild  
 );  
@@ -48,7 +48,7 @@ HRESULT onRemoveChild(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 이 메서드는 자식 노드가 디버그 응용 프로그램 노드 개체에서 제거 될 때 이벤트를 처리 합니다.  
+ 이 메서드는 디버그 응용 프로그램 노드 개체의 자식 노드를 제거할 때 이벤트를 처리 합니다.  
   
  구현자는 `IDebugApplicationNode` 인터페이스에는이 이벤트가 발생 합니다.  
   

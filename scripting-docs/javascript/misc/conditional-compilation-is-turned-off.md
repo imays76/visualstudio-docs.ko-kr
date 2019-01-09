@@ -20,17 +20,17 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8f2eabb900e24072c8f390061b5d6081de9bc889
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bcbf844ced2bb74ddfea9bd62d68877b7a3c969c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914244"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092887"
 ---
 # <a name="conditional-compilation-is-turned-off"></a>조건부 컴파일이 해제되었습니다.
 첫 번째 설정 조건부 컴파일 없이 조건부 컴파일 변수를 사용 하려고 했습니다. 조건부 컴파일 설정 지시를 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] @ 조건부 컴파일 변수로 시작 하는 식별자를 해석 하는 컴파일러입니다. 문 사용 하 여 조건부 코드를 시작 하 여이 수행 합니다.  
   
-```  
+```js
 /*@cc_on @*/  
 ```  
   

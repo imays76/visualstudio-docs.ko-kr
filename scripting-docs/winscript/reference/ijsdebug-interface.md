@@ -12,19 +12,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 724036182638dbe3d253730c42e835250e6eaa33
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 16f0da202e937a92a8e76dddc27d9da7bc61c4ca
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727683"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089416"
 ---
 # <a name="ijsdebug-interface"></a>IJsDebug 인터페이스
 JavaScript 디버깅에 대 한 진입점입니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 IJsDebug : public IUnknown;  
 ```  
   
@@ -34,7 +34,7 @@ IJsDebug : public IUnknown;
   
 |이름|설명|  
 |----------|-----------------|  
-|[IJsDebug::OpenVirtualProcess 메서드](../../winscript/reference/ijsdebug-openvirtualprocess-method.md)|팩터리 메서드를 새 가상 프로세스 개체를 만드는 데 사용 합니다.|  
+|[IJsDebug::OpenVirtualProcess 메서드](../../winscript/reference/ijsdebug-openvirtualprocess-method.md)|새 가상 프로세스 개체를 만드는 데 사용 되는 팩터리 메서드.|  
   
 ## <a name="requirements"></a>요구 사항  
  **헤더:** jscript9diag.h  
