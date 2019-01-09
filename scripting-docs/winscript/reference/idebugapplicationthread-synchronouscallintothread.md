@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fdeb57380975f19424f8b7da783846b5aae976ed
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e5e25f42b2bce66cf3bb7ab3e69d3711e2526ae1
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726463"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097060"
 ---
 # <a name="idebugapplicationthreadsynchronouscallintothread"></a>IDebugApplicationThread::SynchronousCallIntoThread
-호출자에 게 응용 프로그램 스레드에서 코드를 실행 하는 메커니즘을 제공 합니다.  
+호출자에 게 응용 프로그램 스레드에에서 코드를 실행 하는 메커니즘을 제공 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT SynchronousCallIntoThread(  
    IDebugThreadCall*  pstcb,  
    DWORD_PTR          dwParam1,  
@@ -41,16 +41,16 @@ HRESULT SynchronousCallIntoThread(
   
 #### <a name="parameters"></a>매개 변수  
  `pstcb`  
- [in] 호출 하는 개체입니다.  
+ [in] 호출 개체입니다.  
   
  `dwParam1`  
- [in] 첫 번째 매개 변수를 전달 하는 `IDebugThreadCall::ThreadCallHandler` 메서드.  
+ [in] 첫 번째 매개 변수를 전달 하 여 `IDebugThreadCall::ThreadCallHandler` 메서드.  
   
  `dwParam2`  
- [in] 두 번째 매개 변수를 전달 하는 `IDebugThreadCall::ThreadCallHandler` 메서드.  
+ [in] 두 번째 매개 변수를 전달 하 여 `IDebugThreadCall::ThreadCallHandler` 메서드.  
   
  `dwParam3`  
- [in] 세 번째 매개 변수를 전달 하는 `IDebugThreadCall::ThreadCallHandler` 메서드.  
+ [in] 세 번째 매개 변수를 전달 하 여 `IDebugThreadCall::ThreadCallHandler` 메서드.  
   
 ## <a name="return-value"></a>반환 값  
  이 메서드는 `HRESULT`를 반환합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
@@ -60,7 +60,7 @@ HRESULT SynchronousCallIntoThread(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 이 메서드는 호출자 디버거 스레드에서 코드를 실행 하는 메커니즘을 제공 합니다. 언어 엔진 및 호스트 자유 스레드 개체가 단일 스레드 구현 사항을 기반으로 구현 하려면 일반적으로이 방법을 사용 합니다.  
+ 이 메서드 호출자가 디버거 스레드에서 코드를 실행 하는 메커니즘을 제공 합니다. 언어 엔진과 호스트 일반적으로 자유 스레드 개체는 단일 스레드 구현 기반으로 구현 하려면이 메서드를 사용 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugApplicationThread 인터페이스](../../winscript/reference/idebugapplicationthread-interface.md)   

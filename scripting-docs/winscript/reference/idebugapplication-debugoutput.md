@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cfc956c7d2d65d20788a79c9f685e386aba97a80
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a4c67567b4dc4df74b43d8003104e8f47455b5f5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725463"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095409"
 ---
 # <a name="idebugapplicationdebugoutput"></a>IDebugApplication::DebugOutput
-디버거 통합된 개발 환경 (IDE)에서 표시할에 지정 된 문자열로 하면 됩니다.  
+디버거 통합된 개발 환경 (IDE)에서 표시할 지정된 된 문자열을 발생 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT DebugOutput(  
    LPCOLESTR  pstr  
 );  
@@ -50,7 +50,7 @@ HRESULT DebugOutput(
 ## <a name="remarks"></a>설명  
  이 메서드는 언어별 디버깅 출력 지원을 구현 하는 언어 엔진을 수 있습니다. 문자열은 일반적으로 디버거의 출력 창에 표시 됩니다.  
   
- 이 메서드를 사용 하면 `IApplicationDebugger::onDebugOutput` 를 호출할 수 있습니다.  
+ 이 메서드를 사용 하면 `IApplicationDebugger::onDebugOutput` 호출할 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugApplication 인터페이스](../../winscript/reference/idebugapplication-interface.md)   

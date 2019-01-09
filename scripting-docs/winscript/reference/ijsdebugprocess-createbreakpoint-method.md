@@ -16,19 +16,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 10d734f32d092d341dbb1b02a5cc7a0c127223a4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 661e584133f4ec3c4e571d157a63844c5b1145b7
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728123"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097567"
 ---
 # <a name="ijsdebugprocesscreatebreakpoint-method"></a>IJsDebugProcess::CreateBreakPoint 메서드
 지정한 문서 위치에서 중단점을 설정합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT CreateBreakPoint(  
    UINT64 documentId,  
    DWORD characterOffset,  
@@ -49,7 +49,7 @@ HRESULT CreateBreakPoint(
  [in] 중단점을 삽입 해야 하는 문서 텍스트의 길이입니다.  
   
  `isEnabled`  
- [in] 중단점이 활성화 되어 있는지 여부를 지정 합니다.  
+ [in] 중단점 사용 되는지 여부를 지정 합니다.  
   
  `ppDebugBreakPoint`  
  [out] 생성 된 중단점을 나타내는 개체입니다.  

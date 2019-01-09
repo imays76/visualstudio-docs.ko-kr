@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8719d1a169c89d7b6cf712a125b6962b9c7a8839
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bf48362686a05a958a067cffa1015ffe2d58cecc
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645723"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096228"
 ---
 # <a name="iactivescripterrorgetexceptioninfo"></a>IActiveScriptError::GetExceptionInfo
 스크립팅 엔진을 스크립트를 실행 하는 동안 발생 한 오류에 대 한 정보를 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetExceptionInfo(  
     EXCEPINFO *pexcepinfo  // structure for exception information  
 );  
@@ -38,7 +38,7 @@ HRESULT GetExceptionInfo(
   
 #### <a name="parameters"></a>매개 변수  
  `pexcepinfo`  
- [out] 주소는 `EXCEPINFO` 구조체 오류 정보입니다.  
+ [out] 주소는 `EXCEPINFO` 오류 정보를 수신 하는 구조입니다.  
   
 ## <a name="return-value"></a>반환 값  
  반환 `S_OK` 성공 하면 또는 `E_FAIL` 오류가 발생 합니다.  

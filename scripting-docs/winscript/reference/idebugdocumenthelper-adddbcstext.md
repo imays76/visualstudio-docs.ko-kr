@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::AddDBCSText | Microsoft Docs
+title: 'Idebugdocumenthelper:: Adddbcstext | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 37cd0f2953483e23636c3a17d7726bc2c438b303
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 86d4ac5cb7371f35edb84a44159e589c898bfa3d
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726483"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090391"
 ---
 # <a name="idebugdocumenthelperadddbcstext"></a>IDebugDocumentHelper::AddDBCSText
 이 문서의 끝에 DBCS 문자열을 추가 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT AddDBCSText(  
    LPCSTR  pszText  
 );  
@@ -46,15 +46,15 @@ HRESULT AddDBCSText(
 |값|설명|  
 |-----------|-----------------|  
 |`S_OK`|메서드가 성공했으며|  
-|`E_FAIL`|메서드는 문자를 추가할 수 없습니다.|  
+|`E_FAIL`|메서드가 문자를 추가할 수 없습니다.|  
   
 ## <a name="remarks"></a>설명  
- 이 메서드는 생성 `IDebugDocumentTextEvents` 알림입니다.  
+ 이 메서드는 생성 `IDebugDocumentTextEvents` 알림.  
   
 > [!NOTE]
->  이 메서드를 호출 하는 경우 `IDebugDocumentHelper::AddDeferredText` 가 호출 된 `E_FAIL` 반환 됩니다.  
+>  이 메서드가 이후에 호출 하는 경우 `IDebugDocumentHelper::AddDeferredText` 가 호출 된 `E_FAIL` 반환 됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugDocumentHelper 인터페이스](../../winscript/reference/idebugdocumenthelper-interface.md)   
- [IDebugDocumentHelper::AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
+ [Idebugdocumenthelper:: Adddeferredtext](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
  [IDebugDocumentTextEvents 인터페이스](../../winscript/reference/idebugdocumenttextevents-interface.md)

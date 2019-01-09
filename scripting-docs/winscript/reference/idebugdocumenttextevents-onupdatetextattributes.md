@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1ea7caa1c1632e1a85e12010ec39593b8e0a6d63
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2c2e5624e7cbefdca929a11b75f0273337fab30c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727353"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097164"
 ---
 # <a name="idebugdocumenttexteventsonupdatetextattributes"></a>IDebugDocumentTextEvents::onUpdateTextAttributes
-기본 문자 위치 범위와 연관 된 텍스트 특성 변경 되었다는 것을 나타냅니다.  
+기본 문자 위치 범위의 연관 된 텍스트 특성 변경 되었다는 것을 나타냅니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT onUpdateTextAttributes(  
    ULONG  cCharacterPosition,  
    ULONG  cNumToUpdate  
@@ -39,7 +39,7 @@ HRESULT onUpdateTextAttributes(
   
 #### <a name="parameters"></a>매개 변수  
  `cCharacterPosition`  
- [in] 특성이 변경 된 첫 번째 문자의 문자 위치입니다.  
+ [in] 특성 변경 된 첫 번째 문자의 문자 위치입니다.  
   
  `cNumToUpdate`  
  [in] 범위에 있는 문자의 수입니다.  
@@ -52,7 +52,7 @@ HRESULT onUpdateTextAttributes(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 이 메서드는 기본 문자 위치 범위와 연관 된 텍스트 특성 변경 되었다는 나타냅니다.  
+ 이 메서드는 기본 문자 위치 범위와 연결 된 텍스트 특성을 변경한 나타냅니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugDocumentTextEvents 인터페이스](../../winscript/reference/idebugdocumenttextevents-interface.md)

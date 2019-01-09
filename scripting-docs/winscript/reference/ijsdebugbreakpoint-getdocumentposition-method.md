@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3c33751b0173626814f042fdc54a7d496b644573
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2d92a58dabe76e391d55996e511409fb63c9d671
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727613"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097671"
 ---
 # <a name="ijsdebugbreakpointgetdocumentposition-method"></a>IJsDebugBreakPoint::GetDocumentPosition 메서드
 중단점이 바인딩된 문의 위치를 반환 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetDocumentPosition(  
    UINT64 *pDocumentId,  
    DWORD *pCharacterOffset,  
@@ -38,13 +38,13 @@ HRESULT GetDocumentPosition(
   
 #### <a name="parameters"></a>매개 변수  
  `pDocumentId`  
- [out] 소스 문서 (포인터는 IDebugDocumentText에)에 대 한 고유 ID입니다.  
+ [out] 원본 문서 (IDebugDocumentText에 대 한 포인터)에 대 한 고유 ID입니다.  
   
  `pCharacterOffset`  
- [out] 스크립트의 시작 부분부터 0 기반 문자 오프셋입니다.  
+ [out] 스크립트의 시작 부분에서 0부터 시작 문자 오프셋입니다.  
   
  `pStatementCharCount`  
- [out] 시작 된 현재 문의 길이 * pCharacterOffset 문자 수입니다.  
+ [out] 시작 하는 현재 문의 길이 * pCharacterOffset 문자입니다.  
   
 ## <a name="return-value"></a>반환 값  
   

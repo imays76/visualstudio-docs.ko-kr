@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b6ce67df5dd55bd8c1ae55bb19fe2a19aed9e40f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6aebe983c33416d1c3d12d18c272fd1e4de27467
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727113"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093108"
 ---
 # <a name="idebugexpressiongetresultasdebugproperty"></a>IDebugExpression::GetResultAsDebugProperty
-디버그 속성 및 작업의 반환 값으로 식 평가의 결과 반환합니다.  
+디버그 속성 및 작업의 반환 값 식 평가의 결과 반환합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetResultAsDebugProperty(  
    HRESULT*          phrResult,  
    IDebugProperty**  ppdp  
@@ -50,12 +50,12 @@ HRESULT GetResultAsDebugProperty(
 |값|설명|  
 |-----------|-----------------|  
 |`S_OK`|메서드가 성공했으며|  
-|`E_PENDING`|작업은 여전히 보류 중입니다.|  
+|`E_PENDING`|작업이 여전히 보류 중입니다.|  
   
 ## <a name="remarks"></a>설명  
- 변수로 식 평가의 결과 반환 하는이 메서드는 `IDebugProperty` 및 작업의 `HRESULT`합니다.  
+ 이 메서드가 반환으로 식 평가의 결과 `IDebugProperty` 및 작업의 `HRESULT`합니다.  
   
- 이 메서드가 반환 `S_OK` 및 `phrResult` 반환 `E_ABORT` 경우 `Abort` 작업을 중단 합니다.  
+ 이 메서드는 반환 `S_OK` 하 고 `phrResult` 반환 `E_ABORT` 경우 `Abort` 작업을 중단 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugExpression 인터페이스](../../winscript/reference/idebugexpression-interface.md)   

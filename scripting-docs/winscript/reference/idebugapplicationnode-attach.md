@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 393186330979d464fe54bde339806a5d8335a859
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 49df95e2c5298fc9bb7025982e75a90548d9613f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725933"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094954"
 ---
 # <a name="idebugapplicationnodeattach"></a>IDebugApplicationNode::Attach
-지정 된 프로젝트 트리를이 응용 프로그램 노드를 추가합니다.  
+지정한 프로젝트 트리에이 응용 프로그램 노드를 추가합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT Attach(  
    IDebugApplicationNode*  pdanParent  
 );  
@@ -38,7 +38,7 @@ HRESULT Attach(
   
 #### <a name="parameters"></a>매개 변수  
  `pdanParent`  
- [in] 여기서이 응용 프로그램 노드를 추가 해야 하는 프로젝트 트리 합니다.  
+ [in] 이 응용 프로그램 노드를 추가 해야 하는 위치는 프로젝트 트리.  
   
 ## <a name="return-value"></a>반환 값  
  이 메서드는 `HRESULT`를 반환합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
@@ -48,7 +48,7 @@ HRESULT Attach(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 이 메서드는 프로젝트에이 응용 프로그램 노드를 추가 합니다. 트리를 사용 하 여 `pdanParent` 부모로 합니다. 경우 `pdanParent` 은 `NULL`, 최상위 노드로 사용할이 응용 프로그램 노드.  
+ 이 메서드는 프로젝트에이 응용 프로그램 노드를 추가 합니다. 트리를 사용 하 여 `pdanParent` 부모로 합니다. 하는 경우 `pdanParent` 는 `NULL`,이 응용 프로그램 노드는 최상위 노드가 됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugApplicationNode::Detach](../../winscript/reference/idebugapplicationnode-detach.md)   

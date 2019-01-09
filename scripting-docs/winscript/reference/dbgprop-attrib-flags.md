@@ -1,5 +1,5 @@
 ---
-title: DBGPROP_ATTRIB_FLAGS | Microsoft 문서
+title: DBGPROP_ATTRIB_FLAGS | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -20,19 +20,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 831f12d11515e6796941b64e114bdc084309b87d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cb9b6585d1bf17e6c259b8507c74ab263d42aca4
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862413"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096150"
 ---
 # <a name="dbgpropattribflags"></a>DBGPROP_ATTRIB_FLAGS
 `IDebugProperty`의 여러 특성에 대해 설명합니다. `DebugPropertyInfo` 구조체의 멤버입니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 enum {  
 DBGPROP_ATTRIB_NO_ATTRIB  =0x00000000,  
    DBGPROP_ATTRIB_VALUE_IS_INVALID  =0x00000008,  

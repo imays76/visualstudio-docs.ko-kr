@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 909c431a389a2589d48b6228534b16675ea41383
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 55b3518b6d73793df712ed9deccb5e27c320a9d6
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726133"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097151"
 ---
 # <a name="idebugdocumenthostgetfilename"></a>IDebugDocumentHost::GetFileName
 경로 정보 없이 문서의 이름을 반환합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetFileName(  
    BSTR*  pbstrShortName  
 );  
@@ -48,7 +48,7 @@ HRESULT GetFileName(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 이 메서드는 경로 정보 없이 문서의 약식 이름을 반환합니다. 약식 이름을 일반적으로 상황에서 사용 됩니다와 같은 **다른 이름으로 저장...**  대화 상자.  
+ 이 메서드는 경로 정보 없이 문서의 약식 이름을 반환합니다. 약식 이름은 일반적으로 상황에서와 같은 **다른 이름으로 저장 하는 중...**  대화 상자.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugDocumentHost 인터페이스](../../winscript/reference/idebugdocumenthost-interface.md)

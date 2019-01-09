@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 38e826048e85456ca63e069de67701b1fc3e9f04
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 574af7823add67a00fc8add922b5e352fa1b369c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727453"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091925"
 ---
 # <a name="ijsdebugframeevaluate-method"></a>IJsDebugFrame::Evaluate 메서드
-이 스택 프레임의 컨텍스트에서 식을 평가 합니다.  
+이 스택 프레임의 컨텍스트에서 식을 계산 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT Evaluate(  
    LPCOLESTR pExpressionText,  
    IJsDebugProperty **ppDebugProperty,  
@@ -44,12 +44,12 @@ HRESULT Evaluate(
  [out] 속성 브라우저를 나타내는 개체입니다.  
   
  `pError`  
- [out] 오류가 발생 한 경우 오류 메시지입니다.  
+ [out] 오류가 발생 하는 경우 오류 메시지입니다.  
   
 ## <a name="return-value"></a>반환 값  
   
 ## <a name="remarks"></a>설명  
- 다음 반환: S_OK: 평가 성공 * ppDebugProperty 평가 결과 포함 합니다. S_FALSE: 평가 오류를 throw 합니다 (또는 평가 작업이 지원 되지 않습니다) \*pError 오류 메시지를 포함 합니다.  
+ 다음을 반환합니다. S_OK: 평가 성공, * ppDebugProperty는 평가 결과 포함 합니다. S_FALSE: 평가 오류를 throw 합니다 (또는 평가 작업이 지원 되지 않습니다), \*pError는 오류 메시지를 포함 합니다.  
   
 ## <a name="requirements"></a>요구 사항  
  **헤더:** jscript9diag.h  

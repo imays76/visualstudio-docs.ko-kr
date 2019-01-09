@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1c840dee7774ce5f056808daf98c448eac73ceb0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fa0c837be9a98829551b9c7820faf154779479e4
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727563"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096956"
 ---
 # <a name="idisperrorgetdescription"></a>IDispError::GetDescription
 오류에 대 한 텍스트 설명을 반환합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetDescription(  
    BSTR*  pbstrDescription  
 );  
@@ -38,7 +38,7 @@ HRESULT GetDescription(
   
 #### <a name="parameters"></a>매개 변수  
  `pbstrDescription`  
- [out] 오류에 대 한 간략 한 설명을 포함 하는 문자열입니다.  
+ [out] 오류에 대 한 간략 한 설명이 포함 된 문자열입니다.  
   
 ## <a name="return-value"></a>반환 값  
  이 메서드는 `HRESULT`를 반환합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
@@ -48,7 +48,7 @@ HRESULT GetDescription(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 에 전달 된 로캘 식별자 (LCID)로 지정 된 언어에는 텍스트가 반환 `IDispatchEx::InvokeEx` 에서 오류가 발생 하는 메서드에 대해 합니다.  
+ 에 전달 된 로캘 식별자 (LCID) 하 여 지정 된 언어로 된 텍스트가 반환 됩니다 `IDispatchEx::InvokeEx` 오류가 발생 하는 메서드에 대 한 합니다.  
   
 > [!NOTE]
 >  이 메서드가 구현되지 않았습니다.  
