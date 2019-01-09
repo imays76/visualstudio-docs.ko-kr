@@ -1,8 +1,6 @@
 ---
 title: 동시성 시각화 도우미 표식 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.markersui
@@ -12,18 +10,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cf07f939a9ce15d2ebca7afb0ee37695fa5fbf98
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 1eaccebb5b2a70be545b44615c38a9bd95ce610b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220601"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885707"
 ---
 # <a name="concurrency-visualizer-markers"></a>동시성 시각화 도우미 표식
-동시성 시각화 도우미에서 표식은 응용 프로그램의 이벤트를 나타내는 아이콘입니다.  일반적으로 응용 프로그램은 응용 프로그램에서의 단계 또는 발생 작업을 지정하기 위해 이러한 이벤트를 생성합니다.  이벤트는 응용 프로그램에서 생성되거나 응용 프로그램에서 사용되는 라이브러리 및 런타임에 의해 생성될 수 있습니다.  
+동시성 시각화 도우미에서 표식은 응용 프로그램의 이벤트를 나타내는 아이콘입니다.  일반적으로 애플리케이션은 애플리케이션에서의 단계 또는 발생 작업을 지정하기 위해 이러한 이벤트를 생성합니다.  이벤트는 응용 프로그램에서 생성되거나 응용 프로그램에서 사용되는 라이브러리 및 런타임에 의해 생성될 수 있습니다.  
   
 ## <a name="kinds-of-markers"></a>표식 종류  
- 동시성 시각화 도우미는 응용 프로그램 이벤트를 나타내기 위해 플래그, 메시지 및 범위의 세 가지 표식을 사용합니다.  
+ 동시성 시각화 도우미는 애플리케이션 이벤트를 나타내기 위해 플래그, 메시지 및 범위의 세 가지 표식을 사용합니다.  
   
 1.  *플래그*를 사용하여 앱에서 특정 시점을 나타낼 수 있습니다.  예를 들어 플래그를 사용하면 변수 값이 특정 임계값에 도달한 시점 또는 예외가 throw된 시점을 나타낼 수 있습니다.  
   

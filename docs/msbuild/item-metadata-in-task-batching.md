@@ -1,8 +1,6 @@
 ---
 title: 작업 일괄 처리의 항목 메타데이터 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - batching [MSBuild]
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1804bde2c3da7f83658784ca1520791a930f901
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 38f8691cc7b1b102b0d1747d8bd9a94411608f22
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177197"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891416"
 ---
 # <a name="item-metadata-in-task-batching"></a>작업 일괄 처리의 항목 메타데이터
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에는 항목 목록을 항목 메타데이터에 따라 여러 다른 범주 또는 일괄 처리로 나누고 각 일괄 처리를 사용하여 한 번에 하나의 작업을 실행하는 기능이 있습니다. 어떤 항목이 어떤 일괄 처리를 통해 전달될지 정확히 이해하는 것은 어려울 수 있습니다. 이 항목에서는 일괄 처리와 관련된 다음과 같은 일반적인 시나리오를 다룹니다.  
@@ -82,7 +80,7 @@ ms.locfileid: "39177197"
  `Number: 3 -- Items in ExampColl: Item3;Item6`  
   
 ## <a name="divide-several-item-lists-into-batches"></a>여러 항목 목록을 일괄 처리로 나누기  
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]는 여러 항목 목록을 동일한 메타데이터에 따라 일괄 처리로 나눌 수 있습니다. 이렇게 하면 쉽게 여러 다른 항목 목록을 일괄 처리로 나누어 여러 어셈블리를 빌드할 수 있습니다. 예를 들어 *.cs* 파일의 항목 목록을 응용 프로그램 일괄 처리 및 어셈블리 일괄 처리로 나누고, 리소스 파일의 항목 목록을 응용 프로그램 일괄 처리 및 어셈블리 일괄 처리로 나눌 수 있습니다. 그런 후 일괄 처리를 사용하여 이러한 항목 목록을 하나의 작업에 전달하고 응용 프로그램 및 어셈블리를 둘 다 빌드할 수 있습니다.  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]는 여러 항목 목록을 동일한 메타데이터에 따라 일괄 처리로 나눌 수 있습니다. 이렇게 하면 쉽게 여러 다른 항목 목록을 일괄 처리로 나누어 여러 어셈블리를 빌드할 수 있습니다. 예를 들어 *.cs* 파일의 항목 목록을 애플리케이션 일괄 처리 및 어셈블리 일괄 처리로 나누고, 리소스 파일의 항목 목록을 애플리케이션 일괄 처리 및 어셈블리 일괄 처리로 나눌 수 있습니다. 그런 후 일괄 처리를 사용하여 이러한 항목 목록을 하나의 작업에 전달하고 애플리케이션 및 어셈블리를 둘 다 빌드할 수 있습니다.  
   
 > [!NOTE]
 >  작업에 전달되는 항목 목록에 참조된 메타데이터가 있는 항목이 없으면 해당 항목 목록의 모든 항목이 모든 일괄 처리로 전달됩니다.  

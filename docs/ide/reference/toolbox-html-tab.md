@@ -2,7 +2,6 @@
 title: 도구 상자, HTML 탭
 ms.date: 06/21/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vs.toolbox.html
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 90dfae7e891c805a785db8bba00d3c75d2a84bf3
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: e2f51ce6b1aee945bb368f3206d136bf7f4d1565
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384164"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53862928"
 ---
 # <a name="toolbox-html-tab"></a>도구 상자, HTML 탭
 
@@ -117,7 +116,7 @@ ms.locfileid: "44384164"
 ```
 
 > [!IMPORTANT]
-> 응용 프로그램에서 사용자 이름과 암호를 전송할 경우 SSL(Secure Sockets Layer)을 사용하여 전송을 암호화하도록 웹 사이트를 구성해야 합니다. 자세한 내용은 [연결 보안](/previous-versions/tn-archive/bb418917(v=technet.10))을 참조하세요. 또한 모든 사용자 입력의 유효성을 검사하는 것이 좋습니다. 자세한 내용은 [Validating User Input in ASP.NET Web Pages (Razor) Sites](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites)(ASP.NET 웹 페이지(Razor) 사이트에서 사용자 입력 유효성 검사)를 참조하세요.
+> 애플리케이션에서 사용자 이름과 암호를 전송할 경우 SSL(Secure Sockets Layer)을 사용하여 전송을 암호화하도록 웹 사이트를 구성해야 합니다. 자세한 내용은 [연결 보안](/previous-versions/tn-archive/bb418917(v=technet.10))을 참조하세요. 또한 모든 사용자 입력의 유효성을 검사하는 것이 좋습니다. 자세한 내용은 [Validating User Input in ASP.NET Web Pages (Razor) Sites](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites)(ASP.NET 웹 페이지(Razor) 사이트에서 사용자 입력 유효성 검사)를 참조하세요.
 
 **Input (Check box)**
 

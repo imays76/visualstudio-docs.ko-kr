@@ -1,8 +1,6 @@
 ---
 title: Start | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: b85d0fe9-f67a-4b7c-8d48-7eecf3f2dfe9
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbecc61e5203495e33aa4417e954607d8cdf6be8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d82471258807563e8607146815f0034902ed3863
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669601"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896541"
 ---
 # <a name="start"></a>시작
 **Start** 옵션은 지정된 프로파일링 방법으로 프로파일러를 초기화하는 *VSPerfCmd.exe* 옵션입니다.  
@@ -65,7 +63,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
  **Shutdown**[**:**`Timeout`]  
  프로파일러를 해제합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 *VSPerfCmd.exe* **Start** 옵션을 사용하여 프로파일러를 초기화하는 방법을 보여 줍니다.  
   
 ```cmd  
@@ -75,6 +73,6 @@ VSPerfCmd.exe /Launch:TestApp.exe
   
 ## <a name="see-also"></a>참고 항목  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [독립 실행형 응용 프로그램 프로파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [ASP.NET 웹 응용 프로그램 프로파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [독립 실행형 애플리케이션 프로파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [ASP.NET 웹 애플리케이션 프로파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [서비스 프로파일링](../profiling/command-line-profiling-of-services.md)

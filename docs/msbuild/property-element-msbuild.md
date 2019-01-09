@@ -1,8 +1,6 @@
 ---
 title: Property 요소(MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 03/13/2017
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d44b88f5d97fb8c70391506dc2daab99482d6a44
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 739e39bd09e8387904570d3690e7c9ff1447fae3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154982"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864445"
 ---
 # <a name="property-element-msbuild"></a>Property 요소(MSBuild)
 사용자 정의 속성 이름 및 값을 포함합니다. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트에서 사용되는 모든 속성은 `PropertyGroup` 요소의 자식으로 지정해야 합니다.  
@@ -62,10 +60,10 @@ ms.locfileid: "39154982"
 
  이 텍스트는 속성값을 지정하며 XML을 포함할 수 있습니다.  
 
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  속성 이름에는 ASCII 문자만 사용할 수 있습니다. "`$(`" 및 "`)`" 사이에 속성 이름을 배치하여 프로젝트에서 속성값을 참조합니다. 예를 들어 `builddir` 속성 값이 `build`이면 `$(builddir)\classes`는 *build\classes*로 해석됩니다. 속성에 대한 자세한 내용은 [MSBuild 속성](../msbuild/msbuild-properties.md)을 참조하세요.  
 
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드는 `Version` 속성이 비어 있으면 `Optimization` 속성을 `false`로, `DefaultVersion` 속성을 `1.0`로 설정합니다.  
 
 ```xml  

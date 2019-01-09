@@ -2,7 +2,6 @@
 title: 고급 빌드 설정 대화 상자(C#)
 ms.date: 06/20/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - cs.AdvancedBuildSettings
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: cf4fd5b48dc3bfcfbfe1809eebe656a5b8f2079d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 83dc69bb3856a7fe98e35cf66b0a6325c97a0651
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928284"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930152"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>고급 빌드 설정 대화 상자(C#)
 
@@ -63,7 +62,7 @@ mscorlib.dll을 프로그램으로 가져와 전체 <xref:System> 네임스페�
 
 **디버그 정보**
 
-컴파일러에서 생성되는 디버깅 정보 형식을 지정합니다. 응용 프로그램의 디버그 성능을 구성하는 방법에 대한 자세한 내용은 [쉽게 디버깅할 수 있도록 이미지 만들기](/dotnet/framework/debug-trace-profile/making-an-image-easier-to-debug)를 참조하세요. 이 설정에는 다음과 같은 옵션이 있습니다.
+컴파일러에서 생성되는 디버깅 정보 형식을 지정합니다. 애플리케이션의 디버그 성능을 구성하는 방법에 대한 자세한 내용은 [쉽게 디버깅할 수 있도록 이미지 만들기](/dotnet/framework/debug-trace-profile/making-an-image-easier-to-debug)를 참조하세요. 이 설정에는 다음과 같은 옵션이 있습니다.
 
 - **none**
 

@@ -10,13 +10,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 6c82d0898f53bbe9c02126f7379d2d3a0a96fdbf
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 43975e57e37a16522b483990c83d0db22a6eb27d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054586"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896073"
 ---
 # <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>방법: 부하 테스트 실행 설정에 대한 타이밍 정보 스토리지 속성 지정
 

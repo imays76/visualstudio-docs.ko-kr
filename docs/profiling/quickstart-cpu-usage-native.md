@@ -1,9 +1,7 @@
 ---
 title: CPU 사용량 데이터 분석(C++)
 description: CPU 사용량 진단 도구를 사용하여 C++에서 앱 성능 측정
-ms.custom: ''
 ms.date: 08/06/2018
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 f1_keywords:
 - ''
@@ -15,18 +13,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c4cf51a4961d6b9139d4f8fdbfd6c5df2ab0052c
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 38bacd51727ea2091e23adb606ff65de901f479a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42626679"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883174"
 ---
-# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>빠른 시작: Visual Studio에서 CPU 사용량 데이터 분석(C++)
+# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>빠른 시작: Visual Studio에서 CPU 사용량 데이터(C++) 분석
 
-Visual Studio는 응용 프로그램에서 성능 문제를 분석할 수 있도록 여러 강력한 기능을 제공합니다. 이 항목에는 기본 기능 중 일부에 대해 알아보는 빠른 방법을 제공합니다. 여기에서는 높은 CPU 사용량으로 인한 성능 병목 상태를 식별하는 도구를 살펴봅니다. 진단 도구는 ASP.NET을 포함한 Visual Studio의 .NET 개발 및 네이티브/C++ 개발에 사용할 수 있습니다.
+Visual Studio는 애플리케이션에서 성능 문제를 분석할 수 있도록 여러 강력한 기능을 제공합니다. 이 항목에는 기본 기능 중 일부에 대해 알아보는 빠른 방법을 제공합니다. 여기에서는 높은 CPU 사용량으로 인한 성능 병목 상태를 식별하는 도구를 살펴봅니다. 진단 도구는 ASP.NET을 포함한 Visual Studio의 .NET 개발 및 네이티브/C++ 개발에 사용할 수 있습니다.
 
-진단 허브에서는 진단 세션을 실행하고 관리할 수 있는 여러 가지 다른 옵션을 제공합니다. 여기서 설명한 **CPU 사용량** 도구로 필요한 데이터를 얻지 못할 경우 [다른 프로파일링 도구](../profiling/profiling-feature-tour.md)로 유용한 다른 종류의 정보를 얻을 수 있습니다. 많은 경우 메모리, UI 렌더링 또는 네트워크 요청 시간 등 CPU가 아닌 곳에서 응용 프로그램의 성능 병목 현상이 발생할 수 있습니다. 진단 허브는 이러한 종류의 데이터를 기록 및 분석하기 위한 다른 여러 옵션을 제공합니다.
+진단 허브에서는 진단 세션을 실행하고 관리할 수 있는 여러 가지 다른 옵션을 제공합니다. 여기서 설명한 **CPU 사용량** 도구로 필요한 데이터를 얻지 못할 경우 [다른 프로파일링 도구](../profiling/profiling-feature-tour.md)로 유용한 다른 종류의 정보를 얻을 수 있습니다. 많은 경우 메모리, UI 렌더링 또는 네트워크 요청 시간 등 CPU가 아닌 곳에서 애플리케이션의 성능 병목 현상이 발생할 수 있습니다. 진단 허브는 이러한 종류의 데이터를 기록 및 분석하기 위한 다른 여러 옵션을 제공합니다.
 
 Windows 8 이상에서는 디버거(**진단 도구** 창)를 포함한 프로파일링 도구를 실행해야 합니다. Windows 7 이상에서 사후 평가 도구인 [성능 프로파일러](../profiling/profiling-feature-tour.md)를 사용할 수 있습니다.
 
@@ -34,9 +32,9 @@ Windows 8 이상에서는 디버거(**진단 도구** 창)를 포함한 프로�
 
 1. Visual Studio에서 **파일** > **새 프로젝트**를 선택합니다.
 
-2. **Visual C++** 에서 **Windows 데스크톱**을 선택한 다음, 가운데 창에서 **Windows 콘솔 응용 프로그램**을 선택합니다.
+2. **Visual C++** 에서 **Windows 데스크톱**을 선택한 다음, 가운데 창에서 **Windows 콘솔 애플리케이션**을 선택합니다.
 
-    **Windows 콘솔 응용 프로그램** 프로젝트 템플릿이 표시되지 않으면 **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual Studio 설치 관리자 열기** 링크를 클릭합니다. Visual Studio 설치 관리자가 시작됩니다. **C++를 사용한 데스크톱 개발** 워크로드를 선택한 다음, **수정** 단추를 선택합니다.
+    **Windows 콘솔 애플리케이션** 프로젝트 템플릿이 표시되지 않으면 **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual Studio 설치 관리자 열기** 링크를 클릭합니다. Visual Studio 설치 관리자가 시작됩니다. **C++를 사용한 데스크톱 개발** 워크로드를 선택한 다음, **수정** 단추를 선택합니다.
 
 3. **Diagnostics_Get_Started_Native** 같은 이름을 입력하고 **확인**을 클릭합니다.
 
@@ -142,11 +140,11 @@ Windows 8 이상에서는 디버거(**진단 도구** 창)를 포함한 프로�
 
      데이터 수집을 사용하는 경우 기록 단추에 빨간색 원이 표시됩니다.
 
-     **CPU 프로필 기록**을 선택하면 Visual Studio가 함수와 함수 실행 소요 시간을 기록하기 시작하며 샘플링 세션의 특정 부분에 초점을 맞출 수 있는 타임라인 그래프도 제공합니다. 응용 프로그램이 중단점에서 중단되었을 때 이 수집 데이터를 보기만 하면 됩니다.
+     **CPU 프로필 기록**을 선택하면 Visual Studio가 함수와 함수 실행 소요 시간을 기록하기 시작하며 샘플링 세션의 특정 부분에 초점을 맞출 수 있는 타임라인 그래프도 제공합니다. 애플리케이션이 중단점에서 중단되었을 때 이 수집 데이터를 보기만 하면 됩니다.
 
 6.  두 번째 중단점까지 앱을 실행하려면 F5 키를 누릅니다.
 
-     이제 구체적으로 두 개의 중단점 사이에서 실행되는 코드 영역에 대한 응용 프로그램의 성능 데이터가 제공됩니다.
+     이제 구체적으로 두 개의 중단점 사이에서 실행되는 코드 영역에 대한 애플리케이션의 성능 데이터가 제공됩니다.
 
      프로파일러는 스레드 데이터 준비를 시작합니다. 끝날 때까지 기다립니다.
   

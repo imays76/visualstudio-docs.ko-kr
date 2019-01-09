@@ -2,19 +2,18 @@
 title: 테스트 컨트롤러 및 테스트 에이전트 관리
 ms.date: 09/18/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccc3a6342857d1f228118ef7b26601f3787908e4
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b687504ae69d7b133aba107c7705eeb50f6f8953
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059498"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891403"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>테스트 컨트롤러 및 테스트 에이전트 관리
 
@@ -118,7 +117,7 @@ Microsoft Test Manager를 사용하여 랩 환경에서 테스트를 실행하�
 
 |상태|설명|
 |-|-----------------|
-|테스트를 실행하는 중|테스트를 실행하고 있습니다.|
+|테스트를 실행하는 중|테스트 실행|
 |준비됨|테스트를 실행하거나 데이터 및 진단 정보를 수집하는 데 사용할 수 있습니다.|
 |오프라인|테스트를 실행하거나 데이터 및 진단 정보를 수집하는 데 사용할 수 없습니다.|
 |연결 끊김|테스트 에이전트가 시작되지 않았습니다.|

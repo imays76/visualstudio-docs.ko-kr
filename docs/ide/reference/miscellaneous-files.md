@@ -2,7 +2,6 @@
 title: 기타 파일
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.newfile
@@ -22,12 +21,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0241f1e918b4c0022106059b0466a15559f2e84
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 0d764cea7992a9833bd8bddde8432388aebbc994
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747735"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867162"
 ---
 # <a name="miscellaneous-files"></a>기타 파일
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 편집기를 사용하여 프로젝트 또는 솔루션의 파일에 대해 개별적으로 작업할 수 있습니다. 솔루션이 열려 있는 동안 솔루션 또는 프로젝트에 추가하지 않고 파일을 열고 수정할 수 있습니다. 컨테이너에서 개별적으로 작업하려는 파일을 기타 파일이라고 합니다. 기타 파일은 솔루션 및 프로젝트 외부에 있고, 빌드에 포함되지 않으며, 소스 제어 솔루션에 포함할 수 없습니다.

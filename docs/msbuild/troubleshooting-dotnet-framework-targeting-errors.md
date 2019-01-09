@@ -1,8 +1,6 @@
 ---
 title: .NET Framework 대상 지정 오류 문제 해결 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: troubleshooting
 f1_keywords:
 - vs.FrameworkTargetingErrors
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e97a5d77fe5305e4cfe879ea82b9397e5e8babef
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 44be4be33f0aa951b00f9237903ddcbf2c415309
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739904"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893612"
 ---
 # <a name="troubleshoot-net-framework-targeting-errors"></a>.NET Framework 대상 지정 오류 문제 해결
 이 항목에서는 참조 문제로 인해 발생할 수 있는 MSBuild 오류와 이러한 문제를 해결하는 방법을 설명합니다.

@@ -3,7 +3,6 @@ title: Dotfuscator CE(Community Edition) 업그레이드
 ms.date: 02/08/2017
 ms.devlang: dotnet
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 keywords: Dotfuscator, Dotfuscator CE, PreEmptive, PreEmptive Solutions, PreEmptive Protection, 보호, community edition, obfuscation, .NET, 무료, Visual Studio 2017, 업그레이드, 명령줄
 helpviewer_keywords:
@@ -25,16 +24,16 @@ ms.assetid: c7c60904-27f9-4f1f-b79b-ddf65041b810
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f1158b0e5f438e49acafad79af1b33ec43690e9a
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: e7c4c6069c68708d869d58dfe60aa226983afcf2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468545"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871874"
 ---
 # <a name="upgrade-dotfuscator-community-edition-ce"></a>Dotfuscator CE(Community Edition) 업그레이드
 
-Dotfuscator CE(Dotfuscator Community Edition)는 Microsoft Visual Studio를 사용하는 모든 개발자에게 즉시 다양한 응용 프로그램 보호 및 강화 기능을 제공합니다.
+Dotfuscator CE(Dotfuscator Community Edition)는 Microsoft Visual Studio를 사용하는 모든 개발자에게 즉시 다양한 애플리케이션 보호 및 강화 기능을 제공합니다.
 그러나 Dotfuscator 버전을 업그레이드하는 사용자에게는 더 많은 기능이 제공됩니다.
 
 ## <a name="registering-dotfuscator-ce"></a>Dotfuscator CE 등록
@@ -55,16 +54,16 @@ Dotfuscator Community Edition은 기본적인 보호를 제공하지만 **_PreEm
   * 디컴파일된 코드를 단순 검색하지 못하도록 [중요한 문자열을 가리는][string-encryption] 기능.
   * 권한이 없는 소프트웨어 누수의 원인을 파악할 수 있도록 [소유권 및 배포 문자열을 어셈블리에 신중하게 포함][watermarking]하는 기능.
   * 중요한 부분이 분리되지 않아 공격자가 코드 요소의 역할을 확인하기가 훨씬 더 어렵도록 [어셈블리 여러 개를 하나로 결합][linking]하는 기능.
-  * 전달되는 중요한 코드의 양을 줄이도록 [자동으로 응용 프로그램에서 사용되지 않는 코드를 제거][pruning]하는 기능.
-* *응용 프로그램 무결성 보호*
-  * 추가적인 [응용 프로그램 방어 동작][check-actions].
-  * 응용 프로그램의 수명 종료 기한 전에 경고 기간을 제공하는 기능.
-  * 수명 종료 경고 기간 중에 또는 기한 후에 응용 프로그램 코드를 알리는 기능.
+  * 전달되는 중요한 코드의 양을 줄이도록 [자동으로 애플리케이션에서 사용되지 않는 코드를 제거][pruning]하는 기능.
+* *애플리케이션 무결성 보호*
+  * 추가적인 [애플리케이션 방어 동작][check-actions].
+  * 애플리케이션의 수명 종료 기한 전에 경고 기간을 제공하는 기능.
+  * 수명 종료 경고 기간 중에 또는 기한 후에 애플리케이션 코드를 알리는 기능.
 
 Dotfuscator Professional은 산업 표준 [.NET Obfuscator][net-obfuscator]이고 지속적인 지원, 유지 관리 및 제품 업데이트가 필요한 엔터프라이즈 개발자에게 적합합니다.
 또한 Dotfuscator Professional은 Visual Studio와 더 밀접하게 통합되고 상업적으로 사용이 허가됩니다.
 
-Dotfuscator Professional의 고급 응용 프로그램 보호 기능에 대한 자세한 내용은 PreEmptive Solutions의 [Dotfuscator 개요 페이지][product-about]를 방문해서 [Community Edition과 비교][product-compare]해 보세요.
+Dotfuscator Professional의 고급 애플리케이션 보호 기능에 대한 자세한 내용은 PreEmptive Solutions의 [Dotfuscator 개요 페이지][product-about]를 방문해서 [Community Edition과 비교][product-compare]해 보세요.
 [preemptive.com][eval]에서 전체 기능이 지원되는 평가판을 사용할 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목

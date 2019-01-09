@@ -1,8 +1,6 @@
 ---
 title: UsingTask 요소(MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 03/13/2017
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#UsingTask
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28dba0a2b386cef00daf4827609ce9762c667067
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7e510269f4bdc7171231220b6a83f9da4cb4739c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892963"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868094"
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask 요소(MSBuild)
 [Task](../msbuild/task-element-msbuild.md) 요소에서 참조하는 작업을 작업의 구현이 포함된 어셈블리에 매핑합니다.  
@@ -68,7 +66,7 @@ ms.locfileid: "49892963"
 | - | - |
 | [프로젝트](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일의 필수 루트 요소입니다. |
 
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  환경 변수, 명령줄 속성, 프로젝트 수준 속성 및 프로젝트 수준 항목은 직접 또는 가져온 프로젝트 파일을 통해 프로젝트 파일에 포함된 `UsingTask` 요소에서 참조할 수 있습니다. 자세한 내용은 [작업](../msbuild/msbuild-tasks.md)을 참조하세요.  
 
 > [!NOTE]
@@ -76,7 +74,7 @@ ms.locfileid: "49892963"
 
  MSBuild 4.0에서는 작업 사용을 *.overridetask* 파일에서 로드할 수 있습니다.  
 
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 `AssemblyName` 특성에서 `UsingTask` 요소를 사용하는 방법을 보여 줍니다.  
 
 ```xml  
@@ -92,7 +90,7 @@ ms.locfileid: "49892963"
 </UsingTask>  
 ```  
 
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 `AssemblyFile` 특성에서 `UsingTask` 요소를 사용하는 방법을 보여 줍니다.  
 
 ```xml  
