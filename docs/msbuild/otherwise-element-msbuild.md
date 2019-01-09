@@ -1,8 +1,6 @@
 ---
 title: Otherwise 요소(MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 03/13/2017
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Otherwise
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f4f886e6c6d1ec09700eefa3c7289c9cb918ecc
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: bb9f6056b83c7701e4d0e5e6eed72bbba1da778d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155050"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895794"
 ---
 # <a name="otherwise-element-msbuild"></a>Otherwise 요소(MSBuild)
 모든 `When` 요소가 `false`로 평가될 경우에만 실행할 코드 블록을 지정합니다.  
@@ -69,12 +67,12 @@ ms.locfileid: "39155050"
 |-------------|-----------------|  
 |[Choose](../msbuild/choose-element-msbuild.md)|자식 요소를 평가하여 실행할 코드의 한 섹션을 선택합니다.|  
 
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  `Choose` 요소에 `Otherwise` 요소가 1개만 있을 수 있으며 마지막 요소여야 합니다.  
 
  `Choose`, `When` 및 `Otherwise` 요소는 몇 가지 가능한 대안 중에서 실행할 코드의 한 섹션을 선택하는 방법을 제공하기 위해 함께 사용됩니다. 자세한 내용은 [조건부 구문](../msbuild/msbuild-conditional-constructs.md)을 참조하세요.  
 
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 프로젝트에서는 `Choose` 요소를 사용하여 설정할 `When` 요소의 속성 값 집합을 선택합니다. 두 `When` 요소의 `Condition` 특성이 모두 `false`로 평가되면 `Otherwise` 요소의 속성 값이 설정됩니다.  
 
 ```xml  

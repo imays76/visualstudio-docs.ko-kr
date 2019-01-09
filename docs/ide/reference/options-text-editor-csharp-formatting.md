@@ -2,7 +2,6 @@
 title: C# 편집기 서식 지정 옵션
 ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting.Spacing
@@ -20,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 542d14e5913b1537d5e5e6aabb7264cd15add793
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: b3c4aa17e31797c9c8bbfa1a931369f371977e26
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220523"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946411"
 ---
 # <a name="options-text-editor-c-code-style-formatting"></a>옵션, 텍스트 편집기, C#, 코드 스타일, 서식 지정
 
@@ -40,7 +39,7 @@ ms.locfileid: "50220523"
 |레이블|설명|
 |-----------|-----------------|
 |**입력할 때 서식 자동 지정**|이 옵션을 선택 취소하면 **입력 시 문 서식 지정;** 및 **입력 시 블록 서식 지정}** 옵션이 비활성화됩니다.|
-|**입력 시 문 서식 자동 지정;**|이 옵션을 선택하면 편집기에 대해 선택된 서식 옵션에 따라 완성 시 문에 서식이 지정됩니다.|
+| **입력 시 문 서식 자동 지정;**|이 옵션을 선택하면 편집기에 대해 선택된 서식 옵션에 따라 완성 시 문에 서식이 지정됩니다.|
 |**입력 시 블록 서식 자동 지정}**|이 옵션을 선택하면 코드 블록을 완료하면 바로 편집기에 대해 선택된 서식 옵션에 따라 코드 블록에 서식이 지정됩니다.|
 |**반환할 때 서식 자동 지정**|이 옵션을 선택하면 **Enter** 키를 누를 때 텍스트가 편집기에 대해 선택된 서식 옵션에 맞게 서식 지정됩니다.|
 |**붙여넣을 때 서식 자동 지정**|이 옵션을 선택하면 편집기에 대해 선택된 서식 옵션에 맞게 편집기에 붙여넣는 텍스트에 서식이 지정됩니다.|

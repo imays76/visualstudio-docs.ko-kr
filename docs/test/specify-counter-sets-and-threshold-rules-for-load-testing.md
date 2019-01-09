@@ -14,13 +14,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 3cbdd30022b521803662f18b8d3438c6b1ddb37c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 23c4997f6079a2b5f27a380afb4ef07b84c4fa61
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057420"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887067"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>부하 테스트에서 컴퓨터에 대한 카운터 집합 및 임계값 규칙 지정
 
@@ -31,7 +30,7 @@ ms.locfileid: "53057420"
 > [!NOTE]
 > 부하 테스트가 원격 컴퓨터에 분산된 경우 컨트롤러 및 에이전트 카운터가 컨트롤러 및 에이전트 카운터 집합에 매핑됩니다. 부하 테스트에서 원격 컴퓨터를 사용하는 방법에 대한 자세한 내용은 [테스트 컨트롤러 및 테스트 에이전트](configure-test-agents-and-controllers-for-load-tests.md)를 참조하세요.
 
-카운터 집합은 사용자가 지정하는 컴퓨터에서 수집됩니다. 부하 테스트 동안 사용되는 카운터 집합과 컴퓨터 간의 연결은 *카운터 집합 맵*입니다. 예를 들어, 테스트 중인 웹 서버에 ASP.NET, IIS 및 .NET 응용 프로그램 카운터 집합 매핑이 있을 수 있습니다.
+카운터 집합은 사용자가 지정하는 컴퓨터에서 수집됩니다. 부하 테스트 동안 사용되는 카운터 집합과 컴퓨터 간의 연결은 *카운터 집합 맵*입니다. 예를 들어, 테스트 중인 웹 서버에 ASP.NET, IIS 및 .NET 애플리케이션 카운터 집합 매핑이 있을 수 있습니다.
 
 기본적으로 성능 카운터는 컨트롤러와 에이전트에서 수집됩니다. 자세한 내용은 [테스트 컨트롤러 및 테스트 에이전트](configure-test-agents-and-controllers-for-load-tests.md)를 참조하세요.
 

@@ -2,7 +2,6 @@
 title: -Project(devenv.exe)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - /project Devenv switch
@@ -18,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b18e4715eb711160d0adcc95c6a19e4b90bcc94
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 2c73167c5529eda0f97f414e7c0e2d76083b7bb0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948220"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921616"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
 빌드, 정리, 다시 빌드 또는 배포하도록 솔루션 구성 내에서 단일 프로젝트를 식별합니다.
@@ -53,11 +52,11 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName [/project Pr
 
  `SolnConfigName`
 
- 필수. `SolutionName`으로 명명된 솔루션에 적용할 솔루션 구성의 이름입니다.
+ 필수 요소. `SolutionName`으로 명명된 솔루션에 적용할 솔루션 구성의 이름입니다.
 
  `SolutionName`
 
- 필수. 솔루션 파일의 전체 경로 및 이름입니다.
+ 필수 요소. 솔루션 파일의 전체 경로 및 이름입니다.
 
  /project `ProjName`
 
@@ -67,7 +66,7 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName [/project Pr
 
  선택 사항입니다. `/project`에 적용할 프로젝트 빌드 구성 이름입니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 -   `devenv /build`, /`clean`, `/rebuild` 또는 `/deploy` 명령의 일부로 사용해야 합니다.
 
@@ -75,7 +74,7 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName [/project Pr
 
 -   오류를 포함한 빌드에 대한 요약 정보는 **명령** 창 또는 `/out` 스위치로 지정된 로그 파일에 표시할 수 있습니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  이 예제에서는 `MySolution`의 `Debug` 솔루션 구성 내에 있는 `Debug` 프로젝트 빌드 구성을 사용하여 `CSharpConsoleApp` 프로젝트를 빌드합니다.
 
 ```cmd

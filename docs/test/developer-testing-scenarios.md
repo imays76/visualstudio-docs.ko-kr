@@ -2,7 +2,6 @@
 title: 개발자 테스트 도구
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit tests
@@ -11,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 396bbfdb915d0e3ecc31f516d60eab80cca6a421
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 46d2d41cd337ec2cbdd1fe44bde97db39b1b764e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295152"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930168"
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>개발자 테스트 도구, 시나리오 및 호환성
 
-유닛 테스트를 사용하여 코드 상태를 유지 관리합니다. Visual Studio는 개발자가 응용 프로그램을 테스트할 때 사용할 수 있는 다양하고 효과적인 도구와 기술을 제공합니다.
+유닛 테스트를 사용하여 코드 상태를 유지 관리합니다. Visual Studio는 개발자가 애플리케이션을 테스트할 때 사용할 수 있는 다양하고 효과적인 도구와 기술을 제공합니다.
 
 ## <a name="avoid-regressions-and-achieve-code-coverage-with-intellitest"></a>IntelliTest를 사용하여 재발 방지 및 코드 검사 수행
 
@@ -38,7 +37,7 @@ IntelliTest를 사용하여 검사를 개선하고 재발을 방지합니다. In
 
 ## <a name="user-interface-testing-with-coded-ui-and-selenium"></a>코딩된 UI 및 Selenium을 사용하여 사용자 인터페이스 테스트
 
-최고 수준 또는 커뮤니티 승인 UI 테스트를 사용하여 UI(사용자 인터페이스)를 테스트합니다. 코딩된 UI 테스트를 통해 완전 자동화된 테스트를 만들어 응용 프로그램 사용자 인터페이스 기능과 동작의 유효성을 검사할 수 있습니다. 코딩된 UI 테스트는 XAML 기반 UWP 앱, 브라우저 앱, SharePoint 앱을 포함한 다양한 기술에서 UI 테스트를 자동화할 수 있습니다.
+최고 수준 또는 커뮤니티 승인 UI 테스트를 사용하여 UI(사용자 인터페이스)를 테스트합니다. 코딩된 UI 테스트를 통해 완전 자동화된 테스트를 만들어 애플리케이션 사용자 인터페이스 기능과 동작의 유효성을 검사할 수 있습니다. 코딩된 UI 테스트는 XAML 기반 UWP 앱, 브라우저 앱, SharePoint 앱을 포함한 다양한 기술에서 UI 테스트를 자동화할 수 있습니다.
 
 최고 수준의 코딩된 UI 테스트 또는 Selenium을 사용한 제네릭 브라우저 기반 UI 테스트를 선택할지 여부와 관계없이 Visual Studio는 필요한 모든 도구를 제공합니다.
 
@@ -47,7 +46,7 @@ IntelliTest를 사용하여 검사를 개선하고 재발을 방지합니다. In
 * [UI 자동화를 사용하여 코드 테스트](use-ui-automation-to-test-your-code.md)
 * [코딩된 UI 테스트 만들기, 편집 및 유지 관리 시작](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 * [코딩된 UI 테스트를 사용하여 UWP 앱 테스트](test-uwp-app-with-coded-ui-test.md)
-* [코딩된 UI 테스트를 사용하여 SharePoint 응용 프로그램 테스트](testing-sharepoint-2010-applications-with-coded-ui-tests.md)
+* [코딩된 UI 테스트를 사용하여 SharePoint 애플리케이션 테스트](testing-sharepoint-2010-applications-with-coded-ui-tests.md)
 * [Visual Studio Enterprise의 코딩된 UI 테스트 소개(랩)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Introduction%20to%20Coded%20UI%20Tests%20with%20Visual%20Studio%20Enterprise%202015.docx)
 
 ## <a name="effective-unit-testing-with-visual-studio-code-coverage"></a>Visual Studio 코드 검사를 사용한 효과적인 유닛 테스트

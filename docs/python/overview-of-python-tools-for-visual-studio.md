@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Windows에서 최상의 Python IDE(PTVS(Visual Studio용 Python 도구)로도 알려짐)로 만드는 Visual Studio의 Python 기능에 대한 요약입니다.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
@@ -13,16 +12,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cec872f5df927bae3caf20f35d4bcd8f8e7460b3
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 8e37648be6bb9f78aa80027b50b2fea6592d7c9e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068541"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927339"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Windows의 Visual Studio에서 Python 작업
 
-Python은 안정적이고 유연하며 배우기 쉬울뿐만 아니라 모든 운영 체제에서 무료로 사용할 수 있으며, 유용한 개발자 커뮤니티와 다양한 무료 라이브러리에서 지원되며 널리 사용되는 프로그래밍 언어입니다. Python은 웹 응용 프로그램, 웹 서비스, 데스크톱 앱, 스크립팅 및 과학적 컴퓨팅 등 모든 방식의 개발을 지원하며 대학, 과학자, 아마추어 개발자 및 전문 개발자 등 많은 분야에 사용됩니다. [python.org](https://www.python.org) 및 [Python for Beginners](https://www.python.org/about/gettingstarted/)(초보자를 위한 Python)에서 이 언어에 대해 자세히 알아볼 수 있습니다.
+Python은 안정적이고 유연하며 배우기 쉬울뿐만 아니라 모든 운영 체제에서 무료로 사용할 수 있으며, 유용한 개발자 커뮤니티와 다양한 무료 라이브러리에서 지원되며 널리 사용되는 프로그래밍 언어입니다. Python은 웹 애플리케이션, 웹 서비스, 데스크톱 앱, 스크립팅 및 과학적 컴퓨팅 등 모든 방식의 개발을 지원하며 대학, 과학자, 아마추어 개발자 및 전문 개발자 등 많은 분야에 사용됩니다. [python.org](https://www.python.org) 및 [Python for Beginners](https://www.python.org/about/gettingstarted/)(초보자를 위한 Python)에서 이 언어에 대해 자세히 알아볼 수 있습니다.
 
 Visual Studio는 Windows에서 강력한 Python IDE입니다. Visual Studio는 **Python 개발** 및 **데이터 과학** 워크로드(Visual Studio 2017)와 무료 Visual Studio용 Python 도구 확장(Visual Studio 2015 및 이전 버전)을 통해 Python 언어에 대한 [오픈 소스](https://github.com/Microsoft/ptvs) 지원을 제공합니다.
 
@@ -115,7 +114,7 @@ Visual Studio의 장점 중 하나는 강력한 디버거입니다. 특히 Pytho
 
 ## <a name="profiling-tools-with-comprehensive-reporting"></a>포괄적인 보고를 제공하는 프로파일링 도구
 
-프로파일링은응용 프로그램 내에서 시간이 어떻게 쓰이는지를 탐색합니다. Visual Studio는 CPython 기반 인터프리터를 사용한 프로 파일링을 지원하고 다른 프로파일링 실행 간 성능을 비교하는 기능을 포함합니다.
+프로파일링은애플리케이션 내에서 시간이 어떻게 쓰이는지를 탐색합니다. Visual Studio는 CPython 기반 인터프리터를 사용한 프로 파일링을 지원하고 다른 프로파일링 실행 간 성능을 비교하는 기능을 포함합니다.
 
 [![Python 프로젝트에 대한 Visual Studio 프로파일러 결과](media/profiling-results.png)](media/profiling-results.png#lightbox)
 
@@ -161,7 +160,7 @@ Python 워크로드는 Windows, Mac OS X, Linux 앱에서 Azure 서비스를 간
 
 **질문: Python 프로젝트에서 독립 실행형 실행 파일을 생성할 수 있나요?**
 
-대답: Python은 일반적으로 Visual Studio, 웹 서버와 같은 적합한 Python 지원 환경에서 요청 시 코드를 실행하는 데 사용되는 해석된 언어입니다. 현재는 Visual Studio 자체에서 독립 실행형 실행 파일을 만드는 방법을 제공하지 않습니다. 즉, 기본적으로 포함된 Python 인터프리터가 있는 프로그램입니다. 그러나 [StackOverflow](https://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency)에 설명된 것처럼 Python 커뮤니티에서는 실행 파일을 만드는 다양한 방법을 제공합니다. 또한 CPython은 블로그 게시물 [Using CPython's embeddable zip file](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/26/cpython-embeddable-zip-file/)(CPython의 포함 가능한 zip 파일 사용)에 설명된 것처럼 네이티브 응용 프로그램 내에 포함되는 기능을 지원합니다.
+대답: Python은 일반적으로 Visual Studio, 웹 서버와 같은 적합한 Python 지원 환경에서 요청 시 코드를 실행하는 데 사용되는 해석된 언어입니다. 현재는 Visual Studio 자체에서 독립 실행형 실행 파일을 만드는 방법을 제공하지 않습니다. 즉, 기본적으로 포함된 Python 인터프리터가 있는 프로그램입니다. 그러나 [StackOverflow](https://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency)에 설명된 것처럼 Python 커뮤니티에서는 실행 파일을 만드는 다양한 방법을 제공합니다. 또한 CPython은 블로그 게시물 [Using CPython's embeddable zip file](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/26/cpython-embeddable-zip-file/)(CPython의 포함 가능한 zip 파일 사용)에 설명된 것처럼 네이티브 애플리케이션 내에 포함되는 기능을 지원합니다.
 
 ## <a name="features-matrix"></a>기능 매트릭스
 
@@ -233,7 +232,7 @@ Visual Studio 2015 및 이전 버전은 [visualstudio.microsoft.com/vs/older-dow
 
 |               바탕 화면               |   2017   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |-------------------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
-|     콘솔/Windows 응용 프로그램     | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|     콘솔/Windows 애플리케이션     | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 | IronPython WPF(XAML 디자이너 포함) | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 |      IronPython Windows Forms       | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 

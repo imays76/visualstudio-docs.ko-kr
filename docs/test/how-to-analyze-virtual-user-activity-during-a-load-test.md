@@ -9,13 +9,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 0cac452a7fa4799c986df0f182643ed1b94afbe6
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 714e38e6bf0ca97e683eda6e5cd6303b9f1160fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059524"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875273"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>방법: 가상 사용자 작업 차트를 사용하여 부하 테스트 중에 가상 사용자가 수행하는 작업 분석
 
@@ -68,7 +67,7 @@ ms.locfileid: "53059524"
    - **테스트 로그**(테스트 로그 링크)
 
      > [!NOTE]
-     > 응용 프로그램 디버깅을 돕기 위해 **테스트 로그** 링크를 선택하면 로그에 연결된 웹 테스트 결과 또는 단위 테스트 결과가 열립니다.
+     > 애플리케이션 디버깅을 돕기 위해 **테스트 로그** 링크를 선택하면 로그에 연결된 웹 테스트 결과 또는 단위 테스트 결과가 열립니다.
 
      **가상 사용자 동작 차트**에 제공되는 필터링 및 강조 표시 작업을 사용할 수 있습니다.
 

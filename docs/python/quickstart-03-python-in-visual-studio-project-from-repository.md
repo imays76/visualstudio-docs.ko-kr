@@ -3,7 +3,6 @@ title: 빠른 시작 - Python 코드의 리포지토리 복제
 description: 이 빠른 시작에서는 Visual Studio 팀 탐색기를 사용하는 Python koans 리포지토리를 복제하여 Visual Studio에서 Python 프로젝트를 만듭니다.
 ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 871a5f620cc90db5064562461336fdeac38ba757
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a98b236d12954d5707df7fa4933c1f31150c7a0c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068395"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922846"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>빠른 시작: Visual Studio에서 Python 코드의 리포지토리 복제
 

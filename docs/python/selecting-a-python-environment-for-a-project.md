@@ -3,7 +3,6 @@ title: 프로젝트에 대한 Python 인터프리터 및 환경 선택
 description: 특정 프로젝트에 적용할 Python 환경(Anaconda 및 가상 환경 포함)을 구체적으로 선택할 수 있습니다.
 ms.date: 11/08/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c7ed10b25c17958fffbe0abab09973515fb43958
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 25492d3f6d152369bdabaad5eafc05f5e8822132
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062537"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879360"
 ---
 # <a name="how-to-select-a-python-environment-for-a-project"></a>프로젝트에 대한 Python 인터프리터 선택하는 방법
 

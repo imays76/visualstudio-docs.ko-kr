@@ -2,7 +2,6 @@
 title: 코드 조각 스키마 참조
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - schema reference [Visual Studio]
@@ -15,16 +14,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a39040bb76181a7a36e9d8f7b19aa0b4390c400
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1e16df68ef36ee38b20be4da0150ca6550cd3644
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49932444"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864720"
 ---
 # <a name="code-snippets-schema-reference"></a>코드 조각 스키마 참조
 
-IntelliSense 코드 조각은 Visual Studio에서 응용 프로그램에 삽입되도록 미리 작성된 코드 부분입니다. 코드 조각을 제공함으로써 반복 코드를 입력하거나 샘플 검색에 드는 시간을 줄여 생산성을 높일 수 있습니다. IntelliSense 코드 조각 XML 스키마를 사용하여 사용자 지정 코드 조각을 만들어 Visual Studio에 이미 포함되어 있는 코드 조각에 추가할 수 있습니다.
+IntelliSense 코드 조각은 Visual Studio에서 애플리케이션에 삽입되도록 미리 작성된 코드 부분입니다. 코드 조각을 제공함으로써 반복 코드를 입력하거나 샘플 검색에 드는 시간을 줄여 생산성을 높일 수 있습니다. IntelliSense 코드 조각 XML 스키마를 사용하여 사용자 지정 코드 조각을 만들어 Visual Studio에 이미 포함되어 있는 코드 조각에 추가할 수 있습니다.
 
 ## <a name="assembly-element"></a>Assembly 요소
 
@@ -64,7 +63,7 @@ IntelliSense 코드 조각은 Visual Studio에서 응용 프로그램에 삽입�
 
 짧은 코드 블록에 대한 컨테이너를 제공합니다.
 
-### <a name="keywords"></a>키워드
+### <a name="keywords"></a>키워드가
 
 `Code` 요소의 텍스트에는 `$end$` 및 `$selected$`의 두 예약어를 사용할 수 있습니다. `$end$`는 코드 조각을 삽입하고 나서 커서를 놓을 위치를 표시합니다. `$selected$`는 코드 조각을 호출하면 조각으로 삽입되는 문서에서 선택한 텍스트를 나타냅니다. 다음을 포함하는 코드 조각의 예를 들어 보겠습니다.
 
@@ -271,7 +270,7 @@ IntelliSense 코드 조각에 대한 일반 정보를 지정합니다.
 |-------------------|-----------------|
 |[Author 요소](../ide/code-snippets-schema-reference.md#author-element)|선택적 요소입니다. 코드 조각을 작성한 사람 또는 회사의 이름입니다. `Author` 요소에는 `Header` 요소가 0개 또는 그 이상 있을 수 있습니다.|
 |[Description 요소](../ide/code-snippets-schema-reference.md#description-element)|선택적 요소입니다. 코드 조각에 대한 설명입니다. `Description` 요소에는 `Header` 요소가 0개 또는 그 이상 있을 수 있습니다.|
-|[HelpUrl 요소](../ide/code-snippets-schema-reference.md#helpurl-element)|선택적 요소입니다. 코드 조각에 대한 추가 정보가 들어 있는 URL입니다. Header 요소에는 `HelpURL` 요소가 0개 또는 그 이상 있을 수 있습니다. **참고:** Visual Studio에서는 `HelpUrl` 요소를 사용하지 않습니다. 이 요소는 IntelliSense 코드 조각 XML 스키마의 일부이며 이 요소를 포함하는 모든 코드 조각의 유효성이 검사되지만 요소의 값은 사용되지 않습니다.|
+|[HelpUrl 요소](../ide/code-snippets-schema-reference.md#helpurl-element)|선택적 요소입니다. 코드 조각에 대한 추가 정보가 들어 있는 URL입니다. Header 요소에는 `HelpURL` 요소가 0개 또는 그 이상 있을 수 있습니다. **참고:**  Visual Studio에서는 `HelpUrl` 요소를 사용하지 않습니다. 이 요소는 IntelliSense 코드 조각 XML 스키마의 일부이며 이 요소를 포함하는 모든 코드 조각의 유효성이 검사되지만 요소의 값은 사용되지 않습니다.|
 |[Keywords 요소](../ide/code-snippets-schema-reference.md#keywords-element)|선택적 요소입니다. `Keyword` 요소를 그룹화합니다. `Keywords` 요소에는 `Header` 요소가 0개 또는 그 이상 있을 수 있습니다.|
 |[Shortcut 요소](../ide/code-snippets-schema-reference.md#shortcut-element)|선택적 요소입니다. 코드 조각을 삽입하는 데 사용할 수 있는 바로 가기 텍스트를 지정합니다. `Shortcut` 요소에는 `Header` 요소가 0개 또는 그 이상 있을 수 있습니다.|
 |[SnippetTypes 요소](../ide/code-snippets-schema-reference.md#snippettypes-element)|선택적 요소입니다. `SnippetType` 요소를 그룹화합니다. `SnippetTypes` 요소에는 `Header` 요소가 0개 또는 그 이상 있을 수 있습니다. `SnippetTypes` 요소가 없으면 코드 조각은 항상 유효합니다.|

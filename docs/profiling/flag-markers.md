@@ -1,8 +1,6 @@
 ---
 title: 플래그 표식 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.markers.flag
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f924089ef31e2b452419b107788357060a4c6bb6
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: a879114f21cfa23eab66cca507c3a2b960872c7b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237993"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923441"
 ---
 # <a name="flag-markers"></a>플래그 표식
-플래그 마커는 응용 프로그램에서 특정 시점에 발생한 항목을 나타냅니다. 플래그는 여러 종류의 응용 프로그램 이벤트를 나타낼 수 있습니다. 예를 들어 특정 작업 항목이 예약되었거나 예외가 throw될 때 플래그가 표시될 수 있습니다. 작업 병렬 라이브러리와 같은 런타임도 플래그를 생성할 수 있습니다.  
+플래그 마커는 응용 프로그램에서 특정 시점에 발생한 항목을 나타냅니다. 플래그는 여러 종류의 애플리케이션 이벤트를 나타낼 수 있습니다. 예를 들어 특정 작업 항목이 예약되었거나 예외가 throw될 때 플래그가 표시될 수 있습니다. 작업 병렬 라이브러리와 같은 런타임도 플래그를 생성할 수 있습니다.  
   
 ## <a name="flag-importance"></a>플래그 중요도  
  플래그는 중요도에 따라 여러 크기로 표시됩니다. 모든 마커처럼 중요도는 낮음, 보통, 높음 또는 중요일 수 있습니다.  이 그림은 중요도 수준별로 마커의 모양을 보여줍니다.  
@@ -35,7 +33,7 @@ ms.locfileid: "35237993"
 범주를 보여주는 마커  
   
 ## <a name="alerts"></a>경고  
- 경고는 중요 응용 프로그램 이벤트(예: 예외)를 나타내는 빨간색 플래그입니다.  경고는 다음과 같습니다.  
+ 경고는 중요 애플리케이션 이벤트(예: 예외)를 나타내는 빨간색 플래그입니다.  경고는 다음과 같습니다.  
   
  ![동시성 시각화 경고 표식](../profiling/media/cvmarkeralert.png "CVMarkerAlert")  
 경고 마커  

@@ -1,8 +1,6 @@
 ---
 title: ToolTaskExtension 기본 클래스 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - MSBuild.ToolTask.ToolCommandFailed
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8856011e8b85f049c53947a785f1479e1db25368
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 07728e5f978fce519fa0acdff28d38b987621593
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49888556"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885681"
 ---
 # <a name="tooltaskextension-base-class"></a>ToolTaskExtension 기본 클래스
 많은 작업은 <xref:Microsoft.Build.Utilities.Task> 클래스에서 상속되는 <xref:Microsoft.Build.Utilities.ToolTask> 클래스에서 상속되는 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 클래스에서 상속됩니다. 이 상속 체인은 매개 변수에서 파생되는 작업에 해당 매개 변수 몇 개를 추가합니다. 이러한 매개 변수가 이 문서에 나열되어 있습니다.  
