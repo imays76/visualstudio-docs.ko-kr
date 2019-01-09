@@ -2,7 +2,6 @@
 title: 다중 프로젝트 템플릿 만들기
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-project
@@ -11,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f53fa69f9fafd1dd3686a80fb367c2bc0b99a013
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 34d15de5012ff640ba05b106321c2a534557c3e7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049667"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925827"
 ---
 # <a name="how-to-create-multi-project-templates"></a>방법: 다중 프로젝트 템플릿 만들기
 
@@ -105,7 +104,7 @@ ms.locfileid: "53049667"
 
 ## <a name="two-project-example"></a>두 프로젝트 예제
 
-이 예제에서는 기본 다중 프로젝트 루트 *vstemplate* 파일을 보여줍니다. 이 예제에서는 템플릿에 **내 Windows 응용 프로그램** 및 **내 클래스 라이브러리**의 두 개 프로젝트가 있습니다. **ProjectTemplateLink** 요소에서 **ProjectName** 특성은 프로젝트에 지정된 이름을 지정합니다.
+이 예제에서는 기본 다중 프로젝트 루트 *vstemplate* 파일을 보여줍니다. 이 예제에서는 템플릿에 **내 Windows 애플리케이션** 및 **내 클래스 라이브러리**의 두 개 프로젝트가 있습니다. **ProjectTemplateLink** 요소에서 **ProjectName** 특성은 프로젝트에 지정된 이름을 지정합니다.
 
 > [!TIP]
 > **ProjectName** 특성을 지정하지 않으면 *vstemplate* 파일의 이름이 프로젝트 이름으로 사용됩니다.

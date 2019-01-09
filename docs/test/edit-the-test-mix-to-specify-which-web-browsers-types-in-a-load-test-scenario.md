@@ -12,17 +12,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: c9cf19ad65131976ea5603ef5af49e8dd3ba555d
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b58318bb5dbb92c47bc82f11616f93734999200b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049330"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922307"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario"></a>테스트 조합을 편집하여 부하 테스트 시나리오의 웹 브라우저 형식 지정
 
-*브라우저 조합*을 통해 부하 테스트 시나리오에서 부하를 보다 사실적으로 시뮬레이션할 수 있습니다. 이 경우 단일 웹 브라우저가 아니라 서로 다른 종류의 웹 브라우저로 구성된 조합을 사용하여 부하가 생성됩니다. 따라서 응용 프로그램과 함께 사용될 웹 브라우저를 보다 정확하게 테스트할 수 있습니다.
+*브라우저 조합*을 통해 부하 테스트 시나리오에서 부하를 보다 사실적으로 시뮬레이션할 수 있습니다. 이 경우 단일 웹 브라우저가 아니라 서로 다른 종류의 웹 브라우저로 구성된 조합을 사용하여 부하가 생성됩니다. 따라서 애플리케이션과 함께 사용될 웹 브라우저를 보다 정확하게 테스트할 수 있습니다.
 
 브라우저 조합에서는 부하 테스트 시나리오에서 가상 사용자가 특정 웹 브라우저 종류를 실행할 가능성을 지정합니다. 부하 테스트를 만들 때 둘 이상의 웹 브라우저를 통해 부하가 생성되도록 시뮬레이트할 수 있습니다. 제공된 웹 브라우저 집합의 웹 브라우저 종류를 조합에 추가하면 선택한 웹 브라우저에 대한 관련 헤더 집합이 웹 성능 테스트 시 전송되는 각 HTTP 요청에 추가됩니다.
 

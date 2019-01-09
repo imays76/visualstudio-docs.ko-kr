@@ -2,7 +2,6 @@
 title: Devenv 명령줄 스위치
 ms.date: 02/28/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - switches, Devenv
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bf255a0e4eb622cb81718ddfc30d5b568bad2c2
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 29a86959ccd4b0224e22e480588d36a0d637336e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063398"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911980"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv 명령줄 스위치
 
@@ -69,7 +68,7 @@ Devenv를 사용하면 IDE(통합 개발 환경)에 대한 다양한 옵션을 �
 |[/Run 또는 /r](../../ide/reference/run-devenv-exe.md)|지정한 솔루션을 컴파일하고 실행합니다.|
 |[/Runexit](../../ide/reference/runexit-devenv-exe.md)|지정한 솔루션을 컴파일 및 실행하고, 솔루션 실행 시 IDE를 최소화하고, 솔루션 실행이 완료되면 IDE를 닫습니다.|
 |[/UseEnv](../../ide/reference/useenv-devenv-exe.md)|IDE가 **옵션** 대화 상자에 있는 **프로젝트** 옵션의 VC++ 디렉터리 섹션에 지정된 설정 대신 PATH, INCLUDE 및 LIB 환경 변수를 C++ 컴파일에 사용하도록 합니다. **C++ 워크로드로 데스크톱 개발**을 사용하여 이 스위치를 설치합니다. 자세한 내용은 [명령줄 빌드에서 경로 및 환경 변수 설정](/cpp/build/setting-the-path-and-environment-variables-for-command-line-builds)을 참조하세요.|
-|[/Edit](../../ide/reference/edit-devenv-exe.md)|이 응용 프로그램의 실행 중인 인스턴스에서 지정한 파일을 엽니다. 실행 중인 인스턴스가 없으면 간단한 창 레이아웃을 사용하여 새 인스턴스를 시작합니다.|
+|[/Edit](../../ide/reference/edit-devenv-exe.md)|이 애플리케이션의 실행 중인 인스턴스에서 지정한 파일을 엽니다. 실행 중인 인스턴스가 없으면 간단한 창 레이아웃을 사용하여 새 인스턴스를 시작합니다.|
 |[/SafeMode](../../ide/reference/safemode-devenv-exe.md)|안전 모드로 Visual Studio를 시작하고 기본 환경 및 서비스와 타사 패키지의 배송된 버전만 로드합니다.|
 |[/ResetSkipPkgs](../../ide/reference/resetskippkgs-devenv-exe.md)|문제 VSPackage를 로드하지 않으려는 사용자가 VSPackage에 추가한 SkipLoading 태그를 모두 지웁니다.|
 |[/Setup](../../ide/reference/setup-devenv-exe.md)|Visual Studio가 사용 가능한 모든 VSPackage에서 메뉴, 도구 모음 및 명령 그룹을 설명하는 리소스 메타데이터를 강제로 병합하도록 합니다. 관리자 권한으로 이 명령을 실행해야 합니다.|

@@ -2,7 +2,6 @@
 title: 고급 보안 설정 대화 상자
 ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vs.err.debug_in_zone_no_hostproc
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dce482f53f9f3e6dd0b57d6cb905f97cdfaa601a
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 8491e17d214052080e997e3ced65c3154927d558
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180518"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870024"
 ---
 # <a name="advanced-security-settings-dialog-box"></a>고급 보안 설정 대화 상자
 
@@ -27,17 +26,17 @@ ms.locfileid: "39180518"
 
 ![Visual Studio의 고급 보안 설정 대화 상자](../media/advanced-security-settings.png)
 
-이 대화 상자에 액세스하려면 **솔루션 탐색기**에서 프로젝트 노드를 선택한 다음 **프로젝트** 메뉴에서 **속성**을 클릭합니다. **프로젝트 디자이너**가 나타나면 **보안** 탭을 클릭합니다. **보안** 페이지에서 **ClickOnce 보안 설정 사용**을 선택하고 **부분 신뢰 응용 프로그램**을 클릭한 후 **고급**을 클릭합니다.
+이 대화 상자에 액세스하려면 **솔루션 탐색기**에서 프로젝트 노드를 선택한 다음 **프로젝트** 메뉴에서 **속성**을 클릭합니다. **프로젝트 디자이너**가 나타나면 **보안** 탭을 클릭합니다. **보안** 페이지에서 **ClickOnce 보안 설정 사용**을 선택하고 **부분 신뢰 애플리케이션**을 클릭한 후 **고급**을 클릭합니다.
 
 ## <a name="uielement-list"></a>UI 요소 목록
 
-**원본 사이트에 응용 프로그램 액세스 허용**
+**원본 사이트에 애플리케이션 액세스 허용**
 
-이 확인란을 선택하면 응용 프로그램은 게시된 웹 사이트 또는 서버 공유에 액세스할 수 있습니다. 기본적으로 이 옵션이 선택됩니다.
+이 확인란을 선택하면 애플리케이션은 게시된 웹 사이트 또는 서버 공유에 액세스할 수 있습니다. 기본적으로 이 옵션이 선택됩니다.
 
-**다음 URL에서 다운로드한 것처럼 이 응용 프로그램을 디버깅**
+**다음 URL에서 다운로드한 것처럼 이 애플리케이션을 디버깅**
 
-응용 프로그램이 **게시** 페이지에 지정한 **설치 URL**에 해당하는 웹 사이트 또는 서버 공유에 액세스하도록 허용하려면 여기에 해당 URL을 입력합니다. 이 옵션은 **원본 사이트에 응용 프로그램 액세스 허용**을 선택한 경우에만 사용 가능합니다.
+애플리케이션이 **게시** 페이지에 지정한 **설치 URL**에 해당하는 웹 사이트 또는 서버 공유에 액세스하도록 허용하려면 여기에 해당 URL을 입력합니다. 이 옵션은 **원본 사이트에 애플리케이션 액세스 허용**을 선택한 경우에만 사용 가능합니다.
 
 ## <a name="see-also"></a>참고 항목
 

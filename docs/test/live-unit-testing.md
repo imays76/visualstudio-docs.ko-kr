@@ -2,7 +2,6 @@
 title: Live Unit Testing
 ms.date: 2017-03-07
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio ALM
@@ -11,16 +10,16 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7be078044454ebf5d6b3a6d99a60fff66ab1f69b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 5a443eddc56b3aa5af6e4ce1cb8cab958d2be621
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066212"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892850"
 ---
 # <a name="live-unit-testing-with-visual-studio-2017"></a>Visual Studio 2017을 사용한 Live Unit Testing
 
-응용 프로그램을 개발할 때 Live Unit Testing은 자동으로 백그라운드에서 영향을 받는 단위 테스트를 실행하고 Visual Studio IDE에서 실시간으로 결과 및 코드 검사 라이브를 표시합니다. 코드를 수정할 때 Live Unit Testing은 변경 내용이 기존 테스트에 영향을 주는 방법 및 추가한 새 코드를 하나 이상의 기존 테스트에서 검사할지 여부에 대한 피드백을 제공합니다. 그러면 버그를 수정하거나 새로운 기능을 추가할 경우에 사용자가 단위 테스트를 작성하도록 알려 줄 수 있습니다.
+애플리케이션을 개발할 때 Live Unit Testing은 자동으로 백그라운드에서 영향을 받는 단위 테스트를 실행하고 Visual Studio IDE에서 실시간으로 결과 및 코드 검사 라이브를 표시합니다. 코드를 수정할 때 Live Unit Testing은 변경 내용이 기존 테스트에 영향을 주는 방법 및 추가한 새 코드를 하나 이상의 기존 테스트에서 검사할지 여부에 대한 피드백을 제공합니다. 그러면 버그를 수정하거나 새로운 기능을 추가할 경우에 사용자가 단위 테스트를 작성하도록 알려 줄 수 있습니다.
 
 > [!NOTE]
 > Visual Studio 2017 Enterprise Edition에서 .NET Core 또는 .NET Framework를 대상으로 하는 C# 및 Visual Basic 프로젝트에 Live Unit Testing을 사용할 수 있습니다.
@@ -143,7 +142,7 @@ Live Unit Testing은 일단 활성화되면 Visual Studio 편집기에서 코드
 
 ## <a name="diagnose-and-correct-test-failures"></a>테스트 실패 진단 및 해결
 
-실패한 테스트에서 제품 코드에 쉽게 디버깅하고 편집을 수행하며 응용 프로그램을 계속 개발할 수 있습니다. Live Unit Testing이 백그라운드에서 실행되므로 디버그, 편집 및 진행 주기 동안 Live Unit Testing을 중지했다가 다시 시작할 필요는 없습니다.
+실패한 테스트에서 제품 코드에 쉽게 디버깅하고 편집을 수행하며 애플리케이션을 계속 개발할 수 있습니다. Live Unit Testing이 백그라운드에서 실행되므로 디버그, 편집 및 진행 주기 동안 Live Unit Testing을 중지했다가 다시 시작할 필요는 없습니다.
 
 예를 들어 이전 그림에 표시된 테스트 오류로 인해 테스트 메서드에서 알파벳이 아닌 문자가 <xref:System.Char.IsLower%2A?displayProperty=fullName> 메서드에 전달될 때 `true`을 반환한다는 잘못된 가정을 발생시켰습니다. 테스트 메서드를 수정하면 모든 테스트를 통과합니다. 이러는 동안 Live Unit Testing을 일시 중지하거나 중지할 필요는 없습니다.
 
@@ -163,7 +162,7 @@ Live Unit Testing은 일단 활성화되면 Visual Studio 편집기에서 코드
 Live Unit Testing이 테스트 결과를 자동으로 실행하고 업데이트는 것과 **Test Explorer**에서 테스트를 명시적으로 실행하는 것은 다릅니다. 이러한 차이점에는 다음이 포함됩니다.
 
 - Test Explorer 창에서 테스트를 실행 또는 디버깅하면 일반 이진 파일을 실행합니다. 반면 Live Unit Testing은 계측된 이진 파일을 실행합니다.
-- Live Unit Testing은 테스트를 실행할 새 응용 프로그램 도메인을 만들지 않지만 기본 도메인에서 테스트를 실행합니다. **Test Explorer** 창에서 테스트를 실행하면 새 응용 프로그램 도메인을 만들지 않습니다.
+- Live Unit Testing은 테스트를 실행할 새 애플리케이션 도메인을 만들지 않지만 기본 도메인에서 테스트를 실행합니다. **Test Explorer** 창에서 테스트를 실행하면 새 애플리케이션 도메인을 만들지 않습니다.
 - Live Unit Testing은 테스트 어셈블리 각각에서 순차적으로 테스트를 실행합니다. **Test Explorer** 창에서 여러 테스트를 실행하고 **동시에 테스트 실행** 단추를 선택한 경우 테스트가 동시에 실행됩니다.
 
 ## <a name="live-unit-testing-and-large-solutions"></a>Live Unit Testing 및 대규모 솔루션

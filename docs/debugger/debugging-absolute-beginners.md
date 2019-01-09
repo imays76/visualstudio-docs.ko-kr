@@ -1,9 +1,7 @@
 ---
 title: 완전 초보자를 위한 코드 디버깅
 description: 처음으로 디버깅하는 경우 Visual Studio를 사용하여 디버깅 모드에서 앱을 실행하는 데 도움이 되는 몇 가지 원칙을 알아봅니다.
-ms.custom: ''
 ms.date: 07/06/2018
-ms.technology: vs-ide-debug
 ms.topic: tutorial
 helpviewer_keywords:
 - debugger
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2540f5ed20ae07ab317c0ea23f35de386117fa13
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 35f9e866f58d52b7f74ac0a136b0eeb49382c612
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561514"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927326"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>완전 초보자를 위한 디버깅하는 방법
 
