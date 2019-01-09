@@ -1,8 +1,6 @@
 ---
 title: GetWinFXPath 작업 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ace14a3238142be4d703b4d2e0fa457288b00458
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 63c8b6c0834f427103240ae0b9d11f5958d1b41c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852832"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822588"
 ---
 # <a name="getwinfxpath-task"></a>GetWinFXPath 작업
 <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> 작업은 현재 [!INCLUDE[TLA#tla_winfx](../msbuild/includes/tlasharptla_winfx_md.md)] 런타임의 디렉터리를 반환합니다.  
@@ -38,10 +36,10 @@ ms.locfileid: "49852832"
 | `WinFXNativePath` | 필수 **String** 매개 변수입니다.<br /><br /> 네이티브 [!INCLUDE[TLA2#tla_titlewinfx](../msbuild/includes/tla2sharptla_titlewinfx_md.md)] 런타임의 경로를 지정합니다. |
 | `WinFXWowPath` | 필수 **String** 매개 변수입니다.<br /><br /> 64비트 시스템의 32비트 **Windows** 모듈에서 [!INCLUDE[TLA#tla_winfx](../msbuild/includes/tlasharptla_winfx_md.md)] 어셈블리의 경로를 지정합니다. |
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> 작업이 64비트 프로세서에서 실행되는 경우 **WinFXPath** 매개 변수는 **WinFXWowPath** 매개 변수에 저장된 경로로 설정되고, 그렇지 않으면 **WinFXPath** 매개 변수는 **WinFXNativePath** 매개 변수에 저장된 경로로 설정됩니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 **GetWinFXPath** 작업을 사용하여 [!INCLUDE[TLA2#tla_titlewinfx](../msbuild/includes/tla2sharptla_titlewinfx_md.md)] 런타임에 대한 네이티브 경로를 검색하는 방법을 보여 줍니다.  
   
 ```xml  
@@ -63,4 +61,4 @@ ms.locfileid: "49852832"
  [작업 참조](../msbuild/wpf-msbuild-task-reference.md)   
  [MSBuild 참조](../msbuild/msbuild-reference.md)   
  [작업 참조](../msbuild/msbuild-task-reference.md)   
- [WPF 응용 프로그램 빌드(WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
+ [WPF 애플리케이션 빌드(WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)

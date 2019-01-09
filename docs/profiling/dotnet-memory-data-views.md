@@ -1,8 +1,6 @@
 ---
 title: .NET 메모리 데이터 뷰 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - .NET memory profiling method views
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 516f9addb9dc5ca5f7cc8eac87ec1ce97b0e8415
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 95577c4d346ee635fb44e36c88965d322efee308
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34262259"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820162"
 ---
 # <a name="net-memory-data-views"></a>.NET 메모리 데이터 뷰
 이 섹션에는 .NET 메모리 프로파일링 데이터가 포함된 프로파일러 데이터 파일의 뷰와 보고서에 대한 참조 정보가 있습니다.  

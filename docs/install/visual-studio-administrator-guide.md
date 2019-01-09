@@ -2,9 +2,8 @@
 title: Visual Studio 관리자 가이드
 titleSuffix: ''
 description: 엔터프라이즈 환경에 Visual Studio를 배포하는 방법을 자세히 알아봅니다.
-ms.custom: seodec18
 ms.date: 05/29/2018
-ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 358614cae2001f46588bb447d97a863cf19b8036
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 25bf36870e20b630c6de388c13f2b01bae4a274b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159466"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826402"
 ---
 # <a name="visual-studio-2017-administrator-guide"></a>Visual Studio 2017 관리자 가이드
 

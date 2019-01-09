@@ -2,7 +2,6 @@
 title: MSTest 어설션 클래스 및 메서드
 ms.date: 06/07/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: reference
 helpviewer_keywords:
 - Assert classes
@@ -13,16 +12,16 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 91198e9b7048b384bf2095840abbd012042025ed
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 8e6dcd374426cc8f5e7fd218ac33e570f1ef57dc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844262"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989518"
 ---
 # <a name="use-assert-classes-for-unit-testing"></a>단위 테스트를 위한 Assert 클래스 사용
 
-<xref:Microsoft.VisualStudio.TestTools.UnitTesting> 네임스페이스의 Assert 클래스를 사용하여 특정 기능을 확인합니다. 단위 테스트 메서드는 응용 프로그램 코드에서 메서드 코드를 실행하지만, Assert 문을 포함하는 경우에만 코드의 동작이 정확한지 여부를 보고합니다.
+<xref:Microsoft.VisualStudio.TestTools.UnitTesting> 네임스페이스의 Assert 클래스를 사용하여 특정 기능을 확인합니다. 단위 테스트 메서드는 애플리케이션 코드에서 메서드 코드를 실행하지만, Assert 문을 포함하는 경우에만 코드의 동작이 정확한지 여부를 보고합니다.
 
 ## <a name="kinds-of-asserts"></a>어설션의 종류
 
@@ -47,7 +46,7 @@ ms.locfileid: "34844262"
 
 새 Assert 예외 클래스를 작성하는 경우 해당 클래스가 기본 클래스 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnitTestAssertException>에서 속성을 상속하도록 하면 예외를 어설션 실패로 보다 쉽게 식별할 수 있으며, 테스트 또는 프로덕션 코드에서 예기치 않은 예외가 throw되지 않습니다.
 
-응용 프로그램 코드의 메서드가 throw할 것으로 예상했던 예외가 실제로 해당 메서드에서 throw됨을 테스트 메서드가 확인하도록 하려는 경우 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute> 특성으로 테스트 메서드를 데코레이팅합니다.
+애플리케이션 코드의 메서드가 throw할 것으로 예상했던 예외가 실제로 해당 메서드에서 throw됨을 테스트 메서드가 확인하도록 하려는 경우 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute> 특성으로 테스트 메서드를 데코레이팅합니다.
 
 ## <a name="see-also"></a>참고 항목
 

@@ -1,8 +1,6 @@
 ---
 title: MSBuild 용어 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 ms.assetid: f767d8e4-24d8-4803-80eb-e857202dbe2c
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf51cbc4cd20401f17f5e92def47713c6107f3d2
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 27f918b3ca3408303091dc5200ab8919ffc1eecc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078757"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986871"
 ---
 # <a name="msbuild-glossary"></a>MSBuild 용어
 이러한 용어는 Microsoft Build Engine(MSBuild) 및 해당 구성 요소를 설명하는 데 사용됩니다.  
@@ -79,7 +77,7 @@ ms.locfileid: "39078757"
  잘 알려진 메타데이터는 미리 정의된 값을 사용하여 초기화되는 읽기 전용 항목 메타데이터입니다. 잘 알려진 메타데이터는 파일을 참조하는 항목에 대한 설명 정보를 제공합니다. 예를 들어 `FullPath`라는 잘 알려진 메타데이터의 값은 참조되는 파일의 전체 경로입니다. 자세한 내용은 [항목](../msbuild/msbuild-items.md)을 참조하세요.  
   
  다중 대상 지정  
- 응용 프로그램이나 어셈블리 프로젝트가 MSBuild 및 Visual Studio와 다른 여러 CLR 및 프레임워크를 대상으로 지정할 수 있는 기능입니다.  
+ 애플리케이션이나 어셈블리 프로젝트가 MSBuild 및 Visual Studio와 다른 여러 CLR 및 프레임워크를 대상으로 지정할 수 있는 기능입니다.  
   
  profile  
  전체 프레임워크의 하위 집합입니다. 컴퓨터에 다운로드해야 하는 항목의 양을 최소화하는 데 사용됩니다.  
@@ -128,7 +126,7 @@ ms.locfileid: "39078757"
  재배포 목록은 지정된 프레임워크에 해당하는 어셈블리 목록입니다.  
   
  참조 어셈블리  
- 디자인 타임 동안 응용 프로그램을 만드는 데 사용되는 어셈블리입니다. 참조 어셈블리에서는 실제 코드와 개인 인터페이스를 제거하고 메타데이터와 공용 인터페이스만 남겨 둘 수 있습니다.  
+ 디자인 타임 동안 애플리케이션을 만드는 데 사용되는 어셈블리입니다. 참조 어셈블리에서는 실제 코드와 개인 인터페이스를 제거하고 메타데이터와 공용 인터페이스만 남겨 둘 수 있습니다.  
   
  레지스트리 속성  
  *속성, 레지스트리*를 참조하세요.  
