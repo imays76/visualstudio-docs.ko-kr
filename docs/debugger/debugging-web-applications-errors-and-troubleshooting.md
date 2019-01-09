@@ -2,7 +2,6 @@
 title: 웹 앱-오류를 디버깅 및 문제 해결
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -28,12 +27,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b089e3d095131e998729dc5d7a270d859673b2c7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 660e02cab12206fda374fec8e008023952690fac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053653"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827420"
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>웹 애플리케이션 디버그: 오류 및 문제 해결
 웹 응용 프로그램을 디버깅하려고 할 때 다음과 같은 오류가 발생할 수 있습니다.  
@@ -58,4 +57,4 @@ ms.locfileid: "53053653"
   
 ## <a name="see-also"></a>참고 항목  
  [디버거 보안](../debugger/debugger-security.md)   
- [웹 응용 프로그램 및 스크립트 디버그](../debugger/debugging-web-applications-and-script.md)
+ [웹 애플리케이션 및 스크립트 디버그](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)
