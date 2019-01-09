@@ -1,8 +1,6 @@
 ---
 title: '연습: MSBuild 사용 | Microsoft Docs'
-ms.custom: ''
 ms.date: 12/18/2018
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tutorial
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 13493b9ab21386ff5856fd6046e963d362071570
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: e73fd5e679ae4b35fa47926f6737b980ef700e4a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648922"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956922"
 ---
 # <a name="walkthrough-use-msbuild"></a>연습: MSBuild 사용
 MSBuild는 Microsoft 및 Visual Studio용 빌드 플랫폼입니다. 이 연습에서는 MSBuild의 구성 요소를 소개하고 MSBuild 프로젝트를 작성, 조작 및 디버깅하는 방법을 보여 줍니다. 학습 내용은 다음과 같습니다.

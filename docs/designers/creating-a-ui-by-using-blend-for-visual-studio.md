@@ -3,7 +3,6 @@ title: UI 만들기 - Blend for Visual Studio
 titleSuffix: ''
 ms.date: 07/17/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - Blend.Start.Dev12
@@ -12,16 +11,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 76743674ef4e92f2ad52be108c1dafb8d942676c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b44f49c08be44ec16cbd90d06cef96cb091e67f6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059868"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934507"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Blend for Visual Studio를 사용하여 UI 만들기
 
-Blend for Visual Studio를 사용하면 XAML 기반 Windows 및 웹 응용 프로그램을 디자인할 수 있습니다. Visual Studio와 같은 기본 XAML 디자인 환경을 제공하고, 애니메이션 및 동작과 같은 고급 작업에 대한 비주얼 디자이너를 추가합니다. Blend 및 Visual Studio 비교를 보려면 [Visual Studio 및 Blend for Visual Studio에서 XAML 디자인](../designers/designing-xaml-in-visual-studio.md)을 참조하세요.
+Blend for Visual Studio를 사용하면 XAML 기반 Windows 및 웹 애플리케이션을 디자인할 수 있습니다. Visual Studio와 같은 기본 XAML 디자인 환경을 제공하고, 애니메이션 및 동작과 같은 고급 작업에 대한 비주얼 디자이너를 추가합니다. Blend 및 Visual Studio 비교를 보려면 [Visual Studio 및 Blend for Visual Studio에서 XAML 디자인](../designers/designing-xaml-in-visual-studio.md)을 참조하세요.
 
 Blend for Visual Studio는 Visual Studio의 구성 요소입니다. Blend를 설치하려면 **Visual Studio 설치 관리자**에서 **유니버설 Windows 플랫폼 개발** 또는 **.NET 데스크톱 개발** 워크로드를 선택합니다. 이러한 워크로드에는 둘 다 Blend for Visual Studio 구성 요소가 포함됩니다.
 
@@ -34,7 +33,7 @@ Blend for Visual Studio를 처음 접하는 경우 시간을 두고 작업 영�
 
 ## <a name="tour-of-the-tools-panel"></a>도구 패널 둘러보기
 
-Blend for Visual Studio에서 **도구** 패널을 사용하여 응용 프로그램의 개체를 만들고 수정할 수 있습니다. 도구를 선택한 다음 마우스로 아트보드에 그려 개체를 만들 수 있습니다.
+Blend for Visual Studio에서 **도구** 패널을 사용하여 애플리케이션의 개체를 만들고 수정할 수 있습니다. 도구를 선택한 다음 마우스로 아트보드에 그려 개체를 만들 수 있습니다.
 
 ![도구 패널](../designers/media/blend5toolspanel.png)
 

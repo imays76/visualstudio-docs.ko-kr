@@ -1,8 +1,6 @@
 ---
 title: 일반적인 MSBuild 프로젝트 항목 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd3b51046ce3a4b589cb77ce27d1e103a6b8a6c5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 15d2a2a51297fd10388b89a2fbe1220ccd327231
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937514"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951708"
 ---
 # <a name="common-msbuild-project-items"></a>일반적인 MSBuild 프로젝트 항목
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에서 항목은 하나 이상의 파일에 대한 명명된 참조입니다. 항목에는 파일 이름, 경로 및 버전 번호와 같은 메타데이터가 포함됩니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]의 모든 프로젝트 형식에는 공통된 여러 항목이 있습니다. 이러한 항목은 *Microsoft.Build.CommonTypes.xsd* 파일에 정의되어 있습니다.  

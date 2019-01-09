@@ -1,8 +1,6 @@
 ---
 title: 로컬 폴더에 배포
-ms.custom: ''
 ms.date: 06/22/2018
-ms.technology: vs-ide-deployment
 ms.topic: quickstart
 helpviewer_keywords:
 - deployment, local folder
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 517698aa2e042d74138579dae3633930b338cd61
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: b4dff7adb3942fce20b7b6cb5b09c29965320399
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38781915"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854037"
 ---
 # <a name="deploy-an-app-to-a-local-folder-using-visual-studio"></a>Visual Studio를 사용하여 로컬 폴더에 앱 배포
 
@@ -55,6 +53,6 @@ ms.locfileid: "38781915"
 
 ## <a name="next-steps"></a>다음 단계
 
-- [게시 도구를 사용하여 .NET Core 응용 프로그램 배포](/dotnet/core/deploying/deploy-with-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
+- [게시 도구를 사용하여 .NET Core 애플리케이션 배포](/dotnet/core/deploying/deploy-with-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - [Microsoft Store(데스크톱 브리지)의 데스크톱 앱 패키지](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - (.NET) [.NET Framework 및 애플리케이션 배포](/dotnet/framework/deployment/)

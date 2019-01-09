@@ -1,8 +1,6 @@
 ---
 title: 채널 관리 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.tools.managechannels
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 89c5727b8bc294ae28f48a6e1fc3194b258b9555
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 535b11f4ee27bd30301b983b34075a3d70947162
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844433"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853367"
 ---
 # <a name="manage-channels"></a>채널 관리
 동시성 시각화 도우미의 **스레드 뷰**에서는 특정 패턴을 검사할 수 있도록 프로세스에 대한 채널을 구성할 수 있습니다. 채널을 정렬하고, 이를 위 또는 아래로 이동하고, 표시하거나 숨길 수 있습니다.  

@@ -1,8 +1,6 @@
 ---
 title: 동시성 시각화 도우미 | Microsoft 문서
-ms.custom: ''
 ms.date: 07/11/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.performance.viewnavigation
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 05ed2edd453cd9e267a32bfdd5d9a6b0ad6a7ac3
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 211f941e5ea9e3ae6ed1eeec7f8f558319d0f703
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220666"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908907"
 ---
 # <a name="concurrency-visualizer"></a>동시성 시각화 도우미
 > [!NOTE]
@@ -48,7 +46,7 @@ ms.locfileid: "51220666"
 |[사용률 뷰](../profiling/utilization-view.md)|모든 프로세서의 시스템 작업을 보고 분석하는 방법에 대해 설명합니다.|  
 |[스레드 뷰](../profiling/threads-view-parallel-performance.md)|프로그램의 스레드 간 상호 작용을 분석하는 방법에 대해 설명합니다.|  
 |[코어 뷰](../profiling/cores-view.md)|코어 간의 스레드 마이그레이션을 분석하는 방법에 대해 설명합니다.|  
-|[잘못 동작하는 다중 스레드 응용 프로그램의 일반 패턴](../profiling/common-patterns-for-poorly-behaved-multithreaded-applications.md)|몇 가지 일반적인 패턴을 설명하고 이러한 패턴이 동시성 시각화 도우미에서 어떻게 나타나는지 보여 줍니다.|  
+|[잘못 동작하는 다중 스레드 애플리케이션의 일반 패턴](../profiling/common-patterns-for-poorly-behaved-multithreaded-applications.md)|몇 가지 일반적인 패턴을 설명하고 이러한 패턴이 동시성 시각화 도우미에서 어떻게 나타나는지 보여 줍니다.|  
 |[Visual Studio에서 병렬 개발 블로그](http://go.microsoft.com/fwlink/?LinkId=235385)|동시성 시각화 도우미에 대한 팁과 유용한 정보를 제공합니다.|  
 |[성능 보고서 뷰](../profiling/performance-report-views.md)|Visual Studio 프로파일링 도구의 보고서 및 뷰에 대한 참조 정보를 제공합니다.|  
 |[동시성 시각화 도우미 SDK](../profiling/concurrency-visualizer-sdk.md)|동시성 시각화 도우미에서 추가 정보를 표시하도록 소스 코드를 계측하는 방법을 설명합니다.|  

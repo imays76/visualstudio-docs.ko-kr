@@ -1,24 +1,23 @@
 ---
-title: 에뮬레이터를 사용하여 Sharepoint 2010 응용 프로그램용 단위 테스트 격리
+title: 에뮬레이터를 사용하여 Sharepoint 2010 애플리케이션용 단위 테스트 격리
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: baa1ebbc63f0e9649e1601bbcb6220ef8bc5f5b5
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 8101b8a183cda69c2a59a0ae1142a91557b4a02f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296062"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949617"
 ---
-# <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>에뮬레이터를 사용하여 Sharepoint 2010 응용 프로그램용 단위 테스트 격리
+# <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>에뮬레이터를 사용하여 Sharepoint 2010 애플리케이션용 단위 테스트 격리
 
-Microsoft.SharePoint.Emulators 패키지는 Microsoft SharePoint 2010 응용 프로그램에 대한 격리된 단위 테스트를 만들도록 도와주는 라이브러리 집합을 제공합니다. 에뮬레이터는 [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) 격리 프레임워크의 [shim](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)을 사용하여 SharePoint API의 가장 일반적인 개체 및 메서드를 가장하는 간단한 메모리 내 개체를 만듭니다. SharePoint 메서드가 에뮬레이트되지 않는 경우가 에뮬레이터의 기본 동작을 변경하려면 Fakes shim을 만들어서 원하는 결과를 제공할 수 있습니다.
+Microsoft.SharePoint.Emulators 패키지는 Microsoft SharePoint 2010 애플리케이션에 대한 격리된 단위 테스트를 만들도록 도와주는 라이브러리 집합을 제공합니다. 에뮬레이터는 [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) 격리 프레임워크의 [shim](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)을 사용하여 SharePoint API의 가장 일반적인 개체 및 메서드를 가장하는 간단한 메모리 내 개체를 만듭니다. SharePoint 메서드가 에뮬레이트되지 않는 경우가 에뮬레이터의 기본 동작을 변경하려면 Fakes shim을 만들어서 원하는 결과를 제공할 수 있습니다.
 
 기존 테스트 메서드 및 클래스는 에뮬레이터 컨텍스트에서 실행되도록 쉽게 변환될 수 있습니다. 이 기능을 통해 이중 사용 테스트를 만들 수 있습니다. 이중 사용 테스트는 실제 SharePoint API에 대한 통합 테스트와 에뮬레이터를 사용하는 격리된 단위 테스트 간에 전환할 수 있습니다.
 
@@ -550,5 +549,5 @@ namspace MySPAppTests
 ## <a name="see-also"></a>참고 항목
 
 - [코드 단위 테스트](../test/unit-test-your-code.md)
-- [코딩된 UI 테스트를 사용하여 SharePoint 2010 응용 프로그램 테스트](../test/testing-sharepoint-2010-applications-with-coded-ui-tests.md)
+- [코딩된 UI 테스트를 사용하여 SharePoint 2010 애플리케이션 테스트](../test/testing-sharepoint-2010-applications-with-coded-ui-tests.md)
 - [SharePoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)

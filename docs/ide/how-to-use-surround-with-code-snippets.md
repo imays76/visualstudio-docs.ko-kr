@@ -2,7 +2,6 @@
 title: 코드 감싸기 코드 조각 사용 방법 | Microsoft Docs
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - surround-with snippets
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e2c5211291fbfe3bb7c8ab3fe1eaa371a2dd8e2c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d3d306d9399ee9454d1967c24a734c5d9b9b2eb9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943191"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908811"
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>방법: 코드 감싸기 코드 조각 사용
 

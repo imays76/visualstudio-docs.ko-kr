@@ -1,8 +1,6 @@
 ---
 title: MSBuild의 예약된 속성 및 잘 알려진 속성 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ac2305b11702e7e8364cc2eedd8446c987def3a
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 82ab1ec887fd6a0c881f2d1e4b0c1295e1c67716
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648867"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967737"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>MSBuild의 예약된 속성 및 잘 알려진 속성
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에서는 프로젝트 파일과 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 이진 파일에 대한 정보를 저장하는 미리 정의된 속성 집합을 제공합니다. 이러한 속성은 다른 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 속성과 동일한 방식으로 평가됩니다. 예를 들어, `MSBuildProjectFile` 속성을 사용하려면 `$(MSBuildProjectFile)`을 입력합니다.  

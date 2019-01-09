@@ -2,7 +2,6 @@
 title: Live Unit Test 2017로 코드를 테스트하는 방법 알아보기
 ms.date: 08/31/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio ALM
@@ -11,12 +10,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8908b592283f81d8c60a2adb93c12af3f5e61ba7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 6b96faf4ec1daa80bdd6d97e623fd0e155a39325
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056787"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942189"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Visual Studio에서 Live Unit Testing 시작
 
@@ -105,7 +104,7 @@ Visual Studio 솔루션에서 Live Unit Testing을 사용하도록 설정하면 
 
       - `HasEmbeddedSpaces`는 문자열에 포함된 공백 문자가 있는 경우 `true`를 반환하고 그렇지 않은 경우 `false`를 반환합니다.
 
-1. **솔루션 탐색기**에서 StringLibrary 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다. **응용 프로그램** 탭에서 다음 그림과 같이 **루트 네임 스페이스** 텍스트 상자에 있는 텍스트를 삭제합니다. 루트 네임 스페이스는 소스 코드의 [Namespace 문](/dotnet/visual-basic/language-reference/statements/namespace-statement)으로 정의됩니다.
+1. **솔루션 탐색기**에서 StringLibrary 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다. **애플리케이션** 탭에서 다음 그림과 같이 **루트 네임 스페이스** 텍스트 상자에 있는 텍스트를 삭제합니다. 루트 네임 스페이스는 소스 코드의 [Namespace 문](/dotnet/visual-basic/language-reference/statements/namespace-statement)으로 정의됩니다.
 
    ![Visual Basic 프로젝트에 대한 [프로젝트 속성] 대화 상자](./media/lut-start/vb-properties.png)
 

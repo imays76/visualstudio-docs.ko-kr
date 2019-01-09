@@ -2,7 +2,6 @@
 title: 실행 중인 프로세스에 성능 도구 연결
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.attach
@@ -18,15 +17,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb245b6930d1a633d5d5befa3266c3c7540c0915
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 193a7bfeeae82147a64643871da70a72400e5054
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53048530"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859687"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>방법: 실행 중인 프로세스에 성능 도구 연결 및 분리
-프로파일러를 사용하여 실행 프로세스에 연결하거나 실행 프로세스에서 분리하여 더 쉽게 성능 데이터를 샘플링하고 수집할 수 있습니다. 이 방법을 사용하면 응용 프로그램 로드 시간에 대한 데이터를 수집하지 않거나 특정 상태에 도달한 후 프로세스의 성능을 모니터링하려고 할 때 프로세스를 프로파일링할 수 있습니다.  
+프로파일러를 사용하여 실행 프로세스에 연결하거나 실행 프로세스에서 분리하여 더 쉽게 성능 데이터를 샘플링하고 수집할 수 있습니다. 이 방법을 사용하면 애플리케이션 로드 시간에 대한 데이터를 수집하지 않거나 특정 상태에 도달한 후 프로세스의 성능을 모니터링하려고 할 때 프로세스를 프로파일링할 수 있습니다.  
   
 > [!NOTE]
 >  [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] IDE(통합 개발 환경) 내에서 수행되는 프로세스 연결 및 분리에는 다음 단계가 적용됩니다. 명령줄 도구를 사용하는 방법에 대한 자세한 내용은 [명령줄에서 프로파일링](../profiling/using-the-profiling-tools-from-the-command-line.md)을 참조하세요. 서비스를 프로파일링하는 방법에 대한 자세한 내용은 [서비스 프로파일링](../profiling/command-line-profiling-of-services.md)을 참조하세요.  

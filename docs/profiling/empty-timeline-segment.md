@@ -1,8 +1,6 @@
 ---
 title: 빈 시간 표시 막대 세그먼트 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.timeline.empty
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad8d87c0574ac2c7671012fff6a81a568d6bff5f
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: a3411de6fbc4d30f3b8dcb3dbe7a8eeba12e8ad9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34764532"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959375"
 ---
 # <a name="empty-timeline-segment"></a>빈 시간 표시 막대 세그먼트
 동시성 시각화 도우미에서 타임라인의 섹션이 비어 있는 이유(흰색 배경)는 채널 종류에 따라 달라집니다.  

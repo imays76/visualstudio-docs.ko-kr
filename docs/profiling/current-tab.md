@@ -1,8 +1,6 @@
 ---
 title: 현재 탭 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.reportnav.current
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9964da1521852d942490c09b83135c62f6be3ed9
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 04700ebac239be6c72038b30c67d66cfb0e3ec7f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749501"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964736"
 ---
 # <a name="current-tab"></a>현재 탭
 **현재** 탭을 클릭하면 CPU 스레드 세그먼트가 선택된 경우 타임라인에서 현재 선택 지점과 가장 가까운 호출 스택(사용 가능한 경우)을 볼 수 있습니다.  이 경우, 선택 지점은 타임라인 위에 검은색 화살표 또는 캐럿으로 표시됩니다. 차단 세그먼트가 선택되어 있으면 이 세그먼트에는 실행 항목이 없었으므로 캐럿이 표시되지 않습니다. 하지만 세그먼트가 여전히 강조 표시되어 있고 호출 스택이 표시됩니다.  

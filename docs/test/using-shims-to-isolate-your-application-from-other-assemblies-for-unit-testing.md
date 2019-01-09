@@ -2,21 +2,20 @@
 title: shim을 사용하여 단위 테스트를 위한 애플리케이션 격리
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b94852b15891566bdfc38dd3fd8de9e706f38737
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 908a31a50b1af99f7123f292f250f9262a7da62e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065612"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947337"
 ---
-# <a name="use-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>shim을 사용하여 단위 테스트를 위한 다른 어셈블리에서 응용 프로그램 격리
+# <a name="use-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>shim을 사용하여 단위 테스트를 위한 다른 어셈블리에서 애플리케이션 격리
 
 **shim 형식**은 Microsoft Fakes 프레임워크가 환경에서 테스트 대상 구성 요소를 쉽게 격리시킬 수 있도록 하기 위해 사용하는 두 기술 중 하나입니다. shim은 특정 메서드 호출을 테스트의 일부로 작성하는 코드로 우회합니다. 대부분의 메서드는 외부 조건에 따라 다른 결과를 반환하지만 shim은 테스트에 의해 제어되며 모든 호출에서 일관된 결과를 반환할 수 있습니다. 이렇게 하면 테스트를 훨씬 쉽게 작성할 수 있습니다.
 
@@ -154,7 +153,7 @@ End Class
 
 shim 클래스 이름은 원래 형식 이름에 `Fakes.Shim` 접두사를 추가하여 구성합니다.
 
-shim은 테스트 대상 응용 프로그램의 코드에 *우회*를 삽입하여 작동합니다. 원래 메서드가 호출될 때마다 Fakes 시스템은 실제 메서드를 호출하는 대신 shim 코드가 호출되도록 우회를 수행합니다.
+shim은 테스트 대상 애플리케이션의 코드에 *우회*를 삽입하여 작동합니다. 원래 메서드가 호출될 때마다 Fakes 시스템은 실제 메서드를 호출하는 대신 shim 코드가 호출되도록 우회를 수행합니다.
 
 우회는 런타임에 생성 및 삭제됩니다. 항상 `ShimsContext`의 수명 내에서 우회를 만들어야 합니다. 삭제하면 활성화된 동안 만든 shim이 모두 제거됩니다. 이 작업은 `using` 문 내에서 수행하는 것이 가장 좋습니다.
 

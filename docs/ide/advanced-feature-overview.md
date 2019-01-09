@@ -3,19 +3,18 @@ title: Visual Studio 2017의 고급 기능
 titleSuffix: ''
 ms.date: 06/01/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd351ef1bf6b1e5eee16451e554d6cae94c60127
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 739426d5d93628c90638fef32526484f27eef3e8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159401"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828500"
 ---
 # <a name="features-of-visual-studio-2017"></a>Visual Studio 2017의 기능
 
@@ -31,7 +30,7 @@ Visual Studio의 모듈식 설치 관리자를 사용하면 선호하는 프로�
 
 ## <a name="create-cloud-enabled-apps-for-azure"></a>Azure용 클라우드 사용 앱 만들기
 
-Visual Studio는 Microsoft Azure에서 구동하는 클라우드 지원 응용 프로그램을 쉽게 만들 수 있는 도구 모음을 제공합니다. IDE에서 직접 Microsoft Azure의 응용 프로그램과 서비스를 구성, 빌드, 디버그, 패키징 및 배포할 수 있습니다. Azure 도구 및 템플릿을 받으려면 Visual Studio를 설치할 때 **Azure 개발** 워크로드를 선택합니다.
+Visual Studio는 Microsoft Azure에서 구동하는 클라우드 지원 애플리케이션을 쉽게 만들 수 있는 도구 모음을 제공합니다. IDE에서 직접 Microsoft Azure의 애플리케이션과 서비스를 구성, 빌드, 디버그, 패키징 및 배포할 수 있습니다. Azure 도구 및 템플릿을 받으려면 Visual Studio를 설치할 때 **Azure 개발** 워크로드를 선택합니다.
 
 ![Azure 개발 워크로드](../data-tools/media/azure-development-workload.png)
 
@@ -73,7 +72,7 @@ Visual Studio를 사용하여 Android, iOS 및 기타 [모바일 디바이스](h
 
 - [Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md)를 사용하여 C#으로 2D 및 3D 게임을 빌드합니다.
 
-- [플랫폼 간 개발용 C++](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md)를 사용하여 iOS, Android 및 Windows 장치용 네이티브 C++ 앱을 빌드하고 iOS, Android 및 Windows용으로 빌드된 라이브러리에서 공통 코드를 공유합니다.
+- [플랫폼 간 개발용 C++](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md)를 사용하여 iOS, Android 및 Windows 디바이스용 네이티브 C++ 앱을 빌드하고 iOS, Android 및 Windows용으로 빌드된 라이브러리에서 공통 코드를 공유합니다.
 
 - [Android Emulator](../cross-platform/visual-studio-emulator-for-android.md)를 사용하여 Android 앱을 배포, 테스트 및 디버그합니다.
 
@@ -95,9 +94,9 @@ Visual Studio의 **SQL Server 개체 탐색기**는 SQL Server Management Studio
 
 [테스트](../test/improve-code-quality.md)를 위해 Visual Studio는 단위 테스트, Live Unit Testing, IntelliTest, 부하 및 성능 테스트 등을 제공합니다. Visual Studio에는 디자인, 보안 및 기타 형식의 결함을 파악하는 고급 [코드 분석](../code-quality/code-analysis-for-managed-code-overview.md) 기능도 있습니다.
 
-## <a name="deploy-your-finished-application"></a>완성된 응용 프로그램 배포
+## <a name="deploy-your-finished-application"></a>완성된 애플리케이션 배포
 
-사용자 또는 고객에게 응용 프로그램을 배포할 준비가 되면 Microsoft Store 또는 SharePoint 사이트에 배포하든, InstallShield 또는 Windows Installer 기술을 사용하여 배포하든 Visual Studio에서는 배포 작업을 수행할 수 있는 도구를 제공합니다. 이 경우 IDE를 통해 모두 액세스할 수 있습니다. 자세한 내용은 [응용 프로그램, 서비스 및 구성 요소 배포](../deployment/deploying-applications-services-and-components.md)를 참조하세요.
+사용자 또는 고객에게 애플리케이션을 배포할 준비가 되면 Microsoft Store 또는 SharePoint 사이트에 배포하든, InstallShield 또는 Windows Installer 기술을 사용하여 배포하든 Visual Studio에서는 배포 작업을 수행할 수 있는 도구를 제공합니다. 이 경우 IDE를 통해 모두 액세스할 수 있습니다. 자세한 내용은 [애플리케이션, 서비스 및 구성 요소 배포](../deployment/deploying-applications-services-and-components.md)를 참조하세요.
 
 ## <a name="manage-your-source-code-and-collaborate-with-others"></a>소스 코드 관리 및 다른 사용자와 공동 작업
 
@@ -105,7 +104,7 @@ GitHub를 포함한 모든 공급자가 호스팅하는 Git 리포지토리에�
 
 Azure DevOps Services는 소프트웨어를 계획, 호스트, 자동화 및 배포하고 팀의 공동 작업을 지원하기 위한 클라우드 기반 서비스입니다. Azure DevOps Services는 버전 제어 시스템에 저장된 코드의 연속 빌드 및 릴리스(CI/CD)를 위한 파이프라인뿐만 아니라 Git 리포지토리(분산된 버전 제어) 및 Team Foundation 버전 제어(중앙 집중식 버전 제어)도 지원합니다. 또한 Azure DevOps Services는 스크럼, CMMI 및 Agile 개발 방법론도 지원합니다.
 
-TFS(Team Foundation Server)는 Visual Studio용 응용 프로그램 수명 주기 관리 허브입니다. 개발 프로세스와 관련된 모든 사람이 단일 솔루션을 사용하여 참여할 수 있도록 해줍니다. TFS는 성격이 다른 팀과 프로젝트들을 관리하는 데 유용합니다.
+TFS(Team Foundation Server)는 Visual Studio용 애플리케이션 수명 주기 관리 허브입니다. 개발 프로세스와 관련된 모든 사람이 단일 솔루션을 사용하여 참여할 수 있도록 해줍니다. TFS는 성격이 다른 팀과 프로젝트들을 관리하는 데 유용합니다.
 
 네트워크에 Azure DevOps 조직 또는 Team Foundation Server가 있는 경우 Visual Studio의 **팀 탐색기** 창을 통해 연결합니다. 이 창에서 코드를 소스 제어에 체크 인 또는 체크 아웃하고, 작업 항목을 관리하고, 빌드를 시작하고, 단체 방 및 작업 영역에 액세스할 수 있습니다. **빠른 실행** 상자나 **보기** > **팀 탐색기** 또는 **팀** > **연결 관리**의 주 메뉴에서 **팀 탐색기**를 열 수 있습니다.
 

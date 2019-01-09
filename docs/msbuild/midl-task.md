@@ -1,8 +1,6 @@
 ---
 title: MIDL 작업 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - VC.Project.VCMidlTool.ServerStubFile
@@ -28,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1affc4d84b8ea44cbaed51f656c8a3e97e04f97a
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 724c4de3ca582a98d22eaf1bcb3a8761bb4eff55
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219811"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860834"
 ---
 # <a name="midl-task"></a>MIDL 작업
 MIDL(Microsoft 인터페이스 정의 언어) 컴파일러 도구인 *midl.exe*를 래핑합니다. 자세한 내용은 [MIDL 명령줄 참조](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference)를 참조하세요.  
@@ -45,7 +43,7 @@ MIDL(Microsoft 인터페이스 정의 언어) 컴파일러 도구인 *midl.exe*�
   
      선택적 **String[]** 매개 변수입니다.  
   
-     가져온 IDL 파일, 포함된 헤더 파일 및 ACF(응용 프로그램 구성 파일)가 검색되는 디렉터리 목록에 디렉터리를 추가합니다.  
+     가져온 IDL 파일, 포함된 헤더 파일 및 ACF(애플리케이션 구성 파일)가 검색되는 디렉터리 목록에 디렉터리를 추가합니다.  
   
      자세한 내용은 [MIDL 명령줄 참조](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference)에서 **/I** 옵션을 참조하세요.  
   
@@ -331,7 +329,7 @@ MIDL(Microsoft 인터페이스 정의 언어) 컴파일러 도구인 *midl.exe*�
   
      선택적 **문자열** 매개 변수입니다.  
   
-     응용 프로그램이 실행되는 환경을 지정합니다.  
+     애플리케이션이 실행되는 환경을 지정합니다.  
   
      각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.  
   

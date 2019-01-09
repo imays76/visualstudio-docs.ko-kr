@@ -1,7 +1,7 @@
 ---
 title: Visual Studio Build Tools 2017 워크로드 및 구성 요소 ID
 titleSuffix: ''
-description: Visual Studio 작업 및 구성 요소 ID를 사용하여 기존 Windows 기반 응용 프로그램을 빌드합니다.
+description: Visual Studio 작업 및 구성 요소 ID를 사용하여 기존 Windows 기반 애플리케이션을 빌드합니다.
 keywords: ''
 author: TerryGLee
 ms.author: tglee
@@ -13,17 +13,16 @@ helpviewer_keywords:
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.service: ''
-ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.assetid: b99298df-0280-47fc-af73-44cd7a8ac553
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e47eca638e81cf1b99a451e3017614be45d2c59
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: f1e5ab69491af3add542e30bb4cdd44047ca094e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063048"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942176"
 ---
 # <a name="visual-studio-build-tools-2017-component-directory"></a>Visual Studio Build Tools 2017 구성 요소 디렉터리
 

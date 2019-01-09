@@ -2,7 +2,6 @@
 title: 파일에서 바꾸기 명령
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - edit.replaceinfiles
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bf54892d17a877cd8e2c3ffd21ebd513e303d6c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f24005473780591a89afcf97eae234976ff81a85
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946665"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960014"
 ---
 # <a name="replace-in-files-command"></a>파일에서 바꾸기 명령
 **찾기 및 바꾸기** 창의 **파일에서 바꾸기**에서 사용할 수 있는 옵션의 하위 집합을 사용하여 파일의 텍스트를 바꿉니다.
@@ -37,11 +36,11 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
 ## <a name="arguments"></a>인수
  `findwhat`
 
- 필수. 일치하는 텍스트입니다.
+ 필수 요소. 일치하는 텍스트입니다.
 
  `replacewith`
 
- 필수. 일치된 텍스트를 대체할 텍스트입니다.
+ 필수 요소. 일치된 텍스트를 대체할 텍스트입니다.
 
 ## <a name="switches"></a>스위치
  /all 또는 /a
@@ -100,7 +99,7 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
 
  선택 사항입니다. 단어 단위로 검색합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  이 예제에서는 `btnCancel`을 검색하고, "내 Visual Studio 프로젝트" 폴더에 있는 모든 .cls 파일에서 `btnReset`으로 바꾸고, **찾기 결과 2** 창에서 대체 정보를 표시합니다.
 
 ```
@@ -114,4 +113,4 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
 - [명령 창](../../ide/reference/command-window.md)
 - [찾기/명령 상자](../../ide/find-command-box.md)
 - [Visual Studio 명령](../../ide/reference/visual-studio-commands.md)
-- [Visual Studio 명령 별칭](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

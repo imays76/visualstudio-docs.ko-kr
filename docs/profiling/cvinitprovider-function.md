@@ -1,8 +1,6 @@
 ---
 title: CvInitProvider 함수 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkers/CvInitProvider
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 78b7fbb6480f0793b1641159cd3f06c471907603
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 171537a752818e31ba6a3e7e185fd02017dcb967
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750105"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967711"
 ---
 # <a name="cvinitprovider-function"></a>CvInitProvider 함수
 표식 공급자를 초기화합니다. 여타의 동시성 시각화 도우미 SDK 함수 앞에 호출되어야 합니다.  

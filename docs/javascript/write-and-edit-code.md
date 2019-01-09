@@ -1,10 +1,8 @@
 ---
 title: JavaScript 개발자를 위한 편집 소개
 description: Visual Studio의 코드 편집기에 대한 이 소개에서는 Visual Studio에서 JavaScript 코드를 보다 쉽게 작성, 탐색 및 이해하는 몇 가지 방법을 보여줍니다.
-ms.custom: ''
 ms.date: 12/13/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-nodejs
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
@@ -13,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 5f511b668c207ae719dbb981d7dc5640f0fa124c
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: ebc5666ca037276d5b148151e2b41756b105dc2d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802698"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967429"
 ---
 # <a name="learn-to-use-the-code-editor"></a>코드 편집기를 사용하는 방법 알아보기
 

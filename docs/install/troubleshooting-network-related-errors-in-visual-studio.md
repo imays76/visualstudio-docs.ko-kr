@@ -1,9 +1,7 @@
 ---
 title: 네트워크 또는 프록시 오류 문제 해결
 description: 방화벽 또는 프록시 서버 배후에서 Visual Studio를 설치하거나 사용할 때 발생할 수 있는 네트워크 또는 프록시 관련 오류에 대한 솔루션을 찾습니다.
-ms.custom: ''
 ms.date: 02/12/2018
-ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -18,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d344682f948421bf6d02ff14d41fa26fec1c3f32
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4693a50246493a97e74ba75dc7f516ce72a215ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53047618"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914944"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Visual Studio 설치 또는 사용 시의 네트워크 관련 오류 문제 해결
 
@@ -49,7 +47,7 @@ ms.locfileid: "53047618"
 
     - &#42;.live.com
 
-- 또는 Visual Studio를 다시 시작할 때 http:&amp;#47;&amp;#47;go.microsoft.com 주소 및 서버 엔드포인트 둘 다에 대해 프록시 인증 대화 상자가 표시되도록 허용 목록에서 http:&amp;#47;&amp;#47;go.microsoft.com 주소를 제거할 수 있습니다.
+- 또는 Visual Studio를 다시 시작할 때 http:&#47;&#47;go.microsoft.com 주소 및 서버 엔드포인트 둘 다에 대해 프록시 인증 대화 상자가 표시되도록 허용 목록에서 http:&#47;&#47;go.microsoft.com 주소를 제거할 수 있습니다.
 
     또는
 

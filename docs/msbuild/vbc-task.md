@@ -1,8 +1,6 @@
 ---
 title: Vbc 작업 | Microsoft Docs
-ms.custom: ''
 ms.date: 04/12/2018
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Vbc
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf2ab82b16d3cdaf493afc15f506dc237e6a91d4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7b186f5be27bb1457b7d9beb1a056bec90821f45
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937878"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956155"
 ---
 # <a name="vbc-task"></a>Vbc 작업
 실행 파일(*.exe*), 동적 링크 라이브러리(*.dll*) 또는 코드 모듈(*.netmodule*)을 생성하는 *vbc.exe*를 래핑합니다. *vbc.exe*에 대한 자세한 내용은 [Visual Basic 명령줄 컴파일러](/dotnet/visual-basic/reference/command-line-compiler/index)를 참조하세요.  
@@ -78,7 +76,7 @@ ms.locfileid: "49937878"
 | `SdkPath` | 선택적 `String` 매개 변수입니다.<br /><br /> *mscorlib.dll* 및 *microsoft.visualbasic.dll*의 위치를 지정합니다. 이 매개 변수는 *vbc.exe* 컴파일러의 [-sdkpath](/dotnet/visual-basic/reference/command-line-compiler/sdkpath) 스위치에 해당합니다. |
 | `Sources` | 선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> 하나 이상의 Visual Basic 원본 파일을 지정합니다. |
 | `TargetCompactFramework` | 선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`이면 작업에서 [!INCLUDE[Compact](../extensibility/includes/compact_md.md)]를 대상으로 지정합니다. 이 스위치는 *vbc.exe* 컴파일러의 [-netcf](/dotnet/visual-basic/reference/command-line-compiler/netcf) 스위치에 해당합니다. |
-| `TargetType` | 선택적 `String` 매개 변수입니다.<br /><br /> 출력 파일의 파일 형식을 지정합니다. 이 매개 변수는 각각 코드 라이브러리를 만드는 `library`, 콘솔 응용 프로그램을 만드는 `exe`, 모듈을 만드는 `module` 또는 Windows 프로그램을 만드는 `winexe`를 값으로 가질 수 있습니다. 기본값은 `library`입니다. 이 매개 변수는 *vbc.exe* 컴파일러의 [-target](/dotnet/visual-basic/reference/command-line-compiler/target) 스위치에 해당합니다. |
+| `TargetType` | 선택적 `String` 매개 변수입니다.<br /><br /> 출력 파일의 파일 형식을 지정합니다. 이 매개 변수는 각각 코드 라이브러리를 만드는 `library`, 콘솔 애플리케이션을 만드는 `exe`, 모듈을 만드는 `module` 또는 Windows 프로그램을 만드는 `winexe`를 값으로 가질 수 있습니다. 기본값은 `library`입니다. 이 매개 변수는 *vbc.exe* 컴파일러의 [-target](/dotnet/visual-basic/reference/command-line-compiler/target) 스위치에 해당합니다. |
 | `Timeout` | 선택적 `Int32` 매개 변수입니다.<br /><br /> 작업 실행 파일이 얼마 후에 종료될 지를 밀리초 단위로 지정합니다. 기본값은 시간 제한이 없음을 나타내는 `Int.MaxValue`입니다. |
 | `ToolPath` | 선택적 `String` 매개 변수입니다.<br /><br /> 작업에서 내부 실행 파일(*vbc.exe*)을 로드할 위치를 지정합니다. 이 매개 변수를 지정하지 않으면 작업에서는 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]를 실행하고 있는 버전의 Framework에 해당하는 SDK 설치 경로가 사용됩니다. |
 | `TreatWarningsAsErrors` | 선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`이면 모든 경고가 오류로 처리됩니다. 자세한 내용은 [-warnaserror(Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror)를 참조하세요. |
@@ -90,10 +88,10 @@ ms.locfileid: "49937878"
 | `Win32Icon` | 선택적 `String` 매개 변수입니다.<br /><br /> **파일 탐색기**에서 출력 파일을 원하는 모양으로 표시하는 *.ico* 파일을 어셈블리에 삽입합니다. 이 매개 변수는 *vbc.exe* 컴파일러의 [-win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) 스위치에 해당합니다. |
 | `Win32Resources` | 선택적 `String` 매개 변수입니다.<br /><br /> Win32 리소스(*.res*) 파일을 출력 파일에 삽입합니다. 이 매개 변수는 *vbc.exe* 컴파일러의 [-win32resource](/dotnet/visual-basic/reference/command-line-compiler/win32resource) 스위치에 해당합니다. |
 
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.ToolTask> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [ToolTaskExtension 기본 클래스](../msbuild/tooltaskextension-base-class.md)를 참조하세요.  
 
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 Visual Basic 프로젝트를 컴파일합니다.  
 
 ```xml  

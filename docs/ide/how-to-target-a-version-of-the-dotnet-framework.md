@@ -2,7 +2,6 @@
 title: .NET Framework 버전 대상
 ms.date: 02/06/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - targeting .NET Framework [Visual Studio]
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3673d3c57a33d99c3c26dd22cd5c2b7b8959e7d6
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 95e2b6bef32bdc5830e54795eb2580e7dd1fa068
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059472"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860168"
 ---
 # <a name="how-to-target-a-version-of-the-net-framework"></a>방법: 한 버전의 .NET Framework를 대상으로 지정
 
@@ -52,7 +51,7 @@ C++ 프로젝트용 대상 버전을 변경하는 방법에 대한 자세한 내
 
     ![Visual Studio 솔루션 탐색기 속성](../ide/media/vs_slnexplorer_properties.png)
 
-1. **속성** 창의 왼쪽 열에서 **응용 프로그램** 탭을 선택합니다.
+1. **속성** 창의 왼쪽 열에서 **애플리케이션** 탭을 선택합니다.
 
     ![Visual Studio 응용 프로그램 속성 응용 프로그램 탭](../ide/media/vs_slnexplorer_properties_applicationtab.png)
 
@@ -72,6 +71,6 @@ C++ 프로젝트용 대상 버전을 변경하는 방법에 대한 자세한 내
 
 - [Visual Studio 멀티 타기팅 개요](../ide/visual-studio-multi-targeting-overview.md)
 - [.NET Framework 대상 지정 오류 문제 해결](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)
-- [응용 프로그램 페이지, 프로젝트 디자이너(C#)](../ide/reference/application-page-project-designer-csharp.md)
-- [응용 프로그램 페이지, 프로젝트 디자이너(Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)
+- [애플리케이션 페이지, 프로젝트 디자이너(C#)](../ide/reference/application-page-project-designer-csharp.md)
+- [애플리케이션 페이지, 프로젝트 디자이너(Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)
 - [방법: 대상 프레임워크 및 플랫폼 도구 세트 수정(C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)

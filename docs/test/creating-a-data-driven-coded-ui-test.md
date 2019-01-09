@@ -2,7 +2,6 @@
 title: 데이터 기반의 코딩된 UI 테스트 만들기
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests, data-driven
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92bbeb34733332b2bada3955dda2058d63460fec
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e46353f7e38a1822d5cbcc21441d1d4dccdf5c57
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068489"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968607"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>데이터 기반의 코딩된 UI 테스트 만들기
 
@@ -31,7 +30,7 @@ ms.locfileid: "53068489"
 
 ## <a name="create-a-test-project"></a>테스트 프로젝트 만들기
 
-이 샘플은 Windows 계산기 응용 프로그램에서 실행되는 코딩된 UI 테스트를 만듭니다. 이 테스트에서는 두 숫자를 더한 다음 어설션을 사용해 합이 올바른지 유효성을 검사합니다. 그런 다음, 두 숫자의 매개 변수 값과 어설션이 데이터 기반 방식으로 코딩되어 쉼표로 구분된 값(.*csv*) 파일에 저장됩니다.
+이 샘플은 Windows 계산기 애플리케이션에서 실행되는 코딩된 UI 테스트를 만듭니다. 이 테스트에서는 두 숫자를 더한 다음 어설션을 사용해 합이 올바른지 유효성을 검사합니다. 그런 다음, 두 숫자의 매개 변수 값과 어설션이 데이터 기반 방식으로 코딩되어 쉼표로 구분된 값(.*csv*) 파일에 저장됩니다.
 
 ### <a name="step-1---create-a-coded-ui-test"></a>1단계 - 코딩된 UI 테스트 만들기
 

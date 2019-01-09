@@ -3,7 +3,6 @@ title: npm 패키지 관리
 description: Visual Studio를 통해 Node.js 패키지 관리자(npm)를 사용하여 패키지를 관리할 수 있습니다.
 ms.custom: seodec18
 ms.date: 06/06/2018
-ms.technology: vs-nodejs
 ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
@@ -13,16 +12,16 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 297bad186c7f3412e56a5a59f65b82ab9cd35a03
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: bae9beac69daf78bfd6a8604c4364af857dff0a6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049655"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845956"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Visual Studio에서 npm 패키지 관리
 
-npm을 사용하면 Node.js 응용 프로그램에서 사용할 패키지를 설치하고 관리할 수 있습니다. npm에 익숙하지 않고 자세히 알아보려면 [npm 설명서](https://docs.npmjs.com/)로 이동합니다.
+npm을 사용하면 Node.js 애플리케이션에서 사용할 패키지를 설치하고 관리할 수 있습니다. npm에 익숙하지 않고 자세히 알아보려면 [npm 설명서](https://docs.npmjs.com/)로 이동합니다.
 
 Visual Studio를 사용하면 쉽게 npm과 상호 작용하고 UI를 통해 또는 직접 npm 명령을 실행할 수 있습니다. 다음 메서드를 사용할 수 있습니다.
 * [솔루션 탐색기에서 패키지 설치](#npmInstallWindow)

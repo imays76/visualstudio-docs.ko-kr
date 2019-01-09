@@ -1,8 +1,6 @@
 ---
 title: 전달 로거 만들기 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, forwarding loggers
@@ -13,17 +11,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6597bfcdcbfb5acddbbbf8804d198036c5b98c53
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: f7bb2519389503be10bbab57a3ea97fb3b0609d4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880983"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53936557"
 ---
 # <a name="create-forwarding-loggers"></a>전달 로거 만들기
 전달 로거는 다중 프로세서 시스템에서 프로젝트를 빌드할 때 모니터링하려는 이벤트를 선택할 수 있도록 하여 로깅 효율성을 개선합니다. 전달 로거를 사용하여 원하지 않는 이벤트가 중앙 로거를 가득 채우고, 빌드 시간이 느려지고, 로그를 어지럽히지 않도록 방지할 수 있습니다.  
   
- 전달 로거를 만들려면 <xref:Microsoft.Build.Framework.IForwardingLogger> 인터페이스를 구현한 다음 해당 메서드를 수동으로 구현하거나, <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger> 클래스 및 미리 구성된 해당 메서드를 사용할 수 있습니다. (두 번째 방법은 대부분의 응용 프로그램에서 충분히 사용할 수 있습니다.)  
+ 전달 로거를 만들려면 <xref:Microsoft.Build.Framework.IForwardingLogger> 인터페이스를 구현한 다음 해당 메서드를 수동으로 구현하거나, <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger> 클래스 및 미리 구성된 해당 메서드를 사용할 수 있습니다. (두 번째 방법은 대부분의 애플리케이션에서 충분히 사용할 수 있습니다.)  
   
 ## <a name="register-events-and-respond-to-them"></a>등록 이벤트 및 해당 이벤트에 대한 응답  
  전달 로거는 보조 빌드 엔진에서 빌드 이벤트를 보고할 때 이에 대한 정보를 수집합니다. 이 작업은 다중 프로세서 시스템에서 빌드하는 동안 기본 빌드 프로세스에 의해 만들어진 작업자 프로세스입니다. 그런 다음 전달 로거는 지정한 지침에 따라 중앙 로거에 전달할 이벤트를 선택합니다.  

@@ -2,7 +2,6 @@
 title: -Clean(devenv.exe)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - builds [Team System], cleaning files
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7827f11a93e517f81eb03cfe2e33305859b4d78
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 051485646b7ff19ddae40518215c410d05fa4849
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948857"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906893"
 ---
 # <a name="clean-devenvexe"></a>/Clean (devenv.exe)
 모든 중간 파일 및 출력 디렉터리를 정리합니다.
@@ -34,7 +33,7 @@ devenv FileName /Clean [ /project projectnameorfile [/projectconfig name ] ]
 ## <a name="arguments"></a>인수
  `FileName`
 
- 필수. 솔루션 파일 또는 프로젝트 파일의 전체 경로 및 이름입니다.
+ 필수 요소. 솔루션 파일 또는 프로젝트 파일의 전체 경로 및 이름입니다.
 
  /project `ProjName`
 
@@ -44,14 +43,14 @@ devenv FileName /Clean [ /project projectnameorfile [/projectconfig name ] ]
 
  선택 사항입니다. `/project` 정리 시 사용할 프로젝트 빌드 구성 이름입니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
  이 스위치는 IDE(통합 개발 환경)내에서 **솔루션 정리** 메뉴 명령과 동일한 기능을 수행합니다.
 
  공백을 포함하는 문자열은 큰따옴표로 묶습니다.
 
  오류를 포함한 정리 및 빌드에 대한 요약 정보는 **명령** 창 또는 `/out` 스위치로 지정된 로그 파일에 표시할 수 있습니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  첫 번째 예제는 솔루션 파일에 지정된 기본 구성을 사용하여 `MySolution` 솔루션을 정리합니다.
 
  두 번째 예제에서는 `MySolution`의 `Debug` 솔루션 구성 내에 있는 `Debug` 프로젝트 빌드 구성을 사용하여 `CSharpConsoleApp` 프로젝트를 정리합니다.

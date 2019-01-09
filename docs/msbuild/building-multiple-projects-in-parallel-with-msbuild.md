@@ -1,8 +1,6 @@
 ---
 title: MSBuild를 사용하여 병렬로 여러 프로젝트 빌드 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - parallel project builds
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c375f9af63f1622df995ca28315048f682c1ca4
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 700a9e8e32a9846de3ee9f64424430bfe10c6778
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879007"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857762"
 ---
 # <a name="build-multiple-projects-in-parallel-with-msbuild"></a>MSBuild를 사용하여 병렬로 여러 프로젝트 빌드
 다중 프로젝트를 빌드하기 위해 MSBuild를 사용하여 병렬로 실행하면 더 빠를 수 있습니다. 빌드를 병렬로 실행하려면 다중 코어 또는 다중 프로세서 컴퓨터에서 다음 설정을 사용합니다.  

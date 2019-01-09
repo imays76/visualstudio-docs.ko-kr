@@ -1,8 +1,6 @@
 ---
 title: CvLeaveSpan 함수 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkers/CvLeaveSpan
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe234d60e8cd86279d3dcc01da95e6d2e6202213
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 4de86d390b03eb38a449ada23f4189b9baca6152
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749160"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967724"
 ---
 # <a name="cvleavespan-function"></a>CvLeaveSpan 함수
 범위의 끝을 표시합니다.  

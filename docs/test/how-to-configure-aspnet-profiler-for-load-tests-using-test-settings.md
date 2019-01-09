@@ -9,24 +9,23 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 197a6c4a743f5f30e060950413b7e2214fb91b36
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a2a8b32ae161a2c3ba0f58c37e2a369b00db534e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068424"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963646"
 ---
 # <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>방법: Visual Studio에서 테스트 설정을 사용하여 부하 테스트에 대한 ASP.NET 프로파일러 구성
 
-ASP.NET 프로파일러 진단 데이터 어댑터를 사용하여 ASP.NET 프로파일러 정보를 수집할 수 있습니다. 이 진단 데이터 어댑터는 ASP.NET 응용 프로그램에 대한 성능 데이터를 수집합니다.
+ASP.NET 프로파일러 진단 데이터 어댑터를 사용하여 ASP.NET 프로파일러 정보를 수집할 수 있습니다. 이 진단 데이터 어댑터는 ASP.NET 애플리케이션에 대한 성능 데이터를 수집합니다.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
 > Microsoft Test Manager를 사용하여 실행되는 테스트에는 이 진단 데이터 어댑터를 사용할 수 없습니다. ASP.NET 프로파일러 진단 데이터 어댑터는 Visual Studio Enterprise가 필요한 웹 사이트를 사용하는 부하 테스트에만 사용할 수 있습니다.
 
-ASP.NET 프로파일러 진단 데이터 어댑터를 사용하여 부하 테스트를 실행할 때 응용 프로그램 계층에서 ASP.NET 프로파일러 데이터를 수집할 수 있습니다. 실행 시간이 1시간 이상인 부하 테스트와 같이 오랜 시간이 걸리는 부하 테스트의 경우에는 이 프로파일러를 실행하면 안 됩니다. 프로파일러 파일이 수백 메가바이트까지 커질 수 있기 때문입니다. 대신 보다 짧은 부하 테스트에 ASP.NET 프로파일러를 사용해도 성능 문제를 깊이 있게 진단할 수 있습니다.
+ASP.NET 프로파일러 진단 데이터 어댑터를 사용하여 부하 테스트를 실행할 때 애플리케이션 계층에서 ASP.NET 프로파일러 데이터를 수집할 수 있습니다. 실행 시간이 1시간 이상인 부하 테스트와 같이 오랜 시간이 걸리는 부하 테스트의 경우에는 이 프로파일러를 실행하면 안 됩니다. 프로파일러 파일이 수백 메가바이트까지 커질 수 있기 때문입니다. 대신 보다 짧은 부하 테스트에 ASP.NET 프로파일러를 사용해도 성능 문제를 깊이 있게 진단할 수 있습니다.
 
 > [!NOTE]
 > ASP.NET 프로파일러 진단 데이터 어댑터에서는 IIS(Internet Information Services) 프로세스를 프로파일링합니다. 따라서 개발 웹 서버에서는 이 진단 데이터 어댑터가 작동하지 않습니다. 부하 테스트에서 웹 사이트를 프로파일링하려면 IIS가 실행 중인 컴퓨터에 테스트 에이전트를 설치해야 합니다. 이 테스트 에이전트는 부하를 생성하지 않으며, 컬렉션만을 위한 에이전트가 됩니다. 자세한 내용은 [테스트 에이전트 설치 및 구성](../test/lab-management/install-configure-test-agents.md)을 참조하세요.
@@ -58,7 +57,7 @@ ASP.NET 프로파일러 진단 데이터 어댑터를 사용하여 부하 테스
 
     -   각 쿼리를 실행하는 데 관련된 타이밍 정보(최소값, 최대값, 평균 및 합계)
 
-이제 테스트 설정에 구성된 ASP.NET 프로파일러 진단 데이터 어댑터를 사용하여 ASP.NET 웹 응용 프로그램에 대한 ASP.NET 프로파일링 데이터를 수집할 수 있습니다.
+이제 테스트 설정에 구성된 ASP.NET 프로파일러 진단 데이터 어댑터를 사용하여 ASP.NET 웹 애플리케이션에 대한 ASP.NET 프로파일링 데이터를 수집할 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 

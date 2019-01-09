@@ -2,7 +2,6 @@
 title: 설정 가져오기 및 내보내기 명령
 ms.date: 11/21/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - Tools.ImportandExportSettings
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f212e5c5becb8cf2ae575510825a9c7c9034222
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 38144381520002e1e3e9f9c7b440d6b87b90cb6d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388704"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943329"
 ---
 # <a name="import-and-export-settings-command"></a>설정 가져오기 및 내보내기 명령
 
@@ -46,11 +45,11 @@ Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
 
 선택 사항입니다. 현재 설정을 다시 설정합니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 스위치 없이 이 명령을 실행하면 **설정 가져오기 및 내보내기** 마법사가 열립니다. 자세한 내용은 [설정 동기화](../synchronized-settings-in-visual-studio.md) 및 [환경 설정](../environment-settings.md)을 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 명령은 현재 설정을 `MyFile.vssettings` 파일로 내보냅니다.
 
