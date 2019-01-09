@@ -12,19 +12,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 12583f73c9f3977371ebd193716f2513fc0befc4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c26470e02f6c7e5d8911df7e743bce0cb0e560bb
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727323"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087882"
 ---
 # <a name="ienumjsstackframes-interface"></a>IEnumJsStackFrames 인터페이스
-스택을 제공 하도록 디버거를 구현한 JavaScript 위한 jscript9diag.dll를 해제 합니다.  
+스택을 제공 하도록 디버거를 구현한 javascript의 jscript9diag.dll를 해제 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 IEnumJsStackFrames : public IUnknown;  
 ```  
   
@@ -35,7 +35,7 @@ IEnumJsStackFrames : public IUnknown;
 |이름|설명|  
 |----------|-----------------|  
 |[IEnumJsStackFrames::Next 메서드](../../winscript/reference/ienumjsstackframes-next-method.md)|지정 된 프레임 수를 가져옵니다.|  
-|[IEnumJsStackFrames::Reset 메서드](../../winscript/reference/ienumjsstackframes-reset-method.md)|첫 번째 요소 앞으로 스택 프레임을 다시 설정합니다.|  
+|[IEnumJsStackFrames::Reset 메서드](../../winscript/reference/ienumjsstackframes-reset-method.md)|첫 번째 요소 앞의 위치는 스택 프레임을 다시 설정합니다.|  
   
 ## <a name="requirements"></a>요구 사항  
  **헤더:** jscript9diag.h  

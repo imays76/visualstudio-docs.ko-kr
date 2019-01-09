@@ -8,15 +8,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5993256b41a07c4861ef2def58dc14d7fd849313
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 4fa897ff92cb6956bef59dfcb7a860b24d0d8bae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305613"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885746"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>WPF 및 Entity Framework 6을 사용하여 간단한 데이터 애플리케이션 만들기
 
@@ -355,7 +354,7 @@ Visual Studio에서 생성 된 기본 배열을 변경 일부 수동으로 XAML�
 
 Windows Forms 응용 프로그램에서 데이터베이스의 행을 이동 하 고 기본적인 CRUD 작업 수행에 대 한 단추를 사용 하 여을 BindingNavigator 개체를 가져옵니다. WPF는 BindingNavigator를 제공 하지 않습니다 하지만 쉽게 만드세요. 가로 StackPanel 내에서 단추를 사용 하 여 작업을 수행 하 고이 정보를 코드 숨김의 메서드에 바인딩되는 명령 단추를 연결 합니다.
 
-에서는 명령 논리 부분이 있습니다. (1) 명령, (2) 바인딩, (3) 단추 및 코드 숨김에서 명령 처리기 (4).
+명령 논리에서는 부분이 있습니다. (1) 명령, (2) 바인딩, (3) 단추 및 코드 숨김에서 명령 처리기 (4).
 
 ### <a name="add-commands-bindings-and-buttons-in-xaml"></a>XAML에서 명령, 바인딩 및 단추 추가
 
@@ -425,7 +424,7 @@ Windows Forms 응용 프로그램에서 데이터베이스의 행을 이동 하 
 
 [!code-csharp[CommandHandlers#3](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#3)]
 
-## <a name="run-the-application"></a>응용 프로그램 실행
+## <a name="run-the-application"></a>애플리케이션 실행
 
 디버깅을 시작하려면 **F5** 키를 누릅니다. 고객 및 표의 채워진 주문 데이터가 표시 되어야 하 고 탐색 단추는 예상 대로 작동 해야 합니다. 클릭할 **커밋** 데이터를 입력 한 후 모델에 새 고객 또는 주문과 추가 합니다. 클릭할 **취소** 데이터를 저장 하지 않고 새 고객 또는 새 주문 양식에서 백업할 수 있습니다. 기존 고객 및 주문 입력란에서 직접 편집할 수 있습니다 하 고 해당 변경 내용을 모델에 자동으로 작성 됩니다.
 

@@ -2,7 +2,6 @@
 title: 트리거 일시 중단, 다시 시작 및 백그라운드 이벤트를 UWP를 디버깅 하는 동안 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 01/16/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.error.background_task_activate_failure
@@ -16,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 8d467d19a55d47ccfa231bef2b473fa5be405921
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 9c5543150708238ecc0026bcb1acb012feaaf37d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054663"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919679"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>트리거하는 방법 일시 중단, 다시 시작 및 백그라운드 이벤트를 Visual Studio에서 UWP 앱을 디버깅 하는 동안
 디버깅하고 있지 않을 때는 Windows PLM( **프로세스 수명 관리** )에서 응용 프로그램의 실행 상태(디바이스 상태 및 사용자 작업에 응답하여 응용 프로그램 시작, 일시 중단, 다시 시작 및 종료)를 제어합니다. 디버깅하는 중에는 Windows가 이러한 활성화 이벤트를 사용하지 않도록 설정합니다. 이 항목에서는 디버거에서 이러한 이벤트를 발생시키는 방법에 대해 설명합니다.  
@@ -31,7 +30,7 @@ ms.locfileid: "53054663"
  프로세스 수명 관리 및 백그라운드 작업에 대한 자세한 내용은 [Launching, resuming, and multitasking](/windows/uwp/launch-resume/index)을 참조하십시오.  
   
 ##  <a name="BKMK_Trigger_Process_Lifecycle_Management_events"></a> 프로세스 수명 관리 이벤트 트리거  
- 사용자가 응용 프로그램에서 벗어나거나 Windows가 절전 상태로 들어갈 때 응용 프로그램이 일시 중단될 수 있습니다. `Suspending` 이벤트에 응답하여 관련 응용 프로그램 및 사용자 데이터를 영구 저장소에 저장하고 리소스를 해제할 수 있습니다. 응용 프로그램은 **일시 중단됨** 상태에서 다시 시작되는 경우 **실행 중** 상태가 되고 일시 중단되었을 때의 위치에서 계속됩니다. `Resuming` 이벤트에 응답하여 응용 프로그램 상태를 복원하거나 새로 고치고 리소스를 회수할 수 있습니다.  
+ 사용자가 응용 프로그램에서 벗어나거나 Windows가 절전 상태로 들어갈 때 응용 프로그램이 일시 중단될 수 있습니다. `Suspending` 이벤트에 응답하여 관련 응용 프로그램 및 사용자 데이터를 영구 저장소에 저장하고 리소스를 해제할 수 있습니다. 응용 프로그램은 **일시 중단됨** 상태에서 다시 시작되는 경우 **실행 중** 상태가 되고 일시 중단되었을 때의 위치에서 계속됩니다. `Resuming` 이벤트에 응답하여 애플리케이션 상태를 복원하거나 새로 고치고 리소스를 회수할 수 있습니다.  
   
  Windows에서 일시 중단된 응용 프로그램을 최대한 많이 메모리에 유지하려고 해도 이를 위한 충분한 리소스가 없으면 응용 프로그램이 종료될 수 있습니다. 사용자가 응용 프로그램을 명시적으로 닫을 수도 있습니다. 사용자가 응용 프로그램을 닫았음을 나타내는 특수 이벤트는 없습니다.  
   
@@ -81,7 +80,7 @@ ms.locfileid: "53054663"
   
          ![C&#35;&#47;VB 디버그 시작 응용 프로그램 속성](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")  
   
-    -   JavaScript 및 Visual C++ 프로젝트의 경우 **응용 프로그램 시작** 목록에서 **아니요** 를 선택합니다.  
+    -   JavaScript 및 Visual C++ 프로젝트의 경우 **애플리케이션 시작** 목록에서 **아니요** 를 선택합니다.  
   
          ![C&#43;&#43;&#47;응용 프로그램 디버그 속성 VB 시작](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")  
   
@@ -101,7 +100,7 @@ ms.locfileid: "53054663"
 ##  <a name="BKMK_Diagnosing_background_task_activation_errors"></a> 백그라운드 작업 활성화 오류 진단  
  Windows 이벤트 뷰어의 백그라운드 인프라에 대한 진단 로그에는 백그라운드 작업 오류를 진단하고 문제를 해결하는 데 사용할 수 있는 자세한 정보가 포함되어 있습니다. 로그를 보려면 다음을 수행합니다.  
   
-1.  이벤트 뷰어 응용 프로그램을 엽니다.  
+1.  이벤트 뷰어 애플리케이션을 엽니다.  
   
 2.  **작업** 창에서 **보기** 를 선택하고 **분석 및 디버그 로그 표시** 가 선택되어 있는지 확인합니다.  
   
@@ -111,6 +110,6 @@ ms.locfileid: "53054663"
   
 ## <a name="see-also"></a>참고 항목  
  [Visual Studio로 UWP 앱 테스트](../test/testing-store-apps-with-visual-studio.md)   
- [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
+ [Debug apps in Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)   
  [애플리케이션 수명 주기](/windows/uwp/launch-resume/app-lifecycle)   
  [Launching, resuming, and multitasking](/windows/uwp/launch-resume/index)

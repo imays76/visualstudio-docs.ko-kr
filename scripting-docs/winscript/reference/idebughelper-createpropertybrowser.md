@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f728068b6d1db6fe70a084ae680f32a78a0a2760
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c3eedf9d6ed07b510d7912a5b28d23e0a1f05dda
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727483"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087752"
 ---
 # <a name="idebughelpercreatepropertybrowser"></a>IDebugHelper::CreatePropertyBrowser
-속성 브라우저를 래핑하는 VARIANT를 반환 합니다.  
+VARIANT를 래핑하는 속성 브라우저를 반환 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT CreatePropertyBrowser(  
    VARIANT*                  pvar,  
    LPCOLESTR                 bstrName,  
@@ -41,13 +41,13 @@ HRESULT CreatePropertyBrowser(
   
 #### <a name="parameters"></a>매개 변수  
  `pvar`  
- [in] 찾아보려면 루트 variant입니다.  
+ [in] 이동할 루트 variant입니다.  
   
  `bstrName`  
- [in] 루트 부여할 이름입니다.  
+ [in] 루트를 지정할 이름입니다.  
   
  `pdat`  
- [in] 스레드가 요청 속성입니다. 이 매개 변수가 NULL 이면 없습니다 마샬링 수행 됩니다.  
+ [in] 속성을 요청 하는 스레드입니다. 이 매개 변수가 NULL 이면 없습니다 마샬링을 수행 됩니다.  
   
  `ppdob`  
  [out] 속성 브라우저입니다.  

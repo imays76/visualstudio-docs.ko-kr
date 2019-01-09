@@ -1,8 +1,6 @@
 ---
 title: '오류: TRANSACT-SQL 실행이 디버깅 없이 끝났습니다 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/08/2018
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.sqlde_sql_executed_but_not_debugged
@@ -17,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0efb83f6b6cbebc255f6f47c30e3934d74de7870
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
-ms.translationtype: MT
+ms.openlocfilehash: ce27a15766af51a10cf1697f3ed08e6aebf2bb96
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349009"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863058"
 ---
-# <a name="error-transact-sql-execution-ended-without-debugging"></a>오류: 디버깅 없이 Transact-SQL 실행이 중지되었습니다.
+# <a name="error-transact-sql-execution-ended-without-debugging"></a>오류: 디버깅 없이 Transact-SQL 실행이 중지됨
 
 이 오류는 TRANSACT-SQL 또는 SQLCLR 프로시저를 디버깅 하려는 SQL Server에서 디버거가 디버깅 메시지를 수신 하지 못하는 경우 발생 합니다.  
   
@@ -42,7 +40,7 @@ ms.locfileid: "51349009"
   
   이 오류를 해결하려면 다음 작업을 수행해야 합니다.  
   
-  - 권한 설정을 확인합니다. 자세한 내용은 [방법: 디버깅에 대 한 SQL Server 권한 설정](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)합니다.  
+  - 권한 설정을 확인합니다. 자세한 내용은 [방법: 디버깅을 위해 SQL Server 사용 권한 설정](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)합니다.  
   
   - SQL 디버깅이 올바르게 설정되어 있는지 확인합니다.  
   

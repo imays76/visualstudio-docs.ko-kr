@@ -1,8 +1,6 @@
 ---
 title: '방법: 혼합된 모드에서 디버그 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/05/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1439dce6930b71e29141031e93175e0a6aaa519c
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: db26a3a68b15dcd6252f6bd02a540e105c993b54
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389476"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896060"
 ---
 # <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>방법: 혼합된 모드에서 디버깅 (C#, c + +, Visual Basic)
 
@@ -36,10 +34,10 @@ ms.locfileid: "52389476"
 
 호출 앱 프로젝트의 관리 및 네이티브 디버거를 설정할 수 있습니다 **속성** 페이지입니다. 네이티브 및 관리 앱 간에 다를 설정 합니다.
 
-호출 하는 앱의 프로젝트에 액세스할 수 없으면 DLL 프로젝트에서 DLL을 디버깅할 수 있습니다. DLL 프로젝트만을 디버깅 하려면 혼합된 모드가 필요는 없습니다. 자세한 내용은 [How to: Debug from a DLL Project](../debugger/how-to-debug-from-a-dll-project.md)을 참조하세요.
+호출 하는 앱의 프로젝트에 액세스할 수 없으면 DLL 프로젝트에서 DLL을 디버깅할 수 있습니다. DLL 프로젝트만을 디버깅 하려면 혼합된 모드가 필요는 없습니다. 자세한 내용은 [방법: DLL 프로젝트에서 디버그](../debugger/how-to-debug-from-a-dll-project.md)
 
 > [!NOTE]
-> 대화 상자 및 명령 표시에서 가장이 문서에서는 Visual Studio 설정이 나 버전에 따라 달라질 수 있습니다. 설정을 변경 하려면 **도구가** > **설정 가져오기 및 내보내기**합니다. 자세한 내용은 [설정 재설정](../ide/environment-settings.md#reset-settings)합니다.
+> 대화 상자 및 명령 표시에서 가장이 문서에서는 Visual Studio 설정이 나 버전에 따라 달라질 수 있습니다. 설정을 변경 하려면 **도구가** > **설정 가져오기 및 내보내기**합니다. 자세한 내용은 [재설정 설정](../ide/environment-settings.md#reset-settings)을 참조하세요.
 
 ## <a name="enable-mixed-mode-debugging-for-a-native-calling-app"></a>네이티브 호출 앱에 대 한 혼합 모드 디버깅 사용
 

@@ -12,19 +12,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7b4dfa2fab54c4475c603c3e4cbecc046ea90ab9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2e7e30580952c7086a48a148b9bff4483cba98d4
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728063"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088259"
 ---
 # <a name="ijsenumdebugproperty-interface"></a>IJsEnumDebugProperty 인터페이스
-작업을 검색 하는 속성을 제공 합니다.  
+작업 검색 속성을 제공 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 IJsEnumDebugProperty : public IUnknown;  
 ```  
   
