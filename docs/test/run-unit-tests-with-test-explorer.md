@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: dc918adb6a66f64cdcda46ea535cd0ab017c0676
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 177882e93377e428814d6a529c9826f4bf9e1ea2
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939518"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740409"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>테스트 탐색기를 사용하여 단위 테스트 실행
 
@@ -101,8 +101,8 @@ Visual Studio에는 관리 코드 및 네이티브 코드에 대한 Microsoft �
 
 |그룹화|설명|
 |-|-----------------|
-|**기간**|실행 시간을 기준으로 **빠름**, **보통**, **느림**으로 테스트를 그룹화합니다.|
-|**결과**|실행 결과를 기준으로 **실패한 테스트**, **건너뛴 테스트**, **통과한 테스트**로 테스트를 그룹화합니다.|
+|**기간**|실행 시간별 그룹 테스트: **빠른**, **중간** 및 **느림**.|
+|**결과**|실행 결과별 그룹 테스트: **실패한 테스트**, **건너뛴 테스트**, **테스트에 통과함**.|
 |**특성**|정의한 범주/값 쌍을 기준으로 테스트를 그룹화합니다. 특성(trait) 범주 및 값을 지정하는 구문은 단위 테스트 프레임워크에 의해 정의됩니다.|
 |**프로젝트**|프로젝트 이름을 기준으로 테스트를 그룹화합니다.|
 
@@ -150,7 +150,7 @@ Visual Studio에는 관리 코드 및 네이티브 코드에 대한 Microsoft �
 |**파일 경로**|테스트 소스 파일의 정규화된 파일 이름에서 일치 항목을 검색합니다.|
 |**정규화된 이름**|테스트 네임스페이스, 클래스 및 메서드의 정규화된 파일 이름에서 일치 항목을 검색합니다.|
 |**출력**|표준 출력(stdout) 또는 표준 오류(stderr)에 기록된 사용자 정의 오류 메시지를 검색합니다. 출력 메시지를 지정하는 구문은 단위 테스트 프레임워크에 의해 정의됩니다.|
-|**결과**|테스트 탐색기 범주 이름에서 **실패한 테스트**, **건너뛴 테스트**, **통과한 테스트**등의 일치 항목을 검색합니다.|
+|**결과**|테스트 탐색기 범주 이름에서 일치 항목을 검색합니다. **실패한 테스트**, **건너뛴 테스트**, **테스트에 통과함**.|
 
 필터 결과의 하위 집합을 제외하려면 다음 구문을 사용합니다.
 
@@ -187,7 +187,7 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 
 2. 테스트 탐색기에서 테스트 메서드를 선택한 다음 상황에 맞는 메뉴에서 **선택한 테스트 디버그** 를 선택합니다.
 
-   디버거에 대한 자세한 내용은 [Visual Studio에서 디버그](../debugger/debugging-in-visual-studio.md)를 참조하세요.
+   디버거에 대한 자세한 내용은 [Visual Studio에서 디버그](../debugger/debugger-feature-tour.md)를 참조하세요.
 
 ### <a name="diagnose-test-method-performance-issues"></a>테스트 메서드 성능 문제 진단
 

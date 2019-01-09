@@ -17,16 +17,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e00b43f1705079a86d511239d7b38119868d8f4
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 7e28c3a09197fd3fe0b45d40a3402f484ab867d7
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748477"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684904"
 ---
 # <a name="intellisense-in-visual-studio"></a>Visual Studio의 IntelliSense
 
-IntelliSense는 목록 멤버, 매개 변수 정보, 요약 정보 및 단어 자동 완성 등 여러 기능을 포함하는 코드 완성 지원 기능입니다. 이러한 기능을 사용하면 사용 중인 코드에 대한 자세한 정보를 보고, 입력하는 매개 변수를 계속 추적하고, 단 몇 번의 키 입력만으로 속성과 메서드에 대한 호출을 추가할 수 있습니다.
+IntelliSense는 다음과 같은 다양한 기능을 포함하는 코드 완성 지원 도구입니다. 멤버 목록, 매개 변수 정보, 요약 정보 및 전체 단어. 이러한 기능을 사용하면 사용 중인 코드에 대한 자세한 정보를 보고, 입력하는 매개 변수를 계속 추적하고, 단 몇 번의 키 입력만으로 속성과 메서드에 대한 호출을 추가할 수 있습니다.
 
 IntelliSense의 많은 부분은 언어별로 고유합니다. 다른 언어의 IntelliSense에 대한 자세한 내용을 보려면 [참조](#see-also) 섹션에 나열된 항목을 참조하세요.
 
@@ -54,7 +54,7 @@ IntelliSense의 많은 부분은 언어별로 고유합니다. 다른 언어의 
 
 ![매개 변수 정보](../ide/media/vs2015_param_info.png)
 
-XML 문서 주석을 사용하여 함수와 매개 변수에 주석을 달 경우 주석은 매개 변수 정보로 표시됩니다. 자세한 내용은 [XML 코드 주석 제공](../ide/supplying-xml-code-comments.md)을 참조하세요.
+XML 문서 주석을 사용하여 함수와 매개 변수에 주석을 달 경우 주석은 매개 변수 정보로 표시됩니다. 자세한 내용은 [XML 코드 주석 제공](reference/generate-xml-documentation-comments.md)을 참조하세요.
 
 **편집** > **IntelliSense** > **매개 변수 정보**를 선택하거나, **Ctrl**+**Shift**+**스페이스**를 누르거나, 편집기 도구 모음에서 **매개 변수 정보** 단추를 클릭하여 매개 변수 정보를 수동으로 호출할 수 있습니다.
 
@@ -104,4 +104,4 @@ MessageBox( hWnd, "String literal|")
 - [C# IntelliSense](../ide/visual-csharp-intellisense.md)
 - [JavaScript IntelliSense](../ide/javascript-intellisense.md)
 - [코드(C++) 쓰기 및 리팩터링](/cpp/ide/writing-and-refactoring-code-cpp)
-- [XML 코드 주석 제공](../ide/supplying-xml-code-comments.md)
+- [XML 코드 주석 제공](reference/generate-xml-documentation-comments.md)

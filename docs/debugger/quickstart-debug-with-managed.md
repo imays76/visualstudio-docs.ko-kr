@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e35d102a30ffc7b80d39f359542bbdc4c00feff6
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 891387d244a805df2929a120a9312697ad79f192
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257188"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562076"
 ---
-# <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>빠른 시작: Visual Studio 디버거를 사용하여 C# 또는 Visual Basic 디버그
+# <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>빠른 시작: Visual Studio 디버거를 사용하여 C# 또는 Visual Basic으로 디버그
 
 Visual Studio 디버거는 앱을 디버그하도록 돕는 여러 가지 강력한 기능을 제공합니다. 이 항목에는 기본 기능 중 일부에 대해 알아보는 빠른 방법을 제공합니다.
 
@@ -122,7 +122,7 @@ Visual Studio 디버거는 앱을 디버그하도록 돕는 여러 가지 강력
     ```
 
     > [!NOTE]
-    > Visual Basic에서는 시작 개체가 `Sub Main`으로 설정되었는지 확인합니다(**속성 > 응용 프로그램 > 시작 개체**).
+    > Visual Basic에서는 시작 개체가 `Sub Main`으로 설정되었는지 확인합니다(**속성 &gt; 애플리케이션 &gt; 시작 개체**).
 
 ## <a name="set-a-breakpoint"></a>중단점 설정
 
@@ -151,7 +151,7 @@ Visual Studio 디버거는 앱을 디버그하도록 돕는 여러 가지 강력
 
 앱은 실행, `doWork` 호출을 계속하고, 단추를 클릭한 코드 줄에서 일시 중지합니다.
 
-코드를 단계별로 실행하는 데 사용되는 일반적인 키보드 명령은 **F10** 및 **F11**을 포함합니다. 더 자세한 지침은 [초보자 가이드](../debugger/getting-started-with-the-debugger.md)를 참조하세요.
+코드를 단계별로 실행하는 데 사용되는 일반적인 키보드 명령은 **F10** 및 **F11**을 포함합니다. 자세한 지침은 [디버거 소개](../debugger/debugger-feature-tour.md)를 참조하세요.
 
 ## <a name="inspect-variables-in-a-datatip"></a>datatip에서 변수 검사
 

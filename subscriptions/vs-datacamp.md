@@ -3,18 +3,18 @@ title: 선택한 Visual Studio 구독의 DataCamp 혜택을 통해 데이터 과
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 05/30/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: 선택한 Visual Studio 구독에 포함된 DataCamp Training 구독에 대해 알아봅니다.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: cd0b92d8515e488d74cc124c888bb0e8ca9537e6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 47199fc27491843985326f3ceee5dd6fbf3677ad
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863910"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802150"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Visual Studio 구독의 DataCamp Training 혜택
 
@@ -35,19 +35,16 @@ DataCamp 혜택 기간은 Visual Studio 구독에 따라 다릅니다.
    > ![DataCamp 새 계정 만들기](_img/vs-datacamp/vs-datacamp-create-account.png)
    > 
    > [!NOTE]
-   > 계정을 만들기 시작하면 다음과 같은 오류 메시지가 나타날 수 있습니다. “죄송합니다!  프로모션 코드가 잘못되었거나 만료되었습니다."  이것은 프로모션 코드가 만들어질 때 몇 분 후에 만료되기 때문에 발생합니다.  이런 메시지가 표시되면 [혜택](https://my.visualstudio.com/benefits) 페이지로 돌아가서 DataCamp 혜택 타일에서 **활성화** 링크를 클릭하면 됩니다.
+   > 계정을 만들기 시작하면 다음과 같은 오류 메시지가 나타날 수 있습니다. "죄송합니다!  프로모션 코드가 잘못되었거나 만료되었습니다."  이것은 프로모션 코드가 만들어질 때 몇 분 후에 만료되기 때문에 발생합니다.  이런 메시지가 표시되면 [혜택](https://my.visualstudio.com/benefits) 페이지로 돌아가서 DataCamp 혜택 타일에서 **활성화** 링크를 클릭하면 됩니다.
 
 4. 계정을 만든 후에는 학습 경로를 선택할 수 있습니다.  다음 옵션을 사용할 수 있습니다.
     - 데이터 과학을 위한 R 학습
     - 데이터 과학을 위한 Python 학습 시작
     - 데이터 과학 역량 개발
 
-
-~~~
-Just click on your chosen path to get started.
-> [!div class="mx-imgBorder"]
-> ![DataCamp Choose Path](_img\vs-datacamp\vs-datacamp-choose-path.png)
-~~~
+   시작하려면 선택한 경로를 클릭합니다.
+   > [!div class="mx-imgBorder"]
+   > ![DataCamp 경로 선택](_img/vs-datacamp/vs-datacamp-choose-path.png)
 
 5. 경로를 선택한 후 목표를 선택하여 학습 경로를 구체화할 수 있습니다.  예를 들어 "데이터 과학 역량 개발" 경로를 선택하면 다음 옵션이 표시됩니다. 옵션을 선택하거나 **I am not sure.  Show me all career paths**를 선택하면 더 광범위한 경로가 만들어집니다.
    > [!div class="mx-imgBorder"]
@@ -72,18 +69,21 @@ Just click on your chosen path to get started.
 
 | 구독 수준                                                 |     채널                                            | 이점                                                          | 갱신 가능?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise(표준, 연간 클라우드)   | VL, Azure, 일반 정품, | 3개월       |  아니요.  새 구독자만 사용할 수 있음          |
-| Visual Studio Professional(표준, 연간 클라우드) | VL, Azure, 일반 정품                                       | 3개월                                                            |  아니요.  새 구독자만 사용할 수 있음           |
+| Visual Studio Enterprise(Standard)   | VL, Azure, 일반 정품, | 3개월       |  아니요.  새 구독자만 사용할 수 있음          |
+| Visual Studio Professional(표준) | VL, Azure, 일반 정품                                       | 3개월                                                            |  아니요.  새 구독자만 사용할 수 있음           |
 | Visual Studio Test Professional(표준)                         | VL, 일반 정품                                              | 사용 가능                                             |  아니요.  새 구독자만 사용할 수 있음           |
 | MSDN 플랫폼(표준)                                          | VL, 일반 정품                                              | 사용 가능                                              |  아니요.  새 구독자만 사용할 수 있음           |
 | Visual Studio Dev Essentials | N/A  | 2개월 | 아니요. 새 구독자만 사용할 수 있음 |
-| Visual Studio Enterprise(표준, 연간 클라우드)  | NFR<sup>1</sup> |사용할 수 없음  | N/A |
+| Visual Studio Enterprise(Standard)  | NFR<sup>1</sup> |사용할 수 없음  | N/A |
 | Visual Studio Enterprise, Visual Studio Professional(월간 클라우드) | Azure | 사용할 수 없음 | N/A |
 
 
 
-<sup>1</sup> 포함: NFR(전매금지), FTE, MVP(Microsoft Valued Professional), RD(Region Director), MPN(Microsoft 파트너 네트워크), VSIP(Visual Studio Industry Partner), Microsoft Certified Trainer, BizSpark, Imagine
+<sup>1</sup> *포함:  NFR(전매금지), FTE, MVP(Microsoft Valued Professional), RD(Region Director), MPN(Microsoft 파트너 네트워크), VSIP(Visual Studio Industry Partner), Microsoft Certified Trainer, BizSpark, Imagine*
 
+
+> [!NOTE]
+> Microsoft는 더 이상 Visual Studio Professional 연간 구독 및 클라우드 구독에 Visual Studio Enterprise 연간 구독을 제공하지 않습니다. 기존 고객 환경 및 해당 구독의 갱신, 증가, 감소 또는 취소 기능은 변경되지 않습니다. 새 고객은 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)으로 이동하여 Visual Studio를 구입하기 위한 다양한 옵션을 살펴보세요.
 
 
 어떤 구독을 사용하고 있는지 확실하지 않나요?  자신의 이메일 주소에 할당된 모든 구독을 보려면 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)에 연결합니다. 일부 구독이 표시되지 않으면 하나 이상이 다른 전자 메일 주소에 할당되어 있을 수 있습니다.  해당 구독을 보려면 해당 전자 메일 주소로 로그인해야 합니다.

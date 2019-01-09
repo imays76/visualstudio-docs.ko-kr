@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 036774134f705d95fbc526a9e6a336ac43005820
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 33d96729507e0e85318ee357240580d3f3a1c328
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639778"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561764"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>빠른 시작: Visual Studio 디버거를 사용하여 C++ 디버그
 
@@ -28,9 +28,9 @@ Visual Studio 디버거는 앱을 디버그하도록 돕는 여러 가지 강력
 
 1. Visual Studio에서 **파일 > 새 프로젝트**를 선택합니다.
 
-2. **Visual C++** 에서 **Windows 데스크톱**을 선택한 다음, 가운데 창에서 **Windows 콘솔 응용 프로그램**을 선택합니다.
+2. **Visual C++** 에서 **Windows 데스크톱**을 선택한 다음, 가운데 창에서 **Windows 콘솔 애플리케이션**을 선택합니다.
 
-    **Windows 콘솔 응용 프로그램** 프로젝트 템플릿이 표시되지 않으면 **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual Studio 설치 관리자 열기** 링크를 클릭합니다. Visual Studio 설치 관리자가 시작됩니다. **C++를 사용한 데스크톱 개발** 워크로드를 선택한 다음, **수정** 단추를 선택합니다.
+    **Windows 콘솔 애플리케이션** 프로젝트 템플릿이 표시되지 않으면 **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual Studio 설치 관리자 열기** 링크를 클릭합니다. Visual Studio 설치 관리자가 시작됩니다. **C++를 사용한 데스크톱 개발** 워크로드를 선택한 다음, **수정** 단추를 선택합니다.
 
 3. **MyDbgApp**과 같은 이름을 입력하고 **확인**을 클릭합니다.
 
@@ -103,7 +103,7 @@ Visual Studio 디버거는 앱을 디버그하도록 돕는 여러 가지 강력
 
 앱은 실행, `doWork` 호출을 계속하고, 단추를 클릭한 코드 줄에서 일시 중지합니다.
 
-코드를 단계별로 실행하는 데 사용되는 일반적인 키보드 명령은 **F10** 및 **F11**을 포함합니다. 더 자세한 지침은 [초보자 가이드](../debugger/getting-started-with-the-debugger.md)를 참조하세요.
+코드를 단계별로 실행하는 데 사용되는 일반적인 키보드 명령은 **F10** 및 **F11**을 포함합니다. 자세한 지침은 [디버거 소개](../debugger/debugger-feature-tour.md)를 참조하세요.
 
 ## <a name="inspect-variables-in-a-datatip"></a>datatip에서 변수 검사
 

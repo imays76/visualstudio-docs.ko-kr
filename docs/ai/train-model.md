@@ -12,12 +12,12 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - azure
-ms.openlocfilehash: 6cf5c2529d54637e1e6ad4a111c3d3c456e6fae1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6fd6f8befce66a117f5f2dcb598a7359ba9c15c0
+ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882394"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53307647"
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>Azure Batch AI에서 AI 모델 학습
 
@@ -54,7 +54,7 @@ Visual Studio Tools for AI에 통합되므로 Azure에서 동적으로 학습 �
 
     ![샘플 갤러리](media/train-model/mnist-startup.png)
 
-8. <strong>**MNIST 프로젝트를 마우스 오른쪽 단추로 클릭하고 **작업 제출</strong>
+8. <strong>**MNIST 프로젝트**를 마우스 오른쪽 단추로 클릭하고 **작업 제출**</strong>
 
     ![샘플 갤러리](media/train-model/submit-job.png)
 9. **Azure Batch AI** 클러스터를 선택한 다음 **가져오기**를 클릭합니다. `AzureBatchAI_TF_MNIST.json` 파일을 선택하여 사용할 Docker Image 같은 일부 기본 값을 신속하게 입력합니다. 그런 다음 **제출**을 클릭합니다.

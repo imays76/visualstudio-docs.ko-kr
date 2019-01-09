@@ -1,5 +1,5 @@
 ---
-title: '방법: C++ DLL에 대한 단위 테스트 작성'
+title: '방법: C++ DLL의 단위 테스트 작성'
 ms.date: 11/04/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,14 +9,14 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 9458fd6886243102f6479166fb9df21f9e4869fd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a596281d156882dffbef6e1c0993f2c91015e960
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877259"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740168"
 ---
-# <a name="how-to-write-unit-tests-for-c-dlls"></a>방법: C++ DLL에 대한 단위 테스트 작성
+# <a name="how-to-write-unit-tests-for-c-dlls"></a>방법: C++ DLL의 단위 테스트 작성
 
 이 연습에서는 테스트 우선 방법론을 사용하여 기본 C++ DLL을 개발하는 방법을 설명합니다. 기본 단계는 다음과 같습니다.
 
@@ -93,7 +93,7 @@ ms.locfileid: "49877259"
 
      ![C++ Win32 프로젝트를 만드는 중](../test/media/utecpp05.png)
 
-2.  Win32 응용 프로그램 마법사에서 **DLL** 및 **내보내기 기호** 를 선택합니다.
+2.  Win32 애플리케이션 마법사에서 **DLL** 및 **내보내기 기호** 를 선택합니다.
 
      **내보내기 기호** 옵션은 내보낸 메서드를 선언하는 데 사용할 수 있는 편리한 매크로를 생성합니다.
 
@@ -329,7 +329,7 @@ ms.locfileid: "49877259"
 
 ## <a name="see-also"></a>참고 항목
 
-- [기존 C++ 응용 프로그램에 단위 테스트 추가](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)
+- [기존 C++ 애플리케이션에 단위 테스트 추가](../test/how-to-use-microsoft-test-framework-for-cpp.md)
 - [Microsoft.VisualStudio.TestTools.CppUnitTestFramework 사용](how-to-use-microsoft-test-framework-for-cpp.md)
 - [네이티브 코드 디버그](../debugger/debugging-native-code.md)
 - [연습: 동적 연결 라이브러리 만들기 및 사용(C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)

@@ -9,19 +9,19 @@ description: Visual Studio 구독에 포함된 Microsoft 제품을 찾고 다운
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ec2dd900e0cfae3b150bba52e31834efb53628e6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f8bfc394c2c40ee18df8a741f5101105cc2e189e
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831434"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803216"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 구독자 다운로드 사용
 구독자 혜택의 일환으로 다양한 소프트웨어 다운로드에 액세스할 수 있습니다.
 [다운로드](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs) 탭에 액세스하려면 구독에 로그인해야 합니다.
 
 ## <a name="product-availability"></a>제품 가용성
-일반적으로 소프트웨어 개발 프로젝트와 관련된 모든 상용 및 소비자 Microsoft 제품이 Visual Studio 구독자에게 제공됩니다. Visual Studio 구독을 사용하면 연장된 제품 지원 기간이 끝난 후에도 일반적으로 오랫동안 제품을 다운로드할 수 있으므로 고객이 레거시 응용 프로그램을 개발 및 테스트하고 최신 플랫폼으로 전환할 수 있습니다. 아래에서 설명한 대로 특정 제품을 구독자에게 제공할 수 없는 경우도 있지만 이러한 문제를 최소화하기 위해 모든 노력을 기울이고 있습니다.
+일반적으로 소프트웨어 개발 프로젝트와 관련된 모든 상용 및 소비자 Microsoft 제품이 Visual Studio 구독자에게 제공됩니다. Visual Studio 구독을 사용하면 연장된 제품 지원 기간이 끝난 후에도 일반적으로 오랫동안 제품을 다운로드할 수 있으므로 고객이 레거시 애플리케이션을 개발 및 테스트하고 최신 플랫폼으로 전환할 수 있습니다. 아래에서 설명한 대로 특정 제품을 구독자에게 제공할 수 없는 경우도 있지만 이러한 문제를 최소화하기 위해 모든 노력을 기울이고 있습니다.
 
 구독자가 특정 제품을 사용할 수 없는 몇 가지 이유는 다음과 같습니다.
 
@@ -30,7 +30,7 @@ ms.locfileid: "49831434"
 - **공개적으로 제공되는 제품입니다.** 일부 도구, SDK, DDK 및 서비스 팩은 [Microsoft 다운로드 센터](https://www.microsoft.com/download)에서 공개적으로 제공됩니다. 이러한 제품 중 일부는 [다운로드]에 게시되지 않을 수 있습니다.
 - **아직 릴리스되지 않은 제품입니다.**  [다운로드]에서는 많은 시험판(베타) 버전 및 릴리스 후보가 제공됩니다. 그러나 모든 베타 버전이 포함될 수 있는 것은 아닙니다. 예를 들어 일부 베타 버전에는 특별한 등록이나 자격이 필요합니다. 공개 기술 베타 프로그램에 대한 자세한 내용은 [Microsoft Connect](http://connect.microsoft.com/)를 참조하세요.
 - **해당 국가에서 사용할 수 없는 제품입니다.** 일부 Microsoft 제품은 지역 제한으로 인해 사용할 수 없습니다.
-- **중복 소프트웨어입니다.** Office 제품군, 독립 실행형 Office 다운로드 및 제품 키 선택은 Office가 포함된 구독에서 더 이상 사용할 수 없습니다. 다운로드 및 제품 키는 동일한 버전의 해당 최상위 Office 제품군에서 사용할 수 있습니다.  예를 들어 Powerpoint 2010을 검색하면 검색 결과가 생성되지 않습니다.  그러나 Office 2010(Powerpoint 2010이 포함된 Office 제품군)을 검색하면 해당 제품군을 다운로드할 수 있습니다.
+- **중복 소프트웨어입니다.** Office 제품군, 독립 실행형 Office 다운로드 및 제품 키 선택은 Office가 포함된 구독에서 더 이상 사용할 수 없습니다. 다운로드 및 제품 키는 동일한 버전의 해당 최상위 Office 제품군에서 사용할 수 있습니다.  예를 들어 PowerPoint 2010을 검색하면 검색 결과가 생성되지 않습니다.  그러나 Office 2010(PowerPoint 2010이 포함된 Office 제품군)을 검색하면 해당 제품군을 다운로드할 수 있습니다.
 
 ## <a name="what-do-i-get"></a>무엇을 얻을 수 있나요?
 다운로드 수와 유형은 구독 수준과 프로그램 멤버 자격에 따라 다릅니다.  예를 들어 Visual Studio Enterprise 표준 구독이 있는 구독자는 Microsoft 파트너 네트워크 또는 BizSpark 프로그램 구독을 통해 구독을 가져오는 구독자와 다른 다운로드를 사용할 수 있습니다.  각 구독 수준에서 사용할 수 있는 다운로드에 대한 자세한 내용은 [혜택 수준별 제품](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx) 목록을 다운로드하세요.

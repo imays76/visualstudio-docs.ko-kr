@@ -3,24 +3,24 @@ title: MPN(Microsoft 파트너 네트워크)의 파트너에게 제공된 Visual
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 03/16/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: 제공되는 구독, 적용되는 규칙 및 MPN에서 제공되는 구독의 수에 대한 세부 정보입니다.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7175dd503c2e91091b5bb6499fa54c0e5f2586ec
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 72889ca5d206a8f04562b3a91e5d116339279417
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876771"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739454"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>MPN(Microsoft 파트너 네트워크)의 파트너에게 제공된 Visual Studio 구독 관리
 역량을 구하거나 MPN에서 Action Pack을 구매하는 파트너는 Visual Studio 구독을 사용할 자격이 있습니다. 이러한 구독은 사용자별로 라이선스가 발급되며 파트너 회사에 근무하는 특정 지명 사용자에게 할당된 경우만 유효합니다.
 
 ## <a name="subscriptions-for-partners-with-an-mpn-competency"></a>MPN 역량 파트너에 대한 구독
-파트너가 실버 레벨 또는 골드 레벨의 역량을 획득하는 경우 많은 핵심 Visual Studio Enterprise 구독을 획득하는 것입니다. 이 핵심 혜택은 해당 파트너가 하나 이상의 골드 역량을 획득하는 경우 변경됩니다. Visual Studio Enterprise 구독은 대략 [Visual Studio Enterprise 연간 클라우드 구독](https://visualstudio.microsoft.com/vs/pricing/)에 해당하지만 특정 혜택이 제거된(대부분의 혜택은 MPN를 통해 제공된 Visual Studio Enterprise 구독의 일부로서보다는 일반 MPN 혜택으로서 파트너에게 별도로 제공됩니다) 사용자 지정 제품입니다.
+파트너가 실버 레벨 또는 골드 레벨의 역량을 획득하는 경우 많은 핵심 Visual Studio Enterprise 구독을 획득하는 것입니다. 이 핵심 혜택은 해당 파트너가 하나 이상의 골드 역량을 획득하는 경우 변경됩니다. Visual Studio Enterprise 구독은 대략 [Visual Studio Enterprise Standard 구독](https://visualstudio.microsoft.com/vs/pricing/)에 해당하지만 특정 혜택이 제거된(대부분의 혜택은 MPN를 통해 제공된 Visual Studio Enterprise 구독의 일부로서보다는 일반 MPN 혜택으로서 파트너에게 별도로 제공됩니다) 사용자 지정 제품입니다.
 
 ### <a name="core-visual-studio-benefit-for-earning-at-least-one-competency-of-any-kind"></a>모든 종류의 하나 이상의 역량 획득에 대한 핵심 Visual Studio 혜택
 
@@ -32,7 +32,7 @@ ms.locfileid: "49876771"
 
 | 역량                                  | **실버** 역량에 대해 획득한 추가 구독 | **골드** 역량에 대해 획득한 추가 구독 |
 |---------------------------------------------|-----------------------------------------------------------|---------------------------------------------------------|
-| 응용 프로그램 개발                     | 5개 Visual Studio Enterprise 구독                  | 25개 Visual Studio Enterprise 구독               |
+| 애플리케이션 개발                     | 5개 Visual Studio Enterprise 구독                  | 25개 Visual Studio Enterprise 구독               |
 | 클라우드 CRM(고객 관계 관리)      | 5개 Visual Studio Enterprise 구독                  | 25개 Visual Studio Enterprise 구독               |
 | 클라우드 플랫폼                              | 5개 Visual Studio Enterprise 구독                  | 25개 Visual Studio Enterprise 구독               |
 | 클라우드 생산성                          | 5개 Visual Studio Enterprise 구독                  | 25개 Visual Studio Enterprise 구독               |

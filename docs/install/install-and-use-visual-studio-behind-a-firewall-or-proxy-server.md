@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 91074815c0723f24bbb89bcb45eafc0fae5866d6
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 3a4e3ec3c7d581d8c99018b2dd8c89f37e33c6ea
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160168"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348497"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>방화벽 또는 프록시 서버 배후에서 Visual Studio와 Azure 서비스 설치 및 사용
 
@@ -74,7 +74,7 @@ Visual Studio 설치 관리자는 다양한 도메인과 다운로드 서버에�
 | dl.google.com | JavaScript를 사용한 모바일 개발(Android SDK 및 NDK, 에뮬레이터) <br /><br />.NET을 사용한 모바일 개발(Android SDK 및 NDK, 에뮬레이터) |
 | www\.incredibuild.com | C++를 사용한 게임 개발(IncrediBuild) |
 | incredibuildvs2017i.azureedge.net | C++를 사용한 게임 개발(IncrediBuild) |
-| www\.python.org | Python 개발(Python) <br /><br />데이터 과학 및 분석 응용 프로그램(Python) |
+| www\.python.org | Python 개발(Python) <br /><br />데이터 과학 및 분석 애플리케이션(Python) |
 | | |
 
 ## <a name="use-visual-studio-and-azure-services"></a>Visual Studio 및 Azure 서비스 사용
@@ -101,18 +101,18 @@ Visual Studio 설치 관리자는 다양한 도메인과 다운로드 서버에�
 | NuGet<br><br>NuGet 패키지<br> 검색 | Api.nuget.org <br>www.nuget.org <br>Nuget.org<br><br>crl3.digicert.com <br>crl4.digicert.com <br>ocsp.digicert.com <br>cacerts.digicert.com | https<br><br>http/s | 443<br><br>80/443<br> | 서명된 NuGet 패키지를 확인하는 데 사용됩니다.<br><br>NuGet 패키지 및 버전을 검색하는 데 필요합니다. |
 | GitHub 리포지토리 정보 | api.github.com | https | 443 | Bower 패키지에 대한 추가 정보를 가져오는 데 필요합니다. |
 | 웹 Linter | Eslint.org<br><br>www.Bing.com <br><br>www.coffeelint.org | http | 80 | |
-| Cookiecutter<br>탐색기 템플릿<br>검색 <br><br>Cookiecutter <br>탐색기 프로젝트<br> 만들기 | api.github.com <br>raw.githubusercontent.com <br>go.microsoft.com<br><br>pypi.org <br> pypi.python.org | https | 443<br> | 추천 피드 및 github 리포지토리에서 온라인 템플릿을 검색하는 데 사용됩니다. <br><br>PyPI(Python 패키지 인덱스)에서 cookiecutter Python 패키지의 일회성 주문형 설치를 요구하는 cookiecutter 템플릿에서 프로젝트를 만드는 데 사용됩니다. |
+| Cookiecutter<br>탐색기 템플릿<br>검색 <br><br>Cookiecutter <br>탐색기 프로젝트<br> 만들기 | api.github.com <br>raw.githubusercontent.com <br>go.microsoft.com<br><br>pypi.org <br> pypi.python.org | https | 443<br> | 추천 피드 및 GitHub 리포지토리에서 온라인 템플릿을 검색하는 데 사용됩니다. <br><br>PyPI(Python 패키지 인덱스)에서 cookiecutter Python 패키지의 일회성 주문형 설치를 요구하는 cookiecutter 템플릿에서 프로젝트를 만드는 데 사용됩니다. |
 | Python 패키지 <br>검색<br><br>Python 패키지 <br>관리<br><br>Python <br>새 프로젝트 <br>템플릿 | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | https | 443 | pip 패키지를 검색하는 기능을 제공합니다.<br><br>pip가 없을 경우 자동으로 pip를 설치하는 데 사용됩니다. <br><br> 다음을 만드는 데 사용됩니다. <br><br>새 프로젝트 대화 상자에서 다음 Python 프로젝트 템플릿을 cookiecutter 템플릿 URL로 확인하는 데 사용됩니다.<br> - 분류자 프로젝트<br>- 클러스터링 프로젝트 <br> - 재발 프로젝트 <br> - PyKinect를 사용하는 PyGame <br> - Pyvot 프로젝트 |
 | Office 웹 <br>추가 기능(add-in) <br> file:/// <br>확인 <br>서비스 | verificationservice.osi.office.net | https | 443 | Office 웹 추가 기능에 대한 매니페스트의 유효성을 검사하는 데 사용됩니다. |
 | SharePoint 및 <br>Office 추가 기능 | sharepoint.com | https | 443 | SharePoint Online에 대한 SharePoint 및 Office 추가 기능을 게시 및 테스트하는 데 사용됩니다. |
 | 워크플로 관리자 <br>테스트 서비스<br> 호스트 | | http | 12292 | 워크플로를 사용하여 SharePoint 추가 기능을 테스트하기 위해 자동으로 생성되는 방화벽 규칙입니다. |
 | 자동으로 수집되는 <br>안정성 통계 <br>및 기타 <br>CEIP(사용자 환경 <br>개선 프로그램)<br> : Azure SDK 및 <br>SQL 도구 <br><br> | vortex.data.microsoft.com<br> <br>dc.services.visualstudio.com | https | 443 | 사용자의 안정성 통계(크래시/중단 데이터)를 Microsoft로 전송하는 데 사용됩니다. Windows 오류 보고가 사용으로 설정된 경우 실제 크래시/중단 덤프는 여전히 업로드됩니다. 통계 정보만 표시되지 않습니다. <br>Visual Studio에 대한 Azure Tools SDK 확장의 익명 사용 패턴 및 Visual Studio에 대한 SQL 도구의 사용 패턴을 표시하는 데 사용됩니다. |
 | Visual Studio <br> CEIP(사용자 환경 <br>개선 프로그램) <br><br>PerfWatson.exe | vortex.data.microsoft.com<br>dc.services.visualstudio.com<br>visualstudio-devdiv-c2s.msedge.net<br>az667904.vo.msecnd.net <br>scus-breeziest-in.cloudapp.net<br> | https | 443 | 익명 사용 패턴 및 오류 로그를 수집하는 데 사용됩니다. <br><br>UI 고정 문제를 추적하는 데 사용됩니다. |
-| 만들기 및<br>관리 <br>: Azure 리소스 | management.azure.com <br>management.core.windows.net | https | 443 | 웹 응용 프로그램, Azure Functions 또는 WebJob의 게시를 지원하기 위해 Azure Websites 또는 기타 리소스를 만드는 데 사용됩니다. |
+| 만들기 및<br>관리 <br>: Azure 리소스 | management.azure.com <br>management.core.windows.net | https | 443 | 웹 애플리케이션, Azure Functions 또는 WebJob의 게시를 지원하기 위해 Azure Websites 또는 기타 리소스를 만드는 데 사용됩니다. |
 | 업데이트된 웹 게시 도구 <br>확인 및 확장 <br>권장 사항 | marketplace.visualstudio.com | https | 443 | 업데이트된 게시 도구의 가용성을 확인하는 데 사용됩니다. 사용하지 않도록 설정할 경우 웹 게시에 사용 가능한 권장 확장이 표시되지 않을 수 있습니다. |
 | 업데이트된 Azure 리소스 <br>만들기 엔드포인트 정보 | \*.blob.core.windows.net | https | 443 | 특정 Azure 서비스용 Azure 리소스를 만드는 데 사용되는 엔드포인트 업데이트에 사용됩니다. 사용하지 않도록 설정할 경우 마지막으로 다운로드한 엔드포인트 위치 또는 기본 제공 엔드포인트 위치가 대신 사용됩니다. |
 | 원격 디버깅 및 <br>원격 프로파일링 <br>: Azure Websites | &#42;.cloudapp.net <br> &#42;.azurewebsites.net | | 4022 | 원격 디버거를 Azure Websites에 연결하는 데 사용됩니다. 사용하지 않도록 설정할 경우 원격 디버거를 Azure Websites에 연결할 수 없습니다. |
-| Active Directory <br>Graph | graph.windows.net | https | 443 | 새 Azure Active Directory 응용 프로그램을 프로비전하는 데 사용됩니다. Office 365 MSGraph 연결된 서비스 공급자에서도 사용됩니다. |
+| Active Directory <br>Graph | graph.windows.net | https | 443 | 새 Azure Active Directory 애플리케이션을 프로비전하는 데 사용됩니다. Office 365 MSGraph 연결된 서비스 공급자에서도 사용됩니다. |
 | Azure Functions <br>CLI 업데이트 <br>확인 | functionscdn.azureedge.net | https | 443 | Azure Functions CLI의 업데이트된 버전을 확인하는 데 사용됩니다. 사용하지 않도록 설정할 경우 CLI의 캐시된 복사본(Azure Functions 구성 요소가 보유한 복사본)이 대신 사용됩니다. |
 | Cordova | npmjs.org<br>gradle.org | http/s | 80/443 | HTTP는 빌드 중 Gradle 다운로드에 사용됩니다. HTTPS는 Cordova 플러그 인을 프로젝트에 포함하는 데 사용됩니다. |
 | 클라우드 탐색기 | 1. &#60;클러스터 끝점&#62; <br>Service Fabric <br>2. &amp;#60;관리 엔드포인트&amp;#62;<br>일반 클라우드 확장 <br>3. &amp;#60;그래프 엔드포인트&amp;#62;<br>일반 클라우드 확장<br>4. &amp;#60;저장소 계정 엔드포인트&amp;#62;<br>저장소 노드 <br>5. &#60;Azure Portal URL&#62;<br>일반 클라우드 확장 <br>6. &amp;#60;키 자격 증명 모음 엔드포인트&amp;#62; <br>Azure Resource Manager VM 노드<br>7. &#60;PublicIPAddressOfCluster&#62;<br>Service Fabric 원격 디버깅 및 ETW 추적 | <br>1. https<br>2. https<br>3. https<br>4. https<br>5. https<br>6. https<br>7: tcp | 1. 19080<br>2. 443 <br>3. 443 <br>4. 443 <br>5. 443 <br>6. 443 <br>7. dynamic | 1. 예: test12.eastus.cloudapp.com<br>2. 구독을 검색하고 Azure 리소스를 검색/관리합니다.<br>3. Azure Stack 구독을 검색합니다.<br>4. 저장소 리소스(예: mystorageaccount.blob.core.windows.net)를 관리합니다.<br>5. “포털에서 열기” 상황에 맞는 메뉴 옵션(Azure Portal에서 리소스를 엽니다.)<br>6. VM 디버깅을 위해 키 자격 증명 모음을 만들고 사용합니다(예: myvault.vault.azure.net). <br><br>7. 클러스터의 노드 수와 사용 가능한 포트를 기준으로 포트 블록을 동적으로 할당합니다. <br><br>포트 블록은 최소 10개의 포트로 노드 수의 3배를 가져오려고 합니다.<br><br>스트리밍 추적의 경우 810에서 포트 블록을 가져오려고 시도합니다. 해당 포트 블록이 이미 사용된 경우 다음 블록을 가져오려고 시도합니다. 부하 분산 장치가 비어 있으면 810의 포트가 사용될 가능성이 큽니다. <br><br>디버깅과 마찬가지로, 다음 포트 블록 집합 4개는 예약되어 있습니다. <br>- connectorPort: 30398, <br>- forwarderPort: 31398, <br>- forwarderPortx86: 31399,<br>- fileUploadPort: 32398<br> |

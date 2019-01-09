@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c18fa28d52115d2666e2098a56a78658bebdc8f
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 564260b60e56974df698ba0efd6e319a8ea3e440
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33956847"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684526"
 ---
 # <a name="how-to-export-class-diagrams-as-images"></a>방법: 클래스 다이어그램을 이미지로 내보내기
 
@@ -42,4 +42,4 @@ ms.locfileid: "33956847"
 ## <a name="see-also"></a>참고 항목
 
 - [방법: 클래스 다이어그램 인쇄](how-to-print-class-diagrams.md)
-- [클래스 다이어그램 작업](working-with-class-diagrams.md)
+- [클래스 다이어그램 작업](designing-and-viewing-classes-and-types.md)

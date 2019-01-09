@@ -12,15 +12,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd1fc3b6cb38c6d5badff99b83e78605ba5cc31e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 21dfbd69cc3c222ab3a9862578bdbe61e9bcfca6
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945131"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684506"
 ---
-# <a name="notifications-environment-options-dialog-box"></a>옵션 대화 상자, 환경, 알림
-이전에 알림 대화 상자를 통해 무시하도록 선택한 알림에 대해 무시를 중지하려면 이 옵션을 사용합니다. 자세한 내용은 [알림](../../ide/visual-studio-notifications.md)을 참조하세요.
+# <a name="notifications-environment-options-dialog-box"></a>알림, 환경, 옵션 대화 상자
+
+이전에 **알림** 대화 상자를 통해 무시하도록 선택한 알림에 대해 무시를 중지하려면 이 옵션을 사용합니다. 자세한 내용은 [Visual Studio 업데이트](../../install/update-visual-studio.md)를 참조하세요.
 
 ### <a name="see-also"></a>참고 항목
 

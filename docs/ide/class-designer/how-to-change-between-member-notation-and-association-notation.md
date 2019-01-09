@@ -15,19 +15,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdb4f28fc367b309a015a3faa8f749e2512db879
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: db6bcf1d44be4a904b38877717aff589906995a7
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957803"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684157"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>방법: 클래스 디자이너에서 멤버 표시와 연결 표시 간 변경
 
 **클래스 디자이너**에서 클래스 다이어그램이 두 형식 사이의 연결 관계를 나타내는 방법을 멤버 표기법에서 연결 표기법으로, 또는 그 반대로 변경할 수 있습니다. 형식 연결 선으로 표시된 멤버는 형식이 어떻게 관련되어 있는지 효과적으로 시각화하여 보여 주는 경우가 많습니다.
 
 > [!NOTE]
-> 연결 관계는 멤버 속성 또는 필드로 나타낼 수 있습니다. 멤버 표기법을 연결 표기법으로 변경하려면 한 형식에 다른 형식의 멤버가 있어야 합니다. 연결 표기법을 멤버 표기법으로 변경하려면 두 형식이 형식 연결 선으로 연결되어 있어야 합니다. 자세한 내용은 [방법: 형식 간의 연결 만들기](how-to-create-associations-between-types.md)를 참조하세요. 프로젝트에 클래스 다이어그램이 여러 개 있는 경우 한 다이어그램에서 연결 관계 표시 방법을 변경하면 변경 내용이 해당 다이어그램에만 영향을 줍니다. 다른 다이어그램의 연결 관계 표시 방법을 변경하려면 해당 다이어그램을 열거나 표시하고 변경 단계를 수행합니다.
+> 연결 관계는 멤버 속성 또는 필드로 나타낼 수 있습니다. 멤버 표기법을 연결 표기법으로 변경하려면 한 형식에 다른 형식의 멤버가 있어야 합니다. 연결 표기법을 멤버 표기법으로 변경하려면 두 형식이 형식 연결 선으로 연결되어 있어야 합니다. 자세한 내용은 [방법: 형식 간에 연결 만들기](how-to-create-associations-between-types.md)를 참조하세요. 프로젝트에 클래스 다이어그램이 여러 개 있는 경우 한 다이어그램에서 연결 관계 표시 방법을 변경하면 변경 내용이 해당 다이어그램에만 영향을 줍니다. 다른 다이어그램의 연결 관계 표시 방법을 변경하려면 해당 다이어그램을 열거나 표시하고 변경 단계를 수행합니다.
 
 ## <a name="to-change-member-notation-to-association-notation"></a>멤버 표기법을 연결 표기법으로 변경하려면
 
@@ -47,6 +47,6 @@ ms.locfileid: "33957803"
 ## <a name="see-also"></a>참고 항목
 
 - [방법: 형식 간에 상속 만들기](how-to-create-inheritance-between-types.md)
-- [방법: 형식 간의 상속 보기](how-to-view-inheritance-between-types.md)
-- [형식 및 관계 보기](viewing-types-and-relationships.md)
+- [방법: 형식 간에 상속 보기](how-to-view-inheritance-between-types.md)
+- [형식 및 관계 보기](designing-and-viewing-classes-and-types.md)
 - [방법: 컬렉션 연결 시각화](how-to-visualize-a-collection-association.md)

@@ -1,5 +1,5 @@
 ---
-title: '방법: 계측할 Web.Config 파일 수정 및 동적으로 컴파일된 ASP.NET 웹 응용 프로그램 프로파일링 | Microsoft 문서'
+title: '방법: 계측할 Web.Config 파일 수정 및 동적으로 컴파일된 ASP.NET 웹 애플리케이션 프로파일링 | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,22 +10,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 521da3263d3ea893613bf3b5211763230d07c67f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2c3fe6e9efdf787df351ffc41e7d31b76a2162b8
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830992"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592627"
 ---
-# <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>방법: 계측할 Web.Config 파일 수정 및 동적으로 컴파일된 ASP.NET 웹 응용 프로그램 프로파일링
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구 계측 방법을 사용하여 동적으로 컴파일된 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 응용 프로그램에서 세부 타이밍 데이터, .NET 메모리 할당 데이터 및 .NET 개체 수명 데이터를 수집할 수 있습니다.  
+# <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>방법: 계측할 web.config 파일 수정 및 동적으로 컴파일된 ASP.NET 웹 애플리케이션 프로파일링
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구 계측 방법을 사용하여 동적으로 컴파일된 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 애플리케이션에서 세부 타이밍 데이터, .NET 메모리 할당 데이터 및 .NET 개체 수명 데이터를 수집할 수 있습니다.  
 
- 이 항목에서는 *web.config* 구성 파일을 수정하여 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 응용 프로그램의 계측 및 프로파일링을 사용하도록 설정하는 방법을 설명합니다.  
+ 이 항목에서는 *web.config* 구성 파일을 수정하여 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 애플리케이션의 계측 및 프로파일링을 사용하도록 설정하는 방법을 설명합니다.  
 
 > [!NOTE]
 >  샘플링 프로파일링 방법을 사용할 경우 또는 미리 컴파일된 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 모듈을 계측하고자 할 경우 *web.config* 파일을 수정할 필요가 없습니다.  
 
- *web.config* 파일의 루트는 **configuration** 요소입니다. 동적으로 컴파일된 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 응용 프로그램을 계측 및 프로파일링하려면 다음 요소를 추가하거나 수정해야 합니다.  
+ *web.config* 파일의 루트는 **configuration** 요소입니다. 동적으로 컴파일된 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 애플리케이션을 계측 및 프로파일링하려면 다음 요소를 추가하거나 수정해야 합니다.  
 
 - **configuration/runtime/assemblyBinding/dependentAssembly** 요소 - 프로파일링을 제어하는 Microsoft.VisualStudio.Enterprise.ASPNetHelper 어셈블리를 식별합니다. **dependentAssembly** 요소에는 두 개의 자식 요소인 **assemblyIdentity** 및 **codeBase**가 포함됩니다.  
 
@@ -33,7 +33,7 @@ ms.locfileid: "49830992"
 
 - 프로파일링 도구의 위치를 식별하는 두 개의 **add** 요소가 **configuration/appSettings** 섹션에 추가됩니다.  
 
-  응용 프로그램 구성을 복원하는 데 사용할 수 있는 원래 *web.config* 파일의 복사본을 만드는 것이 좋습니다.  
+  애플리케이션 구성을 복원하는 데 사용할 수 있는 원래 *web.config* 파일의 복사본을 만드는 것이 좋습니다.  
 
 ### <a name="to-add-the-aspnethelper-assembly-as-a-configurationruntimeassemblybindingdependentassembly-element"></a>ASPNetHelper 어셈블리를 configuration/runtime/assemblyBinding/dependentAssembly 요소로 추가하려면  
 
@@ -146,7 +146,7 @@ ms.locfileid: "49830992"
    | 특성 이름 | 특성 값 |
    |----------------| - |
    | **key** | **Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation** |
-   | **값** | `PerformanceToolsFolder` **\VSInstr.Exe** |
+   | **value** | `PerformanceToolsFolder` **\VSInstr.Exe** |
 
 
 4. 또 다른 **add** 요소를 **appSettings** 요소의 자식으로 추가합니다.  
@@ -156,9 +156,10 @@ ms.locfileid: "49830992"
    |특성 이름|특성 값|  
    |--------------------|---------------------|  
    |**key**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrTools**|  
-   |**값**|`PerformanceToolsFolder`|  
+   |**value**|`PerformanceToolsFolder`|  
 
-    `PerformanceToolsFolder`는 프로파일러 실행 파일의 경로입니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]가 기본 위치에 설치되면 값은 **C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools**가 됩니다.  
+    `PerformanceToolsFolder`는 프로파일러 실행 파일의 경로입니다. 프로파일링 도구에 대한 경로를 가져오려면 [명령줄 도구의 경로 지정](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)을 참조하세요.
+
 
 ```xml  
     <configuration>  
@@ -171,18 +172,18 @@ ms.locfileid: "49830992"
         <appSettings>  
             <add  
                 key="Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation"  
-                value="C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\vsinstr.exe"  
+                value="C:\Program Files\Microsoft Visual Studio 14.0\Team Tools\Performance Tools\vsinstr.exe"  
         />  
             <add  
                 key="Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrTools"  
-                value="C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\"  
+                value="C:\Program Files\Microsoft Visual Studio 14.0\Team Tools\Performance Tools\"  
             />  
         </appSettings>  
     </configuration>  
 ```  
 
-## <a name="example"></a>예  
- 동적으로 컴파일된 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 응용 프로그램의 계측 및 프로파일링을 사용하도록 설정하는 전체 *web.config* 파일은 다음과 같습니다. 이 예제에서는 수정하기 전에 파일에 다른 설정이 없었다고 가정합니다.  
+## <a name="example"></a>예제  
+ 동적으로 컴파일된 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 애플리케이션의 계측 및 프로파일링을 사용하도록 설정하는 전체 *web.config* 파일은 다음과 같습니다. 이 예제에서는 수정하기 전에 파일에 다른 설정이 없었다고 가정합니다.  
 
 ```xml  
 <?xml version="1.0"?>  
@@ -216,11 +217,11 @@ ms.locfileid: "49830992"
         <appSettings>  
             <add  
                 key="Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation"  
-                value="C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\vsinstr.exe"  
+                value="C:\Program Files\Microsoft Visual Studio 14.0\Team Tools\Performance Tools\vsinstr.exe"  
             />  
             <add  
                 key="Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrTools"  
-                value="C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\"  
+                value="C:\Program Files\Microsoft Visual Studio 14.0\Team Tools\Performance Tools\"  
             />  
         </appSettings>  
     </configuration>  
@@ -228,5 +229,5 @@ ms.locfileid: "49830992"
 ```  
 
 ## <a name="see-also"></a>참고 항목  
- [방법: 동적으로 컴파일된 ASP.NET 응용 프로그램 계측 및 자세한 타이밍 데이터 수집](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)   
- [방법: 동적으로 컴파일된 ASP.NET 응용 프로그램 계측 및 메모리 데이터 수집](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)
+ [방법: 동적으로 컴파일된 ASP.NET 애플리케이션 계측 및 자세한 타이밍 데이터 수집](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)   
+ [방법: 동적으로 컴파일된 ASP.NET 애플리케이션 계측 및 메모리 데이터 수집](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)

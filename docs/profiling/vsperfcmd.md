@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23abc362b3c91579585272e4ebf1b190cab55dde
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: b4aa3a045b34271eb421339751aa5c763479eec0
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320984"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647847"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 *VSPerfCmd.exe* 도구는 성능 데이터 수집을 시작하고 중지하는 데 사용됩니다. 이 도구는 다음 구문을 사용합니다.  
@@ -60,10 +60,10 @@ VSPerfCmd [/U] [/options]
   
 |옵션|설명|  
 |------------|-----------------|  
-|[Launch](../profiling/launch.md) **:** *Executable*|지정된 응용 프로그램을 시작하고 프로파일링을 시작합니다.|  
-|[Args](../profiling/args.md) **:** *Arguments*|시작된 응용 프로그램에 전달할 명령줄 인수를 지정합니다.|  
+|[Launch](../profiling/launch.md) **:** *실행 파일*|지정된 애플리케이션을 시작하고 프로파일링을 시작합니다.|  
+|[Args](../profiling/args.md) **:** *인수*|시작된 애플리케이션에 전달할 명령줄 인수를 지정합니다.|  
 |[콘솔](../profiling/console.md)|새 명령 프롬프트 창에서 지정된 명령을 시작합니다.|  
-|[Attach](../profiling/attach.md) **:** *PID*[**,**_PID_]|지정된 프로세스의 프로파일링을 시작합니다. 프로세스는 프로세스 ID 또는 프로세스 이름으로 식별할 수 있습니다.|  
+|[연결](../profiling/attach.md) **:** *PID*[**,**_PID_]|지정된 프로세스의 프로파일링을 시작합니다. 프로세스는 프로세스 ID 또는 프로세스 이름으로 식별할 수 있습니다.|  
 |[Detach](../profiling/detach.md)[**:**_PID_[,_PID_]]|지정된 프로세스의 프로파일링을 중지합니다. 프로세스는 프로세스 ID 또는 프로세스 이름으로 식별할 수 있습니다. 프로세스가 지정되지 않은 경우 모든 프로세스의 프로파일링이 중지됩니다.|  
 |[GC](../profiling/gc-vsperfcmd.md)[**:**{**Allocation**`&#124;`**Lifetime**}]|.NET 메모리 할당 및 개체 수명 데이터를 수집합니다. **VSPerfCmdLaunch** 옵션과 함께 사용하는 것만 가능합니다.|  
   
@@ -89,7 +89,7 @@ VSPerfCmd [/U] [/options]
 |**Admin:** \<*Service*&#124;*Driver*>**AutoStart**\<**ON**&#124;**OFF**>|다시 시작 후 프로파일링 서비스(서비스) 또는 커널 모드 디바이스 드라이버(드라이버) 자동 시작을 사용하도록 설정하거나 사용하지 않도록 설정합니다.|  
   
 ## <a name="vsperfcmd-driver"></a>VSPerfCmd /Driver  
- **VSPerfCmd /Driver** 옵션은 이제 사용되지 않습니다. 해당 기능에는 **VsPerfCmdAdmin** 옵션을 사용합니다.  
+ **VSPerfCmd /Driver** 옵션은 이제 사용되지 않습니다. 해당 기능에는 **VsPerfCmd 관리자** 옵션을 사용합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [VSInstr](../profiling/vsinstr.md)   

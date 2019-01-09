@@ -1,23 +1,21 @@
 ---
 title: 코드 작성 및 관리
 description: Visual Studio의 코드 편집기 및 다른 도구를 사용하여 코드를 작성, 탐색, 관리 및 개선하는 방법에 대해 알아봅니다.
-layout: LandingPage
 ms.date: 01/01/2018
-author: gewarren
-ms.author: gewarren
-ms.topic: landing-page
+layout: LandingPage
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-f1_keywords:
-- vs.newproject
+ms.topic: landing-page
+author: gewarren
+ms.author: gewarren
 ms.workload:
 - multiple
-ms.openlocfilehash: 929ee8c5618c08431c27754327c9466a54a68b85
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: fc1b75a41e7c321686d0107982eb9969c7a1e2bc
+ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159379"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53425788"
 ---
 # <a name="write-and-manage-code-using-visual-studio"></a>Visual Studio를 사용하여 코드 작성 및 관리
 

@@ -13,18 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 61b2e6461fb80cfd12f76a6e96ac629ce640fa89
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 18ef27d60c5460e43d863b5258bcefe08ee22b17
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388769"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348477"
 ---
 # <a name="environment-options-dialog-box"></a>옵션 대화 상자, 환경
 
 **옵션** 대화 상자의 **환경** 폴더에 있는 페이지를 사용하여 IDE(통합 개발 환경)에서 특정 요소의 표시 및 작동 방법을 설정할 수 있습니다. 메뉴 모음의 **도구**, **옵션**을 선택한 다음 **환경**을 선택하여 환경 페이지에 액세스할 수 있습니다.
 
-|자세한 방법|보기|
+|자세한 방법|참조|
 | - |---------|
 |IDE의 창, 메뉴 및 기타 요소의 모양과 동작을 사용자 지정합니다.|[옵션 대화 상자, 환경, 일반](../../ide/reference/general-environment-options-dialog-box.md)|
 |파일의 자동 저장 및 복원에 대한 설정을 변경합니다.|[옵션 대화 상자, 환경, 자동 복구](../../ide/reference/autorecover-environment-options-dialog-box.md)|
@@ -38,7 +38,7 @@ ms.locfileid: "52388769"
 |알림이 사용되는지 여부를 지정합니다.|[옵션 대화 상자, 환경, 알림](../../ide/reference/notifications-environment-options-dialog-box.md)|
 |빠른 실행 창에 대한 옵션을 지정합니다.|[옵션 대화 상자, 환경, 빠른 실행](../../ide/reference/quick-launch-environment-options-dialog-box.md)|
 |시작 페이지 옵션을 지정합니다.|[옵션 대화 상자, 환경, 시작](../../ide/reference/startup-environment-options-dialog-box.md)|
-|컴퓨터 간에 설정을 로밍할지 여부를 지정합니다.|[옵션 대화 상자, 환경, 동기화된 설정](../../ide/reference/synchronized-settings-environment-options-dialog-box.md)|
+|컴퓨터 간에 설정을 로밍할지 여부를 지정합니다.|[옵션 대화 상자, 환경, 동기화된 설정](../../ide/reference/accounts-environment-options-dialog-box.md)|
 |작업 및 작업 목록에 대한 옵션을 설정하는 방법을 알아봅니다.|[옵션 대화 상자, 환경, 작업 목록](../../ide/reference/task-list-environment-options-dialog-box.md)|
 |시스템 소스 편집기를 변경하고 Internet Explorer 옵션을 구성하여 기본 홈 페이지 및 검색 페이지를 변경합니다.|[옵션 대화 상자, 환경, 웹 브라우저](../../ide/reference/web-browser-environment-options-dialog-box.md)|
 

@@ -3,18 +3,18 @@ title: Office 365 혜택 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 10/4/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: 일부 Visual Studio 구독에 포함된 Office 365 혜택을 알아봅니다.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 273bba31f0b080116677e9a8dfa727af462fb7bc
-ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
+ms.openlocfilehash: eef2adf189650da528c2f76df88ff8b648ad7ba4
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50244465"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802110"
 ---
 # <a name="office-365-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Office 365
 
@@ -31,7 +31,7 @@ Office 365를 다운로드하고 활성화하려면 다음 단계를 따르세�
 0. Office 365를 설치하려면 제품 키가 필요합니다.  Office 365 목록 아래의 **키 가져오기** 링크를 클릭합니다.
    > [!div class="mx-imgBorder"]
    > ![Office 365 제품 키 가져오기](_img/vs-office365/vs-office365-get-key.png)
-0. 플라이아웃 창에는 이미 요청한 키뿐만 아니라 사용 가능한 키도 표시됩니다.  새 키를 얻으려면 **Office Professional Pllus 2019** 목록 아래에서 **키 요청**을 클릭합니다.
+0. 플라이아웃 창에는 이미 요청한 키뿐만 아니라 사용 가능한 키도 표시됩니다.  새 키를 얻으려면 **Office Professional Plus 2019** 목록 아래에서 **키 요청**을 클릭합니다.
    > [!div class="mx-imgBorder"]
    > ![Office 365 제품 키 요청](_img/vs-office365/vs-office365-claim-key.png)
 0. 방금 요청한 키를 기록합니다. 언제든지 이 목록으로 돌아가면 다시 확인할 수 있습니다.
@@ -44,26 +44,31 @@ Office 365를 다운로드하고 활성화하려면 다음 단계를 따르세�
    > [!div class="mx-imgBorder"]
    > ![Office 365 제품 키 입력](_img/vs-office365/vs-office365-enter-key.png)
 0. **다음**을 다시 클릭합니다.
-0. **설치**를 클릭하여 Office 응용 프로그램을 설치합니다. 
+0. **설치**를 클릭하여 Office 애플리케이션을 설치합니다. 
 
 ## <a name="next-steps"></a>다음 단계
 
-Office용 응용 프로그램을 개발하려는 경우 [Office 개발자 구독](vs-office-dev.md)을 활성화하는 것이 좋습니다.
+Office용 애플리케이션을 개발하려는 경우 [Office 개발자 구독](vs-office-dev.md)을 활성화하는 것이 좋습니다.
 
 
 ## <a name="eligibility"></a>자격
 
 | 구독 수준                                                 |     채널                                            | 이점                                                          | 갱신 가능?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise(표준, 연간 클라우드)   | VL, Azure, 일반 정품| 사용 가능       |  예          |
+| Visual Studio Enterprise(Standard)   | VL, Azure, 일반 정품| 사용 가능       |  예          |
 | Visual Studio Enterprise(Standard)   | NFR<sup>1</sup> | 사용할 수 없음       |  N/A          |
-| Visual Studio Professional(표준, 연간 클라우드) | VL, Azure, 일반 정품                                       | 사용할 수 없음                                                            |  N/A          |
+| Visual Studio Professional(표준) | VL, Azure, 일반 정품                                       | 사용할 수 없음                                                            |  N/A          |
 | Visual Studio Test Professional(표준)                         | VL, 일반 정품                                              | 사용할 수 없음                                             |  N/A          |
 | MSDN 플랫폼(표준)                                          | VL, 일반 정품                                              | 사용할 수 없음                                              |  N/A          |
 | Visual Studio Enterprise, Visual Studio Professional(월간 클라우드) | Azure | 사용할 수 없음 | N/A |
 | Visual Studio Dev Essentials | N/A  | 사용할 수 없음 |N/A |
 
-<sup>1</sup> 포함: NFR(전매금지), VSIP(Visual Studio Industry Partner), MPN(Microsoft 파트너 네트워크), FTE, MCT Software & Services Developer, BizSpark, MVP(Microsoft Valued Professional), RD(Region Director), MCT Software & Services, Imagine, Microsoft 파트너 네트워크.
+<sup>1</sup> *포함:  NFR(전매금지), VSIP(Visual Studio Industry Partner), MPN(Microsoft 파트너 네트워크), FTE, MCT Software & Services Developer, BizSpark, MVP(Microsoft Valued Professional), RD(Region Director), MCT Software & Services, Imagine, Microsoft 파트너 네트워크.*
+
+
+> [!NOTE]
+> Microsoft는 더 이상 Visual Studio Professional 연간 구독 및 클라우드 구독에 Visual Studio Enterprise 연간 구독을 제공하지 않습니다. 기존 고객 환경 및 해당 구독의 갱신, 증가, 감소 또는 취소 기능은 변경되지 않습니다. 새 고객은 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)으로 이동하여 Visual Studio를 구입하기 위한 다양한 옵션을 살펴보세요.
+
 
 어떤 구독을 사용하고 있는지 확실하지 않나요?  자신의 이메일 주소에 할당된 모든 구독을 보려면 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)에 연결합니다. 일부 구독이 표시되지 않으면 하나 이상이 다른 전자 메일 주소에 할당되어 있을 수 있습니다.  해당 구독을 보려면 해당 전자 메일 주소로 로그인해야 합니다.
 

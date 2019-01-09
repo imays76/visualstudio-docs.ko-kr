@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37ce2fc60ac2a57baddf62e68a900349ed072f4d
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: cdb7148560dfca966b82d8d9cef617075752a58b
+ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160090"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53307711"
 ---
 # <a name="install-build-tools-into-a-container"></a>Build Tools를 컨테이너에 설치
 
@@ -118,7 +118,7 @@ Visual Studio Build Tools(및 상위 수준의 Visual Studio)에서 설치하는
 
 다음 예제 Dockerfile을 디스크의 새 파일에 저장합니다. 파일 이름이 단순히 "Dockerfile"이면 기본적으로 인식됩니다.
 
-> [!NOTE]
+> [!WARNING]
 > 이 Dockerfile 예제는 컨테이너에 설치할 수 없는 이전 버전의 Windows SDK만 제외합니다. 이전 릴리스에서는 빌드 명령이 실패하게 됩니다.
 
 1. 명령 프롬프트를 엽니다.
@@ -165,8 +165,12 @@ Visual Studio Build Tools(및 상위 수준의 Visual Studio)에서 설치하는
    CMD ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
    ```
 
-   > [!NOTE]
-   > microsoft/windowsservercore에 이미지를 직접 베이스하는 경우 .NET Framework는 제대로 설치되지 않을 수 있으며 설치 오류가 표시되지 않습니다. 관리 코드는 설치가 완료된 후 실행되지 않을 수 있습니다. 대신, [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) 이상에서 이미지를 베이스합니다. 또한 최신 이미지는 `RUN` 및 `ENTRYPOINT` 지침 실패로 이어지는 기본 `SHELL`로 PowerShell을 사용할 수 있습니다.
+   > [!WARNING]
+   > microsoft/windowsservercore에 이미지를 직접 베이스하는 경우 .NET Framework는 제대로 설치되지 않을 수 있으며 설치 오류가 표시되지 않습니다. 관리 코드는 설치가 완료된 후 실행되지 않을 수 있습니다. 대신, [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) 이상에서 이미지를 베이스합니다. 또한 버전 4.7.1 이상 태그가 지정된 이미지는 `RUN` 및 `ENTRYPOINT` 지침 실패로 이어지는 기본 `SHELL`로 PowerShell을 사용할 수 있습니다.
+   >
+   > Visual Studio 2017 버전 15.8 또는 이전 버전(제품)이 mcr<span></span>.microsoft\.com\/windows\/servercore:1809 이상에 제대로 설치되지 않습니다. 오류가 표시되지 않습니다.
+   >
+   > 자세한 내용은 [컨테이너의 알려진 문제](build-tools-container-issues.md)를 참조하세요.
 
 4. 해당 디렉터리 내에서 다음 명령을 실행합니다.
 

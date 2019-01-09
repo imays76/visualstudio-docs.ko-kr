@@ -13,15 +13,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e87b1a71cde4d6fb37e05fa99698b636ff87bf4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ea1db2c465c362fee0f3e06074b1cea3562d21fd
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876726"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739947"
 ---
 # <a name="msbuild"></a>MSBuild
-[!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)]은 응용 프로그램을 빌드하기 위한 플랫폼입니다. MSBuild라고도 하는 이 엔진은 빌드 플랫폼에서 소프트웨어를 처리하고 빌드하는 방법을 제어하는 프로젝트 파일에 대한 XML 스키마를 제공합니다. Visual Studio는 MSBuild를 사용하지만 Visual Studio에 종속되지 않습니다. 프로젝트 또는 솔루션 파일에서 *msbuild.exe*를 호출하여 Visual Studio가 설치되지 않은 환경에서 제품을 조정하고 빌드할 수 있습니다.
+[!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)]은 애플리케이션을 빌드하기 위한 플랫폼입니다. MSBuild라고도 하는 이 엔진은 빌드 플랫폼에서 소프트웨어를 처리하고 빌드하는 방법을 제어하는 프로젝트 파일에 대한 XML 스키마를 제공합니다. Visual Studio는 MSBuild를 사용하지만 Visual Studio에 종속되지 않습니다. 프로젝트 또는 솔루션 파일에서 *msbuild.exe*를 호출하여 Visual Studio가 설치되지 않은 환경에서 제품을 조정하고 빌드할 수 있습니다.
 
  Visual Studio는 MSBuild를 사용하여 관리되는 프로젝트를 로드하고 빌드합니다. Visual Studio의 프로젝트 파일(*.csproj*, *.vbproj*, *.vcxproj* 등)에는 IDE를 사용하여 프로젝트를 빌드할 때 실행되는 MSBuild XML 코드가 들어 있습니다. Visual Studio 프로젝트는 필요한 모든 설정을 가져오고 일반적인 개발 작업을 수행하는 프로세스를 빌드하지만 Visual Studio 내에서 또는 XML 편집기를 사용하여 확장하거나 수정할 수 있습니다.
 
@@ -29,7 +29,7 @@ ms.locfileid: "49876726"
 
  다음 예제에서는 Visual Studio IDE 대신 MSBuild 명령줄을 사용하여 빌드를 실행할 수 있는 경우를 보여 줍니다.
 
--   Visual Studio가 설치되지 않은 경우.
+-   Visual Studio가 설치되지 않은 경우. ([Visual Studio 없이 MSBuild 다운로드](https://visualstudio.microsoft.com/downloads/?q=build+tools))
 
 -   64비트 버전의 MSBuild를 사용하려는 경우. 이 버전의 MSBuild는 일반적으로 필요하지 않지만 MSBuild에서 더 많은 메모리에 액세스할 수 있도록 합니다.
 
@@ -48,7 +48,7 @@ ms.locfileid: "49876726"
 Visual Studio IDE에서 코드를 작성하지만 MSBuild를 사용하여 빌드를 실행할 수 있습니다. 또는 개발 컴퓨터의 IDE에서 코드를 빌드하지만 MSBuild 명령줄을 사용하여 여러 개발자로부터 통합된 코드를 빌드할 수 있습니다.
 
 > [!NOTE]
->  Team Foundation Build를 사용하여 응용 프로그램을 자동으로 컴파일, 테스트 및 배포할 수 있습니다. 개발자가 코드를 체크 인할 때(예: 연속 통합 전략의 일부로) 또는 일정에 따라(예: 야간 빌드 확인 테스트 빌드) 빌드 시스템에서 빌드를 자동으로 실행할 수 있습니다. Team Foundation Build는 MSBuild를 사용하여 코드를 컴파일합니다. 자세한 내용은 [Azure Pipelines](/azure/devops/pipelines/index?view=vsts)를 참조하세요.
+>  Team Foundation Build를 사용하여 애플리케이션을 자동으로 컴파일, 테스트 및 배포할 수 있습니다. 개발자가 코드를 체크 인할 때(예: 연속 통합 전략의 일부로) 또는 일정에 따라(예: 야간 빌드 확인 테스트 빌드) 빌드 시스템에서 빌드를 자동으로 실행할 수 있습니다. Team Foundation Build는 MSBuild를 사용하여 코드를 컴파일합니다. 자세한 내용은 [Azure Pipelines](/azure/devops/pipelines/index?view=vsts)를 참조하세요.
 
  이 항목에서는 MSBuild에 대해 간략하게 설명합니다. 입문용 자습서는 [연습: MSBuild 사용](../msbuild/walkthrough-using-msbuild.md)을 참조하세요.
 
@@ -67,7 +67,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 ##  <a name="project-file"></a>프로젝트 파일
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]는 간단하고 확장 가능한 XML 기반 프로젝트 파일 형식을 사용합니다. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일 형식을 통해 개발자는 빌드할 항목뿐만 아니라 항목을 다른 운영 체제 및 구성에 대해 빌드하는 방법을 설명합니다. 또한 프로젝트 파일 형식을 통해 개발자는 개별 파일로 분해될 수 있는 다시 사용 가능한 빌드 규칙을 작성하여 해당 제품 내의 여러 프로젝트에서 일관성 있는 빌드를 수행할 수 있습니다.
 
- 다음 단원에서는 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일 형식의 몇 가지 기본 요소에 대해 설명합니다. 기본 프로젝트 파일을 만드는 방법에 대한 자습서는 [연습: 처음부터 새로 MSBuild 프로젝트 파일 만들기](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)를 참조하세요.
+ 다음 단원에서는 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일 형식의 몇 가지 기본 요소에 대해 설명합니다. 기본 프로젝트 파일을 만드는 방법에 대한 자습서는 [연습: 처음부터 MSBuild 프로젝트 파일 만들기](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)를 진행해 보세요.
 
 ###  <a name="BKMK_Properties"></a> 속성
  속성은 빌드를 구성하는 데 사용될 수 있는 키/값 쌍을 나타냅니다. 속성 이름을 포함하는 요소를 [PropertyGroup](../msbuild/propertygroup-element-msbuild.md) 요소의 자식으로 만들어 속성을 선언합니다. 예를 들어 다음 코드는 값이 `BuildDir`인 `Build`이라는 속성을 만듭니다.
@@ -152,11 +152,11 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
  Visual Studio에서 MSBuild를 사용하는 방법에 대한 자습서는 [연습: MSBuild 사용](../msbuild/walkthrough-using-msbuild.md)을 참조하세요.
 
 ##  <a name="BKMK_Multitargeting"></a> 멀티 타기팅
- Visual Studio를 사용하면 .NET Framework의 여러 버전 중 하나에서 실행되는 응용 프로그램을 컴파일할 수 있습니다. 예를 들어 32비트 플랫폼의 .NET Framework 2.0에서 실행되도록 응용 프로그램을 컴파일하고 동일한 응용 프로그램을 64비트 플랫폼의 .NET Framework 4.5에서 실행되도록 컴파일할 수 있습니다. 둘 이상의 프레임워크에서 실행 가능하도록 컴파일하는 기능을 다중 대상 지정이라고 합니다.
+ Visual Studio를 사용하면 .NET Framework의 여러 버전 중 하나에서 실행되는 애플리케이션을 컴파일할 수 있습니다. 예를 들어 32비트 플랫폼의 .NET Framework 2.0에서 실행되도록 애플리케이션을 컴파일하고 동일한 애플리케이션을 64비트 플랫폼의 .NET Framework 4.5에서 실행되도록 컴파일할 수 있습니다. 둘 이상의 프레임워크에서 실행 가능하도록 컴파일하는 기능을 다중 대상 지정이라고 합니다.
 
  다중 대상 지정에는 다음과 같은 이점이 있습니다.
 
--   .NET Framework의 이전 버전(예: 2.0, 3.0 및 3.5)을 대상으로 하는 응용 프로그램을 개발할 수 있습니다.
+-   .NET Framework의 이전 버전(예: 2.0, 3.0 및 3.5)을 대상으로 하는 애플리케이션을 개발할 수 있습니다.
 
 -   .NET Framework 외에 Silverlight 등의 다른 프레임워크를 대상으로 지정할 수 있습니다.
 
@@ -164,7 +164,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
 -   현재 버전의 .NET Framework용 서비스 팩이 릴리스될 경우 해당 서비스 팩을 대상으로 지정할 수 있습니다.
 
--   다중 대상 지정은 대상 프레임워크 및 플랫폼에서 사용 가능한 기능만 응용 프로그램에서 사용되도록 합니다.
+-   다중 대상 지정은 대상 프레임워크 및 플랫폼에서 사용 가능한 기능만 애플리케이션에서 사용되도록 합니다.
 
 자세한 내용은 [멀티 타기팅](../msbuild/msbuild-multitargeting-overview.md)을 참조하세요.
 
@@ -172,7 +172,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
 | 제목 | 설명 |
 | - | - |
-| [연습: 처음부터 새로 MSBuild 프로젝트 파일 만들기](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md) | 텍스트 편집기만을 사용해서 기본 프로젝트 파일을 증분 방식으로 만드는 방법을 보여 줍니다. |
+| [연습: 처음부터 MSBuild 프로젝트 파일 만들기](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md) | 텍스트 편집기만을 사용해서 기본 프로젝트 파일을 증분 방식으로 만드는 방법을 보여 줍니다. |
 | [연습: MSBuild 사용](../msbuild/walkthrough-using-msbuild.md) | MSBuild의 구성 요소를 소개하고 Visual Studio IDE를 닫지 않고 MSBuild 프로젝트를 작성, 조작 및 디버깅하는 방법을 보여 줍니다. |
 | [MSBuild 개념](../msbuild/msbuild-concepts.md) | MSBuild의 네 가지 빌딩 블록인 속성, 항목, 대상 및 작업에 대해 설명합니다. |
 | [항목](../msbuild/msbuild-items.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 파일 형식의 일반 개념과 그러한 모든 개념이 서로 어떻게 연결되는지를 설명합니다. |
@@ -182,7 +182,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 | [조건](../msbuild/msbuild-conditions.md) | MSBuild 요소에서 `Condition` 특성을 사용하는 방법에 대해 설명합니다. |
 | [고급 개념](../msbuild/msbuild-advanced-concepts.md) | 일괄 처리, 변환 수행, 다중 대상 지정 및 기타 고급 기술을 제공합니다. |
 | [MSBuild의 로그인](../msbuild/logging-in-msbuild.md) | 빌드 이벤트, 메시지 및 오류를 기록하는 방법에 대해 설명합니다. |
-| [추가 리소스](../msbuild/additional-msbuild-resources.md) | MSBuild에 대한 자세한 정보를 볼 수 있는 커뮤니티 및 지원 리소스를 나열합니다. |
+| [추가 리소스](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild) | MSBuild에 대한 자세한 정보를 볼 수 있는 커뮤니티 및 지원 리소스를 나열합니다. |
 
 ## <a name="reference"></a>참조
  참조 정보를 포함하는 항목에 대한 [MSBuild 참조](../msbuild/msbuild-reference.md) 링크입니다.

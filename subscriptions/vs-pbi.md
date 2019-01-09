@@ -3,18 +3,18 @@ title: Visual Studio 구독의 Power BI Pro 혜택 | Microsoft Docs
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/12/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: 선택한 Visual Studio 구독에 포함된 Power BI Pro 구독에 대해 알아봅니다.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 50c9b39772e65ba00f859254df4a993870f08023
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 0fb3033699c3331ec61e6d3fe30dd70fd47cc759
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219538"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739645"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Power BI Pro
 
@@ -73,30 +73,33 @@ Power BI Pro를 사용하려면 기존 계정을 사용하여 계정을 설정�
 
 | 구독 수준                                                 |     채널                                            | 이점                                                          | 갱신 가능?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise(표준, 연간 클라우드)   | VL, Azure, 일반 정품, 선택한 NFR<sup>1</sup> | 사용 가능       |  예|
-| Visual Studio Professional(표준, 연간 클라우드, 월간 클라우드) | VL, Azure, 일반 정품                                       | 사용할 수 없음                                                            |해당 없음         |
+| Visual Studio Enterprise(Standard)   | VL, Azure, 일반 정품, 선택한 NFR<sup>1</sup> | 사용 가능       |  예|
+| Visual Studio Professional(표준, 월간 클라우드) | VL, Azure, 일반 정품                                       | 사용할 수 없음                                                            |해당 없음         |
 | Visual Studio Test Professional(표준)                         | VL, 일반 정품                                              | 사용할 수 없음                                                            |해당 없음         |
 | MSDN 플랫폼(표준)                                          | VL, 일반 정품                                              | 사용 가능       |  예|
 | Visual Studio Dev Essentials | 해당 없음  | 사용할 수 없음 |해당 없음|
 | Visual Studio Enterprise(월간 클라우드) | Azure                                       | 사용할 수 없음                                  |해당 없음|
 
-<sup>1</sup> 포함: NFR(전매금지), VSIP(Visual Studio Industry Partner), BizSpark, MCT Software & Services Developer, MCT Software & Service, MVP(Microsoft Valued Professional), RD(Region Director). *제외: MPN(Microsoft 파트너 네트워크), FTE, Imagine.*
+<sup>1</sup> *포함:  NFR(전매금지), VSIP(Visual Studio Industry Partner), BizSpark, MCT Software & Services Developer, MCT Software & Service, MVP(Microsoft Valued Professional), RD(Region Director).  제외:  MPN(Microsoft 파트너 네트워크), FTE, Imagine.*
+
+> [!NOTE]
+> Microsoft는 더 이상 Visual Studio Professional 연간 구독 및 클라우드 구독에 Visual Studio Enterprise 연간 구독을 제공하지 않습니다. 기존 고객 환경 및 해당 구독의 갱신, 증가, 감소 또는 취소 기능은 변경되지 않습니다. 새 고객은 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)으로 이동하여 Visual Studio를 구입하기 위한 다양한 옵션을 살펴보세요.
 
 
 어떤 구독을 사용하고 있는지 확실하지 않나요?  자신의 이메일 주소에 할당된 모든 구독을 보려면 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)에 연결합니다. 일부 구독이 표시되지 않으면 하나 이상이 다른 전자 메일 주소에 할당되어 있을 수 있습니다.  해당 구독을 보려면 해당 전자 메일 주소로 로그인해야 합니다.
 
 
 ## <a name="frequently-asked-questions"></a>질문과 대답
-### <a name="q--if-the-benefit-is-free-why-do-i-have-to-supply-a-credit-card-number"></a>Q: 혜택이 무료인데 왜 신용 카드 번호를 입력해야 하나요?
-A: 혜택은 무료이지만 유료 주문 처리에 사용되는 것과 동일한 시스템을 사용합니다.  두 가지 결제 유형이 있습니다. 
+### <a name="q--if-the-benefit-is-free-why-do-i-have-to-supply-a-credit-card-number"></a>Q:  혜택이 무료인데 왜 신용 카드 번호를 입력해야 하나요?
+A:  혜택은 무료이지만 유료 주문 처리에 사용되는 것과 동일한 시스템을 사용합니다.  두 가지 결제 유형이 있습니다. 
 - 신용 카드.  신용 카드 번호를 입력하면 카드에 요금이 청구되지 않습니다. 
 - 청구서.  지불 유형으로 "청구서"를 선택하면 신용 카드 번호를 입력할 필요가 없습니다.  간격을 “연간”으로 설정할 수도 있습니다.  이렇게 하면 청구서가 준비되었다는 이메일을 하나만 받게 됩니다.  청구 금액은 $0.00일 수 있습니다.  
 
-### <a name="q--is-the-power-bi-pro-benefit-included-in-my-subscription-licenses-for-use-in-a-production-environment"></a>Q: 프로덕션 환경에서 사용하기 위해 구독 라이선스에 Power BI Pro 혜택이 포함되어 있습니까?
-답변: 예.  
+### <a name="q--is-the-power-bi-pro-benefit-included-in-my-subscription-licenses-for-use-in-a-production-environment"></a>Q:  프로덕션 환경에서 사용하기 위해 구독 라이선스에 Power BI Pro 혜택이 포함되어 있나요?
+A:  예.  
 
-### <a name="q--when-i-try-to-activate-power-bi-pro-i-get-a-message-you-already-have-an-account-through-work--can-i-still-use-the-benefit"></a>Q: Power BI Pro를 활성화하려고 하면 "이미 작업을 통해 계정이 있습니다."라는 메시지가 나타납니다.  혜택을 계속 사용할 수 있나요?
-답변: 예.  메시지는 관리자가 아닌 활성 Office 365 테넌트가 이미 있는 도메인에 로그온했음을 나타냅니다.  테넌트에 Power BI Pro를 추가하려면 해당 테넌트의 관리자여야 합니다.  이 문제를 해결하려면 다음 단계에 따라 고유한 테넌트를 만듭니다.
+### <a name="q--when-i-try-to-activate-power-bi-pro-i-get-a-message-you-already-have-an-account-through-work--can-i-still-use-the-benefit"></a>Q:  Power BI Pro를 활성화하려고 하면 "이미 작업을 통해 계정이 있습니다."라는 메시지가 나타납니다.  혜택을 계속 사용할 수 있나요?
+A:  예.  메시지는 관리자가 아닌 활성 Office 365 테넌트가 이미 있는 도메인에 로그온했음을 나타냅니다.  테넌트에 Power BI Pro를 추가하려면 해당 테넌트의 관리자여야 합니다.  이 문제를 해결하려면 다음 단계에 따라 고유한 테넌트를 만듭니다.
 1.  작업을 통해 이미 계정이 있다는 메시지가 표시되면 **새 계정 만들기**를 클릭합니다.
 
 2.  다음 화면에서 연락처 정보를 제공하고 **다음**을 클릭합니다.
@@ -108,8 +111,8 @@ A: 혜택은 무료이지만 유료 주문 처리에 사용되는 것과 동일�
 4.  프로세스의 나머지 단계는 6단계로 시작하는 문서의 본문에 나열된 단계와 동일합니다.
 
 
-### <a name="q--im-on-a-government-domain--can-i-use-the-benefit"></a>Q: 저는 정부 도메인에 있습니다.  혜택을 사용할 수 있나요? 
-A: 아니요.  Power BI Pro 혜택은 정부 도메인의 테넌트에 추가할 수 없습니다. 
+### <a name="q--im-on-a-government-tenant--can-i-use-the-benefit"></a>Q:  저는 정부 테넌트에 있습니다.  혜택을 사용할 수 있나요? 
+A:  아니요.  Power BI Pro 혜택은 정부 테넌트에는 추가할 수 없습니다. 
 
 ## <a name="support-resources"></a>지원 리소스
 -  Power BI Pro와 관련하여 도움이 필요하세요?

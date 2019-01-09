@@ -13,28 +13,30 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e5baebb527c09d833e405a98bd701ad02b7fe86
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d5f1d842c6dcfd4385c800a593ccb20b4ee25129
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928063"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592640"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>연습: 프로파일러 API 사용
 
-연습에서는 C# 응용 프로그램을 사용하여 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구 API를 사용하는 방법을 보여 줍니다. 프로파일러 API를 사용하여 계측 프로파일링 동안 수집되는 데이터 양을 제한합니다.  
+연습에서는 C# 애플리케이션을 사용하여 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구 API를 사용하는 방법을 보여 줍니다. 프로파일러 API를 사용하여 계측 프로파일링 동안 수집되는 데이터 양을 제한합니다.  
   
- 이 연습의 단계는 일반적으로 C/C++ 응용 프로그램에 적용됩니다. 각 언어의 경우 빌드 환경을 적절하게 구성해야 합니다.  
+ 이 연습의 단계는 일반적으로 C/C++ 애플리케이션에 적용됩니다. 각 언어의 경우 빌드 환경을 적절하게 구성해야 합니다.  
   
- 일반적으로 샘플 프로파일링을 사용하여 응용 프로그램 성능 분석을 시작합니다. 샘플 프로파일링에서 병목 상태를 파악할 수 있는 정보를 제공하지 않는 경우 계측 프로파일링은 더 높은 수준의 세부 정보를 제공할 수 있습니다. 계측 프로파일링은 스레드 상호 작용을 조사하는 데 매우 유용합니다.  
+ 일반적으로 샘플 프로파일링을 사용하여 애플리케이션 성능 분석을 시작합니다. 샘플 프로파일링에서 병목 상태를 파악할 수 있는 정보를 제공하지 않는 경우 계측 프로파일링은 더 높은 수준의 세부 정보를 제공할 수 있습니다. 계측 프로파일링은 스레드 상호 작용을 조사하는 데 매우 유용합니다.  
   
- 그러나 더 높은 수준의 세부 정보는 더 많은 데이터가 수집됨을 의미합니다. 계측 프로파일링에서 대용량 데이터 파일을 만드는 것을 알 수 있습니다. 또한 계측은 응용 프로그램의 성능에 영향을 줄 가능성이 높습니다. 자세한 내용은 [계측 데이터 값 이해](../profiling/understanding-instrumentation-data-values.md) 및 [샘플링 데이터 값 이해](../profiling/understanding-sampling-data-values.md)를 참조하세요.  
+ 그러나 더 높은 수준의 세부 정보는 더 많은 데이터가 수집됨을 의미합니다. 계측 프로파일링에서 대용량 데이터 파일을 만드는 것을 알 수 있습니다. 또한 계측은 애플리케이션의 성능에 영향을 줄 가능성이 높습니다. 자세한 내용은 [계측 데이터 값 이해](../profiling/understanding-instrumentation-data-values.md) 및 [샘플링 데이터 값 이해](../profiling/understanding-sampling-data-values.md)를 참조하세요.  
   
- Visual Studio 프로파일러를 사용하면 데이터의 수집을 제한할 수 있습니다. 이 연습에서는 프로파일러 API를 사용하여 데이터의 수집을 제한하는 방법의 예를 제공합니다. Visual Studio 프로파일러는 응용 프로그램 내에서 데이터 수집 제어에 대한 API를 제공합니다.  
+ Visual Studio 프로파일러를 사용하면 데이터의 수집을 제한할 수 있습니다. 이 연습에서는 프로파일러 API를 사용하여 데이터의 수집을 제한하는 방법의 예를 제공합니다. Visual Studio 프로파일러는 애플리케이션 내에서 데이터 수집 제어에 대한 API를 제공합니다.  
   
- 네이티브 코드의 경우 Visual Studio 프로파일러 API는 *VSPerf.dll*에 있습니다. 헤더 파일, *VSPerf.h* 및 가져오기 라이브러리, *VSPerf.lib*는 *Microsoft Visual Studio 9\Team Tools\Performance Tools* 디렉터리에 있습니다.  
+ 네이티브 코드의 경우 Visual Studio 프로파일러 API는 *VSPerf.dll*에 있습니다. 헤더 파일, *VSPerf.h* 및 가져오기 라이브러리, *VSPerf.lib*는 *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK* 디렉터리에 있습니다.  64비트 앱의 경우 폴더는 *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK*입니다.
   
- 관리되는 코드의 경우 프로파일러 API는 *Microsoft.VisualStudio.Profiler.dll*에 있습니다. 이 DLL은 *Microsoft Visual Studio 9\Team Tools\Performance Tools* 디렉터리에 있습니다. 자세한 내용은 <xref:Microsoft.VisualStudio.Profiler>을 참조하세요.  
+ 관리되는 코드의 경우 프로파일러 API는 *Microsoft.VisualStudio.Profiler.dll*에 있습니다. 이 DLL은 *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* 디렉터리에 있습니다. 64비트 앱의 경우 폴더는 *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*입니다. 자세한 내용은 <xref:Microsoft.VisualStudio.Profiler>을 참조하세요. 
+ 
+  
   
 ## <a name="prerequisites"></a>전제 조건  
  이 연습에서는 사용자가 선택한 개발 환경이 디버깅 및 샘플링을 지원하도록 구성되었다고 가정합니다. 다음 항목에서는 이러한 필수 구성 요소의 개요를 제공합니다.  
@@ -60,7 +62,7 @@ DataCollection.CurrentId);
 1.  Visual Studio에서 새 C# 프로젝트를 만들거나 기본 설정에 따라 명령줄 빌드를 사용합니다.  
   
     > [!NOTE]
-    >  빌드는 *Microsoft Visual Studio 9\Team Tools\Performance Tools* 디렉터리에 있는 *Microsoft.VisualStudio.Profiler.dll* 라이브러리를 참조해야 합니다.  
+    >  빌드는 *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* 디렉터리에 있는 *Microsoft.VisualStudio.Profiler.dll* 라이브러리를 참조해야 합니다.  
   
 2.  다음 코드를 복사하여 프로젝트에 붙여넣습니다.  
   
@@ -147,21 +149,21 @@ DataCollection.CurrentId);
   
 1.  이 연습 앞부분의 "프로파일링할 코드 만들기" 절차에서 만든 샘플 코드의 디버그 버전을 컴파일합니다.  
   
-2.  관리되는 응용 프로그램을 프로파일링하려면 다음 명령을 입력하여 적절한 환경 변수를 설정합니다.  
+2.  관리되는 애플리케이션을 프로파일링하려면 다음 명령을 입력하여 적절한 환경 변수를 설정합니다.  
   
      **VsPerfCLREnv /traceon**  
   
-3.  **VSInstr \<filename>.exe** 명령을 입력합니다.  
+3.  다음 명령을 입력합니다. **VSInstr \<filename>.exe**  
   
-4.  **VSPerfCmd /start:trace /output:\<filename>.vsp** 명령을 입력합니다.  
+4.  다음 명령을 입력합니다. **VSPerfCmd /start:trace /output:\<filename>.vsp**  
   
-5.  **VSPerfCmd /globaloff** 명령을 입력합니다.  
+5.  다음 명령을 입력합니다. **VSPerfCmd /globaloff**  
   
 6.  프로그램을 실행합니다.  
   
-7.  **VSPerfCmd /shutdown** 명령을 입력합니다.  
+7.  다음 명령을 입력합니다. **VSPerfCmd /shutdown**  
   
-8.  **VSPerfReport /calltrace:\<filename>.vsp** 명령을 입력합니다.  
+8.  다음 명령을 입력합니다. **VSPerfReport /calltrace:\<filename>.vsp**  
   
      결과 성능 데이터와 함께 현재 디렉터리에 .*csv* 파일이 만들어집니다.  
   

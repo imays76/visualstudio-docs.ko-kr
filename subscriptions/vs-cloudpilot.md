@@ -3,22 +3,22 @@ title: Visual Studio 구독의 CloudPilot 혜택 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 12/04/2018
+ms.date: 12/19/2018
 ms.topic: conceptual
 description: 선택한 Visual Studio 구독에서 제공하는 CloudPilot 혜택 알아보기
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 4b7f7730eef2372ecdb19cbb8d87548705a96042
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: a5e3f4b3026afd528f8eeec42de157265b18013a
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52897076"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740038"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Visual Studio 구독의 CloudPilot 혜택
 
-간단한 몇 단계로 앱을 Microsoft Azure로 이동할 수 있습니다. 성공적으로 컨테이너, VM, App Services, SQL Azure 및/또는 SQL MI로 마이그레이션하기 위해 필요한 코드 변경 내용을 몇 분 내에 코드 줄까지 식별합니다. 그런 다음, ASR, DMA 및 DMS를 활용하는 마법사로 앱을 Azure로 마이그레이션합니다. 
+간단한 몇 단계로 앱을 Microsoft Azure로 이동할 수 있습니다. 성공적으로 마이그레이션하기 위해 필요한 코드 변경 내용을 몇 분 내에 코드 줄까지 식별합니다. 컨테이너, VM, App Services, SQL Azure 및/또는 SQL MI. 그런 다음, ASR, DMA 및 DMS를 활용하는 마법사로 앱을 Azure로 마이그레이션합니다. 
 
 UnifyCloud의 CloudPilot은 개발자가 신속하고 간편하게 애플리케이션을 Azure로 이동할 수 있도록 설계되었습니다.  수동 평가가 수행되는 짧은 시간에 CloudPilot는 Azure PaaS 및 IaaS 마이그레이션 비용을 정확하게 확인하고, 애플리케이션을 클라우드에서 실행하려면 코드를 어떻게 변경해야 하는지 코드 줄까지 자세한 권장 사항을 제공합니다. CloudPilot은 클라우드에 대한 구체적인 코드 수준 변경 내용을 제공하여 클라우드 마이그레이션 작업의 초기 평가 및 개발 계획을 지원하고, 엔터프라이즈 기술 컨트롤 및 정책에 대한 최종 테스트를 도와줍니다.
 
@@ -63,8 +63,8 @@ UnifyCloud의 CloudPilot은 개발자가 신속하고 간편하게 애플리케�
 
 | 구독 수준                                                 |     채널                                            | 이점                                                          | 갱신 가능?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise(표준, 연간 클라우드)   | VL, Azure, 일반 정품, | 라이선스 2개, 90일, 무제한 검사       |  아니요.  새 구독자만 사용할 수 있음          |
-| Visual Studio Professional(표준, 연간 클라우드) | VL, Azure, 일반 정품                                       | 라이선스 1개, 30일, 검사 일회                                                            |  아니요.  새 구독자만 사용할 수 있음           |
+| Visual Studio Enterprise(Standard)   | VL, Azure, 일반 정품, | 라이선스 2개, 90일, 무제한 검사       |  아니요.  새 구독자만 사용할 수 있음          |
+| Visual Studio Professional(표준) | VL, Azure, 일반 정품                                       | 라이선스 1개, 30일, 검사 일회                                                            |  아니요.  새 구독자만 사용할 수 있음           |
 | Visual Studio Test Professional(표준)                         | VL, 일반 정품                                              | 사용할 수 없음                                             |  N/A           |
 | MSDN 플랫폼(표준)                                          | VL, 일반 정품                                              | 사용할 수 없음                                              |  N/A          |
 | Visual Studio Dev Essentials | N/A  | 사용할 수 없음 | N/A |
@@ -73,8 +73,11 @@ UnifyCloud의 CloudPilot은 개발자가 신속하고 간편하게 애플리케�
 
 
 
-<sup>1</sup> 포함: NFR(전매금지), FTE, MVP(Microsoft Valued Professional), RD(Region Director), MPN(Microsoft 파트너 네트워크), VSIP(Visual Studio Industry Partner), Microsoft Certified Trainer, BizSpark, Imagine
+<sup>1</sup> *포함:  NFR(전매금지), FTE, MVP(Microsoft Valued Professional), RD(Region Director), MPN(Microsoft 파트너 네트워크), VSIP(Visual Studio Industry Partner), Microsoft Certified Trainer, BizSpark, Imagine*
 
+
+> [!NOTE]
+> Microsoft는 더 이상 Visual Studio Professional 연간 구독 및 클라우드 구독에 Visual Studio Enterprise 연간 구독을 제공하지 않습니다. 기존 고객 환경 및 해당 구독의 갱신, 증가, 감소 또는 취소 기능은 변경되지 않습니다. 새 고객은 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)으로 이동하여 Visual Studio를 구입하기 위한 다양한 옵션을 살펴보세요.
 
 
 어떤 구독을 사용하고 있는지 확실하지 않나요?  자신의 이메일 주소에 할당된 모든 구독을 보려면 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)에 연결합니다. 일부 구독이 표시되지 않으면 하나 이상이 다른 전자 메일 주소에 할당되어 있을 수 있습니다.  해당 구독을 보려면 해당 전자 메일 주소로 로그인해야 합니다.

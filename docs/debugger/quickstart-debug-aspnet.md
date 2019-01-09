@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 74671401b3e3eaeae5840110dfc37c926266f98a
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 82288b67916255914d352e4f0f6f2fd75aa9571d
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636989"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561959"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>빠른 시작: Visual Studio 디버거를 사용하여 ASP.NET 디버그
 
@@ -103,7 +103,7 @@ Visual Studio 디버거는 앱을 디버그하도록 돕는 여러 가지 강력
 
 앱은 실행을 계속하고, 단추를 클릭한 코드 줄에서 일시 중지합니다.
 
-코드를 단계별로 실행하는 데 사용되는 일반적인 키보드 명령은 **F10** 및 **F11**을 포함합니다. 더 자세한 지침은 [초보자 가이드](../debugger/getting-started-with-the-debugger.md)를 참조하세요.
+코드를 단계별로 실행하는 데 사용되는 일반적인 키보드 명령은 **F10** 및 **F11**을 포함합니다. 자세한 지침은 [디버거 소개](../debugger/debugger-feature-tour.md)를 참조하세요.
 
 ## <a name="inspect-variables-in-a-datatip"></a>datatip에서 변수 검사
 

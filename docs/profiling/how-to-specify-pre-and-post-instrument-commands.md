@@ -1,5 +1,5 @@
 ---
-title: '방법: 계측 전 명령 및 계측 후 명령 지정 | Microsoft 문서'
+title: '방법: 계측 전 명령 및 계측 후 명령 지정 | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8ce82bea823307e02b719fbfae43fe0697aca65
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 94c27fe4616ffcf541602cc8ab61bbaa26ddbb18
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844640"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53593004"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>방법: 계측 전 명령 및 계측 후 명령 지정
 
@@ -29,23 +29,9 @@ ms.locfileid: "34844640"
 
 프로파일링 실행의 모든 계측된 이진 파일에 대한 명령이나 개별 이진 파일에 대한 명령을 지정합니다. 그러나 계측 프로세스 전에 실행할 계측 전 명령을 하나만 지정하고 계측 프로세스 후에 실행할 계측 후 명령을 하나만 지정할 수 있습니다. 모든 이진 파일 및 개별 이진 파일에 대한 명령을 둘 다 지정할 수는 없습니다. 모든 이진 파일에 대한 명령을 지정하면 세션에서 각 이진 파일의 계측 이전 또는 이후에 명령이 실행됩니다.
 
-명령이 실행되는 작업 디렉터리는 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]를 실행 중인 운영 체제 및 프로파일링된 응용 프로그램의 대상 플랫폼에 따라 달라집니다.
+명령이 실행되는 작업 디렉터리는 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]를 실행 중인 운영 체제 및 프로파일링된 애플리케이션의 대상 플랫폼에 따라 달라집니다.
 
- **32비트 컴퓨터**
-
-32비트 컴퓨터에서 기본 프로파일러 도구가 위치한 디렉터리는 *드라이브\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools*입니다.
-
-**64비트 컴퓨터**
-
-64비트 컴퓨터에서 프로파일링된 응용 프로그램의 대상 플랫폼에 따라 경로를 지정합니다.
-
-- 32비트 응용 프로그램의 경우 기본 프로파일러 도구 디렉터리는 다음과 같습니다.
-
-     *드라이브\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools*
-
-- 64비트 응용 프로그램의 경우 기본 프로파일러 도구가 위치한 디렉터리는 다음과 같습니다.
-
-     *드라이브\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\x64*
+프로파일링 도구에 대한 경로를 가져오려면 [명령줄 도구의 경로 지정](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)을 참조하세요.
 
 ## <a name="to-specify-pre-instrument-commands"></a>계측 전 명령을 지정하려면
 

@@ -19,16 +19,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 769bcfa202961c5a492e4fcb5af8e522b9052059
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f1d7ba3fff5bc075f7113ad2a1f2a14e6fa6b91a
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842263"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53685694"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>방법: 클래스 디자이너를 사용하여 형식 만들기
 
-새로운 형식의 C# 및 Visual Basic 프로젝트를 디자인하려면 클래스 다이어그램에서 해당 형식을 만듭니다. 기존 형식을 보려면 [방법: 기존 형식 보기](how-to-view-existing-types.md)를 참조하세요.
+새로운 형식의 C# 및 Visual Basic 프로젝트를 디자인하려면 클래스 다이어그램에서 해당 형식을 만듭니다. 기존 형식을 확인하려면 [방법: 기존 형식 보기](how-to-view-existing-types.md)를 참조하세요.
 
 ##  <a name="CreateType"></a> 새 형식 만들기
 
@@ -94,5 +94,4 @@ ms.locfileid: "49842263"
 - [방법: 형식 간에 상속 만들기](how-to-create-inheritance-between-types.md)
 - [방법: 형식 간에 연결 만들기](how-to-create-associations-between-types.md)
 - [형식 멤버 만들기 및 구성](creating-and-configuring-type-members.md)
-- [클래스 다이어그램 작업](working-with-class-diagrams.md)
 - [클래스 및 형식 디자인](designing-and-viewing-classes-and-types.md)
