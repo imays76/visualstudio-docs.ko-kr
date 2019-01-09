@@ -1,8 +1,6 @@
 ---
 title: 공통 데이터 뷰 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools,views
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 21ccf237bec0b3ab7bf3ad96f6f4d24df240db0e
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 0c37bea5a5b447c7cd93c63d5a0ba8cf497d1723
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263931"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950013"
 ---
 # <a name="common-data-views"></a>공통 데이터 뷰
 이 섹션에는 모든 프로파일링 방법에 공통적인 프로파일러 데이터 파일의 뷰와 보고서에 대한 참조 정보가 포함되어 있습니다.  

@@ -2,7 +2,6 @@
 title: '방법: 멤버 표시와 연결 표시 간 변경(클래스 디자이너)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - notation, member
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db6bcf1d44be4a904b38877717aff589906995a7
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: 56ffdcaf2a78933d52fe3a19e2c34deb5c303401
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684157"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952643"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>방법: 클래스 디자이너에서 멤버 표시와 연결 표시 간 변경
 

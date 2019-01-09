@@ -3,7 +3,6 @@ title: Python 인터프리터 선택 및 설치
 description: 설치 관리자를 찾을 위치에 대한 간단한 지침이 포함된 Visual Studio에서 지원되는 Python 인터프리터의 전체 목록입니다.
 ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de7bd0dcbdd36b9d30ea252a70a380b190adcce2
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 60a3aff0cf0a5803cfc60b0215ca1f3cda44cef4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063563"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905230"
 ---
 # <a name="install-python-interpreters"></a>Python 인터프리터 설치
 

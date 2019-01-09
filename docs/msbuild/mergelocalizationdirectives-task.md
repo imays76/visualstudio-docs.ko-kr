@@ -1,8 +1,6 @@
 ---
 title: MergeLocalizationDirectives 작업 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d0245765c1b6aa01d6762848463997ad2f13ba3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 64f36cadc6ee33563f516703f3bc48e81558b8ec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936676"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959943"
 ---
 # <a name="mergelocalizationdirectives-task"></a>MergeLocalizationDirectives 작업
 <xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> 작업은 하나 이상의 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 이진 형식 파일에 대한 지역화 특성과 주석을 전체 어셈블리에 대한 단일 파일로 병합합니다.  
@@ -37,10 +35,10 @@ ms.locfileid: "49936676"
 | `GeneratedLocalizationFiles` | 필수 **ITaskItem[]** 매개 변수입니다.<br /><br /> 개별 파일에 대한 지역화 지시문 파일 목록을 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 이진 형식으로 지정합니다. |
 | `OutputFile` | 필수 **String** 출력 매개 변수입니다.<br /><br /> 컴파일된 지역화 지시문 어셈블리의 출력 경로를 지정합니다. |
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  지역화 특성 및 주석을 [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] 내용에 추가할 수 있습니다. [!INCLUDE[TLA#tla_wpf](../msbuild/includes/tlasharptla_wpf_md.md)] 지역화 지원을 사용하면 지역화 특성 및 주석을 제거하고 생성된 어셈블리와는 별개인 *.loc* 파일에 추가할 수 있습니다. 이 작업은 **LocalizationPropertyStorage** 특성을 사용하여 수행할 수 있습니다. 지역화 특성 및 주석과 **LocalizationPropertyStorage**에 대한 자세한 내용은 [지역화 특성 및 주석](/dotnet/framework/wpf/advanced/localization-attributes-and-comments)을 참조하세요.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 이진 형식 파일에 해당하는 지역화 주석을 단일 *.loc* 파일에 병합합니다.  
   
 ```xml  
@@ -61,4 +59,4 @@ ms.locfileid: "49936676"
 [WPF MSBuild 작업 참조](../msbuild/wpf-msbuild-task-reference.md)  
 [MSBuild 참조](../msbuild/msbuild-reference.md)  
 [MSBuild 작업 참조](../msbuild/msbuild-task-reference.md)  
-[WPF 응용 프로그램 빌드(WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)  
+[WPF 애플리케이션 빌드(WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)  

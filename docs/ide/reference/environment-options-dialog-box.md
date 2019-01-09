@@ -2,7 +2,6 @@
 title: 옵션 대화 상자, 환경
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.OptionsDialog.Environment
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 18ef27d60c5460e43d863b5258bcefe08ee22b17
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.openlocfilehash: e120260559f60f0433770369b36e523e0fcd4cff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53348477"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937350"
 ---
 # <a name="environment-options-dialog-box"></a>옵션 대화 상자, 환경
 

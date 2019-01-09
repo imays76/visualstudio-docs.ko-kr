@@ -2,7 +2,6 @@
 title: 보안
 ms.date: 06/01/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - security [Visual Studio], applications
@@ -13,18 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87e9cb7e9400253713caab17da04c44eb11f5ed1
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 74643454c4e96f5f4c1faa98b26fa1f26bd2790b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843912"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904632"
 ---
-# <a name="secure-applications"></a>보안 응용 프로그램
+# <a name="secure-applications"></a>보안 애플리케이션
 
-디자인에서 배포에 이르기까지 응용 프로그램을 개발하는 모든 과정에 보안을 고려해야 합니다. Visual Studio를 최대한 안전하게 실행하여 시작합니다. [사용자 권한](../ide/user-permissions-and-visual-studio.md)을 참조하세요.
+디자인에서 배포에 이르기까지 애플리케이션을 개발하는 모든 과정에 보안을 고려해야 합니다. Visual Studio를 최대한 안전하게 실행하여 시작합니다. [사용자 권한](../ide/user-permissions-and-visual-studio.md)을 참조하세요.
 
-안전한 응용 프로그램을 효과적으로 개발하려면 보안 개념 및 개발할 플랫폼의 보안 기능에 대한 기본적인 내용과 보안 코딩 기술을 이해하고 있어야 합니다.
+안전한 애플리케이션을 효과적으로 개발하려면 보안 개념 및 개발할 플랫폼의 보안 기능에 대한 기본적인 내용과 보안 코딩 기술을 이해하고 있어야 합니다.
 
 ## <a name="code-for-security"></a>보안에 대한 코드
 

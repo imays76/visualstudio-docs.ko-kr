@@ -1,8 +1,6 @@
 ---
 title: CL 작업 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - VC.Project.VCCLCompilerTool.UseUnicodeForAssemblerListing
@@ -23,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c239dc78d152e9060d176ebe1d4abd3b981a57d
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: cea2e191c5a85b8aac592e4e438eaa3b93bcd4f7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220367"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912771"
 ---
 # <a name="cl-task"></a>CL 작업
 Visual C++ 컴파일러 도구 *cl.exe*를 래핑합니다. 컴파일러는 실행(*.exe*) 파일, 동적 연결 라이브러리(*.dll*) 파일 또는 코드 모듈(*.netmodule*) 파일을 생성합니다. 자세한 내용은 [컴파일러 옵션](/cpp/build/reference/compiler-options)을 참조하세요.  
@@ -176,7 +174,7 @@ Visual C++ 컴파일러 도구 *cl.exe*를 래핑합니다. 컴파일러는 실�
   
    선택적 문자열 매개 변수입니다.  
   
-   응용 프로그램 및 구성 요소가 CLR(공용 언어 런타임)의 기능을 사용할 수 있게 합니다.  
+   애플리케이션 및 구성 요소가 CLR(공용 언어 런타임)의 기능을 사용할 수 있게 합니다.  
   
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.  
   
@@ -416,7 +414,7 @@ Visual C++ 컴파일러 도구 *cl.exe*를 래핑합니다. 컴파일러는 실�
   
    선택적 `Boolean` 매개 변수입니다.  
   
-   `true`인 경우 응용 프로그램을 더 빠르게 실행하는 데 도움이 되는 내장 함수 또는 다른 특별한 형태의 함수로 일부 함수 호출을 바꿉니다.  
+   `true`인 경우 애플리케이션을 더 빠르게 실행하는 데 도움이 되는 내장 함수 또는 다른 특별한 형태의 함수로 일부 함수 호출을 바꿉니다.  
   
    자세한 내용은 [/Oi(내장 함수 만들기)](/cpp/build/reference/oi-generate-intrinsic-functions)를 참조하세요.  
   
@@ -558,7 +556,7 @@ Visual C++ 컴파일러 도구 *cl.exe*를 래핑합니다. 컴파일러는 실�
   
    선택적 `Boolean` 매개 변수입니다.  
   
-   `true`인 경우 C 및 C++소스 파일을 전처리하고, 표준 출력 장치에 전처리된 파일을 복사합니다.  
+   `true`인 경우 C 및 C++소스 파일을 전처리하고, 표준 출력 디바이스에 전처리된 파일을 복사합니다.  
   
    자세한 내용은 [/EP(#line 지시문 없이 stdout로 전처리)](/cpp/build/reference/ep-preprocess-to-stdout-without-hash-line-directives)를 참조하세요.  
   

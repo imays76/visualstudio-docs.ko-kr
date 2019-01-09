@@ -2,7 +2,6 @@
 title: 새 파일 명령
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - file.newfile
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b4d68f53343b2523347f89977fe2bd602d64742
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: eb4ccae573813811567033dfa574c94e1bf809b3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179959"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932118"
 ---
 # <a name="new-file-command"></a>새 파일 명령
 새 파일을 만들고 엽니다. 파일은 기타 파일 폴더 아래에 나타납니다.
@@ -63,7 +62,7 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
 /e:"Source Code (text) Editor"
 ```
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  이 예제에서는 “test1.htm”이라는 새 웹 페이지를 만들고 소스 코드 편집기에서 엽니다.
 
 ```cmd
@@ -76,4 +75,4 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
 - [명령 창](../../ide/reference/command-window.md)
 - [직접 실행 창](../../ide/reference/immediate-window.md)
 - [찾기/명령 상자](../../ide/find-command-box.md)
-- [Visual Studio 명령 별칭](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
