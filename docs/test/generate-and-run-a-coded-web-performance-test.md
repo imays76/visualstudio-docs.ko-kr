@@ -15,17 +15,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 8a4e1ea45b8fe3ae0e33064973fcf1bc3517598e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c23d2571b021532b1a78a8207844561cc0c659b1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067844"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837175"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>코딩된 웹 성능 테스트 생성 및 실행
 
-웹 성능 테스트는 사용자의 웹 응용 프로그램을 탐색하여 기록됩니다. 테스트는 부하 테스트에 포함되어 여러 사용자의 스트레스 환경에서 웹 응용 프로그램의 성능을 측정합니다. 웹 성능 테스트는 코드 기반 스크립트로 변환한 후에 다른 소스 코드처럼 편집하고 사용자 정의할 수 있습니다. 예를 들어, 루프 및 분기 구문을 추가할 수 있습니다.
+웹 성능 테스트는 사용자의 웹 응용 프로그램을 탐색하여 기록됩니다. 테스트는 부하 테스트에 포함되어 여러 사용자의 스트레스 환경에서 웹 애플리케이션의 성능을 측정합니다. 웹 성능 테스트는 코드 기반 스크립트로 변환한 후에 다른 소스 코드처럼 편집하고 사용자 정의할 수 있습니다. 예를 들어, 루프 및 분기 구문을 추가할 수 있습니다.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 

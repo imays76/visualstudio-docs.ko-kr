@@ -2,7 +2,6 @@
 title: 현재 스택 프레임 설정 명령
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.setcurrentstackframe
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 95f8c762f16eb4a784ccc2cffb5bfa27d215370e
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 6a4fa39ad3ce07792819544738185164fef8c985
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704800"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53844527"
 ---
 # <a name="set-current-stack-frame-command"></a>현재 스택 프레임 설정 명령
 특정 스택 프레임을 설정할 수 있습니다.
@@ -34,9 +33,9 @@ Debug.SetCurrentStackFrame index
 ## <a name="arguments"></a>인수
  `index`
 
- 필수. 해당 인덱스로 스택 프레임을 선택합니다.
+ 필수 요소. 해당 인덱스로 스택 프레임을 선택합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cmd
 >Debug.SetCurrentStackFrame 1
@@ -47,4 +46,4 @@ Debug.SetCurrentStackFrame index
 - [Visual Studio 명령](../../ide/reference/visual-studio-commands.md)
 - [명령 창](../../ide/reference/command-window.md)
 - [찾기/명령 상자](../../ide/find-command-box.md)
-- [Visual Studio 명령 별칭](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

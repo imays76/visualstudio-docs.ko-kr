@@ -1,8 +1,6 @@
 ---
 title: OnError 요소(MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 03/13/2017
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#OnError
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c33f32e46621bb2f56231b2c992712fd42126f1e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 43e76a9ffece66a6330b634bb982ec14b10b803c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841392"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924555"
 ---
 # <a name="onerror-element-msbuild"></a>OnError 요소(MSBuild)
 `ContinueOnError` 특성이 실패한 태스크의 `false`인 경우 하나 이상의 대상이 실행되도록 합니다.  
@@ -60,12 +58,12 @@ ms.locfileid: "49841392"
 | - | - |
 | [Target](../msbuild/target-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 작업의 컨테이너 요소입니다. |
 
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  `Target` 요소의 태스크 중 하나가 `ErrorAndStop`(또는 `false`)로 설정된 `ContinueOnError` 특성으로 실패한 경우 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]은 `OnError` 요소를 실행합니다. 태스크에 실패한 경우 `ExecuteTargets` 특성에 지정된 대상이 실행됩니다. 대상에 하나 이상의 `OnError` 요소가 있는 경우 태스크가 실패하면 `OnError` 요소는 순차적으로 실행됩니다.  
 
  `ContinueOnError` 특성에 대한 자세한 내용은 [Task 요소(MSBuild)](../msbuild/task-element-msbuild.md)를 참조하세요. 대상에 대한 자세한 내용은 [대상](../msbuild/msbuild-targets.md)을 참조하세요.  
 
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드는 `TaskOne` 및 `TaskTwo` 태스크를 실행합니다. `TaskOne`에 실패하는 경우 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]는 `OnError` 요소를 평가하고 `OtherTarget` 대상을 실행합니다.  
 
 ```xml  

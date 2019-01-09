@@ -2,7 +2,6 @@
 title: 작업 목록 사용
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - TaskListWindow
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7766a7fd935cc1e1131c4780a5a88ef6fa54e838
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 0b30abf88a00934670ba2d34873ad883c833aae8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349402"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831104"
 ---
 # <a name="use-the-task-list"></a>작업 목록 사용
 
@@ -32,7 +31,7 @@ ms.locfileid: "51349402"
 
 ## <a name="the-task-list-window"></a>작업 목록 창
 
-**작업 목록**이 열리면서 응용 프로그램 창의 아래쪽에 나타납니다.
+**작업 목록**이 열리면서 애플리케이션 창의 아래쪽에 나타납니다.
 
 **작업 목록**을 열려면 **보기** > **작업 목록**을 선택하거나 키보드에서 **Ctrl**+**\\**,**T**를 누릅니다.
 

@@ -2,7 +2,6 @@
 title: devenv.exe Setup 스위치
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - setup Devenv switch
@@ -11,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: eca577c0e4646821262c953cf48256937eed386c
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 3f1f801d4da451d9357082359a1cf001915e1041
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948377"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829276"
 ---
 # <a name="setup-devenvexe"></a>/Setup(devenv.exe)
 
@@ -28,14 +27,14 @@ ms.locfileid: "51948377"
 devenv /setup
 ```
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 이 스위치는 인수가 필요 없습니다. `devenv /setup` 명령은 일반적으로 설치 프로세스의 마지막 단계로 표시됩니다. `/setup` 스위치를 사용해도 Visual Studio가 시작되지는 않습니다.
 
 > [!NOTE]
 > `/setup` 스위치를 사용하려면 관리자 권한으로 `devenv`를 실행해야 합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 이 예는 VSPackages를 포함하는 Visual Studio 버전 설치의 마지막 단계를 보여 줍니다.
 

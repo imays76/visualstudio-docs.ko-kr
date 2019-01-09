@@ -2,7 +2,6 @@
 title: '연습: 구성 파일을 사용하여 데이터 원본 정의'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - configuration files [Visual Studio ALM], defining data sources
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d329e1aedb5b81c2be2d52614e4c540ecb8ef8aa
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 28e8ec57d051a8237a93e59f69f9e46c255a28f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066995"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840741"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>연습: 구성 파일을 사용하여 데이터 원본 정의
 
@@ -52,7 +51,7 @@ ms.locfileid: "53066995"
 
      **새 항목 추가** 창이 열립니다.
 
-3. **응용 프로그램 구성 파일** 템플릿을 선택하고 **추가**를 클릭합니다.
+3. **애플리케이션 구성 파일** 템플릿을 선택하고 **추가**를 클릭합니다.
 
 ##  <a name="define-a-custom-configuration-section"></a>사용자 지정 구성 섹션 정의
 
@@ -77,7 +76,7 @@ ms.locfileid: "53066995"
 
 ## <a name="define-connection-strings"></a>연결 문자열 정의
 
-연결 문자열은 데이터 소스 액세스를 위한 공급자 특정 정보를 정의합니다. 구성 파일에 정의된 연결 문자열은 응용 프로그램 전체에서 재사용 가능한 데이터 공급자 정보를 제공합니다. 이 섹션에서는 사용자 지정 구성 섹션에 정의된 데이터 원본에서 사용되는 두 개의 연결 문자열을 만듭니다.
+연결 문자열은 데이터 소스 액세스를 위한 공급자 특정 정보를 정의합니다. 구성 파일에 정의된 연결 문자열은 애플리케이션 전체에서 재사용 가능한 데이터 공급자 정보를 제공합니다. 이 섹션에서는 사용자 지정 구성 섹션에 정의된 데이터 원본에서 사용되는 두 개의 연결 문자열을 만듭니다.
 
 ### <a name="to-define-connection-strings"></a>연결 문자열을 정의하려면
 

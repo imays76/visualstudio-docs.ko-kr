@@ -2,7 +2,6 @@
 title: -LCID(devenv.exe)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - language default
@@ -18,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a97874ae1267677c5055e84650a839068479fc10
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: f5c3f8633721a4568b81fab31d8fe91a4c33be2f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948597"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852075"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 IDE(통합 개발 환경) 내의 텍스트, 통화 및 다른 값에 사용된 기본 언어를 설정합니다.
@@ -37,7 +36,7 @@ devenv {/LCID|/l} LocaleID
 ## <a name="arguments"></a>인수
  `LocaleID` 필수입니다. 지정한 언어의 LCID(로캘 ID)입니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
  IDE를 로드하고 환경에 대한 기본 자연 언어를 설정합니다. 이 변경은 세션 간에 유지되고 IDE의 **옵션** 대화 상자에 있는 **환경** 옵션의 **국가별 설정** 창에 반영됩니다.
 
  지정된 언어를 사용자의 시스템에서 사용할 수 없는 경우 /LCID 스위치는 무시됩니다.
@@ -56,7 +55,7 @@ devenv {/LCID|/l} LocaleID
 |한국어|1042|
 |스페인어|3082|
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  이 예에서는 영어 리소스 문자열을 사용하는 IDE를 로드합니다.
 
 ```cmd

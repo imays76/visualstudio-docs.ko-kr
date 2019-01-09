@@ -2,7 +2,6 @@
 title: 메모리 목록 표시 명령
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.listmemory
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 57d6c8c7821df8bd22723900ebd011c110a1857f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6c0c2512bd6b446c35aa01e9f56711bb39cd85b3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815184"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846089"
 ---
 # <a name="list-memory-command"></a>메모리 목록 표시 명령
 지정된 메모리 범위의 내용을 표시합니다.
@@ -55,7 +54,7 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 
  선택 사항입니다. 서명됨, 서명하지 않음 또는 16진수로 숫자를 볼 형식을 지정합니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
  모든 스위치를 포함한 전체 **Debug.ListMemory** 명령을 작성하는 대신 특정 스위치를 지정된 값으로 미리 설정한 미리 정의된 별칭을 사용하여 명령을 호출할 수 있습니다. 예를 들어, 다음을 입력하는 대신
 
 ```cmd
@@ -81,7 +80,7 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 |**dq**|Debug.ListMemory /Format:EightBytes|
 |**du**|Debug.ListMemory /Unicode|
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cmd
 >Debug.ListMemory /Format:float /Count:30 /Unicode

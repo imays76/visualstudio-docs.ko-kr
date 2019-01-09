@@ -1,8 +1,6 @@
 ---
 title: Sys (VSPerfCmd) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 294a6f9e-b49f-4c83-b322-5ac5411b66fb
 author: mikejo5000
@@ -10,15 +8,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 567510bba3e7503fccb1273c306990eb17a93525
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 94a2fb99a6b43328fcc31a5cba0b1d4f0c3df168
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669564"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908812"
 ---
 # <a name="sys-vsperfcmd"></a>Sys(VSPerfCmd)
-*VSPerfCmd.exe* **Sys** 옵션은 시스템 호출 이벤트(프로파일링된 응용 프로그램에서 운영 체제로 함수 호출)로 샘플링되는 프로파일링 이벤트를 설정하고 필요에 따라 기본값 10의 샘플링 간격에서 시스템 호출 수를 변경합니다.  
+*VSPerfCmd.exe***Sys** 옵션은 시스템 호출 이벤트(프로파일링된 애플리케이션에서 운영 체제로 함수 호출)로 샘플링되는 프로파일링 이벤트를 설정하고 필요에 따라 기본값 10의 샘플링 간격에서 시스템 호출 수를 변경합니다.  
   
  **Sys**는 **Launch** 또는 **Attach** 옵션도 포함하는 명령줄에서만 사용할 수 있습니다.  
   
@@ -60,7 +58,7 @@ VSPerfCmd.exe {/Launch:AppName|Attach:PID} /Sys[:Events] [Options]
  **GC**[**:**{**Allocation**&#124;**Lifetime**}]  
  .NET 메모리 데이터를 수집합니다. 기본적으로(**Allocation**) 모든 메모리 할당 이벤트에서 데이터가 수집됩니다. **Lifetime** 매개변수가 지정되면 데이터는 각 가비지 컬렉션 이벤트에서도 수집됩니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  이 예제는 프로파일러 샘플링 이벤트를 시스템 호출로 설정하는 방법 및 샘플링 간격을 샘플당 20 호출로 설정하는 방법을 보여 줍니다.  
   
 ```cmd  
@@ -70,6 +68,6 @@ VSPerfCmd.exe /Launch:TestApp.exe /Sys:20
   
 ## <a name="see-also"></a>참고 항목  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [독립 실행형 응용 프로그램 프로파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [ASP.NET 웹 응용 프로그램 프로파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [독립 실행형 애플리케이션 프로파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [ASP.NET 웹 애플리케이션 프로파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [서비스 프로파일링](../profiling/command-line-profiling-of-services.md)

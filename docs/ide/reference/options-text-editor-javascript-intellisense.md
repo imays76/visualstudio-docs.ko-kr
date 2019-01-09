@@ -2,7 +2,6 @@
 title: 옵션, 텍스트 편집기, JavaScript, IntelliSense
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Intellisense.References
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 742d6394975b6920218579e1b4652bb2e99c479c
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 688360e117863b6a1e5e3b06ad23a8835d878bd2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670782"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843009"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>옵션, 텍스트 편집기, JavaScript, IntelliSense
 **옵션** 대화 상자의 **IntelliSense** 페이지를 사용하여 JavaScript용 IntelliSense의 동작에 영향을 주는 설정을 수정합니다. 메뉴 모음에서 **도구** > **옵션**을 선택한 다음, **텍스트 편집기** > **JavaScript** > **IntelliSense**를 차례로 확장하여 **IntelliSense**에 액세스할 수 있습니다.

@@ -2,7 +2,6 @@
 title: -UseEnv(devenv.exe)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VC.Project.UseEnvVars.ExcludePath
@@ -21,12 +20,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a11d8eceec682e37f9bf34c79980c37880bdbe6
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: b597eae42eb36c8d034ca9a4038b6823c1121349
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948493"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846336"
 ---
 # <a name="useenv-devenvexe"></a>/UseEnv(devenv.exe)
 
@@ -41,7 +40,7 @@ Visual Studio를 시작하고 환경 변수를 **VC++ 디렉터리** 대화 상�
 Devenv /useenv
 ```
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 Visual Studio를 시작하고 환경 변수를 **VC++ 디렉터리** 대화 상자에 로드합니다.
 

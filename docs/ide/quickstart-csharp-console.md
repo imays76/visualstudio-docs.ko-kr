@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Visual Studio에서 C#을 사용하여 간단한 Hello World 콘솔 앱을 만드는 방법을 단계별로 알아봅니다.
 ms.date: 09/21/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.custom: seodec18
 ms.topic: quickstart
 ms.devlang: vb
@@ -15,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a68909f602b0be0139cbbe98701012bb3af1ff30
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 2b36051f3a316f2b00ebdd08110f22346a910512
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441537"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853920"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>빠른 시작: Visual Studio를 사용하여 첫 번째 C# 콘솔 앱 만들기
 

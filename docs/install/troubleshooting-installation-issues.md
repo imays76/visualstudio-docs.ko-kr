@@ -2,7 +2,6 @@
 title: 설치 및 업그레이드 문제 해결
 description: 때로는 무엇인가 잘못될 수도 있습니다. Visual Studio 설치 또는 업그레이드에 실패할 경우 이 페이지가 도움이 될 수 있습니다.
 ms.date: 08/01/2018
-ms.technology: vs-acquisition
 ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: troubleshooting
@@ -15,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 39accaa3b8ee6a5ac2979b7e93b02a1ce00716be
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 413c8a9874669e180a6436bf817704919da48049
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159936"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910115"
 ---
 # <a name="troubleshoot-visual-studio-2017-installation-and-upgrade-issues"></a>Visual Studio 2017 설치 및 업그레이드 문제 해결
 
@@ -50,7 +49,7 @@ Visual Studio 설치 관리자 부트스트래퍼는 나머지 Visual Studio 설
 
 1. Visual Studio 설치 관리자를 닫습니다.
 2. Visual Studio 설치 관리자 디렉터리를 삭제합니다. 일반적으로 디렉터리는 `C:\Program Files (x86)\Microsoft Visual Studio\Installer`입니다.
-3. Visual Studio 설치 관리자 부트스트래퍼를 실행합니다. Downloads 폴더에서 `vs_[Visual Studio edition]__*.exe` 패턴을 따르는 파일 이름을 사용하는 부트스트래퍼를 찾을 수 있습니다. 해당 응용 프로그램을 찾을 수 없으면 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/) 페이지로 이동하고 해당 버전의 Visual Studio에 대한 **다운로드**를 클릭하여 부트스트래퍼를 다운로드할 수 있습니다. 그런 다음, 실행 파일을 실행하여 설치 메타데이터를 다시 설정합니다.
+3. Visual Studio 설치 관리자 부트스트래퍼를 실행합니다. Downloads 폴더에서 `vs_[Visual Studio edition]__*.exe` 패턴을 따르는 파일 이름을 사용하는 부트스트래퍼를 찾을 수 있습니다. 해당 애플리케이션을 찾을 수 없으면 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/) 페이지로 이동하고 해당 버전의 Visual Studio에 대한 **다운로드**를 클릭하여 부트스트래퍼를 다운로드할 수 있습니다. 그런 다음, 실행 파일을 실행하여 설치 메타데이터를 다시 설정합니다.
 4. Visual Studio를 다시 설치하거나 업데이트해 보세요. 설치 관리자가 계속 실패하면 다음 단계로 이동합니다.
 
 ### <a name="step-4---report-a-problem"></a>4단계 - 문제 보고

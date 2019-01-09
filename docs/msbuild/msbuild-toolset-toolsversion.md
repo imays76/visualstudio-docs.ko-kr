@@ -1,8 +1,6 @@
 ---
 title: MSBuild 도구 집합(ToolsVersion) | Microsoft Docs
-ms.custom: ''
 ms.date: 01/31/2018
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, multitargeting
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1822ed7c90a2cab746690769ea9202ab2e9c9947
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 2c681ab49ba7fe6de60aa68cdec923cdf9f677fb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740129"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841228"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild 도구 집합(ToolsVersion)
 MSBuild는 애플리케이션을 빌드하기 위한 작업, 대상 및 도구로 구성된 도구 집합을 사용합니다. 일반적으로 MSBuild 도구 집합에는 *microsoft.common.tasks* 파일, *microsoft.common.targets* 파일 및 컴파일러(예: *csc.exe* 및 *vbc.exe*)가 포함되어 있습니다. 대부분의 도구 집합을 사용하여 애플리케이션을 둘 이상의 .NET Framework 버전 및 둘 이상의 시스템 플랫폼으로 컴파일할 수 있습니다. 그러나 MSBuild 2.0 도구 집합을 사용해서는 .NET Framework 2.0만 대상으로 할 수 있습니다.

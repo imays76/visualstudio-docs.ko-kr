@@ -2,7 +2,6 @@
 title: XAML 디자이너에서 이미지, 동영상 및 오디오 클립 삽입
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: ff707aca-6bc5-4a2d-834b-bb6511a7b8f6
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 3ca0d99a1bab255208b8eb9f1bb7fda69a14c1c4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b0edb1f6ae895a267fc529bf0c83b3ea7fea2a2d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882342"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852614"
 ---
 # <a name="insert-images-videos-and-audio-clips-in-xaml-designer"></a>XAML 디자이너에서 이미지, 동영상 및 오디오 클립 삽입
 이미지, 비디오 및 오디오 클립은 앱에 시각적 효과를 추가합니다.

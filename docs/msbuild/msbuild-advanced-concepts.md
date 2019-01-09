@@ -1,8 +1,6 @@
 ---
 title: MSBuild 고급 개념 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, advanced concepts
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d521dbe0f72ccc5622da37495641349a9ec24a8a
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: d799443722a70db9e0d3816cf0551538e028bc0f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077457"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917445"
 ---
 # <a name="msbuild-advanced-concepts"></a>MSBuild 고급 개념
 이 섹션의 문서에서는 MSBuild를 사용하여 실행되는 빌드를 개선하기 위해 고급 기술을 사용하는 방법에 대해 설명합니다.  

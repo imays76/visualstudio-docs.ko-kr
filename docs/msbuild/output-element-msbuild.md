@@ -1,8 +1,6 @@
 ---
 title: Output 요소(MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 03/13/2017
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Output
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df135901c0272777c3d76220218042e4dc41a145
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 238e863481360671c77b7994fb1d98ac3ee96589
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817069"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853270"
 ---
 # <a name="output-element-msbuild"></a>Output 요소(MSBuild)
 항목 및 속성에서 태스크 출력 값을 저장합니다.  
@@ -64,7 +62,7 @@ ms.locfileid: "49817069"
 | - | - |
 | [Task](../msbuild/task-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 작업의 인스턴스를 만들고 실행합니다. |
 
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드 예제에서는 `Target` 요소 내에서 실행되는 `Csc` 태스크를 보여 줍니다. 태스크 매개 변수에 전달된 항목 및 속성은 이 예제의 범위 밖에서 선언됩니다. 출력 매개 변수 `OutputAssembly`의 값은 `FinalAssemblyName` 항목에 저장되고 출력 매개 변수 `BuildSucceeded`의 값은 `BuildWorked` 속성에 저장됩니다. 자세한 내용은 [작업](../msbuild/msbuild-tasks.md)을 참조하세요.  
 
 ```xml  

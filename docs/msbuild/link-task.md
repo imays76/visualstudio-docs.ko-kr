@@ -1,8 +1,6 @@
 ---
 title: 링크 작업 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - VC.Project.VCLinkerTool.ForceFileOutput
@@ -32,12 +30,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cd79db9b5bfc2e68dea2ff711b2da6ce55c9bc0
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 1d21e6cc4c3701716c72ad3e62dc75e2df383da0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220123"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857042"
 ---
 # <a name="link-task"></a>링크 작업
 Visual C++ 링커 도구인 *link.exe*를 래핑합니다. 링커 도구는 COFF(Common Object File Format) 개체 파일과 라이브러리를 연결하여 실행 파일(*.exe*) 또는 DLL(동적 연결 라이브러리)을 만듭니다. 자세한 내용은 [링커 옵션](/cpp/build/reference/linker-options)을 참조하세요.  
@@ -427,7 +425,7 @@ Visual C++ 링커 도구인 *link.exe*를 래핑합니다. 링커 도구는 COFF
   
      선택적 **Boolean** 매개 변수입니다.  
   
-     `true`이면 응용 프로그램이 2GB보다 큰 주소를 처리할 수 있습니다.  
+     `true`이면 애플리케이션이 2GB보다 큰 주소를 처리할 수 있습니다.  
   
      자세한 내용은 [/LARGEADDRESSAWARE(큰 주소 처리)](/cpp/build/reference/largeaddressaware-handle-large-addresses)를 참조하세요.  
   
@@ -753,7 +751,7 @@ Visual C++ 링커 도구인 *link.exe*를 래핑합니다. 링커 도구는 COFF
   
     -   **네이티브** - **/SUBSYSTEM:NATIVE**  
   
-    -   **EFI 응용 프로그램** - **/SUBSYSTEM:EFI_APPLICATION**  
+    -   **EFI 애플리케이션** - **/SUBSYSTEM:EFI_APPLICATION**  
   
     -   **EFI 부트 서비스 드라이버** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**  
   
@@ -845,9 +843,9 @@ Visual C++ 링커 도구인 *link.exe*를 래핑합니다. 링커 도구는 COFF
   
      선택적 **Boolean** 매개 변수입니다.  
   
-     `true`이면 프로그램 이미지 선택적 헤더의 IMAGE_OPTIONAL_HEADER DllCharacteristics 필드에서 플래그를 설정합니다. 이 플래그를 설정하면 터미널 서버가 응용 프로그램에서 특정 변경 작업을 수행할 수 없습니다.  
+     `true`이면 프로그램 이미지 선택적 헤더의 IMAGE_OPTIONAL_HEADER DllCharacteristics 필드에서 플래그를 설정합니다. 이 플래그를 설정하면 터미널 서버가 애플리케이션에서 특정 변경 작업을 수행할 수 없습니다.  
   
-     자세한 내용은 [/TSAWARE(터미널 서버 인식 응용 프로그램 만들기)](/cpp/build/reference/tsaware-create-terminal-server-aware-application)를 참조하세요.  
+     자세한 내용은 [/TSAWARE(터미널 서버 인식 애플리케이션 만들기)](/cpp/build/reference/tsaware-create-terminal-server-aware-application)를 참조하세요.  
   
 -   **TrackerLogDirectory**  
   
@@ -891,7 +889,7 @@ Visual C++ 링커 도구인 *link.exe*를 래핑합니다. 링커 도구는 COFF
   
      선택적 **문자열** 매개 변수입니다.  
   
-     사용자 계정 컨트롤을 사용하여 실행될 때 응용 프로그램에 필요한 실행 수준을 지정합니다.  
+     사용자 계정 컨트롤을 사용하여 실행될 때 애플리케이션에 필요한 실행 수준을 지정합니다.  
   
      각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.  
   
@@ -907,7 +905,7 @@ Visual C++ 링커 도구인 *link.exe*를 래핑합니다. 링커 도구는 COFF
   
      선택적 **Boolean** 매개 변수입니다.  
   
-     `true`이면 응용 프로그램에서 사용자 인터페이스 보호 수준을 우회하고 데스크톱에서 상위 권한 창에 입력할 수 있게 하고, 그렇지 않으면 `false`입니다.  
+     `true`이면 애플리케이션에서 사용자 인터페이스 보호 수준을 우회하고 데스크톱에서 상위 권한 창에 입력할 수 있게 하고, 그렇지 않으면 `false`입니다.  
   
      자세한 내용은 [/MANIFESTUAC(매니페스트에 UAC 정보 포함)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest)의 `uiAccess` 인수를 참조하세요.  
   

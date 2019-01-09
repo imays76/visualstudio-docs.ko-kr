@@ -3,7 +3,6 @@ title: 단위 테스트 Python 코드
 description: Visual Studio에서 Python 코드에 대한 단위 테스트를 설정하면 테스트 탐색기 기능을 최대한 활용하여 테스트를 검색, 실행 및 디버그할 수 있습니다.
 ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,16 +11,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 57076aa4bf86b8053a38e6b8af96b6006bbdfa0a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 5f808314639c72f530e64c4ccac08c49439c6818
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052532"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858281"
 ---
 # <a name="set-up-unit-testing-for-python-code"></a>Python 코드에 대해 유닛 테스트 설정
 
-단위 테스트는 응용 프로그램의 다른 코드 단위(일반적으로 격리된 함수, 클래스 등)를 테스트하는 코드 조각입니다. 응용 프로그램이 모든 단위 테스트를 통과하면 최소한 하위 수준 기능이 올바른 것으로 신뢰할 수 있습니다.
+단위 테스트는 애플리케이션의 다른 코드 단위(일반적으로 격리된 함수, 클래스 등)를 테스트하는 코드 조각입니다. 애플리케이션이 모든 단위 테스트를 통과하면 최소한 하위 수준 기능이 올바른 것으로 신뢰할 수 있습니다.
 
 Python은 단위 테스트를 광범위하게 사용하여 프로그램을 설계하는 동안 시나리오를 검증합니다. Visual Studio의 Python 지원에는 테스트를 별도로 실행할 필요 없이 개발 프로세스 컨텍스트 내에서 단위 테스트 검색, 실행, 디버깅이 포함됩니다.
 
@@ -88,7 +87,7 @@ Python은 단위 테스트를 광범위하게 사용하여 프로그램을 설�
 
 단위 테스트는 코드 조각이므로 다른 코드처럼 버그가 있을 수 있으며 경우에 따라 디버거에서 실행해야 합니다. 디버거에서 중단점을 설정하고 변수를 검사하며 코드를 단계별로 실행할 수 있습니다. Visual Studio는 단위 테스트에 대한 진단 도구도 제공합니다.
 
-디버깅을 시작하려면 코드에 초기 중단점을 설정하고 **테스트 탐색기**에서 테스트(또는 선택 항목)를 마우스 오른쪽 단추로 클릭한 다음, **선택한 테스트 디버그**를 선택합니다. 응용 프로그램 코드의 경우처럼 Visual Studio에서 Python 디버거를 시작합니다.
+디버깅을 시작하려면 코드에 초기 중단점을 설정하고 **테스트 탐색기**에서 테스트(또는 선택 항목)를 마우스 오른쪽 단추로 클릭한 다음, **선택한 테스트 디버그**를 선택합니다. 애플리케이션 코드의 경우처럼 Visual Studio에서 Python 디버거를 시작합니다.
 
 ![테스트 디버깅](media/unit-test-debugging.png)
 

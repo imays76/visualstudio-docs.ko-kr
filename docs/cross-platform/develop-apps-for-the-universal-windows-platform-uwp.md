@@ -2,8 +2,7 @@
 title: UWP(유니버설 Windows 플랫폼)용 앱 개발 | Microsoft 문서
 ms.custom: ''
 ms.date: 10/24/2017
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.topic: conceptual
 ms.assetid: eac59cb6-f12e-4a77-9953-6d62b164a643
 author: stevehoag
@@ -11,12 +10,12 @@ ms.author: shoag
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: de4306b2fa56bf00fd51a741441395b90ed314e5
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: a7f0279249be7b5a48b342f1de26179af7b89f80
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280807"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843793"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>UWP(유니버설 Windows 플랫폼)용 앱 개발
 유니버설 Windows 플랫폼과 단일 Windows 코어를 사용하여 휴대폰에서 데스크톱에 이르는 모든 Windows 10 디바이스에서 동일한 앱을 실행할 수 있습니다. Visual Studio 및 유니버설 Windows 앱 개발 도구를 사용하여 이러한 유니버설 Windows 앱을 만듭니다.

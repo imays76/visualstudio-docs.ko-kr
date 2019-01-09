@@ -1,8 +1,6 @@
 ---
 title: MSBuild 참조 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 70fcbd9eacbfa581166fccf4471b25c0b22fb74a
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: f365410421f490aeac1534eebc01630849ef1195
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739840"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872267"
 ---
 # <a name="msbuild-reference"></a>MSBuild 참조
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]용 빌드 시스템입니다. 다음 링크를 통해 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 참조 정보가 포함된 항목으로 이동할 수 있습니다.  

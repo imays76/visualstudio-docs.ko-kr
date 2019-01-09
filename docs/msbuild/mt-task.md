@@ -1,8 +1,6 @@
 ---
 title: MT 작업 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - VC.Project.VCManifestTool.ResourceOutputFileName
@@ -26,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6e4298fa9482674232dea2cae98bb25ba51be30
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 6a436423bd55fbcf1a519e56b27c2449c5b3bc9a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219876"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848826"
 ---
 # <a name="mt-task"></a>MT 작업
 Microsoft 매니페스트 도구, *mt.exe*를 래핑합니다. 자세한 내용은 [Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe)를 참조하세요.  
@@ -50,7 +48,7 @@ Microsoft 매니페스트 도구, *mt.exe*를 래핑합니다. 자세한 내용�
 |**ComponentFileName**|선택적 **문자열** 매개 변수입니다.<br /><br /> *.rgs* 또는 *.tlb* 파일에서 빌드하려는 동적 연결 라이브러리의 이름을 지정합니다. **RegistrarScriptFile** 또는 **TypeLibraryFile** MT 작업 매개 변수를 지정하는 경우 이 매개 변수는 필수입니다.<br /><br /> 자세한 내용은 [Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe)의 **/dll** 옵션을 참조하세요.|  
 |**DependencyInformationFile**|선택적 **문자열** 매개 변수입니다.<br /><br /> 매니페스트 도구에 대한 빌드 종속성 정보를 추적하기 위해 Visual Studio에서 사용하는 종속성 정보 파일을 지정합니다.|  
 |**EmbedManifest**|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 어셈블리에 매니페스트 파일을 포함합니다. `false`인 경우 독립 실행형 매니페스트 파일로 만듭니다.|  
-|**EnableDPIAwareness**|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 응용 프로그램을 DPI 인식으로 표시하는 매니페스트 정보에 추가합니다. DPI 인식 응용 프로그램을 작성하면 사용자 인터페이스는 높은 DPI 디스플레이 설정의 광범위한 부분에서 일관성 있게 보입니다.<br /><br /> 자세한 내용은 [높은 DPI](https://docs.microsoft.com/windows/desktop/win7devguide/high-dpi)를 참조하세요.|  
+|**EnableDPIAwareness**|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 애플리케이션을 DPI 인식으로 표시하는 매니페스트 정보에 추가합니다. DPI 인식 애플리케이션을 작성하면 사용자 인터페이스는 높은 DPI 디스플레이 설정의 광범위한 부분에서 일관성 있게 보입니다.<br /><br /> 자세한 내용은 [높은 DPI](https://docs.microsoft.com/windows/desktop/win7devguide/high-dpi)를 참조하세요.|  
 |**GenerateCatalogFiles**|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 카탈로그 정의(*.cdf*) 파일을 생성합니다.<br /><br /> 자세한 내용은 [Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe)의 **/makecdfs** 옵션을 참조하세요.|  
 |**GenerateCategoryTags**|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 범주 태그가 생성됩니다. 이 매개 변수가 `true`인 경우 **ManifestFromManagedAssemblyMT** 작업 매개 변수도 지정되어야 합니다.<br /><br /> 자세한 내용은 [Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe)의 **/category** 옵션을 참조하세요.|  
 |**InputResourceManifests**|선택적 **문자열** 매개 변수입니다.<br /><br /> 지정한 식별자를 가진 RT_MANIFEST 형식의 리소스에서 매니페스트를 입력합니다. \<file>[;[#]\<resource_id>] 형식의 리소스를 지정합니다. 여기서 선택적 \<resource_id> 매개 변수는 음수가 아닌 16비트 숫자입니다.<br /><br /> `resource_id`가 지정되지 않은 경우 CREATEPROCESS_MANIFEST_RESOURCE 기본값(1)이 사용됩니다.<br /><br /> 자세한 내용은 [Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe)의 **/inputresource** 옵션을 참조하세요.|  

@@ -2,19 +2,18 @@
 title: 코드 검사 문제 해결
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: troubleshooting
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 2651a84ae3c621237f34ff1667da6ecbacf0923a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 648f080c2733da4a9b0ee4a0e4bf746354737da4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055104"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905295"
 ---
 # <a name="troubleshoot-code-coverage"></a>코드 검사 문제 해결
 
@@ -121,7 +120,7 @@ DataCollectors 노드에서 코드 검사를 지정하는지 확인합니다. [�
 
 분석&mdash;정적으로 링크된 네이티브 코드에서 초기화 함수 **DllMain**과 이 함수가 호출하는 코드는 코드가 실행된 경우에도 검사되지 않은 것으로 표시될 수 있습니다.
 
-설명&mdash;코드 검사 도구는 응용 프로그램이 실행을 시작하기 바로 전에 어셈블리에 계측을 삽입하여 작동합니다. 사전에 로드된 모든 어셈블리에서, **DllMain**의 초기화 코드는 어셈블리가 로드되는 즉시, 그리고 응용 프로그램이 실행되기 전에 실행됩니다. 해당 코드가 검사되지 않았다고 표시됩니다. 그러면 일반적으로 정적으로 로드된 어셈블리에 적용됩니다.
+설명&mdash;코드 검사 도구는 애플리케이션이 실행을 시작하기 바로 전에 어셈블리에 계측을 삽입하여 작동합니다. 사전에 로드된 모든 어셈블리에서, **DllMain**의 초기화 코드는 어셈블리가 로드되는 즉시, 그리고 애플리케이션이 실행되기 전에 실행됩니다. 해당 코드가 검사되지 않았다고 표시됩니다. 그러면 일반적으로 정적으로 로드된 어셈블리에 적용됩니다.
 
 해결&mdash;없음.
 
