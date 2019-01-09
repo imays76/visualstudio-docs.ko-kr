@@ -3,7 +3,6 @@ title: Python 프로젝트에 대한 사용자 지정 메뉴 명령 정의
 description: 프로젝트 및 대상 파일을 편집하여 Visual Studio의 Python 프로젝트 컨텍스트 메뉴에 사용자 지정 명령을 추가하여 실행 가능 프로그램, 스크립트, 모듈, 인라인 코드 조각 및 pip를 호출할 수 있습니다.
 ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: be8befcc549b76c8ac2b6435146c636b592b5494
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 3cf0e0984c8051c0301ccb20c5f8dce2850c1514
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062873"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820994"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Python 프로젝트에 대한 사용자 지정 명령 정의
 
@@ -46,7 +45,7 @@ Visual Studio의 특정 Python 프로젝트 템플릿은 해당 *.targets* 파�
 
 사용자 지정 명령을 익히기 위해 이 섹션에서는 *python.exe*를 사용하여 프로젝트의 시작 파일을 실행하는 간단한 에제를 연습합니다. (그러한 명령은 **디버그** > **디버깅하지 않고 시작**을 사용하는 것과 같은 효과입니다.)
 
-1. **Python 응용 프로그램** 템플릿을 사용하여 "Python-CustomCommands"라는 새 프로젝트를 만듭니다. ([빠른 시작: 프로세스를 아직 익히지 못한 경우 지침은 템플릿에서 Python 프로젝트 만들기](quickstart-02-python-in-visual-studio-project-from-template.md)를 참조하세요.)
+1. **Python 애플리케이션** 템플릿을 사용하여 "Python-CustomCommands"라는 새 프로젝트를 만듭니다. ([빠른 시작: 프로세스를 아직 익히지 못한 경우 지침은 템플릿에서 Python 프로젝트 만들기](quickstart-02-python-in-visual-studio-project-from-template.md)를 참조하세요.)
 
 1. *Python_CustomCommands.py*에서 `print("Hello custom commands")` 코드를 추가합니다.
 

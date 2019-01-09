@@ -1,8 +1,6 @@
 ---
 title: Csc 작업 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Csc
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd360a34c70d3208211b861dae064bd4c5a01595
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 59c9c7d092ff5d080baebdc562bbd6b3da436c88
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832369"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838335"
 ---
 # <a name="csc-task"></a>Csc 작업
 *csc.exe*를 래핑하고 실행(*.exe* 파일), 동적 연결 라이브러리(*.dll* 파일) 또는 코드 모듈(*.netmodule* 파일)을 생성합니다. *csc.exe*에 대한 자세한 내용은 [C# 컴파일러 옵션](/dotnet/csharp/language-reference/compiler-options/index)을 참조하세요.  
@@ -39,7 +37,7 @@ ms.locfileid: "49832369"
 | `AdditionalLibPaths` | 선택적 `String[]` 매개 변수입니다.<br /><br /> 참조를 검색할 추가 디렉터리를 지정합니다. 자세한 내용은 [-lib(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/lib-compiler-option)를 참조하세요. |
 | `AddModules` | 선택적 `String` 매개 변수입니다.<br /><br /> 이 어셈블리의 일부가 될 모듈을 하나 이상 지정합니다. 자세한 내용은 [-addmodule(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/addmodule-compiler-option)을 참조하세요. |
 | `AllowUnsafeBlocks` | 선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 [unsafe](/dotnet/csharp/language-reference/keywords/unsafe) 키워드를 사용하는 코드를 컴파일합니다. 자세한 내용은 [-unsafe(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/unsafe-compiler-option)를 참조하세요. |
-| `ApplicationConfiguration` | 선택적 `String` 매개 변수입니다.<br /><br /> 어셈블리 바인딩 설정을 포함하는 응용 프로그램 구성 파일을 지정합니다. |
+| `ApplicationConfiguration` | 선택적 `String` 매개 변수입니다.<br /><br /> 어셈블리 바인딩 설정을 포함하는 애플리케이션 구성 파일을 지정합니다. |
 | `BaseAddress` | 선택적 `String` 매개 변수입니다.<br /><br /> DLL을 로드할 기본 설정 기준 주소를 지정합니다. DLL에 대한 기본 기준 주소는 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 공용 언어 런타임에 의해 설정됩니다. 자세한 내용은 [-baseaddress(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option)를 참조하세요. |
 | `CheckForOverflowUnderflow` | 선택적 `Boolean` 매개 변수입니다.<br /><br /> 데이터 형식 범위를 오버플로하는 정수 연산이 있는 경우 런타임에 예외가 발생되는지 여부를 지정합니다. 자세한 내용은 [-checked(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/checked-compiler-option)를 참조하세요. |
 | `CodePage` | 선택적 `Int32` 매개 변수입니다.<br /><br /> 컴파일할 때 모든 소스 코드 파일에 사용할 코드 페이지를 지정합니다. 자세한 내용은 [-codepage(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/codepage-compiler-option)를 참조하세요. |
@@ -72,7 +70,7 @@ ms.locfileid: "49832369"
 | `Resources` | 선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> 출력 파일에 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 리소스를 포함합니다.<br /><br /> 이 매개 변수로 전달된 항목에는 이름이 `LogicalName` 및 `Access`인 선택적 메타데이터 항목이 있을 수 있습니다. `LogicalName`은 `/resource` 스위치의 `identifier` 매개 변수에 해당하며, `Access`는 `accessibility-modifier` 매개 변수에 해당합니다. 자세한 내용은 [-resource(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/resource-compiler-option)를 참조하세요. |
 | `ResponseFiles` | 선택적 `String` 매개 변수입니다.<br /><br /> 이 작업에 대한 명령을 포함하는 지시 파일을 지정합니다. 자세한 내용은 [@(지시 파일 지정)](/dotnet/csharp/language-reference/compiler-options/response-file-compiler-option)을 참조하세요. |
 | `Sources` | 선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 소스 파일을 하나 이상 지정합니다. |
-| `TargetType` | 선택적 `String` 매개 변수입니다.<br /><br /> 출력 파일의 파일 형식을 지정합니다. 이 매개 변수는 각각 코드 라이브러리를 만드는 `library`, 콘솔 응용 프로그램을 만드는 `exe`, 모듈을 만드는 `module` 또는 Windows 프로그램을 만드는 `winexe`를 값으로 가질 수 있습니다. 기본값은 `library`입니다. 자세한 내용은 [-target(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/target-compiler-option)을 참조하세요. |
+| `TargetType` | 선택적 `String` 매개 변수입니다.<br /><br /> 출력 파일의 파일 형식을 지정합니다. 이 매개 변수는 각각 코드 라이브러리를 만드는 `library`, 콘솔 애플리케이션을 만드는 `exe`, 모듈을 만드는 `module` 또는 Windows 프로그램을 만드는 `winexe`를 값으로 가질 수 있습니다. 기본값은 `library`입니다. 자세한 내용은 [-target(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/target-compiler-option)을 참조하세요. |
 | `TreatWarningsAsErrors` | 선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 모든 경고를 오류로 처리합니다. 자세한 내용은 [-warnaserror(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option)를 참조하세요. |
 | `UseHostCompilerIfAvailable` | 선택적 `Boolean` 매개 변수입니다.<br /><br /> 사용 가능한 경우 In Process 컴파일러 개체를 사용하도록 작업에 지시합니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서만 사용됩니다. |
 | `Utf8Output` | 선택적 `Boolean` 매개 변수입니다.<br /><br /> UTF-8 인코딩을 사용하여 컴파일러 출력을 기록합니다. 자세한 내용은 [-utf8output(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/utf8output-compiler-option)을 참조하세요. |
@@ -83,10 +81,10 @@ ms.locfileid: "49832369"
 | `Win32Manifest` | 선택적 `String` 매개 변수입니다.<br /><br /> 포함할 Win32 매니페스트를 지정합니다. |
 | `Win32Resource` | 선택적 `String` 매개 변수입니다.<br /><br /> Win32 리소스(*.res*) 파일을 출력 파일에 삽입합니다. 자세한 내용은 [-win32res(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option)를 참조하세요. |
 
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.ToolTask> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 클래스에서 상속하는 `Microsoft.Build.Tasks.ManagedCompiler` 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [ToolTaskExtension 기본 클래스](../msbuild/tooltaskextension-base-class.md)를 참조하세요.  
 
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 `Csc` 작업을 사용하여 `Compile` 항목 컬렉션의 소스 파일에서 실행 파일을 컴파일합니다.  
 
 ```xml  

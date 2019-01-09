@@ -2,7 +2,6 @@
 title: 옵션 대화 상자, 프로젝트 및 솔루션, 웹 프로젝트
 ms.date: 07/14/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.WebProjects
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a5efe344859c8b9fbdc10edbea0bbb193c6df55
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 0cb4e77da4d32980c5963ed439ac00f2ccfb2ab6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389364"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842556"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>옵션 대화 상자, 프로젝트 및 솔루션, 웹 프로젝트
 
@@ -31,9 +30,9 @@ ms.locfileid: "52389364"
 
 Visual Studio 개발 서버 대신 IIS Express를 사용하려면 이 옵션을 선택합니다. 자세한 내용은 [Introducing IIS Express](http://go.microsoft.com/?linkid=9747914)(IIS Express 소개) 및 [IIS Express Overview](http://go.microsoft.com/?linkid=9747915)(IIS Express 개요)를 참조하세요.
 
-**오류 목록에 오류가 있을 때 웹 응용 프로그램을 실행하기 전 경고**
+**오류 목록에 오류가 있을 때 웹 애플리케이션을 실행하기 전 경고**
 
-이 옵션을 설정하면 오류 없이 컴파일되지 않을 때 웹 응용 프로그램을 실행하려는 경우 경고가 표시됩니다.
+이 옵션을 설정하면 오류 없이 컴파일되지 않을 때 웹 애플리케이션을 실행하려는 경우 경고가 표시됩니다.
 
 ## <a name="see-also"></a>참고 항목
 

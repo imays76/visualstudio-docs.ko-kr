@@ -2,7 +2,6 @@
 title: 클래스 뷰 및 개체 브라우저 아이콘
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - icons, in Object Browser
@@ -18,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ff94e67291bff8dc00d3fa63976f283da485f6a
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 29d39c210a14934ba50ace92692bee944b6b75c0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745791"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53844394"
 ---
 # <a name="class-view-and-object-browser-icons"></a>클래스 뷰 및 개체 브라우저 아이콘
 
@@ -35,7 +34,7 @@ ms.locfileid: "34745791"
 |![클래스 아이콘](../ide/media/vxclass_icon.gif)|클래스|![연산자 기호](../ide/media/vxoperator_icon.gif)|연산자|
 |![롤리팝 인터페이스 기호](../ide/media/vxinterface_icon.gif)|인터페이스|![속성 기호](../ide/media/vxproperty_icon.gif)|속성|
 |![구조체 기호](../ide/media/vxstruct_icon.gif)|구조체|![필드 아이콘](../ide/media/vxfield_icon.gif)|필드 또는 변수|
-|![공용 구조체 기호](../ide/media/vxunion_icon.gif)|공용 구조체|![이벤트 기호](../ide/media/vxevent_icon.gif)|이벤트(event)|
+|![공용 구조체 기호](../ide/media/vxunion_icon.gif)|Union|![이벤트 기호](../ide/media/vxevent_icon.gif)|이벤트|
 |![열거 기호](../ide/media/vxenum_icon.gif)|Enum|![상수 아이콘](../ide/media/vxconstant_icon.gif)|상수|
 |![형식 정의 기호](../ide/media/vxtypedef_icon.gif)|TypeDef|![항목 열거 기호](../ide/media/vxenumitem_icon.gif)|항목 열거|
 |![Visual Studio 모듈 기호](../ide/media/vxmodule_icon.gif)|Module|![맵 항목 기호](../ide/media/vxmapitem_icon.gif)|맵 항목|

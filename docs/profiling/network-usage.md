@@ -2,7 +2,6 @@
 title: UWP 앱에서 네트워크 사용 분석
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 45fa397d-d7a1-4c4c-9c97-ede6c21643bd
 author: mikejo5000
@@ -10,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 06546e3d36e0568c27e4160342ad271a026b7b9e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 195353903ca9f9db8142a6909f3a2a6bab15b4aa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062246"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822825"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>UWP 앱에서 네트워크 사용 분석
 Visual Studio **네트워크** 진단 도구는 [Windows.Web.Http API](/uwp/api/windows.web.http)를 사용하여 수행된 네트워크 작업에 대한 데이터를 수집합니다. 데이터를 분석하면 액세스 및 인증 문제, 잘못된 캐시 사용 및 저하된 디스플레이와 다운로드 성능을 해결하는 데 도움이 될 수 있습니다.  
@@ -66,9 +65,9 @@ Visual Studio **네트워크** 진단 도구는 [Windows.Web.Http API](/uwp/api/
 ### <a name="analysis-tips"></a>분석 팁  
  이 도구는 네트워크 관련 분석을 실행할 때 유용할 수 있는 특정 영역을 강조 표시합니다.  
   
-1.  캐시에서 완전히 처리되는 요청은 **받음** 열에 **(캐시에서)** 로 표시됩니다. 이렇게 하면 사용자 대역폭 절약을 위해 캐시를 효과적으로 사용하는지, 아니면 실수로 응답을 캐시하고 응용 프로그램의 최종 사용자에게 오래된 데이터를 제공하고 있는지 결정하는 데 도움이 될 수 있습니다.  
+1.  캐시에서 완전히 처리되는 요청은 **받음** 열에 **(캐시에서)** 로 표시됩니다. 이렇게 하면 사용자 대역폭 절약을 위해 캐시를 효과적으로 사용하는지, 아니면 실수로 응답을 캐시하고 애플리케이션의 최종 사용자에게 오래된 데이터를 제공하고 있는지 결정하는 데 도움이 될 수 있습니다.  
   
-2.  오류 응답(4xx 또는 5xx)은 빨간색 상태 코드로 **결과** 열에 표시되며 요약 막대에도 강조 표시됩니다. 따라서 응용 프로그램에서 많은 잠재적 요청 중 오류를 쉽게 파악할 수 있습니다.  
+2.  오류 응답(4xx 또는 5xx)은 빨간색 상태 코드로 **결과** 열에 표시되며 요약 막대에도 강조 표시됩니다. 따라서 애플리케이션에서 많은 잠재적 요청 중 오류를 쉽게 파악할 수 있습니다.  
   
 3.  응답 자동 서식 지정 단추(본문 탭 내부)를 사용하면 콘텐츠 가독성을 높여 JSON, XML, HTML, CSS, JavaScript 및 TypeScript 응답 페이로드를 통해 구문 분석하는 데 도움이 될 수 있습니다.  
   
