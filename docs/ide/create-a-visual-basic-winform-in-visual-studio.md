@@ -3,7 +3,6 @@ title: Visual Basic을 사용하여 Windows Forms 앱 만들기
 description: Visual Studio에서 Visual Basic을 사용하여 Windows Forms 앱을 만드는 방법을 단계별로 알아봅니다.
 ms.date: 12/04/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.devlang: vb
 author: TerryGLee
@@ -13,22 +12,22 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 81b44e7053b820e625b5ad61d6e537c95cbf9c03
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 6b2844f876377e1b875a2086a1fad6c3809bd3af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159635"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870299"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Visual Studio에서 Visual Basic을 사용하여 Windows Forms 앱 만들기
 
-Visual Studio IDE(통합 개발 환경)에 대한 이 짧은 소개에서는 Windows 기반 UI(사용자 인터페이스)가 있는 간단한 Visual Basic 응용 프로그램을 만듭니다.
+Visual Studio IDE(통합 개발 환경)에 대한 이 짧은 소개에서는 Windows 기반 UI(사용자 인터페이스)가 있는 간단한 Visual Basic 애플리케이션을 만듭니다.
 
 아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 페이지로 이동하여 체험용으로 설치합니다.
 
 ## <a name="create-a-project"></a>프로젝트 만들기
 
-먼저 Visual Basic 응용 프로그램 프로젝트를 만들어야 합니다. 아무 것도 추가하지 않아도 필요한 모든 템플릿 파일과 함께 프로젝트 형식이 제공됩니다.
+먼저 Visual Basic 애플리케이션 프로젝트를 만들어야 합니다. 아무 것도 추가하지 않아도 필요한 모든 템플릿 파일과 함께 프로젝트 형식이 제공됩니다.
 
 1. Visual Studio 2017을 엽니다.
 
@@ -40,9 +39,9 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 짧은 소개에서는 Win
 
      ![Visual Studio 설치 관리자의 .NET Core 워크로드](../ide/media/install-dot-net-desktop-env.png)
 
-## <a name="create-the-application"></a>응용 프로그램 만들기
+## <a name="create-the-application"></a>애플리케이션 만들기
 
-Visual Basic 프로젝트 템플릿을 선택하고 파일 이름을 지정한 후에 Visual Studio에서는 양식을 엽니다. 양식은 Windows 사용자 인터페이스입니다. 양식에 컨트롤을 추가하여 "Hello World" 응용 프로그램을 만들고 응용 프로그램 실행합니다.
+Visual Basic 프로젝트 템플릿을 선택하고 파일 이름을 지정한 후에 Visual Studio에서는 양식을 엽니다. 양식은 Windows 사용자 인터페이스입니다. 양식에 컨트롤을 추가하여 "Hello World" 애플리케이션을 만들고 애플리케이션 실행합니다.
 
 ### <a name="add-a-button-to-the-form"></a>양식에 단추 추가
 
@@ -87,9 +86,9 @@ Visual Basic 프로젝트 템플릿을 선택하고 파일 이름을 지정한 �
 
      ![양식에 코드 추가](../ide/media/vb-add-code-to-the-form.png)
 
-## <a name="run-the-application"></a>응용 프로그램 실행
+## <a name="run-the-application"></a>애플리케이션 실행
 
-1. **시작** 단추를 클릭하여 응용 프로그램을 실행합니다.
+1. **시작** 단추를 클릭하여 애플리케이션을 실행합니다.
 
      ![시작을 클릭하여 앱을 디버깅하고 실행합니다.](../ide/media/vb-click-start-hello-world.png)
 

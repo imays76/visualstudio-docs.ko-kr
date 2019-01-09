@@ -1,9 +1,8 @@
 ---
 title: 앱에서 CPU 사용량 측정
-description: 디버거 통합 진단 도구를 사용하여 응용 프로그램에서 CPU 성능 문제를 분석합니다.
+description: 디버거 통합 진단 도구를 사용하여 애플리케이션에서 CPU 성능 문제를 분석합니다.
 ms.custom: seodec18
 ms.date: 02/27/2017
-ms.technology: vs-ide-debug
 ms.topic: tutorial
 f1_keywords:
 - vs.performance.wizard.intropage
@@ -18,19 +17,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46837bb68854f0f5dbb5c799d405c37431f6c379
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ed0549cceb928b622578add5a634bb5795e5c96d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065764"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889792"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>CPU 사용량을 분석하여 애플리케이션 성능 측정
-Visual Studio 프로파일링 도구를 사용하여 응용 프로그램의 성능 문제를 분석할 수 있습니다. 이 절차에서는 진단 도구의 **CPU 사용량** 탭을 사용하여 앱의 성능 데이터를 가져오는 방법을 보여 줍니다. 진단 도구는 ASP.NET을 포함한 Visual Studio의 .NET 개발 및 네이티브/C++ 개발에 사용할 수 있습니다.
+Visual Studio 프로파일링 도구를 사용하여 애플리케이션의 성능 문제를 분석할 수 있습니다. 이 절차에서는 진단 도구의 **CPU 사용량** 탭을 사용하여 앱의 성능 데이터를 가져오는 방법을 보여 줍니다. 진단 도구는 ASP.NET을 포함한 Visual Studio의 .NET 개발 및 네이티브/C++ 개발에 사용할 수 있습니다.
   
-디버거가 일시 중지되면 **CPU 사용량** 도구는 응용 프로그램에서 실행되는 함수에 대한 정보를 지정된 간격으로 수집합니다. 또한 이 도구에는 작업을 수행하는 함수가 표시되고 샘플링 세션의 특정 세그먼트를 집중적으로 확인할 수 있는 타임라인 그래프도 표시됩니다.
+디버거가 일시 중지되면 **CPU 사용량** 도구는 애플리케이션에서 실행되는 함수에 대한 정보를 지정된 간격으로 수집합니다. 또한 이 도구에는 작업을 수행하는 함수가 표시되고 샘플링 세션의 특정 세그먼트를 집중적으로 확인할 수 있는 타임라인 그래프도 표시됩니다.
 
-진단 허브에서는 진단 세션을 실행하고 관리할 수 있는 여러 가지 다른 옵션을 제공합니다. **CPU 사용량**으로 필요한 데이터를 얻지 못할 경우 [다른 프로파일링 도구](../profiling/profiling-feature-tour.md)로 유용한 다른 종류의 정보를 얻을 수 있습니다. 많은 경우 메모리, UI 렌더링 또는 네트워크 요청 시간 등 CPU가 아닌 곳에서 응용 프로그램의 성능 병목 현상이 발생할 수 있습니다. 진단 허브는 이러한 종류의 데이터를 기록 및 분석하기 위한 다른 여러 옵션을 제공합니다.
+진단 허브에서는 진단 세션을 실행하고 관리할 수 있는 여러 가지 다른 옵션을 제공합니다. **CPU 사용량**으로 필요한 데이터를 얻지 못할 경우 [다른 프로파일링 도구](../profiling/profiling-feature-tour.md)로 유용한 다른 종류의 정보를 얻을 수 있습니다. 많은 경우 메모리, UI 렌더링 또는 네트워크 요청 시간 등 CPU가 아닌 곳에서 애플리케이션의 성능 병목 현상이 발생할 수 있습니다. 진단 허브는 이러한 종류의 데이터를 기록 및 분석하기 위한 다른 여러 옵션을 제공합니다.
 
 | | |
 |---------|---------|
@@ -77,11 +76,11 @@ Windows 7 이상에서 디버거 없이 프로파일링 도구를 사용할 수 
 
      ![진단 도구에서 CPU 프로파일링을 사용하도록 설정](../profiling/media/DiagToolsEnableCPUProfiling.png "DiagToolsEnableCPUProfiling")
 
-     **CPU 프로파일 기록**을 선택하면 Visual Studio는 함수 및 함수 실행에 걸리는 시간의 기록을 시작합니다. 응용 프로그램이 중단점에서 멈추면 이렇게 수집된 데이터만 볼 수 있습니다.
+     **CPU 프로파일 기록**을 선택하면 Visual Studio는 함수 및 함수 실행에 걸리는 시간의 기록을 시작합니다. 애플리케이션이 중단점에서 멈추면 이렇게 수집된 데이터만 볼 수 있습니다.
 
 8.  두 번째 중단점까지 앱을 실행하려면 F5 키를 누릅니다.
 
-     이제 구체적으로 두 개의 중단점 사이에서 실행되는 코드 영역에 대한 응용 프로그램의 성능 데이터가 제공됩니다.
+     이제 구체적으로 두 개의 중단점 사이에서 실행되는 코드 영역에 대한 애플리케이션의 성능 데이터가 제공됩니다.
 
 9.  CPU 타임라인에서 분석하고자 하는 영역을 선택합니다(프로파일링 데이터를 표시하는 영역이어야 함).
 

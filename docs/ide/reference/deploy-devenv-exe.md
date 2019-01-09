@@ -2,7 +2,6 @@
 title: -Deploy(devenv.exe)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - Devenv, /deploy switch
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0297058fea98568551f54d8960e62f80bb35ccd7
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 9af9d2b51a2421141892c1988cc67b63d1b15e26
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948883"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920646"
 ---
 # <a name="deploy-devenvexe"></a>/Deploy (devenv.exe)
 빌드 또는 다시 빌드 후 솔루션을 배포합니다. 관리 코드 프로젝트에만 적용됩니다.
@@ -34,11 +33,11 @@ devenv SolutionName /deploy SolnConfigName [/project ProjName] [/projectconfig P
 ## <a name="arguments"></a>인수
  `SolnConfigName`
 
- 필수. `SolutionName`으로 명명된 솔루션을 빌드하는 데 사용할 솔루션 구성의 이름입니다.
+ 필수 요소. `SolutionName`으로 명명된 솔루션을 빌드하는 데 사용할 솔루션 구성의 이름입니다.
 
  `SolutionName`
 
- 필수. 솔루션 파일의 전체 경로 및 이름입니다.
+ 필수 요소. 솔루션 파일의 전체 경로 및 이름입니다.
 
  /project `ProjName`
 
@@ -48,14 +47,14 @@ devenv SolutionName /deploy SolnConfigName [/project ProjName] [/projectconfig P
 
  선택 사항입니다. `/project` 빌드 시 사용할 프로젝트 빌드 구성 이름입니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
  지정된 프로젝트는 배포 프로젝트여야 합니다. 지정된 프로젝트가 배포 프로젝트가 아닌 경우, 빌드된 프로젝트가 배포되도록 전달되면 오류로 인해 실패합니다.
 
  공백을 포함하는 문자열은 큰따옴표로 묶습니다.
 
  오류를 포함한 빌드에 대한 요약 정보는 **명령** 창 또는 `/out` 스위치로 지정된 로그 파일에 표시할 수 있습니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  이 예제에서는 `MySolution`의 `Release` 솔루션 구성 내에 있는 `Release` 프로젝트 빌드 구성을 사용하여 `CSharpConsoleApp` 프로젝트를 배포합니다.
 
 ```

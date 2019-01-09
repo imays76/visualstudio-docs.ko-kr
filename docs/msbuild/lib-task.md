@@ -1,8 +1,6 @@
 ---
 title: LIB 작업 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - VC.Project.VCLibrarianTool.Name
@@ -27,12 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df6011cb1c706069135a133dd37a34e54203b22b
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 54a9fc4a75d49699087f7fb2ca80c3b8c17ddc8f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079626"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922022"
 ---
 # <a name="lib-task"></a>LIB 작업
 Microsoft 32비트 라이브러리 관리자 도구인 *lib.exe*를 래핑합니다. 라이브러리 관리자는 COFF(공용 개체 파일 형식) 개체 파일의 라이브러리를 만들고 관리합니다. 또한 라이브러리 관리자를 사용하여 내보내기 파일을 만들고 내보낸 정의를 참조하는 라이브러리를 가져올 수 있습니다. 자세한 내용은 [LIB 참조](/cpp/build/reference/lib-reference) 및 [LIB 실행](/cpp/build/reference/running-lib)을 참조하세요.  
@@ -59,7 +57,7 @@ Microsoft 32비트 라이브러리 관리자 도구인 *lib.exe*를 래핑합니
 |**OutputFile**|선택적 **문자열** 매개 변수입니다.<br /><br /> *lib.exe*에서 만드는 프로그램의 기본 이름과 위치는 무시됩니다.<br /><br /> 이 매개 변수는 `filename` 인수를 사용하는 *lib.exe*의 **/OUT** 옵션에 해당합니다.|  
 |**RemoveObjects**|선택적 **String[]** 매개 변수입니다.<br /><br /> 지정된 개체를 출력 라이브러리에서 제거합니다. *Lib.exe*는 모든 개체(개체 파일 또는 라이브러리)를 결합하여 출력 라이브러리를 만든 다음, 이 개체로 지정된 개체를 삭제합니다.<br /><br /> 이 매개 변수는 `membername` 인수를 사용하는 *lib.exe*의 **/REMOVE** 옵션에 해당합니다.|  
 |**Sources**|필수 `ITaskItem[]` 매개 변수입니다.<br /><br /> 공백으로 구분된 소스 파일 목록을 지정합니다.|  
-|**SubSystem**|선택적 **문자열** 매개 변수입니다.<br /><br /> 실행 환경을 지정합니다. 어떠한 하위 시스템을 선택하는가에 따라 진입점 기호 또는 진입점 함수가 달라질 수 있습니다.<br /><br /> 각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.<br /><br /> -   **콘솔** - **/SUBSYSTEM:CONSOLE**<br />-   **Windows** - **/SUBSYSTEM:WINDOWS**<br />-   **네이티브** - **/SUBSYSTEM:NATIVE**<br />-   **EFI 응용 프로그램** - **/SUBSYSTEM:EFI_APPLICATION**<br />-   **EFI 부트 서비스 드라이버** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**<br />-   **EFI ROM** - **/SUBSYSTEM:EFI_ROM**<br />-   **EFI 런타임** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**<br />-   **WindowsCE** - **/SUBSYSTEM:WINDOWSCE**<br />-   **POSIX** - **/SUBSYSTEM:POSIX**<br /><br /> 자세한 내용은 [/SUBSYSTEM(하위 시스템 지정)](/cpp/build/reference/subsystem-specify-subsystem)을 참조하세요.|  
+|**SubSystem**|선택적 **문자열** 매개 변수입니다.<br /><br /> 실행 환경을 지정합니다. 어떠한 하위 시스템을 선택하는가에 따라 진입점 기호 또는 진입점 함수가 달라질 수 있습니다.<br /><br /> 각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.<br /><br /> -   **콘솔** - **/SUBSYSTEM:CONSOLE**<br />-   **Windows** - **/SUBSYSTEM:WINDOWS**<br />-   **네이티브** - **/SUBSYSTEM:NATIVE**<br />-   **EFI 애플리케이션** - **/SUBSYSTEM:EFI_APPLICATION**<br />-   **EFI 부트 서비스 드라이버** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**<br />-   **EFI ROM** - **/SUBSYSTEM:EFI_ROM**<br />-   **EFI 런타임** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**<br />-   **WindowsCE** - **/SUBSYSTEM:WINDOWSCE**<br />-   **POSIX** - **/SUBSYSTEM:POSIX**<br /><br /> 자세한 내용은 [/SUBSYSTEM(하위 시스템 지정)](/cpp/build/reference/subsystem-specify-subsystem)을 참조하세요.|  
 |**SuppressStartupBanner**|선택적 **Boolean** 매개 변수입니다.<br /><br /> `true`인 경우 작업을 시작할 때 저작권과 버전 번호 메시지가 표시되지 않도록 합니다.<br /><br /> 자세한 내용은 [LIB 실행](/cpp/build/reference/running-lib)의 **/NOLOGO** 옵션을 참조하세요.|  
 |**TargetMachine**|선택적 **문자열** 매개 변수입니다.<br /><br /> 프로그램 또는 DLL에 대한 대상 플랫폼을 지정합니다.<br /><br /> 각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.<br /><br /> -   **MachineARM** - **/MACHINE:ARM**<br />-   **MachineEBC** - **/MACHINE:EBC**<br />-   **MachineIA64** - **/MACHINE:IA64**<br />-   **MachineMIPS** - **/MACHINE:MIPS**<br />-   **MachineMIPS16** - **/MACHINE:MIPS16**<br />-   **MachineMIPSFPU** -**/MACHINE:MIPSFPU**<br />-   **MachineMIPSFPU16** - **/MACHINE:MIPSFPU16**<br />-   **MachineSH4** - **/MACHINE:SH4**<br />-   **MachineTHUMB** - **/MACHINE:THUMB**<br />-   **MachineX64** - **/MACHINE:X64**<br />-   **MachineX86** - **/MACHINE:X86**<br /><br /> 자세한 내용은 [/MACHINE(대상 플랫폼 지정)](/cpp/build/reference/machine-specify-target-platform)을 참조하세요.|  
 |**TrackerLogDirectory**|선택적 **문자열** 매개 변수입니다.<br /><br /> 추적기 로그의 디렉터리를 지정합니다.|  
