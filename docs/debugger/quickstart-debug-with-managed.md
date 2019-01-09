@@ -3,7 +3,6 @@ title: 관리 코드 디버그 | Microsoft Docs
 description: Visual Studio 디버거를 사용하여 C# 또는 Visual Basic 디버그
 ms.custom: mvc
 ms.date: 03/18/2018
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
@@ -13,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 891387d244a805df2929a120a9312697ad79f192
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: d6b4f6fecabe7947e59a235dbb71e9f5e0803b10
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562076"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955479"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>빠른 시작: Visual Studio 디버거를 사용하여 C# 또는 Visual Basic으로 디버그
 

@@ -3,7 +3,6 @@ title: Python과 함께 CookieCutter 템플릿 사용
 description: Visual Studio는 Python 코드용 템플릿을 검색하고 해당 템플릿으로 프로젝트를 만들기 위한 그래픽 Cookiecutter 확장을 지원합니다.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6ca47c1410fd11c32cbce95b9adc5a62c6c26dcf
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1f5123323794d7a333440cb8aa94c51e44c8fc87
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057193"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958237"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Cookiecutter 확장 사용
 
@@ -203,7 +202,7 @@ Cookiecutter에는 *생성 후 후크*라는 기능이 있으므로 파일을 �
 
 ### <a name="hook-script-not-supported-on-windows"></a>Windows에서 지원하지 않는 후크 스크립트
 
-게시 스크립트가 *.sh*인 경우 Windows 컴퓨터의 응용 프로그램과 연결되지 않을 수 있습니다. Windows 스토어에서 호환되는 응용 프로그램을 찾도록 요청하는 Windows 대화 상자가 나타날 수 있습니다.
+게시 스크립트가 *.sh*인 경우 Windows 컴퓨터의 애플리케이션과 연결되지 않을 수 있습니다. Windows 스토어에서 호환되는 애플리케이션을 찾도록 요청하는 Windows 대화 상자가 나타날 수 있습니다.
 
 ### <a name="templates-with-known-issues"></a>알려진 문제점이 있는 템플릿
 

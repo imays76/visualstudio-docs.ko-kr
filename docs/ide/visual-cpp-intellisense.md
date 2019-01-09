@@ -2,19 +2,18 @@
 title: C++ IntelliSense
 ms.date: 10/08/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 author: mikeblome
 ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ab520f7cdf512ebbfd07770d63d2ed50caee7a55
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 203e36c1ea7863b18495284174690d3c985b2900
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879852"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959763"
 ---
 # <a name="visual-c-intellisense-features"></a>Visual C++ IntelliSense 기능
 
@@ -70,7 +69,7 @@ IntelliSense는 코딩을 보다 편리하게 하는 기능 집합에 지정된 
 
 공유 코드 프로젝트에서 표시선과 같은 일부 IntelliSense 기능은 Android 컨텍스트에서 작업하는 경우에도 사용할 수 있습니다. 비활성 프로젝트에서 오류가 발생하는 일부 코드를 작성하는 경우에도 IntelliSense에서 표시선을 표시하지만 현재 컨텍스트의 오류 표시선과 다른 색으로 표시됩니다.
 
-Android 및 iOS를 위해 빌드하도록 구성된 OpenGLES 응용 프로그램을 생각해 봅니다. 다음 그림은 편집 중인 공유 코드를 보여 줍니다. 이 이미지에서 현재 프로젝트는 **iOS.StaticLibrary**입니다.
+Android 및 iOS를 위해 빌드하도록 구성된 OpenGLES 애플리케이션을 생각해 봅니다. 다음 그림은 편집 중인 공유 코드를 보여 줍니다. 이 이미지에서 현재 프로젝트는 **iOS.StaticLibrary**입니다.
 
 ![iOS가 활성 프로젝트로 선택됩니다.](../ide/media/intellisensecppcrossplatform2.png)
 

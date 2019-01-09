@@ -1,9 +1,7 @@
 ---
 title: Node.js의 단위 테스트
 description: Visual Studio는 Visual Studio용 Node.js 도구를 사용하여 JavaScript 코드의 단위 테스트를 제공합니다.
-ms.custom: ''
 ms.date: 06/06/2018
-ms.technology: vs-nodejs
 ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
@@ -13,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 071f64c4239441d3c3fd2c111d1b912175e23316
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: a65fc53f72e2e7a90b03f376ced55fffbe9ecbf8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766555"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952766"
 ---
 # <a name="unit-testing-in-nodejs"></a>Node.js의 단위 테스트
 

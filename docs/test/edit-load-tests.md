@@ -10,13 +10,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: a2bc06ed17522eef36841b72859554163068afa6
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a060d6fd038d3dfaf0c869aba2c660efba4c9ecd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53048635"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933206"
 ---
 # <a name="edit-load-tests"></a>부하 테스트 편집
 
@@ -34,7 +33,7 @@ ms.locfileid: "53048635"
 
 ## <a name="edit-load-test-scenario-settings"></a>부하 테스트 시나리오 설정 편집
 
-시나리오는 사용자 그룹이 서버 응용 프로그램과 상호 작용하는 방법을 모델링하는 데 사용됩니다. 시나리오는 부하 패턴, 테스트 조합 모델, 테스트 조합, 브라우저 조합 및 네트워크 조합으로 구성됩니다. 부하 테스트에는 두 개 이상의 시나리오가 있을 수 있고 단일 시나리오는 웹 성능 테스트 및 단위 테스트를 포함할 수 있습니다. 유사한 설정을 그룹화하면 시나리오를 사용하여 유사한 특성의 테스트를 그룹화하고 테스트할 수 있습니다.
+시나리오는 사용자 그룹이 서버 애플리케이션과 상호 작용하는 방법을 모델링하는 데 사용됩니다. 시나리오는 부하 패턴, 테스트 조합 모델, 테스트 조합, 브라우저 조합 및 네트워크 조합으로 구성됩니다. 부하 테스트에는 두 개 이상의 시나리오가 있을 수 있고 단일 시나리오는 웹 성능 테스트 및 단위 테스트를 포함할 수 있습니다. 유사한 설정을 그룹화하면 시나리오를 사용하여 유사한 특성의 테스트를 그룹화하고 테스트할 수 있습니다.
 
 자세한 내용은 [부하 테스트 시나리오 편집](../test/edit-load-test-scenarios.md) 및 [부하 테스트 시나리오 속성](../test/load-test-scenario-properties.md)을 참조하세요.
 
