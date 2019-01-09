@@ -1,8 +1,6 @@
 ---
 title: 표시되는 시간 범위를 기반으로 하는 보고서 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.reportnav.profile
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9de75488c297eef426fb5a93c71f0ff3bad148d
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: c46404eba23c2e80a18232d01ff7a58fb92070c8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255608"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938331"
 ---
 # <a name="report-based-on-visible-time-range"></a>표시되는 시간 범위를 기반으로 하는 보고서
 프로필 뷰는 현재 표시된 시간 범위 및 채널을 기반으로 하는 보고서를 표시합니다. 다른 데이터 하위 집합에 대한 세부 정보를 보려면 범례에서 항목을 클릭합니다.  

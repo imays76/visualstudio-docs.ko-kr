@@ -3,7 +3,6 @@ title: 문제 보고
 description: 문제 보고 도구의 개요를 제공하며 문제 상태 및 정의를 포함합니다.
 ms.date: 11/15/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.custom: seodec18
 ms.topic: conceptual
 author: seaniyer
@@ -11,12 +10,12 @@ ms.author: seiyer
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b6d7605cffeca2797d47aa90c6f64a1aab0a6cb2
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 06f7f3cc2d39a28052a0f34eed8ab36d224d4b8e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159830"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934361"
 ---
 # <a name="overview-report-a-problem"></a>Overview: ADO.NET Data Services 문제 보고
 

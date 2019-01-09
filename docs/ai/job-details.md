@@ -1,11 +1,4 @@
 ---
-ms.technology: vs-ai-tools
-ms.openlocfilehash: ebf412dbeb4e0ecc391c52d7da5ea49d12e6231f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930364"
 ---
 # <a name="view-recent-job-performance-and-details"></a>최근 작업 성능 및 세부 정보 보기
 
