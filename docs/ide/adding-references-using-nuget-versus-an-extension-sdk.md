@@ -2,19 +2,18 @@
 title: NuGet을 사용한 참조 추가와 확장명 SDK를 사용한 참조 추가
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a895124effa8155ab2edb4652962b605926234d5
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 96230edb35c5dcfa0b0b85bc76ffebf7329d0ded
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349480"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930611"
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>NuGet을 사용한 참조 추가와 확장 SDK를 사용한 참조 추가
 
@@ -40,7 +39,7 @@ NuGet 또는 SDK(소프트웨어 개발 키트) 중 하나를 사용하여 Visua
 | 파일 및 링크가 **참조 관리자** 대화 상자에 자동으로 추가됩니다(도움말 링크 등의 자동 채우기). | Y | **참조 관리자** 대화 상자에 SDK가 도움말 링크 및 SDK 종속성 목록과 함께 자동으로 열거됩니다. | N | NuGet은 고유한 **NuGet 패키지 관리** 대화 상자를 제공합니다. |
 | 메커니즘에서 여러 아키텍처를 지원합니다. | Y | SDK는 여러 구성을 제공할 수 있습니다. MSBuild에서 각 프로젝트 구성에 적합한 파일을 사용합니다. | N | |
 | 메커니즘에서 여러 구성을 지원합니다. | Y | SDK는 여러 구성을 제공할 수 있습니다. 프로젝트 아키텍처에 따라 MSBuild에서 각 프로젝트 아키텍처에 적합한 파일을 사용합니다. | N | |
-| 메커니즘에서 “복사하지 않을 항목”을 지정할 수 있습니다. | Y | *\redist* 또는 *\designtime* 폴더에 파일을 넣는지에 따라 소비 응용 프로그램 패키지에 복사할 파일을 제어할 수 있습니다. | N | 패키지 매니페스트에서 복사할 파일을 선언합니다. |
+| 메커니즘에서 “복사하지 않을 항목”을 지정할 수 있습니다. | Y | *\redist* 또는 *\designtime* 폴더에 파일을 넣는지에 따라 소비 애플리케이션 패키지에 복사할 파일을 제어할 수 있습니다. | N | 패키지 매니페스트에서 복사할 파일을 선언합니다. |
 | 콘텐츠가 지역화된 파일에 표시됩니다. | Y | 디자인 타임 환경 개선을 위해 SDK의 지역화된 XML 문서가 자동으로 포함됩니다. | N | |
 | MSBuild에서 동시에 여러 버전의 SDK를 사용할 수 있도록 지원합니다. | Y | SDK에서 동시에 여러 버전을 사용할 수 있도록 지원합니다. | N | 참조가 아닙니다. 프로젝트에 여러 버전의 NuGet 파일을 동시에 사용할 수 없습니다. |
 | 메커니즘에서 해당하는 대상 프레임워크, Visual Studio 버전 및 프로젝트 형식을 지정할 수 있도록 지원합니다. | Y | 사용자가 적절한 SDK를 쉽게 선택할 수 있도록 프로젝트에 적용되는 SDK만 **참조 관리자** 대화 상자와 **도구 상자**에 표시됩니다. | Y(부분) | 피벗이 대상 프레임워크입니다. 사용자 인터페이스에 필터링이 없습니다. 설치 시 오류가 반환될 수도 있습니다. |

@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Visual Studio는 프로젝트 파일이나 솔루션 파일에 대한 종속성 없이 코드 작성을 지원
 ms.custom: seodec18
 ms.date: 09/24/2018
-ms.technology: vs-nodejs
 ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
@@ -14,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a68174fd9cc1efcdde068448445adcf68fe36f63
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e8c42bd40528dfe8567219bdc2bc4a8d216e7c6b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058456"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899758"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>솔루션이나 프로젝트 없이 Visual Studio에서 JavaScript 및 TypeScript 코드 개발
 
@@ -82,4 +81,4 @@ Test Runner는 사용할 테스트 프레임워크를 결정할 수 있도록 �
 테스트 탐색기를 연 후(**테스트** > **Windows** > **테스트 탐색기** 선택), Visual Studio가 검색하고 테스트가 표시됩니다.
 
 > [!NOTE]
-> 첫 번째로 빌드해야 하는 TypeScript에 응용 프로그램이 작성되는 경우 Test Runner는 테스트 루트의 JavaScript 파일만 열거합니다.
+> 첫 번째로 빌드해야 하는 TypeScript에 애플리케이션이 작성되는 경우 Test Runner는 테스트 루트의 JavaScript 파일만 열거합니다.

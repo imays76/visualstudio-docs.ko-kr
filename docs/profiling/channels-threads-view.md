@@ -1,8 +1,6 @@
 ---
 title: 채널(스레드 뷰) | Microsoft 문서
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.timeline.channelnames
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 42b1baeec4543cb56d1e2320f26c9457dd7aac80
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 0d3ab6254ba56337e3e47379f1f4df800a73c67f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34269130"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870929"
 ---
 # <a name="channels-threads-view"></a>채널(스레드 뷰)
 동시성 시각화 도우미는 스레드 채널, 디스크 채널, 표식 채널 및 GPU 채널의 4가지 채널을 보여줍니다.  
@@ -30,7 +28,7 @@ ms.locfileid: "34269130"
 |||  
 |-|-|  
 |주 스레드|응용 프로그램을 시작한 스레드입니다.|  
-|작업자 스레드|응용 프로그램의 주 스레드에 의해 생성된 스레드입니다.|  
+|작업자 스레드|애플리케이션의 주 스레드에 의해 생성된 스레드입니다.|  
 |CLR 작업자 스레드|CLR(공용 언어 런타임)에 의해 생성된 작업자 스레드입니다.|  
 |디버거 도우미|Visual Studio 디버거에 의해 생성된 작업자 스레드입니다.|  
 |ConcRT 스레드|Microsoft 동시성 런타임에 의해 생성된 스레드입니다.|  

@@ -1,8 +1,6 @@
 ---
 title: Launch | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: f81bde5c-3394-4b79-a315-c2f6491689b3
 author: mikejo5000
@@ -10,15 +8,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3afc0a50847591445c106d86460ee1821fe0df81
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 336c655a7a8e36ca7aee68d34f175d3b70a58bb7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219200"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922265"
 ---
 # <a name="launch"></a>Launch
-**Launch** 옵션은 샘플링 방법을 사용하여 프로파일러를 시작하고 지정된 응용 프로그램도 시작합니다.  
+**Launch** 옵션은 샘플링 방법을 사용하여 프로파일러를 시작하고 지정된 애플리케이션도 시작합니다.  
   
  **Launch** 옵션을 사용하려면 **Start** 옵션에서 **Sample** 메서드를 지정해야 합니다.  
   
@@ -30,7 +28,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
   
 #### <a name="parameters"></a>매개 변수  
  `AppName`  
- 시작하려는 응용 프로그램의 이름입니다. 현재 디렉터리에서 전체 및 부분 경로를 사용할 수 있습니다.  
+ 시작하려는 애플리케이션의 이름입니다. 현재 디렉터리에서 전체 및 부분 경로를 사용할 수 있습니다.  
   
 ## <a name="valid-options"></a>유효한 옵션  
  다음 VSPerfCmd 옵션은 단일 명령줄에서 **Launch** 옵션과 함께 결합될 수 있습니다.  
@@ -51,10 +49,10 @@ VSPerfCmd.exe /Launch:AppName [Options]
  다음 옵션은 **Launch** 옵션에만 사용할 수 있습니다.  
   
  **콘솔**  
- 새 창에서 지정된 명령줄 응용 프로그램을 시작합니다.  
+ 새 창에서 지정된 명령줄 애플리케이션을 시작합니다.  
   
  **Args:** `ArgList`  
- 응용 프로그램에 전달할 인수의 목록을 지정합니다.  
+ 애플리케이션에 전달할 인수의 목록을 지정합니다.  
   
  **LineOff**  
  줄 수준 프로파일링 데이터 수집을 비활성화합니다.  
@@ -75,8 +73,8 @@ VSPerfCmd.exe /Launch:AppName [Options]
   
 -   **GC** - .NET 메모리 데이터를 수집합니다. 기본적으로(**allocation**) 모든 메모리 할당 이벤트에서 데이터가 수집됩니다. **lifetime** 매개변수가 지정되면 데이터는 각 가비지 컬렉션 이벤트에서도 수집됩니다.  
   
-## <a name="example"></a>예  
- 이 예제에서는 응용 프로그램을 시작하는 **Launch**의 사용을 보여 줍니다.  
+## <a name="example"></a>예제  
+ 이 예제에서는 애플리케이션을 시작하는 **Launch**의 사용을 보여 줍니다.  
   
 ```cmd  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
@@ -85,6 +83,6 @@ VSPerfCmd.exe /Launch:TestApp.exe
   
 ## <a name="see-also"></a>참고 항목  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [독립 실행형 응용 프로그램 프로파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [ASP.NET 웹 응용 프로그램 프로파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [독립 실행형 애플리케이션 프로파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [ASP.NET 웹 애플리케이션 프로파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [서비스 프로파일링](../profiling/command-line-profiling-of-services.md)

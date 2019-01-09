@@ -1,8 +1,6 @@
 ---
 title: 스레드 단위 요약 보고서 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.report.executionbreakdown
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba1bc49cc9b2a16f32c854805fdd31b095af1629
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 737e879f040f503ec367438273d2136670a44e21
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255404"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869585"
 ---
 # <a name="per-thread-summary-report"></a>스레드별 요약 보고서
 이 막대 그래프는 현재 표시되는 시간 범위 중 각 작업 범주에서 숨겨진 각 스레드가 소비하는 시간의 비율을 표시합니다. "실행"은 스레드가 실행되고 있음을 의미하며 다른 모든 범주는 스레드가 대기 중임을 의미합니다.  
