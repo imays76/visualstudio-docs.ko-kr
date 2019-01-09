@@ -2,7 +2,6 @@
 title: 솔루션 및 프로젝트
 ms.date: 10/05/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.addnewsolutionitem
@@ -25,12 +24,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d6d5b6e6d8af8d03301c7f9f8e192e8f10df3ef
-ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
+ms.openlocfilehash: 8331ff52da4b0d0e8afe81e66f5674258df709fb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53425762"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938555"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio의 솔루션 및 프로젝트
 
@@ -59,7 +58,7 @@ Visual Studio에서 프로젝트 파일은 **솔루션 탐색기**에서 프로�
 
 Visual Studio에서는 두 가지 파일 형식(*.sln* 및 *.suo*)을 사용하여 솔루션 관련 설정을 저장합니다.
 
-|확장명|이름|설명|
+|확장명|name|설명|
 |---------------|----------|-----------------|
 |.sln|Visual Studio 솔루션|솔루션에서 프로젝트, 프로젝트 항목 및 솔루션 항목을 구성합니다.|
 |.suo|솔루션 사용자 옵션|중단점과 같은 사용자 수준 설정 및 사용자 지정을 저장합니다.|

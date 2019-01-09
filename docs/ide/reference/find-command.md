@@ -2,7 +2,6 @@
 title: 찾기 명령
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - edit.find
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb84e7305797522c7e34e387357eedfdcd61e88f
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: cf891b87de6e4e836aa4a710b3c5638db9e23919
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704189"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965696"
 ---
 # <a name="find-command"></a>찾기 명령
 **찾기 및 바꾸기** 창의 **파일에서 바꾸기** 탭에서 사용할 수 있는 옵션의 하위 집합을 사용하여 파일을 검색합니다.
@@ -60,7 +59,7 @@ Edit.Find findwhat [/case] [/doc | /proc | /open | /sel]
 
  /word 또는 /w 선택 사항입니다. 전체 단어만을 검색합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  이 예제에서는 코드의 현재 선택된 섹션에서 "somestring"이라는 단어에 대해 대/소문자 구분 검색을 수행합니다.
 
 ```cmd
@@ -72,4 +71,4 @@ Edit.Find findwhat [/case] [/doc | /proc | /open | /sel]
 - [명령 창](../../ide/reference/command-window.md)
 - [찾기/명령 상자](../../ide/find-command-box.md)
 - [Visual Studio 명령](../../ide/reference/visual-studio-commands.md)
-- [Visual Studio 명령 별칭](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

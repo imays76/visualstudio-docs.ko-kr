@@ -1,8 +1,6 @@
 ---
 title: WaitStart | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 6c737177-2dfb-4150-963e-a49ac9aaa591
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 059f05d25f1882cd857dd1e39ea40a58a7c5e1d3
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 17e4b8a2aac1ae2eac20fb7579977df66ee9caa7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34571372"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938003"
 ---
 # <a name="waitstart"></a>WaitStart
 WaitStart 옵션을 사용하면 *VSPerfCmd.exe* Start 하위 명령이 프로파일러가 초기화되었거나 지정된 시간(초)이 경과되었을 때만 결과를 반환합니다. 기본적으로 Start 명령은 즉시 결과를 반환합니다. 프로파일러를 초기화하지 않고 Start 하위 명령이 반환되면 오류가 반환됩니다. 시간(초)을 지정하지 않으면 Start 명령은 무기한 대기합니다.  
@@ -38,9 +36,9 @@ VSPerfCmd.exe /Start:Method /Output:FileName[Options] /StartWait[:Seconds]
  **Output:** `filename`  
  출력 파일 이름을 지정합니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  이 배치 파일 예제에서 Start 명령은 프로파일러가 초기화될 때까지 5초 동안 대기합니다.  
   
 ```cmd  

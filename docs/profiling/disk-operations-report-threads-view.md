@@ -1,8 +1,6 @@
 ---
 title: 디스크 작업 보고서(스레드 뷰) | Microsoft 문서
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.report.diskoperations
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d145b57b2cacce68b609ddc7aea5cef41cf69762
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 95173f260ce8ed40c607c7026df727267dd3866e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34764620"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955268"
 ---
 # <a name="disk-operations-report-threads-view"></a>디스크 작업 보고서(스레드 뷰)
 디스크 작업 보고서에는 디스크 채널의 디스크 I/O 작업이 표시됩니다.  

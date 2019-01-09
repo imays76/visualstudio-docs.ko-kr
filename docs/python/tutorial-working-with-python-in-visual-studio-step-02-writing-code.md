@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Visual Studio의 Python 기능에 대한 핵심 연습의 2단계로, 코드 편집 및 프로젝트 실행을 포함합니다.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9b2f1c4743652f0925ef083d0ca62a34485c219b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 201284ad236b2182ba6c4e69971ff15d0b43a009
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054802"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935146"
 ---
 # <a name="step-2-write-and-run-code"></a>2단계: 코드 작성 및 실행
 
@@ -26,7 +25,7 @@ ms.locfileid: "53054802"
 
 프로젝트 파일은 **솔루션 탐색기**에서 관리하더라도 일반적으로 소스 코드와 같은 파일의 ‘콘텐츠’는 ‘편집기’ 창에서 작업합니다. 편집기는 컨텍스트에 따라 프로그래밍 언어(파일 확장명에 따라)를 포함한 편집 중인 파일의 유형을 파악하고, IntelliSense를 사용한 구문 색 지정 및 자동 완성과 같이 해당 언어에 적절한 기능을 제공합니다.
 
-1. 새로운 “Python 응용 프로그램” 프로젝트를 만들면 Visual Studio 편집기에 *PythonApplication1.py*라는 기본 빈 파일이 열립니다.
+1. 새로운 “Python 애플리케이션” 프로젝트를 만들면 Visual Studio 편집기에 *PythonApplication1.py*라는 기본 빈 파일이 열립니다.
 
 1. 편집기에서 `print("Hello, Visual Studio")`를 입력하기 시작하면 Visual Studio IntelliSense가 입력 도중에 자동 완성 옵션을 어떻게 표시하는지 알 수 있습니다. 드롭다운 목록에서 윤곽선이 있는 옵션은 **Tab** 키를 누르면 사용되는 기본 완성입니다. 완성 기능은 더 긴 문이나 식별자가 포함된 경우에 가장 유용합니다.
 

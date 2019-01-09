@@ -2,7 +2,6 @@
 title: 테스트 생성 | Microsoft IntelliTest 개발자 테스트 도구
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Test generation
@@ -11,12 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 20bacca2343cb2689ed52096c1a9b0d9c3d74703
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 5f2a63c21a1d2f25f34bda3f27163783d9c96bcd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295867"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53936648"
 ---
 # <a name="test-generation"></a>테스트 생성
 
@@ -24,7 +23,7 @@ ms.locfileid: "51295867"
 
 * [메서드 호출의 시퀀스](test-generation.md#test-generators)
 * 메서드와 함께 호출된 인수, 인수는 [테스트 입력](input-generation.md)입니다.
-* [어설션](#assumptions-and-assertions) 집합을 명시하여 테스트된 응용 프로그램의 의도한 동작에 대한 유효성 검사
+* [어설션](#assumptions-and-assertions) 집합을 명시하여 테스트된 애플리케이션의 의도한 동작에 대한 유효성 검사
 
 다음은 예제 테스트 구조입니다.
 

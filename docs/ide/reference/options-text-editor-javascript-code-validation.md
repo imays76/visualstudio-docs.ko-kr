@@ -2,7 +2,6 @@
 title: 옵션, 텍스트 편집기, JavaScript, 코드 유효성 검사
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Code_Validation.JavaScript_Errors
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e06c0a82a70cf3764df4937ed7d42b2c87f8aa46
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: c70906430ecc7175e4ceae1bfd55b308b2487be9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673255"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905613"
 ---
 # <a name="options-text-editor-javascript-code-validation"></a>옵션, 텍스트 편집기, JavaScript, 코드 유효성 검사
 **옵션** 대화 상자의 **코드 유효성 검사** 페이지를 사용하여 JavaScript에서 오류를 처리하는 방법에 영향을 주는 설정을 수정할 수 있습니다. 메뉴 모음에서 **도구** > **옵션**을 선택한 다음, **텍스트 편집기** > **JavaScript** > **코드 유효성 검사**를 확장하여 **코드 유효성 검사**에 액세스할 수 있습니다.
