@@ -1,8 +1,6 @@
 ---
 title: XDCMake 작업 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - vc.task.xdcmake
@@ -21,19 +19,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 460d5f68242f232048fec294156f90f49331a21d
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: a830639d8e69a331c2d81c6012d0ea7e6fcfb848
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231189"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990196"
 ---
 # <a name="xdcmake-task"></a>XDCMake 작업
 XML 문서 주석(*.xdc*) 파일을 *.xml* 파일에 병합하는 XML 문서 도구(*xdcmake.exe*)를 래핑합니다.  
   
  Visual C++ 소스 코드에 문서 주석을 제공하고 [/doc](/cpp/build/reference/doc-process-documentation-comments-c-cpp) 컴파일러 옵션을 사용하여 컴파일할 때 *.xdc* 파일이 생성됩니다. 자세한 내용은 *xdcmake.exe*에 대한 [XDCMake 참조](/cpp/ide/xdcmake-reference), [XML 문서 생성기 도구 속성 페이지](/cpp/ide/xml-document-generator-tool-property-pages) 및 명령줄 도움말 옵션(**/?**)을 참조하세요.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  기본적으로 *xdcmake.exe* 도구는 몇 가지 명령줄 옵션을 지원합니다. **/old** 명령줄 옵션을 지정하면 추가 옵션이 지원됩니다.  
   
 ## <a name="parameters"></a>매개 변수  

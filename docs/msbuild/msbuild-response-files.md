@@ -1,8 +1,6 @@
 ---
 title: MSBuild 지시 파일 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ac02d01f5a57cf97afcb3729775d707bbacd04c0
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 33156a0614ad47839187056e4e0a24b5ee2f7ae2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879241"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989674"
 ---
 # <a name="msbuild-response-files"></a>MSBuild 지시 파일
 지시(*.rsp*) 파일은 *MSBuild.exe* 명령줄 스위치를 포함하는 텍스트 파일입니다. 각 스위치가 별도 줄에 있거나 모든 스위치가 한 줄에 있을 수 있습니다. 주석 줄의 앞에 **#** 기호가 붙습니다. **@** 스위치는 다른 지시 파일을 *MSBuild.exe*에 전달하는 데 사용됩니다.  

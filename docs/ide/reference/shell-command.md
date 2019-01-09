@@ -2,7 +2,6 @@
 title: 셸 명령
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - tools.shell
@@ -20,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04ec2719b57f387633a7244d7089be963d3ba87c
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: c62eb3f5fa27a11779cbb2aabf2067a35c0fe5e3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704105"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821609"
 ---
 # <a name="shell-command"></a>셸 명령
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 내에서 실행 프로그램을 시작합니다.
@@ -39,7 +38,7 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
 ## <a name="arguments"></a>인수
  `path`
 
- 필수. 실행할 파일의 경로와 파일 이름 또는 열 문서. 지정된 파일이 PATH 환경 변수에 있는 디렉터리 중 하나에 없으면 전체 경로가 필요합니다.
+ 필수 요소. 실행할 파일의 경로와 파일 이름 또는 열 문서. 지정된 파일이 PATH 환경 변수에 있는 디렉터리 중 하나에 없으면 전체 경로가 필요합니다.
 
  `args`
 
@@ -58,7 +57,7 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
 
  선택 사항입니다. 실행 파일에 대한 출력이 **출력** 창에 표시되도록 지정합니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
  `Tools.Shell` 바로 뒤에 /dir /o /c 스위치를 지정해야 합니다. 실행 파일 이름 뒤에 지정된 모든 내용은 명령줄 인수로 전달됩니다.
 
  미리 정의된 별칭 `Shell`을 `Tools.Shell` 대신 사용할 수 있습니다.
@@ -81,7 +80,7 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
 > 리터럴 따옴표(""")로 경로 문자열을 묶지 않으면 Windows는 첫 번째 공백까지의 문자열 부분만 사용합니다. 예를 들어 위의 경로 문자열이 제대로 인용되지 않으면 Windows는 C:\ 루트 디렉터리에 있는 "Program"이라는 파일을 찾습니다. C:\Program.exe 실행 파일을 실제로 사용할 수 있는 경우 Windows는 불법적 인 변조로 설치한 경우 조차도 원하는 "c:\Program Files\SomeFile.exe" 프로그램 대신 해당 프로그램을 실행하려고 시도합니다.
 
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 명령은 xcopy.exe를 사용하여 `MyText.txt` 파일을 `Text` 폴더에 복사합니다. xcopy.exe 출력은 **명령 창** 및 **출력** 창 모두에 표시됩니다.
 
 ```cmd
@@ -94,4 +93,4 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
 - [명령 창](../../ide/reference/command-window.md)
 - [출력 창](../../ide/reference/output-window.md)
 - [찾기/명령 상자](../../ide/find-command-box.md)
-- [Visual Studio 명령 별칭](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

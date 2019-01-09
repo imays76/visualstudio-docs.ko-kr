@@ -1,8 +1,6 @@
 ---
 title: Item 함수 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, Item functions
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 85dd03080a9dda58532d656161c3c44ae4943251
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 5d731cf14fca91920d5da6b6232f1a9bd4feb0b9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081350"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821292"
 ---
 # <a name="item-functions"></a>항목 함수
 MSBuild 4.0부터 작업 및 대상의 코드는 프로젝트의 항목에 대한 정보를 얻기 위해 item 함수를 호출할 수 있습니다. 이러한 함수를 사용하면 Distinct() 항목을 간편하게 가져올 수 있으며 항목을 반복하는 방식보다 속도도 더 빠릅니다.  
@@ -53,7 +51,7 @@ MSBuild 4.0부터 작업 및 대상의 코드는 프로젝트의 항목에 대�
 ## <a name="intrinsic-item-functions"></a>내장 항목 함수  
  아래 표는 항목에 사용할 수 있는 내장 함수를 나열합니다.  
   
-|함수|예|설명|  
+|함수|예제|설명|  
 |--------------|-------------|-----------------|  
 |`Count`|`@(MyItem->Count())`|항목 수를 반환합니다.|  
 |`DirectoryName`|`@(MyItem->DirectoryName())`|각 항목에 대한 해당 `Path.DirectoryName`을 반환합니다.|  

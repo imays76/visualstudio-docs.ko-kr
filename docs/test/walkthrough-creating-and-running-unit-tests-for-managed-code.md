@@ -2,7 +2,6 @@
 title: 관리 코드에 대한 단위 테스트 만들기 및 실행
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, walkthrough
@@ -15,12 +14,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 13488619b38f5fd974d793d56f6a8d8cf86f15c1
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: de50a5ee6e65540b1a2052f61eae211074780417
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39469115"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989178"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>연습: 관리 코드에 대한 단위 테스트 만들기 및 실행
 
@@ -45,7 +44,7 @@ ms.locfileid: "39469115"
 
 3. **설치된 템플릿**에서 **Visual C#** 을 클릭합니다.
 
-4. 응용 프로그램 형식 목록에서 **클래스 라이브러리**를 클릭합니다.
+4. 애플리케이션 형식 목록에서 **클래스 라이브러리**를 클릭합니다.
 
 5. **이름** 상자에 **Bank**를 입력한 다음, **확인**을 클릭합니다.
 

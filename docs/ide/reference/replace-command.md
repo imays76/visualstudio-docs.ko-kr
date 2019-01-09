@@ -2,7 +2,6 @@
 title: 바꾸기 명령
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - edit.replace
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b712ee88526585d24ffd7b22fadbbf015c3d131
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b058b57897c369b4f7cc54b849d9abea3a1b6b15
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949947"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989233"
 ---
 # <a name="replace-command"></a>바꾸기 명령
 **찾기 및 바꾸기** 창의 **파일에서 바꾸기**에서 사용할 수 있는 옵션의 하위 집합을 사용하여 파일의 텍스트를 바꿉니다.
@@ -36,11 +35,11 @@ Edit.Replace findwhat replacewith [/all] [/case]
 ## <a name="arguments"></a>인수
  `findwhat`
 
- 필수. 일치하는 텍스트입니다.
+ 필수 요소. 일치하는 텍스트입니다.
 
  `replacewith`
 
- 필수. 일치된 텍스트를 대체할 텍스트입니다.
+ 필수 요소. 일치된 텍스트를 대체할 텍스트입니다.
 
 ## <a name="switches"></a>스위치
  /all 또는 /a
@@ -95,7 +94,7 @@ Edit.Replace findwhat replacewith [/all] [/case]
 
  선택 사항입니다. 전체 단어만을 검색합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  이 예제에서는 열린 모든 문서에서 `btnSend`를 `btnSubmit`으로 바꿉니다.
 
 ```
@@ -108,4 +107,4 @@ Edit.Replace findwhat replacewith [/all] [/case]
 - [명령 창](../../ide/reference/command-window.md)
 - [찾기/명령 상자](../../ide/find-command-box.md)
 - [Visual Studio 명령](../../ide/reference/visual-studio-commands.md)
-- [Visual Studio 명령 별칭](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

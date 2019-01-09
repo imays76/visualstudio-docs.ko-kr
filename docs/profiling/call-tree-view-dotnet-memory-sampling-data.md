@@ -1,8 +1,6 @@
 ---
 title: 호출 트리 뷰 - .NET 메모리 샘플링 데이터 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Call Tree view
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c3c7c70057380289272e86cf7187680746dafdd2
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 7f8e2e6e480bb082c0f60bd94a06b28ea12c268b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34336047"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988273"
 ---
 # <a name="call-tree-view---net-memory-sampling-data"></a>호출 트리 뷰 - .NET 메모리 샘플링 데이터
-호출 트리 뷰에는 프로파일링 된 응용 프로그램에서 이동한 함수 실행 경로가 표시됩니다. 트리의 루트는 응용 프로그램 또는 구성 요소에 대한 진입점입니다. 각 함수 노드에는 호출한 모든 함수 및 이러한 함수 호출에 대한 .NET 메모리 할당 데이터가 나열됩니다.  
+호출 트리 뷰에는 프로파일링 된 애플리케이션에서 이동한 함수 실행 경로가 표시됩니다. 트리의 루트는 애플리케이션 또는 구성 요소에 대한 진입점입니다. 각 함수 노드에는 호출한 모든 함수 및 이러한 함수 호출에 대한 .NET 메모리 할당 데이터가 나열됩니다.  
   
  호출 트리 뷰의 값은 호출 트리의 부모 함수가 호출한 함수 인스턴스에 대한 값입니다. 비율 값은 프로파일링 실행 시 총 할당 수 또는 크기와 함수 인스턴스 값을 비교하여 계산됩니다.  
   
