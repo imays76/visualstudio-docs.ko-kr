@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b9d2b78f049a080f70b30edb82af1066817f6adb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 78384fc4e65dcd5e1f41f3f83b98c3fab5b12cfd
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727703"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093901"
 ---
 # <a name="ijsdebugframegetreturnaddress-method"></a>IJsDebugFrame::GetReturnAddress 메서드
-'시작'에 푸시되 반환 주소를 가져옵니다 (GetStackRange 참조) 프레임의 합니다.  
+'시작'에 푸시된 반송 주소를 가져옵니다 (GetStackRange 참조) 프레임입니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetReturnAddress(  
    UINT64 *pReturnAddress  
 );  
@@ -36,7 +36,7 @@ HRESULT GetReturnAddress(
   
 #### <a name="parameters"></a>매개 변수  
  `pReturnAddress`  
- [out] 반송 주소입니다.  
+ [out] 반환 주소입니다.  
   
 ## <a name="return-value"></a>반환 값  
   

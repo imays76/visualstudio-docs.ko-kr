@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ed562c1cbdd645da6cca87e45f272c25f8bc0d4b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a2dfc8db8d79dbca388b1792a58169b7dbe17151
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727903"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089286"
 ---
 # <a name="ijsdebugdatatargetwritememory-method"></a>IJsDebugDataTarget::WriteMemory 메서드
 대상 프로세스의 메모리를 읽습니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT WriteMemory(  
    UINT64 address,  
    const BYTE *pMemory,  
@@ -38,18 +38,18 @@ HRESULT WriteMemory(
   
 #### <a name="parameters"></a>매개 변수  
  `address`  
- [in] 대상 프로세스의 메모리를 쓸 기본 주소입니다.  
+ [in] 대상 프로세스의 메모리를 작성 하는 기본 주소입니다.  
   
  `pMemory`  
  [in] 지정된 된 프로세스의 주소 공간에 쓸 데이터입니다.  
   
  `size`  
- [in] 프로세스에 쓸 바이트 수입니다.  
+ [in] 프로세스에 쓸 바이트의 수입니다.  
   
 ## <a name="return-value"></a>반환 값  
   
 ## <a name="remarks"></a>설명  
- 데이터 전송 발생 하기 전에 시스템 확인 하는 기본 주소와 지정된 된 크기의 메모리에 모든 데이터는 쓰기 액세스를 위해 액세스할 수 액세스할 수 없는 경우 함수 E_JsDEBUG_INVALID_MEMORY_ADDRESS 오류를 발생 시킵니다.  
+ 데이터 전송이 발생 하기 전에 시스템에는 기본 주소와 지정된 된 크기의 메모리에서 모든 데이터 쓰기 권한으로 액세스할 수 있고 액세스할 수 없는 경우 함수는 E_JsDEBUG_INVALID_MEMORY_ADDRESS 오류를 발생 시킵니다 확인 합니다.  
   
 ## <a name="requirements"></a>요구 사항  
  **헤더:** jscript9diag.h  

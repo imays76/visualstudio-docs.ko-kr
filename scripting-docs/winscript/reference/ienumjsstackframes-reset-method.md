@@ -16,19 +16,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 130db93a9ecedba039c8e422b2cba8aec2b5a6d2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b9d66f6e36284f0627af7fd44f41fafd6b798e50
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727783"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096553"
 ---
 # <a name="ienumjsstackframesreset-method"></a>IEnumJsStackFrames::Reset 메서드
-첫 번째 요소 앞으로 스택 프레임을 다시 설정합니다.  
+첫 번째 요소 앞의 위치는 스택 프레임을 다시 설정합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT Reset(void);  
 ```  
   

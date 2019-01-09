@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a165edf2d8f9a0b386daa0035ece1a722401a443
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 01c33ab9ef187f5bf9d6146e23c4534a33844cec
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726983"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091782"
 ---
 # <a name="idisperrorqueryerrorinfo"></a>IDispError::QueryErrorInfo
 특정 유형의 오류 정보를 검색합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT QueryErrorInfo(  
    GUID  guidErrorType,  
    IDispError**  ppde  

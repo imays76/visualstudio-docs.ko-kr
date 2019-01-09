@@ -12,18 +12,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f560b22e6e759d6e8fa2760e1321b0cfa79a77e4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5ec2be5f35d15f0f7260e224b53ad4d8f07e8734
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733893"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086504"
 ---
 # <a name="profilerexternalobjectaddress-type"></a>PROFILER_EXTERNAL_OBJECT_ADDRESS 형식
-외부 개체의 주소는 JavaScript 힙을 밖에 있는 c + +에서 할당 된 개체 등의 개체입니다. 에 사용 된 [PROFILER_HEAP_OBJECT 구조체](../../winscript/reference/profiler-heap-object-structure.md) 및 [PROFILER_HEAP_OBJECT_RELATIONSHIP 구조체](../../winscript/reference/profiler-heap-object-relationship-structure.md)합니다.  
+JavaScript 힙 외부에 있는 c + +에서 할당 된 개체와 같은 개체의 외부 개체 주소입니다. 레지스트리에 [PROFILER_HEAP_OBJECT 구조체](../../winscript/reference/profiler-heap-object-structure.md) 하 고 [PROFILER_HEAP_OBJECT_RELATIONSHIP 구조체](../../winscript/reference/profiler-heap-object-relationship-structure.md)합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 typedef void* PROFILER_EXTERNAL_OBJECT_ADDRESS;  
 ```

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e3121538612be48628b24965e118130875c51a0b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f689aa6f930a596239483176e1aa9f2fcc8cdd3e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726303"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086608"
 ---
 # <a name="idebugdocumenttextgetdocumentattributes"></a>IDebugDocumentText::GetDocumentAttributes
 문서의 특성을 반환 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetDocumentAttributes(  
    TEXT_DOC_ATTR*  ptextdocattr  
 );  
@@ -48,7 +48,7 @@ HRESULT GetDocumentAttributes(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 이 메서드는 문서의 특성을 반환합니다.  
+ 이 메서드는 문서의 특성을 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugDocumentText 인터페이스](../../winscript/reference/idebugdocumenttext-interface.md)   

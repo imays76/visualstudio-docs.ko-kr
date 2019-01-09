@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b8c85601709bb727549152ffdb01e15dbd84e510
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9e6b0e3499f9420d42660880f616d2d0873d7a0f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728823"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086777"
 ---
 # <a name="ijsenumdebugpropertynext-method"></a>IJsEnumDebugProperty::Next 메서드
 이 개체에 대 한 속성을 읽습니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT Next(  
    ULONG count,  
    IJsDebugProperty **ppDebugProperty,  
@@ -38,7 +38,7 @@ HRESULT Next(
   
 #### <a name="parameters"></a>매개 변수  
  `count`  
- [in] 읽을 속성의 수입니다.  
+ [in] 읽을 속성 수입니다.  
   
  `ppDebugProperty`  
  [out] 속성 브라우저를 나타내는 개체입니다.  

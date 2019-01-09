@@ -12,19 +12,19 @@ caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 917fe2ca3328b0a177e517ac2a7e721676f32cf2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b52c94e9c8b14218362000df401fba24568ea426
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724973"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097307"
 ---
 # <a name="iactivescriptsiteuicontrolgetuibehavior-method"></a>IActiveScriptSiteUIControl::GetUIBehavior 메서드
-가져옵니다는 [SCRIPTUICHANDLING 열거형](../../winscript/reference/scriptuichandling-enumeration.md) UI 컨트롤을 처리 해야 하는 방식을 나타내는입니다.  
+가져옵니다를 [SCRIPTUICHANDLING 열거형](../../winscript/reference/scriptuichandling-enumeration.md) 나타내는 UI 컨트롤을 처리 해야 하는 방식입니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetUIBehavior(     [in] SCRIPTUICITEM UicItem,     [out] SCRIPTUICHANDLING * pUicHandling );   
 ```  
   
@@ -33,4 +33,4 @@ HRESULT GetUIBehavior(     [in] SCRIPTUICITEM UicItem,     [out] SCRIPTUICHANDLI
  컨트롤의 형식입니다.  
   
  `pUicHandling`  
- 컨트롤 방식으로 처리 되어야 합니다.
+ 컨트롤을 처리 해야 하는 방법입니다.

@@ -16,20 +16,20 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f5acb137337e46a6e84f7d68c9330a3ca847f2e5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: daa5414153ee55a431294afaf7b167ee91839bfc
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727363"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093992"
 ---
 # <a name="ijsdebugopenvirtualprocess-method"></a>IJsDebug::OpenVirtualProcess 메서드
-팩터리 메서드를 새 가상 프로세스 개체를 만드는 데 사용 합니다.  
+새 가상 프로세스 개체를 만드는 데 사용 되는 팩터리 메서드.  
   
 ## <a name="syntax"></a>구문  
   
-```  
- HRESULT OpenVirtualProcess(  
+```cpp
+HRESULT OpenVirtualProcess(  
    DWORD processId,  
    UINT64 runtimeJsBaseAddress,  
    IJsDebugDataTarget *pDataTarget,  
@@ -39,13 +39,13 @@ ms.locfileid: "24727363"
   
 #### <a name="parameters"></a>매개 변수  
  `processId`  
- [in] 디버거를 연결 하는 프로세스 Id입니다.  
+ [in] 디버거를 연결할 프로세스 Id입니다.  
   
  `runtimeJsBaseAddress`  
- [in] JavaScript 런타임이 대상 프로세스에 로드 하는 기본 주소입니다.  
+ [in] JavaScript 런타임에서 대상 프로세스로 로드에는 기본 주소입니다.  
   
  `pDataTarget`  
- [in] 디버거 프로세스의 상태에 대 한 쿼리를 제공 된 인터페이스입니다.  
+ [in] 디버거 프로세스의 상태에 대 한 쿼리 인터페이스를 제공된 합니다.  
   
  `ppProcess`  
  [out] 새 디버그 프로세스 개체  
@@ -53,7 +53,7 @@ ms.locfileid: "24727363"
 ## <a name="return-value"></a>반환 값  
   
 ## <a name="remarks"></a>설명  
- Jscript9diag 및 Jscript9 일치 하지 않는 경우 E_JsDEBUG_MISMATCHED_RUNTIME를 반환 합니다.  
+ Jscript9diag 및 jscript9와 일치 하지 않으면 E_JsDEBUG_MISMATCHED_RUNTIME를 반환 합니다.  
   
 ## <a name="requirements"></a>요구 사항  
  **헤더:** jscript9diag.h  

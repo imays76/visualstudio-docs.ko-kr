@@ -18,19 +18,19 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3465552b99b2185ea475c5479f044ee7b27704ae
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 2d32e2864f42fa9a2bfc30cfe83da7d4e021dfd0
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281249"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088870"
 ---
 # <a name="iactivescriptauthorgetinfofromcontext"></a>IActiveScriptAuthor::GetInfoFromContext
 반환 코드 블록에 정보 및 지정 된 문자에 대 한 앵커 위치를 입력합니다. IntelliSense, 전역 목록 및 매개 변수 팁 멤버에 대 한 정보를 제공 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetInfoFromContext(  
    LPCOLESTR  pszCode,  
    ULONG      cchCode,  

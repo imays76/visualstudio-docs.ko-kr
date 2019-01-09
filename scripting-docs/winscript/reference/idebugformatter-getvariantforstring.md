@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3f9f783c8fe1864999e017ff348853df5464c93f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1ee40057043751b465c6575575f00dee848a0160
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726823"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086621"
 ---
 # <a name="idebugformattergetvariantforstring"></a>IDebugFormatter::GetVariantForString
 지정된 된 문자열을 포함 하는 VARIANT를 반환 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetVariantForString(  
    LPCOLESTR  pwstrValue,  
    VARIANT*   pvar  
@@ -39,7 +39,7 @@ HRESULT GetVariantForString(
   
 #### <a name="parameters"></a>매개 변수  
  `pwstrValue`  
- [in] VARIANT에 저장 하는 문자열입니다.  
+ [in] 변형에 저장 하는 문자열입니다.  
   
  `pvar`  
  [out] VARIANT 포함 된 `pwstrValue`합니다.  

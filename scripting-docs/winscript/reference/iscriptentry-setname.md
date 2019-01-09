@@ -18,19 +18,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 43e167ce48c208b6f552984fe2db9ec9d48c72eb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2c7929d9d073e7b21030dcddc3db04abc977bdd3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729413"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086673"
 ---
 # <a name="iscriptentrysetname"></a>IScriptEntry::SetName
 단일 개체 (예: 함수)를 나타내는 항목에 대 한 개체의 이름을 설정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT SetName(  
    LPCOLESTR          psz  
 );  

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2512fa3b56a19ed7396c7a351c8d8f8323fff6f5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9c916f0a76021afea82b4021ed1ce7d411317807
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726623"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087713"
 ---
 # <a name="idebugdocumenttextgetlineofposition"></a>IDebugDocumentText::GetLineOfPosition
-지정된 된 문자 위치에 줄 번호 및 필요에 따라 해당 하는 줄 내에서 문자 오프셋을 반환 합니다.  
+지정된 된 문자 위치에 줄 번호 및 필요에 따라 해당 하는 줄 내 문자 오프셋을 반환 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetLineOfPosition(  
    ULONG   cCharacterPosition,  
    ULONG*  pcLineNumber,  
@@ -40,13 +40,13 @@ HRESULT GetLineOfPosition(
   
 #### <a name="parameters"></a>매개 변수  
  `cCharacterPosition`  
- [in] 시작 문자 위치 범위의 위치입니다.  
+ [in] 시작 문자 위치 범위의 위치 합니다.  
   
  `pcLineNumber`  
- [out] 줄 번호의 범위입니다.  
+ [out] 범위의 줄 번호입니다.  
   
  `pcCharacterOffsetInLine`  
- [out에서] 줄 범위의 문자 오프셋 `pcLineNumber`합니다. 이 매개 변수가 `NULL`, 메서드는 값을 반환 하지 않습니다.  
+ [out에서] 줄 범위의 문자 오프셋 `pcLineNumber`합니다. 이 매개 변수가 `NULL`, 메서드 값을 반환 하지 않습니다.  
   
 ## <a name="return-value"></a>반환 값  
  이 메서드는 `HRESULT`를 반환합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
@@ -56,7 +56,7 @@ HRESULT GetLineOfPosition(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 이 메서드는 지정 된 문자 위치에 줄 번호 및 필요에 따라 해당 하는 줄 내에서 문자 오프셋을 반환 합니다.  
+ 이 메서드는 지정된 된 문자 위치에 줄 번호 및 필요에 따라 해당 하는 줄 내 문자 오프셋을 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugDocumentText 인터페이스](../../winscript/reference/idebugdocumenttext-interface.md)

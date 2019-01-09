@@ -20,17 +20,17 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9b07c5e08e4178c9c31045317627424f5192f5e1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a4b5416c6e37e59a60206bd21606b5214f05a269
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844148"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096930"
 ---
 # <a name="vbarray-expected"></a>VBArray가 필요합니다.
 필요한 Visual Basic safeArray에 없는 개체를 제공 했습니다.  
   
-```  
+```js
 new VBArray(safeArray);  
 ```  
   
