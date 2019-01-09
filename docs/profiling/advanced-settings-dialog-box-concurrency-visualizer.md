@@ -1,8 +1,6 @@
 ---
 title: 고급 설정 대화 상자(동시성 시각화 도우미) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.settings
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 60f4a038056d326cfb184cc3bb6876c411263ca1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7e6ead69099d02cf4eb62cdabcc285da8d3e90b7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884006"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914623"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>고급 설정 대화 상자(동시성 시각화 도우미)
 동시성 시각화 도우미의 **고급 설정** 대화 상자에서는 추적 수집 방법을 제어할 수 있습니다.  이 대화 상자에는 기호, 내 코드만, 버퍼링, 필터링, CLR 이벤트, 표식, 공급자 및 파일에 대한 탭이 포함됩니다.  

@@ -2,19 +2,18 @@
 title: Boost.Test for C++를 사용하는 방법
 ms.date: 01/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 author: mikeblome
 ms.author: mblome
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 65ee2d95d85c657057f7ef4494c19f8b5644513e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1428efdd19782803e3091e3d09073f2cd8daec0b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063249"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830848"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Visual Studio에서 Boost.Test for C++를 사용하는 방법
 
@@ -52,11 +51,11 @@ Boost.Test에는 [Boost](http://www.boost.org/)가 필요합니다! Boost가 설
 
 ## <a name="create-a-test-project-visual-studio-2017-version-155"></a>테스트 프로젝트를 만듭니다(Visual Studio 2017 버전 15.5).
 
-Visual Studio 2017 버전 15.5에서는 미리 구성된 테스트 프로젝트 또는 항목 템플릿을 Boost.Test에 사용할 수 없습니다. 따라서 테스트를 포함할 콘솔 응용 프로그램 프로젝트를 만들고 구성해야 합니다.
+Visual Studio 2017 버전 15.5에서는 미리 구성된 테스트 프로젝트 또는 항목 템플릿을 Boost.Test에 사용할 수 없습니다. 따라서 테스트를 포함할 콘솔 애플리케이션 프로젝트를 만들고 구성해야 합니다.
 
 1. **솔루션 탐색기**에서 솔루션 노드를 마우스 오른쪽 단추로 클릭하고 **추가** > **새 프로젝트**를 차례로 선택합니다.
 
-1. 왼쪽 창에서 **Visual C++** > **Windows 데스크톱**을 선택한 다음 **Windows 콘솔 응용 프로그램** 템플릿을 선택합니다.
+1. 왼쪽 창에서 **Visual C++** > **Windows 데스크톱**을 선택한 다음 **Windows 콘솔 애플리케이션** 템플릿을 선택합니다.
 
 1. 프로젝트 이름을 지정하고 **확인**을 선택합니다.
 

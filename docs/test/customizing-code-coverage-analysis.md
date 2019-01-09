@@ -2,25 +2,24 @@
 title: 코드 검사 분석 사용자 지정
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 09af57ca64524dafa506d57d486e9385a4c35a93
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e640fd14c6fd5b465a52ffe319814083958db676
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054945"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856529"
 ---
 # <a name="customize-code-coverage-analysis"></a>코드 검사 분석 사용자 지정
 
 기본적으로 코드 검사는 단위 테스트 중에 로드되는 모든 솔루션 어셈블리를 분석합니다. 이 기본 동작은 대부분은 문제 없이 작동하므로 사용하는 것이 좋습니다. 자세한 내용은 [코드 검사를 사용하여 테스트할 코드 범위 결정](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)을 참조하세요.
 
-코드 검사 결과에서 테스트 코드를 제외하고 응용 프로그램 코드만 포함하려면 테스트 클래스에 <xref:System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute> 특성을 추가합니다.
+코드 검사 결과에서 테스트 코드를 제외하고 애플리케이션 코드만 포함하려면 테스트 클래스에 <xref:System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute> 특성을 추가합니다.
 
 솔루션의 일부가 아닌 어셈블리를 포함하려면 이러한 어셈블리에 대한 *.pdb* 파일을 얻어서 어셈블리 *.dll* 파일과 동일한 폴더에 복사합니다.
 

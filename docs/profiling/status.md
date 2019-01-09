@@ -1,8 +1,6 @@
 ---
 title: 상태 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: ba656fa4-ef9d-4d8c-a3b6-739c3b5d23ae
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cd721dc6682057519821ee155ac8a5d803769dc
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: da6bd1e3884345428a235de61c0cf7ee77f68bf7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669329"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842514"
 ---
 # <a name="status"></a>상태
 *VSPerfCmd.exe* **Status** 옵션은 프로파일러의 상태에 대한 정보 및 현재 프로파일링되는 모든 프로세스를 표시합니다.  
@@ -31,7 +29,7 @@ VSPerfCmd.exe /Status
 #### <a name="parameters"></a>매개 변수  
  없음  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  **Status** 옵션은 프로파일러에 대한 다음 상태 정보를 표시합니다.  
   
  **출력 파일 이름**  
@@ -74,6 +72,6 @@ VSPerfCmd.exe /Status
   
 ## <a name="see-also"></a>참고 항목  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [독립 실행형 응용 프로그램 프로파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [ASP.NET 웹 응용 프로그램 프로파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [독립 실행형 애플리케이션 프로파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [ASP.NET 웹 애플리케이션 프로파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [서비스 프로파일링](../profiling/command-line-profiling-of-services.md)

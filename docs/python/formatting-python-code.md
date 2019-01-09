@@ -3,7 +3,6 @@ title: Python 코드 서식 지정
 description: Visual Studio는 간격, 명령문, 래핑 및 주석을 포함하여 Python 코드를 자동으로 다시 포맷할 수 있습니다.
 ms.date: 10/28/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 452dc1104147e5b29dd38790cbfa726ad0de7b1f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b830640284fe5b44a76b5f7d2424e2c1ccd24ea0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052195"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850218"
 ---
 # <a name="format-python-code"></a>Python 코드 서식 지정
 

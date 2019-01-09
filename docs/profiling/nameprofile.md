@@ -1,8 +1,6 @@
 ---
 title: NameProfile | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - NameProfile
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df6fce197a184167b66025191f43b07ebd08ffa7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fccec3a48b4ae4fa640f95b2884b11b61f2aae06
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819591"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846784"
 ---
 # <a name="nameprofile"></a>NameProfile
 `NameProfile` 함수는 지정된 프로세스 또는 스레드에 문자열을 할당합니다.  
@@ -75,7 +73,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 |NAME_ERROR_TEXTTRUNCATED|이름 텍스트가 null 문자를 포함하여 32자를 초과했으므로 잘렸습니다.|  
 |NAME_OK|이름이 등록되었습니다.|  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  하나의 이름만 각 프로세스 또는 스레드에 할당될 수 있습니다. 프로파일링 요소에 이름이 지정된 후 해당 요소의 NameProfile에 대한 후속 호출은 무시됩니다.  
   
  서로 다른 스레드 또는 프로세스에 같은 이름이 지정된 경우 보고서는 해당 이름을 가진 해당 수준에서 모든 요소의 데이터를 포함합니다.  
@@ -96,7 +94,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 |**라이브러리**|*VSPerf.lib* 사용|  
 |**유니코드**|`NameProfileW`(유니코드) 및 `NameProfileA`(ANSI)로 구현됐습니다.|  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드에서는 NameProfile 함수 호출을 보여 줍니다. 예제에서는 코드에서 ANSI 사용 함수를 호출할지 여부를 결정하도록 Win32 문자열 매크로 및 ANSI에 대한 컴파일러 설정의 사용을 가정합니다.  
   
 ```cpp  

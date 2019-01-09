@@ -3,7 +3,6 @@ title: 테스트 탐색기를 사용하여 단위 테스트 실행, 빌드 및 �
 description: Visual Studio에서 테스트 탐색기를 사용하여 테스트를 실행하는 방법을 알아봅니다. 이 항목에서는 빌드 후 자동 테스트 실행을 사용하도록 설정하고, 테스트 결과를 보고, 테스트 목록을 그룹화 및 필터링하고, 재생 목록을 만들고, 테스트 를 디버그하고, 테스트 바로 가기를 사용하는 방법을 설명합니다.
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 f1_keywords:
 - vs.unittesting.testexplorer.overview
@@ -12,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 177882e93377e428814d6a529c9826f4bf9e1ea2
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 65ba6a0528dee5a0b430787ee4332ca3dab5bdec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740409"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858073"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>테스트 탐색기를 사용하여 단위 테스트 실행
 

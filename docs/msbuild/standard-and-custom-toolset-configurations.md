@@ -1,8 +1,6 @@
 ---
 title: 표준 및 사용자 지정 도구 집합 구성 | Microsoft Docs
-ms.custom: ''
 ms.date: 01/31/2018
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, custom toolset configurations
@@ -13,15 +11,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e9f851734a4066e1f6ab7956d124478e0cde76c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6a834a5b4b1a380b23ad9edfda9ea42f40e20469
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815483"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53839523"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>표준 및 사용자 지정 도구 집합 구성
-MSBuild 도구 집합은 응용 프로그램 프로젝트를 빌드하는 데 사용할 수 있는 작업, 대상 및 도구에 대한 참조를 포함합니다. MSBuild는 표준 도구 집합을 포함하지만 사용자 지정 도구 집합을 만들 수도 있습니다. 도구 집합을 지정하는 방법에 대한 내용은 [도구 집합(ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)을 참조하세요.  
+MSBuild 도구 집합은 애플리케이션 프로젝트를 빌드하는 데 사용할 수 있는 작업, 대상 및 도구에 대한 참조를 포함합니다. MSBuild는 표준 도구 집합을 포함하지만 사용자 지정 도구 집합을 만들 수도 있습니다. 도구 집합을 지정하는 방법에 대한 내용은 [도구 집합(ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)을 참조하세요.  
   
 ## <a name="standard-toolset-configurations"></a>표준 도구 집합 구성  
  MSBuild 15.0은 다음 표준 도구 집합을 포함합니다.  

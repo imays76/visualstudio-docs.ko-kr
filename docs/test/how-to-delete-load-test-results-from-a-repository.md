@@ -14,13 +14,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: e2a7df778ff506c76513af6e6fe926a193f6a18e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1165da402fc10f1562155ef6e4aaff25249b17a6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065276"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846850"
 ---
 # <a name="how-to-delete-load-test-results-from-a-repository"></a>방법: 리포지토리에서 부하 테스트 결과 삭제
 

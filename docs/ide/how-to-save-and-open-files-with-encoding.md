@@ -2,7 +2,6 @@
 title: '방법: 인코딩을 사용하여 파일 저장 및 열기'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Unicode, bi-directional language support
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6298e603589d41a6a082b6fe2c1916b3cf8a2a84
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 38d52cdee3ee0f6ccbdd378e4fb70e356d5826c2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943061"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869572"
 ---
 # <a name="how-to-save-and-open-files-with-encoding"></a>방법: 인코딩을 사용하여 파일 저장 및 열기
 
@@ -62,4 +61,4 @@ ms.locfileid: "31943061"
 
 - [인코딩 및 줄 바꿈](encodings-and-line-breaks.md)
 - [인코딩 및 Windows Forms 전역화](/dotnet/framework/winforms/advanced/encoding-and-windows-forms-globalization)
-- [세계화 및 지역화 응용 프로그램](../ide/globalizing-and-localizing-applications.md)
+- [세계화 및 지역화 애플리케이션](../ide/globalizing-and-localizing-applications.md)

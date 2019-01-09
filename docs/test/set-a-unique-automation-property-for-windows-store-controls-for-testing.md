@@ -2,23 +2,22 @@
 title: 테스트를 위해 UWP 컨트롤에 대한 고유 자동화 속성 설정
 ms.date: 05/31/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: 1cc8986c3101bb2048e0cd4ace739974031344ed
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 1498da202cb6964ced513c6fa42804ac6841c0ef
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894783"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863737"
 ---
 # <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>테스트를 위해 UWP 컨트롤에 대한 고유 자동화 속성 설정
 
-XAML 기반 UWP 응용 프로그램에 대한 코딩된 UI 테스트를 실행하려는 경우, 각 컨트롤을 고유한 자동화 속성으로 식별해야 합니다. 응용 프로그램에서 XAML 컨트롤의 형식에 따라 고유한 자동화 속성을 할당할 수 있습니다.
+XAML 기반 UWP 애플리케이션에 대한 코딩된 UI 테스트를 실행하려는 경우, 각 컨트롤을 고유한 자동화 속성으로 식별해야 합니다. 애플리케이션에서 XAML 컨트롤의 형식에 따라 고유한 자동화 속성을 할당할 수 있습니다.
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 

@@ -2,7 +2,6 @@
 title: 게시 설정을 가져와서 Azure에 게시
 description: Visual Studio에서 Azure App Service로 애플리케이션을 배포하기 위한 게시 프로필 만들기 및 가져오기
 ms.date: 05/07/2018
-ms.technology: vs-ide-deployment
 ms.topic: tutorial
 helpviewer_keywords:
 - deployment, publish settings
@@ -11,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 804965df5142ddb18c1857a2540c5c69c08c4f9a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b0af5732e80098cabeda8f11901e968ebb3d4a9a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058502"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853946"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Visual Studio에서 게시 설정을 가져와서 Azure App Service에 애플리케이션 게시
 

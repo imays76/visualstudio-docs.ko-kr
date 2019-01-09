@@ -1,20 +1,18 @@
 ---
 title: Windows 8 및 Windows Server 2012 애플리케이션의 성능 도구 | Microsoft Docs
-ms.custom: ''
 ms.date: 06/19/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca8434f6aaf0137da51612665833150b783d01d1
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: 9fe876d5244ad18d1d2635caa1717ca9eb0e29ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592939"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832296"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 및 Windows Server 2012 애플리케이션의 성능 도구
 
@@ -39,7 +37,7 @@ UWP 앱을 프로파일링하는 경우 다음 프로파일링 기능과 옵션�
 
 UWP 앱을 프로파일링하는 방법에 대한 자세한 내용은 다음 문서를 참조하세요.
 
-- [로컬 컴퓨터에서 UWP 앱 실행](../debugger/run-windows-store-apps-on-the-local-machine.md)
+- [로컬 컴퓨터에서 UWP 앱 실행](/visualstudio/debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml)
 - [원격 컴퓨터에서 UWP 앱 실행](../debugger/run-windows-store-apps-on-a-remote-machine.md)
 - [프로파일링 도구 살펴보기](profiling-feature-tour.md)
 - [JavaScript 메모리](../profiling/javascript-memory.md)

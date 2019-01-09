@@ -3,7 +3,6 @@ title: Python 애플리케이션 프로젝트 관리
 description: Visual Studio의 프로젝트는 파일 간의 종속성과 애플리케이션의 관계 복잡성을 관리합니다.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,22 +11,22 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6b0d31905cd0dfb835275d6fd0bbe8f153253b56
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b30929c5e5c7be49b5817f520a4f6402ceff67b4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068288"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825294"
 ---
 # <a name="python-projects-in-visual-studio"></a>Visual Studio의 Python 프로젝트
 
-일반적으로 Python 응용 프로그램은 폴더 및 파일만 사용하여 정의되지만 응용 프로그램이 커질수록 이 구조는 복잡해질 수 있으며 자동 생성된 파일, 웹 응용 프로그램용 JavaScript 등을 포함할 수 있습니다. Visual Studio 프로젝트는 이러한 복잡성을 관리하는 데 도움이 됩니다. 프로젝트(*.pyproj* 파일)는 프로젝트와 관련된 모든 소스 및 콘텐츠 파일을 식별하며 각 파일에 대한 빌드 정보를 포함하고 소스 제어 시스템과 통합할 정보를 유지 관리하며 응용 프로그램을 논리 구성 요소로 구성하는 데 도움을 줍니다.
+일반적으로 Python 애플리케이션은 폴더 및 파일만 사용하여 정의되지만 애플리케이션이 커질수록 이 구조는 복잡해질 수 있으며 자동 생성된 파일, 웹 애플리케이션용 JavaScript 등을 포함할 수 있습니다. Visual Studio 프로젝트는 이러한 복잡성을 관리하는 데 도움이 됩니다. 프로젝트(*.pyproj* 파일)는 프로젝트와 관련된 모든 소스 및 콘텐츠 파일을 식별하며 각 파일에 대한 빌드 정보를 포함하고 소스 제어 시스템과 통합할 정보를 유지 관리하며 애플리케이션을 논리 구성 요소로 구성하는 데 도움을 줍니다.
 
 ![솔루션 탐색기에서 Python 프로젝트](media/projects-solution-explorer.png)
 
 또한 프로젝트는 항상 Visual Studio *솔루션* 내에서 관리되므로 서로를 참조할 수 있는 프로젝트를 여러 개 포함할 수 있습니다. 예를 들어 Python 프로젝트에서 확장 모듈을 구현하는 C++ 프로젝트를 참조할 수 있습니다. 이 관계를 통해 Visual Studio에서는 Python 프로젝트 디버그를 시작할 때 자동으로 C++ 프로젝트를 빌드합니다(필요한 경우). (일반적인 설명은 [Visual Studio의 솔루션 및 프로젝트](../ide/solutions-and-projects-in-visual-studio.md)를 참조하세요.)
 
-Visual Studio는 기존 폴더 트리에서 프로젝트를 만드는 템플릿과 깨끗하고 빈 프로젝트를 만드는 템플릿을 비롯하여 다양한 응용 프로그램 구조를 신속하게 설정할 수 있도록 해주는 다양한 Python 프로젝트 템플릿을 제공합니다. 인덱스는 [프로젝트 템플릿](#project-templates)을 참조하세요.
+Visual Studio는 기존 폴더 트리에서 프로젝트를 만드는 템플릿과 깨끗하고 빈 프로젝트를 만드는 템플릿을 비롯하여 다양한 애플리케이션 구조를 신속하게 설정할 수 있도록 해주는 다양한 Python 프로젝트 템플릿을 제공합니다. 인덱스는 [프로젝트 템플릿](#project-templates)을 참조하세요.
 
 <a name="lightweight-usage-project-free"></a>
 
@@ -43,7 +42,7 @@ Visual Studio는 기존 폴더 트리에서 프로젝트를 만드는 템플릿�
 
 ## <a name="add-files-assign-a-startup-file-and-set-environments"></a>파일 추가. 시작 파일 할당. 환경 설정
 
-응용 프로그램을 개발할 때 일반적으로 다양한 유형의 새 파일을 프로젝트에 추가해야 합니다. 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가** > **기존 항목**을 선택하여 추가할 파일을 찾거나 **추가** > **새 항목**을 선택하여 다양한 항목 템플릿이 들어 있는 대화 상자를 표시하면 이러한 파일을 추가할 수 있습니다. [항목 템플릿](python-item-templates.md) 참조에 설명된 대로 옵션에는 빈 Python 파일, Python 클래스, 단위 테스트 및 웹 응용 프로그램과 관련된 다양한 파일이 포함됩니다. 테스트 프로젝트를 통해 이러한 옵션을 시도해 보고 사용자의 Visual Studio 버전에서 사용 가능한 항목을 알아볼 수 있습니다.
+애플리케이션을 개발할 때 일반적으로 다양한 유형의 새 파일을 프로젝트에 추가해야 합니다. 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가** > **기존 항목**을 선택하여 추가할 파일을 찾거나 **추가** > **새 항목**을 선택하여 다양한 항목 템플릿이 들어 있는 대화 상자를 표시하면 이러한 파일을 추가할 수 있습니다. [항목 템플릿](python-item-templates.md) 참조에 설명된 대로 옵션에는 빈 Python 파일, Python 클래스, 단위 테스트 및 웹 애플리케이션과 관련된 다양한 파일이 포함됩니다. 테스트 프로젝트를 통해 이러한 옵션을 시도해 보고 사용자의 Visual Studio 버전에서 사용 가능한 항목을 알아볼 수 있습니다.
 
 각 Python 프로젝트에는 **솔루션 탐색기**에서 굵게 표시된 시작 파일이 하나씩 할당되어 있습니다. 시작 파일은 디버깅을 시작하거나(**F5** 또는 **디버그** > **디버깅 시작**) **대화형** 창에서 프로젝트를 실행할 때(**Shift**+**Alt**+**F5** 또는 **디버그** > **Python 대화형에서 프로젝트 실행**) 실행됩니다. 파일을 변경하려면 새 파일을 마우스 오른쪽 단추로 클릭하고 **시작 파일로 설정**을 선택합니다.
 
@@ -69,14 +68,14 @@ Visual Studio는 처음부터 작성하거나 기존 코드에서 작성하는 �
 | 템플릿 | 설명 |
 | --- | --- |
 | [**기존 Python 코드에서**](#create-project-from-existing-files) | 폴더 구조의 기존 Python 코드에서 Visual Studio 프로젝트를 만듭니다.  |
-| **Python 응용 프로그램** | 하나의 비어있는 소스 파일을 포함하는 새로운 Python 응용 프로그램에 대한 기본 프로젝트 구조입니다. 기본적으로 프로젝트는 기본 글로벌 환경의 콘솔 인터프리터에서 실행되며 [서로 다른 환경을 할당](selecting-a-python-environment-for-a-project.md)하여 변경할 수 있습니다. |
+| **Python 애플리케이션** | 하나의 비어있는 소스 파일을 포함하는 새로운 Python 애플리케이션에 대한 기본 프로젝트 구조입니다. 기본적으로 프로젝트는 기본 글로벌 환경의 콘솔 인터프리터에서 실행되며 [서로 다른 환경을 할당](selecting-a-python-environment-for-a-project.md)하여 변경할 수 있습니다. |
 | [**Azure Cloud Service**](python-azure-cloud-service-project-template.md) | Python으로 작성된 Azure Cloud Service에 대한 프로젝트입니다. |
 | [**웹 프로젝트**](python-web-application-project-templates.md) | Bottle, Django 및 Flask를 비롯한 다양한 프레임워크를 기반으로 하는 웹앱에 대한 프로젝트입니다. |
-| **IronPython 응용 프로그램** | Python 응용 프로그램 템플릿과 유사하지만 .NET interop 및 .NET 언어로 혼합 모드 디버깅을 기본적으로 사용하는 IronPython을 사용합니다. |
-| **IronPython WPF 응용 프로그램** | 응용 프로그램의 사용자 인터페이스에 대한 Windows Presentation Foundation XAML 파일에 IronPython을 사용하는 프로젝트 구조입니다. Visual Studio는 XAML UI 디자이너를 제공하고 코드 숨김은 Python으로 작성할 수 있으며 응용 프로그램은 콘솔을 표시하지 않고 실행됩니다. |
-| **IronPython Silverlight 웹 페이지** | Silverlight를 사용하여 브라우저에서 실행되는 IronPython 프로젝트입니다. 응용 프로그램의 Python 코드는 웹 페이지에 스크립트로 포함됩니다. 상용구 스크립트 태그는 Silverlight 내부에서 실행되는 IronPython을 초기화하는 일부 JavaScript 코드를 가져오며, 여기서 Python 코드가 DOM과 상호 작용할 수 있습니다. |
-| **IronPython Windows Forms 응용 프로그램** | Windows Forms에서 코드를 사용하여 만든 UI와 IronPython을 사용하는 프로젝트 구조입니다. 콘솔을 표시하지 않고 응용 프로그램을 실행합니다. |
-| **백그라운드 응용 프로그램(IoT)** | 디바이스에서 백그라운드 서비스로 실행되도록 Python 프로젝트 배포를 지원합니다. 자세한 내용은 [Windows IoT 개발자 센터](https://dev.windows.com/en-us/iot)를 참조하세요. |
+| **IronPython 애플리케이션** | Python 애플리케이션 템플릿과 유사하지만 .NET interop 및 .NET 언어로 혼합 모드 디버깅을 기본적으로 사용하는 IronPython을 사용합니다. |
+| **IronPython WPF 애플리케이션** | 애플리케이션의 사용자 인터페이스에 대한 Windows Presentation Foundation XAML 파일에 IronPython을 사용하는 프로젝트 구조입니다. Visual Studio는 XAML UI 디자이너를 제공하고 코드 숨김은 Python으로 작성할 수 있으며 애플리케이션은 콘솔을 표시하지 않고 실행됩니다. |
+| **IronPython Silverlight 웹 페이지** | Silverlight를 사용하여 브라우저에서 실행되는 IronPython 프로젝트입니다. 애플리케이션의 Python 코드는 웹 페이지에 스크립트로 포함됩니다. 상용구 스크립트 태그는 Silverlight 내부에서 실행되는 IronPython을 초기화하는 일부 JavaScript 코드를 가져오며, 여기서 Python 코드가 DOM과 상호 작용할 수 있습니다. |
+| **IronPython Windows Forms 애플리케이션** | Windows Forms에서 코드를 사용하여 만든 UI와 IronPython을 사용하는 프로젝트 구조입니다. 콘솔을 표시하지 않고 애플리케이션을 실행합니다. |
+| **백그라운드 애플리케이션(IoT)** | 디바이스에서 백그라운드 서비스로 실행되도록 Python 프로젝트 배포를 지원합니다. 자세한 내용은 [Windows IoT 개발자 센터](https://dev.windows.com/en-us/iot)를 참조하세요. |
 | **Python 확장 모듈** | 이 템플릿은 Python 워크로드와 함께 **Python 네이티브 개발 도구**를 Visual Studio 2017에 설치한 경우([설치](installing-python-support-in-visual-studio.md) 참조) Visual C++ 아래에 나타납니다. 여기서는 [Python용 C++ 확장 만들기](working-with-c-cpp-python-in-visual-studio.md)에 설명된 대로 C++ 확장 DLL의 핵심 구조를 제공합니다. |
 
 > [!Note]
@@ -93,7 +92,7 @@ Visual Studio는 처음부터 작성하거나 기존 코드에서 작성하는 �
 
 ## <a name="linked-files"></a>연결된 파일
 
-연결된 파일은 프로젝트로 가져온 파일이지만 일반적으로 응용 프로그램의 프로젝트 폴더 외부에 상주합니다. **솔루션 탐색기**에 오버레이드된 바로 가기 아이콘이 있는 일반 파일로 나타납니다. ![연결된 파일 아이콘](media/projects-linked-file-icon.png)
+연결된 파일은 프로젝트로 가져온 파일이지만 일반적으로 애플리케이션의 프로젝트 폴더 외부에 상주합니다. **솔루션 탐색기**에 오버레이드된 바로 가기 아이콘이 있는 일반 파일로 나타납니다. ![연결된 파일 아이콘](media/projects-linked-file-icon.png)
 
 연결된 파일은 `<Compile Include="...">` 요소를 사용하여 *.pyproj* 파일에 지정됩니다. 연결된 파일은 디렉터리 구조 외부에 상대 경로를 사용하는 경우 암시적이고, **솔루션 탐색기** 내에서 경로를 사용하는 경우 명시적입니다.
 
@@ -140,7 +139,7 @@ Visual Studio 프로젝트는 프로젝트 및 확장에 참조 추가를 지원
 
 IronPython으로 작업하는 경우 .NET 어셈블리에 참조를 추가하여 IntelliSense를 사용하도록 설정할 수 있습니다. 사용자 솔루션에 있는 .NET 프로젝트의 경우 Python 프로젝트에서 **참조** 노드를 마우스 오른쪽 단추로 클릭하고 **참조 추가**, **프로젝트** 탭을 차례로 선택한 후 원하는 프로젝트를 찾습니다. 별도로 다운로드한 DLL의 경우 원하는 대신 **찾아보기** 탭을 선택하여 원하는 DLL을 찾아봅니다.
 
-IronPython의 참조는 `clr.AddReference('<AssemblyName>')`이 호출될 때까지 사용할 수 없으므로 어셈블리(일반적으로 코드의 시작 부분)에도 적절한 `clr.AddReference` 호출을 추가해야 합니다. 예를 들어 Visual Studio의 **IronPython Windows Forms 응용 프로그램** 프로젝트 템플릿에서 만든 코드는 파일의 맨 위에 두 개의 호출을 포함합니다.
+IronPython의 참조는 `clr.AddReference('<AssemblyName>')`이 호출될 때까지 사용할 수 없으므로 어셈블리(일반적으로 코드의 시작 부분)에도 적절한 `clr.AddReference` 호출을 추가해야 합니다. 예를 들어 Visual Studio의 **IronPython Windows Forms 애플리케이션** 프로젝트 템플릿에서 만든 코드는 파일의 맨 위에 두 개의 호출을 포함합니다.
 
 ```python
 import clr
