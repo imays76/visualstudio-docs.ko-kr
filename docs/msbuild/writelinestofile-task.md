@@ -1,8 +1,6 @@
 ---
 title: WriteLinesToFile 작업 | Microsoft Docs
-ms.custom: ''
 ms.date: 09/20/2018
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#WriteLinesToFile
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 909c35ca889295385cae98d51a81b22b4f7eb5d8
-ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
+ms.openlocfilehash: 6e41cc7e7be90497995bbadaced4a002ad0bd42d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47228840"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908790"
 ---
 # <a name="writelinestofile-task"></a>WriteLinesToFile 작업
 지정된 항목의 경로를 지정된 텍스트 파일에 씁니다.  
@@ -41,12 +39,12 @@ ms.locfileid: "47228840"
 |`Encoding`|선택적 `String` 매개 변수입니다.<br /><br /> 문자 인코딩을 선택합니다(예: "Unicode").  <xref:System.Text.Encoding>을 참조하세요.|  
 |`WriteOnlyWhenDifferent`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`이면, 지정한 대상 파일(있는 경우)을 먼저 읽고 작업에서 기록했어야 하는 내용과 비교합니다. 동일한 경우 파일이 디스크에 기록되지 않고 타임스탬프가 유지됩니다.|  
 
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  `Overwrite`가 `true`인 경우 새 파일을 만들고 파일에 내용을 쓴 다음 파일을 닫습니다. 대상 파일이 이미 있으면 덮어씁니다. `Overwrite`가 `false`인 경우 콘텐츠를 파일에 추가합니다. 대상 파일이 아직 없으면 만듭니다.  
   
  이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension 기본 클래스](../msbuild/taskextension-base-class.md)를 참조하세요.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 `WriteLinesToFile` 작업을 사용하여 `MyItems` 항목 컬렉션의 항목 경로를 `MyTextFile` 항목 컬렉션에서 지정한 파일에 씁니다.  
   
 ```xml  

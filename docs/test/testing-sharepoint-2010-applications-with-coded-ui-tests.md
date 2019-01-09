@@ -2,23 +2,22 @@
 title: 코딩된 UI 테스트를 사용하여 SharePoint 애플리케이션 테스트
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 91d17857f1d20508041ad6c5daa90a962d6d30e6
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 32b408743a2017b6fe83c28659496844b204444f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895446"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910189"
 ---
-# <a name="test-sharepoint-applications-with-coded-ui-tests"></a>코딩된 UI 테스트를 사용하여 SharePoint 응용 프로그램 테스트
+# <a name="test-sharepoint-applications-with-coded-ui-tests"></a>코딩된 UI 테스트를 사용하여 SharePoint 애플리케이션 테스트
 
-SharePoint 응용 프로그램에 코딩된 UI 테스트를 포함하면 해당 UI 컨트롤을 포함해서 전체 응용 프로그램이 올바르게 작동하는지 확인할 수 있습니다. 코딩된 UI 테스트는 또한 사용자 인터페이스에서 값 및 논리의 유효성을 검사할 수 있습니다.
+SharePoint 애플리케이션에 코딩된 UI 테스트를 포함하면 해당 UI 컨트롤을 포함해서 전체 애플리케이션이 올바르게 작동하는지 확인할 수 있습니다. 코딩된 UI 테스트는 또한 사용자 인터페이스에서 값 및 논리의 유효성을 검사할 수 있습니다.
 
 코딩된 UI 테스트를 사용하는 혜택에 대한 자세한 내용은 [UI 자동화를 사용하여 코드 테스트](../test/use-ui-automation-to-test-your-code.md)를 참조하세요.
 
@@ -30,7 +29,7 @@ SharePoint 응용 프로그램에 코딩된 UI 테스트를 포함하면 해당 
 
 ## <a name="create-a-coded-ui-test-for-a-sharepoint-app"></a>SharePoint 응용 프로그램에 대해 코딩된 UI 테스트 만들기
 
-SharePoint 응용 프로그램에 대한 [코딩된 UI 테스트 만들기](../test/use-ui-automation-to-test-your-code.md)는 다른 형식의 응용 프로그램에 대한 테스트 만들기와 동일합니다. 기록 및 재생은 **웹 편집** 인터페이스의 모든 컨트롤에 대해 지원됩니다. 범주 및 웹 파트 선택 인터페이스는 모두 표준 웹 컨트롤입니다.
+SharePoint 애플리케이션에 대한 [코딩된 UI 테스트 만들기](../test/use-ui-automation-to-test-your-code.md)는 다른 형식의 애플리케이션에 대한 테스트 만들기와 동일합니다. 기록 및 재생은 **웹 편집** 인터페이스의 모든 컨트롤에 대해 지원됩니다. 범주 및 웹 파트 선택 인터페이스는 모두 표준 웹 컨트롤입니다.
 
 ![SharePoint 웹 파트](../test/media/cuit_sharepoint.png)
 
@@ -42,7 +41,7 @@ SharePoint 응용 프로그램에 대한 [코딩된 UI 테스트 만들기](../t
 SharePoint 응용 프로그램에서 일부 Office 웹 파트에 대해 자동화를 설정하려면 코드를 약간 수정해야 합니다.
 
 > [!NOTE]
-> SharePoint 응용 프로그램에서 Visio 및 PowerPoint 컨트롤 테스트는 지원되지 않습니다.
+> SharePoint 애플리케이션에서 Visio 및 PowerPoint 컨트롤 테스트는 지원되지 않습니다.
 
 ### <a name="excel-cell-controls"></a>Excel 셀 컨트롤
 

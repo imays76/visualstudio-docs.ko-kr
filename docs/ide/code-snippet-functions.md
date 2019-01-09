@@ -2,7 +2,6 @@
 title: 코드 조각 함수
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - code snippets [Visual Studio], functions
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f3362bae41b540ee097e1109848680a11d37a272
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 7cf31fed530447af986d96418d06cf46f02b14b1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512137"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907815"
 ---
 # <a name="code-snippet-functions"></a>코드 조각 함수
 
@@ -35,7 +34,7 @@ ms.locfileid: "39512137"
 |`ClassName()`|삽입된 코드 조각을 포함하는 클래스의 이름을 반환합니다.|C#|
 |`SimpleTypeName(` `TypeName` `)`|*TypeName* 매개 변수를 코드 조각이 호출되는 컨텍스트에서 가장 단순한 형태로 줄입니다.|C#|
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 `GenerateSwitchCases` 함수를 사용하는 방법을 보여 줍니다. 이 코드 조각이 삽입되고 열거형이 `$switch_on$` 리터럴에 입력되면 `$cases$` 리터럴은 열거형의 모든 값에 대해 `case` 문을 생성합니다.
 
@@ -77,7 +76,7 @@ ms.locfileid: "39512137"
 </CodeSnippets>
 ```
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 `ClassName` 함수를 사용하는 방법을 보여 줍니다. 이 코드 조각이 삽입되면 `$classname$` 리터럴은 코드 파일의 해당 위치에 있는 바깥쪽 클래스의 이름으로 바뀝니다.
 
@@ -124,7 +123,7 @@ ms.locfileid: "39512137"
 </CodeSnippets>
 ```
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 이 예제는 `SimpleTypeName` 함수를 사용하는 방법을 보여 줍니다. 이 코드 조각이 코드 파일에 삽입되면 코드 조각이 호출된 컨텍스트에서 `$SystemConsole$` 리터럴이 가장 간단한 형태의 <xref:System.Console> 형식으로 바뀝니다.
 

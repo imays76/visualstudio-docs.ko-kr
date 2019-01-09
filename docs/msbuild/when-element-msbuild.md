@@ -1,8 +1,6 @@
 ---
 title: When 요소(MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 03/13/2017
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#When
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a4a9a68b00d4eed998a5ba742e640cd27db74cc
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 6b6ab2d9520e915993fce877d9c3055972c5ab8c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152430"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932309"
 ---
 # <a name="when-element-msbuild"></a>When 요소(MSBuild)
 `Choose` 요소에서 선택할 수 있는 가능한 코드 블록을 지정합니다.  
@@ -72,12 +70,12 @@ ms.locfileid: "39152430"
 |-------------|-----------------|  
 |[Choose 요소(MSBuild)](../msbuild/choose-element-msbuild.md)|자식 요소를 평가하여 실행할 코드의 한 섹션을 선택합니다.|  
 
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  `Condition` 특성이 true로 평가되면 `When` 요소의 자식 `ItemGroup` 및 `PropertyGroup` 요소가 실행되고 모든 후속 `When` 요소가 생략됩니다.  
 
  `Choose`, `When` 및 `Otherwise` 요소는 몇 가지 가능한 대안 중에서 실행할 코드의 한 섹션을 선택하는 방법을 제공하기 위해 함께 사용됩니다. 자세한 내용은 [조건부 구문](../msbuild/msbuild-conditional-constructs.md)을 참조하세요.  
 
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 프로젝트에서는 `Choose` 요소를 사용하여 설정할 `When` 요소의 속성 값 집합을 선택합니다. 두 `When` 요소의 `Condition` 특성이 모두 `false`로 평가되면 `Otherwise` 요소의 속성 값이 설정됩니다.  
 
 ```xml  

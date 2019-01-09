@@ -2,7 +2,6 @@
 title: 경고 및 오류 | Microsoft IntelliTest 개발자 테스트 도구
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Warnings and errors
@@ -11,12 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: efb82a7419ba58c27ccab864d2360538075a1089
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: fe52e31c7401acd6bc10d469d98eabf2916f84be
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000616"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899027"
 ---
 # <a name="warnings-and-errors"></a>경고 및 오류
 
@@ -92,7 +91,7 @@ for (int i=0;
 
 IntelliTest는 [제약 조건 해결기](input-generation.md#constraint-solver)를 사용하여 새 테스트 입력을 계산합니다. 제약 조건 해결은 시간이 오래 걸리는 프로세스일 수 있으므로 IntelliTest를 사용하여 경계를 구성할 수 있습니다(특히 **MaxConstraintSolverTime**).
 
-대부분의 응용 프로그램에서는 시간 제한을 크게 늘려도 검사 성능은 향상되지 않습니다. 그 이유는 대부분의 시간 제한은 솔루션이 없는 제약 조건 시스템에서 발생하기 때문입니다. 그러나 IntelliTest는 시간 제한을 초래하는 모든 가능한 솔루션을 시도해야 일관성이 없는지 확인할 수 있습니다.
+대부분의 애플리케이션에서는 시간 제한을 크게 늘려도 검사 성능은 향상되지 않습니다. 그 이유는 대부분의 시간 제한은 솔루션이 없는 제약 조건 시스템에서 발생하기 때문입니다. 그러나 IntelliTest는 시간 제한을 초래하는 모든 가능한 솔루션을 시도해야 일관성이 없는지 확인할 수 있습니다.
 
 <a name="maxconditions-exceeded"></a>
 ## <a name="maxconditions-exceeded"></a>MaxConditions 초과
@@ -283,7 +282,7 @@ IntelliTest가 두 항목의 상호 작용을 탐색하도록 하려면 다른 �
 <a name="external-method-called"></a>
 ## <a name="external-method-called"></a>외부 메서드 호출
 
-IntelliTest는 .NET 응용 프로그램의 실행을 모니터링하여 [테스트 입력을 생성](input-generation.md)합니다.
+IntelliTest는 .NET 애플리케이션의 실행을 모니터링하여 [테스트 입력을 생성](input-generation.md)합니다.
 IntelliTest는 .NET 언어로 작성되지 않은 코드에 대한 의미 있는 테스트 입력을 생성할 수 없습니다.
 
 이 경고는 계측된 코드가 IntelliTest에서 분석할 수 없는 비관리 네이티브 메서드를 호출할 경우 표시됩니다. IntelliTest가 두 항목의 상호 작용을 탐색하도록 하려면 관리되지 않는 메서드를 모방해야 합니다.
@@ -291,7 +290,7 @@ IntelliTest는 .NET 언어로 작성되지 않은 코드에 대한 의미 있는
 <a name="uninstrumentable-method-called"></a>
 ## <a name="uninstrumentable-method-called"></a>계측할 수 없는 메서드 호출
 
-IntelliTest는 .NET 응용 프로그램의 실행을 모니터링하여 [테스트 입력을 생성](input-generation.md)합니다. 그러나 기술적인 이유로 IntelliTest가 모니터링할 수 없는 몇 가지 메서드가 있습니다. 예를 들어 IntelliTest는 정적 생성자를 모니터링할 수 없습니다.
+IntelliTest는 .NET 애플리케이션의 실행을 모니터링하여 [테스트 입력을 생성](input-generation.md)합니다. 그러나 기술적인 이유로 IntelliTest가 모니터링할 수 없는 몇 가지 메서드가 있습니다. 예를 들어 IntelliTest는 정적 생성자를 모니터링할 수 없습니다.
 
 이 경고는 계측된 코드가 IntelliTest에서 모니터링할 수 없는 메서드를 호출할 경우 표시됩니다.
 

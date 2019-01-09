@@ -3,7 +3,6 @@ title: Python용 C++ 확장명 작성
 description: 혼합 모드 디버깅을 비롯하여 Visual Studio, CPython 및 PyBind11을 사용하여 Python에 대한 C++ 확장을 만드는 연습 과정입니다.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 437cd7f926465b4a9c4986f0eeb4b30e53936895
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 8703174b2eef580b34f48c090802822bbf6cc6c9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053479"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947844"
 ---
 # <a name="create-a-c-extension-for-python"></a>Python용 C++ 확장 만들기
 
@@ -46,13 +45,13 @@ C++(또는 C)로 작성된 모듈은 하위 수준 운영 체제 기능에 대�
     ![Python 네이티브 개발 도구 옵션 선택](media/cpp-install-native.png)
 
     > [!Tip]
-    > **데이터 과학 및 분석 응용 프로그램** 워크로드 설치에는 Python 및 **Python 네이티브 개발 도구** 옵션이 기본적으로 포함됩니다.
+    > **데이터 과학 및 분석 애플리케이션** 워크로드 설치에는 Python 및 **Python 네이티브 개발 도구** 옵션이 기본적으로 포함됩니다.
 
 다른 버전의 Visual Studio 사용을 포함한 자세한 내용은 [Visual Studio용 Python 지원 설치](installing-python-support-in-visual-studio.md)를 참조하세요. Python을 별도로 설치하는 경우 설치 관리자의 **고급 옵션**에서 **디버깅 기호 다운로드** 및 **디버그 버전의 이진 파일 다운로드**를 선택해야 합니다. 이 옵션은 디버그 빌드를 수행하도록 선택할 경우 필요한 디버그 라이브러리를 사용할 수 있도록 합니다.
 
-## <a name="create-the-python-application"></a>Python 응용 프로그램 만들기
+## <a name="create-the-python-application"></a>Python 애플리케이션 만들기
 
-1. **파일** > **새로 만들기** > **프로젝트**를 선택하여 Visual Studio에서 새 Python 프로젝트를 만듭니다. “Python”을 검색하고 **Python 응용 프로그램** 템플릿을 선택한 다음 적합한 이름과 위치를 지정하고 **확인**을 선택합니다.
+1. **파일** > **새로 만들기** > **프로젝트**를 선택하여 Visual Studio에서 새 Python 프로젝트를 만듭니다. “Python”을 검색하고 **Python 애플리케이션** 템플릿을 선택한 다음 적합한 이름과 위치를 지정하고 **확인**을 선택합니다.
 
 1. C++로 작업하려면 32비트 Python 인터프리터(Python 3.6 이상 권장)를 사용해야 합니다. Visual Studio의 **솔루션 탐색기** 창에서 프로젝트 노드를 확장한 다음, **Python 환경** 노드를 확장합니다. 32비트 환경이 기본값으로 표시(굵게 표시 또는 **전역 기본값** 레이블 지정)되지 않는 경우 [프로젝트에 대한 Python 환경 선택](selecting-a-python-environment-for-a-project.md)의 지침을 따르세요. 32비트 인터프리터가 설치되지 않은 경우 [Python 인터프리터 설치](installing-python-interpreters.md)를 참조하세요.
 

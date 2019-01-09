@@ -2,7 +2,6 @@
 title: 모듈 목록 표시 명령
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.listmodules
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54e975cf886f0bb8392bd3679a28bae6bb6bfe00
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1d13fe40866f8c3baf7d47e17a98515ea8197dfe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944663"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962651"
 ---
 # <a name="list-modules-command"></a>모듈 목록 표시 명령
 현재 프로세스에 대한 모듈을 나열합니다.
@@ -71,7 +70,7 @@ Debug.ListModules [/Address:yes|no] [/Name:yes|no] [/Order:yes|no]
 
  선택 사항입니다. 모듈의 버전을 표시할지 여부를 지정합니다. 기본값은 `no`여야 합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  이 예제에서는 현재 프로세스의 모듈 이름, 주소 및 타임스탬프를 나열합니다.
 
 ```

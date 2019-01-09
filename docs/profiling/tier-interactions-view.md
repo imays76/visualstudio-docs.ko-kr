@@ -1,8 +1,6 @@
 ---
 title: 계층 상호 작용 뷰 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.tierinteraction
@@ -13,16 +11,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d92144a6b9bd94e23397a033fbbee45bd5aeed4a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bf907b11a715f9e108c71daeb6bebd35be9f1212
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917773"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967098"
 ---
 # <a name="tier-interactions-view"></a>계층 상호 작용 뷰
 
-상호 작용 프로파일링은 [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)]을 통해 데이터베이스와 통신하는 다중 계층 응용 프로그램의 함수 실행 시간에 대한 추가 정보를 제공합니다. 동기 함수 호출에 대해서만 데이터가 수집됩니다.
+상호 작용 프로파일링은 [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)]을 통해 데이터베이스와 통신하는 다중 계층 애플리케이션의 함수 실행 시간에 대한 추가 정보를 제공합니다. 동기 함수 호출에 대해서만 데이터가 수집됩니다.
 
 **요구 사항**
 
