@@ -2,7 +2,6 @@
 title: XAML 디자이너에서 프로젝트 코드 디버그 또는 사용하지 않도록 설정
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: ac600581-8fc8-49e3-abdf-1569a3483d74
 author: gewarren
@@ -10,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 191d180a68edd439c729fa963b607c992ff3c00e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3ff3785d3acc5a16116cc8c56d41cc3988406bff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816806"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986741"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>XAML 디자이너에서 프로젝트 코드 디버그 또는 사용하지 않도록 설정
 
-많은 경우 **XAML** 디자이너의 처리되지 않은 예외는 디자이너에서 응용 프로그램이 실행 중일 때 다른 방식으로 작동하거나 다른 값을 반환하는 속성 또는 메서드에 액세스하려는 프로젝트 코드로 인해 발생할 수 있습니다. 이러한 예외는 Visual Studio의 다른 인스턴스에서 프로젝트 코드를 디버그하여 해결하거나 디자이너에서 프로젝트 코드를 사용하지 않도록 설정하여 임시로 방지할 수 있습니다.
+많은 경우 **XAML** 디자이너의 처리되지 않은 예외는 디자이너에서 애플리케이션이 실행 중일 때 다른 방식으로 작동하거나 다른 값을 반환하는 속성 또는 메서드에 액세스하려는 프로젝트 코드로 인해 발생할 수 있습니다. 이러한 예외는 Visual Studio의 다른 인스턴스에서 프로젝트 코드를 디버그하여 해결하거나 디자이너에서 프로젝트 코드를 사용하지 않도록 설정하여 임시로 방지할 수 있습니다.
 
 프로젝트 코드는 다음을 포함합니다.
 
@@ -39,9 +38,9 @@ ms.locfileid: "49816806"
 
 1.  처리되지 않은 예외 대화 상자에서 **디자이너를 다시 로드하려면 여기를 클릭** 링크를 선택합니다.
 
-2.  메뉴 모음에서 **디버그** > **디버깅 시작**을 선택하여 응용 프로그램을 빌드하고 실행합니다.
+2.  메뉴 모음에서 **디버그** > **디버깅 시작**을 선택하여 애플리케이션을 빌드하고 실행합니다.
 
-     응용 프로그램이 성공적으로 빌드되고 실행되면 디자이너에서 실행 중인 프로젝트 코드로 인해 디자인 타임 예외가 발생할 수 있습니다.
+     애플리케이션이 성공적으로 빌드되고 실행되면 디자이너에서 실행 중인 프로젝트 코드로 인해 디자인 타임 예외가 발생할 수 있습니다.
 
 ## <a name="to-debug-project-code-running-in-the-designer"></a>디자이너에서 실행되는 프로젝트 코드를 디버그하려면
 
@@ -90,7 +89,7 @@ ms.locfileid: "49816806"
 ## <a name="control-display-options"></a>컨트롤 표시 옵션
 
 > [!NOTE]
-> **컨트롤 표시 옵션**은 Windows 10 Fall Creators Update(빌드 16299) 이상을 대상으로 하는 유니버설 Windows 플랫폼 응용 프로그램에만 사용할 수 있습니다. **컨트롤 표시 옵션** 기능은 Visual Studio 2017 버전 15.9 이상에서 사용할 수 있습니다. 
+> **컨트롤 표시 옵션**은 Windows 10 Fall Creators Update(빌드 16299) 이상을 대상으로 하는 유니버설 Windows 플랫폼 애플리케이션에만 사용할 수 있습니다. **컨트롤 표시 옵션** 기능은 Visual Studio 2017 버전 15.9 이상에서 사용할 수 있습니다. 
 
 XAML 디자이너에서 Windows SDK의 플랫폼 컨트롤만 표시하도록 컨트롤 표시 옵션을 변경할 수 있습니다. 이로 인해 XAML 디자이너의 안정성이 향상될 수 있습니다.
 

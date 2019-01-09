@@ -1,8 +1,6 @@
 ---
 title: 개요(성능 도구) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: b877802d-c736-4047-821a-bd7733fff6de
 author: mikejo5000
@@ -10,15 +8,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 904ebf55e7920bfd79fec3afb502d59e5dc82a33
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: db30d1754d12dd167a89b569e67e4d375486443f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254620"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989937"
 ---
 # <a name="overviews-performance-tools"></a>개요(성능 도구)
-이 섹션에서는 개발 중인 응용 프로그램의 성능 특성을 측정하는 데 사용할 수 있는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구의 개념과 용어를 간략하게 설명합니다.  
+이 섹션에서는 개발 중인 애플리케이션의 성능 특성을 측정하는 데 사용할 수 있는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구의 개념과 용어를 간략하게 설명합니다.  
   
 ## <a name="in-this-section"></a>단원 내용  
  [성능 세션 개요](../profiling/performance-session-overview.md)  
@@ -46,7 +44,7 @@ ms.locfileid: "35254620"
  성능 세션에서 추가 성능 데이터를 제공할 수 있는 CPU 및 Windows 성능 카운터에 대해 알아봅니다.  
   
  [프로파일링 및 Windows Vista 보안](../profiling/profiling-and-windows-vista-security.md)  
- [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)]에서 샘플링 데이터를 수집하고 상호 세션 응용 프로그램을 프로파일링하기 위해 수행해야 하는 단계와 관련 문제에 대해 알아봅니다.  
+ [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)]에서 샘플링 데이터를 수집하고 상호 세션 애플리케이션을 프로파일링하기 위해 수행해야 하는 단계와 관련 문제에 대해 알아봅니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [시작](../profiling/getting-started-with-performance-tools.md)   

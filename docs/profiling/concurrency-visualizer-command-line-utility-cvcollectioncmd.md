@@ -1,8 +1,6 @@
 ---
 title: 동시성 시각화 도우미 명령줄 유틸리티(CVCollectionCmd) | Microsoft 문서
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.performance.cvcollectioncmd
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a24bea13687d58d4d9b9d9dc8ecf0bec86595759
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a5c2dfa42df5ce7dd5d9bf421df4ad4b001fdb57
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951243"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986845"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>동시성 시각화 도우미 명령줄 유틸리티(CVCollectionCmd)
 동시성 시각화 도우미 명령줄 유틸리티(*CVCollectionCmd.exe*)를 사용하면 명령줄에서 추적을 수집하여 Visual Studio용 동시성 시각화 도우미에서 확인할 수 있습니다. 이러한 도구는 Visual Studio가 설치되어 있지 않은 컴퓨터에서도 사용할 수 있습니다.  
@@ -43,11 +41,11 @@ ms.locfileid: "49951243"
 |옵션|설명|매개 변수|반환 값|  
 |------------|-----------------|----------------|-------------------|  
 |Query|수집을 시작할 수 있는지 여부를 반환합니다.|없음|수집을 시작할 준비가 되면 0입니다.<br /><br /> 수집이 이미 진행 중이면 1입니다.<br /><br /> 수집이 진행 중이 아니지만 필수 [ETW](/dotnet/framework/wcf/samples/etw-tracing) 세션 중 하나 이상이 이미 활성화되었으면 2입니다.|  
-|Launch|Concurrency 시각화 도우미 아래에서 지정한 프로세스를 실행합니다.|실행 파일의 경로|실행에 성공한 경우 0입니다.<br /><br /> 대상 응용 프로그램을 시작할 수 없어 실행에 실패한 경우 1입니다.<br /><br /> CVCollectionCmd에 지정한 출력 디렉토리에 쓸 수 있는 충분한 권한이 없어 실행에 실패한 경우 13입니다.|  
+|Launch|Concurrency 시각화 도우미 아래에서 지정한 프로세스를 실행합니다.|실행 파일의 경로|실행에 성공한 경우 0입니다.<br /><br /> 대상 애플리케이션을 시작할 수 없어 실행에 실패한 경우 1입니다.<br /><br /> CVCollectionCmd에 지정한 출력 디렉토리에 쓸 수 있는 충분한 권한이 없어 실행에 실패한 경우 13입니다.|  
 |연결|시스템 차원에서 추적 수집을 시작합니다. 그렇지 않고 프로세스가 지정되어 있으면 해당 프로세스에 연결합니다.|없음|연결에 성공한 경우 0입니다.<br /><br /> 지정한 프로세스가 잘못되었거나 모호해서 연결에 실패한 경우 1입니다.<br /><br /> CVCollectionCmd에 지정한 출력 디렉토리에 쓸 수 있는 충분한 권한이 없어 연결에 실패한 경우 13입니다.|  
 |Detach|수집을 중지합니다.|없음|분리에 성공한 경우 0입니다.<br /><br /> 현재 수집이 진행되고 있지 않아 분리에 실패한 경우 1입니다.<br /><br /> 수집을 중지할 수 없어 분리에 실패한 경우 2입니다.|  
 |분석|지정한 추적을 분석합니다.|CVTrace 파일의 전체 경로입니다.|분석에 성공한 경우 0입니다.<br /><br /> 지정한 추적이 시스템 차원이지만 대상 프로세스를 지정하지 않아 분석을 시작할 수 없는 경우 1입니다.<br /><br /> 프로세스를 지정했으나 추적이 시스템 차원이 아니라서 분석을 시작할 수 없는 경우 2입니다.<br /><br /> 지정한 프로세스가 잘못되어 분석에 실패한 경우 3입니다.<br /><br /> 지정한 CVTrace 파일이 잘못되어 분석에 실패한 경우 4입니다.|  
-|LaunchArgs|실행 가능한 대상 인수를 지정합니다. 이 옵션은 Launch 명령에만 적용됩니다.|응용 프로그램에 대한 명령줄 인수|없음|  
+|LaunchArgs|실행 가능한 대상 인수를 지정합니다. 이 옵션은 Launch 명령에만 적용됩니다.|애플리케이션에 대한 명령줄 인수|없음|  
 |Outdir|추적 파일을 저장할 디렉터리를 지정합니다. Launch 및 Attach 명령에 적용됩니다.|디렉터리 경로 또는 상대 경로|없음|  
 |프로세스|Attach 명령이 실행되면 연결할 프로세스 또는 Analyze 명령이 실행되면 분석할 추적의 프로세스를 지정합니다. Attach 및 Analyze 명령에 적용됩니다.|프로세스의 PID 또는 이름|없음|  
 |Config|기본값 이외의 수집 설정이 필요한 경우 구성 파일의 경로를 지정합니다.   Launch, Attach 및 Analyze 명령에 적용됩니다.|XML 구성 파일의 디렉터리 경로 또는 상대 경로|없음|  
@@ -76,7 +74,7 @@ ms.locfileid: "49951243"
 | MarkerProvider | 단일 표식 공급자를 지정합니다. | 다음 요소를 포함해야 합니다.<br /><br /> -   Level<br />-   GUID<br />-   Name<br /><br /> 다음 요소를 포함할 수 있습니다.<br /><br /> -   Categories<br />-   IsEnabled |
 | 수준 | MarkerProvider의 중요도 수준을 설정합니다. | -   Low<br />-   Normal<br />-   High<br />-   Critical<br />-   Everything |
 | GUID | ETW 표식 공급자의 고유한 전역 식별자입니다. | GUID |
-| 이름 | 표식 공급자에 대한 설명을 지정합니다. | 문자열 |
+| name | 표식 공급자에 대한 설명을 지정합니다. | 문자열 |
 | 범주 | 표식 공급자에 대해 수집된 범주를 지정합니다. | 쉼표로 구분된 숫자 문자열 또는 숫자 범위 |
 | IsEnabled | 표식 공급자를 수집에 사용할지 여부를 결정하는 값을 설정합니다. | -   True<br />-   False |
 | FilterConfig | 수집에서 필터링된 ETW 이벤트의 구성 옵션 목록을 지정합니다. | 다음 요소가 포함되어 있을 수 있습니다.<br /><br /> -   CollectClrEvents<br />-   ClrCollectionOptions<br />-   CollectSampleEvents<br />-   CollectGpuEvents<br />-   CollectFileIO |
@@ -94,7 +92,7 @@ ms.locfileid: "49951243"
 | JustMyCode | 내 코드만 디렉터리의 목록을 지정합니다. | MyCodeDirectory 요소 0개 이상으로 구성된 목록 |
 | MyCodeDirectory | 코드가 포함된 디렉터리를 지정합니다. | 절대 경로 |
 
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  처음부터 구성 파일을 만드는 대신 다음 예제를 복사한 다음 요구 사항에 맞춰 수정할 수 있습니다.  
 
 ```xml  

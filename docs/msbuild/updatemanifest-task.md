@@ -1,8 +1,6 @@
 ---
 title: UpdateManifest 작업 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03d93e8cb6d57a0f114a7f4fa1d45342437587f2
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 3fc6b89034815f0eb1ee5762e911c42075d115cc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153704"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985565"
 ---
 # <a name="updatemanifest-task"></a>UpdateManifest 작업
 매니페스트에서 선택한 속성을 업데이트하고 다시 서명합니다.  
@@ -33,12 +31,12 @@ ms.locfileid: "39153704"
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|`ApplicationManifest`|필수 <xref:Microsoft.Build.Framework.ITaskItem> 매개 변수입니다.<br /><br /> 응용 프로그램 매니페스트를 지정합니다.|  
-|`ApplicationPath`|필수 `String` 매개 변수입니다.<br /><br /> 응용 프로그램 매니페스트의 경로를 지정합니다.|  
+|`ApplicationManifest`|필수 <xref:Microsoft.Build.Framework.ITaskItem> 매개 변수입니다.<br /><br /> 애플리케이션 매니페스트를 지정합니다.|  
+|`ApplicationPath`|필수 `String` 매개 변수입니다.<br /><br /> 애플리케이션 매니페스트의 경로를 지정합니다.|  
 |`InputManifest`|필수 <xref:Microsoft.Build.Framework.ITaskItem> 매개 변수입니다.<br /><br /> 업데이트할 매니페스트를 지정합니다.|  
 |`OutputManifest`|선택적 <xref:Microsoft.Build.Framework.ITaskItem> 출력 매개 변수입니다.<br /><br /> 업데이트된 속성이 포함된 매니페스트를 지정합니다.|  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  이 작업은 표에 나열된 매개 변수 외에, <xref:Microsoft.Build.Utilities.Task> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [Task 기본 클래스](../msbuild/task-base-class.md)를 참조하세요.  
   
 ## <a name="see-also"></a>참고 항목  

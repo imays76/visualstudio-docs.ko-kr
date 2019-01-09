@@ -3,7 +3,6 @@ title: Visual Studio 인스턴스 검색 및 관리 도구
 titleSuffix: ''
 description: 클라이언트 컴퓨터에서 Visual Studio 설치를 검색 및 관리하는 데 사용할 수 있는 도구에 대해 알아봅니다.
 ms.date: 08/14/2017
-ms.technology: vs-acquisition
 ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -16,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 909ea85a68652467e3288e1e3f8f8e2d4e0df5b7
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 3fa1c545d77932fb2b2f4a01797c247fd2ca09cf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53158569"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822614"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Visual Studio 인스턴스 검색 및 관리 도구
 
