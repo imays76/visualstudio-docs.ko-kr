@@ -1,8 +1,6 @@
 ---
 title: SignFile 작업 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#SignFile
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eedec77ab44f591532a5a2bb827a46965ec242e7
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 5adc16bf0ded8171009c31d96227daa0474ebbf5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647380"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847219"
 ---
 # <a name="signfile-task"></a>SignFile 작업
 
@@ -47,7 +45,7 @@ ms.locfileid: "53647380"
 |`TimestampUrl`|선택적 `String` 매개 변수입니다.<br /><br /> 타임스탬프 서버의 URL을 지정합니다.|
 |`TargetFrameworkVersion`|대상에 대해 사용되는 .NET Framework 버전입니다.|
   
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
  이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [Task 기본 클래스](../msbuild/task-base-class.md)를 참조하세요.
   

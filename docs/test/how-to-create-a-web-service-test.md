@@ -11,17 +11,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 99d4c413dcb02efd56bf89dae3aa24b7f6905216
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 3f63a1734c7df506c2bda0e51546b2ece04ebb00
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053401"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833425"
 ---
 # <a name="how-to-create-a-web-service-test"></a>방법: 웹 서비스 테스트 만들기
 
-웹 성능 테스트를 사용하여 웹 서비스를 테스트할 수 있습니다. **요청 삽입** 및 **웹 서비스 요청 삽입** 옵션을 사용하면 **웹 성능 테스트 편집기**에서 개별 요청을 사용자 지정하여 웹 서비스 페이지를 찾을 수 있습니다. 일반적으로 이러한 페이지는 웹 응용 프로그램에 표시되지 않습니다. 따라서 이러한 페이지에 액세스하려면 요청을 사용자 지정해야 합니다.
+웹 성능 테스트를 사용하여 웹 서비스를 테스트할 수 있습니다. **요청 삽입** 및 **웹 서비스 요청 삽입** 옵션을 사용하면 **웹 성능 테스트 편집기**에서 개별 요청을 사용자 지정하여 웹 서비스 페이지를 찾을 수 있습니다. 일반적으로 이러한 페이지는 웹 애플리케이션에 표시되지 않습니다. 따라서 이러한 페이지에 액세스하려면 요청을 사용자 지정해야 합니다.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 

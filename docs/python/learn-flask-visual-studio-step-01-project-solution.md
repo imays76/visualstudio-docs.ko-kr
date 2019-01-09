@@ -2,9 +2,8 @@
 title: Visual Studio 1단계, Flask 기본 사항에서 Flask 자습서 알아보기
 titleSuffix: ''
 description: 필수 구성 요소, Git 및 가상 환경을 비롯하여 Visual Studio 프로젝트의 컨텍스트에서 Flask 기본 사항을 살펴봅니다.
-ms.date: 09/04/2018
+ms.date: 01/07/2019
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,16 +12,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0603c1b8dcabc37631c7a52e11cfa964331010d8
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 490356eae7467eded983b117a88c35c9785f3f93
+ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066641"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54060766"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>자습서: Visual Studio에서 Flask 웹 프레임워크 시작
 
-[Flask](http://flask.pocoo.org/)는 URL 라우팅 및 페이지 렌더링을 위한 기본 사항을 제공하는 웹 응용 프로그램용 경량 Python 프레임워크입니다.
+[Flask](http://flask.pocoo.org/)는 URL 라우팅 및 페이지 렌더링을 위한 기본 사항을 제공하는 웹 애플리케이션용 경량 Python 프레임워크입니다.
 
 Flask는 폼 유효성 검사, 데이터베이스 추상화, 인증 등과 같은 기능을 직접 제공하지 않기 때문에 "마이크로" 프레임워크라고 합니다. 대신 이러한 기능은 Flask *확장*이라는 특별한 Python 패키지를 통해 제공됩니다. 확장은 Flask와 원활하게 통합되어 Flask의 일부인 것처럼 보입니다. 예를 들어 Flask 자체는 페이지 템플릿 엔진을 제공하지 않습니다. 템플레이팅은 이 자습서에서 설명한 대로 Jinja 및 Jade와 같은 확장에서 제공됩니다.
 

@@ -14,13 +14,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 41e9a025db4ec9c8425e0de6ba4ecad25f775d50
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 311a1ff5b9f5587d04c90484f21a323161c9c18a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066680"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835713"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>웹 성능 테스트에 대한 사용자 지정 추출 규칙 코딩
 
@@ -56,7 +55,7 @@ ms.locfileid: "53066680"
 
 9. 웹 성능 테스트를 실행합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드에서는 사용자 지정 추출 규칙의 구현을 보여 줍니다. 이 추출 규칙에서는 지정한 입력 필드에서 값을 추출합니다. 이 예제를 출발점으로 삼아 사용자 지정 추출 규칙을 직접 만들 수 있습니다.
 

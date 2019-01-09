@@ -9,13 +9,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 83ed50b5f242f5a869e1c0a69bf6a0674bdf4d69
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 63b1c220edfccdbcd10f6d0380dc37324511507b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068411"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833438"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>방법: 웹 성능 테스트 편집기에 대한 사용자 지정 HTTP 본문 편집기 만들기
 
@@ -59,7 +58,7 @@ SOAP, REST, asmx, wcf, RIA 및 기타 웹 서비스 요청 형식과 같은 웹 
 
 7. **솔루션 탐색기**에서 Windows Forms 라이브러리 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다.
 
-8. **속성**에서 **응용 프로그램** 탭을 선택합니다.
+8. **속성**에서 **애플리케이션** 탭을 선택합니다.
 
 9. **대상 프레임워크** 드롭다운 목록에서 **.NET Framework 4**를 선택합니다.
 
@@ -317,7 +316,7 @@ messageEditorControl 인스턴스는 <xref:Microsoft.VisualStudio.TestTools.WebT
 
 Windows 컨트롤 라이브러리 프로젝트의 대상 프레임워크가 .NET Framework 4.5인지 확인합니다. 기본적으로 Windows 컨트롤 라이브러리 프로젝트는 Microsoft.VisualStudio.QualityTools.WebTestFramework 참조를 포함할 수 없는 .NET Framework 4.5 Client 프레임워크를 대상으로 합니다.
 
-자세한 내용은 [응용 프로그램 페이지, 프로젝트 디자이너(C#)](../ide/reference/application-page-project-designer-csharp.md)를 참조하세요.
+자세한 내용은 [애플리케이션 페이지, 프로젝트 디자이너(C#)](../ide/reference/application-page-project-designer-csharp.md)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 

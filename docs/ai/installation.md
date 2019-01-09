@@ -9,15 +9,14 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.devlang: multiple
 ms.service: multiple
-ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 465443211d1a3f1aff8bfa63fa6cb8068b55980b
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
+ms.openlocfilehash: ab5101d6b6ddca4a86e635fff70b52429888001a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459766"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821103"
 ---
 # <a name="installation"></a>설치
 
@@ -76,7 +75,7 @@ cuDNN을 설치하려면:
 
 ### <a name="python"></a>Python
 
-Python은 심층 학습 응용 프로그램의 기본 프로그래밍 언어입니다. **64비트** Python 배포가 필요하며 최상의 호환성을 위해 [Python 3.5.4](https://www.python.org/downloads/release/python-354/)를 사용하는 것이 좋습니다.
+Python은 심층 학습 애플리케이션의 기본 프로그래밍 언어입니다. **64비트** Python 배포가 필요하며 최상의 호환성을 위해 [Python 3.5.4](https://www.python.org/downloads/release/python-354/)를 사용하는 것이 좋습니다.
 
 ### <a name="to-install-python-on-windows"></a>Windows에 Python을 설치하려면
 

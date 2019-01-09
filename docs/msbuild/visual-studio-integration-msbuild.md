@@ -3,7 +3,6 @@ title: Visual Studio 통합(MSBuild)
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, reference resolution
@@ -21,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7449e8585cd9f1db8a4a43cddf8092f1a92c9758
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e3ee9dcabc0333de72fef319ac1048f2a266f7b3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052425"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834180"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio 통합(MSBuild)
 Visual Studio는 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 를 호스팅하여 관리되는 프로젝트를 로드하고 빌드합니다. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 에서 프로젝트를 관리하므로 프로젝트가 다른 도구에서 작성되어 사용자 지정된 빌드 프로세스를 가지더라도 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 형식의 프로젝트는 대부분 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서 사용될 수 있습니다.  
@@ -90,7 +89,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]내에서 빌드할 때 `$(BuildingInsideVisualStudio)` 속성은 `true`로 설정됩니다. 프로젝트 또는 *.targets* 파일에서 이 속성을 사용하여 빌드가 다르게 동작하도록 할 수 있습니다.  
   
 ## <a name="display-properties-and-items"></a>속성 및 항목 표시  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 에서는 특정 속성 이름과 값을 인식합니다. 예를 들어, 프로젝트의 다음 속성을 사용하면 **Windows 응용 프로그램** 이 **프로젝트 디자이너** 의 **응용 프로그램 형식**상자에 나타납니다.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 에서는 특정 속성 이름과 값을 인식합니다. 예를 들어, 프로젝트의 다음 속성을 사용하면 **Windows 애플리케이션** 이 **프로젝트 디자이너** 의 **애플리케이션 형식**상자에 나타납니다.  
   
 ```xml  
 <OutputType>WinExe</OutputType>  

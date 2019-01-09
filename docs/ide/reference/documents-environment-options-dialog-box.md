@@ -2,7 +2,6 @@
 title: 옵션 대화 상자, 환경, 문서
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.Environment.Documents
@@ -33,12 +32,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3009f32adeb70dd376d7116280de6e3e1b557e7a
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 21abb3d10f3cf80e46e86aa5e5141df32d6e804a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388926"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855876"
 ---
 # <a name="documents-environment-options-dialog-box"></a>옵션 대화 상자, 환경, 문서
 
@@ -79,7 +78,7 @@ ms.locfileid: "52388926"
 **솔루션 탐색기**에서 **기타 파일** 노드를 표시하려면 이 옵션을 선택합니다. 기타 파일은 프로젝트나 솔루션과 연결되지 않은 파일이지만, 편의를 위해 **솔루션 탐색기**에 표시될 수 있습니다.
 
 > [!NOTE]
-> 활성 웹 응용 프로그램에 포함되지 않은 웹 문서의 경우 **파일** 메뉴에서 **브라우저에서 보기** 명령을 사용하도록 설정하려면 이 옵션을 선택합니다.
+> 활성 웹 애플리케이션에 포함되지 않은 웹 문서의 경우 **파일** 메뉴에서 **브라우저에서 보기** 명령을 사용하도록 설정하려면 이 옵션을 선택합니다.
 
 **\<** *n* **>기타 파일 프로젝트에 저장된 항목**
 
