@@ -1,8 +1,6 @@
 ---
 title: 매개 변수 요소 | Microsoft Docs
-ms.custom: ''
 ms.date: 03/13/2017
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d4778923bf6c9e521a7ee26546510466fcfefc83
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8e932b5a49559e77b9d7231d969f8ee78e2b4ec6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894263"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820282"
 ---
 # <a name="parameter-element"></a>매개 변수 요소
 `UsingTask` `TaskFactory`에 의해 생성되는 작업에 대한 특정 매개 변수 정보를 포함합니다.  요소의 이름은 매개 변수의 이름입니다.  자세한 내용은 [UsingTask 요소(MSBuild)](../msbuild/usingtask-element-msbuild.md)를 참조하세요.  
@@ -62,7 +60,7 @@ ms.locfileid: "49894263"
 |-------------|-----------------|  
 |[ParameterGroup](../msbuild/parametergroup-element.md)|`UsingTask` `TaskFactory`에 의해 생성된 작업에 존재할 매개 변수의 선택적 목록을 포함합니다.|  
 
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 `Parameter` 요소를 사용하는 방법을 보여 줍니다.  
 
 ```xml  

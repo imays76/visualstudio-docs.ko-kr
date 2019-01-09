@@ -1,8 +1,6 @@
 ---
 title: 실행 프로필 보고서 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.report.execution
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa0800bcf6a4fedfbcd8c787b3cca89638e9bcb9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b90bdc015e31d2c9c4313be874b7f38a58a7ac45
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935291"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986546"
 ---
 # <a name="execution-profile-report"></a>실행 프로필 보고서
 실행 프로필 보고서는 전통적인 샘플링 프로필입니다. 논리 코어에서 스레드가 실행 중인 기간에 거의 밀리초마다 샘플이 수집되고 동시성 시각화에서는 누적된 샘플 스택 집합의 데이터를 정렬하여 일반적인 호출 트리를 빌드합니다. 현재 시간 범위와 숨겨진 스레드 및 적용될 수 있는 다음과 같은 필터가 이 테이블의 데이터에 영향을 미칠 수 있습니다.  
@@ -37,7 +35,7 @@ ms.locfileid: "49935291"
 |전용 샘플|이 함수가 호출 스택의 최하위 수준에 있는 경우 수집된 총 샘플 수입니다.|  
 |% 포함|포괄 샘플 열에 표시된 총 샘플의 백분율입니다. 백분율은 소수점 이하 두 자리까지 반올림됩니다.|  
 |% 제외|전용 샘플 열에 표시된 총 샘플의 백분율입니다. 백분율은 소수점 이하 두 자리까지 반올림됩니다.|  
-|설명|함수의 정규화된 이름입니다. 여기에는 사용 가능한 경우 줄 수가 포함됩니다.|  
+|세부 정보|함수의 정규화된 이름입니다. 여기에는 사용 가능한 경우 줄 수가 포함됩니다.|  
   
  이 보고서 테이블은 [실행 시간(스레드 뷰)](../profiling/execution-time-threads-view.md) 뷰에서 볼 수 있습니다.  
   
