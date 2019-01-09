@@ -1,9 +1,8 @@
 ---
 title: Microsoft의 내게 필요한 옵션 제품 및 서비스
-description: 장애가 있는 사용자를 포함하여 모든 사용자가 운영 체제, 프로그램 및 응용 프로그램에 더욱 쉽게 액세스할 수 있도록 하는 Microsoft의 제품 및 서비스에 대해 자세히 알아봅니다.
+description: 장애가 있는 사용자를 포함하여 모든 사용자가 운영 체제, 프로그램 및 애플리케이션에 더욱 쉽게 액세스할 수 있도록 하는 Microsoft의 제품 및 서비스에 대해 자세히 알아봅니다.
 ms.date: 08/22/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - TTY/TDD services
@@ -21,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 58f3ad239802b032006a5a28816462147018982f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7e209e609caf073a7360bad3d0991a6fbd873989
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839533"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886321"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Microsoft의 내게 필요한 옵션 제품 및 서비스
 
@@ -90,5 +89,5 @@ Microsoft 지원 서비스에는 서비스 이용 시점의 가격, 약관 및 �
 
 ## <a name="see-also"></a>참고 항목
 
-* [액세스 가능한 응용 프로그램 설계를 위한 리소스](../../ide/reference/resources-for-designing-accessible-applications.md)
+* [액세스 가능한 애플리케이션 설계를 위한 리소스](../../ide/reference/resources-for-designing-accessible-applications.md)
 * [Visual Studio의 접근성 기능](../../ide/reference/accessibility-features-of-visual-studio.md)

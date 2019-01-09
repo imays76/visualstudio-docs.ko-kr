@@ -3,7 +3,6 @@ title: '방법: 단독으로 키보드 사용'
 description: 기본 바로 가기 키 조합을 사용하여 Visual Studio IDE(통합 개발 환경) 내에서 쉽게 탐색하고 코딩할 수 있도록 하는 방법을 알아봅니다.
 ms.date: 08/22/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Toolbox, shortcut keys
@@ -18,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b76e34ba77335c242c752c055e2560cc73141d2
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 7c32eadc67d0b36440d30f8fee75a5444a31eb60
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388402"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874461"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>방법: 단독으로 키보드 사용
 

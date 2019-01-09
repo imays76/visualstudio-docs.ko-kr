@@ -1,8 +1,6 @@
 ---
 title: VCMessage 작업 | Microsoft Docs
-ms.custom: ''
 ms.date: 06/27/2018
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - vc.task.vcmessage
@@ -21,17 +19,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66c245f78c27521e9db53327f8dfdc567ed0e995
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: f51abd957f5a39cdc3af1f34bf3af28999ab80fe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154141"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928963"
 ---
 # <a name="vcmessage-task"></a>VCMessage 작업
 빌드 중에 경고 및 오류 메시지를 로깅합니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  이 작업은 Visual C++에 대한 MSBuild 구현을 도우며 사용자가 호출할 수 없습니다. 자세한 내용은 <xref:Microsoft.Build.Utilities.TaskLoggingHelper>을 참조하세요.  
   
 ## <a name="parameters"></a>매개 변수  

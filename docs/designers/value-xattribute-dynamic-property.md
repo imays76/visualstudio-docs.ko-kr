@@ -2,7 +2,6 @@
 title: Value(XAttribute 동적 속성)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: reference
 apiname:
 - XAttribute.Value
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 473ff5b0124a050b60c9dc02929b2bad83f3661e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2b97e33bdcb28a3c8790af752d5ab9786dc5ef3d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842343"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882895"
 ---
 # <a name="value-xattribute-dynamic-property"></a>Value(XAttribute 동적 속성)
 
@@ -40,7 +39,7 @@ attrib.Value
 | - |---------------|
 |<xref:System.ArgumentNullException>|설정할 때 `value`가 `null`인 경우|
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 이 속성은 <xref:System.Xml.Linq.XAttribute.Value%2A> 클래스의 <xref:System.Xml.Linq.XAttribute?displayProperty=fullName> 속성과 동일하지만 이 동적 속성은 변경 알림도 지원합니다.
 

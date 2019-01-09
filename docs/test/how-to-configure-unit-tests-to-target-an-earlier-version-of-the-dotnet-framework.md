@@ -2,19 +2,18 @@
 title: 이전 버전의 .NET Framework를 대상으로 하는 단위 테스트
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 7b9032e8a1b6ee796bbea6ce7f7e3f5db7bcd205
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: df8489decc50c863bdfaec65c6de6ddc4d2dd229
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064733"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869915"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>방법: 이전 버전의 .NET Framework를 대상으로 사용하도록 단위 테스트 구성
 
@@ -30,9 +29,9 @@ Microsoft Visual Studio에서 테스트 프로젝트를 만들 때 .NET Framewor
 
 - 빌드 에이전트에서 단위 테스트를 빌드의 일부로 실행할 수 있습니다.
 
-**SharePoint 응용 프로그램 테스트**
+**SharePoint 애플리케이션 테스트**
 
-위에 나열된 기능을 통해 Visual Studio를 사용하는 SharePoint 응용 프로그램에 대한 단위 테스트 및 통합 테스트를 작성할 수 있습니다. Visual Studio를 사용하여 SharePoint 응용 프로그램을 개발하는 방법에 대한 자세한 내용은 [SharePoint 솔루션 만들기](../sharepoint/create-sharepoint-solutions.md), [SharePoint 솔루션 빌드 및 디버그](../sharepoint/building-and-debugging-sharepoint-solutions.md) 및 [SharePoint 코드 확인 및 디버그](../sharepoint/verifying-and-debugging-sharepoint-code.md)를 참조하세요.
+위에 나열된 기능을 통해 Visual Studio를 사용하는 SharePoint 애플리케이션에 대한 단위 테스트 및 통합 테스트를 작성할 수 있습니다. Visual Studio를 사용하여 SharePoint 애플리케이션을 개발하는 방법에 대한 자세한 내용은 [SharePoint 솔루션 만들기](../sharepoint/create-sharepoint-solutions.md), [SharePoint 솔루션 빌드 및 디버그](../sharepoint/building-and-debugging-sharepoint-solutions.md) 및 [SharePoint 코드 확인 및 디버그](../sharepoint/verifying-and-debugging-sharepoint-code.md)를 참조하세요.
 
 **제한 사항**
 
@@ -40,7 +39,7 @@ Microsoft Visual Studio에서 테스트 프로젝트를 만들 때 .NET Framewor
 
 - .NET Framework 3.5에서는 단위 테스트만 포함된 테스트 프로젝트에 대해 여러 대상을 지정할 수 있습니다. .NET Framework 3.5에서는 코딩된 UI 또는 로드 테스트 등의 다른 테스트 형식을 지원하지 않습니다. 단위 테스트 이외의 테스트 형식에 대한 대상은 다시 지정할 수 없습니다.
 
-- .NET Framework의 이전 버전이 대상으로 지정된 테스트는 기본 호스트 어댑터에서만 실행할 수 있습니다. ASP.NET 호스트 어댑터에서는 이 기능이 지원되지 않습니다. ASP.NET 개발 서버 컨텍스트에서 실행해야 하는 ASP.NET 응용 프로그램은 .NET Framework의 현재 버전과 호환되어야 합니다.
+- .NET Framework의 이전 버전이 대상으로 지정된 테스트는 기본 호스트 어댑터에서만 실행할 수 있습니다. ASP.NET 호스트 어댑터에서는 이 기능이 지원되지 않습니다. ASP.NET 개발 서버 컨텍스트에서 실행해야 하는 ASP.NET 애플리케이션은 .NET Framework의 현재 버전과 호환되어야 합니다.
 
 - .NET Framework 3.5 멀티 타기팅을 지원하는 테스트를 실행할 경우 데이터 수집 지원이 사용하지 않도록 설정됩니다. Visual Studio 명령줄 도구를 사용하여 코드 검사를 실행할 수 있습니다.
 
@@ -84,7 +83,7 @@ Microsoft Visual Studio에서 테스트 프로젝트를 만들 때 .NET Framewor
 
      Visual C# 테스트 프로젝트의 속성이 표시됩니다.
 
-5.  **응용 프로그램** 탭에서 **대상 프레임워크**를 선택합니다. 드롭다운 목록에서 다음 그림과 같이 **.NET Framework 3.5** 이상 버전을 선택합니다. 클라이언트 버전을 지정하면 안 됩니다.
+5.  **애플리케이션** 탭에서 **대상 프레임워크**를 선택합니다. 드롭다운 목록에서 다음 그림과 같이 **.NET Framework 3.5** 이상 버전을 선택합니다. 클라이언트 버전을 지정하면 안 됩니다.
 
      ![대상 프레임워크 드롭다운 목록](../test/media/howtoconfigureunittest35frameworkcsharp.png)
 

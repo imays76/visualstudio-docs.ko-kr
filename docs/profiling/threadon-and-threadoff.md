@@ -1,8 +1,6 @@
 ---
 title: ThreadOn 및 ThreadOff | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 5cd5a695-0a14-484a-8952-ed47e13d8e92
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2aa23601ff1f85aa4e2d28be5664c4bccb8d2eff
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d76548ad85a02df6e2217b28535d268d7823be70
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828396"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895508"
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn 및 ThreadOff
 *VSPerfCmd.exe* **ThreadOff** 및 **ThreadOn** 하위 명령은 계측 방법을 사용하는 명령줄 프로파일링 세션에서만 사용할 수 있습니다. **ThreadOff** 및 **ThreadOn**은 지정된 스레드에 대한 프로파일링을 일시 중지하고 다시 시작합니다. **ThreadOff**는 스레드 프로파일링을 중지하고 **ThreadOn**은 스레드 프로파일링을 시작합니다.  
@@ -55,8 +53,8 @@ VSPerfCmd.exe /{ThreadOff|ThreadOn}:TID [Options]
  {**ProcessOff**&#124;**ProcessOn**}**:**`TID`  
  지정된 프로세스에 대한 프로파일링을 중지하거나 시작합니다.  
   
-## <a name="example"></a>예  
- 이 예제에서 **ThreadOff** 하위 명령은 응용 프로그램 시작 데이터만 수집될 수 있도록 프로파일링 데이터 수집을 중지하는 데 사용됩니다.  
+## <a name="example"></a>예제  
+ 이 예제에서 **ThreadOff** 하위 명령은 애플리케이션 시작 데이터만 수집될 수 있도록 프로파일링 데이터 수집을 중지하는 데 사용됩니다.  
   
 ```cmd  
 ; Initialize the profiler.  
@@ -72,6 +70,6 @@ VSPerfCmd /Shutdown
   
 ## <a name="see-also"></a>참고 항목  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [독립 실행형 응용 프로그램 프로파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [ASP.NET 웹 응용 프로그램 프로파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [독립 실행형 애플리케이션 프로파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [ASP.NET 웹 애플리케이션 프로파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [서비스 프로파일링](../profiling/command-line-profiling-of-services.md)

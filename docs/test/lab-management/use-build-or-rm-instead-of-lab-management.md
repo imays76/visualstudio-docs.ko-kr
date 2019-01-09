@@ -2,7 +2,6 @@
 title: 자동화된 테스트를 위해 Azure Pipelines 사용
 ms.date: 10/19/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - automated testing, lab management, test lab
@@ -11,12 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7a410601b0d7ab6b6a3901333b062e515555ec2d
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: b3b352c461085c43f55d00a44b983785542ef6da
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50218663"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879986"
 ---
 # <a name="use-azure-test-plans-instead-of-lab-management-for-automated-testing"></a>자동화된 테스트를 위해 Lab Management 대신 Azure Test Plans 사용
 
@@ -24,7 +23,7 @@ ms.locfileid: "50218663"
 
 ## <a name="build-deploy-test-automation"></a>빌드-배포-테스트 자동화
 
-Microsoft Test Manage 및 Lab Management는 XAML 빌드 정의를 사용하여 응용 프로그램의 빌드, 배포 및 테스트를 자동화합니다. XAML 빌드는 랩 환경, 테스트 도구 모음 및 테스트 설정과 같은 Microsoft Test Manager에서 만들어진 다양한 생성자와 빌드 컨트롤러, 빌드 에이전트, 테스트 컨트롤 및 테스트 에이전트와 같은 다양한 인프라 구성 요소를 사용하여 이 목표를 달성합니다. Azure Pipelines 또는 TFS를 사용하여 더 적은 단계로 동일하게 수행할 수 있습니다.
+Microsoft Test Manage 및 Lab Management는 XAML 빌드 정의를 사용하여 애플리케이션의 빌드, 배포 및 테스트를 자동화합니다. XAML 빌드는 랩 환경, 테스트 도구 모음 및 테스트 설정과 같은 Microsoft Test Manager에서 만들어진 다양한 생성자와 빌드 컨트롤러, 빌드 에이전트, 테스트 컨트롤 및 테스트 에이전트와 같은 다양한 인프라 구성 요소를 사용하여 이 목표를 달성합니다. Azure Pipelines 또는 TFS를 사용하여 더 적은 단계로 동일하게 수행할 수 있습니다.
 
 | 단계 | XAML 빌드 사용 | 빌드 또는 릴리스에서 |
 |-------|----------------------|-----------------|

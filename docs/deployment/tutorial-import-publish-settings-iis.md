@@ -2,7 +2,6 @@
 title: 게시 설정을 가져와서 IIS에 게시
 description: Visual Studio에서 IIS로 애플리케이션을 배포하기 위한 게시 프로필 만들기 및 가져오기
 ms.date: 05/07/2018
-ms.technology: vs-ide-deployment
 ms.topic: tutorial
 helpviewer_keywords:
 - deployment, publish settings
@@ -11,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4da4a45566fc6d773f185a6a34f7e02cb093fff5
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.openlocfilehash: 13a4210e24fe64db79be897bc159477e9b2f5a3a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53348507"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53897388"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Visual Studio에서 게시 설정을 가져와서 IIS에 애플리케이션 게시
 

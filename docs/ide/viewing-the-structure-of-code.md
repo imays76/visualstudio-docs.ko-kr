@@ -2,7 +2,6 @@
 title: 클래스 뷰, 호출 계층 구조, 개체 브라우저 및 코드 정의 창을 사용하여 코드 구조 보기
 ms.date: 05/18/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.documentoutline.window
@@ -27,12 +26,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a271dfaba8fe533fee84799a0585a29d97e9c70
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 4b3419c7f6b08fbedbe7af684a5c3b2de8967b55
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34336141"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880915"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>다른 도구 창을 사용하여 코드 구조 보기
 
@@ -44,7 +43,7 @@ Visual Studio Enterprise Edition이 있는 경우 ‘코드 맵’을 사용하�
 
 ## <a name="class-view-visual-basic-c-c"></a>클래스 뷰(Visual Basic, C#, C++)
 
-**클래스 뷰**는 **솔루션 탐색기**의 일부로 표시되며 별도의 창으로 표시됩니다. **클래스 뷰**에는 응용 프로그램의 요소가 표시됩니다. 위쪽 창에는 네임스페이스, 형식, 인터페이스, 열거 및 클래스가 표시되고, 아래쪽 창에는 위쪽 창에서 선택한 형식에 속하는 멤버가 표시됩니다. 이 창을 사용하여 소스 코드(또는 요소가 솔루션의 외부에서 정의된 경우 **개체 브라우저**)의 멤버 정의로 이동할 수 있습니다.
+**클래스 뷰**는 **솔루션 탐색기**의 일부로 표시되며 별도의 창으로 표시됩니다. **클래스 뷰**에는 애플리케이션의 요소가 표시됩니다. 위쪽 창에는 네임스페이스, 형식, 인터페이스, 열거 및 클래스가 표시되고, 아래쪽 창에는 위쪽 창에서 선택한 형식에 속하는 멤버가 표시됩니다. 이 창을 사용하여 소스 코드(또는 요소가 솔루션의 외부에서 정의된 경우 **개체 브라우저**)의 멤버 정의로 이동할 수 있습니다.
 
 **클래스 뷰**에서 해당 요소를 보기 위해 프로젝트를 컴파일할 필요가 없습니다. 프로젝트에서 코드를 수정하면 창이 새로 고쳐집니다.
 
@@ -128,7 +127,7 @@ Visual Studio Enterprise Edition이 있는 경우 ‘코드 맵’을 사용하�
 
 **개체 브라우저** 창은 프로젝트의 코드 설명을 표시합니다.
 
-창 맨 위에 있는 드롭다운 목록을 사용하여 보려는 구성 요소를 필터링할 수 있습니다. 사용자 지정 구성 요소에는 관리 코드 실행 파일, 라이브러리 어셈블리, 형식 라이브러리 및 *.ocx* 파일이 포함될 수 있습니다. C++ 사용자 지정 구성 요소는 추가할 수 없습니다. 사용자 지정 설정은 Visual Studio 사용자 응용 프로그램 디렉터리, *%APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat*에 저장됩니다.
+창 맨 위에 있는 드롭다운 목록을 사용하여 보려는 구성 요소를 필터링할 수 있습니다. 사용자 지정 구성 요소에는 관리 코드 실행 파일, 라이브러리 어셈블리, 형식 라이브러리 및 *.ocx* 파일이 포함될 수 있습니다. C++ 사용자 지정 구성 요소는 추가할 수 없습니다. 사용자 지정 설정은 Visual Studio 사용자 애플리케이션 디렉터리, *%APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat*에 저장됩니다.
 
 **개체 브라우저**의 왼쪽 창에 어셈블리가 표시됩니다. 어셈블리를 확장하여 해당 노드가 포함하는 네임스페이스를 표시한 후 네임스페이스를 확장하여 해당 네임스페이스가 포함하는 형식을 표시할 수 있습니다. 형식을 선택한 경우 해당 멤버(예: 속성 및 메서드)가 오른쪽 창에 나열됩니다. 오른쪽 아래 창에는 선택한 항목에 대한 자세한 정보가 표시됩니다.
 

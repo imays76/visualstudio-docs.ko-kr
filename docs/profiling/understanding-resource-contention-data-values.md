@@ -1,8 +1,6 @@
 ---
 title: 리소스 경합 데이터 값 이해 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - concurrency profiling method
@@ -12,16 +10,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ffacfcd5eac9fd88cfd7bbaa2c7d2546836d87c6
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 3d62b21e83f057c2a1d2e4347b3d7bcf6dbc22ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948559"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896632"
 ---
 # <a name="understand-resource-contention-data-values"></a>리소스 경합 데이터 값 이해
 
-리소스 경합 프로파일링에서는 응용 프로그램에서 경쟁하는 스레드가 공유 리소스에 액세스하기 위해 대기해야 할 때마다 자세한 호출 스택 정보를 수집합니다.
+리소스 경합 프로파일링에서는 애플리케이션에서 경쟁하는 스레드가 공유 리소스에 액세스하기 위해 대기해야 할 때마다 자세한 호출 스택 정보를 수집합니다.
 
 리소스 경합 보고서에는 총 경합 수와 대기가 발생한 모듈, 함수, 소스 코드 줄 및 명령에서 리소스를 대기하는 데 소요된 총 시간이 표시됩니다.
 

@@ -1,8 +1,6 @@
 ---
 title: .NET 메모리 할당 뷰 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.allocation
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b7a473a7c6758fe58c82f8894822d3a250165a43
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f866eba741dd84286bc969e64b8c36068c824a90
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933679"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895547"
 ---
 # <a name="net-memory-allocations-view"></a>.NET 메모리 할당 뷰
 할당 뷰는 프로파일링 실행 중에 생성된 형식을 나열합니다. 각 형식은 형식의 할당에서 발생한 함수 실행 경로를 표시하는 호출 트리의 루트 노드입니다.  
