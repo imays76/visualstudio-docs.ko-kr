@@ -1,8 +1,7 @@
 ---
-title: UWP 앱의 응용 프로그램 속성 페이지
+title: UWP 앱의 애플리케이션 속성 페이지
 ms.date: 01/23/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - AppPackage.Properties.Application
@@ -13,20 +12,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 206c856eb87243fd6021c4ff8bb9f6890b8eaf25
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: 2808afab24fa4a78d881dd23cc2b1a8efa364b2a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384216"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898284"
 ---
-# <a name="application-property-page-uwp-projects"></a>응용 프로그램 속성 페이지(UWP 프로젝트)
+# <a name="application-property-page-uwp-projects"></a>애플리케이션 속성 페이지(UWP 프로젝트)
 
-**응용 프로그램** 속성 페이지를 사용하여 UWP(유니버설 Windows 플랫폼) 프로젝트의 어셈블리 및 패키지 정보와 대상 Windows 10 버전을 지정합니다.
+**애플리케이션** 속성 페이지를 사용하여 UWP(유니버설 Windows 플랫폼) 프로젝트의 어셈블리 및 패키지 정보와 대상 Windows 10 버전을 지정합니다.
 
 ![응용 프로그램 속성 페이지](media/application-page-uwp.png)
 
-**응용 프로그램** 페이지에 액세스하려면 **솔루션 탐색기**에서 프로젝트 노드를 선택합니다. 그런 다음, 메뉴 모음에서 **프로젝트** > **속성**을 선택합니다. 속성 페이지가 **응용 프로그램** 탭에서 열립니다.
+**애플리케이션** 페이지에 액세스하려면 **솔루션 탐색기**에서 프로젝트 노드를 선택합니다. 그런 다음, 메뉴 모음에서 **프로젝트** > **속성**을 선택합니다. 속성 페이지가 **애플리케이션** 탭에서 열립니다.
 
 ## <a name="general-section"></a>일반 섹션
 

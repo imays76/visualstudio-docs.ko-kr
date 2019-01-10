@@ -4,18 +4,17 @@ description: Visual Studio의 코드 편집기 및 다른 도구를 사용하여
 ms.date: 01/01/2018
 layout: LandingPage
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: landing-page
 author: gewarren
 ms.author: gewarren
 ms.workload:
 - multiple
-ms.openlocfilehash: fc1b75a41e7c321686d0107982eb9969c7a1e2bc
-ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
+ms.openlocfilehash: 06ce24ab0e0d668f4eef524826f2bf46a6fb29a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53425788"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855432"
 ---
 # <a name="write-and-manage-code-using-visual-studio"></a>Visual Studio를 사용하여 코드 작성 및 관리
 

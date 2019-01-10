@@ -1,8 +1,6 @@
 ---
 title: ItemDefinitionGroup 요소(MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 03/13/2017
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ItemDefinitionGroup
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 09aa3046c66b9b4beb825dad8e8bc648d50851d0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 89fba35aeef3b4e71494081dd1776c7a4248a05e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887191"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919497"
 ---
 # <a name="itemdefinitiongroup-element-msbuild"></a>ItemDefinitionGroup 요소(MSBuild)
 `ItemDefinitionGroup` 요소를 사용하면 기본적으로 프로젝트의 모든 항목에 적용되는 메타데이터 값인 항목 정의 집합을 정의할 수 있습니다. ItemDefinitionGroup을 사용하면 [CreateItem 작업](../msbuild/createitem-task.md) 및 [CreateProperty 작업](../msbuild/createproperty-task.md)을 사용할 필요가 없습니다. 자세한 내용은 [항목 정의](../msbuild/item-definitions.md)를 참조하세요.  
@@ -63,7 +61,7 @@ ms.locfileid: "49887191"
 | - | - |
 | [프로젝트](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일의 필수 루트 요소입니다. |
 
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드 예제에서는 m과 n이라는 두 메타 데이터 항목을 ItemDefinitionGroup에 정의합니다. 이 예제에서 기본 메타데이터 "m"은 Item "i"로 명시적으로 정의되지 않으므로 Item "i"에 적용됩니다. 그러나 기본 메타데이터 "n"은 Item "i"로 이미 정의되어 있으므로 Item "i"에 적용되지 않습니다.  
 
 ```xml  

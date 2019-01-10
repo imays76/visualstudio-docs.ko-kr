@@ -3,7 +3,6 @@ title: F# 도구
 description: F#에서 지원되는 Visual Studio의 기능에 대해 알아봅니다.
 ms.date: 07/11/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - F# features [Visual Studio]
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4512a6ad5efe519c203a764b18cdfc352ed6e81a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 18803d3033cc3aa1fdfb43620eb741ff1724ec74
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921433"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990087"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Visual F#을 사용하여 Visual Studio에서 개발
 
@@ -62,10 +61,10 @@ Visual Studio의 F#에서 다양한 프로젝트 및 항목 템플릿을 사용�
 
 |프로젝트 디자이너 페이지|관련 링크|설명|
 | - |-------------|-----------|
-|응용 프로그램|[응용 프로그램 페이지, 프로젝트 디자이너](reference/application-page-project-designer-csharp.md)|라이브러리 또는 실행 파일을 만드는지 여부, 응용 프로그램이 대상으로 지정하는 .NET Framework의 버전 및 응용 프로그램이 사용하는 리소스 파일이 저장되는 위치에 대한 정보와 같은 응용 프로그램 수준 설정 및 속성을 지정할 수 있습니다.|
+|애플리케이션|[애플리케이션 페이지, 프로젝트 디자이너](reference/application-page-project-designer-csharp.md)|라이브러리 또는 실행 파일을 만드는지 여부, 애플리케이션이 대상으로 지정하는 .NET Framework의 버전 및 애플리케이션이 사용하는 리소스 파일이 저장되는 위치에 대한 정보와 같은 애플리케이션 수준 설정 및 속성을 지정할 수 있습니다.|
 |빌드|[프로젝트 디자이너, 빌드 페이지](reference/build-page-project-designer-csharp.md)|코드가 컴파일되는 방식을 제어할 수 있습니다.|
 |빌드 이벤트|[빌드 이벤트 페이지, 프로젝트 디자이너](reference/build-events-page-project-designer-csharp.md)|컴파일 전후에 실행할 명령을 지정할 수 있습니다.|
-|디버그|[프로젝트 디자이너, 디버그 페이지](reference/debug-page-project-designer.md)|디버깅하는 동안 응용 프로그램 실행 방식을 제어할 수 있습니다. 사용할 명령 및 응용 프로그램의 시작 디렉터리, 네이티브 코드 및 SQL과 같이 활성화하려는 특수한 디버깅 모드가 포함됩니다.|
+|디버그|[프로젝트 디자이너, 디버그 페이지](reference/debug-page-project-designer.md)|디버깅하는 동안 애플리케이션 실행 방식을 제어할 수 있습니다. 사용할 명령 및 애플리케이션의 시작 디렉터리, 네이티브 코드 및 SQL과 같이 활성화하려는 특수한 디버깅 모드가 포함됩니다.|
 |패키지(.NET SDK에만 해당)|N/A|NuGet 패키지로 게시하려는 경우 NuGet 패키지 메타데이터를 정의할 수 있습니다.|
 |참조 경로|[프로젝트에서 참조 관리](managing-references-in-a-project.md)|코드가 사용하는 어셈블리를 검색할 위치를 지정할 수 있습니다.|
 |리소스(.NET SDK에만 해당)|N/A|기본 리소스 파일을 생성하고 관리할 수 있습니다.|

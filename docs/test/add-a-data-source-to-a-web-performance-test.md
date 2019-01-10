@@ -10,13 +10,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 6d2ae95883884909641541e0efe6e4efbc7fe06a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 52a6289d6b17528d31d66e26df2f15b85749aac3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065209"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823544"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>웹 성능 테스트에 데이터 소스 추가
 
@@ -30,7 +29,7 @@ ms.locfileid: "53065209"
 
 ![테스트할 웹 응용 프로그램 실행](../test/media/web_test_databinding_runwebapp.png)
 
-또한 솔루션에는 웹 응용 프로그램의 페이지를 탐색하는 웹 성능 테스트를 포함해야 합니다.
+또한 솔루션에는 웹 애플리케이션의 페이지를 탐색하는 웹 성능 테스트를 포함해야 합니다.
 
 ![웹 성능 테스트가 포함된 솔루션](../test/media/web_test_databinding_solution.png)
 

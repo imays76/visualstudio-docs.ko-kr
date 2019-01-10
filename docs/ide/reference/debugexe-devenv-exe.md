@@ -2,7 +2,6 @@
 title: -DebugExe(devenv.exe)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - Devenv, /DebugExe switch
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1badcaba6f6461f6a2c6b73580d8d12c50481c2b
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 99f256b47125f4e07ca5dc148c4351871389a94b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948779"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889412"
 ---
 # <a name="debugexe-devenvexe"></a>/DebugExe(devenv.exe)
 디버깅하도록 지정된 실행 파일을 엽니다.
@@ -33,14 +32,14 @@ Devenv /debugexe ExecutableFile
 ## <a name="arguments"></a>인수
  `ExecutableFile`
 
- 필수. .exe 파일의 경로 및 파일 이름.
+ 필수 요소. .exe 파일의 경로 및 파일 이름.
 
  .exe 파일이 없거나 존재하지 않는 경우 경고 또는 오류가 표시되지 않고 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]이(가) 정상적으로 시작됩니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
  `ExecutableFile` 매개 변수 다음에 나오는 모든 문자열은 해당 파일에 인수로 전달됩니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 예제는 디버깅을 위해 `MyApplication.exe` 파일을 엽니다.
 
 ```cmd

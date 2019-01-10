@@ -2,19 +2,18 @@
 title: 컨트롤의 코딩된 UI 테스트 사용
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b9f9256407f854e5e7eefbca0cdd767679b9c88c
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 84eb09b26318b00e5c0ec6e1be6b04013696bccf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895953"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858723"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>컨트롤의 코딩된 UI 테스트 사용
 
@@ -71,7 +70,7 @@ ms.locfileid: "52895953"
 4.  자식 컨트롤의 접근성 개체에 대해 <xref:System.Windows.Forms.AccessibleObject.Bounds%2A>, <xref:System.Windows.Forms.AccessibleObject.Name%2A>, <xref:System.Windows.Forms.AccessibleObject.Parent%2A>, <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.Navigate%2A> 및 <xref:System.Windows.Forms.AccessibleObject.Select%2A> 속성과 메서드를 재정의합니다.
 
 > [!NOTE]
-> 이 항목에서는 <xref:System.Windows.Forms.AccessibleObject>에 있는 액세스 가능성 샘플로부터 시작한 다음, 남은 절차의 해당 샘플에 빌드합니다. 액세스 가능성 샘플의 작동 가능 버전을 만들려면 콘솔 응용 프로그램을 만들고 *Program.cs*의 코드를 샘플 코드로 바꿉니다. Accessibility, System.Drawing 및 System.Windows.Forms에 대한 참조를 추가합니다. 빌드 경고를 제거하려면 Accessibility에 대한 **Interop 형식 포함**을 **False**로 변경합니다. 프로젝트의 출력 형식을 **콘솔 응용 프로그램**에서 **Windows 응용 프로그램**으로 변경하면 응용 프로그램을 실행할 때 콘솔 창이 표시되지 않습니다.
+> 이 항목에서는 <xref:System.Windows.Forms.AccessibleObject>에 있는 액세스 가능성 샘플로부터 시작한 다음, 남은 절차의 해당 샘플에 빌드합니다. 액세스 가능성 샘플의 작동 가능 버전을 만들려면 콘솔 애플리케이션을 만들고 *Program.cs*의 코드를 샘플 코드로 바꿉니다. Accessibility, System.Drawing 및 System.Windows.Forms에 대한 참조를 추가합니다. 빌드 경고를 제거하려면 Accessibility에 대한 **Interop 형식 포함**을 **False**로 변경합니다. 프로젝트의 출력 형식을 **콘솔 애플리케이션**에서 **Windows 애플리케이션**으로 변경하면 애플리케이션을 실행할 때 콘솔 창이 표시되지 않습니다.
 
 ## <a name="support-custom-property-validation-by-implementing-a-property-provider"></a>속성 공급자를 구현하여 사용자 지정 속성의 유효성 검사를 지원
 
@@ -180,13 +179,13 @@ ms.locfileid: "52895953"
 
 ## <a name="debug-your-property-provider-or-action-filter"></a>속성 공급자 또는 작업 필터 디버그
 
-속성 공급자 및 작업 필터는 확장 패키지에서 구현됩니다. 테스트 빌더는 응용 프로그램에서 별도의 프로세스로 확장 패키지를 실행합니다.
+속성 공급자 및 작업 필터는 확장 패키지에서 구현됩니다. 테스트 빌더는 애플리케이션에서 별도의 프로세스로 확장 패키지를 실행합니다.
 
 ### <a name="to-debug-your-property-provider-or-action-filter"></a>속성 공급자 또는 작업 필터를 디버그하려면
 
 1.  확장명 패키지의 디버그 버전을 빌드하고, *.dll* 및 *.pdb* 파일을 *%ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*에 복사합니다.
 
-2.  (디버거가 아닌 위치에서) 응용 프로그램을 실행합니다.
+2.  (디버거가 아닌 위치에서) 애플리케이션을 실행합니다.
 
 3.  코딩된 UI 테스트 빌더를 실행합니다.
 

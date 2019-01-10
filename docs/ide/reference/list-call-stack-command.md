@@ -2,7 +2,6 @@
 title: 호출 스택 목록 표시 명령
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.listcallstack
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e809af75f0a4a47da6af30a3d93748401ca4609d
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 066bf09da72f0f0bee91057c9547e5d3b2daf774
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512007"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929687"
 ---
 # <a name="list-call-stack-command"></a>호출 스택 목록 표시 명령
 현재 호출 스택을 표시합니다.
@@ -85,7 +84,7 @@ Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]
 
  선택 사항입니다. 스레드 `n`에 대한 호출 스택을 표시합니다. 스레드가 지정되지 않은 경우 현재 스레드에 대한 호출 스택을 표시합니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
  인수 또는 스위치에 대한 변경 내용은 이 명령의 이후 호출에 적용됩니다. Debug.ListCallStackby 자체를 실행하면 전체 호출 스택이 표시됩니다. 예를 들어 인덱스를 지정하는 경우
 
 ```cmd
@@ -102,7 +101,7 @@ kb 2
 
  현재 스택 프레임을 두 번째 프레임으로 설정할 수 있습니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cmd
 >Debug.CallStack /Count:4 /ShowTypes:yes
@@ -115,4 +114,4 @@ kb 2
 - [Visual Studio 명령](../../ide/reference/visual-studio-commands.md)
 - [명령 창](../../ide/reference/command-window.md)
 - [찾기/명령 상자](../../ide/find-command-box.md)
-- [Visual Studio 명령 별칭](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

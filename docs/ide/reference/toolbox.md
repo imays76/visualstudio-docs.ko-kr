@@ -2,7 +2,6 @@
 title: 도구 상자 창
 ms.date: 01/18/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vs.toolbox.general
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ef01cb4bb9b9ee3326d3d955aec9c41f9b15b144
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 46a3a0a415af9cddcba63040fd445de7869921e2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067857"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918614"
 ---
 # <a name="toolbox"></a>도구 상자
 
@@ -35,7 +34,7 @@ ms.locfileid: "53067857"
 > [!NOTE]
 > 일부 프로젝트 유형의 경우 **도구 상자**에 항목이 표시되지 않을 수 있습니다.
 
-프로젝트의 대상 .NET Framework 버전도 도구 상자에 표시되는 컨트롤 집합에 영향을 줍니다. 프로젝트 속성 페이지에서 .NET Framework의 다른 버전을 대상으로 지정하도록 프로젝트를 구성할 수 있습니다. **솔루션 탐색기**에서 프로젝트 노드를 선택한 다음, 메뉴 모음에서 **프로젝트** > **프로젝트 이름 속성**을 선택합니다. **응용 프로그램** 탭에서 **대상 프레임워크** 드롭다운을 사용합니다.
+프로젝트의 대상 .NET Framework 버전도 도구 상자에 표시되는 컨트롤 집합에 영향을 줍니다. 프로젝트 속성 페이지에서 .NET Framework의 다른 버전을 대상으로 지정하도록 프로젝트를 구성할 수 있습니다. **솔루션 탐색기**에서 프로젝트 노드를 선택한 다음, 메뉴 모음에서 **프로젝트** > **프로젝트 이름 속성**을 선택합니다. **애플리케이션** 탭에서 **대상 프레임워크** 드롭다운을 사용합니다.
 
 ## <a name="manage-the-toolbox-window-and-its-controls"></a>도구 상자 창 및 해당 컨트롤 관리
 

@@ -10,13 +10,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 6672bd1e38dee5b27d350b9d2e12626cef122115
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d90b2ace06b6840a061b1f559f6f2dc7aaa67b6b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068343"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894521"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>방법: 웹 성능 테스트 결과 뷰어에 대한 Visual Studio 추가 기능 만들기
 
@@ -32,11 +31,11 @@ ms.locfileid: "53068343"
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-## <a name="create-or-open-a-solution-that-contains-an-aspnet-web-application-and-a-web-performance-and-load-test-project"></a>ASP.NET 웹 응용 프로그램과 웹 성능 및 부하 테스트 프로젝트를 포함하는 솔루션 만들기 또는 열기
+## <a name="create-or-open-a-solution-that-contains-an-aspnet-web-application-and-a-web-performance-and-load-test-project"></a>ASP.NET 웹 애플리케이션과 웹 성능 및 부하 테스트 프로젝트를 포함하는 솔루션 만들기 또는 열기
 
 ### <a name="to-prepare-for-extending-the-web-performance-test-results-viewer"></a>웹 성능 테스트 결과 뷰어 확장을 준비하려면
 
-과정을 따라 하는 데 사용할 수 있도록 ASP.NET 웹 응용 프로그램과 이 ASP.NET 웹 응용 프로그램에 대한 웹 성능 테스트가 하나 이상 들어 있는 웹 성능 및 부하 테스트 프로젝트를 포함하는 비프로덕션 솔루션을 만들거나 엽니다.
+과정을 따라 하는 데 사용할 수 있도록 ASP.NET 웹 애플리케이션과 이 ASP.NET 웹 애플리케이션에 대한 웹 성능 테스트가 하나 이상 들어 있는 웹 성능 및 부하 테스트 프로젝트를 포함하는 비프로덕션 솔루션을 만들거나 엽니다.
 
 > [!NOTE]
 > ASP.NET 웹 애플리케이션과 웹 성능 테스트가 포함된 웹 성능 및 부하 테스트 프로젝트를 [방법: 웹 서비스 테스트 만들기](../test/how-to-create-a-web-service-test.md) 및 [코딩된 웹 성능 테스트 생성 및 실행](../test/generate-and-run-a-coded-web-performance-test.md)의 절차에 따라 만들 수 있습니다.
@@ -72,7 +71,7 @@ ms.locfileid: "53068343"
    > [!NOTE]
    > 이 항목의 샘플 코드에서는 Visual C#을 사용합니다.
 
-8. **응용 프로그램 호스트 선택** 페이지에서 **Visual Studio**를 선택하고 **Visual Studio 매크로**의 선택을 취소합니다.
+8. **애플리케이션 호스트 선택** 페이지에서 **Visual Studio**를 선택하고 **Visual Studio 매크로**의 선택을 취소합니다.
 
 9. **다음**을 선택합니다.
 
@@ -82,7 +81,7 @@ ms.locfileid: "53068343"
 
 11. **다음**을 선택합니다.
 
-12. **추가 기능 옵션 선택** 페이지에서 **호스트 응용 프로그램이 시작될 때 추가 기능을 로드합니다.** 를 선택합니다.
+12. **추가 기능 옵션 선택** 페이지에서 **호스트 애플리케이션이 시작될 때 추가 기능을 로드합니다.** 를 선택합니다.
 
 13. 나머지 확인란의 선택을 취소합니다.
 
@@ -283,7 +282,7 @@ ms.locfileid: "53068343"
 
 1.  **솔루션 탐색기**에서 WebPerfTestResultsViewerControl 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다.
 
-2.  **응용 프로그램** 탭을 선택한 다음, **대상 프레임워크** 드롭다운 목록을 선택하고, **.NET Framework 4**를 선택하고, **속성**을 닫습니다.
+2.  **애플리케이션** 탭을 선택한 다음, **대상 프레임워크** 드롭다운 목록을 선택하고, **.NET Framework 4**를 선택하고, **속성**을 닫습니다.
 
      이 단계는 **웹 성능 테스트 결과 뷰어**를 확장하는 데 필요한 DLL 참조를 지원하는 데 필요합니다.
 

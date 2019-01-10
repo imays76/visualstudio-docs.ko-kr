@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Visual Studio의 Python 기능에 대한 핵심 연습의 5단계로, Python 환경에서 패키지를 관리하는 Visual Studio의 기능을 보여줍니다.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 81dccdb276596e96e1a7064f796afa43de79f032
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 666b780506784d7c252d37bc018817101bcfede8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067290"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964973"
 ---
 # <a name="step-5-install-packages-in-your-python-environment"></a>5단계: Python 환경에서 패키지 설치
 
@@ -50,7 +49,7 @@ Python 개발자 커뮤니티에서는 사용자 소유의 프로젝트에 통�
 
    **Visual Studio 2017 버전 15.6** 이상에서는 IntelliSense 작업에 다른 더 빠른 방법을 사용하며, 그러한 목적으로 **IntelliSense** 탭에 메시지를 표시합니다.
 
-7. **파일** > **새로 만들기** > **프로젝트**에서 **Python 응용 프로그램** 템플릿을 선택하여 새 프로젝트를 만듭니다. 표시되는 코드 파일에서 이전 자습서 단계와 같이 코사인 웨이브를 만드는, 이번에만 도표로 표시된 다음 코드를 붙여넣습니다.
+7. **파일** > **새로 만들기** > **프로젝트**에서 **Python 애플리케이션** 템플릿을 선택하여 새 프로젝트를 만듭니다. 표시되는 코드 파일에서 이전 자습서 단계와 같이 코사인 웨이브를 만드는, 이번에만 도표로 표시된 다음 코드를 붙여넣습니다.
 
     ```python
     from math import radians

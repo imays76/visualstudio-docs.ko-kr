@@ -1,8 +1,6 @@
 ---
 title: GC(VSPerfCmd) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 7c81e88b-a748-4cf5-a7a1-3429608e1b54
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 45b93d3184a825c11e0a4742ad752c6a2c1c031e
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: f15cf7c5991187431c06a01c67c7105f48dc28de
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237567"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913219"
 ---
 # <a name="gc-vsperfcmd"></a>GC(VSPerfCmd)
 **GC** 옵션은 .NET Framework 메모리 할당 및 개체 수명 데이터의 수집을 활성화합니다. **GC** 옵션은 샘플링 프로파일링 방법 및 **Launch** 옵션과만 사용할 수 있습니다.  
@@ -41,10 +39,10 @@ VSPerfCmd.exe /Launch:AppName /GC[:{Allocation|Lifetime}] [Options]
  **GC** 옵션은 **Launch** 옵션에만 사용할 수 있습니다.  
   
  **Launch:** `AppName`  
- 지정된 응용 프로그램을 시작하고 샘플링 방법으로 프로파일링을 시작합니다.  
+ 지정된 애플리케이션을 시작하고 샘플링 방법으로 프로파일링을 시작합니다.  
   
-## <a name="example"></a>예  
- 다음 예제에서는 응용 프로그램을 시작하고 .NET Framework 메모리 할당 데이터를 수집합니다.  
+## <a name="example"></a>예제  
+ 다음 예제에서는 애플리케이션을 시작하고 .NET Framework 메모리 할당 데이터를 수집합니다.  
   
 ```cmd  
 VSPerfCmd.exe /Launch:TestApp.exe /gc  
@@ -52,6 +50,6 @@ VSPerfCmd.exe /Launch:TestApp.exe /gc
   
 ## <a name="see-also"></a>참고 항목  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [독립 실행형 응용 프로그램 프로파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [ASP.NET 웹 응용 프로그램 프로파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [독립 실행형 애플리케이션 프로파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [ASP.NET 웹 애플리케이션 프로파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [서비스 프로파일링](../profiling/command-line-profiling-of-services.md)

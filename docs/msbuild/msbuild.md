@@ -1,8 +1,6 @@
 ---
 title: MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, about MSBuild
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ea1db2c465c362fee0f3e06074b1cea3562d21fd
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: a3ea25520428783aaedc12e1666475feb104b583
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739947"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928804"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)]은 애플리케이션을 빌드하기 위한 플랫폼입니다. MSBuild라고도 하는 이 엔진은 빌드 플랫폼에서 소프트웨어를 처리하고 빌드하는 방법을 제어하는 프로젝트 파일에 대한 XML 스키마를 제공합니다. Visual Studio는 MSBuild를 사용하지만 Visual Studio에 종속되지 않습니다. 프로젝트 또는 솔루션 파일에서 *msbuild.exe*를 호출하여 Visual Studio가 설치되지 않은 환경에서 제품을 조정하고 빌드할 수 있습니다.

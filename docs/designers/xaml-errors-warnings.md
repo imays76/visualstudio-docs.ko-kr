@@ -2,7 +2,6 @@
 title: XAML 오류 및 경고
 ms.date: 03/06/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 34eac8a0-7ec5-4c40-b97a-0126ed367931
 author: karann-msft
@@ -10,12 +9,12 @@ ms.author: karann
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 09251f13cafa320e2736e9c61135283bb9e9739d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a7e0a5b4bde839e90bcf852273fa0872b1a5c76f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844187"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922614"
 ---
 # <a name="xaml-errors-and-warnings"></a>XAML 오류 및 경고
 
@@ -42,5 +41,3 @@ XAML을 작성하면 Visual Studio에서는 입력한 코드를 분석합니다.
 **XAML 디자이너에 의해 검색된 오류 표시** 확인란의 선택을 취소합니다.
 
 ![XAML 디자이너 오류 표시 안 함](../designers/media/suppress_xaml_designer_errors.png)
-
-
