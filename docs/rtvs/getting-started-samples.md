@@ -3,19 +3,18 @@ title: 샘플 R 프로젝트
 description: R 및 Visual Studio를 시작하기 위한 샘플 컬렉션의 인덱스입니다.
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: adb26b3cf6097d830c899ef4ef251d2066b81a38
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 80553e54489b5c887facca57f3491fd81fd8d24b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235446"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837461"
 ---
 # <a name="r-tools-for-visual-studio-sample-projects"></a>Visual Studio용 R 도구 샘플 프로젝트
 
@@ -61,7 +60,7 @@ ms.locfileid: "36235446"
 
 - `Datasets`에는 다른 샘플에서 사용되는 세 개의 *.csv* 파일이 포함됩니다.
 - `Flight_Delays_Prediction_with_R` 및 `Flight_Delays_Prediction_with_MRS`는 R, 기계 학습 및 기록 정시 성능/날씨 데이터를 사용하여 항공 지연을 예측하는 방법을 보여 줍니다. 
-- `Machine learning`에는 항공 지연, 주택 가격 및 자전거 임대를 예측하기 위한 세 가지 학습용 샘플이 포함되어 있습니다. 세 샘플은 모두, 실제 문제에 대한 R과 Microsoft ML Server의 응용 프로그램을 보여 줍니다. 이러한 항목은 여러 가지 인기 있는 기계 학습 모델을 사용하고 [Azure Machine Learning](https://azure.microsoft.com/services/machine-learning/) 작업 영역을 통해 Azure 웹 서비스로 배포하는 방법을 보여 줍니다.
+- `Machine learning`에는 항공 지연, 주택 가격 및 자전거 임대를 예측하기 위한 세 가지 학습용 샘플이 포함되어 있습니다. 세 샘플은 모두, 실제 문제에 대한 R과 Microsoft ML Server의 애플리케이션을 보여 줍니다. 이러한 항목은 여러 가지 인기 있는 기계 학습 모델을 사용하고 [Azure Machine Learning](https://azure.microsoft.com/services/machine-learning/) 작업 영역을 통해 Azure 웹 서비스로 배포하는 방법을 보여 줍니다.
 
 - `R_MRO_MRS_Comparison`은 R, Microsoft R Open 및 Microsoft ML Server의 명령, 구문, 생성 및 성능에 대한 유사점과 차이점을 보여 주는 6개 부분 비교입니다.
 
@@ -83,7 +82,7 @@ Microsoft의 R 배포인 [Microsoft R Open](http://aka.ms/rtvs-r-open)은 [CRAN 
 
 ![MKL이 있는 MLS/MRO 및 MKL이 없는 R/MRO 비교](media/samples-speed-comparison.png)
 
-R과 MRO/MLS의 기술적인 비교를 위해 항목에서 [Lixun Zhang의 자세한 설명](http://htmlpreview.github.io/?https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html)을 확인하세요.
+R과 MRO/MLS의 기술적인 비교를 위해 항목에서 [Lixun Zhang의 자세한 설명](http://htmlpreview.github.io/? https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html)을 확인하세요.
 
 다음 그림은 15분 이상의 항공 지연을 예측하는 로지스틱 회귀 모델을 작성하는 데 사용되는 경과된 시간(초)을 비교합니다.  적은 수의 행을 늘릴 때 CRAN R에 사용되는 경과된 시간은 대폭 증가하지만 MLS는 2배 정도씩만 증가합니다. 이 벤치마크에 대한 자세한 내용은 *벤치마크/rxGlm_benchmark.R*을 참조하세요.
 

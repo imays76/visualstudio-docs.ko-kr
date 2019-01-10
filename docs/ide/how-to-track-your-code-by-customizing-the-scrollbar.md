@@ -2,19 +2,18 @@
 title: 스크롤 막대 지도 모드 및 막대 모드
 ms.date: 09/25/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f60d7f573ed275ff4d827e0a4209f21444ee64c
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: c5fc435f2fe350c177cbff0e526d2f0221a93b89
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219954"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965073"
 ---
 # <a name="how-to-customize-the-scroll-bar"></a>방법: 스크롤 막대 사용자 지정
 

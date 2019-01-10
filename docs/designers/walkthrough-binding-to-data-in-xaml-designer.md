@@ -2,7 +2,6 @@
 title: XAML 디자이너에서 데이터에 바인딩
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner.DataBinding
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: f1effd15666839b6e48bcebf46120585c4cfc36c
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: f0d9ccd32c8f616e6f998bcd1f31773460c89a20
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282887"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866126"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>연습: XAML 디자이너에서 데이터에 바인딩
 
@@ -29,7 +28,7 @@ XAML 디자이너에서 아트보드와 속성 창을 사용하여 데이터 바
 
 1. **파일** 메뉴에서 **새로 만들기** > **프로젝트**를 차례로 선택합니다.
 
-1. **새 프로젝트** 대화 상자에서 **Visual C#** 또는 **Visual Basic** 노드를 선택하고, **Windows 바탕 화면** 노드를 펼친 다음, **WPF 응용 프로그램** 템플릿을 선택합니다.
+1. **새 프로젝트** 대화 상자에서 **Visual C#** 또는 **Visual Basic** 노드를 선택하고, **Windows 바탕 화면** 노드를 펼친 다음, **WPF 애플리케이션** 템플릿을 선택합니다.
 
 1. **BindingTest** 프로젝트 이름을 지정한 다음 **확인** 단추를 선택합니다.
 
