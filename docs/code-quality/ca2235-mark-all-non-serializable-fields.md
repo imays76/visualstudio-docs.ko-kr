@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 946e666faae07128378fc8063422446a39bd0791
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 484755feac873be04648cfef936b2faa701bba2c
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986572"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154152"
 ---
 # <a name="ca2235-mark-all-non-serializable-fields"></a>CA2235: 모두 serialize할 수 없는 필드로 표시하십시오.
 
@@ -39,6 +39,8 @@ ms.locfileid: "53986572"
 
 ## <a name="rule-description"></a>규칙 설명
  직렬화 가능 형식 것으로 표시 되는 <xref:System.SerializableAttribute?displayProperty=fullName> 특성입니다. 형식으로 serialize 될 때를 <xref:System.Runtime.Serialization.SerializationException?displayProperty=fullName> 형식을 직렬화 할 수 없는 형식의 인스턴스 필드를 포함 하는 경우 예외가 throw 됩니다.
+ 
+ 이 예외는 유형을 통해 사용자 지정 serialization을 사용 하는 경우는 <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> 인터페이스입니다. 이 인터페이스를 구현 하는 형식 자체 직렬화 논리를 제공 하 고 따라서 CA2235 이러한 형식의 직렬화 인스턴스 필드에 대해 발생 하지 않습니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  이 규칙 위반 문제를 해결 하려면 적용 된 <xref:System.NonSerializedAttribute?displayProperty=fullName> 특성을 직렬화 할 수 없는 필드입니다.

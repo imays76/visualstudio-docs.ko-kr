@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.tgt_pltfrm: ''
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +22,12 @@ caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 761264d80c04f0e2ce13a365071f56739d6961a2
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 55dad8adf4b3ce6e79214471c93052318f7228f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055169"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828058"
 ---
 # <a name="install-visual-studio-2015"></a>Visual Studio 2015 설치
 
@@ -116,7 +115,7 @@ ms.locfileid: "53055169"
 
  **Hyper-V를 사용한 디바이스 에뮬레이션**
 
- 가상화 없이 실제 하드웨어에서 Visual Studio 2015를 설치하는 경우 Hyper-V를 사용하여 Windows 및 Android 디바이스를 에뮬레이트할 수 있게 해주는 기능을 선택할 수 있습니다. Hyper-V에 설치하는 경우에는 Windows 또는 Android 디바이스를 에뮬레이트할 수 없습니다. 이는 에뮬레이터 자체가 가상 컴퓨터이기 때문이므로 현재 VM을 다른 VM 내부에 호스트할 수는 없습니다. 해결 방법은 직접 응용 프로그램을 배포 및 디버그할 수 있는 실제 Windows 또는 Android 디바이스를 보유하는 것입니다.
+ 가상화 없이 실제 하드웨어에서 Visual Studio 2015를 설치하는 경우 Hyper-V를 사용하여 Windows 및 Android 디바이스를 에뮬레이트할 수 있게 해주는 기능을 선택할 수 있습니다. Hyper-V에 설치하는 경우에는 Windows 또는 Android 디바이스를 에뮬레이트할 수 없습니다. 이는 에뮬레이터 자체가 가상 컴퓨터이기 때문이므로 현재 VM을 다른 VM 내부에 호스트할 수는 없습니다. 해결 방법은 직접 애플리케이션을 배포 및 디버그할 수 있는 실제 Windows 또는 Android 장치를 보유하는 것입니다.
 
 ##  <a name="optionalComponents"></a> 선택적 구성 요소 설치
  원래 설치 중 선택한 하지 않을 수 있습니다 하는 구성 요소를 설치 하려는 경우 다음 절차를 따르십시오.
@@ -195,7 +194,7 @@ ms.locfileid: "53055169"
 |[명령줄 매개 변수를 사용하여 Visual Studio 설치](/visualstudio/install/use-command-line-parameters-to-install-visual-studio)|명령 프롬프트에서 Visual Studio를 설치할 때 사용할 수 있는 명령줄 매개 변수를 나열 합니다.|
 |[Visual Studio 제거](../install/uninstall-visual-studio.md)|Visual Studio를 제거 하는 방법에 설명 합니다.|
 |[Visual Studio 관리자 가이드](../install/visual-studio-administrator-guide.md)|Visual Studio의 배포 옵션에 대한 정보를 제공합니다.|
-|[Visual Studio 이미지 라이브러리](../designers/the-visual-studio-image-library.md)|Visual Studio 응용 프로그램에서 사용할 수 있는 그래픽을 설치하는 방법에 대한 정보를 제공합니다.|
+|[Visual Studio 이미지 라이브러리](../designers/the-visual-studio-image-library.md)|Visual Studio 애플리케이션에서 사용할 수 있는 그래픽을 설치하는 방법에 대한 정보를 제공합니다.|
 |[Visual Studio에서 개발 시작](../ide/get-started-developing-with-visual-studio.md)|Visual Studio를 보다 효율적으로 사용할 수 있는 링크와 정보를 포함 합니다.|
 
 ## <a name="see-also"></a>참고 항목
