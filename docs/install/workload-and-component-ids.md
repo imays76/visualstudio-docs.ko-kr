@@ -13,18 +13,17 @@ helpviewer_keywords:
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.service: ''
-ms.technology: vs-acquisition
 ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b88d563ca5a3fa2114c6bff31cf01b2956e69a3
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 84711c13270fea4e1b7202d1bd04c8acdde911fe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159479"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932683"
 ---
 # <a name="visual-studio-2017-workload-and-component-ids"></a>Visual Studio 2017 작업 및 구성 요소 ID
 
@@ -38,8 +37,8 @@ ms.locfileid: "53159479"
 | [Visual&nbsp;Studio Professional&nbsp;2017](workload-component-id-vs-professional.md) | Microsoft.VisualStudio.Product.Professional | 소규모 팀을 위한 전문적인 개발자 도구 및 서비스 |
 | [Visual&nbsp;Studio Community&nbsp;2017](workload-component-id-vs-community.md) | Microsoft.VisualStudio.Product.Community | 학생, 오픈 소스 및 개인 개발자를 위한 모든 기능을 갖춘 무료 IDE |
 | [Visual&nbsp;Studio Team&nbsp;Explorer&nbsp;2017](workload-component-id-vs-team-explorer.md) | Microsoft.VisualStudio.Product.TeamExplorer | Visual Studio 개발자 도구 집합 없이 Team Foundation Server 및 Azure DevOps Services와 상호 작용 |
-| [Visual Studio Desktop Express 2017](workload-component-id-vs-express.md) | Microsoft.VisualStudio.Workload.WDExpress | 구문 인식 코드 편집, 소스 코드 제어, 작업 항목 관리로 WPF, WinForms, Win32 같은 네이티브 및 관리 응용 프로그램을 빌드합니다. C#, Visual Basic, Visual C++에 대한 지원이 포함됩니다. |
-| [Visual&nbsp;Studio Build&nbsp;Tools&nbsp;2017](workload-component-id-vs-build-tools.md) | Microsoft.VisualStudio.Product.BuildTools | Visual Studio Build Tools를 사용하면 Visual Studio IDE 없이도 네이티브 및 관리되는 MSBuild 기반 응용 프로그램을 빌드할 수 있습니다. Visual C++ 컴파일러 및 라이브러리, ATL, MFC, C++/CLI 지원 등을 설치하는 옵션이 있습니다. |
+| [Visual Studio Desktop Express 2017](workload-component-id-vs-express.md) | Microsoft.VisualStudio.Workload.WDExpress | 구문 인식 코드 편집, 소스 코드 제어, 작업 항목 관리로 WPF, WinForms, Win32 같은 네이티브 및 관리 애플리케이션을 빌드합니다. C#, Visual Basic, Visual C++에 대한 지원이 포함됩니다. |
+| [Visual&nbsp;Studio Build&nbsp;Tools&nbsp;2017](workload-component-id-vs-build-tools.md) | Microsoft.VisualStudio.Product.BuildTools | Visual Studio Build Tools를 사용하면 Visual Studio IDE 없이도 네이티브 및 관리되는 MSBuild 기반 애플리케이션을 빌드할 수 있습니다. Visual C++ 컴파일러 및 라이브러리, ATL, MFC, C++/CLI 지원 등을 설치하는 옵션이 있습니다. |
 | [Visual&nbsp;Studio Test&nbsp;Agent&nbsp;2017](workload-component-id-vs-test-agent.md)  | Microsoft.VisualStudio.Product.TestAgent | 자동화된 테스트 및 부하 테스트를 원격으로 실행하도록 지원 |
 | [Visual&nbsp;Studio Test&nbsp;Controller 2017 ](workload-component-id-vs-test-controller.md) | Microsoft.VisualStudio.Product.TestController | 자동화된 테스트를 여러 컴퓨터에 배포 |
 | [Visual&nbsp;Studio Test&nbsp;Professional&nbsp;2017](workload-component-id-vs-test-professional.md) | Microsoft.VisualStudio.Product.TestProfessional | Visual Studio Test Professional 2017 |

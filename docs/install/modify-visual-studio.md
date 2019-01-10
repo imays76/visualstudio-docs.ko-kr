@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Visual Studio를 수정하는 방법을 단계별로 알아봅니다.
 ms.custom: H1Hack27Feb2017,seodec18
 ms.date: 06/12/2018
-ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: efb52ebc55126fa167144803afc373317d735aae
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: c11e20343eea33a01c81525855e56078865340e8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160064"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831851"
 ---
 # <a name="modify-visual-studio-2017-by-adding-or-removing-workloads-and-components"></a>작업과 구성 요소를 추가하거나 제거하여 Visual Studio 2017 수정
 

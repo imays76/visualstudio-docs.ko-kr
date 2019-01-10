@@ -9,15 +9,14 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.devlang: multiple
 ms.service: multiple
-ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: e0377417da5859e38c46f99b3b335ba627261cb5
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
+ms.openlocfilehash: bb68e1b7b109b762f11410194076ab2b2eb30bb5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459700"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908555"
 ---
 # <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools for AI
 
@@ -26,7 +25,7 @@ Visual Studio Tools for AI는 딥 러닝/AI 솔루션을 빌드, 테스트 및 �
 [CNTK(Microsoft Cognitive Toolkit)](http://www.microsoft.com/en-us/cognitive-toolkit), [Google TensorFlow](https://www.tensorflow.org) 또는 기타 딥 러닝 프레임워크를 사용하여 딥 러닝을 시작합니다.
 
 ## <a name="develop-debug-and-deploy-deep-learning-models-and-ai-solutions"></a>딥 러닝 모델 및 AI 솔루션 개발, 디버그 및 배포
-Visual Studio의 생산성 기능을 사용하여 현재의 AI 혁신을 가속화합니다. 구문 강조, IntelliSense 및 텍스트 자동 서식과 같은 기본 제공 코드 편집기 기능을 사용합니다. 지역 변수 및 모델에 대한 단계별 디버깅을 사용하여 로컬 환경에서 딥 러닝 응용 프로그램을 대화형으로 테스트할 수 있습니다.
+Visual Studio의 생산성 기능을 사용하여 현재의 AI 혁신을 가속화합니다. 구문 강조, IntelliSense 및 텍스트 자동 서식과 같은 기본 제공 코드 편집기 기능을 사용합니다. 지역 변수 및 모델에 대한 단계별 디버깅을 사용하여 로컬 환경에서 딥 러닝 애플리케이션을 대화형으로 테스트할 수 있습니다.
 
 ![딥 러닝 IDE](media/about/ide.png)
 

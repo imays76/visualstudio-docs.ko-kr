@@ -1,8 +1,6 @@
 ---
 title: MSBuild 대상 프레임워크 및 대상 플랫폼 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 ms.assetid: df6517c5-edd6-4cc4-97ad-b3cdfc78e799
 author: mikejo5000
@@ -10,15 +8,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bfb45efc199ea1f643c71bdc19a90862bb6c5dd6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d3248fea80c2afe4ec2874bce381dda105ddd6ae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916064"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825614"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>MSBuild 대상 프레임워크 및 대상 플랫폼
-프로젝트는 특정 버전의 .NET Framework인 *대상 프레임워크* 및 특정 소프트웨어 아키텍처인 *대상 플랫폼*에서 실행되도록 빌드할 수 있습니다.  예를 들어 802x86 프로세서 제품군(“x86”)과 호환되는 32비트 플랫폼의 .NET Framework 2.0에서 실행되도록 응용 프로그램을 대상으로 지정할 수 있습니다. 대상 프레임워크와 대상 플랫폼의 조합을 *대상 컨텍스트*라고 합니다.  
+프로젝트는 특정 버전의 .NET Framework인 *대상 프레임워크* 및 특정 소프트웨어 아키텍처인 *대상 플랫폼*에서 실행되도록 빌드할 수 있습니다.  예를 들어 802x86 프로세서 제품군(“x86”)과 호환되는 32비트 플랫폼의 .NET Framework 2.0에서 실행되도록 애플리케이션을 대상으로 지정할 수 있습니다. 대상 프레임워크와 대상 플랫폼의 조합을 *대상 컨텍스트*라고 합니다.  
   
 ## <a name="target-framework-and-profile"></a>대상 프레임워크 및 프로필  
  대상 프레임워크는 빌드하는 프로젝트의 실행 기반인 특정 버전의 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]입니다. 대상 프레임워크의 사양은 해당 프레임워크 버전에만 해당되는 컴파일러 기능 및 어셈블리 참조를 사용할 수 있게 하므로 필수입니다.  
@@ -43,7 +41,7 @@ ms.locfileid: "49916064"
 
 - [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.7.1  
 
-.NET Framework의 버전은 목록에서 참조 가능하도록 만드는 어셈블리에 따라 서로 다릅니다. 예를 들어 프로젝트가 .NET Framework 버전 3.0 이상을 대상으로 하지 않는 경우 WPF(Windows Presentation Foundation) 응용 프로그램을 빌드할 수 없습니다.  
+.NET Framework의 버전은 목록에서 참조 가능하도록 만드는 어셈블리에 따라 서로 다릅니다. 예를 들어 프로젝트가 .NET Framework 버전 3.0 이상을 대상으로 하지 않는 경우 WPF(Windows Presentation Foundation) 애플리케이션을 빌드할 수 없습니다.  
 
 대상 프레임워크는 프로젝트 파일의 `TargetFrameworkVersion` 속성에서 지정됩니다. Visual Studio IDE(통합 개발 환경)의 프로젝트 속성 페이지를 사용하여 프로젝트의 대상 프레임워크를 변경할 수 있습니다. 자세한 내용은 [방법: 한 버전의 .NET Framework를 대상으로 지정](../ide/how-to-target-a-version-of-the-dotnet-framework.md)을 참조하세요. `TargetFrameworkVersion`에 사용할 수 있는 값은 `v2.0`, `v3.0`, `v3.5`, `v4.5.2`, `v4.6`, `v4.6.1`, `v4.6.2`, `v4.7` 및 `v4.7.1`입니다.  
   

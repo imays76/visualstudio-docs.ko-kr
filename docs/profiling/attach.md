@@ -1,8 +1,6 @@
 ---
 title: 연결 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 79614283-6733-4592-a53a-d428052271ad
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80b4000a8fc8657c1b82490b1ddb6dec0dbdd3ce
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bc094fe4d8ef59a17a64d654edff4a834964df79
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907237"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53901323"
 ---
 # <a name="attach"></a>연결
 *VSPerfCmd.exe* **Attach** 옵션은 PID(프로세스 ID)로 지정된 실행 중인 프로세스의 샘플 프로파일링을 시작합니다.  
@@ -39,7 +37,7 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
  다음 **VSPerfCmd** 옵션은 단일 명령줄에서 **Attach** 옵션과 함께 결합될 수 있습니다.  
   
  **Crosssession**  
- 로그온 세션 이외의 세션에서 프로파일링 응용 프로그램을 활성화합니다. **Start** 옵션이 **Crosssession** 옵션으로 지정된 경우 필요합니다.  
+ 로그온 세션 이외의 세션에서 프로파일링 애플리케이션을 활성화합니다. **Start** 옵션이 **Crosssession** 옵션으로 지정된 경우 필요합니다.  
   
  **Start:** `Method`  
  명령줄 프로파일러 세션을 초기화하고 지정된 프로파일링 방법을 설정합니다.  
@@ -67,8 +65,8 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
   
 -   **Counter** - `Name`에서 지정된 CPU 성능 카운터의 모든 `Reload` 수를 샘플링합니다. 필요에 따라 `FriendlyName`은 프로파일러 보고서의 열 헤더로 사용할 문자열을 지정할 수 있습니다.  
   
-## <a name="example"></a>예  
- 이 예제에서는 12345의 프로세스 ID로 응용 프로그램의 실행 중인 인스턴스에 연결하는 방법을 보여 줍니다.  
+## <a name="example"></a>예제  
+ 이 예제에서는 12345의 프로세스 ID로 애플리케이션의 실행 중인 인스턴스에 연결하는 방법을 보여 줍니다.  
   
 ```cmd  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
@@ -77,6 +75,6 @@ VSPerfCmd.exe /Attach:12345
   
 ## <a name="see-also"></a>참고 항목  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [독립 실행형 응용 프로그램 프로파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [ASP.NET 웹 응용 프로그램 프로파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [독립 실행형 애플리케이션 프로파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [ASP.NET 웹 애플리케이션 프로파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [서비스 프로파일링](../profiling/command-line-profiling-of-services.md)

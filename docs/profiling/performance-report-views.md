@@ -1,8 +1,6 @@
 ---
 title: 성능 보고서 뷰 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - reports, profiling tools
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16082a3d04a27355033fd96f3387652063f00cce
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3b83ed1ae187647f4e1025d18b4973cb1e25b399
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669545"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53844945"
 ---
 # <a name="performance-report-views"></a>성능 보고서 뷰
 이 섹션에서는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구의 보고서 및 뷰에 대한 참조 정보를 제공합니다. 프로파일링 데이터 파일의 뷰는 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] IDE(통합 개발 환경)에 표시됩니다. 보고서는 [VSPerfReport](../profiling/vsperfreport.md) 명령줄 도구를 통해 생성됩니다.  

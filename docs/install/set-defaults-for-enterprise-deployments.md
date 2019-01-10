@@ -2,7 +2,6 @@
 title: 엔터프라이즈 배포에 대한 기본값 설정
 description: Visual Studio의 엔터프라이즈 배포에 대한 도메인 정책 및 기타 구성 작업에 대해 알아봅니다.
 ms.date: 05/05/2017
-ms.technology: vs-acquisition
 ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -18,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a173a378ba2165963b8ea9b44e7391807584886b
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 55bc436db77b90f30cec39fe2d0d33e3a8c60bb1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159557"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906076"
 ---
 # <a name="set-defaults-for-enterprise-deployments-of-visual-studio-2017"></a>Visual Studio 2017의 엔터프라이즈 배포에 대한 기본값 설정
 
