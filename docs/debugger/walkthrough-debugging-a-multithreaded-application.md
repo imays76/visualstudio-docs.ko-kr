@@ -1,8 +1,6 @@
 ---
 title: 디버거에서 스레드를 보는 | Microsoft Docs
-ms.custom: ''
 ms.date: 10/29/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.threads
@@ -25,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 764eb46fb387e1a007362b02a0f62cf478c771fe
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e3b2ed9001d1096dca82a30dab29a67b9e962354
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066225"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946164"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window"></a>스레드 창을 사용 하 여 Visual Studio 디버거에서 스레드 보기
 에 **스레드** 창을 검토 하 고 수 디버그 중인 응용 프로그램에서 스레드를 사용 하 여 작동 합니다. 사용 하는 방법에 대 한 단계별 지침에 대 한 합니다 **스레드** 창 참조 [연습: 스레드 창을 사용 하 여 디버그](../debugger/how-to-use-the-threads-window.md)합니다.
@@ -38,7 +36,7 @@ ms.locfileid: "53066225"
 ## <a name="use-the-threads-window"></a>스레드 창 사용 
  합니다 **스레드** 창에 있는 각 행에 응용 프로그램에서 별도 스레드에서 테이블이 있습니다. 기본적으로 이 테이블에는 애플리케이션의 모든 스레드가 나열되지만 목록을 필터링하여 관심 있는 스레드만 표시할 수 있습니다. 각 열에는 다양 한 유형의 정보를 설명합니다. 일부 열을 숨길 수도 있습니다. 모든 열을 표시 하면 왼쪽에서 오른쪽으로 다음과 같은 열 표시:  
   
-- **플래그** 이 레이블이 지정 되지 않은 열에서 특별히 주의 하려는 스레드를 표시할 수 있습니다. 스레드에 플래그를 설정 하는 방법에 대 한 정보를 참조 하세요 [방법: 플래그 및 스레드의](../debugger/how-to-flag-and-unflag-threads.md)합니다.  
+- **플래그** 이 레이블이 지정 되지 않은 열에서 특별히 주의 하려는 스레드를 표시할 수 있습니다. 스레드에 플래그를 설정 하는 방법에 대 한 정보를 참조 하세요. [방법: 스레드에 플래그 지정 및 스레드의 플래그 해제](../debugger/how-to-flag-and-unflag-threads.md)  
   
 - 현재 스레드 이 레이블이 지정 되지 않은 열 노란색 화살표는 현재 스레드를 나타냅니다. 화살표 개요-현재 스레드에 대 한 현재 디버거 컨텍스트를 나타냅니다.
   
@@ -50,7 +48,7 @@ ms.locfileid: "53066225"
   
 - **name**)을 호출하여 표준 C 라이브러리 내에서 일치하는 로캘을 설정할 수 있습니다. 있는 경우 또는 이름으로 각 스레드를 식별 \<이름 없음 >.  
   
-- 위치 스레드가 실행 되 고 있는 보여 줍니다. 이 위치를 확장하여 스레드의 전체 호출 스택을 표시할 수 있습니다.  
+- **location**: 스레드가 실행 되 고 있는 보여 줍니다. 이 위치를 확장하여 스레드의 전체 호출 스택을 표시할 수 있습니다.  
   
 - 우선 순위 (기본적으로 숨김) 고급 열을 표시 하는 시스템에서 각 스레드에 할당 하는 우선 순위가 있습니다.  
   

@@ -2,7 +2,6 @@
 title: 원격 디버거 포트 할당 | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 05/18/2017
-ms.technology: vs-ide-debug
 ms.topic: reference
 ms.assetid: 238bb4ec-bb00-4c2b-986e-18ac278f3959
 author: mikejo5000
@@ -10,15 +9,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7b45a8673685dce5eabd0459f470525e5e2d99a
-ms.sourcegitcommit: 6efb9378a82924cb133912d207c6da4bd5a0b9c2
-ms.translationtype: HT
+ms.openlocfilehash: feb5b247bb3e7bb8814946f5648408323a33084c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53443875"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959750"
 ---
 # <a name="remote-debugger-port-assignments"></a>원격 디버거 포트 할당
-Visual Studio 원격 디버거는 응용 프로그램 또는 백그라운드 서비스로 실행할 수 있습니다. 애플리케이션으로 실행되는 경우 다음과 같이 기본적으로 할당되는 포트를 사용합니다.  
+Visual Studio 원격 디버거는 애플리케이션 또는 백그라운드 서비스로 실행할 수 있습니다. 애플리케이션으로 실행되는 경우 다음과 같이 기본적으로 할당되는 포트를 사용합니다.  
 
 - Visual Studio 2019: 4024
 
@@ -26,7 +25,7 @@ Visual Studio 원격 디버거는 응용 프로그램 또는 백그라운드 서
 
 - Visual Studio 2015: 4020  
   
-- Visual Studio 2013: 4018  
+- Visual Studio 2013:   
   
 - Visual Studio 2012: 4016  
   
