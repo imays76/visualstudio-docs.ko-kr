@@ -11,17 +11,17 @@ helpviewer_keywords:
 - sentences, selecting in documents
 - ranges, selecting in documents
 - ranges, defining in documents
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b6922613c7a1493d5b40b807166281ae11eb04d6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2955dcf0b205293fc31de65f159b51ece9c22ad9
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835502"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154475"
 ---
 # <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>방법: 프로그래밍 방식으로 정의 하 고 문서에서 범위를 선택 합니다.
   <xref:Microsoft.Office.Interop.Word.Range> 개체를 사용하여 Microsoft Office Word 문서의 범위를 정의할 수 있습니다. 사용 하 여 예를 들어, 다양 한 방법으로 전체 문서를 선택할 수 있습니다는 <xref:Microsoft.Office.Interop.Word.Range.Select%2A> 메서드를 <xref:Microsoft.Office.Interop.Word.Range> 개체 또는의 콘텐츠 속성을 사용 하 여는 <xref:Microsoft.Office.Tools.Word.Document> 클래스 (문서 수준 사용자 지정) 또는 <xref:Microsoft.Office.Interop.Word.Document> 클래스 (에 VSTO 추가 기능에).  
