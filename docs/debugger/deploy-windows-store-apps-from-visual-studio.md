@@ -2,7 +2,6 @@
 title: UWP 앱 배포 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 01/16/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -14,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: d8006fb0ddcab4ab3eeee1616632d2dc513428ba
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 38e3f53a22b7f8dfa84d327fb2c10ef5efacddd4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056813"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821317"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Visual Studio에서 UWP 앱 배포
 
@@ -29,7 +28,7 @@ Visual Studio 배포 기능을 작성 하 고 대상 장치에서 Visual Studio�
 
 - 대상이 원격 디바이스인 경우 Visual Studio에서는 원격 컴퓨터로 필수 파일을 복사한 다음 해당 디바이스에서 앱을 등록합니다.
 
-디버깅 시작** 옵션(키보드: F5 키) 또는 **디버깅 하지 않고 시작** 옵션 (키보드: CTRL+F5 또한 앱을 수동으로 배포할 수도 있습니다. 수동 배포는 다음 시나리오에서 유용합니다.
+사용 하 여 Visual Studio에서 앱을 디버그할 때 배포는 자동 합니다 **디버깅 시작** 옵션 (키보드: F5) 또는 **디버깅 하지 않고 시작** 옵션 (키보드: CTRL + F5). 또한 앱을 수동으로 배포할 수도 있습니다. 수동 배포는 다음 시나리오에서 유용합니다.
 
 - 로컬 또는 원격 컴퓨터에서 애드혹 테스트
 
@@ -48,7 +47,7 @@ Visual Studio 배포 기능을 작성 하 고 대상 장치에서 Visual Studio�
 
 3.  **빌드** 메뉴에서 **배포**를 선택합니다.
 
-##  <a name="BKMK_How_to_specify_a_remote_device"></a> 원격 장치 지정 방법
+##  <a name="BKMK_How_to_specify_a_remote_device"></a> 원격 디바이스 지정 방법
 
 **필수 구성 요소**
 
@@ -77,21 +76,21 @@ Windows 10 원격 장치에서 활성화 해야 합니다 [개발자 모드](/wi
 
     합니다 **원격 연결** 대화 상자에서 로컬 네트워크 서브넷의 모든 장치와 이더넷 케이블을 통해 Visual Studio 컴퓨터에 직접 연결 되어 장치가 표시 됩니다.
 
-   **JavaScript 또는 Visual C++ 프로젝트 페이지에서 원격 장치 지정**
+   **JavaScript 또는 Visual C++ 프로젝트 페이지에서 원격 디바이스 지정**
 
    ![C&#43; &#43; 프로젝트 속성 원격 디버깅용](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")
 
 7. **실행할 디버거** 목록에서 **원격 디버거** 를 선택합니다.
 
-8. **컴퓨터 이름** 상자에 원격 장치의 네트워크 이름을 입력합니다. 또는 상자에서 아래쪽 화살표를 선택하여 원격 디버거 연결 선택 대화 상자에서 디바이스를 선택할 수 있습니다.
+8. **컴퓨터 이름** 상자에 원격 디바이스의 네트워크 이름을 입력합니다. 또는 상자에서 아래쪽 화살표를 선택하여 원격 디버거 연결 선택 대화 상자에서 디바이스를 선택할 수 있습니다.
 
-   **Visual C# 및 Visual Basic 프로젝트 페이지에서 원격 장치 지정**
+   **Visual C# 및 Visual Basic 프로젝트 페이지에서 원격 디바이스 지정**
 
    ![원격 디버깅에 대 한 프로젝트 속성 관리](../debugger/media/vsrun_managed_projprop_remote.png "VSRUN_Managed_ProjProp_Remote")
 
-9. **대상 장치** 목록에서 **원격 컴퓨터** 를 선택합니다.
+9. **대상 디바이스** 목록에서 **원격 컴퓨터** 를 선택합니다.
 
-10. **원격 컴퓨터** 상자에 원격 장치의 네트워크 이름을 입력하거나 **찾기** 를 클릭하여 **원격 디버거 연결 선택** 대화 상자에서 장치를 선택합니다.
+10. **원격 컴퓨터** 상자에 원격 디바이스의 네트워크 이름을 입력하거나 **찾기** 를 클릭하여 **원격 디버거 연결 선택** 대화 상자에서 디바이스를 선택합니다.
 
 ##  <a name="BKMK_Deployment_options"></a> 배포 옵션
 
@@ -113,10 +112,10 @@ Windows 10 원격 장치에서 활성화 해야 합니다 [개발자 모드](/wi
 
 - 에 C# 및 Visual Basic 디버그 속성 페이지를 확인 합니다 **시작 하지 않음 시작 시 코드를 디버그** 확인란 합니다.
 
-- JavaScript 및 디버그 속성 페이지에서 **응용 프로그램 시작** 값을 **예**로 설정합니다.
+- JavaScript 및 디버그 속성 페이지에서 **애플리케이션 시작** 값을 **예**로 설정합니다.
 
 ## <a name="see-also"></a>참고 항목
 
 - [고급 원격 배포 옵션](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)
 - [설치된 앱 패키지 디버그](../debugger/debug-installed-app-package.md)
-- [Visual Studio에서 앱 실행](../debugger/run-store-apps-from-visual-studio.md)
+- [Visual Studio에서 앱 실행](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
