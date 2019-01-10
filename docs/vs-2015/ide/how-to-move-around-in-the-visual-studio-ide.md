@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -23,12 +22,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ea104d08216a4ef7bdb07fc42b5a22eb5352d757
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4c252f709875133be7b4106a55cd853fbb309635
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049621"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880986"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>방법: Visual Studio IDE에서 이동
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +56,7 @@ IDE(통합 개발 환경)는 기본 설정이나 프로젝트 요구 사항에 �
 
   **IDE 탐색기**, 편집기의 **활성 파일** 목록 또는 **창** 대화 상자를 사용하여, 마지막으로 파일에 액세스한 시점과 관계없이 편집기에 열려 있는 특정 파일로 전환할 수도 있습니다.
 
-  **IDE 탐색기**는 Windows 응용 프로그램 전환기와 매우 유사하게 작동합니다. IDE 탐색기는 메뉴에서 사용할 수 없으며 바로 가기 키를 사용해서만 액세스할 수 있습니다. 두 명령 중 하나를 사용하여 **IDE 탐색기**(아래 참조)에 액세스하고 순환하려는 순서에 따라 파일 전체를 순환할 수 있습니다.
+  **IDE 탐색기**는 Windows 애플리케이션 전환기와 매우 유사하게 작동합니다. IDE 탐색기는 메뉴에서 사용할 수 없으며 바로 가기 키를 사용해서만 액세스할 수 있습니다. 두 명령 중 하나를 사용하여 **IDE 탐색기**(아래 참조)에 액세스하고 순환하려는 순서에 따라 파일 전체를 순환할 수 있습니다.
 
   ![Visual Studio IDE 탐색기](../ide/media/vs2015-ide-navigator.png "VS2015_IDE_Navigator")
 

@@ -1,5 +1,5 @@
 ---
-title: Windows Forms 응용 프로그램에서 데이터 필터링 및 정렬
+title: Windows Forms 애플리케이션에서 데이터 필터링 및 정렬
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,17 +18,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1868d670458e204f6e503b132aaceab17f3da742
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
-ms.translationtype: MT
+ms.openlocfilehash: 6da584d4966d61a873ca43477930084c4f9a464b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750925"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890013"
 ---
-# <a name="filter-and-sort-data-in-a-windows-forms-application"></a>Windows Forms 응용 프로그램에서 데이터 필터링 및 정렬
+# <a name="filter-and-sort-data-in-a-windows-forms-application"></a>Windows Forms 애플리케이션에서 데이터 필터링 및 정렬
 
 설정 하 여 데이터를 필터링 합니다 <xref:System.Windows.Forms.BindingSource.Filter%2A> 속성을 원하는 레코드를 반환 하는 문자열 식입니다.
 
@@ -51,6 +50,6 @@ ms.locfileid: "50750925"
      [!code-csharp[VbRaddataDisplaying#7](../data-tools/codesnippet/CSharp/filter-and-sort-data-in-a-windows-forms-application_2.cs)]
      [!code-vb[VbRaddataDisplaying#7](../data-tools/codesnippet/VisualBasic/filter-and-sort-data-in-a-windows-forms-application_2.vb)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio에서 데이터에 컨트롤 바인딩](../data-tools/bind-controls-to-data-in-visual-studio.md)

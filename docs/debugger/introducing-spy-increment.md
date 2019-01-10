@@ -1,8 +1,6 @@
 ---
 title: Spy + + 소개 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Spy++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9fceb83f915eb1a90a781d886c84fd40651cc0a
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
-ms.translationtype: HT
+ms.openlocfilehash: 4126f4fde8109b9d67b3ad6a69c97395ddf1ef40
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647325"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950792"
 ---
 # <a name="introducing-spy"></a>Spy++ 소개
 Spy++에서는 다음 작업을 수행할 수 있습니다.  

@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_intro | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b025ebf2a3d800743c625fab97dc271f8320e75
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 05d520947c5e5e998ecf67a1b9dbb6d77bdff2c4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813377"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989544"
 ---
 # <a name="idiasymbolgetintro"></a>IDiaSymbol::get_intro
 함수를 소개 하는 가상 함수 인지 여부를 지정 하는 플래그를 검색 합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49813377"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT get_intro (   
+HRESULT get_intro (   
    BOOL* pRetVal  
 );  
 ```  

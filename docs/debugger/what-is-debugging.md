@@ -1,9 +1,8 @@
 ---
 title: 디버깅이란 무엇인가요?
 description: 앱을 디버그 하는 것을 이해합니다
-ms.custom: debug-experiments
+ms.custom: debug-experiment
 ms.date: 10/17/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - debugger
@@ -12,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f0aa6cbe09f902ef69e1fd5cb3a2d9712cabf28
-ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.openlocfilehash: c61e30e7085ff2f0f8cec5cc84d27efa0ea22be5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821450"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830971"
 ---
 # <a name="what-is-debugging"></a>디버깅이란 무엇인가요?
 

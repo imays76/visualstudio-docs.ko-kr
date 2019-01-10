@@ -2,7 +2,6 @@
 title: COM 클라이언트 및 서버 RPC 디버깅을 사용 하 여 디버그 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.com
@@ -27,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c5a6b2dc47e1d0e6c52df3cc77fc5b90f4d75e3
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d9df8a9dfeef620ba7afab517bc00e16717e7096
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049026"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874221"
 ---
 # <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>방법: RPC 디버깅을 사용하여 COM 클라이언트 및 서버 디버그
 RPC(원격 프로시저 호출) 디버깅을 사용하면 COM 클라이언트/서버 응용 프로그램을 디버깅할 수 있습니다. RPC 디버깅을 사용하려면 다음과 같은 방법으로 활성화해야 합니다. RPC 디버깅을 활성화하고 클라이언트에서 서버 호출을 한 단계씩 실행하면 디버거에서 서버에 연결하여 코드를 디버깅할 수 있습니다. 디버거를 연결하면 클라이언트 및 서버 프로세스에서 모든 디버거 기능을 사용할 수 있습니다.  

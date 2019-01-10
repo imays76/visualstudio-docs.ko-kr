@@ -2,19 +2,18 @@
 title: 그래픽 진단을 사용 하 여 시작 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 05/26/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 422a0fa4ea44cb3a605b8905282a5fe2a7e71e4c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d92969a52ac7ce97b31ab2e00e16d1d9913cd401
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055471"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919257"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Visual Studio 그래픽 진단 시작
 이 섹션에서는 처음으로 그래픽 진단 사용을 준비한 다음 Direct3D 앱에서 프레임을 캡처하고 Graphics Analyzer에서 검사합니다.  

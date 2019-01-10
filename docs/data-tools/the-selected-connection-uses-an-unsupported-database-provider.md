@@ -7,15 +7,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d102404cf14fecc89fc65773d283d748914bc0a5
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: cc74cea11e4c173a11f781af4ee78bf047353c53
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174175"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932066"
 ---
 # <a name="the-selected-connection-uses-an-unsupported-database-provider"></a>선택한 연결에서 지원되지 않는 데이터베이스 공급자를 사용합니다.
 
@@ -25,8 +24,8 @@ ms.locfileid: "37174175"
 
 이 오류를 해결 하려면 SQL Server에 대 한.NET Framework Data Provider를 사용 하는 데이터 연결의 항목만 추가 합니다 **O/R 디자이너**합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.Data.SqlClient>
 - [O/R 디자이너 메시지](../data-tools/o-r-designer-messages.md)
-- [Visual Studio에서 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Visual Studio의 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

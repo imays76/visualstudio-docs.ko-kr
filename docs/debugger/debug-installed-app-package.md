@@ -2,7 +2,6 @@
 title: 설치 된 UWP 앱 패키지 디버그 | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 11/07/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.installedapppackagelauncher
@@ -21,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 331fd642001f1e6217736185d4b3bbbd7f56923e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: 313fceed4715127696d04a7dfea6990e9cf18718
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51784418"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879746"
 ---
 # <a name="debug-an-installed-uwp-app-package-in-visual-studio"></a>Visual Studio에서 설치 된 UWP 앱 패키지 디버그
 
@@ -95,7 +94,7 @@ UWP 앱을 디버깅 하는 방법에 대 한 자세한 내용은 블로그 게�
 
 UWP 앱의 원격 배포에 대 한 자세한 내용은 참조 하세요. [UWP 앱을 배포 및 디버그](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options) 하 고 [원격 컴퓨터에서 디버그 하는 UWP 앱](run-windows-store-apps-on-a-remote-machine.md)합니다. 
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Visual Studio의 디버깅](../debugger/index.md)  
  [디버거 기능 둘러보기](../debugger/debugger-feature-tour.md)  
  [원격 디버깅](../debugger/remote-debugging.md)  

@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -16,12 +15,12 @@ caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 493b96d4c66c35a242efd4957288d215ab2877ed
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: bd2cf85abd5b36ba0a3797ef711b4c9364b35c4e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063291"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945199"
 ---
 # <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>방법: Visual c + + 프로젝트를 Visual Studio 2015로 업그레이드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +29,7 @@ Visual Studio 2017에 대 한 최신 설명서를 참조 하세요 [Visual c + +
 
 이전 버전의 Visual Studio에서 만든 Visual C++ 프로젝트를 처음 열면 프로젝트를 업데이트해야 한다는 메시지가 표시될 수 있습니다. 최신 버전의 Visual C++ 컴파일러와 라이브러리로 업그레이드할 것인지 묻는 메시지가 나타납니다. 업그레이드하는 방법은 프로젝트를 만드는 데 사용한 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 버전에 따라 달라집니다.
 
- [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]을 사용하여 [!INCLUDE[win8](../includes/win8-md.md)]에서 만든 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 프로젝트를 열거나 편집, 빌드할 수 있지만 새 [!INCLUDE[win8](../includes/win8-md.md)] 프로젝트를 만들려면 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]를 사용해야 합니다. [!INCLUDE[win81](../includes/win81-md.md)] 프로젝트를 만들려면 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]을 사용해야 합니다.
+ [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 을 사용하여 [!INCLUDE[win8](../includes/win8-md.md)] 에서 만든 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]프로젝트를 열거나 편집, 빌드할 수 있지만 새 [!INCLUDE[win8](../includes/win8-md.md)] 프로젝트를 만들려면 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]를 사용해야 합니다. [!INCLUDE[win81](../includes/win81-md.md)] 프로젝트를 만들려면 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]을 사용해야 합니다.
 
  Windows 10 프로젝트를 만들려면 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]를 사용해야 합니다.
 
@@ -38,7 +37,7 @@ Visual Studio 2017에 대 한 최신 설명서를 참조 하세요 [Visual c + +
 
 -   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 이전의 [!INCLUDE[vs2010](../includes/vs2010-md.md)]버전에서 프로젝트(.vcproj)를 만든 경우 해당 프로젝트를 업데이트해야 합니다.
 
--   [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 또는 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]에서 프로젝트(.vcxproj)를 만든 경우 두 가지 옵션이 있습니다.
+-   [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)],  [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]또는 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 에서 프로젝트(.vcxproj)를 만든 경우 두 가지 옵션이 있습니다.
 
     -   업데이트를 건너뛸 수 있습니다. [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]는 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1, [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 또는 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]의 Visual C++ 도구에 대한 액세스 권한이 있을 경우 프로젝트를 변경하지 않고 로드합니다. [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]가 있는 동일한 컴퓨터에서 프로젝트를 만드는 데 사용한 버전의 Visual Studio를 설치하여 이 액세스 권한을 제공할 수 있습니다. 자세한 내용은 [Installing Visual Studio Versions Side-by-Side](../install/install-visual-studio-versions-side-by-side.md)를 참조하세요.
 

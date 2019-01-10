@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_scoped | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0018bfdbf52f92a35dff3a21fb5baf71aab6639
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 11027e90e76a400b5a4c0a3ed155c53955efa558
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860009"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875698"
 ---
 # <a name="idiasymbolgetscoped"></a>IDiaSymbol::get_scoped
 비전역 어휘 범위에서 사용자 정의 데이터 형식에 표시 되는지 여부를 지정 하는 플래그를 검색 합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49860009"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT get_scoped (   
+HRESULT get_scoped (   
    BOOL* pRetVal  
 );  
 ```  

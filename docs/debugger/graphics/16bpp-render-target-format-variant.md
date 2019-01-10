@@ -1,8 +1,6 @@
 ---
 title: 16bpp 렌더링 대상 형식 변형 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 24b22ad9-5ad0-4161-809a-9b518eb924bf
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f9c72abaaf1a799316686c77b127952f1fe4f689
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: ab58cbcd6644d540b7db2efb1cad59e5d80f8530
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832892"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986663"
 ---
 # <a name="16-bpp-render-target-format-variant"></a>16 비트 렌더링 대상 형식 변형
 모든 렌더링 대상 및 백 버퍼에 대한 픽셀 형식을 DXGI_FORMAT_B5G6R5_UNORM으로 설정합니다.  
@@ -47,7 +45,7 @@ ms.locfileid: "49832892"
 
    타일 식된 렌더링 기술을 사용 하는 GPU 아키텍처는 16 비트 프레임 버퍼 형식을 사용 하 여 상당한 성능 이점을 확인할 수 있습니다. 이러한 향상 된이 기능 이므로 프레임 버퍼의 큰 부분이 각 타일의 로컬 프레임 버퍼 캐시에 맞출 수 있습니다. 타일식 렌더링 아키텍처는 경우에 따라 모바일 송수화기 및 태블릿 컴퓨터의 GPU에 있으므로 이 방식의 아키텍처가 이러한 위치 밖으로 드러나는 일은 거의 없습니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  렌더링 대상을 만드는 `ID3D11Device::CreateTexture2D`에 대한 호출 시 마다 렌더링 대상 형식은 DXGI_FORMAT_B5G6R5_UNORM으로 다시 설정됩니다. 특히 이 형식은 pDesc에서 전달된 D3D11_TEXTURE2D_DESC 개체가 렌더링 대상을 설명하는 경우 재정의됩니다. 즉, 다음과 같은 경우입니다.  
   
 -   BindFlags 멤버에 D3D11_BIND_REDNER_TARGET 플래그 집합이 있는 경우  

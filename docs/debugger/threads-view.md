@@ -1,8 +1,6 @@
 ---
 title: 스레드 뷰 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.externaltools.spyplus.threadsview
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a9fee7a73d54434b08bfb1e24c95ae8c9a0d0b6b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 616a426192b15353b2d30a8f910619f5333cb5fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854600"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913519"
 ---
 # <a name="threads-view"></a>스레드 뷰
 스레드 뷰는 시스템에서 windows와 사용 하 여 연결 된 모든 스레드에 대 한 플랫 목록이 있습니다. 스레드 ID 및 각 스레드에 대해 모듈 이름이 표시 됩니다. 프로세스 포함 되지 않습니다. 하지만 선택된 된 스레드를 소유 하는 프로세스를 쉽게 찾을 수 있습니다.  

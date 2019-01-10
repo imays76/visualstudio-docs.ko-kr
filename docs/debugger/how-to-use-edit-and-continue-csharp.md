@@ -1,8 +1,6 @@
 ---
-title: '방법: 편집을 사용 하 고 계속 하기 (C#) | Microsoft Docs'
-ms.custom: ''
+title: '방법: 사용 하 여 편집 하며 계속 하기 (C#) | Microsoft Docs'
 ms.date: 10/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 41e97f488344e3d34ce326a3d35880d94da4ad9a
-ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
-ms.translationtype: MT
+ms.openlocfilehash: b694f2d3603c9b768a9a4ddbf7b2c66cf5c61b21
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49382807"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861970"
 ---
 # <a name="how-to-use-edit-and-continue-c"></a>방법: 편집하며 계속하기 사용(C#)
 편집 하며 계속 하기를 사용 하 여를 중지 하 고 디버깅 세션을 다시 시작 하지 않고도 디버깅 하는 동안 중단 모드에서 코드 변경 내용을 적용 합니다.  

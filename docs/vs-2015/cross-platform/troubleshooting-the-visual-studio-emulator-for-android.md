@@ -5,20 +5,19 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
 caps.latest.revision: 25
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: c1d8310cb2585dfd2041ce25fd4301b557521911
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 01c73e4701d98422323b92918bd96d0d09bf2dfb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068233"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841345"
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Troubleshooting the Visual Studio Emulator for Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,7 +116,7 @@ ms.locfileid: "53068233"
 
 -   하드 드라이브가 거의 가득 찼습니다. 드라이브의 사용 가능한 공간을 확인합니다.
 
--   실행 중인 다른 응용 프로그램으로 인해 메모리가 부족합니다. 메모리를 소비하는 응용 프로그램의 수를 줄이거나 메모리 양을 늘립니다.
+-   실행 중인 다른 애플리케이션으로 인해 메모리가 부족합니다. 메모리를 소비하는 애플리케이션의 수를 줄이거나 메모리 양을 늘립니다.
 
 -   일반적으로 시스템의 성능 저하는 다양한 요인에 의해 발생할 수 있습니다. 제어판의 성능 정보 및 도구 페이지에서 찾을 수 있는 Windows 체험 지수에서 항목별 점수가 가장 낮은 구성 요소의 문제부터 해결합니다.
 
@@ -199,9 +198,9 @@ ms.locfileid: "53068233"
 
    다음 제품은 Windows 8 규정 준수에 대 한 업그레이드가 필요할 수 있습니다. VirtualBox, Virtual PC 7, VMWare, 일부 VPN 클라이언트, 소프트웨어 방화벽, 일부 버전의 Cisco VPN 클라이언트 및 다른 가상화 시스템입니다. 문제가 있을 수 있는 가상화 소프트웨어의 개발자에게 Windows 8 및 Hyper-V와 호환되도록 소프트웨어를 업그레이드하도록 권장하세요.
 
-   **해결 방법**으로, 에뮬레이터에서 Visual Studio와 통신하는 데 사용하는 가상 네트워크에 방해가 될 수 있는 모든 타사 드라이버 및 응용 프로그램을 사용하지 않도록 설정할 수 있습니다. 이러한 응용 프로그램에는 다음이 포함될 수 있습니다.
+   **해결 방법**으로, 에뮬레이터에서 Visual Studio와 통신하는 데 사용하는 가상 네트워크에 방해가 될 수 있는 모든 타사 드라이버 및 애플리케이션을 사용하지 않도록 설정할 수 있습니다. 이러한 애플리케이션에는 다음이 포함될 수 있습니다.
 
-  - 바이러스 백신 응용 프로그램(네트워크 스택에 연결)
+  - 바이러스 백신 애플리케이션(네트워크 스택에 연결)
 
   - 네트워크 모니터링 도구
 
@@ -309,7 +308,7 @@ ms.locfileid: "53068233"
  **추가 도구** 창에서 스크린샷 탭을 사용하여 스크린샷을 찍었으나 결과 이미지 크기가 예상과 다른 경우 **캡처**를 선택하기 전에 화면의 확대/축소 수준을 조정해야 할 수 있습니다. 에뮬레이터는 호스트 PC 모니터의 화면 해상도로 스크린샷을 찍습니다.
 
 ##  <a name="OpenGL"></a> 에뮬레이터가 OpenGL 콘텐츠를 렌더링하지 못함
- 에뮬레이터는 호스트 컴퓨터의 GPU를 사용하여 OpenGL 콘텐츠를 렌더링하고 ANGLE 프로젝트를 사용하여 DirectX와의 사이에서 이러한 호출을 변환합니다. 응용 프로그램이 디바이스에서는 올바르게 렌더링하지만 에뮬레이터에서는 그렇지 못할 경우 디바이스가 잘못된 OpenGL 호출을 완화시키는 것일 수 있습니다(예: 일치하지 않는 셰이더 변수 사용).
+ 에뮬레이터는 호스트 컴퓨터의 GPU를 사용하여 OpenGL 콘텐츠를 렌더링하고 ANGLE 프로젝트를 사용하여 DirectX와의 사이에서 이러한 호출을 변환합니다. 애플리케이션이 장치에서는 올바르게 렌더링하지만 에뮬레이터에서는 그렇지 못할 경우 장치가 잘못된 OpenGL 호출을 완화시키는 것일 수 있습니다(예: 일치하지 않는 셰이더 변수 사용).
 
 ##  <a name="Multitouch"></a> 에뮬레이터가 멀티 터치 제스처에 응답하지 않음
  일부 경우에는 에뮬레이터가 시작되지만 터치 지원 디스플레이의 직접적인 조작을 통해 또는 에뮬레이터 도구 모음의 멀티 터치 도구를 사용하여 멀티 터치에 응답하지 않습니다. 이러한 경우 에뮬레이터 도구 모음에서 **회전** 단추를 선택하고 멀티 터치를 다시 사용해 봅니다. 문제가 계속되면 [에뮬레이터가 OpenGL 콘텐츠를 렌더링하지 못함](#OpenGL) 문제를 확인하세요.

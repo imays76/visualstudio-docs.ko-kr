@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_numberOfModifiers | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d1946620d17df6eb239f8f042d05c58478b54516
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 911e5f405dd7889378b62d9ec5bef3c943d3c85f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465397"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875795"
 ---
 # <a name="idiasymbolgetnumberofmodifiers"></a>IDiaSymbol::get_numberOfModifiers
 원본 형식에 적용 되는 한정자의 수를 검색 합니다.  
@@ -31,10 +29,10 @@ HRESULT get_numberOfModifiers(
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out] 에 대 한 포인터는 `DWORD` 원본 형식에 적용 되는 한정자의 수를 지정 하 합니다.  
+ [out] 에 대 한 포인터를 `DWORD` 한정자 원본 형식에 적용 되는 횟수를 지정 하는 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
+ 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_parambasepointerregisterid | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b74250c453f42b4591bb87ef0a281d74de3b489
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: cd02fde67db2b72d34df9d04a16ebc9c80d197e6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852884"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833098"
 ---
 # <a name="idiasymbolgetparambasepointerregisterid"></a>IDiaSymbol::get_paramBasePointerRegisterId
 매개 변수에 기본 포인터를 보유 하는 레지스터의 ID를 검색 합니다. 사용 시기를 [SymTagEnum 열거형](../../debugger/debug-interface-access/symtagenum.md) 로 설정 된 `SymTagFunction`합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49852884"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT get_paramBasePointerRegisterId (   
+HRESULT get_paramBasePointerRegisterId (   
    DWORD* pRetVal  
 );  
 ```  
@@ -42,10 +40,10 @@ HRESULT get_paramBasePointerRegisterId (
 > [!NOTE]
 >  반환 값이 `S_FALSE` 속성 기호를 사용할 수 없는 것을 의미 합니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: Dia2.h  
+ 헤더: dia2.h  
   
  라이브러리: diaguids.lib  
   

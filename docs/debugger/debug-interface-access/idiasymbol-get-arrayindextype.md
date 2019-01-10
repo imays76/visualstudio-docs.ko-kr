@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_arrayindextype | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a3d8890e4a1a891cc1efe622b78e185b83a32f81
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: dacaba9db4a05eaaf173cc4936b075782b725025
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882408"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820879"
 ---
 # <a name="idiasymbolgetarrayindextype"></a>IDiaSymbol::get_arrayIndexType
 기호의 배열 인덱스 형식의 기호 인터페이스를 검색합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49882408"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT get_arrayIndexType (   
+HRESULT get_arrayIndexType (   
    IDiaSymbol** pRetVal  
 );  
 ```  
@@ -42,7 +40,7 @@ HRESULT get_arrayIndexType (
 > [!NOTE]
 >  반환 값이 `S_FALSE` 속성 기호를 사용할 수 없는 것을 의미 합니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  일부 언어에는 배열에 대 한 인덱스로 사용 되는 유형을 지정할 수 있습니다. 이 메서드에서 반환 된 기호에 해당 형식을 지정 합니다.  
   
 ## <a name="requirements"></a>요구 사항  

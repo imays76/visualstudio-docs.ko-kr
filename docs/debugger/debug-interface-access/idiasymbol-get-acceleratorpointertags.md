@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_acceleratorPointerTags | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24db7164335a8deffbac7cb4f62207a974f6efb9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 5e65def0ac8e94b2f113332981f57c051896f6bd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460673"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875461"
 ---
 # <a name="idiasymbolgetacceleratorpointertags"></a>IDiaSymbol::get_acceleratorPointerTags
-C + + AMP 액셀러레이터 스텁 함수에 해당 하는 모든 액셀러레이터 포인터 태그 값을 반환 합니다.  
+C + + AMP 액셀러레이터 스텁 함수에 해당 하는 모든 가속기 포인터 태그 값을 반환 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -39,13 +37,13 @@ HRESULT get_acceleratorPointerTags(
  [out] C + + AMP 액셀러레이터 스텁 함수에서 가속기 포인터 태그의 수입니다.  
   
  `pPointerTags`  
- [out] A `DWORD` c + + AMP 액셀러레이터 스텁 함수에서 가속기 포인터 태그 값으로 채워진 배열 포인터입니다.  
+ [out] `DWORD` 배열 포인터를 c + + AMP 액셀러레이터 스텁 함수에서 가속기 포인터 태그 값으로 채워집니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
+ 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
   
-## <a name="remarks"></a>설명  
- 이 메서드는 프로그램 `IDiaSymbol` c + + AMP 액셀러레이터 스텁 함수에 해당 하는 인터페이스입니다.  
+## <a name="remarks"></a>주의  
+ 이 메서드가 호출 되는 `IDiaSymbol` c + + AMP 액셀러레이터 스텁 함수에 해당 하는 인터페이스입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

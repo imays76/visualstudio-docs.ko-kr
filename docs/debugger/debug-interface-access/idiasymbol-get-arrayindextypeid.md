@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_arrayindextypeid | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc761032c3a64200057f5e793aca80b1684c0d20
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 013f3283b4a362e05a9fd7d9bf80c70963991b50
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818655"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990531"
 ---
 # <a name="idiasymbolgetarrayindextypeid"></a>IDiaSymbol::get_arrayIndexTypeId
 기호의 배열 인덱스 형식 식별자를 검색합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49818655"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT get_arrayIndexTypeId (   
+HRESULT get_arrayIndexTypeId (   
    DWORD* pRetVal  
 );  
 ```  
@@ -42,7 +40,7 @@ HRESULT get_arrayIndexTypeId (
 > [!NOTE]
 >  반환 값이 `S_FALSE` 속성 기호에 사용할 수 없다는 것을 의미 합니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  식별자에는 고유 하 게 모든 기호를 표시 하려면 DIA SDK에서 만든 고유 값입니다.  
   
 ## <a name="requirements"></a>요구 사항  

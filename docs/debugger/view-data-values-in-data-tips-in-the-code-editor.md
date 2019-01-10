@@ -2,7 +2,6 @@
 title: DataTips에서 변수 값을 확인 합니다. | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/21/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c84c6c9049fe11de16267267df86c88851cfcdfe
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: dede10e7488bf36cbf8920572ceea0e21f6f6583
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066852"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898075"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>코드 편집기에서 DataTips의 데이터 값 보기
 
@@ -131,4 +130,3 @@ DataTips를 공유 하거나 텍스트 편집기를 사용 하 여 편집할 수
  [디버깅 소개](../debugger/debugger-feature-tour.md) [디버거에서 데이터 보기](../debugger/viewing-data-in-the-debugger.md)   
  [조사식 및 간략한 조사식 창](../debugger/watch-and-quickwatch-windows.md)   
  [Create Custom Visualizers of Data](../debugger/create-custom-visualizers-of-data.md)(데이터의 사용자 지정 시각화 도우미 만들기)   
-

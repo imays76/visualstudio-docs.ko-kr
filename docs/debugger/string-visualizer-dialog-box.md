@@ -1,8 +1,6 @@
 ---
 title: 문자열 시각화 도우미에서 문자열을 보기 | Microsoft Docs
-ms.custom: ''
 ms.date: 10/10/2018
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.stringviewer
@@ -22,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb447a29ea669dbea3a68312884760f8984cc2de
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: d4808e1a6f3086e15162bf2f25c1df369ab90866
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388558"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53901232"
 ---
 # <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>Visual Studio에서 문자열 시각화 도우미에서 문자열 보기
 

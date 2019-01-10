@@ -1,8 +1,6 @@
 ---
 title: '방법: 메시지 뷰 제어 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Spy++, Messages View
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64b83107d4dda72aea7db9e9c911305c96de7097
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 299bed89ecd2c73b1f8e8fe976bf570a19a6b20f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836374"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944394"
 ---
 # <a name="how-to-control-messages-view"></a>방법: 메시지 뷰 제어
 Spy + +를 사용 하 여 제어할 수 상당한의 콘텐츠를 [메시지 보기](../debugger/messages-view.md) 창입니다. 할 수 있습니다 [시작 및 중지](../debugger/how-to-start-and-stop-the-message-log-display.md) 지정할 수 있으며 언제 든 지 메시지를 표시 합니다.  

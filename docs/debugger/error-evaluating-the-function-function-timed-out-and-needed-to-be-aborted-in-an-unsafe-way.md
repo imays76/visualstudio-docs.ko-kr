@@ -1,26 +1,24 @@
 ---
 title: '오류: 함수를 계산 &#39;함수&#39; 시간이 초과 되어 안전 하지 않은 방식으로 중단 하는 데 필요한 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.unsafe_func_eval_abort
-ms.technology: vs-ide-debug
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 459ece9551ce8bd64703db139f8024ece4953cfa
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: a72bd821d7ecd32e82b2ad3b02debe03ff511531
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648550"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883313"
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>오류: 함수를 계산 &#39;함수&#39; 시간이 초과 되어 안전 하지 않은 방식으로 중단 하는 데 필요한
 
-전체 메시지 텍스트: 'function' 함수를 계산하는 중 시간이 초과되어 안전하지 않은 방식으로 중단해야 했습니다. 대상 프로세스를 손상 있을 수 있습니다. 
+전체 메시지 텍스트: ‘function’ 함수를 계산하는 중 시간이 초과되어 안전하지 않은 방식으로 중단해야 했습니다. 대상 프로세스를 손상 있을 수 있습니다. 
 
 디버거는 쉽게.NET 개체의 상태를 검사 추가 코드 (일반적으로 속성 getter 메서드 및 ToString 함수)를 실행 하는 디버깅된 프로세스를 자동으로 실행 됩니다. 대부분의 모든 시나리오에서 이러한 함수는 신속 하 게 완료 하 고 디버깅을 훨씬 쉽게 확인 합니다. 그러나 디버거 샌드박스에서 응용 프로그램을 실행 하지 않습니다. 결과적으로, 속성 getter 또는 중단 된 네이티브 함수를 호출 하는 ToString 메서드를 복구할 수 없는 긴 시간 제한이 발생할 수 있습니다. 이 오류 메시지에서 발견 되 면이 발생 했습니다.
  
@@ -48,10 +46,6 @@ ms.locfileid: "53648550"
  
 이전 해결 방법이 문제를 해결 하지 하는 경우 이동할 **도구** > **옵션**, 설정의 선택을 취소 **디버깅**  >   **일반적인** > **속성 확인 및 기타 암시적 함수 호출**합니다. 대부분의 암시적 함수 실행이 비활성화 됩니다 하 고 문제를 해결 해야 합니다.
 
-### <a name="solution-4-enable-managed-compatibility-mode"></a>솔루션(&S) 관리 되는 호환성 모드를 사용 하도록 설정
+### <a name="solution-4-enable-managed-compatibility-mode"></a>'{0}' 솔루션 관리 되는 호환성 모드를 사용 하도록 설정
 
 레거시 디버깅 엔진으로 전환 하면이 오류를 제거할 수 있습니다. 로 이동 **도구** > **옵션**에서 설정을 선택 하 고 **디버깅** > **일반**  >  **사용 하 여 관리 되는 호환성 모드**합니다. 자세한 내용은 [디버깅 옵션 일반](../debugger/general-debugging-options-dialog-box.md)합니다.
-
-
-
-  

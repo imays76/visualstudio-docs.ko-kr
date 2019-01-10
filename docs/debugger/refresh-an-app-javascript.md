@@ -1,8 +1,6 @@
 ---
 title: UWP 앱 새로 고침 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,16 +18,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: a45564f34fe0167821febb511a023c01f7c38358
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 43f232157ef9237ba9d401f473ab0db1b1260f40
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476282"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828725"
 ---
-# <a name="refresh-a-uwp-app-in-visual-studio"></a>Visual Studio에서 UWP 앱 새로 고침
+# <a name="refresh-a-uwp-app-in-visual-studio"></a>Visual Studio에서 UWP 앱을 새로 고침
   
- 디버그 중이면 디버깅을 다음 선택 하 여 JavaScript를 사용 하는 UWP 앱 새로 고침 하는 동안 코드에는 변경할 수는 **Windows 앱 새로 고침** 단추는 **디버그** 도구 모음입니다. 이 단추를 선택하면 디버거를 중지하여 다시 시작하지 않고 응용 프로그램을 다시 로드합니다. 새로 고침 기능을 사용하면 HTML, CSS 및 JavaScript 코드를 수정하고 결과를 빠르게 확인할 수 있습니다. 이 기능은 UWP 앱에 대 한 지원 됩니다.  
+ 디버깅 하 고 다음 JavaScript를 사용 하 여 선택 하 여 UWP 앱 새로 고침 하는 동안 코드에는 변경할 수는 **새로 고침 Windows 앱** 단추를 **디버그** 도구 모음입니다. 이 단추를 선택하면 디버거를 중지하여 다시 시작하지 않고 응용 프로그램을 다시 로드합니다. 새로 고침 기능을 사용하면 HTML, CSS 및 JavaScript 코드를 수정하고 결과를 빠르게 확인할 수 있습니다. 이 기능은 UWP 앱에 대 한 지원 됩니다.  
   
  새로 고침을 수행하면 응용 프로그램 상태가 유지되지 않으며 응용 프로그램에 다음 변경 사항이 반영됩니다.  
   
@@ -56,11 +54,11 @@ ms.locfileid: "31476282"
   
 4.  Visual Studio로 
   
-5.  UWP 앱의 홈 페이지의 HTML 중 일부를 편집 합니다.
+5.  UWP 앱의 홈 페이지에서 HTML의 일부를 편집 합니다.
   
-7.  클릭는 **Windows 앱 새로 고침** 다음과 같은 단추: ![새로 고침 Windows 응용 프로그램 단추](../debugger/media/js_refresh.png "JS_Refresh")합니다. 또는 F4 키를 누릅니다.  
+7.  Windows 앱 새로 고침 **단추(**)를 클릭합니다. ![Windows 응용 프로그램 단추를 새로 고칠](../debugger/media/js_refresh.png "JS_Refresh")합니다. 또는 F4 키를 누릅니다.  
   
-8.  응용 프로그램으로 전환합니다. 응용 프로그램을 다시 로드 하 고 업데이트 된 HTML 응용 프로그램을 렌더링에 사용 됩니다.
+8.  응용 프로그램으로 전환합니다. 앱은 다시 로드 및 업데이트 된 HTML 앱을 렌더링에 사용 됩니다.
   
 ## <a name="see-also"></a>참고 항목  
  [빠른 시작: HTML 및 CSS 디버그](../debugger/quickstart-debug-html-and-css.md)

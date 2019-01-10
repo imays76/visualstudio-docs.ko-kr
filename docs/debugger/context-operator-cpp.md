@@ -1,8 +1,6 @@
 ---
-title: 컨텍스트 연산자 (c + +) 디버거에서 | Microsoft 문서
-ms.custom: ''
+title: 컨텍스트 연산자 (c + +) 디버거에서 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.operators
@@ -24,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e520b40e5a2f4bf6bb7c3a7b6c2ab50930773578
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 9222a36bd1e03a1f213a0d3ea0e86e269e912d12
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862400"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889581"
 ---
 # <a name="context-operator-in-the-visual-studio-debugger-c"></a>컨텍스트 연산자 (c + +) Visual Studio 디버거에서
 C++에서 컨텍스트 연산자를 사용하여 중단점 위치, 변수 이름 또는 식을 한정할 수 있습니다. 컨텍스트 연산자는 로컬 이름에 의해 숨겨진 외부 범위에서 이름을 지정하는 데 유용합니다.  

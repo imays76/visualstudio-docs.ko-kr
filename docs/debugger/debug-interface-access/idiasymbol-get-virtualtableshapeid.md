@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_virtualtableshapeid | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 95e911bce6e09cdc8fc474ffbe42446eb4f1ae5b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 898156d9583b91d0105fa9a6f1e6051f4a48ddf8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850908"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860103"
 ---
 # <a name="idiasymbolgetvirtualtableshapeid"></a>IDiaSymbol::get_virtualTableShapeId
 기호의 가상 테이블 모양 기호 식별자를 검색합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49850908"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT get_virtualTableShapeId (   
+HRESULT get_virtualTableShapeId (   
    DWORD* pRetVal  
 );  
 ```  
@@ -42,7 +40,7 @@ HRESULT get_virtualTableShapeId (
 > [!NOTE]
 >  반환 값이 `S_FALSE` 속성 기호에 사용할 수 없다는 것을 의미 합니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  식별자에는 고유 하 게 모든 기호를 표시 하려면 DIA SDK에서 만든 고유 값입니다.  
   
 ## <a name="see-also"></a>참고 항목  

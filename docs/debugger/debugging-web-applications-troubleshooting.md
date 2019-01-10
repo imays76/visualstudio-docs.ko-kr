@@ -2,7 +2,6 @@
 title: 문제 해결-웹 앱 디버깅 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b5f931a9942a89ae56836b5fbe91473b9dc9f568
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 664ec654d52b8b5c17ff89429ba1f78033cfffc7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063997"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923587"
 ---
 # <a name="debugging-web-applications-troubleshooting"></a>웹 애플리케이션 디버그: 문제 해결
 이 단원에는 오류를 해결하는 데 사용할 수 있는 일반적인 절차가 포함되어 있습니다.  
@@ -37,5 +36,5 @@ ms.locfileid: "53063997"
  [웹 애플리케이션 디버그: 오류 및 문제 해결](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
  오류 및 문제 해결에 대해 설명합니다.  
   
- [웹 응용 프로그램 및 스크립트 디버그](../debugger/debugging-web-applications-and-script.md)  
+ [웹 애플리케이션 및 스크립트 디버그](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)  
  [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], XML Web services 및 ATL 서버 프로젝트 등의 웹 응용 프로그램 디버깅에 대해 간략히 설명합니다.

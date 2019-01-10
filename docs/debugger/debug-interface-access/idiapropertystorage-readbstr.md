@@ -1,8 +1,6 @@
 ---
 title: IDiaPropertyStorage::ReadBSTR | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47272cbfc572d85af631edb6d33cf6a0c6f4b20d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 52964bd2b8e915d45be46346c18422af18ddd71d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909070"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948224"
 ---
 # <a name="idiapropertystoragereadbstr"></a>IDiaPropertyStorage::ReadBSTR
 읽고 `BSTR` 속성 집합의 값입니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49909070"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT ReadBSTR (   
+HRESULT ReadBSTR (   
    PROPID id,  
    BSTR*  pValue  
 );  
@@ -43,7 +41,7 @@ HRESULT ReadBSTR (
 ## <a name="return-value"></a>반환 값  
  성공 하면 반환 `S_OK`; 그렇지 않으면 오류 코드를 반환 합니다. 반환 `E_INVALIDARG` 형식의 속성이 없는 경우 `BSTR`합니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  `BSTR` 0으로 끝나는 와이드 문자열로 Windows에 의해 정의 됩니다.  
   
 ## <a name="see-also"></a>참고 항목  

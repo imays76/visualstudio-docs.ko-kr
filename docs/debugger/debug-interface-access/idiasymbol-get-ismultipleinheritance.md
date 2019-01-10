@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_isMultipleInheritance | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab7f0d789527f874f3d3b80b44c58347d1cd84f3
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: e1c55ddf07f033971d23c0dd568281a005966400
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465293"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951747"
 ---
 # <a name="idiasymbolgetismultipleinheritance"></a>IDiaSymbol::get_isMultipleInheritance
-지정 여부는 `this` 다중 상속으로 데이터 멤버를 가리키는 포인터입니다.  
+지정 여부는 `this` 다중 상속을 사용 하 여 데이터 멤버를 가리킵니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -31,10 +29,10 @@ HRESULT get_isMultipleInheritance(
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out] 에 대 한 포인터는 `BOOL` 지정 하는 여부는 `this` 다중 상속으로 데이터 멤버를 가리키는 포인터입니다.  
+ [out] 에 대 한 포인터를 `BOOL` 지정 하는 여부를 `this` 다중 상속을 사용 하 여 데이터 멤버를 가리킵니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
+ 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_nested | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04ac690ea408c51b029b01264c9ac5a2009d674b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 2a6911f603041bf7e717780fefde71e61683f13e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880483"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847998"
 ---
 # <a name="idiasymbolgetnested"></a>IDiaSymbol::get_nested
 사용자 정의 데이터 형식에 중첩 되어 있는지 여부를 지정 하는 플래그를 검색 합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49880483"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT get_nested (   
+HRESULT get_nested (   
    BOOL* pRetVal  
 );  
 ```  

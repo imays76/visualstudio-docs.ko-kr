@@ -1,9 +1,7 @@
 ---
 title: 다중 스레드 앱 디버깅
 description: 스레드 창 및 디버그 위치 도구 모음을 사용 하 여 Visual Studio에서 디버그
-ms.custom: ''
 ms.date: 11/21/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd66d7f9d8f214e8e7166a77162553b694e20cc5
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: f86e85fd7f5d8c767b64d55efd0837de9f99b340
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389405"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893709"
 ---
 # <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window"></a>연습: 스레드 창을 사용 하 여 다중 스레드 앱 디버깅
 
@@ -99,7 +97,7 @@ ms.locfileid: "52389405"
 
 1. 엽니다는 **디버그 위치** 를 선택 하 여 도구 모음 **보기** > **도구 모음** > **디버그 위치**합니다. 도구 모음 영역에서 마우스 오른쪽 단추로 클릭 하 고 선택 해도 있습니다 **디버그 위치**합니다. 
    
-1. 합니다 **디버그 위치** 도구 모음에 세 개의 필드가: **프로세스**에 **스레드**, 및 **스택 프레임**합니다. 드롭다운을 **스레드** 목록 및 스레드 수는 있습니다. 에 **스레드** 목록에서 현재 실행 중인 스레드와로 표시 되는 **>** 기호입니다. 
+1. 합니다 **디버그 위치** 도구 모음에 세 개의 필드가 있습니다. **프로세스**, **스레드**, 및 **스택 프레임이**합니다. 드롭다운을 **스레드** 목록 및 스레드 수는 있습니다. 에 **스레드** 목록에서 현재 실행 중인 스레드와로 표시 되는 **>** 기호입니다. 
    
 1. 소스 코드 창에서 여백에서 스레드 마커 아이콘 위에 놓고 DataTip에서 플래그 아이콘 (또는 빈 플래그 아이콘 중 하나)를 선택 합니다. 빨간색 플래그 아이콘으로 바뀝니다. 
    

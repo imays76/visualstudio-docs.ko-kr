@@ -10,15 +10,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2276828a67cec2562063d220ef3173d98fdf487b
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: HT
+ms.openlocfilehash: b3b51946c9fbf6ba38249c8ca7056179b58ee8a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174295"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852494"
 ---
 # <a name="query-datasets"></a>데이터 세트 쿼리
 데이터 집합의 특정 레코드를 검색 하려면 사용 합니다 `FindBy` 메서드는 DataTable에서 테이블의 행 컬렉션을 반복 하거나 사용 하 여 사용자 고유의 foreach 문을 작성할 [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset)합니다.
@@ -96,6 +95,6 @@ ms.locfileid: "37174295"
      [!code-csharp[VbRaddataDatasets#7](../data-tools/codesnippet/CSharp/query-datasets_5.cs)]
      [!code-vb[VbRaddataDatasets#7](../data-tools/codesnippet/VisualBasic/query-datasets_5.vb)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-- [Visual Studio의 데이터 집합 도구](../data-tools/dataset-tools-in-visual-studio.md)
+- [Visual Studio의 데이터 세트 도구](../data-tools/dataset-tools-in-visual-studio.md)

@@ -3,7 +3,6 @@ title: 라이브 ASP.NET Azure 앱 디버그
 description: Snappoint를 설정 하 고 스냅숏 디버거를 사용 하 여 스냅숏을 보는 방법에 알아봅니다.
 ms.custom: mvc
 ms.date: 03/16/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - debugger
@@ -14,12 +13,12 @@ manager: douge
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: d3dcc5390eac698f3c135c23d497073340bbd8b2
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: bcb25566d530f85d5ac9a8d1a5f32c770a07bf21
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648822"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863997"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>스냅숏 디버거를 사용 하 여 라이브 ASP.NET Azure 앱 디버그
 

@@ -1,8 +1,6 @@
 ---
 title: BC 텍스처 압축 변형 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 2d0f5305-585b-4b01-bc9a-7a32d6e991da
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 919191ec29ad45a8385d32b82de99d44fcdaa2ea
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 8149c6d544d6967b454c7c307e01bdfa3f3afbfa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922447"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986429"
 ---
 # <a name="bc-texture-compression-variant"></a>BC 텍스처 압축 변형
 B8G8R8X8, B8G8R8A8 또는 R8G8B8A8의 변형인 픽셀 형식이 있는 질감에 대한 블록 압축을 사용하도록 설정합니다.  
@@ -25,7 +23,7 @@ B8G8R8X8, B8G8R8A8 또는 R8G8B8A8의 변형인 픽셀 형식이 있는 질감�
   
  질감이 블록 기반 압축에 적절하고 완벽한 색 충실도가 필요 없는 경우 블록 압축 형식을 사용하여 메모리와 대역폭 사용량을 줄일 것을 고려해 보세요.   
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  원본 질감을 만드는 `ID3DDevice::CreateTexture2D`를 호출할 때마다 블록 기반 압축 형식을 사용하여 질감을 압축합니다. 특히, 질감은 다음과 같은 경우 압축됩니다.  
   
 - `D3D11_TEXTURE2D_DESC`에서 전달된 `pDesc` 개체가 변하지 않는 셰이더를 설명하는 경우, 즉 다음과 같은 경우입니다.  

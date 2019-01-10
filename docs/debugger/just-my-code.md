@@ -1,8 +1,6 @@
 ---
 title: 내 코드만 사용 하 여 사용자 코드를 디버그 | Microsoft Docs
-ms.custom: ''
 ms.date: 10/22/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 0f0df097-bbaf-46ad-9ad1-ef5f40435079
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 01e36c528b71bb49b29265890ca6c48863f01be9
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 99c31291e31821f79e23f507e37003c571a8ab7c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389029"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952049"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>내 코드만 사용 하 여 사용자 코드만 디버깅 
 
@@ -139,10 +137,10 @@ A *.natstepfilter* 파일은이 구문 사용 하 여 XML 파일:
   
 |요소|설명|  
 |-------------|-----------------|  
-|`Function`|필수. 하나 이상의 함수를 사용자가 작성하지 않은 함수로 지정합니다.|  
-|`Name`|필수. 일치시킬 전체 함수 이름을 지정하는 ECMA 262 형식의 정규식입니다. 예:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> `MyNS::MyClass`의 모든 메서드를 사용자가 작성하지 않은 코드로 간주하도록 디버거에 지시합니다. 일치 항목 찾기에서는 대/소문자를 구분합니다.|  
+|`Function`|필수 요소. 하나 이상의 함수를 사용자가 작성하지 않은 함수로 지정합니다.|  
+|`Name`|필수 요소. 일치시킬 전체 함수 이름을 지정하는 ECMA 262 형식의 정규식입니다. 예:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> `MyNS::MyClass`의 모든 메서드를 사용자가 작성하지 않은 코드로 간주하도록 디버거에 지시합니다. 일치 항목 찾기에서는 대/소문자를 구분합니다.|  
 |`Module`|선택 사항입니다. 함수를 포함하는 모듈의 전체 경로를 지정하는 ECMA 262 형식의 정규식입니다. 일치 항목 찾기에서는 대/소문자를 구분하지 않습니다.|  
-|`Action`|필수. 대/소문자를 구분하는 다음 값 중 하나입니다.<br /><br /> `NoStepInto`  -함수를 디버거에 지시 합니다.<br /> `StepInto`  -다른 재정의 함수를 한 단계씩 실행 하도록 디버거에 지시 `NoStepInto` 일치 하는 함수에 대 한 합니다.|  
+|`Action`|필수 요소. 대/소문자를 구분하는 다음 값 중 하나입니다.<br /><br /> `NoStepInto`  -함수를 디버거에 지시 합니다.<br /> `StepInto`  -다른 재정의 함수를 한 단계씩 실행 하도록 디버거에 지시 `NoStepInto` 일치 하는 함수에 대 한 합니다.|  
   
 ###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a> C + + 호출 스택 동작 사용자 지정  
 
@@ -177,20 +175,20 @@ A *.natjmc* 파일은이 구문 사용 하 여 XML 파일:
   
 |특성|설명|  
 |---------------|-----------------|  
-|`Name`|필수. 모듈의 전체 경로입니다. Windows 와일드 카드 문자를 사용할 수 있습니다 `?` (0 개 이상의 문자) 및 `*` (0 개 이상의 문자). 예를 들어 개체에 적용된<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> 모든 모듈에서 처리 하도록 디버거에 지시 *\3rdParty\UtilLibs* 외부 코드로 모든 드라이브에서.|  
+|`Name`|필수 요소. 모듈의 전체 경로입니다. Windows 와일드 카드 문자를 사용할 수 있습니다 `?` (0 개 이상의 문자) 및 `*` (0 개 이상의 문자). 예를 들어 개체에 적용된<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> 모든 모듈에서 처리 하도록 디버거에 지시 *\3rdParty\UtilLibs* 외부 코드로 모든 드라이브에서.|  
 |`Company`|선택 사항입니다. 실행 파일에 포함된 모듈을 게시하는 회사의 이름입니다. 이 특성을 사용하여 모듈을 구분할 수 있습니다.|  
   
  **파일 요소 특성**  
   
 |특성|설명|  
 |---------------|-----------------|  
-|`Name`|필수. 외부 코드로 처리할 소스 파일의 전체 경로입니다. 경로를 지정할 때 Windows 와일드 카드 문자 `?` 및 `*`를 사용할 수 있습니다.|  
+|`Name`|필수 요소. 외부 코드로 처리할 소스 파일의 전체 경로입니다. 경로를 지정할 때 Windows 와일드 카드 문자 `?` 및 `*`를 사용할 수 있습니다.|  
   
  **함수 요소 특성**  
   
 |특성|설명|  
 |---------------|-----------------|  
-|`Name`|필수. 외부 코드로 처리할 함수의 정규화된 이름입니다.|  
+|`Name`|필수 요소. 외부 코드로 처리할 함수의 정규화된 이름입니다.|  
 |`Module`|선택 사항입니다. 함수를 포함하는 모듈의 이름 또는 전체 경로입니다. 이 특성을 사용하여 동일한 이름을 가진 함수를 구분할 수 있습니다.|  
 |`ExceptionImplementation`|`true`로 설정된 경우 이 함수 대신 예외를 발생시킨 함수가 호출 스택에 표시됩니다.|  
   

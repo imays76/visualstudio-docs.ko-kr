@@ -1,8 +1,6 @@
 ---
 title: ManagedType | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -16,18 +14,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d7f9058c207ff7830a6e3580e0a5bc66759973ef
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 486739ae466431397e514d3248857fc606a74d6a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469752"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888246"
 ---
 # <a name="managedtype"></a>ManagedType
-관리 되는 형식 (메타 데이터 또는 네이티브 C#과 같은 언어의 메모리 및 리소스 관리 기능에 의해 정의 된 모든 기호)으로 식별 되는 `SymTagManagedType` 기호입니다.  
+관리 되는 형식 (같은 메타 데이터 또는 네이티브 언어의 메모리 및 리소스 관리 기능에 의해 정의 된 기호 C#)으로 식별 되는 `SymTagManagedType` 기호입니다.  
   
 ## <a name="properties"></a>속성  
- 다음 표에서이 기호 형식에 대 한 유효한 추가 속성을 보여 줍니다.  
+ 다음 표에서이 기호 형식에 대 한 추가 올바른 속성을 보여 줍니다.  
   
 |속성|데이터 형식|설명|  
 |--------------|---------------|-----------------|  

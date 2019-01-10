@@ -16,15 +16,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4a0d248f59754d3f46e8fab0e0924c36a80b0d89
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
-ms.translationtype: HT
+ms.openlocfilehash: 0f4c77e4d2f8d0c75f71942cf61213210bc680ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305548"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944829"
 ---
 # <a name="pass-data-between-forms"></a>폼 간에 데이터 전달
 
@@ -188,7 +187,7 @@ Form1에서 선택한 고객의 주문을 로드 하도록 Form2에 TableAdapter
 
 ## <a name="run-the-app"></a>앱 실행
 
--   **F5** 키를 눌러 응용 프로그램을 실행합니다.
+-   **F5** 키를 눌러 애플리케이션을 실행합니다.
 
 -   **Form1**에서 고객 레코드를 두 번 클릭하여 해당 고객의 주문이 포함된 **Form2**를 엽니다.
 

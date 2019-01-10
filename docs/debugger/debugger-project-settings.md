@@ -1,8 +1,6 @@
 ---
 title: 디버거 프로젝트 설정 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a027307ef960a8b0185daa34374e20270bf2fa19
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: 5d10cac5cec53440da687717e6737bd38ff35f8f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152988"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865876"
 ---
 # <a name="debugger-project-settings"></a>디버거 프로젝트 설정
 일부 프로젝트 설정도 디버깅에 영향을 미칩니다. 즉, 디버거가 검색할 디렉터리, 프로그램 실행에 사용할 명령과 명령 인수, 프로그램에 대해 생성되는 디버그 정보의 형식 등과 같은 사항이 이러한 설정에 따라 결정됩니다. **속성 페이지** 대화 상자에서 이 설정을 변경할 수 있습니다.  
@@ -50,10 +48,10 @@ ms.locfileid: "39152988"
  **프로젝트의** 속성 페이지 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 대화 상자에서 사용할 수 있는 속성이 나와 있습니다.  
   
 ## <a name="related-sections"></a>관련 단원  
- [기호 (.pdb)을 지정 하 고 소스 파일](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
+ [기호 파일(.pdb) 및 원본 파일 지정](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
  디버거가 기호 파일과 소스 파일을 사용하여 디버깅 정보를 표시하는 방법을 설명합니다.  
   
- [Visual Studio에서 앱 디버그](../debugger/debug-store-apps-in-visual-studio.md)  
+ [Visual Studio에서 앱 디버그](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)  
  UWP 앱을 디버그 하는 방법에 설명 합니다. (Windows 개발자 센터)  
   
  [디버거 설정 및 준비](../debugger/debugger-settings-and-preparation.md)  

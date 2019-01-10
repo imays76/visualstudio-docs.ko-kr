@@ -1,8 +1,6 @@
 ---
 title: Just-In-Time 디버거를 사용 하 여 디버그 | Microsoft Docs
-ms.custom: ''
 ms.date: 09/24/18
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6bd9685a5ea9bc2e6e0dc94f7fbff395fab523e
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
-ms.translationtype: HT
+ms.openlocfilehash: fbdf32377db26cdb3696187248bd9b8becb8de24
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562063"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831552"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Just-In-Time 디버거를 사용 하 여 Visual Studio에서 디버그
 
@@ -107,7 +105,7 @@ Just In Time 표준 Windows 폼 오류를 처리 하는 대신 디버깅을 사�
 
 예를 들어 해야는 C# 를 throw 하는 Visual Studio에서 콘솔 앱을 [NullReferenceException](/dotnet/api/system.nullreferenceexception).
 
-1. Visual studio는 C# 콘솔 앱 (**파일** > **새로 만들기** > **프로젝트** > **C#**  >  **콘솔 응용 프로그램**) 라는 *ThrowsNullException*합니다. Visual Studio에서 프로젝트를 만드는 방법에 대 한 자세한 내용은 참조 하세요. [연습: ](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md) 간단한 애플리케이션 만들기
+1. Visual studio는 C# 콘솔 앱 (**파일** > **새로 만들기** > **프로젝트** > **C#**  >  **콘솔 응용 프로그램**) 라는 *ThrowsNullException*합니다. Visual Studio에서 프로젝트를 만드는 방법에 대 한 자세한 내용은 참조 하세요. [연습: ](/visualstudio/get-started/csharp/tutorial-wpf) 간단한 애플리케이션 만들기
    
 1. Visual Studio에서 프로젝트가 열리면 엽니다는 *Program.cs* 파일입니다. 콘솔에 줄을 출력 하 고 다음 NullReferenceException을 throw 하는 다음 코드를 사용 하 여 main () 메서드를 바꿉니다.
    
@@ -198,4 +196,4 @@ Just In Time 중 다음 오류 메시지가 표시 될 수 있습니다 디버�
 - [디버거 보안](../debugger/debugger-security.md)
 - [디버거 소개](../debugger/debugger-feature-tour.md)
 - [Just In Time, 디버깅, 옵션 대화 상자](../debugger/just-in-time-debugging-options-dialog-box.md)
-- [보안 경고: 신뢰할 수 없는 사용자가 소유한 프로세스에 연결 위험할 수 있습니다. 다음 정보가 의심 스 럽 또는 확실 하지 않은 경우이 프로세스에 연결 하지 않습니다](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
+- [보안 경고: 신뢰할 수 없는 사용자가 소유한 프로세스에 연결하면 위험할 수 있습니다. 아래의 정보가 의심스럽거나 잘 모르겠으면 이 프로세스에 연결하지 마세요.](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)

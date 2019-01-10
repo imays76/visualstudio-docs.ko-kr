@@ -2,7 +2,6 @@
 title: '방법: 사용 하도록 설정 하 고 편집 하며 계속 하기를 사용 하지 않도록 설정 | Microsoft Docs'
 ms.custom: seodec18
 ms.date: 10/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -27,12 +26,12 @@ manager: douge
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 0b5fbc7ee0f2d85c72ccda75bc2e8531419d52e3
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: bcdedfb513d9e10f030df4a6e9ba68b807210669
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051389"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53936180"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>방법: 사용 하도록 설정 하 고 편집 하며 계속 하기를 사용 하지 않도록 설정 (C#, VB, c + +)
 

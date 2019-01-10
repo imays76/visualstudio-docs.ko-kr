@@ -1,8 +1,6 @@
 ---
-title: '연습: 다시 서명 하는 필요가 없고 브랜드 정보가 유지 되는 ClickOnce 응용 프로그램을 수동으로 배포 | Microsoft Docs'
-ms.custom: ''
+title: '연습: 다시 서명 하는 필요가 없고 브랜드 정보가 유지 되는 ClickOnce 응용 프로그램 수동 배포 | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -24,20 +22,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 91f552ce30030abeae6af0d63763625e711d32e2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c2a44ec16fb88f031701ffbdd08ca972486684a3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875101"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898153"
 ---
-# <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>연습: 다시 서명할 필요가 없습니다 없고 브랜드 정보가 유지 되는 ClickOnce 응용 프로그램을 수동으로 배포
+# <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>연습: 수동으로 다시 서명할 필요가 없습니다 없고 브랜드 정보가 유지 되는 ClickOnce 응용 프로그램 배포
 만들 때는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램 및 고객 게시할 수 있도록 제공 및 배포, 고객에 일반적으로 배포 매니페스트를 업데이트 하 고 다시 서명 해야 했습니다. 여전히 대부분의 경우에는 이러한 방식이 사용 되 고 있지만,.NET Framework 3.5를 사용 하면 만들려는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 새 배포 매니페스트를 다시 생성할 필요 없이 고객에 게 배포할 수 있는 배포 합니다. 자세한 내용은 [다시 서명 하지 않고 테스트 및 프로덕션 서버용 ClickOnce 배포 응용 프로그램](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md)합니다.  
   
  만들 때는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램 및 고객 게시할 수 있도록 제공 및 배포, 응용 프로그램 고객의 브랜드를 사용 하거나 브랜딩이 유지할 수 있습니다. 예를 들어, 응용 프로그램을 단일 소유 응용 프로그램인 경우 브랜딩이 유지 하는 것이 좋습니다. 응용 프로그램은 항상 각 고객에 대 한 사용자 지정, 경우에 고객의 브랜드를 사용 하는 것이 좋습니다. .NET Framework 3.5 응용 프로그램 배포를 조직에 부여 하는 경우 사용자의 브랜드를 유지할 수 있습니다, 게시자 정보 및 보안 서명 수 있습니다. 자세한 내용은 [만들 ClickOnce 응용 프로그램 배포를 다른](../deployment/creating-clickonce-applications-for-others-to-deploy.md)합니다.  
   
 > [!NOTE]
->  이 연습에서 만든 배포 수동으로 사용 하 여 명령줄 도구 *Mage.exe* 또는 그래픽 도구인 *MageUI.exe*합니다. 수동 배포에 대 한 자세한 내용은 참조 하세요. [연습: ClickOnce 응용 프로그램을 수동으로 배포](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)합니다.  
+>  이 연습에서 만든 배포 수동으로 사용 하 여 명령줄 도구 *Mage.exe* 또는 그래픽 도구인 *MageUI.exe*합니다. 수동 배포에 대 한 자세한 내용은 참조 하세요. [연습: 수동으로 ClickOnce 응용 프로그램을 배포](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)합니다.  
   
 ## <a name="prerequisites"></a>전제 조건  
  이 연습의 단계를 수행 하려면 다음이 필요 합니다.  
@@ -156,7 +154,7 @@ ms.locfileid: "49875101"
   
 22. 고객은 사용자에 게 응용 프로그램을 배포합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Mage.exe(매니페스트 생성 및 편집 도구)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)   
  [MageUI.exe(매니페스트 생성 및 편집 도구, 그래픽 클라이언트)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)   
  [MakeCert](/windows/desktop/SecCrypto/makecert)

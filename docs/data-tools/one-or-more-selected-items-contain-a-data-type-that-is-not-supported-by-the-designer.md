@@ -7,15 +7,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 68d8675df54e37b9a6122b853e742addc0d8060c
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
-ms.translationtype: MT
+ms.openlocfilehash: a5e090951f1771fdf4d50bbedf0757616cabe5d1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089492"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873420"
 ---
 # <a name="one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer"></a>선택한 항목 중 하나 이상이 디자이너에서 지원되지 않는 데이터 형식을 포함하고 있습니다.
 
@@ -27,7 +26,7 @@ ms.locfileid: "37089492"
 
 2. 뷰를 끌어 **서버 탐색기** 하거나 **데이터베이스 탐색기** 디자이너로 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [O/R 디자이너 메시지](../data-tools/o-r-designer-messages.md)
-- [Visual Studio에서 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Visual Studio의 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

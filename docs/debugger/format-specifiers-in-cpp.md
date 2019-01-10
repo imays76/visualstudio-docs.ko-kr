@@ -1,8 +1,6 @@
 ---
 title: 형식 지정자 (c + +) 디버거에서 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/20/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug
@@ -29,12 +27,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 73cd5655a5cb843c29fb628a2ec233860410dc7c
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 5732c7bd4f1c2fec8b7b3349d0985a2f7cbf896b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305743"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968341"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Visual Studio 디버거에서 c + +에 대 한 형식 지정자
 값이 표시 하는 형식을 변경할 수 있습니다 합니다 **조사식** 형식 지정자를 사용 하 여 창입니다.  
@@ -64,7 +62,7 @@ int main() {
   
 |지정자|형식|원래 조사식 값|표시되는 값|  
 |---------------|------------|--------------------------|---------------------|  
-|d|10진수 정수|0x00000066|102|  
+|일|10진수 정수|0x00000066|102|  
 |o|부호 없는 8진수 정수|0x00000066|000000000146|  
 |x<br /><br /> **h**|16진수 정수|102|0xcccccccc|  
 |X<br /><br /> **H**|16진수 정수|102|0xcccccccc|  

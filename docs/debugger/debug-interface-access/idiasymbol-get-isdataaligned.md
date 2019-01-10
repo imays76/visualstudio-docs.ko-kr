@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_isdataaligned | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d4c2d43129eadb0b0779086fc5dba0860c735cac
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2c22796ab2d54d2b0d21920372aceccc9bdce2e7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837804"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933731"
 ---
 # <a name="idiasymbolgetisdataaligned"></a>IDiaSymbol::get_isDataAligned
 사용자 정의 형식 (UDT) 일부 특정 메모리 경계에 정렬 된에 있는지 여부를 지정 하는 플래그를 검색 합니다.  
@@ -42,7 +40,7 @@ HRESULT get_isDataAligned(
 > [!NOTE]
 >  반환 값이 `S_FALSE` 속성 기호에 사용할 수 없다는 것을 의미 합니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  이 속성은 실행 파일이 기본이 아닌 데이터 정렬을 사용 하 여 컴파일될 때 일반적으로 설정 됩니다. Microsoft c + + 컴파일러 명령줄 옵션을 사용 하 여 데이터 맞춤을 변경할 수는 예를 들어 /Zp<em>#</em>여기서 *#* 바이트 값입니다.  
   
 ## <a name="requirements"></a>요구 사항  

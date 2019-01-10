@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_framepointerpresent | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 283674d2bccc81d409db59df04631240e78000cc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 40464f1c9628fca9a7cd3a0d911c32efef9666a3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846215"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959146"
 ---
 # <a name="idiasymbolgetframepointerpresent"></a>IDiaSymbol::get_framePointerPresent
 프레임 포인터가 있는지 여부를 지정 하는 플래그를 검색 합니다. 사용 시기를 [SymTagEnum 열거형](../../debugger/debug-interface-access/symtagenum.md) 로 설정 된 `SymTagFunction`합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49846215"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT get_framePointerPresent(   
+HRESULT get_framePointerPresent(   
    BOOL* pRetVal  
 );  
 ```  
@@ -42,10 +40,10 @@ HRESULT get_framePointerPresent(
 > [!NOTE]
 >  반환 값이 `S_FALSE` 속성 기호를 사용할 수 없는 것을 의미 합니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: Dia2.h  
+ 헤더: dia2.h  
   
  라이브러리: diaguids.lib  
   

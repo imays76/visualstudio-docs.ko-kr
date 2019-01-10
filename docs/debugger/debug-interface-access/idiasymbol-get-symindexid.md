@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_symindexid | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ab73620b76b6073a9126f975fd5b821bf6a06e1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: b57ea53f597f085814f9ba8f9dd4d48051c754e7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909811"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863539"
 ---
 # <a name="idiasymbolgetsymindexid"></a>IDiaSymbol::get_symIndexId
 고유한 기호 식별자를 검색합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49909811"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT get_symIndexId (   
+HRESULT get_symIndexId (   
    DWORD* pRetVal  
 );  
 ```  
@@ -42,7 +40,7 @@ HRESULT get_symIndexId (
 > [!NOTE]
 >  반환 값이 `S_FALSE` 속성 기호를 사용할 수 없는 것을 의미 합니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  식별자에는 고유 하 게 모든 기호를 표시 하려면 DIA SDK에서 만든 고유 값입니다.  
   
 ## <a name="see-also"></a>참고 항목  

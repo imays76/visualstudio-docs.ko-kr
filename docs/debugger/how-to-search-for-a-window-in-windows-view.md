@@ -1,8 +1,6 @@
 ---
 title: '방법: Windows 뷰에서 창 검색 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - windows, searching in Windows view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c187c3a4b8086b5b991f7288f2686d6010e79262
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 317b815595d6e7bca820b730a2761113e588dded
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927400"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837068"
 ---
 # <a name="how-to-search-for-a-window-in-windows-view"></a>방법: 창 뷰에서 창 검색
 검색 조건으로 해당 핸들, 캡션, 클래스 또는 해당 캡션 및 클래스의 조합을 사용 하 여 Windows 보기에서 특정 창에 대 한 검색할 수 있습니다. 또한 검색 시작 방향을 지정할 수 있습니다. 대화 상자의 필드에에서는 창 트리에서 선택한 창의 특성이 표시 됩니다.  

@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -24,12 +23,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ac425903ade4dbf90f094376927d46629b1c675d
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 3dbb6c9c778ed1010c90a901fa9ee9e2e9299252
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054001"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931179"
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>Visual Studio에서 바로 가기 키 식별 및 사용자 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -96,7 +95,7 @@ Visual Studio 명령에 대한 바로 가기 키를 확인하고, 해당 바로 
      예를 들어, 모든 컨텍스트에서 바로 가기가 동작하도록 하려면 **전역**을 선택할 수 있습니다. 다른 편집기에 전역으로 매핑되어 있지 않은 모든 바로 가기를 사용할 수 있습니다. 그렇지 않으면 편집기에서 바로 가기를 무시합니다.
 
     > [!NOTE]
-    >  다음 키의 바로 가기 키의 일부로 할당할 수 없습니다 **Global**: 화면/Sysrq, Scroll Lock, Pause/Break, 탭, Caps Lock, Insert, 홈, End, Page Up, Page Down, Windows 로고 키, Enter 또는 화살표 키를 응용 프로그램 키를 인쇄 합니다. Num Lock, 삭제 또는 숫자 키패드; 지우기 또는 Ctrl + Alt + Delete입니다.
+    >  **글로벌**에서 바로 가기 키의 일부로 다음 키를 할당할 수 없습니다. 화면/Sysrq, Scroll Lock, Pause/Break, 탭, Caps Lock, Insert, 홈, End, Page Up, Page Down, Windows 로고 키, Enter 또는 화살표 키를 응용 프로그램 키를 인쇄 합니다. Num Lock, 삭제 또는 숫자 키패드; 지우기 또는 Ctrl + Alt + Delete입니다.
 
 6.  **바로 가기 키 누르기** 상자에 사용하려는 바로 가기를 입력합니다.
 

@@ -1,8 +1,6 @@
 ---
 title: 쿼리 합니다. Pdb 파일 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a13f98e9d1507c0044057099d61b625e1142929e
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 3f909067c704686be4608546cc891df7f131107e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282055"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819553"
 ---
 # <a name="querying-the-pdb-file"></a>.Pdb 파일 쿼리
 프로그램 데이터베이스 파일 (확장 확장자는.pdb) 이진 파일 형식 및 컴파일 및 연결 프로젝트 과정에서 수집 된 기호 디버깅 정보를 포함 하는 경우 사용 하 여 C/c + + 프로그램을 컴파일할 때 PDB 파일을 만들 **/ZI** 또는 **/Zi** 또는 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]를 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], 또는 [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] 사용 하 여 프로그래밍 합니다 **디버그** 옵션입니다. 개체 파일에는 디버깅 정보에 대 한.pdb 파일에 대 한 참조를 포함 합니다. Pdb 파일에 대 한 자세한 내용은 참조 하세요. [PDB 파일](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/yd4f8bd1(v=vs.100))합니다. DIA 응용 프로그램을 다음과 같은 일반적인 단계를 사용 하 여 다양 한 기호, 개체 및 실행 가능 이미지 내의 데이터 요소에 대 한 자세한 정보를 얻을 수 있습니다.  
