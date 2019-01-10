@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_registerType | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b50f3a0d690da93f0dacf2556d42955ae7b6a94
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: f65fee40bd7dd5b279a17de32e3ff9cb532e880a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469310"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875782"
 ---
 # <a name="idiasymbolgetregistertype"></a>IDiaSymbol::get_registerType
-레지스터 유형을 검색합니다.  
+등록 형식을 검색합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -31,10 +29,10 @@ HRESULT get_registerType(
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out] 에 대 한 포인터는 `DWORD` 레지스터 형식이 있습니다.  
+ [out] 에 대 한 포인터를 `DWORD` 등록 형식을 보유 하는 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
+ 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -16,12 +15,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f77fba9ed184d5def85aa7ca260b7c552dddbfd1
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a9b1bc090e46ddcb413b3c362af133e10eaaf50c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054543"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883148"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Blend for Visual Studio를 사용하여 UI 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +45,7 @@ Blend for Visual Studio를 사용하면 XAML 기반 Windows 데스크톱, 웹, [
 -   [속성 패널 둘러보기](#Properties)
 
 ##  <a name="Tools"></a> 도구 패널 둘러보기
- Blend for Visual Studio에서 **도구** 패널을 사용하여 응용 프로그램의 개체를 만들고 수정할 수 있습니다. 도구를 선택한 다음 마우스로 아트보드에 그려 개체를 만들 수 있습니다.
+ Blend for Visual Studio에서 **도구** 패널을 사용하여 애플리케이션의 개체를 만들고 수정할 수 있습니다. 도구를 선택한 다음 마우스로 아트보드에 그려 개체를 만들 수 있습니다.
 
  ![도구 패널](../designers/media/blend5toolspanel.png "Blend5Toolspanel")
 
@@ -59,7 +58,7 @@ Blend for Visual Studio를 사용하면 XAML 기반 Windows 데스크톱, 웹, [
 |![](../designers/media/b1-5.png "B1_5")|**자산 도구** **자산** 패널에 액세스하고 라이브러리에서 가장 최근에 사용된 자산을 표시하는 데 사용합니다.|![설명선 E](../designers/media/b5-label-e.png "b5_label_E")|**텍스트 컨트롤**|
 |||![설명선 F](../designers/media/b5-label-f.png "b5_label_F")|**공용 컨트롤**|
 
- 짧은 비디오 보기 ![설치 된 기능 구성](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [도구 모음](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4)합니다.
+ **짧은 비디오 시청:** ![설치 된 기능 구성](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [도구 모음](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4)합니다.
 
 ##  <a name="Assets"></a> 자산 패널 둘러보기
  Visual Studio의 **도구 상자**와 비슷한 **자산** 패널에서 모든 컨트롤을 찾을 수 있습니다. 컨트롤 외에도, 스타일, 미디어, 동작, 효과 등 무엇이든 **자산** 패널의 아트보드에 추가할 수 있습니다.
@@ -126,7 +125,7 @@ Blend for Visual Studio를 사용하면 XAML 기반 Windows 데스크톱, 웹, [
 |                     ![설명선 16](../designers/media/b5-label-16.png "b5_label_16")                     |                                                                                **그라데이션 슬라이더** 그라데이션 브러시를 선택한 경우에만 나타납니다.                                                                                 |
 | ![](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png "d50027a1-6824-4ad8-8b4e-558b0756dcf8") |                                                                     **고급 속성 표시** 자주 사용되지 않는 속성의 범주를 표시합니다.                                                                      |
 
- 짧은 비디오 보기 ![설치 된 기능 구성](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [속성 패널](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7)합니다.
+ **짧은 비디오 시청:** ![설치 된 기능 구성](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [속성 패널](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7)합니다.
 
 ## <a name="see-also"></a>참고 항목
  [컨트롤을 삽입 하 고 해당 동작을 수정](../designers/insert-controls-and-modify-their-behavior-in-xaml-designer.md) [개체에 애니메이션 효과 주기](../designers/animate-objects-in-xaml-designer.md) [도형 및 패스 그리기](../designers/draw-shapes-and-paths.md) [Visual Studio 및 Blend for Visual Studio에서 XAML 디자인](../designers/designing-xaml-in-visual-studio.md)

@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_indirectvirtualbaseclass | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7dcde1aa61ed9ce39fea15a6a21776afba24786
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 4328c7b8a1506cb21a9c1af9dcfeb3e32140d9fd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933471"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53957540"
 ---
 # <a name="idiasymbolgetindirectvirtualbaseclass"></a>IDiaSymbol::get_indirectVirtualBaseClass
 사용자 정의 데이터 형식에는 간접 가상 기본 클래스 인지 여부를 지정 하는 플래그를 검색 합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49933471"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT get_indirectVirtualBaseClass (   
+HRESULT get_indirectVirtualBaseClass (   
    BOOL* pRetVal  
 );  
 ```  

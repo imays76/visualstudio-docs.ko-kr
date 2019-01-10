@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -21,12 +20,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 373c6ad006d915412252f48ac536bb50c7ff44bf
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 8d4e147f79805493294e33c3d3f13eb9e42b5f3f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53048517"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911392"
 ---
 # <a name="options-dialog-box-visual-studio"></a>옵션 대화 상자(Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,7 +39,7 @@ ms.locfileid: "53048517"
 ## <a name="layout-of-the-options-dialog-box"></a>옵션 대화 상자의 레이아웃
  **옵션** 대화 상자는 왼쪽 탐색 창 및 오른쪽 표시 영역의 두 부분으로 구분됩니다. 탐색 창의 트리 컨트롤에는 환경, 텍스트 편집기, 프로젝트 및 솔루션, 소스 제어와 같은 폴더 노드가 포함됩니다. 폴더 노드를 확장하여 포함된 옵션 페이지를 나열합니다. 특정 페이지에 대한 노드를 선택하면 해당 옵션이 표시 영역에 나타납니다.
 
- IDE 기능이 메모리에 로드될 때까지 해당 기능에 대한 옵션이 탐색 창에 나타나지 않습니다. 따라서 마지막 세션을 종료했을 때 표시된 것과 동일한 옵션이 새 세션을 시작할 때 표시되지 않을 수 있습니다. 프로젝트를 만들거나 특정 응용 프로그램을 사용하는 명령을 실행하면 관련 옵션에 대한 노드가 [옵션] 대화 상자에 추가됩니다. 이러한 추가된 옵션은 IDE 기능이 메모리에 남아 있는 한 계속 사용할 수 있습니다.
+ IDE 기능이 메모리에 로드될 때까지 해당 기능에 대한 옵션이 탐색 창에 나타나지 않습니다. 따라서 마지막 세션을 종료했을 때 표시된 것과 동일한 옵션이 새 세션을 시작할 때 표시되지 않을 수 있습니다. 프로젝트를 만들거나 특정 애플리케이션을 사용하는 명령을 실행하면 관련 옵션에 대한 노드가 [옵션] 대화 상자에 추가됩니다. 이러한 추가된 옵션은 IDE 기능이 메모리에 남아 있는 한 계속 사용할 수 있습니다.
 
 > [!NOTE]
 >  일부 설정 컬렉션은 [옵션] 대화 상자의 탐색 창에 나타나는 페이지의 범위를 지정합니다. **모든 설정 표시**를 선택하여 모든 가능한 페이지를 볼 수 있습니다.

@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_objectFileName | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 683e789e1edbe9f256847ad1e7d5fb7d13616608
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 928bd2b10c95a840323ba87fd9c5347520cf03c0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463792"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927261"
 ---
 # <a name="idiasymbolgetobjectfilename"></a>IDiaSymbol::get_objectFileName
 개체 파일 이름을 검색합니다.  
@@ -31,10 +29,10 @@ HRESULT get_objectFilename(
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out] 에 대 한 포인터는 `BSTR` 개체 파일 이름을 포함 하는 합니다.  
+ [out] 에 대 한 포인터를 `BSTR` 개체 파일 이름이 들어 있는입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
+ 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

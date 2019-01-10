@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_thisadjust | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c9ff814968077b32c4ed0ddb8d951808ebffea4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 7d7cb0b57b56a7c73de599ebdbd252f1366857af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851857"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848511"
 ---
 # <a name="idiasymbolgetthisadjust"></a>IDiaSymbol::get_thisAdjust
 논리 검색 `this` 조정기 메서드에 대 한 합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49851857"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT get_thisAdjust (   
+HRESULT get_thisAdjust (   
    LONG* pRetVal  
 );  
 ```  
@@ -42,7 +40,7 @@ HRESULT get_thisAdjust (
 > [!NOTE]
 >  반환 값이 `S_FALSE` 속성 기호를 사용할 수 없는 것을 의미 합니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  메서드 자체 해야 진정한을 계산 하는 데 여러 상속 경우도 `this` 값에 대 한 오프셋을 추가 하 여 `this`입니다.  
   
 ## <a name="see-also"></a>참고 항목  

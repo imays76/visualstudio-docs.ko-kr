@@ -1,8 +1,6 @@
 ---
 title: 'Idiaenumlinenumbers:: Skip | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a52c09bcff6ff617c1f43dcad84de441f1432a1f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: e3c59b8a1f2897ed051dd9ae2e95b8d4ed0c3caf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927179"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834258"
 ---
 # <a name="idiaenumlinenumbersskip"></a>IDiaEnumLineNumbers::Skip
 열거형 시퀀스에서 줄 번호의 지정된 된 수를 건너뜁니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49927179"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT Skip (   
+HRESULT Skip (   
    ULONG celt  
 );  
 ```  

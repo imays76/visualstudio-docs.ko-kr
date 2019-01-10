@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_age | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ba915762a5eacffc32122a1dac4b7b046691e63
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: d523a4dbed5f80fa67085537123e3d5be6fad361
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49868471"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918653"
 ---
 # <a name="idiasymbolgetage"></a>IDiaSymbol::get_age
 .Pdb 파일의 보존 기간 값을 검색합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49868471"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT get_age (   
+HRESULT get_age (   
    DWORD* pRetVal  
 );  
 ```  
@@ -42,7 +40,7 @@ HRESULT get_age (
 > [!NOTE]
 >  반환 값이 `S_FALSE` 속성 기호를 사용할 수 없는 것을 의미 합니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  모든 알려진된 시간 값; 기간 반드시 일치 하지 않습니다. 일반적으로.pdb 파일의 해당.exe 파일을 사용 하 여 동기화 된 경우를 결정 하는 것이 됩니다.  
   
 ## <a name="requirements"></a>요구 사항  

@@ -1,8 +1,6 @@
 ---
 title: 웹 응용 프로그램 디버그 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: faafe243d5bf60e83d060334d8591bdb4cd9bbb3
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 7f494e365de28603d2231323fa1ab501b826c28e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561631"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923043"
 ---
 # <a name="debugging-web-applications"></a>웹 응용 프로그램 디버깅
 이 단원에서는 다양한 형식의 웹 응용 프로그램을 디버깅하는 방법에 대해 설명합니다.  
@@ -39,7 +37,7 @@ ms.locfileid: "53561631"
  [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 응용 프로그램을 디버깅할 수 있도록 설정하는 데 필요한 단계를 설명합니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [Debugging Web Applications and Script](../debugger/debugging-web-applications-and-script.md) (웹 애플리케이션 및 스크립트 디버그)  
+ [Debugging Web Applications and Script](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications) (웹 애플리케이션 및 스크립트 디버그)  
  [디버거 설정 및 준비](../debugger/debugger-settings-and-preparation.md)   
  [디버거 소개](../debugger/debugger-feature-tour.md) [Visual Studio에서 디버깅](../debugger/index.md)  
  [디버거 기능 둘러보기](../debugger/debugger-feature-tour.md)

@@ -2,7 +2,6 @@
 title: Windows Form 디버깅 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -24,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 545155f622111c2452af3bacb57fd88930ce5ab0
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4d0e04b407303b1d6f98862fdef36bb8228fd780
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066758"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851971"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>연습: Windows Form 디버깅
 Windows 폼에는 가장 일반적인 관리 되는 응용 프로그램 중 하나입니다. Windows 폼에 표준 Windows 응용 프로그램을 만듭니다. Visual Basic을 사용 하 여이 연습을 완료 하려면 C#, 또는 c + +입니다.  

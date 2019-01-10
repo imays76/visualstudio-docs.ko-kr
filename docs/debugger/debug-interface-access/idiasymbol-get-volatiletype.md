@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_volatiletype | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 02baf9777a1b7cc208903fe5e63a378013b581e6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: d491a43e65ed7e6c06a5c94e94b62230db1634dc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851032"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864322"
 ---
 # <a name="idiasymbolgetvolatiletype"></a>IDiaSymbol::get_volatileType
 사용자 정의 데이터 형식 (UDT) 휘발성 인지 여부를 지정 하는 플래그를 검색 합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49851032"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT get_volatileType (   
+HRESULT get_volatileType (   
    BOOL* pRetVal  
 );  
 ```  
@@ -42,7 +40,7 @@ HRESULT get_volatileType (
 > [!NOTE]
 >  반환 값이 `S_FALSE` 속성 기호를 사용할 수 없는 것을 의미 합니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  C + +에서 UDT로 표시할 수 있습니다는 `volatile` 키워드를 나타내는 다음 존재에 대 한 액세스에서 해당 콘텐츠를 가정할 수 없습니다.  
   
 ## <a name="see-also"></a>참고 항목  

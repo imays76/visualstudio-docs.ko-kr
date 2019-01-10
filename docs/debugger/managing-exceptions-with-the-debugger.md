@@ -2,7 +2,6 @@
 title: 디버거를 사용한 예외 관리 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/09/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.exceptions
@@ -34,12 +33,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 97c4694ec66c9769f9433c08e74e4d0a14a952c2
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 647749b2993b41180852aca43f99ce15844c6d71
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561527"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094818"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Visual Studio에서 디버거를 사용한 예외 관리
 
@@ -217,7 +216,7 @@ public class GenericException<T> : Exception
 
    ![예외에 대 한 추가 조건을](../debugger/media/extraconditionsforanexception.png "ExtraConditionsForAnException")
 
-3. 각 상태 줄에 대 한 모듈의 이름을 입력 하 고 비교 연산자 목록 변경 **Equals** 또는 **Not Equals**합니다. 와일드 카드를 지정할 수 있습니다 (* *\\* * *) 모듈을 둘 이상 지정 하려면 이름에 있습니다.
+3. 각 상태 줄에 대 한 모듈의 이름을 입력 하 고 비교 연산자 목록 변경 **Equals** 또는 **Not Equals**합니다. 와일드 카드를 지정할 수 있습니다 (**\\\***) 모듈을 둘 이상 지정 하려면 이름에 있습니다.
 
 4. 조건을 삭제 해야 할 경우 선택 합니다 **X** 조건 줄의 끝입니다.
 

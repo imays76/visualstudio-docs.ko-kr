@@ -1,8 +1,6 @@
 ---
 title: 관리 코드 디버깅 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 92d8da8c03cb2b76e0b47043085af66731958b4b
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
-ms.translationtype: HT
+ms.openlocfilehash: 3ffb9361e06218d3625bfd5d220c38f86a8b70f7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561894"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867042"
 ---
 # <a name="debugging-managed-code"></a>관리 코드 디버깅
 
@@ -77,7 +75,7 @@ C++로 작성된 코드에 <xref:System.Diagnostics.DebuggableAttribute>를 추�
 [디버깅 및 프로파일링](/dotnet/framework/debug-trace-profile/index)  
 .NET Framework 응용 프로그램의 디버깅과 구성 요구 사항에 대해 설명합니다.
 
-[스크립트 및 웹 애플리케이션 디버깅](../debugger/debugging-web-applications-and-script.md)  
+[스크립트 및 웹 애플리케이션 디버깅](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)  
 스크립트 및 웹 응용 프로그램을 디버깅할 때 발생할 수 있는 일반적인 디버깅 문제와 기술에 대해 설명합니다.
 
 [Visual Studio 2015 디버거의 새로운 기능](../debugger/what-s-new-for-the-debugger-in-visual-studio.md)  

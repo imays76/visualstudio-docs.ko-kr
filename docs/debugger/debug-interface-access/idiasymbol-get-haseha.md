@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_haseha | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 936393d3edc9273c2240787d0d1fa42ec3691748
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 42a075b4447259bfacaf9e31c97f9e51b0b0a730
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813468"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847336"
 ---
 # <a name="idiasymbolgethaseha"></a>IDiaSymbol::get_hasEHa
 비동기 (구조적된) 예외 처리 함수에 포함 되는지 여부를 지정 하는 플래그를 검색 합니다.  
@@ -42,7 +40,7 @@ HRESULT get_hasEHa(
 > [!NOTE]
 >  반환 값이 `S_FALSE` 속성 기호에 사용할 수 없다는 것을 의미 합니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  C + + 스타일 예외 처리를 사용 하 여 처리 하는 비동기 또는 구조화 된 예외를 함께 사용할 수 있지만 특정 컴파일러 스위치를 사용 하도록 설정 하려면 /EHa 필요 합니다.  
   
 ## <a name="requirements"></a>요구 사항  

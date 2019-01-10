@@ -1,8 +1,6 @@
 ---
 title: 중단점 선택 대화 상자 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.breakpt.choose
@@ -23,24 +21,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99ca31b8fa1536e23cce691629ddf5015721d9c9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 7ab243a79d4e0b79150b86fb4a6fbdf3424f3624
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458247"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898793"
 ---
 # <a name="choose-breakpoints-dialog-box"></a>중단점 선택 대화 상자
-**중단점 선택** 에서 모호한 입력에서 중단점을 설정 하려고 할 때 대화 상자가 열립니다는 **새 중단점** 대화 상자. 모호한 입력의 일반적인 예로 오버 로드 된 함수 이름입니다.  
+합니다 **중단점 선택** 모호한 입력에서 중단점을 설정 하려고 할 때 대화 상자가 열립니다 합니다 **새 중단점** 대화 상자. 모호한 입력의 일반적인 예로 오버 로드 된 함수 이름.  
   
  **중단점**  
  모호한 입력을 기반으로 설정할 수 있는 중단점을 나열 합니다. 하나 이상의 중단점을 선택할 수 있습니다.  
   
  **All**  
- 에 나열 된 모든 중단점을 선택는 **중단점** 상자입니다.  
+ 에 나열 된 모든 중단점을 선택 합니다 **중단점** 상자입니다.  
   
  **없음**  
- 에 나열 된 모든 중단점 해제는 **중단점** 상자입니다.  
+ 에 나열 된 모든 중단점을 지웁니다 합니다 **중단점** 상자입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [중단점 사용](../debugger/using-breakpoints.md)

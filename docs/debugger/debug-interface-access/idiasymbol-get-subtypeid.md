@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_subTypeId | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c8fc4036ac0c5f148ca067a00b635ae7023232ed
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 858c4a5040b1823392d8a572a008f629c64745d7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469713"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919309"
 ---
 # <a name="idiasymbolgetsubtypeid"></a>IDiaSymbol::get_subTypeId
-검색 하위 유형 id입니다.  
+하위 형식 ID를 검색합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -31,10 +29,10 @@ HRESULT get_subTypeId(
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out] 에 대 한 포인터는 `DWORD` 하위 유형 ID를 보유 하는  
+ [out] 에 대 한 포인터를 `DWORD` 보유 하는 하위 유형 id입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
+ 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

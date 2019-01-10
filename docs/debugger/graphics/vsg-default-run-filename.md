@@ -1,8 +1,6 @@
 ---
 title: VSG_DEFAULT_RUN_FILENAME | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: ea549d2f-c857-458c-93c7-bc5a2d11d15d
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 303bce554ff6345a37719a8d2f529f3c1ffe02e2
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: a05acfd07e8b67bf500864f00ead4d78f2da22ae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472026"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922562"
 ---
 # <a name="vsgdefaultrunfilename"></a>VSG_DEFAULT_RUN_FILENAME
 그래픽 로그 파일의 기본 파일 이름을 정의합니다.  
@@ -37,10 +35,10 @@ ms.locfileid: "31472026"
 #define VSG_DEFAULT_FILENAME L"default.vsglog"  
 ```  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  전처리기 기호 `DONT_SAVE_VSGLOG_TO_TEMP`가 정의된 경우 파일 이름이 캡처된 앱의 현재 디렉터리에 상대적이거나 절대 경로입니다. 그렇지 않으면 사용자의 임시 파일 디렉터리에 상대적이고 절대 경로일 수 없습니다.  
   
- 정의 된 파일 이름을 변경 하려면 다시 정의 해야 것 포함 하기 전에 `vsgcapture.h` 프로그램에서 합니다.  
+ 정의 된 파일 이름을 변경 하려면 다시 정의한 것 포함 하기 전에 `vsgcapture.h` 프로그램에서 합니다.  
   
 ## <a name="example"></a>예제  
  이 예제에서는 캡처 파일의 기본 파일 이름을 변경하는 방법을 보여줍니다.  

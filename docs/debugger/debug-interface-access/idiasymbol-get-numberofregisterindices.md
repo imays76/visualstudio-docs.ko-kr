@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_numberOfRegisterIndices | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3375883afcfcb8999c5a955dd3882cdca69e9599
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 699cabda0fc6cbdfdf61ec14b5919ffffd62819e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31467929"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867985"
 ---
 # <a name="idiasymbolgetnumberofregisterindices"></a>IDiaSymbol::get_numberOfRegisterIndices
-레지스터 인덱스의 수를 검색합니다.  
+등록 하는 인덱스 수를 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -31,10 +29,10 @@ HRESULT get_numberOfRegisterIndices(
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out] 에 대 한 포인터는 `DWORD` 레지스터 인덱스의 수를 보유 하는 합니다.  
+ [out] 에 대 한 포인터를 `DWORD` 등록 인덱스의 수를 보유 하는 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
+ 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

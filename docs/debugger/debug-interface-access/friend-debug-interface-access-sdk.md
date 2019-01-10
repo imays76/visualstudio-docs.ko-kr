@@ -1,8 +1,6 @@
 ---
 title: Friend (디버그 인터페이스 액세스 SDK) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -16,24 +14,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 75cdf9b4239b02e9f07077a6bf574c3b9e5b47a3
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: fb8b1dc7d54cc913a1ed1986576fa559c7134bd2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460009"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868263"
 ---
 # <a name="friend-debug-interface-access-sdk"></a>Friend(디버그 인터페이스 액세스 SDK)
-Friend 함수 및 Friend 클래스도 식별 됩니다 `SymTagFriend` 기호입니다. 프로필은 사용자 정의 형식 (Udt) 부모 자식 요소인 하며 포함 된 [idiasymbol:: Get_classparent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md) 속성입니다.  
+Friend 함수 및 Friend 클래스도 식별 됩니다 `SymTagFriend` 기호입니다. 부모의 자식 사용자 정의 형식 (Udt) 되며 갖습니다를 [idiasymbol:: Get_classparent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md) 속성입니다.  
   
 ## <a name="properties"></a>속성  
- 다음 표에서이 기호 형식에 대 한 유효한 추가 속성을 보여 줍니다.  
+ 다음 표에서이 기호 형식에 대 한 추가 올바른 속성을 보여 줍니다.  
   
 |속성|데이터 형식|설명|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|UDT 부모에 대 한 기호입니다.|  
 |[IDiaSymbol::get_classParentId](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md)|`DWORD`|ID 클래스 부모 기호입니다.|  
-|[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|클래스 또는 함수 이름입니다.|  
+|[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|클래스 또는 함수의 이름입니다.|  
 |[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|기호 인덱스 ID입니다.|  
 |[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|반환 `SymTagFriend` (중 하나는 [SymTagEnum 열거형](../../debugger/debug-interface-access/symtagenum.md) 값).|  
 |[IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)|`IDiaSymbol*`|클래스 또는 함수에 대 한 기호입니다.|  

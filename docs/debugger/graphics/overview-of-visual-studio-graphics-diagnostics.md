@@ -2,19 +2,18 @@
 title: 그래픽 진단 개요 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 02/09/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a88bcdad960e79c64a463fecf88bbf893b0181b0
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 25b15e45d464c78aa24fa6fed7292b3eb7140835
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059115"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831380"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Visual Studio 그래픽 진단 개요
 Visual Studio *그래픽 진단*은 Direct3D 앱의 렌더링 및 성능 문제를 기록한 다음, 분석하기 위한 도구 집합입니다. Windows PC에서 또는 원격 PC 또는 장치에서 로컬로 실행 하는 앱에서 그래픽 진단은 사용할 수 있습니다.  
@@ -53,7 +52,7 @@ Visual Studio *그래픽 진단*은 Direct3D 앱의 렌더링 및 성능 문제�
 ### <a name="gpu-usage"></a>GPU 사용량  
  그래픽 진단은 Direct3D 앱의 성능을 프로파일링할 수도 있습니다. 그래픽 이벤트의 세부 정보를 기록하여 프로파일링 데이터가 왜곡되므로 그래픽 분석기로 검사할 프레임 캡처와는 분리됩니다.  
   
- 자세한 내용은 [GPU 사용량](gpu-usage.md)을 참조하세요.  
+ 자세한 내용은 [GPU 사용량](/visualstudio/profiling/gpu-usage)을 참조하세요.  
   
 ### <a name="directx-control-panel"></a>DirectX 제어판  
  DirectX 제어판은 DirectX가 작동하는 방식을 변경하는 데 사용할 수 있는 DirectX의 구성 요소입니다. 예를 들어, DirectX 런타임 구성 요소의 디버그 버전을 사용하고, 보고된 디버그 메시지의 종류를 선택하며, 기능이 적은 하드웨어를 에뮬레이트하는 데 사용 중인 특정 그래픽 하드웨어 기능을 허용하지 않습니다. DirectX에 대한 이러한 제어 수준은 DirectX 응용 프로그램을 디버깅하고 테스트하는 데 도움이 될 수 있습니다. Visual Studio에서 DirectX 제어판에 액세스할 수 있습니다.  

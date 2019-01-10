@@ -2,7 +2,6 @@
 title: 런타임 오류 보고 함수 작성 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22c508a7fa8faedc66f9122de60921878a931fae
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b8e6844b92422af42d2aa1098bc649019fb2f1ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051505"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938175"
 ---
 # <a name="how-to-write-a-run-time-error-reporting-function"></a>방법: 런타임 오류 보고 함수 작성
 사용자 지정 런타임 오류 보고 함수는 `_CrtDbgReportW`와 동일하게 선언해야 합니다. 이 함수는 디버거에 1을 값으로 반환해야 합니다.  

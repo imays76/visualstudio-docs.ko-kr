@@ -1,8 +1,6 @@
 ---
 title: '방법: 네이티브 코드에 스레드 이름 설정 | Microsoft Docs'
-ms.custom: ''
 ms.date: 12/17/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9226e009936d0a644a5a6fcfcaba57bc3af25d7d
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: acddd39df0c91aeef5c425ffa67cb234d76d0473
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803100"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961353"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>방법: 네이티브 코드에 스레드 이름 설정
 스레드 명명 기능은 Visual Studio의 모든 버전에서 사용할 수 있습니다. 이 기능은 **스레드** 창에서 스레드를 추적할 때 유용합니다.

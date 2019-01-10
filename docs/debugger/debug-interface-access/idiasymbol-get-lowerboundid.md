@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_lowerboundid | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fe7109957167b9f2073660e035298bcc7613feb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: d0d47fad6015a39550eca8e6ea046f7ec9c6417f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873333"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833904"
 ---
 # <a name="idiasymbolgetlowerboundid"></a>IDiaSymbol::get_lowerBoundId
 FORTRAN 배열 차원의 하한값의 기호 식별자를 검색합니다.  
@@ -27,7 +25,7 @@ FORTRAN 배열 차원의 하한값의 기호 식별자를 검색합니다.
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT get_lowerBoundId (   
+HRESULT get_lowerBoundId (   
    DWORD* pRetVal  
 );  
 ```  
@@ -42,7 +40,7 @@ HRESULT get_lowerBoundId (
 > [!NOTE]
 >  반환 값이 `S_FALSE` 속성 기호를 사용할 수 없는 것을 의미 합니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  식별자에는 고유 하 게 모든 기호를 표시 하려면 DIA SDK에서 만든 고유 값입니다.  
   
 ## <a name="see-also"></a>참고 항목  

@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_isPointerToDataMember | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fec840ac0669c5a882b5c1de9a9e582c3a06a1f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: b8511b74c55eebb420c04cdc782c8725133c90eb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463028"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871410"
 ---
 # <a name="idiasymbolgetispointertodatamember"></a>IDiaSymbol::get_isPointerToDataMember
-이 기호는 데이터 멤버에 대 한 포인터 인지 여부를 지정 합니다.  
+이 기호 데이터 멤버에 대 한 포인터 인지 여부를 지정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -31,10 +29,10 @@ HRESULT get_isPointerToDataMember(
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out] 에 대 한 포인터는 `BOOL` 이 기호는 데이터 멤버에 대 한 포인터 인지를 지정 하는 합니다.  
+ [out] 에 대 한 포인터를 `BOOL` 이 기호 데이터 멤버에 대 한 포인터 인지 여부를 지정 하는 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
+ 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

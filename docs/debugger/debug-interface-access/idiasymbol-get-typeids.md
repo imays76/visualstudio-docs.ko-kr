@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_typeids | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bacd3547c1aadfc99b66437acbd73599ec2191f6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: d038c0be6f023206c6a96ec59389ec4063d975fd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942597"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880090"
 ---
 # <a name="idiasymbolgettypeids"></a>IDiaSymbol::get_typeIds
 이 기호에 대 한 컴파일러 별 형식 식별자 값의 배열을 검색합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49942597"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT get_typeIds (   
+HRESULT get_typeIds (   
    DWORD  cTypeIds,  
    DWORD* pcTypeIds,  
    DWORD  typeIds[]  

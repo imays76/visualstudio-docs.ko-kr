@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -17,17 +16,17 @@ caps.latest.revision: 44
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: bc1a6ba1a36dd7514257fcbb8ba4c26ca1ee6116
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 0045ff701947f834bd38dfff7c90b7388e9353b7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065521"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951932"
 ---
 # <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>방법: 만들기 및 Visual Studio의 무인된 설치 실행
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 에 대한 설치 응용 프로그램을 DVD와 같은 미디어 대신 인트라넷을 통해 무인(즉, 사용자 지정된 자동 설치) 설치로 실행할 수 있습니다. 이 항목에서는 준비 하는 방법을 설명 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 이 유형의 네트워크 공유에서 설치 합니다.
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 에 대한 설치 애플리케이션을 DVD와 같은 미디어 대신 인트라넷을 통해 무인(즉, 사용자 지정된 자동 설치) 설치로 실행할 수 있습니다. 이 항목에서는 준비 하는 방법을 설명 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 이 유형의 네트워크 공유에서 설치 합니다.
 
 ## <a name="creating-a-network-image"></a>네트워크 이미지 만들기
  먼저 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 미디어의 네트워크 이미지를 만듭니다.
@@ -43,7 +42,7 @@ ms.locfileid: "53065521"
      에 대 한 설치 응용 프로그램의 네트워크 경로 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 비슷합니다 \\ \\ *ServerName*\IDEinstall\\*제품*.exe입니다.
 
     > [!NOTE]
-    >  경로 및 파일 이름 조합이 260자를 초과하면 설치가 실패할 수 있습니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 경로의 최대 길이는 221자입니다.  로컬 경로 이름은 70자를 초과하면 안 되고 네트워크 경로 이름은 39자를 초과하면 안 됩니다.
+    >  경로 및 파일 이름 조합이 260자를 초과하면 설치가 실패할 수 있습니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 에서 경로의 최대 길이는 221자입니다.  로컬 경로 이름은 70자를 초과하면 안 되고 네트워크 경로 이름은 39자를 초과하면 안 됩니다.
 
      또한 경로의 폴더 이름에 공백이 포함(예: "\\\\*ServerName*\IDE install" 또는 \\\\*ServerName*\Visual Studio\\)된 경우 설치가 실패할 수 있습니다.
 
@@ -66,8 +65,8 @@ ms.locfileid: "53065521"
 
 |요소|특성|값|설명|
 |-------------|---------------|------------|-----------------|
-|BundleCustomizations|TargetDir|*Path*|설치 응용 프로그램의 사용자 인터페이스에서 경로를 재정의하는 작업과 동일하게 동작합니다. Visual Studio가 이미 설치된 경우 이 요소는 무시됩니다.|
-|BundleCustomizations|NoWeb|예&#124;기본|이 요소의 값이 yes이면 설치 응용 프로그램이 설치 작업 중 웹으로 이동하려고 시도하지 않습니다.|
+|BundleCustomizations|TargetDir|*Path*|설치 애플리케이션의 사용자 인터페이스에서 경로를 재정의하는 작업과 동일하게 동작합니다. Visual Studio가 이미 설치된 경우 이 요소는 무시됩니다.|
+|BundleCustomizations|NoWeb|예&#124;기본|이 요소의 값이 yes이면 설치 애플리케이션이 설치 작업 중 웹으로 이동하려고 시도하지 않습니다.|
 |SelectableItemCustomization|Hidden|예&#124;아니요|이 요소의 값이 Yes이면 사용자 지정 트리에서 선택 가능한 항목을 숨깁니다.|
 |SelectableItemCustomization|선택함|예&#124;아니요|사용자 지정 트리에서 선택 가능한 항목을 선택하거나 선택 취소합니다.|
 |BundleCustomizations|Feed|Path|사용자가 사용하려는 피드의 위치입니다.  이 피드는 컴퓨터의 후속 수정 작업에 사용됩니다(기본적으로 "Default").|
@@ -76,7 +75,7 @@ ms.locfileid: "53065521"
 |BundleCustomizations|NoCacheOnlyMode|예&#124;기본|패키지 캐시 미리 채우기를 방지합니다.|
 
 > [!WARNING]
->  선택 가능한 항목이 숨겨진 경우에도 설치 응용 프로그램이 선택함 상태를 적용합니다. 예를 들어 선택 가능한 항목을 항상 설치하려는 경우 이 항목을 숨기고 선택함 상태로 표시할 수 있습니다.
+>  선택 가능한 항목이 숨겨진 경우에도 설치 애플리케이션이 선택함 상태를 적용합니다. 예를 들어 선택 가능한 항목을 항상 설치하려는 경우 이 항목을 숨기고 선택함 상태로 표시할 수 있습니다.
 
 #### <a name="to-create-an-unattended-installation-of-visual-studio"></a>Visual Studio의 무인 설치를 만들려면
 
@@ -87,7 +86,7 @@ ms.locfileid: "53065521"
 2.  선택적 구성 요소에 맞게 SelectableItemCustomization 특성을 변경하고 파일을 저장합니다.
 
 ## <a name="running-unattended-setup"></a>무인 설치 실행
- 클라이언트 컴퓨터에서 Visual Studio에 대한 설치 응용 프로그램을 자동으로 실행하거나 정의한 설정을 사용하여 사용자가 직접 응용 프로그램을 실행하도록 허용하여 무인 설치를 실행할 수 있습니다.
+ 클라이언트 컴퓨터에서 Visual Studio에 대한 설치 애플리케이션을 자동으로 실행하거나 정의한 설정을 사용하여 사용자가 직접 애플리케이션을 실행하도록 허용하여 무인 설치를 실행할 수 있습니다.
 
 #### <a name="to-run-an-unattended-installation-on-a-client-computer"></a>클라이언트 컴퓨터에서 무인 설치를 실행하려면
 
@@ -102,7 +101,7 @@ ms.locfileid: "53065521"
 2.  사용자가 해당 공유에서 설치할 수 있도록 설정합니다.
 
 ## <a name="maintaining-an-installation"></a>설치 유지 관리
- **제어판** 을 열고 설치 응용 프로그램을 다시 실행하면 Visual Studio의 기능을 수정하고 프로그래밍 언어를 제거하고 Visual Studio를 복구하거나 제거할 수 있습니다.
+ **제어판** 을 열고 설치 애플리케이션을 다시 실행하면 Visual Studio의 기능을 수정하고 프로그래밍 언어를 제거하고 Visual Studio를 복구하거나 제거할 수 있습니다.
 
 > [!NOTE]
 >  유지 관리 모드를 사용하려면 로컬 컴퓨터에서 관리자 자격 증명이 있어야 합니다.
@@ -178,7 +177,7 @@ ms.locfileid: "53065521"
 
 2.  제품 키를 입력합니다.
 
-     자세한[ 내용은 Visual Studio 제품 키 찾기](../install/how-to-locate-the-visual-studio-product-key.md) 하며 [방법: Visual Studio를 배포할 때 제품 키를 자동으로 적용](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md) 항목입니다.)
+     자세한 내용은 [방법: Visual Studio 제품 키 찾기](../install/how-to-locate-the-visual-studio-product-key.md) 하며 [방법: Visual Studio를 배포할 때 제품 키를 자동으로 적용](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md) 항목입니다.)
 
 ## <a name="see-also"></a>참고 항목
  [Visual Studio 설치](../install/install-visual-studio-2015.md)

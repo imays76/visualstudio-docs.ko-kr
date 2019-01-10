@@ -1,8 +1,6 @@
 ---
 title: 'Idiaimagedata:: Get_imagebase | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e0037ef4bbbfc499d23e517e0fb3522b8f042c7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 0dea0b3e717187bb79525fde0be02d0482e53243
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822986"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912664"
 ---
 # <a name="idiaimagedatagetimagebase"></a>IDiaImageData::get_imageBase
 여기서 이미지를 기반으로 하는 메모리 위치를 검색 합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49822986"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT get_imageBase (   
+HRESULT get_imageBase (   
    ULONGLONG* pRetVal  
 );  
 ```  
@@ -39,7 +37,7 @@ HRESULT get_imageBase (
 ## <a name="return-value"></a>반환 값  
  성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  이미지 기본 충돌로 인해 이미지 수 기준 주소를 지정할 자동으로 사용 되지 않는 메모리 위치에 로드 되는 경우. 이 메서드는 컴파일 시 모듈에 저장 된 기본 힌트 (제안 된 메모리 위치)를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  

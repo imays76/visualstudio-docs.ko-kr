@@ -1,8 +1,6 @@
 ---
 title: '방법: DLL 프로젝트에서 디버그 | Microsoft Docs'
-ms.custom: ''
 ms.date: 10/10/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,18 +18,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e006bbd27acc0fa88cfee1b22cb435acba1e282e
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 6dd7ec8938b8b7f94ba649affe48f170172f887b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388256"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854076"
 ---
-# <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>방법: Visual Studio에서 DLL 프로젝트에서 디버깅 (C#, c + +, Visual Basic의 경우 F#)
+# <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>방법: Visual Studio에서 DLL 프로젝트에서 디버그 (C#, c + +, Visual Basic의 경우 F#)
 
 DLL 프로젝트를 디버깅 하는 한 가지 방법은 DLL 프로젝트 속성에서 호출한 응용 프로그램을 지정 하는 것입니다. 그런 다음 자체 DLL 프로젝트에서 디버깅을 시작할 수 있습니다. 이 방법을 사용 하려면 앱을 구성한 것과 동일한 위치에 동일한 DLL을 호출 해야 합니다. 앱을 다른 버전의 DLL 로드를 찾아서 해당 버전 중단점 포함 되지 않습니다. Dll 디버깅의 다른 메서드를 참조 하세요 [DLL 디버깅 프로젝트](../debugger/debugging-dll-projects.md)합니다.
   
-네이티브 DLL을 호출 하는 관리 되는 앱 또는 네이티브 앱을 관리 되는 DLL을 호출 하는 경우에 DLL 및 호출 앱 모두를 디버깅할 수 있습니다. 자세한 내용은 [방법: 혼합 모드에서 디버깅](../debugger/how-to-debug-in-mixed-mode.md)을 참조하세요.   
+네이티브 DLL을 호출 하는 관리 되는 앱 또는 네이티브 앱을 관리 되는 DLL을 호출 하는 경우에 DLL 및 호출 앱 모두를 디버깅할 수 있습니다. 자세한 내용은 [방법: 혼합 모드에서 디버그](../debugger/how-to-debug-in-mixed-mode.md).   
 
 네이티브 및 관리 DLL 프로젝트에는 호출 앱을 지정 다른 설정이 있습니다. 
 

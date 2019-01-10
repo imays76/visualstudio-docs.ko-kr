@@ -2,7 +2,6 @@
 title: UWP 앱 디버그 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 01/17/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -14,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 14761da614ddcd36e8ca9bcec2a686f125ab53bd
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 58f271bd1d4e0a7a15d1f08fe89b1ef252bdefd4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064023"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902203"
 ---
 # <a name="debug-universal-windows-apps-uwp-in-visual-studio"></a>유니버설 Windows 앱 (UWP) Visual Studio에서 디버그
 
@@ -34,4 +33,4 @@ UWP 앱을 디버깅 하는 것에 대 한 전체 지원을 제공 하는 Visual
 
   
 ## <a name="see-also"></a>참고 항목  
- [정적 코드 분석을 사용하여 코드 품질 분석](../test/analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md)
+ [정적 코드 분석을 사용하여 코드 품질 분석](/visualstudio/code-quality/code-analysis-for-managed-code-overview)

@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_addresstaken | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8244940212237ed6725017cc92d2ba005ccc0d10
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: cc3f3324bd101e907e3b352606b9036b74657576
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822464"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859518"
 ---
 # <a name="idiasymbolgetaddresstaken"></a>IDiaSymbol::get_addressTaken
 다른 기호가이 기호의 주소를 참조 하는지 여부를 나타내는 플래그를 검색 합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49822464"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT get_addressTaken (   
+HRESULT get_addressTaken (   
    BOOL* pRetVal  
 );  
 ```  

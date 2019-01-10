@@ -1,8 +1,6 @@
 ---
 title: 메시지 코드 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - message codes
@@ -12,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25b2061d9f20da8e9c4d5b4f9794f400d638260c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 7c1f568ead3e5862460d4ae4e18e51687737d4a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474445"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866298"
 ---
 # <a name="message-codes"></a>메시지 코드
-에 표시 된 각 메시지 줄 [메시지 뷰](../debugger/messages-view.md) 'P'를 포함의 '의 ' 또는 'R' 코드입니다. 이러한 코드는 다음과 같은 의미가 있습니다.  
+에 표시 된 각 메시지 줄 [메시지 보기](../debugger/messages-view.md) 'P'를 포함의 '의 ' 또는 'R' 코드입니다. 이러한 코드에는 다음과 같은 의미가 있습니다.  
   
 |코드|의미|  
 |----------|-------------|  
-|P|메시지의 큐에 게시 된는 **PostMessage** 함수입니다. 정보가는 메시지의 최종 처리와 관련 된 ´ ù.|  
-|S|메시지는 **SendMessage** 함수입니다. 즉, 수신자 처리 하 고 메시지를 반환 될 때까지 보낸 사람이 제어 권한을 다시 하지 않습니다. 따라서 수신기는 보낸 사람에 게 반환 값을 통과 수 있습니다.|  
-|s|메시지를 보냈지만 보안 반환 값에 액세스할 수 없습니다.|  
-|R|각각의 ' 선은 메시지 반환 값을 나열 하는 해당 'R' (return) 줄 합니다. 경우에 따라 메시지 호출이 중첩 되는, 즉, 특정 메시지 처리기는 다른 메시지를 보냅니다.|
+|P|메시지가 큐로 게시 합니다 **PostMessage** 함수입니다. 없는 정보 메시지의 최종 처리와 관련 된 제공 됩니다.|  
+|S|사용 하 여 메시지를 보낸 합니다 **SendMessage** 함수입니다. 즉, 보낸 사람에 게는 수신자 처리 하 고 메시지를 반환 될 때까지 컨트롤을 다시 하지 않습니다. 따라서 수신자 보낸 사람에 게 반환 값을 전달할 수 있습니다.|  
+|s|메시지를 보냈지만 보안 반환 값에 대 한 액세스를 방지 합니다.|  
+|R|각각의 ' 줄에는 해당 'R' (반환) 줄 메시지 반환 값을 나열 합니다. 경우에 따라 메시지 호출이 중첩 되는, 즉, 하나의 메시지 처리기는 다른 메시지를 보냅니다.|

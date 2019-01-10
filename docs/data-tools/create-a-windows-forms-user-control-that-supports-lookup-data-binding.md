@@ -14,15 +14,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 07c9cf40952eabcafe9d1587d3e2ae4aa02de3a0
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: bcdfb4640e88289b02f2f8813c39b66eaad3827d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305085"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889425"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>조회 데이터 바인딩을 지원하는 Windows Forms 사용자 정의 컨트롤 만들기
 
@@ -173,9 +172,9 @@ LookupBox 컨트롤을 디자인, 끌어를 <xref:System.Windows.Forms.ComboBox>
 
 그러면 `Customers` 테이블의 `CompanyName`이 표시되도록 데이터 바인딩이 설정되고 `Orders` 테이블의 `CustomerID` 값은 유지됩니다.
 
-## <a name="run-the-application"></a>응용 프로그램 실행
+## <a name="run-the-application"></a>애플리케이션 실행
 
--   **F5** 키를 눌러 응용 프로그램을 실행합니다.
+-   **F5** 키를 눌러 애플리케이션을 실행합니다.
 
 -   일부 레코드를 탐색해 보고 `CompanyName`이 `LookupBox` 컨트롤에 표시되는지 확인합니다.
 

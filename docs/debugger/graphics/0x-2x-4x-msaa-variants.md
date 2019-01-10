@@ -1,8 +1,6 @@
 ---
 title: 0 x-2 x-4 msaa 변형 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 668a6603-5082-4c78-98e6-f3dc871aa55b
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1866f718cbcb4f1d3641e7b9f514a951ccd73662
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
-ms.translationtype: HT
+ms.openlocfilehash: d3877988376c21425777beed628edd7fbdeed21e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802620"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985974"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0x/2x/4x MSAA 변형
 모든 렌더링 대상 및 스왑 체인에서 MSAA(MultiSample Anti-Aliasing) 설정을 재정의합니다.  
@@ -30,7 +28,7 @@ ms.locfileid: "53802620"
 > [!NOTE]
 >  하드웨어에서는 일부 형식에 대해 MSAA를 완전히 지원하지 않을 수 있습니다. 이러한 변형에서 해결할 수 없는 하드웨어 제한이 발생한 경우 성능 요약 테이블의 해당 열은 빈 칸이며 오류 메시지가 생성됩니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  이러한 변형은 렌더링 대상을 생성하는 `ID3DDevice::CreateTexture2D`에 대한 호출 시 샘플 수 및 샘플 품질 인수를 재정의합니다. 특히 이러한 매개 변수는 다음과 같은 경우 재정의됩니다.  
   
 - `D3D11_TEXTURE2D_DESC`에서 전달된 `pDesc` 개체가 렌더링 대상을 설명하는 경우, 즉 다음과 같은 경우입니다.  

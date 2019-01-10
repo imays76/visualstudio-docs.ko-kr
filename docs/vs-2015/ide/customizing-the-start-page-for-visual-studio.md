@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -22,12 +21,12 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c426ca146380ce01ec2c1f257c6da5538b941c19
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c771d45cc4d29fc718f39bb09254afe5fee02249
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059774"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940721"
 ---
 # <a name="customizing-the-start-page-for-visual-studio"></a>Visual Studio 시작 페이지 사용자 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +48,7 @@ Visual Studio의 시작 페이지를 사용자 지정할 수 있는 기본 방�
     -   [Visual Studio 갤러리](http://visualstudiogallery.msdn.microsoft.com/site/search?f%5B0%5D.Type=SearchText&f%5B0%5D.Value=start%20page), 다른 웹 사이트 또는 로컬 인트라넷의 페이지에서 설치할 수 있습니다.
 
         > [!NOTE]
-        >  이전 버전의 Visual Studio를 대상으로 한 페이지가 필요한 경우 Visual Studio SDK를 사용하여 페이지를 업그레이드할 수 있습니다. [을 참조하세요. Visual Studio 사용자 지정 시작 페이지 업그레이드](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md)합니다.
+        >  이전 버전의 Visual Studio를 대상으로 한 페이지가 필요한 경우 Visual Studio SDK를 사용하여 페이지를 업그레이드할 수 있습니다. [방법: Visual Studio 사용자 지정 시작 페이지 업그레이드](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md)합니다.
 
          사용자 지정 시작 페이지를 포함하는 .vsix 파일을 열거나 시작 페이지 파일을 컴퓨터의 **%USERPROFILE% \My Documents\Visual Studio 2015\StartPages** 폴더에 복사하여 붙여넣습니다.
 

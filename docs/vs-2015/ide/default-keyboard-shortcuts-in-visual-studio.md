@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -20,12 +19,12 @@ caps.latest.revision: 59
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a1ea4c51f617d6128018ba23cbf564996cccf1a3
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 95d7f9c542bccfd5f78b0aafef276147e8534257
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057256"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847638"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio의 기본 바로 가기 키
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +52,7 @@ ms.locfileid: "53057256"
 |[ADO.NET 엔터티 데이터 모델 디자이너](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_ADONET)|[레이어 다이어그램](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_layerDiagram)|[설정 디자이너](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SettingsDesigner)|[VC 이미지 편집기](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcimageeditor)|
 |[클래스 다이어그램](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classDiagram)|[관리되는 리소스 편집기](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_managedResources)|[솔루션 탐색기](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SolutionExplorer)|[VC 문자열 편집기](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcstringeditor)|
 |[코딩된 UI 테스트 편집기](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_codedUItest)|[병합 편집기 창](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_MergeEditor)|[팀 탐색기](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TeamExplorer)|[뷰 디자이너](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_viewDesigner)|
-|[데이터 집합 편집기](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_dataset)|[Microsoft SQL Server Data Tools, 스키마 비교](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SchemaCompare)|[Team Foundation Build 정보 편집기](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFBuild)|[Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_visualstudio)|
+|[DataSet 편집기](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_dataset)|[Microsoft SQL Server Data Tools, 스키마 비교](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SchemaCompare)|[Team Foundation Build 정보 편집기](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFBuild)|[Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_visualstudio)|
 |[차이점 뷰어](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diff)|[Microsoft SQL Server Data Tools, 테이블 디자이너](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TableDesigner)|[테스트 탐색기](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TestExplorer)|[Windows Forms 디자이너](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_wfdesigner)|
 |[DOM 탐색기](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_DOM)|[Microsoft SQL Server Data Tools, T-SQL 편집기](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TSQLeditor)|[텍스트 편집기](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TextEditor)|[작업 항목 편집기](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_workItemEditor)|
 |[F# Interactive](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_FSharp)|[Microsoft SQL Server Data Tools, T-SQL PDW 편집기](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_linkfix)|[UML 동작 다이어그램](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLactivityDiagram)|[작업 항목 쿼리 뷰](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_WIqueryview)|
@@ -495,7 +494,7 @@ ms.locfileid: "53057256"
 |OtherContextMenus.UITestEditorContextMenu.Movecode|Ctrl+Alt+C|
 |OtherContextMenus.UITestEditorContextMenu.Splitintoanewmethod|Ctrl+Shift+T|
 
-##  <a name="bkmk_dataset"></a> 데이터 집합 편집기
+##  <a name="bkmk_dataset"></a> DataSet 편집기
 
 |명령|바로 가기 키|
 |--------------|------------------------|

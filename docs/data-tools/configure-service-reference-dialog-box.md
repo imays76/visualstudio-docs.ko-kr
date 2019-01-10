@@ -13,15 +13,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f0cb2737356813a9b637d7f16e9d5cda704c022a
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: e90287711d23a3560ddd97280a8a51e591ce40e0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389502"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963517"
 ---
 # <a name="configure-service-reference-dialog-box"></a>서비스 참조 구성 대화 상자
 
@@ -107,5 +106,5 @@ ms.locfileid: "52389502"
 
 ## <a name="see-also"></a>참고 항목
 
-- [방법: 웹 서비스에 참조 추가](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
+- [방법: 웹 서비스에 대 한 참조를 추가 합니다.](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
 - [Windows Communication Foundation 서비스 및 WCF Data Services](../data-tools/configure-service-reference-dialog-box.md)

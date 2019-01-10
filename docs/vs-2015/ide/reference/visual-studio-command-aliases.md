@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -22,12 +21,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0caaea4b3bdb8c3b1018006f2943e49ac545744d
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 346225b43cd7a08d00501500f596545d10ccd3ed
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052512"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962284"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -71,7 +70,7 @@ ms.locfileid: "53052512"
 |[메모리 명령 목록](../../ide/reference/list-memory-command.md) Eight Byte 형식|dq|Debug.ListMemory /Format:EightBytes|
 |Unicode로 [메모리 목록 표시 명령](../../ide/reference/list-memory-command.md)|du|Debug.ListMemory /Unicode|
 |[문 실행 명령](../../ide/reference/evaluate-statement-command.md)|eval|Debug.EvaluateStatement|
-|끝내기|끝내기|File.Exit|
+|종료|종료|File.Exit|
 |선택 영역 서식|format|편집.선택영역서식|
 |전체 화면|전체 화면|보기.전체화면|
 |[시작 명령](../../ide/reference/start-command.md)|g|디버그.시작|

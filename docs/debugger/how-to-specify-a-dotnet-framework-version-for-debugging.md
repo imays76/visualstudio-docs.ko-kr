@@ -2,7 +2,6 @@
 title: 디버깅을 위한.NET Framework 버전 지정 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 86289c9a93a0bb9e0f7756443d79f4a1a6dd38a6
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 855dedd3073614c913abcc619babdaad03d61797
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056010"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893829"
 ---
 # <a name="how-to-specify-a-net-framework-version-for-debugging-c-visual-basic-f"></a>방법: 디버깅을 위한.NET Framework 버전 지정 (C#, Visual Basic의 경우 F#)
 
@@ -47,7 +46,7 @@ The debugger has made an incorrect assumption about the [!INCLUDE[dnprdnshort](.
   
 3. **레지스트리 편집기**에서 HKEY_LOCAL_MACHINE 폴더를 엽니다.  
   
-4. 탐색 HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine\\{449EC4CC-30D2-4032-9256-EE18EB41B62B}  
+4. 로 이동합니다. HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine\\{449EC4CC-30D2-4032-9256-EE18EB41B62B}  
   
     이 키가 없으면 마우스 오른쪽 단추로 HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine을 클릭하고 **새 키**를 클릭합니다. 새 키 이름을 `{449EC4CC-30D2-4032-9256-EE18EB41B62B}`입니다.  
   

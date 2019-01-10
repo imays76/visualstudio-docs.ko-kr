@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -14,12 +13,12 @@ caps.latest.revision: 14
 author: conceptdev
 ms.author: crdun
 manager: ghogen
-ms.openlocfilehash: f21a5491d1b0e23bff90ce0105b81eb6291ac7e5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: e23608f3fbbb14bd6d8f8c0494cb1ae2784358fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807195"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837971"
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>변경 로그(Visual Studio Tools for Unity)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -126,7 +125,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 -   Windows 스토어 앱용 UnityEngine 및 UnityEditor 어셈블리에 대한 참조를 수정했습니다.
 
--   디버거를 단계별로 실행할 때 발생하는 오류(단계별로 실행할 수 없음, 일반 예외)를 수정했습니다.
+-   디버거에서 단계별로 실행할 때 오류를 해결했습니다. 단계별로 실행할 수 없는 일반 예외.
 
 -   Visual Studio 2015의 적중 횟수 중단점을 수정했습니다.
 
@@ -597,21 +596,21 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 -   버그 UVS-48 수정: 큰따옴표를 입력하면 오류가 발생하고 모든 기능(코드 완성, 구문 강조 등)이 중단되는 문제.
 
--   버그 UVS-46 수정: Visual Studio의 오류 목록을 클릭할 때 열린 스크립트 파일(UnityScript) 중복 문제
+-   버그 UVS-46 수정: Visual Studio의 오류 목록을 클릭할 때 열린 스크립트 파일(UnityScript) 중복 문제.
 
--   버그 UVS-42 수정: VS 2012에서 상태 표시줄의 Unity 연결 로고가 마우스 이벤트를 처리하지 않는 문제
+-   버그 UVS-42 수정: VS 2012에서 상태 표시줄의 Unity 연결 로고가 마우스 이벤트를 처리하지 않는 문제.
 
--   버그 UVS-44 수정: VS 2012에서 빠른 MonoBehaviour에 대해 CTRL+SHIFT+Q를 사용할 수 없는 문제
+-   버그 UVS-44 수정: VS 2012에서 빠른 MonoBehaviours에 대해 CTRL+SHIFT+Q를 사용할 수 없는 문제.
 
--   버그 UVS-40 수정: 창이 VS2012의 “어두운" 테마에서 비활성화된 경우 Unity 프로젝트 탐색기에서 선택한 항목을 읽지 못하는 문제
+-   버그 UVS-40 수정: 창이 VS2012의 "어두운" 테마에서 비활성화된 경우 Unity 프로젝트 탐색기에서 선택한 항목을 읽지 못하는 문제.
 
--   버그 UVS-39 수정: 이스케이프된 문자열 토큰화 문제
+-   버그 UVS-39 수정: 이스케이프된 문자열 토큰화 문제.
 
--   버그 UVS-35 수정: 변수를 검사할 때 개체에 대한 ToString 호출 문제
+-   버그 UVS-35 수정: 변수를 검사할 때 개체에 대한 ToString 호출 문제.
 
--   버그 UVS-27 수정: VS2012에서 "어두운" 테마와 Goto 기호 창 불일치 문제
+-   버그 UVS-27 수정: VS2012에서 "어두운" 테마와 Goto 기호 창 불일치 문제.
 
--   버그 UVS-11 수정: 코루틴의 로컬 문제
+-   버그 UVS-11 수정: 코루틴의 지역.
 
 ## <a name="11--beta-release"></a>1.1 - 베타 릴리스
  릴리스됨 2014-10-09
@@ -717,9 +716,9 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 -   식 계산에 대해 로드된 어셈블리에서 형식을 검색하는 방법을 수정했습니다.
 
--   버그 UVS-21 수정: Unity 개체에서의 할당 계산이 영향을 미치지 않는 문제
+-   버그 UVS-21 수정: Unity 개체에서의 할당 계산이 영향을 미치지 않는 문제.
 
--   버그 UVS-21 수정: Unity Math API에 대한 메서드 호출을 계산할 때의 잘못된 포인터 문제
+-   버그 UVS-21 수정: Unity Math API에 대한 메서드 호출을 계산할 때의 잘못된 포인터 문제.
 
 ## <a name="108"></a>1.0.8
  릴리스됨 2012-09-26
@@ -818,4 +817,3 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 ## <a name="10--initial-release"></a>1.0 - 초기 버전
  릴리스됨 2012-08-22
-
