@@ -1,6 +1,6 @@
 ---
 title: Azure
-description: Mac용 Visual Studio 내에서 모바일 앱에 Azure 데이터 저장소, 인증 및 푸시 알림 추가
+description: Mac용 Visual Studio 내에서 모바일 앱에 Azure 데이터 스토리지, 인증 및 푸시 알림 추가
 ms.assetid: 3E5ADF4A-6655-42AD-BFC1-CE5E437C457B
 author: conceptdev
 ms.author: crdun

@@ -83,7 +83,7 @@ Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | .NET Framework 4.7.1 개발 
 Microsoft.Net.ComponentGroup.4.7.2.DeveloperTools | .NET Framework 4.7.2 개발 도구 | 15.8.27825.0 | Optional
 Microsoft.Net.ComponentGroup.4.7.DeveloperTools | .NET Framework 4.7 개발 도구 | 15.6.27406.0 | Optional
 
-## <a name="data-storage-and-processing-build-tools"></a>데이터 저장소 및 처리 빌드 도구
+## <a name="data-storage-and-processing-build-tools"></a>데이터 스토리지 및 처리 빌드 도구
 
 **ID:** Microsoft.VisualStudio.Workload.DataBuildTools
 

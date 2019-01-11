@@ -16,7 +16,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 29d45f4d5df6131182dfe70467e655bd23f6fcf2
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49829588"
@@ -72,7 +72,7 @@ ms.locfileid: "49829588"
   
     ![당구공 질감](../designers/media/gfx-shader-demo-billiard-art-ball-texture.png "gfx_shader_demo_billiard_art_ball_texture")  
   
-4. 필요한 경우 이 질감의 저장소 요구 사항을 줄여야 할 수 있습니다. 질감의 너비를 높이에 맞게 줄이면 됩니다. 그러면 너비에 따라 질감이 압축되지만 질감이 구에 매핑된 방식으로 인해 당구공이 렌더링될 때 질감이 확장됩니다. 크기를 조정한 후 질감은 다음과 같이 표시됩니다.  
+4. 필요한 경우 이 질감의 스토리지 요구 사항을 줄여야 할 수 있습니다. 질감의 너비를 높이에 맞게 줄이면 됩니다. 그러면 너비에 따라 질감이 압축되지만 질감이 구에 매핑된 방식으로 인해 당구공이 렌더링될 때 질감이 확장됩니다. 크기를 조정한 후 질감은 다음과 같이 표시됩니다.  
   
     ![사각형으로 압축된 당구공 질감](../designers/media/gfx-shader-demo-billiard-art-ball-texture-square.png "gfx_shader_demo_billiard_art_ball_texture_square")  
   

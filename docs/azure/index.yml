@@ -139,7 +139,7 @@ sections:
     items:
     - image:
         src: https://docs.microsoft.com/azure/media/index/Storage.svg
-      text: Azure 저장소
+      text: Azure Storage
       href: vs-azure-tools-connected-services-storage.md
     - image:
         src: https://docs.microsoft.com/azure/media/index/KeyVault.svg
@@ -156,7 +156,7 @@ sections:
 - title: Azure Cloud Services
   items:
   - type: paragraph
-    text: Azure Cloud Services는 Azure Storage 및 기타 Azure 리소스에 액세스할 수 있는 일반적인 Azure 서비스를 만들기 위한 범용 기술입니다.
+    text: Azure Cloud Services는 Azure 스토리지 및 기타 Azure 리소스에 액세스할 수 있는 일반적인 Azure 서비스를 만들기 위한 범용 기술입니다.
   - type: list
     style: cards
     className: cardsM
@@ -190,17 +190,17 @@ sections:
 - title: Visual Studio에서 Azure 리소스 작업
   items:
   - type: paragraph
-    text: Visual Studio의 클라우드 탐색기는 저장소 계정 및 가상 머신 같은 Azure 리소스에 액세스하는 편리한 방법을 제공합니다.
+    text: Visual Studio의 클라우드 탐색기는 스토리지 계정 및 가상 머신 같은 Azure 리소스에 액세스하는 편리한 방법을 제공합니다.
   - type: list
     style: cards
     className: cardsM
     columns: 3
     items:
     - href: vs-azure-tools-storage-resources-server-explorer-browse-manage.md
-      html: <p>Visual Studio에서 Azure Storage 계정에 액세스</p>
+      html: <p>Visual Studio에서 Azure 스토리지 계정에 액세스</p>
       image:
         src: https://docs.microsoft.com/media/common/i_dashboard.svg
-      title: 저장소
+      title: 스토리지
     - href: vs-azure-tools-virtual-machines-access-from-server-explorer.md
       html: <p>Visual Studio에서 Virtual Machines에 액세스</p>
       image:

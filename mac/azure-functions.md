@@ -106,7 +106,7 @@ Mac용 Visual Studio에서 Azure Functions 지원을 통해 로컬 개발 컴퓨
     > [!CAUTION]
     > **가격 책정**을 **소비**로 설정된 상태에서 사용자 저정 서비스 계획을 만들려는 경우 프로비전 오류로 인해 게시가 실패하는 Mac용 Visual Studio 7.6 버전의 버그가 있습니다. 이는 다음 서비스 릴리스에서 수정될 예정입니다.
 
-5. **다음**을 클릭하여 저장소 계정을 만듭니다. Azure 저장소 계정은 함수 런타임에서 필요합니다. **사용자 지정**을 클릭하여 범용 저장소 계정을 만들거나 기존 저장소 계정을 사용합니다.
+5. **다음**을 클릭하여 저장소 계정을 만듭니다. Azure 스토리지 계정은 함수 런타임에서 필요합니다. **사용자 지정**을 클릭하여 범용 저장소 계정을 만들거나 기존 저장소 계정을 사용합니다.
 
     ![Azure 메뉴 옵션에 게시](media/azure-functions-image8.png)
 
@@ -131,9 +131,9 @@ local.settings.json에서 추가한 모든 설정은 Azure의 함수 앱에도 �
 
 ![Azure 함수의 탭을 통해](media/azure-functions-image10.png)
 
-여기에서 새 응용 프로그램 설정을 추가하거나 기존 응용 프로그램을 수정할 수 있는 함수 앱에 대한 응용 프로그램 설정을 설정할 수 있습니다.
+여기에서 새 애플리케이션 설정을 추가하거나 기존 애플리케이션을 수정할 수 있는 함수 앱에 대한 애플리케이션 설정을 설정할 수 있습니다.
 
-![Azure Portal의 응용 프로그램 설정 영역](media/azure-functions-image11.png)
+![Azure Portal의 애플리케이션 설정 영역](media/azure-functions-image11.png)
 
 설정할 필요가 있는 중요한 설정은 `FUNCTIONS_EXTENSION_VERSION`입니다. Mac용 Visual Studio에서 게시할 때 이 값을 **베타**로 설정해야 합니다.
 
@@ -153,9 +153,9 @@ local.settings.json에서 추가한 모든 설정은 Azure의 함수 앱에도 �
 - **Timer** - 미리 정의된 일정에 따라 정리 또는 기타 일괄 처리 작업을 실행합니다. 이 템플릿에는 이름과 일정 등 두 필드가 있고 6개 필드 CRON 식입니다. 자세한 내용은 [Azure functions 문서의 Timer 부분](/azure/azure-functions/functions-create-scheduled-function)을 참조하세요.
 
 
-- **Queue Trigger** – Azure Storage 큐에 도착하면 메시지에 응답하는 함수입니다. 함수 이름 외에도 이 템플릿은 **경로**(메시지를 읽을 큐의 이름)와 저장소 계정 **연결**(저장소 계정 연결 문자열을 포함하는 앱 설정의 이름)을 사용합니다. 자세한 내용은 [Azure Functions 문서의 큐 저장소 부분](/azure/azure-functions/functions-create-storage-queue-triggered-function)을 참조하세요.
+- **Queue Trigger** – Azure Storage 큐에 도착하면 메시지에 응답하는 함수입니다. 함수 이름 외에도 이 템플릿은 **경로**(메시지를 읽을 큐의 이름)와 스토리지 계정 **연결**(스토리지 계정 연결 문자열을 포함하는 앱 설정의 이름)을 사용합니다. 자세한 내용은 [Azure 함수 문서의 큐 스토리지 부분](/azure/azure-functions/functions-create-storage-queue-triggered-function)을 참조하세요.
 
-- **Blob Trigger** – 컨테이너에 추가되는 Azure Storage BLOB를 처리합니다. 함수 이름 외에도 이 템플릿은 경로 및 연결 속성을 사용합니다. 경로 속성은 트리거가 모니터링할 저장소 계정 내의 경로입니다. 연결 계정은 저장소 계정 연결 문자열을 포함하는 앱 설정의 이름입니다. 자세한 내용은 [Azure Functions BLOB 저장소 문서](/azure/azure-functions/functions-create-storage-blob-triggered-function)를 참조하세요.
+- **Blob Trigger** – 컨테이너에 추가되는 Azure Storage BLOB를 처리합니다. 함수 이름 외에도 이 템플릿은 경로 및 연결 속성을 사용합니다. 경로 속성은 트리거가 모니터링할 스토리지 계정 내의 경로입니다. 연결 계정은 스토리지 계정 연결 문자열을 포함하는 앱 설정의 이름입니다. 자세한 내용은 [Azure Functions Blob Storage 문서](/azure/azure-functions/functions-create-storage-blob-triggered-function)를 참조하세요.
 
 - **일반 웹후크** – 웹후크를 지원하는 서비스에서 요청을 수신할 때마다 실행되는 간단한 함수입니다. 자세한 내용은 [Azure Functions 문서의 일반 웹후크 부분](/azure/azure-functions/functions-create-generic-webhook-triggered-function)을 참조하세요.
 
@@ -163,4 +163,4 @@ local.settings.json에서 추가한 모든 설정은 Azure의 함수 앱에도 �
 
 - **Image Resizer** - Blob가 컨테이너에 추가될 때마다 크기 조정된 이미지를 만드는 함수입니다. 이 템플릿은 트리거, 소형 이미지 출력, 중간 이미지 출력을 위해 경로 및 연결을 사용합니다.
 
-- **SAS token** – 지정된 Azure Storage 컨테이너 및 Blob 이름에 대한 SAS 토큰을 생성하는 함수입니다. 함수 이름 외에도 이 템플릿은 경로 및 연결 속성을 사용합니다. 경로 속성은 트리거가 모니터링할 저장소 계정 내의 경로입니다. 연결 계정은 저장소 계정 연결 문자열을 포함하는 앱 설정의 이름입니다. **액세스 권한**도 설정해야 합니다. 권한 부여 수준은 함수에 API 키가 필요한지 여부, 사용할 키, 함수의 함수 키 사용, 관리자의 마스터 키 사용을 제어합니다. 자세한 내용은 [SAS 토큰을 생성하기 위한 C# Azure 함수](https://azure.microsoft.com/resources/samples/functions-dotnet-sas-token/) 샘플을 참조하세요.
+- **SAS token** – 지정된 Azure Storage 컨테이너 및 Blob 이름에 대한 SAS 토큰을 생성하는 함수입니다. 함수 이름 외에도 이 템플릿은 경로 및 연결 속성을 사용합니다. 경로 속성은 트리거가 모니터링할 스토리지 계정 내의 경로입니다. 연결 계정은 스토리지 계정 연결 문자열을 포함하는 앱 설정의 이름입니다. **액세스 권한**도 설정해야 합니다. 권한 부여 수준은 함수에 API 키가 필요한지 여부, 사용할 키, 함수의 함수 키 사용, 관리자의 마스터 키 사용을 제어합니다. 자세한 내용은 [SAS 토큰을 생성하기 위한 C# Azure 함수](https://azure.microsoft.com/resources/samples/functions-dotnet-sas-token/) 샘플을 참조하세요.

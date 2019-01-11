@@ -22,7 +22,7 @@ Visual Studio의 뛰어난 SQL Server 지원은 SQL 쿼리를 생성 및 실행�
 
 > [!Note]
 > SQL 및 R을 함께 사용하려면 SQL Server Data Tools가 설치되어 있어야 합니다.
-> - Visual Studio 2017: Visual Studio 설치 관리자를 실행하고 데이터 저장소와 처리 워크로드를 선택합니다(SQL Server Data Tools 포함).
+> - Visual Studio 2017: Visual Studio 설치 관리자를 실행하고 데이터 스토리지와 처리 워크로드를 선택합니다(SQL Server Data Tools 포함).
 > - Visual Studio 2015: [Download SQL Server Data Tools](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt)(SQL Server Data Tools 다운로드)의 지침을 따릅니다.
 
 |   |   |

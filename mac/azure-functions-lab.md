@@ -16,13 +16,13 @@ ms.locfileid: "51296439"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>자습서: Azure Functions 시작
 
-이 연습에서는 Mac용 Visual Studio를 사용하여 Azure Functions 빌드를 시작하는 방법을 알아봅니다. 또한 Azure Functions 개발자가 사용할 수 있는 여러 바인딩 및 트리거 종류 중 하나를 나타내는 Azure 저장소 테이블에 통합합니다.
+이 연습에서는 Mac용 Visual Studio를 사용하여 Azure Functions 빌드를 시작하는 방법을 알아봅니다. 또한 Azure Functions 개발자가 사용할 수 있는 여러 바인딩 및 트리거 종류 중 하나를 나타내는 Azure 스토리지 테이블에 통합합니다.
 
 ## <a name="objectives"></a>목표
 
 > [!div class="checklist"]
 > * 로컬 Azure Functions 만들기 및 디버그
-> * 웹 및 Azure 저장소 리소스와 통합
+> * 웹 및 Azure 스토리지 리소스와 통합
 > * 여러 Azure Functions가 포함된 워크플로 조정
 
 ## <a name="requirements"></a>요구 사항
@@ -53,23 +53,23 @@ ms.locfileid: "51296439"
 
     ![local.settings.json 파일을 표시하는 솔루션 패드](media/azure-functions-lab-image3.png)
 
-## <a name="exercise-2-creating-an-azure-storage-account"></a>연습 2: Azure 저장소 계정 만들기
+## <a name="exercise-2-creating-an-azure-storage-account"></a>연습 2: Azure 스토리지 계정 만들기
 
 1. [https://portal.azure.com](https://portal.azure.com)에서 Azure 계정에 로그온합니다.
 
 1. **즐겨찾기** 섹션에서 화면 왼쪽에 있는 **저장소 계정**을 선택합니다.
 
-    ![저장소 계정 항목을 나타내는 Azure Portal의 즐겨찾기 섹션](media/azure-functions-lab-image4.png)
+    ![스토리지 계정 항목을 나타내는 Azure Portal의 즐겨찾기 섹션](media/azure-functions-lab-image4.png)
 
 1. **추가**를 선택하여 새 저장소 계정을 만듭니다.
 
-    ![새 저장소 계정을 추가하는 단추](media/azure-functions-lab-image5.png)
+    ![새 스토리지 계정을 추가하는 단추](media/azure-functions-lab-image5.png)
 
 1. **이름**에 전역으로 고유한 이름을 입력하고 **리소스 그룹**에 다시 사용합니다. 다른 모든 항목은 기본값으로 유지할 수 있습니다.
 
-    ![새 저장소 계정 세부 정보](media/azure-functions-lab-image6.png)
+    ![새 스토리지 계정 세부 정보](media/azure-functions-lab-image6.png)
 
-1. **만들기**를 클릭합니다. 저장소 계정을 만드는 데 몇 분 정도 걸릴 수 있습니다. 만들어진 후에는 알림이 표시됩니다.
+1. **만들기**를 클릭합니다. 스토리지 계정을 만드는 데 몇 분 정도 걸릴 수 있습니다. 만들어진 후에는 알림이 표시됩니다.
 
     ![배포 성공 알림](media/azure-functions-lab-image7.png)
 
@@ -79,7 +79,7 @@ ms.locfileid: "51296439"
 
     ![선택키 설정](media/azure-functions-lab-image8.png)
 
-1. 첫 번째 **연결 문자열**을 복사합니다. 이 문자열은 나중에 Azure Functions에 Azure 저장소를 통합하는 데 사용합니다.
+1. 첫 번째 **연결 문자열**을 복사합니다. 이 문자열은 나중에 Azure Functions에 Azure 스토리지를 통합하는 데 사용합니다.
 
     ![키 1에 대한 정보](media/azure-functions-lab-image9.png)
 
@@ -145,7 +145,7 @@ ms.locfileid: "51296439"
 
     ![프로젝트 빌드 및 실행](media/azure-functions-lab-image18.png)
 
-1. 프로젝트를 실행하면 터미널 응용 프로그램이 자동으로 열립니다.
+1. 프로젝트를 실행하면 터미널 애플리케이션이 자동으로 열립니다.
 
 1. 프로젝트는 이 문서의 뒷부분에서 설명하는 메서드 속성과 파일 규칙에 따라 Azure Functions를 검색하는 프로세스를 거칩니다.  이 경우 단일 Azure 함수를 검색하며 1개 작업 함수를 "생성"합니다.
 
@@ -180,7 +180,7 @@ ms.locfileid: "51296439"
 
     return x + y;
     ```
-1. 응용 프로그램을 실행합니다.
+1. 애플리케이션을 실행합니다.
 
 1. 브라우저 창으로 돌아가 `/?x=2&y=3` 문자열을 URL에 추가합니다. 이제 전체 URL은 `http://localhost:7071/api/Add?x=2&y=3`입니다. 새 URL로 이동합니다.
 
@@ -302,7 +302,7 @@ ms.locfileid: "51296439"
 
 1. **Mac용 Visual Studio**로 돌아와 디버깅 세션을 종료합니다.
 
-## <a name="exercise-5-working-with-azure-storage-tables"></a>연습 5: Azure 저장소 테이블 작업
+## <a name="exercise-5-working-with-azure-storage-tables"></a>연습 5: Azure 스토리지 테이블 작업
 
 빌드하는 서비스가 지금까지 연습한 빌드보다는 훨씬 복잡하여 실행을 위해 상당한 시간 및/또는 인프라가 소요되는 경우가 많습니다. 이 경우 리소스가 사용 가능하게 될 때 처리 대기 중인 요청을 수락하도록 하는 것이 효과적일 수 있으며 Azure Functions에서 이를 지원합니다. 다른 경우 데이터를 중앙 집중식으로 저장하려 할 수 있습니다. Azure Storage 테이블에서는 이를 신속하게 수행할 수 있습니다.
 

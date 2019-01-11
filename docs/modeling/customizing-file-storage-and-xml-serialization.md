@@ -19,7 +19,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 01/02/2019
 ms.locfileid: "53858255"
 ---
-# <a name="customize-file-storage-and-xml-serialization"></a>파일 저장소 및 XML Serialization 사용자 지정
+# <a name="customize-file-storage-and-xml-serialization"></a>파일 스토리지 및 XML Serialization 사용자 지정
 
 사용자 인스턴스를 저장 하는 경우 또는 *모델*, Visual Studio에서 도메인 특정 언어 (DSL)를 XML 파일로 만들어지거나 업데이트 됨. 파일은 저장소에 모델을 다시 다시 로드 될 수 있습니다.
 

@@ -148,7 +148,7 @@ Microsoft.NetCore.ComponentGroup.Web | .NET Core 2.0 개발 도구 | 15.7.27625.
 Microsoft.VisualStudio.Component.Azure.Storage.AzCopy | Azure Storage AzCopy | 15.0.26906.1 | Optional
 Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation | 15.8.27924.0 | Optional
 
-## <a name="data-storage-and-processing"></a>데이터 저장소 및 처리
+## <a name="data-storage-and-processing"></a>데이터 스토리지 및 처리
 
 **ID:** Microsoft.VisualStudio.Workload.Data
 
