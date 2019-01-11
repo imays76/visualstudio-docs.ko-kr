@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_noinline | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24864562d11267cfc96bd3b3622864275eaecea2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 1e5cc3557f3c04cf2cbe615944c3106b62cdc5b9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950110"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843556"
 ---
 # <a name="idiasymbolgetnoinline"></a>IDiaSymbol::get_noInline
 함수를 인라인 되지 않은 것으로 표시 되었는지 여부를 지정 하는 플래그를 검색 (사용 하는 [noinline](/cpp/cpp/noinline) 특성).  

@@ -1,8 +1,6 @@
 ---
 title: IDiaSession::findInlineFramesByRVA | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ebb32b9b22de8d4092c53f56accf1d953bbc94a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 996c13f1b6dbf83df8ca835901673438892fe2f9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876882"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828071"
 ---
 # <a name="idiasessionfindinlineframesbyrva"></a>IDiaSession::findInlineFramesByRVA
 클라이언트가 지정 된 상대 가상 주소 (RVA)에 있는 인라인 프레임의 모든 반복 하는 데 사용 하는 열거형을 검색 합니다.  
@@ -25,7 +23,7 @@ ms.locfileid: "49876882"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT findInlineFramesByRVA (   
+HRESULT findInlineFramesByRVA (   
    IDiaSymbol*       parent,   DWORD             rva,  
    IDiaEnumSymbols** ppResult  
 );  

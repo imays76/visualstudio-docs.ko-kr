@@ -1,8 +1,6 @@
 ---
 title: 'Idialinenumber:: Get_columnnumberend | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b39cd627ab41d44ac65acbe13516fc3e5597b8a7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: bbf8a7b7e7d71172f93fee3d6548c69254301a98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875647"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895196"
 ---
 # <a name="idialinenumbergetcolumnnumberend"></a>IDiaLineNumber::get_columnNumberEnd
 식 또는 문이 끝나는 소스 1부터 시작 열 번호를 검색 합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49875647"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT get_columnNumberEnd (   
+HRESULT get_columnNumberEnd (   
    DWORD* pRetVal  
 );  
 ```  
@@ -37,9 +35,9 @@ HRESULT get_columnNumberEnd (
  [out] 식 또는 문이 끝나는 열 번호를 반환 합니다. 값이 0 이면 다음 열 끝 정보 나타나지 않습니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`합니다. 반환 `S_FALSE` 경우이 속성이 지원 되지 않습니다. 그러지 않으면 오류 코드가 반환됩니다.  
+ 성공하면 `S_OK`를 반환합니다. 반환 `S_FALSE` 경우이 속성이 지원 되지 않습니다. 그러지 않으면 오류 코드가 반환됩니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  이 메서드에서 반환 된 열 값이 문의 줄에서 마지막 문자 뒤의 줄 위치 오프셋 바이트입니다.  
   
 ## <a name="see-also"></a>참고 항목  

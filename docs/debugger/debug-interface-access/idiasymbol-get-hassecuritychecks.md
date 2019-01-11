@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_hassecuritychecks | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9679e54b8535168fa4208e6eedc2adf19e60fe9d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: af64f9bb77d4e3fc09df827be1d2558dd8736d15
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854186"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934150"
 ---
 # <a name="idiasymbolgethassecuritychecks"></a>IDiaSymbol::get_hasSecurityChecks
 함수나 compiland 버퍼 오버런 보안 검사를 사용 하 여 컴파일된 여부를 지정 하는 플래그를 검색 합니다 (예를 들어 합니다 [/GS (버퍼 보안 검사)](/cpp/build/reference/gs-buffer-security-check) 컴파일러 스위치).  

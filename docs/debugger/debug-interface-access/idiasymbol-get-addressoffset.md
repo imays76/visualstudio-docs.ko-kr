@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_addressoffset | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5dba9f8b40bd3246dd07ec2fae76ad6aa8b9c604
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 78f801faae0a32bd928f6adb8062acf18bdf1332
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917812"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875195"
 ---
 # <a name="idiasymbolgetaddressoffset"></a>IDiaSymbol::get_addressOffset
 주소 위치 오프셋된 부분을 검색합니다. 사용 시기를 [LocationType 열거형](../../debugger/debug-interface-access/locationtype.md) 로 설정 된 `LocIsStatic`합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49917812"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT get_addressOffset (   
+HRESULT get_addressOffset (   
    DWORD* pRetVal  
 );  
 ```  
@@ -42,7 +40,7 @@ HRESULT get_addressOffset (
 > [!NOTE]
 >  반환 값이 `S_FALSE` 속성 기호에 사용할 수 없다는 것을 의미 합니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  외부 DLL에 정적 멤버에 대 한 멤버의 가상 주소를 얻는 방법에이 메서드를 사용이 메서드에서 반환 되는 오프셋 0 일 수 있습니다. 가상 주소는 유효 경우에만 합니다 [idiasession:: Put_loadaddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) 에서 메서드를 [IDiaSession](../../debugger/debug-interface-access/idiasession.md) 인터페이스가 DLL의 로드 주소를 지정 하는 0이 아닌 매개 변수를 사용 하 여 호출 되었습니다.  
   
  주소의 구역을 부분을 가져오려면 호출 합니다 [idiasymbol:: Get_addresssection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md) 메서드.  
@@ -57,6 +55,6 @@ HRESULT get_addressOffset (
 ## <a name="see-also"></a>참고 항목  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [LocationType 열거형](../../debugger/debug-interface-access/locationtype.md)   
- [Idiasymbol:: Get_addresssection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)   
- [Idiasession:: Put_loadaddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)   
+ [IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)   
+ [IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

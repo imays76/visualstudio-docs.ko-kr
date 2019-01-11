@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_hasseh | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94329d853be271653a82f184399453e06c4e9836
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 81a7fdf9b0ead79e63cb9f9715a995edda9889ac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935356"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919007"
 ---
 # <a name="idiasymbolgethasseh"></a>IDiaSymbol::get_hasSEH
 함수 하나 포함 되는지 여부를 지정 하는 플래그를 검색 [구조적 예외 처리 (C/c + +)](/cpp/cpp/structured-exception-handling-c-cpp) (예를 들어 __try /\__except 블록).  

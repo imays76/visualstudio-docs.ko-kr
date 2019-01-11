@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_oemid | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8208d146284926ce7ec3375e8416210eeb5d214c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a09eb9d41a4b5a1034b3b6ab82259c8ce5c0cd38
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875257"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911412"
 ---
 # <a name="idiasymbolgetoemid"></a>IDiaSymbol::get_oemId
 기호 원래 장비 제조업체 (OEM) ID 값을 검색합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49875257"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT get_oemId (   
+HRESULT get_oemId (   
    DWORD* pRetVal  
 );  
 ```  
@@ -42,7 +40,7 @@ HRESULT get_oemId (
 > [!NOTE]
 >  반환 값이 `S_FALSE` 속성 기호에 사용할 수 없다는 것을 의미 합니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  이 속성은 사용 하 여 기호에만 적용 됩니다는 [SymTagEnum 열거형](../../debugger/debug-interface-access/symtagenum.md) 유형의 `SymTagCustomType`합니다.  
   
 ## <a name="see-also"></a>참고 항목  

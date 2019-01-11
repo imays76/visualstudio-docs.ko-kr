@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_virtualaddress | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f9083e1be60c8ed7fd69710a2ddf68040be87d90
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: d92e58468c6e5d33121be573fd0057bbd4a4bec7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915258"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831968"
 ---
 # <a name="idiasymbolgetvirtualaddress"></a>IDiaSymbol::get_virtualAddress
 가상 주소 (VA) 위치를 검색 합니다. 사용 시기를 [LocationType 열거형](../../debugger/debug-interface-access/locationtype.md) 로 설정 된 `LocIsStatic`합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49915258"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT get_virtualAddress (   
+HRESULT get_virtualAddress (   
    ULONGLONG* pRetVal  
 );  
 ```  

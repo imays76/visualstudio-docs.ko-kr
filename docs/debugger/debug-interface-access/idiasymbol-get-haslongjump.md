@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_haslongjump | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7edf8e42e8c40ab9bbe5d032f026c23f8b7ff147
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 1b9b15ce97abaad224a6728120e5a22e766ae01f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835828"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879872"
 ---
 # <a name="idiasymbolgethaslongjump"></a>IDiaSymbol::get_hasLongJump
 함수를 사용 하는 포함 되는지 여부를 지정 하는 플래그를 검색 합니다 [longjmp](/cpp/c-runtime-library/reference/longjmp) 명령 (와 연결을 [setjmp](/cpp/c-runtime-library/reference/setjmp) 명령을 이러한 지역은 예외 처리의 C 스타일 메서드).  
@@ -51,6 +49,6 @@ HRESULT get_hasLongJump
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Idiasymbol:: Get_hassetjump](../../debugger/debug-interface-access/idiasymbol-get-hassetjump.md)   
+ [IDiaSymbol::get_hasSetJump](../../debugger/debug-interface-access/idiasymbol-get-hassetjump.md)   
  [longjmp](/cpp/c-runtime-library/reference/longjmp)   
  [setjmp](/cpp/c-runtime-library/reference/setjmp)

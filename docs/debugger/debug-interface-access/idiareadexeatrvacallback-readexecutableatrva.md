@@ -1,8 +1,6 @@
 ---
 title: 'Idiareadexeatrvacallback:: Readexecutableatrva | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 69afacf68c77dcb2bca7c951dbd2a1ee9a344cfb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 8536d4ef7c6767920eb4d1bc9f3d0dcb44349714
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917289"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907244"
 ---
 # <a name="idiareadexeatrvacallbackreadexecutableatrva"></a>IDiaReadExeAtRVACallback::ReadExecutableAtRVA
 지정된 된 상대 가상 주소에 (RVA) 실행 파일에서 시작 하는 바이트의 지정 된 수를 읽습니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49917289"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT ReadExecutableAtRVA (   
+HRESULT ReadExecutableAtRVA (   
    DWORD  relativeVirtualAddress,  
    DWORD  cbData,  
    DWORD* pcbData,  
@@ -48,7 +46,7 @@ HRESULT ReadExecutableAtRVA (
  `data[]`  
  [out에서] 파일에서 읽은 바이트를 사용 하 여 입력은 배열입니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  이 메서드는 DIA 지원 코드 상대 가상 주소를 사용 하 여 실행 파일에서 데이터 바이트를 로드 하 여 호출 됩니다. 이 메서드를 지 원하는 호출을 [idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) 메서드.  
   
 ## <a name="see-also"></a>참고 항목  

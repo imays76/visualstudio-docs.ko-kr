@@ -1,8 +1,6 @@
 ---
 title: 'Idiaframedata:: Get_cplusplusexceptionhandling | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9c35668e7998cf11773cca9db4bfdbf8af11701
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: e2b7ceb69e4d4310330ea356037b7b155ea81f26
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832066"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959166"
 ---
 # <a name="idiaframedatagetcplusplusexceptionhandling"></a>IDiaFrameData::get_cplusplusExceptionHandling
 C + + 예외 처리에 적용 되는지 여부를 나타내는 플래그를 검색 합니다.  
@@ -27,7 +25,7 @@ C + + 예외 처리에 적용 되는지 여부를 나타내는 플래그를 검�
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT get_cplusplusExceptionHandling (   
+HRESULT get_cplusplusExceptionHandling (   
    BOOL* pRetVal  
 );  
 ```  
@@ -37,9 +35,9 @@ HRESULT get_cplusplusExceptionHandling (
  [out] 반환 `TRUE` c + + 예외 처리 되 고, 그렇지 않으면 실제로 반환 하는 경우 `FALSE`합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`합니다. 반환 `S_FALSE` 경우이 속성이 지원 되지 않습니다. 그러지 않으면 오류 코드가 반환됩니다.  
+ 성공하면 `S_OK`를 반환합니다. 반환 `S_FALSE` 경우이 속성이 지원 되지 않습니다. 그러지 않으면 오류 코드가 반환됩니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  인지 확인 하려면 구조적 예외 처리에 적용 (매우와에서 달리 c + + 예외 처리)를 호출 합니다 [idiaframedata:: Get_systemexceptionhandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md) 메서드.  
   
 ## <a name="see-also"></a>참고 항목  

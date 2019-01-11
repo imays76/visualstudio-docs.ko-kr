@@ -1,8 +1,6 @@
 ---
 title: 'Idiaenuminjectedsources:: Item | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8299bce906c5f3e7a38296a9c19e9c85d03501b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: cf52767a3e68442df1288d644d8d97ebcf78aaa2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917455"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890302"
 ---
 # <a name="idiaenuminjectedsourcesitem"></a>IDiaEnumInjectedSources::Item
 인덱스를 사용 하 여 삽입 된 소스를 검색합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49917455"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT Item (   
+HRESULT Item (   
    DWORD                index,  
    IDiaInjectedSource** injectedSource  
 );  

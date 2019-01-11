@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_basetype | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f7cb7b8a003f3aea5d821d5ffb9f312d069edb99
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 37f42b1f999b2f73d6ef534dddd9cfd907ac34f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49901790"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919614"
 ---
 # <a name="idiasymbolgetbasetype"></a>IDiaSymbol::get_baseType
 이 기호에 대 한 기본 형식을 검색<em>합니다.</em>  
@@ -27,7 +25,7 @@ ms.locfileid: "49901790"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT get_baseType (   
+HRESULT get_baseType (   
    DWORD* pRetVal  
 );  
 ```  
@@ -42,7 +40,7 @@ HRESULT get_baseType (
 > [!NOTE]
 >  반환 값이 `S_FALSE` 속성 기호에 사용할 수 없다는 것을 의미 합니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  기호에 대 한 기본 형식은 먼저 기호의 형식을 가져오고 다음 기본 형식에 대 한 형식을 반환 하는 조회 하 여 확인할 수 있습니다. 참고 일부 기호는 기본 형식에 없을 수 있습니다-예를 들어 구조 이름입니다.  
   
 ## <a name="example"></a>예제  

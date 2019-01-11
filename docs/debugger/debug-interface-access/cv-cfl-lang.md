@@ -1,8 +1,6 @@
 ---
 title: CV_CFL_LANG | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 63426af550894df0e9796babaec91ff5758bbf1e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: f173192d350e79b9fd97340c8cecff1b597217bf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909918"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838504"
 ---
 # <a name="cvcfllang"></a>CV_CFL_LANG
 응용 프로그램 또는 연결 된 모듈의 소스 코드 언어를 지정합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49909918"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-typedef enum CV_CFL_LANG {   
+typedef enum CV_CFL_LANG {   
    CV_CFL_C       = 0x00,  
    CV_CFL_CXX     = 0x01,  
    CV_CFL_FORTRAN = 0x02,  
@@ -80,7 +78,7 @@ typedef enum CV_CFL_LANG {
  응용 프로그램은 CVTPGD 도구를 사용 하 여 생성 된 POGO 액세스에 최적화 된 모듈입니다.  
   
  CV_CFL_CSHARP  
- 응용 프로그램 언어는 C#입니다.  
+ 응용 프로그램 언어가 C#입니다.  
   
  CV_CFL_VB  
  응용 프로그램 언어는 Visual Basic입니다.  
@@ -100,7 +98,7 @@ typedef enum CV_CFL_LANG {
  CV_CFL_HLSL  
  응용 프로그램 언어는 High Level Shader Language입니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  이 열거형의 값에는 호출에서 반환 되는 [idiasymbol:: Get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md) 메서드.  
   
 ## <a name="requirements"></a>요구 사항  

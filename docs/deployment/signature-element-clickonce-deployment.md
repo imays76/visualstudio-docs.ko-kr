@@ -1,8 +1,6 @@
 ---
 title: '&lt;서명&gt; 요소 (ClickOnce 배포) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 dev_langs:
 - VB
@@ -16,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 60349c8337d41a03d488b7d14a3fb7bcaa24dbcd
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: ab91a8dea24c37c58fceddce32eadabca4e11e7d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081516"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858041"
 ---
 # <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;서명&gt; 요소 (ClickOnce 배포)
 이 배포 매니페스트에 디지털 방식으로 서명하는 데 필요한 정보를 포함합니다.  
@@ -30,17 +28,17 @@ ms.locfileid: "39081516"
   
 ```xml  
   
-      <Signature>   
-   XML signature information   
+      <Signature>   
+   XML signature information   
 </Signature>  
 ```  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  봉투 (envelope) 서명을 사용 하는 배포 매니페스트를 서명할 선택 사항 이지만 권장 합니다. XML 파일에 서명 하는 방법에 대 한 자세한 내용은 참조는 World Wide Web 컨소시엄 권장 사항 "Xml-signature Syntax and Processing,"에 설명 된 [ http://www.w3.org/TR/xmldsig-core/ ](http://www.w3.org/TR/xmldsig-core/)합니다.  
   
  매니페스트에 서명 하려는 경우 모든 파일에 대 한 해시를 제공 합니다. 사용자는 해시 되지 않은 파일의 내용을 확인할 수 없으므로 해시 되지 않은 파일을 사용 하 여 매니페스트를 서명할 수 없습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드 예제는 `Signature` 요소에 사용 되는 배포 매니페스트에 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 배포 합니다.  
   
 ```xml  
@@ -72,5 +70,5 @@ MIIHnTCCBoWgAwIBAgIKJY9+nwAHAAB...
 </Signature>  
 ```  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [ClickOnce 배포 매니페스트](../deployment/clickonce-deployment-manifest.md)

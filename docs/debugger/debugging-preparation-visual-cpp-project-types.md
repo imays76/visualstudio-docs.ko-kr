@@ -2,7 +2,6 @@
 title: C + + 프로젝트를 디버그할 준비가 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f8d31881bed3e40db5080d642c0d3043ef2da704
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
-ms.translationtype: HT
+ms.openlocfilehash: fd76689d52bce7f77f61d7998eec683abec30555
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562037"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968156"
 ---
-# <a name="debugging-preparation-visual-c-project-types"></a>디버깅 준비: Visual C++ 프로젝트 형식
+# <a name="debugging-preparation-visual-c-project-types"></a>디버깅 준비 중: Visual C++ 프로젝트 형식
 이 단원에서는 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 프로젝트 템플릿으로 만든 기본 프로젝트 형식을 디버깅하는 방법에 대해 설명합니다.  
   
  참고로 그룹화 된 출력으로 Dll을 만드는 프로젝트 형식과 [DLL 프로젝트 디버깅](../debugger/debugging-dll-projects.md) 의 공통적인 특징 때문입니다.  

@@ -1,8 +1,6 @@
 ---
 title: IDiaSession::findInlineeLinesByVA | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b32604f435d41efcb661386397073f8bf2103cb1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 637161fc197a34ceb1b8e2704bbc0e695aaa2ff1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904637"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893447"
 ---
 # <a name="idiasessionfindinlineelinesbyva"></a>IDiaSession::findInlineeLinesByVA
 클라이언트가 모든 없는 함수를 인라인을 직접 또는 간접적으로 지정 된 부모 기호는 줄 번호 정보를 반복 하는 데 사용 하는 지정 된 가상 주소 (VA) 내에 포함 된 열거자를 검색 합니다.  
@@ -25,7 +23,7 @@ ms.locfileid: "49904637"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT findInlineeLinesByVA (   
+HRESULT findInlineeLinesByVA (   
    IDiaSymbol*           parent,   ULONGLONG             va,   DWORD                 length,  
    IDiaEnumLineNumbers** ppResult  
 );  

@@ -1,8 +1,6 @@
 ---
 title: LocationType | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e816ac9dca3c70e88ae023b4fda4edf0b99f9c96
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: bb8765f6671914d145600be925cacadc87d51387
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872098"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859804"
 ---
 # <a name="locationtype"></a>LocationType
 기호에 포함 된 위치 정보의 종류를 나타냅니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49872098"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-enum LocationType {   
+enum LocationType {   
    LocIsNull,  
    LocIsStatic,  
    LocIsTLS,  
@@ -80,7 +78,7 @@ enum LocationType {
  `LocTypeMax`  
  이 열거형의 위치 형식의 수입니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  사용할 수 있는 속성을 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 인터페이스 내 이미지 파일에서 기호 위치에 따라 달라 집니다. 자세한 내용은 [기호 위치](../../debugger/debug-interface-access/symbol-locations.md)합니다.  
   
  이 열거형의 값에는 호출에서 반환 되는 [idiasymbol:: Get_locationtype](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md) 메서드.  
@@ -91,5 +89,5 @@ enum LocationType {
 ## <a name="see-also"></a>참고 항목  
  [열거형 및 구조체](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Idiasymbol:: Get_locationtype](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)   
+ [IDiaSymbol::get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)   
  [기호 위치](../../debugger/debug-interface-access/symbol-locations.md)

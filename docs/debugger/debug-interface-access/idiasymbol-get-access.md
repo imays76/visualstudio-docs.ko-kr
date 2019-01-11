@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_access | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 88d801ded2d871952d4737596ae13bd07b551e04
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c489debf8b114aa8bf2dedaac8dae1eef183e004
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904078"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859505"
 ---
 # <a name="idiasymbolgetaccess"></a>IDiaSymbol::get_access
 클래스 멤버의 액세스 한정자를 검색합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49904078"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT get_access (   
+HRESULT get_access (   
    DWORD* pRetVal  
 );  
 ```  

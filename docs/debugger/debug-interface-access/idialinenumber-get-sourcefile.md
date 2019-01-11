@@ -1,8 +1,6 @@
 ---
 title: 'Idialinenumber:: Get_sourcefile | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0239a74bc6f2ddf616b03037b3a9a021662d6d07
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: bf68651cf94341176de6c15b704a22d291d6dd12
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899710"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872309"
 ---
 # <a name="idialinenumbergetsourcefile"></a>IDiaLineNumber::get_sourceFile
 소스 파일에 대 한 참조를 검색합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49899710"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT get_sourceFile (   
+HRESULT get_sourceFile (   
    IDiaSourceFile** pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_sourceFile (
  [out] 반환 된 [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) 소스 파일을 나타내는 개체입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`합니다. 반환 `S_FALSE` 경우이 속성이 지원 되지 않습니다. 그러지 않으면 오류 코드가 반환됩니다.  
+ 성공하면 `S_OK`를 반환합니다. 반환 `S_FALSE` 경우이 속성이 지원 되지 않습니다. 그러지 않으면 오류 코드가 반환됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)   

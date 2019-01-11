@@ -1,8 +1,6 @@
 ---
 title: 'Idiasectioncontrib:: Get_nopad | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cd7069b9b84ba088c7a40255a8805fc8bb2c394
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 694925b51d2cb65d4a3e1f38b54c20926b5895c7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858045"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910911"
 ---
 # <a name="idiasectioncontribgetnopad"></a>IDiaSectionContrib::get_nopad
 다음 메모리 경계 섹션 패딩 되지 해야 하는지 여부를 나타내는 플래그를 검색 합니다.  
@@ -37,9 +35,9 @@ HRESULT get_nopad(
  [out] 반환 `TRUE` 섹션에 있는 다음 메모리 경계선; 채워지지 해야 하는 경우 그렇지 `FALSE`합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`합니다. 반환 `S_FALSE` 경우이 속성이 지원 되지 않습니다. 그러지 않으면 오류 코드가 반환됩니다.  
+ 성공하면 `S_OK`를 반환합니다. 반환 `S_FALSE` 경우이 속성이 지원 되지 않습니다. 그러지 않으면 오류 코드가 반환됩니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  일반적으로 오래 된 파일에만 발생 하는 속성입니다.  
   
 ## <a name="see-also"></a>참고 항목  

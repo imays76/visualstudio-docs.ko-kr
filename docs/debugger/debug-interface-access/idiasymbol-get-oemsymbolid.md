@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_oemsymbolid | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d3b15cbfc289a88059960603159db3a7d57fd011
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: d12001e11e69bed1fe306e36192291dd9a06a35a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917169"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848326"
 ---
 # <a name="idiasymbolgetoemsymbolid"></a>IDiaSymbol::get_oemSymbolId
 원래 장비 제조업체 (OEM) 기호 ID 값을 검색합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49917169"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT get_oemSymbolId (   
+HRESULT get_oemSymbolId (   
    DWORD* pRetVal  
 );  
 ```  
@@ -42,7 +40,7 @@ HRESULT get_oemSymbolId (
 > [!NOTE]
 >  반환 값이 `S_FALSE` 속성 기호를 사용할 수 없는 것을 의미 합니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  식별자에는 고유 하 게 모든 기호를 표시 하려면 DIA SDK에서 만든 고유 값입니다.  
   
  이 속성은 사용 하 여 기호에만 적용 됩니다는 [SymTagEnum 열거형](../../debugger/debug-interface-access/symtagenum.md) 유형의 `SymTagCustomType`합니다.  

@@ -1,8 +1,6 @@
 ---
 title: 'Idiastackwalkframe:: Get_registervalue | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 98c7ba6fdca3c9d2fd7bf898d864e9aca0670e6d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 78c80d0dbe682a511b209a0d357cb2fbf8f3fcf0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843121"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961389"
 ---
 # <a name="idiastackwalkframegetregistervalue"></a>IDiaStackWalkFrame::get_registerValue
 레지스터의 값을 검색 합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49843121"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT get_registerValue (   
+HRESULT get_registerValue (   
    DWORD      index,  
    ULONGLONG* pRetVal  
 );  

@@ -1,8 +1,6 @@
 ---
 title: 'Idiadatasource:: Loadandvalidatedatafrompdb | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 272b43f7e33ce495aabd53f33022bdeaf4b951fc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 88bb10e46d9007878282338aff0379c57eca2aba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948904"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911704"
 ---
 # <a name="idiadatasourceloadandvalidatedatafrompdb"></a>IDiaDataSource::loadAndValidateDataFromPdb
 열립니다 및 프로그램 데이터베이스 (.pdb) 파일에 제공 된 서명을 정보와 일치 하는지 확인 하 고 디버그 데이터 소스로.pdb 파일을 준비 합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49948904"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT loadAndValidateDataFromPdb (   
+HRESULT loadAndValidateDataFromPdb (   
    LPCOLESTR pdbPath,  
    GUID*     pcsig70,  
    DWORD     sig,  
@@ -60,7 +58,7 @@ HRESULT loadAndValidateDataFromPdb (
 |E_INVALIDARG|잘못된 매개 변수입니다.|  
 |E_UNEXPECTED|이미 데이터 소스를 준비 했습니다.|  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  .Pdb 파일 서명 및 보존 기간 값을 포함 합니다. 이러한 값은.pdb 파일과 일치 하는.exe 또는.dll 파일에 복제 됩니다. 데이터 소스를 준비 하기 전에이 메서드는 명명 된.pdb 파일의 서명 및 age 제공 된 값과 일치 하는지 확인 합니다.  
   
  유효성 검사 없이.pdb 파일을 로드 하려면 사용 합니다 [idiadatasource:: Loaddatafrompdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) 메서드.  
@@ -91,6 +89,6 @@ if (FAILED(hr))
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)   
- [Idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
- [Idiadatasource:: Loaddatafrompdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)   
+ [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
+ [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)   
  [IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)

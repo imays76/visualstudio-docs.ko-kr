@@ -1,8 +1,6 @@
 ---
 title: 'Idiasession:: Findlinesbyva | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c199411504db6d4465b6e02f4ffaad988c48b46c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c7c94558cb7ee4c3cb71b323f3dc50fcec7cc100
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870655"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838611"
 ---
 # <a name="idiasessionfindlinesbyva"></a>IDiaSession::findLinesByVA
 지정 된 가상 주소 (VA) 범위에 포함 된 줄에 대 한 줄 번호 정보를 검색 합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49870655"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT findLinesByVA (   
+HRESULT findLinesByVA (   
    ULONGLONG             va,  
    DWORD                 length,  
    IDiaEnumLineNumbers** ppResult  

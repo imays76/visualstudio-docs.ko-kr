@@ -1,8 +1,6 @@
 ---
 title: 'Idiasession:: Findlinesbylinenum | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 44a30929e3d6fbef3fb276fc8b468df4e8e5621c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c2d34539d84e359366fa0ecc06b87f2a6c8b1fd6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878871"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867867"
 ---
 # <a name="idiasessionfindlinesbylinenum"></a>IDiaSession::findLinesByLinenum
 컴파일 대상에 있는 소스 파일에서 지정 된 줄 번호 또는 근처의 줄 번호를 확인 합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49878871"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT findLinesByLinenum (   
+HRESULT findLinesByLinenum (   
    IDiaSymbol*           compiland,  
    IDiaSourceFile*       file,  
    DWORD                 linenum,  
@@ -38,10 +36,10 @@ HRESULT findLinesByLinenum (
   
 #### <a name="parameters"></a>매개 변수  
  `compiland`  
- [in] [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 컴파일 대상 줄 번호에 대 한 검색을 나타내는 개체입니다. 이 매개 변수 수 없습니다 `NULL`합니다.  
+ [in] [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 컴파일 대상 줄 번호에 대 한 검색을 나타내는 개체입니다. 이 매개 변수는 `NULL`일 수 없습니다.  
   
  `file`  
- [in] [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) 소스 파일에서 검색을 나타내는 개체입니다. 이 매개 변수 수 없습니다 `NULL`합니다.  
+ [in] [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) 소스 파일에서 검색을 나타내는 개체입니다. 이 매개 변수는 `NULL`일 수 없습니다.  
   
  `linenum`  
  [in] 1부터 시작 줄 번호를 지정합니다.  
@@ -101,6 +99,6 @@ void ShowLinesInCompilands(IDiaSession *pSession, LPCOLESTR filename)
 ## <a name="see-also"></a>참고 항목  
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
- [Idiasession:: Findlinesbyaddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)   
+ [IDiaSession::findLinesByAddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)   
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

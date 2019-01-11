@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_ismsilnetmodule | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65399d8afde22a4856c43d3de0e7d2dc555d32fe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a66b8d64849f5c05efa8cc7922ba738ebc43097f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904691"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919747"
 ---
 # <a name="idiasymbolgetismsilnetmodule"></a>IDiaSymbol::get_isMSILNetmodule
 이 모듈은.netmodule (메타 데이터 및 네이티브 기호가 포함 된 Microsoft MSIL (Intermediate Language) 모듈) 여부를 나타내는 플래그를 검색 합니다.  
@@ -42,7 +40,7 @@ HRESULT get_isMSILNetmodule(
 > [!NOTE]
 >  반환 값이 `S_FALSE` 속성 기호에 사용할 수 없다는 것을 의미 합니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  이 속성은에서 사용할 수는 `SymTagCompilandDetails` 기호 형식 (참조 [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)).  
   
 ## <a name="requirements"></a>요구 사항  

@@ -1,8 +1,6 @@
 ---
 title: 'Idiainjectedsource:: Get_virtualfilename | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b4fe6547929a5db7f793d9f2f8551327a6455ad
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 13a6cbaaf3594e7d4e708d5f70bcc3c75cb88718
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844551"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958933"
 ---
 # <a name="idiainjectedsourcegetvirtualfilename"></a>IDiaInjectedSource::get_virtualFilename
 파일이 아닌 소스 코드에 지정 된 이름 검색 즉, 삽입 된 코드입니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49844551"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT get_virtualFilename (   
+HRESULT get_virtualFilename (   
    BSTR* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_virtualFilename (
  [out] 삽입 된 파일이 아닌 소스 코드에 지정 된 이름을 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`합니다. 반환 `S_FALSE` 경우이 속성이 지원 되지 않습니다. 그러지 않으면 오류 코드가 반환됩니다.  
+ 성공하면 `S_OK`를 반환합니다. 반환 `S_FALSE` 경우이 속성이 지원 되지 않습니다. 그러지 않으면 오류 코드가 반환됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

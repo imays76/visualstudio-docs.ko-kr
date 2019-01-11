@@ -1,8 +1,6 @@
 ---
 title: '방법: 패키지 매니페스트 만들기 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -20,17 +18,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 38a0c448bcf629c4e914393cb8eabad93ced574c
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: a1f965bdbd19193bfaa942d5f3635b0652f0e9c4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154631"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943475"
 ---
 # <a name="how-to-create-a-package-manifest"></a>방법: 패키지 매니페스트 만들기
 응용 프로그램에 대 한 필수 구성 요소를 배포 하려면 부트스트래퍼 패키지를 사용할 수 있습니다. 부트스트래퍼 패키지는 각 로캘에 대해 없지만 패키지 매니페스트를 단일 제품 매니페스트 파일을 포함합니다. 다양 한 지역화 된 버전 간에 공유 되는 기능은 제품 매니페스트로 이동 해야 합니다.  
   
- 패키지 매니페스트에 대 한 자세한 내용은 참조 하세요. [방법: 제품 매니페스트 만들기](../deployment/how-to-create-a-product-manifest.md)합니다.  
+ 패키지 매니페스트에 대 한 자세한 내용은 참조 하세요. [방법: 제품 매니페스트 만들기](../deployment/how-to-create-a-product-manifest.md)  
   
 ## <a name="create-the-package-manifest"></a>패키지 매니페스트 만들기  
   
@@ -75,7 +73,7 @@ ms.locfileid: "39154631"
   
 7.  복사 합니다 *C:\package* Visual Studio 부트스트래퍼 디렉터리에는 폴더입니다. 이것이 Visual Studio 2010에 대 한 합니다 *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages* 디렉터리입니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  패키지 매니페스트는 오류 메시지, 소프트웨어 사용 조건 및 언어 팩 등의 로캘별 정보를 포함합니다.  
   
 ```xml  
@@ -100,5 +98,5 @@ installing this package.</String>
 </Package>  
 ```  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [제품 및 패키지 스키마 참조](../deployment/product-and-package-schema-reference.md)

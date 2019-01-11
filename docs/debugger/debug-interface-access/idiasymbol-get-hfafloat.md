@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_hfafloat | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ae61d8c4c82eb8e0493574fc8469355f07f6a796
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 06e2ba5bc1059e0e3650329b48681687652ae143
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900243"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965884"
 ---
 # <a name="idiasymbolgethfafloat"></a>IDiaSymbol::get_hfaFloat
 사용자 정의 형식 (UDT) 부동 소수점 부동 소수점 형식의 집계 유형이 같은 (HFA) 데이터에 포함 되는지 여부를 지정 하는 플래그를 검색 합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49900243"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT get_hfaFloat(   
+HRESULT get_hfaFloat(   
    BOOL* pRetVal  
 );  
 ```  
@@ -42,10 +40,10 @@ HRESULT get_hfaFloat(
 > [!NOTE]
 >  반환 값이 `S_FALSE` 속성 기호를 사용할 수 없는 것을 의미 합니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: Dia2.h  
+ 헤더: dia2.h  
   
  라이브러리: diaguids.lib  
   

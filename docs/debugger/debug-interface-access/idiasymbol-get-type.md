@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_type | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4c80a04d41df9548fafa2da869f2e6443c599c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: ba944bd2871e23c44806caf291334743813c16d0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896473"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898115"
 ---
 # <a name="idiasymbolgettype"></a>IDiaSymbol::get_type
 이 기호에 대 한 형식을 나타내는 기호를 검색 합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49896473"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT get_type (   
+HRESULT get_type (   
    IDiaSymbol** pRetVal  
 );  
 ```  
@@ -42,7 +40,7 @@ HRESULT get_type (
 > [!NOTE]
 >  반환 값이 `S_FALSE` 속성 기호를 사용할 수 없는 것을 의미 합니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  기호는 형식을 확인 하려면이 메서드를 호출 하며 결과 검사할 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 개체입니다. 형식 없는 기호에 대 한 수 있다는 것을 참고 합니다. 예를 들어 구조의 이름 형식이 있지만 자식 기호를 가질 수 있습니다 (사용 된 [idiasymbol:: Findchildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md) 해당 자식 항목을 검사 하는 방법).  
   
 ## <a name="example"></a>예제  
@@ -60,5 +58,5 @@ if (SUCCEEDED(pType->get_type( &pBaseType ))) {
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Idiasymbol:: Get_basetype](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)   
+ [IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)   
  [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)

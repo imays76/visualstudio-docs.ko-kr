@@ -1,8 +1,6 @@
 ---
 title: 그래픽 프레임 유효성 검사 | Microsoft Docs
-ms.custom: ''
 ms.date: 03/02/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.FrameValidation
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cdfdee83a9c78069b3f086ef84b280ba9328e4f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 2add8032a1fa5da983c66ab5cfabede78f4c65c8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850882"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891776"
 ---
 # <a name="graphics-frame-validation"></a>그래픽 프레임 유효성 검사
 <!-- VERSIONLESS --> Visual Studio 2017 및 향상 된 지원을 합니다 **프레임 유효성 검사** 도구입니다.  프레임 유효성 검사 창을 오류 및 이벤트 목록에 연결 된 경고를 표시 합니다.  이 창을 보려면 선택 합니다 **보기 > 프레임 유효성 검사** 메뉴.
@@ -32,9 +30,9 @@ ms.locfileid: "49850882"
 | 이벤트 ID | ID의 항목에 매핑되는 [이벤트 목록](graphics-event-list.md) 창입니다. |
 | 심각도 | 손상, 오류, 경고, 정보 또는 메시지입니다. |
 | 범주 | 응용 프로그램 정의 기타, 초기화, 정리, 컴파일, 상태 만들기, 상태 설정, 상태 시작, 실행, 리소스 조작을, 셰이더, 중복 및 사용 하지 않는 합니다. |
-| 메시지 | 이벤트에 연결 된 메시지입니다. |
-| 이벤트(event) | 오류 또는 경고와 관련 된 이벤트입니다. |
+| 메시지 | 이벤트와 관련된 메시지입니다. |
+| 이벤트 | 오류 또는 경고와 관련 된 이벤트입니다. |
 
 ## <a name="see-also"></a>참고 항목  
-[그래픽 진단 (DirectX 그래픽 디버그)](visual-studio-graphics-diagnostics.md)   
+[그래픽 진단(DirectX 그래픽 디버그)](visual-studio-graphics-diagnostics.md)   
 <!-- /VERSIONLESS -->

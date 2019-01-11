@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::findChildrenExByVA | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f3fa4f64570977a1b3546f933aa7c55e5e69ddcd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 7b9a3f790acd7a285468810f981fd7e0210563eb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909930"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931144"
 ---
 # <a name="idiasymbolfindchildrenexbyva"></a>IDiaSymbol::findChildrenExByVA
 지정된 된 가상 주소에서 사용할 수 있는 기호 자식을 검색 합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49909930"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT findChildrenExByVA (   
+HRESULT findChildrenExByVA (   
    enum SymTagEnum   symtag,  
    LPCOLESTR         name,  
    DWORD             compareFlags,  
@@ -55,11 +53,11 @@ HRESULT findChildrenExByVA (
 ## <a name="return-value"></a>반환 값  
  반환 `S_OK` 기호의 자식이 하나 이상 찾을 하거나 반환 하는 경우 `S_FALSE` 자식이 없는 경우; 그렇지 않으면 오류 코드를 반환 합니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  반환 되는 로컬 기호 라이브 범위 정보를 포함 합니다.  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: Dia2.h  
+ 헤더: dia2.h  
   
  라이브러리: diaguids.lib  
   
@@ -69,5 +67,5 @@ HRESULT findChildrenExByVA (
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum 열거형](../../debugger/debug-interface-access/symtagenum.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
- [Idiasession:: Findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
+ [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
  [NameSearchOptions 열거형](../../debugger/debug-interface-access/namesearchoptions.md)

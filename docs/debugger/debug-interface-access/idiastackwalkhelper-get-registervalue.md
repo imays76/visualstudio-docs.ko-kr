@@ -1,8 +1,6 @@
 ---
 title: IDiaStackWalkHelper::get_registerValue | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af5f68aaf5b2caed50d28a1a53022a095d478e60
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: af6faaea54ec7c1acc97e88e9cf56d87ca33527f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887919"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926931"
 ---
 # <a name="idiastackwalkhelpergetregistervalue"></a>IDiaStackWalkHelper::get_registerValue
 레지스터의 값을 검색 합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49887919"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT get_registerValue (   
+HRESULT get_registerValue (   
    DWORD      index,  
    ULONGLONG* pRetVal  
 );  
@@ -43,7 +41,7 @@ HRESULT get_registerValue (
 ## <a name="return-value"></a>반환 값  
  성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  크기에도 불구 하 고는 `pRetVal` 매개 변수를 구현만 무엇입니까 레지스터 일반적으로 보유 저장 해야 합니다. 예를 들어는 8 비트 레지스터만 가장 낮은 8-의 비트를 지정된 된 값을 보유합니다. 이 8 비트 값이 메서드에서 반환 하는 경우 64 비트로 확장 됩니다.  
   
 ## <a name="see-also"></a>참고 항목  

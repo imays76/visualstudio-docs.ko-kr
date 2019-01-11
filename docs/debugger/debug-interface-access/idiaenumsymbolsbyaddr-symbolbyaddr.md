@@ -1,8 +1,6 @@
 ---
 title: 'Idiaenumsymbolsbyaddr:: Symbolbyaddr | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d15901ac321a1a5d60db6e989b24c314bcd211b5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 7c672beced050b4b393476d16120ab5a26a7e6d3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844824"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987261"
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyaddr"></a>IDiaEnumSymbolsByAddr::symbolByAddr
 이미지 섹션 번호 및 오프셋 기준 조회를 수행 하 여 열거자를 배치 합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49844824"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT symbolByAddr (   
+HRESULT symbolByAddr (   
    DWORD**      isect,  
    DWORD**      offsect,  
    IDiaSymbol** ppsymbol  
@@ -45,7 +43,7 @@ HRESULT symbolByAddr (
  [out] 반환 된 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 기호를 찾을 수를 나타내는 개체입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`합니다. 반환 `S_FALSE` 기호를 찾을 수 없는 경우. 그러지 않으면 오류 코드가 반환됩니다.  
+ 성공하면 `S_OK`를 반환합니다. 반환 `S_FALSE` 기호를 찾을 수 없는 경우. 그러지 않으면 오류 코드가 반환됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)   
