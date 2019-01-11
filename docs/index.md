@@ -696,7 +696,7 @@ ASP.NET Core를 사용한 웹앱</a>
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>데이터 저장소 및 처리</h3>
+                                                    <h3>데이터 스토리지 및 처리</h3>
                                                     <p>SQL Server, Azure Data Lake 또는 Hadoop을 사용하여 데이터 솔루션을 개발하고 테스트하는 도구 및 프레임워크입니다.</p>
                                                 </div>
                                             </div>

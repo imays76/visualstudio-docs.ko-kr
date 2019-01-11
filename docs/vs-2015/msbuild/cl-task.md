@@ -29,7 +29,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: fb9b6924f5d11e3d857308e3a1bcf1e1644f78bc
 ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
-ms.translationtype: MT
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/29/2018
 ms.locfileid: "50220250"
@@ -181,7 +181,7 @@ Visual C++ 컴파일러 도구 cl.exe를 래핑합니다. 컴파일러는 실행
   
    선택적 문자열 매개 변수입니다.  
   
-   응용 프로그램 및 구성 요소가 CLR(공용 언어 런타임)의 기능을 사용할 수 있게 합니다.  
+   애플리케이션 및 구성 요소가 CLR(공용 언어 런타임)의 기능을 사용할 수 있게 합니다.  
   
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.  
   
@@ -257,7 +257,7 @@ Visual C++ 컴파일러 도구 cl.exe를 래핑합니다. 컴파일러는 실행
   
    `true`인 경우 정적 스레드 로컬 저장소를 사용하여 할당한 데이터(즉, `__declspec(thread)`를 사용하여 할당한 데이터)의 파이버 안전을 지원합니다.  
   
-   자세한 내용은 [/GT(파이버 안전 스레드 로컬 저장소 지원)](http://msdn.microsoft.com/library/071fec79-c701-432b-9970-457344133159)를 참조하세요.  
+   자세한 내용은 [/GT(파이버 안전 스레드 로컬 스토리지 지원)](http://msdn.microsoft.com/library/071fec79-c701-432b-9970-457344133159)를 참조하세요.  
   
 - **EnablePREfast**  
   

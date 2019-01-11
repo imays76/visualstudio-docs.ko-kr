@@ -113,9 +113,9 @@ class Choice(object):
 
 ## <a name="step-5-3-understand-the-backing-data-stores"></a>5-3단계: 백업 데이터 저장소 이해
 
-"설문 조사 Flask 웹 프로젝트" 템플릿으로 만든 앱은 메모리, Azure 테이블 저장소 또는 Mongo DB 데이터베이스의 데이터 저장소에서 실행할 수 있습니다.
+"설문 조사 Flask 웹 프로젝트" 템플릿으로 만든 앱은 메모리, Azure 테이블 스토리지 또는 Mongo DB 데이터베이스의 데이터 저장소에서 실행할 수 있습니다.
 
-데이터 저장소 메커니즘은 다음과 같이 작동합니다.
+데이터 스토리지 메커니즘은 다음과 같이 작동합니다.
 
 1. 리포지토리 형식은 `REPOSITORY_NAME` 환경 변수를 통해 지정됩니다. 이 변수는 "memory", "azuretablestore" 또는 "mongodb"로 설정할 수 있습니다. *settings.py*의 코드 중 일부는 "memory"를 기본값으로 사용하여 이름을 검색합니다. 백업 저장소를 변경하려면 환경 변수를 설정하고 앱을 다시 시작해야 합니다.
 
@@ -175,7 +175,7 @@ class Choice(object):
         return Repository(settings)
     ```
 
-1. 각 데이터 저장소에 지정된 `Repository` 클래스의 구현은 *models\azuretablestorage.py*, *models\mongodb.py* 및 *models\memory.py* 에서 찾을 수 있습니다. Azure 저장소 구현에는 azure-storage 패키지가 사용되고, Mongo DB 구현에는 pymongo 패키지가 사용됩니다. 5-1단계에서 설명한 대로 두 패키지는 모두 프로젝트 템플릿의 *requirements.txt* 파일에 포함됩니다. 세부 정보의 탐색은 reader의 활동으로 남겨둡니다.
+1. 각 데이터 저장소에 지정된 `Repository` 클래스의 구현은 *models\azuretablestorage.py*, *models\mongodb.py* 및 *models\memory.py* 에서 찾을 수 있습니다. Azure 스토리지 구현에는 azure-storage 패키지가 사용되고, Mongo DB 구현에는 pymongo 패키지가 사용됩니다. 5-1단계에서 설명한 대로 두 패키지는 모두 프로젝트 템플릿의 *requirements.txt* 파일에 포함됩니다. 세부 정보의 탐색은 reader의 활동으로 남겨둡니다.
 
 즉, `Repository` 클래스는 데이터 저장소의 세부 사항을 추상화하며, 앱은 런타임에 환경 변수를 사용하여 세 가지 구현 중에 사용할 구현을 선택하고 구성합니다.
 
@@ -355,6 +355,6 @@ def results(key):
 
 - Azure App Service와 같은 프로덕션 서버에 웹앱을 배포합니다. [Azure App Service에 게시](publishing-python-web-applications-to-azure-from-visual-studio.md)를 참조하세요.
 
-- PostgreSQL, MySQL 및 SQL Server와 같은 다른 프로덕션 수준 데이터 저장소(모두 Azure에서 호스팅할 수 있음)를 사용하는 리포지토리 구현을 추가합니다. 또한 [Python용 Azure SDK](azure-sdk-for-python.md)를 사용하여 Cosmos DB뿐만 아니라 테이블 및 Blob과 같은 Azure 저장소 서비스 작업을 수행할 수도 있습니다.
+- PostgreSQL, MySQL 및 SQL Server와 같은 다른 프로덕션 수준 데이터 저장소(모두 Azure에서 호스팅할 수 있음)를 사용하는 리포지토리 구현을 추가합니다. 또한 [Python용 Azure SDK](azure-sdk-for-python.md)를 사용하여 Cosmos DB뿐만 아니라 테이블 및 Blob과 같은 Azure 스토리지 서비스 작업을 수행할 수도 있습니다.
 
 - Azure DevOps와 같은 서비스에서 지속적인 통합/지속적인 배포 파이프라인을 설정합니다. Azure Repos, GitHub 등을 통한 소스 제어 작업 외에도 Azure DevOps Project를 구성하여 릴리스의 사전 필수 구성 요소로 단위 테스트를 자동으로 실행하고, 프로덕션 환경에 배포하기 전에 추가 테스트를 위해 준비 서버에 배포하도록 파이프라인을 구성할 수 있습니다. 또한 Azure DevOps는 App Insights와 같은 모니터링 솔루션과 통합되며 agile 계획 도구를 사용하여 전체 주기를 닫습니다. 자세한 내용은 [Azure DevOps 프로젝트로 Python용 CI/CD 파이프라인 만들기](/azure/devops-project/azure-devops-project-python?view=vsts) 및 일반적인 [Azure DevOps 설명서](/azure/devops/?view=vsts)도 참조하세요.

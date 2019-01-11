@@ -250,7 +250,7 @@ Visual C++ 컴파일러 도구 *cl.exe*를 래핑합니다. 컴파일러는 실�
   
    `true`인 경우 정적 스레드 로컬 저장소를 사용하여 할당한 데이터(즉, `__declspec(thread)`를 사용하여 할당한 데이터)의 파이버 안전을 지원합니다.  
   
-   자세한 내용은 [/GT(파이버 안전 스레드 로컬 저장소 지원)](/cpp/build/reference/gt-support-fiber-safe-thread-local-storage)를 참조하세요.  
+   자세한 내용은 [/GT(파이버 안전 스레드 로컬 스토리지 지원)](/cpp/build/reference/gt-support-fiber-safe-thread-local-storage)를 참조하세요.  
   
 - **EnablePREfast**  
   

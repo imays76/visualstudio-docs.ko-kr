@@ -13,12 +13,12 @@ ms.date: 8/24/2017
 ms.author: ghogen
 ms.openlocfilehash: 00229cd88ddcab4d2d59ae40202620c374415e4b
 ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 11/05/2018
 ms.locfileid: "51003048"
 ---
-# <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>서버 탐색기를 사용하여 저장소 리소스 찾아보기 및 관리
+# <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>서버 탐색기를 사용하여 스토리지 리소스 찾아보기 및 관리
 
 [!INCLUDE [storage-try-azure-tools](./includes/storage-try-azure-tools.md)]
 

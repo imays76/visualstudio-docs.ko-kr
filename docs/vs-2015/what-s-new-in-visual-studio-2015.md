@@ -41,7 +41,7 @@ ms.locfileid: "53740275"
  ![Visual Studio 2015 설치 대화 상자](./ide/media/vs2015-setup-screen.png "VS2015_Setup_screen")
 
 ## <a name="sign-in-across-multiple-accounts"></a>여러 계정에 로그인
- Visual Studio 2015에서는 단순화된 새로운 로그인 환경을 통해 Visual Studio 계정이 여러 개인 경우에도 온라인 리소스에 간편하게 액세스할 수 있습니다. Visual Studio에 로그인하면 컴퓨터의 Visual Studio 2015 및 Blend의 모든 인스턴스에 자동으로 로그인됩니다. 자동으로 로그인되면 설정 로밍이 자동으로 시작됩니다. Visual Studio 2015에서는 기능 간에 계정이 공유되므로 적절한 토큰이 있는 동안에는 **팀 탐색기**에서 Visual Studio Team Services 계정에 액세스하고 서버 탐색기에서 Microsoft Azure 구독의 리소스와 웹 사이트에 액세스할 수 있습니다. 또한 Application Insights 프로젝트의 새 프로젝트 대화 상자에 Azure 리소스가 표시되는 것은 물론, 새 [연결된 서비스 추가](http://msdn.microsoft.com/office/aa905340.aspx) 대화 상자에는 Azure 모바일, Azure 저장소, [Microsoft Office 365](https://developer.salesforce.com/) 및 **Saleforce.com developer** 계정도 표시됩니다.
+ Visual Studio 2015에서는 단순화된 새로운 로그인 환경을 통해 Visual Studio 계정이 여러 개인 경우에도 온라인 리소스에 간편하게 액세스할 수 있습니다. Visual Studio에 로그인하면 컴퓨터의 Visual Studio 2015 및 Blend의 모든 인스턴스에 자동으로 로그인됩니다. 자동으로 로그인되면 설정 로밍이 자동으로 시작됩니다. Visual Studio 2015에서는 기능 간에 계정이 공유되므로 적절한 토큰이 있는 동안에는 **팀 탐색기**에서 Visual Studio Team Services 계정에 액세스하고 서버 탐색기에서 Microsoft Azure 구독의 리소스와 웹 사이트에 액세스할 수 있습니다. 또한 Application Insights 프로젝트의 새 프로젝트 대화 상자에 Azure 리소스가 표시되는 것은 물론, 새 [연결된 서비스 추가](http://msdn.microsoft.com/office/aa905340.aspx) 대화 상자에는 Azure 모바일, Azure 스토리지, [Microsoft Office 365](https://developer.salesforce.com/) 및 **Saleforce.com developer** 계정도 표시됩니다.
 
  새로운 계정 관리자를 통해 여러 사용자 계정을 추가하는 등 Visual Studio에서 여러 사용자 계정으로 작업한 후, 서비스에 연결하거나 온라인 리소스에 액세스할 경우 즉시 이러한 계정 사이를 전환할 수 있습니다. Visual Studio는 Visual Studio 또는 Blend의 모든 인스턴스에서 사용할 수 있도록 추가하는 계정을 기억합니다. 또한 Visual Studio는 다른 디바이스에서 해당 계정 중 하나로 신속하게 작업을 시작할 수 있도록 개인 설정 계정을 사용하여 계정 목록을 로밍할 예정입니다. 그러나 중요한 자격 증명은 로밍하지 않습니다. 물론 언제든지 계정 설정 대화 상자에서 계정을 제거할 수 있습니다. 시작하려면 [Work with multiple user accounts](./ide/work-with-multiple-user-accounts.md)을 참조하세요.
 
@@ -110,7 +110,7 @@ ms.locfileid: "53740275"
 
 1. Azure 모바일 서비스
 
-2. Azure 저장소
+2. Azure Storage
 
 3. Office 365(메일, 연락처, 달력, 파일, 사용자 및 그룹)
 

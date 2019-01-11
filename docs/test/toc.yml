@@ -63,9 +63,9 @@ items:
     - name: Microsoft Fakes를 사용하여 테스트 중인 코드 격리
       href: isolating-code-under-test-with-microsoft-fakes.md
       items:
-      - name: 스텁을 사용하여 단위 테스트를 위한 응용 프로그램의 여러 부분을 서로 격리
+      - name: 스텁을 사용하여 단위 테스트를 위한 애플리케이션의 여러 부분을 서로 격리
         href: using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md
-      - name: shim을 사용하여 단위 테스트를 위한 다른 어셈블리에서 응용 프로그램 격리
+      - name: shim을 사용하여 단위 테스트를 위한 다른 어셈블리에서 애플리케이션 격리
         href: using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md
       - name: Microsoft Fakes의 코드 생성, 컴파일 및 명명 규칙
         href: code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md
@@ -112,7 +112,7 @@ items:
       href: customizing-code-coverage-analysis.md
     - name: 코드 검사 문제 해결
       href: troubleshooting-code-coverage.md
-  - name: 에뮬레이터를 사용하여 Sharepoint 2010 응용 프로그램용 단위 테스트 격리
+  - name: 에뮬레이터를 사용하여 Sharepoint 2010 애플리케이션용 단위 테스트 격리
     href: using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications.md
 - name: Live Unit Testing
   href: live-unit-testing-intro.md
@@ -190,7 +190,7 @@ items:
           href: how-to-specify-the-maximum-size-for-the-log-file.md
         - name: 실패한 테스트
           href: how-to-specify-if-test-failures-are-saved-to-test-logs.md
-      - name: 타이밍 정보 저장소
+      - name: 타이밍 정보 스토리지
         href: how-to-specify-the-timing-details-storage-property-for-a-load-test.md
       - name: 테스트 반복
         href: how-to-specify-the-number-of-test-iterations-in-a-load-test.md
@@ -339,7 +339,7 @@ items:
     href: set-a-unique-automation-property-for-windows-store-controls-for-testing.md
   - name: 코딩된 UI 테스트에서 HTML5 컨트롤 사용
     href: using-html5-controls-in-coded-ui-tests.md
-  - name: 코딩된 UI 테스트를 사용하여 SharePoint 2010 응용 프로그램 테스트
+  - name: 코딩된 UI 테스트를 사용하여 SharePoint 2010 애플리케이션 테스트
     href: testing-sharepoint-2010-applications-with-coded-ui-tests.md
   - name: 데이터 기반의 코딩된 UI 테스트 만들기
     href: creating-a-data-driven-coded-ui-test.md
@@ -355,7 +355,7 @@ items:
     href: anatomy-of-a-coded-ui-test.md
   - name: 최선의 코딩된 UI 테스트 방법
     href: best-practices-for-coded-ui-tests.md
-  - name: 여러 UI 맵이 포함된 대형 응용 프로그램 테스트
+  - name: 여러 UI 맵이 포함된 대형 애플리케이션 테스트
     href: testing-a-large-application-with-multiple-ui-maps.md
   - name: 컨트롤의 코딩된 UI 테스트 사용
     href: enable-coded-ui-testing-of-your-controls.md

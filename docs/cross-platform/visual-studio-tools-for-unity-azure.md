@@ -36,6 +36,6 @@ Azure는 클라우드에서 원격 분석 및 기타 게임 데이터 저장에 
 
 ## <a name="azure-sdk-sample"></a>Azure SDK 샘플
 
-Azure Easy Tables SDK 및 Unity를 사용하는 [간단한 샘플 게임](https://aka.ms/azmobileappsracer)도 있습니다. 이 게임은 Azure Easy Tables 데이터 저장소를 사용하여 높은 점수 순위표를 추적하고 게임 내 원격 분석을 저장하며 [GitHub에서 다운로드](https://aka.ms/azsamples-unity)할 수 있습니다.
+Azure Easy Tables SDK 및 Unity를 사용하는 [간단한 샘플 게임](https://aka.ms/azmobileappsracer)도 있습니다. 이 게임은 Azure Easy Tables 데이터 스토리지를 사용하여 높은 점수 순위표를 추적하고 게임 내 원격 분석을 저장하며 [GitHub에서 다운로드](https://aka.ms/azsamples-unity)할 수 있습니다.
 
 ![예제 게임 스크린샷](media/vstu_azure-test-sample-game-image2.png)
