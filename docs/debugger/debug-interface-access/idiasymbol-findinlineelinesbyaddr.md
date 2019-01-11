@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::findInlineeLinesByAddr | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 79be504d780efb7ea661f0362f20db4bcd0c780b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: db10bb714fa4ee96030bfce918b01fe877890078
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904949"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843270"
 ---
 # <a name="idiasymbolfindinlineelinesbyaddr"></a>IDiaSymbol::findInlineeLinesByAddr
 클라이언트가 없는 인라인을 직접 또는 간접적으로이 기호를 지정 된 주소 범위 내에서 모든 함수의 줄 번호 정보를 반복 하는 데 사용 하는 열거형을 검색 합니다.  
@@ -25,7 +23,7 @@ ms.locfileid: "49904949"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT findInlineeLinesByAddr (   
+HRESULT findInlineeLinesByAddr (   
    DWORD                 isect,  
    DWORD                 offset,  
    DWORD                 length,  

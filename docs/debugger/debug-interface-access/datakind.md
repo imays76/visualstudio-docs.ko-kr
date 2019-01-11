@@ -1,8 +1,6 @@
 ---
 title: DataKind | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f2b46e420db8addf19ef8694112058bdb8b2f91
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: f87fea09976128f57e8c7dca77dcaea839aab4c3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867626"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879503"
 ---
 # <a name="datakind"></a>DataKind
 데이터 값의 특정 범위를 나타냅니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49867626"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-enum DataKind {   
+enum DataKind {   
    DataIsUnknown,  
    DataIsLocal,  
    DataIsStaticLocal,  
@@ -72,7 +70,7 @@ enum DataKind {
  DataIsConstant  
  데이터 항목에는 상수 값입니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  이 열거형의 값에서 반환 되는 [idiasymbol:: Get_datakind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) 메서드.  
   
 ## <a name="requirements"></a>요구 사항  

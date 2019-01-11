@@ -1,8 +1,6 @@
 ---
 title: 'Idiasegment:: Get_frame | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0911d342f7db341165bdbae426ab784e40b73347
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 90dbe786155fa11e5bf1df9ed113362382838d2f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935732"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898695"
 ---
 # <a name="idiasegmentgetframe"></a>IDiaSegment::get_frame
 세그먼트 수를 검색합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49935732"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT get_frame (   
+HRESULT get_frame (   
    DWORD* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_frame (
  [out] 세그먼트 수를 반환합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`합니다. 반환 `S_FALSE` 경우이 속성이 지원 되지 않습니다. 그러지 않으면 오류 코드가 반환됩니다.  
+ 성공하면 `S_OK`를 반환합니다. 반환 `S_FALSE` 경우이 속성이 지원 되지 않습니다. 그러지 않으면 오류 코드가 반환됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

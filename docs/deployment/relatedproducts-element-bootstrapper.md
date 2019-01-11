@@ -1,8 +1,6 @@
 ---
 title: '&lt;RelatedProducts&gt; 요소 (부트스트래퍼) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 f1_keywords:
 - MSBuild.GenerateBootstrapper.MissingDependency
@@ -23,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c541a9775025183a3b3ffbf21ef5b72c3f00cc87
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 2ad76eb01e17f76bff0f1f81941675ad670a24ff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077809"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967387"
 ---
 # <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;RelatedProducts&gt; 요소 (부트스트래퍼)
 `RelatedProducts` 요소에 종속 되거나 현재 제품에 포함 된 다른 제품을 정의 합니다.  
@@ -75,7 +73,7 @@ ms.locfileid: "39077809"
 |---------------|-----------------|  
 |`Code`|에 지정 된 대로 포함된 된 제품의 코드명 합니다 `ProductCode` 특성을 `Product` 요소. 자세한 내용은 [ \<제품 > 요소](../deployment/product-element-bootstrapper.md)합니다.|  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드 예제에서는 지정 된 Microsoft 설치 관리자가 설치 되어 있는지를 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], 별도 설치 필요 하지 것입니다.  
   
 ```xml  
@@ -84,5 +82,5 @@ ms.locfileid: "39077809"
 </RelatedProducts>  
 ```  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [\<제품 > 요소](../deployment/product-element-bootstrapper.md)

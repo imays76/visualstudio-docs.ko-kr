@@ -2,7 +2,6 @@
 title: Windows Forms 앱을 디버깅 하려면 준비 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 13673e14ae7257dceba8638f24d6b2d5d222efd8
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 7e6c8dfd53ec6877e00c395bd068efe58f3776ae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561449"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827759"
 ---
-# <a name="debugging-preparation-windows-forms-applications"></a>디버깅 준비: Windows Forms 응용 프로그램
+# <a name="debugging-preparation-windows-forms-applications"></a>디버깅 준비 중: Windows Forms 응용 프로그램
 Windows Forms 프로젝트 템플릿은 Windows Forms 응용 프로그램을 만듭니다. 이러한 형식의 응용 프로그램은 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서 쉽게 디버깅할 수 있습니다. 자세한 내용은 [Windows 응용 프로그램 프로젝트를 만드는](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))합니다.  
   
  프로젝트 템플릿을 사용하여 Windows Forms 프로젝트를 만들면 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서는 디버그 및 릴리스 구성에 필요한 설정을 자동으로 만듭니다. 필요하면 이 설정을 변경할 수 있습니다. 이러한 설정은 **\<프로젝트 이름> 속성 페이지** 대화 상자(Visual Basic의 **내 프로젝트**)에서 변경할 수 있습니다.  

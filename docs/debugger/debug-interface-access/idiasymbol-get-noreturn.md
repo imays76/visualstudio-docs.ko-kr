@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_noreturn | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fc0410c045a42412866d1c85f84b13aa6acd796
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 817d515d9ab744ec7be146e6ee39373cb7d2d2ee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846111"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863875"
 ---
 # <a name="idiasymbolgetnoreturn"></a>IDiaSymbol::get_noReturn
 함수를 사용 하 여 반환 되지 표시 되었는지 여부를 지정 하는 플래그를 검색 합니다 [noreturn](/cpp/cpp/noreturn) 특성입니다.  

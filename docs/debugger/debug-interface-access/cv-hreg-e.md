@@ -1,8 +1,6 @@
 ---
 title: CV_HREG_e | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 091b91cb896d0e2d5753f9c3b55cac58deee8cd5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 95a3ecd9d4b7e1dc8cffc3a11a8b58c0812a1a36
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848607"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829646"
 ---
 # <a name="cvhrege"></a>CV_HREG_e
 대상 레지스터를 지정합니다.  
@@ -30,8 +28,8 @@ ms.locfileid: "49848607"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-enum CV_HREG_e {   
-   // Register subset shared by all processor types   
+enum CV_HREG_e {   
+   // Register subset shared by all processor types   
    CV_ALLREG_ERR    = 30000,  
    CV_ALLREG_TEB    = 30001,  
    CV_ALLREG_TIMER  = 30002,  
@@ -238,7 +236,7 @@ enum CV_HREG_e {
    // CV_M4_FltF1 through CV_M4_FltF31 defined  
    CV_M4_FltFsr  = 92,  
   
-   //** Register set for the ALPHA AXP **//  
+   //** Register set for the ALPHA AXP **//  
    CV_ALPHA_NOREG    = CV_REG_NONE,  
    CV_ALPHA_FltF0    = 10, // Floating point registers  
    // CV_ALPHA_FltF1 through CV_ALPHA_FltF31 defined  
@@ -407,7 +405,7 @@ enum CV_HREG_e {
    CV_M32R_ACLO  = 33, // Accumulator low  
    CV_M32R_PC    = 34, // Program counter  
   
-} CV_HREG_e;  
+} CV_HREG_e;  
 ```  
   
 ## <a name="elements"></a>요소  
@@ -444,7 +442,7 @@ enum CV_HREG_e {
  CV_M32R_ *  
  Mitsubishi M32R 프로세서에서 사용 하는 등록 합니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  각 프로세서 유형에 고유한 레지스터 집합 자체를 사용합니다.  
   
  이 열거형의 값은 다음 메서드에 전달 됩니다.  
@@ -464,8 +462,8 @@ enum CV_HREG_e {
   
 ## <a name="see-also"></a>참고 항목  
  [열거형 및 구조체](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [Idiastackwalkframe:: Get_registervalue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)   
- [Idiastackwalkframe:: Put_registervalue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)   
+ [IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)   
+ [IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)   
  [IDiaStackWalkHelper::get_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-get-registervalue.md)   
  [IDiaStackWalkHelper::put_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-put-registervalue.md)   
  [IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)

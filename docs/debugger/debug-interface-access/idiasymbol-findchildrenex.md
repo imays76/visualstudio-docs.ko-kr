@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::findChildrenEx | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5304c77dd772a1aa74b90d89df7eb73361ab7561
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 7014bf0b42e9fcaab313c6b89d0caf1f1678a297
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836803"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928713"
 ---
 # <a name="idiasymbolfindchildrenex"></a>IDiaSymbol::findChildrenEx
 기호의 자식을 검색합니다. 프로그램에서 최적화를 사용 하 여 컴파일된 경우 라이브 범위 정보를 포함 하는 반환 되는 로컬 기호입니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49836803"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT findChildrenEx (   
+HRESULT findChildrenEx (   
    enum SymTagEnum   symtag,  
    LPCOLESTR         name,  
    DWORD             compareFlags,  
@@ -51,11 +49,11 @@ HRESULT findChildrenEx (
 ## <a name="return-value"></a>반환 값  
  반환 `S_OK` 기호의 자식이 하나 이상 찾을 하거나 반환 하는 경우 `S_FALSE` 자식이 없는 경우; 그렇지 않으면 오류 코드를 반환 합니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  이 메서드는 확장 된 버전의 [idiasymbol:: Findchildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)합니다.  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: Dia2.h  
+ 헤더: dia2.h  
   
  라이브러리: diaguids.lib  
   
@@ -65,5 +63,5 @@ HRESULT findChildrenEx (
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum 열거형](../../debugger/debug-interface-access/symtagenum.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
- [Idiasession:: Findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
+ [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
  [NameSearchOptions 열거형](../../debugger/debug-interface-access/namesearchoptions.md)

@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_undecoratednameex | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de8eb57e8b1e31be835163e67fa12e3cd6556892
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 715ab90837441974c05176c69c53366199e3543c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930663"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932183"
 ---
 # <a name="idiasymbolgetundecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
 C + + 데코 레이트 되지 않은 이름의 전체 또는 일부 검색 데코 레이트 된 이름 (링크).  
@@ -27,7 +25,7 @@ C + + 데코 레이트 되지 않은 이름의 전체 또는 일부 검색 데�
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT get_undecoratedNameEx(   
+HRESULT get_undecoratedNameEx(   
    DWORD undecorateOptions,  
    BSTR* pRetval  
 );  
@@ -46,7 +44,7 @@ HRESULT get_undecoratedNameEx(
 > [!NOTE]
 >  반환 값이 `S_FALSE` 속성 기호를 사용할 수 없는 것을 의미 합니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  `undecorateOptions` 플래그의 조합일 수 있습니다.  
   
 > [!NOTE]
@@ -60,8 +58,8 @@ HRESULT get_undecoratedNameEx(
 |UNDNAME_NO_FUNCTION_RETURNS|0x0004|기본 선언에 대 한 반환 형식의 확장을 사용 하지 않도록 설정 합니다.|  
 |UNDNAME_NO_ALLOCATION_MODEL|0x0008|선언 모델의 확장을 사용 하지 않도록 설정 합니다.|  
 |UNDNAME_NO_ALLOCATION_LANGUAGE|0x0010|선언 언어 지정자의 확장을 사용 하지 않도록 설정 합니다.|  
-|UNDNAME_RESERVED1|0x0020|예약 되어 있습니다.|  
-|UNDNAME_RESERVED2|0x0040|예약 되어 있습니다.|  
+|UNDNAME_RESERVED1|0x0020|예약됨.|  
+|UNDNAME_RESERVED2|0x0040|예약됨.|  
 |UNDNAME_NO_THISTYPE|0x0060|모든 한정자를 사용 하지 않도록 설정 된 `this` 형식입니다.|  
 |UNDNAME_NO_ACCESS_SPECIFIERS|0x0080|확장 멤버에 대 한 액세스 지정자를 사용 하지 않도록 설정 합니다.|  
 |UNDNAME_NO_THROW_SIGNATURES|0x0100|"Throw 서명" 함수 및 함수에 대 한 포인터에 대 한 확장을 사용 하지 않도록 설정 합니다.|  

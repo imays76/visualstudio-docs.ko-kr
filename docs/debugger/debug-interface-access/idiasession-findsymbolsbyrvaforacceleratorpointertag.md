@@ -1,8 +1,6 @@
 ---
 title: IDiaSession::findSymbolsByRVAForAcceleratorPointerTag | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d936e8110443cc42e77ea523a5b3df288e28d8c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: ad2a0656b03fb057b631319e922a83605fa62a6e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887269"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859466"
 ---
 # <a name="idiasessionfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSession::findSymbolsByRVAForAcceleratorPointerTag
 이 메서드 해당 태그 값을 지정 합니다 지정된 된 상대 가상 주소에서 지정 된 부모 가속기 스텁 함수에 포함 된 기호의 열거형을 반환 합니다.  
@@ -25,7 +23,7 @@ ms.locfileid: "49887269"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT findSymbolsByRVAForAcceleratorPointerTag (   
+HRESULT findSymbolsByRVAForAcceleratorPointerTag (   
    IDiaSymbol*           parent,  
    DWORD                 tagValue,  
    DWORD                 rva,  
@@ -49,7 +47,7 @@ HRESULT findSymbolsByRVAForAcceleratorPointerTag (
 ## <a name="return-value"></a>반환 값  
  성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  경우에이 메서드를 호출는 `IDiaSymbol` Accelerator 스텁 함수에 해당 하는 인터페이스입니다.  
   
 ## <a name="see-also"></a>참고 항목  

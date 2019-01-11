@@ -1,8 +1,6 @@
 ---
 title: '&lt;publisherIdentity&gt; 요소 (ClickOnce 배포) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f33772a35e8e47a77e0fdaddd28b7471ef5abcce
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: c9c54b539945093e55aa770f07acc54b589f0c70
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081412"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950094"
 ---
 # <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;publisherIdentity&gt; 요소 (ClickOnce 배포)
 이 배포 매니페스트에 서명한 게시자에 대한 정보를 포함합니다.  
@@ -42,8 +40,8 @@ ms.locfileid: "39081412"
   
 |특성|설명|  
 |---------------|-----------------|  
-|`name`|필수. 이 응용 프로그램을 게시 하는 파티의 id를 설명 합니다.|  
-|`issuerKeyHash`|필수. 인증서 발급자의 공개 키의 sha-1 해시를 포함합니다.|  
+|`name`|필수 요소. 이 응용 프로그램을 게시 하는 파티의 id를 설명 합니다.|  
+|`issuerKeyHash`|필수 요소. 인증서 발급자의 공개 키의 sha-1 해시를 포함합니다.|  
   
 #### <a name="parameters"></a>매개 변수  
   
@@ -51,7 +49,7 @@ ms.locfileid: "39081412"
   
 ## <a name="exceptions"></a>예외  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
   
 ## <a name="requirements"></a>요구 사항  
   

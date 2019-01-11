@@ -2,7 +2,6 @@
 title: 디버깅을 준비 C#, F#, 및 VB 프로젝트 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -22,14 +21,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 67833f3b4387c0606c3ce1f0b99cac50f0c0b501
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 703c00868eca2f48c06bb24cc45a533411a8147c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063450"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866883"
 ---
-# <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>디버깅 준비: C#, F# 및 Visual Basic 프로젝트 형식
+# <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>디버깅 준비 중: C#, F# 및 Visual Basic 프로젝트 형식
 이 단원의 항목에서는 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 프로젝트 템플릿으로 만든 C#, F# 및 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로젝트 형식을 디버깅하는 방법에 대해 설명합니다.  
   
  참고로 그룹화 된 출력으로 Dll을 만드는 프로젝트 형식과 [DLL 프로젝트 디버깅](../debugger/debugging-dll-projects.md) 의 공통적인 특징 때문입니다.  
@@ -38,7 +37,7 @@ ms.locfileid: "53063450"
  [권장되는 속성 설정](../debugger/managed-debugging-recommended-property-settings.md)  
  이 단원에서는 C#, F# 및 Visual Basic 프로젝트에 권장되는 디버깅 관련 속성 설정에 대해 설명합니다.  
   
- [Windows Forms 응용 프로그램](../debugger/debugging-preparation-windows-forms-applications.md)  
+ [Windows Forms 애플리케이션](../debugger/debugging-preparation-windows-forms-applications.md)  
  Windows 응용 프로그램 프로젝트에 대해 설명하고 디버깅, 기본 디버그 구성 변경, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 외부에서 응용 프로그램을 시작한 후에 응용 프로그램에 연결 등에 대한 지침을 제공합니다.  
   
  [콘솔 프로젝트](../debugger/debugging-preparation-console-projects.md)  

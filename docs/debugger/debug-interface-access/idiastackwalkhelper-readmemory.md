@@ -1,8 +1,6 @@
 ---
 title: IDiaStackWalkHelper::readMemory | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 76b054d004e6c62f9d36ca5fcebe1a7f0476fbfc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 7d12d1da983a69f71d96bb06271bd3a971a16cbb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825859"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825739"
 ---
 # <a name="idiastackwalkhelperreadmemory"></a>IDiaStackWalkHelper::readMemory
 메모리에서 실행 파일의 이미지에서 데이터 블록을 읽습니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49825859"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT readMemory(   
+HRESULT readMemory(   
    enum MemoryTypeEnum type,  
    ULONGLONG           va,  
    DWORD               cbData,  
@@ -40,7 +38,7 @@ HRESULT readMemory(
  `type`  
  [in] 값을 [MemoryTypeEnum 열거형](../../debugger/debug-interface-access/memorytypeenum.md) 읽어 올 메모리를의 형식을 지정 하는 합니다.  
   
- Va  
+ va  
  [in] 읽기를 시작 하는 이미지에서 가상 주소입니다.  
   
  `cbData`  

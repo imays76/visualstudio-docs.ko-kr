@@ -1,8 +1,6 @@
 ---
 title: 'Idiatable:: Item | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 476e4d01ed6e092936fc2d9bc7b8e264215e21dc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 3e8ba825c0dba1b0218e53f9ad66f6958602d0c2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950058"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53953981"
 ---
 # <a name="idiatableitem"></a>IDiaTable::Item
 테이블의 지정된 된 항목에 대 한 참조를 검색합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49950058"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT Item (   
+HRESULT Item (   
    DWORD      index,  
    IUnknown** element  
 );  
@@ -43,13 +41,13 @@ HRESULT Item (
 ## <a name="return-value"></a>반환 값  
  성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  테이블 개체의 컬렉션을 나타냅니다. 이러한 개체에 따라 요소 매개 변수를 적절 한 인터페이스에 캐스팅할 수 있습니다. 예를 들어 테이블에 대 한 [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) element 매개 변수를 캐스팅할 수 다음 개체는 `IDiaSegment` 인터페이스입니다.  
   
  호출 하는 보다 일반적인이 방식은 합니다 `QueryInterface` 에서 메서드를 [IDiaTable](../../debugger/debug-interface-access/idiatable.md) 적절 한 열거자 인터페이스에 대 한 인터페이스 및 열거자의 특정 메서드를 사용 하 여 테이블 내용을 액세스. 참조 된 [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) 예제에 대 한 인터페이스입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaTable](../../debugger/debug-interface-access/idiatable.md)   
- [Idiatable:: Get_count](../../debugger/debug-interface-access/idiatable-get-count.md)   
+ [IDiaTable::get_Count](../../debugger/debug-interface-access/idiatable-get-count.md)   
  [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)   
  [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

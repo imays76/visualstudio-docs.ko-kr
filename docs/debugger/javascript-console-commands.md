@@ -2,7 +2,6 @@
 title: JavaScript 콘솔 명령 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 07/17/2017
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - JavaScript Console commands [UWP apps]
@@ -14,16 +13,16 @@ manager: douge
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: c546e3f1938a7dddc3dd48fa9d941b9f7d2e7048
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: bf978f336070e9bd90f90f399f4b6c3d8598877e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052224"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990937"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Visual Studio에서 JavaScript 콘솔 명령
   
- 명령을 사용하여 Visual Studio의 JavaScript 콘솔 창에서 메시지를 보내고 다른 작업을 수행할 수 있습니다. 해당 창을 사용 하는 방법을 보여 주는 예제를 보려면 [빠른 시작: JavaScript 디버그](../debugger/quickstart-debug-javascript-using-the-console.md)합니다. 이 항목의 정보는 UWP 앱 및 Apache Cordova 대 한 Visual Studio Tools를 사용 하 여 만든 앱에 적용 됩니다. Cordova 앱에서 지원되는 콘솔 명령에 대한 자세한 내용은 [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/)를 참조하세요. Internet Explorer F12 도구에서 콘솔을 사용하는 방법에 대한 자세한 내용은 [이 항목](/previous-versions/windows/internet-explorer/ie-developer/samples/dn255006(v=vs.85))을 참조하세요.  
+ 명령을 사용하여 Visual Studio의 JavaScript 콘솔 창에서 메시지를 보내고 다른 작업을 수행할 수 있습니다. 해당 창을 사용 하는 방법을 보여 주는 예제를 보려면 [빠른 시작: JavaScript 디버그](../debugger/quickstart-debug-javascript-using-the-console.md) 이 항목의 정보는 UWP 앱 및 Apache Cordova 대 한 Visual Studio Tools를 사용 하 여 만든 앱에 적용 됩니다. Cordova 앱에서 지원되는 콘솔 명령에 대한 자세한 내용은 [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/)를 참조하세요. Internet Explorer F12 도구에서 콘솔을 사용하는 방법에 대한 자세한 내용은 [이 항목](/previous-versions/windows/internet-explorer/ie-developer/samples/dn255006(v=vs.85))을 참조하세요.  
   
  JavaScript 콘솔 창이 닫혀 있는 경우 열 수 있습니다 선택 하 여 Visual Studio에서 디버그 하는 동안 **디버깅할** > **Windows** > **JavaScript 콘솔**합니다.  
   
@@ -38,12 +37,12 @@ ms.locfileid: "53052224"
 > [!TIP]
 >  이전 버전의 Visual Studio는 전체 명령 집합을 지원하지 않습니다. 지원되는 명령에 대한 정보를 신속하게 얻으려면 콘솔 개체에서 IntelliSense를 사용하세요.  
   
-|명령|설명|예|  
+|명령|설명|예제|  
 |-------------|-----------------|-------------|  
 |`assert(expression, message)`|`expression` 이 **false**가 되면 메시지를 보냅니다.|`console.assert((x == 1), "assert message: x != 1");`|  
 |`clear()`|콘솔 창에서 스크립트 오류 메시지를 비롯한 메시지를 지우고 콘솔 창에 나타나는 스크립트도 지웁니다. 콘솔 입력 프롬프트에 입력한 스크립트는 지우지 않습니다.|`console.clear();`|  
 |`count(title)`|count 명령이 콘솔 창에 호출된 횟수를 보냅니다. 계산되는 각 호출은 `title`(선택 사항)으로 고유하게 식별됩니다.<br /><br /> 콘솔 창의 기존 항목은 `title` 매개 변수(있는 경우)로 식별되고 count 명령으로 업데이트됩니다. 새 항목이 만들어지지 않습니다.|`console.count();`<br /><br /> `console.count("inner loop");`|  
-|`debug(message)`|콘솔 창에 `message`를 보냅니다.<br /><br /> 이 명령은 console.log와 동일합니다.<br /><br /> 명령을 사용하여 전달된 개체는 문자열 값으로 전환됩니다.|`console.debug("logging message");`|  
+|`debug(message)`|콘솔 창에 `message` 를 보냅니다.<br /><br /> 이 명령은 console.log와 동일합니다.<br /><br /> 명령을 사용하여 전달된 개체는 문자열 값으로 전환됩니다.|`console.debug("logging message");`|  
 |`dir(object)`|지정한 개체를 콘솔 창에 보내고 개체 시각화 도우미에 표시합니다. 시각화 도우미를 사용하여 콘솔 창에서 속성을 검사할 수 있습니다.|`console.dir(obj);`|  
 |`dirxml(object)`|지정한 XML 노드 `object` 를 콘솔 창에 보내고 XML 노드 트리로 표시합니다.|`console.dirxaml(xmlNode);`|  
 |`error(message)`|콘솔 창에 `message` 를 보냅니다. 메시지 텍스트는 빨간색이며 이 텍스트 앞에 오류 기호가 옵니다.<br /><br /> 명령을 사용하여 전달된 개체는 문자열 값으로 전환됩니다.|`console.error("error message");`|  
@@ -131,5 +130,5 @@ console.log("%s is %f years old!", user.first, user.age);
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [퀵 스타트: JavaScript 디버그](../debugger/quickstart-debug-javascript-using-the-console.md)   
+ [빠른 시작: JavaScript 디버그](../debugger/quickstart-debug-javascript-using-the-console.md)   
  [빠른 시작: HTML 및 CSS 디버그](../debugger/quickstart-debug-html-and-css.md)

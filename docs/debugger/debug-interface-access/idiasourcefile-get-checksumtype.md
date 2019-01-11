@@ -1,8 +1,6 @@
 ---
 title: 'Idiasourcefile:: Get_checksumtype | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 39fa53d00d17446e63170d5b729d2e669ecb987b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 750d48cad07251f34e988fa8a6ced618821c443d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948423"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825916"
 ---
 # <a name="idiasourcefilegetchecksumtype"></a>IDiaSourceFile::get_checksumType
 체크섬 유형을 검색합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49948423"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT get_checksumType (   
+HRESULT get_checksumType (   
    DWORD* pRetVal  
 );  
 ```  
@@ -39,7 +37,7 @@ HRESULT get_checksumType (
 ## <a name="return-value"></a>반환 값  
  성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  체크섬 유형 체크섬 알고리즘에 매핑할 수 있는 값입니다. 예를 들어 표준 PDB 파일 형식 다음 값 중 하나가 있어야 일반적으로 수 있습니다.  
   
 |체크섬 유형|CryptoAPI 레이블|설명|  

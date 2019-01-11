@@ -1,8 +1,6 @@
 ---
 title: '&lt;문자열&gt; 요소 (부트스트래퍼) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 f1_keywords:
 - MSBuild.GenerateBootstrapper.NoStringsForCulture
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fc1cab2fdb0a175fc9365b2a8b4b17dca46a30a2
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 5b1cc6f4341f1a4ffdc01ec22b559fb1fa72cb66
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077674"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886866"
 ---
 # <a name="ltstringsgt-element-bootstrapper"></a>&lt;문자열&gt; 요소 (부트스트래퍼)
 제품 이름, 패키지 이름 및 설치 오류 메시지에 대 한 지역화 된 문자열을 정의합니다.  
@@ -51,9 +49,9 @@ ms.locfileid: "39077674"
   
 |특성|설명|  
 |---------------|-----------------|  
-|`Name`|필수. 문자열의 이름입니다.|  
+|`Name`|필수 요소. 문자열의 이름입니다.|  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드 예제 모두에 대 한 영어 문자열이 지정 된 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 설치 관리자입니다.  
   
 ```xml  
@@ -75,5 +73,5 @@ ms.locfileid: "39077674"
 </Strings>  
 ```  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [\<패키지 > 요소](../deployment/package-element-bootstrapper.md)

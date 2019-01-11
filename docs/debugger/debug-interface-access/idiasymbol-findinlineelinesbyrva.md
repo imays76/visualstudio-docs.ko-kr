@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::findInlineeLinesByRVA | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 676e0ffeec21d453244df4938eea2cb0004ecf9c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 643d58d735c2203aad58562405dd9729a775eaab
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896486"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925000"
 ---
 # <a name="idiasymbolfindinlineelinesbyrva"></a>IDiaSymbol::findInlineeLinesByRVA
 클라이언트가 없는 인라인을 직접 또는 간접적으로이 기호는 지정 된 가상 RVA (상대 주소) 내에서 모든 함수의 줄 번호 정보를 반복 하는 데 사용 하는 열거형을 검색 합니다.  
@@ -25,7 +23,7 @@ ms.locfileid: "49896486"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT findInlineeLinesByRVA (    DWORD                 rva,   DWORD                 length,  
+HRESULT findInlineeLinesByRVA (    DWORD                 rva,   DWORD                 length,  
    IDiaEnumLineNumbers** ppResult  
 );  
 ```  

@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_hfadouble | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6d9057ecc968cfd3772cdb01a07aa392c449134
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: fa95a10b9a4d5617b31fe5e17484282f00707b3a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873696"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832530"
 ---
 # <a name="idiasymbolgethfadouble"></a>IDiaSymbol::get_hfaDouble
 사용자 정의 형식 (UDT) 부동 소수점 double 형식의 집계 유형이 같은 (HFA) 데이터에 포함 되는지 여부를 지정 하는 플래그를 검색 합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49873696"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT get_hfaDouble(   
+HRESULT get_hfaDouble(   
    BOOL* pRetVal  
 );  
 ```  
@@ -42,10 +40,10 @@ HRESULT get_hfaDouble(
 > [!NOTE]
 >  반환 값이 `S_FALSE` 속성 기호를 사용할 수 없는 것을 의미 합니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: Dia2.h  
+ 헤더: dia2.h  
   
  라이브러리: diaguids.lib  
   

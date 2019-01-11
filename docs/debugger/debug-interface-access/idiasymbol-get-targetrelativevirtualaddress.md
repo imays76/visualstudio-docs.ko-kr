@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_targetrelativevirtualaddress | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c3426fdf356e61239da2751bd068a38a4172382c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 7cbed2157968606ea251527ce78e9860d68710c3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861321"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848605"
 ---
 # <a name="idiasymbolgettargetrelativevirtualaddress"></a>IDiaSymbol::get_targetRelativeVirtualAddress
 썽크 대상의 상대 가상 주소 RVA ()를 검색합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49861321"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT get_targetRelativeVirtualAddress (   
+HRESULT get_targetRelativeVirtualAddress (   
    DWORD* pRetVal  
 );  
 ```  
@@ -42,7 +40,7 @@ HRESULT get_targetRelativeVirtualAddress (
 > [!NOTE]
 >  반환 값이 `S_FALSE` 속성 기호를 사용할 수 없는 것을 의미 합니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  이 속성은 유효한 경우에만 기호는 [SymTagEnum 열거형](../../debugger/debug-interface-access/symtagenum.md) 의 값 `SymTagThunk`합니다.  
   
  "썽크"은 (플랫 주소 공간이 라고도 함)는 32 비트 메모리 주소 공간 및 16 비트 주소 공간 (분할 된 주소 공간 이라고 함) 간에 변환 되는 코드입니다.  

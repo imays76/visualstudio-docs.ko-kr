@@ -1,8 +1,6 @@
 ---
 title: StackFrameTypeEnum | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fcf5e120e769b69c064306432c3026194eb0d851
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: be9a07c961e62870319de10cad77eaee8e12ef1c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853939"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864012"
 ---
 # <a name="stackframetypeenum"></a>StackFrameTypeEnum
 스택 프레임 형식을 지정합니다.  
@@ -56,7 +54,7 @@ enum StackFrameTypeEnum {
  `FrameTypeUnknown`  
  모든 디버그 정보가 없는 프레임입니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  이 열거형의 값에는 호출에서 반환 되는 [idiastackframe:: Get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md) 메서드.  
   
 ## <a name="requirements"></a>요구 사항  

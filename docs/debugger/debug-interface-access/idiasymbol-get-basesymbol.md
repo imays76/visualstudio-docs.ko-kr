@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_baseSymbol | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81cf7e2c924aac3be16774b98bb85eb220256113
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: f0c5a6bd5f28f72e154b76b28b10b19a76652eea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462320"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841887"
 ---
 # <a name="idiasymbolgetbasesymbol"></a>IDiaSymbol::get_baseSymbol
 포인터 기반 기호를 검색 합니다.  
@@ -34,7 +32,7 @@ HRESULT get_baseSymbol(
  [out] 포인터 기반 기호에 대 한 포인터입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
+ 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

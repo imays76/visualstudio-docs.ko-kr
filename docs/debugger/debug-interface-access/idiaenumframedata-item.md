@@ -1,8 +1,6 @@
 ---
 title: 'Idiaenumframedata:: Item | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c15d0dec0ccaa20e2fcf59f88d68d5febc63eb04
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 38655a9dc55f16cf7c1ccddd65ae0793d7a04640
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887411"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894209"
 ---
 # <a name="idiaenumframedataitem"></a>IDiaEnumFrameData::Item
 인덱스를 사용 하 여 프레임 데이터 요소를 검색 합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49887411"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT Item (   
+HRESULT Item (   
    DWORD           index,  
    IDiaFrameData** section  
 );  

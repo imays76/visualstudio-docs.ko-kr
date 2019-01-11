@@ -1,5 +1,5 @@
 ---
-title: n 계층 응용 프로그램에서 데이터 집합에 코드 추가
+title: n 계층 애플리케이션에서 데이터 세트에 코드 추가
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,17 +12,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e4c5fbbbe878e14c6c88c872ece2b3d492e3ea7c
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
-ms.translationtype: MT
+ms.openlocfilehash: c2d1784e498cb856cc388b8e7f26dd57f978e79f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844035"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927391"
 ---
-# <a name="add-code-to-datasets-in-n-tier-applications"></a>n 계층 응용 프로그램에서 데이터 집합에 코드 추가
+# <a name="add-code-to-datasets-in-n-tier-applications"></a>n 계층 애플리케이션에서 데이터 세트에 코드 추가
 데이터 집합에 대 한 partial 클래스 파일을 만들고 코드를 추가 하 여 데이터 집합의 기능을 확장할 수 있습니다 (코드를 추가 하는 대신 합니다 *DatasetName*합니다. Dataset.Designer 파일)입니다. Partial 클래스를 여러 실제 파일에서 나눌 특정 클래스에 대 한 코드를 사용 합니다. 자세한 내용은 [부분](/dotnet/visual-basic/language-reference/modifiers/partial) 하거나 [Partial 클래스 및 메서드](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)합니다.
 
 데이터 집합을 정의 하는 코드는 데이터 집합 정의 (형식화 된 데이터 집합)에 변경 될 때마다 생성 됩니다. 이 코드는 데이터 집합의 구성을 수정 하는 모든 마법사를 실행 하는 동안 변경한 경우에 생성 됩니다. 코드를 데이터 집합의 재생성 하는 동안 삭제를 방지 하려면 데이터 집합의 partial 클래스 파일에 코드를 추가 합니다.
@@ -63,10 +62,10 @@ ms.locfileid: "34844035"
     }
     ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-- [N 계층 데이터 응용 프로그램 개요](../data-tools/n-tier-data-applications-overview.md)
-- [n 계층 응용 프로그램에서 TableAdapter에 코드 추가](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)
+- [N 계층 데이터 애플리케이션 개요](../data-tools/n-tier-data-applications-overview.md)
+- [n 계층 애플리케이션에서 TableAdapter에 코드 추가](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)
 - [TableAdapter 만들기 및 구성](create-and-configure-tableadapters.md)
 - [계층적 업데이트 개요](hierarchical-update.md)
-- [Visual Studio의 데이터 집합 도구](../data-tools/dataset-tools-in-visual-studio.md)
+- [Visual Studio의 데이터 세트 도구](../data-tools/dataset-tools-in-visual-studio.md)

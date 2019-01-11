@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_lexicalparent | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec761202f10f087f440c695d834f80045a0ac331
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 8388e2f59935b5a0603d6cd31b3417d8578b39ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864119"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820386"
 ---
 # <a name="idiasymbolgetlexicalparent"></a>IDiaSymbol::get_lexicalParent
 기호의 어휘 부모에 대 한 참조를 검색합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49864119"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT get_lexicalParent (   
+HRESULT get_lexicalParent (   
    IDiaSymbol** pRetVal  
 );  
 ```  
@@ -42,7 +40,7 @@ HRESULT get_lexicalParent (
 > [!NOTE]
 >  반환 값이 `S_FALSE` 속성 기호를 사용할 수 없는 것을 의미 합니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  기호의 어휘 부모는 바깥쪽 함수 또는 모듈입니다. 예를 들어, 함수 매개 변수 또는 지역 변수 어휘 부모 함수의 어휘 부모에서 정의 된 모듈은 자체 함수입니다.  
   
  어휘 부모 항목에 설명 된 대로 표시 될 수 있는 가능한 기호 [어휘 기호 형식 계층 구조](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)합니다.  
