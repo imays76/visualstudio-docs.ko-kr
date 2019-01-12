@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6fc3aef8605f5c3343bcc6aca86513d631cace35
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0f761bd99fe13822c0e3a5abdb35be85bd3395ef
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941692"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227917"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>방법: Atom 개인 갤러리에 대 한 피드 만들기
 Atom (RSS) 피드를 확장을 포함 하는 피드를 추가 인트라넷 위치를 만들 수 있습니다 **확장 및 업데이트** 를 전용 갤러리로 합니다. 자세한 내용은 [전용 갤러리](../extensibility/private-galleries.md)합니다.  
@@ -37,40 +37,40 @@ Atom (RSS) 피드를 확장을 포함 하는 피드를 추가 인트라넷 위�
   콘텐츠를 *atom.xml* 파일이 다음 예와 비슷하게 표시 됩니다.  
   
 ```xml  
-<?xml version="1.0" encoding="utf-8" ?>   
-<feed xmlns="http://www.w3.org/2005/Atom">  
-<title type="text" />   
-<id>uuid:bcecded5-97c8-4d24-96f1-7d9e16652433;id=1</id>   
-<updated>2011-04-14T21:25:48Z</updated>   
-<entry>  
-<id>SelectionHighlight..a14874d2-8199-4a60-af8a-11d6447813aa</id>   
-<title type="text">Highlight all occurrences of selected word</title>   
-<summary type="text">This extends the editor to highlight ....</summary>   
-<published>2011-04-14T14:24:51-07:00</published>   
-<updated>2011-04-14T14:24:22-07:00</updated>   
-<author>  
-<name>Microsoft</name>   
-</author>  
-<link rel="icon" href="VSIXImages/SelectionHighlight..a14874d2-8199-4a60-af8a-11d6447813aa_Icon_SelectionHighlightIcon.jpg" />   
-<link rel="previewimage" href="VSIXImages/SelectionHighlight..a14874d2-8199-4a60-af8a-11d6447813aa_PreviewImage_SelectionHighlight.jpg" />   
-<content type="application/octet-stream" src="SelectionHighlight.vsix" />   
-<Vsix xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/developer/vsx-syndication-schema/2010">  
-<Id>SelectionHighlight..a14874d2-8199-4a60-af8a-11d6447813aa</Id>   
-<Version>1.31</Version>   
-<References />   
-<Rating xsi:nil="true" />   
-<RatingCount xsi:nil="true" />   
-<DownloadCount xsi:nil="true" />   
-</Vsix>  
-</entry>  
-<entry>  
-<id>Template_Wizard_239.Microsoft.3b38a7e3-5cbc-4389-a92a-d82tyc2ed592</id>   
-...  
-</entry>  
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text" />
+  <id>uuid:bcecded5-97c8-4d24-96f1-7d9e16652433;id=1</id>
+  <updated>2011-04-14T21:25:48Z</updated>
+  <entry>
+    <id>SelectionHighlight..a14874d2-8199-4a60-af8a-11d6447813aa</id>
+    <title type="text">Highlight all occurrences of selected word</title>
+    <summary type="text">This extends the editor to highlight ....</summary>
+    <published>2011-04-14T14:24:51-07:00</published>
+    <updated>2011-04-14T14:24:22-07:00</updated>
+    <author>
+      <name>Microsoft</name>
+    </author>
+    <link rel="icon" href="VSIXImages/SelectionHighlight..a14874d2-8199-4a60-af8a-11d6447813aa_Icon_SelectionHighlightIcon.jpg" />
+    <link rel="previewimage" href="VSIXImages/SelectionHighlight..a14874d2-8199-4a60-af8a-11d6447813aa_PreviewImage_SelectionHighlight.jpg" />
+    <content type="application/octet-stream" src="SelectionHighlight.vsix" />
+    <Vsix xmlns="http://schemas.microsoft.com/developer/vsx-syndication-schema/2010" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <Id>SelectionHighlight..a14874d2-8199-4a60-af8a-11d6447813aa</Id>
+      <Version>1.31</Version>
+      <References />
+      <Rating xsi:nil="true" />
+      <RatingCount xsi:nil="true" />
+      <DownloadCount xsi:nil="true" />
+    </Vsix>
+  </entry>
+  <entry>
+    <id>Template_Wizard_239.Microsoft.3b38a7e3-5cbc-4389-a92a-d82tyc2ed592</id>
+    ...
+  </entry>
 </feed>
 ```  
   
  두 링크 태그를 이미지의 생성 된 폴더에 스크린 샷을 참조 하는지 확인 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [전용 갤러리](../extensibility/private-galleries.md)
