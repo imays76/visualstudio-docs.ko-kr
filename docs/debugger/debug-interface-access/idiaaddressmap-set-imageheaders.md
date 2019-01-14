@@ -1,8 +1,6 @@
 ---
 title: 'Idiaaddressmap:: Set_imageheaders | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b72b8b7d1531a75568e97ac4d18c85f80508f9d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 6593092fc155a375480f082a1f82dc53a1d851fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49869004"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834141"
 ---
 # <a name="idiaaddressmapsetimageheaders"></a>IDiaAddressMap::set_imageHeaders
 집합에는 상대 가상 주소 변환을 사용 하도록 설정 하는 헤더 이미지입니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49869004"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT set_imageHeaders (   
+HRESULT set_imageHeaders (   
    DWORD cbData,  
    BYTE  data[],  
    BOOL  originalHeaders  
@@ -38,7 +36,7 @@ HRESULT set_imageHeaders (
  cbData  
  [in] 헤더 데이터의 바이트 수입니다. 여야 `n*sizeof(IMAGE_SECTION_HEADER)` 여기서 `n` 실행 파일의 섹션 헤더입니다.  
   
- 데이터]  
+ data[]  
  [in] 배열을 `IMAGE_SECTION_HEADER` 이미지 헤더로 사용할 구조입니다.  
   
  originalHeaders  
@@ -47,13 +45,13 @@ HRESULT set_imageHeaders (
 ## <a name="return-value"></a>반환 값  
  성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  `IMAGE_SECTION_HEADER` 구조 Winnt.h에서 선언 및 실행 파일의 이미지 섹션 헤더 형식을 나타냅니다.  
   
  상대 가상 주소 계산에 종속 된 `IMAGE_SECTION_HEADER` 값입니다. 일반적으로 DIA 프로그램 데이터베이스 (.pdb) 파일에서이 검색합니다. 이 값은 누락 된 DIA 수 없는 경우 상대 가상 주소를 계산 하 고 [idiaaddressmap:: Get_relativevirtualaddressenabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md) 메서드가 반환 되는 `FALSE`합니다. 클라이언트 호출 해야 합니다 [idiaaddressmap:: Put_relativevirtualaddressenabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md) 이미지 자체에서 누락 된 이미지 헤더를 입력 한 후 상대 가상 주소 계산을 사용 하도록 설정 하는 방법입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   
- [Idiaaddressmap:: Set_addressmap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)   
- [Idiaaddressmap:: Get_relativevirtualaddressenabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md)   
+ [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)   
+ [IDiaAddressMap::get_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md)   
  [IDiaAddressMap::put_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md)

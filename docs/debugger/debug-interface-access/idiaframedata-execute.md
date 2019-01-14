@@ -1,8 +1,6 @@
 ---
 title: 'Idiaframedata:: Execute | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66b8f904ac8add69db0c6d1760b5427cb8c802ae
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 6be6c631f9ea0db47829f305f90bd1c296de2f28
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918358"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958747"
 ---
 # <a name="idiaframedataexecute"></a>IDiaFrameData::execute
 스택 해제를 수행 하 고 스택 워크 프레임 인터페이스에서 결과 반환 합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49918358"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT execute (   
+HRESULT execute (   
    IDiaStackWalkFrame* frame  
 );  
 ```  
@@ -46,7 +44,7 @@ HRESULT execute (
 |E_DIA_FRAME_ACCESS|메모리 액세스 등록 수 없습니다.|  
 |E_DIA_VALUE|값 (예: 0으로 나누기)의 계산에서 오류가 발생 했습니다.|  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  이 메서드는 스택 해제를 디버깅 하는 동안 호출 됩니다. 합니다 [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md) 개체는 레지스터에 업데이트를 수신 하는 데 사용 되는 메서드를 제공 합니다. 클라이언트 응용 프로그램에 의해 구현 됩니다는 `execute` 메서드.  
   
 ## <a name="see-also"></a>참고 항목  

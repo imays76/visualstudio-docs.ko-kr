@@ -1,8 +1,6 @@
 ---
 title: IDiaStackWalkHelper::put_registerValue | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81ac9c2366f97497fca4f7faa49facf2a3f819b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 2b3d0cdcd31419f23a69eea019b38304eb6feba8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49838935"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956948"
 ---
 # <a name="idiastackwalkhelperputregistervalue"></a>IDiaStackWalkHelper::put_registerValue
 레지스터의 값을 설정 합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49838935"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT put_registerValue (   
+HRESULT put_registerValue (   
    DWORD     index,  
    ULONGLONG NewVal  
 );  
@@ -43,7 +41,7 @@ HRESULT put_registerValue (
 ## <a name="return-value"></a>반환 값  
  성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  값의 크기에도 불구 하 고 구현만 무엇입니까 레지스터 일반적으로 보유 저장 해야 합니다. 예를 들어, 8 비트 레지스터를 가장 낮은 8-비트만 지정된 된 값의 저장 해야 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
