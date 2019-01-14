@@ -88,7 +88,7 @@ ms.locfileid: "51817440"
 
 안녕하세요 %SUBSCRIBER NAME% 님,
 
-Visual Studio 구독이 할당되었습니다. https://my.visualstudio.com을 방문하고 %DIRECTORY ADDRESS% 주소로 로그인하여 구독을 활성화하고 액세스하세요.
+Visual Studio 구독이 할당되었습니다. [https://my.visualstudio.com](https://my.visualstudio.com) 을 방문하고 %DIRECTORY ADDRESS% 주소로 로그인하여 구독을 활성화하고 액세스하세요.
 
 문제가 있는 경우 지원 팀(https://visualstudio.microsoft.com/subscriptions/support/))에 문의하세요.
 
@@ -111,7 +111,7 @@ Visual Studio 구독이 할당되었습니다. https://my.visualstudio.com을 �
 
 구독자에게 구독이 할당된 후 구독 혜택을 활용하기 위해 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs)을 방문하도록 요청하는 이메일이 제공됩니다.  로그인을 시도할 때 Visual Studio 구독 로그인에 실패하고 계정이 인식되지 않음을 나타내는 오류가 표시됩니다.  [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 환경에 로그인하기 전에 구독자에게 이러한 지침을 따르도록 요청하세요.  필요한 경우 구독을 할당한 후 이 [템플릿](#notifying-your-subscribers-using-personal-accounts)을 사용하여 구독자에게 알릴 수 있습니다.
 
-1. https://my.visualstudio.com으로 이동하여 **새 Microsoft 계정 만들기**를 클릭합니다.
+1. [https://my.visualstudio.com](https://my.visualstudio.com) 으로 이동하여 **새 Microsoft 계정 만들기**를 클릭합니다.
 
 2. 필드를 완료합니다.
    - Someone@example.com 상자에 시작 전자 메일을 받은 전자 메일 주소를 입력합니다.
@@ -133,8 +133,8 @@ Visual Studio 구독이 할당되었습니다. https://my.visualstudio.com을 �
 
 안녕하세요 %SUBSCRIBER NAME% 님,
 
-Visual Studio 구독이 할당되었고 시작 이메일을 기반으로 https://my.visualstudio.com에 로그인하도록 지시되었을 수 있습니다.  이는 혜택을 이용하기 위한 올바른 웹 사이트이지만 조직에서는 사이트에 액세스하기 전에 몇 가지 추가 단계를 수행해야 합니다.  회사 전자 메일 주소에 연결된 “Microsoft 계정”을 만드는 데 도움이 되는 아래 지침을 따르세요.  이러한 단계가 완료되면 전자 메일 주소를 사용하여 구독 혜택에 액세스합니다.
-1. https://my.visualstudio.com을 방문해 보세요.
+Visual Studio 구독이 할당되었고 시작 이메일을 기반으로 https://my.visualstudio.com 에 로그인하도록 지시되었을 수 있습니다.  이는 혜택을 이용하기 위한 올바른 웹 사이트이지만 조직에서는 사이트에 액세스하기 전에 몇 가지 추가 단계를 수행해야 합니다.  회사 전자 메일 주소에 연결된 “Microsoft 계정”을 만드는 데 도움이 되는 아래 지침을 따르세요.  이러한 단계가 완료되면 전자 메일 주소를 사용하여 구독 혜택에 액세스합니다.
+1. [https://my.visualstudio.com](https://my.visualstudio.com) 을 방문해 보세요.
 
 2. 오른쪽에서 [새 Microsoft 계정 만들기]를 클릭합니다.
 
@@ -150,7 +150,7 @@ Visual Studio 구독이 할당되었고 시작 이메일을 기반으로 https:/
 
 6. 이제 혜택을 확인해야 합니다.
 
-참고: 나중에 https://my.visualstudio.com을 방문하면 사용할 계정을 선택하라는 메시지가 표시될 수 있습니다(예: “회사 또는 학교 계정” 또는 “개인 계정”).  위의 단계를 수행한 후 “개인 계정” 옵션을 활용해야 합니다.
+참고: 나중에 https://my.visualstudio.com 을 방문하면 사용할 계정을 선택하라는 메시지가 표시될 수 있습니다(예: “회사 또는 학교 계정” 또는 “개인 계정”).  위의 단계를 수행한 후 “개인 계정” 옵션을 활용해야 합니다.
 
 문제가 있는 경우 지원 팀(https://visualstudio.microsoft.com/subscriptions/support/))에 문의하세요.
 
