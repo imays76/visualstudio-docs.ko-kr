@@ -1,8 +1,6 @@
 ---
 title: 'Idialoadcallback:: Notifydebugdir | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cdceb0f1f07a3ef9d22dbd30a02b2558c4d81603
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 7fe328d9f77871692f04d13fba533517c3cc12f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950877"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958919"
 ---
 # <a name="idialoadcallbacknotifydebugdir"></a>IDiaLoadCallback::NotifyDebugDir
 .Exe 파일에서을 디버그 디렉터리를 찾을 때 호출 됩니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49950877"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT NotifyDebugDir (   
+HRESULT NotifyDebugDir (   
    BOOL  fExecutable,  
    DWORD cbData,  
    BYTE  data[]  
@@ -47,7 +45,7 @@ HRESULT NotifyDebugDir (
 ## <a name="return-value"></a>반환 값  
  성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다. 반환 코드는 일반적으로 무시 됩니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  합니다 [idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) 메서드 실행 파일을 처리 하는 동안 디버그 디렉터리를 찾으면이 콜백을 호출 합니다.  
   
  이 메서드는 디버그 정보가.pdb 파일에 있는 이외의 지원 리버스 엔지니어링 실행 파일 및/또는 디버그 파일을 클라이언트에 대 한 요구를 제거 합니다. 이 데이터를 사용 하 여 클라이언트는 사용할 수 있는 디버그 정보의 유형 및 실행 파일 또는.dbg 파일에 상주 하는지 여부를 인식할 수 있습니다.  
