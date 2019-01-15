@@ -1,8 +1,6 @@
 ---
 title: '방법: 스레드 뷰에서 스레드 검색 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - threads, searching
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 58e16d0edce411192f7b6e40bd0e5fedb32bfac5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 85b0f05398c4b0301bfd509ab972f9aaf70807e7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880574"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832166"
 ---
 # <a name="how-to-search-for-a-thread-in-threads-view"></a>방법: 스레드 뷰에서 스레드 검색
 스레드 뷰에서 특정 스레드에 대 한 검색 조건으로 스레드 ID 또는 모듈 문자열을 사용 하 여 검색할 수 있습니다. 또한 검색 시작 방향을 지정할 수 있습니다. 대화 상자의 필드에에서는 스레드 트리에서 선택한 스레드의 특성이 표시 됩니다.  

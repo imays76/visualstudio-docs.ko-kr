@@ -1,8 +1,6 @@
 ---
 title: '방법: ClickOnce 보안 설정 사용 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f21b58a0ec9e8fe26cb02f72912fd23424cdfc7a
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: d736ca95b9095aa1db19445762d4734dc49677a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39150939"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967276"
 ---
 # <a name="how-to-enable-clickonce-security-settings"></a>방법: ClickOnce 보안 설정 사용
 응용 프로그램을 게시 하기 위해 ClickOnce 응용 프로그램에 대 한 코드 액세스 보안을 사용할 수 있어야 합니다. 게시 마법사를 사용 하 여 응용 프로그램을 게시할 때 자동으로 수행 됩니다.  
@@ -58,7 +56,6 @@ ms.locfileid: "39150939"
     > [!NOTE]
     >  게시 마법사를 사용 하 여 응용 프로그램을 게시할 때마다가 확인란 선택 됩니다. 응용 프로그램이 게시 된 후에 다시 지워야 합니다.  
   
-## <a name="see-also"></a>참고자료  
- [ClickOnce 응용 프로그램 보안](../deployment/securing-clickonce-applications.md)   
- [ClickOnce 응용 프로그램에 대 한 코드 액세스 보안](../deployment/code-access-security-for-clickonce-applications.md)   
- 
+## <a name="see-also"></a>참고 항목  
+ [ClickOnce 애플리케이션 보안](../deployment/securing-clickonce-applications.md)   
+ [ClickOnce 애플리케이션의 코드 액세스 보안](../deployment/code-access-security-for-clickonce-applications.md)   

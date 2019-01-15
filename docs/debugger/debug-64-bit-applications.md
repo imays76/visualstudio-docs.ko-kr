@@ -1,8 +1,6 @@
 ---
 title: 64 비트 응용 프로그램 디버그 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,35 +16,35 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28a7625729989252a29ab1d0f65feec010e9e65f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 6f79bd9c0f2bbf2ab3156f5bc49100c9c8aee536
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284083"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947363"
 ---
-# <a name="debug-64-bit-applications"></a>64비트 응용 프로그램 디버그
-로컬 컴퓨터나 원격 컴퓨터에서 실행되는 64비트 응용 프로그램을 디버깅할 수 있습니다.  
+# <a name="debug-64-bit-applications"></a>64비트 애플리케이션 디버그
+로컬 컴퓨터나 원격 컴퓨터에서 실행되는 64비트 애플리케이션을 디버깅할 수 있습니다.  
   
- 원격 컴퓨터에서 실행되는 64비트 응용 프로그램을 디버그하려면 [Remote Debugging](../debugger/remote-debugging.md)항목을 참조하세요.  
+ 원격 컴퓨터에서 실행되는 64비트 애플리케이션을 디버그하려면 [Remote Debugging](../debugger/remote-debugging.md)항목을 참조하세요.  
   
- 로컬에서 64비트 응용 프로그램을 디버그하기 위해 Visual Studio는 64비트 작업자 프로세스(msvsmon.exe)를 사용하여 32비트 Visual Studio 프로세스에서는 수행할 수 없는 하위 수준 작업을 수행합니다.  
+ 로컬에서 64비트 애플리케이션을 디버그하기 위해 Visual Studio는 64비트 작업자 프로세스(msvsmon.exe)를 사용하여 32비트 Visual Studio 프로세스에서는 수행할 수 없는 하위 수준 작업을 수행합니다.  
   
  .NET Framework 3.5 또는 이전 버전을 사용하는 64비트 프로세스의 경우 혼합 모드 디버깅이 지원되지 않습니다.  
   
-## <a name="debug-a-64-bit-application"></a>64비트 응용 프로그램 디버그  
- 64비트 응용 프로그램 디버그를 시도하려면  
+## <a name="debug-a-64-bit-application"></a>64비트 애플리케이션 디버그  
+ 64비트 애플리케이션 디버그를 시도하려면  
   
-1.  Visual Studio 솔루션(예: C# 콘솔 응용 프로그램)을 만듭니다.  
+1.  Visual Studio 솔루션(예: C# 콘솔 애플리케이션)을 만듭니다.  
   
-2.  Configuration Manager를 사용하여 구성을 64비트로 설정합니다. 자세한 내용은 [How to: Configure Projects to Target Platforms](../ide/how-to-configure-projects-to-target-platforms.md)을 참조하세요.  
+2.  Configuration Manager를 사용하여 구성을 64비트로 설정합니다. 자세한 내용은 [방법: 플랫폼을 대상으로 한 프로젝트 구성](../ide/how-to-configure-projects-to-target-platforms.md)을 참조하세요.  
   
 3.  이때 64비트 버전의 원격 디버거(msvsmon.exe)가 시작됩니다. 64비트 구성을 사용하는 솔루션이 열려 있으면 디버거가 실행됩니다.  
   
 4.  디버깅을 시작합니다. 사용자 환경은 32비트 구성과 동일합니다. 오류가 발생할 경우 아래의 문제 해결 섹션을 참조하세요.  
   
 ## <a name="troubleshooting-64-bit-debugging"></a>64비트 디버깅 문제 해결  
- 오류가 표시 될 수 있습니다: "64 비트 디버깅 작업이 예상 보다 오래 걸립니다." 이 경우 Visual Studio에서 64비트 버전의 msvsmon.exe로 요청을 보냈으며, 해당 요청의 결과가 반환되는 데 오랜 시간이 걸렸습니다.  
+ 오류가 표시 될 수 있습니다. "64 비트 디버깅 작업이 예상 보다 오래 걸립니다." 이 경우 Visual Studio에서 64비트 버전의 msvsmon.exe로 요청을 보냈으며, 해당 요청의 결과가 반환되는 데 오랜 시간이 걸렸습니다.  
   
  이 오류의 주요 원인으로는 다음 두 가지가 있습니다.  
   
@@ -55,8 +53,8 @@ ms.locfileid: "44284083"
 -   Visual Studio에서 중단 또는 성능 문제가 발생합니다. 문제가 주기적으로 발생하는 경우 Visual Studio(devenv.exe) 및 작업자 프로세스(msvsmon.exe)의 덤프를 수집하여 Microsoft로 보낼 수 있습니다. 문제를 신고하는 방법에 대한 자세한 내용은 [How to Report a Problem with Visual Studio](../ide/How-to-Report-a-Problem-with-Visual-Studio-2017.md)항목을 참조하세요.
   
 ## <a name="see-also"></a>참고 항목  
- [64비트 응용 프로그램](https://docs.microsoft.com/dotnet/framework/64-bit-apps)   
- [64 비트용 프로그램 구성](/cpp/build/configuring-programs-for-64-bit-visual-cpp)   
- [Visual Studio IDE 64 비트 지원](../ide/visual-studio-ide-64-bit-support.md)   
+ [64비트 애플리케이션](https://docs.microsoft.com/dotnet/framework/64-bit-apps)   
+ [64비트용 프로그램 구성](/cpp/build/configuring-programs-for-64-bit-visual-cpp)   
+ [Visual Studio IDE 64비트 지원](../ide/visual-studio-ide-64-bit-support.md)   
  [덤프 파일 사용](../debugger/using-dump-files.md)   
- [원격 디버깅](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)

@@ -1,8 +1,6 @@
 ---
 title: 보안, 버전 관리 및 ClickOnce 배포에서 매니페스트 문제 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -24,14 +22,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7ae835b53960ca6952b71c10a2348f707785e16
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 366e384ec01c67a1beb6b08b018365cbb3c73bf4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081747"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927144"
 ---
-# <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>보안, 버전 관리 및 ClickOnce 배포에서 매니페스트 문제
+# <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>ClickOnce 배포의 보안, 버전 관리 및 매니페스트 문제
 
 다양 한 문제가 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 보안, 응용 프로그램 버전 관리 및 매니페스트 구문 및 의미 체계를 일으키는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 배포가 완료 되지 않습니다.
 
@@ -96,7 +94,7 @@ ms.locfileid: "39081747"
 > [!NOTE]
 > 매니페스트를 업데이트 될 때마다 있습니다도 다시 서명 해야 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [ClickOnce 배포 문제 해결](../deployment/troubleshooting-clickonce-deployments.md)  
 [Securw ClickOnce 응용 프로그램](../deployment/securing-clickonce-applications.md)  

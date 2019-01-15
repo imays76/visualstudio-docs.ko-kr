@@ -1,8 +1,6 @@
 ---
 title: '방법: 스크립트 문서 보기 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,25 +15,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bfa273f98cebdf61f865e03a02c9b2d5f22bfa9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MTE95
+ms.openlocfilehash: 3592056fdde7756f3fbe63d0dc5d86782fdf9a8b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474731"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867730"
 ---
 # <a name="how-to-view-script-documents"></a>방법: 스크립트 문서 보기
 이전 버전의 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서는 서버 쪽 스크립트에서 생성된 클라이언트 쪽 스크립트 파일이 스크립트 탐색기 창에 나타납니다. 스크립트 탐색기 창은 종종 숨겨지므로 클라이언트 쪽 스크립트를 사용할 수 있는지 확인할 수 없는 경우도 있습니다.  
   
  [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]에서는 서버 쪽 스크립트에서 생성된 클라이언트 쪽 스크립트 파일이 솔루션 탐색기에 나타납니다. 솔루션 탐색기는 기본적으로 표시됩니다. 스크립트 탐색기 창은 사용되지 않습니다.  
   
- 클라이언트 쪽 스크립트 파일은 디버그 모드나 중단 모드에서만 표시되며 에 표시 되는 **스크립트 문서** 노드.  
+ 클라이언트 쪽 스크립트 파일은 디버그 모드나 중단 모드에서만 표시되며 **스크립트 문서** 노드에 나타납니다.  
   
- 서버 쪽 스크립트 파일은 항상 표시되며 에 표시 되는  **\<웹 사이트 경로 이름 >** 노드. 노드 이름에는이 예제를 비슷합니다. `c:\...\Website2\`  
+ 서버 쪽 스크립트 파일은 항상 표시되며 **\<웹 사이트 경로 이름>** 노드에 나타납니다. 노드 이름에는이 예제를 비슷합니다. `c:\...\Website2\`  
   
 ### <a name="to-view-a-server-side-script-document"></a>서버 쪽 스크립트 문서를 보려면  
   
-1.  **솔루션 탐색기**열고는  **\<웹 사이트 경로 이름 >** 노드.  
+1.  **솔루션 탐색기**에서 **\<웹 사이트 경로 이름>** 노드를 엽니다.  
   
 2.  보려는 스크립트 파일을 두 번 클릭합니다.  
   
@@ -43,7 +41,7 @@ ms.locfileid: "31474731"
   
 ### <a name="to-view-a-client-side-script-document"></a>클라이언트 쪽 스크립트 문서를 보려면  
   
-1.  **솔루션 탐색기**열고는 **스크립트 문서** 노드.  
+1.  **솔루션 탐색기**에서 **스크립트 문서** 노드를 엽니다.  
   
 2.  보려는 스크립트 파일을 두 번 클릭합니다.  
   

@@ -1,8 +1,6 @@
 ---
-title: '연습: ClickOnce 응용 프로그램을 수동으로 배포 | Microsoft Docs'
-ms.custom: ''
+title: '연습: 수동으로 ClickOnce 응용 프로그램 배포 | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9f25c0e0b60a3b0f52df534db8f3593a26a435a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 652c7eee2e4b3830966882afd4a9b9b31c8aceb3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49902888"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923272"
 ---
-# <a name="walkthrough-manually-deploy-a-clickonce-application"></a>연습: ClickOnce 응용 프로그램을 수동으로 배포
+# <a name="walkthrough-manually-deploy-a-clickonce-application"></a>연습: 수동으로 ClickOnce 응용 프로그램 배포
 배포 하려면 Visual Studio를 사용할 수 없는 경우에 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 고급 배포 기능을 사용 해야 하는 응용 프로그램을 신뢰할 수 있는 응용 프로그램 배포와 같은 사용 해야 합니다 *Mage.exe* 사용자를만들려면명령줄도구[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 매니페스트 합니다. 이 연습에는 만드는 방법을 설명 합니다는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 명령줄 버전을 사용 하 여 배포 (*Mage.exe*) 또는 그래픽 버전 (*MageUI.exe*) 매니페스트 생성 및 도구를 편집 합니다.  
   
 ## <a name="prerequisites"></a>전제 조건  
@@ -45,11 +43,11 @@ ms.locfileid: "49902888"
   
 - 배포는 배포 하는 방법을 결정 합니다.  
   
-   배포 옵션: 웹, 파일 공유 또는 CD 합니다. 자세한 내용은 [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md)을 참조하세요.  
+   배포 옵션은 다음과 같습니다. 웹, 파일 공유 또는 CD 합니다. 자세한 내용은 [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md)을 참조하세요.  
   
 - 응용 프로그램에는 높은 수준의 신뢰 해야 하는지 여부를 결정 합니다.  
   
-   응용 프로그램에 완전 신뢰가 필요한 경우-예를 들어, 사용자의 시스템에 대 한 액세스를 전체-사용할 수는 `-TrustLevel` 옵션을 *Mage.exe* 설정 합니다. 사용자 지정 권한 응용 프로그램에 대 한 집합을 정의 하려는 경우 다른 매니페스트에서 인터넷 또는 인트라넷 권한 섹션을 복사, 요구 사항에 맞게 수정 하 수 텍스트 편집기를 사용 하 여 응용 프로그램 매니페스트에 추가 또는  *MageUI.exe*합니다. 자세한 내용은 [신뢰할 수 있는 응용 프로그램 배포 개요](../deployment/trusted-application-deployment-overview.md)합니다.  
+   응용 프로그램에 완전 신뢰가 필요한 경우-예를 들어, 사용자의 시스템에 대 한 액세스를 전체-사용할 수는 `-TrustLevel` 옵션을 *Mage.exe* 설정 합니다. 사용자 지정 권한 응용 프로그램에 대 한 집합을 정의 하려는 경우 다른 매니페스트에서 인터넷 또는 인트라넷 권한 섹션을 복사, 요구 사항에 맞게 수정 하 수 텍스트 편집기를 사용 하 여 응용 프로그램 매니페스트에 추가 또는  *MageUI.exe*합니다. 자세한 내용은 [신뢰할 수 있는 애플리케이션 배포 개요](../deployment/trusted-application-deployment-overview.md)를 참조하세요.  
   
 - Authenticode 인증서를 가져옵니다.  
   
@@ -62,7 +60,7 @@ ms.locfileid: "49902888"
   
    응용 프로그램 사용자 계정 컨트롤 (UAC) 정보를 사용 하 여 매니페스트를 같은 포함 되는지 여부를 결정 해야는 `<dependentAssembly>` 요소입니다. 응용 프로그램 매니페스트를 검사 하려면 Windows Sysinternals를 사용할 수 있습니다 [Sigcheck](http://go.microsoft.com/fwlink/?LinkId=158035) 유틸리티입니다.  
   
-   UAC 세부 정보를 사용 하 여 매니페스트를 포함 하는 응용 프로그램을 하는 경우 UAC 정보 없이 다시 작성 해야 있습니다. C# Visual Studio에서 프로젝트를 프로젝트 속성을 열고 응용 프로그램 탭을 선택 합니다. 에 **매니페스트** 드롭 다운 목록에서 **매니페스트 없이 응용 프로그램 만들기**합니다. Visual Studio에서 Visual Basic 프로젝트의 경우 프로젝트 속성을 열고, 응용 프로그램 탭을 선택 하 고, 클릭 **UAC 설정 보기**합니다. 열린된 매니페스트 파일에서 단일 내에서 모든 요소를 제거 `<asmv1:assembly>` 요소입니다.  
+   UAC 세부 정보를 사용 하 여 매니페스트를 포함 하는 응용 프로그램을 하는 경우 UAC 정보 없이 다시 작성 해야 있습니다. 에 대 한는 C# Visual Studio에서 프로젝트, 프로젝트 속성을 열고 응용 프로그램 탭을 선택 합니다. 에 **매니페스트** 드롭 다운 목록에서 **매니페스트 없이 응용 프로그램 만들기**합니다. Visual Studio에서 Visual Basic 프로젝트의 경우 프로젝트 속성을 열고, 응용 프로그램 탭을 선택 하 고, 클릭 **UAC 설정 보기**합니다. 열린된 매니페스트 파일에서 단일 내에서 모든 요소를 제거 `<asmv1:assembly>` 요소입니다.  
   
 - 클라이언트 컴퓨터의 필수 구성 요소 응용 프로그램에 필요한 지 여부를 결정 합니다.  
   
@@ -194,9 +192,9 @@ ms.locfileid: "49902888"
 ## <a name="next-steps"></a>다음 단계  
  응용 프로그램의 새 버전을 배포 해야 할 때 새 버전의 이름을 딴 새 디렉터리를 만들고-1.0.0.1—and 새 디렉터리에 새 응용 프로그램 파일을 복사 하는 예를 들어 있습니다. 다음으로, 만들기 및 새 응용 프로그램 매니페스트, 서명, 업데이트 및 배포 매니페스트에 서명 하려면 이전 단계를 수행 해야 합니다. 둘 다에서 같은 더 높은 버전을 지정 해야 합니다 *Mage.exe* `-New` 및 `-Update` 호출으로 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 만 가장 중요 한 가장 왼쪽에 정수를 사용 하 여 더 높은 버전을 업데이트 합니다. 사용 하는 경우 *MageUI.exe*, 선택를 열거나, 배포 매니페스트를 업데이트할 수 있습니다 합니다 **응용 프로그램 참조** 탭을 클릭 하는 **매니페스트 선택** 단추 및 그런 다음 업데이트 된 응용 프로그램 매니페스트를 선택합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [Mage.exe(매니페스트 생성 및 편집 도구)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)   
  [MageUI.exe(매니페스트 생성 및 편집 도구, 그래픽 클라이언트)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)   
- [ClickOnce 응용 프로그램 게시](../deployment/publishing-clickonce-applications.md)   
+ [ClickOnce 애플리케이션 게시](../deployment/publishing-clickonce-applications.md)   
  [ClickOnce 배포 매니페스트](../deployment/clickonce-deployment-manifest.md)   
- [ClickOnce 응용 프로그램 매니페스트](../deployment/clickonce-application-manifest.md)
+ [ClickOnce 애플리케이션 매니페스트](../deployment/clickonce-application-manifest.md)

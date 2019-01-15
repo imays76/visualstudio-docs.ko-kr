@@ -1,8 +1,6 @@
 ---
 title: 편집 하며 계속 하기 오류 메시지 대화 상자 | Microsoft Docs
-ms.custom: ''
 ms.date: 10/15/2018
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.ENC.SupportedButNotAvaiable
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba573a6b6bffdfeebf37c5f46f1f774d699a1131
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
-ms.translationtype: MTE95
+ms.openlocfilehash: 9eddfbcc709048469b06702d9a685d43a7188758
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388710"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828672"
 ---
 # <a name="edit-and-continue-error-message"></a>편집 하며 계속 하기 오류 메시지 
 
@@ -37,7 +35,7 @@ ms.locfileid: "52388710"
 -   최적화 된 코드를 편집 하려고 합니다. 릴리스 빌드에서 디버그 빌드로 전환 해야 합니다.
 -   실행 되는 동안 코드를 편집 하는 동안 대신 디버거에서 일시 중지 된 동안. 시도 [중단점 설정](../debugger/using-breakpoints.md), 일시 중지 된 동안 코드를 편집 하 고 있습니다.
 -   관리 되지 않는 디버깅만 사용 하는 경우 관리 코드를 편집 하려고 합니다. 편집 하며 계속 하기가 작동 하지 않습니다 [혼합 모드 디버깅](../debugger/how-to-debug-in-mixed-mode.md)합니다.
--   가 코드를 변경 하는 프로그래밍 언어의 편집 하며 계속 하기에서 지원 되지 않습니다. 에 대 한 자세한 내용은 참조 문서 [에서 코드 변경을 지원 C# ](supported-code-changes-csharp.md)를 [편집 Visual Basic 편집 하며 계속 하기에서 지원 되지 않는](unsupported-edits-in-visual-basic-edit-and-continue.md), 및 [c + + 코드 변경 내용지원](supported-code-changes-cpp.md).
+-   가 코드를 변경 하는 프로그래밍 언어의 편집 하며 계속 하기에서 지원 되지 않습니다. 에 대 한 자세한 내용은 참조 문서 [에서 코드 변경을 지원 C# ](supported-code-changes-csharp.md)를 [편집 Visual Basic 편집 하며 계속 하기에서 지원 되지 않는](/visualstudio/debugger/supported-code-changes-csharp), 및 [c + + 코드 변경 내용지원](supported-code-changes-cpp.md).
 -   디버깅을 시작 하는 대신에 연결 하는 앱에서 코드를 편집 하 여 **디버그** 메뉴.  
 -   Dr을 디버깅 하는 동안 코드를 편집 하려고 합니다. 디버깅  
 -   처리 되지 않은 예외가 발생 한 후 코드를 편집 하 고 옵션 **처리 되지 않은 예외에 대 한 호출 스택 해제** 선택 하지 않으면.  

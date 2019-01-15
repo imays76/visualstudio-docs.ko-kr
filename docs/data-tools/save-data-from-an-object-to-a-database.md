@@ -14,15 +14,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c1203b3b129b42ca65b94cd7a4b9cebf108740f4
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
-ms.translationtype: MT
+ms.openlocfilehash: 76b2673e81bcf15227195a299711848100bcd499
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750951"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968594"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>개체에서 데이터베이스로 데이터 저장
 
@@ -78,6 +77,6 @@ TableAdapter의 DBDirect 메서드 중 하나에 개체에서 값을 전달 하 
 
 선택한 수행할 수 있는 권한이 있어야 합니다. `INSERT`, `UPDATE`, 또는 `DELETE` 데이터베이스의 테이블에 있습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [데이터를 다시 데이터베이스에 저장](../data-tools/save-data-back-to-the-database.md)

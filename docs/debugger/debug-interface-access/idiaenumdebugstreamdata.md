@@ -1,8 +1,6 @@
 ---
 title: IDiaEnumDebugStreamData | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 67b71fb229172049d11a036d5a98275f93fe2cd3
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
-ms.translationtype: MT
+ms.openlocfilehash: 9bf1fdf790878097c9d777ba8eae5386593bccb4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058284"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989713"
 ---
 # <a name="idiaenumdebugstreamdata"></a>IDiaEnumDebugStreamData
 디버그 데이터 스트림에서 레코드에 대 한 액세스를 제공합니다.  
@@ -44,13 +42,13 @@ IDiaEnumDebugStreamData : IUnknown
 |[IDiaEnumDebugStreamData::Reset](../../debugger/debug-interface-access/idiaenumdebugstreamdata-reset.md)|시작 부분에 열거 된 순서를 다시 설정합니다.|  
 |[IDiaEnumDebugStreamData::Clone](../../debugger/debug-interface-access/idiaenumdebugstreamdata-clone.md)|현재 열거자와 열거 순서를 포함 하는 열거자를 만듭니다.|  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  이 인터페이스는 디버그 데이터 스트림 레코드의 스트림을 나타냅니다. 크기와 각 레코드의 해석은 레코드에서 가져온 데이터 스트림을에 종속 됩니다. 이 인터페이스는 효과적으로 기호 파일의 원시 데이터 바이트에 대 한 액세스를 제공합니다.  
   
 ## <a name="notes-for-callers"></a>호출자에 대 한 정보  
  호출 된 [idiaenumdebugstreams:: Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md) 또는 [idiaenumdebugstreams:: Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md) 얻기 위해 메서드만 `IDiaEnumDebugStreamData` 개체입니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  이 예제에는 단일 데이터 스트림 및 해당 레코드에 액세스 하는 방법을 보여 줍니다.  
   
 ```C++  
@@ -105,13 +103,13 @@ void PrintStreamData(IDiaEnumDebugStreamData* pStream)
 ```  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: Dia2.h  
+ 헤더: dia2.h  
   
  라이브러리: diaguids.lib  
   
  DLL: msdia80.dll  
   
 ## <a name="see-also"></a>참고 항목  
- [인터페이스 (디버그 인터페이스 액세스 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [Idiaenumdebugstreams:: Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)   
+ [인터페이스(디버그 인터페이스 액세스 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [IDiaEnumDebugStreams::Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)   
  [IDiaEnumDebugStreams::Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md)

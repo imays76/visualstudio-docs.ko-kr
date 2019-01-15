@@ -13,17 +13,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9099c1ee0b1ed3af108c11792f7629453dfbf7c6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 4553dda8efd4d176312839bdc4eda449a6aa70b4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819045"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948250"
 ---
-# <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>방법: 추가, 업데이트 또는 WCF 데이터 서비스 참조를 제거 합니다.
+# <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>방법: WCF 데이터 서비스 참조 추가, 업데이트 또는 제거
 A *서비스 참조* 액세스 하나 이상의 프로젝트를 사용 하면 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]합니다. 사용 합니다 **서비스 참조 추가** 대화 상자를 검색할 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] 로컬 영역 네트워크에 로컬에서 또는 인터넷에 현재 솔루션에서.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
@@ -92,6 +91,6 @@ A *서비스 참조* 액세스 하나 이상의 프로젝트를 사용 하면 [!
     > [!NOTE]
     >  서비스 참조를 참조 하는 코드를 수동으로 제거 해야 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-- [Visual Studio의 Windows Communication Foundation 서비스 및 WCF data services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Windows Communication Foundation 서비스 및 Visual Studio의 WCF 데이터 서비스](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

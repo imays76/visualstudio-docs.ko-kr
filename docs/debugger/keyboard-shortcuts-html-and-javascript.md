@@ -1,8 +1,6 @@
 ---
 title: 바로 가기 키 (HTML 및 JavaScript) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,16 +13,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 07a528c0dda6237efc280644040a48d42c4b0f85
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 5dda5bdb73ea4d673341309f24985455ecc2ce35
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475498"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949471"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>바로 가기 키(HTML 및 JavaScript)
   
- HTML 및 JavaScript를 사용 하 여 UWP 앱 디버깅을 위해 Visual Studio에서 바로 가기 키입니다.  
+ HTML 및 JavaScript를 사용 하 여 UWP 앱을 디버깅 하는 것에 대 한 Visual Studio에서 바로 가기 키입니다.  
   
 ## <a name="general-shortcuts"></a>일반 바로 가기  
  이러한 바로 가기는 HTML 및 JavaScript를 사용 하 여 UWP 앱에 대 한 모든 도구에서 작동 합니다.  
@@ -51,12 +49,12 @@ ms.locfileid: "31475498"
 |작업|바로 가기|  
 |------------|--------------|  
 |요소 선택|Ctrl+B|  
-|표시 및 사용 하는 경우 웹 페이지 강조 표시 상자의 숨기기 사이 전환 **요소 선택**|Ctrl+Shift+I|  
-|사용 하 여 변경 내용 커밋 **HTML로 편집**|Ctrl+Enter|  
-|사용 하 여 변경 내용을 취소 **HTML로 편집**|Esc|  
+|**요소 선택**을 사용할 때 웹 페이지 강조 표시 상자의 표시/숨기기 기능 전환|Ctrl+Shift+I|  
+|**HTML로 편집**을 사용하여 변경 내용 커밋|Ctrl+Enter|  
+|**HTML로 편집**을 사용하여 변경 내용 삭제|Esc|  
 |선택한 CSS 값 1씩 증가|위쪽 화살표|  
 |선택한 CSS 값 1씩 감소|아래쪽 화살표|  
   
 ## <a name="see-also"></a>참고 항목  
  [빠른 시작: HTML 및 CSS 디버그](../debugger/quickstart-debug-html-and-css.md)   
- [퀵 스타트: JavaScript 디버깅](../debugger/quickstart-debug-javascript-using-the-console.md)
+ [빠른 시작: JavaScript 디버그](../debugger/quickstart-debug-javascript-using-the-console.md)

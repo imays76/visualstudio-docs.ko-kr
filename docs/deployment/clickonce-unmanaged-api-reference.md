@@ -1,6 +1,5 @@
 ---
 title: ClickOnce 관리 되지 않는 API 참조 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 api_name:
 - CleanOnlineAppCache
@@ -12,7 +11,6 @@ api_type:
 - COM
 topic_type:
 - apiref
-ms.technology: vs-ide-deployment
 ms.topic: reference
 dev_langs:
 - VB
@@ -30,14 +28,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 121b9b3be3c7f942f3ed1d5f7f2600f24d684e2d
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 584dc441e54e89fea77667cac98cdad78bac5b2d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39082152"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968143"
 ---
-# <a name="clickonce-unmanaged-api-reference"></a>ClickOnce 관리 되지 않는 API 참조
+# <a name="clickonce-unmanaged-api-reference"></a>ClickOnce 관리되지 않는 API 참조
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 관리 되지 않는 dfshim.dll에서 Api를 공개 합니다.  
   
 ## <a name="cleanonlineappcache"></a>CleanOnlineAppCache  
@@ -46,7 +44,7 @@ ms.locfileid: "39082152"
 ### <a name="return-value"></a>반환 값  
  성공 하면 S_OK를 반환 합니다. 그렇지 않으면 실패를 나타내는 HRESULT를 반환 합니다. 관리 되는 예외를 발생 하는 경우 0x80020009 (DISP_E_EXCEPTION)를 반환 합니다.  
   
-### <a name="remarks"></a>설명  
+### <a name="remarks"></a>주의  
  CleanOnlineAppCache 호출 시작 된 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 아직 실행 하지 않은 경우 서비스입니다.  
   
 ## <a name="getdeploymentdatafrommanifest"></a>GetDeploymentDataFromManifest  
@@ -56,8 +54,8 @@ ms.locfileid: "39082152"
   
 |매개 변수|설명|형식|  
 |---------------|-----------------|----------|  
-|`pcwzActivationUrl`|에 대 한 포인터를 `ActivationURL`입니다.|LPCWSTR|  
-|`pcwzPathToDeploymentManifest`|에 대 한 포인터를 `PathToDeploymentManifest`입니다.|LPCWSTR|  
+|`pcwzActivationUrl`|`ActivationURL`에 대한 포인터입니다.|LPCWSTR|  
+|`pcwzPathToDeploymentManifest`|`PathToDeploymentManifest`에 대한 포인터입니다.|LPCWSTR|  
 |`pwzApplicationIdentity`|반환 되는 전체 응용 프로그램 id를 지정 하는 NULL로 끝나는 문자열을 받기 위한 버퍼에 대 한 포인터입니다.|LPWSTR|  
 |`pdwIdentityBufferLength`|길이가 DWORD에 대 한 포인터를 `pwzApplicationIdentity` WCHARs 버퍼입니다. NULL 종료 문자에 대 한 공간을 포함합니다.|LPDWORD|  
 |`pwzProcessorArchitecture`|응용 프로그램 배포 매니페스트에서 프로세서 아키텍처를 지정 하는 NULL로 끝나는 문자열을 받기 위한 버퍼에 대 한 포인터입니다.|LPWSTR|  
@@ -70,7 +68,7 @@ ms.locfileid: "39082152"
 ### <a name="return-value"></a>반환 값  
  성공 하면 S_OK를 반환 합니다. 그렇지 않으면 실패를 나타내는 HRESULT를 반환 합니다. 버퍼가 너무 작은 경우 HRESULTFROMWIN32(ERROR_INSUFFICIENT_BUFFER)를 반환 합니다.  
   
-### <a name="remarks"></a>설명  
+### <a name="remarks"></a>주의  
  포인터를 null 이어야 합니다. `pcwzActivationUrl` 및 `pcwzPathToDeploymentManifest` 비어 있지 않아야 합니다.  
   
  활성화 URL을 정리 해야 하는 호출자의 경우 예를 들어, 이스케이프 문자를 추가 필요한 위치 또는 쿼리 문자열을 제거 합니다.  
@@ -85,11 +83,11 @@ ms.locfileid: "39082152"
 |매개 변수|설명|형식|  
 |---------------|-----------------|----------|  
 |`deploymentUrl`|배포 매니페스트의 URL이 포함 된 NULL로 끝나는 문자열에 대 한 포인터입니다.|LPCWSTR|  
-|`data`|나중에 사용하기 위해 예약되어 있습니다. NULL 이어야 합니다.|LPVOID|  
-|`flags`|나중에 사용하기 위해 예약되어 있습니다. 0 이어야 합니다.|DWORD|  
+|`data`|나중에 사용하기 위해 예약되어 있습니다. Null이어야 합니다.|LPVOID|  
+|`flags`|나중에 사용하기 위해 예약되어 있습니다. 0이어야 합니다.|DWORD|  
   
 ### <a name="return-value"></a>반환 값  
  성공 하면 S_OK를 반환 합니다. 그렇지 않으면 실패를 나타내는 HRESULT를 반환 합니다. 관리 되는 예외를 발생 하는 경우 0x80020009 (DISP_E_EXCEPTION)를 반환 합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  <xref:System.Deployment.Application.DeploymentServiceCom.CleanOnlineAppCache%2A>

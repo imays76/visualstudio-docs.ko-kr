@@ -17,15 +17,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: fef30f836ab27cd7a67d85a04254be0018d5b33e
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: b626aa489323d26ef439ade216d1fa97a52a8d13
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388740"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825648"
 ---
 # <a name="handle-a-concurrency-exception"></a>동시성 예외 처리
 
@@ -33,7 +32,7 @@ ms.locfileid: "52388740"
 
 이 연습에서는 다음 프로세스를 안내합니다.
 
-1. 새 **Windows Forms 응용 프로그램** 프로젝트를 만듭니다.
+1. 새 **Windows Forms 애플리케이션** 프로젝트를 만듭니다.
 
 2. Northwind Customers 테이블을 기반으로 새 데이터 집합을 만듭니다.
 
@@ -85,7 +84,7 @@ ms.locfileid: "52388740"
 
 1. 에 **데이터** 메뉴 선택 **새 데이터 소스 추가**합니다.
 
-   데이터 소스 구성 마법사가 열립니다.
+   데이터 원본 구성 마법사가 열립니다.
 
 2. 에 **데이터 소스 형식 선택** 화면에서 **데이터베이스**합니다.
 

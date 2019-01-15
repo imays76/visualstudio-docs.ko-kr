@@ -20,15 +20,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5a0a8846719c6ad57e65e1e308e9884e81e1997d
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: HT
+ms.openlocfilehash: e485223f73a74a97dd388a9c78dd4cf543a92350
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174724"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53936193"
 ---
 # <a name="validate-data-in-datasets"></a>데이터 세트의 데이터 유효성 검사
 데이터 유효성 검사는 데이터 집합의 스키마 내에서 제약 조건에 따르는 데이터 개체에 입력할 값 확인 프로세스. 유효성 검사 프로세스는 또한 이러한 값은 다음과 같습니다 응용 프로그램에 대해 설정 된 규칙을 확인 합니다. 기본 데이터베이스에 업데이트를 보내기 전에 데이터의 유효성을 검사 하는 것이 좋습니다. 이렇게 하면 오류 뿐 아니라 잠재적인 응용 프로그램와 데이터베이스 간의 왕복 수가 줄어듭니다.
@@ -66,7 +65,7 @@ ms.locfileid: "37174724"
 
 ## <a name="data-update-events"></a>데이터 업데이트 이벤트
 
-|이벤트(event)|설명|
+|이벤트|설명|
 |-----------|-----------------|
 |<xref:System.Data.DataTable.ColumnChanging>|열에 값이 변경 됩니다. 이벤트 제안 된 새 값과 함께, 행 및 열을 전달합니다.|
 |<xref:System.Data.DataTable.ColumnChanged>|열에 값을 변경 되었습니다. 이벤트 제안 된 값과 함께, 행 및 열을 전달합니다.|
@@ -90,7 +89,7 @@ ms.locfileid: "37174724"
 
 -   열이 오류를 설정 하 여 제안 된 값을 거부 (<xref:System.Data.DataRow.SetColumnError%2A>)에서 열 변경 이벤트 처리기 내에서.
 
--   필요에 따라 사용 하 여는 <xref:System.Windows.Forms.ErrorProvider> 컨트롤을 사용자에 게 오류 메시지를 표시 합니다. 자세한 내용은 [ErrorProvider 구성 요소](/dotnet/framework/winforms/controls/errorprovider-component-windows-forms)합니다.
+-   필요에 따라 사용 하 여는 <xref:System.Windows.Forms.ErrorProvider> 컨트롤을 사용자에 게 오류 메시지를 표시 합니다. 자세한 내용은 [ErrorProvider 구성 요소](/dotnet/framework/winforms/controls/errorprovider-component-windows-forms)를 참조하세요.
 
 하는 동안 유효성 검사를 수행할 수도 있습니다는 <xref:System.Data.DataTable.RowChanging> 이벤트입니다.
 
@@ -99,7 +98,7 @@ ms.locfileid: "37174724"
 
 ### <a name="to-validate-data-when-a-row-changes-visual-basic"></a>유효성을 검사할 때 행 데이터 변경 (Visual Basic)
 
-1.  데이터 집합을 엽니다는 **데이터 집합 디자이너**합니다. 자세한 내용은 [연습: 데이터 집합 디자이너에서 데이터 집합 만들기](walkthrough-creating-a-dataset-with-the-dataset-designer.md)합니다.
+1.  **데이터 세트 디자이너**에서 데이터 세트를 엽니다. 자세한 내용은 [연습: 데이터 집합 디자이너에서 데이터 집합 만들기](walkthrough-creating-a-dataset-with-the-dataset-designer.md)합니다.
 
 2.  유효성을 검사 하려는 테이블의 제목 표시줄 두 번 클릭 합니다. 이 작업을 자동으로 만듭니다는 <xref:System.Data.DataTable.RowChanging> 이벤트 처리기는 <xref:System.Data.DataTable> 데이터 집합의 partial 클래스 파일에서 합니다.
 
@@ -108,9 +107,9 @@ ms.locfileid: "37174724"
 
      [!code-vb[VbRaddataValidating#3](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_1.vb)]
 
-### <a name="to-validate-data-when-a-row-changes-c"></a>데이터의 유효성을 행 변경 (C#)
+### <a name="to-validate-data-when-a-row-changes-c"></a>데이터 행이 변경 될 때 유효성을 검사 하려면 (C#)
 
-1.  데이터 집합을 엽니다는 **데이터 집합 디자이너**합니다. 자세한 내용은 [연습: 데이터 집합 디자이너에서 데이터 집합 만들기](walkthrough-creating-a-dataset-with-the-dataset-designer.md)합니다.
+1.  **데이터 세트 디자이너**에서 데이터 세트를 엽니다. 자세한 내용은 [연습: 데이터 집합 디자이너에서 데이터 집합 만들기](walkthrough-creating-a-dataset-with-the-dataset-designer.md)합니다.
 
 2.  유효성을 검사 하려는 테이블의 제목 표시줄 두 번 클릭 합니다. 이 작업에 대 한 partial 클래스 파일을 만듭니다는 <xref:System.Data.DataTable>합니다.
 
@@ -209,8 +208,8 @@ ms.locfileid: "37174724"
      [!code-csharp[VbRaddataEditing#22](../data-tools/codesnippet/CSharp/validate-data-in-datasets_7.cs)]
      [!code-vb[VbRaddataEditing#22](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_7.vb)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-- [Visual Studio의 데이터 집합 도구](../data-tools/dataset-tools-in-visual-studio.md)
+- [Visual Studio의 데이터 세트 도구](../data-tools/dataset-tools-in-visual-studio.md)
 - [방법: Windows Forms DataGridView 컨트롤에서 데이터 유효성 검사](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)
 - [방법: Windows Forms ErrorProvider 구성 요소를 사용 하 여 폼 유효성에 대 한 오류 아이콘 표시](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)

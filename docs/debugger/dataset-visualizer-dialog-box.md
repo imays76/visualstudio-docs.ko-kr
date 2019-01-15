@@ -1,8 +1,6 @@
 ---
-title: 데이터 집합 시각화 도우미 대화 상자가 | Microsoft Docs
-ms.custom: ''
+title: 데이터 집합 시각화 도우미 대화 상자 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.dataviewer
@@ -23,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: caa7e79ed33871cbcd816cd09edfe84b167e1702
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: HT
+ms.openlocfilehash: 29cbefaa2993b894b9868b6719ecf5fde1d832e1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457269"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985305"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>데이터 세트 시각화 도우미 대화 상자
 데이터 집합 시각화 도우미를 사용하면 DataSet, DataTable, DataView 또는 DataViewManager 개체의 내용을 볼 수 있습니다. 디버거 변수 창이나 DataTip에서 이러한 개체 중 하나의 값 옆에 나타나는 돋보기 아이콘을 클릭하면 이 시각화 도우미에 액세스할 수 있습니다.  
@@ -43,4 +41,4 @@ ms.locfileid: "31457269"
  [디버거 보안](../debugger/debugger-security.md)   
  [사용자 지정 시각화 도우미 만들기](../debugger/create-custom-visualizers-of-data.md)   
  [디버거 창](../debugger/debugger-windows.md)   
- [데이터 팁의 데이터 값 보기](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)
+ [데이터 팁에서 데이터 값 보기](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)

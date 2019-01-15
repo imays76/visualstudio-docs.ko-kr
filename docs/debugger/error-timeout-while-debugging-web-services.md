@@ -1,8 +1,6 @@
 ---
 title: '오류: 웹 서비스를 디버깅 하는 동안 시간 초과 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 dev_langs:
 - CSharp
@@ -17,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 41c6793e1fdf4e3ed2d7e42fbd32bd20ad9f494a
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
-ms.translationtype: MT
+ms.openlocfilehash: 98d112528ace581c9173e82af63c502e2124315a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056270"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832573"
 ---
-# <a name="error-timeout-while-debugging-web-services"></a>오류: 웹 서비스를 디버깅하는 동안 시간이 초과되었습니다.
+# <a name="error-timeout-while-debugging-web-services"></a>오류: 웹 서비스를 디버깅하는 동안 시간 초과
 코드를 호출하여 XML Web services를 한 단계씩 실행할 때 호출 시간이 초과되어 디버깅을 계속할 수 없는 경우가 있습니다. 이때 다음과 같은 오류 메시지가 나타날 수 있습니다.  
   
 ```cmd
@@ -42,4 +40,4 @@ obj.TimeOut = -1; // infinite time out.
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [웹 응용 프로그램 디버그: 오류 및 문제 해결](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+ [웹 애플리케이션 디버그: 오류 및 문제 해결](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

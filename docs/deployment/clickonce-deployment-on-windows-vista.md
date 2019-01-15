@@ -1,8 +1,6 @@
 ---
 title: Windows Vista의 ClickOnce 배포 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0389665349ae9c39a0f820bc047af6cc4db2b683
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a73ddb8781276fbd2c56ce58b9fde257e728f86d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867535"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850780"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Windows Vista의 ClickOnce 배포
 
@@ -44,16 +42,16 @@ Visual Studio 매니페스트 생성을 위한 다음 옵션을 제공합니다.
   
    이 접근 방식은 라고도 *가상화*합니다. 이전 버전의 Visual Studio에서 기존 응용 프로그램과 호환성에 대 한이 옵션을 사용 합니다.  
   
-  새 속성에서 사용할 수는 **응용 프로그램** 프로젝트 디자이너 (Visual C# 프로젝트에만 해당)의 페이지 및 MSBuild 프로젝트 파일 형식입니다.  
+  새 속성에서 사용할 수는 **응용 프로그램** 프로젝트 디자이너의 페이지 (시각적 개체에 대해 C# 프로젝트에 해당) 및 MSBuild 프로젝트 파일 형식입니다.  
   
-  Visual Studio IDE에서 UAC 매니페스트 생성을 구성 하기 위한 메서드 (Visual C# 또는 Visual Basic) 프로젝트 유형에 따라 다릅니다.  
+  Visual Studio IDE에서 UAC 매니페스트 생성을 구성 하는 방법은 프로젝트 유형에 따라 다릅니다 (Visual C# 또는 Visual Basic).  
   
-  * 매니페스트 생성에 대 한 Visual C# 프로젝트를 구성 하는 방법에 대 한 내용은 [응용 프로그램 페이지, 프로젝트 디자이너 (C#)](../ide/reference/application-page-project-designer-csharp.md)합니다.  
+  * 시각적 개체를 구성 하는 방법은 C# 매니페스트 생성에 대 한 프로젝트 참조 [프로젝트 디자이너, 응용 프로그램 페이지 (C#)](../ide/reference/application-page-project-designer-csharp.md)합니다.  
   
   * 매니페스트 생성에 대 한 Visual Basic 프로젝트를 구성 하는 방법에 대 한 내용은 [응용 프로그램 페이지, 프로젝트 디자이너 (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [ClickOnce 보안 및 배포](../deployment/clickonce-security-and-deployment.md)   
  [사용자 권한 및 Visual Studio](https://msdn.microsoft.com/library/d5c55084-1e7b-4b61-b478-137db01c0fc0)   
- [프로젝트 디자이너, 응용 프로그램 페이지(C#)](../ide/reference/application-page-project-designer-csharp.md)   
- [프로젝트 디자이너, 응용 프로그램 페이지(Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)
+ [프로젝트 디자이너, 애플리케이션 페이지(C#)](../ide/reference/application-page-project-designer-csharp.md)   
+ [프로젝트 디자이너, 애플리케이션 페이지(Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)

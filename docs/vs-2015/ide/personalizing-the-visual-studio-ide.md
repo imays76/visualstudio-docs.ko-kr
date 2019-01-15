@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c2fec4ce-3885-4c4c-ace2-14c197e11079
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 81b2f98694ee34b6fc4c442a4d4746b436025583
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e38c7c578fd23e1f141721868a111e796afc9365
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064655"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916779"
 ---
 # <a name="personalizing-the-visual-studio-ide"></a>Visual Studio IDE 개인 설정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +40,7 @@ ms.locfileid: "53064655"
  사용자와 사용자의 팀을 위한 사용자 지정 시작 페이지를 만들려면 [시작 페이지 사용자 지정](../ide/customizing-the-start-page-for-visual-studio.md)을 참조하세요.
 
 ### <a name="environment-color-themes"></a>환경 색 테마
- 밝게, 어둡게 및 파란색 중에서 색 테마를 변경하려면 **빠른 실행**에서 environment를 입력하고 **환경 &#124; 일반**을 선택합니다. 편집기에서 색 지정 옵션을 변경하려면 **빠른 실행**에서 `environment`를 입력하고 **환경 &#124; 글꼴 및 색**을 선택합니다. [방법: 글꼴 및 색 변경](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)을 참조하세요.
+ 밝게, 어둡게 및 파란색 중에서 색 테마를 변경하려면 **빠른 실행**에서 environment를 입력하고 **환경 &#124; 일반**을 선택합니다. 편집기에서 색 지정 옵션을 변경하려면 **빠른 실행**에서 `environment`를 입력하고 **환경 &#124; 글꼴 및 색**을 선택합니다. [방법: 글꼴 및 색 변경](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)도 참조하세요.
 
 ### <a name="menus-and-toolbars"></a>메뉴 및 도구 모음
  메뉴 또는 도구 모음 항목을 추가하거나 제거하려면 [방법: 메뉴 및 도구 모음 사용자 지정](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)을 참조하세요.

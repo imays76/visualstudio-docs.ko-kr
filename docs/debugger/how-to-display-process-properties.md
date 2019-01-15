@@ -1,8 +1,6 @@
 ---
 title: '방법: 프로세스 속성 표시 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Process properties
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25138eb6c9f7616f68841a45fcd1001ccd3dc84f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: dd5217e9bd86462b793a9172ba3073c12bc9502d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826325"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832413"
 ---
 # <a name="how-to-display-process-properties"></a>방법: 프로세스 속성 표시
 에 나열 된 프로세스에 대 한 자세한 내용을 알아보려면 [프로세스 뷰](../debugger/processes-view.md)를 사용 합니다 [프로세스 속성 대화 상자](../debugger/process-properties-dialog-box.md)합니다.  

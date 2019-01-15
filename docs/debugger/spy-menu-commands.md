@@ -1,8 +1,6 @@
 ---
-title: 메뉴 명령 스파이 | Microsoft Docs
-ms.custom: ''
+title: Spy 메뉴 명령 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Spy menu commands
@@ -12,30 +10,30 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a11b24f5f0f950fabe475a0f0099e76032451fb
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: b0abf9695e0210cdae9785aafcd967513e48bf43
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473977"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989531"
 ---
 # <a name="spy-menu-commands"></a>Spy 메뉴 명령
-**Spy** 메뉴는 Spy + + 창 및 뷰를 사용 하는 명령을 제공 합니다.  
+합니다 **Spy** 메뉴는 Spy + + Windows 및 뷰를 사용 하는 명령을 제공 합니다.  
   
  **Windows**  
- 새 창 뷰를 엽니다.  
+ 새 Windows 보기를 엽니다.  
   
  **프로세스**  
- 새 프로세스 뷰를 엽니다.  
+ 새 프로세스 보기를 엽니다.  
   
  **스레드**  
- 새 스레드 뷰를 엽니다.  
+ 새 스레드 보기를 엽니다.  
   
  **로그 메시지**  
- 새 메시지 뷰를 열고 엽니다는 [메시지 옵션 대화 상자](../debugger/message-options-dialog-box.md) 뷰에 대 한 합니다.  
+ 열고 새 메시지 보기를 엽니다는 [메시지 옵션 대화 상자](../debugger/message-options-dialog-box.md) 뷰에 대 한 합니다.  
   
  **창 찾기**  
- 표시는 **마우스로** 대화 상자는 창을 선택 합니다.  
+ 표시 된 **FindWindow** 마우스를 사용 하 여 창을 선택 대화 상자.  
   
  **끝내기**  
  Spy + + 유틸리티를 닫습니다.

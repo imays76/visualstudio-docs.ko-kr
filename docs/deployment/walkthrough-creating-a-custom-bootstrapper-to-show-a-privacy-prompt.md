@@ -1,8 +1,6 @@
 ---
 title: '연습: 개인정보 처리 방침 프롬프트를 사용 하 여 사용자 지정 부트스트래퍼 만들기 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -21,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 18ac2ad1125067109b0ca02d552e997f2c30482f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 7e32ea7053d79a64e0c1502ed251d55f6150500a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873788"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882724"
 ---
-# <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>연습: 개인정보처리방침 프롬프트가 포함된 사용자 지정 부트스트래퍼 만들기
+# <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>연습: 개인정보 처리 방침 프롬프트를 사용 하 여 사용자 지정 부트스트래퍼 만들기
 최신 파일 버전 및 어셈블리 버전을 사용 하 여 어셈블리를 사용할 수 있게 되 면 자동으로 업데이트 하도록 ClickOnce 응용 프로그램을 구성할 수 있습니다. 되도록 고객에 게이 동작에 동의 하는, 개인정보 처리 방침 프롬프트를 표시할 수 있습니다. 그런 다음 응용 프로그램이 자동으로 업데이트 하는 권한을 부여할 것인지를 선택할 수 있습니다. 응용 프로그램에 자동으로 업데이트 하도록 허용 되지 않습니다 설치 하지 않습니다.  
   
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
@@ -127,9 +125,9 @@ ms.locfileid: "49873788"
     6. 에 **시작 개체** 드롭 다운 메뉴에서 **Module1**합니다.  
   
        > [!NOTE]
-       >  Windows XP 비주얼 스타일, 응용 프로그램 이벤트, 시작 화면, 단일 인스턴스 응용 프로그램 등과 같은 기능을 비활성화 응용 프로그램 프레임 워크를 사용 하지 않도록 설정 합니다. 자세한 내용은 [프로젝트 디자이너, 응용 프로그램 페이지(Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)를 참조하세요.  
+       >  Windows XP 비주얼 스타일, 응용 프로그램 이벤트, 시작 화면, 단일 인스턴스 응용 프로그램 등과 같은 기능을 비활성화 응용 프로그램 프레임 워크를 사용 하지 않도록 설정 합니다. 자세한 내용은 [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)을 참조하세요.  
   
-       Visual C# 개발자에 해당:  
+       시각적 개체에 대해 C# 개발자만:  
   
        엽니다는 *Program.cs* 코드, 파일을 열고 다음 코드를 추가 합니다.  
   
@@ -148,7 +146,7 @@ ms.locfileid: "49873788"
   
 -   소프트웨어 사용 조건에 대 한 문서입니다.  
   
-#### <a name="step-1-to-create-the-bootstrapper-directory"></a>1 단계: 부트스트래퍼 디렉터리를 만들려면  
+#### <a name="step-1-to-create-the-bootstrapper-directory"></a>1단계: 부트스트래퍼 디렉터리를 만들려면  
   
 1.  라는 디렉터리를 만듭니다 **UpdateConsentDialog** 에 *%PROGRAMFILES%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages*합니다.  
   
@@ -160,7 +158,7 @@ ms.locfileid: "49873788"
     > [!NOTE]
     >  각 로캘에 대 한 새 디렉터리를 만듭니다. 예를 들어 fr 및 독일 로캘에 대 한 하위 디렉터리를 추가할 수 있습니다. 필요한 경우 이러한 디렉터리는 프랑스어 및 독일어 문자열 및 언어 팩에 포함 됩니다.  
   
-#### <a name="step-2-to-create-the-productxml-manifest-file"></a>2 단계: product.xml 매니페스트 파일을 만들려면  
+#### <a name="step-2-to-create-the-productxml-manifest-file"></a>2단계: Product.xml 매니페스트 파일을 만들려면  
   
 1.  라는 텍스트 파일을 만듭니다 *product.xml*합니다.  
   
@@ -192,7 +190,7 @@ ms.locfileid: "49873788"
   
 3.  UpdateConsentDialog 부트스트래퍼 디렉터리에 파일을 저장 합니다.  
   
-#### <a name="step-3-to-create-the-packagexml-manifest-file-and-the-software-license-terms"></a>3 단계: package.xml 매니페스트를 만들려면 파일 및 소프트웨어 사용 조건  
+#### <a name="step-3-to-create-the-packagexml-manifest-file-and-the-software-license-terms"></a>3단계: 매니페스트 package.xml 파일을 만들고 소프트웨어 사용 조건  
   
 1.  라는 텍스트 파일을 만듭니다 *package.xml*합니다.  
   
@@ -236,7 +234,7 @@ ms.locfileid: "49873788"
   
 1.  **솔루션 탐색기**를 배포 하려는 응용 프로그램의 이름을 클릭 합니다.  
   
-2.  에 **프로젝트** 메뉴에서 클릭 *ProjectName* **속성**합니다.  
+2.  **프로젝트** 메뉴에서 *ProjectName* **속성**을 클릭합니다.  
   
 3.  클릭 합니다 **게시** 페이지를 선택한 다음 클릭 **필수 구성 요소**합니다.  
   
@@ -254,7 +252,7 @@ ms.locfileid: "49873788"
   
 1.  **솔루션 탐색기**를 배포 하려는 응용 프로그램의 이름을 클릭 합니다.  
   
-2.  에 **프로젝트** 메뉴에서 클릭 *ProjectName* **속성**합니다.  
+2.  **프로젝트** 메뉴에서 *ProjectName* **속성**을 클릭합니다.  
   
 3.  클릭 합니다 **게시** 페이지를 선택한 다음 클릭 **지금 게시**합니다.  
   
@@ -266,13 +264,13 @@ ms.locfileid: "49873788"
   
 6.  소프트웨어 사용권 계약을 읽고 클릭 **Accept**합니다.  
   
-     업데이트 승인 대화 상자 응용 프로그램에 표시 되 고 다음 텍스트를 보여 줍니다: 응용 프로그램을 설치 하려고 합니다. 웹에서 최신 업데이트를 확인 합니다. 동의 클릭 하 여 인터넷에 자동 업데이트를 확인 하려면 응용 프로그램을 인증 합니다.  
+     업데이트 승인 대화 상자 응용 프로그램 표시 하 고 다음 텍스트를 보여 줍니다. 응용 프로그램을 설치 하려고 합니다. 웹에서 최신 업데이트를 확인 합니다. 동의 클릭 하 여 인터넷에 자동 업데이트를 확인 하려면 응용 프로그램을 인증 합니다.  
   
 7.  응용 프로그램을 닫거나 취소 클릭 합니다.  
   
-     오류를 표시 하는 응용 프로그램:에 대 한 시스템 구성 요소를 설치 하는 동안 오류가 발생 했습니다 *ApplicationName*합니다. 모든 시스템 구성 요소가 성공적으로 설치 될 때까지 계속할 수 없습니다.  
+     응용 프로그램 오류를 표시 합니다. 에 대 한 시스템 구성 요소를 설치 하는 동안 오류가 발생 했습니다 *ApplicationName*합니다. 모든 시스템 구성 요소가 성공적으로 설치 될 때까지 계속할 수 없습니다.  
   
-8.  세부 정보에서 다음 오류 메시지가 표시를 클릭 합니다: 구성 요소 업데이트 승인 대화 상자에 다음 오류 메시지와 함께 설치 하지 못했습니다. "자동 업데이트 동의 허용 되지 않습니다." 다음 구성 요소를 설치 하지 못했습니다.-업데이트 승인 대화 상자  
+8.  세부 정보에서 다음 오류 메시지가 표시를 클릭 합니다. 구성 요소 업데이트 승인 대화 상자는 다음 오류 메시지와 함께 설치에 실패 했습니다. "자동 업데이트 동의 허용 되지 않습니다." 다음 구성 요소를 설치 하지 못했습니다.-업데이트 승인 대화 상자  
   
 9. **닫기**를 클릭합니다.  
   
@@ -280,7 +278,7 @@ ms.locfileid: "49873788"
   
 1.  **솔루션 탐색기**를 배포 하려는 응용 프로그램의 이름을 클릭 합니다.  
   
-2.  에 **프로젝트** 메뉴에서 클릭 *ProjectName* **속성**합니다.  
+2.  **프로젝트** 메뉴에서 *ProjectName* **속성**을 클릭합니다.  
   
 3.  클릭 합니다 **게시** 페이지를 선택한 다음 클릭 **지금 게시**합니다.  
   
@@ -292,7 +290,7 @@ ms.locfileid: "49873788"
   
 6.  소프트웨어 사용권 계약을 읽고 클릭 **Accept**합니다.  
   
-     업데이트 승인 대화 상자 응용 프로그램에 표시 되 고 다음 텍스트를 보여 줍니다: 응용 프로그램을 설치 하려고 합니다. 웹에서 최신 업데이트를 확인 합니다. 동의 클릭 하 여 인터넷에 자동 업데이트를 확인 하려면 응용 프로그램을 인증 합니다.  
+     업데이트 승인 대화 상자 응용 프로그램 표시 하 고 다음 텍스트를 보여 줍니다. 응용 프로그램을 설치 하려고 합니다. 웹에서 최신 업데이트를 확인 합니다. 동의 클릭 하 여 인터넷에 자동 업데이트를 확인 하려면 응용 프로그램을 인증 합니다.  
   
 7.  클릭 **동의 함**를 클릭 하 고 **계속**합니다.  
   
@@ -300,8 +298,8 @@ ms.locfileid: "49873788"
   
 8.  응용 프로그램 설치 대화 상자가 나타나면 클릭 **설치**합니다.  
   
-## <a name="see-also"></a>참고자료  
- [응용 프로그램 배포 필수 구성 요소](../deployment/application-deployment-prerequisites.md)   
+## <a name="see-also"></a>참고 항목  
+ [애플리케이션 배포 필수 구성 요소](../deployment/application-deployment-prerequisites.md)   
  [부트스트래퍼 패키지 만들기](../deployment/creating-bootstrapper-packages.md)   
  [방법: 제품 매니페스트 만들기](../deployment/how-to-create-a-product-manifest.md)   
  [방법: 패키지 매니페스트 만들기](../deployment/how-to-create-a-package-manifest.md)   

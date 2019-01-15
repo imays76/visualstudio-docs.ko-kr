@@ -2,19 +2,18 @@
 title: 스냅숏 디버거에 대 한 시작 페이지
 ms.date: 07/14/2018
 robots: noindex, nofollow
-ms.technology: vs-ide-debug
 ms.topic: reference
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7b5b48aeeb0cfcaeed72a06bfb6709892c58de7
-ms.sourcegitcommit: e2373d40ca9829cee63519152a97172763471e21
-ms.translationtype: MT
+ms.openlocfilehash: c9c2e5ec77a2abf07ca396166d4cc2ae9792cacc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "39310119"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853738"
 ---
 # <a name="getting-started-with-the-snapshot-debugger"></a>스냅숏 디버거를 시작 하기
 
@@ -68,7 +67,7 @@ DataTips를 보고, 조사식, 지역 변수를 사용 하 여, 호출 하는 �
 
 스냅숏 디버거에 대 한 자세한 정보를 찾을 수 있습니다 합니다 [docs 페이지](../debug-live-azure-applications.md)합니다. 쉽게 버그를 찾는 조건을 설정 하는 방법에 대 한 자세히 알아봅니다.
 
-## <a name="dont-show-me-this-again"></a>안 함 ' 다시 표시
+## <a name="dont-show-me-this-again"></a>다시 표시 안 함
 
 다시 표시 안 함 스냅숏 디버거 시작 페이지를 스냅숏 디버거를 연결 하는 경우를 변경 합니다 **세션 시작 시 'Getting Started 페이지 표시** 옵션 **도구**  >   **옵션** > **스냅숏 디버거**합니다. 
 

@@ -1,8 +1,6 @@
 ---
 title: '&lt;어셈블리&gt; 요소 (ClickOnce 배포) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#assembly
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c9d72eafb03f22a01d22894bb887085648c324e3
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 10e9119f54eeb428e94b9e9055b9845fbc7cb9a2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080635"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899826"
 ---
 # <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;어셈블리&gt; 요소 (ClickOnce 배포)
 배포 매니페스트에 대 한 최상위 요소입니다.  
@@ -32,7 +30,7 @@ ms.locfileid: "39080635"
   
 ```xml  
   
-      <assembly    
+      <assembly    
    manifestVersion  
 />  
 ```  
@@ -44,9 +42,9 @@ ms.locfileid: "39080635"
   
 |특성|설명|  
 |---------------|-----------------|  
-|`manifestVersion`|필수. 이 특성으로 설정 되어 있어야 `1.0`합니다.|  
+|`manifestVersion`|필수 요소. 이 특성으로 설정 되어 있어야 `1.0`합니다.|  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드 예제는 `assembly` 요소를 사용 하 여 배포 된 응용 프로그램에 대 한 배포 매니페스트의 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]합니다. 이 코드 예제는에 대해 제공 된 큰 예제의 일부 합니다 [ClickOnce 배포 매니페스트](../deployment/clickonce-deployment-manifest.md) 항목입니다.  
   
 ```xml  
@@ -64,6 +62,6 @@ ms.locfileid: "39080635"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">  
 ```  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [ClickOnce 배포 매니페스트](../deployment/clickonce-deployment-manifest.md)   
  [\<어셈블리 > 요소](../deployment/assembly-element-clickonce-application.md)

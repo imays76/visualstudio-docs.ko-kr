@@ -1,8 +1,6 @@
 ---
 title: 절반 / 분기 텍스처 크기 변형 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 282e9bbb-51aa-4cd0-8e5c-0901268c29e5
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94820b2930bbe689c37b90443ac007b137f162d6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: ecd986f56185b68c8d88788b569dcd2ee0398d6f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870200"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956220"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>절반/분기 텍스처 크기 변형
 렌더링 대상이 아닌 질감의 질감 크기를 줄입니다.  
@@ -29,7 +27,7 @@ ms.locfileid: "49870200"
   
  질감이 사용 가능한 것보다 더 많은 GPU 메모리를 차지하는 경우에는 적절한 질감 압축을 고려한 후에만 질감의 크기를 줄일 것을 고려하세요. 더 작은 질감과 마찬가지로 압축된 질감은 더 적은 메모리를 차지하고 시스템 메모리로 페이징할 필요가 줄어듭니다. 그러나 이러한 질감의 색상 충실도는 떨어집니다. 질감의 콘텐츠에 따라 일부 질감(예: 작은 영역에 색상 변형이 상당한 질감)의 경우 압축이 적절하지 않습니다. 그러만 많은 질감이 압축을 하면 크기를 줄인 것보다 전체적으로 더 나은 이미지 품질을 유지할 수 있습니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  원본 질감을 만드는 `ID3D11Device::CreateTexture2D`를 호출할 때마다 질감 크기가 줄어듭니다. `pDesc`에서 전달되는 D3D11_TEXTURE2D_DESC 개체가 렌더링 시 사용된 질감을 설명하는 경우 특히 질감 크기가 줄어듭니다. 즉, 다음과 같은 경우입니다.  
   
 - BindFlags 멤버에 D3D11_BIND_SHADER_RESOURCE 플래그 집합만 있는 경우  
@@ -46,5 +44,5 @@ ms.locfileid: "49870200"
  이러한 변형은 `CreateTexture2D` 호출 전 런타임에 질감의 크기를 조정합니다. 전체 크기 질감은 더 많은 디스크 공간을 사용하고 인코딩에 상당한 계산 리소스가 필요한 압축된 질감의 경우, 특히 추가 단계에서 앱에서의 로드 시간이 길어질 수 있기 때문에 프로덕션 코드에는 이러한 접근 방식을 사용하는 것이 좋습니다. 대신 빌드 파이프라인의 일부인 이미지 편집기 또는 이미지 프로세서를 사용하여 질감의 크기를 오프라인으로 조정하는 것이 좋습니다. 이러한 접근 방식은 디스크 공간 요구 사항을 줄이고 앱에서 런타임 오버헤드를 없애며 더 긴 처리 시간을 허용하므로 최상의 이미지 품질을 유지하면서 동시에 질감을 축소 또는 압축할 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [Mip 맵 생성 변형](mip-map-generation-variant.md)   
+ [MIP 맵 생성 변형](mip-map-generation-variant.md)   
  [BC 텍스처 압축 변형](bc-texture-compression-variant.md)

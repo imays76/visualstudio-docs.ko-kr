@@ -1,8 +1,6 @@
 ---
 title: 원격 컴퓨터에서 UWP 앱 디버그 | Microsoft Docs
-ms.custom: ''
 ms.date: 10/05/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 0350358c2225851619a84216c929b8d7435dc4e3
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
-ms.translationtype: MT
+ms.openlocfilehash: 8fec6295fce7f100b0dc8c602a41f95e1af7d64f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750711"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892253"
 ---
 # <a name="debug-uwp-apps-on-remote-machines-from-visual-studio"></a>Visual Studio에서 원격 컴퓨터에서 UWP 앱 디버그
   
@@ -78,7 +76,7 @@ Visual Studio에서 원격 장치에서 UWP 앱을 디버그 합니다.
 >[!TIP]
 >이름으로 원격 장치에 연결할 수 없으면, 해당 IP 주소를 사용해 보세요. 원격 장치의 IP 주소를 확인 하려면 입력 **ipconfig** 명령 창에서. IP 주소 요소로 **IPv4 주소**합니다.  
     
-## <a name="BKMK_download"></a> 다운로드 하 여 Visual Studio 용 원격 도구 설치
+## <a name="BKMK_download"></a> Visual Studio용 원격 도구 다운로드 및 설치
 
 원격 컴퓨터에서 앱을 디버깅 하려면 Visual Studio에 대 한 원격 컴퓨터 실행 되어야 합니다 원격 도구를 Visual Studio 용. 
 
@@ -108,7 +106,7 @@ Visual Studio에서 원격 장치에서 UWP 앱을 디버그 합니다.
    
 1. 필요한 경우 선택 **디버그** > **디버깅 중지** 누르거나 **Shift**+**F5** 디버깅을 중지 하 고 원격 응용 프로그램을 닫습니다.
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [고급 원격 배포 옵션](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)  
- [Visual Studio로 UWP 앱 테스트](../test/testing-store-apps-with-visual-studio.md)   
+ [Visual Studio로 UWP 앱 테스트](/visualstudio/test/create-and-run-unit-tests-for-a-store-app-in-visual-studio/)   
  [Visual Studio에서 UWP 앱 디버그](debugging-windows-store-and-windows-universal-apps.md)

@@ -15,15 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: cbafb006091956ce5359bc6b575accd057b2ee37
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: b0353688be3b6fa62a0f33338461eeab78ee33d1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305353"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888506"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>연습: WPF 및 Entity Framework를 사용하여 WCF 데이터 서비스 만들기
 이 연습에서는 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 애플리케이션에서 호스팅되는 [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]를 만든 다음, Windows Forms 애플리케이션에서 이 서비스에 액세스하는 방법을 보여줍니다.
@@ -147,7 +146,7 @@ ms.locfileid: "52305353"
 
 다음 단계에서는 서비스를 사용할 Windows Forms 클라이언트 응용 프로그램을 만들 수 있습니다.
 
-## <a name="creating-the-client-application"></a>클라이언트 응용 프로그램 만들기
+## <a name="creating-the-client-application"></a>클라이언트 애플리케이션 만들기
  클라이언트 애플리케이션을 만들려면 두 번째 프로젝트를 추가하고, 프로젝트에 서비스 참조를 추가하고, 데이터 원본을 구성하고, 서비스의 데이터를 표시할 사용자 인터페이스를 만듭니다.
 
  첫 단계로, Windows Forms 프로젝트를 솔루션에 추가 하 고 시작 프로젝트로 설정 합니다.

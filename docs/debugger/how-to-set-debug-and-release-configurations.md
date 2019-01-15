@@ -1,8 +1,6 @@
 ---
 title: 디버그 및 릴리스 구성 설정 | Microsoft Docs
-ms.custom: ''
 ms.date: 10/05/2018
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.builds
@@ -33,24 +31,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a65a3331c210bdfb4143ff890180fdc7d663229
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: 33b33f25b1049afcf71a67af02927e25887d1621
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257227"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837760"
 ---
-# <a name="set-debug-and-release-configurations-in-visual-studio"></a>디버그 및 릴리스 구성에 Visual Studio 설정
+# <a name="set-debug-and-release-configurations-in-visual-studio"></a>Visual Studio에서 디버그 및 릴리스 구성 설정
 
 Visual Studio 프로젝트에는 사용하는 프로그램에 대한 별도의 릴리스 및 디버그 구성이 있습니다. 최종 릴리스 배포용 릴리스 버전과 디버그 버전은 디버깅용 빌드할 수 있습니다.
 
 디버그 구성의 프로그램 최적화 안 함 및 전체 기호화 된 디버그 정보를 사용 하 여 컴파일합니다. 최적화하면 소스 코드와 생성된 명령 간의 관계가 복잡해지므로 디버깅이 복잡해집니다.
 
-프로그램의 릴리스 구성은 기호화 된 디버그 정보가 없는 완전히 최적화 되 고 있습니다. 디버그 정보가.pdb 파일을 생성할 수 있습니다 [컴파일러 옵션에 따라](#BKMK_symbols_release) 사용 되는 합니다. .Pdb 파일을 작성 하는 것은 나중에 릴리스 버전을 디버깅 해야 할 경우에 유용할 수 있습니다.
+프로그램의 릴리스 구성은 기호화 된 디버그 정보가 없는 완전히 최적화 되 고 있습니다. 사용하는 [컴파일러 옵션에 따라](#BKMK_symbols_release) 디버그 정보가 .pdb 파일에서 생성될 수 있습니다. .Pdb 파일을 작성 하는 것은 나중에 릴리스 버전을 디버깅 해야 할 경우에 유용할 수 있습니다.
 
 빌드 구성에 대한 자세한 내용은 [빌드 구성 이해](../ide/understanding-build-configurations.md)를 참조하세요.
 
-빌드 구성을 변경할 수 있습니다 합니다 **빌드** 메뉴, 도구 모음에서 또는 프로젝트의 속성 페이지. 프로젝트 속성 페이지는 언어마다 다릅니다. 다음 절차는 메뉴 및 도구 모음에서 빌드 구성을 변경하는 방법을 보여 줍니다. 다른 언어의 프로젝트에서 빌드 구성을 변경 하는 방법에 대 한 자세한 내용은 참조는 [참고](#see-also) 섹션 아래.
+도구 모음의 **빌드** 메뉴나 프로젝트의 속성 페이지에서 빌드 구성을 변경할 수 있습니다. 프로젝트 속성 페이지는 언어마다 다릅니다. 다음 절차는 메뉴 및 도구 모음에서 빌드 구성을 변경하는 방법을 보여 줍니다. 다른 언어의 프로젝트에서 빌드 구성을 변경 하는 방법에 대 한 자세한 내용은 참조는 [참고](#see-also) 섹션 아래.
 
 ## <a name="change-the-build-configuration"></a>빌드 구성을 변경합니다
 
@@ -60,7 +58,7 @@ Visual Studio 프로젝트에는 사용하는 프로그램에 대한 별도의 �
 
 또는
 
-* 도구 모음에서 선택 하거나 **디버그** 또는 **릴리스** 에서 합니다 **솔루션 구성** 목록입니다.
+* 도구 모음의 **솔루션 구성** 목록 상자에서 **디버그** 또는 **릴리스**를 선택합니다.
 
   ![도구 모음 빌드 구성](../debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")
 
@@ -69,13 +67,13 @@ Visual Studio 프로젝트에는 사용하는 프로그램에 대한 별도의 �
 및 기호 (.pdb) 파일을 생성 하도록 선택할 수 있습니다 디버그 정보를 포함 합니다. 대부분의 프로젝트 형식에 대 한 컴파일러 기본적으로 디버그 기호 파일을 생성 하 고 프로젝트 형식 및 Visual Studio 버전 별로 다른 기본 설정을 다 있지만 릴리스 빌드.
 
 > [!IMPORTANT]
-> 디버거는 실행 파일을 빌드할 때 만든 .pdb 파일과 정확히 일치하는 실행 파일의 .pdb 파일만 로드합니다. 즉, .pdb는 원본이거나 원본 .pdb 파일의 복사본이어야 합니다. 자세한 내용은 참조 하세요. [필요한 이유는 Visual Studio 디버거에서 기호 파일을 정확히 일치 이진 파일을 사용 하 여 빌드된?](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)
+> 디버거는 실행 파일을 빌드할 때 만든 .pdb 파일과 정확히 일치하는 실행 파일의 .pdb 파일만 로드합니다. 즉, .pdb는 원본이거나 원본 .pdb 파일의 복사본이어야 합니다. 자세한 내용은 [Why does Visual Studio require debugger symbol files to exactly match the binary files that they were built with?](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)를 참조하세요.
 
 각 프로젝트 형식에는 이러한 옵션을 설정 하는 다른 방식으로 있을 수 있습니다.
 
-### <a name="generate-symbol-files-for-a-c-aspnet-or-visual-basic-project"></a>C#, ASP.NET 또는 Visual Basic 프로젝트에 대 한 기호 파일을 생성 합니다.
+### <a name="generate-symbol-files-for-a-c-aspnet-or-visual-basic-project"></a>기호 파일을 생성 한 C#, ASP.NET 또는 Visual Basic 프로젝트
 
-C# 또는 Visual Basic 디버그 구성에 대 한 프로젝트 설정에 대 한 자세한 내용은 참조 하세요. [C#에 대 한 프로젝트 설정을 디버그 구성과](../debugger/project-settings-for-csharp-debug-configurations.md) 또는 [디버그 구성Visualbasic프로젝트설정](../debugger/project-settings-for-a-visual-basic-debug-configuration.md).
+디버그 구성에 대 한 프로젝트 설정에 대 한 자세한 내용은 C# 또는 Visual Basic을 참조 하세요 [프로젝트 설정에 대 한는 C# 디버그 구성을](../debugger/project-settings-for-csharp-debug-configurations.md) 또는 [프로젝트를 Visual Basic 디버그에 대 한 설정 구성](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)합니다.
 
 1. 솔루션 탐색기에서 프로젝트를 선택합니다.
 
@@ -91,7 +89,7 @@ C# 또는 Visual Basic 디버그 구성에 대 한 프로젝트 설정에 대 �
 
    이식 가능한 형식에는.NET Core에 대 한 최신 크로스 플랫폼 형식이입니다. 옵션에 대 한 자세한 내용은 참조 하세요. [고급 빌드 설정 대화 상자 (C#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md)합니다.
 
-   ![C#에서 빌드에 대 한 Pdb를 생성](../debugger/media/dbg_project_properties_pdb_csharp.png "GeneratePDBsForCSharp")
+   ![빌드에 대 한 Pdb를 생성 C# ](../debugger/media/dbg_project_properties_pdb_csharp.png "GeneratePDBsForCSharp")
 
 7. 프로젝트를 빌드합니다.
 
@@ -124,6 +122,6 @@ C# 또는 Visual Basic 디버그 구성에 대 한 프로젝트 설정에 대 �
 [Visual Studio 디버거에서 기호 (.pdb) 파일 및 소스 파일 지정](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)<br/>
 [디버거 설정 및 준비](../debugger/debugger-settings-and-preparation.md)<br/>
 [C++ 디버그 구성에 대한 프로젝트 설정](../debugger/project-settings-for-a-cpp-debug-configuration.md)<br/>
-[C# 디버그 구성에 대 한 프로젝트 설정](../debugger/project-settings-for-csharp-debug-configurations.md)<br/>
+[C# 디버그 구성을 위한 프로젝트 설정](../debugger/project-settings-for-csharp-debug-configurations.md)<br/>
 [Visual Basic 디버그 구성에 대한 프로젝트 설정](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)<br/>
 [방법: 구성 만들기 및 편집](../ide/how-to-create-and-edit-configurations.md)

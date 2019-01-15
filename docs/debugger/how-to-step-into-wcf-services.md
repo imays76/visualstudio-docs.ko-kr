@@ -1,8 +1,6 @@
 ---
 title: '방법: WCF 서비스 한 단계씩 실행 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cad65b893867a18133bbf9492a1c1786b24a81ed
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: f361369aef97aaa894a1a1929149356d3177cc3f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912166"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890737"
 ---
-# <a name="how-to-step-into-wcf-services"></a>방법: WCF 서비스 한 단계씩 실행
+# <a name="how-to-step-into-wcf-services"></a>방법: WCF 서비스 한 단계씩 코드 실행
 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]에서는 WCF 서비스를 한 단계씩 실행할 수 있습니다. WCF 서비스가 클라이언트와 같은 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 솔루션인 경우에는 WCF 서비스 내의 중단점을 적중할 수 있습니다.  
   
  단계별 코드 실행이 제대로 작동하도록 하려면 app.config 또는 Web.config 파일에서 디버깅을 사용하도록 설정해야 합니다. 디버깅을 사용 하 고 WCF 서비스를 한 단계씩 실행할 때의 제한 사항, 참조 하는 방법에 대 한 자세한 [WCF 디버깅의 제한 사항](../debugger/limitations-on-wcf-debugging.md)합니다.  
@@ -34,7 +32,7 @@ ms.locfileid: "49912166"
   
 1. WCF 클라이언트와 WCF 서비스 프로젝트가 모두 포함된 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 솔루션을 만듭니다.  
   
-2. 솔루션 탐색기에서 WCF 클라이언트 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 클릭 **시작 프로젝트로 설정**합니다.  
+2. 솔루션 탐색기에서 WCF 클라이언트 프로젝트를 마우스 오른쪽 단추로 클릭한 다음, **시작 프로젝트로 설정**을 클릭합니다.  
   
 3. app.config 또는 web.config 파일에서 디버깅을 사용하도록 설정합니다. 자세한 내용은 [WCF 디버깅의 제한 사항](../debugger/limitations-on-wcf-debugging.md)합니다.  
   

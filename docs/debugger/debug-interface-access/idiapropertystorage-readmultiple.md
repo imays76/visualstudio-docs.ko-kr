@@ -1,8 +1,6 @@
 ---
 title: IDiaPropertyStorage::ReadMultiple | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b8be22e2a855f19c412725833fa18e182ebff6d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: b3d51e398da337a12f38a099045bd82222ca3105
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904055"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948026"
 ---
 # <a name="idiapropertystoragereadmultiple"></a>IDiaPropertyStorage::ReadMultiple
 지정한 현재 속성 집합에서 속성을 읽습니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49904055"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT ReadMultiple(   
+HRESULT ReadMultiple(   
    ULONG          cpspec,  
    PROPSPEC const rgpspec,  
    PROPVARIANT    rgvar  
@@ -45,9 +43,9 @@ HRESULT ReadMultiple(
  [out에서] 배열을 `PROPVARIANT` 구조 (Microsoft.VisualStudio.OLE.Interop 네임 스페이스) 각 속성에 대 한 값을 채울 수 있습니다. 배열 이상 이어야 합니다 `cpspec` 요소의 크기입니다. 호출자가 배열의 값을 초기화할 필요가 없습니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`합니다. 반환 `S_FALSE` 속성 중 하나 이상이 없는 경우. 그렇지 않으면 오류 코드를 반환합니다.  
+ 성공하면 `S_OK`를 반환합니다. 반환 `S_FALSE` 속성 중 하나 이상이 없는 경우. 그러지 않으면 오류 코드가 반환됩니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  경우 속성을 찾을 수 없습니다, 해당 항목에는 `rgvar` 배열에는 `VARIANT` 유형의 `VT_EMPTY`합니다.  
   
 ## <a name="see-also"></a>참고 항목  

@@ -1,8 +1,6 @@
 ---
 title: IDiaSegment | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,20 +12,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1547f91730d00babad6a0727686ff67357f910b3
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 4f4cc24d64d3d1b1f8ab3e4182c21d451763b15e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465566"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847193"
 ---
 # <a name="idiasegment"></a>IDiaSegment
-지도 데이터는 섹션 번호 주소 공간의 세그먼트입니다.  
+섹션 수에서 데이터를의 주소 공간 세그먼트를 매핑합니다.  
   
 ## <a name="syntax"></a>구문  
   
 ```  
-IDiaSegment : IUnknown  
+IDiaSegment : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드  
@@ -35,24 +33,24 @@ IDiaSegment : IUnknown
   
 |메서드|설명|  
 |------------|-----------------|  
-|[IDiaSegment::get_frame](../../debugger/debug-interface-access/idiasegment-get-frame.md)|세그먼트 수를 검색 합니다.|  
-|[IDiaSegment::get_offset](../../debugger/debug-interface-access/idiasegment-get-offset.md)|섹션을 시작 하는 세그먼트의 오프셋을 검색 합니다.|  
+|[IDiaSegment::get_frame](../../debugger/debug-interface-access/idiasegment-get-frame.md)|세그먼트 수를 검색합니다.|  
+|[IDiaSegment::get_offset](../../debugger/debug-interface-access/idiasegment-get-offset.md)|섹션 시작 되는 세그먼트의 오프셋을 검색 합니다.|  
 |[IDiaSegment::get_length](../../debugger/debug-interface-access/idiasegment-get-length.md)|세그먼트의 바이트 수를 검색합니다.|  
 |[IDiaSegment::get_read](../../debugger/debug-interface-access/idiasegment-get-read.md)|세그먼트를 읽을 수 있는지 여부를 나타내는 플래그를 검색 합니다.|  
 |[IDiaSegment::get_write](../../debugger/debug-interface-access/idiasegment-get-write.md)|세그먼트를 수정할 수 있는지 여부를 나타내는 플래그를 검색 합니다.|  
-|[IDiaSegment::get_execute](../../debugger/debug-interface-access/idiasegment-get-execute.md)|세그먼트 실행 파일 인지 여부를 나타내는 플래그를 검색 합니다.|  
+|[IDiaSegment::get_execute](../../debugger/debug-interface-access/idiasegment-get-execute.md)|세그먼트는 실행 파일 인지 여부를 나타내는 플래그를 검색 합니다.|  
 |[IDiaSegment::get_addressSection](../../debugger/debug-interface-access/idiasegment-get-addresssection.md)|이 세그먼트에 매핑되는 섹션 번호를 검색 합니다.|  
-|[IDiaSegment::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasegment-get-relativevirtualaddress.md)|섹션의 시작 상대 가상 주소 (RVA)를 검색 합니다.|  
-|[IDiaSegment::get_virtualAddress](../../debugger/debug-interface-access/idiasegment-get-virtualaddress.md)|섹션의 시작 가상 주소 (VA)를 검색 합니다.|  
+|[IDiaSegment::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasegment-get-relativevirtualaddress.md)|섹션의 시작 상대 가상 주소 RVA ()를 검색합니다.|  
+|[IDiaSegment::get_virtualAddress](../../debugger/debug-interface-access/idiasegment-get-virtualaddress.md)|가상 주소 (VA) 섹션의 시작 부분을 검색합니다.|  
   
-## <a name="remarks"></a>설명  
- 대부분의 응용 프로그램은 만들지 DIA SDK 번역 섹션 오프셋에서 상대 가상 주소를 이미 수행, 하기 때문에 세그먼트 맵에서 정보를 사용 합니다.  
+## <a name="remarks"></a>주의  
+ 대부분의 응용 프로그램은 만들지 DIA SDK 번역 섹션 오프셋의 상대 가상 주소를 이미 수행을 하기 때문에 세그먼트 구조의 정보를 사용 합니다.  
   
-## <a name="notes-for-callers"></a>호출자에 대 한 참고 사항  
- 이 인터페이스를 호출 하 여 가져올는 [idiaenumsegments:: Item](../../debugger/debug-interface-access/idiaenumsegments-item.md) 또는 [idiaenumsegments:: Next](../../debugger/debug-interface-access/idiaenumsegments-next.md) 메서드. 자세한 내용은 예제를 참조 하십시오.  
+## <a name="notes-for-callers"></a>호출자에 대 한 정보  
+ 호출 하 여이 인터페이스를 가져올는 [idiaenumsegments:: Item](../../debugger/debug-interface-access/idiaenumsegments-item.md) 하거나 [idiaenumsegments:: Next](../../debugger/debug-interface-access/idiaenumsegments-next.md) 메서드. 세부 정보에 대 한 예제를 참조 하세요.  
   
 ## <a name="example"></a>예제  
- 이 함수는 테이블을 가장 가까운 기호 모든 세그먼트의 주소를 표시 합니다.  
+ 이 함수는 테이블에 가장 가까운 기호 모든 세그먼트의 주소를 표시합니다.  
   
 ```C++  
 void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)  
@@ -96,13 +94,13 @@ void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)
 ```  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: Dia2.h  
+ 헤더: dia2.h  
   
  라이브러리: diaguids.lib  
   
  DLL: msdia80.dll  
   
 ## <a name="see-also"></a>참고 항목  
- [인터페이스 (디버그 인터페이스 액세스 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [Idiaenumsegments:: Item](../../debugger/debug-interface-access/idiaenumsegments-item.md)   
+ [인터페이스(디버그 인터페이스 액세스 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [IDiaEnumSegments::Item](../../debugger/debug-interface-access/idiaenumsegments-item.md)   
  [IDiaEnumSegments::Next](../../debugger/debug-interface-access/idiaenumsegments-next.md)

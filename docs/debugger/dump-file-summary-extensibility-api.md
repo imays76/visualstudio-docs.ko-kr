@@ -1,8 +1,6 @@
 ---
 title: 덤프 파일 요약 확장성 API | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,18 +13,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c4bd5b5102219af530d7159b5481447b9c4e7ea
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: ade8a24e8371fe78286b794ad0437b9f50ae30cc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471023"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938921"
 ---
 # <a name="dump-file-summary-extensibility-api"></a>덤프 파일 요약 확장성 API
-이 단원의 확장성 Api 사용을 확장할 수 있습니다는 합니다. Exe 프로젝트 시스템 및 **덤프 요약** 사용자 고유의 사용자 지정 디버그 엔진에 사용 하기 위해 페이지입니다.  
+이 단원의 확장성 API를 사용하면 .Exe 프로젝트 시스템 및 **덤프 요약** 페이지를 사용자 지정 디버그 엔진에 사용할 수 있도록 확장할 수 있습니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
- 확장 하기 위한 Api는 **덤프 요약** 페이지 및 합니다. Exe 프로젝트 시스템 네임 스페이스에서 사용할 수 있습니다.  
+ **덤프 요약** 페이지와 .Exe 프로젝트 시스템을 확장하기 위한 API는 다음 네임스페이스에서 사용할 수 있습니다.  
   
  <xref:Microsoft.VisualStudio.Debugger.VsDebugPresentationExtension>  
   

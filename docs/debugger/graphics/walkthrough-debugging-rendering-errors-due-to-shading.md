@@ -1,8 +1,6 @@
 ---
-title: '연습: 음영으로 인 한 오류를 렌더링 디버깅 | Microsoft Docs'
-ms.custom: ''
+title: '연습: 렌더링 음영으로 인 한 오류 디버깅 | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 01875b05-cc7b-4add-afba-f2b776f86974
 author: mikejo5000
@@ -10,14 +8,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 202f2fb0cdbfec6e52a2938365105f3d15327445
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c90143ae45fba3299cf3eccbcd412d768fcc3738
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920542"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828409"
 ---
-# <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>연습: 음영으로 인한 렌더링 오류 디버깅
+# <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>연습: 음영으로 인한 렌더링 오류 디버그
 이 연습에 사용 하는 방법을 보여 줍니다. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 그래픽 진단 개체는 색상이 잘못 지정 셰이더 버그로 인해를 조사 합니다.  
   
  이 연습에서는 다음 방법을 설명합니다.  
@@ -52,7 +50,7 @@ ms.locfileid: "49920542"
   
 1. **그래픽 픽셀 기록** 창을 엽니다. **그래픽 진단** 도구 모음에서 **픽셀 기록**을 선택합니다.  
   
-2. 픽셀을 선택하여 검사합니다. 그래픽 로그 문서 창에서 색상이 잘못 된 개체의 픽셀 중 하나를 선택 합니다.  
+2. 픽셀을 선택하여 검사합니다. 그래픽 로그 문서 창에서 색이 잘못 지정된 개체의 픽셀 중 하나를 선택합니다.  
   
     ![픽셀을 선택 하면 해당 기록 하는 방법에 대 한 정보가 표시 됩니다. ](media/gfx_diag_demo_render_error_shader_step_2.png "gfx_diag_demo_render_error_shader_step_2")  
   
@@ -62,7 +60,7 @@ ms.locfileid: "49920542"
   
     픽셀 셰이더의 결과 완전히 불투명 한 검은색 (0, 0, 0, 1)는는 **출력 병합기** 사용 하 여이 픽셀 셰이더를 결합 합니다 **이전** 방식으로 픽셀의 색은는  **결과** 가 완전히 불투명 한 검은색이 합니다.  
   
-   색상이 잘못 된 픽셀을 검사 하는 픽셀 셰이더 출력이 예상된 된 색 아닙니다. 검색 한 후에 픽셀 셰이더를 검사 하 여 개체의 색 변경 내용을 HLSL 디버거를 사용할 수 있습니다. 실행하는 동안 HLSL 디버거를 사용하여 HLSL 변수의 상태를 검사하고, HLSL 코드를 단계별로 진행하고, 문제 진단을 위한 중단점을 설정할 수 있습니다.  
+   색상이 잘못 지정된 픽셀을 검사하고 픽셀 셰이더 출력이 예상된 색이 아닌지 검색한 후에는 HLSL 디버거를 사용하여 픽셀 셰이더를 검사하고 개체 색상에 나타난 결과를 확인할 수 있습니다. 실행하는 동안 HLSL 디버거를 사용하여 HLSL 변수의 상태를 검사하고, HLSL 코드를 단계별로 진행하고, 문제 진단을 위한 중단점을 설정할 수 있습니다.  
   
 #### <a name="to-examine-the-pixel-shader"></a>픽셀 셰이더를 검사하려면  
   
@@ -84,7 +82,7 @@ ms.locfileid: "49920542"
   
 2. 꼭지점 셰이더의 출력 구조를 찾습니다. 이것이 픽셀 셰이더의 입력에 해당합니다. 이 시나리오에서 이 구조의 이름은 `output`입니다. 꼭짓점 셰이더 코드를 검사하고 사용자의 디버깅 활동으로 인해 `color` 구조의 `output` 멤버가 완전히 불투명한 검정색으로 명시적으로 설정되어 있는지 확인합니다.  
   
-3. 색상 멤버가 입력 구조에서 복사되지 않았음을 확인합니다. 때문에 값 `output.color` 직전 완전히 불투명 한 검정색으로 설정 될 합니다 `output` 구조 반환 되 고, 확인 하는 것이 좋습니다 값 `output` 이전 줄에서 올바르게 초기화 되지 않았습니다. `output.color` 의 값을 살펴보는 동안 `output.color`를 검정색으로 설정하는 줄에 도달할 때까지 꼭짓점 셰이더를 단계별로 수행합니다. `output.color` 값이 검정색으로 설정될 때까지 초기화되지 않음을 확인합니다. 이렇게 하면 `output.color` 를 검정색으로 설정하는 코드 줄을 삭제하기 보다는 수정해야 함을 확인할 수 있습니다.  
+3. 색상 멤버가 입력 구조에서 복사되지 않았음을 확인합니다. `output.color` 값이 `output` 구조가 반환되기 직전에 완전히 불투명한 검정색으로 설정되어 있으므로 `output`의 값이 이전 줄에서 올바르게 초기화되지 않았음을 확인하는 것이 좋습니다. `output.color` 의 값을 살펴보는 동안 `output.color`를 검정색으로 설정하는 줄에 도달할 때까지 꼭짓점 셰이더를 단계별로 수행합니다. `output.color` 값이 검정색으로 설정될 때까지 초기화되지 않음을 확인합니다. 이렇게 하면 `output.color` 를 검정색으로 설정하는 코드 줄을 삭제하기 보다는 수정해야 함을 확인할 수 있습니다.  
   
     !["Output.color"의 값은 검정입니다. ](media/gfx_diag_demo_render_error_shader_step_7.png "gfx_diag_demo_render_error_shader_step_7")  
   

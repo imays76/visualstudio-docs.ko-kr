@@ -1,8 +1,6 @@
 ---
 title: Dia2dump 샘플 | Microsoft Docs
-ms.custom: ''
 ms.date: 07/24/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e2e44abdce737df335133d5e54b6b022c97f639a
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
-ms.translationtype: MT
+ms.openlocfilehash: 93c103387ff2acd7b041fc103bc519e9ac166593
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252283"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859648"
 ---
 # <a name="dia2dump-sample"></a>Dia2dump 샘플
 
@@ -34,7 +32,7 @@ Dia2dump 샘플 Visual Studio와 함께 설치 되 고 솔루션 및 원본 파�
 
 설치 \DIA SDK\Samples\DIA2Dump 라는 하위 디렉터리에서 Visual Studio 설치 디렉터리에는 샘플입니다.
 
-## <a name="build-the-sample"></a>예제를 빌드
+## <a name="build-the-sample"></a>샘플 빌드
 
 기본적으로 설치 디렉터리는 보호 된 디렉터리를 사용 합니다. 즉, 빌드하고이 위치에서 샘플 솔루션을 편집 하려면 개발자 명령 프롬프트 또는 Visual Studio의 인스턴스를 사용 해야 합니다. 빌드를 간소화 하려면 먼저 문서 폴더에 있는 폴더와 같이 다른 디렉터리에 샘플 디렉터리에서 파일을 복사 하 고 샘플 빌드는 것이 좋습니다.
 
@@ -50,7 +48,7 @@ Dia2dump 샘플 Visual Studio와 함께 설치 되 고 솔루션 및 원본 파�
 
 1. 에 **Additional Include Directories** 속성을 dropdown 컨트롤을 선택 하 고 선택 **편집**합니다.
 
-1. 에 **Additional Include Directories** 대화 상자에서 편집 필드에 입력을 `$(VSInstallDir)DIA SDK\include` 디렉터리입니다. 컴파일러 dia2.h 파일을 찾을 수 있도록 보장 하기 위해이 디렉터리를 추가 합니다. 선택할 **확인** 변경 내용을 저장 합니다.
+1. 에 **Additional Include Directories** 대화 상자에서 편집 필드에 입력을 `$(VSInstallDir)DIA SDK\include` 디렉터리입니다. 컴파일러 dia2.h 파일을 찾을 수 있도록 보장 하기 위해이 디렉터리를 추가 합니다. **확인**을 선택하여 변경 내용을 저장합니다.
 
 1. 선택할 **확인** 프로젝트 속성에 변경 내용을 저장 합니다.
 
@@ -76,6 +74,6 @@ Dia2Dump.exe는 msdia 의존*버전*.dll COM 서버를 해당 서비스를 제�
 
 1. Dia2Dump에 선택한 정보만 표시 하기 위해 다른 옵션이 있습니다. 사용 된 `dia2dump -?` 모든 사용 가능한 옵션을 나열 하는 명령입니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio 프로젝트 포팅, 마이그레이션, 업그레이드](../../porting/port-migrate-and-upgrade-visual-studio-projects.md)  

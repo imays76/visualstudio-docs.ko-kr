@@ -15,15 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c4e5ca1e9903089cbcc9daf99e8c8d49d170b1c8
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 2a9cde551796d43cf94c20a9e54768ea9df3ddb5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388821"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924802"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>데이터베이스에 데이터 저장(여러 테이블)
 
@@ -39,7 +38,7 @@ TableAdapter의 `Update` 메서드를 호출하여 응용 프로그램의 데이
 
 -   에 있는 항목의 컨트롤을 설정 합니다 [데이터 소스 창](add-new-data-sources.md#data-sources-window)합니다. 자세한 내용은 [데이터 소스 창에서 끌어올 때 만들 컨트롤 설정](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)합니다.
 
--   데이터 소스** 창에서 폼으로 항목을 끌어 데이터 바인딩된 컨트롤을 만듭니다.
+-   **데이터 원본** 창에서 폼으로 항목을 끌어 데이터 바인딩된 컨트롤을 만듭니다.
 
 -   데이터 집합의 각 테이블에서 몇 가지 레코드를 수정 합니다.
 
@@ -75,17 +74,17 @@ TableAdapter의 `Update` 메서드를 호출하여 응용 프로그램의 데이
 
 4. 프로젝트 이름을 **UpdateMultipleTablesWalkthrough**를 선택한 후 **확인**합니다.
 
-     UpdateMultipleTablesWalkthrough **프로젝트가 만들어져 솔루션 탐색기**에 추가됩니다.
+     **UpdateMultipleTablesWalkthrough** 프로젝트가 만들어져 **솔루션 탐색기**에 추가됩니다.
 
 ## <a name="create-the-data-source"></a>데이터 원본 만들기
 
-이 단계에서는 데이터 소스 구성 마법사**를 사용하여 Northwind 데이터베이스에서 데이터 소스를 만듭니다. 연결을 만들려면 Northwind 샘플 데이터베이스에 액세스해야 합니다. Northwind 샘플 데이터베이스 설정에 대 한 자세한 내용은 [방법: 샘플 데이터베이스 설치](../data-tools/installing-database-systems-tools-and-samples.md)합니다.
+이 단계에서는 **데이터 원본 구성 마법사**를 사용하여 Northwind 데이터베이스에서 데이터 원본을 만듭니다. 연결을 만들려면 Northwind 샘플 데이터베이스에 액세스해야 합니다. Northwind 샘플 데이터베이스 설정에 대 한 자세한 내용은 [방법: 예제 데이터베이스 설치](../data-tools/installing-database-systems-tools-and-samples.md)합니다.
 
 1. 에 **데이터** 메뉴에서 **데이터 소스 표시**합니다.
 
-   데이터 소스** 창이 열립니다.
+   **데이터 원본** 창이 열립니다.
 
-2. 데이터 소스 **창에서 새 데이터 소스 추가**를 선택하여 데이터 소스 구성 마법사**를 시작합니다.
+2. **데이터 원본** 창에서 **새 데이터 원본 추가**를 선택하여 **데이터 원본 구성 마법사**를 시작합니다.
 
 3. 에 **데이터 소스 형식 선택** 화면에서 **데이터베이스**를 선택한 후 **다음**합니다.
 
@@ -95,7 +94,7 @@ TableAdapter의 `Update` 메서드를 호출하여 응용 프로그램의 데이
 
          또는
 
-    -   새 연결**을 선택하여 연결 추가/수정** 대화 상자를 엽니다.
+    -   **새 연결**을 선택하여 **연결 추가 또는 수정** 대화 상자를 엽니다.
 
 5. 데이터베이스에서 암호를 요구 하는 경우 중요 한 데이터를 포함 하 여 선택한 옵션을 선택 **다음**합니다.
 
@@ -105,7 +104,7 @@ TableAdapter의 `Update` 메서드를 호출하여 응용 프로그램의 데이
 
 8. 선택 합니다 **고객** 하 고 **주문** 테이블을 선택한 후 **마침**.
 
-     NorthwindDataSet**가 프로젝트에 추가되고 테이블이 데이터 소스** 창에 나타납니다.
+     **NorthwindDataSet**가 프로젝트에 추가되고 테이블이 **데이터 원본** 창에 나타납니다.
 
 ## <a name="set-the-controls-to-be-created"></a>만들 컨트롤 설정
 
@@ -119,22 +118,22 @@ TableAdapter의 `Update` 메서드를 호출하여 응용 프로그램의 데이
 
 ## <a name="create-the-data-bound-form"></a>데이터 바인딩된 폼을 만들려면
 
-데이터 소스** 창에서 폼으로 항목을 끌어 데이터 바인딩된 컨트롤을 만들 수 있습니다.
+**데이터 원본** 창에서 폼으로 항목을 끌어 데이터 바인딩된 컨트롤을 만들 수 있습니다.
 
-1. 주 Customers **노드를 데이터 소스** 창에서 Form1으로 끌어서 놓습니다.
+1. 주 **Customers** 노드를 **데이터 원본** 창에서 **Form1**으로 끌어서 놓습니다.
 
      설명 레이블이 있는 데이터 바인딩된 컨트롤이 레코드 탐색을 위한 도구 모음인 <xref:System.Windows.Forms.BindingNavigator>와 함께 폼에 나타납니다. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md)를 `CustomersTableAdapter`를 <xref:System.Windows.Forms.BindingSource>, 및 <xref:System.Windows.Forms.BindingNavigator> 구성 요소 트레이에 나타납니다.
 
-2. 관련 Orders **노드를 데이터 소스** 창에서 Form1**로 끌어 옵니다.
+2. 관련 **Orders** 노드를 **데이터 원본** 창에서 **Form1**으로 끌어 옵니다.
 
     > [!NOTE]
-    > Fax **열 아래에 있는 관련 Orders** 노드는 Customers** 노드의 자식 노드입니다.
+    > **Fax** 열 아래에 있는 관련 **Orders** 노드는 **Customers** 노드의 자식 노드입니다.
 
      <xref:System.Windows.Forms.DataGridView> 컨트롤과 레코드 탐색에 사용되는 도구 모음인 <xref:System.Windows.Forms.BindingNavigator>가 폼에 나타납니다. `OrdersTableAdapter` 고 <xref:System.Windows.Forms.BindingSource> 구성 요소 트레이에 나타납니다.
 
 ## <a name="add-code-to-update-the-database"></a>데이터베이스를 업데이트 하는 코드를 추가 합니다.
 
-Customers`Update` 및 Orders**TableAdapter의** 메서드를 호출하여 데이터베이스를 업데이트할 수 있습니다. 기본적으로 대 한 이벤트 처리기를 **저장** 단추를<xref:System.Windows.Forms.BindingNavigator> 데이터베이스로 업데이트를 보내는 폼의 코드에 추가 됩니다. 이 절차에서는 올바른 순서로 업데이트를 보내는 코드를 수정 합니다. 이 참조 무결성 오류 발생 가능성을 제거 합니다. 또한 이 코드는 try-catch 블록에서 업데이트 호출을 래핑하여 오류 처리를 구현합니다. 응용 프로그램의 요구 사항에 맞게 코드를 수정할 수 있습니다.
+**Customers** 및 **Orders** TableAdapters의 `Update` 메서드를 호출하여 데이터베이스를 업데이트할 수 있습니다. 기본적으로 대 한 이벤트 처리기를 **저장** 단추를<xref:System.Windows.Forms.BindingNavigator> 데이터베이스로 업데이트를 보내는 폼의 코드에 추가 됩니다. 이 절차에서는 올바른 순서로 업데이트를 보내는 코드를 수정 합니다. 이 참조 무결성 오류 발생 가능성을 제거 합니다. 또한 이 코드는 try-catch 블록에서 업데이트 호출을 래핑하여 오류 처리를 구현합니다. 응용 프로그램의 요구 사항에 맞게 코드를 수정할 수 있습니다.
 
 > [!NOTE]
 > 이해를 돕기 위해이 연습에는 트랜잭션을 사용 하지 않습니다. 그러나 두 업데이트 하는 경우 테이블 관련 트랜잭션 내에서 모든 업데이트 논리를 포함 합니다. 트랜잭션은 모든 변경 내용이 커밋되기 전에 모든 관련된 변경 내용이 데이터베이스에는 성공적으로 만드는 프로세스입니다. 자세한 내용은 [트랜잭션 및 동시성](/dotnet/framework/data/adonet/transactions-and-concurrency)합니다.
@@ -148,7 +147,7 @@ Customers`Update` 및 Orders**TableAdapter의** 메서드를 호출하여 데이
      [!code-vb[VbRaddataSaving#10](../data-tools/codesnippet/VisualBasic/save-data-to-a-database-multiple-tables_1.vb)]
      [!code-csharp[VbRaddataSaving#10](../data-tools/codesnippet/CSharp/save-data-to-a-database-multiple-tables_1.cs)]
 
-## <a name="test-the-application"></a>응용 프로그램 테스트
+## <a name="test-the-application"></a>애플리케이션 테스트
 
 1. **F5**키를 누릅니다.
 

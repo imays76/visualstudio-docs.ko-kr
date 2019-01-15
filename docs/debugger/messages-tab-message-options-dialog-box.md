@@ -1,8 +1,6 @@
 ---
 title: 메시지 옵션 대화 상자, 메시지 탭 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - message options, Messages
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 55906da398f7f52460523cb74a77945d84037ebc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 1f7675039f8e5f5fb5c1d5899b96682ab60a2bc0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866768"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830598"
 ---
 # <a name="messages-tab-message-options-dialog-box"></a>메시지 옵션 대화 상자, 메시지 탭
 사용 하 여는 **메시지** 목록에는 메시지 형식을 선택 하는 탭 [메시지 뷰](../debugger/messages-view.md), 및 메시지 검색 조건을 지정 하려면. 표시할 합니다 [메시지 옵션 대화 상자](../debugger/message-options-dialog-box.md), 선택 **로그 메시지** 에서 합니다 **Spy** 메뉴.  
@@ -26,7 +24,7 @@ ms.locfileid: "49866768"
   
  다음 설정을 사용할 합니다 **메시지** 탭:  
   
- **메시지 보기**  
+ **표시할 메시지**  
  보기에 대 한 특정 메시지를 선택 합니다. 새 메시지 창에서 만든 모든 메시지를 표시할 수 있습니다. 메시지를 필터링 하는 경우는 **메시지** 탭 해당 필터는 새 메시지를 Windows 보기에서 이미 표시 되어 있는 메시지가 없는에 적용 됩니다.  
   
  **메시지 그룹**  

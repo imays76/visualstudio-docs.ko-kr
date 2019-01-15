@@ -14,15 +14,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 812b464fe3e9742309a1ce6918d8d6b383101bf8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: HT
+ms.openlocfilehash: 38ed283a70716f0f282bdcdf60c18f0f38fc8bb2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864129"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822163"
 ---
 # <a name="create-relationships-between-datasets"></a>데이터 세트 간 관계 만들기
 관련된 데이터를 포함 하는 데이터 집합에 사용 하 여 테이블 <xref:System.Data.DataRelation> 서로 관련된 레코드를 반환 하 고 테이블 간의 부모/자식 관계를 나타내는 개체입니다. 관련된 테이블을 사용 하 여 데이터 집합에 추가 합니다 **데이터 소스 구성 마법사**, 또는 **데이터 집합 디자이너**생성 하 고 구성 합니다 <xref:System.Data.DataRelation> 개체입니다.
@@ -60,7 +59,7 @@ Unique 제약 조건을 구현 됩니다 설정 하 여 하나를 <xref:System.D
 |외래 키 제약 조건 규칙|작업|
 | - |------------|
 |<xref:System.Data.Rule.Cascade>|자식 테이블에서 관련된 레코드의 부모 레코드에 대 한 변경 (update 또는 delete)도 만들어집니다.|
-|<xref:System.Data.Rule.SetNull>|자식 레코드는 삭제 되지 않지만 자식 레코드의 외래 키로는 <xref:System.DBNull>합니다. 이 설정을 사용 하 여 자식 레코드도 유지할 수 있습니다 "고아"-즉, 부모 레코드 아무런 관계가 갖습니다. **참고:** 자식 테이블에 잘못 된 데이터가이 규칙을 사용 하 여 발생할 수 있습니다.|
+|<xref:System.Data.Rule.SetNull>|자식 레코드는 삭제 되지 않지만 자식 레코드의 외래 키로는 <xref:System.DBNull>합니다. 이 설정을 사용 하 여 자식 레코드도 유지할 수 있습니다 "고아"-즉, 부모 레코드 아무런 관계가 갖습니다. **참고:** 이 규칙을 사용 하 여 자식 테이블에 잘못 된 데이터가 될 수 있습니다.|
 |<xref:System.Data.Rule.SetDefault>|관련된 자식 레코드의 외래 키가 기본값으로 설정 (열에서 설정한 <xref:System.Data.DataColumn.DefaultValue%2A> 속성).|
 |<xref:System.Data.Rule.None>|관련 된 자식 레코드에 변경 되지 않습니다. 이 설정을 사용 하 여 자식 레코드는 잘못 된 부모 레코드에 대 한 참조를 포함할 수 있습니다.|
 
@@ -78,7 +77,7 @@ Visual Studio에서 데이터 디자인 도구를 사용 하 여 데이터 테�
 
 #### <a name="to-create-a-relationship-between-two-data-tables"></a>두 데이터 테이블 간의 관계를 만들려면
 
-1.  데이터 집합을 엽니다는 **데이터 집합 디자이너**합니다. 자세한 내용은 [연습: 데이터 집합 디자이너에서 데이터 집합 만들기](walkthrough-creating-a-dataset-with-the-dataset-designer.md)합니다.
+1.  **데이터 세트 디자이너**에서 데이터 세트를 엽니다. 자세한 내용은 [연습: 데이터 집합 디자이너에서 데이터 집합 만들기](walkthrough-creating-a-dataset-with-the-dataset-designer.md)합니다.
 
 2.  끌어서를 **관계** 에서 개체를 **데이터 집합** 관계의 자식 데이터 테이블 도구 상자입니다.
 
@@ -102,10 +101,10 @@ Visual Studio에서 데이터 디자인 도구를 사용 하 여 데이터 테�
 
 #### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>데이터 집합 디자이너에서 관계 이름을 표시 하려면
 
-1.  데이터 집합을 엽니다는 **데이터 집합 디자이너**합니다. 자세한 내용은 [연습: 데이터 집합 디자이너에서 데이터 집합 만들기](walkthrough-creating-a-dataset-with-the-dataset-designer.md)합니다.
+1.  **데이터 세트 디자이너**에서 데이터 세트를 엽니다. 자세한 내용은 [연습: 데이터 집합 디자이너에서 데이터 집합 만들기](walkthrough-creating-a-dataset-with-the-dataset-designer.md)합니다.
 
 2.  **데이터** 메뉴를 선택 합니다 **관계 레이블 표시** 관계 이름을 표시 하는 명령입니다. 관계 이름 숨기기에 해당 명령 선택을 취소 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-- [Visual Studio에서 데이터 집합 만들기 및 구성](../data-tools/create-and-configure-datasets-in-visual-studio.md)
+- [Visual Studio에서 데이터 세트 만들기 및 구성](../data-tools/create-and-configure-datasets-in-visual-studio.md)

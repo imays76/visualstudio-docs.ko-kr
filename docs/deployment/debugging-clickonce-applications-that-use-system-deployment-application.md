@@ -1,8 +1,6 @@
 ---
 title: System.Deployment.Application을 사용 하는 ClickOnce 응용 프로그램 디버그 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c877c3373f7d028291b521558a04fafd56e022c6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: d6addfb72ae1e67b846433c9762163138523df68
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836361"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872413"
 ---
-# <a name="debug-clickonce-applications-that-use-systemdeploymentapplication"></a>System.Deployment.Application을 사용 하는 ClickOnce 응용 프로그램 디버그
+# <a name="debug-clickonce-applications-that-use-systemdeploymentapplication"></a>System.Deployment.Application을 사용하는 ClickOnce 애플리케이션 디버그
 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 배포를 사용 하면 응용 프로그램 업데이트 되는 방식을 구성할 수 있습니다. 그러나 사용 및 사용자 지정 하는 경우 고급 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 제공한 배포 개체 모델에 액세스 해야 배포 기능을 <xref:System.Deployment.Application>입니다. 사용할 수는 <xref:System.Deployment.Application> 와 같은 고급 작업에 대 한 Api:  
   
 - 응용 프로그램에서 "지금 업데이트" 옵션 만들기  
@@ -78,5 +76,5 @@ ms.locfileid: "49836361"
   
    사용 하 여는 <xref:System.Deployment.Application.ApplicationDeployment.IsNetworkDeployed%2A> 를 호출 하는 속성을 <xref:System.Deployment.Application> Api는 응용 프로그램을 배포 하는 경우에; Api 호출 되지 않도록에서 디버깅 하는 동안 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  <xref:System.Deployment.Application>

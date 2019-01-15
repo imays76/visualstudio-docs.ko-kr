@@ -1,8 +1,6 @@
 ---
 title: CRT 라이브러리를 사용 하 여 메모리 누수를 찾을 | Microsoft Docs
-ms.custom: ''
 ms.date: 10/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -31,14 +29,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b797e8c8068523b4c782c4d7f02a3853c1d37d1
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
-ms.translationtype: MT
+ms.openlocfilehash: e29ef610fdfe114525e7da22b58635e0f3e4a3af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050114"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931029"
 ---
-# <a name="find-memory-leaks-with-the-crt-library"></a>CRT 라이브러리를 사용 하 여 메모리 누수 찾기
+# <a name="find-memory-leaks-with-the-crt-library"></a>CRT 라이브러리로 메모리 누수 찾기
 
 메모리 누수는 C/c + + 앱에서 가장 미묘 하 고 검색 하드 버그입니다. 메모리 누수 올바르게 이전에 할당 된 메모리를 할당 해제 하는 데 실패의 결과입니다. 작은 메모리 누수를 처음에 발견 되지 않을 수 있지만 시간이 지남에 따라 앱 메모리 부족 시 충돌 까지의 성능이 떨어지는 증상 발생할 수 있습니다. 누수 앱을 모든 사용 가능한 메모리를 사용 하 여 다른 앱 충돌을 일으킬 수 있는 앱에 대 한 혼동을 만드는 책임이 있습니다. 사소한 메모리 누수를 해결 해야 하는 다른 문제를 나타낼 수 있습니다.  
 
@@ -183,7 +181,7 @@ Object dump complete.
 
 할당 번호를 사용하여 메모리 할당에 중단점을 설정할 수 있습니다.  
 
-**조사식 창을 사용 하 여 메모리 할당 중단점을 설정:**  
+**조사식 창을 사용하여 메모리 할당 중단점을 설정하려면**  
 
 1. 앱의 시작 부분에 중단점을 설정 하 고 디버깅을 시작 합니다.  
    
@@ -195,15 +193,15 @@ Object dump complete.
    
 1. **Enter** 키를 누릅니다.  
    
-   디버거에서 호출이 실행되고 결과가 **값** 열에 표시됩니다. 이 값은 **-1** 메모리 할당에 중단점을 설정 하지 않은 경우.  
+   디버거에서 호출이 실행되고 결과가 **값** 열에 표시됩니다. 메모리를 할당할 때 중단점을 설정하지 않은 경우에는 이 값이 **-1**입니다.  
    
 1. 에 **값** 열 값을 중단 하도록 디버거를 만들려는 메모리 할당의 할당 번호로 바꿉니다.  
 
 메모리 할당 번호에 중단점을 설정한 후 디버그를 계속 합니다. 메모리 할당 번호를 변경 하지 않도록 동일한 조건에서 실행 해야 합니다. 지정된 된 메모리 할당에서 프로그램이 중단을 사용 하 여는 **호출 스택** 창과 다른 디버거 메모리가 할당 된 조건을 확인 합니다. 그런 다음 개체에 어떻게 되는지 관찰 하는 실행을 계속할 수 있으며 되지 올바르게 할당 취소 이유를 확인할 수 있습니다.  
 
-개체에 데이터 중단점을 설정하는 것도 유용합니다. 자세한 내용은 [중단점을 사용 하 여](../debugger/using-breakpoints.md)입니다.  
+개체에 데이터 중단점을 설정하는 것도 유용합니다. 자세한 내용은 [중단점 사용](../debugger/using-breakpoints.md)을 참조하세요.  
 
-코드에서 메모리 할당 중단점을 설정할 수도 있습니다. 설정할 수 있습니다.  
+코드에서 메모리 할당 중단점을 설정할 수도 있습니다. 다음과 같이 설정할 수 있습니다.  
 
 ```cpp
 _crtBreakAlloc = 18;  
@@ -216,7 +214,7 @@ _CrtSetBreakAlloc(18);
 ```  
 
 ## <a name="compare-memory-states"></a>메모리 상태 비교  
- 주요 지점에서 응용 프로그램의 메모리 상태 스냅숏을 보고 메모리 누수를 찾을 수도 있습니다. 응용 프로그램에서 특정 지점의 메모리 상태 스냅숏을 만들려면를 `_CrtMemState` 구조체를 전달 하는 `_CrtMemCheckpoint` 함수입니다. 
+ 주요 지점에서 애플리케이션의 메모리 상태 스냅숏을 보고 메모리 누수를 찾을 수도 있습니다. 응용 프로그램에서 특정 지점의 메모리 상태 스냅숏을 만들려면를 `_CrtMemState` 구조체를 전달 하는 `_CrtMemCheckpoint` 함수입니다. 
 
 ```cpp
 _CrtMemState s1;  
@@ -261,7 +259,7 @@ if ( _CrtMemDifference( &s3, &s1, &s2) )
 ## <a name="false-positives"></a>가양성(false positive)  
  `_CrtDumpMemoryLeaks` 라이브러리 CRT 블록 또는 클라이언트 블록 대신 일반 블록으로 내부 할당을 표시 하는 경우 메모리 누수를 잘못 표시를 제공할 수 있습니다. 이 경우 `_CrtDumpMemoryLeaks` 가 사용자 할당과 내부 라이브러리 할당을 구별할 수 없게 됩니다. `_CrtDumpMemoryLeaks`를 호출한 이후에 라이브러리 할당을 위한 전역 소멸자가 실행되면 모든 내부 라이브러리 할당이 메모리 누수로 보고됩니다. 다양 한 표준 템플릿 라이브러리를 Visual Studio.NET 않을 이전의 `_CrtDumpMemoryLeaks` 이러한 가양성을 보고 합니다.  
 
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [CRT 디버그 힙 정보](../debugger/crt-debug-heap-details.md)   
  [디버거 보안](../debugger/debugger-security.md)   
- [네이티브 코드 디버깅](../debugger/debugging-native-code.md)
+ [네이티브 코드 디버그](../debugger/debugging-native-code.md)

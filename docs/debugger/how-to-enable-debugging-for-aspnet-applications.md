@@ -2,7 +2,6 @@
 title: ASP.NET 앱에 대 한 디버깅을 사용 하도록 설정 | Microsoft Docs
 ms.custom: H1HackMay2017
 ms.date: 09/21/18
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 41da2eb360bac4c50f85bd908f980f5ee3c1d141
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c8723a97f5751b790c946055693064c3b7d12237
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813429"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881103"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Visual Studio에서 ASP.NET 또는 ASP.NET Core 앱 디버그
 
@@ -139,7 +138,7 @@ ASP.NET 프로젝트 *web.config* 기본적으로 정보가 포함 된 파일 �
    </configuration>  
    ```
 
-[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 자동으로 변경 내용을 감지한 *web.config* 파일 및 새 구성 설정을 적용 합니다. 컴퓨터나 변경 내용을 적용 하려면 IIS 서버를 다시 시작할 필요가 없습니다.  
+[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]가 *web.config* 파일의 변경 내용을 자동으로 검색하고 새 구성 설정을 적용합니다. 컴퓨터나 변경 내용을 적용 하려면 IIS 서버를 다시 시작할 필요가 없습니다.  
   
 웹 사이트를 사용 하 여 여러 가상 디렉터리 및 하위 디렉터리를 포함할 수 있습니다 *web.config* 각각에서 파일입니다. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 앱 구성 설정을 상속할 *web.config* 파일 URL 경로의 상위 수준에 있습니다. 계층적 *web.config* 파일 설정은 모든 적용 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 그 아래의 계층 구조에서 앱. 다른 구성에서 설정 된 *web.config* 계층 구조의 하위 파일은 더 높은 파일의 설정을 재정의 합니다.  
   
@@ -183,12 +182,11 @@ IIS에 앱을 게시 하는 방법은 여러 가지입니다. 이러한 단계�
 > [!IMPORTANT]
 > 디버그 모드에는 앱의 성능을 크게 줄여 줍니다. 최상의 성능을 위해 설정 `debug="false"` 에 *web.config* 프로덕션 앱을 배포 하거나 성능을 측정 하는 경우에 릴리스 빌드를 지정 합니다.  
 
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
 [ASP.NET 디버깅: 시스템 요구 사항](aspnet-debugging-system-requirements.md)   
 [방법: 사용자 계정으로 작업자 프로세스 실행](how-to-run-the-worker-process-under-a-user-account.md)   
 [방법: ASP.NET 프로세스의 이름 찾기](how-to-find-the-name-of-the-aspnet-process.md)   
-[배포 된 웹 응용 프로그램 디버그](debugging-deployed-web-applications.md)   
-[연습: web form 디버깅](walkthrough-debugging-a-web-form.md)   
+[배포된 웹 애플리케이션 디버그](debugging-deployed-web-applications.md)   
+[연습: Web Form 디버그](walkthrough-debugging-a-web-form.md)   
 [방법: ASP.NET 예외 디버그](how-to-debug-aspnet-exceptions.md)   
-[웹 응용 프로그램 디버그: 오류 및 문제 해결](debugging-web-applications-errors-and-troubleshooting.md)
-  
+[웹 애플리케이션 디버그: 오류 및 문제 해결](debugging-web-applications-errors-and-troubleshooting.md)

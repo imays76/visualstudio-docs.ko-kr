@@ -1,8 +1,6 @@
 ---
 title: 여러 프로세스 디버깅 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/20/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.programs
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b306bcca4ac8cc0568fc609ec25c8b335d18010
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
-ms.translationtype: MTE95
+ms.openlocfilehash: e5fbd6c503ef526b1b82736c22e36534bb09a8c7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305652"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968581"
 ---
 # <a name="debug-multiple-processes"></a>여러 프로세스 디버그
 
@@ -50,7 +48,7 @@ Visual Studio 솔루션에서 둘 이상의 프로젝트를 독립적으로 실�
    
 1. 선택 **현재 선택 영역**를 **단일 시작 프로젝트** 및 프로젝트 파일 또는 **여러 개의 시작 프로젝트**합니다. 
 
-   선택 하는 경우 **여러 개의 시작 프로젝트**, 각 프로젝트에 대해 수행할 시작 순서 및 동작을 변경할 수 있습니다: **시작**를 **디버깅 하지 않고 시작**, 또는 **None**합니다.  
+   선택 하는 경우 **여러 개의 시작 프로젝트**, 각 프로젝트에 대해 수행할 시작 순서 및 동작을 변경할 수 있습니다. **시작**하십시오 **디버깅 하지 않고 시작**, 또는 **없음**합니다.  
    
 1. 선택 **Apply**, 또는 **확인** 적용 하 고 대화 상자를 닫습니다. 
 
@@ -122,7 +120,7 @@ Visual Studio 솔루션에서 둘 이상의 프로젝트를 독립적으로 실�
 ###  <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a> 소스 및 기호(.pdb) 파일 찾기  
 프로세스의 소스 코드를 탐색 하려면 디버거에서 해당 소스 파일과 기호 파일에 대 한 액세스를 해야 합니다. 자세한 내용은 [기호 파일(.pdb) 및 원본 파일 지정](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)을 참조하세요.  
   
-프로세스에 대 한 파일에 액세스할 수 없는 경우 사용 하 여 탐색할 수 있습니다 합니다 **디스어셈블리** 창입니다. 자세한 내용은 [방법: 디스어셈블리 창을 사용 하 여](../debugger/how-to-use-the-disassembly-window.md)입니다.  
+프로세스에 대 한 파일에 액세스할 수 없는 경우 사용 하 여 탐색할 수 있습니다 합니다 **디스어셈블리** 창입니다. 자세한 내용은 [방법: 디스어셈블리 창 사용](../debugger/how-to-use-the-disassembly-window.md)을 참조하세요.  
 
 ###  <a name="BKMK_Switch_between_processes"></a> 프로세스 간 전환  
 
@@ -178,4 +176,4 @@ Visual Studio 솔루션의 프로세스 디버깅을 시작 하는 경우 다음
  [실행 중인 프로세스에 연결](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [디버거로 코드 탐색](../debugger/navigating-through-code-with-the-debugger.md)   
  [Just-In-Time 디버깅](../debugger/just-in-time-debugging-in-visual-studio.md)   
- [다중 스레드 응용 프로그램 디버그](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+ [다중 스레드 애플리케이션 디버그](../debugger/debug-multithreaded-applications-in-visual-studio.md)

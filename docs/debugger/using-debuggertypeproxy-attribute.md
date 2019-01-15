@@ -1,8 +1,6 @@
 ---
 title: DebuggerTypeProxy 특성 사용 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,16 +17,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab54c754fdc3b7ae773e71a96936a1c17c6bc5ce
-ms.sourcegitcommit: 9571742f4a808c75b1034aa72fc24b54bc50692e
-ms.translationtype: MT
+ms.openlocfilehash: b75f8ddff8aa210ef09423dc4ba12589c479f3f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49411068"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889166"
 ---
 # <a name="using-debuggertypeproxy-attribute"></a>DebuggerTypeProxy 특성 사용
 
-<xref:System.Diagnostics.DebuggerTypeProxyAttribute>는 형식에 대한 프록시 또는 대리 항목을 지정하고 형식이 디버거 창에 표시되는 방식을 변경합니다. 프록시에 원래 형식 대신 프록시가 있는 변수를 볼 때 합니다 **표시할**합니다. 디버거 변수 창에는 프록시 형식의 공용 멤버만 표시됩니다. 개인 멤버는 표시되지 않습니다.
+<xref:System.Diagnostics.DebuggerTypeProxyAttribute>는 형식에 대한 프록시 또는 대리 항목을 지정하고 형식이 디버거 창에 표시되는 방식을 변경합니다. 프록시가 있는 변수를 볼 때 원래 형식 대신 프록시가 **표시**에 나타납니다. 디버거 변수 창에는 프록시 형식의 공용 멤버만 표시됩니다. 개인 멤버는 표시되지 않습니다.
 
 이 특성은 다음 항목에 적용될 수 있습니다.
 
@@ -58,7 +56,7 @@ ms.locfileid: "49411068"
 
 `DebuggerTypeProxy`에서 제네릭 형식을 대상으로 사용하는 경우 이 구문을 사용해야 합니다. `DebuggerTypeProxy` 메커니즘은 형식 매개 변수를 자동으로 유추합니다.
 
-C#의 개방형 형식과 닫힌 형식에 대 한 자세한 내용은 참조는 [C# 언어 사양](/dotnet/csharp/language-reference/language-specification), 섹션 20.5.2 개방형 형식 및 닫힌 형식을 합니다.
+개방형 형식과 닫힌 형식에 대 한 자세한 내용은 C# 참조를 [ C# 언어 사양](/dotnet/csharp/language-reference/language-specification), 섹션 20.5.2 개방형 형식 및 닫힌 형식을 합니다.
 
 Visual Basic에는 개방형 형식 구문이 없으므로 Visual Basic의 경우 이와 같은 작업을 수행할 수 없습니다. 대신 개방형 형식 이름의 문자열 표현을 사용해야 합니다.
 

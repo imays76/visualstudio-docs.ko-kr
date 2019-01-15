@@ -1,8 +1,6 @@
 ---
 title: '방법: ActiveX 컨트롤 디버그 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vc.controls.debug
@@ -26,14 +24,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d53c2601bc8c4490f9ca43a7e213a90d66b26aac
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
-ms.translationtype: MTE95
+ms.openlocfilehash: 036e50fde887786736aee1e7f8565cc9708bb2e7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389295"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924789"
 ---
-# <a name="how-to-debug-an-activex-control"></a>방법: ActiveX 컨트롤 디버깅
+# <a name="how-to-debug-an-activex-control"></a>방법: ActiveX 컨트롤 디버그
 
 > [!NOTE]
 > 표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 도구 메뉴에서 설정 가져오기 및 내보내기를 선택합니다. 자세한 내용은 [재설정 설정](../ide/environment-settings.md#reset-settings)을 참조하세요.

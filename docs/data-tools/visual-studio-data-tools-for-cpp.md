@@ -8,16 +8,15 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 - cplusplus
-ms.openlocfilehash: 4c247d693da287581b8ab163880e9cecf4aeb17c
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: b13b7e8e23367fe83afb9e3ccf1a081f369867af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304927"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895484"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>C++용 Visual Studio 데이터 도구
 
@@ -25,11 +24,11 @@ ms.locfileid: "52304927"
 
 SQL database에 연결 하려면 ODBC 및 OLE DB 드라이버 및 Windows와 함께 제공 되는 ADO 공급자 네이티브 c + + 응용 프로그램 사용할 수 있습니다. 이러한 인터페이스를 지 원하는 모든 데이터베이스에 연결할 수 있습니다. ODBC 드라이버에는 표준입니다. OLE DB는 이전 버전과 호환성을 위해 제공 됩니다. 이러한 데이터 기술에 대 한 자세한 내용은 참조 하세요. [Windows Data Access Components](/previous-versions/windows/desktop/ms692897(v=vs.85))합니다.
 
-SQL Server 2005에 포함 된 사용자 지정 기능을 활용 하 여 나중에 사용 하 여 [SQL Server native client](/sql/relational-databases/native-client/sql-server-native-client)합니다. 네이티브 클라이언트는 SQL Server ODBC 드라이버와 단일 네이티브 동적 연결 라이브러리 (DLL)의 SQL Server OLE DB 공급자도 포함 됩니다. Microsoft SQL Server에 네이티브 코드 Api (ODBC, OLE DB 및 ADO)를 사용 하 여 응용 프로그램 지원 합니다. SQL Server Data Tools를 사용 하 여 SQL Server Native Client를 설치합니다. 프로그래밍 가이드는 여기: [SQL Server native client 프로그래밍](/sql/relational-databases/native-client/sql-server-native-client-programming)합니다.
+SQL Server 2005에 포함 된 사용자 지정 기능을 활용 하 여 나중에 사용 하 여 [SQL Server native client](/sql/relational-databases/native-client/sql-server-native-client)합니다. 네이티브 클라이언트는 SQL Server ODBC 드라이버와 단일 네이티브 동적 연결 라이브러리 (DLL)의 SQL Server OLE DB 공급자도 포함 됩니다. Microsoft SQL Server에 네이티브 코드 Api (ODBC, OLE DB 및 ADO)를 사용 하 여 응용 프로그램 지원 합니다. SQL Server Data Tools를 사용 하 여 SQL Server Native Client를 설치합니다. 프로그래밍 가이드는 여기서: [SQL Server native client 프로그래밍](/sql/relational-databases/native-client/sql-server-native-client-programming)합니다.
 
 ## <a name="to-connect-to-localdb-through-odbc-and-sql-native-client-from-a-c-application"></a>C + + 응용 프로그램에서 ODBC 및 SQL Native Client를 통해 localDB에 연결
 
-1. SQL Server 데이터 도구 설치
+1. SQL Server 데이터 도구를 설치합니다.
 
 2. 샘플 SQL database에 연결 하는 경우, Northwind 데이터베이스를 다운로드 하 고 새 위치에 압축을 풉니다.
 
@@ -66,7 +65,7 @@ SQL Server 2005에 포함 된 사용자 지정 기능을 활용 하 여 나중�
    DRIVER="SQL Server Native Client 11.0"
    ```
 
-8. **F5** 키를 눌러 응용 프로그램을 빌드하고 실행합니다. 데이터베이스를 입력 하 라는 메시지가 표시 되는 드라이버에서 대화 상자가 표시 됩니다. 입력 `(localdb)\MSSQLLocalDB`를 확인 하 고 **트러스트 된 연결 사용**합니다. [확인]을 누릅니다. 성공적으로 연결을 나타내는 메시지를 사용 하 여 콘솔에 표시 됩니다. 또한 나타납니다 명령 프롬프트에서 SQL 문을 입력할 수 있습니다. 다음 화면에는 예제 쿼리 및 결과 보여 줍니다.
+8. **F5** 키를 눌러 애플리케이션을 빌드하고 실행합니다. 데이터베이스를 입력 하 라는 메시지가 표시 되는 드라이버에서 대화 상자가 표시 됩니다. 입력 `(localdb)\MSSQLLocalDB`를 확인 하 고 **트러스트 된 연결 사용**합니다. **확인**을 누릅니다. 성공적으로 연결을 나타내는 메시지를 사용 하 여 콘솔에 표시 됩니다. 또한 나타납니다 명령 프롬프트에서 SQL 문을 입력할 수 있습니다. 다음 화면에는 예제 쿼리 및 결과 보여 줍니다.
 
    ![ODBC 샘플 쿼리 출력](../data-tools/media/raddata-odbc-sample-query-output.png)
 

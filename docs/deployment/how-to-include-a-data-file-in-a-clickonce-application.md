@@ -1,8 +1,6 @@
 ---
 title: '방법: Include a Data File in a ClickOnce Application | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cfba7612ec0e019b8c8dfa7c7406435b6e43e6cc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 0ea6f111aea8d5008ad5d9f933ded37c6df0c465
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917923"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990216"
 ---
-# <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>방법: ClickOnce 응용 프로그램에서 데이터 파일 포함
+# <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>방법: ClickOnce 애플리케이션에 데이터 파일 포함
 각 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 설치한 응용 프로그램 데이터 디렉터리는 응용 프로그램의 고유한 데이터를 관리할 수 있는 대상 컴퓨터의 로컬 디스크에 할당 됩니다. 데이터 파일의 파일 형식 포함할 수 있습니다: 텍스트 파일, XML 파일 또는 심지어 Microsoft Access 데이터베이스 (*.mdb*) 파일입니다. 다음 절차에서는 임의의 형식으로의 데이터 파일을 추가 하는 방법에 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램입니다.  
   
 ### <a name="to-include-a-data-file-by-using-mageexe"></a>Mage.exe를 사용 하 여 데이터 파일을 포함 하려면  
@@ -84,5 +82,5 @@ ms.locfileid: "49917923"
   
      응용 프로그램 매니페스트의 해시가 변경 되었기 때문에 배포 매니페스트에 다시 서명 해야 합니다.  
   
-## <a name="see-also"></a>참고자료  
- [ClickOnce 응용 프로그램의 로컬 및 원격 데이터에 액세스](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)
+## <a name="see-also"></a>참고 항목  
+ [ClickOnce 애플리케이션의 로컬 및 원격 데이터 액세스](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

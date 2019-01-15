@@ -1,8 +1,6 @@
 ---
 title: '방법: ClickOnce 배포 API를 사용 하 여 프로그래밍 방식으로 응용 프로그램 업데이트 확인 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25585dce22f74c8e8b2f6aef253ea00c3a6ad4e8
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: a890a7ad0a3b65580f5ef08d33774182c8916140
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151395"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869969"
 ---
-# <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>방법: ClickOnce 배포 API를 사용 하 여 프로그래밍 방식으로 응용 프로그램 업데이트 확인
+# <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>방법: ClickOnce 배포 API를 사용하여 프로그래밍 방식으로 애플리케이션 업데이트 확인
 ClickOnce 배포 후 응용 프로그램을 업데이트 하는 두 가지를 제공 합니다. 첫 번째 방법은 특정 간격에 따라 업데이트에 대 한 자동으로 확인 하도록 ClickOnce 배포를 구성할 수 있습니다. 두 번째 메서드를 사용 하는 코드를 작성할 수 있습니다는 <xref:System.Deployment.Application.ApplicationDeployment> 클래스 업데이트를 확인 하려면 사용자 요청과 같은 이벤트를 기반으로 합니다.  
   
  다음 절차를 프로그래밍 방식으로 업데이트를 수행 하기 위한 몇 가지 코드를 표시 및 또한 프로그래밍 방식으로 업데이트 확인을 사용 하도록 설정 하 여 ClickOnce 배포를 구성 하는 방법에 설명 합니다.  
@@ -32,7 +30,7 @@ ClickOnce 배포 후 응용 프로그램을 업데이트 하는 두 가지를 �
  프로그래밍 방식으로 ClickOnce 응용 프로그램을 업데이트 하려면 업데이트의 위치를 지정 해야 합니다. 이 배포 공급자 라고도 합니다. 이 속성을 설정 하는 방법은 참조 하세요 [ClickOnce 업데이트 전략 선택](../deployment/choosing-a-clickonce-update-strategy.md)합니다.  
   
 > [!NOTE]
->  또한 한 위치에서 응용 프로그램을 배포 하지만 다른 업데이트 아래에 설명 된 기법을 사용할 수 있습니다. 자세한 내용은 [방법: 배포 업데이트를 위한 대체 위치를 지정](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md)합니다.  
+>  또한 한 위치에서 응용 프로그램을 배포 하지만 다른 업데이트 아래에 설명 된 기법을 사용할 수 있습니다. 자세한 내용은 [방법: 배포 업데이트를 위한 대체 위치 지정](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md)을 참조하세요.  
   
 ### <a name="to-check-for-updates-programmatically"></a>프로그래밍 방식으로 업데이트를 확인 하려면  
   
@@ -48,7 +46,7 @@ ClickOnce 배포 후 응용 프로그램을 업데이트 하는 두 가지를 �
   
 ### <a name="use-mageexe-to-deploy-an-application-that-checks-for-updates-programmatically"></a>Mage.exe를 사용 하 여 프로그래밍 방식으로 업데이트를 확인 하는 응용 프로그램을 배포 하려면  
   
--   에 설명 된 대로 Mage.exe를 사용 하 여 응용 프로그램을 배포 하기 위한 지침을 따릅니다 [연습: ClickOnce 응용 프로그램을 수동으로 배포](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)합니다. 배포 매니페스트를 생성 하는 Mage.exe를 호출할 때 명령줄 스위치를 사용 하도록 확인 `providerUrl`, ClickOnce 업데이트를 확인 하는 URL을 지정 하 고 있습니다. 응용 프로그램에서 업데이트 됩니다 [ http://www.adatum.com/MyApp ](http://www.adatum.com/MyApp), 예를 들어, 배포 매니페스트를 생성 하는를 호출 하 여 다음과 같이 표시 될 수 있습니다.  
+-   에 설명 된 대로 Mage.exe를 사용 하 여 응용 프로그램을 배포 하기 위한 지침에 따라 [연습: 수동으로 ClickOnce 응용 프로그램을 배포](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)합니다. 배포 매니페스트를 생성 하는 Mage.exe를 호출할 때 명령줄 스위치를 사용 하도록 확인 `providerUrl`, ClickOnce 업데이트를 확인 하는 URL을 지정 하 고 있습니다. 응용 프로그램에서 업데이트 됩니다 [ http://www.adatum.com/MyApp ](http://www.adatum.com/MyApp), 예를 들어, 배포 매니페스트를 생성 하는를 호출 하 여 다음과 같이 표시 될 수 있습니다.  
   
     ```cmd 
     mage -New Deployment -ToFile WindowsFormsApp1.application -Name "My App 1.0" -Version 1.0.0.0 -AppManifest 1.0.0.0\MyApp.manifest -providerUrl http://www.adatum.com/MyApp/MyApp.application  
@@ -56,12 +54,12 @@ ClickOnce 배포 후 응용 프로그램을 업데이트 하는 두 가지를 �
   
 ### <a name="using-mageuiexe-to-deploy-an-application-that-checks-for-updates-programmatically"></a>MageUI.exe를 사용 하 여 프로그래밍 방식으로 업데이트를 확인 하는 응용 프로그램을 배포 하려면  
   
--   에 설명 된 대로 Mage.exe를 사용 하 여 응용 프로그램을 배포 하기 위한 지침을 따릅니다 [연습: ClickOnce 응용 프로그램을 수동으로 배포](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)합니다. 에 **배포 옵션** 탭, 설정 합니다 **시작 위치** 필드 ClickOnce 업데이트를 확인 하는 응용 프로그램 매니페스트를 합니다. 에 **업데이트 옵션** 탭을 선택 취소 합니다 **이 응용 프로그램의 업데이트 확인** 확인란 합니다.  
+-   에 설명 된 대로 Mage.exe를 사용 하 여 응용 프로그램을 배포 하기 위한 지침에 따라 [연습: 수동으로 ClickOnce 응용 프로그램을 배포](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)합니다. 에 **배포 옵션** 탭, 설정 합니다 **시작 위치** 필드 ClickOnce 업데이트를 확인 하는 응용 프로그램 매니페스트를 합니다. 에 **업데이트 옵션** 탭을 선택 취소 합니다 **이 응용 프로그램의 업데이트 확인** 확인란 합니다.  
   
 ## <a name="net-framework-security"></a>.NET Framework 보안  
  프로그래밍 방식으로 업데이트를 사용 하도록 응용 프로그램에 완전 신뢰 권한이 있어야 합니다.  
   
-## <a name="see-also"></a>참고자료  
- [방법: 배포 업데이트를 위한 대체 위치를 지정 합니다.](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md)   
+## <a name="see-also"></a>참고 항목  
+ [방법: 배포 업데이트를 위한 대체 위치 지정](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md)   
  [ClickOnce 업데이트 전략 선택](../deployment/choosing-a-clickonce-update-strategy.md)   
- [ClickOnce 응용 프로그램 게시](../deployment/publishing-clickonce-applications.md)
+ [ClickOnce 애플리케이션 게시](../deployment/publishing-clickonce-applications.md)

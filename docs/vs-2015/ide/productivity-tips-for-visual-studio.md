@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ccc5e543-7dcf-465c-97dd-e133e869800c
@@ -14,12 +13,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: db89bda465d1a4fc4da1b3066858b270ce50c5bb
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c56b2a2cd49d164fa55eae472eaa11942bead262
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051032"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928856"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Visual Studio 생산성 팁
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +67,7 @@ ms.locfileid: "53051032"
 ##  <a name="BKMK_Writing"></a> 코드 작성
  다음 기능을 사용하여 더욱 신속하게 코드를 작성합니다.
 
--   **샘플 응용 프로그램 사용** MSDN 코드 갤러리에서 샘플 응용 프로그램을 다운로드 및 설치하여 응용 프로그램 개발 시간을 단축할 수 있습니다. 해당 영역의 샘플 팩을 다운로드 및 탐색하여 특정한 기술이나 프로그래밍 개념을 익힐 수도 있습니다.
+-   **샘플 애플리케이션 사용** MSDN 코드 갤러리에서 샘플 애플리케이션을 다운로드 및 설치하여 애플리케이션 개발 시간을 단축할 수 있습니다. 해당 영역의 샘플 팩을 다운로드 및 탐색하여 특정한 기술이나 프로그래밍 개념을 익힐 수도 있습니다.
 
 -   **IntelliSense 사용** 코드 편집기에 코드를 입력하면 멤버 목록, 매개 변수 정보, 요약 정보, 시그니처 도움말 및 단어 자동 완성과 같은 IntelliSense 정보가 나타납니다. 이러한 기능은 텍스트의 퍼지 일치를 지원합니다. 예를 들어, 멤버 목록의 결과 목록에는 사용자가 입력한 문자로 시작하는 항목 뿐만 아니라 이름에 문자 조합이 들어 있는 항목이 포함됩니다. 자세한 내용은 [IntelliSense 사용](../ide/using-intellisense.md)을 참조하세요.
 
@@ -84,7 +83,7 @@ ms.locfileid: "53051032"
 
      파란 상자는 코드의 오류를 수정하는 방법을 제안합니다.
 
-     그림 1 오류 스마트 태그
+     그림 1: 오류 스마트 태그
 
      ![오류 스마트 태그 제안](../ide/media/productivity-bluesmarttags.png "Productivity_BlueSmartTags")
 
@@ -129,7 +128,7 @@ ms.locfileid: "53051032"
 ##  <a name="BKMK_Debugging"></a> 코드 디버그
  디버깅은 시간이 오래 걸릴 수 있지만 다음 팁을 참고하여 처리 시간을 줄일 수 있습니다.
 
--   **여러 브라우저에서 같은 페이지, 응용 프로그램 또는 사이트 테스트** 코드를 디버그할 때 **브라우저 선택** 대화 상자를 열지 않고도 [페이지 검사기(Visual Studio)](http://msdn.microsoft.com/library/65880969-1ad2-47be-85b9-bb12c81bf209) 등의 설치된 웹 브라우저 간에 쉽게 전환할 수 있습니다. **디버깅 시작** 단추 옆의 **표준** 도구 모음에 있는 **디버그 대상** 목록을 사용하여 디버그하거나 페이지를 보는 데 사용하는 브라우저를 신속하게 확인할 수 있습니다.
+-   **여러 브라우저에서 같은 페이지, 애플리케이션 또는 사이트 테스트** 코드를 디버그할 때 **브라우저 선택** 대화 상자를 열지 않고도 [페이지 검사기(Visual Studio)](http://msdn.microsoft.com/library/65880969-1ad2-47be-85b9-bb12c81bf209) 등의 설치된 웹 브라우저 간에 쉽게 전환할 수 있습니다. **디버깅 시작** 단추 옆의 **표준** 도구 모음에 있는 **디버그 대상** 목록을 사용하여 디버그하거나 페이지를 보는 데 사용하는 브라우저를 신속하게 확인할 수 있습니다.
 
      ![웹 브라우저 디버그 옵션 선택](../ide/media/webbrowserdropdowntoolbar.png "WebBrowserDropDownToolbar")
 
@@ -150,17 +149,17 @@ ms.locfileid: "53051032"
      추가 명령에 대한 자세한 내용은 [Visual Studio 명령 별칭](../ide/reference/visual-studio-command-aliases.md)을 참조하세요.
 
 ##  <a name="BKMK_Managing"></a> 파일, 도구 모음 및 창 관리
- 응용 프로그램을 개발할 때 여러 코드 파일로 작업하면서 여러 도구 창 사이를 이동하는 경우가 있습니다. 다음 팁을 사용하여 구성을 유지할 수 있습니다.
+ 애플리케이션을 개발할 때 여러 코드 파일로 작업하면서 여러 도구 창 사이를 이동하는 경우가 있습니다. 다음 팁을 사용하여 구성을 유지할 수 있습니다.
 
 -   **자주 사용하는 파일을 편집기에 계속 표시** 편집기에 열린 파일 수에 관계없이 파일이 표시되도록 탭 왼쪽에 고정할 수 있습니다.
 
      파일을 고정하려면 해당 파일의 탭을 선택하고 **고정 상태 설정/해제** 단추를 선택합니다.
 
--   **문서 및 창을 다른 모니터로 이동** 응용 프로그램을 개발할 때 모니터를 2개 이상 사용하는 경우 편집기에서 연 파일을 다른 모니터로 이동하면 응용 프로그램 부분별로 쉽게 작업할 수 있습니다. 디버거 창 같은 도구 창을 다른 모니터로 이동하고 도킹 문서와 도구 창을 함께 탭하여 “rafts”를 만들 수도 있습니다. 자세한 내용은 [방법: 창 정렬 및 고정](../misc/how-to-arrange-and-dock-windows.md)을 참조하세요.
+-   **문서 및 창을 다른 모니터로 이동** 애플리케이션을 개발할 때 모니터를 2개 이상 사용하는 경우 편집기에서 연 파일을 다른 모니터로 이동하면 애플리케이션 부분별로 쉽게 작업할 수 있습니다. 디버거 창 같은 도구 창을 다른 모니터로 이동하고 도킹 문서와 도구 창을 함께 탭하여 “rafts”를 만들 수도 있습니다. 자세한 내용은 [방법: 창 정렬 및 고정](../misc/how-to-arrange-and-dock-windows.md)을 참조하세요.
 
      **솔루션 탐색기**의 다른 인스턴스를 만들고 다른 모니터로 이동하여 파일을 더욱 쉽게 관리할 수도 있습니다. **솔루션 탐색기**의 다른 인스턴스를 만들려면 **솔루션 탐색기**에서 바로 가기 메뉴를 열고 **새 솔루션 탐색기 뷰**를 선택합니다.
 
--   **Visual Studio에 표시되는 글꼴 사용자 지정** IDE에서 텍스트에 사용되는 글꼴 서체, 크기 및 색을 변경할 수 있습니다. 예를 들어, 편집기의 특정 코드 요소의 색과 도구 창 또는 IDE 전체에서 글꼴을 사용자 지정할 수 있습니다. 자세한 내용은 [방법: 글꼴 및 색 변경](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) 고 [방법: 편집기에서 글꼴 및 색 변경](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)합니다.
+-   **Visual Studio에 표시되는 글꼴 사용자 지정** IDE에서 텍스트에 사용되는 글꼴 서체, 크기 및 색을 변경할 수 있습니다. 예를 들어, 편집기의 특정 코드 요소의 색과 도구 창 또는 IDE 전체에서 글꼴을 사용자 지정할 수 있습니다. 자세한 내용은 [방법: 글꼴 및 색 변경](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) 및 [방법: 편집기의 글꼴 및 색 변경](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
  [자주 사용 되는 명령의 기본 바로 가기 키](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md) [방법: 메뉴 및 도구 모음 사용자 지정](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md) [연습: 간단한 응용 프로그램을 만듭니다](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md) [접근성 팁과 요령](../ide/reference/accessibility-tips-and-tricks.md)

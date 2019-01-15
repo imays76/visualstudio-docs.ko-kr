@@ -1,8 +1,6 @@
 ---
 title: IDiaSession::findInlineeLinesByAddr | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbbf31de5c3a20ecf21a8e293657d4ed3a7eff1e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a26692a7c8715150cad071b9c0871e0b8ad9e239
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925801"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896675"
 ---
 # <a name="idiasessionfindinlineelinesbyaddr"></a>IDiaSession::findInlineeLinesByAddr
 클라이언트가 모든 없는 함수를 인라인을 직접 또는 간접적으로 지정 된 부모 기호는 줄 번호 정보를 반복 하는 데 사용 하는 지정 된 주소 범위 내에 포함 된 열거자를 검색 합니다.  
@@ -25,7 +23,7 @@ ms.locfileid: "49925801"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT findInlineeLinesByAddr (   
+HRESULT findInlineeLinesByAddr (   
    IDiaSymbol*           parent,   DWORD                 isect,   DWORD                 offset,   DWORD                 length,  
    IDiaEnumLineNumbers** ppResult  
 );  

@@ -6,15 +6,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 14df0183076125e487873bbb9865b2481e277a5b
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
-ms.translationtype: MT
+ms.openlocfilehash: 927edacf968ed92eddea96f93cc4f67cbd137fcc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845017"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880600"
 ---
 # <a name="add-new-connections"></a>새 연결 추가
 
@@ -56,6 +55,6 @@ ms.locfileid: "34845017"
 
 만들 준비가 테스트가 성공 하는 경우는 *데이터 원본*, 있으며 실제로 의미 하는 Visual Studio 용어입니다는 *데이터 모델* 기본 데이터베이스 또는 서비스를 기반으로 하는 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [.NET용 Visual Studio 데이터 도구](../data-tools/visual-studio-data-tools-for-dotnet.md)

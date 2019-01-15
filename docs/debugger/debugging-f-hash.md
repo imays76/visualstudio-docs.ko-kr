@@ -1,8 +1,6 @@
 ---
-title: 'F # 디버깅 | Microsoft Docs'
-ms.custom: ''
+title: 디버깅 F# | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,17 +16,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b3bb2a9379dd6cd43bb0398ccda2b031b96d56e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 0f526eb39a62de33910bfa5e3e1e72220be3ae3c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473792"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53903983"
 ---
 # <a name="debugging-f"></a>F# 디버깅
 F# 디버깅은 다음과 같은 몇 가지 예외를 제외하고는 관리되는 언어 디버깅과 비슷합니다.  
   
--   **자동** 창 F # 변수가 표시 되지 않습니다.  
+-   **자동** 창에 F# 변수가 표시되지 않습니다.  
   
 -   F#의 경우에는 편집하며 계속하기가 지원되지 않습니다. 디버깅 세션 중에 F# 코드를 편집할 수는 있지만 편집해서는 안 됩니다. 디버깅 세션 중에는 코드 변경 내용이 적용되지 않으므로 디버깅 중에 F# 코드를 편집하면 소스 코드와 디버깅되는 코드가 일치하지 않습니다.  
   

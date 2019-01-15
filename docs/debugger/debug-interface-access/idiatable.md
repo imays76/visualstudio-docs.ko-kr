@@ -1,8 +1,6 @@
 ---
 title: IDiaTable | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b9b792876e281f73f4df0246734403812a72aea
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
-ms.translationtype: MT
+ms.openlocfilehash: df042bc8edcdf8e93ba775797f1d099b24e90343
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056412"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863724"
 ---
 # <a name="idiatable"></a>IDiaTable
 DIA 데이터 원본 테이블을 열거합니다.  
@@ -27,7 +25,7 @@ DIA 데이터 원본 테이블을 열거합니다.
 ## <a name="syntax"></a>구문  
   
 ```  
-IDiaTable : IEnumUnknown  
+IDiaTable : IEnumUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드  
@@ -40,7 +38,7 @@ IDiaTable : IEnumUnknown
 |[IDiaTable::get_Count](../../debugger/debug-interface-access/idiatable-get-count.md)|테이블에서 항목을 검색합니다.|  
 |[IDiaTable::Item](../../debugger/debug-interface-access/idiatable-item.md)|특정 항목 인덱스에 대 한 참조를 검색합니다.|  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  이 인터페이스를 구현 하는 `IEnumUnknown` Microsoft.VisualStudio.OLE.Interop 네임 스페이스에서 열거형 메서드. `IEnumUnknown` 열거형 인터페이스 보다 목차를 반복 하기 위한 훨씬 더 효율적입니다 합니다 [idiatable:: Get_count](../../debugger/debug-interface-access/idiatable-get-count.md) 하 고 [idiatable:: Item](../../debugger/debug-interface-access/idiatable-item.md) 메서드.  
   
  해석은 합니다 `IUnknown` 인터페이스 중 하나에서 반환 된를 `IDiaTable::Item` 메서드 또는 `Next` (Microsoft.VisualStudio.OLE.Interop 네임 스페이스)에서 메서드는 테이블의 유형에 따라 달라 집니다. 예를 들어 경우는 `IDiaTable` 인터페이스 삽입된 원본 목록을 나타냅니다는 `IUnknown` 인터페이스를 쿼리해야 합니다 [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) 인터페이스.  
@@ -64,7 +62,7 @@ IDiaTable : IEnumUnknown
   
 -   [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  첫 번째 함수 `ShowTableNames`, 세션에 있는 모든 테이블의 이름을 표시 합니다. 두 번째 함수를 `GetTable`, 모든 지정된 된 인터페이스를 구현 하는 테이블에 대 한 테이블을 검색 합니다. 세 번째 함수 `UseTable`를 사용 하는 방법을 보여 줍니다는 `GetTable` 함수입니다.  
   
 > [!NOTE]
@@ -133,14 +131,14 @@ void UseTable(IDiaSession *pSession)
 ```  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: Dia2.h  
+ 헤더: dia2.h  
   
  라이브러리: diaguids.lib  
   
  DLL: msdia80.dll  
   
 ## <a name="see-also"></a>참고 항목  
- [인터페이스 (디버그 인터페이스 액세스 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [인터페이스(디버그 인터페이스 액세스 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)   
- [Idiaenumtables:: Item](../../debugger/debug-interface-access/idiaenumtables-item.md)   
+ [IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)   
  [IDiaEnumTables::Next](../../debugger/debug-interface-access/idiaenumtables-next.md)

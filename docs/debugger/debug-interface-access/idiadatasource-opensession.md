@@ -1,8 +1,6 @@
 ---
 title: 'Idiadatasource:: Opensession | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8266102e8bc2c347ed8a554a3c64d9504f1e863b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: bea16f7ff0f723979ded9962a8ff9e620227f8ea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933510"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843114"
 ---
 # <a name="idiadatasourceopensession"></a>IDiaDataSource::openSession
 기호를 쿼리 하는 것에 대 한 세션을 엽니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49933510"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT openSession (   
+HRESULT openSession (   
    IDiaSession** ppSession  
 );  
 ```  
@@ -42,10 +40,10 @@ HRESULT openSession (
 |값|설명|  
 |-----------|-----------------|  
 |E_UNEXPECTED|합니다 [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md) 개체 기호는 소스를 사용 하 여 이전에 초기화 되지 않았습니다.|  
-|E_INVALIDARG|잘못 된 `ppSession` 매개 변수입니다.|  
+|E_INVALIDARG|잘못된 `ppSession` 매개 변수입니다.|  
 |E_OUTOFMEMORY|메모리가 부족 하 여 세션을 열에 없습니다.|  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  이 메서드를 엽니다는 [IDiaSession](../../debugger/debug-interface-access/idiasession.md) 데이터 원본에 대 한 개체입니다.  
   
  `IDiaSession` 데이터 원본에 쿼리를 구현 하는 개체입니다. 세션은 디버그 기호의 각 집합에 대 한 이상의 주소 공간을 관리합니다. 데이터 원본 기호에서 설명 하는.exe 또는.dll 파일은 활성 여러 주소에서 범위 (예를 들어 여러 프로세스가 있으므로 로드) 한 다음 각 주소 범위에 대 한 세션을 사용 해야 합니다.  

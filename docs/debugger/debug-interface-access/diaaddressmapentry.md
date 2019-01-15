@@ -1,8 +1,6 @@
 ---
 title: DiaAddressMapEntry | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 501defcd2274ab32624a97b9a1463e8f4a515c1e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 6cadfe96bc0bf0ac0395d93c2ef0b156b9965ed2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819058"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964087"
 ---
 # <a name="diaaddressmapentry"></a>DiaAddressMapEntry
 주소 맵에서 항목을 설명 합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49819058"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-struct DiaAddressMapEntry {   
+struct DiaAddressMapEntry {   
    DWORD rva,  
    DWORD rvaTo  
 };  
@@ -40,16 +38,16 @@ struct DiaAddressMapEntry {
  `rvaTo`  
  상대 가상 주소 `rva` 이미지 2.에 매핑된  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  주소 지도 (A)에서 다른 (B) 하나 이미지 레이아웃에서 번역을 제공합니다. 배열을 `DiaAddressMapEntry` 기준으로 정렬 하는 구조 `rva` 주소 지도 정의 합니다.  
   
  주소를 변환할 `addrA`, 주소는 그림과에서 `addrB`, B 이미지에서 다음 단계를 수행:  
   
 1. 검색 항목에 대 한 맵을 `e`, 가장 큰 값을 사용 하 여 `rva` 보다 작거나 같음 `addrA`합니다.  
   
-2. 설정 `delta = addrA - e.rva`합니다.  
+2. `delta = addrA - e.rva`를 설정합니다.  
   
-3. 설정 `addrB = e.rvaTo + delta`합니다.  
+3. `addrB = e.rvaTo + delta`를 설정합니다.  
   
    배열을 `DiaAddressMapEntry` 구조에 전달 되는 [idiaaddressmap:: Set_addressmap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) 메서드.  
   

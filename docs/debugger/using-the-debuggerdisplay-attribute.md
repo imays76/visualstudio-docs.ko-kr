@@ -1,8 +1,6 @@
 ---
 title: DebuggerDisplay 특성 사용 | Microsoft Docs
-ms.custom: ''
 ms.date: 08/09/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - attributes [C#], debugger
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d3adb481ba06c086db3a272c026543464018b542
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 922e9eea80344d5a02e4f54f173b374ca7faa78e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926204"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951682"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>DebuggerDisplay 특성 사용
 <xref:System.Diagnostics.DebuggerDisplayAttribute>는 개체, 속성 또는 필드가 디버거 변수 창에 표시되는 방식을 제어합니다. 이 특성은 형식, 대리자, 속성, 필드 및 어셈블리에 적용할 수 있습니다.  
@@ -35,7 +33,7 @@ ms.locfileid: "49926204"
   
  다음 표에서는 `DebuggerDisplay` 특성의 사용 예와 예제 출력을 보여 줍니다.  
   
-|특성|값 열에 표시 되는 출력|  
+|특성|값 열에 표시되는 출력|  
 |---------------| - |  
 |`[DebuggerDisplay("x = {x} y = {y}")]`<br /><br /> `x` 및 `y`필드가 있는 형식에서 사용됩니다.|`x = 5 y = 18`|  
 |`[DebuggerDisplay("String value is {getString()}")]`매개 변수 구문은 언어에 따라 다를 수 있으므로 주의하여 사용하십시오.|`String value is [5, 6, 6]`|  
@@ -69,22 +67,22 @@ csc /t:library autoexp.cs
   
 - 식은 식을 작성한 언어의 식 계산기가 아닌 현재 스택 프레임 언어의 식 계산기에 의해 계산됩니다. 언어가 서로 다를 경우 이로 인해 예기치 않은 결과가 발생할 수 있습니다.  
   
-- 식을 계산하면 응용 프로그램의 상태가 변경될 수 있습니다. 예를 들어 속성의 값을 설정하는 식은 실행 코드에서 속성 값을 변경합니다.  
+- 식을 계산하면 애플리케이션의 상태가 변경될 수 있습니다. 예를 들어 속성의 값을 설정하는 식은 실행 코드에서 속성 값을 변경합니다.  
   
   식 계산의 가능한 문제를 줄이는 한 가지 방법은 작업을 수행하고 문자열을 반환하는 private 속성을 만드는 것입니다. 이렇게 하면 DebuggerDisplay 특성이 private 속성 값을 표시할 수 있습니다. 다음 예제에서는 이 패턴을 구현합니다.  
   
 ```csharp  
 [DebuggerDisplay("{DebuggerDisplay,nq}")]  
 public sealed class MyClass   
-{      
-    public int count { get; set; }      
-    public bool flag { get; set; }      
+{      
+    public int count { get; set; }      
+    public bool flag { get; set; }      
     private string DebuggerDisplay  
-   {         
+   {         
         get  
         {  
              return string.Format("Object {0}", count - 2);  
-        }      
+        }      
     }  
 }  
 ```  
@@ -178,6 +176,6 @@ class MyHashtable
   
 ## <a name="see-also"></a>참고 항목  
  [DebuggerTypeProxy 특성 사용](../debugger/using-debuggertypeproxy-attribute.md)   
- [관리 되는 개체의 사용자 지정 뷰 만들기](../debugger/create-custom-views-of-dot-managed-objects.md)   
+ [관리 개체의 사용자 지정 보기 만들기](../debugger/create-custom-views-of-dot-managed-objects.md)   
  [C#의 형식 지정자](../debugger/format-specifiers-in-csharp.md)   
  [디버거 표시 특성을 사용하여 디버깅 향상](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

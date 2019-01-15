@@ -1,8 +1,6 @@
 ---
 title: '방법: 스레드 속성 표시 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - thread properties
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cc5b8d6dcf3cb6dc2a78bee626633103d5b1b18c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: e011da42235fe62c86c7c2a12fee99b439b38421
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904858"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851380"
 ---
 # <a name="how-to-display-thread-properties"></a>방법: 스레드 속성 표시
 에 나열 된 스레드에 대 한 자세한 내용을 알아보려면 [스레드 뷰](../debugger/threads-view.md)를 사용 합니다 [스레드 속성 대화 상자](../debugger/thread-properties-dialog-box.md)합니다.  

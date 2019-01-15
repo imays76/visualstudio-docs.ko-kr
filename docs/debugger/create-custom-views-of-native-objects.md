@@ -1,9 +1,7 @@
 ---
 title: 네이티브 개체의 사용자 지정 뷰 만들기
 description: Natvis 프레임 워크를 사용 하 여 Visual Studio 디버거에서 네이티브 형식을 표시 하는 방식을 사용자 지정 하려면
-ms.custom: ''
 ms.date: 10/31/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - natvis
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 937692f11cbd642da823d6f7d13bcd90de59b388
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
-ms.translationtype: MT
+ms.openlocfilehash: d91a62971db47b78b974cc2dede77d0a47b5c851
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000863"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821194"
 ---
 # <a name="create-custom-views-of-native-objects-in-the-debugger"></a>디버거에서 네이티브 개체의 사용자 지정 뷰 만들기
 
@@ -169,7 +167,7 @@ Natvis 시각화에서는 C++ 식을 사용하여 표시할 데이터 항목을 
 ##  <a name="BKMK_Syntax_reference"></a> Natvis 구문 참조  
 
 ###  <a name="BKMK_AutoVisualizer"></a> AutoVisualizer 요소  
-합니다 `AutoVisualizer` 요소는 루트 노드의 합니다 *.natvis* 파일을 열고 네임 스페이스를 포함 `xmlns:` 특성입니다. 
+`AutoVisualizer` 요소는 *.natvis* 파일의 루트 노드이며 네임스페이스 `xmlns:` 특성을 포함합니다. 
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>  
@@ -213,7 +211,7 @@ Natvis 시각화에서는 C++ 식을 사용하여 표시할 데이터 항목을 
 </Type>  
 ```  
 
-등 고 매크로 $T1, $T2를 사용 하 여 시각화 항목에서 템플릿 매개 변수를 참조할 수 있습니다. 이러한 매크로의 예제를 참조 합니다 *.natvis* Visual Studio를 사용 하 여 제공 된 파일입니다.  
+등 고 매크로 $T1, $T2를 사용 하 여 시각화 항목에서 템플릿 매개 변수를 참조할 수 있습니다. 이러한 매크로의 예를 살펴보려면 Visual Studio와 함께 제공되는 *.natvis* 파일을 참조하세요.  
 
 ####  <a name="BKMK_Visualizer_type_matching"></a> 시각화 도우미 형식 일치  
 유효성 검사에 실패 하면 시각화 항목을 다음으로 사용 가능한 시각화가 됩니다.  
@@ -421,7 +419,7 @@ Natvis 시각화에서는 C++ 식을 사용하여 표시할 데이터 항목을 
 
 `ArrayItems` 노드에 있어야 합니다.  
 
-- `Size` 식 (정수로 계산 되어야 합니다) 디버거에서 배열의 길이 파악 합니다.  
+- 디버거에서 배열의 길이를 파악하기 위한 `Size` 식(정수로 계산되어야 함)입니다.  
 - A `ValuePointer` 첫 번째 요소를 가리키는 식이 (아닌 요소 형식의 포인터 여야 `void*`).  
 
 배열 하한의 기본값은 0입니다. 값을 재정의 하려면 사용을 `LowerBound` 요소입니다. 합니다 *.natvis* Visual Studio와 함께 제공 되는 파일의 한 예입니다.  
@@ -448,7 +446,7 @@ Natvis 시각화에서는 C++ 식을 사용하여 표시할 데이터 항목을 
 
 - `Direction` 배열 행 중심 순서 인지 열 중심 순서 인지 여부를 지정 합니다. 
 - `Rank` 는 배열의 차수를 지정합니다. 
-- `Size` 요소에는 암시적 `$i` 매개 변수를 해당 차원에는 배열의 길이 검색할 차원 인덱스로 대체 합니다. 이전 예제에서는 식 `_M_extent.M_base[0]` 0 번째 차원의 길이 지정 해야 `_M_extent._M_base[1]` 자사, 및 등입니다.  
+- `Size` 요소는 해당 차원에서 배열의 길이를 확인하기 위해 차원 인덱스로 대체되는 암시적 `$i` 매개 변수를 허용합니다. 이전 예제에서는 식 `_M_extent.M_base[0]` 0 번째 차원의 길이 지정 해야 `_M_extent._M_base[1]` 자사, 및 등입니다.  
 
 방법 2 차원 같습니다 `Concurrency::array` 디버거 창에서 개체를 찾습니다.  
 
@@ -582,7 +580,7 @@ Natvis 시각화에서는 C++ 식을 사용하여 표시할 데이터 항목을 
 
  ![자동&#95;ptr&#60;벡터&#60;int&#62; &#62; 기본 확장](../debugger/media/dbg_natvis_expand_expandeditem_default.png "기본 확장")  
 
- 벡터의 값을 보려면 통과 변수 창에서 두 수준 아래로 드릴 해야는 `_Myptr` 멤버입니다. 추가 하 여는 `ExpandedItem` 요소를 제거할 수 있습니다는 `_Myptr` 계층 구조에서 직접 변수 벡터 요소를 보려면:  
+ 벡터의 값을 보려면 통과 변수 창에서 두 수준 아래로 드릴 해야는 `_Myptr` 멤버입니다. `ExpandedItem` 요소를 추가하면 계층 구조에서 `_Myptr` 변수를 제거하고 벡터 요소를 바로 확인할 수 있습니다.  
 
 ```xml
 <Type Name="std::auto_ptr&lt;*&gt;">  
@@ -607,10 +605,10 @@ Natvis 시각화에서는 C++ 식을 사용하여 표시할 데이터 항목을 
 </Type>  
 ```  
 
-합니다 **nd** 파생된 클래스에 대 한 일치 하는 시각화를 해제 하는 형식 지정자는 여기 필요 합니다. 이 고, 그렇지 식 `*(CFrameworkElement*)this` 없었다는 `CPanel` 가장 적합 한 시각화를 기본 시각화 형식 일치 규칙 때문에 다시 적용할 수를 고려 합니다. 사용 된 **nd** 형식 지정자를 기본 클래스에 시각화가 없습니다. 기본 클래스 시각화 또는 기본 확장을 사용 하도록 디버거에 지시 합니다.  
+이때 파생된 클래스에 대해 시각화 일치를 해제하는 **nd** 형식 지정자가 필요합니다. 이 고, 그렇지 식 `*(CFrameworkElement*)this` 없었다는 `CPanel` 가장 적합 한 시각화를 기본 시각화 형식 일치 규칙 때문에 다시 적용할 수를 고려 합니다. 사용 된 **nd** 형식 지정자를 기본 클래스에 시각화가 없습니다. 기본 클래스 시각화 또는 기본 확장을 사용 하도록 디버거에 지시 합니다.  
 
 ####  <a name="BKMK_Synthetic_Item_expansion"></a> 가상 항목 확장  
- 하는 동안 합니다 `ExpandedItem` 요소는 계층을 제거 하 여 데이터의 flatter 뷰를 제공 합니다 `Synthetic` 노드는 합니다. 식의 결과 없는 인위적인 자식 요소를 만들 수 있습니다. 인공 요소 자체의 자식 요소를 포함할 수 있습니다. 다음 예의 `Concurrency::array` 형식에 대한 시각화에서는 사용자에게 진단 메시지를 표시하기 위해 `Synthetic` 노드를 사용합니다.  
+ `ExpandedItem` 요소는 계층 구조를 제거하여 데이터를 보다 평면적으로 표시하지만 `Synthetic` 노드는 그 반대입니다. 식의 결과 없는 인위적인 자식 요소를 만들 수 있습니다. 인공 요소 자체의 자식 요소를 포함할 수 있습니다. 다음 예의 `Concurrency::array` 형식에 대한 시각화에서는 사용자에게 진단 메시지를 표시하기 위해 `Synthetic` 노드를 사용합니다.  
 
 ```xml
 <Type Name="Concurrency::array&lt;*,*&gt;">  
@@ -632,7 +630,7 @@ Natvis 시각화에서는 C++ 식을 사용하여 표시할 데이터 항목을 
  ![가상 요소 확장을 사용 하 여 Concurrency::Array](../debugger/media/dbg_natvis_expand_synthetic.png "Concurrency::Array 가상 요소 확장을 사용 하 여")  
 
 ###  <a name="BKMK_HResult"></a> HResult 요소 
- 합니다 `HResult` 요소에 대해 표시 되는 정보를 사용자 지정할 수 있습니다는 **HRESULT** 디버거 창에 있습니다. `HRValue` 요소는 32 비트 값을 포함 해야 합니다는 **HRESULT** 사용자 지정할 수입니다. `HRDescription` 요소 디버거 창에 표시할 정보를 포함 합니다.  
+ 합니다 `HResult` 요소에 대해 표시 되는 정보를 사용자 지정할 수 있습니다는 **HRESULT** 디버거 창에 있습니다. `HRValue` 요소에는 사용자 지정할 **HRESULT**의 32비트 값이 포함되어 있어야 합니다. `HRDescription` 요소 디버거 창에 표시할 정보를 포함 합니다.  
 
 ```xml
 
@@ -661,7 +659,7 @@ UIVisualizer 요소의 예는 다음과 같습니다.
 
 - A `ServiceId`  -  `Id` 식별 하는 특성 쌍을 `UIVisualizer`입니다. `ServiceId` 시각화 도우미 서비스의 GUID 패키지 노출 됩니다. `Id` 둘 이상의 서비스를 제공 하는 경우 시각화 도우미를 구분할 수 있는 고유 식별자가입니다. 앞의 예에서 동일한 시각화 도우미 서비스는 두 명의 시각화 도우미를 제공합니다.  
   
-- `MenuName` 특성은 디버거에 돋보기 아이콘 옆의 드롭다운 목록에 표시 하는 시각화 도우미 이름을 정의 합니다. 예를 들어:  
+- `MenuName` 특성은 디버거에 돋보기 아이콘 옆의 드롭다운 목록에 표시 하는 시각화 도우미 이름을 정의 합니다. 예:  
 
   ![UIVisualizer 메뉴 바로 가기 메뉴](../debugger/media/dbg_natvis_vectorvisualizer.png "UIVisualizer 메뉴 바로 가기 메뉴")  
 

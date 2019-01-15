@@ -1,8 +1,6 @@
 ---
 title: MemoryTypeEnum | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a8dcf657933cf62f3f2173bb89dadd1366b0cec
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a83a37a3aa454885d714be667ca7678ae543ff09
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822945"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875918"
 ---
 # <a name="memorytypeenum"></a>MemoryTypeEnum
 메모리 액세스의 형식을 지정 합니다.  
@@ -48,7 +46,7 @@ enum MemoryTypeEnum {
  `MemTypeAny`  
  모든 종류의 메모리에 액세스합니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  이 열거형의 값에 전달 되는 [IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md) 다양 한 유형의 메모리에 대 한 액세스를 제한 하는 방법이 있습니다.  
   
 ## <a name="requirements"></a>요구 사항  
