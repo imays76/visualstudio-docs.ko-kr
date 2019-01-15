@@ -1,8 +1,6 @@
 ---
 title: IDiaEnumSymbols | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb30549dc50b9e585768cd8778b8cbb70fb0f0c0
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 53b407a8bceca3127bea54470bcab3cc42aa3b81
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31467257"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964054"
 ---
 # <a name="idiaenumsymbols"></a>IDiaEnumSymbols
 데이터 원본에 포함 된 다양 한 기호를 열거 합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "31467257"
 ## <a name="syntax"></a>구문  
   
 ```  
-IDiaEnumSymbols : IUnknown  
+IDiaEnumSymbols : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드  
@@ -38,15 +36,15 @@ IDiaEnumSymbols : IUnknown
 |[IDiaEnumSymbols::get__NewEnum](../../debugger/debug-interface-access/idiaenumsymbols-get-newenum.md)|검색 된 `IEnumVARIANT Interface` 이 열거자의 버전입니다.|  
 |[IDiaEnumSymbols::get_Count](../../debugger/debug-interface-access/idiaenumsymbols-get-count.md)|기호 수를 검색합니다.|  
 |[IDiaEnumSymbols::Item](../../debugger/debug-interface-access/idiaenumsymbols-item.md)|인덱스를 사용 하 여 기호를 검색합니다.|  
-|[IDiaEnumSymbols::Next](../../debugger/debug-interface-access/idiaenumsymbols-next.md)|지정된 된 수의 기호 열거형 시퀀스를 검색합니다.|  
-|[IDiaEnumSymbols::Skip](../../debugger/debug-interface-access/idiaenumsymbols-skip.md)|지정된 된 수의 기호 열거형 시퀀스를 건너뜁니다.|  
-|[IDiaEnumSymbols::Reset](../../debugger/debug-interface-access/idiaenumsymbols-reset.md)|열거형 시퀀스 시작 부분으로 다시 설정합니다.|  
-|[IDiaEnumSymbols::Clone](../../debugger/debug-interface-access/idiaenumsymbols-clone.md)|현재 열거자와 동일한 열거 상태가 포함 하는 열거자를 만듭니다.|  
+|[IDiaEnumSymbols::Next](../../debugger/debug-interface-access/idiaenumsymbols-next.md)|지정된 된 개수의 열거형 시퀀스에서 기호를 검색합니다.|  
+|[IDiaEnumSymbols::Skip](../../debugger/debug-interface-access/idiaenumsymbols-skip.md)|열거형 시퀀스에서 기호를 지정 된 수를 건너뜁니다.|  
+|[IDiaEnumSymbols::Reset](../../debugger/debug-interface-access/idiaenumsymbols-reset.md)|열거형 시퀀스를 처음으로 다시 설정합니다.|  
+|[IDiaEnumSymbols::Clone](../../debugger/debug-interface-access/idiaenumsymbols-clone.md)|현재 열거자와 열거 상태가 같은 포함 하는 열거자를 만듭니다.|  
   
-## <a name="remarks"></a>설명  
- 이 인터페이스는 기호, 예를 들어 특정 형식에 따라 그룹화 하는 기호 제공 `SymTagUDT` (사용자 정의 형식) 또는 `SymTagBaseClass`합니다. 주소로 그룹화 된 기호를 사용 하려면 사용 된 [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md) 인터페이스입니다.  
+## <a name="remarks"></a>주의  
+ 이 인터페이스는 기호, 예를 들어, 특정 유형별로 그룹화 된 기호를 제공 `SymTagUDT` (사용자 정의 형식) 또는 `SymTagBaseClass`합니다. 주소로 그룹화 기호를 사용 하려면 사용 합니다 [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md) 인터페이스입니다.  
   
-## <a name="notes-for-callers"></a>호출자에 대 한 참고 사항  
+## <a name="notes-for-callers"></a>호출자에 대 한 정보  
  다음 메서드를 호출 하 여이 인터페이스를 가져옵니다.  
   
 -   [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)  
@@ -56,10 +54,10 @@ IDiaEnumSymbols : IUnknown
 -   [IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)  
   
 ## <a name="example"></a>예제  
- 가져오는 방법을 보여 주는이 예제는 `IDiaEnumSymbols` 인터페이스 한 다음 목록으로 사용자 정의 형식 (Udt)에 해당 열거형을 사용 합니다.  
+ 가져오는 방법을 보여 주는이 예제는 `IDiaEnumSymbols` 인터페이스 및 해당 열거형 목록 사용자 정의 형식 (Udt)을 사용 하 여 합니다.  
   
 > [!NOTE]
->  `CDiaBSTR` 래핑하는 클래스는 `BSTR` 인스턴스화 범위를 벗어나면 문자열이 해제를 자동으로 처리 하 고 있습니다.  
+>  `CDiaBSTR` 래핑하는 클래스를 `BSTR` 인스턴스화 범위를 벗어나면 문자열이 해제를 자동으로 처리 하 고 있습니다.  
   
 ```C++  
 void ShowUDTs(IDiaSymbol *pGlobals)  
@@ -88,14 +86,14 @@ void ShowUDTs(IDiaSymbol *pGlobals)
 ```  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: Dia2.h  
+ 헤더: dia2.h  
   
  라이브러리: diaguids.lib  
   
  DLL: msdia80.dll  
   
 ## <a name="see-also"></a>참고 항목  
- [인터페이스 (디버그 인터페이스 액세스 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [Idiasession:: Findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
- [Idiasourcefile:: Get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)   
+ [인터페이스(디버그 인터페이스 액세스 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
+ [IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)   
  [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)

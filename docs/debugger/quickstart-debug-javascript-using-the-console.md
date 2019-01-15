@@ -1,8 +1,6 @@
 ---
 title: 콘솔을 사용한 JavaScript 디버그 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - VS.WebClient.JavaScriptConsole
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c76f9c533fd83584c12f03b4e0c0f1d44e281c8e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: d97b7d8a4143ba48e0b5c411539deeb85a0cd70f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861828"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840384"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Visual Studio에서 콘솔을 사용한 JavaScript 디버그
   
@@ -45,7 +43,7 @@ ms.locfileid: "49861828"
 > [!TIP]
 >  JavaScript 콘솔 창이 닫힌 경우 **디버그**> **창** > **JavaScript 콘솔** 을 사용하여 다시 엽니다. 창은 스크립트 디버깅 세션 중에만 표시됩니다.  
   
- JavaScript 콘솔 창에서는 디버거를 중지 및 다시 시작하지 않고 앱과 상호 작용할 수 있습니다. 자세한 내용은 참조 하세요. [앱 (JavaScript) 새로 고침](../debugger/refresh-an-app-javascript.md)합니다. 기타 JavaScript 디버깅 DOM 탐색기 사용 및 중단점 설정과 같은 기능에 대 한 정보를 참조 하세요. [빠른 시작: HTML 및 CSS 디버깅](../debugger/quickstart-debug-html-and-css.md) 하 고 [Visual Studio에서 앱을 디버그](../debugger/debug-store-apps-in-visual-studio.md)합니다.  
+ JavaScript 콘솔 창에서는 디버거를 중지 및 다시 시작하지 않고 앱과 상호 작용할 수 있습니다. 자세한 내용은 참조 하세요. [앱 (JavaScript) 새로 고침](../debugger/refresh-an-app-javascript.md)합니다. 기타 JavaScript 디버깅 DOM 탐색기 사용 및 중단점 설정과 같은 기능에 대 한 정보를 참조 하세요. [빠른 시작: HTML 및 CSS 디버그](../debugger/quickstart-debug-html-and-css.md) 하 고 [Visual Studio에서 앱을 디버그](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)합니다.  
   
 ##  <a name="InteractiveConsole"></a> JavaScript 콘솔 창을 사용하여 디버깅  
  다음 단계를 수행하면 `FlipView` 앱이 생성되고, 대화식으로 JavaScript 코딩 오류를 디버그하는 방법이 표시됩니다.  
@@ -181,7 +179,7 @@ ms.locfileid: "49861828"
   
 13. 스크립트를 실행하려면 녹색 화살표 기호를 선택합니다.  
   
-14. 콘솔 입력 프롬프트를 한 줄 모드로 전환한를 선택 하려면 Ctrl + Alt + M을 눌러 **입력 지우기** (빨간색 "X")를 입력된 프롬프트에서 코드를 삭제 합니다.  
+14. Ctrl+Alt+M을 눌러 콘솔 입력 프롬프트를 한 줄 모드로 전환한 다음, **입력 지우기**(빨간색 “X”)를 선택하여 입력 프롬프트에서 코드를 삭제합니다.  
   
 15. 프롬프트에서 `Data.items.length = 3` 를 입력하고 Enter 키를 누릅니다. 그러면 데이터에서 불필요한 요소가 제거됩니다.  
   
@@ -189,9 +187,9 @@ ms.locfileid: "49861828"
   
 17. DOM 탐색기에서 업데이트된 DIV 요소가 표시되고, 예상된 IMG 요소를 찾기 위해 하위 트리로 이동할 수 있습니다.  
   
-18. **디버그** > **Stop 디버그ging** 를 선택하거나 Shift+F5를 눌러 디버깅을 중지한 다음 소스 코드를 수정합니다.  
+18.  **디버그** > **Stop 디버그ging** 를 선택하거나 Shift+F5를 눌러 디버깅을 중지한 다음 소스 코드를 수정합니다.  
   
-     수정 된 샘플 코드가 포함 된 전체 default.html 페이지를 참조 하세요 [디버그 HTML, CSS 및 JavaScript 샘플 코드](../debugger/debug-html-css-and-javascript-sample-code.md)합니다.  
+     수정된 샘플 코드가 포함된 전체 default.html 페이지는 [HTML, CSS 및 JavaScript 샘플 코드 디버깅](../debugger/debug-html-css-and-javascript-sample-code.md)을 참조하세요.  
   
 ##  <a name="InteractiveDebuggingBreakMode"></a> 대화형 디버깅 및 중단 모드  
  JavaScript 콘솔 창과 같은 JavaScript 디버깅 도구를 사용하는 동안 중단점을 사용하여 코드를 한 단계씩 실행할 수 있습니다. 디버거에서 실행 중인 프로그램이 중단점에 도달하면 디버거에서 프로그램의 실행을 일시적으로 중단합니다. 실행이 중단되는 경우 프로그램이 실행 모드에서 중단 모드로 전환합니다. 언제든지 실행을 재개할 수 있습니다.  
@@ -204,7 +202,7 @@ ms.locfileid: "49861828"
   
 2.  선택 **로컬 컴퓨터** 드롭다운 목록에서 옆에 **디버깅 시작** 단추를 **디버그** 도구 모음입니다.  
   
-3.  **디버그** > **Start 디버그ging**을 선택하거나 F5를 선택합니다.  
+3.   **디버그** > **Start 디버그ging**을 선택하거나 F5를 선택합니다.  
   
      실행이 `updateImages()` 함수에 도달하면 응용 프로그램이 중단 모드로 들어가며, 현재 프로그램 실행 줄은 노란색으로 강조 표시됩니다.  
   
@@ -239,7 +237,7 @@ ms.locfileid: "49861828"
   
  한 줄 모드에서는 입력 기록을 제공합니다. 위쪽 화살표 및 아래쪽 화살표 키를 사용하여 입력 기록을 탐색할 수 있습니다. 한 줄 모드에서는 스크립트를 실행할 때 입력 프롬프트를 지웁니다. 한 줄 모드에서 스크립트를 실행하려면 Enter를 누릅니다.  
   
- 여러 줄 모드에서는 스크립트를 실행할 때 입력 프롬프트를 지우지 않습니다. 여러 줄 모드에서 한 줄 모드로 전환 하면 키를 눌러 입력된 줄을 지울 수 있습니다 **입력 지우기** (빨간색 "X"). 여러 줄 모드에서 스크립트를 실행하려면 Ctrl+Enter를 누르거나 창의 오른쪽 아래에 있는 화살표 기호를 선택합니다.  
+ 여러 줄 모드에서는 스크립트를 실행할 때 입력 프롬프트를 지우지 않습니다. 여러 줄 모드에서 한 줄 모드로 전환하면 **입력 지우기**(빨간색 “X”)를 눌러 입력 줄을 지울 수 있습니다. 여러 줄 모드에서 스크립트를 실행하려면 Ctrl+Enter를 누르거나 창의 오른쪽 아래에 있는 화살표 기호를 선택합니다.  
   
 ##  <a name="Switching"></a> 스크립트 실행 컨텍스트 전환  
  JavaScript 콘솔 창을 사용하면 한번에 웹 플랫폼 호스트 (WWAHost.exe)의 단일 인스턴스를 나타내는 단일 실행 컨텍스트와 상호작용할 수 있습니다. 일부 시나리오에서는, 예를 들어 `iframe`, 공유 계약, 웹 작업자 또는 `WebView` 컨트롤을 사용하는 경우 앱에서 호스트의 다른 인스턴스를 시작할 수 있습니다. 호스트의 다른 인스턴스가 실행 중인 경우, 앱을 실행하는 동안 **대상** 목록에서 실행 컨텍스트를 선택하여 다른 실행 컨텍스트를 선택할 수 있습니다.  
@@ -248,12 +246,12 @@ ms.locfileid: "49861828"
   
  ![JavaScript 콘솔 창에서 선택한 대상](../debugger/media/js_console_target.png "JS_Console_Target")  
   
- 또한 `cd` 명령을 사용하여 실행 컨텍스트를 전환할 수도 있지만, 다른 실행 컨텍스트의 이름을 알아야 하고 사용하는 참조가 범위 내에 있어야 합니다. **대상** 목록에서 다른 실행 컨텍스트에 액세스하기가 더 쉽습니다.   
+ 또한 `cd` 명령을 사용하여 실행 컨텍스트를 전환할 수도 있지만, 다른 실행 컨텍스트의 이름을 알아야 하고 사용하는 참조가 범위 내에 있어야 합니다.  **대상** 목록에서 다른 실행 컨텍스트에 액세스하기가 더 쉽습니다.   
   
 ## <a name="see-also"></a>참고 항목  
- [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
+ [Debug apps in Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)   
  [JavaScript Console commands](../debugger/javascript-console-commands.md)   
- [앱 (JavaScript) 새로 고침](../debugger/refresh-an-app-javascript.md)   
+ [앱 새로 고침(JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [바로 가기 키](../debugger/keyboard-shortcuts-html-and-javascript.md)   
  [HTML, CSS 및 JavaScript 샘플 코드 디버그](../debugger/debug-html-css-and-javascript-sample-code.md)   
  [빠른 시작: HTML 및 CSS 디버그](../debugger/quickstart-debug-html-and-css.md)   

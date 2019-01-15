@@ -10,15 +10,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 01e572a2ac20d1cfb103e1600307b51bdf58a0b8
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: HT
+ms.openlocfilehash: 87d4e11ffcb485ac96d2ecdb53951532a2c1305a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174321"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932040"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>데이터 세트 및 TableAdapter를 다른 프로젝트로 분리
 형식화 된 데이터 집합 향상 된 있도록 합니다 [Tableadapter](create-and-configure-tableadapters.md) dataset 클래스는 별도 프로젝트로 생성 될 수 있습니다. 이 통해 빠르게 응용 프로그램 계층을 분리 하 고 n 계층 데이터 응용 프로그램을 생성할 수 있습니다.
@@ -59,10 +58,10 @@ TableAdapter 코드에서 데이터 집합 코드를 분리 하는 경우에 데
 > [!NOTE]
 >  생성 된 클래스 파일을 보려면 데이터 집합 또는 TableAdapter 프로젝트를 선택 합니다. 그런 다음, **솔루션 탐색기**를 선택 **모든 파일 표시**합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-- [N 계층 데이터 응용 프로그램 개요](../data-tools/n-tier-data-applications-overview.md)
-- [연습: N 계층 데이터 응용 프로그램 만들기](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+- [N 계층 데이터 애플리케이션 개요](../data-tools/n-tier-data-applications-overview.md)
+- [연습: N 계층 데이터 애플리케이션 만들기](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [계층적 업데이트](../data-tools/hierarchical-update.md)
 - [Visual Studio에서 데이터 액세스](../data-tools/accessing-data-in-visual-studio.md)
 - [ADO.NET](/dotnet/framework/data/adonet/index)

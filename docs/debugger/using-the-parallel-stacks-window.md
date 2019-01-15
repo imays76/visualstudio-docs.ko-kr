@@ -1,8 +1,6 @@
 ---
 title: 병렬 스택 창의 스레드를 보는 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/20/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.parallelstacks
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ee9d52f63f3158979f2f018ea44d5b68d6612c1
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
-ms.translationtype: MTE95
+ms.openlocfilehash: ad685fc33c831d37cee955fda7e965ecd65e9bf7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562336"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902061"
 ---
 # <a name="view-threads-and-tasks-in-the-parallel-stacks-window"></a>병렬 스택 창의 스레드 및 작업 보기
 
@@ -139,7 +137,7 @@ ms.locfileid: "53562336"
   
 ## <a name="see-also"></a>참고 항목  
  [다중 스레드 응용 프로그램 디버깅 시작](../debugger/get-started-debugging-multithreaded-apps.md)   
- [연습: 병렬 응용 프로그램 디버그](../debugger/walkthrough-debugging-a-parallel-application.md)   
+ [연습: 병렬 애플리케이션 디버그](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [디버거 소개](../debugger/debugger-feature-tour.md) [관리 코드 디버깅](../debugger/debugging-managed-code.md)   
  [병렬 프로그래밍](/dotnet/standard/parallel-programming/index)   
  [작업 창 사용](../debugger/using-the-tasks-window.md)   

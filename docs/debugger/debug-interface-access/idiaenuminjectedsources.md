@@ -1,8 +1,6 @@
 ---
 title: IDiaEnumInjectedSources | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0abebe14f0ab4c36d0833edb099d71f09843ea22
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
-ms.translationtype: MT
+ms.openlocfilehash: 5a5dfc19844ee084a03ecbf07070e7ba78fd8220
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057279"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966640"
 ---
 # <a name="idiaenuminjectedsources"></a>IDiaEnumInjectedSources
 데이터 원본에 포함 된 다양 한 삽입 된 소스를 열거 합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "37057279"
 ## <a name="syntax"></a>구문  
   
 ```  
-IDiaEnumInjectedSources : IUnknown  
+IDiaEnumInjectedSources : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드  
@@ -43,12 +41,12 @@ IDiaEnumInjectedSources : IUnknown
 |[IDiaEnumInjectedSources::Reset](../../debugger/debug-interface-access/idiaenuminjectedsources-reset.md)|열거형 시퀀스를 처음으로 다시 설정합니다.|  
 |[IDiaEnumInjectedSources::Clone](../../debugger/debug-interface-access/idiaenuminjectedsources-clone.md)|현재 열거자와 열거 상태가 같은 포함 하는 열거자를 만듭니다.|  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
   
 ## <a name="notes-for-callers"></a>호출자에 대 한 정보  
  이 인터페이스를 호출 하 여 가져온 합니다 [idiasession:: Findinjectedsource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md) 메서드를 호출 하거나 특정 원본 파일의 이름으로는 [idiasession:: Getenumtables](../../debugger/debug-interface-access/idiasession-getenumtables.md) 의 GUID 사용 하 여 메서드를 `IDiaEnumInjectedSources` 인터페이스입니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  이 예제에서는 가져오는 방법을 보여 줍니다 (를 `GetEnumInjectedSources` 함수) 사용 하 여 (합니다 `DumpAllInjectedSources` 함수)는 `IDiaEnumInjectedSources` 인터페이스. 참조를 [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md) 의 구현에 대 한 인터페이스를 `PrintPropertyStorage` 함수입니다. 대체 출력에 대 한 참조를 [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) 인터페이스입니다.  
   
 ```C++  
@@ -108,15 +106,15 @@ void DumpAllInjectedSources( IDiaSession* pSession)
 ```  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: Dia2.h  
+ 헤더: dia2.h  
   
  라이브러리: diaguids.lib  
   
  DLL: msdia80.dll  
   
 ## <a name="see-also"></a>참고 항목  
- [인터페이스 (디버그 인터페이스 액세스 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [Idiasession:: Findinjectedsource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md)   
- [Idiasession:: Getenumtables](../../debugger/debug-interface-access/idiasession-getenumtables.md)   
+ [인터페이스(디버그 인터페이스 액세스 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [IDiaSession::findInjectedSource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md)   
+ [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)   
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)   
  [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

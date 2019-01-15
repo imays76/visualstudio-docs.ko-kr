@@ -1,8 +1,6 @@
 ---
 title: '&lt;제품&gt; 요소 (부트스트래퍼) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 90179df4595ea58a771dd941ea388555b52c7374
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 32e1689331ff41cec007c98be5410b518f1e44e9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080407"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821233"
 ---
 # <a name="ltproductgt-element-bootstrapper"></a>&lt;제품&gt; 요소 (부트스트래퍼)
 `Product` 요소는 제품 파일 내의 최상위 XML 요소입니다.  
@@ -146,7 +144,7 @@ ProductCode
 |---------------|-----------------|  
 |`ProductCode`|제품에 대 한 고유 식별자입니다.|  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드 예제에는 설치에 대 한 완전 한 제품 파일을 보여 줍니다는 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]합니다.  
   
 ```xml  
@@ -251,5 +249,5 @@ ProductCode
 </Product>  
 ```  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [제품 및 패키지 스키마 참조](../deployment/product-and-package-schema-reference.md)

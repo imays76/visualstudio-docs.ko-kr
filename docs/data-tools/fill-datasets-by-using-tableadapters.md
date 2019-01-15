@@ -1,5 +1,5 @@
 ---
-title: Tableadapter를 사용 하 여 데이터 집합 채우기
+title: TableAdapters를 사용하여 데이터 세트 채우기
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,17 +18,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 673c364c1750afbaa4b319c40550be7cfac3b53b
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
-ms.translationtype: MT
+ms.openlocfilehash: 260ea65af041e6a50afb163f697d5ff366cff825
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131975"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835986"
 ---
-# <a name="fill-datasets-by-using-tableadapters"></a>Tableadapter를 사용 하 여 데이터 집합 채우기
+# <a name="fill-datasets-by-using-tableadapters"></a>TableAdapters를 사용하여 데이터 세트 채우기
 
 TableAdapter 구성 요소를 기반으로 쿼리 또는 저장된 프로시저 수를 지정 하는 하나 이상의 데이터베이스에서 데이터를 사용 하 여 데이터 집합을 채웁니다. Tableadapter를 수행할 수도 있습니다 추가, 업데이트 및 데이터 집합에 수행한 변경 내용을 유지 하려면 데이터베이스를 삭제 합니다. 또한 특정 테이블에 관련 되지 않은 전역 명령을 실행할 수 있습니다.
 
@@ -42,9 +41,9 @@ TableAdapter 작업에 대 한 자세한 내용은 다음이 항목 중 하나�
 |[TableAdapter 만들기 및 구성](../data-tools/create-and-configure-tableadapters.md)|Tableadapter 만들기 및 구성 하는 디자이너를 사용 하는 방법|
 |[매개 변수가 있는 TableAdapter 쿼리 만들기](../data-tools/create-parameterized-tableadapter-queries.md)|사용자가 인수 TableAdapter 프로시저 또는 쿼리를 제공할 수 있게 하는 방법|
 |[TableAdapter를 사용하여 데이터베이스에 직접 액세스](../data-tools/directly-access-the-database-with-a-tableadapter.md)|Tableadapter의 Dbdirect 메서드를 사용 하는 방법|
-|[데이터 집합을 채우는 동안 제약 조건 해제](../data-tools/turn-off-constraints-while-filling-a-dataset.md)|데이터를 업데이트할 때 foreign key 제약 조건을 사용 하는 방법|
-|[TableAdapter의 기능을 확장 하는 방법](../data-tools/fill-datasets-by-using-tableadapters.md)|Tableadapter를 사용자 지정 코드를 추가 하는 방법|
-|[XML 데이터를 Dataset에 읽어오기](../data-tools/read-xml-data-into-a-dataset.md)|XML을 사용 하는 방법|
+|[데이터 세트를 채우는 동안 제약 조건 해제](../data-tools/turn-off-constraints-while-filling-a-dataset.md)|데이터를 업데이트할 때 foreign key 제약 조건을 사용 하는 방법|
+|[TableAdapter의 기능 확장 방법](../data-tools/fill-datasets-by-using-tableadapters.md)|Tableadapter를 사용자 지정 코드를 추가 하는 방법|
+|[XML 데이터를 데이터 세트에 읽어오기](../data-tools/read-xml-data-into-a-dataset.md)|XML을 사용 하는 방법|
 
 <a name="tableadapter-overview"></a>
 
@@ -54,7 +53,7 @@ Tableadapter는 데이터베이스, 쿼리 실행된 또는 저장된 프로시�
 
 ![클라이언트 응용 프로그램의 데이터 흐름](../data-tools/media/clientdatadiagram.gif)
 
-사용 하 여 Tableadapter 설계 되어는 **데이터 집합 디자이너**, TableAdapter 클래스의 중첩 클래스로 생성 되지 않습니다 <xref:System.Data.DataSet>합니다. 각 데이터 집합에 관련 된 별도 네임 스페이스에 있습니다. 예를 들어 라는 데이터 집합이 있다고 `NorthwindDataSet`, 연관 된 Tableadapter <xref:System.Data.DataTable>의 합니다 `NorthwindDataSet` 에 `NorthwindDataSetTableAdapters` 네임 스페이스입니다. 특정 TableAdapter에 프로그래밍 방식으로 액세스 하려면 TableAdapter의 새 인스턴스를 선언 해야 합니다. 예를 들어:
+사용 하 여 Tableadapter 설계 되어는 **데이터 집합 디자이너**, TableAdapter 클래스의 중첩 클래스로 생성 되지 않습니다 <xref:System.Data.DataSet>합니다. 각 데이터 집합에 관련 된 별도 네임 스페이스에 있습니다. 예를 들어 라는 데이터 집합이 있다고 `NorthwindDataSet`, 연관 된 Tableadapter <xref:System.Data.DataTable>의 합니다 `NorthwindDataSet` 에 `NorthwindDataSetTableAdapters` 네임 스페이스입니다. 특정 TableAdapter에 프로그래밍 방식으로 액세스 하려면 TableAdapter의 새 인스턴스를 선언 해야 합니다. 예:
 
 [!code-csharp[VbRaddataTableAdapters#7](../data-tools/codesnippet/CSharp/fill-datasets-by-using-tableadapters_1.cs)]
 [!code-vb[VbRaddataTableAdapters#7](../data-tools/codesnippet/VisualBasic/fill-datasets-by-using-tableadapters_1.vb)]
@@ -116,7 +115,7 @@ TableAdapter를 사용 하면 효과적으로 일반적으로 수행 하는 명�
 
 ## <a name="tableadapter-support-for-nullable-types"></a>TableAdapter nullable 형식 지원
 
-Tableadapter에 nullable 형식 지원 `Nullable(Of T)` 고 `T?`입니다. Visual Basic의 nullable 형식에 대한 자세한 내용은 [Nullable 값 형식](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types)을 참조하세요. C#의 nullable 형식에 대 한 자세한 내용은 참조 하세요. [nullable 형식을 사용할](/dotnet/csharp/programming-guide/nullable-types/using-nullable-types)합니다.
+Tableadapter에 nullable 형식 지원 `Nullable(Of T)` 고 `T?`입니다. Visual Basic의 nullable 형식에 대한 자세한 내용은 [Nullable 값 형식](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types)을 참조하세요. Nullable 형식에 대 한 자세한 내용은 C#를 참조 하세요 [nullable 형식을 사용할](/dotnet/csharp/programming-guide/nullable-types/using-nullable-types)합니다.
 
 <a name="tableadaptermanager-reference"></a>
 
@@ -137,8 +136,8 @@ TableAdapterManager 클래스가 아닌 부분을 [!INCLUDE[dnprdnshort](../code
 
 ## <a name="security"></a>보안
 
-CommandType 속성이로 설정 된 데이터 명령을 사용 하면 <xref:System.Data.CommandType.Text>, 신중 하 게 데이터베이스에 전달 하기 전에 클라이언트에서 전송 되는 정보를 확인 합니다. 악의적인 사용자가 송신 하려고 할 수 있습니다 (삽입) 하기 위해 무단으로 액세스 하거나 데이터베이스를 손상 시키는 SQL 문을 수정 또는 추가 합니다. 데이터베이스에 사용자 입력을 전송 하기 전에 항상 정보가 유효한 지 확인 합니다. 매개 변수가 있는 쿼리 또는 저장된 프로시저를 가능 하면 항상 사용 하는 것이 좋습니다.
+CommandType 속성이로 설정 된 데이터 명령을 사용 하면 <xref:System.Data.CommandType.Text>, 신중 하 게 데이터베이스에 전달 하기 전에 클라이언트에서 전송 되는 정보를 확인 합니다. 악의적인 사용자가 인증되지 않은 액세스 권한을 얻거나 데이터베이스를 손상시키기 위해 수정되었거나 추가된 SQL 문을 전송(주입)할 수도 있습니다. 데이터베이스에 사용자 입력을 전송 하기 전에 항상 정보가 유효한 지 확인 합니다. 매개 변수가 있는 쿼리 또는 저장된 프로시저를 가능 하면 항상 사용 하는 것이 좋습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-- [데이터 집합 도구](../data-tools/dataset-tools-in-visual-studio.md)
+- [데이터 세트 도구](../data-tools/dataset-tools-in-visual-studio.md)

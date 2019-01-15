@@ -1,8 +1,6 @@
 ---
 title: 64 비트 응용 프로그램에 대 한 필수 구성 요소 배포 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -20,15 +18,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80ed8d652a36235ef43ce0cdeb78729d560be476
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 86d7512101adf58f13a07481910ab1c28251b8da
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831265"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885253"
 ---
-# <a name="deploy-prerequisites-for-64-bit-applications"></a>64 비트 응용 프로그램에 대 한 필수 구성 요소 배포
-ClickOnce 배포에서는 64비트 플랫폼에 응용 프로그램을 설치할 수 있습니다. 대상 플랫폼 **x86** 32 비트 플랫폼에 대 한 **x64** AMD64와 EM64T 명령 집합을 지 원하는 컴퓨터 및 **Itanium** 64 비트 Itanium 프로세서에 대 한 합니다.  
+# <a name="deploy-prerequisites-for-64-bit-applications"></a>64비트 애플리케이션의 필수 구성 요소 배포
+ClickOnce 배포에서는 64비트 플랫폼에 응용 프로그램을 설치할 수 있습니다. 대상 플랫폼은 32비트 플랫폼의 경우 **x86**, AMD64/EM64T 명령 집합을 지원하는 머신의 경우 **x64**, 64비트 Itanium 프로세서의 경우 **Itanium**입니다.  
 
 ## <a name="prerequisites"></a>전제 조건  
  다음 테이블에는 64비트 응용 프로그램 설치의 필수 구성 요소로 사용할 수 있는 재배포 가능 파일이 나와 있습니다.  
@@ -44,7 +42,7 @@ ClickOnce 배포에서는 64비트 플랫폼에 응용 프로그램을 설치할
 | Microsoft .NET Framework 4(x86 및 x64) | 예 | |
 | Microsoft .NET Framework 4 Client Profile(x86 및 x64) | 예 | |
 
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [응용 프로그램, 서비스 및 구성 요소 배포](../deployment/deploying-applications-services-and-components.md)   
- [방법: ClickOnce 응용 프로그램을 사용 하 여 필수 구성 요소 설치](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
- [64비트 응용 프로그램](/dotnet/framework/64-bit-apps)
+ [방법: ClickOnce 애플리케이션의 필수 구성 요소 설치](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [64비트 애플리케이션](/dotnet/framework/64-bit-apps)

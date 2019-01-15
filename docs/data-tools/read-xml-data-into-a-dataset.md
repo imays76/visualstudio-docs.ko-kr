@@ -19,15 +19,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1e43d118a5fcfe00a8eb6eaa7f34a17ff1f6a4be
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
-ms.translationtype: HT
+ms.openlocfilehash: 2f1eb51286ae2d64738b91d997a21596fa2a7c35
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389217"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921473"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>XML 데이터를 데이터 세트에 읽어오기
 
@@ -51,7 +50,7 @@ Visual Basic 또는 시각적 개체를 만들이 단계에서는 C# 프로젝�
 
 이 연습에서는 데이터 집합에 XML 데이터 읽기에 집중, 하므로 XML 파일의 내용은 제공 됩니다.
 
-1. 프로젝트 **메뉴에서 새 항목 추가**를 선택합니다.
+1. **프로젝트** 메뉴에서 **새 항목 추가**를 선택합니다.
 
 2. 선택 **XML 파일**, 파일 이름을 **authors.xml**를 선택한 후 **추가**합니다.
 
@@ -152,7 +151,7 @@ Visual Basic 또는 시각적 개체를 만들이 단계에서는 C# 프로젝�
     |Control|속성|설정|
     |-------------|--------------|-------------|
     |`TextBox1`|**Multiline**|`true`|
-    ||ScrollBars|**세로**|
+    ||**ScrollBars**|**세로**|
     |`Button1`|**이름**|`ReadXmlButton`|
     ||**텍스트**|`Read XML`|
     |`Button2`|**이름**|`ShowSchemaButton`|

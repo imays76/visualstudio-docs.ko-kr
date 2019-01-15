@@ -15,15 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 471b62c35cbe7098d52e9cbeb08be29cd39c7d58
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
-ms.translationtype: MT
+ms.openlocfilehash: ecedfce45ab30d70138511ab0c87206bb35a2148
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180427"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919471"
 ---
 # <a name="troubleshoot-service-references"></a>서비스 참조 문제 해결
 
@@ -49,7 +48,7 @@ ms.locfileid: "39180427"
 
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>원격 데스크톱을 통해 서비스에 액세스 하는 오류
 
-사용자가 액세스 한 원격 데스크톱 연결을 통해 웹에서 호스팅되는 WCF 서비스에 관리 권한이 없는 경우 NTLM 인증이 사용 됩니다. 사용자가 다음 오류 메시지가 나타날 수 사용자에 관리 권한이 없는 경우: "HTTP 요청이 클라이언트 인증 구성표 '익명' 권한이 부여 되지 않습니다. 합니다. 서버에서 수신한 인증 헤더가 되었습니다 'NTLM'. "
+사용자가 액세스 한 원격 데스크톱 연결을 통해 웹에서 호스팅되는 WCF 서비스에 관리 권한이 없는 경우 NTLM 인증이 사용 됩니다. 사용자 관리 권한이 없으면 사용자의 다음과 같은 오류 메시지가 나타날 수 있습니다. "HTTP 요청이 클라이언트 인증 구성표 '익명' 권한이 부여 되지 않습니다. 합니다. 서버에서 수신한 인증 헤더가 되었습니다 'NTLM'. "
 
 이 오류를 해결하려면
 
@@ -96,14 +95,14 @@ ms.locfileid: "39180427"
 
 이 오류를 해결 하려면 RSS 피드를 사용 하지 않도록 설정 합니다.
 
-1.  Internet Explorer에서에 **도구** 메뉴에서 클릭 **인터넷 옵션**합니다.
+1.  Internet Explorer의 **도구** 메뉴에서 **인터넷 옵션**을 클릭합니다.
 
 2.  에 **콘텐츠** 탭의 **피드** 섹션에서 **설정**.
 
 3.  에 **피드 설정** 대화 상자, 일반 합니다 **피드 읽기용 보기를 켜려면** 확인란을 선택한 다음 클릭 **확인**.
 
-4.  클릭 **확인** 닫으려면 합니다 **인터넷 옵션** 대화 상자.
+4.  **확인**을 클릭하여 **인터넷 옵션** 대화 상자를 닫습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [Windows Communication Foundation 서비스 및 Visual Studio의 WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

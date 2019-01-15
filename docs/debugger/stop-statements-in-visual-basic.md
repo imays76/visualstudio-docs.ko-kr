@@ -1,8 +1,6 @@
 ---
 title: Visual Basic의 stop 문 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 74be447f523713cdef9ee5c52876ee0acf4c25b2
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
-ms.translationtype: MT
+ms.openlocfilehash: fefd2c2957ea7f659d3cbf7a0c866cc3586b2ae3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056145"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934468"
 ---
 # <a name="stop-statements-in-visual-basic"></a>Visual Basic의 Stop 문
 중단점을 설정하는 대신 Visual Basic의 Stop 문을 사용하는 프로그래밍 방식을 제공합니다. 디버거에서는 Stop 문이 나올 경우 프로그램 실행을 중단하여 중단 모드를 시작합니다. C# 프로그래머는 System.Diagnostics.Debugger.Break에 대한 호출을 사용하여 동일한 결과를 얻을 수 있습니다.  
@@ -35,7 +33,7 @@ ms.locfileid: "37056145"
   
  End 문과 달리, Stop 문은 변수를 다시 설정하거나 사용자를 디자인 모드로 되돌리지 않습니다. 디버그 메뉴에서 계속을 선택하면 계속 응용 프로그램을 실행할 수 있습니다.  
   
- 디버거 외부에서 Visual Basic 응용 프로그램을 실행할 경우, Just-in-Time 디버깅이 활성화되면 Stop 문이 디버거를 실행합니다. Just-in-Time 디버깅이 활성화되지 않으면, Stop 문이 실행을 종료하는 End 문처럼 동작합니다. QueryUnload 이벤트나 Unload 이벤트가 발생하지 않으므로, Visual Basic 응용 프로그램의 릴리스 버전에서 모든 Stop 문을 제거해야 합니다. 자세한 내용은 [Just-In-Time 디버깅](../debugger/just-in-time-debugging-in-visual-studio.md)합니다.  
+ 디버거 외부에서 Visual Basic 응용 프로그램을 실행할 경우, Just-in-Time 디버깅이 활성화되면 Stop 문이 디버거를 실행합니다. Just-in-Time 디버깅이 활성화되지 않으면, Stop 문이 실행을 종료하는 End 문처럼 동작합니다. QueryUnload 이벤트나 Unload 이벤트가 발생하지 않으므로, Visual Basic 응용 프로그램의 릴리스 버전에서 모든 Stop 문을 제거해야 합니다. 자세한 내용은 [Just-In-Time 디버깅](../debugger/just-in-time-debugging-in-visual-studio.md)을 참조하세요.  
   
  다음과 같은 조건부 컴파일을 사용하면 이 경우에 Stop 문을 제거하지 않아도 됩니다.  
   

@@ -1,8 +1,6 @@
 ---
 title: 그래픽 이벤트 목록 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.eventlist
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3382637dfbdd10618ccbb9a5d9cf66dba603f4dd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 555a786ceed97bb83b0924eef45f102c43755b2e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841002"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870744"
 ---
 # <a name="graphics-event-list"></a>그래픽 이벤트 목록
 Visual Studio Graphics Analyzer의 그래픽 이벤트 목록을 사용하여 게임 또는 앱의 프레임 렌더링 중 기록된 Direct3D 이벤트를 살펴봅니다.  
@@ -119,4 +117,4 @@ Visual Studio 2017 이상 포함 된 **리소스 기록** 창입니다.  조사�
 <!-- /VERSIONLESS -->
 
 ## <a name="see-also"></a>참고 항목  
- [연습: 장치 상태로 인해 누락된 개체](walkthrough-missing-objects-due-to-device-state.md)
+ [연습: 디바이스 상태로 인해 누락된 개체](walkthrough-missing-objects-due-to-device-state.md)

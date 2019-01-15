@@ -1,8 +1,6 @@
 ---
-title: 네이티브 코드 디버깅 Faq | Microsoft Docs
-ms.custom: ''
+title: 네이티브 코드 디버그 Faq | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.faq
@@ -22,25 +20,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4de62bc77003d22398e826f388489e57a372ebea
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: a38feec1e95dd474623924aca896a24753c8ae17
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31482063"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866935"
 ---
 # <a name="debugging-native-code-faqs"></a>네이티브 코드 디버깅 FAQ
 다음 항목은 자주 문의되는 몇 가지 질문에 대한 답입니다.  
   
--   [내 프로그램을 독립 실행형을 실행 하는 경우 액세스 위반을 어떻게 디버깅할 수 있습니까?](../debugger/how-can-i-debug-access-violations-when-running-my-program-outside-the-debugger-q.md)  
+-   [프로그램을 독립 실행형으로 실행하는 경우 액세스 위반을 어떻게 디버깅할 수 있습니까?](../debugger/how-can-i-debug-access-violations-when-running-my-program-outside-the-debugger-q.md)  
   
 -   [액세스 위반을 어떻게 디버그할 수 있나요?](../debugger/how-can-i-debug-an-access-violation-q.md)  
   
--   [어떻게 어떻게 확인 하나요 포인터는 메모리 주소를 손상 시키는 지?](../debugger/how-can-i-find-out-if-my-pointers-corrupt-a-memory-address-q.md)  
+-   [포인터가 메모리 주소를 손상시키는지 어떻게 알 수 있습니까?](../debugger/how-can-i-find-out-if-my-pointers-corrupt-a-memory-address-q.md)  
   
 -   [무엇이 잘못된 매개 변수 값을 전달하는지 어떻게 알 수 있나요?](../debugger/how-can-i-find-out-who-is-passing-a-wrong-parameter-value-q.md)  
   
--   [함수를 수백 번 실패 한 호출의 호출 하는 경우?](../debugger/when-calling-a-function-hundreds-of-times-how-do-i-know-which-call-failed-q.md)  
+-   [함수를 수백 번 호출하는 경우 어떤 호출이 실패했습니까?](../debugger/when-calling-a-function-hundreds-of-times-how-do-i-know-which-call-failed-q.md)  
   
 -   [Win32 오류 코드를 어디에서 찾을 수 있나요?](../debugger/where-can-i-look-up-win32-error-codes-q.md)  
   
@@ -48,7 +46,7 @@ ms.locfileid: "31482063"
   
 -   [전경 프로그램을 디버그하는 동안 디버거 창을 어떻게 사용하나요?](../debugger/how-can-i-use-debugger-windows-while-debugging-a-foreground-program-q.md)  
   
--   [중지 된 경우 MFC에서, 어떻게 MFC를 호출한 함수로 돌아갈 수 있습니까?](../debugger/how-to-get-back-to-the-function-that-called-mfc-if-halted.md)  
+-   [MFC에서 중지된 경우, 어떻게 MFC를 호출한 함수로 돌아갈 수 있습니까?](../debugger/how-to-get-back-to-the-function-that-called-mfc-if-halted.md)  
   
 ## <a name="see-also"></a>참고 항목  
  [디버거 보안](../debugger/debugger-security.md)   

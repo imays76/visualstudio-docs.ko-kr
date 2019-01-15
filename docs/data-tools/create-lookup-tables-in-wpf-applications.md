@@ -1,5 +1,5 @@
 ---
-title: WPF 응용 프로그램에서 조회 테이블 만들기
+title: WPF 애플리케이션에서 조회 테이블 만들기
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,17 +15,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c76f769234d8b8c14ccd44d8c2cf4c669bf48ffd
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 5cf04b804ea377723a268c080b96a24442e31486
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305483"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947662"
 ---
-# <a name="create-lookup-tables-in-wpf-applications"></a>WPF 응용 프로그램에서 조회 테이블 만들기
+# <a name="create-lookup-tables-in-wpf-applications"></a>WPF 애플리케이션에서 조회 테이블 만들기
 
 용어 *조회 표* (라고도 *조회 바인딩을*) 다른 테이블의 외래 키 필드의 값을 기반으로 하는 하나의 데이터 테이블의에서 정보를 표시 하는 컨트롤에 설명 합니다. 부모 테이블의 기본 노드 드래그 하 여 조회 테이블을 만들 수도 있고 개체를 **데이터 원본** 열 또는 관련된 자식 테이블의 속성에 이미 바인딩된 컨트롤을 창입니다.
 
@@ -37,9 +36,9 @@ ms.locfileid: "52305483"
 
     -   데이터 집합 또는 엔터티 데이터 모델입니다.
 
-    -   WCF 데이터 서비스에서 WCF 서비스 또는 웹 서비스입니다. 자세한 내용은 [방법: 데이터 서비스에 연결할](../data-tools/how-to-connect-to-data-in-a-service.md)합니다.
+    -   WCF 데이터 서비스에서 WCF 서비스 또는 웹 서비스입니다. 자세한 내용은 [방법: 서비스의 데이터에 연결](../data-tools/how-to-connect-to-data-in-a-service.md)을 참조하세요.
 
-    -   개체 자세한 내용은 [Visual Studio에서 개체를 바인딩할](bind-objects-in-visual-studio.md)합니다.
+    -   개체. 자세한 내용은 [Visual Studio에서 개체를 바인딩할](bind-objects-in-visual-studio.md)합니다.
 
     > [!NOTE]
     > 조회 테이블을 만들려면 먼저 프로젝트에 대 한 데이터 원본으로 두 개의 관련된 테이블이 나 개체가 존재 해야 합니다.
@@ -48,7 +47,7 @@ ms.locfileid: "52305483"
 
      유효한 놓기 대상에 대 한 자세한 내용은 참조 하세요. [Visual Studio에서 데이터를 바인딩할 WPF 컨트롤](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)합니다.
 
-3.  데이터 **메뉴에서 데이터 소스 표시**를 클릭하여 데이터 소스** 창을 엽니다.
+3.  **데이터** 메뉴에서 **데이터 원본 표시**를 클릭하여 **데이터 원본** 창을 엽니다.
 
 4.  노드를 확장 합니다 **데이터 원본** 창에서 부모 테이블 또는 개체와 관련 된 자식 테이블 또는 개체 표시 될 때까지 합니다.
 
@@ -93,5 +92,5 @@ ms.locfileid: "52305483"
 ## <a name="see-also"></a>참고 항목
 
 - [Visual Studio에서 데이터에 WPF 컨트롤 바인딩](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
-- [WPF 응용 프로그램에서 관련 데이터 표시](../data-tools/display-related-data-in-wpf-applications.md)
-- [연습: WPF 응용 프로그램에서 관련 데이터 표시](../data-tools/display-related-data-in-wpf-applications.md)
+- [WPF 애플리케이션에서 관련 데이터 표시](../data-tools/display-related-data-in-wpf-applications.md)
+- [연습: WPF 애플리케이션에서 관련 데이터 표시](../data-tools/display-related-data-in-wpf-applications.md)

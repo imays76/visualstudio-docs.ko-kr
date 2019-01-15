@@ -1,8 +1,6 @@
 ---
-title: HTML 및 CSS 샘플 코드를 디버깅 | Microsoft Docs
-ms.custom: ''
+title: HTML 및 CSS 샘플 코드 디버그 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,19 +13,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 182cda17cdd8a9b08a6e0d8b0130efa887be6368
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 1ffb41dc978598264cfff165602c9c9a8e4cce71
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31456795"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947558"
 ---
-# <a name="debug-html-and-css-sample-code"></a>샘플 코드를 HTML 및 CSS 디버그
+# <a name="debug-html-and-css-sample-code"></a>HTML 및 CSS 샘플 코드 디버그
   
- 이 항목의 코드에 대 한 샘플 파일이 [퀵 스타트: HTML 및 CSS 디버깅](../debugger/quickstart-debug-html-and-css.md)합니다. QuickStart에서 의도적으로 제공되는 오류는 이 버전의 코드에서 수정됩니다.  
+ 이 항목의 코드에 대 한 샘플 파일이 [빠른 시작: HTML 및 CSS 디버그](../debugger/quickstart-debug-html-and-css.md) QuickStart에서 의도적으로 제공되는 오류는 이 버전의 코드에서 수정됩니다.  
   
 ## <a name="sample-code"></a>샘플 코드  
- 다음 HTML 코드에서 사용 되는 \<본문 > QuickStart 태그에서에서 합니다.  
+ 다음 HTML 코드는 QuickStart의 \<body> 태그에서 사용됩니다.  
   
 ```html  
 <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -51,7 +49,7 @@ ms.locfileid: "31456795"
 }  
 ```  
   
- 다음 코드 예제에서는 default.js의 전체 JavaScript 코드를 보여 줍니다. 이 코드의 WinJS 네임 스페이스에 대 한 참조는 템플릿의 default.html 파일에서 됩니다.  
+ 다음 코드 예제에서는 default.js의 전체 JavaScript 코드를 보여 줍니다. 이 코드의 WinJS 네임스페이스에 대한 참조는 템플릿의 default.html 파일에 있습니다.  
   
 ```javascript  
 (function () {  

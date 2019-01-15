@@ -1,8 +1,6 @@
 ---
 title: '방법: 네이티브 런타임 검사 사용 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - c.runtime.errorchecks
@@ -39,14 +37,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cc4e4b9ee24bc7be9126866ae804f1b3c6d6dba6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c5f71d6b201213b86caaf9d6e9761975493550a6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860814"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830958"
 ---
-# <a name="how-to-use-native-run-time-checks"></a>방법: 네이티브 런타임 검사 기능 사용
+# <a name="how-to-use-native-run-time-checks"></a>방법: 네이티브 런타임 검사 사용
 Visual C++에서는 네이티브 [runtime_checks](/cpp/preprocessor/runtime-checks) 를 사용하여 다음과 같은 일반적인 런타임 오류를 catch할 수 있습니다.  
   
 - 스택 포인터 손상  

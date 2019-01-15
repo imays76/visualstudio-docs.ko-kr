@@ -1,8 +1,6 @@
 ---
-title: '오류: 단계로 자동으로 서버에 없습니다. | Microsoft Docs'
-ms.custom: ''
+title: '오류: 서버에 자동으로 단계 수 없습니다. | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.causality_no_server_response
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37298dcbb2443755136c4c57eb4633fcb3197a87
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 0d2c1a36555f9861fabe30937c6ecde856277cdf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849517"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955908"
 ---
-# <a name="error-unable-to-automatically-step-into-the-server"></a>오류: 서버에 대해 자동으로 한 단계씩 코드를 실행할 수 없습니다.
+# <a name="error-unable-to-automatically-step-into-the-server"></a>오류: 서버에 대해 자동으로 한 단계씩 코드를 실행할 수 없음
 이 오류 메시지는 다음과 같습니다.  
   
  서버에 대해 자동으로 한 단계씩 코드를 실행할 수 없습니다. 원격 프로시저가 실행되기 전에 디버거에 알리지 않았습니다.  
@@ -35,9 +33,9 @@ ms.locfileid: "49849517"
   
  가능한 원인은 다음과 같습니다.  
   
-- [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 응용 프로그램의 web.config 파일에서 디버그 모드를 "true"로 설정하지 않았습니다. [ASP.NET 응용 프로그램의 디버그 모드](../debugger/how-to-enable-debugging-for-aspnet-applications.md)를 참조하세요.  
+- [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 애플리케이션의 web.config 파일에서 디버그 모드를 "true"로 설정하지 않았습니다. [ASP.NET 애플리케이션의 디버그 모드](../debugger/how-to-enable-debugging-for-aspnet-applications.md)를 참조하세요.  
   
-- Visual Studio가 설치된 후 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 버전이 설치되었습니다. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 은 Visual Studio보다 먼저 설치해야 합니다. 이 문제를 해결 하려면 Windows를 사용 하 여 **제어판 > 프로그램 및 기능** Visual Studio 설치를 복구 합니다.  
+- Visual Studio가 설치된 후 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 버전이 설치되었습니다. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 은 Visual Studio보다 먼저 설치해야 합니다. 이 문제를 해결하려면 Windows **제어판 >프로그램 및 기능**을 사용하여 Visual Studio 설치를 복구합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [원격 디버깅 오류 및 문제 해결](../debugger/remote-debugging-errors-and-troubleshooting.md)   

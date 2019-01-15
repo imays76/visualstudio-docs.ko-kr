@@ -1,8 +1,6 @@
 ---
-title: '연습: 잘못 구성 된 파이프라인으로 인해 개체 누락 된 | Microsoft Docs'
-ms.custom: ''
+title: '연습: 누락 된 개체를 잘못 구성 된 파이프라인으로 인해 | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: ed8ac02d-b38f-4055-82fb-67757c2ccbb9
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 88e313b7db1306465bce530eea41e875227abc0e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4619876794abb07a76a38af78d21e51f8a1e86dc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855185"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863971"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>연습: 잘못 구성된 파이프라인으로 인해 누락된 개체
 이 연습에서는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 그래픽 진단 도구를 사용하여 설정되지 않은 픽셀 셰이더로 인해 누락된 개체를 조사하는 방법을 보여 줍니다.  
@@ -48,7 +46,7 @@ ms.locfileid: "49855185"
   
     ![Visual Studio에서 그래픽 로그 문서](media/gfx_diag_demo_misconfigured_pipeline_step_1.png "gfx_diag_demo_misconfigured_pipeline_step_1")  
   
-   문제를 보이는 프레임을 선택한 후에 **그래픽 이벤트 목록**을 사용하여 진단을 시작할 수 있습니다. **그래픽 이벤트 목록** 에는 활성 프레임을 렌더링하여 장치를 상태를 설정하거나, 버퍼를 만들고 업데이트하거나 프레임에 나타나는 개체를 그리는 등의 작업을 하기 위해 수행한 모든 Direct3D API 호출이 포함됩니다. 많은 유형의 호출(그리기, 디스패치, 복사 또는 지우기 등)은 앱이 예상대로 작동할 때 렌더링 대상에 항상은 아니지만 종종 해당 변경 사항이 생기므로 흥미롭습니다. 그리기 호출은 각각 앱이 렌더링하는 기하 도형을 나타내므로 특히 흥미롭습니다.  
+   문제를 보이는 프레임을 선택한 후에 **그래픽 이벤트 목록**을 사용하여 진단을 시작할 수 있습니다. **그래픽 이벤트 목록** 에는 활성 프레임을 렌더링하여 디바이스를 상태를 설정하거나, 버퍼를 만들고 업데이트하거나 프레임에 나타나는 개체를 그리는 등의 작업을 하기 위해 수행한 모든 Direct3D API 호출이 포함됩니다. 많은 유형의 호출(그리기, 디스패치, 복사 또는 지우기 등)은 앱이 예상대로 작동할 때 렌더링 대상에 항상은 아니지만 종종 해당 변경 사항이 생기므로 흥미롭습니다. 그리기 호출은 각각 앱이 렌더링하는 기하 도형을 나타내므로 특히 흥미롭습니다.  
   
    우리는 렌더링 대상에 누락된 개체는 포함되지 않지만, 다른 오류가 있는 것으로 표시되지 않음을 알고 있으므로, **그래픽 파이프라인 단계** 도구와 함께 **그래픽 이벤트 목록** 을 사용하여 누락된 개체의 기하 도형에 해당하는 그리기 호출을 판단할 수 있습니다. **그래픽 파이프라인 단계** 창은 렌더링 대상에 대한 효과에 상관없이 각 그리기 호출에 전송된 기하 도형을 보여 줍니다. 그리기 호출을 진행함에 따라, 기하 도형이 각각 사용되는 단계를 통과할 때 파이프라인 단계가 각 호출과 관련된 기하 도형을 표시하도록 업데이트되고, 렌더링 대상 출력도 호출이 완료되면 렌더링 대상의 상태를 표시하도록 업데이트됩니다.  
   
@@ -69,13 +67,13 @@ ms.locfileid: "49855185"
   
     ![DrawIndexed 이벤트 및 파이프라인에 미치는 영향](media/gfx_diag_demo_misconfigured_pipeline_step_2.png "gfx_diag_demo_misconfigured_pipeline_step_2")  
   
-   앱이 누락된 개체의 기하 도형에 대한 그리기 호출을 발행했음을 확인하고 픽셀 셰이더 단계 비활성 상태임이 발견되면 디바이스 상태를 검사하여 찾은 사항들을 확인할 수 있습니다. **그래픽 개체 표** 를 사용하여 장치 컨텍스트와 기타 Direct3D 개체 데이터를 검사할 수 있습니다.  
+   앱이 누락된 개체의 기하 도형에 대한 그리기 호출을 발행했음을 확인하고 픽셀 셰이더 단계 비활성 상태임이 발견되면 디바이스 상태를 검사하여 찾은 사항들을 확인할 수 있습니다. **그래픽 개체 표** 를 사용하여 디바이스 컨텍스트와 기타 Direct3D 개체 데이터를 검사할 수 있습니다.  
   
 #### <a name="to-examine-device-context"></a>디바이스 컨텍스트를 검사하려면,  
   
-1. **d3d11 장치 컨텍스트**를 엽니다. 에 **그래픽 파이프라인 단계** 창 선택 합니다 **ID3D11DeviceContext** 포함 된 링크를 `DrawIndexed` 창의 위쪽에 표시 되는 호출.  
+1. **d3d11 디바이스 컨텍스트**를 엽니다. **그래픽 파이프라인 단계** 창에서 창의 위쪽에 표시되는 `DrawIndexed` 호출의 일부인 **ID3D11DeviceContext** 링크를 선택합니다.  
   
-2. **d3d11 장치 컨텍스트** 탭에 표시되는 장치 상태를 검사하여 그리기 호출 동안 활성 상태였던 픽셀 셰이더가 없음을 확인합니다. 이 시나리오에서 **픽셀 셰이더 상태**아래에 표시되는 **셰이더 일반 정보**는 셰이더가 **NULL**임을 나타냅니다.  
+2. **d3d11 디바이스 컨텍스트** 탭에 표시되는 디바이스 상태를 검사하여 그리기 호출 동안 활성 상태였던 픽셀 셰이더가 없음을 확인합니다. 이 시나리오에서 **픽셀 셰이더 상태**아래에 표시되는 **셰이더 일반 정보**는 셰이더가 **NULL**임을 나타냅니다.  
   
     ![픽셀 셰이더 상태를 표시 하는 D3D 11 장치 컨텍스트](media/gfx_diag_demo_misconfigured_pipeline_step_4.png "gfx_diag_demo_misconfigured_pipeline_step_4")  
   

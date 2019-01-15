@@ -1,8 +1,6 @@
 ---
 title: '방법: 게시 마법사를 사용 하 여 ClickOnce 응용 프로그램 게시 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 890a61290d7606fb2a03ea7aed2c4782e5b69b67
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 1a6b916e8050bd68f4ccd601e92725768a01c4c7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388865"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935049"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>방법: 게시 마법사를 사용하여 ClickOnce 애플리케이션 게시
 ClickOnce 응용 프로그램을 사용자에게 제공하려면 파일 공유나 경로, FTP 서버 또는 이동식 미디어에 해당 응용 프로그램을 게시해야 합니다. 게시 마법사를 사용하여 애플리케이션을 게시할 수 있습니다. 게시와 관련된 추가 속성은 **프로젝트 디자이너**의 **게시** 페이지에서 사용 가능합니다. 자세한 내용은 [ClickOnce 애플리케이션 게시](../deployment/publishing-clickonce-applications.md)를 참조하세요.

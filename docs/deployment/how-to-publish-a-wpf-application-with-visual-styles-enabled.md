@@ -1,8 +1,6 @@
 ---
-title: '방법: 비주얼 스타일을 사용 하도록 설정 하 여 WPF 응용 프로그램 게시 | Microsoft Docs'
-ms.custom: ''
+title: '방법: 사용 하도록 설정 하는 비주얼 스타일을 사용 하 여 WPF 응용 프로그램 게시 | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 ms.assetid: 73b22b02-fc75-42aa-82d3-51fdcaf8e5c8
 author: mikejo5000
@@ -10,14 +8,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4dc45c624d44ed550fb491fc57638ba033090346
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: fdb508a84e9c258463ca2a9f3971cd51d55b402c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388110"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861503"
 ---
-# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>방법: 시각적 개체 스타일을 사용하여 WPF 애플리케이션 게시
+# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>방법: 비주얼 스타일을 사용하여 WPF 애플리케이션 게시
 비주얼 스타일을 사용자가 선택한 테마에 따라 변경 되는 공용 컨트롤의 모양을 사용 하도록 설정 합니다. 기본적으로 비주얼 스타일을 수동으로 활성화 해야 하므로 Windows Presentation Foundation (WPF) 응용 프로그램에 대 한 사용 되지 않습니다. 그러나 WPF 응용 프로그램에 대 한 비주얼 스타일을 사용 하도록 설정 하 고 다음 솔루션을 게시 하면 오류가 발생 합니다. 이 항목에서는이 오류 및 사용 하도록 설정 하는 비주얼 스타일을 사용 하 여 WPF 응용 프로그램을 게시 하기 위한 프로세스를 해결 하는 방법을 설명 합니다. 비주얼 스타일에 대 한 자세한 내용은 참조 하세요. [비주얼 스타일이 개요](/windows/desktop/Controls/visual-styles-overview)합니다. 오류 메시지에 대 한 자세한 내용은 참조 하세요. [ClickOnce 배포 관련 오류 문제 해결](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)합니다.  
   
  오류를 해결 하 고 솔루션을 게시 하려면 다음 작업을 수행 해야 합니다.  
@@ -73,7 +71,7 @@ ms.locfileid: "52388110"
   
          이 단추 등 제외 되는 일반적으로 숨겨져 있는 모든 프로젝트 항목을 보여 줍니다. 매니페스트 파일을 프로젝트 항목으로 표시 됩니다.  
   
-2.  빌드하고 솔루션을 게시 합니다. 솔루션을 게시 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법: ClickOnce 응용 프로그램 게시 마법사를 사용 하 여 게시](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)합니다.  
+2.  빌드하고 솔루션을 게시 합니다. 솔루션을 게시 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법: 게시 마법사를 사용하여 ClickOnce 애플리케이션 게시](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)  
   
 ## <a name="create-a-manifest-file"></a>매니페스트 파일 만들기  
   

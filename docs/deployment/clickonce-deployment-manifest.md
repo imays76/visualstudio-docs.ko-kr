@@ -1,8 +1,6 @@
 ---
 title: ClickOnce 배포 매니페스트 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2391888e1955c48c1baafcd62c4337916a1a5322
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 44c42d1b0323e8f2d66f7abab13c8fecbf6a1ae4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820321"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911340"
 ---
 # <a name="clickonce-deployment-manifest"></a>ClickOnce 배포 매니페스트
 배포 매니페스트는 배포할 현재 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램 버전의 ID를 포함하여 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 배포를 설명하는 XML 파일입니다.  
@@ -32,17 +30,17 @@ ms.locfileid: "49820321"
 
 | 요소 | 설명 | 특성 |
 | - | - | - |
-| [\<어셈블리 > 요소](../deployment/assembly-element-clickonce-deployment.md) | 필수. 최상위 요소입니다. | `manifestVersion` |
-| [\<assemblyIdentity > 요소](../deployment/assemblyidentity-element-clickonce-deployment.md) | 필수. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램에 대한 응용 프로그램 매니페스트를 식별합니다. | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture` |
-| [\<설명 > 요소](../deployment/description-element-clickonce-deployment.md) | 필수. 셸에 표시를 만드는 데 사용 되는 응용 프로그램 정보를 식별 하며 **프로그램 추가 / 제거** 제어판 항목입니다. | `publisher`<br /><br /> `product`<br /><br /> `supportUrl` |
+| [\<어셈블리 > 요소](../deployment/assembly-element-clickonce-deployment.md) | 필수 요소. 최상위 요소입니다. | `manifestVersion` |
+| [\<assemblyIdentity > 요소](../deployment/assemblyidentity-element-clickonce-deployment.md) | 필수 요소. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램에 대한 응용 프로그램 매니페스트를 식별합니다. | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture` |
+| [\<설명 > 요소](../deployment/description-element-clickonce-deployment.md) | 필수 요소. 제어판에서 셸 존재 및 **프로그램 추가/제거** 항목을 만드는 데 사용되는 애플리케이션 정보를 식별합니다. | `publisher`<br /><br /> `product`<br /><br /> `supportUrl` |
 | [\<배포 > 요소](../deployment/deployment-element-clickonce-deployment.md) | 선택 사항입니다. 업데이트를 배포하고 시스템에 노출하는 데 사용되는 특성을 식별합니다. | `install`<br /><br /> `minimumRequiredVersion`<br /><br /> `mapFileExtensions`<br /><br /> `disallowUrlActivation`<br /><br /> `trustUrlParameters` |
-| [\<compatibleFrameworks > 요소](../deployment/compatibleframeworks-element-clickonce-deployment.md) | 필수. 이 응용 프로그램이 설치 및 실행할 수 있는 .NET Framework의 버전을 식별합니다. | `SupportUrl` |
-| [\<종속성 > 요소](../deployment/dependency-element-clickonce-deployment.md) | 필수. 배포를 위해 설치할 응용 프로그램 버전 및 응용 프로그램 매니페스트 위치를 식별합니다. | `preRequisite`<br /><br /> `visible`<br /><br /> `dependencyType`<br /><br /> `codebase`<br /><br /> `size` |
+| [\<compatibleFrameworks > 요소](../deployment/compatibleframeworks-element-clickonce-deployment.md) | 필수 요소. 이 응용 프로그램이 설치 및 실행할 수 있는 .NET Framework의 버전을 식별합니다. | `SupportUrl` |
+| [\<종속성 > 요소](../deployment/dependency-element-clickonce-deployment.md) | 필수 요소. 배포를 위해 설치할 응용 프로그램 버전 및 응용 프로그램 매니페스트 위치를 식별합니다. | `preRequisite`<br /><br /> `visible`<br /><br /> `dependencyType`<br /><br /> `codebase`<br /><br /> `size` |
 | [\<publisherIdentity > 요소](../deployment/publisheridentity-element-clickonce-deployment.md) | 서명된 매니페스트에 필요합니다. 이 배포 매니페스트에 서명한 게시자에 대한 정보를 포함합니다. | `Name`<br /><br /> `issuerKeyHash` |
 | [\<서명 > 요소](../deployment/signature-element-clickonce-deployment.md) | 선택 사항입니다. 이 배포 매니페스트에 디지털 방식으로 서명하는 데 필요한 정보를 포함합니다. | 없음 |
 | [\<customErrorReporting > 요소](../deployment/customerrorreporting-element-clickonce-deployment.md) | 선택 사항입니다. 오류가 발생할 때 표시할 URI를 지정합니다. | URI |
 
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  배포 매니페스트 파일은 현재 버전 및 기타 배포 설정을 포함하여 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램 배포를 식별합니다. 이 파일은 응용 프로그램의 현재 버전 및 배포에 포함된 모든 파일을 설명하는 응용 프로그램 매니페스트를 참조합니다.  
 
  자세한 내용은 [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md)을 참조하세요.  
@@ -53,7 +51,7 @@ ms.locfileid: "49820321"
  배포 매니페스트 파일은 강력한 이름으로 지정되어야 하며, 게시자 유효성 검사를 위한 인증서도 포함할 수 있습니다.  
 
 ## <a name="file-name-syntax"></a>파일 이름 구문  
- 배포 매니페스트 파일의 이름으로 끝나야 합니다 *.application* 확장 합니다.  
+ 배포 매니페스트 파일의 이름은 *.application* 확장명으로 끝나야 합니다.  
 
 ## <a name="examples"></a>예제  
  다음 코드 예제에서는 배포 매니페스트를 보여 줍니다.  
@@ -120,5 +118,5 @@ ms.locfileid: "49820321"
 </Signature></asmv1:assembly>  
 ```  
 
-## <a name="see-also"></a>참고자료  
- [ClickOnce 응용 프로그램 게시](../deployment/publishing-clickonce-applications.md)
+## <a name="see-also"></a>참고 항목  
+ [ClickOnce 애플리케이션 게시](../deployment/publishing-clickonce-applications.md)

@@ -1,8 +1,6 @@
 ---
 title: IDiaStackFrame | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25ad1dc5417055c6a17288ee67031d0473062a66
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: dba69f49650c1c90233a6fda44529d0bd9f2f913
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468878"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893486"
 ---
 # <a name="idiastackframe"></a>IDiaStackFrame
 스택 프레임의 속성을 표시 합니다.  
@@ -35,31 +33,31 @@ IDiaStackFrame : IUnknown
   
 |메서드|설명|  
 |------------|-----------------|  
-|[IDiaStackFrame::get_allocatesBasePointer](../../debugger/debug-interface-access/idiastackframe-get-allocatesbasepointer.md)|이 주소 범위에는 코드에 대 한 기본 포인터가 할당 되는 나타내는 플래그를 검색 합니다. 이 메서드는 사용 되지 않습니다.|  
-|[IDiaStackFrame::get_base](../../debugger/debug-interface-access/idiastackframe-get-base.md)|프레임의 기본 주소를 검색합니다.|  
-|[IDiaStackFrame::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md)|C + + 예외 처리 적용 되어 있는지를 나타내는 플래그를 검색 합니다.|  
-|[IDiaStackFrame::get_functionStart](../../debugger/debug-interface-access/idiastackframe-get-functionstart.md)|블록에는 함수의 진입점이 포함 되어 있음을 나타내는 플래그를 검색 합니다.|  
-|[IDiaStackFrame::get_lengthLocals](../../debugger/debug-interface-access/idiastackframe-get-lengthlocals.md)|지역 변수를 스택에 푸시한의 바이트 수를 검색 합니다.|  
-|[IDiaStackFrame::get_lengthParams](../../debugger/debug-interface-access/idiastackframe-get-lengthparams.md)|매개 변수는 스택에의 바이트 수를 검색 합니다.|  
-|[IDiaStackFrame::get_lengthProlog](../../debugger/debug-interface-access/idiastackframe-get-lengthprolog.md)|블록의 프롤로그 코드의 바이트 수를 검색합니다.|  
+|[IDiaStackFrame::get_allocatesBasePointer](../../debugger/debug-interface-access/idiastackframe-get-allocatesbasepointer.md)|이 주소 범위에서 코드에 대 한 기본 포인터 할당 되는 나타내는 플래그를 검색 합니다. 이 메서드는 사용 되지 않습니다.|  
+|[IDiaStackFrame::get_base](../../debugger/debug-interface-access/idiastackframe-get-base.md)|프레임의 주소 자료를 검색합니다.|  
+|[IDiaStackFrame::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md)|C + + 예외 처리 적용 중임을 나타내는 플래그를 검색 합니다.|  
+|[IDiaStackFrame::get_functionStart](../../debugger/debug-interface-access/idiastackframe-get-functionstart.md)|블록에 함수의 진입점이 포함 되어 있음을 나타내는 플래그를 검색 합니다.|  
+|[IDiaStackFrame::get_lengthLocals](../../debugger/debug-interface-access/idiastackframe-get-lengthlocals.md)|스택에 있는 지역 변수의 바이트 수를 검색 합니다.|  
+|[IDiaStackFrame::get_lengthParams](../../debugger/debug-interface-access/idiastackframe-get-lengthparams.md)|스택에 푸시된 매개 변수는 바이트 수를 검색 합니다.|  
+|[IDiaStackFrame::get_lengthProlog](../../debugger/debug-interface-access/idiastackframe-get-lengthprolog.md)|블록에서 프롤로그 코드의 바이트 수를 검색합니다.|  
 |[IDiaStackFrame::get_lengthSavedRegisters](../../debugger/debug-interface-access/idiastackframe-get-lengthsavedregisters.md)|스택에 저장 된 레지스터의 바이트 수를 검색 합니다.|  
-|[IDiaStackFrame::get_localsBase](../../debugger/debug-interface-access/idiastackframe-get-localsbase.md)|지역 변수의 주소 자료를 검색합니다.|  
-|[IDiaStackFrame::get_maxStack](../../debugger/debug-interface-access/idiastackframe-get-maxstack.md)|프레임에 스택에 바이트의 최대 수를 검색 합니다.|  
+|[IDiaStackFrame::get_localsBase](../../debugger/debug-interface-access/idiastackframe-get-localsbase.md)|로컬의 주소 자료를 검색합니다.|  
+|[IDiaStackFrame::get_maxStack](../../debugger/debug-interface-access/idiastackframe-get-maxstack.md)|프레임의 스택에 바이트의 최대 수를 검색 합니다.|  
 |[IDiaStackFrame::get_rawLVarInstanceValue](../../debugger/debug-interface-access/idiastackframe-get-rawlvarinstancevalue.md)|원시 바이트로 지정 된 로컬 변수의 값을 검색합니다.|  
 |[IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)|지정 된 레지스터의 값을 검색합니다.|  
 |[IDiaStackFrame::get_returnAddress](../../debugger/debug-interface-access/idiastackframe-get-returnaddress.md)|프레임의 반환 주소를 검색합니다.|  
-|[IDiaStackFrame::get_size](../../debugger/debug-interface-access/idiastackframe-get-size.md)|프레임 바이트의 크기를 검색합니다.|  
-|[IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md)|시스템 예외 처리 적용 되어 있는지를 나타내는 플래그를 검색 합니다.|  
+|[IDiaStackFrame::get_size](../../debugger/debug-interface-access/idiastackframe-get-size.md)|바이트 단위로 프레임의 크기를 검색합니다.|  
+|[IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md)|시스템 예외 처리 적용 중임을 나타내는 플래그를 검색 합니다.|  
 |[IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)|프레임 유형을 검색합니다.|  
   
-## <a name="remarks"></a>설명  
- 스택 프레임은 함수 호출의 추상화는 실행 중입니다.  
+## <a name="remarks"></a>주의  
+ 스택 프레임에는 해당 실행 하는 동안 함수 호출의 추상화입니다.  
   
-## <a name="notes-for-callers"></a>호출자에 대 한 참고 사항  
- 이 인터페이스를 호출 하 여 가져올는 [idiaenumstackframes:: Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md) 메서드. 참조는 [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md) 인터페이스를 얻는 방법에 예는 `IDiaStackFrame` 인터페이스입니다.  
+## <a name="notes-for-callers"></a>호출자에 대 한 정보  
+ 이 인터페이스를 호출 하 여 가져올는 [idiaenumstackframes:: Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md) 메서드. 참조를 [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md) 얻는 방법에 예제에 대 한 인터페이스를 `IDiaStackFrame` 인터페이스입니다.  
   
 ## <a name="example"></a>예제  
- 이 예제에서는 스택 프레임의 다양 한 특성을 표시 합니다.  
+ 이 예제는 스택 프레임의 다양 한 특성을 표시합니다.  
   
 ```C++  
 void PrintStackFrame(IDiaStackFrame* pFrame)  
@@ -103,14 +101,14 @@ void PrintStackFrame(IDiaStackFrame* pFrame)
 ```  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: Dia2.h  
+ 헤더: dia2.h  
   
  라이브러리: diaguids.lib  
   
  DLL: msdia80.dll  
   
 ## <a name="see-also"></a>참고 항목  
- [인터페이스 (디버그 인터페이스 액세스 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [인터페이스(디버그 인터페이스 액세스 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)   
- [Idiaenumstackframes:: Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)   
+ [IDiaEnumStackFrames::Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)   
  [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)

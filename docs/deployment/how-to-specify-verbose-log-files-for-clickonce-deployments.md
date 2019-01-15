@@ -1,8 +1,6 @@
 ---
 title: '방법: ClickOnce 배포에 대 한 자세한 정보 표시 로그 파일을 지정 합니다. | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bbb3214df1cd51baf731f8a16f39b2c5a59933bb
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 1c00dd94c9d8ad6702a7f54e461b50f476f0be33
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078744"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840254"
 ---
-# <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>방법: ClickOnce 배포에 대 한 자세한 로그 파일 지정
+# <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>방법: ClickOnce 배포에 대한 자세한 로그 파일 지정
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 모든 배포에 대 한 활동 로그를 유지 관리합니다. 이러한 로그는 설치, 초기화, 업데이트 및 제거와 관련 된 세부 정보 문서는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 배포 합니다. 세부 사항이 증가 하는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 레지스트리 편집기를 사용 하 여 이러한 로그 파일에 쓰기 (*regedit.exe*) 세부 정보 표시 수준을 지정 하려면.  
   
 > [!CAUTION]
@@ -42,5 +40,5 @@ ms.locfileid: "39078744"
   
 4.  설정 된 `LogVerbosityLevel` 값을 `1`입니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [ClickOnce 배포 문제 해결](../deployment/troubleshooting-clickonce-deployments.md)

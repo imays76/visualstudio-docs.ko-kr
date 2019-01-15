@@ -1,8 +1,6 @@
 ---
 title: ClickOnce 사용 하 여 COM 구성 요소 배포 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e81462b2ccb5d29a0090623d72cf78183abd6917
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
-ms.translationtype: MT
+ms.openlocfilehash: 216d3802ddac4e2a4cee2b8ab20d4d3abd381424
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348749"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888454"
 ---
-# <a name="deploy-com-components-with-clickonce"></a>ClickOnce 사용 하 여 COM 구성 요소 배포
+# <a name="deploy-com-components-with-clickonce"></a>ClickOnce를 사용하여 COM 구성 요소 배포
 일반적으로 기존 COM 구성 요소의 배포는 어려운 작업 이었습니다. 구성 요소는 전역으로 등록 해야 하 고 따라서 겹치는 응용 프로그램 간에 원치 않는 부작용을 일으킬 수 있습니다. 이 이런 아니므로 일반적으로.NET Framework 응용 프로그램에서 문제가 구성 요소는 응용 프로그램에 완전히 격리 또는 side-by-side-호환 됩니다. Visual Studio를 사용 하면 Windows XP 또는 더 높은 운영 체제에서 격리 된 COM 구성 요소를 배포할 수 있습니다.  
   
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .NET 응용 프로그램을 배포 하는 쉽고 안전한 메커니즘을 제공 합니다. 그러나 레거시 COM 구성 요소를 사용 하는 응용 프로그램을 배포 하는 것에 대 한 추가 단계를 수행 해야 합니다. 이 항목에서는 격리 된 COM 구성 요소를 배포 하 고 (예를 들어, Visual Basic 6.0 또는 Visual c + +)에서 네이티브 구성 요소를 참조 하는 방법을 설명 합니다.  
@@ -110,7 +108,7 @@ ms.locfileid: "51348749"
    End Sub  
    ```  
   
-9. 응용 프로그램을 실행합니다. **디버그** 메뉴에서 클릭 **디버깅 시작**합니다.  
+9. 애플리케이션을 실행합니다. **디버그** 메뉴에서 클릭 **디버깅 시작**합니다.  
   
    다음 컨트롤을 격리 해야 합니다. 응용 프로그램에서 사용 하는 각 COM 구성 요소는 프로젝트에서 COM 참조로 표시 됩니다. 이러한 참조는 아래에 표시 된 **참조** 에서 노드를 **솔루션 탐색기** 창. (직접 사용 하거나 추가할 수 있는 알림을 참조를 **참조 추가** 명령을 합니다 **프로젝트** 메뉴 또는 ActiveX 컨트롤을 폼으로 끌어서에서 직접.)  
   
@@ -139,7 +137,7 @@ ms.locfileid: "51348749"
   
 2. 게시 마법사에서 로컬 컴퓨터의 디스크에 액세스 하 고 게시 된 파일을 검사할 수 있는 위치를 지정 합니다.  
   
-3. 클릭 **완료** 응용 프로그램을 게시 합니다.  
+3. **마침**을 클릭하여 애플리케이션을 게시합니다.  
   
    게시 된 파일을 검사 하면 sysmon.ocx 파일이 포함 된 기록해둔 메시지가 표시 됩니다. 컨트롤이 최종 사용자의 컴퓨터를 다른 버전의 컨트롤을 사용 하 여 다른 응용 프로그램에 있으면이 응용 프로그램을 사용 하 여 방해 없습니다 것 이므로이 응용 프로그램에 완전히 격리 됩니다.  
   
@@ -165,7 +163,7 @@ ms.locfileid: "51348749"
   
 - 구성 요소에는 장치 드라이버를 인쇄 스풀러를 예를 들어 시스템의 실제 또는 가상 장치를 관리합니다.  
   
-- 구성 요소는 재배포 가능 패키지는 데이터 액세스 합니다. 데이터 응용 프로그램 일반적으로 별도 데이터에 액세스 해야 재배포 가능 패키지를 실행 하기 전에 설치 해야 합니다. Microsoft ADO 데이터 컨트롤, Microsoft OLE DB 또는 Microsoft Data Access Components (MDAC)와 같은 구성 요소를 격리 하지 않아야 합니다. 대신, 응용 프로그램에서 MDAC 또는 SQL Server Express를 사용 하는 경우 설정 해야 해당 필수 구성 요소와 참조 [방법: ClickOnce 응용 프로그램을 사용 하 여 필수 구성 요소 설치](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)합니다.  
+- 구성 요소는 재배포 가능 패키지는 데이터 액세스 합니다. 데이터 응용 프로그램 일반적으로 별도 데이터에 액세스 해야 재배포 가능 패키지를 실행 하기 전에 설치 해야 합니다. Microsoft ADO 데이터 컨트롤, Microsoft OLE DB 또는 Microsoft Data Access Components (MDAC)와 같은 구성 요소를 격리 하지 않아야 합니다. 대신, 응용 프로그램에서 MDAC 또는 SQL Server Express를 사용 하는 경우 설정 해야 해당 필수 구성 요소와 참조 [방법: ClickOnce 애플리케이션의 필수 구성 요소 설치](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)  
   
   경우에 따라 개발자는 구성 요소의 등록이 필요 없는 com 다시 디자인할 수 있습니다. 없는 경우 수 계속 빌드하고에 의존 하는 부트스트래퍼를 사용 하 여 표준 등록 체계를 통해 응용 프로그램을 게시 합니다. 자세한 내용은 [부트스트래퍼 패키지 만들기](../deployment/creating-bootstrapper-packages.md)합니다.  
   
@@ -173,5 +171,5 @@ ms.locfileid: "51348749"
   
   일부의 시나리오는 com에서 등록 개발자의 컴퓨터에 필요 하지만 응용 프로그램의 배포 등록이 필요 하지 않습니다. `Isolated` 속성 자동으로 생성 된 매니페스트를 빌드하는 동안 COM 구성 요소 개발자의 컴퓨터에 등록 해야 해야 합니다. 빌드 중 자동 등록을 호출 하는 등록 캡처 기능이 없으며 있습니다. 또한 형식 라이브러리에 명시적으로 정의 된 모든 클래스 매니페스트에서 반영 되지 않습니다. 네이티브 참조와 같은 기존 매니페스트를 사용 하 여 COM 구성 요소를 사용 하는 경우에 구성 요소를 개발 시에 등록 하지 해야 합니다. 그러나 등록은 구성 요소는 ActiveX 컨트롤에 포함 하려는 경우 필요 합니다 **도구 상자** 및 Windows Forms 디자이너입니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [ClickOnce 보안 및 배포](../deployment/clickonce-security-and-deployment.md)

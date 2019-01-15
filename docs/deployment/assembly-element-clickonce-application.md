@@ -1,8 +1,6 @@
 ---
 title: '&lt;어셈블리&gt; 요소 (ClickOnce 응용 프로그램) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#assembly
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd872053117388e9e08dcb8c4c2bfedcba622fd4
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 35c8193c2210d2a16a7d73164b551adb5a0f06bd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077092"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878355"
 ---
 # <a name="ltassemblygt-element-clickonce-application"></a>&lt;어셈블리&gt; 요소 (ClickOnce 응용 프로그램)
 응용 프로그램 매니페스트에 대 한 최상위 요소입니다.  
@@ -52,9 +50,9 @@ ms.locfileid: "39077092"
   
 |특성|설명|  
 |---------------|-----------------|  
-|`manifestVersion`|필수. 합니다 `manifestVersion` 특성으로 설정 되어 있어야 `1.0`합니다.|  
+|`manifestVersion`|필수 요소. 합니다 `manifestVersion` 특성으로 설정 되어 있어야 `1.0`합니다.|  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드 예제는 `assembly` 요소에 대 한 응용 프로그램 매니페스트에서 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램입니다. 이 코드 예제는에서 제공 하는 더 큰 예제의 일부입니다 [ClickOnce 응용 프로그램 매니페스트](../deployment/clickonce-application-manifest.md)합니다.  
   
 ```xml
@@ -71,6 +69,6 @@ ms.locfileid: "39077092"
   xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">  
 ```  
   
-## <a name="see-also"></a>참고자료  
- [ClickOnce 응용 프로그램 매니페스트](../deployment/clickonce-application-manifest.md)   
+## <a name="see-also"></a>참고 항목  
+ [ClickOnce 애플리케이션 매니페스트](../deployment/clickonce-application-manifest.md)   
  [\<어셈블리 > 요소](../deployment/assembly-element-clickonce-deployment.md)

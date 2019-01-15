@@ -1,8 +1,6 @@
 ---
 title: '&lt;패키지&gt; 요소 (부트스트래퍼) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 49867ddc897a9c1a1241a891a3ba3de866d84688
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: df0972595710422294f9c37c5f0abad9c6e433ea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899242"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868617"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;패키지&gt; 요소 (부트스트래퍼)
 `Package` 요소는 패키지 파일 내에서 최상위 XML 요소입니다.  
@@ -148,8 +146,8 @@ ms.locfileid: "49899242"
 
 | 특성 | 설명 |
 |--------------------| - |
-| `Culture` | 필수. 사용할 언어를 결정 하는이 패키지에 대 한 문화권을 정의 합니다. 이 특성은 키로는 `Strings` 요소를 설치 하는 동안 제품 이름 및 오류 메시지에 대 한 문화권 관련 문자열을 나열 합니다. |
-| `Name` | 필수. 와 같은 도구 내에서 개발자에 게 표시 되는 패키지의 이름을 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]입니다. 이 특성은 키로는 `Strings` 있어야 하는 요소를를 `String` 요소를 `Name` 및 `Culture` 속성과 일치 하도록 설정 합니다 `Name` 및 `Culture` 의 속성 `Package`. |
+| `Culture` | 필수 요소. 사용할 언어를 결정 하는이 패키지에 대 한 문화권을 정의 합니다. 이 특성은 키로는 `Strings` 요소를 설치 하는 동안 제품 이름 및 오류 메시지에 대 한 문화권 관련 문자열을 나열 합니다. |
+| `Name` | 필수 요소. 와 같은 도구 내에서 개발자에 게 표시 되는 패키지의 이름을 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]입니다. 이 특성은 키로는 `Strings` 있어야 하는 요소를를 `String` 요소를 `Name` 및 `Culture` 속성과 일치 하도록 설정 합니다 `Name` 및 `Culture` 의 속성 `Package`. |
 | `LicenseAgreement` | 선택 사항입니다. 최종 사용자 사용권 계약 (EULA)을 포함 하는 배포 패키지에 파일의 이름을 지정 합니다.  이 파일에 일반 텍스트 수 있습니다 (*.txt*) 또는 서식 있는 텍스트입니다. (*.rtf*) |
 
 ## <a name="example"></a>예제  
@@ -190,5 +188,5 @@ ms.locfileid: "49899242"
 </Package>  
 ```  
 
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [제품 및 패키지 스키마 참조](../deployment/product-and-package-schema-reference.md)

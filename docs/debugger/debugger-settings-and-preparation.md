@@ -1,8 +1,6 @@
 ---
 title: 디버거 설정 및 준비 | Microsoft Docs
-ms.custom: ''
 ms.date: 08/01/2018
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f32b5e68dec6696f6947fe78883c64b4c3caa322
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: 62b0d4684a82d2642875ce767d748d7ed8259a8e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257032"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926861"
 ---
 # <a name="debugger-settings-and-preparation"></a>디버거 설정 및 준비
 이 단원에서는 디버거 관련 속성 설정에 대해 설명하고 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 디버거를 사용하여 프로그램을 디버깅하는 데 필요한 준비 사항에 대해 설명합니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 에서 프로젝트 템플릿을 사용하여 프로그램을 만들면 디버그 구성에서 이 설정이 올바르게 활성화됩니다.  
@@ -42,11 +40,11 @@ ms.locfileid: "52257032"
  [콘솔 프로젝트](../debugger/debugging-preparation-console-projects.md)  
  디버깅하기 위해 콘솔 프로젝트를 구성하는 방법에 대한 지침을 제공합니다.   
   
- [방법: Visual Studio 솔루션의 일부가 아닌 실행 파일 디버그](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)  
+ [방법: Visual Studio 솔루션에 포함되지 않는 실행 파일 디버그](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)  
  Visual Studio 프로젝트의 일부로 작성되지 않은 실행 파일을 디버깅하는 방법에 대해 설명합니다.  
   
- [64비트 응용 프로그램 디버그](../debugger/debug-64-bit-applications.md)  
- 64비트 응용 프로그램을 디버그하는 방법을 설명합니다.  
+ [64비트 애플리케이션 디버그](../debugger/debug-64-bit-applications.md)  
+ 64비트 애플리케이션을 디버그하는 방법을 설명합니다.  
   
  [방법: 디버깅을 위한 .NET Framework 버전 지정](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)  
  레지스트리 키를 설정하여 사용할 버전을 디버거에 알리는 방법을 설명합니다.  

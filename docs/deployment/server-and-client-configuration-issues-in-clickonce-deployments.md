@@ -1,8 +1,6 @@
 ---
 title: 서버 및 ClickOnce 배포에서 클라이언트 구성 문제 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 444cfa375fd4e2059ddf6458224836cdec6ff18f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 7bbc55e5502364c3ca3eb8ca11dec1848490eaf9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849443"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955557"
 ---
-# <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 배포에서 서버 및 클라이언트 구성 문제
+# <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 배포 시 서버 및 클라이언트 구성 문제
 인터넷 정보 서비스 (IIS)를 사용 하 여 Windows Server에서 배포에는 Windows에서 인식 하지 못하는 파일 형식을 포함 하 고 Microsoft Word 파일을 같은 IIS는 해당 파일을 전송할 거부 하 고 배포에 실패 합니다.  
 
  또한 일부 웹 서버 응용 프로그램 소프트웨어와 같이 및 웹 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], 파일의 목록을 포함 및 파일 형식을 다운로드할 수 없습니다. 예를 들어 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 모두의 다운로드를 차단 *Web.config* 파일입니다. 이러한 파일에는 사용자 이름과 암호 같은 중요 한 정보가 들어 있습니다.  
@@ -99,7 +97,7 @@ ms.locfileid: "49849443"
 
 | URL 형식 | 설명 |
 |----------| - |
-| ftp: / / | 게시할 수는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 이 프로토콜을 사용 하 여 응용 프로그램입니다. |
+| ftp:// | 게시할 수는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 이 프로토콜을 사용 하 여 응용 프로그램입니다. |
 | http:// | 설치할 수는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 이 프로토콜을 사용 하 여 응용 프로그램입니다. |
 | https:// | 설치할 수는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 이 프로토콜을 사용 하 여 응용 프로그램입니다. |
 | file:// | 설치할 수는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 이 프로토콜을 사용 하 여 응용 프로그램입니다. |
@@ -107,12 +105,12 @@ ms.locfileid: "49849443"
 ## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP SP2: Windows 방화벽  
  기본적으로 Windows XP SP2에는 Windows 방화벽을 사용 합니다. 게시 및 실행 수는 Windows XP가 설치 된 컴퓨터에서 응용 프로그램을 개발 하는 경우 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] IIS를 실행 하는 로컬 서버에서 응용 프로그램입니다. 그러나 Windows 방화벽을 열지 않으면 다른 컴퓨터에서 IIS를 실행 중인 해당 서버를 액세스할 수 없습니다. Windows 방화벽을 관리 하는 방법은 Windows 도움말을 참조 하세요.  
 
-## <a name="windows-server-enable-frontpage-server-extensions"></a>Windows Server: FrontPage server extensions를 사용 하도록 설정  
+## <a name="windows-server-enable-frontpage-server-extensions"></a>Windows Server FrontPage server extensions를 사용 하도록 설정  
  Microsoft의 FrontPage Server Extensions가 HTTP를 사용 하는 Windows 웹 서버에 대 한 응용 프로그램 게시 필요 합니다.  
 
  기본적으로 Windows 서버 없는 FrontPage Server Extensions를 설치 합니다. 사용 하려는 경우 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] FrontPage Server Extensions를 사용 하 여 HTTP를 사용 하는 Windows Server 웹 서버에 게시 하려면 FrontPage Server Extensions를 먼저 설치 해야 합니다. Windows Server에서 사용자 서버 관리 관리 도구를 사용 하 여 설치를 수행할 수 있습니다.  
 
-## <a name="windows-server-locked-down-content-types"></a>Windows Server: 잠긴 콘텐츠 형식  
+## <a name="windows-server-locked-down-content-types"></a>Windows Server 잠긴 콘텐츠 형식  
  IIS [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] 잠급니다 알려진된 특정 콘텐츠 형식 제외 하 고 모든 파일 형식 (예를 들어 *.htm*, *.html*를 *.txt*등). 배포를 사용 하도록 설정 하려면 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 형식의 파일을 다운로드할 수 있도록 IIS 설정을 변경 해야 하는이 서버를 사용 하 여 응용 프로그램 *.application*를 *.manifest*, 및 기타 사용자 지정 파일 형식 응용 프로그램에서 사용 합니다.  
 
  IIS 서버를 사용 하 여 배포 하는 경우 실행할 *inetmgr.exe* 하 고 기본 웹 페이지에 대 한 새 파일 형식을 추가 합니다.  
@@ -135,7 +133,7 @@ ms.locfileid: "49849443"
 
  IIS에 대 한 자세한 내용은 참조 하세요. [HTTP 압축에 대 한 추가 문서 유형을 지정 하는 방법을](http://go.microsoft.com/fwlink/?LinkId=178459)합니다.  
 
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [ClickOnce 배포 문제 해결](../deployment/troubleshooting-clickonce-deployments.md)   
  [ClickOnce 배포 전략 선택](../deployment/choosing-a-clickonce-deployment-strategy.md)   
- [응용 프로그램 배포 필수 구성 요소](../deployment/application-deployment-prerequisites.md)
+ [애플리케이션 배포 필수 구성 요소](../deployment/application-deployment-prerequisites.md)

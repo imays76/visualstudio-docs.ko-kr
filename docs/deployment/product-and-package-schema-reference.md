@@ -1,8 +1,6 @@
 ---
 title: 제품 및 패키지 스키마 참조 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 f1_keywords:
 - MSBuild.GenerateBootstrapper.CircularIncludes
@@ -27,12 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fae53ad5143df91d74ad9c5e3cd19c1bdafd0da
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 4fe8a7e30c61105cc78d0e23ac35683e72e82ffc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080651"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53844671"
 ---
 # <a name="product-and-package-schema-reference"></a>제품 및 패키지 스키마 참조
 A *제품 파일* 에 필요한 외부 종속성의 모든 설명 하는 XML 매니페스트는는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램입니다. 외부 종속성의 예로 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 및 Microsoft Data Access Components (MDAC). 패키지 파일을 제품 파일과 유사 하지만 지역화 된 어셈블리, 사용권 계약 및 설명서 등의 종속성을의 문화권 종속 구성 요소를 설치 하는 데 사용 됩니다.  
@@ -49,12 +47,12 @@ A *제품 파일* 에 필요한 외부 종속성의 모든 설명 하는 XML 매
 |[\<PackageFiles > 요소](../deployment/packagefiles-element-bootstrapper.md)|필수적 요소입니다. 이 설치 프로세스에서 설치할 수 있는 패키지를 나열 합니다.|없음|  
 |[\<문자열 > 요소](../deployment/strings-element-bootstrapper.md)|필수적 요소입니다. 저장소 버전의 제품 이름 및 오류 문자열을 지역화 합니다.|없음|  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  패키지 스키마에서 사용 됩니다 *Setup.exe*, 자체의 작은 하드 코드 된 논리를 포함 하는 태스크를 부트스트래핑 MS 빌드에서 생성 되는 스텁 프로그램입니다. 스키마는 설치 프로세스의 모든 측면을 구동합니다.  
   
  `InstallChecks` 테스트는 setup.exe 특정된 패키지의 존재 여부에 대해 수행 해야 합니다. `PackageFiles` 설치 프로세스를 설치 해야 할 수를 지정 된 테스트를 실패 하는 패키지의 모든를 나열 합니다. 명령에서 각 명령은 항목에서 설명 하는 테스트 중 하나를 실행 `InstallChecks`를 지정 하 고 `PackageFile` 실행할 테스트 실패 합니다. 사용할 수는 `Strings` 이진 단일 설치를 사용 하 여 다양 한 언어 응용 프로그램을 설치할 수 있도록 제품 이름 및 오류 메시지를 지역화 하는 요소입니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드 예제에는 설치에 대 한 완전 한 제품 파일을 보여 줍니다는 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]합니다.  
   
 ```xml  
@@ -159,6 +157,6 @@ A *제품 파일* 에 필요한 외부 종속성의 모든 설명 하는 XML 매
 </Product>  
 ```  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [ClickOnce 배포 매니페스트](../deployment/clickonce-deployment-manifest.md)   
- [ClickOnce 응용 프로그램 매니페스트](../deployment/clickonce-application-manifest.md)
+ [ClickOnce 애플리케이션 매니페스트](../deployment/clickonce-application-manifest.md)

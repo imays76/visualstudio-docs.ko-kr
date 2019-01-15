@@ -1,8 +1,6 @@
 ---
 title: COM 및 ActiveX 디버깅 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.com
@@ -23,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab4bb2de79d0148154bfe7d9fceb70de322efda8
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 1dca4e8c0dd9317406603dcf4cd1bc93190fede3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468435"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820866"
 ---
 # <a name="com-and-activex-debugging"></a>COM 및 ActiveX 디버깅
 이 단원에서는 COM 응용 프로그램과 ActiveX 컨트롤의 디버깅에 대한 팁을 제공합니다.  
@@ -51,4 +49,4 @@ ms.locfileid: "31468435"
  [디버거 보안](../debugger/debugger-security.md)   
  [COM 소개](/cpp/atl/introduction-to-com)   
  [ActiveX 컨트롤](/cpp/mfc/activex-controls)   
- [SDI 서버 응용 프로그램](../debugger/sdi-server-applications.md)
+ [SDI 서버 애플리케이션](../debugger/sdi-server-applications.md)

@@ -1,8 +1,6 @@
 ---
 title: 테스트에 대 한 ClickOnce 응용 프로그램을 배포 하 고 다시 서명 하지 않고 프로덕션 서버 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,18 +19,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: abfa170fe0f30cbc4fac941a6d77d0ac8b407f7f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 3622d7033ac334ad69a86ffb6e1ba6789658a1f7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846592"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833124"
 ---
 # <a name="deploy-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>다시 서명 하지 않고 테스트 및 프로덕션 서버용 ClickOnce 응용 프로그램 배포
 이 문서에서는 clickonce 매니페스트 다시 서명 하거나 ClickOnce를 변경 하지 않고 여러 네트워크 위치에서 ClickOnce 응용 프로그램 배포를 사용할 수 있는 버전 3.5는.NET Framework에 도입 된 기능을 설명 합니다.  
   
 > [!NOTE]
->  새 버전의 응용 프로그램을 배포 하기 위한 기본 방법은 그대로 다시 서명 합니다. 가능 하면 서명 메서드를 사용 합니다. 자세한 내용은 [ *Mage.exe* (매니페스트 생성 및 편집 도구)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)합니다.  
+>  새 버전의 응용 프로그램을 배포 하기 위한 기본 방법은 그대로 다시 서명 합니다. 가능 하면 서명 메서드를 사용 합니다. 자세한 내용은 [*Mage.exe*(매니페스트 생성 및 편집 도구)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)를 참조하세요.  
   
  타사 개발자 및 Isv 옵트인 할 수 있습니다이 기능을 쉽게 고객이 응용 프로그램을 업데이트 합니다. 다음과 같은 상황에서이 기능을 사용할 수 있습니다.  
   
@@ -61,8 +59,8 @@ ms.locfileid: "49846592"
   두 번째 예제에서는 지정 하는 ClickOnce 응용 프로그램을 게시할 `deploymentProvider`, 후 제거 하려는 경우. 사용 하지 않는 새 버전에 한 번 `deploymentProvider` 다운로드는 클라이언트 응용 프로그램의 버전을 해제할 때까지 업데이트를 사용 하는 경로 리디렉션할 수 없습니다 `deploymentProvider` 복원 합니다. 첫 번째 예제에서와 마찬가지로 `deploymentProvider` 현재 업데이트 위치를 새 위치가 아니라 처음 가리켜야 합니다. 삽입 하려고 하면이 경우는 `deploymentProvider` 을 참조 하는 http://subdomain.adatum.com/MyApplication/, 다음 업데이트에 실패 합니다.  
   
 ## <a name="create-a-deployment"></a>배포 만들기  
- 다른 네트워크 위치에서 배포할 수 있는 배포를 만드는 단계별 지침을 참조 하세요. [연습: 수동으로 다시 서명 필요 하지 않은 없고 브랜드 정보가를유지하는ClickOnce응용프로그램을배포](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md).  
+ 다른 네트워크 위치에서 배포할 수 있는 배포를 만드는 단계별 지침을 참조 하세요. [연습: 수동으로 다시 서명 하는 필요가 없고 브랜드 정보가 유지 되는 ClickOnce 응용 프로그램을 배포](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)합니다.  
   
-## <a name="see-also"></a>참고자료  
- [*Mage.exe* (매니페스트 생성 및 편집 도구)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)   
- [*MageUI.exe* (매니페스트 생성 및 편집 도구, 그래픽 클라이언트)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)
+## <a name="see-also"></a>참고 항목  
+ [*Mage.exe*(매니페스트 생성 및 편집 도구)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)   
+ [*MageUI.exe*(매니페스트 생성 및 편집 도구, 그래픽 클라이언트)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)

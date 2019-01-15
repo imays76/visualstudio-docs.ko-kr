@@ -1,8 +1,6 @@
 ---
-title: '방법: 삽입된 한 코드 디버그 | Microsoft Docs'
-ms.custom: ''
+title: '방법: 삽입 된 코드 디버깅 | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.injected
@@ -26,14 +24,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8efcc5780b27967644330e55dc540333a19105a2
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: c9cb24bb4ea3f1edbb36f8e0f1219f6a0c653ec8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389340"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920633"
 ---
-# <a name="how-to-debug-injected-code"></a>방법: 삽입한 코드 디버깅
+# <a name="how-to-debug-injected-code"></a>방법: 삽입한 코드 디버그
 
 > [!NOTE]
 > 표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 도구 메뉴에서 설정 가져오기 및 내보내기를 선택합니다. 자세한 내용은 [재설정 설정](../ide/environment-settings.md#reset-settings)을 참조하세요.

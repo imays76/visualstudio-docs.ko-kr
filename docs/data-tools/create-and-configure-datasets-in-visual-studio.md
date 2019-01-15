@@ -1,8 +1,7 @@
 ---
-title: 데이터 집합 만들기 및 구성
+title: 데이터 세트 만들기 및 구성
 ms.date: 11/21/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.topic: conceptual
 helpviewer_keywords:
 - typed datasets, creating
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - data-storage
-ms.openlocfilehash: 23837bcfb1d3761f8ebf23020c15e901833d63b3
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
-ms.translationtype: HT
+ms.openlocfilehash: 3cde629114c56f80f0b70e7ef6641bffa7551577
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305224"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829237"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>Visual Studio에서 데이터 세트 만들기 및 구성
 
@@ -50,7 +49,7 @@ ms.locfileid: "52305224"
 
 6. 데이터 집합 노드를 클릭 **솔루션 탐색기** 에서 데이터 집합을 열려고 합니다 **데이터 집합 디자이너**합니다. 데이터 집합의 각 테이블에 연결 된 `TableAdapter` 맨 아래에 표시 되는 개체입니다. 테이블 어댑터는 데이터 집합 및 필요에 따라 데이터베이스에 명령을 보내는 데 사용 됩니다.
 
-   ![데이터 집합 디자이너(Dataset Designer)](../data-tools/media/dataset-designer.png)
+   ![데이터 세트 디자이너](../data-tools/media/dataset-designer.png)
 
 7. 데이터베이스에 정의 된 대로 테이블을 연결 하는 관계 선이 테이블 관계를 나타냅니다. 기본적으로 데이터베이스의 외래 키 제약 조건 업데이트로 관계를 표현 하 고 none으로 설정 하는 규칙을 삭제 합니다. 일반적으로 원하는 것입니다. 그러나 줄을 표시를 클릭 하면 합니다 **관계** 대화 상자에서 계층적 업데이트의 동작을 변경할 수 있습니다. 자세한 내용은 [데이터 집합의 관계](../data-tools/relationships-in-datasets.md) 하 고 [계층적 업데이트](../data-tools/hierarchical-update.md)합니다.
 
@@ -82,7 +81,7 @@ ms.locfileid: "52305224"
 
 ## <a name="add-a-stand-alone-data-table-to-a-dataset"></a>데이터 집합에 독립 실행형 데이터 테이블을 추가 합니다.
 
-1. 데이터 집합 디자이너**에서 데이터 집합을 엽니다.
+1. **데이터 세트 디자이너**에서 데이터 세트를 엽니다.
 
 2. 끌어서를 <xref:System.Data.DataTable> 에서 클래스를 **데이터 집합** 탭의 **도구 상자** 에 **데이터 집합 디자이너**.
 
@@ -92,7 +91,7 @@ ms.locfileid: "52305224"
 
 ## <a name="see-also"></a>참고 항목
 
-- [Visual Studio의 데이터 집합 도구](../data-tools/dataset-tools-in-visual-studio.md)
-- [데이터 집합에서의 관계](../data-tools/relationships-in-datasets.md)
+- [Visual Studio의 데이터 세트 도구](../data-tools/dataset-tools-in-visual-studio.md)
+- [데이터 세트에서의 관계](../data-tools/relationships-in-datasets.md)
 - [계층적 업데이트](../data-tools/hierarchical-update.md)
-- [TableAdapter를 사용하여 데이터 집합 채우기](../data-tools/fill-datasets-by-using-tableadapters.md)
+- [TableAdapter를 사용하여 데이터 세트 채우기](../data-tools/fill-datasets-by-using-tableadapters.md)

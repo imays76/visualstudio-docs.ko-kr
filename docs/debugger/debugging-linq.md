@@ -1,8 +1,6 @@
 ---
 title: LINQ 디버깅 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,20 +19,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8511c3ac9efd79b712680bfe3f9d5611f3c5aa9c
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
-ms.translationtype: MT
+ms.openlocfilehash: 13c6b8eb4db3448b52ace999f379eab7bea20523
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349428"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871007"
 ---
 # <a name="debugging-linq"></a>LINQ 디버깅
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]는 몇 가지 제한 사항이 있긴 하지만 LINQ(Language-Integrated Query) 코드의 디버깅을 지원합니다. 단계별 실행, 중단점 설정 및 디버거 창에서 결과 보기와 같은 대부분의 디버깅 기능이 LINQ 문에서 작동합니다. 이 항목에서는 LINQ 디버깅의 주요 제한 사항을 설명합니다.  
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]는 몇 가지 제한 사항이 있긴 하지만 LINQ(Language-Integrated Query) 코드의 디버깅을 지원합니다. 단계별 실행, 중단점 설정 및 디버거 창에서 결과 보기와 같은 대부분의 디버깅 기능이 LINQ 문에서 작동합니다. 이 항목에서는 LINQ 디버깅의 주요 제한 사항에 대해 설명합니다.  
   
 ##  <a name="BKMK_ViewingLINQResults"></a> LINQ 결과 보기  
  DataTips, 조사식 창 및 간략한 조사식 대화 상자를 사용하여 LINQ 명령문의 결과를 볼 수 있습니다. 소스 창을 사용할 때 포인터를 소스 창의 쿼리 위에 올려 놓으면 DataTip이 나타납니다. LINQ 변수를 복사하여 조사식 창이나 간략한 조사식 대화 상자에 붙여 넣을 수 있습니다.  
   
- LINQ에서는 쿼리가 만들어지거나 선언될 때 계산되지 않고 쿼리가 사용될 때만 계산됩니다. 따라서 쿼리가 계산되기 전까지는 쿼리에 값이 없습니다. 쿼리 작성 및 평가 대 한 자세한 내용은 참조 하세요. [LINQ 쿼리 (C#) 소개](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries) 하거나 [Your 첫 번째 LINQ 쿼리를 작성 하도록](/dotnet/visual-basic/programming-guide/concepts/linq/writing-your-first-linq-query)합니다.  
+ LINQ에서는 쿼리가 만들어지거나 선언될 때 계산되지 않고 쿼리가 사용될 때만 계산됩니다. 따라서 쿼리가 계산되기 전까지는 쿼리에 값이 없습니다. 쿼리 작성 및 평가 대 한 자세한 내용은 참조 하세요. [LINQ 쿼리 소개 (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries) 하거나 [Your 첫 번째 LINQ 쿼리를 작성 하도록](/dotnet/visual-basic/programming-guide/concepts/linq/writing-your-first-linq-query)합니다.  
   
  쿼리 결과를 표시하려면 디버거에서 쿼리를 계산해야 합니다. 디버거에서 LINQ 쿼리 결과를 보면 이러한 암시적 계산이 수행되며, 여기에는 몇 가지 주의 사항이 있습니다.  
   
@@ -106,7 +104,7 @@ End Function
   
  수정된 쿼리에서는 `IsEven`를 처리할 때마다 `items` 함수를 호출합니다. 디버거 창을 사용하여 각 항목이 지정된 조건에 맞는지 확인할 수 있고, `IsEven`의 코드를 단계별로 실행할 수 있습니다. 이 예제의 조건자는 아주 단순합니다. 그러나 복잡한 조건자를 디버깅해야 하는 경우에는 이 방법이 매우 유용할 수 있습니다.  
   
-##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a> 편집 하며 계속 하기가 LINQ에 대 한 지원 되지 않습니다  
+##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a> LINQ에 편집하며 계속하기가 지원되지 않음  
  편집 하며 계속 하기 지원 제한 사항과 함께 LINQ 쿼리를 변경 합니다. 자세한 내용은 참조 하세요 [EnC 지원 되는 변경](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))
   
 ## <a name="see-also"></a>참고 항목

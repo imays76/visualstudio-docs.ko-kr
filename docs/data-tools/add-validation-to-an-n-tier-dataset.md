@@ -14,15 +14,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 20a1cd033763e7aa98eb2798357109e300deaff1
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
-ms.translationtype: HT
+ms.openlocfilehash: 5aa324321630d172ddf8fb7938e1bab34a02b8e0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739470"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868211"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>n 계층 데이터 세트에 유효성 검사 추가
 N 계층 솔루션을으로 분리 되어 있는 데이터 집합에 유효성 검사 추가 기본적으로 단일 파일 (단일 프로젝트에서 데이터 집합) 데이터 집합에 유효성 검사와 동일 합니다. 데이터 유효성 검사를 수행 하기 위한 권장된 위치 중인지 합니다 <xref:System.Data.DataTable.ColumnChanging> 및/또는 <xref:System.Data.DataTable.RowChanging> 데이터 테이블의 이벤트입니다.
@@ -169,5 +168,5 @@ End Sub
 ## <a name="see-also"></a>참고 항목
 
 - [N 계층 데이터 애플리케이션 개요](../data-tools/n-tier-data-applications-overview.md)
-- [연습: N 계층 데이터 응용 프로그램 만들기](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
-- [데이터 집합의 데이터 유효성 검사](../data-tools/validate-data-in-datasets.md)
+- [연습: N 계층 데이터 애플리케이션 만들기](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+- [데이터 세트의 데이터 유효성 검사](../data-tools/validate-data-in-datasets.md)

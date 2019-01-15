@@ -1,8 +1,6 @@
 ---
-title: '오류: 웹 서버가 잠겨 있기 때문 차단 하 고 DEBUG 동사 | Microsoft Docs'
-ms.custom: ''
+title: '오류: 웹 서버가 잠겨 있기 DEBUG 동사를 차단 하 고 | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.webdbg_debug_verb_blocked
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c2537868da6c72df9a68c492b650c72d8a980fcb
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 3d36221eb65c1f2302877993b7dc494411290ae3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474000"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941559"
 ---
-# <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>오류: 웹 서버가 잠겨 있기 때문에 디버깅을 사용하기 위해 필요한 DEBUG 동사를 사용할 수 없습니다.
+# <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>오류: 웹 서버가 잠겨 있어 DEBUG 동사를 차단함
 IIS 잠금 도구가 실행되었고 URLScan이 설치되어 활성화되어 있기 때문에 웹 응용 프로그램 또는 XML Web services를 한 단계씩 실행하지 못했습니다. 이 상태가 되면 IIS에서 DEBUG 동사를 받을 수 없습니다.  
   
  URLScan은 IIS 잠금 도구와 함께 작동하는 보안 도구로서, IIS 웹 사이트 관리자는 이 도구를 사용하여 필요하지 않은 기능을 끄고 서버에서 처리하는 HTTP 요청 형식을 제한할 수 있습니다. URLScan 보안 도구를 사용하면 특정 HTTP 요청을 차단하여 위험한 요청이 서버로 들어와 서버가 손상되는 것을 방지할 수 있습니다.  
@@ -38,7 +36,7 @@ IIS 잠금 도구가 실행되었고 URLScan이 설치되어 활성화되어 있
   
      C:\WINNT\System32\Inetsrv\urlscan  
   
-2.  파일의 복사본을 만들고 이름을 **Urlscan.old**합니다.  
+2.  이 파일의 복사본을 만들어 이름을 **Urlscan.old**로 지정합니다.  
   
 3.  메모장이나 원하는 텍스트 편집기를 사용하여 원본 Urlscan.ini 파일을 엽니다.  
   
@@ -51,5 +49,5 @@ IIS 잠금 도구가 실행되었고 URLScan이 설치되어 활성화되어 있
 7.  서버를 다시 시작하거나 IIS를 다시 시작합니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [웹 응용 프로그램 디버깅: 오류 및 문제 해결](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
+ [웹 애플리케이션 디버그: 오류 및 문제 해결](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
  [오류: 요청한 리소스를 웹 서버에서 찾지 못했습니다.](../debugger/error-the-web-server-could-not-find-the-requested-resource.md)

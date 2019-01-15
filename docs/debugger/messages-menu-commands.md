@@ -1,8 +1,6 @@
 ---
 title: 메시지 메뉴 명령 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Messages menu commands
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 08ba5fc9fa71e71d7b840f31ae9cc17206ac7b6b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 5d2ff50180a0818f3ef9399747d69d75a55198c1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481725"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861944"
 ---
 # <a name="messages-menu-commands"></a>메시지 메뉴 명령
-**메시지** 메뉴는 메시지 뷰 제어 하기 위한 명령을 제공 합니다.  
+합니다 **메시지** 메뉴 메시지 뷰 제어 하기 위한 명령을 제공 합니다.  
   
  **로깅 시작/중지**  
  시작 하거나 메시지 보기를 중지 합니다.  

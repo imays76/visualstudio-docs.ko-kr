@@ -2,7 +2,6 @@
 title: 데이터 세트 도구
 ms.date: 11/21/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.topic: conceptual
 f1_keywords:
 - vs.data.DataSet
@@ -49,14 +48,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3a8a1ac0f2ac4e4b147fbe11dba8d88ccea4c255
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
-ms.translationtype: HT
+ms.openlocfilehash: 8c48420ca03e2e6de8d240fd4f28fbe80bcbcd18
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304989"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863097"
 ---
-# <a name="dataset-tools-in-visual-studio"></a>Visual Studio의 데이터 집합 도구
+# <a name="dataset-tools-in-visual-studio"></a>Visual Studio의 데이터 세트 도구
 
 > [!NOTE]
 > 데이터 집합 및 관련된 클래스는 응용 프로그램은 데이터베이스에서 연결이 끊어진 동안 메모리에 있는 데이터로 작업 하는 응용 프로그램을 사용 하도록 설정 하는 초기에 종사해에서 레거시.NET 기술입니다. 사용자가 데이터를 수정 하 고 다시 데이터베이스에 변경 내용을 유지할 수 있게 하는 응용 프로그램에 특히 유용 합니다. 데이터 집합, 매우 성공적 이었던 기술이 입증 하지만 새로운.NET 응용 프로그램 Entity Framework를 사용 하는 것이 좋습니다. 더 간단한 프로그래밍 인터페이스에 및 entity Framework 개체 모델로 테이블 형식 데이터로 작업 하는 더 자연 스러운 방법을 제공 합니다.
@@ -77,11 +76,11 @@ Visual Studio는 데이터 집합을 사용 하 여 작업을 간소화 하기 �
 
 - 사용 된 **TableAdapter 구성 마법사** 쿼리 또는 데이터 집합을 채우는 저장된 프로시저를 지정할 및 데이터베이스 작업 (업데이트, 삭제 및 등)을 구현 합니다. 자세한 내용은 다음 항목을 참조하세요.
 
-    - [TableAdapter를 사용하여 데이터 집합 채우기](../data-tools/fill-datasets-by-using-tableadapters.md)
+    - [TableAdapter를 사용하여 데이터 세트 채우기](../data-tools/fill-datasets-by-using-tableadapters.md)
 
-    - [데이터 집합의 데이터 편집](../data-tools/edit-data-in-datasets.md)
+    - [데이터 세트의 데이터 편집](../data-tools/edit-data-in-datasets.md)
 
-    - [데이터 집합의 데이터 유효성 검사](../data-tools/validate-data-in-datasets.md)
+    - [데이터 세트의 데이터 유효성 검사](../data-tools/validate-data-in-datasets.md)
 
     - [데이터를 다시 데이터베이스에 저장](../data-tools/save-data-back-to-the-database.md)
 

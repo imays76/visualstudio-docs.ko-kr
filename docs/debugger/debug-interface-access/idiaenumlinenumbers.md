@@ -1,8 +1,6 @@
 ---
 title: IDiaEnumLineNumbers | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 388bb5e16ae54199989dd125e0c3580102bca292
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
-ms.translationtype: MT
+ms.openlocfilehash: 933cbe4f95c5082fb4c5d8b9958c7cd43e9e95d3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057323"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838533"
 ---
 # <a name="idiaenumlinenumbers"></a>IDiaEnumLineNumbers
 데이터 원본에 포함 된 다양 한 줄 번호를 열거 합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "37057323"
 ## <a name="syntax"></a>구문  
   
 ```  
-IDiaEnumLineNumbers : IUnknown  
+IDiaEnumLineNumbers : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드  
@@ -43,7 +41,7 @@ IDiaEnumLineNumbers : IUnknown
 |[IDiaEnumLineNumbers::Reset](../../debugger/debug-interface-access/idiaenumlinenumbers-reset.md)|열거형 시퀀스를 처음으로 다시 설정합니다.|  
 |[IDiaEnumLineNumbers::Clone](../../debugger/debug-interface-access/idiaenumlinenumbers-clone.md)|현재 열거자와 열거 상태가 같은 포함 하는 열거자를 만듭니다.|  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
   
 ## <a name="notes-for-callers"></a>호출자에 대 한 정보  
  이 인터페이스의 다음 메서드 중 하나를 호출 하 여 가져온 합니다 [IDiaSession](../../debugger/debug-interface-access/idiasession.md) 인터페이스:  
@@ -58,7 +56,7 @@ IDiaEnumLineNumbers : IUnknown
   
 -   [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  가져오는 방법을 보여 주는이 예제는 `IDiaEnumLineNumbers` 세션에서 인터페이스입니다. 이 경우에 예제에서는 함수에 대 한 줄 번호 열거형을 가져옵니다 (나타내는 `pSymbol`). 줄 번호를 사용 하 여 자세한 예제를 참조 하세요. 합니다 [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) 인터페이스입니다.  
   
 ```C++  
@@ -88,17 +86,17 @@ void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )
 ```  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: Dia2.h  
+ 헤더: dia2.h  
   
  라이브러리: diaguids.lib  
   
  DLL: msdia80.dll  
   
 ## <a name="see-also"></a>참고 항목  
- [인터페이스 (디버그 인터페이스 액세스 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [인터페이스(디버그 인터페이스 액세스 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
- [Idiasession:: Findlinesbylinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
- [Idiasession:: Findlinesbyrva](../../debugger/debug-interface-access/idiasession-findlinesbyrva.md)   
- [Idiasession:: Findlinesbyva](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)   
- [Idiasession:: Findlines](../../debugger/debug-interface-access/idiasession-findlines.md)   
+ [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
+ [IDiaSession::findLinesByRVA](../../debugger/debug-interface-access/idiasession-findlinesbyrva.md)   
+ [IDiaSession::findLinesByVA](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)   
+ [IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md)   
  [IDiaSession::findLinesByAddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)

@@ -1,8 +1,6 @@
 ---
 title: 디버거의 식 | Microsoft Docs
-ms.custom: ''
 ms.date: 02/07/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.expressions
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 035d66590c6b6087c56887a4eaa2b0538406f87b
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 7b6d4461768490d67d4d1226ae7c7877dc3c9010
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257254"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837240"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Visual Studio 디버거의 식
 Visual Studio 디버거에는 **간략한 조사식** 대화 상자, **조사식** 창 또는 **직접 실행** 창에 식을 입력할 때 사용되는 식 계산기가 포함되어 있습니다. 식 계산기는 **중단점** 창과 디버거의 여러 가지 다른 부분에서도 사용됩니다.
@@ -87,7 +85,7 @@ int main()
 ```  
   
 ###  <a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> 디버거 내장 함수를 사용하여 상태 유지  
- 디버거 내장 함수는 응용 프로그램의 상태를 변경하지 않고 식에서 특정 C/C++ 함수를 호출하는 방법을 제공합니다.  
+ 디버거 내장 함수는 애플리케이션의 상태를 변경하지 않고 식에서 특정 C/C++ 함수를 호출하는 방법을 제공합니다.  
   
  디버거 내장 함수의 특징은 다음과 같습니다.  
   
@@ -207,7 +205,7 @@ int main()
 -   `End Sub` 또는 `Module`과 같은 네임스페이스 또는 모듈 수준 키워드  
   
 ## <a name="see-also"></a>참고 항목  
- [C + +의 형식 지정자](../debugger/format-specifiers-in-cpp.md)   
+ [C++의 형식 지정자](../debugger/format-specifiers-in-cpp.md)   
  [Context Operator (C++)](../debugger/context-operator-cpp.md)   
  [C#의 형식 지정자](../debugger/format-specifiers-in-csharp.md)   
  [의사 변수](../debugger/pseudovariables.md)

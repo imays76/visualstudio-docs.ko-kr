@@ -1,8 +1,6 @@
 ---
 title: '방법: 응용 프로그램 및 배포 매니페스트에 다시 서명 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,19 +18,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cce175f487d24e528d7527c424a1f76fa2a82824
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: d5276f77226930b7ad49aea3253321ed3c8082be
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280677"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937990"
 ---
-# <a name="how-to-re-sign-application-and-deployment-manifests"></a>방법: 응용 프로그램 및 배포 매니페스트 다시 서명
-Windows Forms 응용 프로그램, Windows Presentation Foundation 응용 프로그램 (xbap) 또는 Office 솔루션에 대 한 응용 프로그램 매니페스트에 대 한 배포 속성을 변경한 후 두 응용 프로그램에 다시 서명 해야 하 고 사용 하 여 배포 매니페스트는 인증서입니다. 이 프로세스는 변조 된 파일은 최종 사용자 컴퓨터에 설치 되지 않았는지 확인 하는 데 도움이 됩니다.  
+# <a name="how-to-re-sign-application-and-deployment-manifests"></a>방법: 애플리케이션 및 배포 매니페스트 다시 서명
+Windows Forms 응용 프로그램, Windows Presentation Foundation 응용 프로그램 (xbap) 또는 Office 솔루션에 대 한 응용 프로그램 매니페스트에 대 한 배포 속성을 변경한 후 두 응용 프로그램에 다시 서명 해야 하 고 사용 하 여 배포 매니페스트는 인증서입니다. 이 프로세스를 수행하면 최종 사용자 컴퓨터에 훼손된 파일이 설치되지 않습니다.  
   
  매니페스트를 다시 서명할 수 있습니다 다른 시나리오 고객에 게는 응용 프로그램에 서명 하 고 자체 인증서를 사용 하 여 배포 매니페스트 하는 경우입니다.  
   
-## <a name="re-sign-the-application-and-deployment-manifests"></a>응용 프로그램 및 배포 매니페스트에 다시 서명  
+## <a name="re-sign-the-application-and-deployment-manifests"></a>애플리케이션 및 배포 매니페스트 다시 서명  
  응용 프로그램 매니페스트 파일에 이미 변경 했다고 가정 합니다 (*.manifest*). 자세한 내용은 [방법: 배포 속성을 변경할](https://msdn.microsoft.com/library/66052a3a-8127-4964-8147-2477ef5d1472)합니다.  
   
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Mage.exe를 사용 하 여 매니페스트에 다시 응용 프로그램 및 배포를 서명 하려면  
@@ -114,14 +112,14 @@ Windows Forms 응용 프로그램, Windows Presentation Foundation 응용 프로
   
 7.  필요에 따라 마스터 배포 매니페스트를 복사 (*게시할\\\<appname >.application*) 버전 배포 디렉터리로 (*publish\Application 파일\\ \<응용 프로그램 이름 > _\<버전 >*).  
   
-## <a name="see-also"></a>참고자료  
- [ClickOnce 응용 프로그램 보안](../deployment/securing-clickonce-applications.md)   
- [ClickOnce 응용 프로그램에 대 한 코드 액세스 보안](../deployment/code-access-security-for-clickonce-applications.md)   
+## <a name="see-also"></a>참고 항목  
+ [ClickOnce 애플리케이션 보안](../deployment/securing-clickonce-applications.md)   
+ [ClickOnce 애플리케이션의 코드 액세스 보안](../deployment/code-access-security-for-clickonce-applications.md)   
  [ClickOnce 및 Authenticode](../deployment/clickonce-and-authenticode.md)   
- [신뢰할 수 있는 응용 프로그램 배포 개요](../deployment/trusted-application-deployment-overview.md)   
+ [신뢰할 수 있는 애플리케이션 배포 개요](../deployment/trusted-application-deployment-overview.md)   
  [방법: ClickOnce 보안 설정 사용](../deployment/how-to-enable-clickonce-security-settings.md)   
- [방법: ClickOnce 응용 프로그램에 대 한 보안 영역 설정](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
- [방법: ClickOnce 응용 프로그램에 대 한 사용자 지정 권한 설정](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [방법: 제한 된 권한으로 ClickOnce 응용 프로그램 디버그](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
- [방법: ClickOnce 응용 프로그램에 대 한 클라이언트 컴퓨터에 신뢰할 수 있는 게시자 추가](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
+ [방법: ClickOnce 애플리케이션의 보안 영역 설정](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
+ [방법: ClickOnce 애플리케이션의 사용자 지정 권한 설정](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [방법: 제한된 권한으로 ClickOnce 애플리케이션 디버그](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [방법: ClickOnce 애플리케이션의 클라이언트 컴퓨터에 신뢰할 수 있는 게시자 추가](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
  [방법: ClickOnce 신뢰 프롬프트 동작 구성](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)

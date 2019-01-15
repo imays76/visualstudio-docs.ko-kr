@@ -1,8 +1,6 @@
 ---
 title: '방법: 시각화 도우미 설치 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,18 +17,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87feaebf16168744467137fdf4af54538a316cdf
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: e62637581fbb65eb8efd20e048cc364895cfbcdc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473779"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914573"
 ---
 # <a name="how-to-install-a-visualizer"></a>방법: 시각화 도우미 설치
 시각화 도우미를 만든 후에는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서 사용할 수 있도록 이 시각화 도우미를 설치해야 합니다. 시각화 도우미를 설치하는 과정은 간단합니다.  
   
 > [!NOTE]
->  UWP 앱만 표준 텍스트, HTML, XML 및 JSON 시각화 도우미 지원 됩니다. 사용자가 만든 사용자 지정 시각화 도우미는 지원되지 않습니다.  
+>  UWP 앱에만 표준 텍스트, HTML, XML 및 JSON 시각화 도우미 지원 됩니다. 사용자가 만든 사용자 지정 시각화 도우미는 지원되지 않습니다.  
   
 ### <a name="to-install-a-visualizer"></a>시각화 도우미를 설치하려면  
   
@@ -48,4 +46,4 @@ ms.locfileid: "31473779"
   
 ## <a name="see-also"></a>참고 항목  
  [사용자 지정 시각화 도우미 만들기](../debugger/create-custom-visualizers-of-data.md)   
- [방법: 시각화 도우미 작성](../debugger/how-to-write-a-visualizer.md)
+ [방법: 시각화 도우미 작성](/visualstudio/debugger/create-custom-visualizers-of-data)

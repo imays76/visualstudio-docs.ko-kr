@@ -1,8 +1,6 @@
 ---
 title: '오류: 디버깅 되었습니다&#39;수는 커널 디버거가 사용 중 이므로 시스템에서 t | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.kernel_dbg_enabled
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4aa8aa820330264357341948a468d58d98c86056
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: d8a0e615f1283a1aaf742a70961c26c3b6b35037
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853982"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832833"
 ---
 # <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>오류: 디버깅 되었습니다&#39;t 수 있으므로 시스템에 커널 디버거가 사용 가능
 관리 코드를 디버깅할 때 다음 오류 메시지가 나타날 수 있습니다.  
@@ -58,7 +56,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 #### <a name="to-disable-kernel-debugging-in-the-current-session"></a>현재 세션에서 커널 디버깅을 비활성화하려면  
   
--   명령 프롬프트에 다음과 같이 입력합니다.  
+-   명령 프롬프트에서 다음을 입력합니다.  
   
     ```cmd
     Kdbgctrl.exe -d  
@@ -76,7 +74,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 #### <a name="to-disable-kernel-debugging-for-all-sessions-other-windows-operating-systems"></a>모든 세션에 대해 커널 디버깅을 비활성화하려면(기타 Windows 운영 체제)  
   
-1.  시스템 드라이브에서 boot.ini를 찾습니다 (대개 c:\\). boot.ini 파일은 숨겨져 있고 읽기 전용일 수 있습니다. 따라서 이 파일을 보려면 다음 명령을 사용해야 합니다.  
+1.  시스템 드라이브(일반적으로 C:\\)에서 boot.ini를 찾습니다. boot.ini 파일은 숨겨져 있고 읽기 전용일 수 있습니다. 따라서 이 파일을 보려면 다음 명령을 사용해야 합니다.  
   
     ```cmd
     dir /ASH  
@@ -96,7 +94,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 1.  커널 디버거가 후크되어 있으면 디버깅을 계속할지 묻는 메시지가 나타납니다. 단추를 클릭하여 디버깅을 계속합니다.  
   
-2.  표시 될 수 있습니다는 `User break exception(Int 3).` 이 문제가 발생 하면 디버깅 커널 디버거 명령을 입력 합니다.  
+2.  `User break exception(Int 3).`이 발생할 수도 있습니다. 이 경우 디버깅을 계속하려면 다음과 같은 커널 디버거 명령을 입력합니다.  
   
      `gn`  
   

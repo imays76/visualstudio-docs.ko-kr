@@ -1,8 +1,6 @@
 ---
 title: '방법: OnStart 메서드 디버깅 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,15 +19,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d438a8d6dcd80ec8d9dcce2fb4943e8b5614442c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 53106b0d933c25d69ecd0b455b89f68c09b9a169
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481855"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822950"
 ---
-# <a name="how-to-debug-the-onstart-method"></a>방법: OnStart 메서드 디버깅
-서비스를 시작하고 디버거를 서비스 프로세스에 연결하여 Windows 서비스를 디버그할 수 있습니다. 자세한 내용은 [How to: Debug Windows Service Applications](/dotnet/framework/windows-services/how-to-debug-windows-service-applications)을 참조하십시오. 그러나 Windows 서비스의 <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> 메서드를 디버그하려면 메서드 내에서 디버거를 시작해야 합니다.  
+# <a name="how-to-debug-the-onstart-method"></a>방법: OnStart 메서드 디버그
+서비스를 시작하고 디버거를 서비스 프로세스에 연결하여 Windows 서비스를 디버그할 수 있습니다. 자세한 내용은 [방법: Windows 서비스 응용 프로그램을 디버그](/dotnet/framework/windows-services/how-to-debug-windows-service-applications)합니다. 그러나 Windows 서비스의 <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> 메서드를 디버그하려면 메서드 내에서 디버거를 시작해야 합니다.  
   
 1.  <xref:System.Diagnostics.Debugger.Launch%2A> 서드의 시작 부분에 `OnStart()`에 대한 호출을 추가합니다.  
   
@@ -46,7 +44,7 @@ ms.locfileid: "31481855"
   
      ![OnStartDebug](../debugger/media/onstartdebug.png "OnStartDebug")  
   
-3.  선택 **예, 디버그 \<서비스 이름 >.**  
+3.  **예, \<서비스 이름> 디버그를 선택합니다.**  
   
 4.  Just-In-Time 디버거 창에서 디버깅에 사용할 Visual Studio 버전을 선택합니다.  
   

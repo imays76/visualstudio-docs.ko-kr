@@ -1,8 +1,6 @@
 ---
-title: 메시지 옵션 대화 상자, 창 탭 | Microsoft Docs
-ms.custom: ''
+title: Windows 탭, 메시지 옵션 대화 상자 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - message options, Windows
@@ -12,38 +10,38 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad738a03b63284abc9ad2d922a51f140228e4ed7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 407b7c1c28d4232988bb36f8c1333197cd2dc08f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476860"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827181"
 ---
 # <a name="windows-tab-message-options-dialog-box"></a>메시지 옵션 대화 상자, 창 탭
-사용 하 여는 **Windows** 탭에 나열 된 메시지의 범위를 설정 하려면 [메시지 뷰](../debugger/messages-view.md)합니다. 표시 하는 [메시지 옵션 대화 상자](../debugger/message-options-dialog-box.md), 선택 **로그 메시지** 에서 **Spy** 메뉴.  
+사용 된 **Windows** 탭에 나열 된 메시지의 범위를 설정 하려면 [메시지 뷰](../debugger/messages-view.md)합니다. 표시할 합니다 [메시지 옵션 대화 상자](../debugger/message-options-dialog-box.md), 선택 **로그 메시지** 에서 합니다 **Spy** 메뉴.  
   
- 다음 설정은에 사용할 수는 **Windows** 탭:  
+ 다음 설정을 사용할 합니다 **Windows** 탭:  
   
  **찾기 도구**  
  끌어서 놓기 도구 창을 선택 하는 데 사용 합니다.  
   
  **Spy + + 숨기기**  
- Spy + + 주 창을 제거는 **메시지 옵션** 대화 상자를 다른 응용 프로그램 위에 표시 합니다.  
+ Spy + +의 주 창을 제거 하 고 유지 합니다 **메시지 옵션** 대화 상자를 다른 응용 프로그램을 기반으로 표시 합니다.  
   
  **부모 창**  
- 선택한 창과 직계 부모 창에 메시지를 표시 합니다.  
+ 선택한 창 및 직접 부모 창에 대 한 메시지를 표시 합니다.  
   
  **자식 창**  
- 선택한 기간 및 중첩 된 자식 창을 포함 하 여, 모든 자식 창에 메시지를 표시 합니다.  
+ 선택한 창 및 중첩 된 자식 창을 포함 하 여 모든 자식 창에서 메시지를 표시 합니다.  
   
- **동일한 스레드의 Windows**  
- 동일한 스레드에서 소유 하는 다른 모든 창 및 선택한 기간에 대 한 메시지를 표시 합니다.  
+ **같은 스레드의 창**  
+ 선택한 기간에 동일한 스레드에서 소유 하는 다른 모든 windows 메시지를 표시 합니다.  
   
  **같은 프로세스의 창**  
- 동일한 프로세스에서 소유 하 고 다른 모든 창 및 선택한 기간에 대 한 메시지를 표시 합니다.  
+ 선택한 창 및 동일한 프로세스를 소유 하는 다른 모든 windows 메시지를 표시 합니다.  
   
  **시스템의 모든 창**  
- 모든 창에 메시지를 표시 합니다.  
+ 모든 windows에 대 한 메시지를 표시 합니다.  
   
  **설정을 기본값으로 저장**  
- 새 메시지 스트림 창에 대 한 이전 설정을 저장 합니다. 이러한 설정은 Spy + +를 끝낼 때에 저장 됩니다.
+ 새 메시지 스트림 windows에 대 한 이전 설정을 저장 합니다. Spy + +를 종료 하는 경우에 이러한 설정은 저장 됩니다.

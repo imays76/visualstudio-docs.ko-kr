@@ -1,8 +1,6 @@
 ---
 title: '방법: ClickOnce를 사용 하 여 여러 버전의.NET Framework에서 실행할 수 있는 응용 프로그램 배포 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7a5262814f6ccfb28ba796140e52175e2fe940a9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a8732099ab3ef663c6fc253592736bcddbfde55a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842770"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943118"
 ---
-# <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>방법: 여러 버전의.NET framework에서 실행할 수 있는 응용 프로그램 배포를 사용 하 여 ClickOnce
+# <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>방법: ClickOnce를 사용하여 여러 버전의 .NET Framework에서 실행할 수 있는 애플리케이션 배포
 ClickOnce 배포 기술을 사용 하 여 여러 버전의.NET Framework를 대상으로 하는 응용 프로그램을 배포할 수 있습니다. 그러려면 생성 하 고 응용 프로그램 및 배포 매니페스트를 업데이트 합니다.  
   
 > [!NOTE]
@@ -47,7 +45,7 @@ ClickOnce 배포 기술을 사용 하 여 여러 버전의.NET Framework를 대�
   
 ### <a name="to-generate-the-application-and-deployment-manifests"></a>응용 프로그램 및 배포 매니페스트를 생성 하려면  
   
--   프로젝트 디자이너의 게시 페이지 또는 게시 마법사를 사용 하 여를 응용 프로그램을 게시 하 여 응용 프로그램 및 배포 매니페스트 파일을 생성 합니다. 자세한 내용은 [방법: 게시 마법사를 사용 하 여 ClickOnce 응용 프로그램 게시](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) 또는 [프로젝트 디자이너, 게시 페이지](../ide/reference/publish-page-project-designer.md)합니다.  
+-   프로젝트 디자이너의 게시 페이지 또는 게시 마법사를 사용 하 여를 응용 프로그램을 게시 하 여 응용 프로그램 및 배포 매니페스트 파일을 생성 합니다. 자세한 내용은 [방법: 게시 마법사를 사용 하 여 ClickOnce 응용 프로그램 게시](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) 나 [프로젝트 디자이너, 게시 페이지](../ide/reference/publish-page-project-designer.md)합니다.  
   
 ### <a name="to-change-the-deployment-manifest-to-list-the-multiple-net-framework-versions"></a>여러.NET Framework 버전을 나열 하려면 배포 매니페스트를 변경 하려면  
   
@@ -59,7 +57,7 @@ ClickOnce 배포 기술을 사용 하 여 여러 버전의.NET Framework를 대�
   
     |.NET Framework 버전|XML|  
     |----------------------------|---------|  
-    |4 명의 클라이언트|\<framework targetVersion = "4.0" 프로필 "클라이언트" supportedRuntime = = "4.0.30319" / >|  
+    |4 클라이언트|\<framework targetVersion = "4.0" 프로필 "클라이언트" supportedRuntime = = "4.0.30319" / >|  
     |4 전체|\<framework targetVersion = "4.0" 프로필 "전체" supportedRuntime = = "4.0.30319" / >|  
     |3.5 클라이언트|\<framework targetVersion = "3.5" 프로필 "클라이언트" supportedRuntime = = "2.0.50727" / >|  
     |3.5 전체|\<framework targetVersion = "3.5" 프로필 "전체" supportedRuntime = = "2.0.50727" / >|  
@@ -75,7 +73,7 @@ ClickOnce 배포 기술을 사용 하 여 여러 버전의.NET Framework를 대�
   
     |.NET framework 런타임 버전|XML|  
     |------------------------------------|---------|  
-    |4 명의 클라이언트|\<supportedRuntime 버전 "v4.0.30319" sku = = "입니다. NETFramework, 버전 = v4.0, 프로필 = Client "/ >|  
+    |4 클라이언트|\<supportedRuntime 버전 "v4.0.30319" sku = = "입니다. NETFramework, 버전 = v4.0, 프로필 = Client "/ >|  
     |4 전체|\<supportedRuntime 버전 "v4.0.30319" sku = = "입니다. NETFramework, 버전 = v4.0 "/ >|  
     |3.5 전체|\<supportedRuntime version="v2.0.50727"/ >|  
     |3.5 클라이언트|\<supportedRuntime 버전 "v2.0.50727" sku = = "Client" / >|  
@@ -102,10 +100,10 @@ ClickOnce 배포 기술을 사용 하 여 여러 버전의.NET Framework를 대�
   
 ### <a name="to-update-and-re-sign-the-application-and-deployment-manifests"></a>매니페스트를 업데이트 하 고 응용 프로그램 및 배포에 다시 서명  
   
--   업데이트 및 응용 프로그램 및 배포 매니페스트에 다시 서명 합니다. 자세한 내용은 [방법: 응용 프로그램 및 배포 매니페스트 다시 서명](../deployment/how-to-re-sign-application-and-deployment-manifests.md)합니다.  
+-   업데이트 및 응용 프로그램 및 배포 매니페스트에 다시 서명 합니다. 자세한 내용은 [방법: 애플리케이션 및 배포 매니페스트 다시 서명](../deployment/how-to-re-sign-application-and-deployment-manifests.md)을 참조하세요.  
   
-## <a name="see-also"></a>참고자료  
- [ClickOnce 응용 프로그램 게시](../deployment/publishing-clickonce-applications.md)   
+## <a name="see-also"></a>참고 항목  
+ [ClickOnce 애플리케이션 게시](../deployment/publishing-clickonce-applications.md)   
  [\<compatibleFrameworks > 요소](../deployment/compatibleframeworks-element-clickonce-deployment.md)   
  [\<종속성 > 요소](../deployment/dependency-element-clickonce-application.md)   
  [ClickOnce 배포 매니페스트](../deployment/clickonce-deployment-manifest.md)   

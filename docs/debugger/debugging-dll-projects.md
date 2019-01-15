@@ -1,8 +1,6 @@
 ---
 title: DLL 프로젝트 디버그 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/06/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f35a04620da94efca70fb33933f3940005996e29
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
-ms.translationtype: HT
+ms.openlocfilehash: baca738ef60ae727db852d00ed821e024f62c22f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561696"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871640"
 ---
 # <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>Visual Studio에서 Dll 디버깅 (C#, c + +, Visual Basic의 경우 F#)
 
@@ -123,7 +121,7 @@ DLL을 호출 하는 앱이 될 수 있습니다.
   
 호출 응용 프로그램 디버깅을 시작 하기 전에 DLL에서 중단점을 설정 합니다. 참조 [중단점을 사용 하 여](../debugger/using-breakpoints.md)입니다. DLL 중단점이 적중 될 때 실행할 수 있습니다 코드를 통해 각 줄의 작업을 관찰 합니다. 자세한 내용은 [디버거에서 코드를 탐색](../debugger/navigating-through-code-with-the-debugger.md)합니다.
   
-디버그 하는 동안 사용할 수 있습니다 합니다 **모듈** Dll을 확인 하려면 창 및 *.exe* 앱이 로드 파일입니다. 열려는 합니다 **모듈** 창에서 디버그 하는 동안 **디버그** > **Windows** > **모듈**합니다. 자세한 내용은 [방법: 모듈 창을 사용 하 여](../debugger/how-to-use-the-modules-window.md)입니다. 
+디버그 하는 동안 사용할 수 있습니다 합니다 **모듈** Dll을 확인 하려면 창 및 *.exe* 앱이 로드 파일입니다. 열려는 합니다 **모듈** 창에서 디버그 하는 동안 **디버그** > **Windows** > **모듈**합니다. 자세한 내용은 [방법: 모듈 창 사용](../debugger/how-to-use-the-modules-window.md)을 참조하세요. 
 
 ###  <a name="vxtskdebuggingdllprojectstheimmediatewindow"></a> 직접 실행 창 사용  
 

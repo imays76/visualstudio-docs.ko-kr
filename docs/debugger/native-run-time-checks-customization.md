@@ -1,8 +1,6 @@
 ---
 title: 네이티브 런타임 검사 사용자 지정 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.crt
@@ -24,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b6df61b1e0fde088fca87fa7a99f5590768889b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 7530f875b3eb14766e32b1237871e6ec48d4bb85
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853931"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836246"
 ---
 # <a name="native-run-time-checks-customization"></a>네이티브 런타임 검사 사용자 지정
 로 컴파일할 때 **/RTC** (런타임 검사) 사용 하 여 또는 `runtime_checks` pragma를 C 런타임 라이브러리 네이티브 런타임 검사를 제공 합니다. 다음과 같은 경우에는 CRT 런타임 검사를 사용자 지정할 수도 있습니다.  
@@ -38,11 +36,11 @@ ms.locfileid: "49853931"
   
 - 타사 디버거에서 런타임 검사 메시지의 출력 대상을 지정하는 경우  
   
-- C 런타임 라이브러리의 릴리스 버전으로 컴파일한 프로그램의 런타임 검사 메시지를 보고하는 경우. 라이브러리의 릴리스 버전은 `_CrtDbgReportW`를 사용하여 런타임 오류를 보고하지 않습니다. 대신 표시 됩니다는 **Assert** 각 런타임 오류에 대 한 대화 상자.  
+- C 런타임 라이브러리의 릴리스 버전으로 컴파일한 프로그램의 런타임 검사 메시지를 보고하는 경우. 라이브러리의 릴리스 버전은 `_CrtDbgReportW`를 사용하여 런타임 오류를 보고하지 않습니다. 대신 각 런타임 오류에 대해 **어설션** 대화 상자가 표시됩니다.  
   
   런타임 오류 검사를 사용자 지정하는 방법은 다음과 같습니다.  
   
-- 런타임 오류 보고 함수를 작성합니다. 자세한 내용은 [방법: 런타임 오류 보고 함수 작성](../debugger/how-to-write-a-run-time-error-reporting-function.md)합니다.  
+- 런타임 오류 보고 함수를 작성합니다. 자세한 내용은 [방법: 런타임 오류 보고 함수 작성](../debugger/how-to-write-a-run-time-error-reporting-function.md)을 참조하세요.  
   
 - 오류 메시지 대상을 사용자 지정합니다.  
   

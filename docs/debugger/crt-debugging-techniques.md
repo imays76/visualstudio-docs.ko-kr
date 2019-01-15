@@ -1,8 +1,6 @@
 ---
 title: CRT 디버깅 기술 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - c.runtime.debugging
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 890dec4a47a4dd49fa75521aaad068d331652a92
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 99edc41e86d492e8a38341917de1a5d7543dc93d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458429"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889113"
 ---
 # <a name="crt-debugging-techniques"></a>CRT 디버깅 기술
 C 런타임 라이브러리를 사용하는 프로그램을 디버깅할 경우 다음 디버깅 기술이 유용할 수 있습니다.  
@@ -36,7 +34,7 @@ C 런타임 라이브러리를 사용하는 프로그램을 디버깅할 경우 
  C 런타임 라이브러리에서 지원하는 디버깅에 대해 설명하고 도구 액세스에 대한 지침을 제공합니다.  
   
  [보고서 매크로](../debugger/macros-for-reporting.md)  
- 에 대 한 정보를 제공는 **_RPTn** 및 **_RPTFn** 매크로 (crtdbg에서 정의 합니다. 사용을 대체 하는 H) `printf` 문을 디버깅 합니다.  
+ CRTDBG.H에서 정의된 **_RPTn** 및 **_RPTFn** 매크로에 대한 정보를 제공하면 디버깅에 대한 `printf` 문의 사용을 대체합니다.  
   
  [힙 할당 함수의 디버그 버전](../debugger/debug-versions-of-heap-allocation-functions.md)  
  CRT에서 호출을 매핑하는 방법, CRT의 명시적 호출로 인한 장점, 변환을 피하는 방법, 클라이언트 블록에서 별도의 할당 형식 추적 및 _DEBUG를 정의하지 않았을 때의 결과 등을 포함하여 힙 할당 함수의 특정 디버그 버전에 대해 설명합니다.  

@@ -1,8 +1,6 @@
 ---
 title: 디버그 후크 함수 작성 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vc.hooks
@@ -23,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 365196a01ba9e62ef0b26eb3a99278d4d77a4dd4
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 9218c36f550c61484054d180ecb4dccb1ca53f3d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457344"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947506"
 ---
 # <a name="debug-hook-function-writing"></a>디버그 후크 함수 작성
 이 단원에서는 디버거의 표준 처리 과정에서 미리 정의된 특정 지점에 코드를 삽입하기 위해 작성할 수 있는 여러 가지 사용자 지정 디버그 후크 함수에 대해 설명합니다.  
@@ -41,7 +39,7 @@ ms.locfileid: "31457344"
  할당 후크 함수를 정의하고 여러 가지 용도를 파악하고 제한 사항을 알아 보며 프로토타입을 제공합니다.  
   
  [할당 후크 및 CRT 메모리 할당](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)  
- 내부 메모리를 할당하는 C 런타임 라이브러리 함수를 호출할 때 `_CRT_BLOCK` 블록을 명시적으로 무시하는 할당 후크 함수에 대한 제한 사항에 대해 설명합니다. 이 항목의 결과 할당 후크 무시 하지 않으면도 나열 되어 `_CRT_BLOCK` 블록 (예제) 및 기본 할당을 변경 하는 방법에 대 한 후크 함수 **CrtDefaultAllocHook**합니다.  
+ 내부 메모리를 할당하는 C 런타임 라이브러리 함수를 호출할 때 `_CRT_BLOCK` 블록을 명시적으로 무시하는 할당 후크 함수에 대한 제한 사항에 대해 설명합니다. 또한 이 항목에서는 할당 후크가 `_CRT_BLOCK` 블록(예제 포함)을 무시하지 않을 경우에 발생하는 결과 및 기본 할당 후크 함수 **CrtDefaultAllocHook**를 변경하는 방법도 소개합니다.  
   
  [보고서 후크 함수](../debugger/report-hook-functions.md)  
  특정 형식의 할당에 맞게 보고서를 필터링하는 데 사용할 수 있는 `_CrtSetReportHook` 함수에 대해 설명하고 프로토타입을 제공합니다.  

@@ -1,8 +1,6 @@
 ---
-title: '방법: COM 서버 디버깅 | Microsoft Docs'
-ms.custom: ''
+title: '방법: COM 서버 디버그 | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.com
@@ -24,14 +22,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87d5bedd98aed5ab7bddc7027eaac9e7678d533c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 6343366478e360631b5a50c8c6d36ca4b31c27cf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481686"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853933"
 ---
-# <a name="how-to-debug-com-servers"></a>방법: COM 서버 디버깅
+# <a name="how-to-debug-com-servers"></a>방법: COM 서버 디버그
 COM 서버 응용 프로그램을 디버깅할 경우 쉽게 해결할 수 없는 몇 가지 문제가 발생합니다.  
   
  컨테이너 응용 프로그램에 대한 디버깅 정보가 없거나 필요하지 않은 경우에는 다음 3단계 절차를 통해 서버 응용 프로그램 디버깅을 시작할 수 있습니다.  
@@ -46,7 +44,7 @@ COM 서버 응용 프로그램을 디버깅할 경우 쉽게 해결할 수 없�
   
 ## <a name="see-also"></a>참고 항목  
  [COM 및 ActiveX 디버깅](../debugger/com-and-activex-debugging.md)   
- [방법: COM 클라이언트 및 서버 RPC 디버깅을 사용 하 여 디버그](../debugger/how-to-debug-com-clients-and-servers-using-rpc-debugging.md)   
+ [방법: RPC 디버깅을 사용하여 COM 클라이언트 및 서버 디버그](../debugger/how-to-debug-com-clients-and-servers-using-rpc-debugging.md)   
  [COM 서버 및 컨테이너 디버깅](../debugger/com-server-and-container-debugging.md)   
  [Visual Studio의 디버깅](../debugger/index.md)  
  [디버거 기능 둘러보기](../debugger/debugger-feature-tour.md)

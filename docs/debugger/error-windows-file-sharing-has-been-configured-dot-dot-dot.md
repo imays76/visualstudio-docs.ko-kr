@@ -1,8 +1,6 @@
 ---
 title: '오류: Windows 파일 공유가 구성 되었습니다... | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.remote_credentials_prohibited
@@ -16,14 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 591b051cb6164f4c8d260be3de29833154c96255
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 3bc3388bcf80d471c8dc6d45b0035f74d57abc93
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472791"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942215"
 ---
-# <a name="error-windows-file-sharing-has-been-configured"></a>오류: ...Windows 파일 공유가 구성되었습니다.
+# <a name="error-windows-file-sharing-has-been-configured"></a>오류: Windows 파일 공유가 구성되었음...
 원격 컴퓨터에 다른 사용자 이름을 사용하여 연결하도록 Windows 파일 공유가 구성되었습니다. 이러한 구성은 원격 디버깅과 호환되지 않습니다.  
   
  현재 파일 공유 구성은 다른 사용자 이름을 사용하여 원격 컴퓨터에 연결하도록 설정되어 있습니다. 이러한 상황에서는 원격으로 디버깅할 수 없습니다.  
@@ -38,9 +36,9 @@ ms.locfileid: "31472791"
   
      또는  
   
-     이어야 합니다. 원격 컴퓨터와의 연결을 끊고 사용자의 계정 이름을 사용하여 다른 컴퓨터에 연결하도록 파일 공유를 다시 구성합니다.  
+     . 원격 컴퓨터와의 연결을 끊고 사용자의 계정 이름을 사용하여 다른 컴퓨터에 연결하도록 파일 공유를 다시 구성합니다.  
   
-    1.  에 **시작** 메뉴에서 **액세서리**, 클릭 하 고 **명령 프롬프트**합니다.  
+    1.  **시작** 메뉴에서 **보조 프로그램**을 가리킨 다음, **명령 프롬프트**를 클릭합니다.  
   
     2.  Windows 명령 프롬프트에 다음과 같이 입력합니다.  
   

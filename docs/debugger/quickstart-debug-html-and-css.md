@@ -1,8 +1,6 @@
 ---
 title: UWP 앱에서 HTML 및 CSS 디버그 | Microsoft Docs
-ms.custom: ''
 ms.date: 07/17/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - VS.WebClient.DomExplorer
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 6e812d60daf7e084835c0de9549cd58ff2711fea
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 0ea34ba58ec882121b40ca7e7585fa0cb0419356
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916688"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892717"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Visual Studio에서 UWP 앱에서 HTML 및 CSS 디버그
   
@@ -31,7 +29,7 @@ ms.locfileid: "49916688"
   
  DOM 검사 도구에서 제공된 대화형 디버깅 모델을 사용하여 렌더링된 HTML 및 CSS 코드를 보고 수정할 수 있습니다. 디버거를 중지했다 다시 시작하지 않고도 이 모든 작업을 수행할 수 있습니다.
   
- 기타 JavaScript 디버깅, JavaScript 콘솔 창을 사용 하 여 및 중단점 설정과 같은 기능에 대 한 정보를 참조 하세요. [퀵 스타트: JavaScript 디버그](../debugger/quickstart-debug-javascript-using-the-console.md) 하 고 [Visual Studio에서 앱을 디버그](../debugger/debug-store-apps-in-visual-studio.md)합니다.  
+ 기타 JavaScript 디버깅, JavaScript 콘솔 창을 사용 하 여 및 중단점 설정과 같은 기능에 대 한 정보를 참조 하세요. [빠른 시작: JavaScript 디버그](../debugger/quickstart-debug-javascript-using-the-console.md) 하 고 [Visual Studio에서 앱을 디버그](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)합니다.  
   
 ##  <a name="InspectingDOM"></a> 라이브 DOM 검사  
  DOM 탐색기는 렌더링된 페이지의 뷰를 보여 주고, DOM 탐색기를 사용하여 값을 변경하고 변경 결과를 바로 확인할 수 있습니다. 그러면 디버거를 중지했다가 다시 시작하지 않고도 변경 내용을 테스트할 수 있습니다. 이 방법을 사용하여 페이지와 상호 작용할 때 프로젝트의 소스 코드는 변경되지 않으므로 원하는 코드 수정 내용을 찾으면 소스 코드를 변경합니다.  
@@ -47,7 +45,7 @@ ms.locfileid: "49916688"
   
 - 페이지 요소에 CSS 스타일이 적용된 방식을 검사하고 적용된 규칙을 추적합니다.  
   
-  응용 프로그램을 디버깅할 때 주로 DOM 탐색기에서 요소를 선택해야 합니다. 요소를 선택하면 DOM 탐색기 오른쪽 탭에 나타나는 값이 DOM 탐색기에서 선택된 요소를 반영하도록 자동으로 업데이트됩니다. 이러한 탭으로는 **스타일**, **계산됨**, **레이아웃**탭이 있습니다. UWP 앱도 지원 합니다 **이벤트** 하 고 **변경** 탭 합니다. 요소를 선택하는 방법에 대한 자세한 내용은 [Selecting elements](#SelectingElements)을 참조하세요.  
+  응용 프로그램을 디버깅할 때 주로 DOM 탐색기에서 요소를 선택해야 합니다. 요소를 선택하면 DOM 탐색기 오른쪽 탭에 나타나는 값이 DOM 탐색기에서 선택된 요소를 반영하도록 자동으로 업데이트됩니다. 탭은 다음과 같습니다. **스타일**하십시오 **계산**를 **레이아웃**합니다. UWP 앱도 지원 합니다 **이벤트** 하 고 **변경** 탭 합니다. 요소를 선택하는 방법에 대한 자세한 내용은 [Selecting elements](#SelectingElements)을 참조하세요.  
   
 > [!TIP]
 >  DOM 탐색기 창이 닫혀 있는 경우 **디버그**>**창** > **DOM 탐색기** 를 선택하여 창을 다시 엽니다. 창은 스크립트 디버깅 세션 중에만 나타납니다.  
@@ -150,7 +148,7 @@ ms.locfileid: "49916688"
   
     ![디버그 대상 목록 선택](../debugger/media/js_select_target.png "JS_Select_Target")  
   
-8. **디버그** > **Start 디버그ging**을 선택하거나 F5 키를 눌러 디버그 모드에서 앱을 실행합니다.  
+8.  **디버그** > **Start 디버그ging**을 선택하거나 F5 키를 눌러 디버그 모드에서 앱을 실행합니다.  
   
     앱이 실행 되지만 스타일 지정에 몇 가지 버그가 있으므로 대부분 빈 화면이 표시 됩니다. 첫 번째 `FlipView` 이미지가 화면 가운데에 작은 사각형 안에 나타납니다.  
   
@@ -159,7 +157,7 @@ ms.locfileid: "49916688"
    > [!TIP]
    >  Alt+Tab 또는 F12 키를 눌러 Visual Studio와 실행 중인 응용 프로그램 간에 전환할 수 있습니다.  
   
-10. DOM 탐색기 창에서 `"fView"`의 ID가 있는 섹션에 대한 DIV 요소를 선택합니다. 화살표 키를 사용하여 올바른 DIV 요소를 보고 선택합니다. (오른쪽 화살표 키를 통해 요소의 자식을 볼 수 있습니다.)  
+10. DOM 탐색기 창에서 `"fView"`의 ID가 있는 섹션에 대한 DIV 요소를 선택합니다. 화살표 키를 사용하여 올바른 DIV 요소를 보고 선택합니다. (오른쪽 화살표 키를 사용하여 요소의 자식을 볼 수 있습니다.)  
   
      ![DOM 탐색기](../debugger/media/js_dom_explorer.png "JS_DOM_Explorer")  
   
@@ -172,7 +170,7 @@ ms.locfileid: "49916688"
   
      이 탭에는 선택한 DOM 요소의 각 속성에 대한 계산된 값 또는 최종 값이 표시됩니다.  
   
-12. 높이 CSS 규칙을 엽니다. 100px에 설정 하는 100% 높이 값과 일치 하지 않는 한 인라인 스타일으로는 `#fView` CSS 선택기입니다. `#fView` 선택기의 취소선 텍스트는 인라인 스타일이 이 스타일보다 우선함을 나타냅니다.  
+12. 높이 CSS 규칙을 엽니다. 100px로 설정된 인라인 스타일이 있습니다. 이 스타일은 `#fView` CSS 선택기에 설정된 100% 높이 값과 일치하지 않는 것으로 나타납니다. `#fView` 선택기의 취소선 텍스트는 인라인 스타일이 이 스타일보다 우선함을 나타냅니다.  
   
      다음 그림에는 **계산됨** 탭이 나와 있습니다.  
   
@@ -199,7 +197,7 @@ ms.locfileid: "49916688"
   
      문제가 많이 해결되었지만 여백이 너무 넓기 때문에 이 문제를 하나 더 해결해야 합니다.  
   
-19. 확인 하려면 Visual Studio로 전환 하 고 선택 합니다 **레이아웃** 탭 요소의 상자 모델을 확인 합니다.  
+19. 자세히 알아보려면 Visual Studio로 전환하고 **레이아웃** 탭을 선택하여 요소의 상자 모델을 확인합니다.  
   
      에 **레이아웃** 탭 다음과 같이 표시 됩니다.  
   
@@ -209,7 +207,7 @@ ms.locfileid: "49916688"
   
       ![DOM 탐색기의 레이아웃 탭](../debugger/media/js_dom_explorer_layout.png "JS_DOM_Explorer_Layout")  
   
-      이 값은 올바르지 합니다. **계산됨** 탭에 같은 여백 값도 표시됩니다.  
+      이 값은 올바르지 않은 것 같습니다. **계산됨** 탭에 같은 여백 값도 표시됩니다.  
   
 20. **스타일** 탭을 선택하고 `#fView` CSS 선택기를 찾습니다. 여기에 **여백** 속성의 값 25%가 있습니다.  
   
@@ -225,7 +223,7 @@ ms.locfileid: "49916688"
   
 2.  default.html을 열고 `"fView"` DIV 요소의 높이와 너비를 100%로 변경하여 소스 코드를 수정합니다.  
   
-3.  디버그 도구 모음에서 **Windows 앱 새로 고침** 단추를 선택하거나 F4 키를 누릅니다. 단추는 다음과 같습니다: ![새로 고침 Windows 앱 단추](../debugger/media/js_refresh.png "JS_Refresh")합니다.  
+3.  디버그 도구 모음에서 **Windows 앱 새로 고침** 단추를 선택하거나 F4 키를 누릅니다. 단추는 과 같습니다. ![Windows 응용 프로그램 단추를 새로 고칠](../debugger/media/js_refresh.png "JS_Refresh")합니다.  
   
      응용 프로그램 페이지가 다시 로드되고 시뮬레이터 또는 Phone 에뮬레이터가 전경으로 돌아갑니다.  
   
@@ -256,8 +254,8 @@ ms.locfileid: "49916688"
 >  요소를 마우스로 가리키면 강조 표시되는 기능은 Windows Phone 에뮬레이터에서만 일부 지원됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
- [앱 (JavaScript) 새로 고침](../debugger/refresh-an-app-javascript.md)   
+ [Debug apps in Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)   
+ [앱 새로 고침(JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [WebView 컨트롤 디버그](../debugger/debug-a-webview-control.md)   
  [바로 가기 키](../debugger/keyboard-shortcuts-html-and-javascript.md)   
  [JavaScript Console commands](../debugger/javascript-console-commands.md)   

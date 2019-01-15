@@ -2,7 +2,6 @@
 title: 프로시저 나가기 C# 호출 스택에서 네이티브 프레임이 없을 때 코드 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -24,14 +23,14 @@ manager: douge
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 741afb6befdbc29cafab39c3c9b0d7bb2761d7b1
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 2759df7cc59f4d0167e1ef44dfb9cc65d16ba815
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057654"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867438"
 ---
-# <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>방법: 네이티브 프레임이 호출 스택 창에서 누락 된 경우에 관리 코드를 나가기
+# <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>방법: 호출 스택 창에 네이티브 프레임이 없을 때 관리 코드에서 나가기
 
 **호출 스택** 창에 표시되지 않는 네이티브 프레임이 코드에 있는 경우 관리 코드에서 나가면 예기치 않은 결과가 발생할 수 있습니다. **프로시저 나가기** 대신 중단점을 사용하면 이 문제를 해결할 수 있습니다.
 

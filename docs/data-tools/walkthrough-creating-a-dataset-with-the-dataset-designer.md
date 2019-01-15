@@ -1,5 +1,5 @@
 ---
-title: '연습: 데이터 집합 디자이너를 사용하여 데이터 집합 만들기'
+title: '연습: 데이터 집합 디자이너를 사용 하 여 데이터 집합 만들기'
 ms.date: 09/11/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,15 +12,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 32a093e59d918f34ddf5da9cbb5edb13c96b2777
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
-ms.translationtype: MT
+ms.openlocfilehash: e79646609bf592b7a8d71d3e0ba8660c65520715
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117929"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868523"
 ---
 # <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>연습: 데이터 집합 디자이너를 사용 하 여 데이터 집합 만들기
 
@@ -44,11 +43,11 @@ ms.locfileid: "37117929"
 
        짧은 시간 후 쿼리 실행을 완료 하 고 Northwind 데이터베이스 생성 됩니다.
 
-## <a name="create-a-new-windows-forms-application-project"></a>새 Windows Forms 응용 프로그램 프로젝트 만들기
+## <a name="create-a-new-windows-forms-application-project"></a>새 Windows Forms 애플리케이션 프로젝트 만들기
 
 1. Visual Studio에서에 **파일** 메뉴에서 **새로 만들기** > **프로젝트**합니다.
 
-2. 확장 **Visual C#** 하거나 **Visual Basic** 왼쪽 창에서 선택한 **Windows Desktop**합니다.
+2. 확장 **시각적 C#**  하거나 **Visual Basic** 왼쪽 창에서 선택한 **Windows Desktop**.
 
 3. 가운데 창에서 선택 합니다 **Windows Forms 앱** 형식 프로젝션 합니다.
 
@@ -58,7 +57,7 @@ ms.locfileid: "37117929"
 
 ## <a name="add-a-new-dataset-to-the-application"></a>응용 프로그램에 새 데이터 집합 추가
 
-1.  에 **프로젝트** 메뉴에서 **새 항목 추가**합니다.
+1.  **프로젝트** 메뉴에서 **새 항목 추가**를 선택합니다.
 
      **새 항목 추가** 대화 상자가 나타납니다.
 
@@ -70,7 +69,7 @@ ms.locfileid: "37117929"
 
 ## <a name="create-a-data-connection-in-server-explorer"></a>서버 탐색기에서 데이터 연결 만들기
 
-1.  에 **뷰** 메뉴에서 클릭 **서버 탐색기**합니다.
+1.  **보기** 메뉴에서 **서버 탐색기**를 클릭합니다.
 
 2.  **서버 탐색기**를 클릭 합니다 **데이터베이스에 연결** 단추입니다.
 
@@ -110,9 +109,9 @@ ms.locfileid: "37117929"
 
 -   유효성 검사 논리를 추가 합니다 <xref:System.Data.DataTable.ColumnChanging> 또는 <xref:System.Data.DataTable.RowChanging> 데이터 집합에 있는 데이터 테이블의 이벤트입니다. 자세한 내용은 [데이터 집합의 데이터 유효성 검사](../data-tools/validate-data-in-datasets.md)합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-- [Visual Studio에서 데이터 집합 만들기 및 구성](../data-tools/create-and-configure-datasets-in-visual-studio.md)
+- [Visual Studio에서 데이터 세트 만들기 및 구성](../data-tools/create-and-configure-datasets-in-visual-studio.md)
 - [Visual Studio에서 데이터에 Windows Forms 컨트롤 바인딩](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Visual Studio에서 데이터에 컨트롤 바인딩](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [데이터 유효성 검사](../data-tools/validate-data-in-datasets.md)

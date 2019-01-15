@@ -1,8 +1,6 @@
 ---
 title: '방법: 코드 변경을 중지 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f3694c23f52a1c34cd99d8391b14cc92ac939813
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 24aa925ef22c7322e7c3a2531bcb8ee492981096
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903675"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843257"
 ---
 # <a name="how-to-stop-code-changes"></a>방법: 코드 변경 중지
 편집하며 계속하기에서 코드 변경 내용을 적용하는 동안 작업을 중지할 수 있습니다.  
@@ -34,12 +32,12 @@ ms.locfileid: "49903675"
   
 ### <a name="to-stop-applying-code-changes"></a>코드 변경 내용의 적용을 중지하려면  
   
-- 선택할 **코드 변경 내용 적용 중지** 에서 합니다 **디버그** 메뉴.  
+- **디버그** 메뉴에서 **코드 변경 내용 적용 중지**를 선택합니다.  
   
   이 메뉴 항목은 코드 변경 내용을 적용하는 동안에만 표시됩니다.  
   
   이 옵션을 선택하면 코드 변경 내용이 커밋되지 않습니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [편집 하며 계속 하기](../debugger/edit-and-continue.md)   
+ [편집하며 계속하기](../debugger/edit-and-continue.md)   
  [옵션 대화 상자, 디버깅, 편집하며 계속하기](https://msdn.microsoft.com/library/bcew296c.aspx)

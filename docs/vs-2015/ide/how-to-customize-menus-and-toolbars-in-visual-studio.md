@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -33,14 +32,14 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3196aac35a05d915f1f4c3b58547e0787e9a1afc
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e9b9f755379644cbc3dd5b4a06fae44b2416f251
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066706"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820931"
 ---
-# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>방법: 메뉴 및 Visual Studio에서 도구 모음 사용자 지정
+# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>방법: Visual Studio에서 메뉴 및 도구 모음 사용자 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 메뉴 모음의 도구 모음 및 메뉴를 추가 및 제거하는 방법뿐만 아니라 지정된 도구 모음 또는 메뉴의 명령을 제거하여 Visual Studio를 사용자 지정할 수 있습니다.
@@ -96,7 +95,7 @@ ms.locfileid: "53066706"
          도구 모음의 왼쪽 가장자리를 주 도킹 영역에서 원하는 위치로 끌어 도구 모음을 이동할 수도 있습니다.
 
         > [!NOTE]
-        >  사용 가능성과 내게 필요한 옵션 도구 모음을 개선 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법: IDE 내게 필요한 옵션 설정](../ide/reference/how-to-set-ide-accessibility-options.md)합니다.
+        >  도구 모음의 사용 가능성과 내게 필요한 옵션 기능을 향상시키는 방법에 대한 자세한 내용은 [방법: IDE 접근성 옵션 설정](../ide/reference/how-to-set-ide-accessibility-options.md)을 참조하세요.
 
 ##  <a name="bkmk_customize"></a> 메뉴 또는 도구 모음 사용자 지정
 

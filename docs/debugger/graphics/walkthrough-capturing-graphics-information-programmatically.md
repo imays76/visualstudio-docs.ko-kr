@@ -1,20 +1,18 @@
 ---
-title: '연습: 그래픽 정보를 프로그래밍 방식으로 캡처 | Microsoft Docs'
-ms.custom: ''
+title: '연습: 프로그래밍 방식으로 그래픽 정보 캡처 | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 659e370d664b3db2c3624d73164b4489cc2680a3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 18ea39346689d2a9a68d34e1e9189f2cab300b02
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933289"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850689"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>연습: 프로그래밍 방식으로 그래픽 정보 캡처
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 그래픽 진단을 사용하여 Direct3D 앱에서 그래픽 정보를 프로그래밍 방식으로 캡처할 수 있습니다.  
@@ -28,7 +26,7 @@ ms.locfileid: "49933289"
 -   수동 테스트로는 렌더링 문제를 예측하고 캡처하기 어려워도 런타임의 앱 상태에 대한 정보를 사용하여 프로그래밍 방식으로 예측할 수 있는 경우 `CaptureCurrentFrame`을 호출합니다.  
   
 ##  <a name="CaptureDX11_2"></a> Windows 10의 프로그래밍 방식 캡처  
- 이 연습 부분에는 강력한 캡처 방법을 사용 하는 Windows 10에서 DirectX 11.2 API를 사용 하는 앱에서 프로그래밍 캡처를 보여 줍니다.
+ 이 연습 부분에서는 Windows 10에서 DirectX 11.2 API를 사용하는 앱의 프로그래밍 방식 캡처를 보여 줍니다. 이 API는 강력한 캡처 방법을 사용합니다.
   
  이 섹션에서는 다음 작업을 수행하는 방법을 보여줍니다.  
   
@@ -56,7 +54,7 @@ ms.locfileid: "49933289"
     ```  
   
     > [!IMPORTANT]
-    >  헤더 파일 vsgcapture.h—which 지원 프로그래밍 방식 캡처를 Windows 8.0 및 이전 버전을 포함 하지 마십시오-Windows 10 앱에서 프로그래밍 캡처를 수행 합니다. 이 헤더는 DirectX 11.2와 호환되지 않습니다. D3d11_2.h 헤더를 포함 한 후이 파일이 포함 되어 있으면 컴파일러는 경고를 실행 합니다. D3d11_2.h 전에 vsgcapture.h는 포함 하는 경우 앱이 시작 되지 않습니다.  
+    >  Windows 10 앱에서 프로그래밍 방식 캡처를 수행하기 위해 Windows 8.0 및 이전 버전에서 프로그래밍 방식 캡처를 지원하는 vsgcapture.h 헤더 파일을 포함하지 않습니다. 이 헤더는 DirectX 11.2와 호환되지 않습니다. D3d11_2.h 헤더를 포함 한 후이 파일이 포함 되어 있으면 컴파일러는 경고를 실행 합니다. D3d11_2.h 전에 vsgcapture.h는 포함 하는 경우 앱이 시작 되지 않습니다.  
   
     > [!NOTE]
     >  컴퓨터에 June 2010 DirectX SDK가 설치되어 있고 프로젝트의 포함 경로에 `%DXSDK_DIR%includex86`이 포함되어 있으면 이 부분을 포함 경로의 끝으로 옮깁니다. 라이브러리 경로에 대해서도 동일하게 수행합니다.  
@@ -86,7 +84,7 @@ ms.locfileid: "49933289"
   ```  
   
   > [!NOTE]
-  >  `DXGIGetDebugInterface1` 이 `E_NOINTERFACE` (`error: E_NOINTERFACE No such interface supported`)를 반환하는 경우 앱이 그래픽 진단에서 실행되고 있는지 확인합니다( [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]의 Alt+F5)로 앱을 실행해야 합니다.  
+  >   `DXGIGetDebugInterface1` 이 `E_NOINTERFACE` (`error: E_NOINTERFACE No such interface supported`)를 반환하는 경우 앱이 그래픽 진단에서 실행되고 있는지 확인합니다( [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]의 Alt+F5)로 앱을 실행해야 합니다.  
   
 ### <a name="capturing-graphics-information"></a>그래픽 정보 캡처  
  이제 유효한 `IDXGraphicsAnalysis` 인터페이스가 있으므로 `BeginCapture` 및 `EndCapture` 를 사용하여 그래픽 정보를 캡처할 수 있습니다.  

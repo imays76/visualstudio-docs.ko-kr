@@ -1,8 +1,6 @@
 ---
 title: '경고: 스크립트 디버깅 사용 안 함 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.scriptdisabled
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 33d491d9c3b81f508523bf87d88c0bad27822e4c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 9b2cff26e977d6d7e1079e558ed0dc40fa305f6c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476795"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940442"
 ---
 # <a name="warning-script-debugging-disabled"></a>경고: 스크립트 디버깅 사용 안 함
 Internet Explorer에서는 현재 스크립트 디버깅을 사용하지 않습니다.  
@@ -31,13 +29,13 @@ Internet Explorer에서는 현재 스크립트 디버깅을 사용하지 않습�
   
 ### <a name="to-enable-script-debugging-in-internet-explorer"></a>Internet Explorer에서 스크립트 디버깅을 사용하려면  
   
-1.  Internet Explorer에서 **도구** 메뉴 선택 **인터넷 옵션**합니다.  
+1.  Internet Explorer의 **도구** 메뉴에서 **인터넷 옵션**을 선택합니다.  
   
 2.  **인터넷 옵션** 대화 상자에서 **고급** 탭을 클릭합니다.  
   
-3.  에 **고급** 탭, 찾는 위치는 **설정** 상자 **탐색** 범주입니다.  
+3.  **고급** 탭의 **설정** 상자에서 **탐색** 범주를 찾습니다.  
   
-4.  지우기 **스크립트 디버깅 (Internet Explorer)** 합니다.  
+4.  **스크립트 디버깅 사용 안 함(Internet Explorer)** 의 선택을 취소합니다.  
   
 5.  **확인**을 클릭합니다.  
   

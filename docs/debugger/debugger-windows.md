@@ -2,7 +2,6 @@
 title: 디버거 창 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 04/25/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 4c6fe8f1-b015-4989-bb31-72ebac390026
 author: mikejo5000
@@ -10,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d55f1ba3a9e0d30dda9d9e390bae0cc3a46f8444
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: c546bd408d1c4c91ec19962536e1e4fe774dbd84
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562349"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875808"
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>Visual Studio에서 디버거 Windows에 알아봅니다
 
@@ -35,13 +34,13 @@ ms.locfileid: "53562349"
 |직접 실행|Ctrl+Alt+I|[직접 실행 창](../ide/reference/immediate-window.md)|
 |병렬 스택|Ctrl+Shift+D, S|[병렬 스택 창 사용](../debugger/using-the-parallel-stacks-window.md)|
 |병렬 조사식|Ctrl+Shift+D, (1, 2, 3, 4)|[다중 스레드 애플리케이션 디버깅 시작](../debugger/get-started-debugging-multithreaded-apps.md)|
-|스레드|Ctrl+Alt+H|[스레드 창을 사용 하 여 디버깅](../debugger/how-to-use-the-threads-window.md)|
+|스레드|Ctrl+Alt+H|[스레드 창을 사용하여 디버그](../debugger/how-to-use-the-threads-window.md)|
 |모듈|Ctrl+Alt+U|[방법: 모듈 창 사용](../debugger/how-to-use-the-modules-window.md)|
 |GPU 스레드|-|[방법: GPU 스레드 창 사용](../debugger/how-to-use-the-gpu-threads-window.md)|
 |작업|Ctrl+Shift+D, K|[작업 창 사용](../debugger/using-the-tasks-window.md)|
 |Python 대화형 디버그|Shift+Alt+I|[Python 대화형 REPL](../python/python-interactive-repl-in-visual-studio.md)|
 |JavaScript 콘솔|Ctrl+Alt+V, C|[빠른 시작: JavaScript 디버그](../debugger/quickstart-debug-javascript-using-the-console.md)|
-|DOM 탐색기|Ctrl+Alt+V, D|[DOM 탐색기를 사용하여 레이아웃 디버그](../debugger/debug-layout-using-dom-explorer.md)|
+|DOM 탐색기|Ctrl+Alt+V, D|[DOM 탐색기를 사용하여 레이아웃 디버그](/visualstudio/debugger/quickstart-debug-html-and-css)|
 |라이브 시각적 트리|-|[디버그하는 동안 XAML 속성 검사](../debugger/inspect-xaml-properties-while-debugging.md)|
 |라이브 속성 탐색기|-|[디버그하는 동안 XAML 속성 검사](../debugger/inspect-xaml-properties-while-debugging.md)|
 |프로세스|Ctrl+Alt+Z|[스레드 및 프로세스 디버그](../debugger/debug-threads-and-processes.md)|

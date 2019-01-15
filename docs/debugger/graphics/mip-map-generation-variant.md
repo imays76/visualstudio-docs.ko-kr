@@ -1,8 +1,6 @@
 ---
 title: Mip 맵 생성 변형 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 3b4b3583-0b01-4f5d-aacb-3f96d19111d9
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 06b2d1e537152020b42fdff38fab1200b9cf7668
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: ca094c4a29e18ebde5ac33f1c35c2a53d60c2327
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908538"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836545"
 ---
 # <a name="mip-map-generation-variant"></a>MIP 맵 생성 변형
 렌더링 대상이 아닌 질감에 대해 Mip 맵을 사용합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49908538"
   
  이러한 변형이 성능을 상당히 개선하면 Mip 맵을 사용하지 않음을 나타내므로 질감 캐시를 최대한 활용하지 않는 것입니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  원본 질감을 생성하는 `ID3D11Device::CreateTexture2D`를 호출할 때마다 Mip 맵이 강제로 생성됩니다. Mip 맵 생성에서 D3D11_TEXTURE2D_DESC 개체가 전달 하는 경우 강제 특히 `pDesc` 는 변하지 않는 셰이더 리소스를 설명 합니다.  
   
 - BindFlags 멤버에 D3D11_BIND_SHADER_RESOURCE 플래그 집합만 있는 경우  
@@ -45,7 +43,7 @@ ms.locfileid: "49908538"
   질감에 대한 Mip 맵이 자동으로 생성된 경우 질감 샘플링 중 Mip 체인을 사용하도록 `ID3D11Device::CreateShaderResourceView`에 대한 호출이 재생 중 수정됩니다.  
   
 ## <a name="example"></a>예제  
- 합니다 **Mip 맵 생성** 변형은 다음과 같은 코드를 사용 하 여 재현할 수 있습니다.  
+ **Mip 맵 생성** 변형은 다음과 같은 코드를 사용하여 재현할 수 있습니다.  
   
 ```cpp
 D3D11_TEXTURE2D_DESC texture_description;  

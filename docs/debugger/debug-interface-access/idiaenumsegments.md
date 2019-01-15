@@ -1,8 +1,6 @@
 ---
 title: IDiaEnumSegments | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 30e359192ea6d19d6bc6e31de3c91943bda2deee
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
-ms.translationtype: MT
+ms.openlocfilehash: 72795807415e3ae81a44e38e66ddfc9ebc7ab94c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056872"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954476"
 ---
 # <a name="idiaenumsegments"></a>IDiaEnumSegments
 데이터 원본에 포함 된 다양 한 세그먼트를 열거 합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "37056872"
 ## <a name="syntax"></a>구문  
   
 ```  
-IDiaEnumSegments : IUnknown  
+IDiaEnumSegments : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드  
@@ -43,12 +41,12 @@ IDiaEnumSegments : IUnknown
 |[IDiaEnumSegments::Reset](../../debugger/debug-interface-access/idiaenumsegments-reset.md)|열거형 시퀀스를 처음으로 다시 설정합니다.|  
 |[IDiaEnumSegments::Clone](../../debugger/debug-interface-access/idiaenumsegments-clone.md)|현재 열거자와 열거 상태가 같은 포함 하는 열거자를 만듭니다.|  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
   
 ## <a name="notes-for-callers"></a>호출자에 대 한 정보  
  호출 하 여이 인터페이스를 가져올는 `QueryInterface` 메서드는 [IDiaTable](../../debugger/debug-interface-access/idiatable.md) 개체입니다. 세부 정보에 대 한 예제를 참조 하세요.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  가져오는 방법을 보여 주는이 예제는 `IDiaEnumSections` 테이블에서 인터페이스입니다. 세그먼트를 사용 하 여 자세한 예제를 참조 하세요. 합니다 [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) 인터페이스입니다.  
   
 ```C++  
@@ -67,13 +65,13 @@ void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)
 ```  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: Dia2.h  
+ 헤더: dia2.h  
   
  라이브러리: diaguids.lib  
   
  DLL: msdia80.dll  
   
 ## <a name="see-also"></a>참고 항목  
- [인터페이스 (디버그 인터페이스 액세스 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [인터페이스(디버그 인터페이스 액세스 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaTable](../../debugger/debug-interface-access/idiatable.md)   
  [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

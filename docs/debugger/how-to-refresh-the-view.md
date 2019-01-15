@@ -1,8 +1,6 @@
 ---
 title: '방법: 보기를 새로 고쳐 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - refreshing views
@@ -12,21 +10,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a3da7466f7f1ac569378d5ce5053c72c55d4ae68
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: dc7510986c87115a0f93078fb6788644c984460b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480087"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880168"
 ---
-# <a name="how-to-refresh-the-view"></a>방법: 뷰 새로 고침
-Spy + + 시스템 테이블의 "스냅숏" 하 고이 정보에 따라 보기를 새로 고칩니다. 주기적으로 시스템 뷰를 새로 고치는 것입니다. Spy + + 보기를 열고 뷰가 새로 고쳐지지를 설정한 경우 프로세스, 스레드 및 나중에 만들어진 windows 되지 표시 됩니다. 또한 더 이상 존재 하는 항목을 볼 수 없습니다. **새로 고침** 메시지 뷰를 제외한 모든 보기에 사용할 수 있는 명령입니다.  
+# <a name="how-to-refresh-the-view"></a>방법: 보기 새로 고침
+Spy + +는 시스템 테이블의 "스냅숏" 고이 정보를 기준으로 보기를 새로 고칩니다. 주기적으로 시스템 뷰를 새로 고치는 것입니다. Spy + + 뷰를 열고 뷰를 새로 고치지 않은 경우 표시 되지 않습니다 해당 프로세스, 스레드 및 나중에 만들어진 windows. 또한 더 이상 존재 하는 항목을 볼 수 없습니다. 합니다 **새로 고침** 메시지 뷰를 제외한 모든 보기에 사용할 수 있는 명령입니다.  
   
 ### <a name="to-refresh-the-currently-active-view"></a>현재 활성 뷰를 새로 고치려면  
   
--   선택 **새로 고침** 에서 **창** 메뉴를 사용 하거나 클릭은 **새로 고침** 도구 모음의 단추입니다.  
+-   선택 **새로 고침** 에서 합니다 **창** 메뉴나 클릭 합니다 **새로 고침** 도구 모음에서 단추.  
   
 ## <a name="see-also"></a>참고 항목  
- [Spy + + 사용](../debugger/using-spy-increment.md)   
- [Spy + + 뷰](../debugger/spy-increment-views.md)   
+ [Spy++ 사용](../debugger/using-spy-increment.md)   
+ [Spy++ 뷰](../debugger/spy-increment-views.md)   
  [Spy++ 참조](../debugger/spy-increment-reference.md)

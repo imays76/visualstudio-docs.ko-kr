@@ -1,8 +1,6 @@
 ---
 title: '&lt;PackageFiles&gt; 요소 (부트스트래퍼) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 84451a90e316a98a9998e1a64e68a72668bd4781
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: fd2436f7aa3fe24e90f380cf523b3affa6579e2b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813767"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990349"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles&gt; 요소 (부트스트래퍼)
 합니다 `PackageFiles` 요소에 포함 되어 `PackageFile` 의 결과로 실행 설치 패키지를 정의 하는 요소는 `Command` 요소입니다.  
@@ -58,7 +56,7 @@ ms.locfileid: "49813767"
 
 | 특성 | 설명 |
 |---------------| - |
-| `Name` | 필수. 패키지 파일의 이름입니다. 이 이름은는 `Command` 요소는 패키지를 설치 하는 조건을 정의 될 때 참조 합니다. 이 값은 키로 사용 합니다 `Strings` 와 같은 도구는 지역화 된 이름을 검색할 테이블 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 패키지를 설명 하는 데 사용할 합니다. |
+| `Name` | 필수 요소. 패키지 파일의 이름입니다. 이 이름은는 `Command` 요소는 패키지를 설치 하는 조건을 정의 될 때 참조 합니다. 이 값은 키로 사용 합니다 `Strings` 와 같은 도구는 지역화 된 이름을 검색할 테이블 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 패키지를 설명 하는 데 사용할 합니다. |
 | `HomeSite` | 선택 사항입니다. 원격 서버에 설치 관리자를 사용 하 여 포함 되지 않은 경우 패키지의 위치입니다. |
 | `CopyOnBuild` | 선택 사항입니다. 부트스트래퍼 빌드 시 패키지 파일을 디스크를 복사 해야 하는지 여부를 지정 합니다. 기본값은 true입니다. |
 | `PublicKey` | 패키지의 인증서 서명자의 공개 키 암호화입니다. 필요한 경우 `HomeSite` 사용 되는, 그렇지 않으면 선택적입니다. |
@@ -76,7 +74,7 @@ ms.locfileid: "49813767"
 </PackageFiles>  
 ```  
 
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [\<제품 > 요소](../deployment/product-element-bootstrapper.md)   
  [\<패키지 > 요소](../deployment/package-element-bootstrapper.md)   
  [제품 및 패키지 스키마 참조](../deployment/product-and-package-schema-reference.md)

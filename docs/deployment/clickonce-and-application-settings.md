@@ -1,8 +1,6 @@
 ---
 title: ClickOnce 및 응용 프로그램 설정 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d3cf6320401f58cd8ea1733e3b972202ba9b6d3
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 40077a30a49842187c24b4cf8b0cba18b3d0a46a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081096"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850968"
 ---
-# <a name="clickonce-and-application-settings"></a>ClickOnce 및 응용 프로그램 설정
+# <a name="clickonce-and-application-settings"></a>ClickOnce 및 애플리케이션 설정
 Windows Forms에 대 한 응용 프로그램 설정을 쉽게 만들고, 저장 및 사용자 지정 응용 프로그램 및 클라이언트에서 사용자 기본 설정을 유지 합니다. 다음 문서에는 ClickOnce 응용 프로그램에서는 응용 프로그램 설정 파일을 작업 하는 방법 및 다음 버전으로 업그레이드 하는 경우 ClickOnce가 설정을 마이그레이션하는 방법을 설명 합니다.  
   
  아래 정보는 기본 응용 프로그램 설정 공급자에만 적용 됩니다는 \<xref:System.Configuration.LocalFileSettingsProvider > 클래스입니다. 사용자 지정 공급자를 제공 하는 경우 해당 공급자는 해당 데이터를 저장 하는 방법 및 설정 버전 간에 업그레이드 하는 방법을 결정 합니다. 응용 프로그램 설정 공급자에 대 한 자세한 내용은 참조 하세요. [응용 프로그램 설정 아키텍처](/dotnet/framework/winforms/advanced/application-settings-architecture)합니다.  
@@ -54,8 +52,8 @@ Windows Forms에 대 한 응용 프로그램 설정을 쉽게 만들고, 저장 
 ## <a name="clickonce-and-roaming-settings"></a>ClickOnce 및 로밍 설정  
  ClickOnce 작동 하지 않습니다 로밍 설정을 사용 하 여 네트워크의 컴퓨터에서 수행 되도록 설정 파일을 수 있습니다. 로밍 설정에 필요한 경우 네트워크를 통해 설정을 저장 하는 응용 프로그램 설정 공급자를 구현 하거나 원격 컴퓨터에 설정을 저장 하기 위한 사용자 고유의 사용자 지정 설정 클래스를 개발 해야 합니다. 설정 공급자에 대 한 자세한 내용은 참조 하세요. [응용 프로그램 설정 아키텍처](/dotnet/framework/winforms/advanced/application-settings-architecture)합니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참고 항목  
  [ClickOnce 보안 및 배포](../deployment/clickonce-security-and-deployment.md)   
- [응용 프로그램 설정 개요](/dotnet/framework/winforms/advanced/application-settings-overview)   
+ [애플리케이션 설정 개요](/dotnet/framework/winforms/advanced/application-settings-overview)   
  [ClickOnce 캐시 개요](../deployment/clickonce-cache-overview.md)   
- [ClickOnce 응용 프로그램의 로컬 및 원격 데이터에 액세스](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)
+ [ClickOnce 애플리케이션의 로컬 및 원격 데이터 액세스](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

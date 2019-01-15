@@ -223,15 +223,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 677374404de8469c8a99a906638f326ae7a9ff3c
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
-ms.translationtype: MT
+ms.openlocfilehash: a02b82fbd3f32c2174d571ff923b8a219a66c9b6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089078"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932722"
 ---
 # <a name="troubleshoot-data-access-errors-on-the-forums"></a>포럼에서 데이터 액세스 오류 문제 해결
 
@@ -243,7 +242,7 @@ MSDN(Microsoft Developer Network) 공개 포럼에서 오류 및 경고 문제 �
 
 - [ADO.NET Entity Framework 및 LINQ to Entities](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetentityframework)
 
-- [WCF data services 포럼](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataservices)
+- [WCF Data Services 포럼](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataservices)
 
 - [SQL Server 데이터 액세스 포럼](https://social.msdn.microsoft.com/Forums/sqlserver/en-US/home?forum=sqldataaccess)
 
@@ -253,6 +252,6 @@ MSDN(Microsoft Developer Network) 공개 포럼에서 오류 및 경고 문제 �
 
 SQL Server에 대 한 연결 문제를 해결 하는 방법에 대 한 자세한 내용은 [SQL Server 데이터베이스 엔진에 연결 하는 문제 해결](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx)합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [.NET용 Visual Studio 데이터 도구](../data-tools/visual-studio-data-tools-for-dotnet.md)

@@ -11,25 +11,24 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2cff383b6e06d8793a7730c36df01e2538b02c36
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: 505c27787b033a6ccee9f89a19962d5fc81b9912
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174498"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824836"
 ---
 # <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>연습: 데이터 집합 디자이너에서 DataTable 만들기
 
 이 연습을 만드는 방법을 설명를 <xref:System.Data.DataTable> (TableAdapter) 없이 사용 하는 **데이터 집합 디자이너**. Tableadapter를 포함 하는 데이터 테이블을 만드는 방법에 대 한 정보를 참조 하세요 [만들기 및 Tableadapter 구성](../data-tools/create-and-configure-tableadapters.md)합니다.
 
-## <a name="create-a-new-windows-forms-application"></a>새 Windows Forms 응용 프로그램 만들기
+## <a name="create-a-new-windows-forms-application"></a>새 Windows Forms 애플리케이션 만들기
 
 1. Visual Studio에서에 **파일** 메뉴에서 **새로 만들기** > **프로젝트**합니다.
 
-2. 확장 **Visual C#** 하거나 **Visual Basic** 왼쪽 창에서 선택한 **Windows Desktop**합니다.
+2. 확장 **시각적 C#**  하거나 **Visual Basic** 왼쪽 창에서 선택한 **Windows Desktop**.
 
 3. 가운데 창에서 선택 합니다 **Windows Forms 앱** 형식 프로젝션 합니다.
 
@@ -39,7 +38,7 @@ ms.locfileid: "37174498"
 
 ## <a name="add-a-new-dataset-to-the-application"></a>응용 프로그램에 새 데이터 집합 추가
 
-1.  에 **프로젝트** 메뉴에서 **새 항목 추가**합니다.
+1.  **프로젝트** 메뉴에서 **새 항목 추가**를 선택합니다.
 
      **새 항목 추가** 대화 상자가 나타납니다.
 
@@ -63,7 +62,7 @@ ms.locfileid: "37174498"
 
 2.  열 이름을 `SongID`입니다.
 
-3.  에 **속성** 창에서 설정 합니다 <xref:System.Data.DataColumn.DataType%2A> 속성을 <xref:System.Int16?displayProperty=fullName>합니다.
+3.  **속성** 창에서 <xref:System.Data.DataColumn.DataType%2A> 속성을 <xref:System.Int16?displayProperty=fullName>로 설정합니다.
 
 4.  이 프로세스를 반복 하 고 다음 열을 추가 합니다.
 
@@ -79,12 +78,12 @@ ms.locfileid: "37174498"
 
 기본 키를 설정 하려면 마우스 오른쪽 단추로 클릭 합니다 **SongID** 열 및 클릭 **기본 키 설정**합니다. 키 아이콘 옆에 표시 되는 **SongID** 열입니다.
 
-## <a name="save-your-project"></a>프로젝트를 저장 합니다.
+## <a name="save-your-project"></a>프로젝트 저장
 
 저장 하는 **DataTableWalkthrough** 프로젝트에 **파일** 메뉴에서 **모두 저장**합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-- [Visual Studio에서 데이터 집합 만들기 및 구성](../data-tools/create-and-configure-datasets-in-visual-studio.md)
+- [Visual Studio에서 데이터 세트 만들기 및 구성](../data-tools/create-and-configure-datasets-in-visual-studio.md)
 - [Visual Studio에서 데이터에 컨트롤 바인딩](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [데이터 유효성 검사](../data-tools/validate-data-in-datasets.md)

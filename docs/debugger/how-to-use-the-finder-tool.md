@@ -1,8 +1,6 @@
 ---
 title: '방법: 찾기 도구 사용 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Window Finder Tool
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54e002682b45d03ef5f9bc93a36bbd9781b46d62
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c63e91cbbda335aea77992583bf3983c08354079
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49943078"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965264"
 ---
 # <a name="how-to-use-the-finder-tool"></a>방법: 찾기 도구 사용
 찾기 도구에서 사용할 수는 **창 찾기** 창 속성이 나 메시지를 표시 하려면 대화 상자. 또한 찾기 도구 사용 안 함된 자식 창을 찾습니다 하 고 어떤 항목도 강조 표시 하는 창의 자식 창이 겹친 사용 하지 않도록 설정 되는지를 수 있습니다.  
@@ -48,11 +46,11 @@ ms.locfileid: "49943078"
   
 4. 아래 **표시**, 선택 **속성** 하거나 **메시지**.  
   
-5. 키를 눌러 **확인**합니다.  
+5. **확인**을 누릅니다.  
   
     선택한 경우 **속성**서 [창 속성 대화 상자](../debugger/window-properties-dialog-box.md) 열립니다. 선택한 경우 **메시지**, [메시지 보기](../debugger/messages-view.md) 창이 열립니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [Spy + + 뷰](../debugger/spy-increment-views.md)   
- [Spy + + 사용](../debugger/using-spy-increment.md)   
+ [Spy++ 뷰](../debugger/spy-increment-views.md)   
+ [Spy++ 사용](../debugger/using-spy-increment.md)   
  [Spy++ 참조](../debugger/spy-increment-reference.md)
