@@ -2,7 +2,6 @@
 title: 프로젝트 디자이너, 코드 분석
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vs29106
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 09b711ecd6d12e424afed00296d8d95bd93cbb10
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7bc06740c56beac2dc092fb421a92f9d59d044d2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944676"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860137"
 ---
 # <a name="code-analysis-project-designer"></a>프로젝트 디자이너, 코드 분석
 코드에서 실행할 수 있는 코드 분석 도구가 들어 있습니다. 이 도구는 Microsoft .NET Framework 디자인 지침에 명시된 프로그래밍 및 디자인 규칙의 위반과 같은 어셈블리 관련 정보를 보고합니다.
@@ -78,4 +77,4 @@ ms.locfileid: "31944676"
 
 - [관리 코드 경고에 대한 코드 분석](../../code-quality/code-analysis-for-managed-code-warnings.md)
 - [관리 코드에 대한 코드 분석 개요](../../code-quality/code-analysis-for-managed-code-overview.md)
-- [연습: 관리 코드의 코드 오류 분석](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
+- [연습: 코드 오류에 대한 관리 코드 분석](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)

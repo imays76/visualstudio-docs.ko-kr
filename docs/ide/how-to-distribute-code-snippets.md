@@ -2,7 +2,6 @@
 title: '방법: 코드 조각 배포'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, distributing
@@ -14,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: cd6aba7c20c920c0c4351a1e9aa263fc73cd4415
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: e624f313c66df09c7496babe08a32dfd8453829c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380419"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836064"
 ---
 # <a name="how-to-distribute-code-snippets"></a>방법: 코드 조각 배포
 
@@ -29,7 +28,7 @@ Visual Studio 확장을 만들려면 Visual Studio SDK를 설치해야 합니다
 
 ## <a name="set-up-the-extension"></a>확장 설정
 
-이 프로시저에서는 [연습: 코드 조각 만들기](../ide/walkthrough-creating-a-code-snippet.md)에서 만들어진 동일한 Hello World 코드 조각을 사용합니다. *.snippet* 텍스트가 제공되므로 돌아가서 코드 조각을 만들 필요가 없습니다.
+이 프로시저에서는 다음 연습에서 만들어진 동일한 Hello World 코드 조각을 사용합니다. [연습: 코드 조각 만들기](../ide/walkthrough-creating-a-code-snippet.md)를 참조하세요. *.snippet* 텍스트가 제공되므로 돌아가서 코드 조각을 만들 필요가 없습니다.
 
 1. **TestSnippet**이라는 새 VSIX 프로젝트를 만듭니다. (**파일** > **새로 만들기** > **프로젝트** > **Visual C#(또는 Visual Basic)** > **확장성**)
 
@@ -103,7 +102,7 @@ Visual Studio 확장을 만들려면 Visual Studio SDK를 설치해야 합니다
 
 4. 조각을 테스트합니다. 실험적 인스턴스에서 Visual Basic 프로젝트를 열고 코드 파일의 하나를 엽니다. 코드의 임의 위치에 커서를 놓고 마우스 오른쪽 단추를 클릭하고 나서 상황에 맞는 메뉴에서 **조각 삽입**을 선택합니다.
 
-5. *HelloWorldVB*가 폴더의 하나로 표시되어야 합니다. 폴더를 두 번 클릭합니다. 드롭다운 **HelloWorldVB**가 포함된 **코드 조각 삽입: HelloWorldVB >** 팝업이 표시되어야 합니다. **HelloWorldVB** 드롭다운을 클릭합니다. 파일에 추가된 다음 줄을 확인해야 합니다.
+5. *HelloWorldVB*가 폴더의 하나로 표시되어야 합니다. 폴더를 두 번 클릭합니다. **코드 조각 삽입: HelloWorldVB >** 팝업이 표시되어야 하고 여기에는 드롭다운 **HelloWorldVB**가 포함됩니다. **HelloWorldVB** 드롭다운을 클릭합니다. 파일에 추가된 다음 줄을 확인해야 합니다.
 
     ```vb
     Console.WriteLine("Hello, World!")

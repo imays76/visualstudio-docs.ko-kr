@@ -3,7 +3,6 @@ title: '빠른 시작: F#에서 ASP.NET Core 웹 서비스 만들기'
 description: F#을 사용하여 단계별로 Visual Studio에서 ASP.NET Core 웹 서비스를 만드는 방법을 알아봅니다.
 ms.date: 08/24/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: quickstart
 author: cartermp
 ms.author: phcart
@@ -13,16 +12,16 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 884dfec4d3b8050fa6059cb0f505e1c7619336f9
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 9cdd97349732b4e228c77ce59990e47a396a0112
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43224790"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961873"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>빠른 시작: Visual Studio를 사용하여 F#에서 첫 번째 ASP.NET Core 웹 서비스 만들기
 
-Visual Studio의 F#에 대한 5~10분 분량의 소개에서 F# ASP.NET Core 웹 응용 프로그램을 만듭니다.
+Visual Studio의 F#에 대한 5~10분 분량의 소개에서 F# ASP.NET Core 웹 애플리케이션을 만듭니다.
 
 아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 페이지로 이동하여 체험용으로 설치합니다.
 
@@ -34,13 +33,13 @@ Visual Studio의 F#에 대한 5~10분 분량의 소개에서 F# ASP.NET Core 웹
 
 2. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 차례로 선택합니다.
 
-3. **새 프로젝트** 대화 상자의 왼쪽 차에서 **Visual F#** 을 확장한 다음, **Web**를 선택합니다. 가운데 창에서 **ASP.NET Core 웹 응용 프로그램**을 선택한 후 **확인**을 선택합니다.
+3. **새 프로젝트** 대화 상자의 왼쪽 차에서 **Visual F#** 을 확장한 다음, **Web**를 선택합니다. 가운데 창에서 **ASP.NET Core 웹 애플리케이션**을 선택한 후 **확인**을 선택합니다.
 
      **.NET Core** 프로젝트 템플릿 범주가 표시되지 않으면 왼쪽 창에서 **Visual Studio 설치 관리자 열기** 링크를 선택합니다. Visual Studio 설치 관리자가 시작됩니다. **ASP.NET 및 웹 개발** 워크로드를 선택한 후 **수정**을 선택합니다.
 
      ![VS 설치 관리자에서 ASP.NET 워크로드](../ide/media/quickstart-aspnet-workload.png)
 
-4. **새 ASP.NET Core 웹 응용 프로그램** 대화 상자의 상단 드롭다운 메뉴에서 **ASP.NET Core 2.1**을 선택합니다. (목록에 **ASP.NET Core 2.1**이 표시되지 않으면 대화 상자 맨 위에 있는 노란색 표시줄에 나타나는 **다운로드** 링크에 따라 설치합니다.) **확인**을 선택합니다.
+4. **새 ASP.NET Core 웹 애플리케이션** 대화 상자의 상단 드롭다운 메뉴에서 **ASP.NET Core 2.1**을 선택합니다. (목록에 **ASP.NET Core 2.1**이 표시되지 않으면 대화 상자 맨 위에 있는 노란색 표시줄에 나타나는 **다운로드** 링크에 따라 설치합니다.) **확인**을 선택합니다.
 
 ## <a name="explore-the-ide"></a>IDE 탐색
 
@@ -63,9 +62,9 @@ Visual Studio의 F#에 대한 5~10분 분량의 소개에서 F# ASP.NET Core 웹
 
 ![수정된 Get 멤버](../ide/media/hello-world-fs-get-member.png)
 
-## <a name="run-the-application"></a>응용 프로그램 실행
+## <a name="run-the-application"></a>애플리케이션 실행
 
-1. **Ctrl**+**F5**를 눌러 응용 프로그램을 실행하고 웹 브라우저에서 엽니다.
+1. **Ctrl**+**F5**를 눌러 애플리케이션을 실행하고 웹 브라우저에서 엽니다.
 
 2. 페이지는 `/api/values` 경로로 이동해야 하지만, 그렇지 않은 경우 브라우저에 `https://localhost:44396/api/values`를 입력합니다.
 

@@ -1,8 +1,6 @@
 ---
 title: 'DA0029: 지원되지 않는 CLR 버전 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.29
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5067c9f93a489c09962a9402f4fe7672cbd61108
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c52d9ee8ba8488ef8dd3f343aab172689d907532
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818447"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948961"
 ---
 # <a name="da0029-unsupported-clr-version"></a>DA0029: 지원되지 않는 CLR 버전
 
@@ -35,10 +33,10 @@ ms.locfileid: "49818447"
 |규칙 유형|정보.|  
 
 ## <a name="cause"></a>원인  
- 프로파일링 도구에서 지원되지 않는 [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)]을(를) 사용하는 응용 프로그램 프로파일링하려고 합니다.  
+ 프로파일링 도구에서 지원되지 않는 [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)]을(를) 사용하는 애플리케이션 프로파일링하려고 합니다.  
 
 ## <a name="rule-description"></a>규칙 설명  
- 이 경고는 프로파일링 도구가 응용 프로그램에서 실행되는 관리되는 코드에 대한 기호를 확인할 수 없기 때문에 발생합니다. 프로파일링 도구는 [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)]을(를) 실행하는 응용 프로그램에 대한 관리되는 코드 기호를 확인할 수 없습니다.  
+ 이 경고는 프로파일링 도구가 애플리케이션에서 실행되는 관리되는 코드에 대한 기호를 확인할 수 없기 때문에 발생합니다. 프로파일링 도구는 [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)]을(를) 실행하는 애플리케이션에 대한 관리되는 코드 기호를 확인할 수 없습니다.  
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법  
  없음

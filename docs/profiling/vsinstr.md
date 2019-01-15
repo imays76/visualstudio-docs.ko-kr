@@ -1,8 +1,6 @@
 ---
 title: VSInstr | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, instrumentation
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2526938274299cc5a90319749531f80e8bd3a90d
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 1e1c5d548ae8e197523fb92ed130ebeebb04af3f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220549"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945771"
 ---
 # <a name="vsinstr"></a>VSInstr
 VSInstr 도구는 이진 파일을 계측하는 데 사용됩니다. 다음 구문을 사용하여 이 도구를 호출합니다.  
@@ -46,7 +44,7 @@ VSInstr [/U] filename [/options]
 |**DumpFuncs**|지정된 이미지 내의 함수 목록을 표시합니다. 계측은 수행되지 않습니다.|  
 |**ExcludeSmallFuncs**|함수를 호출하지 않는 짧은 함수인 작은 함수를 계측에서 제외합니다. **ExcludeSmallFuncs** 옵션을 사용하는 경우 계측 오버헤드가 감소하므로 계측 속도를 높일 수 있습니다.<br /><br /> 또한 작은 함수를 제외하면 .*vsp* 파일의 크기와 분석에 필요한 시간도 감소합니다.|  
 |**Mark:**{**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname,markid`|.vsp 보고서 파일에서 데이터 범위의 시작이나 끝을 식별하는 데 사용할 수 있는 프로필 표시(보고서의 데이터를 구분하는 데 사용되는 식별자)를 삽입합니다.<br /><br /> **Before** - 대상 함수 진입 위치 바로 앞에 삽입합니다.<br /><br /> **After** - 대상 함수 종료 위치 바로 뒤에 삽입합니다.<br /><br /> **Top** - 대상 함수의 진입 위치 바로 뒤에 삽입합니다.<br /><br /> **Bottom** - 대상 함수의 각 반환 바로 앞에 삽입합니다.<br /><br /> `funcname` - 대상 함수의 이름입니다.<br /><br /> `Markid` - 프로필 표시의 식별자로 사용할 양의 정수(long)입니다.|  
-|**Coverage**|검사 계측을 수행합니다. **Verbose**, **OutputPath**, **Exclude** 및 **Logfile** 옵션과 함께 사용해야만 합니다.|  
+|**Coverage**|검사 계측을 수행합니다. 오직 다음 옵션과 함께 사용할 수 있습니다. **Verbose**, **OutputPath**, **Exclude** 및 **Logfile**|  
 |**Verbose**|**Verbose** 옵션은 계측 프로세스에 대한 자세한 정보를 확인하는 데 사용됩니다.|  
 |**NoWarn** `[:[Message Number[;Message Number]]]`|모든 경고를 표시하지 않거나 특정 경고를 표시하지 않습니다.<br /><br /> `Message Number` - 경고 번호입니다. `Message Number`를 생략 하면 모든 경고가 표시되지 않습니다.<br /><br /> 자세한 내용은 [VSInstr 경고](../profiling/vsinstr-warnings.md)를 참조하세요.|  
 |**Control** `:{` **Thread** `&#124;` **Process** `&#124;` **Global** `}`|다음 VSInstr 데이터 수집 제어 옵션의 프로파일링 수준을 지정합니다.<br /><br /> **Start**<br /><br /> **StartOnly**<br /><br /> **Suspend**<br /><br /> **StopOnly**<br /><br /> **SuspendOnly**<br /><br /> **ResumeOnly**<br /><br /> **Thread** - 스레드 수준 데이터 수집 제어 함수를 지정합니다. 현재 스레드에 대해서만 프로파일링이 시작되거나 중지됩니다. 다른 스레드의 프로파일링 상태는 영향을 받지 않습니다. 기본값은 thread입니다.<br /><br /> **Process** - 프로세스 수준 프로파일링 데이터 수집 제어 함수를 지정합니다. 현재 프로세스의 모든 스레드에 대해 프로파일링이 시작되거나 중지됩니다. 다른 프로세스의 프로파일링 상태는 영향을 받지 않습니다.<br /><br /> **Global** - 전역 수준(프로세스 간) 데이터 수집 제어 함수를 지정합니다.<br /><br /> 프로파일링 수준을 지정하지 않으면 오류가 발생합니다.|  

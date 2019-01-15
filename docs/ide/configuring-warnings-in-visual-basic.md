@@ -2,7 +2,6 @@
 title: Configuring Warnings in Visual Basic
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - errors [Visual Basic], warnings
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8cb2cec8258813fa9c93c466afb607ce88acc7e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 83ba1314f23ecc2d9166aac6fdc5d722a4fefe95
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865968"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866571"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Visual Basic에서 경고 구성
 
@@ -27,7 +26,7 @@ ms.locfileid: "49865968"
 
  경우에 따라 컴파일러에서는 사용자가 오류 발생이 예상되는 작업이 아닌 긴급한 작업에 집중할 수 있도록 사용자 대신 추가 논리를 제공합니다. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]의 이전 버전에서 **Option Strict**는 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 컴파일러가 제공하는 추가 논리를 제한하는 데 사용되었습니다. 경고를 구성하면 이 논리를 개별 경고 수준에서 더 세밀하게 제한할 수 있습니다.
 
- 프로젝트를 사용자 지정하고 응용 프로그램에 관련되지 않은 일부 경고를 끄면서 다른 경고를 오류로 전환하고자 할 수 있습니다. 이 페이지에서는 개별 경고를 켜고 끄는 방법을 설명합니다.
+ 프로젝트를 사용자 지정하고 애플리케이션에 관련되지 않은 일부 경고를 끄면서 다른 경고를 오류로 전환하고자 할 수 있습니다. 이 페이지에서는 개별 경고를 켜고 끄는 방법을 설명합니다.
 
 ## <a name="turning-warnings-off-and-on"></a>경고 끄기 및 켜기
  경고를 구성하는 방법은 두 가지입니다. **프로젝트 디자이너**를 사용하여 구성하거나 **/warnaserror** 및 **/nowarn** 컴파일러 옵션을 사용할 수 있습니다.

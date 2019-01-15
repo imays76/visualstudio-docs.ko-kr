@@ -1,8 +1,6 @@
 ---
 title: VSPerfReport | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - command-line tools, VSPerfReporttool
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c679acf7ce6a767702da05bde6fb4a1e6f8a7df
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: d617d6fec273997f135010271de1df0240f58594
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572217"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915470"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 VSPerfReport 명령줄 도구는 데이터 파일을 프로파일링하는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구를 사용하여 보고서를 만드는 데 사용됩니다. 기본 보고서 형식은 .*csv* 파일입니다.  
@@ -71,7 +69,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
   
 |옵션|설명|  
 |-------------|-----------------|  
-|**JustMyCode**[**:**[`caller`][,`callee`]]|사용자 응용 프로그램 함수 호출만 표시하고 시스템 호출은 숨깁니다.<br /><br /> - 매개 변수 없음 - 시스템 함수를 모두 숨깁니다.<br />-   `caller` - 응용 프로그램 함수를 호출하는 한 수준의 시스템 함수를 표시합니다.<br />-   `callee` - 사용자 응용 프로그램 함수가 호출하는 한 수준의 시스템 함수를 표시합니다.|  
+|**JustMyCode**[**:**[`caller`][,`callee`]]|사용자 애플리케이션 함수 호출만 표시하고 시스템 호출은 숨깁니다.<br /><br /> - 매개 변수 없음 - 시스템 함수를 모두 숨깁니다.<br />-   `caller` - 애플리케이션 함수를 호출하는 한 수준의 시스템 함수를 표시합니다.<br />-   `callee` - 사용자 애플리케이션 함수가 호출하는 한 수준의 시스템 함수를 표시합니다.|  
 |**StartTime:**[*value*]|value 이후에 수집된 데이터만 표시합니다(밀리초).|  
 |**EndTime:**[*value*]|value 이전에 수집된 데이터만 표시합니다(밀리초).|  
 |**FilterFile:** `VSPFFile`|Visual Studio 성능 보고서 창에서 생성된 필터 파일의 위치를 지정합니다.|  

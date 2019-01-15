@@ -1,9 +1,7 @@
 ---
 title: '9단계: 코드 검토, 주석 처리 및 테스트'
-ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: f26f79ba-c91b-4164-b87f-679a1b231c09
 author: TerryGLee
@@ -11,12 +9,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de7ca2509c8489c7a9d541135401949ef3e4b20e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4cb11810a8e87dfe2a21538b5c69c027e84f4f4b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856030"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821207"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>9단계: 코드 검토, 주석 처리 및 테스트
 다음으로 코드에 주석을 추가합니다. 주석은 프로그램 동작에 영향을 주지 않는 일종의 메모로서 코드를 읽는 사용자가 코드에서 수행하는 작업을 보다 쉽게 이해할 수 있도록 도와줍니다. 코드에 주석을 추가하는 것은 좋은 습관입니다. Visual C#에서는 두 개의 슬래시(//)를 사용하여 주석 줄을 표시하고, Visual Basic에서는 작은따옴표(')를 사용하여 주석 줄을 표시합니다. 주석을 추가한 후에는 프로그램을 테스트합니다. 프로젝트에서 작업하는 동안 자주 코드를 실행하고 테스트하는 것은 좋은 습관이며, 코드가 더 복잡해지기 전에 조기에 문제를 파악하고 해결할 수 있습니다. 이를 *반복적 테스트*라고 합니다.
@@ -25,7 +23,7 @@ ms.locfileid: "49856030"
 
 - **Windows Forms 디자이너**에서 **사진 표시** 단추를 두 번 클릭하면 IDE에서 자동으로 ‘메서드’를 프로그램의 코드에 추가합니다.
 
-- 메서드는 코드 구성 방법, 즉 코드 그룹화 방법을 결정합니다.
+- 메서드는 코드를 구성하는 방법이며, 코드를 함께 그룹화하는 방법입니다.
 
 - 대부분의 경우 메서드는 특정 순서로 적은 수의 작업을 수행합니다. 예를 들어 `showButton_Click()` 메서드는 대화 상자를 연 다음 그림을 로드합니다.
 
@@ -45,7 +43,7 @@ ms.locfileid: "49856030"
 
    문은 특정 작업을 수행하도록 프로그램에 지시합니다. Visual C#에서는 문이 항상 세미콜론으로 끝나고, Visual Basic에서는 줄의 끝이 문의 끝입니다. Visual Basic에서는 세미콜론이 필요하지 않습니다. 위의 문은 사용자가 **OpenFileDialog** 구성 요소를 사용하여 선택한 파일을 로드하도록 <xref:System.Windows.Forms.PictureBox> 컨트롤에 지시합니다.
 
-  ![비디오 링크](../data-tools/media/playvideo.gif) 이 항목의 비디오 버전의 경우, [Tutorial 1: Create a picture viewer in Visual Basic - Video 5](http://go.microsoft.com/fwlink/?LinkId=205216)(자습서 1: Visual Basic에서 사진 뷰어 만들기 - 비디오 5) 또는 [Tutorial 1: Create a picture viewer in C# - Video 5](http://go.microsoft.com/fwlink/?LinkId=205206)(자습서 1: C#에서 사진 뷰어 만들기 - 비디오 5)를 참조하세요. 이러한 비디오에서는 이전 버전의 Visual Studio를 사용하므로 일부 메뉴 명령과 기타 사용자 인터페이스 요소가 약간 다를 수 있습니다. 그러나 개념 및 절차는 Visual Studio의 현재 버전에서 비슷하게 작동합니다.
+  ![비디오 링크](../data-tools/media/playvideo.gif) 이 항목의 비디오 버전은 [자습서 1: Visual Basic에서 사진 뷰어 만들기 - 비디오5](http://go.microsoft.com/fwlink/?LinkId=205216) 또는 [자습서 1: C#에서 사진 뷰어 만들기 - 비디오5](http://go.microsoft.com/fwlink/?LinkId=205206)를 참조하세요. 이러한 비디오에서는 이전 버전의 Visual Studio를 사용하므로 일부 메뉴 명령과 기타 사용자 인터페이스 요소가 약간 다를 수 있습니다. 그러나 개념 및 절차는 Visual Studio의 현재 버전에서 비슷하게 작동합니다.
 
 ## <a name="to-add-comments"></a>주석을 추가하려면
 
@@ -85,7 +83,7 @@ ms.locfileid: "49856030"
     > [!NOTE]
     >  **그림 파일 선택** 대화 상자에 이미지가 표시되지 않는 경우 대화 상자 오른쪽 아래에 있는 드롭다운 목록에서 **모든 파일(*.\*)** 필터가 선택되어 있는지 확인하세요.
 
-3.  그림을 로드합니다. 로드된 그림은 PictureBox에 표시됩니다. 그런 다음 폼 테두리를 끌어서 폼 크기를 조정해 봅니다. 자동으로 폼 안에 도킹되는 TableLayoutPanel 안에 PictureBox가 도킹되기 때문에 그림 영역은 폼과 같은 너비로 폼의 위쪽 90퍼센트를 차지하도록 크기가 조정됩니다. <xref:System.Windows.Forms.TableLayoutPanel> 및 <xref:System.Windows.Forms.FlowLayoutPanel> 컨테이너를 사용하면 사용자가 폼의 크기를 조정할 때 폼의 크기가 올바르게 조정됩니다.
+3.  그림을 로드합니다. 로드된 그림은 PictureBox에 표시됩니다. 그런 다음 폼 테두리를 끌어서 폼 크기를 조정해 봅니다. 자동으로 폼 안에 도킹되는 TableLayoutPanel 안에 PictureBox가 도킹되기 때문에 그림 영역은 폼과 같은 너비로 폼의 위쪽 90퍼센트를 차지하도록 크기가 조정됩니다. <xref:System.Windows.Forms.TableLayoutPanel> 및 <xref:System.Windows.Forms.FlowLayoutPanel> 컨테이너를 사용한 이유는 사용자가 양식의 크기를 조정할 때 양식의 크기가 올바르게 조정되기 때문입니다.
 
      지금은 더 큰 사진이 사진 뷰어 프로그램 테두리 밖으로 나갑니다. 다음 단계에서는 그림을 창 크기에 맞추는 코드를 추가합니다.
 
@@ -93,4 +91,4 @@ ms.locfileid: "49856030"
 
 -   다음 자습서 단계로 이동하려면 [10단계: 추가 단추 및 확인란에 대한 코드 작성](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)을 참조하세요.
 
--   이전 자습서 단계로 돌아가려면 [8단계: 사진 표시 단추 이벤트 처리기를 위한 코드 작성](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)을 참조하세요.
+-   이전 자습서 단계로 돌아가려면 [8단계: 그림 표시 단추 이벤트 처리기를 위한 코드 작성](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)을 참조하세요.

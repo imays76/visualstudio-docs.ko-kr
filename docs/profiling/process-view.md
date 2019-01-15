@@ -1,8 +1,6 @@
 ---
 title: 프로세스 뷰 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.process
@@ -18,19 +16,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4924f38bf893bc17a599802d9962d664da01c26d
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 104e34af7bd596b861fc3d1da1da193a6c1c373a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254526"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922048"
 ---
 # <a name="process-view"></a>프로세스 뷰
 프로세스 뷰에는 프로파일링 실행 중에 실행된 프로세스와 스레드에 대한 프로파일링 데이터가 표시됩니다.  
   
  프로세스는 이름별로 나열됩니다. 스레드는 스레드를 만든 프로세스의 자식 노드로 나열됩니다. 스레드는 스레드를 시작한 함수 또는 레이블 **[ntdll.dll]**(기호를 사용할 수 없는 경우)로 명명됩니다.  
   
- 열을 추가 또는 제거하려면 뷰를 오른쪽 단추로 클릭한 다음 **열 추가/제거**를 선택합니다. 또한 열 이름을 클릭하여 데이터를 정렬할 수도 있습니다. 자세한 내용은 [방법: 보고서 뷰 열 사용자 지정](../profiling/how-to-customize-report-view-columns.md)을 참조하세요.  
+ 열을 추가 또는 제거하려면 뷰를 오른쪽 단추로 클릭한 다음 **열 추가/제거**를 선택합니다. 또한 열 이름을 클릭하여 데이터를 정렬할 수도 있습니다. 자세한 내용은 [방법: 보고서 보기 열 사용자 지정](../profiling/how-to-customize-report-view-columns.md)을 참조하세요.  
   
  프로세스 뷰의 열은 샘플링 및 계측 방법을 사용하여 생성되는 데이터와 .NET 메모리 데이터를 포함하는 데이터에 대해 동일합니다. 다음 표에서는 열 값에 대해 설명합니다.  
   

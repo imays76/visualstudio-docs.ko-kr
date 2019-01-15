@@ -2,7 +2,6 @@
 title: 코드 검사 테스트
 ms.date: 09/18/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - code coverage
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc8b08b68bb6c48fa22abaa90ba8b0b9daa25e89
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 3ff77dc6c434a58ee916ea1eb4ffcab932d7a675
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370941"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958133"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>코드 검사를 사용하여 테스트할 코드 범위 결정
 
@@ -237,7 +236,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
 - 임의의 네임스페이스 또는 클래스 안이 아닌 전역 네임스페이스에 제외 매크로에 대한 호출을 추가합니다.
 
-- 단위 테스트 코드 파일 또는 응용 프로그램 코드 파일에 제외를 추가할 수 있습니다.
+- 단위 테스트 코드 파일 또는 애플리케이션 코드 파일에 제외를 추가할 수 있습니다.
 
 - 제외는 컴파일러 옵션을 설정하거나 `#pragma managed(off)`를 사용하여 관리되지 않는(네이티브) 코드로 컴파일해야 합니다.
 

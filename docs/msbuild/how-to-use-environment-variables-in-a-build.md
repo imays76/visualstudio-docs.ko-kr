@@ -1,8 +1,6 @@
 ---
-title: '방법: 빌드 시 환경 변수 사용 | Microsoft 문서'
-ms.custom: ''
+title: '방법: 빌드 시 환경 변수 사용 | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - environment variables, referencing
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d57709b2e1ff4f3721644f2f61e030ea8ccccf82
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 93e77ee2a3ca9a3c4ef3f3ceb7491e1b2ecdf074
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828369"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845394"
 ---
 # <a name="how-to-use-environment-variables-in-a-build"></a>방법: 빌드 시 환경 변수 사용
 프로젝트를 빌드할 때 프로젝트 파일이나 프로젝트를 구성하는 파일에 없는 정보를 사용하여 빌드 옵션을 설치해야 하는 경우가 많습니다. 이 정보는 대개 환경 변수에 저장되어 있습니다.  
@@ -47,7 +45,7 @@ ms.locfileid: "49828369"
     > [!NOTE]
     >  속성 이름은 대/소문자를 구분하지 않으므로 `$(ToolsPath)` 및 `$(TOOLSPATH)`는 둘 다 같은 속성 또는 환경 변수를 참조합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 프로젝트 파일에서는 환경 변수를 사용하여 디렉터리의 위치를 지정합니다.  
   
 ```xml  
@@ -67,4 +65,4 @@ ms.locfileid: "49828369"
 ## <a name="see-also"></a>참고 항목  
 [MSBuild ](../msbuild/msbuild.md)  
 [MSBuild 속성](../msbuild/msbuild-properties.md)  
-[방법: 동일한 소스 파일을 다른 옵션을 사용하여 빌드](../msbuild/how-to-build-the-same-source-files-with-different-options.md)  
+[방법: 다른 옵션을 사용하여 동일한 원본 파일 빌드](../msbuild/how-to-build-the-same-source-files-with-different-options.md)  

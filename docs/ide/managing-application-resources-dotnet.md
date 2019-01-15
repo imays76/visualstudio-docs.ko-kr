@@ -1,8 +1,7 @@
 ---
-title: 응용 프로그램 리소스 관리(.NET)
+title: 애플리케이션 리소스 관리(.NET)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - msvse_resedit.dlg.SetCustomTool
@@ -19,16 +18,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b9a80a84276648f8a0f0d5a94992b5f58cbcfefa
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 4c689de00c5c5f37d47cb0ecc9f802be4b51a9ab
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348136"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966812"
 ---
-# <a name="manage-application-resources-net"></a>응용 프로그램 리소스 관리(.NET)
+# <a name="manage-application-resources-net"></a>애플리케이션 리소스 관리(.NET)
 
-리소스 파일은 응용 프로그램의 일부이지만 컴파일되지 않는 파일입니다(예: 아이콘 파일 또는 오디오 파일). 이러한 파일은 컴파일 프로세스에 포함되지 않으므로 이진 파일을 다시 컴파일할 필요 없이 변경할 수 있습니다. 응용 프로그램을 지역화할 계획인 경우 모든 문자열 및 응용 프로그램을 지역화할 때 변경해야 하는 다른 리소스에 대해 리소스 파일을 사용해야 합니다.
+리소스 파일은 애플리케이션의 일부이지만 컴파일되지 않는 파일입니다(예: 아이콘 파일 또는 오디오 파일). 이러한 파일은 컴파일 프로세스에 포함되지 않으므로 이진 파일을 다시 컴파일할 필요 없이 변경할 수 있습니다. 애플리케이션을 지역화할 계획인 경우 모든 문자열 및 애플리케이션을 지역화할 때 변경해야 하는 다른 리소스에 대해 리소스 파일을 사용해야 합니다.
 
 > [!NOTE]
 > 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [앱 리소스 관리(Mac용 Visual Studio)](/visualstudio/mac/managing-app-resources)를 참조하세요.
@@ -50,7 +49,7 @@ ms.locfileid: "51348136"
 .NET 프로젝트의 리소스는 다른 프로젝트 형식과 다른 방식으로 관리됩니다. 리소스에 대한 자세한 내용은 다음을 참조하세요.
 
 - UWP(유니버설 Windows 플랫폼) 앱은 [앱 리소스 및 리소스 관리 시스템](/windows/uwp/app-resources/) 참조
-- C++ 프로젝트는 [리소스 파일에 대한 작업](/cpp/windows/working-with-resource-files) 및 [방법: 리소스 파일 만들기](/cpp/windows/how-to-create-a-resource) 참조
+- C++ 프로젝트는 [리소스 파일에 대한 작업](/cpp/windows/working-with-resource-files) 및 [방법: 리소스 파일 만들기](/cpp/windows/how-to-create-a-resource)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 

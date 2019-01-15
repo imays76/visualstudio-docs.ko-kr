@@ -1,8 +1,6 @@
 ---
-title: '방법: 계측에서 간단한 함수 제외 또는 포함 | Microsoft 문서'
-ms.custom: ''
+title: '방법: 계측에서 간단한 함수 제외 또는 포함 | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, instrument events
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c6234db781925e8c0558513cb7e8bc608b5cfea
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: adeff3a6f068c5432f1640cd96752a84228b8ad9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34814686"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896112"
 ---
 # <a name="how-to-exclude-or-include-short-functions-from-instrumentation"></a>방법: 계측에서 간단한 함수 제외 또는 포함
 기본적으로 프로파일링 도구는 *작은 함수*를 구현에서 제외합니다. 작은 함수는 함수를 호출하지 않는 간단한 함수입니다. 이러한 작은 함수를 제외하면 계측 오버헤드가 감소하므로 계측 속도가 향상됩니다. 또한 성능 프로파일링 데이터 파일(.*vsp*) 크기가 감소하고 분석에 필요한 시간이 단축됩니다. 작은 함수가 제외되면 작은 함수에 사용되는 시간이 부모 함수의 전용 및 포괄 시간에 포함됩니다. 다음 절차에 설명된 대로 작은 함수를 계측에서 제외하거나 포함할 수 있습니다.  

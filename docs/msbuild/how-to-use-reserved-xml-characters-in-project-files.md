@@ -1,8 +1,6 @@
 ---
-title: '방법: 프로젝트 파일에서 예약된 XML 문자 사용 | Microsoft 문서'
-ms.custom: ''
+title: '방법: 프로젝트 파일에서 예약된 XML 문자 사용 | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, using reserved XML characters
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 647dba94840383410d06f6e5bf96ec3b0146c394
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 2f97a4bb00b15e31cc03b853de45b7a35d77b29c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077661"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905506"
 ---
 # <a name="how-to-use-reserved-xml-characters-in-project-files"></a>방법: 프로젝트 파일에서 예약된 XML 문자 사용
 프로젝트 파일을 작성할 경우 속성 값이나 작업 매개 변수 값 등에서 예약된 XML 문자를 사용해야 합니다. 그러나 프로젝트 파일을 구문 분석할 수 있도록 일부 예약된 문자를 명명된 엔터티로 바꿔야 합니다.  
@@ -42,7 +40,7 @@ ms.locfileid: "39077661"
     <Message Text="The output file is &quot;@(EXEFile)&quot;."/>  
     ```  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드 예제에서는 프로젝트 파일에서 출력된 메시지에서 파일 이름을 강조 표시할 때 큰따옴표가 사용됩니다.  
   
 ```xml  

@@ -1,8 +1,6 @@
 ---
 title: span::span 생성자 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic::span::span
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fe89b289601775fad8c102e696e799edce1c50c
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 88112a9ee8f89ee0e3b4fc4a71633b9028b692bb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669676"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952016"
 ---
 # <a name="spanspan-constructor"></a>span::span 생성자
 `span` 클래스의 새 인스턴스를 초기화합니다.  

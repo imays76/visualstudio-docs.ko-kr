@@ -1,9 +1,7 @@
 ---
 title: '자습서 2: 시간이 지정된 수학 퀴즈 만들기'
-ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: d7165d08-ace3-457d-b57d-fb8f80760a6f
 author: TerryGLee
@@ -11,16 +9,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 38a0cef2600234be17b80fc53ac40a828ad6e2f7
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: d6dc353f7c296dce86bd2b410cfef09683576943
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672641"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985724"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>자습서 2: 시간이 지정된 수학 퀴즈 만들기
 
-이 자습서에서는 퀴즈를 푸는 사람이 지정된 시간 내에 네 가지 난수 산술 문제에 대답해야 하는 퀴즈를 빌드합니다. 여기에서는 다음과 같은 작업을 수행하는 방법에 대해 배우게 됩니다.
+이 자습서에서는 퀴즈를 푸는 사람이 지정된 시간 내에 네 가지 난수 산술 문제에 대답해야 하는 퀴즈를 빌드합니다. 다음과 같은 작업을 수행하는 방법을 살펴봅니다.
 
 -   <xref:System.Random> 클래스를 사용하여 난수를 생성합니다.
 
@@ -45,7 +43,7 @@ ms.locfileid: "50672641"
 
 |제목|설명|
 |-----------|-----------------|
-|[1단계: 프로젝트 만들기 및 폼에 레이블 추가](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)|먼저 프로젝트를 만들고 속성을 변경한 다음 `Label` 컨트롤을 추가합니다.|
+|[1단계: 프로젝트 만들기 및 양식에 레이블 추가](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)|먼저 프로젝트를 만들고 속성을 변경한 다음 `Label` 컨트롤을 추가합니다.|
 |[2단계: 난수 더하기 문제 만들기](../ide/step-2-create-a-random-addition-problem.md)|더하기 문제를 만들고 `Random` 클래스를 사용하여 난수를 생성합니다.|
 |[3단계: 카운트다운 타이머 추가](../ide/step-3-add-a-countdown-timer.md)|일정 시간이 지나면 퀴즈가 종료되도록 카운트다운 타이머를 추가합니다.|
 |[4단계: CheckTheAnswer() 메서드 추가](../ide/step-4-add-the-checktheanswer-parens-method.md)|퀴즈를 푸는 사람이 문제의 올바른 답을 입력했는지 여부를 확인하는 메서드를 추가합니다.|

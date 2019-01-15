@@ -2,7 +2,6 @@
 title: 옵션, 텍스트 편집기, C/C++, 서식
 ms.date: 04/30/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C/C++.Formatting.General
@@ -18,12 +17,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee7fab1564b39b29ae288e96c7aa77e0da21e88c
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 6aa4c543d19c43bd397d7d18a185a73a4bf161a6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235143"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960750"
 ---
 # <a name="options-text-editor-cc-formatting"></a>옵션, 텍스트 편집기, C/C++, 서식
 
@@ -40,11 +39,11 @@ ms.locfileid: "36235143"
 
 이 페이지에는 명령문과 블록을 입력할 때 서식을 지정하는 옵션이 있습니다.
 
-**Visual Studio 2017 버전 15.7 이상**: 이 페이지에는 [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) 버전 5.0에 대한 지원을 구성하는 옵션도 있습니다. ClangFormat은 .clang-format 또는 _clang-format 파일로 구성할 수 있는 규칙 집합을 기반으로 코드의 스타일과 서식을 쉽게 지정할 수 있는 유틸리티입니다.
+**Visual Studio 2017 버전 15.7 이상:** 이 페이지에는 [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) 버전 5.0에 대한 지원을 구성하는 옵션도 있습니다. ClangFormat은 .clang-format 또는 _clang-format 파일로 구성할 수 있는 규칙 집합을 기반으로 코드의 스타일과 서식을 쉽게 지정할 수 있는 유틸리티입니다.
 
 ### <a name="configuring-clangformat-options"></a>ClangFormat 옵션 구성
 
-Visual Studio 2017 버전 15.7 이상에서는 ClangFormat 지원이 기본적으로 사용하도록 설정됩니다. LLVM, Google, Chromium, Mozilla 또는 WebKit 등 모든 프로젝트에 적용할 수 있는 공통의 서식 지정 규칙을 선택할 수 있습니다. 또한 사용자 지정 서식 정의 .clang-format 또는 _clang-format 파일을 만들 수도 있습니다. 이러한 파일이 프로젝트 폴더에 있는 경우 Visual Studio는 이 파일을 사용하여 해당 폴더 및 하위 폴더의 모든 소스 코드 파일에 서식을 지정합니다. 
+Visual Studio 2017 버전 15.7 이상에서는 ClangFormat 지원이 기본적으로 사용하도록 설정됩니다. 다음과 같은 모든 프로젝트에 적용할 수 있는 공통의 서식 지정 규칙을 선택할 수 있습니다. LLVM, Google, Chromium, Mozilla 또는 WebKit 또한 사용자 지정 서식 정의 .clang-format 또는 _clang-format 파일을 만들 수도 있습니다. 이러한 파일이 프로젝트 폴더에 있는 경우 Visual Studio는 이 파일을 사용하여 해당 폴더 및 하위 폴더의 모든 소스 코드 파일에 서식을 지정합니다. 
 
 기본적으로 Visual Studio는 clangformat.exe를 백그라운드에서 실행하여 입력과 동시에 서식을 적용합니다. 수동으로 호출된 서식 명령 **문서 서식(Ctrl+K, Ctrl+D)** 또는 **선택 영역 서식(Ctrl + K, Ctrl + F)** 에 대해서만 실행하도록 지정할 수도 있습니다.
 

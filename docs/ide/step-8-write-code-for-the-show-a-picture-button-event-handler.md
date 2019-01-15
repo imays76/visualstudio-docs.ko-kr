@@ -1,9 +1,7 @@
 ---
-title: '8단계: 사진 표시 단추 이벤트 처리기를 위한 코드 작성'
-ms.custom: ''
+title: '8단계: 그림 표시 단추 이벤트 처리기를 위한 코드 작성'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 07f4ec00-cda4-42f4-98bb-37edc7167de7
 author: TerryGLee
@@ -11,14 +9,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2c76a6eb760e55659c7da4df2a1a341426f0c6e
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: be9163ce831f556310a17b72c3833d9756ddf952
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671809"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887895"
 ---
-# <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>8단계: 사진 표시 단추 이벤트 처리기를 위한 코드 작성
+# <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>8단계: 그림 표시 단추 이벤트 처리기를 위한 코드 작성
 
 이 단계에서는 **사진 표시** 단추가 다음과 같이 작동하도록 합니다.
 
@@ -28,7 +26,7 @@ ms.locfileid: "50671809"
 
 IDE에는 코드 작성에 유용한 IntelliSense라는 강력한 도구가 있습니다. 코드 입력을 시작하면 입력한 부분 단어에 대한 완성 단어를 제시하는 상자가 IDE에서 열립니다. IntelliSense는 사용자가 다음에 할 일을 판단하며 목록에서 사용자가 마지막으로 선택한 항목으로 자동으로 이동합니다. 위쪽 또는 아래쪽 화살표를 사용하여 목록에서 이동하거나 문자를 계속 입력하여 선택 범위를 좁힐 수 있습니다. 원하는 선택 항목이 있으면 **Tab** 키를 선택해서 항목을 선택합니다. 원하는 항목이 없는 경우 제시되는 항목을 무시할 수도 있습니다.
 
-![비디오 링크](../data-tools/media/playvideo.gif) 이 항목의 비디오 버전의 경우, [Tutorial 1: Create a picture viewer in Visual Basic - Video 4](https://msdn.microsoft.com/vstudio/gg315355.aspx)(자습서 1: Visual Basic에서 사진 뷰어 만들기 - 비디오 4)를 참조하세요. 이 비디오에서는 이전 버전의 Visual Studio를 사용하므로 일부 메뉴 명령과 기타 사용자 인터페이스 요소가 약간 다를 수 있습니다. 그러나 개념 및 절차는 Visual Studio의 현재 버전에서 비슷하게 작동합니다.
+![비디오 링크](../data-tools/media/playvideo.gif) 이 항목의 비디오 버전은 [자습서 1: Visual Basic에서 사진 뷰어 만들기 - 비디오4](https://msdn.microsoft.com/vstudio/gg315355.aspx) 이 비디오에서는 이전 버전의 Visual Studio를 사용하므로 일부 메뉴 명령과 기타 사용자 인터페이스 요소가 약간 다를 수 있습니다. 그러나 개념 및 절차는 Visual Studio의 현재 버전에서 비슷하게 작동합니다.
 
 ## <a name="to-write-code-for-the-show-a-picture-button-event-handler"></a>사진 표시 단추 이벤트 처리기를 위한 코드를 작성하려면
 
@@ -65,7 +63,7 @@ IDE에는 코드 작성에 유용한 IntelliSense라는 강력한 도구가 있�
 
          `ShowDialog()` 메서드에 대한 자세한 내용은 [ShowDialog Method](<xref:System.Windows.Forms.Form.ShowDialog%2A>)(ShowDialog 메서드)를 참조하세요.
 
-    5.  컨트롤 또는 구성 요소에서 메서드를 사용할 경우(*메서드 호출*이라고 함) 괄호를 추가해야 합니다. 따라서 `ShowDialog`: `()`에서 “g” 바로 다음에 열기와 닫기 괄호를 입력합니다. 이제 “openFileDialog1.ShowDialog()”처럼 보여야 합니다.
+    5.  컨트롤 또는 구성 요소에서 메서드를 사용할 경우(*메서드 호출*이라고 함) 괄호를 추가해야 합니다. `ShowDialog`에서 "g" 바로 뒤에 열기 및 닫기 괄호를 입력하므로 `()` 이제 "openFileDialog1.ShowDialog()"처럼 표시됩니다.
 
         > [!NOTE]
         > 메서드는 모든 프로그램에서 중요한 부분이며 이 자습서에는 여러 가지 메서드 사용 방법이 나와 있습니다. **OpenFileDialog** 구성 요소의 `ShowDialog()` 메서드를 호출한 것과 같이 구성 요소의 메서드를 호출하여 작업을 지시할 수 있습니다. 직접 고유의 메서드를 만들어 프로그램에 작업을 지시할 수 있습니다. 사용자가 단추를 선택할 경우 대화 상자와 그림을 열도록 지금 빌드 중인 `showButton_Click()` 메서드가 그 예입니다.
@@ -99,4 +97,4 @@ IDE에는 코드 작성에 유용한 IntelliSense라는 강력한 도구가 있�
 
 -   다음 자습서 단계로 이동하려면 [9단계: 코드 검토, 주석 처리 및 테스트](../ide/step-9-review-comment-and-test-your-code.md)를 참조하세요.
 
--   이전 자습서 단계로 돌아가려면 [7단계: 폼에 대화 상자 구성 요소 추가](../ide/step-7-add-dialog-components-to-your-form.md)를 참조하세요.
+-   이전 자습서 단계로 돌아가려면 [7단계: 양식에 대화 상자 구성 요소 추가](../ide/step-7-add-dialog-components-to-your-form.md)를 참조하세요.

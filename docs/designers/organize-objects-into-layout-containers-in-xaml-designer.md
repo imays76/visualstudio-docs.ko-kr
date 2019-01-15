@@ -2,7 +2,6 @@
 title: XAML 디자이너에서 개체를 레이아웃 컨테이너로 구성
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 29c80c38-0fa3-48d6-b3a8-3b864f482e44
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: f8faa01ddc56c5beaa2412bd91a9e68a8bba9525
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: d5c56dc477b3c788f8d5ebfee4809067c77e08e8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978179"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829311"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>XAML 디자이너에서 개체를 레이아웃 컨테이너로 구성
 
@@ -87,7 +86,7 @@ ms.locfileid: "38978179"
 
 ![DockPanel 레이아웃 패널](../designers/media/72d46b58-9a49-4dd5-8af7-6843c0440226.png)
 
-**짧은 비디오 보기:** ![재생 단추](../designers/media/bldadminconsoleinitialconfigicon.PNG) [WPF - DockPanel](https://www.youtube.com/watch?v=EBH_OIM-zPo)
+**짧은 비디오 시청:** ![재생 단추](../designers/media/bldadminconsoleinitialconfigicon.PNG) [WPF - DockPanel](https://www.youtube.com/watch?v=EBH_OIM-zPo)
 
 ## <a name="layout-controls"></a>레이아웃 컨트롤
 
@@ -97,7 +96,7 @@ ms.locfileid: "38978179"
 
 - [테두리](#Border)
 
-- [팝업](#Popup)
+- [Popup](#Popup)
 
 - [ScrollViewer](#scrollviewer)
 

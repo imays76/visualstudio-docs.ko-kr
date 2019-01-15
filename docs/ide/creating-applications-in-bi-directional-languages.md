@@ -1,8 +1,7 @@
 ---
-title: 양방향 언어용 응용 프로그램 만들기
+title: 양방향 언어용 애플리케이션 만들기
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Hebrew character display, creating applications
@@ -14,27 +13,27 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f93dea099d9223347c727f3e7a838fcb78d3742
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 26c3ea5073d4b53c0a9d75c18722f1569aff8646
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863636"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891617"
 ---
-# <a name="creating-applications-in-bi-directional-languages"></a>양방향 언어용 응용 프로그램 만들기
+# <a name="creating-applications-in-bi-directional-languages"></a>양방향 언어용 애플리케이션 만들기
 
-Visual Studio를 사용하여 아랍어 및 히브리어와 같이 오른쪽에서 왼쪽으로 기록되는 언어로 텍스트를 제대로 표시하는 응용 프로그램을 만들 수 있습니다. 일부 기능의 경우 속성만 설정하면 됩니다. 기타 경우에는 기능을 코드로 구현해야 합니다.
+Visual Studio를 사용하여 아랍어 및 히브리어와 같이 오른쪽에서 왼쪽으로 기록되는 언어로 텍스트를 제대로 표시하는 애플리케이션을 만들 수 있습니다. 일부 기능의 경우 속성만 설정하면 됩니다. 기타 경우에는 기능을 코드로 구현해야 합니다.
 
 > [!NOTE]
 > 양방향 언어를 입력 및 표시하려면 적절한 언어로 구성된 Windows 버전을 사용해야 합니다. 적절한 언어 팩이 설치된 Windows 영어 버전 또는 적절히 지역화된 Windows 버전 중 하나일 수 있습니다.
 
-## <a name="types-of-application-that-support-bi-directional-languages"></a>양방향 언어를 지원하는 응용 프로그램 형식
+## <a name="types-of-application-that-support-bi-directional-languages"></a>양방향 언어를 지원하는 애플리케이션 형식
 
--  Windows 응용 프로그램. 양방향 텍스트, 오른쪽에서 왼쪽 읽기 순서 및 미러링(창 레이아웃, 메뉴, 대화 상자 등 반전)에 대한 지원이 포함된 완전 양방향 응용 프로그램을 만들 수 있습니다. 미러링을 제외하고 이러한 기능은 기본적으로 또는 속성 설정으로 사용할 수 있습니다. 미러링은 메시지 상자와 같은 일부 기능에만 기본적으로 지원됩니다. 다른 경우에는 미러링을 코드로 구현해야 합니다. 자세한 내용은 [Windows Forms 응용 프로그램에 대한 양방향 지원](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications)을 참조하세요.
+-  Windows 애플리케이션. 양방향 텍스트, 오른쪽에서 왼쪽 읽기 순서 및 미러링(창 레이아웃, 메뉴, 대화 상자 등 반전)에 대한 지원이 포함된 완전 양방향 애플리케이션을 만들 수 있습니다. 미러링을 제외하고 이러한 기능은 기본적으로 또는 속성 설정으로 사용할 수 있습니다. 미러링은 메시지 상자와 같은 일부 기능에만 기본적으로 지원됩니다. 다른 경우에는 미러링을 코드로 구현해야 합니다. 자세한 내용은 [Windows Forms 애플리케이션에 대한 양방향 지원](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications)을 참조하세요.
 
--  웹 응용 프로그램. 웹 서비스는 양방향 언어가 포함된 응용 프로그램에 적합해지도록 UTF-8 및 유니코드 텍스트의 수신/전송을 지원합니다. 웹 클라이언트 응용 프로그램은 브라우저를 기반으로 사용자 인터페이스를 제공하므로 웹 응용 프로그램의 양방향 지원 정도는 사용자의 브라우저가 이 양방향 기능을 얼마나 잘 지원하는지에 따라 달라집니다. Visual Studio에서는 아랍어 및 히브리어 텍스트, 오른쪽에서 왼쪽 읽기 순서, 파일 인코딩 및 로컬 문화권 설정에 대한 지원을 사용하여 응용 프로그램을 만들 수 있습니다. 자세한 내용은 [ASP.NET 웹 응용 프로그램을 위한 양방향 지원](https://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03)을 참조하세요.
+-  웹 애플리케이션. 웹 서비스는 양방향 언어가 포함된 애플리케이션에 적합해지도록 UTF-8 및 유니코드 텍스트의 수신/전송을 지원합니다. 웹 클라이언트 애플리케이션은 브라우저를 기반으로 사용자 인터페이스를 제공하므로 웹 애플리케이션의 양방향 지원 정도는 사용자의 브라우저가 이 양방향 기능을 얼마나 잘 지원하는지에 따라 달라집니다. Visual Studio에서는 아랍어 및 히브리어 텍스트, 오른쪽에서 왼쪽 읽기 순서, 파일 인코딩 및 로컬 문화권 설정에 대한 지원을 사용하여 애플리케이션을 만들 수 있습니다. 자세한 내용은 [ASP.NET 웹 애플리케이션을 위한 양방향 지원](https://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03)을 참조하세요.
 
--  콘솔 응용 프로그램. 콘솔 응용 프로그램에 양방향 언어에 대한 텍스트 지원은 포함되지 않습니다. 이는 Windows가 콘솔 응용 프로그램과 작동하는 방식 때문입니다.
+-  콘솔 애플리케이션. 콘솔 애플리케이션에 양방향 언어에 대한 텍스트 지원은 포함되지 않습니다. 이는 Windows가 콘솔 애플리케이션과 작동하는 방식 때문입니다.
 
 ## <a name="visual-studio-features-that-are-fully-supported"></a>완벽하게 지원되지 않는 Visual Studio 기능
  Visual Studio에서 디자인 타임에 양방향 언어를 다음과 같은 방식으로 사용할 수 있습니다.
@@ -46,7 +45,7 @@ Visual Studio를 사용하여 아랍어 및 히브리어와 같이 오른쪽에�
 -   **파일 인코딩** 언어별 또는 유니코드 인코딩을 사용하여 파일을 저장하고 열 수 있습니다. 자세한 내용은 [방법: 인코딩을 사용하여 파일 저장 및 열기](../ide/how-to-save-and-open-files-with-encoding.md)를 참조하세요.
 
 ## <a name="features-with-limited-or-no-support"></a>지원이 제한되거나 없는 기능
- 양방향 언어 응용 프로그램에 공통적인 기타 기능은 Visual Studio에서 완벽하게 지원되지 않거나 경우에 따라 전혀 지원되지 않습니다. 여기에는 다음이 포함됩니다.
+ 양방향 언어 애플리케이션에 공통적인 기타 기능은 Visual Studio에서 완벽하게 지원되지 않거나 경우에 따라 전혀 지원되지 않습니다. 여기에는 다음이 포함됩니다.
 
 **오른쪽에서 왼쪽 읽기 순서** 기본적으로 Visual Studio에서 사용하는 텍스트 입력 컨트롤에는 왼쪽에서 오른쪽 읽기 순서가 사용됩니다. 대부분의 경우 표준 Windows 제스처를 사용하여 읽기 순서를 전환할 수 있습니다. 예를 들어 **Ctrl+오른쪽 Shift**를 눌러 속성 값에 대한 오른쪽에서 왼쪽 읽기 순서를 지원하도록 **속성** 창을 전환할 수 있습니다.
 
@@ -88,7 +87,7 @@ Visual Studio를 사용하여 아랍어 및 히브리어와 같이 오른쪽에�
 
 ## <a name="see-also"></a>참고 항목
 
-- [Windows Forms 응용 프로그램에 대한 양방향 지원](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications)
-- [ASP.NET 웹 응용 프로그램에 대한 양방향 지원](https://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03)
-- [응용 프로그램 전역화](../ide/globalizing-applications.md)
-- [응용 프로그램 지역화](../ide/localizing-applications.md)
+- [Windows Forms 애플리케이션에 대한 양방향 지원](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications)
+- [ASP.NET 웹 애플리케이션에 대한 양방향 지원](https://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03)
+- [애플리케이션 전역화](../ide/globalizing-applications.md)
+- [애플리케이션 지역화](../ide/localizing-applications.md)

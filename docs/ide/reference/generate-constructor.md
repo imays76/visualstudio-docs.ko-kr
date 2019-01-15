@@ -2,19 +2,18 @@
 title: 생성자 생성 빠른 작업
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c6b267bee0c78de19ffa0d443f515375eeae949a
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 6c7f46bd93e476c3f9ffe08831c5016a449ee4bc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295828"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895300"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Visual Studio에서 생성자 생성
 
@@ -24,9 +23,9 @@ ms.locfileid: "51295828"
 
 - Visual Basic
 
-**대상:** 클래스에서 새 생성자에 대한 코드를 즉시 생성할 수 있습니다.
+**내용:** 클래스에서 새 생성자에 대한 코드를 즉시 생성할 수 있습니다.
 
-**시기**: 새 생성자를 소개하고 자동으로 생성자를 제대로 선언하거나 기존 생성자를 수정하려고 합니다.
+**시기:** 새 생성자를 소개하고 자동으로 생성자를 제대로 선언하거나 기존 생성자를 수정하려고 합니다.
 
 **이유:** 생성자를 사용하기 전에 사용자가 생성자를 선언할 수 있지만, 이 기능은 적절한 매개 변수를 사용하여 생성자를 자동으로 생성합니다. 또한 이 기능을 사용하여 자동으로 업데이트하지 않는 한, 기존 생성자를 수정하려면 모든 호출 사이트를 업데이트해야 합니다.
 

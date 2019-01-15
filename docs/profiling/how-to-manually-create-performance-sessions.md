@@ -1,8 +1,6 @@
 ---
-title: '방법: 성능 세션 수동으로 만들기 | Microsoft 문서'
-ms.custom: ''
+title: '방법: 성능 세션 수동으로 만들기 | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.wizard.dllpage
@@ -16,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0bf92b01828764652cd75de648b1def01bb722c
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: c186fdd2c54697b5cda7845547eb33f3fca16ded
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844084"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819681"
 ---
 # <a name="how-to-manually-create-performance-sessions"></a>방법: 성능 세션 수동으로 만들기
 성능 세션을 수동으로 만들 수 있습니다. 이 작업을 위해 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서 프로젝트를 열 필요가 없습니다. 자세한 내용은 [성능 세션 구성](../profiling/configuring-performance-sessions.md)을 참조하세요.  

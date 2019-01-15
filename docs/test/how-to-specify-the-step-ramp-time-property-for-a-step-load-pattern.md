@@ -9,13 +9,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 81373e30498ad02f4007e096cfbc6a7cff953402
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 4338ba11116ce8077cff8e15a6bb8093214917d8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895721"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925760"
 ---
 # <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>방법: 단계 부하 패턴에 대한 단계 진입 시간 속성 지정
 
@@ -34,9 +33,9 @@ ms.locfileid: "52895721"
 
 -   초기 사용자 수: 100
 
--   최대 사용자 수: 2,000
+-   최대 사용자 수: 2000
 
--   단계 지속 시간(초): 1,800
+-   단계 지속 시간(초): 1800
 
 -   단계 진입 시간(초): 20
 

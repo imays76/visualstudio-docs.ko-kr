@@ -1,9 +1,7 @@
 ---
-title: '3단계: 폼 속성 설정'
-ms.custom: ''
+title: '3단계: 양식 속성 설정'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 634ef037-1525-48c8-ac7f-abf04be69376
 author: TerryGLee
@@ -11,17 +9,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c0cde54cb95c9e9d9cb237e8241425c70766e669
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c891a8aa535b9e2bc000f3d115b580f3a220a44b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821269"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968513"
 ---
-# <a name="step-3-set-your-form-properties"></a>3단계: 폼 속성 설정
+# <a name="step-3-set-your-form-properties"></a>3단계: 양식 속성 설정
 이제 **속성** 창을 사용하여 폼의 모양을 변경합니다.
 
- ![비디오 링크](../data-tools/media/playvideo.gif) 이 항목의 비디오 버전의 경우, [Tutorial 1: Create a picture viewer in Visual Basic - Video 1](http://go.microsoft.com/fwlink/?LinkId=205209)(자습서 1: Visual Basic에서 사진 뷰어 만들기 - 비디오 1) 또는 [Tutorial 1: Create a picture viewer in C# - Video 1](http://go.microsoft.com/fwlink/?LinkId=205199)(자습서 1: C#에서 사진 뷰어 만들기 - 비디오 1)을 참조하세요. 이러한 비디오에서는 이전 버전의 Visual Studio를 사용하므로 일부 메뉴 명령과 기타 사용자 인터페이스 요소가 약간 다를 수 있습니다. 그러나 개념 및 절차는 Visual Studio의 현재 버전에서 비슷하게 작동합니다.
+ ![비디오 링크](../data-tools/media/playvideo.gif) 이 항목의 비디오 버전은 [자습서 1: Visual Basic에서 비디오 보기 만들기 - 비디오1](http://go.microsoft.com/fwlink/?LinkId=205209) 또는 [자습서 1: C#에서 그림 보기 만들기 - 자습서 1](http://go.microsoft.com/fwlink/?LinkId=205199)을 참조하세요. 이러한 비디오에서는 이전 버전의 Visual Studio를 사용하므로 일부 메뉴 명령과 기타 사용자 인터페이스 요소가 약간 다를 수 있습니다. 그러나 개념 및 절차는 Visual Studio의 현재 버전에서 비슷하게 작동합니다.
 
 ## <a name="to-set-your-form-properties"></a>폼 속성을 설정하려면
 
@@ -71,6 +69,6 @@ ms.locfileid: "49821269"
 
 ## <a name="to-continue-or-review"></a>계속하거나 검토하려면
 
--   다음 자습서 단계로 이동하려면 [4단계: TableLayoutPanel 컨트롤을 사용하여 폼 레이아웃](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)을 참조하세요.
+-   다음 자습서 단계로 이동하려면 [4단계: TableLayoutPanel 컨트롤을 사용하여 양식 레이아웃](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)을 참조하세요.
 
 -   이전 자습서 단계로 돌아가려면 [2단계: 프로그램 실행](../ide/step-2-run-your-program.md)을 참조하세요.

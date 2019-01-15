@@ -9,12 +9,12 @@ description: Visual Studio 구독에 포함된 Enterprise Mobility + Security �
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: b6b4d4965ec2b7145ab388dff7df226ec16603e5
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 0e0af0c1f934163efeafd19110df7a30078bb23c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739606"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092068"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Visual Studio의 EMS(Enterprise Mobility + Security)
 
@@ -75,6 +75,6 @@ EMS를 사용하려면 기존 계정을 사용하여 계정을 설정하거나 �
 
 ## <a name="support-resources"></a>지원 리소스
 -  EMS와 관련하여 도움이 필요하세요?  온라인 [EMS 설명서](/enterprise-mobility-security/)를 확인하세요.
--  EMS 구성 요소에 대한 기술 지원을 받으려면 https://support.microsoft.com/allproducts을 방문하여 제품을 선택하세요.
+-  EMS의 구성 요소를 사용하는 기술 지원은 [EMS 지원 FAQ](https://docs.microsoft.com/en-us/enterprise-mobility-security/solutions/ems-support-faq)를 방문하여 질문에 대한 적합한 지원을 찾습니다.
 -  Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 Visual Studio [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)에 문의하세요.
 -  Visual Studio IDE, Azure DevOps Services 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.

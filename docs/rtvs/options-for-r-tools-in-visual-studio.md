@@ -3,7 +3,6 @@ title: R 도구 옵션
 description: R 언어 및 관련 기능에 대한 Visual Studio의 옵션 참조입니다.
 ms.date: 12/04/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: reference
 f1_keywords:
 - vs.toolsoptionspages.text_editor.r.advanced
@@ -15,12 +14,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: a40ed2fd72862bde3494edd0c74aebcca6b55711
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 2d48f59be1bb8e41e5cb587a6c5defcfb6e3227f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37342753"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900563"
 ---
 # <a name="r-tools-for-visual-studio-options"></a>Visual Studio용 R 도구 옵션
 
@@ -30,10 +29,10 @@ ms.locfileid: "37342753"
 
 아래 방법을 사용하여 R에 관련된 옵션 및 설정에 액세스합니다. 이러한 섹션을 모두 표시하려면 **옵션** 대화 상자의 맨 아래에 있는 **모든 설정 표시** 상자를 선택해야 합니다.
 
-- 코드 서식 지정 옵션([편집기 옵션](editing-r-code-in-visual-studio.md#editor-options) 참조: **도구** > **옵션** 메뉴에서 **텍스트 편집기** > **R** > **서식 지정**을 선택합니다.
-- Linter 옵션([Linting](linting-r-code.md) 참조): **도구** > **옵션** 메뉴에서 **텍스트 편집기** > **R** > **Lint**를 선택합니다.
-- 고급 편집기 옵션([이 문서에 설명됨](#text-editor--r--advanced-options)): **도구** > **옵션** 메뉴에서 **텍스트 편집기** > **R** > **고급**을 선택합니다.
-- 동작 옵션([이 문서에 설명됨](#r-tools--advanced-options)): **R 도구** > **옵션** 메뉴 또는 **도구** > **옵션**에서 **R 도구**까지 스크롤합니다.
+- 코드 서식 지정 옵션([편집기 옵션](editing-r-code-in-visual-studio.md#editor-options) 참조): **도구** > **옵션** 메뉴에서 **텍스트 편집기** > **R** > **서식 지정** 선택
+- Linter 옵션([Linting](linting-r-code.md)): **도구** > **옵션** 메뉴에서 **텍스트 편집기** > **R** > **Lint** 선택
+- 고급 편집기 옵션([이 문서에 설명됨](#text-editor--r--advanced-options)): **도구** > **옵션** 메뉴에서 **텍스트 편집기** > **R** > **고급** 선택
+- 동작 옵션([이 문서에 설명됨](#r-tools--advanced-options)): **R 도구** > **옵션** 메뉴 또는 **도구** > **옵션**에서 **R 도구**로 스크롤
 
 **R 도구** > **데이터 과학 설정** 명령은 전체 Visual Studio에서 다양한 다른 설정에도 영향을 미칩니다. 이 명령에 대해서는 다음 섹션에서 설명합니다.
 
@@ -100,7 +99,7 @@ ms.locfileid: "37342753"
 
 | 옵션 | 기본값 | 설명 |
 | --- | --- | --- |
-| HTML 페이지 브라우저 | `External` | `ggvis` 플롯 등의 콘텐츠나 `shiny` 응용 프로그램이 렌더링되는 위치를 결정합니다. `Internal`은 Visual Studio의 도구 창 내에 HTML 출력을 표시합니다. `External`은 기본 브라우저에 HTML 출력을 표시합니다. |
+| HTML 페이지 브라우저 | `External` | `ggvis` 플롯 등의 콘텐츠나 `shiny` 애플리케이션이 렌더링되는 위치를 결정합니다. `Internal`은 Visual Studio의 도구 창 내에 HTML 출력을 표시합니다. `External`은 기본 브라우저에 HTML 출력을 표시합니다. |
 
 ### <a name="logging"></a>로깅
 

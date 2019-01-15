@@ -2,7 +2,6 @@
 title: 기존 항목 추가 명령
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - project.addexistingitem
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4647fd5ca2cc5199c1f9b85e5237dd57d95dbbd
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: fd74b6af128ee8b624c022cbbf72c5de4edc7997
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704553"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873991"
 ---
 # <a name="add-existing-item-command"></a>기존 항목 추가 명령
 현재 솔루션에 기존 파일을 추가하고 엽니다.
@@ -43,10 +42,10 @@ File.AddExistingItem filename [/e:editorname]
 /e:"Source Code (text) Editor"
 ```
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
  입력 시 자동 완성에서 올바른 경로와 파일 이름을 찾으려고 합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  이 예제에서는 Form1.frm 파일을 현재 솔루션에 추가합니다.
 
 ```cmd
@@ -58,4 +57,4 @@ File.AddExistingItem filename [/e:editorname]
 - [Visual Studio 명령](../../ide/reference/visual-studio-commands.md)
 - [명령 창](../../ide/reference/command-window.md)
 - [찾기/명령 상자](../../ide/find-command-box.md)
-- [Visual Studio 명령 별칭](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

@@ -1,9 +1,7 @@
 ---
-title: '1단계: 프로젝트 만들기 및 폼에 레이블 추가'
-ms.custom: ''
+title: '1단계: 프로젝트 만들기 및 양식에 레이블 추가'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: f44e50be-a5f5-4d77-9cff-dd52374c3f74
 author: TerryGLee
@@ -11,14 +9,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb29a985a39344c5bffad59e63a9d540311ec648
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dcbee1d5339405d21b7b61ca5db35815568983b6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925125"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910950"
 ---
-# <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>1단계: 프로젝트 만들기 및 폼에 레이블 추가
+# <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>1단계: 프로젝트 만들기 및 양식에 레이블 추가
 
 이 퀴즈를 개발하는 첫 번째 단계는 프로젝트를 만들고 폼에 레이블, 단추 및 기타 컨트롤을 추가하는 것입니다. 추가한 각 컨트롤의 속성도 설정합니다. 프로젝트에 폼, 컨트롤 및 코드(자습서의 뒷부분에서 만듦)가 포함됩니다. 단추로 퀴즈를 시작하고 레이블에 퀴즈 문제를 표시하며 나머지 다른 컨트롤에 퀴즈의 답과 퀴즈 완료까지 남은 시간을 표시합니다.
 
@@ -31,7 +29,7 @@ ms.locfileid: "49925125"
 
 2.  **설치된 템플릿** 목록에서 **C#** 또는 **Visual Basic**을 선택합니다.
 
-3.  템플릿 목록에서 **Windows Forms 응용 프로그램** 템플릿을 선택하고 이름으로 **수학 퀴즈**를 지정한 다음 **확인** 단추를 선택합니다.
+3.  템플릿 목록에서 **Windows Forms 애플리케이션** 템플릿을 선택하고 이름으로 **수학 퀴즈**를 지정한 다음 **확인** 단추를 선택합니다.
 
      선택한 프로그래밍 언어에 따라 *Form1.cs* 또는 *Form1.vb*라는 폼이 표시됩니다.
 

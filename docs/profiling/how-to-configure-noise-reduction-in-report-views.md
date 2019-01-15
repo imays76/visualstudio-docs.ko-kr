@@ -1,8 +1,6 @@
 ---
-title: '방법: 보고서 뷰에서 노이즈 감소 구성 | Microsoft 문서'
-ms.custom: ''
+title: '방법: 보고서 보기에서 노이즈 감소 구성 | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.noisereduction.dialog
@@ -16,14 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 460251aaa89c22d7bb1320d19882af4f68736cc0
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 1fa84eecc96c836b3430b691b5d8f8b1cd3d0926
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815186"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875247"
 ---
-# <a name="how-to-configure-noise-reduction-in-report-views"></a>방법: 보고서 뷰에서 노이즈 감소 구성
+# <a name="how-to-configure-noise-reduction-in-report-views"></a>방법: 보고서 보기에서 노이즈 감소 구성
 호출 트리 뷰 및 할당 뷰에 제공되는 데이터 양을 제한하여 노이즈 감소를 위한 성능 보고서를 구성할 수 있습니다. 노이즈 감소를 사용하면 성능 문제가 더 두드러집니다. 성능 보고서를 분석할 경우 이 방법이 유용합니다.  
   
  노이즈 감소 구성 옵션에는 다음 설정이 포함됩니다.  

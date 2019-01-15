@@ -11,13 +11,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: a15f771d2afa2b5c8e02eed99b3168a537365a3f
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 360d3da6d88d053b24c11591e55c218bf3e5563b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895303"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942098"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>모델 가상 사용자 동작에 대한 부하 패턴 편집
 
@@ -34,7 +33,7 @@ ms.locfileid: "52895303"
 
 ### <a name="constant"></a>상수
 
- 일정 부하 패턴은 부하 테스트를 실행하는 동안 변경되지 않는 사용자 부하를 지정하는 데 사용됩니다. 예를 들어 웹 응용 프로그램에서 스모크 테스트를 실행하는 경우 일정 부하를 사용자 10명으로 적게 설정할 수 있습니다.
+ 일정 부하 패턴은 부하 테스트를 실행하는 동안 변경되지 않는 사용자 부하를 지정하는 데 사용됩니다. 예를 들어 웹 애플리케이션에서 스모크 테스트를 실행하는 경우 일정 부하를 사용자 10명으로 적게 설정할 수 있습니다.
 
 #### <a name="constant-load-pattern-considerations"></a>일정 부하 패턴 고려 사항
 
@@ -113,9 +112,9 @@ ms.locfileid: "52895303"
 |작업|관련 항목|
 |-|-----------------------|
 |**부하 테스트에 대한 초기 부하 패턴 지정:** **부하 테스트 새로 만들기 마법사**를 사용하여 부하 테스트를 만들 때 부하 패턴을 선택합니다.|-   [부하 패턴 변경](../test/edit-load-patterns-to-model-virtual-user-activities.md#change-the-load-pattern)|
-|**부하 테스트에 대한 부하 패턴 편집:** 부하 테스트를 만든 다음, **부하 테스트 편집기**에서 부하 패턴을 편집할 수 있습니다.|-   [방법: 단계 부하 패턴에 대한 단계 진입 시간 속성 지정](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
-|**부하 테스트 시나리오의 가상 사용자에 웹 캐시 데이터를 포함해야 하는지 여부 지정:** **새 사용자의 백분율** 속성을 변경하여 부하 테스트가 가상 사용자의 웹 브라우저에서 수행되는 웹 캐싱을 시뮬레이트하는 방식을 조정할 수 있습니다.|-   [방법: 웹 캐시 데이터를 사용하는 가상 사용자 비율 지정](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)|
-|**단계 부하 패턴에 대한 단계 진입 시간 지정:** **단계 진입 시간** 속성을 사용하면 사용자 수를 100명에서 200명으로 늘리는 것과 같이 한 단계에서 다음 단계로 부하를 증가시키는 작업이 즉각적으로가 아니라 점차적으로 이루어지도록 할 수 있습니다.|-   [방법: 단계 부하 패턴에 대한 단계 진입 시간 속성 지정](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
+|**부하 테스트에 대한 부하 패턴 편집:** 부하 테스트를 만든 후에 **부하 테스트 편집기**에서 부하 패턴을 편집할 수 있습니다.|-   [방법: 단계 부하 패턴에 대한 단계 진입 시간 속성 지정](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
+|**부하 테스트 시나리오의 가상 사용자가 웹 캐시 데이터를 포함해야 하는지 여부 지정:** 부하 테스트에서 가상 사용자를 위한 웹 브라우저가 수행하는 웹 캐시 작업을 시뮬레이트하는 방식에 영향을 주도록 **새 사용자의 백분율** 속성을 변경할 수 있습니다.|-   [방법: 웹 캐시 데이터를 사용하는 가상 사용자 비율 지정](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)|
+|**단계 부하 패턴에 단계 진입 시간 지정:** **단계 진입 시간** 속성을 사용하면 사용자 수를 100명에서 200명으로 늘리는 것과 같이 한 단계에서 다음 단계로 부하를 증가시키는 작업이 즉각적으로가 아니라 점차적으로 이루어지도록 할 수 있습니다.|-   [방법: 단계 부하 패턴에 대한 단계 진입 시간 속성 지정](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
 
 ## <a name="change-the-load-pattern"></a>부하 패턴 변경
 

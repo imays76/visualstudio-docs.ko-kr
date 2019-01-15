@@ -1,8 +1,6 @@
 ---
-title: '방법: 성능 데이터 수집 일시 중지 및 다시 시작 | Microsoft 문서'
-ms.custom: ''
+title: '방법: 성능 데이터 수집 일시 중지 및 다시 시작 | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, remote profiling
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6527825d23e0c09d156f61f2645276e61d72e165
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 094b2c345cc308b822e13f9a2f4381a583a74824
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843639"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845449"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>방법: 성능 데이터 수집 일시 중지 및 다시 시작
 프로파일링 세션 페이지 창에서 프로파일링 데이터의 컬렉션을 대화형으로 제어할 수 있습니다.  

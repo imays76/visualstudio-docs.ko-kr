@@ -1,8 +1,6 @@
 ---
 title: MSBuild 잘 알려진 항목 메타데이터 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d1ec2d2ade7162f08db954d8a7bebe059a21878
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: b46fd624b0ea3517cef75ba381638db2e3d94aaa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154562"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841527"
 ---
 # <a name="msbuild-well-known-item-metadata"></a>MSBuild 잘 알려진 항목 메타데이터
 다음 표에서는 만들어질 때 모든 항목에 할당된 메타데이터에 대해 설명합니다. 각 예제에서 프로젝트에 파일 *C:\MyProject\Source\Program.cs*를 포함하는 데 다음과 같은 항목 선언이 사용되었습니다.  

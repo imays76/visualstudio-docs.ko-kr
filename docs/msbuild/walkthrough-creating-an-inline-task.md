@@ -1,8 +1,6 @@
 ---
 title: '연습: 인라인 작업 만들기 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tutorial
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2091bfa5408c85e4fb4dd4b8973a74d1da8b7132
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b70a8540a87e347cdf75ea888ad4ef0cae66594e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828665"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910206"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>연습: 인라인 작업 만들기
 MSBuild 작업은 일반적으로 <xref:Microsoft.Build.Framework.ITask> 인터페이스를 구현하는 클래스를 컴파일하여 생성됩니다. .NET Framework 버전 4부터 프로젝트 파일에서 인라인으로 작업을 만들 수 있습니다. 작업을 호스트할 별도의 어셈블리를 만들 필요가 없습니다. 자세한 내용은 [인라인 작업](../msbuild/msbuild-inline-tasks.md)을 참조하세요.  
@@ -48,7 +46,7 @@ MSBuild 작업은 일반적으로 <xref:Microsoft.Build.Framework.ITask> 인터�
   
 1.  Visual Studio의 **파일** 메뉴에서 **새로 만들기**를 가리킨 다음 **프로젝트**를 클릭합니다.  
   
-2.  **새 프로젝트** 대화 상자에서 **Visual C#** 프로젝트 형식을 선택하고 **Windows Forms 응용 프로그램** 템플릿을 선택합니다. **이름** 상자에 `InlineTasks`을 입력합니다. 솔루션의 **위치**를 *D:\\*와 같이 입력합니다. **솔루션용 디렉터리 만들기**가 선택되어 있고, **소스 제어에 추가**가 선택 취소되어 있고, **솔루션 이름**이 **InlineTasks**인지 확인합니다.  
+2.  **새 프로젝트** 대화 상자에서 **Visual C#** 프로젝트 형식을 선택하고 **Windows Forms 애플리케이션** 템플릿을 선택합니다. **이름** 상자에 `InlineTasks`을 입력합니다. 솔루션의 **위치**를 *D:\\*와 같이 입력합니다. **솔루션용 디렉터리 만들기**가 선택되어 있고, **소스 제어에 추가**가 선택 취소되어 있고, **솔루션 이름**이 **InlineTasks**인지 확인합니다.  
   
 3.  **확인**을 클릭하여 프로젝트 파일을 만듭니다.  
   

@@ -1,8 +1,6 @@
 ---
-title: '방법: 성능 데이터 파일 비교 | Microsoft 문서'
-ms.custom: ''
+title: '방법: 성능 데이터 파일 비교 | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vsperf.choosediffbinaries
@@ -15,19 +13,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eeb9f26091deaf995ef1221d39aa7264553f5c70
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 743184a0f28df90e703ce355ecf5c2642036d2ed
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815381"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961701"
 ---
 # <a name="how-to-compare-performance-data-files"></a>방법: 성능 데이터 파일 비교
 비교(“Diff”) 보고서 또는 뷰를 만들어 두 가지 프로파일러 데이터 파일(.*vsp* 또는 .*vsps*)의 결과를 비교할 수 있습니다. 이 비교는 프로파일링 세션 사이에 발생한 차이점, 성능 회귀 및 향상된 기능을 보여 줍니다.  
   
  Diff 보고서는 데이터의 테이블 뷰를 제공합니다. 테이블은 델타 또는 기준선으로부터 변경을 표시합니다. 이는 이전 값, 기준 값, 새 분석의 결과 값 간의 차이를 확인하여 계산됩니다.  
   
- 프로파일러 데이터의 비교는 코드의 함수, 응용 프로그램의 모듈, 줄, IP(명령 포인터) 및 형식에 따라 달라질 수 있습니다.  
+ 프로파일러 데이터의 비교는 코드의 함수, 애플리케이션의 모듈, 줄, IP(명령 포인터) 및 형식에 따라 달라질 수 있습니다.  
   
  노이즈를 줄이고, 지정된 크기만큼 변경되지 않은 행의 테이블 뷰에서 임의의 데이터를 필터링하도록 임계값을 설정할 수 있습니다.  
   

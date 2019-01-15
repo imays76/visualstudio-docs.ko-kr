@@ -2,7 +2,6 @@
 title: 명령 창
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.CommandWindow
@@ -18,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 447a01f96c9f642bca743247551bc2b3d38e4d23
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 567553895437bc013a7415ce305bfd863d46994a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905956"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841861"
 ---
 # <a name="command-window"></a>명령 창
 **명령** 창은 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE(통합 개발 환경)에서 직접 명령 또는 별칭을 실행하는 데 사용됩니다. 메뉴 명령 및 메뉴에 나타나지 않는 명령을 둘 다 실행할 수 있습니다. **명령** 창을 표시하려면 **보기** 메뉴에서 **다른 창**을 선택하고 **명령 창**을 선택합니다.
@@ -46,7 +45,7 @@ ms.locfileid: "49905956"
 ## <a name="entering-commands"></a>명령 입력
  보다 큼 기호(`>`)는 명령 창의 왼쪽 가장자리에 새 줄 프롬프트로 표시됩니다. 위쪽 화살표 및 아래쪽 화살표 키를 사용해서 이전에 실행된 명령을 스크롤합니다.
 
-|작업|솔루션|예|
+|작업|솔루션|예제|
 |----------|--------------|-------------|
 |식을 계산합니다.|식 앞에 물음표(`?`)를 추가합니다.|`? myvar`|
 |직접 실행 창으로 전환합니다.|`immed`를 보다 큼 기호(>) 없이 창에 입력합니다.|`immed`|
@@ -101,7 +100,7 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 짧은 형식 스위치를 그룹으로 결합하고 값을 지정하면 해당 값이 모든 스위치에 적용됩니다. 예를 들어 `/pgm:123`은 `/p:123 /g:123 /m:123`과 같습니다. 그룹에 있는 스위치가 값을 허용하지 않으면 오류가 발생합니다.
 
 ## <a name="escape-characters"></a>이스케이프 문자
- 명령줄의 캐럿(^) 문자는 캐럿 바로 뒤의 문자가 제어 문자가 아닌 문자 그대로 해석된다는 것을 의미합니다. 이스케이프 문자는 매개 변수 또는 스위치 값에 곧은 큰따옴표("), 공백, 선행 슬래시, 캐럿 등 또는 리터럴 문자를 포함하기 위해 사용할 수 있습니다(스위치 이름 제외). 예를 들면 다음과 같습니다.
+ 명령줄의 캐럿(^) 문자는 캐럿 바로 뒤의 문자가 제어 문자가 아닌 문자 그대로 해석된다는 것을 의미합니다. 이스케이프 문자는 매개 변수 또는 스위치 값에 곧은 큰따옴표("), 공백, 선행 슬래시, 캐럿 등 또는 리터럴 문자를 포함하기 위해 사용할 수 있습니다(스위치 이름 제외). 예를 들어 개체에 적용된
 
 ```cmd
 >Edit.Find ^^t /regex
@@ -110,7 +109,7 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
  캐럿은 따옴표 내부에 있든 외부에 있든 기능이 동일합니다. 캐럿이 줄에서 마지막 문자인 경우 무시됩니다. 여기 표시된 예제는 “^t” 패턴을 검색하는 방법을 보여 줍니다.
 
 ## <a name="use-quotes-for-path-names-with-spaces"></a>공백이 있는 경로 이름에 따옴표 사용
- 예를 들어 경로에 공백이 포함된 파일을 열려면 공백이 포함된 경로 또는 경로 세그먼트 주위에 큰따옴표를 넣어야 합니다(예: **C:\\"Program Files"** 또는 **"C:\Program Files"**).
+ 예를 들어 경로에 공백이 포함된 파일을 열려면 공백이 포함된 경로 또는 경로 세그먼트 주위에 큰따옴표를 넣어야 합니다. (예: **C:\\"Program Files"** 또는 **"C:\Program Files"**)
 
 ## <a name="see-also"></a>참고 항목
 

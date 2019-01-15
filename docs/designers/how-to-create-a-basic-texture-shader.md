@@ -2,7 +2,6 @@
 title: '방법: 기본 질감 셰이더 만들기'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 5af113fb-6415-4be0-8b23-10fddb10e80a
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 211da971bc7e4e275ef43b88531fe46a7fc0b4eb
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 85de6bcaa4b3b62c9a3ad03464d9b95cb0134a6e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924068"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946070"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>방법: 기본 질감 셰이더 만들기
 
@@ -55,6 +54,6 @@ ms.locfileid: "37924068"
 ## <a name="see-also"></a>참고 항목
 
 - [방법: 3D 모델에 셰이더 적용](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [이미지 편집기](../designers/image-editor.md)
+- [Image Editor](../designers/image-editor.md)
 - [셰이더 디자이너](../designers/shader-designer.md)
 - [셰이더 디자이너 노드](../designers/shader-designer-nodes.md)

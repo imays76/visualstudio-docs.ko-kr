@@ -1,8 +1,6 @@
 ---
-title: '방법: 요약 시간 표시 막대에서 보고서 뷰 필터링 | Microsoft Docs'
-ms.custom: ''
+title: '방법: 요약 타임라인에서 보고서 보기 필터링 | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 056b10a0-952b-4790-89e0-02aebe902e87
 author: mikejo5000
@@ -10,14 +8,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb2c9bc8d0bcec6bc4a07c03dc18f07286cd77c1
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 38c19d70817588a40ced0d57a6753cf52803a353
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815498"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896372"
 ---
-# <a name="how-to-filter-report-views-from-the-summary-timeline"></a>방법: 요약 타임라인에서 보고서 뷰 필터링
+# <a name="how-to-filter-report-views-from-the-summary-timeline"></a>방법: 요약 타임라인에서 보고서 보기 필터링
 요약 뷰의 시간 표시 막대 그래프에 시간 세그먼트를 지정하여 성능 보고서에 표시되는 데이터를 필터링할 수 있습니다. 보고서를 필터링할 때 지정된 시간 세그먼트만 포함하도록 프로파일링 데이터 파일이 다시 분석됩니다.  
   
 ### <a name="to-filter-a-profiling-report-from-the-summary-timeline-graph"></a>요약 시간 표시 막대 그래프에서 프로파일링 보고서를 필터링하려면  

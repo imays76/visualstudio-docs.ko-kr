@@ -1,8 +1,6 @@
 ---
 title: 개체 수명 뷰 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.objectlifetime
@@ -18,19 +16,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 247c81d46ee8f5ae916a2a024620e4f4eb864194
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 8175a8337f15517e0b9c88ae3f5405148a4b22b2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255621"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934971"
 ---
 # <a name="object-lifetime-view"></a>개체 수명 뷰
 개체 수명 뷰는 **성능 세션** 속성 페이지에서 **.NET 개체 수명 데이터도 수집**이 선택된 경우 사용 가능합니다.  
   
- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]의 가비지 수집기는 응용 프로그램의 메모리 할당 및 해제를 관리합니다. 가비지 수집기의 성능을 최적화하기 위해 관리되는 힙은 0세대, 1세대 및 2세대의 3개 세대로 나뉩니다. 런타임의 가비지 수집기는 새 개체를 0세대에 저장합니다. 수집이 완료된 후에 남아 있는 개체는 승격되어 1세대 및 2세대에 저장됩니다.  
+ [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]의 가비지 수집기는 애플리케이션의 메모리 할당 및 해제를 관리합니다. 가비지 수집기의 성능을 최적화하기 위해 관리되는 힙은 0세대, 1세대 및 2세대의 3개 세대로 나뉩니다. 런타임의 가비지 수집기는 새 개체를 0세대에 저장합니다. 수집이 완료된 후에 남아 있는 개체는 승격되어 1세대 및 2세대에 저장됩니다.  
   
- 가비지 수집기는 전체 개체 세대의 할당을 취소하여 메모리를 회수합니다. 프로파일링된 응용 프로그램이 만든 개체의 경우 개체 수명 뷰에는 개체의 수/크기와 해당 개체가 회수된 세대가 표시됩니다.  
+ 가비지 수집기는 전체 개체 세대의 할당을 취소하여 메모리를 회수합니다. 프로파일링된 애플리케이션이 만든 개체의 경우 개체 수명 뷰에는 개체의 수/크기와 해당 개체가 회수된 세대가 표시됩니다.  
   
 ## <a name="general"></a>일반  
   

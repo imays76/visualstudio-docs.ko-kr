@@ -1,8 +1,6 @@
 ---
 title: MSBuild 작업 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#MSBuild
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a4d7a296902695007541e4c21c661f659fbbaab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f3f6ab2b5656d70c455f9ea67fe13d463ddcb85c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861607"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831247"
 ---
 # <a name="msbuild-task"></a>MSBuild 작업
 다른 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트에서 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트를 빌드합니다.  
@@ -45,13 +43,13 @@ ms.locfileid: "49861607"
 | `SkipNonexistentProjects` | 선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 디스크에 없는 프로젝트 파일을 건너뜁니다. 그렇지 않은 경우 이러한 프로젝트로 인해 오류가 발생합니다. |
 | `StopOnFirstFailure` | 선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 프로젝트 중 하나를 빌드하지 못하면 더 이상 프로젝트를 빌드하지 않습니다. 현재 여러 프로세서를 사용하여 병렬로 빌드할 때는 이 매개 변수가 지원되지 않습니다. |
 | `TargetAndPropertyListSeparators` | 선택적 `String[]` 매개 변수입니다.<br /><br /> 대상 및 속성의 목록을 `Project` 항목 메타데이터로 지정합니다. 처리 전에 구분 기호를 이스케이프 해제합니다. 예를 들어 %3B(이스케이프된 ';')는 이스케이프 해제된 ';'로 처리됩니다. |
-| `TargetOutputs` | 선택적 읽기 전용 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 출력 매개 변수입니다.<br /><br /> 모든 프로젝트 파일에서 작성된 대상의 출력을 반환합니다. 해당 대상이 종속된 대상에 있을 수 있는 출력이 아닌, 지정된 대상의 출력만 반환됩니다.<br /><br /> `TargetOutputs` 매개 변수는 다음 메타데이터도 포함합니다.<br /><br /> -   `MSBuildSourceProjectFile`: 출력을 설정하는 대상이 포함된 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일입니다.<br />-   `MSBuildSourceTargetName`: 출력을 설정하는 대상입니다. **참고:** 각 프로젝트 파일이나 대상의 출력을 개별적으로 식별하려는 경우 각 프로젝트 파일 또는 대상에 대해 `MSBuild`를 개별적으로 실행합니다. `MSBuild` 작업을 한 번만 실행하여 모든 프로젝트 파일을 빌드하는 경우에는 모든 대상의 출력이 배열 하나에 수집됩니다. |
-| `Targets` | 선택적 `String` 매개 변수입니다.<br /><br /> 프로젝트 파일에서 빌드할 하나 이상의 대상을 지정합니다. 세미콜론을 사용하여 대상 이름 목록을 구분합니다. `MSBuild` 작업에 대상이 지정되어 있지 않으면 프로젝트 파일에 지정된 기본 대상이 빌드됩니다. **참고:** 모든 프로젝트 파일에는 대상이 있어야 합니다. 대상이 없으면 빌드 오류가 발생합니다. |
+| `TargetOutputs` | 선택적 읽기 전용 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 출력 매개 변수입니다.<br /><br /> 모든 프로젝트 파일에서 작성된 대상의 출력을 반환합니다. 해당 대상이 종속된 대상에 있을 수 있는 출력이 아닌, 지정된 대상의 출력만 반환됩니다.<br /><br /> `TargetOutputs` 매개 변수는 다음 메타데이터도 포함합니다.<br /><br /> -   `MSBuildSourceProjectFile`: 출력을 설정하는 대상이 포함된 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일입니다.<br />-   `MSBuildSourceTargetName`: 출력을 설정하는 대상입니다. **참고:**  각 프로젝트 파일이나 대상의 출력을 개별적으로 식별하려는 경우 각 프로젝트 파일 또는 대상에 대해 `MSBuild` 작업을 개별적으로 실행합니다. `MSBuild` 작업을 한 번만 실행하여 모든 프로젝트 파일을 빌드하는 경우에는 모든 대상의 출력이 배열 하나에 수집됩니다. |
+| `Targets` | 선택적 `String` 매개 변수입니다.<br /><br /> 프로젝트 파일에서 빌드할 하나 이상의 대상을 지정합니다. 세미콜론을 사용하여 대상 이름 목록을 구분합니다. `MSBuild` 작업에 대상이 지정되어 있지 않으면 프로젝트 파일에 지정된 기본 대상이 빌드됩니다. **참고:**  모든 프로젝트 파일에는 대상이 있어야 합니다. 대상이 없으면 빌드 오류가 발생합니다. |
 | `ToolsVersion` | 선택적 `String` 매개 변수입니다.<br /><br /> 이 작업에 전달된 프로젝트를 빌드할 때 사용할 `ToolsVersion`을 지정합니다.<br /><br /> [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 작업이 프로젝트에 지정된 것과 다른 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 버전을 대상으로 하는 프로젝트를 빌드할 수 있도록 설정합니다. 유효한 값은 `2.0`, `3.0` 및 `3.5`입니다. 기본값은 `3.5`여야 합니다. |
 | `UnloadProjectsOnCompletion` | 선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 작업이 완료되면 프로젝트가 언로드됩니다. |
 | `UseResultsCache` | 선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 캐시된 결과(있는 경우)가 반환됩니다.<br /><br />  MSBuild 작업이 실행되면 해당 결과는 <br /><br /> (ProjectFileName, GlobalProperties)[TargetNames] 범위에<br /><br /> 빌드 항목의 목록으로 캐시됩니다. |
 
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension 기본 클래스](../msbuild/taskextension-base-class.md)를 참조하세요.  
 
  [Exec 작업](../msbuild/exec-task.md)을 사용하여 *MSBuild.exe*를 시작하는 경우와 달리 이 작업에서는 동일한 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로세스를 사용하여 자식 개체를 빌드합니다. 건너뛸 수 있는 이미 빌드된 대상의 목록은 부모 빌드와 자식 빌드 간에 공유됩니다. 또한 새 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로세스가 만들어지지 않으므로 이 작업은 속도도 더 빠릅니다.  
@@ -166,7 +164,7 @@ ms.locfileid: "49861607"
 </Project>  
 ```  
 
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 `MSBuild` 작업을 사용하여 `ProjectReferences` 항목 컬렉션으로 지정된 프로젝트를 빌드합니다. 결과 대상 출력은 `AssembliesBuiltByChildProjects` 항목 컬렉션에 저장됩니다.  
 
 ```xml  

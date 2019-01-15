@@ -1,8 +1,6 @@
 ---
 title: RoslynCodeTaskFactory를 사용한 MSBuild 인라인 작업 | Microsoft Docs
-ms.custom: ''
 ms.date: 09/21/2017
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tasks
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 841a7d7bbf10fc4bba5ed99d7ffacf1b76f3a079
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 36c91931e92a40990c742f5cef05e6b056ebc72b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204182"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887752"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>RoslynCodeTaskFactory를 사용한 MSBuild 인라인 작업
 [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md)와 유사하게 RoslynCodeTaskFactory는 플랫폼 간 Roslyn 컴파일러를 사용하여 인라인 작업으로 사용하기 위한 메모리 내 작업 어셈블리를 생성합니다.  RoslynCodeTaskFactory 작업은 .NET Standard를 대상으로 하며 .NET Framework 및 .NET Core 런타임뿐만 아니라 Linux 및 Mac OS와 같은 다른 플랫폼에서도 작업할 수 있습니다.
@@ -163,7 +161,7 @@ Log.LogError("Hello, world!");
 
 `Code` 요소에 `Fragment` 또는 `Method`의 `Type` 특성이 있는 경우 모든 매개 변수에 대해 자동으로 속성이 만들어집니다. 그렇지 않으면 작업 소스 코드에서 속성을 명시적으로 선언해야 하며 이러한 속성은 해당 매개 변수 정의와 정확히 일치해야 합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 인라인 작업은 일부 메시지를 기록하고 문자열을 반환합니다.  
   
 ```xml  

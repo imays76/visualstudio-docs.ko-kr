@@ -3,19 +3,18 @@ title: R에 대한 원격 작업 영역
 description: 원격 R 작업 영역을 설정하고 Visual Studio에서 이 작업 영역에 연결하는 방법입니다.
 ms.date: 12/04/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 207e4c2d6e7db9dd40288306b3a87086c4568f76
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6a5dfb136c975634bd4f8915d1f5eb1c9d023e98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827716"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837786"
 ---
 # <a name="set-up-remote-workspaces"></a>원격 작업 영역 설정
 
@@ -173,7 +172,7 @@ R 코드를 실행하려면 다음과 같이 원격 컴퓨터에 R 인터프리�
 
 1. 사용자 계정: 원격 컴퓨터에 액세스하는 각 사용자에 대한 계정을 만듭니다. 표준(권한 없음) 로컬 사용자 계정을 만들거나 R 서버 컴퓨터를 도메인에 조인하고 적절한 보안 그룹을 `Users` 보안 그룹에 추가할 수 있습니다.
 
-1. 방화벽 규칙: 기본적으로 `R Host Broker`는 TCP 포트 5444를 수신합니다. 따라서 인바운드 및 아웃바운드 트래픽에 둘 다 사용할 수 있는 Windows 방화벽 규칙이 있는지 확인합니다(패키지 및 비슷한 시나리오를 설치하려면 아웃바운드가 필요함).  R Services 설치 관리자에서는 기본 제공 Windows 방화벽에 대해 이러한 규칙을 자동으로 설정합니다. 그러나 타사 방화벽을 사용하는 경우 `R Host Broker`에 대해 포트 5444를 수동으로 엽니다.
+1. 방화벽 규칙: 기본적으로 `R Host Broker`는 TCP 포트 5444에서 수신 대기합니다. 따라서 인바운드 및 아웃바운드 트래픽에 둘 다 사용할 수 있는 Windows 방화벽 규칙이 있는지 확인합니다(패키지 및 비슷한 시나리오를 설치하려면 아웃바운드가 필요함).  R Services 설치 관리자에서는 기본 제공 Windows 방화벽에 대해 이러한 규칙을 자동으로 설정합니다. 그러나 타사 방화벽을 사용하는 경우 `R Host Broker`에 대해 포트 5444를 수동으로 엽니다.
 
 1. Azure 구성: 원격 컴퓨터가 Azure의 가상 머신인 경우 Windows 방화벽과 관계가 없는 Azure 네트워킹 내에서도 포트 5444를 엽니다. 자세한 내용은 Azure 설명서에서 [네트워크 보안 그룹을 사용하여 네트워크 트래픽 필터링](https://docs.microsoft.com/azure/virtual-network/virtual-networks-nsg)을 참조하세요.
 

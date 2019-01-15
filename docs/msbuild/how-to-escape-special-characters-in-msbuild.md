@@ -1,8 +1,6 @@
 ---
-title: '방법: MSBuild의 이스케이프 특수 문자 | Microsoft 문서'
-ms.custom: ''
+title: '방법: MSBuild의 이스케이프 특수 문자 | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - special characters, escaping
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 701db598872f6dde5a07740ef7601a6c8de7c5f0
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: 5e6af51127548b59646ec7243863491115b77e08
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443404"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854622"
 ---
 # <a name="how-to-escape-special-characters-in-msbuild"></a>방법: MSBuild의 이스케이프 특수 문자
 
@@ -30,7 +28,7 @@ ms.locfileid: "47443404"
   
 ## <a name="msbuild-special-characters"></a>MSBuild 특수 문자
 
- 항목 목록의 `Include` 특성에서 특수 문자가 사용되는 하나의 예가 있습니다. 예를 들어 다음 항목 목록은 두 개의 항목, *MyFile.cs* 및 *MyClass.cs*를 선언합니다.  
+ 항목 목록의 `Include` 특성에서 특수 문자가 사용되는 하나의 예가 있습니다. 예를 들어 다음 항목 목록은 두 개의 항목을 선언합니다. *MyFile.cs* 및 *MyClass.cs*  
   
 ```xml  
 <Compile Include="MyFile.cs;MyClass.cs"/>  

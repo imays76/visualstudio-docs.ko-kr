@@ -2,19 +2,18 @@
 title: C# Equals 및 GetHashCode 메서드 재정의 생성
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5ec552e320b0c19c5c05e145fd9c5a4588f31b4c
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: e7b1f2f196e8cb737d179e12e49d829b1651c5d5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295711"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960906"
 ---
 # <a name="generate-equals-and-gethashcode-method-overrides-in-visual-studio"></a>Visual Studio에서 Equals 및 GetHashCode 메서드 재정의 생성
 
@@ -22,7 +21,7 @@ ms.locfileid: "51295711"
 
 - C#
 
-**대상:** **Equals** 및 **GetHashCode** 메서드를 생성할 수 있습니다.
+**내용:** **Equals** 및 **GetHashCode** 메서드를 생성할 수 있습니다.
 
 **시기:** 메모리의 개체 위치 대신 하나 이상의 필드에서 비교되어야 하는 형식이 있을 경우 이러한 재정의를 생성합니다.
 

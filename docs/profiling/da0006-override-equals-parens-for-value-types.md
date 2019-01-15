@@ -1,8 +1,6 @@
 ---
-title: 'DA0006: 값 형식에 대해 Equals()를 재정의하십시오. | Microsoft Docs'
-ms.custom: ''
+title: 'DA0006: 값 형식에 대해 Equals() 재정의 | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.rules.DAOverrideEquals
@@ -15,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ab011487f33438091eb963c9ea4a7e1d1c80ec4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 78c284e4dd38b551cc575b20da84152470462fd3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856277"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876015"
 ---
-# <a name="da0006-override-equals-for-value-types"></a>DA0006: 값 형식에 대해 Equals()를 재정의하십시오.
+# <a name="da0006-override-equals-for-value-types"></a>DA0006: 값 형식에 대해 Equals() 재정의
 
 |||  
 |-|-|  
@@ -41,4 +39,4 @@ ms.locfileid: "49856277"
  Equals 및 같음 연산자를 재정의하는 방법에 대한 자세한 내용은 [Equals 및 같음 연산자(==) 구현 지침](http://go.microsoft.com/fwlink/?LinkId=177818)을 참조하세요.  
 
 ## <a name="how-to-investigate-a-warning"></a>경고를 조사하는 방법  
- Equals 및 같음 연산자 구현의 예는 코드 분석 규칙 [CA1815: 값 형식에서 Equals 또는 같음 연산자를 재정의하십시오.](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md)를 참조하세요.
+ Equals 및 같음 연산자 구현의 예는 코드 분석 규칙 [CA1815: 값 형식에서 Equals 또는 같음 연산자 재정의](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md)를 참조하세요.

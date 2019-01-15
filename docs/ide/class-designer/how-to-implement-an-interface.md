@@ -2,7 +2,6 @@
 title: '방법: 인터페이스 구현(클래스 디자이너)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - interfaces [Visual Studio], implementing
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a8905fe471d022ff7772ded2e5e3e571b1b74968
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: b1f427a78c11696253bdd418f5c8f7ac86b906bf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33958619"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916321"
 ---
 # <a name="how-to-implement-an-interface-in-class-designer"></a>방법: 클래스 디자이너에서 인터페이스 구현
 
@@ -35,7 +34,7 @@ ms.locfileid: "33958619"
 
      롤리팝이 클래스에 연결되도록 표시되고 인터페이스 이름을 가진 레이블은 상속 관계를 식별합니다. Visual Studio는 모든 인터페이스 멤버에 대한 스텁을 생성합니다.
 
-자세한 내용은 [방법: 형식 간의 상속 만들기](how-to-create-inheritance-between-types.md)를 참조하세요.
+자세한 내용은 [방법: 형식 간에 상속 만들기](how-to-create-inheritance-between-types.md)를 참조하세요.
 
 ## <a name="to-implement-an-interface-from-the-class-view-window"></a>클래스 뷰 창에서 인터페이스를 구현하려면
 

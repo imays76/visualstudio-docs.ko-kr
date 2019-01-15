@@ -1,8 +1,6 @@
 ---
 title: ResolveComReference 작업 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ResolveComReference
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f13efe45547b657f9e07c12d8eee4160ec7b95e
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 565b69de16768175e520e06333d714865bbcc0a0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152401"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893343"
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference 작업
 하나 이상의 형식 라이브러리 이름 또는 *.tlb* 파일 목록을 가져온 후 해당 형식 라이브러리를 디스크의 위치로 확인합니다.  
@@ -61,7 +59,7 @@ ms.locfileid: "39152401"
 |`GUID`|필수 항목 메타데이터입니다.<br /><br /> 형식 라이브러리의 GUID입니다. 이 항목 메타데이터를 지정하지 않으면 작업이 실패합니다.|  
 |`VersionMajor`|필수 항목 메타데이터입니다.<br /><br /> 형식 라이브러리의 주 버전입니다. 이 항목 메타데이터를 지정하지 않으면 작업이 실패합니다.|  
 |`VersionMinor`|필수 항목 메타데이터입니다.<br /><br /> 형식 라이브러리의 부 버전입니다. 이 항목 메타데이터를 지정하지 않으면 작업이 실패합니다.|  
-|`LocaleIdentifier`|선택적 항목 메타데이터입니다.<br /><br /> 형식 라이브러리의 로캘 식별자(또는 LCID)입니다. 이 항목 메타데이터는 사용자, 지역 또는 응용 프로그램에서 선호되는 인간 언어를 나타내는 32비트 값으로 지정됩니다. 이 항목 메타데이터를 지정하지 않으면 작업에서 기본 로캘 식별자 “0”이 사용됩니다.|  
+|`LocaleIdentifier`|선택적 항목 메타데이터입니다.<br /><br /> 형식 라이브러리의 로캘 식별자(또는 LCID)입니다. 이 항목 메타데이터는 사용자, 지역 또는 애플리케이션에서 선호되는 인간 언어를 나타내는 32비트 값으로 지정됩니다. 이 항목 메타데이터를 지정하지 않으면 작업에서 기본 로캘 식별자 “0”이 사용됩니다.|  
 |`WrapperTool`|선택적 항목 메타데이터입니다.<br /><br /> 이 형식 라이브러리의 어셈블리 래퍼를 생성하는 데 사용되는 래퍼 도구를 지정합니다. 이 항목 메타데이터를 지정하지 않으면 작업에서 기본 래퍼 도구 “tlbimp”가 사용됩니다. 사용 가능한 typelib(대/소문자 구분)는 다음과 같습니다.<br /><br /> -   `Primary`: COM 구성 요소에 대한 이미 생성된 주 interop 어셈블리를 사용하려면 이 래퍼 도구를 사용합니다. 이 래퍼 도구를 사용할 경우 래퍼 출력 디렉터리를 지정하지 마세요. 지정하면 작업이 실패합니다.<br />-   `TLBImp`: COM 구성 요소에 대한 interop 어셈블리를 생성하려면 이 래퍼 도구를 사용합니다.<br />-   `AXImp`: ActiveX 컨트롤에 대한 interop 어셈블리를 생성하려면 이 래퍼 도구를 사용합니다.|  
   
 ## <a name="typelibfiles-item-metadata"></a>TypeLibFiles 항목 메타데이터  
@@ -74,7 +72,7 @@ ms.locfileid: "39152401"
 > [!NOTE]
 >  형식 라이브러리를 고유하게 식별하기 위해 더 많은 정보를 제공할수록 작업이 디스크에서 올바른 파일로 확인될 가능성이 커집니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [Task 기본 클래스](../msbuild/task-base-class.md)를 참조하세요.  
   
 ## <a name="see-also"></a>참고 항목  

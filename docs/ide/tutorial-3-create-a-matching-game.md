@@ -1,9 +1,7 @@
 ---
-title: '자습서 3: 일치 게임 만들기'
-ms.custom: ''
+title: '자습서 3: 맞추기 게임 만들기'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 525815c8-2845-45e8-be96-100d1f144725
 author: TerryGLee
@@ -11,16 +9,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d77bfad86024cf95ce1649498ddda5d1450a1c33
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 724d61fcebe85a512afa346e4deed58f16260c46
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672017"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963831"
 ---
-# <a name="tutorial-3-create-a-matching-game"></a>자습서 3: 일치 게임 만들기
+# <a name="tutorial-3-create-a-matching-game"></a>자습서 3: 맞추기 게임 만들기
 
-이 자습서에서는 플레이어가 숨겨진 아이콘의 쌍을 찾는 일치 게임을 빌드합니다. 여기에서는 다음과 같은 작업을 수행하는 방법에 대해 배우게 됩니다.
+이 자습서에서는 플레이어가 숨겨진 아이콘의 쌍을 찾는 일치 게임을 빌드합니다. 다음과 같은 작업을 수행하는 방법을 살펴봅니다.
 
 -   아이콘과 같은 개체를 <xref:System.Collections.Generic.List%601> 개체에 저장합니다.
 
@@ -43,13 +41,13 @@ ms.locfileid: "50672017"
 > [!NOTE]
 > 이 자습서에는 Visual C#과 Visual Basic이 둘 다 설명되어 있으므로 사용 중인 프로그래밍 언어와 관련된 정보를 참조하십시오.
 
-어려운 점이 있거나 프로그래밍 관련 질문이 있는 경우 MSDN 포럼에 질문을 게시해 보십시오. [Visual Basic 포럼](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vbgeneral) 및 [Visual C# 포럼](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=csharpgeneral)을 참조하세요. 또한 훌륭한 비디오 학습 자료가 무료로 제공됩니다. Visual Basic의 프로그래밍에 대한 자세한 내용은 [Visual Basic fundamentals: Development for absolute beginners](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners)(Visual Basic 기초: 완전 초보자를 위한 개발)를 참조하세요. Visual C#의 프로그래밍에 대한 자세한 내용은 [C# fundamentals: Development for absolute beginners](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners)(C# 기초: 완전 초보자를 위한 개발)를 참조하세요.
+어려운 점이 있거나 프로그래밍 관련 질문이 있는 경우 MSDN 포럼에 질문을 게시해 보십시오. [Visual Basic 포럼](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vbgeneral) 및 [Visual C# 포럼](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=csharpgeneral)을 참조하세요. 또한 훌륭한 비디오 학습 자료가 무료로 제공됩니다. Visual Basic의 프로그래밍에 대한 자세한 내용은 [Visual Basic 기초: 완전 초보자를 위한 개발](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners)을 참조하세요. Visual C#의 프로그래밍에 대한 자세한 내용은 [C# 기초: 완전 초보자를 위한 개발](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners)을 참조하세요.
 
 ## <a name="related-topics"></a>관련 항목
 
 |제목|설명|
 |-----------|-----------------|
-|[1단계: 프로젝트 만들기 및 폼에 테이블 추가](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)|먼저 프로젝트를 만들고 `TableLayoutPanel` 컨트롤을 추가하여 컨트롤을 올바르게 정렬된 상태로 유지합니다.|
+|[1단계: 프로젝트 만들기 및 양식에 테이블 추가](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)|먼저 프로젝트를 만들고 `TableLayoutPanel` 컨트롤을 추가하여 컨트롤을 올바르게 정렬된 상태로 유지합니다.|
 |[2단계: 임의의 개체 및 아이콘 목록 추가](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)|`Random` 및 `List` 개체를 추가하여 아이콘 목록을 만듭니다.|
 |[3단계: 각 레이블에 임의 아이콘 할당](../ide/step-3-assign-a-random-icon-to-each-label.md)|`Label` 컨트롤에 임의로 아이콘을 할당하여 매 게임마다 달라지도록 합니다.|
 |[4단계: 각 레이블에 클릭 이벤트 처리기 추가](../ide/step-4-add-a-click-event-handler-to-each-label.md)|클릭된 레이블의 색을 변경하는 `Click` 이벤트 처리기를 추가합니다.|

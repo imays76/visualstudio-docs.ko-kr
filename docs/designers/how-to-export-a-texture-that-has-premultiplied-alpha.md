@@ -2,7 +2,6 @@
 title: '방법: 미리 증가된 알파를 사용하는 질감 내보내기'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 05348afa-f079-4f53-a05b-ecd91d13adab
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c39d7ae466f48bed8bd6fe4c53662c0c8b3c801e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8a05235b2212e64baea3caf2d7dc3977c3e9d6dc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855523"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988007"
 ---
 # <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>방법: 미리 증가된 알파를 사용하는 질감 내보내기
 
@@ -40,7 +39,7 @@ ms.locfileid: "49855523"
 
 #### <a name="to-create-a-texture-that-uses-premultiplied-alpha"></a>미리 곱한 알파를 사용하는 질감을 만들려면
 
-1. 기본 질감으로 시작합니다. 기존 이미지 파일을 로드하거나 [방법: 기본 질감 만들기](../designers/how-to-create-a-basic-texture.md)에서 설명된 대로 질감을 만듭니다.
+1. 기본 질감으로 시작합니다. 기존 이미지 파일을 로드하거나 [방법: 기본 질감 만들기](../designers/how-to-create-a-basic-texture.md)에서 설명된 대로 새 질감을 만듭니다.
 
 2. 이미지 콘텐츠 파이프라인에서 처리되도록 질감 파일을 구성합니다. **솔루션 탐색기**에서 질감 파일의 바로 가기 메뉴를 열고 **속성**을 선택합니다. **구성 속성** > **일반** 페이지에서 **항목 종류** 속성을 **이미지 콘텐츠 파이프라인**으로 설정합니다. **콘텐츠** 속성이 **예**로 설정되고 **빌드에서 제외**가 **아니요**로 설정되어 있는지 확인하고 **적용** 단추를 선택합니다. **이미지 콘텐츠 파이프라인** 구성 속성 페이지가 표시됩니다.
 

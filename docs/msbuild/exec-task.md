@@ -1,8 +1,6 @@
 ---
 title: Exec 작업 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Exec
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bbefb90cad3b2aa3e6e7b0870548d44567ea8914
-ms.sourcegitcommit: 56f3c31f1a06f6a6d2a8793b1abfa60cdf482497
+ms.openlocfilehash: 6fd259f00fdb5af2e3125782bda28c17858eff80
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48817323"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959250"
 ---
 # <a name="exec-task"></a>Exec 작업
 지정된 인수를 사용하여 지정한 프로그램 또는 명령을 실행합니다.  
@@ -47,16 +45,16 @@ ms.locfileid: "48817323"
 |`Outputs`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 출력 매개 변수입니다.<br /><br /> 작업의 출력 항목을 포함합니다. `Exec` 작업은 자체적으로 이를 설정하지 않습니다. 대신 마치 설정된 것처럼 사용자가 제공하여 나중에 프로젝트에서 사용되도록 할 수 있습니다.|  
 |`StdErrEncoding`|선택적 `String` 출력 매개 변수입니다.<br /><br /> 캡처된 작업 표준 오류 스트림의 인코딩을 지정합니다. 기본값은 현재 콘솔 출력 인코딩입니다.|  
 |`StdOutEncoding`|선택적 `String` 출력 매개 변수입니다.<br /><br /> 캡처된 작업 표준 출력 스트림의 인코딩을 지정합니다. 기본값은 현재 콘솔 출력 인코딩입니다.|  
-|`WorkingDirectory`|선택적 `String` 매개 변수입니다.<br /><br /> 명령이 실행될 디렉터리를 지정합니다.<br /><br />기본값: 프로젝트의 현재 작업 디렉터리.|  
+|`WorkingDirectory`|선택적 `String` 매개 변수입니다.<br /><br /> 명령이 실행될 디렉터리를 지정합니다.<br /><br />기본값: 프로젝트의 현재 작업 디렉터리입니다.|  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  이 작업은 수행하려는 작업에 대한 특정 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 작업을 사용할 수 없을 때 유용합니다. 그러나 `Exec` 작업은 보다 구체적인 작업과 달리 실행하는 도구 또는 명령의 결과에 따라 추가 처리 또는 조건부 작업을 수행할 수 없습니다.
   
  `Exec` 작업은 프로세스를 직접 호출하지 않고 *cmd.exe*를 호출합니다.  
   
  이 작업은 이 문서에 나와 있는 매개 변수 외에도 <xref:Microsoft.Build.Utilities.ToolTask> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [ToolTaskExtension 기본 클래스](../msbuild/tooltaskextension-base-class.md)를 참조하세요.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 `Exec` 작업을 사용하여 명령을 실행합니다.  
   
 ```xml  

@@ -2,7 +2,6 @@
 title: 셰이더 디자이너 예제
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: f12f5dee-63ab-4376-9952-7f87f269e9c4
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 57df80d73beda1b792c0f066d986901b8e4f339b
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 3ef12409a1c0c90a94a7284f3d6d7576bb241b62
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978224"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959849"
 ---
 # <a name="shader-designer-examples"></a>셰이더 디자이너 예제
 

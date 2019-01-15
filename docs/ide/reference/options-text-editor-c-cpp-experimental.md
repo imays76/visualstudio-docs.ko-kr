@@ -10,15 +10,14 @@ author: mikeblome
 ms.author: mblome
 manager: wpickett
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3f5ddf5a42199c8097e982c6ddd8e559185787fb
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 13bcc65b3d8ffe4872c8b7d5f18b1bbf13bc67c5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672342"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893330"
 ---
 # <a name="options-text-editor-cc-experimental"></a>옵션, 텍스트 편집기, C/C++, 실험적
 
@@ -37,7 +36,7 @@ ms.locfileid: "50672342"
 
 ## <a name="enable-faster-project-load"></a>빠른 프로젝트 로드 사용
 
-**Visual Studio 2017 버전 15.3 이상**: 이 기능은 이제 **프로젝트 캐싱 사용**이라고 하며 [VC++ 프로젝트 설정](vcpp-project-settings-projects-and-solutions-options-dialog-box.md) 속성 페이지로 이동되었습니다.
+**Visual Studio 2017 버전 15.3 이상:** 이 기능은 이제 **프로젝트 캐싱 사용**이라고 하며 [VC++ 프로젝트 설정](vcpp-project-settings-projects-and-solutions-options-dialog-box.md) 속성 페이지로 이동되었습니다.
 이 옵션을 사용하면 다음에 프로젝트를 열 때 Visual Studio에서 프로젝트 데이터를 캐시할 수 있으며, 프로젝트 파일에서 다시 계산하지 않고 캐시한 데이터를 로드할 수 있습니다. 캐시한 데이터를 사용하면 프로젝트 로드 시간이 상당히 빨라집니다.
 
 ## <a name="additional-features-in-the-visual-studio-marketplace"></a>Visual Studio Marketplace의 추가 기능

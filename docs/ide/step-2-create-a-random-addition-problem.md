@@ -1,9 +1,7 @@
 ---
 title: '2단계: 난수 더하기 문제 만들기'
-ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 6461c4cf-f2aa-4bf5-91ed-06820a4f893d
 author: TerryGLee
@@ -11,12 +9,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: abd70e53c06da53f22bcac4c7f041aaef75bd412
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 64a0b17d47d0906df680ed51c25fe3386d9b6b68
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747869"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846115"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>2단계: 난수 더하기 문제 만들기
 이 자습서의 2단계에서는 난수 기반 수학 문제를 추가하여 퀴즈를 좀 더 어렵게 만듭니다. 문제를 채우고 카운트다운 타이머를 시작하는 `StartTheQuiz()`라는 메서드도 추가합니다. 이 자습서의 뒷부분에서는 빼기, 곱하기 및 나누기 문제를 추가합니다.
@@ -97,4 +95,4 @@ ms.locfileid: "34747869"
 
 -   다음 자습서 단계로 이동하려면 [3단계: 카운트다운 타이머 추가](../ide/step-3-add-a-countdown-timer.md)를 참조하세요.
 
--   이전 자습서 단계로 돌아가려면 [1단계: 프로젝트 만들기 및 폼에 레이블 추가](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)를 참조하세요.
+-   이전 자습서 단계로 돌아가려면 [1단계: 프로젝트 만들기 및 양식에 레이블 추가](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)를 참조하세요.

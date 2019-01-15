@@ -2,7 +2,6 @@
 title: '방법: 빌드 이벤트 지정(C#)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - pre-build events
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: aa82c7f12b3932c1e9f5aac7392d6ef2b8e8a773
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 59451b6745e75fe198b6e428619c5d70f50dd03c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885856"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964678"
 ---
 # <a name="how-to-specify-build-events-c"></a>방법: 빌드 이벤트 지정(C#)
 
@@ -61,9 +60,9 @@ ms.locfileid: "49885856"
     > [!NOTE]
     > 빌드 전 또는 빌드 후 이벤트가 성공적으로 완료되지 않으면 성공적인 작업을 나타내는 0(영) 이외의 코드로 이벤트 작업이 종료되도록 하여 빌드를 종료할 수 있습니다.
 
-## <a name="example-how-to-change-manifest-information-by-using-a-post-build-event"></a>예: 빌드 후 이벤트를 사용하여 매니페스트 정보를 변경하는 방법
+## <a name="example-how-to-change-manifest-information-by-using-a-post-build-event"></a>예제: 빌드 후 이벤트를 사용하여 매니페스트 정보를 변경하는 방법
 
-다음 절차에서는 빌드 후 이벤트에서 호출된 *.exe* 명령을 사용하여 응용 프로그램 매니페스트의 최소 운영 체제 버전을 설정하는 방법을 보여줍니다(프로젝트 디렉터리의 *.exe.manifest* 파일). 최소 운영 체제 버전은 네 부분으로 구성된 번호입니다(예: 4.10.0.0). 이를 위해 명령은 매니페스트의 `<dependentOS>` 섹션을 변경합니다.
+다음 절차에서는 빌드 후 이벤트에서 호출된 *.exe* 명령을 사용하여 애플리케이션 매니페스트의 최소 운영 체제 버전을 설정하는 방법을 보여줍니다(프로젝트 디렉터리의 *.exe.manifest* 파일). 최소 운영 체제 버전은 네 부분으로 구성된 번호입니다(예: 4.10.0.0). 이를 위해 명령은 매니페스트의 `<dependentOS>` 섹션을 변경합니다.
 
 ```xml
 <dependentOS>
@@ -73,11 +72,11 @@ ms.locfileid: "49885856"
 </dependentOS>
 ```
 
-### <a name="to-create-an-exe-command-to-change-the-application-manifest"></a>.exe 명령을 만들어 응용 프로그램 매니페스트를 변경하려면
+### <a name="to-create-an-exe-command-to-change-the-application-manifest"></a>.exe 명령을 만들어 애플리케이션 매니페스트를 변경하려면
 
-1. 명령에 대한 콘솔 응용 프로그램을 만듭니다. **파일** 메뉴에서 **새로 만들기**를 가리킨 다음 **프로젝트**를 클릭합니다.
+1. 명령에 대한 콘솔 애플리케이션을 만듭니다. **파일** 메뉴에서 **새로 만들기**를 가리킨 다음 **프로젝트**를 클릭합니다.
 
-2. **새 프로젝트** 대화 상자에서 **Visual C#** 을 확장하고, **창**을 클릭하고 나서, **콘솔 응용 프로그램** 템플릿을 클릭합니다. 프로젝트 이름을 `ChangeOSVersionCS`로 지정합니다.
+2. **새 프로젝트** 대화 상자에서 **Visual C#** 을 확장하고, **창**을 클릭하고 나서, **콘솔 애플리케이션** 템플릿을 클릭합니다. 프로젝트 이름을 `ChangeOSVersionCS`로 지정합니다.
 
 3. *Program.cs*에서 파일 맨 위의 다른 `using` 문에 다음 줄을 추가합니다.
 
@@ -137,17 +136,17 @@ ms.locfileid: "49885856"
    }
    ```
 
-    이 명령은 두 개의 인수인 응용 프로그램 매니페스트의 경로(매니페스트를 만드는 빌드 프로세스의 폴더, 일반적으로 *Projectname.publish*) 및 새 운영 체제 버전을 사용합니다.
+    이 명령은 두 개의 인수인 애플리케이션 매니페스트의 경로(매니페스트를 만드는 빌드 프로세스의 폴더, 일반적으로 *Projectname.publish*) 및 새 운영 체제 버전을 사용합니다.
 
 5. 프로젝트를 빌드합니다. **빌드** 메뉴에서 **솔루션 빌드**를 클릭합니다.
 
 6. *.exe* 파일을 *C:\TEMP\ChangeOSVersionVB.exe*와 같은 디렉터리에 복사합니다.
 
-   다음으로 빌드 후 이벤트에서 이 명령을 호출하여 응용 프로그램 매니페스트를 수정합니다.
+   다음으로 빌드 후 이벤트에서 이 명령을 호출하여 애플리케이션 매니페스트를 수정합니다.
 
-### <a name="to-invoke-a-post-build-event-to-modify-the-application-manifest"></a>빌드 후 이벤트를 호출하여 응용 프로그램 매니페스트를 수정하려면
+### <a name="to-invoke-a-post-build-event-to-modify-the-application-manifest"></a>빌드 후 이벤트를 호출하여 애플리케이션 매니페스트를 수정하려면
 
-1.  프로젝트를 게시할 Windows 응용 프로그램을 만듭니다. **파일** 메뉴에서 **새로 만들기**를 가리킨 다음 **프로젝트**를 클릭합니다.
+1.  프로젝트를 게시할 Windows 애플리케이션을 만듭니다. **파일** 메뉴에서 **새로 만들기**를 가리킨 다음 **프로젝트**를 클릭합니다.
 
 2.  **새 프로젝트** 대화 상자에서 **Visual C#** 을 확장하고, **Windows 바탕 화면**을 클릭하고 나서, **Windows Forms 앱** 템플릿을 클릭합니다. 프로젝트 이름을 `CSWinApp`로 지정합니다.
 
@@ -171,9 +170,9 @@ ms.locfileid: "49885856"
 
      `C:\TEMP\ChangeOSVersionCS.exe "$(TargetPath).manifest" 5.1.2600.0`
 
-     프로젝트를 빌드할 때 이 명령은 응용 프로그램 매니페스트의 최소 운영 체제 버전을 5.1.2600.0으로 변경합니다.
+     프로젝트를 빌드할 때 이 명령은 애플리케이션 매니페스트의 최소 운영 체제 버전을 5.1.2600.0으로 변경합니다.
 
-     `$(TargetPath)` 매크로는 생성되는 실행 파일의 전체 경로를 표현하므로 `$(TargetPath)`*.manifest*는 *bin* 디렉터리에서 생성되는 응용 프로그램 매니페스트를 지정합니다. 게시를 수행하면 이 매니페스트가 이전에 설정한 게시 위치에 복사됩니다.
+     `$(TargetPath)` 매크로는 생성되는 실행 파일의 전체 경로를 표현하므로 `$(TargetPath)`*.manifest*는 *bin* 디렉터리에서 생성되는 애플리케이션 매니페스트를 지정합니다. 게시를 수행하면 이 매니페스트가 이전에 설정한 게시 위치에 복사됩니다.
 
 8.  프로젝트를 다시 게시합니다. **게시** 페이지로 이동하고 **지금 게시**를 클릭합니다.
 

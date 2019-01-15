@@ -2,7 +2,6 @@
 title: '방법: 형식 간의 상속 만들기(클래스 디자이너)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.inheritanceline
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8151020294f4fd5574a1de886509c5b11f0a326
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: b94d89f6051b47f8500886348b335754abae9b72
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33956681"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925565"
 ---
 # <a name="how-to-create-inheritance-between-types-in-class-designer"></a>방법: 클래스 디자이너에서 형식 간의 상속 만들기
 
@@ -53,5 +52,5 @@ ms.locfileid: "33956681"
 
 - [상속](/dotnet/csharp/programming-guide/classes-and-structs/inheritance)
 - [상속 기본 사항](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)
-- [방법: 형식 간의 상속 보기](how-to-view-inheritance-between-types.md)
+- [방법: 형식 간에 상속 보기](how-to-view-inheritance-between-types.md)
 - [클래스 디자이너의 Visual C++ 클래스](visual-cpp-classes.md)

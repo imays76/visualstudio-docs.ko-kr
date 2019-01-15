@@ -2,7 +2,6 @@
 title: Live Unit Testing FAQ
 ms.date: 2017-10-03
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio ALM
@@ -11,12 +10,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2c0c81bc8413b9d1698e2ad7c21d0d9f397834ea
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e6e6cf314ed477ade4093f90737e2e1a9c949c8c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849075"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935595"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing 질문과 대답
 
@@ -97,7 +96,7 @@ Live Unit Testing은 다음 테이블에 나열된 세 가지 인기 있는 단�
 
 "일반적인" 계측되지 않은 빌드에 필요하지 않은 계측(Live Unit Testing)을 위해 빌드하는 사용자 지정 단계가 솔루션에 필요한 경우 프로젝트 또는 *.targets* 파일에 코드를 추가하여 `BuildingForLiveUnitTesting` 속성에 대해 확인하고 사용자 지정 사전/사후 빌드 단계를 수행할 수 있습니다. 또한 특정 빌드 단계(예: 패키지 게시 또는 생성)을 제거하거나 빌드 단계(예: 필수 구성 요소 복사)를 이 프로젝트 속성을 기반으로 하는 Live Unit Testing 빌드에 추가할 수 있습니다. 이 속성을 기반으로 빌드를 사용자 지정하면 일반적인 빌드를 변경하지 않고 Live Unit Testing 빌드에만 영향을 줍니다.
 
-예를 들어 일반적인 빌드 중에 NuGet 패키지를 생성하는 대상이 있을 수 있습니다. 아마도 편집을 모두 완료한 후에 NuGet 패키지를 생성하려고 하지는 않을 것입니다. 따라서 다음과 같은 작업을 실행하여 Live Unit Testing 빌드에서 해당 대상을 해제할 수 있습니다.  
+예를 들어 일반적인 빌드 중에 NuGet 패키지를 생성하는 대상이 있을 수 있습니다. 아마도 편집을 모두 완료한 후에 NuGet 패키지를 생성하려고 하지는 않을 것입니다. 따라서 다음과 같은 작업을 실행하여 Live Unit Testing 빌드에서 해당 대상을 해제할 수 있습니다.  
 
 ```xml
 <Target Name="GenerateNuGetPackages" BeforeTargets="AfterBuild" Condition="'$(BuildingForLiveUnitTesting)' != 'true'">
@@ -112,7 +111,7 @@ Live Unit Testing은 다음 테이블에 나열된 세 가지 인기 있는 단�
 
 예를 들어 다음과 같이 빌드가 `<OutputPath>`를 재정의하는 경우:
 
-```xml 
+```xml 
 <Project>
   <PropertyGroup>
     <OutputPath>$(SolutionDir)Artifacts\$(Configuration)\bin\$(MSBuildProjectName)</OutputPath>
@@ -122,7 +121,7 @@ Live Unit Testing은 다음 테이블에 나열된 세 가지 인기 있는 단�
 
 그러면 다음 XML로 바꿀 수 있습니다.
 
-```xml 
+```xml 
 <Project>
   <PropertyGroup>
     <BaseOutputPath Condition="'$(BaseOutputPath)' == ''">$(SolutionDir)Artifacts\$(Configuration)\bin\$(MSBuildProjectName)\</BaseOutputPath>
@@ -138,16 +137,16 @@ Live Unit Testing은 다음 테이블에 나열된 세 가지 인기 있는 단�
 ## <a name="set-the-location-of-build-artifacts"></a>빌드 아티팩트의 위치 설정
 **Live Unit Testing 빌드 아티팩트를 원하는 *.vs* 폴더의 기본 위치 대신 특정 위치로 이동하려고 합니다. 어떻게 변경할 수 있나요?**
 
-`LiveUnitTesting_BuildRoot` 사용자 수준 환경 변수를 Live Unit Testing 빌드 아티팩트를 배치하려는 경로로 설정합니다. 
+`LiveUnitTesting_BuildRoot` 사용자 수준 환경 변수를 Live Unit Testing 빌드 아티팩트를 배치하려는 경로로 설정합니다. 
 
 ## <a name="test-explorer-vs-live-unit-testing-test-runs"></a>테스트 탐색기 및 Live Unit Testing 테스트 실행 
 **테스트 탐색기 창에서 테스트를 실행하는 것과 Live Unit Testing에서 테스트를 실행하는 것은 어떻게 다른가요?**
 
 다음과 같은 몇 가지 차이점이 있습니다.
 
-- **테스트 탐색기** 창에서 테스트를 실행 또는 디버깅하면 일반 이진 파일을 실행합니다. 반면 Live Unit Testing은 계측된 이진 파일을 실행합니다. 계측된 이진 파일을 디버그하려는 경우 테스트 메서드에서 [Debugger.Launch](xref:System.Diagnostics.Debugger.Launch) 메서드 호출을 추가하면 해당 메서드가 실행될 때(Live Unit Testing에서 실행하는 경우 포함)마다 디버거가 시작되고 계측된 이진 파일을 연결하고 디버그할 수 있습니다. 그러나 계측이 대부분의 사용자 시나리오에 대해 투명하고 계측된 이진 파일을 디버그할 필요가 없는 것이 좋습니다.
+- **테스트 탐색기** 창에서 테스트를 실행 또는 디버깅하면 일반 이진 파일을 실행합니다. 반면 Live Unit Testing은 계측된 이진 파일을 실행합니다. 계측된 이진 파일을 디버그하려는 경우 테스트 메서드에서 [Debugger.Launch](xref:System.Diagnostics.Debugger.Launch)  메서드 호출을 추가하면 해당 메서드가 실행될 때(Live Unit Testing에서 실행하는 경우 포함)마다 디버거가 시작되고 계측된 이진 파일을 연결하고 디버그할 수 있습니다. 그러나 계측이 대부분의 사용자 시나리오에 대해 투명하고 계측된 이진 파일을 디버그할 필요가 없는 것이 좋습니다.
 
-- Live Unit Testing은 테스트를 실행하기 위해 새 응용 프로그램 도메인을 만들지 않지만 **테스트 탐색기** 창에서 실행되는 테스트는 새 응용 프로그램 도메인을 만듭니다.
+- Live Unit Testing은 테스트를 실행하기 위해 새 애플리케이션 도메인을 만들지 않지만 **테스트 탐색기** 창에서 실행되는 테스트는 새 애플리케이션 도메인을 만듭니다.
 
 - Live Unit Testing은 각 테스트 어셈블리에서 순차적으로 테스트를 실행하는 반면 **테스트 탐색기** 창에서 여러 테스트를 실행하고 **동시에 테스트 실행** 단추를 선택한 경우 테스트가 동시에 실행됩니다.
 
@@ -162,7 +161,7 @@ Live Unit Testing은 다음 테이블에 나열된 세 가지 인기 있는 단�
  
 솔루션 지정 설정은 Live Unit Testing에서 계측한 메서드, 속성, 클래스 또는 구조를 제외하여 프로그래밍 방식으로 <xref:System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute?displayProperty=fullName> 특성을 적용할 수 있습니다. 또한 프로젝트 파일에서 `<ExcludeFromCodeCoverage>` 속성을 `true`로 설정하여 전체 프로젝트를 계측하지 않도록 제외할 수도 있습니다. Live Unit Testing은 계측되지 않는 테스트를 실행하지만 해당 검사를 시각화할 수는 없습니다.
 
-`Microsoft.CodeAnalysis.LiveUnitTesting.Runtime`이 현재 응용 프로그램 도메인에 로드되고 원인에 따라 테스트를 사용하지 않도록 설정하는지 여부를 확인할 수도 있습니다. 예를 들어 xUnit을 사용하여 다음과 같은 작업이 가능합니다.
+`Microsoft.CodeAnalysis.LiveUnitTesting.Runtime`이 현재 애플리케이션 도메인에 로드되고 원인에 따라 테스트를 사용하지 않도록 설정하는지 여부를 확인할 수도 있습니다. 예를 들어 xUnit을 사용하여 다음과 같은 작업이 가능합니다.
 
 ```csharp
 [ExcludeFromCodeCoverage]
@@ -203,7 +202,7 @@ public class Class1
 
 솔루션의 빌드 프로세스가 솔루션 자체의 일부인 소스 코드를 생성하고 빌드 대상 파일에 적절한 입력 및 출력이 지정되지 않은 경우 편집하지 않더라도 솔루션을 빌드할 수 있습니다. 대상에는 입력 및 출력의 목록이 지정되었으므로 MSBuild는 적절한 최신 검사를 수행하고 새 빌드가 필요한지 여부를 확인할 수 있습니다.
 
-Live Unit Testing은 원본 파일이 변경되었음을 감지할 때마다 빌드하기 시작합니다. 솔루션의 빌드가 원본 파일을 생성하기 때문에 Live Unit Testing은 빌드 무한 루프로 진행됩니다. 그러나 (이전 빌드에서 새로 생성된 원본 파일을 감지한 후에) Live Unit Testing에서 두 번째 빌드를 시작하는 시기를 대상의 입력 및 출력이 확인하면 입력 및 출력 검사는 모든 항목이 최신 상태라고 표시하기 때문에 빌드 루프를 중단시킵니다.  
+Live Unit Testing은 원본 파일이 변경되었음을 감지할 때마다 빌드하기 시작합니다. 솔루션의 빌드가 원본 파일을 생성하기 때문에 Live Unit Testing은 빌드 무한 루프로 진행됩니다. 그러나 (이전 빌드에서 새로 생성된 원본 파일을 감지한 후에) Live Unit Testing에서 두 번째 빌드를 시작하는 시기를 대상의 입력 및 출력이 확인하면 입력 및 출력 검사는 모든 항목이 최신 상태라고 표시하기 때문에 빌드 루프를 중단시킵니다.  
 
 ## <a name="lightweight-solution-load"></a>경량 솔루션 로드
 **Live Unit Testing은 경량 솔루션 로드 기능과 어떻게 호환되나요?**
@@ -223,12 +222,12 @@ Live Unit Testing은 현재 경량 솔루션 로드 기능에서 제대로 작�
 
 이 문제는 해결되었으며 Visual Studio 2017 버전 15.3에 없습니다. 이 버전의 Visual Studio로 업그레이드하세요.
 
-이것은 Visual Studio 2017의 이전 버전에서 알려진 문제입니다. 이 문제를 해결하기 위해 테스트를 포함하거나 제외한 후에 모든 파일을 편집해야 합니다. 
+이것은 Visual Studio 2017의 이전 버전에서 알려진 문제입니다. 이 문제를 해결하기 위해 테스트를 포함하거나 제외한 후에 모든 파일을 편집해야 합니다. 
 
 ## <a name="editor-icons"></a>편집기 아이콘
 **Live Unit Testing이 출력 창의 메시지를 기반으로 한 테스트를 실행하는 것처럼 보이는데 편집기에서 아이콘을 확인할 수 없는 이유는 무엇인가요?**
 
-Live Unit Testing이 작동하는 어셈블리가 어떤 이유로든 계측되지 않는 경우 편집기에서 아이콘이 표시되지 않습니다. 예를 들어 Live Unit Testing은 `<UseHostCompilerIfAvailable>false</UseHostCompilerIfAvailable>`로 설정된 프로젝트와 호환되지 않습니다. 이 경우에 Live Unit Testing이 작동하기 위해 이 설정을 제거하거나 `true`로 변경하도록 빌드 프로세스를 업데이트해야 합니다. 
+Live Unit Testing이 작동하는 어셈블리가 어떤 이유로든 계측되지 않는 경우 편집기에서 아이콘이 표시되지 않습니다. 예를 들어 Live Unit Testing은 `<UseHostCompilerIfAvailable>false</UseHostCompilerIfAvailable>`로 설정된 프로젝트와 호환되지 않습니다. 이 경우에 Live Unit Testing이 작동하기 위해 이 설정을 제거하거나 `true`로 변경하도록 빌드 프로세스를 업데이트해야 합니다. 
 
 ## <a name="capture-logs"></a>캡처 로그
 **파일 버그 보고서에 대한 자세한 로그를 수집하려면 어떻게 할까요?**

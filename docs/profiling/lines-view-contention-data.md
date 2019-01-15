@@ -1,8 +1,6 @@
 ---
 title: 줄 뷰 - 경합 데이터 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Lines view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c05f928d7c5c6f35226985147b6a4545e2a2937
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c0afb540a314d1e980e9b0a6ccace0b36145cce6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890051"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905428"
 ---
 # <a name="lines-view---contention-data"></a>줄 뷰 - 경합 데이터
 경합 데이터의 줄 뷰에는 프로파일링 실행 시 샘플이 수집될 때 실행되고 있던 문에 대한 성능 데이터가 나열됩니다. 소스 파일에서는 하나의 문이 소스 파일의 여러 줄에 걸쳐 있거나 한 줄에 여러 문이 포함될 수 있습니다.  
@@ -65,7 +63,7 @@ ms.locfileid: "49890051"
 |**소스 줄 끝**|문이 끝나는 소스 파일의 줄 번호입니다.|  
   
 ## <a name="see-also"></a>참고 항목  
- [방법: 보고서 뷰 열 사용자 지정](../profiling/how-to-customize-report-view-columns.md)   
+ [방법: 보고서 보기 열 사용자 지정](../profiling/how-to-customize-report-view-columns.md)   
  [줄 뷰](../profiling/lines-view.md)   
  [줄 뷰 - 샘플링](../profiling/lines-view-dotnet-memory-sampling-data.md)   
  [줄 뷰](../profiling/lines-view-sampling-data.md)

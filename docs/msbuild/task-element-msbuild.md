@@ -1,8 +1,6 @@
 ---
 title: Task 요소(MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 03/13/2017
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 512675f0752f675bd393f324220eece87301af8a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e9cf8ce8a55c0f83731b7eaeb510b32061379036
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914829"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831276"
 ---
 # <a name="task-element-msbuild"></a>Task 요소(MSBuild)
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 작업의 인스턴스를 만들고 실행합니다. 생성된 작업 이름에 따라 요소 이름이 결정됩니다.  
@@ -64,12 +62,12 @@ ms.locfileid: "49914829"
 | - | - |
 | [Target](../msbuild/target-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 작업의 컨테이너 요소입니다. |
 
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일의 `Task` 요소는 작업의 인스턴스를 생성하며 작업에 대한 속성을 설정하고 작업을 실행합니다. `Output` 요소는 프로젝트 파일의 다른 곳에서 사용될 속성이나 항목에 출력 매개 변수를 저장합니다.  
 
  작업의 상위 `Target` 요소에 [OnError](../msbuild/onerror-element-msbuild.md) 요소가 있는 경우 작업이 실패하고 `ContinueOnError`에 `false` 값이 있으면 계속 평가됩니다. 작업에 대한 자세한 내용은 [작업](../msbuild/msbuild-tasks.md)을 참조하세요.  
 
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드 예제에서는 [Csc task](../msbuild/csc-task.md) 클래스의 인스턴스를 만들고 6개의 속성을 설정하며 작업을 실행합니다. 실행한 후에는 개체의 `OutputAssembly` 속성 값이 `FinalAssemblyName`이라는 항목 목록에 배치됩니다.  
 
 ```xml  
