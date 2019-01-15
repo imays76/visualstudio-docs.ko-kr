@@ -69,7 +69,7 @@ VSIX 배포를 사용 하 여 또는 대상 컴퓨터의 올바른 위치에 파
     <AllUsers>true</AllUsers>
     ```
 
-     이렇게 하면 관리자 권한을 묻는 메시지를 선택한 후 다음 파일을 vsix 설치 관리자 *\Common7\IDE\Extensions*합니다.
+     이렇게 하면 관리자 권한을 묻는 메시지를 선택한 후 다음 파일을 vsix 설치 관리자 *\Common7\IDE\Extensions* 합니다.
 
 3.  엽니다는 *.pkgdef* 파일입니다.
 
@@ -90,7 +90,7 @@ VSIX 배포를 사용 하 여 또는 대상 컴퓨터의 올바른 위치에 파
 
 1.  복사 합니다 *.xaml* 어셈블리 이외의 지원 파일과 함께 시작 페이지 태그를 포함 하는 사용자의 붙여넣을 파일 * \StartPages\* 폴더입니다.
 
-2.  시작 페이지를 어셈블리에 필요한 경우 복사 하 고 붙여넣습니다 *... \\{Visual Studio 설치 폴더} \Common7\IDE\PrivateAssemblies\\*합니다.
+2.  시작 페이지를 어셈블리에 필요한 경우 복사 하 고 붙여넣습니다 *... \\{Visual Studio 설치 폴더} \Common7\IDE\PrivateAssemblies\\* 합니다.
 
 3.  에 **시작 페이지 사용자 지정** 목록에서 합니다 **시작** 옵션 페이지에서 새 시작 페이지를 선택 합니다. 자세한 내용은 [시작 페이지 사용자 지정](../ide/customizing-the-start-page-for-visual-studio.md)합니다.
 
