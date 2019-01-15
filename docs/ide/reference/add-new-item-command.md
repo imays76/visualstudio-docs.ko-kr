@@ -2,7 +2,6 @@
 title: 새 항목 추가 명령
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - project.addnewitem
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8084cdebf4cba1bf3bb79ac1fbf386837b977d97
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 8c094e30c9491783733e49901fb297c36c1e94f9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33705049"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952474"
 ---
 # <a name="add-new-item-command"></a>새 항목 추가 명령
 현재 솔루션에 .htm, .css, .txt 또는 프레임셋 같은 새 솔루션 항목을 추가하고 엽니다.
@@ -55,7 +54,7 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 /e:"Source Code (text) Editor"
 ```
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  이 예제에서는 새 솔루션 항목인 MyHTMLpg를 현재 솔루션에 추가합니다.
 
 ```cmd
@@ -67,4 +66,4 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 - [Visual Studio 명령](../../ide/reference/visual-studio-commands.md)
 - [명령 창](../../ide/reference/command-window.md)
 - [찾기/명령 상자](../../ide/find-command-box.md)
-- [Visual Studio 명령 별칭](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

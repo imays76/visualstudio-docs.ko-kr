@@ -1,9 +1,7 @@
 ---
-title: '1단계: 프로젝트 만들기 및 폼에 테이블 추가'
-ms.custom: ''
+title: '1단계: 프로젝트 만들기 및 양식에 테이블 추가'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 1cac4ba4-f3cd-43bd-ad5d-50fc599234e8
 author: TerryGLee
@@ -11,14 +9,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f83ce585120131d63c07e6db2ed6b90f32cc0876
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: da8d951c7bbb96d1c955d9254756ea80925d4969
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857610"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882778"
 ---
-# <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>1단계: 프로젝트 만들기 및 폼에 테이블 추가
+# <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>1단계: 프로젝트 만들기 및 양식에 테이블 추가
 
 일치 게임을 만들 때 첫 번째 단계에서는 프로젝트를 만들고 폼에 테이블을 추가합니다. 테이블을 사용하면 4x4 모눈에 순서대로 아이콘을 정렬할 수 있습니다. 또한 게임 보드의 모양을 개선하는 몇 가지 속성을 설정할 수 있습니다.
 
@@ -28,7 +26,7 @@ ms.locfileid: "49857610"
 
 2. Visual Studio Express를 사용하고 있지 않으면 먼저 프로그래밍 언어를 선택해야 합니다. **설치된 템플릿** 목록에서 **Visual C#** 또는 **Visual Basic**을 선택합니다.
 
-3. 프로젝트 템플릿 목록에서 **Windows Forms 응용 프로그램**을 선택하고 프로젝트 이름으로 **MatchingGame**을 지정한 다음 **확인** 단추를 선택합니다.
+3. 프로젝트 템플릿 목록에서 **Windows Forms 애플리케이션**을 선택하고 프로젝트 이름으로 **MatchingGame**을 지정한 다음 **확인** 단추를 선택합니다.
 
 4. **속성** 창에서 다음 폼 속성을 설정합니다.
 
@@ -93,4 +91,4 @@ ms.locfileid: "49857610"
 
 -   다음 자습서 단계로 이동하려면 [2단계: 임의의 개체 및 아이콘 목록 추가](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)를 참조하세요.
 
--   개요 항목으로 돌아가려면 [자습서 3: 일치 게임 만들기](../ide/tutorial-3-create-a-matching-game.md)를 참조하세요.
+-   개요 항목으로 돌아가려면 [자습서 3: 맞추기 게임 만들기](../ide/tutorial-3-create-a-matching-game.md)를 참조하세요.

@@ -1,8 +1,6 @@
 ---
 title: MSBuild 속성 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, properties
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c8835dab5ca866762a7d2b0e6cad1d0d80726b0
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: f5743e9532a50089317f0c28917927f514eb4709
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879201"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987040"
 ---
 # <a name="msbuild-properties"></a>MSBuild 속성
 빌드를 구성하는 데 사용될 수 있는 이름/값 쌍인 속성은 작업에 값을 전달하고, 조건을 평가하고, 프로젝트 파일 전체에서 참조할 값을 저장하는 데 유용합니다.  
@@ -94,7 +92,7 @@ msbuild.exe MyProj.proj -p:Configuration=DEBUG
   
  MSBuild 작업의 `Properties` 특성을 사용하여 다중 프로젝트 빌드의 자식 프로젝트에 대해 전역 속성을 설정하거나 수정할 수도 있습니다. MSBuild 작업의 `RemoveProperties` 특성을 사용하여 전달하지 않을 속성 목록을 지정하지 않을 경우 전역 속성도 자식 프로젝트로 전달됩니다. 자세한 내용은 [MSBuild 작업](../msbuild/msbuild-task.md)을 참조하세요.
   
- 프로젝트 태그에 `TreatAsLocalProperty` 특성을 사용하여 속성을 지정할 경우, 해당 전역 속성 값은 프로젝트 파일에 설정된 속성 값을 재정의하지 않습니다. 자세한 내용은 [Project 요소(MSBuild)](../msbuild/project-element-msbuild.md) 및 [방법: 동일한 원본 파일을 다른 옵션을 사용하여 빌드](../msbuild/how-to-build-the-same-source-files-with-different-options.md)를 참조하세요.  
+ 프로젝트 태그에 `TreatAsLocalProperty` 특성을 사용하여 속성을 지정할 경우, 해당 전역 속성 값은 프로젝트 파일에 설정된 속성 값을 재정의하지 않습니다. 자세한 내용은 [프로젝트 요소(MSBuild)](../msbuild/project-element-msbuild.md) 및 [방법: 동일한 소스 파일을 다른 옵션을 사용하여 빌드](../msbuild/how-to-build-the-same-source-files-with-different-options.md)를 참조하세요.  
   
 ## <a name="property-functions"></a>속성 함수  
  .NET Framework 버전 4부터는 속성 함수를 사용하여 MSBuild 스크립트를 평가할 수 있습니다. MSBuild 작업을 사용하지 않고도 시스템 시간을 읽고 문자열을 비교하며 정규식을 일치시키고 빌드 스크립트 내에서 여러 가지 다른 작업을 수행할 수 있습니다.  

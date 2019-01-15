@@ -2,23 +2,22 @@
 title: 코딩된 UI 테스트에 다른 웹 브라우저 사용
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f7301ef674e3ad3b940204be30bfffa878f88e45
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 77af6795e8c00a9226c54ee8d9c0de09c9154065
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895108"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986143"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>코딩된 UI 테스트에 다른 웹 브라우저 사용
 
-코딩된 UI 테스트는 Internet Explorer로 테스트를 기록하여 웹 응용 프로그램 테스트를 자동화합니다. 그런 다음 이러한 웹 응용 프로그램에 대해 Internet Explorer 또는 기타 브라우저를 사용하여 테스트를 사용자 지정하고 재생할 수 있습니다.
+코딩된 UI 테스트는 Internet Explorer로 테스트를 기록하여 웹 애플리케이션 테스트를 자동화합니다. 그런 다음 이러한 웹 애플리케이션에 대해 Internet Explorer 또는 기타 브라우저를 사용하여 테스트를 사용자 지정하고 재생할 수 있습니다.
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
@@ -36,11 +35,11 @@ ms.locfileid: "52895108"
 
 ## <a name="why-should-i-use-coded-ui-tests-across-multiple-web-browser-types"></a>여러 웹 브라우저 형식에 코딩된 UI 테스트를 사용해야 하는 이유는 무엇입니까?
 
-다양한 웹 브라우저 종류로 웹 응용 프로그램을 테스트하면 다양한 브라우저를 실행하는 사용자의 UI 환경을 더 잘 에뮬레이션할 수 있습니다. 예를 들어, 응용 프로그램에 다른 웹 브라우저와 호환되지 않는 Internet Explorer의 컨트롤 또는 코드를 포함할 수 있습니다. 다른 브라우저에서 코딩된 UI 테스트를 실행하면 고객에게 영향을 미치기 전에 문제를 발견하고 수정할 수 있습니다.
+다양한 웹 브라우저 종류로 웹 애플리케이션을 테스트하면 다양한 브라우저를 실행하는 사용자의 UI 환경을 더 잘 에뮬레이션할 수 있습니다. 예를 들어, 애플리케이션에 다른 웹 브라우저와 호환되지 않는 Internet Explorer의 컨트롤 또는 코드를 포함할 수 있습니다. 다른 브라우저에서 코딩된 UI 테스트를 실행하면 고객에게 영향을 미치기 전에 문제를 발견하고 수정할 수 있습니다.
 
-## <a name="how-do-i-record-and-play-back-coded-ui-tests-on-web-applications-using-the-supported-web-browsers"></a>지원되는 웹 브라우저를 사용하여 웹 응용 프로그램에서 코딩된 UI 테스트를 기록 및 재생하는 방법
+## <a name="how-do-i-record-and-play-back-coded-ui-tests-on-web-applications-using-the-supported-web-browsers"></a>지원되는 웹 브라우저를 사용하여 웹 애플리케이션에서 코딩된 UI 테스트를 기록 및 재생하는 방법
 
-**기록:** Internet Explorer를 사용하여 웹 응용 프로그램 테스트를 기록하려면 코딩된 UI 테스트 빌더를 사용해야 합니다. 코딩된 UI 테스트와 같은 방식으로, 미리 정의된 집합을 사용하여 테스트된 컨트롤에 대해 유효성 검사 및 사용자 지정 코드를 추가할 수 있습니다(선택 사항). 자세한 내용은 [UI 자동화를 사용하여 코드 테스트](../test/use-ui-automation-to-test-your-code.md)를 참조하세요.
+**기록:** Internet Explorer를 사용하여 웹 애플리케이션 테스트를 기록하려면 코딩된 UI 테스트 빌더를 사용해야 합니다. 코딩된 UI 테스트와 같은 방식으로, 미리 정의된 집합을 사용하여 테스트된 컨트롤에 대해 유효성 검사 및 사용자 지정 코드를 추가할 수 있습니다(선택 사항). 자세한 내용은 [UI 자동화를 사용하여 코드 테스트](../test/use-ui-automation-to-test-your-code.md)를 참조하세요.
 
 > [!NOTE]
 > Google Chrome 또는 Mozilla Firefox 브라우저로는 코딩된 UI 테스트를 기록할 수 없습니다.
@@ -66,7 +65,7 @@ ms.locfileid: "52895108"
 
 ### <a name="enable-debugging"></a>디버깅 사용
 
-웹 응용 프로그램을 디버깅하려면 다음 구성 옵션을 완료해야 합니다.
+웹 애플리케이션을 디버깅하려면 다음 구성 옵션을 완료해야 합니다.
 
 1.  내 코드만 사용:
 

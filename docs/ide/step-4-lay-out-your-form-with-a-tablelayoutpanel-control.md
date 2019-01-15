@@ -1,9 +1,7 @@
 ---
-title: '4단계: TableLayoutPanel 컨트롤을 사용하여 폼 레이아웃'
-ms.custom: ''
+title: '4단계: TableLayoutPanel 컨트롤을 사용하여 양식 레이아웃'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 61acde79-e115-4bad-bb06-1fbe37717a3e
 author: TerryGLee
@@ -11,17 +9,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 164b0974d751dcfd164efab765432c1f9c23458c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5f60d39cb14bfb471e677a8c231091e97d3016a6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748298"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821351"
 ---
-# <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>4단계: TableLayoutPanel 컨트롤을 사용하여 폼 레이아웃
+# <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>4단계: TableLayoutPanel 컨트롤을 사용하여 양식 레이아웃
 이 단계에서는 폼에 <xref:System.Windows.Forms.TableLayoutPanel> 컨트롤을 추가합니다. TableLayoutPanel을 사용하여 나중에 추가하는 폼에서 컨트롤을 적절히 맞출 수 있습니다.
 
- ![비디오 링크](../data-tools/media/playvideo.gif)이 항목의 비디오 버전의 경우, [Tutorial 1: Create a picture viewer in Visual Basic - Video 2](http://go.microsoft.com/fwlink/?LinkId=205211)(자습서 1: Visual Basic에서 사진 뷰어 만들기 - 비디오 2) 또는 [Tutorial 1: Create a picture viewer in C# - Video 2](http://go.microsoft.com/fwlink/?LinkId=205200)(자습서 1: C#에서 사진 뷰어 만들기 - 비디오 2)를 참조하세요. 이러한 비디오에서는 이전 버전의 Visual Studio를 사용하므로 일부 메뉴 명령과 기타 사용자 인터페이스 요소가 약간 다를 수 있습니다. 그러나 개념 및 절차는 Visual Studio의 현재 버전에서 비슷하게 작동합니다.
+ ![비디오 링크](../data-tools/media/playvideo.gif) 이 항목의 비디오 버전은 [자습서 1: Visual Basic에서 사진 뷰어 만들기 - 비디오2](http://go.microsoft.com/fwlink/?LinkId=205211) 또는 [자습서 1: C#에서 사진 뷰어 만들기 - 자습서 2](http://go.microsoft.com/fwlink/?LinkId=205200)를 참조하세요. 이러한 비디오에서는 이전 버전의 Visual Studio를 사용하므로 일부 메뉴 명령과 기타 사용자 인터페이스 요소가 약간 다를 수 있습니다. 그러나 개념 및 절차는 Visual Studio의 현재 버전에서 비슷하게 작동합니다.
 
 ## <a name="to-lay-out-your-form-with-a-tablelayoutpanel-control"></a>TableLayoutPanel 컨트롤을 사용하여 폼을 레이아웃하려면
 
@@ -62,7 +60,7 @@ ms.locfileid: "34748298"
 7.  TableLayoutPanel **Dock** 속성을 **Fill**로 설정합니다. 그러면 패널이 전체 폼으로 채워집니다. 폼의 크기를 다시 조정하면 TableLayoutPanel은 도킹된 상태를 유지한 채 폼의 크기에 맞게 자동으로 크기가 조정됩니다.
 
     > [!NOTE]
-    >  TableLayoutPanel은 열과 행이 있고 개별 셀이 여러 열과 행에 걸쳐 있을 수 있다는 점에서 Microsoft Office Word의 표와 비슷합니다. 각 셀에는 단추, 확인란, 레이블 등과 같은 컨트롤이 하나만 있을 수 있습니다. TableLayoutPanel에는 전체 위쪽 행에 걸쳐 있는 하나의 <xref:System.Windows.Forms.PictureBox> 컨트롤, 왼쪽 아래 셀에 있는 하나의 <xref:System.Windows.Forms.CheckBox> 컨트롤 및 오른쪽 아래 셀에 있는 네 개의 <xref:System.Windows.Forms.Button> 컨트롤이 포함되어 있습니다.
+    >  TableLayoutPanel은 Microsoft Office Word의 테이블처럼 작동합니다. 행과 열이 포함되고, 개별 셀은 여러 행 및 열에 걸쳐 있을 수 있습니다. 각 셀에는 단추, 확인란, 레이블 등과 같은 컨트롤이 하나만 있을 수 있습니다. TableLayoutPanel에는 전체 위쪽 행에 걸쳐 있는 하나의 <xref:System.Windows.Forms.PictureBox> 컨트롤, 왼쪽 아래 셀에 있는 하나의 <xref:System.Windows.Forms.CheckBox> 컨트롤 및 오른쪽 아래 셀에 있는 네 개의 <xref:System.Windows.Forms.Button> 컨트롤이 포함되어 있습니다.
 
 8.  현재 TableLayoutPanel에는 크기가 같은 행과 열이 각각 두 개씩 있는데, 위쪽 행과 오른쪽 열의 크기를 훨씬 더 크게 만들어야 합니다. **Windows Forms 디자이너**에서 TableLayoutPanel을 선택합니다. 오른쪽 위 모퉁이에 다음과 같은 작은 검정색 삼각형 단추가 있습니다.
 
@@ -90,6 +88,6 @@ ms.locfileid: "34748298"
 
 ## <a name="to-continue-or-review"></a>계속하거나 검토하려면
 
--   다음 자습서 단계로 이동하려면 [5단계: 폼에 컨트롤 추가](../ide/step-5-add-controls-to-your-form.md)를 참조하세요.
+-   다음 자습서 단계로 이동하려면 [5단계: 양식에 컨트롤 추가](../ide/step-5-add-controls-to-your-form.md)를 참조하세요.
 
 -   이전 자습서 단계로 돌아가려면 [3단계: 폼 속성 설정](../ide/step-3-set-your-form-properties.md)을 참조하세요.

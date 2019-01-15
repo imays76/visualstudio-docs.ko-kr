@@ -1,8 +1,6 @@
 ---
 title: 표시 뷰 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.marks
@@ -15,15 +13,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 93dbaf0d8c3d1f3542683a05b175c43c0c43b948
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: e162e234a5f0596073df12f7791cdb3e3126cf9c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220718"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873885"
 ---
 # <a name="marks-view"></a>표시 뷰
-표시 뷰에는 응용 프로그램에 삽입된 샘플링 및 ETW 이벤트가 표시됩니다.  
+표시 뷰에는 애플리케이션에 삽입된 샘플링 및 ETW 이벤트가 표시됩니다.  
   
  보고서에 미리 채워지는 기본 표시는 프로그램의 시작과 프로그램의 끝을 레이블로 지정합니다.  
   

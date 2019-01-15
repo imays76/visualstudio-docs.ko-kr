@@ -2,7 +2,6 @@
 title: 게임 또는 앱에서 3D 자산 사용
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - VC.Project.ImageContentTask.ContentOutput
@@ -17,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b41416ea923e8f14aa39bf1607ad7c349e0b149c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d346982d682305f3c80531bd4386fbefda536a9f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880680"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986767"
 ---
 # <a name="use-3d-assets-in-your-game-or-app"></a>게임 또는 앱에서 3D 자산 사용
 
@@ -95,7 +94,7 @@ Visual Studio에서 도구를 사용하여 3D 자산을 만들면 그 다음 단
 |**압축**|출력 파일에 사용할 압축 형식을 지정합니다.<br /><br /> 사용 가능한 옵션은 다음과 같습니다.<br /><br /> -   **압축 안 함**<br />-   **BC1_UNORM 압축**<br />-   **BC1_UNORM_SRGB 압축**<br />-   **BC2_UNORM 압축**<br />-   **BC2_UNORM_SRGB 압축**<br />-   **BC3_UNORM 압축**<br />-   **BC3_UNORM_SRGB 압축**<br />-   **BC4_UNORM 압축**<br />-   **BC4_SNORM 압축**<br />-   **BC5_UNORM 압축**<br />-   **BC5_SNORM 압축**<br />-   **BC6H_UF16 압축**<br />-   **BC6H_SF16 압축**<br />-   **BC7_UNORM 압축**<br />-   **BC7_UNORM_SRGB 압축**<br /><br /> 다른 버전의 DirectX에서 지원되는 압축 형식에 대한 자세한 내용은 [DXGI 프로그래밍 가이드](http://go.microsoft.com/fwlink/p/?LinkId=246265)를 참조하세요.|
 |미리 곱한 알파 형식으로 변환|이미지를 출력 파일에서 미리 곱한 알파 형식으로 변환하려면 **예**를 선택하고, 그렇지 않으면 **아니요**를 선택합니다. 출력 파일만 변경되고 원본 이미지는 그대로 남습니다.|
 |**MIP 생성**|빌드 시간에 전체 MIP 체인을 생성한 다음 출력 파일에 포함하려면 **예**를 선택하고, 그렇지 않으면 **아니요**를 선택합니다. **아니요**이고 이미 원본 파일에 MIP 맵 체인이 포함되어 있는 경우 출력 파일에 MIP 체인이 있게 됩니다. 그렇지 않으면 출력 파일에 MIP 체인이 없습니다.|
-|**콘텐츠 출력**|출력 파일의 이름을 지정합니다. **중요:** 출력 파일의 확장명을 변경하더라도 파일 형식에는 아무런 영향을 주지 않습니다.|
+|**콘텐츠 출력**|출력 파일의 이름을 지정합니다. **중요:**  출력 파일의 확장명을 변경하더라도 파일 형식에는 아무런 영향을 미치지 않습니다.|
 
 ### <a name="mesh-content-pipeline-configuration"></a>메시 콘텐츠 파이프라인 구성
 
@@ -103,7 +102,7 @@ Visual Studio에서 도구를 사용하여 3D 자산을 만들면 그 다음 단
 
 |속성|설명|
 |--------------|-----------------|
-|**콘텐츠 출력**|출력 파일의 이름을 지정합니다. **중요:** 출력 파일의 확장명을 변경하더라도 파일 형식에는 아무런 영향을 주지 않습니다.|
+|**콘텐츠 출력**|출력 파일의 이름을 지정합니다. **중요:**  출력 파일의 확장명을 변경하더라도 파일 형식에는 아무런 영향을 미치지 않습니다.|
 
 ### <a name="shader-content-pipeline-configuration"></a>셰이더 콘텐츠 파이프라인 구성
 
@@ -111,7 +110,7 @@ Visual Studio에서 도구를 사용하여 3D 자산을 만들면 그 다음 단
 
 |속성|설명|
 |--------------|-----------------|
-|**콘텐츠 출력**|출력 파일의 이름을 지정합니다. **중요:** 출력 파일의 확장명을 변경하더라도 파일 형식에는 아무런 영향을 주지 않습니다.|
+|**콘텐츠 출력**|출력 파일의 이름을 지정합니다. **중요:**  출력 파일의 확장명을 변경하더라도 파일 형식에는 아무런 영향을 미치지 않습니다.|
 
 ## <a name="load-and-use-3d-assets-at-run-time"></a>런타임 시 3D 자산 로드 및 사용
 

@@ -1,8 +1,6 @@
 ---
 title: 속성 및 항목 비교 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, msbuild properties
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 96166caefa749138371dd8a5ab2ea9d496553557
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e27f9973bc24cf7d45e86e9982d40cdb20a367ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177116"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942361"
 ---
 # <a name="compare-properties-and-items"></a>속성 및 항목 비교하기
 MSBuild 속성 및 항목은 둘 다 작업에 정보를 전달하고, 조건을 확인한 다음 프로젝트 파일 전체에서 참조할 수 있는 값을 저장하는 데 사용됩니다.  

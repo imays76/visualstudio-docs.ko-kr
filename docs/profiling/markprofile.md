@@ -1,8 +1,6 @@
 ---
 title: MarkProfile | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - MarkProfile
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 98530a790963d1c7fc60742dda4bb16e14a28ab4
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: 5d079310fa8fa579f05e927eb37a0cbd6f2c8cca
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35238162"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853751"
 ---
 # <a name="markprofile"></a>MarkProfile
 `MarkProfile` 메서드는 .*vsp* 파일에 프로필 표시를 삽입합니다. 해당 표시를 삽입하려면 `MarkProfile` 함수를 포함하는 스레드에 대한 프로파일링이 ON이어야 합니다.  
@@ -46,7 +44,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 |MARK_TEXTTOOLONG|문자열이 최대값인 256자를 초과합니다. 주석 문자열이 잘리고 표시와 주석이 기록됩니다.|  
 |MARK_OK|MARK_OK는 성공을 나타내기 위해 반환됩니다.|  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  MarkProfile 함수를 포함하는 스레드가 프로파일링되면 코드가 실행될 때마다 .*vsp* 파일에 표시 값이 삽입됩니다. MarkProfile을 여러 번 호출할 수 있습니다.  
   
  프로필 표시는 범위 내에서 전역입니다. 예를 들어 한 스레드에 삽입된 프로필 표시를 사용하여 .*vsp* 파일의 스레드에 있는 데이터 세그먼트의 시작이나 끝을 표시할 수 있습니다.  
@@ -64,7 +62,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
   
  가져오기 라이브러리: *VSPerf.lib*  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드에서는 MarkProfile 함수를 보여 줍니다.  
   
 ```cpp  

@@ -1,9 +1,7 @@
 ---
 title: '3단계: 카운트다운 타이머 추가'
-ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 62670a2b-efdc-45c6-9646-9b17eeb33dcb
 author: TerryGLee
@@ -11,12 +9,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e7cf75b23b74753b875aafb43a5dd331b18c623
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c259f8cae798db3ed79329276c95135a9b607541
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748142"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962560"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>3단계: 카운트다운 타이머 추가
 이 자습서의 3단계에서는 퀴즈를 푸는 사람이 퀴즈를 마칠 때까지 남은 시간(초)을 추적하도록 카운트다운 타이머를 추가합니다.

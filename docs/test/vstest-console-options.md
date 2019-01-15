@@ -2,7 +2,6 @@
 title: VSTest.Console.exe 명령줄 옵션
 ms.date: 07/12/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: reference
 helpviewer_keywords:
 - vstest.console.exe
@@ -12,12 +11,12 @@ author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4394fe8d7920f4127f5043808003d400bc991590
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 1c185622baeb3ad00bf5139190fe5c4fe627ba5e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220972"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870757"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe 명령줄 옵션
 
@@ -46,7 +45,7 @@ ms.locfileid: "51220972"
 |**/Framework: [*프레임워크 버전*]**|테스트 실행에 사용될 대상 .NET Framework 버전입니다.<br />올바른 값은 Framework35, Framework40, Framework45 및 FrameworkUap10입니다.<br />대상 프레임워크가 **Framework35**로 지정된 경우 테스트가 CLR 4.0 “호환 가능 모드”에서 실행됩니다.<br />예: `/Framework:framework40`|
 |**/TestCaseFilter:[*식*]**|지정된 식과 일치하는 테스트를 실행합니다.<br /><Expression\>은 <property\>=<value\>[\|<Expression\>] 형식입니다.<br />예: `/TestCaseFilter:"Priority=1"`<br />예: `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />**/TestCaseFilter** 명령줄 옵션은 **/Tests** 명령줄 옵션과 함께 사용할 수 없습니다. <br />식 만들기 및 사용에 대한 정보는 [TestCase 필터](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md)를 참조하세요.|
 |**/?**|사용법 정보를 표시합니다.|
-|**/Logger:[*uri/friendlyname*]**|테스트 결과에 대해 로거를 지정합니다.<br />예: Visual Studio 테스트 결과 파일(TRX)에 결과를 기록하려면 **/Logger:trx**를 사용합니다.<br />예: Team Foundation Server에 테스트 결과를 게시하려면 TfsPublisher를 사용합니다.<br />**/logger:TfsPublisher;**<br />**Collection=<프로젝트 url\>;**<br />**BuildName=<빌드 이름\>;**<br />**TeamProject=<프로젝트 이름\>;**<br />**[;Platform=<기본값은 “Any CPU”>]**<br />**[;Flavor=<기본값은 “Debug”>]**<br />**[;RunTitle=<제목\>]**|
+|**/Logger:[*uri/friendlyname*]**|테스트 결과에 대해 로거를 지정합니다.<br />예제: Visual Studio 테스트 결과 파일(TRX)에 결과를 기록하려면 **/Logger:trx**를 사용합니다.<br />예제: Team Foundation Server에 테스트 결과를 게시하려면 TfsPublisher를 사용합니다.<br />**/logger:TfsPublisher;**<br />**Collection=<프로젝트 url\>;**<br />**BuildName=<빌드 이름\>;**<br />**TeamProject=<프로젝트 이름\>;**<br />**[;Platform=<기본값은 “Any CPU”>]**<br />**[;Flavor=<기본값은 “Debug”>]**<br />**[;RunTitle=<제목\>]**|
 |**/ListTests:[*파일 이름*]**|지정된 테스트 컨테이너에서 검색된 테스트를 나열합니다.|
 |**/ListDiscoverers**|설치된 테스트 Discoverer를 나열합니다.|
 |**/ListExecutors**|설치된 테스트 Executor를 나열합니다.|

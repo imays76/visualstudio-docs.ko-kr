@@ -1,8 +1,6 @@
 ---
 title: 모듈 뷰 - .NET 메모리 샘플링 데이터 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Modules view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c5cbae58aeaa1164aab6c254f62e0959da02d31c
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: a099a30b0a87db8ebae46543528d9af9f28f497a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257675"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823026"
 ---
 # <a name="modules-view---net-memory-sampling-data"></a>모듈 뷰 - .NET 메모리 샘플링 데이터
 샘플링 방법을 사용하여 수집되는 .NET 메모리 할당 데이터의 모듈 뷰에서는 프로파일링 실행에서 실행된 모듈을 기준으로 메모리 데이터를 그룹화합니다. 각 모듈은 계층 트리의 루트입니다. 모듈의 함수는 모듈 노드 아래에 나열됩니다.  
@@ -43,7 +41,7 @@ ms.locfileid: "35257675"
 |**제외 바이트(%)**|모듈, 함수, 줄 또는 명령의 제외 바이트인 프로파일링 실행에서 할당된 모든 바이트의 비율입니다.|  
   
 ## <a name="see-also"></a>참고 항목  
- [방법: 보고서 뷰 열 사용자 지정](../profiling/how-to-customize-report-view-columns.md)   
+ [방법: 보고서 보기 열 사용자 지정](../profiling/how-to-customize-report-view-columns.md)   
  [모듈 뷰 - 계측](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
  [모듈 뷰](../profiling/modules-view-sampling-data.md)   
  [모듈 뷰](../profiling/modules-view-instrumentation-data.md)

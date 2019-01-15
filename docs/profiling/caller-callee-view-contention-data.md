@@ -1,8 +1,6 @@
 ---
 title: 호출자 - 호출 수신자 뷰 - 경합 데이터 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Caller/Callee view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f919bd6b3fdad1a9c7412960e14d8c9f4cf5af67
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: db4b0bf6e29be1607fcf05557c8089074efa9f78
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263152"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902908"
 ---
 # <a name="callercallee-view----contention-data"></a>호출자/호출 수신자 뷰 - 경합 데이터
 호출자/호출 수신자 뷰는 선택한 함수와 해당 부모 및 자식 함수에 대한 경합 정보를 표시합니다. 호출자/호출 수신자 뷰에는 세 개의 표가 포함되어 있습니다.  
@@ -50,7 +48,7 @@ ms.locfileid: "34263152"
 |**소스 파일**|이 함수의 정의가 포함된 소스 파일입니다.|  
   
 ## <a name="see-also"></a>참고 항목  
- [방법: 보고서 뷰 열 사용자 지정](../profiling/how-to-customize-report-view-columns.md)   
+ [방법: 보고서 보기 열 사용자 지정](../profiling/how-to-customize-report-view-columns.md)   
  [호출자/호출 수신자 뷰](../profiling/caller-callee-view.md)   
  [호출자/호출 수신자 뷰 - 샘플링 데이터](../profiling/caller-callee-view-sampling-data.md)   
  [호출자/호출 수신자 뷰 - .NET 메모리 계측 데이터](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   

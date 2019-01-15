@@ -1,8 +1,6 @@
 ---
 title: GenerateResource 작업 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateResource
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c830b640b3efb4e963d62402bbf68d1bc7dff0e9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: c879ddc38b2dd3988878119f87c3d777aea7c09d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176956"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917503"
 ---
 # <a name="generateresource-task"></a>GenerateResource 작업
 *.txt* 및 *.resx*(XML 기반 리소스 형식) 파일과 런타임 이진 실행 파일에 포함되거나 위성 어셈블리로 컴파일할 수 있는 공용 언어 런타임 이진 *.resources* 파일 간을 변환합니다. 이 작업은 일반적으로 *.txt* 또는 *.resx* 파일을 *.resources* 파일로 변환하는 데 사용됩니다. `GenerateResource` 작업은 [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator)와 기능적으로 비슷합니다.  
@@ -49,7 +47,7 @@ ms.locfileid: "39176956"
 |`Sources`|필수 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> 변환할 항목을 지정합니다. 이 매개 변수에 전달된 항목은 다음 파일 확장명 중 하나를 사용해야 합니다.<br /><br /> -   *.txt*: 변환할 텍스트 파일의 확장명을 지정합니다. 텍스트 파일에는 문자열 리소스만 포함될 수 있습니다.<br />-   *.resx*: 변환할 XML 기반 리소스 파일의 확장명을 지정합니다.<br />-   *.restext*: *.txt*와 같은 형식을 지정합니다. 빌드 프로세스의 다른 소스 파일과 리소스를 포함하는 소스 파일 간을 명확히 구분하려는 경우에 이러한 다른 확장명이 도움이 됩니다.<br />-   *.resources*: 변환할 리소스 파일의 확장명을 지정합니다.|  
 |`StateFile`|선택적 <xref:Microsoft.Build.Framework.ITaskItem> 매개 변수입니다.<br /><br /> *.resx* 입력 파일의 종속성 검사 속도를 향상시키는 데 사용할 선택적 캐시 파일의 경로를 지정합니다.|  
 |`StronglyTypedClassName`|선택적 `String` 매개 변수입니다.<br /><br /> 강력한 형식의 리소스 클래스에 대한 클래스 이름을 지정합니다. 이 매개 변수를 지정하지 않으면 리소스 파일의 기본 이름이 사용됩니다.|  
-|`StronglyTypedFilename`|선택적 <xref:Microsoft.Build.Framework.ITaskItem> 매개 변수입니다.<br /><br /> 소스 파일의 파일 이름을 지정합니다. 이 매개 변수를 지정하지 않으면 클래스의 이름이 언어별 확장명을 포함하는 기본 파일 이름으로 사용됩니다. 예: *MyClass.cs*.|  
+|`StronglyTypedFilename`|선택적 <xref:Microsoft.Build.Framework.ITaskItem> 매개 변수입니다.<br /><br /> 소스 파일의 파일 이름을 지정합니다. 이 매개 변수를 지정하지 않으면 클래스의 이름이 언어별 확장명을 포함하는 기본 파일 이름으로 사용됩니다. 예: *MyClass.cs*|  
 |`StronglyTypedLanguage`|선택적 `String` 매개 변수입니다.<br /><br /> 강력한 형식의 리소스에 대한 클래스 소스를 생성할 때 사용할 언어를 지정합니다. 이 매개 변수는 CodeDomProvider에서 사용하는 언어 중 하나와 정확히 일치해야 합니다. 예를 들면 `VB` 또는 `C#` 등입니다.<br /><br /> 이 매개 변수에 값을 전달하여 강력한 형식의 리소스를 생성하도록 작업에 지시할 수 있습니다.|  
 |`StronglyTypedManifestPrefix`|선택적 `String` 매개 변수입니다.<br /><br /> 강력한 형식의 리소스에 대해 생성된 클래스 소스에 사용할 리소스 네임스페이스 또는 매니페스트 접두사를 지정합니다.|  
 |`StronglyTypedNamespace`|선택적 `String` 매개 변수입니다.<br /><br /> 강력한 형식의 리소스에 대해 생성된 클래스 소스에 사용할 네임스페이스를 지정합니다. 이 매개 변수를 지정하지 않으면 모든 강력한 형식의 리소스는 전역 네임스페이스에 있습니다.|  
@@ -62,14 +60,14 @@ ms.locfileid: "39176956"
 |`TrackFileAccess`|선택적 <xref:System.Boolean> 매개 변수입니다.<br /><br /> true이면 입력 파일의 디렉터리가 상대 파일 경로를 확인하는 데 사용됩니다.|  
 |`UseSourcePath`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`이면 입력 파일의 디렉터리가 상대 파일 경로를 확인하는 데 사용되도록 지정합니다.|  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  *.resx* 파일에는 다른 리소스 파일에 대한 링크가 포함될 수 있으므로 *.resx* 및 *.resources* 파일 타임스탬프를 비교하는 것만으로는 출력이 최신인지 확인할 수 없습니다. 대신 `GenerateResource` 작업은 *.resx* 파일에 있는 링크를 따라 이동하여 연결된 파일의 타임스탬프도 확인합니다. 즉, `GenerateResource` 작업을 포함하는 `Inputs` 및 `Outputs` 특성은 일반적으로 사용하지 않아야 합니다. 실제로 실행되어야 할 때 건너뛸 수 있기 때문입니다.  
   
  이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension 기본 클래스](../msbuild/taskextension-base-class.md)를 참조하세요.  
   
  MSBuild 4.0을 사용하여 .NET 3.5 프로젝트를 대상으로 지정하면 x86 리소스에 대해 빌드가 실패할 수 있습니다. 이 문제를 해결하려면 대상을 AnyCPU 어셈블리로 빌드할 수 있습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 `GenerateResource` 작업을 사용하여 `Resx` 항목 컬렉션으로 지정된 파일에서 *.resources* 파일을 생성합니다.  
   
 ```xml  
@@ -87,7 +85,7 @@ ms.locfileid: "39176956"
  어셈블리 이름이 myAssembly라고 가정할 경우 다음 코드는 *someQualifier.someResource.resources*라는 포함된 리소스를 생성합니다.  
   
 ```xml  
-<ItemGroup>   <EmbeddedResource Include="myResource.resx">       <LogicalName>someQualifier.someResource.resources</LogicalName>   </EmbeddedResource></ItemGroup>  
+<ItemGroup>   <EmbeddedResource Include="myResource.resx">       <LogicalName>someQualifier.someResource.resources</LogicalName>   </EmbeddedResource></ItemGroup>  
 ```  
   
  \<LogicalName> 메타데이터가 없으면 리소스 이름은 *myAssembly.myResource.resources*로 지정됩니다.  이 예제는 Visual Basic 및 Visual C# 빌드 프로세스에만 적용됩니다.  

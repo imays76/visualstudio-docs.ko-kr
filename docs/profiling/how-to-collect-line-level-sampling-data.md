@@ -1,8 +1,6 @@
 ---
-title: '방법: 줄 수준 샘플링 데이터 수집 | Microsoft 문서'
-ms.custom: ''
+title: '방법: 줄 수준 샘플링 데이터 수집 | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, line-level sampling
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0920c9a506adaf562a8acc77b2b030e461f11ed1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f7dc61ae776d75331eaaf2974f0eda139b601089
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934895"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952036"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>방법: 줄 수준 샘플링 데이터 수집
 줄 수준 샘플링은 전용 샘플 수가 많은 함수와 같이 프로세서를 많이 사용하는 함수의 코드에서 프로세서가 대부분의 시간을 사용하는 위치를 확인하는 프로파일러 기능입니다.  
@@ -51,11 +49,11 @@ ms.locfileid: "49934895"
 ### <a name="turn-off-line-level-sampling-for-managed-code"></a>관리 코드의 줄 수준 샘플링 끄기  
  줄 수준 샘플링은 기본적으로 켜집니다. 다음 명령 중 하나를 사용하여 관리 코드의 줄 수준 데이터 수집을 끌 수 있습니다.  
   
--   프로파일링하기 전에 **VSPerfCLREnv /samplelineoff**를 입력합니다. 이는 응용 프로그램 및 서비스에 모두 영향을 미칩니다.  
+-   프로파일링하기 전에 **VSPerfCLREnv /samplelineoff**를 입력합니다. 이는 애플리케이션 및 서비스에 모두 영향을 미칩니다.  
   
      — 또는 —  
   
--   응용 프로그램을 시작할 때 **VSPerfCmd /lineoff \<기타 인수>** 를 입력합니다.  
+-   애플리케이션을 시작할 때 **VSPerfCmd /lineoff \<기타 인수&gt;** 를 입력합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [성능 세션 구성](../profiling/configuring-performance-sessions.md)   

@@ -1,8 +1,6 @@
 ---
 title: Import 요소(MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 03/13/2017
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Import
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7dd5b0aa6f0ed56aaa3315c03aeef6ed1b77ad62
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e6318674d82ffb10839d801df4fc89da94545981
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839611"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900875"
 ---
 # <a name="import-element-msbuild"></a>Import 요소(MSBuild)
 한 프로젝트 파일의 내용을 다른 프로젝트 파일로 가져옵니다.  
@@ -60,7 +58,7 @@ ms.locfileid: "49839611"
 | [프로젝트](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일의 필수 루트 요소입니다. |
 | [ImportGroup](../msbuild/importgroup-element.md) | 선택적인 조건으로 그룹화된 `Import` 요소의 컬렉션을 포함합니다. |
 
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  `Import` 요소를 사용하면 여러 프로젝트 파일에 공통된 코드를 다시 사용할 수 있습니다. 이렇게 하면 공유 코드에 대한 업데이트가 그것을 가져오는 모든 프로젝트에 전파되므로 코드를 더 쉽게 유지 관리할 수 있습니다.  
 
  규칙에 따라, 가져온 공유 프로젝트 파일은 *.targets* 파일로 저장되지만, 실제로는 표준 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일입니다. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에서는 다른 파일 이름 확장명을 가진 프로젝트를 가져오는 것이 금지되지 않지만, 일관성을 위해 *.targets* 확장명을 사용할 것을 권장합니다.  
@@ -87,7 +85,7 @@ ms.locfileid: "49839611"
 <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\$(MSBuildThisFile)\ImportBefore\*" Condition="'$(ImportByWildcardBeforeMicrosoftCommonTargets)' == 'true' and exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\$(MSBuildThisFile)\ImportBefore')"/>  
 ```  
 
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 여러 항목과 속성이 있는 프로젝트를 보여주고 일반 프로젝트 파일을 가져옵니다.  
 
 ```xml  

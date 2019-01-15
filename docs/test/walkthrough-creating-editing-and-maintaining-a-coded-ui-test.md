@@ -2,19 +2,18 @@
 title: 코딩된 UI 테스트 만들기
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: fe8bed9c1f1f8aee9ae8e6d1ba460bf226d7b818
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 9bb64cae648f8ad747100fb0e27f83617603c804
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895524"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878236"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>연습: 코딩된 UI 테스트 만들기, 편집 및 유지 관리
 
@@ -32,7 +31,7 @@ ms.locfileid: "52895524"
 
 3.  가운데 창 위에서 대상 프레임워크 드롭다운 목록이 **.NET Framework 4.5**로 설정되어 있는지 확인합니다.
 
-4.  가운데 창에서 **WPF 응용 프로그램** 템플릿을 선택합니다.
+4.  가운데 창에서 **WPF 애플리케이션** 템플릿을 선택합니다.
 
 5.  **이름** 텍스트 상자에 **SimpleWPFApp**을 입력합니다.
 
@@ -113,12 +112,12 @@ ms.locfileid: "52895524"
 
 ## <a name="create-a-shortcut-to-the-wpf-app"></a>WPF 앱에 대한 바로 가기 만들기
 
-1.  앞에서 만든 SimpleWPFApp 응용 프로그램을 찾습니다.
+1.  앞에서 만든 SimpleWPFApp 애플리케이션을 찾습니다.
 
-2.  SimpleWPFApp 응용 프로그램에 대한 바탕 화면 바로 가기를 만듭니다. *SimpleWPFApp.exe*를 마우스 오른쪽 단추로 클릭한 다음, **복사**를 선택합니다. 바탕 화면에서 마우스 오른쪽 단추를 클릭하고 **바로 가기 붙여넣기**를 선택합니다.
+2.  SimpleWPFApp 애플리케이션에 대한 바탕 화면 바로 가기를 만듭니다. *SimpleWPFApp.exe*를 마우스 오른쪽 단추로 클릭한 다음, **복사**를 선택합니다. 바탕 화면에서 마우스 오른쪽 단추를 클릭하고 **바로 가기 붙여넣기**를 선택합니다.
 
     > [!TIP]
-    > 응용 프로그램 바로 가기를 사용하면 응용 프로그램을 신속하게 시작할 수 있기 때문에 응용 프로그램에 대해 코딩된 UI 테스트를 쉽게 추가하거나 수정할 수 있습니다.
+    > 애플리케이션 바로 가기를 사용하면 애플리케이션을 신속하게 시작할 수 있기 때문에 애플리케이션에 대해 코딩된 UI 테스트를 쉽게 추가하거나 수정할 수 있습니다.
 
 ## <a name="create-a-coded-ui-test-for-simplewpfapp"></a>SimpleWPFApp에 대해 코딩된 UI 테스트 만들기
 
@@ -166,7 +165,7 @@ ms.locfileid: "52895524"
 
 1. 이제 사용하도록 설정된 확인란 컨트롤을 선택합니다.
 
-1. SimpleWPFApp 응용 프로그램을 닫습니다.
+1. SimpleWPFApp 애플리케이션을 닫습니다.
 
 1. **UIMap – 코딩된 UI 테스트 빌더** 대화 상자에서 **코드 생성**을 선택합니다.
 
@@ -292,7 +291,7 @@ ms.locfileid: "52895524"
 
      **UIMap – 코딩된 UI 테스트 빌더**가 나타납니다.
 
-2.  앞에서 만든 바탕 화면 바로 가기를 사용하여, 앞에서 만든 SimpleWPFApp 응용 프로그램을 실행합니다.
+2.  앞에서 만든 바탕 화면 바로 가기를 사용하여, 앞에서 만든 SimpleWPFApp 애플리케이션을 실행합니다.
 
 3.  **UIMap – 코딩된 UI 테스트 빌더** 대화 상자에서 십자형 도구를 SimpleWPFApp의 **시작** 단추로 끌어옵니다.
 

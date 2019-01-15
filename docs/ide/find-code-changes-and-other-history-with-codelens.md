@@ -2,7 +2,6 @@
 title: CodeLens에서 코드 변경 내용 및 기타 기록 찾기
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.All_Languages.CodeLens
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e11b7458c5d26d56252b228522c53b00ebadb35b
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 623a0a0515059a903f59d9c9b330876584c40f64
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220302"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860604"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>CodeLens에서 코드 변경 내용 및 기타 기록 찾기
 
@@ -98,7 +97,7 @@ Team Foundation Server 또는 Azure DevOps Services에서 TFVC(Team Foundation �
 
 파일이 Git 리포지토리에 있고 코드 요소 수준 변경 표시기를 선택하면 다음이 표시됩니다.
 
-![CodeLens: GIT에서 코드에 대한 변경 기록 가져오기](../ide/media/codelens-code-changes-git.png)
+![CodeLens: Git에서 코드에 대한 변경 기록 가져오기](../ide/media/codelens-code-changes-git.png)
 
 ### <a name="file-level-indicators"></a>파일 수준 표시기
 
@@ -119,21 +118,21 @@ Team Foundation Server 또는 Azure DevOps Services에서 TFVC(Team Foundation �
 
 안정적인 코드가 손상되는 위험을 줄이기 위해 팀에 여러 분기(Main 분기 및 자식 개발 분기)가 있을 수 있습니다.
 
-![CodeLens: 코드가 분기된 시기 찾기](../ide/media/codelensfirstbranchconceptual.png)
+![CodeLens: 코드가 분기된 시점 찾기](../ide/media/codelensfirstbranchconceptual.png)
 
 **Alt**+**6**을 눌러 Main 분기에서 코드를 변경한 사용자의 수 및 변경된 내용의 수를 찾을 수 있습니다.
 
-![CodeLens: 자신의 분기에서의 변경 내용 수 찾기](../ide/media/codelens-branch-changes.png)
+![CodeLens: 분기에서 변경 내용 횟수 찾기](../ide/media/codelens-branch-changes.png)
 
 ### <a name="find-when-your-code-was-branched"></a>코드가 분기된 시점 찾기
 
 코드가 분기된 시점을 찾으려면 자식 분기의 코드로 이동합니다. 그런 다음, **변경** 표시기를 선택하거나 **Alt**+**6**을 누릅니다.
 
-![CodeLens: 코드가 분기된 시기 찾기](../ide/media/codelens-first-branch.png)
+![CodeLens: 코드가 분기된 시점 찾기](../ide/media/codelens-first-branch.png)
 
 ### <a name="find-incoming-changes-from-other-branches"></a>다른 분기에서 들어오는 변경 내용 찾기
 
-![CodeLens: 다른 분기에서의 코드 변경 내용 찾기](../ide/media/codelensbranchchangecheckinconceptual.png)
+![CodeLens: 다른 분기에서 코드 변경 내용 찾기](../ide/media/codelensbranchchangecheckinconceptual.png)
 
 들어오는 변경 내용을 볼 수 있습니다. 다음 스크린샷에 버그 수정은 “Dev” 분기에서 이루어졌습니다.
 
@@ -141,7 +140,7 @@ Team Foundation Server 또는 Azure DevOps Services에서 TFVC(Team Foundation �
 
 다음과 같이 현재 분기(“Main”)를 벗어나지 않고 변경 내용을 검토할 수 있습니다.
 
-![CodeLens: 다른 분기에서 들어온 변경 내용 확인인](../ide/media/codelens-branch-changes-main.png)
+![CodeLens: 다른 분기에서 들어온 변경 내용 확인](../ide/media/codelens-branch-changes-main.png)
 
 ### <a name="find-when-changes-got-merged"></a>변경 내용이 병합된 경우 찾기
 
@@ -165,14 +164,14 @@ Team Foundation Server 또는 Azure DevOps Services에서 TFVC(Team Foundation �
 
 |**아이콘**|**변경이 발생한 위치:**|
 |--------------| - |
-|![CodeLens - 현재 분기에서 변경 아이콘](../ide/media/codelensbranchcurrenticon.png)|현재 분기|
+|![CodeLens: 현재 분기에서 변경 아이콘](../ide/media/codelensbranchcurrenticon.png)|현재 분기|
 |![CodeLens: 부모 분기에서 변경 아이콘](../ide/media/codelensbranchparenticon.png)|부모 분기|
-|![CodeLens: 하위 분기에서 변경 아이콘](../ide/media/codelensbranchchildicon.png)|자식 분기|
+|![CodeLens: 자식 분기에서 변경 아이콘](../ide/media/codelensbranchchildicon.png)|자식 분기|
 |![CodeLens: 피어 분기에서 변경 아이콘](../ide/media/codelensbranchpeericon.png)|피어 분기|
-|![CodeLens: 먼 분기에서 추가로 변경 아이콘](../ide/media/codelensbranchfurtherawayicon.png)|부모, 자식 또는 피어보다 더 먼 분기|
-|![CodeLens: 상위에서 병합 아이콘](../ide/media/codelensbranchmergefromparenticon.png)|부모 분기에서 자식 분기로 병합|
-|![CodeLens - 하위 분기에서 병합 아이콘](../ide/media/codelensbranchmergefromchildicon.png)|자식 분기에서 부모 분기로 병합|
-|![CodeLens - 관련 없는 분기에서 병합 아이콘](../ide/media/codelensbranchmergefromunrelatedicon.png)|관련 없는 분기에서 병합(기본 파일이 없는 병합)|
+|![CodeLens: 먼 분기에서 변경 아이콘](../ide/media/codelensbranchfurtherawayicon.png)|부모, 자식 또는 피어보다 더 먼 분기|
+|![CodeLens: 부모에서 병합 아이콘](../ide/media/codelensbranchmergefromparenticon.png)|부모 분기에서 자식 분기로 병합|
+|![CodeLens: 자식 분기에서 병합 아이콘](../ide/media/codelensbranchmergefromchildicon.png)|자식 분기에서 부모 분기로 병합|
+|![CodeLens: 관련 없는 분기에서 병합 아이콘](../ide/media/codelensbranchmergefromunrelatedicon.png)|관련 없는 분기에서 병합(기본 파일이 없는 병합)|
 
 ## <a name="linked-work-items"></a>연결된 작업 항목
 
@@ -206,9 +205,9 @@ Team Foundation Server 또는 Azure DevOps Services에서 TFVC(Team Foundation �
 
 **테스트 탐색기**를 열지 않고 C# 또는 Visual Basic 코드에 대한 단위 테스트를 확인할 수 있습니다.
 
-1. 연결된 [단위 테스트 코드](../test/unit-test-your-code.md)가 있는 응용 프로그램 코드로 이동합니다.
+1. 연결된 [단위 테스트 코드](../test/unit-test-your-code.md)가 있는 애플리케이션 코드로 이동합니다.
 
-2. 아직 수행하지 않은 경우 CodeLens 테스트 지표를 로드하도록 응용 프로그램을 빌드합니다. [빌드된 어셈블리에 의한 검색](../test/test-explorer-faq.md#assembly-based-discovery)이 설정되어 있는지 확인합니다.
+2. 아직 수행하지 않은 경우 CodeLens 테스트 지표를 로드하도록 애플리케이션을 빌드합니다. [빌드된 어셈블리에 의한 검색](../test/test-explorer-faq.md#assembly-based-discovery)이 설정되어 있는지 확인합니다.
 
 3. **Alt**+**3**을 눌러 코드에 대한 테스트를 검토합니다.
 
@@ -241,7 +240,7 @@ Team Foundation Server 또는 Azure DevOps Services에서 TFVC(Team Foundation �
 
 ### <a name="q-how-do-i-turn-codelens-off-or-on-or-choose-which-indicators-to-see"></a>Q: CodeLens를 설정 또는 해제하거나 확인할 표시기를 선택하려면 어떻게 할까요?
 
-**A:**  참조 지표를 제외하고, 지표를 설정하거나 해제할 수 있습니다. **도구** > **옵션** > **텍스트 편집기** > **모든 언어**  >  **CodeLens**로 이동합니다.
+**A:**  참조 지표를 제외하고 지표를 설정하거나 해제할 수 있습니다. **도구** > **옵션** > **텍스트 편집기** > **모든 언어**  >  **CodeLens**로 이동합니다.
 
 지표가 설정되어 있으면 해당 지표에서 CodeLens 옵션을 열 수도 있습니다.
 
@@ -261,15 +260,15 @@ Team Foundation Server 또는 Azure DevOps Services에서 TFVC(Team Foundation �
 
 - DevOps 관련 지표는 작업 항목이 코드와 링크되어 있는 경우 및 링크된 작업 항목을 열 권한이 있는 경우에만 나타납니다. [팀 멤버 권한](/azure/devops/organizations/security/view-permissions?view=vsts)이 있는지 확인합니다.
 
-- 단위 테스트 지표는 응용 프로그램 코드에서 단위 테스트를 하지 않은 경우 나타나지 않습니다. 테스트 상태 지표는 테스트 프로젝트에 자동으로 나타납니다. 응용 프로그램 코드에 단위 테스트가 있지만 테스트 표시기가 나타나지 않는 경우 솔루션 빌드를 시도해 보세요(**Ctrl**+**Shift**+**B**).
+- 단위 테스트 지표는 애플리케이션 코드에서 단위 테스트를 하지 않은 경우 나타나지 않습니다. 테스트 상태 지표는 테스트 프로젝트에 자동으로 나타납니다. 애플리케이션 코드에 단위 테스트가 있지만 테스트 표시기가 나타나지 않는 경우 솔루션 빌드를 시도해 보세요(**Ctrl**+**Shift**+**B**).
 
 ### <a name="q-why-dont-i-see-the-work-item-details-for-a-commit"></a>Q: 커밋에 대한 작업 항목 정보가 나타나지 않습니다.
 
 **A:** CodeLens가 Azure Boards 또는 TFS의 작업 항목을 찾을 수 없기 때문에 이러한 현상이 발생할 수 있습니다. 작업 항목이 포함된 프로젝트에 연결되어 있으며 해당 작업 항목을 볼 수 있는 권한이 있는지 확인하세요. 커밋 설명에 Azure Boards 또는 TFS의 작업 항목 ID에 대한 잘못된 정보가 포함된 경우 작업 항목 정보가 표시되지 않을 수 있습니다.
 
-### <a name="q-why-dont-i-see-the-skype-indicators"></a>Q: Skype 표시기가 나타나지 않습니다.
+### <a name="q-why-dont-i-see-the-skype-indicators"></a>Q: Skype 지표가 나타나지 않습니다.
 
-**A:** 비즈니스용 Skype에 로그인하지 않았거나, 설치하지 않았거나, 지원되는 구성이 없을 경우 Skype 표시기가 나타나지 않습니다. 하지만 이메일은 보낼 수 있습니다.
+**A:** 비즈니스용 Skype에 로그인하지 않았거나, 설치하지 않았거나, 지원되는 구성이 없을 경우 Skype 지표가 나타나지 않습니다. 하지만 이메일은 보낼 수 있습니다.
 
 ![CodeLens - 변경 집합 소유자에게 메일로 문의](../ide/media/codelenscodesendmailchangesetnolync1.png)
 
@@ -313,11 +312,11 @@ CodeLens는 다른 버전의 Lync 또는 Skype가 설치되는 것을 지원하�
 
      ![CodeLens 참조의 [새로 고침] 단추](../ide/media/codelensviewreferencesdocked.png)
 
-- **팀**: 오른쪽 클릭 메뉴에서 **CodeLens 팀 지표 새로 고침**을 선택하여 이러한 표시기를 새로 고칩니다.
+- **팀**: 오른쪽 클릭 메뉴에서 **CodeLens 팀 지표 새로 고침**을 선택하여 이러한 지표를 새로 고칩니다.
 
      ![CodeLens 팀 지표 새로 고침 메뉴 항목](../ide/media/codelensrefreshindicatorsfromcode.png)
 
-- **테스트**: [코드에 대한 단위 테스트를 찾아](#associated-unit-tests) **테스트** 표시기를 새로 고칩니다.
+- **테스트**: [코드에 대한 단위 테스트를 찾아](#associated-unit-tests) **테스트** 지표를 새로 고칩니다.
 
 ### <a name="q-whats-local-version"></a>Q: "로컬 버전"이란 무엇인가요?
 
@@ -327,7 +326,7 @@ CodeLens는 다른 버전의 Lync 또는 Skype가 설치되는 것을 지원하�
 
 **A:** 예. 코드가 TFS에 있는 경우 [CodeIndex 명령](../ide/codeindex-command.md)과 [TFS 구성 명령](/tfs/server/ref/command-line/tfsconfig-cmd)을 함께 사용합니다.
 
-### <a name="q-my-codelens-test-indicators-no-longer-appear-in-my-file-when-i-first-open-my-solution-how-can-i-load-them"></a>Q: 내 CodeLens 테스트 지표는 솔루션을 처음 열 때 내 파일에 더 이상 나타나지 않습니다. 로드하려면 어떻게 하나요?
+### <a name="q-my-codelens-test-indicators-no-longer-appear-in-my-file-when-i-first-open-my-solution-how-can-i-load-them"></a>Q: 내 CodeLens 테스트 지표는 더 이상 솔루션을 처음 열 때 내 파일에 나타나지 않습니다. 로드하려면 어떻게 하나요?
 
 **A:** CodeLens 테스트 지표를 가져오는 프로젝트를 다시 빌드하여 파일에서 로드합니다. [빌드된 어셈블리에 의한 검색](../test/test-explorer-faq.md#assembly-based-discovery
 )이 설정되어 있는지 확인합니다. 성능을 향상시키기 위해 코드 파일을 로드하는 경우 Visual Studio는 테스트 지표에 대한 원본 정보를 더 이상 페치하지 않습니다. 빌드 후에 또는 **테스트 탐색기**를 두 번 클릭하여 테스트로 이동할 때 테스트 지표가 로드됩니다.

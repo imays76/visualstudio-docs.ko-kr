@@ -1,8 +1,7 @@
 ---
-title: '방법: 3D 모델의 피벗 점 수정'
+title: '방법: 3D 모델의 피벗 지점 수정'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: c20b4ec8-29f5-4ca5-bc39-d4548ca6f573
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 352685e6b31aa688ff51f9564f141fa800c348d8
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 8c66d7b16451a2ee3e545b4737b0ecd12c47d413
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38977821"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822306"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>방법: 3D 모델의 피벗 점 수정
 
@@ -27,7 +26,7 @@ ms.locfileid: "38977821"
 
 **속성** 창과 **도구 상자**가 표시되는지 확인하세요.
 
-1.  [방법: 기본 3D 모델 만들기](../designers/how-to-create-a-basic-3-d-model.md)에 설명된 모델과 같은 기존 3D 모델로 시작합니다.
+1.  다음에 설명된 모델과 같은 기존 3D 모델로 시작합니다. [방법: 기본 3D 모델 만들기](../designers/how-to-create-a-basic-3-d-model.md)
 
 2.  피벗 모드를 시작합니다. **모델 편집기 모드** 도구 모음에서 **피벗 모드** 단추를 선택하여 피벗 모드를 활성화합니다. 모델 편집기가 현재 피벗 모드임을 나타내는 **피벗 모드** 단추가 상자 주변에 나타납니다. 피벗 모드에서 좌표 이동 등의 작업은 세계 좌표 위치에 있는 개체의 구조가 아니라 개체의 피벗 점에 영향을 미칩니다.
 

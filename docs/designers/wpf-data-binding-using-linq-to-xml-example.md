@@ -2,7 +2,6 @@
 title: LINQ to XML 예제를 사용한 WPF 데이터 바인딩
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 8e90b252-646e-4449-a898-5f03e40df87d
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c206e19ec94e2644cfec35bb7e33551dddb713d
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 80d5e7d679971034f8c1b60a82d7a63911a81971
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080739"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945589"
 ---
 # <a name="wpf-data-binding-using-linq-to-xml-example"></a>LINQ to XML 예제를 사용한 WPF 데이터 바인딩
 

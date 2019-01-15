@@ -1,8 +1,6 @@
 ---
 title: StopTrackingAndCleanup | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 apiname:
 - StopTrackingAndCleanup
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ffbebd651087d9aa877d0e257947352a0d0275e
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: ecf9f27acf0cebbf6a0e1d00da961f1733a66f4d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154826"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990466"
 ---
 # <a name="stoptrackingandcleanup"></a>StopTrackingAndCleanup
 모든 추적을 중지하고 추적 세션에 사용된 메모리를 해제합니다.  

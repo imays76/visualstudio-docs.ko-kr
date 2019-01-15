@@ -1,8 +1,6 @@
 ---
 title: Visual C++ 관련 MSBuild 작업 | Microsoft Docs
-ms.custom: ''
 ms.date: 06/27/2018
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2caacec2412ea0c188d9b987ae8a6e52a89fbe9b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d9bfb0755c394bf7b3a0c8da5e125b4c3c0b1623
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906756"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934692"
 ---
 # <a name="msbuild-tasks-specific-to-visual-c"></a>Visual C++ 관련 MSBuild 작업
 작업은 빌드 프로세스 동안 실행되는 코드를 제공합니다. Visual C++가 설치되면 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]와 함께 설치되는 작업 외에 다음 작업을 사용할 수 있습니다. 자세한 내용은 [MSBuild(Visual C++) 개요](/cpp/build/msbuild-visual-cpp-overview)를 참조하세요.  

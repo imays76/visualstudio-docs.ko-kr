@@ -1,9 +1,7 @@
 ---
 title: '6단계: 타이머 추가'
-ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 09e7930b-cab6-4a22-9a6f-72e23f489585
 author: TerryGLee
@@ -11,12 +9,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 67d02c4d141dd9ec61918600c5fa0b1ca9fadbd9
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 36ca514f4bfb5b3c73d2f72b06afdab72a987ed0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748103"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885413"
 ---
 # <a name="step-6-add-a-timer"></a>6단계: 타이머 추가
 다음에는 일치 게임에 <xref:System.Windows.Forms.Timer> 컨트롤을 추가합니다. 타이머는 지정한 시간(밀리초)을 대기한 뒤 *틱*이라고 하는 이벤트를 발생시킵니다. 이 방법은 작업을 시작하거나 작업을 정기적으로 반복하는 데 유용합니다. 이 경우 타이머를 사용하여 플레이어가 두 개의 아이콘을 선택할 수 있도록 하고 아이콘이 서로 일치하지 않을 경우 잠시 후 다시 두 개의 아이콘을 숨깁니다.
@@ -38,7 +36,7 @@ ms.locfileid: "34748103"
      [!code-csharp[VbExpressTutorial4Step6#7](../ide/codesnippet/CSharp/step-6-add-a-timer_1.cs)]
      [!code-vb[VbExpressTutorial4Step6#7](../ide/codesnippet/VisualBasic/step-6-add-a-timer_1.vb)]
 
-     Tick 이벤트 처리기는 다음 세 가지 작업을 수행합니다. 첫 번째로 타이머는 <xref:System.Windows.Forms.Timer.Stop> 메서드를 호출하면 실행이 중지됩니다. 그런 다음 `firstClicked`와 `secondClicked`라는 두 개의 참조 변수를 사용하여 플레이어가 선택한 두 레이블의 아이콘이 다시 보이지 않도록 합니다. 마지막으로 `firstClicked` 및 `secondClicked` 참조 변수를 `null`(Visual C#의 경우)과 `Nothing`(Visual Basic의 경우)으로 다시 설정합니다. 이 단계는 프로그램 자체를 다시 설정하는 방식이기 때문에 중요합니다. 이제 <xref:System.Windows.Forms.Label> 컨트롤이 추적되고 있지 않으며 플레이어는 레이블을 다시 선택할 수 있습니다.
+     틱 이벤트 처리기는 다음 세 가지 작업을 수행합니다. 첫 번째로 타이머는 <xref:System.Windows.Forms.Timer.Stop> 메서드를 호출하면 실행이 중지됩니다. 그런 다음 `firstClicked`와 `secondClicked`라는 두 개의 참조 변수를 사용하여 플레이어가 선택한 두 레이블의 아이콘이 다시 보이지 않도록 합니다. 마지막으로 `firstClicked` 및 `secondClicked` 참조 변수를 `null`(Visual C#의 경우)과 `Nothing`(Visual Basic의 경우)으로 다시 설정합니다. 이 단계는 프로그램 자체를 다시 설정하는 방식이기 때문에 중요합니다. 이제 <xref:System.Windows.Forms.Label> 컨트롤이 추적되고 있지 않으며 플레이어는 레이블을 다시 선택할 수 있습니다.
 
     > [!NOTE]
     >  Timer 개체에는 타이머를 시작하는 `Start()` 메서드와 타이머를 중지하는 `Stop()` 메서드가 있습니다. **속성** 창에서 타이머의 **Enabled** 속성을 **True**로 설정하면 프로그램이 시작되는 즉시 타이머에서 틱이 시작됩니다. 그러나 이 속성을 **False**로 설정하면 `Start()` 메서드가 호출될 때까지 틱을 시작하지 않습니다. 일반적으로 타이머는 틱 사이의 밀리초를 결정하는 **Interval** 속성을 사용하여 Tick 이벤트를 반복적으로 발생시킵니다. 이 경우에 Tick 이벤트 내에서 타이머의 `Stop()` 메서드가 호출되는 방식을 살펴보면 타이머가 *일회 모드*로 설정되고, 그에 따라 `Start()` 메서드가 호출되면 지정한 간격만큼 기다렸다가 단일 Tick 이벤트를 트리거한 뒤 중지됩니다.

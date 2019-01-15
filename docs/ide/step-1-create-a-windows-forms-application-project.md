@@ -1,9 +1,7 @@
 ---
-title: '1단계: Windows Forms 응용 프로그램 프로젝트 만들기'
-ms.custom: ''
+title: '1단계: Windows Forms 애플리케이션 프로젝트 만들기'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 16ac2422-e720-4e3a-b511-bc2a54201a86
 author: TerryGLee
@@ -11,19 +9,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9bcb82622a7ea303a632865b0c3f964de4b4dc3
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 86942dda1990fe8a681ec2832b2474d42d418a63
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747657"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842059"
 ---
-# <a name="step-1-create-a-windows-forms-application-project"></a>1단계: Windows Forms 응용 프로그램 프로젝트 만들기
-사진 뷰어를 만드는 첫 번째 단계는 Windows Forms 응용 프로그램 프로젝트를 만드는 것입니다.
+# <a name="step-1-create-a-windows-forms-application-project"></a>1단계: Windows Forms 애플리케이션 프로젝트 만들기
+사진 뷰어를 만드는 첫 번째 단계는 Windows Forms 애플리케이션 프로젝트를 만드는 것입니다.
 
- ![비디오 링크](../data-tools/media/playvideo.gif) 이 항목의 비디오 버전의 경우, [Tutorial 1: Create a picture viewer in Visual Basic - Video 1](http://go.microsoft.com/fwlink/?LinkId=205209)(자습서 1: Visual Basic에서 사진 뷰어 만들기 - 비디오 1) 또는 [Tutorial 1: Create a picture viewer in C# - Video 1](http://go.microsoft.com/fwlink/?LinkId=205199)(자습서 1: C#에서 사진 뷰어 만들기 - 비디오 1)을 참조하세요. 이러한 비디오에서는 이전 버전의 Visual Studio를 사용하므로 일부 메뉴 명령과 기타 사용자 인터페이스 요소가 약간 다를 수 있습니다. 그러나 개념 및 절차는 Visual Studio의 현재 버전에서 비슷하게 작동합니다.
+ ![비디오 링크](../data-tools/media/playvideo.gif) 이 항목의 비디오 버전은 [자습서 1: Visual Basic에서 비디오 보기 만들기 - 비디오1](http://go.microsoft.com/fwlink/?LinkId=205209) 또는 [자습서 1: C#에서 그림 보기 만들기 - 자습서 1](http://go.microsoft.com/fwlink/?LinkId=205199)을 참조하세요. 이러한 비디오에서는 이전 버전의 Visual Studio를 사용하므로 일부 메뉴 명령과 기타 사용자 인터페이스 요소가 약간 다를 수 있습니다. 그러나 개념 및 절차는 Visual Studio의 현재 버전에서 비슷하게 작동합니다.
 
-## <a name="to-create-a-windows-forms-application-project"></a>Windows Forms 응용 프로그램 프로젝트를 만들려면
+## <a name="to-create-a-windows-forms-application-project"></a>Windows Forms 애플리케이션 프로젝트를 만들려면
 
 1.  메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다. 대화 상자는 다음과 같습니다.
 
@@ -32,7 +30,7 @@ ms.locfileid: "34747657"
 
 2.  **설치된 템플릿** 목록에서 **Visual C#** 또는 **Visual Basic**을 선택합니다.
 
-3.  템플릿 목록에서 **Windows Forms 응용 프로그램** 아이콘을 선택합니다. 새 폼의 이름을 **PictureViewer**로 지정한 후 **확인** 단추를 선택합니다.
+3.  템플릿 목록에서 **Windows Forms 애플리케이션** 아이콘을 선택합니다. 새 폼의 이름을 **PictureViewer**로 지정한 후 **확인** 단추를 선택합니다.
 
      Visual Studio에서 프로그램의 솔루션이 생성됩니다. 솔루션은 프로그램에 필요한 모든 프로젝트 및 파일의 컨테이너 역할을 합니다. 이러한 용어에 대해서는 이 자습서의 뒷부분에서 자세히 설명합니다.
 

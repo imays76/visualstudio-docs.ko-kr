@@ -1,8 +1,6 @@
 ---
 title: StopProfile | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - StopProfile
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e03abc331d59504b1b08136c8c81fe12c8ba2af
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: b44726b2ce1f7a0b699898edfc3a53371163168e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34264197"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952237"
 ---
 # <a name="stopprofile"></a>StopProfile
 `StopProfile` 함수는 지정된 프로파일링 수준에 대한 카운터를 0(off)으로 설정합니다.  
@@ -56,7 +54,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StopProfile(
 |PROFILE_ERROR_NOT_YET_IMPLEMENTED|프로파일링 함수 호출, 프로파일링 수준 또는 호출과 수준의 조합이 아직 구현되지 않았습니다.|  
 |PROFILE_OK|호출이 성공했습니다.|  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  StartProfile 및 StopProfile은 프로파일링 수준에 대한 Start/Stop 상태를 제어합니다. Start/Stop의 기본값은 1입니다. 레지스트리에서 초기 값을 변경할 수 있습니다. StartProfile에 대한 각 호출은 Start/Stop을 1로 설정합니다. StopProfile에 대한 각 호출은 0으로 설정합니다.  
   
  Start/Stop이 0보다 큰 경우 수준에 대한 Start/Stop 상태는 ON입니다. 0보다 작거나 같은 경우 Start/Stop 상태가 OFF입니다.  
@@ -71,7 +69,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StopProfile(
   
  가져오기 라이브러리: VSPerf.lib  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 StopProfile 메서드를 보여 줍니다. 예제에서는 StartProfile 메서드에 대한 호출이 [PROFILE_CURRENTID](../profiling/profile-currentid.md)에서 식별된 동일한 스레드 또는 프로세스에 대해 만들어졌다고 가정합니다.  
   
 ```cpp  

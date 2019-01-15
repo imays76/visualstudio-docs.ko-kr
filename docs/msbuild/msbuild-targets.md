@@ -1,8 +1,6 @@
 ---
 title: MSBuild 대상 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, targets
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3700074a1d087c0626a86559ff1342698d8a4628
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: c383af855c849636f780e5c333bd1937e5e90955
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176117"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877642"
 ---
 # <a name="msbuild-targets"></a>MSBuild 대상
 대상은 특정 순서로 작업을 그룹화하며 빌드 프로세스를 더 작은 단위로 팩터링될 수 있도록 합니다. 예를 들어 하나의 대상이 빌드에 대한 준비를 위해 출력 디렉터리에서 모든 파일을 삭제할 수 있는 반면 다른 대상은 프로젝트에 대한 입력을 컴파일하고 빈 디렉터리에 배치합니다. 작업에 대한 자세한 내용은 [작업](../msbuild/msbuild-tasks.md)을 참조하세요.  
@@ -31,7 +29,7 @@ ms.locfileid: "39176117"
 </Target>  
 ```  
   
- MSBuild 속성처럼 대상은 다시 정의될 수 있습니다. 예를 들면 다음과 같습니다.  
+ MSBuild 속성처럼 대상은 다시 정의될 수 있습니다. 예를 들어 개체에 적용된  
   
 ```xml  
 <Target Name="AfterBuild" >  
@@ -62,7 +60,7 @@ ms.locfileid: "39176117"
 대상 빌드 순서에 대한 세부 내용 및 자세한 내용은 [대상 빌드 순서](../msbuild/target-build-order.md)를 참조하세요.  
 
 ## <a name="target-batching"></a>대상 일괄 처리  
-대상 요소에는 %(\<Metadata>) 형식에서 메타데이터를 지정하는 `Outputs` 특성이 있을 수 있습니다. 이 경우 MSBuild는 해당 메타데이터 값을 가진 항목을 그룹화 또는 "일괄 처리"하여 각 고유 메타데이터 값에 대해 한 번씩 대상을 실행합니다. 예를 들면 다음과 같습니다.  
+대상 요소에는 %(\<Metadata>) 형식에서 메타데이터를 지정하는 `Outputs` 특성이 있을 수 있습니다. 이 경우 MSBuild는 해당 메타데이터 값을 가진 항목을 그룹화 또는 "일괄 처리"하여 각 고유 메타데이터 값에 대해 한 번씩 대상을 실행합니다. 예를 들어 개체에 적용된  
   
 ```xml  
 <ItemGroup>  

@@ -2,7 +2,6 @@
 title: 프로젝트 디자이너, 빌드 페이지(C#)
 ms.date: 06/20/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesBuild
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: b003b3f965ab4f3857e2a532ae715d99533aa8e7
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: b690340440cfeeb13cecd82ed39109f688d24760
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38783820"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908019"
 ---
 # <a name="build-page-project-designer-c"></a>프로젝트 디자이너, 빌드 페이지(C#)
 **프로젝트 디자이너**의 **빌드** 페이지를 사용하여 프로젝트의 빌드 구성 속성을 지정합니다. 이 페이지는 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 프로젝트에만 적용됩니다.
@@ -48,21 +47,21 @@ ms.locfileid: "38783820"
 
 **TRACE 상수 정의** 앱의 모든 소스 코드 파일에서 TRACE를 기호로 정의합니다. 이 옵션을 선택하는 것은 `/define:TRACE` 명령줄 옵션을 사용하는 것과 같습니다.
 
-**플랫폼 대상 지정** 출력 파일의 대상으로 프로세서를 지정합니다. 32비트 Intel 호환 프로세서의 경우 **x86**을 선택하고, 64비트 Intel 호환 프로세서의 경우 **x64**를 선택하고, ARM 프로세서의 경우 **ARM**을 선택하고, 임의 프로세스를 허용하도록 지정하려면 **임의 CPU**를 선택합니다. **임의 CPU**는 프로젝트의 기본값입니다. 하드웨어의 가장 광범위한 범위에서 응용 프로그램을 실행할 수 있기 때문입니다.
+**플랫폼 대상 지정** 출력 파일의 대상으로 프로세서를 지정합니다. 32비트 Intel 호환 프로세서의 경우 **x86**을 선택하고, 64비트 Intel 호환 프로세서의 경우 **x64**를 선택하고, ARM 프로세서의 경우 **ARM**을 선택하고, 임의 프로세스를 허용하도록 지정하려면 **임의 CPU**를 선택합니다. **임의 CPU**는 프로젝트의 기본값입니다. 하드웨어의 가장 광범위한 범위에서 애플리케이션을 실행할 수 있기 때문입니다.
 
 자세한 내용은 [/platform(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option)을 참조하세요.
 
-**32비트 선호** **32비트 선호** 확인란을 선택하면 응용 프로그램은 Windows 32비트 및 64비트 버전에서 모두 32비트 응용 프로그램으로 실행됩니다. 이 확인란을 선택 취소하면 응용 프로그램은 32비트 버전 Windows에서는 32비트 응용 프로그램으로, 64비트 버전 Windows에서는 64비트 응용 프로그램으로 실행됩니다.
+**32비트 선호****32비트 선호** 확인란을 선택하면 애플리케이션은 Windows 32비트 및 64비트 버전에서 모두 32비트 애플리케이션으로 실행됩니다. 이 확인란을 선택 취소하면 애플리케이션은 32비트 버전 Windows에서는 32비트 애플리케이션으로, 64비트 버전 Windows에서는 64비트 애플리케이션으로 실행됩니다.
 
-응용 프로그램을 64비트 응용 프로그램으로 실행하면 포인터 크기가 두 배가 되고 32비트 전용인 다른 라이브러리에 대한 호환성 문제가 발생할 수 있습니다. 4GB 이상의 메모리가 필요하거나 64비트 명령으로 성능을 크게 향상할 수 있는 경우에만 64비트 응용 프로그램을 실행하는 것이 좋습니다.
+애플리케이션을 64비트 애플리케이션으로 실행하면 포인터 크기가 두 배가 되고 32비트 전용인 다른 라이브러리에 대한 호환성 문제가 발생할 수 있습니다. 4GB 이상의 메모리가 필요하거나 64비트 명령으로 성능을 크게 향상할 수 있는 경우에만 64비트 애플리케이션을 실행하는 것이 좋습니다.
 
 이 확인란은 다음 조건을 충족하는 경우에만 사용할 수 있습니다.
 
 -   **빌드 페이지**에서 **플랫폼 대상** 목록이 **임의 CPU**로 설정되어 있습니다.
 
--   **응용 프로그램 페이지**에서 **출력 형식** 목록의 프로젝트가 응용 프로그램으로 지정됩니다.
+-   **애플리케이션 페이지**에서 **출력 형식** 목록의 프로젝트가 애플리케이션으로 지정됩니다.
 
--   **응용 프로그램 페이지**에서 **대상 프레임워크** 목록이 .NET Framework 4.5로 지정됩니다.
+-   **애플리케이션 페이지**에서 **대상 프레임워크** 목록이 .NET Framework 4.5로 지정됩니다.
 
 
 **안전하지 않은 코드 허용** 컴파일에 [unsafe](/dotnet/csharp/language-reference/keywords/unsafe) 키워드를 사용하는 코드를 허용합니다. 자세한 내용은 [/unsafe(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/unsafe-compiler-option)를 참조하세요.
@@ -94,7 +93,7 @@ ms.locfileid: "38783820"
 
 **XML 문서 파일** 문서 주석을 처리할 대상 파일의 이름을 지정합니다. 자세한 내용은 [/doc(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/doc-compiler-option)를 참조하세요.
 
-**COM Interop 등록** 관리되는 응용 프로그램이 COM 개체가 관리되는 응용 프로그램과 상호 작용할 수 있도록 하는 COM 개체(COM 호출 가능 래퍼)를 표시하도록 지정합니다. **COM interop 등록** 속성을 사용할 수 있으려면 이 응용 프로그램에 대한 **프로젝트 디자이너**의 [응용 프로그램 페이지](../../ide/reference/application-page-project-designer-visual-basic.md)에서 **출력 형식** 속성을 **클래스 라이브러리**로 설정해야 합니다. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 응용 프로그램에 포함하고 COM 개체로 표시할 수 있는 클래스 예제는 [COM 클래스 예제](/dotnet/csharp/programming-guide/interop/example-com-class)를 참조하세요.
+**COM Interop 등록** 관리되는 애플리케이션이 COM 개체가 관리되는 애플리케이션과 상호 작용할 수 있도록 하는 COM 개체(COM 호출 가능 래퍼)를 표시하도록 지정합니다. **COM interop 등록** 속성을 사용할 수 있으려면 이 애플리케이션에 대한 **프로젝트 디자이너**의 [애플리케이션 페이지](../../ide/reference/application-page-project-designer-visual-basic.md)에서 **출력 형식** 속성을 **클래스 라이브러리**로 설정해야 합니다. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 애플리케이션에 포함하고 COM 개체로 표시할 수 있는 클래스 예제는 [COM 클래스 예제](/dotnet/csharp/programming-guide/interop/example-com-class)를 참조하세요.
 
 **serialization 어셈블리 생성** XML serialization 어셈블리를 만드는 데 XML 직렬 변환기 생성기 도구(Sgen.exe)를 사용할지 여부를 지정합니다. 코드에서 형식을 직렬화하는 데 <xref:System.Xml.Serialization.XmlSerializer> 클래스를 사용한 경우 serialization 어셈블리가 해당 클래스의 시작 성능을 향상할 수 있습니다. 기본적으로 이 옵션은 **자동**으로 설정됩니다. 이 설정은 코드에서 형식을 XML로 인코딩하는 데 <xref:System.Xml.Serialization.XmlSerializer>를 사용한 경우에만 serialization 어셈블리가 생성되도록 지정합니다. **끄기**는 코드에서 <xref:System.Xml.Serialization.XmlSerializer>를 사용하는지와 관계없이 serialization 어셈블리가 생성되지 않도록 지정합니다. **켜기**는 serialization 어셈블리가 항상 생성되도록 지정합니다. Serialization 어셈블리의 이름은 `TypeName`.XmlSerializers.dll로 지정됩니다. 자세한 내용은 [XML Serializer 생성기 도구(Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe)를 참조하세요.
 

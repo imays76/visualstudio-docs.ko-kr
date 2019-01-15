@@ -1,8 +1,6 @@
 ---
 title: 모듈 뷰 - 경합 데이터 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Modules view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f9ad65a81820e37c01d55a0ddba441dd30977b4
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: edd882b00c5bdaf62ae280cb0e4986662b05ad83
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256060"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926401"
 ---
 # <a name="modules-view---contention-data"></a>모듈 뷰 - 경합 데이터
 경합 데이터의 모듈 뷰에는 프로파일링 데이터에서 샘플링된 모듈별로 그룹화된 동시성 데이터가 표시됩니다. 각 모듈은 계층 트리의 루트입니다. 경합 이벤트가 발생한 모듈의 함수는 모듈 노드 아래에 나열됩니다.  
@@ -45,7 +43,7 @@ ms.locfileid: "35256060"
 |**소스 파일**|이 함수의 정의가 포함된 소스 파일입니다.|  
   
 ## <a name="see-also"></a>참고 항목  
- [방법: 보고서 뷰 열 사용자 지정](../profiling/how-to-customize-report-view-columns.md)   
+ [방법: 보고서 보기 열 사용자 지정](../profiling/how-to-customize-report-view-columns.md)   
  [모듈 뷰](../profiling/modules-view.md)   
  [모듈 뷰 - 계측](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
  [모듈 뷰 - 샘플링](../profiling/modules-view-dotnet-memory-sampling-data.md)   

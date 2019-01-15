@@ -1,8 +1,6 @@
 ---
 title: '방법: 항목 목록을 쉼표로 구분하여 표시 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, separating items with semicolons
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1507a297c1baf7f410bde1c6d32e48b43a9cdc2
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: cb9645ffef5c6b9208a6d3b940b145068a6bd12d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880237"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854154"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>방법: 항목 목록을 쉼표로 구분하여 표시
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)])에서 항목 목록을 사용할 때 쉽게 읽을 수 있는 방식으로 해당 항목 목록의 내용을 표시하는 데 유용합니다. 또는 특별한 구분 기호 문자열로 구분된 항목의 목록을 사용하는 작업이 있을 수 있습니다. 이러한 모든 경우에 항목 목록에 대한 구분 기호 문자열을 지정할 수 있습니다.  
@@ -44,7 +42,7 @@ ms.locfileid: "48880237"
   
      `@(TXTFile, ', ')`  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  이 예제에서 [Exec](../msbuild/exec-task.md) 작업은 findstr 도구를 실행하여 *Phrases.txt* 파일에 지정된 텍스트 문자열을 찾습니다. findstr 명령에서 리터럴 검색 문자열은 **-c:** 스위치로 나타나므로 항목 구분 기호 `-c:`는 `@(Phrase)` 항목 목록에 있는 항목 사이에 삽입됩니다.  
   
  이 예제에서 해당하는 명령줄 명령은 다음과 같습니다.  

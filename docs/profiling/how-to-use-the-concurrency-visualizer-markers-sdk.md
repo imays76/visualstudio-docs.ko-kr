@@ -1,8 +1,6 @@
 ---
-title: '방법: 동시성 시각화 도우미 표식 SDK 사용 | Microsoft 문서'
-ms.custom: ''
+title: '방법: 동시성 시각화 도우미 표식 SDK 사용 | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 19a45032-f8a7-4137-890e-2ceeec938b8d
 author: mikejo5000
@@ -10,19 +8,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a608c5539e905ba7836f4dcfb5e785dc9630c28a
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 82815ea756d7f7ae72f15d46c5418adb8eb72c80
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844542"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933595"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>방법: 동시성 시각화 도우미 표식 SDK 사용
 이 항목에서는 동시성 시각화 SDK를 사용하여 범위를 만들고 플래그, 메시지 및 경고를 쓰는 방법을 보여 줍니다.  
   
 ### <a name="to-use-c"></a>C++를 사용하려면  
   
-1.  동시성 시각화 SDK 지원을 응용 프로그램에 추가합니다. 자세한 내용은 [동시성 시각화 SDK](../profiling/concurrency-visualizer-sdk.md)를 참조하세요.  
+1.  동시성 시각화 SDK 지원을 애플리케이션에 추가합니다. 자세한 내용은 [동시성 시각화 SDK](../profiling/concurrency-visualizer-sdk.md)를 참조하세요.  
   
 2.  SDK에 대한 `include` 문과 `using` 문을 추가합니다.  
   
@@ -82,7 +80,7 @@ ms.locfileid: "34844542"
   
 ### <a name="to-use-visual-basic-or-c"></a>Visual Basic 또는 C#을 사용하려면 #
   
-1.  동시성 시각화 SDK 지원을 응용 프로그램에 추가합니다. 자세한 내용은 [동시성 시각화 SDK](../profiling/concurrency-visualizer-sdk.md)를 참조하세요.  
+1.  동시성 시각화 SDK 지원을 애플리케이션에 추가합니다. 자세한 내용은 [동시성 시각화 SDK](../profiling/concurrency-visualizer-sdk.md)를 참조하세요.  
   
 2.  SDK에 대한 `using` 또는 `Imports` 문을 추가합니다.  
   

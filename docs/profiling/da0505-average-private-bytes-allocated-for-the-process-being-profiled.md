@@ -1,8 +1,6 @@
 ---
-title: 'DA0505: 프로파일링 중인 프로세스에 할당되는 평균 전용 바이트 | Microsoft 문서'
-ms.custom: ''
+title: 'DA0505: 프로파일링 중인 프로세스에 할당되는 평균 전용 바이트 | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.DA0505
@@ -14,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 14f21857468f73d2a9d6eca50fbd6666ae140ef5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 573d60ef58e62908116d62509c591087ef302258
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934459"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53839614"
 ---
-# <a name="da0505-average-private-bytes-allocated-for-the-process-being-profiled"></a>DA0505: 프로파일링 중인 프로세스에 할당되는 평균 전용 바이트
+# <a name="da0505-average-private-bytes-allocated-for-the-process-being-profiled"></a>DA0505: 프로파일링되고 있는 프로세스에 할당된 평균 전용 바이트
 
 |||  
 |-|-|  
@@ -45,4 +43,4 @@ ms.locfileid: "49934459"
  프로세스 주소 공간에 대한 자세한 내용은 Windows 메모리 관리 설명서에서 [Virtual Address Space](http://go.microsoft.com/fwlink/?LinkId=177832)(가상 주소 공간)를 참조하세요.  
 
 ## <a name="how-to-use-rule-data"></a>규칙 데이터를 사용하는 방법  
- 보고된 값을 사용하여 프로그램의 여러 가지 버전이나 빌드에 대한 성능을 비교하거나 여러 가지 프로파일링 시나리오에서 응용 프로그램의 성능을 파악합니다.
+ 보고된 값을 사용하여 프로그램의 여러 가지 버전이나 빌드에 대한 성능을 비교하거나 여러 가지 프로파일링 시나리오에서 애플리케이션의 성능을 파악합니다.

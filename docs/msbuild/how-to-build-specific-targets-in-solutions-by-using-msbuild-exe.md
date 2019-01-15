@@ -1,8 +1,6 @@
 ---
-title: '방법: MSBuild.exe를 사용하여 솔루션의 특정 대상 빌드 | Microsoft 문서'
-ms.custom: ''
+title: '방법: MSBuild.exe를 사용하여 솔루션의 특정 대상 빌드 | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, building specific targets in a solution
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb1dc2885d64999ac9f4d12568fd7da29a783d8e
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 12405ef76955c9200fd5a83a079b7e0155f3dd09
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880658"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924009"
 ---
 # <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>방법: MSBuild.exe를 사용하여 솔루션의 특정 대상 빌드
 *MSBuild.exe*를 사용하여 솔루션에서 특정 프로젝트의 특정 대상을 빌드할 수 있습니다.  
@@ -30,7 +28,7 @@ ms.locfileid: "48880658"
   
 2. `-target:` 스위치 뒤에 대상을 \<ProjectName>:\<TargetName> 형식으로 지정합니다. 프로젝트 이름에 `%`, `$`, `@`, `;`, `.`, `(`, `)` 또는 `'` 문자를 포함하는 경우 지정된 대상 이름에서 `_`로 변경합니다.
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 `NotInSlnFolder` 프로젝트의 `Rebuild` 대상을 실행한 다음, *NewFolder* 솔루션 폴더에 있는 `InSolutionFolder` 프로젝트의 `Clean` 대상을 실행합니다.  
   
 ```cmd

@@ -1,8 +1,6 @@
 ---
 title: GenerateBootstrapper 작업 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateBootstrapper
@@ -20,15 +18,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 53ad85f77d014d534d625b8d08e36b7eb8c01f7f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 65e8980df4d98e4d7c76df43f32d7ca0a224e699
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895732"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891844"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper 작업
-응용 프로그램과 해당 필수 조건을 검색, 다운로드, 설치할 수 있는 자동화된 방법을 제공합니다. 이 작업은 응용 프로그램을 구성하는 모든 구성 요소에 대한 개별 설치 관리자를 통합하는 단일 설치 관리자로 사용됩니다.  
+애플리케이션과 해당 필수 조건을 검색, 다운로드, 설치할 수 있는 자동화된 방법을 제공합니다. 이 작업은 애플리케이션을 구성하는 모든 구성 요소에 대한 개별 설치 관리자를 통합하는 단일 설치 관리자로 사용됩니다.  
   
 ## <a name="task-parameters"></a>작업 매개 변수  
  다음에서는 `GenerateBootstrapper` 작업의 매개 변수에 대해 설명합니다.  
@@ -37,13 +35,13 @@ ms.locfileid: "49895732"
   
    선택적 `String` 매개 변수입니다.  
   
-   모든 필수 조건이 설치된 후 부트스트래퍼가 응용 프로그램의 설치를 시작하는 데 사용할 파일을 지정합니다. `BootstrapperItems` 및 `ApplicationFile` 매개 변수를 둘 다 지정하지 않으면 빌드 오류가 발생합니다.  
+   모든 필수 조건이 설치된 후 부트스트래퍼가 애플리케이션의 설치를 시작하는 데 사용할 파일을 지정합니다. `BootstrapperItems` 및 `ApplicationFile` 매개 변수를 둘 다 지정하지 않으면 빌드 오류가 발생합니다.  
   
 - `ApplicationName`  
   
    선택적 `String` 매개 변수입니다.  
   
-   부트스트래퍼가 설치할 응용 프로그램의 이름을 지정합니다. 이 이름은 설치 중에 부트스트래퍼가 사용하는 UI에 표시됩니다.  
+   부트스트래퍼가 설치할 애플리케이션의 이름을 지정합니다. 이 이름은 설치 중에 부트스트래퍼가 사용하는 UI에 표시됩니다.  
   
 - `ApplicationRequiresElevation`  
   
@@ -55,7 +53,7 @@ ms.locfileid: "49895732"
   
    선택적 `String` 매개 변수입니다.  
   
-   응용 프로그램의 설치 관리자를 호스트 중인 웹 위치를 지정합니다.  
+   애플리케이션의 설치 관리자를 호스트 중인 웹 위치를 지정합니다.  
   
 - `BootstrapperComponentFiles`  
   
@@ -78,7 +76,7 @@ ms.locfileid: "49895732"
   </BootstrapperItem>  
   ```  
   
-   `Include` 특성은 설치해야 하는 필수 조건의 이름을 나타냅니다. `ProductName` 항목 메타데이터는 선택 사항이고, 패키지를 찾을 수 없는 경우 빌드 엔진에서 사용자에게 친숙한 이름으로 사용됩니다. `ApplicationFile`을 지정할 경우에만 이러한 항목이 필수 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 입력 매개 변수입니다. 응용 프로그램용으로 설치되어야 하는 필수 조건별로 하나의 항목을 포함해야 합니다.  
+   `Include` 특성은 설치해야 하는 필수 조건의 이름을 나타냅니다. `ProductName` 항목 메타데이터는 선택 사항이고, 패키지를 찾을 수 없는 경우 빌드 엔진에서 사용자에게 친숙한 이름으로 사용됩니다. `ApplicationFile`을 지정할 경우에만 이러한 항목이 필수 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 입력 매개 변수입니다. 애플리케이션용으로 설치되어야 하는 필수 조건별로 하나의 항목을 포함해야 합니다.  
   
    `BootstrapperItems` 및 `ApplicationFile` 매개 변수를 둘 다 지정하지 않으면 빌드 오류가 발생합니다.  
   
@@ -94,9 +92,9 @@ ms.locfileid: "49895732"
   
    설치할 설치 필수 조건을 검색할 부트스트래퍼의 위치를 지정합니다. 이 매개 변수는 다음 값 중 하나를 가질 수 있습니다.  
   
-  - `HomeSite`: 필수 조건이 구성 요소 공급업체에서 호스트되고 있음을 나타냅니다.  
+  - `HomeSite`: 필수 구성 요소가 구성 요소 공급업체에서 호스트되고 있음을 나타냅니다.  
   
-  - `Relative`: 필수 조건이 응용 프로그램의 같은 위치에 있음을 나타냅니다.  
+  - `Relative`: 필수 구성 요소가 애플리케이션의 같은 위치에 있음을 나타냅니다.  
   
   - `Absolute`: 모든 구성 요소를 중앙 URL에서 찾을 수 있음을 나타냅니다. 이 값은 `ComponentsUrl` 입력 매개 변수와 함께 사용해야 합니다.  
   
@@ -150,11 +148,11 @@ ms.locfileid: "49895732"
   
    `true`인 경우 부트스트래퍼가 지정된 입력 부트스트래퍼 항목에 대해 XSD 유효성 검사를 수행합니다. 이 매개 변수의 기본값은 `false`입니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension 기본 클래스](../msbuild/taskextension-base-class.md)를 참조하세요.  
   
-## <a name="example"></a>예  
- 다음 예제에서는 `GenerateBootstrapper` 작업을 사용하여 [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]가 필수 조건으로 설치되어야 하는 응용 프로그램을 설치합니다.  
+## <a name="example"></a>예제  
+ 다음 예제에서는 `GenerateBootstrapper` 작업을 사용하여 [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]가 필수 조건으로 설치되어야 하는 애플리케이션을 설치합니다.  
   
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  

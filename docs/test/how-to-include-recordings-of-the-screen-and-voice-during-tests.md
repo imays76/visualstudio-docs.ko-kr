@@ -9,13 +9,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 1470ab88cb21a7a80fa46f57f944ec5df21d544f
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 8fd8d07274d67f590de1ab22a3bdfa641b07f847
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894415"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832140"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>방법: 테스트 설정을 사용하여 테스트를 수행하는 중에 화면 및 음성의 녹화/녹음 포함
 
@@ -24,7 +23,7 @@ Visual Studio의 구성 편집기에서 화면 및 테스트를 실행하는 사
 > [!WARNING]
 > 화면 및 음성 기록에서는 다중 모니터 구성이 지원되지 않습니다.
 
-화면 및 음성 레코더는 수동 또는 자동 테스트에서 사용할 수 있습니다. 예를 들어 코딩된 UI 테스트를 원격으로 실행하는 경우 컴퓨터 화면을 녹화하여 코딩된 UI 테스트가 실행되는 과정을 확인할 수 있습니다. 원격으로 화면 및 음성 기록을 캡처하는 방법에 대한 자세한 내용은 [방법: 데스크톱과 상호 작용하는 테스트를 실행하기 위해 테스트 에이전트 설정](../test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop.md)을 참조하세요.
+화면 및 음성 레코더는 수동 또는 자동 테스트에서 사용할 수 있습니다. 예를 들어 코딩된 UI 테스트를 원격으로 실행하는 경우 컴퓨터 화면을 녹화하여 코딩된 UI 테스트가 실행되는 과정을 확인할 수 있습니다. 원격으로 화면 및 음성 기록을 캡처하는 방법에 대한 자세한 내용은 [방법: 데스크톱과 상호 작용하는 테스트를 실행하도록 테스트 에이전트 설정](../test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop.md)을 참조하세요.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 

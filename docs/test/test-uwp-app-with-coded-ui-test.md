@@ -2,7 +2,6 @@
 title: 코딩된 UI 테스트로 UWP 앱 테스트
 ms.date: 05/31/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
@@ -12,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: 3dcbd6065d45bf5350b80d555f335d3b8ec1cec7
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 2ee648a11c04f9ff6da2f7113c37424b4f1f6388
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895966"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842046"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>UWP 앱을 테스트하기 위한 코딩된 UI 테스트 만들기
 
@@ -207,7 +206,7 @@ ms.locfileid: "52895966"
 
 ## <a name="q--a"></a>Q&A
 
-### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>Q: [코딩된 UI 테스트용으로 코드 생성] 대화 상자에 나의 코딩된 UI 테스트를 기록할 수 있는 옵션이 표시되지 않는 이유는 무엇인가요?
+### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>Q: 코딩된 UI 테스트용으로 코드 생성 대화 상자에 내 코딩된 UI 테스트를 기록할 수 있는 옵션이 표시되지 않는 이유는 무엇인가요?
 
 **A**: UWP 앱의 경우 기록 옵션이 지원되지 않습니다.
 

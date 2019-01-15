@@ -1,9 +1,7 @@
 ---
-title: '5단계: 폼에 컨트롤 추가'
-ms.custom: ''
+title: '5단계: 양식에 컨트롤 추가'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: dc2746f4-0b5c-4674-9ef7-f40f94150f52
 author: TerryGLee
@@ -11,17 +9,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7a0167d4d5af125e706350002ccf8a17e459414
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: bd07924f98c969340fbe2c7ccb88f4227a61026b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748558"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968432"
 ---
-# <a name="step-5-add-controls-to-your-form"></a>5단계: 폼에 컨트롤 추가
+# <a name="step-5-add-controls-to-your-form"></a>5단계: 양식에 컨트롤 추가
 이 단계에서는 <xref:System.Windows.Forms.PictureBox> 컨트롤 및 <xref:System.Windows.Forms.CheckBox> 컨트롤과 같은 컨트롤을 폼에 추가합니다. 폼에 <xref:System.Windows.Forms.Button> 컨트롤을 추가합니다.
 
- ![비디오 링크](../data-tools/media/playvideo.gif)이 항목의 비디오 버전의 경우, [Tutorial 1: Create a picture viewer in Visual Basic - Video 2](http://go.microsoft.com/fwlink/?LinkId=205211)(자습서 1: Visual Basic에서 사진 뷰어 만들기 - 비디오 2) 또는 [Tutorial 1: Create a picture viewer in C# - Video 2](http://go.microsoft.com/fwlink/?LinkId=205200)(자습서 1: C#에서 사진 뷰어 만들기 - 비디오 2)를 참조하세요. 이러한 비디오에서는 이전 버전의 Visual Studio를 사용하므로 일부 메뉴 명령과 기타 사용자 인터페이스 요소가 약간 다를 수 있습니다. 그러나 개념 및 절차는 Visual Studio의 현재 버전에서 비슷하게 작동합니다.
+ ![비디오 링크](../data-tools/media/playvideo.gif) 이 항목의 비디오 버전은 [자습서 1: Visual Basic에서 사진 뷰어 만들기 - 비디오2](http://go.microsoft.com/fwlink/?LinkId=205211) 또는 [자습서 1: C#에서 사진 뷰어 만들기 - 자습서 2](http://go.microsoft.com/fwlink/?LinkId=205200)를 참조하세요. 이러한 비디오에서는 이전 버전의 Visual Studio를 사용하므로 일부 메뉴 명령과 기타 사용자 인터페이스 요소가 약간 다를 수 있습니다. 그러나 개념 및 절차는 Visual Studio의 현재 버전에서 비슷하게 작동합니다.
 
 ## <a name="to-add-controls-to-your-form"></a>폼에 컨트롤을 추가하려면
 
@@ -83,4 +81,4 @@ ms.locfileid: "34748558"
 
 -   다음 자습서 단계로 이동하려면 [6단계: 단추 컨트롤 이름 지정](../ide/step-6-name-your-button-controls.md)을 참조하세요.
 
--   이전 자습서 단계로 돌아가려면 [4단계: TableLayoutPanel 컨트롤을 사용하여 폼 레이아웃](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)을 참조하세요.
+-   이전 자습서 단계로 돌아가려면 [4단계: TableLayoutPanel 컨트롤을 사용하여 양식 레이아웃](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)을 참조하세요.

@@ -2,7 +2,6 @@
 title: 보안 및 지역화된 위성 어셈블리
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - key pairs for strong-named assemblies
@@ -19,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b7eb391f01bc5a709aeaf0002ac647c358355e5f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4d0c38ae4353c7761b1cff4173b995ab6c89e0a4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943750"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892055"
 ---
 # <a name="security-and-localized-satellite-assemblies"></a>보안 및 지역화된 위성 어셈블리
 
@@ -35,6 +34,6 @@ ms.locfileid: "31943750"
 ## <a name="see-also"></a>참고 항목
 
 - [어셈블리 보안 고려 사항](/dotnet/framework/app-domains/assembly-security-considerations)  - [주요 보안 개념](/dotnet/standard/security/key-security-concepts)
-- [.NET Framework 기반의 국가별 응용 프로그램 소개](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)
-- [응용 프로그램 지역화](../ide/localizing-applications.md)
-- [응용 프로그램 전역화 및 지역화](../ide/globalizing-and-localizing-applications.md)
+- [.NET Framework 기반의 국가별 애플리케이션 소개](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)
+- [애플리케이션 지역화](../ide/localizing-applications.md)
+- [애플리케이션 전역화 및 지역화](../ide/globalizing-and-localizing-applications.md)

@@ -1,8 +1,6 @@
 ---
 title: 함수 뷰 - 경합 데이터 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Functions view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b7444a4d3e8ad6e3f5fdd91d34058e20e13caf38
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: b92d19c48f91d6094136d0ac8d2d6b276b59707d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237544"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920026"
 ---
 # <a name="functions-view---contention-data"></a>함수 뷰 - 경합 데이터
 경함 데이터의 함수 보고서 뷰는 프로파일링 실행 중에 실행에서 차단된 프로파일링 실행 시 함수를 나열합니다.  
@@ -44,7 +42,7 @@ ms.locfileid: "35237544"
 |**소스 파일**|이 함수의 정의가 포함된 소스 파일입니다.|  
   
 ## <a name="see-also"></a>참고 항목  
- [방법: 보고서 뷰 열 사용자 지정](../profiling/how-to-customize-report-view-columns.md)   
+ [방법: 보고서 보기 열 사용자 지정](../profiling/how-to-customize-report-view-columns.md)   
  [함수 뷰](../profiling/functions-view.md)   
  [함수 뷰 - 계측](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
  [함수 뷰 - 샘플링](../profiling/functions-view-dotnet-memory-sampling-data.md)   

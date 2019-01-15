@@ -2,7 +2,6 @@
 title: 옵션 대화 상자, 환경, 웹 브라우저
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.Environment.Web Browser
@@ -24,12 +23,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56bd77bb833e0fcc7e4e6e35304387d23b7c3f52
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 9bdfc727e3214292aade933abde6d6671c4b02fe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389447"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955161"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>옵션 대화 상자, 환경, 웹 브라우저
 
@@ -55,7 +54,7 @@ IDE 웹 브라우저를 열 때 표시되는 페이지를 설정합니다.
 
 -   **소스 편집기** [편집기](../../ide/writing-code-in-the-code-and-text-editor.md)에서 소스를 보려면 선택합니다.
 
--   **HTML 편집기** [HTML 디자이너](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)에서 소스를 보려면 선택합니다. 디자인 뷰 또는 표준 텍스트 기반 소스 뷰 중 하나에서 웹 페이지를 편집하려면 이 선택을 사용합니다.
+-   **HTML 편집기** [HTML 디자이너](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)에서 소스를 보려면 선택합니다. 다음 두 보기 중 하나에서 웹 페이지를 편집하려면 이 선택 영역을 사용합니다. 디자인 보기 또는 표준 텍스트 기반 원본 보기
 
 -   **외부 편집기** 다른 편집기에서 소스를 보려면 선택합니다. Notepad.exe 등 선택한 편집기의 경로를 지정합니다.
 

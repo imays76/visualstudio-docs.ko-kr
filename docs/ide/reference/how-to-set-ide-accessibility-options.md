@@ -3,7 +3,6 @@ title: '방법: IDE 접근성 옵션 설정'
 description: 시각 장애인의 읽기와 손 장애인의 쓰기를 포함해 IDE(통합 개발 환경)가 모든 이의 사용을 도와줄 Visual Studio의 접근성 옵션을 설정 하는 방법에 대해 알아봅니다.
 ms.date: 08/22/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility [Visual Studio]
@@ -13,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df94a57358edd9619b43bbcddb26d4e3485a1ab1
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 3c8fa92644221149d3405eea25b1c85e229861e4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388428"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906776"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>방법: IDE 접근성 옵션 설정
 
@@ -78,7 +77,7 @@ ms.locfileid: "52388428"
  편집기에서 텍스트, 여백 표시기, 공백 및 코드 요소의 기본색을 변경할 수도 있습니다.
 
 > [!NOTE]
-> 운영 체제의 모든 응용 프로그램 창에 고대비 색을 사용하려면 왼쪽 <strong>ALT+</strong>왼쪽 **SHIFT+PRINT SCREEN**을 누릅니다. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]가 열릴 경우 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]를 닫았다 열면 고대비 색이 완전히 구현됩니다.
+> 운영 체제의 모든 애플리케이션 창에 고대비 색을 사용하려면 왼쪽 <strong>ALT+</strong>왼쪽 **SHIFT+PRINT SCREEN**을 누릅니다. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]가 열릴 경우 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]를 닫았다 열면 고대비 색이 완전히 구현됩니다.
 
 #### <a name="to-change-the-color-of-items-in-the-editor"></a>편집기에서 항목의 색을 변경하려면
 
@@ -90,7 +89,7 @@ ms.locfileid: "52388428"
 
 4.  **표시 항목**에서 변경해야 하는 표시가 포함된 항목을 선택합니다(예: **일반 텍스트**, **표시기 여백**, **공백 표시**, **HTML 특성 이름** 또는 **XML 특성**).
 
-5.  **항목 전경**, **항목 배경** 및 **굵게** 옵션에서 표시 설정을 선택합니다.
+5.  다음 옵션 중에서 표시 설정을 선택합니다. **항목 전경**, **항목 배경** 및 **볼드**
 
 6.  **확인**을 선택합니다.
 
@@ -121,4 +120,4 @@ ms.locfileid: "52388428"
 ## <a name="see-also"></a>참고 항목
 
 * [Visual Studio의 접근성 기능](../../ide/reference/accessibility-features-of-visual-studio.md)
-* [액세스 가능한 응용 프로그램 설계를 위한 리소스](../../ide/reference/resources-for-designing-accessible-applications.md)
+* [액세스 가능한 애플리케이션 설계를 위한 리소스](../../ide/reference/resources-for-designing-accessible-applications.md)

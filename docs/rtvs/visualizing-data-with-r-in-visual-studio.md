@@ -3,19 +3,18 @@ title: R을 사용하여 코드 시각화
 description: 플롯 창을 사용하여 Visual Studio의 R 프로그램에서 데이터를 그리는 방법입니다.
 ms.date: 06/29/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: f44ba213defef153acd2f5d1ef247bb093448263
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 8b0c633e3236f537e9f631df12a5af597e67475c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235452"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859083"
 ---
 # <a name="create-visual-data-plots-with-r"></a>R을 사용하여 시각적 데이터 플롯 만들기
 
@@ -87,7 +86,7 @@ ms.locfileid: "36235452"
 
 디바이스 번호를 통해 특정 플롯 창을 식별하여 R 코드에서 플롯 창을 프로그래밍 방식으로 조작할 수 있습니다. 
 
-- `dev.list()`: 현재 R 세션 내의 그래픽 장치를 모두 나열합니다.
-- `dev.new()`: 새 그래픽 장치를 만듭니다(새 플롯 장치).
-- `dev.set(<device number>)`: 활성 그래픽 장치를 설정합니다.
-- `dev.off()`: 활성 장치를 삭제합니다.
+- `dev.list()`: 현재 R 세션 내의 그래픽 디바이스를 모두 나열합니다.
+- `dev.new()`: 새 그래픽 디바이스를 만듭니다(새 플롯 디바이스).
+- `dev.set(<device number>)`: 활성 그래픽 디바이스를 설정합니다.
+- `dev.off()`: 활성 디바이스를 삭제합니다.

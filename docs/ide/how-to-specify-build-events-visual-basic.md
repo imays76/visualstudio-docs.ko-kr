@@ -2,7 +2,6 @@
 title: '방법: 빌드 이벤트 지정(Visual Basic)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - pre-build events
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24eb6d7637f949abf60eeb2d0659fac1bfa1cae7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 60f1ab9444c38514646a5ef1147b3f1b0473289e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831739"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828867"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>방법: 빌드 이벤트 지정(Visual Basic)
 
@@ -52,7 +51,7 @@ Visual Basic의 빌드 이벤트는 스크립트, 매크로 또는 기타 작업
 
 ## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>예제: 빌드 후 이벤트를 사용하여 매니페스트 정보를 변경하는 방법
 
-다음 절차에서는 빌드 후 이벤트에서 호출된 *.exe* 명령을 사용하여 응용 프로그램 매니페스트의 최소 운영 체제 버전을 설정하는 방법을 보여줍니다(프로젝트 디렉터리의 *.exe.manifest* 파일). 최소 운영 체제 버전은 네 부분으로 구성된 번호입니다(예: 4.10.0.0). 이를 위해 명령은 매니페스트의 `<dependentOS>` 섹션을 변경합니다.
+다음 절차에서는 빌드 후 이벤트에서 호출된 *.exe* 명령을 사용하여 애플리케이션 매니페스트의 최소 운영 체제 버전을 설정하는 방법을 보여줍니다(프로젝트 디렉터리의 *.exe.manifest* 파일). 최소 운영 체제 버전은 네 부분으로 구성된 번호입니다(예: 4.10.0.0). 이를 위해 명령은 매니페스트의 `<dependentOS>` 섹션을 변경합니다.
 
 ```xml
 <dependentOS>
@@ -62,11 +61,11 @@ Visual Basic의 빌드 이벤트는 스크립트, 매크로 또는 기타 작업
 </dependentOS>
 ```
 
-### <a name="to-create-an-exe-command-to-change-the-application-manifest"></a>.exe 명령을 만들어 응용 프로그램 매니페스트를 변경하려면
+### <a name="to-create-an-exe-command-to-change-the-application-manifest"></a>.exe 명령을 만들어 애플리케이션 매니페스트를 변경하려면
 
-1. 명령에 대한 콘솔 응용 프로그램을 만듭니다. **파일** 메뉴에서 **새로 만들기**를 클릭한 다음 **프로젝트**를 클릭합니다.
+1. 명령에 대한 콘솔 애플리케이션을 만듭니다. **파일** 메뉴에서 **새로 만들기**를 클릭한 다음 **프로젝트**를 클릭합니다.
 
-2. **새 프로젝트** 대화 상자의 **Visual Basic** 노드에서 **창** 및 **콘솔 응용 프로그램** 템플릿을 차례로 선택합니다. 프로젝트 이름을 `ChangeOSVersionVB`로 지정합니다.
+2. **새 프로젝트** 대화 상자의 **Visual Basic** 노드에서 **창** 및 **콘솔 애플리케이션** 템플릿을 차례로 선택합니다. 프로젝트 이름을 `ChangeOSVersionVB`로 지정합니다.
 
 3. *Module1.vb*에서 파일 맨 위의 다른 `Imports` 문에 다음 줄을 추가합니다.
 
@@ -117,17 +116,17 @@ Visual Basic의 빌드 이벤트는 스크립트, 매크로 또는 기타 작업
    End Sub
    ```
 
-   이 명령은 두 개의 인수를 사용합니다. 첫 번째 인수는 응용 프로그램 매니페스트의 경로(즉, 빌드 프로세스에서 매니페스트를 만드는 폴더, 일반적으로 *<Projectname>.publish*)입니다. 두 번째 인수는 새 운영 체제 버전입니다.
+   이 명령은 두 개의 인수를 사용합니다. 첫 번째 인수는 애플리케이션 매니페스트의 경로(즉, 빌드 프로세스에서 매니페스트를 만드는 폴더, 일반적으로 *<Projectname>.publish*)입니다. 두 번째 인수는 새 운영 체제 버전입니다.
 
 5. **빌드** 메뉴에서 **솔루션 빌드**를 클릭합니다.
 
 6. *.exe* 파일을 *C:\TEMP\ChangeOSVersionVB.exe*와 같은 디렉터리에 복사합니다.
 
-   다음으로 빌드 후 이벤트에서 이 명령을 호출하여 응용 프로그램 매니페스트를 변경합니다.
+   다음으로 빌드 후 이벤트에서 이 명령을 호출하여 애플리케이션 매니페스트를 변경합니다.
 
-### <a name="to-invoke-a-post-build-event-to-change-the-application-manifest"></a>빌드 후 이벤트를 호출하여 응용 프로그램 매니페스트를 변경하려면
+### <a name="to-invoke-a-post-build-event-to-change-the-application-manifest"></a>빌드 후 이벤트를 호출하여 애플리케이션 매니페스트를 변경하려면
 
-1.  프로젝트를 게시할 Windows 응용 프로그램을 만듭니다. **파일** 메뉴에서 **새로 만들기**를 클릭한 다음 **프로젝트**를 클릭합니다.
+1.  프로젝트를 게시할 Windows 애플리케이션을 만듭니다. **파일** 메뉴에서 **새로 만들기**를 클릭한 다음 **프로젝트**를 클릭합니다.
 
 2.  **새 프로젝트** 대화 상자의 **Visual Basic**에서 **Windows 바탕 화면** 및 **Windows Forms 앱** 템플릿을 차례로 선택합니다. 프로젝트 이름을 `VBWinApp`로 지정합니다.
 3.  **솔루션 탐색기**에서 프로젝트를 선택한 상태에서 **프로젝트** 메뉴에서 **속성**을 클릭합니다.
@@ -150,9 +149,9 @@ Visual Basic의 빌드 이벤트는 스크립트, 매크로 또는 기타 작업
 
      `C:\TEMP\ChangeOSVersionVB.exe "$(TargetPath).manifest" 5.1.2600.0`
 
-     프로젝트를 빌드할 때 이 명령은 응용 프로그램 매니페스트의 최소 운영 체제 버전을 5.1.2600.0으로 변경합니다.
+     프로젝트를 빌드할 때 이 명령은 애플리케이션 매니페스트의 최소 운영 체제 버전을 5.1.2600.0으로 변경합니다.
 
-     `$(TargetPath)` 매크로는 작성 중인 실행 파일에 대한 전체 경로를 나타냅니다. 따라서 *$(TargetPath).manifest*는 *bin* 디렉터리에서 만든 응용 프로그램 매니페스트를 지정합니다. 게시를 수행하면 이 매니페스트가 이전에 설정한 게시 위치에 복사됩니다.
+     `$(TargetPath)` 매크로는 작성 중인 실행 파일에 대한 전체 경로를 나타냅니다. 따라서 *$(TargetPath).manifest*는 *bin* 디렉터리에서 만든 애플리케이션 매니페스트를 지정합니다. 게시를 수행하면 이 매니페스트가 이전에 설정한 게시 위치에 복사됩니다.
 
 8.  프로젝트를 다시 게시합니다. **게시** 페이지로 이동하고 **지금 게시**를 클릭합니다.
 

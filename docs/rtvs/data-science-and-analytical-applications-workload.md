@@ -3,7 +3,6 @@ title: 데이터 과학 및 분석 애플리케이션 워크로드
 description: Visual Studio 워크로드는 Python, R, F# 및 Anaconda를 비롯한 해당 런타임 배포를 통합합니다.
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3d9815c72a500f9edd3b01f76dae3411ac0ee50f
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: ebaf77963968edd61aa0109c7b16964af7fac90c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626868"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891166"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>Visual Studio에서 데이터 과학 지원 설치
 
@@ -60,13 +59,13 @@ SQL Server는 SQL Server 내에서 직접 고급 분석을 수행하도록 R 및
 
 데이터가 이미 있는 코드를 실행하여 다음과 같은 장점을 활용할 수 있습니다.
 
-- **데이터 이동의 제거**: 데이터베이스에서 응용 프로그램 또는 모델로 데이터를 이동하는 대신 데이터베이스에서 R 및 Python 응용 프로그램을 빌드할 수 있습니다. 이 기능은 보안의 장벽, 규정 준수, 거버넌스, 무결성 및 방대한 양의 데이터 이동과 관련된 호스트의 비슷한 문제를 제거합니다. 또한 클라이언트 머신의 메모리에 맞출 수 없는 데이터 세트를 사용할 수 있습니다.
+- **데이터 이동의 제거**: 데이터베이스에서 애플리케이션 또는 모델로 데이터를 이동하는 대신 데이터베이스에서 R 및 Python 애플리케이션을 빌드할 수 있습니다. 이 기능은 보안의 장벽, 규정 준수, 거버넌스, 무결성 및 방대한 양의 데이터 이동과 관련된 호스트의 비슷한 문제를 제거합니다. 또한 클라이언트 머신의 메모리에 맞출 수 없는 데이터 세트를 사용할 수 있습니다.
 
 - **간편한 배포**: R 또는 Python 모델의 준비가 완료되면 프로덕션에 배포하기 위해 T-SQL 스크립트에 포함하기만 하면 됩니다. 어떠한 언어로 작성된 모든 SQL 클라이언트 애플리케이션은 저장된 프로시저 호출을 통해 모델 및 인텔리전스를 활용할 수 있습니다. 특정 R 또는 Python 통합이 필요하지 않습니다.
 
 - **엔터프라이즈급 성능 및 확장성**: RevoScaleR 및 RevoScalePy 패키지의 고성능 확장 가능한 API를 사용하여 메모리 내 테이블 및 열 저장소 인덱스와 같은 SQL Server의 고급 기능을 사용할 수 있습니다. 데이터 이동의 제거는 데이터가 확대되거나 애플리케이션의 성능을 향상시키기 원하므로 클라이언트 메모리 제약 조건을 방지하는 것을 의미하기도 합니다.
 
-- **풍부한 확장성**: SQL Server에서 최신 오픈 소스 R 또는 Python 패키지를 설치하고 실행하여 SQL Server에서 엄청난 양의 데이터에 대한 딥 러닝 및 AI 응용 프로그램을 빌드할 수 있습니다. SQL Server에 패키지를 설치하는 것은 로컬 컴퓨터에 패키지를 설치하는 것만큼 간단합니다.
+- **강력한 확장성**: SQL Server에서 최신 오픈 소스 R 또는 Python 패키지를 설치하고 실행하여 SQL Server에서 엄청난 양의 데이터에 대한 딥 러닝 및 AI 애플리케이션을 빌드할 수 있습니다. SQL Server에 패키지를 설치하는 것은 로컬 컴퓨터에 패키지를 설치하는 것만큼 간단합니다.
 
 - **추가 비용 없는 광범위한 가용성**: R 및 Python 통합은 Express 버전을 포함하여 SQL Server 2017 이상의 모든 버전에서 사용할 수 있습니다. (R 지원은 SQL Server 2016 이상에서 사용할 수 있습니다.)
 

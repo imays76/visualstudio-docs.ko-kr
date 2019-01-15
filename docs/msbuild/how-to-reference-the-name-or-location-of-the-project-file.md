@@ -1,8 +1,6 @@
 ---
-title: '방법: 프로젝트 파일의 이름 또는 위치 참조 | Microsoft 문서'
-ms.custom: ''
+title: '방법: 프로젝트 파일의 이름 또는 위치 참조 | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - locations, referencing
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dceca1e518783f405490d3f2527156bd20bf81aa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0ce03be9eb9d1fa4926eb1100f9a2aad5612a61d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911527"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906035"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>방법: 프로젝트 파일의 이름 또는 위치 참조
 자체 속성을 만들 필요 없이 프로젝트 파일 자체에 있는 프로젝트의 이름 또는 위치를 사용할 수 있습니다. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]는 프로젝트 파일 이름 및 프로젝트와 관련된 기타 속성을 참조하는 예약된 속성을 제공합니다. 예약된 속성에 대한 자세한 내용은 [MSBuild의 예약된 속성 및 잘 알려진 속성](../msbuild/msbuild-reserved-and-well-known-properties.md)을 참조하세요.  
@@ -46,7 +44,7 @@ ms.locfileid: "49911527"
 > [!NOTE]
 >  프로젝트 파일에서 예약된 속성을 다시 정의할 수 없습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제 프로젝트 파일은 출력의 이름을 지정하기 위해 프로젝트 이름을 예약된 속성으로 참조합니다.  
   
 ```xml  
@@ -74,7 +72,7 @@ ms.locfileid: "49911527"
 </Project>  
 ```  
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 예제 프로젝트 파일에서는 `MSBuildProjectDirectory` 예약된 속성을 사용하여 프로젝트 파일 위치에 파일에 대한 전체 경로를 만듭니다.  
   
 ```xml  

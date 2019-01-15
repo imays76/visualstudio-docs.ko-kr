@@ -1,8 +1,6 @@
 ---
 title: 보고서 뷰 필터링 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, configuring
@@ -12,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf8e172f6693b4efcff1cfff3eb8c79178bb9f90
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d4922020a6020630ce54767e788b14a1ed7c0462
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919171"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986377"
 ---
 # <a name="filter-report-views"></a>보고서 뷰 필터링
 프로파일링 데이터 파일에 필터를 적용하여 성능 보고서 뷰에 표시되고 보고서 파일로 내보내는 프로파일링 데이터를 제한할 수 있습니다. 타임스탬프 값 사이의 데이터로 보고서를 제한하고, 특정 프로세스 및 스레드로 데이터를 제한할 수 있습니다. 파일에 필터를 저장한 다음 저장된 필터를 가져와서 다른 프로파일링 데이터 파일에서 필터를 만들 수 있습니다.  
   
- 요약 뷰에서 그래픽 타임라인을 사용하여 보고서를 시간 세그먼트로 제한할 수도 있습니다. [방법: 요약 타임라인에서 보고서 뷰 필터링](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)을 참조하세요.  
+ 요약 뷰에서 그래픽 타임라인을 사용하여 보고서를 시간 세그먼트로 제한할 수도 있습니다. [방법: 요약 타임라인에서 보고서 보기 필터링](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)을 참조하세요.  
   
- 보고서에서 시스템 및 타사 코드를 제외하려면 [방법: 내 코드만 표시하도록 프로파일링 도구 보고서 뷰 필터링](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)을 참조하세요.  
+ 보고서에서 시스템과 타사 코드를 제외하려면 다음을 참조하세요. [방법: 내 코드만 표시하도록 프로파일링 도구 보고서 뷰 필터링](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)  
   
 ## <a name="procedures"></a>절차  
   

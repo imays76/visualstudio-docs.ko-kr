@@ -1,8 +1,6 @@
 ---
 title: '방법: 빌드할 파일 선택 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, wildcards
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ef956b94ca263dac5ce57c7b122576060bb7a05
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2fd4475f149627776480fb54ec821298bf74b700
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820670"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875409"
 ---
 # <a name="how-to-select-the-files-to-build"></a>방법: 빌드할 파일 선택
 여러 파일이 포함된 프로젝트를 빌드할 경우 각 파일을 프로젝트 파일에 개별적으로 나열하거나, 와일드카드를 사용하여 모든 파일을 하나의 디렉터리 또는 중첩된 디렉터리 집합에 포함할 수 있습니다.  
@@ -103,7 +101,7 @@ ms.locfileid: "49820670"
 > 
 >  `<CSC Sources="*.cs">...</CSC>`  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드 예제에서는 모든 입력 파일을 개별적으로 포함하는 프로젝트를 보여 줍니다.  
   
 ```xml  
@@ -137,7 +135,7 @@ ms.locfileid: "49820670"
 </Project>  
 ```  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드 예제에서는 와일드카드를 사용하여 모든 *.cs* 파일을 포함합니다.  
   
 ```xml  

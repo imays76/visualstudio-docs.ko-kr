@@ -9,20 +9,20 @@ description: 일부 Visual Studio 구독에 포함된 Office 365 혜택을 알�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: eef2adf189650da528c2f76df88ff8b648ad7ba4
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: d68c8847dc9ab6f4daeaceb07dbd4023ca2148f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802110"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968393"
 ---
-# <a name="office-365-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Office 365
+# <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Office 365 Pro Plus
 
-최상의 작업을 만들 수 있습니다. 항상 업데이트되는 앱을 사용하여 어디서든 작업할 수 있습니다. Office 365는 Word, Excel, PowerPoint, OneNote, Outlook, Publisher 및 Access(PC에서만 사용 가능한 Publisher 및 Access)와 같은 프리미엄 앱과 함께 제공되는 구독입니다. PC, Mac, iPad, iPhone, Android 태블릿 및 Android 휴대폰을 포함한 여러 디바이스에 앱을 설치할 수 있습니다. Office 365에는 1TB의 OneDrive 저장소, 매월 60분의 Skype 무료 통화, Microsoft 채팅 및 전화 지원과 같은 서비스도 포함됩니다. 구독을 사용할 경우 최신 버전의 앱을 다운로드할 수 있으며, 업데이트가 제공되면 자동으로 받을 수 있습니다.
+최상의 작업을 만들 수 있습니다. 항상 업데이트되는 앱을 사용하여 어디서든 작업할 수 있습니다. Office 365 Pro Plus는 Word, Excel, PowerPoint, OneNote, Outlook, Publisher 및 Access(PC에서만 사용 가능한 Publisher 및 Access)와 같은 프리미엄 앱과 함께 제공되는 구독입니다. PC, Mac, iPad, iPhone, Android 태블릿 및 Android 휴대폰을 포함한 여러 디바이스에 앱을 설치할 수 있습니다. Office 365에는 1TB의 OneDrive 저장소, 매월 60분의 Skype 무료 통화, Microsoft 채팅 및 전화 지원과 같은 서비스도 포함됩니다. 구독을 사용할 경우 최신 버전의 앱을 다운로드할 수 있으며, 업데이트가 제공되면 자동으로 받을 수 있습니다.
 
-## <a name="getting-started-with-office-365"></a>Office 365 시작
+## <a name="getting-started-with-office-365-pro-plus"></a>Office 365 Pro Plus 시작
 
-Office 365를 다운로드하고 활성화하려면 다음 단계를 따르세요.
+Office 365 Pro Plus를 다운로드하고 활성화하려면 다음 단계를 따르세요.
 1. Visual Studio Enterprise 구독에 로그인합니다.  
 2. **다운로드** 탭을 클릭합니다.
 3. 추천 다운로드 목록이 표시됩니다. Office 목록에서 **Office 365**를 선택합니다. 

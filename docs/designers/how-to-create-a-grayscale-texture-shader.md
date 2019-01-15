@@ -2,7 +2,6 @@
 title: '방법: 회색조 질감 셰이더 만들기'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 79181d81-44af-445e-9a18-03483dd70260
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c1910926c6cb2d181f4e5e24ffb1bc1c75a56b3
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 0634d08f386c638cf141b6e8085982b74377ab55
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924189"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933543"
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>방법: 회색조 질감 셰이더 만들기
 
@@ -53,6 +52,6 @@ ms.locfileid: "37924189"
 
 - [방법: 3D 모델에 셰이더 적용](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [방법: 셰이더 내보내기](../designers/how-to-export-a-shader.md)
-- [이미지 편집기](../designers/image-editor.md)
+- [Image Editor](../designers/image-editor.md)
 - [셰이더 디자이너](../designers/shader-designer.md)
 - [셰이더 디자이너 노드](../designers/shader-designer-nodes.md)

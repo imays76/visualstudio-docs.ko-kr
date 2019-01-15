@@ -1,9 +1,7 @@
 ---
 title: '6단계: 단추 컨트롤 이름 지정'
-ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 56b3baa3-651e-4ad4-8942-e334c5c57158
 author: TerryGLee
@@ -11,12 +9,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b11bace93efc253ffcb0f8d2b97ecc57c7462bb8
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 39ded8694e5ec4b071193f74aa5fded5ddb54560
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748399"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820360"
 ---
 # <a name="step-6-name-your-button-controls"></a>6단계: 단추 컨트롤 이름 지정
 폼에 <xref:System.Windows.Forms.PictureBox> 하나만 있습니다. **pictureBox1**이라는 PictureBox와 이름이 **checkBox1**인 <xref:System.Windows.Forms.CheckBox> 하나만 있습니다. 이제 CheckBox 및 PictureBox를 참조하는 코드를 작성하면 이러한 컨트롤은 하나씩만 있기 때문에 코드에서 **pictureBox1** 또는 **checkBox1** 이 무엇을 의미하는지 알 수 있습니다.
@@ -26,7 +24,7 @@ ms.locfileid: "34748399"
 
  그러나 단추의 경우 IDE에 의해 **button1**, **button2**, **button3**및 **button4**로 이름이 지정된 네 개가 폼에 있는데, 현재 이름만으로 어떤 단추가 **닫기** 단추이고 어떤 단추가 **그림 표시** 단추인지 알 수 없습니다. 따라서 보다 자세한 정보를 주는 단추 컨트롤의 이름을 지정하는 것이 좋습니다.
 
- ![비디오 링크](../data-tools/media/playvideo.gif) 이 항목의 비디오 버전의 경우, [Tutorial 1: Create a picture viewer in Visual Basic - Video 3](http://go.microsoft.com/fwlink/?LinkId=205213)(자습서 1: Visual Basic에서 사진 뷰어 만들기 - 비디오 3) 또는 [Tutorial 1: Create a picture viewer in C# - Video 3](http://go.microsoft.com/fwlink/?LinkId=205202)(자습서 1: C#에서 사진 뷰어 만들기 - 비디오 3)을 참조하세요. 이러한 비디오에서는 이전 버전의 Visual Studio를 사용하므로 일부 메뉴 명령과 기타 사용자 인터페이스 요소가 약간 다를 수 있습니다. 그러나 개념 및 절차는 Visual Studio의 현재 버전에서 비슷하게 작동합니다.
+ ![비디오 링크](../data-tools/media/playvideo.gif) 이 항목의 비디오 버전은 [자습서 1: Visual Basic에서 사진 뷰어 만들기 - 비디오3](http://go.microsoft.com/fwlink/?LinkId=205213) 또는 [자습서 1: C#에서 사진 뷰어 만들기 - 자습서 3](http://go.microsoft.com/fwlink/?LinkId=205202)을 참조하세요. 이러한 비디오에서는 이전 버전의 Visual Studio를 사용하므로 일부 메뉴 명령과 기타 사용자 인터페이스 요소가 약간 다를 수 있습니다. 그러나 개념 및 절차는 Visual Studio의 현재 버전에서 비슷하게 작동합니다.
 
 ## <a name="to-name-your-button-controls"></a>단추 컨트롤의 이름을 지정하려면
 
@@ -36,7 +34,7 @@ ms.locfileid: "34748399"
 **closeButton** 이름이 있는 **속성** 창
 
     > [!NOTE]
-    >  단추 이름을 **closeButton**(close와 Button 사이에 공백이 있음)으로 바꾸려고 하면 "속성 값이 잘못되었습니다."라는 오류 메시지가 나타납니다. 공백을 비롯한 일부 문자는 컨트롤 이름에 사용할 수 없습니다.
+    >  단추 이름을 **closeButton**(close와 Button 사이에 공백이 있음)으로 바꾸려고 하면 IDE는 다음과 같은 오류 메시지를 표시합니다. "속성 값이 잘못되었습니다." 공백을 비롯한 일부 문자는 컨트롤 이름에 사용할 수 없습니다.
 
 2.  다른 세 단추의 이름을 **backgroundButton**, **clearButton**및 **showButton**으로 바꿉니다. **속성** 창에서 컨트롤 선택기 드롭다운 목록을 선택하면 이름을 확인할 수 있습니다. 새 단추 이름이 표시됩니다.
 
@@ -77,6 +75,6 @@ Visual C# 코드가 사용된 **Form1.cs** 탭
 
 ## <a name="to-continue-or-review"></a>계속하거나 검토하려면
 
--   다음 자습서 단계로 이동하려면 [7단계: 폼에 대화 상자 구성 요소 추가](../ide/step-7-add-dialog-components-to-your-form.md)를 참조하세요.
+-   다음 자습서 단계로 이동하려면 [7단계: 양식에 대화 상자 구성 요소 추가](../ide/step-7-add-dialog-components-to-your-form.md)를 참조하세요.
 
--   이전 자습서 단계로 돌아가려면 [5단계: 폼에 컨트롤 추가](../ide/step-5-add-controls-to-your-form.md)를 참조하세요.
+-   이전 자습서 단계로 돌아가려면 [5단계: 양식에 컨트롤 추가](../ide/step-5-add-controls-to-your-form.md)를 참조하세요.

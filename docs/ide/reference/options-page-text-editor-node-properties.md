@@ -2,7 +2,6 @@
 title: 옵션 페이지, 텍스트 편집기 노드 속성
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - Tools Options settings, Text Editor node properties
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e16bdece503babe9a50bc83d64da582d390843b6
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 3339884fe14b0dbc40fe9297f06b0462696b8040
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670821"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935673"
 ---
 # <a name="options-page-text-editor-node-properties"></a>옵션 페이지, 텍스트 편집기 노드 속성
 이 문서에서는 **옵션** 대화 상자의 **텍스트 편집기** 범주, `DTE.Properties("TextEditor", <Property Page>)`와 연관된 일부 페이지(또는 속성 컬렉션)에 대해 설명합니다. 각 하위 단원의 제목은 `Properties` 컬렉션에 액세스하는 데 사용되는 호출이며, 각 하위 단원의 표에는 컬렉션의 속성이 나열되어 있습니다.
@@ -56,7 +55,7 @@ ms.locfileid: "50670821"
 |WordWrap|Get/Set (Boolean)|긴 줄이 단어 경계에서 자동으로 줄 바꿈 하는지 여부를 지정합니다. 이 값을 `true`로 설정하면 이 목록의 `VirtualSpace` 속성 항목이 `false`로 설정됩니다.|
 |WordWrapGlyphs|Get/Set (Boolean)|줄 끝의 문자 모양을 표시합니다. 이 값은 줄이 다음 줄로 줄바꿈됨을 나타냅니다.|
 |EnableLeftClickForURLs|Get/Set (Boolean)|편집기에서 URL에 밑줄을 사용할지 여부와 마우스 왼쪽 단추를 한 번 클릭하여 시스템 등록 웹 브라우저에 있는 URL로 이동하는 동작을 사용할지 여부를 지정합니다.|
-|IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|다음 들여쓰기 스타일을 지정합니다. 기본, 스마트 또는 없음|
+|IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|다음과 같이 들여쓰기 스타일을 결정합니다. 기본, 스마트 또는 없음|
 |TabSize|Get/Set (Long)|탭 하나에 해당하는 공백 수를 나타냅니다. 범위는 1에서 60까지의 정수이고, 이를 벗어난 값을 설정하면 동작이 실패합니다.|
 |InsertTabs|Get/Set (Boolean)|`True`인 경우 들여쓰기에 탭 문자를 사용합니다.|
 |IndentSize|Get/Set (Long)|들여쓰기 수준 하나에 해당하는 공백 수를 나타냅니다. 범위는 1에서 60까지의 정수이고, 이를 벗어난 값을 설정하면 동작이 실패합니다.|

@@ -2,7 +2,6 @@
 title: 프로젝트 디자이너, 서명 페이지
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vs.AddNewStrongNameKey
@@ -21,30 +20,30 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 859ec81ff3ed2c3b6385de1d093ba512203da9d9
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
+ms.openlocfilehash: d59f81a8bedd62e7127d5541f943f0b0c26b8905
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459792"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856646"
 ---
 # <a name="signing-page-project-designer"></a>프로젝트 디자이너, 서명 페이지
-**프로젝트 디자이너**의 **서명** 페이지를 사용하여 응용 프로그램 및 배포 매니페스트에 서명하고 어셈블리에도 서명합니다(강력한 이름 서명).
+**프로젝트 디자이너**의 **서명** 페이지를 사용하여 애플리케이션 및 배포 매니페스트에 서명하고 어셈블리에도 서명합니다(강력한 이름 서명).
 
- 응용 프로그램 및 배포 매니페스트 서명 및 어셈블리 서명은 둘 다 **서명** 페이지에서 수행되는 작업이지만 서로 다른 프로세스입니다.
+ 애플리케이션 및 배포 매니페스트 서명 및 어셈블리 서명은 둘 다 **서명** 페이지에서 수행되는 작업이지만 서로 다른 프로세스입니다.
 
  또한 매니페스트 서명 및 어셈블리 서명에 대한 키 파일 정보의 저장소가 다릅니다. 매니페스트 서명의 경우 키 정보는 컴퓨터의 암호화 저장소 데이터베이스 및 현재 사용자의 Windows 인증서 저장소에 저장됩니다. 어셈블리 서명의 경우 키 정보는 컴퓨터의 암호화 저장소 데이터베이스에만 저장됩니다.
 
  이 **서명** 페이지에 액세스하려면 **솔루션 탐색기**에서 프로젝트 노드를 선택한 다음 **프로젝트** 메뉴에서 **속성**을 클릭합니다. **프로젝트 디자이너** 가 나타나면 **서명** 탭을 클릭합니다.
 
-## <a name="application-and-deployment-manifest-signing"></a>응용 프로그램 및 배포 매니페스트 서명
+## <a name="application-and-deployment-manifest-signing"></a>애플리케이션 및 배포 매니페스트 서명
  **ClickOnce 매니페스트 서명** 확인란
 
- 공개/개인 키 쌍을 사용하여 응용 프로그램 및 배포 매니페스트에 서명하려면 이 확인란을 선택합니다. 이 작업을 수행하는 방법에 대한 자세한 내용은 [방법: 응용 프로그램 및 배포 매니페스트 서명](../../ide/how-to-sign-application-and-deployment-manifests.md)을 참조하세요.
+ 공개/개인 키 쌍을 사용하여 애플리케이션 및 배포 매니페스트에 서명하려면 이 확인란을 선택합니다. 이 작업을 수행하는 방법에 대한 자세한 내용은 [방법: 애플리케이션 및 배포 매니페스트 서명](../../ide/how-to-sign-application-and-deployment-manifests.md)을 참조하세요.
 
  **저장소에서 선택** 단추
 
- 현재 사용자의 개인 인증서 저장소에서 기존 인증서를 선택할 수 있습니다. 이러한 인증서 중 하나를 선택하여 응용 프로그램 및 배포 매니페스트에 서명할 수 있습니다.
+ 현재 사용자의 개인 인증서 저장소에서 기존 인증서를 선택할 수 있습니다. 이러한 인증서 중 하나를 선택하여 애플리케이션 및 배포 매니페스트에 서명할 수 있습니다.
 
  **저장소에서 선택**을 클릭하면 **인증서 선택** 대화 상자가 열리고 현재 유효하고(만료되지 않음) 개인 키가 포함된 개인 인증서 저장소의 인증서가 나열됩니다. 선택한 인증서의 목적에는 코드 서명이 포함되어야 합니다.
 
@@ -60,13 +59,13 @@ ms.locfileid: "49459792"
 
  **테스트 인증서 만들기** 단추
 
- 테스트용 인증서를 만들 수 있습니다. 테스트 인증서는 ClickOnce 응용 프로그램 및 배포 매니페스트에 서명하는 데 사용됩니다.
+ 테스트용 인증서를 만들 수 있습니다. 테스트 인증서는 ClickOnce 애플리케이션 및 배포 매니페스트에 서명하는 데 사용됩니다.
 
  **테스트 인증서 만들기**를 클릭하면 **테스트 인증서 만들기** 대화 상자가 열리고 여기에서 테스트 인증서에 대한 강력한 이름 키 파일의 암호를 입력할 수 있습니다. 파일 이름은 *projectname*_TemporaryKey.pfx입니다. 암호를 입력하지 않고 **확인**을 클릭하면 .pfx 파일이 암호로 보호되지 않습니다.
 
  **타임스탬프 서버 URL** 상자
 
- 서명에 타임스탬프를 지정하는 서버의 주소를 지정합니다. 인증서를 제공할 때 이 외부 사이트는 응용 프로그램이 서명된 시간을 확인합니다.
+ 서명에 타임스탬프를 지정하는 서버의 주소를 지정합니다. 인증서를 제공할 때 이 외부 사이트는 애플리케이션이 서명된 시간을 확인합니다.
 
 ## <a name="assembly-signing"></a>어셈블리 서명
  **어셈블리 서명** 확인란
@@ -101,7 +100,7 @@ ms.locfileid: "49459792"
 
 - [프로젝트 속성 참조](../../ide/reference/project-properties-reference.md)
 - [어셈블리 및 매니페스트 서명 관리](../../ide/managing-assembly-and-manifest-signing.md)
-- [방법: 응용 프로그램 및 배포 매니페스트 서명](../../ide/how-to-sign-application-and-deployment-manifests.md)
+- [방법: 애플리케이션 및 배포 매니페스트 서명](../../ide/how-to-sign-application-and-deployment-manifests.md)
 - [방법: 어셈블리 서명(Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)
 - [방법: 강력한 이름으로 어셈블리 서명](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)
 - [강력한 이름의 어셈블리](/dotnet/framework/app-domains/strong-named-assemblies)

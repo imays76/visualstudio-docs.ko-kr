@@ -2,7 +2,6 @@
 title: Blend에서 데이터 표시
 ms.date: 03/06/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 87d31b6c-4607-4121-bb7d-cfc80390ab93
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ae09c6921bc4f6e0b3bb2a91eb9c3972c997d566
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: cae026f0b4a7be3a0ed9a389f3f6d9b8a6a911f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282172"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924399"
 ---
 # <a name="display-data-in-blend"></a>Blend에서 데이터 표시
 
@@ -29,13 +28,13 @@ ms.locfileid: "44282172"
 
 ![데이터 패널](../designers/media/496d7ebc-fe46-42f6-95a8-57b0e5be5d49.png)
 
-앱 실행 시 예제 데이터가 페이지에 표시되도록 하려면 **데이터 원본 옵션** ![데이터 원본 옵션 아이콘](../designers/media/ae1fd260-4f84-420d-b196-45fde357d81d.png)을 선택한 다음, **응용 프로그램 실행 시 사용**을 선택합니다.
+앱 실행 시 예제 데이터가 페이지에 표시되도록 하려면 **데이터 원본 옵션**![데이터 원본 옵션 아이콘](../designers/media/ae1fd260-4f84-420d-b196-45fde357d81d.png)을 선택한 다음, **애플리케이션 실행 시 사용**을 선택합니다.
 
-![응용 프로그램 메뉴 항목 실행 시 사용](../designers/media/05d5356d-91bb-4e6b-b3f7-29b76852c4b3.png)
+![애플리케이션 메뉴 항목 실행 시 사용](../designers/media/05d5356d-91bb-4e6b-b3f7-29b76852c4b3.png)
 
- **짧은 비디오 보기:** ![재생 아이콘](../designers/media/bldadminconsoleinitialconfigicon.PNG) [처음부터 예제 데이터 만들기](http://www.bing.com/videos/search?q=blend%20data&qs=n&form=QBVR&pq=blend%20data&sc=8-7&sp=-1&sk=#view=detail&mid=F8F2449A76956D480FD2F8F2449A76956D480FD2).
+ **짧은 비디오 시청:** ![재생 아이콘](../designers/media/bldadminconsoleinitialconfigicon.PNG) [처음부터 예제 데이터 만들기](http://www.bing.com/videos/search?q=blend%20data&qs=n&form=QBVR&pq=blend%20data&sc=8-7&sp=-1&sk=#view=detail&mid=F8F2449A76956D480FD2F8F2449A76956D480FD2)
 
- **짧은 비디오 보기:** ![재생 아이콘](../designers/media/bldadminconsoleinitialconfigicon.PNG) [일부 데이터 바인딩을 Blend와 혼합](https://www.youtube.com/watch?v=LSwPB6CAvjg).
+ **짧은 비디오 시청:** ![재생 아이콘](../designers/media/bldadminconsoleinitialconfigicon.PNG) [일부 데이터 바인딩을 Blend와 혼합](https://www.youtube.com/watch?v=LSwPB6CAvjg)
 
 ## <a name="generate-sample-data-from-a-class"></a>클래스에서 예제 데이터 생성
 
@@ -43,13 +42,13 @@ ms.locfileid: "44282172"
 
 클래스에서 예제 데이터를 생성하려면 XAML 문서를 열고 **데이터** 패널에서 **예제 데이터 만들기**![예제 데이터 아이콘 만들기](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png) 단추를 클릭한 다음, **클래스에서 예제 데이터 만들기**를 클릭합니다.
 
-**짧은 비디오 보기:** ![재생 아이콘](../designers/media/bldadminconsoleinitialconfigicon.PNG) [클래스에서 예제 데이터 만들기](https://channel9.msdn.com/Shows/Inside+Windows+Phone/IWP54--Windows-Phone-Data-Binding-and-the-Magic-of-XAML).
+**짧은 비디오 시청:** ![재생 아이콘](../designers/media/bldadminconsoleinitialconfigicon.PNG) [클래스에서 샘플 데이터 만들기](https://channel9.msdn.com/Shows/Inside+Windows+Phone/IWP54--Windows-Phone-Data-Binding-and-the-Magic-of-XAML)
 
-**짧은 비디오 보기:** ![재생 아이콘](../designers/media/bldadminconsoleinitialconfigicon.PNG) [일부 데이터 바인딩을 Blend와 혼합](https://www.youtube.com/watch?v=LSwPB6CAvjg).
+**짧은 비디오 시청:** ![재생 아이콘](../designers/media/bldadminconsoleinitialconfigicon.PNG) [일부 데이터 바인딩을 Blend와 혼합](https://www.youtube.com/watch?v=LSwPB6CAvjg)
 
-## <a name="show-live-data-in-a-wpf-application"></a>WPF 응용 프로그램에 라이브 데이터 표시
+## <a name="show-live-data-in-a-wpf-application"></a>WPF 애플리케이션에 라이브 데이터 표시
 
-**짧은 비디오 보기:** ![재생 아이콘](../designers/media/bldadminconsoleinitialconfigicon.PNG) [XML 데이터 원본 만들기](https://www.youtube.com/watch?v=RjQueappjqk&feature=youtube_gdata).
+**짧은 비디오 시청:** ![재생 아이콘](../designers/media/bldadminconsoleinitialconfigicon.PNG) [XML 데이터 원본 만들기](https://www.youtube.com/watch?v=RjQueappjqk&feature=youtube_gdata)
 
 ## <a name="show-live-data-in-a-store-or-phone-app"></a>스토어 또는 Phone 앱에 라이브 데이터 표시
 

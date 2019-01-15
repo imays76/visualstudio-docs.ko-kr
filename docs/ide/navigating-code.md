@@ -2,7 +2,6 @@
 title: 코드 탐색 명령
 ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code editor, navigation
@@ -20,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ac6fb3ae1f8c4e7fb48c9cd9a0d2b77cb875094
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 467dec8039a50b225bda53de9b19b8539f6604be
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894471"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877434"
 ---
 # <a name="navigate-code"></a>코드 탐색
 
@@ -80,17 +79,17 @@ Visual Studio는 편집기에서 코드를 탐색하는 다양한 방법을 제�
 
 - **줄 이동**(**Ctrl**+**G**): 현재 문서에서 지정된 줄 번호로 이동합니다.
 
-- **전체로 이동**(**Ctrl**+**T** 또는 **Ctrl**+**,**): 지정된 줄, 유형, 파일, 멤버 또는 기호로 이동합니다.
+- **전체로 이동**(**Ctrl**+**T** 또는 **Ctrl**+**,**): 지정된 줄, 형식, 파일, 멤버 또는 기호로 이동합니다.
 
 - **파일로 이동**(**Ctrl**+**1**, **Ctrl**+**F**): 솔루션에 지정된 파일로 이동합니다.
 
-- **최근 파일로 이동**(**Ctrl**+**1**, **Ctrl**+**R**): 솔루션에서 지정되고 최근에 방문한 파일(Visual Studio 2017 버전 15.8의 새로운 기능)로 이동합니다.
+- **최근에 사용한 파일로 이동**(**Ctrl**+**1**, **Ctrl**+**R**): 솔루션에서 지정되고 최근에 방문한 파일(Visual Studio 2017 버전 15.8의 새로운 기능)로 이동합니다.
 
-- **파일로 이동**(**Ctrl**+**1**, **Ctrl**+**T**): 솔루션에 지정된 형식으로 이동합니다.
+- **형식으로 이동**(**Ctrl**+**1**, **Ctrl**+**T**): 솔루션에 지정된 형식으로 이동합니다.
 
-- **파일로 이동**(**Ctrl**+**1**, **Ctrl**+**M**): 솔루션에 지정된 멤버로 이동합니다.
+- **멤버로 이동**(**Ctrl**+**1**, **Ctrl**+**M**): 솔루션에 지정된 멤버로 이동합니다.
 
-- **파일로 이동**(**Ctrl**+**1**, **Ctrl**+**S**): 솔루션에 지정된 기호로 이동합니다.
+- **기호로 이동**(**Ctrl**+**1**, **Ctrl**+**S**): 솔루션에 지정된 기호로 이동합니다.
 
 Visual Studio 2017 버전 15.8 이상에서는 다음과 같은 **이동** 탐색 명령도 사용할 수 있습니다.
 

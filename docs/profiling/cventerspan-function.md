@@ -1,8 +1,6 @@
 ---
 title: CvEnterSpan 함수 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkers/CvEnterSpanVA
@@ -26,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4084ce78d1acaf5a34f95ea88046bf0860efc9ca
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 6b757d02f5a0da520f4bcb929b8c4f9eff4b4419
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750118"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892587"
 ---
 # <a name="cventerspan-function"></a>CvEnterSpan 함수
 새 범위의 시작을 표시합니다.  

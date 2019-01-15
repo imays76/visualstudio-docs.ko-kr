@@ -1,8 +1,6 @@
 ---
-title: '방법: 빌드에서 파일 제외 | Microsoft 문서'
-ms.custom: ''
+title: '방법: 빌드에서 파일 제외 | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, wildcards
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b2adfd3d571fe16fcbfe273e5513ebea724403cd
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 9ed8eeca4655761e0696184fdfc0d146ece06117
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080690"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833286"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>방법: 빌드에서 파일 제외
 프로젝트 파일에서 와일드카드를 사용하여 모든 파일을 하나의 디렉터리 또는 중첩된 디렉터리 집합에 빌드의 입력으로 포함할 수 있습니다. 그러나 해당 디렉터리 또는 중첩된 디렉터리 집합 중 하나의 디렉터리에 빌드의 입력으로 포함하지 않으려는 하나의 파일이 있을 수 있습니다. 입력 목록에서 해당 파일 또는 디렉터리를 명시적으로 제외할 수 있습니다. 특정 조건에서만 포함하려는 파일이 프로젝트에 있을 수도 있습니다. 파일을 빌드에 포함할 조건을 명시적으로 선언할 수 있습니다.  
@@ -90,7 +88,7 @@ ms.locfileid: "39080690"
         Condition=" '$(Configuration)' == 'Release' " />  
     ```  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드 예제에서는 *Form2.cs*를 제외한 모든 *.cs* 파일을 디렉터리에 포함한 프로젝트를 빌드합니다.  
   
 ```xml  

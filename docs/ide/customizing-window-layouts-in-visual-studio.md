@@ -2,7 +2,6 @@
 title: 창 레이아웃 사용자 지정
 ms.date: 01/23/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.windows
@@ -25,12 +24,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 849f94d178453d3b90140f59dc9ed5a84cd98466
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: ef1b20741684a8d450d86bf4f41c71516f8eaba6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389645"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959328"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Visual Studio에서 창 레이아웃 사용자 지정
 
@@ -141,7 +140,7 @@ Visual Studio에서는 사용자 지정 창 레이아웃을 최대 10개까지 �
 
 #### <a name="create-a-ui-project-and-customize-the-layout"></a>UI 프로젝트 만들기 및 레이아웃 사용자 지정
 
-1.  **새 프로젝트** 대화 상자에서 **C# WPF 데스크톱 응용 프로그램**을 만들고 원하는 이름을 지정합니다. 이 프로젝트에서 사용자 인터페이스에 대한 작업을 수행한다고 가정하고 디자이너 창의 공간을 최대화하고 다른 도구 창은 방해가 되지 않도록 이동합니다.
+1.  **새 프로젝트** 대화 상자에서 **C# WPF 데스크톱 애플리케이션**을 만들고 원하는 이름을 지정합니다. 이 프로젝트에서 사용자 인터페이스에 대한 작업을 수행한다고 가정하고 디자이너 창의 공간을 최대화하고 다른 도구 창은 방해가 되지 않도록 이동합니다.
 
 2.  모니터가 여러 개 있는 경우 **솔루션 탐색기** 창 및 **속성** 창을 두 번째 모니터로 가져옵니다. 단일 모니터 시스템의 경우 디자이너를 제외한 모든 창을 닫습니다.
 

@@ -2,7 +2,6 @@
 title: 빌드 전 이벤트-빌드 후 이벤트 명령줄 대화 상자
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesBuildEventsBuilder
@@ -35,12 +34,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e27a7e624607009e986d301fa802fdbe1597a3c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7cc93b398791d01cc29025772a6cd086f0d0c740
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947975"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877905"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>빌드 전 이벤트/빌드 후 이벤트 명령줄 대화 상자
 편집 상자에서 직접 [빌드 이벤트 페이지, 프로젝트 디자이너(C#)](../../ide/reference/build-events-page-project-designer-csharp.md)에 대한 빌드 전후 이벤트를 입력할 수 있습니다. 또는 사용 가능한 매크로 목록에서 빌드 전후 매크로를 선택할 수 있습니다.

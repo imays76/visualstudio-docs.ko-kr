@@ -3,19 +3,18 @@ title: R에 대한 변수 탐색기
 description: Visual Studio의 변수 탐색기는 현재 R 세션에서 지정된 범위에 있는 모든 변수를 표시합니다.
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: fbd20c362c407148262d8e1e61e15d22d9cbcf2f
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 8969379727da2f7e01e15fcb10150195bc32749e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978127"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988938"
 ---
 # <a name="variable-explorer"></a>변수 탐색기
 
@@ -71,7 +70,7 @@ n <- c(1,2,3,5,8,13)
 
 ## <a name="import-data-into-variable-explorer"></a>변수 탐색기로 데이터 가져오기
 
-**변수 탐색기** 도구 모음의 다음 두 가지 명령(**R 도구** > **데이터** 메뉴를 통해 사용할 수도 있음)은 외부 CSV 데이터 집합을 R 세션으로 가져옵니다. **웹 URL에서 R 세션으로 데이터 집합 가져오기** 및 **텍스트 파일에서 R 세션으로 데이터 집합 가져오기**.
+**변수 탐색기** 도구 모음의 다음 두 가지 명령(**R 도구** > **데이터** 메뉴를 통해 사용할 수도 있음)은 외부 CSV 데이터 세트를 R 세션으로 가져옵니다.  **웹 URL에서 R 세션으로 데이터 세트 가져오기** 및 **텍스트 파일에서 R 세션으로 데이터 세트 가져오기**
 
 가져올 CSV 파일을 확정하고 나면 Visual Studio에서 **데이터 세트 가져오기** 대화 상자를 표시합니다. 여기에는 해당 데이터 파일을 구문 분석하는 방법(필드 구분 기호 및 따옴표 처리 방법 선택)을 제어하는 옵션이 있습니다. 가져온 데이터 프레임 및 원본 데이터 파일의 미리 보기를 확인할 수도 있습니다.
 

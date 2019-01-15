@@ -2,7 +2,6 @@
 title: 도형 및 패스 그리기
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: d5378c59-e2e5-49f0-91f1-aa82d984a33c
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 97172253a088be86f20fae77fe62d01330a3b801
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 29cd9da26b632d8ed8b1d09b0803f27599dba95e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513099"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942647"
 ---
 # <a name="draw-shapes-and-paths"></a>도형 및 패스 그리기
 
@@ -85,7 +84,7 @@ XAML 디자이너에서 *도형*은 일반적인 도형이 맞습니다. (예: �
 ##  <a name="Convert"></a> 도형을 패스로 변환
  패스를 수정하는 방법과 같은 방법으로 도형을 수정하려면 도형을 패스로 변환합니다.
 
- **짧은 비디오 보기:** ![설치된 기능 구성](../designers/media/bldadminconsoleinitialconfigicon.png) [경로 사용: 도형을 경로로 변환](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).
+ **짧은 비디오 시청:** ![설치된 기능 구성](../designers/media/bldadminconsoleinitialconfigicon.png) [경로 작업: 셰이프를 경로로 변환](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147)
 
 ##  <a name="Combine"></a> 패스 결합
  패스 및 도형을 하나의 패스로 결합할 수 있습니다.
@@ -94,11 +93,11 @@ XAML 디자이너에서 *도형*은 일반적인 도형이 맞습니다. (예: �
 
 |||||
 |-|-|-|-|
-|![결합하기 전의 두 도형](../designers/media/b1_1.png)|결합하기 전의 두 도형|![교차](../designers/media/b1_4.png)|교차|
+|![결합하기 전의 두 도형](../designers/media/b1_1.png)|결합하기 전의 두 도형|![Intersect](../designers/media/b1_4.png)|Intersect|
 |![겹침 제외](../designers/media/b1_2.png)|통합|![](../designers/media/b1_5.png)|겹침 제외|
 |![빼기](../designers/media/b1_3.png)|나누기|![](../designers/media/b1_6.png)|빼기|
 
- **짧은 비디오 보기:** ![설치된 기능 구성](../designers/media/bldadminconsoleinitialconfigicon.png) [경로 사용: 경로 결합](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
+ **짧은 비디오 시청:** ![설치된 기능 구성](../designers/media/bldadminconsoleinitialconfigicon.png) [경로 작업: 경로 결합](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195)
 
 ##  <a name="Compound"></a> 복합형 패스 만들기
  복합형 패스를 만들 때 패스의 교차되는 부분은 결과에서 제외되며, 결과 패스는 맨 아래 패스의 시각적 속성을 사용합니다.
@@ -107,14 +106,14 @@ XAML 디자이너에서 *도형*은 일반적인 도형이 맞습니다. (예: �
 
  ![복합형 패스 중단](../designers/media/2157a8aa-d9a7-4de4-8de5-b10d28f08a84.png)
 
- **짧은 비디오 보기:** ![설치된 기능 구성](../designers/media/bldadminconsoleinitialconfigicon.png) [패스 사용: 복합형 패스 만들기](https://www.youtube.com/watch?v=Io5bC0-nH6Q).
+ **짧은 비디오 시청:** ![설치된 기능 구성](../designers/media/bldadminconsoleinitialconfigicon.png) [경로 작업: 복합 경로 만들기](https://www.youtube.com/watch?v=Io5bC0-nH6Q)
 
 ##  <a name="Clipping"></a> 클리핑 패스 만들기
  클리핑 패스는 다른 개체에 적용되는 패스나 도형이며, 개체에서 클리핑 패스를 벗어나는, 마스킹된 개체 부분을 숨깁니다.
 
  ![클리핑 패스](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png)
 
- **짧은 비디오 보기:** ![설치된 기능 구성](../designers/media/bldadminconsoleinitialconfigicon.png) [패스 사용: 클리핑 패스 만들기](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232).
+ **짧은 비디오 시청:** ![설치된 기능 구성](../designers/media/bldadminconsoleinitialconfigicon.png) [경로 작업: 클리핑 패스 만들기](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232)
 
 ## <a name="see-also"></a>참고 항목
 

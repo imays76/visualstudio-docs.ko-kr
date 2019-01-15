@@ -1,9 +1,7 @@
 ---
 title: '5단계: NumericUpDown 컨트롤에 대한 Enter 이벤트 처리기 추가'
-ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 45a99a5d-c881-4298-b74d-adb481dec5ee
 author: TerryGLee
@@ -11,12 +9,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e05d6cc201819d37e77587529ffd79a740003a10
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 393e43a44045f4551fbf567f1de037e77dbae00e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747921"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846901"
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>5단계: NumericUpDown 컨트롤에 대한 Enter 이벤트 처리기 추가
 이 자습서의 5단계에서는 퀴즈 문제의 답을 좀 더 쉽게 입력할 수 있도록 <xref:System.Windows.Forms.Control.Enter> 이벤트 처리기를 추가합니다. 이 코드에서는 퀴즈를 푸는 사람이 NumericUpDown 컨트롤을 선택하고 다른 값을 입력하는 즉시 각 <xref:System.Windows.Forms.NumericUpDown> 컨트롤의 현재 값을 선택하고 지웁니다.

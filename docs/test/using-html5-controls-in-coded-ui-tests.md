@@ -2,19 +2,18 @@
 title: 코딩된 UI 테스트에서 HTML5 컨트롤 사용
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a603a662c9007ab3ee0e66df0b23959bfdce83fb
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 9470027e84e33bb3acdd64756db86c951c845d3d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896195"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883028"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>코딩된 UI 테스트에서 HTML5 컨트롤 사용
 
@@ -51,7 +50,7 @@ ms.locfileid: "52896195"
 
  **검색 속성:** `HtmlAudio`에 대한 검색 속성은 `Id`, `Name` 및 `Title`입니다.
 
- **필터 속성:** `HtmlAudio`에 대한 필터 속성은 `Src`, `Class`, `ControlDefinition` 및 `TagInstance`입니다.
+ **필터 속성:** `HtmlAudio`에 대한 검색 속성은 `Src`, `Class`, `ControlDefinition` 및 `TagInstance`입니다.
 
 > [!NOTE]
 > 검색 및 일시 중지에 대한 시간은 중요할 수 있습니다. 재생하는 동안 코딩된 UI 테스트는 `(TimeSpan)`에 지정된 시간까지 기다린 후 오디오를 일시 중지합니다. 특수한 경우 일시 중지 명령을 누르기 전에 지정된 시간이 경과하면 예외가 throw됩니다.
@@ -75,7 +74,7 @@ ms.locfileid: "52896195"
 
  **검색 속성:** `HtmlVideo`에 대한 검색 속성은 `Id`, `Name` 및 `Title`입니다.
 
- **필터 속성:** `HtmlVideo`에 대한 필터 속성은 `Src`, `Poster`, `Class`, `ControlDefinition` 및 `TagInstance`입니다.
+ **필터 속성:** `HtmlVideo`에 대한 검색 속성은 `Src`, `Poster`, `Class`, `ControlDefinition` 및 `TagInstance`입니다.
 
 > [!NOTE]
 > -30s 또는 +30s 레이블을 사용하여 비디오를 되감거나 빨리 감으면 적절한 시간까지 검색하도록 집계됩니다.

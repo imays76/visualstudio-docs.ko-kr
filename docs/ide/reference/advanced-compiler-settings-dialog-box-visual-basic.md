@@ -2,7 +2,6 @@
 title: 고급 컴파일러 설정 대화 상자(Visual Basic)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesAdvancedCompile
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 593bb95e45ecdbda14eba49425ce5db08369e6cf
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 34880d96effb9c1c77c1d88c22f61967741b693e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38783690"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878275"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>고급 컴파일러 설정 대화 상자(Visual Basic)
 
@@ -73,7 +72,7 @@ ms.locfileid: "38783690"
 
  **사용자 지정 상수**
 
- 이 텍스트 상자에 응용 프로그램의 사용자 지정 상수를 입력합니다. **Name1="Value1",Name2="Value2",Name3="Value3"** 양식을 사용하여 항목을 쉼표로 구분해야 합니다.
+ 이 텍스트 상자에 애플리케이션의 사용자 지정 상수를 입력합니다. 다음 양식을 사용하여 항목을 쉼표로 구분해야 합니다. **Name1="Value1",Name2="Value2",Name3="Value3"**.
 
 ## <a name="other-settings"></a>기타 설정
 

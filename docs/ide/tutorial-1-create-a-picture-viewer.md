@@ -1,9 +1,7 @@
 ---
 title: '자습서 1: 사진 뷰어 만들기'
-ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 3071d6df-2b2f-4e95-ab68-bef727323136
 author: TerryGLee
@@ -11,12 +9,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 966634ee9a71854334bdd5342326c1663b9ad16c
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 8f44174f98c69f05cf7a0030e642dc9d9e065201
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672160"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861652"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>자습서 1: 사진 뷰어 만들기
 
@@ -24,7 +22,7 @@ ms.locfileid: "50672160"
 
 -   새 프로젝트를 만듭니다.
 
--   응용 프로그램을 테스트(디버깅)합니다.
+-   애플리케이션을 테스트(디버깅)합니다.
 
 -   확인란과 단추 같은 기본 컨트롤을 폼에 추가합니다.
 
@@ -44,7 +42,7 @@ ms.locfileid: "50672160"
 
 샘플의 전체 버전을 다운로드하려면 [Complete picture viewer tutorial sample](https://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8)(전체 사진 뷰어 자습서 샘플)을 참조하세요.
 
-![비디오 링크](../data-tools/media/playvideo.gif)이 항목의 비디오 버전을 보려면 [How do I: Create a picture viewer in Visual Basic?](http://go.microsoft.com/fwlink/?LinkId=205207)(어떻게 할까요?: Visual Basic에서 사진 뷰어 만들기) 또는 [How do I: Create a picture viewer in C#?](http://go.microsoft.com/fwlink/?LinkId=205198)(어떻게 할까요?: C#에서 사진 뷰어 만들기)를 참조하세요.
+![비디오 링크](../data-tools/media/playvideo.gif) 이 항목의 비디오 버전은 [어떻게 할까요?: Visual Basic에서 사진 뷰어 만들기](http://go.microsoft.com/fwlink/?LinkId=205207) 또는 [어떻게 할까요?: C#에서 사진 뷰어 만들기](http://go.microsoft.com/fwlink/?LinkId=205198)를 참조하세요.
 
 > [!NOTE]
 > 이러한 비디오에서는 이전 버전의 Visual Studio를 사용하므로 일부 메뉴 명령과 기타 사용자 인터페이스 요소가 약간 다를 수 있습니다. 그러나 개념 및 절차는 Visual Studio의 현재 버전에서 비슷하게 작동합니다. 이 자습서에는 Visual C#과 Visual Basic이 둘 다 설명되어 있으므로 사용 중인 프로그래밍 언어와 관련된 정보를 참조하십시오.
@@ -57,14 +55,14 @@ ms.locfileid: "50672160"
 
 |제목|설명|
 |-----------|-----------------|
-|[1단계: Windows Forms 응용 프로그램 프로젝트 만들기](../ide/step-1-create-a-windows-forms-application-project.md)|먼저 Windows Forms 응용 프로그램 프로젝트를 만듭니다.|
-|[2단계: 프로그램 실행](../ide/step-2-run-your-program.md)|이전 단계에서 만든 Windows Forms 응용 프로그램 프로젝트를 실행합니다.|
-|[3단계: 폼 속성 설정](../ide/step-3-set-your-form-properties.md)|**속성** 창을 사용하여 폼의 모양을 변경합니다.|
-|[4단계: TableLayoutPanel 컨트롤을 사용하여 폼 레이아웃](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)|폼에 `TableLayoutPanel` 컨트롤을 추가합니다.|
-|[5단계: 폼에 컨트롤 추가](../ide/step-5-add-controls-to-your-form.md)|`PictureBox` 컨트롤 및 `CheckBox` 컨트롤과 같은 컨트롤을 폼에 추가합니다. 폼에 단추를 추가합니다.|
+|[1단계: Windows Forms 애플리케이션 프로젝트 만들기](../ide/step-1-create-a-windows-forms-application-project.md)|먼저 Windows Forms 애플리케이션 프로젝트를 만듭니다.|
+|[2단계: 프로그램 실행](../ide/step-2-run-your-program.md)|이전 단계에서 만든 Windows Forms 애플리케이션 프로젝트를 실행합니다.|
+|[3단계: 양식 속성 설정](../ide/step-3-set-your-form-properties.md)|**속성** 창을 사용하여 폼의 모양을 변경합니다.|
+|[4단계: TableLayoutPanel 컨트롤을 사용하여 양식 레이아웃](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)|폼에 `TableLayoutPanel` 컨트롤을 추가합니다.|
+|[5단계: 양식에 컨트롤 추가](../ide/step-5-add-controls-to-your-form.md)|`PictureBox` 컨트롤 및 `CheckBox` 컨트롤과 같은 컨트롤을 폼에 추가합니다. 폼에 단추를 추가합니다.|
 |[6단계: 단추 컨트롤 이름 지정](../ide/step-6-name-your-button-controls.md)|단추의 이름을 더 의미 있는 이름으로 변경합니다.|
-|[7단계: 폼에 대화 상자 구성 요소 추가](../ide/step-7-add-dialog-components-to-your-form.md)|`OpenFileDialog` 구성 요소 및 `ColorDialog` 구성 요소를 폼에 추가합니다.|
-|[8단계: 사진 표시 단추 이벤트 처리기를 위한 코드 작성](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)|IntelliSense 도구를 사용하여 코드를 작성합니다.|
+|[7단계: 양식에 대화 상자 구성 요소 추가](../ide/step-7-add-dialog-components-to-your-form.md)|`OpenFileDialog` 구성 요소 및 `ColorDialog` 구성 요소를 폼에 추가합니다.|
+|[8단계: 그림 표시 단추 이벤트 처리기를 위한 코드 작성](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)|IntelliSense 도구를 사용하여 코드를 작성합니다.|
 |[9단계: 코드 검토, 주석 처리 및 테스트](../ide/step-9-review-comment-and-test-your-code.md)|코드를 검토하고 테스트합니다. 필요한 경우 주석을 추가합니다.|
 |[10단계: 추가 단추 및 확인란에 대한 코드 작성](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)|IntelliSense를 사용하여 다른 단추와 확인란이 작동하도록 코드를 작성합니다.|
 |[11단계: 프로그램 실행 및 기타 기능 사용](../ide/step-11-run-your-program-and-try-other-features.md)|프로그램을 실행하고 배경색을 설정합니다. 색, 글꼴 및 테두리 변경과 같은 다른 기능을 사용해 봅니다.|

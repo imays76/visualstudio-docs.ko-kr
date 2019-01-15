@@ -1,8 +1,6 @@
 ---
 title: 프로파일링 및 Windows Vista 보안 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/02/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools,security
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 767210a934753dd85b22728813d7608618a2b8d3
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 58c0e7c8eec4f3ab4ebc0c65798c6b3308248613
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220659"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937808"
 ---
 # <a name="profiling-and-windows-vista-security"></a>프로파일링 및 Windows Vista 보안
 
