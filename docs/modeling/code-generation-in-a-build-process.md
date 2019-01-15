@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: d5d4b4c50a02a92d150a87788e6dc307dd2f8e64
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 11ff8764395f10a4937143d6f51d220f970193af
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865520"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270234"
 ---
 # <a name="code-generation-in-a-build-process"></a>빌드 프로세스에서 코드 생성
 
@@ -58,7 +58,7 @@ ms.locfileid: "53865520"
 
 MSBuild의 기능 중 일부를 구성 하려면 프로젝트 파일을 편집 해야 합니다.
 
-**솔루션 탐색기**, 선택 **언로드** 프로젝트의 상황에 맞는 메뉴에서입니다. 이렇게 하면 XML 편집기에서 .csproj 또는 .vbproj 파일을 편집할 수 있습니다.
+**솔루션 탐색기**, 선택 **언로드** 프로젝트의 마우스 오른쪽 단추로 클릭 합니다. 이렇게 하면 XML 편집기에서 .csproj 또는 .vbproj 파일을 편집할 수 있습니다.
 
 편집을 마쳤으면 선택할 **다시 로드**합니다.
 
@@ -293,7 +293,7 @@ Visual Studio 매크로 같은 **$ (solutiondir)** MSBuild에서 작동 하지 �
 
 - [런타임 텍스트 템플릿](../modeling/run-time-text-generation-with-t4-text-templates.md) 응용 프로그램에서 런타임에 변형 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - T4 MSbuild 템플릿이 훌륭한 지침 *%ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\msbuild\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets*
 - [T4 텍스트 템플릿 작성](../modeling/writing-a-t4-text-template.md)

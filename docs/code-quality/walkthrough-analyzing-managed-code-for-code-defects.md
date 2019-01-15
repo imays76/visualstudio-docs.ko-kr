@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: fd24485d02d20bf4ab1b5def30e34b8d14a71cb3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d9b4631b320138d045e910c612c1fa4558a07e56
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955255"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269226"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>연습: 코드 오류에 대 한 관리 되는 코드 분석
 
@@ -183,18 +183,16 @@ ms.locfileid: "53955255"
 
 ## <a name="exclude-code-analysis-warnings"></a>코드 분석 경고를 제외 합니다.
 
-### <a name="to-exclude-code-defect-warnings"></a>코드 오류 경고를 제외 하려면
-
 1. 나머지 경고 각각에 대해 다음을 수행합니다.
 
     1. 경고를 선택 합니다 **오류 목록**합니다.
 
-    1. 마우스 오른쪽 단추 메뉴나 상황에 맞는 메뉴에서 선택 **Suppress** > **억제 파일에**입니다.
+    1. 마우스 오른쪽 단추 클릭 메뉴 (상황에 맞는 메뉴)에서 선택 **표시 안 함** > **억제 파일에**입니다.
 
 1. 프로젝트를 다시 빌드합니다.
 
      프로젝트 경고 또는 오류 없이 빌드됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [관리 코드에 대 한 코드 분석](../code-quality/code-analysis-for-managed-code-overview.md)

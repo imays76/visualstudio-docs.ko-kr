@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bd6e10732c0248206810c9690910a8bd2f09ccf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 570e7c5b4ec64c4e21b53cef38b89a5846cc1bb7
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849634"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269698"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>방법: 워크플로에 중단점 설정
 
@@ -37,9 +37,9 @@ ms.locfileid: "53849634"
 
 2. 에 **디버그** 메뉴에서 **중단점 설정/해제**합니다. 활동의 왼쪽 위에 빨간색 아이콘이 표시됩니다.
 
-   또는 눌러 수 있습니다 **F9** 활동 또는 사용자를 선택 하는 활동을 마우스 오른쪽 단추로 클릭 수 및 선택한 후 **중단점** > **중단점 삽입** 상황에 맞는 메뉴입니다.
+   또는 눌러 수 있습니다 **F9** 활동 또는 사용자를 선택 하는 활동을 마우스 오른쪽 단추로 클릭 수 및 선택한 후 **중단점** > **중단점 삽입** 마우스 오른쪽 단추로 클릭 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [워크플로 디자이너로 워크플로 디버깅](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)
 - [방법: 워크플로 디자이너로 XAML 디버그](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)

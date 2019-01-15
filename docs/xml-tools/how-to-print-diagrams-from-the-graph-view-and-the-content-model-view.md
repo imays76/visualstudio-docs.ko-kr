@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d4710752c4825ce576b20a823735b5ed1e2ebad
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bd147b5a7b491c17e0ed0024cfe471762e6160b1
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900940"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269711"
 ---
 # <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>방법: 그래프 뷰 및 콘텐츠 모델 뷰에서 다이어그램 인쇄
 
@@ -24,7 +24,7 @@ ms.locfileid: "53900940"
 
 1.  Visual Studio에서 XSD 파일을 열고 일부 노드를 추가 합니다 [XML 스키마 디자이너 작업 영역](../xml-tools/xml-schema-designer-workspace.md)합니다.
 
-2.  사용 하 여 다이어그램을 XPS 파일로 내보냅니다 합니다 **다이어그램을 이미지로 내보내기** 그래프 뷰 또는 콘텐츠 모델 뷰의 디자인 화면에서 상황에 맞는 메뉴 항목입니다.
+2.  사용 하 여 다이어그램을 XPS 파일로 내보냅니다 합니다 **다이어그램을 이미지로 내보내기** 그래프 뷰 또는 콘텐츠 모델 뷰의 디자인 화면에서 상황에 맞는 (마우스 오른쪽 단추로 클릭) 메뉴 항목입니다.
 
      그래프 뷰에서 다이어그램을 내보내는 경우 전체 디자인 화면을 XPS 파일로 내보내집니다. 콘텐츠 모델 뷰에서 다이어그램을 내보내고 둘 이상의 노드가 콘텐츠 모델 뷰의 디자인 화면에 나타나는 경우 첫 번째 노드만 XPS 파일로 내보내집니다.
 

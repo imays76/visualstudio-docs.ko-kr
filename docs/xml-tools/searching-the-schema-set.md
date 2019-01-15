@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26be8121c679cc2614440f8e28f52b383dbe944c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fdb4a680fc2bbfc9a55d93d17f9ef95d45fc6186
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836571"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270075"
 ---
 # <a name="search-the-schema-set"></a>스키마 집합 검색
 
@@ -40,7 +40,7 @@ ms.locfileid: "53836571"
 
 ## <a name="schema-specific-search"></a>스키마 관련 검색
 
- **XML 스키마 탐색기** 도 상황에 맞는 메뉴를 사용 하 여 액세스할 수 있는 기본 제공 검색을 포함 합니다 **XML 스키마 탐색기**합니다. 사용할 수 있는 상황에 맞는 메뉴에 대 한 자세한 내용은 참조 하세요. [상황에 맞는 메뉴](../xml-tools/context-menus-xml-schema-explorer.md)합니다. 시작 뷰에서; 스키마 관련 검색을 수행할 수도 있습니다. 자세한 내용은 "스키마 집합 정보" 섹션을 참조 합니다 [시작 뷰](../xml-tools/start-view.md) 항목입니다.
+ **XML 스키마 탐색기** 도 상황에 맞는 (마우스 오른쪽 단추로 클릭) 메뉴를 사용 하 여 액세스할 수 있는 기본 제공 검색을 포함 합니다 **XML 스키마 탐색기**합니다. 사용할 수 있는 상황에 맞는 메뉴에 대 한 자세한 내용은 참조 하세요. [상황에 맞는 메뉴](../xml-tools/context-menus-xml-schema-explorer.md)합니다. 시작 뷰에서; 스키마 관련 검색을 수행할 수도 있습니다. 자세한 내용은 "스키마 집합 정보" 섹션을 참조 합니다 [시작 뷰](../xml-tools/start-view.md) 항목입니다.
 
 ## <a name="display-and-navigate-search-results"></a>표시 하 고 검색 결과 이동 합니다.
 
@@ -54,6 +54,6 @@ ms.locfileid: "53836571"
 
  검색 결과 지우려면 클릭 합니다 **x** 의 요약 결과 창에서 단추를 **XML 스키마 탐색기** 검색 도구 모음입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [XML 스키마 탐색기](../xml-tools/xml-schema-explorer.md)

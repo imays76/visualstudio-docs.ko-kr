@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7623198cc31e8ee955f00cd06b7ca91f8d32a31
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 252b22305579f3c0beccdca0a5464f7d08bbc985
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826996"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269906"
 ---
 # <a name="graph-view"></a>그래프 보기
 
@@ -42,7 +42,7 @@ ms.locfileid: "53826996"
 
  그래프 뷰의 하단에 있는 이동 경로 탐색 막대에서는 스키마 집합에서 선택한 노드가 위치한 곳을 보여 줍니다. 여러 항목을 선택하면 이동 경로 탐색 막대가 비게 됩니다.
 
-## <a name="context-menu"></a>상황에 맞는 메뉴
+## <a name="context-right-click-menu"></a>상황에 맞는 (마우스 오른쪽 단추로 클릭) 메뉴
 
  다음 표에서는 그래프 뷰 디자인 화면의 모든 노드에 사용할 수 있는 옵션에 대해 설명합니다.
 
@@ -92,7 +92,7 @@ ms.locfileid: "53826996"
 
 ## <a name="properties-window"></a>속성 창
 
- 상황에 맞는 메뉴를 사용 하 여 처음 여는 **속성** 창입니다. 기본적으로 **속성** Visual Studio의 오른쪽 아래 모서리에 창이 나타납니다. 콘텐츠 모델 뷰에서 렌더링 되는 노드를 클릭 하면 해당 노드의 속성에 표시 됩니다는 **속성** 창입니다.
+ 상황에 맞는 (마우스 오른쪽 단추로 클릭) 메뉴를 사용 하 여 처음 여는 **속성** 창입니다. 기본적으로 **속성** Visual Studio의 오른쪽 아래 모서리에 창이 나타납니다. 콘텐츠 모델 뷰에서 렌더링 되는 노드를 클릭 하면 해당 노드의 속성에 표시 됩니다는 **속성** 창입니다.
 
 ## <a name="xsd-toolbar"></a>XSD 도구 모음
 
@@ -102,9 +102,9 @@ ms.locfileid: "53826996"
 
 |옵션|설명|
 |-|-----------------|
-|**시작 뷰 표시**|전환 합니다 [보기 시작](../xml-tools/start-view.md)합니다. 이 보기는 바로 가기 키를 사용 하 여 액세스할 수 있습니다. **Ctrl**+**1**합니다.|
-|**콘텐츠 모델 뷰 표시**|전환 합니다 [콘텐츠 모델 뷰](../xml-tools/content-model-view.md)합니다. 이 보기는 바로 가기 키를 사용 하 여 액세스할 수 있습니다. **Ctrl**+**2**합니다.|
-|**그래프 뷰 표시**|전환 합니다 [그래프 보기](../xml-tools/graph-view.md)합니다. 이 보기는 바로 가기 키를 사용 하 여 액세스할 수 있습니다. **Ctrl**+**3**합니다.|
+|**시작 뷰 표시**|전환 합니다 [보기 시작](../xml-tools/start-view.md)합니다. 이 보기는 바로 가기 키를 사용 하 여 액세스할 수 있습니다. **Ctrl**+**1**.|
+|**콘텐츠 모델 뷰 표시**|전환 합니다 [콘텐츠 모델 뷰](../xml-tools/content-model-view.md)합니다. 이 보기는 바로 가기 키를 사용 하 여 액세스할 수 있습니다. **Ctrl**+**2**.|
+|**그래프 뷰 표시**|전환 합니다 [그래프 보기](../xml-tools/graph-view.md)합니다. 이 보기는 바로 가기 키를 사용 하 여 액세스할 수 있습니다. **Ctrl**+**3**.|
 |**작업 영역 지우기**|작업 영역 및 디자인 화면을 지웁니다.|
 |**작업 영역에서 제거**|작업 영역 및 디자인 화면에서 선택한 노드를 제거합니다.|
 |**작업 영역에서 선택 항목을 제외한 모든 제거**|작업 영역 및 디자인 화면에서 선택하지 않은 노드를 제거합니다. 이 옵션은 콘텐츠 모델 뷰 및 그래프 뷰에서 사용됩니다.|
@@ -141,10 +141,10 @@ ms.locfileid: "53826996"
 
 ## <a name="xml-editor-integration"></a>XML 편집기 통합
 
- 노드를 클릭하고 코드 보기의 상황에 맞는 메뉴를 사용하여 그래프 뷰와 XML 편집기 사이를 전환할 수 있습니다.
+ 전환할 수 있습니다 앞뒤로 그래프 뷰와 XML 편집기 사이 노드를 클릭 하 고 코드 보기 상황에 맞는 (마우스 오른쪽 단추로 클릭) 메뉴를 사용 하 여.
 
  XML 편집기에서 스키마 집합을 변경하면 해당 변경 내용이 그래프 뷰에서 동기화됩니다. 자세한 내용은 [XML 편집기와의 통합](../xml-tools/integration-with-xml-editor.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [디자인 화면](../xml-tools/xml-schema-designer-workspace.md)

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab8d2a0e8e3a243828db3f39e95801eafeee5efb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cbedf6454ae97ee97d29d836dd8f8012fb6ca222
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825262"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269152"
 ---
 # <a name="xml-schema-designer-workspace"></a>XML 스키마 디자이너 작업 영역
 
@@ -30,7 +30,7 @@ XML 스키마 디자이너(XSD 디자이너)는 XML 스키마를 탐색하는 �
 
 -   전역 노드, 파일 노드 및 네임 스페이스 노드를 끌어서 놓을 합니다 **XML 스키마 탐색기** 에 세 가지 뷰 중 하나입니다. 자세한 내용은 "노드 끌어서 놓기" 섹션을 참조 하세요 [XML 스키마 탐색기](../xml-tools/xml-schema-explorer.md)합니다.
 
--   상황에 맞는 메뉴를 사용 합니다 **XML 스키마 탐색기**합니다. 자세한 내용은 [상황에 맞는 메뉴](../xml-tools/context-menus-xml-schema-explorer.md)합니다.
+-   상황에 맞는 (마우스 오른쪽 단추로 클릭) 메뉴를 사용 합니다 **XML 스키마 탐색기**합니다. 자세한 내용은 [상황에 맞는 메뉴](../xml-tools/context-menus-xml-schema-explorer.md)합니다.
 
 -   XSD 탐색기에서 검색을 수행 하 고 클릭 합니다 **작업 영역에 선택한 노드 추가** 요약 결과 창에서 단추입니다. 자세한 내용은 [스키마 집합 검색](../xml-tools/searching-the-schema-set.md)합니다.
 
@@ -40,7 +40,7 @@ XML 스키마 디자이너(XSD 디자이너)는 XML 스키마를 탐색하는 �
 
 -   XSD 디자이너 도구 모음
 
--   콘텐츠 모델 뷰 및 그래프 뷰의 상황에 맞는 메뉴
+-   콘텐츠 모델 뷰 및 그래프 뷰의 상황에 맞는 (마우스 오른쪽 단추로 클릭) 메뉴.
 
 -   시작 뷰 페이지의 워터마크, 빈 콘텐츠 모델 뷰 또는 그래프 뷰의 워터마크
 

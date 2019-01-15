@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb49560074b3a4c43efe13ea568207b52536e562
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 37733ddb09fb726c5407888af91db2bc32713799
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918981"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54268502"
 ---
 # <a name="xml-schema-explorer"></a>XML 스키마 탐색기
 
@@ -40,7 +40,7 @@ ms.locfileid: "53918981"
 
 -   있는 경우는 [시작 뷰](../xml-tools/start-view.md)를 클릭 합니다 **XML 스키마 탐색기** 링크.
 
--   하는 경우는 [그래프 뷰](../xml-tools/graph-view.md) 또는 [콘텐츠 모델 뷰](../xml-tools/content-model-view.md) 작업 영역에 노드가 있거나, 상황에 맞는 메뉴를 사용 하 여 선택 하는 **XML 스키마 탐색기**합니다.
+-   하는 경우는 [그래프 뷰](../xml-tools/graph-view.md) 또는 [콘텐츠 모델 뷰](../xml-tools/content-model-view.md) 작업 영역에 노드가 있거나, 상황에 맞는 (마우스 오른쪽 단추로 클릭) 메뉴를 사용 하 여 선택 하는 **XML 스키마 탐색기**합니다.
 
 -   선택할 수도 있습니다는 **XML 스키마 탐색기** 에서 합니다 **보기** 메뉴.
 
@@ -79,6 +79,6 @@ ms.locfileid: "53918981"
 
  로컬 노드 또는 가져오기를 끌어서 놓을 수 없습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [방법: XML 스키마 탐색기에서 작업 영역에 노드 추가](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)
