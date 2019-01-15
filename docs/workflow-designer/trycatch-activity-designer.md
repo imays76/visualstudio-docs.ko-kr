@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 280f844ec08ea5e75a78d2e9ea1596b0fb7162eb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a4a62b660f2deb2b3ab3a092cdfd586a56b2bcb8
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859005"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269815"
 ---
 # <a name="trycatch-activity-designer"></a>TryCatch 활동 디자이너
 
@@ -34,7 +34,7 @@ ms.locfileid: "53859005"
 
 오른쪽 위 모서리에 있는 확장명 단추를 클릭 **TryCatch** 디자이너를 **시도**합니다 **Catch**, 및 **마지막** 상자에 확장 된 보기입니다. Catch를 추가 하려면 클릭 합니다 **새 catch 추가** 단추를 **TryCatch** 디자이너입니다. 단추가 형식 콤보 상자로 바뀝니다. 예외 형식을 선택하고 <ENTER> 키를 눌러 Catch를 추가합니다. 추가한 후에 **Catch**하면 catch 영역이 확장 되 고 활동 catch에 대 한 실행 논리를 정의 하는 catch를 삭제할 수 있습니다. 확장된 Catch 영역 오른쪽에는 텍스트 상자가 있습니다. 이 텍스트 상자를 사용하여 예외 변수의 이름을 지정할 수 있습니다. 동일한 활동에 대 한 예외 변수의 사용할 수 있습니다 **Catch**합니다.
 
-합니다 **TryCatch** 디자이너 편집을 지원 하지 않습니다 **Catch**합니다. 삭제 해야 하는 예외 형식을 변경 하려는 경우는 **Catch** 하 고 새 계정을 추가 합니다. A **Catch** 선택 하 고 삭제 하거나 사용 하 여 삭제할 수는 **삭제** 마우스 오른쪽 단추로 클릭 하면 상황에 맞는 메뉴에서 메뉴.
+합니다 **TryCatch** 디자이너 편집을 지원 하지 않습니다 **Catch**합니다. 삭제 해야 하는 예외 형식을 변경 하려는 경우는 **Catch** 하 고 새 계정을 추가 합니다. A **Catch** 선택 하 고 삭제 하거나 선택 하 여 삭제할 수 있습니다 **삭제** 마우스 오른쪽 단추로 클릭 하 여 액세스 되는 상황에 맞는 메뉴에 있습니다.
 
 ### <a name="the-trycatch-properties"></a>TryCatch 속성
 

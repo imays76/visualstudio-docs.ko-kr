@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 326a377cd93e15c52a699dfb83c7ec111866cc0c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4c092a4bcb419039b145bccf3f6c0cd952f0ff85
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858658"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269581"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>워크플로 디자이너의 바로 가기 키
 
@@ -54,7 +54,7 @@ Visual Studio 내에서 전역 바로 가기와 디버깅 바로 가기가 워�
 
 - 순서도의 크기를 조정하려면 화살표 키를 사용하여 순서도의 현재 경계 너머로 활동을 이동합니다. 순서도의 크기가 자동으로 조정됩니다.
 
-- 활동을 시작 노드로 설정 하려면 사용 합니다 **노드로 설정** 상황에 맞는 메뉴 명령을 합니다.
+- 작업을 시작 노드로 설정 하려면 합니다 **노드로 설정** 오른쪽 클릭 메뉴에서 명령을 합니다.
 
 - 활동을 연결하려면
 

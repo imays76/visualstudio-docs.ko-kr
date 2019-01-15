@@ -10,12 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: a0b540eb6f8e8c09845e069275a0a901c2809806
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b47fe1e80f2441c729dd2d971bfadffb80dfbd04
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886373"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270296"
 ---
 # <a name="understanding-the-dsl-code"></a>DSL 코드 이해
 도메인 특정 언어 (DSL) 솔루션을 읽고 Visual Studio에서 dsl 인스턴스를 업데이트 하는 데 사용할 수 있는 API를 생성 합니다. 이 API는 DSL 정의에서 생성되는 코드에서 정의됩니다. 이 항목에서는 생성되는 API에 대해 설명합니다.
@@ -191,7 +191,7 @@ ms.locfileid: "53886373"
 
  `CommandSet.cs`
 
- 다이어그램에 표시되는 컨텍스트 메뉴 명령입니다. 이 집합을 조정하거나 집합에 원하는 명령을 추가할 수 있습니다. 이 파일은 명령의 코드를 포함합니다. 메뉴에서 명령의 위치는 Commands.vsct 파일에 의해 결정됩니다. 자세한 내용은 [사용자 명령 및 작업 작성](../modeling/writing-user-commands-and-actions.md)합니다.
+ 다이어그램에 표시 되는 메뉴 명령을 마우스 오른쪽 단추로 클릭 합니다. 이 집합을 조정하거나 집합에 원하는 명령을 추가할 수 있습니다. 이 파일은 명령의 코드를 포함합니다. 메뉴에서 명령의 위치는 Commands.vsct 파일에 의해 결정됩니다. 자세한 내용은 [사용자 명령 및 작업 작성](../modeling/writing-user-commands-and-actions.md)합니다.
 
  `Constants.cs`
 
@@ -281,7 +281,7 @@ namespace Company.EmbedInForm
 
  `GeneratedVSCT.vsct`
 
- 다이어그램 상황에 맞는 메뉴 등 메뉴의 표준 메뉴 명령을 찾습니다 합니다 **편집** 메뉴 및 기타 등등. 명령의 코드는 CommandSet.cs에 있습니다. 표준 명령을 다시 배치하거나 수정할 수 있으며 원하는 명령을 추가할 수도 있습니다. 자세한 내용은 [사용자 명령 및 작업 작성](../modeling/writing-user-commands-and-actions.md)합니다.
+ 다이어그램 (컨텍스트)를 마우스 오른쪽 단추 클릭 메뉴 등 메뉴의 표준 메뉴 명령을 찾습니다 합니다 **편집** 메뉴 및 기타 등등. 명령의 코드는 CommandSet.cs에 있습니다. 표준 명령을 다시 배치하거나 수정할 수 있으며 원하는 명령을 추가할 수도 있습니다. 자세한 내용은 [사용자 명령 및 작업 작성](../modeling/writing-user-commands-and-actions.md)합니다.
 
  `ModelExplorer.cs`
 
@@ -291,7 +291,7 @@ namespace Company.EmbedInForm
 
  모델 탐색기에서 선택한 항목이 다이어그램 선택 항목과 계속 동기화되도록 하려는 경우 다음 코드를 사용할 수 있습니다.
 
-```
+```csharp
 protected override void OnSelectionChanged(global::System.EventArgs e)
 {
 base.OnSelectionChanged(e);

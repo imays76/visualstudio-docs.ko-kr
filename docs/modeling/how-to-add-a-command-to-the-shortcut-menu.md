@@ -11,17 +11,18 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 284a789a7ba4e7fec1a87723c51a32f650f6d843
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a415657c86f6f4a6f54ce4273e49ad6302ae77b4
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987968"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270037"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>방법: 바로 가기 메뉴에 명령 추가
+
 사용자가 DSL(Domain-Specific Language) 관련 작업을 수행할 수 있도록 DSL에 메뉴 명령을 추가할 수 있습니다. 사용자가 다이어그램을 마우스 오른쪽 단추로 클릭하면 상황에 맞는(바로 가기) 메뉴에 명령이 표시됩니다. 특정 상황에서만 메뉴에 표시되도록 명령을 정의할 수 있습니다. 예를 들어 사용자가 특정 형식의 요소나 특정 상태의 요소를 클릭할 때만 메뉴가 표시되도록 지정할 수 있습니다.
 
- 요약하자면 DslPackage 프로젝트에서 다음과 같은 단계를 수행합니다.
+요약 하자면, 단계를 수행 DslPackage 프로젝트에서 다음과 같이 합니다.
 
 1. [Commands.vsct에서 명령을 선언 합니다.](#VSCT)
 
@@ -32,12 +33,13 @@ ms.locfileid: "53987968"
    샘플에 대 한 참조를 [Visualization and Modeling SDK 웹 사이트](http://go.microsoft.com/fwlink/?LinkID=185579)합니다.
 
 > [!NOTE]
->  CommandSet.cs의 메서드를 재정의하여 잘라내기, 붙여넣기, 모두 선택, 인쇄 등의 몇 가지 기존 명령 동작도 수정할 수 있습니다. 자세한 내용은 [방법: 표준 메뉴 명령 수정](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)합니다.
+> CommandSet.cs의 메서드를 재정의하여 잘라내기, 붙여넣기, 모두 선택, 인쇄 등의 몇 가지 기존 명령 동작도 수정할 수 있습니다. 자세한 내용은 [방법: 표준 메뉴 명령 수정](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)합니다.
 
-## <a name="defining-a-command-using-mef"></a>MEF를 사용하여 명령 정의
- MEF(Managed Extension Framework)는 다이어그램 메뉴의 메뉴 명령을 정의하는 다른 방법을 제공합니다. MEF는 주로 명령의 개발자 또는 다른 사용자가 DSL을 확장하는 데 사용됩니다. 사용자는 DSL만 설치할 수도 있고 DSL과 확장을 모두 설치할 수도 있습니다. 이와 동시에 MEF를 사용하면 DSL에서 MEF를 사용하도록 설정하는 초기 작업을 수행한 후 바로 가기 메뉴 명령을 정의하는 작업도 줄어듭니다.
+## <a name="define-a-command-using-mef"></a>MEF를 사용 하 여 명령 정의
 
- 다음과 같은 경우 이 항목에서 소개하는 메서드를 사용합니다.
+MEF(Managed Extension Framework)는 다이어그램 메뉴의 메뉴 명령을 정의하는 다른 방법을 제공합니다. MEF는 주로 명령의 개발자 또는 다른 사용자가 DSL을 확장하는 데 사용됩니다. 사용자는 DSL만 설치할 수도 있고 DSL과 확장을 모두 설치할 수도 있습니다. 이와 동시에 MEF를 사용하면 DSL에서 MEF를 사용하도록 설정하는 초기 작업을 수행한 후 바로 가기 메뉴 명령을 정의하는 작업도 줄어듭니다.
+
+다음과 같은 경우 이 항목에서 소개하는 메서드를 사용합니다.
 
 1. 오른쪽 클릭 바로 가기 메뉴 이외의 메뉴 명령을 메뉴에 정의하려는 경우
 
@@ -56,7 +58,7 @@ ms.locfileid: "53987968"
 
  .Vsct 파일에 대 한 자세한 내용은 참조 하세요. [Visual Studio 명령 테이블 (합니다. Vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)합니다.
 
-#### <a name="to-add-the-command"></a>명령을 추가하려면
+### <a name="to-add-the-command"></a>명령을 추가하려면
 
 1.  **솔루션 탐색기**아래에 있는 합니다 **DslPackage** 프로젝트에서 Commands.vsct를 엽니다.
 
@@ -87,7 +89,7 @@ ms.locfileid: "53987968"
     ```
 
     > [!NOTE]
-    >  각 단추나 그룹은 GUID 및 정수 ID로 식별됩니다. 같은 GUID로 여러 그룹과 단추를 만들 수 있지만 이러한 항목의 ID는 각각 달라야 합니다. GUID 이름과 ID는 변환할 실제 Guid와 숫자 Id를 `<Symbols>` 노드.
+    > 각 단추나 그룹은 GUID 및 정수 ID로 식별됩니다. 같은 GUID로 여러 그룹과 단추를 만들 수 있지만 이러한 항목의 ID는 각각 달라야 합니다. GUID 이름과 ID는 변환할 실제 Guid와 숫자 Id를 `<Symbols>` 노드.
 
 3.  명령이 DSL 컨텍스트에서만 로드되도록 명령에 대한 표시 유형 제약 조건을 추가합니다. 자세한 내용은 [VisibilityConstraints 요소](../extensibility/visibilityconstraints-element.md)합니다.
 
@@ -134,7 +136,7 @@ ms.locfileid: "53987968"
 
  패키지 클래스는 생성된 파일에서 정의되므로 Package.cs 파일을 생성하는 텍스트 템플릿 파일에서 특성을 업데이트합니다.
 
-#### <a name="to-update-the-packagett-file"></a>Package.tt 파일을 업데이트하려면
+### <a name="to-update-the-packagett-file"></a>Package.tt 파일을 업데이트하려면
 
 1.  **솔루션 탐색기**를 **DslPackage** 프로젝트를 합니다 **GeneratedCode** 폴더 Package.tt 파일을 엽니다.
 
@@ -145,11 +147,12 @@ ms.locfileid: "53987968"
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`
 
 ##  <a name="CommandSet"></a> 명령의 동작을 정의 합니다.
- DS에는 DslPackage\GeneratedCode\CommandSet.cs에서 선언된 partial 클래스에서 구현되는 일부 명령이 이미 포함되어 있습니다. 새 명령을 추가하려면 같은 클래스의 partial 선언을 포함하는 새 파일을 만들어 이 클래스를 확장해야 합니다. 클래스의 이름은 일반적으로  *\<d s l 이름 >*`CommandSet`합니다. 먼저 클래스 이름을 확인하고 해당 내용을 검사하면 유용합니다.
 
- 명령 집합 클래스는 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>에서 파생됩니다.
+DS에는 DslPackage\GeneratedCode\CommandSet.cs에서 선언된 partial 클래스에서 구현되는 일부 명령이 이미 포함되어 있습니다. 새 명령을 추가하려면 같은 클래스의 partial 선언을 포함하는 새 파일을 만들어 이 클래스를 확장해야 합니다. 클래스의 이름은 일반적으로  *\<d s l 이름 >*`CommandSet`합니다. 클래스의 이름을 확인 하 고 해당 내용을 검사 하 여 시작 하는 것이 유용 합니다.
 
-#### <a name="to-extend-the-commandset-class"></a>CommandSet 클래스를 확장하려면
+명령 집합 클래스는 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>에서 파생됩니다.
+
+### <a name="extend-the-commandset-class"></a>CommandSet 클래스를 확장 합니다.
 
 1.  솔루션 탐색기의 DslPackage 프로젝트에서 GeneratedCode 폴더를 열고 CommandSet.tt를 확인하여 생성된 CommandSet.cs 파일을 엽니다. 이 파일에 정의된 첫 번째 클래스의 이름과 네임스페이스를 확인합니다. 예를 들어 다음과 같은 코드가 표시될 수 있습니다.
 
@@ -167,8 +170,7 @@ ms.locfileid: "53987968"
 
      **참고** 클래스 템플릿을 사용 하는 새 파일을 만든 경우 네임 스페이스 및 클래스 이름을 모두 수정 해야 합니다.
 
-### <a name="extend-the-command-set-class"></a>명령 집합 클래스 확장
- 명령 집합 코드는 일반적으로 다음 네임스페이스를 가져와야 합니다.
+명령 집합 코드는 일반적으로 다음 네임스페이스를 가져와야 합니다.
 
 ```csharp
 using System;
@@ -180,7 +182,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 using Microsoft.VisualStudio.Modeling.Shell;
 ```
 
- 생성된 commandSet.cs와 일치하도록 네임스페이스 및 클래스 이름을 조정합니다.
+생성된 commandSet.cs와 일치하도록 네임스페이스 및 클래스 이름을 조정합니다.
 
 ```csharp
 namespace Company.Language1 /* Make sure this is correct */
@@ -190,7 +192,7 @@ namespace Company.Language1 /* Make sure this is correct */
   {
 ```
 
- 명령이 상황에 맞는 메뉴에 표시되는 경우를 결정하는 메서드와 명령을 수행하는 메서드 등 두 메서드를 정의해야 합니다. 이러한 메서드는 재정의가 아니며, 명령 목록에 등록해야 합니다.
+명령 (컨텍스트)를 마우스 오른쪽 단추 클릭 메뉴에서 명령을 실행할 다른에 표시 될 때 확인 하는 두 가지 메서드를 정의 해야 합니다. 이러한 메서드는 재정의가 아니며, 명령 목록에 등록해야 합니다.
 
 ### <a name="define-when-the-command-will-be-visible"></a>명령이 표시되는 경우 정의
  각 명령에 대해 해당 명령이 메뉴에 표시되는지 여부와 사용하도록 설정되는지 아니면 회색으로 표시되는지를 결정하는 `OnStatus...` 메서드를 정의합니다. 다음 예에 나와 있는 것처럼 `Visible`의 `Enabled` 및 `MenuCommand` 속성을 설정합니다. 이 메서드는 사용자가 다이어그램을 마우스 오른쪽 단추로 클릭할 때마다 바로 가기 메뉴를 생성하기 위해 호출되므로 빠르게 작동해야 합니다.
@@ -218,7 +220,7 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
 } } } }
 ```
 
- OnStatus 메서드에서는 다음 코드 조각이 유용하게 사용되는 경우가 많습니다.
+OnStatus 메서드에서는 다음 코드 조각이 유용하게 사용되는 경우가 많습니다.
 
 - `this.CurrentSelection`. 사용자가 마우스 오른쪽 단추로 클릭한 모양은 항상 이 목록에 포함됩니다. 사용자가 다이어그램의 빈 부분을 클릭하는 경우의 목록 멤버는 Diagram뿐입니다.
 
@@ -232,9 +234,9 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
 
 - `shape.ModelElement as MyLanguageElement` - 모양이 나타내는 모델 요소입니다.
 
-  일반적으로는 선택한 항목에 따라 `Visible` 속성이 설정되고 선택한 요소의 상태에 따라 `Enabled` 속성이 설정되도록 지정합니다.
+일반적으로는 선택한 항목에 따라 `Visible` 속성이 설정되고 선택한 요소의 상태에 따라 `Enabled` 속성이 설정되도록 지정합니다.
 
-  OnStatus 메서드가 Store의 상태를 변경해서는 안 됩니다.
+OnStatus 메서드가 Store의 상태를 변경해서는 안 됩니다.
 
 ### <a name="define-what-the-command-does"></a>명령을 통해 수행할 작업 정의
  각 명령에 대해 사용자가 메뉴 명령을 클릭하면 필요한 작업을 수행하는 `OnMenu...` 메서드를 정의합니다.
@@ -319,7 +321,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 ## <a name="test-the-command"></a>명령 테스트
  Visual Studio의 실험적 인스턴스에서 DSL을 빌드하고 실행합니다. 지정한 상황에서 바로 가기 메뉴에 명령이 표시되어야 합니다.
 
-#### <a name="to-exercise-the-command"></a>명령을 실행해 보려면
+### <a name="to-exercise-the-command"></a>명령을 실행해 보려면
 
 1.  에 **솔루션 탐색기** 도구 모음에서 클릭 **모든 템플릿 변환**합니다.
 
@@ -329,8 +331,9 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 4.  다이어그램의 여러 항목을 마우스 오른쪽 단추로 클릭하여 명령을 정상적으로 사용하거나 사용하지 않도록 설정하며 선택한 항목에 따라 적절하게 표시되거나 숨겨지는지를 확인합니다.
 
-## <a name="troubleshooting"></a>문제 해결
- **명령 메뉴에 나타나지 않습니다.**
+## <a name="troubleshoot"></a>문제 해결
+
+**명령 메뉴에 나타나지 않습니다.**
 
 - DSL 패키지를 설치할 때까지 명령은 Visual Studio의 디버깅 인스턴스에만 표시됩니다. 자세한 내용은 [도메인별 언어 솔루션 배포](../modeling/deploying-domain-specific-language-solutions.md)합니다.
 
@@ -340,23 +343,23 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 - OnStatus 메서드 시작 부분에 중단점을 설정합니다. 그러면 다이어그램의 아무 곳이나 마우스 오른쪽 단추로 클릭할 때 메서드가 중단되어야 합니다.
 
-   **OnStatus 메서드가 호출 되지 않습니다**:
+**OnStatus 메서드가 호출 되지 않습니다**:
 
-  -   CommandSet 코드의 GUID 및 ID가 Commands.vsct의 Symbols 섹션에 포함된 GUID 및 ID와 일치하는지 확인합니다.
+-   CommandSet 코드의 GUID 및 ID가 Commands.vsct의 Symbols 섹션에 포함된 GUID 및 ID와 일치하는지 확인합니다.
 
-  -   Commands.vsct에서 모든 Parent 노드의 GUID 및 ID가 올바른 부모 그룹을 식별하는지 확인합니다.
+-   Commands.vsct에서 모든 Parent 노드의 GUID 및 ID가 올바른 부모 그룹을 식별하는지 확인합니다.
 
-  -   Visual Studio 명령 프롬프트에서 devenv /rootsuffix exp /setup을 입력합니다. 그런 다음 Visual Studio 디버깅 인스턴스를 다시 시작합니다.
+-   Visual Studio 명령 프롬프트에서 devenv /rootsuffix exp /setup을 입력합니다. 그런 다음 Visual Studio 디버깅 인스턴스를 다시 시작합니다.
 
 - OnStatus 메서드를 단계별로 실행하여 command.Visible 및 command.Enabled가 true로 설정되는지 확인합니다.
 
-  **잘못 된 메뉴 텍스트가 표시 되거나 명령이 잘못 된 위치에 표시**:
+**잘못 된 메뉴 텍스트가 표시 되거나 명령이 잘못 된 위치에 표시**:
 
 - GUID 및 ID 조합이 해당 명령에 대해 고유한지 확인합니다.
 
 - 이전 버전 패키지를 제거했는지 확인합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [도메인별 언어를 사용자 지정하는 코드 작성](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [방법: 표준 메뉴 명령 수정](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)

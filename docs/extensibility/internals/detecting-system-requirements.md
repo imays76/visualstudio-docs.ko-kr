@@ -33,7 +33,7 @@ VSPackage는 Visual Studio가 설치 되어 있지 않으면 작동 하지 않�
 최신 버전을 설치 하면 이전 버전의 경우 해당 버전에 대 한 레지스트리 키도 추가 됩니다. 즉 Enterprise edition에 설치 된 경우에 **설치** 키로 설정 됩니다 *1* Professional 및 Community 버전 뿐만 아니라 엔터프라이즈에 대 한 합니다. 따라서 해야 최신 버전에 대해서만 확인 해야 합니다.  
   
 > [!NOTE]
->  레지스트리 편집기의 64 비트 버전에서는 32 비트 키 아래에 표시 됩니다 **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\**합니다. Visual Studio 키는 아래 **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\**합니다.  
+>  레지스트리 편집기의 64 비트 버전에서는 32 비트 키 아래에 표시 됩니다 **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\** 합니다. Visual Studio 키는 아래 **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\**합니다.  
   
 |제품|Key|  
 |-------------|---------|  

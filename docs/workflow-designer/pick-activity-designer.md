@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 525766d69e892bd6560cd9d9cd280d8ed061c56c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 710c7728069a7166d67ab39239b360634fb80509
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946609"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269503"
 ---
 # <a name="pick-activity-designer"></a>Pick 활동 디자이너
 
@@ -30,7 +30,7 @@ ms.locfileid: "53946609"
 
 액세스는 **선택** 활동 디자이너를 **제어 흐름** 범주의 합니다 **도구 상자**. 합니다 **선택** 활동 디자이너에서 끌 수 있습니다 합니다 **도구 상자** 활동 디자이너가 일반적으로 배치 하는 내부 때마다 워크플로 디자이너 화면에 끌어 놓 및는  **시퀀스** 활동 디자이너입니다. 워크플로 디자이너에 놓으면 만듭니다는 <xref:System.Activities.Statements.Pick> 기본적으로 두 개의 빈을 포함 하는 활동 <xref:System.Activities.Statements.PickBranch> 있는 요소로 작업 표시 이름 Branch1 및 분기 2입니다. 이러한 각 <xref:System.Activities.Statements.PickBranch.DisplayName%2A> 속성 값을 편집할 수 있습니다 합니다 **PickBranch** 활동 디자이너 머리글 또는 합니다 **속성** 각 분기에 대 한 창.
 
-추가 하는 방법은 두 가지가 <xref:System.Activities.Statements.PickBranch> 활동의 컬렉션을를 <xref:System.Activities.Statements.Pick> 개체: 끌어서 놓기 합니다 **PickBranch** 에서 디자이너를 **도구 상자** 또는에서 상황에 맞는 메뉴를 사용 하 여 내 합니다 **선택** 디자인 화면입니다. 자세한 내용은 참조는 [PickBranch](../workflow-designer/pickbranch-activity-designer.md) 항목입니다. 내부 표시는 유일한 항목에 배치할 수는 **선택** activity designer가는 **PickBranch** 활동 디자이너입니다.
+추가 하는 방법은 두 가지가 <xref:System.Activities.Statements.PickBranch> 활동의 컬렉션을를 <xref:System.Activities.Statements.Pick> 개체: 끌어서 놓기 합니다 **PickBranch** 에서 디자이너를 **도구 상자** 또는 오른쪽 클릭 메뉴를 사용 하 여 내에서 **선택** 디자인 화면입니다. 자세한 내용은 참조는 [PickBranch](../workflow-designer/pickbranch-activity-designer.md) 항목입니다. 내부 표시는 유일한 항목에 배치할 수는 **선택** activity designer가는 **PickBranch** 활동 디자이너입니다.
 
 ### <a name="pick-activity-properties-in-the-workflow-designer"></a>워크플로 디자이너의 Pick 활동 속성
 
@@ -40,7 +40,7 @@ ms.locfileid: "53946609"
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|머리글에 <xref:System.Activities.Statements.Pick> 활동 디자이너의 이름을 지정합니다. 기본값은 Pick입니다. 속성 표에서 또는 활동 디자이너의 머리글에서 직접 값을 편집할 수 있습니다.<br /><br /> <xref:System.Activities.Activity.DisplayName%2A>은 꼭 필요하지 않더라도 사용하는 것이 좋습니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [제어 흐름](../workflow-designer/control-flow-activity-designers.md)
 - [선택 활동](/dotnet/framework/windows-workflow-foundation/pick-activity)
