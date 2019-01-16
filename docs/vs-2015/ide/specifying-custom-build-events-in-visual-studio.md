@@ -16,10 +16,10 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 650a0501de3f2c3728c068be13dc096361f9a54f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53893554"
 ---
 # <a name="specifying-custom-build-events-in-visual-studio"></a>Visual Studio에서 사용자 지정 빌드 이벤트 지정
@@ -31,7 +31,7 @@ ms.locfileid: "53893554"
 
 -   Visual Basic--[방법: 빌드 이벤트 지정(Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
 
--   Visual C# 및 F#-[방법: 빌드 이벤트 지정(C#)](../ide/how-to-specify-build-events-csharp.md).
+-   Visual C# 및 F#-[방법: 빌드 이벤트 지정(C#)](../ide/how-to-specify-build-events-csharp.md)
 
 -   Visual C++--[빌드 이벤트 지정](http://msdn.microsoft.com/library/788a6c18-2dbe-4a49-8cd6-86c1ad7a95cc)
 
@@ -60,4 +60,4 @@ ms.locfileid: "53893554"
     >  위 코드의 `%I`는 배치 스크립트에서 `%%I`여야 합니다.
 
 ## <a name="see-also"></a>참고 항목
- [컴파일 및 빌드](../ide/compiling-and-building-in-visual-studio.md) [빌드 전 이벤트/빌드 후 이벤트 명령줄 대화 상자](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [MSBuild 특수 문자](../msbuild/msbuild-special-characters.md) [연습: 애플리케이션 빌드를 참조하세요](../ide/walkthrough-building-an-application.md)
+ [컴파일 및 빌드](../ide/compiling-and-building-in-visual-studio.md) [빌드 전 이벤트/빌드 후 이벤트 명령줄 대화 상자](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [MSBuild 특수 문자](../msbuild/msbuild-special-characters.md) [연습: 애플리케이션 빌드를 참조하세요.

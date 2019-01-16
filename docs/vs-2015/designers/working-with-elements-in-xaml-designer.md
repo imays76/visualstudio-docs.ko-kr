@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: f0ec7d97ace8f61f209e4664c0de42b883a6a5d0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "49896954"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Working with elements in XAML Designer
@@ -71,9 +71,9 @@ ms.locfileid: "49896954"
   
 1.  맞출 요소를 선택합니다. 요소를 선택하는 동안 Ctrl 키를 누르고 두 개 이상의 요소를 선택할 수 있습니다.  
   
-2.  [속성] 창의 **레이아웃** 섹션에 있는 **HorizontalAlignment** 아래에서 **Left**, **Center**, **Right** 또는 **Stretch** 속성 중 하나를 선택합니다.  
+2.  속성 창의 **레이아웃** 섹션에 있는 **HorizontalAlignment** 아래에서 다음 속성 중 하나를 선택합니다. **Left**, **Center**, **Right** 또는 **Stretch**  
   
-3.  [속성] 창의 **레이아웃** 섹션에 있는 **VerticalAlignment** 아래에서 **Top**, **Center**, **Bottom** 또는 **Stretch** 속성 중 하나를 선택합니다.  
+3.  속성 창의 **레이아웃** 섹션에 있는 **VerticalAlignment** 아래에서 다음 속성 중 하나를 선택합니다. **Top**, **Center**, **Bottom** 또는 **Stretch**  
   
 #### <a name="to-align-two-or-more-elements-by-using-snaplines"></a>맞춤선을 사용하여 둘 이상의 요소를 맞추려면  
   

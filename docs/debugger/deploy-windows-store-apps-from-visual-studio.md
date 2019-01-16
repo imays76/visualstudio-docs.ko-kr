@@ -14,10 +14,10 @@ manager: douge
 ms.workload:
 - uwp
 ms.openlocfilehash: 38e3f53a22b7f8dfa84d327fb2c10ef5efacddd4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53821317"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Visual Studio에서 UWP 앱 배포
@@ -28,7 +28,7 @@ Visual Studio 배포 기능을 작성 하 고 대상 장치에서 Visual Studio�
 
 - 대상이 원격 디바이스인 경우 Visual Studio에서는 원격 컴퓨터로 필수 파일을 복사한 다음 해당 디바이스에서 앱을 등록합니다.
 
-사용 하 여 Visual Studio에서 앱을 디버그할 때 배포는 자동 합니다 **디버깅 시작** 옵션 (키보드: F5) 또는 **디버깅 하지 않고 시작** 옵션 (키보드: CTRL + F5). 또한 앱을 수동으로 배포할 수도 있습니다. 수동 배포는 다음 시나리오에서 유용합니다.
+디버깅 시작** 옵션(키보드: F5 키) 또는 **디버깅 하지 않고 시작** 옵션 (키보드: CTRL+F5 또한 앱을 수동으로 배포할 수도 있습니다. 수동 배포는 다음 시나리오에서 유용합니다.
 
 - 로컬 또는 원격 컴퓨터에서 애드혹 테스트
 

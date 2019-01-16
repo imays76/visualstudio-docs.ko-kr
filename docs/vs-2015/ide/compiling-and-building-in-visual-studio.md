@@ -17,10 +17,10 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 3d94289baf5cd7b3e4724f205dbfcb5e0ff227eb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53931066"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Visual Studio에서 컴파일 및 빌드
@@ -57,4 +57,4 @@ Visual Studio를 사용하여 개발 주기 동안 잦은 간격으로 애플리
 -   병렬 빌드를 사용하여 빌드 성능 개선. 자세한 내용은 [병렬로 여러 프로젝트 빌드](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) 또는 블로그 게시물 [Tuning C++ build parallelism](http://blogs.msdn.com/b/msbuild/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx)(C++ 빌드 병렬 처리 조정)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
- [연습: 응용 프로그램 빌드](../ide/walkthrough-building-an-application.md) [빌드 구성 이해](../ide/understanding-build-configurations.md) [빌드 플랫폼 이해](../ide/understanding-build-platforms.md) [(컴파일) 웹 사이트 프로젝트 빌드](http://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [ 어떻게: 프로젝트 종속성 만들기 및 제거](../ide/how-to-create-and-remove-project-dependencies.md)
+ [연습: 응용 프로그램 빌드](../ide/walkthrough-building-an-application.md) [빌드 구성 이해](../ide/understanding-build-configurations.md) [빌드 플랫폼 이해](../ide/understanding-build-platforms.md) [(컴파일) 웹 사이트 프로젝트 빌드](http://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [ 어떻게: 프로젝트 종속성 만들기 및 제거를 참조하세요.

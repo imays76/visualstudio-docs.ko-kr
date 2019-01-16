@@ -17,10 +17,10 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: db98360ecf13ddeec8af7be0b546553b81a7dc72
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53915363"
 ---
 # <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>방법: Visual Studio에서 글꼴 및 색 변경
@@ -70,4 +70,4 @@ Visual Studio의 IDE 프레임과 도구 창의 색을 여러 가지 방식으�
 5.  **크기** 목록에서 텍스트 크기를 선택한 다음 **확인** 단추를 선택합니다.
 
 ## <a name="see-also"></a>참고 항목
- [Visual Studio의 접근성 기능](../ide/reference/accessibility-features-of-visual-studio.md) [방법: 편집기의 글꼴 및 색 변경](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)을 참조하세요.
+ [Visual Studio의 접근성 기능](../ide/reference/accessibility-features-of-visual-studio.md) [방법: 편집기의 글꼴 및 색 변경을 참조하세요.

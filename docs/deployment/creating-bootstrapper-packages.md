@@ -21,10 +21,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 158befc5b401feb700a2effff7378b1edac6a2c9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53878392"
 ---
 # <a name="create-bootstrapper-packages"></a>부트스트래퍼 패키지 만들기
@@ -95,7 +95,7 @@ Visual Studio에서 XML 편집기를 사용 하 여 부트스트래퍼 매니페
   
 `%ProgramFiles%\Microsoft.NET\RedistList`  
   
-재배포 가능 목록은 다음과 같습니다. 다음 형식을 사용 하 여 이름을 지정 해야 하는 XML 파일 *\<회사 이름 >. \<구성 요소 이름 >. RedistList.xml*합니다. 예를 들어 Acme에서 만든 Datawidgets 구성 요소의 경우 *Acme.DataWidgets.RedistList.xml*을 사용합니다. 아래에는 재배포 가능 파일 목록 내용의 예제가 나와 있습니다.  
+재배포 가능 목록은 다음과 같습니다. 다음 형식을 사용 하 여 이름을 지정 해야 하는 XML 파일 *\<Company Name>.\<Component Name>.RedistList.xml*. 예를 들어 Acme에서 만든 Datawidgets 구성 요소의 경우 *Acme.DataWidgets.RedistList.xml*을 사용합니다. 아래에는 재배포 가능 파일 목록 내용의 예제가 나와 있습니다.  
   
 ```xml  
 <?xml version="1.0" encoding="UTF-8"?>  

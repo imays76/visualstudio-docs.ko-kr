@@ -16,10 +16,10 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: b9e2f3bf3525977689bcc5bbf917722da76ea9e9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53910466"
 ---
 # <a name="get-started-developing-with-visual-studio"></a>Get Started Developing with Visual Studio
@@ -31,11 +31,11 @@ ms.locfileid: "53910466"
 
      [자습서 수행](https://docs.asp.net/en/latest/tutorials/your-first-aspnet-application.html) &#124;                               [문서 찾아보기](https://docs.asp.net/) &#124;                                   [동영상 시청](http://www.asp.net/vnext)
 
--   **[HTML/Javascript (Apache Cordova) 플랫폼 간 모바일 앱 만들기](http://taco.visualstudio.com/docs/get-started-first-mobile-app/)**  : Apache Cordova HTML/CSS/Javascript를 기반으로 하는 오픈 소스 플랫폼 간 환경입니다.  Javascript 코드는 특정 플랫폼을 대상으로 하는 래퍼에서 실행되며 디바이스의 모든 하드웨어 기능에 액세스할 수 있게 해줍니다. Apple 스토어, Android 스토어 및 Windows 스토어용 앱을 개발할 수 있습니다.
+-   HTML/Javascript(Apache Cordova)로 플랫폼 간 모바일 앱 만들기               Apache Cordova HTML/CSS/Javascript를 기반으로 하는 오픈 소스 플랫폼 간 환경입니다.  Javascript 코드는 특정 플랫폼을 대상으로 하는 래퍼에서 실행되며 디바이스의 모든 하드웨어 기능에 액세스할 수 있게 해줍니다. Apple 스토어, Android 스토어 및 Windows 스토어용 앱을 개발할 수 있습니다.
 
      [샘플 로드](https://github.com/Microsoft/cordova-samples/tree/master/todo-angularjs) &#124;   [자습서 수행](http://taco.visualstudio.com/docs/get-started-first-mobile-app/) &#124;                               [문서 찾아보기](http://taco.visualstudio.com/docs/get-started-vs-tools-apache-cordova/) &#124;                                [동영상 시청](https://channel9.msdn.com/Blogs/Seth-Juarez/Getting-Started-with-Apache-Cordova-in-Visual-Studio)
 
--   **[플랫폼 간 모바일 앱에서 C# 또는 Visual Basic (Xamarin)](../cross-platform/visual-studio-and-xamarin.md)**  : Visual Studio 및 Xamarin 용 도구를 사용 하 여 공유 코드 베이스에서 Android, iOS 및 유니버설 Windows 플랫폼에서 실행 되는 모바일 앱 만들기를 시작 합니다.
+-   C# 또는 Visual Basic(Xamarin)으로 플랫폼 간 모바일 앱 만들기 공유 코드 베이스에서 Android, iOS 및 유니버설 Windows 플랫폼에서 실행 되는 모바일 앱을 만들려면 Visual Studio 및 Xamarin 용 도구를 사용 하 여 시작 합니다.
 
      샘플 로드: [Tasky Portable](http://developer.xamarin.com/samples/mobile/TaskyPortable/)(네이티브 UI) 또는 [Xamarin Forms Todo 샘플](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo)(Xamarin.Forms 공유 UI) &#124; [자습서 수행](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) &#124; [문서 찾아보기](https://msdn.microsoft.com/library/mt299001.aspx) &#124; [동영상 시청](https://channel9.msdn.com/Series/Cross-Platform-Development-with-Xamarin--Visual-Studio/01)
 

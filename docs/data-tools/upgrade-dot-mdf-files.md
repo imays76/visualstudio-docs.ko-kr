@@ -16,10 +16,10 @@ ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
 ms.openlocfilehash: 4e42058d2728d806551ae319112052e664950dab
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53863422"
 ---
 # <a name="upgrade-mdf-files"></a>.mdf 파일 업그레이드
@@ -72,7 +72,7 @@ Visual Studio를 사용 하 여 데이터베이스 파일을 포함 하는 프�
 
     -   **데이터베이스 파일 첨부**: 주 데이터베이스의 실제 경로로 *.mdf* 파일입니다.
 
-    -   **논리적 이름**: 파일을 사용 하려는 이름입니다.
+    -   논리적 이름(&L): 파일을 사용 하려는 이름입니다.
 
 3.  **확인** 단추를 선택합니다.
 
