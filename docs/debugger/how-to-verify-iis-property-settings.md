@@ -1,8 +1,6 @@
 ---
 title: '방법: IIS 속성 설정 확인 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f98796a7fd9546c8377eefcc4ad25fb90e549544
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: b2bfc72fbae9383b54a31f2252ab60b101903a4e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389489"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926887"
 ---
 # <a name="how-to-verify-iis-property-settings"></a>방법: IIS 속성 설정 확인
 
@@ -61,7 +59,7 @@ IIS 관리 도구를 사용하여 웹 응용 프로그램의 속성을 설정할
 
    3.  **확인**을 클릭하여 **인증 방법** 대화 상자를 닫습니다.
 
-5. ATL 서버 응용 프로그램의 경우 DEBUG 동사가 ISAPI 확장과 관련이 있는지 여부를 확인합니다. 자세한 내용은 [방법: 확장을 사용 하 여 디버그 동사 연결](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e)합니다.
+5. ATL 서버 응용 프로그램의 경우 DEBUG 동사가 ISAPI 확장과 관련이 있는지 여부를 확인합니다. 자세한 내용은 [방법: DEBUG 동사 확장이 연결](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e)합니다.
 
 6. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 애플리케이션의 경우, 해당 애플리케이션의 가상 폴더에 **IIS(인터넷 정보 서비스) 관리자**, **인터넷 서비스 관리자** 또는 **인터넷 정보 서비스**에 설정된 애플리케이션 이름이 있는지 확인합니다.
 

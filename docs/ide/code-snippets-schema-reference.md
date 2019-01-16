@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e16df68ef36ee38b20be4da0150ca6550cd3644
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 55780d7e1990a9d10e504c781953cf3f95dd3dc1
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864720"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315594"
 ---
 # <a name="code-snippets-schema-reference"></a>코드 조각 스키마 참조
 
@@ -547,7 +547,7 @@ IntelliSense 코드 조각에서 사용되는 가져온 네임스페이스를 �
 |[Code 요소](../ide/code-snippets-schema-reference.md#code-element)|필수적 요소입니다. 설명서 파일에 삽입할 코드를 지정합니다. 하나의 `Code` 요소에는 `Snippet` 요소가 단 하나만 있어야 합니다.|
 |[Declarations 요소](../ide/code-snippets-schema-reference.md#declarations-element)|선택적 요소입니다. 코드 조각에서 편집할 수 있는 부분을 구성하는 리터럴과 개체를 지정합니다. `Declarations` 요소에는 `Snippet` 요소가 0개 또는 그 이상 있을 수 있습니다.|
 |[Imports 요소](../ide/code-snippets-schema-reference.md#imports-element)|선택적 요소입니다. 개별 `Import` 요소를 그룹화합니다. `Imports` 요소에는 `Snippet` 요소가 0개 또는 그 이상 있을 수 있습니다.|
-||선택적 요소입니다. 개별 `Reference` 요소를 그룹화합니다. `References` 요소에는 `Snippet` 요소가 0개 또는 그 이상 있을 수 있습니다.|
+|[References 요소](../ide/code-snippets-schema-reference.md#references-element)|선택적 요소입니다. 개별 `Reference` 요소를 그룹화합니다. `References` 요소에는 `Snippet` 요소가 0개 또는 그 이상 있을 수 있습니다.|
 
 |부모 요소|설명|
 | - |-----------------|

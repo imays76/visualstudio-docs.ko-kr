@@ -14,16 +14,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 32338468de994f298b3fe39eae5a3c97d0a98dee
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a4fad4d5f974f1316e50cc5435c482948edcc892
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822193"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270260"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>자습서: Visual Studio를 사용하여 C++ 코드를 디버그하는 방법 알아보기
 
-이 문서에서는 단계별 연습을 통해 Visual Studio 디버거의 기능을 소개합니다. 디버거 기능을 개략적으로 살펴보려면 [디버거 기능 둘러보기](../debugger/debugger-feature-tour.md)를 참조하세요. *애플리케이션을 디버그*하는 경우는 일반적으로 디버거가 연결된 상태에서 애플리케이션을 실행하고 있음을 의미합니다. 이렇게 하면 디버거가 실행되는 동안 코드에서 수행하는 작업을 확인할 수 있는 여러 가지 방법이 제공됩니다. 코드를 단계별로 실행하고, 변수에 저장된 값을 살펴보고, 변수에 대한 조사식을 설정하여 값이 변경되는 경우를 확인하며, 코드의 실행 경로를 검사하고, 코드의 분기가 실행되는지 등을 확인할 수 있습니다. 코드를 처음으로 디버그하려고 하는 경우 이 문서를 계속 진행하기 전에 먼저 [완전 초보자를 위한 디버깅](../debugger/debugging-absolute-beginners.md)을 참조하는 것이 좋습니다.
+이 문서에서는 단계별 연습을 통해 Visual Studio 디버거의 기능을 소개합니다. 디버거 기능을 개략적으로 살펴보려면 [디버거 소개](../debugger/debugger-feature-tour.md)를 참조하세요. *애플리케이션을 디버그*하는 경우는 일반적으로 디버거가 연결된 상태에서 애플리케이션을 실행하고 있음을 의미합니다. 이렇게 하면 디버거가 실행되는 동안 코드에서 수행하는 작업을 확인할 수 있는 여러 가지 방법이 제공됩니다. 코드를 단계별로 실행하고, 변수에 저장된 값을 살펴보고, 변수에 대한 조사식을 설정하여 값이 변경되는 경우를 확인하며, 코드의 실행 경로를 검사하고, 코드의 분기가 실행되는지 등을 확인할 수 있습니다. 코드를 처음으로 디버그하려고 하는 경우 이 문서를 계속 진행하기 전에 먼저 [완전 초보자를 위한 디버깅](../debugger/debugging-absolute-beginners.md)을 참조하는 것이 좋습니다.
 
 | | |
 |---------|---------|

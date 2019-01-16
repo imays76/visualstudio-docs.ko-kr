@@ -2,7 +2,6 @@
 title: 다중 스레드 응용 프로그램 디버그 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/06/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.gputthreads
@@ -23,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ea1af90ae775ed24f5cceabeca04cdc901f545f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 07710ed0188baf48a567bb3c003f174814c30094
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059680"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907893"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Visual Studio에서 다중 스레드 애플리케이션 디버그
 스레드는 운영 체제가 프로세서 시간 권한을 부여 하는 명령 시퀀스입니다. 운영 체제에서 실행되는 모든 프로세스는 최소한 하나의 스레드로 구성됩니다. 프로세스에 스레드가 둘 이상인 경우를 다중 스레드라고 합니다.  
@@ -41,7 +40,7 @@ ms.locfileid: "53059680"
 
 Visual Studio는 다중 스레드 응용된 프로그램 디버깅에 사용할 다양 한 도구를 제공 합니다.
 
-- 스레드를 스레드 디버깅을 위한 기본 도구는 합니다 **스레드** 창, 소스 창의 스레드 마커를 **병렬 스택** 창 합니다 **병렬 조사식** 창 및 **디버그 위치** 도구 모음입니다. 에 대해 자세히 알아보려면 합니다 **스레드** 창 및 **디버그 위치** 도구 모음에서 참조 [연습: 스레드 창을 사용 하 여 디버그](../debugger/how-to-use-the-threads-window.md)합니다. 사용 하는 방법을 알아보려면 합니다 **병렬 스택** 및 **병렬 조사식** windows 참조 [다중 스레드 응용 프로그램 디버깅 시작](../debugger/get-started-debugging-multithreaded-apps.md)합니다. 두 항목에는 스레드 마커를 사용 하는 방법을 보여 줍니다.
+- 스레드를 스레드 디버깅을 위한 기본 도구는 합니다 **스레드** 창, 소스 창의 스레드 마커를 **병렬 스택** 창 합니다 **병렬 조사식** 창 및 **디버그 위치** 도구 모음입니다. 에 대해 자세히 알아보려면 합니다 **스레드** 창 및 **디버그 위치** 도구 모음에서 참조 [연습: 스레드 창을 사용하여 디버그](../debugger/how-to-use-the-threads-window.md). 사용 하는 방법을 알아보려면 합니다 **병렬 스택** 및 **병렬 조사식** windows 참조 [다중 스레드 응용 프로그램 디버깅 시작](../debugger/get-started-debugging-multithreaded-apps.md)합니다. 두 항목에는 스레드 마커를 사용 하는 방법을 보여 줍니다.
   
 - 사용 하는 코드에 대 한 합니다 [TPL 작업 병렬 라이브러리 ()](/dotnet/standard/parallel-programming/task-parallel-library-tpl) 또는 [동시성 런타임](/cpp/parallel/concrt/concurrency-runtime/), 디버깅을 위한 기본 도구를 **병렬 스택** 창, 합니다 **병렬 조사식** 창 및 **태스크** 창도 JavaScript를 지원 합니다. 시작 하려면 참조 [연습: 병렬 응용 프로그램 디버깅](../debugger/walkthrough-debugging-a-parallel-application.md) 고 [연습: C + + AMP 응용 프로그램을 디버깅](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)합니다. 
 
@@ -64,10 +63,10 @@ Visual Studio에서 제공 하는 강력한 중단점 및 추적점 다중 스�
  [여러 프로세스 디버그](../debugger/debug-multiple-processes.md)  
  여러 프로세스 디버깅 방법에 대해 설명합니다.
 
- [연습: 스레드 창을 사용 하 여 디버그](../debugger/how-to-use-the-threads-window.md)합니다.  
+ [연습: 스레드 창을 사용하여 디버그](../debugger/how-to-use-the-threads-window.md).  
  사용 하는 방법을 보여 주는 연습 합니다 **스레드** 창 및 **디버그 위치** 도구 모음입니다. 
 
- [연습: 병렬 응용 프로그램 디버그](../debugger/walkthrough-debugging-a-parallel-application.md)  
+ [연습: 병렬 애플리케이션 디버그](../debugger/walkthrough-debugging-a-parallel-application.md)  
  사용 하는 방법을 보여 주는 연습 합니다 **병렬 스택** 하 고 **작업** windows.  
   
  [방법: 디버그 중 다른 스레드로 전환](../debugger/how-to-switch-to-another-thread-while-debugging.md)  

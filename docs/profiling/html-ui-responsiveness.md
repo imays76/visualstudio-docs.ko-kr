@@ -2,7 +2,6 @@
 title: UWP 앱의 HTML UI 응답성 분석 | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - JavaScript
@@ -17,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: ec3f3be069e92d52071a6b40857f7fac46e8d3e5
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: b3b9cbbeaf94c231de518b6129a11327b69767f4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51221050"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843530"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>유니버설 Windows 앱의 HTML UI 응답성 분석
 이 항목에서는 유니버설 Windows 앱에 사용할 수 있는 성능 도구인 UI 응답성 프로파일러를 사용하여 앱에서 성능 문제를 격리하는 방법에 대해 설명합니다.  
@@ -69,7 +68,7 @@ ms.locfileid: "51221050"
 6.  응용 프로그램의 프로파일링을 중지하고 프로파일러가 수집한 데이터를 보려면 **수집 중지**를 선택합니다.  
   
 ## <a name="isolate-an-issue"></a>문제 격리  
- 다음 섹션에서는 성능 문제를 격리하는 데 도움이 되는 제안 사항을 제공합니다. 샘플 성능 테스트 앱을 사용하여 성능 문제를 확인 및 수정하는 방법에 대한 단계별 설명은 [연습: UI 응답성 향상(HTML)](../profiling/walkthrough-improving-ui-responsiveness-html.md)을 참조하세요.  
+ 다음 섹션에서는 성능 문제를 격리하는 데 도움이 되는 제안 사항을 제공합니다. 샘플 성능 테스트 앱을 사용하여 성능 문제를 확인 및 수정하는 방법에 대한 단계별 설명은 [연습: UI 응답성 개선(HTML)](/visualstudio/profiling/html-ui-responsiveness)을 참조하세요.  
   
 ###  <a name="Workflow"></a> UI 응답성 문제 격리  
  다음 단계에서는 UI 응답성 프로파일러를 보다 효과적으로 사용할 수 있는 제안 워크플로를 제공합니다.  
@@ -188,7 +187,7 @@ if (performance.mark && performance.measure) {
 -   다른 페이지를 탐색할 때 발생하는 탐색 이벤트. 이벤트에 대한 도구 설명으로 대상 페이지 URL을 표시합니다.  
   
 ###  <a name="CPUUtilization"></a> CPU 사용률 보기  
- CPU 사용률 그래프에서는 과도한 CPU 작업이 있던 기간을 확인할 수 있습니다. 여기에서는 일정 기간에 걸쳐 응용 프로그램의 평균 CPU 사용에 대한 정보를 제공합니다. 정보는 **로드**, **스크립팅**, 가비지 수집(**GC**), **스타일 지정**, **렌더링**, **이미지 디코딩**과 같은 특정 범주를 나타내도록 색으로 구분되어 있습니다. 이러한 범주에 대한 자세한 내용은 이 항목 뒷부분에 나오는 [Profiler event reference](#profiler-event-reference) 를 참조하세요.  
+ CPU 사용률 그래프에서는 과도한 CPU 작업이 있던 기간을 확인할 수 있습니다. 여기에서는 일정 기간에 걸쳐 응용 프로그램의 평균 CPU 사용에 대한 정보를 제공합니다. 정보는 다음과 같은 특정 범주를 나타낼 수 있도록 색으로 구분됩니다. **로드**, **스크립팅**, **GC**(가비지 수집), **스타일 지정**, **렌더링** 및 **이미지 디코딩** 이러한 범주에 대한 자세한 내용은 이 항목 뒷부분에 나오는 [Profiler event reference](#profiler-event-reference) 를 참조하세요.  
   
  CPU 사용률 그래프는 전체 앱 스레드에 소요된 시간을 하나 이상의 CPU에 대한 CPU 사용률 값을 단일 백분율 값으로 결합하여 보여 줍니다. 둘 이상의 CPU를 사용 중일 경우 CPU 사용률 값은 100%를 초과할 수 있습니다.  
   
@@ -325,20 +324,20 @@ if (performance.mark && performance.measure) {
   
   다음 표에서는 이벤트 및 해당 설명을 보여 줍니다.  
   
-|이벤트(event)|이벤트 범주|발생 경우|  
+|이벤트|이벤트 범주|발생 경우|  
 |-----------|--------------------|-----------------|  
 |CSS 구문 분석|로드|새 CSS 콘텐츠가 발견되어 이 CSS 콘텐츠를 구문 분석하려고 했습니다.|  
 |HTML 구문 분석|로드|새 HTML 콘텐츠가 발견되어 이 콘텐츠를 노드로 구문 분석하고 DOM 트리에 콘텐츠를 삽입하려고 했습니다.|  
 |HTTP 요청|로드|DOM에서 원격 리소스가 발견되었거나 XMLHttpRequest가 생성되어 HTTP 요청이 발생했습니다.|  
 |잘못된 다운로드|로드|페이지의 HTML 콘텐츠가 필요한 리소스에 대해 검색되어 해당 리소스에 대한 후속 HTTP 요청이 빠르게 예약될 수 있습니다.|  
-|애니메이션 프레임 콜백 함수|스크립팅 중|브라우저에서 다른 프레임을 렌더링하려고 했고, 이것이 앱 제공 콜백 함수를 트리거했습니다.|  
-|DOM 이벤트|스크립팅 중|DOM 이벤트가 발생하여 실행되었습니다.<br /><br /> `context` 또는  `DOMContentLoaded` 과 같은 DOM 이벤트에 대한 `click`속성이 괄호 안에 표시됩니다.|  
-|이벤트 수신기|스크립팅 중|이벤트 수신기가 호출되어 실행되었습니다.|  
+|애니메이션 프레임 콜백 함수|스크립팅|브라우저에서 다른 프레임을 렌더링하려고 했고, 이것이 앱 제공 콜백 함수를 트리거했습니다.|  
+|DOM 이벤트|스크립팅|DOM 이벤트가 발생하여 실행되었습니다.<br /><br /> `context` 또는  `DOMContentLoaded` 과 같은 DOM 이벤트에 대한 `click`속성이 괄호 안에 표시됩니다.|  
+|이벤트 수신기|스크립팅|이벤트 수신기가 호출되어 실행되었습니다.|  
 |미디어 쿼리 수신기|스크립팅|등록된 미디어 쿼리가 무효화되어 연결된 수신기가 실행되었습니다.|  
 |Mutation observer|스크립팅|하나 이상의 관찰된 DOM 요소가 수정되어 MutationObserver의 연결된 콜백이 실행되었습니다.|  
 |스크립트 계산|스크립팅|새 SCRIPT 요소가 DOM에서 발견되어 이 스크립트를 구문 분석하고 실행하려고 했습니다.|  
 |Timer|스크립팅|예약된 타이머의 시간이 지나 연결된 해당 콜백 함수가 실행되었습니다.|  
-|Windows 런타임 비동기 콜백 함수|스크립팅 중|Windows 런타임 개체에서 `Promise` 콜백 함수를 트리거한 비동기 작업이 완료되었습니다.|  
+|Windows 런타임 비동기 콜백 함수|스크립팅|Windows 런타임 개체에서 `Promise` 콜백 함수를 트리거한 비동기 작업이 완료되었습니다.|  
 |Windows 런타임 이벤트|스크립팅|Windows 런타임 개체에서 등록된 수신기를 트리거한 이벤트가 발생했습니다.|  
 |가비지 수집|GC|더 이상 사용 중이 아닌 개체의 메모리 수집에 걸린 시간입니다.|  
 |CSS 계산|스타일 지정|DOM에서 영향을 받는 모든 요소의 스타일 속성을 다시 계산해야 하는 항목이 변경되었습니다.|  
