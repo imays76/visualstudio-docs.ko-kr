@@ -20,10 +20,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: b2bfc72fbae9383b54a31f2252ab60b101903a4e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53926887"
 ---
 # <a name="how-to-verify-iis-property-settings"></a>방법: IIS 속성 설정 확인
@@ -35,7 +35,7 @@ IIS 관리 도구를 사용하여 웹 응용 프로그램의 속성을 설정할
 
 ## <a name="to-check-iis-settings-for-the-web-application"></a>웹 응용 프로그램에 대한 IIS 설정을 확인하려면
 
-1. **시작** 메뉴에서 **프로그램**을 가리킨 다음, **관리 도구**를 클릭하여 **관리 도구** 창을 엽니다. **관리 도구**가 **프로그램** 메뉴에 없으면 **제어판**에서 찾습니다.
+1. **관리 도구** 창을 엽니다. 에 **시작** 메뉴에서 **프로그램**를 클릭 하 고 **관리 도구**합니다. **관리 도구**가 **프로그램** 메뉴에 없으면 **제어판**에서 찾습니다.
 
    -   Windows 2000에서는 **인터넷 서비스 관리자**를 선택합니다.
 

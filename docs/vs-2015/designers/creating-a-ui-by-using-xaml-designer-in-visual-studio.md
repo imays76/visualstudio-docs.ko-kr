@@ -19,10 +19,10 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 3bd82bd99901ba0b8df400e3780b17d1baadab0c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53837292"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Visual Studio에서 XAML 디자이너를 사용하여 UI 만들기
@@ -91,9 +91,9 @@ Visual Studio의 XAML 디자이너는 XAML 기반 Windows 스토어, Windows Pho
 
  **디스플레이** 앱의 다른 디스플레이 크기 및 해상도를 미리 봅니다.
 
- **방향** 앱에 대해 다른 방향을 지정 합니다. **가로** 나 **세로**합니다.
+ **방향** 앱에 대해 다른 방향을 지정 합니다. 가로 또는 **세로**
 
- **Edge** 앱의 다른 가장자리 맞춤을 지정 합니다. **둘 다**, **왼쪽**합니다 **오른쪽**, 또는 **None**합니다.
+ **Edge** 앱의 다른 가장자리 맞춤을 지정 합니다. 모두, **왼쪽**, **오른쪽** 또는 **없음**
 
  **고대비** 선택한 대비 설정에 따라 응용 프로그램을 미리 봅니다. 이 설정은 **기본값**이외의 값으로 설정된 경우 App.xaml에 설정된 `RequestedTheme` 속성을 재정의합니다.
 
@@ -142,4 +142,4 @@ Visual Studio의 XAML 디자이너는 XAML 기반 Windows 스토어, Windows Pho
  각 속성 값의 오른쪽에 상자 기호로 나타나는 *속성 표식* 이 있습니다. 속성 표식의 모양은 속성에 적용되는 리소스 또는 데이터 바인딩이 있는지 여부를 나타냅니다. 예를 들어 흰색 상자 기호는 기본값을 나타내고, 검은색 상자 기호는 일반적으로 로컬 리소스가 적용되었음을 나타내고, 주황색 상자는 일반적으로 데이터 바인딩이 적용되었음을 나타냅니다. 속성 표식을 클릭하면 스타일의 정의로 이동하거나, 데이터 바인딩 작성기를 열거나, 리소스 선택기를 엽니다.
 
 ## <a name="see-also"></a>참고 항목
- [XAML 디자이너에서 요소를 작업할](../designers/working-with-elements-in-xaml-designer.md) [만들고 리소스를 적용 하는 방법](../designers/how-to-create-and-apply-a-resource.md) [연습: XAML 디자이너의 데이터 바인딩](../designers/walkthrough-binding-to-data-in-xaml-designer.md)
+ [XAML 디자이너에서 요소를 작업할](../designers/working-with-elements-in-xaml-designer.md) [만들고 리소스를 적용 하는 방법](../designers/how-to-create-and-apply-a-resource.md) [연습: XAML 디자이너에서 데이터에 바인딩](../designers/walkthrough-binding-to-data-in-xaml-designer.md)

@@ -25,15 +25,15 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 8622bb1288324429ad346834930559d1435ac6d5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53867581"
 ---
 # <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>레지스터 창에서 레지스터 값 보기 (C#, c + +, Visual Basic의 경우 F#)
 
-합니다 **등록** 레지스터 내용이 Visual Studio에서 디버깅 하는 동안 창이 표시 됩니다. 간략 한 소개 레지스터 개념에 대 한 하며 **레지스터** 창 참조 [디버깅 기본 사항: 레지스터 창](../debugger/debugging-basics-registers-window.md).
+합니다 **등록** 레지스터 내용이 Visual Studio에서 디버깅 하는 동안 창이 표시 됩니다. 간략 한 소개 레지스터 개념에 대 한 하며 **레지스터** 창 참조 [디버깅 기본 사항: 레지스터 창
 
 > [!NOTE]
 > 등록 정보 스크립트나 SQL 응용 프로그램에 사용할 수 없는 경우

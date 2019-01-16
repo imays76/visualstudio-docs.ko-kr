@@ -17,10 +17,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 2f63bc8b454985e368e344bda925ce306bdf3de7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53934666"
 ---
 # <a name="trusted-application-deployment-overview"></a>신뢰할 수 있는 애플리케이션 배포 개요
@@ -44,7 +44,7 @@ ms.locfileid: "53934666"
 |Authenticode 인증서|무엇보다 인증서를 채택할 수 있는 용도에 대해 설명하는 포함된 메타데이터가 있는 인증서입니다.|  
 |인증 기관|게시자 ID를 확인하고 게시자에게 게시자 메타데이터와 함께 포함된 인증서를 발급하는 조직입니다.|  
 |루트 기관|인증서를 발급하는 다른 인증 기관을 인증하는 인증 기관입니다.|  
-|키 컨테이너|인증서를 저장하기 위한 Microsoft Windows의 논리적 저장소 공간입니다.|  
+|키 컨테이너|인증서를 저장하기 위한 Microsoft Windows의 논리적 스토리지 공간입니다.|  
 |신뢰할 수 있는 게시자|Authenticode 인증서가 클라이언트 컴퓨터의 CTL(인증서 신뢰 목록)에 추가된 게시자입니다.|  
   
  더 큰 조직에서는 게시자와 배포자가 두 개의 개별 엔터티인 경우가 많습니다.  
@@ -80,7 +80,7 @@ ms.locfileid: "53934666"
 -   *CertMgr.exe* - Internet Explorer의 구성 요소이므로 Windows 98 및 이후 모든 버전에 있습니다. 자세한 내용은 [Certmgr.exe (인증서 관리자 도구)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool)합니다.  
   
 ### <a name="create-a-clickonce-application"></a>ClickOnce 애플리케이션 만들기  
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 애플리케이션은 애플리케이션을 설명하고 설치 매개 변수를 제공하는 매니페스트 파일과 결합된 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 클라이언트 애플리케이션입니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 에서 **게시** 명령을 사용하여 프로그램을 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]애플리케이션으로 전환할 수 있습니다. 또는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 에 포함된 도구를 사용하여 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]배포에 필요한 모든 파일을 생성할 수 있습니다. 자세한 단계 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 배포 참조 [연습: 수동으로 ClickOnce 애플리케이션 배포](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 애플리케이션은 애플리케이션을 설명하고 설치 매개 변수를 제공하는 매니페스트 파일과 결합된 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 클라이언트 애플리케이션입니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 에서 **게시** 명령을 사용하여 프로그램을 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]애플리케이션으로 전환할 수 있습니다. 또는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 에 포함된 도구를 사용하여 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]배포에 필요한 모든 파일을 생성할 수 있습니다. 자세한 단계 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 배포 참조 [연습: 수동으로 ClickOnce 애플리케이션 배포](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)  
   
  신뢰할 수 있는 애플리케이션 배포는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]에 관련되고 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 애플리케이션에서만 사용할 수 있습니다.  
   
