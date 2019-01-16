@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f86e85fd7f5d8c767b64d55efd0837de9f99b340
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2d320c4cc2a224dd17ea85337e38fb43ae8aa5bd
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893709"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227670"
 ---
-# <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window"></a>연습: 스레드 창을 사용 하 여 다중 스레드 앱 디버깅
+# <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>연습: 스레드 창을 사용 하 여 다중 스레드 앱 디버깅 (C#, Visual Basic, c + +)
 
 여러 Visual Studio 사용자 인터페이스 요소에 다중 스레드 응용된 프로그램을 디버깅할 수 있습니다. 이 문서에서는 코드 편집기 창에서 다중 스레드 디버깅 기능을 소개 **디버그 위치** 도구 모음 및 **스레드** 창입니다. 다중 스레드 응용된 프로그램 디버깅을 위한 다른 도구에 대 한 정보를 참조 하세요 [다중 스레드 응용된 프로그램 디버깅 시작](../debugger/get-started-debugging-multithreaded-apps.md)합니다. 
   

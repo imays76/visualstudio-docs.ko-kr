@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 038b448c0ecd0b19afd7671a381eb68c9ba8cbbe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: d0c10c2ba2a5b9da700d698d553cdf49a7a0a136
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854115"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54153669"
 ---
 # <a name="error-sql-can39t-find-ssdebugps"></a>오류: SQL 수&#39;t에서 SSDEBUGPS를 찾을
 
@@ -41,5 +41,5 @@ SQL Server 2005 머신에 SSDEBUGPS.dll을 복사하려면
 2. **명령 프롬프트**를 열고 다음 명령을 실행하여 파일을 등록합니다.
 
     ```cmd
-    regsrv32 ssdebugps.dll
+    regsvr32 ssdebugps.dll
     ```

@@ -5,20 +5,19 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0fa335fd-e442-448f-913f-25a19df90a93
 caps.latest.revision: 8
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 691b1e46f7657eb027fa48b31f31119cae0c7451
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.openlocfilehash: 9cc93fb1382dba70aedc989a609ac2932cf4f466
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49216652"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53901479"
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>단위 테스트에서 Microsoft.VisualStudio.TestTools.UnitTesting 멤버 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +75,7 @@ ms.locfileid: "49216652"
 -   <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute>
 
 ## <a name="assert-classes-and-related-exceptions"></a>Assert 클래스 및 관련 예외
- 단위 테스트에서는 다양한 종류의 Assert 문, 예외 및 특성을 사용하여 특정 응용 프로그램 동작을 확인할 수 있습니다. 자세한 내용은 [Assert 클래스 사용](../test/using-the-assert-classes.md)을 참조하세요.
+ 단위 테스트에서는 다양한 종류의 Assert 문, 예외 및 특성을 사용하여 특정 애플리케이션 동작을 확인할 수 있습니다. 자세한 내용은 [Assert 클래스 사용](../test/using-the-assert-classes.md)을 참조하세요.
 
 -   <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 
@@ -129,6 +128,6 @@ ms.locfileid: "49216652"
 
 -   <xref:Microsoft.VisualStudio.TestTools.UnitTesting.PrivateType>
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting>

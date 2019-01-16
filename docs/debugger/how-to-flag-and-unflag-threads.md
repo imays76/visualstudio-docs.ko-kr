@@ -15,19 +15,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52103870207ae93731cc82969abdd377aff2d381
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 8d6f50827e81d9aecce4878df00f99e155edb04f
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53851406"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227293"
 ---
-# <a name="how-to-flag-and-unflag-threads"></a>방법: 스레드에 플래그 지정 및 해제
+# <a name="how-to-flag-and-unflag-threads-c-visual-basic-c"></a>방법: 및 스레드의 플래그 (C#, Visual Basic, c + +)
+
 아이콘 표시 하 여 특별 한 주의가 하려는 스레드에 플래그를 수는 **스레드**를 **병렬 스택** (스레드 뷰) **병렬 조사식**, 및  **GPU 스레드** windows. 이 아이콘은 플래그 설정된 스레드를 다른 스레드와 구분하는 데 도움이 됩니다.  
   
 플래그가 지정 된 스레드 권한도에서 별도로 처리 합니다 **스레드** 목록에서 **디버그 위치** 도구 모음 및 다른 다중 스레드 디버깅 창에서. 모든 스레드 또는에서 플래그가 지정 된 스레드만 표시할 수 있습니다 합니다 **스레드** 목록 또는 다른 창에서.
   
-### <a name="to-flag-or-unflag-a-thread"></a>스레드에 플래그를 지정하거나 해제하려면 
+### <a name="to-flag-or-unflag-a-thread"></a>스레드에 플래그를 지정하거나 해제하려면
   
 - 에 **스레드** 하거나 **병렬 조사식** 창에서 원하는 스레드를 찾아 선택 하 고 플래그를 지우려면 플래그 아이콘을 클릭 합니다. 
 - 에 **병렬 스택** 창에서 스레드 또는 스레드 선택한 그룹을 마우스 오른쪽 단추로 클릭 **플래그 / <thread>**  하거나 **플래그 해제 / <thread>** 합니다.

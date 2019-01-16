@@ -22,14 +22,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ff1876ba76421818f3a59616cfdf26aae41adb9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 87c1aad4374ca41a9ba89eea4eb7f7cc790a1613
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867149"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227813"
 ---
-# <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>연습: Visual Studio에서 병렬 응용 프로그램 디버깅
+# <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>연습: Visual Studio에서 병렬 응용 프로그램 디버깅 (C#, Visual Basic, c + +)
+
 이 연습에서는 **병렬 스택** 및 **병렬 스택** 창을 사용하여 병렬 애플리케이션을 디버깅하는 방법을 보여줍니다. 이러한 windows 이해 하 고 사용 하는 코드의 런타임 동작을 확인 하는 데 도움이 합니다 [TPL 작업 병렬 라이브러리 ()](/dotnet/standard/parallel-programming/task-parallel-library-tpl) 또는 [동시성 런타임](/cpp/parallel/concrt/concurrency-runtime)합니다. 이 연습에서는 기본 제공 중단점이 있는 샘플 코드를 제공합니다. 또한 코드가 중단된 후에 **병렬 작업** 및 **병렬 스택** 창을 사용하여 코드를 검사하는 방법을 보여줍니다.  
   
  이 연습에서는 다음 작업 방법을 배웁니다.  

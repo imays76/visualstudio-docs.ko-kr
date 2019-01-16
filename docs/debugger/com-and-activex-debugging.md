@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1dca4e8c0dd9317406603dcf4cd1bc93190fede3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 6d75b045e16ce6435568b5bb6993a74f3123f779
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820866"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269612"
 ---
 # <a name="com-and-activex-debugging"></a>COM 및 ActiveX 디버깅
 이 단원에서는 COM 응용 프로그램과 ActiveX 컨트롤의 디버깅에 대한 팁을 제공합니다.  
@@ -42,7 +42,7 @@ ms.locfileid: "53820866"
  COM 응용 프로그램을 디버깅하는 데 유용한 뷰어 및 샘플 응용 프로그램을 소개합니다.  
   
 ## <a name="related-sections"></a>관련 단원  
- [디버거 기능 둘러보기](../debugger/debugger-feature-tour.md)  
+ [디버거 소개](../debugger/debugger-feature-tour.md)  
  자세한 디버깅 설명서 단원으로 연결되는 링크를 제공합니다. 디버거의 새로운 기능, 설정 및 준비, 중단점, 예외 처리, 편집하며 계속하기, 관리 코드 디버깅, Visual C++ 프로젝트 디버깅, COM 및 ActiveX 디버깅, DLL 디버깅, SQL 디버깅, 사용자 인터페이스 참조 등의 정보를 다룹니다.  
   
 ## <a name="see-also"></a>참고 항목  

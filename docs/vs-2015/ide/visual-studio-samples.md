@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -16,12 +15,12 @@ caps.latest.revision: 58
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 27a77e7983515c1cb61987ede03a202a50e9f88a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c604684fea431d29c76098a77218e36a63fc770f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062776"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53936570"
 ---
 # <a name="visual-studio-samples"></a>Visual Studio 샘플
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +42,7 @@ ms.locfileid: "53062776"
 |[JavaScript 샘플](http://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=JavaScript)|JavaScript의 여러 기능을 사용하는 방법을 보여 줍니다.|
 |[C++ 샘플](http://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=C%2B%2B)|C++의 여러 기능을 사용하는 방법을 보여 줍니다.|
 |[DirectX 샘플](http://code.msdn.microsoft.com/site/search?query=DirectX&f%5B1%5D.Value=DirectX&f%5B1%5D.Type=SearchText&f%5B0%5D.Value=C%20%20&f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Text=Invalid%20Value&ac=2)|DirectX를 사용하는 방법을 보여 줍니다.|
-|[Office 개발 샘플](http://msdn.microsoft.com/library/9ebc7de2-59dd-414c-888b-7549d3c3543c)|Visual Studio에서 Office 개발 도구를 사용하는 방법을 보여 줍니다. 최신 샘플을 보려면 [MSDN 개발자 샘플: 코드 살펴보기](http://go.microsoft.com/fwlink/?LinkID=248199)합니다.|
+|[Office 개발 샘플](http://msdn.microsoft.com/library/9ebc7de2-59dd-414c-888b-7549d3c3543c)|Visual Studio에서 Office 개발 도구를 사용하는 방법을 보여 줍니다. 최신 샘플은 [MSDN 개발자 샘플: 코드 살펴보기](http://go.microsoft.com/fwlink/?LinkID=248199)를 참조하세요.|
 |[VSSDK 샘플](http://aka.ms/vs2015sdksamples)|Visual Studio를 확장하는 방법을 보여 줍니다.|
 
 ## <a name="see-also"></a>참고 항목

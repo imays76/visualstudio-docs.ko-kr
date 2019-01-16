@@ -17,12 +17,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6b1f884018be97e49dfa9c300a2ad126fa185cf4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 3c3737174843a8b9ff77ecdfb592e1275b88c84c
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932787"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154397"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Visual Studio에서 데이터에 WPF 컨트롤 바인딩
 
@@ -99,7 +99,7 @@ Visual Studio에서는 다음을 수행하는 XAML을 생성합니다.
 개체 또는 속성을 끌면 합니다 **데이터 원본** Visual Studio 디자이너 창을 생성 [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] 는 데이터 바인딩된 컨트롤을 만듭니다 (또는 기존 컨트롤을 개체나 속성에 바인딩하). 그러나 Visual Studio는 데이터를 사용 하 여 개체를 채우기 위한 코드를 생성 하지 않습니다. 이 코드를 직접 작성해야 합니다.
 
 > [!NOTE]
-> 사용자 지정 클래스는 public 이어야 하며, 기본적으로 매개 변수 없는 생성자가 합니다. 이러한 구문의 "점"에 있는 can'tbe 중첩 클래스입니다. 자세한 내용은 [XAML 및 WPF에 대 한 사용자 지정 클래스](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf)합니다.
+> 사용자 지정 클래스는 public 이어야 하며, 기본적으로 매개 변수 없는 생성자가 합니다. 구문의 "점"에 있는 중첩 된 클래스 수 없습니다. 자세한 내용은 [XAML 및 WPF에 대 한 사용자 지정 클래스](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf)합니다.
 
 Visual Studio에서 생성 [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] 다음을 수행 하는:
 

@@ -8,12 +8,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 927edacf968ed92eddea96f93cc4f67cbd137fcc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 73b09384bd57fd4ea0890d107ce641e4b615559f
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880600"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154220"
 ---
 # <a name="add-new-connections"></a>새 연결 추가
 
@@ -25,7 +25,7 @@ ms.locfileid: "53880600"
 
 - 클라우드 탐색기
 
-   선택 하 여 수동으로 Visual Studio 확장으로이 창의 설치 **도구가** > **확장 및 업데이트** > **Online**  >  **Visual Studio 마켓플레이스**합니다. 탐색 하 고 Azure 서비스에 연결에 대 한 특수 한 기능을 제공 합니다.
+   선택 하 여 수동으로 Visual Studio 확장으로이 창의 설치 **도구가** > **확장 및 업데이트** > **Online**  >  **Visual Studio Marketplace**합니다. 탐색 하 고 Azure 서비스에 연결에 대 한 특수 한 기능을 제공 합니다.
 
 - SQL Server 개체 탐색기
 

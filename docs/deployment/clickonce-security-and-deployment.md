@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db3239dcb3f4068f41ebd21ad06db09756cbad51
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: c2f0ba5d49e0c8a02755bfc9d23d486dcf7f2943
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923116"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154352"
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce 보안 및 배포
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 설치 하 고 최소한의 사용자 상호 작용을 사용 하 여 실행할 수 있는 자동 업데이트 Windows 기반 응용 프로그램을 만들 수 있게 해 주는 배포 기술입니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 게시 및 Visual Basic 및 시각적 개체를 사용 하 여 프로젝트를 개발한 경우 ClickOnce 기술을 사용 하 여 배포 된 응용 프로그램 업데이트에 대 한 전체 지원을 제공 C#입니다. Visual c + + 응용 프로그램을 배포 하는 방법에 대 한 내용은 [Visual c + + 응용 프로그램에 대 한 ClickOnce 배포](/cpp/ide/clickonce-deployment-for-visual-cpp-applications)합니다.  
@@ -51,7 +51,7 @@ ms.locfileid: "53923116"
  Authenticode 인증서는 응용 프로그램의 게시자의 신뢰성을 확인 하는 데 사용 됩니다. ClickOnce 응용 프로그램 배포에 Authenticode를 사용 하 여 신뢰할 수 있는 원본에서 온 적법 한 프로그램으로에서 유해한 프로그램을 방지할 수 있습니다. 필요에 따라 응용 프로그램 서명에 인증서도 사용할 수 및 배포 매니페스트 파일이 손상 되지 않았는지를 증명 하기 위해. 자세한 내용은 [ClickOnce 및 Authenticode](../deployment/clickonce-and-authenticode.md)합니다. 인증서는 신뢰할 수 있는 게시자 목록이 클라이언트 컴퓨터를 구성 하려면 데도 사용할 수 있습니다. 응용 프로그램이 신뢰할 수 있는 게시자를 전달 하는 경우 사용자 개입 없이 설치할 수 있습니다. 자세한 내용은 [신뢰할 수 있는 애플리케이션 배포 개요](../deployment/trusted-application-deployment-overview.md)를 참조하세요.  
   
 ### <a name="code-access-security"></a>코드 액세스 보안  
- 코드 액세스 secrity는 보호 된 리소스에 있는 코드의 액세스를 제한 하는 데 도움이 됩니다. 대부분의 경우에서 사용 권한을 제한 하도록 인터넷 또는 로컬 인트라넷 영역을 선택할 수 있습니다. 사용 합니다 **보안** 페이지에 **ProjectDesigner** 응용 프로그램에 대 한 적절 한 영역을 요청 하려면. 또한 최종 사용자 환경을 에뮬레이트 하려면 제한 된 권한으로 응용 프로그램을 디버깅할 수 있습니다. 자세한 내용은 [ClickOnce 애플리케이션의 코드 액세스 보안](../deployment/code-access-security-for-clickonce-applications.md)을 참조하세요.  
+ 코드 액세스 보안에 보호 된 리소스에 있는 코드의 액세스를 제한 하는 데 도움이 됩니다. 대부분의 경우에서 사용 권한을 제한 하도록 인터넷 또는 로컬 인트라넷 영역을 선택할 수 있습니다. 사용 합니다 **보안** 페이지에 **ProjectDesigner** 응용 프로그램에 대 한 적절 한 영역을 요청 하려면. 또한 최종 사용자 환경을 에뮬레이트 하려면 제한 된 권한으로 응용 프로그램을 디버깅할 수 있습니다. 자세한 내용은 [ClickOnce 애플리케이션의 코드 액세스 보안](../deployment/code-access-security-for-clickonce-applications.md)을 참조하세요.  
   
 ### <a name="clickonce-trust-prompt"></a>ClickOnce 신뢰 프롬프트  
  영역에서 허용 하는 보다 많은 권한을 요청 하는 응용 프로그램을 하는 경우 최종 사용자 신뢰 결정을 내리는 데 묻는 수 있습니다. 최종 사용자는 ClickOnce 응용 프로그램 같은 Windows Forms 응용 프로그램, Windows Presentation Foundation 응용 프로그램, 콘솔 응용 프로그램, XAML 브라우저 응용 프로그램 및 Office 솔루션 실행 하도록 신뢰할 수 있는 경우 결정할 수 있습니다. 자세한 내용은 [방법: ClickOnce 신뢰 프롬프트 동작 구성](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)을 참조하세요.  
