@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6343366478e360631b5a50c8c6d36ca4b31c27cf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: cc8cbf7e087e2198071aef9f77c109f3a7c71640
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853933"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54268576"
 ---
 # <a name="how-to-debug-com-servers"></a>방법: COM 서버 디버그
 COM 서버 응용 프로그램을 디버깅할 경우 쉽게 해결할 수 없는 몇 가지 문제가 발생합니다.  
@@ -47,4 +47,4 @@ COM 서버 응용 프로그램을 디버깅할 경우 쉽게 해결할 수 없�
  [방법: RPC 디버깅을 사용하여 COM 클라이언트 및 서버 디버그](../debugger/how-to-debug-com-clients-and-servers-using-rpc-debugging.md)   
  [COM 서버 및 컨테이너 디버깅](../debugger/com-server-and-container-debugging.md)   
  [Visual Studio의 디버깅](../debugger/index.md)  
- [디버거 기능 둘러보기](../debugger/debugger-feature-tour.md)
+ [디버거 소개](../debugger/debugger-feature-tour.md)

@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2aee62651d6517444eb33aef272a212e5a12f55e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6b68da672fdd0986d0a0bce5c56a13683325d737
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944378"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54268892"
 ---
 # <a name="debugger-cannot-display-source-code-or-disassembly"></a>디버거가 현재 위치에 대한 소스 코드나 디스어셈블리를 표시할 수 없습니다.
 이 오류의 의미는 다음과 같습니다.  
@@ -36,6 +36,7 @@ ms.locfileid: "53944378"
   
 -   보안상의 이유로, 디버깅하고 있는 프로그램에서 디버거가 스택, 스레드, 레지스터 및 기타 컨텍스트 정보를 읽지 못할 수 있습니다. 이러한 오류는 가상 디렉터리에 대한 올바른 액세스 권한 없이 웹 응용 프로그램을 디버깅하는 경우에 발생합니다. 가상 디렉터리의 보안 권한을 Anonymous로 설정하고 다시 시도하십시오.  
   
-## <a name="see-also"></a>참고 항목  
- [Visual Studio에서 디버깅](../debugger/index.md) [디버거 기능 둘러보기](../debugger/debugger-feature-tour.md)   
+## <a name="see-also"></a>참고 항목
+ [Visual Studio의 디버깅](../debugger/index.md)  
+ [디버거 소개](../debugger/debugger-feature-tour.md)  
  [디버거에서 데이터 보기](../debugger/viewing-data-in-the-debugger.md)

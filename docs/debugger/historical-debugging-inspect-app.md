@@ -8,19 +8,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 998b94a13f3650446f9f791ffc29c7c863f9df89
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 0022d94d8bb786340dba5d2d412bbbd46585e35e
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968633"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227709"
 ---
-# <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio"></a>IntelliTrace 기록 디버깅 Visual Studio에서 사용 하 여 앱 검사
+# <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio-c-visual-basic-c"></a>IntelliTrace 기록 디버깅 Visual Studio에서 사용 하 여 앱 검사 (C#, Visual Basic, c + +)
+
 사용할 수 있습니다 [기록 디버깅](../debugger/historical-debugging.md) 뒤로 이동 하 고 응용 프로그램의 실행을 통해 전달 및 해당 상태를 검사 합니다.  
   
 Visual Studio Enterprise 버전(Professional 또는 Community 버전 아님)에서 IntelliTrace를 사용할 수 있습니다.  
   
-## <a name="navigate-your-code-with-historical-debugging"></a>기록 디버깅을 사용 하 여 코드 탐색  
+## <a name="navigate-your-code-with-historical-debugging"></a>기록 디버깅을 사용 하 여 코드 탐색
+
  버그가 있는 간단한 프로그램부터 살펴보겠습니다. C# 콘솔 응용 프로그램에서 다음 코드를 추가합니다.  
   
 ```csharp  

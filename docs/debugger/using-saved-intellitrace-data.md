@@ -15,14 +15,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ffcb30827906438a848051226d59794a7d5641a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c348bc105d997e07dcbc6ee373c2952e16c572cf
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836912"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227787"
 ---
-# <a name="using-saved-intellitrace-data"></a>저장된 IntelliTrace 데이터 사용
+# <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>저장 된 IntelliTrace 데이터를 사용 하 여 (C#, Visual Basic, c + +)
+
 IntelliTrace 로그(.iTrace) 파일에서 디버깅을 시작할 때 애플리케이션 실행의 특정 지점으로 이동합니다. 이 파일에는 응용 프로그램이 실행되는 동안 IntelliTrace가 기록하는 성능 이벤트, 예외, 스레드, 테스트 단계 및 기타 시스템 정보가 포함될 수 있습니다.
 
  아래와 같은 파일과 버전이 있어야 합니다.
@@ -108,7 +109,7 @@ IntelliTrace 로그(.iTrace) 파일에서 디버깅을 시작할 때 애플리�
 
 3.  해당 호출을 확장하여 특정 시점에 기록된 중첩 호출과 매개 변수 값을 검토합니다.
 
-     키보드 키를 눌러을 표시 하거나 숨기려면 중첩된 된 호출을 **오른쪽 화살표** 또는 **왼쪽 화살표** 키를 각각. 중첩된 호출에 대한 매개 변수 값을 표시하거나 숨기려면 **Space** 키를 누릅니다.)
+     (키보드: 키를 눌러을 표시 하거나 숨기려면 중첩된 된 호출을 **오른쪽 화살표** 또는 **왼쪽 화살표** 키를 각각. 중첩된 호출에 대한 매개 변수 값을 표시하거나 숨기려면 **Space** 키를 누릅니다.)
 
      해당 호출에서 디버깅을 시작합니다.
 

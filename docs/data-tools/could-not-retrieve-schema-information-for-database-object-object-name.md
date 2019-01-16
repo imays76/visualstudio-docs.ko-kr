@@ -9,18 +9,16 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4236085ffa0cacade86acfd4ca68caf38e54f165
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 915475b9f20b57871a8228ebde022d0b6ce8f3b6
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885597"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204270"
 ---
 # <a name="could-not-retrieve-schema-information-for-database-object-object-name"></a>데이터베이스 개체 \<object name>의 스키마 정보를 검색할 수 없음
 
 이 메시지는 일반적으로 **서버 탐색기 Explorer** 또는 **데이터베이스 탐색기**에서 개체를 클립보드에 복사하고 데이터베이스에서 삭제한 다음, 디자이너에 붙여넣은 경우에 나타납니다. 즉, 데이터베이스 개체가 더 이상 존재하지 않으므로 이 메시지가 나타납니다.
-
-이 오류를 해결 하려면 선택 **확인** 대화 상자를 닫습니다.
 
 ## <a name="see-also"></a>참고 항목
 

@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e3124f98855f5f7f303aff0d9e8b2608abbbeba
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: f2ee235f5daf0c18bd30fcf804c0672427dc9624
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871319"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227345"
 ---
-# <a name="how-to-use-the-gpu-threads-window"></a>방법: GPU 스레드 창 사용
+# <a name="how-to-use-the-gpu-threads-window-c"></a>방법: GPU 스레드 창 (c + +)를 사용 합니다.
 GPU 스레드 창에서 디버깅 중인 응용 프로그램의 GPU에서 실행되는 스레드를 검사하고 관련 작업을 수행할 수 있습니다. GPU에서 실행 되는 응용 프로그램에 대 한 자세한 내용은 참조 하세요. [c + + AMP 개요](/cpp/parallel/amp/cpp-amp-overview)합니다.  
   
  GPU 스레드 창에는 각 행이 모든 열에서 값이 동일한 GPU 스레드의 집합을 나타내는 테이블이 포함되어 있습니다. 열에 있는 항목의 정렬, 순서 변경, 제거 및 그룹화를 수행할 수 있습니다. GPU 스레드 창에서 스레드에 플래그를 지정하거나 해제할 수 있으며 스레드를 중지(일시 중단)하거나 재개(다시 시작)할 수 있습니다. 다음과 같은 열이 GPU 스레드 창에 표시됩니다.  
@@ -68,7 +68,7 @@ GPU 스레드 창에서 디버깅 중인 응용 프로그램의 GPU에서 실행
   
 ### <a name="to-switch-to-a-different-thread"></a>다른 스레드로 전환  
   
--   열을 두 번 클릭합니다. 키보드 행을 선택 하 고 enter 키를 선택 합니다.)  
+-   열을 두 번 클릭합니다. (키보드: 행을 선택 하 고 enter 키를 선택 합니다.)  
   
 ### <a name="to-display-a-particular-tile-and-thread"></a>특정 타일 및 스레드를 표시하려면  
   

@@ -31,12 +31,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 33b33f25b1049afcf71a67af02927e25887d1621
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 339fb8b46a72f44428e9a3b177e194dfb484bbb3
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837760"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204349"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>Visual Studio에서 디버그 및 릴리스 구성 설정
 
@@ -44,7 +44,7 @@ Visual Studio 프로젝트에는 사용하는 프로그램에 대한 별도의 �
 
 디버그 구성의 프로그램 최적화 안 함 및 전체 기호화 된 디버그 정보를 사용 하 여 컴파일합니다. 최적화하면 소스 코드와 생성된 명령 간의 관계가 복잡해지므로 디버깅이 복잡해집니다.
 
-프로그램의 릴리스 구성은 기호화 된 디버그 정보가 없는 완전히 최적화 되 고 있습니다. 사용하는 [컴파일러 옵션에 따라](#BKMK_symbols_release) 디버그 정보가 .pdb 파일에서 생성될 수 있습니다. .Pdb 파일을 작성 하는 것은 나중에 릴리스 버전을 디버깅 해야 할 경우에 유용할 수 있습니다.
+프로그램의 릴리스 구성은 기호화 된 디버그 정보가 없는 완전히 최적화 되 고 있습니다. 관리 코드와 c + + 코드에 대 한 디버그 정보가.pdb 파일에서 생성 수 [컴파일러 옵션에 따라](#BKMK_symbols_release) 사용 되는 합니다. .Pdb 파일을 작성 하는 것은 나중에 릴리스 버전을 디버깅 해야 할 경우에 유용할 수 있습니다.
 
 빌드 구성에 대한 자세한 내용은 [빌드 구성 이해](../ide/understanding-build-configurations.md)를 참조하세요.
 

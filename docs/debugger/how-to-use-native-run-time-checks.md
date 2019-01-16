@@ -37,12 +37,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c5f71d6b201213b86caaf9d6e9761975493550a6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: ae7b736a3273a9b20af0ee0be035a3059c473d67
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830958"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269646"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>방법: 네이티브 런타임 검사 사용
 Visual C++에서는 네이티브 [runtime_checks](/cpp/preprocessor/runtime-checks) 를 사용하여 다음과 같은 일반적인 런타임 오류를 catch할 수 있습니다.  
@@ -79,6 +79,6 @@ Visual C++에서는 네이티브 [runtime_checks](/cpp/preprocessor/runtime-chec
   
 ## <a name="see-also"></a>참고 항목  
  [Visual Studio의 디버깅](../debugger/index.md)  
- [디버거 기능 둘러보기](../debugger/debugger-feature-tour.md)   
+ [디버거 소개](../debugger/debugger-feature-tour.md)   
  [runtime_checks](/cpp/preprocessor/runtime-checks)   
  [런타임 오류 검사](/cpp/c-runtime-library/run-time-error-checking)

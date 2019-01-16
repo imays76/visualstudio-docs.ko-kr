@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8719ffaae1b1a5b7d8e432fb223d0f75d6b6dcf1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1f68fdea35b8b6291ddb53e604510caf7ffc0ba1
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988033"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269490"
 ---
 # <a name="debugging-user-interface-reference"></a>사용자 인터페이스 참조 디버깅
 응용 프로그램을 디버깅할 때 나타날 수 있는 대화 상자는 다음과 같습니다.  
@@ -44,5 +44,5 @@ ms.locfileid: "53988033"
   
 ## <a name="see-also"></a>참고 항목  
  [Visual Studio의 디버깅](../debugger/index.md)  
- [디버거 기능 둘러보기](../debugger/debugger-feature-tour.md)   
+ [디버거 소개](../debugger/debugger-feature-tour.md)   
  [명령 창](../ide/reference/command-window.md)

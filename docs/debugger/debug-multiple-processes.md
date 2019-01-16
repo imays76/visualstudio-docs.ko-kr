@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e5fbd6c503ef526b1b82736c22e36534bb09a8c7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: ffe28dbf30b1b4f40c69f565cc1e97524ce382b4
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968581"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227384"
 ---
-# <a name="debug-multiple-processes"></a>여러 프로세스 디버그
+# <a name="debug-multiple-processes-c-visual-basic-c"></a>여러 프로세스 디버깅 (C#, Visual Basic, c + +)
 
 Visual Studio는 여러 프로세스가 포함 된 솔루션을 디버깅할 수 있습니다. 시작 하거나 수 있습니다 및 프로세스 간 전환, 중단, 계속 및 원본, 디버깅을 중지, 및 end를 단계별로 개별 프로세스에서 분리 합니다.  
 

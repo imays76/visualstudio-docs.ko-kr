@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fee8523f48dd94b0ebeacd87dd7d04f6fa172a91
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: fbc48fdc93feebf2f78b6d11ae2b7cc744c46f98
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898140"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269737"
 ---
 # <a name="whats-new-for-the-debugger-in-includevsdev15miscincludesvsdev15mdmd"></a>디버거의 새로운 기능 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
@@ -71,4 +71,4 @@ ms.locfileid: "53898140"
 ## <a name="see-also"></a>참고 항목
 
 - [Visual Studio의 디버깅](../debugger/index.md)
-- [디버거 기능 둘러보기](../debugger/debugger-feature-tour.md)
+- [디버거 소개](../debugger/debugger-feature-tour.md)

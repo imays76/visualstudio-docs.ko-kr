@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8407f360ee35b0210a5ca6411af8720b0191a080
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 648af91d4b71be65e1f5befef1c3a84225bfabfe
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843478"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154326"
 ---
 # <a name="how-to-debug-optimized-code"></a>방법: 최적화된 코드 디버그
 
@@ -74,7 +74,7 @@ ms.locfileid: "53843478"
 
 8. `Custom`에 대해 `Optimization` 옵션을 선택한 경우 속성 목록에 있는 다른 속성에도 옵션을 설정할 수 있습니다.
 
-9. 구성 속성, C/C++, 프로젝트 속성 페이지의 명령줄 노드를 선택하고 `(`[/Zo](/cpp/build/reference/zo-enhance-optimized-debugging)`)`를 **추가 옵션** 텍스트 상자에 추가합니다.
+9. 구성 속성, C/c + + 프로젝트 속성 페이지의 명령줄 노드를 선택 하 고 추가 `(` [/Zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)` 하는 **추가 옵션** 입력란입니다.
 
     > [!WARNING]
     >  `/Zo`를 사용하려면 Visual Studio 2013 업데이트 3 이상이 필요합니다.

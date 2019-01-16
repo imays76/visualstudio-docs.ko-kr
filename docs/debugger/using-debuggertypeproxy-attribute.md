@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b75f8ddff8aa210ef09423dc4ba12589c479f3f5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: f868041449e622ddbd5cf177a0aa22771fd48498
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889166"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227540"
 ---
-# <a name="using-debuggertypeproxy-attribute"></a>DebuggerTypeProxy 특성 사용
+# <a name="using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>DebuggerTypeProxy 특성 사용 (C#, Visual Basic, C + + /cli CLI)
 
 <xref:System.Diagnostics.DebuggerTypeProxyAttribute>는 형식에 대한 프록시 또는 대리 항목을 지정하고 형식이 디버거 창에 표시되는 방식을 변경합니다. 프록시가 있는 변수를 볼 때 원래 형식 대신 프록시가 **표시**에 나타납니다. 디버거 변수 창에는 프록시 형식의 공용 멤버만 표시됩니다. 개인 멤버는 표시되지 않습니다.
 
@@ -33,6 +33,9 @@ ms.locfileid: "53889166"
 - 구조체
 - 클래스
 - 어셈블리
+
+> [!NOTE]
+> 네이티브 코드에 대해이 특성 에서만 지원 됩니다 C + + /cli 코드입니다.
 
 형식 프록시 클래스에는 프록시가 대체할 형식의 인수를 사용하는 생성자가 있어야 합니다. 디버거에서는 대상 형식의 변수를 표시해야 할 때마다 형식 프록시 클래스의 새 인스턴스를 만듭니다. 이 경우 성능에 영향을 미칠 수 있으므로 생성자에서는 반드시 필요한 작업만 수행해야 합니다.
 

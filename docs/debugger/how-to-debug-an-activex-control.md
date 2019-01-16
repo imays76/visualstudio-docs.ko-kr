@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 036e50fde887786736aee1e7f8565cc9708bb2e7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 059dde50a01c1c71545a187043e60a32a9e68309
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924789"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269685"
 ---
 # <a name="how-to-debug-an-activex-control"></a>방법: ActiveX 컨트롤 디버그
 
@@ -62,4 +62,4 @@ ActiveX 컨트롤을 디버깅하려면 컨트롤을 실행할 컨테이너(실�
 - [테스트 컨테이너로 속성 및 이벤트 테스트](/cpp/mfc/testing-properties-and-events-with-test-container)
 - [COM 및 ActiveX 디버깅](../debugger/com-and-activex-debugging.md)
 - [Visual Studio의 디버깅](../debugger/index.md)
-- [디버거 기능 둘러보기](../debugger/debugger-feature-tour.md)
+- [디버거 소개](../debugger/debugger-feature-tour.md)

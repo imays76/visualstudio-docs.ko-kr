@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e57c9516ecb4a61a66db9a27740ec110cec292f5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 95a198213daa90a1370cba056a8c522495e06c94
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863292"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227982"
 ---
-# <a name="get-started-debugging-multithreaded-applications"></a>다중 스레드 애플리케이션 디버깅 시작
+# <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>다중 스레드 응용 프로그램 디버깅 시작 (C#, Visual Basic, c + +)
 Visual Studio는 여러 도구와 다중 스레드 응용 프로그램을 디버깅할 수 있도록 사용자 인터페이스 요소를 제공 합니다. 이 자습서에서는 스레드 마커를 사용 하는 방법을 보여 줍니다.는 **병렬 스택** 창에는 **병렬 조사식** 창과 조건부 중단점, 중단점 필터. 이 자습서를 완료 다중 스레드 응용 프로그램 디버깅에 Visual Studio 기능을 숙지 합니다.
 
 | | |
@@ -36,7 +36,7 @@ Visual Studio는 여러 도구와 다중 스레드 응용 프로그램을 디버
 
 - 사용 하 여 **디버그 위치** 도구 모음 및 **스레드** 창 참조 [연습: 다중 스레드 응용 프로그램을 디버그](../debugger/how-to-use-the-threads-window.md)합니다.
 
-- 사용 하는 샘플에 대 한 <xref:System.Threading.Tasks.Task> (관리 코드) (c + +), 동시성 런타임에서 참조 및 [연습: 병렬 애플리케이션 디버그](../debugger/walkthrough-debugging-a-parallel-application.md). 대부분의 다중 스레드 응용 프로그램 형식에 적용 되는 일반적인 디버깅 팁, 해당 항목 및이 참조 하세요.
+- 사용 하는 샘플에 대 한 <xref:System.Threading.Tasks.Task> (관리 코드) (c + +), 동시성 런타임에서 참조 및 [연습: 병렬 애플리케이션 디버그](../debugger/walkthrough-debugging-a-parallel-application.md) 대부분의 다중 스레드 응용 프로그램 형식에 적용 되는 일반적인 디버깅 팁, 해당 항목 및이 참조 하세요.
   
 다중 스레드 응용 프로그램 프로젝트를 먼저 해야 합니다. 예를 들면 다음과 같습니다.  
   
