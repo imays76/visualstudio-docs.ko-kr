@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -29,12 +28,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e37adb6296a805b8a0fd06196e7ccf1acf5bc32e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 7a0f6b087f512750ae729d52c0855e3d4981d330
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057570"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "53934377"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Visual Studio에서 창 레이아웃 사용자 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +57,7 @@ Visual Studio에서 창의 위치, 크기 및 동작을 사용자 지정하여 �
  문서에서 한번에 두 위치를 보거나 편집해야 하는 경우 창을 분할할 수 있습니다. 문서를 독립적으로 스크롤되는 두 섹션으로 나누려면 **창** 메뉴에서 **분할** 을 클릭합니다. **창** 메뉴에서 **나누지 않음** 을 클릭하여 단일 뷰를 복원할 수 있습니다.
 
 ### <a name="toolbars"></a>도구 모음
- 도구 모음은 끌거나 **사용자 지정** 대화 상자를 사용하여 정렬할 수 있습니다. 배치 하 고 도구 모음 사용자 지정 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법: 사용자 지정 메뉴 및 도구 모음](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)합니다.
+ 도구 모음은 끌거나 **사용자 지정** 대화 상자를 사용하여 정렬할 수 있습니다. 도구 모음을 배치하고 사용자 지정하는 방법에 대한 자세한 내용은 [방법: 메뉴 및 도구 모음 사용자 지정](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)을 참조하세요.
 
 ## <a name="arranging-and-docking-windows"></a>창 정렬 및 도킹
  문서 창과 도구 창 모두 *도킹*될 수 있으므로 IDE 창 프레임 내에서 위치와 크기를 갖고 있거나 IDE와 독립적인 별도의 부동 창으로 표시됩니다. 도구 창은 IDE 프레임 내의 원하는 위치에 도킹될 수 있습니다. 일부 도구 창은 편집기 프레임에서 탭 창으로 도킹될 수 있습니다. 문서 창은 편집기 프레임 내에서 도킹될 수 있으며 탭 순서의 현재 위치에 고정될 수 있습니다. 여러 창을 도킹하여 IDE 위나 외부에서 함께 부동 창으로 표시할 수 있습니다. 또한 도구 창을 숨기거나 최소화할 수도 있습니다.
@@ -138,7 +137,7 @@ Visual Studio에서 창의 위치, 크기 및 동작을 사용자 지정하여 �
 
 ##### <a name="create-a-ui-project-and-customize-the-layout"></a>UI 프로젝트 만들기 및 레이아웃 사용자 지정
 
-1.  **새 프로젝트** 대화 상자에서 Visual C# WPF 데스크톱 응용 프로그램을 만들고 원하는 이름을 지정합니다. 이 프로젝트에서 사용자 인터페이스에 대한 작업을 수행한다고 가정하고 디자이너 창의 공간을 최대화하고 다른 도구 창은 방해가 되지 않도록 이동합니다.
+1.  **새 프로젝트** 대화 상자에서 Visual C# WPF 데스크톱 애플리케이션을 만들고 원하는 이름을 지정합니다. 이 프로젝트에서 사용자 인터페이스에 대한 작업을 수행한다고 가정하고 디자이너 창의 공간을 최대화하고 다른 도구 창은 방해가 되지 않도록 이동합니다.
 
 2.  모니터가 여러 개 있는 경우 **솔루션 탐색기** 창 및 **속성** 창을 두 번째 모니터로 가져옵니다. 단일 모니터 시스템의 경우 디자이너를 제외한 모든 창을 닫습니다.
 
