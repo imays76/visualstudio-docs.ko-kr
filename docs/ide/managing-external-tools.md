@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8aa96b9204e81a2947e4eb4dca4bd7b9d5b8b341
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8f918ad272683de5316467d1027e098c1ead91a6
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904183"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154065"
 ---
 # <a name="manage-external-tools"></a>외부 도구 관리
 
@@ -65,8 +65,8 @@ ms.locfileid: "53904183"
 |대상 이름|$(Targetname)|빌드할 항목의 파일 이름입니다.|
 |대상 확장명|$ (Targetext)|빌드할 항목의 파일 이름 확장명입니다.|
 |이진 디렉터리|$(BinDir)|빌드 중인 이진의 최종 위치(드라이브 + 경로)입니다.|
-|프로젝트 디렉터리|$(ProjDir)|현재 프로젝트의 디렉터리(드라이브 + 경로)입니다.|
-|프로젝트 파일 이름|$(ProjFileName)|현재 프로젝트의 파일 이름(드라이브 + 경로 + 파일 이름)입니다.|
+|프로젝트 디렉터리|$(ProjectDir)|현재 프로젝트의 디렉터리(드라이브 + 경로)입니다.|
+|프로젝트 파일 이름|$(ProjectFileName)|현재 프로젝트의 파일 이름(드라이브 + 경로 + 파일 이름)입니다.|
 |솔루션 디렉터리|$(Solutiondir)|현재 솔루션의 디렉터리(드라이브 + 경로)입니다.|
 |솔루션 파일 이름|$(SolutionFileName)|현재 솔루션의 파일 이름(드라이브 + 경로 + 파일 이름)입니다.|
 

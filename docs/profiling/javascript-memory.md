@@ -2,7 +2,6 @@
 title: UWP 앱에서 JavaScript 메모리 사용량 분석 | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - JavaScript
@@ -20,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af0871e428d57d9bb4da85a16963f539ecd08d96
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: fca1abfe267d877dbe5eec45ecf29c9f73781ce8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51221037"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962378"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>UWP 앱에서 JavaScript 메모리 사용량 분석
 Visual Studio에서 제공하는 JavaScript 메모리 분석기를 사용하면 JavaScript를 사용하여 Windows용으로 작성된 UWP 앱의 메모리 사용량을 파악하고 메모리 누수를 찾을 수 있습니다. 지원되는 앱으로는 유니버설 Windows 앱을 위한 앱이 있습니다.
@@ -141,7 +140,7 @@ Visual Studio에서 제공하는 JavaScript 메모리 분석기를 사용하면 
   
     - 힙 크기 차이(힙 크기 아래의 왼쪽 링크)입니다. 링크 텍스트는 현재 스냅숏과 이전 스냅숏 간의 힙 크기 차이를 보여 줍니다.  
   
-    - 개체 수 차이(개체 개수 아래의 오른쪽 링크)입니다. 링크 텍스트는 두 값(예: +1858/-1765)을 보여줍니다. 첫 번째 값은 이전 스냅숏 이후에 추가된 새 개체의 수이고, 두 번째 값은 이전 스냅숏 이후에 제거된 개체 수입니다.  
+    - 개체 수 차이(개체 개수 아래의 오른쪽 링크)입니다. 두 값을 보여줍니다(예: +1858/-1765). 첫 번째 값은 이전 스냅숏 이후에 추가된 새 개체의 수이고, 두 번째 값은 이전 스냅숏 이후에 제거된 개체 수입니다.  
   
       이러한 링크는 힙에 대한 유형의 스냅숏 차이 정보 보기를 열고 열린 링크에 따라 보존 크기 또는 개체 수를 기준으로 정렬됩니다.  
   
@@ -359,7 +358,7 @@ if (performance && performance.mark) {
   
     -   일부 개체는 사용할 `dispose` 메서드 및 권장 사항을 제공할 수 있습니다. 예를 들어 목록의 `dispose` 메서드를 호출한 다음 페이지에서 벗어날 경우 [WinJS.Binding.List](/previous-versions/windows/apps/hh700774\(v\=win.10\)) 에서 `createFiltered` 를 호출해야 합니다.  
   
-    -   하나 이상의 이벤트 수신기를 제거해야 할 수 있습니다. 자세한 내용은 [View DOM event listeners](../debugger/view-dom-event-listeners.md)을 참조하세요.  
+    -   하나 이상의 이벤트 수신기를 제거해야 할 수 있습니다. 자세한 내용은 [View DOM event listeners](/visualstudio/debugger/quickstart-debug-html-and-css)을 참조하세요.  
   
 -   JavaScript 메모리 분석기에 대한 Build 2013 컨퍼런스에서 [이 비디오](https://channel9.msdn.com/Events/Build/2013/3-316) 의 뒷부분을 시청하세요.  
   

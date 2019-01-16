@@ -9,12 +9,12 @@ description: Visual Studio 구독에 포함된 WhiteSource Bolt 구독을 활성
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d9f4db463dad3ee2fbb216284791018dc504d7b6
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: a19c2a8882c7de27feef68416b6152e4a173ad54
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739986"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154436"
 ---
 #  <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Visual Studio 구독의 WhiteSource Bolt
 
@@ -41,20 +41,18 @@ ms.locfileid: "53739986"
    - Microsoft Visual Studio 마켓플레이스에서 WhiteSource Bolt 확장을 [설치](https://marketplace.visualstudio.com/items?itemName=whitesource.ws-bolt)합니다. 확장을 설치할 수 있는 권한이 없는 경우 [Azure DevOps Services용 무료 확장 설치](/azure/devops/marketplace/install-vsts-extension?view=vsts)를 참조하세요.
 
 
-~~~
-Click the green **Install** button if you are using Azure DevOps Services, or the **Download** button for Team Foundation Server.  For this example, we will use Azure DevOps Services.
+Azure DevOps Services를 사용하는 경우 녹색 **설치** 단추를 클릭하거나 Team Foundation Server인 경우 **다운로드** 단추를 클릭합니다.  이 예에서는 Azure DevOps Services가 사용됩니다.
 > [!div class="mx-imgBorder"]
-> ![WhiteSource Benefit Install Extension](_img\vs-whitesource\vs-whitesource-download-install.png)
+> ![WhiteSource 혜택 확장 설치](_img/vs-whitesource/vs-whitesource-download-install.png)
 
-- Next, select the Azure DevOps organization you want to use and click **Confirm**.  (If you have not yet set up Azure DevOps Services, visit the [Benefits](https://my.visualstudio.com/benefits) page and activate your Azure DevOps Services benefit.)
+- 다음으로, 사용할 Azure DevOps 조직을 선택하고 **확인**을 클릭합니다.  (아직 Azure DevOps Services를 설정하지 않은 경우 [혜택](https://my.visualstudio.com/benefits) 페이지에서 Azure DevOps Services 혜택을 활성화합니다.)
 
 > [!div class="mx-imgBorder"]
-> ![WhiteSource Benefit Confirm Account](_img\vs-whitesource\vs-whitesource-confirm-account.png)
+> ![WhiteSource 혜택 계정 확인](_img/vs-whitesource/vs-whitesource-confirm-account.png)
 
-- You’ll receive a confirmation that the extension is installed and ready to use.  Click **Get started** to return to the WhiteSource Bolt page and continue.
+- 확장이 설치되어 사용할 준비가 되었는지 확인하는 메시지가 표시됩니다.  **시작**을 클릭하여 WhiteSource Bolt 페이지로 돌아가고 계속합니다.
 > [!div class="mx-imgBorder"]
-> ![WhiteSource Benefit Install Complete](_img\vs-whitesource\vs-whitesource-install-complete.png)
-~~~
+> ![WhiteSource 혜택 설치 완료](_img/vs-whitesource/vs-whitesource-install-complete.png)
 
 5. Azure DevOps 프로젝트 대시보드를 열고 **Azure Pipelines** 메뉴를 클릭한 후 **WhiteSource Bolt**를 선택합니다.
    > [!div class="mx-imgBorder"]

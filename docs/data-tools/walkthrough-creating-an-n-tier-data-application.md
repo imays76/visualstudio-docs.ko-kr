@@ -1,5 +1,5 @@
 ---
-title: '연습: N 계층 데이터 응용 프로그램 만들기'
+title: '연습: N 계층 데이터 애플리케이션 만들기'
 ms.date: 09/08/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,17 +13,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 71c1c8dbaf34613d07ce29fa3f5e08d8e9c6961f
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 2e224ae331b1fba42d06973777b50e84bf1f7e8b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305704"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924269"
 ---
-# <a name="walkthrough-create-an-n-tier-data-application"></a>연습: n 계층 데이터 응용 프로그램 만들기
+# <a name="walkthrough-create-an-n-tier-data-application"></a>연습: n 계층 데이터 애플리케이션 만들기
 *N 계층* 데이터 애플리케이션은 데이터에 액세스하며 여러 논리 *계층*으로 구분되는 애플리케이션입니다. 응용 프로그램 구성 요소를 개별 계층으로 분리하면 응용 프로그램의 확장성과 유지 관리 가능성이 높아집니다. 이는 전체 솔루션을 다시 설계하지 않고도 단일 계층에 적용할 수 있는 새로운 기술을 보다 쉽게 도입할 수 있기 때문입니다. N 계층 아키텍처에는 표시 계층, 중간 계층 및 데이터 계층이 포함됩니다. 중간 계층에는 대개 데이터 액세스 계층, 비즈니스 논리 계층 및 인증, 유효성 검사 등의 공유 구성 요소가 포함됩니다. 데이터 계층에는 관계형 데이터베이스가 포함됩니다. 표시 계층에 액세스하는 최종 사용자로부터 격리된 상태를 유지하기 위해 N 계층 응용 프로그램에서는 보통 중요한 정보가 중간 계층의 데이터 액세스 계층에 저장됩니다. 자세한 내용은 [N 계층 데이터 응용 프로그램 개요](../data-tools/n-tier-data-applications-overview.md)합니다.
 
 N 계층 응용 프로그램의 여러 계층을 분리하는 방법 중 하나는 응용 프로그램에 포함할 각 계층에 대해 개별 프로젝트를 만드는 것입니다. 형식화된 데이터 집합에는 생성된 데이터 집합 및 `DataSet Project` 코드를 포함해야 하는 프로젝트를 결정하는 `TableAdapter` 속성이 포함됩니다.
@@ -50,7 +49,7 @@ N 계층 응용 프로그램의 여러 계층을 분리하는 방법 중 하나�
 
 -   데이터 테이블을 채우는 코드를 작성합니다.
 
-![비디오 링크](../data-tools/media/playvideo.gif) 이 항목의 비디오 버전을 참조 하세요. [Video How to: n 계층 데이터 응용 프로그램을 만드는](http://go.microsoft.com/fwlink/?LinkId=115188)합니다.
+![비디오 링크](../data-tools/media/playvideo.gif) 이 항목의 비디오 버전을 참조 하세요. [Video How to: N 계층 데이터 애플리케이션 만들기](http://go.microsoft.com/fwlink/?LinkId=115188).
 
 ## <a name="prerequisites"></a>전제 조건
 이 연습에서는 Northwind 샘플 데이터베이스 및 SQL Server Express LocalDB를 사용 합니다.
@@ -106,7 +105,7 @@ N 계층 응용 프로그램의 여러 계층을 분리하는 방법 중 하나�
  다음 단계에서는 형식화된 데이터 집합을 만듭니다. Dataset 클래스를 사용 하 여 형식화 된 데이터 집합을 만듭니다 (포함 `DataTables` 클래스) 및 `TableAdapter` 단일 프로젝트에서 클래스입니다. 모든 클래스는 단일 파일로 생성됩니다. Dataset 클래스는 그대로 두고, 다른 프로젝트를 이동 하는 것이 데이터 집합 및 Tableadapter를 다른 프로젝트로 분리 하면는 `TableAdapter` 원래 프로젝트에서 클래스입니다. 따라서 궁극적으로 Tableadapter (DataAccessTier 프로젝트) 포함 하는 프로젝트에서 데이터 집합을 만듭니다. 사용 하 여 데이터 집합을 만들려면 합니다 **데이터 소스 구성 마법사**합니다.
 
 > [!NOTE]
-> 연결을 만들려면 Northwind 샘플 데이터베이스에 액세스해야 합니다. Northwind 샘플 데이터베이스를 설정 하는 방법에 대 한 정보를 참조 하세요 [방법: 샘플 데이터베이스 설치](../data-tools/installing-database-systems-tools-and-samples.md)합니다.
+> 연결을 만들려면 Northwind 샘플 데이터베이스에 액세스해야 합니다. Northwind 샘플 데이터베이스를 설정 하는 방법에 대 한 정보를 참조 하세요. [방법: 예제 데이터베이스 설치](../data-tools/installing-database-systems-tools-and-samples.md)합니다.
 
 ### <a name="to-create-the-dataset"></a>데이터 집합을 만들려면
 
@@ -156,7 +155,7 @@ N 계층 응용 프로그램의 여러 계층을 분리하는 방법 중 하나�
 
 5. **빌드** 메뉴에서 **솔루션 빌드**를 선택합니다.
 
-   데이터 집합 및 TableAdapters가 두 클래스 라이브러리 프로젝트로 분리됩니다. 원래 전체 데이터 집합을 포함 하는 프로젝트 (`DataAccessTier`) 이제는 TableAdapters만 포함 되어 있습니다. 에 지정 된 프로젝트를 **데이터 집합 프로젝트** 속성 (`DataEntityTier`) 형식화 된 데이터 집합을 포함 합니다. *집합인 NorthwindDataSet.Dataset.Designer.vb* (또는  *NorthwindDataSet.Dataset.Designer.cs*).
+   데이터 집합 및 TableAdapters가 두 클래스 라이브러리 프로젝트로 분리됩니다. 원래 전체 데이터 집합을 포함 하는 프로젝트 (`DataAccessTier`) 이제는 TableAdapters만 포함 되어 있습니다. 에 지정 된 프로젝트를 **데이터 집합 프로젝트** 속성 (`DataEntityTier`) 형식화 된 데이터 집합을 포함 합니다. *집합인 NorthwindDataSet.Dataset.Designer.vb* (또는 *NorthwindDataSet.Dataset.Designer.cs*).
 
 > [!NOTE]
 > **데이터 세트 프로젝트** 속성을 설정하여 데이터 세트와 TableAdapters를 분리할 때는 프로젝트의 기존 부분 데이터 세트 클래스가 자동으로 이동되지 않습니다. 따라서 데이터 집합 프로젝트로 기존 데이터 집합 부분 클래스를 수동으로 이동해야 합니다.
@@ -371,7 +370,7 @@ N 계층 응용 프로그램의 여러 계층을 분리하는 방법 중 하나�
 
 2. **maxReceivedMessage** 크기 특성을 찾아 값을 `6553600`으로 변경합니다.
 
-## <a name="test-the-application"></a>응용 프로그램 테스트
+## <a name="test-the-application"></a>애플리케이션 테스트
 **F5**를 눌러 애플리케이션을 실행합니다. 데이터를 `Customers` 고 `Orders` 테이블 데이터 서비스에서 검색 되어 폼에 표시 합니다.
 
 ## <a name="next-steps"></a>다음 단계
@@ -383,6 +382,6 @@ N 계층 응용 프로그램의 여러 계층을 분리하는 방법 중 하나�
 
 ## <a name="see-also"></a>참고 항목
 
-- [n 계층 응용 프로그램에서 데이터 집합 작업](../data-tools/work-with-datasets-in-n-tier-applications.md)
+- [n 계층 애플리케이션에서 데이터 세트 작업](../data-tools/work-with-datasets-in-n-tier-applications.md)
 - [계층적 업데이트](../data-tools/hierarchical-update.md)
 - [Visual Studio에서 데이터 액세스](../data-tools/accessing-data-in-visual-studio.md)

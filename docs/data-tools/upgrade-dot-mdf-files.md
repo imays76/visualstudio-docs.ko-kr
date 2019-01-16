@@ -13,15 +13,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 875208d068c791c0238c110ea0e83b04e18348fc
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
-ms.translationtype: MT
+ms.openlocfilehash: 4e42058d2728d806551ae319112052e664950dab
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117942"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863422"
 ---
 # <a name="upgrade-mdf-files"></a>.mdf 파일 업그레이드
 
@@ -71,7 +70,7 @@ Visual Studio를 사용 하 여 데이터베이스 파일을 포함 하는 프�
 
         -   특정 버전을 사용 하려면: `(localdb)\ProjectsV12` 또는 `(localdb)\ProjectsV13`, 여기서 V12 LocalDB 2014 이며 V13 LocalDB 2016 합니다.
 
-    -   **데이터베이스 파일 첨부**: 주 데이터베이스의 실제 경로가 *.mdf* 파일입니다.
+    -   **데이터베이스 파일 첨부**: 주 데이터베이스의 실제 경로로 *.mdf* 파일입니다.
 
     -   **논리적 이름**: 파일을 사용 하려는 이름입니다.
 
@@ -113,6 +112,6 @@ Visual Studio를 사용 하 여 데이터베이스 파일을 포함 하는 프�
 
     SQL Server Express 응용 프로그램에 대 한 기본 데이터베이스 엔진 됩니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio에서 데이터 액세스](accessing-data-in-visual-studio.md)

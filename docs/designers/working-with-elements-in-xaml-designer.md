@@ -2,7 +2,6 @@
 title: Working with elements in XAML Designer
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: a29690bf-f212-4ac6-a77a-adc53d14102e
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 47f6a975488adacbeffbdf0f04771131cd9a0ff9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: de3a964d39cf2d4473bc8736c5fdeb0ef83809fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926945"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922601"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Working with elements in XAML Designer
 코드의 XAML에 또는 XAML 디자이너를 사용하여 컨트롤, 레이아웃 및 모양과 같은 요소를 추가할 수 있습니다. 이 항목에서는 Visual Studio 또는 Blend for Visual Studio의 XAML 디자이너에서 요소에 대해 작업하는 방법을 설명합니다.
@@ -65,9 +64,9 @@ ms.locfileid: "49926945"
 
 1.  맞출 요소를 선택합니다. 요소를 선택할 때 **Ctrl** 키를 누르고 선택하면 두 개 이상의 요소를 선택할 수 있습니다.
 
-2.  [속성] 창의 **레이아웃** 섹션에 있는 **HorizontalAlignment** 아래에서 **Left**, **Center**, **Right** 또는 **Stretch** 속성 중 하나를 선택합니다.
+2.  속성 창의 **레이아웃** 섹션에 있는 **HorizontalAlignment** 아래에서 다음 속성 중 하나를 선택합니다. **Left**, **Center**, **Right** 또는 **Stretch**
 
-3.  [속성] 창의 **레이아웃** 섹션에 있는 **VerticalAlignment** 아래에서 **Top**, **Center**, **Bottom** 또는 **Stretch** 속성 중 하나를 선택합니다.
+3.  속성 창의 **레이아웃** 섹션에 있는 **VerticalAlignment** 아래에서 다음 속성 중 하나를 선택합니다. **Top**, **Center**, **Bottom** 또는 **Stretch**
 
 #### <a name="to-align-two-or-more-elements-by-using-snaplines"></a>맞춤선을 사용하여 둘 이상의 요소를 맞추려면
 

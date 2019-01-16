@@ -2,7 +2,6 @@
 title: XAML 디자이너를 사용하여 UI 만들기
 ms.date: 11/05/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: b991b50ab2ee329adaaff7a31c2dbb4f2d5bb806
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: a47c0f9718f43c86375f9ff8668d2dfa1efa9785
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220998"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880412"
 ---
 # <a name="create-a-ui-by-using-xaml-designer-in-visual-studio"></a>Visual Studio에서 XAML 디자이너를 사용하여 UI 만들기
 
@@ -94,7 +93,7 @@ XAML 디자이너는 앱의 렌더링된 XAML 태그에 대한 XAML 뷰 및 동�
 
 맞춤선을 사용하면 서로를 기준으로 컨트롤을 맞출 수 있습니다. **맞춤선에 맞추기** 를 사용하는 경우 다른 컨트롤을 기준으로 컨트롤을 끌면 가장자리와 일부 컨트롤의 텍스트가 가로 또는 세로로 정렬될 때 맞춤 경계선이 나타납니다. 맞춤 경계선은 빨간색 파선으로 나타납니다.
 
-**XAML** 뷰에서 XAML 편집기가 포함된 창이 활성 창이며 XAML 편집기는 기본 제작 도구입니다. XAML(Extensible Application Markup Language)은 응용 프로그램의 사용자 인터페이스를 지정하는 데 사용할 수 있는 선언적인 XML 기반 어휘를 제공합니다. XAML 뷰에는 IntelliSense, 자동 서식 지정, 구문 강조 표시 및 태그 탐색이 포함됩니다. 이 그림에서는 XAML 뷰를 보여 줍니다.
+**XAML** 뷰에서 XAML 편집기가 포함된 창이 활성 창이며 XAML 편집기는 기본 제작 도구입니다. XAML(Extensible Application Markup Language)은 애플리케이션의 사용자 인터페이스를 지정하는 데 사용할 수 있는 선언적인 XML 기반 어휘를 제공합니다. XAML 뷰에는 IntelliSense, 자동 서식 지정, 구문 강조 표시 및 태그 탐색이 포함됩니다. 이 그림에서는 XAML 뷰를 보여 줍니다.
 
 ![XAML 뷰](../designers/media/xaml_editor.png)
 
@@ -111,7 +110,7 @@ XAML 편집기가 아래쪽 창에 있을 때 분할 뷰 구분선이 XAML 뷰�
 > [!NOTE]
 > UWP 응용 프로그램의 대상 플랫폼 버전(`TargetPlatformVersion`)이 10.0.16299.0 이상인 경우 **디바이스** 창이 지원되지 않습니다.
 
-XAML 디자이너의 **디바이스** 창을 사용하면 디자인 타임에 프로젝트의 다양한 뷰, 표시 및 표시 옵션을 시뮬레이션할 수 있습니다. **장치** 창은 XAML 디자이너에서 작업할 때 **디자인** 메뉴에서 사용할 수 있습니다. 다음과 같이 나타납니다.
+XAML 디자이너의 **디바이스** 창을 사용하면 디자인 타임에 프로젝트의 다양한 뷰, 표시 및 표시 옵션을 시뮬레이션할 수 있습니다. **디바이스** 창은 XAML 디자이너에서 작업할 때 **디자인** 메뉴에서 사용할 수 있습니다. 다음과 같이 나타납니다.
 
 ![디바이스 창](../designers/media/xaml_editor_device_panel.png)
 
@@ -123,11 +122,11 @@ XAML 디자이너의 **디바이스** 창을 사용하면 디자인 타임에 �
 
 **방향**
 
-앱의 다른 방향 즉, **가로** 또는 **세로**를 지정합니다.
+다음과 같이 앱의 다른 방향을 지정합니다. **가로** 또는 **세로**
 
 **Microsoft Edge**
 
-앱의 다른 가장자리 맞춤 즉, **모두**, **왼쪽**, **오른쪽**또는 **없음**을 지정합니다.
+다음과 같이 앱의 다른 에지 맞춤을 지정합니다. **모두**, **왼쪽**, **오른쪽** 또는 **없음**
 
 **고대비**
 
@@ -201,4 +200,4 @@ XAML 디자이너의 문서 개요 창은 이러한 작업을 수행하는 데 �
 
 - [XAML Designer에서의 요소 작업](../designers/working-with-elements-in-xaml-designer.md)
 - [방법: 리소스 만들기 및 적용](../designers/how-to-create-and-apply-a-resource.md)
-- [연습: XAML 디자이너의 데이터 바인딩](../designers/walkthrough-binding-to-data-in-xaml-designer.md)
+- [연습: XAML 디자이너에서 데이터에 바인딩](../designers/walkthrough-binding-to-data-in-xaml-designer.md)
