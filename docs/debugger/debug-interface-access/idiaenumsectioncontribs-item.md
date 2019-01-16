@@ -1,8 +1,6 @@
 ---
 title: 'Idiaenumsectioncontribs:: Item | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: adbba44ed860c825d1e0baac417bc91e0b33e703
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 0a9d627aeb14b8844ba5c67e1d2c158f9e65c8cd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49901933"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896591"
 ---
 # <a name="idiaenumsectioncontribsitem"></a>IDiaEnumSectionContribs::Item
 인덱스를 사용 하 여 섹션 기여를 검색합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49901933"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT Item (   
+HRESULT Item (   
    DWORD                index,  
    IDiaSectionContrib** section  
 );  
@@ -44,5 +42,5 @@ HRESULT Item (
  성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [Idiaenumsectioncontribs:: Get_count](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-count.md)   
+ [IDiaEnumSectionContribs::get_Count](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-count.md)   
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

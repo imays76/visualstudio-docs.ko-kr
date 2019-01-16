@@ -1,8 +1,6 @@
 ---
 title: 'Idiaenumtables:: Item | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc95fe0f57eabbd933f8de842d842914948f3e4c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 6321b6bc651778e9d3aff7257a251eff6493f397
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819957"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966144"
 ---
 # <a name="idiaenumtablesitem"></a>IDiaEnumTables::Item
 인덱스 또는 이름을 사용 하 여 테이블을 검색합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49819957"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT Item (   
+HRESULT Item (   
    VARIANT     index,  
    IDiaTable** table  
 );  
@@ -43,7 +41,7 @@ HRESULT Item (
 ## <a name="return-value"></a>반환 값  
  성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  문자열 변형 지정 된 경우 문자열 특정 테이블을 이름입니다. 이름에 정의 된 대로 테이블 이름 중 하나 여야 합니다 [상수 (디버그 인터페이스 액세스 SDK)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)합니다.  
   
 ## <a name="example"></a>예제  
@@ -59,5 +57,5 @@ pEnumTables->Item( var, &pTable );
 ## <a name="see-also"></a>참고 항목  
  [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)   
  [IDiaTable](../../debugger/debug-interface-access/idiatable.md)   
- [Idiaenumtables:: Get_count](../../debugger/debug-interface-access/idiaenumtables-get-count.md)   
+ [IDiaEnumTables::get_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md)   
  [상수(디버그 인터페이스 액세스 SDK)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)
