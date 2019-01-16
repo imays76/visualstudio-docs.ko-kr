@@ -1,8 +1,6 @@
 ---
 title: 'Idiaenumdebugstreamdata:: Item | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5101c5f43e3d931a0ec4653838e4b45c01d3c5fb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: ddb54c8084cea8d89b7453fb11547063c338cfee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936307"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958373"
 ---
 # <a name="idiaenumdebugstreamdataitem"></a>IDiaEnumDebugStreamData::Item
 지정된 된 레코드를 검색합니다.  
@@ -27,7 +25,7 @@ ms.locfileid: "49936307"
 ## <a name="syntax"></a>구문  
   
 ```C++  
-HRESULT Item (   
+HRESULT Item (   
    DWORD  index,  
    DWORD  cbData,  
    DWORD* pcbData,  
@@ -45,7 +43,7 @@ HRESULT Item (
  pcbData  
  [out] 반환 된 바이트 수를 반환 합니다. 하는 경우 `data` 됩니다 `NULL`, 다음 `pcbData` 지정된 된 레코드에서 사용 가능한 데이터의 바이트의 총 수를 포함 합니다.  
   
- 데이터]  
+ data[]  
  [out] 디버그 스트림 레코드 데이터를 사용 하 여 입력 되는 버퍼입니다.  
   
 ## <a name="return-value"></a>반환 값  
@@ -53,7 +51,7 @@ HRESULT Item (
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)   
- [Idiaenumdebugstreamdata:: Next](../../debugger/debug-interface-access/idiaenumdebugstreamdata-next.md)   
- [Idiaenumdebugstreams:: Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)   
- [Idiaenumdebugstreamdata:: Get_count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md)   
+ [IDiaEnumDebugStreamData::Next](../../debugger/debug-interface-access/idiaenumdebugstreamdata-next.md)   
+ [IDiaEnumDebugStreams::Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)   
+ [IDiaEnumDebugStreamData::get_Count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md)   
  [IDiaEnumDebugStreamData::Skip](../../debugger/debug-interface-access/idiaenumdebugstreamdata-skip.md)
