@@ -13,12 +13,12 @@ ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
 caps.latest.revision: 28
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 806c19b7132a4541ff97c253700a5e5e980ef556
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 8d9b03c3b3e418a59c5cea40d61c1ad4c5024d1d
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817979"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154491"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>.runsettings 파일을 사용하여 단위 테스트 구성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "49817979"
 > [!NOTE]
 >  **.runsettings 및 .testsettings**  
 >   
->  테스트 구성에는 두 가지 파일 형식이 필요합니다. *.runsettings는 단위 테스트에 사용됩니다. \*.testsettings는 [랩 환경 테스트](http://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901), 웹 성능 및 로드 테스트 그리고 Intellitrace 및 이벤트 로그 어댑터와 같은 진단 데이터 어댑터의 일부 유형을 사용자 지정하는 데 사용됩니다.  
+>  테스트 구성에는 두 가지 파일 형식이 필요합니다. *.runsettings는 단위 테스트에 사용됩니다. \*.testsettings는 [랩 환경 테스트](http://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901), 웹 성능 및 로드 테스트 그리고 IntelliTrace 및 이벤트 로그 어댑터와 같은 진단 데이터 어댑터의 일부 유형을 사용자 지정하는 데 사용됩니다.  
 >   
 >  Visual Studio 2010까지 Visual Studio의 이전 버전에서는 *.testsettings 파일을 사용해서 단위 테스트를 사용자 지정할 수 있었습니다. 여전히 *.testsettings 파일을 사용해서 단위 테스트를 사용자 지정할 수도 있지만 \*.runsettings 파일에서 동일한 구성을 사용하는 것보다 테스트가 훨씬 느리게 실행됩니다.  
   
@@ -133,15 +133,15 @@ ms.locfileid: "49817979"
 |`ResultsDirectory`||테스트 결과가 배치될 디렉터리입니다.|  
 |`TargetFrameworkVersion`|Framework40|Framework35, Framework40, Framework45<br /><br /> 테스트를 검색하고 실행하는 데 사용할 단위 테스트 프레임워크의 버전을 지정합니다. 이 버전은 단위 테스트 프로젝트의 빌드 속성에 지정하는 .NET 플랫폼의 버전과 다를 수 있습니다.|  
 |`TargetPlatform`|x86|x86, x64|  
-|`TreatTestAdapterErrorsAsWarnings`|false|false, true|  
+|`TreatTestAdapterErrorsAsWarnings`|False|false, true|  
 |`TestAdaptersPaths`||TestAdapters가 있는 디렉터리에 대한 하나 또는 여러 경로|  
 |`MaxCpuCount`|1|단위 테스트를 실행하는 경우 시스템에서 사용 가능한 코어를 사용하여 병렬 테스트 실행의 정도를 제어합니다.  테스트 실행 엔진이 사용 가능한 각 코어에서 별도의 프로세스로 시작되며, 실행할 테스트가 있는 컨테이너(예: 어셈블리, DLL 또는 관련 아티팩트)를 각 코어에 제공합니다.  테스트 컨테이너는 예약 단위입니다.  각 컨테이너에서 테스트는 테스트 프레임워크에 따라 실행됩니다.  많은 컨테이너가 있는 경우 프로세스가 컨테이너 내의 테스트 실행을 마치면 사용 가능한 다음 컨테이너가 제공됩니다.<br /><br /> MaxCpuCount는 다음과 같을 수 있습니다.<br /><br /> n, 여기서 1 < = n < = 코어 수에 해당하며 최대 n개의 프로세스가 시작됩니다.<br /><br /> n, 여기서 n = 다른 모든 값이 되며, 시작되는 프로세스의 수는 컴퓨터에서 사용 가능한 코어 수까지입니다.|  
   
 ### <a name="diagnostic-data-adapters-data-collectors"></a>진단 데이터 어댑터(데이터 수집기)  
- `DataCollectors` 요소는 진단 데이터 어댑터의 설정을 지정합니다. 진단 데이터 어댑터는 테스트 환경 및 응용 프로그램에 대한 추가 정보를 수집하는 데 사용합니다. 각 어댑터에는 기본 설정이 있으며 기본 설정을 사용하지 않으려는 경우에만 설정을 제공해야 합니다.  
+ `DataCollectors` 요소는 진단 데이터 어댑터의 설정을 지정합니다. 진단 데이터 어댑터는 테스트 환경 및 애플리케이션에 대한 추가 정보를 수집하는 데 사용합니다. 각 어댑터에는 기본 설정이 있으며 기본 설정을 사용하지 않으려는 경우에만 설정을 제공해야 합니다.  
   
 #### <a name="code-coverage-adapter"></a>코드 검사 어댑터  
- 코드 검사 데이터 수집기는 테스트에서 응용 프로그램 코드 중 실행된 부분에 대한 로그를 만듭니다. 코드 검사의 설정을 사용자 지정하는 방법에 대한 자세한 내용은 [코드 검사 분석 사용자 지정](../test/customizing-code-coverage-analysis.md)을 참조하세요.  
+ 코드 검사 데이터 수집기는 테스트에서 애플리케이션 코드 중 실행된 부분에 대한 로그를 만듭니다. 코드 검사의 설정을 사용자 지정하는 방법에 대한 자세한 내용은 [코드 검사 분석 사용자 지정](../test/customizing-code-coverage-analysis.md)을 참조하세요.  
   
 #### <a name="other-diagnostic-data-adapters"></a>기타 진단 데이터 어댑터  
  코드 검사 어댑터는 현재 실행 설정 파일을 사용하여 사용자 지정할 수 있는 유일한 어댑터입니다.  
@@ -156,16 +156,16 @@ ms.locfileid: "49817979"
   
 |구성|기본|값|  
 |-------------------|-------------|------------|  
-|ForcedLegacyMode|false|Visual Studio 2012에서 MSTest 어댑터는 더욱 빠르고 확장성 가능하도록 최적화되었습니다. 테스트가 실행되는 순서와 같은 일부 동작은 이전 버전 Visual Studio처럼 정확하지 않을 수 있습니다. 이전 테스트 어댑터를 사용하려면 이 값을 `true` 로 설정합니다.<br /><br /> 예를 들어, 단위 테스트에 대해 app.config 파일을 지정한 경우 이전 테스트 어댑터를 사용할 수 있습니다.<br /><br /> 새 어댑터를 사용할 수 있도록 테스트를 리팩터링하는 것이 좋습니다.|  
-|IgnoreTestImpact|false|테스트 영향 기능은 MSTest 또는 Microsoft Test Manager에서 실행할 때 최근 변경 내용의 영향을 받는 테스트의 우선 순위를 지정합니다. 이 설정에서는 이 기능이 비활성화됩니다. 자세한 내용은 [방법: 코드 변경 후 실행할 테스트를 확인하기 위해 데이터 수집](http://msdn.microsoft.com/library/2f921ea1-9bb0-4870-a30f-0521fc22cb47)을 참조하세요.|  
+|ForcedLegacyMode|False|Visual Studio 2012에서 MSTest 어댑터는 더욱 빠르고 확장성 가능하도록 최적화되었습니다. 테스트가 실행되는 순서와 같은 일부 동작은 이전 버전 Visual Studio처럼 정확하지 않을 수 있습니다. 이전 테스트 어댑터를 사용하려면 이 값을 `true` 로 설정합니다.<br /><br /> 예를 들어, 단위 테스트에 대해 app.config 파일을 지정한 경우 이전 테스트 어댑터를 사용할 수 있습니다.<br /><br /> 새 어댑터를 사용할 수 있도록 테스트를 리팩터링하는 것이 좋습니다.|  
+|IgnoreTestImpact|False|테스트 영향 기능은 MSTest 또는 Microsoft Test Manager에서 실행할 때 최근 변경 내용의 영향을 받는 테스트의 우선 순위를 지정합니다. 이 설정에서는 이 기능이 비활성화됩니다. 자세한 내용은 [방법: 테스트를 확인 하기 위해 데이터 수집 코드 변경 후 실행할 수](http://msdn.microsoft.com/library/2f921ea1-9bb0-4870-a30f-0521fc22cb47)입니다.|  
 |SettingsFile||여기에서 MS 테스트 어댑터와 함께 사용할 테스트 설정 파일을 지정할 수 있습니다. **테스트**, **테스트 설정**, **테스트 설정 파일 선택**메뉴를 사용하여 테스트 설정 파일을 지정할 수도 있습니다.<br /><br /> 이 값을 지정하면 **ForcedlegacyMode** 도 **true**로 설정해야 합니다.<br /><br /> `<RunSettings>   <MSTest>     <SettingsFile>my.testsettings</SettingsFile>      <ForcedLegacyMode>true</ForcedLegacyMode>    </MSTest> </RunSettings>`|  
-|KeepExecutorAliveAfterLegacyRun|false|테스트 실행이 완료되면 MSTest가 종료됩니다. 테스트에 포함되어 시작된 프로세스도 이때 종료됩니다. 테스트 Executor를 활성 상태로 유지하려면 이 구성을 true로 전환합니다.<br /><br /> 예를 들어, 이 구성을 사용하여 브라우저가 코딩된 UI 테스트 사이에서 계속 실행되도록 할 수 있습니다.|  
+|KeepExecutorAliveAfterLegacyRun|False|테스트 실행이 완료되면 MSTest가 종료됩니다. 테스트에 포함되어 시작된 프로세스도 이때 종료됩니다. 테스트 Executor를 활성 상태로 유지하려면 이 구성을 true로 전환합니다.<br /><br /> 예를 들어, 이 구성을 사용하여 브라우저가 코딩된 UI 테스트 사이에서 계속 실행되도록 할 수 있습니다.|  
 |DeploymentEnabled|true|이 값을 false로 설정할 경우 테스트 메서드에서 지정한 배포 항목이 배포 디렉터리로 복사되지 않습니다.|  
 |CaptureTraceOutput|true|Trace.WriteLine을 사용하여 테스트 메서드에서 디버그 추적으로 쓸 수 있습니다. 이 구성을 사용하여 이러한 디버그 추적을 해제할 수 있습니다.|  
 |DeleteDeploymentDirectoryAfterTestRunIsComplete|true|이 값을 false로 설정하여 테스트를 실행한 후 배포 디렉터리를 유지할 수 있습니다.|  
-|MapInconclusiveToFailed|false|테스트가 불충분한 상태로 반환되는 경우 일반적으로 테스트 탐색기에서 생략된 상태로 매핑됩니다. 결과가 불충분한 테스트를 실패로 표시하려는 경우 이 구성을 사용합니다.|  
-|InProcMode|false|테스트를 MS 테스트 어댑터와 동일한 프로세스에서 실행하려면 이 값을 true로 설정합니다. 이 설정을 사용하면 성능이 약간 향상됩니다. 하지만 테스트가 종료될 때 예외가 발생하면 다른 테스트를 계속할 수 없습니다.|  
-|AssemblyResolution|false|단위 테스트를 찾아서 실행하는 경우 추가 어셈블리에 대한 경로를 지정할 수 있습니다.  예를 들어 테스트 어셈블리와 동일한 디렉터리에 존재하지 않는 종속성 어셈블리에 대해 이러한 경로를 사용합니다.  경로를 지정하려면 "디렉터리 경로" 요소를 사용합니다.  경로는 환경 변수를 포함할 수 있습니다.<br /><br /> `<AssemblyResolution>  <Directory Path>"D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|  
+|MapInconclusiveToFailed|False|테스트가 불충분한 상태로 반환되는 경우 일반적으로 테스트 탐색기에서 생략된 상태로 매핑됩니다. 결과가 불충분한 테스트를 실패로 표시하려는 경우 이 구성을 사용합니다.|  
+|InProcMode|False|테스트를 MS 테스트 어댑터와 동일한 프로세스에서 실행하려면 이 값을 true로 설정합니다. 이 설정을 사용하면 성능이 약간 향상됩니다. 하지만 테스트가 종료될 때 예외가 발생하면 다른 테스트를 계속할 수 없습니다.|  
+|AssemblyResolution|False|단위 테스트를 찾아서 실행하는 경우 추가 어셈블리에 대한 경로를 지정할 수 있습니다.  예를 들어 테스트 어셈블리와 동일한 디렉터리에 존재하지 않는 종속성 어셈블리에 대해 이러한 경로를 사용합니다.  경로를 지정하려면 "디렉터리 경로" 요소를 사용합니다.  경로는 환경 변수를 포함할 수 있습니다.<br /><br /> `<AssemblyResolution>  <Directory Path>"D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|  
   
 ## <a name="see-also"></a>참고 항목  
  [코드 검사 분석 사용자 지정](../test/customizing-code-coverage-analysis.md)   

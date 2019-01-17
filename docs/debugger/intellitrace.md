@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d38ea825596d4edb38898b36296bde86f0f4c37
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 332f737d7dc404f42623c338eef3f2dc759d2d6f
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842410"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227332"
 ---
-# <a name="intellitrace"></a>IntelliTrace
+# <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>Visual Studio Enterprise에 대 한 IntelliTrace (C#, Visual Basic, c + +)
 
 IntelliTrace를 사용하여 코드의 실행 내역을 기록하고 추적하면 응용 프로그램 디버깅에 사용되는 시간을 줄일 수 있습니다. IntelliTrace를 사용하면 다음이 가능하므로 손쉽게 버그를 찾을 수 있습니다.
 
@@ -53,7 +53,7 @@ Visual Studio Enterprise Edition(Professional 또는 Community Edition 아님)�
 | | |
 |---------------------| - |
 | **전체 지원** | - .NET Framework 2.0 이상 버전을 사용하는 Visual Basic 및 Visual C# 애플리케이션.<br/>ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 및 64비트 앱을 포함한 대부분의 응용 프로그램을 디버깅할 수 있습니다.<br/>IntelliTrace 사용 하 여 SharePoint 응용 프로그램을 디버깅 하려면 참조 [연습: IntelliTrace를 사용 하 여 SharePoint 응용 프로그램을 디버깅](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)합니다.<br/> IntelliTrace 사용 하 여 Microsoft Azure 앱 디버그를 참조 하세요 [IntelliTrace 및 Visual Studio를 사용 하 여 게시 된 클라우드 서비스 디버깅](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services)합니다. |
-| **제한적 지원** | -타기 팅 IntelliTrace를 사용 하 여 스냅숏 보기 Windows 지원 네이티브 앱 뒤로 이동 합니다. 디버거 및 예외 이벤트만 지원 됩니다.<br />-.NET core 및 ASP.NET Core 앱에 대 한 특정 이벤트만 (MVC 컨트롤러, ADO.NET 및 HTTPClicent 이벤트)에서 지원 로컬 디버깅 합니다. 독립 실행형 수집기는.NET Core 또는 ASP.NET Core 앱에 대 한 지원 되지 않습니다.<br />- 시험 차원의 F# 앱<br />-UWP 앱만 이벤트에 대 한 지원 |
+| **제한적 지원** | -C + + 앱을 Windows 지원 IntelliTrace 뒤로 사용 하 여 스냅숏 보기를 대상으로 합니다. 디버거 및 예외 이벤트만 지원 됩니다.<br />-.NET core 및 ASP.NET Core 앱에 대 한 특정 이벤트만 (MVC 컨트롤러, ADO.NET 및 HTTPClient 이벤트)에서 지원 로컬 디버깅 합니다. 독립 실행형 수집기는.NET Core 또는 ASP.NET Core 앱에 대 한 지원 되지 않습니다.<br />- 시험 차원의 F# 앱<br />-UWP 앱만 이벤트에 대 한 지원 |
 | **지원되지 않음** | -다른 언어 및 스크립트<br />- Windows Services, Silverlight, Xbox 또는 [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] 앱 |
 
 > [!NOTE]
@@ -148,7 +148,7 @@ IntelliTrace는 재현하기 어렵거나 배포할 때 발생하는 오류를 �
 모든 중단점에서 스냅숏을 캡처하고 디버거 단계 이벤트를 IntelliTrace를 구성할 수 있습니다. IntelliTrace는 복잡 한 변수를 표시 하 고 식을 평가 하는 각 스냅숏에서 전체 응용 프로그램 상태를 기록 합니다.
 
 > [!NOTE]
-> 합니다 [IntelliTrace 독립 실행형 수집기](../debugger/using-the-intellitrace-stand-alone-collector.md) 캡처링 snaphots를 지원 하지 않습니다.
+> 합니다 [IntelliTrace 독립 실행형 수집기](../debugger/using-the-intellitrace-stand-alone-collector.md) 캡처링 스냅숏을 지원 하지 않습니다.
 
 참조 [IntelliTrace를 사용 하 여 이전 앱 상태를 검사](../debugger/view-historical-application-state.md)합니다.
 

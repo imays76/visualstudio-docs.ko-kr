@@ -33,18 +33,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 647749b2993b41180852aca43f99ce15844c6d71
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 8f31fa49916bf9b6d13865cd5d427670ceb33cb0
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54094818"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204420"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Visual Studio에서 디버거를 사용한 예외 관리
 
-예외는 프로그램이 실행되는 동안 발생하는 오류 상태를 나타냅니다. 예외 또는 집합 예외를 중단 하도록 디버거에 지시할 수 있습니다 하 고이 시점에서 중단 하도록 디버거 하려는 키를 누릅니다. 디버거가 중단 되 면 예외가 throw 된 보여줍니다. 추가 하거나 예외를 삭제할 수도 있습니다. Visual Studio에서 열려 있는 솔루션을 사용 하 여 **디버그 > Windows > 예외 설정** 열려는 합니다 **예외 설정** 창입니다.
+예외는 프로그램이 실행되는 동안 발생하는 오류 상태를 나타냅니다. 예외 또는 집합 예외를 중단 하도록 디버거에 지시할 수 있습니다 및 중단 하도록 디버거를 원하는 시점 (즉, 디버거에서 일시 중지) 합니다. 디버거가 중단 되 면 예외가 throw 된 보여줍니다. 추가 하거나 예외를 삭제할 수도 있습니다. Visual Studio에서 열려 있는 솔루션을 사용 하 여 **디버그 > Windows > 예외 설정** 열려는 합니다 **예외 설정** 창입니다.
 
-가장 중요 한 예외에 응답 하는 처리기를 제공 합니다. 또한 항상 몇 가지 예외에 대 한 실행을 중단 하도록 디버거를 구성 하는 방법에 알아봅니다.
+가장 중요 한 예외에 응답 하는 처리기를 제공 합니다. 예외에 대 한 처리기를 추가, 참조 하는 방법을 알아야 하는 경우 [잘 작성 하 여 버그를 수정 합니다. C# 코드](../debugger/write-better-code-with-visual-studio.md)합니다. 또한 항상 몇 가지 예외에 대 한 실행을 중단 하도록 디버거를 구성 하는 방법에 알아봅니다.
 
 예외가 발생하면 디버거가 **출력** 창에 예외 메시지를 씁니다. 다음에서 실행을 중단할 수 있으므로 경우 사례:
 
@@ -66,7 +66,7 @@ ms.locfileid: "54094818"
 
 에 **예외 설정** 창 (**디버그 > Windows > 예외 설정**), 같은 예외 범주에 대 한 노드를 확장 **Common Language Runtime Exceptions**. 선택한 다음 해당 범주 내의 특정 예외에 대 한 확인란을 같은 **System.AccessViolationException**합니다. 전체 예외 범주를 선택할 수도 있습니다.
 
-![AccessViolationException 체크](../debugger/media/exceptionsettingscheckaccess.png "ExceptionSettingsCheckAccess")
+![Checked AccessViolationException](../debugger/media/exceptionsettingscheckaccess.png "ExceptionSettingsCheckAccess")
 
 > [!TIP]
 > 사용 하 여 특정 예외를 찾을 수 있습니다 합니다 **검색** 창에는 **예외 설정** 도구 모음 또는 검색 특정 네임 스페이스에 대 한 필터링을 사용 (같은 **System.IO**).

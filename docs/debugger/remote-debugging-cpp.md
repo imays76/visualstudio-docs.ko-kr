@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2778148c8762c74d1c836a6f5a1b1fd8c9387e12
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: bdbcefe1e0878ef6bf2520edb90ce904e414f211
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53884586"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269763"
 ---
 # <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>Visual Studio에서 Visual c + + 프로젝트 원격 디버그
 다른 컴퓨터에 Visual Studio 응용 프로그램을 디버깅 설치 하 고 앱을 배포할 컴퓨터의 원격 도구를 실행 하려면 Visual Studio에서 원격 컴퓨터에 연결 및 다음 배포 하 고 앱을 실행 하도록 프로젝트를 구성 합니다.
@@ -71,7 +71,7 @@ ms.locfileid: "53884586"
    |-|-|  
    |원격 명령|C:\remotetemp\mymfc.exe|  
    |작업 디렉터리|C:\remotetemp|  
-   |원격 서버 이름|MJO DL:*portnumber*|  
+   |원격 서버 이름|MJO-DL:*portnumber*|  
    |연결|Windows 인증을 사용한 원격|  
    |디버거 형식|네이티브 전용|  
    |배포 디렉터리|C:\remotetemp.|  
@@ -106,7 +106,7 @@ ms.locfileid: "53884586"
   
 ## <a name="see-also"></a>참고 항목  
  [Visual Studio의 디버깅](../debugger/index.md)  
- [디버거 기능 둘러보기](../debugger/debugger-feature-tour.md)   
+ [디버거 소개](../debugger/debugger-feature-tour.md)   
  [원격 디버깅을 위해 Windows 방화벽 구성](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   
  [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)   
  [원격 IIS 컴퓨터의 원격 디버깅 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)  

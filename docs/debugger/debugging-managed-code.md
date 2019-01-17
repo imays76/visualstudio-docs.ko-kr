@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3ffb9361e06218d3625bfd5d220c38f86a8b70f7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e34d138ec65d2508244c6802ccee67d931e87257
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867042"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270208"
 ---
 # <a name="debugging-managed-code"></a>관리 코드 디버깅
 
@@ -86,7 +86,7 @@ C++로 작성된 코드에 <xref:System.Diagnostics.DebuggableAttribute>를 추�
 
 ## <a name="see-also"></a>참고 항목
 
-[연습: 디자인 타임에 디버깅 사용자 지정 Windows Forms 컨트롤](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
-[디버거 보안](../debugger/debugger-security.md)
-[Visual Studio에서 디버깅](../debugger/index.md) 
- [ 디버거 기능 둘러보기](../debugger/debugger-feature-tour.md)
+[연습: 디자인 타임에 사용자 지정 Windows Forms 컨트롤 디버그](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)  
+[디버거 보안](../debugger/debugger-security.md)  
+[Visual Studio의 디버깅](../debugger/index.md)  
+[디버거 소개](../debugger/debugger-feature-tour.md)

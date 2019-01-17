@@ -9,12 +9,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: f53164bd4ffe74be2715d89215e6c9c1b526f2bb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 8e0d7c00cf902baa41586301ff338ebfef78c5aa
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847839"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204059"
 ---
 # <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>경고: 동작 구성 대화 상자에 적용되지 않은 변경 내용이 있습니다.
 
@@ -22,13 +22,11 @@ ms.locfileid: "53847839"
 
 합니다 **동작 구성** 대화 상자를 사용 하면 구성할 수 있습니다 `Insert`를 `Update`, 및 `Delete` 사용할 수 있는 모든 클래스에 대 한 동작입니다. 이 메시지는 새 **클래스** 및 **동작** 조합을 선택하고 이전 변경 내용이 아직 적용되지 않은 경우 나타납니다.
 
-## <a name="to-apply-the-change-and-continue"></a>변경 내용을 적용하고 계속하려면
+## <a name="change-options"></a>변경 옵션
 
-- **예**를 클릭하여 선택한 **클래스** 및 **동작**에 변경 내용을 적용합니다.
+- 변경 내용을 적용 하 고 계속 하려면 클릭 **예**합니다. 변경 내용이 적용 하 여 선택한 **클래스** 하 고 **동작**합니다.
 
-## <a name="to-cancel-the-previous-change-and-continue"></a>이전 변경 내용을 취소하고 계속하려면
-
-- **아니요**를 클릭하여 선택한 **클래스** 및 **동작**에 대한 변경 내용을 취소합니다.
+- 이전 변경 내용을 취소 하 고 계속 하려면 클릭 **No**합니다.
 
 ## <a name="see-also"></a>참고 항목
 

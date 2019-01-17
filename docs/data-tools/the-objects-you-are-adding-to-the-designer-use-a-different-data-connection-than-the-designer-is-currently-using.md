@@ -9,12 +9,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 23abfbdc1b0bf922e3d15f0181afd7d01aa7ee2f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: b61507087a3a4d9ac69c7a0f7fd602dcf7f5cc06
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935660"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204309"
 ---
 # <a name="the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer"></a>디자이너에 추가 하려는 개체가 디자이너 보다 다양 한 데이터 연결을 사용 하 여
 
@@ -22,20 +22,18 @@ ms.locfileid: "53935660"
 
 항목을 추가 하는 경우는 **Object Relational Designer** (**O/R 디자이너**), 모든 항목이 하나의 공유 데이터 연결을 사용 합니다. 디자인 화면에는 화면의 모든 개체에 대해 하나의 연결을 사용하는 <xref:System.Data.Linq.DataContext>가 표시됩니다. 디자이너에서 현재 사용하는 데이터 연결과 다른 데이터 연결을 사용하는 디자이너에 개체를 추가하면 이 메시지가 나타납니다. 이 오류를 해결하려면 기존 연결 유지를 선택하세요. 이 항목을 선택하면 선택한 개체가 추가되지 않습니다. 또는 개체 추가를 선택하고 <xref:System.Data.Linq.DataContext> 연결을 새 연결로 다시 설정할 수 있습니다.
 
-> [!NOTE]
-> 클릭 하면 **예**, 모든 엔터티 클래스에 **O/R 디자이너** 새 연결에 매핑됩니다.
+## <a name="connection-options"></a>연결 옵션
 
-## <a name="to-replace-the-existing-connection-with-the-connection-used-by-the-selected-object"></a>기존 연결을 선택한 개체에서 사용하는 연결로 대체하려면
+- 선택한 개체에서 사용 하는 연결을 사용 하 여 기존 연결을 바꾸려면 클릭 **예**합니다.
 
-- **예**를 클릭합니다.
+   선택한 개체에 추가 됩니다는 **O/R 디자이너**, 및 *datacontext.connection이* 새 연결으로 설정 됩니다.
 
-    선택한 개체에 추가 됩니다는 **O/R 디자이너**, 및 *datacontext.connection이* 새 연결으로 설정 됩니다.
+   > [!NOTE]
+   > 클릭 하면 **예**, 모든 엔터티 클래스에 **O/R 디자이너** 새 연결에 매핑됩니다.
 
-## <a name="to-continue-to-use-the-existing-connection-and-cancel-adding-the-selected-object"></a>기존 연결을 계속 사용하고 선택한 개체 추가를 취소하려면
+- 계속 하려면 기존 연결 및 선택한 개체를 추가 하는 취소를 사용 하려면 클릭 하십시오 **No**합니다.
 
-- **아니요**를 클릭합니다.
-
-    작업이 취소됩니다.  *DataContext.Connection*이 기존 연결로 설정되어 있습니다.
+   작업이 취소됩니다.  *DataContext.Connection*이 기존 연결로 설정되어 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 

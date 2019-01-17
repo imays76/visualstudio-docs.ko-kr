@@ -1,8 +1,6 @@
 ---
 title: 명령줄 캡처 도구 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: db75b3a7-80b2-4a74-91d2-fd6e0f73b45d
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b5de323a14bd005e10db4c17281a3b947381f26
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
-ms.translationtype: MT
+ms.openlocfilehash: 12aa697bff0a60ce6ab9a24351514c96ce107d02
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775557"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "53960656"
 ---
 # <a name="command-line-capture-tool"></a>명령줄 캡처 도구
 DXCap.exe는 그래픽 진단 캡처 및 재생을 위한 명령줄 도구로, 모든 기능 수준에서 Direct3D 10 - Direct3D 12를 지원합니다.  
@@ -95,7 +93,7 @@ DXCap.exe -info
  `-info`  
  컴퓨터 및 캡처 DLL에 대한 정보를 표시합니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  DXCap.exe는 다음의 세 가지 모드로 작동합니다.  
   
  캡처 모드(-c)  
@@ -104,7 +102,7 @@ DXCap.exe -info
  재생 모드(-p)  
  재생 기존 그래픽 로그 파일에서 그래픽 이벤트를 이전에 캡처됩니다. 기본적으로는 전체 화면 앱에서 그래픽 로그 파일을 캡처했더라도 재생은 창에서 수행됩니다. 전체 화면 앱에서 파일을 캡처할 때 그래픽 로그만 전체 화면에서 재생이 수행 및 `-rawmode` 지정 됩니다.  
   
- 유효성 검사 모드 (`-v`)  
+ 유효성 검사 모드(`-v`)  
  하드웨어와 WARP 둘 다에서 캡처된 프레임을 재생한 다음 이미지 비교 기능을 사용하여 해당 결과를 비교하는 방법으로 렌더링 동작의 유효성을 검사합니다. 이 기능을 사용하여 렌더링에 영향을 주는 드라이버 문제를 신속하게 파악할 수 있습니다.  
   
  이러한 모드 이외에 dxcap.exe는 그래픽 정보 캡처 또는 재생을 수행하지 않는 두 가지 기타 기능을 수행합니다.  
@@ -136,10 +134,10 @@ DXCap.exe -file regression_test_12.vsglog -c BasicHLSL11.exe
 DXCap.exe -c "C:\Program Files\Internet Explorer\iexplorer.exe" "www.fishgl.com"  
 ```  
   
- 위 예제의 명령은 WebGL API를 사용 하 여 3 차원 콘텐츠를 렌더링 하는 www.fishgl.com에 있는 웹 페이지를 보는 동안 데스크톱 버전의 Internet Explorer에서 그래픽 정보를 캡처합니다.  
+ 위 예제의 명령은 WebGL API를 사용하여 3D 콘텐츠를 렌더링하는 www.fishgl.com의 웹 페이지를 보는 동안 데스크톱 버전 Internet Explorer에서 그래픽 정보를 캡처합니다.  
   
 > [!NOTE]
->  앱 다음에 표시 되는 명령줄 인수에 전달 하는 것을 사용 하기 전에 DXCap.exe 용 인수를 지정 해야 합니다는 `-c` 옵션입니다.  
+>  앱 다음에 표시되는 명령줄 인수는 앱에 전달되므로 `-c` 옵션을 사용하기 전에 DXCap.exe용 인수를 지정해야 합니다.  
   
 ### <a name="capture-graphics-information-from-a-uwp-app"></a>UWP 앱에서 그래픽 정보를 캡처하십시오.  
  UWP 앱에서 그래픽 정보를 캡처할 수 있습니다.  
@@ -163,15 +161,15 @@ DXCap.exe -e map
  위 명령은 "map"과 일치 하는 UWP 앱을 열거 출력은 다음과 같습니다.  
   
  **Package "Microsoft.BingMaps":**  
- **InstallDirectory : C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
- **FullName: Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
- **UserSID          : S-1-5-21-2127521184-1604012920-1887927527-5603533**  
- **이름: Microsoft.BingMaps**  
- **게시자: CN = Microsoft Corporation, O = Microsoft Corporation, L = Redmond, S = Washington, C = US**  
- **버전: 2.1.2914.1734**  
- **시작 가능한 응용 프로그램:**  
+ **InstallDirectory: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
+ **FullName         : Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
+ **UserSID: S-1-5-21-2127521184-1604012920-1887927527-5603533**  
+ **Name             : Microsoft.BingMaps**  
+ **Publisher        : CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US**  
+ **버전          : 2.1.2914.1734**  
+ **시작 가능한 애플리케이션:**  
  **Id: AppexMaps**  
- **C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe Exe:**  
+ **Exe: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
  **IsWWA: No**  
  **(시작)를 AppSpec: DXCap.exe-c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps** 열거 된 각 앱에 대 한 출력의 마지막 줄에서 그래픽 정보 캡처를 사용할 수 있습니다 명령이 표시 됩니다.  
   
@@ -229,13 +227,13 @@ DXCap.exe -p regression_test_12.vsglog -hw
 ```  
   
 ### <a name="validate-a-graphics-log-file-against-warp"></a>WARP에 대해 그래픽 로그 파일 유효성 검사  
- 유효성 검사 모드에서는 그래픽 로그 파일을 하드웨어와 WARP 둘 다에서 재생한 다음 해당 결과를 비교합니다. 따라서 드라이버에 의해 발생하는 렌더링 오류를 파악할 수 있습니다. WARP에 대해 그래픽 하드웨어의 올바른 동작의 유효성을 검사 하려면-v를 사용 합니다.  
+ 유효성 검사 모드에서는 그래픽 로그 파일을 하드웨어와 WARP 둘 다에서 재생한 다음 해당 결과를 비교합니다. 따라서 드라이버에 의해 발생하는 렌더링 오류를 파악할 수 있습니다. WARP에 대해 그래픽 하드웨어의 올바른 동작 유효성을 검사하려면 -v를 사용합니다.  
   
 ```cmd  
 DXCap.exe -v regression_test_12.vsglog  
 ```  
   
- 비교되는 결과의 양을 줄이려면 유효성 검사에 대해 비교할 명령 하위 집합을 지정할 수 있습니다. 그러면 다른 명령은 무시됩니다. -을 사용 하 여 결과 비교할 명령을 지정 하려면 검사 합니다.  
+ 비교되는 결과의 양을 줄이려면 유효성 검사에 대해 비교할 명령 하위 집합을 지정할 수 있습니다. 그러면 다른 명령은 무시됩니다. 결과를 비교할 명령을 지정하려면 -examine을 사용합니다.  
   
 ```cmd  
 DXCap.exe -v regression_test_12.vsglog -examine present,draw,copy,clear  

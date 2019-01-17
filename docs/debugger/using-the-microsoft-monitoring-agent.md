@@ -8,14 +8,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 21ebc3e81852abb11a8c48c426d56eb837a19005
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 2196d90dbd82f7aee6cca2945621025722497cbd
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821050"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227579"
 ---
-# <a name="using-the-microsoft-monitoring-agent"></a>Microsoft Monitoring Agent 사용
+# <a name="using-the-microsoft-monitoring-agent-c-visual-basic"></a>Microsoft Monitoring Agent를 사용 하 여 (C#, Visual Basic)
+
 **Microsoft Monitoring Agent**를 사용하면 IIS에서 호스트되는 ASP.NET 웹앱과 SharePoint 2010 또는 2013 애플리케이션의 오류, 성능 문제 또는 기타 문제를 로컬로 모니터링할 수 있습니다. Monitoring Agent에서 IntelliTrace 로그(.iTrace) 파일로 진단 이벤트를 저장할 수 있습니다. 그런 다음 Visual Studio Enterprise(Professional 또는 Community Edition 아님)에서 로그를 열고 모든 Visual Studio 진단 도구를 사용하여 문제를 디버그할 수 있습니다. 또한 **Trace** 모드에서 Monitoring Agent를 실행하여 IntelliTrace 진단 데이터와 메서드 데이터를 수집할 수도 있습니다. Microsoft Monitoring Agent를 [Application Insights](/azure/application-insights/) 및 [System Center Operation Manager](/previous-versions/system-center/system-center-2012-R2/hh205987(v=sc.12))와 통합할 수 있습니다. Microsoft Monitoring Agent는 설치 시 대상 시스템 환경을 변경합니다.  
   
 > [!NOTE]
@@ -31,7 +32,8 @@ ms.locfileid: "53821050"
   
 3.  [3단계: 기록 된 이벤트 저장](#SaveEvents)  
   
-##  <a name="SetUpMonitoring"></a> 1단계: Microsoft Monitoring Agent 설치  
+##  <a name="SetUpMonitoring"></a> 1단계: Microsoft Monitoring Agent 설치
+
  애플리케이션을 변경하지 않고 로컬 모니터링을 수행하려면 웹 서버에 독립 실행형 Monitoring Agent를 설치합니다. System Center 2012를 사용하는 경우 [Microsoft Monitoring Agent 설치](/previous-versions/system-center/system-center-2012-R2/dn465156(v=sc.12))를 참조하세요.  
   
 ###  <a name="SetUpStandaloneMMA"></a> 독립 실행형 Monitoring Agent 설치  
@@ -70,7 +72,7 @@ ms.locfileid: "53821050"
   
 2.  아래의 기본 설치 위치에서 Microsoft Monitoring Agent PowerShell 모듈을 가져옵니다.  
   
-     **PS c: > 모듈 가져오기 "C:\Program Files\Microsoft Monitoring Agent\Agent\PowerShell\Microsoft.MonitoringAgent.PowerShell\Microsoft.MonitoringAgent.PowerShell.dll"**  
+     **PS C:>Import-Module "C:\Program Files\Microsoft Monitoring Agent\Agent\PowerShell\Microsoft.MonitoringAgent.PowerShell\Microsoft.MonitoringAgent.PowerShell.dll"**  
   
 3.  최신 도움말 콘텐츠를 보려면[TechNet을 방문](http://technet.microsoft.com/systemcenter/default) 하세요.  
   
@@ -116,15 +118,15 @@ ms.locfileid: "53821050"
   
      이 명령의 간단한 구문은 다음과 같습니다.  
   
-     **Start-webapplicationmonitoring** *"\<응용 프로그램 이름 >"*  *\<monitoringMode >* *"\<outputPath >"*  *\<UInt32 >* *"\<collectionPlanPathAndFileName >"*  
+     **Start-WebApplicationMonitoring** *"\<appName>"* *\<monitoringMode>* *"\<outputPath>"* *\<UInt32>* *"\<collectionPlanPathAndFileName>"*  
   
      아래에는 웹앱 이름과 간단한 **Monitor** 모드만 사용하는 예제가 나와 있습니다.  
   
-     **PS c: > Start-webapplicationmonitoring "FabrikamFabrikamFiber.Web" 모니터링 "C:IntelliTraceLogs"**  
+     **PS C:>Start-WebApplicationMonitoring "FabrikamFabrikamFiber.Web" Monitor "C:IntelliTraceLogs"**  
   
      IIS 경로 및 간단한 **Monitor** 모드를 사용하는 예제는 다음과 같습니다.  
   
-     **PS c: > Start-webapplicationmonitoring "IIS:sitesFabrikamFabrikamFiber.Web" 모니터링 "C:IntelliTraceLogs"**  
+     **PS C:>Start-WebApplicationMonitoring "IIS:sitesFabrikamFabrikamFiber.Web" Monitor "C:IntelliTraceLogs"**  
   
      모니터링을 시작하고 나면 앱이 다시 시작되는 동안 Microsoft Monitoring Agent가 일시 중지될 수 있습니다.  
   
@@ -132,11 +134,11 @@ ms.locfileid: "53821050"
   
     |||  
     |-|-|  
-    |*"\<응용 프로그램 이름 >"*|IIS에서 웹 사이트 및 웹앱 이름에 대한 경로를 지정합니다. 원하는 경우 IIS 경로도 포함할 수 있습니다.<br /><br /> *"\<IISWebsiteName >\\< IISWebAppName\>"*<br /><br /> 또는<br /><br /> **"IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*<br /><br /> IIS 관리자에서 이 경로를 찾을 수 있습니다. 예:<br /><br /> ![IIS 웹 사이트 및 웹 앱에 대 한 경로](../debugger/media/ffr_iismanager.png "FFR_IISManager")<br /><br /> [Get-WebSite](http://technet.microsoft.com/library/ee807832.aspx) 및 [Get WebApplication](http://technet.microsoft.com/library/ee790554.aspx) 명령을 사용할 수도 있습니다.|  
-    |*\<monitoringMode >*|모니터링 모드를 지정합니다.<br /><br /> <ul><li>**모니터링**: 이 모드에서는 예외 이벤트 및 성능 이벤트에 대한 최소한의 세부 정보를 기록하며 기본 수집 계획을 사용합니다.</li><li>**추적**: 함수 수준 세부 정보를 기록하거나 지정된 컬렉션 계획을 사용하여 SharePoint 2010 및 SharePoint 2013 애플리케이션을 모니터링합니다. 이 모드를 사용하는 경우 앱 실행 속도가 느려질 수 있습니다.<br /><br /> <ul><li>[Q: 애플리케이션 풀에 대한 사용 권한을 설정하려면 어떻게 하나요?](#FullPermissionsITLog)</li><li>[Q: 앱 속도를 그대로 유지하면서 데이터를 최대한 수집하려면 어떻게 하나요?](#Minimizing)</li></ul><br />     아래 예제에서는 SharePoint 사이트에서 호스트되는 SharePoint 앱에 대한 이벤트를 기록합니다.<br /><br />     **Start-webapplicationmonitoring "FabrikamSharePointSite\FabrikamSharePointApp" "C:\Program Files\Microsoft Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml를 모니터링 하는 데 사용" "C:\IntelliTraceLogs" 추적**</li><li>**사용자 지정**: 지정된 사용자 지정 컬렉션 계획을 사용하여 사용자 지정 세부 정보를 기록합니다. 모니터링이 이미 시작된 후 수집 계획을 편집하는 경우에는 모니터링을 다시 시작해야 합니다.</li></ul>|  
-    |*"\<outputPath >"*|IntelliTrace 로그를 저장할 전체 디렉터리 경로를 지정합니다. 모니터링을 시작하기 전에 이 디렉터리를 만들어야 합니다.|  
-    |*\<UInt32 >*|IntelliTrace 로그의 최대 크기를 지정합니다. IntelliTrace 로그의 기본 최대 크기는 250MB입니다.<br /><br /> 로그가 이 한도에 도달하면 Monitoring Agent는 항목을 추가로 기록할 수 있도록 가장 오래된 항목을 덮어씁니다. 이 제한을 변경하려면 **-MaximumFileSizeInMegabytes** 옵션을 사용하거나 수집 계획에서 `MaximumLogFileSize` 특성을 편집합니다.|  
-    |*"\<collectionPlanPathAndFileName >"*|수집 계획의 전체 경로 또는 상대 경로와 파일 이름을 지정합니다. 이 계획은 Monitoring Agent의 설정을 구성하는.xml 파일입니다.<br /><br /> Monitoring Agent에 포함되어 있으며 웹앱과 SharePoint 애플리케이션에 사용 가능한 계획은 다음과 같습니다.<br /><br /> -   **collection_plan.ASP.NET.default.xml**<br />     예외, 성능 이벤트, 데이터베이스 호출, 웹 서버 요청 등의 이벤트만 수집합니다.<br />-   **collection_plan.ASP.NET.trace.xml**<br />     함수 수준 호출과 기본 수집 계획의 모든 데이터를 수집합니다. 이 계획은 상세 분석에 적합하지만 앱 속도는 느려질 수 있습니다.<br /><br /> 이러한 계획의 지역화된 버전은 Monitoring Agent의 하위 폴더에 있습니다. 앱 속도 저하를 방지하기 위해 [이러한 계획을 사용자 지정하거나 계획을 직접 만들](http://go.microsoft.com/fwlink/?LinkId=227871) 수도 있습니다. 모든 사용자 지정 계획은 Monitoring Agent와 같은 안전한 위치에 저장합니다.<br /><br /> [Q: 앱 속도를 그대로 유지하면서 데이터를 최대한 수집하려면 어떻게 하나요?](#Minimizing)|  
+    |*"\<appName>"*|IIS에서 웹 사이트 및 웹앱 이름에 대한 경로를 지정합니다. 원하는 경우 IIS 경로도 포함할 수 있습니다.<br /><br /> *"\<IISWebsiteName>\\<IISWebAppName\>"*<br /><br /> 또는<br /><br /> **"IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*<br /><br /> IIS 관리자에서 이 경로를 찾을 수 있습니다. 예:<br /><br /> ![IIS 웹 사이트 및 웹 앱에 대 한 경로](../debugger/media/ffr_iismanager.png "FFR_IISManager")<br /><br /> [Get-WebSite](http://technet.microsoft.com/library/ee807832.aspx) 및 [Get WebApplication](http://technet.microsoft.com/library/ee790554.aspx) 명령을 사용할 수도 있습니다.|  
+    |*\<monitoringMode>*|모니터링 모드를 지정합니다.<br /><br /> <ul><li>**모니터링**: 이 모드에서는 예외 이벤트 및 성능 이벤트에 대한 최소한의 세부 정보를 기록하며 기본 수집 계획을 사용합니다.</li><li>**추적**: 함수 수준 세부 정보를 기록하거나 지정된 컬렉션 계획을 사용하여 SharePoint 2010 및 SharePoint 2013 애플리케이션을 모니터링합니다. 이 모드를 사용하는 경우 앱 실행 속도가 느려질 수 있습니다.<br /><br /> <ul><li>[Q: 애플리케이션 풀에 대한 사용 권한을 설정하려면 어떻게 하나요?](#FullPermissionsITLog)</li><li>[Q: 앱 속도를 그대로 유지하면서 데이터를 최대한 수집하려면 어떻게 하나요?](#Minimizing)</li></ul><br />     아래 예제에서는 SharePoint 사이트에서 호스트되는 SharePoint 앱에 대한 이벤트를 기록합니다.<br /><br />     **Start-webapplicationmonitoring "FabrikamSharePointSite\FabrikamSharePointApp" "C:\Program Files\Microsoft Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml를 모니터링 하는 데 사용" "C:\IntelliTraceLogs" 추적**</li><li>**사용자 지정**: 지정된 사용자 지정 컬렉션 계획을 사용하여 사용자 지정 세부 정보를 기록합니다. 모니터링이 이미 시작된 후 수집 계획을 편집하는 경우에는 모니터링을 다시 시작해야 합니다.</li></ul>|  
+    |*"\<outputPath>"*|IntelliTrace 로그를 저장할 전체 디렉터리 경로를 지정합니다. 모니터링을 시작하기 전에 이 디렉터리를 만들어야 합니다.|  
+    |*\<UInt32>*|IntelliTrace 로그의 최대 크기를 지정합니다. IntelliTrace 로그의 기본 최대 크기는 250MB입니다.<br /><br /> 로그가 이 한도에 도달하면 Monitoring Agent는 항목을 추가로 기록할 수 있도록 가장 오래된 항목을 덮어씁니다. 이 제한을 변경하려면 **-MaximumFileSizeInMegabytes** 옵션을 사용하거나 수집 계획에서 `MaximumLogFileSize` 특성을 편집합니다.|  
+    |*"\<collectionPlanPathAndFileName>"*|수집 계획의 전체 경로 또는 상대 경로와 파일 이름을 지정합니다. 이 계획은 Monitoring Agent의 설정을 구성하는.xml 파일입니다.<br /><br /> Monitoring Agent에 포함되어 있으며 웹앱과 SharePoint 애플리케이션에 사용 가능한 계획은 다음과 같습니다.<br /><br /> -   **collection_plan.ASP.NET.default.xml**<br />     예외, 성능 이벤트, 데이터베이스 호출, 웹 서버 요청 등의 이벤트만 수집합니다.<br />-   **collection_plan.ASP.NET.trace.xml**<br />     함수 수준 호출과 기본 수집 계획의 모든 데이터를 수집합니다. 이 계획은 상세 분석에 적합하지만 앱 속도는 느려질 수 있습니다.<br /><br /> 이러한 계획의 지역화된 버전은 Monitoring Agent의 하위 폴더에 있습니다. 앱 속도 저하를 방지하기 위해 [이러한 계획을 사용자 지정하거나 계획을 직접 만들](http://go.microsoft.com/fwlink/?LinkId=227871) 수도 있습니다. 모든 사용자 지정 계획은 Monitoring Agent와 같은 안전한 위치에 저장합니다.<br /><br /> [Q: 앱 속도를 그대로 유지하면서 데이터를 최대한 수집하려면 어떻게 하나요?](#Minimizing)|  
   
      전체 구문 및 기타 예제에 대한 자세한 내용을 보려면 **get-help Start-WebApplicationMonitoring –detailed** 명령이나 **get-help Start-WebApplicationMonitoring –examples** 명령을 실행합니다.  
   
@@ -235,19 +237,19 @@ ms.locfileid: "53821050"
   
 2. [Checkpoint-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313684) 명령을 실행하여 IntelliTrace 로그의 스냅숏을 저장합니다.  
   
-    **Checkpoint-webapplicationmonitoring** *"\<IISWebsiteName >\\< IISWebAppName\>"*  
+    **Checkpoint-WebApplicationMonitoring** *"\<IISWebsiteName>\\<IISWebAppName\>"*  
   
     \- 또는 -  
   
-    **Checkpoint-webapplicationmonitoring "IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*  
+    **Checkpoint-WebApplicationMonitoring "IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*  
   
     예:  
   
-    **PS c:\\> Checkpoint-webapplicationmonitoring "Fabrikam\FabrikamFiber.Web"**  
+    **PS C:\\>Checkpoint-WebApplicationMonitoring "Fabrikam\FabrikamFiber.Web"**  
   
     또는  
   
-    **PS c: > Checkpoint-webapplicationmonitoring "IIS:sitesFabrikamFabrikamFiber.Web"**  
+    **PS C:>Checkpoint-WebApplicationMonitoring "IIS:sitesFabrikamFabrikamFiber.Web"**  
   
     자세한 내용을 확인하려면 **get-help Checkpoint-WebApplicationMonitoring –detailed** 또는 **get-help Checkpoint-WebApplicationMonitoring –examples** 명령을 실행합니다.  
   
@@ -265,23 +267,23 @@ ms.locfileid: "53821050"
   
 2. [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) 명령을 실행하여 IntelliTrace 로그를 만든 다음 특정 웹앱 모니터링을 중지합니다.  
   
-    **Stop-webapplicationmonitoring** *"\<IISWebsiteName >\\< IISWebAppName\>"*  
+    **Stop-WebApplicationMonitoring** *"\<IISWebsiteName>\\<IISWebAppName\>"*  
   
     \- 또는 -  
   
-    **Stop-webapplicationmonitoring "IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*  
+    **Stop-WebApplicationMonitoring "IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*  
   
     또는 모든 웹앱 모니터링을 중지하려면 다음 명령을 실행합니다.  
   
-    **Stop-webapplicationmonitoring-모두**  
+    **Stop-WebApplicationMonitoring -All**  
   
     예:  
   
-    **PS c:\\> Stop-webapplicationmonitoring "Fabrikam\iFabrikamFiber.Web"**  
+    **PS C:\\>Stop-WebApplicationMonitoring "Fabrikam\iFabrikamFiber.Web"**  
   
     \- 또는 -  
   
-    **PS c:\\> Stop-webapplicationmonitoring "IIS:\sites\Fabrikam\FabrikamFiber.Web"**  
+    **PS C:\\>Stop-WebApplicationMonitoring "IIS:\sites\Fabrikam\FabrikamFiber.Web"**  
   
     자세한 내용을 확인하려면 **get-help Stop-WebApplicationMonitoring –detailed** 또는 **get-help Stop-WebApplicationMonitoring –examples** 명령을 실행합니다.  
   
