@@ -19,11 +19,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: bf48362686a05a958a067cffa1015ffe2d58cecc
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54096228"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348518"
 ---
 # <a name="iactivescripterrorgetexceptioninfo"></a>IActiveScriptError::GetExceptionInfo
 스크립팅 엔진을 스크립트를 실행 하는 동안 발생 한 오류에 대 한 정보를 검색 합니다.  

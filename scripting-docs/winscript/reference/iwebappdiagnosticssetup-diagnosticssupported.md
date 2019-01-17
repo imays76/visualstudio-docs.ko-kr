@@ -14,18 +14,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5706d868f0096d486629c18c3d700349af92cc92
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: df9296ac251d93105229fc0af365f6797a413f2b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733983"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349688"
 ---
 # <a name="iwebappdiagnosticssetupdiagnosticssupported"></a>IWebAppDiagnosticsSetup::DiagnosticsSupported
-진단이 응용이 프로그램에서 지원 되는지 여부를 결정 합니다. 경우 [SetSite](http://go.microsoft.com/fwlink/?LinkId=232439) 가 NULL이 아닌 값으로이 인터페이스를 구현 하는 개체에서 호출 된 [DiagnosticsSupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md) 반환 `true`합니다. 반환 된 그렇지 않은 경우 `false` 를 호출 하 고 [IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md) 실패 합니다.  
+진단이 응용이 프로그램에서 지원 되는지 여부를 결정 합니다. 하는 경우 [SetSite](http://go.microsoft.com/fwlink/?LinkId=232439) 가 NULL이 아닌 값으로이 인터페이스를 구현 하는 개체에서 호출 되었습니다 [DiagnosticsSupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md) 반환 `true`합니다. 반환 된 그렇지 않은 경우 `false` 호출 [IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md) 실패 합니다.  
   
 > [!IMPORTANT]
->  [IWebAppDiagnosticsSetup 인터페이스](../../winscript/reference/iwebappdiagnosticssetup-interface.md) 구현 PDM v11.0 이상에 됩니다. Activdbg100에서 찾을 수 있습니다.  
+>  [IWebAppDiagnosticsSetup 인터페이스](../../winscript/reference/iwebappdiagnosticssetup-interface.md) 는 PDM v11.0에 의해 구현 된 이상. Activdbg100에서 찾을 수 있습니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -35,4 +35,4 @@ HRESULT DiagnosticsSupported(        [out, retval] VARIANT_BOOL* pRetVal        
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- 경우 [SetSite](http://go.microsoft.com/fwlink/?LinkId=232439) 가 NULL이 아닌 값으로이 인터페이스를 구현 하는 개체에서 호출 된 [DiagnosticsSupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md) 반환 `true`합니다. 반환 된 그렇지 않은 경우 `false`에 대 한 [IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md) 실패 합니다.
+ 하는 경우 [SetSite](http://go.microsoft.com/fwlink/?LinkId=232439) 가 NULL이 아닌 값으로이 인터페이스를 구현 하는 개체에서 호출 되었습니다 [DiagnosticsSupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md) 반환 `true`합니다. 반환 하지 `false`를 호출 하 고 [IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md) 실패 합니다.

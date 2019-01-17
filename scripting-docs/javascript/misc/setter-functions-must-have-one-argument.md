@@ -21,13 +21,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 6e2a84ce078abfc053ed190f53c9ccbed3277928
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632713"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346646"
 ---
 # <a name="setter-functions-must-have-one-argument"></a>setter 함수는 하나의 인수를 사용해야 합니다.
-1051: setter 함수에는 하나의 인수를 사용 해야 합니다.  
+1051: setter 함수는 하나의 인수를 사용해야 합니다.  
   
  Setter 함수에 대 한 인수를 하나만 있어야 합니다.

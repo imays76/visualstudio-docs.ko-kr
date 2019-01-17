@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 82ba1488692f8e8b59063b8f9a52b0682d27e7f8
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54096449"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349454"
 ---
 # <a name="return-statement-outside-of-function"></a>함수 외부에 'return' 문이 있습니다.
 사용 하는 `return` 코드의 전역 범위에 문의 합니다. `return` 함수의 본문 안에 문을 사용할만 해야 합니다.  

@@ -21,15 +21,15 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 1e7903bec2f21465cbe31ecc05f00182680ed77c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632913"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346815"
 ---
 # <a name="invalid-number"></a>숫자가 잘못되었습니다.
 잘못 된 수 (ErrbadNumber 1013)  
   
  JavaScript에서 유효 하지 않은 숫자를 사용 하려고 했습니다.  
   
- 유효한 숫자에 대 한 정보를 참조 하십시오. [Number 개체](../../javascript/reference/number-object-javascript.md)합니다.
+ 유효한 숫자에 대 한 정보를 참조 하세요 [Number 개체](../../javascript/reference/number-object-javascript.md)합니다.

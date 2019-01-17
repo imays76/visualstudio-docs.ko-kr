@@ -14,15 +14,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d29bfa1b3f23ce206e2fe63fd669548a074e3dd6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bf84b0b839e1a4a9e29b0de5382776946ecf5b1e
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726553"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344072"
 ---
 # <a name="idebugdocumenttextauthor-interface"></a>IDebugDocumentTextAuthor 인터페이스
-편집을 지 원하는 텍스트 문서에서 제공합니다.  
+텍스트 문서에서 편집 하는 지원을 제공합니다.  
   
  상속 된 메서드 외에도 `IDebugDocumentText`, `IDebugDocumentTextAuthor` 인터페이스는 다음 메서드를 노출 합니다.  
   

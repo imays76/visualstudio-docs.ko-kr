@@ -16,12 +16,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6bd41fe91fdf030b957d800248343198f2617018
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 913c1b243bcc9c7a6653025fbfcb4f941df2950e
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24642073"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345437"
 ---
 # <a name="active-script-debugger-constants-enumerations-and-structures"></a>액티브 스크립트 디버거 상수, 열거형 및 구조체
 다음 상수, 열거형 및 구조체는 활성 디버깅 인터페이스에서 사용됩니다.  

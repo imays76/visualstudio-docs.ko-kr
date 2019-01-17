@@ -14,15 +14,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 207dc0166cb9d0a59e99c03c511ec9bd75ea4bf2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 75b70ef255b5f1e5eed4d36373274bc05cf92e67
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725753"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344293"
 ---
 # <a name="idebugdocument-interface"></a>IDebugDocument 인터페이스
-모든 디버그 문서에 대 한 기본 인터페이스입니다.  
+모든 디버그 문서에 대한 기본 인터페이스입니다.  
   
 ## <a name="remarks"></a>설명  
- `IDebugDocument` 인터페이스에서 상속 하는 메서드만 노출 [IDebugDocumentInfo 인터페이스](../../winscript/reference/idebugdocumentinfo-interface.md)합니다. 추가 메서드를 노출 하지 않습니다.
+ 합니다 `IDebugDocument` 인터페이스에서 상속 된 메서드만 노출 [IDebugDocumentInfo 인터페이스](../../winscript/reference/idebugdocumentinfo-interface.md)합니다. 메서드를 노출 하지 않습니다.

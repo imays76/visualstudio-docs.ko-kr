@@ -19,11 +19,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: bac3b5755328e643c26c8f3746af6648d8ac06aa
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54094637"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345801"
 ---
 # <a name="iactivescriptgetcurrentscriptthreadid"></a>IActiveScript::GetCurrentScriptThreadID
 현재 실행 중인 스레드에 대 한 스크립팅 엔진 정의 식별자를 검색합니다. 스크립트 스레드 실행 제어 메서드에 대 한 후속 호출에서 같은 식별자를 사용할 있습니다 합니다 [iactivescript:: Interruptscriptthread](../../winscript/reference/iactivescript-interruptscriptthread.md) 메서드.  

@@ -15,17 +15,17 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b45800a1c8fa570299dc8950b3e8979fe949faaf
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 64e2aa684862d6b05b1a4051c31d23656a741c37
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641183"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344605"
 ---
 # <a name="debug-property-interfaces"></a>디버그 속성 인터페이스
-DbgProp.h 헤더 파일에서는이 섹션에 나열 된 인터페이스를 제공 합니다.  
+DbgProp.h 헤더 파일에는이 섹션에 나열 된 인터페이스를 제공 합니다.  
   
-## <a name="in-this-section"></a>단원 내용  
+## <a name="in-this-section"></a>섹션 내용  
  다음 인터페이스, 구조체 및 열거형 디버깅 중인 응용 프로그램의 계층적 속성을 설명 합니다.  
   
 -   [IDebugProperty 인터페이스](../../winscript/reference/idebugproperty-interface.md)  

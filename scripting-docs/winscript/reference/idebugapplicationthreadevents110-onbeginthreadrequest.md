@@ -14,18 +14,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 239a154a6692db5c93b13be27089d5ecf6663d66
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 90a9550b43dafb6bd38a68e379d486888d7bbf8d
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725583"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345177"
 ---
 # <a name="idebugapplicationthreadevents110-onbeginthreadrequest"></a>IDebugApplicationThreadEvents110 ::OnBeginThreadRequest
-호출에서 PDM 스레드를 사용 하 여 스레드를 시작 전환 합니다.  
+호출 PDM의 스레드를 사용 하 여 스레드를 시작 했습니다 전환 합니다.  
   
 > [!IMPORTANT]
->  [IDebugApplicationThreadEvents110 인터페이스](../../winscript/reference/idebugapplicationthreadevents110-interface.md) 구현 PDM v11.0 이상에 됩니다. activdbg100.h에서 찾을 수 있습니다.  
+>  [IDebugApplicationThreadEvents110 인터페이스](../../winscript/reference/idebugapplicationthreadevents110-interface.md) 는 PDM v11.0에 의해 구현 된 이상. activdbg100.h에서 찾을 수 있습니다.  
   
 ## <a name="syntax"></a>구문  
   

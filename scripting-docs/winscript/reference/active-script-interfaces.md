@@ -15,17 +15,17 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fc3bc5ed2b78f2577fdd5a9a715a210240e91e96
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7607616b2cba72010cc25bcfccc5a373de606302
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641473"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344332"
 ---
 # <a name="active-script-interfaces"></a>액티브 스크립트 인터페이스
 ActivScp.h 헤더 파일 인터페이스, 열거형 및이 섹션에 나열 된 오류 코드를 제공 합니다.  
   
-## <a name="in-this-section"></a>단원 내용  
+## <a name="in-this-section"></a>섹션 내용  
   
 -   [액티브 스크립트 상수, 열거형 및 오류 코드](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)  
   

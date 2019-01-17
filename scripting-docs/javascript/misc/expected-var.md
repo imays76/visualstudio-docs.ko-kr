@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0562fba98055cdb38757a4b638caa34b3bc21456
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803470"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349311"
 ---
 # <a name="expected-var"></a>'var'이 필요합니다.
 ' Var' 필요 (ERRnoVar 1034))  

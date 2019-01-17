@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0ea67835a0c60d45d9e79f552183e0a4d6b677ac
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855133"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345242"
 ---
 # <a name="expected-identifier-string-or-number"></a>식별자, 문자열 또는 숫자가 필요합니다.
 개체 리터럴을 선언에 잘못 된 리터럴 구문을 사용 했습니다. 리터럴 개체의 속성은 식별자, 문자열 또는 숫자 여야 합니다. 개체 리터럴 ("개체 이니셜라이저"이 라고도 함) 대괄호로 속성: 값 쌍의 쉼표로 구분 된 목록으로 구성 됩니다. 예를 들어:  

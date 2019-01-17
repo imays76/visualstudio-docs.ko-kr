@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3f0f70ecb8ead264d0d4b074f8fc1d9e3a6091eb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ba760dc15cc0a3d3f2f0d80f3a16c5621582bc11
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727313"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347478"
 ---
 # <a name="idebughelper-interface"></a>IDebugHelper 인터페이스
 개체 브라우저 및 간단한 연결 지점에 대 한 팩터리 역할을 합니다. 프로세스 디버그 관리자 (PDM) 스크립트 엔진에서 사용 되는이 인터페이스를 구현 합니다.  
@@ -30,6 +30,6 @@ ms.locfileid: "24727313"
   
 |메서드|설명|  
 |------------|-----------------|  
-|[IDebugHelper::CreatePropertyBrowser](../../winscript/reference/idebughelper-createpropertybrowser.md)|속성 브라우저를 래핑하는 VARIANT를 반환 합니다.|  
-|[IDebugHelper::CreatePropertyBrowserEx](../../winscript/reference/idebughelper-createpropertybrowserex.md)|속성 브라우저를 문자열로 VARIANT 값 이나 VARTYPE 형식이의 사용자 지정 변환 알리고 래핑하는 VARIANT를 반환 합니다.|  
-|[IDebugHelper::CreateSimpleConnectionPoint](../../winscript/reference/idebughelper-createsimpleconnectionpoint.md)|래핑하는 이벤트 인터페이스를 반환 된 주어진 `IDispatch` 개체입니다.|
+|[IDebugHelper::CreatePropertyBrowser](../../winscript/reference/idebughelper-createpropertybrowser.md)|VARIANT를 래핑하는 속성 브라우저를 반환 합니다.|  
+|[IDebugHelper::CreatePropertyBrowserEx](../../winscript/reference/idebughelper-createpropertybrowserex.md)|VARIANT를 래핑하고 VARIANT 값 또는 VARTYPE 형식 문자열을 사용자 지정 변환에 대 한 허용 하는 속성 브라우저를 반환 합니다.|  
+|[IDebugHelper::CreateSimpleConnectionPoint](../../winscript/reference/idebughelper-createsimpleconnectionpoint.md)|래핑하는 이벤트 인터페이스를 반환 합니다.는 주어진 `IDispatch` 개체입니다.|

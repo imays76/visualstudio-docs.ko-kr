@@ -12,22 +12,22 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f0d598302ae78ca0b2a1e7c1f94c949800378a2e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7caa09f384ce460a3e73b21b10d6d8022182dde7
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724673"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349493"
 ---
 # <a name="iactivescriptprofilercontrol-interface"></a>IActiveScriptProfilerControl 인터페이스
-프로 파일링 지 스크립팅 엔진에 의해 구현 됩니다. 일반적으로 구현 하는 개체는 `IActiveScriptProfilerControl` 도 구현 하는 [IActiveScript](../../winscript/reference/iactivescript.md) 인터페이스입니다. 이 경우에 대 한 핸들을 가져올 수 있습니다는 `IActiveScriptProfilerControl` 호출 하 여 인터페이스는 `IUnknown::QueryInterface` 개체에서 메서드. 인터페이스를 중지 하 고 스크립팅 엔진에서 프로 파일링 시작에 필요한 메서드를 제공 합니다.  
+프로 파일링을 지 원하는 스크립팅 엔진에 의해 구현 됩니다. 일반적으로 구현 하는 개체를 `IActiveScriptProfilerControl` 도 구현 합니다 [IActiveScript](../../winscript/reference/iactivescript.md) 인터페이스입니다. 이 경우에 대 한 핸들을 가져올 수 있습니다 합니다 `IActiveScriptProfilerControl` 를 호출 하 여 인터페이스를 `IUnknown::QueryInterface` 개체의 메서드를 합니다. 인터페이스를 중지 하 고 스크립팅 엔진에서 프로 파일링을 시작 하 고 필요한 메서드를 제공 합니다.  
   
 ## <a name="methods"></a>메서드  
   
 |메서드|설명|  
 |------------|-----------------|  
 |[IActiveScriptProfilerControl::StartProfiling](../../winscript/reference/iactivescriptprofilercontrol-startprofiling.md)|스크립팅 엔진에서 프로 파일링을 시작 합니다.|  
-|[IActiveScriptProfilerControl::SetProfilerEventMask](../../winscript/reference/iactivescriptprofilercontrol-setprofilereventmask.md)|스크립팅 엔진에서 프로파일러 이벤트 마스크를 설정합니다.|  
+|[IActiveScriptProfilerControl::SetProfilerEventMask](../../winscript/reference/iactivescriptprofilercontrol-setprofilereventmask.md)|스크립팅 엔진에서 프로파일러 이벤트 마스크를 설정 합니다.|  
 |[IActiveScriptProfilerControl::StopProfiling](../../winscript/reference/iactivescriptprofilercontrol-stopprofiling.md)|스크립팅 엔진에서 프로 파일링을 중지 합니다.|  
   
 ## <a name="see-also"></a>참고 항목  

@@ -11,11 +11,11 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 ms.openlocfilehash: 5f873cdf2ebd394e48c1513135f1acdcd700c283
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54089975"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345645"
 ---
 # <a name="profilerpropertytypesubstringinfo-structure"></a>PROFILER_PROPERTY_TYPE_SUBSTRING_INFO 구조체
 관계에 사용 되는 부분 문자열 유형에 대 한 정보를 나타냅니다. 레지스트리에 [PROFILER_HEAP_OBJECT_RELATIONSHIP 구조체](../../winscript/reference/profiler-heap-object-relationship-structure.md)합니다.  

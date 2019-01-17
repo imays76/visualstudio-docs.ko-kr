@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 53f32da997b775e01959df5abc7e72fb55c1b194
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54086699"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345047"
 ---
 # <a name="cant-have-break-outside-of-loop"></a>루프 외부에서 'break'를 사용할 수 없습니다.
 사용 하려고 합니다 **중단** 루프 외부에서 키워드입니다. 합니다 **나누기** 키워드는 루프를 종료 하는 데 사용 됩니다 또는 `switch` 문입니다. 루프의 본문에 포함 되어 있어야 합니다 또는 `switch` 문입니다. 그러나를 **레이블** break 키워드 다음에 올 수 있습니다.  

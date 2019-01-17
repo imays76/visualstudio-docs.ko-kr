@@ -18,12 +18,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c46815ff1fadd359e3200223dfe9041b6089ad3b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 53e8c4c7a517415497b21f80d9bf469877d7888f
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728173"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346035"
 ---
 # <a name="ienumdebugextendedpropertyinfo-interface"></a>IEnumDebugExtendedPropertyInfo 인터페이스
 열거 `ExtendedDebugPropertyInfo` 구조입니다.  
@@ -33,8 +33,8 @@ ms.locfileid: "24728173"
   
 |메서드|설명|  
 |------------|-----------------|  
-|[IEnumDebugExtendedPropertyInfo::Clone](../../winscript/reference/ienumdebugextendedpropertyinfo-clone.md)|현재 열거자와 동일한 열거 상태가 포함 하는 열거자를 만듭니다.|  
-|[IEnumDebugExtendedPropertyInfo::GetCount](../../winscript/reference/ienumdebugextendedpropertyinfo-getcount.md)|개수를 가져옵니다 `ExtendedDebugPropertyInfo` 구조에는 열거자입니다.|  
+|[IEnumDebugExtendedPropertyInfo::Clone](../../winscript/reference/ienumdebugextendedpropertyinfo-clone.md)|현재 열거자와 열거 상태가 같은 포함 하는 열거자를 만듭니다.|  
+|[IEnumDebugExtendedPropertyInfo::GetCount](../../winscript/reference/ienumdebugextendedpropertyinfo-getcount.md)|개수를 가져옵니다 `ExtendedDebugPropertyInfo` 열거자 구조입니다.|  
 |[IEnumDebugExtendedPropertyInfo::Next](../../winscript/reference/ienumdebugextendedpropertyinfo-next.md)|지정된 된 수의 검색 `ExtendedDebugPropertyInfo` 열거형 시퀀스에는 구조입니다.|  
 |[IEnumDebugExtendedPropertyInfo::Skip](../../winscript/reference/ienumdebugextendedpropertyinfo-skip.md)|지정 된 개수의 건너뜁니다 `ExtendedDebugPropertyInfo` 열거형 시퀀스에는 구조입니다.|  
 |[IEnumDebugExtendedPropertyInfo::Reset](../../winscript/reference/ienumdebugextendedpropertyinfo-reset.md)|열거형 시퀀스를 시작 부분으로 다시 설정합니다.|  

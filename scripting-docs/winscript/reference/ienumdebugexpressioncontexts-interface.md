@@ -14,15 +14,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f48a9bcf42b0aadd3716924e120bff403d87769d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 691fe68e78567026bd6ad96883b59aa276481191
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728363"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347595"
 ---
 # <a name="ienumdebugexpressioncontexts-interface"></a>IEnumDebugExpressionContexts 인터페이스
-컬렉션을 열거 `IDebugExpressionContexts` 개체입니다.  
+`IDebugExpressionContexts` 개체의 컬렉션을 열거합니다.  
   
  상속 된 메서드 외에도 `IUnknown`, `IEnumDebugExpressionContexts` 인터페이스는 다음 메서드를 노출 합니다.  
   
@@ -30,7 +30,7 @@ ms.locfileid: "24728363"
   
 |메서드|설명|  
 |------------|-----------------|  
-|[IEnumDebugExpressionContexts::Next](../../winscript/reference/ienumdebugexpressioncontexts-next.md)|열거형 시퀀스에 있는 세그먼트의 지정된 된 수를 검색 합니다.|  
-|[IEnumDebugExpressionContexts::Skip](../../winscript/reference/ienumdebugexpressioncontexts-skip.md)|열거형 시퀀스에 있는 세그먼트의 지정 된 수를 건너뜁니다.|  
-|[IEnumDebugExpressionContexts::Reset](../../winscript/reference/ienumdebugexpressioncontexts-reset.md)|열거형 시퀀스 시작 부분으로 다시 설정합니다.|  
+|[IEnumDebugExpressionContexts::Next](../../winscript/reference/ienumdebugexpressioncontexts-next.md)|열거형 시퀀스에서 세그먼트의 지정된 된 수를 검색 합니다.|  
+|[IEnumDebugExpressionContexts::Skip](../../winscript/reference/ienumdebugexpressioncontexts-skip.md)|열거형 시퀀스에서 세그먼트의 지정 된 수를 건너뜁니다.|  
+|[IEnumDebugExpressionContexts::Reset](../../winscript/reference/ienumdebugexpressioncontexts-reset.md)|열거형 시퀀스를 처음으로 다시 설정합니다.|  
 |[IEnumDebugExpressionContexts::Clone](../../winscript/reference/ienumdebugexpressioncontexts-clone.md)|현재 열거자와 동일한 상태를 포함 하는 열거자를 만듭니다.|

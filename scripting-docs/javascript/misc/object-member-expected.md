@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 84ab153985935bcdf85aed205516610c04dea83f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633233"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344163"
 ---
 # <a name="object-member-expected"></a>개체 멤버가 필요합니다.
-개체의 데이터 멤버에 대 한 작업을 수행 하려고 시도 하지만 멤버가 존재 하지 않습니다.  
+개체의 데이터 멤버에 대 한 작업을 수행 하려고 하지만 멤버가 존재 하지 않습니다.  
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   

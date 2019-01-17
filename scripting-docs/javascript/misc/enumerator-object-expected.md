@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 002c3a748af8f7fa5c21109adcb279f893b38965
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54093004"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347244"
 ---
 # <a name="enumerator-object-expected"></a>Enumerator 개체가 필요합니다.
 호출 하려고 합니다 **Enumerator.prototype.atEnd, Enumerator.prototype.item Enumerator.prototype.moveFirst를** 또는 **Enumerator.prototype.moveNext** 형식의 다른 개체에서 메서드 보다 `Enumerator`합니다. 이 형식의 호출 개체 유형 이어야 `Enumerator`합니다. 이 규칙을 중단 하는 코드의 예는 다음과 같습니다.  

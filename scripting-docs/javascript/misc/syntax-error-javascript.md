@@ -21,18 +21,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a0df8de8df8e390cd1e361159a378da190518f43
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632963"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345372"
 ---
 # <a name="syntax-error-javascript"></a>구문 오류(JavaScript)
-하나 이상의의 문법 규칙을 위반 하는 문을 만들었습니다 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]합니다.  
+하나 이상의의 문법 규칙을 위반 하는 문을 만든 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]합니다.  
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   
--   표시 된 줄 번호에서 프로그램의 구문을 확인 합니다.  
+-   표시 된 줄 번호에서 프로그램 구문의 다시 확인 합니다.  
   
 -   괄호나 중괄호를 찾습니다.  
   

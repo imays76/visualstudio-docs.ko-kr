@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 763678b08c22fe34ec6ffebbe670fb8b50af6576
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843459"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344397"
 ---
 # <a name="idebugdocumenttext-interface"></a>IDebugDocumentText 인터페이스
 디버그 문서의 텍스트 전용 버전에 대한 액세스를 제공합니다. 이 인터페이스는 다음 규칙을 사용 합니다.  

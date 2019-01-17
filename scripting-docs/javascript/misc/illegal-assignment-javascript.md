@@ -21,18 +21,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ed35b2751ff9dfbde62845caaf874cccfbc05805
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632893"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54350156"
 ---
 # <a name="illegal-assignment-javascript"></a>잘못된 할당입니다.(JavaScript)
-읽기 전용 식별자에는 값을 할당 하려고 했습니다. 읽기 전용 식별자에는 값을 할당할 수 없습니다. 예를 들어 호스트 개체와 외부 COM 개체를 정의 합니다.  
+읽기 전용 식별자로 값을 할당 하려고 했습니다. 읽기 전용 식별자로 값을 할당할 수 없습니다. 예를 들어 호스트 개체와 외부 COM 개체를 정의 합니다.  
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   
--   읽기 전용 식별자에는 값을 할당 하지 마십시오.  
+-   읽기 전용 식별자로 값을 할당 하지 마세요.  
   
 ## <a name="see-also"></a>참고 항목  
  [할당 연산자(=)](../../javascript/reference/assignment-operator-decrement-equal-javascript.md)

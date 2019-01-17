@@ -14,15 +14,15 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 152f12154acc59b88fc8b1c9a176ac87a5da847d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 067a62ec8b87c448577cfd6e5789ae5e073b5fb8
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645763"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345905"
 ---
 # <a name="iactivescripterrordebug110-interface"></a>IActiveScriptErrorDebug110 인터페이스
-에 새로운 기능이 추가 된 [IActiveScriptDebug 인터페이스](../../winscript/reference/iactivescriptdebug-interface.md)합니다. 이 인터페이스는 BREAKREASON_ERROR 이벤트가 발생한 이유를 확인하기 위해 JavaScript 엔진에 의해 구현됩니다.  
+기능을 추가 합니다 [IActiveScriptDebug 인터페이스](../../winscript/reference/iactivescriptdebug-interface.md)합니다. 이 인터페이스는 BREAKREASON_ERROR 이벤트가 발생한 이유를 확인하기 위해 JavaScript 엔진에 의해 구현됩니다.  
   
 > [!IMPORTANT]
 >  이 인터페이스는 PDM v11.0 이상에 의해 구현됩니다. activdbg100.h에서 찾을 수 있습니다.  

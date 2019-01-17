@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 7179a22d2713c9ddc894618bd6921f3f873f2ad8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951056"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345424"
 ---
 # <a name="throw-must-be-followed-by-an-expression-on-the-same-source-line"></a>같은 소스 줄에서 throw 뒤에는 식이 와야 합니다.
 사용 된 `throw` 키워드를 따르지이 식을 사용 하 여 같은 소스 줄에 있지만. A `throw` 문의 두 부분으로 이루어져:는 `throw` throw 식 뒤에 키워드를 합니다. 예를 들어:  

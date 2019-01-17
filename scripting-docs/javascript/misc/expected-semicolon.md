@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: eabe34fdcb4551fc8bc794b84875a10a32e5ec33
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804340"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347205"
 ---
 # <a name="expected-"></a>';'이 필요합니다.
 둘 이상의 문이 줄에 배치 하려고 해도 세미콜론으로 구분 되지 않았습니다. 세미콜론은 문 종료 하는 데 사용 됩니다. 사용할 수 있지만 여러 문을 한 줄에 세미콜론을 사용 하 여 다음에서 각각 구분 해야 합니다.  

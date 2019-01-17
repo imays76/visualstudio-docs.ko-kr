@@ -19,11 +19,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a451f4883373978772643e11fe22feb9122be30e
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54097216"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349753"
 ---
 # <a name="iactivescriptsitegetdocversionstring"></a>IActiveScriptSite::GetDocVersionString
 현재 문서 버전을 고유 하 게 식별 하는 호스트 정의 문자열을 검색 합니다. 관련된 문서 (예: 메모장을 사용 하 여 편집 중인 HTML 페이지의 경우) Windows 스크립트 범위 밖에 서 변경 된 경우 스크립팅 엔진 지속 된 상태로, 다음 스크립트를 로드할 때 다시 컴파일을 적용 함께 저장 수 있습니다.  

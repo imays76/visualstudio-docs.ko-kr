@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: b5f256639fbef222042ca3137eb9d19c2a97d702
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280379"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344696"
 ---
 # <a name="syntax-error-in-regular-expression-javascript"></a>정규식에 구문 오류가 있습니다.(JavaScript)
 하나 이상의의 문법 규칙을 위반 하는 검색 문자열의 구조는 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 정규식입니다.  
