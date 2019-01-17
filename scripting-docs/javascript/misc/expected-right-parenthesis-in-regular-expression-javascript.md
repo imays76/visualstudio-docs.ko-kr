@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 6c344105010e406ef4936fdcca58baffbd610088
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802344"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347426"
 ---
 # <a name="expected--in-regular-expression-javascript"></a>정규식에 ')'가 필요합니다.(JavaScript)
 정규식 캡처, 어설션 또는 그룹을 만들려고 시도 했음 해도 닫는 괄호를 포함 하지 않았습니다. 괄호는 정규식의 몇 가지 목적이 있습니다. 주로 사용 되는 하위 식에서 어설션을 지정 하거나 항목으로 하나의 단위로 처리할 수 있도록 패턴을 그룹화 하려면 캡처 *, +,? 등입니다.  

@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a9138a7152dae44ff5f293e1a06de146d66bb125
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803697"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344150"
 ---
 # <a name="expected-end"></a>예상 '\@끝 '
 조건부로 컴파일된 코드 블록을 만들려고 했지만 포함 되지 않았습니다 합니다 <strong>@end</strong> 후에 문의 합니다. [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 문 내에서 묶어 조건부로 컴파일할 수는 <strong>@if/ @end</strong> 블록입니다.  

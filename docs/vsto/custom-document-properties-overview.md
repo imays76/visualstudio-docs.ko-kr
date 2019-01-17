@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bd76957844008975f67c6c1cb504aa0388b9e91b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8fe5c77827c23f5547f8e5bd411a33b03bfd37f8
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936895"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349506"
 ---
 # <a name="custom-document-properties-overview"></a>사용자 지정 문서 속성 개요
 
@@ -38,7 +38,7 @@ ms.locfileid: "53936895"
 
 이 속성을 사용자 지정에 대 한 배포 매니페스트에 대 한 세부 정보를 제공 하는 문자열을 포함 합니다. 매니페스트에 대 한 자세한 내용은 참조 하세요. [Office 솔루션에서 응용 프로그램 및 배포 매니페스트](../vsto/application-and-deployment-manifests-in-office-solutions.md)합니다.
 
- The_AssemblyLocation 속성 값에는 솔루션은 배포 하는 방법에 따라 서로 다른 형식으로 포함할 수 있습니다.
+ \_AssemblyLocation 속성 값에는 솔루션은 배포 하는 방법에 따라 서로 다른 형식으로 가질 수 있습니다.
 
 - _AssemblyLocation 속성 형식은 솔루션으로 웹 사이트, UNC 경로 또는 USB 또는 CD 드라이브를 설치 하도록 게시 된 경우 *DeploymentManifestPath*|*solutionid 특성이 있으며,* 합니다. 다음 문자열 예제입니다.
 

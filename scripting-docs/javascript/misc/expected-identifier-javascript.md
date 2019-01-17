@@ -1,5 +1,5 @@
 ---
-title: 식별자 (JavaScript) 필요 합니다. | Microsoft Docs
+title: 예상 식별자 (JavaScript) | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,26 +21,26 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ff69e433aaa68f88102219cdaf3a77746779370f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632873"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349233"
 ---
 # <a name="expected-identifier-javascript"></a>식별자가 필요합니다.(JavaScript)
-사용한 식별자 이외의 컨텍스트에서 필요한 위치 합니다. 식별자가 될 수 있습니다.  
+사용한 식별자 이외의 컨텍스트에서 하나가 필요 합니다. 식별자 수 있습니다.  
   
 -   변수를  
   
 -   속성  
   
--   배열,  
+-   배열  
   
 -   또는 함수 이름입니다.  
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   
--   식을 변경 하는 식별자는 등호의 왼쪽에 나타납니다.  
+-   식별자는 등호의 왼쪽에 표시 되도록 식을 변경 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [배열 사용](../../javascript/advanced/using-arrays-javascript.md)

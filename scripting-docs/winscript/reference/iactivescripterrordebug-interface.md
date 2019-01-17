@@ -14,15 +14,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1ff2dda33c1e406f87a157173c41015acf96e62a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4d773724d23c61aa72b8cd48917f2cd0bef4a7cb
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645753"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345203"
 ---
 # <a name="iactivescripterrordebug-interface"></a>IActiveScriptErrorDebug 인터페이스
-컴파일 타임 오류 및 런타임 예외에 대 한 문서 컨텍스트 정보를 제공 합니다. `IActiveScriptError::QueryInterface` 메서드 지원은 `IActiveScriptErrorDebug` 인터페이스입니다.  
+컴파일 타임 오류 및 런타임 예외에 대 한 문서 컨텍스트 정보를 제공 합니다. `IActiveScriptError::QueryInterface` 메서드를 지원 합니다 `IActiveScriptErrorDebug` 인터페이스입니다.  
   
  상속 된 메서드 외에도 `IActiveScriptError`, `IActiveScriptErrorDebug` 인터페이스는 다음 메서드를 노출 합니다.  
   
@@ -31,4 +31,4 @@ ms.locfileid: "24645753"
 |메서드|설명|  
 |------------|-----------------|  
 |[IActiveScriptErrorDebug::GetDocumentContext](../../winscript/reference/iactivescripterrordebug-getdocumentcontext.md)|이 오류에 대 한 문서 컨텍스트를 제공합니다.|  
-|[IActiveScriptErrorDebug::GetStackFrame](../../winscript/reference/iactivescripterrordebug-getstackframe.md)|런타임 오류에 대 한 적용 되는 스택 프레임을 제공 합니다.|
+|[IActiveScriptErrorDebug::GetStackFrame](../../winscript/reference/iactivescripterrordebug-getstackframe.md)|런타임 오류에 적용 되는 스택 프레임을 제공 합니다.|

@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: bebe351608b3136ac00a059bffab3535141e7fca
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54097138"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344722"
 ---
 # <a name="iactivescriptprofilercontrol3-interface"></a>IActiveScriptProfilerControl3 인터페이스
 스크립트 엔진과 연결 된 GC 힙 개체에 대해 열거 하는 메서드를 제공 합니다.  

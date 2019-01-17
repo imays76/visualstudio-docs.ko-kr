@@ -14,15 +14,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d384cea22b79b2a7ca9af3424d053fb3062d79a3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f280e2b869a3046ecb2d3fac37facdcc1bfeb7fb
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729543"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349883"
 ---
 # <a name="iremotedebugapplication110-interface"></a>IRemoteDebugApplication110 인터페이스
-스크립트 디버거에서 호출 되 고 프로세스 호출자에 게 새 기능을 제공 하는 데 사용 합니다.  
+스크립트 디버거에서 호출할 수 있으며 in-process 호출자는 새 기능을 제공 하는 데 사용 합니다.  
   
 > [!IMPORTANT]
 >  이 인터페이스는 PDM v11.0 이상에 의해 구현됩니다. activdbg100.h에서 찾을 수 있습니다.  
@@ -32,6 +32,6 @@ ms.locfileid: "24729543"
   
 |메서드|설명|  
 |------------|-----------------|  
-|[IRemoteDebugApplication110::SetDebuggerOptions](../../winscript/reference/iremotedebugapplication110-setdebuggeroptions.md)|디버거 옵션을 업데이트 하기 위해 호출 합니다. 옵션 기본값인 0 (SDO_NONE)으로 설정 합니다.|  
-|[IRemoteDebugApplication110::GetCurrentDebuggerOptions](../../winscript/reference/iremotedebugapplication110-getcurrentdebuggeroptions.md)|사용할 수 있는 옵션의 현재 집합을 반환 합니다.|  
+|[IRemoteDebugApplication110::SetDebuggerOptions](../../winscript/reference/iremotedebugapplication110-setdebuggeroptions.md)|디버거 옵션을 업데이트 하기 위해 호출 됩니다. 0 (SDO_NONE) 기본 옵션입니다.|  
+|[IRemoteDebugApplication110::GetCurrentDebuggerOptions](../../winscript/reference/iremotedebugapplication110-getcurrentdebuggeroptions.md)|현재 사용할 수 있는 옵션 집합을 반환 합니다.|  
 |[IRemoteDebugApplication110::GetMainThread](../../winscript/reference/iremotedebugapplication110-getmainthread.md)|SetSite를 호출 하는 호스트에 대 한 주 스레드를 반환 합니다.|

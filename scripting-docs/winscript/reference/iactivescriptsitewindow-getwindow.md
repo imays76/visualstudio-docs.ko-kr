@@ -19,11 +19,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 268a54ccdcbd70ed159758720db0735f16d81492
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54097398"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349051"
 ---
 # <a name="iactivescriptsitewindowgetwindow"></a>IActiveScriptSiteWindow::GetWindow
 스크립팅 엔진을 표시 해야 하는 팝업 창의 소유자 역할을 수행할 수 있는 창에 핸들을 검색 합니다.  

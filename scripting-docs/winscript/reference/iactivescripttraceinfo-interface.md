@@ -12,15 +12,15 @@ caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eb286b60bb3c883ae0809882a04b8be96fd9a560
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6ec8ef67220a70e8eb38ca8f66f7397337fb87a9
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724913"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349194"
 ---
 # <a name="iactivescripttraceinfo-interface"></a>IActiveScriptTraceInfo 인터페이스
-시작 하 고 추적을 중지 하는 메서드를 제공 합니다.  
+시작 및 추적을 중지 하는 메서드를 제공 합니다.  
   
 ## <a name="methods"></a>메서드  
   

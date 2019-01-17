@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d775deb153205d0e9a452775272285c67e74a210
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949866"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345216"
 ---
 # <a name="idebugdocumentprovider-interface"></a>IDebugDocumentProvider 인터페이스
 요청 시 문서를 인스턴스화하는 방법을 제공합니다.  

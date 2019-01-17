@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0e85c5dac657684cfd3113ba403ebb25a75b49a4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 375b0be54e1f9a71dd5f70cf70c66a26886af127
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728913"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345632"
 ---
 # <a name="iobjectidentity-interface"></a>IObjectIdentity 인터페이스
 상속 된 메서드 외에도 `IUnknown`, `IObjectIdentity` 인터페이스는 다음 메서드를 노출 합니다.  
@@ -28,4 +28,4 @@ ms.locfileid: "24728913"
   
 |메서드|설명|  
 |------------|-----------------|  
-|[IObjectIdentity::IsEqualObject](../../winscript/reference/iobjectidentity-isequalobject.md)|개체는 현재 개체와 같은지 확인 합니다.|
+|[IObjectIdentity::IsEqualObject](../../winscript/reference/iobjectidentity-isequalobject.md)|개체는 현재 개체와 같은지 여부를 결정 합니다.|

@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 6d4939635b69cf5b49e36c7168dcf3c1a786821f
-ms.sourcegitcommit: 7ba97696d6d48de698210863183266af90c82af5
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/17/2018
-ms.locfileid: "53531247"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348557"
 ---
 # <a name="cant-have-continue-outside-of-loop"></a>루프 외부에서 'continue'를 사용할 수 없습니다.
 사용 하려고 합니다 **계속** 문이 루프 외부에서. 합니다 **계속** 문은의 본문 내 에서만 사용할 수 있습니다  
@@ -34,7 +34,7 @@ ms.locfileid: "53531247"
   
 -   `while` 루프  
   
--   **에 대 한** 루프  
+-   **for** loop,  
   
 -   **에 대한/** 루프입니다.  
   
@@ -46,7 +46,7 @@ ms.locfileid: "53531247"
   
     -   `while` 루프  
   
-    -   **에 대 한** 루프  
+    -   **for** loop,  
   
     -   **에 대한/** 루프입니다.  
   

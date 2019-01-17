@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: e0b34ae4bdf04d261647b9096cda13eec75617c5
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804418"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349428"
 ---
 # <a name="expected--in-regular-expression-javascript"></a>정규식에 ']'가 필요합니다.(JavaScript)
 정규식 일치를 사용 하는 문자 클래스를 만들려고 하지만 오른쪽 대괄호를 포함 하지 않은 있습니다. 괄호 안에 배치 하 여 개별 문자 조합 문자 클래스를 조합할 수 있습니다. 문자 클래스는 포함 된 하나의 문자를 찾습니다. 예를 들어 / [abc] "a", "b", 문자 중 하 나와 일치 하는 / 또는 "c"입니다.  

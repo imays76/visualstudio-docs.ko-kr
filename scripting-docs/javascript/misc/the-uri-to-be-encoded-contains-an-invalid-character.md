@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 1e93d145ea6b0991123c2a7c80f8acf54a83a264
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832176"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349792"
 ---
 # <a name="the-uri-to-be-encoded-contains-an-invalid-character"></a>인코딩될 URI에 잘못된 문자가 있습니다.
 문자열로 URI (일정 한 리소스 식별자)로 인코딩 하려고 하지만 잘못 된 문자가 포함 되어 있어. 대부분의 문자는 Uri로 변환 된 문자열 내에 유효한, 일부 유니코드 문자 시퀀스를 사용할 수 없습니다.  

@@ -14,18 +14,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ef52ebfe8bfccecc0eea2383787a5b2698a5ce5f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d3ebe79563ed6dbd57de759b79a452f280918010
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725803"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349662"
 ---
 # <a name="idebugapplication110synchronouscallinmainthread"></a>IDebugApplication110::SynchronousCallInMainThread
 주 스레드에서 동기 호출을 수행 합니다.  
   
 > [!IMPORTANT]
->  [IDebugApplication110 인터페이스](../../winscript/reference/idebugapplication110-interface.md) 구현 PDM v11.0 이상에 됩니다. activdbg100.h에서 찾을 수 있습니다.  
+>  [IDebugApplication110 인터페이스](../../winscript/reference/idebugapplication110-interface.md) 는 PDM v11.0에 의해 구현 된 이상. activdbg100.h에서 찾을 수 있습니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -35,7 +35,7 @@ HRESULT SynchronousCallInMainThread([in] IDebugThreadCall* pptc, [in] DWORD_PTR 
   
 #### <a name="parameters"></a>매개 변수  
  `pptc`  
- [IDebugThreadCall 인터페이스](../../winscript/reference/idebugthreadcall-interface.md) 호출할 개체입니다.  
+ 합니다 [IDebugThreadCall 인터페이스](../../winscript/reference/idebugthreadcall-interface.md) 호출할 개체입니다.  
   
  `dwParam1`  
  호출의 첫 번째 매개 변수입니다.  

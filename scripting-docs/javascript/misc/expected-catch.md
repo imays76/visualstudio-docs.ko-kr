@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 244635605abafc5c0bd22c5203b105aa6e7dc669
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53801985"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344111"
 ---
 # <a name="expected-catch"></a>'catch'가 필요합니다.
 예외 처리를 사용 **시도** 차단 하지만 연결 된 작성 하지 않은 **catch** 문입니다. 예외 처리 메커니즘 내에 있어야는 예외가 발생할 경우 실행 되지 않도록 하는 코드와 함께 실패할 수 있는 코드를 **시도** 블록입니다. 내에서 예외가 throw 됩니다는 **시도** 사용을 차단 합니다 **throw** 문 외부 포착 하 고는 **시도** 하나를 사용 하 여 블록 **catch**문입니다.  

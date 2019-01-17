@@ -14,17 +14,17 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce1f8beb9a17d6109ec4d199393fcb3f8a8d7761
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e37c7957024a46522438e3ac625e5b14c09b178f
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733963"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348024"
 ---
 # <a name="windows-script-interfaces-reference"></a>Windows 스크립트 인터페이스 참조
-다음 섹션에서는 Windows 스크립트 인터페이스를 설명 합니다.  
+다음 섹션에서는 Windows 스크립트 인터페이스를 설명합니다.  
   
-## <a name="in-this-section"></a>단원 내용  
+## <a name="in-this-section"></a>섹션 내용  
  [액티브 스크립트 인터페이스](../../winscript/reference/active-script-interfaces.md)  
   
  [액티브 스크립트 작성 인터페이스](../../winscript/reference/active-script-authoring-interfaces.md)  

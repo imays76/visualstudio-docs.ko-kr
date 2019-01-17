@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 23b1bcc42db9daace5a57b56346f5abe58232173
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802398"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349826"
 ---
 # <a name="expected-"></a>':'이 필요합니다.
 3 개로 구성 된 조건부 연산자를 사용 하는 식을 만들려고 하지만 두 번째 및 세 번째 피연산자 사이 콜론을 포함 하지 않은 있습니다. 삼진 (피연산자 3 개) 조건부 연산자 (true) 두 번째 및 세 번째 (false) 사이 콜론 필요 피연산자입니다.  

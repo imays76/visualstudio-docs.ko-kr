@@ -20,19 +20,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b0ba826bdc4af9e4c87c0e5a85d47caffc187f00
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: dfdc5856eecf6eef0e2308d4ce20734fbb47bb12
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802266"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348609"
 ---
 # <a name="expected--javascript"></a>'='가 필요합니다.(JavaScript)
 조건부 컴파일 문에 사용할 변수를 만들려고 시도한 있지만 변수와 변수에 할당할 값 사이 등호를 배치 하지 않고 있습니다.  
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   
--   등호 기호를 추가 합니다. 다음은 사용 예를 보여줍니다.  
+-   등호 기호를 추가 합니다. 예를 들어:  
   
     ```JavaScript  
     @set @myvar1 = 1  

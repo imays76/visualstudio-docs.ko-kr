@@ -14,18 +14,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 16782329de6268b309710e60e707d629fd9929a1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 74662b6cfcfb641a59ac93c862bd38c6fa16a900
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729383"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346776"
 ---
 # <a name="iremotedebugapplication110setdebuggeroptions"></a>IRemoteDebugApplication110::SetDebuggerOptions
-디버거 옵션을 업데이트 하기 위해 호출 합니다. 후에이 메서드를 호출 해야 [IRemoteDebugApplication::ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md)합니다. [IRemoteDebugApplication::DisconnectDebugger](../../winscript/reference/iremotedebugapplication-disconnectdebugger.md) 메서드 기본 옵션을 자동으로 다시 설정 합니다. 옵션 기본값인 0 (SDO_NONE)으로 설정 합니다.  
+디버거 옵션을 업데이트 하기 위해 호출 됩니다. 이 메서드가 이후에 호출 되도록 [IRemoteDebugApplication::ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md)합니다. 합니다 [IRemoteDebugApplication::DisconnectDebugger](../../winscript/reference/iremotedebugapplication-disconnectdebugger.md) 메서드 기본 옵션을 자동으로 다시 설정 합니다. 0 (SDO_NONE) 기본 옵션입니다.  
   
 > [!IMPORTANT]
->  [IRemoteDebugApplication 인터페이스](../../winscript/reference/iremotedebugapplication-interface.md) 구현 PDM v11.0 이상에 됩니다. activdbg100.h에서 찾을 수 있습니다.  
+>  [IRemoteDebugApplication 인터페이스](../../winscript/reference/iremotedebugapplication-interface.md) 는 PDM v11.0에 의해 구현 된 이상. activdbg100.h에서 찾을 수 있습니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -35,10 +35,10 @@ HRESULT SetDebuggerOptions(        [in] enum SCRIPT_DEBUGGER_OPTIONS mask,      
   
 #### <a name="parameters"></a>매개 변수  
  `mask`  
- [SCRIPT_DEBUGGER_OPTIONS 열거형](../../winscript/reference/script-debugger-options-enumeration.md) 마스크입니다.  
+ 합니다 [SCRIPT_DEBUGGER_OPTIONS 열거형](../../winscript/reference/script-debugger-options-enumeration.md) 마스크입니다.  
   
  `value`  
- [SCRIPT_DEBUGGER_OPTIONS 열거형](../../winscript/reference/script-debugger-options-enumeration.md) 값입니다.  
+ 합니다 [SCRIPT_DEBUGGER_OPTIONS 열거형](../../winscript/reference/script-debugger-options-enumeration.md) 값입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IRemoteDebugApplication 인터페이스](../../winscript/reference/iremotedebugapplication-interface.md)   

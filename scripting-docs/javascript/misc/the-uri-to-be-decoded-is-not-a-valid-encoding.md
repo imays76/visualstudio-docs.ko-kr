@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 2d37ca55dfd701aaeba2af729511a5ae6a4fa5f4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841821"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344384"
 ---
 # <a name="the-uri-to-be-decoded-is-not-a-valid-encoding"></a>디코딩될 URI가 유효한 인코딩이 아닙니다.
 형식이 잘못 된 URI (Uniform Resource Identifier)를 디코딩 하려고 했습니다. Uri에는 특수 구문이; URI에서 사용할 수 전에 대부분의 영숫자가 아닌 문자를 인코딩해야 합니다. 사용할 수는 `encodeURI` 하 고 `encodeURIComponent` 에서 보통 URI를 만드는 방법 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 문자열입니다.  

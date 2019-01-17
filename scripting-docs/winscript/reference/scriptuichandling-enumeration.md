@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 40b538c6f28e29dcdef4a8335beae87d1c2b6ddd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b365c1b67bbc905ec43d72cdc2910482d2d23518
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734063"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348063"
 ---
 # <a name="scriptuichandling-enumeration"></a>SCRIPTUICHANDLING 열거형
 UI 컨트롤을 처리 해야 하는 방식을 나타냅니다.  
@@ -32,6 +32,6 @@ typedef enum tagSCRIPTUICHANDLING {     SCRIPTUICHANDLING_ALLOW = 0,     SCRIPTU
   
 |||  
 |-|-|  
-|SCRIPTUICHANDLING_ALLOW|표시를 제어할을 수 있습니다.|  
+|SCRIPTUICHANDLING_ALLOW|컨트롤이 표시 되도록 할 수 있습니다.|  
 |SCRIPTUICHANDLING_NOUIERROR||  
 |SCRIPTUICHANDLING_NOUIDEFAULT||

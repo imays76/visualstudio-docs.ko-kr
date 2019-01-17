@@ -19,11 +19,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d2c9cb95615ad0b978cc7fd9943b687e5a7f3cac
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54088415"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344566"
 ---
 # <a name="iactivescriptsiteonscripterror"></a>IActiveScriptSite::OnScriptError
 엔진을 스크립트를 실행 하는 동안 실행 오류가 발생 했음을 호스트에 알립니다.  

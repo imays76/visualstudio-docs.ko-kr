@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: c9e29131c4ecf4f476a30da94ec67676d6bea347
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836179"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346048"
 ---
 # <a name="expected-hexadecimal-digit"></a>16진수가 필요합니다.
 잘못 된 유니코드 이스케이프 시퀀스를 만들었습니다. 유니코드 이스케이프 시퀀스 \u, 정확히 4 자리 16 진수 (더 이상 및 적지 않은) 다음으로 시작 합니다. 유니코드 16 진수는 숫자 0-9만, 대문자 문자 A-f를 소문자 문자 a-f를 포함할 수 있습니다. 다음 예제에는 올바른된 유니코드 이스케이프 시퀀스를 보여 줍니다.  

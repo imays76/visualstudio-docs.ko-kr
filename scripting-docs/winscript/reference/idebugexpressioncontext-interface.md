@@ -18,12 +18,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0c55a2f270e4c82c578450092e5066b19fe9e606
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 12b997d5edab866f77dcb71f4d5ea0273786c577
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726533"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345983"
 ---
 # <a name="idebugexpressioncontext-interface"></a>IDebugExpressionContext 인터페이스
 식을 계산할 수 있는 컨텍스트를 나타냅니다. 스택 프레임 개체는이 인터페이스를 구현합니다.  

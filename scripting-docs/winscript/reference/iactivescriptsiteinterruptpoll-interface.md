@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6723d430b10d7278e47d4273ed10ae08762051e9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7b93a0e353e342d805d933030b2ad4d2babb9ab9
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725033"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345086"
 ---
 # <a name="iactivescriptsiteinterruptpoll-interface"></a>IActiveScriptSiteInterruptPoll 인터페이스
-`IActiveScriptSiteInterruptPoll` 인터페이스 지정 스크립트를 종료 해야 하는 호스트를 사용 합니다.  
+`IActiveScriptSiteInterruptPoll` 인터페이스를 사용 하면 스크립트를 종료할지를 지정 하는 호스트입니다.  
   
 ## <a name="methods"></a>메서드  
  상속 된 메서드 외에도 `IUnknown`, `IActiveScriptSiteInterruptPoll` 인터페이스는 다음 메서드를 노출 합니다.  
   
 |메서드|설명|  
 |------------|-----------------|  
-|[IActiveScriptSiteInterruptPoll::QueryContinue](../../winscript/reference/iactivescriptsiteinterruptpoll-querycontinue.md)|호스트를에서 스크립트를 종료 해야를 지정할 수 있습니다.|
+|[IActiveScriptSiteInterruptPoll::QueryContinue](../../winscript/reference/iactivescriptsiteinterruptpoll-querycontinue.md)|스크립트를 종료할지를 지정 하는 호스트 수 있습니다.|

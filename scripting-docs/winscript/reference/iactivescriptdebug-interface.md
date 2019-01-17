@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0e21f4c99da886bc4907acf8b0934e1b46d57689
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942090"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344579"
 ---
 # <a name="iactivescriptdebug-interface"></a>IActiveScriptDebug 인터페이스
 디버깅을 지 원하는 스크립트 엔진에 의해 구현 됩니다. 일반적으로 구현 하는 개체를 `IActiveScriptDebug` 구현도 인터페이스는 `IActiveScript` 인터페이스입니다. 이 경우 호출 된 `IActiveScript::QueryInterface` 메서드를 `IActiveScriptDebug` 인터페이스입니다.  

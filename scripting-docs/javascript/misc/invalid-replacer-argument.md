@@ -1,5 +1,5 @@
 ---
-title: 잘못 된 치환 인수입니다. | Microsoft Docs
+title: 잘못 된 치환 인수가 | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,22 +20,22 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 588909bae9c5cf198d3108490111b36d5a2d182b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0f144e733bf115cc98bf61b23a2ed3e4e3cda1e0
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632863"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346217"
 ---
-# <a name="invalid-replacer-argument"></a>잘못된 치환 인수입니다.
-호출 하려고 `JSON.stringify` 유효 하지 않은 인수를 사용 합니다. `replacer` 인수는 함수 또는 배열 이어야 합니다.  
+# <a name="invalid-replacer-argument"></a>치환 인수가 잘못되었습니다.
+호출 하려고 `JSON.stringify` 잘못 된 인수를 사용 합니다. `replacer` 인수는 함수 또는 배열 이어야 합니다.  
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   
--   변경 된 `replacer` 인수는 함수 또는 배열입니다.  
+-   변경 된 `replacer` 함수 또는 배열 인수입니다.  
   
 ## <a name="example"></a>예제  
- 이 예제의 코드 때문에 런타임 오류를 발생 `memberfilter` 은 함수 또는 배열 하는 대신 개체입니다.  
+ 이 예제의 코드에 런타임 오류가 발생 하기 때문에 `memberfilter` 은 함수 또는 배열 대신 개체입니다.  
   
 ```JavaScript  
 var contact = new Object();  

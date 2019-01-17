@@ -14,18 +14,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 435ea678133755d02ab9a3f757f0947a83278e45
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a3ce1510ad9e7b4560a7aaafb8d65d5b0e6143cf
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725693"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349638"
 ---
 # <a name="idebugapplicationthreadevents110onsuspendforbreakpoint"></a>IDebugApplicationThreadEvents110::OnSuspendForBreakPoint
-스레드 완전 하 게 일시 중단 된 중단점에 대 한 정상적인 실행 아직 다시 시작할 수 없는 결정 합니다.  
+스레드 완벽 하 게 일시 중단 된 중단점에 대 한 및 일반 실행 아직 다시 시작할 수 없는 있는지 여부를 결정 합니다.  
   
 > [!IMPORTANT]
->  [IDebugApplicationThreadEvents110 인터페이스](../../winscript/reference/idebugapplicationthreadevents110-interface.md) 구현 PDM v11.0 이상에 됩니다. activdbg100.h에서 찾을 수 있습니다.  
+>  [IDebugApplicationThreadEvents110 인터페이스](../../winscript/reference/idebugapplicationthreadevents110-interface.md) 는 PDM v11.0에 의해 구현 된 이상. activdbg100.h에서 찾을 수 있습니다.  
   
 ## <a name="syntax"></a>구문  
   

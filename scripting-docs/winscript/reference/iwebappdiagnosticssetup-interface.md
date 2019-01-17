@@ -14,23 +14,23 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6e273f29bee6e4d2aae26c01c477373a735624c8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fc29282ec9d00ff79131765d2bf294c54fa347c6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734003"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344904"
 ---
 # <a name="iwebappdiagnosticssetup-interface"></a>IWebAppDiagnosticsSetup 인터페이스
-이 인터페이스는 PDM 디버그 응용 프로그램 디버깅 중인 프로세스에서 COM 개체를 생성 하 고 웹 진단을 사용 하 여 구현 됩니다. PDM 디버깅 응용 프로그램 개체를 구현 하는 경우 [IObjectWithSite](http://go.microsoft.com/fwlink/?LinkId=232438), Internet Explorer 호출 [SetSite](http://go.microsoft.com/fwlink/?LinkId=232439) 을 만든 후에 그에 대 한 참조를 전달 [IWebBrowser2](http://go.microsoft.com/fwlink/?LinkId=232449). WWA 응용 프로그램 호출 [SetSite](http://go.microsoft.com/fwlink/?LinkId=232439) 및 패스는 WWA 인터페이스 IWebApplicationHost 대신 합니다. 경우 [SetSite](http://go.microsoft.com/fwlink/?LinkId=232439) 가 NULL이 아닌 값으로 호출 된 [IWebAppDiagnosticsSetup::DiagnosticsSupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md) true를 반환 합니다. False를 반환 고에 대 한 호출이 그렇지 않은 경우 [IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md) 실패 합니다.  
+이 인터페이스는 PDM 디버그 응용 프로그램을 디버깅 중인 프로세스에 COM 개체를 만들 웹 진단을 사용 하도록 설정 하 여 구현 됩니다. PDM 디버깅 응용 프로그램 개체를 구현 하는 경우 [IObjectWithSite](http://go.microsoft.com/fwlink/?LinkId=232438)를 호출 하는 Internet Explorer [SetSite](http://go.microsoft.com/fwlink/?LinkId=232439) 에 생성 된 후에 그에 대 한 참조가 전달 [IWebBrowser2](http://go.microsoft.com/fwlink/?LinkId=232449). WWA 응용 프로그램을 호출 [SetSite](http://go.microsoft.com/fwlink/?LinkId=232439) IWebApplicationHost를 대신 인터페이스는 WWA 전달 합니다. 하는 경우 [SetSite](http://go.microsoft.com/fwlink/?LinkId=232439) 는 NULL이 아닌 값을 사용 하 여 호출한 [IWebAppDiagnosticsSetup::DiagnosticsSupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md) true를 반환 합니다. 그렇지 않으면 false를 반환 하 고 호출 하는 경우 [IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md) 실패 합니다.  
   
 > [!IMPORTANT]
->  `IWebAppDiagnosticsSetup`PDM v11.0 이상에 의해 구현 됩니다. activdbg100.h에서 찾을 수 있습니다.  
+>  `IWebAppDiagnosticsSetup` 여 PDM v11.0 이상 구현 됩니다. activdbg100.h에서 찾을 수 있습니다.  
   
 ## <a name="methods"></a>메서드  
  이 인터페이스는 다음 메서드를 노출 합니다.  
   
 |메서드|설명|  
 |------------|-----------------|  
-|[IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md)|지정한 필터에 의해 숨겨져 있는 텍스트 문서를 가져옵니다.|  
+|[IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md)|지정한 필터에 의해 숨겨진 텍스트 문서를 가져옵니다.|  
 |[IWebAppDiagnosticsSetup::DiagnosticsSupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md)|지정된 된 문서가 노드의 자식 노드 중 하나에 속하는지 여부를 결정 합니다.|
