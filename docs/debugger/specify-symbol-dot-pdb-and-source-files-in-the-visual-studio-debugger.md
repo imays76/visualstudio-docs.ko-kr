@@ -29,10 +29,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: d970d2b761b2987bc74e94eb5bfefa8f0ffc78ec
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53892455"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Visual Studio 디버거에서 기호 (.pdb) 및 원본 파일 지정 (C#, c + +, Visual Basic의 경우 F#)
@@ -155,7 +155,7 @@ Visual Studio IDE에서 프로젝트를 디버깅할 때 디버거는 자동으�
   명령을 제한할 수 있는 *srcsrv.dll* 앱에서 실행할 수 있습니다 *.pdb* 라는 파일에 허용 되는 명령의 나열 하 여 파일 *srcsrv.ini*합니다. 위치는 *srcsrv.ini* 와 같은 폴더에 파일 *srcsrv.dll* 하 고 *devenv.exe*합니다.  
   
   >[!IMPORTANT]
-  >임의의 명령이 응용 프로그램에 포함할 수 있습니다 *.pdb* 파일을 실행 하려는 명령만 해야를 *srcsrv.ini* 파일입니다. *srcsvr.ini* 파일에 포함되지 않은 명령을 실행하려고 하면 확인 대화 상자가 나타납니다. 자세한 내용은 참조 하세요. [보안 경고: 디버거가 신뢰할 수 없는 명령을 실행해야 합니다.](../debugger/security-warning-debugger-must-execute-untrusted-command.md) 
+  >임의의 명령이 응용 프로그램에 포함할 수 있습니다 *.pdb* 파일을 실행 하려는 명령만 해야를 *srcsrv.ini* 파일입니다. *srcsvr.ini* 파일에 포함되지 않은 명령을 실행하려고 하면 확인 대화 상자가 나타납니다. 자세한 내용은 참조 하세요. [보안 경고: 디버거가 신뢰할 수 없는 명령을 실행해야 합니다](../debugger/security-warning-debugger-must-execute-untrusted-command.md). 
   >
   >명령 매개 변수에 대해서는 유효성 검사를 수행하지 않으므로 신뢰되는 명령에 대해 주의를 기울여야 합니다. 예를 들어 사용자 나열 *cmd.exe* 에 사용자 *srcsrv.ini*, 악의적인 사용자에 매개 변수를 지정할 수 *cmd.exe* 는 위험 하 게 만드는 것입니다.  
   
@@ -179,7 +179,7 @@ Visual Studio IDE에서 프로젝트를 디버깅할 때 디버거는 자동으�
     
     합니다 *VC\<x >.pdb* 파일 개별 개체 파일에 대 한 모든 디버깅 정보를 저장 하 고, 프로젝트 메이크파일과 동일한 디렉터리에 상주 합니다. 각 시간 개체 파일을 만들면, C/c + + 컴파일러에 디버그 정보를 병합 *VC\<x >.pdb*합니다. 와 같은 공통 헤더 파일은 모든 소스 파일에 포함 하는 경우에  *\<windows.h >*, 해당 헤더의 typedef는 모든 개체 파일 보다는 한 번만 저장 됩니다. 삽입되는 정보에는 유형 정보가 포함되지만 함수 정의와 같은 기호 정보는 포함되지 않습니다.  
   
-  - *\<프로젝트 >.pdb* 
+  - *\<project>.pdb* 
     
     합니다  *\<프로젝트 >.pdb* 파일을 프로젝트에 대 한 모든 디버그 정보를 저장 *.exe* 파일과에 있는 합니다 *\debug* 하위 디렉터리입니다. *\<project>.pdb* 파일에는 *VC\<x>.pdb*에 있는 형식 정보뿐만 아니라 함수 프로토타입을 비롯한 전체 디버그 정보가 포함됩니다. 
   

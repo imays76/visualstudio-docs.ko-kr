@@ -15,16 +15,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e23f61f7de4b2723e7be18b6beb76b17fd278cf2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f84b18cd3d4bfbae949ba4dd3199bace6604148f
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947415"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204492"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>자동 및 지역 창에서 변수 검사
 
-합니다 **자동** 하 고 **지역** windows 디버깅 하는 동안 변수 값을 표시 합니다. Windows는 디버깅 세션 중만 사용할 수 있습니다. 합니다 **자동** 창에 현재 중단점 사용 된 변수가 표시 됩니다. 합니다 **지역** 창 현재 함수나 메서드는 일반적으로 로컬 범위에 정의 된 변수를 표시 합니다. 읽을 하려는 처음 코드를 디버그 하려는 경우 [잘 작성 하 여 버그를 수정 합니다. C# 코드](../debugger/write-better-code-with-visual-studio.md) 하 고 [초보자를 위한 디버깅](../debugger/debugging-absolute-beginners.md) 이 문서를 진행 하기 전에 합니다.
+합니다 **자동** 하 고 **지역** windows 디버깅 하는 동안 변수 값을 표시 합니다. Windows는 디버깅 세션 중만 사용할 수 있습니다. 합니다 **자동** 창에 현재 중단점 사용 된 변수가 표시 됩니다. 합니다 **지역** 창 현재 함수나 메서드는 일반적으로 로컬 범위에 정의 된 변수를 표시 합니다. 코드를 처음으로 디버그하는 경우 이 문서를 진행하기 전에 먼저 [완전 초보자를 위한 디버깅](../debugger/debugging-absolute-beginners.md) 및 [더 나은 C# 코드를 작성하여 버그 수정](../debugger/write-better-code-with-visual-studio.md)을 읽어보는 것이 좋습니다.
 
  합니다 **자동** 창은 사용할 수 있습니다 C#, Visual Basic, c + + 및 Python 코드를 JavaScript에 대 한 또는 F#합니다.
   
@@ -39,7 +39,7 @@ ms.locfileid: "53947415"
 
 배열 및 개체에 표시 합니다 **자동** 하 고 **지역** 트리 컨트롤로 windows. 필드 및 속성을 표시 하도록 보기를 확장 하는 변수 이름의 왼쪽에 있는 화살표를 선택 합니다. 예로 <xref:System.IO.FileStream?displayProperty=fullName> 개체를 **지역** 창:
 
-![지역-FileStream](../debugger/media/locals-filestream.png "지역-FileStream")
+![Locals-FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")
 
 빨간색 값을 **지역** 또는 **자동** 창 값은 마지막 평가 이후 변경 된 것을 의미 합니다. 이전 디버깅 세션에서 변경 될 수 없거나 창에서 값을 변경 합니다.
 
@@ -89,7 +89,7 @@ ms.locfileid: "53947415"
 
    줄에 중단점을 설정할 `c = 3;`, 고 디버거를 시작 합니다. 실행이 일시 중지 하는 경우는 **자동** 창에 표시 됩니다.
 
-   ![자동 CSharp](../debugger/media/autos-csharp.png "자동 CSharp")
+   ![Autos-CSharp](../debugger/media/autos-csharp.png "Autos-CSharp")
 
    변수의 `c` 때문에 0 이면 줄 `c = 3` 아직 실행 되지 않았습니다.
 
@@ -109,7 +109,7 @@ ms.locfileid: "53947415"
 
     줄에 중단점을 설정할 `e = 5;` 디버거를 실행 합니다. 실행이 중지 되는 경우는 **자동** 창에 표시 됩니다.
 
-    ![자동-c + +](../debugger/media/autos-cplus.png "자동-c + +")
+    ![Autos-C++](../debugger/media/autos-cplus.png "Autos-C++")
 
     변수의 `e` 아니므로 초기화 줄 `e = 5` 아직 실행 되지 않았습니다.
 

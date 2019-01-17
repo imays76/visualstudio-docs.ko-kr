@@ -14,15 +14,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3330c86c84318be68619a8d031a034b33faa7fd1
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 1b30675b126f6ed50022f4996cbad9de9226eb59
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305665"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54269919"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>WCF 데이터 서비스에 WPF 컨트롤 바인딩
 
@@ -70,7 +69,7 @@ WCF 데이터 서비스에 대 한 프로젝트를 만들어이 연습을 시작
 
 3. **Visual C#** 또는 **Visual Basic**을 확장한 다음, **웹**을 선택합니다.
 
-4. **ASP.NET 웹 응용 프로그램** 프로젝트 템플릿을 선택합니다.
+4. **ASP.NET 웹 애플리케이션** 프로젝트 템플릿을 선택합니다.
 
 5. **이름** 상자에 **AdventureWorksService**를 입력하고 **확인**을 클릭합니다.
 
@@ -80,7 +79,7 @@ WCF 데이터 서비스에 대 한 프로젝트를 만들어이 연습을 시작
 
 ## <a name="create-an-entity-data-model-for-the-service"></a>서비스에 대 한 엔터티 데이터 모델 만들기
 
-WCF 데이터 서비스를 사용 하 여 응용 프로그램에 데이터를 노출 하려면 서비스에 대 한 데이터 모델을 정의 해야 합니다. WCF Data Service는 두 가지 유형의 데이터 모델: 엔터티 데이터 모델 및 구현 하는 공용 언어 런타임 (CLR) 개체를 사용 하 여 정의 된 사용자 지정 데이터 모델을 <xref:System.Linq.IQueryable%601> 인터페이스입니다. 이 연습에서는 데이터 모델에 대해 엔터티 데이터 모델을 만듭니다.
+WCF 데이터 서비스를 사용 하 여 응용 프로그램에 데이터를 노출 하려면 서비스에 대 한 데이터 모델을 정의 해야 합니다. WCF Data Service는 두 가지 유형의 데이터 모델을 지원합니다. 엔터티 데이터 모델 및 구현 하는 공용 언어 런타임 (CLR) 개체를 사용 하 여 정의 된 사용자 지정 데이터 모델을 <xref:System.Linq.IQueryable%601> 인터페이스입니다. 이 연습에서는 데이터 모델에 대해 엔터티 데이터 모델을 만듭니다.
 
 1. **프로젝트** 메뉴에서 **새 항목 추가**를 클릭합니다.
 
@@ -231,7 +230,7 @@ WPF 디자이너에서 XAML을 수정하여 창에 여러 단추를 추가합니
 
 서비스 프록시 개체를 사용 하 여 서비스에서 판매 데이터를 로드 합니다. 그런 다음 반환된 된 데이터에 대 한 데이터 원본에 할당 된 <xref:System.Windows.Data.CollectionViewSource> WPF 창에서.
 
-1. 디자이너를 만들려면 합니다 `Window_Loaded` 이벤트 처리기를 텍스트를 두 번 클릭: **MainWindow**합니다.
+1. 디자이너를 만들려면를 `Window_Loaded` 이벤트 처리기에서 텍스트를 두 번 클릭: **MainWindow**.
 
 2. 이벤트 처리기를 다음 코드로 바꿉니다. 이 코드의 *localhost*주소는 사용 중인 개발 컴퓨터의 로컬 호스트 주소로 바꿔야 합니다.
 
@@ -273,7 +272,7 @@ WPF 디자이너에서 XAML을 수정하여 창에 여러 단추를 추가합니
      [!code-csharp[Data_WPFWCF#5](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_5.cs)]
      [!code-vb[Data_WPFWCF#5](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_5.vb)]
 
-## <a name="test-the-application"></a>응용 프로그램 테스트
+## <a name="test-the-application"></a>애플리케이션 테스트
 
 애플리케이션을 빌드하고 실행하여 고객 레코드를 보고 업데이트할 수 있는지 확인합니다.
 
@@ -285,7 +284,7 @@ WPF 디자이너에서 XAML을 수정하여 창에 여러 단추를 추가합니
 
 3. **솔루션 탐색기**에서 **AdventureWorksSalesEditor** 프로젝트를 마우스 오른쪽 단추로 클릭합니다.
 
-4. 컨텍스트 메뉴의 **디버그**에서 **새 인스턴스 시작**을 클릭합니다.
+4. (상황에 맞는 메뉴)을 마우스 오른쪽 단추 클릭 메뉴에서 **디버그**, 클릭 **새 인스턴스 시작**합니다.
 
      응용 프로그램이 실행됩니다. 다음 사항을 확인합니다.
 
@@ -299,7 +298,7 @@ WPF 디자이너에서 XAML을 수정하여 창에 여러 단추를 추가합니
 
 7. 변경한 판매 레코드로 이동하여 응용 프로그램을 닫았다가 다시 열어도 변경 내용이 그대로 유지되는지 확인합니다.
 
-8. 응용 프로그램을 닫습니다.
+8. 애플리케이션을 닫습니다.
 
 ## <a name="next-steps"></a>다음 단계
 
@@ -307,12 +306,12 @@ WPF 디자이너에서 XAML을 수정하여 창에 여러 단추를 추가합니
 
 - Visual Studio의 **데이터 원본** 창을 사용하여 WPF 컨트롤을 다른 형식의 데이터 원본에 바인딩하는 방법을 알아봅니다. 자세한 내용은 [데이터 집합에 바인딩할 WPF 컨트롤](../data-tools/bind-wpf-controls-to-a-dataset.md)합니다.
 
-- Visual Studio의 **데이터 원본** 창을 사용하여 WPF 컨트롤에 관련 데이터(즉, 부모-자식 관계가 있는 데이터)를 표시하는 방법을 알아봅니다. 자세한 내용은 [연습: WPF 응용 프로그램에서 관련된 데이터 표시](../data-tools/display-related-data-in-wpf-applications.md)합니다.
+- Visual Studio의 **데이터 원본** 창을 사용하여 WPF 컨트롤에 관련 데이터(즉, 부모-자식 관계가 있는 데이터)를 표시하는 방법을 알아봅니다. 자세한 내용은 [연습: WPF 애플리케이션에서 관련 데이터 표시](../data-tools/display-related-data-in-wpf-applications.md)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
 - [Visual Studio에서 데이터에 WPF 컨트롤 바인딩](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
-- [데이터 집합으로 WPF 컨트롤 바인딩](../data-tools/bind-wpf-controls-to-a-dataset.md)
+- [데이터 세트로 WPF 컨트롤 바인딩](../data-tools/bind-wpf-controls-to-a-dataset.md)
 - [WCF 개요 (.NET Framework)](/dotnet/framework/data/wcf/wcf-data-services-overview)
 - [Entity Framework 개요 (.NET Framework)](/dotnet/framework/data/adonet/ef/overview)
 - [데이터 바인딩 개요 (.NET Framework)](/dotnet/framework/wpf/data/data-binding-overview)

@@ -9,21 +9,22 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - cluster debugging
-- high-perfomance debugging
+- high-performance debugging
 ms.assetid: a2f0eb07-840e-4f95-a1b1-9509217e5b8f
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f2d551387b0b784d896ab435f61f9366663e6219
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: cd2b009afac34ebb484d144c345382431c91f5b0
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966458"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54228047"
 ---
-# <a name="how-to-debug-on-a-high-performance-cluster"></a>방법: 고성능 클러스터에서 디버그
+# <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>방법: 고성능 클러스터에서 디버깅 (C#, Visual Basic, c + +)
+
 고성능 클러스터에서 다중 처리 프로그램을 디버깅하는 방법은 원격 컴퓨터에서 일반적인 프로그램을 디버깅하는 방법과 비슷합니다. 그러나 여기에는 몇 가지 추가로 고려해야 할 사항이 있습니다. 일반적인 원격 설치 요구 사항에 대 한 참조 [원격 디버깅](../debugger/remote-debugging.md)합니다.  
   
  고성능 클러스터에서 디버깅하는 경우 원격 디버깅에 제공되는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 디버깅 창과 기술을 모두 사용할 수 있습니다. 그러나 디버깅을 원격으로 수행하므로 외부 콘솔 창은 사용할 수 없습니다.  
@@ -34,7 +35,7 @@ ms.locfileid: "53966458"
   
  병렬 응용 프로그램을 디버깅할 때는 특정 스레드, 프로세스 또는 컴퓨터에 중단점을 설정해야 하는 경우가 있습니다. 일반적인 중단점을 만든 다음 중단점 필터를 추가하면 이를 쉽게 수행할 수 있습니다.  
   
-### <a name="to-open-the-breakpoint-filter-dialog-box"></a>중단점 필터 대화 상자를 열려면  
+### <a name="to-open-the-breakpoint-filter-dialog-box"></a>중단점 필터 대화 상자를 열려면
   
 1.  소스 창, **디스어셈블리** 창, **호출 스택** 창 또는 **중단점** 창에서 중단점 문자 모양을 마우스 오른쪽 단추로 클릭합니다.  
   

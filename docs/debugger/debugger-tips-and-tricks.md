@@ -14,16 +14,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87d74eb960d4e445e457744fd0325e7beb15262e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 530ed2144127e7934d02f5ccc0310d9542671507
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927157"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270062"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>For the Debugger in Visual Studio 생산성 팁과 트릭 배우기
 
-Visual Studio 디버거에 대 한 몇 가지 생산성 팁과 요령에 알아보려면이 항목을 읽습니다. 디버거의 기본 기능을 보려면을 참조 하세요 [디버거 기능 둘러보기](../debugger/debugger-feature-tour.md)합니다. 이 항목에서는 기능 둘러보기에 포함 되지 않은 일부 영역을 설명 합니다.
+Visual Studio 디버거에 대 한 몇 가지 생산성 팁과 요령에 알아보려면이 항목을 읽습니다. 디버거의 기본 기능을 보려면을 참조 하세요 [디버거 소개](../debugger/debugger-feature-tour.md)합니다. 이 항목에서는 기능 둘러보기에 포함 되지 않은 일부 영역을 설명 합니다.
 
 ## <a name="pin-data-tips"></a>고정 데이터 팁
 
@@ -88,7 +88,7 @@ Visual Studio에서 지 원하는 대부분의 언어에서 디버깅 세션 중
 
 함수에 대 한 반환 값을 보려면에 표시 되는 함수를 조사 합니다 **자동** 코드를 단계별로 동안 창입니다. 함수의 반환 값을 보려면 원하는 함수를 이미 실행 되었는지 확인 (키를 눌러 **F10** 함수 호출에 현재 중지 된 경우 한 번). 사용 하 여 창이 닫혀 있는 경우 **디버그 > Windows > 자동** 열려는 합니다 **자동** 창.
 
-![자동 창](../debugger/media/dbg-tips-autos-window.png "AutosWindow")
+![Autos Window](../debugger/media/dbg-tips-autos-window.png "AutosWindow")
 
 또한 함수를 입력할 수 있습니다 합니다 **직접 실행** 반환 값 보기 창입니다. (사용 하 여 엽니다 **디버그 > Windows > 직접 실행**.)
 

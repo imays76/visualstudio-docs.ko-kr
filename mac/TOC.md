@@ -1,7 +1,15 @@
-# [Mac용 Visual Studio 소개](index.md)
-# [IDE 둘러보기](ide-tour.md)
+---
+ms.openlocfilehash: 641b6b74f523223e48178bdd69ac03b4c3d3392c
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315477"
+---
+# [Visual Studio for Mac](index.md)
+# [IDE 둘러보기](/visualstudio/mac/ide-tour/)
 
-# [설치](installation.md)
+# [설치](/visualstudio/mac/installation/)
 ## [방화벽 또는 프록시에서 설치 및 사용](install-behind-a-firewall-or-proxy-server.md)
 ## [미리 보기 릴리스 설치](install-preview.md)
 ## [업데이트](update.md)
@@ -65,6 +73,7 @@
 ### [Unity 도구 사용](using-vsmac-tools-unity.md)
 ### [Unity에서 .NET 4.x 사용](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
 ### [변경 로그](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
+## [Xamarin을 사용한 모바일 앱](/xamarin/)
 
 # [액세스 가능성](accessibility.md)
 

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ef5bdbd070d7be6898fa89a24af2208c2acf1ccb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 0ced7def09c9a5ba95c149f5f8507e3571d120ad
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880691"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154165"
 ---
 # <a name="idiadatasourceloaddatafromistream"></a>IDiaDataSource::loadDataFromIStream
 메모리 내 데이터 스트림을 통해 액세스 하 여 프로그램 데이터베이스 (.pdb) 파일에 저장 된 디버그 데이터를 준비 합니다.  
@@ -40,7 +40,7 @@ HRESULT loadDataFromIStream ( 
 |값|설명|  
 |-----------|-----------------|  
 |E_PDB_FORMAT|사용 되지 않는 형식으로 파일에 액세스 하려고 했습니다.|  
-|E_INVALIDARG|Invalidparameter.|  
+|E_INVALIDARG|잘못된 매개 변수입니다.|  
 |E_UNEXPECTED|데이터 원본에 이미 준비 합니다.|  
   
 ## <a name="remarks"></a>주의  

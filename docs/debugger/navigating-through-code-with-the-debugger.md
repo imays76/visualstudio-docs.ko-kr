@@ -15,22 +15,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66478505fe59ef65eb703fef6be8941deebe3d49
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6e983137b4d66ff568ba706353d950470787e3a2
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931426"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204493"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Visual Studio 디버거로 코드 탐색
 
-Visual Studio 디버거는 앱의 상태를 검사 하 고 해당 실행 흐름을 표시 하는 코드를 탐색할 수 있습니다. 검사 하려는 코드에 신속 하 게 바로 가기 키, 디버그 명령, 중단점 및 기타 기능을 사용할 수 있습니다. 디버거 탐색 명령 및 바로 가기를 사용 경험을 사용 하 여 빠르고 쉽게 찾아서 앱 문제를 해결할 수 있도록 합니다.  읽을 하려는 처음 코드를 디버그 하려는 경우 [잘 작성 하 여 버그를 수정 합니다. C# 코드](../debugger/write-better-code-with-visual-studio.md) 하 고 [초보자를 위한 디버깅](../debugger/debugging-absolute-beginners.md) 이 문서를 진행 하기 전에 합니다.
+Visual Studio 디버거는 앱의 상태를 검사 하 고 해당 실행 흐름을 표시 하는 코드를 탐색할 수 있습니다. 검사 하려는 코드에 신속 하 게 바로 가기 키, 디버그 명령, 중단점 및 기타 기능을 사용할 수 있습니다. 디버거 탐색 명령 및 바로 가기를 사용 경험을 사용 하 여 빠르고 쉽게 찾아서 앱 문제를 해결할 수 있도록 합니다.  코드를 처음으로 디버그하는 경우 이 문서를 진행하기 전에 먼저 [완전 초보자를 위한 디버깅](../debugger/debugging-absolute-beginners.md) 및 [더 나은 C# 코드를 작성하여 버그 수정](../debugger/write-better-code-with-visual-studio.md)을 읽어보는 것이 좋습니다.
   
 ## <a name="basic-debugging"></a>기본적인 디버깅  
 
 디버거가 연결 된 앱을 시작 하려면 키를 누릅니다 **F5**를 선택 **디버그** > **디버깅 시작**, 또는 Visual Studio 도구 모음에서 녹색 화살표를 선택 합니다.  
   
- ![DBG&#95;기본 사항&#95;시작&#95;디버깅](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
+ ![DBG&#95;Basics&#95;Start&#95;Debugging](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
   
 디버그 하는 동안 노란색 강조 표시는 다음을 실행 하는 코드 줄을 표시 합니다.  
   

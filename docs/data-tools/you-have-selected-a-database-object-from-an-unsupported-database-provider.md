@@ -9,12 +9,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4efaf92c9f4688d6870c1152be27eb4c8f4ed933
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 209ab92e3a24733e2ef4b7b912a36ae920ffffdb
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53894443"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204253"
 ---
 # <a name="you-have-selected-a-database-object-from-an-unsupported-database-provider"></a>지원되지 않는 데이터베이스 공급자에서 데이터베이스 공급자를 선택했습니다.
 
@@ -23,17 +23,11 @@ ms.locfileid: "53894443"
 > [!NOTE]
 > .NET Framework Data Provider for SQL Server를 사용하는 데이터 연결만 지원됩니다.
 
-## <a name="to-correct-this-error"></a>이 오류를 해결하려면
+## <a name="options"></a>옵션
 
-- **확인**을 클릭합니다.
+- **확인**을 클릭하여 지원되지 않는 데이터베이스 공급자를 사용하는 연결에 매핑할 엔터티 클래스를 계속 디자인합니다. 지원되지 않는 데이터베이스 공급자를 사용하면 예상치 못한 동작이 발생할 수도 있습니다.
 
-   지원 되지 않는 데이터베이스 공급자를 사용 하는 연결에 매핑되는 엔터티 클래스 디자인을 계속할 수 있습니다. 지원되지 않는 데이터베이스 공급자를 사용하면 예상치 못한 동작이 발생할 수도 있습니다.
-
-    또는
-
-- 클릭 **취소**합니다.
-
-   작업이 중지됩니다. .NET Framework Provider for SQL Server를 사용하는 데이터 연결을 만들거나 사용합니다.
+- 클릭 **취소** 작업을 중지 합니다. 만들거나 SQL Server에 대 한.NET Framework Provider를 사용 하는 다른 데이터 연결을 사용 합니다.
 
 ## <a name="see-also"></a>참고 항목
 
