@@ -12,14 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bda05f23963db7729e8684eed9a65cfc8b0a3bd6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 882d357b606ec5bb0419c88dc9c996ccd4a749a6
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820918"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54227722"
 ---
-# <a name="using-the-intellitrace-stand-alone-collector"></a>IntelliTrace 독립 실행형 수집기 사용
+# <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>IntelliTrace 독립 실행형 수집기를 사용 하 여 (C#, Visual Basic)
+
 **IntelliTrace 독립 실행형 수집기** 를 사용하면 대상 컴퓨터에 Visual Studio를 설치하거나 대상 시스템 환경을 변경하지 않고도 프로덕션 서버 또는 기타 환경에서 앱에 대해 IntelliTrace 진단 데이터를 수집할 수 있습니다. IntelliTrace 독립 실행형 수집기는 웹, SharePoint, WPF 및 Windows Forrms 앱에서 작동합니다. 데이터 수집을 마쳤으면 컬렉터를 삭제하여 제거하면 됩니다.
 
  실행 중인 IntelliTrace 보기: [(채널 9 비디오) 디버깅을 위해 프로덕션에서 IntelliTrace 데이터 수집 및 분석](http://go.microsoft.com/fwlink/?LinkID=251851)
@@ -77,7 +78,7 @@ ms.locfileid: "53820918"
 
 ##  <a name="BKMK_Install_the_IntelliTrace_Stand_Alone_Collector"></a> 수집기 설치
 
-1. 앱 서버에서 와 같은 수집기 디렉터리를 만듭니다. **C:\IntelliTraceCollector**
+1. 앱 서버에서 수집기 디렉터리를 만듭니다(예: **C:\IntelliTraceCollector**
 
 2. Microsoft 다운로드 센터 또는 Visual Studio 2013 Update 3 설치 폴더에서 수집기를 다운로드하거나 가져옵니다. [Visual Studio 2013 Update 4을 위한 IntelliTrace 수집기](https://www.microsoft.com/en-us/download/details.aspx?id=44909)::
 
@@ -85,7 +86,7 @@ ms.locfileid: "53820918"
 
      1. **IntelliTraceCollector.exe**옆의 **다운로드**를 선택합니다.
 
-     2. IntelliTraceCollector.exe를 와 같은 수집기 디렉터리에 저장합니다. **C:\IntelliTraceCollector**
+     2. IntelliTraceCollector.exe를 수집기 디렉터리에 저장합니다(예: **C:\IntelliTraceCollector**
 
      3. IntelliTraceCollector.exe를 실행합니다. 그러면 IntelliTraceCollection.cab 파일이 추출됩니다.
 
@@ -95,15 +96,15 @@ ms.locfileid: "53820918"
 
      1.  IntelliTraceCollection.cab를 다음 폴더에 복사합니다.
 
-          **.. \Microsoft visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**
+          **..\Microsoft Visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**
 
-     2.  IntelliTraceCollection.cab를 와 같은 수집기 디렉터리에 저장합니다. **C:\IntelliTraceCollector**
+     2.  IntelliTraceCollection.cab를 수집기 디렉터리에 저장합니다(예: **C:\IntelliTraceCollector**
 
 3. 다음 단계를 수행하여 IntelliTraceCollection.cab를 확장합니다.
 
    1.  앱 서버에서 관리자 권한으로 명령 프롬프트 창을 엽니다.
 
-   2.  와 같은 수집기 디렉터리로 이동합니다. **C:\IntelliTraceCollector**
+   2.  수집기 디렉터리로 이동합니다(예: **C:\IntelliTraceCollector**
 
    3.  끝의 마침표( **.** )를 포함한 다음**expand**명령을 사용하여 IntelliTraceCollection.cab를 확장합니다.
 
@@ -118,7 +119,7 @@ ms.locfileid: "53820918"
 
 2.  Windows **icacls** 명령을 사용하여 서버 관리자에게 수집기 디렉터리에 대한 모든 권한을 제공합니다. 예:
 
-     `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\AdministratorID >* `":F`
+     `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\AdministratorID>* `":F`
 
 3.  웹앱 또는 SharePoint 애플리케이션에서 데이터를 수집하려면 다음 단계를 수행합니다.
 
@@ -126,7 +127,7 @@ ms.locfileid: "53820918"
 
          예:
 
-         `icacls "C:\IntelliTraceCollector" /grant "` *\<도메인 >* `":F`
+         `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\UserID>* `":F`
 
     2.  웹앱 또는 SharePoint 애플리케이션의 애플리케이션 풀에 수집기 디렉터리에 대한 읽기 및 실행 권한을 제공합니다.
 
@@ -166,7 +167,7 @@ ms.locfileid: "53820918"
 
 ##  <a name="BKMK_Create_and_Configure_a_Log_File_Directory"></a> .iTrace 파일 디렉터리에 대한 사용 권한 설정
 
-1. 앱 서버에서 와 같은 .iTrace 파일 디렉터리를 만듭니다. **C:\IntelliTraceLogFiles**
+1. 앱 서버에서 .iTrace 파일 디렉터리를 만듭니다(예: **C:\IntelliTraceLogFiles**
 
    > [!NOTE]
    > - 앱 속도 저하를 방지하려면 사용량이 많지 않은 로컬 고속 디스크의 위치를 선택합니다.
@@ -212,7 +213,7 @@ ms.locfileid: "53820918"
 
 1.  데이터 수집을 시작하려면 관리자 권한으로 PowerShell 명령 창을 열고 다음 명령을 실행합니다.
 
-     `Start-IntelliTraceCollection` `"` *\<응용 프로그램 풀 >* `"`  *\<PathToCollectionPlan >*  *\<FullPathToITraceFileDirectory >*
+     `Start-IntelliTraceCollection` `"` *\<ApplicationPool>* `"` *\<PathToCollectionPlan>* *\<FullPathToITraceFileDirectory>*
 
     > [!IMPORTANT]
     >  이 명령을 실행한 후 **Y** 를 입력하여 데이터 수집 시작을 확인합니다.
@@ -254,7 +255,7 @@ ms.locfileid: "53820918"
 
 1.  앱을 시작하는 동시에 데이터를 수집하려면 다음 구문을 사용합니다.
 
-     *\<FullPathToIntelliTraceCollectorExecutable >* `\IntelliTraceSC.exe launch /cp:`  *\<PathToCollectionPlan >* `/f:`  *\< FullPathToITraceFileDirectoryAndFileName >*  *\<PathToAppExecutableFileAndFileName >*
+     *\<FullPathToIntelliTraceCollectorExecutable>* `\IntelliTraceSC.exe launch /cp:` *\<PathToCollectionPlan>* `/f:` *\<FullPathToITraceFileDirectoryAndFileName>* *\<PathToAppExecutableFileAndFileName>*
 
      예를 들어 **MyApp**앱에서 데이터를 수집하려면 다음 명령을 실행합니다.
 

@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a9b96ae54c91e80fe34c817f710cb400e61f9876
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51768501"
 ---
 # <a name="saving-and-exporting-performance-tools-data"></a>성능 도구 데이터 저장 및 내보내기
@@ -37,7 +37,7 @@ ms.locfileid: "51768501"
   
 2.  **분석 데이터 저장** 대화 상자에서 디렉터리를 지정하고 파일 이름을 입력합니다.  
   
-3.  **저장**을 클릭합니다.  
+3.   **저장**을 클릭합니다.  
   
 #### <a name="to-save-an-analyzed-performance-report-from-the-report-view-window"></a>보고서 뷰 창에서 분석 성능 보고서를 저장하려면  
   
@@ -49,9 +49,9 @@ ms.locfileid: "51768501"
   
 4.  **분석 데이터 저장** 대화 상자에서 디렉터리를 지정하고 파일 이름을 입력합니다.  
   
-5.  **저장**을 클릭합니다.  
+5.   **저장**을 클릭합니다.  
   
-## <a name="how-to-export-profiling-tools-reports-to-an-xml-or-csv-file"></a>방법: 프로파일링 도구 보고서를 .Xml 또는 .Csv 파일로 내보내기  
+## <a name="how-to-export-profiling-tools-reports-to-an-xml-or-csv-file"></a>방법: 프로파일링 도구 보고서를 .xml 또는 .csv 파일로 내보내기  
  .vsp 파일 도는 .vsps 프로파일링 데이터 파일에서 하나 이상의 보고서 뷰를 쉼표로 분리된 파일 또는 XML 파일로 내보낼 수 있습니다. 내보내기 전에 보고서 뷰 창에서 데이터를 필터링하거나 **성능 탐색기** 창에서 전체 데이터 파일의 보고서 뷰를 내보낼 수 있습니다.  
   
 > [!NOTE]
@@ -69,7 +69,7 @@ ms.locfileid: "51768501"
   
 4.  **내보낸 보고서 위치**에서 디렉터리를 지정합니다.  
   
-5.  아래 **내보낸 보고서 형식**, 선택 (쉼표로 구분) (*.csv) 또는 XML 데이터 (\*.xml).  
+5.  **내보낸 보고서 형식**에서 (쉼표로 분리)(*.csv) 또는 XML 데이터(\*.xml)를 선택합니다.  
   
 6.  **내보내기**를 클릭합니다.  
   
@@ -89,7 +89,7 @@ ms.locfileid: "51768501"
   
 6.  **내보낸 보고서 위치**에서 디렉터리를 지정합니다.  
   
-7.  아래 **내보낸 보고서 형식**, 선택 (쉼표로 구분) (*.csv) 또는 XML 데이터 (\*.xml).  
+7.  **내보낸 보고서 형식**에서 (쉼표로 분리)(*.csv) 또는 XML 데이터(\*.xml)를 선택합니다.  
   
 8.  **내보내기**를 클릭합니다.  
   
