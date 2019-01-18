@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ddf9e610236cc50ccd809413bbe80e2eaad31a87
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8dc3e25b55f5f30ebfeb9f790baba0bb5ad8797c
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840644"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54270195"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>UI 자동화를 사용하여 코드 테스트
 
@@ -216,7 +216,7 @@ UI 컨트롤을 위한 어설션을 생성하려면 **코딩된 UI 테스트 빌
 
 **코딩된 UI 테스트 빌더**에서 **어설션 추가** 도구를 선택할 때 선택하려는 컨트롤이 포커스를 잃고 사라지는 경우.
 
-경우에 따라 컨트롤을 추가하고 해당 컨트롤의 속성을 확인할 때 키보드를 사용해야 할 수 있습니다. 예를 들어 상황에 맞는 메뉴 컨트롤을 사용하는 코딩된 UI 테스트를 기록하려는 경우 **코딩된 UI 테스트 빌더**에서 **어설션 추가** 도구를 선택하려고 하면 컨트롤의 메뉴 항목 목록이 포커스를 잃고 사라질 수 있습니다. 이러한 현상은 아래 그림에서도 확인할 수 있습니다. 여기서 **어설션 추가** 도구로 Internet Explorer의 바로 가기 메뉴를 선택하려고 하면 이 메뉴가 포커스를 잃고 사라집니다.
+경우에 따라 컨트롤을 추가하고 해당 컨트롤의 속성을 확인할 때 키보드를 사용해야 할 수 있습니다. 예를 들어 오른쪽 버튼 클릭 메뉴 컨트롤을 사용하는 코딩된 UI 테스트를 기록하려는 경우 **코딩된 UI 테스트 빌더**에서 **어설션 추가** 도구를 선택하려고 하면 컨트롤의 메뉴 항목 목록이 포커스를 잃고 사라질 수 있습니다. 이러한 현상은 아래 그림에서도 확인할 수 있습니다. 여기서 **어설션 추가** 도구로 Internet Explorer의 오른쪽 버튼 클릭 메뉴를 선택하려고 하면 이 메뉴가 포커스를 잃고 사라집니다.
 
 ![CodedUITest&#95;SelectControlKeyboard](../test/media/codeduitest_selectcontrolkeyboard.png)
 
