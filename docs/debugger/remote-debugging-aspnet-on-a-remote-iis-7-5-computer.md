@@ -4,7 +4,6 @@ ms.custom:
 - remotedebugging
 - seodec18
 ms.date: 05/21/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 9cb339b5-3caf-4755-aad1-4a5da54b2a23
 author: mikejo5000
@@ -12,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 336f34c1229e07eb3734f9d278070e5994957d16
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 621e7c44592eb94adbc02644af62920b8b95aa24
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065561"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "53829198"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>원격 IIS 컴퓨터의 ASP.NET 원격 디버그
 IIS에 배포 된 ASP.NET 응용 프로그램을 디버깅 하려면 설치 하 고 앱을 배포할 컴퓨터에서 원격 도구를 실행 한 다음 Visual Studio에서 실행 중인 앱에 연결 합니다.
@@ -49,7 +48,7 @@ IIS에 배포 된 ASP.NET 응용 프로그램을 디버깅 하려면 설치 하 
 
 ## <a name="create-the-aspnet-452-application-on-the-visual-studio-computer"></a>ASP.NET 4.5.2를 만들려면 Visual Studio 컴퓨터에서 응용 프로그램
   
-1. 새 MVC ASP.NET 응용 프로그램을 만듭니다. (**파일 > 새로 만들기 > 프로젝트**을 선택한 후 <strong>시각적 C# > 웹 > ASP.NET 웹 응용 프로그램입니다. ASP.NET 4.5.2 템플릿 섹션에서 MVC</strong>를 선택합니다. 했는지 **Docker 지원 활성화** 선택 하지 않으면 하 고 **인증** 로 설정 되어 **인증 안 함**합니다. 프로젝트 이름을 **MyASPApp**.)
+1. 새 MVC ASP.NET 애플리케이션을 만듭니다. (**파일 > 새로 만들기 > 프로젝트**을 선택한 후 <strong>시각적 C# > 웹 > ASP.NET 웹 응용 프로그램입니다. * * ASP.NET 4.5.2</strong> 템플릿 섹션 **MVC**합니다. 했는지 **Docker 지원 활성화** 선택 하지 않으면 하 고 **인증** 로 설정 되어 **인증 안 함**합니다. 프로젝트 이름을 **MyASPApp**.)
 
 2. HomeController.cs 파일을 열고 `About()` 메서드에 중단점을 설정합니다.
 
@@ -81,7 +80,7 @@ IIS에서 ASP.NET을 설치 하려면 자세한 정보를 보려는 경우 참�
     > [!NOTE]
     > Windows Server 2008 R2를 사용 하는 경우이 명령을 사용 하는 ASP.NET 4를 설치 합니다.
 
-     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe ir**
+     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -ir**
 
 2. 시스템을 다시 시작하거나 명령 프롬프트에서 **net stop was /y**에 이어 **net start w3svc**를 실행하여 시스템 PATH에 대한 변경 내용을 선택합니다.
 
@@ -135,7 +134,7 @@ RoboCopy, Powershell을 사용 하 여 IIS에 응용 프로그램을 복사 하�
 
 4. 선택 합니다 **기본 웹 사이트**, 선택 **기본 설정**, 설정 및는 **실제 경로** 에 **C:\Publish**합니다.
 
-5. **기본 웹 사이트** 노드를 마우스 오른쪽 단추로 클릭하고 **응용 프로그램 추가**를 선택합니다.
+5. **기본 웹 사이트** 노드를 마우스 오른쪽 단추로 클릭하고 **애플리케이션 추가**를 선택합니다.
 
 6. 설정 합니다 **별칭** 필드를 **MyASPApp**, 응용 프로그램 풀 기본값 (**DefaultAppPool**), 설정 및 합니다 **실제 경로** 를 **C:\Publish**합니다.
 
@@ -179,7 +178,7 @@ RoboCopy, Powershell을 사용 하 여 IIS에 응용 프로그램을 복사 하�
 
 원격 디버거 서비스 실행에 대 한 내용은 참조 하세요 [원격 디버거를 서비스로 실행](../debugger/remote-debugging.md#bkmk_configureService)합니다.
 
-## <a name="BKMK_attach"></a> Visual Studio 컴퓨터에서 ASP.NET 응용 프로그램에 연결
+## <a name="BKMK_attach"></a> Visual Studio 컴퓨터에서 ASP.NET 애플리케이션에 연결
 
 1. Visual Studio 컴퓨터에서 디버그 하려는 된 솔루션을 엽니다 (**MyASPApp** 이 문서의 단계를 수행 하는 경우).
 2. Visual Studio에서 클릭 **디버그 > 프로세스에 연결** (Ctrl + Alt + P).
@@ -207,7 +206,7 @@ RoboCopy, Powershell을 사용 하 여 IIS에 응용 프로그램을 복사 하�
 
     Visual Studio에서 중단점이 적중됩니다.
 
-## <a name="bkmk_openports"></a> Windows Server에서 필요한 포트를 열고 문제 해결:
+## <a name="bkmk_openports"></a> 문제 해결 Windows Server에서 필요한 포트를 열려면
 
 대부분의 설치 프로그램에서 ASP.NET와 원격 디버거 설치를 통해 필요한 포트가 열려 있습니다. 그러나 포트가 열려 있는지 확인 해야 합니다.
 

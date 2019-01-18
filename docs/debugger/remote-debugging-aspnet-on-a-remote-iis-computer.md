@@ -2,7 +2,6 @@
 title: 원격 디버그 ASP.NET Core에서 원격 IIS 컴퓨터 | Microsoft Docs
 ms.custom: remotedebugging
 ms.date: 05/21/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 573a3fc5-6901-41f1-bc87-557aa45d8858
 author: mikejo5000
@@ -11,12 +10,12 @@ manager: douge
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: bcb0db3a6eab91c517ce731ddf6e201d5a73f1f8
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
-ms.translationtype: MT
+ms.openlocfilehash: 683e0cae09144777cbb27ef294676cc44dc0a1a1
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101073"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "53830835"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Visual Studio 2017에서 원격 IIS 컴퓨터의 원격 디버그 ASP.NET Core
 IIS에 배포 된 ASP.NET 응용 프로그램을 디버깅 하려면 설치 하 고 앱을 배포할 컴퓨터에서 원격 도구를 실행 한 다음 Visual Studio에서 실행 중인 앱에 연결 합니다.
@@ -43,7 +42,7 @@ IIS에 배포 된 ASP.NET 응용 프로그램을 디버깅 하려면 설치 하 
 
 ## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Visual Studio 2017 컴퓨터의 ASP.NET Core 응용 프로그램 만들기 
 
-1. 새 ASP.NET Core 응용 프로그램을 만듭니다. (**파일 > 새로 만들기 > 프로젝트**을 선택한 후 **Visual C# > 웹 > ASP.NET Core 웹 응용 프로그램**).
+1. 새 ASP.NET Core 응용 프로그램을 만듭니다. (**파일 > 새로 만들기 > 프로젝트**을 선택한 후 **시각적 C# > 웹 > ASP.NET Core 웹 응용 프로그램**).
 
     에 **ASP.NET Core** 템플릿 섹션 **웹 응용 프로그램**합니다.
 
@@ -70,12 +69,12 @@ IIS에 배포 된 ASP.NET 응용 프로그램을 디버깅 하려면 설치 하 
 
 ## <a name="install-aspnet-core-on-windows-server"></a>Windows Server에서 ASP.NET Core를 설치 합니다.
 
-1. 설치 합니다 [.NET Core Windows Server 호스팅](https://aka.ms/dotnetcore-2-windowshosting) 호스팅 시스템에는 번들입니다. 번들 된.NET Core 런타임,.NET Core 라이브러리 및 ASP.NET Core 모듈을 설치합니다. 더 자세한 지침은 [IIS에 게시](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)합니다.
+1. 호스팅 시스템에 [.NET Core Windows Server 호스팅](https://aka.ms/dotnetcore-2-windowshosting) 번들을 설치합니다. 번들은 .NET Core 런타임, .NET Core 라이브러리 및 ASP.NET Core 모듈을 설치합니다. 더 자세한 지침은 [IIS에 게시](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)합니다.
 
     > [!NOTE]
-    > 시스템을 인터넷에 연결 되지 않은 경우 가져오기 및 설치 합니다 *[Microsoft Visual c + + 2015 재배포 가능 패키지](https://www.microsoft.com/download/details.aspx?id=53840)* .NET Core Windows Server 호스팅 번들을 설치 하기 전에 합니다.
+    > 시스템이 인터넷에 연결되지 않은 경우 *[Microsoft Visual C++ 2015 재배포 가능 패키지](https://www.microsoft.com/download/details.aspx?id=53840)* 를 설치한 후에 .NET Core Windows Server 호스팅 번들을 설치합니다.
 
-3. 시스템 다시 시작 (하거나 실행할 **net stop was /y** 뒤 **net start w3svc** 시스템 경로에 대 한 변경 내용을 선택 하려면 명령 프롬프트에서).
+3. 시스템을 다시 시작하거나 명령 프롬프트에서 **net stop was /y**에 이어 **net start w3svc**를 실행하여 시스템 PATH에 대한 변경 내용을 선택합니다.
 
 ## <a name="choose-a-deployment-option"></a>배포 옵션을 선택 합니다.
 
@@ -96,7 +95,7 @@ IIS에 앱을 배포 하는 데 도움이 필요, 이러한 옵션을 고려 합
 
 [!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/install-web-deploy-with-hosting-server.md)]
 
-### <a name="create-the-publish-settings-file-in-iis-on-windows-server"></a>Windows server IIS에서 게시 설정 파일 만들기
+### <a name="create-the-publish-settings-file-in-iis-on-windows-server"></a>Windows Server의 IIS에서 게시 설정 파일 만들기
 
 [!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/create-publish-settings-iis.md)]
 
@@ -104,7 +103,7 @@ IIS에 앱을 배포 하는 데 도움이 필요, 이러한 옵션을 고려 합
 
 [!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
 
-앱을 성공적으로 배포 하는 자동으로 시작 해야 합니다. Visual Studio에서 앱 시작 되지 않는 경우 IIS에서 앱을 시작 합니다. ASP.NET Core에 대 한 응용 프로그램 풀에 대 한 필드는 확인 해야 합니다 **DefaultAppPool** 로 설정 된 **관리 코드 없음**합니다.
+앱을 성공적으로 배포한 후 자동으로 시작해야 합니다. Visual Studio에서 앱 시작 되지 않는 경우 IIS에서 앱을 시작 합니다. ASP.NET Core의 경우 **DefaultAppPool**에 대한 애플리케이션 풀 필드가 **관리 코드 없음**으로 설정되었는지 확인해야 합니다.
 
 1. 에 **설정** 대화 상자, 클릭 하 여 디버깅을 사용 하도록 설정 **다음**, 선택는 **디버그** 구성을 선택한 후 **에서 추가 파일 제거 대상** 아래의 합니다 **파일 게시** 옵션입니다.
 
@@ -121,13 +120,13 @@ RoboCopy, Powershell을 사용 하 여 IIS에 응용 프로그램을 복사 하�
 
 1. Windows 탐색기를 열고 새 폴더를 만듭니다 **C:\Publish**ASP.NET 프로젝트를 나중에 배포할가 있습니다.
 
-2. 열려 있지 않으면 엽니다는 **인터넷 정보 서비스 (IIS) 관리자**합니다. (서버 관리자의 왼쪽된 창에서 선택 **IIS**합니다. 서버를 마우스 오른쪽 단추로 누르고 **인터넷 정보 서비스 (IIS) 관리자**.)
+2. 열려 있지 않으면 엽니다는 **인터넷 정보 서비스 (IIS) 관리자**합니다. (서버 관리자의 왼쪽된 창에서 선택 **IIS**합니다. 서버를 마우스 오른쪽 단추로 클릭하고 **IIS(인터넷 정보 서비스) 관리자**를 선택합니다.)
 
 3. 아래 **연결** 왼쪽된 창에서로 이동 **사이트**합니다.
 
 4. 선택 합니다 **기본 웹 사이트**, 선택 **기본 설정**, 설정 및는 **실제 경로** 에 **C:\Publish**합니다.
 
-4. **기본 웹 사이트** 노드를 마우스 오른쪽 단추로 클릭하고 **응용 프로그램 추가**를 선택합니다.
+4. **기본 웹 사이트** 노드를 마우스 오른쪽 단추로 클릭하고 **애플리케이션 추가**를 선택합니다.
 
 5. 설정 합니다 **별칭** 필드를 **MyASPApp**, 응용 프로그램 풀 기본값 (**DefaultAppPool**), 설정 및 합니다 **실제 경로** 를 **C:\Publish**합니다.
 
@@ -158,7 +157,7 @@ RoboCopy, Powershell을 사용 하 여 IIS에 응용 프로그램을 복사 하�
 
 원격 디버거 서비스 실행에 대 한 내용은 참조 하세요 [원격 디버거를 서비스로 실행](../debugger/remote-debugging.md#bkmk_configureService)합니다.
 
-## <a name="BKMK_attach"></a> Visual Studio 컴퓨터에서 ASP.NET 응용 프로그램에 연결
+## <a name="BKMK_attach"></a> Visual Studio 컴퓨터에서 ASP.NET 애플리케이션에 연결
 
 1. Visual Studio 컴퓨터에서 디버그 하려는 된 솔루션을 엽니다 (**MyASPApp** 이 문서의 모든 단계를 따르는 경우).
 2. Visual Studio에서 클릭 **디버그 > 프로세스에 연결** (Ctrl + Alt + P).
@@ -166,8 +165,8 @@ RoboCopy, Powershell을 사용 하 여 IIS에 응용 프로그램을 복사 하�
     > [!TIP]
     > Visual Studio 2017에서 이전에 연결을 사용 하 여 동일한 프로세스에 다시 **디버그 > 프로세스에 다시 연결 하는 중...** (Shift + Alt + P)입니다. 
 
-3. 한정자 필드에 설정할  **\<원격 컴퓨터 이름 >: 4022**합니다.
-4. 클릭 **새로 고침**합니다.
+3. 한정자 필드를 **\<원격 컴퓨터 이름>:4022**로 설정합니다.
+4. **새로 고침**을 클릭합니다.
     일부 프로세스가 **사용 가능한 프로세스** 창에 표시됩니다.
 
     모든 프로세스가 표시 되지 않는 경우 (포트는 필수) 원격 컴퓨터 이름 대신 IP 주소를 사용해 보세요. 사용할 수 있습니다 `ipconfig` IPv4 주소를 가져오려면 명령줄에서.
@@ -181,7 +180,7 @@ RoboCopy, Powershell을 사용 하 여 IIS에 응용 프로그램을 복사 하�
 
 7. **연결**을 클릭합니다.
 
-8. 원격 컴퓨터의 웹 사이트를 엽니다. 브라우저에서로 이동 **http://\<원격 컴퓨터 이름 >** 합니다.
+8. 원격 컴퓨터의 웹 사이트를 엽니다. 브라우저에서 **http://\<원격 컴퓨터 이름>** 으로 이동합니다.
     
     ASP.NET 웹 페이지가 표시됩니다.
 
@@ -189,7 +188,7 @@ RoboCopy, Powershell을 사용 하 여 IIS에 응용 프로그램을 복사 하�
 
     Visual Studio에서 중단점이 적중됩니다.
 
-## <a name="bkmk_openports"></a> Windows Server에서 필요한 포트를 열고 문제 해결:
+## <a name="bkmk_openports"></a> 문제 해결 Windows Server에서 필요한 포트를 열려면
 
 대부분의 설치 프로그램에서 ASP.NET와 원격 디버거 설치를 통해 필요한 포트가 열려 있습니다. 그러나 포트가 열려 있는지 확인 해야 합니다.
 
@@ -216,7 +215,7 @@ RoboCopy, Powershell을 사용 하 여 IIS에 응용 프로그램을 복사 하�
     선택한 유형은 원격 컴퓨터가 연결된 네트워크를 포함해야 합니다.
 6. 이름을 추가 합니다 (예를 들어 **IIS**, **Web Deploy**, 또는 **msvsmon**) 인바운드 규칙을 클릭 **마침**합니다.
 
-    규칙이 인바운드 또는 아웃 바운드 규칙 목록에 새 규칙이 표시 됩니다.
+    인바운드 규칙 또는 아웃바운드 규칙 목록에 새 규칙이 표시되어야 합니다.
 
     Windows 방화벽 구성에 대 한 자세한 내용은 참조 하세요 [원격 디버깅용 Windows 방화벽 구성](../debugger/configure-the-windows-firewall-for-remote-debugging.md)합니다.
 
