@@ -6,12 +6,12 @@ titleSuffix: ''
 description: Visual Studio 2017을 사용하여 플랫폼 및 장치에 대해 선택한 언어로 애플리케이션, 서비스 및 도구를 개발하는 방법에 대해 알아봅니다.
 ms.topic: hub-page
 ms.custom: seodec18
-ms.openlocfilehash: f84c7155fb46e462f899e0037deab925ecbbcda6
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 427c4545425f19576da39455bbf659fe64aac549
+ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562141"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54398158"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -527,7 +527,7 @@ ASP.NET Core를 사용한 웹앱</a>
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="/scripting/">
+                                                <a href="/visualstudio/javascript/">
                                                     <h3>JavaScript</h3>
                                                     <p>웹 페이지를 좀 더 대화형으로 만드는 데 자주 사용되는 간단한 플랫폼 간 스크립트 언어입니다.</p>
                                                 </a>
