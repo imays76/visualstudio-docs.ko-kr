@@ -46,7 +46,7 @@ Visual Studio SDK를 사용 하면 Visual Studio 기능을 확장 하거나 Visu
 ## <a name="whats-new-in-the-visual-studio-2017-sdk"></a>Visual Studio 2017 SDK의 새로운 기능  
  Visual Studio SDK의 주요 변경 내용에 확장을 업데이트 해야 할 수도 있습니다는 뿐만 아니라 VSIX v3 형식 같은 몇 가지 새로운 기능에 있습니다. 자세한 내용은 [Visual Studio 2017 SDK의 새로운 기능](../extensibility/what-s-new-in-the-visual-studio-2017-sdk.md)합니다.  
   
-## <a name="visual-studio-user-experience-guidelines"></a>Visual Studio 사용자 환경 지침  
+## <a name="visual-studio-user-experience-guidelines"></a>비주얼 스튜디오 사용자 체험을 위한 지침
  확장에 대 한 UI를 디자인 하기 위한 유용한 팁을 얻을 [Visual Studio 사용자 환경 지침](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md)합니다.  
   
  높은 DPI 장치에서 훌륭해 확장 하는 방법을 알아볼 수 있습니다 합니다 [주소 DPI 문제](../extensibility/addressing-dpi-issues2.md) 문서.  
